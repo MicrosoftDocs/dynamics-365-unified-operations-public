@@ -1,0 +1,17 @@
+- name: Dynamics 365 for Operations
+  tocHref: /operations/
+  topicHref: /operations/index
+  items:
+  - name: Core Operations UI
+    tocHref: /operations/core/
+    topicHref: /operations/core/index
+    items:
+      - name: Get started
+        tocHref: /operations/core/get-started/
+        topicHref: /operations/core/get-started/
+      - name: Organization administration
+        tocHref: /operations/core/organization-administration/
+        topicHref: /operations/core/organization-administration/
+      - name: Localizations
+        tocHref: /operations/core/localizations/
+        topicHref: /operations/core/localizations/
