@@ -1,1 +1,1 @@
-# Welcome to financials!
+# Welcome to d365OpsFinancials!
