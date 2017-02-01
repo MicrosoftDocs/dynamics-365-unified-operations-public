@@ -1,0 +1,66 @@
+---
+# required metadata
+
+title: Fleet Management sample application overview | Microsoft Docs
+description: This topic is an overview of the Fleet Management sample application.
+author: RobinARH
+manager: AnnBe
+ms.date: 2016-04-11 20:07:28
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# keywords: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: 61
+ms.suite: Released- Dynamics AX 7.0.0
+# ms.tgt_pltfrm: 
+ms.custom: 79892
+ms.assetid: 689dd09c-896e-4481-a8c9-2f74daf48e0e
+ms.region: Global
+# ms.industry: 
+ms.author: robadawy
+
+---
+
+# Fleet Management sample application overview
+
+This topic is an overview of the Fleet Management sample application.
+
+The Fleet Management sample application has been provided to showcase development and foundation capabilities. Fleet Management represents a solution that an ISV might create for a car-rental agency. Fleet Management data includes vehicles which are available for renting, and customers who can rent and return these vehicles. Employees can also run a maintenance workflow on these vehicles. **Note**
+
+For some tutorials, you will need to create the FleetManagement solution if it is not on your computer. The steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+
+For some tutorials, you must download the Fleet Management tutorial code and other artifacts from <https://github.com/Microsoft/FMLab>.
+
+Fleet Management is provided as a Visual Studio solution that demonstrates platform capabilities, such as:
+
+-   Forms
+-   Workflow
+-   Security
+-   Labels
+-   Resources
+-   Data
+-   Business Intelligence
+-   Extensions
+
+The Fleet Management solution includes two separate projects: one for the base model and the other one for extensions to the base model. The project named FleetManagement Migrated demonstrates how a migrated application might appear after migrating code from Dynamics AX 2012. This version shows how forms that have been migrated from Microsoft Dynamics AX 2012 R3 work on a web client. These forms have been created using automated migration tools and some other manual migration steps in Visual Studio. These forms bind to X++ tables and use the X++ programming model. The project named FleetManagement Discounts (or FleetManagementExtension) demonstrates how to use extensions to customize an application. This project extends the Fleet Management sample by extending controls and tables, handling data events, and replacing business logic using a plug-in. The tutorials that accompany this article provide a more-detailed look at the Fleet Management sample. These include a Fleet Management tutorial, [Using the Fleet Management sample](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/using-the-fleet-management-sample), and a tutorial that walks through extensions, [Customize model elements using Extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensions-overlayering/customize-model-elements-using-extensions).
+
+See also
+--------
+
+[Using the Fleet Management sample](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/using-the-fleet-management-sample)
+
+[Customize model elements using extensions](http://ax.help.dynamics.com/en/wiki/customize-model-elements-using-extensions-2/)
+
+[Developer Home Page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+
+[Download the FMLab sample code](https://github.com/Microsoft/FMLab)
+
+[Create the FleetManagement solution](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)
+
