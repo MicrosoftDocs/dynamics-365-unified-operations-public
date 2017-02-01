@@ -33,6 +33,22 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "is_dynamic_rendering": false
+    },
+    {
+      "docset_name": "d365OpsFinancials",
+      "build_source_folder": "financials",
+      "build_output_subfolder": "d365OpsFinancials",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "is_dynamic_rendering": false
     }
   ],
   "notification_subscribers": [],
