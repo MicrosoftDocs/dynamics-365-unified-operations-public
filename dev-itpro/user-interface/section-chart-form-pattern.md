@@ -1,0 +1,78 @@
+---
+# required metadata
+
+title: Section Chart form pattern | Microsoft Docs
+description: This article provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
+author: jasongre
+manager: AnnBe
+ms.date: 2016-01-11 22:18:16
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# keywords: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: annbe
+ms.suite: Released- Dynamics AX 7.0.0
+# ms.tgt_pltfrm: 
+ms.custom: 29271
+ms.assetid: 7d5a913b-65cd-463e-89e4-cc24c1cc7509
+ms.region: Global
+# ms.industry: 
+ms.author: jasongre
+
+---
+
+# Section Chart form pattern
+
+This article provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
+
+Usage
+-----
+
+The Section Chart form pattern is intended to be used primarily in conjunction with the Operational Workspace pattern. Specifically, the chart section or summary section contains Form Part Controls that point to forms that contain charts. These referenced forms are intended to use the Section Chart pattern.
+
+## Wireframe
+[![sectionChartWireframe](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
+
+## Pattern changes for Microsoft Dynamics AX
+This pattern didn't exist for Microsoft Dynamics AX 2012.
+
+## Model
+### High-level structure
+
+Form Design
+
+*HeaderGroup (Group) \[Optional\]* – This uses one of the [Filters and Toolbar](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/filters-and-toolbar-subpattern) subpatterns.
+
+Chart
+
+### Core components
+
+Apply the Section Chart pattern to the appropriate form/container.
+
+### Related container patterns
+
+-   [Operational workspace](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)
+-   [Section stacked chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-stacked-chart-subpattern)
+
+## UX guidelines
+The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. None
+
+## Examples
+Form: **FmBiChartPart\_VehicleByModel** (**All workspaces** &gt; **Reservation Management** \[see the **Statistics** section\]) [![sectionChartExample](./media/sectionchartexample.png)](./media/sectionchartexample.png)
+
+## Appendix
+### Frequently asked questions
+
+This section will have answers to frequently asked questions that are related to this guideline/pattern.
+
+### Open issues
+
+None
+

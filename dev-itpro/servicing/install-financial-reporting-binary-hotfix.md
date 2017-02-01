@@ -1,0 +1,70 @@
+---
+# required metadata
+
+title: Install a financial reporting binary hotfix | Microsoft Docs
+description: Use this tutorial to install a financial reporting binary hotfix for Microsoft Dynamics AX from Microsoft Dynamics Lifecycle Services (LCS). 
+author: RobinARH
+manager: AnnBe
+ms.date: 2015-09-14 13:10:33
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# keywords: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: RobinARH
+ms.suite: Released- Dynamics AX 7.0.0
+# ms.tgt_pltfrm: 
+ms.custom: 6734
+ms.assetid: 63c39c41-e583-4e1b-828a-7914c3595d7b
+ms.region: Global
+# ms.industry: 
+ms.author: aolson
+
+---
+
+# Install a financial reporting binary hotfix
+
+Use this tutorial to install a financial reporting binary hotfix for Microsoft Dynamics AX from Microsoft Dynamics Lifecycle Services (LCS). 
+
+### Update a one-box environment
+
+1.  Download the patch.zip file from Microsoft Dynamics Lifecycle Services (LCS).
+2.  Click **Administrator Tools** &gt; **Services**, and** **stop the Management Reporter 2012 Process Service. [![Services\_MRHotfix](./media/services_mrhotfix.png)](./media/services_mrhotfix.png)
+3.  Run the following commands:
+    -   'MROneBox\\Instructions\\MRHotfix.ps1' PowerShell script
+
+4.  Restart the Management Reporter 2012 Process Service.
+
+### Updating a multi-box environment
+
+#### Update each BI or MR machine
+
+1.  On each BI or MR machine.
+    -   Click **Administrator Tools** &gt; **Services**, and** **stop the Management Reporter 2012 Process Service. [![Services\_MRHotfix](./media/services_mrhotfix.png)](./media/services_mrhotfix.png)
+    -   Once the Process service has been stopped on each BI or MR machine, proceed with step 2 below.
+
+2.  Download the patch.zip file from LCS.
+3.  Run the following commands:
+    -   'MRProcessService\\Instructions\\MRHotfix.ps1' PowerShell script
+
+4.  Start the Management Reporter 2012 Process Service on each BI or MR machine.
+
+#### Update each AOS machine
+
+1.  Download the patch.zip file from LCS.
+2.  Run the following commands:
+    -   'MRApplicationService\\Instructions\\MRHotfix.ps1' PowerShell script
+
+
+
+See also
+--------
+
+[Download hotfixes from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/servicing/download-hotfixes-from-lifecycle-services)
+

@@ -1,0 +1,87 @@
+---
+# required metadata
+
+title: Consolidation and elimination overview | Microsoft Docs
+description: This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
+author: RobinARH
+manager: AnnBe
+ms.date: 2015-12-01 17:03:56
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+keywords: LedgerConsolidate
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: RobinARH
+ms.suite: Released- Dynamics AX 7.0.0
+# ms.tgt_pltfrm: 
+ms.custom: 13151
+ms.assetid: 4373c540-f7dd-4912-b140-4bbfb18492ac
+ms.region: Global
+# ms.industry: 
+ms.author: aolson
+
+---
+
+# Consolidation and elimination overview
+
+This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
+
+When you consolidate data, the financial results for multiple subsidiary companies are combined into results for a single, consolidated company. Subsidiaries might be on different versions or systems, they might not be fully owned, and they might use different currencies. There are multiple options for consolidating data:
+
+-   **Consolidate online** – This option consolidates daily balances by the selected accounts and dimensions, and stores them in a consolidation company.
+-   **Financial reporting** – This option enables consolidation of transactions and balances, and can be generated at any time. Multiple levels of hierarchies can be created, and multiple reporting currencies can be viewed.
+-   **Consolidate with import** – This option imports balances into a consolidation company.
+-   **Export company balances** – This option provides an export file of company balances. The file can then be imported into other instances or systems. Financial reporting can also be used to export the balances to a Microsoft Excel file.
+
+Eliminations can be reported in multiple ways:
+
+-   Elimination rules can be set up in the system, and then processed during the consolidation process or through an elimination proposal. The rules can be posted to any company that has **Use for financial elimination process** selected in the legal entity setup.
+-   A separate company can be created and used to manually determine and post elimination transactions. This company can be used in the consolidation process or in financial reporting.
+-   The accounts and financial dimensions that are used to determine intercompany activity can be filtered on a row definition or column definition in Financial reporting, and full drill-down capabilities can be used. A calculated column or row can then be used to remove the accounts and financial dimensions from the consolidated total.
+
+There are many consolidation scenarios, and each method can handle the scenarios in different ways.
+
+## Frequently asked questions
+1.  I prefer to post eliminations in a database. What are my options?
+    -   You have multiple options. You can use the **Consolidate online** option, and include eliminations during the process or as a proposal. The transactions will be posted in the consolidation company. Alternatively, you can have a separate company that you manually create the eliminations in, and then use that company in Financial reporting or in the consolidation process.
+
+2.  We need our consolidated results in multiple reporting currencies.
+    -   The **Financial reporting** option has unlimited reporting currencies. The data is translated during report generation, based on the exchange rate type and currency translation method that are set on the main account. However, because the **Consolidate online** option has only one reporting currency, a consolidated company is required for each reporting currency if you use that option. The **Financial reporting** option is the recommended method.
+
+3.  I want to see transaction-level detail for each company.
+    -   The **Financial reporting** option is the solution, because transaction-level detail can be viewed for as many companies as are included in the reporting tree definition.
+
+4.  We are using budget planning or budget control, and it must be consolidated.
+    -   The **Financial reporting** option is the solution to consolidate any budget planning or budget control data.
+
+5.  Our subsidiaries are spread throughout the world, and we have multiple charts of accounts. What is the best method for consolidating our data?
+    -   You have multiple options when you must handle multiple charts of accounts. You can use the **Consolidate online** option, and then choose to use either the consolidation account that is defined on the main account or a consolidation account group. You can also use the **Financial reporting** option, include multiple links to the financial dimensions in the row definition, and map the accounts.
+
+6.  We require multiple levels of consolidation. In other words, we first consolidate all our European subsidiaries to the British pound (GBP). We then take that data and translate the consolidated amount to US dollars. How can we do this?
+    -   When multiple levels of consolidation are required, and different currencies are used at each level, you must use the **Consolidate online** option. Multiple consolidation companies must be created that differ in their accounting and reporting currencies. The consolidation must then be run multiple times. The **Financial reporting** option always translates from each source company's accounting currency to the selected currency.
+
+7.  We have subsidiaries on a different system. How can we consolidate them?
+    -   Use the **Consolidate with import** option to bring the balances into a consolidation company.
+
+8.  Some of our subsidiaries are not fully owned. What is the best method for consolidating them?
+    -   You have multiple options for partially owned subsidiaries. By using the **Financial reporting** option, you can define a reporting tree definition and the ownership. You can also use a calculated row or column to represent the partially owned amount. You can even show the minority interest as its own row on a report. You can also use the **Consolidate online** option. The **Legal entities** tab has an **Ownership** column, where you can define the percentage that is owned by the parent company.
+
+9.  Our organization must show consolidations by business unit or wants to use the organization hierarchies.
+    -   The **Financial reporting** option is the solution. Organization hierarchies that have legal entities or financial dimensions in them can be reported on in Financial reporting. You can also create your own multilevel hierarchies by using a reporting tree definition that has a combination of legal entities and dimension values.
+
+10. We have more than one instance of the system.
+    -   By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
+
+
+
+See also
+--------
+
+[Currency revalution in a consolidation company](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/currency-revaluation-in-a-consolidation-company)
+
