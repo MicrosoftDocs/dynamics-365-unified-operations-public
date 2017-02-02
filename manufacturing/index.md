@@ -1,1 +1,1 @@
-# Welcome to d365OpsManufacturing!
+# Welcome to manufacturing!

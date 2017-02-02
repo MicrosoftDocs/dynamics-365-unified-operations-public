@@ -1,1 +1,1 @@
-# Welcome to d365OpsRetail!
+# Welcome to retail!
