@@ -6,7 +6,7 @@ description: Dynamics 365 for Operations is the complete Enterprise Resource Pla
 author: margoc
 manager: AnnBe
 ms.date: 2016-03-08 19:35:39
-ms.topic: articl
+ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
@@ -44,7 +44,6 @@ Work with your partner to get onboarded
 
 ## Learn how to tell Microsoft about localizations (regional features)
 Localizations by country
-
 Tell us about a new feature
 
 ### Blogs to visit
@@ -55,9 +54,7 @@ Tell us about a new feature
 
 ## Configure your organization
 Set up your organization hierarchy
-
 Set up number sequences
-
 Configure workflows
 
 ### Blogs to visit
