@@ -1,14 +1,14 @@
----
-layout: LandingPage
-title: Core Documentation for Dynamics 365 for Operations Users | Microsoft Docs
-description: Learn how to navigate the Dynamics 365 for Operations UI, set up your organization, and use and request local features for your country or region.
+﻿# required metadata
+
+title: Welcome to Dynamics 365 for Operations | Microsoft Docs
+description: Dynamics 365 for Operations is the complete Enterprise Resource Planning (ERP) solution for business. 
 author: margoc
-manager: annbe
+manager: AnnBe
+ms.date: 2016-03-08 19:35:39
+ms.topic: article
+ms.prod: 
 ms.service: Dynamics365Operations
-ms.tgt_pltfrm: 
-ms.devlang: 
-ms.topic: landing-page
-ms.date: 01/23/2017
+ms.technology: 
 
 # optional metadata
 
@@ -16,74 +16,44 @@ ms.date: 01/23/2017
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: margoc
+ms.reviewer: 71
 ms.suite: Released- Dynamics AX 7.0.0
 # ms.tgt_pltfrm: 
-ms.custom: 104173
-ms.assetid: 8121b7bd-56ce-43f5-be90-0bb64dba0eb4
+ms.custom: 62303
+ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.region: Global
--# ms.industry: 
+# ms.industry: 
 ms.author: margoc
 
 ---
-# Core Documentation for Dynamics 365 for Operations Users
+# Welcome to Dynamics 365 for Operations
 
-Learn how to navigate the Dynamics 365 for Operations UI, set up your organization, and use and request local features for your country or region.
+Dynamics 365 for Operations is the complete Enterprise Resource Planning (ERP) solution for business. Use the documentation to learn how to make Dynamics 365 for Operations work for your business. 
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="get-started/get-started-landing">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="media/i-comments.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Getting started</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/dynamics365/operations/core/organization-administration/organization-administration-home-page">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="media/i-copycode.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Organizational administration</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>    
-    <li>
-        <a href="localizations/country_region">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="media/i-download.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Localizations</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>    
-</ul>
+## Get started
+Learn the Dynamics 365 for Operations user interface and help system.
+Work with your partner to get onboarded
 
+### Blogs to visit
+
+
+### Our favorite videos
+
+
+## Learn how to tell Microsoft about localizations (regional features)
+Localizations by country
+Tell us about a new feature
+
+### Blogs to visit
+
+
+### Our favorite videos
+
+
+## Configure your organization
+
+
+### Blogs to visit
+
+
+### Our favorite videos
