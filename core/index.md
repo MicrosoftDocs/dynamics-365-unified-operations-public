@@ -1,3 +1,4 @@
+
 ---
 # required metadata
 
@@ -52,7 +53,9 @@ Tell us about a new feature
 
 
 ## Configure your organization
-
+Set up your organization hierarchy
+Set up number sequences
+Configure workflows
 
 ### Blogs to visit
 
