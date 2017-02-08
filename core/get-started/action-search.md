@@ -37,9 +37,6 @@ Introduction
 
 Pages in Microsoft Dynamics 365 for Operations primarily expose commands on Action Panes, both the standard Action Pane that appears at the top of a page and the toolbars that appear in various sections of the page. In previous versions, a Key Tips feature let you quickly access any button on an Action Pane by pressing the Alt key and then a series of letters. [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) However, in the current version of Dynamics 365 for Operations, Key Tips are no longer available but have been replaced by the action search feature. This new feature lets you quickly search for and run a button from any visible Action Pane.
 
-Line 1
-Line 2
-
 ## Using action search
 To use the action search feature, follow these steps.
 
