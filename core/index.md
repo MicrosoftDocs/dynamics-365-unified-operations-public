@@ -42,7 +42,7 @@ Work with your partner to get onboarded
 
 
 ## Learn how to tell Microsoft about localizations (regional features)
-Localizations by country  
+Localizations by country.  
 Tell us about a new feature  
 
 ### Blogs to visit
@@ -52,8 +52,8 @@ Tell us about a new feature
 
 
 ## Configure your organization
-Set up your organization hierarchy  
-Set up number sequences  
+Set up your organization hierarchy.  
+Set up number sequences.  
 Configure workflows  
 
 ### Blogs to visit
