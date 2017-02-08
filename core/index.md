@@ -31,32 +31,17 @@ ms.author: margoc
 
 Dynamics 365 for Operations is the complete Enterprise Resource Planning (ERP) solution for business. Use the documentation to learn how to make Dynamics 365 for Operations work for your business. 
 
-## Get started
-Learn the Dynamics 365 for Operations user interface and help system  
-Work with your partner to get onboarded  
-
-### Blogs to visit
-
-
-### Our favorite videos
-
-
-## Learn how to tell Microsoft about localizations (regional features)
-Localizations by country  
-Tell us about a new feature  
-
-### Blogs to visit
-
-
-### Our favorite videos
-
-
-## Configure your organization
-Set up your organization hierarchy  
-Set up number sequences  
-Configure workflows  
-
-### Blogs to visit
-
-
-### Our favorite videos
+Find content for: 
+Getting started and onboarding  
+Business intelligence and reporting  
+Developer functionality  
+Financial management  
+Human resources  
+Localizations (country or region-specific functionality)  
+Manufacturing  
+Organization administration  
+Project management and accounting  
+Retail  
+Supply chain management  
+System administration and Lifecycle Services  
+  
