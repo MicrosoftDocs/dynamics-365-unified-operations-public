@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: [Topic name] | Microsoft Docs
-description: [Full description that appears in the search results. Usually the first paragraph of your topic]
-author: your github alias
+title: Topic name | Microsoft Docs
+description: Full description that appears in the search results. Usually the first paragraph of your topic.
+author: your GitHub alias
 manager: AnnBe
-ms.date: [first proposed publication date]
+ms.date: first proposed publication date
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -28,28 +28,41 @@ ms.author: [Microsoft alias]
 
 ---
 
-# Metadata and Markdown Template
+# Metadata and Markdown template
 
-This Dynamics 365 for Operations template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
+This Dynamics 365 for Operations template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D) and the [rendered view](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/master/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
 
 
 ## Metadata 
 
-The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md)), divided into required fields and optional fields. Some key notes:
+The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D)), divided into required fields and optional fields. **DO NOT** use a colon (:) in any of the metadata elements. 
 
-- You **must** have a space between the colon (:) and the value for a metadata element.
-- If an optional metadata element does not have a value, comment out the element with a # or remove it (do not leave it blank or use "na"); if you are adding a value to an element that was commented out, be sure to remove the #.
-- Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
-- **title**: This title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Developing Libraries with Cross Platform Tools | .NET Core`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
-- **author**, **manager**, **ms.reviewer**: The author field should contain the **GitHub username** of the author, not their alias.  The "manager" and "ms.reviewer" fields, on the other hand, should contain Microsoft aliases. ms.reviewer specifies the name of the PM/dev associated with the article or feature.
-- **ms.devlang** defines the technology. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb and xml.
-- **ms.assetid**: This is the GUID of the article that is used for internal tracking purposes such as Business Intelligence (BI). When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+Here are some key things to note about metadata.
+
+- **Required metadata**
+    - **title** - The title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Action search | Microsoft Docs`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
+    - **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
+    - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
+    - **manager** - Use "annbe" in this field.
+    - **ms.date** - This should be the first proposed publication date.
+    - **ms.topic** - Enter "article" here.
+    - **ms.prod** 
+    - **ms.service** - Always use "Dynamics365Operations".
+    - **ms.technology** 
+
+- **Optional metadata**
+    - **audience** - Use of these values: Application User, Developer, or IT Pro.
+    - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
+    - **ms.custom** 
+    - **ms.assetid** - This is the GUID of the article that is used for internal tracking purposes. When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com).
+    - **ms.region** - Use "global" or enter a country-region value.
+    - **ms.author** - Use your Microsoft alias.  
 
 ## Basic Markdown, GFM, and special characters
 
-All basic and GitHub Flavored Markdown (GFM) is supported. For more information on these, see:
+All basic and GitHub Flavored Markdown (GFM) is supported. For more information, see:
 
 - [Baseline Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
 - [GFM documentation](https://guides.github.com/features/mastering-markdown)
@@ -62,28 +75,25 @@ Markdown uses special characters such as \*, \`, and \# for formatting. If you w
 ## File name
 
 File names use the following rules:
+
 * Contain only lowercase letters, numbers, and hyphens.
 * No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
 * Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
 * No small words - don't include a, and, the, in, or, etc.
 * Must be in Markdown and use the .md file extension.
-* Keep file names reasonably short. They are part of the URL for your articles.  
-
-
+* Keep file names short. They are part of the URL for your articles.  
 
 ## Headings
 
-Use sentence-style capitalization. Always capitalize:
-- The first word of a heading. 
-- The word following a colon in a title or heading (for example, "How to: Sort an array"). 
+Use sentence-style capitalization. Do not overcapitalize. 
 
-Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above. 
+Headings should use atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above. 
 
 There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
 
-If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.     
+If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Define a data method in C# #`.     
 
-Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
+Second-level headings will generate the on-page TOC that appears in the "In this article" section under the on-page title.
 
 ### Third-level heading
 #### Fourth-level heading
@@ -100,23 +110,22 @@ Use for UI elements.
 
 ## Links
 
-### Internal Links
+### Internal links
 
-To link to a header in the same Markdown file (also known as anchor links), you'll need to find out the id of the header you're trying to link to. To confirm the ID, view the source of the rendered article, find the id of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
-The id is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the id would look like this `id="step-2"`.
+To link to a header in the same Markdown file (also known as anchor links), you'll need to find the ID of the header that you're trying to link to. To confirm the ID, view the source of the rendered article, find the ID of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
+The ID is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the ID would look like this `id="step-2"`.
 
 - Example: [Chapter 1](#chapter-1)
 
 To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
 
-- Example: [Readme file](../readme.md)
-- Example: [Welcome to .NET](../docs/welcome.md)
+- Example: [Readme](../Dynamics-365-Operations/readme.md)
 
 To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
 
-- Example: [.NET Community](../docs/welcome.md#community)
+- Example: [Template](../Dynamics-365-Operations/template.md#links)
 
-### External Links
+### External links
 
 To link to an external file, use the full URL as the link.
 
@@ -125,27 +134,6 @@ To link to an external file, use the full URL as the link.
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
 - Example: http://www.github.com
-
-### Links to APIs
-
-The build system has some extensions that allow us to link to .NET Core APIs without having to use external links.  
-When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
-
-You can use one of the following syntax:
-1. Markdown link: `[link_text](xref:UID)`
-2. Auto link: `<xref:UID>`
-3. Shorthand form: `@UID`
-
-- Example: `@System.String`
-- Example: `[String class](xref:System.String)` 
-
-For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
-
-> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repo: [docascode/coreapi](https://github.com/docascode/coreapi). We're working on having a better system in the future.
-
-When the UID contains the special characters \` or \#, the UID value needs to be HTML encoded as %60 and %23 respectively as in the following examples:
-- Example: @System.Threading.Tasks.Task\`1 becomes `@System.Threading.Tasks.Task%601`
-- Example: @System.Exception.\#ctor becomes `@System.Exception.%23ctor`
 
 ## Lists
 
@@ -210,7 +198,7 @@ You can use a [Markdown table generator tool](http://www.tablesgenerator.com/mar
 ## Code
 
 The best way to include code is to include snippets from a working sample. Create your
-sample following the instructions in the [contributing guide](../CONTRIBUTING.md#contributing-to-samples).
+sample following the instructions in the [contributing guide](../CONTRIBUTING.md).
 
 You can include the code using include syntax:
 
@@ -227,7 +215,6 @@ Other languages that are supported are:
 * Powershell: `code-ps`
 * SQL: `code-sql`
 * XML: `code-xml`
-
 
 
 The text you place for `<title>` shows up as a rollover on the text. The `<pathToFile>`
@@ -278,22 +265,6 @@ namespace HelloWorld
     }
 }
 ```
-#### Python
-
-```python
-friends = ['john', 'pat', 'gary', 'michael']
-for i, name in enumerate(friends):
-    print "iteration {iteration} is {name}".format(iteration=i, name=name)
-```
-#### PowerShell
-
-```powershell
-Clear-Host
-$Directory = "C:\Windows\"
-$Files = Get-Childitem $Directory -recurse -Include *.log `
--ErrorAction SilentlyContinue
-```
-
 ### Generic code block
 
 Use three backticks (&#96;&#96;&#96;) for generic code block coding.   
@@ -318,19 +289,15 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 
 ## Images
 
-### Static Image or Animated gif
+### Static image or animated gif
 
 ![this is the alt text](../images/Logo_DotNet.png)
 
-### Linked Image
+### Linked image
 
 [![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
 
 ## Videos
-
-### Channel 9
-
-<iframe src="https://channel9.msdn.com/Shows/On-NET/Shipping-NET-Core-RC2--Tools-Preview-1/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 ### YouTube
 
@@ -366,32 +333,3 @@ It's important to use the following alert styles so they render with the proper 
 
 And they'll render like this:
 ![Alert styles](../images/alerts.png)
-
-###  Includes
-
-You can embed the Markdown of one file into another using an include.
-
-[!INCLUDE[sample include file](../includes/sampleinclude.md)]
-
-### Buttons
-
-> [!div class="button"]
-[button links](../docs/core/index.md)
-
-You can see an example of buttons in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices). 
-
-### Selectors
-
-> [!div class="op_single_selector"]
-- [macOS](../docs/core/tutorials/using-on-macos.md)
-- [Windows](../docs/core/tutorials/using-on-windows.md)
-
-You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
-
-### Step-By-Steps
-
->[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
-
-You can see an example of step-by-steps in action at the [Advanced Threat Analytics docs](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2).
