@@ -62,10 +62,10 @@
 ### [Configure a parallel activity in a workflow](organization-administration\configure-parallel-activity-workflow.md)
 ### [Configure a parallel branch in a workflow](organization-administration\configure-parallel-branch-workflow.md)
 ### [Configure the properties of a workflow](organization-administration\configure-workflow-properties.md)
-## [Workflow actions](organization-administration\workflow-actions.md)
-## [Workflow elements](organization-administration\workflow-elements.md)
-## [Workflow system architecture](organization-administration\workflow-system-architecture.md)
-## [Workflow types report](organization-administration\workflow-types-report.md)
+### [Workflow actions](organization-administration\workflow-actions.md)
+### [Workflow elements](organization-administration\workflow-elements.md)
+### [Workflow system architecture](organization-administration\workflow-system-architecture.md)
+### [Workflow types report](organization-administration\workflow-types-report.md)
 
 
 # Other resources
