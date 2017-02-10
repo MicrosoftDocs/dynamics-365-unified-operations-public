@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml",
         ],
         "exclude": [
           "**/obj/**",
@@ -29,7 +30,10 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumbe_path": "/breadcrumb/toc.yml",
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "d365OpsCore"
