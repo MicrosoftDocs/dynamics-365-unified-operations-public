@@ -20,8 +20,9 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
+          "**/*.jpeg",
           "**/*.gif",
-          "**/*.bmp"
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -33,7 +34,8 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/dynamics365/operations/toc.yml"
+      "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json",
+      "search_scope": ["Dynamics365Operations"]
     },
     "fileMetadata": {},
     "template": [],
