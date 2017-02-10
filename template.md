@@ -113,6 +113,9 @@ Use for UI elements.
 ### Internal links
 
 To link to a header in the same Markdown file (also known as anchor links), you'll need to find the ID of the header that you're trying to link to. To confirm the ID, view the source of the rendered article, find the ID of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
+
+**Note:** You need to follow the casing of the header ID. In the following examples, the README.md file is all caps, so that's how this needs to be written in Markdown. Most IDs are lowercase. 
+
 The ID is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the ID would look like this `id="step-2"`.
 
 - Example: [Chapter 1](#chapter-1)
@@ -123,7 +126,7 @@ To link to a Markdown file in the same repo, use [relative links](https://www.w3
 
 To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
 
-- Example: [Template](../Dynamics-365-Operations/template.md#links)
+- Example: [Links](#links)
 
 ### External links
 
