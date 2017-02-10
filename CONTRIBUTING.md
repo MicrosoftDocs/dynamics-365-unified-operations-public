@@ -59,11 +59,9 @@ If you submit a pull request with new or significant changes to documentation an
 Use the /template.md file as a standard Markdown template, with the basic Markdown formatting that you need for a new topic. We suggest that you copy this template to a new file, fill out the metadata as specified in the Metadata section, set the H1 heading above to the title of the topic, and delete the content in the template as you add your own content.
 
 ## Permissions
-Anybody with a GitHub account can contribute to Dynamics 365 for Operations content through our public repository at [https://docs.microsoft.com/en-us/dynamics365/](https://docs.microsoft.com/en-us/dynamics365/). No special permissions are required.
+Anybody with a GitHub account and membership in the Microsoft Docs organization can contribute to Dynamics 365 for Operations content through our repository at [https://docs.microsoft.com/en-us/dynamics365/](https://docs.microsoft.com/en-us/dynamics365/). 
 
-If you are a Microsoft PM or writer who is working on Dynamics 365 content as a designated author or reviewer, you must work in our private content repository.
-
-1. Visit [https://repos.opensource.microsoft.com ](https://repos.opensource.microsoft.com) to join the Microsoft GitHub organization. Once you are a member of the Microsoft organization, you can access the private repository.
+1. Visit [https://repos.opensource.microsoft.com ](https://repos.opensource.microsoft.com) to join the Microsoft Docs GitHub organization. Once you are a member of the Microsoft organization, you can access the private repository.
 
 2. Register your GitHub account with the publishing system before you submit your first pull request. To do this, visit https://op-portal-prod.azurewebsites.net/, and click "Sign in with GitHub". The one-time sign-in is all that is needed. 
 
