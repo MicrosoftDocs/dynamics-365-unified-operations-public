@@ -1,10 +1,10 @@
-{
+*{
   "build": {
     "content": [
       {
         "files": [
           "**/*.md",
-          "**/*.yml",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -32,7 +32,7 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumbe_path": "/breadcrumb/toc.yml",
+      "breadcrumb_path": "/breadcrumb/toc.yml"
     },
     "fileMetadata": {},
     "template": [],
