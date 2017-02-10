@@ -1,17 +1,17 @@
 - name: Dynamics 365 for Operations
-  tocHref: /operations/
-  topicHref: /operations/index
+  tocHref: /dynamics365/operations/
+  topicHref: /dynamics365/operations/index
   items:
   - name: Cross-product features
-    tocHref: /operations/core/
-    topicHref: /operations/core/index
+    tocHref: /dynamics365/operations/
+    topicHref: /dynamics365/operations/index
     items:
       - name: Get started
-        tocHref: /operations/core/get-started/
-        topicHref: /operations/core/get-started/
+        tocHref: /dynamics365/operations/get-started/
+        topicHref: /dynamics365/operations/get-started/
       - name: Organization administration
-        tocHref: /operations/core/organization-administration/
-        topicHref: /operations/core/organization-administration/
+        tocHref: /dynamics365/operations/organization-administration/
+        topicHref: /dynamics365/operations/organization-administration/
       - name: Localizations
-        tocHref: /operations/core/localizations/
-        topicHref: /operations/core/localizations/
+        tocHref:/dynamics365/operations/localizations/
+        topicHref: /dynamics365/operations/localizations/
