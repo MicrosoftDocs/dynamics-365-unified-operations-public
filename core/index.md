@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Welcome to Dynamics 365 for Operations | Microsoft Docs
+title: Welcome to Dynamics 365 for Operations
 description: Dynamics 365 for Operations is the complete Enterprise Resource Planning (ERP) solution for business. 
 author: margoc
 manager: AnnBe
