@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Physical and financial updates | Microsoft Docs
+title: Physical and financial updates
 description: This topic provides an overview of which types of transactions increase or decrease inventory quantities. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-31 12:50:59
+ms.date: 2016-03-31 12 - 50 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventTrans, InventTransVoucher
+ms.search.form: InventTrans, InventTransVoucher
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 75023
-ms.assetid: adaaf068-f1b2-4999-a68a-c57b95919c2e
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: ed9cc389-3274-4040-9647-7f8d22bee741
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: mguada
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -51,7 +53,7 @@ When a financial receipt transaction is posted, the status of the transaction re
 -   Positive quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer
 
 ## Transactions that increase quantity
-Transactions that increase quantity are posted at the running average cost price. Dynamics 365 for Operations calculates a running average cost price that is based on the cost of each of these transactions for each inventory dimension that is being tracked financially. For information about running average cost prices, see [Running average cost price](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/cost-management/running-average-cost-price).
+Transactions that increase quantity are posted at the running average cost price. Dynamics 365 for Operations calculates a running average cost price that is based on the cost of each of these transactions for each inventory dimension that is being tracked financially. For information about running average cost prices, see [Running average cost price](running-average-cost-price.md).
 
 ## Transactions that decrease quantity
 Dynamics 365 for Operations uses the calculated running average cost price when a transaction that decreases quantity is posted, regardless of the inventory model that is associated with that inventory. The transaction that decreases quantity must not have been marked to another transaction before it was posted. If the physical on-hand inventory becomes negative, Dynamics 365 for Operations uses the inventory cost that is defined for the item on the **Item** page. **Note:** If multisite functionality is enabled, this cost will instead be the inventory cost that is defined for a site on the **Default order settings** page.

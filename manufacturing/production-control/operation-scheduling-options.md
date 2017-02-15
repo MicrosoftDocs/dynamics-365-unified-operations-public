@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Operations scheduling options | Microsoft Docs
+title: Operations scheduling options
 description: This topic describes the options for operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-04 13:34:14
+ms.date: 2016-10-04 13 - 34 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ProdSchedule
+ms.search.form: ProdSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 198123
-ms.assetid: f4dffe97-ed49-40e1-81d8-a43156d1784c
-ms.region: global
-ms.industry: Manufacturing
+ms.assetid: 5826cb85-0d76-4c40-8331-143d08344d95
+ms.search.region: global
+ms.search.industry: Manufacturing
 ms.author: crytt
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -130,5 +132,5 @@ You can save the current values as default values. There are two options:
 See also
 --------
 
-[Operations scheduling](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/operations-scheduling)
+[Operations scheduling](operations-scheduling.md)
 

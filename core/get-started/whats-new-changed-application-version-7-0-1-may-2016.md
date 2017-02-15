@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics AX application version 7.0.1 (May 2016) | Microsoft Docs
+title: What's new or changed in Dynamics AX application version 7.0.1 (May 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX application version 7.0.1. This version was released in May 2016 and has a build number of 7.0.1265.23014.
-author: sericks007
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-10 19:54:44
+ms.date: 2016-06-10 19 - 54 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks007
-ms.suite: Released- Dynamics AX application 7.0.1
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 91213
-ms.assetid: 0e7d9a9d-4453-44a1-96b0-4f73d75b9376
-ms.region: Global
-# ms.industry: 
-ms.author: sericks
+ms.assetid: 14145bed-25f1-42d8-af09-b89e3f6c75c2
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 
@@ -77,7 +79,7 @@ Electronic reporting (ER)
 See also
 --------
 
-[What's new or changed](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7)
+[What's new or changed](whats-new-changed.md)
 
-[New or updated task guides available (May 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/new-or-updated-task-guides-available-may-2016)
+[New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
 

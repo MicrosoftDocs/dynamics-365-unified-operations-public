@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Import demo data for AX 2012 R3 by using the Test Data Transfer Tool | Microsoft Docs
+title: Import demo data for AX 2012 R3 by using the Test Data Transfer Tool
 description: In this walkthrough, you will use the Test Data Transfer Tool (beta) to import the demo data for Microsoft Dynamics AX 2012 R3.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-02 17:01:09
+ms.date: 2015-12-02 17 - 01 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13401
-ms.assetid: 377ccbff-549c-4b27-9efe-7eeba1885878
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 30ef60e6-cab0-47f6-811c-ba6d3026e876
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -41,7 +43,7 @@ We strongly recommend that you work locally on the database server where the bus
 1.  Download the AX 2012 R3 demo data from the Release Page on [PartnerSource](http://go.microsoft.com/fwlink/?LinkId=403073).
 2.  Extract the demo data from the package to the database server that hosts the AX 2012 R3 business database for your environment.
 3.  Download the Test Data Transfer Tool (beta) tool installer from the Downloadable tools section of [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com), and install it on the database server that hosts the AX 2012 R3 business database for your environment.
-4.  Verify that you have appropriate permissions to import data. You must have read access to the location where the demo data is stored, and in SQL Server Management Studio, permission to execute **SELECT** statements and **BULK INSERT** statements. For more information, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/install-the-test-data-transfer-tool-beta-for-microsoft-dynamics-ax).
+4.  Verify that you have appropriate permissions to import data. You must have read access to the location where the demo data is stored, and in SQL Server Management Studio, permission to execute **SELECT** statements and **BULK INSERT** statements. For more information, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
 
 ## Run the Test Data Transfer Tool (beta)
 1.  Go to **Control Panel** &gt; **Services**, and stop the AOS instance associated with your environment.
@@ -54,7 +56,7 @@ We strongly recommend that you work locally on the database server where the bus
 See also
 --------
 
-[Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-for-microsoft-dynamics-ax-2012)
+[Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md)
 
 [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=761)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Develop an entity for data migration | Microsoft Docs
+title: Develop an entity for data migration
 description: This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-04-28 19:47:29
+ms.date: 2016-04-28 19 - 47 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83692
-ms.assetid: 7ab80a44-cf60-401a-8db0-5779f4d3ef72
-ms.region: Global
-# ms.industry: 
+ms.assetid: 91e493fb-84ac-49cd-8499-12376cf9bda7
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: kuntalme
 
 This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 
-This tutorial is broken out into two sections and four exercises. In the first section, you will build a **Project Category** entity in Visual Studio. You will then use this entity to export data from Microsoft Dynamics 365 for Operations. In the second section, you will use **Customer Groups** and **Customers** entities to import multiple sets of files by using the new Data Import/Export Framework. **Note:** This tutorial is designed to be slightly more challenging than [Building and consuming data entities](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/building-and-consuming-data-entities). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities and the Data Import/Export Framework through Microsoft Office Mix videos.
+This tutorial is broken out into two sections and four exercises. In the first section, you will build a **Project Category** entity in Visual Studio. You will then use this entity to export data from Microsoft Dynamics 365 for Operations. In the second section, you will use **Customer Groups** and **Customers** entities to import multiple sets of files by using the new Data Import/Export Framework. **Note:** This tutorial is designed to be slightly more challenging than [Building and consuming data entities](build-consuming-data-entities.md). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities and the Data Import/Export Framework through Microsoft Office Mix videos.
 
 ## Prerequisites
 This tutorial requires that you access the environment by using Remote Desktop. You must be provisioned as an administrator on the instance.

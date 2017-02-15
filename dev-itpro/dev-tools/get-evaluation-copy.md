@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Get an evaluation copy | Microsoft Docs
+title: Get an evaluation copy
 description: A public preview is available. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-05-12 18:55:53
+ms.date: 2016-05-12 18 - 55 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 85243
-ms.assetid: 2ae017c6-4a41-4f84-b39f-30dac4eb08ad
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7aaea853-2173-41c1-a5c8-52852a6a4fd9
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

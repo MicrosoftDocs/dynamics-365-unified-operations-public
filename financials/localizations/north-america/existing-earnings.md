@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Work with existing earnings | Microsoft Docs
+title: Work with existing earnings
 description: This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-11-01 16:40:01
+ms.date: 2016-11-01 16 - 40 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PayrollEarningStatement
+ms.search.form: PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 233764
-ms.assetid: 67092577-b40e-4596-96cb-cc3ceff5eca8
-ms.region: USA
-# ms.industry: 
+ms.assetid: 0b57d1e8-1d25-48f3-81c2-2dcfca8e77c6
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
 
-This topic doesn't discuss retroactive earnings. For information about retroactive earnings, see [Generate earnings](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/generate-earnings).
+This topic doesn't discuss retroactive earnings. For information about retroactive earnings, see [Generate earnings](generate-earnings.md).
 
 ## This task is part of a bigger process
 The following illustration shows where the release of earnings fits into the larger picture of payroll processing. Other tasks that this topic describes aren't part of the end-to-end payroll process. ![Basic steps for processing earnings](https://i-technet.sec.s-msft.com/dynimg/IC766958.gif "Basic steps for processing earnings")
@@ -52,7 +54,7 @@ Use this procedure to change the status of all earnings statement lines from **N
 2.  In the **Pay cycle** field, select the pay cycle of the worker positions to process.
 3.  In the **Pay period** field, select the pay period for the worker position earnings. The list includes only the pay periods that are available for the pay cycle. The default pay period is the first open pay period. However, you can select any open pay period in the list.
 4.  Optional: Select the **Release lines on hold** check box to release any lines that are on hold on the earnings statements.
-5.  Click **OK** to change all the earnings statement lines that have a payment status of **None** to **Released**, so that they can be processed. **Note:** When you release an earnings statement line for an accrued benefit, such as sick time or vacation time, the number of hours on the line is verified against the minimum balance that the benefit accrual plan requires. If the balance is less than the number of hours on the line, the line isn’t released. For more information, see [Benefit accrual plan tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-accrual-plan-tasks).
+5.  Click **OK** to change all the earnings statement lines that have a payment status of **None** to **Released**, so that they can be processed. **Note:** When you release an earnings statement line for an accrued benefit, such as sick time or vacation time, the number of hours on the line is verified against the minimum balance that the benefit accrual plan requires. If the balance is less than the number of hours on the line, the line isn’t released. For more information, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md).
 
 ## If required: Change earnings statements
 After you generate an earnings statement, you can add lines to it. You can also change existing lines, provided that they haven’t been released or processed. You can delete released lines but not processed lines.
@@ -61,13 +63,13 @@ After you generate an earnings statement, you can add lines to it. You can also 
 2.  Make the required changes. Keep the following information in mind:
     -   **Salaried workers** – If you change or add a line for a salaried worker, lines that have a source of **Salary** are calculated and re-created, unless you click **Calculate Salary**. This functionality helps guarantee that salaried workers don't receive more or less than their usual amount for the pay period. We recommend that you keep the **Calculate Salary** functionality turned on unless you're terminating a worker’s employment.
     -   **Overtime premiums** – Earnings statement lines that have a rate basis of **Regular rate of pay** are used to create overtime premiums. These lines are calculated based on all other earnings statement lines for nondiscretionary earnings. Therefore, after you change any earnings statement line, you must delete all lines that have a rate basis of **Regular rate of pay** and then add those lines again. Otherwise, the **Regular rate of pay** lines might not be correct.
-    -   **Retroactive earnings** – You can change retroactive earning lines, but you can’t change the original retroactive rate that the earnings statement line originated from. For more information, see [Earning code and earning code group tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/earning-code-and-earning-code-group-tasks).
+    -   **Retroactive earnings** – You can change retroactive earning lines, but you can’t change the original retroactive rate that the earnings statement line originated from. For more information, see [Earning code and earning code group tasks](earning-code-group-tasks.md).
 
 ## Next step
-After you finalize all the earnings, you’re ready to generate pay statements. For more information, see [Work with pay statements](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-pay-statements).
+After you finalize all the earnings, you’re ready to generate pay statements. For more information, see [Work with pay statements](pay-statements.md).
 
 See also
 --------
 
-[Earnings and the earnings generation process Q&A](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/earnings-and-the-earnings-generation-process)
+[Earnings and the earnings generation process Q&A](earnings-generation-process.md)
 

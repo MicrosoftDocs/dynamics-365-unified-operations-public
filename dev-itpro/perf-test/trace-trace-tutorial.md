@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Take a trace using Trace parser | Microsoft Docs
+title: Take a trace using Trace parser
 description: This tutorial provides guidelines on how to take traces.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 20:41:00
+ms.date: 2015-12-12 20 - 41 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25471
-ms.assetid: 3b56f11d-6d54-49b3-9cf3-c11114fb9d70
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0f46c668-e933-4ee9-869a-8451d5fa7662
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: chwolf
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -59,5 +61,5 @@ This tutorial requires that you access the Dynamics AX environment as an adminis
 4.  Click on the user name to get to the user options.
 5.  Delete the trace if you want. You might do this if you have downloaded it.
 
-**Note: **The trace will be deleted after 7 days. For more information about the desktop version of trace parser, see [Trace parser: Using the desktop version to diagnose problems and analyze performance issues](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/perf-test/using-the-desktop-version-of-trace-parser-to-diagnose-problems-and-analyze-performance-issues).
+**Note: **The trace will be deleted after 7 days. For more information about the desktop version of trace parser, see [Trace parser: Using the desktop version to diagnose problems and analyze performance issues](trace-parser.md).
 

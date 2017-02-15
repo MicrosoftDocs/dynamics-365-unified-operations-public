@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Batch server overview | Microsoft Docs
+title: Batch server overview
 description: This article describes batch processing and batch servers, and how to plan for their use.
 author: maertenm
 manager: AnnBe
-ms.date: 2016-02-29 19:19:28
+ms.date: 2016-02-29 19 - 19 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 57201
-ms.assetid: a16693b5-1192-414f-bdbe-ff12b49b43ae
-ms.region: Global
-# ms.industry: 
+ms.assetid: fc67c86e-67bc-4139-b445-c65048a945b7
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: maertenm
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

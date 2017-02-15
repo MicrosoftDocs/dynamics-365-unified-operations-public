@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build navigation | Microsoft Docs
+title: Build navigation
 description: In this tutorial, you will add navigational elements to a workspace and the navigation pane.
 author: aneesmsft
 manager: AnnBe
-ms.date: 2015-12-12 23:29:59
+ms.date: 2015-12-12 23 - 29 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26031
-ms.assetid: 3ed9be9b-3a20-49a0-9515-791199d2f7ac
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8b1211cb-fddc-40f4-8d47-b21ef5e1c040
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aneesa
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ In this tutorial, you will add navigational elements to a workspace and the navi
 Prerequisites
 -------------
 
-For this tutorial, you need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2).
+For this tutorial, you need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Dynamics AX Instances](access-instances.md).
 
 ## Key concepts
 -   A *workspace* is an overview page that is specific to a particular subject area. Workspaces are common to all users. In this tutorial, you will add content into an existing workspace.
@@ -43,7 +45,7 @@ For this tutorial, you need to access the Microsoft Dynamics AX environment usin
 -   *Tiles* are securable objects that can be shown on a workspace or the dashboard. They can be secured by using menu items.
 
 ## Setup
-If this is the first tutorial that you are working on, review [Access Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2) and make sure that you provision your administrator user if you are working on a local VM.
+If this is the first tutorial that you are working on, review [Access Dynamics AX Instances](access-instances.md) and make sure that you provision your administrator user if you are working on a local VM.
 
 ### Import the tutorial project
 

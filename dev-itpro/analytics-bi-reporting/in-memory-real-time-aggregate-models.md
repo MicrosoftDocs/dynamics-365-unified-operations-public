@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Why we moved from SSAS cubes to aggregate models | Microsoft Docs
+title: Why we moved from SSAS cubes to aggregate models
 description: This article explains how Microsoft Dynamics 365 for Operations has transitioned from using SQL Server Analysis Services (SSAS) cubes to in-memory, real-time aggregate models for analytics.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-12 19:09:21
+ms.date: 2015-12-12 19 - 09 - 21
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24511
-ms.assetid: 0268cb3f-ec4e-4d22-b678-7de289e557a4
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3f114f8a-c1d3-46fc-8b00-7d106103aa8a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: milindav
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

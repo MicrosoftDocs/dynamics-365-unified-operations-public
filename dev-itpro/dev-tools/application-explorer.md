@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Application Explorer | Microsoft Docs
+title: Application Explorer
 description: This article reviews Application Explorer, and the various views and filtering methods in it. The article also describes how to work with elements in Application Explorer.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-30 23:53:53
+ms.date: 2016-03-30 23 - 53 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 74934
-ms.assetid: 39eccede-6cc6-46fb-8c6a-f973a4257770
-ms.region: Global
-# ms.industry: 
+ms.assetid: c71e49ac-4741-4891-9fbc-79a29dc1ed25
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -94,7 +96,7 @@ These actions can be used only when the filter results are limited to a single m
 See also
 --------
 
-[Technical concepts guide](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Technical concepts guide](developer-landing-page.md)
 
-[Dynamics AX development tools](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/dynamics-ax7-technical-preview-development-tools)
+[Dynamics AX development tools](development-tools.md)
 

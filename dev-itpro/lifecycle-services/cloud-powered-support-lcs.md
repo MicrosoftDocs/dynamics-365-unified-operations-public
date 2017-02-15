@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage Dynamics 365 for Operations Support experiences | Microsoft Docs
+title: Manage Dynamics 365 for Operations Support experiences
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2016-03-08 00:46:17
+ms.date: 2016-03-08 00 - 46 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
-ms.assetid: 0d1bb96c-2164-4257-b163-fd86a72a4f4e
-ms.region: Global
-# ms.industry: 
+ms.assetid: abbb143a-3749-4fa5-a996-9997ba816e04
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: anupams
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -38,7 +40,7 @@ Support tool on Microsoft Dynamics Lifecycle Services (LCS) helps you manage sup
 | Virtual machines are only available for Microsoft Dynamics AX 2012 R2 and AX 2012 R3 environments. |
 
 ## Prerequisites
-To use Support tool, you must have previously created a project in Lifecycle Services, and installed and run the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/system-diagnostics-lifecycle-services-lcs).
+To use Support tool, you must have previously created a project in Lifecycle Services, and installed and run the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](system-diagnostics-lcs.md).
 
 ## Open a new incident
 1.  [Go to Lifecycle Services](https://lcs.dynamics.com).
@@ -60,7 +62,7 @@ To use Support tool, you must have previously created a project in Lifecycle Ser
     -   An incident is created and added to the Incidents list.
     -   Based on the information that the System diagnostics finds, a VM is created that includes that same kernel and application hotfixes as your local environment.
     -   When the VM has been created, you receive an email invitation to access it.
-    -   You receive an email message from the Microsoft Support Engineer who is working on your case. This message asks you to grant the engineer access to your project in the Project contributor role. If you do not grant access, the engineer cannot work on your case. For more information about how to grant access, see [Projects (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/projects-lifecycle-services-lcs).
+    -   You receive an email message from the Microsoft Support Engineer who is working on your case. This message asks you to grant the engineer access to your project in the Project contributor role. If you do not grant access, the engineer cannot work on your case. For more information about how to grant access, see [Projects (Lifecycle Services, LCS)](projects-lcs.md).
 
 ## Reproduce an incident
 1.  In Lifecycle Services, on the Incidents list, in the Support request ID entry for your incident, under Repro VM action, click Customer repro.

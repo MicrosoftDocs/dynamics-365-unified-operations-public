@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Mobile platform for Dynamics 365 for Operations | Microsoft Docs
-description: Microsoft Dynamics 365 for Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product.
-
+title: Mobile platform for Dynamics 365 for Operations
+description: Microsoft Dynamics 365 for Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-11-08 21:59:48
+ms.date: 2016-11-08 21 - 59 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,25 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics 365 for Operations platform update 3
+# ms.reviewer: 71
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 255544
-ms.assetid: 476af876-cc33-48e9-84f0-2c911cf968f7
-ms.region: Global
-# ms.industry: 
+ms.assetid: 253ba69f-fe37-485c-b29a-b5cb7b105d77
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shshabazz
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Platform update 3
 
 ---
 
 # Mobile platform for Dynamics 365 for Operations
 
-Microsoft Dynamics 365 for Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product.
-
+Microsoft Dynamics 365 for Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
 
 Getting started with the mobile app
 -----------------------------------

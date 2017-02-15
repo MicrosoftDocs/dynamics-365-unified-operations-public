@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Trial balance financial reports | Microsoft Docs
+title: Trial balance financial reports
 description: This article describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-11-04 19:44:32
+ms.date: 2015-11-04 19 - 44 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 # audience: 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12314
-ms.assetid: 05378e17-fafe-4bf5-b2f2-1c9d6392f591
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3d4f2b08-1aae-4510-8ef6-feeee6982348
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jcart
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -103,9 +105,9 @@ Each trial balance report uses a different column definition. These column defin
 See also
 --------
 
-[Financial reporting](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/financial-reporting)
+[Financial reporting](financial-reporting-getting-started.md)
 
-[View financial reports](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/view-financial-reports)
+[View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 

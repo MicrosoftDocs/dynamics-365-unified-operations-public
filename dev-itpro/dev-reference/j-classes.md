@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: J Classes | Microsoft Docs
+title: J Classes
 description: System API classes that start with the letter J.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-05 00:12:53
+ms.date: 2016-03-05 00 - 12 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58702
-ms.assetid: 02465039-df44-467e-9578-cf2b65e6b984
-ms.region: Global
-# ms.industry: 
+ms.assetid: b5d5e995-30da-420c-bb7d-a0321d818138
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

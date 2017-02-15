@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Workflow system architecture | Microsoft Docs
+title: Workflow system architecture
 description: This article describes the architecture of the workflow system in Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-02-29 15:09:49
+ms.date: 2016-02-29 15 - 09 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56351
-ms.assetid: aa6bfeb3-4d8e-40e0-836e-0c9f28aa7a39
-ms.region: Global
-# ms.industry: 
+ms.assetid: 21b7c0ad-e685-4659-9948-956261fdaaf5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: OData | Microsoft Docs
+title: OData
 description: This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 19:31:34
+ms.date: 2015-12-12 19 - 31 - 34
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24841
-ms.assetid: af281a82-6954-4da7-822b-2b76303e9aa5
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5ee05937-29cd-4e4b-9966-c901c3e437df
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -111,12 +113,12 @@ OData enables an SQL-like language for creating rich queries against the databas
 The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](http://msdn.microsoft.com/en-us/library/ff478141.aspx).
 
 ## Authentication
-OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/dynamics-ax-7-services-technical-concepts-guide).
+OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
 
 See also
 --------
 
 [Technical Concepts Guide](https://ax.help.dynamics.com/en/?p=183121)
 
-[Architecture changes in Dynamics 'AX 7'](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/architecture-changes-in-ax-7)
+[Architecture changes in Dynamics 'AX 7'](architecture-changes.md)
 

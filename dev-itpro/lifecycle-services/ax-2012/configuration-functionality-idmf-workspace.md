@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configuration in the Intelligent Data Management Framework (AX 2012) | Microsoft Docs
+title: Configuration in the Intelligent Data Management Framework (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 20:04:07
+ms.date: 2015-12-04 20 - 04 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17661
-ms.assetid: b9a74ace-218f-466d-b05f-1dad603bebd7
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: ec7fca83-16e6-483c-b450-367cd5af1890
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

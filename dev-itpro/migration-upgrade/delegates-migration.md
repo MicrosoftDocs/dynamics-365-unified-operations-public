@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Use delegates to solve dependencies between models when migrating code to Dynamics 365 for Operations | Microsoft Docs
+title: Use delegates to solve dependencies between models when migrating code to Dynamics 365 for Operations
 description: This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 author: maertenm
 manager: AnnBe
-ms.date: 2015-12-13 02:36:04
+ms.date: 2015-12-13 02 - 36 - 04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27001
-ms.assetid: ad0433ef-58ee-435c-903b-8b140c8a0437
-ms.region: Global
-# ms.industry: 
+ms.assetid: 08a63049-aa11-498c-8591-bb3ce73744fd
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: maertenm
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ This topic explains how delegate methods serve as a means for defining a contrac
 Overview
 --------
 
-Microsoft Dynamics 365 for Operations is split into more several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite (See [this article](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/models) to learn about models and packages). With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. In this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. [![Del1](./media/del1.jpg)](./media/del1.jpg) While the model split provides many benefits, it creates a problem when trying to access elements defined in higher models. Delegates are the recommended method for accessing elements in higher models from a lower model. Delegates are very similar to events in that when a delegate instance is invoked, a handler with compatible signature code is executed. This permits higher layer code, the handler, to be called by lower layer code, the delegate instance.
+Microsoft Dynamics 365 for Operations is split into more several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite (See [this article](models.md) to learn about models and packages). With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. In this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. [![Del1](./media/del1.jpg)](./media/del1.jpg) While the model split provides many benefits, it creates a problem when trying to access elements defined in higher models. Delegates are the recommended method for accessing elements in higher models from a lower model. Delegates are very similar to events in that when a delegate instance is invoked, a handler with compatible signature code is executed. This permits higher layer code, the handler, to be called by lower layer code, the delegate instance.
 
 ## Create delegates and handlers
 A delegate declaration must have three things:
@@ -72,5 +74,5 @@ There are three key ways to find delegates and handlers
 -   Class references
 -   SubscribesTo references
 
-The Metadata search tool, described on the [Metadata search in Visual Studio](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/metadata-search-in-visual-studio) page, is the best way to find either delegates or their handlers. In Visual Studio, go to **Dynamics 365 **&gt; **Metadata Search** to open the metadata search tool. [![Del15](./media/del15.png)](./media/del15.png) In the search field, type “code:&lt;delegate name&gt;” which will restrict the search to code and find any use of the delegate name, returning both the delegate and handler. Metadata search will search the entire code base and may take some time to complete, but will return any use of the search term in code. [![Del16](./media/del16.png)](./media/del16.png) Methods two and three can be used in parallel to the metadata search. The class where a delegate is defined can also serve as a means to narrow down the search for a delegate or handler. The SubscribesTo keyword requires the class name where the delegate was defined. Visual Studio’s find references (right-click the class name &gt; find references) will return a list of files that reference the class. This list will include both the class definition where the delegate is declared and the handler referencing the class. Finding class references is not a perfect method and will require some manual searching through class references. However, it produces a smaller subset of files and can be faster than a metadata search. [![Del17](./media/del17-1024x300.png)](./media/del17.png) Similar to finding class references, finding all references can be done on the SubscribesTo keyword. The resulting list will include all static delegate handlers. Manually going through this list provides another means for finding static delegate handlers. This will not return dynamically declared delegate handlers that do not use the SubscribesTo keyword. [![Del18](./media/del18-1024x328.png)](./media/del18.png)
+The Metadata search tool, described on the [Metadata search in Visual Studio](metadata-search-visual-studio.md) page, is the best way to find either delegates or their handlers. In Visual Studio, go to **Dynamics 365 **&gt; **Metadata Search** to open the metadata search tool. [![Del15](./media/del15.png)](./media/del15.png) In the search field, type “code:&lt;delegate name&gt;” which will restrict the search to code and find any use of the delegate name, returning both the delegate and handler. Metadata search will search the entire code base and may take some time to complete, but will return any use of the search term in code. [![Del16](./media/del16.png)](./media/del16.png) Methods two and three can be used in parallel to the metadata search. The class where a delegate is defined can also serve as a means to narrow down the search for a delegate or handler. The SubscribesTo keyword requires the class name where the delegate was defined. Visual Studio’s find references (right-click the class name &gt; find references) will return a list of files that reference the class. This list will include both the class definition where the delegate is declared and the handler referencing the class. Finding class references is not a perfect method and will require some manual searching through class references. However, it produces a smaller subset of files and can be faster than a metadata search. [![Del17](./media/del17-1024x300.png)](./media/del17.png) Similar to finding class references, finding all references can be done on the SubscribesTo keyword. The resulting list will include all static delegate handlers. Manually going through this list provides another means for finding static delegate handlers. This will not return dynamically declared delegate handlers that do not use the SubscribesTo keyword. [![Del18](./media/del18-1024x328.png)](./media/del18.png)
 

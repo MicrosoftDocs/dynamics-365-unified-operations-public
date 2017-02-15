@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sales and marketing | Microsoft Docs
+title: Sales and marketing
 description: You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-15 15:07:32
+ms.date: 2016-06-15 15 - 07 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 92303
-ms.assetid: 9b9911bf-7b0d-42a4-81a0-f712b9ce85ed
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: ae42a05e-8c5e-4326-88bc-60b1abb71bd8
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

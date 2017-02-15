@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade home page | Microsoft Docs
-description: These topics describe the process for upgrading your Dynamics 365 for Operations environment and data.
-author: RobinARH
+title: Upgrade home page
+description: These topics describe the process for upgrading your environment and data.
+author: annbe
 manager: AnnBe
-ms.date: 2016-09-06 21:39:39
+ms.date: 2016-09-06 21 - 39 - 39
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,35 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 189723
-ms.assetid: 41331fdf-9b66-4e3a-a9dc-e111598054a3
-ms.region: Global
-# ms.industry: 
-ms.author: robinr
+ms.assetid: 80b9a53d-64cb-4eed-9e3d-0c044c76a002
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Upgrade home page
 
-These topics describe the process for upgrading your Dynamics 365 for Operations environment and data.
+These topics describe the process for upgrading your environment and data.
 
-Upgrading your environment and data
------------------------------------
-
--   [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/process-for-upgrading-to-the-latest-dynamics-ax-update)
--   [Upgrade data in development or demo environments](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/process-for-upgrading-ax-data-to-the-latest-dynamics-ax-update)
--   [Upgrade to the latest platform of Dynamics 365 for Operations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update)
--   [Upgrade the Dynamics AX platform to the August 2016 release](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/servicing/update-the-dynamics-ax-platform-to-the-august-2016-release)
-
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
-
+[Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md) [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md) [Upgrade to the latest platform of Dynamics 365 for Operations](upgrade-latest-platform-update.md) [Upgrade the Dynamics AX platform to the August 2016 release](update-platform-each-release.md)  
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Balanced journals for interunit accounting | Microsoft Docs
+title: Balanced journals for interunit accounting
 description: This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 20:52:10
+ms.date: 2015-12-03 20 - 52 - 10
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerParameters
+ms.search.form: LedgerParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15791
-ms.assetid: 48cc8971-833c-4760-bc8d-5310f76b1140
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4ad90a76-0894-43d9-9bf7-869bfa985898
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: peakerbl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

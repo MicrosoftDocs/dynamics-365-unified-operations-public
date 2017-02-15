@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deprecated APIs in Dynamics 365 for Operations | Microsoft Docs
+title: Deprecated APIs in Dynamics 365 for Operations
 description: This document provides the list of deprecated APIs and migration guidance for some of the deprecated APIs.
 author: aneesmsft
 manager: AnnBe
-ms.date: 2015-12-12 23:29:45
+ms.date: 2015-12-12 23 - 29 - 45
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26011
-ms.assetid: 1e155712-2a0a-4f15-8409-9aa1c5e8b71a
-ms.region: Global
-# ms.industry: 
+ms.assetid: 47211c05-6be5-4913-bfae-1effc2a04779
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aneesa
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -881,7 +883,7 @@ Use ContextMenu instead.</td>
 <td><h4 id="overview-37"><em>Overview</em></h4>
 The SysExcel classes used COM to create and edit Excel workbooks.
 <h4 id="reason-for-deprecation-37"><em>Reason for deprecation</em></h4>
-SysExcel relied on calls to Excel COM objects from the client. Those COM objects are not on the server and COM calls are highly discouraged going forward.
+SysExcel relied on calls to Excel COM objects from the vlient. Those COM objects are not on the server and COM calls are highly discouraged going forward.
 <h4 id="migration-notes-37"><em>Migration notes</em></h4>
 Use the OpenXML .NET framework APIs instead. We are investigating the creation of an assembly that wraps OpenXML to make it easier to call from X++.</td>
 </tr>

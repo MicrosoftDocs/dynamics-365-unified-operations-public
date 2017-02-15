@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Earnings and generating earnings FAQ | Microsoft Docs
+title: Earnings and generating earnings FAQ
 description: This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation. 
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15:30:54
+ms.date: 2016-10-31 15 - 30 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmPosition, HcmWorker, PayrollEarningStatement
+ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 31
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 31
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220904
-ms.assetid: 7a87244c-1eb2-42cf-a982-f51c28f8266c
-ms.region: USA
-# ms.industry: 
+ms.assetid: 711bdec1-3413-40e4-8c50-57ca54e4cf77
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

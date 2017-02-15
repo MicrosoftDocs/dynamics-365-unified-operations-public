@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a Retail Experience app | Microsoft Docs
+title: Create a Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
-author: josaw1
+author: annbe
 manager: AnnBe
-ms.date: 2016-11-02 18:01:40
+ms.date: 2016-11-02 18 - 01 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 61
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 251594
-ms.assetid: 72bb7a3a-656e-43e9-a849-01d4cdd1d07b
-ms.region: Global
-ms.industry: Retail
-ms.author: shajain
+ms.assetid: c8ca9c71-58a5-4666-829c-1e6a3e434196
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: annbe
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -45,7 +47,7 @@ You can download Xamarin from <https://www.xamarin.com/download>. For a tutorial
 
 After you've installed Xamarin, you must update it to the latest stable version.
 
--   **Windows:** In Microsoft Visual Studio, click **Tools** &gt; **Options** &gt;**Environment** &gt; **Xamarin** &gt; **Other**.
+-   **Windows:** In Microsoft Visual Studio, click **Tools** &gt; **Environment** &gt; **Xamarin** &gt; **Other**.
 -   **Mac:** In Xamarin Studio, click **Check for Updates** &gt; **Update channel**. (For more information about this step, see [https://developer.xamarin.com/recipes/cross-platform/ide/change\_updates\_channel/.](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/))
 
 For more information, see [Change the Updates Channel](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
@@ -57,22 +59,22 @@ If you're developing on Windows and using the Mac just for building the iOS app 
 ## Loading the solution in Visual Studio
 You must modify the Retail Experience app solution before it can be loaded correctly in Visual Studio. Follow these steps.
 
-1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:RetailSdk.
-2.  Open C:RetailSdkSampleExtensionsShoppingAppSample.ShoppingApp.sln, and remove the following line.
+1.  Copy the Retail SDK to a Xamarin-enabled computer. For example, copy it to C:\\RetailSdk.
+2.  Open C:\\RetailSdk\\SampleExtensions\\ShoppingApp\\Sample.ShoppingApp.sln, and remove the following line.
 
            
         Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
 
-3.  Open C:RetailSdkSampleExtensionsShoppingAppiOSShoppingApp.iOS.csproj, and remove following lines.
+3.  Open C:\\RetailSdk\\SampleExtensions\\ShoppingApp\\iOS\\ShoppingApp.iOS.csproj, and remove following lines.
 
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
-        <Import Project="$(SdkRootPath)BuildToolsMicrosoft.Dynamics.RetailSdk.Build.targets" />
-        <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
+        <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.props" />
+        <Import Project="..\..\..\BuildTools\Microsoft.Dynamics.RetailSdk.Build.settings" />
+        <Import Project="$(SdkRootPath)\BuildTools\Microsoft.Dynamics.RetailSdk.Build.targets" />
+        <HintPath>..\..\..\References\Xamarin.iOS\0.0.0.0\Xamarin.iOS.dll</HintPath>
 
 4.  In Visual Studio, open Sample.ShoppingApp.sln, and add existing projects from the Droid and iOS folders. (Right-click the solution, and then select **Add** &gt; **Existing Projects in Visual Studio**.)
 5.  Xamarin.Forms fixed an issue with the version 2.3.2.127 that is required for the app so please upgrade the Xamarin.Forms version as described below:
-    1.  Open the .csproj files for both Android and iOS projects and replace the line "&lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.1.114&lt;/PkgXamarin\_Forms&gt;" with &lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.2.127&lt;/PkgXamarin\_Forms&gt;
+    1.  Open the .csproj files for both Android and iOS projects and replace the line "&lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)\\Xamarin.Forms.2.3.1.114&lt;/PkgXamarin\_Forms&gt;" with &lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)\\Xamarin.Forms.2.3.2.127&lt;/PkgXamarin\_Forms&gt;
     2.  Open the files package.config file for both Android and iOS projects and replace the line "&lt;package id="Xamarin.Forms" version="2.3.1.114" targetFramework="monoandroid60" /&gt;" with "&lt;package id="Xamarin.Forms" version="2.3.2.127" targetFramework="monoandroid60" /&gt;"
 
 ## Connect to a Dynamics 365 for Operations online channel
@@ -133,16 +135,16 @@ To change the icons for the Android app, open the Resource folder, and update th
 
 To change the text labels on the Android app, open the TextResources.resx file, and edit the values of the available resources. The following table shows the name of the label/text that appears on the Android device and the corresponding property/key that must be changed in TextResources.resx. The app name is specified in the strings.xml file.
 
-| Label/text                                                 | Property name/key                                                                                        |
-|------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| App name                                                   | **App\_name**. This property can be found in the strings.xml file at ../ShoppingAppDroidResourcesvalues. |
-| Shop icon name and the corresponding page title            | **MenuPage\_Products** and **Pages\_CategoryListPage\_Products**, respectively                           |
-| Information icon name and the corresponding page title     | **MainTabs\_Account** and **Pages\_AccountPage\_AccountInformation**, respectively                       |
-| Confirmation messages that appear as toast notifications   | Multiple messages in TextResources.resx                                                                  |
-| "Add to cart" button text and the corresponding page title | **Pages\_ProductDetail\_AddToCart** and **Pages\_CartPage\_Title**, respectively                         |
-| "Checkout" button text and the corresponding page title    | **Pages\_CartPage\_Checkout** and **Pages\_CheckoutPage\_Title**, respectively                           |
-| "Place order" button text                                  | **Pages\_CheckoutPage\_PlaceOrder**                                                                      |
-| About page label and the corresponding page title          | **Pages\_AccountPage\_About** and **Pages\_AboutPage\_Title**, respectively                              |
+| Label/text                                                 | Property name/key                                                                                              |
+|------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| App name                                                   | **App\_name**. This property can be found in the strings.xml file at ../ShoppingApp\\Droid\\Resources\\values. |
+| Shop icon name and the corresponding page title            | **MenuPage\_Products** and **Pages\_CategoryListPage\_Products**, respectively                                 |
+| Information icon name and the corresponding page title     | **MainTabs\_Account** and **Pages\_AccountPage\_AccountInformation**, respectively                             |
+| Confirmation messages that appear as toast notifications   | Multiple messages in TextResources.resx                                                                        |
+| "Add to cart" button text and the corresponding page title | **Pages\_ProductDetail\_AddToCart** and **Pages\_CartPage\_Title**, respectively                               |
+| "Checkout" button text and the corresponding page title    | **Pages\_CartPage\_Checkout** and **Pages\_CheckoutPage\_Title**, respectively                                 |
+| "Place order" button text                                  | **Pages\_CheckoutPage\_PlaceOrder**                                                                            |
+| About page label and the corresponding page title          | **Pages\_AccountPage\_About** and **Pages\_AboutPage\_Title**, respectively                                    |
 
 **Note:** Some of the resources in the TextResources.resx file aren't used by the Android app, but they are used by the iOS app. Examples include **MainTabs\_Cart** and **MainTabs\_Products**. You can change those resources from the Android app without affecting the iOS app.
 

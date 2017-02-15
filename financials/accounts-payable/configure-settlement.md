@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure settlement | Microsoft Docs
+title: Configure settlement
 description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:35:59
+ms.date: 2015-12-02 23 - 35 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
+ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14601
-ms.assetid: 083fa9a6-33bf-477e-986d-369db8cefa92
-ms.region: Global
-# ms.industry: 
+ms.assetid: 03ce8024-d890-462c-a577-2213306a1dd3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: kweekley
 
 How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 
-The following parameters affect how settlements are processed in Microsoft Dynamics 365 for Operations. Settlement is the process of settling an invoice against a payment or credit note. These parameters are located in the **Settlement** area of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
+The following parameters affect how settlements are processed in Microsoft Dynamics AX. Settlement is the process of settling an invoice against a payment or credit note. These parameters are located in the **Settlement** area of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
 
 -   **Automatic settlement** – Set this option to **Yes** if a transaction should be settled automatically against other open transactions when it is posted. If this option is set to **No**, users can manually settle transactions when they enter payments, or later, by using the **Settle transactions** page.
 -   **Cash discount administration** – Specify how a [cash discount is handled when an invoice is overpaid](http://ax.help.dynamics.com/en/?p=2861). For an overpayment, the cash discount can be reduced, it can be treated as a difference, or it can remain on account for the vendor or customer.

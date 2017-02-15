@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ syntax | Microsoft Docs
+title: X++ syntax
 description: This topic contains contains the syntax reference for X++. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-29 19:24:28
+ms.date: 2016-03-29 19 - 24 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72211
-ms.assetid: e8d33c60-e64c-4305-90e2-f27c390ddd20
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0e336848-2940-4702-973c-6f78eb24025c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -1491,5 +1493,5 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 See also
 --------
 
-[X++ Language Reference](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-language-reference)
+[X++ Language Reference](xpp-language-reference.md)
 

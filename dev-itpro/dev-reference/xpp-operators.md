@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ operators | Microsoft Docs
+title: X++ operators
 description: This topic describes the operators supported in X++.
-author: RobinARH
+author: annbe
 manager: AnnBe
-ms.date: 2016-08-27 00:51:34
+ms.date: 2016-08-27 00 - 51 - 34
 ms.topic: 
 ms.prod: 
 ms.service: 
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150373
-ms.assetid: ef7eb78c-8017-44f7-b509-c83438925f3e
-ms.region: Global
-# ms.industry: 
-ms.author: robinr
+ms.assetid: 41bce93b-44b2-40e8-9109-6384ef02ad0e
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

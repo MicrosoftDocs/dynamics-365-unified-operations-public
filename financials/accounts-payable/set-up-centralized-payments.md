@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up centralized payments | Microsoft Docs
+title: Set up centralized payments
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-08 17:50:17
+ms.date: 2016-03-08 17 - 50 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerInterCompany
+ms.search.form: LedgerInterCompany
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62243
-ms.assetid: 067909a0-adf4-4855-8b9b-c03a2e2f5a41
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5ec1a1a4-fa47-4f89-81fc-ffd20bf2d394
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

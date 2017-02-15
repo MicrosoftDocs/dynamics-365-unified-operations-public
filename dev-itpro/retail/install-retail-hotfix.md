@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install Retail hotfixes | Microsoft Docs
+title: Install Retail hotfixes
 description: Use this tutorial to install Retail hotfixes for Microsoft Dynamics AX.
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-03 19:39:22
+ms.date: 2015-12-03 19 - 39 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15151
-ms.assetid: 8ab66422-c26f-4116-9c78-1368aa605435
-ms.region: Global
-# ms.industry: 
+ms.assetid: b11893ae-cd59-4af1-99cd-a65ada9672c0
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aamiral
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

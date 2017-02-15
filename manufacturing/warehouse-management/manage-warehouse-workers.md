@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage warehouse workers | Microsoft Docs
+title: Manage warehouse workers
 description: This article describes how you can use Microsoft Dynamics AX to help control and monitor the work that's carried out by employees in your warehouses.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-30 13:17:06
+ms.date: 2016-03-30 13 - 17 - 06
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
+ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72891
-ms.assetid: 8ecdba8a-9ee3-439a-a631-839be2887387
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6fb4c2f2-9e81-4d4f-87e9-d73d44878e32
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: perlynne
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cost categories used in Production control and Project management accounting | Microsoft Docs
+title: Cost categories used in Production control and Project management accounting
 description: Some types of production work can apply to project time estimates and reporting. This article provides information about the cost categories that you must define for these types of production work for production and project purposes.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-05 14:45:18
+ms.date: 2016-04-05 14 - 45 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ProjCategory
+ms.search.form: ProjCategory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78253
-ms.assetid: 6f05e817-36df-4faa-8b05-ca44b49d83d0
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 136cf37e-937c-489e-ba4b-a95335d21f6e
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: mguada
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

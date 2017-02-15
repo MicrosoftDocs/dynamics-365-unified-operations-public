@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Purchase orders for a project | Microsoft Docs
+title: Purchase orders for a project
 description: This article describes the various methods that you can use to create purchase orders for a project. The method that you use depends on the purpose of the purchase order, and when the purchased items are consumed and charged to a project.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-04-29 22:02:01
+ms.date: 2016-04-29 22 - 02 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83972
-ms.assetid: 5ceae144-e3f8-437d-88f6-6751ac27e60a
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: b20d07de-d813-4878-ae20-9bf78bd6e95d
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

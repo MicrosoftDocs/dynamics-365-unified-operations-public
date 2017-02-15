@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Issue worker payments | Microsoft Docs
+title: Issue worker payments
 description: This topic explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 17:59:51
+ms.date: 2016-10-31 17 - 59 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222324
-ms.assetid: 288f19fd-4998-4b1d-97c6-f746131a1f68
-ms.region: USA
-# ms.industry: 
+ms.assetid: 556db51f-b7b4-410f-b52f-e76ac9670214
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -62,7 +64,7 @@ The following table shows the prerequisites that must be in place before you sta
 <ul>
 <li>Set the <strong>Payroll clearing account</strong> field on the <strong>Calculation settings</strong> tab on the <strong>Payroll parameters</strong> page.</li>
 <li>Set the <strong>Check method of payment</strong>, <strong>Vendor account for worker payments</strong>, <strong>Payment journal name</strong>, and <strong>Procurement category</strong> fields on the <strong>Payment issuance</strong> tab on the <strong>Payroll parameters</strong> page.</li>
-<li>Before you can generate a positive pay file for payroll, you must set up positive pay. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/set-up-and-generate-positive-pay-files">Set up and generate positive pay</a>.</li>
+<li>Before you can generate a positive pay file for payroll, you must set up positive pay. For more information, see <a href="set-up-generate-positive-pay-files.md">Set up and generate positive pay</a>.</li>
 <li>If you generate electronic payments, make sure that the <strong>Electronic method of payment</strong> field is set on the on the <strong>Payment issuance</strong> tab on the <strong>Payroll parameters</strong> page. Additionally, make sure that you’ve entered the bank account disbursements for each worker.</li>
 </ul></td>
 </tr>
@@ -70,9 +72,9 @@ The following table shows the prerequisites that must be in place before you sta
 </table>
 
 ## Submit pay statements for multiple workers in a pay period
-Use this procedure to create a payment journal for multiple pay statements at the same time. Before you generate pay statements, you must generate and release earnings. For more information, see [Generate earnings](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/generate-earnings). To submit pay statements for multiple workers at the same time, follow these steps.
+Use this procedure to create a payment journal for multiple pay statements at the same time. Before you generate pay statements, you must generate and release earnings. For more information, see [Generate earnings](generate-earnings.md). To submit pay statements for multiple workers at the same time, follow these steps.
 
-1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-pay-statements). **Tip:** Before you generate pay statements, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-pay-statements).
+1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](pay-statements.md). **Tip:** Before you generate pay statements, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](pay-statements.md).
 2.  On the **Submit pay statements** page, in the **Pay cycle** field, select the same pay cycle that you selected when you generated and released earnings.
 3.  In the **Pay period** field, select the same pay period that you selected when you generated and released earnings. The list includes only the pay periods that are available for the pay cycle. The default pay period is the first open pay period, but you can select any open pay period in the list.
 4.  Click **OK** to submit the pay statements. A vendor invoice for the sum of the net pay for all pay statements is created and posted. A payment journal that has lines is also created and posted, so that you can generate and post payments.
@@ -82,7 +84,7 @@ Use this procedure to create a payment journal for multiple pay statements at th
 ## Submit individual pay statements
 To create a payment journal for an individual pay statement, follow these steps.
 
-1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-pay-statements).
+1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](pay-statements.md).
 2.  On the **Calculated pay statements** page, select the worker pay statement to create the payment journal for, and then click **Submit for payment**. The **Submit for payment** button is also available on the **Pay statement** page.
 3.  Optional: Select the **Post the selected pay statement** check box to post the pay statement. You can post the pay statements as a separate step at any time by using the **Post pay statements** page.
 4.  Click **Submit** to submit the pay statements. A vendor invoice for the net pay of the pay statement is created and posted. A payment journal that has lines is also created, so that you can generate and post the payment.

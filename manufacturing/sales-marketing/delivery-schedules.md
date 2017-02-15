@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Delivery schedules | Microsoft Docs
+title: Delivery schedules
 description: Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-19 17:32:15
+ms.date: 2016-10-19 17 - 32 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeliverySchedule
+ms.search.form: PurchDeliverySchedule, SalesDeliverySchedule, SalesQuotationDeliverySchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 213984
-ms.assetid: 224b31d7-963d-4e65-ba34-965eb039644c
-ms.region: Global
-# ms.industry: 
+ms.assetid: cb2bea0e-0758-465a-a3d5-b6967ed34a3c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omulvad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

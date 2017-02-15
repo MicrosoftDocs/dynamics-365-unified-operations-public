@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reimbursements in the public sector | Microsoft Docs
+title: Reimbursements in the public sector
 description: This topic answers common questions related to reimbursements in the public sector. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-13 05:21:25
+ms.date: 2015-12-13 05 - 21 - 25
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustBillingClassification
+ms.search.form: CustBillingClassification
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27311
-ms.assetid: c9951d98-6623-42cf-b389-d8035b45c94a
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: 2183adc5-12e3-4b80-ae4f-0cb870df0f36
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -65,7 +67,7 @@ No, not directly. However, you could use general journal entries to create trans
 See also
 --------
 
-[Accounts receivable](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-receivable/accounts-receivable)
+[Accounts receivable](accounts-receivable.md)
 
 [Accounts receivable in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=169941)
 

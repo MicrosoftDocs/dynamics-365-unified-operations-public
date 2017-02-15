@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Procurement and sourcing overview | Microsoft Docs
+title: Procurement and sourcing overview
 description: This article gives an overview of the functionality that's available in the Procurement and sourcing module.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-04 13:19:33
+ms.date: 2016-03-04 13 - 19 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58021
-ms.assetid: 5564fc58-07b8-4a21-b50a-e189976437d0
-ms.region: Global
-# ms.industry: 
+ms.assetid: 11d0bd4b-cca9-4f68-bde6-222f1e3df508
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: fdahl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

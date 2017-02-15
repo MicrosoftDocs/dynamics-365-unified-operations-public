@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Plan for one-time vendors in the public sector | Microsoft Docs
+title: Plan for one-time vendors in the public sector
 description: This article explains how to prepare to import and create multiple one-time vendors and invoices. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-13 05:20:08
+ms.date: 2015-12-13 05 - 20 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27251
-ms.assetid: 0415edae-5101-4411-a466-5455517918f5
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: cf69554c-982e-4090-8bd1-58a4c984b47f
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -171,12 +173,12 @@ Percent
 Decimal values are allowed.
 
 ## What do I do next?
-After you’ve set up the prerequisites that you require, see [One time vendors in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/one-time-vendors-in-the-public-sector).
+After you’ve set up the prerequisites that you require, see [One time vendors in the public sector](one-time-vendors-public-sector.md).
 
 See also
 --------
 
-[One-time vendors in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/one-time-vendors-in-the-public-sector)
+[One-time vendors in the public sector](one-time-vendors-public-sector.md)
 
-[Accounts payable in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/accounts-payable-in-the-public-sector)
+[Accounts payable in the public sector](accounts-payable-public-sector.md)
 

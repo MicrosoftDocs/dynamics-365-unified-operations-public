@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: RFP responses (AX 2012) | Microsoft Docs
+title: RFP responses (AX 2012)
 description: The RFP responses page contains common questions found on Requests for Proposals (RFPs), and recommended answers. This section of Microsoft Dynamics Lifecycle Services is only available to partners, in Pre-sales projects.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 17:54:58
+ms.date: 2015-12-05 17 - 54 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18611
-ms.assetid: 1a183c8f-01ea-4f1a-9c79-1f80423e0cc2
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 2db89d2b-9f0b-44d1-97bc-2e221635c60e
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

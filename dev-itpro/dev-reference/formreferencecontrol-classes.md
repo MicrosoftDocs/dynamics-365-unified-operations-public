@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: F Classes - FormReferenceControl to FormStringControl | Microsoft Docs
+title: F Classes -  FormReferenceControl to FormStringControl
 description: API reference for classes from FormReferenceControl to FormStringControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 23:43:07
+ms.date: 2016-03-08 23 - 43 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63733
-ms.assetid: 6b54b6e3-3048-4c46-aa68-fec54ba71dfc
-ms.region: Global
-# ms.industry: 
+ms.assetid: 60d0c6e5-c734-4970-8087-4b8e852ccd21
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# F Classes - FormReferenceControl to FormStringControl
+# F Classes -  FormReferenceControl to FormStringControl
 
 API reference for classes from FormReferenceControl to FormStringControl.
 

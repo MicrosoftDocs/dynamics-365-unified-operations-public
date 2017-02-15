@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: 125 percent reducing balance depreciation | Microsoft Docs
+title: 125 percent reducing balance depreciation
 description: This article gives an overview of the 125 percent reducing balance method of depreciation.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 22:58:51
+ms.date: 2015-12-02 22 - 58 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetDepreciationProfile
+ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13871
-ms.assetid: f1fd19bf-5043-4cae-8f81-985ea460a394
-ms.region: Global
-# ms.industry: 
+ms.assetid: 98b81ac3-8a39-42cd-a883-3fa2691190a9
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

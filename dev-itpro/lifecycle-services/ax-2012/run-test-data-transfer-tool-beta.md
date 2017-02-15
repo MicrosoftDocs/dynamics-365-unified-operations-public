@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012) | Microsoft Docs
+title: Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 19:13:31
+ms.date: 2015-12-04 19 - 13 - 31
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17571
-ms.assetid: 0e70d69e-a101-4af1-b33e-8ff41ac6fa9e
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: f9d5a35f-fe5b-414b-8d09-b6401cbe50cc
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

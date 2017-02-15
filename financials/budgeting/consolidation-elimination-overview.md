@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Consolidation and elimination overview | Microsoft Docs
+title: Consolidation and elimination overview
 description: This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-01 17:03:56
+ms.date: 2015-12-01 17 - 03 - 56
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerConsolidate
+ms.search.form: LedgerConsolidate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13151
-ms.assetid: 4373c540-f7dd-4912-b140-4bbfb18492ac
-ms.region: Global
-# ms.industry: 
+ms.assetid: f4cf3007-3a37-4c82-81ab-af4bd70bf93e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -79,9 +81,4 @@ There are many consolidation scenarios, and each method can handle the scenarios
     -   By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
 
 
-
-See also
---------
-
-[Currency revalution in a consolidation company](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/currency-revaluation-in-a-consolidation-company)
 

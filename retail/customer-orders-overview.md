@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Customer orders overview | Microsoft Docs
+title: Customer orders overview
 description: This topic provides information about customer orders in Retail Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-11-30 21:04:59
+ms.date: 2016-11-30 21 - 04 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 41
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 260594
-ms.assetid: bf984574-9a7d-43c7-981f-128fb169f729
-ms.region: global
-ms.industry: Retail
+ms.assetid: 456027fe-4e34-4944-bfd2-643014f0f751
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: anpurush
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -97,5 +99,5 @@ When the **Create customer order in async mode** option is set to **Yes**, custo
 See also
 --------
 
-[Hybrid customer orders](https://docs.microsoft.com/en-us/dynamics365/operations/retail/hybrid-customer-orders)
+[Hybrid customer orders](hybrid-customer-orders.md)
 

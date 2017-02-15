@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create reporting solutions | Microsoft Docs
+title: Create reporting solutions
 description: This tutorial shows how to export data and create a report, expand predefined views and add navigation to charts, use the free-form report designer, and customize the parameter experience.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-10 04:06:52
+ms.date: 2015-12-10 04 - 06 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks007
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: sericks007
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21551
-ms.assetid: 3c508598-0cb9-424b-a058-0c3626b6589c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4347181f-0dc6-40ad-84ff-6d2ac36f978e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

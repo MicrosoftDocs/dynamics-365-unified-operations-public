@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Form styles and patterns | Microsoft Docs
+title: Form styles and patterns
 description: This topic describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this topic. 
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-06 22:00:42
+ms.date: 2016-01-06 22 - 00 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28891
-ms.assetid: b68bb258-d188-4b01-b1f3-c1e599055ee3
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9bffefa9-ec7c-4d57-9be5-6c69242285b8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -57,7 +59,7 @@ First, you must identify a target form and add it to your project. A **Form Patt
 
 ### Determine the pattern
 
-Decide which pattern to apply. The available patterns include those that are based on Dynamics AX 2012 form templates, and also patterns that are designed for Dynamics 365 for Operations scenarios. If you require help selecting a pattern, see the [Selecting a Pattern](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/how-to-select-a-form-pattern)article. For more detailed information about specific patterns, see the individual pattern guideline documents.
+Decide which pattern to apply. The available patterns include those that are based on Dynamics AX 2012 form templates, and also patterns that are designed for Dynamics 365 for Operations scenarios. If you require help selecting a pattern, see the [Selecting a Pattern](select-form-pattern.md)article. For more detailed information about specific patterns, see the individual pattern guideline documents.
 
 ### Apply the pattern
 
@@ -74,7 +76,7 @@ Information about the pattern appears on the **Pattern** tab. To learn about the
 
 ### Subpatterns
 
-After you apply a pattern to a form, you might have to apply subpatterns to the form's container controls. The process is similar to applying a pattern to a form: acquire the target, determine the subpattern, apply the subpattern, and handle any errors. To find container controls on the form that require subpatterns, search for "unspecified" in the search box at the top of the form designer in Visual Studio. These controls should have the **Pattern: &lt;select&gt;** designation in the form designer. For each container, you should examine the contents and select the most appropriate subpattern. Like form patterns, the available subpatterns cover common container layouts from Dynamics AX 2012 but also include several new subpatterns. If you require help selecting a subpattern, see [Selecting a Pattern](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/how-to-select-a-form-pattern). For more detailed information about specific subpatterns, see the individual subpattern guideline documents. After you've selected a subpattern, right-click the control in the form designer, select **Apply pattern**, and then click the subpattern to apply.
+After you apply a pattern to a form, you might have to apply subpatterns to the form's container controls. The process is similar to applying a pattern to a form: acquire the target, determine the subpattern, apply the subpattern, and handle any errors. To find container controls on the form that require subpatterns, search for "unspecified" in the search box at the top of the form designer in Visual Studio. These controls should have the **Pattern: &lt;select&gt;** designation in the form designer. For each container, you should examine the contents and select the most appropriate subpattern. Like form patterns, the available subpatterns cover common container layouts from Dynamics AX 2012 but also include several new subpatterns. If you require help selecting a subpattern, see [Selecting a Pattern](select-form-pattern.md). For more detailed information about specific subpatterns, see the individual subpattern guideline documents. After you've selected a subpattern, right-click the control in the form designer, select **Apply pattern**, and then click the subpattern to apply.
 
 ## Frequently asked questions
 ### What does applying a pattern do?

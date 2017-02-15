@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dimension entry control uptake | Microsoft Docs
+title: Dimension entry control uptake
 description: Describes the Dimension Entry control and associated Controller classes.
-author: twheeloc
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-12 20:44:35
+ms.date: 2015-12-12 20 - 44 - 35
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25551
-ms.assetid: 1fc330c7-7dfd-463b-916c-88135d651f43
-ms.region: Global
-# ms.industry: 
-ms.author: ghenriks
+ms.assetid: 71b7b289-a2ec-4161-b461-fb0fe260a946
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -290,7 +292,7 @@ parmDimensionEntryControlHeader(
 See also
 --------
 
-[Dimension Entry control migration walkthrough](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimension-entry-control-migration)
+[Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 
-[Dimension Entry control dialog support](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimension-entry-control-dialog-support)
+[Dimension Entry control dialog support](dimension-entry-control-dialog-support.md)
 

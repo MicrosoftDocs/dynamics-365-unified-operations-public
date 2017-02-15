@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Symbol font | Microsoft Docs
+title: Symbol font
 description: This article provides a link to the list of available symbols for each release.  A description of the various locations in the product where symbols are used as well as usage guidelines for each location is also included.  
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 00:37:22
+ms.date: 2015-12-04 00 - 37 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16321
-ms.assetid: 7c8151c8-7729-4643-be9c-f4d21b304c6d
-ms.region: Global
-# ms.industry: 
+ms.assetid: e453d499-03ee-46c2-b5fe-387bae61f5ac
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: bensm
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

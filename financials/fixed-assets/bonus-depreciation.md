@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Bonus depreciation | Microsoft Docs
+title: Bonus depreciation
 description: This article provides an overview of the bonus depreciation functionality.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 21:07:55
+ms.date: 2015-09-10 21 - 07 - 55
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetBonus
+ms.search.form: AssetBonus
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3621
-ms.assetid: 4db05f14-ae5e-4f67-bb6e-05a56b281bcd
-ms.region: Global
-# ms.industry: 
+ms.assetid: 83577638-2e7c-401b-98a4-d8600d34d616
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Tabular Fields subpattern | Microsoft Docs
+title: Tabular Fields subpattern
 description: This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 00:51:07
+ms.date: 2015-12-03 00 - 51 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 # audience: 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14761
-ms.assetid: 358fa6af-9272-4853-96a1-ef82bb4ed2c1
-ms.region: Global
-# ms.industry: 
+ms.assetid: bc9aaf88-b16e-4821-aed0-e45aff0abd33
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -90,10 +92,10 @@ Form: **LedgerJournalTransVendPaym** **(Balances)** (**Accounts payable** &gt; *
 ## Resources
 ### Typically used by patterns
 
--   [Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)
--   [Table of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)
--   [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)
--   [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)
+-   [Simple List and Details](simple-list-details-form-pattern.md)
+-   [Table of Contents](table-of-contents-form-pattern.md)
+-   [Details Master](details-master-form-pattern.md)
+-   [Details Transaction](details-transaction-form-pattern.md)
 
 ## Appendix
 ### Frequently asked questions

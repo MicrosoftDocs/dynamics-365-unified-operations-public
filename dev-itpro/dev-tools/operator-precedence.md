@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Operator precedence | Microsoft Docs
+title: Operator precedence
 description: This article describes operator precedence in Microsoft Dynamics AX.
 author: pvillads
 manager: AnnBe
-ms.date: 2015-09-14 12:26:12
+ms.date: 2015-09-14 12 - 26 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6174
-ms.assetid: 76cc114c-9fb1-41ee-ab72-a571f3af3cc0
-ms.region: Global
-# ms.industry: 
+ms.assetid: eb6e7a42-1aa3-4c84-9b46-598ec04b7cbe
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

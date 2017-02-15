@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Year-end processing in the public sector | Microsoft Docs
+title: Year-end processing in the public sector
 description: This article provides information about year-end processing for a public sector organizations.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 16:21:31
+ms.date: 2015-12-07 16 - 21 - 31
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchYearEndClose
+ms.search.form: PurchYearEndClose
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19601
-ms.assetid: a1a255fc-5fa5-46ec-928b-3cb04172c347
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: a8dfc32c-f16a-4d3a-9ee2-fb152ae9623a
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -46,7 +48,7 @@ Yes, the year-end process can be run multiple times for the same set of data. Ty
 Year-end processing of general ledger balances is controlled by fund configuration settings in two places:
 
 -   The year-end process of closing ledger balances in the old year and establishing opening balances in the new year is done by using the **Opening transactions** page. A single fund or range of funds is required for processing.
--   The year-end processing option for purchase order encumbrances is set on the **Purchase order year-end process** page. You can override the option on a specific fund, provided that the general ledger parameters have been set to allow for overrides. To learn more about the parameter settings, see [General ledger in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/general-ledger-in-the-public-sector).
+-   The year-end processing option for purchase order encumbrances is set on the **Purchase order year-end process** page. You can override the option on a specific fund, provided that the general ledger parameters have been set to allow for overrides. To learn more about the parameter settings, see [General ledger in the public sector](general-ledger-public-sector.md).
 
 ## How do I set up main accounts for yearend processing?
 You must select a close type for every account in your chart of accounts. The close type determines how the year-end process handles that main account. There are four close types:
@@ -56,5 +58,5 @@ You must select a close type for every account in your chart of accounts. The cl
 -   **Nominal – no close** – The account is managed by other closing processes, such as encumbrance accounts for purchase order close.
 -   **Not applicable** – The account isn't included in year-end processing.
 
-Posting definitions govern the accounting that occurs on the closing entries, and they also help create the opening transactions for the new year. To learn more, see [Posting definitions in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/posting-definitions-in-the-public-sector).
+Posting definitions govern the accounting that occurs on the closing entries, and they also help create the opening transactions for the new year. To learn more, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 

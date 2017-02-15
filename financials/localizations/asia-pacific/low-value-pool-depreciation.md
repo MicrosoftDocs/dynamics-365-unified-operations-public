@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Low-value pool depreciation | Microsoft Docs
+title: Low-value pool depreciation
 description: This article provides information about the low-value pool depreciation method that is used in Australia. Low-cost and low-value assets can be allocated to a low-value pool if their cost or opening adjustable value is less than a specified amount.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-28 21:35:04
+ms.date: 2015-10-28 21 - 35 - 04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11104
-ms.assetid: 9ba59bde-43c2-43f3-82e6-befd1ec4248b
-ms.region: Australia
-# ms.industry: 
+ms.assetid: 4a0f5c6e-8050-4456-8040-6e8a859836fa
+ms.search.region: Australia
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

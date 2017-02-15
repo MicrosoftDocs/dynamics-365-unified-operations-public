@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create fixed compensation plans | Microsoft Docs
+title: Create fixed compensation plans
 description: Fixed compensation refers to an employee's regular gross salary or wages. This article describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 21:39:50
+ms.date: 2015-12-03 21 - 39 - 50
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable
+ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15991
-ms.assetid: d0524313-6717-407d-9481-19e3c61467c0
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1ea7733f-0945-41c2-8de3-107fc58aae20
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: twheeloc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -84,5 +86,5 @@ You can now assign an employee to a fixed compensation plan. Open the **Employee
 See also
 --------
 
-[Compensation plans](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/compensation-plans)
+[Compensation plans](compensation-plans.md)
 

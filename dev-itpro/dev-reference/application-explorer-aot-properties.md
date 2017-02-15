@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Application Explorer properties | Microsoft Docs
+title: Application Explorer properties
 description: This article describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-05-12 18:45:02
+ms.date: 2016-05-12 18 - 45 - 02
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 85213
-ms.assetid: 5343bd12-ea33-4b1f-be56-e553b48bccbb
-ms.region: Global
-# ms.industry: 
+ms.assetid: 769f3ddd-0769-4849-a716-9c5cf4f5670f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

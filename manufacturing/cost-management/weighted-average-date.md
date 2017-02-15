@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Weighted average date | Microsoft Docs
+title: Weighted average date
 description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-07 19:58:01
+ms.date: 2016-01-07 19 - 58 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
+ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28991
-ms.assetid: 489121c1-811a-4867-a80a-bab8609a754f
-ms.region: Global
-ms.industry: Retail
+ms.assetid: 8ac40e85-06c0-4743-b079-7c5d7aee5758
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

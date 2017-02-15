@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Export and import a model | Microsoft Docs
+title: Export and import a model
 description: Model files let you distribute models to customers and partners, and can be installed in development environments. They are key components of a Lifecycle Services (LCS) solution. Model files contain a model descriptor file, metadata, source code, and referenced .NET assemblies (when applicable). This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-07 22:14:42
+ms.date: 2015-12-07 22 - 14 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20451
-ms.assetid: 5165b7b7-e13d-4722-b8cd-3713a1bb8ee9
-ms.region: Global
-# ms.industry: 
+ms.assetid: 719703ea-5bcd-436e-8a1a-bab6f28b7a9b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

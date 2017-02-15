@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Table properties | Microsoft Docs
+title: Table properties
 description: This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 23:16:47
+ms.date: 2015-12-04 23 - 16 - 47
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18141
-ms.assetid: fca27850-7ca8-45f1-aae1-fb1312e1a481
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 53d78eaa-3012-4a2b-ba7f-08199aa154a4
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Plan loads using hub consolidation | Microsoft Docs
+title: Plan loads using hub consolidation
 description: This article describes the feature for consolidating shipments in a hub when you deliver goods from different warehouses to the same customer, or when you receive goods from multiple vendors in the same warehouse.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-15 07:19:09
+ms.date: 2016-06-15 07 - 19 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: WHSLoadPlanningWorkbench
+ms.search.form: WHSLoadPlanningWorkbench
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 92273
-ms.assetid: 12dc028a-12aa-4b9b-9111-64b81919b8e3
-ms.region: Global
-ms.industry: Distribution
+ms.assetid: 890fff1f-a364-4a9f-ba5d-3eedfd2682fa
+ms.search.region: Global
+ms.search.industry: Distribution
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

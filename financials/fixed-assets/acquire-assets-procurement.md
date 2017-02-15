@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Acquire assets through procurement | Microsoft Docs
+title: Acquire assets through procurement
 description: This article describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 21:04:15
+ms.date: 2015-09-10 21 - 04 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetParameters
+ms.search.form: AssetParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3481
-ms.assetid: 3402b56c-0fbe-40e3-87ae-df951efbd359
-ms.region: Global
-# ms.industry: 
+ms.assetid: abb27cc6-a818-40fb-8536-8224ff0b7690
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -87,5 +89,5 @@ Finally, the accountant reviews all fixed assets that have a status of Not yet a
 See also
 --------
 
-[Fixed assets integration](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/fixed-assets-integration)
+[Fixed assets integration](fixed-asset-integration.md)
 

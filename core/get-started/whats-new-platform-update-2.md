@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics AX platform update 2 (August 2016) | Microsoft Docs
-description: This topic describes features that are either new or changed in Microsoft Dynamics AX platform update 2. This version was released in August 2016 and has a build number of 7.0.4230.16130.
-
-author: sericks007
+title: What's new or changed in Dynamics AX platform update 2 (August 2016)
+description: This topic describes features that are either new or changed in Microsoft Dynamics AX platform update 2. This version was released in August 2016 and has a build number of 7.0.4230.16130. 
+author: annbe
 manager: AnnBe
-ms.date: 2016-08-16 20:05:41
+ms.date: 2016-08-16 20 - 05 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,32 +13,33 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks007
-ms.suite: Released- Dynamics AX platform update 2
+ms.reviewer: annbe
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 140993
-ms.assetid: d79d1de1-f7af-41b0-a0d0-0f145a959126
-ms.region: Global
-# ms.industry: 
-ms.author: sericks
+ms.assetid: c8371158-6a60-4294-b78a-4a620ba4cbc4
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Aug-16
+ms.dyn365.version: Platform update 2
 
 ---
 
 # What's new or changed in Dynamics AX platform update 2 (August 2016)
 
-This topic describes features that are either new or changed in Microsoft Dynamics AX platform update 2. This version was released in August 2016 and has a build number of 7.0.4230.16130.
-
+This topic describes features that are either new or changed in Microsoft Dynamics AX platform update 2. This version was released in August 2016 and has a build number of 7.0.4230.16130. 
 
 Deployment
 ----------
 
 | What can you do?                                                | Why is this important?                                                                                                                                                                                                                       |
 |-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable Azure Resource Manager (ARM) deployments of Dynamics AX. | This feature is now in public preview. With ARM deployments, you can now take advantage of the latest features of Azure. For more information, see [Azure Resource Manager onboarding](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/arm-onboarding). |
+| Enable Azure Resource Manager (ARM) deployments of Dynamics AX. | This feature is now in public preview. With ARM deployments, you can now take advantage of the latest features of Azure. For more information, see [Azure Resource Manager onboarding](arm-onboarding.md). |
 
 ## Development and customization
 <table>
@@ -97,7 +97,7 @@ Extensibility features are key features of the Dynamics AX platform because 
 </tr>
 <tr class="even">
 <td>Extensible controls are guided away from non-public application programming interfaces (APIs).</td>
-<td>To minimize future breaks in extensible controls, an effort has been made to differentiate between the public and non-public JavaScript application programming interfaces (APIs) available to extensible controls. As part of this effort, documentation is now available <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/public-javascript-apis">here</a> for the public JavaScript APIs that extensible control authors can use. Additionally, extensible control authors should start ensuring their controls are only using public APIs, as starting with Platform Update 3 any non-public API may be removed or modified as needed. One planned modification for the non-public APIs is to prefix the names with underscores to clearly denote their access level.  In this release, the only APIs that are undergoing this name change are those for which we have high confidence they are not being used.</td>
+<td>To minimize future breaks in extensible controls, an effort has been made to differentiate between the public and non-public JavaScript application programming interfaces (APIs) available to extensible controls. As part of this effort, documentation is now available <a href="public-javascript-apis.md">here</a> for the public JavaScript APIs that extensible control authors can use. Additionally, extensible control authors should start ensuring their controls are only using public APIs, as starting with Platform Update 3 any non-public API may be removed or modified as needed. One planned modification for the non-public APIs is to prefix the names with underscores to clearly denote their access level.  In this release, the only APIs that are undergoing this name change are those for which we have high confidence they are not being used.</td>
 </tr>
 <tr class="odd">
 <td>Use the updated Gantt control to develop interactive scheduling scenarios.</td>
@@ -144,5 +144,5 @@ Extensibility features are key features of the Dynamics AX platform because 
 See also
 --------
 
-[What's new or changed](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7)
+[What's new or changed](whats-new-changed.md)
 

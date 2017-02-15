@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Item and raw material tracing in inventory, production, and sales | Microsoft Docs
+title: Item and raw material tracing in inventory, production, and sales
 description: This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-28 15:00:11
+ms.date: 2016-01-28 15 - 00 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventTrackingDimTracing, InventTrackingDimTracingCriteria
+ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30191
-ms.assetid: 5ca3ff70-a6ae-4a3a-9f09-27f99126f899
-ms.region: Global
-# ms.industry: 
+ms.assetid: 034ac82a-31d0-4aea-9772-5cfa94d3a070
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pjacobse
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

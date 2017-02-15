@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extensible control programming reference | Microsoft Docs
+title: Extensible control programming reference
 description: This topic provides reference content for extensible control programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-17 19:36:49
+ms.date: 2016-02-17 19 - 36 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50211
-ms.assetid: 8ebe5781-09a1-4b60-b513-eb6a07fa625a
-ms.region: Global
-# ms.industry: 
+ms.assetid: 62be3d32-c4dc-47a0-bb13-14128f85f02d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shshabazz
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

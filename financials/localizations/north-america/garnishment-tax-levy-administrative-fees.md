@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Garnishments, tax levies, and administrative fees FAQ | Microsoft Docs
+title: Garnishments, tax levies, and administrative fees FAQ
 description: This topic lists frequently asked questions and answers about garnishments and tax levies. It provides information to help you quickly and accurately set up garnishments and tax levies to keep your organization in compliance with applicable laws, regulations, and court orders. If you have a question that isn’t answered here or in the related topics, confer with your legal advisors.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15:42:13
+ms.date: 2016-10-31 15 - 42 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, PayrollDisposableIncome, PayrollWorkerGarnishmentRule
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, PayrollDisposableIncome, PayrollWorkerGarnishmentRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 31
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 31
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221144
-ms.assetid: 3ec67d81-c2cc-48f4-a461-0e74a5591abb
-ms.region: USA
-# ms.industry: 
+ms.assetid: 2ddf1c26-b711-4b06-b24f-7446fc80b596
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -70,7 +72,7 @@ If you can’t make a deduction for a garnishment, the garnishment isn’t displ
 | If your organization charges an administrative fee for garnishments or tax levies, you might have to adjust the amount of the administrative fee for any garnishments that aren’t taken in a pay period. |
 
 ## Why isn’t the administrative fee for workers’ garnishments being deducted from their pay?
-To deduct administrative fees from a worker’s pay, you have to create an administrative fee benefit and enroll the worker in that benefit. For more information, see [Garnishment and tax levy setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-setup-tasks). For support orders, the **Administrative fee** field on the **Maintain benefits** page is used to ensure that the amount of the deduction plus the amount of the fee does not exceed the legal maximum for support orders. For all other garnishment types, this field has no effect and is for information only.
+To deduct administrative fees from a worker’s pay, you have to create an administrative fee benefit and enroll the worker in that benefit. For more information, see [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md). For support orders, the **Administrative fee** field on the **Maintain benefits** page is used to ensure that the amount of the deduction plus the amount of the fee does not exceed the legal maximum for support orders. For all other garnishment types, this field has no effect and is for information only.
 
 ## Can a partial deduction be made for a garnishment?
 Yes. For example, if 1,000.00 remains before a worker’s pay reaches 0 (zero), and the requested amount for the next garnishment is 1,250.00, only 1,000.00 is deducted for that garnishment.
@@ -80,7 +82,7 @@ Yes. For example, if 1,000.00 remains before a worker’s pay reaches 0 (zero), 
 See also
 --------
 
-[Garnishment and tax levy setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-setup-tasks)
+[Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md)
 
-[Garnishment and tax levy enrollment tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-enrollment-tasks)
+[Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md)
 

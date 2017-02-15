@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail Store Scale Unit configuration and installation | Microsoft Docs
+title: Retail Store Scale Unit configuration and installation
 description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Operations headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Dynamics 365 for Operations environment already provides these components, but you can now configure them to work locally in a store, in either a single-computer setup (the default option) or a multi-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-10-28 19:12:07
+ms.date: 2016-10-28 19 - 12 - 07
 ms.topic: 
 ms.prod: 
 ms.service: 
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 11
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 219744
-ms.assetid: 3971eb68-583f-4943-996d-8d518f4fbaa9
-ms.region: Global
-ms.industry: Retail
+ms.assetid: d87f7bf9-0b81-4285-91c7-cb169f37aa6e
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: jashanno
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

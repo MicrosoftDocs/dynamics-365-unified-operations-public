@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a customer invoice | Microsoft Docs
+title: Create a customer invoice
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-04-04 23:11:36
+ms.date: 2016-04-04 23 - 11 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77772
-ms.assetid: e0c819ed-af95-4597-b4c2-c70038325737
-ms.region: Global
-# ms.industry: 
+ms.assetid: 885dbda3-f5ee-40df-b61e-c3ff4c075fb3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mfalkner
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

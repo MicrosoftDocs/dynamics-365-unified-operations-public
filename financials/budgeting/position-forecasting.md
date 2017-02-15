@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Position forecasting | Microsoft Docs
+title: Position forecasting
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-10 10:04:27
+ms.date: 2016-03-10 10 - 04 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64413
-ms.assetid: 204c1c27-705a-48a1-ad25-dc7443492a4b
-ms.region: Global
-# ms.industry: 
+ms.assetid: a24d9f51-ef82-4559-94a1-d32226f2749f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: sigitac
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -57,7 +59,7 @@ Compensation groups can be used to group forecast position that have similar com
 
 ### Creating forecast positions for existing positions
 
-For the most accurate budget planning, you can create forecast positions by using details from existing positions in Microsoft Dynamics 365 for Operations, regardless of whether the position is currently filled or unfilled. The **Add existing positions** function displays all the positions for an organization. By setting the **As of** date, you can change the list of positions so that it contains the positions that existed at a date in the past or, more commonly, in the future (for example, the start of the next budget cycle). Select a budget planning process and budget plan scenario, select positions in the list, and then click **OK** to create forecast positions for the selected positions. Note that you can create only one forecast position for each existing position in a budget planning process and scenario. However, you can create additional versions by assigning different budget plan scenarios. If budget cost elements have been assigned to the position in Human resources, those budget cost elements are also assigned to the forecast position and use the default amounts. The **Assigned worker** field on the forecast position is set to the name of the worker who is assigned to the position, if a worker is assigned. This field is a simple text field. No direct link is created. If a budget cost element is selected, the fixed compensation annual amount is assigned to the forecast position by using the selected cost element, provided that the assigned worker has a fixed compensation plan. If the worker doesn't have a fixed comp plan, or if no worker is assigned, the default amount is used for the budget cost element. When the **Assign a compensation group** option is set to **Yes**, if the worker who is assigned to the position has a step-based fixed compensation plan that is linked to a compensation group (as described earlier), the level and step from the worker are assigned to the forecast position, together with the compensation group. The earnings budget cost element from the compensation group is added to the forecast position, and the pay rate at the level and step from the compensation group are used. The setting of the **Assign a compensation group** option takes precedence over the **Budget cost element assignment** setting. The two settings can be used at the same time. [![graphic4](./media/graphic4.png)](./media/graphic4.png) Another option is to assign an anniversary date. The selected date (adjusted start date, worker start date, employment start date, or seniority date) from the assigned worker is then set as the forecast position’s anniversary date, and is used for information and when pay increases are generated.
+For the most accurate budget planning, you can create forecast positions by using details from existing positions in Microsoft Dynamics AX, regardless of whether the position is currently filled or unfilled. The **Add existing positions** function displays all the positions for an organization. By setting the **As of** date, you can change the list of positions so that it contains the positions that existed at a date in the past or, more commonly, in the future (for example, the start of the next budget cycle). Select a budget planning process and budget plan scenario, select positions in the list, and then click **OK** to create forecast positions for the selected positions. Note that you can create only one forecast position for each existing position in a budget planning process and scenario. However, you can create additional versions by assigning different budget plan scenarios. If budget cost elements have been assigned to the position in Human resources, those budget cost elements are also assigned to the forecast position and use the default amounts. The **Assigned worker** field on the forecast position is set to the name of the worker who is assigned to the position, if a worker is assigned. This field is a simple text field. No direct link is created. If a budget cost element is selected, the fixed compensation annual amount is assigned to the forecast position by using the selected cost element, provided that the assigned worker has a fixed compensation plan. If the worker doesn't have a fixed comp plan, or if no worker is assigned, the default amount is used for the budget cost element. When the **Assign a compensation group** option is set to **Yes**, if the worker who is assigned to the position has a step-based fixed compensation plan that is linked to a compensation group (as described earlier), the level and step from the worker are assigned to the forecast position, together with the compensation group. The earnings budget cost element from the compensation group is added to the forecast position, and the pay rate at the level and step from the compensation group are used. The setting of the **Assign a compensation group** option takes precedence over the **Budget cost element assignment** setting. The two settings can be used at the same time. [![graphic4](./media/graphic4.png)](./media/graphic4.png) Another option is to assign an anniversary date. The selected date (adjusted start date, worker start date, employment start date, or seniority date) from the assigned worker is then set as the forecast position’s anniversary date, and is used for information and when pay increases are generated.
 
 ### Creating new forecast positions
 

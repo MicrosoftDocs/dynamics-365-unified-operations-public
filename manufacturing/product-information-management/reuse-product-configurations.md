@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reuse product configurations | Microsoft Docs
+title: Reuse product configurations
 description: You can specify that you want to automatically reuse an existing configuration for a product. Then, when a user has completed a configuration session, the system verifies whether a configuration that matches the user’s selections already exists. If a matching configuration is found, the configuration ID, corresponding bill of materials (BOM), and route are reused.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-07 08:36:48
+ms.date: 2016-10-07 08 - 36 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PCProductConfigurationModelDetails
+ms.search.form: PCProductConfigurationModelDetails
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 201813
-ms.assetid: 25105f3b-5b18-44db-865c-e141cfdd3f10
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: a3d36c21-2cbe-48f4-bb08-605a8991c2f5
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

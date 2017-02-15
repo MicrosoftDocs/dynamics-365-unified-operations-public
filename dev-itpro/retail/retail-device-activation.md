@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail POS device activation | Microsoft Docs
+title: Retail POS device activation
 description: This article explains the new guided device activation for Retail Cloud POS and Retail Modern POS, and explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-04 23:28:37
+ms.date: 2015-12-04 23 - 28 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 11
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18341
-ms.assetid: d681b4d1-348a-42d4-b584-7eeb3092e60c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 463fed9a-bc81-42ed-8498-04b7dd479039
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: athinesh
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -59,7 +61,7 @@ Checklist to follow before activation
 1.  Open the initial device activation page for Modern POS or Cloud POS. You're prompted to sign in.
 2.  On the **Before you start** page, follow the instructions, and then click **Next**.![p24](./media/p24.png)
 3.  Start Cloud POS or Modern POS.
-4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Retail Modern POS self-service and device activation](https://docs.microsoft.com/en-us/dynamics365/operations/retail/retail-modern-pos-and-device-activation-scenarios). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.[![p18](./media/p18.png)](./media/p18.png)
+4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Retail Modern POS self-service and device activation](retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.[![p18](./media/p18.png)](./media/p18.png)
 5.  Click **Next** to populate the list of stores.
 6.  Select the correct store in the list.[![p20](./media/p20.png)](./media/p20.png)
 7.  Select the correct register and device. **Note:** The device can be **Pending**, **De-activated**, or **Activated**. Alternatively, if you turned on the Retail HQ **Allow devices to be associated to registers from store** setting, you might see a list of registers that have no device associated with them. [![p22](./media/p22.png)](./media/p22.png)

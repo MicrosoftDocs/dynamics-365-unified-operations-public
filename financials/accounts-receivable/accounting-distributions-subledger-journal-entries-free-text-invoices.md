@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Accounting distributions and subledger journal entries for free text invoices | Microsoft Docs
+title: Accounting distributions and subledger journal entries for free text invoices
 description: Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice. Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 20:23:12
+ms.date: 2015-09-10 20 - 23 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustFreeInvoice
+ms.search.form: CustFreeInvoice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3141
-ms.assetid: cc662f05-2102-4532-b3f1-5137c0c83f3e
-ms.region: Global
-# ms.industry: 
+ms.assetid: 859e13a6-df43-48d8-a41a-7667bfa1a9c8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mfalkner
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

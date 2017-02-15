@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Navigation in Dynamics 365 for Operations | Microsoft Docs
+title: Navigation in Dynamics 365 for Operations
 description: This articles describes the primary navigation concepts in Dynamics AX including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-07-28 19:47:25
+ms.date: 2016-07-28 19 - 47 - 25
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 105091
-ms.assetid: fd0cce00-b35e-4964-9899-3ab486c09270
-ms.region: Global
-# ms.industry: 
+ms.assetid: 976e0386-4fae-418d-8b8d-7073a3a5d674
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aorth
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -85,8 +87,8 @@ After these properties are defined, your tile is complete. To make the user ex
 
 | Property       | Description                                                                                                                        |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------|
-| Image Location | See the information about basic button behavior in [Actions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/action-controls-in-dynamics-ax). |
-| Normal Image   | See the information about basic button behavior in [Actions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/action-controls-in-dynamics-ax). |
+| Image Location | See the information about basic button behavior in [Actions](action-controls.md). |
+| Normal Image   | See the information about basic button behavior in [Actions](action-controls.md). |
 | Tile Display   | Define how the image appears on the tile.                                                                                          |
 
 The following are the valid options and corresponding behaviors for the **Tile Display** property.

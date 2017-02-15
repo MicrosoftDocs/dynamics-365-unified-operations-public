@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Details Master form pattern | Microsoft Docs
+title: Details Master form pattern
 description: This article provides information about the Details Master form pattern. A details form is the primary method for entering data into Microsoft Dynamics AX.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-11-04 20:38:14
+ms.date: 2015-11-04 20 - 38 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12373
-ms.assetid: 864bd9e1-6181-4fc0-9c94-0284cda641b9
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1c98a639-d69b-4daf-9b53-aac1f4eb0f43
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -175,34 +177,34 @@ MainGridDefaultAction (CommandButton)
 
 ### Related patterns
 
--   [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)
--   [Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)
+-   [Details Transaction](details-transaction-form-pattern.md)
+-   [Simple List and Details](simple-list-details-form-pattern.md)
 
 ### Commonly used subpatterns
 
--   [Fields and Field Groups](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fields-and-field-groups-subpattern)
--   [Toolbar and List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern)
--   [Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-fields-subpattern)
--   [Nested Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/nested-simple-list-and-details-subpattern)
--   [Custom Filter Group](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/custom-filter-group-subpattern)
+-   [Fields and Field Groups](fields-field-groups-subpattern.md)
+-   [Toolbar and List](toolbar-list-subpattern.md)
+-   [Toolbar and Fields](toolbar-fields-subpattern.md)
+-   [Nested Simple List and Details](nested-simple-list-details-subpattern.md)
+-   [Custom Filter Group](custom-filter-group-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 **Detail Master guidelines:**
 
 -   There should not be any duplicate **New** and **Delete** buttons.
 -   Should use FastTabs to group the fields instead of traditional tabs. The Details Master w/Standard Tabs pattern groups these related FastTabs into traditional tabs.
     -   In its **default** state, the content of the first FastTab should be fully visible without scrolling.
-    -   **FastTabs** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
--   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document, in the ActionPane guidelines section.
+    -   **FastTabs** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document.
+-   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document, in the ActionPane guidelines section.
 -   **Page title area:**
     -   The following format should be used: "&lt;ID&gt; : &lt;Description&gt;"
     -   A link to the Details page should be provided in the Main Menu when the List page has been merged into the Details page.
     -   The page title should be in a plural form.
--   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/factbox-form-patterns)document.
+-   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md)document.
 -   **Navigation list grid:**
     -   The list style grid should not have fields within a grid row that cause the row to span more than three lines.
         -   Typically, just the ID and Description are sufficient.
@@ -213,7 +215,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   The Quick filter should default to the most likely field for a filter scenario.
     -   **Grid:**
         -   The **Name** field should be the first column, followed by the **ID** field.
-        -   Additional grid guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document, in the Grid guidelines section.
+        -   Additional grid guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document, in the Grid guidelines section.
 
 ## Examples
 ### Details Master (basic)

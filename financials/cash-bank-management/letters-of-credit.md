@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Letters of credit | Microsoft Docs
+title: Letters of credit
 description: Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-04 23:27:36
+ms.date: 2015-12-04 23 - 27 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18271
-ms.assetid: 0d5fe8a0-cc0c-4ae7-a2be-88a945674736
-ms.region: Global
-# ms.industry: 
+ms.assetid: 50368a09-f12f-4238-927f-c4b2e07fb13b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

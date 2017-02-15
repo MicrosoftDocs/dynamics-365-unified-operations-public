@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Warehouse configuration | Microsoft Docs
+title: Warehouse configuration
 description: This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12:52:43
+ms.date: 2015-10-30 12 - 52 - 43
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
+ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11554
-ms.assetid: 0523980a-602f-45b4-aa0e-cb18b2c0ce58
-ms.region: Global
-# ms.industry: 
+ms.assetid: 273aa23d-3a7a-4fbc-bcfb-eeefbda09c4e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: perlynne
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

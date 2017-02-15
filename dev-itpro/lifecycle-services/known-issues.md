@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Known issues | Microsoft Docs
+title: Known issues
 description: This topic explains how to view the known issues that you might experience when you use Dynamics 365 for Operations.
-author: sericks007
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-11 19:54:39
+ms.date: 2015-12-11 19 - 54 - 39
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX platform update 2
+# ms.reviewer: 71
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 21861
-ms.assetid: dc4bdc5e-d5ed-408b-86ac-96cf0d86ebd9
-ms.region: Global
-# ms.industry: 
-ms.author: sericks
+ms.assetid: d06187e1-c744-4e09-a9cd-056d75072411
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Aug-16
+ms.dyn365.version: Platform update 2
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Report production orders as finished | Microsoft Docs
+title: Report production orders as finished
 description: Report as finished is a production stage. At this stage, a finished product is reported and moved from the production order to the inventory.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-13 04:14:38
+ms.date: 2015-12-13 04 - 14 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute, ProdParmReportFinished, ProdRouteOprOverview
+ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute, ProdParmReportFinished, ProdRouteOprOverview
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27061
-ms.assetid: 07e7930a-5f7e-44c7-9c9d-dc693947fd32
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 655aa372-63b1-4364-ac66-bac81c6823bf
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: johanho
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

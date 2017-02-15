@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up technical support for Dynamics 365 for Operations | Microsoft Docs
+title: Set up technical support for Dynamics 365 for Operations
 description: This article provides information about the support experience in the current version of Microsoft Dynamics AX. It describes the setup that is required in Dynamics AX, Microsoft Visual Studio Online, and Microsoft Dynamics Lifecycle Services, and also explains how to create and work with support issues.
 author: kfend
 manager: AnnBe
-ms.date: 2016-01-14 23:38:09
+ms.date: 2016-01-14 23 - 38 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29531
-ms.assetid: 3082ddb2-26f0-4fba-95ca-31bca898e67d
-ms.region: Global
-# ms.industry: 
+ms.assetid: e9b114db-5cc0-4c70-9bc2-b504159e539b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: anupams
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

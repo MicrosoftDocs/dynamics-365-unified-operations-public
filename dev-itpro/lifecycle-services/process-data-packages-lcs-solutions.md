@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Process and consume data packages in an LCS solution | Microsoft Docs
+title: Process and consume data packages in an LCS solution
 description: A Microsoft Dynamics 365 for Operations data package can consist of one to many data entities. A typical data package consists of a group of entities for a particular task, process, or function. For example, the data entities that are required for General ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, package header, and any additional files for the data entities that are included.
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-03 22:51:52
+ms.date: 2016-10-03 22 - 51 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Lifecycle Services
+# ms.reviewer: 51
+ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 197113
-ms.assetid: 0a1ba416-7b7b-4daa-8bae-1fed045e1bc7
-ms.region: Global
-# ms.industry: 
+ms.assetid: d95a8c56-fc18-4c66-961a-c9f8c46a2764
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omarc
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 
@@ -118,5 +120,5 @@ Follow these steps to consume the PDP.
 See also
 --------
 
-[LCS Solutions for AppSource home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/lcs-solutions-for-app-source)
+[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 

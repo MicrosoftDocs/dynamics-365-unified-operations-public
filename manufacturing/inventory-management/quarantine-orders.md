@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Quarantine orders | Microsoft Docs
+title: Quarantine orders
 description: This article describes how quarantine orders are used to block inventory. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-25 09:53:00
+ms.date: 2016-01-25 09 - 53 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
+ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30021
-ms.assetid: 7a7e3af1-9e3c-4968-8cd1-e156350e91bc
-ms.region: Global
-# ms.industry: 
+ms.assetid: a4595dea-987a-44e0-b06a-baccc7e62a26
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: perlynne
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -67,5 +69,5 @@ As part of the quarantine order process, you can scrap inventory. When you proce
 See also
 --------
 
-[Inventory blocking](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/warehouse-management/inventory-blocking)
+[Inventory blocking](inventory-blocking.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Role-based security | Microsoft Docs
+title: Role-based security
 description: This article provides an overview of the elements of role-based security in Microsoft Dynamics 365 for Operations. 
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-03 19:55:18
+ms.date: 2015-12-03 19 - 55 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15211
-ms.assetid: 02001fa7-516f-444d-b31a-22b09360f1ea
-ms.region: Global
-# ms.industry: 
+ms.assetid: 41f49f12-6133-415d-85d8-eef6ab9d8c7b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: sericks
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

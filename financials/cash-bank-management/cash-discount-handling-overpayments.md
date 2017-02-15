@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Handling cash discounts for overpayments | Microsoft Docs
+title: Handling cash discounts for overpayments
 description: This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:14:39
+ms.date: 2015-12-02 23 - 14 - 39
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans, VendParameters
+ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans, VendParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14171
-ms.assetid: 0092d7a6-7386-4b80-b375-5b7f1c532449
-ms.region: Global
-# ms.industry: 
+ms.assetid: 97defcb5-9cc9-4e86-b7e1-504332ce5c1e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

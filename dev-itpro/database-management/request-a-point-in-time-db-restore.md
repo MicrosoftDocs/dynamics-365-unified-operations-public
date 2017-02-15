@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Restore a database on a non-production environment | Microsoft Docs
+title: Restore a database on a non-production environment
 description: Microsoft Dynamics 365 for Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request. This topic describes how to request a point-in-time restore.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-11-18 15:01:58
+ms.date: 2016-11-18 15 - 01 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 257614
-ms.assetid: 1de44439-b401-4c55-86e6-59ab29b9c692
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8a2a1590-7bff-4e6c-96bc-a3ea081919b8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tabell
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

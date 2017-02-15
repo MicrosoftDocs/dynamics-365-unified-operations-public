@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cost objects | Microsoft Docs
+title: Cost objects
 description: This article provides information about costs objects, and explains how costs and quantities are accumulated. A cost object is an entity that costs and quantities are accumulated for. A cost object entity can be either a product or product variants, such as variants for style and color.  
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09:23:23
+ms.date: 2015-12-07 09 - 23 - 23
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventCostOnhandItem
+ms.search.form: InventCostOnhandItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19451
-ms.assetid: 66afd1fe-1a05-417c-ba85-35ff732236f8
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 4f1c32c5-f6ec-46dc-a32b-6d43c97c7be3
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -77,7 +79,7 @@ See also
 
 [Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[What's new or changed in Microsoft Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7)
+[What's new or changed in Microsoft Dynamics AX](whats-new-changed.md)
 
-[Cost entries](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/cost-management/cost-entries)
+[Cost entries](cost-entries.md)
 

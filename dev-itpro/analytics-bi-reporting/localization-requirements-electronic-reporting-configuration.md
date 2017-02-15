@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create an Electronic reporting configuration | Microsoft Docs
+title: Create an Electronic reporting configuration
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This article provides background information that will help you start to use Electronic reporting to create configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-14 16:02:18
+ms.date: 2015-12-14 16 - 02 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ERSolutionTable, ERVendorTable, ERWorkspace
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27621
-ms.assetid: 0616dbf3-7bc7-4fc9-b028-12a32656a2b8
-ms.region: Global
-# ms.industry: 
+ms.assetid: fb4ffbe2-9e03-422a-af25-521783c7dd0c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mrolecki
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -152,7 +154,7 @@ You can choose how to move your electronic reporting functionality into GER. How
 See also
 --------
 
-[Electronic reporting overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger)
+[Electronic reporting overview](general-electronic-reporting.md)
 
-[Manage the Electronic reporting configuration lifecycle](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger-how-to-manage-configuration-lifecycle)
+[Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 

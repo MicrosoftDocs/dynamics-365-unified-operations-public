@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deploy a Retail essentials demo environment on Azure (AX 2012) | Microsoft Docs
+title: Deploy a Retail essentials demo environment on Azure (AX 2012)
 description: 
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-02 16:53:48
+ms.date: 2015-12-02 16 - 53 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: AX 2012
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13352
-ms.assetid: 5cf03fa9-20e1-41f4-b34c-52c2d4068f96
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0b5eb880-03b9-45f9-af07-92e09aeaab3b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aamiral
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -39,7 +41,7 @@ Before you complete the procedures in this article, make sure that the following
 
 | Category       | Prerequisite                                                                                                                                            |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Required tasks | [Plan your Microsoft Dynamics AX deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) |
+| Required tasks | [Plan your Microsoft Dynamics AX deployment on Azure](plan-2012-r3-deployment-azure.md) |
 
 ## 1. Log on to Lifecycle Services
 Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Log on to Lifecycle Services](https://lcs.dynamics.com/)
@@ -119,7 +121,7 @@ Complete the following procedure to deploy a Retail essentials demo environment 
     </tbody>
     </table>
 
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX deployment on Azure](plan-2012-r3-deployment-azure.md).
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
 
 8.  Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.

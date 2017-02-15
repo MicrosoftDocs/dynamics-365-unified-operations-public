@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: F Classes - FormListBoxControl to FormNotifyEventArgs | Microsoft Docs
+title: F Classes -  FormListBoxControl to FormNotifyEventArgs
 description: API reference for classes from FormListBoxControl to FormNotifyEventArgs.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 23:44:57
+ms.date: 2016-03-08 23 - 44 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63763
-ms.assetid: 40223b06-435e-45c8-862d-9f419c5bcec6
-ms.region: Global
-# ms.industry: 
+ms.assetid: 34ee67f6-8dfd-4af9-bdd2-e3ab41099a0e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# F Classes - FormListBoxControl to FormNotifyEventArgs
+# F Classes -  FormListBoxControl to FormNotifyEventArgs
 
 API reference for classes from FormListBoxControl to FormNotifyEventArgs.
 

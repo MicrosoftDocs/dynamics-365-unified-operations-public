@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Italian black list report | Microsoft Docs
+title: Italian black list report
 description: Learn how to set up and maintain the Italian black list report.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-02 21:05:52
+ms.date: 2016-12-02 21 - 05 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261414
-ms.assetid: 0bcb48ad-460d-4fb4-abd2-8a89685404e3
-ms.region: Italy
-# ms.industry: 
+ms.assetid: 5f705fa4-8987-4240-8b3c-9f6d37df2117
+ms.search.region: Italy
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

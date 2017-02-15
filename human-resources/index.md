@@ -1,1 +1,1 @@
-# Welcome to d365OpsHR!
+# Welcome to human-resources!

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage items lent to workers | Microsoft Docs
+title: Manage items lent to workers
 description: Loan items are records that help managers track the physical items that your company lends to its workers. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-09-10 21:06:49
+ms.date: 2015-09-10 21 - 06 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmLoanItem, HcmLoanType, HcmPersonLoan
+ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3581
-ms.assetid: acf631da-2dbc-4128-be16-5b51314543aa
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8ea62f6f-65ac-44a9-a490-12a27fe68241
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kherr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

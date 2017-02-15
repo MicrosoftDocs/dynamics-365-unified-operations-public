@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up order processing options | Microsoft Docs
-description: This topic provides information about how to process orders for call centers using Microsoft Dynamics 365 for Operations - Retail. 
+title: Set up order processing options
+description: This topic provides information about how to process orders for call centers using Retail and commerce in Dynamics AX. 
 author: josaw1
 manager: AnnBe
-ms.date: 2016-04-07 15:11:36
+ms.date: 2016-04-07 15 - 11 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,26 +13,28 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 41
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78973
-ms.assetid: 0419a1c0-8c18-42cf-90db-ae03bf438b0c
-ms.region: global
-ms.industry: Retail
+ms.assetid: 5e6c4be1-0351-4bf4-adfa-ba92502a39ab
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: josaw
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Set up order processing options
 
-This topic provides information about how to process orders for call centers using Microsoft Dynamics 365 for Operations - Retail. 
+This topic provides information about how to process orders for call centers using Retail and commerce in Dynamics AX. 
 
-Retail and commerce in Dynamics 365 for Operations supports multiple retail channels, such as online stores, brick-and-mortar stores, and call centers. In call centers, workers take customer orders over the phone and create sales orders. This topic describes how to create a call center and configure call center options. Each call center can have its own users, payment methods, price groups, financial dimensions, and modes of delivery. You can configure these options when you create the call center. **Important:** Before the call center workflows can be used when the current Dynamics AX user creates sales orders, the user must be assigned to the call center as a call center user. You can use the **Call center** page to enable or disable groups of features that are unique to call centers. The following groups of features can be enabled:
+Retail and commerce in Microsoft Dynamics AX supports multiple retail channels, such as online stores, brick-and-mortar stores, and call centers. In call centers, workers take customer orders over the phone and create sales orders. This topic describes how to create a call center and configure call center options. Each call center can have its own users, payment methods, price groups, financial dimensions, and modes of delivery. You can configure these options when you create the call center. **Important:** Before the call center workflows can be used when the current Dynamics AX user creates sales orders, the user must be assigned to the call center as a call center user. You can use the **Call center** page to enable or disable groups of features that are unique to call centers. The following groups of features can be enabled:
 
 -   **Order completion** – This group includes features that are related to payments and order completion on the **Sales order** page.
 -   **Directed selling** – This group includes features that are related to source codes, scripts, and catalog requests.

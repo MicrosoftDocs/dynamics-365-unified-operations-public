@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Form Part Section List form patterns | Microsoft Docs
+title: Form Part Section List form patterns
 description: This article provides information about the Form Part Section List form patterns. These workspace-specific patterns have been developed to show filtered lists inside workspaces.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 18:43:49
+ms.date: 2016-01-11 18 - 43 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29211
-ms.assetid: db36e036-2b53-4bf6-9069-8b56d0bd7ba9
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5273a212-1621-4fa8-b5a3-6254346480b1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -57,7 +59,7 @@ These patterns did not exist for Microsoft Dynamics AX 2012.
 
 Design | Container
 
-*Header (Group) \[Optional\] * – This must use one of the [Filters and Toolbar](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/filters-and-toolbar-subpattern) subpatterns.
+*Header (Group) \[Optional\] * – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
 
 Grid
 
@@ -71,7 +73,7 @@ Design | Container
 
 PrimaryGroup (Group)
 
-*Header (Group) \[Optional\] * – This must use one of the [Filters and Toolbar](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/filters-and-toolbar-subpattern) subpatterns.
+*Header (Group) \[Optional\] * – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
 
 Grid
 
@@ -81,7 +83,7 @@ Grid
 
 SecondaryGroup (Group)
 
-*Header (Group) \[Optional\] * – This must use one of the [Filters and Toolbar](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/filters-and-toolbar-subpattern) subpatterns.
+*Header (Group) \[Optional\] * – This must use one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
 
 Grid
 
@@ -96,14 +98,14 @@ Grid
 
 ### Related container patterns
 
--   [Section Tabbed List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-tabbed-list-subpattern)
--   [Filters and Toolbar](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/filters-and-toolbar-subpattern)
+-   [Section Tabbed List](section-tabbed-list-subpattern.md)
+-   [Filters and Toolbar](filters-toolbar-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   **General form guidelines**
-    -   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+    -   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 -   **Pattern-specific guidelines**
     -   If a backing form exists, and especially if not all the records are shown in the list, a **See more** button should appear at the bottom of the list, so that the user can see the full list.
     -   Up to two important filters exist above the list.
@@ -114,7 +116,7 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Card grids show no more than four fields (not including an image).
     -   Tabular grids show no more than eight fields.
 -   **Form Part Section List - Double guidelines**
-    -   If both lists have actions and/or filters, both list must use the same [Filters and Toolbar](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/filters-and-toolbar-subpattern)subpattern (either the Stacked variant or the Inline variant).
+    -   If both lists have actions and/or filters, both list must use the same [Filters and Toolbar](filters-toolbar-subpattern.md)subpattern (either the Stacked variant or the Inline variant).
 
 ## Examples
 ### Form Part Section List

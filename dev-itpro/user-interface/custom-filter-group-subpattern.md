@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Custom Filter Group subpattern | Microsoft Docs
+title: Custom Filter Group subpattern
 description: 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-18 22:57:36
+ms.date: 2015-12-18 22 - 57 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28231
-ms.assetid: 7a34f581-c876-4514-b7e5-220d86e99a23
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9c25921e-e594-4106-8093-9d651693ac4c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

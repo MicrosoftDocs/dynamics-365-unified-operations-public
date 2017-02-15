@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Demand forecasting setup | Microsoft Docs
+title: Demand forecasting setup
 description: This topic describes the setup tasks that you must perform to prepare for demand forecasting.  
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-30 12:35:29
+ms.date: 2016-03-30 12 - 35 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
+ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72653
-ms.assetid: 77ab0b46-c9e8-438d-9f3e-2d03f2188eb2
-ms.region: global
-ms.industry: Manufacturing
+ms.assetid: 68f37164-a3f9-4ccb-94b7-e03e5684d249
+ms.search.region: global
+ms.search.industry: Manufacturing
 ms.author: roxanad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -41,7 +43,7 @@ A demand forecast is calculated for an item and its dimensions only if the item 
 Demand forecasting generates cross-company forecasts. In Microsoft Dynamics 365 for Operations, companies that are planned together are grouped into one intercompany planning group. To specify, per company, which item allocation keys should be considered for demand forecasting, associate an item allocation key with the intercompany planning group member by going to **Master planning** &gt; **Setup** &gt; **Intercompany planning groups**. By default, if no item allocation keys are assigned to intercompany planning group members, a demand forecast is calculated for all items that are assigned to all item allocation keys from all Dynamics 365 for Operations companies. Additional filtering options for companies and item allocation keys are available on the **Generate statistical baseline forecast** page. Review the number of items that are forecasted. Unnecessary items might cause increased costs when you use Microsoft Azure Machine Learning.
 
 ## Demand forecasting parameters
-To set up demand forecasting parameters, go to **Master planning** &gt; **Setup** &gt; **Demand forecasting parameters**. Because demand forecasting runs cross-company, the setup is global. In other words, the setup applies to all companies. Demand forecasting generates the forecast in quantities. Therefore, the unit of measure that the quantity should be expressed in must be specified in the **Demand forecast unit** field. The unit of measure must be unique, to help guarantee that the aggregation and percentage distribution make sense. For more information about aggregation and percentage distribution, see [Make manual adjustments to the baseline forecast](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/making-manual-adjustments-to-the-baseline-forecast). For every unit of measure that is used for SKUs that are included in demand forecasting, make sure that there is a conversion rule for the unit of measure and the general forecasting unit of measure. When forecast generation is run, the list of items that don't have a unit of measure conversion is logged, so that you can easily correct the setup. Demand forecasting can be used to forecast both dependent and independent demand. For example, if only the **Sales order** check box is selected, and if all the items that are considered for demand forecasting are items that are sold, the system calculates independent demand. However, critical subcomponents can be added to item allocation keys and included in demand forecasting. In this case, if the **Production line** check box is selected, a dependent forecast is calculated. There are two methods for creating a baseline forecast in Dynamics 365 for Operations. You can use forecasting models on top of historical data, or you can just copy over the historical data to the forecast. The **Forecast generation strategy** field lets you select between these two methods. To use forecast models, select **Azure Machine Learning**. By clicking **Forecast dimensions** in the left pane of the **Demand forecasting parameters** page, you can also select the set of forecast dimensions to use when the demand forecast is generated. A forecast dimension indicates the level of detail that the forecast is defined for. Company, site, and item allocation key are mandatory forecast dimensions, but you can also generate forecasts at the warehouse, inventory status, customer group, customer account, country/region, state, and item plus all item dimension levels. At any point, you can add forecast dimensions to the list of dimensions that are used for demand forecasting. You can also remove forecast dimensions from the list. However, manual adjustments are lost if you add or remove a forecast dimension. Not all items behave in the same manner from a demand forecasting perspective. Similar items can be grouped in one item allocation key, and parameters such as transaction types and forecast method settings can be set per item allocation key. Click **Item allocation keys** in the left pane of the **Demand forecasting parameters** page. To generate the forecast, Dynamics 365 for Operations uses a Machine Learning web service. To connect to the service, you must provide Dynamics 365 for Operations the following information if you sign in to Microsoft Azure Machine Learning Studio:
+To set up demand forecasting parameters, go to **Master planning** &gt; **Setup** &gt; **Demand forecasting parameters**. Because demand forecasting runs cross-company, the setup is global. In other words, the setup applies to all companies. Demand forecasting generates the forecast in quantities. Therefore, the unit of measure that the quantity should be expressed in must be specified in the **Demand forecast unit** field. The unit of measure must be unique, to help guarantee that the aggregation and percentage distribution make sense. For more information about aggregation and percentage distribution, see [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md). For every unit of measure that is used for SKUs that are included in demand forecasting, make sure that there is a conversion rule for the unit of measure and the general forecasting unit of measure. When forecast generation is run, the list of items that don't have a unit of measure conversion is logged, so that you can easily correct the setup. Demand forecasting can be used to forecast both dependent and independent demand. For example, if only the **Sales order** check box is selected, and if all the items that are considered for demand forecasting are items that are sold, the system calculates independent demand. However, critical subcomponents can be added to item allocation keys and included in demand forecasting. In this case, if the **Production line** check box is selected, a dependent forecast is calculated. There are two methods for creating a baseline forecast in Dynamics 365 for Operations. You can use forecasting models on top of historical data, or you can just copy over the historical data to the forecast. The **Forecast generation strategy** field lets you select between these two methods. To use forecast models, select **Azure Machine Learning**. By clicking **Forecast dimensions** in the left pane of the **Demand forecasting parameters** page, you can also select the set of forecast dimensions to use when the demand forecast is generated. A forecast dimension indicates the level of detail that the forecast is defined for. Company, site, and item allocation key are mandatory forecast dimensions, but you can also generate forecasts at the warehouse, inventory status, customer group, customer account, country/region, state, and item plus all item dimension levels. At any point, you can add forecast dimensions to the list of dimensions that are used for demand forecasting. You can also remove forecast dimensions from the list. However, manual adjustments are lost if you add or remove a forecast dimension. Not all items behave in the same manner from a demand forecasting perspective. Similar items can be grouped in one item allocation key, and parameters such as transaction types and forecast method settings can be set per item allocation key. Click **Item allocation keys** in the left pane of the **Demand forecasting parameters** page. To generate the forecast, Dynamics 365 for Operations uses a Machine Learning web service. To connect to the service, you must provide Dynamics 365 for Operations the following information if you sign in to Microsoft Azure Machine Learning Studio:
 
 -   Web service application programming interface (API) key
 -   Web service endpoint URL
@@ -56,9 +58,9 @@ To view the parameters that can be configured for the Dynamics 365 for Operation
 See also
 --------
 
-[Introduction to demand forecasting](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/introduction-to-dynamics-ax7-demand-forecasting)
+[Introduction to demand forecasting](introduction-demand-forecasting.md)
 
-[Generating a statistical baseline forecast](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/generating-a-statistical-baseline-forecast)
+[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
-[Making manual adjustments to the baseline forecast](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/making-manual-adjustments-to-the-baseline-forecast)
+[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 

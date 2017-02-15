@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up and generate positive pay files | Microsoft Docs
+title: Set up and generate positive pay files
 description: This article explains how to set up positive pay and generate positive pay files. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-05-23 15:48:30
+ms.date: 2016-05-23 15 - 48 - 30
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 88433
-ms.assetid: b94c5234-6ad5-4d60-97d1-323e2f3c53f0
-ms.region: Global
-# ms.industry: 
+ms.assetid: a08cf76f-ce14-4342-91a7-0bcabae971ce
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: abruer
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 
@@ -35,7 +37,7 @@ This article explains how to set up positive pay and generate positive pay files
 Set up positive pay to generate an electronic list of checks that is provided to the bank. Then, when a check is presented to the bank, the bank compares it with the list of checks. If the check matches a check in the list, the bank clears it. If the check doesn't match a check in the list, the bank holds it for review.
 
 ## Security for positive pay files
-Positive pay files can contain sensitive information about payees and check amounts. Therefore, make sure that you use appropriate security measures from the time that the files are generated until they are received by the bank. Positive pay files are downloaded to the location that is specified by your web browser. Because positive pay files can contain sensitive information, it's important that only authorized users have access to generate and view this information in Microsoft Dynamics 365 for Operations. Use the following table to help you determine the privileges that are required.
+Positive pay files can contain sensitive information about payees and check amounts. Therefore, make sure that you use appropriate security measures from the time that the files are generated until they are received by the bank. Positive pay files are downloaded to the location that is specified by your web browser. Because positive pay files can contain sensitive information, it's important that only authorized users have access to generate and view this information in Microsoft Dynamics AX. Use the following table to help you determine the privileges that are required.
 
 <table>
 <colgroup>

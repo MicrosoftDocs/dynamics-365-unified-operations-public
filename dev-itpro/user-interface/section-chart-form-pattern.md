@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Section Chart form pattern | Microsoft Docs
+title: Section Chart form pattern
 description: This article provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 22:18:16
+ms.date: 2016-01-11 22 - 18 - 16
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29271
-ms.assetid: 7d5a913b-65cd-463e-89e4-cc24c1cc7509
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2242a18c-f905-4eab-8764-55c1fb72dc66
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -48,7 +50,7 @@ This pattern didn't exist for Microsoft Dynamics AX 2012.
 
 Form Design
 
-*HeaderGroup (Group) \[Optional\]* – This uses one of the [Filters and Toolbar](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/filters-and-toolbar-subpattern) subpatterns.
+*HeaderGroup (Group) \[Optional\]* – This uses one of the [Filters and Toolbar](filters-toolbar-subpattern.md) subpatterns.
 
 Chart
 
@@ -58,8 +60,8 @@ Apply the Section Chart pattern to the appropriate form/container.
 
 ### Related container patterns
 
--   [Operational workspace](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)
--   [Section stacked chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-stacked-chart-subpattern)
+-   [Operational workspace](workspace-form-pattern.md)
+-   [Section stacked chart](section-stacked-chart-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. None

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Resolve discrepancies during invoice totals matching | Microsoft Docs
+title: Resolve discrepancies during invoice totals matching
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-08 22:51:03
+ms.date: 2016-03-08 22 - 51 - 03
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63413
-ms.assetid: 52a4200e-368f-49e1-8e25-b828c533b6ea
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9335a08f-b603-47a9-b9be-9cef7cecfaef
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: abruer
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

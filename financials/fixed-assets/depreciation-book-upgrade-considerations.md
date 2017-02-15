@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Depreciation book upgrade overview | Microsoft Docs
-description: In previous releases, there were two valuation concepts for fixed assets: value models and depreciation books. In Microsoft Dynamics 365 for Operations version 1611, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. This topic provides some things to consider for the upgrade. 
+title: Depreciation book upgrade overview
+description: In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In Microsoft Dynamics 365 for Operations version 1611, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. This topic provides some things to consider for the upgrade. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-10-31 16:22:09
+ms.date: 2016-10-31 16 - 22 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 101
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221624
-ms.assetid: fbad2a86-52bf-4693-8a9d-2828f156d581
-ms.region: global
-# ms.industry: 
+ms.assetid: 7b76da6d-5308-4976-bc88-3a22fdb41f2c
+ms.search.region: global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
 # Depreciation book upgrade overview
 
-In previous releases, there were two valuation concepts for fixed assets: value models and depreciation books. In Microsoft Dynamics 365 for Operations version 1611, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. This topic provides some things to consider for the upgrade. 
+In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In Microsoft Dynamics 365 for Operations version 1611, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. This topic provides some things to consider for the upgrade. 
 
 The upgrade process will move your existing setup and all existing transactions to the new book structure. Value models will remain as they currently are, as a book that posts to the general ledger. Depreciation books will be moved to a book that has the **Post to general ledger** option set to **No**. Depreciation book journal names will be moved to a general ledger journal name with the posting layer set to **None**. Depreciation book transactions will be moved to Fixed asset transactions. Before running the data upgrade, you should understand the two options available for upgrading depreciation book journal lines to transaction vouchers, and the number sequence that will be used for the voucher series. Option 1:  **System-defined number sequence** - This is the default option to optimize upgrade performance. The upgrade will not use the number sequences framework, but instead will allocate vouchers with a set-based approach. After the upgrade, the new number sequence will be created with the **Next number set** appropriately based on the upgraded transactions. By default, the number sequence used will be in the FADBUpgr\#\#\#\#\#\#\#\#\# format. There are a few parameters available to you to adjust the format when using this approach:
 

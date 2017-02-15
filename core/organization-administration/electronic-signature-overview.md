@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Electronic signature overview | Microsoft Docs
+title: Electronic signature overview
 description: This article provides an overview of electronic signatures and describes how they can be used in Microsoft Dynamics 365 for Operations.
 author: maertenm
 manager: AnnBe
-ms.date: 2015-12-02 21:19:12
+ms.date: 2015-12-02 21 - 19 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SIGParameters, SIGProcSetup, SIGReasonCode
+ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13611
-ms.assetid: 39bac4ce-dc40-4a15-a290-74b9a3458377
-ms.region: Global
-# ms.industry: 
+ms.assetid: 29941b8a-1537-4920-9fa1-383c1b56a52e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: maertenm
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

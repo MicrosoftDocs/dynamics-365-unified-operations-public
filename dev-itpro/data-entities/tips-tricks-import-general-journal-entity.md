@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Best practices for importing vouchers using the General journal entity | Microsoft Docs
+title: Best practices for importing vouchers using the General journal entity
 description: This topic provides tips for importing data into the General journal by using the General journal entity.  
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-06-24 18:03:41
+ms.date: 2016-06-24 18 - 03 - 41
 ms.topic: 
 ms.prod: 
 ms.service: 
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 94363
-ms.assetid: 6553d9db-d018-4d52-96d1-e532de582381
-ms.region: Global
-# ms.industry: 
+ms.assetid: ee0fd7bf-117c-4318-bb97-9bdae682a24c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -58,7 +60,7 @@ The following sections describe the effect of these settings, and also explain h
 
 ### Voucher number
 
--   When you use the **Set-based processing** setting on the General journal entity, the voucher number must be provided in the imported file. Every transaction in the General journal is assigned the voucher number that is provided in the imported file, even if the voucher isn’t balanced. If you want to use set-based processing, but you also want to use the number sequence that is defined for voucher numbers in Dynamics 365 for Operations, a hotfix has been provided for the February 2016 release. The hotfix number is 3170316 and available for download from Lifecycle services (LCS). For more information, see [Download hotfixes from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/servicing/download-hotfixes-from-lifecycle-services).
+-   When you use the **Set-based processing** setting on the General journal entity, the voucher number must be provided in the imported file. Every transaction in the General journal is assigned the voucher number that is provided in the imported file, even if the voucher isn’t balanced. If you want to use set-based processing, but you also want to use the number sequence that is defined for voucher numbers in Dynamics 365 for Operations, a hotfix has been provided for the February 2016 release. The hotfix number is 3170316 and available for download from Lifecycle services (LCS). For more information, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
     -   To enable this functionality, on the journal name that is used for imports in Dynamics 365 for Operations, set **Number allocation at posting** to **Yes**.
     -   A voucher number must still be defined in the imported file. However, this number is temporary and is overwritten by the Dynamics 365 for Operations voucher number when the journal is posted. You must make sure that the lines of the journal are grouped correctly by temporary voucher number. For example, during posting, three lines are found that have a temporary voucher number of 1. The temporary voucher number of all three lines is overwritten by the next number in the number sequence. If those three lines aren’t a balanced entry, the voucher isn't posted. Next, if lines are found that have a temporary voucher number of 2, this number is overwritten by the next voucher number in the number sequence, and so on.
 

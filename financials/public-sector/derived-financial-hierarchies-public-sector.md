@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Derived financial hierarchies in the public sector | Microsoft Docs
+title: Derived financial hierarchies in the public sector
 description: This article describes the derived financial hierarchies functionality that is available for the public sector. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-08 18:59:20
+ms.date: 2015-12-08 18 - 59 - 20
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: EcoResCategory, EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyRole, LedgerDerivedFinHierarchies, LedgerDerivedFinHierarchyFilterResults, LedgerDerivedFinHierarchyLegalEntities
+ms.search.form: EcoResCategory, EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyRole, LedgerDerivedFinHierarchies, LedgerDerivedFinHierarchyFilterResults, LedgerDerivedFinHierarchyLegalEntities
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20911
-ms.assetid: aba2f2ae-f666-4b29-a672-b2a18f40a1ce
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: 3059816c-b701-4e46-8a38-439e969539aa
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -46,7 +48,7 @@ An organization has an employee wellness program and an employee education progr
 See also
 --------
 
-[General ledger](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/general-ledger)
+[General ledger](general-ledger.md)
 
 [General ledger in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=164121)
 

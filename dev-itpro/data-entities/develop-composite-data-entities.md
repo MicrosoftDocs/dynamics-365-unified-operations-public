@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Develop composite data entities | Microsoft Docs
+title: Develop composite data entities
 description: A composite entity is a concept that allows you to build a single entity by leveraging multiple entities that are related to each other. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 23:51:24
+ms.date: 2015-12-04 23 - 51 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18411
-ms.assetid: 19cbcc10-41f2-4a0f-9d8c-bce570576d3e
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9552894e-3112-4549-bfe4-1bb8d964b69c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

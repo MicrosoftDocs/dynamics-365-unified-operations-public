@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: EU Entry certificates | Microsoft Docs
+title: EU Entry certificates
 description: This article provides information about European Union (EU) entry certificates.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-29 20:10:43
+ms.date: 2015-10-29 20 - 10 - 43
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
+ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11464
-ms.assetid: b62799c1-52f2-46e4-af27-3937fedbf328
-ms.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-# ms.industry: 
+ms.assetid: e4af2e20-1314-4496-bd8d-2ee0cfc09479
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+# ms.search.industry: 
 ms.author: mrolecki
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

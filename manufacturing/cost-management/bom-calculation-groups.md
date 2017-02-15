@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: BOM calculations groups | Microsoft Docs
+title: BOM calculations groups
 description: This article provides information about calculation groups for bills of materials (BOMs) and how to set them up. To run a BOM calculation, you must either set up calculation groups and assign them to individual items, or set a default calculation group. The calculation settings from the calculation group are then used as default values on the BOM calculation page at the time of BOM calculation. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-21 13:13:01
+ms.date: 2016-06-21 13 - 13 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
+ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 94063
-ms.assetid: f4f002d9-6e70-4364-aefc-c0bc0495affc
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 7daf9651-5817-43e0-8f07-0685ed69e11b
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

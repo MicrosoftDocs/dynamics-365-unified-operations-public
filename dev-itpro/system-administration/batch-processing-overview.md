@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Batch processing overview | Microsoft Docs
+title: Batch processing overview
 description: This article provides an overview of batch processing in Microsoft Dynamics 365 for Operations.
 author: maertenm
 manager: AnnBe
-ms.date: 2016-03-08 19:38:32
+ms.date: 2016-03-08 19 - 38 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62333
-ms.assetid: 35496aa2-6879-43a6-a091-7907faea1536
-ms.region: Global
-# ms.industry: 
+ms.assetid: 507a4b03-f2fc-4b37-80c2-8c76dcb088d2
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: maertenm
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Moving average | Microsoft Docs
+title: Moving average
 description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-17 15:16:47
+ms.date: 2016-03-17 15 - 16 - 47
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventModelGroup
+ms.search.form: InventModelGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65531
-ms.assetid: 88b0e221-24d8-4251-8f26-1ddfee4dc2ea
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: a87d24fb-a450-4df7-a19a-1cbf7024b181
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

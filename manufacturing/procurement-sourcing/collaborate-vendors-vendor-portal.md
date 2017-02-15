@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Collaborate with vendors by using the Vendor portal | Microsoft Docs
+title: Collaborate with vendors by using the Vendor portal
 description: This topic describes how purchasing agents can use the Vendor portal to collaborate with external vendors during the purchase order confirmation process. This information applies only to the February 2016 &amp; May 2016 versions of Dynamics AX.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-28 15:01:22
+ms.date: 2016-01-28 15 - 01 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchTable, PurchVendorPortalRequests
+ms.search.form: PurchTable, PurchVendorPortalRequests
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30211
-ms.assetid: 11e0b4eb-40ad-4739-aadd-e8a5c70fc984
-ms.region: Global
-# ms.industry: 
+ms.assetid: a45c3069-8ffc-407f-9ab4-ef12daa48e74
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mkirknel
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: mkirknel
 
 This topic describes how purchasing agents can use the Vendor portal to collaborate with external vendors during the purchase order confirmation process. This information applies only to the February 2016 &amp; May 2016 versions of Dynamics AX.
 
-The information in this topic applies only to the February 2016 and May 2016 versions of Dynamics AX. The Vendor portal functionality has been replaced by extended vendor collaboration functionality in Dynamics 365 for Operations version 1611. For more information about the new vendor collaboration functionality, see [Using vendor collaboration to work with external vendors](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/using-vendor-collaboration-to-work-with-external-vendors). The Vendor portal is targeted at vendors that don't have electronic data interchange (EDI) integration with Microsoft Dynamics AX for exchanging purchase order (PO) information. The portal lets purchasing agents send a PO to the vendor, and then receive a Confirmed or Rejected response directly in Dynamics AX. The process can be configured so that a confirmation from the vendor automatically confirms the order. In this case, follow-up is required only occasionally, when an order is rejected, or if the vendor confirmation is registered as a response but the status of the PO isn't updated to **Confirmed** because of an issue during the confirmation process.
+The information in this topic applies only to the February 2016 and May 2016 versions of Dynamics AX. The Vendor portal functionality has been replaced by extended vendor collaboration functionality in Dynamics 365 for Operations version 1611. For more information about the new vendor collaboration functionality, see [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md). The Vendor portal is targeted at vendors that don't have electronic data interchange (EDI) integration with Microsoft Dynamics AX for exchanging purchase order (PO) information. The portal lets purchasing agents send a PO to the vendor, and then receive a Confirmed or Rejected response directly in Dynamics AX. The process can be configured so that a confirmation from the vendor automatically confirms the order. In this case, follow-up is required only occasionally, when an order is rejected, or if the vendor confirmation is registered as a response but the status of the PO isn't updated to **Confirmed** because of an issue during the confirmation process.
 
 ## PO confirmation and rejection
 POs are prepared in Dynamics AX. When you have a PO that has a status of **Approved**, you send it to the vendor by generating a confirmation request. If you want to draw the vendor’s attention to a new PO, you can also use the print management system to send the PO by email. The PO appears in the Vendor portal, and includes an option that the vendor can use to confirm or reject it. The vendor can also add comments to communicate information such as changes to the PO. In the Vendor portal, the vendor can see order lines. These lines include information such as the external product number, dimensions, price information, quantity, delivery date, and delivery address. The vendor can generate a report that shows the PO information and also the total price. Charges that are relevant to the vendor are shown if the vendor clicks the **Charges** button in the header or on the lines. Vendors can import PO information into their own system by using the **Export to Excel** functionality. The following table shows the typical exchange of information, depending on that way that the vendor responds when you send a PO for confirmation.
@@ -78,7 +80,7 @@ If you've turned on change management for a PO, the PO goes through an approval 
 See also
 --------
 
-[Configuration of security for vendor collaboration users](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/configuring-security-for-vendor-portal-users)
+[Configuration of security for vendor collaboration users](configure-security-vendor-portal-users.md)
 
-[Vendor collaboration invoicing workspace](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+[Vendor collaboration invoicing workspace](vendor-portal-invoicing-workspace.md)
 

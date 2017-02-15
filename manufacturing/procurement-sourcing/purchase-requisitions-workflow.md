@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Purchase requisition workflow | Microsoft Docs
+title: Purchase requisition workflow
 description: The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved. When a purchase requisition is submitted for review, the workflow process is started. After a purchase requisition is approved, a purchase order can be generated for the purchase requisition lines and submitted to the vendor for order fulfillment.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08:13:35
+ms.date: 2015-09-10 08 - 13 - 35
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchReqAuthorization, WorkflowParticipantExpenToken
+ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2234
-ms.assetid: faf6da79-516b-4cb0-bfce-130cbbad5d93
-ms.region: Global
-# ms.industry: 
+ms.assetid: ce90e3ed-bf43-4d65-a979-cf0fa31772a3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mkirknel
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -91,7 +93,7 @@ See also
 
 [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Procurement and sourcing workflows](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/procurement-and-sourcing-workflows)
+[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-requisitions-overview)
+[Purchase requisition overview](purchase-requisitions-overview.md)
 

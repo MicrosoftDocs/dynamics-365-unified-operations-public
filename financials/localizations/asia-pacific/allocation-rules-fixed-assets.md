@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Allocation rules for fixed assets | Microsoft Docs
+title: Allocation rules for fixed assets
 description: In Japan, a fixed asset is registered under an administrative department, and the depreciation amount must be allocated among the usage departments. You can set up an allocation rule to allocate depreciation amounts to multiple financial dimensions by percentage. This article answers some frequently asked questions about the allocation rules for fixed assets.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-19 23:00:03
+ms.date: 2015-10-19 23 - 00 - 03
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetAllocationRuleSetup_CN
+ms.search.form: AssetAllocationRuleSetup_CN
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10194
-ms.assetid: d0735c9b-13c6-415b-b648-0253ffa5ecc9
-ms.region: Japan
-# ms.industry: 
+ms.assetid: bd1250a7-5a88-46d2-8989-2a85297b421e
+ms.search.region: Japan
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

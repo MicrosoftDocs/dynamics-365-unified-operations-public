@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reset the financial reporting data mart after restoring a database | Microsoft Docs
+title: Reset the financial reporting data mart after restoring a database
 description: This topic describes how to reset the financial reporting data mart after restoring a Microsoft Dynamics 365 for Operations database. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-12-08 16:20:13
+ms.date: 2016-12-08 16 - 20 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 2231
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 2231
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261824
-ms.assetid: 1be0753f-f6f8-4969-b0be-eccff515b5be
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3754ff8a-419c-4311-b749-7b2dbc29ccb8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -61,7 +63,7 @@ These services will have open connections to the Dynamics 365 for Operations dat
 ## Reset
 #### Locate the latest DataUpgrade.zip package
 
-Locate the latest DataUpgrade.zip package using the directions found in [Download the DataUpgrade.zip script](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/process-for-upgrading-ax-data-to-the-latest-dynamics-ax-update#download-the-dataupgrade-zip-script). The directions explain how to locate the correct version of the data upgrade package for your environment.
+Locate the latest DataUpgrade.zip package using the directions found in [Download the DataUpgrade.zip script](upgrade-data-to-latest-update.md#download-the-dataupgrade-zip-script). The directions explain how to locate the correct version of the data upgrade package for your environment.
 
 #### Execute scripts against Dynamics 365 for Operations database
 

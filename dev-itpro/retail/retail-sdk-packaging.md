@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail SDK packaging | Microsoft Docs
+title: Retail SDK packaging
 description: This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-17 19:43:46
+ms.date: 2015-12-17 19 - 43 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28021
-ms.assetid: e0671fcf-f811-4d12-8682-2211cae0eabd
-ms.region: Global
-# ms.industry: 
+ms.assetid: e24b4fca-5d75-4c1c-b1d0-623f4ca5e75e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: sijoshi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ This topic explains how to create a deployable package for each of the following
 Prerequisites
 -------------
 
-For detailed information about how the Retail software development kit (SDK) is designed for customization and to generate customized deployable packages, see [Retail SDK overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/retail/retail-sdk-overview). This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail:
+For detailed information about how the Retail software development kit (SDK) is designed for customization and to generate customized deployable packages, see [Retail SDK overview](retail-sdk-overview.md). This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail:
 
 -   Commerce runtime (CRT)
 -   Retail Server

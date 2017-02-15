@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Segmented entry control migration | Microsoft Docs
-description: This tutorial walks you through two migration scenarios for the Segmented Entry control: a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
-author: twheeloc
+title: Segmented entry control migration
+description: This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-12 20:45:15
+ms.date: 2015-12-12 20 - 45 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25611
-ms.assetid: 2ff5b4e3-8bc8-436e-845a-19815108b917
-ms.region: Global
-# ms.industry: 
-ms.author: ghenriks
+ms.assetid: 4dd37500-fee0-4939-a323-29bd0326aa81
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Segmented entry control migration
 
-This tutorial walks you through two migration scenarios for the Segmented Entry control: a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
+This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
 
 Simple migration scenario – SMAServiceOrderTable form
 -----------------------------------------------------

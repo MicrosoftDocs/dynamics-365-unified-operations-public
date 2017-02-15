@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Update standard costs in a non-manufacturing environment | Microsoft Docs
+title: Update standard costs in a non-manufacturing environment
 description: This article provides guidance for updating standard costs in a non-manufacturing environment.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-11 13:26:29
+ms.date: 2016-04-11 13 - 26 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CostingVersion, InventItemPrice
+ms.search.form: CostingVersion, InventItemPrice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79723
-ms.assetid: 830ea833-8eee-4266-b64c-05fa6513fd16
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 2f17d257-3048-4501-94c8-ebe3e15bd25e
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: mguada
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

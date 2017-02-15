@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Derogatory depreciation for France | Microsoft Docs
+title: Derogatory depreciation for France
 description: This article provides information about derogatory depreciation and how to set it up. In derogatory depreciation, an extra amount of depreciation is calculated as the difference between the depreciation amount on the tax value model and the depreciation amount on the accounting value model during the life of a fixed asset.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-01-29 19:55:51
+ms.date: 2016-01-29 19 - 55 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30321
-ms.assetid: f2b470e7-e0a6-4516-9380-85c314dbc8ea
-ms.region: France
-# ms.industry: 
+ms.assetid: ae142e2c-c1ac-4e42-b181-68712d2c2b03
+ms.search.region: France
+# ms.search.industry: 
 ms.author: anasyash
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Budgeting in the public sector | Microsoft Docs
+title: Budgeting in the public sector
 description: This overview introduces you to the budgeting functionality that is available for public sector. This includes budget analysis, preliminary budgets and apportionments, and posting definitions.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 14:46:05
+ms.date: 2015-12-07 14 - 46 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BudgetControlApportionments, BudgetControlConfiguration, BudgetControlStatistics, BudgetParameters
+ms.search.form: BudgetControlApportionments, BudgetControlConfiguration, BudgetControlStatistics, BudgetParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19471
-ms.assetid: 74159ebe-ba80-44c9-a5fb-ef59f407a058
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: 3157a7d5-2d90-4bb3-8b17-ebcce2fa2f9e
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -46,9 +48,9 @@ To use budget control, you must set up basic budgeting. In the public sector con
 ## What do I do next?
 You may be required to set up the following Budgeting features:
 
--   [Budget analysis in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/budget-analysis-in-the-public-sector) View revenues and expenditures by financial dimension, by using a combination of general ledger and budget control data. View summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances.
--   [Preliminary budgets and apportionments in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/preliminary-budgets-and-apportionments-in-the-public-sector) Create a temporary, preliminary budget while the actual budget is being reviewed and approved. Apportionments are the portion of the original budget that have been approved for spending.
--   [Public sector posting definitions](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/posting-definitions-in-the-public-sector) Use posting definitions to create subledger journal lines for originating transactions that meet selected criteria.
+-   [Budget analysis in the public sector](budget-analysis-public-sector.md) View revenues and expenditures by financial dimension, by using a combination of general ledger and budget control data. View summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances.
+-   [Preliminary budgets and apportionments in the public sector](preliminary-budgets-apportionments-public-sector.md) Create a temporary, preliminary budget while the actual budget is being reviewed and approved. Apportionments are the portion of the original budget that have been approved for spending.
+-   [Public sector posting definitions](posting-definitions-public-sector.md) Use posting definitions to create subledger journal lines for originating transactions that meet selected criteria.
 
 **Note** This also applies to General ledger, Accounts payable, and Accounts receivable.
 
@@ -57,9 +59,9 @@ See also
 
 [Budgeting](https://ax.help.dynamics.com/en/wiki/Budgeting/)
 
-[Accounts payable in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/accounts-payable-in-the-public-sector)
+[Accounts payable in the public sector](accounts-payable-public-sector.md)
 
-[Accounts receivable in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/accounts-receivable-in-the-public-sector)
+[Accounts receivable in the public sector](accounts-receivable-public-sector.md)
 
-[General ledger in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/general-ledger-in-the-public-sector)
+[General ledger in the public sector](general-ledger-public-sector.md)
 

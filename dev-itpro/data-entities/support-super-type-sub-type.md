@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Super types and sub types | Microsoft Docs
+title: Super types and sub types
 description: Describes support for inheritance patterns in data entities.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 20:11:51
+ms.date: 2015-12-12 20 - 11 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25331
-ms.assetid: b3827ce1-4828-4d1d-9e4f-bc90faa57d5e
-ms.region: Global
-# ms.industry: 
+ms.assetid: fdbfc39f-602d-45df-a13c-c7a6c69daaa1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

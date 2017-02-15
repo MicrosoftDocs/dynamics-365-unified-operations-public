@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Import the Chinese Golden Tax data entity | Microsoft Docs
+title: Import the Chinese Golden Tax data entity
 description: This topic explains how to import the Chinese Golden Tax data entity into Microsoft Dynamics 365 for Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-02 21:05:44
+ms.date: 2016-12-02 21 - 05 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261394
-ms.assetid: cc3c6b26-efd3-4fbd-84b0-9ae64e71d5b5
-ms.region: China (PRC)
-# ms.industry: 
+ms.assetid: f19271cd-8566-4d3c-81b1-479a4cdebf78
+ms.search.region: China (PRC)
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -44,7 +46,7 @@ To import the Chinese Golden Tax data entity, complete the following steps.
 8.  On the **Transformations** tab, click **New**.
 9.  Click **Upload file** and browse to the location of the .xlst file.
 
-For specific steps that show how to import a data entity, refer to [Importing data by using entities](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/building-and-consuming-data-entities#importing-data-by-using-entities). To practice the Chinese Golden Tax data entity import using the demo data company CNMF, download the following files from [CustomerSource](https://mbs.microsoft.com/customersource/global/ax/learning/samplefilestaximportchina).
+For specific steps that show how to import a data entity, refer to [Importing data by using entities](build-consuming-data-entities.md#importing-data-by-using-entities). To practice the Chinese Golden Tax data entity import using the demo data company CNMF, download the following files from [CustomerSource](https://mbs.microsoft.com/customersource/global/ax/learning/samplefilestaximportchina).
 
 -   **ImportSampleFile.xml** - This file is the Chinese Golden Tax data entity composite.
 -   **Tax-Import-to-XML.xslt** - This file is used as the transformational file mapping.

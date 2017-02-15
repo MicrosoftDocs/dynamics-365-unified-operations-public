@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Explosion of a BOM version | Microsoft Docs
+title: Explosion of a BOM version
 description: This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09:15:33
+ms.date: 2015-12-07 09 - 15 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ReqTransExplosion
+ms.search.form: ReqTransExplosion
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19211
-ms.assetid: 6dd99875-7003-4b61-b63c-1c798c01c860
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 1c5f15f1-376c-47ec-9352-7f2bc4b597a1
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: roxanad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -42,7 +44,7 @@ The following illustration shows how the process for master planning demand expl
 See also
 --------
 
-[Master planning - how the BOM version is determined](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/master-planning-how-the-bom-version-is-determined)
+[Master planning - how the BOM version is determined](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/master-planning-and-multisite-functionality)
+[Master planning and multisite functionality](master-plan-multisite-functionality.md)
 

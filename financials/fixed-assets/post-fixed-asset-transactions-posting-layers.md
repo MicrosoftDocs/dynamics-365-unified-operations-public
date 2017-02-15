@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Post fixed asset transactions to posting layers | Microsoft Docs
+title: Post fixed asset transactions to posting layers
 description: This article gives an overview of posting layer functionality for fixed asset transactions.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 20:18:26
+ms.date: 2015-09-10 20 - 18 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetBookTable, LedgerJournalTransAsset
+ms.search.form: AssetBookTable, LedgerJournalTransAsset
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3001
-ms.assetid: 63429c2b-151e-4b35-bf13-2642f4ca7221
-ms.region: Global
-# ms.industry: 
+ms.assetid: f626156c-dbbf-4846-9f88-6e3f265cf15e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -42,7 +44,7 @@ A fixed asset is often depreciated in different ways for different purposes. Dep
 See also
 --------
 
-[Derived books](https://ax.help.dynamics.com/en/wiki/derived-value-models/)
+[Derived value models](https://ax.help.dynamics.com/en/wiki/derived-value-models/)
 
-[Posting with derived books](https://ax.help.dynamics.com/en/wiki/Posting-with-derived-value-models/)
+[Posting with derived value models](https://ax.help.dynamics.com/en/wiki/Posting-with-derived-value-models/)
 

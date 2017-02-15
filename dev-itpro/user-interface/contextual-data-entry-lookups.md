@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Contextual data entry for lookups | Microsoft Docs
+title: Contextual data entry for lookups
 description: In data entry scenarios, it is common for a user to attempt to identify an entity in terms of some more descriptive or natural language attribute if that entity is formally identified by a synthetic key, such as a number sequence. The contextual data entry feature allows users to type in either the synthetic key or a more descriptive attribute directly into a lookup field. This page explains how contextual data entry works and also provides implementation details and tips for developers who want their lookups to have this behavior.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-02 22:43:54
+ms.date: 2015-12-02 22 - 43 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13631
-ms.assetid: 2708a3f7-ef10-4b6d-a5c1-6e636d207c57
-ms.region: Global
-# ms.industry: 
+ms.assetid: 023f6e62-61da-4311-b3f0-ab35065467b6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail Modern POS architecture | Microsoft Docs
+title: Retail Modern POS architecture
 description: This wiki describes the POS topology.
 author: kfend
 manager: AnnBe
-ms.date: 2016-04-29 18:55:46
+ms.date: 2016-04-29 18 - 55 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83892
-ms.assetid: 4048b4f5-90b5-4960-a5d8-fb7119a314e5
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2bea03bf-c560-4ef1-b144-bad72a4a3ff6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

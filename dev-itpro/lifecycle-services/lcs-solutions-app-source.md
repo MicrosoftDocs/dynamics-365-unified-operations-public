@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: LCS Solutions for AppSource home page | Microsoft Docs
+title: LCS Solutions for AppSource home page
 description: Lifecycle Services (LCS) solution packages for Microsoft AppSource, are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution using industry and vertical-specific content.
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-03 22:51:15
+ms.date: 2016-10-03 22 - 51 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Lifecycle Services
+# ms.reviewer: 51
+ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 197023
-ms.assetid: a2f398aa-cd68-496b-ae51-4b9af41ce370
-ms.region: Global
-# ms.industry: 
+ms.assetid: fdc5ae51-4727-4304-bed1-f1f0f3d91a07
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omarc
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 
@@ -34,11 +36,11 @@ Lifecycle Services (LCS) solution packages for Microsoft AppSource, are partner-
 
 This topic points to resources that will help you understand the requirements for creating LCS solutions for Microsoft AppSource. The requirements for creating a LCS solution package fall into six groups.
 
--   [Code migration](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/code-migration-lcs-solutions)
--   [Database backup](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/database-backup-lcs-solutions) and [Process Data Packages (PDP)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/process-data-packages-lcs-solutions)
--   [Business process models](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/business-process-modeler-libraries-lcs-solutions)
--   [Marketing](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/marketing-content-lcs-solutions)
--   [Methodologies](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/methodologies-lcs-solutions)
--   [App validation](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/app-validation-lcs-solutions)
+-   [Code migration](code-migration-lcs-solutions.md)
+-   [Database backup](database-backup-lcs-solutions.md) and [Process Data Packages (PDP)](process-data-packages-lcs-solutions.md)
+-   [Business process models](business-process-modeler-libraries-lcs-solutions.md)
+-   [Marketing](marketing-content-lcs-solutions.md)
+-   [Methodologies](methodologies-lcs-solutions.md)
+-   [App validation](app-validation-lcs-solutions.md)
 
 

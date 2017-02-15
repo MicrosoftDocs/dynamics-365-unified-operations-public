@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create variable compensation plans | Microsoft Docs
+title: Create variable compensation plans
 description: Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This article describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 21:40:54
+ms.date: 2015-12-03 21 - 40 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan
+ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16011
-ms.assetid: 1b1bc403-c27d-4a90-8f2d-4d4ce63d3169
-ms.region: Global
-# ms.industry: 
+ms.assetid: fb86aeb1-8e18-407f-8b37-5b9ca5e1e021
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: twheeloc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -85,5 +87,5 @@ You can now enroll employees in the variable compensation plan. To enroll an em
 See also
 --------
 
-[Compensation plans](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/compensation-plans)
+[Compensation plans](compensation-plans.md)
 

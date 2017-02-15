@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Default offset accounts for vendor invoice journals and invoice approval journals | Microsoft Docs
+title: Default offset accounts for vendor invoice journals and invoice approval journals
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-08 17:49:18
+ms.date: 2016-03-08 17 - 49 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62093
-ms.assetid: c6d8fa11-f470-402e-989f-01839dd6f20e
-ms.region: global
-# ms.industry: 
+ms.assetid: 5c3a023a-ded4-4bad-89f3-e6b7b1b21ff2
+ms.search.region: global
+# ms.search.industry: 
 ms.author: abruer
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

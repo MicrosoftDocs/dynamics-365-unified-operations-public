@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure case security, processes, and categories | Microsoft Docs
+title: Configure case security, processes, and categories
 description: This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics AX.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-11 23:25:46
+ms.date: 2015-12-11 23 - 25 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CaseCategorySetup, CaseCategoryTypeSecurity
+ms.search.form: CaseCategorySetup, CaseCategoryTypeSecurity
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23581
-ms.assetid: d47abfc4-aacd-44a0-a95d-4278ee98a07d
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 0516d708-d169-41ab-af3f-1ed7619a7abe
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

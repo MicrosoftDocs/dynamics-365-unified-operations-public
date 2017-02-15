@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Expense management | Microsoft Docs
+title: Data entities -  Expense management
 description: This article provides a list of the data entities that are available for the Expense management functionality in Microsoft Dynamics 365 for Operations.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:18:49
+ms.date: 2016-06-29 14 - 18 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95713
-ms.assetid: 884d8cb1-213b-4808-9042-60b1277cc20b
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 55f9daf3-5066-4255-9096-6dfc6858bd32
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Expense management
+# Data entities -  Expense management
 
 This article provides a list of the data entities that are available for the Expense management functionality in Microsoft Dynamics 365 for Operations.
 
@@ -408,7 +410,7 @@ Expense management transactions
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Production posting | Microsoft Docs
+title: Production posting
 description: This article provides information about different types of postings in the production process.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18:31:53
+ms.date: 2016-02-24 18 - 31 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
+ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 54591
-ms.assetid: 1d582ca3-b586-4f03-9c79-afacf13f42b8
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 8b26f08a-4f7b-42a4-8a11-2bb907e2295b
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

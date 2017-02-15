@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: POS hardware peripherals | Microsoft Docs
+title: POS hardware peripherals
 description: Retail Modern point of sale (POS) and Cloud POS can utilize a wide range of POS hardware peripherals, with multiple interfaces and deployment options to achieve a retailer’s various business scenarios. 
 author: josaw1
 manager: AnnBe
-ms.date: 2016-10-21 16:55:57
+ms.date: 2016-10-21 16 - 55 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 2041
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2041
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 215234
-ms.assetid: 47a6b280-7a39-4131-ae79-174f97985247
-ms.region: global
-ms.industry: Retail
+ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: jeffbl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

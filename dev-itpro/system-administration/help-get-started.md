@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Getting started with Help | Microsoft Docs
+title: Getting started with Help
 description: This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
-author: margoc
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 02:12:46
+ms.date: 2015-12-04 02 - 12 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16381
-ms.assetid: fe5b5c67-c34d-4d12-9a64-c8a4ff49564b
-ms.region: Global
-# ms.industry: 
-ms.author: margoc
+ms.assetid: 309207aa-d5a3-41cd-ba4e-3abf198648fb
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -61,7 +63,7 @@ RSS feeds are easy to set up for wiki content. The following table lists RSS fee
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Description**                          | **Feed URL**                                                                                                                                                                                                                                                                                                      |
 | New posts                                | https://ax.help.dynamics.com/en/revisions/                                                                                                                                                                                                                                                                        |
-| Updates to a particular wiki topic       | https://ax.help.dynamics.com/en/wiki/*pagename*/revisions Example RSS feed for the Help and UI home page: <https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/ax-help-and-ui-home-pagerevisions>                                                                                                                               |
+| Updates to a particular wiki topic       | https://ax.help.dynamics.com/en/wiki/*pagename*/revisions Example RSS feed for the Help and UI home page: <getting-started-home-page.mdrevisions>                                                                                                                               |
 | New topics for a specific audience       | https://ax.help.dynamics.com/en/feed/?post\_type=incsub\_wiki& wds\_audience=*audience* Example RSS feed for Developer topics: [https://ax.help.dynamics.com/en/feed/?post\_type=incsub\_wiki& wds\_audience=developer](https://ax.help.dynamics.com/en/feed/?post_type=incsub_wiki&%20wds_audience=developer%20) |
 | New topics for a specific industry       | https://ax.help.dynamics.com/en/feed/?post\_type=incsub\_wiki&wds\_industry=*industry* Example RSS feed for Distribution topics: <https://ax.help.dynamics.com/en/feed/?post_type=incsub_wiki&wds_industry=distribution>                                                                                          |
 | New topics for a specific wiki category  | https://ax.help.dynamics.com/en/feed/?post\_type=incsub\_wiki&incsub\_wiki\_category=*capability* Example RSS feed for BI topics: <https://ax.help.dynamics.com/en/feed/?post_type=incsub_wiki&incsub_wiki_category=bi>                                                                                           |
@@ -79,11 +81,11 @@ Task guides are created by using Task Recorder. When you use Task Recorder, all 
 -   **Save task recordings to BPM** – You can save a task recording to a line of a hierarchy in a BPM library in LCS. When you save a task recording to BPM, a flowchart diagram is generated and displayed, together with the steps of the recording. **Note:** To display a task recording in the Dynamics 365 for Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library.
 -   **Save task recordings as Word documents** – By saving a task recording as a Microsoft Word document, you can easily produce printable training guides for your organization.
 
-For more information about Task Recorder, see [Task recorder in Dynamics 365 for Operations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-recorder-in-ax7).
+For more information about Task Recorder, see [Task recorder in Dynamics 365 for Operations](task-recorder.md).
 
 ### Creating customized task recordings
 
-You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-recorder).
+You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](task-recorder.md).
 
 ## Inproduct Help
 To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access wiki articles or task guides. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
@@ -136,13 +138,13 @@ See also
 
 [Dynamics 365 for Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
 
-[Task Recorder in Microsoft Dynamics 365 for Operations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-recorder-in-ax7)
+[Task Recorder in Microsoft Dynamics 365 for Operations](task-recorder.md)
 
-[Create documentation or training using Task recordings](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-recorder)
+[Create documentation or training using Task recordings](task-recorder.md)
 
-[New task guides available (February 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/new-task-guides-available-on-february-2016)
+[New task guides available (February 2016)](new-task-guides-available-february-2016.md)
 
-[New or updated task guides available (May 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/new-or-updated-task-guides-available-may-2016)
+[New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
 
-[New or updated task guides available (August 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/new-or-updated-task-guides-available-august-2016)
+[New or updated task guides available (August 2016)](new-updated-task-guides-available-august-2016.md)
 

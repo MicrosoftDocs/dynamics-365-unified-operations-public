@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: I Classes | Microsoft Docs
+title: I Classes
 description: System API classes that start with the letter I.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 14:21:48
+ms.date: 2016-02-24 14 - 21 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52171
-ms.assetid: 65fb38fb-8b7a-44c3-9461-0988409fee28
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6ec421de-826a-48b1-aa2c-aaaaca24ad70
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

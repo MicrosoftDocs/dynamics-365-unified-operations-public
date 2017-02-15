@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Procurement and sourcing in the public sector in France | Microsoft Docs
+title: Procurement and sourcing in the public sector in France
 description: This article explains how the standard features that are related to procurement and sourcing are augmented for French entities in the public sector. These features are used to help meet the requirements of the Code des Marchés Publics. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 17:55:41
+ms.date: 2015-12-07 17 - 55 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AgreementClassification, PurchAgreement, SysPolicy
+ms.search.form: AgreementClassification, PurchAgreement, SysPolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19891
-ms.assetid: f1c8e2cb-1001-4114-8f62-d804faea033f
-ms.region: France
-ms.industry: Public sector
+ms.assetid: d4262629-0e50-49c1-a433-e10fa8e27cd6
+ms.search.region: France
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

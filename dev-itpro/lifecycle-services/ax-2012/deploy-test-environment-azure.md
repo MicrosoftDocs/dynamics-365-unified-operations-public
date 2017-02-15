@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deploy a test environment on Azure (AX 2012) | Microsoft Docs
+title: Deploy a test environment on Azure (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-02 16:44:26
+ms.date: 2015-12-02 16 - 44 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: AX 2012
+ms.reviewer: annbe
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13281
-ms.assetid: c3476a78-c369-4b99-98cf-620180fc3ef8
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 3ff5d1b6-81fd-4c96-829e-e084819bf515
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -40,7 +42,7 @@ Before you complete the procedures in this article, make sure that the following
 |                |                                                                                                                                                                 |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Category**   | **Prerequisite**                                                                                                                                                |
-| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) |
+| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
 
  
 
@@ -282,7 +284,7 @@ Complete the following procedure to deploy a test environment on Azure.
 
 12. Click **Done**. The **Deploy environment** panel is redisplayed.
 13. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
 
 14. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
@@ -294,7 +296,7 @@ Now that the environment has been deployed on Azure, you must set up and configu
 
 ### Log on to the AOS virtual machine
 
-Log on to the AOS-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/manage-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) article.
+Log on to the AOS-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 
 ### Compile AX 2012 R3
 
@@ -308,9 +310,9 @@ Open the AX 2012 R3 client and complete the initialization checklists. For instr
 
 If you want sample data installed in your environment, complete the following steps.
 
-1.  Log on to the SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/manage-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) article.
+1.  Log on to the SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 2.  Go to the following location on the virtual machine: F:TestTransferTool
-3.  Install the Test Data Transfer Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/install-the-test-data-transfer-tool-beta-for-microsoft-dynamics-ax).
+3.  Install the Test Data Transfer Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
 4.  Open a command prompt and navigate to the following location: C:Program Files (x86)Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta)
 5.  Run the following command: dp.exe import F:DemoData MicrosoftDynamicsAx
 

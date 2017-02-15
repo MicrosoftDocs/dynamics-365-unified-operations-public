@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail SDK extensibility samples | Microsoft Docs
+title: Retail SDK extensibility samples
 description: The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Retail.  
 author: josaw1
 manager: AnnBe
-ms.date: 2016-06-08 20:51:21
+ms.date: 2016-06-08 20 - 51 - 21
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89803
-ms.assetid: bd8fd0c7-74c2-4f37-a945-b29494792c44
-ms.region: Global
-ms.industry: Retail
+ms.assetid: 4a40c105-cc16-4be0-8a29-7171a9b1b01d
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: mumani
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

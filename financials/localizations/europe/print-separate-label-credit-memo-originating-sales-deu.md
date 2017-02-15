@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Print a separate label for credit memos that originate from sales | Microsoft Docs
+title: Print a separate label for credit memos that originate from sales
 description: This article explains how to specify the label that appears on credit memos that originate from sales.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-01-06 20:58:38
+ms.date: 2016-01-06 20 - 58 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: OMLegalEntity
+ms.search.form: OMLegalEntity
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28871
-ms.assetid: e0972bc3-fd12-478a-995b-d82a7876bd35
-ms.region: Germany
-# ms.industry: 
+ms.assetid: 0125dd68-9e41-4157-a5b6-0b452f6f9acc
+ms.search.region: Germany
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

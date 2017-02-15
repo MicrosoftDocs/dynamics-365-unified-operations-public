@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: View and export field descriptions | Microsoft Docs
+title: View and export field descriptions
 description: This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
-author: YuyuScheller
+author: annbe
 manager: AnnBe
-ms.date: 2015-10-30 12:52:24
+ms.date: 2015-10-30 12 - 52 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FieldDescriptions
+ms.search.form: FieldDescriptions
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11534
-ms.assetid: 0f44a6f1-5225-4b15-bf43-4b783f414ee0
-ms.region: Global
-# ms.industry: 
-ms.author: yuyus
+ms.assetid: 2f25ca4b-bb77-4062-a16f-6816457b58bd
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: yuyus
 
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 
-Microsoft Dynamics 365 for Operations has descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page. Not all pages have field descriptions. We want to provide descriptions only for the more complex fields, not where the use of the field is obvious. Therefore, some pages don't have any field descriptions, some pages have a few descriptions, and some of the more complex pages, such as many of the parameters pages, have many descriptions. If you have access to the Dynamics 365 for Operations development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
+Microsoft Dynamics 365 for Operations has descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page. Not all pages have field descriptions. We want to provide descriptions only for the more complex fields, not where the use of the field is obvious. Therefore, some pages don't have any field descriptions, some pages have a few descriptions, and some of the more complex pages, such as many of the parameters pages, have many descriptions. If you have access to the Dynamics 365 for Operations development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](customize-field-help.md).
 
 ## See field descriptions in the user interface
 You can view field descriptions by hovering over a field. If no description is available, you see the field name when you hover over the field. (Note: In version 7.0.0, field descriptions can be viewed only on the **Field descriptions** page.) The following illustration shows the field description that appears when you hover over the **Lock items during count** field. [![Example of a field description](./media/field-description.png)](./media/field-description.png)
@@ -90,5 +92,5 @@ For information about the various way to find pages, see the "Searching for page
 See also
 --------
 
-[Customize field help](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+[Customize field help](customize-field-help.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build and consume data entities | Microsoft Docs
+title: Build and consume data entities
 description: This tutorial shows how to build an entity in Fleet Management in Microsoft Visual Studio, and also how to consume some out-of-band (OOB) entities in an integration scenario. You will see how Microsoft Dynamics AX simplifies the development of data entities in the Visual Studio development environment. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-04-04 20:15:06
+ms.date: 2016-04-04 20 - 15 - 06
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77523
-ms.assetid: 2c119353-b662-4b6f-af81-ea75d8614d8b
-ms.region: Global
-# ms.industry: 
+ms.assetid: b8fafb30-9d37-4026-b999-31b3940eac6f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -329,5 +331,5 @@ This completes the walkthrough, where you've seen an external client interacting
 See also
 --------
 
-[Developing an entity and using it for data migration](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/developing-an-entity-and-using-it-for-data-migration)
+[Developing an entity and using it for data migration](develop-entity-for-data-migration.md)
 

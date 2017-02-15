@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up company-specific HR parameters | Microsoft Docs
+title: Set up company-specific HR parameters
 description: The settings of some Human resources (HR) parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific HR parameters.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-02-24 14:06:13
+ms.date: 2016-02-24 14 - 06 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HRMParameters
+ms.search.form: HRMParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 31
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 31
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51941
-ms.assetid: 7249c799-a169-4bd2-af1b-55a666b027e6
-ms.region: Global
-# ms.industry: 
+ms.assetid: e58ca1af-fa79-47d5-932d-9ad369d308e8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shielas
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -46,5 +48,5 @@ Each tab contains information that pertains to a single company. The settings on
 See also
 --------
 
-[Set up HR parameters across legal entities](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/set-up-hr-parameters-across-legal-entities)
+[Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
 

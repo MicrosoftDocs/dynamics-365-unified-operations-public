@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Lifecycle Services for Dynamics 365 for Operations partners | Microsoft Docs
+title: Lifecycle Services for Dynamics 365 for Operations partners
 description: This article explains how partners can get started with Microsoft Dynamics Lifecycle Services (LCS). 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-05-05 20:29:07
+ms.date: 2016-05-05 20 - 29 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 84681
-ms.assetid: 54ed25da-1f6c-4c00-9e46-a3d7cc71f2d0
-ms.region: Global
-# ms.industry: 
-ms.author: manado
+ms.assetid: 2a88c8b9-a78a-4464-af8c-ec9a19d6aed2
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: manado
 
 This article explains how partners can get started with Microsoft Dynamics Lifecycle Services (LCS). 
 
-As a Microsoft Dynamics 365 for Operations partner, you can access the current version  by following the steps in [Sign up for a Microsoft Dynamics 365 for Operations subscription](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/sign-up-for-a-microsoft-dynamics-rainier-preview-subscription).
+As a Microsoft Dynamics 365 for Operations partner, you can access the current version  by following the steps in [Sign up for a Microsoft Dynamics 365 for Operations subscription](sign-up-preview-subscription.md).
 
 ### Projects for partners in LCS
 
@@ -51,5 +53,5 @@ Create a Microsoft Dynamics AX 2012 project workspace. You can use the project t
 
 ### Projects for customers in LCS
 
-For every customer who signs up for LCS, an Implementation project workspace is automatically created during the sign-up process. As a partner, you can't create an Implementation project. For more information about the Implementation project workspace, see [How Lifecycle Services for Microsoft Dynamics 365 for Operations works (LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/how-lifecycle-services-for-microsoft-dynamics-ax-works-lcs). Services within project workspaces behave in the same manner. However, an important difference between an Implementation project and other project types is the ability to configure the current version of Dynamics 365 for Operations, which is managed by Microsoft.
+For every customer who signs up for LCS, an Implementation project workspace is automatically created during the sign-up process. As a partner, you can't create an Implementation project. For more information about the Implementation project workspace, see [How Lifecycle Services for Microsoft Dynamics 365 for Operations works (LCS)](lcs-works-lcs.md). Services within project workspaces behave in the same manner. However, an important difference between an Implementation project and other project types is the ability to configure the current version of Dynamics 365 for Operations, which is managed by Microsoft.
 

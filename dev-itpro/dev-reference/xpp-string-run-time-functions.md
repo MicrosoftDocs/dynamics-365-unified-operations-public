@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ string run-time functions | Microsoft Docs
+title: X++ string run-time functions
 description: This wiki describes the string run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 22:14:12
+ms.date: 2016-02-04 22 - 14 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31401
-ms.assetid: a23c2f33-acaf-4c44-a1b0-3181439e7f80
-ms.region: Global
-# ms.industry: 
+ms.assetid: ec45e08e-6c90-4991-9835-fe77f94f2bba
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

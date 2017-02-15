@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Request for quotations (RFQs) | Microsoft Docs
+title: Request for quotations (RFQs)
 description: This article provides an overview of requests for quotation (RFQs), which organizations issue when they must purchase items or services, and want to receive competitive offers from several vendors. In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify. You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08:08:48
+ms.date: 2015-09-10 08 - 08 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
+ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2154
-ms.assetid: ac3cc55a-dcae-4416-9fa7-deca104d736d
-ms.region: Global
-# ms.industry: 
+ms.assetid: 025689a9-2f9c-4c49-b02d-a1ecc2e5887f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mkirknel
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

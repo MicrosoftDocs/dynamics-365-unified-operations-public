@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X Classes | Microsoft Docs
+title: X Classes
 description: System API classes that start with the letter X.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-26 01:37:51
+ms.date: 2016-02-26 01 - 37 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55811
-ms.assetid: 28c5641b-b0f7-4735-82f2-99289320256c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 48330b32-ce8f-4629-aec3-5f0bff639ee4
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Personalize the user experience | Microsoft Docs
+title: Personalize the user experience
 description: This article explains how you can personalize Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 19:56:24
+ms.date: 2016-03-08 19 - 56 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SysUserSetup
+ms.search.form: SysUserSetup
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62363
-ms.assetid: 9fd936cf-8293-4e39-8132-3ee3fcfe3f17
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7d76965c-0af2-454a-b441-6fe96035f30c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tlefor
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

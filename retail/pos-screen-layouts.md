@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure screen layouts for POS | Microsoft Docs
+title: Configure screen layouts for POS
 description: This topic provides information about screen layouts for the Microsoft Dynamics 365 for Operations - Retail point of sale (POS) experiences.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-06-09 20:55:06
+ms.date: 2016-06-09 20 - 55 - 06
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 41
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 90573
-ms.assetid: 5415b07e-3662-4743-a79a-77e3dd538e45
-ms.region: global
-ms.industry: Retail
+ms.assetid: efc7ea89-141d-4d89-a245-363f81dd25da
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: jeffbl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -55,5 +57,5 @@ Each layout size within a screen layout must be configured using the Screen layo
 See also
 --------
 
-[Install the Retail POS Layout designer](https://docs.microsoft.com/en-us/dynamics365/operations/retail/install-the-pos-layout-designer)
+[Install the Retail POS Layout designer](install-pos-layout-designer.md)
 

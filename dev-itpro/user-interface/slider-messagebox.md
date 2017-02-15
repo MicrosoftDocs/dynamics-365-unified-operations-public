@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Slider and MessageBox | Microsoft Docs
-description: In Microsoft Dynamics 365 for Operations, there are two new dialogs that replace the existing dialog box, the Slider and the MessageBox.
-
+title: Slider and MessageBox
+description: In Microsoft Dynamics AX, there are two new concepts that replace the existing concept of a dialog box, the slider and the MessageBox. This article discusses the specific goals for each concept. 
 author: sericks007
 manager: AnnBe
-ms.date: 2016-03-10 01:40:02
+ms.date: 2016-03-10 01 - 40 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,30 +13,31 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64253
-ms.assetid: d450429e-0035-4d2d-8703-c9a7bcd18ddc
-ms.region: Global
-# ms.industry: 
+ms.assetid: 65b4f4ae-ad40-4cca-892f-38fd64c3b2ec
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aorth
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Slider and MessageBox
 
-In Microsoft Dynamics 365 for Operations, there are two new dialogs that replace the existing dialog box, the Slider and the MessageBox.
-
+In Microsoft Dynamics AX, there are two new concepts that replace the existing concept of a dialog box, the slider and the MessageBox. This article discusses the specific goals for each concept. 
 
 Dialogs
 -------
 
-In Microsoft Dynamics 365 for Operations, there are two new dialogs that replace the existing dialog box, the Slider and the MessageBox:
+In Microsoft Dynamics AX, there are two new concepts that replace the existing concept of a dialog box:
 
 -   Slider
 -   MessageBox
@@ -53,5 +53,5 @@ The slider, or slider dialog, is a dialog box that "slides" in on top of the ac
 A slider contains a modeled form and is used to gather information from the user. Therefore, a slider should be used in most situations where a dialog box has been used in the past. For example, a slider is typically used when the user creates a new record, as in the preceding screen shot. However, a slider should not be used for simple notifications or messages to the user. For these situations, a MessageBox should be used, as described in the next section. To model a slider, you create a form, and then set the **Style** property to **Dialog** on the **Form.Design** node. You then model the form elements that you require (for example, fields and buttons). The caption is defined by **Form.Design.Caption**. To simplify the process for creating sliders, we have provided the **SysBPStyle\_Dialog** form as a template for modeling slider dialogs. To use this template, copy it into a new form, and then extend it as you require.
 
 ## MessageBox
-A MessageBox is a type of dialog that is rendered as a "lightbox" on top of an existing page. A MessageBox appears as a full-width modal pop-up. The following screen shot shows an example of a MessageBox. [![2\_Dialog](./media/2_dialog.png)](./media/2_dialog.png) A MessageBox is the correct mechanism to use when you must interrupt the user to notify him or her about a critical situation. For example, a MessageBox is used to display a Message center error message to the user. Because a MessageBox is modal, the user can't interact with the page beneath the MessageBox until that MessageBox has been dealt with or dismissed. In the preceding screen shot, notice that the page is obscured by the MessageBox. Additionally, the areas above and below the MessageBox are shaded to help the user understand that the page isn't currently available for interaction. Be aware that, unlike a slider, the user can't dismiss a MessageBox by clicking outside it, in the shaded areas. A MessageBox can be triggered by using either the Box application programming interface (API) or any of the methods that are described earlier for triggering the display of an error. For more information, see the [Message API: Message center, message bar, messsage details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/new-messaging-api-message-center-message-bar-message-details).
+A MessageBox is a type of dialog that is rendered as a "lightbox" on top of an existing page. A MessageBox appears as a full-width modal pop-up. The following screen shot shows an example of a MessageBox. [![2\_Dialog](./media/2_dialog.png)](./media/2_dialog.png) A MessageBox is the correct mechanism to use when you must interrupt the user to notify him or her about a critical situation. For example, a MessageBox is used to display a Message center error message to the user. Because a MessageBox is modal, the user can't interact with the page beneath the MessageBox until that MessageBox has been dealt with or dismissed. In the preceding screen shot, notice that the page is obscured by the MessageBox. Additionally, the areas above and below the MessageBox are shaded to help the user understand that the page isn't currently available for interaction. Be aware that, unlike a slider, the user can't dismiss a MessageBox by clicking outside it, in the shaded areas. A MessageBox can be triggered by using either the Box application programming interface (API) or any of the methods that are described earlier for triggering the display of an error. For more information, see the [Message API: Message center, message bar, messsage details](messaging-api-center-bar-details.md).
 

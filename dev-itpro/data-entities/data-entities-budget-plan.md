@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Budget planning | Microsoft Docs
+title: Data entities -  Budget planning
 description: This article provides a list of the data entities that are available for the Budget planning functionality in Microsoft Dynamics AX.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:20:04
+ms.date: 2016-06-29 14 - 20 - 04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96103
-ms.assetid: 15db65bd-69cc-4fe5-aca3-b3e35a3087e1
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: db4026d8-24c3-4609-97e8-25982c114766
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Budget planning
+# Data entities -  Budget planning
 
 This article provides a list of the data entities that are available for the Budget planning functionality in Microsoft Dynamics AX.
 
@@ -40,7 +42,7 @@ You must complete the following steps before you can import the Budget planning 
 1.  Create balances for any financial dimension set that is used in the layouts. If you're importing from demo data, this financial dimension set is the main account. Click **General ledger** &gt; **Chart of accounts** &gt; **Dimensions** &gt; ****Financial dimension sets****, select the dimension set, and then, and on the Action Pane, click ****Create balances****.
 2.  Verify that the organizational hierarchy that is used in the budget plan process has been built and published. If you imported from demo data, the organizational hierarchy is **Budgeting – Departments**. Click **Organization administration** &gt; **Organizations** &gt; **Organization hierarchies**, select the hierarchy that is used in the budget plan process, and then, on the Action Pane, click **View**. Click **Edit**, and then insert the appropriate **Finance** hierarchy that has the following departments under it: **Sales & Marketing**, **Operation**, **IT Department**, **Human Resources**, and **Legal and Client Services**. After the hierarchy is completed, on the Action Pane, click **Publish**, enter an activation date, and then click **OK**.
 
-Workflow data entities and Budgeting data entities should be imported before Budget planning data entities. For more information, see [Data entities: Workflow](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-workflow) and [Data entities: Budgeting](https://docs.microsoft.com/en-us/dynamics365/operations/financials/budgeting/data-entities-budgeting).
+Workflow data entities and Budgeting data entities should be imported before Budget planning data entities. For more information, see [Data entities: Workflow](data-entities-workflow.md) and [Data entities: Budgeting](data-entities-budgeting.md).
 
 ## Available data entities
 Suggested sequence
@@ -304,7 +306,7 @@ Various costs that are associated with a position, such as the base pay, bonus, 
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

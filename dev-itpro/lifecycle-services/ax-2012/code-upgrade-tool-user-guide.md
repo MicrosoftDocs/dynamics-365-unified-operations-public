@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Code Upgrade Tool User Guide (AX 2012) | Microsoft Docs
+title: Code Upgrade Tool User Guide (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-03 19:25:41
+ms.date: 2015-12-03 19 - 25 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15101
-ms.assetid: 5b609dbd-bc32-41e2-a9f5-5ea8ce932659
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: b530b333-dc48-40c1-8000-ca4a0cdd78cc
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: kfend
 
 
 
-The Code Upgrade Service has been deprecated. Use the Upgrade analysis tool. For more information, see [Upgrade analysis (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lifecycle-services-lcs).
+The Code Upgrade Service has been deprecated. Use the Upgrade analysis tool. For more information, see [Upgrade analysis (Lifecycle Services, LCS)](upgrade-analysis-lcs.md).
 [Go to Lifecycle Services](https://lcs.dynamics.com).
 
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ date run-time functions | Microsoft Docs
-description: This topic describes the date run-time functions.
+title: X++ date run-time functions
+description: This wiki describes the date run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 22:12:59
+ms.date: 2016-02-04 22 - 12 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31341
-ms.assetid: c2e2ada3-d1cf-45ee-a26f-d35af5019390
-ms.region: Global
-# ms.industry: 
+ms.assetid: e4712c13-eceb-4f22-b86f-f9052f8ba0d2
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # X++ date run-time functions
 
-This topic describes the date run-time functions.
+This wiki describes the date run-time functions.
 
 dayName
 -------
@@ -192,7 +194,7 @@ A **date** value that is based on the values of the *day*, *month*, and *year* p
 
 ### Remarks
 
-If the date isn't valid, this method returns a **0** (zero, 1/1/1900) date. Beginning with Dynamics 365 for Operations (February 2016), shortcut values for the year, e.g. 75 for 1975, are not supported. If you provide a shortcut value for the year, a date of 1/1/1900 is returned.
+If the date isn't valid, this method returns a **0** (zero, 1/1/1900) date. Beginning with Dynamics AX (February 2016), shortcut values for the year, e.g. 75 for 1975, are not supported. If you provide a shortcut value for the year, a date of 1/1/1900 is returned.
 
 ### Example
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Simple List and Details form pattern | Microsoft Docs
+title: Simple List and Details form pattern
 description: This article provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-04 00:07:10
+ms.date: 2015-12-04 00 - 07 - 10
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16242
-ms.assetid: 7beb0089-a411-4801-81a7-87f9e82737f9
-ms.region: Global
-# ms.industry: 
+ms.assetid: deb74f3a-59ba-4b45-aedf-4d9db70674a9
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -97,15 +99,15 @@ DetailsTab (Tab)
 
 ### Commonly used subpatterns
 
--   [Fields and Field Groups](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fields-and-field-groups-subpattern)
--   [Toolbar and List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern)
--   [Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-fields-subpattern)
--   [Nested Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/nested-simple-list-and-details-subpattern)
+-   [Fields and Field Groups](fields-field-groups-subpattern.md)
+-   [Toolbar and List](toolbar-list-subpattern.md)
+-   [Toolbar and Fields](toolbar-fields-subpattern.md)
+-   [Nested Simple List and Details](nested-simple-list-details-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 **Simple list & detail guidelines:**
 
@@ -145,7 +147,7 @@ Form: **FiscalCalendars** [![Simple List and Details – Tabular Grid example](.
 This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 -   **When do I use icons on actions in the toolbars?**
-    -   See the Button Image Guidelines in the [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+    -   See the Button Image Guidelines in the [General Form Guidelines](general-form-guidelines.md)document.
 
 ### Open issues
 

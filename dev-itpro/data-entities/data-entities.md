@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities | Microsoft Docs
-description: This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
+title: Data entities
+description: This article defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 20:23:53
+ms.date: 2015-12-11 20 - 23 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,29 +13,31 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: RobinARH
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 22051
-ms.assetid: 382bb8a1-aeca-4b1a-b1ad-fbef95194c00
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2cfa4d9b-8ec0-4698-b04b-676e4fc7d665
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Data entities
 
-This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
+This article defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 
 Overview
 --------
 
-A *data entity* is an abstraction from the physical implementation of database tables. For example, in normalized tables, a lot of the data for each customer might be stored in a customer table, and then the rest might be spread across a small set of related tables. In this case, the data entity for the customer concept appears as one de-normalized view, in which each row contains all the data from the customer table and its related tables. A data entity encapsulates a business concept into a format that makes development and integration easier. The abstracted nature of a data entity can simplify application development and customization. Later, the abstraction also insulates application code from the inevitable churn of the physical tables between versions. **To summarize:** Data entity provides conceptual **abstraction** and **encapsulation** (de-normalized view) of underlying table schemas to represent key data concepts and functionalities.
+A *data entity* is an abstraction from the physical implementation of database tables. For example, in normalized tables, a lot of the data for each customer might be stored in a customer table, and then the rest might be spread across a small set of related tables. In this case, the data entity for the customer concept appears as one de-normalized view, in which each row contains all the data from the customer table and its related tables. A data entity encapsulates a business concept into a format that makes development and integration easier. The abstracted nature of a data entity can simplify application development and customization. Later, the abstraction also insulates application code from the inevitable churn of the physical tables from version to version of Microsoft Dynamics AX. **To summarize:** Data entity provides conceptual **abstraction** and **encapsulation** (de-normalized view) of underlying table schemas to represent key data concepts and functionalities.
 
 ### Capabilities
 
@@ -79,7 +81,7 @@ Data entities also support asynchronous integration through a data management pi
 
 #### Application Lifecycle Management
 
-Besides integration and business intelligence (BI) scenarios, data entities also initially support two critical ALM scenarios. The following two progressive levels of an ALM scenario show the scope of coverage by data entities. [![Over4](./media/over4.png)](./media/over4.png)
+Besides integration and business intelligence (BI) scenarios, data entities also initially support two critical ALM scenarios. The following two progressive levels of an ALM scenario show the scope of coverage by data entities in Microsoft Dynamics AX. [![Over4](./media/over4.png)](./media/over4.png)
 
 ##### Configuration data provisioning
 
@@ -93,7 +95,7 @@ A system implementer will use both a guided data collection wizard and bulk data
 
 ##### Data migration from legacy or external systems
 
-After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into Microsoft Dynamics 365 for Operations, especially the following assets:
+After the initial deployment is up and running, the system implementer will **migrate existing data assets of the customer** into Microsoft Dynamics AX, especially the following assets:
 
 -   Master data (for example, customers and vendors)
 -   Subsets of documents (for example, sales orders)
@@ -136,7 +138,7 @@ There are multiple ways to create an entity. For example, you can use a wizard, 
 
 #### Building an entity by using a wizard
 
-The simplest way to build an entity is to use a wizard. This wizard lets you select a root data source and expand to other related data sources, and then select fields for the entity. To start the wizard, add a new item of type **Data entity** to your project. For step-by-step instructions for using the wizard to build an entity, see [DM101 - Building and consuming Data Entities](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/building-and-consuming-data-entities). The following table provides information about the properties that you set for an entity in the wizard.
+The simplest way to build an entity is to use a wizard. This wizard lets you select a root data source and expand to other related data sources, and then select fields for the entity. To start the wizard, add a new item of type **Data entity** to your project. For step-by-step instructions for using the wizard to build an entity, see [DM101 - Building and consuming Data Entities](build-consuming-data-entities.md). The following table provides information about the properties that you set for an entity in the wizard.
 
 | Property                            | Description                                                                                                                                                                                 |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

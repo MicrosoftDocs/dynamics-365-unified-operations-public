@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up work schedules and leave | Microsoft Docs
+title: Set up work schedules and leave
 description: This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 16:08:51
+ms.date: 2016-10-31 16 - 08 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmLeaveType, WorkTimeTable
+ms.search.form: HcmLeaveType, WorkTimeTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221494
-ms.assetid: ec553690-1ae2-464b-8f64-e9e3aa787a49
-ms.region: USA
-# ms.industry: 
+ms.assetid: e870d7b8-e420-4d0e-97ea-363deaa08e7b
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -44,13 +46,13 @@ Create a working time template for each schedule that hourly workers in your org
 Repeat this procedure for the other days of the week. Or, to copy the same schedule to a different day, click **Copy day**, and select the weekdays to copy from and to. Leave the **Copy property** check box cleared. Repeat these steps to create additional working time templates. When you've finished, close the page.
 
 ## Create working time calendars
-A working time calendar defines the typical schedule for a position. You can use the calendar to generate default earnings statement lines for workers who are assigned to the position. After you create working time calendars, you can assign them to positions. For more information, see [Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks). **Note:** Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Benefit accrual plan tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-accrual-plan-tasks). **Tips:**
+A working time calendar defines the typical schedule for a position. You can use the calendar to generate default earnings statement lines for workers who are assigned to the position. After you create working time calendars, you can assign them to positions. For more information, see [Worker and position payroll tasks](worker-position-payroll-tasks.md). **Note:** Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md). **Tips:**
 
 -   To set up a 24-hour calendar, enter **12:00 am** in the **From** field and **24** in the **To** field.
 -   To enter a period that users won't be paid for, such as their lunch hour, enter **0** (zero) in the **Efficiency** field for the line. No earnings will be generated for that line.
 
 ## Create leave types
-You use leave types to set up the types of leave that workers can take, such as medical, educational, or parental leave. Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Benefit accrual plan tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-accrual-plan-tasks). Before you create leave types that can be used to generate earnings statement lines for paid leave, you must create an earning code for each type of paid leave. When a worker goes on leave, the leave type, together with the start date and end date for the leave, is recorded on the **Leave** page. To create a leave type, on the **Leave types** page, click **New**, and then enter a name and description for the leave type. Enter the earning code that is used when earnings lines for the leave are generated, if earning codes are required.
+You use leave types to set up the types of leave that workers can take, such as medical, educational, or parental leave. Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md). Before you create leave types that can be used to generate earnings statement lines for paid leave, you must create an earning code for each type of paid leave. When a worker goes on leave, the leave type, together with the start date and end date for the leave, is recorded on the **Leave** page. To create a leave type, on the **Leave types** page, click **New**, and then enter a name and description for the leave type. Enter the earning code that is used when earnings lines for the leave are generated, if earning codes are required.
 
 -   For paid leave, earning codes are required. The earnings lines that are generated for the position during the leave will show a daily breakout.
 -   For unpaid leave, if you don’t enter any earning codes, no earnings lines will be generated during the leave period, and the salary amount will be adjusted. However, you can manually modify the earnings statement to add earnings statement lines. If you want unpaid leave to generate earning lines, you can create a zero-rate earning code and assign it to the leave type. Hours for time on leave will then be tracked in Payroll, so that you can generate pay statements. These statements will have no pay, but you can force deduction arrears and track time on leave in Payroll. In addition, Payroll can update Family and Medical Leave Act (FMLA) hours that are taken.
@@ -58,7 +60,7 @@ You use leave types to set up the types of leave that workers can take, such as 
 Repeat these steps to create additional leave types.
 
 ## Put a worker on leave
-Schedules are used together with leave types when a worker is on paid leave. To incorporate the leave settings when you generate earnings statements for a worker who is on paid leave, you must assign a schedule to the worker’s position. This step is required even if you generate earnings for that position by salary, not from a schedule. A schedule is optional for a salaried worker who is on unpaid leave. Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Benefit accrual plan tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-accrual-plan-tasks). To put a worker on leave, enter the following information on the **Workers** page.
+Schedules are used together with leave types when a worker is on paid leave. To incorporate the leave settings when you generate earnings statements for a worker who is on paid leave, you must assign a schedule to the worker’s position. This step is required even if you generate earnings for that position by salary, not from a schedule. A schedule is optional for a salaried worker who is on unpaid leave. Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md). To put a worker on leave, enter the following information on the **Workers** page.
 
 | Field      | Description                        |
 |------------|------------------------------------|
@@ -69,5 +71,5 @@ Schedules are used together with leave types when a worker is on paid leave. To 
 Repeat this step for any additional salaried positions that the worker holds.
 
 ## Next step
-The next step is to set up benefit accrual plans. For more information, see [Benefit accrual plan tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-accrual-plan-tasks).
+The next step is to set up benefit accrual plans. For more information, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md).
 

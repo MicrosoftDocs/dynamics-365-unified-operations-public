@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail Channel Performance content pack for Power BI | Microsoft Docs
+title: Retail Channel Performance content pack for Power BI
 description: This article provides information about the Microsoft Dynamics AX Retail Channel Performance content pack for Power BI. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-07-29 15:36:26
+ms.date: 2016-07-29 15 - 36 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 105483
-ms.assetid: e05f76e6-7aa8-4103-a0eb-04da3acaa661
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4930abd1-9ac4-4c3f-9792-ba1531a483ac
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: asharchw
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -77,7 +79,7 @@ The data model that is included in the content pack for the Dynamics AX data en
 See also
 --------
 
-[Power BI integration](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/powerbi-integration-in-ax7)
+[Power BI integration](power-bi-integration.md)
 
-[Configuring Power BI integration for workspaces](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-powerbi-integration)
+[Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
 

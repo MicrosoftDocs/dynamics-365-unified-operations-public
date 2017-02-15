@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Date effectivity | Microsoft Docs
-description: This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
+title: Date effectivity
+description: This article provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 19:32:05
+ms.date: 2015-12-12 19 - 32 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: RobinARH
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24861
-ms.assetid: 0a58cd44-3cc4-4cf6-9216-eea821e1ed48
-ms.region: Global
-# ms.industry: 
+ms.assetid: 360390af-820a-4247-b84f-47e93b6ced0c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Date effectivity
 
-This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
+This article provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
 
 There are different design patterns for date-effective features that involve data entities. The patterns are classified into two main categories:
 
@@ -135,9 +137,9 @@ This section describes your options for configuring the behavior of date-effecti
 ## Creating a dateeffective entity
 This section shows how to create a date-effective entity.
 
-#### Create a new project
+#### Create a new Microsoft Dynamics 'AX 7' project
 
-1.  Click **File** &gt; **New** &gt; **Project** to create a new Microsoft Dynamics 365 for Operations project.
+1.  Click **File** &gt; **New** &gt; **Project** to create a new Microsoft Dynamics 'AX 7' project.
 2.  In Solution Explorer, right-click your project, and then click **Properties**. The **Property Pages** dialog box for your project opens.
 3.  Change the value of the **Synchronize database on build** property to **True**, and then click **OK**. You must set this property only one time per project. [![Synchronize database on build = True](./media/date3.png)](./media/date3.png)
 
@@ -145,7 +147,7 @@ This section shows how to create a date-effective entity.
 
 Create a new entity that is named **FMVehicleRateEntity**, and add it to the project.
 
-1.  In the left pane, select **Microsoft Dynamics 365 Artifacts**, and then click **Data Entity** in the left column of the main pane.
+1.  In the left pane, select **Microsoft Dynamics 'AX 7' Artifacts**, and then click **Data Entity** in the left column of the main pane.
 2.  Click **Add**. The **Data Entity View** wizard starts.
 3.  Specify the property values for the data entity that you are creating, as shown in the following screen shot. The most important field is **Primary data source**, where you select **FMVehicleRate**. [![Primary data source = FMVehicleRate](./media/date5.png)](./media/date5.png) Click **Next**.
 4.  Add fields to the entity from the primary data source, **FMVehicleRate**.

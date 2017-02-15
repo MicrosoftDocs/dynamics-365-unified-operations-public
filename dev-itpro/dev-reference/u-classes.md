@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: U Classes | Microsoft Docs
+title: U Classes
 description: System API classes that start with the letter U.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-23 23:49:03
+ms.date: 2016-02-23 23 - 49 - 03
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51691
-ms.assetid: 2cbaa8b1-ee72-4838-9ed0-2cd244af8fc1
-ms.region: Global
-# ms.industry: 
+ms.assetid: e32a7b01-7f41-4835-9c4c-1f3ebee7a4d5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

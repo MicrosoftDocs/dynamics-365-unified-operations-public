@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up benefit accrual plans | Microsoft Docs
+title: Set up benefit accrual plans
 description: This topic describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 16:08:44
+ms.date: 2016-10-31 16 - 08 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PayrollAccrual
+ms.search.form: PayrollAccrual
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 31
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 31
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221474
-ms.assetid: 94d93787-cce2-4fc3-98ed-e79f48077b58
-ms.region: USA
-# ms.industry: 
+ms.assetid: 7739d90b-07e3-456e-beee-736c0bc2de7b
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 This topic describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
 
-The following illustration shows the basic steps for setting up benefit accrual plans. The numbered steps in the illustration correspond to sections of this topic. [![Steps for setting up benefit accrual plans](./media/acc.gif)](./media/acc.gif) For more information about benefit accrual plans, see [Payroll data updates FAQ](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/payroll-data-updates).
+The following illustration shows the basic steps for setting up benefit accrual plans. The numbered steps in the illustration correspond to sections of this topic. [![Steps for setting up benefit accrual plans](./media/acc.gif)](./media/acc.gif) For more information about benefit accrual plans, see [Payroll data updates FAQ](payroll-data-updates.md).
 
 ## Gather the required information
 A benefit accrual plan includes a set of rules that determine how hours in the plan accrue and are used. The plan also includes a list of earning codes that are matched against the earning codes on earnings statement lines. Therefore, the plan balance can be reduced when a specific earning code is used. The rules for the plan are based on the number of months that a worker has been employed with the organization. The months of employment are based on the employment start date or the seniority date. You define rules to control the rate that benefits accrue at, and to control the maximum accrual limit, minimum balance, and carry-forward limit.
@@ -152,5 +154,5 @@ The following information can be entered on the **Plan rules** FastTab. Each lin
 The process for enrolling workers in benefit accrual plans differs from the process for enrolling them in other benefits. Mass enrollment isn’t available for benefit accrual plans, and eligibility processing isn't performed. Make sure the **Service date basis** field is correct. If the service date basis is set to **Seniority date**, make sure that a seniority date is assigned to the worker. **Note:** You can add and delete enrollments only for benefit accrual plans for the legal entity that you're signed in to.
 
 ## Next step
-The next step is to set up payroll taxes. For more information, see [Tax information tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/tax-information-tasks).
+The next step is to set up payroll taxes. For more information, see [Tax information tasks](tax-information-tasks.md).
 

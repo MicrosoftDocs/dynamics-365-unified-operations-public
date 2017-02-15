@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Posting definitions in the public sector | Microsoft Docs
+title: Posting definitions in the public sector
 description: This article provides examples of public sector posting definitions that you can use to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-13 05:20:30
+ms.date: 2015-12-13 05 - 20 - 30
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BudgetDetailsInquiry, CustGroup, JournalizingDefinition, JournalizingDefinitionTrans, LedgerFund, LedgerParameters, LedgerTransferOpening, MainAccount
+ms.search.form: BudgetDetailsInquiry, CustGroup, JournalizingDefinition, JournalizingDefinitionTrans, LedgerFund, LedgerParameters, LedgerTransferOpening, MainAccount
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27271
-ms.assetid: 46b4cdfa-bb5b-43cc-a42d-651af4f10ff7
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: c92f6c16-6301-4a46-bcdb-e8f57205e54d
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -574,11 +576,11 @@ See also
 
 [Accounts payable](https://ax.help.dynamics.com/en/wiki/Accounts-payable/)
 
-[Accounts payable in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/accounts-payable-in-the-public-sector)
+[Accounts payable in the public sector](accounts-payable-public-sector.md)
 
-[Accounts receivable in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/accounts-receivable-in-the-public-sector)
+[Accounts receivable in the public sector](accounts-receivable-public-sector.md)
 
-[Budgeting in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/budgeting-in-the-public-sector)
+[Budgeting in the public sector](budgeting-public-sector.md)
 
-[General ledger in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/general-ledger-in-the-public-sector)
+[General ledger in the public sector](general-ledger-public-sector.md)
 

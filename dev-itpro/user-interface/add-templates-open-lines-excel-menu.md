@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add templates to the Open lines in Excel menu | Microsoft Docs
-description: This topic describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.
+title: Add templates to the Open lines in Excel menu
+description: This article describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-04-04 19:35:27
+ms.date: 2016-04-04 19 - 35 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 77432
-ms.assetid: 697b8e04-8fe5-4e30-93a6-b1e35615725e
-ms.region: Global
-# ms.industry: 
+ms.assetid: bf98b8d6-e6bd-4906-be36-709a928d03ef
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Add templates to the Open lines in Excel menu
 
-This topic describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.
+This article describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.
 
 Some of the most frequently used templates are the journal templates. Some of these journal templates have been promoted so that they appear on the **Open lines in Excel** menu by default. However, when you add a new template to the system, it's available on the **Open in Office** menu by default. To promote the template so that it's available on the **Open lines in Excel** menu, follow these steps.
 
@@ -176,11 +178,11 @@ Some of the most frequently used templates are the journal templates. Some of t
         }
 
 4.  Build the project/model that has the new resources. You should have one new resource and one new class. [![Built project/model](./media/22.png)](./media/22.png)
-5.  In the client, go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** &gt; **Reload system templates**. You will see the new template in the list, and if you open the journal page that you added the template to, you will also see that template on the **Open lines in Excel** menu. [![New template on the Open lines in Excel menu](./media/31.png)](./media/31.png)
+5.  In Microsoft Dynamics AX, go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** &gt; **Reload system templates**. You will see the new template in the list, and if you open the journal page that you added the template to, you will also see that template on the **Open lines in Excel** menu. [![New template on the Open lines in Excel menu](./media/31.png)](./media/31.png)
 
 
 See also
 --------
 
-[Create Open in Excel experiences](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/off101-office-integration-enable-users-to-edit-data-in-excel)
+[Create Open in Excel experiences](office-integration-edit-excel.md)
 

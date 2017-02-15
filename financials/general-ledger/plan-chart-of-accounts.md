@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Plan your chart of accounts | Microsoft Docs
+title: Plan your chart of accounts
 description: This article provides information that will help you plan the chart of accounts for your organization.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-02 23:04:17
+ms.date: 2015-12-02 23 - 04 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: DimensionConfigureAccountStructure, LedgerChartOfAccounts
+ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14051
-ms.assetid: 7d1a8fdd-d05a-477d-9b78-0db856d0b2d2
-ms.region: Global
-# ms.industry: 
+ms.assetid: dce8de1d-86af-484f-94ff-b596979a16f0
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -43,5 +45,5 @@ Create the chart of accounts on the **Chart of accounts** page. Main accounts ca
 See also
 --------
 
-[Financial dimensions](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/financial-dimensions)
+[Financial dimensions](financial-dimensions.md)
 

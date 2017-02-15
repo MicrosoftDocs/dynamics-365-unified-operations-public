@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extend Commerce Data Exchange - Real-time Service | Microsoft Docs
-description: This article explains how you can extend Commerce Data Exchange: Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
+title: Extend Commerce Data Exchange -  Real-time Service
+description: This article explains how you can extend Commerce Data Exchange -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-03-17 21:39:38
+ms.date: 2016-03-17 21 - 39 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68673
-ms.assetid: 753d7cc4-7b7b-41b7-8117-dd5c62f1cfc9
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0251c044-edad-4132-a93b-7a3e2cf09804
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mumani
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Extend Commerce Data Exchange - Real-time Service
+# Extend Commerce Data Exchange -  Real-time Service
 
-This article explains how you can extend Commerce Data Exchange: Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
+This article explains how you can extend Commerce Data Exchange -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
 
 To extend Commerce Data Exchange: Real-time Service, you create a new method in the **RetailTransactionServiceEx** class. This method must meet the following criteria:
 

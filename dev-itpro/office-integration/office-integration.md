@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Office integration | Microsoft Docs
+title: Office integration
 description: This topic reviews Microsoft Office integration concepts and features.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 2015-12-12 20:43:02
+ms.date: 2015-12-12 20 - 43 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25511
-ms.assetid: 5d334daf-2ee3-45dc-9f8f-fcfeaa818383
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3b0c0dff-fce5-44e4-a9da-16ac64c73034
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: cgarty
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -192,9 +194,9 @@ Open the Document Parameters form and ensure that the SharePoint server has been
 See also
 --------
 
-[Office Integration lab and walkthroughs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/office-integration)
+[Office Integration lab and walkthroughs](office-integration-tutorial.md)
 
-[Office Integration Troubleshooting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting)
+[Office Integration Troubleshooting](office-integration-troubleshooting.md)
 
 [Architecture changes](https://ax.help.dynamics.com/en/?p=185064)
 

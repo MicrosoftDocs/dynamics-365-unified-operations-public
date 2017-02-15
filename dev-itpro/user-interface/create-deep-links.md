@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create and use deep links | Microsoft Docs
+title: Create and use deep links
 description: Learn how to create shareable, secured URLs to forms and records.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:54:59
+ms.date: 2015-12-11 23 - 54 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24321
-ms.assetid: 2e3f4305-1466-440f-b29e-2d1845fdb669
-ms.region: Global
-# ms.industry: 
+ms.assetid: 71b5eb7e-bae7-4691-bff2-4d295fbd5ed2
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shshabazz
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -81,8 +83,8 @@ The URL Generator must used from code running on the AOS, in an active user sess
 ```
 // gets the generator instance
 var generator     = new Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator();
-var currentHost   = new System.Uri(UrlUtility::getUrl());
-generator.HostUrl = currentHost.GetLeftPart(System.UriPartial::Authority);
+var currentHost   = new System..Uri(.UrlUtility::getUrl());
+generator.HostUrl = currentHost.GetLeftPart(System..UriPartial::Authority);
 generator.Company = curext();
 generator.MenuItemName = <menu item name>;
 generator.Partition = getCurrentPartition(); 

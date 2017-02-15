@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Rename a local environment to enable access to Visual Studio Team Services | Microsoft Docs
+title: Rename a local environment to enable access to Visual Studio Team Services
 description: Renaming a local development VMs is required in order to access a VSTS project across multiple machines.
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-12 23:28:24
+ms.date: 2015-12-12 23 - 28 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25911
-ms.assetid: d6eb97a5-de09-48a4-baa2-1349de3ac9b8
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5ab47bac-4160-4982-a926-1d8cfed8f0dc
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tabell
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

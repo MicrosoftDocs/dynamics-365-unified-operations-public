@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Testing and validations | Microsoft Docs
+title: Testing and validations
 description: This tutorial shows you how to create and run test cases.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:50:53
+ms.date: 2015-12-11 23 - 50 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24231
-ms.assetid: 13a60312-7b2e-4257-8e1c-6d2e00483882
-ms.region: Global
-# ms.industry: 
+ms.assetid: f433db0f-0c80-4cde-b068-6c37bd2ae150
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shailesn
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

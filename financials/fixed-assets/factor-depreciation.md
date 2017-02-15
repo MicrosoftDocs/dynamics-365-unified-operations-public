@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Factor depreciation | Microsoft Docs
+title: Factor depreciation
 description: This article gives an overview of the factor depreciation method.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 22:57:58
+ms.date: 2015-12-02 22 - 57 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetDepreciationProfile
+ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13831
-ms.assetid: 1ae7c356-339d-44fc-b747-2cfe66e51be5
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6df44483-e53f-458e-ae39-044ad320c2e9
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add a methodology to an LCS solution | Microsoft Docs
+title: Add a methodology to an LCS solution
 description: This topic explains how to create and modify methodologies. It also provides information about the requirements for methodologies.
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-03 22:51:41
+ms.date: 2016-10-03 22 - 51 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Lifecycle Services
+# ms.reviewer: 51
+ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 197063
-ms.assetid: 2ff845cf-292b-45b8-ad61-64a69bc96c50
-ms.region: Global
-# ms.industry: 
+ms.assetid: e19ab413-a2e5-4c86-9bc9-0120af306ec5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omarc
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 
@@ -72,5 +74,5 @@ Follow these steps to edit a methodology in a specific project only.
 See also
 --------
 
-[LCS Solutions for AppSource home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/lcs-solutions-for-app-source)
+[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 

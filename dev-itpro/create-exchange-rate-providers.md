@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create exchange rate providers | Microsoft Docs
+title: Create exchange rate providers
 description: This article describes how to set up an exchange rate provider. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-29 19:08:40
+ms.date: 2016-03-29 19 - 08 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72153
-ms.assetid: a7520eb7-6173-4ae4-93c0-b7c40a66b7ee
-ms.region: Global
-# ms.industry: 
+ms.assetid: ffc226ba-dc6c-4e86-9330-f281a98fd77f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jbye
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

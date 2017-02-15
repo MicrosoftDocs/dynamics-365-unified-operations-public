@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Pay a vendor by endorsing a bill of exchange | Microsoft Docs
+title: Pay a vendor by endorsing a bill of exchange
 description: In Japan, bills of exchange (BOEs) are often endorsed to a vendor and used as a method of payment. In Microsoft Dynamics AX, a list page for BOEs provides centralized management of the BOE lifecycle.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-01-06 20:53:35
+ms.date: 2016-01-06 20 - 53 - 35
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
+ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28791
-ms.assetid: 5af28933-7529-48ce-9db9-ba06624d0458
-ms.region: Japan
-# ms.industry: 
+ms.assetid: 54625d0e-e860-4d53-ac73-9242cf650443
+ms.search.region: Japan
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

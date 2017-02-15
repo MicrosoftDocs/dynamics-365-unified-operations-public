@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Elimination rules | Microsoft Docs
+title: Elimination rules
 description: This article provides information about elimination rules and the various options for reporting about eliminations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-01 17:00:55
+ms.date: 2015-12-01 17 - 00 - 55
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerEliminationRule
+ms.search.form: LedgerEliminationRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13131
-ms.assetid: c68978f6-cc60-41d3-b02a-8dc7d8c7d38f
-ms.region: Global
-# ms.industry: 
+ms.assetid: 878ace4c-888d-4dc1-b574-a86efe244fed
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -129,10 +131,4 @@ Your legal entity, legal entity A, sells widgets to another legal entity in your
 -   Legal entity A sells a widget that costs 10.00 to legal entity B for 15.00 and recognizes half the margin on the sale. Legal entity B recognizes the other half of the margin on the sale. Therefore, the revenue is split. Split revenue provides an incentive to order from another legal entity in the organization instead of an external organization.
 
 All these transactions create intercompany transactions that are posted to due-to and due-from accounts. In addition, these transactions might include markup and markdown amounts when the amount of the intercompany sale doesn't equal the cost of the goods that were sold.
-
-## Set up elimination rules
-When setting up elimination rules in Dynamics 365 for Operations, it is recommending to create a Financial dimension specifically for elimination purposes. Most customers name it Trading Partner or something similar. If you decide not to use a financial dimension, then be sure to have main accounts that are specific for intercompany transactions only. The setup for eliminations is found in the Setup area of the Consolidations module. After you ender a description for the rule you must pick the company the elimination journal will post to. This should be a company that has **Use for financial elimination process** in the Legal entity setup. You can set a date the elimination rule becomes effective and when it is expired if desired. You must set Active as Yes if you want it to be available in the elimination proposal process. Then select a journal name that has a type of Elimination. Once you have defined the basics, you can define the actual processing rules by clicking Lines. There are two options for eliminations, eliminating the net change amount, or defining a fixed amount. Select your source account, and you are able to use asterisk as a wild card. For example, 1\* would select all accounts that start with a 1 as a source of data for the allocation. Once you have selected your source accounts, the Account specification determines the account from the destination company that is used. Choosing Source will use the same main account defined in the Source account. If you choose User defined, then you must specify a destination account. The Dimension specification behaves in the same way. If you choose Source, it will use the same dimensions in the destination company as the Source company. If you choose User defined, you will need to specify the dimensions in the destination company by clicking the Destination dimensions menu item. Select Source dimensions and select the Financial dimensions and values that are used as a source of the elimination.
-
-## Process elimination transactions
-There are two ways to process elimination transactions, during the consolidate online process, or by creating an elimination journal and running the elimination proposal process. This section focuses on creating the journal and running the elimination process. For information on running it as part of the consolidation process, review the Perform an online consolidation article. In a company defined as an elimination company select Elimination journal in the Consolidations module. Once you have selected the journal name, click Lines. You can run the proposal by selecting the Proposals menu and then selecting Elimination proposal. Select the company that is the source of the consolidated data, and then choose the rule you wish to process. Enter a start date to begin the search for elimination amounts, and an End date to end the search date for elimination amounts. The GL posting date field is the date used for posting the journal toe the general ledger. Once you click OK, you can review the amounts and post the journal.
 

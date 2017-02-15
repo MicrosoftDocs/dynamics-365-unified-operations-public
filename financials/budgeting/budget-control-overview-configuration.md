@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Budget control overview | Microsoft Docs
-description: This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 for Operations so that you can manage financial resources.
+title: Budget control overview
+description: This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics AX so that you can manage financial resources.
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-08 00:48:08
+ms.date: 2016-03-08 00 - 48 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,29 +13,31 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60493
-ms.assetid: 33ba3901-e49a-4f24-bf72-2be715f3d5f8
-ms.region: Global
-# ms.industry: 
+ms.assetid: 916bb710-5952-465a-b449-039b95396119
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: sigitac
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Budget control overview
 
-This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics 365 for Operations so that you can manage financial resources.
+This article introduces budget control and provides information to help you configure budget control in Microsoft Dynamics AX so that you can manage financial resources.
 
 Overview
 --------
 
-Budget control in Microsoft Dynamics 365 for Operations supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. After budgets have been approved in Dynamics 365 for Operations, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. Expenditures can be recorded by using main accounts and financial dimensions. You can configure control of the overall expenditure to meet the organization’s policies and requirements by grouping combinations of financial dimensions and main accounts. The following chart shows the place of budget control in the stages of a typical budget cycle. [![BudgetingCycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) You can configure budget control according to several factors:
+Budget control in Microsoft Dynamics AX supports management of an organization’s financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. After budgets have been approved in Dynamics AX, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. Expenditures can be recorded by using main accounts and financial dimensions. You can configure control of the overall expenditure to meet the organization’s policies and requirements by grouping combinations of financial dimensions and main accounts. The following chart shows the place of budget control in the stages of a typical budget cycle. [![BudgetingCycle](./media/budgetingcycle-300x198.png)](./media/budgetingcycle.png) You can configure budget control according to several factors:
 
 -   **Financial dimensions** – What financial dimensions must be used to report budget and actuals, and what financial dimensions are required in order to control budget? Are there specific dimension combinations or main accounts that require particular attention? For example, is there a requirement to track budget to actuals by cost center and program? Do travel expenses require special attention?
 -   **Time** – What time frame (fiscal period, fiscal period to date, and so on) will be used to evaluate available budget funds?
@@ -43,7 +45,7 @@ Budget control in Microsoft Dynamics 365 for Operations supports management of
 -   **Funds available calculation** – Should documents such as purchase requisitions (pre-encumbrances) and purchase orders (encumbrances) be considered in the calculation of available funds? Should documents that are in a draft state be considered in the calculation?
 -   **Override permission** – Who has permission to exceed the available budget?
 
-Budget control is fully integrated with Dynamics 365 for Operations. Therefore, you can evaluate the available budget for both planned purchases and actual purchases. Budget inquiries and reports are available. Therefore, users can evaluate the budget throughout the budget cycle, and can make any adjustments that are required, in the form of budget revisions or transfers. A budget manager can also export the budget and actuals into Microsoft Excel to better analyze and forecast as required.
+Budget control is fully integrated with Dynamics AX. Therefore, you can evaluate the available budget for both planned purchases and actual purchases. Budget inquiries and reports are available. Therefore, users can evaluate the budget throughout the budget cycle, and can make any adjustments that are required, in the form of budget revisions or transfers. A budget manager can also export the budget and actuals into Microsoft Excel to better analyze and forecast as required.
 
 ## Configuring budget control
 ### Budget cycle time span
@@ -72,7 +74,7 @@ Next, on the **Assign budget models** tab, you assign budget models to the budge
 
 ### Define budget control rules
 
-Next, on the **Define budget control rules** tab, you must create specific rules, based on the financial dimensions that are enabled for budget control. For example, if there is a focus on the expenditure or range of expenditures for a department, you can use the settings on this tab to define and evaluate those expenditures. You can define different thresholds for each budget control rule. **Important:** Budget control will be enabled for any main account of the **Profit and Loss**, **Expense**, **Revenue, Balance sheet, Liability, Equity** or **Asset** type. If this tab contains a rule that has empty criteria, budget control will be enabled for **all** financial dimension combinations that include main accounts of those types. Therefore, make sure that you create budget control rules that define only the ranges of financial dimension combinations where it's important for budget control to be turned on. [![DefineBudgetControlRules](./media/definebudgetcontrolrules-300x103.png)](./media/definebudgetcontrolrules.png)
+Next, on the **Define budget control rules** tab, you must create specific rules, based on the financial dimensions that are enabled for budget control. For example, if there is a focus on the expenditure or range of expenditures for a department, you can use the settings on this tab to define and evaluate those expenditures. You can define different thresholds for each budget control rule. **Important:** Budget control will be enabled for any main account of the **Profit and Loss**, **Expense**, or **Asset** type. If this tab contains a rule that has empty criteria, budget control will be enabled for **all** financial dimension combinations that include main accounts of those types. Therefore, make sure that you create budget control rules that define only the ranges of financial dimension combinations where it's important for budget control to be turned on. [![DefineBudgetControlRules](./media/definebudgetcontrolrules-300x103.png)](./media/definebudgetcontrolrules.png)
 
 ### Select main accounts
 

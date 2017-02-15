@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build an extensible control | Microsoft Docs
+title: Build an extensible control
 description: This wiki describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:52:52
+ms.date: 2015-12-11 23 - 52 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24291
-ms.assetid: 76657a62-6652-4f75-b3c4-7e8a3baadd15
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2ffb7896-2712-4652-9123-81a94cae7eb3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shshabazz
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ This wiki describes how to create new application controls that have a property 
 Prerequisites
 -------------
 
-For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2).
+For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](access-instances.md).
 
 ## Overview
 The Control Extensibility Framework lets you create new application controls. You can use the same tools that Microsoft uses to build controls that are already present in the program, such as the chart control. Three important artifacts are involved in the process of developing an extensible control:
@@ -72,7 +74,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 
 ### Set up aggregate data
 
-Use FMTAggregateMeasurements to populate the Microsoft SQL Server Analysis Services database with aggregate data. **Note:** These steps must be completed immediately after you use the **FMTDataHelper** class to import data. You may **NOT** need to do these steps if the [aggregate measure is "InMemoryRealTime"](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/modeling-and-using-aggregate-data), depending on what tutorial files you have.
+Use FMTAggregateMeasurements to populate the Microsoft SQL Server Analysis Services database with aggregate data. **Note:** These steps must be completed immediately after you use the **FMTDataHelper** class to import data. You may **NOT** need to do these steps if the [aggregate measure is "InMemoryRealTime"](model-aggregate-data.md), depending on what tutorial files you have.
 
 1.  In Solution Explorer, under **Analytics**, double-click **FMTAggregateMeasurement**.
 2.  In the designer, right-click **FMTAggregateMeasurement**, and then click **Deploy and Process**.

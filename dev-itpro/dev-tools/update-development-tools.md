@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Update Visual Studio development tools | Microsoft Docs
+title: Update Visual Studio development tools
 description: This topic explains how to update the development tools.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-09 23:23:12
+ms.date: 2016-02-09 23 - 23 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 33571
-ms.assetid: e7f0859f-74e5-484f-9ead-443a01d7d319
-ms.region: Global
-# ms.industry: 
+ms.assetid: eb5cd705-e257-433a-a8a6-f19f2528debd
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

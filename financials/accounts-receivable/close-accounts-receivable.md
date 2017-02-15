@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Close Accounts receivable | Microsoft Docs
+title: Close Accounts receivable
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-07 20:15:14
+ms.date: 2016-03-07 20 - 15 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59372
-ms.assetid: 4bd170af-a16b-48a5-b4e0-4e745ef22c95
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9ff4ad80-030a-49c0-b5a6-bdc44058c71d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mfalkner
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

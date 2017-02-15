@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Patch SQL Server Reporting Services in a one-box environment | Microsoft Docs
+title: Patch SQL Server Reporting Services in a one-box environment
 description: The following procedure is for one-box development environments only.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:26:42
+ms.date: 2015-12-11 23 - 26 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23661
-ms.assetid: 49f4f96e-3d8d-4bf7-85fe-84ef687d1923
-ms.region: Global
-# ms.industry: 
+ms.assetid: f19e9889-3f8c-4d47-8da7-421e4317d9c9
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shailesn
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

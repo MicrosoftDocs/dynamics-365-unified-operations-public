@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure Visual Studio Team Services mapping during code migration | Microsoft Docs
-description: This tutorial shows how to map your development box to the Visual Studio Team Services (VSTS) project after the LCS code upgrade service has completed. 
-author: RobinARH
+title: Configure Visual Studio Team Services mapping during code migration
+description: This tutorial shows how to map your development box to the Visual Studio Team Services (VSTS) project after a code upgrade. 
+author: MargoC
 manager: AnnBe
-ms.date: 2015-12-12 23:28:47
+ms.date: 2015-12-12 23 - 28 - 47
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,26 +13,28 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25951
-ms.assetid: a85f9e42-920f-40b8-a3b1-51216ffe1147
-ms.region: Global
-# ms.industry: 
-ms.author: robadawy
+ms.assetid: 4c67e613-363b-474f-9224-9cbb5c19ec07
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: margoc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Configure Visual Studio Team Services mapping during code migration
 
-This tutorial shows how to map your development box to the Visual Studio Team Services (VSTS) project after the LCS code upgrade service has completed. 
+This tutorial shows how to map your development box to the Visual Studio Team Services (VSTS) project after a code upgrade. 
 
-The LCS code upgrade service automatically checks your upgraded code into Visual Studio Team Services (VSTS) (formerly called Visual Studio Online). You will then need to map your development box to the upgrade folder/branch in your VSTS project (The name of the upgrade folder/branch depends on the version you migrated to). Within your upgraded folder, you will find three folders:
+The migration service automatically checks your upgraded code into Visual Studio Team Services (VSTS) (formerly called Visual Studio Online). You will then need to map your development box to the upgrade folder/branch in your VSTS project (The name of the upgrade folder/branch depends on the version you migrated to). Within your upgraded folder, you will find three folders:
 
 -   Export
 -   Metadata
@@ -52,9 +54,6 @@ The LCS code upgrade service automatically checks your upgraded code into Visua
     2.  Metadata &gt; C:\\AOSService\\PackagesLocalDirectory
         -   On cloud VMs, this folder is located on the I:\\ or J:\\ drive
         -   On earlier versions, this folder is C:\\packages
-        -   **Important**:
-            -   If you are migrating from Dynamics AX 2012 R3 or earlier, you will be mapping to the metadata folder under the **Main** branch.
-            -   If you are migrating between 2 versions of the new Dynamics AX (Dynamics 365 for Operations), you will be mapping to the metadata folder under one of the **Releases** branch.
 
-[![vstsmapping](./media/vstsmapping.png)](./media/vstsmapping.png) Once you have mapped these folders, you can synchronize the code to your local box. Right-click on Metadata and select **Get latest**. Similarly synchronize the Projects folder. After synchronizing the metadata folder, refresh your models in Visual Studio from **Dynamics 365 for Operations** &gt; **Model Management** &gt; **Refresh Models**. [![VSRefreshModels](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) You are now ready to open your projects, resolve conflicts, build, test and complete your code migration.
+[![Packages](./media/packages_configuringyourvsosolution.png)](./media/packages_configuringyourvsosolution.png) Once you have mapped these folders, you can synchronize the code to your local box. Right-click on Metadata and select **Get latest**. Similarly synchronize the Projects folder. After synchronizing the metadata folder, refresh your models in Visual Studio from **Dynamics 365 for Operations** &gt; **Model Management** &gt; **Refresh Models**. [![VSRefreshModels](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) You are now ready to open your projects, resolve conflicts, build, test and complete your code migration.
 

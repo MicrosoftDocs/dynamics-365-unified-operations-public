@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Time and attendance registration | Microsoft Docs
+title: Time and attendance registration
 description: Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration. This article describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15:27:06
+ms.date: 2016-02-24 15 - 27 - 06
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr
+ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 31
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 31
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53351
-ms.assetid: 8f0e8f7a-cdac-4dba-a4e0-23463ce612df
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 14930d85-a41b-4df5-81fd-02fc8bcf0385
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

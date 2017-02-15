@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Close the general ledger at period end | Microsoft Docs
+title: Close the general ledger at period end
 description: This topic describes the tasks that are typically completed when performing a period closing for General ledger. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-02 23:07:25
+ms.date: 2015-12-02 23 - 07 - 25
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2231
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2231
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14111
-ms.assetid: 822c268a-eeda-4c20-8f40-7f384d208530
-ms.region: Global
-# ms.industry: 
+ms.assetid: 911ff75e-48e0-4f0f-966b-ad48a904efa6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -45,7 +47,7 @@ In General ledger, you can complete closing procedures for a period or a year. C
 -   Generate period-end financial statements by using Financial reporting.
 -   Set ledger periods to **On hold**, so that no further posting occurs. You can also restrict a period to a specific user group while period-end activities are occurring, for better control. It's not a good idea to set periods to **Permanently closed**, because you can't reopen a period that has been closed.
 
-The Financial period close workspace can be used to organize and track the tasks required for various period end processes. Refer to the [Financial period close workspace](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/financial-period-close-workspace)topic for additional information.
+The Financial period close workspace can be used to organize and track the tasks required for various period end processes. Refer to the [Financial period close workspace](financial-period-close-workspace.md)topic for additional information.
 
 See also
 --------

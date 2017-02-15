@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail Modern POS configuration and installation | Microsoft Docs
+title: Retail Modern POS configuration and installation
 description: This topic describes how to configure, download, and install Retail Modern POS on a variety of platforms.  It then describes how to activate Retail Modern POS through device activation.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-07 22:30:33
+ms.date: 2015-12-07 22 - 30 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTable
+ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTable
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 11
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20501
-ms.assetid: f5ddeb65-bd68-47ad-9acc-970c8ae8faa1
-ms.region: Global
-ms.industry: Retail
+ms.assetid: 5d47e054-560d-48fd-b9b8-16c19ede188d
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: jashanno
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -139,11 +141,11 @@ You must complete this procedure before you activate Retail Modern POS with a ne
 7.  Select **OK**. In demo data, the Azure AD account that is associated with the administrator account in Operations headquarters is your administrator Azure AD account.
 8.  Select the **Save** button on the Action Pane and refresh the page. The **External identity** section should be now updated with the new information. **Note:** The **External identifier** field will remain empty. This behavior is expected, so you can ignore it.
 
-This procedure should be completed before you activate Cloud POS or Modern POS.  For more information, see [Manage Retail accounts and devices from headquarters](https://docs.microsoft.com/en-us/dynamics365/operations/retail/setting-up-activation-accounts-and-validating-devices-in-hq).
+This procedure should be completed before you activate Cloud POS or Modern POS.  For more information, see [Setting up activation accounts and validating devices in HQ](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=247504&preview=true).
 
 ### Run the Validate Devices for Activation check
 
-1.  Open the **Device** page in HQ (**Retail** **and commerce**&gt; **Setup POS** &gt; **Devices**).
+1.  Open the **Device** page in HQ (**Retail** &gt; **Setup POS** &gt; **Devices**).
 2.  Select the device to validate for device activation, and then click **Validate Devices for Activation**. For example, select device **HOUSTON-3**.
 3.  In the dialog box that appears, select the worker to validate the device for (that is, the worker that you mapped to the Azure AD account in the previous procedure). For example, select worker **000160**.
 4.  Click **OK**, and make sure that you receive the following message: "Pre-Activation validation completed for Device HOUSTON-3 and Staff 000160. Validation: Passed"
@@ -212,5 +214,5 @@ The device should now be activated and ready to use.
 See also
 --------
 
-[Install the POS Layout designer](https://docs.microsoft.com/en-us/dynamics365/operations/retail/install-the-pos-layout-designer)
+[Install the POS Layout designer](install-pos-layout-designer.md)
 

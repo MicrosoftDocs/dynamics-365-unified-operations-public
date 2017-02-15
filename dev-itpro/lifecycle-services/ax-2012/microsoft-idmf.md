@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dynamics AX Intelligent Data Management Framework (AX 2012) | Microsoft Docs
+title: Dynamics AX Intelligent Data Management Framework (AX 2012)
 description: The Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) lets system administrators optimize the performance of Microsoft Dynamics AX installations. IDMF assesses the health of the Microsoft Dynamics AX application, analyzes current usage patterns, and helps reduce database size.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-02 21:14:45
+ms.date: 2015-12-02 21 - 14 - 45
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13591
-ms.assetid: 2fee690c-1c9c-47cd-85d5-834cdd939a50
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: af9dd3ad-390a-46be-b738-1784f6870b7d
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

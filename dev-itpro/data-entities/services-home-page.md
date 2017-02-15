@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Service endpoints | Microsoft Docs
+title: Service endpoints
 description: This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-09 14:54:35
+ms.date: 2015-12-09 14 - 54 - 35
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21311
-ms.assetid: 6fc96441-99ef-4098-ba55-374e427b0086
-ms.region: Global
-# ms.industry: 
+ms.assetid: 482d6580-4c81-4202-8513-2ad4dde3db8d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -55,7 +57,7 @@ The SOAP-based services remain the same as they were in Dynamics AX 2012.
 
 #### Key changes
 
--   All the service groups under the **AOTService group** node are automatically deployed.
+-   All the service groups under the **AOT**\\**Service group** node are automatically deployed.
 -   All services that must be deployed must be part of a service group.
 
 The SOAP endpoint is at https://&lt;host\_uri&gt;/soap/Services/&lt;service\_group\_name&gt;. **Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl The following documentation is from the Dynamics AX 2012 X++ Custom SOAP Services, and it will help you design and write services:
@@ -226,7 +228,7 @@ OData Services, JSON-based Custom Service, and REST Metadata Service support sta
 
 ### Register a native application with AAD
 
-Before any clients can communicate with the services, they must be registered in AAD. These steps will help you register an application with AAD. **Note:** These steps don't have to be completed by all the people in your organization. Only one Azure Service Administrator user can add the application and share the client ID with the developers. **Prerequisite:** You must have an Azure subscription and admin access to Active Directory.
+Before any clients can communicate with the services, they must be registered in AAD. These steps will help you register an application with AAD. **Note:** These steps don't have to be completed by all the people in your organization. Only one Azure admin user can add the application and share the client ID with the developers. **Prerequisite:** You must have an Azure subscription and admin access to Active Directory.
 
 1.  In a web browser, go to <http://manage.windowsazure.com/>.
 2.  Enter the user name and password of the user who has access to the Azure subscription. After the credentials are authenticated, Azure Portal opens.
@@ -293,10 +295,10 @@ In previous versions, you could consume web services from X++ code by adding Mic
                 info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
             }
 
-For more information, see [Troubleshoot service authentication](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/troubleshooting-service-authentication).
+For more information, see [Troubleshoot service authentication](troubleshoot-service-authentication.md).
 
 See also
 --------
 
-[Troubleshoot service authentication](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/troubleshooting-service-authentication)
+[Troubleshoot service authentication](troubleshoot-service-authentication.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Production process overview | Microsoft Docs
+title: Production process overview
 description: This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 17:53:41
+ms.date: 2015-12-07 17 - 53 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
+ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19832
-ms.assetid: 63174d53-9f0e-4ab5-92d6-d3deb06ff348
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 7b169db5-8029-406d-af14-dc3a448af93a
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: conradv
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -76,7 +78,7 @@ See also
 
 [Production feedback](https://ax.help.dynamics.com/en/?p=5911)
 
-[Product configuration models](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/product-information-management/key-concepts-in-product-configuration-models)
+[Product configuration models](product-configuration-models.md)
 
 [Lean manufacturing](https://ax.help.dynamics.com/en/?p=1521)
 

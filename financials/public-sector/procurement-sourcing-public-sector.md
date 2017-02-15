@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Procurement and sourcing in the public sector | Microsoft Docs
+title: Procurement and sourcing in the public sector
 description: This overview introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 16:45:24
+ms.date: 2015-12-07 16 - 45 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AgreementClassification, BudgetParameters, ProcCategoryHierarchyManagement, PurchTableListPage, smmActivities, VendCertificationType, VendTableListPage
+ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchyManagement, PurchTableListPage, smmActivities, VendCertificationType, VendTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19681
-ms.assetid: 8ea36df3-d116-45e7-8187-99b52af01909
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: 318c3488-15e3-4813-816e-7bc6b9108bcd
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -43,11 +45,11 @@ Before you begin to adjust the settings and input your data, you should:
 
 You may need to set up the following Procurement and sourcing features for public sector organizations:
 
--    [Public sector purchase order codes](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/purchase-order-codes-in-the-public-sector) Create codes and special messages for confirming purchase orders. A confirming purchase order circumvents the typical purchasing process.
+-    [Public sector purchase order codes](purchase-order-codes-public-sector.md) Create codes and special messages for confirming purchase orders. A confirming purchase order circumvents the typical purchasing process.
 
 **Note** This also applies to Accounts payable.
 
--   [Public sector accounting in France](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/public-sector-accounting-in-france) For French organizations, additional steps may be required for the public sector.
+-   [Public sector accounting in France](public-sector-accounting-france.md) For French organizations, additional steps may be required for the public sector.
 
 The following sections describe the Procurement and sourcing features that are available for the public sector.
 
@@ -130,7 +132,7 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 See also
 --------
 
-[Procurement and sourcing](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/procurement-and-sourcing)
+[Procurement and sourcing](procurement-sourcing.md)
 
-[Accounts payable in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/accounts-payable-in-the-public-sector)
+[Accounts payable in the public sector](accounts-payable-public-sector.md)
 

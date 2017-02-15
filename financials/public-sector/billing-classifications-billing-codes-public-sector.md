@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Billing classifications and billing codes in the public sector | Microsoft Docs
+title: Billing classifications and billing codes in the public sector
 description: Public-sector organizations can use billing classifications and billing codes to help manage free text invoices. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 15:35:53
+ms.date: 2015-12-07 15 - 35 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustBillingClassification, CustBillingCode, CustCustomField
+ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19491
-ms.assetid: 03c20b2a-cbc1-48a4-8632-d1b218c19942
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: a36c66d7-159c-4f36-bef7-c883f7aba90c
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -46,7 +48,7 @@ Billing classifications are used to group similar free text invoices for process
 -   Number sequence for collection letters
 -   Billing codes that can be assigned to invoices that use this billing classification
 
-You can use billing classifications to control the settlement priority of free text invoices. For details, see [Settlement priority in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/settlement-priority-in-the-public-sector). A billing classification can include many billing codes, but each billing code can be assigned to only one billing classification. When you select a billing classification on a free text invoice, only the billing codes that are listed on the billing classification are available for the invoice. Before you set up billing classifications, be sure that you have set up the terms of payment, interest codes, posting profiles, collection letter sequences, number sequences, and billing codes that you plan to use on the billing classifications.
+You can use billing classifications to control the settlement priority of free text invoices. For details, see [Settlement priority in the public sector](settlement-priority-public-sector.md). A billing classification can include many billing codes, but each billing code can be assigned to only one billing classification. When you select a billing classification on a free text invoice, only the billing codes that are listed on the billing classification are available for the invoice. Before you set up billing classifications, be sure that you have set up the terms of payment, interest codes, posting profiles, collection letter sequences, number sequences, and billing codes that you plan to use on the billing classifications.
 
 ## Billing codes
 Billing codes provide a set of default billing values and rates for a defined type of service or charge. The values that you define for each billing code are automatically entered in the free text invoice line when the billing code is selected. For example, a waste management department might bill certain customers for new containers. They would have a “New container” billing code that contains the billing information for these containers. When the department creates a free text invoice and selects the “New container” billing code on an invoice line, the default values from the billing code are entered automatically. Billing codes include the following information:
@@ -61,7 +63,7 @@ Billing codes provide a set of default billing values and rates for a defined ty
 -   Project information (if enabled on the Accounts receivable parameters page)
 -   Custom fields
 
-Generally, the default values from the billing code can be changed on the free text invoice. However, you can set the billing code to allow or prevent changes to certain fields. For details, see Free text invoices in the public sector. Billing codes can also be associated with posting definitions. When a billing code is used on an invoice line, the posting definition that is associated with the billing code is used for posting the transaction to the ledger. To learn more about posting definitions, see [Posting definitions in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/posting-definitions-in-the-public-sector).
+Generally, the default values from the billing code can be changed on the free text invoice. However, you can set the billing code to allow or prevent changes to certain fields. For details, see Free text invoices in the public sector. Billing codes can also be associated with posting definitions. When a billing code is used on an invoice line, the posting definition that is associated with the billing code is used for posting the transaction to the ledger. To learn more about posting definitions, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
 ### Custom fields
 
@@ -75,10 +77,10 @@ You can create custom fields for billing codes. These fields are used to collect
 -   **Date** – Date fields accept only dates. The date is stored as mm/dd/yyyy.
 
 ## Do I have to use billing classifications?
-Although you don’t have to enable billing classifications, we strongly recommend that you do. Many of the public-sector capabilities in the Accounts receivable app are available only when billing classifications are enabled. After you have enabled billing classifications, however, the billing classification is a required field on free text invoices. To learn more about billing classifications and billing codes on free text invoices, see [Free text invoices in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/free-text-invoices-in-the-public-sector).
+Although you don’t have to enable billing classifications, we strongly recommend that you do. Many of the public-sector capabilities in the Accounts receivable app are available only when billing classifications are enabled. After you have enabled billing classifications, however, the billing classification is a required field on free text invoices. To learn more about billing classifications and billing codes on free text invoices, see [Free text invoices in the public sector](free-text-invoices-public-sector.md).
 
 ## How do I enable billing classifications?
-Enable billing classifications on the **Accounts receivable parameters** page. In the **General** section, on the **Sales setup** FastTab, select **Use billing classifications**. The pages where you create billing classifications and billing codes are available before you enable billing classifications. You’ll want to set up all of your billing classifications and billing codes before you enable them. After you have enabled billing classifications, every free text invoice must have a billing classification. **Note**: If you plan to use billing classifications to determine the settlement priority of free text invoices, you must enable the **Billing** attribute on the **Settlement priority** page after you enable billing classifications. For details, see [Settlement priorities in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/settlement-priority-in-the-public-sector).
+Enable billing classifications on the **Accounts receivable parameters** page. In the **General** section, on the **Sales setup** FastTab, select **Use billing classifications**. The pages where you create billing classifications and billing codes are available before you enable billing classifications. You’ll want to set up all of your billing classifications and billing codes before you enable them. After you have enabled billing classifications, every free text invoice must have a billing classification. **Note**: If you plan to use billing classifications to determine the settlement priority of free text invoices, you must enable the **Billing** attribute on the **Settlement priority** page after you enable billing classifications. For details, see [Settlement priorities in the public sector](settlement-priority-public-sector.md).
 
 ## Do I have to create new billing codes when billing rates change?
 When billing codes need to be updated, you don’t need to create new billing codes. Instead, you can create multiple versions of the billing code, with effective and expiration dates for each version. On the effective date, the system will start using the updated version automatically.
@@ -89,7 +91,7 @@ No, but there’s a way to get the results you need anyway. Let’s say that you
 See also
 --------
 
-[Accounts receivable](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-receivable/accounts-receivable)
+[Accounts receivable](accounts-receivable.md)
 
 [Accounts receivable in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=169941)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: System-defined and user-defined table constraints | Microsoft Docs
-description: This article explains the two types of table constraints for components in a product configuration model: user-defined and system-defined. Table constraints represent matrices of the allowed attribute combinations, where each row defines one set of possible attribute values.
+title: System-defined and user-defined table constraints
+description: This article explains the two types of table constraints for components in a product configuration model -  user-defined and system-defined. Table constraints represent matrices of the allowed attribute combinations, where each row defines one set of possible attribute values.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 17:51:55
+ms.date: 2015-12-07 17 - 51 - 55
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
+ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19781
-ms.assetid: bae57ff7-9780-4d1a-8dc0-d1059ef021da
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 8a89c0c0-6472-481c-abbb-36de5e6c7b18
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # System-defined and user-defined table constraints
 
-This article explains the two types of table constraints for components in a product configuration model: user-defined and system-defined. Table constraints represent matrices of the allowed attribute combinations, where each row defines one set of possible attribute values.
+This article explains the two types of table constraints for components in a product configuration model -  user-defined and system-defined. Table constraints represent matrices of the allowed attribute combinations, where each row defines one set of possible attribute values.
 
 Table constraints represent matrices of the combinations of attributes that are allowed for components in a product configuration model. Each row in the table defines one set of possible attribute values. You can declare two types of constraints in a product configuration model:
 

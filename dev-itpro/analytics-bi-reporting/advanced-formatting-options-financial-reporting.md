@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Advanced formatting options in financial reporting | Microsoft Docs
+title: Advanced formatting options in financial reporting
 description: When you create a report in financial reporting, additional formatting functions are available, including filters for dimensions, restrictions for columns and reporting units, non-printing rows, and IF/THEN/ELSE statements in calculations. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-08-09 21:26:28
+ms.date: 2016-08-09 21 - 26 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FinancialReports
+ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Management Reporter
+ms.search.scope: Management Reporter
 # ms.tgt_pltfrm: 
 ms.custom: 106571
-ms.assetid: f0c8cd24-c850-40f8-b092-13c421cae648
-ms.region: Global
-# ms.industry: 
+ms.assetid: d5c6832c-4045-48e0-942e-7c133caaf444
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 

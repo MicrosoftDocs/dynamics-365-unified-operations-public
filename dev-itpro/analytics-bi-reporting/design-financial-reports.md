@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: View and design financial reports | Microsoft Docs
+title: View and design financial reports
 description: This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics AX. Financial reporting consists of a viewing experience within Dynamics AX and a click-once report designer that lets you create and edit financial reports.  
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-10-26 19:05:28
+ms.date: 2015-10-26 19 - 05 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10814
-ms.assetid: 2bf0c132-0e4b-4bb7-9e5a-ccc0b4b2f34c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 77db39bb-2da4-4af4-8161-e09d4649ff32
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jcart
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -184,5 +186,5 @@ In this exercise, you’ll be creating a new report. The report is a side-by-sid
  
 
 ## Additional resources
-[Financial reporting](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/financial-reporting) [View financial reports](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/view-financial-reports) [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Financial reporting](financial-reporting-getting-started.md) [View financial reports](view-financial-reports.md) [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 

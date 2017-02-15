@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Determine the BOM version | Microsoft Docs
+title: Determine the BOM version
 description: During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08:51:05
+ms.date: 2015-09-10 08 - 51 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BOMConsistOf, BOMDesigner, BOMTable, InventItemOrderSetup
+ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, InventItemOrderSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2534
-ms.assetid: b78c3887-a37c-4766-a6be-200c59f071ec
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: bc4733a1-7dc8-438f-84e4-371dfd9ff896
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: roxanad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

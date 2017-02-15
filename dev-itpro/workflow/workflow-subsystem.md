@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Workflow subsystem updates in Dynamics 365 for Operations | Microsoft Docs
+title: Workflow subsystem updates in Dynamics 365 for Operations
 description: This article reviews the workflow system in Microsoft Dynamics 365 for Operations. It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system. 
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-02 20:55:59
+ms.date: 2015-12-02 20 - 55 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13511
-ms.assetid: 9bac9218-45dd-456f-a8fd-1a2b1ff5fa71
-ms.region: Global
-# ms.industry: 
+ms.assetid: f45d3474-5d7f-4a15-a8b1-ae212d3848f2
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -56,5 +58,5 @@ Here are the primary changes that have been implemented in Dynamics 365 for Oper
 See also
 --------
 
-[Technical Concepts Guide for Developers](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Technical Concepts Guide for Developers](developer-landing-page.md)
 

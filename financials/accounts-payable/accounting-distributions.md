@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Accounting distributions | Microsoft Docs
+title: Accounting distributions
 description: This article provides information about accounting distributions and describes the options that are available for processing them. Accounting distributions are used to allocate monetary amounts for a source document to specific ledger accounts. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-04 16:01:41
+ms.date: 2015-12-04 16 - 01 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AccountingDistribution
+ms.search.form: AccountingDistribution
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17231
-ms.assetid: 83708388-42d4-455f-bf12-d1b315839825
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4581d5c2-e4b9-426f-bc5b-b7b6f253ebed
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: peakerbl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -54,7 +56,7 @@ Accounting distributions are a program-wide capability that is used and extended
 See also
 --------
 
-[Accounting distributions and subledger journal entries for free text invoices](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-receivable/accounting-distributions-and-subledger-journal-entries-for-free-text-invoices)
+[Accounting distributions and subledger journal entries for free text invoices](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
 
 [Dimension defaulting in accounting distributions (blog)](http://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/12/16/dimension-defaulting-in-accounting-distributions-blog-1-introduction.aspx)
 

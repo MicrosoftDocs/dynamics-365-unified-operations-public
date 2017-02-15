@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: System diagnostics (AX 2012) | Microsoft Docs
+title: System diagnostics (AX 2012)
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-05 23:28:02
+ms.date: 2015-12-05 23 - 28 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: AX 2012
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 19061
-ms.assetid: ac41930e-8e85-46ba-823e-603501e2b065
-ms.region: Global
-# ms.industry: 
+ms.assetid: a8962768-084a-409d-833f-2aafab59686c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: murtazac
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -56,8 +58,8 @@ Before you can use the System diagnostics, you must complete the following tasks
 
 ## Getting started
 The following topics explain how to install and use System diagnostics.
--   [Install and run System diagnostics (Lifecycle Services)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/install-and-run-system-diagnostics-lifecycle-services)
--   [Use System diagnostics (Lifecycle Services)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/use-system-diagnostics-lifecycle-services)
+-   [Install and run System diagnostics (Lifecycle Services)](install-run-system-diagnostics-lcs.md)
+-   [Use System diagnostics (Lifecycle Services)](system-diagnostics-lcs.md)
 
 
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Element usage | Microsoft Docs
+title: Element usage
 description: This article reviews the commands that have been added to the Microsoft Visual studio Tools to help you determine how elements are used in an application. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-09-14 08:50:13
+ms.date: 2015-09-14 08 - 50 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 4984
-ms.assetid: b5567ff6-a152-43bf-b720-5730dd22867f
-ms.region: Global
-# ms.industry: 
+ms.assetid: d2447385-6a0b-40dd-bc94-55999e477b41
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -45,9 +47,9 @@ When you right-click some higher-level elements, such as tables, the **View Refe
 See also
 --------
 
-[Microsoft Dynamics &#8216;AX 7 &#8216; development tools](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/dynamics-ax7-technical-preview-development-tools)
+[Microsoft Dynamics &#8216;AX 7 &#8216; development tools](development-tools.md)
 
-[Element designers](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/element-designers)
+[Element designers](element-designers.md)
 
-[Technical Concepts Guide](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Technical Concepts Guide](developer-landing-page.md)
 

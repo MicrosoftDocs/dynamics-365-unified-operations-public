@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data import/export framework entities (AX 2012) | Microsoft Docs
+title: Data import/export framework entities (AX 2012)
 description: This topic lists the entities that can be imported by using the Data Import/Export Framework, the application module that each entity is associated with, and the class, staging table, and target table for each entity.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 22:27:09
+ms.date: 2015-12-04 22 - 27 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: AX 2012
+ms.reviewer: annbe
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18011
-ms.assetid: 4d4684d1-6463-4564-9160-157378419457
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: b6e250b5-a620-4e80-914e-70b211c4a661
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

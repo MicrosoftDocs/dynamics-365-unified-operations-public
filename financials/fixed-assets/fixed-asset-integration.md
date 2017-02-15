@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed assets integration | Microsoft Docs
+title: Fixed assets integration
 description: Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it is integrated with purchase orders.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 21:05:04
+ms.date: 2015-09-10 21 - 05 - 04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetTable
+ms.search.form: AssetTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3501
-ms.assetid: 2ec85167-da49-4654-a234-351098f47b23
-ms.region: Global
-# ms.industry: 
+ms.assetid: ae31e955-0698-4b19-8d91-4c9a154a8eaf
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

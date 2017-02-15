@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Settle a partial customer payment that has multiple discount periods | Microsoft Docs
+title: Settle a partial customer payment that has multiple discount periods
 description: This article shows how partial customer payments are settled when there are multiple discount periods.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:29:40
+ms.date: 2015-12-02 23 - 29 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustOpenTrans, LedgerJournalTransCustPaym
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14471
-ms.assetid: 1714e2f0-3202-448d-9567-ca93942f0c46
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0c3b1b1c-ae5b-4e7e-9cac-76387fc7e0e3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

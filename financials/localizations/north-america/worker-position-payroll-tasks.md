@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up payroll for workers | Microsoft Docs
+title: Set up payroll for workers
 description: Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topics provides information about these tasks and the fields that are used to complete them.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-11-01 18:57:14
+ms.date: 2016-11-01 18 - 57 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmBenefit, HcmBenefitElementSetup, PayrollWorkerTaxCode, PayrollWorkerTaxRegion
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollWorkerTaxCode, PayrollWorkerTaxRegion
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 248404
-ms.assetid: 2f7d793c-0909-4c29-aff4-f9cd096bcb16
-ms.region: USA
-# ms.industry: 
+ms.assetid: f3ffcc31-e904-41f6-b894-511f40f07db1
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topics provides information about these tasks and the fields that are used to complete them.
 
-For more information, see [Payroll data updates FAQ](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/payroll-data-updates). [![Flow of worker and position tasks](./media/worker-tasks.gif)](./media/worker-tasks.gif)
+For more information, see [Payroll data updates FAQ](payroll-data-updates.md). [![Flow of worker and position tasks](./media/worker-tasks.gif)](./media/worker-tasks.gif)
 
 ## Adding payroll periods to positions
 You must specify payroll details and add them to a position before you can generate payroll for the position. The following table show the information that you must enter on the **Payroll** FastTab.
@@ -101,10 +103,10 @@ This set of selections is typically used for salaried workers when you want a da
 </table>
 
 ## Adding earning codes to worker position agreements
-If a worker receives recurring earnings or an earning rate that differs from the default earning code, you must assign an earning code to the worker to make sure that earnings are generated correctly. For more information, see [Generate earnings](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/generate-earnings). **Note:** If you're setting up an earning code that is based on hours or pieces, the **Frequency** field isn't available. Earnings that are based on hours are generated based on the **Generate salary** and **Generate earnings from schedule** selections on the **Position** page. Earnings that are based on pieces are entered manually.
+If a worker receives recurring earnings or an earning rate that differs from the default earning code, you must assign an earning code to the worker to make sure that earnings are generated correctly. For more information, see [Generate earnings](generate-earnings.md). **Note:** If you're setting up an earning code that is based on hours or pieces, the **Frequency** field isn't available. Earnings that are based on hours are generated based on the **Generate salary** and **Generate earnings from schedule** selections on the **Position** page. Earnings that are based on pieces are entered manually.
 
 ## Setting up worker tax regions
-When you assign a tax region to a worker, all worker tax codes that apply to the worker are set up automatically. All parameters for the worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to verify their accuracy. For more information, see [Tax information tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/tax-information-tasks). To set up tax regions for workers, you must first create a list or spreadsheet that contains the following information for each worker that you're setting up tax regions for:
+When you assign a tax region to a worker, all worker tax codes that apply to the worker are set up automatically. All parameters for the worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to verify their accuracy. For more information, see [Tax information tasks](tax-information-tasks.md). To set up tax regions for workers, you must first create a list or spreadsheet that contains the following information for each worker that you're setting up tax regions for:
 
 -   The city and state where the worker claims residency
 -   The city and state of each location where the worker works
@@ -123,7 +125,7 @@ The first tax region that is assigned to a worker is designated as the worker's 
 Tax regions are geographic areas where a specific set of payroll taxes applies. Tax regions generally correspond to the cities or towns where your workers reside or work. A worker tax region is a tax region that has been assigned to a specific worker. A default tax region is required for each position that a worker holds. A default tax region is a worker tax region that is used to generate earnings for a specific position that a worker holds. Therefore, if you don't assign a default tax region to the worker's tax position, earnings can't be generated for the position. In this case, to pay the worker, you must manually enter the earnings and then manually enter the tax region on each earning statement line. If a worker's position requires different tax regions at different times, you must still select a single default tax region for the position. You can then change the tax region on individual earning statement lines after you generate earnings for the position. **Note:** Although the default tax region is used to generate earnings for a position, it's assigned to the worker who holds the position, not to the position itself. If the position is later reassigned to a different worker, a default tax region must be assigned to the new worker who holds the position. The default tax region isn't reassigned to the new worker when the position is reassigned. **Note:** If the worker tax region that should be specified for the position isn’t included in the list, close this page, and use the **Worker tax region** page to assign the tax region to the worker. Then return to this page to assign the default tax region.
 
 ## Setting up worker tax codes
-You can manage a worker's tax options, such as filing status and total allowances, on the **Worker tax codes** page. You don't have to create or assign the worker tax codes, because the codes are automatically created and assigned to the worker when you create worker tax regions. At first, all parameters for worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to make sure that they're accurate. For more information, see [Tax information tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/tax-information-tasks). You must first create a list or spreadsheet that contains the values of the tax options for all the tax codes that are assigned to each worker whose tax codes you're setting up. These values differ for each tax code. The information is typically collected on IRS Form W-4 or a similar form for the state.
+You can manage a worker's tax options, such as filing status and total allowances, on the **Worker tax codes** page. You don't have to create or assign the worker tax codes, because the codes are automatically created and assigned to the worker when you create worker tax regions. At first, all parameters for worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to make sure that they're accurate. For more information, see [Tax information tasks](tax-information-tasks.md). You must first create a list or spreadsheet that contains the values of the tax options for all the tax codes that are assigned to each worker whose tax codes you're setting up. These values differ for each tax code. The information is typically collected on IRS Form W-4 or a similar form for the state.
 
 ### Tips for setting up worker tax codes
 
@@ -131,7 +133,7 @@ You can manage a worker's tax options, such as filing status and total allowance
 -   You can also change the value of the parameter directly in the grid. In this case, the new version of the tax code parameter is stamped with the date but not the time. Therefore, the first change that is made during a given day creates a new version of the parameter. If you change the value later during the same day, the new change overwrites the previous change but doesn't create a new version of the parameter. Only the last change is saved in the date-effective version.
 
 ## Enrolling workers in benefits
-Payroll information for a benefit isn't available if the **Payroll impact** field on the **Benefit elements** page is set to **None** for the benefit plan. **Note:** To set up payroll information for a garnishment or tax levy, see [Garnishment and tax levy enrollment tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-enrollment-tasks). Benefit accrual plans, such as paid time off, aren't set up or calculated like other benefits. For information about how to enroll a worker in a benefit accrual plan, see [Benefit accrual plan tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-accrual-plan-tasks). For more information about how to set up a benefit, see [Benefit setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-setup-tasks). The following table show the information that you must enter on the **Payroll** FastTab. The fields on this FastTab can vary, depending on the setting of the **Payroll impact** field on the **Benefit elements** page.
+Payroll information for a benefit isn't available if the **Payroll impact** field on the **Benefit elements** page is set to **None** for the benefit plan. **Note:** To set up payroll information for a garnishment or tax levy, see [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md). Benefit accrual plans, such as paid time off, aren't set up or calculated like other benefits. For information about how to enroll a worker in a benefit accrual plan, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md). For more information about how to set up a benefit, see [Benefit setup tasks](benefit-set-up-tasks.md). The following table show the information that you must enter on the **Payroll** FastTab. The fields on this FastTab can vary, depending on the setting of the **Payroll impact** field on the **Benefit elements** page.
 
 <table>
 <colgroup>
@@ -208,11 +210,11 @@ The period that the contribution limits apply to. For example, the limit amount 
 See also
 --------
 
-[Tax information tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/tax-information-tasks)
+[Tax information tasks](tax-information-tasks.md)
 
-[Benefit setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-setup-tasks)
+[Benefit setup tasks](benefit-set-up-tasks.md)
 
-[Garnishment and tax levy setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-setup-tasks)
+[Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md)
 
-[Garnishment and tax levy enrollment tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-enrollment-tasks)
+[Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md)
 

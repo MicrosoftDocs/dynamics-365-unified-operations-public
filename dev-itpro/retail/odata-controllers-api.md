@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Web API and OData controllers | Microsoft Docs
+title: Web API and OData controllers
 description: This article provides code to extend the ApiController class so that you can create a Web API controller for Retail Server.
 author: kfend
 manager: AnnBe
-ms.date: 2016-02-05 00:38:12
+ms.date: 2016-02-05 00 - 38 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31481
-ms.assetid: e9d511ea-3168-4097-96a1-b590968ac1c7
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8a3b19dd-9c41-417f-a428-0691f67a369a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

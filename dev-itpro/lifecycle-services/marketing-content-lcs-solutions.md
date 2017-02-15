@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Stage and publish an LCS solution | Microsoft Docs
+title: Stage and publish an LCS solution
 description: This topic explains how to upload the marketing content for your LCS solution package to the Azure Publishing Portal, and how to stage and publish your solution.
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-03 22:49:41
+ms.date: 2016-10-03 22 - 49 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-# ms.suite: 
+# ms.reviewer: 51
+# ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 196873
-ms.assetid: 54ac561f-304b-4e84-9218-a35ed07d7d7f
-ms.region: Global
-# ms.industry: 
+ms.assetid: e43d7b80-d987-4452-87fc-d1f11ed30839
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omarc
+# ms.dyn365.intro: 
+# ms.dyn365.version: 
 
 ---
 
@@ -61,5 +63,5 @@ After you've completed the previous procedure, you can stage and publish your so
 See also
 --------
 
-[LCS Solutions for AppSource home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/lcs-solutions-for-app-source)
+[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 

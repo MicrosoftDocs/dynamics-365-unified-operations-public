@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Adjustment inflation declaration report | Microsoft Docs
+title: Adjustment inflation declaration report
 description: Microsoft Dynamics AX users can process inflation adjustments by using INPC rates, various methods (such as opening balance, balance, monthly balance, and transaction date), and various dimensions.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-09-16 21:49:34
+ms.date: 2015-09-16 21 - 49 - 34
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InflationAdjJournal_MX, InpcRateTable_MX, LedgerParameters, MainAccount
+ms.search.form: InflationAdjJournal_MX, InpcRateTable_MX, LedgerParameters, MainAccount
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9391
-ms.assetid: 7cba87b3-cf30-4ee5-afd0-277e8990632b
-ms.region: Mexico
-# ms.industry: 
+ms.assetid: 9b778617-2ed5-4d90-bd07-556ed17d9e96
+ms.search.region: Mexico
+# ms.search.industry: 
 ms.author: sndray
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

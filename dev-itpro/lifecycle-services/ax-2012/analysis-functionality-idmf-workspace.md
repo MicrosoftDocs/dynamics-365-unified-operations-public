@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Analysis in the Intelligent Data Management Framework (AX 2012) | Microsoft Docs
+title: Analysis in the Intelligent Data Management Framework (AX 2012)
 description: This topic describes the functionality available from the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) Analysis menu.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 20:04:53
+ms.date: 2015-12-04 20 - 04 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17672
-ms.assetid: 6b7eb698-b9e8-4ef0-b46c-85f6e2677c84
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: d09cb8d4-a039-428f-b6b5-945147573bd5
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -163,7 +165,7 @@ This command provides similar information for the archive database as the **Anal
 Analysis details (Archive database group)
 -----------------------------------------
 
-This command provides similar information for the archive database as the Analysis details command in the Production database group provides for the production database. For detailed information, see [Analysis functionality in the Microsoft Dynamics AX Intelligent Data Management Framework workspace (IDMF)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/analysis-functionality-in-the-microsoft-dynamics-ax-intelligent-data-management-framework-workspace-idmf).
+This command provides similar information for the archive database as the Analysis details command in the Production database group provides for the production database. For detailed information, see [Analysis functionality in the Microsoft Dynamics AX Intelligent Data Management Framework workspace (IDMF)](analysis-functionality-idmf-workspace.md).
 Show system health
 ------------------
 

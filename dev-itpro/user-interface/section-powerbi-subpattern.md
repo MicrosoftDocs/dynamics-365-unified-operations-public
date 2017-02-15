@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Section Power BI subpattern | Microsoft Docs
+title: Section Power BI subpattern
 description: This article provides information about the Section PowerBI subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the panorama section that contains a PowerBI control.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-12 22:30:41
+ms.date: 2016-01-12 22 - 30 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29431
-ms.assetid: 81dbe415-5f87-43be-b760-32c9745b8512
-ms.region: Global
-# ms.industry: 
+ms.assetid: 58a8c262-d551-48db-9ab3-d60dd1b4c15a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -54,7 +56,7 @@ Apply Section PowerBI to the appropriate tab page in the workspace.
 
 ### Related container patterns
 
--   [Operational workspace](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)
+-   [Operational workspace](workspace-form-pattern.md)
 
 ## UX guidelines
 None
@@ -65,15 +67,15 @@ Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 ## Appendix
 ### Related articles
 
--   [Configuring PowerBI integration for workspaces](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-powerbi-integration)
--   [Power BI Integration in Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/powerbi-integration-in-ax7)
+-   [Configuring PowerBI integration for workspaces](configure-power-bi-integration.md)
+-   [Power BI Integration in Dynamics AX](power-bi-integration.md)
 
 ### Frequently asked questions
 
 This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 -   **How do I configure PowerBI for integration with my workspace?**
-    -   See the [Configuring PowerBI integration for workspaces](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-powerbi-integration) article.
+    -   See the [Configuring PowerBI integration for workspaces](configure-power-bi-integration.md) article.
 
 ### Open issues
 

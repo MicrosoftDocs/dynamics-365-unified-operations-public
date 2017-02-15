@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up and maintain vendor collaboration | Microsoft Docs
+title: Set up and maintain vendor collaboration
 description: This topic describes the configuration tasks that are needed to set up Dynamics 365 for Operations to use vendor collaboration. It also describes how to provision new vendor collaboration users.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-31 13:59:40
+ms.date: 2016-10-31 13 - 59 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
+ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 2084
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220774
-ms.assetid: ff9f361f-e958-4d9c-ac0e-5ce03990156c
-ms.region: Global
-# ms.industry: 
+ms.assetid: b8248485-c27e-4468-b626-b3e72abfa0f8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mkirknel
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -64,7 +66,7 @@ The Vendor (external) role can be used for external vendors who will work with p
 -   View consignment inventory.
 
 ## Set up workflows to process vendor collaboration user requests
-You need to set up workflows to deal with vendor collaboration user requests, to ensure that all the relevant tasks are completed, and the appropriate approvals are given. Vendor collaboration user requests are submitted by external vendors who have the Vendor admin (external) security role, or similar permissions, or by procurement professionals in your company. There are 3 types of requests: to provision a new user, to inactivate an existing user, or to modify the security roles of an existing user. For more information about vendor collaboration user requests, see [Manage vendor collaboration users](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/manage-vendor-collaboration-users). You need to create two or more workflows to process all 3 types of vendor collaboration user requests. New workflows are created on the **User workflows** page. For more information, see [Create a workflow](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/create-a-workflow). Some examples of how you might set up your workflows are given below.
+You need to set up workflows to deal with vendor collaboration user requests, to ensure that all the relevant tasks are completed, and the appropriate approvals are given. Vendor collaboration user requests are submitted by external vendors who have the Vendor admin (external) security role, or similar permissions, or by procurement professionals in your company. There are 3 types of requests: to provision a new user, to inactivate an existing user, or to modify the security roles of an existing user. For more information about vendor collaboration user requests, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md). You need to create two or more workflows to process all 3 types of vendor collaboration user requests. New workflows are created on the **User workflows** page. For more information, see [Create a workflow](create-workflow.md). Some examples of how you might set up your workflows are given below.
 
 ### Example workflow for provisioning new users and modifying security roles
 
@@ -110,5 +112,5 @@ For more information about the process used in the **Send Azure B2B user invitat
 See also
 --------
 
-[Using vendor collaboration to work with external vendors](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/using-vendor-collaboration-to-work-with-external-vendors)
+[Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md)
 

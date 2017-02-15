@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add BI to workspaces | Microsoft Docs
+title: Add BI to workspaces
 description: In this tutorial, you’ll add BI controls such as KPI tiles to an existing workspace. 
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-12 19:09:49
+ms.date: 2015-12-12 19 - 09 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24551
-ms.assetid: 670475a2-aac8-4f71-8cb0-0e3dd6310436
-ms.region: Global
-# ms.industry: 
+ms.assetid: bc6a3987-6215-4444-9c07-3a8225639c44
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: milindav
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

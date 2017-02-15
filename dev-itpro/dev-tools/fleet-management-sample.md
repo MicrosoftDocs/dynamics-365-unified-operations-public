@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fleet Management sample application | Microsoft Docs
+title: Fleet Management sample application
 description: This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-10-19 23:01:38
+ms.date: 2015-10-19 23 - 01 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10254
-ms.assetid: 2517f66a-50cb-4afb-b838-16953c07ecc0
-ms.region: Global
-# ms.industry: 
+ms.assetid: c2c156d4-6277-4ce9-b3b8-ef5830d57ded
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

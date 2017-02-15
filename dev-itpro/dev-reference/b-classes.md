@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: B Classes | Microsoft Docs
+title: B Classes
 description: System API classes that start with the letter B.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-18 20:20:46
+ms.date: 2016-02-18 20 - 20 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: a:2:{s:4:"name";s:22:"Robin Reynolds-Haertle";s:2:"id";s:0:"";}
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: a:2:{s:4:"name";s:22:"Robin Reynolds-Haertle";s:2:"id";s:0:"";}
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50951
-ms.assetid: 6a3c879e-956f-48a5-bfe8-a87014ecac9a
-ms.region: Global
-# ms.industry: 
+ms.assetid: 49e784b9-fb02-43ad-a66b-f7c4a2ea3a33
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

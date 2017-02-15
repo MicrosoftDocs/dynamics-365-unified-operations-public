@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - System administration | Microsoft Docs
+title: Data entities -  System administration
 description: This article provides a list of the data entities that are available for the System administration functionality in Microsoft Dynamics 365 for Operations.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-12-01 20:02:45
+ms.date: 2016-06-29 14 - 26 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96433
-ms.assetid: c339e320-9b2f-4b9c-b2b6-582971b7dd85
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 1b8162be-f217-4815-93a7-bd66d383feaa
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - System administration
+# Data entities -  System administration
 
 This article provides a list of the data entities that are available for the System administration functionality in Microsoft Dynamics 365 for Operations.
 
@@ -217,7 +219,7 @@ The state/province information for a country/region
 
 **01.1.005 SYS - Address setup**
 
-There are five records that will fail during Cities import because of bad data.
+There are five records that will fail during Cities import because of bad data. Demo data sample packages have been adjusted to account for these errors.
 
 14
 
@@ -308,6 +310,8 @@ None
 An operating unit is an organization that represents a business process or function.
 
 **01.1.008 SYS – Organization hierarchies**
+
+If you are building your own organization hierarchy, note that the entity for export is **Organization hierarchy – published** and the entity for import is **Organization hierarchy**.
 
 21
 
@@ -433,7 +437,7 @@ Setup
 
 None
 
-Details that are related to the users **Note:** Data import can't contain a record for Guest or axrunner. These users are created at deployment and can't be updated by the import. If these records are included, the whole entity will fail.
+Details that are related to the users **Note:** Data import can't contain a record for Guest or axrunner. These users are created at deployment and can't be updated by the import. If these records are included, the whole entity will fail. If you create your own package with an export from another system, be sure to remove the administrator user from the import file. If you don't, the information for the administrator user will be imported from the previous installation and may not allow you to log in to the current instance.
 
 31
 
@@ -488,7 +492,7 @@ Describe the contents of unattached documents, such as purchase orders, invoices
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

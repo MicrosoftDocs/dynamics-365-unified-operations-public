@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deploy a Retail mobility dev/test environment on Azure (AX 2012) | Microsoft Docs
+title: Deploy a Retail mobility dev/test environment on Azure (AX 2012)
 description: This article explains how to deploy a Retail mobility dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-02 16:53:31
+ms.date: 2015-12-02 16 - 53 - 31
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: AX 2012
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13332
-ms.assetid: 4ace241c-d836-42e2-93fc-3268f167ba39
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5a33d94a-cc72-4c35-bd7b-e8fbfd1712ad
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aamiral
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -39,7 +41,7 @@ Before you complete the procedures in this article, make sure that the following
 
 | Category       | Prerequisite                                                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) |
+| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
 
 ## 1. Log on to Lifecycle Services
 Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Log on to Lifecycle Services](https://lcs.dynamics.com/)
@@ -157,7 +159,7 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
 
 11. Click **Done**. The **Deploy environment** panel is redisplayed.
 12. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
 
 13. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
@@ -174,7 +176,7 @@ Before you complete the following procedures, make sure that the following prere
 | Prerequisite                                                                                                                                                     | More information                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Set up and configure the Dynamics AX application object server (AOS), database, and client. As mentioned, Dynamics AX may be installed on-premises, or on Azure. | [System setup for Microsoft Dynamics AX](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                        |
-| Import data into Dynamics AX.                                                                                                                                    | If you want sample data installed in your Dynamics AXenvironment, use the Test Data Transfer tool to install the sample data. For instructions, see [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-for-microsoft-dynamics-ax-2012). |
+| Import data into Dynamics AX.                                                                                                                                    | If you want sample data installed in your Dynamics AXenvironment, use the Test Data Transfer tool to install the sample data. For instructions, see [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md). |
 | Set up and configure Async Server.                                                                                                                               | [Commerce Data Exchange: Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                          |
 | Set up and configure Real-time Service.                                                                                                                          | [Commerce Data Exchange: Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                     |
 | Sync metadata for Commerce Data Exchange.                                                                                                                        | [Enter parameters for Retail Scheduler](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                         |

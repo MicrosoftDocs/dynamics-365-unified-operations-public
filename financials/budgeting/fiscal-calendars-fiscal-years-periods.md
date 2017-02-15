@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fiscal calendars, fiscal years, and periods | Microsoft Docs
+title: Fiscal calendars, fiscal years, and periods
 description: This article discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 23:27:13
+ms.date: 2015-12-12 23 - 27 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FiscalCalendars
+ms.search.form: FiscalCalendars
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25851
-ms.assetid: 341075ba-e1ad-44ba-a685-703cf45c0610
-ms.region: Global
-# ms.industry: 
+ms.assetid: 318d5ef4-7207-47c6-b22d-c34b7f1862e4
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

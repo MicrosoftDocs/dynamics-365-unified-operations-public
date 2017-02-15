@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Commitments in the public sector in France | Microsoft Docs
+title: Commitments in the public sector in France
 description: Commitments are budget control source documents used by public sector entities in France. They are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 16:19:15
+ms.date: 2015-12-07 16 - 19 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BudgetControlConfiguration, PurchAgreement, PurchCommitment_PSN, PurchTable
+ms.search.form: BudgetControlConfiguration, PurchAgreement, PurchCommitment_PSN, PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19531
-ms.assetid: 5f93e82f-ac82-42e5-b135-db5d5937d1fb
-ms.region: France
-ms.industry: Public sector
+ms.assetid: e58bf4fe-92c2-403a-87fa-716f9106ba7f
+ms.search.region: France
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -70,7 +72,7 @@ Commitments must be closed manually.
 -   You can close a single commitment line or an entire commitment by using the **Close** button on the Action Pane of the commitment.
 -   The purchase order year-end process automatically reverses closing entries and creates or updates budget in commitment documents in the new fiscal year. This is handled by the process. No manual intervention is required. However, after you have processed purchase orders and commitments, you must go to the **Commitment close** page to close the commitments in the closing fiscal year.
 
-**Important**: When you select the commitments that you want to close, be sure that you don't select the commitments that you have already created for the new fiscal year. Closing a commitment line cannot be reversed. If you close a commitment line by mistake, you must create a new commitment to restore the budget reservation. To learn more about the year-end process, see [Year-end processing in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/year-end-processing-in-the-public-sector).
+**Important**: When you select the commitments that you want to close, be sure that you don't select the commitments that you have already created for the new fiscal year. Closing a commitment line cannot be reversed. If you close a commitment line by mistake, you must create a new commitment to restore the budget reservation. To learn more about the year-end process, see [Year-end processing in the public sector](year-end-processing-public-sector.md).
 
 See also
 --------

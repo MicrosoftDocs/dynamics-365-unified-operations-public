@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Write business logic using C# and X++ source code | Microsoft Docs
-description: The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX.
-In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
+title: Write business logic using C# and X++ source code
+description: The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
 author: pvillads
 manager: AnnBe
-ms.date: 2015-12-13 01:58:59
+ms.date: 2015-12-13 01 - 58 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,25 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26821
-ms.assetid: d21f00ab-6343-45be-bd64-b9a347ce0f70
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6e8c8b4f-601f-41ed-b06c-3b6deff6f480
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Write business logic using C# and X++ source code
 
-The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX.
-In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
+The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
 
 In this tutorial, you’ll write business logic in C\# source code and in X++ source code. You'll get experience with the following:
 
@@ -145,7 +145,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
 
 ### Understand the LINQ code
 
-Before proceeding with more C\# code, verify that you understand the LINQ code you just added. More details about LINQ are provided in the [Technical Concepts Guide](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide), so only the basics are described below.
+Before proceeding with more C\# code, verify that you understand the LINQ code you just added. More details about LINQ are provided in the [Technical Concepts Guide](developer-landing-page.md), so only the basics are described below.
 
 -   First, a *provider* is created. It provides access to all the Microsoft Dynamics AX tables.
 -   Next, a *collection* of all customers is created. The customer of interest is retrieved from this collection.

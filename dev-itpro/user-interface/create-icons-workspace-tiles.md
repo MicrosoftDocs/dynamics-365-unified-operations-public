@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create icons for workspace tiles | Microsoft Docs
-description: This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
+title: Create icons for workspace tiles
+description: This article provides guidelines and recommendations for creating and assigning icons to custom workspace tiles in Microsoft Dynamics AX.  
 author: jasongre
 manager: AnnBe
-ms.date: 2016-08-19 23:15:21
+ms.date: 2016-08-19 23 - 15 - 21
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,26 +13,28 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX platform update 1
+ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 141853
-ms.assetid: 9ad3007a-b157-4e73-9a7c-26095e223311
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8fd5c84f-8457-405a-a4ef-79ffcd099096
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: May-16
+ms.dyn365.version: Platform update 1
 
 ---
 
 # Create icons for workspace tiles
 
-This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
+This article provides guidelines and recommendations for creating and assigning icons to custom workspace tiles in Microsoft Dynamics AX.  
 
-The dashboard contains a set of workspace tiles to which the user has access. Each of these tiles contains an icon specific to that workspace. For out-of-the-box workspaces provided by Microsoft, the icons used on the workspace tiles generally correspond to a symbol from the [Symbol font](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/microsoft-dynamics-ax-symbol-font). This article discusses the guidelines and recommendations for creating and assigning icons to tiles for workspaces created by Microsoft Certified Partners or individual customers.
+In Dynamics AX, the dashboard contains a set of workspace tiles to which the user has access. Each of these tiles contains an icon specific to that workspace. For out-of-the-box workspaces provided by Microsoft, the icons used on the workspace tiles generally correspond to a symbol from the [Microsoft Dynamics Symbol](symbol-font.md)font. This article discusses the guidelines and recommendations for creating and assigning icons to tiles for workspaces created by Microsoft Certified Partners or individual customers.
 
 ## Implementation details
 ### Icon creation
