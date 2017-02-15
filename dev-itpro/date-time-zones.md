@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Date/time data and time zones | Microsoft Docs
+title: Date/time data and time zones
 description: This article provides information about date and time fields, and time zones in Microsoft Dynamics 365 for Operations.
 author: pvillads
 manager: AnnBe
-ms.date: 2015-12-02 20:57:25
+ms.date: 2015-12-02 20 - 57 - 25
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SysUserSetup
+ms.search.form: SysUserSetup
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13571
-ms.assetid: e550a15f-d0a0-4c99-ba20-6237ce49b52c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 96e4e621-4b04-4e80-8b5c-92a8277952e6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

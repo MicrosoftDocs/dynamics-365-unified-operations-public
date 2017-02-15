@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Unit of measure and stocking policies | Microsoft Docs
+title: Unit of measure and stocking policies
 description: This article describes how default units, unit sequences, and unit conversions are used in warehouse processes.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-18 12:49:12
+ms.date: 2016-01-18 12 - 49 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorageDimensionGroup, InventItemOrderSetup, UnitOfMeasureConversion, WHSRFMenuItem, WHSUOMSeqGroupTable
+ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorageDimensionGroup, InventItemOrderSetup, UnitOfMeasureConversion, WHSRFMenuItem, WHSUOMSeqGroupTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29611
-ms.assetid: b4970d85-88c5-4fd7-b3ab-fc741fa61d8a
-ms.region: Global
-# ms.industry: 
+ms.assetid: 582ced2b-d098-45fc-ad35-aff2f7d990ae
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: perlynne
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install a deployable package | Microsoft Docs
+title: Install a deployable package
 description: This tutorial walks you through the steps for applying a deployable package on a system. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-13 23:50:03
+ms.date: 2016-03-13 23 - 50 - 03
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24191
-ms.assetid: 5ae16d21-8174-4db7-b7fb-5afc87c4613c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 824987b6-6756-47b9-a0cf-072890ac876b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shailesn
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,17 +37,19 @@ This tutorial walks you through the steps for applying a deployable package on a
 Introduction
 ------------
 
-This tutorial walks you through the steps for applying a deployable package on a system. This package can be either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment. This article describes the process using the command line and requires remote access to the environments. On the other hand, and in most cases, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in [Apply a deployable package on a system](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-a-deployable-package-on-a-dynamics-ax-system), without the need to understand the process described on this page.
+This tutorial walks you through the steps for applying a deployable package on a system. This package can be either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
+
+This article describes the process using the command line and requires remote access to the environments. On the other hand, and in most cases, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in [Apply a deployable package on a system](apply-deployable-package-system.md), without the need to understand the process described on this page.
 
 ## Key concepts
--   **Deployable package**– A deployable package is a unit of deployment that can be applied in any environment. It can consist of a binary hotfix to the AOS runtime components, an updated application package, or a new application package.
--   **AXUpdateInstaller**– A deployable package has the installer executable bundled in it. When the package is downloaded to a computer, the installer is available.
--   **Runbook**– The deployment runbook is a series of steps that is generated for applying the deployable package to the target environment. Some of the steps are automated, and some are manual. AXUpdateInstaller provides the capability to run these steps one by one and in the correct sequence.
+-   **Deployable package** – A deployable package is a unit of deployment that can be applied in any environment. It can consist of a binary hotfix to the AOS runtime components, an updated application package, or a new application package.
+-   **AXUpdateInstaller** – A deployable package has the installer executable bundled in it. When the package is downloaded to a computer, the installer is available.
+-   **Runbook** – The deployment runbook is a series of steps that is generated for applying the deployable package to the target environment. Some of the steps are automated, and some are manual. AXUpdateInstaller provides the capability to run these steps one by one and in the correct sequence.
 
 ## Collect topology configuration data
-1.  In Microsoft Dynamics Lifecycle Services (LCS), open the **Environment **page.
-2.  Click the name of a virtual machine (VM), and establish a Remote Desktop connection to the VM by using the user name and password that are provided on the**Environment**page.
-3.  On the VM, download the zip file for the deployable package from LCS. **Note:** After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties **dialog box, on the **General **tab, click **Unblock **to unlock the files. Finally, extract the files, and continue with the next step.
+1.  In Microsoft Dynamics Lifecycle Services (LCS), open the **Environment** page.
+2.  Click the name of a virtual machine (VM), and establish a Remote Desktop connection to the VM by using the user name and password that are provided on the **Environment** page.
+3.  On the VM, download the zip file for the deployable package from LCS. **Note:** After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties** dialog box, on the **General** tab, click **Unblock** to unlock the files. Finally, extract the files, and continue with the next step.
 4.  In the folder where the deployable package was extracted, find and open the file that is named DefaultTopologyData.xml. You must populate this file with the VM name and installed components.
     -   To populate the VM name, follow these steps:
         1.  Open Windows Explorer, right-click **This PC**, and then select **Properties**.
@@ -60,27 +64,29 @@ This tutorial walks you through the steps for applying a deployable package on 
         3.  Update the DefaultTopologyData.xml with the list of components.
 
     When you've finished populating the VM name and installed components, the DefaultTopologyData.xml file should resemble the following illustration. ![defaulttopology](./media/defaulttopology.png)
-5.  Repeat steps 2 through 4 for each VM that is listed on the**Environment**page.
+5.  Repeat steps 2 through 4 for each VM that is listed on the **Environment** page.
 
 ## Generate a runbook from the topology
 Based on the topology information in the DefaultTopologyData.xml file, you must generate the runbook file that will provide step-by-step instructions for updating each VM.
 
 -   On any VM, run the following command to generate the runbook.
 
-        AXUpdateInstaller.exe generate -runbookid=[runbookID] -topologyfile=[topologyFile] -servicemodelfile=[serviceModelFile] -runbookfile=[runbookFile]
+        AXUpdateInstaller.exe generate –runbookid=[runbookID] –topologyfile=[topologyFile] –servicemodelfile=[serviceModelFile] –runbookfile=[runbookFile]
 
     Here is an explanation of the parameters that are used in this command:
 
-    -   **\[runbookID\]**– A parameter that is specified by the developer who applies the deployable package
-    -   **\[topologyFile\]**– The path of the DefaultTopologyData.xml file
-    -   **\[serviceModelFile\]**– The path of the DefaultServiceModelData.xml file
-    -   **\[runbookFile\]**– The name of the runbook file to generate (for example, AOSRunbook.xml)
+    -   **\[runbookID\]** – A parameter that is specified by the developer who applies the deployable package
+    -   **\[topologyFile\]** – The path of the DefaultTopologyData.xml file
+    -   **\[serviceModelFile\]** – The path of the DefaultServiceModelData.xml file
+    -   **\[runbookFile\]** – The name of the runbook file to generate (for example, AOSRunbook.xml)
 
     **Example**
 
         AXUpdateInstaller.exe generate -runbookid="VAL200AA2BMEDIU-runbook" -topologyfile="DefaultTopologyData.xml" -servicemodelfile="DefaultServiceModelData.xml" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
 
-The runbook provides the sequence of steps that must be run to update the environment. The following illustration shows an example of a runbook file. Each step in a runbook is associated with an ID, a machine name, and step execution details. [![runbook-steps](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
+The runbook provides the sequence of steps that must be run to update the environment. The following illustration shows an example of a runbook file. Each step in a runbook is associated with an ID, a machine name, and step execution details.
+
+[![runbook-steps](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
 
 ## Install a deployable package
 1.  Based on the sequence of steps that is specified in the runbook, start with the first machine that is listed.

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services | Microsoft Docs
+title: Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 23:24:33
+ms.date: 2015-12-04 23 - 24 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: AX 2012
+ms.reviewer: annbe
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18231
-ms.assetid: 8cb27f86-f165-4e88-8cde-69b5bba2e119
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: e0a86fb4-047d-40ac-9230-cd5881116f23
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -105,7 +107,7 @@ High availability
 
 Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability.This environment includes 14 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3—already installed on them.**Note: **When you deploy this environment, the AX 2012 R3 CU8 version of this environment is deployed by default. If you want to deploy the AX 2012 R3 RTM version, you can select that version during deployment.
 
-For more information about the virtual machines, and the software installed on each virtual machine in these environments, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure).
+For more information about the virtual machines, and the software installed on each virtual machine in these environments, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
 
 ## The process for deploying AX 2012 R3 on Azure
 The process for deploying AX 2012 R3 on Azure is complex and should be completed by system implementers who have experience with:
@@ -127,35 +129,35 @@ To deploy AX 2012 R3 on Azure, see the articles that are listed in the following
 </tr>
 <tr class="even">
 <td>Plan your deployment</td>
-<td>Before you can deploy AX 2012 R3 on Azure, there are several things you must consider and decisions you must make. For example, you must consider licensing requirements, purchase an Azure subscription, and select the type of AX 2012 R3 environment that you will deploy on Azure.For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure">Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure</a>.</td>
+<td>Before you can deploy AX 2012 R3 on Azure, there are several things you must consider and decisions you must make. For example, you must consider licensing requirements, purchase an Azure subscription, and select the type of AX 2012 R3 environment that you will deploy on Azure.For more information, see <a href="plan-2012-r3-deployment-azure.md">Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure</a>.</td>
 </tr>
 <tr class="odd">
 <td>Deploy AX 2012 R3 on Azure</td>
 <td>Microsoft Dynamics Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool in Lifecycle Services to deploy AX 2012 R3 on Azure.To deploy a demo environment, see:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-an-ax-2012-r3-or-ax-2012-r3-cu8-demo-environment-on-azure">Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-retail-essentials-demo-environment-on-azure">Deploy a Retail essentials demo environment on Azure</a></li>
+<li><a href="deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md">Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure</a></li>
+<li><a href="deploy-retail-essentials-demo-environment-azure.md">Deploy a Retail essentials demo environment on Azure</a></li>
 </ul>
 To deploy a dev/test environment, see:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-development-environment-on-azure">Deploy a development environment on Azure</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-test-environment-on-azure">Deploy a test environment on Azure</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-retail-essentials-devtest-environment-on-azure">Deploy a Retail essentials dev/test environment on Azure</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-retail-e-commerce-devtest-environment-on-azure">Deploy a Retail e-commerce dev/test environment on Azure</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-retail-mobility-devtest-environment-on-azure">Deploy a Retail mobility dev/test environment on Azure</a></li>
+<li><a href="deploy-development-environment-azure.md">Deploy a development environment on Azure</a></li>
+<li><a href="deploy-test-environment-azure.md">Deploy a test environment on Azure</a></li>
+<li><a href="deploy-retail-essentials-devtest-environment-azure.md">Deploy a Retail essentials dev/test environment on Azure</a></li>
+<li><a href="deploy-retail-ecommerce-devtest-environment-azure.md">Deploy a Retail e-commerce dev/test environment on Azure</a></li>
+<li><a href="deploy-retail-mobility-devtest-environment-azure.md">Deploy a Retail mobility dev/test environment on Azure</a></li>
 </ul>
 To deploy an environment that can be configured for high availability, see:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-high-availability-environment-on-azure">Deploy a high availability environment on Azure</a></li>
+<li><a href="deploy-high-availability-environment-azure.md">Deploy a high availability environment on Azure</a></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Manage your AX 2012 R3 environment on Azure</td>
-<td>To help you manage your AX 2012 R3 environment on Azure, see the tips and tricks in <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/manage-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure">Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure</a>.</td>
+<td>To help you manage your AX 2012 R3 environment on Azure, see the tips and tricks in <a href="manage-2012-r3-deployment-azure.md">Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure</a>.</td>
 </tr>
 <tr class="odd">
 <td>Troubleshoot issues that may occur</td>
-<td>If you need to contact Microsoft with licensing questions or technical issues, you must first determine which support team to contact: the Azure support team or the Microsoft Dynamics AX support team. For information about when and how to contact each support team, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/troubleshoot-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure">Troubleshoot your Microsoft Dynamics AX 2012 R3 deployment on Azure</a>.</td>
+<td>If you need to contact Microsoft with licensing questions or technical issues, you must first determine which support team to contact: the Azure support team or the Microsoft Dynamics AX support team. For information about when and how to contact each support team, see <a href="troubleshoot-2012-r3-deployment-azure.md">Troubleshoot your Microsoft Dynamics AX 2012 R3 deployment on Azure</a>.</td>
 </tr>
 </tbody>
 </table>

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Column definitions in financial reports | Microsoft Docs
+title: Column definitions in financial reports
 description: This article provides information about column definitions. A column definition is a report component, or building block, that defines the contents of columns on a report. Like row definitions, basic column definitions can be used on multiple reports.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-08-09 21:27:36
+ms.date: 2016-08-09 21 - 27 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FinancialReports
+ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Management Reporter
+ms.search.scope: Management Reporter
 # ms.tgt_pltfrm: 
 ms.custom: 106601
-ms.assetid: 9f73da7d-e6da-46f2-a230-66d02a3864c7
-ms.region: Global
-# ms.industry: 
+ms.assetid: 00565ccf-f6d0-4406-b830-f26244f041a1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 
@@ -360,7 +362,7 @@ The type of information that each column on a report includes is specified by th
     </tr>
     <tr class="even">
     <td>CALC</td>
-    <td>Display the result of a simple or complex calculation that is specified in the <strong>Formula</strong> cell. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/advanced-formatting-options-in-financial-reporting">Advanced formatting options in financial reporting</a>.</td>
+    <td>Display the result of a simple or complex calculation that is specified in the <strong>Formula</strong> cell. For more information, see <a href="advanced-formatting-options-financial-reporting.md">Advanced formatting options in financial reporting</a>.</td>
     </tr>
     <tr class="odd">
     <td>DESC</td>
@@ -368,7 +370,7 @@ The type of information that each column on a report includes is specified by th
     </tr>
     <tr class="even">
     <td>ROW</td>
-    <td>Display the individual row codes for financial rows from the <strong>Row Code</strong> column in the row definition. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/row-definitions-in-financial-report-designer">Row definitions in financial reporting</a>.</td>
+    <td>Display the individual row codes for financial rows from the <strong>Row Code</strong> column in the row definition. For more information, see <a href="row-definitions-financial-reporting.md">Row definitions in financial reporting</a>.</td>
     </tr>
     <tr class="odd">
     <td>ACCT (Account codes)</td>
@@ -584,5 +586,5 @@ See also
 
 [Row definitions in financial reporting](http://ax.help.dynamics.com/en/wiki/row-definitions-in-financial-reporting/)
 
-[Advanced formatting options in financial reporting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/advanced-formatting-options-in-financial-reporting)
+[Advanced formatting options in financial reporting](advanced-formatting-options-financial-reporting.md)
 

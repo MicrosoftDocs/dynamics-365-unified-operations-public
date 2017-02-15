@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities and packages framework | Microsoft Docs
+title: Data entities and packages framework
 description: This topic provides information about using data entities and data entity packages in Microsoft Dynamics 365 for Operations. 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:26:04
+ms.date: 2016-06-29 14 - 26 - 04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96283
-ms.assetid: a64a9304-115e-4586-a4c3-b08ea2835e74
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 7f42e11d-a642-4a54-959d-913665e51b59
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -180,7 +182,7 @@ Import is the process of pulling data into a system utilizing data entities. The
 See also
 --------
 
-[Data entities](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities)
+[Data entities](data-entities.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

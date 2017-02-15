@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012) | Microsoft Docs
+title: Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 description: This topic describes how to install the Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta). Only advanced users should use this tool. 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 19:13:07
+ms.date: 2015-12-04 19 - 13 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17551
-ms.assetid: 63d529f8-74c3-4873-8fa5-57de63c4250b
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: bbfd1b62-1029-4ea8-882a-833a221be0f2
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -49,7 +51,7 @@ During export, the tool creates three files for each table. Make sure that there
 See also
 --------
 
-[Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/test-data-transfer-tool-beta-for-microsoft-dynamics-ax-2012)
+[Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md)
 
 [Run the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=371)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: System-defined buttons | Microsoft Docs
-description: This topic describes the system-defined buttons.
+title: System-defined buttons
+description: 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-18 23:10:00
+ms.date: 2015-12-18 23 - 10 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,29 +13,31 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28271
-ms.assetid: 2b735281-fef9-4302-b8ca-e7af5a0bd9c8
-ms.region: Global
-# ms.industry: 
+ms.assetid: d21319d1-338e-4374-afca-5e364930cb59
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # System-defined buttons
 
-This topic describes the system-defined buttons.
 
-Overview
---------
 
-Several system-defined buttons are automatically present on the Action Pane. In general, these system-defined buttons should be applicable and should kept available to the end user. However, in rare cases (for example, if a more specialized control is required, or if a system-defined button isn't useful or applicable for a particular form), developers might have to explicitly suppress or override a system-defined button. For example, in some situations, a MenuButton that lets the user select from multiple “New” options might be preferable to the system-defined **New** button.
+Introduction
+------------
+
+Several system-defined buttons are automatically present on the Action Pane in the current version of Microsoft Dynamics AX. In general, these system-defined buttons should be applicable and should kept available to the end user. However, in rare cases (for example, if a more specialized control is required, or if a system-defined button isn't useful or applicable for a particular form), developers might have to explicitly suppress or override a system-defined button. For example, in some situations, a MenuButton that lets the user select from multiple “New” options might be preferable to the system-defined **New** button.
 
 ## List of systemdefined buttons
 The following tables give the full list of system-defined buttons. The tables also provide information that will be useful if these buttons must be conditionally or completely suppressed or overridden.
@@ -77,7 +79,7 @@ For several form styles, it doesn't make sense to add system-defined buttons, pr
 -   Wizard
 
 ## Suppressing most or all of the systemdefined buttons
-If you find that you're suppressing most or all of the system-defined buttons on a form, you should reexamine your form style (**Form.Design.Style**) or pattern, and reconsider the purpose of the form. Should the form be a dialog instead? (By default, dialogs don't receive any system-defined buttons.) Often, forms that are in this situation have **Style**=**Auto** and would be more appropriate as dialogs. If your form should not technically be a dialog, there is no currently no metadata or code that can automatically suppress all the system-defined buttons at the same time. Unless you switch the form to a form style that doesn't receive any system-defined buttons, you must to suppress/override each button individually (see the other sections in this article). This scenario should be extremely rare.
+If you find that you're suppressing most or all of the system-defined buttons on a form, you should reexamine your form style (**Form.Design.Style**) or pattern, and reconsider the purpose of the form. Should the form be a dialog instead? (By default, dialogs don't receive any system-defined buttons.) Often, forms that are in this situation have **Style**=**Auto** and would be more appropriate as dialogs in the current version of Dynamics AX. If your form should not technically be a dialog, there is no currently no metadata or code that can automatically suppress all the system-defined buttons at the same time. Unless you switch the form to a form style that doesn't receive any system-defined buttons, you must to suppress/override each button individually (see the other sections in this article). This scenario should be extremely rare.
 
 ## New and Delete system buttons
 The **New** and **Delete** buttons are currently added by the kernel, and are controlled via special metadata properties. These buttons always work on the first master data source on the form.

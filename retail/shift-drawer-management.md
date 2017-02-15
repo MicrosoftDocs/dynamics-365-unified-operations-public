@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Shift and cash drawer management | Microsoft Docs
-description: This article explains how to set up and use the two types of retail point of sale (POS) shifts: shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
+title: Shift and cash drawer management
+description: This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-07-28 19:03:49
+ms.date: 2016-07-28 19 - 03 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2041
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2041
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 105011
-ms.assetid: 7b732e8c-9dd9-4adc-b4e6-af2737184624
-ms.region: global
-ms.industry: Retail
+ms.assetid: e80d31a5-e7f2-4c8e-a16e-a643569cdd79
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: rubendel
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Shift and cash drawer management
 
-This article explains how to set up and use the two types of retail point of sale (POS) shifts: shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
+This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
 
 There are two types of retail point of sale (POS) shifts: stand-alone and shared. Stand-alone shifts can be used by only one worker at a time. Shared shifts can be used by multiple users in multiple places. Therefore, they effectively create a single shift for multiple workers in a store.
 

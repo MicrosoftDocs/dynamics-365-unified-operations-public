@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deployment with continuous build and test automation | Microsoft Docs
+title: Deployment with continuous build and test automation
 description: This wiki describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-04-12 18:43:07
+ms.date: 2016-04-12 18 - 43 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13171
-ms.assetid: 31a61530-0303-42b8-8872-b8fa459e3580
-ms.region: Global
-# ms.industry: 
+ms.assetid: bbad25ca-1ab4-4e88-963c-7b47f898563b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shailesn
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ This wiki describes how to deploy a developer topology that supports continuous 
 Prerequisite: This requires a Visual Studio Team Services (VSTS) account for cloud VM deployment.
 
 ## Workflow
-After you have configured a VSTS subscription in Lifecycle Services (LCS), you can trigger Developer Topology Deployment to set up Developer and Build VMs. In this deployment, the Developer VM is configured with workspace mapping to develop against a VSTS project. The Build VM is auto-configured with the build agent/controller to build modules  VSTS project and to execute automated tests with external endpoint for validation. For more information on writing custom test code or generating automated test code to integrate with build infrastructure, see [Testing and validations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/perf-test/tst101-testing-and-validations-in-microsoft-dynamics-ax-7). A typical workflow or usage scenario is shown below. [![build12](./media/build12-1024x693.jpg)](./media/build12.jpg)
+After you have configured a VSTS subscription in Lifecycle Services (LCS), you can trigger Developer Topology Deployment to set up Developer and Build VMs. In this deployment, the Developer VM is configured with workspace mapping to develop against a VSTS project. The Build VM is auto-configured with the build agent/controller to build modules  VSTS project and to execute automated tests with external endpoint for validation. For more information on writing custom test code or generating automated test code to integrate with build infrastructure, see [Testing and validations](testing-validation.md). A typical workflow or usage scenario is shown below. [![build12](./media/build12-1024x693.jpg)](./media/build12.jpg)
 
 ## Set up Visual Studio Team Services (VSTS)
 Compare VSTS features required for your organization: <https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs>
@@ -114,7 +116,7 @@ There are two ways to integrate test as part of build process for testing and va
 -   SysTest framework based unit and component level tests.
 -   Generate code from Task Recorder recording XML for automated test execution.
 
-The details of these two approaches are mentioned in the [Testing and validation. ](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/perf-test/tst101-testing-and-validations-in-microsoft-dynamics-ax-7)Review this article for testing and validation strategy.
+The details of these two approaches are mentioned in the [Testing and validation. ](testing-validation.md)Review this article for testing and validation strategy.
 
 ## Use the Build VM environment
 When a Build VM is deployed in Developer topology through LCS, it is pre-configured and ready to start a build. You can change the default configuration at any time from the Visual Studio IDE or the VSTS interface. On a Build VM, the module source code is synchronized to the build machine for easy build setup. The build machine is also auto-configured with default settings for build agent, build controller, build process template, and build definition. Tests that are integrated with build definition are executed after the build is successful.

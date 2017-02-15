@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dimension Entry control dialog support | Microsoft Docs
+title: Dimension Entry control dialog support
 description: Describes the code pattern for putting a Dimension Entry control on a dialog.
-author: twheeloc
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-12 23:48:02
+ms.date: 2015-12-12 23 - 48 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26321
-ms.assetid: 2a2e0937-26d9-49ef-b016-4b448a6f52a9
-ms.region: Global
-# ms.industry: 
-ms.author: ghenriks
+ms.assetid: 2f446cae-4b0b-4db0-bb23-0953a371a2a0
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: ghenriks
 
 Describes the code pattern for putting a Dimension Entry control on a dialog.
 
-The code pattern to add Dimension Entry controls to dialogs has changed for Microsoft Dynamics 365 for Operations. This is an example of the old model:
+The code pattern to add Dimension Entry controls to dialogs has changed for Microsoft Dynamics AX. This is an example of the old model:
 
     DimensionDefaultingControllerNoDS dimDefaultingController;
     dimDefaultingController = DimensionDefaultingControllerNoDS::constructInGroupWithValues(true, true, true, 0, _formRun, financialDimensionGroup, "@SYS123456");
@@ -40,7 +42,7 @@ The code pattern to add Dimension Entry controls to dialogs has changed for Micr
     dimDefaultingController.pageActivated();
     dimDefaultingController.loadValues(dimensionAttributeValueSetId);
 
-In Dynamics 365 for Operations, this code would be converted to:
+In Dynamics AX, this code would be converted to:
 
     DialogField dimensionEntryField;
     DimensionEntryControl dimensionEntryValues;

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Address books | Microsoft Docs
+title: Address books
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-11 23:25:59
+ms.date: 2015-12-11 23 - 25 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: DirPartyCheckDuplicate, DirPartyTable
+ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23601
-ms.assetid: bc23b9f7-d7e3-49ff-b782-c79efe3707f6
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 540296e4-078d-4cb6-a410-f128aa437905
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

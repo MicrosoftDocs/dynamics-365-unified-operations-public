@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade the Dynamics AX platform to the August 2016 release | Microsoft Docs
+title: Upgrade the Dynamics AX platform to the August 2016 release
 description: This topic explains how to upgrade your Microsoft Dynamics AX platform to the August 2016 release of Dynamics AX.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-08-15 18:30:38
+ms.date: 2016-08-15 18 - 30 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX platform update 2
+# ms.reviewer: 11
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 125753
-ms.assetid: 6f5bf5ea-88e4-43ed-9c3c-b474170df158
-ms.region: Global
-# ms.industry: 
+ms.assetid: 423f53d0-cd48-420d-926c-56980b4d438a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tabell
+ms.dyn365.intro: Aug-16
+ms.dyn365.version: Platform update 2
 
 ---
 
@@ -35,7 +37,7 @@ This topic explains how to upgrade your Microsoft Dynamics AX platform to the Au
 Overview
 --------
 
-**Important:** This topic applies only to Microsoft Dynamics AX releases prior to August 2016. For Microsoft Dynamics 365 for Operations updates, see the topic: [Upgrade Dynamics 365 for Operations to the latest platform update](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update). The Microsoft Dynamics AX platform consists of the following components:
+**Important:** This topic applies only to Microsoft Dynamics AX releases prior to August 2016. For Microsoft Dynamics 365 for Operations updates, see the topic: [Upgrade Dynamics 365 for Operations to the latest platform update](upgrade-latest-platform-update.md). The Microsoft Dynamics AX platform consists of the following components:
 
 -   Dynamics AX platform binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services
 -   The following Application Object Tree (AOT) packages:
@@ -69,7 +71,7 @@ Platform update packages are released by Microsoft, and can be downloaded from t
 From a process perspective, a platform upgrade package is similar to a binary hotfix deployable package.
 
 -   To apply the package to your development or build environment, follow the instructions in the sections below.
--   To apply the package to your demo, sandbox tier-2, or production environments, follow the instructions for a binary hotfix in the topic [Apply a Deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-a-deployable-package-on-a-dynamics-ax-system).
+-   To apply the package to your demo, sandbox tier-2, or production environments, follow the instructions for a binary hotfix in the topic [Apply a Deployable package](apply-deployable-package-system.md).
 
 ## Apply the platform update package on your development environment
 ### Delete any platform metadata hotfixes from your VSTS project
@@ -91,7 +93,7 @@ You can find these hotfixes by browsing the check-in history of these models Mic
     -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
     -   If you're upgrading a runtime environment, such as a Tier-2 sandbox or other environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
-4.  Follow the standard instructions for installing a deployable package. See [Install a deployable package in Microsoft Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/installing-deployable-package-in-ax7).
+4.  Follow the standard instructions for installing a deployable package. See [Install a deployable package in Microsoft Dynamics AX](install-deployable-package.md).
 5.  If you're working in a development environment, rebuild your application’s code.
 
 **Important:** Do not apply this update in a runtime environment unless you have validated it in a development environment first.
@@ -106,7 +108,7 @@ You can find these hotfixes by browsing the check-in history of these models Mic
 
 ### Install the Visual Studio development tools
 
-Update the Microsoft Visual Studio development tools as described in [Updating the Dynamics AX Visual Studio development tools](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/updating-the-dynamics-ax7-visual-studio-development-tools).
+Update the Microsoft Visual Studio development tools as described in [Updating the Dynamics AX Visual Studio development tools](update-development-tools.md).
 
 ### Regenerate form adaptor models
 
@@ -182,5 +184,5 @@ Before you apply the platform update package on your development instance, follo
 See also
 --------
 
-[Process for upgrading to the latest Dynamics AX update](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/process-for-upgrading-to-the-latest-dynamics-ax-update)
+[Process for upgrading to the latest Dynamics AX update](upgrade-latest-update.md)
 

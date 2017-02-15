@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add extension properties to a customer entity | Microsoft Docs
+title: Add extension properties to a customer entity
 description: This tutorial shows how to use extension properties to extend an entity. 
 author: josaw1
 manager: AnnBe
-ms.date: 2016-09-30 22:06:20
+ms.date: 2016-09-30 22 - 06 - 20
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 196163
-ms.assetid: ab8563fe-8001-43b3-a3a5-83ddc2c58aa9
-ms.region: Global
-ms.industry: Retail
+ms.assetid: 95cbacb6-b983-4939-abb1-14a9661390c5
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: mumani
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

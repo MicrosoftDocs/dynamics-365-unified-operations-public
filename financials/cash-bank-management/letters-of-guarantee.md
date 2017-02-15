@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Letters of guarantee | Microsoft Docs
+title: Letters of guarantee
 description: This article provides information about letters of guarantee. In a letter of guarantee, a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment or obligation to that person. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-04 23:28:07
+ms.date: 2015-12-04 23 - 28 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BankLGGuarantee
+ms.search.form: BankLGGuarantee
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18291
-ms.assetid: 181c1ee6-7f1e-4488-9cac-2e90a0d34748
-ms.region: Global
-# ms.industry: 
+ms.assetid: 276d564d-0d47-42cf-9593-8f53f8b24871
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

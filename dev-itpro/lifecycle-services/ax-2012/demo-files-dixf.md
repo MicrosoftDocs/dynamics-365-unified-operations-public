@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Demo files for the Data import/export framework | Microsoft Docs
+title: Demo files for the Data import/export framework
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-01-21 18:14:08
+ms.date: 2016-01-21 18 - 14 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 29921
-ms.assetid: 796b09f1-ab8d-4b58-b85c-e0adc6395bb8
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 59bc2fac-cb83-42ae-8e84-28b1631b1a46
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Electronic reporting destinations | Microsoft Docs
+title: Electronic reporting destinations
 description: You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who are granted appropriate access rights can also modify destination settings at run time. This article explains ER destination management, the types of destinations that are supported, and security considerations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-07-01 15:47:33
+ms.date: 2016-07-01 15 - 47 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: DocuType, ERSolutionTable
+ms.search.form: DocuType, ERSolutionTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 97423
-ms.assetid: 2a056619-9599-4ab8-bbc1-ff85179bc9c0
-ms.region: Global
-# ms.industry: 
+ms.assetid: b1f32cb9-dba8-41f5-94a6-bb8b9ffb384b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mrolecki
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 
@@ -116,5 +118,5 @@ The prerequisite is that your format must be available in ER configurations. If 
 See also
 --------
 
-[Electronic reporting overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger)
+[Electronic reporting overview](general-electronic-reporting.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Maintainance in the Intelligent Data Management Framework (AX 2012) | Microsoft Docs
+title: Maintainance in the Intelligent Data Management Framework (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 23:59:14
+ms.date: 2015-12-04 23 - 59 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18471
-ms.assetid: 513e96b3-4644-40a3-8ff9-43475833060c
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 429c2670-2a5c-401b-8682-6e71297a88e0
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

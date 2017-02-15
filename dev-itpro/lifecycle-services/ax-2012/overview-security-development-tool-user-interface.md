@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Security Development Tool (AX 2012) | Microsoft Docs
+title: Security Development Tool (AX 2012)
 description: This topic describes the user interface of the Security Development Tool.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 17:51:41
+ms.date: 2015-12-05 17 - 51 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18571
-ms.assetid: 2013b8a5-8795-4b9b-9e90-fbbd15f396fe
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: b0b543e7-bf06-4fc8-a9d9-bd9e36b24e93
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -63,7 +65,7 @@ Use the shortcut menu to interact with entry points in the tree view. ![Security
 -   **Open in current workspace** – Open the linked menu item in the current workspace.
 -   **Open in security test workspace** – Open the linked menu item in the **Security test** workspace.
 -   **Discover submenu items** – Use Application Object Tree (AOT) metadata to discover entry points that are used in the linked form for the menu item that is currently selected.
--   **Set entry point permissions for current node and expanded subtree items** – Open a guided form, where you can set the access level for the selected entry point and all the expanded subtree items. For more information, see [Define or edit entry point permissions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/define-or-edit-entry-point-permissions).
+-   **Set entry point permissions for current node and expanded subtree items** – Open a guided form, where you can set the access level for the selected entry point and all the expanded subtree items. For more information, see [Define or edit entry point permissions](define-edit-entry-point-permissions.md).
 -   **Reference duty** – View a list of duties that grant the selected entry point the corresponding access level. You can view the reference duty for the selected security object. This option is available only for roles.
 -   **Reference privilege** – View a list of privileges that grant the selected entry point the corresponding access level. You can view the reference privilege for the selected security object. This option is available only for roles and duties.
 -   **Open new AOT window** – Open a new AOT window for the selected node.
@@ -79,7 +81,7 @@ This section describes the controls on the ribbon of the list view. The list vie
 
 -   **Open the security test workspace** – Open a security test workspace by using the permissions for the selected security object.
 -   **Start recording** – When you start the recorder, you can execute business process flows in the current workspace. When a business process flow is completed, you can stop recording and view all entry points that were recorded. This function records only menu items in the rich client.
--   **Load trace file** – Load the entry points that have been traced in Enterprise Portal. For more information, see [Record entry points in Microsoft Dynamics AX Enterprise Portal](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/record-entry-points-in-microsoft-dynamics-ax-enterprise-portal).
+-   **Load trace file** – Load the entry points that have been traced in Enterprise Portal. For more information, see [Record entry points in Microsoft Dynamics AX Enterprise Portal](record-entry-points-enterprise-portal.md).
 -   **Save recording** – Save the list of entry points that you just recorded to an .xml file.
 -   **Load recording** – Load a list of recorded entry points from an .xml file.
 -   **Load additional metadata** – Load additional metadata for all entry points. This data includes the label, layer, and model, and also license information.
@@ -92,7 +94,7 @@ This section describes the controls on the ribbon of the list view. The list vie
 See also
 --------
 
-[Install the Security Development Tool](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/install-the-security-development-tool)
+[Install the Security Development Tool](install-security-development-tool.md)
 
 [Run the Security Development Tool](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=721)
 

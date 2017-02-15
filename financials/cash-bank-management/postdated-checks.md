@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Postdated checks | Microsoft Docs
-description: This article provides information about support for postdated checks in Microsoft Dynamics 365 for Operations. Postdated checks are checks that are issued to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
+title: Postdated checks
+description: This article provides information about support for postdated checks in Microsoft Dynamics AX. Postdated checks are checks that are issued to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-11 15:16:27
+ms.date: 2015-12-11 15 - 16 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,26 +13,28 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21741
-ms.assetid: 1bbf1338-1e92-4ed9-929d-8010bfb898b3
-ms.region: Global
-# ms.industry: 
+ms.assetid: bf3a2c3a-cf57-4317-9245-e15c899d7395
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Postdated checks
 
-This article provides information about support for postdated checks in Microsoft Dynamics 365 for Operations. Postdated checks are checks that are issued to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
+This article provides information about support for postdated checks in Microsoft Dynamics AX. Postdated checks are checks that are issued to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
 
-Microsoft Dynamics 365 for Operations supports the full management cycle for postdated checks in both Accounts receivable and Accounts payable, as shown in the following table.
+Microsoft Dynamics AX supports the full management cycle for postdated checks in both Accounts receivable and Accounts payable, as shown in the following table.
 
 **Scenario**
 

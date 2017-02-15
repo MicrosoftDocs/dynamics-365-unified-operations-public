@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Material substitution in manufacturing | Microsoft Docs
+title: Material substitution in manufacturing
 description: This topic describes how to substitute materials during the production process. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-23 19:04:15
+ms.date: 2016-03-23 19 - 04 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ProdBOM
+ms.search.form: ProdBOM
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70171
-ms.assetid: 3f9735eb-a755-4eab-87f8-12d68647a691
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: ebbd65a5-398c-4b25-9b5c-41af992641f7
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: johanho
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

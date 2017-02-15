@@ -1,18 +1,11 @@
 ---
 # required metadata
 
-title: Budget planning | Microsoft Docs
-description: The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks:
-  - Creating organizational hierarchy for budget planning and configuring user security
-  - Defining budget plan scenarios, budget plan columns, layouts and Excel templates
-  - Creating and activating budget planning process
-  - Creating budget plan document by pulling in actuals from General ledger
-  - Using allocations to adjust budget plan document data
-  - Editing budget plan document data in Excel
-
+title: Budget planning
+description: The objective of this lab is to provide Dynamics partners a guided view of Dynamics ‘AX7’ functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-10-26 03:31:44
+ms.date: 2015-10-26 03 - 31 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -20,36 +13,31 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 # audience: 
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10763
-ms.assetid: 68afe487-310f-4196-829c-ca5389ed2b4c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1c1be5e3-dd02-4ead-b00f-792d331507d3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: sigitac
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Budget planning
 
-The objective of this lab is to provide a guided view of Microsoft Dynamics 365 for Operations functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks:
-  - Creating organizational hierarchy for budget planning and configuring user security
-  - Defining budget plan scenarios, budget plan columns, layouts and Excel templates
-  - Creating and activating budget planning process
-  - Creating budget plan document by pulling in actuals from General ledger
-  - Using allocations to adjust budget plan document data
-  - Editing budget plan document data in Excel
-
+The objective of this lab is to provide Dynamics partners a guided view of Dynamics ‘AX7’ functionality updates in Budget planning area. The intent of this lab is to illustrate a quick configuration example of budget planning module and showcase how budget planning can be accomplished using this configuration.  This lab will focus specifically on the following business processes or tasks -    - Creating organizational hierarchy for budget planning and configuring user security   - Defining budget plan scenarios, budget plan columns, layouts and Excel templates   - Creating and activating budget planning process   - Creating budget plan document by pulling in actuals from General ledger   - Using allocations to adjust budget plan document data   - Editing budget plan document data in Excel 
 
 **Prerequisites **
 ------------------
 
-For this tutorial, you’ll need to access the Dynamics 365 for Operations environment with Contoso demo data, and be provisioned as an administrator on the instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Dynamics 365 for Operations administrator credentials. When signing into Dynamics 365 for Operations, you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the Dynamics 365 for Operations using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” checkbox. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
+For this tutorial, you’ll need to access the Microsoft Dynamics ‘AX 7’ environment with Contoso demo data, and be provisioned as an administrator on the ‘AX 7’ instance. Do not use In Private browser mode for this lab - sign out from any other account in the browser if needed and sign in with Dynamics 'AX 7' administrator credentials. When signing into the Microsoft Dynamics 'AX 7', you **MUST** check the “Keep me signed in” checkbox. This creates a persistent cookie that the Excel App currently needs. If you sign in to the Microsoft Dynamics 'AX 7' using a browser other than IE, then you’ll be prompted to sign in within the Excel App. When you click “Sign in” in the Excel App, an IE popup window will open and when signing in you **MUST** check the “Keep me signed in” checkbox. If clicking “Sign in” in the Excel App doesn’t appear to do anything then you should clear the IE cookie cache.
 
 ## []()**Scenario overview**
 Julia works as a finance manager in Contoso Entertainment Systems in Germany (DEMF). As FY2016 approaches, she needs to work on setting up the company’s budget for the upcoming year. Budget preparation looks as follows:
@@ -73,7 +61,7 @@ Budget planning uses special security policies to configure access to budget pla
 3.1. Navigate to Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration. In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted. *Note: You can create new scenarios for this exercise if desired and use those instead.* [![Screenshot15](./media/screenshot15.png)](./media/screenshot15.png) *Note: as Julia is not using formal approval process for budget preparation, we will skip Workflows, Stages and Workflow stages setup in this lab and will use existing setup for Auto – approve workflow. See appendix for this workflow configuration.*
 
 ## **Task 4: Create budget plan columns**
-Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout. In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year. Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity. In this lab we will use Data entity to fill in the values. 4.1. In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Columns page. Click Office button on the top right corner of the form and pick Columns (unfiltered) [![Screenshot16](./media/screenshot16.png)](./media/screenshot16.png) 4.2. System will open Excel workbook to be used for filling in the values. If prompted, click Enable Editing and Trust this app [![Screenshot18](./media/screenshot18.png)](./media/screenshot18.png) [![Screenshot17](./media/screenshot17.png)](./media/screenshot17.png) 4.3. We will need more columns to fill the values in. Click Design on the right side pane to add the columns to the grid: [![Screenshot19](./media/screenshot19.png)](./media/screenshot19.png) 4.4. Click little pencil button next to PlanColumns to see available columns to add to the grid [![Screenshot20](./media/screenshot20.png)](./media/screenshot20.png) 4.5. Double click on each available field to add them to Selected fields and click Update [![Screenshot21](./media/screenshot21.png)](./media/screenshot21.png) 4.6. In Excel table add all the columns that need to be created. Use AutoFill feature in Excel to add the lines quickly. Make sure the lines are added as a part of the table (when using vertical scroll, you should be able to see column headers on the top of the grid) [![Screenshot22](./media/screenshot22.png)](./media/screenshot22.png) 4.7. Return to Dynamics 365 for Operations and refresh the page. Published values will appear in Dynamics 365 for Operations. [![Screenshot23](./media/screenshot23.png)](./media/screenshot23.png)
+Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout. In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year. Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity. In this lab we will use Data entity to fill in the values. 4.1. In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Columns page. Click Office button on the top right corner of the form and pick Columns (unfiltered) [![Screenshot16](./media/screenshot16.png)](./media/screenshot16.png) 4.2. System will open Excel workbook to be used for filling in the values. If prompted, click Enable Editing and Trust this app [![Screenshot18](./media/screenshot18.png)](./media/screenshot18.png) [![Screenshot17](./media/screenshot17.png)](./media/screenshot17.png) 4.3. We will need more columns to fill the values in. Click Design on the right side pane to add the columns to the grid: [![Screenshot19](./media/screenshot19.png)](./media/screenshot19.png) 4.4. Click little pencil button next to PlanColumns to see available columns to add to the grid [![Screenshot20](./media/screenshot20.png)](./media/screenshot20.png) 4.5. Double click on each available field to add them to Selected fields and click Update [![Screenshot21](./media/screenshot21.png)](./media/screenshot21.png) 4.6. In Excel table add all the columns that need to be created. Use AutoFill feature in Excel to add the lines quickly. Make sure the lines are added as a part of the table (when using vertical scroll, you should be able to see column headers on the top of the grid) [![Screenshot22](./media/screenshot22.png)](./media/screenshot22.png) 4.7. Return to Dynamics AX and refresh the form. Published values will appear in AX. [![Screenshot23](./media/screenshot23.png)](./media/screenshot23.png)
 
 ## []()Task 5: Create budget plan document layouts and templates
 Layout defines how budget plan document lines grid is going to look like when user opens budget plan document. It is also possible to switch the layout for budget plan document to see the same data in different angles. Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab) 5.1. In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Layouts page. Create a new layout for Monthly budget entry:
@@ -107,7 +95,7 @@ Exercise 2: Process simulation
 Allocation methods can be used in budget plan to easily copy information for budget plans from one scenario to another/ spread them across periods/ allocate to dimensions. We will use allocations to create current year budget from previous year actuals. 8.1. Pick all lines in the budget plan document grid and click button allocate budget [![Screenshot32](./media/screenshot32.png)](./media/screenshot32.png) 8.2. Select allocation method, Period key, Source and destination scenarios and click Allocate [![Screenshot33](./media/screenshot33.png)](./media/screenshot33.png) System will copy previous year actual amounts to current year budget and allocate them across periods using Sales curve period key. [![Screenshot34](./media/screenshot34.png)](./media/screenshot34.png)
 
 ## []()Task 9: Adjust budget plan document using Excel and finalize the document
-9.1. Click Button worksheet to open document contents in Excel [![Screenshot35](./media/screenshot35.png)](./media/screenshot35.png) 9.2. When Excel workbook opens, adjust the numbers in budget plan document and click button Publish. [![Screenshot36](./media/screenshot36.png)](./media/screenshot36.png) 9.3. Return to budget plan document in Dynamics 365 for Operations. Click Workflow &gt; Submit to Auto-approve the document [![Screenshot37](./media/screenshot37.png)](./media/screenshot37.png) Once workflow completes, budget plan document stage changes to Approved. [![Screenshot38](./media/screenshot38.png)](./media/screenshot38.png)
+9.1. Click Button worksheet to open document contents in Excel [![Screenshot35](./media/screenshot35.png)](./media/screenshot35.png) 9.2. When Excel workbook opens, adjust the numbers in budget plan document and click button Publish. [![Screenshot36](./media/screenshot36.png)](./media/screenshot36.png) 9.3. Return to budget plan document in Dynamics AX. Click button Workflow &gt; Submit to Auto-approve the document [![Screenshot37](./media/screenshot37.png)](./media/screenshot37.png) Once workflow completes, budget plan document stage changes to Approved. [![Screenshot38](./media/screenshot38.png)](./media/screenshot38.png)
 
 Appendix
 ========

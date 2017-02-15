@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Layout in Dynamics 365 for Operations | Microsoft Docs
+title: Layout in Dynamics 365 for Operations
 description: This article discusses layout in the Microsoft Dynamics AX web client. Layout is a design process that specifies how controls appear on a page. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-18 23:02:52
+ms.date: 2015-12-18 23 - 02 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28251
-ms.assetid: 4890e7a0-62e2-4c79-a6b9-aa8501f7addc
-ms.region: Global
-# ms.industry: 
+ms.assetid: 45ec1ba3-3741-4354-8e15-d9148bc64b37
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

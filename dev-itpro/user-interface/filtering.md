@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Filters | Microsoft Docs
+title: Filters
 description: This article explains the filtering options that are available in the current version of Microsoft Dynamics AX.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-23 21:42:21
+ms.date: 2015-12-23 21 - 42 - 21
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28721
-ms.assetid: 24e5dee1-84df-4c85-b6f0-2733e40046a7
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2aacd11c-4032-4d24-ba82-9afd47f21ebc
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

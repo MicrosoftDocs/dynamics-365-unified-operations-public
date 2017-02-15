@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Determine the optimal combination of overlapping discounts | Microsoft Docs
+title: Determine the optimal combination of overlapping discounts
 description: When discounts overlap, you must determine the combination of overlapping discounts that will produce the lowest transaction total or the highest total discount. When the discount amount varies according to the price of the products that are purchased, such as in the common “Buy 1, get 1 X percent off” (BOGO) retail discount, this process becomes an issue of combinatorial optimization.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-08 17:38:06
+ms.date: 2016-06-08 17 - 38 - 06
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: Released- Dynamics AX application 7.0.1
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89643
-ms.assetid: b448dcc4-4cd4-462d-9c3a-dc8a21978a09
-ms.region: global
-ms.industry: Retail
-ms.author: kfend
+ms.assetid: 8a4f4041-42a9-44b8-8d4f-31b2475b16b7
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: kfend
 
 When discounts overlap, you must determine the combination of overlapping discounts that will produce the lowest transaction total or the highest total discount. When the discount amount varies according to the price of the products that are purchased, such as in the common “Buy 1, get 1 X percent off” (BOGO) retail discount, this process becomes an issue of combinatorial optimization.
 
-This article applies to Microsoft Dynamics AX 2012 R3 with KB 3105973 (released November 2, 2015) or later, and to the February 2016 release of Microsoft Dynamics AX. To determine the combination overlapping discounts to apply in a timely manner, and to continue to provide the rich discounting functionality that is available in Microsoft Dynamics AX for Retail, we have introduced a method for applying overlapping discounts. We call this new method **marginal value ranking**. Marginal value ranking is used when the time that is required in order to evaluate the possible combinations of overlapping discounts exceeds a threshold that is configurable on the **Retail parameters** page in Dynamics AX. In the marginal value ranking method, a value is calculated for each overlapping discount by using the discount’s value on the shared products. The overlapped discounts are then applied from the highest relative value to the lowest relative value. For details about the new method, see the “Marginal value” section, later in this article. Marginal value ranking isn’t used when the discount amounts for a product aren’t affected by another product in the transaction. For example, this method isn’t used for two simple discounts, or for a simple discount and a single product quantity discount.
+This article applies to Microsoft Dynamics AX 2012 R3 with KB 3105973 (released November 2, 2015) or later, and to the February 2016 release of Microsoft Dynamics AX. To determine the combination overlapping discounts to apply in a timely manner, and to continue to provide the rich discounting functionality that is available in Microsoft Dynamics AX for Retail, we have introduced a new method for applying overlapping discounts. We call this new method **marginal value ranking**. Marginal value ranking is used when the time that is required in order to evaluate the possible combinations of overlapping discounts exceeds a threshold that is configurable on the **Retail parameters** page in Dynamics AX. In the marginal value ranking method, a value is calculated for each overlapping discount by using the discount’s value on the shared products. The overlapped discounts are then applied from the highest relative value to the lowest relative value. For details about the new method, see the “Marginal value” section, later in this article. Marginal value ranking isn’t used when the discount amounts for a product aren’t affected by another product in the transaction. For example, this method isn’t used for two simple discounts, or for a simple discount and a single product quantity discount.
 
 ## Discount examples
 In Dynamics AX, you can create an unlimited number of retail discounts on a common set of products. However, because there is no limit, performance issues can occur when you try to calculate the discounts that should be used on the various products. The following examples illustrate this issue in more detail. In example 1, we start with two products and two overlapping discounts. Then, in example 2, we show how the issue evolves as more products are added.

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Analytics | Microsoft Docs
+title: Analytics
 description: This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-12 19:09:07
+ms.date: 2015-12-12 19 - 09 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24491
-ms.assetid: 4f4320f7-85a3-491d-a068-9b0950e0349c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 687a86d0-ef88-4baa-b222-d022fd0b16d6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: milindav
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

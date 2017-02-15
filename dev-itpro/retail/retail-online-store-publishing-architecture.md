@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail online store publishing architecture | Microsoft Docs
+title: Retail online store publishing architecture
 description: This topic contains conceptual information to help developers and system administrators understand how channels and catalogs are published from the retail module to an online store in Microsoft SharePoint 2013 Products. Understanding the publishing process can help you develop, manage, and troubleshoot your Retail online store.
 author: kfend
 manager: AnnBe
-ms.date: 2016-03-29 18:43:48
+ms.date: 2016-03-29 18 - 43 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72124
-ms.assetid: becdaaec-5206-4a85-9ff6-23650069fd11
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1f896d8a-983f-41de-b765-e5ecf2d3098a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

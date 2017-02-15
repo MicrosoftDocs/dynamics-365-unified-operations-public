@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Security Development Tool (AX 2012) | Microsoft Docs
+title: Security Development Tool (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 23:57:17
+ms.date: 2015-12-04 23 - 57 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18451
-ms.assetid: c7aff32f-29da-40b6-8752-2fd4c974f5ac
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 6c282741-cd56-42d1-895b-45110670d517
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -43,11 +45,11 @@ The Security Development Tool for Microsoft Dynamics AX 2012 is intended to help
 See also
 --------
 
-[Overview of the Security Development Tool user interface (AX 2012)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/overview-of-the-security-development-tool-user-interface)
+[Overview of the Security Development Tool user interface (AX 2012)](overview-security-development-tool-user-interface.md)
 
-[Install the Security Development Tool (AX 2012)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/install-the-security-development-tool)
+[Install the Security Development Tool (AX 2012)](install-security-development-tool.md)
 
-[Define or edit entry point permissions (AX 2012)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/define-or-edit-entry-point-permissions)
+[Define or edit entry point permissions (AX 2012)](define-edit-entry-point-permissions.md)
 
-[Record entry points in Microsoft Dynamics AX Enterprise Portal](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/record-entry-points-in-microsoft-dynamics-ax-enterprise-portal)
+[Record entry points in Microsoft Dynamics AX Enterprise Portal](record-entry-points-enterprise-portal.md)
 

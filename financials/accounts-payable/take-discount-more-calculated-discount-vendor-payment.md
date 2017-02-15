@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Take a discount that is more than the calculated discount for a vendor payment | Microsoft Docs
+title: Take a discount that is more than the calculated discount for a vendor payment
 description: This article walks you through a scenario where a cash discount is taken for an amount that is more than the discount that was originally available on the invoice. This scenario might occur if an organization comes to an agreement with the vendor to pay a smaller amount on the invoice. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:20:58
+ms.date: 2015-12-02 23 - 20 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerJournalTransVendPaym, VendOpenTrans
+ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14281
-ms.assetid: ece69f0e-e1b9-4064-9015-d01b51db7ee7
-ms.region: Global
-# ms.industry: 
+ms.assetid: 082b8588-0ed1-41e3-8b27-d0dcf95fd59a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

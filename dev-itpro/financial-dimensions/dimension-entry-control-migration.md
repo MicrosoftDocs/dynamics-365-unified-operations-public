@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dimension entry control migration | Microsoft Docs
+title: Dimension entry control migration
 description: This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
-author: twheeloc
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-12 20:44:25
+ms.date: 2015-12-12 20 - 44 - 25
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25531
-ms.assetid: 69b44c59-3817-431a-ae3a-b2fed25345fb
-ms.region: Global
-# ms.industry: 
-ms.author: ghenriks
+ms.assetid: f31d4f18-b3c0-4bc8-9609-2682858be556
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

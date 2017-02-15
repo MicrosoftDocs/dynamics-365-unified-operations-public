@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Production feedback | Microsoft Docs
+title: Production feedback
 description: This article provides information about production feedback, which gives workers feedback about production jobs. The article includes information about the various ways that production feedback can be updated.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09:19:15
+ms.date: 2015-12-07 09 - 19 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, ProdParmReportFinished
+ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, ProdParmReportFinished
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19351
-ms.assetid: 82eb4e1a-6cf9-44bf-be2b-6bef4dc3f697
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 9ced8519-744a-485d-b117-81adb63de3a6
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: johanho
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

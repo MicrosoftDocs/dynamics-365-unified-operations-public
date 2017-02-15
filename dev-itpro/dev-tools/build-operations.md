@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build operations | Microsoft Docs
+title: Build operations
 description: This topic reviews the process to build projects and full build of model packages.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-31 21:45:56
+ms.date: 2016-03-31 21 - 45 - 56
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 76764
-ms.assetid: 38d5a558-3c59-4fd0-9710-cb311235a151
-ms.region: Global
-# ms.industry: 
+ms.assetid: d821f2a5-20f6-4284-9b53-59e0db2be318
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -60,7 +62,7 @@ If you want to build all the elements in a project, regardless of whether they h
 
 ### Synchronizing the database at each build
 
-A project property lets you specify that the synchronize operation for the database should be performed every time that you build the project. This can be useful when you’re making changes to the table structure for an application. Each time that you build, you will know that the database is synchronized with the tables as they are defined in the project. For information about how to set project properties, see [Projects](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/projects). If your application has a large number of tables, and you aren’t yet testing the application, you can set the **Synchronize database on build** property to **false**. This change will reduce the time that is required to build the project. Then, when you begin testing, be sure to set this property back to **true**. If you must manually synchronize the tables in a project, you can right-click the project in Solution Explorer and then click **Synchronize &lt;project name&gt; with database**. To synchronize the entire database, which can be a long process, on the **Dynamics 365** menu, click **Synchronize database**.
+A project property lets you specify that the synchronize operation for the database should be performed every time that you build the project. This can be useful when you’re making changes to the table structure for an application. Each time that you build, you will know that the database is synchronized with the tables as they are defined in the project. For information about how to set project properties, see [Projects](projects.md). If your application has a large number of tables, and you aren’t yet testing the application, you can set the **Synchronize database on build** property to **false**. This change will reduce the time that is required to build the project. Then, when you begin testing, be sure to set this property back to **true**. If you must manually synchronize the tables in a project, you can right-click the project in Solution Explorer and then click **Synchronize &lt;project name&gt; with database**. To synchronize the entire database, which can be a long process, on the **Dynamics 365** menu, click **Synchronize database**.
 
 ### Build a model's package
 
@@ -96,7 +98,7 @@ When the code is built, these "TODO" comments appear in the **Task List** pane. 
 See also
 --------
 
-[Development tools](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/dynamics-ax7-technical-preview-development-tools)
+[Development tools](development-tools.md)
 
-[Developer home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Developer home page](developer-landing-page.md)
 

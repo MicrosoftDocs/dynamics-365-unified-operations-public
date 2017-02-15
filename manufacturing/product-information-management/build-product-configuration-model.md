@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build a product configuration model | Microsoft Docs
+title: Build a product configuration model
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-31 12:51:10
+ms.date: 2016-03-31 12 - 51 - 10
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PCProductConfigurationModelDetails
+ms.search.form: PCProductConfigurationModelDetails
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 75083
-ms.assetid: 1420ae5b-65fc-48b3-bb7c-fad3aee5670e
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 4f47072d-0af1-4a41-b2f4-ea8dc0df4005
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

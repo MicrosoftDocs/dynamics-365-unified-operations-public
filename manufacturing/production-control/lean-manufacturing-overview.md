@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Lean manufacturing overview | Microsoft Docs
+title: Lean manufacturing overview
 description: This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics AX.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09:20:37
+ms.date: 2015-12-07 09 - 20 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
+ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19371
-ms.assetid: 001d4883-d0ad-48a3-a7f4-b511f5dc4af6
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 7507bd44-d34d-4857-b7dc-ff18ed2a2631
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: crytt
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

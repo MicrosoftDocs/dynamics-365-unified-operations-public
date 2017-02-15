@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail Modern POS in offline mode | Microsoft Docs
+title: Retail Modern POS in offline mode
 description: This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
 author: kfend
 manager: AnnBe
-ms.date: 2016-02-05 00:29:31
+ms.date: 2016-02-05 00 - 29 - 31
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31441
-ms.assetid: 5c5ca6c2-2c4e-43e1-a786-6c5e5e692f83
-ms.region: Global
-# ms.industry: 
+ms.assetid: a7fc8113-8f30-4913-9c7c-beb2bb640415
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

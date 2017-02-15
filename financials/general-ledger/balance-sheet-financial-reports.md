@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Balance sheet financial reports | Microsoft Docs
+title: Balance sheet financial reports
 description: This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-11-04 19:29:22
+ms.date: 2015-11-04 19 - 29 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12274
-ms.assetid: 0902397b-0e45-4284-8cf9-147d20c3de64
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5df57e42-1290-41d6-9de7-45a8cb1541a5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jcart
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -75,9 +77,9 @@ The column definitions contain different types of columns to provide different l
 See also
 --------
 
-[Financial reporting](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/financial-reporting)
+[Financial reporting](financial-reporting-getting-started.md)
 
-[View financial reports](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/view-financial-reports)
+[View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 

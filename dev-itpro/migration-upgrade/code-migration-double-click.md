@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Code migration - Mouse double-click | Microsoft Docs
+title: Code migration -  Mouse double-click
 description: In Microsoft Dynamics 365 for Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-18 23:21:21
+ms.date: 2015-12-18 23 - 21 - 21
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28331
-ms.assetid: fc3f5015-e2cf-4221-92af-fe369a6c71df
-ms.region: Global
-# ms.industry: 
+ms.assetid: e4da2127-ae8d-4eb0-8412-95e23f50e9c8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Code migration - Mouse double-click
+# Code migration -  Mouse double-click
 
 In Microsoft Dynamics 365 for Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.
 
@@ -60,7 +62,7 @@ In another common usage pattern in Dynamics AX 2012, the user double-clicked a 
 
 -   Use a single-click to open a backing form that shows more details about a field. This functionality is automatically implemented for many fields that are based on table relations, and you can implement it manually by overriding the **jumpRef()** method on a control. The preferred migration route is to move the code from **mouseDblClick()** into a **jumpRef()** override, so that the navigation will be aligned with other fields in the system.
 -   Model a new button on the form, and move the logic from the **mouseDblClick()** method into the button's **clicked()** method. You should use this approach only for non-input field controls (for example, a Tree control) in which a **jumpRef()** override doesn't exist.
--   Add a right-click context menu (shortcut menu) option. However, note that UX guidelines specify that the commands on context menus should **always** be available in other locations on the page. A **View details** command is automatically added to the right-click context menu for controls that have an overridden **jumpRef()** method. Therefore, this approach should be used only as an optional addition to the previous migration route (modeling a new button). For more information about how to add context menu options in Dynamics 365 for Operations, see [Code migration: Context menus](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/code-migration-context-menus).
+-   Add a right-click context menu (shortcut menu) option. However, note that UX guidelines specify that the commands on context menus should **always** be available in other locations on the page. A **View details** command is automatically added to the right-click context menu for controls that have an overridden **jumpRef()** method. Therefore, this approach should be used only as an optional addition to the previous migration route (modeling a new button). For more information about how to add context menu options in Dynamics 365 for Operations, see [Code migration: Context menus](code-migration-context-menus.md).
 
 ### Moving logic to a button control
 

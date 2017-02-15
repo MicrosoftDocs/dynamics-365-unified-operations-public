@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Job scheduling | Microsoft Docs
+title: Job scheduling
 description: This article provides information about job scheduling, which is a more detailed form of scheduling than operations scheduling. You can use job scheduling to schedule individual jobs or shop orders, and to control the manufacturing environment.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09:22:08
+ms.date: 2015-12-07 09 - 22 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ProdSchedule
+ms.search.form: ProdSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19431
-ms.assetid: f4b66613-ca3f-44d5-bbed-98ac3f3b6692
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: b79f9830-ea15-4e42-a762-97a277b19006
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: crytt
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

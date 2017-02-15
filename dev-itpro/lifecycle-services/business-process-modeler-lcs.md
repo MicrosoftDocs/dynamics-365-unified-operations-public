@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Business process modeler | Microsoft Docs
+title: Business process modeler
 description: This article provides information about Business process modeler in Microsoft Dynamics Lifecycle Services (LCS). You can use this tool to create, view, and modify business process libraries and flowcharts for Microsoft Dynamics AX. The article also lists the prerequisites and explains how to start using Business process modeler.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-03 18:57:30
+ms.date: 2015-12-03 18 - 57 - 30
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15031
-ms.assetid: 42f60d8b-0f20-4940-bab8-4a1807709332
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6606bfa3-c117-4d7a-b1c5-e2794d0ecaa1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -63,7 +65,7 @@ To access Business process modeler, follow these steps:
 See also
 --------
 
-[Business process libraries in Business process modeler](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/business-process-libraries-in-business-process-modeler)
+[Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
 
-[Flowcharts in Business process modeler](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/flowcharts-in-business-process-modeler)
+[Flowcharts in Business process modeler](flowcharts-business-process-modeler.md)
 

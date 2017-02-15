@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Convert accounting or reporting currencies | Microsoft Docs
+title: Convert accounting or reporting currencies
 description: 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-04-05 14:45:05
+ms.date: 2016-04-05 14 - 45 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78223
-ms.assetid: a619d9e4-8f41-4452-a81c-f1f134215856
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7497e7a4-c843-4aba-b330-82063ed64677
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

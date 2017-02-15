@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install the Data import/export framework (AX 2012) | Microsoft Docs
+title: Install the Data import/export framework (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 19:21:44
+ms.date: 2015-12-04 19 - 21 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17631
-ms.assetid: d314a53e-392a-4ee5-b8c0-00114743dfde
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: ab0c861b-8dab-4ef6-b53c-a04b8d2d388a
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -40,7 +42,7 @@ ms.author: kfend
 **Important:** Because the staging environment is highly normalized and might require significant processing bandwidth, we recommend that you increase the Maximum buffer size setting for your environment while you migrate data. Use the Server configuration utility to set the value.
 
 ## Install the version of the Data Import/Export Framework that is available in Microsoft Dynamics AX 2012 R3
-To install the version of the framework available in Microsoft Dynamics AX 2012 R3, follow the instructions in [Install the Data import/export framework (AX 2012 R3)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/install-the-data-importexport-framework-ax-2012-r3).
+To install the version of the framework available in Microsoft Dynamics AX 2012 R3, follow the instructions in [Install the Data import/export framework (AX 2012 R3)](install-ax-2012-r3.md).
 
 ## Install the version of the Data Import/Export Framework that is available in cumulative update 7 for Microsoft Dynamics AX 2012 R2
 **Important:** If you are running Microsoft Dynamics AX 2012 R2, we strongly recommend that you use the version of the Data Import/Export Framework that is available in cumulative update 7. Components of the Data Import/Export Framework must be installed on computers that are running Integration Services, on a computer that is running an instance of Microsoft Dynamics AX Application Object Server (AOS), and on a computer that is running the Microsoft Dynamics AX client. You must run the installer locally on each computer. **Caution:** If you have previously installed the Data Import/Export Framework from InformationSource, you must fully uninstall it and then reinstall it for cumulative update 7 for Microsoft Dynamics AX 2012 R2. As part of this full uninstallation, you must remove all binary files by using Add/Remove Programs and uninstall the Data Import/Export Framework model. For more information, see [How to: Remove (Uninstall) a Model](http://msdn.microsoft.com/library/6552673a-a386-4349-9438-64c0de94ca7d(AX.60).aspx).

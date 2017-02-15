@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Malaysia Goods and Services Tax | Microsoft Docs
+title: Malaysia Goods and Services Tax
 description: This article provides information about how to set up Goods and Services Tax (GST) for a Malaysian company and explains the functionality that Microsoft Dynamics AX provides for GST.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-27 18:26:26
+ms.date: 2015-10-27 18 - 26 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY, TaxGSTReportConfiguration_MY
+ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY, TaxGSTReportConfiguration_MY
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10904
-ms.assetid: bb7d0b49-c05c-4c0d-886a-67119157885b
-ms.region: Malaysia
-# ms.industry: 
+ms.assetid: e2f1f89f-b934-4d65-9bd8-66b79561df1b
+ms.search.region: Malaysia
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

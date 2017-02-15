@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Architecture changes in Dynamics 365 for Operations | Microsoft Docs
-description: The application stack of Microsoft Dynamics AX has been divided into three separate models: Application Platform, Application Foundation, and Application Suite. 
+title: Architecture changes in Dynamics 365 for Operations
+description: The application stack of Microsoft Dynamics AX has been divided into three separate models -  Application Platform, Application Foundation, and Application Suite. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-08 23:21:51
+ms.date: 2016-02-08 23 - 21 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31751
-ms.assetid: ab0dd748-8aba-40e9-bc89-91064901cb3b
-ms.region: Global
-# ms.industry: 
+ms.assetid: b100e0bf-fab8-4324-b041-37ce8bf6693a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Architecture changes in Dynamics 365 for Operations
 
-The application stack of Microsoft Dynamics AX has been divided into three separate models: Application Platform, Application Foundation, and Application Suite. 
+The application stack of Microsoft Dynamics AX has been divided into three separate models -  Application Platform, Application Foundation, and Application Suite. 
 
 Overview
 --------

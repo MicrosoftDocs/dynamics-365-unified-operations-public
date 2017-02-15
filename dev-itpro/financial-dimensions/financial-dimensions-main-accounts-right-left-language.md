@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Financial dimensions and main accounts in a right-to-left language | Microsoft Docs
+title: Financial dimensions and main accounts in a right-to-left language
 description: This topic describes some of the implementation decisions that you should consider when you use a right-to-left language in Microsoft Dynamics 365 for Operations, and you must set up financial dimensions and main accounts.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-10-31 18:44:07
+ms.date: 2016-10-31 18 - 44 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 101
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222564
-ms.assetid: 9c11efe5-39b3-40c3-a115-55f9ab57b2bd
-ms.region: global
-# ms.industry: 
+ms.assetid: 825567ec-66ac-4734-92ee-6f8f51e3aa88
+ms.search.region: global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

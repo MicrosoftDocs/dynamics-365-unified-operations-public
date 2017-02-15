@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Bills of materials and formulas | Microsoft Docs
+title: Bills of materials and formulas
 description: This article provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. BOMs and formulas specify the required materials or ingredients for a specific product. Formulas also specify the co-products and by-products that are received in a specific production context. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09:18:57
+ms.date: 2015-12-07 09 - 18 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
+ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19331
-ms.assetid: d6b0ab1e-90aa-435c-a23e-a099ee81c97e
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: babf17b0-f121-428b-8d2a-1bc9de0bbe2d
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: conradv
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

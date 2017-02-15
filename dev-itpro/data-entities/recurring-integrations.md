@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Recurring integrations | Microsoft Docs
+title: Recurring integrations
 description: This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. For the current version of Microsoft Dynamics 365 for Operations, we have tried to simplify this process for all parties who are involved.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 19:31:13
+ms.date: 2015-12-12 19 - 31 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24821
-ms.assetid: 878b2909-4844-4f38-90ba-485d2cf9e2ec
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5e04f613-f44b-458f-bf8d-032f778b0c74
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -68,7 +70,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the oth
 7.  Click **OK**, and then click **Yes** in the confirmation dialog box.
 
 ## Manage recurring data jobs
-Open the System Administration workspace (not module) and click the Data Management IT tile. [![Data management workspace](./media/image011_2016-300x292.png)](./media/image011_2016.png) In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. [![image013](./media/image013.jpg)](./media/image013.jpg)
+Use the administration workspace for Data Management. [![Data management workspace](./media/image011_2016-300x292.png)](./media/image011_2016.png) In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. [![image013](./media/image013.jpg)](./media/image013.jpg)
 
 ## Submitting data to recurring data jobs
 You can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.

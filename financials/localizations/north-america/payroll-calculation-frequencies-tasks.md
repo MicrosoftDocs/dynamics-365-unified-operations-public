@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up payroll calculation frequencies | Microsoft Docs
+title: Set up payroll calculation frequencies
 description: This topic describes how to set up payroll calculation frequencies. Payroll calculation frequencies determine how often payroll contributions and deductions take place throughout the payroll process.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 19:09:37
+ms.date: 2016-10-31 19 - 09 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PayrollCalculationFrequency
+ms.search.form: PayrollCalculationFrequency
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 31
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 31
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222594
-ms.assetid: 0c5e0ee5-588e-4520-8d57-d3dfce1222ba
-ms.region: USA
-# ms.industry: 
+ms.assetid: c8dc123e-93fa-4b72-a310-e972fd105c10
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 This topic describes how to set up payroll calculation frequencies. Payroll calculation frequencies determine how often payroll contributions and deductions take place throughout the payroll process.
 
-Some earnings, contributions, and deductions should be processed in specific pay periods. For example, the worker deduction for medical insurance might be processed in the first pay period of every month, and the employer contribution might be processed in the first pay period of every quarter. A car allowance might be processed in the last pay period of the month. You can use payroll calculation frequencies to control which pay periods these payroll elements are processed in. You create the payroll calculation frequencies that you require for your payroll and then assign pay periods to those frequencies. You can then assign the frequencies to earning codes on a worker details page, and to benefit contributions and deductions. **Note:** The payroll calculation frequency and the pay cycle frequency aren't the same. The *pay cycle frequency* determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the *payroll calculation frequency* to select the specific pay periods when specific earnings or other payroll entities should be processed. For more information about pay cycle frequencies, see [Pay cycle and pay period tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/pay-cycle-and-pay-period-tasks-sample). By default, all earnings, contributions, and deductions are processed in every pay period. If this behavior meets your payroll processing requirements, you don't have to complete the tasks in this topic. The following illustration shows the steps for setting up payroll calculation frequencies. The numbered steps in the illustration correspond to sections later in this topic. [![Steps for setting up payroll calculation frequencies](./media/calc.gif)](./media/calc.gif)
+Some earnings, contributions, and deductions should be processed in specific pay periods. For example, the worker deduction for medical insurance might be processed in the first pay period of every month, and the employer contribution might be processed in the first pay period of every quarter. A car allowance might be processed in the last pay period of the month. You can use payroll calculation frequencies to control which pay periods these payroll elements are processed in. You create the payroll calculation frequencies that you require for your payroll and then assign pay periods to those frequencies. You can then assign the frequencies to earning codes on a worker details page, and to benefit contributions and deductions. **Note:** The payroll calculation frequency and the pay cycle frequency aren't the same. The *pay cycle frequency* determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the *payroll calculation frequency* to select the specific pay periods when specific earnings or other payroll entities should be processed. For more information about pay cycle frequencies, see [Pay cycle and pay period tasks](pay-cycle-pay-period-tasks-sample.md). By default, all earnings, contributions, and deductions are processed in every pay period. If this behavior meets your payroll processing requirements, you don't have to complete the tasks in this topic. The following illustration shows the steps for setting up payroll calculation frequencies. The numbered steps in the illustration correspond to sections later in this topic. [![Steps for setting up payroll calculation frequencies](./media/calc.gif)](./media/calc.gif)
 
 ## Create payroll calculation frequencies
 Before you begin, decide when you will process various payroll elements. Here are some processing frequencies that are typically used:
@@ -59,11 +61,11 @@ You can assign pay periods from one or more pay cycles to every payroll calculat
 ## Assign payroll calculation frequencies to payroll elements
 You assign payroll calculation frequencies to payroll elements to control when those payroll elements are processed.
 
--   To specify when the deductions and contributions for a benefit are processed, see “Create a new benefit” in [Benefit setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-setup-tasks).
--   To specify when an earning code is processed for a worker, see “Add earning codes to worker position assignments” in [Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks).
+-   To specify when the deductions and contributions for a benefit are processed, see “Create a new benefit” in [Benefit setup tasks](benefit-set-up-tasks.md).
+-   To specify when an earning code is processed for a worker, see “Add earning codes to worker position assignments” in [Worker and position payroll tasks](worker-position-payroll-tasks.md).
 
 If you don't specify a payroll calculation frequency for these payroll elements, they will be processed in every pay period.
 
 ## Next step
-The next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-cycle-and-work-period-tasks).
+The next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](work-cycle-work-period-tasks.md).
 

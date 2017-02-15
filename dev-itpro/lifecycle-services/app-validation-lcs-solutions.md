@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Validate an application for an LCS solution | Microsoft Docs
+title: Validate an application for an LCS solution
 description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that an LCS solution package can be successfully deployed. 
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-03 22:49:50
+ms.date: 2016-10-03 22 - 49 - 50
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Lifecycle Services
+# ms.reviewer: 51
+ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196913
-ms.assetid: b18ce334-f7d7-4a61-a894-4ab5e64b52da
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7aef7b2c-ea63-460b-9830-a1845bf1e9df
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omarc
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 
@@ -157,5 +159,5 @@ If you have a curated solution that is published on AppSource, you must keep the
 See also
 --------
 
-[LCS Solutions for AppSource home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/lcs-solutions-for-app-source)
+[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 

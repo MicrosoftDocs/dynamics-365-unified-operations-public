@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage vendor collaboration users | Microsoft Docs
+title: Manage vendor collaboration users
 description: This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-31 13:59:29
+ms.date: 2016-10-31 13 - 59 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
+ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 2084
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220744
-ms.assetid: 200f6ae1-3973-48e4-9e80-37a54088404b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 33de11be-c0f6-4d0c-a25f-f4120f2c952a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mkirknel
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: mkirknel
 
 This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
 
-The vendor collaboration interface in Microsoft Dynamics 365 for Operations exposes information about purchase orders, invoices, and consignment stock to external vendors. You can create new vendor collaboration contacts and request that new users are provisioned if you're working as an external vendor with the **Vendor admin (external)** security role, or similar permissions. You can also perform these tasks if you're working as a procurement professional. In this topic, this role refers to a procurement professional who is working within the company that owns the instance of Dynamics 365 for Operations. For more information about how to use vendor collaboration if you're an external vendor, see [Vendor with customers](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations). For more information about how to use vendor collaboration if you're a procurement professional, see [Vendor collaboration to with external vendors](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/using-vendor-collaboration-to-work-with-external-vendors).
+The vendor collaboration interface in Microsoft Dynamics 365 for Operations exposes information about purchase orders, invoices, and consignment stock to external vendors. You can create new vendor collaboration contacts and request that new users are provisioned if you're working as an external vendor with the **Vendor admin (external)** security role, or similar permissions. You can also perform these tasks if you're working as a procurement professional. In this topic, this role refers to a procurement professional who is working within the company that owns the instance of Dynamics 365 for Operations. For more information about how to use vendor collaboration if you're an external vendor, see [Vendor with customers](vendor-collaboration-work-customers-dynamics-365-operations.md). For more information about how to use vendor collaboration if you're a procurement professional, see [Vendor collaboration to with external vendors](vendor-collaboration-work-external-vendors.md).
 
 ## Add new vendor collaboration contacts
 If you want someone to have access to vendor collaboration they first have to be added as a vendor collaboration contact. You may also want to add contacts for employees in your company who won't use vendor collaboration. For example, they could be the point of contact for other kinds of procurement information. New contacts are added on the **All contacts** page, which is accessed from the **Vendor collaboration** &gt; **Contacts** menu. To add a new contact:

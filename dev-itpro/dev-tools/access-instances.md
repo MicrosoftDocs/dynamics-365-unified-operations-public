@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Access Dynamics 365 for Operations instances | Microsoft Docs
+title: Access Dynamics 365 for Operations instances
 description: This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configurations settings for developers and administrators.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-10-16 23:42:46
+ms.date: 2015-10-16 23 - 42 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
-ms.assetid: 6890f89f-25cc-4c63-9ffa-3ae3e7fe285d
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9d2954dc-4f56-4be3-a69d-77382f489cce
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,10 +37,10 @@ This topic describes how to access development instances of Microsoft Dynamics 3
 Definitions
 -----------
 
-| Term      | Definition                                                                                                                                                                                                                                       |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| End user  | A user who accesses Microsoft Dynamics 365 for Operations through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
-| Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM.                              |
+| Term      | Definition                                                                                                                                                                                                                                                                                  |
+|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| End user  | A user who accesses Microsoft Dynamics 365 for Operations through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned as a user.                                                                   |
+| Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer typically requires Remote Desktop access to the environment. The developer must have Azure AD credentials to access an instance and must be provisioned as an administrator user on the computer. |
 
 ### Environments
 
@@ -124,7 +126,7 @@ For developer access, you must be an administrator on the instance. To provision
 
 1.  Run the RetailTenantUpdateTool.
     -   The icon for this tool is available on the desktop.
-    -   This tool is also available at the following location: C:windowsSystem32WindowsPowerShellv1.0PowerShell.exe -File C:RetailSDKToolsRetailTenantUpdateTool.ps1
+    -   This tool is also available at the following location: C:\\windows\\System32\\WindowsPowerShell\\v1.0\\PowerShell.exe -File C:\\RetailSDK\\Tools\\RetailTenantUpdateTool.ps1
 
 2.  Double-click the icon to start this tool. You will be prompted for your Azure AD credentials. You must use the same credentials that you used in the admin user provisioning tool earlier.
 
@@ -186,7 +188,7 @@ After the user is provisioned as an administrator, that user can access the inst
 
 #### Retail configuration
 
-The URL of the Retail Cloud POS app is: <https://usnconeboxax1pos.cloud.onebox.dynamics.com/> After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a Retail POS device in this environment.
+The URL of the Retail Cloud POS app is https://usnconeboxax1ret.cloud.onebox.dynamics.com. After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a Retail POS device in this environment.
 
 -   Cashier user ID: **000160**
 -   Cashier password: **123**
@@ -200,21 +202,21 @@ On a VM, you can find most of the application configuration by opening the web.c
 2.  Go to **Sites** &gt; **AOSWebApplication**.
 3.  Right-click, and then click **Explore** to open File Explorer.
 4.  Open the web.config file in Notepad or another text editor. The following keys are of interest to many developers and administrators:
-    -   **Aos.MetadataDirectory** – This key points to the location of the packages folder that contains platform and application binaries, and also source code. (Source code is available only in development environments.) Typical values are: c:packages, c:AosServicePackagesLocalDirectory, and J:AosServicePackagesLocalDirectory.
+    -   **Aos.MetadataDirectory** – This key points to the location of the packages folder that contains platform and application binaries, and also source code. (Source code is available only in development environments.) Typical values are: c:\\packages\\, c:\\AosService\\PackagesLocalDirectory, and J:\\AosService\\PackagesLocalDirectory.
     -   **DataAccess.Database** – This key holds the name of the database.
     -   **Aos.AppRoot** – This key points to the root folder of the Application Object Server (AOS) web application.
 
 ### Retail configuration
 
-The Retail software development kit (SDK) is available at C:RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/retail/microsoft-dynamics-ax-retail-for-it-pros-and-developers)
--   [Retail SDK overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/retail/retail-sdk-overview)
+The Retail software development kit (SDK) is available at C:\\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
+-   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](dev-retail-home-page.md)
+-   [Retail SDK overview](retail-sdk-overview.md)
 -   [Retail POS device activation](https://ax.help.dynamics.com/en/wiki/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications/)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.
 
-1.  Open File Explorer, and go to C:CustomerServiceUnit.
+1.  Open File Explorer, and go to C:\\CustomerServiceUnit.
 2.  Right-click **AOSDeploy.cmd**, and then click **Run as administrator**.
 
 This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.

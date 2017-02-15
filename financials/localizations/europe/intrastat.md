@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Intrastat | Microsoft Docs
+title: Intrastat
 description: This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-21 16:12:11
+ms.date: 2015-12-21 16 - 12 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: Intrastat
+ms.search.form: Intrastat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28581
-ms.assetid: 5dd68aff-0a7c-4478-bdc6-e24a9eb3bbd6
-ms.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-# ms.industry: 
+ms.assetid: a25ba1bc-c0e0-4a4e-8237-404e709b0909
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

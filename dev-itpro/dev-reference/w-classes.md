@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: W Classes | Microsoft Docs
+title: W Classes
 description: System API classes that start with the letter W.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-26 02:19:17
+ms.date: 2016-02-26 02 - 19 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55901
-ms.assetid: 38d0ef0f-f838-49e6-a2aa-0d8fb44e31a6
-ms.region: Global
-# ms.industry: 
+ms.assetid: e6f923c8-a3f9-4547-93a2-c1cb23dd5ddf
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

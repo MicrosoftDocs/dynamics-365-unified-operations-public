@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Warehouse work policies | Microsoft Docs
+title: Warehouse work policies
 description: A new warehouse work policy is introduced in Microsoft Dynamics AX 7.0.1 (May 2016 update). This work policy controls whether warehouse work is created for warehouse processes in manufacturing.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-03 19:26:21
+ms.date: 2016-10-03 19 - 26 - 21
 ms.topic: 
 ms.prod: 
 ms.service: 
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: WHSWorkPolicy
+ms.search.form: WHSWorkPolicy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 196561
-ms.assetid: e0176ce0-4c00-4165-9716-559445cd3509
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 946a89da-9231-4419-b53d-a03b4bbdb591
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: johanho
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 

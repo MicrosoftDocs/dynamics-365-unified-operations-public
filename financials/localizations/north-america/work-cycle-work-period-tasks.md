@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up work cycles and work periods | Microsoft Docs
+title: Set up work cycles and work periods
 description: This topic explains how to set up work cycles and work periods. You use work cycles to specify the frequency of work periods. Some earnings, such as the regular-rate overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 19:09:57
+ms.date: 2016-10-31 19 - 09 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PayrollWorkCycle
+ms.search.form: PayrollWorkCycle
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 31
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 31
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222654
-ms.assetid: a37a565b-ce47-47e1-a3c8-a04ef29364bd
-ms.region: USA
-# ms.industry: 
+ms.assetid: 335347d9-9c55-42d1-85b4-e0112fbd15f7
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -52,13 +54,13 @@ When you've finished creating all the work cycles that you require, you can clos
 You can generate any number of work periods for each work cycle. Most organizations generate work periods for one year at a time. Overtime premiums can be processed only for work periods that are in the system. You should plan to generate new work periods before you've used all the existing work periods. Many organizations generate new work periods when they prepare for a new fiscal year. **Note:** If you've already generated work periods for this work cycle, the **First work period start date** value is the first calendar day after the last day of the last existing work period. You can’t change this value. There can’t be a gap of any number of days between the end date of one work period and the start date of the next work period. Therefore, you can delete only work periods that are at the end of the list of work periods.
 
 ## Assign work cycles to positions
-Typically, work cycles are assigned to non-exempt positions when the positions are set up for payroll. For more information, see [Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks).
+Typically, work cycles are assigned to non-exempt positions when the positions are set up for payroll. For more information, see [Worker and position payroll tasks](worker-position-payroll-tasks.md).
 
 ## Next step
-The next step is to set up earning codes and earning code groups. For more information, see [Earning code and earning code group tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/earning-code-and-earning-code-group-tasks).  
+The next step is to set up earning codes and earning code groups. For more information, see [Earning code and earning code group tasks](earning-code-group-tasks.md).  
 
 See also
 --------
 
-[Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks)
+[Worker and position payroll tasks](worker-position-payroll-tasks.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Simple Details form pattern | Microsoft Docs
+title: Simple Details form pattern
 description: This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 01:08:23
+ms.date: 2015-12-03 01 - 08 - 23
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 # audience: 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14791
-ms.assetid: 8823aa29-7b3a-4169-80a4-bf44476aeafc
-ms.region: Global
-# ms.industry: 
+ms.assetid: a8f01597-6086-4db5-b024-0bd69a0e16a8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -108,15 +110,15 @@ BodyTabPages (TabPage repeats 1..N)
 
 ### Commonly used subpatterns
 
--   [Fields and Field Groups](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fields-and-field-groups-subpattern)
--   [Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-fields-subpattern)
--   [Tabular Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/tabular-fields-subpattern)
--   [Toolbar and List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern)
+-   [Fields and Field Groups](fields-field-groups-subpattern.md)
+-   [Toolbar and Fields](toolbar-fields-subpattern.md)
+-   [Tabular Fields](tabular-fields-subpattern.md)
+-   [Toolbar and List](toolbar-list-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+-   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 **Simple Details** **guidelines:**
 

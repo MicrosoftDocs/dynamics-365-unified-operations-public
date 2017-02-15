@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Security and data entities | Microsoft Docs
+title: Security and data entities
 description: Data entities support entry point security similar to menu items and forms. In order to provide flexibility in defining a security model, data entities allow separate security configuration for each integration mode.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 21:30:20
+ms.date: 2015-12-04 21 - 30 - 20
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: RobinARH
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17852
-ms.assetid: 16d07c85-d307-4cde-b1d4-7bc7e35677ce
-ms.region: Global
-# ms.industry: 
+ms.assetid: b20ca8f0-a5ff-4f21-8756-84f31a58a641
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -45,7 +47,7 @@ Data entities support entry point security similar to menu items and forms. In 
 | Data management | The ability to use asynchronous integration options for the entity, such as import/export and connector integration. |
 
 ## Security modeling guidelines
-In Data Management (DIXF/Connectors) and OData both provide read/write capabilities for a data entity. Thus, if a role can read/write the Data Entity via OData, then being able to export/import via Data Management (DIXF/Connectors) is permissible as well. The following tasks are required:
+In Microsoft Dynamics AX, Data Management (DIXF/Connectors) and OData both provide read/write capabilities for a data entity. Thus, if a role can read/write the Data Entity via OData, then being able to export/import via Data Management (DIXF/Connectors) is permissible as well. The following tasks are required:
 
 -   **Create two privileges per entity,** **one for view and the other for maintain**. On both privileges, leave IntegrationMode=All. The Maintain privilege is typically granted 'Delete' access and the View privilege is typically granted 'Read' access. Naming guidelines for these privileges are:
     -   EntityName + **'View'**

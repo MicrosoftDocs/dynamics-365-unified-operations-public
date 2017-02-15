@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Work breakdown structures | Microsoft Docs
+title: Work breakdown structures
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-11-22 14:38:31
+ms.date: 2015-12-11 23 - 29 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ProjWorkBreakdownStructure
+ms.search.form: ProjWorkBreakdownStructure
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23861
-ms.assetid: f57abaf7-fa3a-43db-943d-e95114e44d5e
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: c26e31b1-c333-40f6-b7e8-020daeb5a259
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

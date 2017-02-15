@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Tools add-ins for Visual Studio | Microsoft Docs
+title: Tools add-ins for Visual Studio
 description: This topic reviews the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-13 21:59:05
+ms.date: 2015-12-13 21 - 59 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27521
-ms.assetid: 69d20edc-54ad-490f-bcb7-5745c2b9c31e
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6d6441fe-29f0-49df-b5fc-bb8fa3e36db8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -42,7 +44,7 @@ Dynamics 365 for Operations ships with the **Form statistics** add-in, which pro
 See also
 --------
 
-[Developer home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Developer home page](developer-landing-page.md)
 
-[Development tools](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/dynamics-ax7-technical-preview-development-tools)
+[Development tools](development-tools.md)
 

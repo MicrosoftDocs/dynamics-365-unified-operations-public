@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extend the metadata | Microsoft Docs
+title: Extend the metadata
 description: This article provides code to extend the CommerceModelFactory class.
 author: kfend
 manager: AnnBe
-ms.date: 2016-02-06 00:46:00
+ms.date: 2016-02-06 00 - 46 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31641
-ms.assetid: c2734f79-aa93-40b2-a500-a687ca3d9607
-ms.region: Global
-# ms.industry: 
+ms.assetid: 30f2a12a-5950-4343-bd5c-0bd1b929dbdb
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

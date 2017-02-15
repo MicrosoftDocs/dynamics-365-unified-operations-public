@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: OIOUBL standards for electronic invoicing | Microsoft Docs
+title: OIOUBL standards for electronic invoicing
 description: This topic explains what Offentlig Information Online Universal Business Language (OIOUBL) is.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-19 23:02:38
+ms.date: 2015-10-19 23 - 02 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10274
-ms.assetid: 96504a56-07c4-496b-bf91-e6ddb616cdda
-ms.region: Denmark
-ms.industry: Public sector
+ms.assetid: 5e953cc6-5783-4aaf-a8ad-7d96d36213e8
+ms.search.region: Denmark
+ms.search.industry: Public sector
 ms.author: mrolecki
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

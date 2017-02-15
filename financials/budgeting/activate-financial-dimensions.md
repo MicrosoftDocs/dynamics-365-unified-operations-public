@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Activate financial dimensions | Microsoft Docs
+title: Activate financial dimensions
 description: This topic contains information about the activating financial dimension process.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-09-13 17:16:27
+ms.date: 2016-09-13 17 - 16 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
-ms.assetid: 3fd02914-1165-4ed4-8be7-124b11758aa0
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8f28e9e4-e2a0-4687-a129-e921bd2115b8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -45,5 +47,5 @@ See also
 
 [Set up financial dimensions](http://ax.help.dynamics.com/en/wiki/set-up-financial-dimensions/)
 
-[Maintenance mode](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/system-administration/configuration-mode)
+[Maintenance mode](maintenance-mode.md)
 

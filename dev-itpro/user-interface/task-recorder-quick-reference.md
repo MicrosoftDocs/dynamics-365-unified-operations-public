@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Task Recorder quick reference | Microsoft Docs
+title: Task Recorder quick reference
 description: This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 19:43:37
+ms.date: 2016-02-04 19 - 43 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31141
-ms.assetid: 8bccac7b-b5b6-4691-8f5d-cbe62b35d715
-ms.region: global
-# ms.industry: 
+ms.assetid: c24fc424-258b-47e6-9633-1dafe51ebde7
+ms.search.region: global
+# ms.search.industry: 
 ms.author: shshabazz
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

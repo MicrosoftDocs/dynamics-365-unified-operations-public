@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Personalized product recommendations overview | Microsoft Docs
+title: Personalized product recommendations overview
 description: In Dynamics 365 for Operations, product recommendations can be displayed on the point of sale (POS) device. The recommendations are items that the customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. For retailers with large catalogs, recommendations help the customer with product discovery. By showcasing products targeted to a customerâ€™s interests and buying habits, product recommendations can help retailers with up-sell and cross-sell, and can enhance customer retention. In Dynamics 365 for Operations, product recommendations are powered by cognitive services and Microsoft Azure machine learning.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-11-28 23:43:23
+ms.date: 2016-11-28 23 - 43 - 23
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 41
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 259664
-ms.assetid: f26f75b2-2538-4753-8925-2347701cb060
-ms.region: global
-ms.industry: Retail
+ms.assetid: 116a8335-3019-4ea5-90e4-6e403e5afcd3
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: asharchw
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -81,5 +83,5 @@ When you turn on **Enable recommendations** and run the configuration jobs, theÂ
 See also
 --------
 
-[Add a recommendations control to the transaction page on a POS device](https://docs.microsoft.com/en-us/dynamics365/operations/retail/add-recommendations-control-to-the-transaction-screen-on-pos-using-screen-layout-designer)
+[Add a recommendations control to the transaction page on a POS device](add-recommendations-control-pos-screen.md)
 

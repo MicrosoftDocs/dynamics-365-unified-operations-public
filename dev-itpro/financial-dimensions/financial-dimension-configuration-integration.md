@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Financial dimension configuration for integrating applications | Microsoft Docs
-description: This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
+title: Financial dimension configuration for integrating applications
+description: This article describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-06-13 14:07:46
+ms.date: 2016-06-13 14 - 07 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 91363
-ms.assetid: 143b4997-6526-4e15-94b9-3746d2d21a02
-ms.region: Global
-# ms.industry: 
+ms.assetid: cf133471-3d49-4f2e-8f86-e51d50f377ec
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 
 # Financial dimension configuration for integrating applications
 
-This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
+This article describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions. 
 
 Financial reporting
 -------------------
@@ -72,5 +74,5 @@ However, we will use the following active ledger dimension format: **Main accoun
 See also
 --------
 
-[Dimensions in Excel](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimensions-overview)
+[Dimensions in Excel](dimensions-overview.md)
 

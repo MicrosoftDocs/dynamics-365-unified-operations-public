@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Advanced selection form pattern | Microsoft Docs
+title: Advanced selection form pattern
 description: This article provides information about the Advanced Selection form pattern. This Dialog form pattern lets users filter and select items from a large, wide list. Like the List Panel pattern, this pattern should be used when the primary user task is to select a set of items.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 18:36:32
+ms.date: 2016-01-11 18 - 36 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29171
-ms.assetid: 9d741388-9431-4d5e-a696-685393903a21
-ms.region: Global
-# ms.industry: 
+ms.assetid: e24b7016-bc0f-48ac-9c60-e5fdb0b7751e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -42,8 +44,8 @@ The Advanced Selection form pattern should be used when the primary user task is
 
 ### Related patterns
 
--   [List Panel](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/list-panel-subpattern)
--   [Dialog](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern)
+-   [List Panel](list-panel-subpattern.md)
+-   [Dialog](dialog-form-pattern.md)
 
 ## Pattern changes for Dynamics AX
 This is a new pattern in the current version of Microsoft Dynamics AX.
@@ -52,7 +54,7 @@ This is a new pattern in the current version of Microsoft Dynamics AX.
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn’t include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+    -   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 -   **Advanced selection guidelines:**
     -   By default, the Quick filter should use the name or description column.
     -   The list can display up to 15 columns. **Note:** This guidelines has been relaxed since Microsoft Dynamics AX 2012.

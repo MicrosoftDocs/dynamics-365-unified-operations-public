@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Right-to-left language support and bidirectional text | Microsoft Docs
+title: Right-to-left language support and bidirectional text
 description: In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This article discusses the issue of bidirectional text and how it's handled.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-07-27 23:05:27
+ms.date: 2016-07-27 23 - 05 - 27
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104543
-ms.assetid: bcf35cd2-cf68-4033-bdcd-162d7d109612
-ms.region: Global
-# ms.industry: 
+ms.assetid: 807df5f8-a6fa-44b2-82b4-47c264dedaa6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tlefor
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

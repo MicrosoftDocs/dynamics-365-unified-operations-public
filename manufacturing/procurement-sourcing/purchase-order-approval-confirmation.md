@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Approve and confirm purchase orders | Microsoft Docs
+title: Approve and confirm purchase orders
 description: This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-16 14:19:17
+ms.date: 2016-06-16 14 - 19 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchTable
+ms.search.form: PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 93143
-ms.assetid: f8da00c1-aa28-4623-ae07-69d29ea6aa14
-ms.region: Global
-# ms.industry: 
+ms.assetid: cf22cc6b-bef6-46f5-b01c-d688e404d1b9
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: fdahl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -60,11 +62,11 @@ In some situations, you might have to change a PO after it has reached an approv
 See also
 --------
 
-[Purchase order overview](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-order-overview)
+[Purchase order overview](purchase-order-overview.md)
 
-[Purchase order creation](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-order-creation)
+[Purchase order creation](purchase-order-creation.md)
 
-[Product receipt against purchase orders](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/product-receipt-against-purchase-orders)
+[Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Overview of vendor invoices](vendor-invoices-overview.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Purchase requisition overview | Microsoft Docs
+title: Purchase requisition overview
 description: This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08:10:49
+ms.date: 2015-09-10 08 - 10 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
+ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2174
-ms.assetid: 9c5782f9-5da0-4558-97d6-7710d8617d73
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4fd61d42-a9c8-44bb-8c2e-fc503f19cb3c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mkirknel
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -170,5 +172,5 @@ See also
 
 [Create a requisition for consumption](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
-[Purchase requisition workflow](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-requisition-workflow)
+[Purchase requisition workflow](purchase-requisitions-workflow.md)
 

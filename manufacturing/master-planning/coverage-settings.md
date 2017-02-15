@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Coverage settings | Microsoft Docs
+title: Coverage settings
 description: Master scheduling uses coverage settings to calculate item requirements. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08:46:42
+ms.date: 2015-09-10 08 - 46 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ReqGroup, ReqItemTable, ReqItemTableWizard
+ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2494
-ms.assetid: b8efd7d6-4ac4-49c6-98e9-e992a78a59ca
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: cc62c000-e640-4121-b1fa-9a0c74c3f627
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: roxanad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -51,5 +53,5 @@ You can specify coverage settings in several ways:
 See also
 --------
 
-[Master plans](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/master-plans)
+[Master plans](master-plans.md)
 

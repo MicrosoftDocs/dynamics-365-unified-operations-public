@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Standard cost conversion overview | Microsoft Docs
+title: Standard cost conversion overview
 description: This article provides a process overview to help you set up and run a standard cost conversion. The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-05 14:44:29
+ms.date: 2016-04-05 14 - 44 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CostingVersion, InventStdCostConv
+ms.search.form: CostingVersion, InventStdCostConv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78212
-ms.assetid: fce50d14-7821-41cf-8ae8-fa84bb3c9eb7
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 7c18e202-45c0-46a4-8361-7a072fd2b109
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: mguada
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -98,5 +100,5 @@ The **Variance analysis statement** report lets you analyze revaluation varianc
 See also
 --------
 
-[Prerequisites for a standard cost conversion](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/cost-management/prerequisites-for-a-standard-cost-conversion)
+[Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Operations scheduling | Microsoft Docs
+title: Operations scheduling
 description: This topic provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-04 13:33:54
+ms.date: 2016-10-04 13 - 33 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ProdSchedule
+ms.search.form: ProdSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 198073
-ms.assetid: 7e8aca14-a9fd-4fb8-b343-46c02b38a359
-ms.region: global
-ms.industry: Manufacturing
+ms.assetid: 73977dba-435c-4180-a12b-df723579dffa
+ms.search.region: global
+ms.search.industry: Manufacturing
 ms.author: crytt
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -77,5 +79,5 @@ If you're working with finite materials, scheduling also depends on the availabi
 See also
 --------
 
-[Operation scheduling options](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/operation-scheduling-options)
+[Operation scheduling options](operation-scheduling-options.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Inventory close | Microsoft Docs
+title: Inventory close
 description: As part of the process to settle issue transactions with receipt transactions, you can also choose to have the general ledger updated to reflect the adjustments that have been made.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-08 15:56:00
+ms.date: 2016-03-08 15 - 56 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventClosing
+ms.search.form: InventClosing
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 61973
-ms.assetid: e36603c1-d881-4ed3-84a9-7388fe99dbfa
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 609e58e1-55b0-42ac-a41f-a721f55910b5
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

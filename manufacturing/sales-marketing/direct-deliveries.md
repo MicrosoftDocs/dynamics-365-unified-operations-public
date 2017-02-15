@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Direct deliveries | Microsoft Docs
+title: Direct deliveries
 description: This article provides information about direct deliveries. Direct deliveries are deliveries that are sent directly from the vendor to your customer.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-21 07:43:17
+ms.date: 2015-09-21 07 - 43 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchCreateFromSalesOrder, SalesTable
+ms.search.form: PurchCreateFromSalesOrder, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9704
-ms.assetid: ee34d38e-54e2-43c1-ba10-58e8d7826766
-ms.region: Global
-# ms.industry: 
+ms.assetid: 53f78c8f-47b5-41fc-a571-c09a986201c5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omulvad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

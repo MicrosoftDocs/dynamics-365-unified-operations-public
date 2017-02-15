@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Regulatory certifications | Microsoft Docs
+title: Regulatory certifications
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must include details about any regulatory certifications that the solution requires in order to be legally compliant for sale in the intended market. This article shows how information about certifications is used in the title of the feature.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-14 15:54:18
+ms.date: 2015-12-14 15 - 54 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27581
-ms.assetid: 1d1ad967-aebb-4d0e-885e-2550f1396b60
-ms.region: global
-# ms.industry: 
+ms.assetid: 0882afe1-1208-4e34-89e9-eee57c5c0aba
+ms.search.region: global
+# ms.search.industry: 
 ms.author: janeaug
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Tax codes, tax groups, and posting definitions FAQ | Microsoft Docs
+title: Tax codes, tax groups, and posting definitions FAQ
 description: This topic answers frequently asked questions about tax and posting definitions.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 16:08:19
+ms.date: 2016-10-31 16 - 08 - 19
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: JournalizingDefinition, JournalizingDefinitionTrans, PayrollTaxCode, PayrollTaxGroup
+ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, PayrollTaxCode, PayrollTaxGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 31
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 31
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221414
-ms.assetid: 6e340b8d-4537-41ba-be14-a6851c3a3db5
-ms.region: USA
-# ms.industry: 
+ms.assetid: 23a80f8d-d6e9-4982-98a6-30eaf82b96ef
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -38,7 +40,7 @@ This topic describes functionality that is available only if the **Payroll - USA
 Yes, you can update all the tax codes in a tax group at the same time. The financial information for each tax code is set up separately for each legal entity. If you change the values for one legal entity, the values for other legal entities aren’t affected. When you update a tax code by using the mass-update functionality, the changes are effective immediately. To make date-effective changes to a tax code, use the **Maintain versions** button on the **Tax codes** page.
 
 ## Can I masscreate tax groups?
-Yes. When you set up Payroll, you automatically create a set of system-defined tax groups the first time that you click the **Update tax data** link on the **Payroll** area page. Each system-defined tax group contains tax codes of a particular type. For example, all tax codes for school districts are included in the SCHL tax group, and all tax codes for state income tax are included in the SIT tax group. These tax groups are updated every time that you run the **Update tax data** process. You can manually create additional tax groups. For more information, see [Tax information tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/tax-information-tasks).
+Yes. When you set up Payroll, you automatically create a set of system-defined tax groups the first time that you click the **Update tax data** link on the **Payroll** area page. Each system-defined tax group contains tax codes of a particular type. For example, all tax codes for school districts are included in the SCHL tax group, and all tax codes for state income tax are included in the SIT tax group. These tax groups are updated every time that you run the **Update tax data** process. You can manually create additional tax groups. For more information, see [Tax information tasks](tax-information-tasks.md).
 
 ## Why are some tax codes not posted according to the posting definition that is associated with their tax group?
 There are two possible reasons for this behavior:

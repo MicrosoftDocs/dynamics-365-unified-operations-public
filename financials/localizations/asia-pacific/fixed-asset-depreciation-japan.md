@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed asset depreciation for Japan FAQ | Microsoft Docs
+title: Fixed asset depreciation for Japan FAQ
 description: This article answers some frequently asked questions about fixed asset depreciation for Japan.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-19 23:02:51
+ms.date: 2015-10-19 23 - 02 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10294
-ms.assetid: 22fde28b-0bc9-4bd9-b008-d9ef7e1954f1
-ms.region: Japan
-# ms.industry: 
+ms.assetid: 42045c69-f17f-44d2-9a86-13d0a38ed332
+ms.search.region: Japan
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

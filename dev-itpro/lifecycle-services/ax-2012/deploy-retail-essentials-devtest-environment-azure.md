@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deploy a Retail essentials dev/test environment on Azure (AX 2012) | Microsoft Docs
+title: Deploy a Retail essentials dev/test environment on Azure (AX 2012)
 description: This article explains how to deploy a Retail essentials dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-02 16:34:50
+ms.date: 2015-12-02 16 - 34 - 50
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: AX 2012
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13261
-ms.assetid: 9ca472f9-aa96-41ae-a452-597a6598a324
-ms.region: Global
-# ms.industry: 
+ms.assetid: 84106ed4-d741-4475-a33c-dce9d031354b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aamiral
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -39,7 +41,7 @@ Before you complete the procedures in this article, make sure that the following
 
 | Category       | Prerequisite                                                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) |
+| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
 
 ## 1. Log on to Lifecycle Services
 Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Log on to Lifecycle Services](https://lcs.dynamics.com/en/)
@@ -157,7 +159,7 @@ Complete the following procedure to deploy a Retail essentials dev/test environm
 
 11. Click **Done**. The **Deploy** **environment** panel is redisplayed.
 12. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
 
 13. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
@@ -169,7 +171,7 @@ Now that the Retail essentials environment has been deployed on Azure, you must 
 
 ### Log on to the Retails essentials virtual machine
 
-Log on to the ESSEN-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/manage-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) article.
+Log on to the ESSEN-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 
 ### Compile Dynamics AX 2012 R3
 
@@ -184,7 +186,7 @@ Open the Dynamics AX 2012 R3 client and complete the initialization checklists. 
 If you want sample data installed in your environment, complete the following steps.
 
 1.  Go to the following location:F:TestTransferTool
-2.  Install the Test Data Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/install-the-test-data-transfer-tool-beta-for-microsoft-dynamics-ax).
+2.  Install the Test Data Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
 3.  Open a command prompt and navigate to the following location:C:Program Files (x86)Microsoft Dynamics AX 2012 R3 Test Data Transfer Tool (Beta)
 4.  Run the following command:dp.exe import F:DemoData MicrosoftDynamicsAx
 

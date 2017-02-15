@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Development system requirements | Microsoft Docs
+title: Development system requirements
 description: This wiki lists the system requirements for development.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-09 21:11:24
+ms.date: 2016-02-09 21 - 11 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 33221
-ms.assetid: ddeeaebf-e6b3-4adf-822a-25c2c965ea0c
-ms.region: Global
-# ms.industry: 
+ms.assetid: f43a9e3e-0d41-4418-b5d4-05f43d273aea
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

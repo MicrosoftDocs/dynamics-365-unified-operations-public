@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Business process libraries in Business process modeler | Microsoft Docs
+title: Business process libraries in Business process modeler
 description: This article explains how to view a standard business process library in Business process modeler, how to copy and modify a business process library, and how to export information about the business process library to Microsoft Word.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-02 16:46:38
+ms.date: 2015-12-02 16 - 46 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13301
-ms.assetid: c8dc3293-1560-428c-abff-61bba48d0059
-ms.region: Global
-# ms.industry: 
+ms.assetid: 95cb0c5f-ae23-43d3-950e-5e4783595a54
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

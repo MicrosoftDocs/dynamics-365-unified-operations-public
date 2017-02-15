@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fields and Field Groups subpattern | Microsoft Docs
+title: Fields and Field Groups subpattern
 description: This article provides information about the Field and Field Groups form subpattern. This is the most common data entry subpattern. It uses a dynamic number of columns to present multiple fields or groups of fields.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-11-04 20:43:11
+ms.date: 2015-11-04 20 - 43 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12384
-ms.assetid: 43ec1734-a32d-4a48-84bd-9dc75e75b755
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2c32054c-71a7-4a38-9784-9861b355b912
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -76,13 +78,13 @@ Fields ($Field) \[1..N\]
 
 ### Related patterns
 
--   [Horizontal Fields and Buttons Group](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/horizontal-fields-and-buttons-group-subpattern)
+-   [Horizontal Fields and Buttons Group](horizontal-fields-buttons-group-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+    -   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 -   **Fields and Field Groups guidelines:**
     -   The fields in groups should flow across the entire page. [![FieldsFieldGroups(2)](./media/fieldsfieldgroups2.png)](./media/fieldsfieldgroups2.png)
     -   When possible, remove unnecessary field group labels.
@@ -95,10 +97,10 @@ Form: **InventLocation (LocationNames)** [![FieldsFieldGroups(3)](./media/fields
 ## Resources
 ### Typically used by patterns
 
--   [Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)
--   [Table of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)
--   [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)
--   [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)
+-   [Simple List and Details](simple-list-details-form-pattern.md)
+-   [Table of Contents](table-of-contents-form-pattern.md)
+-   [Details Master](details-master-form-pattern.md)
+-   [Details Transaction](details-transaction-form-pattern.md)
 
 ## Appendix
 ### Frequently asked questions

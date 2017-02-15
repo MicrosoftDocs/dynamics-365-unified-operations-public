@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: List Page form pattern | Microsoft Docs
+title: List Page form pattern
 description: This article provides information about the List Page form pattern. A list page presents a set of data on a UI that is optimized for browsing records, so that you can find and work with a specific record. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-02 23:17:39
+ms.date: 2015-12-02 23 - 17 - 39
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 # audience: 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14241
-ms.assetid: 6e2f73aa-d239-4ad3-9a8e-554897bb64c5
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4633cfa7-a92f-4261-930f-6c79e8d544f8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -78,18 +80,18 @@ Grid (Grid)
 
 ### Related patterns
 
--   [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)
--   [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)
--   [Simple List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-form-pattern)
+-   [Details Master](details-master-form-pattern.md)
+-   [Details Transaction](details-transaction-form-pattern.md)
+-   [Simple List](simple-list-form-pattern.md)
 
 ### Commonly used subpatterns
 
--   [Custom Filter Group](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/custom-filter-group-subpattern)
+-   [Custom Filter Group](custom-filter-group-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 **List Page guidelines:**
 
@@ -106,8 +108,8 @@ The verification checklist shows the steps for manually verifying that the form
 -   **Grid**:
     -   For transactional entities, the **ID** field should be the first column, followed by the master entity **ID** and **Name** fields.
     -   For master entities, the **Name** field should be the first column, followed by the **ID** field.
--   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document in the ActionPane guidelines section.
--   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/factbox-form-patterns)document.
+-   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document in the ActionPane guidelines section.
+-   **FactBox** guidelines have been consolidated into the [FactBox Form Patterns](factbox-form-patterns.md)document.
 
 ## Examples
 Form: **SalesTableListPage** [![List Page example](./media/listpage2-1024x510.png)](./media/listpage2.png)

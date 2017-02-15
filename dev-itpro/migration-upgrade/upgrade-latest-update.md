@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Prepare to move to the latest update of Dynamics 365 for Operations | Microsoft Docs
+title: Prepare to move to the latest update of Dynamics 365 for Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-07-18 22:13:43
+ms.date: 2016-07-18 22 - 13 - 43
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX platform update 1
+# ms.reviewer: 11
+ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 102343
-ms.assetid: 0c0dd7fe-19ee-4485-a72d-87c7ed92dea1
-ms.region: Global
-# ms.industry: 
+ms.assetid: b473aa9f-0883-4933-941c-b038f9f69a03
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tabell
+ms.dyn365.intro: May-16
+ms.dyn365.version: Platform update 1
 
 ---
 
@@ -74,7 +76,7 @@ Use this scenario to update to the latest release of the platform and no appli
 Note: If you have customised platform models scenario 4 explains how you should proceed.
 
 ## Scenario 1: Update to a specific application hotfix
-Use this scenario when one (or a small number of) hotfix is required for a specific issue and business factors, such as time or cost prohibit taking an entire major application update at that moment. It is not necessary to perform a complete upgrade of your application to uptake new features of the application. All features in the current update of the  **application** are available individually on Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download hotfixes from LCS, see [Download hotfixes from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/servicing/download-hotfixes-from-lifecycle-services).
+Use this scenario when one (or a small number of) hotfix is required for a specific issue and business factors, such as time or cost prohibit taking an entire major application update at that moment. It is not necessary to perform a complete upgrade of your application to uptake new features of the application. All features in the current update of the  **application** are available individually on Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download hotfixes from LCS, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
 
 ## Scenario 2: Upgrade your custom code
 This scenario describes the process for upgrading code from an earlier release to the current release. This process is required before embarking on scenario 3 and is to be completed by a developer before other activities can begin. Code upgrade is needed when you deploy new environments as part of the process of upgrading your application to a new major or cumulative release.
@@ -155,7 +157,7 @@ Regardless of whether you're a live customer or you're still in the implementati
 4.  Install any hotfixes that apply to the environment.
 5.  Upload deployable packages to the LCS Asset library of your project.
 
-For more details on code migration steps, see [Code Migration](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide#code-migration). After code migration is complete, continue to scenario 3.
+For more details on code migration steps, see [Code Migration](developer-landing-page.md#code-migration). After code migration is complete, continue to scenario 3.
 
 ## Scenario 3: Upgrade to the most current platform and application update
 These steps apply to customers who are live on an earlier release and want to perform a full upgrade to the most recent platform and application versions. Customers who have already deployed and configured a production environment might also fall into this category, even if they haven't gone live yet. If you are not upgrading your application, but want to upgrade your platform to the latest bits, use scenario 4 below, especially if you have no customizations of the platform models.
@@ -166,7 +168,7 @@ First, upgrade your code as described in scenario 2. This is a developer task a
 
 ### Upgrade your data
 
-Execute the data upgrade process on a copy of your target database – if already live in production then this would mean a copy of production, prior to go-live it would be your most current database. This is a validation process performed by a developer to ensure the data upgrade completes successfully with the specific set of customizations within this environment – and will drive success in the sandbox and production environments later. To copy your database back to a developer environment follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/database-management/copy-an-ax-database-from-azure-sql-database-to-sql-server) To execute the data upgrade process follow the steps in [Process for data upgrade for development or demo environments](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/process-for-upgrading-ax-data-to-the-latest-dynamics-ax-update).
+Execute the data upgrade process on a copy of your target database – if already live in production then this would mean a copy of production, prior to go-live it would be your most current database. This is a validation process performed by a developer to ensure the data upgrade completes successfully with the specific set of customizations within this environment – and will drive success in the sandbox and production environments later. To copy your database back to a developer environment follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](copy-database-from-azure-sql-to-sql-server.md) To execute the data upgrade process follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your sandbox environment
 
@@ -191,5 +193,5 @@ Execute the data upgrade process on a copy of your target database – if alread
 4.  When validation is completed successfully, notify the DSE via the LCS ticket and the DSE will retire your old environment.
 
 ## Scenario 4: Upgrade to the most current platform only
-If you're running an environment that doesn't contain any customization of the platform AOT models (Application Platform, Application Foundation, Directory and Test Essentials), you can do an in-place update of your platform, without upgrading to a new environment. For more information about this process, see either: [Upgrade Dynamics 365 for Operations to the latest platform update](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update) [Upgrade the Dynamics AX platform to the August 2016 release](http://ax.help.dynamics.com/update-the-dynamics-ax-platform-to-the-august-2016-release) If you only upgrade your platform, there is no need to do code upgrade (Scenario 2 above) or run data upgrade scripts.
+If you're running an environment that doesn't contain any customization of the platform AOT models (Application Platform, Application Foundation, Directory and Test Essentials), you can do an in-place update of your platform, without upgrading to a new environment. For more information about this process, see either: [Upgrade Dynamics 365 for Operations to the latest platform update](upgrade-latest-platform-update.md) [Upgrade the Dynamics AX platform to the August 2016 release](http://ax.help.dynamics.com/update-the-dynamics-ax-platform-to-the-august-2016-release) If you only upgrade your platform, there is no need to do code upgrade (Scenario 2 above) or run data upgrade scripts.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Import data from an ODBC data source (AX 2012) | Microsoft Docs
+title: Import data from an ODBC data source (AX 2012)
 description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to import data from an ODBC data source into Microsoft Dynamics AX 2012. 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 18:10:45
+ms.date: 2015-12-05 18 - 10 - 45
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18821
-ms.assetid: 0afa5543-29af-45e6-a9b8-2652e5080894
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: e2ccd0d6-57cf-46e2-b9b0-6aaf0f386e1a
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

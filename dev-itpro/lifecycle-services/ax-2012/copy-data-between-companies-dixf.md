@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Copy data between Dynamics AX companies (AX 2012) | Microsoft Docs
+title: Copy data between Dynamics AX companies (AX 2012)
 description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to copy an entity, such as customers, from one Microsoft Dynamics AX legal entity (company) to another. In this example, we will export customers in a specific customer group from the CEU company to the CEC company in the Contoso data set.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 21:13:36
+ms.date: 2015-12-04 21 - 13 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17821
-ms.assetid: 64013068-dd93-4530-abbf-0189b6e062d4
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 626baf8c-0d24-4d83-8f94-6ca7d6f8f136
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: kfend
 
 You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to copy an entity, such as customers, from one Microsoft Dynamics AX legal entity (company) to another. In this example, we will export customers in a specific customer group from the CEU company to the CEC company in the Contoso data set.
 
-**Note: **This walkthrough is not intended for users of the versions of the Data Import/Export Framework that ship with cumulative update 7 for Microsoft Dynamics AX 2012 R2 or Microsoft Dynamics AX 2012 R3. Those users should refer to the topic [Copying and comparing entity data between companies (DIXF, DMF)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/copying-and-comparing-entity-data-between-companies-dixf-dmf). This walkthrough illustrates the following tasks:
+**Note: **This walkthrough is not intended for users of the versions of the Data Import/Export Framework that ship with cumulative update 7 for Microsoft Dynamics AX 2012 R2 or Microsoft Dynamics AX 2012 R3. Those users should refer to the topic [Copying and comparing entity data between companies (DIXF, DMF)](copy-compare-entity-data-between-companies-dixf.md). This walkthrough illustrates the following tasks:
 
 -   Define the format of your source data
 -   Define a processing group

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: View and evaluate the results of a questionnaire | Microsoft Docs
+title: View and evaluate the results of a questionnaire
 description: This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-04 18:36:29
+ms.date: 2015-12-04 18 - 36 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults
+ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17444
-ms.assetid: 9150ed48-e3b8-4944-b9ad-8b751933f250
-ms.region: Global
-# ms.industry: 
+ms.assetid: 779d5570-e0b2-4509-9d51-cef287a0abf4
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: twheeloc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -76,9 +78,9 @@ The settings that you define are saved and can be used to periodically recalcula
 See also
 --------
 
-[Designing questionnaires](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/designing-questionnaires)
+[Designing questionnaires](design-questionnaires.md)
 
-[Using questionnaires](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/using-questionnaires)
+[Using questionnaires](questionnaires.md)
 
-[Distributing and completing questionnaires](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/distributing-questionnaires)
+[Distributing and completing questionnaires](distribute-questionnaires.md)
 

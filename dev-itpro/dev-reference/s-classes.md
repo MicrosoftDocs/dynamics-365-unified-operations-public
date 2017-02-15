@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: S Classes | Microsoft Docs
+title: S Classes
 description: System API classes that start with the letter S.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 01:02:04
+ms.date: 2016-02-24 01 - 02 - 04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51751
-ms.assetid: fe44fae2-2d64-48f0-9c3f-ef202fdc8eea
-ms.region: Global
-# ms.industry: 
+ms.assetid: cf6a8c4e-edd7-42d1-90f6-dd92512e81d3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

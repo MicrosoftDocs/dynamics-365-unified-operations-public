@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add dimensions to a Excel template | Microsoft Docs
+title: Add dimensions to a Excel template
 description: This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-10-29 18:19:57
+ms.date: 2015-10-29 18 - 19 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11314
-ms.assetid: c7a7332b-e852-4ae0-a0cc-8c6dd9f2b102
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2b7ecc29-33e2-409d-9c26-329c2c317283
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: rbrow
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ This topic provides information about dimensions, dimensions that have entities,
 The only value that is present on Microsoft Excel templates after installation is the MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates you need to complete the following steps:
 
 1.  Add dimensions to the DimensionCombinationEntity or the DimensionSet entity.
-2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create open in Excel experiences](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/off101-office-integration-enable-users-to-edit-data-in-excel).
+2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create open in Excel experiences](office-integration-edit-excel.md).
 3.  Publish the template.
 
 This topic shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity. **Note:**  This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
@@ -45,7 +47,7 @@ Modifying the **DimensionCombinationEntity** has been greatly simplified in Dyna
 
 ![DimWiki1](./media/dimwiki1-300x233.png)
 
-2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension as it is named in Dynamics 365 for Operations. Select the **Model** that has your extensions. It should be above the AppSuite layer.** **Click **Apply**. [![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)3. Compile the project, and then synchronize it with the database. ![8](./media/8-300x260.png) 4. Your customization is now completed. You can test it in SQL using the following statement.
+2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension as it is named in Dynamics 365 for Operations. Select **Dimensions** as the Model. Click **Apply**. [![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)3. Compile the project, and then synchronize it with the database. ![8](./media/8-300x260.png) 4. Your customization is now completed. You can test it in SQL using the following statement.
 
     select * from DIMENSIONCOMBINATIONENTITY
 
@@ -90,9 +92,9 @@ To support interactions with dimensions as columns, for example, in the Microsof
 See also
 --------
 
-[Dimension Entry control migration walkthrough](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimension-entry-control-migration)
+[Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 
-[Dimension Entry control uptake](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimension-entry-control-uptake)
+[Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
-[What’s new or changed](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7)
+[What’s new or changed](whats-new-changed.md)
 

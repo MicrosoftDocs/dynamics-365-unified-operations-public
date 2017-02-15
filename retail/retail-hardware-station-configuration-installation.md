@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail hardware station configuration and installation | Microsoft Docs
+title: Retail hardware station configuration and installation
 description: This tutorial explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-13 04:48:42
+ms.date: 2015-12-13 04 - 48 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: RetailHardwareStation
+ms.search.form: RetailHardwareStation
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 11
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27161
-ms.assetid: d9482cea-74d3-46fe-9685-1b2da3641d7d
-ms.region: Global
-ms.industry: Retail
+ms.assetid: f2e9b3bb-3183-4369-a4fb-29619ccc0a15
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: jashanno
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

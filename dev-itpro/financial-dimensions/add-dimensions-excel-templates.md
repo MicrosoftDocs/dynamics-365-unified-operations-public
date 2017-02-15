@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add the ability to look up values for financial dimensions in Microsoft Excel templates | Microsoft Docs
+title: Add the ability to look up values for financial dimensions in Microsoft Excel templates
 description: This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-12-02 18:12:36
+ms.date: 2016-12-02 18 - 12 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 61
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261064
-ms.assetid: 5f9b589e-275f-497e-9f9f-6fcf247efa30
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5230ca86-c766-4239-b686-0e0d601b100a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,11 +34,11 @@ ms.author: aolson
 
 This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 
-In Dynamics 365 for Operations, the only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to the Microsoft Excel templates](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimensions-overview) topic. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this topic. **Note:**  This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.
+In Dynamics 365 for Operations, the only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to the Microsoft Excel templates](dimensions-overview.md) topic. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this topic. **Note:**  This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.
 
 1.  In Visual Studio, open the project where you modified **DimensionCombinationEntity** or **DimensionSetEntity.**
 2.  Right-click **DimensionCombinationEntity** or **DimensionSetEntity**. Select **Open**.
-3.  Right click **Relations**. Select **New** and then click **Relation.**
+3.  Right click **Relations**. Select **New**.
 4.  In the **Properties** pane, set the following properties.
     -   **Validate** - No
     -   **Cardinality** - ZeroMore
@@ -86,20 +88,19 @@ In Dynamics 365 for Operations, the only value that is present on Microsoft Exce
     -   **Relationship Type** - **Association**
     -   **Role** - Enter a unique name, such as Dimension Department.
 
-5.  Right-click the **Financial dimension** name under **Relations.**
+5.  Right-click the **Financial dimension** name under **Relations**, and click **New.**
 6.  Select **New**, and then click **Normal.**
-7.  In the Properties pane, choose the name of the Financial dimension in the **Field**.
-8.  In the Related field, type **Value**. The new relation is similar to the following example.
+7.  Set the new relation to be between your **Financial dimension** field and the **Related Data Entity** value field, as shown in the following example.
 
         DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
 
     [![lookupwiki](./media/lookupwiki.png)](./media/lookupwiki.png)
 
-9.  Build the project and then synchronize it with the database.
+8.  Compile the project and then synchronize it with the database.
 
 
 See also
 --------
 
-[Add dimensions to Microsoft Excel templates](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/add-dimensions-to-microsoft-excel-templates)
+[Add dimensions to Microsoft Excel templates](add-dimensions-excel-templates.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dimension entry control subpattern | Microsoft Docs
+title: Dimension entry control subpattern
 description: This article provides information about the Dimension Entry Control subpattern. This subpattern is used when you have a group or tab page that uses the Dimension Entry control (DEC). 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 21:38:48
+ms.date: 2015-12-03 21 - 38 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 # audience: 
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15951
-ms.assetid: d5c4ae07-3f5c-4165-a934-66a46d989a54
-ms.region: Global
-# ms.industry: 
+ms.assetid: 47452033-6991-450b-b0e2-9f5b79ee65d3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

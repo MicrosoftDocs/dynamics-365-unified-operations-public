@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: E Classes | Microsoft Docs
+title: E Classes
 description: System API classes that start with the letter E.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-17 20:50:52
+ms.date: 2016-03-17 20 - 50 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68633
-ms.assetid: 667516da-b47c-48f9-8223-2e47b808d23a
-ms.region: Global
-# ms.industry: 
+ms.assetid: 44dcd8a1-a878-4466-8d10-f2820511e066
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

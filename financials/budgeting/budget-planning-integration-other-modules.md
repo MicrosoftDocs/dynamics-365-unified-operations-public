@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Budget planning integration with other modules | Microsoft Docs
+title: Budget planning integration with other modules
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-10 10:09:48
+ms.date: 2016-03-10 10 - 09 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64443
-ms.assetid: 82c7b874-416a-4c4d-b577-ee0be43b3f10
-ms.region: Global
-# ms.industry: 
+ms.assetid: e766ccc9-361d-47f0-a859-cd42d32c005f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: sigitac
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

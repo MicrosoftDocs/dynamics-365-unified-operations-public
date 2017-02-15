@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure a manual task in a workflow | Microsoft Docs
+title: Configure a manual task in a workflow
 description: This topic explains how to configure the properties for a manual task.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-09-16 19:50:02
+ms.date: 2016-09-16 19 - 50 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 192191
-ms.assetid: 66391e0c-eca0-4341-903b-1bb1d349e8ca
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0f2b9cd9-f2b9-4dee-8ba9-63806ebc0009
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: donaldc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

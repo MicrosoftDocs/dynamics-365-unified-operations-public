@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Modeling and aggregate data | Microsoft Docs
-description: This tutorial will walk you through the process of modeling aggregate data
-.
+title: Modeling and aggregate data
+description: This tutorial will walk you through the process of modeling aggregate data .
 author: sericks007
 manager: AnnBe
-ms.date: 2015-10-19 23:00:42
+ms.date: 2015-10-19 23 - 00 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,30 +13,31 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10234
-ms.assetid: 7c6adb34-089a-4423-9fbc-97857e45f184
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3183efb0-ca38-4c05-aff5-ef6480721abf
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: milindav
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Modeling and aggregate data
 
-This tutorial will walk you through the process of modeling aggregate data
-.
+This tutorial will walk you through the process of modeling aggregate data .
 
 Prerequisites
 -------------
 
-This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the wiki named [Access Microsoft Dynamics 265 for Operations instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2).
+This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the wiki named [Access Microsoft Dynamics 265 for Operations instances](access-instances.md).
 
 ## Key concepts
 -   **Aggregate measurements**, similar to **perspectives** and **Cubes** from earlier versions, enable you to model and consume aggregate data.
@@ -269,7 +269,7 @@ Notice that the KPI details page for the new KPI, **FMTRevenuePerRental** is sho
 See also
 --------
 
-[Adding BI to workspaces](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/adding-bi-to-workspaces)
+[Adding BI to workspaces](add-bi-workspaces.md)
 
-[Adding contextual BI to forms](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/adding-contextual-bi-to-forms)
+[Adding contextual BI to forms](add-contextual-bi-forms.md)
 

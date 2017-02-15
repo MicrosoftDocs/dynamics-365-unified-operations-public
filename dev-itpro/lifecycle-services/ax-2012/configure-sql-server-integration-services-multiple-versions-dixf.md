@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure the version of SSIS used by the Data import/export framework (AX 2012) | Microsoft Docs
+title: Configure the version of SSIS used by the Data import/export framework (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-02-23 21:01:55
+ms.date: 2016-02-23 21 - 01 - 55
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 51562
-ms.assetid: 658d949b-5f2e-432d-9860-a43b1c9e44bd
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 7fee09df-2726-408d-a22a-ee0b97982fbf
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

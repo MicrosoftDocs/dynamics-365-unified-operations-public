@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Generate a financial report | Microsoft Docs
+title: Generate a financial report
 description: This topic provides information about generating a financial report. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-18 15:31:40
+ms.date: 2016-03-18 15 - 31 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FinancialReports
+ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX application 7.0.1
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68843
-ms.assetid: f673c5fe-36b3-4326-9b59-cd393348934d
-ms.region: Global
-# ms.industry: 
+ms.assetid: c0c93e44-223f-47a0-9619-133907b30a7a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 
@@ -149,7 +151,7 @@ When you run a missing account analysis, the following keyboard shortcuts are av
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics ERP](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/management-reporter-for-microsoft-dynamics-erp)
+[Financial reporting for Microsoft Dynamics ERP](financial-reporting-intro.md)
 
-[Report Designer interface](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/report-designer-interface)
+[Report Designer interface](report-designer-interface.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Project forecasts and budgets | Microsoft Docs
+title: Project forecasts and budgets
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-11 23:24:54
+ms.date: 2015-12-11 23 - 24 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ForecastModel, ProjYearEndProcess
+ms.search.form: ForecastModel, ProjYearEndProcess
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23501
-ms.assetid: fe9ac705-9b48-41c4-a59d-3903c1efd9eb
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 053110f5-0ab1-4208-a5dc-efc406739c84
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

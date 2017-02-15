@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Operations platform update 3 (November 2016) | Microsoft Docs
+title: What's new or changed in Dynamics 365 for Operations platform update 3 (November 2016)
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 3. This version was released in November 2016 and has a build number of 7.0.4307.16141.
-author: sericks007
+author: annbe
 manager: AnnBe
-ms.date: 2016-10-31 13:06:41
+ms.date: 2016-10-31 13 - 06 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics 365 for Operations platform update 3
+# ms.reviewer: 71
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 220184
-ms.assetid: 15a180ff-5ec8-412c-b86d-88a9885779f5
-ms.region: Global
-# ms.industry: 
-ms.author: sericks
+ms.assetid: 8c780f75-8888-4640-a6af-a19b55649386
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Platform update 3
 
 ---
 
@@ -54,7 +56,7 @@ General
 </tr>
 <tr class="even">
 <td>Extend label files to customize and localize labels.</td>
-<td>You can modify the string values of existing labels and add new languages to existing label files without the need to edit or overlay existing models. Refer to the &quot;Label extensions” section in <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/customization-overlayering-and-extensions">Customization: Overlayering and extensions</a>.</td>
+<td>You can modify the string values of existing labels and add new languages to existing label files without the need to edit or overlay existing models. Refer to the &quot;Label extensions” section in <a href="customization-overlayering-extensions.md">Customization: Overlayering and extensions</a>.</td>
 </tr>
 <tr class="odd">
 <td>Take advantage of seamless servicing and continuous updates.</td>
@@ -65,7 +67,7 @@ General
 <li>Test Essentials</li>
 <li>Corresponding form adaptor models</li>
 </ul>
-Locking the platform paves the way for seamless servicing and continuous update of the Dynamics 365 for Operations platform. If you overlay any of the platform models, you will not be able to upgrade to this release. You will need to refactor your code to use metadata and code extensions. For a tutorial about how to use extensions for customization, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensions-overlayering/customize-model-elements-using-extensions">Customize model elements using extensions</a>. You can also refer to <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/customization-overlayering-and-extensions">Customization: Overlayering and extensions</a>, which is a general topic on customizations. Note: Regarding the Directory model, if your code overlayers elements in the Directory model, you will need to deploy new environments running the latest Dynamics 365 for Operations application. Overlayering the directory model is not supported on environments running the February 2016 or May 2016 releases of the application on top of Platform Update 3.</td>
+Locking the platform paves the way for seamless servicing and continuous update of the Dynamics 365 for Operations platform. If you overlay any of the platform models, you will not be able to upgrade to this release. You will need to refactor your code to use metadata and code extensions. For a tutorial about how to use extensions for customization, see <a href="customize-model-elements-extensions.md">Customize model elements using extensions</a>. You can also refer to <a href="customization-overlayering-extensions.md">Customization: Overlayering and extensions</a>, which is a general topic on customizations. Note: Regarding the Directory model, if your code overlayers elements in the Directory model, you will need to deploy new environments running the latest Dynamics 365 for Operations application. Overlayering the directory model is not supported on environments running the February 2016 or May 2016 releases of the application on top of Platform Update 3.</td>
 </tr>
 <tr class="even">
 <td>Add a form part to a form extension and use Go to/F9 functionality.</td>
@@ -97,7 +99,7 @@ Locking the platform paves the way for seamless servicing and continuous update 
 </tr>
 <tr class="odd">
 <td>Customize application reports using extensions.</td>
-<td>Avoid the expense and complexity associated with overlayering standard application solutions for common customizations. Dynamics 365 for Operations now includes support for customizing application reports using element extensions. This enhancement means that you can redirect existing menu items to custom reports designs without changing application references. You can also extend the datasets returned by Report Data Providers classes without duplicating or overlayering application code. For detailed information about using extensions for application customizations, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensions-overlayering/customize-model-elements-using-extensions">Customize model elements using extensions</a>.</td>
+<td>Avoid the expense and complexity associated with overlayering standard application solutions for common customizations. Dynamics 365 for Operations now includes support for customizing application reports using element extensions. This enhancement means that you can redirect existing menu items to custom reports designs without changing application references. You can also extend the datasets returned by Report Data Providers classes without duplicating or overlayering application code. For detailed information about using extensions for application customizations, see <a href="customize-model-elements-extensions.md">Customize model elements using extensions</a>.</td>
 </tr>
 <tr class="even">
 <td>Use built-in document brand management tools to customize modern report designs for core business documents, including Sales Invoices, Purchase Packing Slips, and Vendor Invoice Documents. Simply add the Application Suite Modern Designs model file available on Lifecycle Services (LCS) to your solution.</td>
@@ -141,19 +143,18 @@ Lifecycle Services (LCS) releases new features every month. For information abou
 |                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **What you can do**                                                                 | **Why is this important**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| Design mobile workspaces to enable your users to stay productive while on the move. | Dynamics 365 for Operations brings support for a mobile phone app (available on the iTunes App Store for iPhones, Google Play Store for Android phones, and Windows Store for Window phones). The mobile approach allows you to reuse business logic and modeling from the product while enabling rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions in order to include customizations made to the product. For more information, see [Dynamics 365 for Operations mobile platform](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/mobile-development-handbook). |
+| Design mobile workspaces to enable your users to stay productive while on the move. | Dynamics 365 for Operations brings support for a mobile phone app (available on the iTunes App Store for iPhones, Google Play Store for Android phones, and Windows Store for Window phones). The mobile approach allows you to reuse business logic and modeling from the product while enabling rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions in order to include customizations made to the product. For more information, see [Dynamics 365 for Operations mobile platform](mobile-platform.md). |
 
 ## Analytics
-|                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **What you can do**                                        | **Why is this important**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Create Power BI reports with enumerated fields.            | When creating Microsoft Power BI reports with enumerated fields, you had to write formulas in Power BI desktop and expand the enumerated values into their string values. Now enumerated fields are expanded in Entity store and you can use the corresponding label field directly in your reports.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Access five new Power BI content packs for Human resources | The new content packs enable human resource organizations and human resources managers to analyze the following: The new content packs enable human resource organizations and human resources managers to analyze the following: Workforce metrics • Demographic breakdowns by age, gender, and marital status • Compare attrition rates year over year and see a list of reasons employees have given for leaving the organization • View a list of open positions, as well as a comparison of open to closed positions Compensation and benefits • Compare hourly and salaried employees • View the number of employees enrolled in available benefits • View employees by employment type Recruiting • Analyze applicants based on the number of applicants, where they’re coming from, and what positions they’re applying for Organizational training • Course registration by location • Couse attendance by status • List of employees registered for courses Employee competencies and development • List of skills held by employees • Breakdown of skill types by team member |
+|                                                 |                                                                                                                                                                                                                                                                                                      |
+|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **What you can do**                             | **Why is this important**                                                                                                                                                                                                                                                                            |
+| Create Power BI reports with enumerated fields. | When creating Microsoft Power BI reports with enumerated fields, you had to write formulas in Power BI desktop and expand the enumerated values into their string values. Now enumerated fields are expanded in Entity store and you can use the corresponding label field directly in your reports. |
 
  
 
 See also
 --------
 
-[What's new or changed](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7)
+[What's new or changed](whats-new-changed.md)
 

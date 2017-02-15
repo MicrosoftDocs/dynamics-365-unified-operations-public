@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: R Classes | Microsoft Docs
+title: R Classes
 description: 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 00:59:11
+ms.date: 2016-02-24 00 - 59 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51721
-ms.assetid: af780a08-f8db-472c-b1fe-bacdb7c66cbe
-ms.region: Global
-# ms.industry: 
+ms.assetid: a4669bf6-effe-4e08-abe0-95f4b1fd013b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

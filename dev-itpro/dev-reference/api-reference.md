@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: API, class, and table reference | Microsoft Docs
+title: API, class, and table reference
 description: This topic describes where to find API documentation in Visual Studio and on the wiki.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-09 00:09:13
+ms.date: 2016-03-09 00 - 09 - 13
 ms.topic: 
 ms.prod: 
 ms.service: 
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63853
-ms.assetid: 169750cb-8bf8-4e58-9c41-0491d8cafdbd
-ms.region: Global
-# ms.industry: 
+ms.assetid: d49e4d4d-c3f0-4f9c-8f1f-145dbb8951f1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -58,30 +60,30 @@ All application classes are under Application Explorer &gt; Classes. Every appli
 Documentation for the classes and functions that are listed under **System Documentation** in Application Explorer is available on the Help wiki.
 
 ## X++ compiletime functions
-[X++ compile-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-compile-time-functions)
+[X++ compile-time functions](xpp-compile-time-functions.md)
 
 ## X++ runtime functions
-[X++ run-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-string-run-time-functions):
+[X++ run-time functions](xpp-string-run-time-functions.md):
 
--   [X++ container run-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-container-run-time-functions)
--   [X++ business run-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-business-run-time-functions)
--   [X++ conversion run-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-conversion-run-time-functions)
--   [X++ date run-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-date-run-time-functions)
--   [X++ math run-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-math-run-time-functions)
--   [X++ reflection run-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-reflection-run-time-functions)
--   [X++ session run-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-session-run-time-functions)
--   [X++ string run-time functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-string-run-time-functions)
+-   [X++ container run-time functions](xpp-container-run-time-functions.md)
+-   [X++ business run-time functions](xpp-business-run-time-functions.md)
+-   [X++ conversion run-time functions](xpp-conversion-run-time-functions.md)
+-   [X++ date run-time functions](xpp-date-run-time-functions.md)
+-   [X++ math run-time functions](xpp-math-run-time-functions.md)
+-   [X++ reflection run-time functions](xpp-reflection-run-time-functions.md)
+-   [X++ session run-time functions](xpp-session-run-time-functions.md)
+-   [X++ string run-time functions](xpp-string-run-time-functions.md)
 
 ## System tables
-[System tables](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/system-tables)
+[System tables](system-tables.md)
 
 ## System classes
--   [A classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/a-classes)
--   [B classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/b-classes)
--   [C classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/c-classes)
--   [D classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/d-classes)
--   [E classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/e-classes)
--   [F classes: FieldBinding to FormBuildAnimateControl](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/fieldbinding-classes)
+-   [A classes](a-classes.md)
+-   [B classes](b-classes.md)
+-   [C classes](c-classes.md)
+-   [D classes](d-classes.md)
+-   [E classes](e-classes.md)
+-   [F classes: FieldBinding to FormBuildAnimateControl](fieldbinding-classes.md)
 -   [F classes: FormBuildButtonControl to FormBuildFastTabSummarySeparator](http://ax.help.dynamics.com/en/wiki/FormBuildButtonControl-classes/)
 -   [F classes: FormBuildFilterPaneControl to FormBuildRealControl](http://ax.help.dynamics.com/en/wiki/FormBuildFilterPaneControl-classes/)
 -   [F classes: FormBuildReferenceControl to FormButtonSeparatorControl](http://ax.help.dynamics.com/en/wiki/FormBuildReferenceControl-classes/)
@@ -93,24 +95,24 @@ Documentation for the classes and functions that are listed under **System Docum
 -   [F classes: FormObject to FormRealControl](http://ax.help.dynamics.com/en/wiki/FormObject-classes/)
 -   [F classes: FormReferenceControl to FormStringControl](http://ax.help.dynamics.com/en/wiki/FormReferenceControl-classes/)
 -   [F classes: FormTabControl to FormWindowControl](http://ax.help.dynamics.com/en/wiki/FormTabControl-classes/)
--   [G classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/g-classes)
--   [H classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/h-classes)
--   [I classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/i-classes)
--   [J classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/j-classes)
--   [K classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/k-classes)
--   [L classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/l-classes)
--   [M classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/m-classes)
--   [N classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/n-classes)
--   [O classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/o-classes)
--   [P classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/p-classes)
--   [Q classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/q-classes)
--   [R classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/r-classes)
--   [S classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/s-classes)
--   [T classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/t-classes)
--   [U classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/u-classes)
--   [V classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/v-classes)
--   [W classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/w-classes)
--   [X classes](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes)
+-   [G classes](g-classes.md)
+-   [H classes](h-classes.md)
+-   [I classes](i-classes.md)
+-   [J classes](j-classes.md)
+-   [K classes](k-classes.md)
+-   [L classes](l-classes.md)
+-   [M classes](m-classes.md)
+-   [N classes](n-classes.md)
+-   [O classes](o-classes.md)
+-   [P classes](p-classes.md)
+-   [Q classes](q-classes.md)
+-   [R classes](r-classes.md)
+-   [S classes](s-classes.md)
+-   [T classes](t-classes.md)
+-   [U classes](u-classes.md)
+-   [V classes](v-classes.md)
+-   [W classes](w-classes.md)
+-   [X classes](x-classes.md)
 
 ## Additional resources
 -   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.

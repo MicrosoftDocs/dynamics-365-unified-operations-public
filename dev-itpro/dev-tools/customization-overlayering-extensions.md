@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Customize with extensions and overlayering | Microsoft Docs
-description: This topic discusses the two methods of customizing source code and metadata of model elements: overlayering and extensions and details supported extension capabilities.
+title: Customize with extensions and overlayering
+description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-13 02:27:27
+ms.date: 2015-12-13 02 - 27 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26961
-ms.assetid: e96573f4-f4df-4a95-81c6-2e7226d46eff
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0c38bcbc-5c3c-4327-b41b-82cc75bb6ccd
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Customize with extensions and overlayering
 
-This topic discusses the two methods of customizing source code and metadata of model elements: overlayering and extensions and details supported extension capabilities.
+This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 
 Overlayering
 ------------
@@ -47,19 +49,25 @@ You can customize an application by using *extensions*. An extension enables y
     -   Creating event handlers to respond to event delegates that are defined by the application.
     -   Creating new plug-ins.
 
-To get started, review or complete this tutorial: [Customize model elements using extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensions-overlayering/customize-model-elements-using-extensions).
+To get started, review or complete this tutorial: [Customize model elements using extensions](customize-model-elements-extensions.md).
 
-## Extension models and packages
-You can create a model that contains only new model elements, new code, or extensions. This model is compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step. [![1\_Cust](./media/1_cust.png)](./media/1_cust.png) Extension models have several advantages, including:
+### Extension models and packages
 
--   **Application lifecycle management (ALM):** Extension models simplify and improve the performance of deployments, builds, test automation and delivery to customers.
+You can create a model that contains only extensions, new model elements, or new code. This model compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step. [![1\_Cust](./media/1_cust.png)](./media/1_cust.png) Extension models have several advantages, including:
+
+-   **Application lifecycle management (ALM):** With ALM, you'll only manage your extension artifacts. This simplifies and improves the performance of deployments, builds, and test automation.
 -   **Design time performance:** Building your model or project doesn't require you to recompile the entire application.
 -   **Servicing:** In the cloud, Microsoft can install, patch, upgrade, and change internal APIs without affecting your customizations.
 -   **Upgrades:** Unlike overlayering, extensions reduce the cost of upgrading to a new version, as this approach eliminates costly code and metadata conflicts.
 
 The following diagram illustrates how extensions get isolated in their assemblies. [![](./media/ax7customization1.png)](./media/ax7customization1.png)
 
-## Code extensions
+### Supported model elements
+
+There is support for extensions of both code and metadata model elements.
+
+#### Code extensions
+
 You can extend code in two ways:
 
 -   By subscribing to events (framework events and delegates)
@@ -72,19 +80,20 @@ You should understand the following characteristics of framework events:
 -   Events are broadcast; there's no sequencing of calls to event handlers.
 -   Event handlers execute within the transaction scope of the base methods.
 
-### Events
+##### Events
 
 Events are raised as preceding and succeeding operations around the base methods. This means that you have the opportunity to run code before a base method is called and after it has completed. Microsoft Dynamics AX 2012 introduced XPP events, which are also available in this release and can be subscribed to in your extensions.
 
-### Plug-ins
+##### Plug-ins
 
-Plug-ins are extension points that are defined by the base application. By using a class-factory pattern, plug-ins enable you to replace the base functionality. You can see how to implement a plug-in in the wiki tutorial, [Customize model elements using extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensions-overlayering/customize-model-elements-using-extensions).
+Plug-ins are extension points that are defined by the base application. By using a class-factory pattern, plug-ins enable you to replace the base functionality. You can see how to implement a plug-in in the wiki tutorial, [Customize model elements using extensions](customize-model-elements-extensions.md).
 
-### Class Extensions
+##### Class Extensions
 
-Class extensions enable you to augment a class by adding methods and variables to existing classes. For more details refer to the topic [class extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensions-overlayering/class-extensions).
+Class extensions enable you to augment a class by adding methods and variables to existing classes. For more details refer to the topic [class extensions](class-extensions.md).
 
-## Form extensions
+#### Form extensions
+
 You can extend the functionality of a form by extending its controls and data sources. For example, in a form extension, you can:
 
 -   Add a new control.
@@ -295,11 +304,14 @@ N/A
 
 DialogClosed
 
-### Code behind extension forms
+ 
+
+##### Code behind extension forms
 
 You can use class extensions to author X++Â logic associated with form extensions. This allows the definition of state variables accessible to form and control event handlers. It also allows overriding form methods without overlayering code. Refer to [this](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/10/11/code-behind-extension-forms-how-to-add-state-variable-and-override-methods-without-overlayering)blog article for an example.
 
-## Table extensions
+#### Table extensions
+
 You can create a table extension to extend a table's design and logic. You can add new fields, field groups, indexes, mappings and relations. You can also add new fields to existing field groups, change the label of a table field, change the Created By, Created Date Time, Modified By, Modified Date Time properties. In Microsoft Dynamics AX 2012, you could override the virtual methods of a table's base class to control the behavior that occurred during table operations, such as when creating, reading, updating, or deleting. In the current version, you instead use extensions to implement event handlers that are called from the base implementations of the table methods. The following table lists each table method and its events.
 
 **Published Table method**
@@ -394,10 +406,12 @@ N/A
 
 Validation events capture and return results by using the **DataEventArgs** parameter. The display and edit method modifiers are supported on table extensions.
 
-## View and Data entity extensions
+#### View and Data entity extensions
+
 You can extend a View or Data entity to achieveÂ much of theÂ functionalityÂ available withÂ table extensions.
 
-## Enum extensions
+#### Enum extensions
+
 You can extend any Enum that is marked extensble (IsExtensible=True). [![extensibleenums](./media/extensibleenums-300x158.png)](./media/extensibleenums.png) By extending an Enum, you can add new Enum values to it. It is important to keep the following in mind when dealing with extensible Enums:
 
 1.  You cannot have X++ logic that depends on the integer value of Enum values (For example. *If (Enum1.v1 &gt; Enum1.v2) ...* is not supported for extensible enums)
@@ -405,7 +419,8 @@ You can extend any Enum that is marked extensble (IsExtensible=True). [![extensi
     -   IntegerÂ values thatÂ belong to theÂ baseline enum are deterministic, they come from the metadata.
     -   IntegerÂ values that are an extension are generated during the synchronization process and are not deterministic.
 
-## EDT extensions
+#### EDT extensions
+
 You can extend an EDT element in order to modify any of the following properties:
 
 -   Form help
@@ -413,14 +428,16 @@ You can extend an EDT element in order to modify any of the following properties
 -   String size
 -   Help text
 
-## Query extensions
+#### Query extensions
+
 You can extend a Query element to achieve the following:
 
 -   Add ranges to an existing data source.
 -   Add new (embedded) data sources to an existing data source.
 -   Add new fields to an existing data source.
 
-## Menu extensions
+#### Menu extensions
+
 You can extend a Menu element to achieve the following:
 
 1.  Add new menu items, submenus, menu references and tile references to an existing menu.
@@ -428,13 +445,12 @@ You can extend a Menu element to achieve the following:
 
 #### [![menuextensions](./media/menuextensions-300x137.png)](./media/menuextensions.png)
 
-## Security role and duty extensions
+#### Security role and duty extensions
+
 You can extend a Security Role or a Security Duty to add new duties/privileges to these elements.
 
-## Report extensions
-You can customize reports and business docs using extensions, below is a list of tutorials that help you learn more. [Customizing App Suite reports using extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/customize-app-suite-reports-with-extensions): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. Customizations to reporting solutions in the standard application are fully supported using a pure ‘Extension’ model.  This article offers guidance on how to add the most common customizations to standard application reports without over-layering Application Suite artifacts.  Here are some… [How To: Custom designs for business docs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/custom-designs-business-docs): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the steps involved in crafting a custom report design for an existing application business document using a ‘pure’ extension model. Follow the steps below to associate a custom report design with an application document instance…. [How To: Expanding App Suite report data sets](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/expand-app-suite-report-data-sets): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the expansion of an existing report data set produced using X++ business logic in a Report Data Provider (RDP) class. Use custom delegate handlers and table extensions to include additional field data and/or calculations without… [How To: Extending report menu items](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/extend-report-menu-items): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom reporting solutions. This article focuses on the process of extending existing application menu items to redirect navigations with minimal code changes. Using this technique you will avoid the hassle of tracking down and replacing all references to an existing application…
+#### Label extensions
 
-## Label extensions
 You can create label extension files in order to modify the string value of a label, add new labels to the same label file or add new languages. To create a label extension file you must name it with a \_extension suffix. For example, to extend the **FLM** labels of the Fleet Management model, do the following:
 
 1.  Create a project that belongs to a model that references Fleet Management (Fleet Management Extension is an example).
@@ -442,7 +458,8 @@ You can create label extension files in order to modify the string value of a la
 3.  Within the FLM\_Extension label file, you can create new labels or modify the value of labels that are defined in the FLM label file of the Fleet Management model. Use the standard label editor to define new labels or redefine labels that already exist in the original FLM label file.
 4.  If your goal is to create translations of the FLM label, right-click on the FLM\_Extension element in your project and select **Add new languages**. Follow the wizard to add translation files to the FLM labels.
 
-## Event argument types
+### Event argument types
+
 When an event takes place, the delegates described in the sections above get triggered. In this section, we provide the details of the types of the arguments that are passed as the event arguments. Some of the entries in the table below have a null in the column designating the event args; this means that no arguments are passed - the relevant information is in the first argument (typically called sender) in this case.
 
 |                                 |                                  |
@@ -498,9 +515,9 @@ When an event takes place, the delegates described in the sections above get tri
 | onValidatingWrite               | ValidateEventArgs                |
 
 ## Development tools support
-The development tools in Visual Studio provide integrated features to help you create and work with extensions. For example, when you right-click an element name in **Application Explorer**, you can create an extension for that element. [![3\_Cust](./media/3_cust.png)](./media/3_cust.png) To create an extension, the current project in **Solution Explorer** must belong to a model that references the model of the selected element in **Application Explorer**. To view the model for a particular project, view the project properties. [![4\_Cust](./media/4_cust.png)](./media/4_cust.png) Visual Studio creates the extension file for you, either in the current project or in a new project. You can then work with the extension file either as source code or by using a designer. You package a code-extension model for deployment exactly like you would package any other model. On the **Dynamics 365** menu, point to **Deploy**, click **Create Deployment Package**, and then select the check box for the package name.
+The development tools in Visual Studio provide integrated features to help you create and work with code extensions. For example, when you right-click an element name in **Application Explorer**, you can create an extension for that element. [![3\_Cust](./media/3_cust.png)](./media/3_cust.png) To create an extension, the current project in **Solution Explorer** must belong to a model that references the model of the selected element in **Application Explorer**. To view the model for a particular project, view the project properties. [![4\_Cust](./media/4_cust.png)](./media/4_cust.png) Visual Studio creates the extension file for you, either in the current project or in a new project. You can then work with the extension file either as source code or by using a designer. You package a code-extension model for deployment exactly like you would package any other model. On the **Dynamics 365** menu, point to **Deploy**, click **Create Deployment Package**, and then select the check box for the package name.
 
-### Framework events
+#### Framework events
 
 Tables, form data sources, form controls, and other element types that support extension events list the available events (and delegates) under an **Events** collection node. For example, viewing the **Events** node of a table extension shows events that are defined by the framework, and delegate methods that are defined by application developers. [![5\_Cust](./media/5_cust.png)](./media/5_cust.png) **Note**: Events are exposed on the designer on different element and sub-element types, like table events, form events, form data source events, form control events, and others. Open the context menu of an event node to interact with events: [![6\_Cust](./media/6_cust.png)](./media/6_cust.png)
 

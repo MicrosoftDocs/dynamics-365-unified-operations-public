@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Simulate cost changes by using a costing version for planned costs | Microsoft Docs
+title: Simulate cost changes by using a costing version for planned costs
 description: This article explains how you can simulate the effects of cost changes on a manufactured item’s calculated costs by using a separate costing version for planned costs.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-05 14:44:20
+ms.date: 2016-04-05 14 - 44 - 20
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CostingVersion
+ms.search.form: CostingVersion
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78183
-ms.assetid: 0cc31c48-d46d-45c0-be27-2679b7220a49
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 1ce49900-a8c4-4cfe-b2a0-c420c9dfab5e
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: mguada
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

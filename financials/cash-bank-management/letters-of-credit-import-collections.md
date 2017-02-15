@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Letters of credit and import collections | Microsoft Docs
+title: Letters of credit and import collections
 description: This article provides general information about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-04 23:28:19
+ms.date: 2015-12-04 23 - 28 - 19
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BankLCImport
+ms.search.form: BankLCImport
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18321
-ms.assetid: 8a5a8f1d-a30e-4c61-9bbf-128f8ead655c
-ms.region: Global
-# ms.industry: 
+ms.assetid: b9698196-58a7-4f6f-8833-eb80537c2bb1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

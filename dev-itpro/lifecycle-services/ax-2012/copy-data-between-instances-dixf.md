@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Copy data between Dynamics AX instances (AX 2012) | Microsoft Docs
+title: Copy data between Dynamics AX instances (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-07 21:13:41
+ms.date: 2015-12-07 21 - 13 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 20251
-ms.assetid: 8c4e340a-6f05-4ae3-aeec-09cb06f97042
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 847982e7-3b4a-49a4-8487-0e92bc781f57
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

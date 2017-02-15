@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Segmented entry control migration guidance | Microsoft Docs
+title: Segmented entry control migration guidance
 description: This article guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
-author: twheeloc
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-12 20:45:57
+ms.date: 2015-12-12 20 - 45 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25651
-ms.assetid: 9ea31e6c-ab7c-46b6-8f18-0bc0df3e6919
-ms.region: Global
-# ms.industry: 
-ms.author: ghenriks
+ms.assetid: 5b57e1e1-533c-40d9-889b-92befe394da2
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

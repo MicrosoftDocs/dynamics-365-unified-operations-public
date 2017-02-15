@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: LINQ provider for C# | Microsoft Docs
+title: LINQ provider for C#
 description: This article discusses the LINQ provider that is part of Microsoft Dynamics AX.
 author: pvillads
 manager: AnnBe
-ms.date: 2015-12-13 01:58:12
+ms.date: 2015-12-13 01 - 58 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26751
-ms.assetid: c1829c7e-6856-4338-b276-317d0760bd95
-ms.region: Global
-# ms.industry: 
+ms.assetid: fd2516a8-a4f1-481f-8045-edf31f4eb91f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -170,5 +172,5 @@ See also
 
 [Programming language support](https://ax.help.dynamics.com/en/?p=185901)
 
-[Technical Concepts Guide](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Technical Concepts Guide](developer-landing-page.md)
 

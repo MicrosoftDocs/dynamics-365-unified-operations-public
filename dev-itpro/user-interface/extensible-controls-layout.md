@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extensible control layout guidelines | Microsoft Docs
+title: Extensible control layout guidelines
 description: This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-10-29 18:57:02
+ms.date: 2015-10-29 18 - 57 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11354
-ms.assetid: ae41316e-4f75-4d51-bb5d-988e2b2cf203
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4d1dd2f4-c00f-4f9f-9d0b-0dcf078c926d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

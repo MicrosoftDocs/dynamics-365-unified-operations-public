@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Settle a partial vendor payment and the final payment in full before the discount date | Microsoft Docs
+title: Settle a partial vendor payment and the final payment in full before the discount date
 description: This article walks you through a scenario where partial payments are made for a vendor invoice, and a cash discount is taken.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:27:48
+ms.date: 2015-12-02 23 - 27 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerJournalTransVendPaym, VendOpenTrans
+ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14431
-ms.assetid: a0297f6c-6ae3-4c90-9cf2-390b4f7ad24a
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8ac9fac2-bd17-4b86-99c8-a41dd834b6ca
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

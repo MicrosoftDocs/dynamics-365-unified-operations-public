@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Workspace Page Filter Group subpattern | Microsoft Docs
+title: Workspace Page Filter Group subpattern
 description: This article provides information about the Workspace Page Filter Group subpattern. This subpattern is used as part of the Operational Workspace pattern when a workspace must expose a single workspace-wide filter on the form.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 22:12:59
+ms.date: 2016-01-11 22 - 12 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29231
-ms.assetid: dba9bc1f-a87d-47c6-b755-5c7b04ec3e33
-ms.region: Global
-# ms.industry: 
+ms.assetid: d4ad3890-6512-4972-9887-a8318cd3e836
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -56,8 +58,8 @@ Apply Workspace Page Filter Group to the appropriate group in an (operational) w
 
 ### Related container patterns
 
--   [Custom Filter Group](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/custom-filter-group-subpattern)
--   [Operational workspace](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)
+-   [Custom Filter Group](custom-filter-group-subpattern.md)
+-   [Operational workspace](workspace-form-pattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.

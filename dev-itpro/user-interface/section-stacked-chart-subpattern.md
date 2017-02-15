@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Section Stacked Chart subpattern | Microsoft Docs
+title: Section Stacked Chart subpattern
 description: This article provides information about the Section Stacked Chart subpattern. This subpattern is used as part of the Operational Workspace pattern when a panorama section contains one or two charts.  
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 22:15:55
+ms.date: 2016-01-11 22 - 15 - 55
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29251
-ms.assetid: b7937069-e4f1-4d98-b373-711889a0a5b9
-ms.region: Global
-# ms.industry: 
+ms.assetid: d95627f7-605e-42d0-9112-b1e5606d9cb7
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -50,7 +52,7 @@ TabPage
 
 *ChartPart (FormPart) \[0..N\]*
 
-Each Form Part points to a form that contains a single chart. Each of these forms should use the [Section Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-chart-form-pattern) form pattern.
+Each Form Part points to a form that contains a single chart. Each of these forms should use the [Section Chart](section-chart-form-pattern.md) form pattern.
 
 ### Core components
 
@@ -58,14 +60,14 @@ Apply Section Stacked Chart to the appropriate tab page in the workspace.
 
 ### Related container patterns
 
--   [Operational workspace](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)
--   [Section Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-chart-form-pattern)
+-   [Operational workspace](workspace-form-pattern.md)
+-   [Section Chart](section-chart-form-pattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   There should be no more than two charts in this section.
--   Each Form Part Control should point to a form that uses the [Section Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-chart-form-pattern) pattern.
+-   Each Form Part Control should point to a form that uses the [Section Chart](section-chart-form-pattern.md) pattern.
 
 ## Examples
 Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) [![sectionStackedChartExample](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)

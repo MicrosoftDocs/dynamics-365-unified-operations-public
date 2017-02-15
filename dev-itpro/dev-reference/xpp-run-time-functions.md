@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ run-time functions | Microsoft Docs
+title: X++ run-time functions
 description: This wiki describes the X++ run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-05 00:29:58
+ms.date: 2016-02-05 00 - 29 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31461
-ms.assetid: ac13dccf-3c1b-4e89-a95c-20e2306b2d80
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4f7d0fb4-023f-4530-b3be-f83365324f18
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -53,18 +55,18 @@ The following table lists and describes only the categories of X++ functions. Th
 
 | Category                  | Description                                                                                                                                                                                                                |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Business](#business)     | Functions that enter financial data and calculate formulas. For more information, see [X++ Business Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-business-run-time-functions).                              |
-| [Container](#container)   | Functions that operate on the container data type of X++. For more information, see [X++ Container Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-container-run-time-functions).                               |
-| [Conversion](#conversion) | Functions that translate data of one type into data of another type. For more information, see [X++ Conversion Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-conversion-run-time-functions).                  |
-| [Date](#date)             | Functions that operate on the date data type. For more information, see [X++ Date Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-date-run-time-functions).                                                     |
-| [Math](#Math)             | Functions that perform mathematical calculations. For more information, see [X++ Math Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-math-run-time-functions).                                                 |
-| [Reflection](#reflection) | Functions that access the metadata about objects and return other metadata about them. For more information, see [X++ Reflection Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-reflection-run-time-functions). |
-| [Session](#Session)       | Functions that change or report on the context of the current user connection. For more information, see [X++ Session Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-session-run-time-functions).             |
-| [String](#string)         | Functions that operate on the str data type. For more information, see [X++ String Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-string-run-time-functions).                                                 |
+| [Business](#business)     | Functions that enter financial data and calculate formulas. For more information, see [X++ Business Run-Time Functions](xpp-business-run-time-functions.md).                              |
+| [Container](#container)   | Functions that operate on the container data type of X++. For more information, see [X++ Container Run-Time Functions](xpp-container-run-time-functions.md).                               |
+| [Conversion](#conversion) | Functions that translate data of one type into data of another type. For more information, see [X++ Conversion Run-Time Functions](xpp-conversion-run-time-functions.md).                  |
+| [Date](#date)             | Functions that operate on the date data type. For more information, see [X++ Date Run-Time Functions](xpp-date-run-time-functions.md).                                                     |
+| [Math](#Math)             | Functions that perform mathematical calculations. For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functions.md).                                                 |
+| [Reflection](#reflection) | Functions that access the metadata about objects and return other metadata about them. For more information, see [X++ Reflection Run-Time Functions](xpp-reflection-run-time-functions.md). |
+| [Session](#Session)       | Functions that change or report on the context of the current user connection. For more information, see [X++ Session Run-Time Functions](xpp-session-run-time-functions.md).             |
+| [String](#string)         | Functions that operate on the str data type. For more information, see [X++ String Run-Time Functions](xpp-string-run-time-functions.md).                                                 |
 | Other                     | [beep](#beep), [newGuid](#newguid), [sleep](#sleep)                                                                                                                                                                        |
 
 ## Business
-For more information, see [X++ Business Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-business-run-time-functions).
+For more information, see [X++ Business Run-Time Functions](xpp-business-run-time-functions.md).
 
 |          |         |          |        |
 |----------|---------|----------|--------|
@@ -74,7 +76,7 @@ For more information, see [X++ Business Run-Time Functions](https://docs.microso
 | rate     | sln     | syd      | term   |
 
 ## Container
-For more information, see [X++ Container Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-container-run-time-functions).
+For more information, see [X++ Container Run-Time Functions](xpp-container-run-time-functions.md).
 
 conDel
 
@@ -91,7 +93,7 @@ conPeek
 conPoke
 
 ## Conversion
-For more information, see [X++ Conversion Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-conversion-run-time-functions).
+For more information, see [X++ Conversion Run-Time Functions](xpp-conversion-run-time-functions.md).
 
 |           |              |              |            |
 |-----------|--------------|--------------|------------|
@@ -106,7 +108,7 @@ For more information, see [X++ Conversion Run-Time Functions](https://docs.micro
 | str2Time  | time2Str     | uint2Str     |            |
 
 ## Date
-For more information, see [X++ Date Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-date-run-time-functions).
+For more information, see [X++ Date Run-Time Functions](xpp-date-run-time-functions.md).
 
 |         |          |               |               |
 |---------|----------|---------------|---------------|
@@ -117,7 +119,7 @@ For more information, see [X++ Date Run-Time Functions](https://docs.microsoft.c
 | timeNow | today    | wkOfYr        | year          |
 
 ## Math
-For more information, see [X++ Math Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-math-run-time-functions).
+For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functions.md).
 
 abs
 
@@ -182,7 +184,7 @@ nextYr
 prevMth
 
 ## Reflection
-For more information, see [X++ Reflection Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-reflection-run-time-functions).
+For more information, see [X++ Reflection Run-Time Functions](xpp-reflection-run-time-functions.md).
 
 |              |               |              |               |
 |--------------|---------------|--------------|---------------|
@@ -191,7 +193,7 @@ For more information, see [X++ Reflection Run-Time Functions](https://docs.micro
 | tableId2Name | tableId2PName | tableName2Id | typeOf        |
 
 ## Session
-For more information, see [X++ Session Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-session-run-time-functions).
+For more information, see [X++ Session Run-Time Functions](xpp-session-run-time-functions.md).
 
 |                          |           |           |                     |
 |--------------------------|-----------|-----------|---------------------|
@@ -200,7 +202,7 @@ For more information, see [X++ Session Run-Time Functions](https://docs.microsof
 | runAs                    | setPrefix |           |                     |
 
 ## String
-For more information, see [X++ String Run-Time Functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-string-run-time-functions).
+For more information, see [X++ String Run-Time Functions](xpp-string-run-time-functions.md).
 
 |         |          |          |           |
 |---------|----------|----------|-----------|

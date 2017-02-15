@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a Power BI report by using Dynamics 365 for Operations data | Microsoft Docs
-description: This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http://app.powerbi.com.
+title: Create a Power BI report by using Dynamics 365 for Operations data
+description: This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http - //app.powerbi.com.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-12 19:09:37
+ms.date: 2015-12-12 19 - 09 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24531
-ms.assetid: 0b99e01c-652b-4abc-bf46-c9ff8c643d9a
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8597dfd6-9f71-409d-bc2a-d113adcdf60f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: milindav
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Create a Power BI report by using Dynamics 365 for Operations data
 
-This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http://app.powerbi.com.
+This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http - //app.powerbi.com.
 
 Key concepts
 ------------

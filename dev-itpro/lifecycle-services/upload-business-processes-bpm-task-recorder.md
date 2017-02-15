@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upload custom business processes to Business process modeler from Task recorder | Microsoft Docs
+title: Upload custom business processes to Business process modeler from Task recorder
 description: In Microsoft Dynamics Lifecycle Services, you can record information about custom business processes by using an updated version of Task recorder. You can then upload the files that you record to Business process modeler.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-05 23:24:23
+ms.date: 2015-12-05 23 - 24 - 23
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18991
-ms.assetid: ad872549-6347-4802-a3d3-5f5db52d5cd1
-ms.region: Global
-# ms.industry: 
+ms.assetid: a29f6c15-5b82-43dd-94df-b641ae5f9229
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

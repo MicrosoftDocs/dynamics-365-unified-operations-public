@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sales agreements | Microsoft Docs
+title: Sales agreements
 description: This article provides information about sales agreements. A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices and discounts.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-18 07:17:11
+ms.date: 2015-09-18 07 - 17 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
+ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9554
-ms.assetid: d029a1d0-e26c-4f29-930e-82dc12ecee56
-ms.region: Global
-# ms.industry: 
+ms.assetid: 41564f4a-65a1-4ed2-81d8-a603e9505761
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omulvad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

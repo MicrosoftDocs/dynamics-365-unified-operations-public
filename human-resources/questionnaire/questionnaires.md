@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Questionnaires | Microsoft Docs
+title: Questionnaires
 description: This article provides general information about questionnaires, and links to more detailed information. A questionnaire is a set of questions that is used to collect information for various purposes. You can design, create, distribute, and complete questionnaires, and then analyze the results. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-04 16:44:25
+ms.date: 2015-12-04 16 - 44 - 25
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
+ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17271
-ms.assetid: 7028400c-d02b-4121-8fe5-6aabaaf7293d
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1f1da25f-a3da-44c5-81f2-a0e957555d10
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: twheeloc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -44,18 +46,18 @@ The following table provides links to information about the core questionnaire t
 
 | Topic                                                                                                                                       | Description                                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Design a questionnaire](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/designing-questionnaires)                                                     | This article provides information about how to design a questionnaire. The design process involves setting up prerequisites, answers, and questions, and then combining them into a questionnaire. |
-| [Distribute and complete a questionnaire](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/distributing-questionnaires)                                 | This article provides information about how to distribute a questionnaire to respondents and how to complete questionnaires.                                                                       |
-| [View and evaluate the results of a questionnaire](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/viewing-and-evaluating-results-of-a-questionnaire) | This article provides information about how to view and evaluate the results from completed questionnaires.                                                                                        |
+| [Design a questionnaire](design-questionnaires.md)                                                     | This article provides information about how to design a questionnaire. The design process involves setting up prerequisites, answers, and questions, and then combining them into a questionnaire. |
+| [Distribute and complete a questionnaire](distribute-questionnaires.md)                                 | This article provides information about how to distribute a questionnaire to respondents and how to complete questionnaires.                                                                       |
+| [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md) | This article provides information about how to view and evaluate the results from completed questionnaires.                                                                                        |
 
 
 
 See also
 --------
 
-[Designing questionnaires](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/designing-questionnaires)
+[Designing questionnaires](design-questionnaires.md)
 
-[Distributing and completing questionnaires](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/distributing-questionnaires)
+[Distributing and completing questionnaires](distribute-questionnaires.md)
 
-[Viewing and evaluating the results of questionnaires](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/viewing-and-evaluating-results-of-a-questionnaire)
+[Viewing and evaluating the results of questionnaires](evaluate-questionnaire-results.md)
 

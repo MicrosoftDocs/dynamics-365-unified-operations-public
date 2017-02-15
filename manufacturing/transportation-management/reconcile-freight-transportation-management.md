@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reconcile freight in transportation management | Microsoft Docs
+title: Reconcile freight in transportation management
 description: This article describes the freight reconciliation process.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-09 11:18:22
+ms.date: 2016-06-09 11 - 18 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSInvoiceTable
+ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSummary, TMSFreightBillType, TMSFreightMatchReason, TMSInvoiceTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89983
-ms.assetid: 43323e35-5053-4465-bfd7-a0484e8af6ac
-ms.region: Global
-ms.industry: Distribution
+ms.assetid: 330dc062-4779-4b58-b819-2fd244bb5fc1
+ms.search.region: Global
+ms.search.industry: Distribution
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: List Panel subpattern | Microsoft Docs
+title: List Panel subpattern
 description: This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-11-04 20:47:36
+ms.date: 2015-11-04 20 - 47 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12433
-ms.assetid: e311e10e-2393-4692-bf85-ecb86cbd38d5
-ms.region: Global
-# ms.industry: 
+ms.assetid: 70c81dfb-38e8-4190-b08d-3431c7c052d1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -100,7 +102,7 @@ MoveDownButton (Button)
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+    -   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 ## Examples
 Form: **CLIPatterns\_ListPanel** **(FormTabPageControl1)** [![ListPanel(2)](./media/listpanel2-1024x283.png)](./media/listpanel2.png) Form: **SalesSummaryParameters (GroupQuotation)** [![ListPanel(3)](./media/listpanel3.png)](./media/listpanel3.png)
@@ -108,11 +110,11 @@ Form: **CLIPatterns\_ListPanel** **(FormTabPageControl1)** [![ListPanel(2)](./me
 ## Resources
 ### Typically used by patterns
 
--   [Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)
--   [Table of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)
--   [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)
--   [Dialog](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern)
--   [Wizard](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/wizard-form-pattern)
+-   [Simple List and Details](simple-list-details-form-pattern.md)
+-   [Table of Contents](table-of-contents-form-pattern.md)
+-   [Details Master](details-master-form-pattern.md)
+-   [Dialog](dialog-form-pattern.md)
+-   [Wizard](wizard-form-pattern.md)
 
 ## Appendix
 ### Frequently asked questions

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sales and profitability performance content pack for Power BI | Microsoft Docs
+title: Sales and profitability performance content pack for Power BI
 description: This topic describes what's included in the Dynamics 365 for Operations - Sales and profitability performance content pack for Microsoft Power BI. It explains how to access the reports included in the content pack and provides information about the data model and entities that are used to build the content pack.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-12-01 12:21:14
+ms.date: 2016-12-01 12 - 21 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 121
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 121
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 260674
-ms.assetid: 5636eb9d-f5b2-483e-b3e6-2cd9980a01ea
-ms.region: Global
-# ms.industry: 
+ms.assetid: 09acb33d-ab37-47e8-9de2-67dca6d7fa93
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omulvad
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -110,9 +112,9 @@ By default, the content pack displays data for the current calendar year, but yo
 ## Additional resources
 Here are some helpful links that are related to entities and building Power BI content:
 
--   [Data entities](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities)
+-   [Data entities](data-entities.md)
 -   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-powerbi-integration)
+-   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
 
 

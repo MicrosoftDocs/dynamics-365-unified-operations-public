@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Human resources | Microsoft Docs
+title: Data entities -  Human resources
 description: This article provides a list of the data entities that are available for the Human resources functionality in Microsoft Dynamics 365 for Operations.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:26:26
+ms.date: 2016-06-29 14 - 26 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96373
-ms.assetid: 6085ceff-4d88-431e-bd55-73ec4b5cabf7
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 678b4a12-6a33-4f84-853f-b9864627d1ce
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Human resources
+# Data entities -  Human resources
 
 This article provides a list of the data entities that are available for the Human resources functionality in Microsoft Dynamics 365 for Operations.
 
@@ -1887,7 +1889,7 @@ Set up Human resources parameters that are shared across all legal entities.
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Nested Simple List and Details subpattern | Microsoft Docs
+title: Nested Simple List and Details subpattern
 description: This article provides information about the Nested Simple List and Details (NSL+D) subpattern. This subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 00:37:26
+ms.date: 2015-12-03 00 - 37 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14741
-ms.assetid: 47abe2c3-b7af-4c01-84dc-9a9d44fcfb2a
-ms.region: Global
-# ms.industry: 
+ms.assetid: 95e01da9-bc5e-4ce1-a299-f11b724d1dc8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -47,7 +49,7 @@ This article describes a variant of the Simple List and Details (SL+D) pattern t
 ## Pattern changes for Dynamics AX
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
--   This pattern is new for Microsoft Dynamics AX.  Any pattern changes to the SL+D pattern can be found in the [Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)pattern document.
+-   This pattern is new for Microsoft Dynamics AX.  Any pattern changes to the SL+D pattern can be found in the [Simple List and Details](simple-list-details-form-pattern.md)pattern document.
 
 ## Model
 ### High-level structure
@@ -84,7 +86,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 **Standard form guidelines**
 
--   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+-   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 **Nested simple list & detail guidelines**
 
@@ -103,10 +105,10 @@ Form: **HcmJob** (**TaskTabPage**) [![Nested Simple List and Details sub-pattern
 ## Resources
 ### Typically used by patterns
 
--   [Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)
--   [Table of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)
--   [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)
--   [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)
+-   [Simple List and Details](simple-list-details-form-pattern.md)
+-   [Table of Contents](table-of-contents-form-pattern.md)
+-   [Details Master](details-master-form-pattern.md)
+-   [Details Transaction](details-transaction-form-pattern.md)
 
 ## Appendix
 ### Frequently asked questions

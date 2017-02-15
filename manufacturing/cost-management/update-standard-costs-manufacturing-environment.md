@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Update standard costs in a manufacturing environment | Microsoft Docs
+title: Update standard costs in a manufacturing environment
 description: This article provides guidance about how to update standard costs in a manufacturing environment. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-11 13:25:58
+ms.date: 2016-04-11 13 - 25 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CostingVersion, InventStdCostConv
+ms.search.form: CostingVersion, InventStdCostConv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79663
-ms.assetid: 9b93388b-17b8-48de-aee1-1a5a4dafaa1f
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 70b5f318-c6b2-4ce7-b2be-e6721aaae8c4
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: mguada
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

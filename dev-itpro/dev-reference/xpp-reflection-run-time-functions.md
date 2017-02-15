@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ reflection run-time functions | Microsoft Docs
+title: X++ reflection run-time functions
 description: This wiki describes the reflection run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 22:13:50
+ms.date: 2016-02-04 22 - 13 - 50
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31381
-ms.assetid: aa375c28-824a-45f4-b755-c7d6c41a0aa2
-ms.region: Global
-# ms.industry: 
+ms.assetid: 25ec8d61-77d8-4d5c-9f9c-08e4fb5344c5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: L Classes | Microsoft Docs
+title: L Classes
 description: System API classes that start with the letter L.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 14:26:34
+ms.date: 2016-02-24 14 - 26 - 34
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52291
-ms.assetid: 564502b8-6638-4005-a20f-be8c931525d5
-ms.region: Global
-# ms.industry: 
+ms.assetid: 89e3f50a-4390-45a9-b389-ee16f075fe35
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

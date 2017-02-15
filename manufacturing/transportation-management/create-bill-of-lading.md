@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Create a bill of lading | Microsoft Docs
-description: This topic describes how to create a bill of lading when using warehouse management processes. 
-
+title: Create a bill of lading
+description: This topic describes how to create a bill of lading when using warehouse management processes.  
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-09-22 12:00:26
+ms.date: 2016-09-22 12 - 00 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,25 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: WHSBillOfLading, WHSLoadPlanningWorkbench
+ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 193583
-ms.assetid: 0f30de98-97d1-49af-b734-95d8f6e9373d
-ms.region: Global
-# ms.industry: 
+ms.assetid: d2e4fff9-c68e-4440-8512-0bebeb9d3b0f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Create a bill of lading
 
-This topic describes how to create a bill of lading when using warehouse management processes. 
-
+This topic describes how to create a bill of lading when using warehouse management processes.  
 
 A bill of lading is a legal document between the company that ships the items and the carrier. The document accompanies the shipped items, and it serves as a receipt of shipment when the items are delivered at the destination. If you're using warehouse management, there are two ways to generate a bill of lading:
 

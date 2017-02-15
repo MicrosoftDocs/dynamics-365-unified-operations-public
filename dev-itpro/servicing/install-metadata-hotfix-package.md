@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install a metadata hotfix | Microsoft Docs
+title: Install a metadata hotfix
 description: This article will guide you through installing an Application Metadata hotfix on your Dynamics AX development environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-04-18 19:56:25
+ms.date: 2016-04-18 19 - 56 - 25
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79822
-ms.assetid: 9c8b4a58-5afc-4c26-bad9-42fe779081c9
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4c1ed665-99fc-41a0-80f7-b7989d4603c6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -38,7 +40,7 @@ A metadata hotfix package contains changes (metadata or X++ source code) to mode
 The following diagram shows the overall flow. [![Process for installing a metadata hotfix package](./media/configureinstallhotfix-1.png)](./media/configureinstallhotfix-1.png)
 
 ## Download the hotfix from LCS
-For instructions about how to download a hotfix, see [Download hotfixes from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/servicing/download-hotfixes-from-lifecycle-services). After you download the zip file, extract the SCDP metadata hotfix package from it, and put it in a local folder.
+For instructions about how to download a hotfix, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md). After you download the zip file, extract the SCDP metadata hotfix package from it, and put it in a local folder.
 
 ## Install the hotfix
 ### Before you begin
@@ -113,5 +115,5 @@ When you're satisfied with all changes that are related to this update, check in
 After a hotfix has been installed on a development VM as described in this article, you don't have to reinstall, resolve conflicts, and validate on other development VMs that are connected to the same VSTS project. Developers and testers who are connected to the same VSTS project can just synchronize the changes into their local VM and then build.
 
 ## Deploy
-After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment. If you use a build instance for build and test automation, the build process will automatically create the deployable package for you. For more information, see [Create and apply a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-and-apply-a-deployable-package).
+After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment. If you use a build instance for build and test automation, the build process will automatically create the deployable package for you. For more information, see [Create and apply a deployable package](create-apply-deployable-package.md).
 

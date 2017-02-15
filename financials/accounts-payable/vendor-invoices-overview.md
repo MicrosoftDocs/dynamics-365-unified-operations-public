@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Vendor invoices overview | Microsoft Docs
+title: Vendor invoices overview
 description: This article provides general information about vendor invoices. Vendor invoices are requests for payment for products and services that were received. Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:02:27
+ms.date: 2015-12-02 23 - 02 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13971
-ms.assetid: 4ca9cfca-deee-45ca-b3e6-eafa571b733c
-ms.region: Global
-# ms.industry: 
+ms.assetid: b4b4bc0c-4378-480e-9a44-4aab51d34a45
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mfalkner
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

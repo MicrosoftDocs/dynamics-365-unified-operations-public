@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure an automated task in a workflow | Microsoft Docs
+title: Configure an automated task in a workflow
 description: This topic explains how to configure the properties for an automated task.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-09-16 19:48:24
+ms.date: 2016-09-16 19 - 48 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 192061
-ms.assetid: 8ddba2a8-f075-477f-838a-5cdeb0980528
-ms.region: Global
-# ms.industry: 
+ms.assetid: 80d16a92-3212-48d9-bc2e-7f7fce786baf
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: donaldc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

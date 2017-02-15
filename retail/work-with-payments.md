@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Payment methods in a call center | Microsoft Docs
+title: Payment methods in a call center
 description: This topic covers the different payment methods you can use in a call center in Retail and commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-06-14 18:34:52
+ms.date: 2016-06-14 18 - 34 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 41
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 92163
-ms.assetid: d9711edf-54aa-4dad-9414-54cc9d61032f
-ms.region: global
-ms.industry: Retail
+ms.assetid: 2459df1a-394c-488a-8dc0-b05e66263c53
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: josaw
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

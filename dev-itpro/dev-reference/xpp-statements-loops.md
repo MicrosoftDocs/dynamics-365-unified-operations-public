@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ statements, loops, and exception handling | Microsoft Docs
+title: X++ statements, loops, and exception handling
 description: This topic describes statements, loops, and exception handling in X++.
-author: RobinARH
+author: annbe
 manager: AnnBe
-ms.date: 2016-08-27 00:35:31
+ms.date: 2016-08-27 00 - 35 - 31
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150213
-ms.assetid: d2550260-24a1-4858-8f9a-8821b2141352
-ms.region: Global
-# ms.industry: 
-ms.author: robinr
+ms.assetid: 3383a311-fcab-4b83-9f17-dfb7e74d5695
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,30 +37,115 @@ This topic describes statements, loops, and exception handling in X++.
 Comments
 --------
 
-It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the **//** style or the **/\***…**\*/** style. However, a best practice is to use the **//** style for comments, and even for multiline comments.
+It is good practice to add comments to your code. This makes a program easier to read and understand. Comments are ignored when the program is compiled. You can use "//" and "/\* … \*/" style comments, although it is best practice to use "//"-style comments, even for multi-line comments.
 
     // This is an example of a comment.
     /* Here is another example of a comment. */
 
-## Conditional statements: if, if...else, switch, and ternary operator (?)
-The conditional statements are **if**, **if**...**else**, **switch**, and the ternary operator (**?**). You use conditional statements to specify whether a block of code is executed. Different conditional statements offer advantages in different situations.
+## Print statements
+You use the **print** statement to display text or selected results in a temporary window. The messages are displayed in a window that appears when the first **print** statement is executed. The **print** statement can be a convenient alternative to the **Global::info** method during testing. The **info** method displays text in the **Infolog** window. The following table compares the **print** statement against the **Global::info** method.
 
-### if and if...else statements
+| Feature            | **Print** statement                                                                                                                            | **Info** method                                                    |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| Ease of invocation | The **Print** statement automatically converts various data types to strings. It can convert multiple data types in one invocation.            | The **Info** method requires that the input parameter be a string. |
+| Copy to clipboard  | The **Print** window contents cannot be copied to the clipboard. You cannot give the **Print** window focus.                                   | **Infolog** contents are easily copied to the clipboard.           |
+| Scope of lifetime  | The **Print** window closes when the X++ application ends, and the window might close before you have time to read it.                         | The **Infolog** window persists for the whole client session.      |
+| Size and location  | The **Print** window can be a specific size, and in a specific location on the screen.                                                         | The **Infolog** window is sized and placed by the system.          |
+| Common usage       | The **Print** statement is used for convenience during testing. It can help you debug small problems without needing to run a formal debugger. | The **Info** method is appropriate for use in production.          |
 
-The **if** statement evaluates a conditional expression, and then executes a statement or a set of statements if the conditional expression is evaluated as **true**. You can use the **else** clause to provide an alternative statement or set of statements that is executed if the condition is evaluated as **false**. Here is the syntax for an **if**...**else** statement:
+### Print statement code example
 
-**if (** *expression* **)** *statement* **\[ else** *statement* **\]**
+    // This example demonstrates the print statement automatically converting any
+    // date type to a string. 
+    static void PrintJob2(Args _args)
+    {
+        str s1 = "Hello";
+        int n2 = 42;
+        utcDateTime udt3 = DateTimeUtil::utcNow();
+        Dialog dlog4 = new Dialog();
+        print "The print statement automatically converts data types to strings.";
+        print s1, " -- ", n2, " -- ", udt3, " -- ", dlog4;
+        Global::info("User clicked 'Yes' to continue to this call to info.");
+        info(int2Str(n2)); // int2Str converter is needed.
+    }
+     
+    /***  Output to the Print window:
+    The print statement automatically converts data types to strings.
+    Hello -- 42 -- 10/3/2011 09:18:10 pm -- 1
+    ***/
 
-In this syntax, both occurrences of *statement* can be compound statements. The *expression* in the parentheses (the conditional expression) can be any valid expression that is evaluated as **true** or **false**. All numbers except 0 (zero) are **true**. All non-empty strings are also **true**. You can nest **if** statements. However, if the nesting of **if** statements becomes too deep, you should consider using a **switch** statement instead.
+    /***  Output to Infolog window:
+    Message (02:18:10 pm)
+    User clicked 'Yes' to continue to this call to info.
+    ***/
 
-#### Examples of if and if...else statements
+## TODO comments
+The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text on in the **Task List** window of Visual Studio. To open the **Task List** window, select **View** and then select **Task Window**. The **Task Window **reports the line number in the code where the **TODO** comment can be found. The rules for using **TODO** in comments are as follows:
+
+-   The **TODO** string can appear in either the **//** or the **/\* \*/** style of comment.
+-   The **TODO** string must be the very first non-white space string in the comment. White space is considered to be a carriage return, a line feed, a tab, or a space.
+-   No white space is required between the start of the comment and the **TODO**.
+-   The **TODO** string is case insensitive. However, the convention is to write **TODO** in all uppercase letters, instead of **ToDo** or another variation.
+-   The **TODO** string can have any characters appended to it, but the convention is to either append a colon, or for a white space to follow.
+-   The rest of the comment after the **TODO** string is reported as the task description. If the comment is longer than 200 characters, it might display truncated in the **Tasks** tab.
+-   The **TODO** task description can be spread over multiple lines when the **/\* \*/** comment style is used.
+
+### TODO code examples
+
+The following table shows examples of using **TODO** in the **//** or the **/\* \*/** style of comment.
+
+    // An example of using TODO in the // style of comment.
+    public boolean isLate()
+    {
+        // TODO: Finish this stub. 
+        return true;
+    }
+
+    // An example of using TODO in the /* */ style of comment.
+    public boolean isLate()
+    {
+        /* TODO Finish this stub */
+        return true;
+    }
+
+## Using clauses
+You use **using** clauses so that you do not have to provide the fully-qualified name of a type. The **using** clause must precede the class which it applies, and it is required in every source file you want it to apply to. Typically, all **using** clauses are placed at the beginning of the source file. It's also possible to provide aliases that introduce a short name for a fully qualified name. Aliases can denote namespaces or classes. The following example shows a using clause, a namespace alias, and a class alias.
+
+     
+    using System;
+    using IONS=System.IO; // Namespace alias
+    using Alist=System.Collections.ArrayList; // Class alias
+
+    public class MyClass2
+    {
+        public static void Main(Args a)
+        {
+            Int32 I; // Alternative to System.Int32
+            Alist al; // Using a class alias
+
+            al = new Alist();
+            str s;
+
+            al.Add(1);
+
+            s = IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt");
+        }
+    }
+
+## Conditional statements
+The conditional statements are **if**, **if ... else**, **switch**, and the **ternary operator (?)**. You use conditional statements to specify whether a block of code is executed or not. Different conditional statements offer advantages depending on the details of the situation.
+
+## if and if...else statements
+The **if** statement evaluates a conditional expression and executes a statement or set of statements if the conditional expression evaluates to **true**. You can provide an alternative statement or set of statements that are executed if the condition is false by using the **else** clause. The syntax for an if... else statement is **if** **(** *expression* **)** *statement* **\[** **else** *statement* **\]** . Both statements can be compound statements. The expression in the parentheses (the conditional expression) can be any valid expression that evaluates to **true** or **false**. All numbers different from zero are **true;** all non-empty strings are also **true**. You can nest **if** statements, but if the nesting of **if** statements becomes too deep, consider using a **switch** statement instead.
+
+### if and if... else code examples
 
     // if statement
     if(a > 4)
     {
        print a;
     }
-
+     
     // if... else statement 
     if(a > 4)
     {
@@ -69,19 +156,10 @@ In this syntax, both occurrences of *statement* can be compound statements. The 
        print "a is less than or equal to 4";
     }
 
-### switch statements
+## switch statement
+The **switch** statement is a multi-branch language construct. This is in contrast to the **if** statement where you have to nest **if** statements to create the same effect. The conditional expression of the **switch** is evaluated and checked against each case value. The case values must be constants that can be evaluated by the compiler. If a case constant matches the switch expression, the case statement is executed. If the case also contains a **break** statement, the program then jumps out of the switch. If there is no **break** statement, the program continues executing the next set of case statements. If no matches are found, the **default** statement is executed. If there are no matches and no default, none of the statements inside the **switch** are executed. The syntax for a switch statement is: Switch statement = **switch** **(**  *expression* **) { { case } \[ default:**  *statement*  **\] }** The syntax for a case is: case **= case**  *expression*  **{ ,**  *expression*  **} :**  *statement* Each of the previous s*tatement* lines can be replaced with a block of statements by enclosing the block in **{...}** braces.
 
-The **switch** statement is a multibranch language construct, unlike the **if** statement, where you must nest **if** statements to create the same effect. The conditional expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. If a case constant matches the **switch** expression, the **case** statement is executed. If the case also contains a **break** statement, the program then jumps out of the switch. If the case doesn't contain a **break** statement, the program continues and executes the next set of **case** statements. If no matches are found, the **default** statement is executed. If there are no matches and no **default** statement, none of the statements inside the **switch** statement are executed. Here is the syntax for a **switch** statement:
-
-**switch (** *expression* **) { { case } \[ default:** *statement* **\] }**
-
-Here is the syntax for a **case** statement:
-
-**case** *expression* **{ ,** *expression* **} :** *statement*
-
-In the syntax for both a **switch** statement and a **case** statement, every occurrence of s*tatement* can be replaced with a block of statements by enclosing the block in braces ({}).
-
-#### Examples of switch statements
+### Switch statement code examples
 
     // When the break keyword is used within a switch statement, the execution of 
     // the case branch terminates, and the statement following the 
@@ -100,7 +178,7 @@ In the syntax for both a **switch** statement and a **case** statement, every oc
             // default statement
             break;
     }
-
+     
     // Switch statement example to make the execution drop 
     // through case branches by omitting a break statement. 
     // If x is 10, b is assigned to a, and d is assigned to c, the break 
@@ -116,8 +194,8 @@ In the syntax for both a **switch** statement and a **case** statement, every oc
         case 12:
             e = f;
             break;
-    }
-
+    } 
+     
     // If you do not use the break statement, the program flow in the switch
     // statement continues into the next case. Code segments A and B
     // have the same behavior. 
@@ -149,25 +227,21 @@ In the syntax for both a **switch** statement and a **case** statement, every oc
             break;
         }
     }
+
     if (found) 
     {
         // do something
     }
 
-### Ternary operator (?)
+## Ternary operator (?)
+The **ternary operator** (**?**) is a conditional statement that resolves to one of two expressions. The result can be assigned to a variable. In comparison, an **if** statement provides conditional branching of program flow but cannot be assigned to a variable. The syntax for the ternary operator is *expression1* **?** *expression2* **:** *expression3* *expression1* must return a value of **true** or **false.** If *expression1* is **true**, the whole ternary statement returns *expression2*; otherwise it returns *expression3*. *expression2* and *expression3* must have the same type.
 
-The ternary operator (**?**) is a conditional statement that is resolved to one of two expressions. The result can be assigned to a variable. By contrast, an **if** statement provides conditional branching of the program flow but can't be assigned to a variable. Here is the syntax for the ternary operator:
-
-*expression1* **?** *expression2* **:** *expression3*
-
-In this syntax, *expression1* must return a value of **true** or **false**. If *expression1* is **true**, the whole ternary statement returns *expression2*. Otherwise, the statement returns *expression3*. Both *expression2* and *expression3* must have the same type.
-
-#### Examples of the ternary operator (?)
+### Ternary code examples
 
     // Returns one of two strings based on a Boolean return value from a method call. 
     // The Boolean expression indicated whether the CustTable table has a row
     // with a RecId field value of 1. If this Boolean expression is true 
-    // (meaning RecId != 0), found is assigned to result. 
+    // (meaning RecId != 0), found is assigned to result. 
     // Otherwise, the alternative not found is assigned to result.
     result = (custTable::find("1").RecId) ? "found" : "not found";
      
@@ -177,35 +251,122 @@ In this syntax, *expression1* must return a value of **true** or **false**. If *
     // expression is evaluated, and this also contains a ternary operator. If AccountNum 
     // is greater than 1000 and less than 2000, In interval is printed. If AccountNum is 
     // greater than 1000 and greater than or equal to 2000, Above 2000 is printed.str z = "5";
+
     print( (z > "1000") ?
              ( (z < "2000") ? "In interval" : "Above 2000")
              : "low");
     ); 
 
-## Exception handling: throw, try...catch, finally, and retry
-You handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions. An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by **try**...**catch** blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown. The **Global::error** method is often the best way to write diagnostic information to the Infolog. For example, your method might receive an input parameter value that isn't valid. In this case, the method can throw an exception to immediately transfer control to a **catch** code block that contains logic for handling this error situation. You don't necessarily have to know the location of the **catch** block that will receive control when the exception is thrown.
+## Loop statements
+There are three loop statements,  **for**, **while**, and **do...while.** A loop repeats its statement until the condition set for the loop is **false.** Within the loop statements, you can use **break** and **continue** statements.
 
-### throw statements
+## for loop
+The **for** loop repeatedly executes one or more statements, as long as the conditional expression is **true**. The statement is executed as many times as the condition is met. The body of the **for** loop may be executed zero or more times according to the results of the condition test. A **for** loop differs from other loops because of the following additions because the initial value to a control variable can be assigned and because there is a statement for incrementing or decrementing the variable. These additions make it especially useful for traversing lists, containers, and arrays because they have a fixed number of elements. You can also apply a statement to each element and increment your way through the elements, setting the condition to test for the last element. The syntax for a **for** statement is: **for** ( initialization ; test ; increment ) { *statement* } *Statement* can be a block of statements.
 
-You use the **throw** keyword to throw an **Exception** enum value. For example, the following statement throws an error exception.
+### for loop code examples
+
+    // An example where all items are printed in 
+    // a fixed array called ra with 100 reals. 
+    int ra[10];
+
+    int i; // Control variable.
+    for (i=1; i<=100; i+=1)
+    {
+        print ra[i];
+    }
+
+## while loop
+A **while** loop repeatedly executes one or more statements, as long as the condition expression is **true**. The statements are executed from zero to many times, depending on how many times the condition is met. The syntax for a **while** loop is: **while** **(** *expression* **)** *statement* *Statement* can be replaced by a block of statements.
+
+### while loop code example
+
+    // This example demonstrates a while loop that traverses 
+    // a container, cont, and prints out the contents of the container.
+    public static void Iteration()
+    {
+        container cont;
+
+        int no = 1;
+        while (no <= conlen(cont))
+        {
+            print conpeek(cont,no);
+            no = no + 1;
+        }
+    }
+
+## do...while loop
+The **do...while** loop is similar to the while loop, but differs in that the condition follows the statements to be executed. The statements are always executed at least once, as the condition is tested after the statements are executed. The **do...while** loop is well-suited for tasks that always must be done at least once, such as getting parameters for a report. The syntax for a **do...while** loop is: **do {** *statement* **} while (** *expression* **) ;** *Statement* can be a block of statements.
+
+### do...while loop code example
+
+    // An example of a do...while loop designed to find 
+    // the smallest power of 10 that is larger than _Value.
+    int FindPower(real _Value)
+    {
+        int ex=-1;
+        real curVal;
+        ;
+        do
+        {
+            ex += 1;
+            curVal = power(10, ex);
+        }
+        while (_Value>curVal);
+        return ex;
+    }
+
+## continue and break statements
+The **continue** statement causes execution to move directly to the next iteration of a **for**, **while,** or **do...while** loop. For **do** or **while**, the test is executed immediately. In a **for** statement, the increment step is executed. The **break** statement is used within a loop to terminate a loop. Execution moves directly to the first statement following the loop.
+
+### continue statement code example
+
+    // An example of a continue statement. 
+    // If Iarray[i] <= 0, the remaining statements in the loop are not executed, 
+    // and i is incremented before the if statement is tried again.
+    int i;
+    int Iarray[100];
+    for (i=1; i<100; i++)
+    {
+        if (Iarray[i] <= 0)
+        continue;
+        // Some statements.
+    }
+
+## using statement
+The **using** statement ensure that objects that implement **IDisposable** are disposed of correctly. When you use an **IDisposable** object, you should declare and instantiate it in a **using** statement. The **using** statement calls the **Dispose** method on the object in the correct way, even if an exception occurs while you are calling methods on the object. You could achieve the same result by putting the object inside a try block, and then explicitly calling **Dispose** in a finally block. The **using** statement simplifies the syntax and disposes of the object correctly. The syntax for a **using** statement is **using** ( *expression* ) { *statement* }. *Statement* can be a block of statements. Expression declares and instantiates an object that implements IDisposable. The following example creates and uses a **StreamReader** object.
+
+    static void AnotherMethod()
+    {
+        str textFromFile;
+
+        using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
+        {
+            textFromFile = sr.ReadToEnd();
+        }
+    }
+
+## Exception handling with throw, try...catch, finally, and retry
+You handle errors by using the **throw,** **try...catch**, **finally** and **retry** statements to generate and handle exceptions. An **exception** is a regulated jump away from the sequence of program execution. The instruction at which program execution resumes is determined by **try**...**catch** blocks and the type of exception that is thrown. An exception is represented by a value of the **enum** named **Exception**. A frequently thrown exception is **Exception::error** enumeration value. It is common practice to write diagnostic information to the **Infolog** before throwing the exception, and the **Global::error** method is often the best way to do that. For example, your method might receive an input parameter value that is invalid. Your method can **throw** an exception to immediately transfer control to a **catch** code block that contains logic to handle this particular error situation. You do not necessarily need to know the location of the **catch** block that will receive control when the exception is thrown.
+
+## throw statement
+You use the **throw** keyword to throw an **Exception** enum value. For example, the following statement throws an error exception:
 
     throw Exception::error;
 
-Instead of throwing an enum value, a best practice is to use the output of the **Global::error** method as the operand for **throw**.
+Instead of throwing an enum value, it is a best practice to use the **Global::error** method output as the operand for **throw**:
 
     throw Global::error("The parameter value is invalid.");
 
-The **Global::error** method can automatically convert a label into the corresponding text. This functionality helps you write code that can be localized more easily.
+The **Global::error** method can automatically convert a label into the corresponding text. This helps you to write code that can be more easily localized.
 
     throw Global::error("@SYS98765");
 
-The static methods on the **Global** class can be called without the **Global::** prefix. For example, the **Global::error** method can be called like this.
+The static methods on the **Global** class can be called without the **Global::** prefix. For example, the **Global::error** method can be called simply as
 
     error("My message.");
 
-### try, catch, finally, and retry statements
-
-When an exception is thrown, it's first processed through the **catch** list of the innermost **try** block. If a **catch** block is found that handles the kind of exception that is being thrown, program control jumps to that **catch** block. If the **catch** list has no block that specifies the exception, the system passes the exception to the **catch** list of the next-innermost **try** block. The **catch** statements are processed in the same sequence as they appear in the code. It's a common practice to have the first **catch** statement handle the **Exception::Error** enum value. One strategy is to have the last **catch** statement leave the exception type unspecified. In this case, the last **catch** statement handles all exceptions that aren't handled by any earlier **catch** statement. This strategy is appropriate for the outermost **try**...**catch** blocks. An optional ****finally**** clause can be included in **try**...**catch** statements. The semantics of a **finally** clause are the same as they are in C\#. The statements in the **finally** clause are executed when control leaves the **try** block, either normally or through an exception. The **retry** statement can be written only in a **catch** block. The **retry** statement causes control to jump up to the first line of code in the associated **try** block. The **retry** statement is used when the cause of the exception can be fixed by the code in the **catch** block. The **retry** statement gives the code in the **try** block another opportunity to succeed. The **retry** statement erases all messages that have been written to the Infolog since program control entered the **try** block. **Note:** You must make sure that your **retry** statements don't cause an infinite loop. As a best practice, the **try** block should include a variable that you can test to find out whether you're in a loop.
+## try, catch, finally, and retry statements
+When an exception is thrown, it is first processed through the **catch** list of the innermost **try** block. If a **catch** block is found that handles the kind of exception that is being thrown, program control jumps to that **catch** block. If the **catch** list has no block that specifies the particular exception, the system passes the exception to the catch list of the next innermost try block. The **catch** statements are processed in the same sequence that they appear in the code. It is common to have the first **catch** statement handle the **Exception::Error** enumeration value. One strategy is to have the last **catch** statement leave the exception type unspecified. This means it handles all exceptions that are not handled by a previous **catch.** This strategy is appropriate for the outermost **try...catch** blocks. **try...catch** statements can include an optional **finally** clause. The semantics are the same as they are in C\#. The statements in the finally clause are executed when control leaves the try block, either normally or through an exception. The **retry** statement can be written only in a **catch** block. The **retry** statement causes control to jump up to the first line of code in the associated **try** block. The **retry** statement is used when the cause of the exception can be fixed by the code in the **catch** block. The **retry** statement gives the code in the **try** block another chance to succeed. The **retry** statement erases messages that were written to the **Infolog** since program control entered the try block. **Note:** You must prevent your use of **retry** from causing an infinite loop. The best practice is to include a variable in the **try** block that you can test to see if you are in a loop.
 
     try 
     { 
@@ -224,62 +385,59 @@ When an exception is thrown, it's first processed through the **catch** list of 
         // Executed no matter how the try block exits.
     }
 
-#### The system exception handler
+### The system exception handler
 
-If no **catch** statement handles the exception, it's handled by the system exception handler. The system exception handler doesn't write to the Infolog. Therefore, an unhandled exception can be hard to diagnose. We recommended that you follow all these guidelines to provide effective exception handling:
+If no **catch** statement handles the exception, it is handled by the **system exception handler**. The system exception handler does not write to the **Infolog**. This means that an unhandled exception can be hard to diagnose. We recommended that you do all the following to provide effective exception handling:
 
 -   Have a **try** block that contains all your statements in the outermost frame on the call stack.
 -   Have an unqualified **catch** block at the end of your outermost **catch** list.
 -   Avoid throwing an **Exception** enum value directly.
--   Throw the enum value that is returned from one of the following methods on the **Global** class: **Global::error**, **Global::warning**, or **Global::info**. (You can omit the implicit **Global::** prefix).
--   When you catch an exception that hasn't been shown in the Infolog, call the **Global::info** function to show it.
+-   **Throw** the enum value that is returned from one of the **Global::error** method, the **Global::warning** method, or the **Global::info** method on the **Global** class. You have the option of omitting the implicit **Global::** prefix).
+-   When you **catch** an exception that has not been displayed in the **Infolog**, call the **Global::info** function to display it.
 
-**Exception::CLRError**, **Exception::UpdateConflictNotRecovered**, and system kernel exceptions are examples of exceptions that aren't automatically shown in the Infolog.
+**Exception::CLRError**, **Exception::UpdateConflictNotRecovered**, and system kernel exceptions are examples of exceptions that are not automatically displayed in the **Infolog**.
 
-#### Exceptions and CLR interop
+### Exceptions and CLR interop
 
-You can call Microsoft .NET Framework classes and methods that reside in assemblies that are managed by the common language runtime (CLR). When a .NET Framework **System.Exception** instance is thrown, your code can catch it by referencing **Exception::CLRError**. Your code can obtain a reference to the **System.Exception** instance by calling the **CLRInterop::getLastException** method.
+You can call .NET Framework classes and methods that reside in assemblies that are managed by the common language runtime (CLR). When a .NET Framework **System.Exception** instance is thrown, your code can **catch** it by referencing **Exception::CLRError**. Your code can obtain a reference to the **System.Exception** instance by calling the **CLRInterop::getLastException** method.
 
-#### Ensuring that exceptions are shown
+### Ensure exceptions are displayed
 
-Exceptions of the **Exception::CLRError** type aren't shown in the Infolog, because these exceptions aren't issued by a call to a method such as **Global::error**. In your **catch** block, your code can call **Global::error** to report the specific exception.
+Exceptions of type **Exception::CLRError** are not displayed in the **Infolog**. These exceptions are not issued by a call to a method such as **Global::error**. In your catch block, your code can call **Global::error** to report the specific exception.
 
-### Global class methods
+## Global class methods
+This section describes some **Global** class methods in more detail. These class methods include the **Global::error** method, the **Global::info** method, and the **Global::exceptionTextFallThrough** method.
 
-This section describes some **Global** class methods in more detail. These class methods include **Global::error**, **Global::info**, and **Global::exceptionTextFallThrough**.
+### Global::error method
 
-#### Global::error method
-
-The following code shows how the **error** method is declared.
+The error method is declared as follows:
 
     server client static Exception error
         (SysInfoLogStr txt,
         URL helpURL = '',
         SysInfoAction _sysInfoAction = null)
 
-The return type is the **Exception::Error** enum value. The **error** method doesn't throw an exception. It just provides an enum value that can be used in a **throw** statement. The **throw** statement throws the exception. Here are descriptions of the parameters for the **error** method. Only the first parameter is required.
+The return type is the **Exception::Error** enum value. The **error** method does not throw an exception. It only provides an enum value that could be used in a **throw** statement. The **throw** statement throws the exception. Only the first parameter is required. The parameters are described in the following list:
 
--   **SysInfoLogStr** txt is a **str** of the message text. It can also be a label reference, such as **strFmt("@SYS12345", strThingName)**.
--   The **URL** helpUrl is a reference to the location of a Help topic in Application Explorer, such as **"KernDoc:\\\\\\\\Functions\\\\substr"**. The parameter value is ignored if \_sysInfoAction is supplied.
--   The **SysInfoAction** \_sysInfoAction is an instance of a class that extends the **SysInfoAction** class. The method overrides that we recommend for the child class are the **description** method, the **run** method, the **pack** method, and the **unpack** method.
+-   The **SysInfoLogStr** txt is a **str** of the message text. This can also be a label reference, such as **strFmt("@SYS12345", strThingName)**.
+-   The **URL** helpUrl is a reference to the location of a Help topic in the Application Explorer. For example:**"KernDoc:\\\\\\\\Functions\\\\substr"**This parameter value is ignored if \_sysInfoAction is supplied.
+-   The **SysInfoAction** \_sysInfoAction is an instance of a class that extends the **SysInfoAction** class. The method overrides we recommend for the child class are the **description** method, the **run** method, the **pack** method, and the **unpack** method.
 
-#### Global::info method
+### Global::info method
 
-The **Global::info** method is often used to show text in the Infolog. In programs, it's often written as **info("My message.");**. Although the **info** method returns an **Exception::Info** enum value, you will rarely want to throw **Exception::Info**, because nothing unexpected has occurred.
+The **Global::info** method is routinely used to display text in the **Infolog**. It is often written in programs as **info("My message.");**. Even though the **info** method returns an **Exception::Info** enumeration value it would be rare to want to throw an **Exception::Info** because nothing unexpected has occurred.
 
-#### Global::exceptionTextFallThrough method
+### Global::exceptionTextFallThrough method
 
-Occasionally, you want to do nothing inside your **catch** block. However, the X++ compiler generates a warning if you have an empty **catch** block. To avoid this warning, call the **Global::exceptionTextFallThrough** method in the **catch** block. The method does nothing, but it satisfies the compiler.
+Occasionally you want to do nothing inside your **catch** block. The X++ compiler issues a warning when you have an empty **catch** block. You should avoid this warning by calling the **Global::exceptionTextFallThrough** method in the **catch** block. The method does nothing, but it satisfies the compiler.
 
-### Exceptions inside transactions
+## Exceptions inside transactions
+If an exception is thrown inside a transaction, the transaction is automatically aborted (a **ttsAbort** operation occurs). This applies both for exceptions thrown manually and for exceptions thrown by the system. When an exception is thrown inside a **ttsBegin** - **ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception. Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements to be tested.
 
-If an exception is thrown inside a transaction, the transaction is automatically aborted (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception. Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
+## Exceptionhandling code examples
+### Display exceptions in the Infolog
 
-### Examples of exception handling
-
-#### Showing exceptions in the Infolog
-
-The following code example shows exceptions in the Infolog.
+This code example displays exceptions in the Infolog.
 
     // This example shows that a direct throw of Exception::Error does not
     // display a message in the Infolog. This is why we recommend the 
@@ -289,7 +447,8 @@ The following code example shows exceptions in the Infolog.
     /***
       The 'throw' does not directly add a message to the Infolog.
       The exception is caught.
-    ***/    
+    ***/
+        
         try
         {
             info("In the 'try' block. (j1)");
@@ -299,7 +458,6 @@ The following code example shows exceptions in the Infolog.
         {
             info("Caught 'Exception::Error'.");
         }
-
     /**********  Actual Infolog output
     Message (03:43:45 pm)
     In the 'try' block. (j1)
@@ -307,9 +465,9 @@ The following code example shows exceptions in the Infolog.
     **********/
     }
 
-#### Using the error method to write exception information to the Infolog
+### error method to write exception information to the Infolog
 
-The following code example uses the **error** method to write exception information to the Infolog.
+This code example uses the **error** method to write exception information to the Infolog.
 
     // This example shows that the use of the Global::error method 
     // is a reliable way to display exceptions in the Infolog. 
@@ -328,7 +486,6 @@ The following code example uses the **error** method to write exception informat
         {
             info("Caught 'Exception::Error'.");
         }
-
     /***  Infolog output
     Message (03:51:44 pm)
     In the 'try' block. (j2)
@@ -337,9 +494,9 @@ The following code example uses the **error** method to write exception informat
     ***/
     }
 
-#### Handling a CLRError
+### Handle a CLRError
 
-The following code example handles a **CLRError** exception.
+This code example handles a **CLRError.**
 
     // This example shows that a CLRError exception is not displayed 
     // in the Infolog unless you catch the exception and manually
@@ -369,7 +526,6 @@ The following code example handles a **CLRError** exception.
             netExcepn = CLRInterop::getLastException();
             info(netExcepn.ToString());
         }
-
     /**********  Actual Infolog output (truncated for display)
     Message (03:55:10 pm)
     In the 'try' block. (j3)
@@ -384,9 +540,9 @@ The following code example handles a **CLRError** exception.
     **********/
     }
 
-#### Using a retry statement
+### Use the retry statement
 
-The following code example uses a **retry** statement.
+This code example uses the **retry** statement.
 
     // This example shows how to use the retry statement. The print
     // statements are included becuase retry causes earlier Infolog 
@@ -428,7 +584,6 @@ The following code example uses a **retry** statement.
         }
         info("End of job.");
         print("End of job.");
-
     /**********  Actual Infolog output
     Message (04:33:56 pm)
             .
@@ -438,9 +593,9 @@ The following code example uses a **retry** statement.
     **********/
     }
 
-#### Throwing an exception inside a transaction
+### Throw an exception inside a transaction
 
-The following code example throws an exception in a transaction block.
+This code example throws an exception in a transaction block.
 
     // This examples uses three levels of try nesting to illustrate
     // where an exception is caught when the exception is thrown inside
@@ -476,7 +631,6 @@ The following code example throws an exception in a transaction block.
             info("Catch_3: Unexpected, caught in 'catch' far outside the transaction block.");
         }
         info("End of job.");
-
     /**********  Actual Infolog output
     Message (04:12:34 pm)
     Throwing exception inside transaction.
@@ -485,11 +639,11 @@ The following code example throws an exception in a transaction block.
     **********/
     }
 
-#### Using Global::error with a SysInfoAction parameter
+### Use Global::error with a SysInfoAction parameter
 
-When your code throws an exception, it can write messages to the Infolog. You can make those Infolog messages more helpful by using the **SysInfoAction** class. In the following example, a **SysInfoAction** parameter is passed in to the **Global::error** method. The **error** method writes the message to the Infolog. When the user double-clicks the Infolog message, the **SysInfoAction.run** method is run. In the **run** method, you can write code that helps diagnose or fix the issue that caused the exception. The object that is passed in to the **Global::error** method is constructed from a class that you write that extends **SysInfoAction**. The following code sample is shown in two parts. The first part shows a job that calls the **Global::error** method and then throws the returned value. An instance of the **SysInfoAction\_PrintWindow\_Demo** class is passed in to the **error** method. The second part shows the **SysInfoAction\_PrintWindow\_Demo** class.
+When your code throws an exception, your code can write messages to the **Infolog** window. You can make those **Infolog** messages more helpful by using the **SysInfoAction** class. In the following example, a **SysInfoAction** parameter is passed in to the **Global::error** method. The **error** method writes the message to the **Infolog**. When the user double-clicks the **Infolog** message, the **SysInfoAction.run** method is run. You can write code in the **run** method that helps to diagnose or fix the problem that caused the exception. The object that is passed in to the **Global::error** method is constructed from a class that you write that extends **SysInfoAction**. The following code sample is shown in two parts. The first part shows a job that calls the **Global::error** method, and then throws the returned value. An instance of the **SysInfoAction\_PrintWindow\_Demo** class is passed into the **error** method. The second part shows the **SysInfoAction\_PrintWindow\_Demo** class.
 
-##### Part 1: Calling Global::error
+#### Part 1: Call Global::error
 
     static void Job_SysInfoAction(Args _args)
     {
@@ -507,7 +661,7 @@ When your code throws an exception, it can write messages to the Infolog. You ca
         }
     }
 
-##### Part 2: The SysInfoAction\_PrintWindow\_Demo class
+#### Part 2: The SysInfoAction\_PrintWindow\_Demo class
 
     public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
     {
@@ -516,6 +670,7 @@ When your code throws an exception, it can write messages to the Infolog. You ca
         {
             return "Starts the Print Window for demonstration.";
         }
+
         public void run()
         {
             print("This appears in the Print window.");
@@ -527,10 +682,12 @@ When your code throws an exception, it can write messages to the Infolog. You ca
             Issuing a warning from the catch block.
             ***************/
         }
+
         public container pack()
         {
             return ["Packed greeting."]; // Literal container.
         }
+
         public boolean unpack(container packedClass, Object object = null)
         {
             [m_sGreeting] = packedClass;
@@ -538,217 +695,27 @@ When your code throws an exception, it can write messages to the Infolog. You ca
         }
     }
 
-### List of exceptions
+## List of exceptions
+The exception literals shown in the following table are the values of the **Exception** enumeration.
 
-The following table shows the exception literals that are the values of the **Exception** enumeration.
+| Exception literal                     | Description                                                                                                                                                                             |
+|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Break**                             | Indicates that the user has pressed BREAK or CTRL+C.                                                                                                                                    |
+| **CLRError**                          | Indicates that an error has occurred during the use of the common language runtime (CLR) functionality.                                                                                 |
+| **CodeAccessSecurity**                | Indicates that an error has occurred during the use of the **CodeAccessPermission.demand** method.                                                                                      |
+| **DDEerror**                          | Indicates that an error occurred in the use of the **DDE** system class.                                                                                                                |
+| **Deadlock**                          | Indicates that there is a database deadlock because several transactions are waiting for each other.                                                                                    |
+| **DuplicateKeyException**             | Indicates that an error has occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block).  |
+| **DuplicateKeyExceptionNotRecovered** | Indicates that an error has occurred in a transaction that is using Optimistic Concurrency Control. The code will not be retried. This exception cannot be caught inside a transaction. |
+| **Error**                             | Indicates that a fatal error has occurred. The transaction has been stopped.                                                                                                            |
+| **Info**                              | Holds a message for the user.Do not **throw** an **info** exception.                                                                                                                    |
+| **Internal**                          | Indicates an internal error in the development system.                                                                                                                                  |
+| **Numeric**                           | Indicates that an error has occurred during the use of the **str2int**, **str2int64**, or **str2num** functions.                                                                        |
+| **Sequence**                          |                                                                                                                                                                                         |
+| **UpdateConflict**                    | Indicates that an error has occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block).  |
+| **UpdateConflictNotRecovered**        | Indicates that an error has occurred in a transaction that is using Optimistic Concurrency Control. The code will not be retried. This exception cannot be caught within a transaction. |
+| **Warning**                           | Indicates that something exceptional has happened. The user might have to take action, but the event is not fatal. Do not throw a **warning** exception.                                |
 
-| Exception literal                 | Description                                                                                                                                                         |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Break                             | The user pressed Break or Ctrl+C.                                                                                                                                   |
-| CLRError                          | An error occurred while the CLR functionality was being used.                                                                                                       |
-| CodeAccessSecurity                | An error occurred while the **CodeAccessPermission.demand** method was being used.                                                                                  |
-| DDEerror                          | An error occurred while the **DDE** system class was being used.                                                                                                    |
-| Deadlock                          | A database deadlock occurred, because several transactions are waiting for each other.                                                                              |
-| DuplicateKeyException             | An error occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block). |
-| DuplicateKeyExceptionNotRecovered | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught inside a transaction.    |
-| Error                             | A fatal error occurred. The transaction has been stopped.                                                                                                           |
-| Info                              | This exception literal holds a message for the user. Don't throw an **info** exception.                                                                             |
-| Internal                          | An internal error occurred in the development system.                                                                                                               |
-| Numeric                           | An error occurred while the **str2int**, **str2int64**, or **str2num** function was being used.                                                                     |
-| Sequence                          |                                                                                                                                                                     |
-| UpdateConflict                    | An error occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block). |
-| UpdateConflictNotRecovered        | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught within a transaction.    |
-| Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception.                         |
-
-## Loop statements: for, while, and do...while
-There are three loop statements: **for**, **while**, and **do**...**while**. A loop repeats its statement until the condition that is set for the loop is **false**. Within the loop statements, you can use **break** and **continue** statements.
-
-### for loops
-
-The **for** loop repeatedly executes one or more statements for as long as the conditional expression is **true**. The statement is executed as many times as the condition is met. The body of the **for** loop might be executed zero or more times, depending on the results of the condition test. A **for** loop differs from other loops because an initial value can be assigned to a control variable, and because there is a statement for incrementing or decrementing the variable. These additions make a **for** loop especially useful for traversing lists, containers, and arrays, because they have a fixed number of elements. You can also apply a statement to each element and increment your way through the elements, setting the condition to test for the last element. Here is the syntax for a **for** statement:
-
-**for (** *initialization* **;** *test* **;** *increment* **) {** *statement* **}**
-
-*tatement* can be a block of statements.
-
-#### Example of a for loop
-
-    // An example where all items are printed in 
-    // a fixed array called ra with 100 reals. 
-    int ra[10];
-    int i; // Control variable.
-    for (i=1; i<=100; i+=1)
-    {
-        print ra[i];
-    }
-
-### while loops
-
-A **while** loop repeatedly executes one or more statements for as long as the conditional expression is **true**. The statements are executed as many times as the condition is met (zero to many). Here is the syntax for a **while** loop:
-
-**while (** *expression* **)** *statement*
-
-In this syntax, *statement* can be replaced by a block of statements.
-
-#### Example of a while loop
-
-    // This example demonstrates a while loop that traverses 
-    // a container, cont, and prints out the contents of the container.
-    public static void Iteration()
-    {
-        container cont;
-        int no = 1;
-        while (no <= conlen(cont))
-        {
-            print conpeek(cont,no);
-            no = no + 1;
-        }
-    }
-
-### do...while loops
-
-The **do**...**while** loop is similar to the **while** loop, but the condition appears after the statements that must be executed. The statements are always executed at least one time, because the condition is tested after the statements are executed. The **do**...**while** loop is well-suited to tasks that must always be done at least one time, such as getting parameters for a report. Here is the syntax for a **do**...**while** loop:
-
-**do {** *statement* **} while (** *expression* **) ;**
-
-*tatement* can be a block of statements.
-
-#### Example of a do...while loop
-
-    // An example of a do...while loop designed to find 
-    // the smallest power of 10 that is larger than _Value.
-    int FindPower(real _Value)
-    {
-        int ex=-1;
-        real curVal;
-        ;
-        do
-        {
-            ex += 1;
-            curVal = power(10, ex);
-        }
-        while (_Value>curVal);
-        return ex;
-    }
-
-### continue and break statements
-
-The **continue** statement causes execution to move directly to the next iteration of a **for**, **while**, or **do**...**while** loop. For **do** or **while**, the test is executed immediately. For a **for** statement, the increment step is executed. The **break** statement within a loop is used to terminate that loop. Execution then moves to the first statement after the loop.
-
-#### Example of a continue statement
-
-    // An example of a continue statement. 
-    // If Iarray[i] <= 0, the remaining statements in the loop are not executed, 
-    // and i is incremented before the if statement is tried again.
-    int i;
-    int Iarray[100];
-    for (i=1; i<100; i++)
-    {
-        if (Iarray[i] <= 0)
-        continue;
-        // Some statements.
-    }
-
-## print statements
-You use the **print** statement to show messages (text or selected results) in a temporary window. This window appears when the first **print** statement is executed. During testing, the **print** statement can be a convenient alternative to the **Global::info** method, which shows text in the Infolog. The following table compares the **print** statement and the **Global::info** method.
-
-| Feature                                   | print statement                                                                                                                             | Info method                                                                      |
-|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Ease of invocation                        | The **print** statement automatically converts various data types into strings. It can convert multiple data types in one invocation.       | The **info** method requires that the input parameter be a string.               |
-| Ability to copy contents to the clipboard | The contents of the window that the **print** statement opens can't be copied to the clipboard. You can't give the window focus.            | Infolog contents are easily copied from the **Infolog** window to the clipboard. |
-| Scope of lifetime                         | The window closes when the X++ application ends, and it might close before you have time to read it.                                        | The window persists for the whole client session.                                |
-| Size and location                         | The window can be a specific size and in a specific location on the screen.                                                                 | The window is sized and placed by the system.                                    |
-| Typical usage                             | The **print** statement is used for convenience during testing. It can help you debug small issues without having to run a formal debugger. | The **info** method is appropriate for use in production.                        |
-
-### Example of a print statement
-
-    // This example demonstrates the print statement automatically converting any
-    // date type to a string. 
-    static void PrintJob2(Args _args)
-    {
-        str s1 = "Hello";
-        int n2 = 42;
-        utcDateTime udt3 = DateTimeUtil::utcNow();
-        Dialog dlog4 = new Dialog();
-        print "The print statement automatically converts data types to strings.";
-        print s1, " -- ", n2, " -- ", udt3, " -- ", dlog4;
-        Global::info("User clicked 'Yes' to continue to this call to info.");
-        info(int2Str(n2)); // int2Str converter is needed.
-    }
-    /***  Output to the Print window:
-    The print statement automatically converts data types to strings.
-    Hello -- 42 -- 10/3/2011 09:18:10 pm -- 1
-    ***/
-
-    /***  Output to Infolog window:
-    Message (02:18:10 pm)
-    User clicked 'Yes' to continue to this call to info.
-    ***/
-
-## TODO comments
-The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code. Here are the rules for using **TODO** in comments:
-
--   The **TODO** string can appear in a comment that uses either the **//** style or the **/\***...**\*/** style.
--   The **TODO** string must be the very first non–white space string in the comment. A carriage return, a line feed, a tab, and a space are all considered white space.
--   No white space is required between the start of the comment and the **TODO**.
--   The **TODO** string is case-insensitive. However, the convention is to type **TODO** in all uppercase letters, instead of **ToDo** or another variation.
--   The **TODO** string can have any characters appended to it. However, the convention is either to append a colon to the **TODO** string or to follow it with a white space.
--   The rest of the comment after the **TODO** string is reported as the task description. If the comment is longer than 200 characters, it might appear truncated on the **Tasks** tab.
--   The **TODO** task description can be spread over multiple lines when the **/\***...**\*/** comment style is used.
-
-### Examples of TODO comments
-
-The following examples show **TODO** comments that use the **//** and **/\***...**\*/** styles.
-
-    // An example of using TODO in the // style of comment.
-    public boolean isLate()
-    {
-        // TODO: Finish this stub. 
-        return true;
-    }
-
-    // An example of using TODO in the /* */ style of comment.
-    public boolean isLate()
-    {
-        /* TODO Finish this stub */
-        return true;
-    }
-
-## Unsupported statements: changeSite, pause, and window
-The **changeSite**, **pause**, and **window** keywords are no longer a part of the X++ language. These keywords will cause compilation errors if you use them.
-
-## using clauses
-You use **using** clauses so that you don't have to provide the fully qualified name of a type. The **using** clause must precede the class that it applies, and it's required in every source file that you want it to apply to. Typically, all **using** clauses are put at the beginning of the source file. You can also provide aliases that introduce a short name for a fully qualified name. Aliases can denote namespaces or classes. The following example shows a **using** clause, a namespace alias, and a class alias.
-
-    using System;
-    using IONS=System.IO; // Namespace alias
-    using Alist=System.Collections.ArrayList; // Class alias
-    public class MyClass2
-    {
-        public static void Main(Args a)
-        {
-            Int32 I; // Alternative to System.Int32
-            Alist al; // Using a class alias
-            al = new Alist();
-            str s;
-            al.Add(1);
-            s = IONS.Path::ChangeExtension(@"c:\tmp\test.xml", ".txt");
-        }
-    }
-
-## using statements
-The **using** statement helps guarantee that objects that implement **IDisposable** are disposed of correctly. When you use an **IDisposable** object, you should declare and instantiate it in a **using** statement. The **using** statement calls the **Dispose** method on the object in the correct way, even if an exception occurs while you're calling methods on the object. You can achieve the same result by putting the object inside a **try** block and then explicitly calling **Dispose** in a **finally** block. The **using** statement simplifies the syntax and disposes of the object correctly. Here is the syntax for a **using** statement:
-
-**using (** *expression* **) {** *statement* **}**
-
-In this syntax, *statement* can be a block of statements, and *expression* declares and instantiates an object that implements **IDisposable**. The following example creates and uses a **StreamReader** object.
-
-    static void AnotherMethod()
-    {
-        str textFromFile;
-        using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
-        {
-            textFromFile = sr.ReadToEnd();
-        }
-    }
+## changeSite, pause, and window statements
+The **changeSite**, **pause**, and **window** keywords are no longer a part of the X++ language. Using these keywords will cause compilation errors.
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reverse the production order status | Microsoft Docs
+title: Reverse the production order status
 description: This topic describes how to reverse production order status. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-23 19:00:04
+ms.date: 2016-03-23 19 - 00 - 04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ProdParmStatusDecrease
+ms.search.form: ProdParmStatusDecrease
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70131
-ms.assetid: 4a966289-a485-4505-b01e-9d4ef436d710
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 1bda45fc-753b-45f2-b0fd-0d162f97a39e
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: johanho
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

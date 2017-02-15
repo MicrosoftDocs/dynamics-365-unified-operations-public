@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Consolidated invoices for Japan | Microsoft Docs
+title: Consolidated invoices for Japan
 description: In Japan, invoices are consolidated each month for payment. This article provides information about consolidated invoices, and explains how the invoice amount and due date are calculated.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-19 23:03:02
+ms.date: 2015-10-19 23 - 03 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustConsInvoice_JP, VendConsInvoice_JP
+ms.search.form: CustConsInvoice_JP, VendConsInvoice_JP
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10314
-ms.assetid: beeedcec-1dd6-4086-8590-23db93d8cae4
-ms.region: Japan
-# ms.industry: 
+ms.assetid: f71e9b8c-5872-4175-8471-b37d48c4d4f6
+ms.search.region: Japan
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

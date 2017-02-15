@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure a line-item workflow | Microsoft Docs
+title: Configure a line-item workflow
 description: This topic explains how to configure a line-item workflow element.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-09-30 15:59:28
+ms.date: 2016-09-30 15 - 59 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 195833
-ms.assetid: 79650449-a141-40a5-a500-4770c10501b8
-ms.region: Global
-# ms.industry: 
+ms.assetid: 07c1d278-6407-43e6-b824-5889d2644575
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: donaldc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

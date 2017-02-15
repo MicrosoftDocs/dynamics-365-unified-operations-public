@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: EU Sales list reporting | Microsoft Docs
+title: EU Sales list reporting
 description: This article provides information about European Union (EU) Sales list reporting.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-11-16 21:16:24
+ms.date: 2015-11-16 21 - 16 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12811
-ms.assetid: 98fc38b0-2639-4da2-8c95-96397c6d6e07
-ms.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-# ms.industry: 
+ms.assetid: 4c263836-e543-48f6-bd92-ba724a962402
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

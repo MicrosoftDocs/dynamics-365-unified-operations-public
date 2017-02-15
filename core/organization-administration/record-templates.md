@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create record templates | Microsoft Docs
+title: Create record templates
 description: This article introduces the concept of record templates and explains how they can be used to create records that share information.
 author: pvillads
 manager: AnnBe
-ms.date: 2015-12-03 22:12:26
+ms.date: 2015-12-03 22 - 12 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16101
-ms.assetid: fa249265-b4db-433d-b75f-4f47f571c544
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7bd87f12-92cd-4957-89fb-72d609ce0688
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

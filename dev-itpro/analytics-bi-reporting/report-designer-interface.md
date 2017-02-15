@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Report Designer interface | Microsoft Docs
+title: Report Designer interface
 description: This article explains how to navigate through Report Designer and how to use the various options to meet your specific requirements. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-07 18:50:10
+ms.date: 2016-03-07 18 - 50 - 10
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FinancialReports
+ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX application 7.0.1
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59041
-ms.assetid: a67b4c9d-28c6-442b-b0c1-bd5a88999f8f
-ms.region: Global
-# ms.industry: 
+ms.assetid: 507c9354-1b2b-41b6-a6ad-e3e9d2ff04c4
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 
@@ -227,7 +229,7 @@ The report designer toolbar provides quick access to commands for navigating w
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics ERP](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/management-reporter-for-microsoft-dynamics-erp)
+[Financial reporting for Microsoft Dynamics ERP](financial-reporting-intro.md)
 
-[Generate a financial report](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/generate-a-financial-report)
+[Generate a financial report](generate-financial-report.md)
 

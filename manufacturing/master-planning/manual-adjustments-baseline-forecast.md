@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Make manual adjustments to the baseline forecast | Microsoft Docs
+title: Make manual adjustments to the baseline forecast
 description: This article explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-30 12:35:42
+ms.date: 2016-03-30 12 - 35 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ReqDemPlanForecastViewer
+ms.search.form: ReqDemPlanForecastViewer
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72704
-ms.assetid: d0af3b7d-f610-4004-9df2-3d03065d40c9
-ms.region: global
-ms.industry: Manufacturing
+ms.assetid: 64e404ae-a858-425d-8754-e2deb44c974a
+ms.search.region: global
+ms.search.industry: Manufacturing
 ms.author: roxanad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -52,7 +54,7 @@ You can open the **Demand forecast details** page to view more information about
 -   The new demand forecast values and the amounts they have been manually adjusted by.
 -   The confidence interval for the forecasted values.
 -   The forecast model that was used to generate the forecast. If you're viewing aggregated data, you will see the list of all the methods that were used for all the aggregated time series.
--   The internal model accuracy (MAPE). For more information about forecast accuracy, see [Monitoring forecast accuracy](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/monitoring-forecast-accuracy).
+-   The internal model accuracy (MAPE). For more information about forecast accuracy, see [Monitoring forecast accuracy](monitor-forecast-accuracy.md).
 
 **Notes:**
 
@@ -64,7 +66,7 @@ You can also make manual adjustments to the forecast on the **Demand forecast de
 See also
 --------
 
-[Monitoring forecast accuracy](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/monitoring-forecast-accuracy)
+[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
 
-[Generating a statistical baseline forecast](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/generating-a-statistical-baseline-forecast)
+[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 

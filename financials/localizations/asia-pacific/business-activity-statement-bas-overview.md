@@ -1,16 +1,11 @@
 ---
 # required metadata
 
-title: Business Activity Statement (BAS) | Microsoft Docs
-description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form submitted to the Australian Taxation Office by all businesses to report their taxation obligations.
-
-
-  
-   
-
+title: Business Activity Statement (BAS)
+description: This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form submitted to the Australian Taxation Office by all businesses to report their taxation obligations.          
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-11-10 16:10:34
+ms.date: 2015-11-10 16 - 10 - 34
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,29 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12641
-ms.assetid: 17d2567f-1620-4b11-88fb-47feb0542706
-ms.region: Australia
-# ms.industry: 
+ms.assetid: 7cd07777-2d26-4830-b83d-6fe752f2d87a
+ms.search.region: Australia
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Business Activity Statement (BAS)
 
-This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form submitted to the Australian Taxation Office by all businesses to report their taxation obligations.
-
-
-  
-   
-
+This topic provides information about the business activity statement (BAS) for Australia. The BAS is a form submitted to the Australian Taxation Office by all businesses to report their taxation obligations.          
 
 The business activity statement feature in Microsoft Dynamics AX is designed to help you fill out your Business Activity Statement, commonly known as the BAS. It is very similar to the Calculation Sheet that the Australian Taxation Office provides you when you receive your BAS form in the mail. The taxation liabilities in the BAS include the following:
 

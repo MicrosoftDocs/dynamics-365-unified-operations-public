@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: German audit file (GDPdU/GoBD) | Microsoft Docs
+title: German audit file (GDPdU/GoBD)
 description: Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics AX supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 19:37:58
+ms.date: 2016-03-07 19 - 37 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59201
-ms.assetid: 5ea96d7e-dae3-4b3e-9d78-77d791c72b9a
-ms.region: Austria, Germany
-# ms.industry: 
+ms.assetid: d77b1873-d304-42cd-b259-04fabcf6132e
+ms.search.region: Austria, Germany
+# ms.search.industry: 
 ms.author: mrolecki
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -224,5 +226,5 @@ The following tables show the Accounts payable data structure definitions.
 See also
 --------
 
-[Electronic Reporting overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger)
+[Electronic Reporting overview](general-electronic-reporting.md)
 

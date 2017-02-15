@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Action search | Microsoft Docs
+title: Action search
 description: This article describes the action search functionality in Microsoft Dynamics 365 for Operations. Action search will help you find and run actions on a page.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-03-08 19:35:39
+ms.date: 2016-03-08 19 - 35 - 39
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62303
-ms.assetid: 3d7dfcaa-4be2-4fdc-ac35-cc96868f56ab
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5e152360-7599-4221-988d-d3d81290c720
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -60,5 +62,5 @@ Often, in Dynamics 365 for Operations, you must know both the location and the
 For example, you typed **tot** in the **action search** field and are now examining the results list. The first entry, for a button that is named **Totals**, is highlighted. A button path of **Sales order** &gt; **View** is also shown. The **Sales order** part of the path corresponds to the **Sales order** tab on the Action Pane, and the **View** part of the path corresponds to the **View** group on that tab. Similarly, the path of the **Total discount** button (**Sell** &gt; **Calculate**) informs you that this button is located in the **Calculate** group on the **Sell** tab of the Action Pane. Therefore, this information helps you understand exactly which button will be triggered by action search (if you select that button in the results list). [![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png) In the previous example, action search showed results from the standard Action Pane at the top of a page. However, action search also shows results from visible toolbars that are located in other places on the page. For example, you're searching for the **On-hand inventory** button that is located on the **Sales order lines** FastTab. In this case, the button path in the results list (**Sales order lines** &gt; **Inventory** &gt; **View**) informs you that this button is located under the **View** heading on the **Inventory** menu button on the **Sales order lines** FastTab. [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 ## Action search vs. Navigation search
-Whereas action search is intended to find and run actions on a page, there is a separate search mechanism for finding and navigating to pages in Dynamics 365 for Operations. For more information about that feature, see the [Navigation search](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/navigation-search-feature) article.
+Whereas action search is intended to find and run actions on a page, there is a separate search mechanism for finding and navigating to pages in Dynamics 365 for Operations. For more information about that feature, see the [Navigation search](navigation-search.md) article.
 

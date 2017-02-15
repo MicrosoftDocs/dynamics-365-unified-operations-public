@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Electronic ledger accounting statements | Microsoft Docs
+title: Electronic ledger accounting statements
 description: This article explains how to set up and generate the general ledger XML files version 1.1 that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-22 19:13:20
+ms.date: 2015-09-10 21 - 09 - 19
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ERSolutionTable, LedgerConsolidateAccountGroup, LedgerJournalTable, LedgerJournalTransVendInvoice, LedgerParameters, MainAccount, MainAccountConsolidateAccount, VendEditInvoice, VendPaymMode, VendTransInvoicePool
+ms.search.form: ERSolutionTable, LedgerConsolidateAccountGroup, LedgerJournalTable, LedgerJournalTransVendInvoice, LedgerParameters, MainAccount, MainAccountConsolidateAccount, VendEditInvoice, VendPaymMode, VendTransInvoicePool
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: ShylaThompson
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 265314
-ms.assetid: 4cbc7a2c-d102-4fa6-a173-30a689790e40
-ms.region: Mexico
-# ms.industry: 
+ms.custom: 3701
+ms.assetid: d1335f02-ac8e-4399-8691-e94ac95b2ab9
+ms.search.region: Mexico
+# ms.search.industry: 
 ms.author: sndray
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -42,19 +44,7 @@ All companies in Mexico are required to report ledger accounting statements to t
 This functionality is available only when the country/region of the company is defined as MEX. **Note:** The government also requires an additional auxiliary XML file (folios) that details all fiscal documents (CFDI, CFD, and others). This file isn't included in the current feature, because this information is included in the Journal transactions XML file, as specified in Chapter 2.8, section 2.8.1.3 of the Miscellaneous Tax Resolution for 2015 (Second section) of December 30, 2014. For more information, see <http://www.sat.gob.mx/fichas_tematicas/buzon_tributario/Documents/extracto_reglas.pdf>.
 
 ## Prerequisites
-The following process lists the prerequisites that must be in place before you start to generate the XML files that SAT requires. Parameters determine how the data will be exposed in the XML files, and all of them are required. Missing parameters can cause inconsistencies or incorrect validations in the government validation tool.
-
-1.  Set up main account parameters.
-2.  Set up a Parent\_Account to identify the level of account.
-3.  Set up total accounts in all levels.
-4.  Set up SAT account group.
-5.  Create consolidation account group for SAT.
-6.  Assign main account to SAT group and level accounts.
-7.  Set up Method of payments and Bank accounts.
-8.  Assign SAT method of payments.
-9.  Assign SAT bank code in routing number field.
-
- 
+The following illustration shows the prerequisites that must be in place before you start to generate the XML files that SAT requires. Parameters determine how the data will be exposed in the XML files, and all of them are required. Missing parameters can cause inconsistencies or incorrect validations in the government validation tool. [![Prerequisites for electronic ledger accounting statements](./media/electronic-ledger-accounting-statements.jpg)](./media/electronic-ledger-accounting-statements.jpg)
 
 ### Chart of accounts
 
@@ -106,7 +96,7 @@ Users can now include this information in transactions that are generated from 
 
 ### Electronic reporting
 
-This feature is based on Electronic reporting configuration (GER), where each XML file format is defined by using the model and format designer for electronic reporting. Use the **AX resources** repository configuration type to import these configurations into the current company and enable the generation of XML files. Click **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Repositories**.
+This feature is based on Electronic reporting configuration (ER), where each XML file format is defined by using the model and format designer for electronic reporting. Use the **AX resources** repository configuration type to import these configurations into the current company and enable the generation of XML files. Click **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Repositories**.
 
 You must upload the following repository models and formats:
 

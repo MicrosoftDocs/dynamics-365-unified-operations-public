@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: H Classes | Microsoft Docs
+title: H Classes
 description: System API classes that start with the letter H.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 14:39:08
+ms.date: 2016-02-24 14 - 39 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52591
-ms.assetid: 16db2c45-038d-4d00-9f83-ef4e2ae1feeb
-ms.region: Global
-# ms.industry: 
+ms.assetid: bfcd1580-d0c1-4875-92f4-bc83658fe984
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new in Lifecycle Services | Microsoft Docs
+title: What's new in Lifecycle Services
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-02 16:48:17
+ms.date: 2015-12-02 16 - 48 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13321
-ms.assetid: b6f9cd33-03cb-4c87-89b2-66234b9a27a6
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: f247e05e-50c8-4e45-ac60-a0ad6f4f5fa5
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: kfend
 
 
 
-Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and their partners can use to manage Microsoft Dynamics AX projects from pre-sales to implementation and operations. Based on the phase of your project and the industry that you are working in, the site provides checklists and tools that help you manage the project. The site also provides a dashboard, so that you have a single location from which you can obtain up-to-date project information. Go to the Lifecycle Services [site](https://lcs.dynamics.com/en/). Read the documentation: [Lifecycle Services for Microsoft Dynamics User Guide (LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/lifecycle-services-for-microsoft-dynamics-user-guide-lcs) For more detailed information about Lifecycle Services releases, see the release posts on Lifecycle Services [blog](http://blogs.msdn.com/b/lcs/).
+Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and their partners can use to manage Microsoft Dynamics AX projects from pre-sales to implementation and operations. Based on the phase of your project and the industry that you are working in, the site provides checklists and tools that help you manage the project. The site also provides a dashboard, so that you have a single location from which you can obtain up-to-date project information. Go to the Lifecycle Services [site](https://lcs.dynamics.com/en/). Read the documentation: [Lifecycle Services for Microsoft Dynamics User Guide (LCS)](lcs-user-guide.md) For more detailed information about Lifecycle Services releases, see the release posts on Lifecycle Services [blog](http://blogs.msdn.com/b/lcs/).
 
 ## September 2016
 The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the September release of Lifecycle Services. **NEW FEATURES** **Combined packages flow through LCS** In the September LCS release, you can now combine a maximum of 3 deployable packages into a single package that can then be deployed on the environment of your choice. This change significantly reduce the downtime resulting from the application of these packages. The following steps provide information about how to deploy the packages.
@@ -110,7 +112,7 @@ Before: ![3](https://msdnshared.blob.core.windows.net/media/2016/07/3.png)   Af
 
 -   **Just in time SQL Troubleshooting –** This feature gives the customers/partners the opportunity to troubleshoot SQL issues in real time by locating the queries that are blocked and the queries are blocking. This feature also provides a view of aggregated lock information for the tables that currently hold locks on them.
 
-You can ciew this by clicking on the **SQL Now** tab on the **Environment monitoring page**. ![13](https://msdnshared.blob.core.windows.net/media/2016/07/13-1024x471.png)   **BPM and Task guides** The list of task guides that were made available with the February 2016 release of Dynamics AX has been published, and can be found here, [New task guides available (February 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/new-task-guides-available-on-february-2016). **BPM Integration with VSTS (Public preview)**
+You can ciew this by clicking on the **SQL Now** tab on the **Environment monitoring page**. ![13](https://msdnshared.blob.core.windows.net/media/2016/07/13-1024x471.png)   **BPM and Task guides** The list of task guides that were made available with the February 2016 release of Dynamics AX has been published, and can be found here, [New task guides available (February 2016)](new-task-guides-available-february-2016.md). **BPM Integration with VSTS (Public preview)**
 
 1.  On the LCS portal, select the **Preview feature management** tile and turn on the feature named **VSO WorkItem Mapping**. This will enable you to preview the new BPM functionality.
 2.  After you have configured Visual Studio Team Services (VSTS) from the LCS project settings, go to your BPM library and on the left-pane, under **Implementation views**, click **Review processes**.
@@ -119,7 +121,7 @@ You can ciew this by clicking on the **SQL Now** tab on the **Environment monito
 This will synchronize the BPM library hierarchy into your VSTS project, as a hierarchy of work items (Epics, Features, …etc.). This is a one-way sync from LCS to VSTS that will keep your VSTS work items updated with any changes that are made in the LCS BPM library. ![14](https://msdnshared.blob.core.windows.net/media/2016/07/14.png) The VSTS work item types associated with LCS items can be configured from the **VSTS** tab in your LCS project’s **Project settings**. Work item type mapping (VSTS work item type) must be configured before a connection to a VSTS project is established. ![15](https://msdnshared.blob.core.windows.net/media/2016/07/15-1024x487.png)   **Add requirements to a business process** As part of the fit/gap analysis stage of your project, in the **Review processes** view, you can select a business process line and add a requirement that is associated with the selected business process. This requirement will be stored as a requirement work item in VSTS. The **Process details** page will list all requirements in VSTS that are associated with the current business process line. It also allows you to add a new requirement. [![16](https://msdnshared.blob.core.windows.net/media/2016/07/16.png)](https://msdnshared.blob.core.windows.net/media/2016/07/16.png)   When you add a requirement,  enter a title and adescription, and assess whether it is a fit or a gap. ![17](https://msdnshared.blob.core.windows.net/media/2016/07/17.png) **Configuration and data manager: Apply more than one data package at a time** **Configuration and data manager** is a tool that enables you to apply data packages to Dynamics AX cloud environment by using the AX data management framework. With this release, you can select more than one data package and apply them at once to a specific AX instance. When you select more than one package and click **Apply**, you can choose whether you want to apply the packages sequentially or concurrently. [![18](https://msdnshared.blob.core.windows.net/media/2016/07/18.png)](https://msdnshared.blob.core.windows.net/media/2016/07/18.png)   You should apply sequentially if the selected data packages depend on each other. If you select **Apply sequentially**, you will first be prompted to select the order in which the packages are applied. Use the sequence number drop down menus to define the order. ![19](https://msdnshared.blob.core.windows.net/media/2016/07/19.png) You can also enter a tag. A tag can be used as a keyword that will appear on the history page to indicate that these packages have been applied as part of the same job.
 
 ## May 2016
-The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the May release of Lifecycle Services. **NEW FEATURES** **Microsoft Dynamics AX May 2016 Update is now available** Starting today, you can deploy the Microsoft Dynamics AX May 2016 Update from LCS When you select a topology for deployment in the partner project workspace or in Cloud hosted environment in customer implementation project, you can select either RTW or the May Update (Update 1). For more information about what’s new in the May Update, see the [What’s new or changed](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7) wiki topic. ![1](https://msdnshared.blob.core.windows.net/media/2016/05/165-e1464377383160.png) When you click **Configure** in the **customer implementation project**,  you will be provided with an option to choose from RTW or the May Update (Update 1). ![2](https://msdnshared.blob.core.windows.net/media/2016/05/259.png) If you want to deploy the Dynamics AX May Update, select **Dynamics AX – Develop (Update 1)**.   ![3](https://msdnshared.blob.core.windows.net/media/2016/05/339.png) This will load the May Update-specific deployment configuration screen for you.   ![4](https://msdnshared.blob.core.windows.net/media/2016/05/432-1024x742.png)   If you want to change back to RTW, click **Supported version** &gt; **Change selected topology**.   ![5](https://msdnshared.blob.core.windows.net/media/2016/05/527-1024x748.png)   **Asset library improvements** The Binary hotfix in the Asset library has a new home.
+The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the May release of Lifecycle Services. **NEW FEATURES** **Microsoft Dynamics AX May 2016 Update is now available** Starting today, you can deploy the Microsoft Dynamics AX May 2016 Update from LCS When you select a topology for deployment in the partner project workspace or in Cloud hosted environment in customer implementation project, you can select either RTW or the May Update (Update 1). For more information about what’s new in the May Update, see the [What’s new or changed](whats-new-changed.md) wiki topic. ![1](https://msdnshared.blob.core.windows.net/media/2016/05/165-e1464377383160.png) When you click **Configure** in the **customer implementation project**,  you will be provided with an option to choose from RTW or the May Update (Update 1). ![2](https://msdnshared.blob.core.windows.net/media/2016/05/259.png) If you want to deploy the Dynamics AX May Update, select **Dynamics AX – Develop (Update 1)**.   ![3](https://msdnshared.blob.core.windows.net/media/2016/05/339.png) This will load the May Update-specific deployment configuration screen for you.   ![4](https://msdnshared.blob.core.windows.net/media/2016/05/432-1024x742.png)   If you want to change back to RTW, click **Supported version** &gt; **Change selected topology**.   ![5](https://msdnshared.blob.core.windows.net/media/2016/05/527-1024x748.png)   **Asset library improvements** The Binary hotfix in the Asset library has a new home.
 
 1.  To locate the Binary hotfix, in the **Asset type** pane, click **Software deployable package**.
 2.  In the pane that opens, in the **Package type** field, select **Binary hotfix**.
@@ -499,7 +501,7 @@ All services have been updated for CU8
 ### Preview release
 
 This release includes a reworked experience with several preview features. These include:
--   A new Methodology tool for projects. A starter methodology is provided, called Sure Step Agile. For more information, see [Methodologies (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/methodologies-lifecycle-services-lcs).
+-   A new Methodology tool for projects. A starter methodology is provided, called Sure Step Agile. For more information, see [Methodologies (Lifecycle Services, LCS)](methodologies-lcs.md).
     -   You can attach templates, and documents to tasks
     -   You can create your own methodologies
 -   SharePoint Online integration for document storage.
@@ -521,7 +523,7 @@ This release includes the following new features:
 
 ## October 2014 release updates
 Updates released in October 2014 included:
--   The Configuration manager tool has been released in beta. It allows you to save configurations, store them locally or in the cloud, and copy a configuration from one system to another. For more information, see [Configuration manager (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/configuration-manager-lifecycle-services-lcs).
+-   The Configuration manager tool has been released in beta. It allows you to save configurations, store them locally or in the cloud, and copy a configuration from one system to another. For more information, see [Configuration manager (Lifecycle Services, LCS)](configuration-manager-lcs.md).
 -   In Business process modeler, you can now search for business processes and artifacts, and reorder tasks in hierarchies.
 -   The Customization analysis service has an improved report that provides a heat map for estimated performance impact, estimated functional impact, rule reliability, estimated effort to fix an issue.
 -   The Upgrade analysis tool now includes an impact analysis heat map.
@@ -529,22 +531,22 @@ Updates released in October 2014 included:
 
 ## September 2014 release updates
 Updates released in September 2014 included:
--   The Cloud-hosted environments tool now has customizable settings for domains, virtual networks, and user accounts.For more information, see [Deploy Microsoft Dynamics AX 2012 R3 on Azure using Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-microsoft-dynamics-ax-2012-r3-on-azure-using-lifecycle-services-lcs).
--   The Issue search tool now shows planned and open regulatory features, and includes searchable resources for Regulatory feature updates and Regulatory white papers, registrations, and reports.For more information, see [Issue search (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/issue-search-lifecycle-services-lcs).
--   The Infrastructure estimator tool has become an independent tool that can be accessed outside of the Usage profiler, and now provides sizing for non-production environments (Dev/Test/Training).For more information, see [Infrastructure estimator (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/infrastructure-estimator-lifecycle-services-lcs).
+-   The Cloud-hosted environments tool now has customizable settings for domains, virtual networks, and user accounts.For more information, see [Deploy Microsoft Dynamics AX 2012 R3 on Azure using Lifecycle Services](deploy-2012-r3-azure-lcs.md).
+-   The Issue search tool now shows planned and open regulatory features, and includes searchable resources for Regulatory feature updates and Regulatory white papers, registrations, and reports.For more information, see [Issue search (Lifecycle Services, LCS)](issue-search-lcs.md).
+-   The Infrastructure estimator tool has become an independent tool that can be accessed outside of the Usage profiler, and now provides sizing for non-production environments (Dev/Test/Training).For more information, see [Infrastructure estimator (Lifecycle Services, LCS)](infrastructure-estimator-lcs.md).
 -   The Upgrade analysis tool has new summary information in the report.
 -   Support for Safari (v5.1.7) and Firefox (v32) has been added.
 
 ## August 2014 release updates
 Updates released in August 2014 included:
 -   The Business process modeler now only allows libraries to be copied. The previously available Add functionality also copied libraries, so it was removed.
--   The Business process modeler supports uploading Microsoft Visio diagrams into process libraries. For more information, see [Flowcharts in Business process modeler](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/flowcharts-in-business-process-modeler).
+-   The Business process modeler supports uploading Microsoft Visio diagrams into process libraries. For more information, see [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md).
 -   The Cloud-hosted environments tool now has:
     -   A new development and testing (5 box) environment.
     -   Several new retail environments.
     -   A choice of the number of virtual machines and their size when you are deploying.
 
-    For more information, see [Deploy Microsoft Dynamics AX 2012 R3 on Azure using Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-microsoft-dynamics-ax-2012-r3-on-azure-using-lifecycle-services-lcs).
+    For more information, see [Deploy Microsoft Dynamics AX 2012 R3 on Azure using Lifecycle Services](deploy-2012-r3-azure-lcs.md).
 -   The Issue search tool now includes proactive fixes released by Microsoft.
 -   Nearly 300 error messages have been rewritten to be more clear and helpful.
 
@@ -572,7 +574,7 @@ Updates released in June 2014 included:
     -   Mandatory field
     -   Data consistency
 -   Selection of multiple filters is now possible in Issue search. You can use multiple filters to more quickly find the results you want.
--   Upgrade analysis now supports minor version (in-place) upgrade from AX 2012 to AX 2012 R3. You can upload a zipped model store file for analysis. For more information, see [Upgrade analysis (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/upgrade-analysis-lifecycle-services-lcs).
+-   Upgrade analysis now supports minor version (in-place) upgrade from AX 2012 to AX 2012 R3. You can upload a zipped model store file for analysis. For more information, see [Upgrade analysis (Lifecycle Services, LCS)](upgrade-analysis-lcs.md).
 -   Consolidated incident list view in cloud powered support now shows all incidents associated with a project, instead of only those incidents filed by the person logged in.
 -   Attachments are now supported in cloud powered support.
 -   Three new customization analysis rules have been added.
@@ -580,9 +582,9 @@ Updates released in June 2014 included:
 ## May 2014 release updates
 May 2014 release updates included:
 -   Microsoft Azure deployment of Microsoft Dynamics AX 2012 R3: Support for an automated deployment of AX 2012 R3. For more information, see [What's new: Azure deployments of Microsoft Dynamics AX 2012 R3](https://technet.microsoft.com/EN-US/library/dn716026.aspx).
--   Cloud-powered support is a part of Lifecycle Services that enables customers to manage support incidents. It enables you to create a virtual machine in Azure that has the same hotfixes installed as your local environment, reproduce and record the incident on the virtual machine and then submit it to our support team. Support follows up by investigating, and if possible, testing a fix on the virtual machine, and sending it back to you to verify. For more information, see [Cloud-powered support (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/cloud-powered-support-lifecycle-services-lcs).
+-   Cloud-powered support is a part of Lifecycle Services that enables customers to manage support incidents. It enables you to create a virtual machine in Azure that has the same hotfixes installed as your local environment, reproduce and record the incident on the virtual machine and then submit it to our support team. Support follows up by investigating, and if possible, testing a fix on the virtual machine, and sending it back to you to verify. For more information, see [Cloud-powered support (Lifecycle Services, LCS)](cloud-powered-support-lcs.md).
 -   Over 100 new business process models have been added to the APQC library to support supply chain management, financials, and service industries.
--   Updates for AX 2012 R3: The Updates page on Lifecycle Services hosts the update installer for Microsoft Dynamics AX 2012 R3 that is used for cumulative updates, and the group of most recent updates. It also provides access to groups of updates that can be used for slipstream installations. For more information, see [Updates for Microsoft Dynamics AX 2012 R3 (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/updates-for-microsoft-dynamics-ax-2012-r3-lifecycle-services-lcs).
+-   Updates for AX 2012 R3: The Updates page on Lifecycle Services hosts the update installer for Microsoft Dynamics AX 2012 R3 that is used for cumulative updates, and the group of most recent updates. It also provides access to groups of updates that can be used for slipstream installations. For more information, see [Updates for Microsoft Dynamics AX 2012 R3 (Lifecycle Services, LCS)](update-2012-r3-lcs.md).
 -   Issue search now includes regulatory feature updates.
 -   The following tools on Lifecycle Services have been updated to support AX 2012 R3:
     -   Business process modeler
@@ -610,5 +612,5 @@ January 2014 release updates included:
 See also
 --------
 
-[What’s new or changed](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7)
+[What’s new or changed](whats-new-changed.md)
 

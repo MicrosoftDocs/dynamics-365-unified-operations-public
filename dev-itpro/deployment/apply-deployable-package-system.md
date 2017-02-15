@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Apply a deployable package on a Dynamics 365 for Operations system | Microsoft Docs
+title: Apply a deployable package on a Dynamics 365 for Operations system
 description: This tutorial walks you through the steps for applying a deployable package on a Microsoft Dynamics 365 for Operations system. This package can be either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-08-10 23:27:58
+ms.date: 2016-08-10 23 - 27 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX platform update 1
+# ms.reviewer: 51
+ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 107013
-ms.assetid: d7148304-7180-430b-be63-bd57429d06e4
-ms.region: Global
-# ms.industry: 
-ms.author: manado
+ms.assetid: 1742d199-4e1a-4206-96af-5e3032cc8dc4
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: May-16
+ms.dyn365.version: Platform update 1
 
 ---
 
@@ -36,10 +38,10 @@ Supported environments
 ----------------------
 
 -   **Demo** - Customers/partners can apply a deployable package in their demo environments using LCS without having to establish a remote connection to each computer.
--   **Dev/Test/Build**  – Customers/partners can apply a deployable package in their dev/test environments by establishing a remote connection to the computers and running the package manually. For more information about this environment, see [Install a deployable package in Microsoft Dynamics 365 for Operations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/installing-deployable-package-in-ax7).
+-   **Dev/Test/Build**  – Customers/partners can apply a deployable package in their dev/test environments by establishing a remote connection to the computers and running the package manually. For more information about this environment, see [Install a deployable package in Microsoft Dynamics 365 for Operations](install-deployable-package.md).
 -   **Sandbox** – Customers/partners can apply a deployable package in their sandbox environments using LCS without having to establish a remote connection to each computer.
 -   **Production** – Customers can submit requests to the Microsoft Service Engineering team through Microsoft Dynamics Lifecycle Services (LCS) to apply a deployable package in their production environments. They will then be able to see the progress of their request in the **Environment details** view in LCS.
--   **Downloadable VHD** – Customers/partners can manually apply a deployable package by establishing a remote connection to the computers. For more information about this environment, see [Install a deployable package in Microsoft Dynamics 365 for Operations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/installing-deployable-package-in-ax7).
+-   **Downloadable VHD** – Customers/partners can manually apply a deployable package by establishing a remote connection to the computers. For more information about this environment, see [Install a deployable package in Microsoft Dynamics 365 for Operations](install-deployable-package.md).
 
 ## Key concepts
 -   **Deployable package** – A deployable package is a unit of deployment that can be applied in any Dynamics 365 for Operations environment. A deployable package can be a binary hotfix to the Application Object Server (AOS) runtime components, an updated Dynamics 365 for Operations customization package, or a new Dynamics 365 for Operations customization/application module package. [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
@@ -60,9 +62,9 @@ When the status of the package application changes, LCS sends notifications to a
 ## A customer applies a package in a demo/sandbox environment
 **Note:** Package application causes system downtime. All the relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
-1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/servicing/download-hotfixes-from-lifecycle-services).
+1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
     -   For a binary hotfix, upload the hotfix directly to the Asset library.
-    -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-and-apply-a-deployable-package).
+    -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
 
 2.  Open the **Environment details** view for the sandbox environment where you want to apply the package.
 3.  Click **Maintain** &gt; **Apply updates** to apply an update.
@@ -98,9 +100,9 @@ If a specific step fails, you have two options:
 ## A customer submits a request to apply a package in a production environment
 **Note:** See [Enable additional notifications on package application through LCS](https://ax.help.dynamics.com/en/wp-admin/post.php?post=1139123&action=edit#_Pre-requisite_Step).
 
-1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/servicing/download-hotfixes-from-lifecycle-services).
+1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
     -   For a binary hotfix, upload the hotfix directly to the Asset library.
-    -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-and-apply-a-deployable-package).
+    -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
 
 2.  On the LCS **Asset library** page, on the tab that corresponds to the asset type (**Software deployable package**), select a package, and then click **Release candidate**.
 3.  Open the **Environment details** view for the production environment where you want to apply the package.
@@ -136,5 +138,5 @@ If a specific step fails, you have two options:
 See also
 --------
 
-[Install a deployable package in Microsoft Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/installing-deployable-package-in-ax7)
+[Install a deployable package in Microsoft Dynamics AX](install-deployable-package.md)
 

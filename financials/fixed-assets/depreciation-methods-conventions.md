@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Depreciation methods and conventions | Microsoft Docs
+title: Depreciation methods and conventions
 description: This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics AX.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 21:04:03
+ms.date: 2015-09-10 21 - 04 - 03
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
+ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3441
-ms.assetid: 4aefa217-479c-47fa-816f-081f5eab40d8
-ms.region: Global
-# ms.industry: 
+ms.assetid: a11f0444-27a6-4948-a0ca-786e1db096b1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -60,25 +62,25 @@ You can select from the following depreciation methods.
 See also
 --------
 
-[Fixed asset depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/fixed-asset-depreciation)
+[Fixed asset depreciation](fixed-asset-depreciation.md)
 
 [Straight line service life depreciation](https://ax.help.dynamics.com/en/wiki/Straight-line-service-life-depreciation/)
 
-[Reducing balance depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/reducing-balance-depreciation)
+[Reducing balance depreciation](reduce-balance-depreciation.md)
 
-[Manual depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/manual-depreciation)
+[Manual depreciation](manual-depreciation.md)
 
-[Factor depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/factor-depreciation)
+[Factor depreciation](factor-depreciation.md)
 
-[Consumption depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/consumption-depreciation)
+[Consumption depreciation](consumption-depreciation.md)
 
-[Straight line life remaining depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/straight-line-life-remaining-depreciation)
+[Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
 
-[125 percent reducing balance depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/125-percent-reducing-balance-depreciation)
+[125 percent reducing balance depreciation](125-percent-reducing-balance-depreciation.md)
 
-[150 percent reducing balance depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/150-percent-reducing-balance-depreciation)
+[150 percent reducing balance depreciation](150-percent-reducing-balance-depreciation.md)
 
-[175 percent reducing balance depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/175-percent-reducing-balance-depreciation)
+[175 percent reducing balance depreciation](175-percent-reducing-balance-depreciation.md)
 
-[200 percent reducing balance depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/200-percent-reducing-balance-depreciation)
+[200 percent reducing balance depreciation](200-percent-reducing-balance-depreciation.md)
 

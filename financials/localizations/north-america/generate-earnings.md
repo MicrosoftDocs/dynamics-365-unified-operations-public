@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Generate earnings | Microsoft Docs
+title: Generate earnings
 description: This topic describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15:30:35
+ms.date: 2016-10-31 15 - 30 - 35
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmPosition, HcmWorker, PayrollEarningStatement
+ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220864
-ms.assetid: 569eddab-de2f-49ae-a66b-6dc14069060f
-ms.region: USA
-# ms.industry: 
+ms.assetid: b537cadf-4ecb-4fc0-96f1-f33c3387069b
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 This topic describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
 
-You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually. When you automatically generate earnings, we recommend that you use the batch processing mode to improve performance. You must manually enter some earnings, such as sick time and paid time off. You can enter these earnings either before or after you use the automated process to generate the standard earning lines. If you use the automated process first, you must manually add and remove earning lines until the earnings statement is correct. **Note:** This topic describes how to generate earnings for a worker pay period for the first time. If you've already generated earnings, and you want to change them or take additional action on them, see [Work with existing earnings](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-existing-earnings). The following illustration shows the steps for generating earnings. The numbered steps correspond to sections of this topic. ![Steps required to generate payroll earnings](https://i-technet.sec.s-msft.com/dynimg/IC766977.gif)
+You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually. When you automatically generate earnings, we recommend that you use the batch processing mode to improve performance. You must manually enter some earnings, such as sick time and paid time off. You can enter these earnings either before or after you use the automated process to generate the standard earning lines. If you use the automated process first, you must manually add and remove earning lines until the earnings statement is correct. **Note:** This topic describes how to generate earnings for a worker pay period for the first time. If you've already generated earnings, and you want to change them or take additional action on them, see [Work with existing earnings](existing-earnings.md). The following illustration shows the steps for generating earnings. The numbered steps correspond to sections of this topic. ![Steps required to generate payroll earnings](https://i-technet.sec.s-msft.com/dynimg/IC766977.gif)
 
 ## Automatically generate earnings
 Earnings that are automatically generated use settings for the position to identify the pay cycle, legal entity, and whether the earnings should be generated as a salary amount or based on a schedule. During this process, recurring earnings that are assigned to a specific worker are automatically generated if they are due in the specified pay period and pay cycle. **Note:** When you generate earnings for workers, you specify only the pay cycle and pay period to use. You don’t specify the type of earning to generate. Recurring earnings, salary, leave, and schedule-based earnings are all created in the same process. Premium earnings, such as overtime premiums, and retroactive earnings are created separately. To automatically generate worker earnings, follow these steps.
@@ -137,18 +139,18 @@ When an hourly worker or a worker who is paid by the piece is entitled to back p
 5.  Verify that the batch job was completed correctly. (Click **Common** &gt; **Inquiries** &gt; **Batch Jobs** &gt; **My batch jobs**. On the **Batch job** tab, click **Log**, and then inspect the log for any errors that occurred.)
 
 ## Next step
-After you generate earnings, you must release them before you can create pay statements. You might also have to change the earnings or put certain earnings on hold. For more information, see [Work with existing earnings](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-existing-earnings).
+After you generate earnings, you must release them before you can create pay statements. You might also have to change the earnings or put certain earnings on hold. For more information, see [Work with existing earnings](existing-earnings.md).
 
 See also
 --------
 
-[Work with existing earnings](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-existing-earnings)
+[Work with existing earnings](existing-earnings.md)
 
-[Work with pay statements](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-pay-statements)
+[Work with pay statements](pay-statements.md)
 
-[Issue worker payments](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/issue-worker-payments)
+[Issue worker payments](issue-worker-payments.md)
 
-[Post payroll and generate vendor invoices](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/post-payroll-and-generate-vendor-invoices)
+[Post payroll and generate vendor invoices](post-payroll-generate-vendor-invoices.md)
 
-[Work with existing payroll payments](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-existing-payroll-payments)
+[Work with existing payroll payments](existing-payroll-payments.md)
 

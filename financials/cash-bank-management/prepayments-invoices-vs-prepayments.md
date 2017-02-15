@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Prepayment invoices vs. prepayments | Microsoft Docs
+title: Prepayment invoices vs. prepayments
 description: This article provides describes and contrasts the two methods that organizations can use for advance payments (prepayments). In one method, you create a prepayment invoice that is associated with a purchase order. In the other method, you create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 21:02:10
+ms.date: 2015-12-03 21 - 02 - 10
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerJournalTransVendPaym, PurchTable
+ms.search.form: LedgerJournalTransVendPaym, PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15871
-ms.assetid: ca9deb33-1baf-4d1f-85f8-c4f15dcc30fe
-ms.region: Global
-# ms.industry: 
+ms.assetid: 07bd4b2e-a842-4198-a699-fac2da9a1226
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

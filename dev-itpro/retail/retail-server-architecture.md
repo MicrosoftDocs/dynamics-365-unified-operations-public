@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail Server architecture | Microsoft Docs
+title: Retail Server architecture
 description: This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
 author: kfend
 manager: AnnBe
-ms.date: 2016-02-05 00:51:34
+ms.date: 2016-02-05 00 - 51 - 34
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31521
-ms.assetid: 6812159b-f513-4d53-95a3-1c296ff0ebc9
-ms.region: Global
-# ms.industry: 
+ms.assetid: 371e7c42-7c03-41a3-9883-2d002ed26895
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

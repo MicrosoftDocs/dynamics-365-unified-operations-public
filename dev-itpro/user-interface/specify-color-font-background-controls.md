@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Font and background colors for input, table, and grid controls | Microsoft Docs
+title: Font and background colors for input, table, and grid controls
 description: This article provides information about the new color picker control that lets users select a color.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-06-09 20:39:18
+ms.date: 2016-06-09 20 - 39 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 90513
-ms.assetid: 2d6fd169-0db5-49d0-8a0b-36a0daf27545
-ms.region: Global
-# ms.industry: 
+ms.assetid: d497e769-f5de-477e-a70f-9cfdd8f8685f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tlefor
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Lookup controls | Microsoft Docs
+title: Lookup controls
 description: This article discusses how to enable lookup behavior on controls. It also discusses how to create multi-select lookups and outlines lookup scenarios that are no longer supported.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-04 18:37:27
+ms.date: 2015-12-04 18 - 37 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17464
-ms.assetid: c9fd7bba-652d-40ef-9e95-adc92e90e573
-ms.region: Global
-# ms.industry: 
+ms.assetid: 69e5093d-3eee-4ab2-884d-0cf549d09e1d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

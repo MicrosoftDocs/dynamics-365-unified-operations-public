@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade data in development or demo environments | Microsoft Docs
+title: Upgrade data in development or demo environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update. Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments contact them via an "other" type service request in Lifecycle Services.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-08-03 20:21:44
+ms.date: 2016-08-03 20 - 21 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX platform update 1
+# ms.reviewer: 11
+ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 106163
-ms.assetid: f5a61bc2-5280-49e3-bd8e-95b9ab83b141
-ms.region: Global
-# ms.industry: 
+ms.assetid: 79021689-03eb-48f0-bbc5-0790eaa8300e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tabell
+ms.dyn365.intro: May-16
+ms.dyn365.version: Platform update 1
 
 ---
 
@@ -32,15 +34,16 @@ ms.author: tabell
 
 This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update. Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments contact them via an "other" type service request in Lifecycle Services.
 
-This topic describes how to upgrade an older source database to the latest Dynamics 365 for Operations update. The source database can be from CTP 7 or later. To copy a database from a production environment back to a one-box demo or development environment follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a Microsoft SQL Server Environment](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/database-management/copy-an-ax-database-from-azure-sql-database-to-sql-server). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure Blob storage.
+This topic describes how to upgrade an older source database to run in a one-box demo or development environment for the latest Dynamics 365 for Operations update. The source database can be from CTP 7 or later. To copy a database from a production environment back to a one-box demo or development environment follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a Microsoft SQL Server Environment](copy-database-from-azure-sql-to-sql-server.md). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure Blob storage.
 
 ## Before you begin
 1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Dynamics 365 for Operations update.
-2.  If upgrading from the Dynamics AX February 2016 release (also known as RTW) or earlier (earlier would be a CTP build) and are upgrading to the May Release then the following hotfixes must be installed. These fixes must be installed in the destination environment. If you are upgrading to a newer version than the May Release you **do not** need these fixes, they are already included.
+2.  If upgrading from the Dynamics AX February 2016 release or earlier the following hotfixes must be installed:
     -   Hotfix KB number 3170386, "Upgrade script error: ReleaseUpdateDB70\_DMF. updateIntegrationActivityExecutionMessageIdPreSync".
-    -   Hotfix KB number 3180871, "Data upgrade from RTW to Update 1 causes errors when synchronizing views involving disabled configuration keys". This is a binary hotfix which will cause the database synchronize process to fail.
+    -   Hotfix KB number 3180871, "Data upgrade from RTW to Update 1 causes error when synchronizing PlanPlanActivitiesAggregate view". This is a binary hotfix which will cause the database synchronize process to fail.
 
 3.  In your source database, verify that the SysSetupLog version number in the **DESCRIPTION** column is correct. Refer to the appropriate statement for your environment below.
+    -   Make sure that the SYSSETUPLOG table has the correct record.
     -   If you're upgrading from CTP7, run the following Transact-SQL statement from SQL Server Management Studio.
 
             IF NOT EXISTS (SELECT 'x' FROM SYSSETUPLOG WHERE DESCRIPTION = '170' and NAME = 'ReleaseUpdateDBgetFromVersion')
@@ -90,7 +93,7 @@ To obtain the latest DataUpgrade.zip package, from your target environment that 
 
 1.  In LCS, in the **Environments** section, click your target Dynamics 365 for Operations environment, scroll to the bottom of the page, and then click the **Application binary updates** tile.
 
-**Note:** If the Application binary updates tile shows zero updates available then use the DataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example if upgrading to Dynamics 365 for Operations version 1611 and the Application binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the Shared asset library. When using this package from the shared asset library the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
+**Note:** If the Application binary updates tile shows zero updates available then use the DataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example if upgrading to Dynamics 365 for Operations version 1611 and the Application binary updates tile shows zero updates, then use the "Dynamics 365 for Operations Platform Update 3" package from the Shared asset library. When using this package from the shared asset library the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
 
 1.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 2.  On the next page, click **Download**.
@@ -131,7 +134,7 @@ This step is required if you're upgrading a database from the Dynamics AX Februa
 3.  Save the file.
 
 ## Upgrade the database
-1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder. Use the instructions in [Install a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/installing-deployable-package-in-ax7).
+1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder. Use the instructions in [Install a deployable package](install-deployable-package.md).
 2.  Restore a backup of the source database to your one-box demo or development environment that is already running the latest Dynamics 365 for Operations update that you wish to upgrade to. **Note:** For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For details about how to download and use AzCopy to copy to or from an Azure Blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 3.  Run the runbook file until Step 4: GlobalBackup.
 4.  Rename the existing Update 1 database, and replace it with the source database that you want to upgrade.
@@ -146,7 +149,7 @@ This step is required if you're upgrading a database from the Dynamics AX Februa
 
         > Staging tables should be empty in order to proceed with the data upgrade. Please run the DeleteScriptForStagingTables.sql by carefully reviewing the script in order to remove the data from the staging tables.
 
-        In this case, run DeleteScriptForStagingTables.sql to clean up the staging tables. You can find this script under AOSService\\Scripts in your data upgrade folder. After the script has finished running, rerun this step.
+        In this case, run DeleteScriptForStagingTables.sql to clean up the staging tables. You can find this script under AOSServiceScripts in your data upgrade folder. After the script has finished running, rerun this step.
 
 ## How to troubleshoot upgrade script errors
 ### How to re-run the runbook after a data upgrade script failure
@@ -172,52 +175,6 @@ This process is only designed to be used in a development scenario – as an aid
 Each successfully executed script records the amount of time it took to process in minutes in the ReleaseUpdateScriptsLog.DurationMins column. This is intended as a simple way to identify the longest running scripts when working on performance tuning the data upgrade process. It is important to understand that the timings here are the duration for each individual script to run but multiple scripts will run in parallel, so the sum of the DurationMins column is greater than the overall duration of the upgrade process.
 
 ## Known issues
-### Cannot create index on InventDistinctProduct
-
-When upgrading a database you may experience the following error during the database synchronize phase of the runbook process:
-
-> Cannot create index on InventDistinctProduct a duplicate key exists on column Product
-
-This is a known issue which will be resolved in a future release. The workaround is to delete all records in the InventDistinctProduct table and then resume the runbook from the current step. The records contained in this table are disposable and will be regenerated the first time Microsoft Dynamics 365 for Operation is launched, when an item is created or when MRP is run. To drop all records in InventDistinctProduct execute the below query against the current database from SQL Management Studio.
-
-    truncate table InventDistinctProduct
-
-To resume the runbook from the current operation use the following command:
-
-    axupdateinstaller execute -runbookid=<your runbook name> -rerunstep=<the last step number>
-
-For example:
-
-    axupdateinstaller execute -runbookid=dataupgrade -rerunstep=5.4
-
-### An exchange rate cannot be found when upgrading demo data
-
-When upgrading a demo database you may experience the following error when deploying the DataUpgrade package:
-
-> An exchange rate cannot be found for exchange rate type Default between currencies INR and BRL on exchange date 12/1/2014.
-
-As you're upgrading demo data, look in the table TrvUnreconciledExpenseTransaction, which is where the offending expense line is, and just change the currency to USD (because it's demo data, so we don't need to be careful to preserve this expense line):
-
-    update TrvUnreconciledExpenseTransaction
-    set transactioncurrencycode = 'USD'
-    where transactioncurrencycode = 'INR'
-
-Alternatively you can go back to the original environment the data came from (i.e. the old version) and add the missing exchange rate in General Ledger &gt; currencies &gt; currency exchange rates. You need to add a record for INR and BRL which covers 2014, then take that database and bring it into your new environment and start the upgrade against.
-
-### Error: The interpreter evaluation stack has grown during a call to the kernel
-
-This error can occur if you have enabled database logging on a kernel table such as UserInfo, the solution is to review the database log setup in System administration &gt; setup &gt; database log setup and remove records for kernel tables as necessary. The full error detail is as follows:
-
-    Executing step: 5.1
-    prereq for data upgrade
-    prereq for data upgrade
-    Unhandled exception More Information: The interpreter evaluation stack has grown during a call to the kernel method xRecord::Delete(), height before call: 0, height after call: 3. Unhandled exception More Information: KernelInstance: Kernel is accessing deleted memory
-    The step failed
-
-### The batch process fails to start
-
-This can happen if the environment has been left in [maintenance mode](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/system-administration/configuration-mode) following a change to configuration keys. To resolve simple turn maintenance mode off and resume the runbook process.
-
 ### The system fails to locate or generate a user GUID
 
 You might receive the following error message.
@@ -293,5 +250,5 @@ After upgrade, values in encrypted fields in the database will be unreadable. Ho
 See also
 --------
 
-[Process for upgrading to the latest Dynamics AX update](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/process-for-upgrading-to-the-latest-dynamics-ax-update)
+[Process for upgrading to the latest Dynamics AX update](upgrade-latest-update.md)
 

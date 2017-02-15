@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reporting tree definitions in financial reports | Microsoft Docs
+title: Reporting tree definitions in financial reports
 description: This article provides information about reporting tree definitions. A reporting tree definition is a report component, or building block, that helps define the structure and hierarchy of your organization.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-29 22:30:14
+ms.date: 2016-02-29 22 - 30 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FinancialReports
+ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX application 7.0.1
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 57592
-ms.assetid: cc7ea52c-f406-424a-a649-4ab0936c2056
-ms.region: Global
-# ms.industry: 
+ms.assetid: df10ae93-9a40-48c9-9787-4d68b2e88db2
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 
@@ -207,5 +209,5 @@ The following examples show possible information that is used in a reporting tre
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/management-reporter-for-microsoft-dynamics-erp)
+[Financial reporting for Microsoft Dynamics AX](financial-reporting-intro.md)
 

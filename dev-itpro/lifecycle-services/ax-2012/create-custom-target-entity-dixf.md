@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a custom target entity for the Data import/export framework (AX 2012) | Microsoft Docs
+title: Create a custom target entity for the Data import/export framework (AX 2012)
 description: This topic describes how to create a custom entity, so that you can use the Microsoft Dynamics AX Data Import/Export Framework to import, export, or migrate data that does not fit a predefined entity.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 23:17:17
+ms.date: 2015-12-04 23 - 17 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18181
-ms.assetid: de8d0e4c-f43f-4d91-a588-29105fdcf223
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 4a923cfa-52c2-49fd-b165-d09b41d29956
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -35,7 +37,7 @@ This topic describes how to create a custom entity, so that you can use the Micr
 A custom entity requires a staging table, a project, a query, a class, and functions. You can use the **Create a custom entity for data import/export Wizard** to create these elements for you, or you can create them manually.
 
 ## Prerequisites
-Before you begin, you must know which table in Microsoft Dynamics AX maps to the entity that you are creating. This table is either the source of the data that you are exporting or the target of the data that you are importing. If you have to create a new table, follow the instructions in [How to: Create Tables](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/how-to-create-tables).
+Before you begin, you must know which table in Microsoft Dynamics AX maps to the entity that you are creating. This table is either the source of the data that you are exporting or the target of the data that you are importing. If you have to create a new table, follow the instructions in [How to: Create Tables](create-tables.md).
 
 ## Create a custom entity by using the Create a custom entity for data import/export Wizard
 The **Create a custom entity for data import/export Wizard** lets you quickly create a custom entity.
@@ -56,7 +58,7 @@ The **Create a custom entity for data import/export Wizard** lets you quickly cr
 4.  On the **Fields in the target table** page, select the fields for the target table. Click **Next**.
 5.  On the **Wizard complete** page, click **Finish**. The Data Import/Export Framework opens the Microsoft Dynamics AX Application Object Tree (AOT) and creates a project for the custom entity in the current layer.
 6.  If the table that you selected uses an extended data type (EDT), you are asked two times whether you want to add the ForeignKey relation from the EDT to the new staging table. Click **Yes** each time to create the ForeignKey relationship.
-7.  Add the custom entity as a new target entity. Depending on the entity, some manual steps might be required. For more information about how to create a target entity, see [Migrating data using the Data import/export framework (DIXF, DMF)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/migrating-data-using-the-data-importexport-framework-dixf-dmf).
+7.  Add the custom entity as a new target entity. Depending on the entity, some manual steps might be required. For more information about how to create a target entity, see [Migrating data using the Data import/export framework (DIXF, DMF)](migrate-data-dixf.md).
 
 ## Manually create a custom entity
 This section describes how to manually create a custom entity.

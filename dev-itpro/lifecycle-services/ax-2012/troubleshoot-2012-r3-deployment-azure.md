@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure | Microsoft Docs
+title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
 description: This article explains how to resolve common issues and how to get assistance with your Microsoft Dynamics AX 2012 R3 environment on Azure.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 18:03:33
+ms.date: 2015-12-05 18 - 03 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: AX 2012
+ms.reviewer: annbe
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18691
-ms.assetid: 0d14d605-64c4-46a1-a9c4-e7e8cad84557
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 39479e8c-df60-4e7a-bdd1-c26ba5278df5
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -73,7 +75,7 @@ Dynamics AX clients may crash upon first login after a restart or after a perio
 Kernels are cumulative and the most recent kernel can be found here: <https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/>
 
 ## How do I monitor for storage account throttling?
-To monitor storage account throttling, see [How to Monitor for Storage Account Throttling](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/). Alerts and notifications can be utilized to notify you when storage is being throttled. If this is happening, see the [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) wiki article for information about leveraging multiple Azure Connectors and/or LCS projects.
+To monitor storage account throttling, see [How to Monitor for Storage Account Throttling](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/). Alerts and notifications can be utilized to notify you when storage is being throttled. If this is happening, see the [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) wiki article for information about leveraging multiple Azure Connectors and/or LCS projects.
 
 ## How do I contact Support?
 If you need to contact Microsoft with licensing or technical questions, you must first determine which support team to contact. Use the information below to best identify which support team to contact.
@@ -147,11 +149,11 @@ To obtain support for Microsoft Dynamics AX, use the resources listed in the fol
 </tr>
 <tr class="even">
 <td>Use the Cloud-powered support tool</td>
-<td>In <a href="https://lifecycleservices.dynamics.com/en/">Microsoft Dynamics Lifecycle Services</a>, Cloud-powered support is a tool that helps you manage support incidents. Cloud-powered support lets you create a virtual machine in Azure that has the same hotfixes installed as your local environment. You can reproduce and record the incident on the virtual machine, and then submit the virtual machine to our support team. The support team follows up by investigating the incident and testing a fix on the virtual machine. If a fix is found, they send the virtual machine and the fix back to you for verification. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/cloud-powered-support-lifecycle-services-lcs">Cloud-powered support (Lifecycle Services, LCS)</a>.</td>
+<td>In <a href="https://lifecycleservices.dynamics.com/en/">Microsoft Dynamics Lifecycle Services</a>, Cloud-powered support is a tool that helps you manage support incidents. Cloud-powered support lets you create a virtual machine in Azure that has the same hotfixes installed as your local environment. You can reproduce and record the incident on the virtual machine, and then submit the virtual machine to our support team. The support team follows up by investigating the incident and testing a fix on the virtual machine. If a fix is found, they send the virtual machine and the fix back to you for verification. For more information, see <a href="cloud-powered-support-lcs.md">Cloud-powered support (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr class="odd">
 <td>Use the Issue search tool</td>
-<td>In <a href="https://lifecycleservices.dynamics.com/en/">Microsoft Dynamics Lifecycle Services</a>, Issue search is a search engine that you can use to quickly search for KB articles, hotfixes, and workarounds for reported issues in Microsoft Dynamics AX. You can see which reported issues are in the process of being fixed and see notifications when a hotfix is released for a specific functional area in Microsoft Dynamics AX. You can download released hotfixes, see which code objects are affected, and see the code changes introduced by the hotfix. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/issue-search-lifecycle-services-lcs">Issue search (Lifecycle Services, LCS)</a>.</td>
+<td>In <a href="https://lifecycleservices.dynamics.com/en/">Microsoft Dynamics Lifecycle Services</a>, Issue search is a search engine that you can use to quickly search for KB articles, hotfixes, and workarounds for reported issues in Microsoft Dynamics AX. You can see which reported issues are in the process of being fixed and see notifications when a hotfix is released for a specific functional area in Microsoft Dynamics AX. You can download released hotfixes, see which code objects are affected, and see the code changes introduced by the hotfix. For more information, see <a href="issue-search-lcs.md">Issue search (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr class="even">
 <td>Enter a support ticket with the Microsoft Dynamics AX support team</td>

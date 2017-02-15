@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: D Classes | Microsoft Docs
+title: D Classes
 description: System API classes that start with the letter D.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 14:37:51
+ms.date: 2016-02-24 14 - 37 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52531
-ms.assetid: e593b5ac-7017-43b8-9f0b-1f2f067c5417
-ms.region: Global
-# ms.industry: 
+ms.assetid: f1f6365b-1b60-4d3c-9e0a-25a6d9363f46
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

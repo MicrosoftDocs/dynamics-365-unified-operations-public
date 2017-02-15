@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Section Tiles subpattern | Microsoft Docs
+title: Section Tiles subpattern
 description: This article provides information about the Section Tiles subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the first panorama section (the Summary section) that contains a set of tiles, charts, and singleton cards. 
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 22:28:19
+ms.date: 2016-01-11 22 - 28 - 19
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29311
-ms.assetid: 5ed350a9-7f38-4351-aa23-77751c573fc7
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1bcafbe0-7a0d-47f6-905b-8d218eeae961
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -52,7 +54,7 @@ TabPage
 
 *TargetForm (FormPart) \[0..N\]*
 
-The Form Parts are used to embed Charts or singleton Cards into the **Summary** section of the workspace. Each form that represents a Chart should use the [Section Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-chart-form-pattern) form pattern.
+The Form Parts are used to embed Charts or singleton Cards into the **Summary** section of the workspace. Each form that represents a Chart should use the [Section Chart](section-chart-form-pattern.md) form pattern.
 
 ### Core components
 
@@ -60,8 +62,8 @@ Apply Section Tiles to the first tab page in the Operational Workspace.
 
 ### Related container patterns
 
--   [Operational Workspace](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)
--   [Section Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-chart-form-pattern)
+-   [Operational Workspace](workspace-form-pattern.md)
+-   [Section Chart](section-chart-form-pattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.

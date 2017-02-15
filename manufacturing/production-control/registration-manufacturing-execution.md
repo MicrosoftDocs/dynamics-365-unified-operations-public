@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Registration for manufacturing execution | Microsoft Docs
+title: Registration for manufacturing execution
 description: This topic describes key concepts and terms that you need to understand to configure and use manufacturing execution. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-23 18:57:11
+ms.date: 2016-03-23 18 - 57 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: JmgRegistration
+ms.search.form: JmgRegistration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70103
-ms.assetid: e62f89b7-8ade-46df-a61d-a3edd7b394f8
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 37082039-0a2f-447d-bdd4-090fb9250980
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: johanho
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

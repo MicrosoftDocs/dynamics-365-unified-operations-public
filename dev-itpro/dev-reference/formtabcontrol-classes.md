@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: F Classes - FormTabControl to FormWindowControl | Microsoft Docs
+title: F Classes -  FormTabControl to FormWindowControl
 description: API reference for classes from FormTabControl to FormWindowControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 22:58:09
+ms.date: 2016-03-08 22 - 58 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63443
-ms.assetid: 456c1e8e-451c-4792-941f-5ade8a1b6b9f
-ms.region: Global
-# ms.industry: 
+ms.assetid: e58211c5-669c-41b2-9fca-37a9e7c89e76
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# F Classes - FormTabControl to FormWindowControl
+# F Classes -  FormTabControl to FormWindowControl
 
 API reference for classes from FormTabControl to FormWindowControl.
 

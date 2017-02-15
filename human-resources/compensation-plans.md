@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Compensation plans | Microsoft Docs
+title: Compensation plans
 description: Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-15 18:12:34
+ms.date: 2015-09-15 18 - 12 - 34
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable
+ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7521
-ms.assetid: 4e2c7601-8bb9-4465-bbeb-ece5423990a3
-ms.region: Global
-# ms.industry: 
+ms.assetid: ba3e0959-1bfe-4b88-9dfa-85f7e8b45343
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: twheeloc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

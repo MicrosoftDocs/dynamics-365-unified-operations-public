@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Define and manage a benefits program | Microsoft Docs
+title: Define and manage a benefits program
 description: Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This article provides information about how to set up an manage benefits.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-03 20:33:29
+ms.date: 2015-12-03 20 - 33 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListPage, SysPolicySourceDocumentRuleType
+ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListPage, SysPolicySourceDocumentRuleType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15681
-ms.assetid: be705601-4653-450d-a651-4896e3131ec5
-ms.region: Global
-# ms.industry: 
+ms.assetid: b7adaa19-8adc-4d40-832f-b810a5544be4
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kherr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -47,7 +49,7 @@ Before you begin to create to create benefits and enroll workers in them, you mu
 For each type of benefit, such as vision or dental, an organization can offer one or more plans to its workers. For each plan, the organization can offer different options. For example, workers can buy additional term life insurance coverage at one, two, or three times their yearly salary. Each combination of a plan and options becomes a benefit that workers can enroll in. [![benefit pic](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## Eligibility
-Many factors determine worker eligibility for the various types of benefits that an employer offers. When you create a benefit in Microsoft Dynamics 365 for Operations, you can set the type of eligibility that applies to that benefit. You can make a benefit available to all workers. For example, some companies offer parking passes to all employees as a fringe benefit. When you create this benefit, you set the eligibility to **All workers are eligible**. For other benefits, such as garnishments and tax levies, eligibility doesn't apply. Whey you create these types of benefits, you set the eligibility to **Bypass eligibility process**. Finally, benefit eligibility can be rule-based. For example, a company offers two types of life insurance benefit to employees. Executive employees are eligible for one life insurance plan, whereas all other full-time employees are eligible for the other life insurance plan. In Dynamics 365 for Operations, you can create a benefit eligibility rule to find all executive employees and another rule to find all other full-time employees, and then apply those rules to the appropriate benefit.
+Many factors determine worker eligibility for the various types of benefits that an employer offers. When you create a benefit in Microsoft Dynamics AX, you can set the type of eligibility that applies to that benefit. You can make a benefit available to all workers. For example, some companies offer parking passes to all employees as a fringe benefit. When you create this benefit, you set the eligibility to **All workers are eligible**. For other benefits, such as garnishments and tax levies, eligibility doesn't apply. Whey you create these types of benefits, you set the eligibility to **Bypass eligibility process**. Finally, benefit eligibility can be rule-based. For example, a company offers two types of life insurance benefit to employees. Executive employees are eligible for one life insurance plan, whereas all other full-time employees are eligible for the other life insurance plan. In Microsoft Dynamics AX, you can create a benefit eligibility rule to find all executive employees and another rule to find all other full-time employees, and then apply those rules to the appropriate benefit.
 
 ## Enrollment
 After you've created the benefits that your organization offers and determined eligibility, you can enroll your workers in benefits. You can enroll a single worker in benefits, or you can enroll many workers in one or more benefits during a single process. Sometimes, an organization stops offering certain benefits. In this case, you must update the benefit and the workers who are enrolled in. Mass benefit expiration lets you change the expiration date of both a benefit and the worker enrollments for that benefit at the same time. You can also select multiple workers who are enrolled in a benefit and change the ending date of their coverage. Similarly, mass benefit extension lets you extend the expiration date of both a benefit and the worker enrollments for that benefit if you decide to offer a benefit longer than you originally planned.
@@ -55,5 +57,5 @@ After you've created the benefits that your organization offers and determined e
 See also
 --------
 
-[Benefit eligibility policies](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/benefit-eligibility-policies)
+[Benefit eligibility policies](benefit-eligibility-policies.md)
 

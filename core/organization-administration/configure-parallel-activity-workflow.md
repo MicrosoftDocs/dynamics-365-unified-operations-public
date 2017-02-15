@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure a parallel activity in a workflow | Microsoft Docs
+title: Configure a parallel activity in a workflow
 description: To configure a parallel activity, complete the following procedures in the workflow editor.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-09-30 15:56:21
+ms.date: 2016-09-30 15 - 56 - 21
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 195753
-ms.assetid: 7aa762ce-dd7c-436c-ab66-348334938f2a
-ms.region: Global
-# ms.industry: 
+ms.assetid: e397823b-5bac-44aa-8e00-4bce790b5899
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: donaldc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

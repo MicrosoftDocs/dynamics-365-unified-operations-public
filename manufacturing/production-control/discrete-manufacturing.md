@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Discrete manufacturing home page | Microsoft Docs
+title: Discrete manufacturing home page
 description: This topic provides a list of the Help topics and other resources that are available for Discrete manufacturing. 
-author: YuyuScheller
+author: annbe
 manager: AnnBe
-ms.date: 2016-10-11 20:31:37
+ms.date: 2016-10-11 20 - 31 - 37
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 204224
-ms.assetid: 32b23f1c-6c21-4151-812d-4fd23b6001be
-ms.region: Global
-# ms.industry: 
-ms.author: yuyus
+ms.assetid: ac2f7e5f-3d48-45b6-b270-22416a0b0471
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,34 +37,34 @@ This topic provides a list of the Help topics and other resources that are avail
 Understand mixed mode planning
 ------------------------------
 
--   [Mixed mode planning: Combine discrete, process, and lean sourcing](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/mixed-mode-planning)
+-   [Mixed mode planning: Combine discrete, process, and lean sourcing](mixed-mode-plan.md)
 
 ## Maintain master data
 -   [Bills of materials and formulas](http://ax.help.dynamics.com/en/wiki/bills-of-materials-and-formulas/)
--   [BOM designer functionality](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/bom-designer-functionality)
+-   [BOM designer functionality](bom-designer-functionality.md)
 -   [Create units of measure](http://ax.help.dynamics.com/en/wiki/manage-unit-of-measure/) (Task guide)
--   [Operations resources](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/operations-resources)
+-   [Operations resources](operations-resources.md)
 -   [Create an operations resource](http://ax.help.dynamics.com/en/wiki/create-an-operations-resource/) (Task guide)
--   [Resource capabilities](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/resource-capabilities)
+-   [Resource capabilities](resource-capabilities.md)
 -   [Create resource capabilities](http://ax.help.dynamics.com/en/wiki/create-a-resource-capability/) (Task guide)
 -   [Create a resource group in discrete manufacturing](http://ax.help.dynamics.com/en/wiki/create-a-resource-group-in-discrete-manufacturing/) (Task guide)
--   [Production order defaults in manufacturing execution](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/production-order-defaults-in-manufacturing-execution)
--   [Production setup requirements](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/production-setup-requirements)
+-   [Production order defaults in manufacturing execution](production-order-defaults-manufacturing-execution.md)
+-   [Production setup requirements](production-set-up-requirements.md)
 -   [Configure a worker using the mobile job device](http://ax.help.dynamics.com/en/wiki/configure-a-worker-using-the-mobile-job-device/) (Task guide)
 
 ## Schedule production operations
--   [Operations scheduling](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/operations-scheduling)
--   [Operations scheduling options](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/operation-scheduling-options)
+-   [Operations scheduling](operations-scheduling.md)
+-   [Operations scheduling options](operation-scheduling-options.md)
 -   [Create working time scheduling properties](http://ax.help.dynamics.com/en/wiki/create-working-time-scheduling-properties/) (Task guide)
 -   [Create working time templates](http://ax.help.dynamics.com/en/wiki/create-working-time-templates/) (Task guide)
 -   [Create calendar and generate working times](http://ax.help.dynamics.com/en/wiki/create-calendar-and-generate-working-times/) (Task guide)
 -   [Schedule a production order with operations and job scheduling](https://ax.help.dynamics.com/en/wiki/schedule-a-production-order-with-operations-and-job-scheduling/)(Task guide)
--   [Material substitution in manufacturing](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/substituting-items-on-bom-lines)
+-   [Material substitution in manufacturing](substitute-items-bom-lines.md)
 
 ## Operate production jobs
--   [Overview of production process](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/cost-management/overview-of-the-production-process)
--   [Registration for manufacturing execution](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/registration-for-manufacturing-execution)
--   [Report BOMs as finished](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/reporting-boms-as-finished)
+-   [Overview of production process](production-process-overview.md)
+-   [Registration for manufacturing execution](registration-manufacturing-execution.md)
+-   [Report BOMs as finished](report-boms-as-finished.md)
 -   [Report progress on job card device](http://ax.help.dynamics.com/en/wiki/report-progress-on-job-card-device/) (Task guide)
 -   [Warehouse work policies](http://ax.help.dynamics.com/en/wiki/warehouse-work-policies/)
 
@@ -78,9 +80,9 @@ The following topics show how to manage the production order lifecycle:
 
 ## Manage financials in production
 -   [End a production order](http://ax.help.dynamics.com/en/wiki/end-a-production-order/) (Task guide)
--   [Allocate time to jobs in a job bundle](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/allocating-time-to-jobs-in-a-job-bundle)
--   [Calculation of material consumption](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/consumption)
--   [Production posting](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/production-posting)
+-   [Allocate time to jobs in a job bundle](allocate-time-jobs-job-bundle.md)
+-   [Calculation of material consumption](consumption.md)
+-   [Production posting](production-posting.md)
 
 ## Additional resources
 -   Additional help is available as task guides inside Microsoft Dynamics 365 for Operations. To access task guides, click the Help button on any page.

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dimension Expression Builder subpattern | Microsoft Docs
+title: Dimension Expression Builder subpattern
 description: This article describes the Dimension Expression Builder subpattern, which is applied to container controls that use the Dimension Expression Builder control.  
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-12 22:34:57
+ms.date: 2016-01-12 22 - 34 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29451
-ms.assetid: a9c95197-d056-4239-b46a-3c963ba302ce
-ms.region: Global
-# ms.industry: 
+ms.assetid: b9861c34-3c28-4e51-afb8-42c6affeb591
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

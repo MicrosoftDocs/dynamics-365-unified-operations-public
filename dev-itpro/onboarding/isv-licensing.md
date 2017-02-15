@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: ISV licensing | Microsoft Docs
+title: ISV licensing
 description: This article describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 author: maertenm
 manager: AnnBe
-ms.date: 2016-03-24 19:53:15
+ms.date: 2016-03-24 19 - 53 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70381
-ms.assetid: 0d8911fa-b131-4c05-81a2-eb0f605ab068
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0111f819-0628-4ff3-b982-ee69a8a42455
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: maertenm
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

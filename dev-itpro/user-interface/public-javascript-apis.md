@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extensible controls  -  Public JavaScript APIs | Microsoft Docs
+title: Extensible controls  -  Public JavaScript APIs
 description: This topic shows where to find documentation about the public JavaScript APIs that can be used by extensible controls in Microsoft Dynamics AX. 
 author: jasongre
 manager: AnnBe
-ms.date: 2016-08-15 21:40:14
+ms.date: 2016-08-15 21 - 40 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX platform update 2
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 125983
-ms.assetid: 47d26ad6-a241-48f6-acce-6959b555f9d3
-ms.region: Global
-# ms.industry: 
+ms.assetid: b0759df3-9b88-4a3f-807f-7cacc68c4dfb
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Aug-16
+ms.dyn365.version: Platform update 2
 
 ---
 

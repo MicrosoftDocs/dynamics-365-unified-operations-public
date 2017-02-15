@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail Store Scale Unit overview | Microsoft Docs
+title: Retail Store Scale Unit overview
 description: This topic describes the Retail Store Scale Unit and when to use it.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-10-28 19:05:32
+ms.date: 2016-10-28 19 - 05 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 11
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 219714
-ms.assetid: f4e07fd0-8080-4c7f-a426-315614130a43
-ms.region: Global
-ms.industry: Retail
+ms.assetid: 48b81f47-43c0-4646-8c02-dc457d772702
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: athinesh
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -51,10 +53,10 @@ Before you begin setting up Store Scale Unit, take a moment determine whether th
 Get started with Store Scale Unit
 =================================
 
-To get started, review the following topic on configuring the Store Scale Unit, [Retail Store Scale Unit configuration and installation](https://docs.microsoft.com/en-us/dynamics365/operations/retail/retail-store-scale-unit-configuration-and-installation).
+To get started, review the following topic on configuring the Store Scale Unit, [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md).
 
 See also
 --------
 
-[Retail Store Scale Unit download and configuration through self-service](https://docs.microsoft.com/en-us/dynamics365/operations/retail/retail-store-scale-unit-configuration-and-installation)
+[Retail Store Scale Unit download and configuration through self-service](retail-store-scale-unit-configuration-installation.md)
 

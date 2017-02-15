@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Q Classes | Microsoft Docs
+title: Q Classes
 description: System API classes that start with the letter Q.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 13:53:24
+ms.date: 2016-02-24 13 - 53 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51831
-ms.assetid: c01ff609-b9c2-4210-a50e-2e9908804ec0
-ms.region: Global
-# ms.industry: 
+ms.assetid: 92e52e27-583a-4e3e-a245-a223ccc664a4
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

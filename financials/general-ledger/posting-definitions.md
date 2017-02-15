@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Posting definitions | Microsoft Docs
+title: Posting definitions
 description: This article provides information about posting definitions, and how to define and link them. For supported posting types and documents, you can use posting definitions instead of posting profiles to classify main accounts and financial dimensions on accounting entries.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 20:43:23
+ms.date: 2015-12-03 20 - 43 - 23
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: JournalizingDefinition, JournalizingDefinitionTrans, LedgerParameters
+ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, LedgerParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15741
-ms.assetid: 6bc98a68-f79a-4646-9fff-c8bde5c545a3
-ms.region: Global
-# ms.industry: 
+ms.assetid: ba95c154-6cbf-45b2-b2f0-7eb254429bc3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: peakerbl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

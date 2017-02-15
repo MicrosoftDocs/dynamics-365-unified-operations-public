@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Budget planning justification documents | Microsoft Docs
+title: Budget planning justification documents
 description: Justification documents provide a narrative for those requesting a budget to explain why a specific budget is necessary. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-11-28 18:47:11
+ms.date: 2016-11-28 18 - 47 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2231
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 2231
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 259594
-ms.assetid: 02414e8a-3414-4a05-aabc-9f5b7a4cdac1
-ms.region: Global
-# ms.industry: 
+ms.assetid: e1e1b54e-877b-4a0d-9897-6c19440d73b1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: ryansand
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

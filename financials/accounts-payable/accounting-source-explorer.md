@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Accounting source explorer | Microsoft Docs
+title: Accounting source explorer
 description: This article provides information about Accounting source explorer, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 20:15:14
+ms.date: 2015-12-03 20 - 15 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15391
-ms.assetid: 85d3f116-12f4-4547-a2cc-b7e11237dbfb
-ms.region: Global
-# ms.industry: 
+ms.assetid: 813aca43-5b17-4c83-ba8b-adfcd1164be9
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: peakerbl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create and apply a deployable package | Microsoft Docs
+title: Create and apply a deployable package
 description: This wiki describes the workflow for creating and applying a deployable package.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:50:23
+ms.date: 2015-12-11 23 - 50 - 23
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24211
-ms.assetid: 85536e69-a10f-48f4-94cc-d2c300559a66
-ms.region: Global
-# ms.industry: 
+ms.assetid: a0d1c61a-f6c3-4210-99a0-b45b17c835db
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shailesn
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -46,5 +48,5 @@ After you have completed the development of the modules, follow these steps to 
 4.  Upload the deployable package that you created earlier. [![Uploading a deployable package](./media/pack6-1024x325.png)](./media/pack6.png)
 
 ## Apply a deployable package
-For information about how to apply a deployable package in an environment, see [Installing a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/installing-deployable-package-in-ax7).
+For information about how to apply a deployable package in an environment, see [Installing a deployable package](install-deployable-package.md).
 

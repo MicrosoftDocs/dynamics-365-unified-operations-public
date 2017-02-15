@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build the Customer form | Microsoft Docs
+title: Build the Customer form
 description: In this lab you’ll create a Master Details form and apply the appropriate form pattern and subpatterns. A Master Details form shows primary data that has many fields. For example, the form that you create will show customer information.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-07 21:29:43
+ms.date: 2015-12-07 21 - 29 - 43
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20401
-ms.assetid: 44eec727-6c9c-41d3-9cb6-17ecfd43b9fc
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7b116701-6014-423e-b713-19cf0c954a3d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ In this lab you’ll create a Master Details form and apply the appropriate form
 Prerequisites
 -------------
 
-For this tutorial, you will need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2).
+For this tutorial, you will need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Dynamics AX Instances](access-instances.md).
 
 ## Overview
 To create the form, you’ll start from the existing form, **FmtCustomer**. The form represents the old Master Details template. As a part of the tutorial, you’ll apply the Master Details pattern, which will enforce a consistent structure for this form type. The following illustration shows the **FmtCustomer** starting artifact. [![CustForm1](./media/custform1.png)](./media/custform1.png)
@@ -51,7 +53,7 @@ To create the form, you’ll start from the existing form, **FmtCustomer**. The 
 ## Setup
 ### Import the tutorial project and transactional data
 
-Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you are working on, review [Access Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2) and make sure you provision your administrator user if you’re working on a local VM.
+Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you are working on, review [Access Dynamics AX Instances](access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.

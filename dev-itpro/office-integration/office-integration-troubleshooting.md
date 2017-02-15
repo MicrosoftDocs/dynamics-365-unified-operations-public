@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Office integration troubleshooting | Microsoft Docs
+title: Office integration troubleshooting
 description: This article provides answers to questions, tips, and troubleshooting information for the Microsoft Dynamics 365 for Operations Office integration capabilities. The questions and issues discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 2016-03-29 20:37:22
+ms.date: 2016-03-29 20 - 37 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: OfficeAppParameters
+ms.search.form: OfficeAppParameters
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72263
-ms.assetid: d17f8f57-fd20-4c01-93ab-962d7b11c069
-ms.region: Global
-# ms.industry: 
+ms.assetid: a64e541f-3ef8-4701-8c6c-fd0b9eef9109
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: cgarty
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -62,7 +64,7 @@ The Excel Add-in runs inside an Internet Explorer (IE) window. The Excel Add-inÂ
 ## Troubleshooting Issues
 ### \[Fixed\] Issue: During Excel Add-in sign-in, an error appears "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
 
-**Issue:** During Excel Add-in sign-in, an error appears "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ". **Explanation:** This is usually caused when AAD cannot find the AAD application representing the Excel Add-in because during [PowerBI configuration](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-powerbi-integration) an AAD application was added that has the App ID URI set to the environment URL. **Fix:** Ensure that there are no AAD App ID URI's set to the environment URI. App ID URI's should be a made up unique URI like https://contosoAXPowerBI.
+**Issue:** During Excel Add-in sign-in, an error appears "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ". **Explanation:** This is usually caused when AAD cannot find the AAD application representing the Excel Add-in because during [PowerBI configuration](configure-power-bi-integration.md) an AAD application was added that has the App ID URI set to the environment URL. **Fix:** Ensure that there are no AAD App ID URI's set to the environment URI. App ID URI's should be a made up unique URI like https://contosoAXPowerBI.
 
 ### \[Fixed\] Issue: During Excel Add-in sign-in, an error appears "AADSTS50001: The application named ABC was not found in the tenant named XYZ"
 
@@ -92,9 +94,9 @@ This workaround requires user knowledge and extra steps. After users have been e
 See also
 --------
 
-[Office Integration](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/office-integration-in-dynamics-ax-7)
+[Office Integration](office-integration.md)
 
-[Office Integration lab and walkthroughs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/office-integration)
+[Office Integration lab and walkthroughs](office-integration-tutorial.md)
 
-[Configuring PowerBI Integration](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-powerbi-integration)
+[Configuring PowerBI Integration](configure-power-bi-integration.md)
 

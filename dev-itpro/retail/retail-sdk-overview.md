@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail SDK overview | Microsoft Docs
+title: Retail SDK overview
 description: This article provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 20:44:33
+ms.date: 2015-12-04 20 - 44 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17771
-ms.assetid: a49191b7-42fa-479e-a90d-3f07fb390944
-ms.region: Global
-# ms.industry: 
+ms.assetid: a25b654a-2b23-403d-b8ee-c622daf9fe06
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: sijoshi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -41,8 +43,8 @@ The Retail software development kit (SDK) includes code, code samples, templates
 
 The Retail SDK is available in Microsoft Dynamics 365 for Operations development environments, and in hotfix packages in a Retail SDK folder. For more information see:
 
--   [Access Microsoft Dynamics 365 for Operations Development Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2). If you get the SDK from a development instance, it is immediately ready for configuration and use.
--   [Install Retail hotfixes.](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/retail/install-retail-hotfixes) If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and includes all other fixes.
+-   [Access Microsoft Dynamics 365 for Operations Development Instances](access-instances.md). If you get the SDK from a development instance, it is immediately ready for configuration and use.
+-   [Install Retail hotfixes.](install-retail-hotfix.md) If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and includes all other fixes.
 
 We recommend that you put the SDK in a source control system such as Visual Studio Online.
 

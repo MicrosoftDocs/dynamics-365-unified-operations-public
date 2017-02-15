@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Production order defaults in manufacturing execution | Microsoft Docs
+title: Production order defaults in manufacturing execution
 description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-23 18:56:56
+ms.date: 2016-03-23 18 - 56 - 56
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: JmgProdParameters
+ms.search.form: JmgProdParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70073
-ms.assetid: 76a89464-9ff7-42f7-ba09-f5f1f100e0ac
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 2080ddc0-3255-468d-a572-d3aadf14cbf8
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: johanho
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

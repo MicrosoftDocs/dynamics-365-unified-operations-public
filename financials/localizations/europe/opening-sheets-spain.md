@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Special entries and opening sheets | Microsoft Docs
+title: Special entries and opening sheets
 description: Legal entities in Spain can post special entries as opening entries for the current period, while adapting accounts to changes in accounting rules.
-author: ShylaThompson
+author: annbe
 manager: AnnBe
-ms.date: 2016-12-02 21:05:24
+ms.date: 2016-12-02 21 - 05 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261334
-ms.assetid: a04b087d-1c40-4dfe-baec-9280e90bd271
-ms.region: Spain
-# ms.industry: 
-ms.author: v-elgolu
+ms.assetid: c0fbab15-0c04-4b88-bb57-910003792858
+ms.search.region: Spain
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

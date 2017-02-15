@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Straight line service life depreciation | Microsoft Docs
+title: Straight line service life depreciation
 description: This article gives an overview of the Straight line service life method of depreciation.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 20:48:40
+ms.date: 2015-09-10 20 - 48 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetDepreciationProfile
+ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3341
-ms.assetid: a061b7cf-49a5-476d-b2e6-a2edb01247a9
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3b6f45bc-973d-4db5-a3b7-bbcaa114ce7b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up vendor accounts | Microsoft Docs
+title: Set up vendor accounts
 description: This topic describes the types of information that you must specify when you create a new vendor account.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-09-12 08:50:15
+ms.date: 2016-09-12 08 - 50 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: smmContactPerson, VendBankAccounts, VendTable
+ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191053
-ms.assetid: 694678e0-4c79-4f56-8f68-f80564b4ad08
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9111e385-694c-4d60-9067-53a2795f6751
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mkirknel
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

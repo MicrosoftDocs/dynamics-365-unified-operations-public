@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Copy a configuration | Microsoft Docs
+title: Copy a configuration
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-03 20:22:34
+ms.date: 2015-12-03 20 - 22 - 34
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15541
-ms.assetid: 4ec2d6d5-d52e-4420-9ea3-ed972f365a97
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 108aaa8e-0f0c-4507-b0c4-ccdcd1e70fc6
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -37,7 +39,7 @@ You can use the Configuration manager (beta) functionality in Microsoft Dynamics
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments. |
 
-Before you begin, you must set up Configuration manager (beta). For more information, see [Set up Configuration manager (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/set-up-configuration-manager-lifecycle-services-lcs).
+Before you begin, you must set up Configuration manager (beta). For more information, see [Set up Configuration manager (Lifecycle Services, LCS)](set-up-configuration-manager-lcs.md).
 
 ## Export a configuration
 You can create a stored configuration by exporting it from a specified legal entity and entities.

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build operational workspaces | Microsoft Docs
+title: Build operational workspaces
 description: This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-13 04:47:50
+ms.date: 2015-12-13 04 - 47 - 50
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27111
-ms.assetid: 1744fd7c-e7e4-428c-9a66-ae49d04cfb44
-ms.region: Global
-# ms.industry: 
+ms.assetid: 84ac09a5-d77e-4fd5-8e1c-095e1af4a5c4
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

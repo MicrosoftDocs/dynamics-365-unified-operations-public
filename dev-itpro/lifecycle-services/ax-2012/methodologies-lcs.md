@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Methodologies (AX 2012) | Microsoft Docs
+title: Methodologies (AX 2012)
 description: Methodologies in LCS provide a tool that you can use to ensure more repeatable, predictable implementation projects. You can use one of our methodologies, or create your own. With a methodology, you can easily track and report on your progress.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 18:01:46
+ms.date: 2015-12-05 18 - 01 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18671
-ms.assetid: 8ef6f9d2-1b35-4aab-bb6c-04e54da79c46
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: edcfaa6c-1d2d-4923-a383-d347a3459795
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

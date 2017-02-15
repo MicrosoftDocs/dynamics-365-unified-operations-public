@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: System tables | Microsoft Docs
+title: System tables
 description: This wiki describes the system tables.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-07-27 16:39:02
+ms.date: 2016-07-27 16 - 39 - 02
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104503
-ms.assetid: 48c83eab-659c-447d-ab79-93a6447a124f
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5dcfae8c-c874-4739-9f0a-26dd729c299f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -190,7 +192,7 @@ The Common table is the base class for all tables. It does not contain any data.
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common)
 
 ## []()DataArea
 The DataArea table contains a list of companies that have been created in the database.
@@ -228,7 +230,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [DataArea Table](#dataarea)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DataArea Table](#dataarea)
 
 ## []()DatabaseLog
 The DatabaseLog table stores configuration information for the SysDatabaseLog table.
@@ -275,7 +277,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [DatabaseLog Table](#databaselog)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DatabaseLog Table](#databaselog)
 
 ## []()DEL\_AccessRightsList
 Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
@@ -324,7 +326,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [DEL\_AccessRightsList Table](#del_accessrightslist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_AccessRightsList Table](#del_accessrightslist)
 
 ## []()DEL\_CompanyDomainList
 The CompanyDomainList table contains associations between the DomainInfo and DataArea tables. Security rights are granted per domain.
@@ -365,7 +367,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [DEL\_CompanyDomainList Table](#del_companydomainlist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_CompanyDomainList Table](#del_companydomainlist)
 
 ## []()DEL\_DomainInfo
 Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
@@ -397,7 +399,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [DEL\_DomainInfo Table](#del_domaininfo)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_DomainInfo Table](#del_domaininfo)
 
 ## []()DEL\_UserGroupInfo
 The UserGroupInfo table contains the list of available user groups.
@@ -425,7 +427,7 @@ The UserGroupInfo table contains the list of available user groups.
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [DEL\_UserGroupInfo Table](#del_usergroupinfo)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_UserGroupInfo Table](#del_usergroupinfo)
 
 ## []()DEL\_UserGroupList
 The UserGroupList table contains the list of users associated with each user groups.
@@ -462,7 +464,7 @@ The UserGroupList table contains the list of users associated with each user gro
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [DEL\_UserGroupList Table](#del_usergrouplist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_UserGroupList Table](#del_usergrouplist)
 
 ## []()ModelSecPolRuntimeEx
 The ModelSecPolRuntimeEx table stores the runtime metadata that is necessary to apply security policies.
@@ -504,7 +506,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [ModelSecPolRuntimeEx Table](#modelsecpolruntimeex)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [ModelSecPolRuntimeEx Table](#modelsecpolruntimeex)
 
 ## []()ModelSecPolRuntimeView
 The ModelSecPolRuntimeView view shows the runtime metadata for the currently active security policies.
@@ -535,7 +537,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [ModelSecPolRuntimeView Table](#modelsecpolruntimeview)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [ModelSecPolRuntimeView Table](#modelsecpolruntimeview)
 
 ## []()Partitions
 The Partitions table contains the list of data partitions in the system.
@@ -580,7 +582,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [Partitions Table](#partitions)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [Partitions Table](#partitions)
 
 ## []()PrintJobHeader
 The PrintJobHeader table contains information regarding the current print job
@@ -631,7 +633,7 @@ The PrintJobHeader table contains information regarding the current print job
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [PrintJobHeader Table](#printjobheader)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [PrintJobHeader Table](#printjobheader)
 
 ## []()PrintJobPages
 The PrintJobPages table contains information regarding the currently printing page of a print job
@@ -667,7 +669,7 @@ The PrintJobPages table contains information regarding the currently printing pa
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [PrintJobPages Table](#printjobpages)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [PrintJobPages Table](#printjobpages)
 
 ## []()SecurableObject
 The SecurableObject table contains all security artifacts reference by the security framework.
@@ -701,7 +703,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurableObject Table](#securableobject)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurableObject Table](#securableobject)
 
 ## []()SecurityDuty
 ### Fields
@@ -728,7 +730,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityDuty Table](#securityduty)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityDuty Table](#securityduty)
 
 ## []()SecurityEntryPointInferredTables
 ### Fields
@@ -752,7 +754,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityEntryPointInferredTables Table](#securityentrypointinferredtables)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityEntryPointInferredTables Table](#securityentrypointinferredtables)
 
 ## []()SecurityEntryPointLink
 The SecurityEntryPointLink table contains the entry point to securable object mapping that has been specified on the AOT nodes of menu items and web menu items.
@@ -788,7 +790,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityEntryPointLink Table](#securityentrypointlink)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityEntryPointLink Table](#securityentrypointlink)
 
 ## []()SecurityPermission
 The SecurityPermission table contains the list of permissions that have been specified on the AOT nodes of forms, reports, security code permissions, and service operations.
@@ -826,7 +828,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityPermission Table](#securitypermission)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityPermission Table](#securitypermission)
 
 ## []()SecurityPrivilege
 ### Fields
@@ -853,7 +855,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityPrivilege Table](#securityprivilege)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityPrivilege Table](#securityprivilege)
 
 ## []()SecurityRole
 The SecurityRole table reflects the list of roles defined by the security AOT role node.
@@ -898,7 +900,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityRole Table](#securityrole)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityRole Table](#securityrole)
 
 ## []()SecurityRoleAssignmentRule
 Rules for dynamically assigning users to role
@@ -938,7 +940,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityRoleAssignmentRule Table](#securityroleassignmentrule)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityRoleAssignmentRule Table](#securityroleassignmentrule)
 
 ## []()SecurityRoleDutyExplodedGraph
 ### Fields
@@ -964,7 +966,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityRoleDutyExplodedGraph Table](#securityroledutyexplodedgraph)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityRoleDutyExplodedGraph Table](#securityroledutyexplodedgraph)
 
 ## []()SecurityRoleExplodedGraph
 The SecurityRoleExplodedGraph table contains all role relationships, direct or indirect, as defined by the AOT sub role nodes of the security role nodes.
@@ -1001,7 +1003,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityRoleExplodedGraph Table](#securityroleexplodedgraph)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityRoleExplodedGraph Table](#securityroleexplodedgraph)
 
 ## []()SecurityRolePermissionOverride
 The SecurityRolePermissionOverride table contains the list of permissions that have been specified on the security role AOT nodes.
@@ -1038,7 +1040,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityRolePermissionOverride Table](#securityrolepermissionoverride)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityRolePermissionOverride Table](#securityrolepermissionoverride)
 
 ## []()SecurityRolePrivilegeExplodedGraph
 ### Fields
@@ -1064,7 +1066,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityRolePrivilegeExplodedGraph Table](#securityroleprivilegeexplodedgraph)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityRolePrivilegeExplodedGraph Table](#securityroleprivilegeexplodedgraph)
 
 ## []()SecurityRoleRuntime
 ### Fields
@@ -1116,7 +1118,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityRoleRuntime Table](#securityroleruntime)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityRoleRuntime Table](#securityroleruntime)
 
 ## []()SecurityRoleTaskGrant
 The SecurityRoleTaskGrant table contains the list of role to duty mappings and role to privilege mappings as defined by the AOT security role node.
@@ -1150,7 +1152,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityRoleTaskGrant Table](#securityroletaskgrant)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityRoleTaskGrant Table](#securityroletaskgrant)
 
 ## []()SecuritySegregationOfDutiesConflict
 The SecuritySegregationOfDutiesConflict table stores information about segregation of duties conflicts that result from attempted assignments of users to roles, and resolutions to the conflicts provided by authorized users.
@@ -1220,7 +1222,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecuritySegregationOfDutiesConflict Table](#securitysegregationofdutiesconflict)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecuritySegregationOfDutiesConflict Table](#securitysegregationofdutiesconflict)
 
 ## []()SecuritySegregationOfDutiesRule
 The SecuritySegregationOfDutiesRule table stores the rules governing segregation of duties.
@@ -1276,7 +1278,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecuritySegregationOfDutiesRule Table](#securitysegregationofdutiesrule)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecuritySegregationOfDutiesRule Table](#securitysegregationofdutiesrule)
 
 ## []()SecuritySubRole
 The SecuritySubRole table contains all sub roles that have been specified on the security role AOT nodes.
@@ -1314,7 +1316,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecuritySubRole Table](#securitysubrole)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecuritySubRole Table](#securitysubrole)
 
 ## []()SecuritySubTask
 The SecuritySubTask table contains the duty to privilege mappings that have been specified on the security duty AOT nodes.
@@ -1350,7 +1352,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecuritySubTask Table](#securitysubtask)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecuritySubTask Table](#securitysubtask)
 
 ## []()SecurityTask
 The SecurityTask table contains the list of duties and privileges that have been defined by the AOT security duty and security privilege nodes.
@@ -1388,7 +1390,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityTask Table](#securitytask)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityTask Table](#securitytask)
 
 ## []()SecurityTaskEntryPoint
 The SecurityTaskEntryPoint table contains the list of privilege to entry point mappings that have been specified on the AOT security privilege node.
@@ -1425,7 +1427,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityTaskEntryPoint Table](#securitytaskentrypoint)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityTaskEntryPoint Table](#securitytaskentrypoint)
 
 ## []()SecurityTaskExplodedGraph
 The SecurityTaskExplodedGraph table contains the duty to privilege mappings that have been specified on the security duty AOT nodes.
@@ -1461,7 +1463,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityTaskExplodedGraph Table](#securitytaskexplodedgraph)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityTaskExplodedGraph Table](#securitytaskexplodedgraph)
 
 ## []()SecurityTaskPermission
 The SecurityTaskPermission table is obsolete.
@@ -1497,7 +1499,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityTaskPermission Table](#securitytaskpermission)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityTaskPermission Table](#securitytaskpermission)
 
 ## []()SecurityTaskPermissionOverride
 The SecurityTaskPermissionOverride table contains the list of permissions that have been specified on the security privilege AOT nodes.
@@ -1534,7 +1536,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityTaskPermissionOverride Table](#securitytaskpermissionoverride)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityTaskPermissionOverride Table](#securitytaskpermissionoverride)
 
 ## []()SecurityUserRole
 The SecurityUserRole table contains the user to role mappings.
@@ -1576,7 +1578,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityUserRole Table](#securityuserrole)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityUserRole Table](#securityuserrole)
 
 ## []()SecurityUserRoleCondition
 The SecurityUserRoleCondition table contains the list of companies that constrain a user to role mappings.?If there are no entries for a particular user to role mapping then the user is granted the permissions of that role for all companies.
@@ -1615,7 +1617,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SecurityUserRoleCondition Table](#securityuserrolecondition)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SecurityUserRoleCondition Table](#securityuserrolecondition)
 
 ## []()SqlDescribe
 The SqlDescribe table is used to store the table and field metadata. The SqlDataDictionary::tablemetadata method populates this table by using a back end database query.
@@ -1656,7 +1658,7 @@ The SqlDescribe table is used to store the table and field metadata. The SqlData
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SqlDescribe Table](#sqldescribe)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SqlDescribe Table](#sqldescribe)
 
 ## []()SqlDictionary
 The SqlDictionary table describes the current state of the database with respect to the table and field metadata. The table also contains view and table dependency information. The database synchronization engine uses the SqlDictionary table to determine the actions that are required to synchronize the AOT with the database.
@@ -1698,7 +1700,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SqlDictionary Table](#sqldictionary)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SqlDictionary Table](#sqldictionary)
 
 ## []()SqlParameters
 The SqlParameters table stores database related information in the form of parameter and value pairs. This table is not used in Microsoft Dynamics Ax 2009.
@@ -1727,7 +1729,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SqlParameters Table](#sqlparameters)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SqlParameters Table](#sqlparameters)
 
 ## []()SqlStatistics
 The SqlStatistics table stores related database statistics for the user. This table is not used in Microsoft Dynamics Ax 2009.
@@ -1782,7 +1784,7 @@ The SqlStatistics table stores related database statistics for the user. This ta
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SqlStatistics Table](#sqlstatistics)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SqlStatistics Table](#sqlstatistics)
 
 ## []()SqlStorage
 The SqlStorage table contains information about table space and its Oracle attributes.
@@ -1815,7 +1817,7 @@ The SqlStorage table contains information about table space and its Oracle attri
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SqlStorage Table](#sqlstorage)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SqlStorage Table](#sqlstorage)
 
 ## []()SqlSyncInfo
 The SqlSyncInfo table captures messages and DDL statements during the database synchronization process. Once the synchronization process is complete the information in the table is deleted.
@@ -1848,7 +1850,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SqlSyncInfo Table](#sqlsyncinfo)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SqlSyncInfo Table](#sqlsyncinfo)
 
 ## []()Subquery
 The Subquery table is used by position based paging functionality.
@@ -1875,7 +1877,7 @@ The Subquery table is used by position based paging functionality.
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [Subquery Table](#subquery)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [Subquery Table](#subquery)
 
 ## []()SysActiveTempTable
 The SysActiveTempTable table provides data about the temporary database tables that are currently created. The table is used by the framework to manage the lifetime of these tables.
@@ -1905,7 +1907,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysActiveTempTable Table](#sysactivetemptable)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysActiveTempTable Table](#sysactivetemptable)
 
 ## []()SysBCProxyUserAccount
 The SysBCProxyUserAccount table stores the business connector proxy information that is entered through the SysBcAliasForm security form. This table always contains one record.
@@ -1933,7 +1935,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysBCProxyUserAccount Table](#sysbcproxyuseraccount)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysBCProxyUserAccount Table](#sysbcproxyuseraccount)
 
 ## []()SysBreakpointList
 The SysBreakpointList table contains a list of developers that have breakpoints in MorphX.
@@ -1966,7 +1968,7 @@ The SysBreakpointList table contains a list of developers that have breakpoints 
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysBreakpointList Table](#sysbreakpointlist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysBreakpointList Table](#sysbreakpointlist)
 
 ## []()SysBreakpoints
 The SysBreakpoints table contains a list of all the breakpoints in MorphX.
@@ -1998,7 +2000,7 @@ The SysBreakpoints table contains a list of all the breakpoints in MorphX.
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysBreakpoints Table](#sysbreakpoints)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysBreakpoints Table](#sysbreakpoints)
 
 ## []()SysCacheFlush
 The SysCacheFlush table contains data that is used for synchronization of caches across multiple AOS servers.
@@ -2024,7 +2026,7 @@ The SysCacheFlush table contains data that is used for synchronization of caches
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysCacheFlush Table](#syscacheflush)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysCacheFlush Table](#syscacheflush)
 
 ## []()SysClientAccessLog
 ### Fields
@@ -2058,7 +2060,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysClientAccessLog Table](#sysclientaccesslog)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysClientAccessLog Table](#sysclientaccesslog)
 
 ## []()SysClientSessions
 The SysClientSessions contains the data for the client sessions that are currently active in the system.
@@ -2110,7 +2112,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysClientSessions Table](#sysclientsessions)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysClientSessions Table](#sysclientsessions)
 
 ## []()SysConfig
 The SysConfig table contains license and configuration information.
@@ -2148,7 +2150,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysConfig Table](#sysconfig)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysConfig Table](#sysconfig)
 
 ## []()SysEncryptionKey
 The SysEncryptionKey table stores the encryption key that is used to encrypt the EP query string and post the data parameters.
@@ -2179,7 +2181,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysEncryptionKey Table](#sysencryptionkey)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysEncryptionKey Table](#sysencryptionkey)
 
 ## []()SysGlobalConfiguration
 The SysGlobalConfiguration table stores system level global setting that can be used to configure specific components.
@@ -2208,7 +2210,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysGlobalConfiguration Table](#sysglobalconfiguration)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysGlobalConfiguration Table](#sysglobalconfiguration)
 
 ## []()SysInheritanceRelations
 The SysInheritanceRelations framework helper table for table inheritance. The table stores table inheritance hierarchy related information.
@@ -2231,7 +2233,7 @@ The SysInheritanceRelations framework helper table for table inheritance. The ta
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysInheritanceRelations Table](#sysinheritancerelations)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysInheritanceRelations Table](#sysinheritancerelations)
 
 ## []()SysLastValue
 The SysLastValue table is storage for the usage data that is recorded as users navigate the system.
@@ -2270,7 +2272,7 @@ The SysLastValue table is storage for the usage data that is recorded as users n
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysLastValue Table](#syslastvalue)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysLastValue Table](#syslastvalue)
 
 ## []()SysModel
 The SysModel table contains information about installed models on the system.
@@ -2300,7 +2302,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModel Table](#sysmodel)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModel Table](#sysmodel)
 
 ## []()SysModelElement
 The SysModelElement table lists the ModelElements that the installation holds.
@@ -2339,7 +2341,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElement Table](#sysmodelelement)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElement Table](#sysmodelelement)
 
 ## []()SysModelElementData
 The SysModelElementData table provides the Layer specific data for any SysModelElement.
@@ -2383,7 +2385,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElementData Table](#sysmodelelementdata)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElementData Table](#sysmodelelementdata)
 
 ## []()SysModelElementDataOld
 The SysModelElementDataOld table provides the Layer specific data for any SysModelElementOld.
@@ -2427,7 +2429,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElementDataOld Table](#sysmodelelementdataold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElementDataOld Table](#sysmodelelementdataold)
 
 ## []()SysModelElementLabel
 The SysModelElementLabel table contains the label text for a given language.
@@ -2458,7 +2460,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElementLabel Table](#sysmodelelementlabel)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElementLabel Table](#sysmodelelementlabel)
 
 ## []()SysModelElementLabelOld
 The SysModelElementLabelOld table contains the label text for a given language.
@@ -2488,7 +2490,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElementLabelOld Table](#sysmodelelementlabelold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElementLabelOld Table](#sysmodelelementlabelold)
 
 ## []()SysModelElementOld
 The SysModelElementOld table lists the ModelElements that the installation holds.
@@ -2527,7 +2529,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElementOld Table](#sysmodelelementold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElementOld Table](#sysmodelelementold)
 
 ## []()SysModelElementSource
 The SysModelElementSource table contains the Source Text for all SysModelElements that have source.
@@ -2561,7 +2563,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElementSource Table](#sysmodelelementsource)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElementSource Table](#sysmodelelementsource)
 
 ## []()SysModelElementSourceOld
 The SysModelElementSourceOld table contains the Source Text for all SysModelElementsOld that have source.
@@ -2595,7 +2597,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElementSourceOld Table](#sysmodelelementsourceold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElementSourceOld Table](#sysmodelelementsourceold)
 
 ## []()SysModelElementType
 The SysModelElementType table specifies the possible SysModelElement types. Its Recid is backwards compatible with the UtilRecordType enum for the ‘old’ element types.
@@ -2629,7 +2631,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElementType Table](#sysmodelelementtype)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElementType Table](#sysmodelelementtype)
 
 ## []()SysModelElementTypeOld
 The SysModelElementTypeOld table specifies the possible SysModelElementOld types. Its Recid is backwards compatible with the UtilRecordType enum for the ‘old’ element types.
@@ -2662,7 +2664,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelElementTypeOld Table](#sysmodelelementtypeold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelElementTypeOld Table](#sysmodelelementtypeold)
 
 ## []()SysModelLayer
 The SysModelLayer table lists the possible LayerId and Name. If Model data exists in a layer it reports the aggregated version number for that layer.
@@ -2689,7 +2691,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelLayer Table](#sysmodellayer)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelLayer Table](#sysmodellayer)
 
 ## []()SysModelLayerOld
 The SysModelLayerOld table lists the possible LayerId and Name. If Model data exists in a layer it reports the aggregated version number for that layer.
@@ -2715,7 +2717,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelLayerOld Table](#sysmodellayerold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelLayerOld Table](#sysmodellayerold)
 
 ## []()SysModelManifest
 The SysModelManifest table contains the manifest information about deployed models, such as Description, Publisher and Version of a model
@@ -2766,7 +2768,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelManifest Table](#sysmodelmanifest)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelManifest Table](#sysmodelmanifest)
 
 ## []()SysModelManifestCategory
 The SysModelManifestCategory table contains the category aspect of the manifest information for deployed models.
@@ -2792,7 +2794,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelManifestCategory Table](#sysmodelmanifestcategory)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelManifestCategory Table](#sysmodelmanifestcategory)
 
 ## []()SysModelManifestCategoryOld
 The SysModelManifestCategoryOld table contains the category aspect of the manifest information for deployed models.
@@ -2817,7 +2819,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelManifestCategoryOld Table](#sysmodelmanifestcategoryold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelManifestCategoryOld Table](#sysmodelmanifestcategoryold)
 
 ## []()SysModelManifestOld
 The SysModelManifestOld table contains the manifest information about deployed models, such as Description, Publisher and Version of a model.
@@ -2868,7 +2870,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelManifestOld Table](#sysmodelmanifestold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelManifestOld Table](#sysmodelmanifestold)
 
 ## []()SysModelOld
 The SysModelOld table contains information about installed models on the system.
@@ -2898,7 +2900,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysModelOld Table](#sysmodelold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysModelOld Table](#sysmodelold)
 
 ## []()SysOccConfiguration
 The SysOccConfiguration table stores the global concurrency model setting and updates the conflict exception login policy.
@@ -2927,7 +2929,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysOccConfiguration Table](#sysoccconfiguration)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysOccConfiguration Table](#sysoccconfiguration)
 
 ## []()SysRecordLevelSecurity
 The SysRecordLevelSecurity table contains all the record level security restrictions that are configured by the system administrator. The restrictions are persisted on a per company, per group basis.
@@ -2975,7 +2977,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysRecordLevelSecurity Table](#sysrecordlevelsecurity)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysRecordLevelSecurity Table](#sysrecordlevelsecurity)
 
 ## []()SysServerSessions
 The SysServerSessions table is used to store information about the active AOS Servers in the system.
@@ -3012,7 +3014,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysServerSessions Table](#sysserversessions)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysServerSessions Table](#sysserversessions)
 
 ## []()SysSetbasedHelper
 The SysSetbasedHelper framework helper table for table inheritance set-based operations.
@@ -3034,7 +3036,7 @@ The SysSetbasedHelper framework helper table for table inheritance set-based ope
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SysSetbasedHelper Table](#syssetbasedhelper)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SysSetbasedHelper Table](#syssetbasedhelper)
 
 ## []()SystemSequences
 The SystemSequences table holds the next available record ID block for each table.
@@ -3072,7 +3074,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [SystemSequences Table](#systemsequences)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [SystemSequences Table](#systemsequences)
 
 ## []()TableCollectionList
 The TableCollectionList table stores the mapping between table collections and virtual companies.
@@ -3109,7 +3111,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [TableCollectionList Table](#tablecollectionlist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [TableCollectionList Table](#tablecollectionlist)
 
 ## []()TimeZonesList
 The TimeZonesList table contains the list of the time zones that are supported.
@@ -3138,7 +3140,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [TimeZonesList Table](#timezoneslist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [TimeZonesList Table](#timezoneslist)
 
 ## []()TimeZonesRulesData
 The TimeZonesRulesData table contains the GMT offsets and daylight saving time information for all time zones that are supported.
@@ -3189,7 +3191,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [TimeZonesRulesData Table](#timezonesrulesdata)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [TimeZonesRulesData Table](#timezonesrulesdata)
 
 ## []()UserDataAreaFilter
 The UserDataAreaFilter table contains a list of selectable companies for a user. It is populated by invoking the populateSelectableCompanies method on the SecurityRights class.
@@ -3223,7 +3225,7 @@ The UserDataAreaFilter table contains a list of selectable companies for a user.
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [UserDataAreaFilter Table](#userdataareafilter)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [UserDataAreaFilter Table](#userdataareafilter)
 
 ## []()UserInfo
 The UserInfo table contains a list of users and their active directory and default information.
@@ -3335,7 +3337,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [UserInfo Table](#userinfo)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [UserInfo Table](#userinfo)
 
 ## []()UserInfoStartupModel
 The UserInfoStartupModel table holds the preferred startup model for each layer for each user.
@@ -3375,7 +3377,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [UserInfoStartupModel Table](#userinfostartupmodel)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [UserInfoStartupModel Table](#userinfostartupmodel)
 
 ## []()UtilElements
 The UtilElements table contains the application that is shown in the AOT.
@@ -3415,7 +3417,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [UtilElements Table](#utilelements)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [UtilElements Table](#utilelements)
 
 ## []()UtilElementsOld
 The UtilElementsOld table contains the application model stored in the application folder. It is used during the upgrade process.
@@ -3451,7 +3453,7 @@ The UtilElementsOld table contains the application model stored in the applicati
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [UtilElementsOld Table](#utilelementsold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [UtilElementsOld Table](#utilelementsold)
 
 ## []()UtilIdElements
 The UtilIdElements table contains the application model shown in the AOT.
@@ -3492,7 +3494,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [UtilIdElements Table](#utilidelements)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [UtilIdElements Table](#utilidelements)
 
 ## []()UtilIdElementsOld
 The UtilIdElementsOld table contains the application model stored in the application folder. It is used during the upgrade process.
@@ -3529,7 +3531,7 @@ The UtilIdElementsOld table contains the application model stored in the applica
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [UtilIdElementsOld Table](#utilidelementsold)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [UtilIdElementsOld Table](#utilidelementsold)
 
 ## []()UtilModels
 The UtilModels table contains information about models that are installed on the system.
@@ -3571,7 +3573,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [UtilModels Table](#utilmodels)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [UtilModels Table](#utilmodels)
 
 ## []()VirtualDataAreaList
 The VirtualDataAreaList table stores the mapping between real companies and virtual companies.
@@ -3614,7 +3616,7 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [VirtualDataAreaList Table](#virtualdataarealist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [VirtualDataAreaList Table](#virtualdataarealist)
 
 ## []()VSAssembly
 The VSAssembly table contains synchronization information that describes the last time an assembly that is stored under the Visual Studio Projects node in the AOT was deployed..
@@ -3644,5 +3646,5 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-reference/x-classes#class-xrecord) [Common Table](#common) [VSAssembly Table](#vsassembly)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [VSAssembly Table](#vsassembly)
 

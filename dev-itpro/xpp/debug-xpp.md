@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Debug X++ code | Microsoft Docs
+title: Debug X++ code
 description: This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:34:19
+ms.date: 2015-12-11 23 - 34 - 19
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23921
-ms.assetid: 128f53f6-4b7b-43c1-b019-a255a0d1ba44
-ms.region: Global
-# ms.industry: 
+ms.assetid: b77f00b4-6f20-4dc6-8a3d-60a1982bd26b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -49,7 +51,7 @@ To debug X++ code, follow these steps.
 See also
 --------
 
-[Technical Concepts Guide](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Technical Concepts Guide](developer-landing-page.md)
 
 [https://ax.help.dynamics.com/en/wiki/technical-concepts-guide/](https://ax.help.dynamics.com/en/?p=178721)
 

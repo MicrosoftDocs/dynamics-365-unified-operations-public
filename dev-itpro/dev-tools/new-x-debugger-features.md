@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ and debugger features | Microsoft Docs
+title: X++ and debugger features
 description: This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features. This is a walkthrough of the new features with exercises included to practice using these features. 
 author: pvillads
 manager: AnnBe
-ms.date: 2015-12-13 01:58:46
+ms.date: 2015-12-13 01 - 58 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26801
-ms.assetid: a4a062f7-1a97-4b6b-a842-3d72df2ad77d
-ms.region: Global
-# ms.industry: 
+ms.assetid: f18c33c0-be55-455d-8525-b41d9b05507f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

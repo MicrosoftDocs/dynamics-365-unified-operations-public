@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage Retail accounts and devices from headquarters | Microsoft Docs
+title: Manage Retail accounts and devices from headquarters
 description: This article explains how an IT Pro can set up Retail activation accounts for retail workers to activate Modern POS or Cloud POS devices.
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-07 22:30:17
+ms.date: 2015-12-07 22 - 30 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission
+ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 11
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20471
-ms.assetid: f758eb7c-8ae5-41a3-8cc5-814b08ae579b
-ms.region: Global
-ms.industry: Retail
+ms.assetid: b831765d-8bc3-4be8-b1eb-dc6f56131675
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: athinesh
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Settle a partial customer payment and the final payment in full before the discount date | Microsoft Docs
+title: Settle a partial customer payment and the final payment in full before the discount date
 description: This article provides scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:29:58
+ms.date: 2015-12-02 23 - 29 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustOpenTrans, LedgerJournalTransCustPaym
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14491
-ms.assetid: 0305ae65-e9bd-4458-8fa9-4a7e63f161f5
-ms.region: Global
-# ms.industry: 
+ms.assetid: 52a9bcea-b40b-4a3d-933b-76d17329cbb2
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

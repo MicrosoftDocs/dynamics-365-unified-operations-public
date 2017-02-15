@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Merge inventory batches | Microsoft Docs
+title: Merge inventory batches
 description: This article provides information about how to consolidate two or more inventory batches into a merged batch. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-11 15:04:37
+ms.date: 2016-02-11 15 - 04 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventBatchJournalListPage, InventBatchJournalMerge
+ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 39782
-ms.assetid: d0300c3c-96e9-4c97-be32-8efd242bddce
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4ff83dd4-5fd3-4faa-be51-4bcfd6ab0634
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pjacobse
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

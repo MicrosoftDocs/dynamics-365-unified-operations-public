@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Kanban job scheduling for lean manufacturing | Microsoft Docs
+title: Kanban job scheduling for lean manufacturing
 description: This article provides information about visual control over kanban job scheduling and various ways to schedule kanban jobs.  
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15:02:36
+ms.date: 2016-02-24 15 - 02 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: KanbanBoardScheduleJobForward, KanbanBoardShowJobs, KanbanJobSchedulingListPage
+ms.search.form: KanbanBoardScheduleJobForward, KanbanBoardShowJobs, KanbanJobSchedulingListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52961
-ms.assetid: 753821b2-aa1e-4369-aab5-ba52f5eb0f1f
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 502af306-ec63-4fe6-bbe8-41d2c14315d5
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: conradv
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

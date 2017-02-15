@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Updates for Dynamics AX 2012 R3 | Microsoft Docs
+title: Updates for Dynamics AX 2012 R3
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 18:05:34
+ms.date: 2015-12-05 18 - 05 - 34
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18731
-ms.assetid: d77e0e1f-9b87-4c49-9ca4-550d076aadb0
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 081e3cca-ac2b-4c1b-95c7-c098438e943c
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Action controls | Microsoft Docs
+title: Action controls
 description: Actions are an essential component of any enterprise resource planning (ERP) system, and are triggered by mouse click, keyboard, or touch.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-02-25 09:29:45
+ms.date: 2016-02-25 09 - 29 - 45
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55521
-ms.assetid: 628cceb5-a913-4d3a-b1ca-bc2c39db1bda
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1378f141-ab46-425e-b38c-62696d8387ab
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -65,7 +67,7 @@ The **Button Display** property controls what information (including the button 
 -   Buttons inside Action Pane tabs on Standard Action Panes must be set to **Text Only** or **Auto** (which is interpreted as **Text Only** in this case).
 -   **Image Only** buttons should be used only for on-canvas buttons that are inline with a field.
 
-For more details about how to use the **Button Display** property in various form locations in the current version of Dynamics AX, see the "Button image guidelines" section of the [General form guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines) article. The following table shows the values for the **Button Display** property in the current version of Dynamics AX.
+For more details about how to use the **Button Display** property in various form locations in the current version of Dynamics AX, see the "Button image guidelines" section of the [General form guidelines](general-form-guidelines.md) article. The following table shows the values for the **Button Display** property in the current version of Dynamics AX.
 
 | Button Display value  | Description                                                                                                                  |
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -78,7 +80,7 @@ Note that the other values of **Button Display** from AX 2012, such as **Backg
 
 ### Button Images
 
-In previous versions, images or icons were often shown on buttons to help users recognize those buttons. However, in the current version of Dynamics AX, the number of images that are used for this purpose is reduced. Fewer images produce a cleaner, more modern user interface. Additionally, there was a desire to indicate processes and tasks by using more common symbols instead of multiple subtly different images. For more details about how images are used on buttons in the current version of Dynamics AX, see the "Button image guidelines" section of the [General form guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines) article. Two metadata properties are used to define an image for a button: **Image Location** and **Normal Image**. The allowed values for the **Normal Image** property depend on the value of the **Image Location** property. For more details about the supported **Image Location** values in Dynamics AX, see the "Image controls" section of the "Input Controls in Dynamics AX" article. In previous versions, Embedded Resources (kernel resources) were heavily used to specify button images or icons. However, there has been a shift to the web for the current version of Dynamics AX, and this image format option is no longer available. Instead, a new image format (Symbol font) has been added, and the expectation is that all buttons that requires images will use this option (**Image Location** = **Symbol**). The primary reason for this change is that a symbol font is the best performing and most scalable image format for Dynamics AX. For a list of the full set of symbols that are supported in the Dynamics AX Symbol font, see [this document](http://ax.help.dynamics.com/en/?attachment_id=278612). The following table shows the recommended and preferred method for assigning images to buttons in the current version of Dynamics AX.
+In previous versions, images or icons were often shown on buttons to help users recognize those buttons. However, in the current version of Dynamics AX, the number of images that are used for this purpose is reduced. Fewer images produce a cleaner, more modern user interface. Additionally, there was a desire to indicate processes and tasks by using more common symbols instead of multiple subtly different images. For more details about how images are used on buttons in the current version of Dynamics AX, see the "Button image guidelines" section of the [General form guidelines](general-form-guidelines.md) article. Two metadata properties are used to define an image for a button: **Image Location** and **Normal Image**. The allowed values for the **Normal Image** property depend on the value of the **Image Location** property. For more details about the supported **Image Location** values in Dynamics AX, see the "Image controls" section of the "Input Controls in Dynamics AX" article. In previous versions, Embedded Resources (kernel resources) were heavily used to specify button images or icons. However, there has been a shift to the web for the current version of Dynamics AX, and this image format option is no longer available. Instead, a new image format (Symbol font) has been added, and the expectation is that all buttons that requires images will use this option (**Image Location** = **Symbol**). The primary reason for this change is that a symbol font is the best performing and most scalable image format for Dynamics AX. For a list of the full set of symbols that are supported in the Dynamics AX Symbol font, see [this document](http://ax.help.dynamics.com/en/?attachment_id=278612). The following table shows the recommended and preferred method for assigning images to buttons in the current version of Dynamics AX.
 
 | Property       | Value                             |
 |----------------|-----------------------------------|
@@ -119,10 +121,10 @@ Several system-defined buttons are added automatically to pages in Dynamics AX.�
 Toolbars (previously called Action Pane strips) are Actions Panes that have the **Style** property set to **Strip**. They are used for actions that have a specific context and aren't page-level actions. They are primarily used for actions that are specific to a FastTab, tab, or grid. In the current version of Dynamics AX, the actions in a Strip-styled Action Pane are shown horizontally in a Toolbar. The following illustration shows a Toolbar that has two buttons for adding and removing lines from this **TransactionDetails** form. [![ActionPaneToolbar](./media/actionpanetoolbar.png)](./media/actionpanetoolbar.png)
 
 ## Rightclick context menus
-Some actions can also be accessed via shortcut menus (right-click context menus) in Dynamics AX. Depending on the context of the right-click, you see either the browser's default context menu or the Dynamics AX context menu, which shows both system-defined actions and developer-defined actions. Because browsers don't allow programmatic access to the system clipboard, the browser's context menu must allow the user to perform **Cut**, **Copy**, and **Paste** commands. Therefore, the browser's context menu appears if you right-click in an editable field, or if text is selected. Additionally, the browser's context menu appears if you right-click an image. Other right-clicks (for example, on a field label or on the value of a read-only control) should trigger the Dynamics AX context menu. **Note:** Context menus are intended to provide an alternate route to a command, not the only way to run that command. Therefore, any action that is added to a control's context menu should have a corresponding action that is available outside the context menu. The programming model for modifying context menus in the current version of Dynamics AX differs from the model in previous releases. In AX 2012, the **PopupMenu** class was used. This class relies on Microsoft Windows application programming interfaces (APIs). However, because these APIs aren't available on the web, replacement APIs have been created to provide similar functionality. For more information, see the [Code migration: Context menus](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/code-migration-context-menus) article.
+Some actions can also be accessed via shortcut menus (right-click context menus) in Dynamics AX. Depending on the context of the right-click, you see either the browser's default context menu or the Dynamics AX context menu, which shows both system-defined actions and developer-defined actions. Because browsers don't allow programmatic access to the system clipboard, the browser's context menu must allow the user to perform **Cut**, **Copy**, and **Paste** commands. Therefore, the browser's context menu appears if you right-click in an editable field, or if text is selected. Additionally, the browser's context menu appears if you right-click an image. Other right-clicks (for example, on a field label or on the value of a read-only control) should trigger the Dynamics AX context menu. **Note:** Context menus are intended to provide an alternate route to a command, not the only way to run that command. Therefore, any action that is added to a control's context menu should have a corresponding action that is available outside the context menu. The programming model for modifying context menus in the current version of Dynamics AX differs from the model in previous releases. In AX 2012, the **PopupMenu** class was used. This class relies on Microsoft Windows application programming interfaces (APIs). However, because these APIs aren't available on the web, replacement APIs have been created to provide similar functionality. For more information, see the [Code migration: Context menus](code-migration-context-menus.md) article.
 
 ## Keyboard shortcuts
-Keyboard shortcuts are another mechanism for triggering some actions in Dynamics AX. Many actions that had shortcuts in AX 2012 continue to have shortcuts in the current version of Dynamics AX. However, because of browser restrictions, the specific key combination that is used to trigger an action might differ. The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see the [Shortcut keys](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/shortcut-keys) article. In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
+Keyboard shortcuts are another mechanism for triggering some actions in Dynamics AX. Many actions that had shortcuts in AX 2012 continue to have shortcuts in the current version of Dynamics AX. However, because of browser restrictions, the specific key combination that is used to trigger an action might differ. The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see the [Shortcut keys](shortcut-keys.md) article. In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
 
 | Key combination     | Action              | Comments                                                                                                                                                                                                                           |
 |---------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

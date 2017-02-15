@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure expense management | Microsoft Docs
+title: Configure expense management
 description: This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics AX. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-11 22:56:54
+ms.date: 2015-12-11 22 - 56 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: GlobalCategory, ProjCategory, TrvLocations, TrvParameters, TrvPaymethod, TrvPerDiems
+ms.search.form: GlobalCategory, ProjCategory, TrvLocations, TrvParameters, TrvPaymethod, TrvPerDiems
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23001
-ms.assetid: 49d55c62-7088-4bc2-a991-812ef920d4f5
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 839aa1dc-98de-42ef-9c80-8b6ba144976f
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

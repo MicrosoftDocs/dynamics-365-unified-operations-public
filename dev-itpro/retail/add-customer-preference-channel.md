@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add customer preference data to a channel database | Microsoft Docs
+title: Add customer preference data to a channel database
 description: This tutorial shows how to add the RetailCustPreferences table to the commerce runtime (CRT) for the retail channel, and how to create a subjob to move the data in the new table to the channel database.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-04 23:03:18
+ms.date: 2015-12-04 23 - 03 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18081
-ms.assetid: ac1c5087-9ee4-42f0-879e-668187d99f48
-ms.region: Global
-ms.industry: Retail
+ms.assetid: ecf1a1d6-9311-4ff0-a5a4-401dc2ffc064
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

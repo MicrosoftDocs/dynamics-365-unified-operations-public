@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Class extensions | Microsoft Docs
+title: Class extensions
 description: This article describes the new class extension model in X++.
 author: pvillads
 manager: AnnBe
-ms.date: 2016-06-08 15:54:26
+ms.date: 2016-06-08 15 - 54 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX platform update 1
+ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 89563
-ms.assetid: 00a3e8a0-2c90-479f-864b-5a084c95e88b
-ms.region: Global
-# ms.industry: 
+ms.assetid: f9f7493e-dff0-4e64-a83a-c36838db1ae6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: May-16
+ms.dyn365.version: Platform update 1
 
 ---
 

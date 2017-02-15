@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Country/region codes and configuration keys | Microsoft Docs
+title: Country/region codes and configuration keys
 description: This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-09-14 07:32:07
+ms.date: 2015-09-14 07 - 32 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 4644
-ms.assetid: 535adb2a-f1d0-4be7-b7ea-d297e9afc75c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 911b7eee-204e-458d-8da0-75b877e502cd
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

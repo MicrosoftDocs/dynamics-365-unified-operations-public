@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Infrastructure estimator (AX 2012) | Microsoft Docs
+title: Infrastructure estimator (AX 2012)
 description: The Microsoft Dynamics Lifecycle Services Infrastructure estimator provides an automated rough first estimate of the hardware needs of an environment. Estimates can be provided for environments that are on your premises or in the cloud. The estimate is intended to be used as a basis for more in-depth, manual sizing estimates, not to replace them.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-05 23:28:26
+ms.date: 2015-12-05 23 - 28 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: josaw1
-ms.suite: AX 2012
+# ms.reviewer: josaw1
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 19081
-ms.assetid: c1221022-f30a-4907-8a31-093469fcc3cd
-ms.region: Global
-# ms.industry: 
+ms.assetid: d0786a5e-fbc9-4758-b21e-f20f7fd34f97
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mumani
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -62,12 +64,12 @@ Server roles represent the major components of the Microsoft Dynamics AX environ
 | Help server                   | Required if it is specified in the Deployment details questionnaire of the Usage profiler |
 
 ## Prerequisites
-If you want to create an infrastructure estimate for a production environment, you must first complete a usage profile. For more information, see [Usage profiler (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lifecycle-services-lcs). Estimates for development, test, and training environments do not require a completed usage profile.
+If you want to create an infrastructure estimate for a production environment, you must first complete a usage profile. For more information, see [Usage profiler (Lifecycle Services, LCS)](usage-profiler-lcs.md). Estimates for development, test, and training environments do not require a completed usage profile.
 
 ## Create an infrastructure estimate
 1.  [Go to Lifecycle Services](https://lcs.dynamics.com).
 2.  On the project home page, click the Infrastructure estimator tile.
-3.  If you need an estimate for a production environment and you haven’t yet completed a usage profile, click the Usage profiler button. For more information, see [Usage profiler (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/usage-profiler-lifecycle-services-lcs).
+3.  If you need an estimate for a production environment and you haven’t yet completed a usage profile, click the Usage profiler button. For more information, see [Usage profiler (Lifecycle Services, LCS)](usage-profiler-lcs.md).
 4.  Click New estimate.
 5.  Select the type of environment that you are creating an estimate for.
 6.  Enter a name for the estimate, and select whether the environment will be hosted on premises or in the cloud.

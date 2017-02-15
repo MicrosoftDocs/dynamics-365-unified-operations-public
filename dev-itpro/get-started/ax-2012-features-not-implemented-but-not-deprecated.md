@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dynamics AX 2012 features that haven't been implemented but aren't deprecated | Microsoft Docs
+title: Dynamics AX 2012 features that haven't been implemented but aren't deprecated
 description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Dynamics 365 for Operations. Although these features haven't yet been implemented, they aren't deprecated. 
-author: sericks007
+author: annbe
 manager: AnnBe
-ms.date: 2016-11-16 22:22:13
+ms.date: 2016-11-16 22 - 22 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks007
-ms.suite: Released- Dynamics AX platform update 2
+ms.reviewer: annbe
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 21881
-ms.assetid: 23f68cd1-da94-4524-8608-c79ede79ddfa
-ms.region: Global
-# ms.industry: 
-ms.author: sericks
+ms.assetid: 129b8ac6-5a1b-4729-8a43-92c18534fe57
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Aug-16
+ms.dyn365.version: Platform update 2
 
 ---
 
@@ -89,50 +91,54 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <td>In this update of Dynamics 365 for Operations, you can't use the Gantt chart for interactive scheduling. This functionality will be added in a future update.</td>
 </tr>
 <tr class="even">
+<td>Radio frequency identifier (RFID)</td>
+<td>In this update of Dynamics 365 for Operations, you can't use the current Dynamics 365 for Operations infrastructure instead of the Microsoft BizTalk Server to set up an RFID server. It also doesn't include functionality for enabling inbound and/or outbound processed items that are tagged with RFID tags.</td>
+</tr>
+<tr class="odd">
 <td>Absence management in Human Resources</td>
 <td>This update of Dynamics 365 for Operations doesn't include functionality for entering absence transactions through both ESS and the client. It also doesn't include functionality for approving those transactions as a manager. In a future update of Dynamics 365 for Operations, the current functionality will be enhanced to support a wider range of scenarios. Setup capabilities that are required for integration with other Dynamics 365 for Operations modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>US Payroll</td>
 <td>This update of Dynamics 365 for Operations doesn't include US Payroll. Limited initial setup capabilities will be available through the <strong>Human Resources 1</strong> &gt; <strong>Payroll</strong> configuration key.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>External questionnaire and recruiting functionality</td>
 <td>Functionality for externally posting questionnaires and open jobs will be added in a future update of Dynamics 365 for Operations.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Main account allocations for accounting distributions</td>
 <td>Allocation rules that are defined for a main account won't be applied on accounting distributions. In a future update of Dynamics 365 for Operations, main allocation rules will be applied during journalization.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Client right-to-left (RTL) layout</td>
 <td>In this update of Dynamics 365 for Operations, the web client uses only left-to-right (LTR) layout for controls and labels. The ability to use RTL layout for Arabic and Hebrew languages will be added in a future update of Dynamics 365 for Operations.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Client drag-and-drop</td>
 <td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned to work on the new web client platform. APIs to support drag-and-drop operations will be reviewed for inclusion in a future update of Dynamics 365 for Operations.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Vendor catalog import</td>
 <td>Vendor catalog import is available and uses the new data management capabilities for import. However, this feature doesn't support the import of product images and attributes. It also doesn't let you generate schema files per vendor catalog. This functionality will be added in a future update of Dynamics 365 for Operations.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>General budget reservations</td>
 <td>This document is sometimes referred to as a commitment. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. This functionality will be added in a future update.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Electronic data exchange</td>
 <td>The current update of Dynamics 365 for Operations doesn't support the electronic exchange of documents, such as order confirmations and similar supply chain management (SCM) documents that were previously enabled as AIF documents. This functionality will be added in a future update of Dynamics 365 for Operations and will be based on the new Data Entities foundation.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Windows 8 and mobile apps</td>
 <td>Mobile and tablet functionality enables expense capture and approval, and timesheet entry and approval.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Microsoft Project client integration</td>
 <td>The Microsoft Project client is integrated with Dynamics 365 for Operations projects.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
 <td>Currently, payment format specifications must be entered manually. In a future update of Dynamics 365 for Operations, you will be able to select payment format specifications in a list. Currently, the following specifications are supported per payment format. <strong>Note</strong>: Values of supported payment specifications listed below are used as Payment specification parameters in Payment specification form for a selected method of payment. <strong>BTL91 for the Netherlands</strong>
 <table>
@@ -311,39 +317,39 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tbody>
 </table></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Allowance for bad debts for Poland</td>
 <td>On the creditor side, it is possible to correct output VAT on unpaid invoices (receivables). On the debtor side, the debtor is obliged to correct input VAT in the period, in which 150 days passed from the original purchase invoice due date for payables that were not paid. This feature will be available in a future update.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Non-tax deductible unpaid costs for Poland</td>
 <td>Vendor liability that is not paid within a certain period after the due date should not be treated as tax deductible costs for PIT/CIT purposes. This feature enables processing vendor invoices that are not paid and should be removed from tax deductible costs. This feature will be available in a future update.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>VAT Control Statement for Czech Republic</td>
 <td>In 2016, taxpayers are obliged to submit a VAT Control Statement that contains detailed information about local taxable supplies that they have received and provided. The statement must be submitted monthly in XML format. This feature will be available in a future update of Dynamics 365 for Operations.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Standard Audit File (SAF) for Poland</td>
 <td>Starting in August 2016, taxpayers in Poland are obliged to transmit data in SAF format (general ledger [GL] accounting records, VAT registry, tax revenues and expenses ledger, revenue registry, invoice statements, and receipt statements). This feature will be available in a future update.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Credit transfer initiation that is based on Danish implementation guidelines for ISO20022</td>
 <td>The feature lets you initiate a credit transfer that is based on Danish implementation guidelines ISO20022 for Single Euro Payments Area (SEPA), domestic, and foreign payments. This feature will be available in a future update.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Customs declarations and their inclusion on the <strong>Black list</strong> report for Italy</td>
 <td>Companies in Italy must register customs declarations. If a foreign vendor belongs to a &quot;blacklisted&quot; country/region, companies must include VAT from the customs declarations on the <strong>Black list</strong> report. This feature will be available in future update.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Fiscal printers for Poland</td>
 <td>Polish fiscal printers are integrated with Dynamics 365 for Operations. The following types of printers in the local Polish market are supported: Posnet Thermal and Elzab Omega. During invoice posting, the required information is sent to the fiscal printer in the correct format. This feature will be available in a future update.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Bank payment order for Latvia and Lithuania</td>
 <td>Print a payment order for Latvia and Lithuania. This feature will be available in a future update of Dynamics 365 for Operations.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Bankgirot AP return format for Sweden</td>
 <td>The Bangirot return format is used to import bank return messages. This feature will be available in a future update.</td>
 </tr>

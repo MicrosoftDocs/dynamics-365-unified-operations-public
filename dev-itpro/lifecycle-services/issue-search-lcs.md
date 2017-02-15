@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Issue search on Lifecycle Services | Microsoft Docs
+title: Issue search on Lifecycle Services
 description: This article provides information about the Issue search tool on Microsoft Dynamics Lifecycle Services (LCS). It explains how to search for product issues and regulatory features, and describes the information that is provided for each status.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-05 23:09:41
+ms.date: 2015-12-05 23 - 09 - 41
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18881
-ms.assetid: 20e637bf-447d-4582-968f-70c5c2652efc
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0dd0194e-13b2-425e-ba91-b7ab76003e79
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

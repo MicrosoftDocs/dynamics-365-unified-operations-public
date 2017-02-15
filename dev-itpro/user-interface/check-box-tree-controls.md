@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Check box support in tree controls | Microsoft Docs
+title: Check box support in tree controls
 description: This article is intended as a primer for using check box controls in the tree control. It's not a general “how to” for using tree controls.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-05 00:41:16
+ms.date: 2016-02-05 00 - 41 - 16
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31501
-ms.assetid: f8405eb3-a9e9-4940-a087-43a9120c1927
-ms.region: Global
-# ms.industry: 
+ms.assetid: ecde1ea9-4b82-492f-916c-088be29240aa
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tlefor
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

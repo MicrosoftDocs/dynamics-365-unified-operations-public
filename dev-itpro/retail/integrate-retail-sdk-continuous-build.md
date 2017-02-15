@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Integrate the Retail SDK with the continuous build system (VSTS) | Microsoft Docs
+title: Integrate the Retail SDK with the continuous build system (VSTS)
 description: The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Operations and Retail components. This article outlines the manual steps for merging both build systems. 
 author: MargoC
 manager: AnnBe
-ms.date: 2016-04-12 22:07:22
+ms.date: 2016-04-12 22 - 07 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 80861
-ms.assetid: f3e3e905-268c-45ba-8c30-7abb6d49f15c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 27dc05aa-1c13-4cea-8aeb-6229f48c0d71
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: margoc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ The LCS-integrated experience supports both code upgrades and new projects. The 
 Enable the build system
 -----------------------
 
-To get started, you must follow all the steps to get a full Dynamics 365 for Operations continuous build system up and running. For information, see [Developer topology deployment with continuous build and test automation](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/perf-test/developer-topology-deployment-with-continuous-build-and-test-automation). After deployment, you create the build definition and build steps. Build at least one time, so that you become familiar with it and are sure that you can build without errors. Then move to the next step.
+To get started, you must follow all the steps to get a full Dynamics 365 for Operations continuous build system up and running. For information, see [Developer topology deployment with continuous build and test automation](continuous-build-test-automation.md). After deployment, you create the build definition and build steps. Build at least one time, so that you become familiar with it and are sure that you can build without errors. Then move to the next step.
 
 ## Prepare the Retail SDK
 ### Getting the Retail SDK

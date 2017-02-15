@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up products that can be produced or procured | Microsoft Docs
-description: Products can be sourced in various ways: they can be produced (manufactured) or procured (purchased). This article describes some typical points to consider when you configure products to support multi-sourcing. 
+title: Set up products that can be produced or procured
+description: Products can be sourced in various ways -  they can be produced (manufactured) or procured (purchased). This article describes some typical points to consider when you configure products to support multi-sourcing. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-11 19:54:18
+ms.date: 2015-12-11 19 - 54 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: ReqGroup, ReqItemTable
+ms.search.form: ReqGroup, ReqItemTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21841
-ms.assetid: dbf8fdcf-c95b-4bfe-8e9d-c94f507ffd60
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 374d49a4-68f6-4643-9a80-5328df53ec0a
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: conradv
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Set up products that can be produced or procured
 
-Products can be sourced in various ways: they can be produced (manufactured) or procured (purchased). This article describes some typical points to consider when you configure products to support multi-sourcing. 
+Products can be sourced in various ways -  they can be produced (manufactured) or procured (purchased). This article describes some typical points to consider when you configure products to support multi-sourcing. 
 
 Multi-sourcing is typically used for a purchased item that is occasionally manufactured, or when an item that was primarily a manufactured item is changed so that it's now primarily a purchased item. The item is first designated as a manufactured item, so that bill of materials (BOM) and route information can be defined, and to support production orders for the item. The production type should be set to **BOM** (or, for process manufacturing, **Formula** or **Co-Product**).
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Behavioral properties on data entities | Microsoft Docs
+title: Behavioral properties on data entities
 description: 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 20:11:57
+ms.date: 2015-12-12 20 - 11 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25341
-ms.assetid: 1e05b79b-2054-4239-a45c-a220f36a9950
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2cbe57aa-5c10-412c-8546-9fcafdd520c9
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
