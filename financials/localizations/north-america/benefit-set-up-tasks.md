@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up benefits | Microsoft Docs
+title: Set up benefits
 description: This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15:42:28
+ms.date: 2016-10-31 15 - 42 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmBenefit, HcmBenefitElementSetup, PayrollBenefitCalculationRateSetup
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollBenefitCalculationRateSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 31
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 31
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221174
-ms.assetid: aa571681-35a4-49c0-8b50-561817e42eae
-ms.region: USA
-# ms.industry: 
+ms.assetid: 16a62a3a-51bd-4af7-b66f-adcdb01b23fb
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
 
-Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits. Garnishments and tax levies are also set up as benefits, but the steps for setting them up differ. For more information, see [Garnishment and tax levy setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-setup-tasks). After you set up benefit elements by using the **Benefit elements** page, you must create the benefits so that they can be assigned to workers. When you create a benefit, you link an option to a benefit plan, designate a benefit period, and assign eligibility rules to the benefit. The following illustration shows the steps that you must follow to set up benefits and mandatory deductions. Each step will be described later in this topic. [![Flow for benefit setup tasks](./media/benefit-setup-1.gif)](./media/benefit-setup-1.gif)
+Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits. Garnishments and tax levies are also set up as benefits, but the steps for setting them up differ. For more information, see [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md). After you set up benefit elements by using the **Benefit elements** page, you must create the benefits so that they can be assigned to workers. When you create a benefit, you link an option to a benefit plan, designate a benefit period, and assign eligibility rules to the benefit. The following illustration shows the steps that you must follow to set up benefits and mandatory deductions. Each step will be described later in this topic. [![Flow for benefit setup tasks](./media/benefit-setup-1.gif)](./media/benefit-setup-1.gif)
 
 ## Setting up benefit elements
 A benefit is a combination of the benefit type, plan, and option:
@@ -183,11 +185,11 @@ Enter the following information on the **Payroll details** FastTab.
 <li>Additional</li>
 <li>Gross up</li>
 </ul>
-Deductions and contributions for the selected benefit plan are included in payroll calculations for payroll runs that produce the payment run types that you select here. For more information about payment run types, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/earning-code-and-earning-code-group-tasks">Earning code and earning code group tasks</a>.</td>
+Deductions and contributions for the selected benefit plan are included in payroll calculations for payroll runs that produce the payment run types that you select here. For more information about payment run types, see <a href="earning-code-group-tasks.md">Earning code and earning code group tasks</a>.</td>
 </tr>
 <tr class="odd">
 <td>Deduction priority</td>
-<td>Enter a number to specify where this deduction should be made in the sequence of applicable deductions. The lower the deduction priority number that you enter, the higher the deduction priority. The lowest deduction priority number that you can enter is 0 (zero). When amounts are deducted from pay statements, the deductions start with the benefit that has the lowest deduction priority number. When multiple benefits have the same number, the deductions for those benefits are made in alphabetical order. <strong>Caution:</strong> Some benefits are considered mandatory deductions in some states. Those benefit plans should have the highest deduction priority (that is, the lowest deduction priority number). In many states, deductions for garnishments and tax levies must be made before deductions for any other benefits are made. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-setup-tasks">Garnishment and tax levy setup tasks</a>. By default, the value in this field is entered on the <strong>Maintain benefits</strong> page when a worker is enrolled in a benefit. You can change the value for a worker at the time of enrollment or at any other time. If you change the default value, existing benefit assignments don't change. You must change those values individually.</td>
+<td>Enter a number to specify where this deduction should be made in the sequence of applicable deductions. The lower the deduction priority number that you enter, the higher the deduction priority. The lowest deduction priority number that you can enter is 0 (zero). When amounts are deducted from pay statements, the deductions start with the benefit that has the lowest deduction priority number. When multiple benefits have the same number, the deductions for those benefits are made in alphabetical order. <strong>Caution:</strong> Some benefits are considered mandatory deductions in some states. Those benefit plans should have the highest deduction priority (that is, the lowest deduction priority number). In many states, deductions for garnishments and tax levies must be made before deductions for any other benefits are made. For more information, see <a href="garnishment-tax-levy-set-up-tasks.md">Garnishment and tax levy setup tasks</a>. By default, the value in this field is entered on the <strong>Maintain benefits</strong> page when a worker is enrolled in a benefit. You can change the value for a worker at the time of enrollment or at any other time. If you change the default value, existing benefit assignments don't change. You must change those values individually.</td>
 </tr>
 <tr class="even">
 <td>Default deduction limits Default contribution limits</td>
@@ -446,16 +448,16 @@ Worker's compensation plans are handled like other employee benefits. To set up 
 On the **Worker's compensation** FastTab, specify the state that each benefit applies to.
 
 ## Next step
-The next step is to set up payroll information for positions and workers. For more information, see [Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks).
+The next step is to set up payroll information for positions and workers. For more information, see [Worker and position payroll tasks](worker-position-payroll-tasks.md).
 
-## [ ](https://docs.microsoft.com/enus/dynamics365/operations/financials/localizations/northamerica/garnishmentandtaxlevysetuptasks)
+## [ ](garnishmenttaxlevysetuptasks.md)
 
 See also
 --------
 
-[Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks)
+[Worker and position payroll tasks](worker-position-payroll-tasks.md)
 
-[Payroll calculation frequency tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/payroll-calculation-frequencies-tasks)
+[Payroll calculation frequency tasks](payroll-calculation-frequencies-tasks.md)
 
-[Garnishment and tax levy setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-setup-tasks)
+[Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md)
 

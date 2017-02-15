@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Align workforce skills with business needs | Microsoft Docs
+title: Align workforce skills with business needs
 description: You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-09-10 20:48:50
+ms.date: 2015-09-10 20 - 48 - 50
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType
+ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3361
-ms.assetid: 5f2de6a0-8f96-49c6-9771-58b608ace0e1
-ms.region: Global
-# ms.industry: 
+ms.assetid: 908ce30f-5915-4299-bf48-41483685c2a5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kherr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

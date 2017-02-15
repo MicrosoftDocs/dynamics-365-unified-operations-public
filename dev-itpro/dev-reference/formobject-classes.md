@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: F Classes - FormObject to FormRealControl | Microsoft Docs
+title: F Classes -  FormObject to FormRealControl
 description: API reference for classes from FormObject to FormRealControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 23:03:53
+ms.date: 2016-03-08 23 - 03 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63603
-ms.assetid: 60e2111b-d7bf-4c25-a7ee-7ba25c04f383
-ms.region: Global
-# ms.industry: 
+ms.assetid: 958d61d9-6ea4-4e6c-8150-3be9cf7c107e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# F Classes - FormObject to FormRealControl
+# F Classes -  FormObject to FormRealControl
 
 API reference for classes from FormObject to FormRealControl.
 

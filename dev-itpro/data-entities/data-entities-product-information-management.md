@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Product information management | Microsoft Docs
+title: Data entities -  Product information management
 description: This article provides a list of the data entities that are available for the Product information management functionality in Microsoft Dynamics AX.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:19:37
+ms.date: 2016-06-29 14 - 19 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95953
-ms.assetid: e3aeca72-4eea-4fe9-a270-e51db75dfd13
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 8bfbf0b3-5e07-4aff-8213-a954fc220f2f
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Product information management
+# Data entities -  Product information management
 
 This article provides a list of the data entities that are available for the Product information management functionality in Microsoft Dynamics AX.
 
@@ -416,7 +418,7 @@ Product category attributes
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

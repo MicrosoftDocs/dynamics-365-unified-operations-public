@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Project resource scheduling data model | Microsoft Docs
+title: Project resource scheduling data model
 description: This topic provides information about the Project resource scheduling data model.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-10-07 18:13:21
+ms.date: 2016-10-07 18 - 13 - 21
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 202281
-ms.assetid: 7a75d319-ba7c-40ae-a98d-4a94ffd737a0
-ms.region: Global
-# ms.industry: 
+ms.assetid: e9e7c114-6c1b-45fc-a448-121c16deabe0
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: vstehman
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 

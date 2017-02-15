@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sign up for a subscription | Microsoft Docs
+title: Sign up for a subscription
 description: In this tutorial, you will learn how to subscribe to the preview/partner offer and deploy an environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-02 01:03:11
+ms.date: 2015-12-02 01 - 03 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13211
-ms.assetid: 8c8804c9-f74f-41ec-a18e-dd58183edbcf
-ms.region: Global
-# ms.industry: 
+ms.assetid: 96e019e1-1809-496c-88c0-8846f2513ff4
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

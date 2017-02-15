@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up taxes, tax regions, tax codes, and tax groups | Microsoft Docs
+title: Set up taxes, tax regions, tax codes, and tax groups
 description: This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 19:10:05
+ms.date: 2016-10-31 19 - 10 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PayrollTaxCode, PayrollTaxGroup, PayrollWorkerTaxCode, PayrollWorkerTaxRegion
+ms.search.form: PayrollTaxCode, PayrollTaxGroup, PayrollWorkerTaxCode, PayrollWorkerTaxRegion
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222684
-ms.assetid: 86721744-0c70-4dc5-b1b7-16c5466bcd74
-ms.region: USA
-# ms.industry: 
+ms.assetid: cde0d7a7-bb7b-4fde-9ed2-ad7928e6a80c
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 
-Payroll taxes are set up in two parts. The first part, which is described in this topic, covers the settings that are used throughout the organization, such as the states where you have a nexus or the rates for unemployment taxes. The second part, which is described in [Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks), covers the additional tax information that must be provided for each worker. The following illustration shows the basics steps for setting up payroll taxes. The numbered steps in the illustration correspond to sections of this topic. [![Steps for setting up payroll taxes](./media/tax.gif)](./media/tax.gif) For more information about payroll taxes, see [Tax codes, tax groups, and posting definitions FAQ](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/tax-codes-tax-groups-and-posting-definitions) and [Payroll data updates FAQ](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/payroll-data-updates).
+Payroll taxes are set up in two parts. The first part, which is described in this topic, covers the settings that are used throughout the organization, such as the states where you have a nexus or the rates for unemployment taxes. The second part, which is described in [Worker and position payroll tasks](worker-position-payroll-tasks.md), covers the additional tax information that must be provided for each worker. The following illustration shows the basics steps for setting up payroll taxes. The numbered steps in the illustration correspond to sections of this topic. [![Steps for setting up payroll taxes](./media/tax.gif)](./media/tax.gif) For more information about payroll taxes, see [Tax codes, tax groups, and posting definitions FAQ](tax-codes-tax-groups-posting-definitions.md) and [Payroll data updates FAQ](payroll-data-updates.md).
 
 ## Prerequisites
 The primary address for the legal entity must be in the United States.
@@ -44,10 +46,10 @@ To set up tax data, you must update the tax data to make tax codes and system-de
 Multiple factors determines whether a legal entity must pay and withhold taxes in a state. One of the most important factors is whether the legal entity has a *nexus*, or a significant business presence, in that state. In Microsoft Dynamics AX, every state or territory where a legal entity has a nexus is defined as an employer tax region. Every legal entity must have at least one employer tax region. Legal entities that have a nexus in more than one state have multiple employer tax regions. These employer tax regions are used together with multiple-state taxation and reciprocity rules to determine when and where taxes are withheld and paid. **Important:** The question of whether a legal entity has a nexus in a particular state can be complex and difficult to answer. Typically, your legal advisors will make the determination.
 
 ## Create tax regions
-*Tax regions* are geographic areas where a specific set of payroll taxes applies. Generally, tax regions correspond to the cities or towns where your workers reside or work. A *worker tax region* is a tax region that has been assigned to a specific worker. A *default tax region* is a worker tax region that is used to generate earnings for a specific position that the worker holds. Before you begin, it's helpful if you determine the county, state, and ZIP/postal code for each city that you identify as a tax region. To save time when you create tax regions, you can enter any part of the location information. For example, you can enter only the state or only the ZIP/postal code. If more than one tax region matches the location information that you entered, the **Multiple tax regions** page opens. You can then select the correct region in the list of cities that appears on that page. **Tip:** In the **Name or description** field, include the name of the state as the first part of the tax region name. Tax regions in the same state will then be sorted together. For information about how to assign tax regions to workers, see [Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks).
+*Tax regions* are geographic areas where a specific set of payroll taxes applies. Generally, tax regions correspond to the cities or towns where your workers reside or work. A *worker tax region* is a tax region that has been assigned to a specific worker. A *default tax region* is a worker tax region that is used to generate earnings for a specific position that the worker holds. Before you begin, it's helpful if you determine the county, state, and ZIP/postal code for each city that you identify as a tax region. To save time when you create tax regions, you can enter any part of the location information. For example, you can enter only the state or only the ZIP/postal code. If more than one tax region matches the location information that you entered, the **Multiple tax regions** page opens. You can then select the correct region in the list of cities that appears on that page. **Tip:** In the **Name or description** field, include the name of the state as the first part of the tax region name. Tax regions in the same state will then be sorted together. For information about how to assign tax regions to workers, see [Worker and position payroll tasks](worker-position-payroll-tasks.md).
 
 ## Set up tax codes
-You don't have to create tax codes. The codes for all payroll taxes that Dynamics AX supports are provided for you. However, you must provide information about how your organization uses each tax code. You can create as many versions of the data for each tax code as you require. However, only one version can be active for a legal entity at any time. The **Tax codes** page always shows the version that is currently active for the selected legal entity. Tax codes are automatically assigned to workers, based on their worker tax regions, position, and legal entity. You can then set up the worker tax code for each worker’s individual tax situation. For information about how to set up worker tax codes, see [Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks). **Important:** Dynamics AX doesn't support the following taxes:
+You don't have to create tax codes. The codes for all payroll taxes that Dynamics AX supports are provided for you. However, you must provide information about how your organization uses each tax code. You can create as many versions of the data for each tax code as you require. However, only one version can be active for a legal entity at any time. The **Tax codes** page always shows the version that is currently active for the selected legal entity. Tax codes are automatically assigned to workers, based on their worker tax regions, position, and legal entity. You can then set up the worker tax code for each worker’s individual tax situation. For information about how to set up worker tax codes, see [Worker and position payroll tasks](worker-position-payroll-tasks.md). **Important:** Dynamics AX doesn't support the following taxes:
 
 -   **Employer head taxes** – Taxes that aren't based on a payment, but that are calculated based on the number of employees who are paid over a specific period.
 -   **Employer percentage of payroll taxes** – Taxes that aren't based on a payment, but that are calculated based on the amount that is paid to employees over a specific period.
@@ -84,15 +86,15 @@ On the **Accounting** tab, specify the following information.
 | Main account                 | Enter the main account that this tax will be posted to. For employer taxes, employer tax transaction costs are posted to the main account. For employee taxes, the withholding liability is posted to the main account. This account is used for all transactions that are related to this tax code and legal entity.                                               |
 
 ## Optional: Set up tax groups
-You can use tax groups to help sort and select payroll taxes. You can also use them to update the accounting data for all the tax codes in a tax group at the same time. When you set up Payroll, a set of system-defined tax groups is automatically created the first time that you run the **Update tax data** process. System-defined tax groups are then updated every time that you run that process. Each system-defined tax group contains tax codes of a particular type. For example, all tax codes for school districts are included in the SCHL tax group, and all tax codes for state income tax are included in the SIT tax group. If these system-defined tax groups meet your organization’s requirements, you don’t have to create additional tax groups. However, if several tax codes share the same accounting data, you might want to put these tax codes in a single tax group. Then, if the vendor changes, you can use the tax group to change the vendor for all the tax codes in the group at the same time. This approach can save time and reduce the risk of errors. In most cases, when you create a list of tax codes to include in each tax group, you will include all the tax codes that share the same accounting information in a single tax group. Additionally, if a set of tax codes shares the same posting requirements, you can include them in a single tax group that you enable for posting definitions. A tax code can be included in multiple tax groups, provided that only one of the tax groups is enabled for posting definitions. For more information, see [Tax codes, tax groups, and posting definitions FAQ](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/tax-codes-tax-groups-and-posting-definitions). **Tip:** You can set up the transaction posting definitions so that some tax codes in the group use a different posting definition than the rest of the tax codes in the group. For more information, see [Tax codes, tax groups, and posting definitions FAQ.](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/tax-codes-tax-groups-and-posting-definitions). After you create tax groups that are enabled for posting definitions, you can assign those tax groups to transaction posting definitions. For more information, see [Posting definitions in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/posting-definitions-in-the-public-sector).
+You can use tax groups to help sort and select payroll taxes. You can also use them to update the accounting data for all the tax codes in a tax group at the same time. When you set up Payroll, a set of system-defined tax groups is automatically created the first time that you run the **Update tax data** process. System-defined tax groups are then updated every time that you run that process. Each system-defined tax group contains tax codes of a particular type. For example, all tax codes for school districts are included in the SCHL tax group, and all tax codes for state income tax are included in the SIT tax group. If these system-defined tax groups meet your organization’s requirements, you don’t have to create additional tax groups. However, if several tax codes share the same accounting data, you might want to put these tax codes in a single tax group. Then, if the vendor changes, you can use the tax group to change the vendor for all the tax codes in the group at the same time. This approach can save time and reduce the risk of errors. In most cases, when you create a list of tax codes to include in each tax group, you will include all the tax codes that share the same accounting information in a single tax group. Additionally, if a set of tax codes shares the same posting requirements, you can include them in a single tax group that you enable for posting definitions. A tax code can be included in multiple tax groups, provided that only one of the tax groups is enabled for posting definitions. For more information, see [Tax codes, tax groups, and posting definitions FAQ](tax-codes-tax-groups-posting-definitions.md). **Tip:** You can set up the transaction posting definitions so that some tax codes in the group use a different posting definition than the rest of the tax codes in the group. For more information, see [Tax codes, tax groups, and posting definitions FAQ.](tax-codes-tax-groups-posting-definitions.md). After you create tax groups that are enabled for posting definitions, you can assign those tax groups to transaction posting definitions. For more information, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
 ## Next step
-The next step is to set up benefits and mandatory deductions. For more information, see [Benefit setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-setup-tasks).  
+The next step is to set up benefits and mandatory deductions. For more information, see [Benefit setup tasks](benefit-set-up-tasks.md).  
 
 See also
 --------
 
-[Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks)
+[Worker and position payroll tasks](worker-position-payroll-tasks.md)
 
-[Posting definitions in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/posting-definitions-in-the-public-sector)
+[Posting definitions in the public sector](posting-definitions-public-sector.md)
 

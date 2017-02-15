@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: PerfSDK and multiuser testing with Visual Studio Online | Microsoft Docs
+title: PerfSDK and multiuser testing with Visual Studio Online
 description: Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-10-16 20:27:26
+ms.date: 2015-10-16 20 - 27 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9954
-ms.assetid: 8ca09667-841e-4672-a893-37c073f47e9f
-ms.region: Global
-# ms.industry: 
+ms.assetid: 07d72868-b449-491a-958a-47c174dc9d49
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: chwolf
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: chwolf
 
 Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
 
-*Time:* 30 minutes In this lab, you will take a tour of Performance SDK and multi user testing with Visual Studio Online. You will see how to convert a scenario recorded with Task Recorder and convert it to a single user test and then a multi user test. **Note:** This lab requires that you access the environment as an administrator. For more information, refer to the document named [Access Microsoft Dynamics 365 for Operations Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2). **Prerequisites**
+*Time:* 30 minutes In this lab, you will take a tour of Performance SDK and multi user testing with Visual Studio Online. You will see how to convert a scenario recorded with Task Recorder and convert it to a single user test and then a multi user test. **Note:** This lab requires that you access the environment as an administrator. For more information, refer to the document named [Access Microsoft Dynamics 365 for Operations Instances](access-instances.md). **Prerequisites**
 
 -   Visual Studio 2015 Enterprise
 -   Deployment with Volume Data
@@ -54,6 +56,7 @@ A video about how to create a single user test can be found here: [https://mix.o
 <!-- -->
 
 -   Make sure to copy download dll's to the following folder and add a reference to WebDriver.dll to your project[![perf103d](./media/perf103d.png)](./media/perf103d.png)
+-   Ensure LocalhostSSL.pfx is located in the following folder: [![localhostssl](./media/localhostssl.jpg)](./media/localhostssl.jpg)
 -   Generate certificate and install it. To generate a certificate file, run the following commands: [![generatecert](./media/generatecert.jpg)](./media/generatecert.jpg)When prompted for private key password, select **None.** You should see the following files: [![tempcert](./media/tempcert.jpg)](./media/tempcert.jpg)**Notable pieces:**
 -   -n “CN=TestAuthCert” is giving a human-readable name to the cert, feel free to tweak for your scenario.
 -   -eku 1.3.6.1.5.5.7.3.2 is certificate purpose. This is a client authentication cert, as opposed to code signing, encryption or something else. Next, install \*.pfx file (make sure to select Local Machine when you install it)  and copy this certificate file to PerfSDK folder.
@@ -103,9 +106,9 @@ In **Additional Settings** select **Run tests in 64 bit process on 64 bit machin
 ## Troubleshooting
 If you see an error message like this: *System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---&gt; System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to https://sandbox.ax.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp. **This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server.** ---&gt; System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---&gt; System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---&gt; System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host.* you would need to run the following powershell script on your **development machine**:
 
-|                                                                                                                                                                                                                                                                                                                                                                  |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Set-ItemProperty HKLM:SOFTWAREMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false if ((Test-Path HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319)) { Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false } |
+|                                                                                                                                                                                                                                                                                                                                                                                        |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Set-ItemProperty HKLM:SOFTWARE\\Microsoft.NET\\Framework\\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false if ((Test-Path HKLM:SOFTWARE\\Wow6432Node\\Microsoft.NET\\Framework\\v4.0.30319)) { Set-ItemProperty HKLM:SOFTWARE\\Wow6432Node\\Microsoft.NET\\Framework\\v4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false } |
 
 
 

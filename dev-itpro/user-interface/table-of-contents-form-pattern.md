@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Table of Contents form pattern | Microsoft Docs
+title: Table of Contents form pattern
 description: This article provides information about the Table of Contents form pattern. This pattern should be used when two or more logically related forms are required for setup configuration. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-02 23:36:47
+ms.date: 2015-12-02 23 - 36 - 47
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14621
-ms.assetid: e36f9ab7-f97d-474b-94c6-81e7cc0151c0
-ms.region: Global
-# ms.industry: 
+ms.assetid: 15508a85-0765-4df4-9d08-a933116ec6f2
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -77,17 +79,17 @@ Body (Group) | FastTabContent (Tab)
 
 Each BodyGroup will use one of the following container patterns for the content in the Table of Contents section:
 
--   [Fields and Field Groups](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fields-and-field-groups-subpattern)
--   [Toolbar and List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern)
--   [Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-fields-subpattern)
--   [Nested Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/nested-simple-list-and-details-subpattern)
--   [Tabular Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/tabular-fields-subpattern)
--   [List Panel](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/list-panel-subpattern)
+-   [Fields and Field Groups](fields-field-groups-subpattern.md)
+-   [Toolbar and List](toolbar-list-subpattern.md)
+-   [Toolbar and Fields](toolbar-fields-subpattern.md)
+-   [Nested Simple List and Details](nested-simple-list-details-subpattern.md)
+-   [Tabular Fields](tabular-fields-subpattern.md)
+-   [List Panel](list-panel-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 **Table of contents guidelines:**
 
@@ -96,9 +98,9 @@ The verification checklist shows the steps for manually verifying that the form 
 -   The first tab in the list should be highlighted when the form is opened, unless the form is opened in the context of a specific task from another form.
 -   The **content area** for the TOC content should primarily be one of three patterns: Simple List, Simple List and Details, or Simple Details.
     -   Simple List content should follow the subpattern guidelines.
-    -   Simple List and Details content should follow the [Nested Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/nested-simple-list-and-details-subpattern) subpattern guidelines.
-    -   Simple Details content should follow the [Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-fields-subpattern) subpattern guidelines.
-    -   FastTabs should follow the FastTab guidelines in the Dynamics AX [General Form Guidelines ](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+    -   Simple List and Details content should follow the [Nested Simple List and Details](nested-simple-list-details-subpattern.md) subpattern guidelines.
+    -   Simple Details content should follow the [Toolbar and Fields](toolbar-fields-subpattern.md) subpattern guidelines.
+    -   FastTabs should follow the FastTab guidelines in the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document.
     -   Actions appearing on a Toolbar on a tab page.
 -   A TOC form should **not** have the following:
     -   Application actions on a standard ActionPane. (It should have only framework actions.)

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Financial report components | Microsoft Docs
+title: Financial report components
 description: This article describes how the components, or building blocks, of report definitions are used in financial reporting. These building blocks include row definitions, column definitions, and reporting tree definitions. The article explains how to organize and lock building blocks, and how to work with building block groups. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-07 18:54:02
+ms.date: 2016-03-07 18 - 54 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FinancialReports
+ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX application 7.0.1
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 59071
-ms.assetid: 7112a149-c030-4acb-9208-a1c0e05d18b8
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8309b37d-9572-4075-a819-756bce7d1d59
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 
@@ -140,5 +142,5 @@ When you open a building block, other users have read-only access that building 
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics ERP](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/management-reporter-for-microsoft-dynamics-erp)
+[Financial reporting for Microsoft Dynamics ERP](financial-reporting-intro.md)
 

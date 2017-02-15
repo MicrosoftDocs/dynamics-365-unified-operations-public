@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Compute columns and virtual fields in a data entity | Microsoft Docs
+title: Compute columns and virtual fields in a data entity
 description: This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have. The article includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 21:37:15
+ms.date: 2015-12-04 21 - 37 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17891
-ms.assetid: a178cd09-fd2b-4f43-abeb-faaaf6accbf1
-ms.region: Global
-# ms.industry: 
+ms.assetid: c33b11fe-882d-4f5a-9b7d-11b76d207588
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

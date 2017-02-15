@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: V Classes | Microsoft Docs
+title: V Classes
 description: System API classes that start with the letter V.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-26 02:11:31
+ms.date: 2016-02-26 02 - 11 - 31
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55841
-ms.assetid: fcf95bc3-6eb0-486a-b6bc-22b750952d22
-ms.region: Global
-# ms.industry: 
+ms.assetid: eccf1e04-d647-4c69-8338-001ce7103afb
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

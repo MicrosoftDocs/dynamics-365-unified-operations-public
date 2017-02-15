@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Product-related translations FAQ | Microsoft Docs
-description: This topic describes how to manage translations for products, product dimension values, and product attributes.
-
+title: Product-related translations FAQ
+description: This topic describes how to manage translations for products, product dimension values, and product attributes. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-07 08:37:18
+ms.date: 2016-10-07 08 - 37 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,25 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
+ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 201853
-ms.assetid: 111f2f46-8fc6-4a86-91c2-b5156837dced
-ms.region: global
-ms.industry: Product information
+ms.assetid: 1ebad85d-2ca9-4aa7-a8ee-b382aba9a193
+ms.search.region: global
+ms.search.industry: Product information
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Product-related translations FAQ
 
-This topic describes how to manage translations for products, product dimension values, and product attributes.
-
+This topic describes how to manage translations for products, product dimension values, and product attributes. 
 
 What product-related data can be translated?
 --------------------------------------------

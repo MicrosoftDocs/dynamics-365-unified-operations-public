@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Define or edit entry point permissions (AX 2012) | Microsoft Docs
+title: Define or edit entry point permissions (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 23:21:12
+ms.date: 2015-12-04 23 - 21 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18211
-ms.assetid: e345730a-f28d-45cd-95cb-0ae54c15e37a
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: ec297d69-5f4b-4d0a-a68a-cbbbc4f63be9
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

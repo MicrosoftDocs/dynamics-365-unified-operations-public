@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Procurement and sourcing | Microsoft Docs
+title: Data entities -  Procurement and sourcing
 description: This article provides a list of the data entities that are available for the Procurement and sourcing functionality in Microsoft Dynamics AX.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:19:42
+ms.date: 2016-06-29 14 - 19 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95983
-ms.assetid: 8e866f01-b02e-4554-94a4-96918e5c0a0f
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 2f8a1c91-88cd-4a15-a3ce-ba26979f0b0c
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Procurement and sourcing
+# Data entities -  Procurement and sourcing
 
 This article provides a list of the data entities that are available for the Procurement and sourcing functionality in Microsoft Dynamics AX.
 
@@ -516,7 +518,7 @@ Purchase orders, Approved vendor list by products
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

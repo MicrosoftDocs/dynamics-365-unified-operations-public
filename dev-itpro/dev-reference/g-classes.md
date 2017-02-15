@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: G Classes | Microsoft Docs
+title: G Classes
 description: System API classes that start with the letter G.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 14:31:40
+ms.date: 2016-02-24 14 - 31 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52381
-ms.assetid: 8cb9bd5d-433e-432d-8c1a-9aebcdb4ba07
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9f263c89-9af9-48ae-a084-eb8331ef04ba
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

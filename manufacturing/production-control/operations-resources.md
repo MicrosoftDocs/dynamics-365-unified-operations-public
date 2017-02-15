@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Operations resources | Microsoft Docs
-description: Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities.
-
+title: Operations resources
+description: Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-08 14:57:46
+ms.date: 2016-03-08 14 - 57 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,25 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: WrkCtrCapability
+ms.search.form: WrkCtrCapability
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 61943
-ms.assetid: ba62b8dd-2c05-41e5-9683-34dbeb12eec1
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 043b7c71-e7ed-4c99-b16f-ede2498be841
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: sorenand
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Operations resources
 
-Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities.
-
+Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities. 
 
 Operations resources
 --------------------
@@ -50,7 +50,7 @@ Operations resources are the machines, tools, workers, facilities, physical area
 A calendar can be assigned to an operations resource and describes the capacity (in hours) of that resource. The working times of the operations resource are determined by the calendar that is assigned to the resource group that the operations resource is part of. You can set an effective date and an expiration date for the assigned calendar. You can then assign more than one calendar to an operations resource. However, the dates of the assigned calendars can't overlap, and the operations resource can be assigned only one calendar at a time. **Note:** If there are no effective working calendars for a resource group (for example, if the last assigned calendar or the only assigned calendar has expired), you can no longer access the operations resources that are assigned to the resource group for production planning and operations scheduling. You can also assign a calendar to a resource group to specify the working times for both the resource group and all the operations resources that are assigned to the resource group. The capacity of the resource group is calculated as the sum of the capacities of each operations resource that is assigned to that resource group. The calendar that is assigned to a resource group can change over time.
 
 ## Resource capabilities
-A capability is the ability of an operations resource to perform a particular activity. You can assign one or more capabilities to an operations resource. The scheduling engine will then allocate resources by matching the resource requirements of each activity to the capabilities of the available operations resources. Capabilities can be assigned to all types of operations resources (**Tool**, **Vendor**, **Machine**, **Human resources**, **Location**, or **Facility**). To assign capabilities to operations resources for a limited time, define a start date and an expiration date on the capability assignment. For more information, see [Resource capabilities](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/production-control/resource-capabilities).
+A capability is the ability of an operations resource to perform a particular activity. You can assign one or more capabilities to an operations resource. The scheduling engine will then allocate resources by matching the resource requirements of each activity to the capabilities of the available operations resources. Capabilities can be assigned to all types of operations resources (**Tool**, **Vendor**, **Machine**, **Human resources**, **Location**, or **Facility**). To assign capabilities to operations resources for a limited time, define a start date and an expiration date on the capability assignment. For more information, see [Resource capabilities](resource-capabilities.md).
 
 ## Resource groups
 A resource group is a set of operations resources that represents the granularity at which you want to schedule resources when you use the operations scheduling method. Therefore, resource groups typically correspond to the physical organization of work cells that is demarcated by yellow lines on the production shop floor. The resource group defines the site, production unit, and warehouse context for operations resources that are assigned to the group. When you assign an operations resource to a resource group, the resource can be scheduled at the site where the resource group is located. You don't have to assign the operations resources that you create to a resource group. However, an operations resource must be assigned to a resource group before it can be scheduled to perform work. An operations resource can be assigned to a resource group for a limited time. You can also assign an operations resource to multiple resource groups, so that you can then share the resource across sites. However, the effective dates and expiration dates can't overlap. In other words, you can't assign an operations resource to two resource groups at the same time. Changes in resource group assignments are effective only for new resource allocations. Capacity reservations for jobs, operations, and project hour forecasts that are already scheduled won't be affected. **Note:** When you assign operations resources of the **Vendor** type to a resource group, all operations resources that are assigned to that resource group must be of the **Vendor** type and must be linked to the same vendor account.

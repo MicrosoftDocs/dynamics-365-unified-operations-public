@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Public sector | Microsoft Docs
+title: Data entities -  Public sector
 description: This article provides a list of the data entities that are available for the Public sector functionality in Microsoft Dynamics 365 for Operations.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:26:10
+ms.date: 2016-06-29 14 - 26 - 10
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96313
-ms.assetid: 79d4b12c-4ec3-41e6-8dda-98f796d5c9a4
-ms.region: Global
-ms.industry: Public sector
-ms.author: kfend
+ms.assetid: d3727089-5120-400d-aa71-511bbd0fb311
+ms.search.region: Global
+ms.search.industry: Public sector
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Public sector
+# Data entities -  Public sector
 
 This article provides a list of the data entities that are available for the Public sector functionality in Microsoft Dynamics 365 for Operations.
 
@@ -49,7 +51,7 @@ Dependency
 
 Comments
 
-**[System administration](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-system-administration) and [Global address book](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-global-address-book)**
+**[System administration](data-entities-system-administration.md) and [Global address book](data-entities-global-address-book.md)**
 
 1
 
@@ -111,13 +113,13 @@ Comments
 
 02.1.002 GAB - Post address setup
 
-**[Workflow](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-workflow)**
+**[Workflow](data-entities-workflow.md)**
 
 16
 
 02.1.003 WF - Workflow
 
-**[General ledger](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-general-ledger) and [Bank](https://docs.microsoft.com/en-us/dynamics365/operations/financials/cash-bank-management/data-entities-bank)**
+**[General ledger](data-entities-general-ledger.md) and [Bank](data-entities-bank.md)**
 
 06.1.001 PubSect - Funds
 
@@ -289,7 +291,7 @@ General ledger setup, Posting definitions
 
 The general ledger entry that is source document–enabled and uses posting definitions
 
-**[Human resources](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-human-resources)**
+**[Human resources](data-entities-human-resources.md)**
 
 37
 
@@ -329,7 +331,7 @@ The general ledger entry that is source document–enabled and uses posting defi
 
 46
 
-05.1.009 HR - Compensation Note the comment for this package in the [Data entities: Human resources](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-human-resources) article.
+05.1.009 HR - Compensation Note the comment for this package in the [Data entities: Human resources](data-entities-human-resources.md) article.
 
 47
 
@@ -349,7 +351,7 @@ The general ledger entry that is source document–enabled and uses posting defi
 
 51
 
-05.1.015 HR - Employee related associations **Note:** See the comment for the Employee fixed compensation data entity in the [Data entities: Human resources](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-human-resources) article. If you’re using demo data, the Injury and illness incidents data entity will fail. The package on LCS has been modified.
+05.1.015 HR - Employee related associations **Note:** See the comment for the Employee fixed compensation data entity in the [Data entities: Human resources](data-entities-human-resources.md) article. If you’re using demo data, the Injury and illness incidents data entity will fail. The package on LCS has been modified.
 
 52
 
@@ -359,7 +361,7 @@ The general ledger entry that is source document–enabled and uses posting defi
 
 05.1.017 HR - Shared human resources parameters **Note:** If you’re using demo data, the Shared human resources parameters data entity will fail. The package on LCS has been modified.
 
-**[Accounts payable and taxes](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/data-entities-accounts-payable-and-taxes)**
+**[Accounts payable and taxes](data-entities-accounts-payable-taxes.md)**
 
 54
 
@@ -427,9 +429,9 @@ Re-import 05.1.013 HR - Courses
 
 10.1.008 Tax - Sales tax parameters
 
-**[Accounts receivable](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-receivable/data-entities-accounts-receivable)**
+**[Accounts receivable](data-entities-accounts-receivable.md)**
 
-If you’re implementing Accounts receivable but aren't using Accounts payable, you should use the 10.1.001 AP and AR shared setup package. For details about that package, see [Data entities: Accounts payable and taxes](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/data-entities-accounts-payable-and-taxes).
+If you’re implementing Accounts receivable but aren't using Accounts payable, you should use the 10.1.001 AP and AR shared setup package. For details about that package, see [Data entities: Accounts payable and taxes](data-entities-accounts-payable-taxes.md).
 
 67
 
@@ -525,9 +527,9 @@ Setup
 
 Billing code
 
-**[Budgeting](https://docs.microsoft.com/en-us/dynamics365/operations/financials/budgeting/data-entities-budgeting)**
+**[Budgeting](data-entities-budgeting.md)**
 
-All General ledger data entities and the setup are a prerequisite for importing Budgeting data entities. For more information about General ledger data entities, and to confirm that the setup is completed, see [Data entities: General ledger](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-general-ledger).
+All General ledger data entities and the setup are a prerequisite for importing Budgeting data entities. For more information about General ledger data entities, and to confirm that the setup is completed, see [Data entities: General ledger](data-entities-general-ledger.md).
 
 79
 
@@ -541,7 +543,7 @@ All General ledger data entities and the setup are a prerequisite for importing 
 
 12.8.001 BUD - Budget account entries
 
-**[Budget planning](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-budget-planning)**
+**[Budget planning](data-entities-budget-plan.md)**
 
 82
 
@@ -551,13 +553,13 @@ All General ledger data entities and the setup are a prerequisite for importing 
 
 12.01.004 BUD - Forecast position
 
-**[Costing](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/cost-management/data-entities-costing)**
+**[Costing](data-entities-costing.md)**
 
 84
 
 15.1.001 COS - Costing setup
 
-**[Inventory management](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-inventory-management)**
+**[Inventory management](data-entities-inventory-management.md)**
 
 85
 
@@ -595,7 +597,7 @@ All General ledger data entities and the setup are a prerequisite for importing 
 
 19.4.001 INV - Charge groups
 
-**[Fixed assets](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-fixed-assets)**
+**[Fixed assets](data-entities-fixed-assets.md)**
 
 94
 
@@ -609,7 +611,7 @@ All General ledger data entities and the setup are a prerequisite for importing 
 
 16.01.003 FA - Fixed assets **Note:** If you’re using demo data, records in the Fixed asset value model data entity will fail because of missing depreciation profiles. The package on LCS has been modified for import.
 
-**[Product information management](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-product-information-management)**
+**[Product information management](data-entities-product-information-management.md)**
 
 97
 
@@ -679,7 +681,7 @@ All General ledger data entities and the setup are a prerequisite for importing 
 
 24.4.009 PIM - Attribute values
 
-**[Procurement and sourcing](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-procurement-and-sourcing)**
+**[Procurement and sourcing](data-entities-procurement-sourcing.md)**
 
 114
 
@@ -777,7 +779,7 @@ None
 
 23.8.002 PRO - Purchase order lines **Note:** If you’re using demo data, records will fail due to Project and Fixed assets dependencies. Re-import this package after you import Project master and all Fixed asset packages.
 
-**[Project accounting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-project-accounting)**
+**[Project accounting](data-entities-project-accounting.md)**
 
 134
 
@@ -797,7 +799,7 @@ None
 
 138
 
-26.1.005 PA - Resourcing setup **Note:** Review the warnings in the “Resourcing setup” section in the [Data entities: Project accounting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-project-accounting) article.
+26.1.005 PA - Resourcing setup **Note:** Review the warnings in the “Resourcing setup” section in the [Data entities: Project accounting](data-entities-project-accounting.md) article.
 
 139
 
@@ -831,7 +833,7 @@ None
 
 146
 
-26.1.013 PA - Projects master Review the warnings in the section for the Project master data entity in the [Data entities: Project accounting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-project-accounting) article.
+26.1.013 PA - Projects master Review the warnings in the section for the Project master data entity in the [Data entities: Project accounting](data-entities-project-accounting.md) article.
 
 147
 
@@ -839,7 +841,7 @@ Re-import 26.1.007 PA - Categories, posting, and line property
 
 148
 
-26.1.014 PA - Validation setup Review the warnings in the section for the Validation setup data entity in the [Data entities: Project accounting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-project-accounting) article.
+26.1.014 PA - Validation setup Review the warnings in the section for the Validation setup data entity in the [Data entities: Project accounting](data-entities-project-accounting.md) article.
 
 149
 
@@ -851,11 +853,11 @@ Re-import 26.1.007 PA - Categories, posting, and line property
 
 151
 
-26.8.001 - Project beginning balance Review the warnings in the section for the Project beginning balance data entity in the [Data entities: Project accounting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-project-accounting) article.
+26.8.001 - Project beginning balance Review the warnings in the section for the Project beginning balance data entity in the [Data entities: Project accounting](data-entities-project-accounting.md) article.
 
 152
 
-26.8.002 - Project hour and fee journal transactions Review the warnings in the section for the Project hour and fee journal transactions data entity in the [Data entities: Project accounting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-project-accounting) article.
+26.8.002 - Project hour and fee journal transactions Review the warnings in the section for the Project hour and fee journal transactions data entity in the [Data entities: Project accounting](data-entities-project-accounting.md) article.
 
 153
 
@@ -872,7 +874,7 @@ Re-import 23.8.002 PRO - Purchase order lines
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

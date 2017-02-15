@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics AX 7.0 (February 2016) | Microsoft Docs
+title: What's new or changed in Dynamics AX 7.0 (February 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX 7.0. This version contains both platform and application features and was released in February 2016.
-author: sericks007
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-10 19:54:48
+ms.date: 2016-06-10 19 - 54 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks007
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 91243
-ms.assetid: e805e866-8e29-45fb-a3bb-942f037fa5c3
-ms.region: Global
-# ms.industry: 
-ms.author: sericks
+ms.assetid: f6aae6be-38a1-4596-9c4b-9eb95d7117e9
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -365,7 +367,7 @@ Access guided procedural Help (task guides) and conceptual topics by clicking *
 
 The AX 2012 Help system points to HTML topics that are stored on a local web server. Customers and partners can create their own Help.
 
-The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from the Microsoft wiki. For more information, see [Dynamics AX Help - Getting Started](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/system-administration/help-get-started) and [New task guides available (February 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/new-task-guides-available-on-february-2016).
+The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from the Microsoft wiki. For more information, see [Dynamics AX Help - Getting Started](help-get-started.md) and [New task guides available (February 2016)](new-task-guides-available-february-2016.md).
 
 Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. The wiki provides a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.
 
@@ -562,7 +564,7 @@ This change unifies the configuration of the reverse charge applicability rules 
 
 Users can set up definition of tables containing financial data to be exported in a format accepted by German auditors and authorities.
 
-The feature has been implemented as an electronic reporting configuration. [A separate article](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/gdpdu-audit-data-export) describes it in more detail. The functionality is available to Germany and Austria.
+The feature has been implemented as an electronic reporting configuration. [A separate article](gdpdu-audit-data-export.md) describes it in more detail. The functionality is available to Germany and Austria.
 
 This change gives user much more possibilities in data formatting, transformations, and also provides all the benefits coming from electronic reporting configuration lifecycle management, like easy configuration exchange, versioning, etc.
 
@@ -1145,7 +1147,7 @@ No new features have been added.
 See also
 --------
 
-[What’s new or changed](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7)
+[What’s new or changed](whats-new-changed.md)
 
-[New task guides available (February 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/new-task-guides-available-on-february-2016)
+[New task guides available (February 2016)](new-task-guides-available-february-2016.md)
 

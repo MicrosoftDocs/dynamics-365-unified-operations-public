@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure and filter workspaces | Microsoft Docs
+title: Configure and filter workspaces
 description: This article provides an overview about how to configure and filter workspaces.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-04 19:04:02
+ms.date: 2015-12-04 19 - 04 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17491
-ms.assetid: fd7bf531-0d87-46f0-8495-253589bbbffc
-ms.region: Global
-# ms.industry: 
+ms.assetid: 60a18c2d-e777-4470-8a85-f0d781466332
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Price simulation | Microsoft Docs
+title: Price simulation
 description: This article provides information about price simulation for quotations. Price simulation helps you to evaluate the effect of deductions on the future sales price during the quotation process, before you commit to a specific price.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-11-04 19:10:14
+ms.date: 2015-11-04 19 - 10 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SalesQuotationPriceSimulation
+ms.search.form: SalesQuotationPriceSimulation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12254
-ms.assetid: e4792d61-e225-4966-aad3-badfa31958f9
-ms.region: Global
-# ms.industry: 
+ms.assetid: c2e06a46-e8a9-4ef5-96ff-f1d018cad3c3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omulvad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Flowcharts in Business process modeler | Microsoft Docs
+title: Flowcharts in Business process modeler
 description: You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This article explains how you can modify the default connected flowcharts for Microsoft Dynamics AX, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library. It also explains how to upload and view unconnected flowcharts.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-10-29 19:42:51
+ms.date: 2015-10-29 19 - 42 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 11453
-ms.assetid: 9a446020-dd55-4994-81e3-a75db5aa1ede
-ms.region: Global
-# ms.industry: 
+ms.assetid: 42a3bc7b-853b-4ebb-84a3-2f74e61c7d61
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -38,7 +40,7 @@ You can start with default connected flowcharts for Microsoft Dynamics AX, and m
 -   Unconnected flowcharts are uploaded directly from Visio.
 
 ## Connected flowcharts
-This section explains how to view a connected flowchart, how to modify it, how to export the flowchart to Visio, how to generate a gap analysis, and how to export the gap analysis to a comma-separated file that you can manually import into Microsoft Visual Studio Team Foundation Server as work items. For information about how to upload recordings of custom business processes, see [Upload custom business processes to Business process modeler from Task recorder](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/upload-custom-business-processes-to-business-process-modeler-from-task-recorder). Activities that can appear in flowcharts are described in the following table.
+This section explains how to view a connected flowchart, how to modify it, how to export the flowchart to Visio, how to generate a gap analysis, and how to export the gap analysis to a comma-separated file that you can manually import into Microsoft Visual Studio Team Foundation Server as work items. For information about how to upload recordings of custom business processes, see [Upload custom business processes to Business process modeler from Task recorder](upload-business-processes-bpm-task-recorder.md). Activities that can appear in flowcharts are described in the following table.
 | Activity                  | Description                                                                                                                                                      |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Script                    | Action performed by a script.                                                                                                                                    |
@@ -61,7 +63,7 @@ This section explains how to view a connected flowchart, how to modify it, how t
 
 Default connected flowcharts are available for many nodes in the industry-standard libraries. You can view a connected flowchart to determine whether it meets your needs. To view a connected flowchart, follow these steps:
 1.  Sign in to Microsoft Dynamics Lifecycle Services, open a project, and then click **Business process modeler**.
-2.  In the **My libraries** section, select a library to display it. For information about how to copy a standard business process library to a project, see [Business process modeler (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/business-process-modeler-lifecycle-services-lcs).
+2.  In the **My libraries** section, select a library to display it. For information about how to copy a standard business process library to a project, see [Business process modeler (Lifecycle Services, LCS)](business-process-modeler-lcs.md).
 3.  Expand the business process library and then click a library node that has a flowchart icon associated with it. [![Flowchart BPM topic1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Related information is displayed in the right pane, depending on what is selected in the diagram:
     -   If nothing is selected on the flowchart, the right pane displays a detailed list of steps for the process, usage characteristics (setup, master, or transactions), and a video. You can double-click the video to view it in full-screen mode. Usage characteristics are used in the Usage profiler to help determine the load required for a process. Identify processes as Setup when they are configuration tasks, as Master when they are Master data processes, and as Transaction when they are transactional processes. Setup and master processes are assumed to require less processing than transaction processes.
     -   If the title of a swimlane is selected, the right pane displays a list of the security roles that have access to the activities that are in the swimlane, and their corresponding duties.

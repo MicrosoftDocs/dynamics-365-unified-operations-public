@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Print lump sum recovery text on a customer invoice | Microsoft Docs
+title: Print lump sum recovery text on a customer invoice
 description: This article provides information about how to print a lump sum recovery text that shows the penalty amount on customer invoices.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-02-24 15:09:01
+ms.date: 2016-02-24 15 - 09 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53161
-ms.assetid: 070ea565-4f5e-4e18-8a3f-b69bc799926f
-ms.region: France
-# ms.industry: 
+ms.assetid: dd7559cf-caf6-4d93-81c5-48c6ceb4d95e
+ms.search.region: France
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

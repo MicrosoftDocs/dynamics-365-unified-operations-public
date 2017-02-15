@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create Open in Excel experiences | Microsoft Docs
+title: Create Open in Excel experiences
 description: Learn about creating Open in Office experiences for Excel and Word.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 2016-04-07 21:51:22
+ms.date: 2016-04-07 21 - 51 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79223
-ms.assetid: d31edede-c822-45fd-bbb3-f98c4ea78aa1
-ms.region: Global
-# ms.industry: 
+ms.assetid: baa3b951-b719-4ef9-9298-2a4162b08c54
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: cgarty
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -301,7 +303,7 @@ If you are not seeing an expected lookup, validate relationship metadata by chec
 3.  The authenticated user does not have permission to access the entity targeted by the lookup.
 
 ## How do dimensions work?
-The easiest way to set up dimension metadata on data entities is to use the data entity creation wizard, which will automatically create the private relationships and public display value fields exactly as the dimensions framework needs them. If you want to customize your dimensions setup, see [Dimensions Overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimensions-overview). Lookups, at RTW, are only generated automatically for non-Ledger dimensions. Custom dimensions are not supported for the initial release, but support will be added in a future update. If you want to enable lookups for Ledger dimensions (MainAccount, Department, CostCenter, etc.), see the link above for guidance on creating relationships on DimensionCombationEntity and DimensionSetEntity fields; once those relationships are present, relationship lookups will be displayed in the Excel Data Connector. The Excel Data Connector supports two types of dimension data entry: editing the display value directly or each attribute of the display value in a separate column. If both the display value column and the individual attribute columns are bound, they can both be edited and published separately; if both the display value and an individual attribute are edited in the same row, the individual attribute change overrides the display value change.
+The easiest way to set up dimension metadata on data entities is to use the data entity creation wizard, which will automatically create the private relationships and public display value fields exactly as the dimensions framework needs them. If you want to customize your dimensions setup, see [Dimensions Overview](dimensions-overview.md). Lookups, at RTW, are only generated automatically for non-Ledger dimensions. Custom dimensions are not supported for the initial release, but support will be added in a future update. If you want to enable lookups for Ledger dimensions (MainAccount, Department, CostCenter, etc.), see the link above for guidance on creating relationships on DimensionCombationEntity and DimensionSetEntity fields; once those relationships are present, relationship lookups will be displayed in the Excel Data Connector. The Excel Data Connector supports two types of dimension data entry: editing the display value directly or each attribute of the display value in a separate column. If both the display value column and the individual attribute columns are bound, they can both be edited and published separately; if both the display value and an individual attribute are edited in the same row, the individual attribute change overrides the display value change.
 
 ## How do I create formula table columns?
 If a formula is needed in a table, then add a formula column. When in the field selection page for a table binding, click the "Formula" button above the Selected fields list to add a new formula column. The label and value for the formula are entered in the fields immediately below the Selected fields list. After adding a new formula column, leave the value empty and click Update. Once the field has been added to the table, use standard Excel capabilities to create a formula. Then copy the formula and paste it into the formula column value field. When defining a formula, make sure there is more than one row in the table, otherwise the formula that Excel gives you may be for ALL rows instead of THAT row. To specify just the current row, the at symbol ("@") is needed. For example, sum of four columns for all rows "=SUM(Table1\[\[ColumnA\]:\[ColumnD\]\])" versus sum of four columns for the current row "=SUM(Table1\[@\[ColumnA\]:\[ColumnD\]\])".

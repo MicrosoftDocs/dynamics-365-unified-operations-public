@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Copying and comparing entity data between companies (AX 2012) | Microsoft Docs
+title: Copying and comparing entity data between companies (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 21:22:49
+ms.date: 2015-12-04 21 - 22 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17841
-ms.assetid: 549d8a75-68cf-4e43-b457-59b60896993c
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 4f0f7437-f287-472a-bc58-122b3e11b86b
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: kfend
 
 
 
-This process for copying entity data between companies is supported only for Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 R3. If you are running an earlier version of the Data Import/Export Framework, see the instructions in [Walkthrough: Copy data between companies (DIXF, DMF)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/walkthrough-copy-data-between-microsoft-dynamics-ax-companies-dixf-dmf). This topic describes the following processes:
+This process for copying entity data between companies is supported only for Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 R3. If you are running an earlier version of the Data Import/Export Framework, see the instructions in [Walkthrough: Copy data between companies (DIXF, DMF)](copy-data-between-companies-dixf.md). This topic describes the following processes:
 
 -   Copy entity data between companies
 -   Compare entity data between companies

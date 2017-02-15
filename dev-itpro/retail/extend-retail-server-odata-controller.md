@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extend a Retail Server OData controller | Microsoft Docs
+title: Extend a Retail Server OData controller
 description: This article provides code that extends the CustomController class.
 author: kfend
 manager: AnnBe
-ms.date: 2016-02-06 00:48:15
+ms.date: 2016-02-06 00 - 48 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31681
-ms.assetid: ec5eac0c-97aa-4702-8ebf-28f12e7775e7
-ms.region: Global
-# ms.industry: 
+ms.assetid: 001d3bbf-e1c5-43cf-bb85-fdfec5518862
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

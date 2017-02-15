@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage standard cost updates | Microsoft Docs
-description: Updates to standard cost data can be managed by using two different approaches: the one-version approach and the two-version approach. 
+title: Manage standard cost updates
+description: Updates to standard cost data can be managed by using two different approaches -  the one-version approach and the two-version approach. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-23 16:48:32
+ms.date: 2016-03-23 16 - 48 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: CostingVersion
+ms.search.form: CostingVersion
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 69992
-ms.assetid: 01b793f7-09ee-442b-b968-9ccb8b210ee8
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 71c1dcdd-05d4-4532-8c8d-cb250eb649e7
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: mguada
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Manage standard cost updates
 
-Updates to standard cost data can be managed by using two different approaches: the one-version approach and the two-version approach. 
+Updates to standard cost data can be managed by using two different approaches -  the one-version approach and the two-version approach. 
 
 The one-version approach uses a single costing version that contains all cost records. These records include the original costs and all cost updates.
 The two-version approach uses one version that contains records of the original costs and a second version that contains records of all cost updates. A primary advantage of the two-version approach is the clear delineation and tracking of cost updates in a separate costing version, without affecting the original costing version. The two-version approach can be used to identify multiple incremental updates, where each incremental update has a separate costing version that contains the incremental cost records. **Example** The following example illustrates how the one-version and two-version approaches can be used for updating standard costs in a manufacturing environment. For example, updates that reflect new items or error corrections. Assume that a single costing version represents the standard costs for the current year. The identifier for this version is 2016-STD. Version 2016-STD contains the current active costs for all items. Additionally, it contains all routing-related cost categories and overhead calculation formulas that were known at the start of the year 2016. 2016-STD is the original costing version.

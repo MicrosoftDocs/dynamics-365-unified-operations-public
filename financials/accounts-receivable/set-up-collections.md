@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up Credit and collections | Microsoft Docs
+title: Set up Credit and collections
 description: This article explains how to set up the collections functionality.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:04:01
+ms.date: 2015-12-02 23 - 04 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustCollectionsActivitiesListPage
+ms.search.form: CustCollectionsActivitiesListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2231
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2231
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14031
-ms.assetid: 74851390-96e2-4876-be84-9d58fb628238
-ms.region: Global
-# ms.industry: 
+ms.assetid: 19639bd5-9db3-4916-86d2-db0b3885798a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mfalkner
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: View Intelligent Data Management Framework purge or archive jobs (AX 2012) | Microsoft Docs
+title: View Intelligent Data Management Framework purge or archive jobs (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 18:07:48
+ms.date: 2015-12-05 18 - 07 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18771
-ms.assetid: d63ff5de-08c9-4de9-a775-1eebd875e6f9
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 9d9f77cb-986a-4adc-9677-d2dd820ef759
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

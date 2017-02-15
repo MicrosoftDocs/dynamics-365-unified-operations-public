@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ attribute classes | Microsoft Docs
+title: X++ attribute classes
 description: This topic describes the use of attributes in X++.
-author: RobinARH
+author: annbe
 manager: AnnBe
-ms.date: 2016-08-27 00:35:44
+ms.date: 2016-08-27 00 - 35 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150243
-ms.assetid: 658e7277-a1e8-470d-a19d-1e7a488e1703
-ms.region: Global
-# ms.industry: 
-ms.author: robinr
+ms.assetid: 58213140-e4bf-4dd6-b1d2-2d8b04427a97
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

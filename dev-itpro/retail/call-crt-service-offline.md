@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Call CRT service in offline mode | Microsoft Docs
-description: This topic describes how provide offline support for point of sale (POS).
+title: Call CRT service in offline mode
+description: This wiki describes how provide offline support for point of sale (POS).
 author: josaw1
 manager: AnnBe
-ms.date: 2016-03-22 20:01:49
+ms.date: 2016-03-22 20 - 01 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: josaw1
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 69834
-ms.assetid: f85cf908-ea05-4623-844b-a8d1949ecebc
-ms.region: Global
-# ms.industry: 
+ms.assetid: e5c2c395-bfd8-4e34-bd53-df683efe9188
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mumani
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Call CRT service in offline mode
 
-This topic describes how provide offline support for point of sale (POS).
+This wiki describes how provide offline support for point of sale (POS).
 
 When a point of sale (POS) device goes offline (in other words, when it isn't connected to Retail Server), the POS automatically switches to the local commerce runtime (CRT). The POS client communicates with the local CRT by using the Retail proxy. To enable the proxy to understand your custom service, you must extend the Retail proxy project to support your request type.
 

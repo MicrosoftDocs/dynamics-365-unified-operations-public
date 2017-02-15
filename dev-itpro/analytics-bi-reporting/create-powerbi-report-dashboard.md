@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a Power BI report and dashboard | Microsoft Docs
+title: Create a Power BI report and dashboard
 description: This tutorial guides you though the process of creating a basic Power BI report and explains how to start to create a dashboard on PowerBI.com.
 author: clwesene
 manager: AnnBe
-ms.date: 2016-02-03 15:11:07
+ms.date: 2016-02-03 15 - 11 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31021
-ms.assetid: 763666d5-317c-4af9-891e-25b900f7fcdf
-ms.region: Global
-# ms.industry: 
+ms.assetid: 48daad02-e365-4cdb-be91-d11f0ea3df18
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: cwesene
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -165,7 +167,7 @@ You can repeat this process to build out your dashboard.
 See also
 --------
 
-[Power BI integration in Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/powerbi-integration-in-ax7)
+[Power BI integration in Dynamics AX](power-bi-integration.md)
 
-[Configuring Power BI integration for workspaces](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-powerbi-integration)
+[Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
 

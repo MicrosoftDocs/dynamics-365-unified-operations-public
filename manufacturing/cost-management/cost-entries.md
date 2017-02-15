@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cost entries | Microsoft Docs
+title: Cost entries
 description: This article provides information about cost entries and when they are created. A cost entry is a record that registers the quantity and cost of a given event.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09:09:22
+ms.date: 2015-12-07 09 - 09 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventCostOnhandItem
+ms.search.form: InventCostOnhandItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19131
-ms.assetid: cd754512-b3f7-4b69-aa4b-e3072245d4d1
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 91bb3a77-3ccf-4cff-bc75-d7094dea2c1e
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -60,10 +62,10 @@ The new **Cost entries** page lets you view and control registrations of quant
 | 00002   | 20-01-2015 | Purchase order | 100001 | 0000101 |               |               |          | 100.00  |
 | 00003   | 31-01-2015 | Adjustment     | 100001 | 0000101 |               |               |          | 15.00   |
 
-The **Cost entries** page enables filtering by document ID and document date. **Note:** Cost entries are available only for [cost objects](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/cost-management/cost-object) or released products.
+The **Cost entries** page enables filtering by document ID and document date. **Note:** Cost entries are available only for [cost objects](cost-object.md) or released products.
 
 See also
 --------
 
-[Cost objects](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/cost-management/cost-object)
+[Cost objects](cost-object.md)
 

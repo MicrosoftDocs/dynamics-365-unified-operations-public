@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Gantt development guide | Microsoft Docs
+title: Gantt development guide
 description: This article describes how to create new forms by using the Gantt control. We highly recommend that you look at the code in the Tutorial_Gantt form. This code demonstrates the full capabilities of the Gantt control, and shows how to load data and work with the application programming interface (API).
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-04 18:08:57
+ms.date: 2015-12-04 18 - 08 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17311
-ms.assetid: d3220707-9e60-4619-b317-a4f78bd54dfb
-ms.region: Global
-# ms.industry: 
+ms.assetid: ed6a48cc-554c-440d-9468-74bafd7bc94f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

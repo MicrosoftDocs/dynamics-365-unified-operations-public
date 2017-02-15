@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Remove outliers from historical transaction data when calculating a demand forecast | Microsoft Docs
+title: Remove outliers from historical transaction data when calculating a demand forecast
 description: This article describes how to exclude outliers from the historical data that is used to calculate a demand forecast. By excluding outliers, you can improve forecast accuracy.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-30 12:34:01
+ms.date: 2016-03-30 12 - 34 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup
+ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72621
-ms.assetid: 4c3068cf-1270-4ab5-8505-6d7d74866e93
-ms.region: global
-ms.industry: Manufacturing
+ms.assetid: 604f3bed-48f2-4324-8132-b51930bbed95
+ms.search.region: global
+ms.search.industry: Manufacturing
 ms.author: roxanad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -45,7 +47,7 @@ You can exclude outliers to improve forecast accuracy. This is an optional task.
 See also
 --------
 
-[Introduction to demand forecasting](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/introduction-to-dynamics-ax7-demand-forecasting)
+[Introduction to demand forecasting](introduction-demand-forecasting.md)
 
-[Monitoring forecast accuracy](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/monitoring-forecast-accuracy)
+[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
 

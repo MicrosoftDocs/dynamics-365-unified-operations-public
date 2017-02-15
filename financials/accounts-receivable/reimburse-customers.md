@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reimburse customers | Microsoft Docs
+title: Reimburse customers
 description: This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:14:54
+ms.date: 2015-12-02 23 - 14 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
+ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14191
-ms.assetid: ab88ad2e-a428-4c92-a7b7-1025fdc3efd8
-ms.region: Global
-# ms.industry: 
+ms.assetid: af26666f-23af-48aa-a1c4-7d72f7713d7b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

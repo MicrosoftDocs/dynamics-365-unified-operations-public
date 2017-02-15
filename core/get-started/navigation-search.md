@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Navigation search | Microsoft Docs
+title: Navigation search
 description: This article explains how to use the search functionality to navigate to pages in Microsoft Dynamics 365 for Operations.
 author: aneesmsft
 manager: AnnBe
-ms.date: 2015-12-12 23:29:16
+ms.date: 2015-12-12 23 - 29 - 16
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25991
-ms.assetid: 3c766819-2859-4775-b7b9-d4535ace1770
-ms.region: Global
-# ms.industry: 
+ms.assetid: 68092d33-2167-4fbd-80c2-aa2ecd02f513
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aneesa
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

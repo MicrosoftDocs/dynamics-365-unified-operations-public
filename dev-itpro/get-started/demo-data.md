@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Demo data overview | Microsoft Docs
+title: Demo data overview
 description: This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-02-29 18:11:12
+ms.date: 2016-02-29 18 - 11 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56551
-ms.assetid: 879973d6-294b-4178-9d25-d584243faac2
-ms.region: Global
-# ms.industry: 
+ms.assetid: a845b9b2-e1b4-4190-861c-424c4fa58548
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pmantha
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

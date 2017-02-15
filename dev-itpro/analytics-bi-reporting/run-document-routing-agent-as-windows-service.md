@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Run the Document Routing Agent as a Windows service | Microsoft Docs
+title: Run the Document Routing Agent as a Windows service
 description: The Document Routing Agent can be run as either a desktop application or a Microsoft Windows service. This topic provides important information that will help you select the correct execution mode.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-09-12 20:12:05
+ms.date: 2016-09-12 20 - 12 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX platform update 2
+# ms.reviewer: 71
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 191133
-ms.assetid: 011e7005-1a41-4cd0-a350-79d0356d394b
-ms.region: Global
-# ms.industry: 
+ms.assetid: cf62ea2d-5e0a-447e-b8ce-790277b208aa
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.intro: Aug-16
+ms.dyn365.version: Platform update 2
 
 ---
 
@@ -51,7 +53,7 @@ The enhancements to the Document Routing Agent are available as part of the Dyna
 
 1.  Save a copy of the current Document Routing Agent configuration file. This file is located at C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics AX Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config, where &lt;UserID&gt; is the Active Directory Domain Services (AD DS) user name that the Document Routing Agent was installed under.
 2.  Uninstall the current version of the Document Routing Agent.
-3.  After Dynamics AX has been upgraded to Dynamics AX platform update 2 (August 2016), install the new version of the Document Routing Agent by following the instructions in [Install the Document Routing Agent to enable network printer devices](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-the-document-routing-service-to-enable-network-printer-devices). **Note:** Although you install the application at this point, don't run it yet.
+3.  After Dynamics AX has been upgraded to Dynamics AX platform update 2 (August 2016), install the new version of the Document Routing Agent by following the instructions in [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md). **Note:** Although you install the application at this point, don't run it yet.
 4.  Copy the configuration file from step 1, and paste it into the following directory: C:\\ProgramData\\Microsoft\\Microsoft Dynamics AX Document Routing. This step helps guarantee that all your previous configuration settings are used for the new version of the Document Routing Agent application.
 5.  Run the Document Routing Agent.
 6.  Sign in by using your Microsoft Azure Active Directory (Azure AD)/Dynamics AX credentials.
@@ -60,7 +62,7 @@ The enhancements to the Document Routing Agent are available as part of the Dyna
 The next section provides detailed instructions for selecting the Windows service execution mode.
 
 ## Changing the default execution mode
-By default, the Document Routing Agent runs as a desktop application. To run the process as a Windows service, make sure that you are familiar with the process for [installing the Document Routing Agent to enable network printer devices](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-the-document-routing-service-to-enable-network-printer-devices), and then complete the following tasks.
+By default, the Document Routing Agent runs as a desktop application. To run the process as a Windows service, make sure that you are familiar with the process for [installing the Document Routing Agent to enable network printer devices](install-document-routing-agent.md), and then complete the following tasks.
 
 ### Task 1: Update the execution mode for the Document Routing Agent
 

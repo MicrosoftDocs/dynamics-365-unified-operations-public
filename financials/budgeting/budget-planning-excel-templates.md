@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Budget planning templates for Excel | Microsoft Docs
+title: Budget planning templates for Excel
 description: This topic describes how to create Microsoft Excel templates that can be used with budget plans.
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-12-08 15:46:58
+ms.date: 2016-12-08 15 - 46 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2231
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 2231
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261794
-ms.assetid: 3a56b338-ad0e-483e-8837-df0eeeba229c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 787decc2-f9fb-423a-b9c6-beb7e99e9412
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: sigitac
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: sigitac
 
 This topic describes how to create Microsoft Excel templates that can be used with budget plans.
 
-This topic shows how to create Excel templates that will be used with budget plans using the standard demo data set and the Admin user login. For more information about budget planning, see [Budget planning overview.](https://docs.microsoft.com/en-us/dynamics365/operations/financials/budgeting/budget-planning-overview-and-configuration) You can also follow the [Budget planning 101](https://docs.microsoft.com/en-us/dynamics365/operations/financials/budgeting/budget-planning-101) tutorial to learn basic module configuration and usage principles.
+This topic shows how to create Excel templates that will be used with budget plans using the standard demo data set and the Admin user login. For more information about budget planning, see [Budget planning overview.](budget-planning-overview-configuration.md) You can also follow the [Budget planning 101](budget-plan.md) tutorial to learn basic module configuration and usage principles.
 
 ## Generate a worksheet using budget plan document layout
 Budget plan documents can be viewed and edited using one or more layouts. Each layout can have an associated budget plan document template to view and edit the budget plan data in an Excel worksheet. In this topic, a budget plan document template will be generated using an existing layout configuration. Open the **Budget plans list** (**Budgeting**&gt; **Budget plans**). Click **New** to create a new budget plan document. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) Use the **Add** line option to add lines. Click **Layouts** to view the budget plan document layout configuration. [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) You can review the layout configuration and adjust it as needed. Go to **Template** &gt; **Generate** to create an Excel file for this layout. After the template is generated, go to **Template** &gt; **View** to open and review the budget plan document template. You can save the Excel file to your local drive. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) **Note:** The Budget plan document layout cannot be edited after an Excel template is associated with it. To modify the layout, delete the associated Excel template file and regenerate it. This is required to keep the fields in the layout and the worksheet synchronized. The Excel template will contain all of the elements from the budget plan document layout, where the **Available in Worksheet** column is set to True. Overlapping elements are not allowed in the Excel template. For example, if the layout contains Request Q1, Request Q2, Request Q3, and Request Q4 columns, and a total request column that represents a sum of all 4 quarterly columns, only the quarterly columns or total column is available to be used in the Excel template. The Excel file cannot update overlapping columns during the update because data in the table could become out of date and inaccurate. [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)**Note:** To avoid potential issues with viewing and editing budget plan data using Excel, the same user should be logged into both Dynamics 365 for Operations and the Microsoft Dynamics Office Add-in Data Connector.

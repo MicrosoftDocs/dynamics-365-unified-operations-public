@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Single voucher with multiple customer or vendor records | Microsoft Docs
+title: Single voucher with multiple customer or vendor records
 description: This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-10-31 18:43:45
+ms.date: 2016-10-31 18 - 43 - 45
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2231
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2231
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222534
-ms.assetid: 4b4fd20d-d0b1-4d5b-83a4-c1192e932281
-ms.region: global
-# ms.industry: 
+ms.assetid: fec9fcab-e2be-477d-b84e-b9ddc568a056
+ms.search.region: global
+# ms.search.industry: 
 ms.author: abruer
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

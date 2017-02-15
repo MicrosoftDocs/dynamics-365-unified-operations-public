@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Design principles and best practices | Microsoft Docs
+title: Design principles and best practices
 description: This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-13 00:14:56
+ms.date: 2015-12-13 00 - 14 - 56
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26421
-ms.assetid: a0c8e1b1-1a18-4b18-8ff9-ebc75d0b77f4
-ms.region: Global
-# ms.industry: 
+ms.assetid: b1175897-6d92-4e5a-8352-d3e16c1928f8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

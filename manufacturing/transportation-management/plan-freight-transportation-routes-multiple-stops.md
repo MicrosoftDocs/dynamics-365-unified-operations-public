@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Plan freight transportation routes with multiple stops | Microsoft Docs
+title: Plan freight transportation routes with multiple stops
 description: This article describes the various elements that you use to plan transportation routes in Microsoft Dynamics AX.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-09 11:18:27
+ms.date: 2016-06-09 11 - 18 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
+ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 90013
-ms.assetid: 285cf0ec-d34e-4388-9193-84f64eb5eea5
-ms.region: Global
-# ms.industry: 
+ms.assetid: a8c44bbd-71a8-4eed-8d2d-b0c535cc25ed
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

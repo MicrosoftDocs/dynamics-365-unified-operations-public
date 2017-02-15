@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a Windows installer for a payment connector | Microsoft Docs
+title: Create a Windows installer for a payment connector
 description: This topic describes how to create a Windows installer for a payment connector. This topic is targeted at developers working for or with a payment connector provider, for example, MasterCard or Visa, to describe how to package a payment connector, which can then be shared with Dynamics 365 for Operations implementation partners working for specific customers. 
 author: MargoC
 manager: AnnBe
-ms.date: 2016-08-19 00:18:05
+ms.date: 2016-08-19 00 - 18 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 141573
-ms.assetid: 4f4166e5-9172-46ce-998c-82620d05afbb
-ms.region: Global
-# ms.industry: 
+ms.assetid: e0263e68-8e60-4339-9ed0-90d31ce174e7
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: yabinl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Modify row definition cells | Microsoft Docs
+title: Modify row definition cells
 description: This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-07 16:09:06
+ms.date: 2016-03-07 16 - 09 - 06
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FinancialReports
+ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Management Reporter
+ms.search.scope: Management Reporter
 # ms.tgt_pltfrm: 
 ms.custom: 58881
-ms.assetid: cbf6d2e3-7ff3-45d9-8fd6-3392f9f940e4
-ms.region: Global
-# ms.industry: 
+ms.assetid: ab22e806-ee14-4bb2-9eec-1385b1006e5d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 
@@ -706,5 +708,5 @@ A dimension value set is a named group of dimension values. A dimension value se
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics AX](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/management-reporter-for-microsoft-dynamics-erp)
+[Financial reporting for Microsoft Dynamics AX](financial-reporting-intro.md)
 

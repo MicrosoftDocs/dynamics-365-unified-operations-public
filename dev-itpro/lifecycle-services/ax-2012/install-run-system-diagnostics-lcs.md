@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install and run System diagnostics (AX 2012) | Microsoft Docs
+title: Install and run System diagnostics (AX 2012)
 description: In Microsoft Dynamics Lifecycle Services, System diagnostics includes an on-premises component that must be installed before you can use the service to discover Microsoft Dynamics AX environments and collect data.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 23:06:13
+ms.date: 2015-12-05 23 - 06 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: AX 2012
+ms.reviewer: annbe
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18861
-ms.assetid: b4b4edaa-546a-4656-bae3-b81922aca5a3
-ms.region: Global
-# ms.industry: 
-ms.author: manado
+ms.assetid: dfa299ff-bf01-40d6-910b-a1c6124d2ed3
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

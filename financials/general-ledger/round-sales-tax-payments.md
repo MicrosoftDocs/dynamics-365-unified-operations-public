@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sales tax payments and rounding rules | Microsoft Docs
+title: Sales tax payments and rounding rules
 description: This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-09-14 12:24:02
+ms.date: 2015-09-14 12 - 24 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TaxAuthority
+ms.search.form: TaxAuthority
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6134
-ms.assetid: 1c6636c3-83f8-4eb6-8bdf-0b1529b6a6b6
-ms.region: Global
-# ms.industry: 
+ms.assetid: ed1cddf2-9b52-4ade-92c0-e5a1a49eaa69
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: vstehman
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -61,7 +63,7 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
 See also
 --------
 
-[Sales tax overview](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/indirect-taxes-in-microsoft-dynamics-ax-overview)
+[Sales tax overview](indirect-taxes-overview.md)
 
 [View posted sales tax transactions](http://ax.help.dynamics.com/en/wiki/view-posted-sales-tax-transactions/)
 

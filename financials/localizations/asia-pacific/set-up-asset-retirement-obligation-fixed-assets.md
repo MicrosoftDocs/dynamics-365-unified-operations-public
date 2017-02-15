@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up asset retirement obligation for fixed assets | Microsoft Docs
+title: Set up asset retirement obligation for fixed assets
 description: In Japan, asset retirement obligation (ARO) is recognized for fixed assets that have legal obligations at their retirement. This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-19 22:59:08
+ms.date: 2015-10-19 22 - 59 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetRetirementObligation_JP, AssetRetirementObligationDocument_JP, AssetRetirementObligationExplorer_JP, AssetRetirementObligationLine_JP, AssetTable
+ms.search.form: AssetRetirementObligation_JP, AssetRetirementObligationDocument_JP, AssetRetirementObligationExplorer_JP, AssetRetirementObligationLine_JP, AssetTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: ShylaThompson
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10174
-ms.assetid: 1337c434-2a4b-42a5-bb8a-db4918da45d2
-ms.region: Japan
-# ms.industry: 
+ms.assetid: 5cc65e6d-3cf5-411a-a105-b32257da9022
+ms.search.region: Japan
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -47,14 +49,14 @@ Asset retirement obligation (ARO) is used to distribute the retirement cost of a
 ## Setup information
 To use ARO, you must complete the following setup tasks:
 
--   Set up basic fixed asset parameters, such as a default Book, reason codes, and number sequences on the **Fixed assets parameters** page
--   Define a fixed asset group on the **Fixed asset groups** page
--   Set up a fiscal calendar for depreciation
--   Set up a discount rate schedule that uses current market discount rates to calculate ARO amounts
--   Specify the type of ARO to use for an asset, and specify how often changes to the ARO amounts are posted
--   Set up an estimated retirement cost plan for ARO, and simulate ARO amounts for each fiscal period of the asset’s service life
--   Set up a posting profile for the **Capitalized asset retirement obligation** and **Asset retirement obligation - accretion** **expense** document types
--   Set up accounts that the transaction amounts are retrieved from when you post a fixed asset that has a transaction type of **ARO for disposal**
+-   Set up basic fixed asset parameters, such as a default value model, reason codes, and number sequences on the **Fixed assets parameters** page.
+-   Define a fixed asset group on the **Fixed asset groups** form.
+-   Set up a fiscal calendar for depreciation.
+-   Set up a discount rate schedule that uses current market discount rates to calculate ARO amounts.
+-   Specify the type of ARO to use for an asset, and specify how often changes to the ARO amounts are posted.
+-   Set up an estimated retirement cost plan for ARO, and simulate ARO amounts for each fiscal period of the asset’s service life.
+-   Set up a posting profile for the **Capitalized asset retirement obligation** and **Asset retirement obligation - accretion** **expense** document types.
+-   Set up accounts that the transaction amounts are retrieved from when you post a fixed asset that has a transaction type of **ARO for disposal**.
 
 ## Technical information for system administrators
 If you don't have access to the pages that are used to complete this task, contact your system administrator and provide the information that is shown in the following table.

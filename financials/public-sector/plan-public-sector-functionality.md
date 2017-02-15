@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Plan for public sector functionality | Microsoft Docs
-description: This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics 365 for Operations.
+title: Plan for public sector functionality
+description: This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics AX.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 17:55:20
+ms.date: 2015-12-07 17 - 55 - 20
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,29 +13,31 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19851
-ms.assetid: b87ba96c-a60e-4706-9fbd-f35b3536f44a
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: f28605d7-e8ab-4272-8088-e629aa1e20e2
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Plan for public sector functionality
 
-This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics 365 for Operations.
+This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics AX.
 
 What should I do first?
 -----------------------
 
-Before you begin to adjust the settings and input your data, you should consider which Microsoft Dynamics 365 for Operations modules you’ll need to set up for your Public sector organization. Public sector functionality is integrated with the following Microsoft Dynamics 365 for Operations modules and Microsoft products.
+Before you begin to adjust the settings and input your data, you should consider which Microsoft Dynamics AX modules you’ll need to set up for your Public sector organization. Public sector functionality is integrated with the following Microsoft Dynamics AX modules and Microsoft products.
 
 ### Accounts payable
 
@@ -51,7 +53,7 @@ Budget analysis Budget analysis for revised budgets Budget analysis for actual e
 
 ### French regulatory options
 
-**Note** For information about French regulatory options, see [Public sector accounting in France](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/public-sector-accounting-in-france). The following pages are available only if the following conditions are met:
+**Note** For information about French regulatory options, see [Public sector accounting in France](public-sector-accounting-france.md). The following pages are available only if the following conditions are met:
 
 -   The **Public sector** configuration key is selected.
 -   The **French regulatory** configuration subkey is selected.
@@ -72,5 +74,5 @@ Certification type Confirming PO codes Purchase order line amounts
 See also
 --------
 
-[Public sector functionality](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/public-sector-functionality)
+[Public sector functionality](public-sector-functionality.md)
 

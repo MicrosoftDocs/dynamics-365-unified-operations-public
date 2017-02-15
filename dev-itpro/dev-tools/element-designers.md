@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Element designers | Microsoft Docs
+title: Element designers
 description: This article reviews the element designers and explains how to use them.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-04-11 19:57:18
+ms.date: 2016-04-11 19 - 57 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79871
-ms.assetid: 940a6cee-6a41-4026-b99f-a1efd7e851e7
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3ba500d5-bec6-4b23-8c5f-6b25b6407c9d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

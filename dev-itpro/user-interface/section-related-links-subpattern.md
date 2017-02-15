@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Section Related Links subpattern | Microsoft Docs
+title: Section Related Links subpattern
 description: This article provides information about the Section Related Links subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 22:34:29
+ms.date: 2016-01-11 22 - 34 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29331
-ms.assetid: 1623aa20-1c3a-4b8c-ab4c-4b3f65172b24
-ms.region: Global
-# ms.industry: 
+ms.assetid: a91a73d3-485b-4719-9cfe-39a38004e4a0
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -60,7 +62,7 @@ Apply Section Related Links to the appropriate tab page in the Operational Works
 
 ### Related container patterns
 
--   [Operational Workspace](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)
+-   [Operational Workspace](workspace-form-pattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. None

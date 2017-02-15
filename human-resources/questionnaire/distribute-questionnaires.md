@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Distribute and complete a questionnaire | Microsoft Docs
+title: Distribute and complete a questionnaire
 description: This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-04 18:35:55
+ms.date: 2015-12-04 18 - 35 - 55
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
+ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17424
-ms.assetid: 62046383-7152-4d00-a859-fe7c5aa4e163
-ms.region: Global
-# ms.industry: 
+ms.assetid: f825e693-7899-4a72-9bee-624b5064a34e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: twheeloc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -105,9 +107,9 @@ Questionnaires can made be available to specific users or groups of users, or to
 See also
 --------
 
-[Designing questionnaires](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/designing-questionnaires)
+[Designing questionnaires](design-questionnaires.md)
 
-[Using questionnaires](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/using-questionnaires)
+[Using questionnaires](questionnaires.md)
 
-[Viewing and evaluating the results of questionnaires](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/questionnaire/viewing-and-evaluating-results-of-a-questionnaire)
+[Viewing and evaluating the results of questionnaires](evaluate-questionnaire-results.md)
 

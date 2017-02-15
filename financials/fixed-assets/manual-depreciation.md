@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manual depreciation | Microsoft Docs
+title: Manual depreciation
 description: This article gives an overview of the manual depreciation method.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 22:55:46
+ms.date: 2015-12-02 22 - 55 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetDepreciationProfile
+ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13811
-ms.assetid: 272b63c5-be73-4e0a-9a12-21b13c2b2d8c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5b35233c-91aa-4db5-a257-806cf48c9e4b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

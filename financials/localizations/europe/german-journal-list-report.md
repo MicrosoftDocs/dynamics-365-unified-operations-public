@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: German journal list report | Microsoft Docs
+title: German journal list report
 description: This article explains what the German journal list report is used for, who typically uses it, and how to run it.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-01-06 20:55:39
+ms.date: 2016-01-06 20 - 55 - 39
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerJournalizeReport
+ms.search.form: LedgerJournalizeReport
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28831
-ms.assetid: bc23e39b-ad45-4ac1-bd20-0dce17dca813
-ms.region: Germany
-# ms.industry: 
+ms.assetid: d6392159-c692-4771-87eb-a99e69103cab
+ms.search.region: Germany
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

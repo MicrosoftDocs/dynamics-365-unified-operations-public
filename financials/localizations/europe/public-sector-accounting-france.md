@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Public sector accounting in France | Microsoft Docs
+title: Public sector accounting in France
 description: This article describes public sector accounting in France.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 16:22:17
+ms.date: 2015-12-07 16 - 22 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19621
-ms.assetid: 0a42c9ce-c590-4223-88e2-15a3b9c55e68
-ms.region: France
-ms.industry: Public sector
+ms.assetid: b685c3dd-39e2-4ada-ae80-2e819f934653
+ms.search.region: France
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -44,11 +46,11 @@ The French public sector features are available when the following conditions ar
 Additional setup steps for specific features are covered in the article for each feature.
 
 ## French public sector topics
--   [Mandats de paiement](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/mandats-de-paiement-in-the-public-sector-in-france) The director uses the mandat de paiement to notify the accountant that the organization is obligated to pay a specific amount to another entity, and to authorize the accountant to pay that amount.
--   [Vendor invoice payment holds](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/vendor-invoice-payment-holds-in-the-public-sector-in-france) The standard processes that are related to payment holds for vendor invoices are augmented for French entities in the public sector.
--   [Titres de recette](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/titres-de-recette-in-the-public-sector-in-france) The director uses the titre de recette to notify the accountant that the organization is entitled to collect a specific amount from another entity, and to authorize the accountant to collect that amount.
+-   [Mandats de paiement](mandats-de-paiement-public-sector-france.md) The director uses the mandat de paiement to notify the accountant that the organization is obligated to pay a specific amount to another entity, and to authorize the accountant to pay that amount.
+-   [Vendor invoice payment holds](vendor-invoice-payment-holds-public-sector-france.md) The standard processes that are related to payment holds for vendor invoices are augmented for French entities in the public sector.
+-   [Titres de recette](titres-de-recette-public-sector-france.md) The director uses the titre de recette to notify the accountant that the organization is entitled to collect a specific amount from another entity, and to authorize the accountant to collect that amount.
 -   [Commitments](/wiki/commitments-in-the-public-sector-in-france/) Commitments are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle.
--   [Procurement and sourcing](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/procurement-and-sourcing-in-the-public-sector-in-france)
+-   [Procurement and sourcing](procurement-sourcing-public-sector-france.md)
     -   The standard features that are related to purchase agreements are augmented for French entities in the public sector.  For example, you can create tranches and lots, control department access, manage vendor certifications, and set up prime contractors, co-contractors, and subcontractors. These capabilities help you meet the requirements of the Code des Marchés Publics.
     -   To meet public sector regulatory requirements in France, you might have to set spending thresholds for purchases in the procurement categories that are defined by the Clé de Contrôle Marché. A **Spending thresholds by category** policy rule that is used with purchasing policies lets you use effective date attributes, predicted expenditure amounts, and threshold amounts to support required procurement practices, and to ensure the efficient and effective use of public funds.
 

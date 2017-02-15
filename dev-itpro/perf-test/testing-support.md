@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Test projects in Visual Studio | Microsoft Docs
+title: Test projects in Visual Studio
 description: This wiki describes the options for testing in Visual Studio.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:48:19
+ms.date: 2015-12-11 23 - 48 - 19
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24161
-ms.assetid: 7ae7a48f-8bb1-4fb1-9c12-4983946e2cb3
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5c8a684d-3448-4cc9-9b07-9f4c0f621965
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shailesn
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

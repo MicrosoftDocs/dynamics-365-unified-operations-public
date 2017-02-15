@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up mobile devices for warehouse work | Microsoft Docs
+title: Set up mobile devices for warehouse work
 description: This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-22 07:59:32
+ms.date: 2016-01-22 07 - 59 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: WHSRFMenuItem
+ms.search.form: WHSRFMenuItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29941
-ms.assetid: 2fbeaf8c-e762-4846-b7d0-5c2c8fc3b899
-ms.region: Global
-# ms.industry: 
+ms.assetid: 47408ddc-a2a3-4919-ace9-476170d6797d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mafoge
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -312,7 +314,7 @@ Additional menu items options are available on the **Mobile device menu items** 
 </tr>
 <tr class="even">
 <td>Display inventory status</td>
-<td>Select this option to display the status of items in inventory. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/warehouse-management/advantages-of-using-inventory-statuses">Advantages of using Inventory statuses</a>. This option is available for all menu items that use existing work, except cycle counting.</td>
+<td>Select this option to display the status of items in inventory. For more information, see <a href="inventory-statuses.md">Advantages of using Inventory statuses</a>. This option is available for all menu items that use existing work, except cycle counting.</td>
 </tr>
 <tr class="odd">
 <td>Display summary of pick screen</td>
@@ -377,7 +379,7 @@ Additional menu items options are available on the **Mobile device menu items** 
 </tr>
 <tr class="odd">
 <td>Work template code</td>
-<td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the put-away work will be generated based on the work template. If you don't select a work template, Microsoft Dynamics 365 for Operations assigns a template, based on query criteria. For more information on work templates, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/warehouse-management/controlling-warehouse-work-with-work-templates-and-location-directives">Controlling warehouse work with work templates and location directives</a>.</td>
+<td>Select the work template that will create the work for a process. For example, if you receive an item for a purchase order, the put-away work will be generated based on the work template. If you don't select a work template, Microsoft Dynamics 365 for Operations assigns a template, based on query criteria. For more information on work templates, see <a href="control-warehouse-location-directives.md">Controlling warehouse work with work templates and location directives</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -402,7 +404,7 @@ You can set up work confirmations that require that a worker use a mobile device
 See also
 --------
 
-[Warehouse mobile device display settings](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/warehouse-management/changing-the-look-and-feel-of-warehouse-mobile-device-displays)
+[Warehouse mobile device display settings](change-warehouse-mobile-device-displays.md)
 
 [Set up a mobile device menu item for completing work of type Purchase order](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 

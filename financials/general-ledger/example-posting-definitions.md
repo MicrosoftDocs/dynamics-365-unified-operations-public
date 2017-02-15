@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Posting definitions | Microsoft Docs
+title: Posting definitions
 description: This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 20:47:46
+ms.date: 2015-12-03 20 - 47 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: JournalizingDefinition, JournalizingDefinitionTrans
+ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15772
-ms.assetid: 6e1259b4-efd4-4b34-bfba-03defd806f7a
-ms.region: Global
-# ms.industry: 
+ms.assetid: d234c76c-7c6c-4c5a-8e4f-889ca15728fb
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: peakerbl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

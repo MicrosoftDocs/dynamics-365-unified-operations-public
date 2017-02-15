@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add properties to a sales order | Microsoft Docs
+title: Add properties to a sales order
 description: By customizing the properties of sales orders, you can send additional data from your online store to meet the requirements of your business processes. This article explains how to add properties to a sales order.
 author: kfend
 manager: AnnBe
-ms.date: 2016-02-12 00:21:24
+ms.date: 2016-02-12 00 - 21 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 44351
-ms.assetid: 9f9d9fd7-087b-44e6-be3e-4a4d0feaed84
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7601c0af-0470-4c2d-b2d6-a5c1b05a522e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

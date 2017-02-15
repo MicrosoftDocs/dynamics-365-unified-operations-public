@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: ISR declaration report | Microsoft Docs
+title: ISR declaration report
 description: In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This topic provides information about generating this report in Microsoft Dynamics AX. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-09-10 15:43:54
+ms.date: 2015-09-10 15 - 43 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ISRConcept_MX, ISRConceptMainAccount_MX, ISRRateTable_MX
+ms.search.form: ISRConcept_MX, ISRConceptMainAccount_MX, ISRRateTable_MX
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2821
-ms.assetid: 37892967-401a-4f19-9940-ed91620dc32e
-ms.region: Mexico
-# ms.industry: 
+ms.assetid: 91690320-7845-47c0-96e2-875e9e6a806d
+ms.search.region: Mexico
+# ms.search.industry: 
 ms.author: sndray
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

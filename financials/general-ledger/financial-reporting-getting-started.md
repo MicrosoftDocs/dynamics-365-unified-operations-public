@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Financial reporting | Microsoft Docs
+title: Financial reporting
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 for Operations and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-10-19 23:20:32
+ms.date: 2015-10-19 23 - 20 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: FinancialReports
+ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 81
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10444
-ms.assetid: 7765ef8b-c3ed-4358-89b4-1e7c77b7ff19
-ms.region: Global
-# ms.industry: 
+ms.assetid: 22fd952d-fac7-4901-b46d-0ffc50496d8d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -118,7 +120,7 @@ From the financial reports list, you can create a new report or modify an existi
 See also
 --------
 
-[View financial reports](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/view-financial-reports)
+[View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reporting blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 

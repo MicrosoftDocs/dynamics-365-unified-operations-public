@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Section Tabbed List subpattern | Microsoft Docs
+title: Section Tabbed List subpattern
 description: This article provides information about the Section Tabbed List subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains a set of vertical tabs, each of which contains a filtered list of data.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 22:21:22
+ms.date: 2016-01-11 22 - 21 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29291
-ms.assetid: 61d22a2d-a0cc-4fc6-b2dd-5b36ebcc9e33
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6943840a-20e0-491b-8c95-669c1e785f24
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -60,14 +62,14 @@ Apply Section Tabbed List to the appropriate tab page in the workspace.
 
 ### Related container patterns
 
--   [Operational Workspace](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)
--   [Form Part Section List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-list-form-pattern)
+-   [Operational Workspace](workspace-form-pattern.md)
+-   [Form Part Section List](section-list-form-pattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   At least one list should be present in the tabbed list section.
--   Each Form Part Control should point to a form that uses one of the [Form Part Section List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-list-form-pattern) patterns.
+-   Each Form Part Control should point to a form that uses one of the [Form Part Section List](section-list-form-pattern.md) patterns.
 
 ## Examples
 Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order preparation**) [![tabbedListSectionExample](./media/tabbedlistsectionexample.png)](./media/tabbedlistsectionexample.png)

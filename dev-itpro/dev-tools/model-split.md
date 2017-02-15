@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Model split | Microsoft Docs
-description: This topic explains the split of the stack into three main models: the Application Platform, the Application Foundation, and the Application Suite.
+title: Model split
+description: This topic explains the split of the stack into three main models -  the Application Platform, the Application Foundation, and the Application Suite.
 author: maertenm
 manager: AnnBe
-ms.date: 2015-12-13 02:27:13
+ms.date: 2015-12-13 02 - 27 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26941
-ms.assetid: 53e6bbf1-f578-4f9d-858e-a6dc0a780dbe
-ms.region: Global
-# ms.industry: 
+ms.assetid: f9e3d005-fa02-4162-ae63-bb8cccd6801d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: maertenm
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Model split
 
-This topic explains the split of the stack into three main models: the Application Platform, the Application Foundation, and the Application Suite.
+This topic explains the split of the stack into three main models -  the Application Platform, the Application Foundation, and the Application Suite.
 
 Overview
 --------
@@ -45,7 +47,7 @@ There are two methods for customizing: overlayering and extensions. Overlayering
 -   In the cloud, Microsoft can install, patch, upgrade, and change internal APIs without affecting your customizations.
 -   You can service your solutions independently without concerns about other customizations.
 
-There are currently support code extensions, table extensions, form extensions, menu extensions, and enum extensions. The Extensions section in [Customizations: Overlayering and extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/customization-overlayering-and-extensions) and [Customize model elements using extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensions-overlayering/customize-model-elements-using-extensions) provide a more detailed explanation on how to use extensions.  Extensions should be used on supported elements wherever possible and are best applied when no change to existing Microsoft code is needed. A change to mask a method’s functionality requires overlayering to change the code itself.  Overlayering should be in areas not covered by extensions and when the customization alters the base functionality. The illustration below summarizes differences between the two customization strategies. [![Customization Overview](./media/customization-overview.png)](./media/customization-overview.png)
+There are currently support code extensions, table extensions, form extensions, menu extensions, and enum extensions. The Extensions section in [Customizations: Overlayering and extensions](customization-overlayering-extensions.md) and [Customize model elements using extensions](customize-model-elements-extensions.md) provide a more detailed explanation on how to use extensions.  Extensions should be used on supported elements wherever possible and are best applied when no change to existing Microsoft code is needed. A change to mask a method’s functionality requires overlayering to change the code itself.  Overlayering should be in areas not covered by extensions and when the customization alters the base functionality. The illustration below summarizes differences between the two customization strategies. [![Customization Overview](./media/customization-overview.png)](./media/customization-overview.png)
 
 ## Model breakdown
 <table>

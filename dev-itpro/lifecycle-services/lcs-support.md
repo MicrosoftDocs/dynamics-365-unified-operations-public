@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Find support for Dynamics 365 for Operations and Dynamics Lifecycle Services | Microsoft Docs
+title: Find support for Dynamics 365 for Operations and Dynamics Lifecycle Services
 description: This article explains how to get help with Microsoft Dynamics 365 for Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 author: kfend
 manager: AnnBe
-ms.date: 2016-11-07 23:31:30
+ms.date: 2016-11-07 23 - 31 - 30
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 254844
-ms.assetid: a480992e-2410-4f41-8099-75af23c15732
-ms.region: Global
-# ms.industry: 
+ms.assetid: 32f3a5a1-8b6d-4511-bd1d-4cdac4675b90
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: anupams
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -63,7 +65,7 @@ To obtain support for Dynamics 365 for Operations or LCS, use the resources in t
 <tr class="even">
 <td><a href="./media/graphic-2.jpg"><img src="./media/graphic-2.jpg" alt="Graphic 2" class="size-full wp-image-583101 aligncenter" width="79" height="79" /></a></td>
 <td>Use the Issue search tool.</td>
-<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues in Dynamics 365 for Operations. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area . For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/issue-search-lifecycle-services-lcs"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
+<td>In <a href="https://lcs.dynamics.com/"><span style="color: #0066cc;">LCS</span></a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues in Dynamics 365 for Operations. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area . For more information, see <a href="issue-search-lcs.md"><span style="color: #0066cc;">Issue search (Lifecycle Services, LCS)</span></a>.</td>
 </tr>
 <tr class="odd">
 <td><a href="./media/graphic-3.jpg"><img src="./media/graphic-3.jpg" alt="Graphic 3" class="size-full wp-image-583111 aligncenter" width="79" height="82" /></a></td>
@@ -73,7 +75,7 @@ To obtain support for Dynamics 365 for Operations or LCS, use the resources in t
 <li>On the <strong>Active issue</strong> tab, select your issue, and then click <strong>Submit to Microsoft</strong>.</li>
 <li>On the <strong>Submitted to Microsoft</strong> tab, click <strong>Submit a new Incident</strong> to submit the issue.</li>
 </ul>
-If you are a Microsoft Premier Customer, you can submit support tickets from <a href="https://premier.microsoft.com/"><span style="color: #0066cc;">Microsoft Premier Online</span></a>. For more information about the support workflow from Dynamics 365 for Operations to LCS, see Set up your technical support for <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-support-experience"><span style="color: #0066cc;">Microsoft Dynamics 365 for Operations</span></a>.</td>
+If you are a Microsoft Premier Customer, you can submit support tickets from <a href="https://premier.microsoft.com/"><span style="color: #0066cc;">Microsoft Premier Online</span></a>. For more information about the support workflow from Dynamics 365 for Operations to LCS, see Set up your technical support for <a href="ax-support-experience.md"><span style="color: #0066cc;">Microsoft Dynamics 365 for Operations</span></a>.</td>
 </tr>
 <tr class="even">
 <td><a href="./media/graphic-4.jpg"><img src="./media/graphic-4.jpg" alt="Graphic 4" class="size-full wp-image-583141 aligncenter" width="85" height="78" /></a></td>

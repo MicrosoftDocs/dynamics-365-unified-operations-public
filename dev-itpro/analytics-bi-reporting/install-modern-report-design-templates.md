@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install report design templates | Microsoft Docs
+title: Install report design templates
 description: This articles describes how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible header and footer branding.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-04-14 13:31:54
+ms.date: 2016-04-14 13 - 31 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 82783
-ms.assetid: 57b7f63e-2bbe-4b95-9273-b92117fc8588
-ms.region: Global
-# ms.industry: 
+ms.assetid: 646ec5ae-4c3c-4072-8009-93bb8a1b3b70
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -60,7 +62,7 @@ The report designs have been bundled into a model file and posted to Microsoft D
 
             ModelUtil.exe -import -metadatastorepath=C:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
 
-    For more information about how to import model files, see [Distribution of models: How to export and import a model](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/distribution-of-models-how-to-export-and-import-a-model). After you've imported the model file, start Microsoft Visual Studio 2015 to verify that the new collection appears under the **AOT** node in Application Explorer. [![New collection under the AOT node](./media/imported-model-file-1024x488.png)](./media/imported-model-file.png)
+    For more information about how to import model files, see [Distribution of models: How to export and import a model](models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015 to verify that the new collection appears under the **AOT** node in Application Explorer. [![New collection under the AOT node](./media/imported-model-file-1024x488.png)](./media/imported-model-file.png)
 
 3.  Follow these steps to incorporate the modern report design into an existing application suite report:
     1.  Create a project that contains the application suite report.

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Derived books | Microsoft Docs
+title: Derived books
 description: This article provides an overview of derived book functionality.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 20:49:10
+ms.date: 2015-09-10 20 - 49 - 10
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetBookTable
+ms.search.form: AssetBookTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3401
-ms.assetid: 13aff447-eec7-4bcd-890e-d5305e9ea39b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 5b11cce9-6654-483d-a276-44efe138d071
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -45,5 +47,5 @@ The purpose of derived books is to simplify the posting of fixed asset book tran
 See also
 --------
 
-[Posting with derived books](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/posting-with-derived-value-models)
+[Posting with derived value models](post-derived-value-models.md)
 

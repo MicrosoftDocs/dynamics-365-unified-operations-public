@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Implement a return policy using triggers | Microsoft Docs
+title: Implement a return policy using triggers
 description: This topic has two examples which show how you can implement a new policy using a trigger.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-03-17 18:37:11
+ms.date: 2016-03-17 18 - 37 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: josaw1
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: josaw1
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65863
-ms.assetid: b5c6e2ef-2ee5-4147-b096-3b1ca9d9361f
-ms.region: Global
-# ms.industry: 
+ms.assetid: c029e893-cb6c-4412-94b7-94c038c5d990
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mumani
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

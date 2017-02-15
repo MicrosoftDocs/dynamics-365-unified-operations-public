@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Accounts payable invoice matching | Microsoft Docs
+title: Accounts payable invoice matching
 description: Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-13 05:32:09
+ms.date: 2015-12-13 05 - 32 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: VendInvoicePostingHistory
+ms.search.form: VendInvoicePostingHistory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27361
-ms.assetid: 4bd332a9-81f3-43cd-84a1-ba970f73bd9c
-ms.region: Global
-# ms.industry: 
+ms.assetid: a7cd6567-bdbb-4e7b-8916-e502812cda23
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: abruer
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -178,7 +180,7 @@ See also
 
 [Set up Accounts payable invoice matching validation](https://ax.help.dynamics.com/en/wiki/set-up-accounts-payable-invoice-matching-validation/)
 
-[Three-way matching policies](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/three-way-matching-policies)
+[Three-way matching policies](three-way-matching-policies.md)
 
-[Invoice matching and intercompany purchase orders](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/invoice-matching-and-intercompany-purchase-orders)
+[Invoice matching and intercompany purchase orders](invoice-matching-intercompany-purchase-orders.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Import data from a CSV data source (AX 2012) | Microsoft Docs
+title: Import data from a CSV data source (AX 2012)
 description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to import data from a CSV file into Microsoft Dynamics AX.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 18:10:26
+ms.date: 2015-12-05 18 - 10 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18801
-ms.assetid: 5bbc0b8e-37f2-4d63-a05c-b234dc881704
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: e38c8e77-173c-4789-99f5-d1d7dadbd048
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -49,7 +51,7 @@ To complete this walkthrough you will need:
 -   Data Import/Export Framework
 
 ## Find a CSV file to use as a source
-To work through this example, use any of the delimited demo files that are shipped with the Data Import/Export Framework. For more information on the demo files, see [Demo files for the Data import/export framework (DIXF, DMF)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/demo-files-for-the-data-importexport-framework-dixf-dmf).
+To work through this example, use any of the delimited demo files that are shipped with the Data Import/Export Framework. For more information on the demo files, see [Demo files for the Data import/export framework (DIXF, DMF)](demo-files-dixf.md).
 
 ## Define the format of your source data
 1.  Open **Data Import/Export Framework**, and then click **Setup** &gt; **Source data formats**.

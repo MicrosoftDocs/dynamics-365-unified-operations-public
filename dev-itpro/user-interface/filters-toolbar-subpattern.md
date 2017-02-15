@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Filters and Toolbar subpatterns | Microsoft Docs
+title: Filters and Toolbar subpatterns
 description: This article provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 18:40:37
+ms.date: 2016-01-11 18 - 40 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29191
-ms.assetid: 1cea5fd1-4623-4eea-b4e9-ed6c1a57ac7c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9ab229b3-1017-4559-96d2-0495ff3b9dc5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -94,8 +96,8 @@ Apply the correct Filters and Toolbar subpattern to the container control.
 
 ### Related container patterns
 
--   [Form Part Section List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-list-form-pattern)
--   [Section Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-chart-form-pattern)
+-   [Form Part Section List](section-list-form-pattern.md)
+-   [Section Chart](section-chart-form-pattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.

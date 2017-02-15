@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ math run-time functions | Microsoft Docs
+title: X++ math run-time functions
 description: This wiki describes the math run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 22:13:25
+ms.date: 2016-02-04 22 - 13 - 25
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31361
-ms.assetid: b1c2c6af-bf58-48fe-abf9-ebb43e002a8b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9cdde987-2872-4bdd-8e9c-3f7048f562a6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

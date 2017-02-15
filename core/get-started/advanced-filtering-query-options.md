@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Advanced filtering and query syntax | Microsoft Docs
+title: Advanced filtering and query syntax
 description: This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-09-11 13:41:48
+ms.date: 2015-09-11 13 - 41 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SysQueryForm
+ms.search.form: SysQueryForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3811
-ms.assetid: 8b7c5d3c-2962-4a9f-9cfe-cc16f616a34b
-ms.region: Global
-# ms.industry: 
+ms.assetid: a82ae8da-f4a3-48a7-8821-c6c7307309ea
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

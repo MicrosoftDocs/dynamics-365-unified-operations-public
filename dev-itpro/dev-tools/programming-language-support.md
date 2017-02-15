@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Programming language support | Microsoft Docs
+title: Programming language support
 description: This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Operations.
 author: pvillads
 manager: AnnBe
-ms.date: 2015-12-13 01:58:36
+ms.date: 2015-12-13 01 - 58 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26781
-ms.assetid: e0b788e5-8a00-4b9c-a50f-e945b39214c4
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0351ac9c-d9bc-4dc3-a6e5-8e52abef27de
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -113,5 +115,5 @@ See also
 
 [Dynamics AX LINQ Provider for use in C#](https://ax.help.dynamics.com/en/?p=185911)
 
-[Technical Concepts Guide](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Technical Concepts Guide](developer-landing-page.md)
 

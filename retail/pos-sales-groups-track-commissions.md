@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Track commissions in POS using sales groups | Microsoft Docs
+title: Track commissions in POS using sales groups
 description: It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-12-02 20:08:17
+ms.date: 2016-12-02 20 - 08 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 41
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261234
-ms.assetid: 051dcee7-6ea6-4bee-bdae-74e7c50f302f
-ms.region: global
-ms.industry: Retail
+ms.assetid: 5c8f8481-3506-4e59-b9a1-b26f059c3fbc
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: jeffbl
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

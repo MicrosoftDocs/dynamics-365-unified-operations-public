@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Master plans | Microsoft Docs
+title: Master plans
 description: Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-15 21:27:18
+ms.date: 2015-09-15 21 - 27 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ReqParameters, ReqPlanSched
+ms.search.form: ReqParameters, ReqPlanSched
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7911
-ms.assetid: a58994c0-7230-4ae8-8d8e-71d926bfb417
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: bc22e5c5-5d09-4110-8270-636ed5dae428
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: roxanad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -49,7 +51,7 @@ You can also set up the starting dynamic plan so that it is updated with the new
 See also
 --------
 
-[Coverage settings](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/coverage-settings)
+[Coverage settings](coverage-settings.md)
 
 [Separating tactical and operative planning for master scheduling](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 

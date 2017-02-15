@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Document Reporting Services overview | Microsoft Docs
+title: Document Reporting Services overview
 description: This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-03-21 14:30:43
+ms.date: 2016-03-21 14 - 30 - 43
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 69191
-ms.assetid: da6ea877-6e02-4aa5-9475-78499f5d65cf
-ms.region: Global
-# ms.industry: 
+ms.assetid: b453ec1f-313f-4e20-9440-d92754206284
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

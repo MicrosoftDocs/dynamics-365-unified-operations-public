@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Record entry points in Dynamics AX Enterprise Portal | Microsoft Docs
+title: Record entry points in Dynamics AX Enterprise Portal
 description: You can record business process flows in Enterprise Portal for Microsoft Dynamics AX by using event traces. You can then view the business process flows in the Security Development Tool.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-03-30 21:46:58
+ms.date: 2016-03-30 21 - 46 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012 R3 CU8
+# ms.reviewer: 51
+ms.search.scope: AX 2012 R3 CU8
 # ms.tgt_pltfrm: 
 ms.custom: 74812
-ms.assetid: 8deab84f-1255-498c-99b5-51a799eabb81
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 18a65a44-9d43-4351-8d0c-0d6bf5283e16
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: AX 2012 R3 CU8
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Global address book | Microsoft Docs
+title: Data entities -  Global address book
 description: This article provides a list of the data entities that are available for the Global address book functionality in Microsoft Dynamics 365 for operations.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:19:07
+ms.date: 2016-06-29 14 - 19 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95803
-ms.assetid: f1943210-7929-4c60-a339-d6f12b425679
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 472580a6-e7c4-456a-a3b1-7c24075fa76f
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Global address book
+# Data entities -  Global address book
 
 This article provides a list of the data entities that are available for the Global address book functionality in Microsoft Dynamics 365 for operations.
 
@@ -142,7 +144,7 @@ Define relationships between parties and people.
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

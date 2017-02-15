@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up Electronic reporting to provide Power BI with data from Dynamics 365 for Operations | Microsoft Docs
+title: Set up Electronic reporting to provide Power BI with data from Dynamics 365 for Operations
 description: This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Dynamics 365 for Operations to Power BI services. As an example, this topic uses Intrastat transactions as business data that must be transferred. The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-31 13:22:29
+ms.date: 2016-10-31 13 - 22 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 71
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220314
-ms.assetid: 06e297b3-e6cc-462c-a71a-8d379db80c7b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 949665ce-ae27-4352-a88a-c5ceee6c01b7
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: nselin
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -65,7 +67,7 @@ To complete the example in this topic, you must have the following access:
 3.  In the **Electronic reporting** workspace, make the required provider active by clicking **Set active**. For more information, play the **ER Select service provider** task guide.
 
 ## Use an ER data model as the source of data
-You must have an ER data model as the source of business data that will be used on Power BI reports. This data model is uploaded from the ER configurations repository. For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-er-configuration-from-lifecycle-services), or play the **ER Import a configuration from Lifecycle Services** task guide. Select **Intrastat** as the data model that will be uploaded from the selected ER configurations repository. (In this example, version 1 of the model is used.) You can then access the **Intrastat** ER model configuration on the **Configurations** page. [![Configurations page](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+You must have an ER data model as the source of business data that will be used on Power BI reports. This data model is uploaded from the ER configurations repository. For more information, see [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md), or play the **ER Import a configuration from Lifecycle Services** task guide. Select **Intrastat** as the data model that will be uploaded from the selected ER configurations repository. (In this example, version 1 of the model is used.) You can then access the **Intrastat** ER model configuration on the **Configurations** page. [![Configurations page](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## Design an ER format configuration
 You must create a new ER format configuration that uses the **Intrastat** data model as the source of business data. This format configuration must generate output results as electronic documents in OpenXML (Excel file) format. For more information, play the **ER Create a configuration for reports in OPENXML format** task guide. Name the new configuration **Import / export activities**, as shown in the following illustration. Use the [ER data - import and export details](./media/er-data-import-and-export-details.xlsx) Excel file as a template when you design the ER format. (For information about how to import a format template, play the task guide.) [![Import / export activities configuration](./media/ger-power-bi-format-configuration-1024x398.png)](./media/ger-power-bi-format-configuration.png) To modify the **Import / export activities** format configuration, follow these steps.
@@ -115,12 +117,12 @@ To create a new Power BI report, click the **Import and export details** Power B
 Save the Power BI report as **Import and export details report**. [![Import and export details report](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Note that the map shows the countries/regions that are mentioned in the Excel file (Austria and Switzerland in this example). These countries/regions are colored to show the proportion of invoiced amounts for each. Update the list of Intrastat transactions. The export transaction that originated from Italy is added. [![Intrastat transactions list](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) Wait for the next scheduled execution of the ER report and the next scheduled update of the Power BI dataset. Then review the Power BI report (select to show import transactions only). The updated map now shows Italy. [![Updated map](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## Access Power BI report in Dynamics 365 for Operations
-Set up the integration between Dynamics 365 for Operations and Power BI. For more information, see [Configuring Power BI integration for workspaces](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/configuring-powerbi-integration). On the **Electronic reporting** workspace page that supports Power BI integration (**Organization administration** &gt; **Workspaces** &gt; **Electronic reporting workspace**), click **Options** &gt; **Open report catalog**. Select the **Import and export details** Power BI report that you created, to show that report as an action item on the selected page. Click the action item to open the Dynamics 365 for Operations page that shows the report that you designed in Power BI. [![Import and export details report](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+Set up the integration between Dynamics 365 for Operations and Power BI. For more information, see [Configuring Power BI integration for workspaces](configure-power-bi-integration.md). On the **Electronic reporting** workspace page that supports Power BI integration (**Organization administration** &gt; **Workspaces** &gt; **Electronic reporting workspace**), click **Options** &gt; **Open report catalog**. Select the **Import and export details** Power BI report that you created, to show that report as an action item on the selected page. Click the action item to open the Dynamics 365 for Operations page that shows the report that you designed in Power BI. [![Import and export details report](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 See also
 --------
 
-[Electronic reporting destinations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/using-electronic-reporting-destinations)
+[Electronic reporting destinations](electronic-reporting-destinations.md)
 
-[Electronic reporting overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger)
+[Electronic reporting overview](general-electronic-reporting.md)
 

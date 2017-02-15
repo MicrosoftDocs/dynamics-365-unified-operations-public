@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Settle a partial vendor payment that has multiple discount periods | Microsoft Docs
+title: Settle a partial vendor payment that has multiple discount periods
 description: This article walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:20:28
+ms.date: 2015-12-02 23 - 20 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerJournalTransVendPaym, VendOpenTrans
+ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14262
-ms.assetid: edffd08f-d7f3-4888-822d-9ad3c8578f9c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7b13e3cd-a1f0-46ea-ae78-e4de044d7881
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

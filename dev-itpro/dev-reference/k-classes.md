@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: K Classes | Microsoft Docs
+title: K Classes
 description: System API classes that start with the letter K.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 14:26:11
+ms.date: 2016-02-24 14 - 26 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52261
-ms.assetid: bd803b9e-d608-4495-9758-39740b3f15ad
-ms.region: Global
-# ms.industry: 
+ms.assetid: de038ffc-197f-4ee0-9b4d-4c8838699901
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

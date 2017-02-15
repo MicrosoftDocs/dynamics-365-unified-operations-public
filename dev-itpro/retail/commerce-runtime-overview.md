@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Commerce runtime overview | Microsoft Docs
-description: This article provides information about the architecture and configuration of the Microsoft Dynamics 365 for Operations Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the retail channel.
-
+title: Commerce runtime overview
+description: This article provides information about the architecture and configuration of the Microsoft Dynamics 365 for Operations Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the retail channel. 
 author: MargoC
 manager: AnnBe
-ms.date: 2016-10-27 20:33:32
+ms.date: 2016-10-27 20 - 33 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,25 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 218654
-ms.assetid: b0d3867a-6ff1-4f8a-b8c0-a389e9b478c7
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8975fa3a-2c59-432d-ab0f-7bebd22ce2fd
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: yabinl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Commerce runtime overview
 
-This article provides information about the architecture and configuration of the Microsoft Dynamics 365 for Operations Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the retail channel.
-
+This article provides information about the architecture and configuration of the Microsoft Dynamics 365 for Operations Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the retail channel. 
 
 Commerce Runtime architecture
 -----------------------------

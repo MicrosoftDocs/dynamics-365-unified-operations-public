@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cash discount is applied in the invoice parameter | Microsoft Docs
+title: Cash discount is applied in the invoice parameter
 description: This topic describes the Cash discount is applied in the invoice parameter for Spain.
-author: ShylaThompson
+author: annbe
 manager: AnnBe
-ms.date: 2016-12-02 22:20:22
+ms.date: 2016-12-02 22 - 20 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerParameters
+ms.search.form: LedgerParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261474
-ms.assetid: 72b2737b-d9a7-4c0e-bb81-dfd9a078131c
-ms.region: Spain
-# ms.industry: 
-ms.author: v-elgolu
+ms.assetid: 340b6117-1a15-4dbf-9938-b3208e6197d1
+ms.search.region: Spain
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

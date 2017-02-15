@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: POS application and user language settings | Microsoft Docs
+title: POS application and user language settings
 description: This topic describes how to change language settings in Retail Modern POS (MPOS) and Cloud POS.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-04-07 15:08:29
+ms.date: 2016-04-07 15 - 08 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmWorker, RetailStoreTable
+ms.search.form: HcmWorker, RetailStoreTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 41
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78891
-ms.assetid: 7d64a346-701c-46a5-ada8-6542a6058779
-ms.region: global
-ms.industry: Retail
+ms.assetid: 4b33196a-33b0-444f-b3a8-66784d530e98
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: jeffbl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

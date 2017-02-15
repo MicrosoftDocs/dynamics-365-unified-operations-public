@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Message center, message bar, and message details API | Microsoft Docs
+title: Message center, message bar, and message details API
 description: This topic describes the messaging system.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-03-10 01:39:14
+ms.date: 2016-03-10 01 - 39 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64153
-ms.assetid: 2b96e82f-10c7-4f89-b6e3-bf92a78a874b
-ms.region: Global
-# ms.industry: 
+ms.assetid: b71dc038-4c64-40d1-8ffd-69207a781494
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aorth
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

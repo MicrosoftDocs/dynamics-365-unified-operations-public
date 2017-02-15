@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Sales tax rates based on the Marginal base and Calculation methods | Microsoft Docs
+title: Sales tax rates based on the Marginal base and Calculation methods
 description: This article explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-09-15 15:06:40
+ms.date: 2015-09-15 15 - 06 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TaxTable
+ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7171
-ms.assetid: 93ab2a29-8750-4560-a02f-c2a4015849b8
-ms.region: Global
-# ms.industry: 
+ms.assetid: e062def6-2167-45c6-ae11-235e2a5e166d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: vstehman
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -142,7 +144,7 @@ Marginal base: **Invoice total incl. other sales tax amounts** Calculation metho
 See also
 --------
 
-[Whole amount and Interval calculation options for sales tax codes](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/whole-amount-and-interval-options-for-sales-tax-codes)
+[Whole amount and Interval calculation options for sales tax codes](whole-amount-interval-options-sales-tax-codes.md)
 
-[Sales tax calculation methods in the Origin field](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/sales-tax-calculation-methods-in-the-origin-field)
+[Sales tax calculation methods in the Origin field](sales-tax-calculation-methods-origin-field.md)
 

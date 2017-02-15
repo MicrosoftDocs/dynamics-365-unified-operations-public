@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Install the Security Development Tool (AX 2012) | Microsoft Docs
+title: Install the Security Development Tool (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 23:30:27
+ms.date: 2015-12-04 23 - 30 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18391
-ms.assetid: 92e6f21e-6e5d-44bf-b8fe-3f1a06270cc6
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 0fa058d0-c878-4a61-94cc-5afd85904124
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

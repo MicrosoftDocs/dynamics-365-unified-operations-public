@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: C Classes | Microsoft Docs
+title: C Classes
 description: System API classes that start with the letter C.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-18 20:23:13
+ms.date: 2016-02-18 20 - 23 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: a:2:{s:4:"name";s:22:"Robin Reynolds-Haertle";s:2:"id";s:0:"";}
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: a:2:{s:4:"name";s:22:"Robin Reynolds-Haertle";s:2:"id";s:0:"";}
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50962
-ms.assetid: 8b79e564-5a3b-40b8-bafb-f287f58db2fd
-ms.region: Global
-# ms.industry: 
+ms.assetid: 941d83a3-1967-41e1-b659-1b30465340e3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

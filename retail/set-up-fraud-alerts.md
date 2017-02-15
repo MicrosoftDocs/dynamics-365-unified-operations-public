@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up fraud alerts | Microsoft Docs
+title: Set up fraud alerts
 description: This topic explains how to set up rules to alert customer service representatives of potentially fraudulent information when orders are processed. You can define specific codes to use to automatically or manually put suspicious orders on hold. 
 author: josaw1
 manager: AnnBe
-ms.date: 2016-04-07 19:45:58
+ms.date: 2016-04-07 19 - 45 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2041
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2041
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 79103
-ms.assetid: 1d8a16de-8d05-4179-a464-aa9bc36881fa
-ms.region: global
-ms.industry: Retail
+ms.assetid: 39e2817d-33e7-4580-9474-16c6f4ccd85b
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: josaw
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

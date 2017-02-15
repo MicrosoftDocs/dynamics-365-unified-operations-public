@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail hierarchies | Microsoft Docs
+title: Retail hierarchies
 description: This article describes retail hierarchies in Microsoft Dynamics AX.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-03 20:54:28
+ms.date: 2015-12-03 20 - 54 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15851
-ms.assetid: f823e81a-2e18-4824-9403-3c256639def9
-ms.region: global
-ms.industry: Retail
+ms.assetid: 1e860188-b822-43a8-a06e-2c147ce64c12
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: jeffbl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

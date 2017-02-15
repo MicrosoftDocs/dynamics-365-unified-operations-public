@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: N Classes | Microsoft Docs
+title: N Classes
 description: System API classes that start with the letter N.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 14:27:25
+ms.date: 2016-02-24 14 - 27 - 25
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52351
-ms.assetid: c8e997a4-9516-4aa1-84b1-8c892bfb0125
-ms.region: Global
-# ms.industry: 
+ms.assetid: 63d2ff90-8a43-4d9a-8dc6-d56414534a97
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

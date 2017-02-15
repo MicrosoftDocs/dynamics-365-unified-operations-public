@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up a continuity program for a call center | Microsoft Docs
+title: Set up a continuity program for a call center
 description: This article describes how to set up a continuity program for a call center.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-03 22:12:11
+ms.date: 2015-12-03 22 - 12 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16081
-ms.assetid: 141cc3cd-276f-403c-bd6d-f0968e33b46e
-ms.region: global
-ms.industry: Retail
+ms.assetid: 51996623-00c8-46fb-800a-6e19c81460e0
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: josaw
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

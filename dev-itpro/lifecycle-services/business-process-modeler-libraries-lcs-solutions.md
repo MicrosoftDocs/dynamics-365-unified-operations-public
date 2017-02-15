@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up Business process modeler libraries for an LCS solution | Microsoft Docs
+title: Set up Business process modeler libraries for an LCS solution
 description: This topic explains how to create and work with Business process modeler (BPM) libraries.
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-03 22:50:07
+ms.date: 2016-10-03 22 - 50 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Lifecycle Services
+# ms.reviewer: 51
+ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196953
-ms.assetid: b8d311d0-e9d1-4e64-bb4c-efd56f9bc02c
-ms.region: Global
-# ms.industry: 
+ms.assetid: bfcd133d-b280-40a8-908b-14e6994c4e7c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omarc
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 
@@ -79,7 +81,7 @@ Follow these steps to change or update the business process lines or hierarchy i
 There are two sections in business process libraries: **Core Business Processes** and **Support Processes**. The **Core Business Processes** section should include all custom business processes for your solution. All customizations and functionality should be covered in end-to-end scenarios. Task recordings should be created for all processes in this section. Import American Productivity & Quality Center (APQC) processes that are relevant to your solution into the **Support Processes** section. This section should not include any custom business processes. You don't have to create task recordings for processes in this section. Your business process library should be aligned with the descriptions and summaries in your methodology and your marketing material.
 
 ## Create a task recording and associate it with a business process
-Task recordings should be created in a Microsoft Dynamics 365 for Operations environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder in Microsoft Dynamics 365 for Operations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-recorder-in-ax7).
+Task recordings should be created in a Microsoft Dynamics 365 for Operations environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder in Microsoft Dynamics 365 for Operations](task-recorder.md).
 
 ### Create a task recording
 
@@ -122,5 +124,5 @@ Task recordings can be played as task guides. Task guides are used to guide user
 See also
 --------
 
-[LCS Solutions for AppSource home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/lcs-solutions-for-app-source)
+[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 

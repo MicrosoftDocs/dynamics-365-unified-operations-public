@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Currency revaluation in a consolidation company | Microsoft Docs
+title: Currency revaluation in a consolidation company
 description: 
 author: rschloma
 manager: AnnBe
-ms.date: 2016-03-08 17:49:53
+ms.date: 2016-03-08 17 - 49 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62183
-ms.assetid: 4a8ea63d-d323-4b48-89b6-605c49f8b39a
-ms.region: Global
-# ms.industry: 
+ms.assetid: db00ebd9-3499-429e-be10-3e1436cedbb8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: hminzner
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

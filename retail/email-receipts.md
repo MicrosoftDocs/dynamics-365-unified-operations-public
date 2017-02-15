@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Send email receipts from Retail Modern POS | Microsoft Docs
+title: Send email receipts from Retail Modern POS
 description: In Retail Modern Point of Sale (MPOS), you can send receipt emails at the time a transaction is tendered at the point of sale.  
 author: josaw1
 manager: AnnBe
-ms.date: 2016-11-03 21:28:48
+ms.date: 2016-11-03 21 - 28 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 41
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 252934
-ms.assetid: 79fab271-81fa-4ec2-a563-5291eb438c2e
-ms.region: global
-ms.industry: Retail
+ms.assetid: 867da6ff-66cf-480f-afbe-52b350b0e6d4
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: jashanno
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

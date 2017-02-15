@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up and process recurring invoices | Microsoft Docs
+title: Set up and process recurring invoices
 description: This article explains how to set up and process recurring invoices. You can use recurring invoices if you must invoice customers for the same amount on a regular basis.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:03:29
+ms.date: 2015-12-02 23 - 03 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustInvoiceTemplate
+ms.search.form: CustInvoiceTemplate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14011
-ms.assetid: bf098b9b-0f5f-4602-9d0a-66cb7043cccf
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2b9f6aec-4fb3-4625-9d59-7ec282111dd1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mfalkner
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

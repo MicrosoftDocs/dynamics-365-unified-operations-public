@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: General form guidelines | Microsoft Docs
-description: This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
+title: General form guidelines
+description: This article contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 00:21:07
+ms.date: 2015-12-03 00 - 21 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14701
-ms.assetid: d4bf9a8f-17fc-4faa-9b82-ae860f997453
-ms.region: Global
-# ms.industry: 
+ms.assetid: bc7bbc2b-60d9-425a-866b-235a82e9818f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # General form guidelines
 
-This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
+This article contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 
 Verification checklist
 ----------------------
@@ -135,7 +137,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
     -   **Exceptions:**
         -   FastTabs that contain only a grid aren't expected to display summary fields.
         -   Dimensions FastTab pages can't display summary fields, because this functionality isn't currently supported.
--   If the FastTab contains a grid, it should follow the [Toolbar and List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern)subpattern guidelines.
+-   If the FastTab contains a grid, it should follow the [Toolbar and List](toolbar-list-subpattern.md)subpattern guidelines.
 
 ## Radio button guidelines
 -   Follow all [standard Microsoft guidelines for radio buttons.](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511488.aspx) Specifically, observe these guidelines:
@@ -156,13 +158,13 @@ Mandatory fields are fields that the user must supply values for to guarantee da
     -   From the least risk to the most risk
 
 ## Check box and toggle guidelines
-Toggle buttons are typically used instead of traditional check boxes. [![GeneralForm(3)](./media/generalform3.jpg)](./media/generalform3.jpg)
+In the current version of Microsoft Dynamics AX, toggle buttons are typically used instead of traditional check boxes. [![GeneralForm(3)](./media/generalform3.jpg)](./media/generalform3.jpg)
 
 -   Follow all [standard Microsoft guidelines for check boxes.](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511452.aspx) Specifically, observe these guidelines:
     -   By default, use toggle buttons instead of check boxes in forms. The label must follow the Microsoft guidelines for check box labels.
         -   **Exceptions:**
             -   Use a check box when a large number of related options must be set in a group.
-            -   Use a check box inside [Custom Filter Group](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/custom-filter-group-subpattern)subpatterns.
+            -   Use a check box inside [Custom Filter Group](custom-filter-group-subpattern.md)subpatterns.
             -   Groups where a check box is used on the frame to collect related fields. *This exception is currently under review to add clarity.*
     -   Don't use check boxes/toggle buttons as a progress indicator.
     -   Don't use check boxes to initiate a command. However, a message box can be shown to the user to refine or clarify the choice.
@@ -171,7 +173,7 @@ Toggle buttons are typically used instead of traditional check boxes. [![General
     -   Use positive phrasing. Don't phrase a label so that selection of the check box means that an action is **not** performed.
 
 ## Selection panel guidelines
--   Occasionally, you'll require a discrete list of options that the user can select from, where each option presents the same interface. Don't use radio buttons to present the list of options. Instead, use a combo box control inside a [Custom Filter Group ](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/custom-filter-group-subpattern)group.
+-   Occasionally, you'll require a discrete list of options that the user can select from, where each option presents the same interface. Don't use radio buttons to present the list of options. Instead, use a combo box control inside a [Custom Filter Group ](custom-filter-group-subpattern.md)group.
 -   If the selection list is common to a set of items, the combo box should appear above all the items that are affected.
 
 ## General grid guidelines

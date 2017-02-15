@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Year-end 1099 reporting | Microsoft Docs
+title: Year-end 1099 reporting
 description: If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the U.S. tax authorities at the end of the calendar year. The vendors are typically individuals who are not employees and who provide services to your organization. You must also send a statement to each 1099 vendor that you do business with, informing them of the amount that you are reporting to the tax authorities.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-14 19:03:00
+ms.date: 2015-09-14 19 - 03 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: Tax1099Fields, Tax1099Summary
+ms.search.form: Tax1099Fields, Tax1099Summary
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6861
-ms.assetid: cffae56d-e9ed-4bcd-9bc5-d1f77b6b0e15
-ms.region: United States
-# ms.industry: 
+ms.assetid: 1d52c48b-2e46-48be-bf0d-88265780a35c
+ms.search.region: United States
+# ms.search.industry: 
 ms.author: abruer
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: abruer
 
 If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the U.S. tax authorities at the end of the calendar year. The vendors are typically individuals who are not employees and who provide services to your organization. You must also send a statement to each 1099 vendor that you do business with, informing them of the amount that you are reporting to the tax authorities.
 
-When you set up a vendor to be a 1099 vendor, the amounts are tracked within Microsoft Dynamics 365 for Operations throughout the year. On invoice lines, you use the 1099 box and 1099 amount fields to track 1099 amounts. As you settle payments against these invoices that contain 1099 information, the 1099 settled values are tracked.
+When you set up a vendor to be a 1099 vendor, the amounts are tracked within Microsoft Dynamics AX throughout the year. On invoice lines, you use the 1099 box and 1099 amount fields to track 1099 amounts. As you settle payments against these invoices that contain 1099 information, the 1099 settled values are tracked.
 After you settle payments against an invoice, you can modify any 1099 amount using the Tax 1099 transactions page. Some invoice lines for a vendor might need 1099 tracking whereas others do not. You can clear the 1099 settled option for any invoice line that needs no 1099 tracking. You can also create a new 1099 transaction that is not associated with an invoice by selecting the Manual 1099 transactions option on the Vendor settlement for 1099s page. If you set up a 1099 vendor during the calendar year after you have already processed transactions for that vendor, you can update the previous transactions to be 1099 transactions. On the Vendors page, select the action Update 1099 to update transactions. This calculates 1099 amounts for paid invoices that are in the specified date range, according to the settings on the Tax 1099 tab on the Vendors page.
 | **Note**                                                                      |
 |-------------------------------------------------------------------------------|

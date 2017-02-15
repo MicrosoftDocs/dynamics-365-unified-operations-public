@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Formula designer in Electronic reporting | Microsoft Docs
-description: This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use Microsoft Excel–like formulas for data transformation to meet the requirements for that document's fulfillment and formatting. Various types of functions are supported: text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions).
+title: Formula designer in Electronic reporting
+description: This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use Microsoft Excel–like formulas for data transformation to meet the requirements for that document's fulfillment and formatting. Various types of functions are supported -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions).
 author: kfend
 manager: AnnBe
-ms.date: 2016-03-07 15:27:59
+ms.date: 2016-03-07 15 - 27 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58771
-ms.assetid: 514e80d4-34c8-4670-9370-cfcc272c58e4
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1f7529c3-d603-4faa-898b-006a8c8c0ac8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: nselin
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Formula designer in Electronic reporting
 
-This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use Microsoft Excel–like formulas for data transformation to meet the requirements for that document's fulfillment and formatting. Various types of functions are supported: text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions).
+This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use Microsoft Excel–like formulas for data transformation to meet the requirements for that document's fulfillment and formatting. Various types of functions are supported -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions).
 
 Formula designer overview
 -------------------------
@@ -562,12 +564,12 @@ Returns a list of values of nodes of XML, which has been collected during this f
 
 ### Functions list extension
 
-ER lets you extend the list of functions that are used in ER expressions. Some engineering efforts are required. For detailed information, see [Extending the list of Electronic reporting functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger-formulas-list-extension).
+ER lets you extend the list of functions that are used in ER expressions. Some engineering efforts are required. For detailed information, see [Extending the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md).
 
 See also
 --------
 
-[Electronic Reporting overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger)
+[Electronic Reporting overview](general-electronic-reporting.md)
 
-[Extend the list of Electronic reporting (ER) functions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger-formulas-list-extension)
+[Extend the list of Electronic reporting (ER) functions](general-electronic-reporting-formulas-list-extension.md)
 

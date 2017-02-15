@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: F Classes - FormBuildFilterPaneControl to FormBuildRealControl | Microsoft Docs
+title: F Classes -  FormBuildFilterPaneControl to FormBuildRealControl
 description: System API classes that start with the letter F.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 00:33:53
+ms.date: 2016-03-08 00 - 33 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60083
-ms.assetid: 66bfbb0a-74fe-407f-9a7c-bb5c10147a6b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 2a34f194-da71-4c5a-8191-0a6319bd9b50
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# F Classes - FormBuildFilterPaneControl to FormBuildRealControl
+# F Classes -  FormBuildFilterPaneControl to FormBuildRealControl
 
 System API classes that start with the letter F.
 

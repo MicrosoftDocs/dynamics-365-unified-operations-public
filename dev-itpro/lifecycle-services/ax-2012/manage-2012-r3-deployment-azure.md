@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Manage your Dynamics AX 2012 R3 deployment on Azure | Microsoft Docs
+title: Manage your Dynamics AX 2012 R3 deployment on Azure
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 00:01:40
+ms.date: 2015-12-05 00 - 01 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: AX 2012
+ms.reviewer: annbe
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18491
-ms.assetid: b5c81154-c0ca-4175-9d94-9425f9a1de1f
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 0941f010-3326-4eaf-8015-5b23b1027f27
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -86,7 +88,7 @@ You can add (or remove) virtual machines to AX 2012 R3 environments that you’v
 4.  Select the environment to which you want to add virtual machines.
 5.  Click the Edit (pencil) icon near the top of the page.
 6.  Indicate how many virtual machines you want to add to the environment. Then specify the size of those virtual machines.
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
 
 7.  Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.

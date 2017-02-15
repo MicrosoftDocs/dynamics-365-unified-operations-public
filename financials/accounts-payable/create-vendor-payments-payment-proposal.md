@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create vendor payments by using a payment proposal | Microsoft Docs
+title: Create vendor payments by using a payment proposal
 description: This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23:21:59
+ms.date: 2015-12-02 23 - 21 - 59
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerJournalTransVendPaym
+ms.search.form: LedgerJournalTransVendPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 101
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14312
-ms.assetid: 0d35be84-1a21-4478-9f2b-fef2ade504ab
-ms.region: Global
-# ms.industry: 
+ms.assetid: d7b1b3d8-8463-4a6a-8172-8ce8fa4466c7
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kweekley
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

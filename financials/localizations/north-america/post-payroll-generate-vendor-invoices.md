@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Post payroll and generate vendor invoices | Microsoft Docs
+title: Post payroll and generate vendor invoices
 description: This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15:31:19
+ms.date: 2016-10-31 15 - 31 - 19
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PayrollPayStatement
+ms.search.form: PayrollPayStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220964
-ms.assetid: d9cd7f62-d110-4d9b-b3d5-f78449e556d9
-ms.region: USA
-# ms.industry: 
+ms.assetid: 31f8bf15-35bb-4a26-a0df-cdeaa8e0e6d3
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -69,7 +71,7 @@ The following table shows the prerequisites that must be in place before you sta
 </table>
 
 ## Post pay statements and generate vendor invoices for a single pay period
-After you review pay statement for a specific pay period, you post the pay statements to the general ledger and generate vendor invoices for that pay period. **Tip:** The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-pay-statements). To post pay statements and generate vendor invoices for a pay period, follow these steps. **Post the pay statements**
+After you review pay statement for a specific pay period, you post the pay statements to the general ledger and generate vendor invoices for that pay period. **Tip:** The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](pay-statements.md). To post pay statements and generate vendor invoices for a pay period, follow these steps. **Post the pay statements**
 
 1.  Click **Payroll** &gt; **Pay statement processing** &gt; **Post pay statements**.
 2.  In the **Pay cycle** field, select the pay cycle to post pay statements for.
@@ -94,7 +96,7 @@ To post a pay statement for a specific worker to the general ledger, and then su
 
 1.  On the **All pay statements** page, select the pay statement for the specific worker and pay period.
 2.  On the **Financials** tab, in the **Accounting** group, click **Post**.
-3.  Select the **Submit for payment after posting** check box. For more information about this check box, see [Issue worker payments](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/issue-worker-payments).
+3.  Select the **Submit for payment after posting** check box. For more information about this check box, see [Issue worker payments](issue-worker-payments.md).
 4.  On the **Post the selected pay statement** page, click **Post**. You receive a message that states that the pay statement was posted successfully. You can’t delete or recalculate the invoice. **Tip:** To verify that the pay statement was posted, click the pay statement to show the **Pay statement** details. If the pay statement was posted successfully, **Posted** appears in the pay statement header.
 
 ## Generate vendor invoices for a specific benefit plan

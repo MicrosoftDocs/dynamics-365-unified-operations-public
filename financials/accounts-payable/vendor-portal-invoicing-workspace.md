@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Vendor collaboration invoicing workspace | Microsoft Docs
+title: Vendor collaboration invoicing workspace
 description: This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-10-31 16:21:43
+ms.date: 2016-10-31 16 - 21 - 43
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2231
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 2231
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221534
-ms.assetid: 9505749e-847d-440b-a2dc-45d7857434f6
-ms.region: Global
-# ms.industry: 
+ms.assetid: ee6dd5ad-069e-4205-9b7e-9cec69ef1018
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: abruer
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -62,5 +64,5 @@ You can create a new vendor invoice by selecting the **New** action on the **Ven
 See also
 --------
 
-[Collaborating with vendors by using the Vendor portal](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/collaborating-with-vendors-using-the-vendor-portal)
+[Collaborating with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)
 

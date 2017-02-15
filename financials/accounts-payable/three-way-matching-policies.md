@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Three-way matching policies | Microsoft Docs
+title: Three-way matching policies
 description: This article provides examples of three-way matching.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 15:16:01
+ms.date: 2015-09-10 15 - 16 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: VendInvoicePostingHistory
+ms.search.form: VendInvoicePostingHistory
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2761
-ms.assetid: ec67972d-d615-4fa0-920e-899dbc722b2f
-ms.region: Global
-# ms.industry: 
+ms.assetid: 190913ae-de0b-48ea-874f-3387ab450473
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: abruer
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -61,7 +63,7 @@ Fabrikam operates with multiple legal entities and employees in all parts of the
 1.  Sammy, a worker in the receiving department at Fabrikam, receives the total quantity of machines that are shipped from Contoso. He enters a quantity of 5 on a product receipt. Because the purchase order has been fully received, the status of the purchase order changes to Received.
 2.  April, the accounts payable coordinator at Fabrikam, enters and verifies the invoice that is submitted by Contoso. She verifies the following information:
     -   For items that require three-way matching, the quantity on the invoice line matches the quantity that was received. The received quantity is indicated on the product receipt that is matched to the invoice.
-    -   For items that require two-way or three-way matching, the prices on the invoice line are within the tolerances that are defined in Microsoft Dynamics 365 for Operations.This includes the following types of price matching:
+    -   For items that require two-way or three-way matching, the prices on the invoice line are within the tolerances that are defined in Microsoft Dynamics AX.This includes the following types of price matching:
         -   Net unit price matching – The net unit price on the invoice line matches the net unit price on the purchase order line, within the tolerance percentage. In this example, the net unit price tolerance is +8%.
         -   Price totals matching – The net amount on the invoice line matches the net amount on the purchase order line, within the tolerance percentage, amount, or percentage and amount. In this example, the price totals matching tolerance is +15%.
 
@@ -74,7 +76,7 @@ The paper invoice from Contoso contains the following information.
 | Tax                         |          |            | 0.00       |
 | Total                       |          |            | 44,500.00  |
 
-In Microsoft Dynamics 365 for Operations, the invoice line includes the following information.
+In Microsoft Dynamics AX, the invoice line includes the following information.
 
 | Item number                 | Quantity | Unit price | Line net amount | Matching policy    | Product receipt quantity match | Price match | Price total match |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -106,7 +108,7 @@ Summary: Ken is the controller at the corporate headquarters of a legal entity n
 1.  The items arrive. Sammy, a worker in the receiving department of the Malaysia division of Fabrikam, is interrupted and does not post the product receipt immediately.
 2.  April, the accounts payable coordinator at Fabrikam, enters and verifies the invoice that is submitted by Contoso. She verifies the following information:
     -   For items that require three-way matching, the quantity on the invoice line matches the quantity that was received. The received quantity is indicated on the product receipt that is matched to the invoice.
-    -   For items that require two-way or three-way matching, the prices on the invoice line are within the tolerances that are defined in Microsoft Dynamics 365 for Operations. This includes the following types of price matching:
+    -   For items that require two-way or three-way matching, the prices on the invoice line are within the tolerances that are defined in Microsoft Dynamics AX.This includes the following types of price matching:
         -   Net unit price matching – The net unit price on the invoice line matches the net unit price on the purchase order line, within the tolerance percentage. In this example, the net unit price tolerance is +2%.
         -   Price totals matching – The net amount on the invoice line matches the net amount on the purchase order line, within the tolerance percentage, amount, or percentage and amount. In this example, the price totals matching tolerance is +10%.
 
@@ -119,7 +121,7 @@ The paper invoice from Contoso contains the following information.
 | USB Drive             | 200      | 10.05      | 2,010.00   |
 | Total invoice         |          |            | 7,092.00   |
 
-In Microsoft Dynamics 365 for Operations, the invoice line includes the following information.
+In Microsoft Dynamics AX, the invoice line includes the following information.
 
 | Item number           | Quantity | Unit price | Line net amount | Matching policy    | Product receipt quantity match | Price match | Price total match |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -139,5 +141,5 @@ If approval is required for invoices to be posted with invoice matching discrepa
 See also
 --------
 
-[Accounts payable invoice matching](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/accounts-payable-invoice-matching)
+[Accounts payable invoice matching](accounts-payable-invoice-matching.md)
 

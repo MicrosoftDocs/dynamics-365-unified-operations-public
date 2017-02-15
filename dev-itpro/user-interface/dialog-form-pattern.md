@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dialog form pattern | Microsoft Docs
+title: Dialog form pattern
 description: This article provides information about the Dialog form pattern. A dialog box represents an action or activity that users can explicitly commit or cancel. It's used when a user initiates a specific task or process, and the system requires user input about how or whether to proceed.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 21:58:05
+ms.date: 2015-12-03 21 - 58 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16061
-ms.assetid: 10a6057d-a199-4c11-875f-e5b000202e95
-ms.region: Global
-# ms.industry: 
+ms.assetid: e4ce724d-c52f-4f53-840d-8bfa1f5790d7
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -176,19 +178,19 @@ CloseButton ($Button)
 
 ### Related patterns
 
--   [Drop Dialog](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/drop-dialog-form-pattern)
+-   [Drop Dialog](drop-dialog-form-pattern.md)
 
 ### Commonly used subpatterns
 
--   [Fields and Field Groups](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fields-and-field-groups-subpattern)
--   [Toolbar and List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern)
--   [Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-fields-subpattern)
--   [Fill Text](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fill-text-subpattern)
+-   [Fields and Field Groups](fields-field-groups-subpattern.md)
+-   [Toolbar and List](toolbar-list-subpattern.md)
+-   [Toolbar and Fields](toolbar-fields-subpattern.md)
+-   [Fill Text](fill-text-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form** **guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 **Dialog guidelines:**
 

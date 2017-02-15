@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Back up database for an LCS solution | Microsoft Docs
+title: Back up database for an LCS solution
 description: A Dynamics 365 for Operations database backup is required for your LCS solution package. When you back up your database, you must include the master, reference, and transactional data that is specific to your solution and industry. This will be used for your pre-sales demo deployments. 
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-03 22:49:33
+ms.date: 2016-10-03 22 - 49 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Lifecycle Services
+# ms.reviewer: 51
+ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196833
-ms.assetid: e7ff6a72-1475-4357-bb10-2a2020224f30
-ms.region: Global
-# ms.industry: 
+ms.assetid: e52c0fdd-62f0-4bed-aa58-aa0f024beee3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: omarc
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 
@@ -37,5 +39,5 @@ On demo or development environments, the database is typically called AXDBRain. 
 See also
 --------
 
-[LCS Solutions for AppSource home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/lcs-solutions-for-app-source)
+[LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 

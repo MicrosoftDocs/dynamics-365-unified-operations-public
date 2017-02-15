@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Components of Dynamics 365 for Operations - Retail | Microsoft Docs
+title: Components of Dynamics 365 for Operations - Retail
 description: This topic describes the various components that make up Microsoft Dynamics 365 for Operations - Retail.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-10-31 16:42:06
+ms.date: 2016-10-31 16 - 42 - 06
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 11
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221954
-ms.assetid: a93f9b52-0971-4935-a031-1df940094b8c
-ms.region: Global
-ms.industry: Retail
+ms.assetid: 1396ae11-8bb1-4881-ab6c-1dcb4f2c842d
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: yabinl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

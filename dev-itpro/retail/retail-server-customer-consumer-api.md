@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail Server customer and consumer APIs | Microsoft Docs
+title: Retail Server customer and consumer APIs
 description: This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 author: kfend
 manager: AnnBe
-ms.date: 2016-05-04 22:38:53
+ms.date: 2016-05-04 22 - 38 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 84383
-ms.assetid: 990898dc-d39b-4c3c-99e8-1cfd2ac30deb
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9abe2e2b-8a22-4c3a-82cd-9fff6d36e499
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

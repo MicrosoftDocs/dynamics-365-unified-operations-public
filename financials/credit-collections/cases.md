@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Case management overview | Microsoft Docs
+title: Case management overview
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-11 23:25:17
+ms.date: 2015-12-11 23 - 25 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CaseDetail
+ms.search.form: CaseDetail
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23541
-ms.assetid: a45f4e9c-ab70-4185-8b97-ddae0c52ab70
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: ab2ac6b0-0880-4e4f-93df-3cae485517ca
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

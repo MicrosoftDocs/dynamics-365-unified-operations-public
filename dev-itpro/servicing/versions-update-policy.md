@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Operations versions and update policy | Microsoft Docs
+title: Dynamics 365 for Operations versions and update policy
 description: This topic lists the most recent versions of Microsoft Dynamics 365 for Operations. The Dynamics 365 for Operations update policy is outlined, as well.
 author: kfend
 manager: AnnBe
-ms.date: 2016-03-22 20:02:19
+ms.date: 2016-03-22 20 - 02 - 19
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX platform update 2
+# ms.reviewer: 71
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 69914
-ms.assetid: b732793c-4d8e-4995-89cc-946eb4cb6aba
-ms.region: Global
-# ms.industry: 
+ms.assetid: c207293a-bd50-4ca2-9a46-5a62724fd9f8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kfend
+ms.dyn365.intro: Aug-16
+ms.dyn365.version: Platform update 2
 
 ---
 
@@ -38,13 +40,13 @@ Recent versions of Dynamics 365 for Operations
 |                                                |                   |                  |                  |                                                                                                                                                                                          |
 |------------------------------------------------|-------------------|------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Release**                                    | **Version**       | **Build number** | **Availability** | **To learn more**                                                                                                                                                                        |
-| Microsoft Dynamics 365 for Operations          | 1611              |  7.1.1541.3036   | November 2016    | [What’s new or changed in Dynamics 365 for Operations version 1611 (November 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-365-for-operations)            |
-| Microsoft Dynamics 365 for Operations platform | Platform update 3 |  7.0.4307.16141  | November 2016    | [What’s new or changed in Dynamics 365 for Operations platform update 3 (November 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/whats-new-or-changed-in-dynamics-ax-platform-version-7-3)  |
-| Microsoft Dynamics AX platform                 | Platform update 2 | 7.0.4230.16130   | August 2016      | [What’s new or changed in Dynamics AX platform update 2 (August 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-platform-version-7-2-august-2016)        |
-| Microsoft Dynamics AX platform                 | Platform update 1 | 7.0.4127.16103   | May 2016         | [What’s new or changed in Dynamics AX platform update 1 (May 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-platform-version-7-1-may-2016)              |
-| Microsoft Dynamics AX application              | 7.0.1             | 7.0.1265.23014   | May 2016         | [What’s new or changed in Dynamics AX application version 7.0.1 (May 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-application-version-7-0-1-may-2016) |
-| Microsoft Dynamics AX platform                 | 7.0               | 7.0.4030.16079   | February 2016    | [What’s new or changed in Dynamics AX 7.0 (February 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7-0-february-2016)                                   |
-| Microsoft Dynamics AX application              | 7.0               | 7.0.1265.3015    | February 2016    | [What’s new or changed in Dynamics AX 7.0 (February 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7-0-february-2016)                                   |
+| Microsoft Dynamics 365 for Operations          | 1611              |  7.1.1541.3036   | November 2016    | [What’s new or changed in Dynamics 365 for Operations version 1611 (November 2016)](whats-new-dynamics-365-operations-1611.md)            |
+| Microsoft Dynamics 365 for Operations platform | Platform update 3 |  7.0.4307.16141  | November 2016    | [What’s new or changed in Dynamics 365 for Operations platform update 3 (November 2016)](whats-new-platform-update-3.md)  |
+| Microsoft Dynamics AX platform                 | Platform update 2 | 7.0.4230.16130   | August 2016      | [What’s new or changed in Dynamics AX platform update 2 (August 2016)](whats-new-platform-update-2.md)        |
+| Microsoft Dynamics AX platform                 | Platform update 1 | 7.0.4127.16103   | May 2016         | [What’s new or changed in Dynamics AX platform update 1 (May 2016)](whats-new-changed-platform-version-7-1-may-2016.md)              |
+| Microsoft Dynamics AX application              | 7.0.1             | 7.0.1265.23014   | May 2016         | [What’s new or changed in Dynamics AX application version 7.0.1 (May 2016)](whats-new-changed-application-version-7-0-1-may-2016.md) |
+| Microsoft Dynamics AX platform                 | 7.0               | 7.0.4030.16079   | February 2016    | [What’s new or changed in Dynamics AX 7.0 (February 2016)](whats-new-changed-7-0-february-2016.md)                                   |
+| Microsoft Dynamics AX application              | 7.0               | 7.0.1265.3015    | February 2016    | [What’s new or changed in Dynamics AX 7.0 (February 2016)](whats-new-changed-7-0-february-2016.md)                                   |
 
 ## Update policy
 Microsoft Dynamics 365 for Operations is serviced as a cloud offering. Updates to the Dynamics 365 for Operations platform and application will be handled in the following manner:

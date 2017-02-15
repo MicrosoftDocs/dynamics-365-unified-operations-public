@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: e-Commerce platform | Microsoft Docs
+title: e-Commerce platform
 description: This topic provides an overview of e-Commerce capabilities.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-05 00:28:02
+ms.date: 2015-12-05 00 - 28 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18511
-ms.assetid: 7b99ef5d-c706-4043-ac24-9aed2365ec57
-ms.region: Global
-# ms.industry: 
+ms.assetid: c75b50ab-da6f-460c-b29f-928222b343da
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Models | Microsoft Docs
+title: Models
 description: This article describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-04-27 23:07:28
+ms.date: 2016-04-27 23 - 07 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83351
-ms.assetid: 2fb2869f-fff6-4b26-8db8-e5cc771f6e43
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4a454d9b-3385-4f8a-9314-43157a590314
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -69,9 +71,9 @@ This will generate a graph of all packages that the selected model depends on. [
 See also
 --------
 
-[Development tools](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/dynamics-ax7-technical-preview-development-tools)
+[Development tools](development-tools.md)
 
-[Developer home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Developer home page](developer-landing-page.md)
 
-[Distribution of models: How to export and import model files](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/distribution-of-models-how-to-export-and-import-a-model)
+[Distribution of models: How to export and import model files](models-export-import.md)
 

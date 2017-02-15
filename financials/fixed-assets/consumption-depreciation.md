@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Consumption depreciation | Microsoft Docs
+title: Consumption depreciation
 description: This article gives an overview of the Consumption method of depreciation.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 22:54:36
+ms.date: 2015-12-02 22 - 54 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetDepreciationProfile
+ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13751
-ms.assetid: 60e25d8f-a40d-4158-acb8-fa4102d43000
-ms.region: Global
-# ms.industry: 
+ms.assetid: 245e7f3c-8a6d-4ee1-b5ee-0ad3560300ba
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

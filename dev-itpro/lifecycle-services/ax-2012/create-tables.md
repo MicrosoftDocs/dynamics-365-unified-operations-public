@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create tables | Microsoft Docs
+title: Create tables
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 23:17:02
+ms.date: 2015-12-04 23 - 17 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18161
-ms.assetid: 915bd89d-c083-4dfb-840d-f8abe6f42a13
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: b81a6638-712f-442d-a43d-677a385cf143
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -45,8 +47,8 @@ Table fields are based on a primitive data type or an extended data type. For mo
 2.  Right-click the **Tables** node, and then select **New Table**.
 3.  Right-click the table, and then click **Properties**.
 4.  Rename the table by modifying the **Name** property.
-5.  To specify the table as temporary, set the **Temporary** property to **Yes**. For more information, see [Table Properties](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/table-properties).
-6.  Modify additional table properties, as needed. For more information, see [Table Properties](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/table-properties).
+5.  To specify the table as temporary, set the **Temporary** property to **Yes**. For more information, see [Table Properties](table-properties.md).
+6.  Modify additional table properties, as needed. For more information, see [Table Properties](table-properties.md).
 7.  To delete the table, right-click it, and then click **Delete**.
 
 ## Add Fields to a Table

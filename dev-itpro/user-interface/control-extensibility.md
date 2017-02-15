@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Control extensibility | Microsoft Docs
+title: Control extensibility
 description: This article describes the architecture that lets developers extend the user interface and also define new user interface patterns. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-13 06:40:04
+ms.date: 2015-12-13 06 - 40 - 04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27461
-ms.assetid: 0ede9b96-e55d-4dfa-ba82-6acd29bd327b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6da2179f-13c6-447f-a564-132943bd01d8
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shshabazz
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

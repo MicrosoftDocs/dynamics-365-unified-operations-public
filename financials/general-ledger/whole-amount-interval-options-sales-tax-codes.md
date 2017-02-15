@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Whole amount and Interval calculation options for sales tax codes | Microsoft Docs
+title: Whole amount and Interval calculation options for sales tax codes
 description: This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-09-14 09:43:08
+ms.date: 2015-09-14 09 - 43 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TaxData, TaxTable
+ms.search.form: TaxData, TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 5624
-ms.assetid: e8352e6b-bae9-440b-89e0-eb7d92ba4613
-ms.region: Global
-# ms.industry: 
+ms.assetid: 057fada4-8938-491c-87fa-b5e6ab329ecd
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: vstehman
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -91,7 +93,7 @@ The sales tax is the sum of the tax amounts that are calculated for each amount 
 See also
 --------
 
-[Determining sale tax rates based on the Marginal base and Calculation method fields](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/the-marginal-base-field)
+[Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md)
 
 [Sales tax calculation methods in the Origin field](https://ax.help.dynamics.com/en/wp-admin/post.php?post=79751&action=edit)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reduction keys | Microsoft Docs
+title: Reduction keys
 description: This articles provides examples that show how to set up a reduction key. It includes information about the various reduction key settings and the results of each. You can use a reduction key to define how to reduce forecast requirements.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09:16:13
+ms.date: 2015-12-07 09 - 16 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ReqPlanSched
+ms.search.form: ReqPlanSched
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19251
-ms.assetid: 5c995833-03b3-4258-ad25-d3a7d11353a3
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 643dfe41-9e34-4bfd-977e-10123f61c3c8
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: roxanad
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -130,5 +132,5 @@ Here is a summary of **Transactions - dynamic period** reduction:
 See also
 --------
 
-[Master plans](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/master-planning/master-plans)
+[Master plans](master-plans.md)
 

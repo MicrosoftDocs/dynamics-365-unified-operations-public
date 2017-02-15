@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Expression constraints and table constraints in product configuration models | Microsoft Docs
+title: Expression constraints and table constraints in product configuration models
 description: This topic describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15:08:06
+ms.date: 2016-02-24 15 - 08 - 06
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
+ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 53111
-ms.assetid: f4035157-5d45-4e22-bf19-984fb2ab1a8c
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: ea1cd5e2-3d9e-44df-9d4e-2c800eadad74
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -83,7 +85,7 @@ Black
 
 Metal
 
-You can create system-defined and user-defined table constraints. For more information, see [System-defined and user-defined table constraints](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/product-information-management/system-defined-and-user-defined-table-constraints).
+You can create system-defined and user-defined table constraints. For more information, see [System-defined and user-defined table constraints](system-defined-user-defined-table-constraints.md).
 
 ## What syntax should be used to write constraints?
 You must use Optimization Modeling Language (OML) syntax when you write constraints. The system uses Microsoft Solver Foundation constraint solver to solve the constraints.

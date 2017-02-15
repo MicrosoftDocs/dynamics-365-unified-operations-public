@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add a recommendations control to the transaction page on a POS device | Microsoft Docs
+title: Add a recommendations control to the transaction page on a POS device
 description: This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-11-30 21:58:46
+ms.date: 2016-11-30 21 - 58 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 41
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 260624
-ms.assetid: 60e46a7c-d6b2-46f8-a51b-3b4cf85e0a34
-ms.region: global
-ms.industry: Retail
+ms.assetid: 7fa25da8-c986-497e-88fe-150da63fb69d
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: asharchw
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -78,5 +80,5 @@ There are two configurations options available. Choose the option that works bes
 See also
 --------
 
-[Personalized product recommendations overview](https://docs.microsoft.com/en-us/dynamics365/operations/retail/personalized-product-recommendations-powered-by-cognitive-services-and-azure-machine-learning)
+[Personalized product recommendations overview](personalized-product-recommendations.md)
 

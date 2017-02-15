@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Segmented entry control metadata | Microsoft Docs
+title: Segmented entry control metadata
 description: Describes the design-time metadata properties for Segmented Entry controls.
-author: twheeloc
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-12 20:45:01
+ms.date: 2015-12-12 20 - 45 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25591
-ms.assetid: b7518b69-49ea-4f0f-8ed0-37f21dc72739
-ms.region: Global
-# ms.industry: 
-ms.author: ghenriks
+ms.assetid: 3adf11ea-aede-434d-a373-55cfda5d710a
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

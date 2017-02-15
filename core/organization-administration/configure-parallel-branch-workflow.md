@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure a parallel branch in a workflow | Microsoft Docs
+title: Configure a parallel branch in a workflow
 description: To configure a parallel branch, complete the following procedures in the workflow editor.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-09-30 20:52:48
+ms.date: 2016-09-30 20 - 52 - 48
 ms.topic: 
 ms.prod: 
 ms.service: 
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 196043
-ms.assetid: cf3e2d3d-04e1-46d2-946e-fb99da65a5e6
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6b40d0a2-d3cb-4770-a809-9e711f7e3f58
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: donaldc
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -51,5 +53,5 @@ Follow these steps to design and configure the elements of a parallel branch.
 See also
 --------
 
-[Create a workflow](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/create-a-workflow)
+[Create a workflow](create-workflow.md)
 

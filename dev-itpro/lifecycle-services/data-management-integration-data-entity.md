@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data management and integration using data entities | Microsoft Docs
+title: Data management and integration using data entities
 description: This article provides a brief overview of the mechanics of synchronous and asynchronous integration.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-13 00:15:10
+ms.date: 2015-12-13 00 - 15 - 10
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26441
-ms.assetid: 8b97c71f-fce3-4bb3-9c3a-ad8f6bfa3841
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1753751f-ab0a-45ef-b4b9-065f216bb0fb
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kuntalme
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

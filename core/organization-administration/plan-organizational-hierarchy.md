@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure organizational hierarchy | Microsoft Docs
+title: Configure organizational hierarchy
 description: Before you set up organizations and organization hierarchies in Microsoft Dynamics 365 for Operations, make sure that you plan how your business will be modeled. The organization model has a significant effect on the implementation of Dynamics 365 for Operations and on business processes. 
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-04 18:35:22
+ms.date: 2015-12-04 18 - 35 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17404
-ms.assetid: 0e46b81b-a80f-4007-a9fb-803f5f7dcb2b
-ms.region: Global
-# ms.industry: 
+ms.assetid: ad92a4aa-e836-4f37-ad74-086cb10c1b10
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: sericks
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

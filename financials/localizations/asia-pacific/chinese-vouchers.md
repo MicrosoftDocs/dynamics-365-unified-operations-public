@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Chinese vouchers | Microsoft Docs
+title: Chinese vouchers
 description: This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 for Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-02 22:19:34
+ms.date: 2016-12-02 22 - 19 - 34
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerVoucherType_CN, VoucherTypeWizard_CN
+ms.search.form: LedgerVoucherType_CN, VoucherTypeWizard_CN
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261454
-ms.assetid: 6e71703b-e1ba-4b6b-b726-8695ae03377b
-ms.region: China (PRC)
-# ms.industry: 
+ms.assetid: d15c94c2-53ae-4879-a68c-4bded21df640
+ms.search.region: China (PRC)
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 

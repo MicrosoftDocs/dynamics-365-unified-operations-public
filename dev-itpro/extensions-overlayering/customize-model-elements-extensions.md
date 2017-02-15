@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Customize model elements using extensions | Microsoft Docs
+title: Customize model elements using extensions
 description: In this tutorial, you’ll become familiar with the Fleet Management Extension model. To demonstrate the extension capabilities of Dynamics AX, this model contains elements that extend the functionality of the Fleet Management application.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-10-28 23:19:08
+ms.date: 2015-10-28 23 - 19 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11184
-ms.assetid: e4e9213d-b4f1-4478-9b84-396d8bf1998c
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6a089605-4501-4f61-96dc-e4700eba9a84
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -101,7 +103,7 @@ If you've already installed the demo data, you can skip to the next section.
 9.  Wait until the processing completes. The ongoing processing is indicated at the top of the page by a series of moving dots. The processing is completed when the indicator disappears and the **Time Last Processed** field is updated.
 
 ## Open the FMRental form on the onebox environment
-1.  In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application. For more information, see [Access Microsoft Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2).
+1.  In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application. For more information, see [Access Microsoft Dynamics AX Instances](access-instances.md).
 2.  Sign in, if prompted.
 3.  Find the **Reservation Management** tile and click to open the Reservation Management workspace. [![](./media/reservationmanagementtile.jpg)](./media/reservationmanagementtile.jpg)
 4.  When the **Reservation Management** workspace opens, click **Current rentals**. [![](./media/reservationmanagementworkspace.jpg)](./media/reservationmanagementworkspace.jpg)
@@ -145,7 +147,7 @@ The **FleetManagement Discounts** project contains two new tables, **FEDiscount*
 
 ### Inspect the data event handlers
 
-In **Solution Explorer**, in the FleetManagement Discounts project, double-click **Code &gt; Classes &gt; FMRentalCharge\_Extension** to open the code editor. [![FMRentalChargeCode\_CustomizeModel](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events. **Note:** Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of [this](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/using-new-x-and-debugger-features-in-ax7)article.
+In **Solution Explorer**, in the FleetManagement Discounts project, double-click **Code &gt; Classes &gt; FMRentalCharge\_Extension** to open the code editor. [![FMRentalChargeCode\_CustomizeModel](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events. **Note:** Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of [this](new-x-debugger-features.md)article.
 
 ### View the plug-in classes
 

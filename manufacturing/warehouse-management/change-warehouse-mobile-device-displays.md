@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Warehouse mobile device display settings | Microsoft Docs
+title: Warehouse mobile device display settings
 description: This article describes how to set up the appearance of a mobile device display and map keyboard shortcuts to controls such as buttons. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-11 09:54:20
+ms.date: 2016-01-11 09 - 54 - 20
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SysUserSetup, WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
+ms.search.form: SysUserSetup, WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29071
-ms.assetid: 8a88616b-7f1b-4f6e-8fbe-8ea6db218de1
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7d8f58a6-c89f-4787-8197-687d3873f032
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: perlynne
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -100,5 +102,5 @@ You can specify more than one expression in the same file. Each expression must 
 See also
 --------
 
-[Configuration of mobile devices for warehouse work](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/warehouse-management/configure-mobile-devices-for-warehouse-work)
+[Configuration of mobile devices for warehouse work](configure-mobile-devices-warehouse_work.md)
 

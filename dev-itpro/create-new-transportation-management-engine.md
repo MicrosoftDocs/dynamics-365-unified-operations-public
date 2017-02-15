@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a new transportation management engine | Microsoft Docs
+title: Create a new transportation management engine
 description: This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Operations. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-02-23 23:18:05
+ms.date: 2016-02-23 23 - 18 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 51661
-ms.assetid: 280f4dce-e5cc-4e1f-a5b1-e75fb88e0e17
-ms.region: Global
-# ms.industry: 
+ms.assetid: cdb514fc-ceb4-45fc-912d-256a3eab216a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: vakarosa
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: vakarosa
 
 This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Operations. 
 
-Transportation management (TMS) engines define the logic that is used to generate and process transportation rates in Transportation management. Microsoft Dynamics 365 for Operations provides several different engine types that calculate different parameters, such as rates, transit times, and the number of zones that will be crossed during transit. This article explains how to use the Microsoft Visual Studio development environment together with Dynamics 365 for Operations development tools to create and deploy a new TMS engine, and then how to set up the engine in Operations. For more information about the engines that Dynamics 365 for Operations provides, see [Transportation management engines](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/warehouse-management/transportation-management-engines).
+Transportation management (TMS) engines define the logic that is used to generate and process transportation rates in Transportation management. Microsoft Dynamics 365 for Operations provides several different engine types that calculate different parameters, such as rates, transit times, and the number of zones that will be crossed during transit. This article explains how to use the Microsoft Visual Studio development environment together with Dynamics 365 for Operations development tools to create and deploy a new TMS engine, and then how to set up the engine in Operations. For more information about the engines that Dynamics 365 for Operations provides, see [Transportation management engines](transportation-management-engines.md).
 
 ## Create a new TMS engine
 This section explains how to create a class library that has a TMS engine implementation, and how to reference it from a Dynamics 365 for Operations model.
@@ -97,7 +99,7 @@ One way to deploy third-party TMS engines is through a deployment package. This 
 
 1.  On the **Dynamics 365 **&gt; **Deploy** menu, click **Create Deployment Package**.
 2.  In the **Create Deployment Package** dialog box, select the TMSEngines model, and enter the path where you want to store your package files. [![Selecting the TMSEngines model ](./media/071.png)](./media/071.png)
-3.  You can now deploy the package to the target environment. For a tutorial, see [Install a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/installing-deployable-package-in-ax7).
+3.  You can now deploy the package to the target environment. For a tutorial, see [Install a deployable package](install-deployable-package.md).
 
 ## Set up the TMS engine in Dynamics 365 for Operations
 This section explains how to set up Dynamics 365 for Operations to use a TMS engine, and shows how the new engine that we have created is used in rate shopping. The example in this section uses the USMF demo data company.

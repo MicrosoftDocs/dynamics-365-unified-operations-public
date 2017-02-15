@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up garnishments and tax levies | Microsoft Docs
+title: Set up garnishments and tax levies
 description: This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15:41:54
+ms.date: 2016-10-31 15 - 41 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmBenefit, HcmBenefitElementSetup, PayrollDisposableIncome
+ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollDisposableIncome
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221114
-ms.assetid: 5b311369-93a6-416b-8820-83dc109db9c0
-ms.region: USA
-# ms.industry: 
+ms.assetid: 3de6bd52-410f-4831-ade7-8c0b4789db2a
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,13 +34,13 @@ ms.author: brpotter
 
 This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
 
-If you have questions about garnishments that aren't answered in this topic, or in [Garnishment and tax levy enrollment tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-enrollment-tasks) or [Garnishments, tax levies, and administrative fees](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishments-tax-levies-and-administrative-fees), contact your legal advisor. The following illustration shows the steps for setting up the system to process garnishments and tax levies. The numbered steps in the illustration correspond to sections of this topic. [![Steps for setting up garnishments](./media/garnishment-setup-tasks.gif)](./media/garnishment-setup-tasks.gif) Here is a summary of each step in the process:
+If you have questions about garnishments that aren't answered in this topic, or in [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md) or [Garnishments, tax levies, and administrative fees](garnishment-tax-levy-administrative-fees.md), contact your legal advisor. The following illustration shows the steps for setting up the system to process garnishments and tax levies. The numbered steps in the illustration correspond to sections of this topic. [![Steps for setting up garnishments](./media/garnishment-setup-tasks.gif)](./media/garnishment-setup-tasks.gif) Here is a summary of each step in the process:
 
 1.  **Set up disposable income definitions** – When the court imposes an order to garnish a worker's wages, the actual amount of the garnishment is limited to a percentage of the worker's disposable income. The federal definition of disposable income is built into the payroll calculation. However, some states require additional reductions to disposable income. You can use disposable income definitions to identify those reductions and help guarantee that the correct earnings and deductions are included when the worker's disposable income is calculated.
 2.  **Set up benefit elements for garnishments, tax levies, and administrative fees** – Because garnishments and tax levies are processed as benefits, each garnishment or tax levy consists of a benefit type, plan, and option. Together, these elements create a single instance of a garnishment or tax levy. Administrative fees aren't permitted in every state. Even in states where administrative fees are permitted, they are never mandatory. Your organization must decide whether to charge them.
 3.  **Create benefits for garnishments, tax levies, and administrative fees** – You must have at least one benefit for garnishments and at least one benefit for tax levies. If a worker has more than one garnishment of the same type, you must have more than one garnishment benefit of that type. If your organization charges an administrative fee for handling garnishments and tax levies, you must have at least one benefit for the fee. You can also optionally have additional benefits for other administrative fees.
 
-**Note:** In this topic, the term *garnishment* implies both garnishments and tax levies, unless the text specifies otherwise. For more information about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishments-tax-levies-and-administrative-fees).
+**Note:** In this topic, the term *garnishment* implies both garnishments and tax levies, unless the text specifies otherwise. For more information about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees](garnishment-tax-levy-administrative-fees.md).
 
 ## Setting up disposable income definitions
 When the court imposes an order to garnish a worker's wages, the actual amount of the garnishment is limited to a percentage of the worker's disposable income. Under the federal definition, the disposable income is determined by subtracting all deductions that are required by law from a worker's gross earnings or income. Gross earnings include wages, commissions, bonuses, paid time off (PTO) pay, and periodic pension statements. Here are some of the deductions that are required by law:
@@ -208,14 +210,14 @@ After you've entered this information, click **Create benefit**. Next, on the **
 Finally, on the **Earning basis** FastTab, enter the earning codes that can be included when the basis is **Percent of earnings**. To enter an earning code, click **Add**, and then select the earning code in the list. Typically, your legal department determines the appropriate earning codes. Don't enter earning codes if the basis is **Fixed amount**, or if the benefit is for administrative fees. **Caution:** You can't change the list of earning codes on the **Maintain benefits** page for a specific worker. However, you can change the basis. If you change the basis to **Percent of earnings**, but no earning codes are entered here, the calculated amount of the deduction for the garnishment or tax levy is 0 (zero).
 
 ## Next step
-The next step is to enroll workers in garnishments and tax levies. For more information, see [Garnishment and tax levy enrollment tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-enrollment-tasks).    
+The next step is to enroll workers in garnishments and tax levies. For more information, see [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md).    
 
 See also
 --------
 
-[Garnishment and tax levy enrollment tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/garnishment-and-tax-levy-enrollment-tasks)
+[Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md)
 
-[Benefit setup tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/benefit-setup-tasks)
+[Benefit setup tasks](benefit-set-up-tasks.md)
 
-[Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks)
+[Worker and position payroll tasks](worker-position-payroll-tasks.md)
 

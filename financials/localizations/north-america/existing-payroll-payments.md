@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Work with existing payroll payments | Microsoft Docs
+title: Work with existing payroll payments
 description: This topic describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged. It also explains how to complete similar tasks after pay statements have been generated or payments have been issued to workers.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15:31:05
+ms.date: 2016-10-31 15 - 31 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerJournalTransPayrollDisbursement, PayrollPayStatement
+ms.search.form: LedgerJournalTransPayrollDisbursement, PayrollPayStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220934
-ms.assetid: 85e5e895-5a21-4916-a5c4-125cbc689e4a
-ms.region: USA
-# ms.industry: 
+ms.assetid: 2fb93955-f1e3-477d-a049-3cd98b768963
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -70,7 +72,7 @@ Use this procedure when check payments were generated, and the payment journal w
 10. On the **Journal voucher** page, verify that the payment status is set to **Sent**.
 
 ## Void a check payment and reverse a pay statement
-Sometimes, you must void a check. For example, if the payment journal was already posted, you might have to void a check that was printed for a worker who should not have been paid. If the check or Automated Clearing House (ACH) file that contains the payment hasn’t been created, but the pay statement has been submitted or posted, you don’t have to void the payment. However, you do have to reverse the pay statement. On the **All pay statements**, follow the steps for reversing a payment. If the pay statement hasn’t been submitted or posted, you don't reverse the pay statement. Instead, delete it. For more information, see [Work with pay statements](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-with-pay-statements). To void a check and reverse the payment, follow these steps.
+Sometimes, you must void a check. For example, if the payment journal was already posted, you might have to void a check that was printed for a worker who should not have been paid. If the check or Automated Clearing House (ACH) file that contains the payment hasn’t been created, but the pay statement has been submitted or posted, you don’t have to void the payment. However, you do have to reverse the pay statement. On the **All pay statements**, follow the steps for reversing a payment. If the pay statement hasn’t been submitted or posted, you don't reverse the pay statement. Instead, delete it. For more information, see [Work with pay statements](pay-statements.md). To void a check and reverse the payment, follow these steps.
 
 1.  On the **Checks** page, select the check, and then click **Payment reversal**. You can reverse only checks that have a payment status of **Paid**.
 2.  On the **Payment reversal** page, complete the information, and then click **OK**.

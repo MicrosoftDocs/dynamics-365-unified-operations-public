@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade Dynamics 365 for Operations to the latest platform update | Microsoft Docs
+title: Upgrade Dynamics 365 for Operations to the latest platform update
 description: This topic explains how to upgrade your Microsoft Dynamics 365 for Operations platform version to the latest platform release.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-11-04 00:14:31
+ms.date: 2016-11-04 00 - 14 - 31
 ms.topic: 
 ms.prod: 
 ms.service: 
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics 365 for Operations platform update 3
+# ms.reviewer: 11
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 253274
-ms.assetid: fa84ca09-29ac-442d-bfa4-26c1645e3708
-ms.region: Global
-# ms.industry: 
+ms.assetid: 541e8c50-7f5a-4bab-98cb-acae8e5c9a21
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tabell
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Platform update 3
 
 ---
 
@@ -60,7 +62,7 @@ Platform update packages are released by Microsoft and can be downloaded from th
 From a process perspective, a platform upgrade package resembles a binary hotfix deployable package.
 
 -   To apply a package to your development or build environment, follow the instructions that follow.
--   To apply a package to your demo, tier-2 sandbox, or production environment, follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Operations system](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-a-deployable-package-on-a-dynamics-ax-system).
+-   To apply a package to your demo, tier-2 sandbox, or production environment, follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Operations system](apply-deployable-package-system.md).
 
 ## Apply the platform update package on your development environment
 ### Delete any platform metadata hotfixes from your VSTS project
@@ -82,7 +84,7 @@ You can find these hotfixes by browsing the check-in history of these Microsoft 
     -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
     -   If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
-4.  Follow the standard instructions for installing a deployable package. See [Install a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/installing-deployable-package-in-ax7).
+4.  Follow the standard instructions for installing a deployable package. See [Install a deployable package](install-deployable-package.md).
 5.  If you're working in a development environment, rebuild your application’s code.
 
 **Important:** Apply this update in a runtime environment only if you first validate it in a development environment.
@@ -97,7 +99,7 @@ You can find these hotfixes by browsing the check-in history of these Microsoft 
 
 ### Install the Visual Studio development tools
 
-Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/updating-the-dynamics-ax7-visual-studio-development-tools).
+Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](update-development-tools.md).
 
 ### Regenerate form adaptor models
 
@@ -154,6 +156,6 @@ This means two things:
     -   Test Essentials
     -   Directory
 
-2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Dynamics 365 for Operations version 1611) as described in this [topic](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/process-for-upgrading-to-the-latest-dynamics-ax-update).
+2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Dynamics 365 for Operations version 1611) as described in this [topic](upgrade-latest-update.md).
 
 

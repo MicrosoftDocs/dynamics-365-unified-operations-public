@@ -1,13 +1,11 @@
 ---
 # required metadata
 
-title: Plan your Dynamics AX 2012 R3 deployment on Azure | Microsoft Docs
-description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process.
-
-<strong>Note:</strong> Microsoft Dynamics AX 2012 R3 is officially supported on Microsoft Azure when deployments are performed through <a href="https://lcs.dynamics.com">Microsoft Dynamics Lifecycle Services</a>. Deployments of Dynamics AX 2012 R3 are not supported on Azure when performed outside of Microsoft Dynamics Lifecycle Services.
-author: kfend
+title: Plan your Dynamics AX 2012 R3 deployment on Azure
+description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process.  <strong>Note - </strong> Microsoft Dynamics AX 2012 R3 is officially supported on Microsoft Azure when deployments are performed through <a href="https - //lcs.dynamics.com">Microsoft Dynamics Lifecycle Services</a>. Deployments of Dynamics AX 2012 R3 are not supported on Azure when performed outside of Microsoft Dynamics Lifecycle Services.
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 17:53:45
+ms.date: 2015-12-05 17 - 53 - 45
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,26 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: AX 2012
+ms.reviewer: annbe
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18591
-ms.assetid: 86e2c4c1-4acc-4b2e-9341-3ce102beb660
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 70a6d6f2-4f24-4ee6-a261-bb89fe920173
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
 # Plan your Dynamics AX 2012 R3 deployment on Azure
 
-Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process.
-
-<strong>Note:</strong> Microsoft Dynamics AX 2012 R3 is officially supported on Microsoft Azure when deployments are performed through <a href="https://lcs.dynamics.com">Microsoft Dynamics Lifecycle Services</a>. Deployments of Dynamics AX 2012 R3 are not supported on Azure when performed outside of Microsoft Dynamics Lifecycle Services.
+Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process.  <strong>Note - </strong> Microsoft Dynamics AX 2012 R3 is officially supported on Microsoft Azure when deployments are performed through <a href="https - //lcs.dynamics.com">Microsoft Dynamics Lifecycle Services</a>. Deployments of Dynamics AX 2012 R3 are not supported on Azure when performed outside of Microsoft Dynamics Lifecycle Services.
 
 Verify that you can log on to Lifecycle Services
 ------------------------------------------------
@@ -181,7 +179,7 @@ SQL Server best practices implemented by the deployment service include those re
 -   Enabled trace flags  -T1204, -T1222.
 
 ## Estimate costs and understand the Azure billing process
-To help estimate the cost of your AX 2012 R3 deployment on Azure, use the [Azure pricing calculator](http://azure.microsoft.com/en-us/pricing/calculator/). It’s also important to understand the Azure billing process before you deploy AX 2012 R3 on Azure. For an overview of the Azure billing process, links to sample invoices, and information about how to download daily usage data for the current billing period, see [Understand your bill](http://azure.microsoft.com/en-us/support/understand-your-bill/). **Note: **Keep in mind, you can shut down an AX 2012 R3 environment that has been deployed on Azure when it’s not in use. For example, you may want to shut down an environment on the weekends to reduce costs. When you shut down an environment, the environment still exists; however, the virtual machines in the environment are shut down. You won’t be charged for the virtual machines when they’re not running. For more information, see “How do I shut down an environment?” in the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/manage-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) article.
+To help estimate the cost of your AX 2012 R3 deployment on Azure, use the [Azure pricing calculator](http://azure.microsoft.com/en-us/pricing/calculator/). It’s also important to understand the Azure billing process before you deploy AX 2012 R3 on Azure. For an overview of the Azure billing process, links to sample invoices, and information about how to download daily usage data for the current billing period, see [Understand your bill](http://azure.microsoft.com/en-us/support/understand-your-bill/). **Note: **Keep in mind, you can shut down an AX 2012 R3 environment that has been deployed on Azure when it’s not in use. For example, you may want to shut down an environment on the weekends to reduce costs. When you shut down an environment, the environment still exists; however, the virtual machines in the environment are shut down. You won’t be charged for the virtual machines when they’re not running. For more information, see “How do I shut down an environment?” in the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
 
 ## Consider legal and regulatory requirements
 Microsoft runs Azure services with common operational practices and features across multiple geographies and jurisdictions. However, it is ultimately up to you to determine if Microsoft services satisfy your regulatory needs. To help provide you with up-to-date information, the [Azure trust center](http://azure.microsoft.com/en-us/support/trust-center/) provides the following information about security, privacy, and compliance.
@@ -795,7 +793,7 @@ Deploy this environment to enable your sales staff to process sales transactions
  
 
 ## High availability environment
-Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability. This environment includes several virtual machines. These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3—already installed on them. The following table lists details about the default high availability environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. **Note: **Azure Premium Storage is required for high availability environments. For more information, see [Deploy a high availability environment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-high-availability-environment-on-azure). **Note:** The virtual machines in this environment are covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/). **Note: **Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
+Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability. This environment includes several virtual machines. These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3—already installed on them. The following table lists details about the default high availability environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. **Note: **Azure Premium Storage is required for high availability environments. For more information, see [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md). **Note:** The virtual machines in this environment are covered by an Azure [Service Level Agreement](http://azure.microsoft.com/en-us/support/legal/sla/). **Note: **Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
 
 <table>
 <colgroup>
@@ -1045,5 +1043,5 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
  
 
 ## Next steps
-[Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-an-ax-2012-r3-or-ax-2012-r3-cu8-demo-environment-on-azure) [Deploy a Retail essentials demo environment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-retail-essentials-demo-environment-on-azure) [Deploy a development environment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-development-environment-on-azure) [Deploy a test environment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-test-environment-on-azure) [Deploy a Retail essentials dev/test environment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-retail-essentials-devtest-environment-on-azure) [Deploy a Retail e-commerce dev/test environment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-retail-e-commerce-devtest-environment-on-azure) [Deploy a Retail mobility dev/test environment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-retail-mobility-devtest-environment-on-azure) [Deploy a high availability environment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/deploy-a-high-availability-environment-on-azure)
+[Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md) [Deploy a Retail essentials demo environment on Azure](deploy-retail-essentials-demo-environment-azure.md) [Deploy a development environment on Azure](deploy-development-environment-azure.md) [Deploy a test environment on Azure](deploy-test-environment-azure.md) [Deploy a Retail essentials dev/test environment on Azure](deploy-retail-essentials-devtest-environment-azure.md) [Deploy a Retail e-commerce dev/test environment on Azure](deploy-retail-ecommerce-devtest-environment-azure.md) [Deploy a Retail mobility dev/test environment on Azure](deploy-retail-mobility-devtest-environment-azure.md) [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md)
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build the Rental Charge Type form | Microsoft Docs
+title: Build the Rental Charge Type form
 description: In this lab you’ll create a Simple List form. A Simple List form can show reference or secondary data that has six or fewer fields. For example, the form that you create will list and describe the types of rental charges. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-02 22:51:08
+ms.date: 2015-12-02 22 - 51 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13671
-ms.assetid: afaa4318-e491-4e03-8d95-930784d23424
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3b07b526-acaa-409d-919c-938fb0b2883d
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ In this lab you’ll create a Simple List form. A Simple List form can show refe
 Prerequisites
 -------------
 
-For this tutorial, you’ll need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Microsoft Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2).
+For this tutorial, you’ll need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Microsoft Dynamics AX Instances](access-instances.md).
 
 ## Overview
 To create the form, you’ll start from the existing form, **FmtChargeType**. This form uses the Simple List pattern. The following illustration shows the **FmtChargeType** form with the required controls from the Simple List pattern. [![rentalcharge1](./media/rentalcharge1.png)](./media/rentalcharge1.png) Adhering to the form pattern ensures that this Simple List form has the same structure and layout as other Simple List forms.
@@ -49,7 +51,7 @@ To create the form, you’ll start from the existing form, **FmtChargeType**. Th
 ## Setup
 ### Import the tutorial project and transactional data
 
-Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you’ll use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You’ll use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you’re working on, review [Access Microsoft Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2) and make sure you provision your administrator user if you’re working on a local VM.
+Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you’ll use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You’ll use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you’re working on, review [Access Microsoft Dynamics AX Instances](access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.

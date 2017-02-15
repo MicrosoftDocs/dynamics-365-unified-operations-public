@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Commerce essentials | Microsoft Docs
+title: Commerce essentials
 description: This page lists the resources that are available for Commerce essentials in Dynamics 365 for Operations.
-author: josaw1
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-09 18:39:27
+ms.date: 2015-12-09 18 - 39 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 41
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21411
-ms.assetid: a80168e9-8be3-4df0-8505-248c2e141cf1
-ms.region: global
-ms.industry: Retail
-ms.author: josaw
+ms.assetid: 147c62b8-dac0-4f55-b527-98e5d1249a5a
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,13 +34,7 @@ ms.author: josaw
 
 This page lists the resources that are available for Commerce essentials in Dynamics 365 for Operations.
 
-Overview
---------
-
--   [Commerce essentials overview](https://docs.microsoft.com/en-us/dynamics365/operations/retail/commerce-essentials)
-
-## Working with Commerce essentials
--   [Working with organizations and organizational hierarchies (Commerce essentials)](https://docs.microsoft.com/en-us/dynamics365/operations/retail/working-with-organizations-and-organizational-hierarchies-commerce-essentials)
+[Commerce essentials overview](commerce-essentials.md) [Working with organizations and organizational hierarchies (Commerce essentials)](organizational-hierarchies-commerce-essentials.md)
 
 ## []()Additional resources
 -   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.

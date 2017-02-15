@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Drop Dialog form pattern | Microsoft Docs
+title: Drop Dialog form pattern
 description: This article provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 21:52:38
+ms.date: 2015-12-03 21 - 52 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16041
-ms.assetid: 18f0f193-801a-4c9e-933d-69f67f0ea3ba
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1508026d-36b8-473d-abfc-ca9d384fc476
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -85,17 +87,17 @@ DialogContent (Group)
 
 ### Related patterns
 
--   [Dialog](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern)
+-   [Dialog](dialog-form-pattern.md)
 
 ### Commonly used subpatterns
 
--   [Fields and Field Groups](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fields-and-field-groups-subpattern)
--   [Toolbar and List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern)
+-   [Fields and Field Groups](fields-field-groups-subpattern.md)
+-   [Toolbar and List](toolbar-list-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows you the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 **Drop dialog guidelines:**
 

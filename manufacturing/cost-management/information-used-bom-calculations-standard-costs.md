@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: BOM calculations with standard costs | Microsoft Docs
+title: BOM calculations with standard costs
 description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-17 15:18:20
+ms.date: 2016-03-17 15 - 18 - 20
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
+ms.search.form: BOMCalcDialog, BOMCalcGroup, BOMCalcTable, ProdParmBOMCalc
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65571
-ms.assetid: cbdcc480-57d6-4d03-854b-fe7bd55795c1
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: f5727e67-3930-4946-8c47-f72cd5bfe72d
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

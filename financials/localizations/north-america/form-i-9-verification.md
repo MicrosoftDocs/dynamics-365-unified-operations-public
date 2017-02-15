@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Form I-9 verification | Microsoft Docs
+title: Form I-9 verification
 description: This article provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-03 20:27:03
+ms.date: 2015-12-03 20 - 27 - 03
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HCMemploymentverification, Hcmi9Document, Hcmi9DocumentType
+ms.search.form: HCMemploymentverification, Hcmi9Document, Hcmi9DocumentType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15611
-ms.assetid: 0d55f5f4-cc51-4def-822c-8ba427d66dae
-ms.region: United States
-# ms.industry: 
+ms.assetid: b82861a8-8c3a-462b-b203-7f0e627a8dee
+ms.search.region: United States
+# ms.search.industry: 
 ms.author: shielas
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

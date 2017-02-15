@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure a one-box development environment | Microsoft Docs
+title: Configure a one-box development environment
 description: This article describes recommended configurations of your one-box developer environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:19:58
+ms.date: 2015-12-11 23 - 19 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23361
-ms.assetid: 8b23a3d5-09bf-4c92-a079-d642beeaba51
-ms.region: Global
-# ms.industry: 
+ms.assetid: 27c1d08a-1105-4fad-bd9b-adeb3e66a548
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

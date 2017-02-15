@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Project accounting | Microsoft Docs
+title: Data entities -  Project accounting
 description: This article provides a list of the data entities that are available for the Project management and accounting functionality in Microsoft Dynamics 365 for Operations.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:26:18
+ms.date: 2016-06-29 14 - 26 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96343
-ms.assetid: 6b72795d-1526-4786-97a9-54c562721746
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: affd8c16-4602-4a6e-b8ce-ada941e04fd0
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Project accounting
+# Data entities -  Project accounting
 
 This article provides a list of the data entities that are available for the Project management and accounting functionality in Microsoft Dynamics 365 for Operations.
 
@@ -726,7 +728,7 @@ Transaction lines for project hours and fees
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

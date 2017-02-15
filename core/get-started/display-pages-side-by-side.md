@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Display pages side-by-side using the Open in New Window icon | Microsoft Docs
+title: Display pages side-by-side using the Open in New Window icon
 description: This article explains how to display pages side-by-side in Microsoft Dynamics 365 for Operations.
 author: aneesmsft
 manager: AnnBe
-ms.date: 2015-12-04 19:17:11
+ms.date: 2015-12-04 19 - 17 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17611
-ms.assetid: 82f6cb05-5c84-49ba-a531-9da7a15da99b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 10bc04d3-f6b3-4851-a8cb-5e7f75583fe3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aneesa
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

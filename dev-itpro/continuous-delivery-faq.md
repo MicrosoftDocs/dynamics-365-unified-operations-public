@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Development and continuous delivery FAQ | Microsoft Docs
+title: Development and continuous delivery FAQ
 description: This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-10-10 00:49:49
+ms.date: 2016-10-10 00 - 49 - 49
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX platform update 2
+# ms.reviewer: 61
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 202614
-ms.assetid: ad2746b6-a42b-47b1-ba91-201b641372b4
-ms.region: Global
-# ms.industry: 
+ms.assetid: 716d2929-f3cc-4108-88f4-b2616d089272
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Aug-16
+ms.dyn365.version: Platform update 2
 
 ---
 
@@ -40,19 +42,19 @@ Customization
 Dynamics 365 for Operations enables application customization using a new framework, called *extensions*. Developers can create extension models that compile into separate assemblies and distributable packages. Within an extension model, developers can create new elements, extend elements that belong to other models and customize business logic using event handlers and plugins. Extensions enable faster builds, more efficient application lifecycle management and movement of code, better performance at design time, and minimal cost for application upgrades. You can still create customizations by using *overlayering* of metadata and code, which is a framework similar to what was available in Dynamics AX 2012. When you overlayer code, you can freely modify X++ code and metadata, but you will be compiling into the same package (same assembly) of the code that you are customizing. Here are some guidelines:
 
 -   Use extensions as your default mode of development and fall back to overlayering only as a last resort.
--   When you need to overlayer code, do not include functional or business logic in the overlayered code. Instead, define and call a delegate method, then implement the logic in your extension model using an event handler. For a detailed example in the context of code migration, see [Delegates.](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/migration-upgrade/delegates-for-migration)
+-   When you need to overlayer code, do not include functional or business logic in the overlayered code. Instead, define and call a delegate method, then implement the logic in your extension model using an event handler. For a detailed example in the context of code migration, see [Delegates.](delegates-migration.md)
 -   Report commonly used over-layering patterns to Microsoft and request extension support.
 
-For more information, see [Customizing with Extensions and Overlayering,](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide#customizing-with-extensions-and-overlayering) [Models](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/models), and the [Development Tools](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide#development-tools) section.
+For more information, see [Customizing with Extensions and Overlayering,](developer-landing-page.md#customizing-with-extensions-and-overlayering) [Models](models.md), and the [Development Tools](developer-landing-page.md#development-tools) section.
 
 ### How do I prevent my models from being customized by customers or other partners?
 
-You can block customizations of your model as described in [How to disable model customization and deprecate functionality,](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/locking-models) or you can distribute deployable packages to your customers instead of distributing model files. See the section titled "How do I distribute my application to customers" later in this topic.
+You can block customizations of your model as described in [How to disable model customization and deprecate functionality,](lock-models.md) or you can distribute deployable packages to your customers instead of distributing model files. See the section titled "How do I distribute my application to customers" later in this topic.
 
 ## Continuous delivery
 ### Do I need build environments?
 
-Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Developer topology deployment with continuous build and test automation](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/perf-test/developer-topology-deployment-with-continuous-build-and-test-automation) for more details.
+Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Developer topology deployment with continuous build and test automation](continuous-build-test-automation.md) for more details.
 
 ### What strategy do I use for test automation?
 
@@ -81,7 +83,7 @@ On a build environment, copy this backup over to the I:\\DynamicsBackupDatabases
 
 ### How do I distribute my application to customers?
 
-There are two artifacts you can use to distribute your application to your customers or partners: model files or deployable packages. Model files are design time artifacts that contain source code. Use model files if your customer is integrating your application with other third-party models or when you want to allow customization of your models. For more information, see [Distribution of models: Export and import a model](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/distribution-of-models-how-to-export-and-import-a-model). Model files are the most common methods for ISVs to distribute solutions. Deployable packages are final applications. Use deployable packages with customers that will not be customizing or integrating your application with other third-party models. If you use deployable packages, your customer can only use or extend your application. They will not see or have access to your source code. To create a deployable package use the Visual Studio tools (**Dynamics 365**&gt;  **Deploy** &gt; **Create Deployment package**) or use a build environment. Build environments generate a deployable package with every successful build.
+There are two artifacts you can use to distribute your application to your customers or partners: model files or deployable packages. Model files are design time artifacts that contain source code. Use model files if your customer is integrating your application with other third-party models or when you want to allow customization of your models. For more information, see [Distribution of models: Export and import a model](models-export-import.md). Model files are the most common methods for ISVs to distribute solutions. Deployable packages are final applications. Use deployable packages with customers that will not be customizing or integrating your application with other third-party models. If you use deployable packages, your customer can only use or extend your application. They will not see or have access to your source code. To create a deployable package use the Visual Studio tools (**Dynamics 365**&gt;  **Deploy** &gt; **Create Deployment package**) or use a build environment. Build environments generate a deployable package with every successful build.
 
 ## Development topologies
 ### Should I develop on premises or in the cloud?
@@ -126,7 +128,7 @@ Add an average of $15 monthly for storage (non premium) per VM.
 
 ### Can more than one developer develop concurrently on the same VM?
 
-This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Enable a new developer on a development machine](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/enable-a-new-developer-on-a-dynamics-ax-development-machine).
+This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Enable a new developer on a development machine](enable-development-machine.md).
 
 ## Customer implementation LCS projects
 ### How many sandbox environments do I need within an LCS customer implementation project?

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Submit a request to the Dynamics Service Engineering team | Microsoft Docs
+title: Submit a request to the Dynamics Service Engineering team
 description: You can submit requests directly to the Dynamics Service Engineering (DSE) team by using Lifecycle Services (LCS). You no longer have to submit on multiple sites based on the request.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-11-04 20:04:52
+ms.date: 2016-11-04 20 - 04 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics 365 for Operations platform update 3
+# ms.reviewer: 51
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 254564
-ms.assetid: 2afe5d1a-9241-437b-b588-c9bc0d6090e6
-ms.region: Global
-# ms.industry: 
-ms.author: manado
+ms.assetid: 057b8c63-486a-4e70-9c97-d651aa46157f
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Platform update 3
 
 ---
 

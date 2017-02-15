@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Prerequisites for a standard cost conversion | Microsoft Docs
+title: Prerequisites for a standard cost conversion
 description: This topic discusses tasks to perform before you run a standard cost conversion. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 19:05:30
+ms.date: 2016-02-18 19 - 05 - 30
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventStdCostConv
+ms.search.form: InventStdCostConv
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: a:2:{s:4:"name";s:23:"Yuyu Charlotte Scheller";s:2:"id";s:0:"";}
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: a:2:{s:4:"name";s:23:"Yuyu Charlotte Scheller";s:2:"id";s:0:"";}
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50891
-ms.assetid: 8090c036-683e-4faa-a213-65b153b2e529
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 05743134-af6f-47bb-93d2-26f39a094df1
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: mguada
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

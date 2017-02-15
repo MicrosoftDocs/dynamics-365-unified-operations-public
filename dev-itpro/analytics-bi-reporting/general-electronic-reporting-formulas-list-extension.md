@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extend the list of Electronic reporting functions | Microsoft Docs
-description: Various types of functions are supported in Electronic reporting expressions for data transformation: text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, Electronic reporting lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
+title: Extend the list of Electronic reporting functions
+description: Various types of functions are supported in Electronic reporting expressions for data transformation -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, Electronic reporting lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
 author: kfend
 manager: AnnBe
-ms.date: 2016-03-07 16:10:11
+ms.date: 2016-03-07 16 - 10 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,24 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: ERExpressionDesignerFormula
+ms.search.form: ERExpressionDesignerFormula
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 58911
-ms.assetid: d755ff8d-0d13-41a1-a841-42bb6bf8ffd1
-ms.region: Global
-# ms.industry: 
+ms.assetid: ad0b4297-0797-4696-8cb6-9ffa6e5c789b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: nselin
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Extend the list of Electronic reporting functions
 
-Various types of functions are supported in Electronic reporting expressions for data transformation: text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, Electronic reporting lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
+Various types of functions are supported in Electronic reporting expressions for data transformation -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, Electronic reporting lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
 
 All Electronic reporting functions in Microsoft Dynamics 365 for Operations code are represented as classes that extend the **ERExpression** class. Two types of functions are recognized:
 
@@ -44,7 +46,7 @@ Here are the recommended steps for introducing a new function for Electronic rep
         -   Provide required attributes:
             -   **SysOperationLabelAttribute** – This attribute defines the function’s name.
             -   **SysOperationHelpTextAttribute** – This attribute defines the function’s Help text.
-            -   **ERComponentGroupAttribute** – This attribute defines the group that the function belongs to. (For more information, see [Formula designer in Electronic reporting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger-formula-designer).)
+            -   **ERComponentGroupAttribute** – This attribute defines the group that the function belongs to. (For more information, see [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md).)
         -   Provide arguments:
             -   For a fixed number of arguments function, provide methods that have the prefix **parm**, and use the **SysOperationDisplayOrderAttribute** attribute to set the order of the arguments.
             -   For a variable number of argument function, implement the **ERIObjectContainer** interface.
@@ -107,7 +109,7 @@ The following guidance is intended to help you design your custom Electronic rep
 See also
 --------
 
-[Electronic reporting overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger)
+[Electronic reporting overview](general-electronic-reporting.md)
 
-[Formula designer in Electronic reporting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger-formula-designer)
+[Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 

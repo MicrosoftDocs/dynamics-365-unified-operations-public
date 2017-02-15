@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create localizable labels | Microsoft Docs
+title: Create localizable labels
 description: This article explains how to create localizable labels for client components and HTML/JavaScript controls.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-05 01:13:42
+ms.date: 2015-12-05 01 - 13 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18531
-ms.assetid: 6bd81a6e-b95e-4543-bfaa-37b7c756105d
-ms.region: Global
-# ms.industry: 
+ms.assetid: 6173a72d-8b33-4146-9e63-ca12c26f2f84
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: shshabazz
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

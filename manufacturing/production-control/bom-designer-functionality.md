@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: BOM designer functionality | Microsoft Docs
+title: BOM designer functionality
 description: This article describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs). You can click Setup to select different configurations and specify what information appears on the lines of the tree.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-08 21:09:22
+ms.date: 2015-12-08 21 - 09 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BOMDesigner
+ms.search.form: BOMDesigner
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20981
-ms.assetid: 89fe675a-d1f7-44d1-9cc3-bd1a4f875e5e
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: 4bc3279c-b8cc-435d-8b92-d6b487af7e3b
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: conradv
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

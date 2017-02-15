@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Code editor | Microsoft Docs
+title: Code editor
 description: This article reviews the code editor features for Microsoft Dynamics 'AX 7.'
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:34:30
+ms.date: 2015-12-11 23 - 34 - 30
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23941
-ms.assetid: 25f6ef16-396c-4f30-b429-f1e2f40be204
-ms.region: Global
-# ms.industry: 
+ms.assetid: c0024bfc-c3a0-4302-ab9d-86b3d0f93dbe
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -44,7 +46,7 @@ You can open the element designer that corresponds to the current X++ source cod
 See also
 --------
 
-[Technical Concepts Guide](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/technical-concepts-guide)
+[Technical Concepts Guide](developer-landing-page.md)
 
 [Dynamics 'AX 7' development tools](https://ax.help.dynamics.com/en/?p=178721)
 

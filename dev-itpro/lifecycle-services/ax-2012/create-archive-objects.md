@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a custom target entity for the Data import/export framework (DIXF) (AX 2012) | Microsoft Docs
+title: Create a custom target entity for the Data import/export framework (DIXF) (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-04 21:51:40
+ms.date: 2015-12-04 21 - 51 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17931
-ms.assetid: f1516930-75db-4e4e-91ac-402f7bd8c235
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 6ac4ba1d-c4d3-4b7c-ade9-ad5cf4ddd4c8
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 

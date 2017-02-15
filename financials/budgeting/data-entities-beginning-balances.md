@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Beginning balances | Microsoft Docs
+title: Data entities -  Beginning balances
 description: This article provides a list of the data entities that are available for beginning balance functionality that is related to Budget control in Microsoft Dynamics 365 for Operations. If you're using Budget control, you must set it up and activate it before any balances are posted. Any transactional data that is posted before Budget control is activated won't be included.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-11-17 16:06:00
+ms.date: 2016-11-17 16 - 06 - 00
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96403
-ms.assetid: c2c504c0-23ac-44b0-89b0-3dbdd0c0b085
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 2111e6c5-4f47-475e-a31f-7ee85266cca3
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Beginning balances
+# Data entities -  Beginning balances
 
 This article provides a list of the data entities that are available for beginning balance functionality that is related to Budget control in Microsoft Dynamics 365 for Operations. If you're using Budget control, you must set it up and activate it before any balances are posted. Any transactional data that is posted before Budget control is activated won't be included.
 
@@ -130,7 +132,7 @@ Suggested data entities to use to import beginning balances
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

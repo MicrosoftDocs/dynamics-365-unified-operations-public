@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure an online store | Microsoft Docs
+title: Configure an online store
 description: This article provides links to topics that will help you centrally configure and manage and online store from Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
-ms.date: 2016-02-05 01:02:16
+ms.date: 2016-02-05 01 - 02 - 16
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 11
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31541
-ms.assetid: 4adc2b68-9244-4f10-88db-c746f01f6e1b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 01c251b7-07c6-4d08-b829-93d5cc77d70a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: meeram
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

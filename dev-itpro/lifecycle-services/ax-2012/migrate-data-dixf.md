@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Migrate data using the Data import/export framework (AX 2012) | Microsoft Docs
+title: Migrate data using the Data import/export framework (AX 2012)
 description:  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-02 16:55:52
+ms.date: 2015-12-02 16 - 55 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13341
-ms.assetid: 24dc23af-dec9-4d47-92ce-1d1f38b0c7b3
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 3cfe6955-e89f-4e5b-9a29-b9cec18986a8
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -69,13 +71,13 @@ If you are moving from another ERP system to Microsoft Dynamics AX, you must imp
 
 ### Determine which Microsoft Dynamics AX entities to use
 
-For a list of the predefined target entities that the Data Import/Export Framework includes, see [Data import/export framework entities (DIXF, DMF)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/data-importexport-framework-entities-dixf-dmf). Each entity must be associated with an entity class, a staging table, and a target table. For predefined entities, these values are pre-populated.
+For a list of the predefined target entities that the Data Import/Export Framework includes, see [Data import/export framework entities (DIXF, DMF)](entities-dixf.md). Each entity must be associated with an entity class, a staging table, and a target table. For predefined entities, these values are pre-populated.
 
 -   The staging table is the table that the data is written to before it is transformed when this entity is used for import procedures.
 -   The entity class is where X++ transformation logic is stored. You can create a copy of an entity class and modify the transformation logic.
 -   The target table is the table that data is pulled from for export procedures, or the table that fully modified data is written to for import procedures.
 
-**Important: **The mapping from the staging table schema to the target table schema is automatically generated. Unless you have customized your target Microsoft Dynamics AX system, you should not have to modify the staging-to-target mapping. For details about each target entity, you can review the information in **Data Import/Export Framework** &gt; **Setup** &gt; **Target entities**. If no default target entity suits your purposes, you can create a new target entity by using an entity that is already present in the system. If no entity that is already present in the system is appropriate, you can create a custom entity. For more information about how to create a custom entity, see [Create a custom target entity for the Data import/export framework (DIXF, DMF)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/create-a-custom-target-entity-for-the-data-importexport-framework-dixf-dmf).
+**Important: **The mapping from the staging table schema to the target table schema is automatically generated. Unless you have customized your target Microsoft Dynamics AX system, you should not have to modify the staging-to-target mapping. For details about each target entity, you can review the information in **Data Import/Export Framework** &gt; **Setup** &gt; **Target entities**. If no default target entity suits your purposes, you can create a new target entity by using an entity that is already present in the system. If no entity that is already present in the system is appropriate, you can create a custom entity. For more information about how to create a custom entity, see [Create a custom target entity for the Data import/export framework (DIXF, DMF)](create-custom-target-entity-dixf.md).
 
 ## Using the Data Import/Export Framework
 This section provides information about how to use the Data Import/Export Framework to import or export data. This section contains the following subsections:
@@ -478,7 +480,7 @@ To export data to a file, follow these steps.
 1.  Open **Data import export framework** &gt; **Common** &gt; **Processing group**. Click **New** to create a new processing group.
 2.  Select the new processing group, and then click **Entities**.
 3.  In the **Select entities for processing group** form, add an entity that have a source data format type of text file.
-4.  In the **Sample file path** field, enter the location of a sample file. This file is used to determine the format of the exported data. Only the structure of the file is used. Any data that the file contains is ignored. The format of this file must match the structure of the Microsoft Dynamics AX data that you are exporting. **Note:** You can use the demo files that are provided with the Data Import/Export Framework as sample files. For example, to export the **Barcode setup entity** to a file, you can use the **BarcodeSetupEntity.txt** file to provide the format for the export data file. For more information about the demo files, see [Demo files for the Data import/export framework (DIXF, DMF)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/demo-files-for-the-data-importexport-framework-dixf-dmf).
+4.  In the **Sample file path** field, enter the location of a sample file. This file is used to determine the format of the exported data. Only the structure of the file is used. Any data that the file contains is ignored. The format of this file must match the structure of the Microsoft Dynamics AX data that you are exporting. **Note:** You can use the demo files that are provided with the Data Import/Export Framework as sample files. For example, to export the **Barcode setup entity** to a file, you can use the **BarcodeSetupEntity.txt** file to provide the format for the export data file. For more information about the demo files, see [Demo files for the Data import/export framework (DIXF, DMF)](demo-files-dixf.md).
 5.  Click **Generate source mapping**.
 6.  Repeat steps 3 through 5 to add other entities as required. When you have finished, click **Close**.
 7.  Open **Data import export framework** &gt; **Common** &gt; **Processing group**. Select the processing group that should provide Microsoft Dynamics AX data. All entities in the processing group must map to the file formats that you created in the other processing group and must have a source data format type of **AX**.

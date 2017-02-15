@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Horizontal Fields and Buttons Group subpattern | Microsoft Docs
+title: Horizontal Fields and Buttons Group subpattern
 description: This article provides information about the Horizontal Fields and Buttons Group form subpattern. This subpattern is used when actions must be defined for an individual field on a form.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-11-04 20:50:52
+ms.date: 2015-11-04 20 - 50 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12464
-ms.assetid: fa86c96a-fbf4-4d96-8eaf-e83027bfe377
-ms.region: Global
-# ms.industry: 
+ms.assetid: 03afd029-4fbe-474d-ad3b-2e9de9037796
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -70,14 +72,14 @@ Buttons (1–3 buttons)
 
 ### Related patterns
 
--   [Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-fields-subpattern)
+-   [Toolbar and Fields](toolbar-fields-subpattern.md)
 -   Horizontal Fields
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines)document.
+    -   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 -   **Horizontal Fields and Buttons Group guidelines:**
     -   The width of the fields + buttons should not exceed the standard size of a column.
     -   Buttons should have a symbol image assigned.
@@ -90,10 +92,10 @@ Form: **SalesTable (GroupHeaderAddressHeaderOverview)** [![HorizontalFieldsButto
 ## Resources
 ### Typically used by patterns
 
--   [Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)
--   [Table of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)
--   [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)
--   [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)
+-   [Simple List and Details](simple-list-details-form-pattern.md)
+-   [Table of Contents](table-of-contents-form-pattern.md)
+-   [Details Master](details-master-form-pattern.md)
+-   [Details Transaction](details-transaction-form-pattern.md)
 
 ## Appendix
 ### Frequently asked questions

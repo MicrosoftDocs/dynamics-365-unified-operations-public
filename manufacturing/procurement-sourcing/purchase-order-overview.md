@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Purchase order overview | Microsoft Docs
+title: Purchase order overview
 description: This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-16 14:19:08
+ms.date: 2016-06-16 14 - 19 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchTable
+ms.search.form: PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 93083
-ms.assetid: 897d3c03-13e4-4b74-a8de-e159996d6531
-ms.region: Global
-# ms.industry: 
+ms.assetid: e0381734-7bd7-4ad5-abb5-4d57f75496d1
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: fdahl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -34,10 +36,10 @@ This article provides general information about purchase orders (POs) and links 
 
 A purchase order (PO) is a document that represents an agreement with a vendor to buy goods or services. The document also helps keep track of product receipts that are made toward the order and, later, the accounting of vendor invoices that the vendor bills toward the order. The **Purchase orders** page contains an overview of the available orders and lets you modify those orders. When you open a PO, you can select the **Header** view, which contains information that is specified only one time for each PO, such as the vendor details. Alternatively, you can select the **Lines** view, where you can modify order lines. Typically, you will switch between these two views as you modify POs. Charges aren't listed directly on the **Purchase orders** page, but are accessed via menus on the order header and lines. There are many reports where you can view information about POs, product receipts, and vendor invoices. These reports are found in the **Procurement and sourcing** and **Accounts payable** modules. The **Purchase order preparation** and **Purchase order receipt and follow-up** workspaces let you view lists of POs in the various states that they have progressed to. They also provide a summary of the actions that must be taken. The **Purchase order preparation** workspace is focused on PO creation and review, processing of the order through approval, and confirmation with the vendor. The **Purchase order receipt and follow-up** workspace is focused on processing the receipt of goods or services against POs. It includes lists that give insight into receipts that are overdue, or that will soon be due for delivery by the supplier. These workspaces aren't used to perform the related receipt activities that are done in the warehouse. Those activities are performed by using pages in the **Inventory management** and **Warehouse management** modules. Processing of vendor invoices should be done by using the **Vendor invoice entry** workspace, and payments should be done by using the **Vendor payments** workspace. The following articles provide an overview of the various stages that a PO goes through:
 
--   [Purchase order creation](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-order-creation)
--   [Purchase order approval and confirmation](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-order-approval-and-confirmation)
--   [Product receipt against purchase orders](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/product-receipt-against-purchase-orders)
--   [Overview of vendor invoices](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+-   [Purchase order creation](purchase-order-creation.md)
+-   [Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
+-   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
+-   [Overview of vendor invoices](vendor-invoices-overview.md)
 
 ## Types of purchase orders
 There are three types of POs. When you create a PO, you must specify the type. You can set up a default order type for new orders on the **Procurement and sourcing parameters** page.
@@ -75,11 +77,11 @@ The **Approval status** field is used when a PO goes through a review process or
 See also
 --------
 
-[Purchase order creation](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-order-creation)
+[Purchase order creation](purchase-order-creation.md)
 
-[Purchase order approval and confirmation](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-order-approval-and-confirmation)
+[Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
 
-[Product receipt against purchase orders](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/product-receipt-against-purchase-orders)
+[Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Overview of vendor invoices](vendor-invoices-overview.md)
 

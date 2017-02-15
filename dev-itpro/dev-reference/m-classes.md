@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: M Classes | Microsoft Docs
+title: M Classes
 description: System API classes that start with the letter M.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 14:27:00
+ms.date: 2016-02-24 14 - 27 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52321
-ms.assetid: ea02d48e-2f41-427a-8115-2e33e49efcdd
-ms.region: Global
-# ms.industry: 
+ms.assetid: be685d01-8f11-45f0-905d-b95d8d3111f3
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

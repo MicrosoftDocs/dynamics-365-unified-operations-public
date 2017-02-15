@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Workspace form pattern | Microsoft Docs
+title: Workspace form pattern
 description: This article discusses the Operational workspace form pattern. Workspaces are a new concept in Microsoft Dynamics AX, and are intended to be the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 18:33:33
+ms.date: 2016-01-11 18 - 33 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29151
-ms.assetid: 47c0c87f-62bc-48cf-97dc-af12fe66f690
-ms.region: Global
-# ms.industry: 
+ms.assetid: da0f7f66-3336-47a2-aaa9-e7e55faf0d26
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -55,19 +57,19 @@ Design
 
 *Action pane (ActionPane) \[Optional\]*
 
-*Workspace page filter group (Group) \[Optional\]* – This must use the [Workspace Page Filter Group](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-filter-group-subpattern)subpattern.
+*Workspace page filter group (Group) \[Optional\]* – This must use the [Workspace Page Filter Group](workspace-filter-group-subpattern.md)subpattern.
 
 Panorama (Tab)
 
-Section summary tiles (TabPage) – This must use the [Section Tiles](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-tiles-subpattern) subpattern.
+Section summary tiles (TabPage) – This must use the [Section Tiles](section-tiles-subpattern.md) subpattern.
 
-Section tabbed list (TabPage) – This must use the [Section Tabbed List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-tabbed-list-subpattern)subpattern.
+Section tabbed list (TabPage) – This must use the [Section Tabbed List](section-tabbed-list-subpattern.md)subpattern.
 
-*Section charts (TabPage) \[Optional\]* – This must use the [Section Stacked Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-stacked-chart-subpattern) subpattern.
+*Section charts (TabPage) \[Optional\]* – This must use the [Section Stacked Chart](section-stacked-chart-subpattern.md) subpattern.
 
-*Section PowerBI (TabPage) \[Optional\]* – This must use the [Section PowerBI](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-powerbi-subpattern) subpattern.
+*Section PowerBI (TabPage) \[Optional\]* – This must use the [Section PowerBI](section-powerbi-subpattern.md) subpattern.
 
-Section related links (TabPage) – This must use the [Section Related Links](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-related-links-subpattern) subpattern.
+Section related links (TabPage) – This must use the [Section Related Links](section-related-links-subpattern.md) subpattern.
 
 ### Core components
 
@@ -78,23 +80,23 @@ Section related links (TabPage) – This must use the [Section Related Links](h
 
 ### Commonly used subpatterns
 
--   [Workspace Page Filter Group ](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-filter-group-subpattern)
--   [Section Tiles](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-tiles-subpattern)
--   [Section Tabbed List ](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-tabbed-list-subpattern)
--   [Section Stacked Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-stacked-chart-subpattern)
--   [Section PowerBI](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-powerbi-subpattern)
--   [Section Related Links](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-related-links-subpattern)
+-   [Workspace Page Filter Group ](workspace-filter-group-subpattern.md)
+-   [Section Tiles](section-tiles-subpattern.md)
+-   [Section Tabbed List ](section-tabbed-list-subpattern.md)
+-   [Section Stacked Chart](section-stacked-chart-subpattern.md)
+-   [Section PowerBI](section-powerbi-subpattern.md)
+-   [Section Related Links](section-related-links-subpattern.md)
 
 ### Related patterns
 
--   [Form Part Section List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-list-form-pattern)
--   [Section Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-chart-form-pattern)
+-   [Form Part Section List](section-list-form-pattern.md)
+-   [Section Chart](section-chart-form-pattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps.
 
 -   **Standard form guidelines**
-    -   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines) document.
+    -   Standard form guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 -   **Workspace form guidelines**
     -   Use a noun phase for the page title, and avoid general words. The page title should not duplicate the title of an area page.
     -   The page title should begin with the noun that users would have in mind.

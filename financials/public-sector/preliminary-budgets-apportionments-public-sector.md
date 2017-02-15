@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preliminary budgets and apportionments in the public sector | Microsoft Docs
+title: Preliminary budgets and apportionments in the public sector
 description: This topic covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 16:57:46
+ms.date: 2015-12-07 16 - 57 - 46
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode
+ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransactionCode
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19701
-ms.assetid: f32cc3b9-4c0a-4a4e-a82f-8a804762ca91
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: bca8f803-c732-482a-9bb3-022d8eeef769
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 This topic covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
 
-The following sections in this topic describe the budgeting features that are available for the public sector.  Before you read this topic, you should also read [Budgeting in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/budgeting-in-the-public-sector).
+The following sections in this topic describe the budgeting features that are available for the public sector.  Before you read this topic, you should also read [Budgeting in the public sector](budgeting-public-sector.md).
 
 -   [Setting up budgeting and budget control for apportionments](#set-up-budgeting-and-budget-control-for-apportionments) You can define one or more budget codes for the apportionment budget type and configure budget control for apportionments.
 -   [Setting up budgeting and budget control for a preliminary budget](#set-up-budgeting-and-budget-control-for-a-preliminary-budget) You can define budget codes for the preliminary budget type and configure budget control for preliminary budgets.

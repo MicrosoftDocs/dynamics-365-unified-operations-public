@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: HierarchyViewer control | Microsoft Docs
+title: HierarchyViewer control
 description: This article provides information about the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 19:36:38
+ms.date: 2016-02-04 19 - 36 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31081
-ms.assetid: dd638401-94fb-45a8-81cb-ed19b99c4393
-ms.region: Global
-# ms.industry: 
+ms.assetid: af9716f4-8e15-4ffb-9033-d9140108eb19
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tlefor
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

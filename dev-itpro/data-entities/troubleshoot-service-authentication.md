@@ -1,13 +1,11 @@
 ---
 # required metadata
 
-title: Service authentication troubleshooting | Microsoft Docs
-description: This topic provides some tips for troubleshooting issues that involve service authentication.
-
-
+title: Service authentication troubleshooting
+description: This topic provides some tips for troubleshooting issues that involve service authentication.  
 author: nimakms
 manager: AnnBe
-ms.date: 2016-09-30 18:29:54
+ms.date: 2016-09-30 18 - 29 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,26 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 195943
-ms.assetid: 4bfa837c-2119-46a1-8da0-0689611c46a9
-ms.region: Global
-# ms.industry: 
+ms.assetid: c363b534-71f7-47bb-afde-4c749cd13189
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: nimak
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Service authentication troubleshooting
 
-This topic provides some tips for troubleshooting issues that involve service authentication.
-
-
+This topic provides some tips for troubleshooting issues that involve service authentication.  
 
 When you troubleshoot service authentication issues, there are a few basic and common procedures that can help resolve the issues that are most often encountered. These procedures also provide a hands-on demonstration of how the authentication mechanism works. This topic includes instructions and also lists a few common issues that users have encountered so far.
 
@@ -67,7 +65,7 @@ You can also look at the event logs of the instance machine, if you have access 
     -   Application and Services Logs &gt; Microsoft &gt; Dynamics &gt; AX-SystemRuntime &gt; Channel:Operational (Microsoft-Dynamics-AX-SystemRuntime/Operational)
 
 ## Other approaches
--   For more information about how OAuth is configured, see [Service endpoints](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/dynamics-ax-7-services-technical-concepts-guide).
+-   For more information about how OAuth is configured, see [Service endpoints](services-home-page.md).
 -   You can also try to call the service in parallel by using your own client code. The sample code that we published is available at <https://github.com/Microsoft/Dynamics-AX-Integration>.
 -   If the second method works, you can compare the JWTs from each method.
 

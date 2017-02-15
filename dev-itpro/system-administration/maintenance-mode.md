@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Maintenance mode | Microsoft Docs
+title: Maintenance mode
 description: This article provides information about maintenance mode in Microsoft Dynamics 365 for Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-03-24 18:39:55
+ms.date: 2016-03-24 18 - 39 - 55
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SysConfiguration
+ms.search.form: SysConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70292
-ms.assetid: 51450ee7-60c8-4faa-864b-e4d8a25d8a64
-ms.region: Global
-# ms.industry: 
-ms.author: manado
+ms.assetid: 9b284c39-a613-4eef-ac91-e4edd1087d59
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -56,5 +58,5 @@ After the instance of Microsoft Dynamics 365 for Operations Application Object 
     c:\packages\bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir c:\packages --bindir c:packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd *********** --setupmode maintenancemode --isinmaintenancemode false
 
 ## Maintenance mode in production environments
-To turn on maintenance mode in a production environment, you must submit a request to the Dynamics Service Engineering (DSE) team by using the **Other request** form in LCS on the **Service requests** page. For more information about submitting a request through LCS, see , see [Submit a request to the Dynamics Service Engineering team](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/submit-a-request-to-the-dynamics-service-engineering-team). The Dynamics Service Engineering team will move your system into maintenance mode and work with you to complete the configuration updates. After the team receives a confirmation from you that the updates are complete, they will remove your system from maintenance mode.
+To turn on maintenance mode in a production environment, you must submit a request to the Dynamics Service Engineering (DSE) team by using the **Other request** form in LCS on the **Service requests** page. For more information about submitting a request through LCS, see , see [Submit a request to the Dynamics Service Engineering team](submit-request-dynamics-service-engineering-team.md). The Dynamics Service Engineering team will move your system into maintenance mode and work with you to complete the configuration updates. After the team receives a confirmation from you that the updates are complete, they will remove your system from maintenance mode.
 

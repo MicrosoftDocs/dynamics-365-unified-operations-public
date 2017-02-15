@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up premium earnings | Microsoft Docs
+title: Set up premium earnings
 description: This topic provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15:41:35
+ms.date: 2016-10-31 15 - 41 - 35
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PayrollEarningCode, PayrollEarningCodeGroup, PayrollPremiumEarningCode, PayrollPremiumEarningGenerationPolicy, SysPolicySourceDocumentRuleType
+ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup, PayrollPremiumEarningCode, PayrollPremiumEarningGenerationPolicy, SysPolicySourceDocumentRuleType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221084
-ms.assetid: c1e34d64-46fe-4f80-a3d6-b19d6f6f6d74
-ms.region: USA
-# ms.industry: 
+ms.assetid: d828c100-5a94-4d1a-a3a2-f674ba7bdd32
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 This topic provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.
 
-To set up and pay simple premiums, such as annual bonuses, you just have to create an earning code for the premium. Then, when it's time to pay the premium, you add the earning code to earnings statements. For more information, see [Earning code and earning code group tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/earning-code-and-earning-code-group-tasks). Other premiums are based on other earnings, or on characteristics of the worker or position. This topic explains how to set up the more complex types of premiums that are supported.
+To set up and pay simple premiums, such as annual bonuses, you just have to create an earning code for the premium. Then, when it's time to pay the premium, you add the earning code to earnings statements. For more information, see [Earning code and earning code group tasks](earning-code-group-tasks.md). Other premiums are based on other earnings, or on characteristics of the worker or position. This topic explains how to set up the more complex types of premiums that are supported.
 
 ## Prerequisites
 The following table shows the prerequisites that must be in place before you start.
@@ -41,7 +43,7 @@ The following table shows the prerequisites that must be in place before you sta
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Organization hierarchy purposes | On the **Organization hierarchy purposes** page, **Legal entity** must be selected as the only organization type that is allowed for premium earnings.                                                                                                                                     |
 | Policy parameters               | On the **Policy parameters** page, **Companies** must be included in the **Order or precedence** list.                                                                                                                                                                                     |
-| Related configuration tasks     | Complete the basic setup of Payroll before you set up premiums. Note that work cycles and work periods are required for regular-rate-of-pay premiums. For more information, see [Work cycle and work period tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-cycle-and-work-period-tasks). |
+| Related configuration tasks     | Complete the basic setup of Payroll before you set up premiums. Note that work cycles and work periods are required for regular-rate-of-pay premiums. For more information, see [Work cycle and work period tasks](work-cycle-work-period-tasks.md). |
 
 ## Types of premiums
 ### Premiums that are based on earning codes
@@ -159,10 +161,10 @@ Premium codes contain the information that is required in order to generate prem
 </table>
 
 ## Setting up regularrateofpay premiums
-Regular-rate-of-pay premiums are most often used for overtime earnings that are paid in addition to the base earning rate. These earnings include any adjustments that are required by the FLSA. Before you set up a regular-rate-of-pay premium, review the earning codes that were created during the basic Payroll setup process, to make sure that all earning codes that are required for nondiscretionary earnings have been created. Make sure that work cycles and work periods have been set up. For more information, see [Work cycle and work period tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-cycle-and-work-period-tasks). Additionally, identify all the various overtime earnings that your organization pays. For example, your organization pays both time-and-a-half and double-time for overtime hours that are worked on first, second, and third shifts. This combination requires that you have six earning codes to correctly calculate and pay all overtime premiums. Union contracts, location differentials, and other factors might require additional earning codes. You set up an earning code group for nondiscretionary earnings on the **Earning code groups** page. Create a new earning group, and enter a name and a brief description for it. For example, you might enter **FLSA earnings** as the name and **All nondiscretionary earnings** as the description. Add the relevant earning codes. **Caution:** If any earning codes for nondiscretionary earnings are omitted from this earning code group, the overtime premium won't be calculated correctly. You must create an earning code to calculate and pay the premium amounts for each type of overtime earnings that you identified. These earning codes all use **Regular rate of pay** as the rate basis.    
+Regular-rate-of-pay premiums are most often used for overtime earnings that are paid in addition to the base earning rate. These earnings include any adjustments that are required by the FLSA. Before you set up a regular-rate-of-pay premium, review the earning codes that were created during the basic Payroll setup process, to make sure that all earning codes that are required for nondiscretionary earnings have been created. Make sure that work cycles and work periods have been set up. For more information, see [Work cycle and work period tasks](work-cycle-work-period-tasks.md). Additionally, identify all the various overtime earnings that your organization pays. For example, your organization pays both time-and-a-half and double-time for overtime hours that are worked on first, second, and third shifts. This combination requires that you have six earning codes to correctly calculate and pay all overtime premiums. Union contracts, location differentials, and other factors might require additional earning codes. You set up an earning code group for nondiscretionary earnings on the **Earning code groups** page. Create a new earning group, and enter a name and a brief description for it. For example, you might enter **FLSA earnings** as the name and **All nondiscretionary earnings** as the description. Add the relevant earning codes. **Caution:** If any earning codes for nondiscretionary earnings are omitted from this earning code group, the overtime premium won't be calculated correctly. You must create an earning code to calculate and pay the premium amounts for each type of overtime earnings that you identified. These earning codes all use **Regular rate of pay** as the rate basis.    
 
 See also
 --------
 
-[Earning code and earning code group tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/earning-code-and-earning-code-group-tasks)
+[Earning code and earning code group tasks](earning-code-group-tasks.md)
 

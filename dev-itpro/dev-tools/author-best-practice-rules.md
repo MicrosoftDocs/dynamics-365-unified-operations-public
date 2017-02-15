@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Authoring best practices | Microsoft Docs
+title: Authoring best practices
 description: This wiki describes how you can author best practice rules in C#, for both metadata and X++ code. Best practice checks are run by the compiler and in daily builds to catch objectionable practices that are unacceptable in shipping code. However, the features can also be used to author simple one-of tools to harvest information about the application.
 author: pvillads
 manager: AnnBe
-ms.date: 2016-02-12 19:45:02
+ms.date: 2016-02-12 19 - 45 - 02
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 48071
-ms.assetid: e3f9ab7a-da66-436c-9bfc-3f76e0303b82
-ms.region: Global
-# ms.industry: 
+ms.assetid: 835e63dc-d1df-4472-8060-7a5f43a35e9f
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

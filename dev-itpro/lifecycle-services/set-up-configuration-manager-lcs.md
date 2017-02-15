@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up Configuration manager | Microsoft Docs
+title: Set up Configuration manager
 description: 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 22:07:42
+ms.date: 2016-03-08 22 - 07 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 62673
-ms.assetid: d9e934bd-c70b-4574-ae7d-7d07ee34df5a
-ms.region: Global
-# ms.industry: 
+ms.assetid: 102d1d6f-c684-4e6d-9243-7bca0b25055e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -38,7 +40,7 @@ ms.author: robadawy
 Before you begin, your environment must include the following components:
 
 -   A running version of AX 2012 R3 that has been configured for your business. For more information about how to install AX 2012 R3, see [Install Microsoft Dynamics AX 2012](http://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx).
--   A running instance of the Data Import/Export Framework. For more information about how to install the Data Import/Export Framework, see [Install the Data import/export framework (AX 2012 R3)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/install-the-data-importexport-framework-dixf-dmf). **Important:** You must deploy the DMFEntityExecutionStatusService and DMFService service groups to enable to Configuration manager (beta) to connect to Data Import/Export Framework.
+-   A running instance of the Data Import/Export Framework. For more information about how to install the Data Import/Export Framework, see [Install the Data import/export framework (AX 2012 R3)](install-dixf.md). **Important:** You must deploy the DMFEntityExecutionStatusService and DMFService service groups to enable to Configuration manager (beta) to connect to Data Import/Export Framework.
 -   An AX 2012 R3 project in Lifecycle Services. **Caution:** Copying configurations between environments can be a destructive operation. All project owners have the right to configure and perform these operations. Make sure that only trusted individuals are set as project owners.
 
 ## Create Data Import/Export Framework source data formats in AX 2012 R3
@@ -79,7 +81,7 @@ Complete the following procedure in the environment that you intend to export a 
 ## Install and configure the local component of the System diagnostics (Lifecycle Services)
 Complete the following procedure in the environment that you intend to export a configuration from. **Important:** If you have already installed the local component of the System diagnostics for your project and environment, you must uninstall it by using **Add/Remove programs**. Only one instance of Microsoft Dynamics AX Application Object Server (AOS) per environment can be used with Configuration management, regardless of the number of instances that are discovered.
 
-1.  Install the local component of the System diagnostics. For details, see [Install and run System diagnostics (Lifecycle Services)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/install-and-run-system-diagnostics-lifecycle-services). Important: For this beta release, we require that you add the service account for the System diagnostics to the sysadmin role in AX 2012 R3.
+1.  Install the local component of the System diagnostics. For details, see [Install and run System diagnostics (Lifecycle Services)](install-run-system-diagnostics-lcs.md). Important: For this beta release, we require that you add the service account for the System diagnostics to the sysadmin role in AX 2012 R3.
 2.  Click **Start** &gt; **Microsoft Dynamics AX Lifecycle Services Diagnostic Service Discovery**.
 3.  In the **Environment Discovery** window, enter a name for the environment, and the fully-qualified name of the Microsoft SQL Server instance and database. Then click Discover environment.
 4.  After discovery is completed, enter the values in the **Configuration management (Beta)** section, click **Save**, and then click **Upload environment**.
@@ -142,5 +144,5 @@ Complete the following procedure in the environment that you intend to export a 
 5.  Repeat this procedure in the environment that you intend to import a configuration to.
 
 ## Next steps
-The environment is now ready for you to copy and manage configurations. For more information, see [Copy a configuration (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/copy-a-configuration-lifecycle-services-lcs).
+The environment is now ready for you to copy and manage configurations. For more information, see [Copy a configuration (Lifecycle Services, LCS)](copy-configuration-lcs.md).
 

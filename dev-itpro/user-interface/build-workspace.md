@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build a workspace | Microsoft Docs
+title: Build a workspace
 description: In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-10-26 15:03:00
+ms.date: 2015-10-26 15 - 03 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10794
-ms.assetid: c4983ea6-b40e-471d-aebe-255fe0b7e569
-ms.region: Global
-# ms.industry: 
+ms.assetid: fa18e413-57c3-470a-b0e4-8763734a792a
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ In this tutorial, you will create a new tile and include it in the summary secti
 Prerequisites
 -------------
 
-For this tutorial, you must access the Microsoft Dynamics AX environment by using Remote Desktop, and you must be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2).
+For this tutorial, you must access the Microsoft Dynamics AX environment by using Remote Desktop, and you must be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](access-instances.md).
 
 ## Key concepts
 -   Learn about and use form patterns that are related to workspaces.
@@ -46,7 +48,7 @@ For this tutorial, you must access the Microsoft Dynamics AX environment by usin
 ## Setup
 ### Import the tutorial project and transactional data
 
-Use Microsoft Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the **FMTDataHelper** class to load data for the Fleet Management tutorial. If this is the first tutorial that you’re working on, review [Access Microsoft Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2), and make sure that you provision your administrator user if you’re working on a local virtual machine (VM).
+Use Microsoft Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the **FMTDataHelper** class to load data for the Fleet Management tutorial. If this is the first tutorial that you’re working on, review [Access Microsoft Dynamics AX Instances](access-instances.md), and make sure that you provision your administrator user if you’re working on a local virtual machine (VM).
 
 1.  Download the **FMTutorialDataModel.axpp** file from the Microsoft Dynamics Lifecycle Services (LCS) methodology, and copy it to the **Downloads** folder of the VM.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
@@ -618,7 +620,7 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 5.  Set **End Mileage** to **100**, and then click **OK**. Notice that the rental that you just returned no longer appears in the list.
 
 ## Related tutorials
--   [Building the Customer form](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/cli102-building-the-customer-form) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
--   [Building navigation](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/building-navigation) – See this tutorial if you want instructions for adding your workspace to the Dynamics AX menu structure.
+-   [Building the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
+-   [Building navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the Dynamics AX menu structure.
 
 

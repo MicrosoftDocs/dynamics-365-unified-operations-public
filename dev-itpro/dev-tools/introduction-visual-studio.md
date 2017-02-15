@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Development tools for Dynamics 365 for Operations | Microsoft Docs
+title: Development tools for Dynamics 365 for Operations
 description: This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the Dynamics AX development tools. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23:21:09
+ms.date: 2015-12-11 23 - 21 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23441
-ms.assetid: c28e2e18-25c9-4384-be4f-e4e35096ca0d
-ms.region: Global
-# ms.industry: 
+ms.assetid: 0611fedc-c019-486d-bfb3-128220542e61
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robadawy
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: FIFO with physical value and marking | Microsoft Docs
+title: FIFO with physical value and marking
 description: First in, First out (FIFO) is an inventory model in which the first acquired receipts are issued first. Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the financial date of the inventory transaction. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18:57:00
+ms.date: 2016-02-24 18 - 57 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
+ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 54682
-ms.assetid: f2562ece-c5b9-4d59-bdff-2c4bf029d6d7
-ms.region: Global
-ms.industry: Retail
+ms.assetid: d83bb8cb-2d68-4ece-9a5b-f2cf6541bf0f
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Topic name | Microsoft Docs
-description: Full description that appears in the search results. Usually the first paragraph of your topic.
-author: your GitHub alias
+title: [Topic name]
+description: [Full description that appears in the search results. Usually the first paragraph of your topic.]
+author: [your GitHub alias]
 manager: AnnBe
-ms.date: first proposed publication date
+ms.date: [first publication date]
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,19 +13,19 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
-# ROBOTS: 
+# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: [Pick one: Application User/Developer/IT Pro]
 # ms.devlang: 
-ms.reviewer: [Content Strategist microsoft alias]
-ms.suite: [product release]
+# ms.reviewer: [Content Strategist microsoft alias]
+# ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist]
 # ms.tgt_pltfrm: 
-ms.custom: 62303
+# ms.custom: [used by loc]
 ms.assetid: [Go get from guidgenerator.com]
-# ms.region: 
-# ms.industry: 
+ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: [Microsoft alias]
-
+ms.dyn365.intro: [month/year of release that feature was introduced in, in format 00/0000]
+ms.dyn365.version: [name of release that feature was introduced in]
 ---
 
 # Metadata and Markdown template

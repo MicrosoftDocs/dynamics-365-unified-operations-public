@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Weighted average with physical value and marking | Microsoft Docs
+title: Weighted average with physical value and marking
 description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-17 15:15:52
+ms.date: 2016-03-17 15 - 15 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
+ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: YuyuScheller
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65501
-ms.assetid: ee72cc62-336b-4c08-87e5-32d35292e6b3
-ms.region: Global
-ms.industry: Retail
+ms.assetid: f83a97d2-0113-4e32-aa5a-080b37a4ea7a
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: yuyus
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

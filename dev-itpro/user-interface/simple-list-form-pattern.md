@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Simple List form pattern | Microsoft Docs
+title: Simple List form pattern
 description: This article provides information about the Simple List form pattern. This pattern is used to maintain data for simple entities.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-04 00:11:38
+ms.date: 2015-12-04 00 - 11 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16261
-ms.assetid: 8a21ad79-5401-46a8-95cc-3793ad82384e
-ms.region: Global
-# ms.industry: 
+ms.assetid: 530c6ce5-db1d-4196-990a-daa74e9f4afe
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -82,12 +84,12 @@ TabularGrid (Grid)
 
 ### Commonly used subpatterns
 
--   [Custom Filter Group](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/custom-filter-group-subpattern)
+-   [Custom Filter Group](custom-filter-group-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/general-form-guidelines) document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Simple list guidelines:**
 

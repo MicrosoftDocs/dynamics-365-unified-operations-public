@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Project management and accounting | Microsoft Docs
+title: Project management and accounting
 description: The project management and accounting functionality can be used in multiple industries to provide a service, produce a product, or achieve a result.  
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-05-20 16:32:24
+ms.date: 2016-05-20 16 - 32 - 24
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 87983
-ms.assetid: 8803f403-033e-408f-81a9-fc1c37871a86
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: a754c46f-b98d-477d-a277-53d4bb04a94f
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -49,19 +51,19 @@ During project initiation, several key processes occur. You can use a project 
 
 ### Create project quotations
 
-In the initial sales phase of a project, a project quotation lets you provide a customer with a non-binding offer. A quotation can include elements such as the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges. You can also issue a letter of guarantee for a project quotation transaction between your organization and the customer. After the project quotation is created, you can create the letter of guarantees request for the customer and submit it to the bank. After the bank has approved the request, the letter of guarantee is issued to the customer. For more information, see [Project quotations](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/project-management-accounting/project-quotations).
+In the initial sales phase of a project, a project quotation lets you provide a customer with a non-binding offer. A quotation can include elements such as the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges. You can also issue a letter of guarantee for a project quotation transaction between your organization and the customer. After the project quotation is created, you can create the letter of guarantees request for the customer and submit it to the bank. After the bank has approved the request, the letter of guarantee is issued to the customer. For more information, see [Project quotations](project-quotations.md).
 
 ### Create project contracts
 
-When you enter into a contract with a customer or other funding source to complete a project, you must first create a project contract. Then, when you create the project, you must assign it to the corresponding contract. The type of project that you create for a project contract determines the method that is used to invoice the project customers. You can modify a project contract and the related project, but you can’t change the project type. For more information about project types, see the "Creating projects" section. For more information about project contracts, see [Project contracts](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/project-management-accounting/project-contracts).
+When you enter into a contract with a customer or other funding source to complete a project, you must first create a project contract. Then, when you create the project, you must assign it to the corresponding contract. The type of project that you create for a project contract determines the method that is used to invoice the project customers. You can modify a project contract and the related project, but you can’t change the project type. For more information about project types, see the "Creating projects" section. For more information about project contracts, see [Project contracts](project-contracts.md).
 
 ### Create work breakdown structures
 
-The degree of detail in a WBS depends on the level of accuracy that is required in estimates and the level of tracking that is required against those estimates. Projects that have very low tolerance for slippages in schedule or cost usually require a more detailed WBS, and also require diligent tracking of work progress and cost against the WBS. For more information, see [Work breakdown structures](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/project-management-accounting/work-breakdown-structures).
+The degree of detail in a WBS depends on the level of accuracy that is required in estimates and the level of tracking that is required against those estimates. Projects that have very low tolerance for slippages in schedule or cost usually require a more detailed WBS, and also require diligent tracking of work progress and cost against the WBS. For more information, see [Work breakdown structures](work-breakdown-structures.md).
 
 ### Create project forecasts and budgets
 
-You can use forecasting if your organization has an operational perspective and focuses on the revenues and costs that are derived from specific transactions. However, if your organization focuses more on financial amounts, you can use budgeting. Each method has its advantages. For more information, see [Project forecasts and budgets](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/project-management-accounting/project-forecasts-and-budgetshttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+You can use forecasting if your organization has an operational perspective and focuses on the revenues and costs that are derived from specific transactions. However, if your organization focuses more on financial amounts, you can use budgeting. Each method has its advantages. For more information, see [Project forecasts and budgets](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
 
 ### Create projects
 
@@ -92,11 +94,11 @@ During project execution, team members or managers record work and the expense
 
 ### Manage work breakdown structures
 
-A WBS is a description of the work that will be completed for a project. A WBS is a hierarchy of tasks. It represents not only the work for each task, but also the size, cost, and duration of the task. For more information, see [Work breakdown structures](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/project-management-accounting/work-breakdown-structures).
+A WBS is a description of the work that will be completed for a project. A WBS is a hierarchy of tasks. It represents not only the work for each task, but also the size, cost, and duration of the task. For more information, see [Work breakdown structures](work-breakdown-structures.md).
 
 ### Manage project forecasts and budgets
 
-There are two ways to manage and control your projects: project forecasts and project budgets. You can use forecasting if your organization has an operational perspective and focuses on the revenues and costs that are derived from specific transactions. However, if your organization focuses more on financial amounts, you can use budgeting. For more information, see [Project forecasts and budgets](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/project-management-accounting/project-forecasts-and-budgetshttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+There are two ways to manage and control your projects: project forecasts and project budgets. You can use forecasting if your organization has an operational perspective and focuses on the revenues and costs that are derived from specific transactions. However, if your organization focuses more on financial amounts, you can use budgeting. For more information, see [Project forecasts and budgets](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
 
 ### Create production orders
 
@@ -169,7 +171,7 @@ In Project management and accounting, you can register the consumption of items 
 
 ### Process project invoices
 
-The project type determines which invoicing procedure should be applied. Only the two external project types (Time and material and Fixed-price) can be invoiced. Time and material projects and Fixed-price projects are always attached to a project contract. Before you create a customer invoice for a project, you can create a preliminary invoice, or invoice proposal. In an invoice proposal, you can select project transactions to include in a project invoice. You can then review the invoice details before you post the project invoice and send it to the customer or other funding source. For more information about how to process project invoices, see [Project invoicing](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/project-invoicing).
+The project type determines which invoicing procedure should be applied. Only the two external project types (Time and material and Fixed-price) can be invoiced. Time and material projects and Fixed-price projects are always attached to a project contract. Before you create a customer invoice for a project, you can create a preliminary invoice, or invoice proposal. In an invoice proposal, you can select project transactions to include in a project invoice. You can then review the invoice details before you post the project invoice and send it to the customer or other funding source. For more information about how to process project invoices, see [Project invoicing](project-invoicing.md).
 
 ### Calculate the cost to complete a project
 

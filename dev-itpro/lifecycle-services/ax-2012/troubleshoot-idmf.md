@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Troubleshoot the Intelligent Data Management Framework (AX 2012) | Microsoft Docs
+title: Troubleshoot the Intelligent Data Management Framework (AX 2012)
 description: This topic contains information about troubleshooting the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF).
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 18:03:50
+ms.date: 2015-12-05 18 - 03 - 50
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: AX 2012
+ms.reviewer: annbe
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18711
-ms.assetid: 3b961f8d-ad3a-45b8-b07c-7fb189311209
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 1c90f556-45ea-4fb7-a39a-7481e02acad1
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -63,7 +65,7 @@ You may encounter the following error from the Microsoft SQL Server Integration 
 The export to Excel functionality may not work in some environments. To fix this problem, you must have Microsoft Excel and the Excel PIAs installed on the computer. Verify that Excel is correctly installed and working on the computer. If required, download and install the Microsoft Office Primary Interop Assemblies (PIAs). For Excel 2003, see [Office 2003 Update: Redistributable Primary Interop Assemblies](http://www.microsoft.com/downloads/details.aspx?familyid=3c9a983a-ac14-4125-8ba0-d36d67e0f4ad&displaylang=en). For Microsoft Excel 2007, see [2007 Microsoft Office System Update: Redistributable Primary Interop Assemblies](http://www.microsoft.com/downloads/details.aspx?FamilyID=59daebaa-bed4-4282-a28c-b864d8bfa513&displaylang=en). Restart IDMF after successful installation of the PIAs.
 
 ## The discovery of a driver table fails
-When starting a discovery process for an Archive Object or a Purge Object, you may encounter the following error: "Unable to discover the driver table for the Archive Object or Purge Object." This error message is usually caused by metadata synchronization issues. To fix this error condition, you must run the post-installation tasks. Run the post-installation application by clicking **Start** &gt; **All programs** &gt; **Intelligent Data Management Framework** &gt; **Post-installation tasks**, or follow these steps to resolve this error manually. For details, see the [Installation Guide for the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/installation-guide-for-the-microsoft-dynamics-ax-intelligent-data-management-framework-idmf).
+When starting a discovery process for an Archive Object or a Purge Object, you may encounter the following error: "Unable to discover the driver table for the Archive Object or Purge Object." This error message is usually caused by metadata synchronization issues. To fix this error condition, you must run the post-installation tasks. Run the post-installation application by clicking **Start** &gt; **All programs** &gt; **Intelligent Data Management Framework** &gt; **Post-installation tasks**, or follow these steps to resolve this error manually. For details, see the [Installation Guide for the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF)](installation-guide-idmf.md).
 
 1.  Verify that **AXDataManagementToolProjectnn.xpo** exists in the Application Object Tree (AOT), where nn is 50, 60, 61, or 62 depending on the version of your Microsoft Dynamics AX application.
 2.  Verify that you have successfully completed the post-installation checklist.

@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Accounting distributions and subledger journal entries for vendor invoices | Microsoft Docs
-description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions.
-
+title: Accounting distributions and subledger journal entries for vendor invoices
+description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-13 02:16:43
+ms.date: 2015-12-13 02 - 16 - 43
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,25 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: VendEditInvoice
+ms.search.form: VendEditInvoice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26891
-ms.assetid: 58d782d5-6f1f-4376-b334-28f1dcd09d40
-ms.region: Global
-# ms.industry: 
+ms.assetid: 17f1c351-d05e-4cd2-90ee-2047d3fd524b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mfalkner
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Accounting distributions and subledger journal entries for vendor invoices
 
-Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions.
-
+Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 
 Accounting distributions 
 -------------------------

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Comply with the Americans with Disabilities Act | Microsoft Docs
+title: Comply with the Americans with Disabilities Act
 description: This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-09-10 15:08:58
+ms.date: 2015-09-10 15 - 08 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmADARequirement
+ms.search.form: HcmADARequirement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2741
-ms.assetid: d9ad3232-4898-46a1-af9b-aad4874c0949
-ms.region: United States
-# ms.industry: 
+ms.assetid: c0ea5dec-3550-43b6-a6fb-74c4ebafbf71
+ms.search.region: United States
+# ms.search.industry: 
 ms.author: kherr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

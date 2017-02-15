@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Public sector home page | Microsoft Docs
+title: Public sector home page
 description: Microsoft Dynamics 365 for Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
-author: twheeloc
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-08 15:26:48
+ms.date: 2015-12-08 15 - 26 - 48
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SysConfiguration
+ms.search.form: SysConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20691
-ms.assetid: aa2f8c1d-e72c-4026-b748-2f2c95f1526b
-ms.region: Global
-ms.industry: Public sector
-ms.author: twheeloc
+ms.assetid: b14c835d-c585-49f7-80e0-f10fd5f4d362
+ms.search.region: Global
+ms.search.industry: Public sector
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -34,22 +36,22 @@ Microsoft Dynamics 365 for Operations enable business processes that are common 
 
 Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include:
 
--   Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger.
--   Preliminary budgets, apportionments, and commitments.
--   Billing codes, billing classifications, trading partner codes, and custom fields for free text invoices.
--   General ledger year-end processing, which includes encumbrances and commitments on purchase orders.
--   Electronic payments to vendors, signature pages for payment reports, and invoice payment holds.
+-   Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger
+-   Preliminary budgets, apportionments, and commitments
+-   Billing codes, billing classifications, trading partner codes, and custom fields for free text invoices
+-   General ledger year-end processing, which includes encumbrances and commitments on purchase orders
+-   Electronic payments to vendors, signature pages for payment reports, and invoice payment holds
 
- For more information, see the following topics:
+ For more information, see the following articles:
 
--   [Planning for Public sector functionality](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/planning-for-public-sector-functionality)
--   [Accounts payable in the Public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/accounts-payable-in-the-public-sector)
--   [Accounts receivable in the Public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/accounts-receivable-in-the-public-sector)
--   [Budgeting in the Public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/budgeting-in-the-public-sector)
--   [Fixed assets in the Public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/fixed-assets-in-the-public-sector)
--   [French regulatory features](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/public-sector-accounting-in-france)\*
--   [General ledger in the Public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/general-ledger-in-the-public-sector)
--   [Procurement and sourcing in the Public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/procurement-and-sourcing-in-the-public-sector)
+-   [Planning for Public sector functionality](plan-public-sector-functionality.md)
+-   [Accounts payable in the Public sector](accounts-payable-public-sector.md)
+-   [Accounts receivable in the Public sector](accounts-receivable-public-sector.md)
+-   [Budgeting in the Public sector](budgeting-public-sector.md)
+-   [Fixed assets in the Public sector](fixed-asset-public-sector.md)
+-   [French regulatory features](public-sector-accounting-france.md)\*
+-   [General ledger in the Public sector](general-ledger-public-sector.md)
+-   [Procurement and sourcing in the Public sector](procurement-sourcing-public-sector.md)
 -   [Security roles in the Public sector](http://ax.help.dynamics.com/en/wiki/security-roles-in-the-public-sector-2/)
 
 \* Applicable only if your organization is in France.

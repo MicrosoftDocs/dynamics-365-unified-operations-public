@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Build and debug a project | Microsoft Docs
+title: Build and debug a project
 description: In this tutorial, you’ll learn about using the tools in Visual Studio to analyze and debug code in the Fleet Management application. You’ll go through a simple developer scenario in which you will set breakpoints, modify some code, and build the result. 
 author: pvillads
 manager: AnnBe
-ms.date: 2015-12-13 01:58:01
+ms.date: 2015-12-13 01 - 58 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26731
-ms.assetid: 5a2dcdd8-b780-4470-87b3-73bcf94bc838
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9c2558b6-6eb3-4d90-b91c-8e39a3c19cb5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Images | Microsoft Docs
-description: This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used. 
-
+title: Images
+description: This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used.  
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-26 02:17:20
+ms.date: 2016-02-26 02 - 17 - 20
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,25 +13,26 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 55871
-ms.assetid: dff9d76e-7251-4064-b89a-22aadd56b2e0
-ms.region: Global
-# ms.industry: 
+ms.assetid: d422d267-97a3-42c6-9de6-449d3f267702
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tlefor
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # Images
 
-This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used. 
-
+This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used.  
 
 **Note:** For accessibility, when you use an image to indicate status or show data, the image must be accompanied by a tooltip, enhanced preview, label, or other textual representation that describes the value or status that the image represents. Unlike Microsoft Dynamics AX 2012, Microsoft Dynamics 365 for Operations doesn’t use embedded resources for images. Instead, it uses lightweight symbols. The coding pattern has changed slightly to support the new image control. For ImageList uses, the runtime accepts the old **ImageID** value and maps it to a symbol, so that existing code continues to work. **Note:** In some cases, there is no image even after runtime mapping, and this behavior is intentional. AX 2012 displays images in a grid column to indicate status. These images were sometimes retrieved from embedded resources that are no longer available in Dynamics 365 for Operations . AX 2012 offers the following storage options for images:
 
@@ -48,7 +48,7 @@ The Dynamics 365 for Operations offers the following storage options for images:
 -   A database field that is stored as a container.
 -   A symbol font, where images are rendered by name from the font
 
-In Dynamics 365 for Operations, embedded resources (kernel resources) have been retired. Images that are stored as AOS resources allow for the use of an image that isn't categorized as user data, and can be used with your application. **Note:** If there are legacy embedded resource images that UX has approved for use with Dynamics 365 for Operations, those embedded images can be manually transferred to an AOS resource and used in Dynamics 365 for Operations. A typical web application maintains a collection of images on an Internet Information Services (IIS) server and just provides a URL to the image. Although this approach is supported in Dynamics 365 for Operations, we don't expect that it will be used very much. Instead, we expect that the symbol font will be used as an image source. Of course, application logic will store an image in a database to allow for strong employee photos, product images, and so on, and this approach is a first-class experience in Dynamics 365 for Operations. A symbol font is the most performant and scalable image format. We expect that characters from the symbol font will be used for most application use cases (grid row by row status, button images, and so on). For the list of symbols that are available in the symbol font, see [Symbol font](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/microsoft-dynamics-ax-symbol-font).
+In Dynamics 365 for Operations, embedded resources (kernel resources) have been retired. Images that are stored as AOS resources allow for the use of an image that isn't categorized as user data, and can be used with your application. **Note:** If there are legacy embedded resource images that UX has approved for use with Dynamics 365 for Operations, those embedded images can be manually transferred to an AOS resource and used in Dynamics 365 for Operations. A typical web application maintains a collection of images on an Internet Information Services (IIS) server and just provides a URL to the image. Although this approach is supported in Dynamics 365 for Operations, we don't expect that it will be used very much. Instead, we expect that the symbol font will be used as an image source. Of course, application logic will store an image in a database to allow for strong employee photos, product images, and so on, and this approach is a first-class experience in Dynamics 365 for Operations. A symbol font is the most performant and scalable image format. We expect that characters from the symbol font will be used for most application use cases (grid row by row status, button images, and so on). For the list of symbols that are available in the symbol font, see [Symbol font](symbol-font.md).
 
 ## Image type: Symbol
 <table>

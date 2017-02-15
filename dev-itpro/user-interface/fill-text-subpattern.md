@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fill Text subpattern | Microsoft Docs
+title: Fill Text subpattern
 description: This article provides information about the Fill Text subpattern. This subpattern is used when a single String or StaticText control must stretch to the full width of the container, so that users have more space to enter information.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-11-04 20:46:48
+ms.date: 2015-11-04 20 - 46 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12414
-ms.assetid: b7572e9e-052a-4094-83e6-80388a24d815
-ms.region: Global
-# ms.industry: 
+ms.assetid: c1a4f795-976a-404a-ba12-0ced10e0d188
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -53,7 +55,7 @@ String | StaticText
 
 ### Related container patterns
 
--   [Fields and Field Groups](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fields-and-field-groups-subpattern)
+-   [Fields and Field Groups](fields-field-groups-subpattern.md)
 
 ## UX guidelines
 None
@@ -64,12 +66,12 @@ Form: **FmRental (Notes)** [![Fill Text sub-pattern example](./media/filltext2.p
 ## Resources
 ### Typically used by patterns
 
--   [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)
--   [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)
--   [Simple Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-details-form-pattern)
--   [Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)
--   [Table Of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)
--   [Wizard](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/wizard-form-pattern)
+-   [Details Master](details-master-form-pattern.md)
+-   [Details Transaction](details-transaction-form-pattern.md)
+-   [Simple Details](simple-details-form-pattern.md)
+-   [Simple List and Details](simple-list-details-form-pattern.md)
+-   [Table Of Contents](table-of-contents-form-pattern.md)
+-   [Wizard](wizard-form-pattern.md)
 
 ## Appendix
 ### Frequently asked questions

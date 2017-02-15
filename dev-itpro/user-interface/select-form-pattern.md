@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Select a form pattern | Microsoft Docs
+title: Select a form pattern
 description: This article provides information that will help you select the best form pattern for the forms that you migrate. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-23 00:57:30
+ms.date: 2015-12-23 00 - 57 - 30
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28681
-ms.assetid: eb8f722c-ddd3-414e-b20a-6a20e8f9b24b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 43da4f52-5e1f-41d8-bed0-bfabf4962573
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -52,26 +54,26 @@ The **Form.Design.Style** property often contains the name of the pattern that w
 
 | Form.Design.Style value                                                                          | Corresponding pattern                                                                                           |
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| DetailsFormMaster                                                                                | [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)                              |
-| DetailsFormTransaction                                                                           | [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)                    |
-| Dialog                                                                                           | [Dialog](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern)                                              |
-| DropDialog                                                                                       | [Drop Dialog](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/drop-dialog-form-pattern)                                    |
-| FormPart, where there are just fields                                                            | [Form Part FactBox Card](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/factbox-form-patterns)                            |
-| FormPart, where there is a grid                                                                  | [Form Part FactBox Grid](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/factbox-form-patterns)                            |
-| ListPage                                                                                         | [List Page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/list-page-form-pattern)                                        |
-| Lookup                                                                                           | [Lookup](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/lookup-form-pattern)                                              |
-| SimpleList                                                                                       | [Simple List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-form-pattern)                                    |
-| SimpleListDetails, where there are 2–3 fields in the navigation list (recommended)               | [Simple List Details – List Grid](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)    |
-| SimpleListDetails, where there are and 4–5 fields in the navigation list                         | [Simple List Details – Tabular Grid](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern) |
-| SimpleListDetails, where there is a tree (rare)                                                  | [Simple List Details – Tree](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)         |
-| TableOfContents                                                                                  | [Table of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)                        |
-| Auto, where there is an **Overview** tab, a **General **tab, and a single data source            | [Task Single](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-single-form-pattern)                                    |
-| Auto, where there are two sets of **Overview **tabs, **General** tabs, and/or headers plus lines | [Task Double](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-double-form-pattern)                                    |
-| Auto, where there is focus on a single record                                                    | [Simple Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-details-form-pattern)                              |
-| Auto, where the form name ends in “Lookup”                                                       | [Lookup](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/lookup-form-pattern)                                              |
-| Auto, where there is a single tab control and **Next**/**Previous** buttons                      | [Wizard](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/wizard-form-pattern)                                              |
-| Auto, where the form name ends in “Wizard”                                                       | [Wizard](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/wizard-form-pattern)                                              |
-| Auto, where there is just a grid and some buttons                                                | [Simple List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-form-pattern)                                    |
+| DetailsFormMaster                                                                                | [Details Master](details-master-form-pattern.md)                              |
+| DetailsFormTransaction                                                                           | [Details Transaction](details-transaction-form-pattern.md)                    |
+| Dialog                                                                                           | [Dialog](dialog-form-pattern.md)                                              |
+| DropDialog                                                                                       | [Drop Dialog](drop-dialog-form-pattern.md)                                    |
+| FormPart, where there are just fields                                                            | [Form Part FactBox Card](factbox-form-patterns.md)                            |
+| FormPart, where there is a grid                                                                  | [Form Part FactBox Grid](factbox-form-patterns.md)                            |
+| ListPage                                                                                         | [List Page](list-page-form-pattern.md)                                        |
+| Lookup                                                                                           | [Lookup](lookup-form-pattern.md)                                              |
+| SimpleList                                                                                       | [Simple List](simple-list-form-pattern.md)                                    |
+| SimpleListDetails, where there are 2–3 fields in the navigation list (recommended)               | [Simple List Details – List Grid](simple-list-details-form-pattern.md)    |
+| SimpleListDetails, where there are and 4–5 fields in the navigation list                         | [Simple List Details – Tabular Grid](simple-list-details-form-pattern.md) |
+| SimpleListDetails, where there is a tree (rare)                                                  | [Simple List Details – Tree](simple-list-details-form-pattern.md)         |
+| TableOfContents                                                                                  | [Table of Contents](table-of-contents-form-pattern.md)                        |
+| Auto, where there is an **Overview** tab, a **General **tab, and a single data source            | [Task Single](task-single-form-pattern.md)                                    |
+| Auto, where there are two sets of **Overview **tabs, **General** tabs, and/or headers plus lines | [Task Double](task-double-form-pattern.md)                                    |
+| Auto, where there is focus on a single record                                                    | [Simple Details](simple-details-form-pattern.md)                              |
+| Auto, where the form name ends in “Lookup”                                                       | [Lookup](lookup-form-pattern.md)                                              |
+| Auto, where there is a single tab control and **Next**/**Previous** buttons                      | [Wizard](wizard-form-pattern.md)                                              |
+| Auto, where the form name ends in “Wizard”                                                       | [Wizard](wizard-form-pattern.md)                                              |
+| Auto, where there is just a grid and some buttons                                                | [Simple List](simple-list-form-pattern.md)                                    |
 
 ###  When a form doesn't match the Style property
 
@@ -92,20 +94,20 @@ Although this approach is less useful than looking at the form metadata, you ca
 
 | Form pattern                                                                                                        | What it's used for                                                                                                    |
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern) (two variants)                   | A form that displays the details of a complex entity                                                                  |
-| [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)                        | A form that displays the details of a complex transaction entity and its lines (for example, and order and its lines) |
-| [Dialog](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern) (six variants)                                   | A form that is used as a dialog to gather a set of information                                                        |
-| [Drop Dialog](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/drop-dialog-form-pattern) (two variants)                         | A form that is used as a drop dialog to gather a small set of information to provide context for an action            |
-| [FactBox](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/factbox-form-patterns) (two variants)                                | A Microsoft Dynamics AX 2012 FactBox that displays information about a related record or set of records               |
-| [List Page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/list-page-form-pattern)                                            | A Dynamics AX 2012 List Page                                                                                          |
-| [Lookup](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/lookup-form-pattern) (three variants)                                 | A form that is used as a lookup                                                                                       |
-| [Simple Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-details-form-pattern) (four variants)                  | A form that is focused on a single record                                                                             |
-| [Simple List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-form-pattern)                                        | A form that displays details for a simple entity as a grid that has fewer than 10 fields per record                   |
-| [Simple List & Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern) (three variants) | A form that displays information about an entity of medium complexity                                                 |
-| [Table of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)                            | A form that displays setup information or loosely related information sets                                            |
+| [Details Master](details-master-form-pattern.md) (two variants)                   | A form that displays the details of a complex entity                                                                  |
+| [Details Transaction](details-transaction-form-pattern.md)                        | A form that displays the details of a complex transaction entity and its lines (for example, and order and its lines) |
+| [Dialog](dialog-form-pattern.md) (six variants)                                   | A form that is used as a dialog to gather a set of information                                                        |
+| [Drop Dialog](drop-dialog-form-pattern.md) (two variants)                         | A form that is used as a drop dialog to gather a small set of information to provide context for an action            |
+| [FactBox](factbox-form-patterns.md) (two variants)                                | A Microsoft Dynamics AX 2012 FactBox that displays information about a related record or set of records               |
+| [List Page](list-page-form-pattern.md)                                            | A Dynamics AX 2012 List Page                                                                                          |
+| [Lookup](lookup-form-pattern.md) (three variants)                                 | A form that is used as a lookup                                                                                       |
+| [Simple Details](simple-details-form-pattern.md) (four variants)                  | A form that is focused on a single record                                                                             |
+| [Simple List](simple-list-form-pattern.md)                                        | A form that displays details for a simple entity as a grid that has fewer than 10 fields per record                   |
+| [Simple List & Details](simple-list-details-form-pattern.md) (three variants) | A form that displays information about an entity of medium complexity                                                 |
+| [Table of Contents](table-of-contents-form-pattern.md)                            | A form that displays setup information or loosely related information sets                                            |
 | Task (two variants)                                                                                                 | A legacy form pattern that is used to display master or transaction entities                                          |
-| [Wizard](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/wizard-form-pattern)                                                  | A form that displays a set of tab pages to the user to gather information in a predetermined order                    |
-| [Operational Workspace](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)                                | A form that is used to display an overview of an activity and is meant to be a primary means of navigation            |
+| [Wizard](wizard-form-pattern.md)                                                  | A form that displays a set of tab pages to the user to gather information in a predetermined order                    |
+| [Operational Workspace](workspace-form-pattern.md)                                | A form that is used to display an overview of an activity and is meant to be a primary means of navigation            |
 | Workspace Panorama Sections (three variants)                                                                        | A form that is used to show content for a panorama section (via a Form Part Control) in the Operational Workspace     |
 
 ### Finding forms that currently use a particular form pattern
@@ -118,11 +120,11 @@ For each form pattern class, information is provided about each variant. This in
 
 ###### **Details Master**
 
-[**Details Master**](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)\[Default\] This form pattern is used to display the details of a complex entity on FastTabs. It includes a grid view and a details view.
+[**Details Master**](details-master-form-pattern.md)\[Default\] This form pattern is used to display the details of a complex entity on FastTabs. It includes a grid view and a details view.
 
 Form: CustTable [![image001](./media/image001.jpg)](./media/image001.jpg)[![image002](./media/image002.jpg)](./media/image002.jpg)
 
-**[Details Master w/ Standard Tabs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)** Use this Details Master variant when your form has a large number of FastTabs (&gt;15) that can be grouped into categories.
+**[Details Master w/ Standard Tabs](details-master-form-pattern.md)** Use this Details Master variant when your form has a large number of FastTabs (&gt;15) that can be grouped into categories.
 
 Form: HcmWorker [![image003](./media/image003.jpg)](./media/image003.jpg)[![HowToSelectAFormPattern (31)](./media/howtoselectaformpattern-31.jpg)](./media/howtoselectaformpattern-31.jpg)
 
@@ -130,7 +132,7 @@ Form: HcmWorker [![image003](./media/image003.jpg)](./media/image003.jpg)[![HowT
 
 ###### **Details Transaction**
 
-**[Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)** Use this form patter to show the details of a complex transaction entity and its lines (for example, an order and its lines).
+**[Details Transaction](details-transaction-form-pattern.md)** Use this form patter to show the details of a complex transaction entity and its lines (for example, an order and its lines).
 
 Form: SalesTable [![HowToSelectAFormPattern (32)](./media/howtoselectaformpattern-32.jpg)](./media/howtoselectaformpattern-32.jpg)[![HowToSelectAFormPattern (33)](./media/howtoselectaformpattern-33.jpg)](./media/howtoselectaformpattern-33.jpg)
 
@@ -138,23 +140,23 @@ Form: SalesTable [![HowToSelectAFormPattern (32)](./media/howtoselectaformpatter
 
 ###### **Dialog**
 
-[**Dialog – Basic**](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern)\[Default\] This form pattern is used to gather or show a set of information.
+[**Dialog – Basic**](dialog-form-pattern.md)\[Default\] This form pattern is used to gather or show a set of information.
 
 Form: ProjTableCreate[![HowToSelectAFormPattern (34)](./media/howtoselectaformpattern-34.jpg)](./media/howtoselectaformpattern-34.jpg)
 
-**[Dialog – Read Only](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern)** Use this Dialog variant when your Dialog just displays information that can't be edited. It has only a **Close** button.
+**[Dialog – Read Only](dialog-form-pattern.md)** Use this Dialog variant when your Dialog just displays information that can't be edited. It has only a **Close** button.
 
 Form: SalesTablePostings[![HowToSelectAFormPattern (35)](./media/howtoselectaformpattern-35.jpg)](./media/howtoselectaformpattern-35.jpg)
 
-**[Dialog – FastTabs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern)** Use this Dialog variant when your Dialog content is grouped into FastTabs.
+**[Dialog – FastTabs](dialog-form-pattern.md)** Use this Dialog variant when your Dialog content is grouped into FastTabs.
 
 None currently in product.[![HowToSelectAFormPattern (36)](./media/howtoselectaformpattern-36.jpg)](./media/howtoselectaformpattern-36.jpg)
 
-**[Dialog – Tabs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern)** Use this Dialog variant when your Dialog content must be grouped into tabs.
+**[Dialog – Tabs](dialog-form-pattern.md)** Use this Dialog variant when your Dialog content must be grouped into tabs.
 
 Form: CaseDetailCreate[![HowToSelectAFormPattern (37)](./media/howtoselectaformpattern-37.jpg)](./media/howtoselectaformpattern-37.jpg)
 
-**[Dialog – Double Tabs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/dialog-form-pattern)** Use this Dialog variant when your Dialog content has two tabs that are stacked on top of each other.
+**[Dialog – Double Tabs](dialog-form-pattern.md)** Use this Dialog variant when your Dialog content has two tabs that are stacked on top of each other.
 
 Form: PurchTableReferences[![HowToSelectAFormPattern (38)](./media/howtoselectaformpattern-38-300x286.jpg)](./media/howtoselectaformpattern-38.jpg)
 
@@ -162,11 +164,11 @@ Form: PurchTableReferences[![HowToSelectAFormPattern (38)](./media/howtoselectaf
 
 ###### **Drop Dialog**
 
-[**Drop Dialog**](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/drop-dialog-form-pattern)\[Default\] This form pattern is used to initiate actions when the number of fields is small (less than five).
+[**Drop Dialog**](drop-dialog-form-pattern.md)\[Default\] This form pattern is used to initiate actions when the number of fields is small (less than five).
 
 Form: CustCollectionsNewActivityAction[![HowToSelectAFormPattern (39)](./media/howtoselectaformpattern-39.jpg)](./media/howtoselectaformpattern-39.jpg)
 
-**[Drop Dialog – Read Only](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/drop-dialog-form-pattern)** Use this Drop Dialog variant when the fields in the Drop Dialog aren't editable. No **OK**/**Close** button is modeled.
+**[Drop Dialog – Read Only](drop-dialog-form-pattern.md)** Use this Drop Dialog variant when the fields in the Drop Dialog aren't editable. No **OK**/**Close** button is modeled.
 
 No example currently exists in the product.
 
@@ -174,11 +176,11 @@ No example currently exists in the product.
 
 ###### **Factbox**
 
-**[Factbox Grid](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/factbox-form-patterns)** Use this Factbox variant to show a child collection of related information.
+**[Factbox Grid](factbox-form-patterns.md)** Use this Factbox variant to show a child collection of related information.
 
 Form: ContactsInfoPart[![HowToSelectAFormPattern (40)](./media/howtoselectaformpattern-40.jpg)](./media/howtoselectaformpattern-40.jpg)
 
-**[Factbox Card](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/factbox-form-patterns)** Use this Factbox variant to show a set of related fields.
+**[Factbox Card](factbox-form-patterns.md)** Use this Factbox variant to show a set of related fields.
 
 Form: CustStatisticsStatistics[![HowToSelectAFormPattern (41)](./media/howtoselectaformpattern-41.jpg)](./media/howtoselectaformpattern-41.jpg)
 
@@ -186,7 +188,7 @@ Form: CustStatisticsStatistics[![HowToSelectAFormPattern (41)](./media/howtosele
 
 ###### **List Page**
 
-**[List Page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/list-page-form-pattern)** The Dynamics AX 2012 list page that is just a grid that is optimized for browsing records and acting on those records.
+**[List Page](list-page-form-pattern.md)** The Dynamics AX 2012 list page that is just a grid that is optimized for browsing records and acting on those records.
 
 Form: SalesTableListPage[![HowToSelectAFormPattern (42)](./media/howtoselectaformpattern-42.jpg)](./media/howtoselectaformpattern-42.jpg)
 
@@ -194,15 +196,15 @@ Form: SalesTableListPage[![HowToSelectAFormPattern (42)](./media/howtoselectafor
 
 ###### **Lookup**
 
-[**Lookup Basic**](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/lookup-form-pattern)\[Default\] This form pattern is used if the lookup form is a grid or tree that has optional filters or buttons at the bottom.
+[**Lookup Basic**](lookup-form-pattern.md)\[Default\] This form pattern is used if the lookup form is a grid or tree that has optional filters or buttons at the bottom.
 
 Form: SysLanguageLookup[![HowToSelectAFormPattern (43)](./media/howtoselectaformpattern-43.jpg)](./media/howtoselectaformpattern-43.jpg)
 
-**[Lookup w/Preview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/lookup-form-pattern)** Use this Lookup variant when, in addition to the basic pattern,a preview of the current record is also shown.
+**[Lookup w/Preview](lookup-form-pattern.md)** Use this Lookup variant when, in addition to the basic pattern,a preview of the current record is also shown.
 
 Form: HcmWorkerLookup[![HowToSelectAFormPattern (44)](./media/howtoselectaformpattern-44-300x169.jpg)](./media/howtoselectaformpattern-44.jpg)
 
-**[Lookup w/Tabs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/lookup-form-pattern)** Use this Lookup variant when there are multiple views of a lookup (for example, a grid view/tree view or multiple filtered lists).
+**[Lookup w/Tabs](lookup-form-pattern.md)** Use this Lookup variant when there are multiple views of a lookup (for example, a grid view/tree view or multiple filtered lists).
 
 Form: CaseCategoryLookup[![HowToSelectAFormPattern (45)](./media/howtoselectaformpattern-45.jpg)](./media/howtoselectaformpattern-45.jpg)
 
@@ -210,11 +212,11 @@ Form: CaseCategoryLookup[![HowToSelectAFormPattern (45)](./media/howtoselectafor
 
 ###### **Panorama Section**
 
-**[Form Part Section List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-list-form-pattern)** Use this form pattern to show a list in a workspace section. This should be modeled as a separate form and rendered in the workspace via a Form Part Control.
+**[Form Part Section List](section-list-form-pattern.md)** Use this form pattern to show a list in a workspace section. This should be modeled as a separate form and rendered in the workspace via a Form Part Control.
 
-**[Form Part Section List - Double](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-list-form-pattern)** Use this variant when you must also show a secondary list. This secondary list isn't initially visible.
+**[Form Part Section List - Double](section-list-form-pattern.md)** Use this variant when you must also show a secondary list. This secondary list isn't initially visible.
 
-**[Hub Part Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-chart-form-pattern)** Use this variant to show a chart in a workspace section. This should be modeled as a separate form and rendered in the workspace via a Form Part Control.
+**[Hub Part Chart](section-chart-form-pattern.md)** Use this variant to show a chart in a workspace section. This should be modeled as a separate form and rendered in the workspace via a Form Part Control.
 
 Form: VendInvoiceJourCountChart[![HowToSelectAFormPattern (1)](./media/howtoselectaformpattern-1.jpg)](./media/howtoselectaformpattern-1.jpg)
 
@@ -222,19 +224,19 @@ Form: VendInvoiceJourCountChart[![HowToSelectAFormPattern (1)](./media/howtosele
 
 ###### **Simple Details**
 
-**[Simple Details w/Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-details-form-pattern)** Use this form pattern tp show fields for a single base record.
+**[Simple Details w/Toolbar and Fields](simple-details-form-pattern.md)** Use this form pattern tp show fields for a single base record.
 
 Form: AgreementLine[![HowToSelectAFormPattern (2)](./media/howtoselectaformpattern-2-300x203.jpg)](./media/howtoselectaformpattern-2.jpg)
 
-**[Simple Details w/FastTabs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-details-form-pattern)** Use this Simple Details variant when the record’s information is organized into FastTabs.
+**[Simple Details w/FastTabs](simple-details-form-pattern.md)** Use this Simple Details variant when the record’s information is organized into FastTabs.
 
 Form: PlanActivityServiceDetails[![HowToSelectAFormPattern (3)](./media/howtoselectaformpattern-3-300x191.jpg)](./media/howtoselectaformpattern-3.jpg)
 
-**[Simple Details w/Standard Tabs](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-details-form-pattern)** Use this Simple Details variant when the record’s information is organized into regular tabs.
+**[Simple Details w/Standard Tabs](simple-details-form-pattern.md)** Use this Simple Details variant when the record’s information is organized into regular tabs.
 
 Form: HcmEmploymentDateManager[![HowToSelectAFormPattern (4)](./media/howtoselectaformpattern-4-300x191.jpg)](./media/howtoselectaformpattern-4.jpg)
 
-**[Simple Details w/Panorama](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-details-form-pattern)** Use this Simple Details variant to display a record’s information in a horizontally scrolling panorama.
+**[Simple Details w/Panorama](simple-details-form-pattern.md)** Use this Simple Details variant to display a record’s information in a horizontally scrolling panorama.
 
 Form: PdsMRCEventTracker[![HowToSelectAFormPattern (5)](./media/howtoselectaformpattern-5-300x191.jpg)](./media/howtoselectaformpattern-5.jpg)
 
@@ -242,7 +244,7 @@ Form: PdsMRCEventTracker[![HowToSelectAFormPattern (5)](./media/howtoselectaform
 
 ###### **Simple List**
 
-**[Simple List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-form-pattern)** This form pattern is used to maintain data for simple entities.
+**[Simple List](simple-list-form-pattern.md)** This form pattern is used to maintain data for simple entities.
 
 Form: CustGroup[![HowToSelectAFormPattern (6)](./media/howtoselectaformpattern-6.jpg)](./media/howtoselectaformpattern-6.jpg)
 
@@ -250,15 +252,15 @@ Form: CustGroup[![HowToSelectAFormPattern (6)](./media/howtoselectaformpattern-6
 
 ###### **Simple List and Details**
 
-[**Simple List & Details – List Grid**](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)\[Default\] This form pattern is used to maintain data for entities of medium complexity. A list grid that has 2–3 fields in the navigation list is the preferred pattern for this form style in the current version.
+[**Simple List & Details – List Grid**](simple-list-details-form-pattern.md)\[Default\] This form pattern is used to maintain data for entities of medium complexity. A list grid that has 2–3 fields in the navigation list is the preferred pattern for this form style in the current version.
 
 Form: PaymTerm[![HowToSelectAFormPattern (7)](./media/howtoselectaformpattern-7.jpg)](./media/howtoselectaformpattern-7.jpg)
 
-**[Simple List & Details – Tabular Grid](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)** Use this Simple List & Details variant if you require more than three fields in the list part of the form.
+**[Simple List & Details – Tabular Grid](simple-list-details-form-pattern.md)** Use this Simple List & Details variant if you require more than three fields in the list part of the form.
 
 Form: ExchangeRate[![HowToSelectAFormPattern (8)](./media/howtoselectaformpattern-8.jpg)](./media/howtoselectaformpattern-8.jpg)
 
-**[Simple List & Details – Tree](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)** Use this Simple List & Details variant if the list part of the form is a tree.
+**[Simple List & Details – Tree](simple-list-details-form-pattern.md)** Use this Simple List & Details variant if the list part of the form is a tree.
 
 Form: FiscalCalendars[![HowToSelectAFormPattern (9)](./media/howtoselectaformpattern-9.jpg)](./media/howtoselectaformpattern-9.jpg)
 
@@ -266,7 +268,7 @@ Form: FiscalCalendars[![HowToSelectAFormPattern (9)](./media/howtoselectaformpat
 
 ###### **Table of Contents**
 
-**[Table of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)** Use this form pattern to show setup information or loosely related information sets.
+**[Table of Contents](table-of-contents-form-pattern.md)** Use this form pattern to show setup information or loosely related information sets.
 
 Form: CustParameters[![HowToSelectAFormPattern (10)](./media/howtoselectaformpattern-10.jpg)](./media/howtoselectaformpattern-10.jpg)
 
@@ -274,11 +276,11 @@ Form: CustParameters[![HowToSelectAFormPattern (10)](./media/howtoselectaformpat
 
 ###### **Task**
 
-**[Task Single](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-single-form-pattern)** This legacy form pattern is used to display entities. It should be used only for migration, not for new forms.
+**[Task Single](task-single-form-pattern.md)** This legacy form pattern is used to display entities. It should be used only for migration, not for new forms.
 
 Form: LedgerJournalTable[![HowToSelectAFormPattern (11)](./media/howtoselectaformpattern-11.jpg)](./media/howtoselectaformpattern-11.jpg)
 
-**[Task Double](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-double-form-pattern)** This legacy form pattern is used to display transaction entities. It should be used only for migration, not for new forms.
+**[Task Double](task-double-form-pattern.md)** This legacy form pattern is used to display transaction entities. It should be used only for migration, not for new forms.
 
 Form: HRMAbsenceTableHistory[![HowToSelectAFormPattern (12)](./media/howtoselectaformpattern-12.jpg)](./media/howtoselectaformpattern-12.jpg)
 
@@ -286,7 +288,7 @@ Form: HRMAbsenceTableHistory[![HowToSelectAFormPattern (12)](./media/howtoselect
 
 ###### **Wizard**
 
-**[Wizard](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/wizard-form-pattern)** This form pattern is used to display a set of page views to the user to gather information in a predetermined order.
+**[Wizard](wizard-form-pattern.md)** This form pattern is used to display a set of page views to the user to gather information in a predetermined order.
 
 Form: WrkCtrBulkResReqEditWizard[![HowToSelectAFormPattern (13)](./media/howtoselectaformpattern-13.jpg)](./media/howtoselectaformpattern-13.jpg)
 
@@ -294,7 +296,7 @@ Form: WrkCtrBulkResReqEditWizard[![HowToSelectAFormPattern (13)](./media/howtose
 
 ###### **Workspace**
 
-[**Operational Workspace**](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern)\[Default\] This is the preferred, performance-enhanced variant of the Workspace pattern.
+[**Operational Workspace**](workspace-form-pattern.md)\[Default\] This is the preferred, performance-enhanced variant of the Workspace pattern.
 
 Form: FmClerkWorkspace[![HowToSelectAFormPattern (1)](./media/howtoselectaformpattern-1.png)](./media/howtoselectaformpattern-1.png)
 
@@ -307,14 +309,14 @@ Form: FmClerkWorkspace[![HowToSelectAFormPattern (1)](./media/howtoselectaformpa
 
 | Form pattern                                                                                                     | What it's used for                                                                                  |
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Custom Filters](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/custom-filter-group-subpattern) (two variants)             | Containers that display QuickFilters and any other modeled custom filters                           |
+| [Custom Filters](custom-filter-group-subpattern.md) (two variants)             | Containers that display QuickFilters and any other modeled custom filters                           |
 | Fields (five variants)                                                                                           | Containers that primarily display individual fields                                                 |
-| [Dimension Expression Builder](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimension-expression-builder-subpattern)     | Containers that include a Dimension Expression Builder control                                      |
-| [Dimension Entry Control](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimension-entry-control-subpattern)               | Containers that include a Dimension Entry Control                                                   |
-| [List Panel](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/list-panel-subpattern)                                         | Containers that display two lists that users move items between                                     |
-| [Nested Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/nested-simple-list-and-details-subpattern) | Containers that are used to embed a simpler Simple List and Details form inside a section in a form |
-| [Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-fields-subpattern)                         | Containers that display actions above a set of fields                                               |
-| [Toolbar and List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern) (two variants)              | Containers that display actions above 1–2 grids                                                     |
+| [Dimension Expression Builder](dimension-expression-builder-subpattern.md)     | Containers that include a Dimension Expression Builder control                                      |
+| [Dimension Entry Control](dimension-entry-control-subpattern.md)               | Containers that include a Dimension Entry Control                                                   |
+| [List Panel](list-panel-subpattern.md)                                         | Containers that display two lists that users move items between                                     |
+| [Nested Simple List and Details](nested-simple-list-details-subpattern.md) | Containers that are used to embed a simpler Simple List and Details form inside a section in a form |
+| [Toolbar and Fields](toolbar-fields-subpattern.md)                         | Containers that display actions above a set of fields                                               |
+| [Toolbar and List](toolbar-list-subpattern.md) (two variants)              | Containers that display actions above 1–2 grids                                                     |
 | Workspace-related (eight variants)                                                                               | Containers that correspond to various sections inside an Operational Workspace                      |
 
 ### Finding containers that require that a subpattern be applied on a form
@@ -327,11 +329,11 @@ For each subpattern class, information is provided about each variant. This info
 
 ###### **Custom Filters**
 
-**[Custom Filters](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/custom-filter-group-subpattern)** Use this form pattern when custom filters are modeled. QuickFilter isn't required.
+**[Custom Filters](custom-filter-group-subpattern.md)** Use this form pattern when custom filters are modeled. QuickFilter isn't required.
 
 Form: LedgerJournalTable (TopFields)[![HowToSelectAFormPattern (16)](./media/howtoselectaformpattern-16.jpg)](./media/howtoselectaformpattern-16.jpg)
 
-**[Custom and Quick Filters](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimension-entry-control-subpattern)** Use this variant when a QuickFilter is required.
+**[Custom and Quick Filters](dimension-entry-control-subpattern.md)** Use this variant when a QuickFilter is required.
 
 Form: CustTable (CustomFilterGroup)[![HowToSelectAFormPattern (17)](./media/howtoselectaformpattern-17-300x132.jpg)](./media/howtoselectaformpattern-17.jpg)
 
@@ -339,23 +341,23 @@ Form: CustTable (CustomFilterGroup)[![HowToSelectAFormPattern (17)](./media/howt
 
 ###### **Fields**
 
-**[Fields and Field Groups](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fields-and-field-groups-subpattern)** Use this form pattern to get a responsive layout for containers that contain only fields.
+**[Fields and Field Groups](fields-field-groups-subpattern.md)** Use this form pattern to get a responsive layout for containers that contain only fields.
 
 Form: InventLocation (LocationNames)[![HowToSelectAFormPattern (18)](./media/howtoselectaformpattern-18.jpg)](./media/howtoselectaformpattern-18.jpg)
 
-**[Tabular Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/tabular-fields-subpattern)** Use this form pattern to get a structured layout of fields. It is intended primarily for totals.
+**[Tabular Fields](tabular-fields-subpattern.md)** Use this form pattern to get a structured layout of fields. It is intended primarily for totals.
 
 Form: LedgerJournalTransVendPaym (Balances)[![HowToSelectAFormPattern (19)](./media/howtoselectaformpattern-19.jpg)](./media/howtoselectaformpattern-19.jpg)
 
-**[Fill Text](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fill-text-subpattern)** Use this form pattern when a single input control requires full width.
+**[Fill Text](fill-text-subpattern.md)** Use this form pattern when a single input control requires full width.
 
 Form: FmRental (Notes)[![HowToSelectAFormPattern (20)](./media/howtoselectaformpattern-20.jpg)](./media/howtoselectaformpattern-20.jpg)
 
-**[Horizontal Fields and Button Group](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/horizontal-fields-and-buttons-group-subpattern)** Use this form pattern when a field has an inline action.
+**[Horizontal Fields and Button Group](horizontal-fields-buttons-group-subpattern.md)** Use this form pattern when a field has an inline action.
 
 Form: SalesTable (GroupHeaderAddressHeaderOverview)[![HowToSelectAFormPattern (21)](./media/howtoselectaformpattern-21.jpg)](./media/howtoselectaformpattern-21.jpg)
 
-**[Image Preview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/image-preview-subpattern)** Use this form pattern for containers that have image controls (and optional related fields).
+**[Image Preview](image-preview-subpattern.md)** Use this form pattern for containers that have image controls (and optional related fields).
 
 Form: RetailVisualProfile (Login)[![HowToSelectAFormPattern (22)](./media/howtoselectaformpattern-22.jpg)](./media/howtoselectaformpattern-22.jpg)
 
@@ -363,11 +365,11 @@ Form: RetailVisualProfile (Login)[![HowToSelectAFormPattern (22)](./media/howtos
 
 ###### **Toolbar and List**
 
-**[Toolbar and List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern)** Use this form pattern on containers that have only actions and a grid.
+**[Toolbar and List](toolbar-list-subpattern.md)** Use this form pattern on containers that have only actions and a grid.
 
 Form: VendTable (TabCommunication)[![HowToSelectAFormPattern (23)](./media/howtoselectaformpattern-23.jpg)](./media/howtoselectaformpattern-23.jpg)
 
-**[Toolbar and List – Double](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-list-subpattern)** Use this Toolbar and List variant when the containers have two grids.
+**[Toolbar and List – Double](toolbar-list-subpattern.md)** Use this Toolbar and List variant when the containers have two grids.
 
 Form: SalesQuickQuote (TabPageExistingItems)[![HowToSelectAFormPattern (24)](./media/howtoselectaformpattern-24.jpg)](./media/howtoselectaformpattern-24.jpg)
 
@@ -375,45 +377,45 @@ Form: SalesQuickQuote (TabPageExistingItems)[![HowToSelectAFormPattern (24)](./m
 
 ###### **Workspace Related**
 
-**[Section Tiles](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-tiles-subpattern)** Use this variant to show a set of tiles/charts in a workspace section. This should be modeled in a tab page on the workspace form. Charts are defined by using Form Part Controls
+**[Section Tiles](section-tiles-subpattern.md)** Use this variant to show a set of tiles/charts in a workspace section. This should be modeled in a tab page on the workspace form. Charts are defined by using Form Part Controls
 
 Form: SalesOrderProcessingWorkspace[![HowToSelectAFormPattern (25)](./media/howtoselectaformpattern-25.jpg)](./media/howtoselectaformpattern-25.jpg)
 
-**[Section Related Links](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-related-links-subpattern)** Use this variant to show a set of hyperlinks in a workspace section. This should be modeled in a tab page on the workspace form.
+**[Section Related Links](section-related-links-subpattern.md)** Use this variant to show a set of hyperlinks in a workspace section. This should be modeled in a tab page on the workspace form.
 
 Form: SalesOrderProcessingWorkspace[![HowToSelectAFormPattern (26)](./media/howtoselectaformpattern-26.jpg)](./media/howtoselectaformpattern-26.jpg)
 
-**[Section Tabbed List](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-tabbed-list-subpattern)** Use this variant when multiple list variants must be included. Only one is shown at a time.
+**[Section Tabbed List](section-tabbed-list-subpattern.md)** Use this variant when multiple list variants must be included. Only one is shown at a time.
 
-**[Section Stacked Chart](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-stacked-chart-subpattern)** Use this variant when you must include up to two charts in an Operational Workspace.
+**[Section Stacked Chart](section-stacked-chart-subpattern.md)** Use this variant when you must include up to two charts in an Operational Workspace.
 
-**[Section PowerBI](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/section-powerbi-subpattern)** Use this variant when a PowerBI section must be included.
+**[Section PowerBI](section-powerbi-subpattern.md)** Use this variant when a PowerBI section must be included.
 
-**[Workspace Page Filter Group](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-filter-group-subpattern)** Use this form pattern to add a single filter to your workspace.
+**[Workspace Page Filter Group](workspace-filter-group-subpattern.md)** Use this form pattern to add a single filter to your workspace.
 
-**[Filters and Toolbar – Stacked](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/filters-and-toolbar-subpattern)** Use this subpattern in the Form Part Section List pattern, so that actions appear below filters.
+**[Filters and Toolbar – Stacked](filters-toolbar-subpattern.md)** Use this subpattern in the Form Part Section List pattern, so that actions appear below filters.
 
-**[Filters and Toolbar – Inline](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/filters-and-toolbar-subpattern)** Use this subpattern in the Form Part Section List pattern, so that filters and actions appear on the same line.
+**[Filters and Toolbar – Inline](filters-toolbar-subpattern.md)** Use this subpattern in the Form Part Section List pattern, so that filters and actions appear on the same line.
 
  
 
 ###### **Other**
 
-**[Nested Simple List & Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/nested-simple-list-and-details-subpattern)** Use this form pattern to embed a simpler Simple List & Details form inside a tab or group.
+**[Nested Simple List & Details](nested-simple-list-details-subpattern.md)** Use this form pattern to embed a simpler Simple List & Details form inside a tab or group.
 
 Form: HcmJob (TaskTabPage)[![HowToSelectAFormPattern (27)](./media/howtoselectaformpattern-27.jpg)](./media/howtoselectaformpattern-27.jpg)
 
-**[List Panel](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/list-panel-subpattern)** Use this form pattern when users must move items back and forth between two lists.
+**[List Panel](list-panel-subpattern.md)** Use this form pattern when users must move items back and forth between two lists.
 
 Form: CLIControls\_ListPanel (FormTabPageControl1)[![HowToSelectAFormPattern (28)](./media/howtoselectaformpattern-28.jpg)](./media/howtoselectaformpattern-28.jpg)
 
-**[Toolbar and Fields](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/toolbar-and-fields-subpattern)** Use this form pattern on containers that have only actions and fields
+**[Toolbar and Fields](toolbar-fields-subpattern.md)** Use this form pattern on containers that have only actions and fields
 
 Form: HcmPosition (WorkerAssignmentTabPage)[![HowToSelectAFormPattern (29)](./media/howtoselectaformpattern-29.jpg)](./media/howtoselectaformpattern-29.jpg)
 
-**[Dimension Entry Control](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimension-entry-control-subpattern)** Use this form pattern on tab pages that have only a Dimension Entry Control.
+**[Dimension Entry Control](dimension-entry-control-subpattern.md)** Use this form pattern on tab pages that have only a Dimension Entry Control.
 
 Form: CustTable (TabFinancialDimensions)[![HowToSelectAFormPattern (30)](./media/howtoselectaformpattern-30.jpg)](./media/howtoselectaformpattern-30.jpg)
 
-**[Dimension Expression Builder](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/financial-dimensions/dimension-expression-builder-subpattern)** Use this form pattern on containers that include a Dimension Expression Builder control.
+**[Dimension Expression Builder](dimension-expression-builder-subpattern.md)** Use this form pattern on containers that include a Dimension Expression Builder control.
 

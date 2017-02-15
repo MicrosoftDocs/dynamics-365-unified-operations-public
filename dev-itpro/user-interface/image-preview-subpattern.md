@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Image Preview subpattern | Microsoft Docs
+title: Image Preview subpattern
 description: This article provides information about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container, especially within a FastTab or Group. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-11-04 20:50:00
+ms.date: 2015-11-04 20 - 50 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12444
-ms.assetid: 809ad369-9637-4519-bf56-ba816eb2e7fa
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3e127008-fe03-410f-994b-34ef6699ca73
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: jasongre
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -85,8 +87,8 @@ Group
 
 ### Related container patterns
 
--   [Fields and Field Groups](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fields-and-field-groups-subpattern)
--   [Fill Text](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/fill-text-subpattern)
+-   [Fields and Field Groups](fields-field-groups-subpattern.md)
+-   [Fill Text](fill-text-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with the UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
@@ -100,11 +102,11 @@ Form: **RetailVisualProfile** **(Login)** [![ImagePreview(2)](./media/imageprevi
 ## Resources
 ### Typically used by patterns
 
--   [Details Master](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-master-form-pattern)
--   [Details Transaction](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/details-transaction-form-pattern)
--   [Simple Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-details-form-pattern)
--   [Simple List and Details](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/simple-list-and-details-form-pattern)
--   [Table of Contents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/table-of-contents-form-pattern)
+-   [Details Master](details-master-form-pattern.md)
+-   [Details Transaction](details-transaction-form-pattern.md)
+-   [Simple Details](simple-details-form-pattern.md)
+-   [Simple List and Details](simple-list-details-form-pattern.md)
+-   [Table of Contents](table-of-contents-form-pattern.md)
 
 ## Appendix
 ### Frequently asked questions

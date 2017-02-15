@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add contextual BI to forms | Microsoft Docs
+title: Add contextual BI to forms
 description: In this tutorial you'll model a form part that displays the previous rental history of vehicles. You'll add the form part to the Vehicles form using a DynaLink. When the user views a vehicle record, the part displays relevant rental history. 
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-12 19:10:00
+ms.date: 2015-12-12 19 - 10 - 00
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
 ms.reviewer: annbe
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24571
-ms.assetid: 92e906e5-6a7a-48a0-857c-2205c756e994
-ms.region: Global
-# ms.industry: 
+ms.assetid: fb4188a2-8592-49c0-922a-1cdca8db4310
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: milindav
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ In this tutorial you'll model a form part that displays the previous rental hist
 Prerequisites
 -------------
 
-This tutorial requires you to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/access-microsoft-dynamics-ax-7-instances-2).
+This tutorial requires you to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](access-instances.md).
 
 ## Key concepts
 -   **Aggregate measurements** - Similar to **perspectives** and **Cubes** from earlier versions of Microsoft Dynamics AX, aggregate measurements let you model and consume aggregate data in Dynamics AX.

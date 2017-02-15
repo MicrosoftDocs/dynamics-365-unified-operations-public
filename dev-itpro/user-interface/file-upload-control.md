@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: File upload control | Microsoft Docs
-description: This topic provides information about the file upload control. This control lets users upload files to Microsoft Dynamics 365 for Operations.
+title: File upload control
+description: This article provides information about the file upload control. This control lets users upload files to Microsoft Dynamics AX.
 author: aneesmsft
 manager: AnnBe
-ms.date: 2016-02-24 17:32:07
+ms.date: 2016-02-24 17 - 32 - 07
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,29 +13,31 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: RobinARH
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 54311
-ms.assetid: 4d7e8eb5-6a07-4013-904d-214f9008f60b
-ms.region: Global
-# ms.industry: 
+ms.assetid: 1cb47ba5-0a8a-48ae-94d9-c23c7b3100fd
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aneesa
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
 # File upload control
 
-This topic provides information about the file upload control. This control lets users upload files to Microsoft Dynamics 365 for Operations.
+This article provides information about the file upload control. This control lets users upload files to Microsoft Dynamics AX.
 
 Overview
 --------
 
-The file upload control lets users upload a file to Microsoft Dynamics 365 for Operations. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. [![FileUpload001](./media/fileupload001.png)](./media/fileupload001.png) The file upload control can have three styles. You control the style by using the **Style** property.
+The file upload control lets users upload a file to Microsoft Dynamics AX. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. [![FileUpload001](./media/fileupload001.png)](./media/fileupload001.png) The file upload control can have three styles. You control the style by using the **Style** property.
 
 -   The **Standard** style shows the file name field together with **Browse**, **Upload**, and **Cancel** buttons.
 -   The **Minimal** style shows only the **Browse** button.

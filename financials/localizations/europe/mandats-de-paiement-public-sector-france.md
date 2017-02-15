@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Mandats de paiement in the public sector in France | Microsoft Docs
+title: Mandats de paiement in the public sector in France
 description: The mandat de paiement is used by the director to notify the accountant that the organization is obligated to pay a specific amount to another entity, and to authorize the accountant to pay that amount. The mandat maintains the strict separation that is required between the operational role of the director and the accounting role of the accountant.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-13 05:19:51
+ms.date: 2015-12-13 05 - 19 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27231
-ms.assetid: 6427e630-4d68-46a9-a009-72e0a838a972
-ms.region: France
-ms.industry: Public sector
+ms.assetid: a0d740e7-c1ac-4d3f-82a3-0ed14a3ac162
+ms.search.region: France
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

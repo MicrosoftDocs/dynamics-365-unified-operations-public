@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Deploy a Dynamics AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure | Microsoft Docs
+title: Deploy a Dynamics AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-03 20:22:56
+ms.date: 2015-12-03 20 - 22 - 56
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
-ms.suite: AX 2012
+ms.reviewer: annbe
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15561
-ms.assetid: 0ba94ccc-230d-4675-919d-d53a87e95758
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 46f539b8-ce0f-4347-a211-e5693a953c51
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -40,7 +42,7 @@ Before you complete the procedures in this article, make sure that the following
 |                |                                                                                                                                                                 |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Category**   | **Prerequisite**                                                                                                                                                |
-| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure) |
+| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
 
 ## 1. Log on to Lifecycle Services
 Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use this website to deploy AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Log on to Lifecycle Services](https://lcs.dynamics.com/en/)
@@ -86,7 +88,7 @@ Complete the following procedure to deploy an AX 2012 R3 or AX 2012 R3 CU8 demo 
 6.  To customize virtual machine names, click **Customize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed. Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99 When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8. If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
 7.  One virtual machine will be deployed on Azure. The default size of this virtual machine is D3 (4 cores, 14 GB memory). If you want to change the size, select a different size from the **Size** list.
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/en-us/pricing/details/virtual-machines/).
-    -   For more information about the software installed on the virtual machine, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/ax-2012/plan-your-microsoft-dynamics-ax-2012-r3-deployment-on-azure).
+    -   For more information about the software installed on the virtual machine, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
 
 8.  Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 9.  Click **Next**.

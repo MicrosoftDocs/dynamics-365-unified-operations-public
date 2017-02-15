@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cross-company data sharing | Microsoft Docs
+title: Cross-company data sharing
 description: This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Microsoft Dynamics 365 for Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-06-06 22:00:56
+ms.date: 2016-06-06 22 - 00 - 56
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: SysDataSharingConfiguration
+ms.search.form: SysDataSharingConfiguration
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX platform update 1
+# ms.reviewer: 11
+ms.search.scope: Operations, Platform, AX Platform, Core
 # ms.tgt_pltfrm: 
 ms.custom: 89071
-ms.assetid: de64fe97-ffee-4e59-846f-ed7defc3e572
-ms.region: Global
-# ms.industry: 
+ms.assetid: 3de75353-b021-4c96-bf69-b5b2decfc155
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: May-16
+ms.dyn365.version: Platform update 1
 
 ---
 

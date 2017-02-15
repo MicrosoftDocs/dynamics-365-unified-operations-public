@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Total cost allocation method | Microsoft Docs
+title: Total cost allocation method
 description: This article provides guidelines for using total cost allocation (TCA). TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-29 14:07:27
+ms.date: 2016-04-29 14 - 07 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BOMConsistOf, PmfFormulaCoBy
+ms.search.form: BOMConsistOf, PmfFormulaCoBy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2094
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2094
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83852
-ms.assetid: ee02c4d8-6ebc-42a0-a3d5-ab9c98aadefe
-ms.region: Global
-ms.industry: Manufacturing
+ms.assetid: f1bd1918-290d-40ce-b3ad-717143261222
+ms.search.region: Global
+ms.search.industry: Manufacturing
 ms.author: mguada
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ business run-time functions | Microsoft Docs
+title: X++ business run-time functions
 description: This wiki describes the business run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 22:11:18
+ms.date: 2016-02-04 22 - 11 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31281
-ms.assetid: 98f4cc94-b02a-4062-9c0d-4d6ca5889421
-ms.region: Global
-# ms.industry: 
+ms.assetid: e6cdd25b-c364-4b23-b33a-2792a6d0f3ef
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

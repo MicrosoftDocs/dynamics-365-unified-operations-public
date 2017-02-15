@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Turn off model customization and deprecate functionality | Microsoft Docs
+title: Turn off model customization and deprecate functionality
 description: This article describes the process of disabling customization of a model. By following this process, you make it ineligible for over-layering. Developers will still be able to extend that model. This article also describes how you can deprecate obsolete functionality.
 author: pvillads
 manager: AnnBe
-ms.date: 2016-06-08 16:02:26
+ms.date: 2016-06-08 16 - 02 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 89593
-ms.assetid: 0bad2adb-e0c1-45f9-9bce-ab3228e67005
-ms.region: Global
-# ms.industry: 
+ms.assetid: 55ed9ad3-726e-41a2-ac59-28ea7038d4b2
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: pvillads
+ms.dyn365.intro: May-16
+ms.dyn365.version: AX 7.0.1
 
 ---
 

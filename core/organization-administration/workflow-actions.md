@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Workflow actions | Microsoft Docs
+title: Workflow actions
 description: This article explains the actions that each participant in a workflow approval process can take.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-02-29 15:15:11
+ms.date: 2016-02-29 15 - 15 - 11
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks007
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: sericks007
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56411
-ms.assetid: bfb6b19e-b30c-44f9-8893-fc3150c2bd4e
-ms.region: Global
-# ms.industry: 
+ms.assetid: 65d309e9-78ce-448d-9d93-2f8b33418308
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

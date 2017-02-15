@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Product receipt against purchase orders | Microsoft Docs
+title: Product receipt against purchase orders
 description: This article describes the various options for registering products as received.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-16 14:19:13
+ms.date: 2016-06-16 14 - 19 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: PurchTable
+ms.search.form: PurchTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 93113
-ms.assetid: f2f64fd7-a672-4bcc-bb9e-ce00cb96034a
-ms.region: Global
-# ms.industry: 
+ms.assetid: fb842417-e3e0-41c5-8130-e762dde6477b
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: fdahl
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -46,11 +48,11 @@ Most often, the **Product receipt** action on the **Purchase orders** page is us
 See also
 --------
 
-[Purchase order overview](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-order-overview)
+[Purchase order overview](purchase-order-overview.md)
 
-[Purchase order creation](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-order-creation)
+[Purchase order creation](purchase-order-creation.md)
 
-[Purchase order approval and confirmation](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/procurement-sourcing/purchase-order-approval-and-confirmation)
+[Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
 
-[Overview of vendor invoices](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Overview of vendor invoices](vendor-invoices-overview.md)
 

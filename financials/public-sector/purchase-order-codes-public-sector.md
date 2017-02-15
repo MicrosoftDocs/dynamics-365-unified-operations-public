@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Purchase order codes in the public sector | Microsoft Docs
+title: Purchase order codes in the public sector
 description: This article provides information about the codes and special messages that can be used with confirming purchase orders. A confirming purchase order bypasses the typical purchasing process.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-13 05:21:09
+ms.date: 2015-12-13 05 - 21 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: ConfirmingPOCodes, PurchTableListPage
+ms.search.form: ConfirmingPOCodes, PurchTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27291
-ms.assetid: 7a98189b-1145-40bd-bce1-940e92bac89a
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: f6feaeb0-3b5f-4195-b2d6-27abd610a3f3
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

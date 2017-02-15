@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Inventory tag counting | Microsoft Docs
+title: Inventory tag counting
 description: This article provides information about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12:54:09
+ms.date: 2015-10-30 12 - 54 - 09
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventJournalCount, InventJournalCountTag
+ms.search.form: InventJournalCount, InventJournalCountTag
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11594
-ms.assetid: ed1e26a9-8ad9-4a17-96e0-282c86ba5717
-ms.region: Global
-# ms.industry: 
+ms.assetid: 888f1b1d-bf81-44f9-ac7c-8cf07fe5f1ea
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mafoge
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -37,5 +39,5 @@ By creating lines on the **Tag counting** page, you place a tag number on each 
 See also
 --------
 
-[Cycle counting](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/warehouse-management/cycle-counting)
+[Cycle counting](cycle-counting.md)
 

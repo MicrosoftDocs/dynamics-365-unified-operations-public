@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012) | Microsoft Docs
+title: Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 description: The purpose of Quick import export is to let you import and export with fewer steps.
-author: margoc
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-06 19:34:36
+ms.date: 2016-06-06 19 - 34 - 36
 ms.topic: 
 ms.prod: 
 ms.service: 
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: AX 2012 R3 CU8
+# ms.reviewer: 11
+ms.search.scope: AX 2012 R3 CU8
 # ms.tgt_pltfrm: 
 ms.custom: 89041
-ms.assetid: 75765354-b14b-4d1b-bc7b-08096bfa24b8
-ms.region: Global
-# ms.industry: 
-ms.author: margoc
+ms.assetid: 54075513-7450-4627-91dd-57e829d4ba6f
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: AX 2012 R3 CU8
 
 ---
 

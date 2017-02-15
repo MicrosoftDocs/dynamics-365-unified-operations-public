@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed asset impairment accounting on cash generating units | Microsoft Docs
+title: Fixed asset impairment accounting on cash generating units
 description: This article introduces the features for fixed asset impairment that are included in Microsoft Dynamics AX. The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-12 23:14:44
+ms.date: 2015-12-12 23 - 14 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_JP, AssetCashGeneratingUnitGroup_JP, AssetImpairmentRecognitionMethod1_JP, AssetImpairmentRecognitionMethod2_JP
+ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_JP, AssetCashGeneratingUnitGroup_JP, AssetImpairmentRecognitionMethod1_JP, AssetImpairmentRecognitionMethod2_JP
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25691
-ms.assetid: 052f09bd-b25d-4251-bdc2-3491aed0387b
-ms.region: Japan
-# ms.industry: 
+ms.assetid: 7c4c2b46-4ce5-40bf-b709-7cff1f3c6d38
+ms.search.region: Japan
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

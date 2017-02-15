@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Usage profiler (AX 2012) | Microsoft Docs
+title: Usage profiler (AX 2012)
 description: 
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2015-12-05 18:06:51
+ms.date: 2015-12-05 18 - 06 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: AX 2012
+# ms.reviewer: 51
+ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18751
-ms.assetid: db822732-af00-482a-9808-399e4c42f23e
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: ebae9fd4-a493-412c-9d29-df3075048613
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: 
+ms.dyn365.version: 2012
 
 ---
 
@@ -50,7 +52,7 @@ Information from the usage profile is also used in the project summary report th
 | Total peak concurrent users             | Highest among: Peak of total user load chart, question from Deployment details, and sum of the questions from all the Business process questionnaires.      |
 
 ## Prerequisites
-If you want to import process data from Business process modeler, you must first complete the modeling of the organization. For more information, see [Business process modeler (Lifecycle Services, LCS)](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/lifecycle-services/business-process-modeler-lifecycle-services-lcs).
+If you want to import process data from Business process modeler, you must first complete the modeling of the organization. For more information, see [Business process modeler (Lifecycle Services, LCS)](business-process-modeler-lcs.md).
 
 ## Import business processes from BPM
 We recommend that you start by importing data from Business process modeler, and then add additional data manually.

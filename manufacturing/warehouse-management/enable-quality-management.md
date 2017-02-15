@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Quality management overview | Microsoft Docs
+title: Quality management overview
 description: This article describes how you can use quality management in Microsoft Dynamics 365 for Operations to help improve product quality within your supply chain.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-17 09:19:40
+ms.date: 2016-06-17 09 - 19 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
+ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2084
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 2084
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 94003
-ms.assetid: a0b0de5e-3794-40f2-a76e-2b32d66558ef
-ms.region: Global
-ms.industry: Distribution
+ms.assetid: 4b2aeb95-ee52-480c-ae36-6a65c5f81c72
+ms.search.region: Global
+ms.search.industry: Distribution
 ms.author: perlynne
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -212,7 +214,7 @@ You must define a quality associationfor each variation in a business process th
 See also
 --------
 
-[Quality management processes](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/inventory-management/quality-management-processes)
+[Quality management processes](quality-management-processes.md)
 
-[Enabling nonconformance management](https://docs.microsoft.com/en-us/dynamics365/operations/manufacturing/inventory-management/enabling-nonconformance-management)
+[Enabling nonconformance management](enable-nonconformance-management.md)
 

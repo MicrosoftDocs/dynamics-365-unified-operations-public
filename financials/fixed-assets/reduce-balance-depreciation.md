@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Reduce balance depreciation | Microsoft Docs
+title: Reduce balance depreciation
 description: This article gives an overview of the Reducing balance method of depreciation.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 20:42:33
+ms.date: 2015-09-10 20 - 42 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetDepreciationProfile
+ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3281
-ms.assetid: d7fd2eed-43e0-4cc6-93ce-45a94de4c4ce
-ms.region: Global
-# ms.industry: 
+ms.assetid: f85ec2a8-32cc-40bc-9172-e95746efd1f2
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

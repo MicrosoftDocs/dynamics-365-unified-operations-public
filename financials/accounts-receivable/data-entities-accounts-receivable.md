@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities - Accounts receivable | Microsoft Docs
+title: Data entities -  Accounts receivable
 description: This article provides a list of the data entities that are available for the Accounts receivable functionality in Microsoft Dynamics AX.
-author: kfend
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-29 14:20:17
+ms.date: 2016-06-29 14 - 20 - 17
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,22 +13,24 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96163
-ms.assetid: b8710562-dd22-43ee-8a8b-1c5f7c02082b
-ms.region: Global
-# ms.industry: 
-ms.author: kfend
+ms.assetid: 3243f2e1-afae-4340-b756-9c41d6b92ebd
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
-# Data entities - Accounts receivable
+# Data entities -  Accounts receivable
 
 This article provides a list of the data entities that are available for the Accounts receivable functionality in Microsoft Dynamics AX.
 
@@ -47,7 +49,7 @@ Dependency
 
 Comments
 
-**Note:** If you're implementing Accounts receivable, but you aren't using Accounts payable, use the **10.1.001 AP and AR Shared setup** package. For information about this package, see [Data entities: Accounts payable and taxes](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/data-entities-accounts-payable-and-taxes).
+**Note:** If you're implementing Accounts receivable, but you aren't using Accounts payable, use the **10.1.001 AP and AR Shared setup** package. For information about this package, see [Data entities: Accounts payable and taxes](data-entities-accounts-payable-taxes.md).
 
 **11.1.001 AR – Customer payment setup**
 
@@ -288,7 +290,7 @@ Use to define form note parameters for invoices, project quotations, and packing
 See also
 --------
 
-[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/using-data-entities-and-data-packages)
+[Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-home-page)
+[Data entities home page](data-entities-home-page.md)
 

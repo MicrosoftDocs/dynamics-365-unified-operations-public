@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Benefit eligibility policies | Microsoft Docs
+title: Benefit eligibility policies
 description: This article provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-04 02:16:06
+ms.date: 2015-12-04 02 - 16 - 06
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceDocumentRuleType
+ms.search.form: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceDocumentRuleType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16441
-ms.assetid: 9341c8e9-c37c-473f-b090-6c56d43b0a24
-ms.region: Global
-# ms.industry: 
+ms.assetid: 9aff2fed-16c7-48e5-89fa-4bfb98b16f8c
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: kherr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -50,5 +52,5 @@ Policy rule types define the query parameters that are used when you develop spe
 See also
 --------
 
-[Defining and managing a benefit program](https://docs.microsoft.com/en-us/dynamics365/operations/human-resources/managing-benefit-program)
+[Defining and managing a benefit program](manage-benefit-program.md)
 

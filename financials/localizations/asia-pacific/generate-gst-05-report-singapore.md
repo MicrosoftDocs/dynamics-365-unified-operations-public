@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Generate the Singapore GST-05 report | Microsoft Docs
+title: Generate the Singapore GST-05 report
 description: This article explains the functionality for generating Singapore GST-05 reports in Microsoft Dynamics AX. The GST-05 report is used to file a goods and services tax (GST) return. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-11-16 21:17:03
+ms.date: 2015-11-16 21 - 17 - 03
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TaxAuthority
+ms.search.form: TaxAuthority
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12831
-ms.assetid: 4f7a0045-23a2-4c4d-8ec7-7eb7f9411078
-ms.region: Singapore
-# ms.industry: 
+ms.assetid: 790adcca-3522-4012-b8c8-47b71a31b828
+ms.search.region: Singapore
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

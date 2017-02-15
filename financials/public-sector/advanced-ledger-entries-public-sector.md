@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Advanced ledger entries in the public sector | Microsoft Docs
+title: Advanced ledger entries in the public sector
 description: Public-sector organizations can use advanced ledger entries to create, adjust, and reverse ledger entries. For example, advanced ledger entries can be used to reclassify expenditures if invoices are mistakenly posted to the wrong account or project.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 15:36:30
+ms.date: 2015-12-07 15 - 36 - 30
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AdvancedLedgerEntry, BudgetControlConfiguration, LedgerParameters
+ms.search.form: AdvancedLedgerEntry, BudgetControlConfiguration, LedgerParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19511
-ms.assetid: 9e5f6ff1-b637-4014-a58a-cab09dc2f653
-ms.region: Global
-ms.industry: Public sector
+ms.assetid: fb5ed52b-f1db-458b-b84a-a44728e6c9fb
+ms.search.region: Global
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -35,7 +37,7 @@ Public-sector organizations can use advanced ledger entries to create, adjust, a
 How do I set up advanced ledger entries?
 ----------------------------------------
 
-Verify that the **Advanced ledger entry** **License configuration** key is selected in the **License configuration** page. Advanced ledger entries require General ledger posting definitions. These posting definitions can be set up to generate multiple, balanced ledger entries based on the ledger account entered in the **Advanced ledger entries** page. For more information about posting definitions for advanced ledger entries, see [Posting definitions in the public sector](https://docs.microsoft.com/en-us/dynamics365/operations/financials/public-sector/posting-definitions-in-the-public-sector).
+Verify that the **Advanced ledger entry** **License configuration** key is selected in the **License configuration** page. Advanced ledger entries require General ledger posting definitions. These posting definitions can be set up to generate multiple, balanced ledger entries based on the ledger account entered in the **Advanced ledger entries** page. For more information about posting definitions for advanced ledger entries, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
 
 ## Can I use budget control with advanced ledger entries?
 Yes. If your organization uses budget control, you can enable budget control for advanced ledger entries on the **Budget control configuration** page.
@@ -49,7 +51,7 @@ Create an advanced ledger entry, select the **Reversing entry** option, and ente
 See also
 --------
 
-[General ledger](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/general-ledger)
+[General ledger](general-ledger.md)
 
 [General ledger in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=164121)
 

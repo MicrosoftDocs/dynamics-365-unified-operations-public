@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Accessibility in forms, products, and controls | Microsoft Docs
+title: Accessibility in forms, products, and controls
 description: This article describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-07-28 15:09:21
+ms.date: 2016-07-28 15 - 09 - 21
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX platform update 1
+# ms.reviewer: 71
+ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 104943
-ms.assetid: f6555205-14e1-463e-af1c-d53b35f91ef3
-ms.region: Global
-# ms.industry: 
+ms.assetid: d9d0b4e0-50a4-4ae3-9db2-8c7ca3bfae7e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tlefor
+ms.dyn365.intro: May-16
+ms.dyn365.version: Platform update 1
 
 ---
 

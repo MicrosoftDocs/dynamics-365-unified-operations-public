@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics AX platform update 1 (May 2016) | Microsoft Docs
+title: What's new or changed in Dynamics AX platform update 1 (May 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX platform update 1. This version was released in May 2016 and has a build number of 7.0.4127.16103.
-author: sericks007
+author: annbe
 manager: AnnBe
-ms.date: 2016-06-10 19:54:38
+ms.date: 2016-06-10 19 - 54 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks007
-ms.suite: Released- Dynamics AX platform update 1
+ms.reviewer: annbe
+ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 91183
-ms.assetid: 3cacf513-e762-497d-80bb-36e953bd8cfa
-ms.region: Global
-# ms.industry: 
-ms.author: sericks
+ms.assetid: e03042ca-447e-4a3f-897c-1dfdb47eb7de
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: annbe
+ms.dyn365.intro: May-16
+ms.dyn365.version: Platform update 1
 
 ---
 
@@ -53,11 +55,11 @@ Platform compatibility
 </tr>
 <tr class="even">
 <td>Apply the <strong>InternalsVisibleToAttribute</strong> attribute to open internals for consumption from other models.</td>
-<td>As we lock models for over-layering, artifacts will become internal to the model to better isolate implementation details from outside calls. However, it might be advantageous to mark other models as “friends” that have access to the internals. This capability is mainly useful for test scenarios. For this purpose, the <strong>InternalsVisibleTo</strong> tag can be applied to the descriptor XML file for the model that contains the internal code. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/locking-models">Locking Models</a>.</td>
+<td>As we lock models for over-layering, artifacts will become internal to the model to better isolate implementation details from outside calls. However, it might be advantageous to mark other models as “friends” that have access to the internals. This capability is mainly useful for test scenarios. For this purpose, the <strong>InternalsVisibleTo</strong> tag can be applied to the descriptor XML file for the model that contains the internal code. For more information, see <a href="lock-models.md">Locking Models</a>.</td>
 </tr>
 <tr class="odd">
 <td>Enable modules to disallow over-layering.</td>
-<td>You can now lock models for over-layering, in two phases: soft locking and hard locking. Soft locking causes occurrences of over-layering to be treated as warnings. Hard locking causes occurrences of over-layering to be treated as errors, and the build of the model is blocked. When hard locking is used, you can't perform over-layering. For more information, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/locking-models">Locking Models</a>.</td>
+<td>You can now lock models for over-layering, in two phases: soft locking and hard locking. Soft locking causes occurrences of over-layering to be treated as warnings. Hard locking causes occurrences of over-layering to be treated as errors, and the build of the model is blocked. When hard locking is used, you can't perform over-layering. For more information, see <a href="lock-models.md">Locking Models</a>.</td>
 </tr>
 <tr class="even">
 <td>Document Customization Analysis Best Practice rule violations on the <strong>Customization analysis</strong> report.</td>
@@ -242,14 +244,14 @@ Platform compatibility
 |                                   |                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **What can you do?**              | **Why is this important?**                                                                                                                                                                                                                                                                                                                                                           |
-| Access new or updated task guides | Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. To see a list of new or updated task guides, see [New or updated task guides available (May 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/new-or-updated-task-guides-available-may-2016). |
+| Access new or updated task guides | Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. To see a list of new or updated task guides, see [New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md). |
 
 
 
 See also
 --------
 
-[What’s new or changed](https://docs.microsoft.com/en-us/dynamics365/operations/core/organization-administration/whats-new-or-changed-in-dynamics-ax-7)
+[What’s new or changed](whats-new-changed.md)
 
-[New or updated task guides available (May 2016)](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/new-or-updated-task-guides-available-may-2016)
+[New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
 

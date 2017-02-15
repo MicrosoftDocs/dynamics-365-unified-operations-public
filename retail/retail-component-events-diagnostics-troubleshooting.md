@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail component events for diagnostics and troubleshooting | Microsoft Docs
+title: Retail component events for diagnostics and troubleshooting
 description: To enable diagnostics and troubleshooting, all Retail components, which include clients such as the Retail Modern POS and server components such as Retail Server, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Retail-specific components.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-05-12 22:11:53
+ms.date: 2016-05-12 22 - 11 - 53
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: 11
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 11
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 85493
-ms.assetid: 992f7798-0992-4ac4-869c-f183ff8f5519
-ms.region: Global
-ms.industry: Retail
+ms.assetid: 1c4d564d-188f-43ef-b65b-d7e2fb4f0acf
+ms.search.region: Global
+ms.search.industry: Retail
 ms.author: aamiral
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

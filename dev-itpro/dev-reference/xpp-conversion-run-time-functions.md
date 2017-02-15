@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ conversion run-time functions | Microsoft Docs
+title: X++ conversion run-time functions
 description: This wiki describes the conversion run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 22:12:28
+ms.date: 2016-02-04 22 - 12 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31321
-ms.assetid: c2324139-d65b-47f6-888d-d0a438f4e7c3
-ms.region: Global
-# ms.industry: 
+ms.assetid: e7bad604-0562-4298-9e63-b98e694ac7bf
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: robinr
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 

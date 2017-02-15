@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Form 1099 in the public sector | Microsoft Docs
+title: Form 1099 in the public sector
 description: This article provides tips and information about how to set up Form 1099 functionality for Accounts payable in the public sector.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-12 23:41:13
+ms.date: 2015-12-12 23 - 41 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
+ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26181
-ms.assetid: 20994784-a3bb-42f8-bcaa-5fcc09117cdf
-ms.region: United States
-ms.industry: Public sector
+ms.assetid: 7f728d12-4685-4072-9e0a-ddf5262b38e1
+ms.search.region: United States
+ms.search.industry: Public sector
 ms.author: brpotter
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: brpotter
 
 This article provides tips and information about how to set up Form 1099 functionality for Accounts payable in the public sector.
 
-The 1099 tax form is required if you do business with vendors that are subject to United States 1099 tax. This topic describes the 1099 functionality that is available for the public sector. We also recommend that you review Internal Revenue Service (IRS) rule changes for the applicable tax year before you set up and process 1099 statements. If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the U.S. tax authorities at the end of the calendar year. The vendors are typically organizations that provide services to your organization. The vendors can also be people who aren't employees. You must also send a statement to each 1099 vendor that you do business with, to inform the vendor of the amount that you're reporting to the tax authorities. Legal public sector organizations that have a primary address in the United States can submit Form 1099-G or Form 1099-S to the IRS. The 1099-G income tax form is used to report income from government sources, such as state or local tax refunds, unemployment benefits, grants, or subsidies. The 1099-S income tax form is used to report income from the sale or exchange of certain types of real estate. In Microsoft Dynamics 365 for Operations, the 1099 setup procedures must typically be completed only one time. However, you can use this information later if you want to modify or view existing entries.
+The 1099 tax form is required if you do business with vendors that are subject to United States 1099 tax. This topic describes the 1099 functionality that is available for the public sector. We also recommend that you review Internal Revenue Service (IRS) rule changes for the applicable tax year before you set up and process 1099 statements. If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the U.S. tax authorities at the end of the calendar year. The vendors are typically organizations that provide services to your organization. The vendors can also be people who aren't employees. You must also send a statement to each 1099 vendor that you do business with, to inform the vendor of the amount that you're reporting to the tax authorities. Legal public sector organizations that have a primary address in the United States can submit Form 1099-G or Form 1099-S to the IRS. The 1099-G income tax form is used to report income from government sources, such as state or local tax refunds, unemployment benefits, grants, or subsidies. The 1099-S income tax form is used to report income from the sale or exchange of certain types of real estate. In Microsoft Dynamics AX, the 1099 setup procedures must typically be completed only one time. However, you can use this information later if you want to modify or view existing entries.
 
 ## Tips
 -   On many pages, you might notice that the **S-2 gross proceeds** field doesn't appear. This field doesn't appear if the amount is the same as the amount in the **Settled federal 1099** field.

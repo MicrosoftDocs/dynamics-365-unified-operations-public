@@ -1,12 +1,11 @@
 ---
 # required metadata
 
-title: Set up pay cycles and pay periods | Microsoft Docs
-description: Pay cycles determine the intervals that workers are paid in. This topic explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position.
-
+title: Set up pay cycles and pay periods
+description: Pay cycles determine the intervals that workers are paid in. This topic explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 19:09:48
+ms.date: 2016-10-31 19 - 09 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,25 +13,26 @@ ms.technology:
 
 # optional metadata
 
-keywords: PayrollPayCycle
+ms.search.form: PayrollPayCycle
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222624
-ms.assetid: 39603c2a-b4ea-4462-8427-ce81e96d926a
-ms.region: USA
-# ms.industry: 
+ms.assetid: 9d495dee-3d6d-4722-a796-481674d07db2
+ms.search.region: USA
+# ms.search.industry: 
 ms.author: brpotter
+ms.dyn365.intro: Nov-16
+ms.dyn365.version: Version 1611
 
 ---
 
 # Set up pay cycles and pay periods
 
-Pay cycles determine the intervals that workers are paid in. This topic explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position.
-
+Pay cycles determine the intervals that workers are paid in. This topic explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
 
 A pay cycle determines how often payroll is run and the specific days that workers are paid on. For example, a pay cycle is monthly, and employees are paid on the last day of the month. Alternatively, a pay cycle is weekly, and employees are paid on the Tuesday after the end of the pay period. Pay cycles are assigned to positions to help control when workers in those positions are paid. Pay cycles are also assigned to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings. After you create pay cycles, you can generate pay periods for each cycle. Each pay period includes a default payment date that is based on information that you provide. However, you can modify the default payment date in a pay period to handle exceptions, such as a payment date that occurs on a holiday. The following illustration shows the basic steps for setting up pay cycles and pay periods. The numbered steps in the illustration correspond to sections of this topic. [![Steps for setting up pay cycles and pay periods](./media/22222.gif)](./media/22222.gif)
 
@@ -68,14 +68,14 @@ You can generate any number of pay periods for each pay cycle. Most organization
 | Biweekly            | 26                      | 130                       |
 | Weekly              | 52                      | 260                       |
 
-If you don’t want to modify default payment dates at this point, the pay cycles are ready for you to use. You can assign the pay cycles to positions to control when workers in those positions are paid. For more information, see “Assign pay cycles to positions.” later in this topic. You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings. For more information, see “Assign pay periods to payroll calculation frequencies” in [Payroll calculation frequencies tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/pay-cycle-and-pay-period-tasks-sample).
+If you don’t want to modify default payment dates at this point, the pay cycles are ready for you to use. You can assign the pay cycles to positions to control when workers in those positions are paid. For more information, see “Assign pay cycles to positions.” later in this topic. You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings. For more information, see “Assign pay periods to payroll calculation frequencies” in [Payroll calculation frequencies tasks](pay-cycle-pay-period-tasks-sample.md).
 
 ## Optional: Modify the payment dates and statuses of pay periods
-When you generate pay periods, the pay period status is **Open**, and a default payment date is set for every pay period. After you generate pay periods, you can set the pay period status according to your organization’s practices. Additionally, you can change any default payment dates that are bank holidays or other days when pay can’t be issued. **Tip:** You might find it helpful to have a list of weekend and holiday dates before you start this task. You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or taxes. For more information, see “Assign pay periods to payroll calculation frequencies” in [Payroll calculation frequencies tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/pay-cycle-and-pay-period-tasks-sample).
+When you generate pay periods, the pay period status is **Open**, and a default payment date is set for every pay period. After you generate pay periods, you can set the pay period status according to your organization’s practices. Additionally, you can change any default payment dates that are bank holidays or other days when pay can’t be issued. **Tip:** You might find it helpful to have a list of weekend and holiday dates before you start this task. You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or taxes. For more information, see “Assign pay periods to payroll calculation frequencies” in [Payroll calculation frequencies tasks](pay-cycle-pay-period-tasks-sample.md).
 
 ## Assign pay cycles to positions
-Typically, pay cycles are assigned to positions when the positions are set up for payroll. For more information, see [Worker and position payroll tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/worker-and-position-payroll-tasks). You assign the pay cycles to positions on the **Payroll** tab.
+Typically, pay cycles are assigned to positions when the positions are set up for payroll. For more information, see [Worker and position payroll tasks](worker-position-payroll-tasks.md). You assign the pay cycles to positions on the **Payroll** tab.
 
 ## Next step
-If you must control the specific pay periods that various payroll elements are processed in, the next step is to set up payroll calculation frequencies. For more information, see [Payroll calculation frequencies tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/payroll-calculation-frequencies-tasks). If you decide not to set up payroll calculation frequencies, the next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/north-america/work-cycle-and-work-period-tasks).
+If you must control the specific pay periods that various payroll elements are processed in, the next step is to set up payroll calculation frequencies. For more information, see [Payroll calculation frequencies tasks](payroll-calculation-frequencies-tasks.md). If you decide not to set up payroll calculation frequencies, the next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](work-cycle-work-period-tasks.md).
 

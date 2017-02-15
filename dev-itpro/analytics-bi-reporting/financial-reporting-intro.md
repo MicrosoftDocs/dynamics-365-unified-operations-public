@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Financial reporting for Dynamics 365 for Operations | Microsoft Docs
+title: Financial reporting for Dynamics 365 for Operations
 description: Financial reporting for Dynamics 365 for Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-18 15:31:29
+ms.date: 2016-03-18 15 - 31 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Management Reporter
+ms.search.scope: Management Reporter
 # ms.tgt_pltfrm: 
 ms.custom: 68813
-ms.assetid: 71d88748-f79e-43ea-8b8e-70d4c91fb0e2
-ms.region: Global
-# ms.industry: 
+ms.assetid: 8e9f4ab5-2047-437f-a210-d0b46b5bbd85
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: 
+ms.dyn365.version: 
 
 ---
 
@@ -96,5 +98,5 @@ For more information, see the â€œInteractive components and navigation featuresâ
 See also
 --------
 
-[Generate a financial report](https://docs.microsoft.com/en-us/dynamics365/operations/financials/general-ledger/generate-a-financial-report)
+[Generate a financial report](generate-financial-report.md)
 

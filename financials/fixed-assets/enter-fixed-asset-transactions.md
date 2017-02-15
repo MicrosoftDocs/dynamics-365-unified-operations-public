@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed asset transaction options | Microsoft Docs
+title: Fixed asset transaction options
 description: This article describes the different methods available to create fixed asset transactions.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-11 22:58:38
+ms.date: 2015-12-11 22 - 58 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetTable, PurchCreateOrder
+ms.search.form: AssetTable, PurchCreateOrder
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23061
-ms.assetid: eec29cba-f5c3-4f0f-960b-bb3ed9baff86
-ms.region: Global
-# ms.industry: 
+ms.assetid: e07f958a-ab13-49d1-8694-bec98c967c96
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
@@ -66,5 +68,5 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 See also
 --------
 
-[Fixed assets integration](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/fixed-assets-integration)
+[Fixed assets integration](fixed-asset-integration.md)
 

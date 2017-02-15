@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Main account types | Microsoft Docs
+title: Main account types
 description: The main account types determine how a main account is used in the chart of accounts.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-09-10 20:48:58
+ms.date: 2015-09-10 20 - 48 - 58
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: MainAccount
+ms.search.form: MainAccount
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.suite: Released- Dynamics AX 7.0.0
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3381
-ms.assetid: ca9e3c95-1ce6-4a29-bae4-f1d4b595da22
-ms.region: Global
-# ms.industry: 
+ms.assetid: 4fdd1924-bbf2-4902-9748-ec20492f2882
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.intro: Feb-16
+ms.dyn365.version: AX 7.0.0
 
 ---
 
