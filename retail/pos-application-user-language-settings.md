@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 78891
-ms.assetid: 4b33196a-33b0-444f-b3a8-66784d530e98
+ms.assetid: 6f543168-929f-43ed-b2f0-94766565ab29
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

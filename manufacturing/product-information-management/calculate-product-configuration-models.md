@@ -17,16 +17,16 @@ ms.search.form: PCConstraintEditor, PCProductConfigurationModelDetails, PCRuntim
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: YuyuScheller
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19191
-ms.assetid: 902754c7-b1ba-4602-9f19-37c34c97ac81
+ms.assetid: b4c5ca7d-1e0b-491f-ba62-d4888114e2cd
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

@@ -21,12 +21,12 @@ ms.reviewer: YuyuScheller
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 9704
-ms.assetid: 53f78c8f-47b5-41fc-a571-c09a986201c5
+ms.assetid: 41b69c20-2198-499a-bcc1-a33f1a1514dc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omulvad
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261164
-ms.assetid: 3cb2fe6f-be19-4244-a310-95330ba2613a
+ms.assetid: bbbc6ca7-8321-446d-8800-f2c2aae6cac1
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.version: Version 1611
 
 ---
 

@@ -17,16 +17,16 @@ ms.search.form: PmfAddToConsOrder, PmfBulkItemConv, PmfBulkPackOnHand, PmfConsOr
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: YuyuScheller
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19291
-ms.assetid: ebad6cc5-c706-4d4f-8d1f-ef93c129f155
+ms.assetid: 1c1f059f-c1b3-47f3-b696-9472c20df8ad
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

@@ -3,7 +3,7 @@
 
 title: Address books
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-11 23 - 25 - 59
 ms.topic: article
@@ -17,16 +17,16 @@ ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: kfend
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23601
-ms.assetid: 540296e4-078d-4cb6-a410-f128aa437905
+ms.assetid: 31adc4dd-eb16-4424-8711-2ad71d219e02
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

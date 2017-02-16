@@ -3,7 +3,7 @@
 
 title: Global address book
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-11 23 - 25 - 07
 ms.topic: article
@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23521
-ms.assetid: 03026d8f-5b5c-42a5-9912-ec799b8fb635
+ms.assetid: 57a96809-2420-4fcd-9fbb-66034345339f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

@@ -17,16 +17,16 @@ ms.search.form: HRMApplication, HRMRecruitingTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7501
-ms.assetid: b6a1e13a-712a-48ad-8883-b9795402cdca
+ms.assetid: b2161853-eb59-4942-9418-edecf4612478
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

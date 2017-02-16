@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 252934
-ms.assetid: 867da6ff-66cf-480f-afbe-52b350b0e6d4
+ms.assetid: 833bee31-02d9-4b6f-b7ca-11c0bfa7fb69
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.version: Version 1611
 
 ---
 

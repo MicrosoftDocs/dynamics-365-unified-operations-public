@@ -17,16 +17,16 @@ ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailPar
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17424
-ms.assetid: f825e693-7899-4a72-9bee-624b5064a34e
+ms.assetid: 5b989e3f-0c06-4d00-93cb-87c4566a9603
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

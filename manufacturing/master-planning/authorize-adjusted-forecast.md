@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72734
-ms.assetid: 3fa64142-2ce4-4f01-ad93-856f4847de09
+ms.assetid: 1337f3c6-4630-4376-8373-14d854412918
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

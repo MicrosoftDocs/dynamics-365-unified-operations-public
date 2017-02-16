@@ -17,16 +17,16 @@ ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, Con
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: YuyuScheller
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19821
-ms.assetid: 647d6854-09df-4784-a674-bdb063a644fc
+ms.assetid: 71f641e1-2a16-4116-bbf5-7722a1ceeebe
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

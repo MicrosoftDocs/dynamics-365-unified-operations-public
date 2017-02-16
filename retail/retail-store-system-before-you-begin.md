@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 219714
-ms.assetid: 48b81f47-43c0-4646-8c02-dc457d772702
+ms.assetid: 32d10791-4037-4a8c-922e-e23dbae1a529
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: athinesh
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.version: Version 1611
 
 ---
 

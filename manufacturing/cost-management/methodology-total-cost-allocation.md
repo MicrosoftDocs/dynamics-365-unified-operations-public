@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83852
-ms.assetid: f1bd1918-290d-40ce-b3ad-717143261222
+ms.assetid: 7ab9451b-70e6-4294-b61f-e8b85a562534
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

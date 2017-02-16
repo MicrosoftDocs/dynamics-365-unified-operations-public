@@ -17,16 +17,16 @@ ms.search.form: InventCostOnhandItem
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: YuyuScheller
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19131
-ms.assetid: 91bb3a77-3ccf-4cff-bc75-d7094dea2c1e
+ms.assetid: caf89a9d-71d1-4ff8-9a06-1b1979c9ab6f
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

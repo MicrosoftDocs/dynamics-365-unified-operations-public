@@ -17,16 +17,16 @@ ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollect
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17444
-ms.assetid: 779d5570-e0b2-4509-9d51-cef287a0abf4
+ms.assetid: 2ce8dcc5-6851-4800-9e9a-7f652b351966
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29071
-ms.assetid: 7d8f58a6-c89f-4787-8197-687d3873f032
+ms.assetid: 1193ec65-b0ea-469c-adbe-5f5e4a347f9c
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: perlynne
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

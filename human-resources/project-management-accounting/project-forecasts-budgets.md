@@ -3,7 +3,7 @@
 
 title: Project forecasts and budgets
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-11 23 - 24 - 54
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23501
-ms.assetid: 053110f5-0ab1-4208-a5dc-efc406739c84
+ms.assetid: 4c12d10f-4f6b-4ee2-a5a4-3f914c27d5f5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

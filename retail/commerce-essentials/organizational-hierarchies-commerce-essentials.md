@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21251
-ms.assetid: c24cd11a-655a-4e83-9052-a95d215d53ac
+ms.assetid: 6ba326be-9162-494e-b55d-11467b3fd2c6
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

@@ -17,16 +17,16 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7532
-ms.assetid: 82a939c2-9f54-4d63-8c7c-42be5d9e1bd4
+ms.assetid: 4b2f1d22-f296-4062-ae7a-7d10f9538232
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

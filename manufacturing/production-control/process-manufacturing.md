@@ -3,7 +3,7 @@
 
 title: Process manufacturing home page
 description: This topic provides a list of the Help topics and other resources that are available for Process manufacturing. 
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-10-11 20 - 42 - 39
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 204354
-ms.assetid: e9e77574-dfd9-423e-be12-7d41649cb228
+ms.assetid: e9234d87-421e-47b5-a32f-a45d9f697876
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: yuyus
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

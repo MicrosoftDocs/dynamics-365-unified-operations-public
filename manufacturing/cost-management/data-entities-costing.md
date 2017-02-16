@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Costing
+title: Data entities - Costing
 description: This article provides a list of the data entities that are available for the Costing functionality in Microsoft Dynamics AX.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 19 - 47
 ms.topic: reference
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96013
-ms.assetid: 56780edd-cf1f-495e-94fd-25f0fd100053
+ms.assetid: a05babd2-7d96-4c42-83ac-207cc824085f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Costing
+# Data entities - Costing
 
 This article provides a list of the data entities that are available for the Costing functionality in Microsoft Dynamics AX.
 

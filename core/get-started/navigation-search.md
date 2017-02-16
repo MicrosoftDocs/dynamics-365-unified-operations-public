@@ -18,15 +18,15 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 25991
-ms.assetid: 68092d33-2167-4fbd-80c2-aa2ecd02f513
+ms.assetid: 6e6154e3-d4fa-43f5-ad38-40dc6a731b67
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aneesa
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

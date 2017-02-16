@@ -18,15 +18,15 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: Operations, Platform, Core
+ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 195583
-ms.assetid: cd22c279-2638-4444-97ff-4737a17b7adb
+ms.assetid: 57757a09-1993-4cce-a6b7-4bdb97c42a3d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: donaldc
-ms.dyn365.intro: Aug-16
-ms.dyn365.version: Platform update 2
+ms.dyn365.ops.intro: Aug-16
+ms.dyn365.ops.version: Platform update 2
 
 ---
 
