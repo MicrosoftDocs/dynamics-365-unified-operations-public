@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 219684
-ms.assetid: 096a3b3b-9df2-4e55-8c16-44d5768110aa
+ms.assetid: 34f90578-037d-4902-bbf7-76d724333400
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: athinesh
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.version: Version 1611
 
 ---
 

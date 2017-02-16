@@ -17,16 +17,16 @@ ms.search.form: HRMMassHireProject
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7481
-ms.assetid: 68dca0e2-c389-45e6-8fc5-05012cd9abd0
+ms.assetid: 0d039b31-8e4d-4156-b8b5-65021600a648
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

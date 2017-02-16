@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics AX 7.0 (February 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX 7.0. This version contains both platform and application features and was released in February 2016.
-author: annbe
+author: sericks007
 manager: AnnBe
 ms.date: 2016-06-10 19 - 54 - 48
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: sericks007
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 91243
-ms.assetid: f6aae6be-38a1-4596-9c4b-9eb95d7117e9
+ms.assetid: 7d4beb68-3cda-4e8a-bf1d-912709755f61
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: sericks
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

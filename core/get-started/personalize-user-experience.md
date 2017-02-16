@@ -18,15 +18,15 @@ ms.search.form: SysUserSetup
 audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 62363
-ms.assetid: 7d76965c-0af2-454a-b441-6fe96035f30c
+ms.assetid: 11ee6afa-17bf-413c-8d27-58514488c8cf
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tlefor
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

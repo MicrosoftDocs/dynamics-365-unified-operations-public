@@ -3,7 +3,7 @@
 
 title: Project management and accounting
 description: The project management and accounting functionality can be used in multiple industries to provide a service, produce a product, or achieve a result.  
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-05-20 16 - 32 - 24
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 87983
-ms.assetid: a754c46f-b98d-477d-a277-53d4bb04a94f
+ms.assetid: 68f7190f-b175-4b27-a7ac-aba923020dec
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

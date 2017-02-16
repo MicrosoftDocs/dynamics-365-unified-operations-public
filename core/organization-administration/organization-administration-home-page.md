@@ -3,7 +3,7 @@
 
 title: Organization administration home page
 description: This topic points to resources that will help you use Microsoft Dynamics 365 for Operations in your organization.
-author: annbe
+author: sericks007
 manager: AnnBe
 ms.date: 2015-12-07 21 - 32 - 26
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: sericks007
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20421
-ms.assetid: fa976f14-0fb1-4a14-9716-fae1cd50421b
+ms.assetid: 7bfe3b90-8e53-4cce-a1ee-a1e1e65bce44
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: sericks
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

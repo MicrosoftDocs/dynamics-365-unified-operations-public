@@ -3,7 +3,7 @@
 
 title: Sales home page
 description: This topic includes a list of the help topics and other resources that are available for Sales.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-02-18 09 - 58 - 14
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50591
-ms.assetid: 61b6e331-da8d-4049-9d1d-66045f13ee23
+ms.assetid: 2c2a83c1-6ca0-4bf8-829f-e58d2a996972
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.version: AX 7.0.0
 
 This topic includes a list of the help topics and other resources that are available for Sales.
 
-The Sales functionality within the **Sales and marketing** module allows you to manage sales orders, pricing management, sales quotations, promotions, sales commissions, partner and alliance commissions, and sales returns.
+The Sales functionality within the Sales and marketing module allows you to manage sales orders, pricing management, sales quotations, promotions, sales commissions, partner and alliance commissions, and sales returns.
 
 ## Sales order management
 -   [Sales agreements](sales-agreements.md)
@@ -54,9 +54,10 @@ The Sales functionality within the **Sales and marketing** module allows you to 
 -   [Ship sales orders without warehousing](http://ax.help.dynamics.com/en/wiki/ship-sales-orders-without-warehousing/) (Task guide)
 -   [Ship orders as direct deliveries](http://ax.help.dynamics.com/en/wiki/ship-orders-as-direct-deliveries/) (Task guide)
 -   [Create a purchase order from a sales order](http://ax.help.dynamics.com/en/wiki/create-a-purchase-order-from-a-sales-order/) (Task guide)
+-   [Sales orders mobile workspace for Microsoft Dynamics 365 for Operations app](sales-orders-mobile-workspace.md)
 
 ## Pricing management
--   [Trade Agreements in Microsoft Dynamics AX](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/msdaxtradeagmtwp) (demo script)
+-   [Trade Agreements](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/msdaxtradeagmtwp) (demo script, previous version of Dynamics)
 -   [Create a new trade agreement](http://ax.help.dynamics.com/en/wiki/create-a-new-trade-agreement/) (Task guide)
 -   [Look up applicable prices and discounts](http://ax.help.dynamics.com/en/wiki/look-up-applicable-prices-and-discounts/) (Task guide)
 

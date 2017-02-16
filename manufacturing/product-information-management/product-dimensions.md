@@ -17,16 +17,16 @@ ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProdu
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: YuyuScheller
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19171
-ms.assetid: 790de6a6-7e42-4b8b-b9a2-0f32b897c46a
+ms.assetid: a42dbdae-c220-4b01-8e02-6beaa9cbe40f
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: yuyus
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

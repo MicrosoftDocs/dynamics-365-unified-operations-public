@@ -17,16 +17,16 @@ ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 7521
-ms.assetid: ba3e0959-1bfe-4b88-9dfa-85f7e8b45343
+ms.assetid: a29ae542-d877-461c-a3e0-215e498cf4d4
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

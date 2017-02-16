@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65863
-ms.assetid: c029e893-cb6c-4412-94b7-94c038c5d990
+ms.assetid: f1216766-5c85-4ebd-9a61-50b8079707bf
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

@@ -3,7 +3,7 @@
 
 title: Discrete manufacturing home page
 description: This topic provides a list of the Help topics and other resources that are available for Discrete manufacturing. 
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-10-11 20 - 31 - 37
 ms.topic: index-page
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 204224
-ms.assetid: ac2f7e5f-3d48-45b6-b270-22416a0b0471
+ms.assetid: d2422c8a-9d50-40fe-93e1-19087b4c0f81
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: yuyus
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -38,6 +38,11 @@ Understand mixed mode planning
 ------------------------------
 
 -   [Mixed mode planning: Combine discrete, process, and lean sourcing](mixed-mode-plan.md)
+-   [Activity-based subcontracting](activity-based-subcontracting.md)
+-   [Manage subcontracting work in production](http://ax.help.dynamics.com/en/wiki/manage-subcontracting-work-in-production/)
+
+## Routes and operations
+-   [Routes and operations](http://ax.help.dynamics.com/en/wiki/routes-and-operations/)
 
 ## Maintain master data
 -   [Bills of materials and formulas](http://ax.help.dynamics.com/en/wiki/bills-of-materials-and-formulas/)

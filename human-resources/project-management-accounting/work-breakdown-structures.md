@@ -3,9 +3,9 @@
 
 title: Work breakdown structures
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
-ms.date: 2015-12-11 23 - 29 - 46
+ms.date: 2016-11-22 14 - 38 - 31
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23861
-ms.assetid: c26e31b1-c333-40f6-b7e8-020daeb5a259
+ms.assetid: 4348dd72-c46a-45cc-b25f-8a58ad01f7a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

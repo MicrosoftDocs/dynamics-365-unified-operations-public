@@ -3,7 +3,7 @@
 
 title: Commerce essentials
 description: This page lists the resources that are available for Commerce essentials in Dynamics 365 for Operations.
-author: annbe
+author: josaw1
 manager: AnnBe
 ms.date: 2015-12-09 18 - 39 - 27
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21411
-ms.assetid: 147c62b8-dac0-4f55-b527-98e5d1249a5a
+ms.assetid: fcbb6fd6-3d13-42a6-8988-6a8f8e42f6af
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: josaw
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,7 +34,13 @@ ms.dyn365.version: AX 7.0.0
 
 This page lists the resources that are available for Commerce essentials in Dynamics 365 for Operations.
 
-[Commerce essentials overview](commerce-essentials.md) [Working with organizations and organizational hierarchies (Commerce essentials)](organizational-hierarchies-commerce-essentials.md)
+Overview
+--------
+
+-   [Commerce essentials overview](commerce-essentials.md)
+
+## Working with Commerce essentials
+-   [Working with organizations and organizational hierarchies (Commerce essentials)](organizational-hierarchies-commerce-essentials.md)
 
 ## []()Additional resources
 -   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.

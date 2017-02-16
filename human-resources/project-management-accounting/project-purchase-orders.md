@@ -3,7 +3,7 @@
 
 title: Purchase orders for a project
 description: This article describes the various methods that you can use to create purchase orders for a project. The method that you use depends on the purpose of the purchase order, and when the purchased items are consumed and charged to a project.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-04-29 22 - 02 - 01
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83972
-ms.assetid: b20d07de-d813-4878-ae20-9bf78bd6e95d
+ms.assetid: ddd76c95-c224-4259-a6be-6ed3946fd524
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

@@ -3,7 +3,7 @@
 
 title: Product configuration home page
 description: This topic provides a list of the Help topics and other resources that are available for Product configuration.
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-10-11 20 - 42 - 31
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 204324
-ms.assetid: ad28baa6-8354-4221-b02b-2503f092a4e5
+ms.assetid: 6231ad72-e31e-468b-9452-00651beb22d3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: yuyus
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

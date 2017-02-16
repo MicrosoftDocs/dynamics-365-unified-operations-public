@@ -18,15 +18,15 @@ ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, 
 audience: IT Pro
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 220774
-ms.assetid: b8248485-c27e-4468-b626-b3e72abfa0f8
+ms.assetid: 4a2a34cd-b63c-4089-b4fb-aa0a007ab30b
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.version: Version 1611
 
 ---
 

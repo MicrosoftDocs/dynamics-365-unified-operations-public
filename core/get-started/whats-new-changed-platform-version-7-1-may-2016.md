@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics AX platform update 1 (May 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX platform update 1. This version was released in May 2016 and has a build number of 7.0.4127.16103.
-author: annbe
+author: sericks007
 manager: AnnBe
 ms.date: 2016-06-10 19 - 54 - 38
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: sericks007
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 91183
-ms.assetid: e03042ca-447e-4a3f-897c-1dfdb47eb7de
+ms.assetid: e21da28a-a0c1-4fcd-9258-6faa9fc6457e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.author: sericks
+ms.dyn365.ops.intro: May-16
+ms.dyn365.ops.version: Platform update 1
 
 ---
 

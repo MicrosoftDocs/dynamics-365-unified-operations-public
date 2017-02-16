@@ -3,7 +3,7 @@
 
 title: Human resources
 description: Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
-author: annbe
+author: rschloma
 manager: AnnBe
 ms.date: 2015-12-08 20 - 51 - 54
 ms.topic: index-page
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20931
-ms.assetid: 9bf1d4ad-05cd-42f8-a48b-35eda5a12a9b
+ms.assetid: 0e88b8c7-b19e-4155-bcd7-5d686b5dda2b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: rschloma
+ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -66,8 +66,9 @@ After you've hired staff, you can set up plans to effectively and equitably mana
 -   [Create variable compensation plans](create-variable-compensation-plans.md)
 
 ## Develop and train employees
-You can set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
+To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
 
+-   [Performance management overview](http://ax.help.dynamics.com/en/wiki/performance-management-overview/)
 -   [Align workforce skills and business needs](skills.md)
 -   [Administer training through courses](courses.md)
 
@@ -92,5 +93,8 @@ You can design and administer questionnaires to gather information that’s used
 -   [Distribute and complete a questionnaire](distribute-questionnaires.md)
 -   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 
- 
+## Additional resources
+-   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
+-   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 

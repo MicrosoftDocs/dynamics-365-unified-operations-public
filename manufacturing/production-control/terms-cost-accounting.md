@@ -3,7 +3,7 @@
 
 title: Cost accounting terminology
 description: This topic defines the key terms that are used in Cost accounting.
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-11-01 12 - 35 - 53
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 223114
-ms.assetid: 80d17b57-a307-42f5-9ddd-e47b9aedfc07
+ms.assetid: b45efcc5-3efb-4c4b-bfa5-50c163b89a66
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: annbe
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.author: yuyus
+ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.version: Version 1611
 
 ---
 
