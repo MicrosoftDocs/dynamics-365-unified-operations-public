@@ -1,4 +1,3 @@
-title
 # Analytics BI Reporting
 ## [Add BI to workspaces](analytics-bi-reporting\add-bi-workspaces.md)
 ## [Add contextual BI to forms](analytics-bi-reporting\add-contextual-bi-forms.md)
