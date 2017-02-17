@@ -78,4 +78,4 @@
 ## [What's new or changed in Dynamics AX application version 7.0.1 (May 2016)](get-started\whats-new-changed-application-version-7-0-1-may-2016.md)
 ## [What's new or changed in Dynamics AX platform update 1 (May 2016)](get-started\whats-new-changed-platform-version-7-1-may-2016.md)
 ## [What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)](get-started\whats-new-dynamics-365-operations-1611.md)
-## [What's new or changed in Dynamics AX platform update 2 (August 2016)](get-started\whats-new-platform-update-2.md)
+## [What's new or changed in Dynamics AX platform update 2 (August 2016)](get-started\whats-new-platform-update-2.md) 
