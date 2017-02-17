@@ -21,7 +21,7 @@ audience: Application User
 ms.search.scope: AX 2012 R3 CU8
 # ms.tgt_pltfrm: 
 ms.custom: 89041
-ms.assetid: 501ec277-bf2e-484f-978d-e02fef5d3d2e
+ms.assetid: 990d64e6-d436-4c79-9bb5-bf8c5c5a048f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc

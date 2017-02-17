@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 81
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30271
-ms.assetid: ddf61cba-6cf5-4b26-b8d3-75a3f6a5536e
+ms.assetid: 25501947-dace-438f-9261-a4e9b3b10071
 ms.search.region: France
 # ms.search.industry: 
 ms.author: anasyash
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -52,5 +52,5 @@ When you create a **Fixed asset group/value model** setup, you specify the numbe
 | 2020      | 143.47                            | 50.21                               | 143.47                                | 0.00               |
 | **Total** | **Not applicable**                | **Not applicable**                  | **1,000.00**                          | **Not applicable** |
 
-**Note:** If you depreciated an asset by using fixed asset software other than Microsoft Dynamics AX, you must post the acquisition and the accumulated depreciation in Dynamics AX for the period before you started using Dynamics AX. For example, if you started using Dynamics AX on January 1, 2016, you must post the acquisition and accumulated depreciation in Dynamics AX for the period that ended December 31, 2015. After you post the acquisition, you must change the acquisition date to the correct date from your previous software and enter the remaining life of the asset. You can then depreciate the asset as usual, starting on January 1, 2016.
+**Note:** If you depreciated an asset by using fixed asset software other than Microsoft Dynamics 365 for Operations, you must post the acquisition and the accumulated depreciation in Dynamics 365 for Operations for the period before you started using Dynamics 365 for Operations. For example, if you started using Dynamics 365 for Operations on January 1, 2016, you must post the acquisition and accumulated depreciation in Dynamics 365 for Operations for the period that ended December 31, 2015. After you post the acquisition, you must change the acquisition date to the correct date from your previous software and enter the remaining life of the asset. You can then depreciate the asset as usual, starting on January 1, 2016.
 

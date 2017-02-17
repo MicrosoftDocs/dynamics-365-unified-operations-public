@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25471
-ms.assetid: 30689948-6d7f-4501-a0e6-09f28ef9ada2
+ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: chwolf
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

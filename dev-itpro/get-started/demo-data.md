@@ -21,11 +21,11 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 56551
-ms.assetid: 52e1866e-7633-4066-ab8c-1e4a87b1c78d
+ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pmantha
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

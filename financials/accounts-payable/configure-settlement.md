@@ -21,12 +21,12 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14601
-ms.assetid: 03ce8024-d890-462c-a577-2213306a1dd3
+ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.version: AX 7.0.0
 
 How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 
-The following parameters affect how settlements are processed in Microsoft Dynamics AX. Settlement is the process of settling an invoice against a payment or credit note. These parameters are located in the **Settlement** area of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
+The following parameters affect how settlements are processed in Microsoft Dynamics 365 for Operations. Settlement is the process of settling an invoice against a payment or credit note. These parameters are located in the **Settlement** area of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
 
 -   **Automatic settlement** – Set this option to **Yes** if a transaction should be settled automatically against other open transactions when it is posted. If this option is set to **No**, users can manually settle transactions when they enter payments, or later, by using the **Settle transactions** page.
 -   **Cash discount administration** – Specify how a [cash discount is handled when an invoice is overpaid](http://ax.help.dynamics.com/en/?p=2861). For an overpayment, the cash discount can be reduced, it can be treated as a difference, or it can remain on account for the vendor or customer.

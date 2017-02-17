@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50711
-ms.assetid: 3d993284-dc11-4425-bdaa-6f272ad239ee
+ms.assetid: 69008e46-04c2-4078-b754-9d06ebf5aaa4
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: yuyus
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -50,7 +50,7 @@ Use the functionality in the Warehouse management module to monitor and automate
 The resources available for Advanced warehousing include:
 
 -   [Install and configure Microsoft Dynamics 365 for Operations – Warehousing](install-configure-warehousing-app.md)
--   [Configure app field names and priorities for Dynamics 365 for Operations – Warehousing](http://ax.help.dynamics.com/en/wiki/configure-app-field-names-and-priorities-for-dynamics-365-for-operations-warehousing/)
+-   [Configure app field names and priorities for Dynamics 365 for Operations – Warehousing](configure-app-field-names-priorities-warehouse.md)
 -   [Warehouse configuration](warehouse-configuration.md)
 -   [Configure locations in a WMS-enabled warehouse](http://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
 -   [Create a location profile](http://ax.help.dynamics.com/en/wiki/create-a-location-profile/)

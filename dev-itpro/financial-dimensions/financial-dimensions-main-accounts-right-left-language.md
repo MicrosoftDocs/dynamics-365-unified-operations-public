@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 222564
-ms.assetid: f48ea074-d5cb-4d2e-a5e9-e3b8ddeea9fc
+ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
 ms.search.region: global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

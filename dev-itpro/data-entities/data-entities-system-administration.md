@@ -5,7 +5,7 @@ title: Data entities - System administration
 description: This article provides a list of the data entities that are available for the System administration functionality in Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
-ms.date: 2016-12-01 17 - 55 - 16
+ms.date: 2016-12-01 20 - 02 - 45
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96433
-ms.assetid: 69183cf8-14ef-4e7d-8bc9-d5328e0b4d9c
+ms.assetid: 8ee91948-bb1d-409d-80f4-75f32f0a7c5b
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

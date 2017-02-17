@@ -21,11 +21,11 @@ ms.reviewer: MargoC
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 15831
-ms.assetid: ff5da685-cfd5-4d4e-8379-5835b1667f4c
+ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: yabinl
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

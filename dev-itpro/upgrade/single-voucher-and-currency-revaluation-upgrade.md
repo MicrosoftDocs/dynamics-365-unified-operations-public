@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265364
-ms.assetid: 3dbc31e1-951a-427f-8e19-fbd7074ea660
+ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

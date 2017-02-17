@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3401
-ms.assetid: 5b11cce9-6654-483d-a276-44efe138d071
+ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -47,5 +47,5 @@ The purpose of derived books is to simplify the posting of fixed asset book tran
 See also
 --------
 
-[Posting with derived value models](post-derived-value-models.md)
+[Posting with derived books](post-derived-value-models.md)
 

@@ -21,11 +21,11 @@ ms.reviewer: annbe
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 255544
-ms.assetid: 1ebf779b-b66f-4b9c-b5c7-0d4743fef8b3
+ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shshabazz
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Platform update 3
 
 ---

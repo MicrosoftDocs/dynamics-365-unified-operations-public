@@ -21,11 +21,11 @@ ms.reviewer: kfend
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83892
-ms.assetid: 5c2a40ad-8197-40ee-9465-1067f6d83c25
+ms.assetid: 210953fb-4d5a-49e6-b4db-6f31b3472789
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: meeram
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

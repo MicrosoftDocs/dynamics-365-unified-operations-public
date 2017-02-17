@@ -21,11 +21,11 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18341
-ms.assetid: 12bfca77-400e-427e-9df3-bf49ea90ea6a
+ms.assetid: 3dc4c413-e341-4d01-bc49-dc24e35dd8a7
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: athinesh
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

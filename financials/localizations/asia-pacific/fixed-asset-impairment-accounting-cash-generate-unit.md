@@ -21,12 +21,12 @@ ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25691
-ms.assetid: 7c4c2b46-4ce5-40bf-b709-7cff1f3c6d38
+ms.assetid: c87ac196-8dc6-4636-99a3-be478ddd8efe
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

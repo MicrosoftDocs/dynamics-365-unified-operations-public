@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budgeting overview
-description: Almost every company that uses Financials functionality in Microsoft Dynamics AX will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Dynamics AX or load them from a third-party program.
+description: Almost every company that uses Financials functionality in Microsoft Dynamics 365 for Operations will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Dynamics 365 for Operations or load them from a third-party program.
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-03-08 00 - 34 - 27
@@ -21,23 +21,23 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60113
-ms.assetid: 7b8dac9a-c8e8-4e34-a867-dc2b1e3d2a47
+ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
 # ms.search.industry: 
 ms.author: sigitac
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Budgeting overview
 
-Almost every company that uses Financials functionality in Microsoft Dynamics AX will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Dynamics AX or load them from a third-party program.
+Almost every company that uses Financials functionality in Microsoft Dynamics 365 for Operations will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Dynamics 365 for Operations or load them from a third-party program.
 
 Overview
 --------
 
-The approved budget for a legal entity is maintained in a document that is known as a *budget register entry*. The lines in a budget register entry document are known as *budget account* entries, and contain financial dimension information, dates, and the amounts of the approved budget. The budget register entry document is integrated with basic financial reports and inquiry pages where ledger actual amounts are compared to budget amounts. There are multiple methods for creating budget register entries in Microsoft Dynamics AX:
+The approved budget for a legal entity is maintained in a document that is known as a *budget register entry*. The lines in a budget register entry document are known as *budget account* entries, and contain financial dimension information, dates, and the amounts of the approved budget. The budget register entry document is integrated with basic financial reports and inquiry pages where ledger actual amounts are compared to budget amounts. There are multiple methods for creating budget register entries in Dynamics 365 for Operations:
 
 -   Manually enter the document information on the **Budget register entries** page.
 -   Use the Microsoft Excel template that you can open by clicking the **Open in Excel** button on the **Budget register entries** page.

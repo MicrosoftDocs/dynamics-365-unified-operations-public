@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24211
-ms.assetid: df37f78b-5e0a-4de0-af71-4ca586d7e6e2
+ms.assetid: 6d44cedb-9e2b-447b-abe5-8967ce6fd280
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shailesn
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -37,7 +37,7 @@ This wiki describes the workflow for creating and applying a deployable package.
 Overview of the packaging and deployment process
 ------------------------------------------------
 
-The following diagram shows the workflow for creating and applying a deployable package. [](https://msdynamics.blob.core.windows.net/media/2015/12/generate-deployable-package.png)[![generate-deployable-package](https://msdynamics.blob.core.windows.net/media/2015/12/generate-deployable-package.png)](https://msdynamics.blob.core.windows.net/media/2015/12/generate-deployable-package.png) **Note:** The manual steps that are described in this article will be automated as part of the servicing features that are being developed.
+The following diagram shows the workflow for creating and applying a deployable package. [](./media/generate-deployable-package.png)[![generate-deployable-package](./media/generate-deployable-package.png)](./media/generate-deployable-package.png) **Note:** The manual steps that are described in this article will be automated as part of the servicing features that are being developed.
 
 ## Create a deployable package
 After you have completed the development of the modules, follow these steps to create and upload a deployable package.

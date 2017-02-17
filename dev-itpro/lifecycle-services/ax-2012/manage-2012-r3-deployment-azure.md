@@ -21,7 +21,7 @@ ms.reviewer: kfend
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18491
-ms.assetid: cf80921b-6c5b-438f-b5f4-e47055a864f7
+ms.assetid: 04d5d43f-07da-4a81-adce-50e214133b94
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend

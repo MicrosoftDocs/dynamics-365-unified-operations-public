@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Thailand unrealized VAT | Microsoft Docs
+title: Thailand unrealized VAT
 description: This topic provides information about unrealized VAT and how to set it up. It also explains how to calculate and post purchase orders that have unrealized purchase VAT and sales orders that have unrealized sales VAT, and generate reports.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-05 15:50:54
+ms.date: 2017-01-05 15 - 50 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265924
-ms.assetid: ebcbad3f-e21e-4226-8dd0-d44d964d11dc
-ms.region: Thailand
-# ms.industry: 
+ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
+ms.search.region: Thailand
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

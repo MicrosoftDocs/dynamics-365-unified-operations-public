@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Post the pre-acquisition of a fixed asset | Microsoft Docs
+title: Post the pre-acquisition of a fixed asset
 description: This topic explains how to set up and post fixed asset pre-acquisitions.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-19 19:43:14
+ms.date: 2016-12-19 19 - 43 - 14
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264704
-ms.assetid: 31084624-dad3-4a82-b95b-49eca87c8af1
-ms.region: Czech Republic, Hungary
-# ms.industry: 
+ms.assetid: 89218666-7c5e-45ca-aead-a87853d05928
+ms.search.region: Czech Republic, Hungary
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

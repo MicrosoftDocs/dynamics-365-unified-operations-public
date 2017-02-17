@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261434
-ms.assetid: 776794a2-3561-4773-bdfa-5ba8404feb7c
+ms.assetid: c22234d8-68b2-4b36-b07c-0b380c2c12f8
 ms.search.region: China (PRC), Japan
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

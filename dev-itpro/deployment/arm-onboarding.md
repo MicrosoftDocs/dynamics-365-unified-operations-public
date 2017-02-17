@@ -21,11 +21,11 @@ audience: IT Pro
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 141093
-ms.assetid: 79d668c6-ffaa-4e7a-b702-9e99306e14f6
+ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sarvanis
-ms.dyn365.ops.intro: Aug-16
+ms.dyn365.ops.intro: 01-08-2016
 ms.dyn365.ops.version: Platform update 2
 
 ---
@@ -70,7 +70,7 @@ Follow these steps to assign the **Contributor** role to the **Dynamics Deployme
 
 1.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then click the **Access Control (IAM)** line item.
 2.  Click **Add**, select **Contributor**, and then click **OK**. **Note:** Some Azure subscriptions have a **Users** section instead of an **Access control (IAM)** section. In this case, in the **Add users** dialog box, in the **Select** field, enter **Dynamics Deployment Services \[wsfed-enabled\]**, and then click **Select**.
-3.  On the **Add access** page, click **OK**. The **Users** page opens, and you can see that the user is assigned as a **Contributor**. **Note:** If Dynamics Deployment Services \[wsfed-enabled\] doesn't appear, the Authorize process hasn't been completed, or it was completed on another Azure subscription. [![Dynamics Deployment Services \[wsfed-enabled\]](https://msdynamics.blob.core.windows.net/media/2016/08/ARM_Redo_01-1024x407.png)](https://msdynamics.blob.core.windows.net/media/2016/08/ARM_Redo_01.png)
+3.  On the **Add access** page, click **OK**. The **Users** page opens, and you can see that the user is assigned as a **Contributor**. **Note:** If Dynamics Deployment Services \[wsfed-enabled\] doesn't appear, the Authorize process hasn't been completed, or it was completed on another Azure subscription. [![Dynamics Deployment Services \[wsfed-enabled\]](./media/arm_redo_01-1024x407.png)](./media/arm_redo_01.png)
 
 ### Enable the Azure subscription to deploy ARM resources
 

@@ -3,7 +3,7 @@
 
 title: Payroll overview
 description: Payroll provides full gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
-author: annbe
+author: rschloma
 manager: AnnBe
 ms.date: 2016-11-01 19 - 15 - 55
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: rschloma
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 248434
-ms.assetid: 7765f728-9c75-40d7-a12b-fe232348bf50
+ms.assetid: 33dae9aa-f673-4195-9b63-7cb41534c502
 ms.search.region: USA
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.author: rschloma
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -90,5 +90,8 @@ A number of tasks are completed after you generate pay statements for your emplo
 -   [Payroll data updates FAQ](payroll-data-updates.md)
 -   [Generate payroll reports](generate-payroll-reports.md)
 
- 
+## Additional resources
+-   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
+-   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 

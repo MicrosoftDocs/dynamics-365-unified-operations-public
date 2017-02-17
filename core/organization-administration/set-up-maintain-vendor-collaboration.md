@@ -21,11 +21,11 @@ audience: IT Pro
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 220774
-ms.assetid: 4a2a34cd-b63c-4089-b4fb-aa0a007ab30b
+ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

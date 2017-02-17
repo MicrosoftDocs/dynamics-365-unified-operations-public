@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: VAT statement details for Latvia | Microsoft Docs
+title: VAT statement details for Latvia
 description: This topic explains how to set up the VAT statement for legal entities in Latvia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-11 13:48:17
+ms.date: 2017-01-11 13 - 48 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
+ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266864
-ms.assetid: 1c8dde60-1e9d-447a-8dc3-9af568c0575d
-ms.region: Latvia
-# ms.industry: 
+ms.assetid: 40104afc-cbce-4f03-9318-7d0599bb1323
+ms.search.region: Latvia
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: v-elgolu
 
 This topic explains how to set up the VAT statement for legal entities in Latvia.
 
-This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Latvia only. For more information about the implementation of VAT statements, see [(EU) VAT reporting](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/eu-vat-reporting).
+This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Latvia only. For more information about the implementation of VAT statements, see [(EU) VAT reporting](eu-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page, set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.

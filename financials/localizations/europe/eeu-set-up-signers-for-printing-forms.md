@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up signers for print forms | Microsoft Docs
+title: Set up signers for print forms
 description: For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-14 16:25:05
+ms.date: 2016-12-14 16 - 25 - 05
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263464
-ms.assetid: c0f548ff-9380-4a2d-9c0a-3267f0654440
-ms.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-# ms.industry: 
+ms.assetid: 7213914a-ecb6-4711-99fe-4e11867aaf4d
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

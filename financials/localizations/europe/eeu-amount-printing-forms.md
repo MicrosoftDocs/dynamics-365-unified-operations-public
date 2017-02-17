@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Update how amounts are displayed on reports and documents | Microsoft Docs
+title: Update how amounts are displayed on reports and documents
 description: This topic provides information about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-16 19:53:21
+ms.date: 2016-12-16 19 - 53 - 21
 ms.topic: 
 ms.prod: 
 ms.service: 
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264254
-ms.assetid: 4c711057-a8c4-49dc-b480-6cbb60900908
-ms.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-# ms.industry: 
+ms.assetid: 70b32d8d-6fa7-4617-ba74-a74bc6568d6e
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

@@ -21,11 +21,11 @@ audience: IT Pro
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 265674
-ms.assetid: 37974f3d-d680-42aa-a733-56bf635458ba
+ms.assetid: 246a113f-fbc0-4fee-b07e-793938a4a22a
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Platform update 3
 
 ---

@@ -21,11 +21,11 @@ audience: IT Pro
 ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 89071
-ms.assetid: 294846b9-7081-44c5-97f5-d67d5d50a418
+ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.ops.intro: May-16
+ms.dyn365.ops.intro: 01-05-2016
 ms.dyn365.ops.version: Platform update 1
 
 ---

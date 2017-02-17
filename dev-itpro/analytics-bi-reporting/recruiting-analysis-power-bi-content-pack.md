@@ -21,11 +21,11 @@ audience: Application User, IT Pro
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263934
-ms.assetid: 4670e90a-a004-4d8b-b932-b24f3803a025
+ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jcart
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

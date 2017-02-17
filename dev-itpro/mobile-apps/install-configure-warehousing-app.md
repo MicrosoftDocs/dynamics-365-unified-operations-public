@@ -21,11 +21,11 @@ audience: Application User, IT Pro
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 267694
-ms.assetid: f0258718-603f-41c7-a4a8-c705e277295e
+ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

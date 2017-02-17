@@ -21,11 +21,11 @@ ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26011
-ms.assetid: 6adb1e0a-947a-4c9f-8ecb-5c3ec5e3c941
+ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aneesa
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

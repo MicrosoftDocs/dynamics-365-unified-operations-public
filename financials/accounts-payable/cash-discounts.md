@@ -21,12 +21,12 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3741
-ms.assetid: ea4e573c-a9cd-4137-aa4e-ea090ad7e366
+ms.assetid: c25f9d85-2702-46aa-8e61-0b4886e069b3
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -73,8 +73,5 @@ An invoice for 1000 USD with cash discount terms of 20D2% is posted on February 
  
 =
 
-Send [comments](http://go.microsoft.com/fwlink/?LinkID=248681','Customer%20Feedback');) about this topic to Microsoft Dynamics AX Content Publishing Team.
-Build date: 2015-05-05 \[18:44\]
-
-
+ 
 

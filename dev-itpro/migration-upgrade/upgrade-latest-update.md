@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 102343
-ms.assetid: 09e4f69e-92d0-4f7f-84f9-6abf6a339f36
+ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tabell
-ms.dyn365.ops.intro: May-16
+ms.dyn365.ops.intro: 01-05-2016
 ms.dyn365.ops.version: Platform update 1
 
 ---

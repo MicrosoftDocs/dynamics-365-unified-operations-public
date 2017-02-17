@@ -144,6 +144,8 @@
 ## [Sales orders mobile workspace](production-control\sales-orders-mobile-workspace.md)
 ## [Cost accounting terminology](production-control\terms-cost-accounting.md)
 ## [Time and attendance registration](production-control\time-attendance-registrations.md)
+## [Manage subcontracting work in production](production-control\manage-subcontracting-work-in-production.md)
+## [Routes and operations](production-control\routes-and-operations.md)
 # Sales marketing
 ## [Delivery schedules](sales-marketing\delivery-schedules.md)
 ## [Direct deliveries](sales-marketing\direct-deliveries.md)
@@ -180,3 +182,6 @@
 ## [Warehouse Mobile Devices Portal (WMDP) for Dynamics 365 for Operations](warehouse-management\warehouse-mobile-devices-portal.md)
 ## [Warehouse mobile device display settings](warehouse-management\change-warehouse-mobile-device-displays.md)
 ## [Warehouse work policies](warehouse-management\warehouse-work-policies.md)
+## [Configure field names in Warehousing app](warehouse-management\configure-app-field-names-and-priorities-for-dynamics-365-for-operations-warehousing.md)
+## [Sales returns](warehouse-management\sales-returns.md)
+

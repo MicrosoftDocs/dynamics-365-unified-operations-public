@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21631
-ms.assetid: 5e0ea869-aa42-49d0-9a0c-5bfec95fcea8
+ms.assetid: 06e26767-6056-4755-b47e-0bda71833581
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -110,7 +110,7 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 -   [X++ language reference](xpp-language-reference.md)
 
 ## Customize with extensions and overlayering
--   [Extensibility home page](http://ax.help.dynamics.com/en/wiki/extensibility-home-page/)
+-   [Extensibility home page](extensibility-home-page.md)
 
 ## Code migration
 ### Migrate your code

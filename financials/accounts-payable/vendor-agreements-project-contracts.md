@@ -3,7 +3,7 @@
 
 title: Pay-when-paid vendor agreements
 description: This article explains pay-when-paid (PWP) terms for vendor agreements. PWP terms let you partially or fully withhold payment to a vendor until the customer on the project pays you. This article also provides a real-life example to show how you can use PWP terms for a project.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-11 22 - 59 - 49
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23131
-ms.assetid: 7859d2ce-d0f5-4e27-b669-a59d03d95e4a
+ms.assetid: 20bf1d7f-8813-4c69-9cd7-576884a7e169
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

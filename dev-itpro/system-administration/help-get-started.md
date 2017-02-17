@@ -21,11 +21,11 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 16381
-ms.assetid: 0178f54b-4dc7-47ab-9b5f-fc63b4fb5158
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -148,5 +148,5 @@ See also
 
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 
-[New or updated Task guides (November 2016)](http://ax.help.dynamics.com/en/wiki/new-or-updated-task-guides-available-november-2016/)
+[New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 

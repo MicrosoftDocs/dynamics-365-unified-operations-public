@@ -3,7 +3,7 @@
 
 title: Cash discount is applied in the invoice parameter
 description: This topic describes the Cash discount is applied in the invoice parameter for Spain.
-author: annbe
+author: ShylaThompson
 manager: AnnBe
 ms.date: 2016-12-02 22 - 20 - 22
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261474
-ms.assetid: 340b6117-1a15-4dbf-9938-b3208e6197d1
+ms.assetid: 1be79a65-477a-4fb1-9cb6-70afe2b0846e
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

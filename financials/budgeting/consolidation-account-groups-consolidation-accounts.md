@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Consolidation account groups and additional consolidation accounts | Microsoft Docs
+title: Consolidation account groups and additional consolidation accounts
 description: This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they are used in Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-01-03 19:31:01
+ms.date: 2017-01-03 19 - 31 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 101
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 101
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265544
-ms.assetid: 7c7cbd8d-7776-473b-a075-6f9b755d37a1
-ms.region: Global
-# ms.industry: 
+ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: aolson
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -44,12 +46,12 @@ Additional consolidation accounts let you assign an account from an existing cha
 -   **Consolidation account group** – Use this field to specify the group to assign the account to. If you consolidate in two different ways, you must add the same account to all four consolidation account groups. Here is an example. [![Additional consolidation accounts](./media/additionalconsolidationaccountswiki.png)](./media/additionalconsolidationaccountswiki.png)
 -   **Consolidation account** – Enter the value of the consolidation account. This value doesn't have to be an account from a chart of accounts. It can be any value that you require.
 -   **Consolidation account name** – Enter the name of account as you want it to appear on inquiries and reports.
--   **SAT level** – This field is used to report account statements to the Mexican tax authorities. For more information, see [Electronic ledger accounting statements](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/latin-america/electronic-ledger-accounting-statements-in-mexico).
+-   **SAT level** – This field is used to report account statements to the Mexican tax authorities. For more information, see [Electronic ledger accounting statements](electronic-ledger-accounting-statements-mexico.md).
 
 When you've finished creating your consolidation account groups and additional consolidation accounts, you can select the group in the Consolidate online process.
 
 See also
 --------
 
-[Consolidation and elimination overview](https://docs.microsoft.com/en-us/dynamics365/operations/financials/budgeting/consolidation-and-elimination-overview)
+[Consolidation and elimination overview](consolidation-elimination-overview.md)
 

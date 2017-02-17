@@ -21,7 +21,7 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012 R3 CU8
 # ms.tgt_pltfrm: 
 ms.custom: 74812
-ms.assetid: 96004fda-dc1c-4a85-be71-70124e2fbb9e
+ms.assetid: 72a6964d-e8b6-4c3a-8b74-bd6550711f2a
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend

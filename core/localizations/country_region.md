@@ -21,11 +21,11 @@ ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104173
-ms.assetid: 7cbb49ba-c7e6-41a2-9af3-eb140fbb331a
+ms.assetid: 2e299a38-16e5-474e-b993-d88cebfadca0
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shylaw
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -37,11 +37,11 @@ This topic lists Help content for country/region-specific functionality in Dynam
 Localization requirements
 -------------------------
 
--   [Regulatory watch and regulatory update communication](localization-solution-regulatory-watch-communication.md)
--   [Separate localization models](localization-solution-separate-models.md)
--   [Apply country/region context](localization-solution-apply-country-context.md)
--   [Regulatory certifications](localization-solution-regulatory-certifications.md)
--   [Classify localization features](localization-solution-classify-localization-features.md)
+-   [Regulatory watch and regulatory update communication](localization-requirements-regulatory-watch-communication.md)
+-   [Separate localization models](localization-requirements-separate-localization-models.md)
+-   [Apply country/region context](localization-requirements-apply-country-context.md)
+-   [Regulatory certifications](localization-requirements-regulatory-certifications.md)
+-   [Classify localization features](localization-requirements-classify-localization-features.md)
 -   [Create an electronic reporting configuration](localization-requirements-electronic-reporting-configuration.md)
 
 ## Electronic reporting
@@ -64,7 +64,7 @@ The following sections list help topics by country/region.
 
 ### Austria
 
--   [Packing material fee calculation for Austria](http://ax.help.dynamics.com/en/wiki/aut-packing-material-fee-calculation/)
+-   [Packing material fee calculation for Austria](aut-packing-material-fee-calculation.md)
 -   [VAT statement details for Austria](aut-vat-statement-details-austria.md)
 -   [OIOUBL standards for electronic invoicing](oioubl-standards-electronic-invoicing.md)
     -   [Set up OIOUBL electronic invoicing (Task Guide)](http://ax.help.dynamics.com/en/wiki/set-up-oioubl-electronic-invoicing/)
@@ -96,7 +96,7 @@ The following sections list help topics by country/region.
 -   Fixed assets
     -   [Allocation rules for fixed assets](allocation-rules-fixed-assets.md)
     -   [Depreciation methods for fixed assets](depreciation-methods-fixed-assets-china.md)
--   [Bill of materials comparison](http://ax.help.dynamics.com/en/wiki/chn-about-bom-comparison/)
+-   [Bill of materials comparison](chn-bom-comparison.md)
 -   [Posting inventory main accounts by site](chn-about-posting-inventory-main-accounts-by-site.md)
 -   [Monthly average cost model for China](chn-monthly-average-cost-model.md)
 
@@ -249,7 +249,7 @@ The following sections list help topics by country/region.
 -   [DIOT declaration statement](diot-declaration-statement.md)
 -   [Electronic ledger accounting statements](electronic-ledger-accounting-statements-mexico.md)
 -   [Adjustment inflation declaration report](adjustment-inflation-declaration-report.md)
--   [ISR declaration report and supporting processes](isr-declaration-report.md)
+-   [ISR declaration report and supporting processes](mex-isr-declaration-report-supporting-processes.md)
 -   [Electronic invoices (CFDI)](electronic-invoices-mexico.md)
     -   [Set parameters for an electronic invoice (Task Guide)](http://ax.help.dynamics.com/en/wiki/mx-00010-set-parameters-for-an-electronic-invoice/)
     -   [E-invoicing CFDI (Task Guide)](http://ax.help.dynamics.com/en/wiki/mx-00010-e-invoicing-cfdi/)

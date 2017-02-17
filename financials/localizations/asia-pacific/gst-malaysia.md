@@ -2,7 +2,7 @@
 # required metadata
 
 title: Malaysia Goods and Services Tax
-description: This article provides information about how to set up Goods and Services Tax (GST) for a Malaysian company and explains the functionality that Microsoft Dynamics AX provides for GST.
+description: This article provides information about how to set up Goods and Services Tax (GST) for a Malaysian company and explains the functionality that Microsoft Dynamics 365 for Operations provides for GST.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 2015-10-27 18 - 26 - 26
@@ -17,22 +17,22 @@ ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY, TaxGSTReportConfi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+# ms.reviewer: 81
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10904
-ms.assetid: e2f1f89f-b934-4d65-9bd8-66b79561df1b
+ms.assetid: b14375b1-cb5e-4969-a5fd-3d6d2c8b6226
 ms.search.region: Malaysia
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Malaysia Goods and Services Tax
 
-This article provides information about how to set up Goods and Services Tax (GST) for a Malaysian company and explains the functionality that Microsoft Dynamics AX provides for GST.
+This article provides information about how to set up Goods and Services Tax (GST) for a Malaysian company and explains the functionality that Microsoft Dynamics 365 for Operations provides for GST.
 
 Goods and Services Tax (GST) is a multi-stage tax on domestic consumption. GST is charged on all taxable supplies of goods and services in Malaysia, except those that are explicitly exempted. GST is also charged on the importation of goods and services into Malaysia.
 
@@ -83,12 +83,12 @@ The GST Act specifies the requirements for issuing credit and debit notes for a 
 -   The reasons that the debit note or credit note has been issued
 -   The number and date of the original tax invoice
 
-In standard Microsoft Dynamics AX, you can create a credit note for a sales order. For Malaysia, this functionality has been modified so that the invoice number and invoice date of the original invoice are included on the corresponding sales order lines. You can now follow the same steps to create a debit note, provided that it meets the following conditions:
+For Malaysia, the process for creating a credit note for a sales order has been modified so that the invoice number and invoice date of the original invoice are included on the corresponding sales order lines. You can now follow the same steps to create a debit note, provided that it meets the following conditions:
 
 -   It has a reference to the original invoices.
 -   The total amount is positive.
 
-For both debit notes and credit notes, you must provide a reason code on the sales order header. Similar functions are provided for free text invoices and purchase orders. In standard Microsoft Dynamics AX, you can create a credit note for a project invoice through the **Sales order** page. You can now also create a debit note for a project invoice.
+For both debit notes and credit notes, you must provide a reason code on the sales order header. Similar functions are provided for free text invoices and purchase orders. In standard Microsoft Dynamics 365 for Operations, you can create a credit note for a project invoice through the **Sales order** page. You can now also create a debit note for a project invoice.
 
 ## GST invoices
 Tax invoices are the most important documents in the GST system. They contain details about the registered person and supply, the GST rate, and the amount of GST that is payable under the GST Act. A tax invoice resembles a commercial invoice or receipt, but it contains additional information that is specified by the GST Act. A tax invoice can contain details about more than one supply (taxable supply and exempt supply). In this case, the tax invoice (whether full or simplified) must clearly distinguish between the various supplies, and it must indicate separately the applicable tax values and any tax that is charged on each supply for GST purposes. You can modify the parameters for the GAF summary to configure the indicators that distinguish the various supplies. A sample tax invoice is provided that adds the following details to a standard sales invoice:
@@ -136,7 +136,7 @@ These reports are in different formats, but they all display monetary amounts (t
 
 ### Defining sales tax reporting codes
 
-The **GST report by configuration** report takes advantage of reporting code functions in Microsoft Dynamics AX. Sales tax reporting codes collect the information for several sales tax codes onto one report line. In a typical setup, there is one sales tax reporting code for every calculated field on reports, and some predetermined reporting codes must be created. However, because you can now define your own report configurations and specify which reporting codes to use, no predetermined codes are required. No specific report layout has been introduced for Malaysia GST. You must use the **Default** report layout for your reporting codes.
+The **GST report by configuration** report takes advantage of reporting code functions in Microsoft Dynamics 365 for Operations. Sales tax reporting codes collect the information for several sales tax codes onto one report line. In a typical setup, there is one sales tax reporting code for every calculated field on reports, and some predetermined reporting codes must be created. However, because you can now define your own report configurations and specify which reporting codes to use, no predetermined codes are required. No specific report layout has been introduced for Malaysia GST. You must use the **Default** report layout for your reporting codes.
 
 ### Mapping sales tax reporting codes to sales tax codes
 
@@ -229,7 +229,7 @@ Royal Malaysian Customs Department (MRCD) will periodically audit your business�
 -   Ledger transactions
 -   Footer (Summary)
 
-Certain business data should be captured in AX to generate the GAF.   For the section "Company information", the GAF version is needed in "General ledger parameters".   For "Purchases" section,  when importing Goods from oversea vendors, the declaration number should be captured for each vendor invoice. Besides normal sales order and purchases orders, more transactions should be regarded as "Purchase" or "Supply" in GAF.  For instance,  when you make payment to vendors and you also need to pay bank fees to banks. As per Malaysia GST regulations, GST will be applied to the bank charge. Bank will provide GST invoice to you and  you are able to claim the GST input tax. When generating the GAF file, tax authority is expecting to see the bank charges are regarded as "purchases" in GAF.  In such cases, AX should enable users capture the required GAF information. You are now able to capture "Organization number" for a bank group. It will be defaulted to payment fee transactions of corresponding banks. And you can enter required GAF information for various journals and payment fees as per your business needs.  You also can preview the supply and purchase records where GST applies and you can edit or add relevant information in the "GAF purchase and supply review" page.  You need make sure you mark the "GST" check box on the Sales tax codes page for each of your GST tax codes. To generate the GAF, click **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Generate GAF file**, and provide the following required information:
+Certain business data should be captured in AX to generate the GAF.   For the section "Company information", the GAF version is needed in "General ledger parameters".   For "Purchases" section,  when importing Goods from oversea vendors, the declaration number should be captured for each vendor invoice. Besides normal sales order and purchases orders, more transactions should be regarded as "Purchase" or "Supply" in GAF.  For instance,  when you make payment to vendors and you also need to pay bank fees to banks. As per Malaysia GST regulations, GST will be applied to the bank charge. Bank will provide GST invoice to you and  you are able to claim the GST input tax. When generating the GAF file, tax authority is expecting to see the bank charges are regarded as "purchases" in GAF.  In such cases, Dynamics 365 for Operations allows users to capture the required GAF information. You are now able to capture "Organization number" for a bank group. It will be defaulted to payment fee transactions of corresponding banks. And you can enter required GAF information for various journals and payment fees as per your business needs.  You also can preview the supply and purchase records where GST applies and you can edit or add relevant information in the "GAF purchase and supply review" page.  You need make sure you mark the "GST" check box on the Sales tax codes page for each of your GST tax codes. To generate the GAF, click **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Generate GAF file**, and provide the following required information:
 
 -   **Settlement period:** Specify the settlement period to generate the GAF for.
 -   **From date:** The first date in the interval for this settlement period.
@@ -237,4 +237,13 @@ Certain business data should be captured in AX to generate the GAF.   For the 
 -   **Posting layer:** Specify which posting layers to generate the GAF from. The posting layers affect the ledger transactions that are included in the GAF.
 
 You should run the “Settle and post sales tax” process before you generate the GAF for a period. Only those transactions that are included in a sales tax payment will be included in the GAF.
+
+See also
+--------
+
+[Generate GAF files in the required format](http://ax.help.dynamics.com/en/wiki/my-00010-gst-generate-gaf-files-in-the-required-format/)
+
+[Print GST tax invoices](http://ax.help.dynamics.com/en/wiki/my-00005-print-gst-tax-invoices/)
+
+[Manage customer Debit note and Credit note for GST](http://ax.help.dynamics.com/en/wiki/my-00003-manage-customer-debit-note-and-credit-note-for-gst/)
 

@@ -21,11 +21,11 @@ audience: Application User, Developer, IT Pro
 ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 55651
-ms.assetid: ef9f08b0-6990-42c9-b32b-2e74f9cd3385
+ms.assetid: e564d51d-42d3-47c5-b388-93b8219c692a
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: Aug-16
+ms.dyn365.ops.intro: 01-08-2016
 ms.dyn365.ops.version: Platform update 2
 
 ---

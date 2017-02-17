@@ -21,7 +21,7 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13661
-ms.assetid: 74e11d26-d0fd-4114-a178-c391b4cd5c8a
+ms.assetid: 88d3758d-7d54-4c66-8b1a-f7a9ad8c825e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks

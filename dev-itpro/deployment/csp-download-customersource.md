@@ -21,7 +21,7 @@ audience: IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 260214
-ms.assetid: b1852006-106b-429e-8e9f-78a38d07738c
+ms.assetid: d7902321-720d-4fdb-9cce-e128acb9fa47
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc

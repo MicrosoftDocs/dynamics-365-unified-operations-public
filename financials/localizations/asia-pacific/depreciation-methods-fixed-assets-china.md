@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Depreciation methods for fixed assets | Microsoft Docs
+title: Depreciation methods for fixed assets
 description: This topic describes the depreciation method set up for legal entities in China.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-22 16:47:54
+ms.date: 2016-12-22 16 - 47 - 54
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265244
-ms.assetid: edf34495-3f4c-4500-a032-5ece79ded413
-ms.region: China (PRC)
-# ms.industry: 
+ms.assetid: c7ee6b6a-cb92-4d1a-b4bb-37df3107dac8
+ms.search.region: China (PRC)
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

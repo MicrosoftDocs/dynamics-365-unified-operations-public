@@ -21,11 +21,11 @@ ms.reviewer: annbe
 ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 266464
-ms.assetid: 8b04339a-2246-4bf8-9395-dd86de8c75ec
+ms.assetid: b4640e67-4b92-4855-8041-1bfc71aadc47
 ms.search.region: global
 # ms.search.industry: 
 ms.author: josaw
-ms.dyn365.ops.intro: Aug-16
+ms.dyn365.ops.intro: 01-08-2016
 ms.dyn365.ops.version: Platform update 2
 
 ---

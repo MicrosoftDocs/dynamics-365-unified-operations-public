@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Spanish bill of exchange options | Microsoft Docs
+title: Spanish bill of exchange options
 description: This topic describes specific options and changes in basic bill of exchange process implemented in Microsoft Dynamics 365 for Operations for legal entities in Spain.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-19 18:00:38
+ms.date: 2016-12-19 18 - 00 - 38
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264644
-ms.assetid: d28c4650-d91f-4349-8233-7c547dc28a6e
-ms.region: Spain
-# ms.industry: 
+ms.assetid: 67e8f90e-5522-4631-96c5-62d193eab72f
+ms.search.region: Spain
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

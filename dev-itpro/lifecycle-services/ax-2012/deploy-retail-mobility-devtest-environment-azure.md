@@ -21,7 +21,7 @@ ms.reviewer: annbe
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13332
-ms.assetid: f8b71ee2-9ef2-402f-a803-d03c240ae508
+ms.assetid: ffc3e49a-c2a7-48ce-9f3d-3950b3133cbc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aamiral

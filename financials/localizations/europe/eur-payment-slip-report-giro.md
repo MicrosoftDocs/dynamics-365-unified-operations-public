@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Payment slip report for Europe | Microsoft Docs
+title: Payment slip report for Europe
 description: This topic provides information about payment slip reports for Europe.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-19 17:07:55
+ms.date: 2016-12-19 17 - 07 - 55
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264604
-ms.assetid: dcc7a1c8-d4d8-46c0-ad7c-ae1443cbed11
-ms.region: Belgium, Denmark, Finland, Norway, Switzerland
-# ms.industry: 
+ms.assetid: 551e047b-4581-4a77-b470-c4f8d395c375
+ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

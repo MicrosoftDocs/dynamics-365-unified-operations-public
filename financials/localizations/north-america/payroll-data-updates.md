@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221444
-ms.assetid: fe997619-83e2-4a8a-bd8f-9373bbcd9573
+ms.assetid: 27ccec84-8e9a-465e-9b2a-fbe88d974068
 ms.search.region: USA
 # ms.search.industry: 
 ms.author: brpotter
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -35,8 +35,8 @@ ms.dyn365.version: Version 1611
 A number of changes can and do happen at the end of a year that require changes to your payroll data. Workers can change their benefit election, or your company might change benefit rates, and benefit balances. Workers who move into different positions also result in changes to payroll data. This topic lists questions and answers that address these kinds of changes.
 
 This topic describes functionality that is available only if the **Payroll - USA** configuration key is selected.
-[How do I prepare payroll for a new fiscal year?]( "Click to collapse. Double-click to collapse all.")
-------------------------------------------------------------------------------------------------------
+How do I prepare payroll for a new fiscal year?
+-----------------------------------------------
 
 If a pay statement that contains a benefit accrual is generated in one fiscal year and then reversed in the next fiscal year, you might have to adjust the carry-forward balance. You also might have to adjust the carry-forward balance if a pay statement is generated in the new fiscal year before the final pay statement from the previous fiscal year was submitted or posted. For more information about how to adjust benefit accruals, see “Can I adjust the balance in a benefit accrual plan?” later in this topic.
 
@@ -48,7 +48,7 @@ To prepare Payroll for a new fiscal year, you have to set up pay periods and wor
 -   Go to [Payroll calculation frequencies tasks](payroll-calculation-frequencies-tasks.md) and complete the Associate pay periods with payroll calculation frequencies task.
 -   Go to [Work cycle and work period tasks](work-cycle-work-period-tasks.md) and complete the Generate work periods task.
 
-## [Can I adjust the balance in a benefit accrual plan?]( "Click to collapse. Doubleclick to collapse all.")
+## Can I adjust the balance in a benefit accrual plan?
 Yes, you can adjust the balance in a benefit accrual plan. You might have to adjust the balance in these situations:
 
 -   If a worker isn’t enrolled in the plan when they should have been, you can adjust the amounts that were accrued and used so that you can include the correct amounts.
@@ -61,7 +61,7 @@ Yes, you can adjust the balance in a benefit accrual plan. You might have to adj
 
 To reverse an adjustment, create a second adjustment that has the same type as the adjustment that you want to reverse. Use the same value, but use the opposite sign as the adjustment to reverse. For example, to reverse a carry-forward adjustment of 8.0 hours, create a carry-forward adjustment of -8.0 hours.
 
-## [Why can’t I delete a worker enrollment from a benefit accrual plan?]( "Click to collapse. Doubleclick to collapse all.")
+## Why can’t I delete a worker enrollment from a benefit accrual plan?
 You can delete a worker enrollment from a benefit accrual plan only if these situations apply:
 
 -   You’re logged on to the legal entity where the benefit accrual plan exists.
@@ -69,14 +69,14 @@ You can delete a worker enrollment from a benefit accrual plan only if these sit
 
 If the plan has a balance that was created when a pay statement was submitted, you can’t delete the worker enrollment from the plan, but you can deactivate the enrollment. To do this, in the **Benefit accruals** page, select both the **Stop accrual** and **Stop balance reduction** options. When the **Stop accrual** option is selected, no hours accrue in the plan for this worker. When the **Stop balance reduction** option is selected, validation doesn’t occur for hours used, and hours from the plan that are used aren’t subtracted from the worker’s available balance. When you select both options, this has the same effect as removing the worker from the plan. Neither accrual transactions nor usage transactions are created when you submit a pay statement, and the plan doesn’t appear on the pay statement or the payment.
 
-## [Why aren’t hours accruing in a worker’s benefit accrual plan?]( "Click to collapse. Doubleclick to collapse all.")
+## Why aren’t hours accruing in a worker’s benefit accrual plan?
 If hours aren’t accruing, this usually occurs for one or more of these reasons:
 
 -   The worker isn’t enrolled in the plan.
 -   The **Stop accrual** option is selected in the **Benefit accruals** page.
 -   The plan balance has reached the maximum accrual limit for the year. Review the plan rules in the **Benefit accrual plans** page.
 
-## [How do I update benefit rates before the new plan year?]( "Click to collapse. Doubleclick to collapse all.")
+## How do I update benefit rates before the new plan year?
 When the amount or rate that is used to calculate payroll deductions and employer contributions for a benefit changes, you have to change it both on the benefit itself and on the benefit records of the workers who are enrolled in that benefit. A yellow message bar notifies you when the rates for the worker enrollments don’t match the rates for the benefit.
 
 You can use an automated process to update rates for workers who have a rate source of **Benefit**. You must manually update rates for workers who have a rate source of **Custom**.
@@ -84,7 +84,7 @@ You can use an automated process to update rates for workers who have a rate sou
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | If the time zone that is set for the legal entity differs from the time zone where the benefit was created, the automated process might cause some dates to be off by one calendar day. If this occurs, you can adjust the dates by running the process again. |
 
-## [How do I change payroll settings when a worker changes to a new position assignment?]( "Click to collapse. Doubleclick to collapse all.")
+## How do I change payroll settings when a worker changes to a new position assignment?
 Before you can make the necessary payroll changes, the worker and position information must already be changed in the Human resources module.
 
 To change the payroll settings after that is done, follow these steps:
@@ -101,7 +101,7 @@ To change the payroll settings after that is done, follow these steps:
 
 3.  Go to [Worker and position payroll tasks](worker-position-payroll-tasks.md) and, for each benefit that you enrolled the worker in, perform the task titled Set up payroll information for benefits.
 
-## [How do I change benefits for a worker after a qualifying event?]( "Click to collapse. Doubleclick to collapse all.")
+## How do I change benefits for a worker after a qualifying event?
 When a worker has a qualifying life event that allows for a change of benefits, other payroll data for that worker might also change because of the event.
 
 To change the benefits, follow these steps:

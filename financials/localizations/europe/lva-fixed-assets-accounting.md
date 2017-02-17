@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed assets accounting for tax purposes | Microsoft Docs
+title: Fixed assets accounting for tax purposes
 description: This topic provides information about the tax Depreciation functionality for Latvia. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-16 21:35:17
+ms.date: 2016-12-16 21 - 35 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetBookTable, AssetDepreciationProfile, AssetTable, AssetTaxDepreciation
+ms.search.form: AssetBookTable, AssetDepreciationProfile, AssetTable, AssetTaxDepreciation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264374
-ms.assetid: 05c44fd2-6f5e-4028-9b55-dfb92faee9c0
-ms.region: Latvia
-# ms.industry: 
+ms.assetid: cbf94106-2c1b-45dd-8734-18a2a56a4682
+ms.search.region: Latvia
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: v-elgolu
 
 This topic provides information about the tax Depreciation functionality for Latvia. 
 
-This topic discusses tax depreciation setup and calculation as well as printing the tax depreciation report. **Note:** Tax depreciation works with the value models. The value model and depreciation book have been merged into a single concept that is called a *book.* For more information, see [Fixed asset value model and depreciation book merge](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/fixed-asset-value-model-and-depreciation-book-merge).
+This topic discusses tax depreciation setup and calculation as well as printing the tax depreciation report. **Note:** Tax depreciation works with the value models. The value model and depreciation book have been merged into a single concept that is called a *book.* For more information, see [Fixed asset value model and depreciation book merge](fixed-asset-value-model-depreciation-book-merge.md).
 
 ## Set up a depreciation profile
 When you set up a depreciation profile, consider the following.

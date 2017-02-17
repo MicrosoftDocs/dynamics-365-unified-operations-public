@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267094
-ms.assetid: e1e3e4da-ddee-44e8-8c14-746c60df9ac9
+ms.assetid: 85058f55-e566-40e2-9234-42d3e4fe5ff6
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mirzaab
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

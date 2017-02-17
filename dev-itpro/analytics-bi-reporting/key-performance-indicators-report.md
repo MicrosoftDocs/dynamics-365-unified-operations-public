@@ -21,11 +21,11 @@ audience: Developer, IT Pro
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 203574
-ms.assetid: a0e79595-85f3-41e5-9f78-0feaf0d68eb5
+ms.assetid: 026f9b9e-dbec-4fcb-a6a3-a4602ba6d23f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: May-16
+ms.dyn365.ops.intro: 01-05-2016
 ms.dyn365.ops.version: Platform update 1
 
 ---

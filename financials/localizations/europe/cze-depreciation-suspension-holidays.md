@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Depreciation suspension (holidays) | Microsoft Docs
+title: Depreciation suspension (holidays)
 description: This topic provides information about the suspension, or postponement, of depreciation for the Czech Republic.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-22 14:13:12
+ms.date: 2016-12-22 14 - 13 - 12
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265124
-ms.assetid: 8db00162-08cd-4f27-98d7-90a7071b8d4d
-ms.region: Czech Republic
-# ms.industry: 
+ms.assetid: 638660f3-6a42-4a37-b90c-576feb15e1a4
+ms.search.region: Czech Republic
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267114
-ms.assetid: 97b14032-e93e-4eed-92b9-fc211ff68472
+ms.assetid: 84740472-494f-444c-9b74-f83b7342fd25
 ms.search.region: global
 # ms.search.industry: 
 ms.author: yuyus
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

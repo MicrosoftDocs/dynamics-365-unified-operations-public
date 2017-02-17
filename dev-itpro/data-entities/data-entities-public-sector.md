@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96313
-ms.assetid: 567de280-d003-4c53-83f5-ce4991f55177
+ms.assetid: 688cf2da-b57a-434c-895d-e822316e7ea9
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: kfend
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

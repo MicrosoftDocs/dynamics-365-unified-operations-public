@@ -21,11 +21,11 @@ audience: Application User, IT Pro
 ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 195583
-ms.assetid: 57757a09-1993-4cce-a6b7-4bdb97c42a3d
+ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: donaldc
-ms.dyn365.ops.intro: Aug-16
+ms.dyn365.ops.intro: 01-08-2016
 ms.dyn365.ops.version: Platform update 2
 
 ---

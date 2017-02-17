@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: One-time customers | Microsoft Docs
+title: One-time customers
 description: This topic provides information about one-time customers.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-16 21:38:18
+ms.date: 2016-12-16 21 - 38 - 18
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustTable
+ms.search.form: CustTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264394
-ms.assetid: bd809211-914d-4cf9-9693-15252f568c39
-ms.region: Spain
-# ms.industry: 
+ms.assetid: 28357e20-5e7e-4fe9-bbdf-d4812951369e
+ms.search.region: Spain
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
