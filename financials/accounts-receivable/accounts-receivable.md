@@ -3,7 +3,7 @@
 
 title: Accounts receivable home page
 description: Use Accounts receivable to track customer invoices and incoming payments.
-author: annbe
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-08 15 - 23 - 25
 ms.topic: index-page
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20671
-ms.assetid: d910f140-5b2c-466b-9ebd-e1df39a8d59d
+ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: twheeloc
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -62,5 +62,4 @@ You can create customer invoices that are based on sales orders or packing slips
 -   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
 -   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account).
 
- 
 

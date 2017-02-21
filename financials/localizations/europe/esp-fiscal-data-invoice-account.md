@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Use fiscal data from the invoice account | Microsoft Docs
+title: Use fiscal data from the invoice account
 description: For legal entities in Spain, the Use fiscal data from invoice account functionality enables fiscal data on sales orders, free text invoices, and purchase orders to be updated automatically, based on information from the invoice account. This topic provides information about the Use fiscal data from invoice account functionality and explains how to set it up.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-22 16:47:48
+ms.date: 2016-12-22 16 - 47 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265224
-ms.assetid: 81cdcc35-be21-4ab1-9f16-fddab9eb29ed
-ms.region: Spain
-# ms.industry: 
+ms.assetid: 8b46e367-0f19-46d1-8fc2-88d035c460a0
+ms.search.region: Spain
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

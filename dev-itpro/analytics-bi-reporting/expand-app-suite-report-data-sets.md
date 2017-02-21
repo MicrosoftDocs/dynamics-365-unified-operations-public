@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 266594
-ms.assetid: d26dbe51-0488-4fe9-aff2-b14ebb1ba520
+ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tjvass
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Platform update 3
 
 ---

@@ -21,11 +21,11 @@ ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 22761
-ms.assetid: c313a366-598b-4ff3-90ee-2661d612c895
+ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sijoshi
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

@@ -21,12 +21,12 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3501
-ms.assetid: ae31e955-0698-4b19-8d91-4c9a154a8eaf
+ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

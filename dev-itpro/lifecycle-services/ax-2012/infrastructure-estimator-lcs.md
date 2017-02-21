@@ -21,7 +21,7 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 19081
-ms.assetid: 2cd0db24-595b-48f6-ba53-e6ace8a75215
+ms.assetid: ce126e17-5dc6-42fd-a9aa-4932e3db3830
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani

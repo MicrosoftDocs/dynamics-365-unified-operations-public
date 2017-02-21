@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21021
-ms.assetid: 47554c49-cda9-4898-8e35-eabcb7233077
+ms.assetid: df56463c-126e-4a09-bcdc-4fda52e99f46
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -44,7 +44,7 @@ Developer and IT Pro
 -   [Retail Modern POS functional overview (part 2)](https://mix.office.com/watch/ln8lkpiqwrhr) (Office Mix)
 
 ## Hardware peripherals
--   [Retail peripherals overview](http://ax.help.dynamics.com/en/wiki/retail-peripherals-overview/)
+-   [Retail peripherals overview](retail-peripherals-overview.md)
 -   [Retail peripheral simulator](retail-peripheral-simulator.md)
 
 ## Screen layout and customization

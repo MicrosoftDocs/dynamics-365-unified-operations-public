@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16301
-ms.assetid: 102e4467-3faa-4e5a-97e9-94d4da1329ba
+ms.assetid: 8f3b62f2-4de6-4ea3-b3e6-1101d0fe308e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

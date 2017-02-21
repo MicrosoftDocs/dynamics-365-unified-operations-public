@@ -3,7 +3,7 @@
 
 title: Public sector home page
 description: Microsoft Dynamics 365 for Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
-author: annbe
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-08 15 - 26 - 48
 ms.topic: index-page
@@ -17,16 +17,16 @@ ms.search.form: SysConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20691
-ms.assetid: b14c835d-c585-49f7-80e0-f10fd5f4d362
+ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: twheeloc
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -36,13 +36,13 @@ Microsoft Dynamics 365 for Operations enable business processes that are common 
 
 Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include:
 
--   Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger
--   Preliminary budgets, apportionments, and commitments
--   Billing codes, billing classifications, trading partner codes, and custom fields for free text invoices
--   General ledger year-end processing, which includes encumbrances and commitments on purchase orders
--   Electronic payments to vendors, signature pages for payment reports, and invoice payment holds
+-   Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger.
+-   Preliminary budgets, apportionments, and commitments.
+-   Billing codes, billing classifications, trading partner codes, and custom fields for free text invoices.
+-   General ledger year-end processing, which includes encumbrances and commitments on purchase orders.
+-   Electronic payments to vendors, signature pages for payment reports, and invoice payment holds.
 
- For more information, see the following articles:
+ For more information, see the following topics:
 
 -   [Planning for Public sector functionality](plan-public-sector-functionality.md)
 -   [Accounts payable in the Public sector](accounts-payable-public-sector.md)

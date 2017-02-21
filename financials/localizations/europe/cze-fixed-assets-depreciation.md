@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed assets depreciation methods for the Czech Republic | Microsoft Docs
+title: Fixed assets depreciation methods for the Czech Republic
 description: This topic provides information about fixed assets depreciation for legal entities in the Czech Republic. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-16 21:23:17
+ms.date: 2016-12-16 21 - 23 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetDepreciationGroup_W
+ms.search.form: AssetDepreciationGroup_W
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 81
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264314
-ms.assetid: 5f42d6e1-84de-4d8e-987f-3308a847360d
-ms.region: Czech Republic
-# ms.industry: 
+ms.assetid: 185cc4ce-d1b2-429a-9b1b-6b9c4b865da0
+ms.search.region: Czech Republic
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -54,7 +56,7 @@ For users in legal entities in Czech Republic, there are additional depreciatio
 -   Regular CZ
 -   Accelerated CZ
 
-For more information about depreciation methods, see [Fixed asset depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/fixed-asset-depreciation).
+For more information about depreciation methods, see [Fixed asset depreciation](fixed-asset-depreciation.md).
 
 ### Regular CZ depreciation method
 

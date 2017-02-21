@@ -21,7 +21,7 @@ ms.reviewer: annbe
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 62603
-ms.assetid: 6399d8e7-1550-4957-92c1-6a5a8dc6f8e6
+ms.assetid: 1e9eb4d9-3826-42f6-a917-99b3940436a7
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy

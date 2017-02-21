@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25631
-ms.assetid: 997f1576-67df-4b4a-a8e0-6fb1ddb93e37
+ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: ghenriks
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

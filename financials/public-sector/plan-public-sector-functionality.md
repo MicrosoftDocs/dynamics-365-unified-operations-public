@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan for public sector functionality
-description: This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics AX.
+description: This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics 365 for Operations.
 author: rschloma
 manager: AnnBe
 ms.date: 2015-12-07 17 - 55 - 20
@@ -21,23 +21,23 @@ ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19851
-ms.assetid: f28605d7-e8ab-4272-8088-e629aa1e20e2
+ms.assetid: 877eabf3-19c7-4897-b33e-c5a8a319cb35
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Plan for public sector functionality
 
-This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics AX.
+This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics 365 for Operations.
 
 What should I do first?
 -----------------------
 
-Before you begin to adjust the settings and input your data, you should consider which Microsoft Dynamics AX modules you’ll need to set up for your Public sector organization. Public sector functionality is integrated with the following Microsoft Dynamics AX modules and Microsoft products.
+Before you begin to adjust the settings and input your data, you should consider which Microsoft Dynamics 365 for Operations modules you’ll need to set up for your Public sector organization. Public sector functionality is integrated with the following Microsoft Dynamics 365 for Operations modules and Microsoft products.
 
 ### Accounts payable
 

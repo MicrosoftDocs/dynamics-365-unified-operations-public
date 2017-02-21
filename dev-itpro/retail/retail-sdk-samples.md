@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 266164
-ms.assetid: 5a526b48-00e3-4757-9162-0c1d0de3f76f
+ms.assetid: d24470fd-07ad-4c3f-b23a-3f6c1401edc6
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
-ms.dyn365.ops.intro: Aug-16
+ms.dyn365.ops.intro: 01-08-2016
 ms.dyn365.ops.version: Platform update 2
 
 ---

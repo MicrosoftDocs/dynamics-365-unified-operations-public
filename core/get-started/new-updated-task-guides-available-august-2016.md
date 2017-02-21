@@ -21,11 +21,11 @@ audience: Application User, IT Pro
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 252754
-ms.assetid: 2f10f98a-2107-40cb-bb48-c026fdb70401
+ms.assetid: 11a72e4a-7899-42be-b180-a0f4b86d88f1
 ms.search.region: global
 # ms.search.industry: 
 ms.author: josaw
-ms.dyn365.ops.intro: Aug-16
+ms.dyn365.ops.intro: 01-08-2016
 ms.dyn365.ops.version: Platform update 2
 
 ---
@@ -107,5 +107,5 @@ See also
 
 [New or updated Task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 
-[New or updated Task guides (November 2016)](http://ax.help.dynamics.com/en/wiki/new-or-updated-task-guides-available-november-2016/)
+[New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 

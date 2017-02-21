@@ -21,11 +21,11 @@ audience: Application User, IT Pro
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 104233
-ms.assetid: b60c6ae3-84c3-4fbe-bfc9-eadd22a404cb
+ms.assetid: 2a2ffa1e-5a15-4e2a-b18c-c4d890d38a50
 ms.search.region: global
 # ms.search.industry: 
 ms.author: josaw
-ms.dyn365.ops.intro: May-16
+ms.dyn365.ops.intro: 01-05-2016
 ms.dyn365.ops.version: Platform update 1
 
 ---
@@ -198,5 +198,5 @@ See also
 
 [New or updated Task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 
-[New or updated Task guides (November 2016)](http://ax.help.dynamics.com/en/wiki/new-or-updated-task-guides-available-november-2016/)
+[New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 

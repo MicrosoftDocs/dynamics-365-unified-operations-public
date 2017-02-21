@@ -2,8 +2,8 @@
 # required metadata
 
 title: Cash and bank management home page
-description: 
-author: annbe
+description: You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-11 20 - 01 - 57
 ms.topic: index-page
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21941
-ms.assetid: 3ee04349-4e20-4f75-a8a1-1632f529d994
+ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: twheeloc
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Cash and bank management home page
 
-
+You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
 
 These instruments include deposit slips, checks, bills of exchange, and promissory notes. You can also reconcile bank statements and print bank data on standard reports.
 
@@ -75,11 +75,8 @@ These instruments include deposit slips, checks, bills of exchange, and promisso
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Scenario: Use one customer payment to settle multiple invoice that span multiple discount periods](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
- 
-
 ## Additional resources
 -   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
 -   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account).
 
-     
 

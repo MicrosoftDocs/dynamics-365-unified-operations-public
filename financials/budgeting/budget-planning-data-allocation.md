@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget planning data allocation
-description: This article describes the various allocation methods that are available in Microsoft Dynamics AX and how they can be used.  
+description: This article describes the various allocation methods that are available in Microsoft Dynamics 365 for Operations and how they can be used.  
 author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-03 19 - 55 - 03
@@ -21,18 +21,18 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15191
-ms.assetid: 71086e35-339b-4ba7-baa2-d6f7b45bb82c
+ms.assetid: 89a918e8-59a4-4711-a2e9-b41989ddd0f1
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sigitac
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Budget planning data allocation
 
-This article describes the various allocation methods that are available in Microsoft Dynamics AX and how they can be used.  
+This article describes the various allocation methods that are available in Microsoft Dynamics 365 for Operations and how they can be used.  
 
 You can distribute the data in a budget plan in a number of ways to accurately portray the projected amounts.
 

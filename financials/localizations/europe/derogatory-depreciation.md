@@ -21,12 +21,12 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 30321
-ms.assetid: ae142e2c-c1ac-4e42-b181-68712d2c2b03
+ms.assetid: be90464e-2cce-445c-b95b-79ec559b411e
 ms.search.region: France
 # ms.search.industry: 
 ms.author: anasyash
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

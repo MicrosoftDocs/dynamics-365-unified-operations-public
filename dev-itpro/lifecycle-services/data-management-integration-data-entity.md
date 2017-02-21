@@ -21,11 +21,11 @@ ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26441
-ms.assetid: ba88c81a-b1a6-4d0e-8b26-ea7207005058
+ms.assetid: 8aa25787-5920-4277-acff-7011200133f4
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kuntalme
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

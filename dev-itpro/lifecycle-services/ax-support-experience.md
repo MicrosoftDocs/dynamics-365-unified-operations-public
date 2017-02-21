@@ -21,11 +21,11 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29531
-ms.assetid: ced05606-dcd6-4bd8-9905-503d84cc526a
+ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anupams
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -114,7 +114,7 @@ If you are on Microsoft Dynamics 365 for Operations platform update 4, or if you
                                           You should receive a confirmation message that states that the issue has been submitted to LCS. Users who are in the **Operations users** role are notified that a new issue has been submitted to LCS. To view the issue that was submitted, click the **Support** tile in the LCS project that is associated with this Dynamics AX instance.
 
 ## Create an issue in the Dynamics 365 for Operations client (Microsoft Dynamics 365 for Operations platform update 4 and platform update 3 KB 4010473)
-If you have not taken platform update 4 for Microsoft Dynamics 365 for Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft within the Dynamics 365 for Operations client. In Dynamics 365 for Operations, on the top bar, click **?**, and then click **Support**. [![wiki1](https://msdynamics.blob.core.windows.net/media/2016/01/Wiki1-1024x518.png)](./media/wiki1.png) **Note:** If you haven’t already connected to Lifecycle Services (LCS) before you will see a dialog to connect to LCS. Click the link to connect before proceeding. [![wiki2](https://msdynamics.blob.core.windows.net/media/2016/01/Wiki2.png)](https://msdynamics.blob.core.windows.net/media/2016/01/Wiki2.png)
+If you have not taken platform update 4 for Microsoft Dynamics 365 for Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft within the Dynamics 365 for Operations client. In Dynamics 365 for Operations, on the top bar, click **?**, and then click **Support**. [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) **Note:** If you haven’t already connected to Lifecycle Services (LCS) before you will see a dialog to connect to LCS. Click the link to connect before proceeding. [![wiki2](./media/wiki2.png)](./media/wiki2.png)
 
 ### Search for a fix
 

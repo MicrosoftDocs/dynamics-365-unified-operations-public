@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 223084
-ms.assetid: 08d6bb65-3bb8-4a24-accd-b1b37da02ee8
+ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

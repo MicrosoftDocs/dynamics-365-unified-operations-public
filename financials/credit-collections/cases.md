@@ -3,7 +3,7 @@
 
 title: Case management overview
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-11 23 - 25 - 17
 ms.topic: article
@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23541
-ms.assetid: ab2ac6b0-0880-4e4f-93df-3cae485517ca
+ms.assetid: 4aa0a2da-be45-4dc3-97bf-b84bcf83144c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

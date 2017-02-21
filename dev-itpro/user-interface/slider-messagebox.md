@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 64253
-ms.assetid: ec11f069-38fd-4a57-bdd2-26fae6fa4da0
+ms.assetid: ef0924d0-ee42-4b0d-8602-4dfe15454350
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aorth
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -45,7 +45,7 @@ In Microsoft Dynamics 365 for Operations, there are two new dialogs that replace
 The following sections discuss the specific goals for each concept.
 
 ## Slider
-The slider, or slider dialog, is a dialog box that "slides" in on top of the active page's content from the right edge of the screen. In the following screen shot, the slider is the white region that has the caption **Start rental** on the right side of the window. Notice that the area to the left of the slider is shaded to help the user understand that the page beneath the slider isn't currently available for interaction. [![slidermessagebox](https://msdynamics.blob.core.windows.net/media/2016/03/SliderMessageBox.png)](https://msdynamics.blob.core.windows.net/media/2016/03/SliderMessageBox.png) After a slider opens, the user can dismiss it in two ways:
+The slider, or slider dialog, is a dialog box that "slides" in on top of the active page's content from the right edge of the screen. In the following screen shot, the slider is the white region that has the caption **Start rental** on the right side of the window. Notice that the area to the left of the slider is shaded to help the user understand that the page beneath the slider isn't currently available for interaction. [![slidermessagebox](./media/slidermessagebox.png)](./media/slidermessagebox.png) After a slider opens, the user can dismiss it in two ways:
 
 -   Perform an action within the slider that causes the underlying form to dismiss itself. For example, click **Cancel**, or enter required information and then click **OK**.
 -   Click outside the slider in the shaded area to the left. This cancels the slider, and no further actions are performed.

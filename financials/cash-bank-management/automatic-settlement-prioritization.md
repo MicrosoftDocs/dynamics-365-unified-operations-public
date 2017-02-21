@@ -21,12 +21,12 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14531
-ms.assetid: 5da4af36-a527-4e18-9e2d-4f700129a669
+ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.version: AX 7.0.0
 
 This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
 
-You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or Microsoft Dynamics AX can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the **Prioritize settlement** option. All these options are part of the [settlement parameters](http://ax.help.dynamics.com/en/?p=246884) that are defined on the **Accounts receivable parameters** page. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:
+You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or Microsoft Dynamics 365 for Operations can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the **Prioritize settlement** option. All these options are part of the [settlement parameters](http://ax.help.dynamics.com/en/?p=246884) that are defined on the **Accounts receivable parameters** page. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:
 
 -   User-defined settlement priority
 -   Default automatic settlement

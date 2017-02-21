@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 266544
-ms.assetid: dd5ec315-7e81-423c-90c2-9f2d42f50498
+ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
-ms.dyn365.ops.intro: May-16
+ms.dyn365.ops.intro: 01-05-2016
 ms.dyn365.ops.version: AX 7.0.1
 
 ---
@@ -202,5 +202,5 @@ Activities for the peripheral simulator are logged within the peripheral simulat
 See also
 --------
 
-[Retail peripherals overview](http://ax.help.dynamics.com/en/wiki/retail-peripherals-overview/)
+[Retail peripherals overview](retail-peripherals-overview.md)
 

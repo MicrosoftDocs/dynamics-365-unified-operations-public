@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24491
-ms.assetid: 2c560012-1f8d-4e5f-a88e-78908e25572a
+ms.assetid: 6603a84c-00b2-4358-84a7-dd6fee3055ab
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

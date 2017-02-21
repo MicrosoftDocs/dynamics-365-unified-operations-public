@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: ESR customer payments import | Microsoft Docs
+title: ESR customer payments import
 description: This topic provides information about importing customer payments in the ESR format.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-19 17:07:48
+ms.date: 2016-12-19 17 - 07 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustPaymMode, LedgerJournalTransCustPaym
+ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264584
-ms.assetid: b03e298f-7594-4281-bd65-860bd974f2c9
-ms.region: Switzerland
-# ms.industry: 
+ms.assetid: 60c429b5-1d88-4fef-be6b-b8585e0e9ee7
+ms.search.region: Switzerland
+# ms.search.industry: 
 ms.author: v-lenest
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -42,13 +44,13 @@ Payment references should be printed on the payment slip after posting. You can 
 3.  The sales invoice number sequence should be in the correct format (it should not have symbols other than digits and it should not contain leading zeros).
 4.  The **Orange** format should be specified for the customer account in the **On a customer invoice** field on the **Invoice and delivery** tab.
 
-For more information, see [Payment slip report (Giro)](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/eur-payment-slip-report-giro).
+For more information, see [Payment slip report (Giro)](eur-payment-slip-report-giro.md).
 
 ## Import a payment file
 1.  Go to the **Payment journal** page
 2.  Click **Lines**.
 3.  Click **Functions** &gt; **Import payments**.
-4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. **Note**: Before you can complete this step, you must have already imported the **ESR (CH)** configurations from Lifecycle Services (LCS) and set up the ESR method of payment. For more information, see [File formats for method of payments](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/select-file-formats-for-the-method-of-payments).
+4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. **Note**: Before you can complete this step, you must have already imported the **ESR (CH)** configurations from Lifecycle Services (LCS) and set up the ESR method of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
 
 After you import the payment file, payment journal lines are created and marked for settlement with customer invoices based on the payment reference. If there are any fees specified for the bank account that are represented in the file, such as transactions between the main account and fee account, these fees will be added to the journal.
 

@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 204174
-ms.assetid: e919f61d-d3d4-4241-819b-87c7174ddaa3
+ms.assetid: cf5e5871-d3a9-4111-9181-68c4f38df286
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: yuyus
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -40,7 +40,7 @@ Understand mixed mode planning
 -   [Mixed mode planning: Combine discrete, process, and lean sourcing](mixed-mode-plan.md)
 -   [Lean manufacturing overview](lean-manufacturing-overview.md)
 -   [Activity-based subcontracting](activity-based-subcontracting.md)
--   [Manage subcontracting work in production](http://ax.help.dynamics.com/en/wiki/manage-subcontracting-work-in-production/)
+-   [Manage subcontracting work in production](manage-subcontract-work-production.md)
 
 ## Maintain master data
 -   [Lean manufacturing - Modeling the lean organization](lean-manufacturing-modeling-lean-organization.md)

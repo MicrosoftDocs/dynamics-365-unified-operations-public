@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Budgeting
+title: Data entities - Budgeting
 description: This article provides a list of the data entities that are available for the Budgeting functionality in Microsoft Dynamics AX.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 20 - 11
 ms.topic: reference
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96133
-ms.assetid: e1f3ea84-7fec-4c2f-b439-d3bbdd8a0623
+ms.assetid: bab5fb63-3e7b-4ddf-bc86-2a25d4a2f52c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Budgeting
+# Data entities - Budgeting
 
 This article provides a list of the data entities that are available for the Budgeting functionality in Microsoft Dynamics AX.
 

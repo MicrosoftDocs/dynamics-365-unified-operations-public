@@ -21,11 +21,11 @@ audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 192061
-ms.assetid: cd1a4d1e-0ec1-4022-923c-e32fe8f9d83f
+ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: donaldc
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

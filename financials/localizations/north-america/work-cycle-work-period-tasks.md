@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222654
-ms.assetid: 335347d9-9c55-42d1-85b4-e0112fbd15f7
+ms.assetid: 0411cb4d-f83a-4c0f-b8a3-9ba152b66e0d
 ms.search.region: USA
 # ms.search.industry: 
 ms.author: brpotter
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

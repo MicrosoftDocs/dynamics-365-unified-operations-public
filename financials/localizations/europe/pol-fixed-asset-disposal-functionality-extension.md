@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed assets disposal for Poland | Microsoft Docs
+title: Fixed assets disposal for Poland
 description: This topic provides information about fixed asset disposal functionality for users in legal entities in Poland. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-11 14:59:08
+ms.date: 2017-01-11 14 - 59 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
+ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 81
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266964
-ms.assetid: 6d9f79ef-a880-4069-93d0-05fcab115ced
-ms.region: Poland
-# ms.industry: 
+ms.assetid: 99f3a20c-2e2e-4fc7-b846-3d86802174c4
+ms.search.region: Poland
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: v-elgolu
 
 This topic provides information about fixed asset disposal functionality for users in legal entities in Poland. 
 
-Fixed assets can be sold using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information about fixed asset disposal, see [Fixed asset disposal posting accounts](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/fixed-asset-disposal-posting-accounts). For users in legal entities in Poland, the fixed assets disposal functionality extension includes:
+Fixed assets can be sold using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information about fixed asset disposal, see [Fixed asset disposal posting accounts](fixed-asset-disposal-posting-accounts.md). For users in legal entities in Poland, the fixed assets disposal functionality extension includes:
 
 -   A template for asset disposal on the **Fixed asset posting profiles** page.
 -   Two additional parameters on the **Permission to sell fixed asset** page. A **Check whether asset can be sold** check box and a **Permission to sell fixed asset** check box on the **Reference and notes** FastTab of a fixed asset. If the **Check whether asset can be sold** check box is selected, only assets marked as **Permission to sell fixed asset** can be sold.

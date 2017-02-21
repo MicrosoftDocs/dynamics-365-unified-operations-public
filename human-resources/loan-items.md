@@ -21,11 +21,11 @@ ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3581
-ms.assetid: 70dadeb2-4e3e-497c-92e6-06041c5100c4
+ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kherr
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

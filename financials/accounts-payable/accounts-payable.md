@@ -3,7 +3,7 @@
 
 title: Accounts payable home page
 description: This topic provides a list of the help topics and other resources that are available for Accounts payable.
-author: annbe
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-11 20 - 01 - 24
 ms.topic: index-page
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21901
-ms.assetid: 5299d46e-31db-4050-8e83-b304368c7f27
+ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: May-16
-ms.dyn365.version: AX 7.0.1
+ms.author: twheeloc
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.version: AX 7.0.1
 
 This topic provides a list of the help topics and other resources that are available for Accounts payable.
 
-You can enter vendor invoices manually or receive them electronically through a data entity. After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the Vendor invoice page. You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.
+You can enter vendor invoices manually or receive them electronically through a data entity. After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the **Vendor invoice** page. You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.
 
 -   [Accounts payable setup overview](accounts-payable-overview.md)
 -   [Accounts payable invoice matching](http://ax.help.dynamics.com/en/wiki/accounts-payable-invoice-matching-2/)
@@ -66,5 +66,4 @@ You can enter vendor invoices manually or receive them electronically through a 
 -   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
 -   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account).
 
- 
 

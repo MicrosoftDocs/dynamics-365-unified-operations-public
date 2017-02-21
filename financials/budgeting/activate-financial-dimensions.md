@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
-ms.assetid: 8f28e9e4-e2a0-4687-a129-e921bd2115b8
+ms.assetid: dd1dd40e-6bff-47b5-bf2e-55b9a4dcde1d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.version: AX 7.0.0
 
 This topic contains information about the activating financial dimension process.
 
-When a new financial dimension is added to the system, users are prompted with a message stating that the financial dimension is not consumable until Dimension activation is run. [![ActWiki1](./media/actwiki1-1024x461.png)](./media/actwiki1.png) When Dimension activation is run, a database schema change occurs in the **DimensionAttributeValueCombination** and **DimensionAttributeValueSet** tables. The schema change adds a new column to the table for each financial dimension. During this process, a schema lock is placed on the two tables by Microsoft SQL Server so that the table can be updated. When the process is complete, the tables are no longer locked. If this process is attempted when a journal is open, then a deadlock may occur. If this happens, the user could potentially receive a metadata error from the server. Users can refresh the session to get the updated metadata. The message the user receives states:
+When a new financial dimension is added to the system, users are prompted with a message stating that the financial dimension is not consumable until Dimension activation is run. When Dimension activation is run, a database schema change occurs in the **DimensionAttributeValueCombination** and **DimensionAttributeValueSet** tables. The schema change adds a new column to the table for each financial dimension. During this process, a schema lock is placed on the two tables by Microsoft SQL Server so that the table can be updated. When the process is complete, the tables are no longer locked. If this process is attempted when a journal is open, then a deadlock may occur. If this happens, the user could potentially receive a metadata error from the server. Users can refresh the session to get the updated metadata. The message the user receives states:
 
 -   You will not be able to consume the financial dimension anywhere until the process is run. This includes adding it to account structures.
 -   A schema change occurs, therefore a special privilege, the Dimension activation privilege is required to run activation.

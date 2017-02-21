@@ -21,11 +21,11 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31021
-ms.assetid: e40667ff-9c71-4cbe-95be-a04addecf3d2
+ms.assetid: 4246f101-d8f6-4d20-9844-d24678a15bca
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cwesene
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

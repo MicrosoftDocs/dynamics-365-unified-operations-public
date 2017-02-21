@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: VAT statement details for Estonia | Microsoft Docs
+title: VAT statement details for Estonia
 description: This topic explains how to set up a VAT statement for legal entities in Estonia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-11 13:48:37
+ms.date: 2017-01-11 13 - 48 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TaxPeriod, TaxReportCollection, TaxReportVoucher
+ms.search.form: TaxPeriod, TaxReportCollection, TaxReportVoucher
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 81
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266904
-ms.assetid: 2be1be82-1bf9-4c68-9f62-645b993fef3f
-ms.region: Estonia
-# ms.industry: 
+ms.assetid: 7a804f8e-3595-463c-8371-21425c992c91
+ms.search.region: Estonia
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: v-elgolu
 
 This topic explains how to set up a VAT statement for legal entities in Estonia.
 
-This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Estonia only. For more information about the setup of VAT statements, see [(EU) VAT reporting](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/eu-vat-reporting).
+This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Estonia only. For more information about the setup of VAT statements, see [(EU) VAT reporting](eu-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the correct format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page, in the **Report layout** field, select **Estonian report layout**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.

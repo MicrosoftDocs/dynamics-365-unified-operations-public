@@ -21,11 +21,11 @@ ms.reviewer: RobinARH
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261064
-ms.assetid: 14851247-744c-4412-8b41-6e955027d9e3
+ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---
@@ -105,5 +105,5 @@ See also
 
 [Add dimensions to Microsoft Excel templates](add-dimensions-excel-templates.md)
 
-[Extensibility home page](http://ax.help.dynamics.com/en/wiki/extensibility-home-page/)
+[Extensibility home page](extensibility-home-page.md)
 

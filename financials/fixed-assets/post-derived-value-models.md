@@ -21,12 +21,12 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3421
-ms.assetid: 5abdc785-1da7-4b29-acaf-c2924774e1e4
+ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -63,5 +63,5 @@ The books then can be attached to specific fixed assets. When an acquisition is 
 See also
 --------
 
-[Derived value models](http://ax.help.dynamics.com/wiki/derived-value-models/)
+[Derived books](http://ax.help.dynamics.com/wiki/derived-value-models/)
 

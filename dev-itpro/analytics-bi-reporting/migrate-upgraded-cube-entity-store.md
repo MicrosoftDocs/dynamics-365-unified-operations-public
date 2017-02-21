@@ -21,11 +21,11 @@ audience: Developer, IT Pro
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 94203
-ms.assetid: f52c713d-a3ee-48b3-8ed4-428c84f3fca8
+ms.assetid: e992cdd8-abe8-42d0-97ad-6165822abbba
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.ops.intro: May-16
+ms.dyn365.ops.intro: 01-05-2016
 ms.dyn365.ops.version: Platform update 1
 
 ---

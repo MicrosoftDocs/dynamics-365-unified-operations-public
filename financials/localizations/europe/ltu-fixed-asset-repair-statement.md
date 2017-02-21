@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed asset repair statement for Lithuania | Microsoft Docs
+title: Fixed asset repair statement for Lithuania
 description: This topic explains how to submit repair information for a fixed asset and generate a fixed asset repair report. Repair information must be stored for all fixed assets. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-12 22:45:40
+ms.date: 2016-12-12 22 - 45 - 40
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262724
-ms.assetid: 26de01d2-2570-48b2-9f31-79f55437cd28
-ms.region: Lithuania
-# ms.industry: 
+ms.assetid: 59259905-5dc3-4e15-9a04-ab38bb58a37b
+ms.search.region: Lithuania
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

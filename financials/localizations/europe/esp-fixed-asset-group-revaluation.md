@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed asset revaluation groups | Microsoft Docs
+title: Fixed asset revaluation groups
 description: This topic provides information about fixed asset revaluation groups for Spain.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-21 01:45:01
+ms.date: 2016-12-21 01 - 45 - 01
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264994
-ms.assetid: 2bf1a59b-a74f-4e50-8aad-43f0677ed040
-ms.region: Spain
-# ms.industry: 
+ms.assetid: 50ed4cae-7606-4ded-a07b-992848ece5ae
+ms.search.region: Spain
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

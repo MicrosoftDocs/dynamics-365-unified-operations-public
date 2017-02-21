@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: VAT statement for the Czech Republic | Microsoft Docs
+title: VAT statement for the Czech Republic
 description: Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-14 17:39:37
+ms.date: 2016-12-14 17 - 39 - 37
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
+ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 81
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263614
-ms.assetid: f7dd62d3-038d-4dc7-be50-1e53f926f69c
-ms.region: Czech Republic
-# ms.industry: 
+ms.assetid: eef73389-e480-451d-a43d-562429b41742
+ms.search.region: Czech Republic
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -32,7 +34,7 @@ ms.author: v-elgolu
 
 Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 
-This topic includes country-specific information about VAT statement setup for users in legal entities in the Czech Republic. For more information about general VAT reporting, see [VAT reporting](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/eu-vat-reporting).
+This topic includes country-specific information about VAT statement setup for users in legal entities in the Czech Republic. For more information about general VAT reporting, see [VAT reporting](eu-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the specific tax authority, you must set up the report layout for the sales tax authorities.
@@ -144,7 +146,7 @@ For users in legal entities in the Czech Republic, according VAT declaration i
 | 8151                         | ř.815 - Dodání zboží prostřední osobou                  |
 
 ## Configure the ER model and format for the report
-You can use the **Electronic reporting** workspace to review or change the VAT statement configuration. Go to the **Configurations** page and select **VAT declaration model** from the list of models. This model is common for Austria, Czech Republic, Estonia, Finland, Latvia, and Lithuania and it aggregates tax data needed for VAT declaration. To review or change the VAT statement format for users in legal entities in the Czech Republic, select **VAT declaration (CZ)**, which is a child of **VAT declaration model** in the model tree. Select it and click **Designer** on the Action Pane to review or change the format. For more information, see [Electronic reporting.](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-ger)
+You can use the **Electronic reporting** workspace to review or change the VAT statement configuration. Go to the **Configurations** page and select **VAT declaration model** from the list of models. This model is common for Austria, Czech Republic, Estonia, Finland, Latvia, and Lithuania and it aggregates tax data needed for VAT declaration. To review or change the VAT statement format for users in legal entities in the Czech Republic, select **VAT declaration (CZ)**, which is a child of **VAT declaration model** in the model tree. Select it and click **Designer** on the Action Pane to review or change the format. For more information, see [Electronic reporting.](general-electronic-reporting.md)
 
 ## Generate the VAT statement
 To generate a VAT XML file, open the **Sales tax payments** page, select vouchers, and then click **Export VAT XML file**.

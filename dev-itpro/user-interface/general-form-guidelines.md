@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14701
-ms.assetid: caac4997-33be-4d89-9779-d6d3bd873edc
+ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -158,7 +158,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
     -   From the least risk to the most risk
 
 ## Check box and toggle guidelines
-Toggle buttons are typically used instead of traditional check boxes. [![checkboxtoggle](https://msdynamics.blob.core.windows.net/media/2015/12/CheckboxToggle.jpg)](https://msdynamics.blob.core.windows.net/media/2015/12/CheckboxToggle.jpg)  
+Toggle buttons are typically used instead of traditional check boxes. [![checkboxtoggle](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
 -   Follow all [standard Microsoft guidelines for check boxes.](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511452.aspx) Specifically, observe these guidelines:
     -   By default, use toggle buttons instead of check boxes in forms. The label must follow the Microsoft guidelines for check box labels.

@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220804
-ms.assetid: aa4d9a4e-02cc-41ea-a15e-ba738c4a74de
+ms.assetid: 88822f78-4de5-462c-a55f-1f766c572719
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: perlynne
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

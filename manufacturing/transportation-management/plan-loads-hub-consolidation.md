@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 92273
-ms.assetid: 60dd9022-7965-4f8b-83f4-79226aa87d20
+ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: yuyus
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

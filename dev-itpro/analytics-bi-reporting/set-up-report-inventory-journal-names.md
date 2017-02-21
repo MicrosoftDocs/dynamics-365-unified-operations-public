@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265144
-ms.assetid: ee5cd559-229c-45dd-9f64-d2a95767f9f0
+ms.assetid: 0f07f62f-1053-46e9-b235-a7b38cbda409
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 # ms.search.industry: 
 ms.author: v-lenest
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

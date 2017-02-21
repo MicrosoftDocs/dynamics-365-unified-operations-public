@@ -21,11 +21,11 @@ audience: Application User, Developer, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 21761
-ms.assetid: 0e25e276-0e38-4180-8d8d-4aab10412f40
+ms.assetid: c395e9ff-ea43-42fe-a584-145d6ce10ae3
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -37,7 +37,7 @@ This page points to resources that will help you use the Microsoft Dynamics 365 
 Onboarding
 ----------
 
-The following resources provide an overview of the Lifecycle Services and how to work with your partner to get onboarded to Dynamics 365 for Operations. [Microsoft FastTrack for Dynamics 365 overview](http://ax.help.dynamics.com/en/wiki/fasttrack-dynamics-365-overview/) [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](lcs-works-lcs.md) [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations partners](getting-started-lcs.md) [Sign up for a subscription](sign-up-preview-subscription.md) [Microsoft Dynamics Lifecycle Services User Guide](lcs-user-guide.md) [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](csp-download-customersource.md)
+The following resources provide an overview of the Lifecycle Services and how to work with your partner to get onboarded to Dynamics 365 for Operations. [Microsoft FastTrack for Dynamics 365 overview](fasttrack-dynamics-365-overview.md) [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](lcs-works-lcs.md) [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations partners](getting-started-lcs.md) [Sign up for a subscription](sign-up-preview-subscription.md) [Microsoft Dynamics Lifecycle Services User Guide](lcs-user-guide.md) [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](csp-download-customersource.md)
 
 ## User interface
 The following resources provide information about the Dynamics 365 for Operations user experience. For example, these resources will help you navigate, personalize, and use Dynamics 365 for Operations more efficiently.
@@ -86,5 +86,5 @@ See also
 
 [New or updated Task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 
-[New or updated Task guides (November 2016)](http://ax.help.dynamics.com/en/wiki/new-or-updated-task-guides-available-november-2016/)
+[New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 

@@ -21,12 +21,12 @@ ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27311
-ms.assetid: 2183adc5-12e3-4b80-ae4f-0cb870df0f36
+ms.assetid: 9d61d1d8-1672-4bd0-ae0d-605b09240890
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

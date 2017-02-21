@@ -1,0 +1,737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ERSolutionVersion DateTime="2016-12-29T07:52:03" Number="6" PublicVersionNumber="6" VersionStatus="1">
+  <Solution>
+    <ERSolution ID.="{AF5CCDAC-F728-4609-8C8B-A4B30B0C0AA0}" Name="1099 Payments model">
+      <Labels>
+        <ERClassList>
+          <Contents.>
+            <ERLabel LabelId="GR1" LabelValue="Wrong vendor account ‘%1’ has been found." LanguageId="en-us" />
+            <ERLabel LabelId="GR2" LabelValue="Wrong 1099 box code ‘%1’ has been found." LanguageId="en-us" />
+            <ERLabel LabelId="GR3" LabelValue="Wrong country code ‘%1’ has been found." LanguageId="en-us" />
+            <ERLabel LabelId="GR4" LabelValue="Wrong state code ‘%1’ has been found." LanguageId="en-us" />
+            <ERLabel LabelId="GR5" LabelValue="Wrong state code ‘%1’ for the country code ‘%2’ has been found." LanguageId="en-us" />
+            <ERLabel LabelId="GR6" LabelValue="The flag ‘Report 1099’ is off for the vendor ‘%1’." LanguageId="en-us" />
+            <ERLabel LabelId="RP1" LabelValue="The transaction with the number '%1' contains no country code. The default code  &quot;%2' has been used." LanguageId="en-us" />
+          </Contents.>
+        </ERClassList>
+      </Labels>
+      <Vendor>
+        <ERVendor Name="Litware, Inc." Url="http://www.litware.com" />
+      </Vendor>
+      <Contents.>
+        <Ref. ID.="{2396D330-527D-4407-8F2A-04BD2F401EA5}" />
+        <Ref. ID.="{1DA94729-9E8E-43E8-A131-B10FDBF221BD}" />
+      </Contents.>
+    </ERSolution>
+  </Solution>
+  <Contents.>
+    <ERDataModelVersion ID.="{2396D330-527D-4407-8F2A-04BD2F401EA5},3" DateTime="2016-12-28T06:11:43" Number="3">
+      <Model>
+        <ERDataModel ID.="{2396D330-527D-4407-8F2A-04BD2F401EA5}" Description="A sample model to import vendors’ transactions from files" Name="1099 Payments model">
+          <Contents.>
+            <ERDataContainerDescriptor ID.="1099-MISC" Description="Root item to import data of the vendor settlement for 1099’s forms." IsRoot="1" Name="1099-MISC">
+              <Contents.>
+                <ERDataContainerDescriptorItem Description="Transactions list" IsTypeDescriptorHost="1" Name="Transactions" Type="11" TypeDescriptor="SummaryLine_1" />
+              </Contents.>
+            </ERDataContainerDescriptor>
+            <ERDataContainerDescriptor ID.="SummaryLine_1" Name="SummaryLine_1">
+              <Contents.>
+                <ERDataContainerDescriptorItem Description="Country code" Name="CountryRegion" Type="6" />
+                <ERDataContainerDescriptorItem Description="Transaction date" Name="Date" Type="7" />
+                <ERDataContainerDescriptorItem Description="Settled federal 1099 amount" Name="SettleAmount" Type="5" />
+                <ERDataContainerDescriptorItem Description="State code" Name="State" Type="6" />
+                <ERDataContainerDescriptorItem Description="1099 box code" Name="TaxCode" Type="6" />
+                <ERDataContainerDescriptorItem Description="Vendor account" Name="VendAccount" Type="6" />
+              </Contents.>
+            </ERDataContainerDescriptor>
+          </Contents.>
+        </ERDataModel>
+      </Model>
+    </ERDataModelVersion>
+    <ERModelMappingVersion ID.="{1DA94729-9E8E-43E8-A131-B10FDBF221BD},4" DateTime="2016-12-29T07:52:03" Number="4">
+      <Mapping>
+        <ERModelMapping ID.="{1DA94729-9E8E-43E8-A131-B10FDBF221BD}" Description="For 1099 manual transactions import" Direction="1" Model="{2396D330-527D-4407-8F2A-04BD2F401EA5}" ModelName="1099 Payments model" ModelVersion="{2396D330-527D-4407-8F2A-04BD2F401EA5},3" Name="For 1099 manual transactions import">
+          <Binding>
+            <ERDataContainerBinding>
+              <Contents.>
+                <ERDataContainerPathBinding ExpressionAsString="model.Failed" Path="failed">
+                  <Expression>
+                    <ERExpressionListItemValue ItemPath="model/Failed" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+                <ERDataContainerPathBinding ExpressionAsString="model.Validated" Path="tax1099trans">
+                  <Expression>
+                    <ERExpressionListItemValue ItemPath="model/Validated" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+                <ERDataContainerPathBinding ExpressionAsString="model.Validated.'$refs'.box1099.RecId" Path="tax1099trans/Tax1099Fields">
+                  <Expression>
+                    <ERExpressionInt64ItemValue ItemPath="model/Validated/$refs/box1099/RecId" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+                <ERDataContainerPathBinding ExpressionAsString="model.Validated.CountryRegion" Path="tax1099trans/Tax1099CountryRegion">
+                  <Expression>
+                    <ERExpressionStringItemValue ItemPath="model/Validated/CountryRegion" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+                <ERDataContainerPathBinding ExpressionAsString="model.Validated.Date" Path="tax1099trans/TransDate">
+                  <Expression>
+                    <ERExpressionDateItemValue ItemPath="model/Validated/Date" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+                <ERDataContainerPathBinding ExpressionAsString="axenumNoYes.Yes" Path="tax1099trans/ManualTransaction">
+                  <Expression>
+                    <ERExpressionEnumItemValue ItemPath="axenumNoYes/Yes" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+                <ERDataContainerPathBinding ExpressionAsString="model.Validated.State" Path="tax1099trans/Tax1099State">
+                  <Expression>
+                    <ERExpressionStringItemValue ItemPath="model/Validated/State" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+                <ERDataContainerPathBinding ExpressionAsString="model.Validated.VendAccount" Path="tax1099trans/VendAccount">
+                  <Expression>
+                    <ERExpressionStringItemValue ItemPath="model/Validated/VendAccount" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+                <ERDataContainerPathBinding ExpressionAsString="model.Validated.SettleAmount" Path="tax1099trans/SettleTax1099Amount">
+                  <Expression>
+                    <ERExpressionRealItemValue ItemPath="model/Validated/SettleAmount" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+                <ERDataContainerPathBinding ExpressionAsString="voucher" Path="tax1099trans/Voucher">
+                  <Expression>
+                    <ERExpressionStringItemValue ItemPath="voucher" />
+                  </Expression>
+                </ERDataContainerPathBinding>
+              </Contents.>
+            </ERDataContainerBinding>
+          </Binding>
+          <Datasource>
+            <ERModelDefinition>
+              <PathsToCache>
+                <ERPathsToCache />
+              </PathsToCache>
+              <Contents.>
+                <ERModelItemDefinition>
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="model">
+                      <ValueSource>
+                        <ERModelDataSourceHandler DataContainerDescriptorName="1099-MISC" ModelGUID="{2396D330-527D-4407-8F2A-04BD2F401EA5}" />
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition>
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="axenumNoYes">
+                      <ValueSource>
+                        <EREnumDataSourceHandler EnumName="NoYes" />
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="Validated">
+                      <ValueSource>
+                        <ERModelExpressionItem ExpressionAsString="WHERE(model.Transactions, NOT(model.Transactions.'$failed'))" SyntaxVersion="1">
+                          <Expression>
+                            <ERExpressionListWhere>
+                              <Condition>
+                                <ERExpressionNot>
+                                  <Input>
+                                    <erExpressionBooleanItemValue ItemPath="model/Transactions/$failed" />
+                                  </Input>
+                                </ERExpressionNot>
+                              </Condition>
+                              <List>
+                                <ERExpressionListItemValue ItemPath="model/Transactions" />
+                              </List>
+                            </ERExpressionListWhere>
+                          </Expression>
+                        </ERModelExpressionItem>
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition>
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="vendors">
+                      <ValueSource>
+                        <ERTableDataSourceHandler Table="VendTable" />
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model/Transactions">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="$failed">
+                      <ValueSource>
+                        <ERModelExpressionItem ExpressionAsString="IF(&#xA;  OR(&#xA;    ISEMPTY(model.Transactions.'$refs'.vendor),&#xA;    ISEMPTY(model.Transactions.'$refs'.vendor1099),&#xA;    ISEMPTY(model.Transactions.'$refs'.box1099),&#xA;    ISEMPTY(model.Transactions.'$refs'.country),&#xA;    ISEMPTY(model.Transactions.'$refs'.state),&#xA;    ISEMPTY(model.Transactions.'$refs'.location)&#xA;       ), true, false)&#xA;" SyntaxVersion="1">
+                          <Expression>
+                            <ERExpressionGenericIf>
+                              <Condition>
+                                <ERExpressionOr>
+                                  <Contents.>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Transactions/$refs/vendor" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Transactions/$refs/vendor1099" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Transactions/$refs/box1099" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Transactions/$refs/country" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Transactions/$refs/state" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Transactions/$refs/location" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                  </Contents.>
+                                </ERExpressionOr>
+                              </Condition>
+                              <FalseValue>
+                                <ERExpressionBooleanConstant />
+                              </FalseValue>
+                              <TrueValue>
+                                <ERExpressionBooleanConstant Value="1" />
+                              </TrueValue>
+                            </ERExpressionGenericIf>
+                          </Expression>
+                        </ERModelExpressionItem>
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition>
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="tax1099">
+                      <ValueSource>
+                        <ERTableDataSourceHandler Table="Tax1099Fields" />
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model/Transactions">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="$refs">
+                      <ValueSource>
+                        <EREmptyContainerDataSourceHandler />
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model/Transactions/$refs">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="vendor">
+                      <ValueSource>
+                        <ERModelExpressionItem ExpressionAsString="FILTER(vendors, vendors.AccountNum = model.Transactions.VendAccount)" SyntaxVersion="1">
+                          <Expression>
+                            <ERExpressionListFilter>
+                              <Condition>
+                                <ERExpressionStringEquals>
+                                  <FirstExpression>
+                                    <ERExpressionStringItemValue ItemPath="vendors/AccountNum" />
+                                  </FirstExpression>
+                                  <SecondExpression>
+                                    <ERExpressionStringItemValue ItemPath="model/Transactions/VendAccount" />
+                                  </SecondExpression>
+                                </ERExpressionStringEquals>
+                              </Condition>
+                              <List>
+                                <ERExpressionListItemValue ItemPath="vendors" />
+                              </List>
+                            </ERExpressionListFilter>
+                          </Expression>
+                        </ERModelExpressionItem>
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model/Transactions/$refs">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="box1099">
+                      <ValueSource>
+                        <ERModelExpressionItem ExpressionAsString="FILTER(tax1099, tax1099.Tax1099Box = model.Transactions.TaxCode)" SyntaxVersion="1">
+                          <Expression>
+                            <ERExpressionListFilter>
+                              <Condition>
+                                <ERExpressionStringEquals>
+                                  <FirstExpression>
+                                    <ERExpressionStringItemValue ItemPath="tax1099/Tax1099Box" />
+                                  </FirstExpression>
+                                  <SecondExpression>
+                                    <ERExpressionStringItemValue ItemPath="model/Transactions/TaxCode" />
+                                  </SecondExpression>
+                                </ERExpressionStringEquals>
+                              </Condition>
+                              <List>
+                                <ERExpressionListItemValue ItemPath="tax1099" />
+                              </List>
+                            </ERExpressionListFilter>
+                          </Expression>
+                        </ERModelExpressionItem>
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="Failed">
+                      <ValueSource>
+                        <ERModelExpressionItem ExpressionAsString="WHERE(model.Transactions, model.Transactions.'$failed')" SyntaxVersion="1">
+                          <Expression>
+                            <ERExpressionListWhere>
+                              <Condition>
+                                <erExpressionBooleanItemValue ItemPath="model/Transactions/$failed" />
+                              </Condition>
+                              <List>
+                                <ERExpressionListItemValue ItemPath="model/Transactions" />
+                              </List>
+                            </ERExpressionListWhere>
+                          </Expression>
+                        </ERModelExpressionItem>
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition>
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="countries">
+                      <ValueSource>
+                        <ERTableDataSourceHandler Table="LogisticsAddressCountryRegion" />
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model/Transactions/$refs">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="country">
+                      <ValueSource>
+                        <ERModelExpressionItem ExpressionAsString="FILTER(countries, countries.CountryRegionId = model.Transactions.CountryRegion)" SyntaxVersion="1">
+                          <Expression>
+                            <ERExpressionListFilter>
+                              <Condition>
+                                <ERExpressionStringEquals>
+                                  <FirstExpression>
+                                    <ERExpressionStringItemValue ItemPath="countries/CountryRegionId" />
+                                  </FirstExpression>
+                                  <SecondExpression>
+                                    <ERExpressionStringItemValue ItemPath="model/Transactions/CountryRegion" />
+                                  </SecondExpression>
+                                </ERExpressionStringEquals>
+                              </Condition>
+                              <List>
+                                <ERExpressionListItemValue ItemPath="countries" />
+                              </List>
+                            </ERExpressionListFilter>
+                          </Expression>
+                        </ERModelExpressionItem>
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition>
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="states">
+                      <ValueSource>
+                        <ERTableDataSourceHandler Table="LogisticsAddressState" />
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model/Transactions/$refs">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="state">
+                      <ValueSource>
+                        <ERModelExpressionItem ExpressionAsString="FILTER(states, states.StateId = model.Transactions.State)" SyntaxVersion="1">
+                          <Expression>
+                            <ERExpressionListFilter>
+                              <Condition>
+                                <ERExpressionStringEquals>
+                                  <FirstExpression>
+                                    <ERExpressionStringItemValue ItemPath="states/StateId" />
+                                  </FirstExpression>
+                                  <SecondExpression>
+                                    <ERExpressionStringItemValue ItemPath="model/Transactions/State" />
+                                  </SecondExpression>
+                                </ERExpressionStringEquals>
+                              </Condition>
+                              <List>
+                                <ERExpressionListItemValue ItemPath="states" />
+                              </List>
+                            </ERExpressionListFilter>
+                          </Expression>
+                        </ERModelExpressionItem>
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model/Transactions/$refs">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="location">
+                      <ValueSource>
+                        <ERModelExpressionItem ExpressionAsString="FILTER(states, AND(states.CountryRegionId = model.Transactions.CountryRegion, states.StateId = model.Transactions.State))" SyntaxVersion="1">
+                          <Expression>
+                            <ERExpressionListFilter>
+                              <Condition>
+                                <ERExpressionAnd>
+                                  <Contents.>
+                                    <ERExpressionStringEquals>
+                                      <FirstExpression>
+                                        <ERExpressionStringItemValue ItemPath="states/CountryRegionId" />
+                                      </FirstExpression>
+                                      <SecondExpression>
+                                        <ERExpressionStringItemValue ItemPath="model/Transactions/CountryRegion" />
+                                      </SecondExpression>
+                                    </ERExpressionStringEquals>
+                                    <ERExpressionStringEquals>
+                                      <FirstExpression>
+                                        <ERExpressionStringItemValue ItemPath="states/StateId" />
+                                      </FirstExpression>
+                                      <SecondExpression>
+                                        <ERExpressionStringItemValue ItemPath="model/Transactions/State" />
+                                      </SecondExpression>
+                                    </ERExpressionStringEquals>
+                                  </Contents.>
+                                </ERExpressionAnd>
+                              </Condition>
+                              <List>
+                                <ERExpressionListItemValue ItemPath="states" />
+                              </List>
+                            </ERExpressionListFilter>
+                          </Expression>
+                        </ERModelExpressionItem>
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition ParentPath="model/Transactions/$refs">
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Name="vendor1099">
+                      <ValueSource>
+                        <ERModelExpressionItem ExpressionAsString="FILTER(vendors, AND(vendors.AccountNum = model.Transactions.VendAccount, vendors.Tax1099Reports = axenumNoYes.Yes))" SyntaxVersion="1">
+                          <Expression>
+                            <ERExpressionListFilter>
+                              <Condition>
+                                <ERExpressionAnd>
+                                  <Contents.>
+                                    <ERExpressionStringEquals>
+                                      <FirstExpression>
+                                        <ERExpressionStringItemValue ItemPath="vendors/AccountNum" />
+                                      </FirstExpression>
+                                      <SecondExpression>
+                                        <ERExpressionStringItemValue ItemPath="model/Transactions/VendAccount" />
+                                      </SecondExpression>
+                                    </ERExpressionStringEquals>
+                                    <ERExpressionEnumEquals>
+                                      <FirstExpression>
+                                        <ERExpressionEnumItemValue ItemPath="vendors/Tax1099Reports" />
+                                      </FirstExpression>
+                                      <SecondExpression>
+                                        <ERExpressionEnumItemValue ItemPath="axenumNoYes/Yes" />
+                                      </SecondExpression>
+                                    </ERExpressionEnumEquals>
+                                  </Contents.>
+                                </ERExpressionAnd>
+                              </Condition>
+                              <List>
+                                <ERExpressionListItemValue ItemPath="vendors" />
+                              </List>
+                            </ERExpressionListFilter>
+                          </Expression>
+                        </ERModelExpressionItem>
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+                <ERModelItemDefinition>
+                  <ValueDefinition>
+                    <ERModelItemValueDefinition Label="Enter voucher id" Name="voucher">
+                      <ValueSource>
+                        <ERUserParameterDataSourceHandler ExtendedDataTypeName="Description" />
+                      </ValueSource>
+                    </ERModelItemValueDefinition>
+                  </ValueDefinition>
+                </ERModelItemDefinition>
+              </Contents.>
+            </ERModelDefinition>
+          </Datasource>
+          <DestinationDefinition>
+            <ERMappingDestinationDefinition>
+              <Contents.>
+                <ERTableDestination Name="failed" Table="VendSettlementTax1099Entity" />
+                <ERTableDestination IsIntegrationPoint="1" Name="tax1099trans" Table="VendSettlementTax1099" />
+              </Contents.>
+            </ERMappingDestinationDefinition>
+          </DestinationDefinition>
+          <Validations>
+            <ERDataContainerBinding>
+              <Contents.>
+                <ERDataContainerPathValidationBinding ExpressionAsString="Mapping validations" Path="failed">
+                  <Expression>
+                    <ERExpressionValidationConditions>
+                      <Contents.>
+                        <ERExpressionValidationCondition ID.="{2E2BA87F-73CB-4CEC-8ACB-9B5B90818A5D}" PostAction="1">
+                          <ConditionHost>
+                            <ERExpressionBooleanHost ExpressionAsString="NOT(ISEMPTY(model.Failed.'$refs'.vendor))" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionNot>
+                                  <Input>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Failed/$refs/vendor" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                  </Input>
+                                </ERExpressionNot>
+                              </Expression>
+                            </ERExpressionBooleanHost>
+                          </ConditionHost>
+                          <MessageHost>
+                            <ERExpressionStringHost ExpressionAsString="FORMAT(@&quot;GER_LABEL:GR1&quot;, model.Failed.VendAccount)" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionStringFormat>
+                                  <Contents.>
+                                    <ERExpressionStringLabel>
+                                      <LabelId>
+                                        <ERExpressionStringConstant Value="GER_LABEL:GR1" />
+                                      </LabelId>
+                                    </ERExpressionStringLabel>
+                                    <ERExpressionStringItemValue ItemPath="model/Failed/VendAccount" />
+                                  </Contents.>
+                                </ERExpressionStringFormat>
+                              </Expression>
+                            </ERExpressionStringHost>
+                          </MessageHost>
+                        </ERExpressionValidationCondition>
+                        <ERExpressionValidationCondition ID.="{B176AAB3-DDDE-4507-9F3E-4396EE1045A6}" PostAction="1">
+                          <ConditionHost>
+                            <ERExpressionBooleanHost ExpressionAsString="NOT(ISEMPTY(model.Failed.'$refs'.box1099))" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionNot>
+                                  <Input>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Failed/$refs/box1099" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                  </Input>
+                                </ERExpressionNot>
+                              </Expression>
+                            </ERExpressionBooleanHost>
+                          </ConditionHost>
+                          <MessageHost>
+                            <ERExpressionStringHost ExpressionAsString="FORMAT(@&quot;GER_LABEL:GR2&quot;, model.Failed.TaxCode)" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionStringFormat>
+                                  <Contents.>
+                                    <ERExpressionStringLabel>
+                                      <LabelId>
+                                        <ERExpressionStringConstant Value="GER_LABEL:GR2" />
+                                      </LabelId>
+                                    </ERExpressionStringLabel>
+                                    <ERExpressionStringItemValue ItemPath="model/Failed/TaxCode" />
+                                  </Contents.>
+                                </ERExpressionStringFormat>
+                              </Expression>
+                            </ERExpressionStringHost>
+                          </MessageHost>
+                        </ERExpressionValidationCondition>
+                        <ERExpressionValidationCondition ID.="{6F2BAC41-0F89-4E70-8F21-85B3887BACE6}" PostAction="1">
+                          <ConditionHost>
+                            <ERExpressionBooleanHost ExpressionAsString="NOT(ISEMPTY(model.Failed.'$refs'.country))" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionNot>
+                                  <Input>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Failed/$refs/country" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                  </Input>
+                                </ERExpressionNot>
+                              </Expression>
+                            </ERExpressionBooleanHost>
+                          </ConditionHost>
+                          <MessageHost>
+                            <ERExpressionStringHost ExpressionAsString="FORMAT(@&quot;GER_LABEL:GR3&quot;, model.Failed.CountryRegion)" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionStringFormat>
+                                  <Contents.>
+                                    <ERExpressionStringLabel>
+                                      <LabelId>
+                                        <ERExpressionStringConstant Value="GER_LABEL:GR3" />
+                                      </LabelId>
+                                    </ERExpressionStringLabel>
+                                    <ERExpressionStringItemValue ItemPath="model/Failed/CountryRegion" />
+                                  </Contents.>
+                                </ERExpressionStringFormat>
+                              </Expression>
+                            </ERExpressionStringHost>
+                          </MessageHost>
+                        </ERExpressionValidationCondition>
+                        <ERExpressionValidationCondition ID.="{2A186578-1A12-47C7-A00E-DBF1E44CAF9D}" PostAction="1">
+                          <ConditionHost>
+                            <ERExpressionBooleanHost ExpressionAsString="NOT(ISEMPTY(model.Failed.'$refs'.state))" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionNot>
+                                  <Input>
+                                    <ERExpressionListIsEmpty>
+                                      <Input>
+                                        <ERExpressionListItemValue ItemPath="model/Failed/$refs/state" />
+                                      </Input>
+                                    </ERExpressionListIsEmpty>
+                                  </Input>
+                                </ERExpressionNot>
+                              </Expression>
+                            </ERExpressionBooleanHost>
+                          </ConditionHost>
+                          <MessageHost>
+                            <ERExpressionStringHost ExpressionAsString="FORMAT(@&quot;GER_LABEL:GR4&quot;, model.Failed.State)" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionStringFormat>
+                                  <Contents.>
+                                    <ERExpressionStringLabel>
+                                      <LabelId>
+                                        <ERExpressionStringConstant Value="GER_LABEL:GR4" />
+                                      </LabelId>
+                                    </ERExpressionStringLabel>
+                                    <ERExpressionStringItemValue ItemPath="model/Failed/State" />
+                                  </Contents.>
+                                </ERExpressionStringFormat>
+                              </Expression>
+                            </ERExpressionStringHost>
+                          </MessageHost>
+                        </ERExpressionValidationCondition>
+                        <ERExpressionValidationCondition ID.="{622FD88B-2E65-4015-A92E-C31C7B8528C2}" PostAction="1">
+                          <ConditionHost>
+                            <ERExpressionBooleanHost ExpressionAsString="NOT(&#xA;  AND(&#xA;    NOT(ISEMPTY(model.Failed.'$refs'.country)),&#xA;    NOT(ISEMPTY(model.Failed.'$refs'.state)),&#xA;    ISEMPTY(model.Failed.'$refs'.location)&#xA;          )&#xA;)" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionNot>
+                                  <Input>
+                                    <ERExpressionAnd>
+                                      <Contents.>
+                                        <ERExpressionNot>
+                                          <Input>
+                                            <ERExpressionListIsEmpty>
+                                              <Input>
+                                                <ERExpressionListItemValue ItemPath="model/Failed/$refs/country" />
+                                              </Input>
+                                            </ERExpressionListIsEmpty>
+                                          </Input>
+                                        </ERExpressionNot>
+                                        <ERExpressionNot>
+                                          <Input>
+                                            <ERExpressionListIsEmpty>
+                                              <Input>
+                                                <ERExpressionListItemValue ItemPath="model/Failed/$refs/state" />
+                                              </Input>
+                                            </ERExpressionListIsEmpty>
+                                          </Input>
+                                        </ERExpressionNot>
+                                        <ERExpressionListIsEmpty>
+                                          <Input>
+                                            <ERExpressionListItemValue ItemPath="model/Failed/$refs/location" />
+                                          </Input>
+                                        </ERExpressionListIsEmpty>
+                                      </Contents.>
+                                    </ERExpressionAnd>
+                                  </Input>
+                                </ERExpressionNot>
+                              </Expression>
+                            </ERExpressionBooleanHost>
+                          </ConditionHost>
+                          <MessageHost>
+                            <ERExpressionStringHost ExpressionAsString="FORMAT(@&quot;GER_LABEL:GR5&quot;, model.Failed.State, model.Failed.CountryRegion)" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionStringFormat>
+                                  <Contents.>
+                                    <ERExpressionStringLabel>
+                                      <LabelId>
+                                        <ERExpressionStringConstant Value="GER_LABEL:GR5" />
+                                      </LabelId>
+                                    </ERExpressionStringLabel>
+                                    <ERExpressionStringItemValue ItemPath="model/Failed/State" />
+                                    <ERExpressionStringItemValue ItemPath="model/Failed/CountryRegion" />
+                                  </Contents.>
+                                </ERExpressionStringFormat>
+                              </Expression>
+                            </ERExpressionStringHost>
+                          </MessageHost>
+                        </ERExpressionValidationCondition>
+                        <ERExpressionValidationCondition ID.="{6799D809-99D2-414A-903D-5349DE06AD3F}" PostAction="1">
+                          <ConditionHost>
+                            <ERExpressionBooleanHost ExpressionAsString="NOT(&#xA;  AND(&#xA;    NOT(ISEMPTY(model.Failed.'$refs'.vendor)),&#xA;    ISEMPTY(model.Failed.'$refs'.vendor1099)&#xA;          )&#xA;)" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionNot>
+                                  <Input>
+                                    <ERExpressionAnd>
+                                      <Contents.>
+                                        <ERExpressionNot>
+                                          <Input>
+                                            <ERExpressionListIsEmpty>
+                                              <Input>
+                                                <ERExpressionListItemValue ItemPath="model/Failed/$refs/vendor" />
+                                              </Input>
+                                            </ERExpressionListIsEmpty>
+                                          </Input>
+                                        </ERExpressionNot>
+                                        <ERExpressionListIsEmpty>
+                                          <Input>
+                                            <ERExpressionListItemValue ItemPath="model/Failed/$refs/vendor1099" />
+                                          </Input>
+                                        </ERExpressionListIsEmpty>
+                                      </Contents.>
+                                    </ERExpressionAnd>
+                                  </Input>
+                                </ERExpressionNot>
+                              </Expression>
+                            </ERExpressionBooleanHost>
+                          </ConditionHost>
+                          <MessageHost>
+                            <ERExpressionStringHost ExpressionAsString="FORMAT(@&quot;GER_LABEL:GR6&quot;, model.Failed.VendAccount)" SyntaxVersion="1">
+                              <Expression>
+                                <ERExpressionStringFormat>
+                                  <Contents.>
+                                    <ERExpressionStringLabel>
+                                      <LabelId>
+                                        <ERExpressionStringConstant Value="GER_LABEL:GR6" />
+                                      </LabelId>
+                                    </ERExpressionStringLabel>
+                                    <ERExpressionStringItemValue ItemPath="model/Failed/VendAccount" />
+                                  </Contents.>
+                                </ERExpressionStringFormat>
+                              </Expression>
+                            </ERExpressionStringHost>
+                          </MessageHost>
+                        </ERExpressionValidationCondition>
+                      </Contents.>
+                    </ERExpressionValidationConditions>
+                  </Expression>
+                </ERDataContainerPathValidationBinding>
+              </Contents.>
+            </ERDataContainerBinding>
+          </Validations>
+        </ERModelMapping>
+      </Mapping>
+    </ERModelMappingVersion>
+  </Contents.>
+</ERSolutionVersion>

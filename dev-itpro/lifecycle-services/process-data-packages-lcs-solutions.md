@@ -21,7 +21,7 @@ audience: Developer, IT Pro
 ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 197113
-ms.assetid: d06d21e7-ea93-430b-be5a-15311961bcde
+ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc

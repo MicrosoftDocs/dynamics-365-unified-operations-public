@@ -21,12 +21,12 @@ ms.reviewer: rschloma
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221054
-ms.assetid: 96c51755-b413-43bc-bffd-7f7a4c2ea927
+ms.assetid: 0fd018c4-a786-4d36-97eb-7087521bb9f2
 ms.search.region: USA
 # ms.search.industry: 
 ms.author: brpotter
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

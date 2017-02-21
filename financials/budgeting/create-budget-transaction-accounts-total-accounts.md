@@ -21,12 +21,12 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13051
-ms.assetid: b71c8a31-9e25-44e7-bdea-ca4732db817e
+ms.assetid: fb1bb2d3-445c-402f-a9a3-aa6503eed78e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sigitac
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

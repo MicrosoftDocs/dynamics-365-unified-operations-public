@@ -21,11 +21,11 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17424
-ms.assetid: 5b989e3f-0c06-4d00-93cb-87c4566a9603
+ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

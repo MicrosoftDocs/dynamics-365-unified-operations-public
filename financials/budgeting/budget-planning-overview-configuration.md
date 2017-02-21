@@ -21,12 +21,12 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17251
-ms.assetid: e04b8ca2-8a93-4769-acc1-288ebe5a5cb7
+ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sigitac
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -37,7 +37,7 @@ This article introduces budget planning, and contains information to help you co
 Overview of budget planning
 ---------------------------
 
-You perform budget planning when you're preparing the budgets that an organization will implement. An organization can configure budget planning, and then set up budget planning processes to meet its policies, procedures, and requirements for budget preparation. When you understand the concepts and terminology that are used in Microsoft Dynamics AX, it will be easier for you to implement budget planning in your organization.
+You perform budget planning when you're preparing the budgets that an organization will implement. An organization can configure budget planning, and then set up budget planning processes to meet its policies, procedures, and requirements for budget preparation. When you understand the concepts and terminology that are used in Microsoft Dynamics 365 for Operations, it will be easier for you to implement budget planning in your organization.
 
 ### Key terms
 
@@ -58,7 +58,7 @@ You can use budget planning to perform the following tasks:
 -   Automatically route the budget plans, together with worksheets, justification documents, and other attachments, for review and approval.
 -   Consolidate multiple budget plans from a lower level of the organization into a single parent budget plan at a higher level of the organization. You can also develop a single budget plan at a higher level of the organization and allocate the budget to lower levels of the organization.
 
-Budget planning is integrated with other Microsoft Dynamics AX modules. Therefore, you can bring in information from previous budgets, actual expenditures, fixed assets, and human resources. Because budget planning is also integrated with Microsoft Excel and Microsoft Word, you can use these programs to work with budget planning data. For example, a budget manager can export a department’s budget request from a budget plan scenario into an Excel worksheet. The data can be analyzed, updated, and charted in the worksheet, and then published back to the budget plan lines.
+Budget planning is integrated with other Microsoft Dynamics 365 for Operations modules. Therefore, you can bring in information from previous budgets, actual expenditures, fixed assets, and human resources. Because budget planning is also integrated with Microsoft Excel and Microsoft Word, you can use these programs to work with budget planning data. For example, a budget manager can export a department’s budget request from a budget plan scenario into an Excel worksheet. The data can be analyzed, updated, and charted in the worksheet, and then published back to the budget plan lines.
 
 ## Configuring budget planning
 The **Budget planning configuration** page contains most of the settings that you require in order to set up budget planning. The following sections describe some key factors that you should consider as you configure budget planning. After you've completed the configuration, you set up budget planning processes.
@@ -77,7 +77,7 @@ Budget planning can follow one of two security models to define user permissions
 
 ### Budget planning workflows stages
 
-Budget planning workflows are used together with Budgeting workflows to manage the creation and evolution of budget plans. A budget planning workflow consists of an ordered set of stages that a budget plan moves through. Each budget planning workflow is associated with a Budgeting workflow. Budgeting workflows are one of the types of workflow that are used throughout Microsoft Dynamics AX. The Budgeting workflow routes the budget plans, together with worksheets, justifications, and attachments, through the organization for review and approval. You create the budget planning workflow in the **Workflow stages** section of the **Budget planning configuration** page. There, you can select the stages and the Budgeting workflow that will be used, and also configure additional settings. A good practice is to create a budget planning workflow for each level of a budgeting hierarchy. You then assign a Budgeting workflow that contains elements that correspond to the stages in the budget planning workflow. In the example schema that appears earlier in this article, one budget planning workflow would be created for the sales departments, and another would be created for the headquarters. A Budgeting workflow moves the budget plans through the stages. You create the Budgeting workflow for budget planning on the **Budgeting workflows** page. The process resembles the process for creating other workflows in Microsoft Dynamics AX. The following illustration shows an example of a Headquarters workflow. [![Budgeting workflow for budget planning](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) The workflow includes elements for allocation to sales departments and aggregation of their submissions, review by the budget manager, approval by the CFO, and stage transitions between each stage. You assign the Budgeting workflow to each budget planning workflow in the **Workflow stages** section of the **Budget planning configuration** page.
+Budget planning workflows are used together with Budgeting workflows to manage the creation and evolution of budget plans. A budget planning workflow consists of an ordered set of stages that a budget plan moves through. Each budget planning workflow is associated with a Budgeting workflow. Budgeting workflows are one of the types of workflow that are used throughout Microsoft Dynamics 365 for Operations. The Budgeting workflow routes the budget plans, together with worksheets, justifications, and attachments, through the organization for review and approval. You create the budget planning workflow in the **Workflow stages** section of the **Budget planning configuration** page. There, you can select the stages and the Budgeting workflow that will be used, and also configure additional settings. A good practice is to create a budget planning workflow for each level of a budgeting hierarchy. You then assign a Budgeting workflow that contains elements that correspond to the stages in the budget planning workflow. In the example schema that appears earlier in this article, one budget planning workflow would be created for the sales departments, and another would be created for the headquarters. A Budgeting workflow moves the budget plans through the stages. You create the Budgeting workflow for budget planning on the **Budgeting workflows** page. The process resembles the process for creating other workflows in Microsoft Dynamics 365 for Operations. The following illustration shows an example of a Headquarters workflow. [![Budgeting workflow for budget planning](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) The workflow includes elements for allocation to sales departments and aggregation of their submissions, review by the budget manager, approval by the CFO, and stage transitions between each stage. You assign the Budgeting workflow to each budget planning workflow in the **Workflow stages** section of the **Budget planning configuration** page.
 
 ### Parameters, scenarios, and stages
 

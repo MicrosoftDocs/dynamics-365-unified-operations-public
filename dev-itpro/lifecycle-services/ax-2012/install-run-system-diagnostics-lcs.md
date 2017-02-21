@@ -21,7 +21,7 @@ ms.reviewer: kfend
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18861
-ms.assetid: d4991454-03bc-4392-a8e1-4661a0c931b7
+ms.assetid: 075b4e28-162f-47ae-8713-392d711bdaff
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado

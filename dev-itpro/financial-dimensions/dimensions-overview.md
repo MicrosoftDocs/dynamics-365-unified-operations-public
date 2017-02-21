@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11314
-ms.assetid: ddd5f5fc-4be1-44f2-a046-0eab54150893
+ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rbrow
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -96,5 +96,5 @@ See also
 
 [What’s new or changed](whats-new-changed.md)
 
-[Extensibility home page](http://ax.help.dynamics.com/en/wiki/extensibility-home-page/)
+[Extensibility home page](extensibility-home-page.md)
 

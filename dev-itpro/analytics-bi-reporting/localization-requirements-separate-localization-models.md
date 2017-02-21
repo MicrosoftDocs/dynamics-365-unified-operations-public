@@ -21,12 +21,12 @@ ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27561
-ms.assetid: d247e596-ee74-49b6-9f51-35676ddf441c
+ms.assetid: 49b634ab-d7f7-4e34-a7e9-7350548bf1a0
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: filatovm
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

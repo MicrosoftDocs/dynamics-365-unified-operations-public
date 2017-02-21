@@ -21,11 +21,11 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13531
-ms.assetid: f5ca2f3c-8f3a-4b2c-92f2-32a7cf43b202
+ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -49,7 +49,7 @@ Lifecycle Services
 -   [Microsoft Dynamics 365 for Operations versions and update policy](versions-update-policy.md)
 
 ## Upgrade
--   [Process for upgrading a sandbox environment](http://ax.help.dynamics.com/en/wiki/process-for-upgrading-a-sandbox-environment/)
+-   [Process for upgrading a sandbox environment](upgrade-sandbox-environment.md)
 -   [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md)
 -   [Upgrade Dynamics 365 for Operations to the latest platform update](upgrade-latest-platform-update.md)
 -   [Upgrade the Dynamics AX platform to the August 2016 release](update-platform-each-release.md)
@@ -58,7 +58,7 @@ Lifecycle Services
 -   [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](copy-database-from-azure-sql-to-sql-server.md)
 -   [Copy a Microsoft Dynamics 365 for Operations database from SQL Server to an Azure SQL Database environment](copy-database-from-sql-server-to-azure-sql.md)
 -   [Request a point-in-time database restore on a non-production environment](request-a-point-in-time-db-restore.md)
--   [Retain a copy of a Dynamics 365 for Operations database to restore later](http://ax.help.dynamics.com/en/wiki/retain-copy-dynamics-365-operations-database/)
+-   [Retain a copy of a Dynamics 365 for Operations database to restore later](retain-copy-dynamics-365-operations-database.md)
 
 ## Security
 -   [Role-based security](role-based-security.md)

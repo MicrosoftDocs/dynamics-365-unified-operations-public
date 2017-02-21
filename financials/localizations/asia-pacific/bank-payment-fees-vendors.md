@@ -17,16 +17,16 @@ ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+# ms.reviewer: 81
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10214
-ms.assetid: 9b0030c9-4301-42be-b579-53bbda293895
+ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.version: AX 7.0.0
 
 In Japan, the bank payment fees are usually covered by vendors (the receiving party). This topic answers some of the frequently asked questions about bank payment fees that are covered by vendors.
 
-When you make payments to a vendor, the bank payment fees can be covered by you or by the vendor. When the vendor covers the bank payment fees, you can set up Microsoft Dynamics AX so that bank payment fees are automatically deducted from each payment that the company makes to the vendor. Complete the following tasks to set up and calculate the bank payment fees for a vendor:
+When you make payments to a vendor, the bank payment fees can be covered by you or by the vendor. When the vendor covers the bank payment fees, you can set up the process in such a way that bank payment fees are automatically deducted from each payment that the company makes to the vendor. Complete the following tasks to set up and calculate the bank payment fees for a vendor:
 
 1.  Indicate that the vendor covers the bank payment fees.
 2.  Create a payment rule to calculate the bank payment fees that are deducted from payments that the company makes to the vendor.

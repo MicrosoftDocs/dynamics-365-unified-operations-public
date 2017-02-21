@@ -48,6 +48,8 @@
 ### [Configure global address books](organization-administration\plan-configuration-global-address-book-additional-address-books.md)
 ### [Configure expense management](organization-administration\plan-expense-management.md)
 ### [Create record templates](organization-administration\record-templates.md)
+### [Configure and send email](organization-administration\configure-email.md)
+### [Add links to your organization's legal terms and privacy statement](organization-administration\legal-terms-privacy-statement.md)
 
 ## Workflow
 ### [Workflow system overview](organization-administration\overview-workflow-system.md)
@@ -72,6 +74,7 @@
 ## [Dynamics 365 for Operations glossary](get-started\glossary.md)
 ## [What's new or changed](get-started\whats-new-changed.md)
 ## [New task guides (February 2016)](get-started\new-task-guides-available-february-2016.md)
+## [New or updated Task guides (November 2016)](get-started\new-or-updated-task-guides-available-november-2016.md)
 ## [New or updated task guides (August 2016)](get-started\new-updated-task-guides-available-august-2016.md)
 ## [New or updated task guides (May 2016)](get-started\new-updated-task-guides-available-may-2016.md)
 ## [What's new or changed in Dynamics AX 7.0 (February 2016)](get-started\whats-new-changed-7-0-february-2016.md)

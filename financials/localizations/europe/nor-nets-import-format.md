@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Nets import format | Microsoft Docs
+title: Nets import format
 description: This topic provides information about importing payment information in the Nets format.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-12 22:42:39
+ms.date: 2016-12-12 22 - 42 - 39
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoiceIntegrationTypePaymMode, CustEinvoiceIntegrationTypeTable, CustPaymMode, LedgerJournalTransCustPaym
+ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoiceIntegrationTypePaymMode, CustEinvoiceIntegrationTypeTable, CustPaymMode, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262704
-ms.assetid: a4f7adc3-36a9-42e1-b674-33a1d2ab10da
-ms.region: Norway
-# ms.industry: 
+ms.assetid: 0327a01b-3b24-41be-afa6-ffa6c365cb0b
+ms.search.region: Norway
+# ms.search.industry: 
 ms.author: v-lenest
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -40,7 +42,7 @@ To import the file provided by Nets bank, complete the following steps.
 1.  Go to the **Payment journal** page
 2.  Click **Lines.**
 3.  Click **Functions** &gt; **Import payments**.
-4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. In the same dialog box, you must also specify a **Sender ID** to ensure that the correct file is selected for import (00008080 value should be specified on the dialog for the Nets bank). **Note**: Before you can complete this step, you must have already imported the **Nets (No)** configurations from Lifecycle Services (LCS) and set up the Nets method of payment. For more information, see [File formats for method of payments](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/select-file-formats-for-the-method-of-payments).
+4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. In the same dialog box, you must also specify a **Sender ID** to ensure that the correct file is selected for import (00008080 value should be specified on the dialog for the Nets bank). **Note**: Before you can complete this step, you must have already imported the **Nets (No)** configurations from Lifecycle Services (LCS) and set up the Nets method of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
 
 The process is similar for importing enrollment messages from the **eInvoice enrollment and answer** page. Regardless of whether the file has only payment transactions, only enrollment messages, or both, everything will be imported in one action.
 

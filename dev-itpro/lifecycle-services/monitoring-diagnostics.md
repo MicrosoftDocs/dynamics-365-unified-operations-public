@@ -21,11 +21,11 @@ audience: Developer, IT Pro
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267184
-ms.assetid: 7aa776c9-1ea2-4e15-bf91-d223a51e7766
+ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

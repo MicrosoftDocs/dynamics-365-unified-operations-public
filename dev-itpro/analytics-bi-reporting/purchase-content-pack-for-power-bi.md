@@ -21,11 +21,11 @@ audience: Application User
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265434
-ms.assetid: 4e7a28b9-e4c8-410c-9b5b-c028b319bb4a
+ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 ms.search.region: global
 # ms.search.industry: 
 ms.author: fdahl
-ms.dyn365.ops.intro: Nov-16
+ms.dyn365.ops.intro: 01-11-2016
 ms.dyn365.ops.version: Version 1611
 
 ---

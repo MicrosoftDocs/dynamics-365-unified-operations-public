@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Stock card reports | Microsoft Docs
+title: Stock card reports
 description: This topic provides information about stock card reports for legal entities in Thailand. A stock card report contains information about inventory movement, quantity, and cost for each item and warehouse, and must be generated when the government requests it. The stock card report is generated either before or after the inventory close process. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-22 15:29:27
+ms.date: 2016-12-22 15 - 29 - 27
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265184
-ms.assetid: ac235b64-d145-4b29-ad12-b400231c423b
-ms.region: Thailand
-# ms.industry: 
+ms.assetid: 1ce8c70b-c6af-4171-98d2-2aa8e9563c5b
+ms.search.region: Thailand
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

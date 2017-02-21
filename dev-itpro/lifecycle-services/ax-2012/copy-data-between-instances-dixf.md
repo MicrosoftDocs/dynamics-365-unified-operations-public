@@ -21,7 +21,7 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 20251
-ms.assetid: d7c7b55d-32f9-4ba8-b75e-50887b0db8fc
+ms.assetid: f608a318-106e-4edb-8a6f-c7a753a27640
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend

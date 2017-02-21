@@ -21,7 +21,7 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 19021
-ms.assetid: ecad2ec9-dc2b-42a4-89bd-64180512746b
+ms.assetid: 409386b2-98c8-44a7-be6f-252f8a21f819
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy

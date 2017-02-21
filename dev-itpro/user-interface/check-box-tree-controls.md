@@ -21,11 +21,11 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31501
-ms.assetid: f666b97b-3b2d-4740-aca1-f9b28ca064a7
+ms.assetid: 57c0fa59-ef48-4913-9f92-407ff2566c72
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tlefor
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

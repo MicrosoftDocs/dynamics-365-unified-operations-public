@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261394
-ms.assetid: f19271cd-8566-4d3c-81b1-479a4cdebf78
+ms.assetid: fb92ff01-458c-4433-870e-5291e3aaebda
 ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

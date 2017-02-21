@@ -2,7 +2,7 @@
 # required metadata
 
 title: Elimination rules
-description: This article provides information about elimination rules and the various options for reporting about eliminations.
+description: This topic provides information about elimination rules and the various options for reporting about eliminations.
 author: RobinARH
 manager: AnnBe
 ms.date: 2015-12-01 17 - 00 - 55
@@ -21,20 +21,20 @@ ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13131
-ms.assetid: 878ace4c-888d-4dc1-b574-a86efe244fed
+ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Elimination rules
 
-This article provides information about elimination rules and the various options for reporting about eliminations.
+This topic provides information about elimination rules and the various options for reporting about eliminations.
 
-Elimination transactions are required when a parent legal entity does business with one or more subsidiary legal entities and uses consolidated financial reporting. Consolidated financial statements must include only transactions that occur between the consolidated organization and other entities outside that organizations. Therefore, transactions between legal entities that are part of the same organization must be removed, or eliminated, from the general ledger, so that they don't appear on financial reports. There are multiple ways to report about eliminations:
+Elimination transactions are required when a parent legal entity does business with one or more subsidiary legal entities and uses consolidated financial reporting. Consolidated financial statements must include only transactions that occur between the consolidated organization and other entities outside that organizations. Therefore, transactions between legal entities that are part of the same organization must be removed, or eliminated, from the general ledger, so they don't appear on financial reports. There are multiple ways to report about eliminations:
 
 -   An elimination rule can be created and processed in a consolidation or elimination company.
 -   Financial reporting can be used to show the eliminations accounts and dimensions on a specific row or column.
@@ -131,4 +131,10 @@ Your legal entity, legal entity A, sells widgets to another legal entity in your
 -   Legal entity A sells a widget that costs 10.00 to legal entity B for 15.00 and recognizes half the margin on the sale. Legal entity B recognizes the other half of the margin on the sale. Therefore, the revenue is split. Split revenue provides an incentive to order from another legal entity in the organization instead of an external organization.
 
 All these transactions create intercompany transactions that are posted to due-to and due-from accounts. In addition, these transactions might include markup and markdown amounts when the amount of the intercompany sale doesn't equal the cost of the goods that were sold.
+
+## Set up elimination rules
+When setting up elimination rules in Dynamics 365 for Operations, we recommend that you create a financial dimension specifically for elimination purposes. Most customers name it Trading Partner or something similar. If you decide not to use a financial dimension, then be sure to have main accounts that are specific for intercompany transactions only. The setup for eliminations is found in the Setup area of the Consolidations module. After you enter a description for the rule, you must pick the company that the elimination journal will post to. This should be a company that has **Use for financial elimination process** selected in the Legal entity setup. You can set a date on which the elimination rule becomes effective and when it is expired, if needed. You must set **Active** to **Yes** if you want it to be available in the elimination proposal process. Select a journal name that has a type of **Elimination**. After you have defined the basics, you can define the actual processing rules by clicking **Lines**. There are two options for eliminations, eliminating the net change amount or defining a fixed amount. Select your source account. You can use an asterisk (\*) as a wild card. For example, 1\* would select all accounts that start with a 1 as a source of data for the allocation. After you have selected your source accounts, the **Account specification** determines the account from the destination company that is used. Select **Source** if you want to use the same main account defined in the **Source** account. If you select **User defined**, then you must specify a destination account. The dimension specification acts in the same way. If you select **Source**, it will use the same dimensions in the destination company as the source company. If you select **User defined**, you will need to specify the dimensions in the destination company by clicking the **Destination dimensions** menu item. Select source dimensions and the financial dimensions and values that are used as a source of the elimination.
+
+## Process elimination transactions
+There are two ways to process elimination transactions, during the consolidate online process or by creating an elimination journal and running the elimination proposal process. This section focuses on creating the journal and running the elimination process. For information about running it as part of the consolidation process, see [Perform an online consolidation](http://ax.help.dynamics.com/en/wiki/perform-an-online-consolidation/). In a company defined as an elimination company, select **Elimination journal** in the Consolidations module. After you have selected the journal name, click **Lines**. You can run the proposal by selecting the **Proposals** menu and then selecting **Elimination proposal**. Select the company that is the source of the consolidated data, and then choose the rule that you want to process. Enter a start date to begin the search for elimination amounts, and an end date to end the search date for elimination amounts. The **GL posting date** field is the date used for posting the journal to the general ledger. After you click **OK**, you can review the amounts and post the journal.
 

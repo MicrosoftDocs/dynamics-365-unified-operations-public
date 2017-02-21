@@ -21,11 +21,11 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 70292
-ms.assetid: 39d75956-8cc7-4e78-9543-bc8e4181b389
+ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
-ms.dyn365.ops.intro: Feb-16
+ms.dyn365.ops.intro: 01-02-2016
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

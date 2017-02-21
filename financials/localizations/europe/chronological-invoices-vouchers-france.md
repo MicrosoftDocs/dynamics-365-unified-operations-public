@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Chronological invoice and voucher numbers for France | Microsoft Docs
+title: Chronological invoice and voucher numbers for France
 description: This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable for legal entities in France.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-19 16:05:52
+ms.date: 2016-12-19 16 - 05 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustParameters, NumberSequenceGroup
+ms.search.form: CustParameters, NumberSequenceGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264514
-ms.assetid: f3712d16-f1d0-4f52-8f88-4735c450cc5f
-ms.region: France
-# ms.industry: 
+ms.assetid: d1fce1dc-2186-443c-9b4d-b6f64236bc3a
+ms.search.region: France
+# ms.search.industry: 
 ms.author: ilyako
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: CODA bank statement | Microsoft Docs
+title: CODA bank statement
 description: This topic includes information about CODA, which is a report format used in the Belgian electronic banking system. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-12 21:37:28
+ms.date: 2016-12-12 21 - 37 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: BankAccountTable, BankCodaAccountStatement, BankCodaAccountStatementLines, BankCodaParameters, BankCodaTrans, BankCodaTransCategory, BankCodaTransDefTable, BankCodaTransFamily
+ms.search.form: BankAccountTable, BankCodaAccountStatement, BankCodaAccountStatementLines, BankCodaParameters, BankCodaTrans, BankCodaTransCategory, BankCodaTransDefTable, BankCodaTransFamily
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262534
-ms.assetid: 71e144ce-be69-4b76-9022-19342de05449
-ms.region: Belgium
-# ms.industry: 
+ms.assetid: 38a1f540-1488-4b63-b850-04e270622296
+ms.search.region: Belgium
+# ms.search.industry: 
 ms.author: v-lenest
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -37,7 +39,7 @@ For Belgian bank statement imports, you'll use the CODA file format. This featu
 ## Import transactions from a bank statement
 To import a bank statement file for a bank account, complete the following steps. **Note**: Before you import a bank statement file, you must have already completed the following:
 
--   Import the CODA configurations from Lifecycle Services (LCS). For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-er-configuration-from-lifecycle-services).
+-   Import the CODA configurations from Lifecycle Services (LCS). For more information, see [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md).
 -   Select the imported CODA configuration on the **CODA parameters** page.
 
 1.  Go to the **Bank accounts** page.

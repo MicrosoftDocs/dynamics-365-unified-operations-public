@@ -21,11 +21,11 @@ audience: Developer, IT Pro
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 107013
-ms.assetid: c56289cb-11cc-47ec-947e-fb1dc572902c
+ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
-ms.dyn365.ops.intro: May-16
+ms.dyn365.ops.intro: 01-05-2016
 ms.dyn365.ops.version: Platform update 1
 
 ---
@@ -77,16 +77,16 @@ Manual package deployment must be used for the following topologies. For informa
 2.  Open the **Environment details** view for the environment where you want to apply the package.
 3.  Click **Maintain** &gt; **Apply updates** to apply an update.
 4.  Select the package to apply. The filter at the top helps filtering through the list.
-5.  Click **Apply**. Notice that the status in the upper right of the **Environment details** view changes to **Queued**, and that an **Environment updates** section now shows the progress of the package. [![parallelexecutionsandbox\_queuedstate](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_QueuedState.jpg)](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_QueuedState.jpg)
-6.  Refresh the page to see the progress of the package application. Notice that the servicing status is **In Progress**, and the environment status is **Servicing**. [![parallelexecutionsandbox\_servicingstate](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_ServicingState.png)](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_ServicingState.png)
-7.  Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**. [![parallelexecutionsandbox\_signedoffstate](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_SignedOffState.png)](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_SignedOffState.png)
+5.  Click **Apply**. Notice that the status in the upper right of the **Environment details** view changes to **Queued**, and that an **Environment updates** section now shows the progress of the package. [![parallelexecutionsandbox\_queuedstate](./media/parallelexecutionsandbox_queuedstate.jpg)](./media/parallelexecutionsandbox_queuedstate.jpg)
+6.  Refresh the page to see the progress of the package application. Notice that the servicing status is **In Progress**, and the environment status is **Servicing**. [![parallelexecutionsandbox\_servicingstate](./media/parallelexecutionsandbox_servicingstate.png)](./media/parallelexecutionsandbox_servicingstate.png)
+7.  Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**. [![parallelexecutionsandbox\_signedoffstate](./media/parallelexecutionsandbox_signedoffstate.png)](./media/parallelexecutionsandbox_signedoffstate.png)
 8.  To sign off on the package application, click **Sign off** if there are no issues. If issues occurred when you applied the package, click **Sign off with issues**.
 
 ### Troubleshooting
 
 #### General troubleshooting/diagnostics
 
-If package application isn't successful, you can download either the logs or the runbook to see the detailed logs. You can also use Remote Desktop Protocol (RDP) to establish a remote connection to an environment to fix issues. If you must report the issue to Microsoft, be sure to include the activity ID that is reported in the **Environment updates** section. [ ](./media/applypackage_sandbox_10.png)[![parallelexecutionsandbox\_troubleshooting](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_Troubleshooting.jpg)](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_Troubleshooting.jpg)
+If package application isn't successful, you can download either the logs or the runbook to see the detailed logs. You can also use Remote Desktop Protocol (RDP) to establish a remote connection to an environment to fix issues. If you must report the issue to Microsoft, be sure to include the activity ID that is reported in the **Environment updates** section. [ ](./media/applypackage_sandbox_10.png)[![parallelexecutionsandbox\_troubleshooting](./media/parallelexecutionsandbox_troubleshooting.jpg)](./media/parallelexecutionsandbox_troubleshooting.jpg)
 
 #### Using the logs
 
@@ -104,7 +104,7 @@ If package application fails, you have two options:
 
 -   Click **Resume** to retry the failed operation.
 
-[![parallelexecutionsandbox\_failedstate](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_FailedState.jpg)](https://msdynamics.blob.core.windows.net/media/2016/08/ParallelExecutionSandbox_FailedState.jpg)
+[![parallelexecutionsandbox\_failedstate](./media/parallelexecutionsandbox_failedstate.jpg)](./media/parallelexecutionsandbox_failedstate.jpg)
 
 -   Click **Abort** to stop package application. **Note:** If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue. [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 

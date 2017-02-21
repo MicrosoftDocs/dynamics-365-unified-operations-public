@@ -2,10 +2,10 @@
 # required metadata
 
 title: DIOT declaration statement
-description: This article explains how to configure and generate a DIOT declaration statement. If you're subject to VAT, you might have to use a DIOT declaration statement to report vendor transactions to the Mexican tax authorities.
+description: This topic provides information about the DIOT declaration statement for Mexico.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-09-10 18 - 09 - 45
+ms.date: 2016-04-08 15 - 49 - 36
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,24 +17,24 @@ ms.search.form: DIOTDeclarationConcept_MX, DIOTDeclarationTaxCode_MX, VendTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+# ms.reviewer: 81
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2941
-ms.assetid: 6ce1787b-ba28-457a-bccc-cb52276aab8c
+ms.custom: 79334
+ms.assetid: 0cdb4da3-dca8-4e31-8fd5-8a1f785b5104
 ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # DIOT declaration statement
 
-This article explains how to configure and generate a DIOT declaration statement. If you're subject to VAT, you might have to use a DIOT declaration statement to report vendor transactions to the Mexican tax authorities.
+This topic provides information about the DIOT declaration statement for Mexico.
 
-The DIOT declaration statement (informative declaration of operation with vendors) is used to report vendor transactions to the Mexican tax authorities (Servicio de Administración Tributaria \[SAT\]). You might have to do this if you're subject to value-added tax (VAT). The DIOT declaration statement is a text file. You can generate this file in Microsoft Dynamics AX, and then import it into the government validation and delivery tool. Consolidated and detailed reports are also generated for control purposes. The statement includes transactions that were generated from purchase orders, invoice register journals, invoice approval journals, invoice journals. It also includes vendor transactions that were generated from the **Project** module. Additionally, you can include open transactions or settled transactions.
+The DIOT declaration statement (informative declaration of operation with vendors) is used to report vendor transactions to the Mexican tax authorities (Servicio de Administración Tributaria \[SAT\]). You might have to do this if you're subject to value-added tax (VAT). The DIOT declaration statement is a text file. You can generate this file in Microsoft Dynamics 365 for Operations, and then import it into the government validation and delivery tool. Consolidated and detailed reports are also generated for control purposes. The statement includes transactions that were generated from purchase orders, invoice register journals, invoice approval journals, invoice journals. It also includes vendor transactions that were generated from the **Project** module. Additionally, you can include open transactions or settled transactions.
 
 ## Prerequisites
 You must complete the following setup before you can generate the DIOT text file or related reports:
@@ -43,7 +43,7 @@ You must complete the following setup before you can generate the DIOT text fil
 2.  Enter tax information for vendors.
 
 ## Tax information for unmanaged vendors
-Unmanaged vendors are vendors that don't have their details registered as vendor accounts in Microsoft Dynamics AX. When a purchase transaction is registered for this type of vendor, you can select any ledger account other than the vendor account. Because all purchase transactions are included in the DIOT declaration statement, purchase transactions for unmanaged vendors also require tax registration IDs (RFC or CURP), the type of operation, and other additional information. For regular vendors, you can define additional information on the **Vendors** page. However, you can't do this for unmanaged vendors. To capture the required tax information for unmanaged vendors, you can enter additional information at the transaction level in the following journal transactions when the vendor account isn't identified:
+Unmanaged vendors are vendors that don't have their details registered as vendor accounts in Dynamics 365 for Operations. When a purchase transaction is registered for this type of vendor, you can select any ledger account other than the vendor account. Because all purchase transactions are included in the DIOT declaration statement, purchase transactions for unmanaged vendors also require tax registration IDs (RFC or CURP), the type of operation, and other additional information. For regular vendors, you can define additional information on the **Vendors** page. However, you can't do this for unmanaged vendors. To capture the required tax information for unmanaged vendors, you can enter additional information at the transaction level in the following journal transactions when the vendor account isn't identified:
 
 -   Invoice journal
 -   Invoice register
@@ -52,7 +52,7 @@ Unmanaged vendors are vendors that don't have their details registered as vendor
 To define sales tax codes to make additional information fields available for an unmanaged vendor in journal transactions, you must specify a sales tax code that was set up to allow for additional information in the journal.
 
 ## DIOT report configuration
-This section describes how to define the concepts and attach the sales tax codes that are required to generate the DIOT declaration statement. In Microsoft Dynamics AX, a concept represents purchase transaction amounts that are grouped under different VAT percentages, as specified by the tax authorities in Mexico. In the DIOT text file, the total amounts are grouped for each vendor, based on the concepts that were previously defined. These concepts are reported in columns 8 through 22 of the DIOT layout format. The other columns of the report are automatically filled in based on vendor information such as the RFC, type of operation, and other related data.
+This section describes how to define the concepts and attach the sales tax codes that are required to generate the DIOT declaration statement. In Dynamics 365 for Operations, a concept represents purchase transaction amounts that are grouped under different VAT percentages, as specified by the tax authorities in Mexico. In the DIOT text file, the total amounts are grouped for each vendor, based on the concepts that were previously defined. These concepts are reported in columns 8 through 22 of the DIOT layout format. The other columns of the report are automatically filled in based on vendor information such as the RFC, type of operation, and other related data.
 
 ### Example of concepts
 
