@@ -28,7 +28,7 @@
 ### [Install the Document Routing Agent to enable network printer devices](analytics-bi-reporting\install-document-routing-agent.md)
 ### [Printing in Dynamics 365 for Operations applications](analytics-bi-reporting\print-documents.md)
 ### [Run the Document Routing Agent as a Windows service](analytics-bi-reporting\run-document-routing-agent-as-windows-service.md)
-# Financial reporting
+## Financial reporting
 ### [Financial reporting for Dynamics 365 for Operations](analytics-bi-reporting\financial-reporting-intro.md)
 ### [Advanced formatting options in financial reporting](analytics-bi-reporting\advanced-formatting-options-financial-reporting.md)
 ### [Reset the financial reporting data mart after restoring a database](analytics-bi-reporting\reset-financial-reporting-datamart-after-restore.md)
