@@ -18,15 +18,15 @@ ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 13611
-ms.assetid: 29941b8a-1537-4920-9fa1-383c1b56a52e
+ms.assetid: 98dc6b79-1895-45d8-9dd1-2c8a351b58af
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: maertenm
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

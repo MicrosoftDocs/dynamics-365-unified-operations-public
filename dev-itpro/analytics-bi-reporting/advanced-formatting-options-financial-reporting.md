@@ -21,12 +21,12 @@ ms.reviewer: RobinARH
 ms.search.scope: Management Reporter
 # ms.tgt_pltfrm: 
 ms.custom: 106571
-ms.assetid: d5c6832c-4045-48e0-942e-7c133caaf444
+ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: 
-ms.dyn365.version: 
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 
 
 ---
 

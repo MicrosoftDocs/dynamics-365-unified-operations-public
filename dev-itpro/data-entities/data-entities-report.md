@@ -3,7 +3,7 @@
 
 title: Data entities report
 description: This topic points you to a report that lists the data entities available in Microsoft Dynamics AX.
-author: annbe
+author: sericks007
 manager: AnnBe
 ms.date: 2016-10-10 13 - 32 - 44
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 202654
-ms.assetid: 7b26a922-7347-4768-80ba-3ce0f11b601f
+ms.assetid: 6ec8ea87-ea1e-4a10-9d67-2b6565c5c62e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.author: sericks
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 

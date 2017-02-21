@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 6234
-ms.assetid: ace9f54d-11e6-4465-9b4d-6c1ddac4213d
+ms.assetid: 551ac5d6-980c-487f-a15c-66d7ab80924a
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kuntalme
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

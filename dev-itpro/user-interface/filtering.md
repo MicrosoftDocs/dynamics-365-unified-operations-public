@@ -2,7 +2,7 @@
 # required metadata
 
 title: Filters
-description: This article explains the filtering options that are available in the current version of Microsoft Dynamics AX.
+description: This article explains the filtering options that are available.
 author: jasongre
 manager: AnnBe
 ms.date: 2015-12-23 21 - 42 - 21
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28721
-ms.assetid: 2aacd11c-4032-4d24-ba82-9afd47f21ebc
+ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Filters
 
-This article explains the filtering options that are available in the current version of Microsoft Dynamics AX.
+This article explains the filtering options that are available.
 
 Introduction
 ------------
@@ -45,36 +45,36 @@ Microsoft Dynamics AX 2012 offers the following filtering options.
 | Filter by selection (filter by field) | The user selects a field value and uses that value as a filter condition.                                                                                                     |
 | Advanced filter                       | The user opens a dialog box that contains advanced filtering options (filter on columns, not on the form; join additional data sources; sort by multiple columns; and so on). |
 
-However, the current version of Microsoft Dynamics AX offers the following filtering options.
+Dynamics 365 for Operations offers the following filtering options.
 
 | Filter option         | Description                                                                                                                                |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | Filter Pane           | An inline pane that slides in from the left, and that contains multiple filter criteria that can be applied to the targeted content.       |
 | QuickFilter           | A framework-provided filtering mechanism that can appear above any list or grid, and that provides fast single-column filtering.           |
 | Grid column filtering | The user can define filter conditions and perform single-column sorting by using a drop dialog that is opened from the grid column header. |
-| Advanced filter/sort  | For most advanced filtering scenarios, the migrated **Advanced filter** form from AX 2012 is still available as a page in Dynamics AX.     |
+| Advanced filter/sort  | For most advanced filtering scenarios, the migrated **Advanced filter** form from Dynamics AX 2012 is still available.                     |
 
 ## Filter expressions
-One important difference between filtering in the current version of Dynamics AX and filtering in AX 2012 and earlier versions is related to the way that query symbols are used when filter values are defined (for example, "\*" to match 0 or more characters, or ".." to specify a range of values to match). In AX 2012, these symbols are highly visible during the filtering experience. For example, for the filter by grid option, if a user selects the **contains** operator on a field, the system translates that operator by adding wildcard characters (\*) to each end of the current expression. In the current version of Dynamics AX, the query symbols are implied by the selected operator and aren't injected into the user interface. This makes filtering more intuitive and simpler for users. For users who want to specify additional filter conditions by using Dynamics AX–specific query symbols, or users who must enter more complex conditions, the **matches** operator is provided for each data type. For all other operators, the query symbols are interpreted as literals. For example, the filter condition "First name MATCHES A" finds all records where the first name starts with the letter A. However, the filter condition "First Name IS A\*" finds records where the first name is literally equal to "A\*." The following table shows how the client translates between Dynamics AX filter operators and traditional Dynamics AX query syntax.
+One important difference between filtering in Dynamics 365 for Operations and filtering in Dynamics AX 2012 is related to the way that query symbols are used when filter values are defined (for example, "\*" to match 0 or more characters, or ".." to specify a range of values to match). In Dynamics AX 2012, these symbols are highly visible during the filtering experience. For example, for the filter by grid option, if a user selects the **contains** operator on a field, the system translates that operator by adding wildcard characters (\*) to each end of the current expression. In the current version of Dynamics 365 for Operations, the query symbols are implied by the selected operator and aren't injected into the user interface. This makes filtering more intuitive and simpler for users. For users who want to specify additional filter conditions by using specific query symbols, or users who must enter more complex conditions, the **matches** operator is provided for each data type. For all other operators, the query symbols are interpreted as literals. For example, the filter condition "First name MATCHES A" finds all records where the first name starts with the letter A. However, the filter condition "First Name IS A\*" finds records where the first name is literally equal to "A\*." The following table shows how the client translates between Dynamics 365 for Operations filter operators and Dynamics AX 2012 query syntax.
 
-| Filter operator                      | Dynamics AX query syntax |
-|--------------------------------------|--------------------------|
-| Is “foo” /  Is equal to “foo”        | “foo”                    |
-| Is not “foo” / Is not equal to “foo” | “!foo”                   |
-| Is one of “foo”, “bar”, “foobar”     | “foo,bar,foobar”         |
-| Contains “foo”                       | “\*foo\*”                |
-| Does not contain “foo”               | “!\*foo\*”               |
-| Begins with “foo”                    | “foo\*”                  |
-| After “foo” / Greater than “foo”     | “&gt;foo”                |
-| Greater than or equal “foo”          | “foo..”                  |
-| Before “foo” / Less than “foo”       | “&lt;foo”                |
-| Less than or equal “foo”             | “..foo”                  |
-| Between “bar” and “foo”              | “bar..foo”               |
+| Filter operator                      | Dynamics 365 for Operations query syntax |
+|--------------------------------------|------------------------------------------|
+| Is “foo” /  Is equal to “foo”        | “foo”                                    |
+| Is not “foo” / Is not equal to “foo” | “!foo”                                   |
+| Is one of “foo”, “bar”, “foobar”     | “foo,bar,foobar”                         |
+| Contains “foo”                       | “\*foo\*”                                |
+| Does not contain “foo”               | “!\*foo\*”                               |
+| Begins with “foo”                    | “foo\*”                                  |
+| After “foo” / Greater than “foo”     | “&gt;foo”                                |
+| Greater than or equal “foo”          | “foo..”                                  |
+| Before “foo” / Less than “foo”       | “&lt;foo”                                |
+| Less than or equal “foo”             | “..foo”                                  |
+| Between “bar” and “foo”              | “bar..foo”                               |
 
 Any query syntax that doesn't match the preceding templates is interpreted as the **matches** operator.
 
 ## Filter Pane
-The Filter Pane is a new filtering concept for Dynamics AX. The primary purpose is to provide an easy-to-use interface for filtering full page lists. The Filter Pane is an inline pane that slides in from the left side of the screen and pushes the page content to the right, so that users can see the data that they want to filter. Users open this filter mechanism by clicking the system-defined **Show filters** button on the left side of the page. After it has been opened, the Filter Pane remains visible until the user goes to a new page, or until the user closes the Filter Pane by using the **Hide filters** button.
+The Filter Pane provides an easy-to-use interface for filtering full page lists. The Filter Pane is an inline pane that slides in from the left side of the screen and pushes the page content to the right, so that users can see the data that they want to filter. Users open this filter mechanism by clicking the system-defined **Show filters** button on the left side of the page. After it has been opened, the Filter Pane remains visible until the user goes to a new page, or until the user closes the Filter Pane by using the **Hide filters** button.
 
 ### When is the Filter Pane available?
 
@@ -124,7 +124,7 @@ The fields that appear in the **Add a filter field** list are all the filterable
 The Filter Pane is simple and straightforward to use. First, select a filtering operator in the list that is associated with each filter field. Note that the set of operators that appears depends on the data type of the field. Then enter an appropriate value for the filter condition, and click **Apply**. The form is updated based on the filter criteria that you specified.
 
 ## QuickFilter
-In AX 2012, the QuickFilter was a framework control that was automatically added only to list pages. In the current version of Dynamics AX, the QuickFilter is now a modeled control that can be associated with any grid in the system. As the user starts to type, a column selector drop-down appears to guide the user toward the column that the filter will be applied to. The developer can also specify the default column for the QuickFilter. If no column is specified by the developer, the default column is the first field that can be filtered in the grid. [![3\_Filter](./media/3_filter.png)](./media/3_filter.png)
+In Dynamics AX 2012, the QuickFilter was a framework control that was automatically added only to list pages. In Dynamics 365 for Operations, the QuickFilter is now a modeled control that can be associated with any grid in the system. As the user starts to type, a column selector drop-down appears to guide the user toward the column that the filter will be applied to. The developer can also specify the default column for the QuickFilter. If no column is specified by the developer, the default column is the first field that can be filtered in the grid. [![3\_Filter](./media/3_filter.png)](./media/3_filter.png)
 
 ### Why don't I have a column selector in my QuickFilter?
 
@@ -139,5 +139,5 @@ Yes, you can use the QuickFilter to filter other collection controls, but you mu
 -   Write code in that method to perform the desired filtering.
 
 ## Grid column header filtering/sorting
-In the current version of Dynamics AX, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![4\_Filter](./media/4_filter.png)](./media/4_filter.png)
+In Dynamics 365 for Operations, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![4\_Filter](./media/4_filter.png)](./media/4_filter.png)
 

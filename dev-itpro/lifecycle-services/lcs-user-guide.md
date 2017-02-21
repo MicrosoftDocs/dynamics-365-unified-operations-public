@@ -3,7 +3,7 @@
 
 title: Dynamics Lifecycle Services user guide
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-09-14 12 - 16 - 10
 ms.topic: article
@@ -18,15 +18,15 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 6034
-ms.assetid: bc6efad3-db4e-42cc-a8c9-f456feeeb7d9
+ms.assetid: 3bebecd6-a72e-48b2-9eec-8c19eafe5dad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

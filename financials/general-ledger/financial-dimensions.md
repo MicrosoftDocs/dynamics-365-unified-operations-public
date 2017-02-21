@@ -21,12 +21,12 @@ ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25871
-ms.assetid: 0e72b1d3-08ea-4bc3-b4d8-2fd4332bca97
+ms.assetid: af54621c-c8be-4b72-b6df-dcf886c40ce4
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.version: AX 7.0.0
 
 This article explains the different types of financial dimensions and how they are set up.
 
-Use the Financial dimensions page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions, custom dimensions and entity backed dimensions. Custom dimensions are shared across legal entities and the values are entered and maintained by the user. Entity backed dimensions are dimensions whose values are defined elsewhere in the system, such as Customers or Stores. Some entity backed dimensions are shared across legal entities, and come entity backed dimensions are company specific. After you have created the financial dimensions, use the Financial dimension values page to assign additional properties to each financial dimension. Although you can use financial dimensions to represent legal entities without creating the legal entities in Microsoft Dynamics AX, financial dimensions aren’t designed to address the operational or business needs of legal entities. The interunit accounting functionality in Microsoft Dynamics AX is designed to address only the accounting entries that are created by each transaction. Before you set up financial dimensions as legal entities, evaluate your business processes in the following areas to determine if this setup will work for your organization:
+Use the Financial dimensions page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions, custom dimensions and entity backed dimensions. Custom dimensions are shared across legal entities and the values are entered and maintained by the user. Entity backed dimensions are dimensions whose values are defined elsewhere in the system, such as Customers or Stores. Some entity backed dimensions are shared across legal entities, and come entity backed dimensions are company specific. After you have created the financial dimensions, use the Financial dimension values page to assign additional properties to each financial dimension. Although you can use financial dimensions to represent legal entities without creating the legal entities in Microsoft Dynamics 365 for Operations, financial dimensions aren’t designed to address the operational or business needs of legal entities. The interunit accounting functionality in Microsoft Dynamics 365 for Operations is designed to address only the accounting entries that are created by each transaction. Before you set up financial dimensions as legal entities, evaluate your business processes in the following areas to determine if this setup will work for your organization:
 -   Inventory
 -   Sales and purchases between financial dimensions and legal entities
 -   Sales tax calculation and reporting

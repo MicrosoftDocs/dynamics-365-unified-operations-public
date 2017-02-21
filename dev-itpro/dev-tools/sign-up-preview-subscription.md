@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 61
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: annbe
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 13211
-ms.assetid: 96e019e1-1809-496c-88c0-8846f2513ff4
+ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

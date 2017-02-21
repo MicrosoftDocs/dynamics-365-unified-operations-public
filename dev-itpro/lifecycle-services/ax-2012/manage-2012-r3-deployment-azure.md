@@ -3,7 +3,7 @@
 
 title: Manage your Dynamics AX 2012 R3 deployment on Azure
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-05 00 - 01 - 40
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: kfend
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18491
-ms.assetid: 0941f010-3326-4eaf-8015-5b23b1027f27
+ms.assetid: 04d5d43f-07da-4a81-adce-50e214133b94
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

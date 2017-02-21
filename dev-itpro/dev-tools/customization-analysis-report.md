@@ -5,7 +5,7 @@ title: Customization Analysis Report (CAR)
 description: This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-17 01 - 33 - 12
+ms.date: 2016-11-18 23 - 49 - 33
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 51
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 49681
-ms.assetid: cc9bd59e-7fcf-49cd-9b11-da9954b05a4e
+ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -236,7 +236,7 @@ catch(Exception::UpdateConflictNotRecovered) {}</code></pre></td>
 | Issue type/severity | Code/Warning                                                                                                                                                      |
 | How to fix it       | Remove this method from your code.                                                                                                                                |
 
-### BPCheckBatchJobsEnbabled
+### BPCheckBatchJobsEnabled
 
 |                     |                                                                                                                        |
 |---------------------|------------------------------------------------------------------------------------------------------------------------|

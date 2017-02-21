@@ -2,8 +2,8 @@
 # required metadata
 
 title: Upgrade home page
-description: These topics describe the process for upgrading your environment and data.
-author: annbe
+description: These topics describe the process for upgrading your Dynamics 365 for Operations environment and data.
+author: RobinARH
 manager: AnnBe
 ms.date: 2016-09-06 21 - 39 - 39
 ms.topic: index-page
@@ -21,18 +21,29 @@ audience: Developer, IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 189723
-ms.assetid: 80b9a53d-64cb-4eed-9e3d-0c044c76a002
+ms.assetid: 998bd849-ce82-4f50-ad50-a7573ca52fd7
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: robinr
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Upgrade home page
 
-These topics describe the process for upgrading your environment and data.
+These topics describe the process for upgrading your Dynamics 365 for Operations environment and data.
 
-[Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md) [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md) [Upgrade to the latest platform of Dynamics 365 for Operations](upgrade-latest-platform-update.md) [Upgrade the Dynamics AX platform to the August 2016 release](update-platform-each-release.md)  
+Upgrading your environment and data
+-----------------------------------
+
+-   [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
+-   [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md)
+-   [Upgrade to the latest platform of Dynamics 365 for Operations](upgrade-latest-platform-update.md)
+-   [Upgrade the Dynamics AX platform to the August 2016 release](update-platform-each-release.md)
+
+## Additional resources
+-   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
+-   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 

@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25511
-ms.assetid: 3b0c0dff-fce5-44e4-a9da-16ac64c73034
+ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cgarty
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -174,7 +174,7 @@ You must also implement the **updateTemplateSettings** method to satisfy the int
     }
 
 ## Document management
-Document management supports saving record attachments in Azure Blob storage and SharePoint Online. Database storage is deprecated. Azure Blob storage is equivalent to storage in the database since documents can only be accessed through Dynamics 365 for Operations and it provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Azure blob storage is the default and works immediately. SharePoint storage will work immediately if you have an O365 license since we auto-discover the SharePoint tenant e.g. a user on the TenantA.onmicrosoft.com O365/AAD tenant gets TenantA.sharepoint.com as the SharePoint site. If document management has been turned off by the user, turn it on by clicking **Options &gt; General &gt; Miscellaneous** and setting **Document handling active** to **Yes**. [![4\_Office](./media/4_office.png)](./media/4_office.png) On any page that has data, an **Attach** button will be available in the upper-right corner. [![5\_Office](./media/5_office.png)](./media/5_office.png) The **Attachments** page provides a view of the attachments (documents) that are associated with the record that was selected on the previous page. [![6\_Office](./media/6_office.png)](./media/6_office.png) You can add new attachments to the record by clicking the **New** button (**+**) in the app bar. For the **File** and ****Image**** document types, you will be prompted to provide the associated file. **[![7\_Office](./media/7_office.png)](./media/7_office.png)**
+Document management supports saving record attachments in Azure Blob storage and SharePoint Online. Database storage is deprecated. Azure Blob storage is equivalent to storage in the database since documents can only be accessed through Dynamics 365 for Operations and it provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Azure blob storage is the default and works immediately. SharePoint storage will work immediately if you have an O365 license since we auto-discover the SharePoint tenant e.g. a user on the TenantA.onmicrosoft.com O365/AAD tenant gets TenantA.sharepoint.com as the SharePoint site. If document management has been turned off by the user, turn it on by clicking **Options &gt; General &gt; Miscellaneous** and setting **Document handling active** to **Yes**. [![4\_Office](./media/4_office.png)](./media/4_office.png) On any page that has data, an **Attach** button will be available in the upper-right corner. [![5\_Office](./media/5_office.png)](./media/5_office.png) The **Attachments** page provides a view of the attachments (documents) that are associated with the record that was selected on the previous page. You can add new attachments to the record by clicking the **New** button (**+**) in the app bar. For the **File** and ****Image**** document types, you will be prompted to provide the associated file.
 
 ### Document preview
 

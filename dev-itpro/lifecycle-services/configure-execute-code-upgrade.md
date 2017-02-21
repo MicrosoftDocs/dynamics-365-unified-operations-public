@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure the code upgrade service in Lifecycle Services | Microsoft Docs
+title: Configure the code upgrade service in Lifecycle Services
 description: This topic explains how to configure the <strong>Code upgrade </strong>tile in Lifecycle Services (LCS) to migrate your solution to the latest version of Dynamics 365 for Operations.
 author: MargoC
 manager: AnnBe
-ms.date: 2017-01-04 00:07:55
+ms.date: 2017-01-04 00 - 07 - 55
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 61
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 61
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265594
-ms.assetid: 63743947-ec79-4499-a860-2025d334ccd8
-ms.region: Global
-# ms.industry: 
+ms.assetid: 964b5a15-9b9c-434c-a4c2-e14406ebfaeb
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tabell
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -40,7 +42,7 @@ The code upgrade tool operates by connecting to Visual Studio Team Services (VST
 ## Process
 ### To create a personal access token
 
-Toc connect to a VSTS project, LCS is authenticated using a personal access token. Use the following steps to create a personal access token in VSTS. If you have already configured your LCS project to connect to your VSTS project, you can skip this section.
+To connect to a VSTS project, LCS is authenticated using a personal access token. Use the following steps to create a personal access token in VSTS. If you have already configured your LCS project to connect to your VSTS project, you can skip this section.
 
 1.  Sign in to visualstudio.com and locate your VSTS project.
 2.  In the top right corner, hover over your name, a menu appears, select **Security**.

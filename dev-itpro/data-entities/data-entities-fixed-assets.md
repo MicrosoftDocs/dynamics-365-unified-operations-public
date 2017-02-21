@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Fixed assets
+title: Data entities - Fixed assets
 description: This article provides a list of the data entities that are available for the Fixed assets functionality in Microsoft Dynamics AX.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 19 - 58
 ms.topic: article
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96073
-ms.assetid: 773f9414-1fe4-4372-bc86-5b2f91b5a6a8
+ms.assetid: 1e224c6b-d4ad-4a8f-b620-99087f3a329f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Fixed assets
+# Data entities - Fixed assets
 
 This article provides a list of the data entities that are available for the Fixed assets functionality in Microsoft Dynamics AX.
 

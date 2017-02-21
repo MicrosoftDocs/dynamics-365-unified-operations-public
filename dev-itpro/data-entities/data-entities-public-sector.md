@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Public sector
+title: Data entities - Public sector
 description: This article provides a list of the data entities that are available for the Public sector functionality in Microsoft Dynamics 365 for Operations.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 26 - 10
 ms.topic: reference
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96313
-ms.assetid: d3727089-5120-400d-aa71-511bbd0fb311
+ms.assetid: 688cf2da-b57a-434c-895d-e822316e7ea9
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Public sector
+# Data entities - Public sector
 
 This article provides a list of the data entities that are available for the Public sector functionality in Microsoft Dynamics 365 for Operations.
 

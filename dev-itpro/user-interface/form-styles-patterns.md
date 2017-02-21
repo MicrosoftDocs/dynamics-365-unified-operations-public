@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28891
-ms.assetid: 9bffefa9-ec7c-4d57-9be5-6c69242285b8
+ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -101,7 +101,7 @@ Patterns enforce properties after the pattern structure has been successfully me
 
 ### How do I identify the set of forms that I should be doing more pattern work on?
 
-To identify the set of forms that still have remaining patterns work, you should generate and consult the **Form Patterns** report. To generate the report, click **Dynamics 365 **&gt; **Addins** &gt; **Run form patterns report** in Visual Studio. [![FormFaq1Fixed](./media/formfaq1fixed.png)](./media/formfaq1fixed.png) After the report has been generated, a dialog box shows the name and location of the report file. Browse to that location, and open the report in Excel. Filter the report as described to get the desired information.
+To identify the set of forms that still have remaining patterns work, you should generate and consult the **Form Patterns** report. To generate the report, click **Dynamics 365 **&gt; **Addins** &gt; **Run form patterns report** in Visual Studio.   After the report has been generated, a dialog box shows the name and location of the report file. Browse to that location, and open the report in Excel. Filter the report as described to get the desired information.
 
 -   **Filter the "Pattern" column to only show "(Blanks)"** -  This will show all the forms with no form pattern applied (no pattern specified on Form.Design).
 -   **Filter the "Unspecific count" column to only those values "greater than 0"** - This will show all forms where a pattern is expected on either Form.Design or a container control somewhere on the form.  You can combine this filter with the previously mentioned filter on the "Pattern" column to show only forms with subpattern work remaining.

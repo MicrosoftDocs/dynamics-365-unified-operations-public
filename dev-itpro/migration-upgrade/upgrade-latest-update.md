@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 102343
-ms.assetid: b473aa9f-0883-4933-941c-b038f9f69a03
+ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tabell
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 
@@ -37,7 +37,7 @@ This topic describes the process for upgrading to the latest update for Microsof
 Overview
 --------
 
-This topic describes the overall process and the supported scenarios that are related to an upgrade from earlier releases to the current update for Dynamics 365 for Operations. It isn't intended to provide detailed instructions for every step of the process.
+This topic describes the overall process and the supported scenarios that are related to an upgrade from earlier releases to the current update for Dynamics 365 for Operations. It isn't intended to provide detailed instructions for every step of the process. For details of the contents of each available upgrade see [What's new or changed](whats-new-changed.md).
 
 ## Definitions
 Dynamics 365 for Operations platform updates consist mainly of the following components: Application Object Server (AOS), analytics and reporting, Microsoft Office integration, data management, integration services, the web client, and other binaries. It also includes the following Application Object Tree (AOT) models:

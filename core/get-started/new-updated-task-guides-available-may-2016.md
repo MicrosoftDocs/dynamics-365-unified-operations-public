@@ -2,8 +2,8 @@
 # required metadata
 
 title: New or updated task guides (May 2016)
-description: This article lists the new or updated task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released. 
-author: annbe
+description: This article lists the new or updated Task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released. 
+author: josaw1
 manager: AnnBe
 ms.date: 2016-07-26 16 - 45 - 56
 ms.topic: article
@@ -21,23 +21,23 @@ audience: Application User, IT Pro
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 104233
-ms.assetid: 457b1780-1dba-4099-9ef5-7d37f5a1b58f
+ms.assetid: 2a2ffa1e-5a15-4e2a-b18c-c4d890d38a50
 ms.search.region: global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.author: josaw
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 
 # New or updated task guides (May 2016)
 
-This article lists the new or updated task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released. 
+This article lists the new or updated Task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released. 
 
 []()Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX
 ------------------------------------------------------------------------------------------------
 
-The (May 2016) APQC Unified Library contains the task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release. Localized versions of the task guides that were released in the (February 2016) APQC Unified Library are available in this library. For more information about how to connect the Help system to a task guide library, see [Get started with Help](help-get-started.md). **Note:** An asterisk (**\***) next to the title of a Business process modeler (BPM) line indicates that the task guide for that business process was created for Dynamics AX May 2016 update and isn't supported in earlier versions of Microsoft Dynamics AX.
+The (May 2016) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release. Localized versions of the Task guides that were released in the (February 2016) APQC Unified Library are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-get-started.md). **Note:** An asterisk (**\***) next to the title of a Business process modeler (BPM) line indicates that the task guide for that business process was created for Dynamics AX May 2016 update and isn't supported in earlier versions of Microsoft Dynamics AX.
 
 ### Country/region functionality
 
@@ -194,7 +194,9 @@ The (May 2016) APQC Unified Library contains the task guides that are intended t
 See also
 --------
 
-[New task guides available (February 2016)](new-task-guides-available-february-2016.md)
+[New Task guides (February 2016)](new-task-guides-available-february-2016.md)
 
-[New or updated task guides available (August 2016)](new-updated-task-guides-available-august-2016.md)
+[New or updated Task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
+
+[New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 

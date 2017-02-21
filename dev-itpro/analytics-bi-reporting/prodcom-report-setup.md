@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up and maintain PRODCOM | Microsoft Docs
+title: Set up and maintain PRODCOM
 description: This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 for Operations. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-19 20:32:08
+ms.date: 2016-12-19 20 - 32 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: IntrastatToProdcom, InventProdComLineDetail, InventProdComLineWithCode, InventProdComParameters, InventProdComTable
+ms.search.form: IntrastatToProdcom, InventProdComLineDetail, InventProdComLineWithCode, InventProdComParameters, InventProdComTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264804
-ms.assetid: b60c566d-bf6b-4da5-a220-8cbb31d6e9b9
-ms.region: Belgium
-# ms.industry: 
+ms.assetid: b9c3b605-13fd-4764-9f7a-8d4a797297e0
+ms.search.region: Belgium
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -46,7 +48,7 @@ Before you can generate the PRODCOM report, you must set up the following on the
 
 4.  Specify an automatic recalculation preference.
 5.  Set up number sequences.
-6.  Specify the branch ID for Legal entity or Warehouses. For more information about the branch ID of Legal entity processing, including required prerequisites, see [Registration IDs](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/registration-ids).
+6.  Specify the branch ID for Legal entity or Warehouses. For more information about the branch ID of Legal entity processing, including required prerequisites, see [Registration IDs](registration-ids.md).
 
 ## Assign PRODCOM properties to an item
 Assign PRODCOM properties to an item (**Product information management &gt; Products &gt; Released products**). Open the **Released product details** page, in the **Foreign trade** section, open the PRODCOM dialog box and provide the following details.

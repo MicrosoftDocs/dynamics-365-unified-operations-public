@@ -3,7 +3,7 @@
 
 title: Apply a deployable package on a Dynamics 365 for Operations system
 description: This tutorial walks you through the steps for applying a deployable package on a Microsoft Dynamics 365 for Operations system. This package can be either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-08-10 23 - 27 - 58
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 107013
-ms.assetid: 1742d199-4e1a-4206-96af-5e3032cc8dc4
+ms.assetid: 341a229f-d9c3-4678-b353-d08d5b2c1caf
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.author: manado
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 
@@ -37,48 +37,56 @@ This tutorial walks you through the steps for applying a deployable package on a
 Supported environments
 ----------------------
 
--   **Demo** - Customers/partners can apply a deployable package in their demo environments using LCS without having to establish a remote connection to each computer.
--   **Dev/Test/Build**  – Customers/partners can apply a deployable package in their dev/test environments by establishing a remote connection to the computers and running the package manually. For more information about this environment, see [Install a deployable package in Microsoft Dynamics 365 for Operations](install-deployable-package.md).
--   **Sandbox** – Customers/partners can apply a deployable package in their sandbox environments using LCS without having to establish a remote connection to each computer.
--   **Production** – Customers can submit requests to the Microsoft Service Engineering team through Microsoft Dynamics Lifecycle Services (LCS) to apply a deployable package in their production environments. They will then be able to see the progress of their request in the **Environment details** view in LCS.
--   **Downloadable VHD** – Customers/partners can manually apply a deployable package by establishing a remote connection to the computers. For more information about this environment, see [Install a deployable package in Microsoft Dynamics 365 for Operations](install-deployable-package.md).
+Package deployment using automated flows in LCS are supported on the following topologies:
+
+-   **Implementation Project**: All environments (Dev, Test, Build, Demo, Sandbox, and Production) are now supported. Automated package application is self-serve on all environments except Production. For Production environments, customers must submit a request through LCS to the Service Engineering team to apply packages.
+-   **Partner Projects**: Demo- and single-box Dev/Test environments are supported.
+
+Manual package deployment must be used for the following topologies. For information about manual package deployment, see [Install a deployable package in Microsoft Dynamics 365 for Operations](install-deployable-package.md).
+
+-   Downloadable VHD
+-   Partner Projects: Multi-box Dev/Test topology deployments.
 
 ## Key concepts
 -   **Deployable package** – A deployable package is a unit of deployment that can be applied in any Dynamics 365 for Operations environment. A deployable package can be a binary hotfix to the Application Object Server (AOS) runtime components, an updated Dynamics 365 for Operations customization package, or a new Dynamics 365 for Operations customization/application module package. [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 -   **Runbook** – The deployment runbook is a series of steps that are generated for applying the deployable package to the target environment. Some of the steps are automated, and some are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order. [![Example of a deployment runbook](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
 -   **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary hotfix, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 
-## Types of packages
+## Supported package types
 -   **AOT deployable package** – A deployable package that is generated after the application source code is applied, any conflicts are resolved, and the code is compiled.
 -   **Binary package** – A deployable package that contains binary dynamic-link libraries (DLLs) that the platform and application depend on.
--   **Retail deployable package (combined)** – A combined deployable package that is generated from the source code.
+-   **Combined Retail deployable package** – A combined deployable package is a combination of various retail packages that are generated after the Retail code is combined.
+-   **Merged package** –** **A package that is created by merging one package of each type. For example, one Binary package, one AOT package, and one Retail package. The packages are merged in the Asset Library for the project in LCS.
 
 ## Prerequisite steps
-When the status of the package application changes, LCS sends notifications to all the project users. Any additional stakeholders who must be notified must be specified in the notification list.
+-   **Ensure that the package to be applied is valid**: When a package is uploaded to the Asset Library, it is not analyzed and selecting on the package shows the package state to be Not Validated in the right hand pane. Once a package has been validated and it passes the validation, only then can it be applied to an environment using the below flows. The state of the package will be updated in the Asset Library to indicate whether it is valid or not. This is important to ensure that the Production environment does not get affected by packages that don't meet the guidelines.
+    -   Kind of validations:
+        -   Basic package format validations
+        -   Platform version checks
+        -   Types of packages
+-   **Ensure that the package is first applied on sandbox environment before being applied on the Production environment**: In order to ensure that the Production environment is always in a good state, we want to make sure that the package is tested on a sandbox environment before it gets applied to Production. Hence, make sure the package is first applied using the automated flows in sandbox before it is applied in Production.
+-   **If you want to apply multiple packages, then create a merged package that can be applied first on a sandbox, followed by the Production**: Applying a single package on an average environment takes about 5 hours of downtime. Instead of taking additional hours of downtime for multiple packages, we have added a feature that enables you to combine a single package of each type. So if you select a binary package and an application deployable package in the asset library, it enables a button called **Merge** in the toolbar. Clicking on this button will allow you to merge these two packages into a single package reducing the total downtime to half.
 
-1.  To add additional stakeholders, in LCS, in the **Environment details** view, click **Notification list**.
-2.  Add the email address of each user who must be notified, and then click **Save**.
-
-## A customer applies a package in a demo/sandbox environment
+## Apply package on demo/dev/test/build/sandbox environments by using LCS
 **Note:** Package application causes system downtime. All the relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
 1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
     -   For a binary hotfix, upload the hotfix directly to the Asset library.
     -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
 
-2.  Open the **Environment details** view for the sandbox environment where you want to apply the package.
+2.  Open the **Environment details** view for the environment where you want to apply the package.
 3.  Click **Maintain** &gt; **Apply updates** to apply an update.
-4.  Click the type of package to apply.
-5.  Select the package to apply, and then click **Apply**. Notice that the status in the upper right of the **Environment details** view changes to **Queued**, and that an **Environment updates** section now shows the progress of the package. [![Environment details view showing Queued status and an Environment updates section](./media/applypackage_sandbox_6-1024x302.png)](./media/applypackage_sandbox_6.png)
-6.  Refresh the page to see the progress of the package application. Notice that the servicing status is **In Progress**, and the environment status is **Servicing**. [![Environment details view showing a servicing status of In Progress and an environment status of Servicing](./media/applypackage_sandbox_7-1024x397.png)](./media/applypackage_sandbox_7.png)
-7.  Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**. [![Environment details view showing an environment status of Deployed and a servicing status of Completed](./media/applypackage_sandbox_8-1024x396.png)](./media/applypackage_sandbox_8.png)
+4.  Select the package to apply. The filter at the top helps filtering through the list.
+5.  Click **Apply**. Notice that the status in the upper right of the **Environment details** view changes to **Queued**, and that an **Environment updates** section now shows the progress of the package. [![parallelexecutionsandbox\_queuedstate](./media/parallelexecutionsandbox_queuedstate.jpg)](./media/parallelexecutionsandbox_queuedstate.jpg)
+6.  Refresh the page to see the progress of the package application. Notice that the servicing status is **In Progress**, and the environment status is **Servicing**. [![parallelexecutionsandbox\_servicingstate](./media/parallelexecutionsandbox_servicingstate.png)](./media/parallelexecutionsandbox_servicingstate.png)
+7.  Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**. [![parallelexecutionsandbox\_signedoffstate](./media/parallelexecutionsandbox_signedoffstate.png)](./media/parallelexecutionsandbox_signedoffstate.png)
 8.  To sign off on the package application, click **Sign off** if there are no issues. If issues occurred when you applied the package, click **Sign off with issues**.
 
 ### Troubleshooting
 
 #### General troubleshooting/diagnostics
 
-If package application isn't successful, you can download either the logs or the runbook to see the detailed logs. You can also use Remote Desktop Protocol (RDP) to establish a remote connection to an environment to fix issues. If you must report the issue to Microsoft, be sure to include the activity ID that is reported in the **Environment updates** section. [![Environment details view showing the activity ID and the buttons for downloading the logs and the runbook](./media/applypackage_sandbox_10-1024x397.png)](./media/applypackage_sandbox_10.png)
+If package application isn't successful, you can download either the logs or the runbook to see the detailed logs. You can also use Remote Desktop Protocol (RDP) to establish a remote connection to an environment to fix issues. If you must report the issue to Microsoft, be sure to include the activity ID that is reported in the **Environment updates** section. [ ](./media/applypackage_sandbox_10.png)[![parallelexecutionsandbox\_troubleshooting](./media/parallelexecutionsandbox_troubleshooting.jpg)](./media/parallelexecutionsandbox_troubleshooting.jpg)
 
 #### Using the logs
 
@@ -90,37 +98,42 @@ If package application isn't successful, you can download either the logs or the
 
 For example, if the folder name is ExecuteRunbook-b0c5c413-dae3-4a7a-a0c4-d558614f7e98-1\_I0\_R0, the step number is highlighted and is the number after the GUID.
 
-#### Failure of a specific step
+#### Package failure
 
-If a specific step fails, you have two options:
+If package application fails, you have two options:
 
--   Click **Rerun step** or, if you've manually fixed the issue that caused the step to fail, mark the step as **Complete**.
+-   Click **Resume** to retry the failed operation.
+
+[![parallelexecutionsandbox\_failedstate](./media/parallelexecutionsandbox_failedstate.jpg)](./media/parallelexecutionsandbox_failedstate.jpg)
+
 -   Click **Abort** to stop package application. **Note:** If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue. [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 
-## A customer submits a request to apply a package in a production environment
-**Note:** See [Enable additional notifications on package application through LCS](https://ax.help.dynamics.com/en/wp-admin/post.php?post=1139123&action=edit#_Pre-requisite_Step).
+## Apply package on a Production environment by using LCS
+In a Production environment, package application through LCS is not self-serve like it is for a Sandbox or other environment types. Customers and partners must submit a request to the Service Engineering team to apply a package when the customer is ready to take the downtime. **Note:** See [Enable additional notifications on package application through LCS](https://ax.help.dynamics.com/en/wp-admin/post.php?post=1139123&action=edit#_Pre-requisite_Step).
 
 1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
     -   For a binary hotfix, upload the hotfix directly to the Asset library.
     -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
 
 2.  On the LCS **Asset library** page, on the tab that corresponds to the asset type (**Software deployable package**), select a package, and then click **Release candidate**.
-3.  Open the **Environment details** view for the production environment where you want to apply the package.
-4.  Click **Maintain** &gt; **Apply updates** to apply the package.
-5.  Select the type of package to apply.
-6.  Select the package to apply in your production environment, and then click **Schedule** to submit a request to the Service Engineering team to apply it. The list of packages includes only packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
-7.  Specify the date and time when you want to schedule package application, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
-8.  Refresh the page. Two fields on the page indicate the status of the request.
+3.  Apply the package on a Sandbox environment using the instructions above.
+4.  After the package is successfully applied and signed off in sandbox, open the Asset Library and mark the package as** Release Candidate**.
+5.  Open the **Environment details** view for the production environment where you want to apply the package.
+6.  Click **Maintain** &gt; **Apply updates** to apply the package.
+7.  Select the type of package to apply.
+8.  Select the package to apply in your production environment, and then click **Schedule** to submit a request to the Service Engineering team to apply it. **Note:** The list of packages includes only the packages that have been successfully signed off in the sandbox environment, and that have been marked as release candidates.
+9.  Specify the date and time when you want to schedule package application, click **Submit**, and then click **OK** to confirm. Note that your environments will be down and unavailable to perform business while the package is being applied.
+10. Refresh the page. Two fields on the page indicate the status of the request.
     -   **Request status** – This field indicates the status of the request that you submitted to Microsoft.
     -   **Actionable by** – This field indicates who needs to take action.
 
     [![Request status and Actionable by fields](./media/applypackage_prod_7-1024x269.png)](./media/applypackage_prod_7.png)
-9.  The Service Engineering team can either accept or deny the request.
+11. The Service Engineering team can either accept or deny the request.
     -   If the request is accepted, the Service Engineering team begins to update the environment. [![Accepted request: Request status = Request accepted, Actionable by = Microsoft](./media/applypackage_prod_9-1024x384.png)](./media/applypackage_prod_9.png)
     -   If the request is denied, Microsoft informs the customer about the reason for the denial and the action that the customer must take. The customer can then reschedule the request, change the package, or cancel the request. [![Denied request: Request status = Request denied, Actionable by = Customer/Partner](./media/applypackage_prod_8-1024x322.png)](./media/applypackage_prod_8.png)
 
     At any time, the customer can use the **Comments** field to post comments to the request. [![Example of comments that are posted to a request](./media/applypackage_prod_10-1024x336.png)](./media/applypackage_prod_10.png)
-10. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of the package application. [![Servicing status and Request status fields](./media/applypackage_prod_11-1024x399.png)](./media/applypackage_prod_11.png) You can also see the number of steps that have been run, out of the total number of steps that are available. [![Progress indicator](./media/applypackage_prod_12-1024x414.png)](./media/applypackage_prod_12.png)
+12. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of the package application. [![Servicing status and Request status fields](./media/applypackage_prod_11-1024x399.png)](./media/applypackage_prod_11.png) You can also see the number of steps that have been run, out of the total number of steps that are available. [![Progress indicator](./media/applypackage_prod_12-1024x414.png)](./media/applypackage_prod_12.png)
 
 ### Successful package application
 

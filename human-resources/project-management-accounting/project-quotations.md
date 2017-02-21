@@ -3,7 +3,7 @@
 
 title: Project quotations
 description: This article introduces the concept of project quotations, which you can use to make an attractive offer to a customer as the first step of the project phase. A project quotation might include the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges. 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-11 23 - 26 - 15
 ms.topic: article
@@ -17,16 +17,16 @@ ms.search.form: SalesQuotationProjTable
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: kfend
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23621
-ms.assetid: e262c40a-74ae-4d77-9037-8230dd269923
+ms.assetid: 1ba67109-8c5b-4ada-b730-a72cd46203fd
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

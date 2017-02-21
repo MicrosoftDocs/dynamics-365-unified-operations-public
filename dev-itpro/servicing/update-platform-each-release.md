@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 125753
-ms.assetid: 423f53d0-cd48-420d-926c-56980b4d438a
+ms.assetid: 99af5334-d30e-4160-9504-881777e9d4ea
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tabell
-ms.dyn365.intro: Aug-16
-ms.dyn365.version: Platform update 2
+ms.dyn365.ops.intro: 01-08-2016
+ms.dyn365.ops.version: Platform update 2
 
 ---
 
@@ -59,13 +59,12 @@ The following illustrations show the different overall process for two scenario
 
 [![Upgrade process for implementations that have customized platform packages](./media/flowwithcustomisations.jpg)](./media/flowwithcustomisations.jpg)
 
-## Create a copy of a platform update package
-Platform update packages are released by Microsoft, and can be downloaded from the Shared Asset Library in Microsoft Lifecycle Services (LCS) in the Software deployable package section. The package is named **Dynamics AX platform August 2016 release (Update 2).** If you haven't done so yet, create a copy of the **Dynamics AX platform August 2016 release** package in your local asset library as follows.
+## Import the platform update package
+Platform update packages are released by Microsoft and can be imported from the Shared Asset Library in Microsoft Lifecycle Services (LCS). The package is named **Dynamics AX platform August 2016 release (Update 2).** If you haven't done so yet, import the **Dynamics AX platform August 2016 release (Update 2)** package to your project's asset library by following these steps:
 
 1.  Go to your LCS project's asset library.
 2.  Select the Software Deployable Package tab.
-3.  Click **Import** to create a reference to the **Dynamics AX platform August 2016 release** shared package.[![importupgradepackage](./media/importupgradepackage.png)](./media/importupgradepackage.png)
-4.  Click **Copy **to create a local copy of the package that you can apply to the environments in your projects.![copysharedasset](./media/copysharedasset.png)
+3.  Click **Import **then select the **Dynamics AX platform August 2016 release (Update 2)** shared package.[![importupgradepackage](./media/importupgradepackage.png)](./media/importupgradepackage.png)
 
 ## How to apply the platform upgrade package
 From a process perspective, a platform upgrade package is similar to a binary hotfix deployable package.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: X++ and C# comparison
-description: This wiki compares X++ and C# syntax and programming.
+description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
 manager: AnnBe
 ms.date: 2016-03-29 20 - 41 - 17
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72424
-ms.assetid: be326e82-e470-4d94-a90c-ed2ed2b1ede4
+ms.assetid: 9e0b3126-aa04-4b76-a254-bfbd3fcd6552
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # X++ and C# comparison
 
-This wiki compares X++ and C# syntax and programming.
+This topic compares X++ and C# syntax and programming.
 
 X++, C\# Comparison: Hello World
 --------------------------------
@@ -994,7 +994,7 @@ The output from the C\# program to the command line console is as follows:
 The **container** is a special data type that is available in X++. It can be considered as similar to an array, or similar to a `List` collection. For more information, see Containers.
 
 ## X++, C\# Comparison: Collections
-Microsoft Dynamics AX provides the X++ `List` collection class. The .NET Framework that is used in C\# has a similar class named `System.Collections.Generic.List`.
+Microsoft Dynamics 365 for Operations provides the X++ `List` collection class. The .NET Framework that is used in C\# has a similar class named `System.Collections.Generic.List`.
 
 ### Comparing the Use of the List Classes
 
@@ -1112,7 +1112,7 @@ The following table contains code examples that combine the contents of two coll
 | listStrings = List::merge ` (listStrings ,listStr3);` // Or use the `.appendList` method: `listStrings.appendList (listStr3);` | `listStrings.InsertRange` ` (listStrings.Count ,listStr3);` |
 
 ## X++, C\# Comparison: Collections of Keys with Values
-Microsoft Dynamics AX provides the `Map` collection class. The `Map` collection holds pairs of values, the key value plus a data value. This resembles the .NET Framework class named `System.Collections.Generic.Dictionary`.
+Microsoft Dynamics 365 for Operations provides the `Map` collection class. The `Map` collection holds pairs of values, the key value plus a data value. This resembles the .NET Framework class named `System.Collections.Generic.Dictionary`.
 
 ### X++ to C\# Comparisons
 
@@ -1216,9 +1216,9 @@ Exception-related differences between X++ and C\# are described in the following
 </tr>
 <tr class="even">
 <td><strong>finally</strong></td>
-<td>There is no <strong>finally</strong> keyword in X++.</td>
+<td>The <code>finally</code> keyword is supported to follow the <code>try</code> and <code>catch</code> keywords.</td>
 <td>The <strong>finally</strong> keyword marks a block of code that follows the <strong>try</strong> and <strong>catch</strong> blocks. The finally will be executed regardless of whether any exception is thrown or caught.</td>
-<td>Only C# has a <strong>finally</strong> keyword. X++ has no counterpart.</td>
+<td>The semantics are identical to the semantics in C#.</td>
 </tr>
 <tr class="odd">
 <td>Specific exceptions</td>
@@ -1564,7 +1564,7 @@ End of C# caller method.</code></pre></td>
 </table>
 
 ## X++, C\# Comparison: Operators
-This topic compares the operators between Microsoft Dynamics AX X++ and C\#.
+This topic compares the operators between X++ and C\#.
 
 ### Assignment Operators
 
@@ -1855,7 +1855,7 @@ The output from the previous C\# sample is as follows:
 
 ### Events and the AOT
 
-Microsoft Dynamics AX has other event systems that apply only to items in the AOT. For more information, see Event Handler Nodes in the AOT.
+Microsoft Dynamics 365 for Operations has other event systems that apply only to items in the AOT. For more information, see Event Handler Nodes in the AOT.
 
 ## X++, C\# Comparison: Precompiler Directives
 X++ and C\# share some keywords for their precompiler directive syntax, but the meanings are not always the same.
@@ -1912,7 +1912,7 @@ The object oriented programming (OOP) principles of X++ differ from C\#.
 
 ### Conceptual Comparisons
 
-The following table compares the implementation of OOP principles between Microsoft Dynamics AX X++ and C\#.
+The following table compares the implementation of OOP principles between X++ and C\#.
 <table>
 <colgroup>
 <col width="25%" />
@@ -1931,7 +1931,7 @@ The following table compares the implementation of OOP principles between Micros
 <tbody>
 <tr class="odd">
 <td>Casting</td>
-<td>Starting with Microsoft Dynamics AX 2012 the X++ language has the keywords <strong>is</strong> and <strong>as</strong>, which are used to make downcasts safe and explicit.
+<td>The X++ language has the keywords <strong>is</strong> and <strong>as</strong>, which are used to make downcasts safe and explicit.
 <div class="alert">
 <table>
 <thead>
@@ -1941,7 +1941,7 @@ The following table compares the implementation of OOP principles between Micros
 </thead>
 <tbody>
 <tr class="odd">
-<td>In Microsoft Dynamics AX 2012 the X++ language does not require the use of the <strong>as</strong> keyword when you downcast a base class variable to a derived class variable. However, we recommend that all downcast statements use the <strong>as</strong> keyword.</td>
+<td>X++ does not require the use of the <strong>as</strong> keyword when you downcast a base class variable to a derived class variable. However, we recommend that all downcast statements use the <strong>as</strong> keyword.</td>
 </tr>
 </tbody>
 </table>
@@ -2124,20 +2124,18 @@ The following table lists the OOP-related keywords in X++. The usage of each key
 </table>
 
 ## X++, C\# Comparison: Classes
-When you use C\# in the .NET Framework, classes are grouped into namespaces. Each namespace focuses on a functional area such as file operations or reflection. However, when you use the classes in Microsoft Dynamics AX X++, there are no visible groupings like a namespace.
+When you use C\# in the .NET Framework, classes are grouped into namespaces. Each namespace focuses on a functional area such as file operations or reflection. However, when you use the classes in X++, there are no visible groupings like a namespace.
 
 X++, C\# Comparison: Classes about Reflection  
- 
 
 X++, C\# Comparison: Classes about File IO  
- 
 
 ## X++, C\# Comparison: Classes about Reflection
 In X++ the `TreeNode` class provides access to the Application Object Tree (AOT). The `TreeNode` class is the center of reflection functionality in X++. The `TreeNode` class and its methods can be compared to the `System.Reflection` namespace in the .NET Framework that C\# uses.
 
 ### Table of Class Comparisons
 
-The following table lists several classes that are available to you when you write C\# code. These are .NET Framework classes. For this table, all C\# classes are in the `System.Reflection` namespace unless otherwise specified. Each row shows the corresponding Microsoft Dynamics AX class, or class member, that is available to you when your write X++ code.
+The following table lists several classes that are available to you when you write C\# code. These are .NET Framework classes. For this table, all C\# classes are in the `System.Reflection` namespace unless otherwise specified. Each row shows the corresponding class, or class member, that is available to you when your write X++ code.
 | X++                                                                                        | C\#                                               | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |--------------------------------------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `TreeNode`                                                                                 | `System .Assembly`                                | Assembly is the first class to use when a C\# program must gather reflection information. Static methods on the X++ class `TreeNode` are the starting point for reflection in X++.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -2148,7 +2146,7 @@ The following table lists several classes that are available to you when you wri
 | `TreeNode .AOTsave` `TreeNode .AOTinsert`                                                  | `System .Reflection .Emit` (namespace of classes) | The `AOTsave` method applies changes from a `TreeNode` object in your X++ code to the AOT, and the changes are persisted. For a large code sample, see TreeNode.AOTsave Method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 ## X++, C\# Comparison: Classes about File IO
-Microsoft Dynamics AX provides several classes that perform file input and output (IO) operations. In the .NET Framework that is used in C\#, the counterparts to these classes reside in the `System.IO` namespace.
+There are several classes that perform file input and output (IO) operations. In the .NET Framework that is used in C\#, the counterparts to these classes reside in the `System.IO` namespace.
 
 ### Table of Class Comparisons
 
@@ -2195,7 +2193,7 @@ The following table lists several .NET Framework classes for C\# that are in the
 <tr class="even">
 <td><code>CommaIo</code> <code>Comma7Io</code></td>
 <td>(No corresponding class.)</td>
-<td>These X++ classes can generate files that Microsoft Excel can import. In X++ the SysExcel Class provides additional interaction with Excel.</td>
+<td>These X++ classes can generate files that Microsoft Excel can import. In X++ an <a href="http://epplus.codeplex.com/">EPPlus</a> library reference is available for additional interaction with Excel.</td>
 </tr>
 <tr class="odd">
 <td><code>AsciiIo</code> <code>TextIo</code></td>

@@ -3,7 +3,7 @@
 
 title: Working with Help
 description: This topic describes the components of the Help system for Microsoft Dynamics 365 for Operations, and provides an overview of how to connect them and a summary of how to create custom help. 
-author: annbe
+author: margoc
 manager: AnnBe
 ms.date: 2015-12-03 22 - 12 - 49
 ms.topic: article
@@ -18,15 +18,15 @@ ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 16141
-ms.assetid: 9ad09391-2602-4b4c-aa54-5dec0b8d16ee
+ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: margoc
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

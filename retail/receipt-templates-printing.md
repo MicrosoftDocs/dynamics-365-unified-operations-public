@@ -2,7 +2,7 @@
 # required metadata
 
 title: Receipt templates and printing
-description: This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Retail and commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
+description: This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Microsoft Dynamics 365 for Operations - Retail includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 author: josaw1
 manager: AnnBe
 ms.date: 2016-03-01 21 - 00 - 50
@@ -21,18 +21,18 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 57841
-ms.assetid: ee62644a-57af-4d3b-982a-55576bec8e86
+ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Receipt templates and printing
 
-This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Retail and commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
+This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Microsoft Dynamics 365 for Operations - Retail includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 
 **Important:** You must set up form layouts and receipt profiles to print receipts and other documents from Retail Modern POS and Cloud POS. You can include multiple form layouts in a receipt profile. You can then assign the receipt profile to a printer by modifying a hardware profile.
 
@@ -53,7 +53,7 @@ Use the form layout designer to graphically create the layout of the form docume
 2.  On the **Receipt format** page, select a form layout, and then click **Designer**.
 3.  Click **Run** to start to install the Retail designer host.
 4.  On the Notification bar that appears at the bottom of the Internet Explorer window, click **Open** to start to install the one-click designer. (The Notification bar might appear in a different location in other browsers.) The progress indicator shows the progress of the installation process.
-5.  After the installation is completed, enter your Microsoft Dynamics AX user name and password, and then click **Sign in** to start the designer.
+5.  After the installation is completed, enter your Dynamics 365 for Operations user name and password, and then click **Sign in** to start the designer.
 6.  After your credentials are validated and the designer starts, you can start to design the receipt format or modify an existing format.
 7.  To create the elements of the form, select the **Header**, **Lines**, or **Footer** section, and then drag an element from that section to the workspace. Most elements contain variables that are automatically populated with data from the database. Other elements, such as **Text**, let you print custom text on the receipt. **Note:** You can specify how many lines each section spans by adjusting the number in the lower-right corner of that section. To make it easier to modify a section, increase its height by dragging the sizing bar at the bottom of the section. The height of the section on the workspace doesn't affect the number of lines on the actual receipt.
 8.  After you drag an element to the workspace, set the properties for the part in the **Object information** pane at the bottom of the page. Enter one or more of the following settings:

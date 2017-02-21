@@ -18,15 +18,15 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 31161
-ms.assetid: be76251a-f7bc-4479-8474-cb384759b98e
+ms.assetid: 59da4854-0f8c-4021-acd1-b303c06f4a34
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: May-16
-ms.dyn365.version: AX 7.0.1
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 

@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 19081
-ms.assetid: d0786a5e-fbc9-4758-b21e-f20f7fd34f97
+ms.assetid: ce126e17-5dc6-42fd-a9aa-4932e3db3830
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

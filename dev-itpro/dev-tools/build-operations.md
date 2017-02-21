@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 76764
-ms.assetid: d821f2a5-20f6-4284-9b53-59e0db2be318
+ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

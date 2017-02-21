@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 33571
-ms.assetid: eb5cd705-e257-433a-a8a6-f19f2528debd
+ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -46,8 +46,8 @@ In order to install a new version of the development tools, you'll need to unins
 
 ### Uninstall the extension
 
-1.  Open the Visual Studio **Tools &gt; Extensions and Updates** dialog. [![ToolsExtensionsUpdates\_DevoToolsHotfix](./media/toolsextensionsupdates_devotoolshotfix.png)](./media/toolsextensionsupdates_devotoolshotfix.png)
-2.  Select **Dynamics 365 for Operations Visual Studio Tools** and click **Uninstall**. [![](./media/vsextensions2.jpg)](./media/vsextensions2.jpg)
+1.  Open the Visual Studio **Tools &gt; Extensions and Updates** dialog.
+2.  Select **Dynamics 365 for Operations Visual Studio Tools** and click **Uninstall**.
 3.  When the extension is uninstalled, exit Visual Studio.
 
 ## Install a new version of the extension

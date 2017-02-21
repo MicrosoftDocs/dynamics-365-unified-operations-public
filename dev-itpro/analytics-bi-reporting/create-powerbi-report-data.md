@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24531
-ms.assetid: 8597dfd6-9f71-409d-bc2a-d113adcdf60f
+ms.assetid: f944f045-8dd1-4b38-be17-7ce958124eeb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -37,14 +37,13 @@ This tutorial outlines the process for creating an end user–friendly data mode
 Key concepts
 ------------
 
--   **Power BI** refers to the cloud-based analytics visualization platform that is used to extract, transform, and present data from Microsoft Dynamics AX (together with other systems), so that users can interact with it and share it.
--   **Power Query** refers to the Microsoft Excel–based tool set for extracting and transforming data from Dynamics AX through OData feeds into an Excel-based data model that is used in Power BI reporting.
+-   **Power BI** refers to the cloud-based analytics visualization platform that is used to extract, transform, and present data from Microsoft Dynamics 365 for Operations (together with other systems), so that users can interact with it and share it.
+-   **Power Query** refers to the Microsoft Excel–based tool set for extracting and transforming data through OData feeds into an Excel-based data model that is used in Power BI reporting.
 -   **Self-service BI** refers to enabling users to tweak existing analytic content and create new analytic content, such as reports, key performance indicators (KPIs), and dashboards.
 
 ## Supported platforms and environments
--   This tutorial is based on Dynamics AX. Earlier versions of Microsoft Dynamics AX will not include the entities that are described in this tutorial.
--   It’s a good idea to use your local desktop version of Excel to connect to the cloud instance, not Excel within the Dynamics AX virtual machines (VMs). There is a known limitation in PowerPivot on Windows Data Center VMs.
--   PowerQuery authentication is supported completely in Dynamics AX. Earlier versions aren't registered for Microsoft Azure Active Directory authentication. Registration of the instance with Azure AD is a required step and is automated as part of the deployment process.
+-   It’s a good idea to use your local desktop version of Excel to connect to the cloud instance, not Excel within the virtual machines (VMs). There is a known limitation in PowerPivot on Windows Data Center VMs.
+-   PowerQuery authentication is supported completely. Earlier versions aren't registered for Microsoft Azure Active Directory authentication. Registration of the instance with Azure AD is a required step and is automated as part of the deployment process.
 
 Microsoft Excel 2013 is required, together with PowerQuery (a post–February 2015 update of PowerQuery is required). Both 32-bit and 64-bit versions of Microsoft Office are supported, but the 64-bit version is recommended for optimal performance.
 
@@ -55,25 +54,25 @@ Microsoft Excel 2013 is required, together with PowerQuery (a post–February 20
 2.  Start Excel 2013, and verify that the **PowerQuery** tab is available.
 3.  Enable the PowerPivot and PowerView add-ins.
 
-## Verify that Dynamics AX data entities are available
-1.  Start Internet Explorer in **InPrivate** mode, and enter the URL that is used to access your Dynamics AX deployment. This URL will end with ".cloud.dynamics.com*." * Throughout this document, this URL will be referred to as \[baseurl\]. You will be asked to sign in on a page that resembles the following screen shot. [![PowerBI1](./media/powerbi1-1024x718.png)](./media/powerbi1.png)
-2.  Enter your user credentials for access to your environment. After your credentials are authenticated, you will see the Dynamics AX user interface. [![PowerBI2](./media/powerbi2-1024x553.png)](./media/powerbi2.png)
+## Verify that the data entities are available
+1.  Start Internet Explorer in **InPrivate** mode, and enter the URL that is used to access your deployment. This URL will end with ".cloud.dynamics.com*." * Throughout this document, this URL will be referred to as \[baseurl\]. You will be asked to sign in on a page that resembles the following screen shot. [![PowerBI1](./media/powerbi1-1024x718.png)](./media/powerbi1.png)
+2.  Enter your user credentials for access to your environment. After your credentials are authenticated, you will see the client. [![PowerBI2](./media/powerbi2-1024x553.png)](./media/powerbi2.png)
 3.  To validate that data entities are exposed by using the ODatav4 endpoint, enter the following URL in the browser window: \[baseurl\]/data You will be asked whether you want to display the data in JSON format, as shown in the following screenshot. [![PowerBI3](./media/powerbi3-1024x554.png)](./media/powerbi3.png)
 4.  Click **Open**. You will see the available entities in the JSON file downloaded, as shown in the following screen shot. This feed shows all the entities that have been made public from your deployment. As you develop new public entities, they will appear in this list. [![PowerBI4](./media/powerbi4-1024x616.png)](./media/powerbi4.png)
 
 **Note:** To enable the browser to display JSON content, run the file at C:\\FMLab\\ison-ie.reg, and click **Yes** to change the registry.
 
-## Access Dynamics AX OData endpoints in PowerQuery
+## Access the OData endpoints in PowerQuery
 1.  Start Excel 2013.
 2.  On the **PowerQuery** tab, click **From other data sources** &gt; **From OData feed**. [![PowerBI5](./media/powerbi5-1024x457.png)](./media/powerbi5.png)
 3.  Enter the URL of the OData endpoint, as shown in the following screen shot. Note that you must append **/data** to the \[baseurl\]. (You can copy \[basurl\] from your browser window and add **/data**.) [![PowerBI6](./media/powerbi6.png)](./media/powerbi6.png)
-4.  When PowerQuery requests that you authenticate the OData feed, select **Organization ID** as the authentication method, and enter the user name and password that you entered earlier. **Note:** Dynamics AX uses Azure AD to authenticate users. When you select **Organization ID** and enter your credentials, you're authenticated against Microsoft Dynamics AX. Therefore, you will see only data that you have access to through the Microsoft Dynamics AX security model. PowerQuery displays a list of available entities, as shown in the following screen shot. [![PowerBI7](./media/powerbi7.png)](./media/powerbi7.png)
+4.  When PowerQuery requests that you authenticate the OData feed, select **Organization ID** as the authentication method, and enter the user name and password that you entered earlier. **Note:** Dynamics 365 for Operations uses Azure AD to authenticate users. When you select **Organization ID** and enter your credentials, you're authenticated against Microsoft Dynamics 365 for Operations. Therefore, you will see only data that you have access to through the security model. PowerQuery displays a list of available entities, as shown in the following screen shot. [![PowerBI7](./media/powerbi7.png)](./media/powerbi7.png)
 5.  Use the **Navigator** pane to select the following entities, and then click **Load**:
     -   GeneralLedgerActivities
     -   FiscalCalendars
     -   MainAccounts
 
-    [![PowerBI8](./media/powerbi8.png)](./media/powerbi8.png) PowerQuery will load the data from Dynamics AX into the Excel data model. Depending on the size of the data set, this step mtake some time. [![PowerBI9](./media/powerbi9.png)](./media/powerbi9.png)
+    [![PowerBI8](./media/powerbi8.png)](./media/powerbi8.png) PowerQuery will load the data into the Excel data model. Depending on the size of the data set, this step mtake some time. [![PowerBI9](./media/powerbi9.png)](./media/powerbi9.png)
 6.  Double-click **MainAccounts** to load the query. [![PowerBI10](./media/powerbi10.png)](./media/powerbi10.png)
 7.  You can now use PowerQuery to transform your data set. For example, you can rename columns and transform values within the data set.
     1.  On the **Home** tab, click **Choose Columns**, select the following fields, and then click **OK**:
@@ -122,7 +121,7 @@ In this section, we will review the Excel data model to optimize our data for re
 
         > Total Expenses last year: =calculate(sum(\[Expenses\]),'FiscalCalendars'\[YearOffset\]=-1)
 
-        **Note:** These formulas use the DAX language. They will sum the **Expenses** column but apply a filter to your fiscal calendars on the year offset. A year offset of 0 indicates the current financial year, whereas a year offset of -1 indicates the last financial year. Year offsets let users take advantage of their custom Microsoft Dynamics AX fiscal calendars in Power BI. [![PowerBI13](./media/powerbi13.png)](./media/powerbi13.png)
+        **Note:** These formulas use the DAX language. They will sum the **Expenses** column but apply a filter to your fiscal calendars on the year offset. A year offset of 0 indicates the current financial year, whereas a year offset of -1 indicates the last financial year. Year offsets let users take advantage of their custom Microsoft Dynamics 365 for Operations fiscal calendars in Power BI. [![PowerBI13](./media/powerbi13.png)](./media/powerbi13.png)
 
     3.  Click each of the new measures, and set the format to **Decimal Number**.
 
@@ -162,7 +161,7 @@ In this section you will create a basic report by using PowerView.
 In this section, you will create a dashboard by using the data model that you created in PowerQuery.
 
 1.  In a browser, go to [http://app.PowerBI.com](http://app.powerbi.com/).
-2.  Sign in by using the same credentials that you used to access Dynamics AX.
+2.  Sign in by using the same credentials that you used to access Dynamics 365 for Operations.
 3.  Create a new dashboard by click the plus sign (+) next to **Dashboards**. Enter a suitable name. A blank dashboard that resembles the following screen shot will appear.[![PowerBI17](./media/powerbi17.png)](./media/powerbi17.png)
 4.  Click **Get data** to import data into the dashboard. A page that resembles the following screen shot will open. [![PowerBI18](./media/powerbi18-1024x448.png)](./media/powerbi18.png)
 5.  In the left pane, click **Excel Workbook**, and then click **Connect**. In the **File picker** dialog box, click **Browse** to select the Excel model that you saved in previous section. Then click **Connect**. [![PowerBI19](./media/powerbi19-1024x490.png)](./media/powerbi19.png) A blank chart icon appears on the dashboard to indicate that the data is available. [![PowerBI20](./media/powerbi20-1024x451.png)](./media/powerbi20.png)

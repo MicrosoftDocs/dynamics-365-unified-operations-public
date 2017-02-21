@@ -3,7 +3,7 @@
 
 title: Copy data between Dynamics AX instances (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-07 21 - 13 - 41
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 20251
-ms.assetid: 847982e7-3b4a-49a4-8487-0e92bc781f57
+ms.assetid: f608a318-106e-4edb-8a6f-c7a753a27640
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

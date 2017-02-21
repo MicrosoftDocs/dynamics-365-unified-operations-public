@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Display debit and credit amounts for ledger accounts | Microsoft Docs
+title: Display debit and credit amounts for ledger accounts
 description: This topic shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-05 15:21:22
+ms.date: 2017-01-05 15 - 21 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265884
-ms.assetid: 5ec81823-68c5-4abf-bcd6-9094654dfee7
-ms.region: China (PRC)
-# ms.industry: 
+ms.assetid: 0f23b25b-45e5-4156-9e38-621a97046552
+ms.search.region: China (PRC)
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

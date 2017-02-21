@@ -3,7 +3,7 @@
 
 title: Create Intelligent Data Management Framework purge objects (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 21 - 54 - 56
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17951
-ms.assetid: 95fb50fd-524d-4741-ae32-39f582b38721
+ms.assetid: 2ecae3f6-1163-4a0f-8db3-8b53908961ce
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

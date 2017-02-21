@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29901
-ms.assetid: 381c2e2c-c9eb-485b-8318-73de0c1c8006
+ms.assetid: 0c9cbc5f-88ae-4ed2-8331-13ecea029f79
 ms.search.region: Belgium, Netherlands, Sweden
 # ms.search.industry: 
 ms.author: epopov
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

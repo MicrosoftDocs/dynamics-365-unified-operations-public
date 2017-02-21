@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up reduction entries for fixed assets
-description: This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics AX. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
+description: This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics 365 for Operations. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 2015-09-10 17 - 40 - 45
@@ -21,18 +21,18 @@ ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2871
-ms.assetid: 386a9c9f-15d2-41a3-93f4-cbdde0c1bd05
+ms.assetid: 14d0b482-f71c-432a-905e-04e19eda4313
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Set up reduction entries for fixed assets
 
-This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics AX. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
+This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics 365 for Operations. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
 
 When you acquire a fixed asset by using a government subsidy, the subsidy is treated as taxable revenue. However, if you account for the whole government grant as revenue, the result is a large amount of corporate income tax, which reduces the subsidizing effect of the grant. Therefore, a special accounting treatment called a reduction entry is permitted. Basically, reduction entries defer the corporate income tax throughout the service life of the fixed asset that is acquired. Two types of accounting treatment are allowed:
 
@@ -63,25 +63,25 @@ The following table shows the prerequisites that must be in place before you sta
 <tr class="even">
 <td>Related setup tasks</td>
 <td><ul>
-<li>Make sure that you've set up basic fixed asset parameters, such as a default value model, reason codes, and number sequences, on the <strong>Fixed assets parameters</strong> page.</li>
+<li>Make sure that you've set up basic fixed asset parameters, such as a default book, reason codes, and number sequences, on the <strong>Fixed assets parameters</strong> page.</li>
 <li>Define a fixed asset group on the <strong>Fixed asset groups</strong> page.</li>
 <li>Set up currencies and rounding rules to post depreciation amounts.</li>
 <li>Set up fixed asset locations on the <strong>Fixed assets locations</strong> page.</li>
 <li>Set up a fiscal calendar for depreciation, and assign the calendar to a ledger.</li>
 <li>Make sure that you've created a fixed asset record.</li>
-<li>Make sure that you've set up a value model for the fixed asset on the <strong>Value models</strong> page.</li>
+<li>Make sure that you've set up a book for the fixed asset on the <strong>Book </strong>page.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-Microsoft Dynamics AX implements the reduction entry feature on top of existing fixed asset features. To use reduction entries, you must complete the following tasks in addition to using the existing fixed asset features.
+Microsoft Dynamics 365 for Operations implements the reduction entry feature on top of existing fixed asset features. To use reduction entries, you must complete the following tasks in addition to using the existing fixed asset features.
 
-### Assigning a reduction entry document to a fixed asset value model
+### Assigning a reduction entry document to a fixed asset book
 
 Use the **Fixed assets** page to assign a reduction entry document to a fixed asset.
 
-### Assigning a reduction entry document to multiple fixed asset value models
+### Assigning a reduction entry document to multiple fixed asset books
 
 Use the **Mass update for reduction entry document** page to assign a reduction entry document to multiple fixed assets.
 

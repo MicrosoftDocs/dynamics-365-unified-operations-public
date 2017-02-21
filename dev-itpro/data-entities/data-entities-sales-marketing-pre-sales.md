@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Sales and marketing (Pre-sales)
+title: Data entities - Sales and marketing (Pre-sales)
 description: This article provides a list of the data entities that are available for the Sales and marketing pre-sales functionality in Microsoft Dynamics 365 for Operations.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 18 - 55
 ms.topic: article
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95743
-ms.assetid: ba92cace-f484-4e2b-98e0-0997e548f519
+ms.assetid: 771b3e2b-36e1-4a83-a087-0f2bf1960ef5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Sales and marketing (Pre-sales)
+# Data entities - Sales and marketing (Pre-sales)
 
 This article provides a list of the data entities that are available for the Sales and marketing pre-sales functionality in Microsoft Dynamics 365 for Operations.
 

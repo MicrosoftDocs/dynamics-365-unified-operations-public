@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 69914
-ms.assetid: c207293a-bd50-4ca2-9a46-5a62724fd9f8
+ms.assetid: cdc3fbe4-fa45-49fa-be97-caef16b58090
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
-ms.dyn365.intro: Aug-16
-ms.dyn365.version: Platform update 2
+ms.dyn365.ops.intro: 01-08-2016
+ms.dyn365.ops.version: Platform update 2
 
 ---
 
@@ -47,6 +47,19 @@ Recent versions of Dynamics 365 for Operations
 | Microsoft Dynamics AX application              | 7.0.1             | 7.0.1265.23014   | May 2016         | [What’s new or changed in Dynamics AX application version 7.0.1 (May 2016)](whats-new-changed-application-version-7-0-1-may-2016.md) |
 | Microsoft Dynamics AX platform                 | 7.0               | 7.0.4030.16079   | February 2016    | [What’s new or changed in Dynamics AX 7.0 (February 2016)](whats-new-changed-7-0-february-2016.md)                                   |
 | Microsoft Dynamics AX application              | 7.0               | 7.0.1265.3015    | February 2016    | [What’s new or changed in Dynamics AX 7.0 (February 2016)](whats-new-changed-7-0-february-2016.md)                                   |
+
+## Support matrix
+The following table provides information about the multiple releases of Microsoft Dynamics 365 for Operations platform and Dynamics 365 for Operations application, and which versions are supported.
+
+|                       |                                |                                             |                                                  |
+|-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------------|
+|                       | **Microsoft Dynamics AX 7.0 ** | **Microsoft Dynamics AX application 7.0.1** | **Microsoft Dynamics 365 for Operations (1611)** |
+| **Platform update 3** | Supported                      | Supported                                   | Supported                                        |
+| **Platform update 2** | Supported                      | Supported                                   |                                                  |
+| **Platform update 1** | Supported                      | Supported                                   |                                                  |
+| **Platform 7.0**      | Supported                      |                                             |                                                  |
+
+ 
 
 ## Update policy
 Microsoft Dynamics 365 for Operations is serviced as a cloud offering. Updates to the Dynamics 365 for Operations platform and application will be handled in the following manner:

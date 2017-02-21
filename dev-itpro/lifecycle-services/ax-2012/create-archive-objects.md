@@ -3,7 +3,7 @@
 
 title: Create a custom target entity for the Data import/export framework (DIXF) (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 21 - 51 - 40
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17931
-ms.assetid: 6ac4ba1d-c4d3-4b7c-ade9-ad5cf4ddd4c8
+ms.assetid: 4d3e61d1-48aa-4e39-8112-6d211a1d0209
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

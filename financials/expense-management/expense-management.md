@@ -3,7 +3,7 @@
 
 title: Expense management
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-03 18 - 34 - 29
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15001
-ms.assetid: ca1cf7b1-9227-446d-9790-1b5cbb421b05
+ms.assetid: 2d97d69b-9c08-4f0d-9637-68759fd34d34
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

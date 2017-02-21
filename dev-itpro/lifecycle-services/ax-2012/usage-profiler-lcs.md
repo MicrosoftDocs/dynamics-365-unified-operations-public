@@ -3,7 +3,7 @@
 
 title: Usage profiler (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-05 18 - 06 - 51
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18751
-ms.assetid: ebae9fd4-a493-412c-9d29-df3075048613
+ms.assetid: ceeb6463-00d4-41f9-88c3-61791020a9f5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

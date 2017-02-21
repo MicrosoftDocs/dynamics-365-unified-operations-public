@@ -43,6 +43,7 @@
 # [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md)
 # [Retail hierarchies](retail-hierarchies.md)
 # [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md)
+# [Retail peripherals overview](retail-peripherals-overview.md)
 # [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 # [Retail Store Scale Unit overview](retail-store-system-before-you-begin.md)
 # [Retail time and attendance](retail-time-attendance.md)

@@ -3,7 +3,7 @@
 
 title: Fixed assets home page
 description: Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.
-author: annbe
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-09 22 - 31 - 49
 ms.topic: index-page
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21481
-ms.assetid: 60e30c0e-34ef-426e-b612-088b82a7c495
+ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: twheeloc
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -51,8 +51,6 @@ You can set up and enter acquisition information for fixed assets, and then mana
 -   [Recalculating replacement costs and insured values for fixed asset groups](recalculate-replacement-costs-insured-values-fixed-asset-groups.md)
 -   [Round-off amount for depreciation calculations](round-off-amount-depreciation-calculations.md)
 
- 
-
 ## Depreciation methods
 -   [Depreciation methods and conventions](depreciation-methods-conventions.md)
 -   [Straight line service life depreciation](straight-line-service-life-depreciation.md)
@@ -67,5 +65,4 @@ You can set up and enter acquisition information for fixed assets, and then mana
 -   [Straight line life remaining depreciation](straight-line-life-remaining-depreciation.md)
 -   [Bonus depreciation](bonus-depreciation.md)
 
-     
 

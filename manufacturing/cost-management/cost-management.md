@@ -3,7 +3,7 @@
 
 title: Cost management home page
 description: This topic provides a list of the help topics and other resources that are available for Cost management. 
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-03-23 17 - 54 - 19
 ms.topic: index-page
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: YuyuScheller
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 70044
-ms.assetid: 5439a913-ada8-4a5c-aa4c-89e2719ef0f2
+ms.assetid: 66daad5e-5fc2-4ec6-9728-bad16a551dcc
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: yuyus
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -39,7 +39,7 @@ Cost management walkthrough
 
 -   [Cost management walkthrough (Office Mix that requires a CustomerSource account)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/presentations/DynamicsTechnicalConference16)
 
-## Inventory accounting
+## Inventory costing
 -   [Cost objects](cost-object.md)
 -   [Cost entries](cost-entries.md)
 -   [Values of an inventory object](physical-quantity.md)
@@ -70,7 +70,7 @@ Cost management walkthrough
 -   [Update standard costs in a manufacturing environment](update-standard-costs-manufacturing-environment.md)
 -   [Update standard costs for a new manufactured item](update-standard-costs-new-manufactured-item.md)
 
-## Manufacturing accounting
+## Manufacturing costing
 -   [Calculation groups for BOMs](bom-calculation-groups.md)
 -   [Production order cost analysis](production-order-cost-analysis.md)
 -   [Compare active, estimated, and realized costs on a production order](http://ax.help.dynamics.com/en/wiki/view-reasons-for-high-production-variance-for-a-production-order/) (Task guide)
@@ -81,6 +81,7 @@ Cost management walkthrough
 -   [Common sources of production variances](common-sources-of-production-variances.md)
 -   [How to set up products that can be either produced or procured](manufactured-items-treated-as-purchased-items.md)
 -   [The methodology for total cost allocation](methodology-total-cost-allocation.md)
+-   [BOM calculation by using a costing sheet](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet) (White paper and requires CustomerSource account)
 
 ## Predetermined costs
 -   [Costing sheets](costing-sheets.md)

@@ -3,7 +3,7 @@
 
 title: System requirements
 description: This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Operations.
-author: annbe
+author: sericks007
 manager: AnnBe
 ms.date: 2016-02-25 22 - 43 - 40
 ms.topic: article
@@ -18,15 +18,15 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: Operations, Platform, Core
+ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 55651
-ms.assetid: 5a654eb9-4795-4e66-91ae-3389595645d3
+ms.assetid: e564d51d-42d3-47c5-b388-93b8219c692a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Aug-16
-ms.dyn365.version: Platform update 2
+ms.author: sericks
+ms.dyn365.ops.intro: 01-08-2016
+ms.dyn365.ops.version: Platform update 2
 
 ---
 
@@ -42,13 +42,13 @@ The Microsoft Dynamics 365 for Operations web application can run in any of the
 -   Microsoft Edge (latest publicly available version) on Windows 10
 -   Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
 -   Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet
--   Apple Safari (latest publicly available version) on Mac OS X 10.9 (Mavericks), 10.10 (Yosemite), or 10.11 (El Capitan), or Apple iPad
+-   Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad
 
 To find the latest release for each web browser, go to the software manufacturer’s website. **Notes:**
 
 -   To capture images that are generated from Task Recorder and include them in Microsoft Word documents, you must have a Chrome extension installed. For instructions about how to install the extension, see [Screenshot Extension setup](task-recorder.md#screenshot-extension-setup).
--   The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications.
--   The Report Designer for Financial reporting is started as ClickOnce application. If you’re using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you’re using Chrome with the incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
+-   The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
+-   The Report Designer for Financial reporting is started as a ClickOnce application. It requires a 64-bit compatible operating system. If you’re using Chrome, you must install a ClickOnce extension in order to download the report designer client. If you’re using Chrome with the incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
 
 ### Supported web browsers for Retail Cloud POS
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Single voucher and currency revaluation upgrade for Microsoft Dynamics 365 for Operations version 1611 | Microsoft Docs
+title: Single voucher and currency revaluation upgrade for Microsoft Dynamics 365 for Operations version 1611
 description: Some organizations enter journals that contain a single voucher that has more than one customer or vendor, and they also run the Accounts receivable or Accounts payable foreign currency revaluation process. This topic describes the steps that these organizations should follow when they upgrade to Microsoft Dynamics 365 for Operations version 1611.
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-12-28 16:04:17
+ms.date: 2016-12-28 16 - 04 - 17
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 2231
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 2231
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265364
-ms.assetid: d21b92a8-72aa-4700-ba25-aef017af7121
-ms.region: Global
-# ms.industry: 
+ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: saraschi
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

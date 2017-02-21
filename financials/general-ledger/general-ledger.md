@@ -3,7 +3,7 @@
 
 title: General ledger and Financial reporting home page
 description: Use General ledger to define and manage the legal entity’s financial records. The general ledger is a register of debit and credit entries. These entries are classified using the accounts that are listed in a chart of accounts. 
-author: annbe
+author: twheeloc
 manager: AnnBe
 ms.date: 2016-03-17 13 - 22 - 35
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65431
-ms.assetid: 1b1437bc-b05e-4c15-a8fe-1587de3a47bb
+ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: twheeloc
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -70,6 +70,7 @@ Financial reports provide insights into an organizations financial state at the 
 -   [Financial reporting](financial-reporting-getting-started.md)
 -   [View financial reports](view-financial-reports.md)
 -   [Resetting the financial reporting data mart after restoring a database](reset-financial-reporting-datamart-after-restore.md)
+-   [Fin](financial-performance-power-bi-content-pack.md)[ancial](financial-performance-power-bi-content-pack.md)[ Perfo](financial-performance-power-bi-content-pack.md)[rmance](financial-performance-power-bi-content-pack.md)[ cont](financial-performance-power-bi-content-pack.md)[ent](financial-performance-power-bi-content-pack.md)[ pa](financial-performance-power-bi-content-pack.md)[ck](financial-performance-power-bi-content-pack.md)[ for](financial-performance-power-bi-content-pack.md)[ Power](financial-performance-power-bi-content-pack.md)[ BI](financial-performance-power-bi-content-pack.md)
 -   [Dynamics Financial Reporting blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 ## Sales tax

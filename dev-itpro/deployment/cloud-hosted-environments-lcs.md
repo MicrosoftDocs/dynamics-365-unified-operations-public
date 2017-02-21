@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: sericks007
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13661
-ms.assetid: afb03ad1-8516-490e-915e-72a5f1b980f6
+ms.assetid: 88d3758d-7d54-4c66-8b1a-f7a9ad8c825e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

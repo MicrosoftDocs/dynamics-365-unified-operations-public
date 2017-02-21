@@ -3,7 +3,7 @@
 
 title: Install the Data import/export framework (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 19 - 21 - 44
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17631
-ms.assetid: ab0c861b-8dab-4ef6-b53c-a04b8d2d388a
+ms.assetid: 1d778366-1b39-464d-92b2-0f6ec08bfe5a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

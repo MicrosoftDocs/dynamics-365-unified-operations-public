@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial dimension configuration for integrating applications
-description: This article describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions. 
+description: This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
 author: RobinARH
 manager: AnnBe
 ms.date: 2016-06-13 14 - 07 - 46
@@ -21,18 +21,18 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 91363
-ms.assetid: cf133471-3d49-4f2e-8f86-e51d50f377ec
+ms.assetid: 6be04fc8-5e2b-4ea6-b9bc-940fb5b811e5
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: May-16
-ms.dyn365.version: AX 7.0.1
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
 # Financial dimension configuration for integrating applications
 
-This article describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions. 
+This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
 
 Financial reporting
 -------------------

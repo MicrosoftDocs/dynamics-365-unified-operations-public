@@ -3,7 +3,7 @@
 
 title: BI &amp; reporting home page
 description: This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Operations.
-author: annbe
+author: sericks007
 manager: AnnBe
 ms.date: 2015-12-14 17 - 14 - 21
 ms.topic: index-page
@@ -21,12 +21,12 @@ audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27681
-ms.assetid: 1ec1a664-0c3f-4da9-ac39-d2d11374dbd9
+ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: sericks
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -49,6 +49,7 @@ Working with aggregate data
 -   [BIR105: Create a Power BI report and dashboard](create-powerbi-report-dashboard.md)
 -   [Retail Channel Performance content pack for Power BI](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Financial Performance content pack for Power BI](financial-performance-power-bi-content-pack.md)
+-   [Sales and profitability performance content pack for Power BI](sales-profitability-performance-content-pack.md)
 -   [Use an Electronic reporting configuration to provide Power BI with data from Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## Building embedded analytical experiences in the Dynamics 365 for Operations client

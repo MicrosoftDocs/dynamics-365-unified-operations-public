@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 60373
-ms.assetid: abbb143a-3749-4fa5-a996-9997ba816e04
+ms.assetid: 0fa10573-8146-446e-8124-8a7af9546add
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anupams
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

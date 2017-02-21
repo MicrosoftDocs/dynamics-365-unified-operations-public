@@ -18,15 +18,15 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 220314
-ms.assetid: 949665ce-ae27-4352-a88a-c5ceee6c01b7
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

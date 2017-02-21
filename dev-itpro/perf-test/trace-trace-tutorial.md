@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25471
-ms.assetid: 0f46c668-e933-4ee9-869a-8451d5fa7662
+ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: chwolf
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,10 +34,10 @@ ms.dyn365.version: AX 7.0.0
 
 This tutorial provides guidelines on how to take traces.
 
-In this tutorial, you'll take a tour of how to collect and download traces within AX 7. The trace analysis tool works largely similar to the Dynamics AX 2012 version yet it is not backward compatible and you can't use it to analyze Dynamics AX 2012 traces. The trace parser tool can be found in the PerfSDK folder on your development deployments.
+In this tutorial, you'll take a tour of how to collect and download traces. The trace analysis tool works largely similar to the Dynamics AX 2012 version yet it is not backward compatible and you can't use it to analyze Dynamics AX 2012 traces. The trace parser tool can be found in the PerfSDK folder on your development deployments.
 
 ## Prerequisites
-This tutorial requires that you access the Dynamics AX environment as an administrator on the Dynamics AX instance. The administrator can also grant rights to other users to take a trace. In this way you can trace scenarios which can't be reproduced with administrative rights.
+This tutorial requires that you access the environment as an administrator on the instance. The administrator can also grant rights to other users to take a trace. In this way you can trace scenarios which can't be reproduced with administrative rights.
 
 ## Capture the trace
 1.  Before you trace make sure your scenario is in a "Warm" state meaning you executed the scenario you want to trace once before you take the trace. That will prevent things like metadata loading and other possible warm up tasks from being in the trace.

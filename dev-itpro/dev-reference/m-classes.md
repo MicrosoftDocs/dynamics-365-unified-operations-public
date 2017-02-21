@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 52321
-ms.assetid: be685d01-8f11-45f0-905d-b95d8d3111f3
+ms.assetid: 954d2067-ef47-4714-ae75-23e7a5d539db
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

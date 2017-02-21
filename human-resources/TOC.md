@@ -10,6 +10,8 @@
 # [Define and manage a benefits program](manage-benefit-program.md)
 # [Manage a recruiting process](manage-recruiting-process.md)
 # [Mass hire projects](mass-hire-projects.md)
+# [Setup the components of a job](creating-a-job.md)
+# [Use workflows to manage employee information](use-workflow-to-manage-employee-information.md)
 # Project management
 ## [Intercompany invoicing](project-management-accounting\intercompany-invoicing.md)
 ## [Project management and accounting](project-management-accounting\overview-project-management-accounting.md)
@@ -27,3 +29,4 @@
 ## [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
 ## [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
 ## [Align workforce skills with business needs](skills.md)
+

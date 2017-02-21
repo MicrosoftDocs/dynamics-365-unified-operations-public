@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create or update a methodology (LCS) | Microsoft Docs
+title: Create or update a methodology (LCS)
 description: Lifecycle Services (LCS) for Microsoft Dynamics provides methodologies that you can use to ensure a more repeatable and predictable implementation project experience. You can use one of the provided methodologies or create your own. With a methodology, you can easily track and report on your progress.
 author: kfend
 manager: AnnBe
-ms.date: 2017-01-10 23:16:26
+ms.date: 2017-01-10 23 - 16 - 26
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 266824
-ms.assetid: 27b83d08-e033-4f93-9db1-9903bf387ef7
-ms.region: Global
-# ms.industry: 
+ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: manado
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

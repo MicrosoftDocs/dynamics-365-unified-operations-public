@@ -3,7 +3,7 @@
 
 title: What's new or changed in Dynamics AX application version 7.0.1 (May 2016)
 description: This article describes features that are either new or changed in Microsoft Dynamics AX application version 7.0.1. This version was released in May 2016 and has a build number of 7.0.1265.23014.
-author: annbe
+author: sericks007
 manager: AnnBe
 ms.date: 2016-06-10 19 - 54 - 44
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: sericks007
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 91213
-ms.assetid: 14145bed-25f1-42d8-af09-b89e3f6c75c2
+ms.assetid: f0bbc78f-87fc-40e9-b46a-6655893f69be
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: May-16
-ms.dyn365.version: AX 7.0.1
+ms.author: sericks
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -81,5 +81,5 @@ See also
 
 [What's new or changed](whats-new-changed.md)
 
-[New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
+[New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 

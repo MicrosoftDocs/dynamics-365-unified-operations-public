@@ -2,7 +2,7 @@
 # required metadata
 
 title: File upload control
-description: This article provides information about the file upload control. This control lets users upload files to Microsoft Dynamics AX.
+description: This topic provides information about the file upload control. This control lets users upload files to Microsoft Dynamics 365 for Operations.
 author: aneesmsft
 manager: AnnBe
 ms.date: 2016-02-24 17 - 32 - 07
@@ -17,27 +17,27 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 54311
-ms.assetid: 1cb47ba5-0a8a-48ae-94d9-c23c7b3100fd
+ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aneesa
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # File upload control
 
-This article provides information about the file upload control. This control lets users upload files to Microsoft Dynamics AX.
+This topic provides information about the file upload control. This control lets users upload files to Microsoft Dynamics 365 for Operations.
 
 Overview
 --------
 
-The file upload control lets users upload a file to Microsoft Dynamics AX. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. [![FileUpload001](./media/fileupload001.png)](./media/fileupload001.png) The file upload control can have three styles. You control the style by using the **Style** property.
+The file upload control lets users upload a file to Microsoft Dynamics 365 for Operations. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. [![FileUpload001](./media/fileupload001.png)](./media/fileupload001.png) The file upload control can have three styles. You control the style by using the **Style** property.
 
 -   The **Standard** style shows the file name field together with **Browse**, **Upload**, and **Cancel** buttons.
 -   The **Minimal** style shows only the **Browse** button.

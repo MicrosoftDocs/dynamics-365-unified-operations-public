@@ -21,12 +21,12 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 203764
-ms.assetid: 6fbb454c-434b-4af0-8200-aa5af38f541c
+ms.assetid: 45efdabf-1714-4ba4-9a9d-217143a6c6e0
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tabell
-ms.dyn365.intro: May-16
-ms.dyn365.version: AX 7.0.1
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -44,6 +44,11 @@ Moving a database involves using the sqlpackage.exe command line tool to export
 -   Export the database from the Azure SQL database.
 -   Import the database to SQL Server 2016.
 -   Run a SQL script to update the database.
+
+**Important notes for customers running Retail environments:**
+
+-   Developer environments are not supported as a target for Retail.
+-   If you want to perform this activity for Retail, contact [Microsoft support for details](lcs-support.md).
 
 ## Prerequisites
 The following prerequisites are required before you can move a database.
@@ -80,9 +85,6 @@ The values in the following forms are either environment-specific or encrypted i
 
 -   Accounts receivable &gt; Payments setup &gt; Payments services
 -   Retail and commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Hardware profiles
--   Retail and commerce &gt; Channel setup &gt; Channel profiles
--   Commerce essentials &gt; Headquarters setup &gt; Retail scheduler &gt; Real-time service profiles
--   Retail and commerce &gt; Headquarters setup &gt; Retail scheduler &gt; Channel database
 
 ## Copy the source database
 Because you will need to disable change tracking and delete the users from the database before you can export, you should create a copy of the source Azure SQL database that you will export. Then, you can work with a copy instead of deleting information from the original database. The following SQL statement will create a copy of the database **axdb\_mySourceDatabaseToCopy** called **MyNewCopy**. Edit this script with your own database names.
@@ -231,6 +233,10 @@ Execute the following SQL script against the imported database. This will add ba
     CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
     EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'
 
+### Reset the Financial Reporting database
+
+If using Financial Reporting (formerly Management Reporter) then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](reset-financial-reporting-datamart-after-restore.md).
+
 ## Start using the new database
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:
 
@@ -255,45 +261,6 @@ In the Dynamics 365 for Operations client, enter the values that you documented 
 | SysEmailSMPTPassword.Password                            | Click **System administration** &gt; **Email** &gt; **Email parameters**.                                                                                                      |
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
 | SysOAuthUserTokens.EncryptedRefr eshToken                | This field is used internally by the AOS. It can be ignored.                                                                                                                   |
-
-## Additional steps for Retail environments
-If your environment includes Retail components, you must perform additional steps so that the environment will work after the database import.
-
-### Re-enter encrypted and environment-specific values in the target database
-
-The values in the following forms are encrypted in the database, so all the imported values will be incorrect. In the target system, enter the values that you documented earlier.
-
--   Accounts receivable &gt; Payments setup &gt; Payments services
--   Retail and commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Hardware profiles
--   Retail and commerce &gt; Channel setup &gt; Channel profiles
--   Commerce essentials &gt; Headquarters setup &gt; Retail scheduler &gt; Real-time service profiles
--   Retail and commerce &gt; Headquarters setup &gt; Retail scheduler &gt; Channel database
-
-### Update the environment specific values
-
-In the target environment, you must update the environment-specific variables in the RetailSelfServicePackageInfo table. To find the values to includes in these statements, query the RetailSelfServicePackageInfo table in the source database.
-
-    update dbo.RETAILSELFSERVICEPACKAGEINFO
-    set PACKAGESTORAGEUID = '<value for PackageStorageUID from original database>'
-    where PACKAGENAME = 'HardwareStationSetup_V70126523020.exe'
-
-    update dbo.RETAILSELFSERVICEPACKAGEINFO
-    set PACKAGESTORAGEUID = '<value for PackageStorageUID from original database>'
-    where PACKAGENAME = 'ModernPOSSetup_V70126523020.exe'
-
-    update dbo.RETAILSELFSERVICEPACKAGEINFO
-    set PACKAGESTORAGEUID = '<value for PackageStorageUID from original database>'
-    where PACKAGENAME = 'ModernPOSSetupOffline_V70126523020.exe'
-
-    delete from BATCH
-    from BATCHJOB
-    where BATCH.BATCHJOBID = BATCHJOB.RECID
-    AND BATCHJOB.CAPTION = 'Default channel database batch job'
-
-    delete from BATCHJOB where BATCHJOB.CAPTION = 'Default channel database batch job'
-
-    update dbo.RETAILSHAREDPARAMETERS
-    set TENANTID = '<tenant ID from existing database>'
 
 ## Known issues
 ### Cannot drop users in source database

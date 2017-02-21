@@ -3,7 +3,7 @@
 
 title: Segmented entry control migration
 description: This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
-author: annbe
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-12 20 - 45 - 15
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25611
-ms.assetid: 4dd37500-fee0-4939-a323-29bd0326aa81
+ms.assetid: 82e953d0-878e-4a3f-a91b-7375017a2810
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: ghenriks
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

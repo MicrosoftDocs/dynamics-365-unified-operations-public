@@ -17,16 +17,16 @@ ms.search.form: PCProductConfigurationModelListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: YuyuScheller
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 4051
-ms.assetid: ffe5786b-4420-43ad-9d0c-46395e96f147
+ms.assetid: 00df5537-b148-4e32-a248-3e35876ad4e1
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

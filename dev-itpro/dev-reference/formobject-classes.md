@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes -  FormObject to FormRealControl
+title: F Classes - FormObject to FormRealControl
 description: API reference for classes from FormObject to FormRealControl.
 author: RobinARH
 manager: AnnBe
@@ -17,20 +17,20 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63603
-ms.assetid: 958d61d9-6ea4-4e6c-8150-3be9cf7c107e
+ms.assetid: 170eb939-154e-488e-84a8-f67dd9d9a8f6
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes -  FormObject to FormRealControl
+# F Classes - FormObject to FormRealControl
 
 API reference for classes from FormObject to FormRealControl.
 

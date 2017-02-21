@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+# ms.reviewer: 81
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 12641
-ms.assetid: 7cd07777-2d26-4830-b83d-6fe752f2d87a
+ms.assetid: 76db7011-2055-4c24-ac78-8f4d0675da2b
 ms.search.region: Australia
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -85,7 +85,7 @@ The following list provides an overview of the process to calculate GST and prep
 <li>Set up sales tax codes</li>
 <li>Set up sales tax groups</li>
 <li>Set up item sales tax groups</li>
-<li>Set up BAS PAYG reason codes</li>
+<li><a href="http://ax.help.dynamics.com/en/wiki/set-up-reason-codes-for-australia-bas/">Set up reason codes for Australia BAS</a></li>
 <li>Set up BAS fringe benefit reason codes</li>
 <li>Set up withholding tax codes</li>
 <li>Set up withholding tax groups</li>
@@ -96,4 +96,11 @@ The following list provides an overview of the process to calculate GST and prep
 </table>
 
 
+
+See also
+--------
+
+[Add BAS report boxes and generate the Australia Business Activity Statement BAS](http://ax.help.dynamics.com/en/wiki/add-bas-report-boxes-and-generate-the-australia-business-activity-statement-bas/)
+
+[Additional BAS report boxes page (Field descriptions)](http://ax.help.dynamics.com/en/wiki/additional-bas-report-boxes-page-field-descriptions/)
 

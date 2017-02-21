@@ -3,7 +3,7 @@
 
 title: Configure the version of SSIS used by the Data import/export framework (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-02-23 21 - 01 - 55
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 51562
-ms.assetid: 7fee09df-2726-408d-a22a-ee0b97982fbf
+ms.assetid: 02188740-e0d9-4b25-9512-dfd15e68020f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

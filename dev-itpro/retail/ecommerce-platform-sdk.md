@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 for Operations versions and update policy
-description: Describes the E-Commerce Platform SDK.
+description: This topic describes the E-Commerce Platform SDK.
 author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 23 - 12 - 08
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18101
-ms.assetid: c9dda8b9-8cda-484a-8490-653303c72a1d
+ms.assetid: c0b1740b-1cbb-47c4-94e8-779cde8411af
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: meeram
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Dynamics 365 for Operations versions and update policy
 
-Describes the E-Commerce Platform SDK.
+This topic describes the E-Commerce Platform SDK.
 
 **Purpose: The** E-Commerce Platform SDK consist of the following components:
 
@@ -45,13 +45,13 @@ Describes the E-Commerce Platform SDK.
 ### Use the RetailSDK to create the sample asp.net website
 
 1.  Open Visual Studio in Admin mode. This is necessary for publishing to the inetpub folder.
-2.  Open C:Microsoft Dynamics AX70RetailSdkOnlineStoreOnlineStore.sln contains all the framework components.
-3.  The sample online store is available at C:Microsoft Dynamics AX70RetailSdkSampleExtensionsOnlineStore.
+2.  Open C:\\Microsoft Dynamics AX70\\RetailSdkOnlineStoreOnlineStore.sln contains all the framework components.
+3.  The sample online store is available at C:\\Microsoft Dynamics AX70\\RetailSdkSampleExtensionsOnlineStore.
 4.  Compile and Publish the web storefront, from within Visual Studio.
 5.  Update the path of the RetailStorefrontWebSite from IIS Manager.
-    1.  Please note RetailStorefrontWebSite created by the default setup points to C:Microsoft Dynamics AX70Retail Store FrontPackage.
-    2.  However, the publishing of the web storefront from RetailSDK will drop the files at C:inetpubRetailWebStorefront.
-    3.  Hence, the physical path of the RetailStorefrontWebSite must be updated to point to “C:inetpubRetailWebStorefront” to access web storefront on the same ports as before. Another option would be to create a new website and have that point to the inetpub location.
+    1.  Please note RetailStorefrontWebSite created by the default setup points to C:\\Microsoft Dynamics AX70\\Retail Store Front\\Package.
+    2.  However, the publishing of the web storefront from RetailSDK will drop the files at C:\\inetpub\\RetailWeb\\Storefront.
+    3.  Hence, the physical path of the RetailStorefrontWebSite must be updated to point to “C:\\inetpub\\RetailWeb\\Storefront” to access web storefront on the same ports as before. Another option would be to create a new website and have that point to the inetpub location.
 
 6.  Browse to <http://localhost:55080> or access the https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/ to see a test asp.net web site.
 
@@ -92,7 +92,7 @@ The E-Commerce platform uses OpenID as the mechanism for authentication. You can
 
     The subsequent steps should only be done to register additional providers.
 
-2.  The Retail Shared Parameters-&gt; Open ID Providers form can be used to register additional providers as below. [![ECommerce1](./media/ecommerce1-1024x430.png)](./media/ecommerce1.png)
+2.  The Retail Shared Parameters-&gt; Open ID Providers form can be used to register additional providers.
 3.  Run distribution schedule 1110.
 
 

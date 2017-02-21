@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Zakat reporting | Microsoft Docs
+title: Zakat reporting
 description: People of the Islamic faith whose annual earnings exceed a level called Nisab are legally obligated to pay 2.5 percent of their earnings to the government as Zakat.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-21 16:22:31
+ms.date: 2016-12-21 16 - 22 - 31
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 81
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265024
-ms.assetid: 1344d397-a8e5-4b59-ad41-51814ff26549
-ms.region: Saudi Arabia
-# ms.industry: 
+ms.assetid: d34e0809-7983-4fd8-8f85-ebfb218d9a1f
+ms.search.region: Saudi Arabia
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

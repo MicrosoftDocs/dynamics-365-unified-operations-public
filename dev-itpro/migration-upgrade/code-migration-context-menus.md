@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Code migration -  Context menus
+title: Code migration - Context menus
 description: A new programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Operations. It also includes UX guidelines for context menus.
 author: jasongre
 manager: AnnBe
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16301
-ms.assetid: 5f4bbc65-6e7b-4c33-8f94-38584e78ef3b
+ms.assetid: 8f3b62f2-4de6-4ea3-b3e6-1101d0fe308e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Code migration -  Context menus
+# Code migration - Context menus
 
 A new programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Operations. It also includes UX guidelines for context menus.
 

@@ -21,12 +21,12 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11184
-ms.assetid: 6a089605-4501-4f61-96dc-e4700eba9a84
+ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -265,7 +265,7 @@ This is an example of adding event handler methods on existing controls.
     var frDs = fr.dataSource("FMRental");
 
 ## Experiment with table extension display and edit methods
-The class extension framework enables you to extend tables by creating new display and edit methods on these tables without over-layering X++ code. For example, this class shows how you can extend the FMVehicle table with an extension display method named CupHoldersDisplay.
+Extension methods enable you to extend tables by creating new display and edit methods on these tables without over-layering X++ code (Extension method must belong to a class named with an \_Extension suffix). For example, this class shows how you can extend the FMVehicle table with an extension display method named CupHoldersDisplay.
 
     public static class FMVehicle_Extension
     {

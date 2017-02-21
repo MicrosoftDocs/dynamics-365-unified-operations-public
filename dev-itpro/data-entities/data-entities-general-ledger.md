@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  General ledger
+title: Data entities - General ledger
 description: This article provides a list of the data entities that are available for the General ledger functionality in Microsoft Dynamics 365 for Operations.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-12-01 20 - 03 - 23
 ms.topic: article
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95893
-ms.assetid: bd3e4ff8-65ba-4464-a6d2-7d3d46c7bef6
+ms.assetid: 882b1a83-4773-49a0-8dbb-3ac3380d344c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  General ledger
+# Data entities - General ledger
 
 This article provides a list of the data entities that are available for the General ledger functionality in Microsoft Dynamics 365 for Operations.
 

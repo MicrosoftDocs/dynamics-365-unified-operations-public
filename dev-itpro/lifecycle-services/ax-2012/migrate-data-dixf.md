@@ -3,7 +3,7 @@
 
 title: Migrate data using the Data import/export framework (AX 2012)
 description:  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-02 16 - 55 - 52
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13341
-ms.assetid: 3cfe6955-e89f-4e5b-9a29-b9cec18986a8
+ms.assetid: 6f49739f-2690-4bad-8afc-3310274315fa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Author and distribute Power BI reports with Entity store | Microsoft Docs
+title: Author and distribute Power BI reports with Entity store
 description: This topic walks you through the process of authoring and publishing Power BI reports with Entity store. 
 author: sericks007
 manager: AnnBe
-ms.date: 2017-01-05 15:20:29
+ms.date: 2017-01-05 15 - 20 - 29
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 71
-ms.suite: Released- Dynamics AX platform update 1
+# ms.reviewer: 71
+ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 265864
-ms.assetid: 2e77a3c5-1d71-4193-bd9f-031330e5e4d2
-ms.region: Global
-# ms.industry: 
+ms.assetid: e253a57a-979b-4ca5-8e09-2bfce97395a5
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: milindav
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 
@@ -43,7 +45,7 @@ If you are a power user or a business analyst, you probably create many reports 
 Using Power BI desktop, you could create a report in your development or test environment by connecting directly to Entity store. When you are satisfied with the report you can migrate this report to your production environment with the help of your administrator. Let’s see how this is done. First, let’s stage the **RetailCube** aggregate measurement into the Entity store. Launch Microsoft Dynamics 365 for Operations client (Platform update 1 or later) and navigate to the **Entity store** form. Select **RetailCube** aggregate measurement, and then select the **Refresh** button on the menu. Provide a name for the job that will be run in the background. [![retail-cube-refresh](./media/retail-cube-refresh-1024x548.jpg)](./media/retail-cube-refresh.jpg) You can monitor the progress of the job used to stage the data using the batch job monitoring form (**System administration** &gt; **Database** &gt; **batch jobs**). After the data is populated into the Entity store (it should take a minute or so with demo data), you are ready to write reports. Launch Power BI desktop, if needed, you may need to download Power BI desktop and apply updates. You will notice a welcome page, as shown below. Select the **Get data** icon. [![POwerBI Desktop launch](https://msdnshared.blob.core.windows.net/media/2016/06/POwerBI-Desktop-launch-300x159.png)](https://msdnshared.blob.core.windows.net/media/2016/06/POwerBI-Desktop-launch.png) Alternatively, when Power BI desktop launches, you can select **Get Data** &gt; **SQL Server** from the menu. [![POwerBI desktop SQL connection](https://msdnshared.blob.core.windows.net/media/2016/06/POwerBI-desktop-SQL-connection-e1466658910508.png)](https://msdnshared.blob.core.windows.net/media/2016/06/POwerBI-desktop-SQL-connection-e1466658910508.png) In the **SQL Server Database** dialog box, enter the server name and the name of the Entity store database. If you deployed a developer environment and you're working on the same machine, you can enter “**.**” as server name and **AxDW** as the database name. If you are working on a test environment, you need to obtain these parameters from your system administrator. ![SQL database direct connection](https://msdnshared.blob.core.windows.net/media/2016/06/SQL-database-direct-connection1.png) Select the **DirectQuery** option. In this example, you will create Power BI reports that are executed directly on the Entity store. If you had used the **Import** option, Power BI would cache data from the Entity store and you would need to periodically refresh the Power BI model. We don’t support Import mode with Entity store at this point in time. Select the **OK** button. Next you will see the **Navigator** dialog box. Navigator enables you to select tables and views from the Entity store that you want to report on. Enter **Retail** in the Search box, as shown below. The system will filter entities that are related to the **RetailCube** aggregate measurement that you staged previously. Select the **RetailCube\_RetailTransDetailsView** table shown in the navigator, and then select the **Load** button. You are now ready to author a report. You can drag and drop measures and fields into the canvas and explore data and trends interactively. Power BI desktop also supports creating calculations and lets you combine data from multiple aggregate measurements. In a few minutes you should be able to create a report with the data available in development environment, as shown below. First, you need to save the report as a PBIX file. [![PBI Desktop report](https://msdnshared.blob.core.windows.net/media/2016/06/PBI-Desktop-report-1024x623.png)](https://msdnshared.blob.core.windows.net/media/2016/06/PBI-Desktop-report.png) After you review the report, you can migrate it to the production environment so that your users can use this report to interact with production data.
 
 ## Validate reports in a demo environment
-You can validate the report using Power BI desktop as a first step. The report is shown with the demo or test data in your developer environment. You can continue to publish this report to your PowerBI.com account and pin it to the Dynamics 365 for Operations client if you want to integrate the report into a demo environment. If you want to preview this report with demo data, see the "Publish a report from your demo environment to your PowerBI.com account" section in [Power BI content in LCS from Microsoft and your partners](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/power-bi-content-microsoft-partners).
+You can validate the report using Power BI desktop as a first step. The report is shown with the demo or test data in your developer environment. You can continue to publish this report to your PowerBI.com account and pin it to the Dynamics 365 for Operations client if you want to integrate the report into a demo environment. If you want to preview this report with demo data, see the "Publish a report from your demo environment to your PowerBI.com account" section in [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
 Publish reports into production
 ===============================

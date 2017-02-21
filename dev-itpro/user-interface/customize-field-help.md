@@ -3,7 +3,7 @@
 
 title: Customize field Help
 description: This article describes how you can customize existing field descriptions and add your own descriptions.
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-06-14 13 - 38 - 47
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 92013
-ms.assetid: 87a97f1c-eb46-4ee5-93de-238eccb2fb65
+ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: May-16
-ms.dyn365.version: AX 7.0.1
+ms.author: yuyus
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 

@@ -3,7 +3,7 @@
 
 title: Inventory management home page
 description: This topic gives a list of the help topics and other resources that are available for Inventory management.
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-02-18 12 - 51 - 57
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 50731
-ms.assetid: 0762a8c8-02e7-4249-a724-9144a45f279c
+ms.assetid: 3b90aa12-7cef-4f0f-b69c-4527c8f5d7ec
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: yuyus
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,20 +34,20 @@ ms.dyn365.version: AX 7.0.0
 
 This topic gives a list of the help topics and other resources that are available for Inventory management.
 
-The **Inventory management** module contains basic warehousing capabilities that enable you to manage internal warehouse processes within your company. Microsoft Dynamics 365 for Operations also has an "Advanced" warehousing solution that's available in the **Warehouse management** module. For information about advanced warehousing, see the [Warehouse management home page](warehouse-management.md). The functionality available in the **Inventory management** module includes:
+The Inventory management module contains basic warehousing capabilities that enable you to manage internal warehouse processes within your company. Microsoft Dynamics 365 for Operations also has an "Advanced" warehousing solution that's available in the Warehouse management module. For information about advanced warehousing, see the [Warehouse management home page](warehouse-management.md). The functionality available in the Inventory management module includes:
 
 -   Control of layout at the aisle, rack, shelf, and bin position levels.
 -   Inbound receiving overview and registrations using arrival overview and item arrival journal processing.
     -   Direct put-away into bulk locations of flowing picking locations, as well as support for direct replenishment of fixed item picking locations.
--   Outbound warehouse overview and processing based on batching of orders using picking workbench processing as well as simple order picking operations.
+-   Outbound warehouse overview and processing based on batching of orders using picking workbench processing, as well as simple order picking operations.
     -   Periodic release and reservation of sales order to the warehouse based on workbench profiles and query functionality.
     -   Batching of orders as well as calculations of packing box sizes.
     -   Paper-based picking processing with reporting of the actual picking via the picking registration processing.
     -   Shipping overview and processing from the Shipment page.
 -   Warehouse operations to handle counting and internal adjustments and transfers between warehouse locations.
     -   Inventory counting processing based on policies like periodic, zero stock, minimum, or manual handling including counting statistics and history tracking to follow-up on the inventory accuracy.
-    -   Inventory adjustment processing using inventory adjustment and Movement journal processing with full traceability of the recorded adjustments.
-    -   Inventory optimization processing by transferring inventory on-hand between different locations by using a Transfer journal.
+    -   Inventory adjustment processing using inventory adjustment and movement journal processing with full traceability of the recorded adjustments.
+    -   Inventory optimization processing by transferring inventory on-hand between different locations by using a transfer journal.
 -   Quality management, including product testing and the management of nonconforming material.
 
 ## Warehouse layout
@@ -75,6 +75,7 @@ The **Inventory management** module contains basic warehousing capabilities that
 -   [Count inventory in a warehouse](http://ax.help.dynamics.com/en/wiki/count-inventory-in-a-warehouse/)
 -   [Inventory tag counting](inventory-tag-counting.md)
 -   [Define default order settings for items](http://ax.help.dynamics.com/en/wiki/define-default-order-settings-for-items/)
+-   [Inventory on-hand mobile workspace for Microsoft Dynamics 365 for Operations app](inventory-on-hand-mobile-workspace.md)
 
 ## Consignment inventory
 -   [Setting up consignment](set-up-consignment.md)

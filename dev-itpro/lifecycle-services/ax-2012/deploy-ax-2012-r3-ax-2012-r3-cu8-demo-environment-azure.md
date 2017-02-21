@@ -3,7 +3,7 @@
 
 title: Deploy a Dynamics AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-03 20 - 22 - 56
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: kfend
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15561
-ms.assetid: 46f539b8-ce0f-4347-a211-e5693a953c51
+ms.assetid: b7f2e7b9-2627-4e8f-beab-a3cea8d79dc4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

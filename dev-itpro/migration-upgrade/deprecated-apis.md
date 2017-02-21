@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26011
-ms.assetid: 47211c05-6be5-4913-bfae-1effc2a04779
+ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aneesa
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -883,7 +883,7 @@ Use ContextMenu instead.</td>
 <td><h4 id="overview-37"><em>Overview</em></h4>
 The SysExcel classes used COM to create and edit Excel workbooks.
 <h4 id="reason-for-deprecation-37"><em>Reason for deprecation</em></h4>
-SysExcel relied on calls to Excel COM objects from the vlient. Those COM objects are not on the server and COM calls are highly discouraged going forward.
+SysExcel relied on calls to Excel COM objects from the client. Those COM objects are not on the server and COM calls are highly discouraged going forward.
 <h4 id="migration-notes-37"><em>Migration notes</em></h4>
 Use the OpenXML .NET framework APIs instead. We are investigating the creation of an assembly that wraps OpenXML to make it easier to call from X++.</td>
 </tr>

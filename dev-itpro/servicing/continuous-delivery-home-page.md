@@ -3,7 +3,7 @@
 
 title: Continuous delivery home page
 description: These topics describe tools and guidelines related to continuous delivery of your solution.
-author: annbe
+author: RobinARH
 manager: AnnBe
 ms.date: 2016-09-06 21 - 29 - 20
 ms.topic: index-page
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 189643
-ms.assetid: db928b06-88e2-414a-9540-ca808e8ad469
+ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: robinr
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,14 +34,23 @@ ms.dyn365.version: AX 7.0.0
 
 These topics describe tools and guidelines related to continuous delivery of your solution.
 
-FAQ and Guidelines
+FAQ and guidelines
 ------------------
 
-[Frequently Asked Questions: Development and Continuous Delivery Guidelines](continuous-delivery-faq.md)
+-   [Development and continuous delivery FAQ](continuous-delivery-faq.md)
 
-## Build and Test Automation
-[Developer topology deployment with continuous build and test automation](continuous-build-test-automation.md) [Testing and validations](testing-validation.md) [PERF103: Introduction to the PerfSDK and multiuser testing with Visual Studio Online](perfsdk-tutorial.md) [Integrate the Retail SDK with the continuous build system (VSTS)](integrate-retail-sdk-continuous-build.md) [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
+## Build and test automation
+-   [Developer topology deployment with continuous build and test automation](continuous-build-test-automation.md)
+-   [Testing and validations](testing-validation.md)
+-   [PERF103: Introduction to the PerfSDK and multiuser testing with Visual Studio Online](perfsdk-tutorial.md)
+-   [Integrate the Retail SDK with the continuous build system (VSTS)](integrate-retail-sdk-continuous-build.md)
+-   [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
 
 ## Servicing
-[Servicing environments](developer-landing-page.md#servicing-environments)
+-   [Servicing environments](developer-landing-page.md#servicing-environments)
+
+## Additional resources
+-   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
+-   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 

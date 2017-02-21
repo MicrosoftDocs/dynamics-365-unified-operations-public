@@ -2,8 +2,8 @@
 # required metadata
 
 title: Budgeting home page
-description: This article provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Operations.
-author: annbe
+description: This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Operations.
+author: twheeloc
 manager: AnnBe
 ms.date: 2016-08-02 18 - 45 - 27
 ms.topic: index-page
@@ -21,18 +21,18 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 106043
-ms.assetid: 9bf52630-39fa-4cd4-b736-cf0fb0211e0d
+ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: twheeloc
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Budgeting home page
 
-This article provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Operations.
+This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Operations.
 
 Components of budgeting functionality
 -------------------------------------

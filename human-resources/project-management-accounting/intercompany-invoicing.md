@@ -3,7 +3,7 @@
 
 title: Intercompany invoicing
 description: This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Operations.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-22 23 - 53 - 53
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 94153
-ms.assetid: dc7aeca9-c263-4fe1-8584-d902fa4eaa97
+ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

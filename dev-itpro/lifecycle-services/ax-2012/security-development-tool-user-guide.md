@@ -3,7 +3,7 @@
 
 title: Security Development Tool (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 23 - 57 - 17
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18451
-ms.assetid: 6c282741-cd56-42d1-895b-45110670d517
+ms.assetid: fc61e23f-f20d-4149-800a-3614d13828a6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

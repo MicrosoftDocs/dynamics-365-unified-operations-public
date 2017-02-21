@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment methods
-description: Each payment type that a retailer accepts must be configured in Retail and commerce in Microsoft Dynamics AX when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
+description: Each payment type that a retailer accepts must be configured in Retail and commerce in Microsoft Dynamics 365 for Operations when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
 author: MargoC
 manager: AnnBe
 ms.date: 2015-12-03 20 - 52 - 48
@@ -18,23 +18,23 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: MargoC
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 15831
-ms.assetid: b9e85c64-d802-46a4-bc17-2d62f7b076c1
+ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: yabinl
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Payment methods
 
-Each payment type that a retailer accepts must be configured in Retail and commerce in Microsoft Dynamics AX when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
+Each payment type that a retailer accepts must be configured in Retail and commerce in Microsoft Dynamics 365 for Operations when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
 
-Retailers can accept various types of payment in exchange for the products and services that they sell. Although cash is the most common form of payment, retailers can also receive payment in the form of checks, cards, vouchers, and so on. Each payment type that the retailer accepts must be configured in Retail and commerce in Microsoft Dynamics AX when the system is set up. The following list describes each payment type that can be set up in Retail and commerce in Microsoft Dynamics AX:
+Retailers can accept various types of payment in exchange for the products and services that they sell. Although cash is the most common form of payment, retailers can also receive payment in the form of checks, cards, vouchers, and so on. Each payment type that the retailer accepts must be configured in Dynamics 365 for Operations - Retail when the system is set up. The following list describes each payment type that can be set up in Dynamics 365 for Operations - Retail:
 
 -   **Cash** – Money in the physical form of currency, such as banknotes and coins. This currency can be either the company currency or the store's local currency.
 -   **Check** – A negotiable instrument that instructs payment of a specific amount of a specific currency, and that is drawn on a specific bank. A check is typically valid either indefinitely or for six months after the date of issue, unless another period of validity is specified. This period varies, depending on the bank that the check is drawn on. There are various kinds of checks, such as order checks, counter checks, bearer checks, and account payee checks. You can set up checks as a payment method for each store. Checks can be accepted in the currency that is defined at either the company level or the store level. You must set up checks as a payment method before you can accept a check as payment in a store.

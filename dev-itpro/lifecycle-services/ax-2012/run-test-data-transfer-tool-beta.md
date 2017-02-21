@@ -3,7 +3,7 @@
 
 title: Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 19 - 13 - 31
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17571
-ms.assetid: f9d5a35f-fe5b-414b-8d09-b6401cbe50cc
+ms.assetid: f98591d7-f3ba-416c-982b-350823f16dad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

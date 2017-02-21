@@ -3,7 +3,7 @@
 
 title: Updates for Dynamics AX 2012 R3
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-05 18 - 05 - 34
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18731
-ms.assetid: 081e3cca-ac2b-4c1b-95c7-c098438e943c
+ms.assetid: 88358334-0848-4463-9640-73af8aa36953
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

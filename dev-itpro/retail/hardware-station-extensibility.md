@@ -2,7 +2,7 @@
 # required metadata
 
 title: Hardware Station extensibility
-description: This article explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
+description: This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 author: RobinARH
 manager: AnnBe
 ms.date: 2015-12-04 22 - 04 - 15
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17971
-ms.assetid: 550e9dab-ad2a-43b6-8366-f9854beb56fa
+ms.assetid: 256f7f2b-c419-442f-b195-0c6a299a056e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sijoshi
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Hardware Station extensibility
 
-This article explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
+This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 
 Retail Hardware Station overview
 --------------------------------

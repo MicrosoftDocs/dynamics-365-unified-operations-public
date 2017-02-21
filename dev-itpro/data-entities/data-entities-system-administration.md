@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Data entities -  System administration
+title: Data entities - System administration
 description: This article provides a list of the data entities that are available for the System administration functionality in Microsoft Dynamics 365 for Operations.
-author: annbe
+author: kfend
 manager: AnnBe
-ms.date: 2016-06-29 14 - 26 - 44
+ms.date: 2016-12-01 20 - 02 - 45
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96433
-ms.assetid: 1b8162be-f217-4815-93a7-bd66d383feaa
+ms.assetid: 8ee91948-bb1d-409d-80f4-75f32f0a7c5b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  System administration
+# Data entities - System administration
 
 This article provides a list of the data entities that are available for the System administration functionality in Microsoft Dynamics 365 for Operations.
 
@@ -219,7 +219,7 @@ The state/province information for a country/region
 
 **01.1.005 SYS - Address setup**
 
-There are five records that will fail during Cities import because of bad data. Demo data sample packages have been adjusted to account for these errors.
+There are five records that will fail during Cities import because of bad data.
 
 14
 
@@ -310,8 +310,6 @@ None
 An operating unit is an organization that represents a business process or function.
 
 **01.1.008 SYS – Organization hierarchies**
-
-If you are building your own organization hierarchy, note that the entity for export is **Organization hierarchy – published** and the entity for import is **Organization hierarchy**.
 
 21
 
@@ -437,7 +435,7 @@ Setup
 
 None
 
-Details that are related to the users **Note:** Data import can't contain a record for Guest or axrunner. These users are created at deployment and can't be updated by the import. If these records are included, the whole entity will fail. If you create your own package with an export from another system, be sure to remove the administrator user from the import file. If you don't, the information for the administrator user will be imported from the previous installation and may not allow you to log in to the current instance.
+Details that are related to the users **Note:** Data import can't contain a record for Guest or axrunner. These users are created at deployment and can't be updated by the import. If these records are included, the whole entity will fail.
 
 31
 

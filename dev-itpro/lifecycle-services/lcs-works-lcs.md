@@ -3,7 +3,7 @@
 
 title: Lifecycle Services for Dynamics 365 for Operations customers
 description: This article is intended for customers who have signed up for the current version of Microsoft Dynamics 365 for Operations. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-05-05 20 - 29 - 38
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 84711
-ms.assetid: 48658e34-4350-4286-ad48-314523e0d44c
+ms.assetid: 785baef9-aa46-44c3-95fa-e34749c2b44e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: manado
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

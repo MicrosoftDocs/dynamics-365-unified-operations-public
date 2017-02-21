@@ -3,7 +3,7 @@
 
 title: Split periods in periodic journals
 description: Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the journal is posted. When you create the journal, you specify the period interval for the recurrence, such as days or months. You also specify the number of periods for which the journal will be posted.
-author: annbe
+author: ShylaThompson
 manager: AnnBe
 ms.date: 2016-12-02 21 - 05 - 30
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261354
-ms.assetid: 9058aadf-33ff-4be6-8d3a-5790dd6cfaf3
+ms.assetid: 76c0d7bf-f795-4d42-9a86-a9f36989962c
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

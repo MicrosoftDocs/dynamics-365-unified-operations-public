@@ -3,7 +3,7 @@
 
 title: Maintenance mode
 description: This article provides information about maintenance mode in Microsoft Dynamics 365 for Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-03-24 18 - 39 - 55
 ms.topic: article
@@ -18,15 +18,15 @@ ms.search.form: SysConfiguration
 audience: IT Pro
 # ms.devlang: 
 # ms.reviewer: 51
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 70292
-ms.assetid: 9b284c39-a613-4eef-ac91-e4edd1087d59
+ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: manado
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

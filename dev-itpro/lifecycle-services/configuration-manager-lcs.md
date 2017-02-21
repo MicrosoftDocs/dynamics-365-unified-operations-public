@@ -21,12 +21,12 @@ ms.reviewer: annbe
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 62753
-ms.assetid: 65a49a1d-96d7-40da-ab32-611956403c8a
+ms.assetid: fab3f6cf-03db-47c7-90fb-f8bc03dacf49
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

@@ -21,12 +21,12 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 82022
-ms.assetid: 8fd15e0a-c6fd-4c23-bc54-04ab4792aecf
+ms.assetid: bd2fb375-84c6-428a-8e54-f0f719045898
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cmercado
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -46,7 +46,7 @@ One challenge for project managers and resource managers during the project plan
 [![Project life cycle](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) As project planning proceeds, planned resources can be replaced with staffed resources. The project manager can also go back and update the resourcing reservations during any of the project stages.
 
 ## Set up project resources
-You must set up a calendar and associate it with an employee or a worker. The calendar is used to schedule the project and the working time of the resources that are reserved for the project. During calendar setup, project managers can perform resource leveling as part of resource optimization. Based on the calendar schedule, restrictions can be placed on resources. You can set up a calendar on the **Calendars** page (**Organization administration** &gt; **Setup** &gt; **Calendars** &gt; **Calendars**).
+You must set up a calendar and associate it with an employee or a worker. The calendar is used to schedule the project and the working time of the resources that are reserved for the project. During calendar setup, project managers can perform resource leveling as part of resource optimization. Based on the calendar schedule, restrictions can be placed on resources. You can set up a calendar on the **Calendars** page (**Organization administration** &gt; **Setup** &gt; **Calendars** &gt; **Calendars**). When you set up a worker as a project resource, you can select from workers that work in the company for which you are setting up resources or, you can select workers from other companies within your organization. These are intercompany resources. The following procedures explain how to set up a worker as a project resource within your company and how to set up an intercompany project resource.
 
 ### Set up a worker as a project resource
 
@@ -56,6 +56,23 @@ You must set up a calendar and associate it with an employee or a worker. The c
 4.  Select a** **calendar, and then close the page.
 
 You can also specify default projects for a resource as a type of pre-assignment. Pre-assignments can be used when the resource manager or project manager knows which projects the resource will be working on in advance. Pre-assignments can also be based on the request of a project sponsor or customer. To pre-assign a project, on the **Assign projects** page, on the **Projects** tab, in the **Remaining projects** list, select the appropriate project.
+
+### Set up an intercompany resource
+
+When you set up a worker as an intercompany resource, you must complete the setup in the lending company and the borrowing company. **In the lending company:**
+
+1.  In Dynamics 365 for Operations, verify that the lending company is selected, and then complete the procedure above, "Set up a worker as a project resource."
+2.  Go to **General ledger **&gt; **Posting setup **&gt; **Intercompany accounting**. Click **New**.
+3.  In the **Legal entity ID **field, select the lending company. Fill in the remaining fields as appropriate, and then click **Save**.
+4.  Go the **Project management and accounting **&gt; **Setup **&gt; **Prices ** &gt; **Transfer price**.** **
+5.  On the **Transfer price **form, click **New**, and in the **Borrowing legal entity **field, select the appropriate company.
+6.  If you want to only loan the borrowing company the resource that you created at the beginning of this section, in the **Resource** field, select the name of the resource that you created. If you want to make all resources in the company available to the borrowing company, leave the **Resource **field blank.
+7.  Go to **Project management and accounting **&gt; **Setup **&gt; **Project management and accounting parameters**, and on the **Intercompany **tab, set the **Enable intercompany resource scheduling and timesheets **field to **Yes**.
+
+**In the borrowing company:**
+
+1.  Go to **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.
+2.  In the search filter, enter the name of the resource that you created in the previous procedure for the lending company to verify that the name is included in the resource list for the borrowing company.
 
 ## Manage resource competencies
 Resource competencies are an essential part of resource management. Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience. You should set up this information for each resource and update it on a regular basis. In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment. [![Examples of skills, certifications, education, and project experience](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) The following procedures explain how to set up some of the competencies for a resource. To set up competencies for a worker, you can use either the **Workers** list page in Human resources or the **Resources** list page in Project management and accounting. For the following procedures, the **Workers** list page in Human resources is used.

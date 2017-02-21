@@ -2,7 +2,7 @@
 # required metadata
 
 title: X++ compile-time functions
-description: This wiki list the compile-time functions and describes their syntax, parameters, and return values. Examples are included.
+description: This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 author: RobinARH
 manager: AnnBe
 ms.date: 2016-01-15 19 - 29 - 32
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 29581
-ms.assetid: cb85d050-3eb2-476b-9087-96714a70282e
+ms.assetid: fa6613a4-7d0b-40d3-be29-9d14c22c7d5b
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # X++ compile-time functions
 
-This wiki list the compile-time functions and describes their syntax, parameters, and return values. Examples are included.
+This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 
 Overview
 --------

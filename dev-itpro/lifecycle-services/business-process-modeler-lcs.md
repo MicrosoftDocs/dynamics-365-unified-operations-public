@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15031
-ms.assetid: 6606bfa3-c117-4d7a-b1c5-e2794d0ecaa1
+ms.assetid: 01c38560-f588-4558-a7ec-3af1bb518069
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

@@ -3,7 +3,7 @@
 
 title: View Intelligent Data Management Framework purge or archive jobs (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-05 18 - 07 - 48
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18771
-ms.assetid: 9d9f77cb-986a-4adc-9677-d2dd820ef759
+ms.assetid: fd4f59b6-280e-4091-b563-44315a1bb893
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

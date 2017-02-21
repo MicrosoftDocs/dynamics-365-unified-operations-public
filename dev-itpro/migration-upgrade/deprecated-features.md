@@ -3,7 +3,7 @@
 
 title: Deprecated features
 description: This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
-author: annbe
+author: sericks007
 manager: AnnBe
 ms.date: 2015-12-11 19 - 53 - 55
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: sericks007
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 21821
-ms.assetid: 93a4040f-4861-4310-b171-45347995f798
+ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Aug-16
-ms.dyn365.version: Platform update 2
+ms.author: sericks
+ms.dyn365.ops.intro: 01-08-2016
+ms.dyn365.ops.version: Platform update 2
 
 ---
 
@@ -246,6 +246,16 @@ Postgirot and Postgirot Utland payment formats for Sweden.
 | Reason for deprecation       | The payment formats are no longer used.                 |
 | Replaced by another feature? | Yes, ISO20022 Credit transfer payment format for Sweden |
 | Modules affected             | Accounts payable                                        |
+
+### Radio frequency identifier
+
+Radio Frequency Identification (RFID) is a data-collection technology that uses electronic tags to store identification data and a no-line-of-sight requirement reader to capture the identification data.
+
+|                              |                                               |
+|------------------------------|-----------------------------------------------|
+| Reason for deprecation       | Low customer usage and a limited feature set. |
+| Replaced by another feature? | No                                            |
+| Modules affected             | Inventory management                          |
 
 ### Report about state invoices numbering for Latvia
 
@@ -693,6 +703,14 @@ Sites Services let you build websites that extend your business processes to the
 | Reason for deprecation       | The Microsoft Azure infrastructure that is used by Dynamics AX has new capabilities that can be used instead (for example, Azure sites). |
 | Replaced by another feature? | No                                                                                                                                       |
 | Modules affected             | HR recruiting, Case management, Request for quotes, Vendor registration                                                                  |
+
+### SSAS demand forecasting strategy
+
+|                              |                                                                              |
+|------------------------------|------------------------------------------------------------------------------|
+| Reason for deprecation       | The design of the feature cannot be supported in the new cloud architecture. |
+| Replaced by another feature? | Azure Machine Learning demand forecasting strategy                           |
+| Modules affected             | Planning                                                                     |
 
 ### Travel requisitions
 

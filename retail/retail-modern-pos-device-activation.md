@@ -17,16 +17,16 @@ ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTa
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 20501
-ms.assetid: 5d47e054-560d-48fd-b9b8-16c19ede188d
+ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -141,11 +141,11 @@ You must complete this procedure before you activate Retail Modern POS with a ne
 7.  Select **OK**. In demo data, the Azure AD account that is associated with the administrator account in Operations headquarters is your administrator Azure AD account.
 8.  Select the **Save** button on the Action Pane and refresh the page. The **External identity** section should be now updated with the new information. **Note:** The **External identifier** field will remain empty. This behavior is expected, so you can ignore it.
 
-This procedure should be completed before you activate Cloud POS or Modern POS.  For more information, see [Setting up activation accounts and validating devices in HQ](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=247504&preview=true).
+This procedure should be completed before you activate Cloud POS or Modern POS.  For more information, see [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md).
 
 ### Run the Validate Devices for Activation check
 
-1.  Open the **Device** page in HQ (**Retail** &gt; **Setup POS** &gt; **Devices**).
+1.  Open the **Device** page in HQ (**Retail** **and commerce**&gt; **Setup POS** &gt; **Devices**).
 2.  Select the device to validate for device activation, and then click **Validate Devices for Activation**. For example, select device **HOUSTON-3**.
 3.  In the dialog box that appears, select the worker to validate the device for (that is, the worker that you mapped to the Azure AD account in the previous procedure). For example, select worker **000160**.
 4.  Click **OK**, and make sure that you receive the following message: "Pre-Activation validation completed for Device HOUSTON-3 and Staff 000160. Validation: Passed"

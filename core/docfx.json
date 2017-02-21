@@ -12,7 +12,11 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE"
-        ]
+        ],
+        "src": "get-started",
+        "src": "localizations",
+        "src": "organization-administration"
+   
       }
     ],
     "resource": [
@@ -27,7 +31,10 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ],
+        "src": "get-started",
+        "src": "localizations",
+        "src": "organization-administration"
       }
     ],
     "overwrite": [],

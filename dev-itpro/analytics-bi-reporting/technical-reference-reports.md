@@ -2,8 +2,8 @@
 # required metadata
 
 title: Technical reference reports
-description: This topic points you to reports that provide details about the data entities, license codes and configuration keys, aggregate measurements, reports, and workflow types that are available in Dynamics AX.
-author: annbe
+description: This topic points you to reports that provide details about the data entities, license codes and configuration keys, aggregate measurements, reports, and workflow types that are available in Dynamics 365 for Operations.
+author: sericks007
 manager: AnnBe
 ms.date: 2016-10-11 15 - 45 - 01
 ms.topic: article
@@ -21,20 +21,20 @@ audience: Developer, IT Pro
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 203624
-ms.assetid: 58fcc471-f984-4c8e-8214-653bb52abefd
+ms.assetid: 9c0aadd2-f09a-4674-802a-e0ae3f772577
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.author: sericks
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 
 # Technical reference reports
 
-This topic points you to reports that provide details about the data entities, license codes and configuration keys, aggregate measurements, reports, and workflow types that are available in Dynamics AX.
+This topic points you to reports that provide details about the data entities, license codes and configuration keys, aggregate measurements, reports, and workflow types that are available in Dynamics 365 for Operations.
 
-The following reports provide details about technical objects available in Dynamics AX. These reports are available on [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).
+The following reports provide details about technical objects available in Dynamics 365 for Operations. These reports are available on [CustomerSource](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep).
 
 |                                                                                                                                                   |                                                                                                                                                                                                                                                                         |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

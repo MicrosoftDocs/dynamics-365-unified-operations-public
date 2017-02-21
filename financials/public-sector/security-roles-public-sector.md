@@ -21,12 +21,12 @@ ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 19721
-ms.assetid: 20408ab9-0638-4163-8538-367944a077b4
+ms.assetid: e26a6d93-851e-46be-8543-de2798909350
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: brpotter
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,10 +34,10 @@ ms.dyn365.version: AX 7.0.0
 
 This article describes the functionality for public sector security roles. This functionality includes the Project manager and Purchasing agent roles for the public sector.
 
-All users must be assigned to at least one security role to have access to Microsoft Dynamics AX. Security roles determine which duties users can perform and which parts of the user interface they can view.
+All users must be assigned to at least one security role to have access to Microsoft Dynamics 365 for Operations. Security roles determine which duties users can perform and which parts of the user interface they can view.
 
 ## What are the prerequisites for assigning security roles in the public sector?
-Users must exist in Microsoft Dynamics AX before you can assign them to roles. Even if you use automatic role assignment, users themselves aren't automatically added to Microsoft Dynamics AX.
+Users must exist in Microsoft Dynamics 365 for Operations before you can assign them to roles. Even if you use automatic role assignment, users themselves aren't automatically added to Microsoft Dynamics 365 for Operations.
 
 ## Which roles do I have to assign?
 After users are in the system, there are two roles that you might have to set up for public sector organizations:
@@ -47,7 +47,7 @@ After users are in the system, there are two roles that you might have to set up
 
 ### What is the Project manager - Public sector role?
 
-The **Project manager - Public Sector** security role supports the public sector extensions for Project management. Assign this role in addition to the **Project manager** role to give project managers access to project management functionality. By default, this security role is assigned the following duties in Microsoft Dynamics AX.
+The **Project manager - Public Sector** security role supports the public sector extensions for Project management. Assign this role in addition to the **Project manager** role to give project managers access to project management functionality. By default, this security role is assigned the following duties in Microsoft Dynamics 365 for Operations.
 
 | Duty name                                                         | Duty AOT name                           | Duty description                                                                |
 |-------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ The **Project manager - Public Sector** security role supports the public sector
 
 ### What is the Purchasing agent - Public sector role?
 
-The **Purchasing agent - Public Sector** security role supports the public sector extensions for Project management. Assign this role in addition to the **Purchasing agent** role to give purchasing agents access to purchasing functionality. By default, this security role is assigned the following duties in Microsoft Dynamics AX.
+The **Purchasing agent - Public Sector** security role supports the public sector extensions for Project management. Assign this role in addition to the **Purchasing agent** role to give purchasing agents access to purchasing functionality. By default, this security role is assigned the following duties in Microsoft Dynamics 365 for Operations.
 
 | Duty name                                                       | Duty AOT name                            | Duty description                                                                                        |
 |-----------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|

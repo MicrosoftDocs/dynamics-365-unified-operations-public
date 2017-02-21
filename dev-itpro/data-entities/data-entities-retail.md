@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Retail
+title: Data entities - Retail
 description: This article provides a list of the data entities that are available for the Retail functionality in Microsoft Dynamics AX.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 20 - 32
 ms.topic: article
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96223
-ms.assetid: 11cbd53f-3cf9-4572-b871-a6f8e16e1f19
+ms.assetid: f9e602d7-f9e1-4214-8b45-d079bd436f69
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Retail
+# Data entities - Retail
 
 This article provides a list of the data entities that are available for the Retail functionality in Microsoft Dynamics AX.
 

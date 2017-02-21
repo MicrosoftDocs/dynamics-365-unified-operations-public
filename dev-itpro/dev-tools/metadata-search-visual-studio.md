@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83303
-ms.assetid: 3a09ea95-5f98-42d6-85ee-f227e9093d50
+ms.assetid: 4d686948-a78d-48fa-bbf8-28da7880eec7
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -37,7 +37,7 @@ This article describes how to use metadata search to search your code and metada
 Given the large volume of the code base and metadata, it is often necessary to find things in the code that meet a certain criteria. Often times you may not know the name of the metadata element that contains the pattern or meets the criteria. Metadata search is exposed in Visual Studio through two user interfaces: the Metadata Search tool window and the Navigate To window.
 
 ## Metadata search tool window
-You can access the Metadata search tool window from the **Dynamics 365 &gt; Metadata Search** menu command. [![MenuCommand\_MetaSearch](./media/menucommand_metasearch.png)](./media/menucommand_metasearch.png) [![Posted\_MetaSearch](./media/posted_metasearch.png)](./media/posted_metasearch.png) Enter your search query to start the search. Results will start populating in the window asynchronously as you type. You can double-click any result line to navigate to the corresponding X++ code or metadata that matches your search query. You can also select one or more results, right-click, and then add these elements to a project. You don’t need to wait for the search to complete before you start interacting with the search results. [![AddNewProject\_MetaSearch](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
+You can access the Metadata search tool window from the **Dynamics 365 &gt; Metadata Search** menu command. Enter your search query to start the search. Results will start populating in the window asynchronously as you type. You can double-click any result line to navigate to the corresponding X++ code or metadata that matches your search query.   [![Posted\_MetaSearch](./media/posted_metasearch.png)](./media/posted_metasearch.png) You can also select one or more results, right-click, and then add these elements to a project. You don’t need to wait for the search to complete before you start interacting with the search results. [![AddNewProject\_MetaSearch](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
 
 ## Navigate To window
 The **Navigate To** window is invoked using the **Ctrl+‘,’** (the comma character) shortcut keys. Pressing **Ctrl+‘,’** displays the query entry box in top right corner of the Visual Studio main document window. You can also access the **Navigate To** window from the Visual Studio **Edit** menu. Enter you search query and see the results appear as you type. A progress indicator will stop when the search is complete. You don’t need to wait for the search to complete to start interacting with the results. [![TypeForm\_MetaSearch](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)

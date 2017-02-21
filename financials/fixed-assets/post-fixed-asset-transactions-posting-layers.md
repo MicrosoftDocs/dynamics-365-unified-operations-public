@@ -21,12 +21,12 @@ ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 3001
-ms.assetid: f626156c-dbbf-4846-9f88-6e3f265cf15e
+ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -44,7 +44,7 @@ A fixed asset is often depreciated in different ways for different purposes. Dep
 See also
 --------
 
-[Derived value models](https://ax.help.dynamics.com/en/wiki/derived-value-models/)
+[Derived books](https://ax.help.dynamics.com/en/wiki/derived-value-models/)
 
-[Posting with derived value models](https://ax.help.dynamics.com/en/wiki/Posting-with-derived-value-models/)
+[Posting with derived books](https://ax.help.dynamics.com/en/wiki/Posting-with-derived-value-models/)
 

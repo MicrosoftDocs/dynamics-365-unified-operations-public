@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24321
-ms.assetid: 71b5eb7e-bae7-4691-bff2-4d295fbd5ed2
+ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shshabazz
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -83,8 +83,8 @@ The URL Generator must used from code running on the AOS, in an active user sess
 ```
 // gets the generator instance
 var generator     = new Microsoft.Dynamics.AX.Framework.Utilities.UrlHelper.UrlGenerator();
-var currentHost   = new System..Uri(.UrlUtility::getUrl());
-generator.HostUrl = currentHost.GetLeftPart(System..UriPartial::Authority);
+var currentHost   = new System.Uri(UrlUtility::getUrl());
+generator.HostUrl = currentHost.GetLeftPart(System.UriPartial::Authority);
 generator.Company = curext();
 generator.MenuItemName = <menu item name>;
 generator.Partition = getCurrentPartition(); 

@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: 51
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 83692
-ms.assetid: 91e493fb-84ac-49cd-8499-12376cf9bda7
+ms.assetid: ebe9c79a-029d-4f03-9bd8-d17e805baa89
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kuntalme
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -102,7 +102,7 @@ The entity also has the following fields.
 #### Expected outcome
 
 -   In Visual Studio, the following artifacts will appear in the project after you've completed the **Data Entity** wizard. [![New project artifacts](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
--   Right-click the data entity, and then select **Open table browser**. The data from the entity should look like the following screen shot. **Note:** Make sure that your company is set to **USSI**. [![Table browser](./media/tablebrowser_devoentity.png)](./media/tablebrowser_devoentity.png)
+-   Right-click the data entity, and then select **Open table browser**. **Note:** Make sure that your company is set to **USSI**.
 
 ### Exercise 2: Export a limited set of data by using a sample file mapping and filters
 
@@ -140,7 +140,7 @@ In this exercise, you will import two files into the **USRT** company by using t
 2.  In the client, change the company to **USRT**.
 3.  From the **User** dashboard, open the **Data Management** workspace.
 4.  Click **Import** to configure a new data project.
-5.  Enter the project details, such as the name and file format. [![Entering project details](./media/custdatamigration_devoentity.png)](./media/custdatamigration_devoentity.png)
+5.  Enter the project details, such as the name and file format.
 6.  For each file, select an entity, and then upload the data file.
 7.  Because the Customer1.csv file doesn't map correctly to the **Customers** entity, you will receive an error when you upload the file. After the file is uploaded, click **View mappings** to fix the column mappings for the **Customers** entity. **Hint:** **CustomerAccount** is required in the entity during import. It is mapped from **AccountNum** in the source file. Address fields are optional for the import.
 8.  When you've finished, click the **Back** button in your browser to return to the data project.
@@ -148,8 +148,7 @@ In this exercise, you will import two files into the **USRT** company by using t
 
 #### Expected outcome
 
--   Four updates and 23 inserts are successfully imported.
--   The **Execution summary** page resembles the following screen shot. [![Execution summary page](./media/executionsummary_devoentity.png)](./media/executionsummary_devoentity.png)
+Four updates and 23 inserts are successfully imported and the **Execution summary** page shows the results.
 
 ### Exercise 4: Re-import by using an existing data project and manage data in staging
 
@@ -162,21 +161,21 @@ In this exercise, you will use a new set of files to import data through the exi
     -   [Customers2](./media/customers2.xlsx)
     -   [CustomerGroups2](./media/customergroups2.xlsx)
 
-3.  Upload the new files for each entity, and then click **Import now**. [![Uploading new files for import](./media/jobexecution_devoentity.png)](./media/jobexecution_devoentity.png)
-4.  On the **Status** page, click **View execution log** to investigate the errors. [![Execution log](./media/viewexecutionlog_devoentity.png)](./media/viewexecutionlog_devoentity.png)
+3.  Upload the new files for each entity, and then click **Import now**.
+4.  On the **Status** page, click **View execution log** to investigate the errors.
 5.  On the **Status** page, click **View staging** to view the data in a staging table. This view will also show records that have errors.
 6.  Click **Edit** to fix records that have errors. (The **Customer Group** value for records DM10221 and DM1022 isn't valid.)
-7.  Select the records that you fixed, and then click **Validate**. Refresh the page to verify that the status of the records is **Validated**. [![Verifying that records have Validated status](./media/validated_devoentity.png)](./media/validated_devoentity.png)
+7.  Select the records that you fixed, and then click **Validate**. Refresh the page to verify that the status of the records is **Validated**.
 8.  Click **Copy data to target**.
 9.  In the **Select a job ID to run** dialog box, in the **Run for** field, select **Criteria**, and set **Row selected by user** to **Yes**. Then click **OK**. [![Selecting a job to run](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
-10. On the **Target data execution** page, click **Run**. [![Target data execution page](./media/targetdata_devoentity.png)](./media/targetdata_devoentity.png)
+10. On the **Target data execution** page, click **Run**.
 11. When the run is completed, refresh the page to see the latest staging status.
 
 #### Expected outcome
 
 -   On the first try, the import succeeds for the **Customer Groups** entity and partially succeeds for the **Customers** entity.
--   The **Execution summary** page shows that five records were created, three records were updated, and two records have errors. [![Execution summary page](./media/custdataexecutionsumm_devoentity.png)](./media/custdataexecutionsumm_devoentity.png)
--   In the staging view, two records have errors, as shown in the following screen shot. [![Records that have errors](./media/customerstagingerrors_devoentity.png)](./media/customerstagingerrors_devoentity.png)
--   After you fix the records and run the import again, the staging view shows that all records are completed. [![Completed status for all records](./media/customerstagingcompleted_devoentity.png)](./media/customerstagingcompleted_devoentity.png)
+-   The **Execution summary** page shows that five records were created, three records were updated, and two records have errors.
+-   In the staging view, two records have errors.
+-   After you fix the records and run the import again, the staging view shows that all records are completed.
 
 

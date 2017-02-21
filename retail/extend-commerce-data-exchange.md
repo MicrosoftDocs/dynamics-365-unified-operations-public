@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend Commerce Data Exchange -  Real-time Service
+title: Extend Commerce Data Exchange - Real-time Service
 description: This article explains how you can extend Commerce Data Exchange -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
 author: josaw1
 manager: AnnBe
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 68673
-ms.assetid: 0251c044-edad-4132-a93b-7a3e2cf09804
+ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Extend Commerce Data Exchange -  Real-time Service
+# Extend Commerce Data Exchange - Real-time Service
 
 This article explains how you can extend Commerce Data Exchange -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
 

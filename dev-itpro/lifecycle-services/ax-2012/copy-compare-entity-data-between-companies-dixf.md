@@ -3,7 +3,7 @@
 
 title: Copying and comparing entity data between companies (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 21 - 22 - 49
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17841
-ms.assetid: 4f0f7437-f287-472a-bc58-122b3e11b86b
+ms.assetid: 6b2d300e-daec-441d-b19f-d3701296623d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: Lifecycle Services
 # ms.tgt_pltfrm: 
 ms.custom: 196993
-ms.assetid: 1ed7707c-cc1b-496e-956a-d6b9973bb065
+ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
-ms.dyn365.intro: 
-ms.dyn365.version: 
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 
 
 ---
 

@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 93143
-ms.assetid: cf22cc6b-bef6-46f5-b01c-d688e404d1b9
+ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: fdahl
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

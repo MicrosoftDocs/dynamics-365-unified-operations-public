@@ -3,7 +3,7 @@
 
 title: Provision a downloaded development topology virtual machine
 description: When you download a developer virtual machine (VM), you must provision it.
-author: annbe
+author: RobinARH
 manager: AnnBe
 ms.date: 2016-02-29 22 - 49 - 17
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 57642
-ms.assetid: d2077918-d853-43e0-bf4e-94e31703c46d
+ms.assetid: 6f52992d-0d7a-4435-837f-dcf5925969ce
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: robinr
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

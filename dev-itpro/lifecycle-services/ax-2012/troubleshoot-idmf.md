@@ -3,7 +3,7 @@
 
 title: Troubleshoot the Intelligent Data Management Framework (AX 2012)
 description: This topic contains information about troubleshooting the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF).
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-05 18 - 03 - 50
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: kfend
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18711
-ms.assetid: 1c90f556-45ea-4fb7-a39a-7481e02acad1
+ms.assetid: fe0b2255-d44e-42db-9c90-2c6202fc7578
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

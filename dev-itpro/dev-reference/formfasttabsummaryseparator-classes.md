@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes -  FormFastTabSummarySeparator to FormGridControl
+title: F Classes - FormFastTabSummarySeparator to FormGridControl
 description: API reference for classes from FormFastTabSummarySeparator to FormGridControl.
 author: RobinARH
 manager: AnnBe
@@ -17,20 +17,20 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63473
-ms.assetid: 0176cca6-b5d2-40c0-a8a6-3d5c8852821a
+ms.assetid: 95c712f2-d71d-4dd1-a9fd-f1b88fe21807
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes -  FormFastTabSummarySeparator to FormGridControl
+# F Classes - FormFastTabSummarySeparator to FormGridControl
 
 API reference for classes from FormFastTabSummarySeparator to FormGridControl.
 

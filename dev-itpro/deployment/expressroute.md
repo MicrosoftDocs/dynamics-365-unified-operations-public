@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 260954
-ms.assetid: da8cd1bb-f13b-4d54-8007-8af1440c3ee3
+ms.assetid: 5dccb418-b489-4777-aa5e-2a0b03b4f2b0
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sarvanis
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

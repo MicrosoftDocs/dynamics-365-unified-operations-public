@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11314
-ms.assetid: 2b7ecc29-33e2-409d-9c26-329c2c317283
+ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rbrow
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -45,9 +45,7 @@ This topic shows how to modify DimensionCombinationEntity to enable the dimens
 ## Add dimensions  Dynamics 365 for Operations (version 1611, build 7.1.1541.3036+, November 2016)
 Modifying the **DimensionCombinationEntity** has been greatly simplified in Dynamics 365 for Operations with the release of the Add financial dimensions for OData Addin in Visual Studio. 1. In Microsoft Visual Studio, click **Dynamics 365 **&gt; **Addins** &gt; **Add financial dimensions for Odata**.
 
-![DimWiki1](./media/dimwiki1-300x233.png)
-
-2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension as it is named in Dynamics 365 for Operations. Select **Dimensions** as the Model. Click **Apply**. [![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)3. Compile the project, and then synchronize it with the database. ![8](./media/8-300x260.png) 4. Your customization is now completed. You can test it in SQL using the following statement.
+2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension as it is named in Dynamics 365 for Operations. Select the **Model** that has your extensions. It should be above the AppSuite layer.** **Click **Apply**. [![DimWiki2](./media/dimwiki2-300x225.png)](./media/dimwiki2.png)3. Compile the project, and then synchronize it with the database. ![8](./media/8-300x260.png) 4. Your customization is now completed. You can test it in SQL using the following statement.
 
     select * from DIMENSIONCOMBINATIONENTITY
 
@@ -97,4 +95,6 @@ See also
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
 [What’s new or changed](whats-new-changed.md)
+
+[Extensibility home page](extensibility-home-page.md)
 

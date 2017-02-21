@@ -3,7 +3,7 @@
 
 title: Configure global address books
 description: This article describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books in Microsoft Dynamics AX. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-11 23 - 19 - 43
 ms.topic: article
@@ -17,16 +17,16 @@ ms.search.form: DirAddressBook, DirAddressBookTeam, DirParameters, DirPartyTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.reviewer: kfend
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 23341
-ms.assetid: 3be3ddae-fa33-405f-8a50-677d48f5834f
+ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

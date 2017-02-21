@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: (POL) Correction notes | Microsoft Docs
+title: (POL) Correction notes
 description: This topic provides information about correction notes. A correction note is a document that is required by local regulations in Poland. It's used to correct errors on a vendor invoice. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-13 22:19:52
+ms.date: 2016-12-13 22 - 19 - 52
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 263404
-ms.assetid: 66cf3545-f847-47da-b854-62e870986b50
-ms.region: Poland
-# ms.industry: 
+ms.assetid: c66b3a3d-f199-4da5-965a-b69377c5dd22
+ms.search.region: Poland
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

@@ -21,12 +21,12 @@ ms.reviewer: RobinARH
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 27431
-ms.assetid: 104ec212-803e-4834-a9b4-c25e353ffd9c
+ms.assetid: 05316e9d-818e-4f4b-901c-2e67fe8edfd1
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aneesa
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

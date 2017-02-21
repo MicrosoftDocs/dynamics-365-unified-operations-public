@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Low-cost fixed assets | Microsoft Docs
+title: Low-cost fixed assets
 description: This topic provides information about low-cost fixed assets for Hungary.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-19 19:43:08
+ms.date: 2016-12-19 19 - 43 - 08
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264684
-ms.assetid: 6af691a6-9fe8-4124-a60c-680cfd14d37c
-ms.region: Hungary
-# ms.industry: 
+ms.assetid: 8452cf9f-13fa-4ea0-a4e2-c35335c863b8
+ms.search.region: Hungary
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Fixed assets depreciation for Poland | Microsoft Docs
+title: Fixed assets depreciation for Poland
 description: This topic provides information about fixed assets depreciation for legal entities in Poland.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-16 21:17:30
+ms.date: 2016-12-16 21 - 17 - 30
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
+ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 81
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264274
-ms.assetid: 0afd95b2-d02d-4f51-83b8-34e21d0c6f4c
-ms.region: Poland
-# ms.industry: 
+ms.assetid: dcdabcbe-84e5-4615-aa39-2aa055b36da9
+ms.search.region: Poland
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -40,7 +42,7 @@ The Fixed assets depreciation features that are based on legal requirements in
 -   The same date, which is an option in the depreciation proposal to fill in the **Date** field value in all journal lines with a **To date** value that is defined in the Depreciation proposal.
 
 ## Polandspecific depreciation methods
-For legal entities in Poland there are additional depreciation methods, rules, and settings that are used to meet specific fixed asset accounting requirements. According to Polish regulations, depreciation is calculated using a yearly depreciation rate. For more information about depreciation methods, see [Fixed asset depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/fixed-asset-depreciation). The following depreciation methods are available for legal entities in Poland:
+For legal entities in Poland there are additional depreciation methods, rules, and settings that are used to meet specific fixed asset accounting requirements. According to Polish regulations, depreciation is calculated using a yearly depreciation rate. For more information about depreciation methods, see [Fixed asset depreciation](fixed-asset-depreciation.md). The following depreciation methods are available for legal entities in Poland:
 
 -   **Reducing balance (Poland)** – This depreciation method considers special local legal requirements about the value of fixed assets changing during the fiscal year and cost part recognition. The base for this depreciation method includes the following transaction types:
     -   Acquisition
@@ -62,7 +64,7 @@ For legal entities in Poland there are additional depreciation methods, rules, 
     -   Write down
     -   Revaluation
 
-For more information about depreciation methods, see [Fixed asset depreciation](https://docs.microsoft.com/en-us/dynamics365/operations/financials/fixed-assets/fixed-asset-depreciation).
+For more information about depreciation methods, see [Fixed asset depreciation](fixed-asset-depreciation.md).
 
 ## Depreciation percent level parameter
 Reducing balance (Poland) and Straight line percentage (Poland) depreciation methods use the **Depreciation percent level** field on the **Fixed assets parameters** page. This field allows you to choose if the depreciation percent level should be taken from either the depreciation method or an individual fixed asset to calculate depreciation:

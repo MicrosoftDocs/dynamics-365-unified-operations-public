@@ -3,7 +3,7 @@
 
 title: X++ attribute classes
 description: This topic describes the use of attributes in X++.
-author: annbe
+author: RobinARH
 manager: AnnBe
 ms.date: 2016-08-27 00 - 35 - 44
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150243
-ms.assetid: 58213140-e4bf-4dd6-b1d2-2d8b04427a97
+ms.assetid: 9c927660-3268-4a77-9a83-97759a487483
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: robinr
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

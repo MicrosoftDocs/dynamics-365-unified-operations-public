@@ -3,7 +3,7 @@
 
 title: Data entities and packages framework
 description: This topic provides information about using data entities and data entity packages in Microsoft Dynamics 365 for Operations. 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 26 - 04
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96283
-ms.assetid: 7f42e11d-a642-4a54-959d-913665e51b59
+ms.assetid: e67f5edc-1087-4867-8955-b2a40d94217f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

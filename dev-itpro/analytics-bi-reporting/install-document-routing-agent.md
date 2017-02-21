@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 98663
-ms.assetid: 94ca8fbb-c0b7-4169-a0c7-3d77637e91a0
+ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tjvass
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -43,6 +43,8 @@ What's important to know?
 -   The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
 -   The application requires Adobe Acrobat Viewer.
 -   The client is supported only on Windows 8.1 and Windows 10, or on Microsoft Windows Server 2012 R2.
+-   RTM & Platform Update 1 deployments require .NET 4 on the client
+-   Platform Update 2 or later require .NET 4.62 on the client machine
 
 Network printers that are registered for Dynamics 365 for Operations applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.
 

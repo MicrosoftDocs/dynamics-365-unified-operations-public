@@ -2,7 +2,7 @@
 # required metadata
 
 title: General form guidelines
-description: This article contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
+description: This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 author: jasongre
 manager: AnnBe
 ms.date: 2015-12-03 00 - 21 - 07
@@ -17,22 +17,22 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 14701
-ms.assetid: bc7bbc2b-60d9-425a-866b-235a82e9818f
+ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # General form guidelines
 
-This article contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
+This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 
 Verification checklist
 ----------------------
@@ -158,7 +158,7 @@ Mandatory fields are fields that the user must supply values for to guarantee da
     -   From the least risk to the most risk
 
 ## Check box and toggle guidelines
-In the current version of Microsoft Dynamics AX, toggle buttons are typically used instead of traditional check boxes. [![GeneralForm(3)](./media/generalform3.jpg)](./media/generalform3.jpg)
+Toggle buttons are typically used instead of traditional check boxes. [![checkboxtoggle](./media/checkboxtoggle.jpg)](./media/checkboxtoggle.jpg)  
 
 -   Follow all [standard Microsoft guidelines for check boxes.](http://msdn.microsoft.com/en-us/library/windows/desktop/aa511452.aspx) Specifically, observe these guidelines:
     -   By default, use toggle buttons instead of check boxes in forms. The label must follow the Microsoft guidelines for check box labels.

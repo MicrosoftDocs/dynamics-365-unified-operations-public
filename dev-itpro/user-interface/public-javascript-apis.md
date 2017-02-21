@@ -21,12 +21,12 @@ ms.reviewer: annbe
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 125983
-ms.assetid: b0759df3-9b88-4a3f-807f-7cacc68c4dfb
+ms.assetid: 52a14e01-8e80-4e12-8c92-ab8e28ffed62
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: Aug-16
-ms.dyn365.version: Platform update 2
+ms.dyn365.ops.intro: 01-08-2016
+ms.dyn365.ops.version: Platform update 2
 
 ---
 

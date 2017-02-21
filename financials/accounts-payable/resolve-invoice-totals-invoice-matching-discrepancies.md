@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63413
-ms.assetid: 9335a08f-b603-47a9-b9be-9cef7cecfaef
+ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: abruer
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

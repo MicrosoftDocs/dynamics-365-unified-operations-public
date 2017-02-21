@@ -3,7 +3,7 @@
 
 title: Intelligent Data Management Framework purge and archive objects (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 19 - 06 - 53
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17521
-ms.assetid: e28ba163-69da-45a8-b04a-c8510296791d
+ms.assetid: 3def0657-94c4-419b-905b-ed99a527cd7f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Test forms with custom patterns
-description: This wiki how to test forms using custom patterns.
+description: This topic how to test forms using custom patterns.
 author: jasongre
 manager: AnnBe
 ms.date: 2015-12-18 23 - 13 - 25
@@ -17,30 +17,30 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 61
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28291
-ms.assetid: 0eb7d4e4-e166-41b9-b865-c46eed43b838
+ms.assetid: 2245dd9f-7ef7-46cc-9e1b-e00fc66526ec
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Test forms with custom patterns
 
-This wiki how to test forms using custom patterns.
+This topic how to test forms using custom patterns.
 
 Introduction
 ------------
 
 By adhering to form patterns, you gain various benefits. For example, form patterns correctly set layout properties so that forms are laid out responsively. However, when form pattern coverage is lacking (for example, there currently isn't support for many extensible controls), or when a form or container has unique requirements/uses that don't fit any pattern, developers can set the pattern to Custom. The developer then becomes responsible for ensuring a correct and responsive form layout.
 
-## Forms that use Custom patterns
-You can use the **Form Patterns** report to find the set of forms that use Custom patterns (either top-level form patterns or subpatterns). Filter the **Percent covered controls** column to show forms that have less than 100-percent coverage. For forms that have a top-level Custom pattern, **Custom** will appear in the **Patterns** column. To generate the **Form Patterns** report, start Microsoft Visual Studio, click the **DYNAMICS AX** menu, expand **Add-ins**, and then click **Run the form patterns report**. The process will take several seconds. After the report has been generated, a dialog will provide the location of the report. Browse to the specified location, and open the file in Microsoft Excel. You can then filter the report down to the models that interest you.
+## Forms that use custom patterns
+You can use the **Form Patterns** report to find the set of forms that use Custom patterns (either top-level form patterns or subpatterns). Filter the **Percent covered controls** column to show forms that have less than 100-percent coverage. For forms that have a top-level Custom pattern, **Custom** will appear in the **Patterns** column. To generate the **Form Patterns** report, start Microsoft Visual Studio, click the **DYNAMICS 365** menu, expand **Add-ins**, and then click **Run the form patterns report**. The process will take several seconds. After the report has been generated, a dialog will provide the location of the report. Browse to the specified location, and open the file in Microsoft Excel. You can then filter the report down to the models that interest you.
 
 ## Testing configurations
 ### Key resolution
@@ -107,5 +107,5 @@ Follow these steps. At each step, examine your form for layout issues. As part 
 ## Appendix
 ### Information/guidelines about layout
 
-For information about the layout properties, and for guidelines about scenarios that you should avoid, see the [Layout in Microsoft Dynamics AX](page-layout.md) page.
+For information about the layout properties, and for guidelines about scenarios that you should avoid, see [Page layout](page-layout.md).
 

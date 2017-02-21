@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Production control
+title: Data entities - Production control
 description: This article provides a list of the data entities that are available for the Production control functionality in Microsoft Dynamics AX.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 19 - 01
 ms.topic: article
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95773
-ms.assetid: 6c5ddafe-5248-4d95-858f-be1ce5f5ddfd
+ms.assetid: d0166737-07ac-4e52-a707-f408dff14cfc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Production control
+# Data entities - Production control
 
 This article provides a list of the data entities that are available for the Production control functionality in Microsoft Dynamics AX.
 

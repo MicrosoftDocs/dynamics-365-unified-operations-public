@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Registration IDs | Microsoft Docs
+title: Registration IDs
 description: This topic provides information about setting up and using registration IDs.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-19 20:32:15
+ms.date: 2016-12-19 20 - 32 - 15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
+ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264824
-ms.assetid: 862cca6c-2372-455d-b7d1-b79e25faa300
-ms.region: Global
-# ms.industry: 
+ms.assetid: e86f0a35-be58-4ef5-b5ab-bcfc495eaa13
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: vlru
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

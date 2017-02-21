@@ -18,15 +18,15 @@ ms.search.form: FinancialReports
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.search.scope: Management Reporter
+ms.search.scope: Management Reporter, Core
 # ms.tgt_pltfrm: 
 ms.custom: 59131
-ms.assetid: 2b959dab-9e93-4811-871b-dcd7013bda48
+ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: 
-ms.dyn365.version: 
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 
 
 ---
 

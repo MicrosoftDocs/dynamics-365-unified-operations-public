@@ -3,7 +3,7 @@
 
 title: Getting started with Help
 description: This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
-author: annbe
+author: margoc
 manager: AnnBe
 ms.date: 2015-12-04 02 - 12 - 46
 ms.topic: article
@@ -18,15 +18,15 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 16381
-ms.assetid: 309207aa-d5a3-41cd-ba4e-3abf198648fb
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: margoc
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -72,7 +72,7 @@ RSS feeds are easy to set up for wiki content. The following table lists RSS fee
 **Audience values for RSS feeds:** Application user (user), Developer, IT Pro (itpro) **Industry values for RSS feads:** Distribution, Manufacturing , Retail, Public sector (publicsector), Service industries (services) **Category values for RSS feeds:** Accounts payable (accounts-payable), Accounts receivable (accounts-receivable), Analytics, Bank and cash management (bank-and-cash-management), Batch orders (batch-orders), BI & Reporting (bi), Budgeting, Call center (call-center-retail), Channels, Commerce essentials (commerce-essentials), Consolidations, Cost management (costmanagement), Credit and Collections (credit-and-collections), Credit and collections (credit-and-collections), Customer service (customer-service), Data management (data-management), Development, Dimensions, Discrete manufacturing (discrete-manufacturing), Distribution & warehousing (distribution-warehousing), Embedded BI (embedded-bi), Expense management (expense-management), Financial management (financials), Financial reporting (financial-reporting), Fixed assets (fixed-assets), Fleet management example application (fleet-management), General ledger (general-ledger), Human Capital Management (hcm), Inventory management (inventory-management), Lean manufacturing (lean-manufacturing), Lifecycle Services (lifecycle-services-capability), Localization, Management reporter (management-reporter), Manufacturing, Master planning (master-planning), Mobile & Windows Apps (mobileandwindowsapps), Organization administration (organization-administration), Payment processing (payment-processing), Payroll, Power BI integration (powerbi-integration), Process manufacturing (process-manufacturing), Procurement & Sourcing (procurementandsourcing), Product Information Management (productinformationmanagement), Production control (production-control), Project management and accounting (project-management-and-accounting), Projects, Questionnaire, Retail, Sales, Sales marketing and customer service (salesmarketingcustomerservice), Sales tax (sales-tax), Service management (servicemanagement), System administration (system-administration), Tax, Time and attendance (time-and-attendance), Trade allowance management (trade-allowance-management), Transportation management (transportation-management), Travel & Expense (travelandexpense), UI, Warehouse management (warehouse-management) **Country/Region values for RSS feads:** Australia (aus), Austria (aut), Belgion (bel), Brazil (bra), Canada (can), China (chn), Czech Republic (cze), Denmark (dnk), Estonia (est), Finland (fin), France (fra), Germany (deu), Hungary (hun), Iceland (isl), India (ind), Ireland (irl), Italy (ita), Japan (jpn), Latvia (lva), Lithuania (ltu), Malaysia (mys), Mexico (mex), Netherlands (nld), New Zealand (nzl), Norway (nor), Poland (pol), Russia (rus), Saudia Arabia (sau), Singapore (sgp), South Africa (zaf), Spain (esp), Sweden (swe), Switzerland (che), Thailand (tha), United Kingdom (uk), United States (us)
 
 ## Task guides
-A task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a task guide from the Help pane. When you first click a task guide, the Help pane will show the step-by-step instructions for the task. Localized task guides are now available. [![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) To begin the guided, interactive experience, click **Start task guide** at the bottom of the Help pane. A black pointer opens and indicates the action that you have to perform. Follow the directions that appear in the UI, and enter data as directed. [![Task guide step instruction](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **Important:** The data that you enter when you play a task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
+A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. [![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) To begin the guided, interactive experience, click **Start task guide** at the bottom of the Help pane. A black pointer opens and indicates the action that you have to perform. Follow the directions that appear in the UI, and enter data as directed. [![Task guide step instruction](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **Important:** The data that you enter when you play a Task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
 
 ### It all begins with Task Recorder
 
@@ -85,7 +85,7 @@ For more information about Task Recorder, see [Task recorder in Dynamics 365 for
 
 ### Creating customized task recordings
 
-You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](task-recorder.md).
+You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](task-recorder.md).
 
 ## Inproduct Help
 To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access wiki articles or task guides. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
@@ -94,9 +94,9 @@ To access Help content within Dynamics 365 for Operations , either click the **H
 
 From the Help pane, you can access wiki articles that apply to the Dynamics 365 for Operations client. When you first open the Help pane and click the **Wiki** tab, you’ll see the wiki articles that apply to the page that you’re currently on in Dynamics 365 for Operations. If no wiki articles are found, you can enter keywords to refine your search. When you click a wiki article in the Help pane, a new tab opens in your browser and displays the wiki article. [![Wiki page](./media/wiki-page-1024x683.png)](./media/wiki-page.png)
 
-### Accessing task guides from the Help pane
+### Accessing Task guides from the Help pane
 
-Before you can access task guides from the Help pane, a System administrator has to go to the **System parameters** page in Dynamics 365 for Operations and configure some settings. **Notes:**
+Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Dynamics 365 for Operations and configure some settings. **Notes:**
 
 -   In order to configure help, you must be signed in with an account in the same tenant as the tenant in which Dynamics 365 for Operations is deployed.
 -   It is not possible to connect to an LCS library from an instance of Dynamics 365 for Operations running in a local virtual hard drive (VHD).
@@ -108,14 +108,14 @@ Before you can access task guides from the Help pane, a System administrator has
 3.  Select the BPM libraries (within the selected project) to retrieve task recordings from.
 4.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the Help pane.
 
-After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the task guides that apply to the page that you’re currently on in Dynamics 365 for Operations. If no task guides are found, you can enter keywords to refine your search. After you click a task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. [![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
+After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Dynamics 365 for Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. [![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
 
-### Where are the translated task guides?
+### Where are the translated Task guides?
 
-Translated task guides were shipped in the May APQC Unified Library, and the Getting Started library. In Dynamics 365 for Operations, to see localized task guide help, make sure that you are connected to the May library. The language that a task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. **Note:** Even though many task guides have been translated, right now the Dynamics 365 for Operations client is not showing the translated task guide names. Also, only the task guides that were released in February are available in translation in the May library at this point. We will release an updated library with additional translations.
+Translated Task guides were shipped in the May APQC Unified Library, and the Getting Started library. In Dynamics 365 for Operations, to see localized Task guide help, make sure that you are connected to the May library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. **Note:** Even though many Task guides have been translated, right now the Dynamics 365 for Operations client is not showing the translated Task guide names. Also, only the Task guides that were released in February are available in translation in the May library at this point. We will release an updated library with additional translations.
 
--   If a task guide has been translated, when you open that task guide all the text of the task guide will appear in your selected language.
--   If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
+-   If a Task guide has been translated, when you open that Task guide all the text of the Task guide will appear in your selected language.
+-   If a Task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Additional resources
 The following table lists websites that provide Dynamics 365 for Operations content. Our content websites are organized to support the customer life cycle. Each phase is supported by a different set of sites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
@@ -142,9 +142,11 @@ See also
 
 [Create documentation or training using Task recordings](task-recorder.md)
 
-[New task guides available (February 2016)](new-task-guides-available-february-2016.md)
+[New task guides (February 2016)](new-task-guides-available-february-2016.md)
 
-[New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
+[New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 
-[New or updated task guides available (August 2016)](new-updated-task-guides-available-august-2016.md)
+[New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
+
+[New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 

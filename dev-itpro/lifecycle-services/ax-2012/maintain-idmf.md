@@ -3,7 +3,7 @@
 
 title: Maintainance in the Intelligent Data Management Framework (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 23 - 59 - 14
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18471
-ms.assetid: 429c2670-2a5c-401b-8682-6e71297a88e0
+ms.assetid: a8cab868-0e2f-406e-b486-4883876f1f09
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

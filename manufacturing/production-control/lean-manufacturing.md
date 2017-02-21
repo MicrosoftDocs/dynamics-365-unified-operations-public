@@ -3,7 +3,7 @@
 
 title: Lean manufacturing home page
 description: This topic provides a list of the Help topics and other resources that are available for Lean manufacturing. 
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-10-11 20 - 31 - 24
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 204174
-ms.assetid: 36a0d370-d7d1-4980-80bf-70f19630a515
+ms.assetid: cf5e5871-d3a9-4111-9181-68c4f38df286
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: yuyus
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -39,6 +39,8 @@ Understand mixed mode planning
 
 -   [Mixed mode planning: Combine discrete, process, and lean sourcing](mixed-mode-plan.md)
 -   [Lean manufacturing overview](lean-manufacturing-overview.md)
+-   [Activity-based subcontracting](activity-based-subcontracting.md)
+-   [Manage subcontracting work in production](manage-subcontract-work-production.md)
 
 ## Maintain master data
 -   [Lean manufacturing - Modeling the lean organization](lean-manufacturing-modeling-lean-organization.md)

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Custom designs for business documents | Microsoft Docs
+title: Custom designs for business documents
 description: This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
 author: sericks007
 manager: AnnBe
-ms.date: 2017-01-09 20:00:57
+ms.date: 2017-01-09 20 - 00 - 57
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics 365 for Operations platform update 3
+# ms.reviewer: 2051
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 266574
-ms.assetid: adeb48dd-8aa6-4d30-92db-377dc4bb31dc
-ms.region: Global
-# ms.industry: 
+ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Platform update 3
 
 ---
 
@@ -44,7 +46,7 @@ Here are some important points that you should be aware of before you apply this
 ## Customize a business document
 The following walkthrough shows the process of introducing a custom report design for an existing application business document and then using Print management to select the new design. The solution includes a custom design definition for the **Sales confirmation** report that is provided in the standard application as part of the Application Suite model. The application customizations will be defined in an extension model.
 
-1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/customization-overlayering-and-extensions). For this example, you add a model that is named **Application Suite Extensions**, and that references the Application Suite, Application Platform, and Application Foundation packages.
+1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](customization-overlayering-extensions.md). For this example, you add a model that is named **Application Suite Extensions**, and that references the Application Suite, Application Platform, and Application Foundation packages.
 2.  **Create a new project in Microsoft Visual Studio.** Make sure that the project is associated with your extension model. The following illustration shows the project settings. [![Project settings in Visual Studio](./media/app-extension-vs-project-settings.png)](./media/app-extension-vs-project-settings.png)
 3.  **Create a custom report design for the business document.** You must make sure that your custom solution consumes the correct report data contract. Find the existing Application Suite report in Application Explorer. This report is named **SalesConfirm**. Right-click it, and then click **Duplicate in project** to create the custom solution.
 4.  **Rename the report so that it has a meaningful name.** For this example, name the custom report **SalesConfirmExt** to distinguish it from the standard solution. Compile the project, and deploy the report to verify that the changes have no errors.

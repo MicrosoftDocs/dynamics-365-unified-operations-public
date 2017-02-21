@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross company behavior
-description: This article provides information about how data entities interact with the cross-company concept as it's implemented in Microsoft Dynamics AX. To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept. Therefore, this article begins with a brief review of tables and views, and then explains how data entities are related.
+description: This topic provides information about how data entities interact with the cross-company concept. To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept. Therefore, this topic begins with a brief review of tables and views, and then explains how data entities are related.
 author: RobinARH
 manager: AnnBe
 ms.date: 2015-12-12 20 - 12 - 19
@@ -17,27 +17,27 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25371
-ms.assetid: cf456a9c-2e81-45bd-806e-68d78eb31b81
+ms.assetid: f293d97a-9f70-4c45-91d4-574731892353
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kuntalme
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Cross company behavior
 
-This article provides information about how data entities interact with the cross-company concept as it's implemented in Microsoft Dynamics AX. To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept. Therefore, this article begins with a brief review of tables and views, and then explains how data entities are related.
+This topic provides information about how data entities interact with the cross-company concept. To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept. Therefore, this topic begins with a brief review of tables and views, and then explains how data entities are related.
 
 Review of tables and views for cross-company
 --------------------------------------------
 
-In Microsoft Dynamics AX, each table has a **SaveDataPerCompany** property, and each view has a **AllowCrossCompany** property. The following table describes these two properties.
+Each table has a **SaveDataPerCompany** property, and each view has a **AllowCrossCompany** property. The following table describes these two properties.
 
 |                        | Table                                                                                                                                                                                                                                                                                                                                                                                           | View                                                                                                                                                                                                                                                                                                                                 |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

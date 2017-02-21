@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Budget planning
+title: Data entities - Budget planning
 description: This article provides a list of the data entities that are available for the Budget planning functionality in Microsoft Dynamics AX.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 20 - 04
 ms.topic: article
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96103
-ms.assetid: db4026d8-24c3-4609-97e8-25982c114766
+ms.assetid: 221d9b8a-41a0-4c46-85a8-a263919de340
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Budget planning
+# Data entities - Budget planning
 
 This article provides a list of the data entities that are available for the Budget planning functionality in Microsoft Dynamics AX.
 

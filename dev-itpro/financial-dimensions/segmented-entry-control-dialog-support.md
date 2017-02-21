@@ -3,7 +3,7 @@
 
 title: Segmented entry control dialog support
 description: Describes the code pattern to add Segmented Entry controls to dialogs.
-author: annbe
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-12 20 - 44 - 50
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25571
-ms.assetid: 9f342ad5-9336-43f6-b954-aaef312fcdfc
+ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: ghenriks
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,21 +34,22 @@ ms.dyn365.version: AX 7.0.0
 
 Describes the code pattern to add Segmented Entry controls to dialogs.
 
-The process to add Segmented Entry controls to dialogs has changed for Microsoft Dynamics AX. **This is an example of the old model:**
+The process to add Segmented Entry controls to dialogs has changed for Microsoft Dynamics 365 for Operations. This is an example from Dynamics AX 2012:
 
-DialogField dialogFeeLedgerDimension;
+    DialogField dialogFeeLedgerDimension;
+    LedgerDimensionAccountController ledgerDimensionAccountController;
+    dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703");
+    ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
 
-LedgerDimensionAccountController ledgerDimensionAccountController;
+In Dynamics 365 for Operations, this code would be converted to:
 
-dialogFeeLedgerDimension = dialog.addFieldValue(extendedtypestr(LedgerDimensionAccount),feeLedgerDimension,"@SYS119703");
-
- ledgerDimensionAccountController = LedgerDimensionAccountController::constructForDialog(dialogFeeLedgerDimension);
-
-**In Dynamics AX, this code would be converted to:**
-
-DialogField dialogFeeLedgerDimension;
-
-dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(dialog, classstr(LedgerDimensionAccountController), extendedTypeStr(LedgerDimensionAccount), "@SYS119703", feeLedgerDimension);
+    DialogField dialogFeeLedgerDimension;
+    dialogFeeLedgerDimension = SegmentedEntryControlBuild::addToDialog(
+        dialog, 
+        classstr(LedgerDimensionAccountController), 
+        extendedTypeStr(LedgerDimensionAccount), 
+        "@SYS119703", 
+        feeLedgerDimension);
 
 For the second parameter, choose the class that satisfies the requirements for your dialog.  The options are:
 

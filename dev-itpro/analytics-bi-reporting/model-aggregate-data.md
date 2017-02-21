@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10234
-ms.assetid: 3183efb0-ca38-4c05-aff5-ef6480721abf
+ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -58,7 +58,7 @@ If this is the first tutorial you are working on, make sure you have configured 
 
 ### Import the tutorial project
 
-If you have already imported the Fleet management tutorial project, skip to the next section. If you have not done so already, you can download the tutorial project from <https://connect.microsoft.com/site1321/Downloads>. Please note that you will be required to login to the site. After login, choose the document titled "**FMLab for Microsoft Dynamics AX (CTP8)**". Unzip the downloaded document and place the **FMLab** folder into a convenient location. In Visual Studio, on the **Dynamics 365** menu, click **Import Project**.
+If you have already imported the Fleet management tutorial project, skip to the next section. In Visual Studio, on the **Dynamics 365** menu, click **Import Project**.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
 2.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
@@ -66,7 +66,7 @@ If you have already imported the Fleet management tutorial project, skip to the 
 4.  In the **Project file location** text box, enter **C:\\FMLab**.
 5.  Select the **Overwrite Elements** check box, and then click **OK**.
 
-### Import the tutorial project
+### Open the tutorial project
 
 1.  In Visual Studio, open the **FMTutorial** project. On the **File** menu, point to **Open**, and then click **Project/Solution**.
 2.  In the **Open Project** dialog box, browse to C:FMLabFMTutorial, and then click FMTutorial. Click **Open**. The **FMTutorial** project appears in **Solution Explorer**.
@@ -137,7 +137,7 @@ Next, create dimension references to new and existing dimensions so that revenue
 1.  In **Solution Explorer**, double-click **FMTAggregateMeasurement** or, if you have it open, navigate to it in the designer.
 2.  In **Solution Explorer**, select the dimensions **FMTChargeType** and **FMTCustomerProfile**.
 3.  Drag-and-drop them into the **Dimensions** node of the **FMTRentalChargeExtendedView** measure group. Notice that dimension references have been created along with relations.
-4.  Save changes to **FMTAggregateMeasurement**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**. Notice that the drag-and-drop operation created relationships between the measure group dimensions **FMTRentalChargeExtendedView** and **FMTChargeType**, **FMTCustomerProfile**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**. [![FMTChargeType2](./media/fmtchargetype2.png)](./media/fmtchargetype2.png)
+4.  Save changes to **FMTAggregateMeasurement**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**. Notice that the drag-and-drop operation created relationships between the measure group dimensions **FMTRentalChargeExtendedView** and **FMTChargeType**, **FMTCustomerProfile**. Review the property sheet for the dimension relation and notice that the **Use Table relations** property is set to **Yes**. [![FMTChargeType2](./media/fmtchargetype2.png)](./media/fmtchargetype2.png)**NOTE:** In platform update 1611 and later, **UseTableRelations** property has been removed. When a new dimension reference is created, system will default existing relationships. You can continue to provide an explicit relationship by changing the relationship field that was defaulted. Providing an explicit relationship is equal to setting **UseTableRelationship** to **No**.
 5.  Expand the Dimension relations node for the **FMTCustomerProfile** dimension. Notice that the **UseTableRelations** property is set to **No**. In this case, the system has not been able to find a suitable relationship between the Measure group and dimension. You will need to specify one manually.
 6.  Expand the **FMTCustomerProfile** dimension reference if you have not done so already. Select the node **FMTCustomerExtendedView**. Right-click and see the property sheet.
 7.  Select **CustomerID** as the value for property **DimensionAttribute**. Select the relationship shown below. Select **Customer** for the property value **RelatedField**.
@@ -189,13 +189,13 @@ Assume that for analysis purposes, you want to enable slicing by the start date 
 
 Now that you have completed modeling the aggregate measurement, you can deploy the aggregate measurement and continue with building KPIs and visualizations. You have 2 deployment choices as shown below.
 
-|                         |                                                                                                                                                                                         |
-|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Option**              | **Considerations**                                                                                                                                                                      |
-| **In-memory real-time** | This option will leverage the In-memory Column store indexes of SQL Server database to deploy Aggregate Measurements.This option will be fully supported in the next technology preview |
-| **SSASCube**            | Aggregate measurement will be deployed to SQL Server Analysis services server (SSAS) as a multi-dimensional cube similar to previous releases.                                          |
+|                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Option**                | **Considerations**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **In-memory real-time**   | This option will leverage the In-memory Column store indexes of SQL Server database to deploy Aggregate Measurements. This option is recommended when the Aggregate measurement is used for embedded analytics within the client where you need **real-time analytics**. For an overview of concepts on real-time analytics, refer to document here: <analytics.md>                                                                                                                                                                                      |
+| **Stage in Entity Store** | This option leverages Entity store, the operational data store that enables **near real-time PowerBI reporting**. If you choose this option, Aggregate measurement can be deployed to Entity store and you can schedule the data to be refreshed periodically. For an overview of this approach, refer to the blog post here: [https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/ ](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) |
 
-At this point, only **InMemoryRealTime** aggregate models are supported.
+**NOTE:** **SSAS Cube** option is no longer supported when modeling aggregate measurements.
 
 1.  Select the **FMTAggregateMeasurement** node. Right-click and select **Properties**. Select **InMemoryRealTime** as the value for the property **Usage**. [![FMT9](./media/fmt9.png)](./media/fmt9.png)
 2.  InMemoryRealTime aggregate models are deployed to SQL Server using Non-Clustered Column Store Index (NCCI) technology. NCCIs is an in-memory technology that enables analytical and operational workloads to be served from SQL server database. NCCI indexes can be defined on tables similar to any other index. While NCCI indexes can be defined manually, framework has the ability to analyze index requirements and add them to underlying tables where necessary.
@@ -209,7 +209,7 @@ At this point, only **InMemoryRealTime** aggregate models are supported.
 Model a KPI definition in Visual Studio by using the aggregate measurement you defined above.
 
 1.  In **Solution Explorer**, right-click **FMTutorial**, point to **Add**, and then click **New Item**.
-2.  Select **Dynamics 365 Artifacts** &gt; **Analytics** &gt; **Key Performance Indicator**. Enter FMTRevenuePerRental as the name of the KPI, and then click **Add**. The name must be unique across KPIs. [![AddNewItem](./media/addnewitem.png)](./media/addnewitem.png)The KPI is created.
+2.  Select **Dynamics 365 Artifacts** &gt; **Analytics** &gt; **Key Performance Indicator**. Enter FMTRevenuePerRental as the name of the KPI, and then click **Add**. The name must be unique across KPIs. The KPI is created.
 3.  Select **FMTRevenuePerRental**, and specify the **Measurement** Leave the default values for the other properties.
 
 |                       |                         |

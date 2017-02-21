@@ -3,7 +3,7 @@
 
 title: Define or edit entry point permissions (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 23 - 21 - 12
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18211
-ms.assetid: ec297d69-5f4b-4d0a-a68a-cbbbc4f63be9
+ms.assetid: 1e7c9c30-7418-4f4a-93a3-2d043073e429
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

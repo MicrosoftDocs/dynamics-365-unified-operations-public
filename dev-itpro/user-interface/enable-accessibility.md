@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 104943
-ms.assetid: d9d0b4e0-50a4-4ae3-9db2-8c7ca3bfae7e
+ms.assetid: 5b97c471-212a-4487-baef-120d01063319
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tlefor
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 

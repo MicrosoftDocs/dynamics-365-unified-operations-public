@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 71
+ms.reviewer: annbe
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 255544
-ms.assetid: 253ba69f-fe37-485c-b29a-b5cb7b105d77
+ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shshabazz
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Platform update 3
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Platform update 3
 
 ---
 
@@ -67,7 +67,7 @@ We provide a sample workspace for Reservation management. This workspace is base
 The mobile app is being made available for the most popular mobile operating systems. You must have a Dynamics 365 for Operations instance and valid user credentials in order to log in to the app.
 
 -   Android (available now) - [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone (coming soon) - Dynamics 365 for Operations on the iTunes apps store
+-   iPhone (available now) - [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 -   Windows phone (UWP) (coming soon) - Dynamics 365 for Operations on the Windows store
 
 ## Understanding navigation in the mobile app

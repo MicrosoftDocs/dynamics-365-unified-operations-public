@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Extend report menu items | Microsoft Docs
+title: Extend report menu items
 description: This topic shows how to extend existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. 
 author: sericks007
 manager: AnnBe
-ms.date: 2017-01-09 20:09:13
+ms.date: 2017-01-09 20 - 09 - 13
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics 365 for Operations platform update 3
+# ms.reviewer: 2051
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 266674
-ms.assetid: 85888d89-ca95-4933-b2f4-47ad5e904009
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Platform update 3
 
 ---
 
@@ -44,7 +46,7 @@ There are a few basic assumptions that you should be aware of before you apply t
 ## Extend report menu items
 The following walkthrough shows how to use menu item extensions to redirect user navigations in the application to a custom solution. The solution includes a custom **Customer list** report for the Fleet Management application and defines all the application customizations in a pure extension model. The following illustration shows the menu item that you use to access the custom **Customer list** report. [![fleet-workspace-customer-list](./media/fleet-workspace-customer-list.png)](./media/fleet-workspace-customer-list.png)
 
-1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/customization-overlayering-and-extensions).
+1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](customization-overlayering-extensions.md).
 2.  **Create a new project in Microsoft Visual Studio,** **and add your custom report.** Additionally, add all the solution artifacts. These artifacts include the RDP class or source query, the controller class, and UI builders, if they are present.
 3.  **Create an extension of the menu item that is used to access the report.** In this example, the output menu item is named **FMCustomerListReport**. Use the menu item structure to find the menu item name that is exposed in the application. The following illustration shows the action in Application Explorer.[![Creating an extension of the menu item that is used to access the report](./media/fleet-extension-create-menu-extension-1024x632.png)](./media/fleet-extension-create-menu-extension.png)
 4.  **Modify the properties of the menu item extension.** Update the report design or controller reference in the menu item to direct navigations to your custom solution. **Note:** The property changes that you can make on the object depend on the original application solution. If the application report manages the solution by using a controller, a controller class is required for the report.

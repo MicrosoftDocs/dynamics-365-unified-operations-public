@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process allocations
-description: This article provides information about allocations, the options for processing them in Microsoft Dynamics AX, and how they can be used in budget planning. Allocations are used to distribute amounts across multiple ledger account combinations. They help guarantee that expenses or revenue is charged to the correct object in accounting.
+description: This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 for Operations, and how they can be used in budget planning. Allocations are used to distribute amounts across multiple ledger account combinations. They help guarantee that expenses or revenue is charged to the correct object in accounting.
 author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-04 18 - 16 - 59
@@ -21,20 +21,20 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17361
-ms.assetid: bcd34338-c930-4aeb-ade1-01679b0524d9
+ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: peakerbl
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Process allocations
 
-This article provides information about allocations, the options for processing them in Microsoft Dynamics AX, and how they can be used in budget planning. Allocations are used to distribute amounts across multiple ledger account combinations. They help guarantee that expenses or revenue is charged to the correct object in accounting.
+This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 for Operations, and how they can be used in budget planning. Allocations are used to distribute amounts across multiple ledger account combinations. They help guarantee that expenses or revenue is charged to the correct object in accounting.
 
-Microsoft Dynamics AX provides the following capabilities to support this process:
+Microsoft Dynamics 365 for Operations provides the following capabilities to support this process:
 
 -   Manually allocate transaction amounts by using the Split action in accounting distributions, or by applying financial dimension default templates to a document. For more information, see [Accounting distributions.](accounting-distributions.md)
 -   Automatically allocate transactions amounts based on allocation terms defined on individual main account. Allocation account entries will be generated for each journal based on the percentage and destination ledger account whenever an accounting entry meets the criteria defined as the source ledger account.

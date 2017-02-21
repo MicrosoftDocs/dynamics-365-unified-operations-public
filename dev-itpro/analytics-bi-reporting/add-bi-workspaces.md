@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24551
-ms.assetid: bc6a3987-6215-4444-9c07-3a8225639c44
+ms.assetid: 78a85e0a-e002-41b5-85b7-e2772317d56e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -77,7 +77,6 @@ Let’s assume that we want to monitor **Revenue per rental for Vehicles with Au
 | **Property**          | **Value**              |
 | Measurement           | FMAggregateMeasurement |
 | Threshold Short Label | Auto Transmissions     |
-|                       |                        |
 
 ### Define Ranges to filter value and goal
 
@@ -151,7 +150,7 @@ Now that you defined a KPI tile, you can put it in the interface so the user can
 9.  You’ll see the modified workspace with the tile definition.
 10. Select the **RevenuePerRentalAutoTransmission** KPI tile to go to the KPI details page. Scroll and see the trends created by default.
 
-[![BI8](./media/bi8.png)](./media/bi8.png)
+ 
 
 ## Modify default trend charts shown in the client
 Trend analysis is vital to the KPI experience and the KPI details page provides the user with 3 pre-build trend charts. These charts can be used to answer the following business questions.
@@ -218,7 +217,7 @@ Preview the KPI definition in the client.
 1.  Click **Ctrl+F5** to run the form in Visual Studio. You’ll see the modified workspace with the tile definition
 2.  Select the **RevenuePerRentalAutoTransmission** KPI tile to go to the KPI details page. Notice that the trend definitions are shown in the KPI details UI.
 
-[![BI9](./media/bi9.png)](./media/bi9.png) Scroll to the right and select the top contributors trend. In the drop-down select the **Top Customers** trend chart. Notice that the chart changes to reflect the trend chart selected by the user.
+  Scroll to the right and select the top contributors trend. In the drop-down select the **Top Customers** trend chart. Notice that the chart changes to reflect the trend chart selected by the user.
 
 ## Model a KPI using a method expression
 Defining a KPI expression using pre-defined measures is the easiest approach toward building KPIs. However, it requires that the developer models all the required measures into the aggregate measurement. It’s a good practice to ship frequently used calculations within the aggregate measurement. This way, users can define new KPIs within the client. However, there is another way to ship calculations without crowding the aggregate measurement with many calculated measures. Developer has the ability to build a calculated expression by referencing existing measures and dimension attributes and to reuse that expression in a KPI definition. These expressions are called Method expressions. Method expressions can be thought of as the equivalent of MDX expressions in Dynamics AX 2012. But as you’ll discover in following sections, writing method expressions is both easy and quick.

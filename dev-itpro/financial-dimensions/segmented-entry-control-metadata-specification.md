@@ -3,7 +3,7 @@
 
 title: Segmented entry control metadata
 description: Describes the design-time metadata properties for Segmented Entry controls.
-author: annbe
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-12 20 - 45 - 01
 ms.topic: article
@@ -21,12 +21,12 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25591
-ms.assetid: 3adf11ea-aede-434d-a373-55cfda5d710a
+ms.assetid: b8c5d7a4-ee2b-4ab1-b042-88472b97f035
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: ghenriks
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

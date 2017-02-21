@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Advance holders | Microsoft Docs
+title: Advance holders
 description: Learn about advance holder functionality in Microsoft Dynamics 365 for Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-12 21:45:42
+ms.date: 2016-12-12 21 - 45 - 42
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262574
-ms.assetid: 8dc6583d-4ee8-4e22-931a-513301ce177f
-ms.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-# ms.industry: 
+ms.assetid: 87924785-6032-4125-8279-5b1a758f4d80
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+# ms.search.industry: 
 ms.author: v-elgolu
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -135,5 +137,5 @@ To preview and print a report based on advance holders’ transactions, click **
 See also
 --------
 
-[Advance holder transactions](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/europe/advance-holders-transactions)
+[Advance holder transactions](advance-holders-transactions.md)
 

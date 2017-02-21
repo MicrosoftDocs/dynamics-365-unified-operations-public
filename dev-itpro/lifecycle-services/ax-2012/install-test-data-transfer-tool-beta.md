@@ -3,7 +3,7 @@
 
 title: Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 description: This topic describes how to install the Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta). Only advanced users should use this tool. 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 19 - 13 - 07
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17551
-ms.assetid: bbfd1b62-1029-4ea8-882a-833a221be0f2
+ms.assetid: 1681290d-93f0-489d-9746-7793b2ffe690
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

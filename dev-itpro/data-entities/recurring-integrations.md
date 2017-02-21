@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24821
-ms.assetid: 5e04f613-f44b-458f-bf8d-032f778b0c74
+ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kuntalme
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -70,7 +70,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the oth
 7.  Click **OK**, and then click **Yes** in the confirmation dialog box.
 
 ## Manage recurring data jobs
-Use the administration workspace for Data Management. [![Data management workspace](./media/image011_2016-300x292.png)](./media/image011_2016.png) In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. [![image013](./media/image013.jpg)](./media/image013.jpg)
+Open the System Administration workspace (not module) and click the Data Management IT tile. [![Data management workspace](./media/image011_2016-300x292.png)](./media/image011_2016.png) In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. [![image013](./media/image013.jpg)](./media/image013.jpg)
 
 ## Submitting data to recurring data jobs
 You can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Monitoring and diagnostics (Lifecycle Services, LCS) | Microsoft Docs
+title: Monitoring and diagnostics (Lifecycle Services, LCS)
 description: This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Operations environments that you manage.
 author: kfend
 manager: AnnBe
-ms.date: 2017-01-12 22:28:51
+ms.date: 2017-01-12 22 - 28 - 51
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 51
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 51
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 267184
-ms.assetid: 39d7018d-288d-45a4-b7f3-f18f0283b68b
-ms.region: Global
-# ms.industry: 
+ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: manado
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 202614
-ms.assetid: 716d2929-f3cc-4108-88f4-b2616d089272
+ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: Aug-16
-ms.dyn365.version: Platform update 2
+ms.dyn365.ops.intro: 01-08-2016
+ms.dyn365.ops.version: Platform update 2
 
 ---
 

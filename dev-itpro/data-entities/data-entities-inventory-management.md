@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Inventory management
+title: Data entities - Inventory management
 description: This article provides a list of the data entities that are available for the Inventory management functionality in Microsoft Dynamics 365 for Operations.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 19 - 52
 ms.topic: article
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96043
-ms.assetid: 3ed6560d-b2c0-4b15-8986-9196768c1180
+ms.assetid: 6c853d03-bffe-4592-86ac-72ec4eaa4134
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Inventory management
+# Data entities - Inventory management
 
 This article provides a list of the data entities that are available for the Inventory management functionality in Microsoft Dynamics 365 for Operations.
 

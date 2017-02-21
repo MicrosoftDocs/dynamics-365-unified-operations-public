@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Expense management
+title: Data entities - Expense management
 description: This article provides a list of the data entities that are available for the Expense management functionality in Microsoft Dynamics 365 for Operations.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 18 - 49
 ms.topic: article
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95713
-ms.assetid: 55f9daf3-5066-4255-9096-6dfc6858bd32
+ms.assetid: e1f9beed-5bd9-4425-b8ed-012c8390a75a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Expense management
+# Data entities - Expense management
 
 This article provides a list of the data entities that are available for the Expense management functionality in Microsoft Dynamics 365 for Operations.
 

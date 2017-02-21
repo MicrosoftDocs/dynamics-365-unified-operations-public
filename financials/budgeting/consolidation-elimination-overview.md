@@ -21,12 +21,12 @@ ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13151
-ms.assetid: f4cf3007-3a37-4c82-81ab-af4bd70bf93e
+ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -81,4 +81,9 @@ There are many consolidation scenarios, and each method can handle the scenarios
     -   By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
 
 
+
+See also
+--------
+
+[Currency revalution in a consolidation company](currency-revaluation-consolidation-company.md)
 

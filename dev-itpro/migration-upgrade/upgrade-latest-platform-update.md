@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 253274
-ms.assetid: 541e8c50-7f5a-4bab-98cb-acae8e5c9a21
+ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tabell
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Platform update 3
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Platform update 3
 
 ---
 
@@ -50,13 +50,12 @@ The Microsoft Dynamics 365 for Operations platform consists of the following com
 ## Overall flow
 The following illustration shows the overall process for upgrading the Microsoft Dynamics AX platform to the latest update. [![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
 
-## Create a copy of a platform update package
-Platform update packages are released by Microsoft and can be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS), on the **Software deployable package** tab. Dynamics 365 packages are currently prefixed with *Dynamics 365 for Operations Platform Update* (for example, Dynamics 365 for Operations Platform Update 3)*.* You must create a copy of the platform package. This step is required because update packages must be applied from local asset libraries.
+## Import the platform update package
+Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Dynamics 365 packages are currently prefixed with *Dynamics 365 for Operations Platform Update* (for example, Dynamics 365 for Operations Platform Update 3)*.* Use these steps to import the platform update package:
 
 1.  Go to your LCS project's Asset library.
 2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
-3.  Select the correct platform package.
-4.  Click **Copy **to create a local copy of the package that you can apply to the environments in your projects. [![Copy button](./media/platformassetlibrary.jpg)](./media/platformassetlibrary.jpg)
+3.  Select the desired platform update package.
 
 ## Choose the correct package deployment strategy
 From a process perspective, a platform upgrade package resembles a binary hotfix deployable package.
@@ -158,4 +157,9 @@ This means two things:
 
 2.  If you cannot remove over-layering from the Directory model, and you still want to upgrade, you will have to do a complete upgrade of the platform and the application (Dynamics 365 for Operations version 1611) as described in this [topic](upgrade-latest-update.md).
 
+
+See also
+--------
+
+[Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
 

@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27191
-ms.assetid: 98ad4dd3-4f72-450b-9609-d85f766f3152
+ms.assetid: 64b8f266-a9e1-48ee-93c7-e082f21ddfa7
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: chwolf
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.version: AX 7.0.0
 
 This topic provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
 
-To open the Performance timer, open your webpage with the added parameter debug=develop: <https://testax21aos.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop> **Note: **When you run in debug mode you will notice slower performance. You can quickly get an overview of most performance issues by pressing F12 and working with the debugging tools that are available in your browser. The timer will show up here. [![1\_Timer](./media/1_timer.png)](./media/1_timer.png)To open a list page, for example, such as the purchase order list page, click the Performance timer. The following screenshot shows the separation between client time and server time, and the total time. Additionally, you can see a set of performance counters and expensive server calls. [![2\_Timer](./media/2_timer.png)](./media/2_timer.png) For more information about the server performance counters, click on any of the links.
+To open the Performance timer, open your webpage with the added parameter debug=develop: <https://testax21aos.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop> **Note: **When you run in debug mode you will notice slower performance. You can quickly get an overview of most performance issues by pressing F12 and working with the debugging tools that are available in your browser. The timer will show up here. [![timer](./media/timer.png)](./media/timer.png) To open a list page, for example, such as the purchase order list page, click the Performance timer. The following screenshot shows the separation between client time and server time, and the total time. Additionally, you can see a set of performance counters and expensive server calls. [![2\_Timer](./media/2_timer.png)](./media/2_timer.png) For more information about the server performance counters, click on any of the links.
 
 -   **Forms** - Forms will show how many forms are currently open, plus the rate at which they opened and closed (per second), and a set of counters, such as the total amount of created or closed forms.
 -   **GC** - This is information about the garbage collection processes on the server.

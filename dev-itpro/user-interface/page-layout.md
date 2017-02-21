@@ -2,7 +2,7 @@
 # required metadata
 
 title: Layout in Dynamics 365 for Operations
-description: This article discusses layout in the Microsoft Dynamics AX web client. Layout is a design process that specifies how controls appear on a page. 
+description: This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 author: jasongre
 manager: AnnBe
 ms.date: 2015-12-18 23 - 02 - 52
@@ -17,57 +17,57 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28251
-ms.assetid: 45ec1ba3-3741-4354-8e15-d9148bc64b37
+ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Layout in Dynamics 365 for Operations
 
-This article discusses layout in the Microsoft Dynamics AX web client. Layout is a design process that specifies how controls appear on a page. 
+This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 
 Introduction
 ------------
 
-Layout is a design process that specifies how the controls on a page appear in the web client. Layout occurs within container controls. The following table lists the container controls for the current version of Microsoft Dynamics AX.
+Layout is a design process that specifies how the controls on a page appear in the web client. Layout occurs within container controls. The following table lists the container controls for Dynamics 365 for Operations.
 
 | Container   | Description                                                                                                                                            |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Form.Design | The root of the page. It functions as a special kind of container.                                                                                     |
-| Group       | The general-purpose container control in Microsoft Dynamics AX. Group controls can be nested as required.                                              |
+| Group       | The general-purpose container control. Group controls can be nested as required.                                                                       |
 | Tab         | A control that contains TabPage controls and has many possible **Tab.Style** values, such as **Tab**, **FastTab**, **Vertical Tab**, and **Panorama**. |
 | TabPage     | The appearance of each TabPage control depends on its **Tab.Style** value.                                                                             |
 | ButtonGroup | A special type of Group control that contains buttons.                                                                                                 |
 
 A grid is a special type of control that has some container behaviors, such as flexible sizing (**SizeToAvailable**). However, a grid has special visualizations and isn't a general-purpose container control.
 
-## Layout: AX 2012 vs. the current version of Dynamics AX
-### Layout in AX 2012
+## Layout: Dynamics AX 2012 vs. Dynamics 365 for Operations
+### Layout in Dynamics AX 2012
 
 In Microsoft Dynamics AX 2012, the arrangement of controls in containers is almost always vertical, and columns are manually set to provide some horizontal spread.
 
 ### Examples
 
-**Columns**=**1** 1 2 3 **Columns**=**2** 1 4 2 5 3 In AX 2012, sizing is achieved via the **Height** and **Width** properties. If **Height** and **Width** are set to **Auto**, the size is as large as the child controls require. If **Height** and **Width** are set to **Column**, the container is as large as it can be within the parent container. By default, **Height** and **Width** are set to **Auto** for every container.
+**Columns**=**1** 1 2 3 **Columns**=**2** 1 4 2 5 3 In Dynamics AX 2012, sizing is achieved via the **Height** and **Width** properties. If **Height** and **Width** are set to **Auto**, the size is as large as the child controls require. If **Height** and **Width** are set to **Column**, the container is as large as it can be within the parent container. By default, **Height** and **Width** are set to **Auto** for every container.
 
-### Layout in the current version of Dynamics AX
+### Layout in Dynamics 365 for Operations
 
-In the current version of Dynamics AX, layout is controlled by the same basic properties that control layout in AX 2012. However, additional options have been added to support a more responsive layout. In particular, the layout of a page is based on the following factors:
+In Dynamics 365 for Operations, layout is controlled by the same basic properties that control layout in Dynamics AX 2012. However, additional options have been added to support a more responsive layout. In particular, the layout of a page is based on the following factors:
 
 -   The arrangement method that is specified by the **ArrangeMethod** property.
 -   The columns that are specified by the **Columns** property.
 -   The sizing that is specified by the **HeightMode**, **WidthMode**, **Height**, and **Width** properties.
 
 ## ArrangeMethod property
-The **ArrangeMethod** property specifies a base arrangement method for a container. In the current version of Dynamics AX, the old values were maintained. Additionally, a new property that is named **HorizontalWrap** was added primarily for panoramas, especially for tile layouts. The following table describes the various options for the **ArrangeMethod** property.
+The **ArrangeMethod** property specifies a base arrangement method for a container. In Dynamics 365 for Operations, the old values were maintained. Additionally, a new property that is named **HorizontalWrap** was added primarily for panoramas, especially for tile layouts. The following table describes the various options for the **ArrangeMethod** property.
 
 | Option          | Description                                                                                                                                                                                                                            |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,7 +77,7 @@ The **ArrangeMethod** property specifies a base arrangement method for a contain
 | HorizontalWrap  | Controls are arranged inside columns of fixed width that wrap horizontally. This option is typically used for tile layouts in panorama sections. This option is the default value for TabPages (where **Tab.Style**=**Panorama**).     |
 
 ## ColumnsMode property
-In the current version of Dynamics AX, a new **Fill** option was added to support responsive layouts. When this property value is set, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
+In Dynamics 365 for Operations, a new **Fill** option was added to support responsive layouts. When this property value is set, columns automatically flow as required. The following table describes the various options for the **ColumnsMode** property.
 
 | Option | Description                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +85,7 @@ In the current version of Dynamics AX, a new **Fill** option was added to suppor
 | Fixed  | Specify the number of columns that the **Columns** property should generate. Controls are evenly distributed among the columns, and their order is maintained. If the controls can't be distributed evenly among the columns, the leftmost columns receive extra controls first. This option is the default value for all controls.                                                          |
 
 ## HeightMode/WidthMode properties
-In the current version of Dynamics AX, sizing is still accomplished via the size properties **WidthMode**+**Width** and **HeightMode**+**Height**. The following table described the various options for these properties.
+In Dynamics 365 for Operations, sizing is still accomplished via the size properties **WidthMode**+**Width** and **HeightMode**+**Height**. The following table described the various options for these properties.
 
 | Option          | Description                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -93,7 +93,7 @@ In the current version of Dynamics AX, sizing is still accomplished via the size
 | SizeToContent   | The height (or width) of the container should be the height (or width) of its contents. This option is the default value for Groups and all other controls except Tabs.  FastTabs that aren't always expanded also have **SizeToContent** height.                                                                                                                             |
 | Manual          | The height (or width) is sized manually. Use **HeightMode**=**Manual** (or **WidthMode**=**Manual**), and set **Height** (or **Width**) to a fixed number of pixels. **Note:** We recommend that you not use manual heights (and widths), because they don't adapt to changes in form density.                                                                                |
 
-Note that, currently, **Auto** still exists as an option. If this value is used, the behavior is determined automatically at run time. Typically, a value of **Auto** for these properties causes the same behavior as a value of **SizeToContent**, as in AX 2012.
+Note that, currently, **Auto** still exists as an option. If this value is used, the behavior is determined automatically at run time. Typically, a value of **Auto** for these properties causes the same behavior as a value of **SizeToContent**, as in Dynamics AX 2012.
 
 ## Interactions between the ArrangeMethod and Columns properties
 If **ArrangeMethod**=**HorizontalLeft** or **HorizontalRight**, the **Columns** property has no effect, because items are laid out in strict horizontal arrangement and no wrapping is used. If **ArrangeMethod**=**Vertical**, columns are arranged vertically, and the controls are either distributed evenly among the columns (**Fixed**), or distributed to fill the available horizontal or vertical space (**Fill**). If **ArrangeMethod**=**HorizontalWrap**, columns are arranged, and horizontal wrapping is used at a fixed column width of 280 px. Typically, this option is used to wrap tile layouts.

@@ -3,7 +3,7 @@
 
 title: Create a custom target entity for the Data import/export framework (AX 2012)
 description: This topic describes how to create a custom entity, so that you can use the Microsoft Dynamics AX Data Import/Export Framework to import, export, or migrate data that does not fit a predefined entity.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 23 - 17 - 17
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18181
-ms.assetid: 4a923cfa-52c2-49fd-b165-d09b41d29956
+ms.assetid: 60c79bd4-1090-4e79-9a8c-2117d963647a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

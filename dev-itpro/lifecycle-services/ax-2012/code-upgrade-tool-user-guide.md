@@ -3,7 +3,7 @@
 
 title: Code Upgrade Tool User Guide (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-03 19 - 25 - 41
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15101
-ms.assetid: b530b333-dc48-40c1-8000-ca4a0cdd78cc
+ms.assetid: 76a3bf45-51bd-4027-80b1-50b5fea4da1e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

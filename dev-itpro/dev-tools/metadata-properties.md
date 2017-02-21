@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Metadata properties -  ReadOnly, AllowEdit, Mandatory
+title: Metadata properties - ReadOnly, AllowEdit, Mandatory
 description: This article covers the behavioral properties of metadata for ReadOnly, AllowEdit, and Mandatory. 
 author: RobinARH
 manager: AnnBe
@@ -21,16 +21,16 @@ ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17911
-ms.assetid: 79b3c134-ed8f-4c9f-b079-b1f68e521da0
+ms.assetid: d53c5fdd-5da7-4cc5-b9b1-a6959ab47547
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kuntalme
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Metadata properties -  ReadOnly, AllowEdit, Mandatory
+# Metadata properties - ReadOnly, AllowEdit, Mandatory
 
 This article covers the behavioral properties of metadata for ReadOnly, AllowEdit, and Mandatory. 
 

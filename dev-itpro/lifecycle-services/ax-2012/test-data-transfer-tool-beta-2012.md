@@ -3,7 +3,7 @@
 
 title: Test Data Transfer Tool (beta) (AX 2012)
 description: The Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta) (DP.exe) is a command-line tool that exports data from a Microsoft Dynamics AX 2012 business database in a production or non-production environment. The tool also imports data into a Microsoft Dynamics AX 2012 business database in a non-production environment. The non-production environment can be either a development or test environment.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-05 18 - 00 - 16
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18651
-ms.assetid: eba692f0-428c-4c1b-acbf-8bdfc9d439bf
+ms.assetid: de54d768-d7a3-45d4-93bf-e95356b797aa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 
@@ -68,7 +68,7 @@ The Test Data Transfer Tool (beta) imports and exports the data as-is. In some c
 Only advanced users should use the Test Data Transfer Tool (beta). You should be a database administrator or a developer who has experience using SQL Server. You should also have permission to read from or write directly to the Microsoft Dynamics AX database that you are working with, and to execute applications directly on the computer that is hosting the database. Before you use the tool, you should read this topic and understand how the tool works. The Test Data Transfer Tool (beta) is a powerful tool for importing and exporting data, but every operation that works with data has risks. You are responsible for creating regular backups of your data before you perform operations by using the tool. You are also responsible for testing your particular uses of the tool to determine whether the tool meets your requirements. You should also make sure that you understand which conditions are logged as errors during import. For example, you might try to import data for a table or column that does not exist in the target database. This attempt is not treated as an error by the tool, because the tool is designed to work seamlessly when the source and target databases have a different set of tables. If you are not sure whether the Test Data Transfer Tool (beta) is the tool that you should use, see [Plan for data](http://technet.microsoft.com/library/8b061683-1c1c-40a0-af49-c2cda7c86f9c(AX.60).aspx).
 
 ## Personally identifiable information
-The Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta) runs in the security context of the user who starts the tool. Therefore, the tool has the same permissions and restrictions that the user has when he or she accesses SQL Server directly. You must run the tool directly from the computer that is hosting the database during import.
+The Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta) runs in the security context of the user who starts the tool. Therefore, the tool has the same permissions and restrictions that the user has when he or she accesses SQL Server directly. You must run the tool directly from the computer that is hosting the database during import.
 
 See also
 --------

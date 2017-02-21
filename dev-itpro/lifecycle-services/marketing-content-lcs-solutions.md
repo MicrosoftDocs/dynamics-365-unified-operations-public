@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 # ms.search.scope: 
 # ms.tgt_pltfrm: 
 ms.custom: 196873
-ms.assetid: e43d7b80-d987-4452-87fc-d1f11ed30839
+ms.assetid: 80b0cc44-ffbe-400e-b902-60518a930b0d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
-# ms.dyn365.intro: 
-# ms.dyn365.version: 
+# ms.dyn365.ops.intro: 
+# ms.dyn365.ops.version: 
 
 ---
 

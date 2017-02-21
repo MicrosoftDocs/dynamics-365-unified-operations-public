@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Set up bar code masks | Microsoft Docs
+title: Set up bar code masks
 description: This topic describes how to set up bar code mask characters, bar code masks, and how to assign bar code masks to bar codes.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-01-05 19:44:48
+ms.date: 2017-01-05 19 - 44 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics AX 7.0.0
+# ms.reviewer: 41
+ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265994
-ms.assetid: e41aa301-9612-4f4e-85cf-25833dec0992
-ms.region: global
-ms.industry: Retail
+ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: rubendel
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

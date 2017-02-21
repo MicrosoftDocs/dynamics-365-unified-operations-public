@@ -3,7 +3,7 @@
 
 title: Copy a configuration
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-03 20 - 22 - 34
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 15541
-ms.assetid: 108aaa8e-0f0c-4507-b0c4-ccdcd1e70fc6
+ms.assetid: 54283db7-6f1a-46e8-b74d-c67d54e6e5fb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

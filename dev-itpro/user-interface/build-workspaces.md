@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27111
-ms.assetid: 84ac09a5-d77e-4fd5-8e1c-095e1af4a5c4
+ms.assetid: b8ddf156-eb7c-4010-95bd-16754cb1e122
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -57,7 +57,7 @@ Overview
 
 ### Examples
 
-An example of a workspace is the **Reservation management** workspace in **Fleet management**. You can get to it by accessing the menu item **FMClerkWorkspace**. [![ReservationMgmt\_OpWork](./media/reservationmgmt_opwork.png)](./media/reservationmgmt_opwork.png) The workspace, shown above, has the following items:
+An example of a workspace is the **Reservation management** workspace in **Fleet management**. You can get to it by accessing the menu item **FMClerkWorkspace**.   The workspace, shown above, has the following items:
 
 -   **Summary** - Contains tiles and a chart.
 -   **Rentals** - Contains a vertical tab control having three pages - the first is selected, and you can see the corresponding content on the rightmost side.

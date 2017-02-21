@@ -3,7 +3,7 @@
 
 title: Security Development Tool (AX 2012)
 description: This topic describes the user interface of the Security Development Tool.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-05 17 - 51 - 41
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18571
-ms.assetid: b0b543e7-bf06-4fc8-a9d9-bd9e36b24e93
+ms.assetid: bf4110a1-c23a-4fe9-8f56-ab9ff5766f76
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

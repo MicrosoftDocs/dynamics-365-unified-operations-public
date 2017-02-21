@@ -3,7 +3,7 @@
 
 title: Analysis in the Intelligent Data Management Framework (AX 2012)
 description: This topic describes the functionality available from the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) Analysis menu.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 20 - 04 - 53
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17672
-ms.assetid: d09cb8d4-a039-428f-b6b5-945147573bd5
+ms.assetid: ea04ef47-0316-4fc9-b785-da4c43b19a8d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

@@ -18,15 +18,15 @@ ms.search.form: SysDataSharingConfiguration
 audience: IT Pro
 # ms.devlang: 
 # ms.reviewer: 11
-ms.search.scope: Operations, Platform, AX Platform, Core
+ms.search.scope: Core
 # ms.tgt_pltfrm: 
 ms.custom: 89071
-ms.assetid: 3de75353-b021-4c96-bf69-b5b2decfc155
+ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 

@@ -3,7 +3,7 @@
 
 title: Dimension entry control uptake
 description: Describes the Dimension Entry control and associated Controller classes.
-author: annbe
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-12 20 - 44 - 35
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25551
-ms.assetid: 71b7b289-a2ec-4161-b461-fb0fe260a946
+ms.assetid: dbc5c0af-ae97-463e-b5ff-9bfd242529ff
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: ghenriks
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

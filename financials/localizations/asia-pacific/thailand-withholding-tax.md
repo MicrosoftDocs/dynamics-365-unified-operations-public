@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Withholding tax in Thailand | Microsoft Docs
+title: Withholding tax in Thailand
 description: This topic provides information about withholding tax and how to set it up for Thailand. The withholding tax functionality has been enhanced for both vendor and customer transactions, so that withholding tax is calculated and withholding tax reports are generated.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-05 15:38:16
+ms.date: 2017-01-05 15 - 38 - 16
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265904
-ms.assetid: a9a97490-25bd-4f88-a6c1-306725e89246
-ms.region: Thailand
-# ms.industry: 
+ms.assetid: d530961f-98af-475a-9556-88169e20fb71
+ms.search.region: Thailand
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Code migration -  Mouse double-click
+title: Code migration - Mouse double-click
 description: In Microsoft Dynamics 365 for Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.
 author: jasongre
 manager: AnnBe
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28331
-ms.assetid: e4da2127-ae8d-4eb0-8412-95e23f50e9c8
+ms.assetid: ba33ee49-2053-4e3c-b0fa-123c9410265d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Code migration -  Mouse double-click
+# Code migration - Mouse double-click
 
 In Microsoft Dynamics 365 for Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.
 

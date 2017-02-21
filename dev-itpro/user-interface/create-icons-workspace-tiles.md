@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create icons for workspace tiles
-description: This article provides guidelines and recommendations for creating and assigning icons to custom workspace tiles in Microsoft Dynamics AX.  
+description: This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 author: jasongre
 manager: AnnBe
 ms.date: 2016-08-19 23 - 15 - 21
@@ -21,20 +21,20 @@ ms.reviewer: annbe
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 141853
-ms.assetid: 8fd5c84f-8457-405a-a4ef-79ffcd099096
+ms.assetid: 4f78c3a4-011f-4ebd-bada-98e77d43821e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 
 # Create icons for workspace tiles
 
-This article provides guidelines and recommendations for creating and assigning icons to custom workspace tiles in Microsoft Dynamics AX.  
+This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 
-In Dynamics AX, the dashboard contains a set of workspace tiles to which the user has access. Each of these tiles contains an icon specific to that workspace. For out-of-the-box workspaces provided by Microsoft, the icons used on the workspace tiles generally correspond to a symbol from the [Microsoft Dynamics Symbol](symbol-font.md)font. This article discusses the guidelines and recommendations for creating and assigning icons to tiles for workspaces created by Microsoft Certified Partners or individual customers.
+The dashboard contains a set of workspace tiles to which the user has access. Each of these tiles contains an icon specific to that workspace. For out-of-the-box workspaces provided by Microsoft, the icons used on the workspace tiles generally correspond to a symbol from the [Symbol font](symbol-font.md). This article discusses the guidelines and recommendations for creating and assigning icons to tiles for workspaces created by Microsoft Certified Partners or individual customers.
 
 ## Implementation details
 ### Icon creation

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Depreciation rounding | Microsoft Docs
+title: Depreciation rounding
 description: This topic explains how you can round fixed asset depreciation amounts up or down to the nearest whole number. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-22 15:29:35
+ms.date: 2016-12-22 15 - 29 - 35
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 265204
-ms.assetid: 4f272289-9cf3-4bb8-992a-47aa808d8057
-ms.region: Czech Republic
-# ms.industry: 
+ms.assetid: 3e535ac3-f5de-47cc-ba7b-40c9857a9460
+ms.search.region: Czech Republic
+# ms.search.industry: 
 ms.author: epopov
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

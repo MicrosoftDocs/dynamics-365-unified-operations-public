@@ -2,13 +2,13 @@
 # required metadata
 
 title: Retail time and attendance
-description: This topic describes the scenarios that are supported for Retail time and attendance management. 
+description: This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Operations - Retail. 
 author: MargoC
 manager: AnnBe
 ms.date: 2016-03-08 22 - 09 - 37
-ms.topic: 
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -17,25 +17,25 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 41
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 62813
-ms.assetid: 861732a7-1f93-48da-a8ac-419b54ff970e
-ms.search.region: Global
-# ms.search.industry: 
+ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: aamiral
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Retail time and attendance
 
-This topic describes the scenarios that are supported for Retail time and attendance management. 
+This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Operations - Retail. 
 
-A Microsoft Dynamics AX user manages worker setup and scheduling
-----------------------------------------------------------------
+Manage worker setup and scheduling
+----------------------------------
 
 ### Initial configuration
 
@@ -53,7 +53,7 @@ For information about the configuration steps, see <https://technet.microsoft.c
 -   Enable a functionality profile for Time Clock, for workers that you want to enable time registrations for. Click **POS functionality profiles** &gt; **Functions** &gt; **POS time registrations** &gt; **Enable time registrations**.
 -   Configure point of sale (POS) permissions groups to enable the View timeclock entries permission. This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book). You might want to enable this permission for a manager role but not for a cashier role. Click **POS permission groups** &gt; **View time clock entries**.
 
-## Retail workers register time
+## Register time
 ### Cashier and non-cashier time registrations
 
 -   On POS:
@@ -113,7 +113,7 @@ For information about the configuration steps, see <https://technet.microsoft.c
 -   Different time zones:
     -   If you view time from a different location (for the cashier logbook, or by using **View timeclock entries** for a manager scenario), and that location is in a different time zone, the time records that you see are converted to your local time zone. For example, you are a manager for two stores, one in Arizona and the other in Nevada. A cashier registers a clock-in at 9:00 A.M. in Arizona. At that moment, the time in Nevada is 8:00 A.M. Therefore, if you are in the Nevada store and look at time registration records, the time registration is marked as 8 A.M.
 
-## A supervisor views worker time registrations
+## View worker time registrations
 ### View worker time registrations, and filter by store or activity type
 
 On POS:
@@ -122,8 +122,8 @@ On POS:
 -   You see time clock registration activities from all workers that are assigned to the same stores that you're assigned to.
 -   You can use the activity type and store filters to filter on time registrations.
 
-## A supervisor processes and manages time registrations
-A Dynamics AX user follows the workflow to calculate, approve, and transfer time registrations to payroll.
+## Process and manage time registrations
+A Dynamics 365 for Operations - Retail user follows the workflow to calculate, approve, and transfer time registrations to payroll.
 
 ### Primary operations
 

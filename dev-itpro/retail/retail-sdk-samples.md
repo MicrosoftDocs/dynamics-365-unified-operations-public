@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail SDK samples | Microsoft Docs
+title: Retail SDK samples
 description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-01-06 21:23:32
+ms.date: 2017-01-06 21 - 23 - 32
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics AX platform update 2
+# ms.reviewer: 2051
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 266164
-ms.assetid: 08bdcc93-04e0-440a-a594-974c558bff7a
-ms.region: Global
-# ms.industry: 
+ms.assetid: d24470fd-07ad-4c3f-b23a-3f6c1401edc6
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: mumani
+ms.dyn365.ops.intro: 01-08-2016
+ms.dyn365.ops.version: Platform update 2
 
 ---
 

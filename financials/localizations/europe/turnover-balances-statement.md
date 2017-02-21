@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Turnover and balances statement for Poland | Microsoft Docs
+title: Turnover and balances statement for Poland
 description: This topic provides information about the Turnover and balances statement for Poland.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-16 21:31:03
+ms.date: 2016-12-16 21 - 31 - 03
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 264354
-ms.assetid: 8d9d3885-cd6a-44d1-b00f-8a0d9308faba
-ms.region: Poland
-# ms.industry: 
+ms.assetid: 55291998-d863-4d02-ba13-65f1ff0b227e
+ms.search.region: Poland
+# ms.search.industry: 
 ms.author: v-semaz
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

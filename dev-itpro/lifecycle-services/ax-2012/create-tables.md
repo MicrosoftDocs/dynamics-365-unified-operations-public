@@ -3,7 +3,7 @@
 
 title: Create tables
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 23 - 17 - 02
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18161
-ms.assetid: b81a6638-712f-442d-a43d-677a385cf143
+ms.assetid: 96e1f184-d049-46c3-a4ef-12641361f356
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

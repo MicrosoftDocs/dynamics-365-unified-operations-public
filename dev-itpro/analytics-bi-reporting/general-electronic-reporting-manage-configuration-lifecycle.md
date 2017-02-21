@@ -18,15 +18,15 @@ ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesig
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 58801
-ms.assetid: 473f3ebe-aadf-4c90-82f9-c6b31d8fca90
+ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

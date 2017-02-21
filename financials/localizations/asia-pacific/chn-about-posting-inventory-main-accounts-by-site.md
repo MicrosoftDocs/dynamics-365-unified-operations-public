@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Posting inventory main accounts by site | Microsoft Docs
+title: Posting inventory main accounts by site
 description: This topic provides information about the posting of inventory main accounts by site for China.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-12 22:49:48
+ms.date: 2016-12-12 22 - 49 - 48
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-keywords: InventPostingParameters
+ms.search.form: InventPostingParameters
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 81
-ms.suite: Released- Dynamics 365 for Operations version 1611
+# ms.reviewer: 81
+ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 262754
-ms.assetid: e43f0736-9e0a-46fb-8552-f365df9dfb42
-ms.region: China (PRC)
-# ms.industry: 
+ms.assetid: f8e0b34d-006a-4baf-86ae-60625ba4b442
+ms.search.region: China (PRC)
+# ms.search.industry: 
 ms.author: leguo
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 

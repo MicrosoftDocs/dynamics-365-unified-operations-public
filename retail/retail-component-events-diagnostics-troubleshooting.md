@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 85493
-ms.assetid: 1c4d564d-188f-43ef-b65b-d7e2fb4f0acf
+ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: aamiral
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

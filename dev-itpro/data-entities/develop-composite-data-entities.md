@@ -21,12 +21,12 @@ ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18411
-ms.assetid: 9552894e-3112-4549-bfe4-1bb8d964b69c
+ms.assetid: 1cb19868-cbfd-4f45-bc47-39b9f303583d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kuntalme
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -71,7 +71,7 @@ Add a relation to parent entity in the relations node. Example – MySalesLineEn
 
 ### Step 3: Create a new composite entity
 
-1.  Add a new item of type **Composite entity** to the project.  [![DevelopingCompositeEntities (1)](./media/developingcompositeentities-1.png)](./media/developingcompositeentities-1.png)
+1.  Add a new **Dynamics 365** artifact item of type **Composite entity** to the project.
 2.  In designer mode, right-click the entity and select **New Root Data Entity Reference**. [![DevelopingCompositeEntities (2)](./media/developingcompositeentities-2.png)](./media/developingcompositeentities-2.png)
 3.  Set the data entity to parent data entity. In this case its MySalesTableEntity.
 4.  Right-click the parent entity node and select **New Embedded Data Entity Reference**. [![DevelopingCompositeEntities (3)](./media/developingcompositeentities-3.png)](./media/developingcompositeentities-3.png)
@@ -109,17 +109,17 @@ For local testing the composite entity metadata needs to be refreshed.
 We recommend that you import and export the data as a normal entity from DIXF standard process. Refer to the following the steps for importing and exporting entity. **Note:** The source types of XML-Attribute or XML-Element are supported for composite entity.
 
 ## Import a composite entity
-1.  Click **Import**.[![DevelopingCompositeEntities (9)](./media/developingcompositeentities-9-1024x499.png)](./media/developingcompositeentities-9.png)
+1.  Click **Import**.
 2.  Enter **Name**, **Source data format**, and **Entity name**.
-3.  The **Source data format** is either xml-attribute or xml-element. [![DevelopingCompositeEntities (10)](./media/developingcompositeentities-10-1024x499.png)](./media/developingcompositeentities-10.png)
-4.  Click **Import now**.  [![DevelopingCompositeEntities (11)](./media/developingcompositeentities-11-1024x499.png)](./media/developingcompositeentities-11.png)
-5.  The number of records created/updated/pending are shown.  [![DevelopingCompositeEntities (12)](./media/developingcompositeentities-12-1024x499.png)](./media/developingcompositeentities-12.png)
+3.  The **Source data format** is either xml-attribute or xml-element.
+4.  Click **Import now**.
+5.  The number of records created/updated/pending are shown.
 
 ## Export a composite entity
-1.  Click **Export**. [![DevelopingCompositeEntities (13)](./media/developingcompositeentities-13-1024x499.png)](./media/developingcompositeentities-13.png)
-2.  Enter **Name**, **Source data format**, **and Entity name**. [![DevelopingCompositeEntities (14)](./media/developingcompositeentities-14-1024x499.png)](./media/developingcompositeentities-14.png)
-3.  Click **Add entity** and **Export now**. [![DevelopingCompositeEntities (15)](./media/developingcompositeentities-15-1024x499.png)](./media/developingcompositeentities-15.png)
-4.  Click **Download package**. [![DevelopingCompositeEntities (16)](./media/developingcompositeentities-16-1024x499.png)](./media/developingcompositeentities-16.png)
+1.  Click **Export**.
+2.  Enter **Name**, **Source data format**, **and Entity name**.
+3.  Click **Add entity** and **Export now**.
+4.  Click **Download package**.
 
 ## General troubleshooting guidelines
 -   Issue: The exported composite XML file is not imported. The scenario that produces this is:

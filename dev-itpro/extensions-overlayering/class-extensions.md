@@ -21,12 +21,12 @@ ms.reviewer: annbe
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 89563
-ms.assetid: f9f7493e-dff0-4e64-a83a-c36838db1ae6
+ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pvillads
-ms.dyn365.intro: May-16
-ms.dyn365.version: Platform update 1
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: Platform update 1
 
 ---
 

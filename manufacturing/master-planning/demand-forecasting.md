@@ -3,7 +3,7 @@
 
 title: Demand forecasting home page
 description: This topic provides a list of the Help topics and other resources that are available for Demand forecasting.
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-10-11 20 - 19 - 44
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 204024
-ms.assetid: 7f15df63-7632-477a-81ba-0c8886278656
+ms.assetid: f6e1195a-af66-4306-a887-c31482ee58f3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: yuyus
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -43,10 +43,11 @@ The resources available for Demand forecasting include:
 -   [Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
 -   [Monitoring forecast accuracy](monitor-forecast-accuracy.md)
 -   [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
--   [Demand forecasting with Azure Machine Learning ](https://mbs.microsoft.com/customersource/northamerica/AX/learning/presentations/DynamicsTechnicalConference16)(video requires a CustomerSource account)
 -   [Reduction keys](reduction-keys.md)
 -   [Create a baseline forecast](http://ax.help.dynamics.com/en/wiki/develop-baseline-forecast/) (Task guide)
 -   [Modify a demand forecast manually](http://ax.help.dynamics.com/en/wiki/modify-a-demand-forecast-manually/) (Task guide)
+-   [Demand forecasting with Azure Machine Learning ](http://msdynamicsworld.com/webcast/microsoft-azure-machine-learning-and-its-application-dynamics-ax-recorded-webcast)(video requires a CustomerSource account)
+-   [Learn about the redefined demand forecasting](https://mbspartner.microsoft.com/AX/Videos/930)(video requires a CustomerSource account)
 
 #### Additional resources
 

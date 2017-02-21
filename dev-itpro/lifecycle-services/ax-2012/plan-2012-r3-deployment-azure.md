@@ -2,8 +2,8 @@
 # required metadata
 
 title: Plan your Dynamics AX 2012 R3 deployment on Azure
-description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process.  <strong>Note - </strong> Microsoft Dynamics AX 2012 R3 is officially supported on Microsoft Azure when deployments are performed through <a href="https - //lcs.dynamics.com">Microsoft Dynamics Lifecycle Services</a>. Deployments of Dynamics AX 2012 R3 are not supported on Azure when performed outside of Microsoft Dynamics Lifecycle Services.
-author: annbe
+description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process. 
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-05 17 - 53 - 45
 ms.topic: article
@@ -17,27 +17,27 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: kfend
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18591
-ms.assetid: 70a6d6f2-4f24-4ee6-a261-bb89fe920173
+ms.assetid: 84e597d7-6ad3-4322-8ac3-6b6151dd24f6
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 
 # Plan your Dynamics AX 2012 R3 deployment on Azure
 
-Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process.  <strong>Note - </strong> Microsoft Dynamics AX 2012 R3 is officially supported on Microsoft Azure when deployments are performed through <a href="https - //lcs.dynamics.com">Microsoft Dynamics Lifecycle Services</a>. Deployments of Dynamics AX 2012 R3 are not supported on Azure when performed outside of Microsoft Dynamics Lifecycle Services.
+Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process. 
 
 Verify that you can log on to Lifecycle Services
 ------------------------------------------------
 
-Microsoft Dynamics Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool, available on the Lifecycle Services website, to deploy AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Verify that you can log on to Lifecycle Services](https://lcs.dynamics.com/)
+Microsoft Dynamics Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use the Cloud-hosted environments tool, available on the Lifecycle Services website, to deploy AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. **Note:** Microsoft Dynamics AX 2012 R3 is officially supported on Microsoft Azure when deployments are performed through Lifecycle Services. Deployments of Dynamics AX 2012 R3 are not supported on Azure when performed outside of Microsoft Dynamics Lifecycle Services. [Verify that you can log on to Lifecycle Services](https://lcs.dynamics.com/)
 
 ## Purchase an Azure subscription
 To use Azure, you must purchase a subscription. For information about subscription plans and pricing details, see the [Azure pricing](https://azure.microsoft.com/en-us/pricing/) page. Then follow the instructions on that page to purchase a subscription. The subscription must be large enough to support the AX 2012 R3 environment that you want to deploy on Azure. The following table lists the types of AX 2012 R3 environments that you can deploy on Azure, and the number of cores required to deploy each environment in its default configuration. **Note:** Keep in mind that when you deploy an environment, you can change the number and size of the virtual machines that are deployed. However, this table lists the number of cores required to deploy each environment in its *default* configuration.

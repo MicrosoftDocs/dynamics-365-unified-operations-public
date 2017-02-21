@@ -3,7 +3,7 @@
 
 title: Workflow subsystem updates in Dynamics 365 for Operations
 description: This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
-author: annbe
+author: josaw1
 manager: AnnBe
 ms.date: 2015-12-12 20 - 12 - 33
 ms.topic: article
@@ -18,15 +18,15 @@ ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 25391
-ms.assetid: 61d704d2-7bb2-4cff-864a-a6b8816be68a
+ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: josaw
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -111,6 +111,8 @@ See also
 [Dynamics 365 for Operations Help — Getting started](help-get-started.md)
 
 [Task Recorder in Dynamics 365 for Operations](task-recorder.md)
+
+[Recently added editing features in task recorder](recently-added-editing-features-in-task-recorder.md)
 
 [Dynamics 365 for Operations Help architecture](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=197531)
 

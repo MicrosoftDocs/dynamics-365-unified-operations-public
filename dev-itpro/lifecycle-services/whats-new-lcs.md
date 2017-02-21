@@ -3,7 +3,7 @@
 
 title: What's new in Lifecycle Services
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-02 16 - 48 - 17
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13321
-ms.assetid: f247e05e-50c8-4e45-ac60-a0ad6f4f5fa5
+ms.assetid: f9706e52-7d17-408d-9c1f-9033a50862b2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

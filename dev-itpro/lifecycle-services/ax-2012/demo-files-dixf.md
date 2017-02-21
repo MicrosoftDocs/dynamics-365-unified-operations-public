@@ -3,7 +3,7 @@
 
 title: Demo files for the Data import/export framework
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-01-21 18 - 14 - 08
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 29921
-ms.assetid: 59bc2fac-cb83-42ae-8e84-28b1631b1a46
+ms.assetid: 70033f55-eddd-4e5a-8f91-5e8670d104c5
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

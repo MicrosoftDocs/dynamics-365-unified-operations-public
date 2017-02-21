@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 256464
-ms.assetid: 6ef845a6-e4c9-49fe-867b-ad2f5bc222ac
+ms.assetid: 4cc5f2aa-dd4e-4981-9607-e75fd1d57941
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tabell
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -40,9 +40,9 @@ Overview
 This procedure can be used to move a Microsoft Dynamics 365 for Operations database from an environment that runs on Microsoft SQL Server (Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Tier 2 or higher). This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment. This process isn't suitable for all situations. For example, you should not use this process to import data for a new legal entity for an existing live deployment. In those situations, we recommend that you use [process data packages](process-data-packages-lcs-solutions.md) or [data entity data packages](data-entities-data-packages.md). Here is the supported procedure for bringing a golden database into the production environment:
 
 1.  A customer or partner exports the database from SQL Server.
-2.  The customer or partner imports the database to a sandbox environment that runs on an Azure SQL database.
+2.  The customer or partner imports the database to a sandbox environment that runs on an Azure SQL database. **Note:** If you're using Retail components raise a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that the Service Engineering Team update the imported database to be reconfigured for the new environment.
 3.  The customer or partner uses a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that Microsoft Support update the sandbox database to the production environment.
-4.  Support copies the database from the sandbox environment to the production environment. **Note:** Microsoft accepts requests to copy a database into a production environment only before go-live.
+4.  Support copies the database from the sandbox environment to the production environment. **Note:** Microsoft accepts requests to copy a database into a production environment only before go-live. li&gt;
 
 The process for moving a database involves using the sqlpackage.exe command-line tool to export the database from SQL Server and import it into an Azure SQL database. Because the file name extension for the exported data file is .bacpac, the process is often referred to as the bacpac process. Here are the high-level steps:
 
@@ -90,9 +90,6 @@ The values in the following forms are either environment-specific or encrypted i
 
 -   Accounts receivable &gt; Payments setup &gt; Payments services
 -   Retail and commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Hardware profiles
--   Retail and commerce &gt; Channel setup &gt; Channel profiles
--   Commerce essentials &gt; Headquarters setup &gt; Retail scheduler &gt; Real-time service profiles
--   Retail and commerce &gt; Headquarters setup &gt; Retail scheduler &gt; Channel database
 
 ## Create a copy of the source database
 Before the source SQL Server database can be exported, the database users must be deleted. Therefore, you create a copy of the source database to work with, instead of modifying the original database. The following script backs up the default AxDB database and then restores it to the same instance under a new name. To use this script, first verify that the path D:\\backups exists.
@@ -148,7 +145,7 @@ Copy the .bacpac file that was generated in the previous step to the AOS compute
 
     cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 
-    SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=P11
+    SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:<azure sql database server name>.database.windows.net /tu:sqladmin /tp:<password from LCS> /tdn:<New database name> /p:CommandTimeout=1200 /p:DatabaseEdition=Premium /p:DatabaseServiceObjective=P2
 
 Here is an explanation of the parameters:
 
@@ -234,6 +231,14 @@ Run the following script against the imported database. The script performs the 
 
         DROP DATABASE [axdb_123456789_original]
 
+### Reset the Financial Reporting database
+
+If using Financial Reporting (formerly Management Reporter) then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](reset-financial-reporting-datamart-after-restore.md).
+
+### If you're using Retail components
+
+If you're using Retail components must raise a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that the Service Engineering Team update the imported database to be reconfigured for the new environment.
+
 ## Raise a service request to copy database
 To copy the golden database to a production environment, you must submit a service request of the **Other request** type through LCS to ask that Microsoft run the copy action. **Note:** You can't use a request of the **Database refresh request** type, because the request involves copying to a production environment.
 
@@ -255,35 +260,6 @@ The values in the following forms are encrypted in the database, so all the impo
 
 -   Accounts receivable &gt; Payments setup &gt; Payments services
 -   Retail and commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Hardware profiles
--   Retail and commerce &gt; Channel setup &gt; Channel profiles
--   Commerce essentials &gt; Headquarters setup &gt; Retail scheduler &gt; Real-time service profiles
--   Retail and commerce &gt; Headquarters setup &gt; Retail scheduler &gt; Channel database
-
-### Update the environment specific values
-
-In the target environment, you must update the environment-specific variables in the RetailSelfServicePackageInfo table. To find the values to includes in these statements, query the RetailSelfServicePackageInfo table in the source database.
-
-    update dbo.RETAILSELFSERVICEPACKAGEINFO
-    set PACKAGESTORAGEUID = '<value for PackageStorageUID from original database>'
-    where PACKAGENAME = 'HardwareStationSetup_V70126523020.exe'
-
-    update dbo.RETAILSELFSERVICEPACKAGEINFO
-    set PACKAGESTORAGEUID = '<value for PackageStorageUID from original database>'
-    where PACKAGENAME = 'ModernPOSSetup_V70126523020.exe'
-
-    update dbo.RETAILSELFSERVICEPACKAGEINFO
-    set PACKAGESTORAGEUID = '<value for PackageStorageUID from original database>'
-    where PACKAGENAME = 'ModernPOSSetupOffline_V70126523020.exe'
-
-    delete from BATCH
-    from BATCHJOB
-    where BATCH.BATCHJOBID = BATCHJOB.RECID
-    AND BATCHJOB.CAPTION = 'Default channel database batch job'
-
-    delete from BATCHJOB where BATCHJOB.CAPTION = 'Default channel database batch job'
-
-    update dbo.RETAILSHAREDPARAMETERS
-    set TENANTID = '<tenant ID from existing database>'
 
 ## Reenter data from encrypted and environment specific fields in the target database
 In the Dynamics 365 for Operations client, enter the values that you documented for the encrypted and environment-specific fields. The following fields are affected. (The field names are given in *Table*.*Field* format.)

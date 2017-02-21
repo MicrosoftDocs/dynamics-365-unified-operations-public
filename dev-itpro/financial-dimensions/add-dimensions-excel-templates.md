@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
-ms.search.scope: Operations
+ms.reviewer: RobinARH
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261064
-ms.assetid: 5230ca86-c766-4239-b686-0e0d601b100a
+ms.assetid: f3ab87ab-ee8b-462c-bb6f-4d98e0030513
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -38,7 +38,7 @@ In Dynamics 365 for Operations, the only value that is present on Microsoft Exce
 
 1.  In Visual Studio, open the project where you modified **DimensionCombinationEntity** or **DimensionSetEntity.**
 2.  Right-click **DimensionCombinationEntity** or **DimensionSetEntity**. Select **Open**.
-3.  Right click **Relations**. Select **New**.
+3.  Right click **Relations**. Select **New** and then click **Relation.**
 4.  In the **Properties** pane, set the following properties.
     -   **Validate** - No
     -   **Cardinality** - ZeroMore
@@ -88,19 +88,22 @@ In Dynamics 365 for Operations, the only value that is present on Microsoft Exce
     -   **Relationship Type** - **Association**
     -   **Role** - Enter a unique name, such as Dimension Department.
 
-5.  Right-click the **Financial dimension** name under **Relations**, and click **New.**
+5.  Right-click the **Financial dimension** name under **Relations.**
 6.  Select **New**, and then click **Normal.**
-7.  Set the new relation to be between your **Financial dimension** field and the **Related Data Entity** value field, as shown in the following example.
+7.  In the Properties pane, choose the name of the Financial dimension in the **Field**.
+8.  In the Related field, type **Value**. The new relation is similar to the following example.
 
         DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
 
     [![lookupwiki](./media/lookupwiki.png)](./media/lookupwiki.png)
 
-8.  Compile the project and then synchronize it with the database.
+9.  Build the project and then synchronize it with the database.
 
 
 See also
 --------
 
 [Add dimensions to Microsoft Excel templates](add-dimensions-excel-templates.md)
+
+[Extensibility home page](extensibility-home-page.md)
 

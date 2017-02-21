@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 13171
-ms.assetid: bbad25ca-1ab4-4e88-963c-7b47f898563b
+ms.assetid: 300b7ebe-c320-4a2f-89a9-33635c7108d2
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shailesn
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -79,7 +79,7 @@ LCS provides an option to deploy a Development topology environment. With this o
 
 ### Check-in migrated or new module code into VSTS
 
-As part of code Migration process, we expect you to check-in the module and the associated test module into VSTS. If you have not checked in any code into VSTS and work on direct check-in, you must follow certain guidelines for the VSTS folder structure. This will help with setting up correct build definition. All modules should be added to root folder **Metadata**. Under each module, there should be two folders. One folder contains all models. The other folder should contain descriptor XML for that module. [![image009](./media/image009.png)](./media/image009.png)  
+As part of code Migration process or development activities, we expect you to check-in your model source files and the associated test model source files into VSTS. If you have migrated your code using the LCS migration service, this is automatically done for you. If you have not checked in any code into VSTS and work on direct check-in, you must follow certain guidelines for the VSTS folder structure. This will help with setting up correct build definition. All modules should be added to root folder **Metadata**. Under each module, there should be two folders. One folder contains all models. The other folder should contain descriptor XML for that module. [![image009](./media/image009.png)](./media/image009.png)  
 
 ### Deploy developer topology (Developer and Build VM)
 

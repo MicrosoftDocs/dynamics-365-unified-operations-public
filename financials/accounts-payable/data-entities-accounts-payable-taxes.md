@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Accounts payable and taxes
+title: Data entities - Accounts payable and taxes
 description: This article provides a list of the data entities that are available for the Accounts payable and taxes functionality in Microsoft Dynamics 365 for Operations.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 20 - 24
 ms.topic: article
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96193
-ms.assetid: e239d532-11cf-4af0-aee0-984154d292e1
+ms.assetid: 9935fcf2-a497-4c19-a3a8-c1ed259a965c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Accounts payable and taxes
+# Data entities - Accounts payable and taxes
 
 This article provides a list of the data entities that are available for the Accounts payable and taxes functionality in Microsoft Dynamics 365 for Operations.
 

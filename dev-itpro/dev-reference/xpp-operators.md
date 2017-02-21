@@ -3,7 +3,7 @@
 
 title: X++ operators
 description: This topic describes the operators supported in X++.
-author: annbe
+author: RobinARH
 manager: AnnBe
 ms.date: 2016-08-27 00 - 51 - 34
 ms.topic: 
@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150373
-ms.assetid: 41bce93b-44b2-40e8-9109-6384ef02ad0e
+ms.assetid: f06da12e-911c-442c-97fd-280cbc970061
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: robinr
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

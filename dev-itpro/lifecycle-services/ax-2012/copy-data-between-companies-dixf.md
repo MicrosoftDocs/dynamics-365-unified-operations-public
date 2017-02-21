@@ -3,7 +3,7 @@
 
 title: Copy data between Dynamics AX companies (AX 2012)
 description: You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to copy an entity, such as customers, from one Microsoft Dynamics AX legal entity (company) to another. In this example, we will export customers in a specific customer group from the CEU company to the CEC company in the Contoso data set.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 21 - 13 - 36
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 17821
-ms.assetid: 626baf8c-0d24-4d83-8f94-6ca7d6f8f136
+ms.assetid: cd9b30d2-d4e0-4da7-9408-34bda5888070
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Retail peripheral simulator | Microsoft Docs
+title: Retail peripheral simulator
 description: This topic describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 for Operations - Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-01-09 19:44:35
+ms.date: 2017-01-09 19 - 44 - 35
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 41
-ms.suite: Released- Dynamics AX application 7.0.1
+# ms.reviewer: 41
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 266544
-ms.assetid: 8f8a95f3-4ef1-4c1b-b253-daf871ea8f3b
-ms.region: global
-ms.industry: Retail
+ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: rubendel
+ms.dyn365.ops.intro: 01-05-2016
+ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -196,4 +198,9 @@ You can edit the peripheral simulator's configuration file to more appropriately
 
 ## Troubleshooting
 Activities for the peripheral simulator are logged within the peripheral simulator. You can find the log at C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. The peripheral simulator also reports issues to the Windows event log, which you can access at **Application and Services Logs** &gt; **Microsoft** &gt; **DynamicsAX**. If changes that you made to the hardware profile or other areas aren't evident when you use MPOS or the peripheral simulator, check the distribution scheduler jobs that you used to synchronize the data to the channel database. If the changes were synchronized but still aren't evident at the POS, restart the POS client. Changes to configured cash drawers aren't effective until a new shift is created. Therefore, if you make changes to cash drawers, make sure that you always close the existing shift to test the new cash drawer setup. Sometimes, if a manufacturer's driver is installed after the common control objects from Monroe Consulting Services, the driver can cause the common control objects to stop working correctly. In this case, you should reinstall the common control objects.
+
+See also
+--------
+
+[Retail peripherals overview](retail-peripherals-overview.md)
 

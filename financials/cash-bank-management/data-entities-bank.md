@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Data entities -  Bank
+title: Data entities - Bank
 description: This article provides a list of the data entities that are available for the Bank and cash management functionality in Microsoft Dynamics AX.
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2016-06-29 14 - 19 - 20
 ms.topic: reference
@@ -21,16 +21,16 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 95863
-ms.assetid: 3f81c08c-2efe-43e5-b4e0-dce8eac6fb8d
+ms.assetid: 3e2212f7-c34c-4034-a0fa-cbf382eb0c8d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Data entities -  Bank
+# Data entities - Bank
 
 This article provides a list of the data entities that are available for the Bank and cash management functionality in Microsoft Dynamics AX.
 

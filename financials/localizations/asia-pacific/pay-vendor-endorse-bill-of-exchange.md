@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pay a vendor by endorsing a bill of exchange
-description: In Japan, bills of exchange (BOEs) are often endorsed to a vendor and used as a method of payment. In Microsoft Dynamics AX, a list page for BOEs provides centralized management of the BOE lifecycle.
+description: In Japan, bills of exchange (BOEs) are often endorsed to a vendor and used as a method of payment. In Microsoft Dynamics 365 for Operations, a list page for BOEs provides centralized management of the BOE lifecycle.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 2016-01-06 20 - 53 - 35
@@ -17,24 +17,24 @@ ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVe
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+# ms.reviewer: 81
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28791
-ms.assetid: 54625d0e-e860-4d53-ac73-9242cf650443
+ms.assetid: f0ed3209-2d1a-4208-ba45-192e88baed53
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Pay a vendor by endorsing a bill of exchange
 
-In Japan, bills of exchange (BOEs) are often endorsed to a vendor and used as a method of payment. In Microsoft Dynamics AX, a list page for BOEs provides centralized management of the BOE lifecycle.
+In Japan, bills of exchange (BOEs) are often endorsed to a vendor and used as a method of payment. In Microsoft Dynamics 365 for Operations, a list page for BOEs provides centralized management of the BOE lifecycle.
 
-To start managing a BOE in Dynamics AX, open the Draw bill of exchange journal. When this type of journal is posted, if the status of the BOE is **Drawn**, users can manage the BOE lifecycle in following stages.
+To start managing a BOE in Dynamics 365 for Operations, open the Draw bill of exchange journal. When this type of journal is posted, if the status of the BOE is **Drawn**, users can manage the BOE lifecycle in following stages.
 
 ## Endorse a BOE to a vendor
 The list page shows customer BOEs that have been drawn. You can select one or more BOEs to endorse to a vendor. However, if multiple BOEs are selected, they all must have a status of **Drawn** before you can endorse them. An accounting voucher will be generated to record the balance change in the endorsed BOE account and the accounts payable account.

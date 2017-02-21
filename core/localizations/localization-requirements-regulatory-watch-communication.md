@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27831
-ms.assetid: 5394778d-e911-438d-a001-c72a622a384a
+ms.assetid: 3d60e911-1f34-40e0-a5c0-c35ba8fb6829
 ms.search.region: global
 # ms.search.industry: 
 ms.author: janeaug
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

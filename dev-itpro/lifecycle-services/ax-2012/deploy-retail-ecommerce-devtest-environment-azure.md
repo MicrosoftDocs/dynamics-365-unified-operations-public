@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deploy a Retail e-commerce dev/test environment on Azure (AX 2012)
-description: This article explains how to deploy a Retail e-commerce dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services. To learn more about Retail e-commerce, see <a href="http - //technet.microsoft.com/library/56364854-9730-4afa-8cf7-ae337ce2257a(AX.60).aspx" target="_blank">Online Store</a>.
+description: This article explains how to deploy a Retail e-commerce dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services. 
 author: MargoC
 manager: AnnBe
 ms.date: 2015-12-02 16 - 32 - 46
@@ -21,18 +21,18 @@ ms.reviewer: annbe
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 13241
-ms.assetid: 97270fec-7a4a-4c50-beea-483ce37ad9e9
+ms.assetid: c69e8d08-b4f8-4660-b19f-53638170b13f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aamiral
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 
 # Deploy a Retail e-commerce dev/test environment on Azure (AX 2012)
 
-This article explains how to deploy a Retail e-commerce dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services. To learn more about Retail e-commerce, see <a href="http - //technet.microsoft.com/library/56364854-9730-4afa-8cf7-ae337ce2257a(AX.60).aspx" target="_blank">Online Store</a>.
+This article explains how to deploy a Retail e-commerce dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services. 
 
 Prerequisites
 -------------
@@ -234,4 +234,9 @@ The account used as the Business Connector proxy.
 ### Local administrator accounts
 
 Each virtual machine that you deployed has a local administrator account. This account is: builtinaxlocaladmin. The passwords for the local administrator accounts are displayed on the **Cloud-hosted environments** page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
+
+See also
+--------
+
+[Online Store (TechNet)](http://technet.microsoft.com/library/56364854-9730-4afa-8cf7-ae337ce2257a(AX.60).aspx)
 

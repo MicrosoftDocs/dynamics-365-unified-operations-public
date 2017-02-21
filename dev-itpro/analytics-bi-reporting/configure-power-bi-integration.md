@@ -18,15 +18,15 @@ ms.search.form: PowerBIConfiguration
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27661
-ms.assetid: 9256783a-e1cd-4777-b1dc-022672bd1881
+ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cwesene
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

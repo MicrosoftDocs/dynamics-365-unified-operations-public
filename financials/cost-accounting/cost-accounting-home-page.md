@@ -3,7 +3,7 @@
 
 title: Cost accounting home page
 description: This topic provides a list of the help topics and other resources that are available for Cost accounting.
-author: annbe
+author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-11-16 13 - 57 - 32
 ms.topic: 
@@ -21,12 +21,12 @@ audience: Application User
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 256254
-ms.assetid: 92490d4d-b3a4-4663-b1b0-0b883f8c74e6
+ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.author: yuyus
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -40,7 +40,7 @@ The Cost accounting module allows you to do the following:
 -   Define cost object dimensions and import cost object dimension members.
 -   Define or import statistical dimensions.
 -   Create statistical measure provider templates.
--   Create cost accounting ledgers
+-   Create cost accounting ledgers.
 -   Create cost control units.
 -   Process general ledger entries.
 -   Process budget entries.
@@ -63,7 +63,7 @@ To understand how you can use Cost accounting for your daily work, you must und
 ## Get started
 The "Get started with Cost Accounting" white paper provides the basic steps to configure Microsoft Dynamics 365 for Operations - Cost Accounting in order to make the actual cost analysis. It also provides a series of procedures that you can complete in the order which they appear.
 
--   [Get started with Cost accounting](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (White paper and requires a CustomerSource account)
+-   [Get started with Cost accounting](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (white paper and requires a CustomerSource account)
 
 ## Additional resources
 -   Additional help is available as task guides inside Microsoft Dynamics 365 for Operations. To access task guides, click the Help button on any page.

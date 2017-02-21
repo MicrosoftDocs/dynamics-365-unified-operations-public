@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: RobinARH
+# ms.reviewer: 51
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17852
-ms.assetid: b20ca8f0-a5ff-4f21-8756-84f31a58a641
+ms.assetid: a9ede141-56fa-4310-997d-aeef184f7a52
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kuntalme
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -47,7 +47,7 @@ Data entities support entry point security similar to menu items and forms. In 
 | Data management | The ability to use asynchronous integration options for the entity, such as import/export and connector integration. |
 
 ## Security modeling guidelines
-In Microsoft Dynamics AX, Data Management (DIXF/Connectors) and OData both provide read/write capabilities for a data entity. Thus, if a role can read/write the Data Entity via OData, then being able to export/import via Data Management (DIXF/Connectors) is permissible as well. The following tasks are required:
+In Data Management (DIXF/Connectors) and OData both provide read/write capabilities for a data entity. Thus, if a role can read/write the Data Entity via OData, then being able to export/import via Data Management (DIXF/Connectors) is permissible as well. The following tasks are required:
 
 -   **Create two privileges per entity,** **one for view and the other for maintain**. On both privileges, leave IntegrationMode=All. The Maintain privilege is typically granted 'Delete' access and the View privilege is typically granted 'Read' access. Naming guidelines for these privileges are:
     -   EntityName + **'View'**

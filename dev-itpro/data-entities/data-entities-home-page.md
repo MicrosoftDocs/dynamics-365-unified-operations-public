@@ -2,10 +2,10 @@
 # required metadata
 
 title: Data entities home page
-description: This topic provides information about working with data entities, data packages, and OData in Microsoft Dynamics AX. 
-author: annbe
+description: This topic provides information about working with data entities, data packages, and OData in Microsoft Dynamics 365 for Operations. 
+author: kfend
 manager: AnnBe
-ms.date: 2016-06-29 14 - 25 - 59
+ms.date: 2016-12-01 17 - 54 - 45
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -21,18 +21,18 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 96253
-ms.assetid: df5d1fa0-936a-43a8-8505-66f089d07177
+ms.assetid: 9d2745cc-c2f8-4394-9886-0ba81cdb003b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # Data entities home page
 
-This topic provides information about working with data entities, data packages, and OData in Microsoft Dynamics AX. 
+This topic provides information about working with data entities, data packages, and OData in Microsoft Dynamics 365 for Operations. 
 
 Data entities
 -------------
@@ -43,14 +43,14 @@ Data entities
 
 ### Concepts
 
-[Data entities](data-entities.md) [Behavioral properties on data entities](behavioral-properties-data-entities.md) [Building and consuming data entities](build-consuming-data-entities.md) [Data entities and packages framework](data-entities-data-packages.md) [Computed columns and virtual fields](data-entity-computed-columns-virtual-fields.md) [Country/region codes and configuration keys](countryregion-codes-configuration-keys.md) [Cross company behavior](cross-company-behavior.md) [Data entity wizard rules](data-entity-wizard-rules.md) [Data management and integration through data entities](data-management-integration-data-entity.md) [Date effectivity](date-effectivity.md) [Design principles and best practices](design-best-practices.md) [Developing composite entities](develop-composite-data-entities.md) [Dimensions](dimensions.md) [Dimensions overview](dimensions-overview.md) [Metadata properties: ReadOnly, AllowEdit, Mandatory](metadata-properties.md) [Recurring integrations](recurring-integrations.md) [Security and data entities](security-data-entities.md) [Support for super type and sub type](support-super-type-sub-type.md) [Validations, defaults, and unmapped fields](validations-defaults-unmapped-fields.md) [Introduction to Data Entity (Office Mix)](https://mix.office.com/watch/1brkpjvhf851m) [Introduction to OData in Dynamics AX (Office Mix)](https://mix.office.com/watch/i53efq3ddtjy) [Introduction to Import/Export and Integration (Office Mix)](https://mix.office.com/watch/1qplbdkxu5u4d) [JSON Based Endpout for Custom Services (Office Mix)](https://mix.office.com/watch/12e4fejbgj429)
+[Data entities](data-entities.md) [Behavioral properties on data entities](behavioral-properties-data-entities.md) [Building and consuming data entities](build-consuming-data-entities.md) [Data entities and packages framework](data-entities-data-packages.md) [Computed columns and virtual fields](data-entity-computed-columns-virtual-fields.md) [Country/region codes and configuration keys](countryregion-codes-configuration-keys.md) [Cross company behavior](cross-company-behavior.md) [Data entity wizard rules](data-entity-wizard-rules.md) [Data management and integration through data entities](data-management-integration-data-entity.md) [Date effectivity](date-effectivity.md) [Design principles and best practices](design-best-practices.md) [Developing composite entities](develop-composite-data-entities.md) [Dimensions](dimensions.md) [Dimensions overview](dimensions-overview.md) [Metadata properties: ReadOnly, AllowEdit, Mandatory](metadata-properties.md) [Recurring integrations](recurring-integrations.md) [Security and data entities](security-data-entities.md) [Support for super type and sub type](support-super-type-sub-type.md) [Validations, defaults, and unmapped fields](validations-defaults-unmapped-fields.md) [Introduction to Data Entity (Office Mix)](https://mix.office.com/watch/1brkpjvhf851m) [Introduction to OData in Dynamics 365 for Operations (Office Mix)](https://mix.office.com/watch/i53efq3ddtjy) [Introduction to Import/Export and Integration (Office Mix)](https://mix.office.com/watch/1qplbdkxu5u4d) [JSON Based Endpout for Custom Services (Office Mix)](https://mix.office.com/watch/12e4fejbgj429)
 
 ## OData
-OData is a standard protocol for creating and consuming data. The purpose of OData is to provide a protocol for Representational State Transfer (REST) for Create, Read, Update, and Delete (CRUD) operations. OData applies web technologies such as HTTP and JavaScript Object Notation (JSON) to provide access to information from various programs. The following topics provide information about OData in Dynamics AX.
+OData is a standard protocol for creating and consuming data. The purpose of OData is to provide a protocol for Representational State Transfer (REST) for Create, Read, Update, and Delete (CRUD) operations. OData applies web technologies such as HTTP and JavaScript Object Notation (JSON) to provide access to information from various programs. The following topics provide information about OData in Dynamics 365 for Operations.
 
 ### Concepts
 
-[OData in Dynamics AX](odata.md)
+[OData in Dynamics 365 for Operations](odata.md)
 
 ## Data entities and data packages
 We recommend that you import the data entities in the order listed below, as some entities have dependencies on others. If you do not follow this order, you may encounter issues during import and configuration.
@@ -81,7 +81,7 @@ We recommend that you import the data entities in the order listed below, as som
 -   [Beginning balances](http://ax.help.dynamics.com/en/wiki/data-entities-beginning-balances/)
 
 ## Processes and resources
-The following topics provide more information about working with data entities in Dynamics AX.
+The following topics provide more information about working with data entities in Dynamics 365 for Operations.
 
 -   [Behavioral properties on data entities](behavioral-properties-data-entities.md)
 -   [Build and consume data entities](build-consuming-data-entities.md)

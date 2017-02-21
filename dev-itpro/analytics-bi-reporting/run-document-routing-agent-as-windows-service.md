@@ -21,12 +21,12 @@ audience: IT Pro
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 191133
-ms.assetid: cf62ea2d-5e0a-447e-b8ce-790277b208aa
+ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tjvass
-ms.dyn365.intro: Aug-16
-ms.dyn365.version: Platform update 2
+ms.dyn365.ops.intro: 01-08-2016
+ms.dyn365.ops.version: Platform update 2
 
 ---
 

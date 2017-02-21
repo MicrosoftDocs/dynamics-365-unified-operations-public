@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+# ms.reviewer: 2051
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26801
-ms.assetid: f18c33c0-be55-455d-8525-b41d9b05507f
+ms.assetid: 27c65e79-df74-4249-b684-97e1d40da753
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pvillads
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.version: AX 7.0.0
 
 This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features. This is a walkthrough of the new features with exercises included to practice using these features. 
 
-In previous versions of Microsoft Dynamics AX, the X++ code was compiled into pseudo-code, or p-code, that was interpreted on the server or on the client application. This code was then subject to further compilation into CIL. Today the story is much simpler--only CIL is supported, and this code is generated from a new compiler. In this tutorial, we’ll be discussing some of the new features that have been added to the X++ language for Microsoft Dynamics AX. As we run through the scenarios, you’ll also see some of the new features in the debugger.
+In previous versions, the X++ code was compiled into pseudo-code, or p-code, that was interpreted on the server or on the client application. This code was then subject to further compilation into CIL. Today the story is much simpler--only CIL is supported, and this code is generated from a new compiler. In this tutorial, we’ll be discussing some of the new features that have been added to the X++ language for Microsoft Dynamics 365 for Operations. As we run through the scenarios, you’ll also see some of the new features in the debugger.
 
 ## Declare anywhere
 Previously, all local variables had to be placed at the start of the method in which they’re used. Now, you have fine-grained control over the scope of your variables. With this new feature, it’s possible to provide smaller scopes for variables, outside of which the variables can’t be referenced. The lifetime of the variable is the scope in which it’s declared. Scopes can be started at the block level (inside compound statements), in for statements, and in using statements as we will see below. There are several advantages to making scopes small.
@@ -117,7 +117,7 @@ This aligns well with the rules that are known from C\#, but is different from t
 Adapt the code in FMVehicleInventoryServiceClass to use smaller scopes.
 
 ## Static constructors and static fields
-Static constructors and static fields are new features in the X++ language. Static constructors are guaranteed to run before any static or instance calls are made to the class. In C\#, the concept of static relates to the whole executing application domain. In Dynamics AX, the execution of the static constructor is relative to the user’s session. The static constructor has the following profile.
+Static constructors and static fields are new features in the X++ language. Static constructors are guaranteed to run before any static or instance calls are made to the class. In C\#, the concept of static relates to the whole executing application domain. The execution of the static constructor is relative to the user’s session. The static constructor has the following profile.
 
     static void TypeNew() 
 
@@ -280,7 +280,7 @@ Try/catch statements can now include an optional finally clause. The semantics a
       }
 
 ## Event handlers and Pre/Post methods
-In legacy X++, it was possible to prescribe in metadata that certain methods were to be executed prior to and after the execution of a method. The information about what subscribes call was recorded on the publisher, which isn't useful in the Dynamics AX environment. It's now possible to provide Pre and Post handlers through code, by providing the SubscribesTo attribute on the subscribers.
+In legacy X++, it was possible to prescribe in metadata that certain methods were to be executed prior to and after the execution of a method. The information about what subscribes call was recorded on the publisher, which isn't useful in the environment. It's now possible to provide Pre and Post handlers through code, by providing the SubscribesTo attribute on the subscribers.
 
 ### Example
 
@@ -420,7 +420,7 @@ No number of decimals will suffice to represent the value of 1/3 accurately. The
 A decimal number is a floating-point value that consists of a sign, a numeric value where each digit in the value ranges from 0 to 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value. The binary representation of a real value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor used to divide the 96-bit integer and specify what portion of it is a decimal fraction. The scaling factor is implicitly the number 10, raised to an exponent ranging from 0 to 28. Therefore, the binary representation of a decimal value represents ((-2⁹⁶ to 2⁹⁶)/10(0\\ to\\ 28)), where -(2⁹⁶-1) is equal to the minimum value and 2⁹⁶-1 is equal to the maximum value that can be expressed.
 
 ## String truncation
-This isn’t really a new feature, since it has been in place in the legacy product for the whole life of Dynamics AX. However, when code is executed in IL in prior versions of Dynamics AX, the automatic string truncation described here doesn’t take place. Because it’s not a well-known or well understood feature, we’ll briefly discuss it here. String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type, as shown below: Credit card numbers cannot exceed 20 characters. [![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)](./media/stringtruncationsolutionexplorer_debugfeatures.png) It's also possible to specify length constraints directly in the X++ syntax:
+String truncation is not a new feature for Dynamics 365 for Operations. However, when code is executed in IL in previous versions, the automatic string truncation described here doesn’t take place. String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type, as shown below: Credit card numbers cannot exceed 20 characters. [![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)](./media/stringtruncationsolutionexplorer_debugfeatures.png) It's also possible to specify length constraints directly in the X++ syntax:
 
     str 20 creditCardNumber;
 
@@ -531,7 +531,7 @@ The X++ pause statement is no longer supported because the pop-up **Print Window
 
 ### Print statement
 
-The X++ print statement is another statement that existed only for debugging purposes in Dynamics AX. It still exists, and its basic idea is unchanged. But print now outputs through System.Diagnostics.WriteLine. The product configuration determines the detail of the written information is sent. [![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)](./media/debuggingadmin_debugfeatures.png) You may find that using the Infolog is more compelling, since its output appears in the debugger and the running form.
+The X++ print statement is another statement that existed only for debugging purposes. It still exists, and its basic idea is unchanged. But print now outputs through System.Diagnostics.WriteLine. The product configuration determines the detail of the written information is sent. [![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)](./media/debuggingadmin_debugfeatures.png) You may find that using the Infolog is more compelling, since its output appears in the debugger and the running form.
 
 ## The Ignore list
 Since the legacy environment was all interpreted, it was possible to have some parts not compile, and use the rest. As long as you only called methods that compiled correctly, you were fine; however, you would run into trouble if you tried to call methods that weren't successfully compiled. This way of working doesn't work in CIL. Assemblies are generated from successful compilations and the runtime system can't load incomplete assembles. However, there are legitimate scenarios when porting legacy applications into the new environment where it's beneficial to get things running in a staged fashion and where parts of the application need to be tested before everything is ported. While this is useful for this very limited scenario, it shouldn't be used once the application is ready for production, since you would be hiding problems that will occur at runtime, after the system has been deployed. This is how it currently works: You can specify a method in an XML by selecting, "Edit Best Practice Suppressions," from the context menu on the project. This will open an XML document where the exclusions are maintained.

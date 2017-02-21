@@ -18,15 +18,15 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 121
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 260674
-ms.assetid: 09acb33d-ab37-47e8-9de2-67dca6d7fa93
+ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omulvad
-ms.dyn365.intro: Nov-16
-ms.dyn365.version: Version 1611
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Version 1611
 
 ---
 
@@ -49,7 +49,7 @@ Profitability can be analyzed by:
 -   Customer profitability (by revenue versus gross margin)
 
 ## Accessing the content pack
-The Sales and profitability performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see the blog [Authoring and distributing Power BI reports with Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/23/authoring-and-distributing-power-bi-reports-with-dynamics-ax7/).
+The Sales and profitability performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
 ## Metrics included in the content pack
 The content pack includes a report that consists of a set of metrics visualized as charts, tiles, and tables. The following table provides an overview of the visualisations in the content pack.

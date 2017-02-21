@@ -21,12 +21,12 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 74934
-ms.assetid: c71e49ac-4741-4891-9fbc-79a29dc1ed25
+ms.assetid: cf2154eb-56a9-4867-b1ef-85690440b177
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
@@ -72,7 +72,7 @@ After you select the elements, right-click the selection to view the actions tha
 | Compare                         | Compare the element with the XML representation of the element that you select. Typically, you will compare an element with a different version of the element from a source code control repository.                                                                                                                                                                                                                                                |
 | Properties                      | Open the **Properties** dialog box in Visual Studio, so that you can see the property settings for the element.                                                                                                                                                                                                                                                                                                                                      |
 
-Some elements have unique commands that let you perform actions for that type of element. For example, table elements have two commands that provide additional information about the table. The first is the **View hierarchy** command. When you right-click a table element and click this command, you will see a graphical representation of the table hierarchy that the table is part of. For example, the following illustration shows the table hierarchy for the FMVehicle table. [![10\_DevoToolsConcept](./media/10_devotoolsconcept.png)](./media/10_devotoolsconcept.png) A similar hierarchy tool is available for classes. The second command is **Open table browser**. When you click this command, the data from the table is displayed as a list in the program. The following illustration shows the table browser for the FMVehicle table. [![11\_DevoToolsConcept](./media/11_devotoolsconcept.png)](./media/11_devotoolsconcept.png)
+Some elements have unique commands that let you perform actions for that type of element. For example, table elements have two commands that provide additional information about the table. The first is the **View hierarchy** command. When you right-click a table element and click this command, you will see a graphical representation of the table hierarchy that the table is part of. For example, the following illustration shows the table hierarchy for the FMVehicle table. [![10\_DevoToolsConcept](./media/10_devotoolsconcept.png)](./media/10_devotoolsconcept.png) A similar hierarchy tool is available for classes. The second command is **Open table browser**. When you click this command, the data from the table is displayed as a list in the program.  
 
 ### Filtering Application Explorer
 

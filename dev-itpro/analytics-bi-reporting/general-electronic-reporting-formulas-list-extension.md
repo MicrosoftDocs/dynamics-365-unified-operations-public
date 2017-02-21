@@ -18,15 +18,15 @@ ms.search.form: ERExpressionDesignerFormula
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 58911
-ms.assetid: ad0b4297-0797-4696-8cb6-9ffa6e5c789b
+ms.assetid: 62c740dc-6a88-4ded-9c41-6857b82b335e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 

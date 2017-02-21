@@ -3,7 +3,7 @@
 
 title: Data import/export framework user guide (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 23 - 16 - 22
 ms.topic: article
@@ -21,12 +21,12 @@ audience: Developer, IT Pro
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18121
-ms.assetid: 49150f02-cfd9-4c74-93cf-ce24c0468d86
+ms.assetid: 393101f6-54b0-4198-a31c-3ff3125f33da
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 

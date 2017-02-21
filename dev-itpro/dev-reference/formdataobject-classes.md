@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: F Classes -  FormDataObject to FormFastTabHeaderControl
+title: F Classes - FormDataObject to FormFastTabHeaderControl
 description: API reference for classes from FormDataObject to FormFastTabHeaderControl.
 author: RobinARH
 manager: AnnBe
@@ -17,20 +17,20 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: RobinARH
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 63703
-ms.assetid: 3279e738-9207-46e2-b8aa-d5a6efa19888
+ms.assetid: 7c23d29c-9408-49ca-82e7-ddb940dc8526
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.intro: Feb-16
-ms.dyn365.version: AX 7.0.0
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# F Classes -  FormDataObject to FormFastTabHeaderControl
+# F Classes - FormDataObject to FormFastTabHeaderControl
 
 API reference for classes from FormDataObject to FormFastTabHeaderControl.
 

@@ -3,7 +3,7 @@
 
 title: Install the Security Development Tool (AX 2012)
 description: 
-author: annbe
+author: kfend
 manager: AnnBe
 ms.date: 2015-12-04 23 - 30 - 27
 ms.topic: article
@@ -17,16 +17,16 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
+ms.reviewer: kfend
 ms.search.scope: AX 2012
 # ms.tgt_pltfrm: 
 ms.custom: 18391
-ms.assetid: 0fa058d0-c878-4a61-94cc-5afd85904124
+ms.assetid: f62f5636-4d63-473e-b326-277ea500c540
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: annbe
-ms.dyn365.intro: 
-ms.dyn365.version: 2012
+ms.author: kfend
+ms.dyn365.ops.intro: 
+ms.dyn365.ops.version: 2012
 
 ---
 
@@ -47,12 +47,12 @@ This section lists the procedures required to install and configure the Security
 
 ### Install the tool
 
-1.  Download the SecurityDevelopmentTool.msi from the Downloadable tools of [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com).
+1.  Download the SecurityDevelopmentTool.msi from the Downloadable tools of [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (note that the Downloadable tools is only accessible if you log in to LCS with a Microsoft account; it will not be shown if you sign in with an organizational account)
 2.  Run **SecurityDevelopmentTool.msi** to open the **Installation Wizard**.
 3.  Accept the Microsoft Software License Terms, and then click **Install**.
 4.  When a message indicates that the tool has been successfully installed, click **Finish**. After the **Installation** **Wizard** has finished running, the files are available at the following locations:
-    -   For 64-bit systems: %ProgramFiles (x86)%\\Microsoft\\Security Development Tool\\
-    -   For 32-bit systems: %\\ProgramFiles%\\Microsoft\\Security Development Tool
+    -   For 64-bit systems: %ProgramFiles (x86)%MicrosoftSecurity Development Tool
+    -   For 32-bit systems: %ProgramFiles%MicrosoftSecurity Development Tool
 
 ### Import and compile the tool
 
@@ -62,7 +62,7 @@ This section lists the procedures required to install and configure the Security
     1.  On the Start menu, point to **All Programs**, point to **Administrative Tools**, and then click **Microsoft Dynamics AX Management Shell**.
     2.  At the Windows PowerShell command prompt, PS C:&gt;, type the following command, and then press ENTER.
 
-            Install-AXModel -File "c:\Program Files (x86)\Microsoft\Security Development Tool\SecurityDevelopmentTool.axmodel"
+            Install-AXModel -File “C:Program Files (x86)MicrosoftSecurity DevelopmentToolSecurityDevelopmentTool.axmodel”
 
         For more information, see [How to: Export and Import a Model](http://msdn.microsoft.com/library/c2449a03-7574-4b9d-8518-9005b560209f(AX.60).aspx).
 

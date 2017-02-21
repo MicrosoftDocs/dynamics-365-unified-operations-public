@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Expand Application Suite report data sets | Microsoft Docs
+title: Expand Application Suite report data sets
 description: This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
 author: sericks007
 manager: AnnBe
-ms.date: 2017-01-09 20:01:10
+ms.date: 2017-01-09 20 - 01 - 10
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics 365 for Operations platform update 3
+# ms.reviewer: 2051
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 266594
-ms.assetid: 9085388b-92be-4c2a-b847-bd25282cbcfb
-ms.region: Global
-# ms.industry: 
+ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Platform update 3
 
 ---
 
@@ -54,7 +56,7 @@ The following walkthrough shows the process of expanding an existing application
 
 [![Custom solution (after customization)](./media/fleet-extension-rentals-list-after-1024x672.png)](./media/fleet-extension-rentals-list-after.png)
 
-1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/customization-overlayering-and-extensions). For this example, add a custom report to the **Fleet Management Extensions** model.
+1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](customization-overlayering-extensions.md). For this example, add a custom report to the **Fleet Management Extensions** model.
 2.  **Create a new project in Microsoft Visual Studio.** Make sure that the project is associated with your extension model. The following illustration shows the project settings. [![Project settings in Visual Studio](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
 3.  **Add a table extension to store the custom report data.** Find the temporary cache for the **TmpFMRentalsByCust** data set that is populated by the RDP class, and create an extension in your model. Define the fields that will be used to store the data for the report server, and then click **Save** to save your changes. The following illustration shows the table extension that is required for this example. [![Table extension for this example](./media/fleet-extension-table-extension.png)](./media/fleet-extension-table-extension.png)
 4.  **Add your custom report to the project.** The custom design closely resembles the standard solution. Therefore, you can just duplicate the existing application report in the **Fleet Management Extension** model, and then update the report design so that it includes the custom title and additional text box in the Rental Charges container.

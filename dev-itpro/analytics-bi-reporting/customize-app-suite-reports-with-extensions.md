@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Customize App Suite reports using extensions | Microsoft Docs
+title: Customize App Suite reports using extensions
 description: This topic discusses a series of scenarios for customizing App Suite reports.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-01-09 20:01:22
+ms.date: 2017-01-09 20 - 01 - 22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -13,18 +13,20 @@ ms.technology:
 
 # optional metadata
 
-# keywords: 
+# ms.search.form: 
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 2051
-ms.suite: Released- Dynamics 365 for Operations platform update 3
+# ms.reviewer: 2051
+ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 266614
-ms.assetid: f7123ecc-120b-4753-ac90-e91c630327d4
-ms.region: Global
-# ms.industry: 
+ms.assetid: acf73781-08bb-4f59-9956-8f9f295ddd02
+ms.search.region: Global
+# ms.search.industry: 
 ms.author: tjvass
+ms.dyn365.ops.intro: 01-11-2016
+ms.dyn365.ops.version: Platform update 3
 
 ---
 
@@ -38,17 +40,17 @@ Microsoft Dynamics 365 for Operations offers an expanded set of tools to support
 -   Custom reports benefit from enhancements made to standard solutions including updates to business logic in Report Data Provider (RDP), data contracts, and UI Builder classes.
 -   Standard application solutions are unaffected and continue to be available in concert with custom reports.
 
-Report extensions do not break or prevent access to standard application reports. Instead, the platform supports run-time selection of the target report allowing you to choose the appropriate report design based on the context of the user session. For more information about customizations using extensions, see [Customization: Overlayering and extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/dev-tools/customization-overlayering-and-extensions)
+Report extensions do not break or prevent access to standard application reports. Instead, the platform supports run-time selection of the target report allowing you to choose the appropriate report design based on the context of the user session. For more information about customizations using extensions, see [Customization: Overlayering and extensions](customization-overlayering-extensions.md)
 
 ## Scenarios
 There are four key scenarios which demonstrate the flexibility available. The first two scenarios involve extending existing RDP classes for custom reporting solutions.
 
--   [Expand existing datasets](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/expand-app-suite-report-data-sets) - Use table extensions and integrate custom business logic to add custom columns to an existing dataset.
+-   [Expand existing datasets](expand-app-suite-report-data-sets.md) - Use table extensions and integrate custom business logic to add custom columns to an existing dataset.
 -   Composing custom datasets – Add more data to application reports by extending an existing RDP class to return a custom dataset.
 
 The other two scenarios offer insights on how to use extensions to redirect application navigations to your custom solutions.
 
--   [Extend report menu items](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/extend-report-menu-items) – Customize application menu items to redirect references to a custom report design.
--   [Custom designs for business documents](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/custom-designs-business-docs) – Delegate handlers allow you to add custom report designs to an existing Print Management document instance.
+-   [Extend report menu items](extend-report-menu-items.md) – Customize application menu items to redirect references to a custom report design.
+-   [Custom designs for business documents](custom-designs-business-docs.md) – Delegate handlers allow you to add custom report designs to an existing Print Management document instance.
 
 
