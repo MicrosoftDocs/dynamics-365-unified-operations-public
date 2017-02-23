@@ -57,36 +57,7 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ],
-        "src": "get-started"
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.jpeg",
-          "**/*.gif",
-          "**/*.svg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "src": "localizations"
-      },
-            {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.jpeg",
-          "**/*.gif",
-          "**/*.svg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ],
-        "src": "organization-administration"
+        ]
       }
     ],
     "overwrite": [],
