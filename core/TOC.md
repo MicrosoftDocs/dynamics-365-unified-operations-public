@@ -1,4 +1,4 @@
-# Get started
+# [Get started](.\index.md)
 ## [Get started home page](get-started-landing.md)
 ## Onboarding
 ### Microsoft FastTrack for Dynamics 365 overview
