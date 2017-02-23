@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/**.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -11,25 +12,717 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE"
-        ]
+        ],
+       "src": "analytics-bi-reporting"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "database-management"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "data-entities"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "deployment"
+      },
+            {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "dev-reference"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "dev-tools"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "extensions-overlayering"
+      },
+            {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "financial-dimensions"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "get-started"
+      },
+            {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "lifecycle-services"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "localization-solutions"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "migration-upgrade"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "mobile-apps"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "office-integration"
+      },      
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "onboarding"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "perf-test"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "retail"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "servicing"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "system-administration"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "upgrade"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "user-interface"
+      },
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "workflow"
+      },
+     {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "xpp"
       }
     ],
     "resource": [
       {
         "files": [
           "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
           "**/*.gif",
-          "**/*.jpg"
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
-        ]
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "analytics-bi-reporting"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "database-management"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "data-entities"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "deployment"
+      },
+            {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "dev-reference"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "dev-tools"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "extensions-overlayering"
+      },
+            {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "financial-dimensions"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "get-started"
+      },
+            {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "lifecycle-services"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "localization-solutions"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "migration-upgrade"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "mobile-apps"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+                  ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "office-integration"
+      },      
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "onboarding"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+                  ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "perf-test"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "retail"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "servicing"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "system-administration"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+          ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "upgrade"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "user-interface"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+                  ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "workflow"
+      },
+     {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+       "src": "xpp"
       }
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json",
+      "search_scope": ["Dynamics365Operations"]
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "d365OpsDevITPro"

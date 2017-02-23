@@ -1,6 +1,7 @@
 {
   "build": {
-    "content": [
+    "content": 
+    [
       {
         "files": [
           "**/**.md",
@@ -13,11 +14,36 @@
           "LICENSE",
           "LICENSE-CODE"
         ],
-        "src": "get-started",
-        "src": "localizations",
-        "src": "organization-administration"
-   
-      }
+        "src": "get-started"   
+       },
+       {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+        "src": "localizations"   
+       },
+       {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+      ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ],
+        "src": "organization-administration" 
+       }
     ],
     "resource": [
       {
@@ -32,8 +58,34 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "src": "get-started",
-        "src": "localizations",
+        "src": "get-started"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "src": "localizations"
+      },
+            {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.jpeg",
+          "**/*.gif",
+          "**/*.svg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
         "src": "organization-administration"
       }
     ],
