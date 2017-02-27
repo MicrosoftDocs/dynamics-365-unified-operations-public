@@ -1,8 +1,7 @@
-# Accounts payable
+# [Accounts payable](accounts-payable\accounts-payable.md)
 ## [Accounting distributions](accounts-payable\accounting-distributions.md)
 ## [Accounting distributions and subledger journal entries for vendor invoices](accounts-payable\accounting-distributions-subledger-journal-entries-vendor-invoices.md)
 ## [Accounting source explorer](accounts-payable\accounting-source-explorer.md)
-## [Accounts payable home page](accounts-payable\accounts-payable.md)
 ## [Accounts payable invoice matching](accounts-payable\accounts-payable-invoice-matching.md)
 ## [Configure Accounts payable](accounts-payable\accounts-payable-overview.md)
 ## [Cash and bank management home page](accounts-payable\cash-bank-management.md)
