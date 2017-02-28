@@ -200,79 +200,7 @@ You can use a [Markdown table generator tool](http://www.tablesgenerator.com/mar
 
 ## Code
 
-The best way to include code is to include snippets from a working sample. Create your
-sample following the instructions in the [contributing guide](../CONTRIBUTING.md).
-
-You can include the code using include syntax:
-
-```
-[!code-csharp[<title>](<pathToFile>#<RegionName)]
-```
-
-The example above shows C# syntax, but other languages are supported.
-Use `code-fsharp` for F# samples; use `code-vbnet` for Visual Basic samples.
-Other languages that are supported are:
-* C++: `code-cpp`
-* HTML: `code-html`
-* JavaScript: `code-javascript`
-* Powershell: `code-ps`
-* SQL: `code-sql`
-* XML: `code-xml`
-
-
-The text you place for `<title>` shows up as a rollover on the text. The `<pathToFile>`
-is the path to the source file. The `<RegionName>` should be a region in your source
-code that should be included. Use the `#region` and `#endregion` preprocessor syntax
-to specify the region of code to include.
-
-For cases where regions don't work, you can specify the start and end of a snippet
-using an XML element name in a single line comment. For example, you could write this in C#:
-
-```csharp
-// <CodeToInclude>
-int j = 5;
-int i ; 10;
-int sum = i + j;
-// </CodeToInclude>
-```
-
-In other languages, use the comment syntax for that language.
-Finally, you can use line
-numbers: `#L1-L10` would include lines 1 through 10. We discourage line numbers
-because they are very brittle.
-
-Including snippets from full programs ensures that all code runs through our Continuous Integration (CI)
-system. However, if you need to show something that causes compile time or
-runtime errors, you can use inline code blocks.
-
-### Inline code blocks with language identifier
-
-Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
-
-##### C&#9839;
-
-```cs
-using System;
-namespace HelloWorld
-{
-    class Hello 
-    {
-        static void Main() 
-        {
-            Console.WriteLine("Hello World!");
-
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
-        }
-    }
-}
-```
-### Generic code block
-
-Use three backticks (&#96;&#96;&#96;) for generic code block coding.   
-
-> The recommended approach is to use code blocks with language identifiers as explained in the previous section to ensure the proper syntax highlighting in the documentation site. Use generic code blocks only when necessary.
+Use three backticks (&#96;&#96;&#96;) to begin and end a code example block . You an also indent a line to have it rendered as a code example.
 
 ```
 function fancyAlert(arg) {
@@ -281,8 +209,6 @@ function fancyAlert(arg) {
     }
 }
 ```
-
-### Inline code
 
 Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
 
