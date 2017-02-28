@@ -15,8 +15,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "is_dynamic_rendering": false
+      "template_folder": "_themes"
     },
     {
       "docset_name": "d365OpsDevITPro",
@@ -31,8 +30,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "is_dynamic_rendering": false
+      "template_folder": "_themes"
     },
     {
       "docset_name": "d365OpsFinancials",
@@ -47,8 +45,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "is_dynamic_rendering": false
+      "template_folder": "_themes"
     },
     {
       "docset_name": "d365OpsManufacturing",
@@ -63,8 +60,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "is_dynamic_rendering": false
+      "template_folder": "_themes"
     },
     {
       "docset_name": "d365OpsHR",
@@ -79,8 +75,7 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "is_dynamic_rendering": false
+      "template_folder": "_themes"
     },
     {
       "docset_name": "d365OpsRetail",
@@ -95,8 +90,22 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "is_dynamic_rendering": false
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "platform",
+      "build_source_folder": "platform",
+      "build_output_subfolder": "platform",
+      "locale": "en-us",
+      "version": 0,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
