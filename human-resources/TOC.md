@@ -1,5 +1,5 @@
 # [Human Resources](human-resources-landing.md)
-## Develop Human resources strateg
+## Develop Human resources strategy
 ### [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
 ### [Setup the components of a job](creating-a-job.md)
 ### [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
@@ -51,4 +51,4 @@
 #### [Set up premium earnings ](localizations\north-america\premium-earning-setup-tasks.md)
 #### [Set up work cycles and work periods](localizations\north-america\work-cycle-work-period-tasks.md)
 #### [Set up payroll for workers](localizations\north-america\worker-position-payroll-tasks.md)
-#### [Set up work schedules and leave](localizations\north-america\work-schedule-leave-tasks.md)
+#### [Set up work schedules and leave time](localizations\north-america\work-schedule-leave-tasks.md)
