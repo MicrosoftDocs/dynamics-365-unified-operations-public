@@ -1,0 +1,49 @@
+---
+# required metadata
+
+title: Date/time data and time zones
+description: This article provides information about date and time fields, and time zones in Microsoft Dynamics 365 for Operations.
+author: pvillads
+manager: AnnBe
+ms.date: 2015-12-02 20 - 57 - 25
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: SysUserSetup
+# ROBOTS: 
+audience: IT Pro
+# ms.devlang: 
+# ms.reviewer: 71
+ms.search.scope: AX 7.0.0, Operations, Core
+# ms.tgt_pltfrm: 
+ms.custom: 13571
+ms.assetid: 3ce95bf2-02d7-44b5-95bc-cae6ae27e78e
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: pvillads
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Date/time data and time zones
+
+This article provides information about date and time fields, and time zones in Microsoft Dynamics 365 for Operations.
+
+Date and time fields
+--------------------
+
+There are three types of date and time fields in Microsoft Dynamics 365 for Operations They correspond to different data types in the database:
+-   **Combined date/time fields** – These fields are the preferred method of entering date and time data in Microsoft Dynamics 365 for Operations. The **utcdatetime** data type stores time and date data in a single field in Coordinated Universal Time (UTC). UTC is the primary time standard by which the world regulates clocks and time. It is, within about 1 second, mean solar time at 0° longitude; it does not observe daylight saving time. Time zones around the world are expressed using positive or negative offsets from UTC. For most purposes, UTC is considered interchangeable with Greenwich Mean Time (GMT). The current version of UTC is defined by International Telecommunications Union Recommendation (ITU-R TF.460-6).
+-   **Date fields** – These fields are used to enter dates only. The **date** data type stores a day, month, and year. However, these values are not stored in UTC and cannot be associated with a time zone.
+-   **Time fields** – These fields are used to display the number of seconds that have elapsed since midnight on the current date. The **timeofDay** data type stores an integer value. Time values are not stored in UTC.
+
+## Time zones
+To express UTC times in the local time, you must provide a time zone. The time zone controls the offset from UTC that is the equivalent of the local time. For example, the offset for Moscow is UTC+3. Your preferred time zone is first set according to the Windows locale of your computer, although it might have been changed by an administrator. Your preferred time zone is used only when displaying combined dates and times. To set the preferred time zone for a user, go to **Users** page. The page will show the list of users of the system. Select the user that you want to set the preferred time zone for, and click **User options**. On the **Language and region** tab, select the preferred time zone.
+
+
+

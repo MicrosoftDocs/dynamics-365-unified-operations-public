@@ -1,0 +1,94 @@
+---
+# required metadata
+
+title: Data entities - Master planning
+description: This article provides a list of the data entities that are available for the Master planning functionality in Microsoft Dynamics AX.
+author: kfend
+manager: AnnBe
+ms.date: 2016-06-29 14 - 19 - 34
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+# ms.reviewer: 51
+ms.search.scope: AX 7.0.0, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 95923
+ms.assetid: fb6b9280-047a-4db9-9cc3-f516cf9be0d2
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: kfend
+ms.dyn365.ops.intro: 01-02-2016
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Data entities - Master planning
+
+This article provides a list of the data entities that are available for the Master planning functionality in Microsoft Dynamics AX.
+
+Available data entities
+-----------------------
+
+Suggested sequence
+
+Entity name
+
+Area
+
+Entity type
+
+Dependency
+
+Comments
+
+**20.1.001 MP - Item coverage groups**
+
+1
+
+Item coverage groups
+
+Master planning
+
+Setup
+
+None
+
+**20.4.001 MP - Item coverage**
+
+2
+
+Item coverage
+
+Master planning
+
+Setup
+
+Item coverage groups, Released products
+
+**20.4.002 MP - Plan groups**
+
+3
+
+Plan groups
+
+Master planning
+
+Setup
+
+None
+
+See also
+--------
+
+[Data entities and packages framework](data-entities-data-packages.md)
+
+[Data entities home page](data-entities-home-page.md)
+
