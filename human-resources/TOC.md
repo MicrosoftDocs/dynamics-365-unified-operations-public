@@ -4,8 +4,8 @@
 ### [Setup the components of a job](creating-a-job.md)
 ### [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
 ### [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
-### [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md
-)## [Recruit, hire, and motivate employees]
+### [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
+## [Recruit, hire, and motivate employees]
 ### [Manage a recruiting process](manage-recruiting-process.md)
 ### [Mass hire projects](mass-hire-projects.md)
 ### [Compensation plans](compensation-plans.md)
