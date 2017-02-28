@@ -14,7 +14,8 @@
 ## [Develop and train employees]
 ### [Performance management overview]
 ### [Align workforce skills with business needs](skills.md)
-### [Set up training courses](courses.md)## [Create and maintain benefits]
+### [Set up training courses](courses.md)
+## [Create and maintain benefits]
 ### [Define and manage a benefits program](manage-benefit-program.md)
 ### [Benefit eligibility policies](benefit-eligibility-policies.md)
 ### [Manage items lent to workers](loan-items.md)
