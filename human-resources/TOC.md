@@ -1,7 +1,7 @@
 # [Human Resources](human-resources-landing.md)
 ## Develop Human resources strategy
 ### [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
-### [Setup the components of a job](creating-a-job.md)
+### [Set up the components of a job](creating-a-job.md)
 ### [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
 ### [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
 ### [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
