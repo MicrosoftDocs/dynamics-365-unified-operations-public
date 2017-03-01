@@ -28,27 +28,34 @@
 ### Maintain workplace safety and compliance
 #### [Form I-9 verification]
 #### [Comply with the Americans with Disabilities Act]
-### Payroll
+### [Payroll overview](localizations\north-america\payroll.md)
+### Payroll Basic Setup
+#### Frequencies and Cycles
+#### [Pay cycle and pay period tasks] (localizations / north-america / pay-cycle-pay-period-tasks-sample.md )
+#### [Payroll calculation and frequency tasks] (localizations/north-america/payroll-calculation-frequencies-tasks.md)
+#### [Work schedule and leave tasks] (localizations/north-america/work-schedule-leave-tasks.md)
+#### Codes
+#### [Earning code and earning code group tasks] ( localizations / north-america / earning-code-group-tasks.md )
+#### Taxes
+#### [Tax information tasks] (localizations/north-america/tax-information-tasks.md)
 #### [Set up benefit accrual plans ](localizations\north-america\benefit-accrual-plan-tasks.md)
 #### [Set up benefits](localizations\north-america\benefit-set-up-tasks.md)
-#### [Set up earning codes and earning code groups](localizations\north-america\earning-code-group-tasks.md)
-#### [Earnings and generating earnings FAQ](localizations\north-america\earnings-generation-process.md)
-#### [Work with existing earnings](localizations\north-america\existing-earnings.md)
-#### [Work with existing payroll payments](localizations\north-america\existing-payroll-payments.md)
-#### [Garnishments, tax levies, and administrative fees FAQ](localizations\north-america\garnishment-tax-levy-administrative-fees.md)
-#### [Enroll workers in garnishment and tax levies](localizations\north-america\garnishment-tax-levy-enrollment-tasks.md)
+### Payroll Advanced Setup
 #### [Set up garnishments and tax levies](localizations\north-america\garnishment-tax-levy-set-up-tasks.md)
-#### [Generate earnings](localizations\north-america\generate-earnings.md)
-#### [Generate payroll reports](localizations\north-america\generate-payroll-reports.md)
-#### [Issue worker payments](localizations\north-america\issue-worker-payments.md)
-#### [Set up pay cycles and pay periods](localizations\north-america\pay-cycle-pay-period-tasks-sample.md)
-#### [Payroll overview](localizations\north-america\payroll.md)
-#### [Set up payroll calculation frequencies](localizations\north-america\payroll-calculation-frequencies-tasks.md)
-#### [Payroll data updates FAQ](localizations\north-america\payroll-data-updates.md)
-#### [Work with pay statements](localizations\north-america\pay-statements.md)
-#### [Pay statements and generating payments FAQ](localizations\north-america\pay-statements-payment-generation-process.md)
-#### [Post payroll and generate vendor invoices](localizations\north-america\post-payroll-generate-vendor-invoices.md)
+#### [Enroll workers in garnishment and tax levies](localizations\north-america\garnishment-tax-levy-enrollment-tasks.md)
 #### [Set up premium earnings ](localizations\north-america\premium-earning-setup-tasks.md)
-#### [Set up work cycles and work periods](localizations\north-america\work-cycle-work-period-tasks.md)
+#### [Garnishments, tax levies, and administrative fees FAQ](localizations\north-america\garnishment-tax-levy-administrative-fees.md)
+#### Payroll processing tasks
+#### [Generate earnings](localizations\north-america\generate-earnings.md)
+#### [Issue worker payments](localizations\north-america\issue-worker-payments.md)
+#### [Post payroll and generate vendor invoices](localizations\north-america\post-payroll-generate-vendor-invoices.md)
+#### [Pay statements and generating payments FAQ](localizations\north-america\pay-statements-payment-generation-process.md)
+#### Completing the payment process
+#### [Work with existing payroll payments](localizations\north-america\existing-payroll-payments.md)
+#### [Work with existing earnings](localizations\north-america\existing-earnings.md)
+#### [Work with pay statements](localizations\north-america\pay-statements.md)
 #### [Set up payroll for workers](localizations\north-america\worker-position-payroll-tasks.md)
-#### [Set up work schedules and leave time](localizations\north-america\work-schedule-leave-tasks.md)
+#### [Set up work cycles and work periods](localizations\north-america\work-cycle-work-period-tasks.md)
+#### Other payroll tasks
+#### [Payroll data updates FAQ](localizations\north-america\payroll-data-updates.md)
+#### [Generate payroll reports](localizations\north-america\generate-payroll-reports.md)
