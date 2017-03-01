@@ -26,10 +26,10 @@
 ## [Metadata search in Visual Studio](dev-tools\metadata-search-visual-studio.md)
 # X++ programming language
 ## [X++ and debugger features ](dev-tools\new-x-debugger-features.md)
-## Write business logic using C# and X++ source code
+## [Write business logic using C# and X++ source code](dev-tools\write-business-logic.md)
 ## [Programming language support](dev-tools\programming-language-support.md)
 ## Debugging X++ code
-## LINQ provider for use in C#
+## [LINQ provider for C#](dev-tools\linq-provider-c.md)
 ## [Authoring best practices](dev-tools\author-best-practice-rules.md)
 ## X++ language reference
 ### [X++ language reference](dev-reference\xpp-language-reference.md)
@@ -98,53 +98,27 @@
 ## [Customize model elements using extensions](extensions-overlayering\customize-model-elements-extensions.md)
 ## [Customize with extensions and overlayering](dev-tools\customization-overlayering-extensions.md)
 ## [Class extensions](extensions-overlayering\class-extensions.md)
-
-
-## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
-## [Build and debug a project](dev-tools\build-debug-project.md)
-## [Create a model and data model elements](dev-tools\create-data-model-elements.md)
-## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
-## [Design principles and best practices](dev-tools\design-best-practices.md)
-## [Extend the metadata](dev-tools\extend-metadata.md)
-## [Development tools for Dynamics 365 for Operations](dev-tools\introduction-visual-studio.md)
-## [LINQ provider for C#](dev-tools\linq-provider-c.md)
-## [Turn off model customization and deprecate functionality](dev-tools\lock-models.md)
-## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
-## [Export and import a model](dev-tools\models-export-import.md)
+# Code migration
+## Code migration home page
+## Overview: Prepare to migrate...
+## Configure your VSTS mapping after a code upgrade
 ## [Model split](dev-tools\model-split.md)
-## [Operator precedence](dev-tools\operator-precedence.md)
-## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
-## [Write business logic using C# and X++ source code](dev-tools\write-business-logic.md)
-
-
-
-## User interface
-### [Action search](get-started\action-search.md)
-### [Advanced filtering and query syntax](get-started\advanced-filtering-query-options.md)
-### [Dynamics 365 for Operations client FAQ](get-started\client-faq.md)
-### [Configure and filter workspaces](get-started\configure-filter-workspaces.md)
-### [Display pages side-by-side using the Open in New Window icon](get-started\display-pages-side-by-side.md)
-### [Navigation search](get-started\navigation-search.md)
-### [Personalize the user experience](get-started\personalize-user-experience.md)
-### [Keyboard shortcuts](get-started\shortcut-keys.md)
-### [Manage how pages display](get-started\window-management.md)
-# Mobile apps
-## [Install and configure the warehousing app ](mobile-apps\install-configure-warehousing-app.md)
-## [Mobile platform for Dynamics 365 for Operations](mobile-apps\mobile-platform.md)
-# Office integration
-## [Office integration](office-integration\office-integration.md)
-## [Create Open in Excel experiences](office-integration\office-integration-edit-excel.md)
-## [Customize the Open in Microsoft Office menu](office-integration\customize-open-in-office-menu.md)
-## [Office integration troubleshooting](office-integration\office-integration-troubleshooting.md)
-## [Office integration tutorial](office-integration\office-integration-tutorial.md)
-# Performance and testing
-## [Deployment with continuous build and test automation](perf-test\continuous-build-test-automation.md)
-## [Performance timer](perf-test\performance-timer.md)
-## [PerfSDK and multiuser testing with Visual Studio Online](perf-test\perfsdk-tutorial.md)
-## [Test projects in Visual Studio](perf-test\testing-support.md)
-## [Testing and validations](perf-test\testing-validation.md)
-## [Diagnose problems and analyze performance issues using Trace parser](perf-test\trace-parser.md)
+## Deprecated APIs
+## Deprecated features
+## [Configure a one-box development environment](dev-tools\configure-developer-vm.md)
+## Delegates for migration
+## Database synchronization
+# Move packages between environments
+## Create and apply a deployable package
+# Service environments
+Do we want this here?
+# Performance
+## Performance home page
 ## [Take a trace using Trace parser](perf-test\trace-trace-tutorial.md)
+## [PerfSDK and multiuser testing with Visual Studio Online](perf-test\perfsdk-tutorial.md)
+## [Diagnose problems and analyze performance issues using Trace parser](perf-test\trace-parser.md)
+## [Performance timer](perf-test\performance-timer.md)
+# User interface concepts
 # User interface
 ## [Action controls](user-interface\action-controls.md)
 ## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
@@ -226,6 +200,39 @@
 ## [Wizard form pattern](user-interface\wizard-form-pattern.md)
 ## [Workspace Page Filter Group subpattern](user-interface\workspace-filter-group-subpattern.md)
 ## [Workspace form pattern](user-interface\workspace-form-pattern.md)
+
+
+## [Deployment with continuous build and test automation](perf-test\continuous-build-test-automation.md)
+## [Test projects in Visual Studio](perf-test\testing-support.md)
+## [Testing and validations](perf-test\testing-validation.md)
+
+
+
+
+## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
+## [Build and debug a project](dev-tools\build-debug-project.md)
+## [Create a model and data model elements](dev-tools\create-data-model-elements.md)
+## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
+## [Design principles and best practices](dev-tools\design-best-practices.md)
+## [Extend the metadata](dev-tools\extend-metadata.md)
+## [Development tools for Dynamics 365 for Operations](dev-tools\introduction-visual-studio.md)
+## [Turn off model customization and deprecate functionality](dev-tools\lock-models.md)
+## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
+## [Export and import a model](dev-tools\models-export-import.md)
+## [Operator precedence](dev-tools\operator-precedence.md)
+## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
+
+
+
+# Mobile apps
+## [Install and configure the warehousing app ](mobile-apps\install-configure-warehousing-app.md)
+## [Mobile platform for Dynamics 365 for Operations](mobile-apps\mobile-platform.md)
+# Office integration
+## [Office integration](office-integration\office-integration.md)
+## [Create Open in Excel experiences](office-integration\office-integration-edit-excel.md)
+## [Customize the Open in Microsoft Office menu](office-integration\customize-open-in-office-menu.md)
+## [Office integration troubleshooting](office-integration\office-integration-troubleshooting.md)
+## [Office integration tutorial](office-integration\office-integration-tutorial.md)
 # Workflow
 ## [Workflow subsystem updates in Dynamics 365 for Operations](workflow\workflow-subsystem.md)
 # X++
