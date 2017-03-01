@@ -23,10 +23,19 @@
 ## [Tools add-ins for Visual Studio](dev-tools\developer-tools-add-ins.md)
 ## Distribution of models
 ## [Configure a one-box development environment](dev-tools\configure-developer-vm.md)
+## [Metadata search in Visual Studio](dev-tools\metadata-search-visual-studio.md)
+
+# X++ programming language
+## [X++ and debugger features ](dev-tools\new-x-debugger-features.md)
+## Write business logic using C# and X++ source code
+## [Programming language support](dev-tools\programming-language-support.md)
+## Debugging X++ code
+## LINQ provider for use in C#
+## [Authoring best practices](dev-tools\author-best-practice-rules.md)
+
 
 
 ## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
-## [Authoring best practices](dev-tools\author-best-practice-rules.md)
 ## [Build and debug a project](dev-tools\build-debug-project.md)
 ## [Code editor](dev-tools\code-editor.md)
 ## [Create a model and data model elements](dev-tools\create-data-model-elements.md)
@@ -38,12 +47,9 @@
 ## [LINQ provider for C#](dev-tools\linq-provider-c.md)
 ## [Turn off model customization and deprecate functionality](dev-tools\lock-models.md)
 ## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
-## [Metadata search in Visual Studio](dev-tools\metadata-search-visual-studio.md)
 ## [Export and import a model](dev-tools\models-export-import.md)
 ## [Model split](dev-tools\model-split.md)
-## [X++ and debugger features ](dev-tools\new-x-debugger-features.md)
 ## [Operator precedence](dev-tools\operator-precedence.md)
-## [Programming language support](dev-tools\programming-language-support.md)
 ## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
 ## [Write business logic using C# and X++ source code](dev-tools\write-business-logic.md)
 
