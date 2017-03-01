@@ -48,9 +48,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "d365OpsManufacturing",
-      "build_source_folder": "manufacturing",
-      "build_output_subfolder": "d365OpsManufacturing",
+      "docset_name": "d365OpsHR",
+      "build_source_folder": "human-resources",
+      "build_output_subfolder": "d365OpsHR",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": false,
@@ -63,9 +63,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "d365OpsHR",
-      "build_source_folder": "human-resources",
-      "build_output_subfolder": "d365OpsHR",
+      "docset_name": "d365OpsManufacturing",
+      "build_source_folder": "manufacturing",
+      "build_output_subfolder": "d365OpsManufacturing",
       "locale": "en-us",
       "version": 0,
       "open_to_public_contributors": false,
