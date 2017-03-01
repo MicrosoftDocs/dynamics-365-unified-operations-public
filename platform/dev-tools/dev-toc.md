@@ -120,14 +120,18 @@ Do we want this here?
 ## [Performance timer](perf-test\performance-timer.md)
 # User interface concepts
 # User interface
+## [User interface development home page](user-interface\user-interface-development-home-page.md)
+## Tutorials
+### [Build the Rental Charge Type form](user-interface\build-rental-charge-type-form.md)
+### [Build the Customer form](user-interface\build-customer-form.md)
+### Add contextual BI to forms
+## Forms
 ## [Action controls](user-interface\action-controls.md)
 ## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
 ## [Advanced selection form pattern](user-interface\advanced-selection-form-pattern.md)
 ## [Right-to-left language support and bidirectional text](user-interface\bidirectional-support.md)
-## [Build the Customer form](user-interface\build-customer-form.md)
 ## [Build an extensible control](user-interface\build-extensible-control.md)
 ## [Build navigation](user-interface\build-navigation.md)
-## [Build the Rental Charge Type form](user-interface\build-rental-charge-type-form.md)
 ## [Build a workspace](user-interface\build-workspace.md)
 ## [Build operational workspaces](user-interface\build-workspaces.md)
 ## [Check box support in tree controls](user-interface\check-box-tree-controls.md)
@@ -196,7 +200,6 @@ Do we want this here?
 ## [Tile and list caching for workspaces](user-interface\tile-list-caching-workspaces.md)
 ## [Toolbar and Fields subpattern](user-interface\toolbar-fields-subpattern.md)
 ## [Toolbar and List subpattern](user-interface\toolbar-list-subpattern.md)
-## [User interface development home page](user-interface\user-interface-development-home-page.md)
 ## [Wizard form pattern](user-interface\wizard-form-pattern.md)
 ## [Workspace Page Filter Group subpattern](user-interface\workspace-filter-group-subpattern.md)
 ## [Workspace form pattern](user-interface\workspace-form-pattern.md)
