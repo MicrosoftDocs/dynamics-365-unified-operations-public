@@ -19,7 +19,7 @@
 ## [Element usage](dev-tools\element-usage.md)
 ## [Models](dev-tools\models.md)
 ## [Build operations](dev-tools\build-operations.md)
-## Visual Studio code editor
+## [Code editor](dev-tools\code-editor.md)
 ## [Tools add-ins for Visual Studio](dev-tools\developer-tools-add-ins.md)
 ## Distribution of models
 ## [Configure a one-box development environment](dev-tools\configure-developer-vm.md)
@@ -93,13 +93,17 @@
 ## [V Classes](dev-reference\v-classes.md)
 ## [W Classes](dev-reference\w-classes.md)
 ## [X Classes](dev-reference\x-classes.md)
+# Customize with extensions and overlayering
+## Extensibility home page
+## [Customize model elements using extensions](extensions-overlayering\customize-model-elements-extensions.md)
+## [Customize with extensions and overlayering](dev-tools\customization-overlayering-extensions.md)
+## [Class extensions](extensions-overlayering\class-extensions.md)
+
 
 ## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
 ## [Build and debug a project](dev-tools\build-debug-project.md)
-## [Code editor](dev-tools\code-editor.md)
 ## [Create a model and data model elements](dev-tools\create-data-model-elements.md)
 ## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
-## [Customize with extensions and overlayering](dev-tools\customization-overlayering-extensions.md)
 ## [Design principles and best practices](dev-tools\design-best-practices.md)
 ## [Extend the metadata](dev-tools\extend-metadata.md)
 ## [Development tools for Dynamics 365 for Operations](dev-tools\introduction-visual-studio.md)
@@ -275,10 +279,7 @@
 ## [Development and continuous delivery FAQ](get-started\continuous-delivery-faq.md)
 ## [Create exchange rate providers](get-started\create-exchange-rate-providers.md)
 ## [Create a new transportation management engine](get-started\create-new-transportation-management-engine.md)
-# Dev tools
-# Extensions overlayering
-## [Class extensions](extensions-overlayering\class-extensions.md)
-## [Customize model elements using extensions](extensions-overlayering\customize-model-elements-extensions.md)
+
 # Financial dimensions
 ## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial-dimensions\add-dimensions-excel-templates.md)
 ## [Dimension Entry control dialog support](financial-dimensions\dimension-entry-control-dialog-support.md)
