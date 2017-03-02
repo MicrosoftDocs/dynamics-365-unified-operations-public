@@ -1,3 +1,4 @@
+## [Customize field Help](user-interface\customize-field-help.md)
 # Getting started
 ## [Overview](dev-home-page.md)
 ## [Architecture changes in Dynamics 365 for Operations](architecture-changes.md)
@@ -132,35 +133,39 @@ Do we want this here?
 ### [Build the Customer form](user-interface\build-customer-form.md)
 ### Add contextual BI to forms
 ## Forms
-## [Navigation in Dynamics 365 for Operations](user-interface\page-navigation.md)
-## [Layout in Dynamics 365 for Operations](user-interface\page-layout.md)
-## [Symbol font](user-interface\symbol-font.md)
-## [Test forms with custom patterns](user-interface\testing-forms-custom-patterns.md)
-# Controls
-## [Action controls](user-interface\action-controls.md)
-## [Input controls and grid column sizes](user-interface\sizing-input-controls-grid-columns.md)
-## [Check box support in tree controls](user-interface\check-box-tree-controls.md)
-## [Filters](user-interface\filtering.md)
-## Window management
-## Migration - context menus
-## Migration - mouse double click
-## [Contextual data entry for lookups](user-interface\contextual-data-entry-lookups.md)
-## [HierarchyViewer control](user-interface\hierarchy-viewer-control.md)
-## [Lookup controls](user-interface\lookups-controls.md)
-## [File upload control](user-interface\file-upload-control.md)
-## [System-defined buttons](user-interface\system-defined-buttons.md)
-## [Images](user-interface\images-form-grid.md)
-## [Font and background colors for input, table, and grid controls](user-interface\specify-color-font-background-controls.md)
-## [Right-to-left language support and bidirectional text](user-interface\bidirectional-support.md)
-## [Create icons for workspace tiles](user-interface\create-icons-workspace-tiles.md)
-## [Extensible controls - Public JavaScript APIs](user-interface\public-javascript-apis.md)
-# Messaging
-## [Slider and MessageBox](user-interface\slider-messagebox.md)
-## [Message center, message bar, and message details API](user-interface\messaging-api-center-bar-details.md)
-## [Message center, message bar, and message details FAQ](user-interface\messaging-user.md)
-# Form pattern guidlines
-## [Select a form pattern](user-interface\select-form-pattern.md)
-## [Form styles and patterns](user-interface\form-styles-patterns.md)
+### [Navigation in Dynamics 365 for Operations](user-interface\page-navigation.md)
+### [Layout in Dynamics 365 for Operations](user-interface\page-layout.md)
+### [Symbol font](user-interface\symbol-font.md)
+### [Test forms with custom patterns](user-interface\testing-forms-custom-patterns.md)
+### [Create and use deep links](user-interface\create-deep-links.md)
+### [Accessibility in forms, products, and controls](user-interface\enable-accessibility.md)
+### [Customize field Help](user-interface\customize-field-help.md)
+## Controls
+### [Action controls](user-interface\action-controls.md)
+### [Input controls and grid column sizes](user-interface\sizing-input-controls-grid-columns.md)
+### [Check box support in tree controls](user-interface\check-box-tree-controls.md)
+### [Filters](user-interface\filtering.md)
+### Window management
+### Migration - context menus
+### Migration - mouse double click
+### [Contextual data entry for lookups](user-interface\contextual-data-entry-lookups.md)
+### [HierarchyViewer control](user-interface\hierarchy-viewer-control.md)
+### [Lookup controls](user-interface\lookups-controls.md)
+### [File upload control](user-interface\file-upload-control.md)
+### [System-defined buttons](user-interface\system-defined-buttons.md)
+### [Images](user-interface\images-form-grid.md)
+### [Font and background colors for input, table, and grid controls](user-interface\specify-color-font-background-controls.md)
+### [Right-to-left language support and bidirectional text](user-interface\bidirectional-support.md)
+### [Create icons for workspace tiles](user-interface\create-icons-workspace-tiles.md)
+### [Extensible controls - Public JavaScript APIs](user-interface\public-javascript-apis.md)
+### [Control checklist](user-interface\control-checklist.md)
+## Messaging
+### [Slider and MessageBox](user-interface\slider-messagebox.md)
+### [Message center, message bar, and message details API](user-interface\messaging-api-center-bar-details.md)
+### [Message center, message bar, and message details FAQ](user-interface\messaging-user.md)
+## Form pattern guidlines
+### [Select a form pattern](user-interface\select-form-pattern.md)
+### [Form styles and patterns](user-interface\form-styles-patterns.md)
 ## Form patterns
 ### [Details Master form pattern](user-interface\details-master-form-pattern.md)
 ### [Details Transaction form pattern](user-interface\details-transaction-form-pattern.md)
@@ -310,10 +315,7 @@ Do we want this here?
 
 
 ## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
-## [Control checklist](user-interface\control-checklist.md)
-## [Create and use deep links](user-interface\create-deep-links.md)
-## [Customize field Help](user-interface\customize-field-help.md)
-## [Accessibility in forms, products, and controls](user-interface\enable-accessibility.md)
+
 ## [Task Recorder quick reference](user-interface\task-recorder-quick-reference.md)
 
 ## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
