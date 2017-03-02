@@ -146,7 +146,7 @@ Do we want this here?
 ## [Font and background colors for input, table, and grid controls](user-interface\specify-color-font-background-controls.md)
 ## [Right-to-left language support and bidirectional text](user-interface\bidirectional-support.md)
 ## [Create icons for workspace tiles](user-interface\create-icons-workspace-tiles.md)
-## Extensible controls - public javascript APIs
+## [Extensible controls - Public JavaScript APIs](user-interface\public-javascript-apis.md)
 # Messaging
 ## [Slider and MessageBox](user-interface\slider-messagebox.md)
 ## [Message center, message bar, and message details API](user-interface\messaging-api-center-bar-details.md)
@@ -172,57 +172,84 @@ Do we want this here?
 ### [Drop Dialog form pattern](user-interface\drop-dialog-form-pattern.md)
 ### [Lookup form pattern](user-interface\lookup-form-pattern.md)
 ### [FactBox form patterns](user-interface\factbox-form-patterns.md)
+## Sub patterns
+### [Custom Filter Group subpattern](user-interface\custom-filter-group-subpattern.md)
+### [Dimension entry control subpattern](financial-dimensions\dimension-entry-control-subpattern.md)
+### [Dimension Expression Builder subpattern](financial-dimensions\dimension-expression-builder-subpattern.md)
+### [Fields and Field Groups subpattern](user-interface\fields-field-groups-subpattern.md)
+### [Filters and Toolbar subpatterns](user-interface\filters-toolbar-subpattern.md)
+### [Fill Text subpattern](user-interface\fill-text-subpattern.md)
+### [Horizontal Fields and Buttons Group subpattern](user-interface\horizontal-fields-buttons-group-subpattern.md)
+### [Image Preview subpattern](user-interface\image-preview-subpattern.md)
+### [List Panel subpattern](user-interface\list-panel-subpattern.md)
+### [Nested Simple List and Details subpattern](user-interface\nested-simple-list-details-subpattern.md)
+### [Section Chart form pattern](user-interface\section-chart-form-pattern.md)
+### [Section Power BI subpattern](user-interface\section-powerbi-subpattern.md)
+### [Section Related Links subpattern](user-interface\section-related-links-subpattern.md)
+### [Section Stacked Chart subpattern](user-interface\section-stacked-chart-subpattern.md)
+### [Section Tabbed List subpattern](user-interface\section-tabbed-list-subpattern.md)
+### [Section Tiles subpattern](user-interface\section-tiles-subpattern.md)
+### [Tabular Fields subpattern](user-interface\tabular-fields-subpattern.md)
+### [Toolbar and Fields subpattern](user-interface\toolbar-fields-subpattern.md)
+### [Toolbar and List subpattern](user-interface\toolbar-list-subpattern.md)
+### [Workspace Page Filter Group subpattern](user-interface\workspace-filter-group-subpattern.md)
+## Control extnsibility
+### [Build an extensible control](user-interface\build-extensible-control.md)
+### [Extensible control programming reference](user-interface\extensible-control-programming-reference.md)
+### [Control extensibility](user-interface\control-extensibility.md)
+### [Create localizable labels](user-interface\create-localizable-labels-client.md)
+### [Extensible control layout guidelines](user-interface\extensible-controls-layout.md)
+### [Control the text that Task Recorder generates for a control](user-interface\task-recorder-control-text.md)
+# BI and reporting
+## All of these are missing
+# Reporting services
+## All of these are missing
+# Data entities and OData
+## We are moving all this to a data entities node as a peer with development
+# Workflow
+## We are moving all this to a workflow node as a peer with development, the only topic was not a dev topic
+# Testing support in Visual Studio
+## [Testing and validations](perf-test\testing-validation.md)
+## [Test projects in Visual Studio](perf-test\testing-support.md)
+## [Deployment with continuous build and test automation](perf-test\continuous-build-test-automation.md)
+## [Task Recorder in Dynamics 365 for Operations](user-interface\task-recorder.md)
+# Office integration
+## We are moving all this to a node as a peer with development
+# Build workspaces
+## All of these are missing
+# Mobile
+## [Mobile platform for Dynamics 365 for Operations](mobile-apps\mobile-platform.md)
+## Mobile workspace X++ APIs
+# Global finance management
+## [Dimension Entry control dialog support](financial-dimensions\dimension-entry-control-dialog-support.md)
+## [Dimension entry control migration ](financial-dimensions\dimension-entry-control-migration.md)
+## [Dimension entry control uptake](financial-dimensions\dimension-entry-control-uptake.md)
+## [Dimensions](financial-dimensions\dimensions.md)
+## [Add dimensions to a Excel template](financial-dimensions\dimensions-overview.md)
+## [Financial dimension configuration for integrating applications](financial-dimensions\financial-dimension-configuration-integration.md)
+## [Financial dimensions and main accounts in a right-to-left language](financial-dimensions\financial-dimensions-main-accounts-right-left-language.md)
+## [Segmented entry control migration ](financial-dimensions\segmented-entry-control-conversion.md)
+## [Segmented entry control dialog support](financial-dimensions\segmented-entry-control-dialog-support.md)
+## [Segmented entry control metadata](financial-dimensions\segmented-entry-control-metadata-specification.md)
+## [Segmented entry control migration guidance](financial-dimensions\segmented-entry-control-migration-guidance.md)
+## [Segmented entry control parm methods](financial-dimensions\segmented-entry-control-parm-method-specification.md)
+## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial-dimensions\add-dimensions-excel-templates.md)
 
 
 ## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
-## [Build an extensible control](user-interface\build-extensible-control.md)
 ## [Build navigation](user-interface\build-navigation.md)
 ## [Build a workspace](user-interface\build-workspace.md)
 ## [Build operational workspaces](user-interface\build-workspaces.md)
 ## [Control checklist](user-interface\control-checklist.md)
-## [Control extensibility](user-interface\control-extensibility.md)
 ## [Create and use deep links](user-interface\create-deep-links.md)
-## [Create localizable labels](user-interface\create-localizable-labels-client.md)
-## [Custom Filter Group subpattern](user-interface\custom-filter-group-subpattern.md)
 ## [Customize field Help](user-interface\customize-field-help.md)
 ## [Accessibility in forms, products, and controls](user-interface\enable-accessibility.md)
-## [Extensible control programming reference](user-interface\extensible-control-programming-reference.md)
-## [Extensible control layout guidelines](user-interface\extensible-controls-layout.md)
-## [Fields and Field Groups subpattern](user-interface\fields-field-groups-subpattern.md)
 ## [File upload control](user-interface\file-upload-control.md)
-## [Fill Text subpattern](user-interface\fill-text-subpattern.md)
-## [Filters and Toolbar subpatterns](user-interface\filters-toolbar-subpattern.md)
 ## [Gantt development guide](user-interface\gantt-development-guide.md)
-## [Horizontal Fields and Buttons Group subpattern](user-interface\horizontal-fields-buttons-group-subpattern.md)
-## [Image Preview subpattern](user-interface\image-preview-subpattern.md)
-## [List Panel subpattern](user-interface\list-panel-subpattern.md)
-## [Nested Simple List and Details subpattern](user-interface\nested-simple-list-details-subpattern.md)
-## [Extensible controls  -  Public JavaScript APIs](user-interface\public-javascript-apis.md)
-## [Section Chart form pattern](user-interface\section-chart-form-pattern.md)
-## [Section Power BI subpattern](user-interface\section-powerbi-subpattern.md)
-## [Section Related Links subpattern](user-interface\section-related-links-subpattern.md)
-## [Section Stacked Chart subpattern](user-interface\section-stacked-chart-subpattern.md)
-## [Section Tabbed List subpattern](user-interface\section-tabbed-list-subpattern.md)
-## [Section Tiles subpattern](user-interface\section-tiles-subpattern.md)
 ## [Simple Details form pattern](user-interface\simple-details-form-pattern.md)
-
-## [Tabular Fields subpattern](user-interface\tabular-fields-subpattern.md)
 ## [Task Double form pattern](user-interface\task-double-form-pattern.md)
-## [Task Recorder in Dynamics 365 for Operations](user-interface\task-recorder.md)
-## [Control the text that Task Recorder generates for a control](user-interface\task-recorder-control-text.md)
 ## [Task Recorder quick reference](user-interface\task-recorder-quick-reference.md)
 ## [Tile and list caching for workspaces](user-interface\tile-list-caching-workspaces.md)
-## [Toolbar and Fields subpattern](user-interface\toolbar-fields-subpattern.md)
-## [Toolbar and List subpattern](user-interface\toolbar-list-subpattern.md)
-## [Workspace Page Filter Group subpattern](user-interface\workspace-filter-group-subpattern.md)
-
-
-## [Deployment with continuous build and test automation](perf-test\continuous-build-test-automation.md)
-## [Test projects in Visual Studio](perf-test\testing-support.md)
-## [Testing and validations](perf-test\testing-validation.md)
-
-
-
 
 ## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
 ## [Build and debug a project](dev-tools\build-debug-project.md)
@@ -237,87 +264,17 @@ Do we want this here?
 ## [Operator precedence](dev-tools\operator-precedence.md)
 ## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
 
-
-
-# Mobile apps
-## [Install and configure the warehousing app ](mobile-apps\install-configure-warehousing-app.md)
-## [Mobile platform for Dynamics 365 for Operations](mobile-apps\mobile-platform.md)
-# Office integration
-## [Office integration](office-integration\office-integration.md)
-## [Create Open in Excel experiences](office-integration\office-integration-edit-excel.md)
-## [Customize the Open in Microsoft Office menu](office-integration\customize-open-in-office-menu.md)
-## [Office integration troubleshooting](office-integration\office-integration-troubleshooting.md)
-## [Office integration tutorial](office-integration\office-integration-tutorial.md)
-# Workflow
-## [Workflow subsystem updates in Dynamics 365 for Operations](workflow\workflow-subsystem.md)
 # X++
 ## [Debug X++ against a copy of a production database](xpp\debug-x-issue-against-copy-of-production.md)
 ## [Debug X++ code](xpp\debug-xpp.md)
 ## [Macros in X++](xpp\macros-xpp.md)
-# Data entities
-## [Behavioral properties on data entities](data-entities\behavioral-properties-data-entities.md)
-## [Best practices for importing vouchers using the General journal entity](data-entities\tips-tricks-import-general-journal-entity.md)
-## [Build and consume data entities](data-entities\build-consuming-data-entities.md)
-## [Compute columns and virtual fields in a data entity](data-entities\data-entity-computed-columns-virtual-fields.md)
-## [Country/region codes and configuration keys](data-entities\countryregion-codes-configuration-keys.md)
-## [Cross company behavior](data-entities\cross-company-behavior.md)
-## [Data entity wizard rules](data-entities\data-entity-wizard-rules.md)
-## [Data management and integration](data-entities\data-management-integration.md)
-## [Data management and integration using data entities](data-entities\data-management-integration-data-entity.md)
-## [Date effectivity](data-entities\date-effectivity.md)
-## [Develop an entity for data migration](data-entities\develop-entity-for-data-migration.md)
-## [Develop composite data entities](data-entities\develop-composite-data-entities.md)
-## [OData](data-entities\odata.md)
-## [Recurring integrations](data-entities\recurring-integrations.md)
-## [Security and data entities](data-entities\security-data-entities.md)
-## [Service authentication troubleshooting](data-entities\troubleshoot-service-authentication.md)
-## [Service endpoints](data-entities\services-home-page.md)
-## [Super types and sub types](data-entities\support-super-type-sub-type.md)
-## [Validations, defaults, and unmapped fields](data-entities\validations-defaults-unmapped-fields.md)
-## [Data entities](data-entities\data-entities.md)
-### [Data entities: Budget planning](data-entities\data-entities-budget-plan.md)
-### [Data entities and packages framework](data-entities\data-entities-data-packages.md)
-### [Data entities: Expense management](data-entities\data-entities-expense-management.md)
-### [Data entities: Fixed assets](data-entities\data-entities-fixed-assets.md)
-### [Data entities: General ledger](data-entities\data-entities-general-ledger.md)
-### [Data entities: Global address book](data-entities\data-entities-global-address-book.md)
-### [Data entities home page](data-entities\data-entities-home-page.md)
-### [Data entities: Human resources](data-entities\data-entities-human-resources.md)
-### [Data entities: Inventory management](data-entities\data-entities-inventory-management.md)
-### [Data entities: Master planning](data-entities\data-entities-master-plan.md)
-### [Data entities: Procurement and sourcing](data-entities\data-entities-procurement-sourcing.md)
-### [Data entities: Product information management](data-entities\data-entities-product-information-management.md)
-### [Data entities: Production control](data-entities\data-entities-production-control.md)
-### [Data entities: Project accounting](data-entities\data-entities-project-accounting.md)
-### [Data entities: Public sector](data-entities\data-entities-public-sector.md)
-### [Data entities report](data-entities\data-entities-report.md)
-### [Data entities: Retail](data-entities\data-entities-retail.md)
-### [Data entities: Sales and marketing (data-entities\Execution)](data-entities\data-entities-sales-marketing.md)
-### [Data entities: Sales and marketing (data-entities\Pre-sales)](data-entities\data-entities-sales-marketing-pre-sales.md)
-### [Data entities: System administration](data-entities\data-entities-system-administration.md)
-### [Data entities: Workflow](data-entities\data-entities-workflow.md)
+
 ## [Date/time data and time zones](date-time-zones.md)
 ## [Demo data overview](get-started\demo-data.md)
 ## [Development and continuous delivery FAQ](get-started\continuous-delivery-faq.md)
 ## [Create exchange rate providers](get-started\create-exchange-rate-providers.md)
 ## [Create a new transportation management engine](get-started\create-new-transportation-management-engine.md)
 
-# Financial dimensions
-## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial-dimensions\add-dimensions-excel-templates.md)
-## [Dimension Entry control dialog support](financial-dimensions\dimension-entry-control-dialog-support.md)
-## [Dimension entry control migration ](financial-dimensions\dimension-entry-control-migration.md)
-## [Dimension entry control subpattern](financial-dimensions\dimension-entry-control-subpattern.md)
-## [Dimension entry control uptake](financial-dimensions\dimension-entry-control-uptake.md)
-## [Dimension Expression Builder subpattern](financial-dimensions\dimension-expression-builder-subpattern.md)
-## [Dimensions](financial-dimensions\dimensions.md)
-## [Add dimensions to a Excel template](financial-dimensions\dimensions-overview.md)
-## [Financial dimension configuration for integrating applications](financial-dimensions\financial-dimension-configuration-integration.md)
-## [Financial dimensions and main accounts in a right-to-left language](financial-dimensions\financial-dimensions-main-accounts-right-left-language.md)
-## [Segmented entry control migration ](financial-dimensions\segmented-entry-control-conversion.md)
-## [Segmented entry control dialog support](financial-dimensions\segmented-entry-control-dialog-support.md)
-## [Segmented entry control metadata](financial-dimensions\segmented-entry-control-metadata-specification.md)
-## [Segmented entry control migration guidance](financial-dimensions\segmented-entry-control-migration-guidance.md)
-## [Segmented entry control parm methods](financial-dimensions\segmented-entry-control-parm-method-specification.md)
 # Retail
 ## [Add customer preference data to a channel database](retail\add-customer-preference-channel.md)
 ## [Add properties to a sales order](retail\add-properties-sales-order.md)
