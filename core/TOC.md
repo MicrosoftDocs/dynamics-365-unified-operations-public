@@ -30,7 +30,7 @@
 ## Find local features
 ### [Country/region-specific Help content](localizations\country_region.md)
 ### [Tell Microsoft about new country/region regulatory features](localizations\inform-msft-new-countryregion-regulations.md)
-# Configure your organization](organization-administration\organization-administration-home-page.md)
+# [Configure your organization](organization-administration\organization-administration-home-page.md)
 ## [Organizations and organizational hierarchies](organization-administration\organizations-organizational-hierarchies.md)
 ## [Configure organizational hierarchy](organization-administration\plan-organizational-hierarchy.md)
 ## [Address books](organization-administration\qa-address-books.md)
@@ -45,7 +45,7 @@
 ## [Create record templates](organization-administration\record-templates.md)
 ## [Configure and send email](organization-administration\configure-email.md)
 ## [Add links to your organization's legal terms and privacy statement](organization-administration\legal-terms-privacy-statement.md)
-# Work with data entities
+# [Work with data entities](https://ax.help.dynamics.com/en/wiki/data-entities/)
 # Design workflows
 ## [Workflow system overview](organization-administration\overview-workflow-system.md)
 ## [Workflow system architecture](organization-administration\workflow-system-architecture.md)
@@ -63,9 +63,9 @@
 ## [Configure a parallel activity in a workflow](organization-administration\configure-parallel-activity-workflow.md)
 ## [Configure a parallel branch in a workflow](organization-administration\configure-parallel-branch-workflow.md)
 ## [Configure the properties of a workflow](organization-administration\configure-workflow-properties.md)
-# Get started with analytics and reporting
-# Configure Office integration
-# Explore and create mobile apps
+# [Get started with analytics and reporting](https://ax.help.dynamics.com/en/wiki/bi-reporting-resources/)
+# [Configure Office integration](https://ax.help.dynamics.com/en/wiki/office-integration-in-dynamics-ax-7/)
+# [Explore and create mobile apps]](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 # Other resources
 ## [Dynamics 365 for Operations glossary](get-started\glossary.md)
 ## [What's new or changed](get-started\whats-new-changed.md)
