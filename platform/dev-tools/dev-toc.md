@@ -11,6 +11,8 @@
 ## [Fleet Management sample application](dev-tools\fleet-management-sample.md)
 ## [Fleet Management sample application overview](dev-tools\introduction-fleet-management-sample.md)
 # Development tools
+## [Create a model and data model elements](dev-tools\create-data-model-elements.md)
+## [Build and debug a project](dev-tools\build-debug-project.md)
 ## [Development tools](dev-tools\development-tools.md)
 ## [Create a new user on a development machine](dev-tools\enable-development-machine.md)
 ## [Application Explorer](dev-tools\application-explorer.md)
@@ -36,6 +38,7 @@
 ### [X++ variables and data types](dev-reference\xpp-variables-data-types.md)
 ### [X++ statements, loops, and exception handling](dev-reference\xpp-statements-loops.md)
 ### [X++ operators](dev-reference\xpp-operators.md)
+### [Operator precedence](dev-tools\operator-precedence.md)
 ### [X++ classes and methods](dev-reference\xpp-classes-methods.md)
 ### [X++ data selection and manipulation](dev-reference\xpp-data-query.md)
 ### [X++ attribute classes](dev-reference\xpp-attribute-classes.md)
@@ -112,6 +115,7 @@
 ## Create and apply a deployable package
 # Service environments
 Do we want this here?
+## [Development and continuous delivery FAQ](get-started\continuous-delivery-faq.md)
 # Performance
 ## Performance home page
 ## [Take a trace using Trace parser](perf-test\trace-trace-tutorial.md)
@@ -159,6 +163,7 @@ Do we want this here?
 ### [Details Transaction form pattern](user-interface\details-transaction-form-pattern.md)
 ### [Form Part Section List form patterns](user-interface\section-list-form-pattern.md)
 ### [List Page form pattern](user-interface\list-page-form-pattern.md)
+### [Simple Details form pattern](user-interface\simple-details-form-pattern.md)
 ### [Simple List and Details form pattern](user-interface\simple-list-details-form-pattern.md)
 ### [Simple List form pattern](user-interface\simple-list-form-pattern.md)
 ### [Table of Contents form pattern](user-interface\table-of-contents-form-pattern.md)
@@ -193,7 +198,7 @@ Do we want this here?
 ### [Toolbar and Fields subpattern](user-interface\toolbar-fields-subpattern.md)
 ### [Toolbar and List subpattern](user-interface\toolbar-list-subpattern.md)
 ### [Workspace Page Filter Group subpattern](user-interface\workspace-filter-group-subpattern.md)
-## Control extnsibility
+## Control extensibility
 ### [Build an extensible control](user-interface\build-extensible-control.md)
 ### [Extensible control programming reference](user-interface\extensible-control-programming-reference.md)
 ### [Control extensibility](user-interface\control-extensibility.md)
@@ -216,7 +221,9 @@ Do we want this here?
 # Office integration
 ## We are moving all this to a node as a peer with development
 # Build workspaces
-## All of these are missing
+## [Build navigation](user-interface\build-navigation.md)
+## [Build a workspace](user-interface\build-workspace.md)
+## [Build operational workspaces](user-interface\build-workspaces.md)
 # Mobile
 ## [Mobile platform for Dynamics 365 for Operations](mobile-apps\mobile-platform.md)
 ## Mobile workspace X++ APIs
@@ -234,47 +241,10 @@ Do we want this here?
 ## [Segmented entry control migration guidance](financial-dimensions\segmented-entry-control-migration-guidance.md)
 ## [Segmented entry control parm methods](financial-dimensions\segmented-entry-control-parm-method-specification.md)
 ## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial-dimensions\add-dimensions-excel-templates.md)
-
-
-## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
-## [Build navigation](user-interface\build-navigation.md)
-## [Build a workspace](user-interface\build-workspace.md)
-## [Build operational workspaces](user-interface\build-workspaces.md)
-## [Control checklist](user-interface\control-checklist.md)
-## [Create and use deep links](user-interface\create-deep-links.md)
-## [Customize field Help](user-interface\customize-field-help.md)
-## [Accessibility in forms, products, and controls](user-interface\enable-accessibility.md)
-## [File upload control](user-interface\file-upload-control.md)
+# Licensing
+## ISV licensing
+# Supply chain management
 ## [Gantt development guide](user-interface\gantt-development-guide.md)
-## [Simple Details form pattern](user-interface\simple-details-form-pattern.md)
-## [Task Double form pattern](user-interface\task-double-form-pattern.md)
-## [Task Recorder quick reference](user-interface\task-recorder-quick-reference.md)
-## [Tile and list caching for workspaces](user-interface\tile-list-caching-workspaces.md)
-
-## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
-## [Build and debug a project](dev-tools\build-debug-project.md)
-## [Create a model and data model elements](dev-tools\create-data-model-elements.md)
-## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
-## [Design principles and best practices](dev-tools\design-best-practices.md)
-## [Extend the metadata](dev-tools\extend-metadata.md)
-## [Development tools for Dynamics 365 for Operations](dev-tools\introduction-visual-studio.md)
-## [Turn off model customization and deprecate functionality](dev-tools\lock-models.md)
-## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
-## [Export and import a model](dev-tools\models-export-import.md)
-## [Operator precedence](dev-tools\operator-precedence.md)
-## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
-
-# X++
-## [Debug X++ against a copy of a production database](xpp\debug-x-issue-against-copy-of-production.md)
-## [Debug X++ code](xpp\debug-xpp.md)
-## [Macros in X++](xpp\macros-xpp.md)
-
-## [Date/time data and time zones](date-time-zones.md)
-## [Demo data overview](get-started\demo-data.md)
-## [Development and continuous delivery FAQ](get-started\continuous-delivery-faq.md)
-## [Create exchange rate providers](get-started\create-exchange-rate-providers.md)
-## [Create a new transportation management engine](get-started\create-new-transportation-management-engine.md)
-
 # Retail
 ## [Add customer preference data to a channel database](retail\add-customer-preference-channel.md)
 ## [Add properties to a sales order](retail\add-properties-sales-order.md)
@@ -286,6 +256,7 @@ Do we want this here?
 ## [Configure an online store](retail\configure-online-store.md)
 ## [Create a Retail Experience app](retail\create-retail-experience-app.md)
 ## [Create a Windows installer for a payment connector](retail\create-windows-installer-payment-connector.md)
+## [Create exchange rate providers](get-started\create-exchange-rate-providers.md)
 ## [Define retail channel communications (retail\Commerce Data Exchange)](retail\define-retail-channel-communications-cdx.md)
 ## [Deploy a payment connector](retail\deploy-payment-connector.md)
 ## [Dynamics 365 for Operations  -  Retail for IT pros and developers](retail\dev-retail-home-page.md)
@@ -308,4 +279,32 @@ Do we want this here?
 ## [Retail SDK samples ](retail\retail-sdk-samples.md)
 ## [Retail Server architecture](retail\retail-server-architecture.md)
 ## [Retail Server customer and consumer APIs](retail\retail-server-customer-consumer-api.md)
+
+
+## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
+## [Control checklist](user-interface\control-checklist.md)
+## [Create and use deep links](user-interface\create-deep-links.md)
+## [Customize field Help](user-interface\customize-field-help.md)
+## [Accessibility in forms, products, and controls](user-interface\enable-accessibility.md)
+## [File upload control](user-interface\file-upload-control.md)
+## [Task Double form pattern](user-interface\task-double-form-pattern.md)
+## [Task Recorder quick reference](user-interface\task-recorder-quick-reference.md)
+## [Tile and list caching for workspaces](user-interface\tile-list-caching-workspaces.md)
+
+## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
+## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
+## [Design principles and best practices](dev-tools\design-best-practices.md)
+## [Extend the metadata](dev-tools\extend-metadata.md)
+## [Development tools for Dynamics 365 for Operations](dev-tools\introduction-visual-studio.md)
+## [Turn off model customization and deprecate functionality](dev-tools\lock-models.md)
+## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
+## [Export and import a model](dev-tools\models-export-import.md)
+## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
+
+# X++
+## [Debug X++ against a copy of a production database](xpp\debug-x-issue-against-copy-of-production.md)
+## [Debug X++ code](xpp\debug-xpp.md)
+## [Macros in X++](xpp\macros-xpp.md)
+
+## [Date/time data and time zones](date-time-zones.md)
 
