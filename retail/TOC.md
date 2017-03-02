@@ -75,5 +75,4 @@
 ## [Working with store inventory](work-with-store-inventory.md)
 # Commerce essentials
 ## [Commerce essentials overview](commerce-essentials\commerce-essentials.md)
-## [Commerce essentials](commerce-essentials\commerce-essentials-landing.md)
 ## [Working with organizations and organizational hierarchies (Commerce essentials)](commerce-essentials\organizational-hierarchies-commerce-essentials.md)
