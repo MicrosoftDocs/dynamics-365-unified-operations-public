@@ -28,9 +28,10 @@
 ## [Metadata search in Visual Studio](dev-tools\metadata-search-visual-studio.md)
 # X++ programming language
 ## [X++ and debugger features ](dev-tools\new-x-debugger-features.md)
+## [Debug X++ against a copy of a production database](xpp\debug-x-issue-against-copy-of-production.md)
 ## [Write business logic using C# and X++ source code](dev-tools\write-business-logic.md)
 ## [Programming language support](dev-tools\programming-language-support.md)
-## Debugging X++ code
+## [Debug X++ code](xpp\debug-xpp.md)
 ## [LINQ provider for C#](dev-tools\linq-provider-c.md)
 ## [Authoring best practices](dev-tools\author-best-practice-rules.md)
 ## X++ language reference
@@ -41,6 +42,7 @@
 ### [Operator precedence](dev-tools\operator-precedence.md)
 ### [X++ classes and methods](dev-reference\xpp-classes-methods.md)
 ### [X++ data selection and manipulation](dev-reference\xpp-data-query.md)
+### [Macros in X++](xpp\macros-xpp.md)
 ### [X++ attribute classes](dev-reference\xpp-attribute-classes.md)
 ### [X++ and C# comparison](dev-reference\xpp-cs-comparison.md)
 ### [X++ syntax](dev-reference\xpp-syntax.md)
@@ -244,6 +246,7 @@ Do we want this here?
 ## [Segmented entry control migration guidance](financial-dimensions\segmented-entry-control-migration-guidance.md)
 ## [Segmented entry control parm methods](financial-dimensions\segmented-entry-control-parm-method-specification.md)
 ## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial-dimensions\add-dimensions-excel-templates.md)
+## [Create exchange rate providers](get-started\create-exchange-rate-providers.md)
 # Licensing
 ## ISV licensing
 # Supply chain management
@@ -273,6 +276,7 @@ Do we want this here?
 ### [Add customer preference data to a channel database](retail\add-customer-preference-channel.md)
 ### [Add properties to a sales order](retail\add-properties-sales-order.md)
 ### [Commerce runtime extensibility and triggers](retail\commerce-runtime-extensibility-trigger.md)
+### [Commerce runtime and Retail Server extensibility ](retail\commerce-runtime-extensibility.md)
 
 ## Payments
 ### [Deploy a payment connector](retail\deploy-payment-connector.md)
@@ -280,10 +284,13 @@ Do we want this here?
 
 ## e-Commerce
 ### [Configure an online store](retail\configure-online-store.md)
+### [Configure authentication providers](retail\configure-authentication-providers.md)
 
 ## Retail Server
+### [Retail Server architecture](retail\retail-server-architecture.md)
 ### [Extend a Retail Server OData controller](retail\extend-retail-server-odata-controller.md)
 ### [Web API and OData controllers](retail\odata-controllers-api.md)
+### [Retail Server customer and consumer APIs](retail\retail-server-customer-consumer-api.md)
 
 ## Hotfixes
 ### [Install Retail hotfixes](retail\install-retail-hotfix.md)
@@ -295,16 +302,11 @@ Do we want this here?
 ### [Retail SDK packaging](retail\retail-sdk-packaging.md)
 ### [Retail SDK samples ](retail\retail-sdk-samples.md)
 
-## [Commerce runtime and Retail Server extensibility ](retail\commerce-runtime-extensibility.md)
-## [Configure authentication providers](retail\configure-authentication-providers.md)
-## [Create exchange rate providers](get-started\create-exchange-rate-providers.md)
 ## [Define retail channel communications (retail\Commerce Data Exchange)](retail\define-retail-channel-communications-cdx.md)
 ## [Dynamics 365 for Operations versions and update policy](retail\ecommerce-platform-sdk.md)
 ## [Payment methods](retail\payment-methods.md)
 ## [Retail online store publishing architecture](retail\retail-online-store-publishing-architecture.md)
 ## [Retail peripheral simulator ](retail\retail-peripheral-simulator.md)
-## [Retail Server architecture](retail\retail-server-architecture.md)
-## [Retail Server customer and consumer APIs](retail\retail-server-customer-consumer-api.md)
 
 
 ## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
@@ -323,11 +325,6 @@ Do we want this here?
 ## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
 ## [Export and import a model](dev-tools\models-export-import.md)
 ## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
-
-# X++
-## [Debug X++ against a copy of a production database](xpp\debug-x-issue-against-copy-of-production.md)
-## [Debug X++ code](xpp\debug-xpp.md)
-## [Macros in X++](xpp\macros-xpp.md)
 
 ## [Date/time data and time zones](date-time-zones.md)
 
