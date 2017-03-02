@@ -145,6 +145,7 @@ Do we want this here?
 ## [Contextual data entry for lookups](user-interface\contextual-data-entry-lookups.md)
 ## [HierarchyViewer control](user-interface\hierarchy-viewer-control.md)
 ## [Lookup controls](user-interface\lookups-controls.md)
+## [File upload control](user-interface\file-upload-control.md)
 ## [System-defined buttons](user-interface\system-defined-buttons.md)
 ## [Images](user-interface\images-form-grid.md)
 ## [Font and background colors for input, table, and grid controls](user-interface\specify-color-font-background-controls.md)
@@ -167,6 +168,7 @@ Do we want this here?
 ### [Simple List and Details form pattern](user-interface\simple-list-details-form-pattern.md)
 ### [Simple List form pattern](user-interface\simple-list-form-pattern.md)
 ### [Table of Contents form pattern](user-interface\table-of-contents-form-pattern.md)
+### [Task Double form pattern](user-interface\task-double-form-pattern.md)
 ### [Task Single form pattern](user-interface\task-single-form-pattern.md)
 ### [Wizard form pattern](user-interface\wizard-form-pattern.md)
 ### [Workspace form pattern](user-interface\workspace-form-pattern.md)
@@ -224,6 +226,7 @@ Do we want this here?
 ## [Build navigation](user-interface\build-navigation.md)
 ## [Build a workspace](user-interface\build-workspace.md)
 ## [Build operational workspaces](user-interface\build-workspaces.md)
+## [Tile and list caching for workspaces](user-interface\tile-list-caching-workspaces.md)
 # Mobile
 ## [Mobile platform for Dynamics 365 for Operations](mobile-apps\mobile-platform.md)
 ## Mobile workspace X++ APIs
@@ -246,37 +249,60 @@ Do we want this here?
 # Supply chain management
 ## [Gantt development guide](user-interface\gantt-development-guide.md)
 # Retail
-## [Add customer preference data to a channel database](retail\add-customer-preference-channel.md)
-## [Add properties to a sales order](retail\add-properties-sales-order.md)
-## [Call CRT service in offline mode](retail\call-crt-service-offline.md)
+## [Dynamics 365 for Operations - Retail for IT pros and developers](retail\dev-retail-home-page.md)
+## Retail components
+### Components (missing)
+### r scale unit (missing)
+### r channel pack for power bi (missing)
+## Deployment
+## [Retail POS device activation](retail\retail-device-activation.md)
+
+## Point of sale
+### [Retail Modern POS architecture](retail\retail-modern-pos-architecture.md)
+### [Call CRT service in offline mode](retail\call-crt-service-offline.md)
+### [Create a Retail Experience app](retail\create-retail-experience-app.md)
+### [Modern POS and Cloud POS trigger extensibility](retail\modern-pos-trigger-extensibility.md)
+### [Retail Modern POS in offline mode](retail\retail-modern-pos-offline.md)
+
+
+## Hardware station
+## [Hardware Station extensibility](retail\hardware-station-extensibility.md)
+
+## Commerce runtime
+### [Commerce runtime overview](retail\commerce-runtime-overview.md)
+### [Add customer preference data to a channel database](retail\add-customer-preference-channel.md)
+### [Add properties to a sales order](retail\add-properties-sales-order.md)
+### [Commerce runtime extensibility and triggers](retail\commerce-runtime-extensibility-trigger.md)
+
+## Payments
+### [Deploy a payment connector](retail\deploy-payment-connector.md)
+### [Create a Windows installer for a payment connector](retail\create-windows-installer-payment-connector.md)
+
+## e-Commerce
+### [Configure an online store](retail\configure-online-store.md)
+
+## Retail Server
+### [Extend a Retail Server OData controller](retail\extend-retail-server-odata-controller.md)
+### [Web API and OData controllers](retail\odata-controllers-api.md)
+
+## Hotfixes
+### [Install Retail hotfixes](retail\install-retail-hotfix.md)
+
+## Retail SDK
+### [Retail SDK overview](retail\retail-sdk-overview.md)
+### [Integrate the Retail SDK with the continuous build system (retail\VSTS)](retail\integrate-retail-sdk-continuous-build.md)
+### [Retail SDK extensibility samples](retail\retail-sdk-extensibility-samples.md)
+### [Retail SDK packaging](retail\retail-sdk-packaging.md)
+### [Retail SDK samples ](retail\retail-sdk-samples.md)
+
 ## [Commerce runtime and Retail Server extensibility ](retail\commerce-runtime-extensibility.md)
-## [Commerce runtime extensibility and triggers](retail\commerce-runtime-extensibility-trigger.md)
-## [Commerce runtime overview](retail\commerce-runtime-overview.md)
 ## [Configure authentication providers](retail\configure-authentication-providers.md)
-## [Configure an online store](retail\configure-online-store.md)
-## [Create a Retail Experience app](retail\create-retail-experience-app.md)
-## [Create a Windows installer for a payment connector](retail\create-windows-installer-payment-connector.md)
 ## [Create exchange rate providers](get-started\create-exchange-rate-providers.md)
 ## [Define retail channel communications (retail\Commerce Data Exchange)](retail\define-retail-channel-communications-cdx.md)
-## [Deploy a payment connector](retail\deploy-payment-connector.md)
-## [Dynamics 365 for Operations  -  Retail for IT pros and developers](retail\dev-retail-home-page.md)
 ## [Dynamics 365 for Operations versions and update policy](retail\ecommerce-platform-sdk.md)
-## [Extend a Retail Server OData controller](retail\extend-retail-server-odata-controller.md)
-## [Hardware Station extensibility](retail\hardware-station-extensibility.md)
-## [Install Retail hotfixes](retail\install-retail-hotfix.md)
-## [Integrate the Retail SDK with the continuous build system (retail\VSTS)](retail\integrate-retail-sdk-continuous-build.md)
-## [Modern POS and Cloud POS trigger extensibility](retail\modern-pos-trigger-extensibility.md)
-## [Web API and OData controllers](retail\odata-controllers-api.md)
 ## [Payment methods](retail\payment-methods.md)
-## [Retail POS device activation](retail\retail-device-activation.md)
-## [Retail Modern POS architecture](retail\retail-modern-pos-architecture.md)
-## [Retail Modern POS in offline mode](retail\retail-modern-pos-offline.md)
 ## [Retail online store publishing architecture](retail\retail-online-store-publishing-architecture.md)
 ## [Retail peripheral simulator ](retail\retail-peripheral-simulator.md)
-## [Retail SDK extensibility samples](retail\retail-sdk-extensibility-samples.md)
-## [Retail SDK overview](retail\retail-sdk-overview.md)
-## [Retail SDK packaging](retail\retail-sdk-packaging.md)
-## [Retail SDK samples ](retail\retail-sdk-samples.md)
 ## [Retail Server architecture](retail\retail-server-architecture.md)
 ## [Retail Server customer and consumer APIs](retail\retail-server-customer-consumer-api.md)
 
@@ -286,10 +312,7 @@ Do we want this here?
 ## [Create and use deep links](user-interface\create-deep-links.md)
 ## [Customize field Help](user-interface\customize-field-help.md)
 ## [Accessibility in forms, products, and controls](user-interface\enable-accessibility.md)
-## [File upload control](user-interface\file-upload-control.md)
-## [Task Double form pattern](user-interface\task-double-form-pattern.md)
 ## [Task Recorder quick reference](user-interface\task-recorder-quick-reference.md)
-## [Tile and list caching for workspaces](user-interface\tile-list-caching-workspaces.md)
 
 ## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
 ## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
