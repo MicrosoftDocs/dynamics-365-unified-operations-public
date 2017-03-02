@@ -2,12 +2,12 @@
 ## Overview
 ### [Call center functionality](call-center-functionality.md)
 ### [Call center catalogs](call-center-catalogs.md)
-## Setting up a call center
+## Set up a call center
 ### [Create a call center catalog](create-call-center-catalogs.md)
 ### [Set up fraud alerts](set-up-fraud-alerts.md)
 ### [Set up order processing options](set-up-order-processing-options.md)
 ### [Set up a continuity program for a call center](set-up-continuity-program.md)
-## Working with a call center
+## Work with a call center
 ### [Order holds](work-with-order-holds.md)
 ### [Working with payments](work-with-payments.md)
 # Channel setup and management
