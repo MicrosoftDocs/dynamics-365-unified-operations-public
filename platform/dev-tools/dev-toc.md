@@ -21,6 +21,7 @@
 ## [Element designers](dev-tools\element-designers.md)
 ## [Element usage](dev-tools\element-usage.md)
 ## [Models](dev-tools\models.md)
+## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
 ## [Build operations](dev-tools\build-operations.md)
 ## [Code editor](dev-tools\code-editor.md)
 ## [Tools add-ins for Visual Studio](dev-tools\developer-tools-add-ins.md)
@@ -296,6 +297,7 @@ Do we want this here?
 ### [Extend a Retail Server OData controller](retail\extend-retail-server-odata-controller.md)
 ### [Web API and OData controllers](retail\odata-controllers-api.md)
 ### [Retail Server customer and consumer APIs](retail\retail-server-customer-consumer-api.md)
+### [Extend the metadata](dev-tools\extend-metadata.md)
 
 ## Hotfixes
 ### [Install Retail hotfixes](retail\install-retail-hotfix.md)
@@ -319,9 +321,7 @@ Do we want this here?
 ## [Task Recorder quick reference](user-interface\task-recorder-quick-reference.md)
 
 ## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
-## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
-## [Design principles and best practices](dev-tools\design-best-practices.md)
-## [Extend the metadata](dev-tools\extend-metadata.md)
+
 ## [Development tools for Dynamics 365 for Operations](dev-tools\introduction-visual-studio.md)
 ## [Turn off model customization and deprecate functionality](dev-tools\lock-models.md)
 ## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
