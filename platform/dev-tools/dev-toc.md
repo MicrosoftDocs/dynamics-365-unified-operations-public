@@ -1,4 +1,3 @@
-## [Customize field Help](user-interface\customize-field-help.md)
 # Getting started
 ## [Overview](dev-home-page.md)
 ## [Architecture changes in Dynamics 365 for Operations](architecture-changes.md)
