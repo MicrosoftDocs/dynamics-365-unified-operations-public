@@ -65,7 +65,7 @@
 ## [Configure the properties of a workflow](organization-administration\configure-workflow-properties.md)
 # [Get started with analytics and reporting](https://ax.help.dynamics.com/en/wiki/bi-reporting-resources/)
 # [Configure Office integration](https://ax.help.dynamics.com/en/wiki/office-integration-in-dynamics-ax-7/)
-# [Explore and create mobile apps]](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
+# [Explore and create mobile apps](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 # Other resources
 ## [Dynamics 365 for Operations glossary](get-started\glossary.md)
 ## [What's new or changed](get-started\whats-new-changed.md)
