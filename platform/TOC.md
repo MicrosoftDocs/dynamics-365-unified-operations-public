@@ -76,13 +76,8 @@
 ## [What's new or changed in Dynamics AX platform update 1 (get-started\May 2016)](get-started\whats-new-changed-platform-version-7-1-may-2016.md)
 ## [What's new or changed in Dynamics 365 for Operations version 1611 (get-started\November 2016)](get-started\whats-new-dynamics-365-operations-1611.md)
 ## [What's new or changed in Dynamics AX platform update 2 (get-started\August 2016)](get-started\whats-new-platform-update-2.md) 
-# Get started
-## [Getting started home page](get-started\getting-started-home-page.md)
-## [System requirements](get-started\system-requirements.md)
-## [What's new or changed in Dynamics 365 for Operations platform update 3 (get-started\November 2016)](get-started\whats-new-platform-update-3.md)
-## [Working with Help](get-started\work-with-help.md)
-## [ISV licensing](get-started\isv-licensing.md)
 # Deployment
+## [System requirements](get-started\system-requirements.md)
 ## [Azure Resource Manager onboarding](deployment\arm-onboarding.md)
 ## [Create and apply a deployable package](deployment\create-apply-deployable-package.md)
 ## [Apply a deployable package on a Dynamics 365 for Operations system](deployment\apply-deployable-package-system.md)
