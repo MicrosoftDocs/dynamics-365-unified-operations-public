@@ -38,15 +38,22 @@
 ## [Weighted average date](cost-management\weighted-average-date.md)
 ## [Weighted average with physical value and marking](cost-management\weighted-average-physical-value-marking.md)
 # Inventory management
-## [Consignment](inventory-management\consignment.md)
-## [Item and raw material tracing in inventory, production, and sales](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
-## [Merge inventory batches](inventory-management\merge-inventory-batches.md)
-## [Nonconformance management](inventory-management\enable-nonconformance-management.md)
-## [Quality management processes](inventory-management\quality-management-processes.md)
-## [Quarantine orders](inventory-management\quarantine-orders.md)
-## [Reserve inventory quantities](inventory-management\reserve-inventory-quantities.md)
-## [Reserve the same batch for a sales order](inventory-management\reserve-same-batch-sales-order.md)
-## [Set up consignment](inventory-management\set-up-consignment.md)
+## Warehouse layout
+## Inbound receiving and registration
+## Outbound processing
+## Inventory tracking, reservation, counting, and adjustment
+### [Reserve inventory quantities](inventory-management\reserve-inventory-quantities.md)
+### [Reserve the same batch for a sales order](inventory-management\reserve-same-batch-sales-order.md)
+## Consignment inventory
+### [Consignment](inventory-management\consignment.md)
+### [Set up consignment](inventory-management\set-up-consignment.md)
+## Quality management
+### [Quarantine orders](inventory-management\quarantine-orders.md)
+### [Quality management processes](inventory-management\quality-management-processes.md)
+### [Nonconformance management](inventory-management\enable-nonconformance-management.md)
+## Tracing items and batches
+### [Item and raw material tracing in inventory, production, and sales](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
+### [Merge inventory batches](inventory-management\merge-inventory-batches.md)
 # Master planning
 ## [Authorize an adjusted forecast](master-planning\authorize-adjusted-forecast.md)
 ## [Coverage settings](master-planning\coverage-settings.md)
