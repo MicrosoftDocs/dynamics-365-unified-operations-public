@@ -54,6 +54,7 @@
 ### [Nonconformance management](inventory-management\enable-nonconformance-management.md)
 ## Tracing items and batches
 ### [Item and raw material tracing in inventory, production, and sales](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
+
 ### [Merge inventory batches](inventory-management\merge-inventory-batches.md)
 # Master planning
 ## [Authorize an adjusted forecast](master-planning\authorize-adjusted-forecast.md)
@@ -100,10 +101,10 @@
 ### [Vendor collaboration with customers](procurement-sourcing\vendor-collaboration-work-customers-dynamics-365-operations.md)
 ### [Collaborate with vendors by using the Vendor portal](procurement-sourcing\collaborate-vendors-vendor-portal.md)
 ### [Vendor collaboration mobile workspace](production-control\vendor-collaboration-mobile-workspace.md)
+### [Vendor portal user security](procurement-sourcing\configure-security-vendor-portal-users.md)
 ## Prices and discounts
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
-## [Vendor portal user security](procurement-sourcing\configure-security-vendor-portal-users.md)
 # Product information management
 ## Manage product information
 ### [Bills of materials and formulas](production-control\bill-of-material-bom.md)
