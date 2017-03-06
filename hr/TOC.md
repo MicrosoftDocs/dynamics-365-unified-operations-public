@@ -19,6 +19,8 @@
 ### [Define and manage a benefits program](manage-benefit-program.md)
 ### [Benefit eligibility policies](benefit-eligibility-policies.md)
 ### [Manage items lent to workers](loan-items.md)
+### [Set up benefit accrual plans ](localizations\north-america\benefit-accrual-plan-tasks.md)
+### [Set up benefits](localizations\north-america\benefit-set-up-tasks.md)
 ## Gather information using questionnaires
 ### [Questionnaires](questionnaire\questionnaires.md)
 ### [Design a questionnaire](questionnaire\design-questionnaires.md)
@@ -26,8 +28,8 @@
 ### [View and evaluate the results of a questionnaire](questionnaire\evaluate-questionnaire-results.md)
 ## US features
 ### Maintain workplace safety and compliance
-#### [Form I-9 verification]
-#### [Comply with the Americans with Disabilities Act]
+#### [Form I-9 verification] (hr/localizations/north-america/form-i-9-verification.md)
+#### [Comply with the Americans with Disabilities Act] (hr/localizations/north-america/usa-comply-with-the-americans-with-disabilities-act.md)
 ### [Payroll overview](localizations\north-america\payroll.md)
 ### Payroll Basic Setup
 #### Frequencies and Cycles
@@ -38,8 +40,6 @@
 #### [Earning code and earning code group tasks] ( localizations / north-america / earning-code-group-tasks.md )
 #### Taxes
 #### [Tax information tasks] (localizations/north-america/tax-information-tasks.md)
-#### [Set up benefit accrual plans ](localizations\north-america\benefit-accrual-plan-tasks.md)
-#### [Set up benefits](localizations\north-america\benefit-set-up-tasks.md)
 ### Payroll Advanced Setup
 #### [Set up garnishments and tax levies](localizations\north-america\garnishment-tax-levy-set-up-tasks.md)
 #### [Enroll workers in garnishment and tax levies](localizations\north-america\garnishment-tax-levy-enrollment-tasks.md)
