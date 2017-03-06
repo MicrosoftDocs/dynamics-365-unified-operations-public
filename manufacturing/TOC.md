@@ -39,7 +39,8 @@
 ## [Weighted average with physical value and marking](cost-management\weighted-average-physical-value-marking.md)
 # Inventory management
 ## Warehouse layout
-## [Purchasing policies](procurement-sourcing\purchase-policies.md)## Inbound receiving and registration
+## [Purchasing policies](procurement-sourcing\purchase-policies.md)
+## Inbound receiving and registration
 ## Outbound processing
 ## Inventory tracking, reservation, counting, and adjustment
 ### [Reserve inventory quantities](inventory-management\reserve-inventory-quantities.md)
@@ -53,7 +54,7 @@
 ### [Nonconformance management](inventory-management\enable-nonconformance-management.md)
 ## Tracing items and batches
 ### [Item and raw material tracing in inventory, production, and sales](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
-d### [Merge inventory batches](inventory-management\merge-inventory-batches.md)
+### [Merge inventory batches](inventory-management\merge-inventory-batches.md)
 # Master planning
 ## [Authorize an adjusted forecast](master-planning\authorize-adjusted-forecast.md)
 ## [Coverage settings](master-planning\coverage-settings.md)
@@ -63,7 +64,7 @@ d### [Merge inventory batches](inventory-management\merge-inventory-batches.md)
 ## [Demand forecasting overview](master-planning\introduction-demand-forecasting.md)
 ## [Determine the BOM version](master-planning\master-plan-bom-version-determined.md)
 ## [Explosion of a BOM version](master-planning\master-plan-explosion-bom-version.md)
-n## [Generate a statistical baseline forecast](master-planning\generate-statistical-baseline-forecast.md)
+## [Generate a statistical baseline forecast](master-planning\generate-statistical-baseline-forecast.md)
 ## [Maintain planned orders](master-planning\maintain-planned-orders.md)
 ## [Make manual adjustments to the baseline forecast](master-planning\manual-adjustments-baseline-forecast.md)
 ## [Master plans](master-planning\master-plans.md)
