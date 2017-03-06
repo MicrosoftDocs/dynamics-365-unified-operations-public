@@ -103,14 +103,6 @@
 ## Prices and discounts
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
-
-
-
-
-
-
-
-
 ## [Vendor portal user security](procurement-sourcing\configure-security-vendor-portal-users.md)
 # Product information management
 ## Manage product information
