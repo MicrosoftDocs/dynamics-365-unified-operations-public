@@ -7,7 +7,6 @@
       "build_source_folder": "core",
       "build_output_subfolder": "d365OpsCore",
       "locale": "en-us",
-      "version": 0,
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -15,14 +14,14 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365OpsDevITPro",
       "build_source_folder": "dev-itpro",
       "build_output_subfolder": "d365OpsDevITPro",
       "locale": "en-us",
-      "version": 0,
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -30,14 +29,14 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365OpsFinancials",
       "build_source_folder": "financials",
       "build_output_subfolder": "d365OpsFinancials",
       "locale": "en-us",
-      "version": 0,
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -45,14 +44,14 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365OpsHR",
       "build_source_folder": "hr",
       "build_output_subfolder": "d365OpsHR",
       "locale": "en-us",
-      "version": 0,
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -60,14 +59,14 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365OpsManufacturing",
       "build_source_folder": "manufacturing",
       "build_output_subfolder": "d365OpsManufacturing",
       "locale": "en-us",
-      "version": 0,
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -75,14 +74,14 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     },
     {
       "docset_name": "d365OpsRetail",
       "build_source_folder": "retail",
       "build_output_subfolder": "d365OpsRetail",
       "locale": "en-us",
-      "version": 0,
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -90,22 +89,8 @@
         "RestApi": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "platform",
-      "build_source_folder": "platform",
-      "build_output_subfolder": "platform",
-      "locale": "en-us",
-      "version": 0,
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [],
