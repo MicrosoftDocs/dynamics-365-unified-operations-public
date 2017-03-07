@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure screen layouts for POS
@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: Application user
 # ms.devlang: 
 # ms.reviewer: 41
 ms.search.scope: AX 7.0.0, Operations
