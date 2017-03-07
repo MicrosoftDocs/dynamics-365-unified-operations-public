@@ -83,12 +83,11 @@
 ### [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
 ### [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
 ### [Procurement and sourcing workflows](procurement-sourcing\procurement-sourcing-workflows.md)
-### [Purchase requisition workflow](procurement-sourcing\purchase-requisitions-workflow.md)
 ### [Purchasing policies](procurement-sourcing\purchase-policies.md)
 ## Procurement product management
 ### [Procurement catalogs](procurement-sourcing\procurement-catalogs.md)
-## Purchase requisition overview
-### [Purchase requisition overview](procurement-sourcing\purchase-requisitions-overview.md)
+## [Purchase requisitions](procurement-sourcing\purchase-requisitions-overview.md)
+### [Purchase requisition workflow](procurement-sourcing\purchase-requisitions-workflow.md) 
 ## Request for quotation
 ### [Request for quotations (RFQs)](procurement-sourcing\request-quotations.md)
 ## Purchase orders
