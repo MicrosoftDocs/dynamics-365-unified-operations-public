@@ -79,7 +79,7 @@
 ## [Remove outliers from historical transaction data when calculating a demand forecast](master-planning\remove-historical-outliers-calculating-demand-forecast.md)
 ## [Use tracing for explosion](master-planning\trace-explosion.md)
 # Procurement and sourcing
-## Procurement and sourcing workflows
+## Overview
 ### [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
 ### [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
 ### [Procurement and sourcing workflows](procurement-sourcing\procurement-sourcing-workflows.md)
