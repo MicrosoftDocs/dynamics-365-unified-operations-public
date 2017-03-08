@@ -397,9 +397,9 @@
 ## [Retail SDK samples ](retail\retail-sdk-samples.md)
 ## [Retail Server architecture](retail\retail-server-architecture.md)
 ## [Retail Server customer and consumer APIs](retail\retail-server-customer-consumer-api.md)
-## Supply chain development
-### [Gantt development guide](user-interface\gantt-development-guide.md)
-## [Create a new transportation management engine](create-new-transportation-management-engine.md)
+# Supply chain development
+## [Gantt development guide](user-interface\gantt-development-guide.md)
+# LCS
 ## [Developing and releasing solutions](lifecycle-services\lcs-solutions-app-source.md)
 ### [Stage and publish an LCS solution](lifecycle-services\marketing-content-lcs-solutions.md)
 ### [Add a methodology to an LCS solution](lifecycle-services\methodologies-lcs-solutions.md)
@@ -634,3 +634,5 @@
 ##### [Maintain the Dynamics AX Intelligent Data Management Framework](lifecycle-services\ax-2012\install-ax-2012-r3.md)
 ##### [Maintainance in the Intelligent Data Management Framework](lifecycle-services\ax-2012\maintain-idmf.md)
 ##### [Troubleshoot the Intelligent Data Management Framework](lifecycle-services\ax-2012\troubleshoot-idmf.md)
+# Miscellaneous
+## [Create a new transportation management engine](create-new-transportation-management-engine.md)
