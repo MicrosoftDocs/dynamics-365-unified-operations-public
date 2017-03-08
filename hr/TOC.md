@@ -31,12 +31,13 @@
 ## [Payroll overview](localizations\north-america\payroll.md)
 ## Payroll Basic Setup
 ### [Set up benefit accrual plans ](localizations\north-america\benefit-accrual-plan-tasks.md)
-### [Set up benefits](localizations\north-america\benefit-set-up-tasks.md)### Frequencies and Cycles
+### [Set up benefits](localizations\north-america\benefit-set-up-tasks.md)
+## Frequencies and Cycles
 ## [Pay cycle and pay period tasks] (localizations / north-america / pay-cycle-pay-period-tasks-sample.md )
 ### [Payroll calculation and frequency tasks] (localizations/north-america/payroll-calculation-frequencies-tasks.md)
 ### [Work schedule and leave tasks] (localizations/north-america/work-schedule-leave-tasks.md)
 ### Codes
-### [Earning code and earning code group tasks] ( localizations / north-america / earning-code-group-tasks.md )
+### [Earning code and earning code group tasks] ( localizations / north-america / earning-code-group-tasks.md)
 ### Taxes
 ### [Tax information tasks] (localizations/north-america/tax-information-tasks.md)
 ## Payroll Advanced Setup
