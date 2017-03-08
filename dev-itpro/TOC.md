@@ -1,9 +1,18 @@
-# Overview of Dynamics 365 for Operations
+﻿# Overview of Dynamics 365 for Operations
 ## [Getting started home page](get-started\getting-started-home-page.md)
 ## [System requirements](get-started\system-requirements.md)
-## [What's new or changed in Dynamics 365 for Operations platform update 3 (November 2016)](get-started\whats-new-platform-update-3.md)
+## [What's new or changed](get-started\whats-new-changed.md)
+### [What's new or changed in Dynamics 365 for Operations platform update 3 (November 2016)](get-started\whats-new-platform-update-3.md)
+### [What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)](get-started\whats-new-dynamics-365-operations-1611.md)
+### [What's new or changed in Dynamics AX platform update 2 (August 2016)](get-started\whats-new-platform-update-2.md) 
+### [What's new or changed in Dynamics AX application version 7.0.1 (May 2016)](get-started\whats-new-changed-application-version-7-0-1-may-2016.md)
+### [What's new or changed in Dynamics AX platform update 1 (May 2016)](get-started\whats-new-changed-platform-version-7-1-may-2016.md)
+### [What's new or changed in Dynamics AX 7.0 (February 2016)](get-started\whats-new-changed-7-0-february-2016.md)
 ## [Working with Help](get-started\work-with-help.md)
-# Licensing
+### [New or updated Task guides (November 2016)](get-started\new-or-updated-task-guides-available-november-2016.md)
+### [New or updated task guides (August 2016)](get-started\new-updated-task-guides-available-august-2016.md)
+### [New or updated task guides (May 2016)](get-started\new-updated-task-guides-available-may-2016.md)
+### [New task guides (February 2016)](get-started\new-task-guides-available-february-2016.md)
 ## [ISV licensing](onboarding\isv-licensing.md)
 # Deployment
 ## [Azure Resource Manager onboarding](deployment\arm-onboarding.md)

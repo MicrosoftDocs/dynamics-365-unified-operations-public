@@ -95,6 +95,8 @@
 ### [Create purchase orders](procurement-sourcing\purchase-order-creation.md)
 ### [Approve and confirm purchase orders](procurement-sourcing\purchase-order-approval-confirmation.md)
 ## Vendor management and collaboration
+### [Set up and maintain vendor collaboration](procurement-sourcing\set-up-maintain-vendor-collaboration.md)
+### [Manage vendor collaboration users](procurement-sourcing\manage-vendor-collaboration-users.md)
 ### [Set up vendor accounts](procurement-sourcing\set-up-vendor-accounts.md)
 ### [Vendor collaboration with external vendors](procurement-sourcing\vendor-collaboration-work-external-vendors.md)
 ### [Vendor collaboration with customers](procurement-sourcing\vendor-collaboration-work-customers-dynamics-365-operations.md)
