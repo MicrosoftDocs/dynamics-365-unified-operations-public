@@ -656,3 +656,5 @@
 ##### [Troubleshoot the Intelligent Data Management Framework](lifecycle-services\ax-2012\troubleshoot-idmf.md)
 # Miscellaneous
 ## [Create a new transportation management engine](create-new-transportation-management-engine.md)
+# [Development with Visual Studio](dev-tools/TOC.md)
+
