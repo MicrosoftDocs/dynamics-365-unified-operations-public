@@ -1,44 +1,44 @@
 # Getting started
-## [Overview](dev-home-page.md)
+## [Overview](developer-landing-page.md)
 ## [Architecture changes in Dynamics 365 for Operations](architecture-changes.md)
 ## [Get an evaluation copy](get-evaluation-copy.md)
 ## [Sign up for a subscription](sign-up-preview-subscription.md)
-## [Access Dynamics 365 for Operations instances](dev-tools\access-instances.md)
-## [Development system requirements](get-started\development-system-requirements.md)
+## [Access Dynamics 365 for Operations instances](access-instances.md)
+## [Development system requirements](development-system-requirements.md)
 # Deprecated features
 ## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
 # Deprecated APIs
-# Fleet Management
-## [Fleet Management sample application](dev-tools\fleet-management-sample.md)
-## [Fleet Management sample application overview](dev-tools\introduction-fleet-management-sample.md)
-# Development tools
-## [Development tools for Dynamics 365 for Operations](dev-tools\introduction-visual-studio.md)
-## [Create a model and data model elements](dev-tools\create-data-model-elements.md)
-## [Build and debug a project](dev-tools\build-debug-project.md)
-## [Development tools](dev-tools\development-tools.md)
-## [Create a new user on a development machine](dev-tools\enable-development-machine.md)
-## [Application Explorer](dev-tools\application-explorer.md)
-## [Projects in Dynamics 365 for Operations](dev-tools\projects.md)
-## [Element designers](dev-tools\element-designers.md)
-## [Element usage](dev-tools\element-usage.md)
-## [Models](dev-tools\models.md)
-## [Turn off model customization and deprecate functionality](dev-tools\lock-models.md)
-## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
-## [Build operations](dev-tools\build-operations.md)
-## [Code editor](dev-tools\code-editor.md)
-## [Tools add-ins for Visual Studio](dev-tools\developer-tools-add-ins.md)
-## [Export and import a model](dev-tools\models-export-import.md)
-## [Configure a one-box development environment](dev-tools\configure-developer-vm.md)
-## [Metadata search in Visual Studio](dev-tools\metadata-search-visual-studio.md)
-## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
+# Fleet Management sample application
+## [Fleet Management sample application](fleet-management-sample.md)
+## [Fleet Management sample application overview](introduction-fleet-management-sample.md)
+# Visual Studio tools
+## [Development tools for Dynamics 365 for Operations](introduction-visual-studio.md)
+## [Create a model and data model elements](create-data-model-elements.md)
+## [Build and debug a project](build-debug-project.md)
+## [Development tools](development-tools.md)
+## [Create a new user on a development machine](enable-development-machine.md)
+## [Application Explorer](application-explorer.md)
+## [Projects in Dynamics 365 for Operations](projects.md)
+## [Element designers](element-designers.md)
+## [Element usage](element-usage.md)
+## [Models](models.md)
+## [Turn off model customization and deprecate functionality](lock-models.md)
+## [Customization Analysis Report (dev-tools\CAR)](customization-analysis-report.md)
+## [Build operations](build-operations.md)
+## [Code editor](code-editor.md)
+## [Tools add-ins for Visual Studio](developer-tools-add-ins.md)
+## [Export and import a model](models-export-import.md)
+## [Configure a one-box development environment](configure-developer-vm.md)
+## [Metadata search in Visual Studio](metadata-search-visual-studio.md)
+## [Update Visual Studio development tools](update-development-tools.md)
 # X++ programming language
-## [X++ and debugger features ](../dev-tools/new-x-debugger-features.md)
-## [Debug X++ against a copy of a production database]../dev-tools/debug-x-issue-against-copy-of-production.md)
-## [Write business logic using C# and X++ source code](dev-tools\write-business-logic.md)
-## [Programming language support](dev-tools\programming-language-support.md)
-## [Debug X++ code](../dev-tools/debug-xpp.md)
-## [LINQ provider for C#](dev-tools\linq-provider-c.md)
-## [Authoring best practices](dev-tools\author-best-practice-rules.md)
+## [X++ and debugger features ](new-x-debugger-features.md)
+## [Debug X++ against a copy of a production database](debug-x-issue-against-copy-of-production.md)
+## [Write business logic using C# and X++ source code](write-business-logic.md)
+## [Programming language support](programming-language-support.md)
+## [Debug X++ code](debug-xpp.md)
+## [LINQ provider for C#](linq-provider-c.md)
+## [Authoring best practices](author-best-practice-rules.md)
 ## X++ language reference
 ### [X++ language reference](../dev-reference/xpp-language-reference.md)
 ### [X++ variables and data types](../dev-reference/xpp-variables-data-types.md)
@@ -105,17 +105,17 @@
 ## [X Classes](../dev-reference/x-classes.md)
 # Customize with extensions and overlayering
 ## Extensibility home page
-## [Customize model elements using extensions](extensions-overlayering\customize-model-elements-extensions.md)
-## [Customize with extensions and overlayering](dev-tools\customization-overlayering-extensions.md)
-## [Class extensions](extensions-overlayering\class-extensions.md)
+## [Customize model elements using extensions](../extensions-overlayering/customize-model-elements-extensions.md)
+## [Customize with extensions and overlayering](../customization-overlayering-extensions.md)
+## [Class extensions](../extensions-overlayering\class-extensions.md)
 # Code migration
 ## Code migration home page
 ## Overview: Prepare to migrate...
 ## Configure your VSTS mapping after a code upgrade
-## [Model split](dev-tools\model-split.md)
+## [Model split](model-split.md)
 ## Deprecated APIs
 ## Deprecated features
-## [Configure a one-box development environment](dev-tools\configure-developer-vm.md)
+## [Configure a one-box development environment](configure-developer-vm.md)
 ## Delegates for migration
 ## Database synchronization
 # Move packages between environments
