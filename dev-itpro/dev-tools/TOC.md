@@ -105,15 +105,6 @@
 ## [Customize model elements using extensions](../extensions-overlayering/customize-model-elements-extensions.md)
 ## [Customize with extensions and overlayering](../customization-overlayering-extensions.md)
 ## [Class extensions](../extensions-overlayering\class-extensions.md)
-# Code migration
-## Code migration home page
-## Overview: Prepare to migrate...
-## Configure your VSTS mapping after a code upgrade
-## [Model split](model-split.md)
-## Deprecated APIs
-## Deprecated features
-## [Configure a one-box development environment](configure-developer-vm.md)
-## Delegates for migration
 ## Database synchronization
 # Move packages between environments
 ## Create and apply a deployable package
