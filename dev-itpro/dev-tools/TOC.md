@@ -120,9 +120,6 @@
 ## Database synchronization
 # Move packages between environments
 ## Create and apply a deployable package
-# Service environments
-Do we want this here?
-## [Development and continuous delivery FAQ](get-started\continuous-delivery-faq.md)
 # Performance
 ## Performance home page
 ## [Take a trace using Trace parser](perf-test\trace-trace-tutorial.md)
