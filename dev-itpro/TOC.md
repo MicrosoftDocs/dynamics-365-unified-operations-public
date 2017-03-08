@@ -225,6 +225,9 @@
 ### [Build a workspace](user-interface\build-workspace.md)
 ### [Build operational workspaces](user-interface\build-workspaces.md)
 ### [Tile and list caching for workspaces](user-interface\tile-list-caching-workspaces.md)
+## Task Recorder
+### [Task Recorder in Dynamics 365 for Operations](user-interface\task-recorder.md)
+### [Task Recorder quick reference](user-interface\task-recorder-quick-reference.md)
 # Mobile apps
 ## [Install and configure the warehousing app ](mobile-apps\install-configure-warehousing-app.md)
 ## [Mobile platform for Dynamics 365 for Operations](mobile-apps\mobile-platform.md)
