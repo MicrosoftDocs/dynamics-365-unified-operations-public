@@ -1,6 +1,6 @@
 # Getting started
 ## [Overview](developer-landing-page.md)
-## [Architecture changes in Dynamics 365 for Operations](architecture-changes.md)
+## [Application stack and server architecture](application-stack-server-architecture.md)
 ## [Get an evaluation copy](get-evaluation-copy.md)
 ## [Sign up for a subscription](sign-up-preview-subscription.md)
 ## [Access Dynamics 365 for Operations instances](access-instances.md)
