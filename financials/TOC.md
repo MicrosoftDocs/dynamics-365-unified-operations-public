@@ -40,7 +40,7 @@
 ##Compliance
 ## [Audit policy rules](general-ledger\audit-policy-rules.md)
 ## [Audit policy violations and cases](general-ledger\audit-policy-violations-cases.md)
-﻿# [Accounts payable](accounts-payable\accounts-payable.md)
+# [Accounts payable](accounts-payable\accounts-payable.md)
 ## [Vendor invoices overview](accounts-payable\vendor-invoices-overview.md)
 ## [Configure Accounts payable](accounts-payable\accounts-payable-overview.md)
 ## [Three-way matching policies](accounts-payable\three-way-matching-policies.md)
