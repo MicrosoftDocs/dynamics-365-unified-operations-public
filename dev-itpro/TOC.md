@@ -425,6 +425,7 @@
 ## [Segmented entry control parm methods](financial-dimensions\segmented-entry-control-parm-method-specification.md)
 ## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial-dimensions\add-dimensions-excel-templates.md)
 ## [Create exchange rate providers](get-started\create-exchange-rate-providers.md)
+## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
 # Development
 ## Get started developing for Operations
 ### [Developer home page](get-started\developer-landing-page.md)
