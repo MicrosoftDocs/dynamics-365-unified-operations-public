@@ -217,6 +217,7 @@
 # Mobile apps
 ## [Install and configure the warehousing app ](mobile-apps\install-configure-warehousing-app.md)
 ## [Mobile platform for Dynamics 365 for Operations](mobile-apps\mobile-platform.md)
+## Mobile workspace X++ APIs - NEED TO FIND THIS TOPIC IN GITHUB
 # Office integration
 ## [Office integration](office-integration\office-integration.md)
 ## [Create Open in Excel experiences](office-integration\office-integration-edit-excel.md)
