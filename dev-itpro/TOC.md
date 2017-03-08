@@ -270,6 +270,7 @@
 ### [Data entities: Sales and marketing (Pre-sales)](data-entities\data-entities-sales-marketing-pre-sales.md)
 ### [Data entities: System administration](data-entities\data-entities-system-administration.md)
 ### [Data entities: Workflow](data-entities\data-entities-workflow.md)
+## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
 # User interface
 ## [Action controls](user-interface\action-controls.md)
 ## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
