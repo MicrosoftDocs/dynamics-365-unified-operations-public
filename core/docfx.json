@@ -1,7 +1,6 @@
 {
   "build": {
-    "content": 
-    [
+    "content": [
       {
         "files": [
           "**/**.md",
@@ -13,46 +12,17 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE"
-        ],
-        "src": "get-started"   
-       },
-       {
-        "files": [
-          "**/**.md",
-          "**/**.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE"
-        ],
-        "src": "localizations"   
-       },
-       {
-        "files": [
-          "**/**.md",
-          "**/**.yml"
-      ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE"
-        ],
-        "src": "organization-administration" 
-       }
+        ]
+      }
     ],
     "resource": [
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.jpeg",
-          "**/*.gif",
-          "**/*.svg"
+          "**/**.png",
+          "**/**.jpg",
+          "**/**.jpeg",
+          "**/**.gif",
+          "**/**.svg"
         ],
         "exclude": [
           "**/obj/**",

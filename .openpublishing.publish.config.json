@@ -49,7 +49,9 @@
     },
     {
       "docset_name": "d365OpsHR",
-      "build_source_folder": "human-resources",
+
+      "build_source_folder": "hr",
+
       "build_output_subfolder": "d365OpsHR",
       "locale": "en-us",
       "open_to_public_contributors": false,

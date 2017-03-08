@@ -38,15 +38,24 @@
 ## [Weighted average date](cost-management\weighted-average-date.md)
 ## [Weighted average with physical value and marking](cost-management\weighted-average-physical-value-marking.md)
 # Inventory management
-## [Consignment](inventory-management\consignment.md)
-## [Item and raw material tracing in inventory, production, and sales](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
-## [Merge inventory batches](inventory-management\merge-inventory-batches.md)
-## [Nonconformance management](inventory-management\enable-nonconformance-management.md)
-## [Quality management processes](inventory-management\quality-management-processes.md)
-## [Quarantine orders](inventory-management\quarantine-orders.md)
-## [Reserve inventory quantities](inventory-management\reserve-inventory-quantities.md)
-## [Reserve the same batch for a sales order](inventory-management\reserve-same-batch-sales-order.md)
-## [Set up consignment](inventory-management\set-up-consignment.md)
+## Warehouse layout
+## [Purchasing policies](procurement-sourcing\purchase-policies.md)
+## Inbound receiving and registration
+## Outbound processing
+## Inventory tracking, reservation, counting, and adjustment
+### [Reserve inventory quantities](inventory-management\reserve-inventory-quantities.md)
+### [Reserve the same batch for a sales order](inventory-management\reserve-same-batch-sales-order.md)
+## Consignment inventory
+### [Consignment](inventory-management\consignment.md)
+### [Set up consignment](inventory-management\set-up-consignment.md)
+## Quality management
+### [Quarantine orders](inventory-management\quarantine-orders.md)
+### [Quality management processes](inventory-management\quality-management-processes.md)
+### [Nonconformance management](inventory-management\enable-nonconformance-management.md)
+## Tracing items and batches
+### [Item and raw material tracing in inventory, production, and sales](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
+
+### [Merge inventory batches](inventory-management\merge-inventory-batches.md)
 # Master planning
 ## [Authorize an adjusted forecast](master-planning\authorize-adjusted-forecast.md)
 ## [Coverage settings](master-planning\coverage-settings.md)
@@ -69,41 +78,52 @@
 ## [Reduction keys](master-planning\reduction-keys.md)
 ## [Remove outliers from historical transaction data when calculating a demand forecast](master-planning\remove-historical-outliers-calculating-demand-forecast.md)
 ## [Use tracing for explosion](master-planning\trace-explosion.md)
-# Procurement sourcing
-## [Approve and confirm purchase orders](procurement-sourcing\purchase-order-approval-confirmation.md)
-## [Collaborate with vendors by using the Vendor portal](procurement-sourcing\collaborate-vendors-vendor-portal.md)
-## [Create purchase orders](procurement-sourcing\purchase-order-creation.md)
-## [Procurement catalogs](procurement-sourcing\procurement-catalogs.md)
-## [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
-## [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
-## [Procurement and sourcing workflows](procurement-sourcing\procurement-sourcing-workflows.md)
-## [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
-## [Purchase order overview](procurement-sourcing\purchase-order-overview.md)
-## [Purchasing policies](procurement-sourcing\purchase-policies.md)
-## [Purchase requisition overview](procurement-sourcing\purchase-requisitions-overview.md)
-## [Purchase requisition workflow](procurement-sourcing\purchase-requisitions-workflow.md)
-## [Request for quotations (RFQs)](procurement-sourcing\request-quotations.md)
-## [Set up vendor accounts](procurement-sourcing\set-up-vendor-accounts.md)
-## [Vendor collaboration mobile workspace](production-control\vendor-collaboration-mobile-workspace.md)
-## [Vendor collaboration with customers](procurement-sourcing\vendor-collaboration-work-customers-dynamics-365-operations.md)
-## [Vendor collaboration with external vendors](procurement-sourcing\vendor-collaboration-work-external-vendors.md)
-## [Vendor portal user security](procurement-sourcing\configure-security-vendor-portal-users.md)
+# Procurement and sourcing
+## Overview
+### [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
+### [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
+### [Procurement and sourcing workflows](procurement-sourcing\procurement-sourcing-workflows.md)
+### [Purchasing policies](procurement-sourcing\purchase-policies.md)
+## Procurement product management
+### [Procurement catalogs](procurement-sourcing\procurement-catalogs.md)
+## [Purchase requisitions](procurement-sourcing\purchase-requisitions-overview.md)
+### [Purchase requisition workflow](procurement-sourcing\purchase-requisitions-workflow.md) 
+## Request for quotation
+### [Request for quotations (RFQs)](procurement-sourcing\request-quotations.md)
+## Purchase orders
+### [Purchase order overview](procurement-sourcing\purchase-order-overview.md)
+### [Create purchase orders](procurement-sourcing\purchase-order-creation.md)
+### [Approve and confirm purchase orders](procurement-sourcing\purchase-order-approval-confirmation.md)
+## Vendor management and collaboration
+### [Set up and maintain vendor collaboration](procurement-sourcing\set-up-maintain-vendor-collaboration.md)
+### [Manage vendor collaboration users](procurement-sourcing\manage-vendor-collaboration-users.md)
+### [Set up vendor accounts](procurement-sourcing\set-up-vendor-accounts.md)
+### [Vendor collaboration with external vendors](procurement-sourcing\vendor-collaboration-work-external-vendors.md)
+### [Vendor collaboration with customers](procurement-sourcing\vendor-collaboration-work-customers-dynamics-365-operations.md)
+### [Collaborate with vendors by using the Vendor portal](procurement-sourcing\collaborate-vendors-vendor-portal.md)
+### [Vendor collaboration mobile workspace](production-control\vendor-collaboration-mobile-workspace.md)
+### [Vendor portal user security](procurement-sourcing\configure-security-vendor-portal-users.md)
+## Prices and discounts
+## Product receipts and invoicing
+### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
 # Product information management
-## [Build a product configuration model](product-information-management\build-product-configuration-model.md)
-## [Calculations for product configuration models FAQ](product-information-management\calculate-product-configuration-models.md)
-## [Configuration rules](product-information-management\configuration-rules.md)
-## [Dimension-based product configuration](product-information-management\dimension-based-product-configuration.md)
-## [Expression constraints and table constraints in product configuration models](production-control\expression-constraints-table-constraints-product-configuration-models.md)
-## [Product configuration home page](product-information-management\product-configuration.md)
-## [Product dimensions](product-information-management\product-dimensions.md)
-## [Product information home page](product-information-management\product-information.md)
-## [Product number nomenclature](product-information-management\product-variant-identification-nomenclature.md)
-## [Product-related translations FAQ](product-information-management\translations-product-related-information.md)
-## [Register serial numbers in the sales process](product-information-management\register-serial-numbers-sales-process.md)
-## [Reuse product configurations](product-information-management\reuse-product-configurations.md)
-## [Search for products and product variants during order entry](product-information-management\search-products-product-variants.md)
-## [Set up a product configuration model](product-information-management\set-up-maintain-product-configuration-model.md)
-## [System-defined and user-defined table constraints](product-information-management\system-defined-user-defined-table-constraints.md)
+## Manage product information
+### [Bills of materials and formulas](production-control\bill-of-material-bom.md)
+### [BOM designer functionality](production-control\bom-designer-functionality.md)
+### [Product dimensions](product-information-management\product-dimensions.md)
+### [Product number nomenclature](product-information-management\product-variant-identification-nomenclature.md)
+### [Product-related translations FAQ](product-information-management\translations-product-related-information.md)
+### [Register serial numbers in the sales process](product-information-management\register-serial-numbers-sales-process.md)
+### [Search for products and product variants during order entry](product-information-management\search-products-product-variants.md)
+## Manage product configuration
+### [Build a product configuration model](product-information-management\build-product-configuration-model.md)
+### [Calculations for product configuration models FAQ](product-information-management\calculate-product-configuration-models.md)
+### [Configuration rules](product-information-management\configuration-rules.md)
+### [Dimension-based product configuration](product-information-management\dimension-based-product-configuration.md)
+### [Expression constraints and table constraints in product configuration models](production-control\expression-constraints-table-constraints-product-configuration-models.md)
+### [Reuse product configurations](product-information-management\reuse-product-configurations.md)
+### [Set up a product configuration model](product-information-management\set-up-maintain-product-configuration-model.md)
+### [System-defined and user-defined table constraints](product-information-management\system-defined-user-defined-table-constraints.md)
 # Production control
 ## [Activity-based subcontracting](production-control\activity-based-subcontracting.md)
 ## [Allocate time to jobs in a job bundle](production-control\allocate-time-jobs-job-bundle.md)
