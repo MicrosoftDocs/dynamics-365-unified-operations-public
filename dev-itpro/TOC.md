@@ -209,6 +209,11 @@
 ### [Create localizable labels](user-interface\create-localizable-labels-client.md)
 ### [Extensible control layout guidelines](user-interface\extensible-controls-layout.md)
 ### [Control the text that Task Recorder generates for a control](user-interface\task-recorder-control-text.md)
+## Build workspaces
+### [Build navigation](user-interface\build-navigation.md)
+### [Build a workspace](user-interface\build-workspace.md)
+### [Build operational workspaces](user-interface\build-workspaces.md)
+### [Tile and list caching for workspaces](user-interface\tile-list-caching-workspaces.md)
 # Mobile apps
 ## [Install and configure the warehousing app ](mobile-apps\install-configure-warehousing-app.md)
 ## [Mobile platform for Dynamics 365 for Operations](mobile-apps\mobile-platform.md)
