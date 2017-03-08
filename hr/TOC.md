@@ -4,8 +4,8 @@
 ## [Set up the components of a job](creating-a-job.md)
 ## [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
 ## [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
-# [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
-## Recruit, hire, and motivate employees
+## [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
+# Recruit, hire, and motivate employees
 ## [Manage a recruiting process](manage-recruiting-process.md)
 ## [Mass hire projects](mass-hire-projects.md)
 ## [Compensation plans](compensation-plans.md)
@@ -28,7 +28,7 @@
 ## Workplace safety and compliance
 ### [Form I-9 verification] (hr/localizations/north-america/form-i-9-verification.md)
 ### [Comply with the Americans with Disabilities Act] (hr/localizations/north-america/usa-comply-with-the-americans-with-disabilities-act.md)
-## [Payroll home page](localizations\north-america\payroll.md)
+# [Payroll home page](localizations\north-america\payroll.md)
 ## Payroll Basic Setup
 ### [Set up benefit accrual plans ](localizations\north-america\benefit-accrual-plan-tasks.md)
 ### [Set up benefits](localizations\north-america\benefit-set-up-tasks.md)
@@ -36,9 +36,8 @@
 ### [Pay cycle and pay period tasks] (localizations / north-america / pay-cycle-pay-period-tasks-sample.md )
 ### [Payroll calculation and frequency tasks] (localizations/north-america/payroll-calculation-frequencies-tasks.md)
 ### [Work schedule and leave tasks] (localizations/north-america/work-schedule-leave-tasks.md)
-### Codes
+## Codes and taxes
 ### [Earning code and earning code group tasks] ( localizations / north-america / earning-code-group-tasks.md)
-### Taxes
 ### [Tax information tasks] (localizations/north-america/tax-information-tasks.md)
 ## Payroll Advanced Setup
 ### [Set up garnishments and tax levies](localizations\north-america\garnishment-tax-levy-set-up-tasks.md)
