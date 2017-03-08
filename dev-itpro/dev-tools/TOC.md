@@ -5,12 +5,14 @@
 ## [Sign up for a subscription](sign-up-preview-subscription.md)
 ## [Access Dynamics 365 for Operations instances](dev-tools\access-instances.md)
 ## [Development system requirements](get-started\development-system-requirements.md)
-## Deprecated features
-## Deprecated APIs
+# Deprecated features
+## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
+# Deprecated APIs
 # Fleet Management
 ## [Fleet Management sample application](dev-tools\fleet-management-sample.md)
 ## [Fleet Management sample application overview](dev-tools\introduction-fleet-management-sample.md)
 # Development tools
+## [Development tools for Dynamics 365 for Operations](dev-tools\introduction-visual-studio.md)
 ## [Create a model and data model elements](dev-tools\create-data-model-elements.md)
 ## [Build and debug a project](dev-tools\build-debug-project.md)
 ## [Development tools](dev-tools\development-tools.md)
@@ -20,13 +22,15 @@
 ## [Element designers](dev-tools\element-designers.md)
 ## [Element usage](dev-tools\element-usage.md)
 ## [Models](dev-tools\models.md)
+## [Turn off model customization and deprecate functionality](dev-tools\lock-models.md)
 ## [Customization Analysis Report (dev-tools\CAR)](dev-tools\customization-analysis-report.md)
 ## [Build operations](dev-tools\build-operations.md)
 ## [Code editor](dev-tools\code-editor.md)
 ## [Tools add-ins for Visual Studio](dev-tools\developer-tools-add-ins.md)
-## Distribution of models
+## [Export and import a model](dev-tools\models-export-import.md)
 ## [Configure a one-box development environment](dev-tools\configure-developer-vm.md)
 ## [Metadata search in Visual Studio](dev-tools\metadata-search-visual-studio.md)
+## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
 # X++ programming language
 ## [X++ and debugger features ](dev-tools\new-x-debugger-features.md)
 ## [Debug X++ against a copy of a production database](xpp\debug-x-issue-against-copy-of-production.md)
@@ -131,17 +135,6 @@ Do we want this here?
 ## [Deployment with continuous build and test automation](perf-test\continuous-build-test-automation.md)
 ## [Task Recorder in Dynamics 365 for Operations](user-interface\task-recorder.md)
 ## [Task Recorder quick reference](user-interface\task-recorder-quick-reference.md)
-
-## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
-
-
-## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
-
-## [Development tools for Dynamics 365 for Operations](dev-tools\introduction-visual-studio.md)
-## [Turn off model customization and deprecate functionality](dev-tools\lock-models.md)
-## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
-## [Export and import a model](dev-tools\models-export-import.md)
-## [Update Visual Studio development tools](dev-tools\update-development-tools.md)
-
+# Miscellaneous
 ## [Date/time data and time zones](date-time-zones.md)
 
