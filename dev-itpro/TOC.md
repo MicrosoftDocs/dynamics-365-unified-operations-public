@@ -407,6 +407,21 @@
 ### [Validate an application for an LCS solution](lifecycle-services\app-validation-lcs-solutions.md)
 ### [Process and consume data packages in an LCS solution](lifecycle-services\process-data-packages-lcs-solutions.md)
 ### [Back up database for an LCS solution](lifecycle-services\database-backup-lcs-solutions.md)
+# Global finance management development
+## [Dimension Entry control dialog support](financial-dimensions\dimension-entry-control-dialog-support.md)
+## [Dimension entry control migration ](financial-dimensions\dimension-entry-control-migration.md)
+## [Dimension entry control uptake](financial-dimensions\dimension-entry-control-uptake.md)
+## [Dimensions](financial-dimensions\dimensions.md)
+## [Add dimensions to a Excel template](financial-dimensions\dimensions-overview.md)
+## [Financial dimension configuration for integrating applications](financial-dimensions\financial-dimension-configuration-integration.md)
+## [Financial dimensions and main accounts in a right-to-left language](financial-dimensions\financial-dimensions-main-accounts-right-left-language.md)
+## [Segmented entry control migration ](financial-dimensions\segmented-entry-control-conversion.md)
+## [Segmented entry control dialog support](financial-dimensions\segmented-entry-control-dialog-support.md)
+## [Segmented entry control metadata](financial-dimensions\segmented-entry-control-metadata-specification.md)
+## [Segmented entry control migration guidance](financial-dimensions\segmented-entry-control-migration-guidance.md)
+## [Segmented entry control parm methods](financial-dimensions\segmented-entry-control-parm-method-specification.md)
+## [Add the ability to look up values for financial dimensions in Microsoft Excel templates](financial-dimensions\add-dimensions-excel-templates.md)
+## [Create exchange rate providers](get-started\create-exchange-rate-providers.md)
 # Development
 ## Get started developing for Operations
 ### [Developer home page](get-started\developer-landing-page.md)
