@@ -3,6 +3,8 @@
 ## [System requirements](get-started\system-requirements.md)
 ## [What's new or changed in Dynamics 365 for Operations platform update 3 (November 2016)](get-started\whats-new-platform-update-3.md)
 ## [Working with Help](get-started\work-with-help.md)
+# Licensing
+## [ISV licensing](onboarding\isv-licensing.md)
 # Deployment
 ## [Azure Resource Manager onboarding](deployment\arm-onboarding.md)
 ## [Create and apply a deployable package](deployment\create-apply-deployable-package.md)
