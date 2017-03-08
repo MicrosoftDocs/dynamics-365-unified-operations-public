@@ -5,9 +5,6 @@
 ## [Sign up for a subscription](sign-up-preview-subscription.md)
 ## [Access Dynamics 365 for Operations instances](access-instances.md)
 ## [Development system requirements](development-system-requirements.md)
-# Deprecated features
-## [Dynamics AX 2012 features that haven't been implemented but aren't deprecated](get-started\ax-2012-features-not-implemented-but-not-deprecated.md)
-# Deprecated APIs
 # Fleet Management sample application
 ## [Fleet Management sample application](fleet-management-sample.md)
 ## [Fleet Management sample application overview](introduction-fleet-management-sample.md)
