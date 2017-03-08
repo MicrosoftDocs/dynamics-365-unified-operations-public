@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Architecture changes in Dynamics 365 for Operations
+title: Application stack and server architecture
 description: The application stack is divided into three separate models -  Application Platform, Application Foundation, and Application Suite. 
 author: kfend
 manager: AnnBe
