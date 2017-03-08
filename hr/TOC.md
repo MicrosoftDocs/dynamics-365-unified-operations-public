@@ -1,4 +1,4 @@
-# [Human Resources](human-resources-landing.md)
+# [Human Resources home page](human-resources-landing.md)
 # Develop Human resources strategy
 ## [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
 ## [Set up the components of a job](creating-a-job.md)
@@ -25,15 +25,15 @@
 ## [Distribute and complete a questionnaire](questionnaire\distribute-questionnaires.md)
 ## [View and evaluate the results of a questionnaire](questionnaire\evaluate-questionnaire-results.md)
 # US features
-## Maintain workplace safety and compliance
+## Workplace safety and compliance
 ### [Form I-9 verification] (hr/localizations/north-america/form-i-9-verification.md)
 ### [Comply with the Americans with Disabilities Act] (hr/localizations/north-america/usa-comply-with-the-americans-with-disabilities-act.md)
-## [Payroll overview](localizations\north-america\payroll.md)
+## [Payroll home page](localizations\north-america\payroll.md)
 ## Payroll Basic Setup
 ### [Set up benefit accrual plans ](localizations\north-america\benefit-accrual-plan-tasks.md)
 ### [Set up benefits](localizations\north-america\benefit-set-up-tasks.md)
 ## Frequencies and Cycles
-## [Pay cycle and pay period tasks] (localizations / north-america / pay-cycle-pay-period-tasks-sample.md )
+### [Pay cycle and pay period tasks] (localizations / north-america / pay-cycle-pay-period-tasks-sample.md )
 ### [Payroll calculation and frequency tasks] (localizations/north-america/payroll-calculation-frequencies-tasks.md)
 ### [Work schedule and leave tasks] (localizations/north-america/work-schedule-leave-tasks.md)
 ### Codes
@@ -45,7 +45,7 @@
 ### [Enroll workers in garnishment and tax levies](localizations\north-america\garnishment-tax-levy-enrollment-tasks.md)
 ### [Set up premium earnings ](localizations\north-america\premium-earning-setup-tasks.md)
 ### [Garnishments, tax levies, and administrative fees FAQ](localizations\north-america\garnishment-tax-levy-administrative-fees.md)
-### Payroll processing tasks
+## Payroll processing tasks
 ### [Generate earnings](localizations\north-america\generate-earnings.md)
 ### [Issue worker payments](localizations\north-america\issue-worker-payments.md)
 ### [Post payroll and generate vendor invoices](localizations\north-america\post-payroll-generate-vendor-invoices.md)
