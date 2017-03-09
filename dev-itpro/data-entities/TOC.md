@@ -1,6 +1,4 @@
-# Data entities
-## [Data entities home page](data-entities-home-page.md)
-## [Data entities](data-entities.md)
+# [Data entities](data-entities.md)
 ## [Behavioral properties on data entities](behavioral-properties-data-entities.md)
 ## [Best practices for importing vouchers using the General journal entity](tips-tricks-import-general-journal-entity.md)
 ## [Build and consume data entities](build-consuming-data-entities.md)
