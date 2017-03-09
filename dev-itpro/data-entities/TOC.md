@@ -17,7 +17,7 @@
 ## [Service endpoints](services-home-page.md)
 ## [Super types and sub types](support-super-type-sub-type.md)
 ## [Validations, defaults, and unmapped fields](validations-defaults-unmapped-fields.md)
-## [Data entity metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
+## [Data entity metadata properties: ReadOnly, AllowEdit, Mandatory](metadata-properties.md)
 ## Data entities available in Dynamics 365 for Operations
 ### [Data entities report](data-entities-report.md)
 ### [Data entities: Budget planning](data-entities-budget-plan.md)
