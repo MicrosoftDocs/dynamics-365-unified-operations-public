@@ -1,4 +1,4 @@
-# General ledger
+)# General ledger
 ## Accounts
 ## [Accruals overview](general-ledger\accruals-overview.md)
 ## [Elimination rules](general-ledger\elimination-rules.md)
@@ -51,7 +51,7 @@
 ## [Default offset accounts for vendor invoice journals and invoice approval journals](accounts-payable\default-offset-accounts-vendor-invoice-journals.md)
 ## [Set up and generate positive pay files](accounts-payable\set-up-generate-positive-pay-files.md)
 ## [Resolve discrepancies during invoice totals matching](accounts-payable\resolve-invoice-totals-invoice-matching-discrepancies.md)
-## [Vendor posting profiles](accounts-payable\vendor-posting-profiles.md
+## [Vendor posting profiles](accounts-payable\vendor-posting-profiles.md)
 ## [Foreign currency revaluation for Accounts payable and Accounts receivable](accounts-payable\foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 ## [Mobile invoice approvals](accounts-payable\dynamics-365-for-operations-mobile-invoice-approvals.md)
 ## [Vendor collaboration invoicing workspace](accounts-payable\vendor-portal-invoicing-workspace.md)
@@ -152,7 +152,7 @@
 ## [Budget planning overview ](budgeting\budget-planning-overview-configuration.md)
 ## [Budget control overview ](budgeting\budget-control-overview-configuration.md)
 ## [Budgeting overview ](budgeting\basic-budgeting-overview-configuration.md)
-## [Position forecasting](budgeting\position-forecasting.md
+## [Position forecasting](budgeting\position-forecasting.md)
 ## [Budget planning justification documents](budgeting\budget-planning-justification-docs.md)
 ## [Create a budget from transaction accounts and total accounts](budgeting\create-budget-transaction-accounts-total-accounts.md)
 ## [Budget planning templates for Excel](budgeting\budget-planning-excel-templates.md)
