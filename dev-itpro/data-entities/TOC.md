@@ -7,7 +7,6 @@
 ## [Data entities, country/region codes and configuration keys](countryregion-codes-configuration-keys.md)
 ## [Data entities and cross company behavior](cross-company-behavior.md)
 ## [Data entity wizard rules](data-entity-wizard-rules.md)
-## [Data management and integration](data-management-integration.md)
 ## [Data management and integration using data entities](lifecycle-services\data-management-integration-data-entity.md)
 ## [Develop an entity for data migration](develop-entity-for-data-migration.md)
 ## [Develop composite data entities](develop-composite-data-entities.md)
