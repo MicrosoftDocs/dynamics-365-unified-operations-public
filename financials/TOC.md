@@ -208,3 +208,4 @@
 ## [Project quotations](project-management\project-quotations.md)
 ## [Project resourcing](project-management\project-resourcing.md)
 ## [Work breakdown structures](project-management\work-breakdown-structures.md)
+# [Localizations](localizations\TOC.md)
