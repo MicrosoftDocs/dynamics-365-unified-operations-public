@@ -1,4 +1,5 @@
 # [Data entities](data-entities.md)
+## [Data entities and packages framework](data-entities-data-packages.md)
 ## [Behavioral properties on data entities](behavioral-properties-data-entities.md)
 ## [Best practices for importing vouchers using the General journal entity](tips-tricks-import-general-journal-entity.md)
 ## [Build and consume data entities](build-consuming-data-entities.md)
@@ -21,7 +22,6 @@
 ## Data entities available in Dynamics 365 for Operations
 ### [Data entities report](data-entities-report.md)
 ### [Data entities: Budget planning](data-entities-budget-plan.md)
-### [Data entities and packages framework](data-entities-data-packages.md)
 ### [Data entities: Expense management](data-entities-expense-management.md)
 ### [Data entities: Fixed assets](data-entities-fixed-assets.md)
 ### [Data entities: General ledger](data-entities-general-ledger.md)
