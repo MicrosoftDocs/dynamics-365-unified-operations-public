@@ -13,6 +13,7 @@
 ### [New or updated task guides (August 2016)](get-started\new-updated-task-guides-available-august-2016.md)
 ### [New or updated task guides (May 2016)](get-started\new-updated-task-guides-available-may-2016.md)
 ### [New task guides (February 2016)](get-started\new-task-guides-available-february-2016.md)
+# Licensing
 ## [ISV licensing](onboarding\isv-licensing.md)
 # Deployment
 ## [Azure Resource Manager onboarding](deployment\arm-onboarding.md)
@@ -25,8 +26,6 @@
 ## [Upgrade home page](migration-upgrade\upgrade-home-page.md)
 ## [Upgrade Dynamics 365 for Operations to the latest platform update](migration-upgrade\upgrade-latest-platform-update.md)
 ## [Prepare to move to the latest update of Dynamics 365 for Operations](migration-upgrade\upgrade-latest-update.md)
-## [Code migration: Context menus](migration-upgrade\code-migration-context-menus.md)
-## [Code migration: Mouse double-click](migration-upgrade\code-migration-double-click.md)
 ## [Project resource scheduling data model](migration-upgrade\data-model-changes-resource-management.md)
 ## [Process for upgrading a sandbox environment](migration-upgrade\process-for-upgrading-a-sandbox-environment.md)
 ## [Rename a local environment to enable access to Visual Studio Team Services](migration-upgrade\vso-machine-renaming.md)
@@ -156,8 +155,8 @@
 ### [Check box support in tree controls](user-interface\check-box-tree-controls.md)
 ### [Filters](user-interface\filtering.md)
 ### Window management
-### Migration - context menus
-### Migration - mouse double click
+### [Code migration: Context menus](migration-upgrade\code-migration-context-menus.md)
+### [Code migration: Mouse double-click](migration-upgrade\code-migration-double-click.md)
 ### [Contextual data entry for lookups](user-interface\contextual-data-entry-lookups.md)
 ### [HierarchyViewer control](user-interface\hierarchy-viewer-control.md)
 ### [Lookup controls](user-interface\lookups-controls.md)
@@ -245,6 +244,8 @@
 # Workflow
 ## [Workflow subsystem updates in Dynamics 365 for Operations](workflow\workflow-subsystem.md)
 # Data entities
+## [Data entities home page](data-entities\data-entities-home-page.md)
+## [Data entities](data-entities\data-entities.md)
 ## [Behavioral properties on data entities](data-entities\behavioral-properties-data-entities.md)
 ## [Best practices for importing vouchers using the General journal entity](data-entities\tips-tricks-import-general-journal-entity.md)
 ## [Build and consume data entities](data-entities\build-consuming-data-entities.md)
@@ -264,14 +265,15 @@
 ## [Service endpoints](data-entities\services-home-page.md)
 ## [Super types and sub types](data-entities\support-super-type-sub-type.md)
 ## [Validations, defaults, and unmapped fields](data-entities\validations-defaults-unmapped-fields.md)
-## [Data entities](data-entities\data-entities.md)
+## [Data entity metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
+## Data entities available in Dynamics 365 for Operations
+### [Data entities report](data-entities\data-entities-report.md)
 ### [Data entities: Budget planning](data-entities\data-entities-budget-plan.md)
 ### [Data entities and packages framework](data-entities\data-entities-data-packages.md)
 ### [Data entities: Expense management](data-entities\data-entities-expense-management.md)
 ### [Data entities: Fixed assets](data-entities\data-entities-fixed-assets.md)
 ### [Data entities: General ledger](data-entities\data-entities-general-ledger.md)
 ### [Data entities: Global address book](data-entities\data-entities-global-address-book.md)
-### [Data entities home page](data-entities\data-entities-home-page.md)
 ### [Data entities: Human resources](data-entities\data-entities-human-resources.md)
 ### [Data entities: Inventory management](data-entities\data-entities-inventory-management.md)
 ### [Data entities: Master planning](data-entities\data-entities-master-plan.md)
@@ -280,13 +282,11 @@
 ### [Data entities: Production control](data-entities\data-entities-production-control.md)
 ### [Data entities: Project accounting](data-entities\data-entities-project-accounting.md)
 ### [Data entities: Public sector](data-entities\data-entities-public-sector.md)
-### [Data entities report](data-entities\data-entities-report.md)
 ### [Data entities: Retail](data-entities\data-entities-retail.md)
 ### [Data entities: Sales and marketing (Execution)](data-entities\data-entities-sales-marketing.md)
 ### [Data entities: Sales and marketing (Pre-sales)](data-entities\data-entities-sales-marketing-pre-sales.md)
 ### [Data entities: System administration](data-entities\data-entities-system-administration.md)
 ### [Data entities: Workflow](data-entities\data-entities-workflow.md)
-## [Metadata properties: ReadOnly, AllowEdit, Mandatory](dev-tools\metadata-properties.md)
 # User interface
 ## [Action controls](user-interface\action-controls.md)
 ## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
