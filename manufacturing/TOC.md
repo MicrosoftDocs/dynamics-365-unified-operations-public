@@ -40,8 +40,8 @@
 # Inventory management
 ## [Inventory management home page](warehouse-management\inventory-management.md)
 ## Create warehouse layout
-## Indbound orders
-## Outbound orders
+## Indbound process
+## Outbound process
 ## Set up inventory tracking
 ### [Cycle counting](warehouse-management\cycle-counting.md)
 ### [Inventory blocking](warehouse-management\inventory-blocking.md)
@@ -191,23 +191,29 @@
 ## [Reconcile freight](transportation-management\reconcile-freight-transportation-management.md)
 # Warehouse management
 ## [Warehouse management home page](warehouse-management\warehouse-management.md)
-## [Control work by using work templates and location directives](warehouse-management\control-warehouse-location-directives.md)
-## [Cycle counting](warehouse-management\cycle-counting.md)
-## [Block inventory](warehouse-management\inventory-blocking.md)
-## [Inventory journal](warehouse-management\inventory-journals.md)
-## [Inventory location](warehouse-management\inventory-locations.md)
-## [Inventory status](warehouse-management\inventory-statuses.md)
-## [Inventory tag counting](warehouse-management\inventory-tag-counting.md)
-## [Manage warehouse workers](warehouse-management\manage-warehouse-workers.md)
-## [Packing materials and fees](warehouse-management\pack-materials-packing-material-fees.md)
-## [Quality management overview](warehouse-management\enable-quality-management.md)
-## [Replenishment](warehouse-management\replenishment.md)
-## [Set up mobile devices for warehouse work](warehouse-management\configure-mobile-devices-warehouse_work.md)
-## [Unit of measure and stocking policies](warehouse-management\unit-measure-stocking-policies.md)
-## [Warehouse configuration](warehouse-management\warehouse-configuration.md)
-## [Warehouse Mobile Devices Portal (WMDP) for Dynamics 365 for Operations](warehouse-management\warehouse-mobile-devices-portal.md)
-## [Warehouse mobile device display settings](warehouse-management\change-warehouse-mobile-device-displays.md)
-## [Warehouse work policies](warehouse-management\warehouse-work-policies.md)
-## [Configure field names in Warehousing app](warehouse-management\configure-app-field-names-and-priorities-for-dynamics-365-for-operations-warehousing.md)
+## Warehouse layout
+### [Warehouse layout configuration](warehouse-management\warehouse-configuration.md)
+## Work policy
+### [Control work by using work templates and location directives](warehouse-management\control-warehouse-location-directives.md)
+### [Unit of measure and stocking policies](warehouse-management\unit-measure-stocking-policies.md)
+### [Warehouse work policies](warehouse-management\warehouse-work-policies.md)
+### [Manage warehouse workers](warehouse-management\manage-warehouse-workers.md)
+### [Quality management overview](warehouse-management\enable-quality-management.md)
+## Picking and packing
+### [Packing materials and fees](warehouse-management\pack-materials-packing-material-fees.md)
+## Inventory counting
+### [Cycle counting](warehouse-management\cycle-counting.md)
+### [Block inventory](warehouse-management\inventory-blocking.md)
+### [Inventory journal](warehouse-management\inventory-journals.md)
+### [Inventory location](warehouse-management\inventory-locations.md)
+### [Inventory status](warehouse-management\inventory-statuses.md)
+### [Inventory tag counting](warehouse-management\inventory-tag-counting.md)
+## Replenishment
+### [Replenishment](warehouse-management\replenishment.md)
+## Mobile devices
+### [Set up mobile devices for warehouse work](warehouse-management\configure-mobile-devices-warehouse_work.md)
+### [Warehouse Mobile Devices Portal (WMDP) for Dynamics 365 for Operations](warehouse-management\warehouse-mobile-devices-portal.md)
+### [Warehouse mobile device display settings](warehouse-management\change-warehouse-mobile-device-displays.md)
+### [Configure field names in Warehousing app](warehouse-management\configure-app-field-names-and-priorities-warehouse.md)
 
 
