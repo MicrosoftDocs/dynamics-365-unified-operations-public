@@ -315,7 +315,6 @@
 ### [Validate an application for an LCS solution](lifecycle-services\app-validation-lcs-solutions.md)
 ### [Process and consume data packages in an LCS solution](lifecycle-services\process-data-packages-lcs-solutions.md)
 ### [Back up database for an LCS solution](lifecycle-services\database-backup-lcs-solutions.md)
-
 ## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
 # Lifecycle Services
 ## [Dynamics Lifecycle Services user guide](lifecycle-services\lcs-user-guide.md)
@@ -336,7 +335,7 @@
 ## [Set up Configuration manager ](lifecycle-services\set-up-configuration-manager-lcs.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services\submit-request-dynamics-service-engineering-team.md)
 ## [Upload custom business processes to Business process modeler from Task recorder](lifecycle-services\upload-business-processes-bpm-task-recorder.md)
-# Develop and customized using Visual Studio
+# Develop and customize using Visual Studio
 ## [Developer home page](dev-tools/TOC.md)
 ## AX 2012
 ### Deployment
