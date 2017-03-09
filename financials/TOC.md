@@ -1,4 +1,4 @@
-)# General ledger
+# General ledger
 ## Accounts
 ## [Accruals overview](general-ledger\accruals-overview.md)
 ## [Elimination rules](general-ledger\elimination-rules.md)
