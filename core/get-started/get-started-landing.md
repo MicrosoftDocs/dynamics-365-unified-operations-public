@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Getting started in Microsoft Dynamics 365 for Operations | Microsoft Docs
+title: Getting started in Microsoft Dynamics 365 for Operations
 description: This page points to resources that will help you use the Microsoft Dynamics 365 for Operations user interface (UI) and Help system more effectively.
 author: sericks007
 manager: AnnBe
