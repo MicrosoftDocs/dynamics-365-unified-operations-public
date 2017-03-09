@@ -64,19 +64,19 @@
 ### [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
 ### [Remove outlier from historical transaction data](master-planning\remove-historical-outliers-calculating-demand-forecast.md)
 ### [Reduction key](master-planning\reduction-keys.md)
-## Master planning
+## Master plan
 ### [Coverage settings](master-planning\coverage-settings.md)
 ### [Delays](master-planning\delays.md)
 ### [Master plans](master-planning\master-plans.md)
-### [Master planning and multisite functionality](master-planning\master-plan-multisite-functionality.md)
-#### [Master planning for site coverage, mandatory warehouse](master-planning\master-plan-site-coverage-warehouse-mandatory.md)
-#### [Master planning for site coverage, warehouse not mandatory](master-planning\master-plan-site-coverage-warehouse-not-mandatory.md)
-#### [Master planning for site and warehouse coverage, warehouse mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-#### [Master planning for site and warehouse coverage, warehouse not mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+### [Master plan and multisite functionality](master-planning\master-plan-multisite-functionality.md)
+#### [Master plan for site coverage, mandatory warehouse](master-planning\master-plan-site-coverage-warehouse-mandatory.md)
+#### [Master plan for site coverage, warehouse not mandatory](master-planning\master-plan-site-coverage-warehouse-not-mandatory.md)
+#### [Master plan for site and warehouse coverage, warehouse mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+#### [Master plan for site and warehouse coverage, warehouse not mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 #### [Determine the BOM version](master-planning\master-plan-bom-version-determined.md)
 ### [Explosion of a BOM version](master-planning\master-plan-explosion-bom-version.md)
 ### [Maintain planned order](master-planning\maintain-planned-orders.md)
-### [Use tracing for explosion](master-planning\trace-explosion.md)
+### [Trace explosion](master-planning\trace-explosion.md)
 # Procurement and sourcing
 ## Overview
 ### [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
@@ -106,23 +106,23 @@
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
 # Product information management
-## Manage product information
-### [Bills of materials and formulas](production-control\bill-of-material-bom.md)
+## Product information
+### [BOM and formula](production-control\bill-of-material-bom.md)
 ### [BOM designer functionality](production-control\bom-designer-functionality.md)
-### [Product dimensions](product-information-management\product-dimensions.md)
+### [Product dimension](product-information-management\product-dimensions.md)
 ### [Product number nomenclature](product-information-management\product-variant-identification-nomenclature.md)
-### [Product-related translations FAQ](product-information-management\translations-product-related-information.md)
-### [Register serial numbers in the sales process](product-information-management\register-serial-numbers-sales-process.md)
-### [Search for products and product variants during order entry](product-information-management\search-products-product-variants.md)
-## Manage product configuration
+### [Product-related translation FAQ](product-information-management\translations-product-related-information.md)
+### [Register serial number in the sales process](product-information-management\register-serial-numbers-sales-process.md)
+### [Search for product during order entry](product-information-management\search-products-product-variants.md)
+## Create product configuration
 ### [Build a product configuration model](product-information-management\build-product-configuration-model.md)
-### [Calculations for product configuration models FAQ](product-information-management\calculate-product-configuration-models.md)
-### [Configuration rules](product-information-management\configuration-rules.md)
-### [Dimension-based product configuration](product-information-management\dimension-based-product-configuration.md)
-### [Expression constraints and table constraints in product configuration models](production-control\expression-constraints-table-constraints-product-configuration-models.md)
-### [Reuse product configurations](product-information-management\reuse-product-configurations.md)
-### [Set up a product configuration model](product-information-management\set-up-maintain-product-configuration-model.md)
-### [System-defined and user-defined table constraints](product-information-management\system-defined-user-defined-table-constraints.md)
+### [Calculation for product configuration model FAQ](product-information-management\calculate-product-configuration-models.md)
+### [Configuration rule](product-information-management\configuration-rules.md)
+### [Dimension-based configuration](product-information-management\dimension-based-product-configuration.md)
+### [Expression constraint and table constraint](production-control\expression-constraints-table-constraints-product-configuration-models.md)
+### [Reuse product configuration](product-information-management\reuse-product-configurations.md)
+### [Set up a configuration model](product-information-management\set-up-maintain-product-configuration-model.md)
+### [System-defined and user-defined table constraint](product-information-management\system-defined-user-defined-table-constraints.md)
 # Production control
 ## [Activity-based subcontracting](production-control\activity-based-subcontracting.md)
 ## [Allocate time to jobs in a job bundle](production-control\allocate-time-jobs-job-bundle.md)
@@ -165,7 +165,7 @@
 ## [Time and attendance registration](production-control\time-attendance-registrations.md)
 ## [Manage subcontracting work in production](production-control\manage-subcontracting-work-in-production.md)
 ## [Routes and operations](production-control\routes-and-operations.md)
-# Sales marketing
+# Sales and marketing
 ## [Delivery schedules](sales-marketing\delivery-schedules.md)
 ## [Direct deliveries](sales-marketing\direct-deliveries.md)
 ## [Order promising](sales-marketing\delivery-dates-available-promise-calculations.md)
@@ -175,10 +175,10 @@
 ## [Sales home page](sales-marketing\sales.md)
 ## [Sales agreements](sales-marketing\sales-agreements.md)
 # Transportation management
+## [Plan freight transportation routes](transportation-management\plan-freight-transportation-routes-multiple-stops.md)
 ## [Create a bill of lading](transportation-management\create-bill-of-lading.md)
-## [Plan freight transportation routes with multiple stops](transportation-management\plan-freight-transportation-routes-multiple-stops.md)
 ## [Plan loads using hub consolidation](transportation-management\plan-loads-hub-consolidation.md)
-## [Reconcile freight in transportation management](transportation-management\reconcile-freight-transportation-management.md)
+## [Reconcile freight](transportation-management\reconcile-freight-transportation-management.md)
 # Warehouse management
 ## [Control warehouse work by using work templates and location directives](warehouse-management\control-warehouse-location-directives.md)
 ## [Cycle counting](warehouse-management\cycle-counting.md)
