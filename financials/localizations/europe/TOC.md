@@ -1,9 +1,9 @@
 #[Registration IDs](registration-ids.md)						
 #[EU Entry certificates](entry-certificates.md)						
 #[EU Sales list reporting](eu-sales-list.md)						
-#[SEPA Direct debit overview]()						
+#[SEPA Direct debit overview](sepa-direct-debit-overview.md)						
 ##[Set up SEPA direct debit mandate](set-up-sepa-direct-debit-mandate.md)						
-#[SEPA Credit transfer overview]()						
+#[SEPA Credit transfer overview](sepa-credit-transfer-overview.md)						
 #[Intrastat](intrastat.md)						
 #[VAT reporting](eu-vat-reporting.md)						
 ##[VAT register transactions](financials\eeu-vat-register-transactions.md)						
@@ -34,8 +34,7 @@
 ##[VAT statement](cz-vat-statement-details-for-czech-republic.md)						
 ##[Czech depreciation suspension holidays](cze-depreciation-suspension-holidays.md)						
 ##[Czech fixed assets depreciation](cze-fixed-assets-depreciation.md)						
-##[Czech half depreciation fixed asset disposal](cze-half-depreciation-fixed-asset-disposal.md)						
-#Denmark						
+##[Czech half depreciation fixed asset disposal](cze-half-depreciation-fixed-asset-disposal.md)											
 #Estonia						
 ##[VAT statement](est-vat-statement-details-estonia.md)						
 ##[VAT statement](financials\est-vat-statement-details-for-estonia.md)						
@@ -54,8 +53,8 @@
 ##[Commitments in the public sector in France](commitments-public-sector-france.md)						
 #Germany						
 ##[German audit file (GDPdU/GoBD)](gdpdu-audit-data-export.md)						
-##[German journal list report(german-journal-list-report.md)						
-##[Print a separate label for credit memos that originate from sales](print-separate-label-credit-memo-originating-sales-deu.md)						
+##[German journal list report](german-journal-list-report.md)						
+##[Print a separate label for credit memos that originate from sales](print-separate-label-credit-memo-originating-sales-deu.md)	
 ##[Additional acquisition depreciation](additional-acquisition-depreciation.md)						
 #Hungary						
 ##[Low cost fixed assets](hun-low-cost-fixed-assets.md)						
@@ -75,8 +74,7 @@
 ##[Tax on natural resources report](financials\tax-on-natural-resources-in-latvia.md)						
 ##[Fixed assets location change tracking](financials\lva-fixed-assets-location-fields-change.md)						
 #Lithuania						
-##[Fixed asset repair statement](ltu-fixed-asset-repair-statement.md)						
-#Netherlands						
+##[Fixed asset repair statement](ltu-fixed-asset-repair-statement.md)											
 #Norway						
 ##[Nets import format](nor-nets-import-format.md)						
 #Poland						
