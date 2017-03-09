@@ -1,0 +1,7 @@
+# [System configuration](system-administration-home-page.md)
+## [Batch processing overview](batch-processing-overview.md)
+## [Batch server overview](batch-server-overview.md)
+## [Cross-company data sharing](cross-company-data-sharing.md)
+## [Getting started with Help](help-get-started.md)
+## [License codes and configuration keys report](license-codes-configuration-keys-report.md)
+## [Maintenance mode](maintenance-mode.md)

@@ -118,6 +118,6 @@
 ## [Testing and validations](../perf-test/testing-validation.md)
 ## [Test projects in Visual Studio](../perf-test/testing-support.md)
 ## [Deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
-# Miscellaneous
+# Dates
 ## [Date/time data and time zones](date-time-zones.md)
-
+## [Date effectivity](date-effectivity.md)
