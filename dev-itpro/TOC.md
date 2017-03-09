@@ -28,12 +28,5 @@
 # Supply chain development
 ## [Gantt development guide](user-interface\gantt-development-guide.md)
 ## [Create a new transportation management engine](create-new-transportation-management-engine.md)
-# [Developing and releasing solutions on Lifecycle Services](lifecycle-services\lcs-solutions-app-source.md)
-## [Stage and publish an LCS solution](lifecycle-services\marketing-content-lcs-solutions.md)
-## [Add a methodology to an LCS solution](lifecycle-services\methodologies-lcs-solutions.md)
-## [Migrate code for an LCS solution](lifecycle-services\code-migration-lcs-solutions.md)
-## [Validate an application for an LCS solution](lifecycle-services\app-validation-lcs-solutions.md)
-## [Process and consume data packages in an LCS solution](lifecycle-services\process-data-packages-lcs-solutions.md)
-## [Back up database for an LCS solution](lifecycle-services\database-backup-lcs-solutions.md)
 # Develop and customize using Visual Studio](dev-tools\TOC.md)
 # [Lifecycle Services](lifecycle-services\TOC.md)
