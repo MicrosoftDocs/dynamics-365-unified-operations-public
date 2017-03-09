@@ -1,7 +1,7 @@
 # Localizations 
 # Asia pacific
 ## Australia
-### [Bank file formats for Australian banks](localizations\asia-pacific\set-up-method-of-payment-pay-vendors-australian-banks.md)
+### [Bank file formats](asia-pacific\set-up-method-of-payment-pay-vendors-australian-banks.md)
 ## China		
 ### [Chinese vouchers](localizations\asia-pacific\chinese-vouchers.md)
 ### [Configure tax integration](localizations\asia-pacific\configure-tax-integration-china.md)
