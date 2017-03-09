@@ -38,46 +38,45 @@
 ## [Weighted average date](cost-management\weighted-average-date.md)
 ## [Weighted average with physical value and marking](cost-management\weighted-average-physical-value-marking.md)
 # Inventory management
-## Warehouse layout
-## [Purchasing policies](procurement-sourcing\purchase-policies.md)
-## Inbound receiving and registration
-## Outbound processing
-## Inventory tracking, reservation, counting, and adjustment
-### [Reserve inventory quantities](inventory-management\reserve-inventory-quantities.md)
+## Create warehouse layout
+## Indbound and outbound delivery
+## Set up inventory tracking
+### [Reserve inventory quantity](inventory-management\reserve-inventory-quantities.md)
 ### [Reserve the same batch for a sales order](inventory-management\reserve-same-batch-sales-order.md)
 ## Consignment inventory
 ### [Consignment](inventory-management\consignment.md)
 ### [Set up consignment](inventory-management\set-up-consignment.md)
 ## Quality management
-### [Quarantine orders](inventory-management\quarantine-orders.md)
-### [Quality management processes](inventory-management\quality-management-processes.md)
+### [Quarantine order](inventory-management\quarantine-orders.md)
+### [Quality management process](inventory-management\quality-management-processes.md)
 ### [Nonconformance management](inventory-management\enable-nonconformance-management.md)
-## Tracing items and batches
-### [Item and raw material tracing in inventory, production, and sales](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
-
-### [Merge inventory batches](inventory-management\merge-inventory-batches.md)
+## Trace item and batch
+### [Trace item and raw material](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
+### [Merge inventory batch](inventory-management\merge-inventory-batches.md)
 # Master planning
-## [Authorize an adjusted forecast](master-planning\authorize-adjusted-forecast.md)
-## [Coverage settings](master-planning\coverage-settings.md)
-## [Delays](master-planning\delays.md)
-## [Demand forecasting home page](master-planning\demand-forecasting.md)
-## [Demand forecasting setup](master-planning\demand-forecasting-setup.md)
-## [Demand forecasting overview](master-planning\introduction-demand-forecasting.md)
-## [Determine the BOM version](master-planning\master-plan-bom-version-determined.md)
-## [Explosion of a BOM version](master-planning\master-plan-explosion-bom-version.md)
-## [Generate a statistical baseline forecast](master-planning\generate-statistical-baseline-forecast.md)
-## [Maintain planned orders](master-planning\maintain-planned-orders.md)
-## [Make manual adjustments to the baseline forecast](master-planning\manual-adjustments-baseline-forecast.md)
-## [Master plans](master-planning\master-plans.md)
-## [Master planning and multisite functionality](master-planning\master-plan-multisite-functionality.md)
-## [Master planning for site coverage, mandatory warehouse](master-planning\master-plan-site-coverage-warehouse-mandatory.md)
-## [Master planning for site coverage, warehouse not mandatory](master-planning\master-plan-site-coverage-warehouse-not-mandatory.md)
-## [Master planning for site and warehouse coverage, warehouse mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-## [Master planning for site and warehouse coverage, warehouse not mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-## [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
-## [Reduction keys](master-planning\reduction-keys.md)
-## [Remove outliers from historical transaction data when calculating a demand forecast](master-planning\remove-historical-outliers-calculating-demand-forecast.md)
-## [Use tracing for explosion](master-planning\trace-explosion.md)
+## Create demand forecast
+### [Demand forecasting home page](master-planning\demand-forecasting.md)
+### [Demand forecast overview](master-planning\introduction-demand-forecasting.md)
+### [Set up demand forecast](master-planning\demand-forecasting-setup.md)
+### [Generate a statistical baseline forecast](master-planning\generate-statistical-baseline-forecast.md)
+### [Make manual adjustment to the baseline forecast](master-planning\manual-adjustments-baseline-forecast.md)
+### [Authorize an adjusted forecast](master-planning\authorize-adjusted-forecast.md)
+### [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
+### [Remove outlier from historical transaction data](master-planning\remove-historical-outliers-calculating-demand-forecast.md)
+### [Reduction key](master-planning\reduction-keys.md)
+## Master planning
+### [Coverage settings](master-planning\coverage-settings.md)
+### [Delays](master-planning\delays.md)
+### [Master plans](master-planning\master-plans.md)
+### [Master planning and multisite functionality](master-planning\master-plan-multisite-functionality.md)
+#### [Master planning for site coverage, mandatory warehouse](master-planning\master-plan-site-coverage-warehouse-mandatory.md)
+#### [Master planning for site coverage, warehouse not mandatory](master-planning\master-plan-site-coverage-warehouse-not-mandatory.md)
+#### [Master planning for site and warehouse coverage, warehouse mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+#### [Master planning for site and warehouse coverage, warehouse not mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+#### [Determine the BOM version](master-planning\master-plan-bom-version-determined.md)
+### [Explosion of a BOM version](master-planning\master-plan-explosion-bom-version.md)
+### [Maintain planned order](master-planning\maintain-planned-orders.md)
+### [Use tracing for explosion](master-planning\trace-explosion.md)
 # Procurement and sourcing
 ## Overview
 ### [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
