@@ -38,9 +38,16 @@
 ## [Weighted average date](cost-management\weighted-average-date.md)
 ## [Weighted average with physical value and marking](cost-management\weighted-average-physical-value-marking.md)
 # Inventory management
+## [Inventory management home page](warehouse-management\inventory-management.md)
 ## Create warehouse layout
-## Indbound and outbound delivery
+## Indbound orders
+## Outbound orders
 ## Set up inventory tracking
+### [Cycle counting](warehouse-management\cycle-counting.md)
+### [Inventory blocking](warehouse-management\inventory-blocking.md)
+### [Inventory journals](warehouse-management\inventory-journals.md)
+### [Inventory locations](warehouse-management\inventory-locations.md)
+### [Inventory statuses](warehouse-management\inventory-statuses.md)
 ### [Reserve inventory quantity](inventory-management\reserve-inventory-quantities.md)
 ### [Reserve the same batch for a sales order](inventory-management\reserve-same-batch-sales-order.md)
 ## Consignment inventory
@@ -174,33 +181,33 @@
 ## [Sales and marketing](sales-marketing\overview-sales-marketing.md)
 ## [Sales home page](sales-marketing\sales.md)
 ## [Sales agreements](sales-marketing\sales-agreements.md)
+## [Sales returns](warehouse-management\sales-returns.md)
 # Transportation management
+## [Transportation management home page](warehouse-management\transportation-management.md)
+## [Transportation management engines](warehouse-management\transportation-management-engines.md)
 ## [Plan freight transportation routes](transportation-management\plan-freight-transportation-routes-multiple-stops.md)
 ## [Create a bill of lading](transportation-management\create-bill-of-lading.md)
 ## [Plan loads using hub consolidation](transportation-management\plan-loads-hub-consolidation.md)
 ## [Reconcile freight](transportation-management\reconcile-freight-transportation-management.md)
 # Warehouse management
-## [Control warehouse work by using work templates and location directives](warehouse-management\control-warehouse-location-directives.md)
+## [Warehouse management home page](warehouse-management\warehouse-management.md)
+## [Control work by using work templates and location directives](warehouse-management\control-warehouse-location-directives.md)
 ## [Cycle counting](warehouse-management\cycle-counting.md)
-## [Inventory blocking](warehouse-management\inventory-blocking.md)
-## [Inventory journals](warehouse-management\inventory-journals.md)
-## [Inventory locations](warehouse-management\inventory-locations.md)
-## [Inventory management home page](warehouse-management\inventory-management.md)
-## [Inventory statuses](warehouse-management\inventory-statuses.md)
+## [Block inventory](warehouse-management\inventory-blocking.md)
+## [Inventory journal](warehouse-management\inventory-journals.md)
+## [Inventory location](warehouse-management\inventory-locations.md)
+## [Inventory status](warehouse-management\inventory-statuses.md)
 ## [Inventory tag counting](warehouse-management\inventory-tag-counting.md)
 ## [Manage warehouse workers](warehouse-management\manage-warehouse-workers.md)
 ## [Packing materials and fees](warehouse-management\pack-materials-packing-material-fees.md)
 ## [Quality management overview](warehouse-management\enable-quality-management.md)
 ## [Replenishment](warehouse-management\replenishment.md)
 ## [Set up mobile devices for warehouse work](warehouse-management\configure-mobile-devices-warehouse_work.md)
-## [Transportation management home page](warehouse-management\transportation-management.md)
-## [Transportation management engines](warehouse-management\transportation-management-engines.md)
 ## [Unit of measure and stocking policies](warehouse-management\unit-measure-stocking-policies.md)
 ## [Warehouse configuration](warehouse-management\warehouse-configuration.md)
-## [Warehouse management home page](warehouse-management\warehouse-management.md)
 ## [Warehouse Mobile Devices Portal (WMDP) for Dynamics 365 for Operations](warehouse-management\warehouse-mobile-devices-portal.md)
 ## [Warehouse mobile device display settings](warehouse-management\change-warehouse-mobile-device-displays.md)
 ## [Warehouse work policies](warehouse-management\warehouse-work-policies.md)
 ## [Configure field names in Warehousing app](warehouse-management\configure-app-field-names-and-priorities-for-dynamics-365-for-operations-warehousing.md)
-## [Sales returns](warehouse-management\sales-returns.md)
+
 
