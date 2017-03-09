@@ -1,7 +1,7 @@
 		
-# Mexico			
-## [ISR declaration report and supporting processes](latin-america\mex-isr-declaration-report-and-supporting-processes-2.md)			
-## [ISR declaration report](isr-declaration-report.md)			
+# Mexico				
+## [ISR declaration report](isr-declaration-report.md)
+### [ISR declaration report and supporting processes](mex-isr-declaration-report-and-supporting-processes-2.md)	
 ## [DIOT declaration statement](diot-declaration-statement.md)			
 ## [Electronic invoices (CFDI)](electronic-invoices-mexico.md)			
 ## [Electronic ledger accounting statements](electronic-ledger-accounting-statements-mexico.md)			
@@ -21,5 +21,5 @@
 ## [Fiscal document text placeholders](bra-about-fiscal-document-text-placeholders.md)			
 ## [Fiscal documents and fiscal document framework](bra-about-fiscal-documents-and-the-fiscal-document-framework.md)			
 ## [ICMS tax fiscal documents](bra-about-icms-tax-fiscal-documents.md)			
-## [Import and verify NF-e XML documents and DANFE files](bra-import-and-verify-nf-e-xml-documents-and-danfe-that-you-receive-in-emails.md)			
+## [Import and verify NF-e XML documents and DANFE files](bra-import-and-verify-nf-e-xml-documents-and-danfe-that-you-receive-in-emails.md
 ## [Import fiscal documents](bra-about-import-fiscal-documents.md)
