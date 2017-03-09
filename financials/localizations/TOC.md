@@ -53,7 +53,7 @@
 ## [SEPA Credit transfer overview]()
 ## [Intrastat](europe\intrastat.md)		
 ## [VAT reporting](europe\eu-vat-reporting.md)		
-## [VAT register transactions](financials\europe\eeu-vat-register-transactions.md)			
+### [VAT register transactions](financials\europe\eeu-vat-register-transactions.md)			
 ## [File formats for methods of payment](europe\select-file-formats-for-the-method-of-payments.md)		
 ## [Payment slip report](europe\eur-payment-slip-report-giro.md)		
 ## [Invoice issue deadline](europe\invoice-issue-deadline.md)		
@@ -65,7 +65,7 @@
 ## [Split periods in periodic journals](europe\create-post-periodic-journals.md)			
 ## [Viewing transactions on settlement](financials\europe\transactions-on-settlement-form.md)			
 ## [Invoice and packing slip numbering for Latvia and Lithuania](financials\europe\eeu-invoices-and-packing-slips-numbering.md)		
-## [Fixed assets disposal for Estonia and Lithuania](financials\europe\eeu-credit-note-to-reverse-a-fixed-asset-sale.md)			
+## [Fixed assets disposal for Estonia and Lithuania](financials\europe\eeu-credit-note-to-reverse-a-fixed-asset-sale.md)		
 ## [Editing invoice IDs on Sales orders](financials\europe\eeu-edit-invoice-id-on-sales-orders.md)			
 ## [Depreciation rounding](europe\eeu-depreciation-rounding.md)			
 ## [Credit note reverse fixed asset sale](europe\eeu-credit-note-reverse-fixed-asset-sale.md)			
@@ -76,21 +76,16 @@
 ### [VAT statement](europe\aut-vat-statement-details-austria.md)			
 ### [Packing material fee calculation](financials\europe\aut-packing-material-fee-calculation.md)			
 ## Belgium			
-### [CODA bank statement](europe\bel-coda-bank-statement-import.md)			
-			
-			
+### [CODA bank statement](europe\bel-coda-bank-statement-import.md)					
 ## The Czech Republic			
 ### [VAT statement](europe\cz-vat-statement-details-for-czech-republic.md)
 ### [Czech depreciation suspension holidays](europe\cze-depreciation-suspension-holidays.md)
 ### [Czech fixed assets depreciation](europe\cze-fixed-assets-depreciation.md)
-### [Czech half depreciation fixed asset disposal](europe\cze-half-depreciation-fixed-asset-disposal.md)			
-			
-## Denmark			
-			
+### [Czech half depreciation fixed asset disposal](europe\cze-half-depreciation-fixed-asset-disposal.md)				
+## Denmark					
 ## Estonia			
 ### [VAT statement](europe\est-vat-statement-details-estonia.md)			
-### [VAT statement](financials\europe\est-vat-statement-details-for-estonia.md)			
-			
+### [VAT statement](financials\europe\est-vat-statement-details-for-estonia.md)					
 ## France			
 ### [Vendor invoice payment holds in the public sector](europe\vendor-invoice-payment-holds-public-sector-france.md)			
 ### [Titres de recette in the public sector](europe\titres-de-recette-public-sector-france.md)			
@@ -98,24 +93,20 @@
 ### [Procurement and sourcing in the public sector](europe\procurement-sourcing-public-sector-france.md)			
 ### [Penalties for past due customer payments](europe\apply-penalty-customer-payment-past-due.md)			
 ### [Mandats de paiement in the public sector](europe\mandats-de-paiement-public-sector-france.md)			
-### [Print lump sum recovery text on a customer invoice](europe\configure-print-lump-sum-recovery-text-customer-invoice.md)			
+### [Print lump sum recovery text on a customer invoice](europe\configure-print-lump-sum-recovery-text-customer-invoice.md)		
 ### [RB/SL depreciation](europe\rbsl-depreciation.md)			
 ### [NAF codes and siret numbers](europe\naf-codes-siret-numbers.md)			
 ### [Derogatory depreciation](europe\derogatory-depreciation.md)			
 ### [Chronological invoices vouchers](europe\chronological-invoices-vouchers-france.md)			
 ### [Commitments in the public sector in France](europe\commitments-public-sector-france.md)			
-			
 ## Germany			
 ### [German audit file (GDPdU/GoBD)](europe\gdpdu-audit-data-export.md)			
 ### [German journal list report(europe\german-journal-list-report.md)			
 ### [Print a separate label for credit memos that originate from sales](europe\print-separate-label-credit-memo-originating-sales-deu.md)			
-### [Additional acquisition depreciation](europe\additional-acquisition-depreciation.md)			
-			
+### [Additional acquisition depreciation](europe\additional-acquisition-depreciation.md)				
 ## Hungary			
-### [Low cost fixed assets](europe\hun-low-cost-fixed-assets.md)			
-			
-## Ireland			
-			
+### [Low cost fixed assets](europe\hun-low-cost-fixed-assets.md)						
+## Ireland						
 ## Italy			
 ### [VAT statements details](financials\europe\vat-statements-details-for-italy.md)			
 ### [Italian black list report](europe\italian-black-list-report.md)			
@@ -123,8 +114,7 @@
 ### [Italy competence date](europe\ita-competence-date.md)			
 ### [Italy depreciation of fixed assets](europe\ita-depreciation-of-fixed-assets.md)			
 ### [Packing slip date verification on invoices](europe\ita-packing-slip-date-verification-on-invoice.md)			
-### [Split payment for invoices issued to the Public Administration](europe\split-payment-invoices-issued-public-administration.md)			
-			
+### [Split payment for invoices issued to the Public Administration](europe\split-payment-invoices-issued-public-administration.md)	
 ## Latvia			
 ### [VAT statement details](europe\lv-vat-statement-details.md)			
 ### [Latvia fixed assets accounting](europe\lva-fixed-assets-accounting.md)			
