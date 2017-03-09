@@ -14,7 +14,16 @@
 ## [Set up Configuration manager ](lifecycle-services\set-up-configuration-manager-lcs.md)
 ## [Upload custom business processes to Business process modeler from Task recorder](lifecycle-services\upload-business-processes-bpm-task-recorder.md)
 
-# AX 2012
+#LCS solutions
+## [Developing and releasing solutions on Lifecycle Services](lifecycle-services\lcs-solutions-app-source.md)
+## [Stage and publish an LCS solution](lifecycle-services\marketing-content-lcs-solutions.md)
+## [Add a methodology to an LCS solution](lifecycle-services\methodologies-lcs-solutions.md)
+## [Migrate code for an LCS solution](lifecycle-services\code-migration-lcs-solutions.md)
+## [Validate an application for an LCS solution](lifecycle-services\app-validation-lcs-solutions.md)
+## [Process and consume data packages in an LCS solution](lifecycle-services\process-data-packages-lcs-solutions.md)
+## [Back up database for an LCS solution](lifecycle-services\database-backup-lcs-solutions.md)
+
+#AX 2012
 ## Deployment
 ### [Cloud-hosted environments (AX 2012)](deployment\cloud-hosted-environments-lcs.md)
 ### [Plan your Dynamics AX 2012 R3 deployment on Azure](lifecycle-services\ax-2012\plan-2012-r3-deployment-azure.md)
@@ -56,11 +65,11 @@
 ### [Customization analysis ](lifecycle-services\ax-2012\customization-analysis-lcs.md)
 ### [Infrastructure estimator](lifecycle-services\ax-2012\infrastructure-estimator-lcs.md)
 ### [License sizing estimator](lifecycle-services\ax-2012\license-sizing-estimator-lcs.md)
-### [RFP responses (AX 2012)](lifecycle-services\ax-2012\rfp-responses-lcs.md)
+### [RFP responsesÂ (AX 2012)](lifecycle-services\ax-2012\rfp-responses-lcs.md)
 ### [System diagnostics](lifecycle-services\ax-2012\system-diagnostics-lcs.md)
-### [Install and run System diagnostics (AX 2012)](lifecycle-services\ax-2012\install-run-system-diagnostics-lcs.md)
+### [Install and run System diagnosticsÂ (AX 2012)](lifecycle-services\ax-2012\install-run-system-diagnostics-lcs.md)
 ### [Upgrade analysis](lifecycle-services\ax-2012\upgrade-analysis-lcs.md)
-### [Usage profiler (AX 2012)](lifecycle-services\ax-2012\usage-profiler-lcs.md)
+### [Usage profilerÂ (AX 2012)](lifecycle-services\ax-2012\usage-profiler-lcs.md)
 ## AX 2012 downloadable tools
 ### [Code Upgrade Tool User Guide](lifecycle-services\ax-2012\code-upgrade-tool-user-guide.md)
 ### [Lifecycle Services downloadable tools](lifecycle-services\ax-2012\lcs-downloadable-tools-formerly-informationsource.md)
