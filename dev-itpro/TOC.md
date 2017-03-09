@@ -336,6 +336,8 @@
 ## [Set up Configuration manager ](lifecycle-services\set-up-configuration-manager-lcs.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services\submit-request-dynamics-service-engineering-team.md)
 ## [Upload custom business processes to Business process modeler from Task recorder](lifecycle-services\upload-business-processes-bpm-task-recorder.md)
+# Develop and customized using Visual Studio
+## [Developer home page](dev-tools/TOC.md)
 ## AX 2012
 ### Deployment
 #### [Cloud-hosted environments (AX 2012)](deployment\cloud-hosted-environments-lcs.md)
