@@ -1,5 +1,69 @@
-# [Cost management](cost-management\TOC.md)
-# [Inventory management](inventory-management\TOC.md)
+# Cost management
+## [Cost management home page](cost-management\cost-management.md)
+## Predetermined costs
+### [Costing sheets](cost-management\costing-sheets.md)
+### [Costing versions](cost-management\costing-versions.md)
+### [Simulate cost changes by using a costing version for planned costs](cost-management\simulate-cost-changes-costing-version-planned-costs.md)
+## Inventory costing
+### [Cost objects](cost-management\cost-object.md)
+### [Cost entries](cost-management\cost-entries.md)
+### [Cost groups](cost-management\cost-groups.md)
+### [FIFO with physical value and marking](cost-management\fifo-physical-value-marking.md)
+### [LIFO Date with physical value and marking](cost-management\lifo-date-physical-value-marking.md)
+### [LIFO with physical value and marking](cost-management\lifo-physical-value-marking.md)
+### [Moving average](cost-management\moving-average.md)
+### [Weighted average date](cost-management\weighted-average-date.md)
+### [Weighted average with physical value and marking](cost-management\weighted-average-physical-value-marking.md)
+### [Running average cost price](cost-management\running-average-cost-price.md)
+### [Adjust on-hand inventory cost values](cost-management\adjust-hand-inventory-cost-values.md)
+### [Include physical value](cost-management\include-physical-value.md)
+### [Inventory object values](cost-management\physical-quantity.md)
+### [Inventory close](cost-management\inventory-close.md)
+### [Physical and financial updates](cost-management\physical-financial-updates.md)
+### [Tracking running average cost per inventory dimension](cost-management\track-running-average-cost-per-inventory-dimension.md)
+## Manufacturing costing
+### [BOM calculations groups](cost-management\bom-calculation-groups.md)
+### [Cost categories used in production routing](cost-management\cost-categories-used-production-routings.md)
+### [Cost categories used in Production control and Project management accounting](cost-management\cost-categories-used-production-control-project-management-accounting.md)
+### [Production order cost analysis](cost-management\production-order-cost-analysis.md)
+### [Production order cost estimation](cost-management\production-order-cost-estimation.md)
+### [Production posting](cost-management\production-posting.md)
+### [Common sources of production variances](cost-management\common-sources-of-production-variances.md)
+### [Set up products that can be produced or procured](cost-management\manufactured-items-treated-as-purchased-items.md)
+### [Total cost allocation method](cost-management\methodology-total-cost-allocation.md)
+## Standard costs
+### [Standard cost conversion overview](cost-management\standard-cost-conversion-overview.md)
+### [Prerequisites for a standard cost conversion](cost-management\prerequisites-standard-cost-conversion.md)
+### [Manage standard cost updates](cost-management\manage-standard-cost-updates.md)
+### [BOM calculations with standard costs](cost-management\information-used-bom-calculations-standard-costs.md)
+### [Update standard costs in a manufacturing environment](cost-management\update-standard-costs-manufacturing-environment.md)
+### [Update standard costs for a new manufactured item](cost-management\update-standard-costs-new-manufactured-item.md)
+### [Update standard costs in a non-manufacturing environment](cost-management\update-standard-costs-non-manufacturing-environment.md)
+## Data entities
+### [Data entities: Costing](cost-management\data-entities-costing.md)
+# Inventory management
+## [Inventory management home page](warehouse-management\inventory-management.md)
+## Create warehouse layout
+## Indbound process
+## Outbound process
+## Set up inventory tracking
+### [Cycle counting](warehouse-management\cycle-counting.md)
+### [Inventory blocking](warehouse-management\inventory-blocking.md)
+### [Inventory journals](warehouse-management\inventory-journals.md)
+### [Inventory locations](warehouse-management\inventory-locations.md)
+### [Inventory statuses](warehouse-management\inventory-statuses.md)
+### [Reserve inventory quantity](inventory-management\reserve-inventory-quantities.md)
+### [Reserve the same batch for a sales order](inventory-management\reserve-same-batch-sales-order.md)
+## Consignment inventory
+### [Consignment](inventory-management\consignment.md)
+### [Set up consignment](inventory-management\set-up-consignment.md)
+## Quality management
+### [Quarantine order](inventory-management\quarantine-orders.md)
+### [Quality management process](inventory-management\quality-management-processes.md)
+### [Nonconformance management](inventory-management\enable-nonconformance-management.md)
+## Trace item and batch
+### [Trace item and raw material](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
+### [Merge inventory batch](inventory-management\merge-inventory-batches.md)
 # Master planning
 ## Create demand forecast
 ### [Demand forecasting home page](master-planning\demand-forecasting.md)
@@ -167,3 +231,6 @@
 ### [Master planning home page](production-control\master-plan.md)
 ### [Sales orders mobile workspace](production-control\sales-orders-mobile-workspace.md)
 ### [Cost accounting terminology](production-control\terms-cost-accounting.md)
+## Data entities
+### [Data entities: Costing](data-entities-costing.md)
+
