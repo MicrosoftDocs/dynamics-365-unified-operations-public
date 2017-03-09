@@ -1,0 +1,25 @@
+		
+# Mexico				
+## [ISR declaration report](isr-declaration-report.md)
+### [ISR declaration report and supporting processes](mex-isr-declaration-report-and-supporting-processes-2.md)	
+## [DIOT declaration statement](diot-declaration-statement.md)			
+## [Electronic invoices (CFDI)](electronic-invoices-mexico.md)			
+## [Electronic ledger accounting statements](electronic-ledger-accounting-statements-mexico.md)			
+## [Adjustment inflation declaration report](adjustment-inflation-declaration-report.md)	
+# Brazil			
+## [Brazilian taxes](bra-about-calculation-of-taxes.md)			
+## [Journals generated during the electronic payment return process](bra-examples-journals-generated-during-the-electronic-payment-return-process.md)			
+## [NF-e process overview](bra-about-the-nf-e-process.md)
+## [Parameters for legal entities in Brazil](brazilian-legal-entity-parameters.md)			
+## [Purchase complementary fiscal documents](bra-about-purchase-complementary-fiscal-documents.md)			
+## [Referenced fiscal documents](referenced-fiscal-documents.md)			
+## [Sales complementary fiscal documents](bra-about-sales-complementary-fiscal-documents.md)			
+## [Service electronic fiscal document](service-electronic-fiscal-document.md)			
+## [Tax attributes](bra-tax-attributes.md)			
+## [Tax payments in Brazil](tax-payments.md)			
+## [Fiscal books](bra-about-fiscal-books.md)			
+## [Fiscal document text placeholders](bra-about-fiscal-document-text-placeholders.md)			
+## [Fiscal documents and fiscal document framework](bra-about-fiscal-documents-and-the-fiscal-document-framework.md)			
+## [ICMS tax fiscal documents](bra-about-icms-tax-fiscal-documents.md)			
+## [Import and verify NF-e XML documents and DANFE files](bra-import-and-verify-nf-e-xml-documents-and-danfe-that-you-receive-in-emails.md
+## [Import fiscal documents](bra-about-import-fiscal-documents.md)
