@@ -195,9 +195,9 @@
 ## [Reconcile freight](transportation-management\reconcile-freight-transportation-management.md)
 # Warehouse management
 ## [Warehouse management home page](warehouse-management\warehouse-management.md)
-## Warehouse layout
+## Layout
 ### [Warehouse layout configuration](warehouse-management\warehouse-configuration.md)
-## Work policy
+## Policy
 ### [Control work by using work templates and location directives](warehouse-management\control-warehouse-location-directives.md)
 ### [Unit of measure and stocking policies](warehouse-management\unit-measure-stocking-policies.md)
 ### [Warehouse work policies](warehouse-management\warehouse-work-policies.md)
@@ -212,12 +212,13 @@
 ### [Inventory location](warehouse-management\inventory-locations.md)
 ### [Inventory status](warehouse-management\inventory-statuses.md)
 ### [Inventory tag counting](warehouse-management\inventory-tag-counting.md)
+## Containerization 
 ## Replenishment
 ### [Replenishment](warehouse-management\replenishment.md)
 ## Mobile devices
 ### [Set up mobile devices for warehouse work](warehouse-management\configure-mobile-devices-warehouse_work.md)
 ### [Warehouse Mobile Devices Portal (WMDP) for Dynamics 365 for Operations](warehouse-management\warehouse-mobile-devices-portal.md)
 ### [Warehouse mobile device display settings](warehouse-management\change-warehouse-mobile-device-displays.md)
-### [Configure field names in Warehousing app](warehouse-management\configure-app-field-names-and-priorities-warehouse.md)
-
+### [Configure field names in warehousing app](warehouse-management\configure-app-field-names-priorities-warehouse.md)
+                                              
 
