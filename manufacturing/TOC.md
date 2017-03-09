@@ -173,15 +173,19 @@
 ## [Manage subcontracting work in production](production-control\manage-subcontracting-work-in-production.md)
 ## [Routes and operations](production-control\routes-and-operations.md)
 # Sales and marketing
-## [Delivery schedules](sales-marketing\delivery-schedules.md)
-## [Direct deliveries](sales-marketing\direct-deliveries.md)
-## [Order promising](sales-marketing\delivery-dates-available-promise-calculations.md)
-## [Order entry deadlines](sales-marketing\order-entry-deadlines.md)
-## [Price simulation](sales-marketing\price-simulation.md)
-## [Sales and marketing](sales-marketing\overview-sales-marketing.md)
-## [Sales home page](sales-marketing\sales.md)
-## [Sales agreements](sales-marketing\sales-agreements.md)
-## [Sales returns](warehouse-management\sales-returns.md)
+## Sales orders
+### [Sales home page](sales-marketing\sales.md)
+### [Sales and marketing](sales-marketing\overview-sales-marketing.md)
+### [Order promising](sales-marketing\delivery-dates-available-promise-calculations.md)
+### [Order entry deadlines](sales-marketing\order-entry-deadlines.md)
+### [Direct deliveries](sales-marketing\direct-deliveries.md)
+### [Delivery schedules](sales-marketing\delivery-schedules.md)
+## Sales agreements
+### [Sales agreements](sales-marketing\sales-agreements.md)
+## Sales quotations
+### [Price simulation](sales-marketing\price-simulation.md)
+## Returns
+### [Sales returns](warehouse-management\sales-returns.md)
 # Transportation management
 ## [Transportation management home page](warehouse-management\transportation-management.md)
 ## [Transportation management engines](warehouse-management\transportation-management-engines.md)
