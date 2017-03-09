@@ -1,4 +1,4 @@
-﻿# [Overview of Dynamics 365 for Operations](get-started\TOC.md)
+# [Overview of Dynamics 365 for Operations](get-started\TOC.md)
 # [Deployment](deployment\TOC.md)
 # [Upgrade and migration](migration-upgrade\TOC.md)
 # [Servicing](servicing\TOC.md)
