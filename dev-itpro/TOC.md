@@ -28,5 +28,5 @@
 # Supply chain development
 ## [Gantt development guide](user-interface\gantt-development-guide.md)
 ## [Create a new transportation management engine](create-new-transportation-management-engine.md)
-# Develop and customize using Visual Studio](dev-tools\TOC.md)
+# Develop and customize using Visual Studio](dev-tools/TOC.md)
 # [Lifecycle Services](lifecycle-services\TOC.md)
