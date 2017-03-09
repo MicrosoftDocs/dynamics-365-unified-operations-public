@@ -77,130 +77,125 @@
 ### [VAT statement](localizations\europe\aut-vat-statement-details-austria.md)
 ### [Packing material fee calculation](financials\localizations\europe\aut-packing-material-fee-calculation.md)
 ## Belgium		
-	### [CODA bank statement	(localizations\europe\bel-coda-bank-statement-import.md)
+### [CODA bank statement](localizations\europe\bel-coda-bank-statement-import.md)
 
 		
 ## The Czech Republic		
-	### [VAT statement]	(localizations\europe\cz-vat-statement-details-for-czech-republic.md)
-  ### [Czech depreciation suspension holidays]	(localizations\europe\cze-depreciation-suspension-holidays.md)
-  ### [Czech fixed assets depreciation]	(localizations\europe\cze-fixed-assets-depreciation.md)
-  ### [Czech half depreciation fixed asset disposal]	(localizations\europe\cze-half-depreciation-fixed-asset-disposal.md)
-
-		
-		
+### [VAT statement](localizations\europe\cz-vat-statement-details-for-czech-republic.md)
+  ### [Czech depreciation suspension holidays](localizations\europe\cze-depreciation-suspension-holidays.md)
+  ### [Czech fixed assets depreciation](localizations\europe\cze-fixed-assets-depreciation.md)
+  ### [Czech half depreciation fixed asset disposal](localizations\europe\cze-half-depreciation-fixed-asset-disposal.md)
+	
 ## Denmark		
-		
-		
-		
+			
 ## Estonia		
-	### [VAT statement]	(localizations\europe\est-vat-statement-details-estonia.md)
-  ### [VAT statement]	(financials\localizations\europe\est-vat-statement-details-for-estonia.md)
+### [VAT statement](localizations\europe\est-vat-statement-details-estonia.md)
+### [VAT statement](financials\localizations\europe\est-vat-statement-details-for-estonia.md)
 
 ## France		
-  ### [Vendor invoice payment holds in the public sector]	(localizations\europe\vendor-invoice-payment-holds-public-sector-france.md)
-  ### [Titres de recette in the public sector]	(localizations\europe\titres-de-recette-public-sector-france.md)
-  ### [Public sector accounting]	(localizations\europe\public-sector-accounting-france.md)
-  ### [Procurement and sourcing in the public sector]	(localizations\europe\procurement-sourcing-public-sector-france.md)
-  ### [Penalties for past due customer payments]	(localizations\europe\apply-penalty-customer-payment-past-due.md)
-  ### [Mandats de paiement in the public sector]	(localizations\europe\mandats-de-paiement-public-sector-france.md)
-  ### [Print lump sum recovery text on a customer invoice]	(localizations\europe\configure-print-lump-sum-recovery-text-customer-invoice.md)
-  ### [RB/SL depreciation]	(localizations\europe\rbsl-depreciation.md)
-  ### [NAF codes and siret numbers]	(localizations\europe\naf-codes-siret-numbers.md)
-  ### [Derogatory depreciation]	(localizations\europe\derogatory-depreciation.md)
-  ### [Chronological invoices vouchers]	(localizations\europe\chronological-invoices-vouchers-france.md)
-  ### [Commitments in the public sector in France]	(localizations\europe\commitments-public-sector-france.md)
-
+  ### [Vendor invoice payment holds in the public sector](localizations\europe\vendor-invoice-payment-holds-public-sector-france.md)
+  ### [Titres de recette in the public sector](localizations\europe\titres-de-recette-public-sector-france.md)
+  ### [Public sector accounting](localizations\europe\public-sector-accounting-france.md)
+  ### [Procurement and sourcing in the public sector](localizations\europe\procurement-sourcing-public-sector-france.md)
+  ### [Penalties for past due customer payments](localizations\europe\apply-penalty-customer-payment-past-due.md)
+  ### [Mandats de paiement in the public sector](localizations\europe\mandats-de-paiement-public-sector-france.md)
+  ### [Print lump sum recovery text on a customer invoice](localizations\europe\configure-print-lump-sum-recovery-text-customer-invoice.md)
+  ### [RB/SL depreciation](localizations\europe\rbsl-depreciation.md)
+  ### [NAF codes and siret numbers](localizations\europe\naf-codes-siret-numbers.md)
+  ### [Derogatory depreciation](localizations\europe\derogatory-depreciation.md)
+  ### [Chronological invoices vouchers](localizations\europe\chronological-invoices-vouchers-france.md)
+  ### [Commitments in the public sector in France](localizations\europe\commitments-public-sector-france.md)
 
 ## Germany		
-	### [German audit file (GDPdU/GoBD)]	(localizations\europe\gdpdu-audit-data-export.md)
-  ### [German journal list report	(localizations\europe\german-journal-list-report.md)
-	### [Print a separate label for credit memos that originate from sales]	(localizations\europe\print-separate-label-credit-memo-originating-sales-deu.md)
-  ### [Additional acquisition depreciation]	(localizations\europe\additional-acquisition-depreciation.md)
+### [German audit file (GDPdU/GoBD)](localizations\europe\gdpdu-audit-data-export.md)
+### [German journal list report(localizations\europe\german-journal-list-report.md)
+### [Print a separate label for credit memos that originate from sales](localizations\europe\print-separate-label-credit-memo-originating-sales-deu.md)
+### [Additional acquisition depreciation](localizations\europe\additional-acquisition-depreciation.md)
 
 ## Hungary		
-	### [Low cost fixed assets]	(localizations\europe\hun-low-cost-fixed-assets.md)
+### [Low cost fixed assets](localizations\europe\hun-low-cost-fixed-assets.md)
 
 ## Ireland		
 		
 ## Italy		
-	### [VAT statements details]	(financials\localizations\europe\vat-statements-details-for-italy.md)
-  ### [Italian black list report]	(localizations\europe\italian-black-list-report.md)
-  ### [Italian sales tax books]	(financials\localizations\europe\fiscal-books-for-italy.md)
-  ### [Italy competence date]	(localizations\europe\ita-competence-date.md)
-  ### [Italy depreciation of fixed assets]	(localizations\europe\ita-depreciation-of-fixed-assets.md)
-  ### [Packing slip date verification on invoices]	(localizations\europe\ita-packing-slip-date-verification-on-invoice.md)
-  ### [Split payment for invoices issued to the Public Administration]	(localizations\europe\split-payment-invoices-issued-public-administration.md)
+### [VAT statements details](financials\localizations\europe\vat-statements-details-for-italy.md)
+  ### [Italian black list report](localizations\europe\italian-black-list-report.md)
+  ### [Italian sales tax books](financials\localizations\europe\fiscal-books-for-italy.md)
+  ### [Italy competence date](localizations\europe\ita-competence-date.md)
+  ### [Italy depreciation of fixed assets](localizations\europe\ita-depreciation-of-fixed-assets.md)
+  ### [Packing slip date verification on invoices](localizations\europe\ita-packing-slip-date-verification-on-invoice.md)
+  ### [Split payment for invoices issued to the Public Administration](localizations\europe\split-payment-invoices-issued-public-administration.md)
 
 ## Latvia		
-	### [VAT statement details]	(localizations\europe\lv-vat-statement-details.md)
-  ### [Latvia fixed assets accounting]	(localizations\europe\lva-fixed-assets-accounting.md)
-  ### [Latvia fixed assets location fields change]	(localizations\europe\lva-fixed-assets-location-fields-change.md)
-  ### [Tax on natural resources report]	(financials\localizations\europe\tax-on-natural-resources-in-latvia.md)
-  ### [Fixed assets location change tracking]	(financials\localizations\europe\lva-fixed-assets-location-fields-change.md)
+### [VAT statement details](localizations\europe\lv-vat-statement-details.md)
+  ### [Latvia fixed assets accounting](localizations\europe\lva-fixed-assets-accounting.md)
+  ### [Latvia fixed assets location fields change](localizations\europe\lva-fixed-assets-location-fields-change.md)
+  ### [Tax on natural resources report](financials\localizations\europe\tax-on-natural-resources-in-latvia.md)
+  ### [Fixed assets location change tracking](financials\localizations\europe\lva-fixed-assets-location-fields-change.md)
 
 ## Lithuania
-  ### [Fixed asset repair statement]	(localizations\europe\ltu-fixed-asset-repair-statement.md)
+  ### [Fixed asset repair statement](localizations\europe\ltu-fixed-asset-repair-statement.md)
 
 ## Netherlands		
 		
 ## Norway		
-	### [Nets import format]	(localizations\europe\nor-nets-import-format.md)
+### [Nets import format](localizations\europe\nor-nets-import-format.md)
 
 ## Poland		
-  ### [Fixed assets disposal]	(financials\localizations\europe\pol-fixed-asset-disposal-functionality-extension-for-poland.md)
-  ### [Fixed asset disposal functionality extension]	(localizations\europe\pol-fixed-asset-disposal-functionality-extension.md)
-	### [Fixed assets depreciation]	(localizations\europe\pol-fixed-assets-depreciation.md)
-  ### [Line discount calculation from the unit price]	(localizations\europe\pol-line-discount-calculation-from-unit-price.md)
-  ### [Turnover balances statement]	(localizations\europe\turnover-balances-statement.md)
-  ### [Duplicate sales invoice numbering]	(localizations\europe\pol-sales-invoice-duplicates-numbering.md)
-  ### [Correction notes]	(localizations\europe\pol-correction-notes.md)
+  ### [Fixed assets disposal](financials\localizations\europe\pol-fixed-asset-disposal-functionality-extension-for-poland.md)
+  ### [Fixed asset disposal functionality extension](localizations\europe\pol-fixed-asset-disposal-functionality-extension.md)
+	### [Fixed assets depreciation](localizations\europe\pol-fixed-assets-depreciation.md)
+  ### [Line discount calculation from the unit price](localizations\europe\pol-line-discount-calculation-from-unit-price.md)
+  ### [Turnover balances statement](localizations\europe\turnover-balances-statement.md)
+  ### [Duplicate sales invoice numbering](localizations\europe\pol-sales-invoice-duplicates-numbering.md)
+  ### [Correction notes](localizations\europe\pol-correction-notes.md)
 
 ## Spain		
-	### [Spanish bill of exchange options]	(localizations\europe\esp-spanish-bill-of-exchange-options.md)
-  ### [Spanish promissory note options]	(localizations\europe\esp-spanish-promissory-note-options.md)
-  ### [Special entries and opening sheets]	(localizations\europe\opening-sheets-spain.md)
-  ### [Sales and purchase cycles]	(localizations\europe\esp-sales-purchase-cycle.md)
-  ### [Fixed asset group revaluation]	(localizations\europe\esp-fixed-asset-group-revaluation.md)
-  ### [Fiscal data invoice account]	(localizations\europe\esp-fiscal-data-invoice-account.md)
-  ### [One time customers]	(localizations\europe\esp-no-one-time-customer-for-project-contracts.md)
-  ### [Cash discount is applied in the invoice parameter]	(localizations\europe\cash-discount-applied-invoice.md)
+### [Spanish bill of exchange options](localizations\europe\esp-spanish-bill-of-exchange-options.md)
+  ### [Spanish promissory note options](localizations\europe\esp-spanish-promissory-note-options.md)
+  ### [Special entries and opening sheets](localizations\europe\opening-sheets-spain.md)
+  ### [Sales and purchase cycles](localizations\europe\esp-sales-purchase-cycle.md)
+  ### [Fixed asset group revaluation](localizations\europe\esp-fixed-asset-group-revaluation.md)
+  ### [Fiscal data invoice account](localizations\europe\esp-fiscal-data-invoice-account.md)
+  ### [One time customers](localizations\europe\esp-no-one-time-customer-for-project-contracts.md)
+  ### [Cash discount is applied in the invoice parameter](localizations\europe\cash-discount-applied-invoice.md)
 
 
 ## Sweden		
-		### [Import payment formats for Sweden]	(localizations\europe\sweden-payment-formats-import.md)
+### [Import payment formats for Sweden](localizations\europe\sweden-payment-formats-import.md)
 
 ## Switzerland		
-	### [Swiss ESR customer payments import]	(localizations\europe\che-esr-customer-payments-import.md)
+### [Swiss ESR customer payments import](localizations\europe\che-esr-customer-payments-import.md)
 
 ## United Kingdom	
-  ### [Construction Industry Scheme]	(localizations\europe\construction-industry-scheme.md)
+### [Construction Industry Scheme](localizations\europe\construction-industry-scheme.md)
 
 
 # Middle East and Africa
-  ## [Zakat reporting for Saudi Arabia	(localizations\middle-east-africa\sau-zakat-reporting.md)
+ ## [Zakat reporting for Saudi Arabia](localizations\middle-east-africa\sau-zakat-reporting.md)
 
 # North America
   ## Canada
   ## United States		
-    ### [Tax codes, tax groups, and posting definitions FAQ]	(localizations\north-america\tax-codes-tax-groups-posting-definitions.md)
-    ### [Set up taxes, tax regions, tax codes, and tax groups]	(localizations\north-america\tax-information-tasks.md)
-    ### [Year-end 1099 reporting]	(localizations\north-america\year-end-1099-reporting.md)
+    ### [Tax codes, tax groups, and posting definitions FAQ](localizations\north-america\tax-codes-tax-groups-posting-definitions.md)
+    ### [Set up taxes, tax regions, tax codes, and tax groups](localizations\north-america\tax-information-tasks.md)
+    ### [Year-end 1099 reporting](localizations\north-america\year-end-1099-reporting.md)
 
 # South America
   ## Brazil
-    ### [Brazilian taxes]	(localizations\latin-america\bra-about-calculation-of-taxes.md)
-    ### [Journals generated during the electronic payment return process]	(localizations\latin-america\bra-examples-journals-generated-during-the-electronic-payment-return-process.md)
-    ### [NF-e process overview]	(localizations\latin-america\bra-about-the-nf-e-process.md)
-    ### [Parameters for legal entities in Brazil]	(localizations\latin-america\brazilian-legal-entity-parameters.md)
-    ### [Purchase complementary fiscal documents]	(localizations\latin-america\bra-about-purchase-complementary-fiscal-documents.md)
-    ### [Referenced fiscal documents]	(localizations\latin-america\referenced-fiscal-documents.md)
-    ### [Sales complementary fiscal documents]	(localizations\latin-america\bra-about-sales-complementary-fiscal-documents.md)
-    ### [Service electronic fiscal document]	(localizations\latin-america\service-electronic-fiscal-document.md)
-    ### [Tax attributes]	(localizations\latin-america\bra-tax-attributes.md)
-    ### [Tax payments in Brazil]	(localizations\latin-america\tax-payments.md)
-    ### [Fiscal books]	(localizations\latin-america\bra-about-fiscal-books.md)
-    ### [Fiscal document text placeholders]	(localizations\latin-america\bra-about-fiscal-document-text-placeholders.md)
-    ### [Fiscal documents and fiscal document framework]	(localizations\latin-america\bra-about-fiscal-documents-and-the-fiscal-document-framework.md)
-    ### [ICMS tax fiscal documents]	(localizations\latin-america\bra-about-icms-tax-fiscal-documents.md)
-    ### [Import and verify NF-e XML documents and DANFE files]	(localizations\latin-america\bra-import-and-verify-nf-e-xml-documents-and-danfe-that-you-receive-in-emails.md)
-    ### [Import fiscal documents]	(localizations\latin-america\bra-about-import-fiscal-documents.md)
+    ### [Brazilian taxes](localizations\latin-america\bra-about-calculation-of-taxes.md)
+    ### [Journals generated during the electronic payment return process](localizations\latin-america\bra-examples-journals-generated-during-the-electronic-payment-return-process.md)
+    ### [NF-e process overview](localizations\latin-america\bra-about-the-nf-e-process.md)
+    ### [Parameters for legal entities in Brazil](localizations\latin-america\brazilian-legal-entity-parameters.md)
+    ### [Purchase complementary fiscal documents](localizations\latin-america\bra-about-purchase-complementary-fiscal-documents.md)
+    ### [Referenced fiscal documents](localizations\latin-america\referenced-fiscal-documents.md)
+    ### [Sales complementary fiscal documents](localizations\latin-america\bra-about-sales-complementary-fiscal-documents.md)
+    ### [Service electronic fiscal document](localizations\latin-america\service-electronic-fiscal-document.md)
+    ### [Tax attributes](localizations\latin-america\bra-tax-attributes.md)
+    ### [Tax payments in Brazil](localizations\latin-america\tax-payments.md)
+    ### [Fiscal books](localizations\latin-america\bra-about-fiscal-books.md)
+    ### [Fiscal document text placeholders](localizations\latin-america\bra-about-fiscal-document-text-placeholders.md)
+    ### [Fiscal documents and fiscal document framework](localizations\latin-america\bra-about-fiscal-documents-and-the-fiscal-document-framework.md)
+    ### [ICMS tax fiscal documents](localizations\latin-america\bra-about-icms-tax-fiscal-documents.md)
+    ### [Import and verify NF-e XML documents and DANFE files](localizations\latin-america\bra-import-and-verify-nf-e-xml-documents-and-danfe-that-you-receive-in-emails.md)
+    ### [Import fiscal documents](localizations\latin-america\bra-about-import-fiscal-documents.md)
