@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Installation Guide for the Intelligent Data Management Framework (AX 2012)
+title: Installation guide 
 description: This topic describes the system requirements and steps to install the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF). 
 author: kfend
 manager: AnnBe
