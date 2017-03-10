@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Usage profiler (AX 2012)
+title: Usage profiler 
 description: 
 author: kfend
 manager: AnnBe
