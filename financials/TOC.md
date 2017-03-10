@@ -37,7 +37,7 @@
 ## [Sales tax payments and rounding rules](general-ledger\round-sales-tax-payments.md)
 ## [Sales tax calculation methods in the Origin field](general-ledger\sales-tax-calculation-methods-origin-field.md)
 ## [Whole amount and Interval calculation options for sales tax codes](general-ledger\whole-amount-interval-options-sales-tax-codes.md)
-##Compliance
+## Compliance
 ## [Audit policy rules](general-ledger\audit-policy-rules.md)
 ## [Audit policy violations and cases](general-ledger\audit-policy-violations-cases.md)
 # [Accounts payable](accounts-payable\accounts-payable.md)
@@ -55,7 +55,7 @@
 ## [Foreign currency revaluation for Accounts payable and Accounts receivable](accounts-payable\foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 ## [Mobile invoice approvals](accounts-payable\dynamics-365-for-operations-mobile-invoice-approvals.md)
 ## [Vendor collaboration invoicing workspace](accounts-payable\vendor-portal-invoicing-workspace.md)
-##Payments and settlements
+## Payments and settlements
 ## [Centralized payments for Accounts payable](accounts-payable\centralized-payments-accounts-payable.md)
 ## [Configure settlement](accounts-payable\configure-settlement.md)
 ## [Create vendor payments by using a payment proposal](accounts-payable\create-vendor-payments-payment-proposal.md)
@@ -84,7 +84,7 @@
 ## [Create a customer invoice](accounts-receivable\configure-customer-invoices.md)
 ## [Set up bills of exchange](accounts-receivable\set-up-bills-exchange.md)
 ## [Close Accounts receivable](accounts-receivable\close-accounts-receivable.md)
-##Payments and settlements
+## Payments and settlements
 ## [Use a customer payment to settle multiple invoices that span multiple discount periods](accounts-receivable\customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 ## [Centralized payments for Accounts receivable](accounts-receivable\centralized-payments-accounts-receivable.md)
 ## [Settle partial customer payment or final payment before_discount](accounts-receivable\settle-partial-customer-payment-or-final-payment-before_discount.md)
@@ -106,7 +106,7 @@
 ## [Handling cash discounts for overpayments](cash-bank-management\cash-discount-handling-overpayments.md)
 ## [Set up centralized payments](cash-bank-managment\set-up-centralized-payments.md)
 ## [Automatic settlement and prioritization](cash-bank-management\automatic-settlement-prioritization.md)
-##Advanced bank reconciliation
+## Advanced bank reconciliation
 ## [Advanced bank reconciliation overview](cash-bank-management\configure-advanced-bank-reconciliation.md)
 ## [Set up the advanced bank reconciliation import process](cash-bank-management\set-up-advanced-bank-reconciliation-import-process.md)
 ## [Set up bank reconciliation matching rules](cash-bank-management\set-up-bank-reconciliation-matching-rules.md)
@@ -127,10 +127,10 @@
 ## [Fixed asset disposal posting accounts](fixed-assets\fixed-asset-disposal-posting-accounts.md)
 ## [Fixed asset mass update](fixed-assets\fixed-asset-mass-update.md)
 ## [Acquire assets through procurement](fixed-assets\acquire-assets-procurement.md)
-##Set up and integration
+## Set up and integration
 ## [Set up fixed assets](fixed-assets\set-up-fixed-assets.md)
 ## [Fixed assets integration](fixed-assets\fixed-asset-integration.md)
-##Depreciation methods
+## Depreciation methods
 ## [125 percent reducing balance depreciation](fixed-assets\125-percent-reducing-balance-depreciation.md)
 ## [150 percent reducing balance depreciation](fixed-assets\150-percent-reducing-balance-depreciation.md)
 ## [175 percent reducing balance depreciation](fixed-assets\175-percent-reducing-balance-depreciation.md)
@@ -160,7 +160,7 @@
 ## [Budget planning](budgeting\budget-plan.md)
 ## [Budget planning data allocation](budgeting\budget-planning-data-allocation.md)
 ## [Budget planning integration with other modules](budgeting\budget-planning-integration-other-modules.md)
-##Reporting
+## Reporting
 ## [General ledger and Financial reporting home page](general-ledger\general-ledger.md)
 ## [Balance sheet financial reports](general-ledger\balance-sheet-financial-reports.md)
 ## [Financial reporting](general-ledger\financial-reporting-getting-started.md)
@@ -168,12 +168,18 @@
 ## [Income statement financial report](general-ledger\income-statement-financial-report.md)
 ## [Trial balance financial reports](general-ledger\trial-balance-financial-reports.md)
 ## [View financial reports](general-ledger\view-financial-reports.md)
+
 ## Cost accounting
-## [Cost accounting home page](cost-accounting\cost-accounting-home-page.md)
-## [Cost element dimensions](cost-accounting\cost-elements.md)
-## [Cost object dimensions](cost-accounting\cost-objects.md)
-## [Map different cost element dimension members to a common set of dimension members](cost-accounting\map-cost-elements-dimension-members.md)
-##Public Sector
+### [Cost accounting home page](cost-accounting\cost-accounting-home-page.md)
+### [Terms](cost-accounting\terms-cost-accounting.md)
+### [Cost element dimensions](cost-accounting\cost-elements.md)
+### [Cost object dimensions](cost-accounting\cost-objects.md)
+### [Map cost element dimension members to a common set of dimension members](cost-accounting\map-cost-elements-dimension-members.md)
+### [Cost control mobile workspace](cost-accounting\cost-controlling-mobile-workspace.md)
+### [Cost accounting analysis content pack](dev-itpro/analytics-bi-reporting/cost-accounting-analysis-content-pack.md)
+### [Set up security for cost accounting content pack](dev-itpro/analytics-bi-reporting/setup-security-cost-accounting-content-pack.md)
+
+## Public Sector
 ## [Public sector home page](public-sector\public-sector-functionality.md)
 ## [Plan for public sector functionality](public-sector\plan-public-sector-functionality.md)
 ## [Accounts payable in the public sector](public-sector\accounts-payable-public-sector.md)
