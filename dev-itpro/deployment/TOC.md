@@ -1,4 +1,5 @@
-﻿# Deployment
+# Deployment
+## [Deploy a Microsoft Dynamics 365 for Operations demo environment](deploy-a-demo-environment.md)
 ## [Azure Resource Manager onboarding](arm-onboarding.md)
 ## [Create and apply a deployable package](create-apply-deployable-package.md)
 ## [Apply a deployable package on a Dynamics 365 for Operations system](apply-deployable-package-system.md)
