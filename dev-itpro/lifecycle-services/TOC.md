@@ -4,7 +4,6 @@
 ## [What's new in Lifecycle Services](lifecycle-services\whats-new-lcs.md)
 ## [Known issues](lifecycle-services\known-issues.md)
 ## [Configuration manager](lifecycle-services\configuration-manager-lcs.md)
-## [Copy a configuration](lifecycle-services\copy-configuration-lcs.md)
 ## [Configure execute code upgrade ](lifecycle-services\configure-execute-code-upgrade.md)
 ## [Configure Lifecycle Services security](lifecycle-services\configure-lcs-security.md)
 ## [Create methodology ](lifecycle-services\create-methodology.md)
@@ -26,6 +25,7 @@
 #AX 2012
 ## Deployment
 ### [Cloud-hosted environments (AX 2012)](deployment\cloud-hosted-environments-lcs.md)
+## [Copy a configuration](lifecycle-services\copy-configuration-lcs.md)
 ### [Plan your Dynamics AX 2012 R3 deployment on Azure](lifecycle-services\ax-2012\plan-2012-r3-deployment-azure.md)
 ### [Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services](lifecycle-services\ax-2012\deploy-2012-r3-azure-lcs.md)
 ### [Deploy a Dynamics AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure](lifecycle-services\ax-2012\deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md)
