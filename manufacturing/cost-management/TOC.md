@@ -1,13 +1,13 @@
 # Cost management
 ## [Cost management home page](cost-management\cost-management.md)
-## Predetermined costs
-### [Costing sheets](cost-management\costing-sheets.md)
-### [Costing versions](cost-management\costing-versions.md)
-### [Simulate cost changes by using a costing version for planned costs](cost-management\simulate-cost-changes-costing-version-planned-costs.md)
+## Predetermined cost
+### [Costing sheet](cost-management\costing-sheets.md)
+### [Costing version](cost-management\costing-versions.md)
+### [Simulate cost change by using a costing version for planned cost](cost-management\simulate-cost-changes-costing-version-planned-costs.md)
 ## Inventory costing
-### [Cost objects](cost-management\cost-object.md)
-### [Cost entries](cost-management\cost-entries.md)
-### [Cost groups](cost-management\cost-groups.md)
+### [Cost object](cost-management\cost-object.md)
+### [Cost entry](cost-management\cost-entries.md)
+### [Cost group](cost-management\cost-groups.md)
 ### [FIFO with physical value and marking](cost-management\fifo-physical-value-marking.md)
 ### [LIFO Date with physical value and marking](cost-management\lifo-date-physical-value-marking.md)
 ### [LIFO with physical value and marking](cost-management\lifo-physical-value-marking.md)
@@ -15,222 +15,29 @@
 ### [Weighted average date](cost-management\weighted-average-date.md)
 ### [Weighted average with physical value and marking](cost-management\weighted-average-physical-value-marking.md)
 ### [Running average cost price](cost-management\running-average-cost-price.md)
-### [Adjust on-hand inventory cost values](cost-management\adjust-hand-inventory-cost-values.md)
+### [Adjust on-hand inventory cost value](cost-management\adjust-hand-inventory-cost-values.md)
 ### [Include physical value](cost-management\include-physical-value.md)
-### [Inventory object values](cost-management\physical-quantity.md)
+### [Inventory object value](cost-management\physical-quantity.md)
 ### [Inventory close](cost-management\inventory-close.md)
-### [Physical and financial updates](cost-management\physical-financial-updates.md)
+### [Physical and financial update](cost-management\physical-financial-updates.md)
 ### [Tracking running average cost per inventory dimension](cost-management\track-running-average-cost-per-inventory-dimension.md)
 ## Manufacturing costing
-### [BOM calculations groups](cost-management\bom-calculation-groups.md)
-### [Cost categories used in production routing](cost-management\cost-categories-used-production-routings.md)
-### [Cost categories used in Production control and Project management accounting](cost-management\cost-categories-used-production-control-project-management-accounting.md)
+### [BOM calculations group](cost-management\bom-calculation-groups.md)
+### [Cost category used in production routing](cost-management\cost-categories-used-production-routings.md)
+### [Cost category used in Production control and Project management accounting](cost-management\cost-categories-used-production-control-project-management-accounting.md)
 ### [Production order cost analysis](cost-management\production-order-cost-analysis.md)
 ### [Production order cost estimation](cost-management\production-order-cost-estimation.md)
 ### [Production posting](cost-management\production-posting.md)
-### [Common sources of production variances](cost-management\common-sources-of-production-variances.md)
-### [Set up products that can be produced or procured](cost-management\manufactured-items-treated-as-purchased-items.md)
+### [Common sources of production variance](cost-management\common-sources-of-production-variances.md)
+### [Set up a product that can be produced or procured](cost-management\manufactured-items-treated-as-purchased-items.md)
 ### [Total cost allocation method](cost-management\methodology-total-cost-allocation.md)
-## Standard costs
+## Standard cost
 ### [Standard cost conversion overview](cost-management\standard-cost-conversion-overview.md)
 ### [Prerequisites for a standard cost conversion](cost-management\prerequisites-standard-cost-conversion.md)
-### [Manage standard cost updates](cost-management\manage-standard-cost-updates.md)
-### [BOM calculations with standard costs](cost-management\information-used-bom-calculations-standard-costs.md)
-### [Update standard costs in a manufacturing environment](cost-management\update-standard-costs-manufacturing-environment.md)
-### [Update standard costs for a new manufactured item](cost-management\update-standard-costs-new-manufactured-item.md)
-### [Update standard costs in a non-manufacturing environment](cost-management\update-standard-costs-non-manufacturing-environment.md)
-## Data entities
-### [Data entities: Costing](cost-management\data-entities-costing.md)
-# Inventory management
-## [Inventory management home page](warehouse-management\inventory-management.md)
-## Create warehouse layout
-## Indbound process
-## Outbound process
-## Set up inventory tracking
-### [Cycle counting](warehouse-management\cycle-counting.md)
-### [Inventory blocking](warehouse-management\inventory-blocking.md)
-### [Inventory journals](warehouse-management\inventory-journals.md)
-### [Inventory locations](warehouse-management\inventory-locations.md)
-### [Inventory statuses](warehouse-management\inventory-statuses.md)
-### [Reserve inventory quantity](inventory-management\reserve-inventory-quantities.md)
-### [Reserve the same batch for a sales order](inventory-management\reserve-same-batch-sales-order.md)
-## Consignment inventory
-### [Consignment](inventory-management\consignment.md)
-### [Set up consignment](inventory-management\set-up-consignment.md)
-## Quality management
-### [Quarantine order](inventory-management\quarantine-orders.md)
-### [Quality management process](inventory-management\quality-management-processes.md)
-### [Nonconformance management](inventory-management\enable-nonconformance-management.md)
-## Trace item and batch
-### [Trace item and raw material](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
-### [Merge inventory batch](inventory-management\merge-inventory-batches.md)
-# Master planning
-## Create demand forecast
-### [Demand forecasting home page](master-planning\demand-forecasting.md)
-### [Demand forecast overview](master-planning\introduction-demand-forecasting.md)
-### [Set up demand forecast](master-planning\demand-forecasting-setup.md)
-### [Generate a statistical baseline forecast](master-planning\generate-statistical-baseline-forecast.md)
-### [Make manual adjustment to the baseline forecast](master-planning\manual-adjustments-baseline-forecast.md)
-### [Authorize an adjusted forecast](master-planning\authorize-adjusted-forecast.md)
-### [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
-### [Remove outlier from historical transaction data](master-planning\remove-historical-outliers-calculating-demand-forecast.md)
-### [Reduction key](master-planning\reduction-keys.md)
-## Master plan
-### [Coverage settings](master-planning\coverage-settings.md)
-### [Delays](master-planning\delays.md)
-### [Master plans](master-planning\master-plans.md)
-### [Master plan and multisite functionality](master-planning\master-plan-multisite-functionality.md)
-#### [Master plan for site coverage, mandatory warehouse](master-planning\master-plan-site-coverage-warehouse-mandatory.md)
-#### [Master plan for site coverage, warehouse not mandatory](master-planning\master-plan-site-coverage-warehouse-not-mandatory.md)
-#### [Master plan for site and warehouse coverage, warehouse mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-#### [Master plan for site and warehouse coverage, warehouse not mandatory](master-planning\master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-#### [Determine the BOM version](master-planning\master-plan-bom-version-determined.md)
-### [Explosion of a BOM version](master-planning\master-plan-explosion-bom-version.md)
-### [Maintain planned order](master-planning\maintain-planned-orders.md)
-### [Trace explosion](master-planning\trace-explosion.md)
-# Procurement and sourcing
-## Overview
-### [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
-### [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
-### [Procurement and sourcing workflows](procurement-sourcing\procurement-sourcing-workflows.md)
-### [Purchasing policies](procurement-sourcing\purchase-policies.md)
-## Procurement product management
-### [Procurement catalogs](procurement-sourcing\procurement-catalogs.md)
-## [Purchase requisitions](procurement-sourcing\purchase-requisitions-overview.md)
-### [Purchase requisition workflow](procurement-sourcing\purchase-requisitions-workflow.md) 
-## Request for quotation
-### [Request for quotations (RFQs)](procurement-sourcing\request-quotations.md)
-## Purchase orders
-### [Purchase order overview](procurement-sourcing\purchase-order-overview.md)
-### [Create purchase orders](procurement-sourcing\purchase-order-creation.md)
-### [Approve and confirm purchase orders](procurement-sourcing\purchase-order-approval-confirmation.md)
-## Vendor management and collaboration
-### [Set up and maintain vendor collaboration](procurement-sourcing\set-up-maintain-vendor-collaboration.md)
-### [Manage vendor collaboration users](procurement-sourcing\manage-vendor-collaboration-users.md)
-### [Set up vendor accounts](procurement-sourcing\set-up-vendor-accounts.md)
-### [Vendor collaboration with external vendors](procurement-sourcing\vendor-collaboration-work-external-vendors.md)
-### [Vendor collaboration with customers](procurement-sourcing\vendor-collaboration-work-customers-dynamics-365-operations.md)
-### [Collaborate with vendors by using the Vendor portal](procurement-sourcing\collaborate-vendors-vendor-portal.md)
-### [Vendor collaboration mobile workspace](production-control\vendor-collaboration-mobile-workspace.md)
-### [Vendor portal user security](procurement-sourcing\configure-security-vendor-portal-users.md)
-## Prices and discounts
-## Product receipts and invoicing
-### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
-# Product information management
-## Product information
-### [BOM and formula](production-control\bill-of-material-bom.md)
-### [BOM designer functionality](production-control\bom-designer-functionality.md)
-### [Product dimension](product-information-management\product-dimensions.md)
-### [Product number nomenclature](product-information-management\product-variant-identification-nomenclature.md)
-### [Product-related translation FAQ](product-information-management\translations-product-related-information.md)
-### [Register serial number in the sales process](product-information-management\register-serial-numbers-sales-process.md)
-### [Search for product during order entry](product-information-management\search-products-product-variants.md)
-## Create product configuration
-### [Build a product configuration model](product-information-management\build-product-configuration-model.md)
-### [Calculation for product configuration model FAQ](product-information-management\calculate-product-configuration-models.md)
-### [Configuration rule](product-information-management\configuration-rules.md)
-### [Dimension-based configuration](product-information-management\dimension-based-product-configuration.md)
-### [Expression constraint and table constraint](production-control\expression-constraints-table-constraints-product-configuration-models.md)
-### [Reuse product configuration](product-information-management\reuse-product-configurations.md)
-### [Set up a configuration model](product-information-management\set-up-maintain-product-configuration-model.md)
-### [System-defined and user-defined table constraint](product-information-management\system-defined-user-defined-table-constraints.md)
-# Production control
-## Production  
-### [Production process](cost-management\production-process-overview.md)
-### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control\mixed-mode-plan.md)
-### [BOMs and formulas](production-control\bill-of-material-bom.md)
-### [BOM designer functionality](production-control\bom-designer-functionality.md)
-### [Routes and operations](production-control\routes-and-operations.md)
-### [Production setup requirements](production-control\production-set-up-requirements.md)
-### [Activity-based subcontracting](production-control\activity-based-subcontracting.md)
-### [Manage subcontracting work in production](production-control\manage-subcontracting-work-in-production.md)
-### [Batch attributes](production-control\batch-attributes.md)
-### [Consolidated batch orders](production-control\consolidated-batch-orders.md)
-## Production orders
-### [Create production orders](production-control\create-production-orders.md)
-### [Reverse the production order status](production-control\reverse-production-order-status.md)
-### [Default order settings for dimensions and product variants](production-control\default-order-settings.md)
-### [Release production orders](production-control\release-production-orders.md)
-### [Report BOMs as finished](production-control\report-boms-as-finished.md)
-### [Report production orders as finished](production-control\report-production-orders-as-finished.md)
-## Lean production 
-### [Model a lean organization](production-control\lean-manufacturing-modeling-lean-organization.md)
-### [Lean manufacturing overview](production-control\lean-manufacturing-overview.md)
-### [Kanban transfer board support for barcode scanners](production-control\kanban-transfer-board-support-barcode-scanner.md) 
-### [Kanban job scheduling for lean manufacturing](production-control\lean-manufacturing-kanban-job-scheduling.md)
-## Schedule operations and jobs
-### [Operations scheduling options](production-control\operation-scheduling-options.md)
-### [Operations scheduling](production-control\operations-scheduling.md)
-### [Allocate time to jobs in a job bundle](production-control\allocate-time-jobs-job-bundle.md)
-### [Job scheduling](production-control\job-scheduling.md)
-### [Material substitution in manufacturing](production-control\substitute-items-bom-lines.md)
-## Resources
-### [Operations resources](production-control\operations-resources.md)
-### [Resource capabilities](production-control\resource-capabilities.md)
-### [Time and attendance registration](production-control\time-attendance-registrations.md)
-## Manufacturing execution
-### [Production feedback](production-control\production-feedback.md)
-### [Production order defaults in manufacturing execution](production-control\production-order-defaults-manufacturing-execution.md)
-### [Calculate material consumption](production-control\consumption.md)
-### [Production posting](production-control\production-posting.md)
-### [Registration for manufacturing execution](production-control\registration-manufacturing-execution.md)
-# Sales and marketing
-## Sales orders
-### [Sales home page](sales-marketing\sales.md)
-### [Sales and marketing](sales-marketing\overview-sales-marketing.md)
-### [Order promising](sales-marketing\delivery-dates-available-promise-calculations.md)
-### [Order entry deadlines](sales-marketing\order-entry-deadlines.md)
-### [Direct deliveries](sales-marketing\direct-deliveries.md)
-### [Delivery schedules](sales-marketing\delivery-schedules.md)
-## Sales agreements
-### [Sales agreements](sales-marketing\sales-agreements.md)
-## Sales quotations
-### [Price simulation](sales-marketing\price-simulation.md)
-## Returns
-### [Sales returns](warehouse-management\sales-returns.md)
-# Transportation management
-## [Transportation management home page](warehouse-management\transportation-management.md)
-## [Transportation management engines](warehouse-management\transportation-management-engines.md)
-## [Plan freight transportation routes](transportation-management\plan-freight-transportation-routes-multiple-stops.md)
-## [Create a bill of lading](transportation-management\create-bill-of-lading.md)
-## [Plan loads using hub consolidation](transportation-management\plan-loads-hub-consolidation.md)
-## [Reconcile freight](transportation-management\reconcile-freight-transportation-management.md)
-# Warehouse management
-## [Warehouse management home page](warehouse-management\warehouse-management.md)
-## Configuration 
-### [Warehouse layout configuration](warehouse-management\warehouse-configuration.md)
-### [Control work by using work templates and location directives](warehouse-management\control-warehouse-location-directives.md)
-### [Unit of measure and stocking policies](warehouse-management\unit-measure-stocking-policies.md)
-### [Warehouse work policies](warehouse-management\warehouse-work-policies.md)
-### [Manage warehouse workers](warehouse-management\manage-warehouse-workers.md)
-### [Enable quality management](warehouse-management\enable-quality-management.md)
-## Picking and packing
-### [Packing materials and fees](warehouse-management\pack-materials-packing-material-fees.md)
-## Inventory counting
-### [Cycle counting](warehouse-management\cycle-counting.md)
-### [Block inventory](warehouse-management\inventory-blocking.md)
-### [Inventory journal](warehouse-management\inventory-journals.md)
-### [Inventory location](warehouse-management\inventory-locations.md)
-### [Inventory status](warehouse-management\inventory-statuses.md)
-### [Inventory tag counting](warehouse-management\inventory-tag-counting.md)
-## Containerization 
-## Replenishment
-### [Replenishment](warehouse-management\replenishment.md)
-## Mobile devices
-### [Set up mobile devices for warehouse work](warehouse-management\configure-mobile-devices-warehouse_work.md)
-### [Warehouse Mobile Devices Portal (WMDP) for Dynamics 365 for Operations](warehouse-management\warehouse-mobile-devices-portal.md)
-### [Warehouse mobile device display settings](warehouse-management\change-warehouse-mobile-device-displays.md)
-### [Configure field names in warehousing app](warehouse-management\configure-app-field-names-priorities-warehouse.md)
-### [Supply chain management home page](cost-management\supply-chain-management-home-page.md)
-### [Cost controlling mobile workspace](production-control\cost-controlling-mobile-workspace.md)
-### [Inventory on hand mobile workspace](production-control\inventory-on-hand-mobile-workspace.md)
-### [Discrete manufacturing home page](production-control\discrete-manufacturing.md)
-### [Process manufacturing home page](production-control\process-manufacturing.md)
-### [Production control home page](production-control-home-page.md)
-### [Lean manufacturing home page](production-control\lean-manufacturing.md)
-### [Master planning home page](production-control\master-plan.md)
-### [Sales orders mobile workspace](production-control\sales-orders-mobile-workspace.md)
-### [Cost accounting terminology](production-control\terms-cost-accounting.md)
-## Data entities
-### [Data entities: Costing](data-entities-costing.md)
-
+### [Manage standard cost update](cost-management\manage-standard-cost-updates.md)
+### [BOM calculations with standard cost](cost-management\information-used-bom-calculations-standard-costs.md)
+### [Update standard cost in a manufacturing environment](cost-management\update-standard-costs-manufacturing-environment.md)
+### [Update standard cost for a new manufactured item](cost-management\update-standard-costs-new-manufactured-item.md)
+### [Update standard cost in a non-manufacturing environment](cost-management\update-standard-costs-non-manufacturing-environment.md)
+## Data entity
+### [Data entity: Costing](cost-management\data-entities-costing.md)
