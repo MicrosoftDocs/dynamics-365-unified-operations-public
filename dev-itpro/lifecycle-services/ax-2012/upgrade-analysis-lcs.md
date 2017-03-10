@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Upgrade analysis (AX 2012)
+title: Upgrade analysis 
 description: This article explains how to use Upgrade analysis in Lifecycle Services (LCS). Upgrade analysis helps you plan full-version, minor-version, and in-place upgrades to Microsoft Dynamics AX 2012.
 author: RobinARH
 manager: AnnBe
