@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Intelligent Data Management Framework purge and archive objects (AX 2012)
+title: Purge and archive objects (AX 2012)
 description: 
 author: kfend
 manager: AnnBe
