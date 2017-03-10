@@ -1,12 +1,13 @@
-# [Overview of Dynamics 365 for Operations](get-started\TOC.md)
-# [Deployment](deployment\TOC.md)
-# [Upgrade and migration](migration-upgrade\TOC.md)
-# [Servicing](servicing\TOC.md)
+# [Overview of Dynamics 365 for Operations](get-started\getting-started-home-page.md)
+# [Deployment](deployment\deploy-demo-environment.md)
+# [Upgrade and migration](migration-upgrade\upgrade-home-page.md)
+# [Servicing](servicing\continuous-delivery-home-page.md)
 # Security
 ## [Role-based security](system-administration\role-based-security.md)
 ## [Security architecture](system-administration\security-architecture.md)
 # Environment management
-# [Get support for Dynamics 365 for Operations and Dynamics Lifecycle Services](lcs-support.md)
+# Support
+## [Get support for Dynamics 365 for Operations and Dynamics Lifecycle Services](lcs-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services\submit-request-dynamics-service-engineering-team.md)
 # [Database management](database-management\TOC.md)
 # [System configuration](system-administration\TOC.md)
