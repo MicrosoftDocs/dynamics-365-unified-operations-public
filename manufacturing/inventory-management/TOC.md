@@ -1,3 +1,4 @@
+# Inventory management
 ## [Inventory management home page](warehouse-management\inventory-management.md)
 ## Create warehouse layout
 ## Indbound process
