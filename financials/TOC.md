@@ -176,8 +176,7 @@
 ## [Cost object dimensions](cost-accounting\cost-objects.md)
 ## [Map cost element dimension members to a common set of dimension members](cost-accounting\map-cost-elements-dimension-members.md)
 ## [Cost control mobile workspace](cost-accounting\cost-controlling-mobile-workspace.md)
-## [Cost accounting analysis content pack](dev-itpro/analytics-bi-reporting/cost-accounting-analysis-content-pack.md)
-## [Set up security for cost accounting content pack](dev-itpro/analytics-bi-reporting/setup-security-cost-accounting-content-pack.md)
+
 
 ## Public Sector
 ## [Public sector home page](public-sector\public-sector-functionality.md)
