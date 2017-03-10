@@ -3,7 +3,7 @@
 #[EU Sales list reporting](eu-sales-list.md)						
 #[SEPA Direct debit overview](sepa-direct-debit-overview.md)						
 ##[Set up SEPA direct debit mandate](set-up-sepa-direct-debit-mandate.md)						
-#[SEPA Credit transfer overview](sepa-credit-transfer-overview.md)						
+#[SEPA Credit transfer overview](sepa-credit-transfer.md)						
 #[Intrastat](intrastat.md)						
 #[VAT reporting](eu-vat-reporting.md)						
 ##[VAT register transactions](eeu-vat-register-transactions.md)						
