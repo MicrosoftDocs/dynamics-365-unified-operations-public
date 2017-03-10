@@ -1,10 +1,9 @@
-# Getting started
-## [Developer home page](developer-home-page.md)
-## [Application stack and server architecture](application-stack-server-architecture.md)
-## [Get an evaluation copy](get-evaluation-copy.md)
-## [Sign up for a subscription](sign-up-preview-subscription.md)
-## [Access Dynamics 365 for Operations instances](access-instances.md)
-## [Development system requirements](development-system-requirements.md)
+# [Developer home page](developer-home-page.md)
+# [Application stack and server architecture](application-stack-server-architecture.md)
+# [Get an evaluation copy](get-evaluation-copy.md)
+# [Sign up for a subscription](sign-up-preview-subscription.md)
+# [Access Dynamics 365 for Operations instances](access-instances.md)
+# [Development system requirements](development-system-requirements.md)
 # Fleet Management sample application
 ## [Fleet Management sample application](fleet-management-sample.md)
 ## [Fleet Management sample application overview](introduction-fleet-management-sample.md)
