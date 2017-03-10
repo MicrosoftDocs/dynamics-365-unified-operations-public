@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: System diagnostics (AX 2012)
+title: System diagnostics 
 description: 
 author: kfend
 manager: AnnBe
