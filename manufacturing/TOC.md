@@ -118,8 +118,8 @@
 ### [Order entry deadlines](sales-marketing\order-entry-deadlines.md)
 ### [Direct deliveries](sales-marketing\direct-deliveries.md)
 ### [Delivery schedules](sales-marketing\delivery-schedules.md)
-### [Serial numbers in the sales process](registering-serial-numbers-in-the-sales-process.md)
-### [Reservation from same batch](reserving-the-same-batch-for-a-sales-order.md)
+### [Serial numbers in the sales process](register-serial-numbers-sales-process.md)
+### [Reservation from same batch](reserve-same-batch-sales-order.md)
 ## Sales agreements
 ### [Sales agreements](sales-marketing\sales-agreements.md)
 ## Sales quotations
