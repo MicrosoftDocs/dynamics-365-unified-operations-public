@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Deploy a Microsoft Dynamics 365 for Operations demo environment
