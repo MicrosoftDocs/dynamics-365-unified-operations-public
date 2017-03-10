@@ -1,7 +1,7 @@
-# [Overview of Dynamics 365 for Operations](get-started\getting-started-home-page.md)
-# [Deployment](deployment\deploy-demo-environment.md)
-# [Upgrade and migration](migration-upgrade\upgrade-home-page.md)
-# [Servicing](servicing\continuous-delivery-home-page.md)
+# [Overview of Dynamics 365 for Operations](get-started\toc.md)
+# [Deployment](deployment\toc.md)
+# [Upgrade and migration](migration-upgrade\toc.md)
+# [Servicing](servicing\toc.md)
 # Security
 ## [Role-based security](system-administration\role-based-security.md)
 ## [Security architecture](system-administration\security-architecture.md)
