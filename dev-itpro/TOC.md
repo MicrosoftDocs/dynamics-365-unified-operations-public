@@ -1,10 +1,10 @@
-# [Overview of Dynamics 365 for Operations](get-started/getting-started-home-page.md)
-# [Deployment](deployment/deploy-demo-environment.md)
-# [Upgrade and migration](migration-upgrade/upgrade-home-page.md)
-# [Servicing](servicing/continuous-delivery-home-page.md)
+# [Overview of Dynamics 365 for Operations](get-started\getting-started-home-page.md)
+# [Deployment](deployment\deploy-demo-environment.md)
+# [Upgrade and migration](migration-upgrade\upgrade-home-page.md)
+# [Servicing](servicing\continuous-delivery-home-page.md)
 # Security
-## [Role-based security](system-administration/role-based-security.md)
-## [Security architecture](system-administration/security-architecture.md)
+## [Role-based security](system-administration\role-based-security.md)
+## [Security architecture](system-administration\security-architecture.md)
 # Support
 ## [Get support for Dynamics 365 for Operations and Dynamics Lifecycle Services](lcs-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services\submit-request-dynamics-service-engineering-team.md)
