@@ -25,7 +25,7 @@ ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cwesene
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

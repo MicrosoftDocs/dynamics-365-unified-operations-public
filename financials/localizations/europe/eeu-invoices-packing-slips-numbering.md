@@ -18,14 +18,14 @@ ms.search.form: LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, Numbe
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 268484
 ms.assetid: d7ff8162-bd5c-4582-a18a-144ce5e4c06f
 ms.search.region: Latvia, Lithuania
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

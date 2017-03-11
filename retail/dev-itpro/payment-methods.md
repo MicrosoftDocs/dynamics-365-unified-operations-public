@@ -25,7 +25,7 @@ ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: yabinl
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

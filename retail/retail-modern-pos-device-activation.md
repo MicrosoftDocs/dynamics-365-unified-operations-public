@@ -18,14 +18,14 @@ ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTa
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 20501
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

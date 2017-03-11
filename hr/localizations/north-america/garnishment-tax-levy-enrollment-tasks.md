@@ -18,14 +18,14 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, Payroll
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 31
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 221194
 ms.assetid: f734d55a-304c-4e49-b437-6fa34c30b5ca
 ms.search.region: USA
 # ms.search.industry: 
 ms.author: brpotter
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

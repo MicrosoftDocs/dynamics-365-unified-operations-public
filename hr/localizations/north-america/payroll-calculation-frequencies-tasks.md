@@ -18,14 +18,14 @@ ms.search.form: PayrollCalculationFrequency
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 31
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 222594
 ms.assetid: 708d3b20-27cc-4f6a-b2d5-ecc328864670
 ms.search.region: USA
 # ms.search.industry: 
 ms.author: brpotter
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

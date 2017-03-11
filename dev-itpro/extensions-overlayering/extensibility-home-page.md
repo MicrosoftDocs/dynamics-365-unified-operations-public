@@ -25,7 +25,7 @@ ms.assetid: 74489760-376f-4793-b22c-8189339733ed
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.ops.intro: 01-02-2017
+ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 
 ---

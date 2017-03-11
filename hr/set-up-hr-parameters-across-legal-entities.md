@@ -18,14 +18,14 @@ ms.search.form: HcmSharedParameters
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 31
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 51891
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shielas
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

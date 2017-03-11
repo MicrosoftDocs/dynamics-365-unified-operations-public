@@ -18,14 +18,14 @@ ms.search.form: BrazilParameters, FiscalDocument_BR, PurchImportDeclaration_BR, 
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 101
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 270204
 ms.assetid: b2389297-1359-498f-b755-c20574248ae1
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

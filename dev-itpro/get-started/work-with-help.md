@@ -25,7 +25,7 @@ ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

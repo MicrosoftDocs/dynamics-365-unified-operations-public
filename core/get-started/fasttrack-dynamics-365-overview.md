@@ -18,14 +18,14 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 # ms.reviewer: 11
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 267934
 ms.assetid: 26681541-bee2-4f54-92bd-f549e3b414c1
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

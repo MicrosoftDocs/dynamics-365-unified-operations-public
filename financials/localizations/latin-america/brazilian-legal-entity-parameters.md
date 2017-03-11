@@ -18,14 +18,14 @@ ms.search.form: Accountant_BR, AccountantElectronicAddress_BR, AccountantPostalA
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 269404
 ms.assetid: af0951b7-078d-49ea-9655-1037dbd0bfe1
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

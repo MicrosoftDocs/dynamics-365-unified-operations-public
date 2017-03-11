@@ -25,7 +25,7 @@ ms.assetid: 0f07f62f-1053-46e9-b235-a7b38cbda409
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 # ms.search.industry: 
 ms.author: v-lenest
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

@@ -25,7 +25,7 @@ ms.assetid: 2a2ffa1e-5a15-4e2a-b18c-c4d890d38a50
 ms.search.region: global
 # ms.search.industry: 
 ms.author: josaw
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
 ---

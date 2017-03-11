@@ -25,7 +25,7 @@ ms.assetid: 6640ae38-58f0-4a29-abca-5acd9489d45d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: maertenm
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

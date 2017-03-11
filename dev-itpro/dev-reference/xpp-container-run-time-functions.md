@@ -25,7 +25,7 @@ ms.assetid: 5b4741a5-dec1-4a3b-b739-6c12142ac668
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

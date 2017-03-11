@@ -25,7 +25,7 @@ ms.assetid: 246a113f-fbc0-4fee-b07e-793938a4a22a
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
 ---

@@ -25,7 +25,7 @@ ms.assetid: 59da4854-0f8c-4021-acd1-b303c06f4a34
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

@@ -25,7 +25,7 @@ ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: yuyus
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

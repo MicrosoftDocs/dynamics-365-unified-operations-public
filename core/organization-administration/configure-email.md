@@ -25,7 +25,7 @@ ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cgarty
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

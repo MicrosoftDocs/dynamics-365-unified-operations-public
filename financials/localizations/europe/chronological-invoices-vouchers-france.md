@@ -18,14 +18,14 @@ ms.search.form: CustParameters, NumberSequenceGroup
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264514
 ms.assetid: d1fce1dc-2186-443c-9b4d-b6f64236bc3a
 ms.search.region: France
 # ms.search.industry: 
 ms.author: ilyako
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

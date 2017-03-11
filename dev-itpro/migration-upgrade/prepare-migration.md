@@ -25,7 +25,7 @@ ms.assetid: a911b0f2-a7b0-4643-bf5b-16e55c9397be
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

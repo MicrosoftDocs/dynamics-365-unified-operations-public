@@ -25,7 +25,7 @@ ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anupams
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
