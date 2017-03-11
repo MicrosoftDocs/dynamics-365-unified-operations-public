@@ -18,14 +18,14 @@ ms.search.form: LedgerParameters
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261474
 ms.assetid: 1be79a65-477a-4fb1-9cb6-70afe2b0846e
 ms.search.region: Spain
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

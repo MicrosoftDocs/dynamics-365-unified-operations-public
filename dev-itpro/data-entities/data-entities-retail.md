@@ -25,7 +25,7 @@ ms.assetid: f9e602d7-f9e1-4214-8b45-d079bd436f69
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: kfend
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

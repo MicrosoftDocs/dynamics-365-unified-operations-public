@@ -25,7 +25,7 @@ ms.assetid: 8142ed49-7955-4149-9a7c-100bde34aa6b
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

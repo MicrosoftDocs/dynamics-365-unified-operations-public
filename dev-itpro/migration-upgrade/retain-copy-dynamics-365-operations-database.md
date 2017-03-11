@@ -25,7 +25,7 @@ ms.assetid: 7464b180-8ace-4b65-8b53-ba608d0611e1
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tabell
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
 ---

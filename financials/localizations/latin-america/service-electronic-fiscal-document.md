@@ -18,14 +18,14 @@ ms.search.form: BrazilParameters, ConfDefGroups_BR, ConfDefGroupWizard_BR, ConfD
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 269984
 ms.assetid: 46e40a3a-784f-4a1e-b185-c4b8ad63518f
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

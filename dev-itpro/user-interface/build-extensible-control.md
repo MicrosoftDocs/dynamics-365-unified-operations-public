@@ -25,7 +25,7 @@ ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shshabazz
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

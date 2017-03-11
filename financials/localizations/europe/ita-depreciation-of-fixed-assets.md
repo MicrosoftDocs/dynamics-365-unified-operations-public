@@ -18,14 +18,14 @@ ms.search.form: AssetDepreciationProfile, LedgerJournalTransApprove, LedgerJourn
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264294
 ms.assetid: 89d8fca3-b653-4fc8-9186-b765c31f7544
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

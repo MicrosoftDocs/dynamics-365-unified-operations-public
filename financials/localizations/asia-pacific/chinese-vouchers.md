@@ -18,14 +18,14 @@ ms.search.form: LedgerVoucherType_CN, VoucherTypeWizard_CN
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261454
 ms.assetid: b5a50142-b48c-4b1b-8828-6c436ea91238
 ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

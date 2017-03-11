@@ -25,7 +25,7 @@ ms.assetid: 46d23d3e-b5ef-43a7-ae9d-a1e202cc8abc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: vstehman
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

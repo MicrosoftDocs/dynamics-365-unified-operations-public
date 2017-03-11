@@ -18,14 +18,14 @@ ms.search.form: TaxPeriod, TaxReportCollection, TaxReportVoucher
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 266904
 ms.assetid: 7a804f8e-3595-463c-8371-21425c992c91
 ms.search.region: Estonia
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

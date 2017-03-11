@@ -25,7 +25,7 @@ ms.assetid: 09358d27-6edc-420a-a7b6-83785b8ba0c6
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tlefor
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

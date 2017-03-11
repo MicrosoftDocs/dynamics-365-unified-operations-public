@@ -25,7 +25,7 @@ ms.assetid: 78a85e0a-e002-41b5-85b7-e2772317d56e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

@@ -25,7 +25,7 @@ ms.assetid: d24470fd-07ad-4c3f-b23a-3f6c1401edc6
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
-ms.dyn365.ops.intro: 01-08-2016
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
 ---

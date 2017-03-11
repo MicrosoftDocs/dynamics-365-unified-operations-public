@@ -18,14 +18,14 @@ ms.search.form: HCMemploymentverification, Hcmi9Document, Hcmi9DocumentType
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 15611
 ms.assetid: d740ddb6-b8d7-4c12-b920-1f8afa25d026
 ms.search.region: United States
 # ms.search.industry: 
 ms.author: shielas
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

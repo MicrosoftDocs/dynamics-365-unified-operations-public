@@ -25,7 +25,7 @@ ms.assetid: 882b1a83-4773-49a0-8dbb-3ac3380d344c
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

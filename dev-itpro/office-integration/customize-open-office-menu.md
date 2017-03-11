@@ -25,7 +25,7 @@ ms.assetid: 3ff1184b-1a8a-4102-9600-f1776634d95f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cgarty
-ms.dyn365.ops.intro: 01-02-2017
+ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 
 ---

@@ -18,14 +18,14 @@ ms.search.form: LedgerJournalizeReport
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 28831
 ms.assetid: dc9699d8-5b24-43f4-9a8a-39d9c8021553
 ms.search.region: Germany
 # ms.search.industry: 
 ms.author: epopov
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

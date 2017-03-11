@@ -25,7 +25,7 @@ ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pmantha
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

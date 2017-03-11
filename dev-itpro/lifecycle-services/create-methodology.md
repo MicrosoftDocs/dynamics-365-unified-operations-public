@@ -25,7 +25,7 @@ ms.assetid: ac723685-f87c-4854-9bb7-b92ccf1094eb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

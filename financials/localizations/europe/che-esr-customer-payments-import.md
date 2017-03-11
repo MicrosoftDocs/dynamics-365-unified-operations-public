@@ -18,14 +18,14 @@ ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264584
 ms.assetid: 60c429b5-1d88-4fef-be6b-b8585e0e9ee7
 ms.search.region: Switzerland
 # ms.search.industry: 
 ms.author: v-lenest
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

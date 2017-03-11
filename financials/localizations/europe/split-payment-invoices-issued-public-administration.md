@@ -18,14 +18,14 @@ ms.search.form: TaxBookSection, TaxGroup
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261314
 ms.assetid: 31b20504-a9e7-4d8e-b290-92e6e80a9ff4
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: epopov
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

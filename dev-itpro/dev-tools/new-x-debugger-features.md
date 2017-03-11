@@ -25,7 +25,7 @@ ms.assetid: 27c65e79-df74-4249-b684-97e1d40da753
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pvillads
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

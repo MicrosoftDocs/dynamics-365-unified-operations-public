@@ -18,14 +18,14 @@ ms.search.form: BrazilParameters, FBFiscalDocument_BR, SalesComplementaryInvoice
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 269194
 ms.assetid: 0c52b508-1044-48c1-9dfc-a590bbda5696
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
