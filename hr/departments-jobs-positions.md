@@ -35,28 +35,18 @@ ms.dyn365.ops.version: AX 7.0.0
 Departments, jobs, and positions are organizational elements that are maintained within Human resources. This topic describes conceptual information about these elements. 
 
 The following example is used to illustrate the concepts described in this topic.
-**Department**
-**Position**
-**Job**
-**Sales**
-Sales manager (East)
-Sales manager
-Sales manager (West)
-Sales manager
-Sales manager (Central)
-Sales manager
-**Accounting**
-Accounting supervisor
-Accounting manager
-Accounting-A
-Accountant
-**Human resources**
-HR manager (East)
-HR manager
-HR manager (West)
-HR manager
-HR manager (Central)
-HR manager
+
+|**Department**|**Position**|**Job**|
+|---|---|---|
+|**Sales**|Sales manager (East)|Sales manager|
+|**Sales**|Sales manager (West)|Sales manager|
+|**Sales**|Sales manager (Central)|Sales manager|
+|**Accounting**|Accounting supervisor|Accounting manager|
+|**Accounting**|Accounting-A|Accountant|
+|**Human resources**|HR manager (East)|HR manager|
+|**Human resources**|HR manager (West)|HR manager|
+|**Human resources**|HR manager (Central)|HR manager|
+
  
  Departments
 ------------
@@ -136,7 +126,11 @@ When you assign a worker to a position, you fill that position. You can assign w
 
 ### Reporting relationships
 
-Positions are important elements of the lower level of an organization hierarchy. In the Position form, you can specify the position that a position reports to. When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions. For example, position “Accountant-A” reports to position “Accounting Supervisor”. Kim Akers is assigned to position “Accounting Supervisor” and Sanjay Patel is assigned to position “Accountant-A”. This means that Sanjay Patel reports to Kim Akers. If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up. For example, Lori Penor is a general manager at Adventure Works and is assigned to the “General Manager” position. Lori manages the development of a product that is used to clean widgets. Lori requires an accountant to help her with the finances for developing the product. Therefore, she has recruited Sanjay Patel to be her accountant. Sanjay reports directly to Kim Akers, but also works with Lori Penor on his work related to the finances for developing the widget cleaner. For the previous example, you would complete the following tasks to set up the working relationship between Sanjay Patel and Lori Penor:
+Positions are important elements of the lower level of an organization hierarchy. In the Position form, you can specify the position that a position reports to. When you assign a worker to a position that reports to another position, you create a reporting relationship between the workers who are assigned to the two positions. For example, position “Accountant-A” reports to position “Accounting Supervisor”. Kim Akers is assigned to position “Accounting Supervisor” and Sanjay Patel is assigned to position “Accountant-A”. This means that Sanjay Patel reports to Kim Akers. 
+
+If your organization uses a matrix hierarchy or another custom hierarchy, you can set up position hierarchy types and then add reporting relationships to positions for each hierarchy type that you set up. For example, Lori Penor is a general manager at Adventure Works and is assigned to the “General Manager” position. Lori manages the development of a product that is used to clean widgets. Lori requires an accountant to help her with the finances for developing the product. Therefore, she has recruited Sanjay Patel to be her accountant. Sanjay reports directly to Kim Akers, but also works with Lori Penor on his work related to the finances for developing the widget cleaner. 
+
+For the previous example, you would complete the following tasks to set up the working relationship between Sanjay Patel and Lori Penor:
 1.  Create a custom position hierarchy type called “Widget” to create a hierarchy that includes positions responsible for working on the widget cleaner product.
 2.  Assign the General Manager position to be the position that the Accountant-A position reports to in the Widget hierarchy.
 
