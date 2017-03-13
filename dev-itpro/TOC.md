@@ -35,3 +35,4 @@
 ## [Regulatory certifications](localization-solutions\localization-solution-regulatory-certifications.md)
 ## [Regulatory updates](localization-solutions\localization-solution-regulatory-watch-communication.md)
 ## [Separate localization models](localization-solutions\localization-solution-separate-models.md)
+## [Submit a regulatory alert](localization-solutions\submit-localization-alerts.md)
