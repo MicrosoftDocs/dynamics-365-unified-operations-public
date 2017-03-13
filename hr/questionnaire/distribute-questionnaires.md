@@ -2,7 +2,7 @@
 # required metadata
 
 title: Distribute and complete a questionnaire
-description: This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
+description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-04 18 - 35 - 55
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Distribute and complete a questionnaire
 
-This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
+This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 
 There are multiple ways to distribute a questionnaire:
 
@@ -45,7 +45,9 @@ There are multiple ways to distribute a questionnaire:
 By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete. Respondents can complete the questionnaire multiple times. This functionality is useful if you want to gather continual feedback throughout the year. For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.
 
 ## Questionnaire groups
-You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to. You can create questionnaire groups from the following pages:
+You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to. 
+
+You can create questionnaire groups from the following pages:
 
 -   **Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire. For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.
 -   **Questionnaire group members** – You can add people to the questionnaire groups.
@@ -53,7 +55,13 @@ You can set up questionnaire groups and then include the respondents that a ques
 To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**. After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire. This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.
 
 ## Planned answer sessions in a questionnaire
-Planned answer sessions are questionnaires that you've designed and selected the respondents for. **Note:** Before you can set up planned answer sessions, you must design a questionnaire. On the **Planned answer session** page, you can create a planned answer session for an individual employee. The list on the page displays all planned questionnaires. Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:
+Planned answer sessions are questionnaires that you've designed and selected the respondents for. 
+
+**Note:** Before you can set up planned answer sessions, you must design a questionnaire. 
+
+On the **Planned answer session** page, you can create a planned answer session for an individual employee. The list on the page displays all planned questionnaires. 
+
+Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:
 
 -   Employees
 -   Course participants
@@ -76,14 +84,26 @@ You can specify planning types for a questionnaire schedule on the **Questionnai
 
 ### Reference types for questionnaire
 
-You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire. Use the **Reference types** page to set up reference types for a questionnaire. Each reference type corresponds to a table in Microsoft Dynamics 365 for Operations. When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with. For example, if you select the Courses table, you can decide which specific course the questionnaire will be for. When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.
+You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire. 
+
+Use the **Reference types** page to set up reference types for a questionnaire. Each reference type corresponds to a table in Microsoft Dynamics 365 for Operations. When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with. 
+
+For example, if you select the Courses table, you can decide which specific course the questionnaire will be for. When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.
 
 ### Questionnaire schedules
 
-You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type. Create a schedule on the **Questionnaire schedules** page. Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users. For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field. Click **Setup details** to select the questionnaire and other criteria. For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.  After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query. Click **Planned answer sessions** to view the answer sessions for the schedule. You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered. Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions. Click **Answers** to view the completed responses to the questionnaire. You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.
+You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type. Create a schedule on the **Questionnaire schedules** page. Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users. For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field. 
+
+Click **Setup details** to select the questionnaire and other criteria. For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor. After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query. 
+
+Click **Planned answer sessions** to view the answer sessions for the schedule. You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered. 
+
+Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions. Click **Answers** to view the completed responses to the questionnaire. You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.
 
 ## Notifying respondents about questionnaires that are available to them
-When you distribute a questionnaire, you must notify respondents that questionnaires are available to them. **Note:** Respondents must be users in Microsoft Dynamics 365 for Operations to complete a questionnaire.
+When you distribute a questionnaire, you must notify respondents that questionnaires are available to them. 
+
+**Note:** Respondents must be users in Microsoft Dynamics 365 for Operations to complete a questionnaire.
 
 ### Notifying respondents about a planned answer session
 
@@ -91,10 +111,14 @@ If you use a planned answer session, you must notify the person directly, such a
 
 ### Notifying respondents about a scheduling
 
-Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire. Enter the email text on the **E-mail for employee self service** tab. After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents. Respondents can then sign in to the website and complete the questionnaire. **Note:** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.
+Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire. Enter the email text on the **E-mail for employee self service** tab. After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents. Respondents can then sign in to the website and complete the questionnaire. 
+
+**Note:** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.
 
 ## Ending a scheduled questionnaire
-You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions. After a scheduled questionnaire is ended, you can't copy its settings to a new schedule. **Note:** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page. You can then end the schedule.
+You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions. After a scheduled questionnaire is ended, you can't copy its settings to a new schedule. 
+
+**Note:** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page. You can then end the schedule.
 
 ## Completing questionnaires
 After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents. You can complete the questionnaires that are available to you from two locations:

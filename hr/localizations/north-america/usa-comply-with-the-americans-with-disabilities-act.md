@@ -2,7 +2,7 @@
 # required metadata
 
 title: Comply with the Americans with Disabilities Act | Microsoft Docs
-description: This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
+description: This topic describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
 author: annbe
 manager: AnnBe
 ms.date: 2015-09-10 15:08:58
@@ -43,10 +43,18 @@ You can enter physical requirements that are related to position groups and posi
 -   Requirements for visual acuity. This includes color, depth perception, and field of vision.
 -   One or more work conditions that a worker will be subjected to. You can select one or more conditions in several categories.
 
-If you entered information about a position group, you can then copy that information to positions that are assigned to the position group. To print a checklist that contains information about physical requirements, select the position, click **ADA**, and then click **Print** requirements. To reset all physical retirements to their default settings, select the position, and open the **Jobs,** select a job, then expand the **ADA** tab. On the **ADA requirements** page, click **Reset** requirement.
+If you entered information about a position group, you can then copy that information to positions that are assigned to the position group. 
+
+To print a checklist that contains information about physical requirements, select the position, click **ADA**, and then click **Print** requirements. 
+
+To reset all physical retirements to their default settings, select the position, and open the **Jobs,** select a job, then expand the **ADA** tab. On the **ADA requirements** page, click **Reset** requirement.
 
 ## About work environment accommodations
-Accommodations represent changes to work environments or business operations that achieve equal employment opportunity for a person who has a disability. You can enter requests for special work environment accommodations that are made by employees and applicants with regard to one or more specific tasks that are required by a position. You can then evaluate whether the accommodation is reasonable or if it will impose unnecessary cost, and then either grant or deny the accommodation request. If you hire an applicant for whom you granted an accommodation, the person keeps the accommodation information after he or she is hired. Before you can start working with accommodations, you must first create one or more accommodation types. This lets you sort accommodations by type to find a particular accommodation quickly.
+Accommodations represent changes to work environments or business operations that achieve equal employment opportunity for a person who has a disability. You can enter requests for special work environment accommodations that are made by employees and applicants with regard to one or more specific tasks that are required by a position. You can then evaluate whether the accommodation is reasonable or if it will impose unnecessary cost, and then either grant or deny the accommodation request. 
+
+If you hire an applicant for whom you granted an accommodation, the person keeps the accommodation information after he or she is hired. 
+
+Before you can start working with accommodations, you must first create one or more accommodation types. This lets you sort accommodations by type to find a particular accommodation quickly.
 
  
 -
