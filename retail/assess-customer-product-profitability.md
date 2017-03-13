@@ -59,5 +59,3 @@ For this assessment, you can use the out-of-box **Top products** report, which y
 -   **Category and product management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Products and categories** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**
 
-For more information, see [Creating next-generation reporting solutions](create-nextgen-reporting-solutions.md).
-
