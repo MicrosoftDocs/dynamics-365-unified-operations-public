@@ -63,7 +63,7 @@ Use Issue search to identify whether a regulatory feature that is related to the
 1.  In the **Global business process libraries** list, select business process libraries.
 2.  Enter search criteria to find business processes that are related to the search term. These business processes are highlighted in yellow.
 3.  In the list on the right side of the page, select one or more related business processes, and drag them into the field on the left side. After you've finished, you can edit them further by clearing the selection of business processes.
-4.  Add the selected business processes to the alert. [![Attach business processes page](./media/bp-selection-1024x556.png)](./media/bp-selection.png)
+4.  Add the selected business processes to the alert. ![Attach business processes page](./media/bp-selection.png)
 
 ### Describe the alert
 
@@ -87,7 +87,7 @@ Use Issue search to identify whether a regulatory feature that is related to the
     | Attachments                                                                                                                                                                                                    | List of linked files        | Click the **Upload** button, and then browse to select a file to add as an attachment. After you select the file, it's uploaded and appears as a linked file. You can add up to three files that have a size 5 MB each. To delete files that have been attached, click **Remove** under the title of the file. **Note:** Attachments must be publicly available materials. They can't be propriety or customer-specific/partner-specific. |
     | By creating this alert I allow Microsoft to contact me in the future for any further information related to this alert. Read the Microsoft Dynamics Lifecycle Services privacy statement for more information. | Check box                   | Select this check box to give Microsoft permission to contact you. You can't submit an alert unless you select this check box.                                                                                                                                                                                                                                                                                                            |
 
-    [![Describe the alert page](./media/submission-forms-1024x489.png)](./media/submission-forms.png)
+    ![Describe the alert page](./media/submission-forms.png)
 2.  After you've finished entering all the information, select the consent check box (**By creating this alert I allow Microsoft to contact me in the future for any further information related to this alert. Read the Microsoft Dynamics Lifecycle Services privacy statement for more information**). When you select the check box, the **Submit** button becomes available.
 3.  Click **Submit** to save and submit the alert.
 
@@ -96,7 +96,7 @@ If you don't have all of the required information, or if you're not yet ready to
 ### Confirm your submission
 
 -   When the alert is successfully submitted, you receive a confirmation message. Click **Done** to exit the wizard.
--   If you save the alert before you submit it, an alert ID is generated, and you receive confirmation that the alert has been saved. [![Submission confirmation](./media/submission-confirmation.png)](./media/submission-confirmation.png)
+-   If you save the alert before you submit it, an alert ID is generated, and you receive confirmation that the alert has been saved. ![Submission confirmation](./media/submission-confirmation.png)
 
 ## Track the status of regulatory features in Issue search
 You can use Issue search in LCS to find planned and released regulatory features, and also any associated localization documentation, certifications, and reports. To narrow your search to regulatory features, use the following filters:
@@ -109,4 +109,4 @@ To narrow the search even more, you can apply the following additional filters
 -   **Product:** Select the products and product versions that you're interested in.
 -   **Status:** Select specific statuses.
 
-[![Filters to find planned and released regulatory features in Issue search](./media/issue-search-categories.jpg)](./media/issue-search-categories.jpg)
+![Filters to find planned and released regulatory features in Issue search](./media/issue-search-categories.jpg)
