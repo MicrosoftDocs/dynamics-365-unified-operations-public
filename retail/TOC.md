@@ -1,15 +1,12 @@
 # Call center
-## Overview
-### [Call center functionality](call-center-functionality.md)
-### [Call center catalogs](call-center-catalogs.md)
-## Set up a call center
+## [Call center functionality](call-center-functionality.md)
+## [Call center catalogs](call-center-catalogs.md)
 ### [Create a call center catalog](create-call-center-catalogs.md)
-### [Set up fraud alerts](set-up-fraud-alerts.md)
-### [Set up order processing options](set-up-order-processing-options.md)
-### [Set up a continuity program for a call center](set-up-continuity-program.md)
-## Work with a call center
-### [Order holds](work-with-order-holds.md)
-### [Working with payments](work-with-payments.md)
+## [Set up fraud alerts](set-up-fraud-alerts.md)
+## [Set up order processing options](set-up-order-processing-options.md)
+## [Set up a continuity program for a call center](set-up-continuity-program.md)
+## [Order holds](work-with-order-holds.md)
+## [Payment options](work-with-payments.md)
 # Channel setup and management
 ## [Initialize seed data in a new Retail environment](enable-configure-retail-functionality.md)
 ## [Define and maintain retail channels](define-maintain-retail-channels.md)
