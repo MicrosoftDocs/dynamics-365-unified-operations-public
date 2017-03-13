@@ -1,4 +1,4 @@
-﻿# Overview of Dynamics 365 for Operations
+# Overview of Dynamics 365 for Operations
 # [Getting started home page](getting-started-home-page.md)
 # [System requirements](system-requirements.md)
 # [Demo data overview](demo-data.md)
