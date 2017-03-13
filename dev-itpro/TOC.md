@@ -30,3 +30,8 @@
 ## [Create a new transportation management engine](create-new-transportation-management-engine.md)
 # [Develop and customize using Visual Studio](dev-tools\TOC.md)
 # [Lifecycle Services](lifecycle-services\TOC.md)
+# [Country/region context](localization-solutions\localization-solution-apply-country-context.md)
+## [Classify localization features](localization-solutions\localization-solution-classify-localization-features.md)
+## [Regulatory certifications](localization-solutions\localization-solution-regulatory-certifications.md)
+## [Regulatory updates](localization-solutions\localization-solution-regulatory-watch-communication.md)
+## [Separate localization models](localization-solutions\localization-solution-separate-models.md)
