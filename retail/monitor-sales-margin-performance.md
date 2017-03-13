@@ -51,6 +51,3 @@ Additionally, two unique reports that take advantage of hierarchical grid struct
 -   **Category and product management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**
 -   **Pricing and discount management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports**
-
-For more information, see [Creating next-generation reporting solutions](create-nextgen-reporting-solutions.md).
-
