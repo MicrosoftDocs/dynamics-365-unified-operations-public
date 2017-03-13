@@ -36,7 +36,9 @@ Compensation and Benefits Managers can use Compensation management to maintain a
 
 ### Introduction
 
-Compensation management is used to control the delivery of base pay and awards. An employee's fixed base pay and merit increases are controlled through fixed compensation plans. The payment of incentive pay, such as bonus payments, performance awards, stock options, and grants, and also one-time awards, are controlled through variable compensation plans. Employees can be enrolled in one or more plans of both types. An employee must meet the following requirements in order to be eligible for enrollment in a compensation plan:
+Compensation management is used to control the delivery of base pay and awards. An employee's fixed base pay and merit increases are controlled through fixed compensation plans. The payment of incentive pay, such as bonus payments, performance awards, stock options, and grants, and also one-time awards, are controlled through variable compensation plans. 
+
+Employees can be enrolled in one or more plans of both types. An employee must meet the following requirements in order to be eligible for enrollment in a compensation plan:
 -   The employee must have an active position assignment.
 -   The employee must meet the criteria that are defined by eligibility rules for a compensation plan.
 

@@ -32,12 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage a recruiting process
 
-This article describes a concept that recruiters can use to track the steps in a recruiting process, including efforts to advertise open positions and recruit applicants, tracking applicant and application information, interviewing applicants, and selecting one or more candidates to fill the open positions in your organization.
+This topic describes a concept that recruiters can use to track the steps in a recruiting process, including efforts to advertise open positions and recruit applicants, tracking applicant and application information, interviewing applicants, and selecting one or more candidates to fill the open positions in your organization.
 
 Overview
 --------
 
 Recruitment projects can help you organize the steps you'll complete when filling open positions in a legal entity. An applicant is a person who applies for employment to your enterprise.  An application is an applicant's expression of interest in being employed by a company and may be tied to a recruitment project to express interest in a specific opening.  A single applicant may have multiple applications within the same legal entity or across multiple companies in your organization.
+
 Recruitment projects
 --------------------
 
@@ -48,8 +49,9 @@ Recruitment projects allow recruiters to track progress against filling one or m
 -   The application deadline
 -   The estimated start date
 
-The recruitment project contains the **Job ad** used on the **Employee self service** to advertise the opening. To display the opening to employees, the recruitment project must have a **Job ad**, the **Display on employee self service** field must be set to Yes, the **Application deadline** must be set to a future date, and the recruitment project must have a **Project status** of Started. The following table lists the possible recruitment  project statuses and their description.
-| Status    | Indicates that…                                                                          |
+The recruitment project contains the **Job ad** used on the **Employee self service** to advertise the opening. To display the opening to employees, the recruitment project must have a **Job ad**, the **Display on employee self service** field must be set to Yes, the **Application deadline** must be set to a future date, and the recruitment project must have a **Project status** of Started. The following table lists the possible recruitment project statuses and their description.
+
+| **Status**    | **Indicates that…**                                                                  |
 |-----------|------------------------------------------------------------------------------------------|
 | Scheduled | Recruiting efforts are being prepared.  Recruiting has not yet started for this project. |
 | Started   | Applications are now being accepted for the openings in this project.                    |
