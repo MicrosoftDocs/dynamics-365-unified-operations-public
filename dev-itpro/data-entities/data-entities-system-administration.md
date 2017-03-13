@@ -492,5 +492,5 @@ See also
 
 [Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](data-entities-home-page.md)
+[Data entities home page](data-entities.md)
 

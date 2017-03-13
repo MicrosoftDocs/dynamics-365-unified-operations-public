@@ -25,7 +25,7 @@ ms.assetid: c16c9fb5-b1c1-4f22-a955-ff7325621a22
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
 ---

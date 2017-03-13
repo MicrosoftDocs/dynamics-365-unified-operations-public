@@ -25,7 +25,7 @@ ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
 ms.search.region: global
 # ms.search.industry: 
 ms.author: janeaug
-ms.dyn365.ops.intro: Feb-16
+ms.search.validFrom: Feb-16
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

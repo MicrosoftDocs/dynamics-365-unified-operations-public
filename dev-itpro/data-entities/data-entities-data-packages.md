@@ -184,5 +184,5 @@ See also
 
 [Data entities](data-entities.md)
 
-[Data entities home page](data-entities-home-page.md)
+[Data entities home page](data-entities.md)
 

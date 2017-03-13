@@ -43,7 +43,7 @@
 ### [X++ operator precedence](../dev-reference/xpp-operator-precedence.md)
 ### [X++ classes and methods](../dev-reference/xpp-classes-methods.md)
 ### [X++ data selection and manipulation](../dev-reference/xpp-data-query.md)
-### [X++ macros](../dev-reference/macros-xpp.md)
+### [X++ macros](../dev-reference/xpp-macros.md)
 ### [X++ attribute classes](../dev-reference/xpp-attribute-classes.md)
 ### [X++ and C# comparison](../dev-reference/xpp-cs-comparison.md)
 ### [X++ syntax](../dev-reference/xpp-syntax.md)
@@ -118,5 +118,4 @@
 ## [Test projects in Visual Studio](../perf-test/testing-support.md)
 ## [Deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 # Dates
-## [Date/time data and time zones](date-time-zones.md)
 ## [Date effectivity](date-effectivity.md)

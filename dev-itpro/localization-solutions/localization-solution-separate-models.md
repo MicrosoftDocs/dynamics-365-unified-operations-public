@@ -25,7 +25,7 @@ ms.assetid: ab7c2efb-65e9-41fd-bab2-7a6aca5989ea
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: filatovm
-ms.dyn365.ops.intro: Feb-16
+ms.search.validFrom: Feb-16
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

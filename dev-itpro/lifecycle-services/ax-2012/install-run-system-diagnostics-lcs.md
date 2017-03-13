@@ -25,7 +25,7 @@ ms.assetid: 075b4e28-162f-47ae-8713-392d711bdaff
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: manado
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
 ---

@@ -1,12 +1,12 @@
 # [Prepare to move to the latest update of Dynamics 365 for Operations](upgrade-latest-update.md)
 # [Upgrade Dynamics 365 for Operations to the latest platform update](upgrade-latest-platform-update.md)
-# [Process for upgrading a sandbox environment](process-for-upgrading-a-sandbox-environment.md)
+# [Process for upgrading a sandbox environment](upgrade-sandbox-environment.md)
 # [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md)
-# [Workflow subsystem updates in Dynamics 365 for Operations](workflow\workflow-subsystem.md)
+# [Workflow subsystem updates in Dynamics 365 for Operations](workflow-subsystem.md)
 # Code migration
 ## [Prepare to migrate to Dynamics 365 for Operations](prepare-migration.md)
 ## [Configure Visual Studio Team Services mapping during code migration](configure-vso-solution.md)
-## [Model split](model-split.md)
+## [Model split](..\dev-tools\model-split.md)
 ## [Use delegates to solve dependencies between models when migrating code to Dynamics 365 for Operations](delegates-migration.md)
 # Data changes that affect upgrade
 ## [Single voucher and currency revaluation upgrade ](single-voucher-and-currency-revaluation-upgrade.md)

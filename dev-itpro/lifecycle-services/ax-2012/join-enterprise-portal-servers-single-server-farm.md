@@ -25,7 +25,7 @@ ms.assetid: 05316e9d-818e-4f4b-901c-2e67fe8edfd1
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aneesa
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
 ---
