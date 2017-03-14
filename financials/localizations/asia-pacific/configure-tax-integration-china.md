@@ -5,7 +5,7 @@ title: Configure tax integration for China
 description: This topic describes the process for configuring tax integration for China.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-22 16 - 55 - 28
+ms.date: 2017-03-14 16 - 55 - 28
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
