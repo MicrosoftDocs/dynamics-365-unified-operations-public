@@ -1,4 +1,6 @@
 # [Analytics BI & Reporting](bi-reporting-home-page.md)
+# [Information access reporting ](information-access-reporting.md)
+
 ## [Add BI to workspaces](add-bi-workspaces.md)
 ## [Add contextual BI to forms](add-contextual-bi-forms.md)
 ## [Aggregate data entities report](aggregate-data-entities-report.md)
