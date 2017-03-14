@@ -35,14 +35,15 @@
 ## [Configure organizational hierarchy](organization-administration\plan-organizational-hierarchy.md)
 ## [Address books](organization-administration\qa-address-books.md)
 ## [Global address book](organization-administration\overview-global-address-book.md)
+## [Configure global address books](organization-administration\plan-configuration-global-address-book-additional-address-books.md)
 ## [Number sequence overview](organization-administration\number-sequence-overview.md)
 ## [Electronic signature overview](organization-administration\electronic-signature-overview.md)
 ## [Configure case security, processes, and categories](organization-administration\plan-case-management.md)
-## [Configure global address books](organization-administration\plan-configuration-global-address-book-additional-address-books.md)
-## [Configure expense management](organization-administration\plan-expense-management.md)
+
+
 ## [Create record templates](organization-administration\record-templates.md)
 ## [Configure and send email](organization-administration\configure-email.md)
-## [Add links to your organization's legal terms and privacy statement](organization-administration\legal-terms-privacy-statement.md)
+
 # Import and export data using data entities
 # Design workflows
 ## [Workflow system overview](organization-administration\overview-workflow-system.md)
