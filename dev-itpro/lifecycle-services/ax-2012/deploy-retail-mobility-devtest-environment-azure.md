@@ -25,7 +25,7 @@ ms.assetid: ffc3e49a-c2a7-48ce-9f3d-3950b3133cbc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aamiral
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
 ---

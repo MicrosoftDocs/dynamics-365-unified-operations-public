@@ -25,7 +25,7 @@ ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
 ---

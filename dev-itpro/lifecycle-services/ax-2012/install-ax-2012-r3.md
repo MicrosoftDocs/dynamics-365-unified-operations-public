@@ -25,7 +25,7 @@ ms.assetid: d8ba7c2e-2a57-4e34-84fb-ba5f6289e781
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: AX 2012 R3 CU8
 
 ---

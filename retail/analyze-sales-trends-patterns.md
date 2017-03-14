@@ -45,6 +45,3 @@ Users can also study sales trends and patterns by hour across different levels o
 -   **Retail store management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel sales by hour report**
 -   **Retail store financials** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel sales by hour report**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by hour report**
-
-For more information, see [Creating next-generation reporting solutions](create-nextgen-reporting-solutions.md).
-

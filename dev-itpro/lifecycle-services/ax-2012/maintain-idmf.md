@@ -25,7 +25,7 @@ ms.assetid: a8cab868-0e2f-406e-b486-4883876f1f09
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
 ---

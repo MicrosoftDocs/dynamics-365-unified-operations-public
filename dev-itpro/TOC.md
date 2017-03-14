@@ -6,7 +6,7 @@
 ## [Role-based security](system-administration\role-based-security.md)
 ## [Security architecture](system-administration\security-architecture.md)
 # Support
-## [Get support for Dynamics 365 for Operations and Dynamics Lifecycle Services](lcs-support.md)
+## [Get support for Dynamics 365 for Operations and Dynamics Lifecycle Services](lifecycle-services\lcs-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services\submit-request-dynamics-service-engineering-team.md)
 # [Database management](database-management\TOC.md)
 # [System configuration](system-administration\TOC.md)
@@ -19,15 +19,15 @@
 # Office integration
 ## [Office integration](office-integration\office-integration.md)
 ## [Create Open in Excel experiences](office-integration\office-integration-edit-excel.md)
-## [Customize the Open in Microsoft Office menu](office-integration\customize-open-in-office-menu.md)
+## [Customize the Open in Microsoft Office menu](office-integration\customize-open-office-menu.md)
 ## [Office integration troubleshooting](office-integration\office-integration-troubleshooting.md)
 ## [Office integration tutorial](office-integration\office-integration-tutorial.md)
-## [Add templates to the Open lines in Excel menu](office-integration\add-templates-open-lines-excel-menu.md)
+## [Add templates to the Open lines in Excel menu](user-interface\add-templates-open-lines-excel-menu.md)
 # [Data entities](data-entities\TOC.md)
 # [Financials development](financial-dimensions\TOC.md)
 # Supply chain development
 ## [Gantt development guide](user-interface\gantt-development-guide.md)
-## [Create a new transportation management engine](create-new-transportation-management-engine.md)
+## [Create a new transportation management engine](..\manufacturing\transportation-management\create-new-transportation-management-engine.md)
 # [Develop and customize using Visual Studio](dev-tools\TOC.md)
 # [Lifecycle Services](lifecycle-services\TOC.md)
 # [Country/region context](localization-solutions\localization-solution-apply-country-context.md)

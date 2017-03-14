@@ -200,7 +200,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 
 ### Concepts
 
--   [Data entities home page](data-entities-home-page.md)
+-   [Data entities home page](data-entities.md)
 -   [OData](odata.md)
 -   [Data entities](data-entities.md)
 -   [Introduction to data entities (Office Mix)](https://mix.office.com/watch/1brkpjvhf851m)

@@ -18,10 +18,9 @@
 ### [Retail peripherals overview](retail-peripherals-overview.md)
 ### [Microsoft tested POS hardware peripherals](microsoft-tested-pos-hardware-peripherals.md)
 ### [Define and maintain channel clients, including registers and hardware stations](define-maintain-channel-clients-registers-hw-stations.md)
-## Screen layout and customization
+## Screen layout
 ### [Configure screen layouts for POS](pos-screen-layouts.md)
 ### [Install the Retail POS Layout designer](install-pos-layout-designer.md)
-### [Add a custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
 ### [POS application and user language settings](pos-application-user-language-settings.md)
 ### [Set up and manage images for MPOS](set-up-manage-images-retail-mpos.md)
 ## Info codes
@@ -68,5 +67,5 @@
 # Inventory management
 ## [Work with store inventory](work-with-store-inventory.md)
 # Commerce essentials
-## [Commerce essentials overview](commerce-essentials\commerce-essentials.md)
-## [Work with organizations and organizational hierarchies (Commerce essentials)](commerce-essentials\organizational-hierarchies-commerce-essentials.md)
+## [Commerce essentials overview](commerce-essentials.md)
+## [Work with organizations and organizational hierarchies (Commerce essentials)](organizational-hierarchies-commerce-essentials.md)

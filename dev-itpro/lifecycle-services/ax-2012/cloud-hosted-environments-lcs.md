@@ -25,7 +25,7 @@ ms.assetid: 88d3758d-7d54-4c66-8b1a-f7a9ad8c825e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
 ---
