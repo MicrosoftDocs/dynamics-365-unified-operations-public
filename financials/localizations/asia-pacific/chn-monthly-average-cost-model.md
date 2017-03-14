@@ -56,9 +56,9 @@ When you run a monthly inventory closing by using the monthly average cost model
 
 
 The monthly average cost model is used to calculate the weighted average cost of an item at the end of the month. This average cost is used to adjust all issued transactions during the month, so that all output transactions for the month carry the same unit cost. For example, when an issued transaction is posted, its unit cost is calculated as the average cost at that time. Therefore, the unit costs for all issued transactions will be different. At the end of the month, when you run the monthly average cost adjustment, all unit costs that are generated during the month are adjusted to a uniform monthly average cost. The adjustment is based on the following formula:
-```
-Monthly average cost = (The beginning inventory value for the month + The increased inventory value) / (The beginning quantity + The increased quantity)
-```
+
+> Monthly average cost = (The beginning inventory value for the month + The increased inventory value) / (The beginning quantity + The increased quantity)
+
 
 Many Chinese manufacturing and trading companies use a monthly average cost model because it is a simple means of manually calculating inventory value. The following table compares the processes that are used to handle issue and receipt transactions in the manual monthly average cost model and the monthly average cost model that is available in Microsoft Dynamics 365 for Operations.
 | Manual monthly average cost model                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Monthly average cost model in Microsoft Dynamics 365 for Operations                                                                                                                                                        |
