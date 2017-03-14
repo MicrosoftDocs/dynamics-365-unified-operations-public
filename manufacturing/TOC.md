@@ -8,7 +8,7 @@
 ### [Generate a statistical baseline forecast](master-planning\generate-statistical-baseline-forecast.md)
 ### [Make manual adjustment to the baseline forecast](master-planning\manual-adjustments-baseline-forecast.md)
 ### [Authorize an adjusted forecast](master-planning\authorize-adjusted-forecast.md)
-u### [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
+### [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
 ### [Remove outlier from historical transaction data](master-planning\remove-historical-outliers-calculating-demand-forecast.md)
 ### [Reduction key](master-planning\reduction-keys.md)
 ## Master plan
