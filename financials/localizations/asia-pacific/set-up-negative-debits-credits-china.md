@@ -40,6 +40,6 @@ You can view credit and debit amounts for ledger accounts in two separate column
 2.  Set the **Show amount in debit/credit columns** slider to **Yes**.
 3.  Open **General ledger** &gt; **Inquiries and reports** &gt; **Voucher transactions** to confirm.
 
->![Note]
->This functionality is only available for a legal entity with a primary address in China.
+![Note]
+This functionality is only available for a legal entity with a primary address in China.
 
