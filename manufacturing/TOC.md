@@ -26,11 +26,10 @@ u### [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
 ### [Maintain planned order](master-planning\maintain-planned-orders.md)
 ### [Trace explosion](master-planning\trace-explosion.md)
 # Procurement and sourcing
-## Overview
-### [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
-### [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
-### [Procurement and sourcing workflows](procurement-sourcing\procurement-sourcing-workflows.md)
-### [Purchasing policies](procurement-sourcing\purchase-policies.md)
+## [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
+## [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
+## [Procurement and sourcing workflows](procurement-sourcing\procurement-sourcing-workflows.md)
+## [Purchasing policies](procurement-sourcing\purchase-policies.md)
 ## Procurement product management
 ### [Procurement catalogs](procurement-sourcing\procurement-catalogs.md)
 ## [Purchase requisitions](procurement-sourcing\purchase-requisitions-overview.md)
