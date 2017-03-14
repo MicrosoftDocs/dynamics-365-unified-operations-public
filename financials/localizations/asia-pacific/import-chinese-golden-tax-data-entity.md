@@ -5,7 +5,7 @@ title: Import the Chinese Golden Tax data entity
 description: This topic explains how to import the Chinese Golden Tax data entity into Microsoft Dynamics 365 for Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-02 21 - 05 - 44
+ms.date: 2017-03-14 21 - 05 - 44
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -46,7 +46,7 @@ To import the Chinese Golden Tax data entity, complete the following steps.
 8.  On the **Transformations** tab, click **New**.
 9.  Click **Upload file** and browse to the location of the .xlst file.
 
-For specific steps that show how to import a data entity, refer to [Importing data by using entities](build-consuming-data-entities.md#importing-data-by-using-entities). To practice the Chinese Golden Tax data entity import using the demo data company CNMF, download the following files from [CustomerSource](https://mbs.microsoft.com/customersource/global/ax/learning/samplefilestaximportchina).
+For specific steps that show how to import a data entity, refer to [Importing data by using entities](/dev-itpro/data-entities/build-consuming-data-entities.md). To practice the Chinese Golden Tax data entity import using the demo data company CNMF, download the following files from [CustomerSource](https://mbs.microsoft.com/customersource/global/ax/learning/samplefilestaximportchina).
 
 -   **ImportSampleFile.xml** - This file is the Chinese Golden Tax data entity composite.
 -   **Tax-Import-to-XML.xslt** - This file is used as the transformational file mapping.
