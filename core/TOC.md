@@ -39,11 +39,11 @@
 ## [Number sequence overview](organization-administration\number-sequence-overview.md)
 ## [Electronic signature overview](organization-administration\electronic-signature-overview.md)
 ## [Configure case security, processes, and categories](organization-administration\plan-case-management.md)
-
+## [Case management overview](cases.md)
 
 ## [Create record templates](organization-administration\record-templates.md)
 ## [Configure and send email](organization-administration\configure-email.md)
-
+## [Date/time data and time zones](date-time-zones.md)
 # Import and export data using data entities
 # Design workflows
 ## [Workflow system overview](organization-administration\overview-workflow-system.md)
