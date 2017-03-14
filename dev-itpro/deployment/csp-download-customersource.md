@@ -25,7 +25,7 @@ ms.assetid: d7902321-720d-4fdb-9cce-e128acb9fa47
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
 ---

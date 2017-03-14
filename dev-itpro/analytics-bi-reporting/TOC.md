@@ -62,5 +62,5 @@
 ### [Sales and profitability performance content pack for Power BI](sales-profitability-performance-content-pack.md)
 ### [Workforce analysis Power BI content pack ](workforce-analysis-power-bi-content-pack.md)
 ## App suites
-### [ Customize app suite reports with extensions ](customize-app-suite-reports-with-extensions.md)
+### [ Customize app suite reports with extensions ](dev-tools\customize-app-suite-reports-with-extensions.md)
 ### [ Expand app suite report data sets ](expand-app-suite-report-data-sets.md)

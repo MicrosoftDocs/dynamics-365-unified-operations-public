@@ -25,7 +25,7 @@ ms.assetid: ce126e17-5dc6-42fd-a9aa-4932e3db3830
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mumani
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
 ---

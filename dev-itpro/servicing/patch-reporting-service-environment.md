@@ -1,8 +1,8 @@
----
+﻿---
 # required metadata
 
 title: Patch SQL Server Reporting Services in a one-box environment
-description: The following procedure is for one-box development environments only.
+description: Apply SSRS hotfixes to a one-box development environment. 
 author: RobinARH
 manager: AnnBe
 ms.date: 2015-12-11 23 - 26 - 42

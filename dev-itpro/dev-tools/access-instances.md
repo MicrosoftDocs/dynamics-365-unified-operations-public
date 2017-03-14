@@ -126,7 +126,7 @@ For developer access, you must be an administrator on the instance. To provision
 
 1.  Run the RetailTenantUpdateTool.
     -   The icon for this tool is available on the desktop.
-    -   This tool is also available at the following location: C:windowsSystem32WindowsPowerShellv1.0PowerShell.exe -File C:RetailSDKToolsRetailTenantUpdateTool.ps1
+    -   This tool is also available at the following location: C:\windowsSystem32WindowsPowerShellv1.0PowerShell.exe -File C:\RetailSDKToolsRetailTenantUpdateTool.ps1
 
 2.  Double-click the icon to start this tool. You will be prompted for your Azure AD credentials. You must use the same credentials that you used in the admin user provisioning tool earlier.
 
@@ -202,21 +202,21 @@ On a VM, you can find most of the application configuration by opening the web.c
 2.  Go to **Sites** &gt; **AOSWebApplication**.
 3.  Right-click, and then click **Explore** to open File Explorer.
 4.  Open the web.config file in Notepad or another text editor. The following keys are of interest to many developers and administrators:
-    -   **Aos.MetadataDirectory** – This key points to the location of the packages folder that contains platform and application binaries, and also source code. (Source code is available only in development environments.) Typical values are: c:packages, c:AosServicePackagesLocalDirectory, and J:AosServicePackagesLocalDirectory.
+    -   **Aos.MetadataDirectory** – This key points to the location of the packages folder that contains platform and application binaries, and also source code. (Source code is available only in development environments.) Typical values are: c:\packages, c:\AosServicePackagesLocalDirectory, and J:AosServicePackagesLocalDirectory.
     -   **DataAccess.Database** – This key holds the name of the database.
     -   **Aos.AppRoot** – This key points to the root folder of the Application Object Server (AOS) web application.
 
 ### Retail configuration
 
-The Retail software development kit (SDK) is available at C:RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](dev-retail-home-page.md)
--   [Retail SDK overview](retail-sdk-overview.md)
+The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
+-   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](../retail/dev-itpro/dev-retail-home-page.md)
+-   [Retail SDK overview](../retail/dev-itpro/retail-sdk-overview.md)
 -   [Retail POS device activation](https://ax.help.dynamics.com/en/wiki/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications/)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.
 
-1.  Open File Explorer, and go to C:CustomerServiceUnit.
+1.  Open File Explorer, and go to C:\CustomerServiceUnit.
 2.  Right-click **AOSDeploy.cmd**, and then click **Run as administrator**.
 
 This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
