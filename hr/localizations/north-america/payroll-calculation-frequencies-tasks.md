@@ -34,7 +34,13 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how to set up payroll calculation frequencies. Payroll calculation frequencies determine how often payroll contributions and deductions take place throughout the payroll process.
 
-Some earnings, contributions, and deductions should be processed in specific pay periods. For example, the worker deduction for medical insurance might be processed in the first pay period of every month, and the employer contribution might be processed in the first pay period of every quarter. A car allowance might be processed in the last pay period of the month. You can use payroll calculation frequencies to control which pay periods these payroll elements are processed in. You create the payroll calculation frequencies that you require for your payroll and then assign pay periods to those frequencies. You can then assign the frequencies to earning codes on a worker details page, and to benefit contributions and deductions. **Note:** The payroll calculation frequency and the pay cycle frequency aren't the same. The *pay cycle frequency* determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the *payroll calculation frequency* to select the specific pay periods when specific earnings or other payroll entities should be processed. For more information about pay cycle frequencies, see [Pay cycle and pay period tasks](pay-cycle-pay-period-tasks-sample.md). By default, all earnings, contributions, and deductions are processed in every pay period. If this behavior meets your payroll processing requirements, you don't have to complete the tasks in this topic. The following illustration shows the steps for setting up payroll calculation frequencies. The numbered steps in the illustration correspond to sections later in this topic. [![Steps for setting up payroll calculation frequencies](./media/calc.gif)](./media/calc.gif)
+Some earnings, contributions, and deductions should be processed in specific pay periods. For example, the worker deduction for medical insurance might be processed in the first pay period of every month, and the employer contribution might be processed in the first pay period of every quarter. A car allowance might be processed in the last pay period of the month. 
+
+You can use payroll calculation frequencies to control which pay periods these payroll elements are processed in. You create the payroll calculation frequencies that you require for your payroll and then assign pay periods to those frequencies. You can then assign the frequencies to earning codes on a worker details page, and to benefit contributions and deductions. 
+
+**Note:** The payroll calculation frequency and the pay cycle frequency aren't the same. The *pay cycle frequency* determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the *payroll calculation frequency* to select the specific pay periods when specific earnings or other payroll entities should be processed. For more information about pay cycle frequencies, see [Pay cycle and pay period tasks](pay-cycle-pay-period-tasks-sample.md). 
+
+By default, all earnings, contributions, and deductions are processed in every pay period. If this behavior meets your payroll processing requirements, you don't have to complete the tasks in this topic.
 
 ## Create payroll calculation frequencies
 Before you begin, decide when you will process various payroll elements. Here are some processing frequencies that are typically used:
@@ -53,10 +59,14 @@ Before you begin, decide when you will process various payroll elements. Here ar
 -   Yearly, last pay period of the fiscal year
 -   Yearly, on a specific date
 
-**Note:** The default payroll calculation frequency is All, for all pay periods. Add a frequency and description, and then assign the pay periods that this calculation frequency should occur in to every pay cycle that you want it applied to.
+**Note:** The default payroll calculation frequency is All, for all pay periods. 
+
+Add a frequency and description, and then assign the pay periods that this calculation frequency should occur in to every pay cycle that you want it applied to.
 
 ## Assign pay periods to payroll calculation frequencies
-You can assign pay periods from one or more pay cycles to every payroll calculation frequency. For example, some positions might have a weekly pay cycle, whereas other positions have a semimonthly pay cycle. You might also have a car allowance that should always be processed in the first pay period of the month, regardless of the pay cycle that the worker’s position uses. In this case, you must assign pay periods from both pay cycles to the payroll calculation frequency for the first of the month. **Note:** You can’t delete the payroll calculation frequency after you select pay periods or assign the payroll calculation frequency to any other payroll element.
+You can assign pay periods from one or more pay cycles to every payroll calculation frequency. For example, some positions might have a weekly pay cycle, whereas other positions have a semimonthly pay cycle. You might also have a car allowance that should always be processed in the first pay period of the month, regardless of the pay cycle that the worker’s position uses. In this case, you must assign pay periods from both pay cycles to the payroll calculation frequency for the first of the month. 
+
+**Note:** You can’t delete the payroll calculation frequency after you select pay periods or assign the payroll calculation frequency to any other payroll element.
 
 ## Assign payroll calculation frequencies to payroll elements
 You assign payroll calculation frequencies to payroll elements to control when those payroll elements are processed.
