@@ -53,6 +53,8 @@
 ### [Purchase agreements](procurement-sourcing\purchase-agreements.md)
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
+### [Overview of vendor invoices](accounts-payable\vendor-invoices-overview.md)
+### [Vendor posting profiles](accounts-payable\vendor-posting-profiles.md)
 # Product information management
 ## Product information
 ### [BOM and formula](production-control\bill-of-material-bom.md)
