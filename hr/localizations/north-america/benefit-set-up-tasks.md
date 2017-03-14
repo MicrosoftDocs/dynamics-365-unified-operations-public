@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
 
-Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits. Garnishments and tax levies are also set up as benefits, but the steps for setting them up differ. For more information, see [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md). After you set up benefit elements by using the **Benefit elements** page, you must create the benefits so that they can be assigned to workers. When you create a benefit, you link an option to a benefit plan, designate a benefit period, and assign eligibility rules to the benefit. The following illustration shows the steps that you must follow to set up benefits and mandatory deductions. Each step will be described later in this topic. [![Flow for benefit setup tasks](./media/benefit-setup-1.gif)](./media/benefit-setup-1.gif)
+Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits. Garnishments and tax levies are also set up as benefits, but the steps for setting them up differ. For more information, see [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md). After you set up benefit elements by using the **Benefit elements** page, you must create the benefits so that they can be assigned to workers. When you create a benefit, you link an option to a benefit plan, designate a benefit period, and assign eligibility rules to the benefit. 
 
 ## Setting up benefit elements
 A benefit is a combination of the benefit type, plan, and option:
@@ -200,12 +200,12 @@ Deductions and contributions for the selected benefit plan are included in payro
 
 On the **Accounting** FastTab, after you've selected the legal entity to set the accounting information for, you must enter the following information.
 
-| Field                | Description                                                                                                                                                               |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Field                | Description               |
+|----------------------|---------------------------|
 | Category             | Select the project category to use for the employer contribution. Typically, the **Payroll** category is used. However, your organization might use a different category. |
 | Vendor               | Select the vendor that payments for this plan are paid to.                                                                                                                |
 | Financial dimensions | Enter the default financial dimensions.                                                                                                                                   |
-| Main account         | Select the main accounts to use to post deductions and contributions.                                                                                                     |
+| Main account         | Select the main accounts to use to post deductions and contributions.      |
 
 If the benefit plan is offered by more than one legal entity in your organization, complete this page for each legal entity. On the **Reporting** FastTab, if the benefit must be reported on Form W-2, select the number of the box on Form W-2 where the amount of the payroll deductions or employer contributions for the selected benefit are reported. Then enter the label to use for the boxes.
 
@@ -225,53 +225,14 @@ Your organization offers two retirement plans:
 
 For this example, the rate table looks like this.
 
-Plan
-
-Employee deduction rate
-
-Employer contribution rate
-
-Contribution method
-
-Plan 1
-
-0.0000
-
-0.5000
-
-Percent of employee
-
-0.0300
-
-1.000
-
-Percent of employee
-
-0.0600
-
-0
-
-Fixed percent
-
-Plan 2
-
-0.0100
-
-0.0100
-
-Fixed percent
-
-0.0300
-
-0.0200
-
-Fixed percent
-
-0.0600
-
-0.0300
-
-Fixed percent
+|Plan | Employee deduction rate |Employee contribution rate | Contribution method | 
+|---|---|---|---|
+| Plan 1 | 0.0000 | 0.5000 | Percent of employee |
+| Plan 1 | 0.0300 | 1.000 | Percent of employee |
+| Plan 1 | 0.0600 | 0 | Fixed percent |
+| Plan 2 | 0.0100 | 0.0100 | Fixed percent |
+| Plan 2 | 0.0300 | 0.0200 | Fixed percent |
+| Plan 2 | 0.0600 | 0.0300 | Fixed percent |
 
 Two tier types are available on the **Contribution calculation rates** page.
 
