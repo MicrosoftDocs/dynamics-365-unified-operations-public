@@ -40,8 +40,8 @@ The sum of the years' digits method of depreciation (SYD) is one of the accelera
 
 To create a depreciation profile:
 
--   On the **Fixed assets parameters** page, select the **SYDM and DRBM** depreciation methods.
--   Create a new depreciation profile. Use the method of either **Sum year digits** or **Double reducing balance**.
--   Create a book for the depreciation method, use either **Sum year digits** or **Double reducing balance**.
+1. On the **Fixed assets parameters** page, select the **SYDM and DRBM** depreciation methods.
+2. Create a new depreciation profile. Use the method of either **Sum year digits** or **Double reducing balance**.
+3. Create a book for the depreciation method, use either **Sum year digits** or **Double reducing balance**.
 
 
