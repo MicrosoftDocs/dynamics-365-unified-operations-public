@@ -112,17 +112,16 @@ u### [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
 ### [Production posting](production-control\production-posting.md)
 ### [Registration for manufacturing execution](production-control\registration-manufacturing-execution.md)
 # Sales and marketing
+## [Sales home page](sales-marketing\sales.md)
+## [Marketing](sales-marketing\overview-sales-marketing.md)
 ## Sales orders
-### [Sales home page](sales-marketing\sales.md)
-### [Sales and marketing](sales-marketing\overview-sales-marketing.md)
 ### [Order promising](sales-marketing\delivery-dates-available-promise-calculations.md)
 ### [Order entry deadlines](sales-marketing\order-entry-deadlines.md)
 ### [Direct deliveries](sales-marketing\direct-deliveries.md)
 ### [Delivery schedules](sales-marketing\delivery-schedules.md)
 ### [Serial numbers in the sales process](register-serial-numbers-sales-process.md)
 ### [Reservation from same batch](reserve-same-batch-sales-order.md)
-## Sales agreements
-### [Sales agreements](sales-marketing\sales-agreements.md)
+## [Sales agreements](sales-marketing\sales-agreements.md)
 ## Sales quotations
 ### [Price simulation](sales-marketing\price-simulation.md)
 ## Returns
