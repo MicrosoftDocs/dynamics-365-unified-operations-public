@@ -14,9 +14,9 @@
 ## [Consignment](inventory-management\consignment.md)
 ## [Set up consignment](inventory-management\set-up-consignment.md)
 ## Quality management
+## [Nonconformance management](inventory-management\enable-nonconformance-management.md)
 ## [Quarantine order](inventory-management\quarantine-orders.md)
 ## [Quality management process](inventory-management\quality-management-processes.md)
-## [Nonconformance management](inventory-management\enable-nonconformance-management.md)
 # Trace item and batch
-## [Trace item and raw material](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
 ## [Merge inventory batch](inventory-management\merge-inventory-batches.md)
+## [Trace item and raw material](inventory-management\trace-items-raw-materials-inventory-production-sales.md)
