@@ -37,13 +37,13 @@ This topic lists Help content for country/region-specific functionality in Dynam
 Localization requirements
 -------------------------
 
-[Regulatory watch and regulatory update communication](dev-itpro/localization-requirements-regulatory-watch-communication.md)
-[Separate localization models](dev-itpro/localization-requirements-separate-localization-models.md)
-[Apply country/region context](dev-itpro/localization-requirements-apply-country-context.md)
-[Regulatory certifications](dev-itpro/localization-requirements-regulatory-certifications.md)
-[Classify localization features](dev-itpro/localization-requirements-classify-localization-features.md)
-[Create an electronic reporting configuration](dev-itpro/localization-requirements-electronic-reporting-configuration.md)
-[Inform Microsoft about country/region regulation alerts and track the status of regulatory features](inform-msft-new-countryregion-regulations.md)
+-   [Regulatory watch and regulatory update communication](dev-itpro/localization-requirements-regulatory-watch-communication.md)
+-   [Separate localization models](dev-itpro/localization-requirements-separate-localization-models.md)
+-   [Apply country/region context](dev-itpro/localization-requirements-apply-country-context.md)
+-   [Regulatory certifications](dev-itpro/localization-requirements-regulatory-certifications.md)
+-   [Classify localization features](dev-itpro/localization-requirements-classify-localization-features.md)
+-   [Create an electronic reporting configuration](dev-itpro/localization-requirements-electronic-reporting-configuration.md)
+-   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](dev-itpro/submit-localization-alerts.md)
 
 ## Electronic reporting
 -   [Electronic reporting overview](general-electronic-reporting-ger-2.md)
@@ -51,7 +51,7 @@ Localization requirements
 -   [Electronic reporting destinations](electronic-reporting-destinations.md)
 -   [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 
-## Country/regionspecific help topics
+## Country/region specific help topics
 The following sections list help topics by country/region.
 
 ### Australia
@@ -74,7 +74,7 @@ The following sections list help topics by country/region.
 ### China
 
 -   [Chinese vouchers](financials/localizations/asia-pacific/chinese-vouchers.md)
--   [Import the Chinese Golden Tax data entity (Task Guide)](financials/localizations/asia-pacific/import-chinese-golden-tax-data-entity.md)
+-   [Import the Chinese Golden Tax data entity](financials/localizations/asia-pacific/import-chinese-golden-tax-data-entity.md)
 -   [Configure tax integration for China](financials/localizations/asia-pacific/configure-tax-integration-china.md)
 -   [Chinese tax integration modification for VAT customer invoices FAQ](financials/localizations/asia-pacific/chn-chinese-tax-integration-vat-customer-invoices.md)
 -   Fixed assets
@@ -87,40 +87,40 @@ The following sections list help topics by country/region.
 ### The Czech Republic
 
 -   Fixed asset depreciation
-    -   [Depreciation rounding](fiancials/localizations/europe/eeu-depreciation-rounding.md)
-    -   [Half year depreciation on fixed asset disposal for the Czech Republic](fiancials/localizations/europe/cze-half-depreciation-fixed-asset-disposal.md)
-    -   [Depreciation suspension (holidays)](fiancials/localizations/europe/cze-depreciation-suspension-holidays.md)
-    -   [Fixed assets depreciation methods for the Czech Republic](fiancials/localizations/europe/cze-fixed-assets-depreciation.md)
--   [VAT statement for the Czech Republic](cz-vat-statement-details-for-czech-republic.md)
--   [Advance holders](fiancials/localizations/europe/advance-holders.md)
-    -   [Advance holder transactions](fiancials/localizations/europe/advance-holders-transactions.md)
--   [Split periods in periodic journals](fiancials/localizations/europe/create-post-periodic-journals.md)
--   [Set up signers for print forms](fiancials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
--   [Update how amounts are displayed on reports and documents](fiancials/localizations/europe/eeu-amount-printing-forms.md)
+    -   [Depreciation rounding](/fiancials/localizations/europe/eeu-depreciation-rounding.md)
+    -   [Half year depreciation on fixed asset disposal for the Czech Republic](/fiancials/localizations/europe/cze-half-depreciation-fixed-asset-disposal.md)
+    -   [Depreciation suspension (holidays)](/fiancials/localizations/europe/cze-depreciation-suspension-holidays.md)
+    -   [Fixed assets depreciation methods for the Czech Republic](/fiancials/localizations/europe/cze-fixed-assets-depreciation.md)
+-   [VAT statement for the Czech Republic](/fiancials/localizations/europe/cz-vat-statement-details-for-czech-republic.md)
+-   [Advance holders](/fiancials/localizations/europe/advance-holders.md)
+    -   [Advance holder transactions](/fiancials/localizations/europe/advance-holders-transactions.md)
+-   [Split periods in periodic journals](/fiancials/localizations/europe/create-post-periodic-journals.md)
+-   [Set up signers for print forms](/fiancials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
+-   [Update how amounts are displayed on reports and documents](/fiancials/localizations/europe/eeu-amount-printing-forms.md)
 
 ### Denmark
 
--   [OIOUBL standards for electronic invoicing](fiancials/localizations/europe/oioubl-standards-electronic-invoicing.md)
--   [Invoice issue deadline](fiancials/localizations/europe/invoice-issue-deadline.md)
+-   [OIOUBL standards for electronic invoicing](/fiancials/localizations/europe/oioubl-standards-electronic-invoicing.md)
+-   [Invoice issue deadline](/fiancials/localizations/europe/invoice-issue-deadline.md)
 
 ### Estonia
 
--   [Advance holders](localizations/europe/advance-holders.md)
-    -   [Advance holder transactions](fiancials/localizations/europe/advance-holders-transactions.md)
--   [Split periods in periodic journals](financials/localizations/europe/create-post-periodic-journals.md)
--   [Set up signers for print forms](financials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
--   [Update how amounts are displayed on reports and documents](financials/localizations/europe/eeu-amount-printing-forms.md)
+-   [Advance holders](/financials/localizations/europe/advance-holders.md)
+    -   [Advance holder transactions](/fiancials/localizations/europe/advance-holders-transactions.md)
+-   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals.md)
+-   [Set up signers for print forms](/financials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
+-   [Update how amounts are displayed on reports and documents](/financials/localizations/europe/eeu-amount-printing-forms.md)
 
 ### Europe
 
--   [EU Entry certificates](financials/localizations/europe/entry-certificates.md)
--   [EU Sales list reporting](financials/localizations/europe/eu-sales-list.md)
--   [SEPA direct debit overview](financials/localizations/europe/sepa-direct-debit-overview.md)
--   [SEPA credit transfer overview](financials/localizations/europe/sepa-credit-transfer.md)
--   [Intrastat](financials/localizations/europe/intrastat.md)
--   [VAT reporting for Europe](financials/localizations/europe/eu-vat-reporting.md)
--   [File formats for methods of payment](financials/localizations/europe/select-file-formats-for-the-method-of-payments.md)
--   [Payment slip report for Europe](financials/localizations/europe/eur-payment-slip-report-giro.md)
+-   [EU Entry certificates](/financials/localizations/europe/entry-certificates.md)
+-   [EU Sales list reporting](/financials/localizations/europe/eu-sales-list.md)
+-   [SEPA direct debit overview](/financials/localizations/europe/sepa-direct-debit-overview.md)
+-   [SEPA credit transfer overview](/financials/localizations/europe/sepa-credit-transfer.md)
+-   [Intrastat](/financials/localizations/europe/intrastat.md)
+-   [VAT reporting for Europe](/financials/localizations/europe/eu-vat-reporting.md)
+-   [File formats for methods of payment](/financials/localizations/europe/select-file-formats-for-the-method-of-payments.md)
+-   [Payment slip report for Europe](/financials/localizations/europe/eur-payment-slip-report-giro.md)
 
 ### France
 
@@ -132,108 +132,107 @@ The following sections list help topics by country/region.
 -   [NAF codes and siret numbers](financials/localizations/europe/naf-codes-siret-numbers.md)
 
 ### Germany
-[Additional acquisition depreciation](financials/localizations/europe/additional-acquisition-depreciation.md)
-[Invoice issue deadline](financials/localizations/europe/invoice-issue-deadline.md)
-[German audit file (GDPdU/GoBD)](financials/localizations/europe/gdpdu-audit-data-export.md)
-[German journal list report](financials/localizations/europe/german-journal-list-report.md)
-[Print a separate label for credit memos that originate from sales (Task Guide)](financials/localizations/europe/print-separate-label-credit-memo-originating-sales-deu.md)
+[Additional acquisition depreciation](/financials/localizations/europe/additional-acquisition-depreciation.md)
+[Invoice issue deadline](/financials/localizations/europe/invoice-issue-deadline.md)
+[German audit file (GDPdU/GoBD)](/financials/localizations/europe/gdpdu-audit-data-export.md)
+[German journal list report](/financials/localizations/europe/german-journal-list-report.md)
+[Print a separate label for credit memos that originate from sales (Task Guide)](/financials/localizations/europe/print-separate-label-credit-memo-originating-sales-deu.md)
 
 ### Hungary
 
--   [Advance holders](financials/localizations/europe/advance-holders.md)
--   [Advance holder transactions](financials/localizations/europe/advance-holders-transactions.md)
--   [Split periods in periodic journals](financials/localizations/europe/create-post-periodic-journals.md)
--   [Set up signers for print forms](financials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
--   [Update how amounts are displayed on reports and documents](financials/localizations/europe/eeu-amount-printing-forms.md)
+-   [Advance holders](/financials/localizations/europe/advance-holders.md)
+-   [Advance holder transactions](/financials/localizations/europe/advance-holders-transactions.md)
+-   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals.md)
+-   [Set up signers for print forms](/financials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
+-   [Update how amounts are displayed on reports and documents](/financials/localizations/europe/eeu-amount-printing-forms.md)
 
 ### Ireland
 
--   [Invoice issue deadline](financials/localizations/europe/invoice-issue-deadline.md)
+-   [Invoice issue deadline](/financials/localizations/europe/invoice-issue-deadline.md)
 
 ### Italy
 
--   [Italian black list report](financials/localizations/europe/italian-black-list-report.md)
--   [OIOUBL standards for electronic invoicing](financials/localizations/europe/oioubl-standards-electronic-invoicing.md)
+-   [Italian black list report](/financials/localizations/europe/italian-black-list-report.md)
+-   [OIOUBL standards for electronic invoicing](/financials/localizations/europe/oioubl-standards-electronic-invoicing.md)
 
 ### Japan
 
--   [Fixed asset depreciation](financials/localizations/asia-pacific/fixed-asset-depreciation-japan.md)
--   [Set up reduction entries for fixed assets (Task Guide)](financials/localizations/asia-pacific/set-up-reduction-entry-fixed-assets.md)
--   [Equally divided depreciation method](financials/localizations/asia-pacific/equally-divided-depreciation-method.md)
--   [Allocation rules for fixed assets](financials/localizations/asia-pacific/allocation-rules-fixed-assets.md)
--   [Set up asset retirement obligation for fixed assets (Task Guide)](financials/localizations/asia-pacific/set-up-asset-retirement-obligation-fixed-assets.md)
--   [Fixed asset impairment management on cash generating unit](financials/localizations/asia-pacific/fixed-asset-impairment-accounting-cash-generate-unit.md)
--   [Consolidated invoices](financials/localizations/asia-pacific/consolidate-invoices.md)
--   [Bank payment fees covered by vendors](financials/localizations/asia-pacific/bank-payment-fees-vendors.md)
+-   [Fixed asset depreciation](/financials/localizations/asia-pacific/fixed-asset-depreciation-japan.md)
+-   [Set up reduction entries for fixed assets](/financials/localizations/asia-pacific/set-up-reduction-entry-fixed-assets.md)
+-   [Equally divided depreciation method](/financials/localizations/asia-pacific/equally-divided-depreciation-method.md)
+-   [Allocation rules for fixed assets]/(financials/localizations/asia-pacific/allocation-rules-fixed-assets.md)
+-   [Set up asset retirement obligation for fixed assets](/financials/localizations/asia-pacific/set-up-asset-retirement-obligation-fixed-assets.md)
+-   [Fixed asset impairment management on cash generating unit](/financials/localizations/asia-pacific/fixed-asset-impairment-accounting-cash-generate-unit.md)
+-   [Consolidated invoices](/financials/localizations/asia-pacific/consolidate-invoices.md)
+-   [Bank payment fees covered by vendors](/financials/localizations/asia-pacific/bank-payment-fees-vendors.md)
 
 ### Latvia
 
--   [Advance holders](financials/localizations/europe/advance-holders.md)
--   [Advance holder transactions](financials/localizations/europe/advance-holders-transactions.md)
--   [Split periods in periodic journals](financials/localizations/europe/create-post-periodic-journals.md)
--   [Set up signers for print forms](financials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
--   [Update how amounts are displayed on reports and documents](financials/localizations/europe/eeu-amount-printing-forms.md)
+-   [Advance holders](/financials/localizations/europe/advance-holders.md)
+-   [Advance holder transactions](/financials/localizations/europe/advance-holders-transactions.md)
+-   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals.md)
+-   [Set up signers for print forms](/financials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
+-   [Update how amounts are displayed on reports and documents](/financials/localizations/europe/eeu-amount-printing-forms.md)
 
 ### Lithuania
 
--   [Advance holders](fiancials/localizations/europe/advance-holders.md)
-    -   [Advance holder transactions](fiancials/localizations/europe/advance-holders-transactions.md)
--   [Split periods in periodic journals](fiancials/localizations/europe/create-post-periodic-journals.md)
--   [Set up signers for print forms ](fiancials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
--   [Update how amounts are displayed on reports and documents](fiancials/localizations/europe/eeu-amount-printing-forms.md)
+-   [Advance holders](/fiancials/localizations/europe/advance-holders.md)
+    -   [Advance holder transactions](/fiancials/localizations/europe/advance-holders-transactions.md)
+-   [Split periods in periodic journals](/fiancials/localizations/europe/create-post-periodic-journals.md)
+-   [Set up signers for print forms ](/fiancials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
+-   [Update how amounts are displayed on reports and documents](/fiancials/localizations/europe/eeu-amount-printing-forms.md)
 
 ### Mexico
 
--   [DIOT declaration statement](financials/localizations/latin-america/diot-declaration-statement.md)
--   [Electronic ledger accounting statements](financials/localizations/latin-america/electronic-ledger-accounting-statements-mexico.md)
--   [Adjustment inflation declaration report](financials/localizations/latin-america/adjustment-inflation-declaration-report.md)
--   [ISR declaration report and supporting processes](financials/localizations/latin-america/mex-isr-declaration-report-supporting-processes.md)
--   [Electronic invoices (CFDI)](financials/localizations/latin-america/electronic-invoices-mexico.md)
+-   [DIOT declaration statement](/financials/localizations/latin-america/diot-declaration-statement.md)
+-   [Electronic ledger accounting statements](/financials/localizations/latin-america/electronic-ledger-accounting-statements-mexico.md)
+-   [Adjustment inflation declaration report](/financials/localizations/latin-america/adjustment-inflation-declaration-report.md)
+-   [ISR declaration report and supporting processes](/financials/localizations/latin-america/mex-isr-declaration-report-supporting-processes.md)
+-   [Electronic invoices (CFDI)](/financials/localizations/latin-america/electronic-invoices-mexico.md)
    
 ### Malaysia
 
--   [Goods and services tax (GST)](financials/localizations/asia-pacific/gst-malaysia.md)
+-   [Goods and services tax (GST)](/financials/localizations/asia-pacific/gst-malaysia.md)
 
 ### Netherlands
 
--   [Invoice issue deadline](fiancials/localizations/europe/invoice-issue-deadline.md)
+-   [Invoice issue deadline](/fiancials/localizations/europe/invoice-issue-deadline.md)
 
 ### New Zealand
 
--   [Bank file formats](financials/localizations/asia-pacific/set-up-method-of-payment-pay-vendors-australian-banks.md)
+-   [Bank file formats](/financials/localizations/asia-pacific/set-up-method-of-payment-pay-vendors-australian-banks.md)
 
 ### Norway
 
--   [Nets import format](fiancials/localizations/europe/nor-nets-import-format.md)
--   [OIOUBL standards for electronic invoicing](fiancials/localizations/europe/oioubl-standards-electronic-invoicing.md)
+-   [Nets import format](/fiancials/localizations/europe/nor-nets-import-format.md)
+-   [OIOUBL standards for electronic invoicing](/fiancials/localizations/europe/oioubl-standards-electronic-invoicing.md)
 
 ### Poland
 
--   [Advance holders](fiancials/localizations/europe/advance-holders.md)
-    -   [Advance holder transactions](fiancials/localizations/europe/advance-holders-transactions.md)
--   [Split periods in periodic journals](fiancials/localizations/europe/create-post-periodic-journals.md)
--   [Set up signers for print forms](fiancials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
--   [Update how amounts are displayed on reports and documents](fiancials/localizations/europe/eeu-amount-printing-forms.md)
+-   [Advance holders](/fiancials/localizations/europe/advance-holders.md)
+    -   [Advance holder transactions](/fiancials/localizations/europe/advance-holders-transactions.md)
+-   [Split periods in periodic journals](/fiancials/localizations/europe/create-post-periodic-journals.md)
+-   [Set up signers for print forms](/fiancials/localizations/europe/eeu-set-up-signers-for-printing-forms.md)
+-   [Update how amounts are displayed on reports and documents](/fiancials/localizations/europe/eeu-amount-printing-forms.md)
 
 
 ### Spain
 
--   [OIOUBL standards for electronic invoicing](fiancials/localizations/europe/oioubl-standards-electronic-invoicing.md)
-
-### Sweden
-
--   [Import payment formats for Sweden (Task Guide)](fiancials/localizations/europe/sweden-payment-formats-import.md)
+-   [OIOUBL standards for electronic invoicing](/fiancials/localizations/europe/oioubl-standards-electronic-invoicing.md)
 
 ### Switzerland
 
--   [ESR customer payments import](fiancials/localizations/europe/che-esr-customer-payments-import.md)
+-   [ESR customer payments import](/fiancials/localizations/europe/che-esr-customer-payments-import.md)
 
 ### United Kingdom
 
--   [Invoice issue deadline](fiancials/localizations/europe/invoice-issue-deadline.md)
--   [The Construction Industry Scheme for the United Kingdom](fiancials/localizations/europe/construction-industry-scheme.md)
+-   [Invoice issue deadline](/fiancials/localizations/europe/invoice-issue-deadline.md)
+-   [The Construction Industry Scheme for the United Kingdom](/fiancials/localizations/europe/construction-industry-scheme.md)
 
 ### United States
 
--   [Year-end 1099 reporting](financials/localizations/north-america/year-end-1099-reporting.md)
--   [Form I-9 verification](hr/localizations/north-america/form-i-9-verification.md)
+-   [Year-end 1099 reporting](/financials/localizations/north-america/year-end-1099-reporting.md)
+-   [Form I-9 verification](/hr/localizations/north-america/form-i-9-verification.md)
+-   [Payroll](/hr/localizations/north-america/payroll)
+    -   [Tax codes, tax groups, and posting definitions FAQ](/financials/localizations/north-america/tax-codes-tax-groups-posting-definitions)
+    
