@@ -8,7 +8,7 @@
 ### [Generate a statistical baseline forecast](master-planning\generate-statistical-baseline-forecast.md)
 ### [Make manual adjustment to the baseline forecast](master-planning\manual-adjustments-baseline-forecast.md)
 ### [Authorize an adjusted forecast](master-planning\authorize-adjusted-forecast.md)
-### [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
+u### [Monitor forecast accuracy](master-planning\monitor-forecast-accuracy.md)
 ### [Remove outlier from historical transaction data](master-planning\remove-historical-outliers-calculating-demand-forecast.md)
 ### [Reduction key](master-planning\reduction-keys.md)
 ## Master plan
@@ -51,6 +51,7 @@
 ### [Vendor collaboration mobile workspace](production-control\vendor-collaboration-mobile-workspace.md)
 ### [Vendor portal user security](procurement-sourcing\configure-security-vendor-portal-users.md)
 ## Prices and discounts
+### [Purchase agreements](procurement-sourcing\purchase-agreements.md)
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
 # Product information management
