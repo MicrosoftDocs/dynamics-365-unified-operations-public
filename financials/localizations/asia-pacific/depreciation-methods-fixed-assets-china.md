@@ -35,9 +35,9 @@ ms.dyn365.ops.version: Version 1611
 This topic describes the depreciation method set up for legal entities in China.
 
 The sum of the years' digits method of depreciation (SYD) is one of the accelerated depreciation techniques that is based on the assumption that assets are generally more productive when they are new and their productivity decreases as they become old. The formula to calculate depreciation under SYD method is:
-```
-*SYD Depreciation = Depreciable base × (Remaining useful life/Sum of the  years digits)*
-```
+
+> *SYD Depreciation = Depreciable base × (Remaining useful life/Sum of the  years digits)*
+
 To create a depreciation profile:
 
 -   On the **Fixed assets parameters** page, select the **SYDM and DRBM** depreciation methods.
