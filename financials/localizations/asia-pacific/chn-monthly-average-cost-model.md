@@ -51,8 +51,8 @@ In addition to the standard inventory costing methods, the monthly average cost 
 
 When you run a monthly inventory closing by using the monthly average cost model, all receipts for the month are settled against an issued transaction, which represents the total received quantity and value for that month. This issued transaction has a corresponding receipt transaction, from which all inventory transaction issues will be settled. In this manner, all issue are allocated the same average cost. The issued transaction and receipt transaction can be seen as a transfer, which is named the weighted average inventory closing transfer.
 
-[!NOTE]
-If only one receipt occurred in or before the month, you do not have to average the value. This is because all issue are settled from the receipt, and the transfer is not created. Likewise, if only one issue occurs in the month, there are no receipts from which to average the value, and the transfer is not created.
+> [!NOTE]
+> If only one receipt occurred in or before the month, you do not have to average the value. This is because all issue are settled from the receipt, and the transfer is not created. Likewise, if only one issue occurs in the month, there are no receipts from which to average the value, and the transfer is not created.
 
 The monthly average cost model is used to calculate the weighted average cost of an item at the end of the month. This average cost is used to adjust all issued transactions during the month, so that all output transactions for the month carry the same unit cost. For example, when an issued transaction is posted, its unit cost is calculated as the average cost at that time. Therefore, the unit costs for all issued transactions will be different. At the end of the month, when you run the monthly average cost adjustment, all unit costs that are generated during the month are adjusted to a uniform monthly average cost. The adjustment is based on the following formula:
 ```
