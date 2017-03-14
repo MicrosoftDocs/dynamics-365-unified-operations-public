@@ -18,6 +18,9 @@ For example, there are posts about:
 ## White papers
 * The <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Operations - Getting Started with Cost Accounting</a> white paper provides the basic steps to configure Microsoft Dynamics 365 for Operations – Cost Accounting in order to make the actual cost analysis. It also provides a series of procedures that you can complete in the order which they appear.
 * <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Dynamics 365 for Operations - Lean Manufacturing: Capable to Promise and Kanban Job Scheduling</a>
+* The <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Operations - BOM Calculation by Using a Costing Sheet</a> white paper describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. You can do exercises in the Appendix for learning purposes, and use the knowledge that you’ve gained from reading this document to do BOM calculation analysis.
 
 ## Videos
 * <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Process inbound ASNs in Warehouse management</a> 
+
+* Will add more
