@@ -43,7 +43,9 @@ Open in Excel experiences are:
 -   Dynamically generated or based on a pre-defined template.
 -   Editable and refreshable via the Excel Data Connector App.
 
-The following image shows the **Excel Data Connector App** inside the Journal Entry in Microsoft.[![off101a](./media/off101a.png)](./media/off101a.png)
+The following image shows the **Excel Data Connector App** inside the Journal Entry in Microsoft.
+
+[![off101a](./media/off101a.png)](./media/off101a.png)
 
 ## Where are the Open in Excel experiences?
 Open in Excel experiences are usually found under in the Open in Excel section of the Open in Microsoft Office menu, but an explicit button can be added for these experiences.
@@ -54,7 +56,9 @@ The Export to Excel and experiences are both found in the Open in Microsoft Off
 -   The Export to Excel options are static exports of grid data. Each one corresponds to a visible grid. All the grid data for the current filter is placed into a workbook.
 -   The Open in Excel experiences utilize the Excel Data Connector App to facilitate refresh and publish.
 
-The following image shows the **Open in Microsoft O**ffice menu on the **Fleet Customers** form with a template **Open in Excel** option, a generated **Open in Excel** option, and a static **Export to Excel** option.[![off101b](./media/off101b.png)](./media/off101b.png)
+The following image shows the **Open in Microsoft O**ffice menu on the **Fleet Customers** form with a template **Open in Excel** option, a generated **Open in Excel** option, and a static **Export to Excel** option.
+
+[![off101b](./media/off101b.png)](./media/off101b.png)
 
 ## When will an entity show as an Open in Excel option?
 When an entity has the same root datasource (table) as a form, it will be added as an option in the Open in Excel section of the Open in Microsoft Office menu. This is referred to as a “generated” option.
@@ -63,7 +67,9 @@ When an entity has the same root datasource (table) as a form, it will be added 
 The default fields that will be added into the workbook are the key and mandatory fields of the entity. If a different set of fields should be provided by default, then those fields can be added into the **AutoReport field group** on the entity. The following image show the Visual Studio view of the AutoReport field group for the FMCustomerEntity.[![off101c](./media/off101c.png)](./media/off101c.png)
 
 ## What fields will be shown when an entity is the target of a lookup?
-When a relationship is defined between two entities, if the identifier for one entity is shown on the other then the fields that will be shown in that lookup are either the key fields, or the fields in the **AutoLookup field group** if it is not empty. Relationship lookups are not currently supported, but they will eventually be displayed in the app in a similar way to the enumeration lookups. Excel Data Connector App with an enumeration lookup is shown below.[![off101d](./media/off101d.png)](./media/off101d.png)
+When a relationship is defined between two entities, if the identifier for one entity is shown on the other then the fields that will be shown in that lookup are either the key fields, or the fields in the **AutoLookup field group** if it is not empty. Relationship lookups are not currently supported, but they will eventually be displayed in the app in a similar way to the enumeration lookups. Excel Data Connector App with an enumeration lookup is shown below.
+
+[![off101d](./media/off101d.png)](./media/off101d.png)
 
 ## What should be done to make an entity ready for use in Excel?
 Define the AutoReport and AutoLookup field groups and test them using the Excel App design experience.
@@ -116,7 +122,9 @@ The Excel Data Connector App is injected into a workbook when a generated Open i
 -   The **View related** form will navigate to the form relating to the currently selected entity to more easily review the effect of data changes made in Excel.
 -   The **Get entity record count** button will show the record count for the currently selected entity. Currently, the Excel Data Connector App cannot handle large (tall and wide) data sets. Any unfiltered entity with more than 10,000 records is at risk of crashing the app.
 
-The following image shows the **Excel workbook designer** form.[![off101e](./media/off101e.png)](./media/off101e.png) After obtaining a workbook containing the Excel Data Connector App, additional datasources can be added via the **Design** button. Currently, datasources cannot be removed. The following image shows the Excel Data Connector App with the **Design** button highlighted.[![off101f](./media/off101f.png)](./media/off101f.png)
+The following image shows the **Excel workbook designer** form.[![off101e](./media/off101e.png)](./media/off101e.png) After obtaining a workbook containing the Excel Data Connector App, additional datasources can be added via the **Design** button. Currently, datasources cannot be removed. The following image shows the Excel Data Connector App with the **Design** button highlighted.
+
+[![off101f](./media/off101f.png)](./media/off101f.png)
 
 ## When will a template show as an Open in Excel option?
 When a template listed in the **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** form (DocuTemplate) has ShowInOpenInOfficeMenu set to Yes and has the same root datasource (table) as the current form, it will be added as an option in the Open in Excel section of the Open in Microsoft Office menu. The following image shows the **Document templates** form.[![off101g](./media/off101g.png)](./media/off101g.png)
