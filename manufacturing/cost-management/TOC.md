@@ -1,4 +1,5 @@
 # [Cost management home page](cost-management\cost-management.md)
+# [Cost management content pack](https://docs.microsoft.com/en-us/operations/dev-itpro/analytics-bi-reporting/cost-management-content-pack?toc=/<manufacturing/toc.json)
 # Predetermined cost
 ## [Costing sheet](cost-management\costing-sheets.md)
 ## [Costing version](cost-management\costing-versions.md)
@@ -40,3 +41,4 @@
 ## [Update standard cost in a non-manufacturing environment](cost-management\update-standard-costs-non-manufacturing-environment.md)
 # Data entity
 ## [Data entity: Costing](cost-management\data-entities-costing.md)
+
