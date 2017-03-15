@@ -165,7 +165,6 @@ You’ll modify the default time trend chart so that it only shows the trend for
 2.  Select **RevenuePerRentalAutoTransmission &gt; Trends** node. Right-click and select **New Trend**.
 3.  Right-click the newly created node and select **Properties**. Modify following property values.
 
-
     | **Property** | **Value**       |
     |--------------|-----------------|
     | Name         | MyTimeTrend     |
@@ -183,7 +182,6 @@ You’ll modify the default top contributors chart to reflect the top auto trans
 
 1.  Select **RevenuePerRentalAutoTransmission &gt;** **Trends**. Right-click and select **New Trend**.
 2.  Select the newly created bode. Right-click and select properties. Modify following property value.
-
 
     | **Property** | **Value**             |
     |--------------|-----------------------|
