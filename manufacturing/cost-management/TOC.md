@@ -1,4 +1,7 @@
+
 # [Cost management home page](cost-management.md)
+# [Cost management content pack](https://docs.microsoft.com/en-us/operations/dev-itpro/analytics-bi-reporting/cost-management-content-pack?toc=/manufacturing/toc.json)
+
 # Predetermined cost
 ## [Costing sheet](costing-sheets.md)
 ## [Costing version](costing-versions.md)
@@ -40,3 +43,4 @@
 ## [Update standard cost in a non-manufacturing environment](update-standard-costs-non-manufacturing-environment.md)
 # Data entity
 ## [Data entity: Costing](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-costing)
+
