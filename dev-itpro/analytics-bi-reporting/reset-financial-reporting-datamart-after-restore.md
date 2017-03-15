@@ -63,7 +63,7 @@ These services will have open connections to the Dynamics 365 for Operations dat
 ## Reset
 #### Locate the latest DataUpgrade.zip package
 
-Locate the latest DataUpgrade.zip package using the directions found in [Download the DataUpgrade.zip script](upgrade-data-to-latest-update.md#download-the-dataupgrade-zip-script). The directions explain how to locate the correct version of the data upgrade package for your environment.
+Locate the latest DataUpgrade.zip package using the directions found in [Download the DataUpgrade.zip script](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-dataupgrade-zip-script). The directions explain how to locate the correct version of the data upgrade package for your environment.
 
 #### Execute scripts against Dynamics 365 for Operations database
 
