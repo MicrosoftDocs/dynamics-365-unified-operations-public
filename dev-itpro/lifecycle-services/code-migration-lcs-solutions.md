@@ -49,5 +49,5 @@ See also
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 
-[Technical Concepts Guide for code migration](developer-landing-page.md#code-migration)
+[Technical Concepts Guide for code migration](..\dev-tools\developer-home-page.md#code-migration)
 

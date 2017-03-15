@@ -172,5 +172,5 @@ See also
 
 [Programming language support](https://ax.help.dynamics.com/en/?p=185901)
 
-[Technical Concepts Guide](developer-landing-page.md)
+[Technical Concepts Guide](developer-home-page.md)
 

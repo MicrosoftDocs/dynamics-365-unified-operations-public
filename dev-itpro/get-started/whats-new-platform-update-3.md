@@ -56,7 +56,7 @@ General
 </tr>
 <tr class="even">
 <td>Extend label files to customize and localize labels.</td>
-<td>You can modify the string values of existing labels and add new languages to existing label files without the need to edit or overlay existing models. Refer to the &quot;Label extensions” section in <a href="customization-overlayering-extensions.md">Customization: Overlayering and extensions</a>.</td>
+<td>You can modify the string values of existing labels and add new languages to existing label files without the need to edit or overlay existing models. Refer to the &quot;Label extensions” section in <a href="..\dev-tools\customization-overlayering-extensions.md">Customization: Overlayering and extensions</a>.</td>
 </tr>
 <tr class="odd">
 <td>Take advantage of seamless servicing and continuous updates.</td>
@@ -67,7 +67,7 @@ General
 <li>Test Essentials</li>
 <li>Corresponding form adaptor models</li>
 </ul>
-Locking the platform paves the way for seamless servicing and continuous update of the Dynamics 365 for Operations platform. If you overlay any of the platform models, you will not be able to upgrade to this release. You will need to refactor your code to use metadata and code extensions. For a tutorial about how to use extensions for customization, see <a href="customize-model-elements-extensions.md">Customize model elements using extensions</a>. You can also refer to <a href="customization-overlayering-extensions.md">Customization: Overlayering and extensions</a>, which is a general topic on customizations. Note: Regarding the Directory model, if your code overlayers elements in the Directory model, you will need to deploy new environments running the latest Dynamics 365 for Operations application. Overlayering the directory model is not supported on environments running the February 2016 or May 2016 releases of the application on top of Platform Update 3.</td>
+Locking the platform paves the way for seamless servicing and continuous update of the Dynamics 365 for Operations platform. If you overlay any of the platform models, you will not be able to upgrade to this release. You will need to refactor your code to use metadata and code extensions. For a tutorial about how to use extensions for customization, see <a href="..\extensions-overlayering\customize-model-elements-extensions.md">Customize model elements using extensions</a>. You can also refer to <a href="..\dev-tools\customization-overlayering-extensions.md">Customization: Overlayering and extensions</a>, which is a general topic on customizations. Note: Regarding the Directory model, if your code overlayers elements in the Directory model, you will need to deploy new environments running the latest Dynamics 365 for Operations application. Overlayering the directory model is not supported on environments running the February 2016 or May 2016 releases of the application on top of Platform Update 3.</td>
 </tr>
 <tr class="even">
 <td>Add a form part to a form extension and use Go to/F9 functionality.</td>
@@ -99,7 +99,7 @@ Locking the platform paves the way for seamless servicing and continuous update 
 </tr>
 <tr class="odd">
 <td>Customize application reports using extensions.</td>
-<td>Avoid the expense and complexity associated with overlayering standard application solutions for common customizations. Dynamics 365 for Operations now includes support for customizing application reports using element extensions. This enhancement means that you can redirect existing menu items to custom reports designs without changing application references. You can also extend the datasets returned by Report Data Providers classes without duplicating or overlayering application code. For detailed information about using extensions for application customizations, see <a href="customize-model-elements-extensions.md">Customize model elements using extensions</a>.</td>
+<td>Avoid the expense and complexity associated with overlayering standard application solutions for common customizations. Dynamics 365 for Operations now includes support for customizing application reports using element extensions. This enhancement means that you can redirect existing menu items to custom reports designs without changing application references. You can also extend the datasets returned by Report Data Providers classes without duplicating or overlayering application code. For detailed information about using extensions for application customizations, see <a href="..\extensions-overlayering\customize-model-elements-extensions.md">Customize model elements using extensions</a>.</td>
 </tr>
 <tr class="even">
 <td>Use built-in document brand management tools to customize modern report designs for core business documents, including Sales Invoices, Purchase Packing Slips, and Vendor Invoice Documents. Simply add the Application Suite Modern Designs model file available on Lifecycle Services (LCS) to your solution.</td>

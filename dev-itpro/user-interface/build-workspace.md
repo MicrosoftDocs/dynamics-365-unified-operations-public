@@ -37,7 +37,7 @@ In this tutorial, you will create a new tile and include it in the summary secti
 Prerequisites
 -------------
 
-For this tutorial, you must access the Microsoft Dynamics AX environment by using Remote Desktop, and you must be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](access-instances.md).
+For this tutorial, you must access the Microsoft Dynamics AX environment by using Remote Desktop, and you must be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md).
 
 ## Key concepts
 -   Learn about and use form patterns that are related to workspaces.
@@ -48,7 +48,7 @@ For this tutorial, you must access the Microsoft Dynamics AX environment by usin
 ## Setup
 ### Import the tutorial project and transactional data
 
-Use Microsoft Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the **FMTDataHelper** class to load data for the Fleet Management tutorial. If this is the first tutorial that you’re working on, review [Access Microsoft Dynamics AX Instances](access-instances.md), and make sure that you provision your administrator user if you’re working on a local virtual machine (VM).
+Use Microsoft Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the **FMTDataHelper** class to load data for the Fleet Management tutorial. If this is the first tutorial that you’re working on, review [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md), and make sure that you provision your administrator user if you’re working on a local virtual machine (VM).
 
 1.  Download the **FMTutorialDataModel.axpp** file from the Microsoft Dynamics Lifecycle Services (LCS) methodology, and copy it to the **Downloads** folder of the VM.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.

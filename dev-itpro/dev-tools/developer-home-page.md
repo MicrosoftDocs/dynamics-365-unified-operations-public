@@ -51,7 +51,7 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 ## Getting started
 -   [Get an evaluation copy](get-evaluation-copy.md)
 -   [LCS101 – Sign up for a subscription](sign-up-preview-subscription.md)
--   [Access development instances](access-instances.md)
+-   [Access development instances](..\dev-tools\access-instances.md)
 -   [Development system requirements](development-system-requirements.md)
 -   [Deprecated reatures](deprecated-features.md)
 -   [Deprecated API’s](deprecated-apis.md)
@@ -146,8 +146,8 @@ The following links (also included in the methodology) describe key concepts and
 
 ## Service environments
 -   [Configure and execute the code upgrade service in Lifecycle Services](configure-execute-code-upgrade.md)
--   [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
--   [Install a binary hotfix or install a deployable package](apply-deployable-package-system.md)
+-   [Download hotfixes from Lifecycle Services](..\servicing\download-hotfix-lcs.md)
+-   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](install-metadata-hotfix-package.md)
 -   [Install retail hotfixes](install-retail-hotfix.md)
 -   [Installing a financial reporting binary hotfix](install-financial-reporting-binary-hotfix.md)
@@ -172,16 +172,16 @@ The client is an HTML web client that runs in all major browsers. For informati
 ## BI and reporting
 ### Tutorials
 
--   [How to create a Power BI report](create-powerbi-report-data.md)
--   [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md)
+-   [How to create a Power BI report](..\analytics-bi-reporting\create-powerbi-report-data.md)
+-   [Create a Power BI report and dashboard](..\analytics-bi-reporting\create-powerbi-report-dashboard.md)
 -   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
--   [Customize App Suite reports using extensions](customize-app-suite-reports-with-extensions.md)
+-   [Customize App Suite reports using extensions](..\analytics-bi-reporting\customize-app-suite-reports-with-extensions.md)
 
 ### Concepts
 
 -   [Analytics](analytics.md)
 -   [Power BI integration](power-bi-integration.md)
--   [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
+-   [Configuring Power BI integration for workspaces](..\analytics-bi-reporting\configure-power-bi-integration.md)
 
 ## Reporting services
 -   [Create next-generation reporting solutions](create-nextgen-reporting-solutions.md)
@@ -195,14 +195,14 @@ The client is an HTML web client that runs in all major browsers. For informati
 ## Data entities and OData
 ### Tutorials
 
--   [Building and consuming data entities](build-consuming-data-entities.md)
+-   [Building and consuming data entities](build-consuming-..\data-entities\data-entities.md)
 -   [Developing an entity and using it for data migration](develop-entity-for-data-migration.md)
 
 ### Concepts
 
--   [Data entities home page](data-entities.md)
+-   [Data entities home page](..\data-entities\data-entities.md)
 -   [OData](odata.md)
--   [Data entities](data-entities.md)
+-   [Data entities](..\data-entities\data-entities.md)
 -   [Introduction to data entities (Office Mix)](https://mix.office.com/watch/1brkpjvhf851m)
 -   [Building a basic data entity (Office Mix)](https://mix.office.com/watch/i53efq3ddtjy)
 -   [Introduction to OData (Office Mix)](https://mix.office.com/watch/i53efq3ddtjy)
@@ -237,7 +237,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 
 ### Concepts
 
--   [In-memory, real-time aggregate models replace SSAS cubes](in-memory-real-time-aggregate-models.md)
+-   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
 -   [Building operational workspaces](build-workspaces.md)
 -   [Tile and lit-caching for workspaces](tile-list-caching-workspaces.md)
 -   [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)
@@ -246,10 +246,10 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Dynamics 365 for Operations mobile platform](mobile-platform.md)
 
 ## Global finance management
--   [Dimension entry control dialog support](dimension-entry-control-dialog-support.md)
--   [Dimension entry control migration](dimension-entry-control-migration.md)
--   [Dimension entry control uptake](dimension-entry-control-uptake.md)
--   [Add dimensions to the Microsoft Excel template](dimensions-overview.md)
+-   [Dimension entry control dialog support](..\financial-dimensions\dimension-entry-control-dialog-support.md)
+-   [Dimension entry control migration](..\financial-dimensions\dimension-entry-control-migration.md)
+-   [Dimension entry control uptake](..\financial-dimensions\dimension-entry-control-uptake.md)
+-   [Add dimensions to the Microsoft Excel template](..\financial-dimensions\dimensions-overview.md)
 -   [Create Open in Office experiences for Excel and Word](office-integration-edit-excel.md)
 -   [Add templates to open lines in Excel menu](add-templates-open-lines-excel-menu.md)
 -   [Segmented entry control dialog support](segmented-entry-control-dialog-support.md)
@@ -258,7 +258,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Segmented Entry control migration walkthrough](segmented-entry-control-conversion.md)
 -   [Segmented entry control parm Specification](segmented-entry-control-parm-method-specification.md)
 -   [Creating exchange rate providers](create-exchange-rate-providers.md)
--   [Financial dimension configuration for integrating applications](financial-dimension-configuration-integration.md)
+-   [Financial dimension configuration for integrating applications](financial-..\financial-dimensions\dimension-configuration-integration.md)
 -   [Activating financial dimensions](activate-financial-dimensions.md)
 -   [Add the ability to look up values for financial dimensions in Microsoft Excel templates](add-dimensions-excel-templates.md)
 

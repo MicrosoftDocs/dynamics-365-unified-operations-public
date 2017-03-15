@@ -40,7 +40,7 @@ Microsoft Dynamics 365 for Operations offers an expanded set of tools to support
 -   Custom reports benefit from enhancements made to standard solutions including updates to business logic in Report Data Provider (RDP), data contracts, and UI Builder classes.
 -   Standard application solutions are unaffected and continue to be available in concert with custom reports.
 
-Report extensions do not break or prevent access to standard application reports. Instead, the platform supports run-time selection of the target report allowing you to choose the appropriate report design based on the context of the user session. For more information about customizations using extensions, see [Customization: Overlayering and extensions](customization-overlayering-extensions.md)
+Report extensions do not break or prevent access to standard application reports. Instead, the platform supports run-time selection of the target report allowing you to choose the appropriate report design based on the context of the user session. For more information about customizations using extensions, see [Customization: Overlayering and extensions](..\dev-tools\..\dev-tools\customization-overlayering-extensions.md)
 
 ## Scenarios
 There are four key scenarios which demonstrate the flexibility available. The first two scenarios involve extending existing RDP classes for custom reporting solutions.

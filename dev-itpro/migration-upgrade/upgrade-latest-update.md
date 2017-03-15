@@ -76,7 +76,7 @@ Use this scenario to update to the latest release of the platform and no appli
 Note: If you have customised platform models scenario 4 explains how you should proceed.
 
 ## Scenario 1: Update to a specific application hotfix
-Use this scenario when one (or a small number of) hotfix is required for a specific issue and business factors, such as time or cost prohibit taking an entire major application update at that moment. It is not necessary to perform a complete upgrade of your application to uptake new features of the application. All features in the current update of the  **application** are available individually on Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download hotfixes from LCS, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
+Use this scenario when one (or a small number of) hotfix is required for a specific issue and business factors, such as time or cost prohibit taking an entire major application update at that moment. It is not necessary to perform a complete upgrade of your application to uptake new features of the application. All features in the current update of the  **application** are available individually on Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download hotfixes from LCS, see [Download hotfixes from Lifecycle Services](..\servicing\download-hotfix-lcs.md).
 
 ## Scenario 2: Upgrade your custom code
 This scenario describes the process for upgrading code from an earlier release to the current release. This process is required before embarking on scenario 3 and is to be completed by a developer before other activities can begin. Code upgrade is needed when you deploy new environments as part of the process of upgrading your application to a new major or cumulative release.
@@ -157,7 +157,7 @@ Regardless of whether you're a live customer or you're still in the implementati
 4.  Install any hotfixes that apply to the environment.
 5.  Upload deployable packages to the LCS Asset library of your project.
 
-For more details on code migration steps, see [Code Migration](developer-landing-page.md#code-migration). After code migration is complete, continue to scenario 3.
+For more details on code migration steps, see [Code Migration](..\dev-tools\developer-home-page.md#code-migration). After code migration is complete, continue to scenario 3.
 
 ## Scenario 3: Upgrade to the most current platform and application update
 These steps apply to customers who are live on an earlier release and want to perform a full upgrade to the most recent platform and application versions. Customers who have already deployed and configured a production environment might also fall into this category, even if they haven't gone live yet. If you are not upgrading your application, but want to upgrade your platform to the latest bits, use scenario 4 below, especially if you have no customizations of the platform models.
@@ -168,7 +168,7 @@ First, upgrade your code as described in scenario 2. This is a developer task a
 
 ### Upgrade your data
 
-Execute the data upgrade process on a copy of your target database – if already live in production then this would mean a copy of production, prior to go-live it would be your most current database. This is a validation process performed by a developer to ensure the data upgrade completes successfully with the specific set of customizations within this environment – and will drive success in the sandbox and production environments later. To copy your database back to a developer environment follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](copy-database-from-azure-sql-to-sql-server.md) To execute the data upgrade process follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
+Execute the data upgrade process on a copy of your target database – if already live in production then this would mean a copy of production, prior to go-live it would be your most current database. This is a validation process performed by a developer to ensure the data upgrade completes successfully with the specific set of customizations within this environment – and will drive success in the sandbox and production environments later. To copy your database back to a developer environment follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](..\database-management\copy-database-from-azure-sql-to-sql-server.md) To execute the data upgrade process follow the steps in [Process for data upgrade for development or demo environments](upgrade-data-to-latest-update.md).
 
 ### Upgrade your sandbox environment
 

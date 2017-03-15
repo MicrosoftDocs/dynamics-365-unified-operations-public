@@ -103,7 +103,7 @@ If you've already installed the demo data, you can skip to the next section.
 9.  Wait until the processing completes. The ongoing processing is indicated at the top of the page by a series of moving dots. The processing is completed when the indicator disappears and the **Time Last Processed** field is updated.
 
 ## Open the FMRental form on the onebox environment
-1.  In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application. For more information, see [Access Microsoft Dynamics AX Instances](access-instances.md).
+1.  In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application. For more information, see [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md).
 2.  Sign in, if prompted.
 3.  Find the **Reservation Management** tile and click to open the Reservation Management workspace. [![](./media/reservationmanagementtile.jpg)](./media/reservationmanagementtile.jpg)
 4.  When the **Reservation Management** workspace opens, click **Current rentals**. [![](./media/reservationmanagementworkspace.jpg)](./media/reservationmanagementworkspace.jpg)

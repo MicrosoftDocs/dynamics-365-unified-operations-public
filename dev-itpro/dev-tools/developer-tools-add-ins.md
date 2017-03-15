@@ -44,7 +44,7 @@ Dynamics 365 for Operations ships with the **Form statistics** add-in, which pro
 See also
 --------
 
-[Developer home page](developer-landing-page.md)
+[Developer home page](developer-home-page.md)
 
 [Development tools](development-tools.md)
 

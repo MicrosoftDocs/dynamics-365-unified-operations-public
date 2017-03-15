@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Use this tutorial to download the Microsoft Dynamics AX hotfixes from Lifecycle Services (LCS).
 
-This tutorial will guide you through downloading the newest version of Microsoft Dynamics hotfix from Lifecycle services (LCS).  This tutorial is a part of the [Servicing environments](developer-landing-page.md#servicing-environments) content.
+This tutorial will guide you through downloading the newest version of Microsoft Dynamics hotfix from Lifecycle services (LCS).  This tutorial is a part of the [Servicing environments](..\dev-tools\developer-home-page.md#servicing-environments) content.
 
 1.  Log in to LCS with your credentials.
 2.  Select an environment from the LCS project.
@@ -43,5 +43,5 @@ This tutorial will guide you through downloading the newest version of Microsoft
 5.  Select the applicable KBs, and then click **Add hotfix to package**. [![](./media/add-hotfixes.png)](./media/add-hotfixes.png) **Note**: For X++ updates, if you want to download all available updates at this point, you should click on Select all and then click on **Add** instead of **Add hotfix to package**.
 6.  Click **Download package** to download the hotfix package. [![](./media/donwload-hotfix.png)](./media/donwload-hotfix.png) After you select **Download package**, the **Review and download hotfixes** page will open. Use this page to review selected hotfixes, discard the package, return to the hotfix selections, or download the final package. [![](./media/review-and-download-hotfixes.png)](./media/review-and-download-hotfixes.png)
 
-This tutorial is a part of the [Servicing environments](developer-landing-page.md#servicing-environments) content.
+This tutorial is a part of the [Servicing environments](..\dev-tools\developer-home-page.md#servicing-environments) content.
 

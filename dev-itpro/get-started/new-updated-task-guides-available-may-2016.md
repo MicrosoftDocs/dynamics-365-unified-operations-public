@@ -132,7 +132,7 @@ The (May 2016) APQC Unified Library contains the Task guides that are intended t
 | BPM line                                                 | Country/region |
 |----------------------------------------------------------|----------------|
 | Create a new product                                     | Global         |
-| Create dimension-based configurations                    | Global         |
+| Create ..\financial-dimensions\dimension-based configurations                    | Global         |
 | Create predefined product variants                       | Global         |
 | Create sales price selection criteria                    | Global         |
 | Enter orders for configurable products                   | Global         |

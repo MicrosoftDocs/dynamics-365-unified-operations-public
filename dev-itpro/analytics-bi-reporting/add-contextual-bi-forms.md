@@ -37,7 +37,7 @@ In this tutorial you'll model a form part that displays the previous rental hist
 Prerequisites
 -------------
 
-This tutorial requires you to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](access-instances.md).
+This tutorial requires you to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the Dynamics AX instance. For more information, see [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md).
 
 ## Key concepts
 -   **Aggregate measurements** - Similar to **perspectives** and **Cubes** from earlier versions of Microsoft Dynamics AX, aggregate measurements let you model and consume aggregate data in Dynamics AX.

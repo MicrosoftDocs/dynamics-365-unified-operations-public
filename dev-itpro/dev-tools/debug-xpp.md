@@ -51,7 +51,7 @@ To debug X++ code, follow these steps.
 See also
 --------
 
-[Technical Concepts Guide](developer-landing-page.md)
+[Technical Concepts Guide](developer-home-page.md)
 
 [https://ax.help.dynamics.com/en/wiki/technical-concepts-guide/](https://ax.help.dynamics.com/en/?p=178721)
 

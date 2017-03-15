@@ -2,7 +2,7 @@
 # [Application stack and server architecture](application-stack-server-architecture.md)
 # [Get an evaluation copy](get-evaluation-copy.md)
 # [Sign up for a subscription](sign-up-preview-subscription.md)
-# [Access Dynamics 365 for Operations instances](access-instances.md)
+# [Access Dynamics 365 for Operations instances](..\dev-tools\access-instances.md)
 # [Development system requirements](development-system-requirements.md)
 # Fleet Management sample application
 ## [Fleet Management sample application](fleet-management-sample.md)
@@ -101,8 +101,8 @@
 ## [X Classes](../dev-reference/x-classes.md)
 # Customize with extensions and overlayering
 ## Extensibility home page
-## [Customize model elements using extensions](../extensions-overlayering/customize-model-elements-extensions.md)
-## [Customize with extensions and overlayering](../customization-overlayering-extensions.md)
+## [Customize model elements using extensions](../extensions-overlayering/..\extensions-overlayering\customize-model-elements-extensions.md)
+## [Customize with extensions and overlayering](customization-overlayering-extensions.md)
 ## [Class extensions](../extensions-overlayering\class-extensions.md)
 ## Database synchronization
 # Move packages between environments

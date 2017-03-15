@@ -34,5 +34,5 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Operations. 
 
-Select a feature area to learn more about it. [Accounts payable home page](accounts-payable.md) [Accounts receivable home page](accounts-receivable.md) [Cash and bank management home page](cash-bank-management.md) [General ledger and financial reporting home page](general-ledger.md) [Public sector home page](public-sector-functionality.md) [Budgeting home page](budgeting-overview.md) [Expense management home page](expense-management.md)
+Select a feature area to learn more about it. [Accounts payable home page](accounts-payable.md) [Accounts receivable home page](..\accounts-receivable\accounts-receivable.md) [Cash and bank management home page](cash-bank-management.md) [General ledger and financial reporting home page](general-ledger.md) [Public sector home page](public-sector-functionality.md) [Budgeting home page](budgeting-overview.md) [Expense management home page](expense-management.md)
 

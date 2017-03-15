@@ -58,5 +58,5 @@ Here are the primary changes that have been implemented in Dynamics 365 for Oper
 See also
 --------
 
-[Technical Concepts Guide for Developers](developer-landing-page.md)
+[Technical Concepts Guide for Developers](..\dev-tools\developer-home-page.md)
 

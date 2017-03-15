@@ -145,7 +145,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
 
 ### Understand the LINQ code
 
-Before proceeding with more C\# code, verify that you understand the LINQ code you just added. More details about LINQ are provided in the [Technical Concepts Guide](developer-landing-page.md), so only the basics are described below.
+Before proceeding with more C\# code, verify that you understand the LINQ code you just added. More details about LINQ are provided in the [Technical Concepts Guide](developer-home-page.md), so only the basics are described below.
 
 -   First, a *provider* is created. It provides access to all the Microsoft Dynamics AX tables.
 -   Next, a *collection* of all customers is created. The customer of interest is retrieved from this collection.
