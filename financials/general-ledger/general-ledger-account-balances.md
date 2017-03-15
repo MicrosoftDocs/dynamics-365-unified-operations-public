@@ -44,12 +44,11 @@ There are a variety of ways users can view balances in the general ledger. Some 
 The most common ways are the trial balance list page and financial reports.
 
 ## Trial balance
-The trial balance is a list page that shows all of the balances of an account and/or dimensions for a given period of time. When the trial balance is first opened it refreshes with the balances for the dates and properties that are set in the Parameters. Properties that can be changed in Parameters are the dates, posting layer, how they want opening balances to appear, and what closing transaction types to show. When a user changes the parameters the balances are refreshed. The user can also pick what dimension set they want to view balances for and whether each of the dimensions show in separate columns. Users can drill down on the balances to view the transactions that make up the balance.    
+The trial balance is a list page that shows all of the balances of an account and/or dimensions for a given period of time. When the trial balance is first opened it refreshes with the balances for the dates and properties that are set in the Parameters. Properties that can be changed in Parameters are the dates, posting layer, how they want opening balances to appear, and what closing transaction types to show. 
 
-See also
---------
+When a user changes the parameters the balances are refreshed. The user can also pick what dimension set they want to view balances for and whether each of the dimensions show in separate columns. 
 
-[Accounting source explorer](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=245244)
+Users can drill down on the balances to view the transactions that make up the balance.    
 
-[View financial reports](view-financial-reports.md)
+For more information, see [View financial reports](view-financial-reports.md).
 
