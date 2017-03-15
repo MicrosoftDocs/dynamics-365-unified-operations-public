@@ -60,7 +60,10 @@ This article will help you with the following tasks:
 Dynamics 365 for Operations applications use the Document Routing Agent to manage the spooling of documents to network printer devices. You can obtain the client by using direct links that are embedded in the web application. Use the following procedure to download the application to your local computer. You will then be able to access both local and network printers that are connected to your computer, from a single deployment of Dynamics 365 for Operations.
 
 1.  Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**).
-2.  On the **Options** tab, in the **Application** group, click **Download document routing agent installer**. [![download-document-routing-agent-installer](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
+2.  On the **Options** tab, in the **Application** group, click **Download document routing agent installer**. 
+    
+    [![download-document-routing-agent-installer](./media/download-document-routing-agent-installer.png)](./media/download-document-routing-agent-installer.png)
+
 3.  Run the downloaded file to begin the installation process.
 4.  Complete the setup process.
 
@@ -71,7 +74,10 @@ Use the following procedure to configure the client application so that it can c
 
 1.  Close all browser instances that are running the Dynamics 365 for Operations application, to reset local Azure authentication tokens.
 2.  On your desktop, run the Document Routing Agent.
-3.  On the toolbar, click **Settings**. [![the-document-routing-agent-window](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
+3.  On the toolbar, click **Settings**. 
+    
+    [![the-document-routing-agent-window](./media/the-document-routing-agent-window.png)](./media/the-document-routing-agent-window.png)
+
 4.  Add the following settings:
     -   **Application ID** – The ID that is unique to the application and should be entered automatically.
     -   **Dynamics 365 for Operations URL** – The base URL of the Dynamics 365 for Operations application.
@@ -86,7 +92,10 @@ After you've successfully signed in, the **Printers** button becomes available o
 Before you complete this procedure, make sure that you've installed all the network printers on the local host computer. All the printer devices that are installed will be available for service registration. Be sure to select only the printers that you want to expose in the Dynamics 365 for Operations applications.
 
 1.  On the toolbar, click **Printers**.
-2.  Select the printers to make available in the Dynamics 365 for Operations applications. [![printers-to-add](./media/printers-to-add.png)](./media/printers-to-add.png)
+2.  Select the printers to make available in the Dynamics 365 for Operations applications. 
+    
+    [![printers-to-add](./media/printers-to-add.png)](./media/printers-to-add.png)
+
 3.  Specify a default name for the printer.
 4.  Click **OK**.
 
@@ -95,7 +104,10 @@ After you've completed this procedure, the selected printer devices are register
 ## Administer network printers
 Use client pages to manage access to the network printers that have been registered by one or more Document Routing Agents. Network printers are uniquely identified by their path. Therefore, printers are listed one time, even if they have been registered by more than one Document Routing Agent. Use the following procedure to activate the Application Object Server (AOS) network printers.
 
-1.  Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**). [![manage-network-printers-page](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
+1.  Open the **Manage network printers** page (**Organization administration** &gt; **Setup** &gt; **Network printers**). 
+
+    [![manage-network-printers-page](./media/manage-network-printers-page.png)](./media/manage-network-printers-page.png)
+    
 2.  Edit the existing entries that are mapped to each network printer. As part of your changes, edit the connection path.
 3.  To include a printer as an option in the **Print Destinations** field, set the **Active** field to **Yes**.
 

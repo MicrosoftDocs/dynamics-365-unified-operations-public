@@ -40,7 +40,7 @@ Working with aggregate data
 -   [Analytics](analytics.md)
 -   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
 -   [BIR 100: Modeling and Using Aggregate Data](model-aggregate-data.md)
--   [BIR 106: Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
+-   [BIR 106: Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
 ## Selfservice reporting
 -   [Power BI integration](power-bi-integration.md)

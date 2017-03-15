@@ -34,10 +34,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial describes the configuration that is required for a new Microsoft Dynamics 365 for Operations environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 
-Microsoft Dynamics 365 for Operations supports Power BI visualizations that are pinned directly to workspaces. This functionality requires a one-time configuration for each tenant to help guarantee that Dynamics 365 for Operations and Power BI can communicate and authenticate correctly. \[caption id="attachment\_259704" align="alignnone" width="781"\][![PowerBI control in Reservation Management Workspace](./media/fleetws-1024x578.png)](./media/fleetws.png) Power BI control in the Reservation management workspace\[/caption\] Both Dynamics 365 for Operations and PowerBI.com are cloud-based services. In order for a Dynamics 365 for Operations workspace to display a Power BI tile, the Dynamics 365 for Operations server must contact the Power BI service on behalf of a user and must have a visualization drawn in the Dynamics 365 for Operations workspace. This flow between Dynamics 365 for Operations and the Power BI service is based on the OAuth 2.0 Authorization Code Grant Flow.
+Microsoft Dynamics 365 for Operations supports Power BI visualizations that are pinned directly to workspaces. This functionality requires a one-time configuration for each tenant to help guarantee that Dynamics 365 for Operations and Power BI can communicate and authenticate correctly. 
+
+[![PowerBI control in Reservation Management Workspace](./media/fleetws-1024x578.png)](./media/fleetws.png) 
+
+Both Dynamics 365 for Operations and PowerBI.com are cloud-based services. In order for a Dynamics 365 for Operations workspace to display a Power BI tile, the Dynamics 365 for Operations server must contact the Power BI service on behalf of a user and must have a visualization drawn in the Dynamics 365 for Operations workspace. This flow between Dynamics 365 for Operations and the Power BI service is based on the OAuth 2.0 Authorization Code Grant Flow.
 
 ## The OAuth Authorization Code Grant Flow
-This section describes the authorization flow between Dynamics 365 for Operations and the PowerBI.com service during authentication and when visualizations are presented to a user. The following diagram shows the authorization flow and is based on the assumption that you've completed the configuration that this article describes. [![OAuthFlow](./media/oauthflow.png)](./media/oauthflow.png)
+This section describes the authorization flow between Dynamics 365 for Operations and the PowerBI.com service during authentication and when visualizations are presented to a user. The following diagram shows the authorization flow and is based on the assumption that you've completed the configuration that this article describes. 
+
+[![OAuthFlow](./media/oauthflow.png)](./media/oauthflow.png)
 
 1.  When a user visits a workspace in Dynamics 365 for Operations for the first time, the Power BI banner prompts the user to start the first-time connection. If the user agrees to start the first-time connection, an OAuth 2.0 Authorization Code Grant Flow is started.
 2.  Dynamics 365 for Operations redirects the user agent to the Microsoft Azure Active Directory (AAD) authorization endpoint. The user is authenticated and consents, if consent is required. Because the user is running Dynamics 365 for Operations, he or she is already signed in to AAD. Therefore, the user doesn't have to enter his or her credentials again.
@@ -63,9 +69,9 @@ For subsequent visits, this entire flow doesn't have to occur. Because Dynamic
 The Power BI application programming interface (API) is available for consumption by any client or web application that is registered with AAD. Therefore, the first step is to register your Dynamics 365 for Operations deployment as a web app. To complete this step, you must have access to an AAD account that has administrator privileges for the tenant that Dynamics 365 for Operations was deployed for. For instructions about how to register your web app, see <https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-register-a-web-app/>. **Important:** Observe the following guidelines when you register your web app:
 
 -   Use the following values when you create your web app:
-    -   **Sign-in URL:** This URL is the same as your deployment URL, but **oauth** is added to the end. **Example:** http://contosoax7.cloud.dynamics.com/**oauth**
+    -   **Sign-in URL:** This URL is the same as your deployment URL, but **oauth** is added to the end. **Example:** http://contosoax7.cloud.dynamics.com/oauth
     -   **App ID URI:** This value is mandatory, but isn't required for the workspace integration. Make sure that this App ID URI is a mock URI like https://contosoAX, since using the URL of your deployment can cause sign-in issues in other AAD applications such as the Excel Add-in. **Example:** http://contosoax7testenv/
-    -   **Reply URL:** This URL is the same as your deployment URL, but **oauth** is added to the end. **Example:** http://contosoax7.cloud.dynamics.com/**oauth**
+    -   **Reply URL:** This URL is the same as your deployment URL, but **oauth** is added to the end. **Example:** http://contosoax7.cloud.dynamics.com/oauth
 -   If you have multiple deployments, you can use the same web app and add additional deployments. Add the URL of each deployment to the **Reply** **URL** list on the **Configuration** tab for your web app.
 -   If you use the deployment URL as the **App ID URL** value, you will cause an error when authentication through Microsoft Power Query for Excel occurs.
 -   Write down the **Client ID** and **Secret Key** values as they appear in the Azure portal, and keep this information in a safe place. You will have to enter these values on the Dynamics 365 for Operations **Power BI configuration** page later.
@@ -75,7 +81,10 @@ The Power BI application programming interface (API) is available for consumptio
 The following procedure must be completed by a Dynamics 365 for Operations system administrator. By default, the Power BI configuration is disabled.
 
 1.  Sign in to Dynamics 365 for Operations by using an account that has the System Administrator role.
-2.  Click **System administration** &gt; **Setup** &gt; **Power BI** to open the **Power BI configuration** page. \[caption id="attachment\_260044" align="alignnone" width="640"\][![PowerBI Configuration Form](./media/powerbiconfig2-903x1024.png)](./media/powerbiconfig2.png) Power BI configuration page\[/caption\]
+2.  Click **System administration** &gt; **Setup** &gt; **Power BI** to open the **Power BI configuration** page.
+
+    [![PowerBI Configuration Form](./media/powerbiconfig2-903x1024.png)](./media/powerbiconfig2.png) Power BI configuration page\[/caption\]
+
 3.  Click the **Edit** button to make changes.
 4.  Specify the following values for the fields on this page:
     -   **Enabled:** Set the option to **Yes**.
@@ -95,15 +104,23 @@ The following procedure must be completed by a Dynamics 365 for Operations syst
 ## Connect to Power BI from Dynamics AX for the first time
 Users will now see the Power BI control in specific workspaces. (The control must be added as part of the development process. By default, the control isn't added to all workspaces.) The first time that users use the control, they must confirm that they authorize access to their Power BI visualizations. To test your configuration, you can use the **Reservation management** workspace.
 
-1.  On the dashboard page, click the **Reservation management** tile. Alternatively, to use menus, click **Fleet management** &gt; **Workspaces** &gt; **Reservation management**. The Power BI banner appears, as shown in the following screen shot. \[caption id="attachment\_259704" align="alignnone" width="640"\][![PowerBI control in Reservation Management Workspace](./media/fleetws-1024x578.png)](./media/fleetws.png) Power BI control in the Reservation management workspace\[/caption\]
-2.  In the Power BI banner, click **Get started**. If this is the first time that you've started Power BI from Dynamics 365 for Operations, you're prompted to authorize sign-in to Power BI from the Dynamics 365 for Operations client. Click **Click here to provide authorization to Power BI**. \[caption id="attachment\_260804" align="alignnone" width="635"\][![PowerBI Authorization](./media/authorization.png)](./media/authorization.png) Power BI authorization\[/caption\]
+1.  On the dashboard page, click the **Reservation management** tile. Alternatively, to use menus, click **Fleet management** &gt; **Workspaces** &gt; **Reservation management**. The Power BI banner appears, as shown in the following screen shot.
+
+    [![PowerBI control in Reservation Management Workspace](./media/fleetws-1024x578.png)](./media/fleetws.png)
+
+2.  In the Power BI banner, click **Get started**. If this is the first time that you've started Power BI from Dynamics 365 for Operations, you're prompted to authorize sign-in to Power BI from the Dynamics 365 for Operations client. Click **Click here to provide authorization to Power BI**.
+    
+    [![PowerBI Authorization](./media/authorization.png)](./media/authorization.png)
+
 3.  Because you're already signed in to AAD in Dynamics 365 for Operations, you don't have to enter your credentials again. A new tab appears, where you're prompted to authorize the connection between Dynamics 365 for Operations and Power BI. You can now return to the original tab.
-4.  The **Add / remove Power BI tiles** slider dialog opens. The tabs on the left show your dashboards, and the related visualizations appear on the right. You can now select visualizations to add (pin) to the workspace. \[caption id="attachment\_260924" align="alignnone" width="640"\][![Pinning Slider](./media/pinning-836x1024.png)](./media/pinning.png) Pinning slider\[/caption\]
+4.  The **Add / remove Power BI tiles** slider dialog opens. The tabs on the left show your dashboards, and the related visualizations appear on the right. You can now select visualizations to add (pin) to the workspace.
+
+    [![Pinning Slider](./media/pinning-836x1024.png)](./media/pinning.png)
+
 5.  After you've finished selecting visualizations, click **OK**.
 
 
-See also
---------
+# See also
 
 [Sign up for Power BI service](https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-sign-up-for-power-bi-service/)
 
