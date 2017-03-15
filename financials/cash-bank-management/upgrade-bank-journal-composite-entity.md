@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User, Developer
 # ms.devlang: 
 # ms.reviewer: 101
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 221654
 ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: saraschi
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

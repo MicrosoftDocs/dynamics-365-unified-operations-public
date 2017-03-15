@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

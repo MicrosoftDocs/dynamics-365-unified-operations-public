@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265164
 ms.assetid: 5ee3e381-31c4-48ac-9488-0eb1bc524cf5
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
@@ -47,11 +47,11 @@ You can set up a withholding tax code so that it's calculated based on a whole a
 
 **Note:** Withholding tax codes of different calculation methods can't be attached in a single withholding tax group.
 
-## Configuration to use this feature
-| Task                                                                                  | Considerations | More information                                                                      |
-|---------------------------------------------------------------------------------------|----------------|---------------------------------------------------------------------------------------|
-| Set up withholding tax codes and withholding tax groups.                              |                | [Set up withholding tax](http://ax.help.dynamics.com/en/wiki/set-up-withholding-tax/) |
-| Create a new payment journal, settle open transactions, and post the payment journal. |                |                                                                                       |
+## Prerequisites
+| Task                                                                                  | 
+|---------------------------------------------------------------------------------------|
+| Set up withholding tax codes and withholding tax groups.                              |  
+| Create a new payment journal, settle open transactions, and post the payment journal. |   
 
 1.  On the **Withholding tax codes** page, create withholding tax codes that have the following information:
     -   Origin and calculation method on the **Calculation** FastTab

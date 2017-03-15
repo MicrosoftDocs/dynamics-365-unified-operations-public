@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264704
 ms.assetid: 89218666-7c5e-45ca-aead-a87853d05928
 ms.search.region: Czech Republic, Hungary
 # ms.search.industry: 
 ms.author: epopov
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

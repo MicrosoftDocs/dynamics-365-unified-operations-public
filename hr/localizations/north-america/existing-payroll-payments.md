@@ -18,14 +18,14 @@ ms.search.form: LedgerJournalTransPayrollDisbursement, PayrollPayStatement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 220934
 ms.assetid: b95ac219-fbea-48e6-b2c8-6f27853a7f6a
 ms.search.region: USA
 # ms.search.industry: 
 ms.author: brpotter
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

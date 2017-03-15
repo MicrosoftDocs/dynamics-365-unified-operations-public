@@ -25,7 +25,7 @@ ms.assetid: 36ba2da0-ee9b-4f84-b705-751303ccec33
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cgarty
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -43,7 +43,9 @@ Microsoft Dynamics 365 for operations depends on several technologies:
 The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products.
 
 ## Excel Data Connector Addin
-Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web Add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Internet Explorer browser window. [![1\_Office](./media/1_office.png)](./media/1_office.png)
+Microsoft Excel can change and quickly analyze data. The Excel Data Connector app interacts with Excel workbooks and OData services that are created for publicly exposed data entities. The Excel Data Connector add-in enables Excel to become a seamless part of the user experience. The Excel Data Connector add-in is built by using the Office Web Add-ins framework. The add-in runs in a task pane. Office Web Add-ins are web applications that run inside an embedded Internet Explorer browser window. 
+
+[![1\_Office](./media/1_office.png)](./media/1_office.png)
 
 ### Microsoft Dynamics AX 2012 architecture vs. Dynamics 365 for Operations architecture
 
@@ -89,7 +91,13 @@ When you clicking in a table cell, any lookup, enumeration drop-down list, or d
 To add a record, either start typing in a row directly below a table, or use the Tab key to tab away from the last cell of the last row in the table. To delete a record, select the row by clicking the row label (1, 2, 3, and so on), and delete all the cells in that row. To publish the changes, click **Publish**. The **Messages** dialog box show how many records were added, edited, and deleted.
 
 ## Workbook Designer
-You can use the **Workbook Designer** page to design an editable custom export workbook that contains an entity and a set of fields. To open the **Workbook Designer** (**ExportToExcelWorkbookDesigner**) page, click **Common &gt; Common &gt; Office Integration &gt; Excel workbook designer**. Before you can publish data edits, all the key fields of the entity must be in the Excel table. Key fields have a key symbol next to them. To successfully create or update a record, must have all the mandatory fields in the Excel table. Mandatory fields have an asterisk (\*) next to them. [![3\_Office](./media/3_office.png)](./media/3_office.png) To retrieve the resulting workbook, click **Create workbook** in the app bar. Click **View related form** to see the data that the entity exposes. This button is only enabled for entities that have a **FormRef** property value.
+You can use the **Workbook Designer** page to design an editable custom export workbook that contains an entity and a set of fields. To open the **Workbook Designer** (**ExportToExcelWorkbookDesigner**) page, click **Common &gt; Common &gt; Office Integration &gt; Excel workbook designer**. Before you can publish data edits, all the key fields of the entity must be in the Excel table. Key fields have a key symbol next to them. To successfully create or update a record, must have all the mandatory fields in the Excel table. Mandatory fields have an asterisk (\*) next to them. 
+
+[![3\_Office](./media/3_office.png)](./media/3_office.png) 
+
+To retrieve the resulting workbook, click **Create workbook** in the app bar. 
+
+Click **View related form** to see the data that the entity exposes. This button is only enabled for entities that have a **FormRef** property value.
 
 ## Export API
 ### The Open in Microsoft Office menu and static exports
@@ -174,7 +182,15 @@ You must also implement the **updateTemplateSettings** method to satisfy the int
     }
 
 ## Document management
-Document management supports saving record attachments in Azure Blob storage and SharePoint Online. Database storage is deprecated. Azure Blob storage is equivalent to storage in the database since documents can only be accessed through Dynamics 365 for Operations and it provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Azure blob storage is the default and works immediately. SharePoint storage will work immediately if you have an O365 license since we auto-discover the SharePoint tenant e.g. a user on the TenantA.onmicrosoft.com O365/AAD tenant gets TenantA.sharepoint.com as the SharePoint site. If document management has been turned off by the user, turn it on by clicking **Options &gt; General &gt; Miscellaneous** and setting **Document handling active** to **Yes**. [![4\_Office](./media/4_office.png)](./media/4_office.png) On any page that has data, an **Attach** button will be available in the upper-right corner. [![5\_Office](./media/5_office.png)](./media/5_office.png) The **Attachments** page provides a view of the attachments (documents) that are associated with the record that was selected on the previous page. You can add new attachments to the record by clicking the **New** button (**+**) in the app bar. For the **File** and ****Image**** document types, you will be prompted to provide the associated file.
+Document management supports saving record attachments in Azure Blob storage and SharePoint Online. Database storage is deprecated. Azure Blob storage is equivalent to storage in the database since documents can only be accessed through Dynamics 365 for Operations and it provides the added benefit of providing storage that doesn't negatively affect the performance of the database. Azure blob storage is the default and works immediately. SharePoint storage will work immediately if you have an O365 license since we auto-discover the SharePoint tenant e.g. a user on the TenantA.onmicrosoft.com O365/AAD tenant gets TenantA.sharepoint.com as the SharePoint site. If document management has been turned off by the user, turn it on by clicking **Options &gt; General &gt; Miscellaneous** and setting **Document handling active** to **Yes**. 
+
+[![4\_Office](./media/4_office.png)](./media/4_office.png) 
+
+On any page that has data, an **Attach** button will be available in the upper-right corner. 
+
+[![5\_Office](./media/5_office.png)](./media/5_office.png) 
+
+The **Attachments** page provides a view of the attachments (documents) that are associated with the record that was selected on the previous page. You can add new attachments to the record by clicking the **New** button (**+**) in the app bar. For the **File** and ****Image**** document types, you will be prompted to provide the associated file.
 
 ### Document preview
 

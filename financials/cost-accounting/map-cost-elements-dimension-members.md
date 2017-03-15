@@ -18,14 +18,14 @@ ms.search.form: CAMDimension, CAMDimensionMember
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2094
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
 # ms.search.industry: 
 ms.author: yuyus
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

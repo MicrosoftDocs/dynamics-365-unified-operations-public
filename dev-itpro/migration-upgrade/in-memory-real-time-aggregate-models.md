@@ -25,7 +25,7 @@ ms.assetid: 877db646-da4b-48b5-83ab-61ae59d91921
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -50,5 +50,5 @@ Perspectives are now modeled using Dynamics 365 for Operations add-ins for Vis
 -   Expose data to PowerBI.
 -   Access data programmatically using the AXQuery object.
 
-[![how-perspectives-are-used-now\_nov2016](./media/how-perspectives-are-used-now_nov2016.png)](./media/how-perspectives-are-used-now_nov2016.png)  
+[![how-perspectives-are-used](./media/how-perspectives-are-used.png)](./media/how-perspectives-are-used.png)  
 

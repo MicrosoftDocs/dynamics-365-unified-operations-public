@@ -25,7 +25,7 @@ ms.assetid: f3bf8d00-8e6d-4af7-ab7e-3ff47fce9e21
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

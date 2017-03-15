@@ -18,14 +18,14 @@ ms.search.form: InventJournalCount, InventJournalCountTag
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 11594
 ms.assetid: 03772d0e-5c37-454c-ab85-82bc8b60a76d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mafoge
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

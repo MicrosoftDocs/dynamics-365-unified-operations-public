@@ -25,7 +25,7 @@ ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omulvad
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

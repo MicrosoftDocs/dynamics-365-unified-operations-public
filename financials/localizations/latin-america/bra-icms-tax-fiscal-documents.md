@@ -18,14 +18,14 @@ ms.search.form: TaxFiscalDocument_BR, TaxFiscalDocumentCancel_BR, TaxFiscalDocum
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 269524
 ms.assetid: 6960c023-1e50-42b7-82a5-4603dd35fa6d
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

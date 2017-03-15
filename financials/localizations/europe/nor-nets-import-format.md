@@ -18,14 +18,14 @@ ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoi
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 262704
 ms.assetid: 0327a01b-3b24-41be-afa6-ffa6c365cb0b
 ms.search.region: Norway
 # ms.search.industry: 
 ms.author: v-lenest
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

@@ -18,14 +18,14 @@ ms.search.form: AssetTable
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 266924
 ms.assetid: 7bbcacb6-a3c3-4e45-a1a5-e02feabf1f56
 ms.search.region: Latvia
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

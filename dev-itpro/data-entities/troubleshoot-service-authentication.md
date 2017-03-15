@@ -25,7 +25,7 @@ ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nimak
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

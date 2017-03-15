@@ -18,14 +18,14 @@ ms.search.form: RetailTillLayout
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 11
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 219684
 ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: athinesh
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

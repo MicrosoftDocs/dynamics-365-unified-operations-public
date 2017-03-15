@@ -25,7 +25,7 @@ ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -60,7 +60,7 @@ The following sections describe the effect of these settings, and also explain h
 
 ### Voucher number
 
--   When you use the **Set-based processing** setting on the General journal entity, the voucher number must be provided in the imported file. Every transaction in the General journal is assigned the voucher number that is provided in the imported file, even if the voucher isn’t balanced. If you want to use set-based processing, but you also want to use the number sequence that is defined for voucher numbers in Dynamics 365 for Operations, a hotfix has been provided for the February 2016 release. The hotfix number is 3170316 and available for download from Lifecycle services (LCS). For more information, see [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md).
+-   When you use the **Set-based processing** setting on the General journal entity, the voucher number must be provided in the imported file. Every transaction in the General journal is assigned the voucher number that is provided in the imported file, even if the voucher isn’t balanced. If you want to use set-based processing, but you also want to use the number sequence that is defined for voucher numbers in Dynamics 365 for Operations, a hotfix has been provided for the February 2016 release. The hotfix number is 3170316 and available for download from Lifecycle services (LCS). For more information, see [Download hotfixes from Lifecycle Services](..\servicing\download-hotfix-lcs.md).
     -   To enable this functionality, on the journal name that is used for imports in Dynamics 365 for Operations, set **Number allocation at posting** to **Yes**.
     -   A voucher number must still be defined in the imported file. However, this number is temporary and is overwritten by the Dynamics 365 for Operations voucher number when the journal is posted. You must make sure that the lines of the journal are grouped correctly by temporary voucher number. For example, during posting, three lines are found that have a temporary voucher number of 1. The temporary voucher number of all three lines is overwritten by the next number in the number sequence. If those three lines aren’t a balanced entry, the voucher isn't posted. Next, if lines are found that have a temporary voucher number of 2, this number is overwritten by the next voucher number in the number sequence, and so on.
 

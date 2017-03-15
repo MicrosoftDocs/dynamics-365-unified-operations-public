@@ -5,7 +5,7 @@ title: Malaysia Goods and Services Tax
 description: This article provides information about how to set up Goods and Services Tax (GST) for a Malaysian company and explains the functionality that Microsoft Dynamics 365 for Operations provides for GST.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-27 18 - 26 - 26
+ms.date: 2017-03-15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,14 +18,14 @@ ms.search.form: TaxGSTReliefCategory_MY, TaxGSTReliefGroup_MY, TaxGSTReportConfi
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 10904
 ms.assetid: b14375b1-cb5e-4969-a5fd-3d6d2c8b6226
 ms.search.region: Malaysia
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -146,67 +146,23 @@ Before values can be calculated and displayed on reports, you must specify a rel
 
 You can create report configurations to meet your reporting requirements. Before you create a report configuration, you must determine what types of transactions to include. For example, if you create a configuration for GST returns, you can include the following types of transactions.
 
-GST report configuration name
+|GST report configuration name| Type of transaction| Transaction amount| GST amount|
+|-----------------------------|--------------------|-------------------|-----------|
+|GST-03|Bad Debt Recovered|18| |
+| |Bad Debt Relief|17| |
+| |Total Input Tax (Inclusive of Bad Debt Relief & other Adjustments)| |62|
+| |Total Output Tax (Inclusive of Bad Debt Recovered & other Adjustments)| |52|
+| |Total Value of Capital Goods Acquired|16| |
+| |Total Value of Exempt Supplies|12| |
+| |Total Value of Export Supplies|11| |
+| |Total Value of Goods Imported Under Approved Trader Scheme|14| |
+| |Total Value of GST Suspended under item 14| |15|
+| |Total Value of Local Zero-Rated Supplies|10| |
+| |Total Value of Standard Rated Acquisition|61| |
+| |Total Value of Standard Rated Supply|51| |
+| |Total Value of Supplies Granted GST Relief|13| |
 
-Type of transaction
 
-Transaction amount
-
-GST amount
-
-GST-03
-
-Bad Debt Recovered
-
-18
-
-Bad Debt Relief
-
-17
-
-Total Input Tax (Inclusive of Bad Debt Relief & other Adjustments)
-
-62
-
-Total Output Tax (Inclusive of Bad Debt Recovered & other Adjustments)
-
-52
-
-Total Value of Capital Goods Acquired
-
-16
-
-Total Value of Exempt Supplies
-
-12
-
-Total Value of Export Supplies
-
-11
-
-Total Value of Goods Imported Under Approved Trader Scheme
-
-14
-
-Total Value of GST Suspended under item 14
-
-15
-
-Total Value of Local Zero-Rated Supplies
-
-10
-
-Total Value of Standard Rated Acquisition
-
-61
-
-Total Value of Standard Rated Supply
-
-51
-
-Total Value of Supplies Granted GST Relief
-
-13
 
 You must use different tax codes for those transactions. The way that reporting codes are mapped to these tax codes and then selected in the report configurations varies, depending on your overall reporting requirements. For example, a report shows the transaction amounts on your invoices, debit notes, and credit notes separately. Therefore, you map the various reporting codes (1001 for invoices, 1002 for debit notes, and 1003 for credit notes) to specific tax codes. Meanwhile, if you must display, for example, Total Value of Standard Rated Supply in GST-03, credit notes, debit notes, and invoices aren't differentiated. Therefore, you must select **1001**, **1002**, and **1003** for the transaction amounts.
 
@@ -238,12 +194,5 @@ Certain business data should be captured in AX to generate the GAF.   For the 
 
 You should run the “Settle and post sales tax” process before you generate the GAF for a period. Only those transactions that are included in a sales tax payment will be included in the GAF.
 
-See also
---------
 
-[Generate GAF files in the required format](http://ax.help.dynamics.com/en/wiki/my-00010-gst-generate-gaf-files-in-the-required-format/)
-
-[Print GST tax invoices](http://ax.help.dynamics.com/en/wiki/my-00005-print-gst-tax-invoices/)
-
-[Manage customer Debit note and Credit note for GST](http://ax.help.dynamics.com/en/wiki/my-00003-manage-customer-debit-note-and-credit-note-for-gst/)
 

@@ -18,14 +18,14 @@ ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 121
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264354
 ms.assetid: 55291998-d863-4d02-ba13-65f1ff0b227e
 ms.search.region: Poland
 # ms.search.industry: 
 ms.author: v-semaz
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

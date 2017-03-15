@@ -25,7 +25,7 @@ ms.assetid: fc589d76-3927-4486-ab83-e86b9b47ba2c
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aneesa
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

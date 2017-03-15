@@ -18,14 +18,14 @@ ms.search.form: DIOTDeclarationConcept_MX, DIOTDeclarationTaxCode_MX, VendTable
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 79334
 ms.assetid: 0cdb4da3-dca8-4e31-8fd5-8a1f785b5104
 ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

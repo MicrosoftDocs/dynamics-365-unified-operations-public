@@ -25,7 +25,7 @@ ms.assetid: 99af5334-d30e-4160-9504-881777e9d4ea
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tabell
-ms.dyn365.ops.intro: 01-08-2016
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
 ---
@@ -70,7 +70,7 @@ Platform update packages are released by Microsoft and can be imported from the 
 From a process perspective, a platform upgrade package is similar to a binary hotfix deployable package.
 
 -   To apply the package to your development or build environment, follow the instructions in the sections below.
--   To apply the package to your demo, sandbox tier-2, or production environments, follow the instructions for a binary hotfix in the topic [Apply a Deployable package](apply-deployable-package-system.md).
+-   To apply the package to your demo, sandbox tier-2, or production environments, follow the instructions for a binary hotfix in the topic [Apply a Deployable package](..\deployment\apply-deployable-package-system.md).
 
 ## Apply the platform update package on your development environment
 ### Delete any platform metadata hotfixes from your VSTS project

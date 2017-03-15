@@ -18,14 +18,14 @@ ms.search.form: AssetImpairmentAssetTransInquire_JP, AssetImpairmentIndicator_JP
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 28811
 ms.assetid: db96c6bb-c2b1-4e26-b711-33caa49eb29f
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

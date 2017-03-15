@@ -5,7 +5,7 @@ title: Allocation rules for fixed assets
 description: In Japan, a fixed asset is registered under an administrative department, and the depreciation amount must be allocated among the usage departments. You can set up an allocation rule to allocate depreciation amounts to multiple financial dimensions by percentage. This article answers some frequently asked questions about the allocation rules for fixed assets.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-19 23 - 00 - 03
+ms.date: 2017-03-15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,14 +18,14 @@ ms.search.form: AssetAllocationRuleSetup_CN
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 10194
 ms.assetid: ba1302f1-5b7d-44c4-af00-ec629f388e19
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -63,10 +63,4 @@ For this example, the depreciation cost amount of a fixed asset is 120 currency 
 
 If the total rounded-down depreciation cost that must be allocated across each dimension is less than the rounding amount, the allocation rule isn't applied to the depreciation. Instead, the depreciation amount is either posted to the main account or offset by using the posting profile rules that you set up on the **Fixed asset posting profiles** page. To avoid these and similar scenarios, you can manually adjust the rounding rule for fixed asset depreciation on the **Currencies** page.
 
-See also
---------
-
-[(CHN, JPN) Create allocation rules and allocate depreciation costs](https://ax.help.dynamics.com/en/wiki/chn-jpn-create-allocation-rules-and-allocate-depreciation-costs/)
-
-[About round-off depreciation](https://ax.help.dynamics.com/en/wiki/about-round-off-depreciation/)
 

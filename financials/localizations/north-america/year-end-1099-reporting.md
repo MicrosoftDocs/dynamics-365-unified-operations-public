@@ -18,14 +18,14 @@ ms.search.form: Tax1099Fields, Tax1099Summary
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 6861
 ms.assetid: 518633aa-b341-47e6-ac7b-7c5841b50dc3
 ms.search.region: United States
 # ms.search.industry: 
 ms.author: abruer
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

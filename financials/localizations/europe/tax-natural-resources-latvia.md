@@ -18,14 +18,14 @@ ms.search.form: LvNRTaxItemGroupLookup
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 270454
 ms.assetid: ca5fb637-e01b-4499-9bc4-51da02b8c61a
 ms.search.region: Latvia
 # ms.search.industry: 
 ms.author: v-lenest
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

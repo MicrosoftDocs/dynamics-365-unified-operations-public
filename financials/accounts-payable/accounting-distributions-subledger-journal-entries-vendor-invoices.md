@@ -1,4 +1,4 @@
----
+--
 # required metadata
 
 title: Accounting distributions and subledger journal entries for vendor invoices
@@ -18,14 +18,14 @@ ms.search.form: VendEditInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mfalkner
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -45,9 +45,8 @@ You can use the following buttons in the Vendor invoice page to view, and possib
     -   View header and line amounts.
 
 If the vendor invoice references a purchase order, you can split and modify the accounting distributions for lines that contain an item that is not stocked. If the vendor invoice line does not reference a purchase order line, you can also delete an accounting distribution. You cannot split or delete lines for charges, taxes, and line discounts. You can modify the ledger account, but you cannot change the amounts or percentages.
-| **Note**                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| If the parent line contains an item that is not stocked and the accounting distributions are split, the child line will be split automatically to match the financial dimensions of the parent line. The accounting distributions for the child line cannot be additionally split or deleted, but depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line. |
+> [!NOTE]                                                                                                                                 
+> If the parent line contains an item that is not stocked and the accounting distributions are split, the child line will be split automatically to match the financial dimensions of the parent line. The accounting distributions for the child line cannot be additionally split or deleted, but depending on the setup of the child line, you might be able to modify the ledger account for the accounting distributions of the child line.
 
 ## Distributing amounts
 When you enter a vendor invoice, each amount will be distributed as follows.

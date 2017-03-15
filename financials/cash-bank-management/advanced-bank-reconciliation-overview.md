@@ -18,14 +18,14 @@ ms.search.form: BankReconciliationMatchRule
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 22104
 ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

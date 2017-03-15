@@ -18,14 +18,14 @@ ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 58941
 ms.assetid: 5b9577ab-b795-428e-832f-f2d42866dc60
 ms.search.region: global
 # ms.search.industry: 
 ms.author: nselin
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

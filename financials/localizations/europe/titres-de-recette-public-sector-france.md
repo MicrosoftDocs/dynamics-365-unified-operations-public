@@ -18,14 +18,14 @@ ms.search.form: CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19931
 ms.assetid: 01d7ba2b-32b7-43aa-8edb-7a2ed700363a
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

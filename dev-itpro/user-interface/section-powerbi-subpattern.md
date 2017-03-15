@@ -25,7 +25,7 @@ ms.assetid: 3e760372-e5ee-49d6-b715-c638294345de
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -67,7 +67,7 @@ Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 ## Appendix
 ### Related articles
 
--   [Configuring PowerBI integration for workspaces](configure-power-bi-integration.md)
+-   [Configuring PowerBI integration for workspaces](..\analytics-bi-reporting\configure-power-bi-integration.md)
 -   [Power BI Integration in Dynamics AX](power-bi-integration.md)
 
 ### Frequently asked questions
@@ -75,7 +75,7 @@ Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 -   **How do I configure PowerBI for integration with my workspace?**
-    -   See the [Configuring PowerBI integration for workspaces](configure-power-bi-integration.md) article.
+    -   See the [Configuring PowerBI integration for workspaces](..\analytics-bi-reporting\configure-power-bi-integration.md) article.
 
 ### Open issues
 

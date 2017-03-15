@@ -1,4 +1,3 @@
----
 # required metadata
 
 title: Assess sales performance by product
@@ -18,14 +17,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 85153
 ms.assetid: b3ac056f-0e4f-4e16-8479-37366f488793
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -46,6 +45,3 @@ For this assessment, you can use the out-of-box **Top products** report, which y
 -   **Retail store management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**
 -   **Category and product management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**
-
-For more information, see [Creating next-generation reporting solutions](create-nextgen-reporting-solutions.md).
-

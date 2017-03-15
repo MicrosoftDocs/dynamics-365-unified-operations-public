@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -51,6 +51,3 @@ Additionally, two unique reports that take advantage of hierarchical grid struct
 -   **Category and product management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**
 -   **Pricing and discount management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports**
-
-For more information, see [Creating next-generation reporting solutions](create-nextgen-reporting-solutions.md).
-

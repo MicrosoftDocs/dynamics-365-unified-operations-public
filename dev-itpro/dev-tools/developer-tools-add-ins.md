@@ -25,7 +25,7 @@ ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -44,7 +44,7 @@ Dynamics 365 for Operations ships with the **Form statistics** add-in, which pro
 See also
 --------
 
-[Developer home page](developer-landing-page.md)
+[Developer home page](developer-home-page.md)
 
 [Development tools](development-tools.md)
 

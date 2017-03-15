@@ -6,10 +6,10 @@
 ### [Chinese tax integration modification for VAT customer invoices FAQ](chn-chinese-tax-integration-vat-customer-invoices.md)		
 ## [Import the Chinese Golden Tax data entity](import-chinese-golden-tax-data-entity.md)			
 ## [Posting inventory main accounts by site](chn-about-posting-inventory-main-accounts-by-site.md)			
-## [China monthly average cost model](chn-monthly-average-cost-model.md)			
-## [Bill of materials comparison](chn-about-bom-comparison.md)			
-## [Depreciation methods fixed assets china](depreciation-methods-fixed-assets-china.md)			
-## [Set up negative debits credits for china](set-up-negative-debits-credits-china.md)			
+## [Monthly average cost model](chn-monthly-average-cost-model.md)			
+## [Bill of materials comparison](chn-bom-comparison.md)			
+## [Depreciation methods fixed assets ](depreciation-methods-fixed-assets-china.md)			
+## [Set up negative debits credits ](set-up-negative-debits-credits-china.md)			
 # Japan	
 ## Fixed assets
 ### [Allocation rules for fixed assets](allocation-rules-fixed-assets.md)			

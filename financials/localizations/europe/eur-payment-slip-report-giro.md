@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264604
 ms.assetid: 551e047b-4581-4a77-b470-c4f8d395c375
 ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 # ms.search.industry: 
 ms.author: epopov
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

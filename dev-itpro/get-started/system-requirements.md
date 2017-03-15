@@ -25,7 +25,7 @@ ms.assetid: e564d51d-42d3-47c5-b388-93b8219c692a
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: 01-08-2016
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
 ---
@@ -123,7 +123,7 @@ The computer must meet all system requirements for installing and using the foll
 -   At least 10 GB of free space (The channel database can require a large amount of space.)
 
 ## Requirements for development on local VMs
-For information about the requirements for development on local virtual machines (VMs), see [VM running on-premises](access-instances.md#vm-running-on-premises).
+For information about the requirements for development on local virtual machines (VMs), see [VM running on-premises](..\dev-tools\access-instances.md#vm-running-on-premises).
 
 See also
 --------

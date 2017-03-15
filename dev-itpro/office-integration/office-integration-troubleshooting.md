@@ -25,7 +25,7 @@ ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cgarty
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -64,7 +64,7 @@ The Excel Add-in runs inside an Internet Explorer (IE) window. The Excel Add-inÂ
 ## Troubleshooting Issues
 ### \[Fixed\] Issue: During Excel Add-in sign-in, an error appears "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
 
-**Issue:** During Excel Add-in sign-in, an error appears "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ". **Explanation:** This is usually caused when AAD cannot find the AAD application representing the Excel Add-in because during [PowerBI configuration](configure-power-bi-integration.md) an AAD application was added that has the App ID URI set to the environment URL. **Fix:** Ensure that there are no AAD App ID URI's set to the environment URI. App ID URI's should be a made up unique URI like https://contosoAXPowerBI.
+**Issue:** During Excel Add-in sign-in, an error appears "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ". **Explanation:** This is usually caused when AAD cannot find the AAD application representing the Excel Add-in because during [PowerBI configuration](..\analytics-bi-reporting\configure-power-bi-integration.md) an AAD application was added that has the App ID URI set to the environment URL. **Fix:** Ensure that there are no AAD App ID URI's set to the environment URI. App ID URI's should be a made up unique URI like https://contosoAXPowerBI.
 
 ### \[Fixed\] Issue: During Excel Add-in sign-in, an error appears "AADSTS50001: The application named ABC was not found in the tenant named XYZ"
 
@@ -98,5 +98,5 @@ See also
 
 [Office Integration lab and walkthroughs](office-integration-tutorial.md)
 
-[Configuring PowerBI Integration](configure-power-bi-integration.md)
+[Configuring PowerBI Integration](..\analytics-bi-reporting\configure-power-bi-integration.md)
 

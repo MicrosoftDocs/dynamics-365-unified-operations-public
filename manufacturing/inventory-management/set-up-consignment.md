@@ -18,14 +18,14 @@ ms.search.form: DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, 
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 2084
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 220804
 ms.assetid: 88822f78-4de5-462c-a55f-1f766c572719
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: perlynne
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

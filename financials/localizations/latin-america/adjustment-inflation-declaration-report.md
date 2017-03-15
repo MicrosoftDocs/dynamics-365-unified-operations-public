@@ -18,14 +18,14 @@ ms.search.form: InflationAdjJournal_MX, InpcRateTable_MX, LedgerParameters, Main
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 9391
 ms.assetid: 9076bf16-0021-47ad-a3b9-1bab75c583ec
 ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

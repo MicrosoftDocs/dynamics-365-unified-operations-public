@@ -25,7 +25,7 @@ ms.assetid: 990d64e6-d436-4c79-9bb5-bf8c5c5a048f
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: margoc
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: AX 2012 R3 CU8
 
 ---

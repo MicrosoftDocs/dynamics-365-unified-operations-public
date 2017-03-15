@@ -25,7 +25,7 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kweekley
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -100,7 +100,7 @@ These entities were used to create calculated measures in the data model. The ca
 ## Additional resources
 Here are some helpful links that are related to entities and building Power BI content:
 
--   [Data entities](data-entities.md)
+-   [Data entities](..\data-entities\data-entities.md)
 -   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)

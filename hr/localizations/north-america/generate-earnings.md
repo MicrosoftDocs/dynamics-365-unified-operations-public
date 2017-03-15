@@ -18,14 +18,14 @@ ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 audience: Application User
 # ms.devlang: 
 ms.reviewer: rschloma
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 220864
 ms.assetid: 87aac2bd-fcdb-4f97-a55f-7f25659d6940
 ms.search.region: USA
 # ms.search.industry: 
 ms.author: brpotter
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

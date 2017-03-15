@@ -25,7 +25,7 @@ ms.assetid: 2a2ffa1e-5a15-4e2a-b18c-c4d890d38a50
 ms.search.region: global
 # ms.search.industry: 
 ms.author: josaw
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
 ---
@@ -132,7 +132,7 @@ The (May 2016) APQC Unified Library contains the Task guides that are intended t
 | BPM line                                                 | Country/region |
 |----------------------------------------------------------|----------------|
 | Create a new product                                     | Global         |
-| Create dimension-based configurations                    | Global         |
+| Create ..\financial-dimensions\dimension-based configurations                    | Global         |
 | Create predefined product variants                       | Global         |
 | Create sales price selection criteria                    | Global         |
 | Enter orders for configurable products                   | Global         |

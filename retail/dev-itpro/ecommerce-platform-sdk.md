@@ -25,7 +25,7 @@ ms.assetid: c0b1740b-1cbb-47c4-94e8-779cde8411af
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: meeram
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

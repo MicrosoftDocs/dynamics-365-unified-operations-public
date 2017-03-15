@@ -25,7 +25,7 @@ ms.assetid: 1de997fb-d5c4-4668-9759-0758d141a3eb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kuntalme
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

@@ -25,7 +25,7 @@ ms.assetid: 65fb607a-58e4-4800-81b5-6058acb003cb
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: cgarty
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -40,7 +40,7 @@ Overview
 In this tutorial, you will use and build Microsoft Office integration experiences that involve Microsoft Excel, Microsoft Word, the Document Management subsystem, and email. You will see how Microsoft Dynamics 365 for Operations integrates with Excel and Word by using data entities as an entry point into the system, how Excel can become a core part of the user experience, and how Excel and Word can be used for ad-hoc lightweight reporting. You will also see how files can be stored and shared by using the Document Management and email capabilities in Dynamics 365 for Operations.
 
 ## Prerequisites
-For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](access-instances.md). If you're running Internet Explorer on the virtual machine (VM), you must enable font and file downloads at **Internet Options** &gt; **Security** &gt; **Custom Level**. Microsoft Visual Studio 2015 runs on the VM, and it must run as an administrator so that metadata and compilation files can be overwritten. To make sure that Visual Studio runs as an administrator, search for the program, and pin it to the taskbar. Then right-click the shortcut on the taskbar, right-click **Visual Studio 2015**, click **Properties** &gt; **Advanced**, and select the **Run as administrator** check box. Visual Studio will now run as an administrator via a single left click of the taskbar shortcut.
+For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](..\dev-tools\access-instances.md). If you're running Internet Explorer on the virtual machine (VM), you must enable font and file downloads at **Internet Options** &gt; **Security** &gt; **Custom Level**. Microsoft Visual Studio 2015 runs on the VM, and it must run as an administrator so that metadata and compilation files can be overwritten. To make sure that Visual Studio runs as an administrator, search for the program, and pin it to the taskbar. Then right-click the shortcut on the taskbar, right-click **Visual Studio 2015**, click **Properties** &gt; **Advanced**, and select the **Run as administrator** check box. Visual Studio will now run as an administrator via a single left click of the taskbar shortcut.
 
 ## Key concepts
 -   **Entities and OData** – You will use the Microsoft Dynamics Excel Data Connector App (Excel App) to create, read, update, and delete Dynamics 365 for Operations. The connector uses OData services that are created for any entity that is left in the default state of "public" (**DataEntity.Public**=**Yes**).

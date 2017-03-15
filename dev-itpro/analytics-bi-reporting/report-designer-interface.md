@@ -25,7 +25,7 @@ ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---
@@ -84,7 +84,7 @@ The **Edit** menu is available to users who have the **Designer** or **Administr
 | Insert Column                          | Insert an empty column into the column definition. This command is available from a column definition.                                                                                                             |
 | Delete Column                          | Delete the selected column from the column definition. This command is available from a column definition.                                                                                                         |
 | Insert Reporting Units from Dimensions | Open the **Insert Reporting Units from Dimensions** dialog box, where you can select the dimension values to include in the reporting tree definition. This command is available from a reporting tree definition. |
-| Import Dimension Set Hierarchy         | Open the **Dimension Set Hierarchy** dialog box, where you can import a dimension set hierarchy from the financial data. This command is available from a reporting tree definition for a dimension-based system.  |
+| Import Dimension Set Hierarchy         | Open the **Dimension Set Hierarchy** dialog box, where you can import a dimension set hierarchy from the financial data. This command is available from a reporting tree definition for a ..\financial-dimensions\dimension-based system.  |
 | Insert Reporting Unit                  | Insert an empty row into the reporting tree definition. This command is available from a reporting tree definition.                                                                                                |
 | Delete Reporting Unit                  | Delete the selected reporting unit row from the reporting tree definition. This command is available from a reporting tree definition.                                                                             |
 

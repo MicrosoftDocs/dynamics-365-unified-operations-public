@@ -25,7 +25,7 @@ ms.assetid: 45efdabf-1714-4ba4-9a9d-217143a6c6e0
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tabell
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

@@ -18,14 +18,14 @@ ms.search.form: ISRConcept_MX, ISRConceptMainAccount_MX, ISRRateTable_MX
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 2821
 ms.assetid: 77edc236-6101-4bd3-ab39-931295e68df4
 ms.search.region: Mexico
 # ms.search.industry: 
 ms.author: sndray
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

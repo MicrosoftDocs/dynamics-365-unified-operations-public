@@ -25,7 +25,7 @@ ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tjvass
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
 ---
@@ -56,7 +56,7 @@ The following walkthrough shows the process of expanding an existing application
 
 [![Custom solution (after customization)](./media/fleet-extension-rentals-list-after-1024x672.png)](./media/fleet-extension-rentals-list-after.png)
 
-1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](customization-overlayering-extensions.md). For this example, add a custom report to the **Fleet Management Extensions** model.
+1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](..\dev-tools\..\dev-tools\customization-overlayering-extensions.md). For this example, add a custom report to the **Fleet Management Extensions** model.
 2.  **Create a new project in Microsoft Visual Studio.** Make sure that the project is associated with your extension model. The following illustration shows the project settings. [![Project settings in Visual Studio](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
 3.  **Add a table extension to store the custom report data.** Find the temporary cache for the **TmpFMRentalsByCust** data set that is populated by the RDP class, and create an extension in your model. Define the fields that will be used to store the data for the report server, and then click **Save** to save your changes. The following illustration shows the table extension that is required for this example. [![Table extension for this example](./media/fleet-extension-table-extension.png)](./media/fleet-extension-table-extension.png)
 4.  **Add your custom report to the project.** The custom design closely resembles the standard solution. Therefore, you can just duplicate the existing application report in the **Fleet Management Extension** model, and then update the report design so that it includes the custom title and additional text box in the Rental Charges container.

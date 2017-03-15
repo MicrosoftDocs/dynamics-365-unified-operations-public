@@ -18,14 +18,14 @@ ms.search.form: CustPaymMode, VendPaymMode
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 262514
 ms.assetid: 72ea2018-5a49-419c-93d0-755e5ff2722f
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 # ms.search.industry: 
 ms.author: v-lenest
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
@@ -43,7 +43,7 @@ There are two methods that you can use to get file formats for use with methods 
 
 ### Method 1: Electronic reporting file formats
 
-For file formats that are based on ER configurations, you must import the configurations from Lifecycle Services (LCS). For more information, see [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md). After you import reporting configurations for those file formats, the imported formats will be available to select on the **Methods of payment** page. The process for importing and selecting file formats for Europe is similar to the procedure for Japan. For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).
+For file formats that are based on ER configurations, you must import the configurations from Lifecycle Services (LCS). For more information, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs). After you import reporting configurations for those file formats, the imported formats will be available to select on the **Methods of payment** page. The process for importing and selecting file formats for Europe is similar to the procedure for Japan. For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).
 
 ### Method 2: X++ file formats
 

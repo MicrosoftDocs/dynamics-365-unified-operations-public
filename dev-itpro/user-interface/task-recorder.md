@@ -1,7 +1,7 @@
----
+﻿---
 # required metadata
 
-title: Workflow subsystem updates in Dynamics 365 for Operations
+title: Create documentation or training using Task recordings
 description: This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 author: josaw1
 manager: AnnBe
@@ -25,13 +25,12 @@ ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: josaw
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Workflow subsystem updates in Dynamics 365 for Operations
-
+# Create documentation or training using Task recordings
 This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 
 Learn about Task recorder

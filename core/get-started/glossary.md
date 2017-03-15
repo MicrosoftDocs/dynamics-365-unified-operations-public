@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tfehr
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -254,7 +254,7 @@ The vehicle used for deployment on User Acceptance Test (UAT) and production env
 
 A Visual Studio tool that you used to create, update, and inspect your model elements.
 
-###### **dimension-based configuration**
+###### **..\financial-dimensions\dimension-based configuration**
 
 A configuration technology used to create product variants by selecting values for product dimensions.
 
@@ -504,7 +504,7 @@ A part of a product.
 
 ###### **product dimension**
 
-The size, color, or configuration product attributes that are used for dimension-based configuration.
+The size, color, or configuration product attributes that are used for ..\financial-dimensions\dimension-based configuration.
 
 ###### **product family**
 

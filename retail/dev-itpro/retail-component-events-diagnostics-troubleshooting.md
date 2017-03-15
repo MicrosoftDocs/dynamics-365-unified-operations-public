@@ -25,7 +25,7 @@ ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: aamiral
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

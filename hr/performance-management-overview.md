@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 31
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mfalkner
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
@@ -43,7 +43,11 @@ As the following diagram shows, there are three pages that help you manage the p
 The following diagram shows how the primary components of performance management are related to each other. [![Performance process overview](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## Performance journal
-As an employee, before you complete your review, you often gather information about activities or events that contributed to your success during a review period. The performance journal is the place where you can document those activities and events. In addition, you can create future activities that must be completed to help you accomplish a goal, meet the requirements of a development plan, or meet a performance commitment. Performance journals aren’t required in order to create goals or performance reviews. There are two versions of the performance journal: the employee version, which is accessible through the **Employee self-service** workspace (**ESS**), and the manager version, which is accessible through the **Manager self-service** workspace (**MSS**). Employees can create journals for themselves and can choose to share them with their manager. Managers can create journals for their team and can choose to share them with their employees. When it’s accessed from the **ESS** workspace, the **performance journal** page lets you capture the following information:
+As an employee, before you complete your review, you often gather information about activities or events that contributed to your success during a review period. The performance journal is the place where you can document those activities and events. In addition, you can create future activities that must be completed to help you accomplish a goal, meet the requirements of a development plan, or meet a performance commitment. Performance journals aren’t required in order to create goals or performance reviews. 
+
+There are two versions of the performance journal: the employee version, which is accessible through the **Employee self-service** workspace (**ESS**), and the manager version, which is accessible through the **Manager self-service** workspace (**MSS**). Employees can create journals for themselves and can choose to share them with their manager. Managers can create journals for their team and can choose to share them with their employees. 
+
+When it’s accessed from the **ESS** workspace, the **performance journal** page lets you capture the following information:
 
 -   A title for the activity
 -   A description for the activity, which includes detailed information about the activity
@@ -60,17 +64,37 @@ You can also link the performance journal to an external website by storing the 
 The performance journal contains an additional feature that is named Praise. When you click on **Send praise**, you can select an employee and provide feedback to that employee via email. The message is sent to the employee who is being praised, that employee’s manager, the employee who is sending the praise, and that employee’s manager. A performance journal entry is created for each person who receive the praise message.
 
 ## Goals
-The **performance goals** page helps you track the goals that you and your manager have created for you. You can create any number of goals, and those goals can span different periods and performance reviews. You can also create simple or complex goals, depending on the amount of information that you want to enter about the goal. Goals aren’t required for performance reviews. A basic goal must include the following information:
+The **performance goals** page helps you track the goals that you and your manager have created for you. You can create any number of goals, and those goals can span different periods and performance reviews. You can also create simple or complex goals, depending on the amount of information that you want to enter about the goal. Goals aren’t required for performance reviews. 
+
+A basic goal must include the following information:
 
 -   A short name
 -   A longer description of the goal
 -   The anticipated start date for the goal
 -   The estimated completion date for the goal
 
-You can also specify a goal category to help you organize your goals. Managers will also see the name of the person that the goal is assigned to. If you have more detailed instructions for a goal, you can create goal topics. These topics include a title and a description. You can include as many topics as you require to help guarantee that the details of the goal are clear to both the employee and the manager. Both employees and managers can also enter comments about the progress of the goals. Goals often have measurable results. You can add measurements to track the target goal results and the actual results. If the measurement is a stretch goal, you can mark the measurement by using the **Stretch goal** option. Your performance journal will contain activities that provide your manager with more information about how you accomplished your goal. If you’ve linked a performance journal to the goal, it appears in the **Activities** section of that goal. You can also add a new performance journal from the **performance goals** page. That performance journal will be automatically linked to the goal. If you want to attach a document to the goal, such as a certificate of completion, you can attach it in the **Attachments** section of the **performance goals** page. A document viewer is provided so that you can quickly view the contents of any attached document. You can create a template from a goal and then use the template to create new goals that are based on the template. When you create a template from a goal, the description, topics, and target measurements are saved. However, all actual measurements, completion dates, and topic comments are removed.
+You can also specify a goal category to help you organize your goals. Managers will also see the name of the person that the goal is assigned to. 
+
+If you have more detailed instructions for a goal, you can create goal topics. These topics include a title and a description. You can include as many topics as you require to help guarantee that the details of the goal are clear to both the employee and the manager. Both employees and managers can also enter comments about the progress of the goals. 
+
+Goals often have measurable results. You can add measurements to track the target goal results and the actual results. If the measurement is a stretch goal, you can mark the measurement by using the **Stretch goal** option. 
+
+Your performance journal will contain activities that provide your manager with more information about how you accomplished your goal. If you’ve linked a performance journal to the goal, it appears in the **Activities** section of that goal. You can also add a new performance journal from the **performance goals** page. That performance journal will be automatically linked to the goal. 
+
+If you want to attach a document to the goal, such as a certificate of completion, you can attach it in the **Attachments** section of the **performance goals** page. A document viewer is provided so that you can quickly view the contents of any attached document. 
+
+You can create a template from a goal and then use the template to create new goals that are based on the template. When you create a template from a goal, the description, topics, and target measurements are saved. However, all actual measurements, completion dates, and topic comments are removed.
 
 ## Performance reviews
-Performance reviews are more formally known as discussions. They are now flexible enough to support continuous feedback, development plans and more formal reviews. You can quickly create small meetings for two people, such as a one-on-one meeting, or you can build a more complex review that matches the review process of your company. A meeting such as a one-on-one is a simple review, and requires a short name, a longer description of the contents of the meeting, and the date of the meeting. A simple review includes the same information, plus the review period that is being discussed. Managers will also see the name of the person that the review is created for. For more detailed reviews, you can pull in active and completed goals, and enter comments about them. All performance journal activities and measurements that are related to a goal will appear on the review. After the review is finalized, a snapshot of the measurements is stored to retain the history of those items at the time of the review. You can also use the **Competencies** section to discuss, review, and rate the employee’s competencies. You can add as many competencies as you require, and you can choose whether the competency must be rated. You can create new reviews that are based on templates that you’ve created. For example, you can have a template for one-on-ones, development plans, or periodic reviews. You can select the template when you create a new review.
+Performance reviews are more formally known as discussions. They are now flexible enough to support continuous feedback, development plans and more formal reviews. You can quickly create small meetings for two people, such as a one-on-one meeting, or you can build a more complex review that matches the review process of your company. 
+
+A meeting such as a one-on-one is a simple review, and requires a short name, a longer description of the contents of the meeting, and the date of the meeting. A simple review includes the same information, plus the review period that is being discussed. Managers will also see the name of the person that the review is created for. 
+
+For more detailed reviews, you can pull in active and completed goals, and enter comments about them. All performance journal activities and measurements that are related to a goal will appear on the review. After the review is finalized, a snapshot of the measurements is stored to retain the history of those items at the time of the review. 
+
+You can also use the **Competencies** section to discuss, review, and rate the employee’s competencies. You can add as many competencies as you require, and you can choose whether the competency must be rated. 
+
+You can create new reviews that are based on templates that you’ve created. For example, you can have a template for one-on-ones, development plans, or periodic reviews. You can select the template when you create a new review.
 
 ## Components you can include in performance reviews
 You can include a number of types of information in performance reviews. They include review detail, measurements, activities, ratings, sign-offs and attachments.

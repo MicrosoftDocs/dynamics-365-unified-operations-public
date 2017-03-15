@@ -25,7 +25,7 @@ ms.assetid: cdc3fbe4-fa45-49fa-be97-caef16b58090
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
-ms.dyn365.ops.intro: 01-08-2016
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
 ---

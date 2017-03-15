@@ -25,7 +25,7 @@ ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

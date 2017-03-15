@@ -25,7 +25,7 @@ ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -38,7 +38,7 @@ Working with aggregate data
 ---------------------------
 
 -   [Analytics](analytics.md)
--   [In-memory, real-time aggregate models replace SSAS cubes](in-memory-real-time-aggregate-models.md)
+-   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
 -   [BIR 100: Modeling and Using Aggregate Data](model-aggregate-data.md)
 -   [BIR 106: Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
 

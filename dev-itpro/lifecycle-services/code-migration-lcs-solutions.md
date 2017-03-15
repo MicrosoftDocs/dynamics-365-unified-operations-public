@@ -25,7 +25,7 @@ ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: omarc
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
 ---
@@ -49,5 +49,5 @@ See also
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 
-[Technical Concepts Guide for code migration](developer-landing-page.md#code-migration)
+[Technical Concepts Guide for code migration](..\dev-tools\developer-home-page.md#code-migration)
 
