@@ -3,7 +3,7 @@
 ### [Get started with Microsoft FastTrack for Dynamics 365](get-started\fasttrack-dynamics-365-overview.md)
 ### [Sign up for a subscription](\dev-itpro\dev-tools\sign-up-preview-subscription)
 ### [How to get the on-premises version of Dynamics AX 2012](\dev-itpro\deployment\csp-download-customersource)
-## Deploy a demo environment
+## [Deploy a demo environment](\dev-itpro\dev-tools\deploy-demo-environment)
 ## Explore the user interface
 ### [Action search](get-started\action-search.md)
 ### [Advanced filtering and query syntax](get-started\advanced-filtering-query-options.md)
@@ -14,7 +14,7 @@
 ### [Personalize the user experience](get-started\personalize-user-experience.md)
 ### [Keyboard shortcuts](get-started\shortcut-keys.md)
 ### [Manage how pages display](get-started\window-management.md)
-### Understand Lifecycle Services](dev-itpro\lifecycle-services\lcs-works-lcs)
+### [Understand Lifecycle Services](dev-itpro\lifecycle-services\lcs-works-lcs)
 ## Get help and support
 ### [View and export field descriptions](get-started\view-export-field-descriptions.md)
 ### [Getting started with Help](\dev-itpro\get-started\help-get-started)
