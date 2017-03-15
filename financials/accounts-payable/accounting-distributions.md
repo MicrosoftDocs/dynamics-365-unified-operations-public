@@ -58,4 +58,4 @@ The generic accounting distribution capabilities provide the following options f
 -   ** View distributions** – View the accounting distributions for the all lines and monetary amounts on the document. You can't modify the accounting distributions from this view.
 
 
-For more information, see [Accounting distributions and subledger journal entries for free text invoices](accounting-distributions-subledger-journal-entries-free-text-invoices.md).
+For more information, see [Accounting distributions and subledger journal entries for free text invoices](accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md).
