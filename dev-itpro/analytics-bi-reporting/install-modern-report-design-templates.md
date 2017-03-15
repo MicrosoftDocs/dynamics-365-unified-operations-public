@@ -62,7 +62,7 @@ The report designs have been bundled into a model file and posted to Microsoft D
 
             ModelUtil.exe -import -metadatastorepath=C:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
 
-    For more information about how to import model files, see [Distribution of models: How to export and import a model](models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015 to verify that the new collection appears under the **AOT** node in Application Explorer. [![New collection under the AOT node](./media/imported-model-file-1024x488.png)](./media/imported-model-file.png)
+    For more information about how to import model files, see [Distribution of models: How to export and import a model](..\dev-tools\models-export-import.md). After you've imported the model file, start Microsoft Visual Studio 2015 to verify that the new collection appears under the **AOT** node in Application Explorer. [![New collection under the AOT node](./media/imported-model-file-1024x488.png)](./media/imported-model-file.png)
 
 3.  Follow these steps to incorporate the modern report design into an existing application suite report:
     1.  Create a project that contains the application suite report.

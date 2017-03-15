@@ -58,7 +58,7 @@ The following walkthrough shows the process of expanding an existing application
 
 [![Custom solution (after customization)](./media/fleet-extension-rentals-list-after-1024x672.png)](./media/fleet-extension-rentals-list-after.png)
 
-1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](..\dev-tools\..\dev-tools\customization-overlayering-extensions.md). For this example, add a custom report to the **Fleet Management Extensions** model.
+1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](..\dev-tools\customization-overlayering-extensions.md). For this example, add a custom report to the **Fleet Management Extensions** model.
 2.  **Create a new project in Microsoft Visual Studio.** Make sure that the project is associated with your extension model. The following illustration shows the project settings. 
     
     [![Project settings in Visual Studio](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
