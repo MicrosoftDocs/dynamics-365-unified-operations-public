@@ -5,7 +5,7 @@ title: Set up asset retirement obligation for fixed assets
 description: In Japan, asset retirement obligation (ARO) is recognized for fixed assets that have legal obligations at their retirement. This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-10-19 22 - 59 - 08
+ms.date: 2017-03-15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -38,7 +38,7 @@ Asset retirement obligation (ARO) is used to distribute the retirement cost of a
 
 | Item        | Content                                                                                                                                                                                   |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Assumptions | Acquisition cost: **10,000** (0 residual value) Useful life: **5** Depreciation method: **Straight line** Estimated cost of retirement: **1,000 ** Discount rate: **3%**                  |
+| Assumptions | Acquisition cost: **10,000** (0 residual value) Useful life: **5** Depreciation method: **Straight line** Estimated cost of retirement: **1,000** Discount rate: **3%**                  |
 | Step 1      | Debit: Equipment **10,863** Credit: Other payable **10,000** Credit: ARO liability **863**                                                                                                |
 | Step 2\*    | Debit: Depreciation expenses **2,173** Credit: Accumulated depreciation (FA) **2,000** Credit: Accumulated depreciation (ARO) **173**                                                     |
 | Step 3\*    | Debit: Interest expenses **27** Credit: ARO liability **27**                                                                                                                              |
