@@ -72,26 +72,23 @@ Let’s assume that we want to monitor **Revenue per rental for Vehicles with Au
 3.  KPI designer will be displayed with the KPI **RevenuePerRentalAutoTransmission**.
 4.  Right-click the **RevenuePerRentalAutoTransmission** node and select **Properties**. Enter the following properties.
 
-|                       |                        |
-|-----------------------|------------------------|
 | **Property**          | **Value**              |
+|-----------------------|------------------------|
 | Measurement           | FMAggregateMeasurement |
 | Threshold Short Label | Auto Transmissions     |
 
 ### Define Ranges to filter value and goal
 
 1.  Define the expression for the KPI value. Under **FMRevenuePerRentalAutoTransmission**, select the **Value** node and specify the following properties (the values must be entered in the order they appear in the table below).
-    |               |                  |
-    |---------------|------------------|
     | **Property**  | **Value**        |
+    |---------------|------------------|
     | Measure Group | FMRentalCharges  |
     | Measure       | RevenuePerRental |
 
 2.  Because we want to filter vehicles with auto transmission, let’s define a range expression. Expand **Value &gt; Ranges**  and then select the **Ranges** node. Right-click and select **New Range**.
 3.  Select the newly created range. Right-click and select **properties**. Enter following property values (the values must be entered in the order they appear in the table below).
-    |               |                     |
-    |---------------|---------------------|
     | **Property**  | **Value**           |
+    |---------------|---------------------|
     | Name          | AutoTransmission    |
     | Filter Type   | Value               |
     | Dimension     | FMVehicle           |
@@ -102,9 +99,8 @@ Let’s assume that we want to monitor **Revenue per rental for Vehicles with Au
     **Note:** When defining value based filters, the system does not validate the string of numeric value entered for the default value property. You’re expected to enter the data value as it would appear in data. This is similar to specifying a range expression in general. If the range expression isn’t hidden, the user can change this filter value or the filter definition in the client.
 4.  Define the expression for the KPI Goal. Select the **Goal** node and specify the following properties.
 
-|              |              |
-|--------------|--------------|
 | **Property** | **Value**    |
+|--------------|--------------|
 | Goal Type    | BasedOnValue |
 | Value        | 250          |
 
@@ -118,9 +114,9 @@ Tiles are user interface elements that can be defined as buttons to take the use
 3.  In name, enter **FMRevenuePerRentalAutoTransmissionTile**. This is the name of the tile that will be created. The name must be unique across tiles.
 4.  Click **Add**. The new tile will appear in Visual Studio.
 5.  Drag and drop the **FMRevenuePerRentalAutoTransmission** KPI definition from Solution Explorer onto the tile in the designer. This will automatically specify a few properties. Enter following properties.
-    |              |                           |
-    |--------------|---------------------------|
+
     | **Property** | **Value**                 |
+    |--------------|---------------------------|
     | Label        | Revenue per Rental - Auto |
     | Size         | Wide                      |
 
@@ -135,9 +131,9 @@ Now that you defined a KPI tile, you can put it in the interface so the user can
 3.  You’ll place the tile at the end of the first section (TabPage) of the panorama (Tab) on the form. This section is named TileContainer. In the design window, expand **FMClerkWorkspace** &gt; **Design** &gt;**PanoramaBody (Tab)** &gt; **SummaryTileSection (TabPage)**.
 4.  Right-click **SummaryTileSection**, point to **New**, and then click **Tile Button**.
 5.  Specify the following values for the new tile button.
-    |              |                                        |
-    |--------------|----------------------------------------|
+
     | **Property** | **Value**                              |
+    |--------------|----------------------------------------|
     | Name         | FMRevenuePerRentalAutoTransmission     |
     | Tile         | FMRevenuePerRentalAutoTransmissionTile |
 
@@ -168,9 +164,10 @@ You’ll modify the default time trend chart so that it only shows the trend for
 1.  Select the KPI **RevenuePerRentalAutoTransmission** in Solution Explorer and double-click. KPI designer will be displayed.
 2.  Select **RevenuePerRentalAutoTransmission &gt; Trends** node. Right-click and select **New Trend**.
 3.  Right-click the newly created node and select **Properties**. Modify following property values.
-    |              |                 |
-    |--------------|-----------------|
+
+
     | **Property** | **Value**       |
+    |--------------|-----------------|
     | Name         | MyTimeTrend     |
     | Trend Type   | Time trend      |
     | Item Count   | 6               |
@@ -186,9 +183,10 @@ You’ll modify the default top contributors chart to reflect the top auto trans
 
 1.  Select **RevenuePerRentalAutoTransmission &gt;** **Trends**. Right-click and select **New Trend**.
 2.  Select the newly created bode. Right-click and select properties. Modify following property value.
-    |              |                       |
-    |--------------|-----------------------|
+
+
     | **Property** | **Value**             |
+    |--------------|-----------------------|
     | Name         | TopModels             |
     | Dimension    | FMVehicle             |
     | Attribute    | VehicleModel          |
@@ -198,9 +196,9 @@ You’ll modify the default top contributors chart to reflect the top auto trans
 
 3.  Next, you’ll define another top contributor chart in addition to the default one. Select the **RevenuePerRentalAutoTransmission &gt; Trends** node. Right-click and select **New Trend**.
 4.  Select the newly created trend node. Right-click and select **Properties**. Enter the following property values (you must enter property values in the following order).
-    |              |                    |
-    |--------------|--------------------|
+
     | **Property** | **Value**          |
+    |--------------|--------------------|
     | Name         | TopCustomers       |
     | Trend Type   | Top trend          |
     | Dimension    | FMCustomerProfile  |
@@ -284,23 +282,23 @@ A MeasureExpression is an object that evaluates measures from an aggregate measu
 2.  Select **Analytics &gt; Key performance indicator** from the list of items. Provide **FMRevenuePerRentalMargin** as the name of the KPI.
 3.  KPI designer will be displayed with the KPI **FMRevenuePerRentalMargin**.
 4.  Select **FMRevenuePerRentalMargin**. Right-click and select properties. Specify following property values.
-    |              |                        |
-    |--------------|------------------------|
+
     | **Property** | **Value**              |
+    |--------------|------------------------|
     | Measurement  | FMAggregateMeasurement |
 
 5.  Select the **Value** node. Right-click and select properties. Enter following property values (you must enter them in the order shown below).
-    |                        |                          |
-    |------------------------|--------------------------|
+
     | **Property**           | **Value**                |
+    |------------------------|--------------------------|
     | Value Type             | Based on Expression      |
     | Expression Class name  | FMRentalCalculations     |
     | Expression method name | FMRevenuePerRentalMargin |
 
 6.  Define the expression for the KPI goal. Select the **Goal** node and specify the following properties.
-    |              |              |
-    |--------------|--------------|
+
     | **Property** | **Value**    |
+    |--------------|--------------|
     | Goal Type    | BasedOnValue |
     | Value        | 250          |
 
@@ -314,9 +312,9 @@ A MeasureExpression is an object that evaluates measures from an aggregate measu
 
 1.  Select the KPI **FMRevenuePerRentalMargin** in Solution Explorer and double-click. KPI designer will be displayed with the KPI **FMRevenuePerRentalMargin**.
 2.  Select **FMRevenuePerRentalMargin**. Right-click and select properties. Modify the following property values.
-    |                       |           |
-    |-----------------------|-----------|
+
     | **Property**          | **Value** |
+    |-----------------------|-----------|
     | Show Goal             | No        |
     | Show Status and Trend | No        |
 
@@ -331,9 +329,9 @@ Next, you’ll create a tile using the KPI definition.
 3.  For the name, enter **FMRevenuePerRentalMarginTile**. This is the name of the tile that will be created. The name must be unique across tiles.
 4.  Click **Add**. The new tile will appear in Visual Studio.
 5.  Drag and drop the **FMRevenuePerRentalMargin** KPI definition from Solution Explorer onto the **FMRevenuePerRentalMarginTile** tile definition in the designer. This will automatically specify following properties:
-    |              |                              |
-    |--------------|------------------------------|
+
     | **Property** | **Value**                    |
+    |--------------|------------------------------|
     | Size         | Wide                         |
     | Label        | Margin on Revenue per Rental |
     | Type         | KPI                          |
@@ -350,9 +348,9 @@ Now that you defined a KPI tile, you can put it in the interface so the user can
 3.  Decide where the KPI should appear in the workspace. For this tutorial, you’ll place it at the end of the first section (TabPage) of the panorama (Tab) on the form. This section is named TileContainer. Expand **FMClerkWorkspace &gt; **Design** &gt;**PanoramaBody (Tab)** &gt; **SummaryTileSection (TabPage)****.
 4.  Right-click **SummaryTileSection**, point to **New**, and then click **Tile Button**.
 5.  Specify the following values for the new tile button.
-    |              |                              |
-    |--------------|------------------------------|
+
     | **Property** | **Value**                    |
+    |--------------|------------------------------|
     | Name         | RevenuePerRentalKPITile      |
     | Tile         | FMRevenuePerRentalMarginTile |
 
@@ -366,9 +364,9 @@ KPI tiles drill-down to the **KPIDetails** form by default. So, unless you chang
 
 1.  Select the KPI **FMRevenuePerRentalMargin** in Solution Explorer and double-click. KPI designer will be displayed with the KPI **FMRevenuePerRentalMargin.**
 2.  Select **FMRevenuePerRentalMargin**. Right-click and select properties. Modify following property values.
-    |                      |                      |
-    |----------------------|----------------------|
+
     | **Property**         | **Value**            |
+    |----------------------|----------------------|
     | Drill thru Link type | Menu item            |
     | Menu item name       | FMReservationsReport |
     | Menu item type       | Display              |
@@ -381,7 +379,6 @@ KPI tiles drill-down to the **KPIDetails** form by default. So, unless you chang
 After making the above modifications to the clerk workspace, you can reload the workspace to view the updated content. You can access the workspace from the newly created link in the navigation pane. Your updated workspace will show the added charts and KPI tile.
 
 ## Appendix
-[]()
 
 ### Installing the demo data
 
@@ -396,8 +393,10 @@ To work with the sample, you must install the provided demo data.
 4.  On the **Setup** form, click **Load demo data**.
 5.  If you’re asked to reload the base data, click **Yes**.
 6.  When the data is finished loading, click **Close**.
-7.  Click **Show navigation pane** in the application bar. [![BI10](./media/bi10.png)](./media/bi10.png)
-8.  Click on **App links**. [![BI11](./media/bi11.png)](./media/bi11.png)
+7.  Click **Show navigation pane** in the application bar. 
+    [![BI10](./media/bi10.png)](./media/bi10.png)
+8.  Click on **App links**. 
+    [![BI11](./media/bi11.png)](./media/bi11.png)
 9.  Click **System Administration** &gt; **Maintain aggregate measurements**. Select **FMAggregateMeasurements**.
 10. On the application bar, click **Refresh now**. Wait until the processing completes. Processing is indicated at top of the page by a series of moving dots. The processing is completed when the indicator disappears.
 
