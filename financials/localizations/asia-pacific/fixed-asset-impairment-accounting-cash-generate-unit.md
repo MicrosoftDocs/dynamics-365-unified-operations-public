@@ -18,14 +18,14 @@ ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_J
 audience: Application User
 # ms.devlang: 
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 25691
 ms.assetid: c87ac196-8dc6-4636-99a3-be478ddd8efe
 ms.search.region: Japan
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

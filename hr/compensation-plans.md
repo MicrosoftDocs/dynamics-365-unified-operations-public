@@ -18,14 +18,14 @@ ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFi
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -36,7 +36,9 @@ Compensation and Benefits Managers can use Compensation management to maintain a
 
 ### Introduction
 
-Compensation management is used to control the delivery of base pay and awards. An employee's fixed base pay and merit increases are controlled through fixed compensation plans. The payment of incentive pay, such as bonus payments, performance awards, stock options, and grants, and also one-time awards, are controlled through variable compensation plans. Employees can be enrolled in one or more plans of both types. An employee must meet the following requirements in order to be eligible for enrollment in a compensation plan:
+Compensation management is used to control the delivery of base pay and awards. An employee's fixed base pay and merit increases are controlled through fixed compensation plans. The payment of incentive pay, such as bonus payments, performance awards, stock options, and grants, and also one-time awards, are controlled through variable compensation plans. 
+
+Employees can be enrolled in one or more plans of both types. An employee must meet the following requirements in order to be eligible for enrollment in a compensation plan:
 -   The employee must have an active position assignment.
 -   The employee must meet the criteria that are defined by eligibility rules for a compensation plan.
 

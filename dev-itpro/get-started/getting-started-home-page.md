@@ -25,7 +25,7 @@ ms.assetid: c395e9ff-ea43-42fe-a584-145d6ce10ae3
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -46,7 +46,7 @@ The following resources provide information about the Dynamics 365 for Operation
 -   [Personalizing the user experience](personalize-user-experience.md)
 -   [Configuring and filtering workspaces](configure-filter-workspaces.md)
 -   [Navigation search](navigation-search.md)
--   [Action search](action-search.md)
+-   [Action search](https://docs.microsoft.com/en-us/dynamics365/operations/core/action-search)
 -   [Keyboard shortcuts](shortcut-keys.md)
 -   [Display pages side-by-side using the Open in New Window icon](display-pages-side-by-side.md)
 -   [Advanced filtering and query options](advanced-filtering-query-options.md)

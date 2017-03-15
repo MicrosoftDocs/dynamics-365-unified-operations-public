@@ -25,7 +25,7 @@ ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
-ms.dyn365.ops.intro: 
+ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
 ---
@@ -489,7 +489,7 @@ The following example shows part of a column description that has an account att
 
 ### Dimension filter in a column definition
 
-A dimension filter is used to restrict the **FD** column to specific dimension values. The filter can include a single dimension, a range of dimensions, or a group of dimensions. The filter can also include dimension value sets. Because dimension values can vary, a dimension-based system doesn't have to correspond to an exact length. The filter is applied, regardless of whether the report includes a reporting tree. You can use a wildcard character (\* or ?) in any position. When you specify multiple accounts, put a comma between accounts, as in the following example: +Account=\[1200\], +Account=\[1100\], Department=\[01?\] To receive all departments for a specific account, you can exclude the Department dimension from the dimension filter. For example, both of the following dimension filters are handled in the same way:
+A dimension filter is used to restrict the **FD** column to specific dimension values. The filter can include a single dimension, a range of dimensions, or a group of dimensions. The filter can also include dimension value sets. Because dimension values can vary, a ..\financial-dimensions\dimension-based system doesn't have to correspond to an exact length. The filter is applied, regardless of whether the report includes a reporting tree. You can use a wildcard character (\* or ?) in any position. When you specify multiple accounts, put a comma between accounts, as in the following example: +Account=\[1200\], +Account=\[1100\], Department=\[01?\] To receive all departments for a specific account, you can exclude the Department dimension from the dimension filter. For example, both of the following dimension filters are handled in the same way:
 
 -   +Account=\[1100\],Department
 -   +Account=\[1100\]

@@ -25,7 +25,7 @@ ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -49,7 +49,7 @@ Retail components
 -   [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 -   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
--   [Access Microsoft Dynamics 365 for Operations instances](access-instances.md)
+-   [Access Microsoft Dynamics 365 for Operations instances](..\dev-tools\access-instances.md)
 
 ## Retail Point of Sale (POS)
 -   [Retail Modern POS architecture](https://ax.help.dynamics.com/en/wiki/Retail-Modern-POS-architecture/)

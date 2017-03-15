@@ -25,7 +25,7 @@ ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -45,7 +45,7 @@ Lifecycle Services
 
 ## Hotfixes and updates
 -   [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
--   [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
+-   [Download hotfixes from Lifecycle Services](..\servicing\download-hotfix-lcs.md)
 -   [Microsoft Dynamics 365 for Operations versions and update policy](versions-update-policy.md)
 
 ## Upgrade
@@ -55,8 +55,8 @@ Lifecycle Services
 -   [Upgrade the Dynamics AX platform to the August 2016 release](update-platform-each-release.md)
 
 ## Database administration
--   [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](copy-database-from-azure-sql-to-sql-server.md)
--   [Copy a Microsoft Dynamics 365 for Operations database from SQL Server to an Azure SQL Database environment](copy-database-from-sql-server-to-azure-sql.md)
+-   [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](..\database-management\copy-database-from-azure-sql-to-sql-server.md)
+-   [Copy a Microsoft Dynamics 365 for Operations database from SQL Server to an Azure SQL Database environment](..\database-management\copy-database-from-sql-server-to-azure-sql.md)
 -   [Request a point-in-time database restore on a non-production environment](request-a-point-in-time-db-restore.md)
 -   [Retain a copy of a Dynamics 365 for Operations database to restore later](retain-copy-dynamics-365-operations-database.md)
 

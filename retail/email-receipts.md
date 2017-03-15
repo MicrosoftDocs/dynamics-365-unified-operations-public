@@ -18,14 +18,14 @@ ms.technology:
 audience: IT Pro
 # ms.devlang: 
 # ms.reviewer: 41
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 252934
 ms.assetid: 4b9f733b-bf28-4b85-94de-4f7adf67a62c
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

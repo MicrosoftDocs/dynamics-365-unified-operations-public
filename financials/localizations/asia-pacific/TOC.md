@@ -7,7 +7,7 @@
 ## [Import the Chinese Golden Tax data entity](import-chinese-golden-tax-data-entity.md)			
 ## [Posting inventory main accounts by site](chn-about-posting-inventory-main-accounts-by-site.md)			
 ## [China monthly average cost model](chn-monthly-average-cost-model.md)			
-## [Bill of materials comparison](chn-about-bom-comparison.md)			
+## [Bill of materials comparison](chn-bom-comparison.md)			
 ## [Depreciation methods fixed assets china](depreciation-methods-fixed-assets-china.md)			
 ## [Set up negative debits credits for china](set-up-negative-debits-credits-china.md)			
 # Japan	

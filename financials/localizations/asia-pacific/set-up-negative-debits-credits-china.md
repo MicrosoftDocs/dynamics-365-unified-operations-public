@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265884
 ms.assetid: 0f23b25b-45e5-4156-9e38-621a97046552
 ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: leguo
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
@@ -40,5 +40,6 @@ You can view credit and debit amounts for ledger accounts in two separate column
 2.  Set the **Show amount in debit/credit columns** slider to **Yes**.
 3.  Open **General ledger** &gt; **Inquiries and reports** &gt; **Voucher transactions** to confirm.
 
-**Note:** This functionality is only available for a legal entity with a primary address in China.
+> [!Note]
+> This functionality is only available for a legal entity with a primary address in China.
 

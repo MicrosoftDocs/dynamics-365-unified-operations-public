@@ -18,14 +18,14 @@ ms.search.form: HRMMassHireProject
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -44,7 +44,11 @@ Use mass hire projects when you hire multiple workers at one time, such as when 
 -   The full-time equivalent value of the position
 
 ## Example
-In the summer, you usually hire 15-20 part-time college students to fill available internships in your company. This year, you want to hire five accountants, five order processors, and five cashiers. Instead of creating each position record and worker record separately, you create one mass hire project called “SummerInterns”. The project start and end dates correlate with the start and end dates of the position durations for the positions you create for the mass hire project. In the **Mass hire projects** page, select the “SummerInterns” project and then click **Open project**. In the open mass hire project, click **Create positions** and enter information about the accountant position. You can indicate that five accountant positions should be created using the same information for each one, and then click OK. Repeat this process for the order processor and cashier positions. After selecting students to hire for the internship positions, you'll enter each student’s information in the **Position details** for the position that you're hiring them for. When you have entered all of the position details, select the position in the Mass hire projects page, and then click **Hire**. A position record will be created for each position and a worker record will be created and assigned to the correct position for each person who you hire.
+In the summer, you usually hire 15-20 part-time college students to fill available internships in your company. This year, you want to hire five accountants, five order processors, and five cashiers. Instead of creating each position record and worker record separately, you create one mass hire project called “SummerInterns”. The project start and end dates correlate with the start and end dates of the position durations for the positions you create for the mass hire project. 
+
+In the **Mass hire projects** page, select the “SummerInterns” project and then click **Open project**. In the open mass hire project, click **Create positions** and enter information about the accountant position. You can indicate that five accountant positions should be created using the same information for each one, and then click OK. Repeat this process for the order processor and cashier positions. 
+
+After selecting students to hire for the internship positions, you'll enter each student’s information in the **Position details** for the position that you're hiring them for. When you have entered all of the position details, select the position in the Mass hire projects page, and then click **Hire**. A position record will be created for each position and a worker record will be created and assigned to the correct position for each person who you hire.
 
 ## Masshire project statuses
 A mass hire project can have the following statuses.

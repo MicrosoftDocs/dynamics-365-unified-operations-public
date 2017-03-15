@@ -25,7 +25,7 @@ ms.assetid: c54d34a5-32e2-4d0d-a1c2-4a9940d95ade
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: sijoshi
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -43,7 +43,7 @@ The Retail software development kit (SDK) includes code, code samples, templates
 
 The Retail SDK is available in Microsoft Dynamics 365 for Operations development environments, and in hotfix packages in a Retail SDK folder. For more information see:
 
--   [Access Microsoft Dynamics 365 for Operations Development Instances](access-instances.md). If you get the SDK from a development instance, it is immediately ready for configuration and use.
+-   [Access Microsoft Dynamics 365 for Operations Development Instances](..\dev-tools\access-instances.md). If you get the SDK from a development instance, it is immediately ready for configuration and use.
 -   [Install Retail hotfixes.](install-retail-hotfix.md) If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and includes all other fixes.
 
 We recommend that you put the SDK in a source control system such as Visual Studio Online.

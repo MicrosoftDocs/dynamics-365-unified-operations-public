@@ -18,14 +18,14 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 266844
 ms.assetid: 06798e29-6140-489e-9b4e-66b45b26be2b
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
@@ -252,7 +252,7 @@ For general information about setting up sales tax codes, see [Set up sales tax
 You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code. For additional information:
 
 -   [Electronic reporting overview](general-electronic-reporting.md)
--   [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
+-   [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
 -   [Localization requirements – Create a GER configuration](localization-requirements-electronic-reporting-configuration.md)
 
 ## Countryspecific resources for VAT statements

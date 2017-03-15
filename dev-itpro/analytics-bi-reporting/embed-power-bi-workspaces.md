@@ -25,7 +25,7 @@ ms.assetid: f1d79557-2538-42b5-9ea3-4e86a61abfd4
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tjvass
-ms.dyn365.ops.intro: 01-02-2017
+ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 
 ---

@@ -25,7 +25,7 @@ ms.assetid: c5d6aa38-1f5f-41e5-9d90-11766d34a947
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: jasongre
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -65,7 +65,7 @@ ContentGroup (Group) – **Note:** A fields subpattern is used.
 
 -   [Fields and Field Groups](fields-field-groups-subpattern.md)
 -   [Tabular Fields](tabular-fields-subpattern.md)
--   [Dimension Expression Builder](dimension-expression-builder-subpattern.md)
+-   [Dimension Expression Builder](..\financial-dimensions\dimension-expression-builder-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**

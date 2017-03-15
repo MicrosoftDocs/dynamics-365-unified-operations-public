@@ -25,7 +25,7 @@ ms.assetid: 3e2212f7-c34c-4034-a0fa-cbf382eb0c8d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: kfend
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -156,5 +156,5 @@ See also
 
 [Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](data-entities-home-page.md)
+[Data entities home page](data-entities.md)
 

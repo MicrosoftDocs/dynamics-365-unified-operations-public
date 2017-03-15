@@ -18,14 +18,14 @@ ms.search.form: CustPaymMode, CustVendPaymReconciliation, LedgerJournalTransCust
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 262684
 ms.assetid: 7632f01a-28b6-408f-8734-b03416c6fb81
 ms.search.region: Sweden
 # ms.search.industry: 
 ms.author: v-lenest
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---

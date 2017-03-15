@@ -18,14 +18,14 @@ ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTab
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 266964
 ms.assetid: 99f3a20c-2e2e-4fc7-b846-3d86802174c4
 ms.search.region: Poland
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

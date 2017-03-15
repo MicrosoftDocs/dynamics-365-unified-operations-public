@@ -18,14 +18,14 @@ ms.search.form: CustFreeCreditNote_W, CustFreeInvoice
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 81
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 266944
 ms.assetid: 353ac18b-bc81-4cb4-b182-1e6e0759f961
 ms.search.region: Estonia, Lithuania
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
 ---

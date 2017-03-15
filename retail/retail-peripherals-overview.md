@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 41
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 268444
 ms.assetid: 2ea93e43-8019-49a0-a7f8-325565ebc52d
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
@@ -537,6 +537,7 @@ This configuration can be used for all Modern POS clients that share hardware st
 9.  Install and activate Modern POS. For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).
 10. Sign in to Modern POS, and select **Perform non-drawer operations**.
 11. Start the **Manage hardware stations** operation.
+
 12. Click **Manage**.
 13. On the hardware station management page, set the option to turn on the hardware station.
 14. Select the hardware station to use, and then click **Pair**.
@@ -545,7 +546,7 @@ This configuration can be used for all Modern POS clients that share hardware st
 17. On the hardware station selection page, click the recently selected hardware station to make it active. **Note:** If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process. Click **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. Select the register, and then set the **Select upon tender** option to **Yes**. Use the **1090** distribution schedule to sync changes to the channel database.
 
 ## Extensibility
-For information about extensibility scenarios for the hardware station, see [Hardware Station extensibility](hardware-station-extensibility.md).
+For information about extensibility scenarios for the hardware station, see [Hardware Station extensibility](dev-itpro/hardware-station-extensibility.md).
 
 ## Security
 According to current security standards, the following settings should be used in a production environment: **Note:** The hardware station installer will automatically make these registry edits as part of the installation through self-service.
@@ -575,7 +576,7 @@ According to current security standards, the following settings should be used i
 **Note:** It’s very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
 
 ## Peripheral simulator
-For information, see [Retail peripheral simulator](retail-peripheral-simulator.md).
+For information, see [Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md).
 
 ## Microsofttested peripheral devices
 ### IPC (built-in) hardware station

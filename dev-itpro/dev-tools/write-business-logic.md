@@ -25,7 +25,7 @@ ms.assetid: 78f3c89c-2035-486d-9fba-35dd3c121d7d
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pvillads
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -145,7 +145,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
 
 ### Understand the LINQ code
 
-Before proceeding with more C\# code, verify that you understand the LINQ code you just added. More details about LINQ are provided in the [Technical Concepts Guide](developer-landing-page.md), so only the basics are described below.
+Before proceeding with more C\# code, verify that you understand the LINQ code you just added. More details about LINQ are provided in the [Technical Concepts Guide](developer-home-page.md), so only the basics are described below.
 
 -   First, a *provider* is created. It provides access to all the Microsoft Dynamics AX tables.
 -   Next, a *collection* of all customers is created. The customer of interest is retrieved from this collection.

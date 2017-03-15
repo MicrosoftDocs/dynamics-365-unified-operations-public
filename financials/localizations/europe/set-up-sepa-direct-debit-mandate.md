@@ -18,14 +18,14 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 101
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 59491
 ms.assetid: 653a135f-c515-4ae3-9da2-82b5e1f103b5
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mfalkner
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-A Single Euro Payment Area (SEPA) direct debit lets a creditor collect funds from a customer's bank account, provided that the customer has granted a signed mandate to the creditor. The mandate that the customer signs authorizes the creditor to collect a payment and instructs the customer's bank to pay the collection. The following illustration shows the process for setting up SEPA direct debit mandates. The numbers correspond to the procedures later in this topic. ![Set up process for SEPA direct debit mandates](https://i-technet.sec.s-msft.com/dynimg/IC677310.gif "Set up process for SEPA direct debit mandates")
+A Single Euro Payment Area (SEPA) direct debit lets a creditor collect funds from a customer's bank account, provided that the customer has granted a signed mandate to the creditor. The mandate that the customer signs authorizes the creditor to collect a payment and instructs the customer's bank to pay the collection. This topic is organized to show the process for setting up SEPA direct debit mandates.
 
 ## Prerequisites
 The following table shows the prerequisites that must be in place before you start.

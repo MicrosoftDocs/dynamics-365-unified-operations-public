@@ -3,7 +3,7 @@
 #[EU Sales list reporting](eu-sales-list.md)						
 #[SEPA Direct debit overview](sepa-direct-debit-overview.md)						
 ##[Set up SEPA direct debit mandate](set-up-sepa-direct-debit-mandate.md)						
-#[SEPA Credit transfer overview](sepa-credit-transfer-overview.md)						
+#[SEPA Credit transfer overview](sepa-credit-transfer.md)						
 #[Intrastat](intrastat.md)						
 #[VAT reporting](eu-vat-reporting.md)						
 ##[VAT register transactions](eeu-vat-register-transactions.md)						
@@ -32,33 +32,32 @@
 ##[CODA bank statement](bel-coda-bank-statement-import.md)						
 #The Czech Republic						
 ##[VAT statement](cz-vat-statement-details-for-czech-republic.md)						
-##[Czech depreciation suspension holidays](cze-depreciation-suspension-holidays.md)						
-##[Czech fixed assets depreciation](cze-fixed-assets-depreciation.md)						
-##[Czech half depreciation fixed asset disposal](cze-half-depreciation-fixed-asset-disposal.md)											
+##[Depreciation suspension holidays](cze-depreciation-suspension-holidays.md)						
+##[Fixed assets depreciation](cze-fixed-assets-depreciation.md)						
+##[Half depreciation fixed asset disposal](cze-half-depreciation-fixed-asset-disposal.md)											
 #Estonia						
 ##[VAT statement](est-vat-statement-details-estonia.md)						
-##[VAT statement](est-vat-statement-details-for-estonia.md)						
-#France						
-##[Vendor invoice payment holds in the public sector](vendor-invoice-payment-holds-public-sector-france.md)						
-##[Titres de recette in the public sector](titres-de-recette-public-sector-france.md)						
-##[Public sector accounting](public-sector-accounting-france.md)						
-##[Procurement and sourcing in the public sector](procurement-sourcing-public-sector-france.md)						
+#France
+##Public sector
+###[Accounting](public-sector-accounting-france.md)
+###[Vendor invoice payment holds](vendor-invoice-payment-holds-public-sector-france.md)						
+###[Titres de recette](titres-de-recette-public-sector-france.md)
+###[Procurement and sourcing](procurement-sourcing-public-sector-france.md)						
+###[Mandats de paiement](mandats-de-paiement-public-sector-france.md)						
+###[Commitments](commitments-public-sector-france.md)						
 ##[Penalties for past due customer payments](apply-penalty-customer-payment-past-due.md)						
-##[Mandats de paiement in the public sector](mandats-de-paiement-public-sector-france.md)						
 ##[Print lump sum recovery text on a customer invoice](configure-print-lump-sum-recovery-text-customer-invoice.md)						
 ##[RB/SL depreciation](rbsl-depreciation.md)						
 ##[NAF codes and siret numbers](naf-codes-siret-numbers.md)						
 ##[Derogatory depreciation](derogatory-depreciation.md)						
 ##[Chronological invoices vouchers](chronological-invoices-vouchers-france.md)						
-##[Commitments in the public sector in France](commitments-public-sector-france.md)						
 #Germany						
-##[German audit file (GDPdU/GoBD)](gdpdu-audit-data-export.md)						
-##[German journal list report](german-journal-list-report.md)						
+##[Audit file (GDPdU/GoBD)](gdpdu-audit-data-export.md)						
+##[Journal list report](german-journal-list-report.md)						
 ##[Print a separate label for credit memos that originate from sales](print-separate-label-credit-memo-originating-sales-deu.md)	
 ##[Additional acquisition depreciation](additional-acquisition-depreciation.md)						
 #Hungary						
-##[Low cost fixed assets](hun-low-cost-fixed-assets.md)						
-#Ireland						
+##[Low cost fixed assets](hun-low-cost-fixed-assets.md)												
 #Italy						
 ##[VAT statements details](vat-statements-details-for-italy.md)						
 ##[Italian black list report](italian-black-list-report.md)						
@@ -86,8 +85,8 @@
 ##[Duplicate sales invoice numbering](pol-sales-invoice-duplicates-numbering.md)						
 ##[Correction notes](pol-correction-notes.md)						
 #Spain						
-##[Spanish bill of exchange options](esp-spanish-bill-of-exchange-options.md)						
-##[Spanish promissory note options](esp-spanish-promissory-note-options.md)						
+##[Bill of exchange options](esp-spanish-bill-of-exchange-options.md)						
+##[Promissory note options](esp-spanish-promissory-note-options.md)						
 ##[Special entries and opening sheets](opening-sheets-spain.md)						
 ##[Sales and purchase cycles](esp-sales-purchase-cycle.md)						
 ##[Fixed asset group revaluation](esp-fixed-asset-group-revaluation.md)						
@@ -95,8 +94,8 @@
 ##[One time customers](esp-no-one-time-customer-for-project-contracts.md)						
 ##[Cash discount is applied in the invoice parameter](cash-discount-applied-invoice.md)										
 #Sweden						
-##[Import payment formats for Sweden](sweden-payment-formats-import.md)												
+##[Import payment formats](sweden-payment-formats-import.md)												
 #Switzerland						
-##[Swiss ESR customer payments import](che-esr-customer-payments-import.md)												
+##[ESR customer payments import](che-esr-customer-payments-import.md)												
 #United Kingdom						
 ##[Construction Industry Scheme](construction-industry-scheme.md)

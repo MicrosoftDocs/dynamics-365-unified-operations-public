@@ -2,7 +2,7 @@
 # required metadata
 
 title: View and evaluate the results of a questionnaire
-description: This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
+description: This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
 author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-04 18 - 36 - 29
@@ -18,21 +18,21 @@ ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollect
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
 # View and evaluate the results of a questionnaire
 
-This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
+This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
 
 After respondents complete a questionnaire, you can view and evaluate the questionnaire results in the following ways:
 

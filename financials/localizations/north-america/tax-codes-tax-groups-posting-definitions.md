@@ -18,14 +18,14 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, PayrollTaxC
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 31
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 221414
 ms.assetid: cd8cceb4-0ea3-4770-930b-0869e9bfa3c4
 ms.search.region: USA
 # ms.search.industry: 
 ms.author: brpotter
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
 ---
@@ -36,10 +36,10 @@ This topic answers frequently asked questions about tax and posting definitions.
 
 This topic describes functionality that is available only if the **Payroll - USA** configuration key is selected.
 
-## Can I massupdate tax codes?
+## Can I mass-update tax codes?
 Yes, you can update all the tax codes in a tax group at the same time. The financial information for each tax code is set up separately for each legal entity. If you change the values for one legal entity, the values for other legal entities aren’t affected. When you update a tax code by using the mass-update functionality, the changes are effective immediately. To make date-effective changes to a tax code, use the **Maintain versions** button on the **Tax codes** page.
 
-## Can I masscreate tax groups?
+## Can I mass-create tax groups?
 Yes. When you set up Payroll, you automatically create a set of system-defined tax groups the first time that you click the **Update tax data** link on the **Payroll** area page. Each system-defined tax group contains tax codes of a particular type. For example, all tax codes for school districts are included in the SCHL tax group, and all tax codes for state income tax are included in the SIT tax group. These tax groups are updated every time that you run the **Update tax data** process. You can manually create additional tax groups. For more information, see [Tax information tasks](tax-information-tasks.md).
 
 ## Why are some tax codes not posted according to the posting definition that is associated with their tax group?

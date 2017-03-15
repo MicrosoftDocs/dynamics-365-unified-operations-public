@@ -25,7 +25,7 @@ ms.assetid: 32e3235e-46b0-4fd9-a138-ff712191ba84
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: bensm
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

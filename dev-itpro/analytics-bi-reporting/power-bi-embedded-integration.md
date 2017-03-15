@@ -25,7 +25,7 @@ ms.assetid: ca4b2ccf-d68d-4344-833e-1c45d966246c
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tjvass
-ms.dyn365.ops.intro: 01-02-2017
+ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
 
 ---
@@ -43,7 +43,7 @@ Dynamics 365 for Operations integrates with [Microsoft Power BI](http://www.pow
 -   Report filters based on user and session context information, such as company or date range.
 -   Ability to navigate directly into a specific tab within a Power BI report via menu items.
 
-For more information about customizations using extensions, see [Customization: Overlayering and extensions](customization-overlayering-extensions.md).
+For more information about customizations using extensions, see [Customization: Overlayering and extensions](..\dev-tools\..\dev-tools\customization-overlayering-extensions.md).
 
 ## Why would I want to use Microsoft Power BI Embedded?
 While both Power BI services are available, it's important to know which is best suited to support target application scenarios. The following illustration offers a feature comparison across services.[![power-bi-embedded-overview](https://msdynamics.blob.core.windows.net/media/2017/02/Power-BI-Embedded-Overview-1024x487.png)](https://msdynamics.blob.core.windows.net/media/2017/02/Power-BI-Embedded-Overview.png) Read the [Power BI Embedded FAQ](https://docs.microsoft.com/en-us/azure/power-bi-embedded/power-bi-embedded-faq) to learn more about the Power BI Embedded Service.

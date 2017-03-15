@@ -25,7 +25,7 @@ ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tjvass
-ms.dyn365.ops.intro: 01-05-2016
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
 ---

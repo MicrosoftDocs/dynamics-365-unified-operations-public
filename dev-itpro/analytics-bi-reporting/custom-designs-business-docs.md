@@ -25,7 +25,7 @@ ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: tjvass
-ms.dyn365.ops.intro: 01-11-2016
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
 ---
@@ -46,7 +46,7 @@ Here are some important points that you should be aware of before you apply this
 ## Customize a business document
 The following walkthrough shows the process of introducing a custom report design for an existing application business document and then using Print management to select the new design. The solution includes a custom design definition for the **Sales confirmation** report that is provided in the standard application as part of the Application Suite model. The application customizations will be defined in an extension model.
 
-1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](customization-overlayering-extensions.md). For this example, you add a model that is named **Application Suite Extensions**, and that references the Application Suite, Application Platform, and Application Foundation packages.
+1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](..\dev-tools\..\dev-tools\customization-overlayering-extensions.md). For this example, you add a model that is named **Application Suite Extensions**, and that references the Application Suite, Application Platform, and Application Foundation packages.
 2.  **Create a new project in Microsoft Visual Studio.** Make sure that the project is associated with your extension model. The following illustration shows the project settings. [![Project settings in Visual Studio](./media/app-extension-vs-project-settings.png)](./media/app-extension-vs-project-settings.png)
 3.  **Create a custom report design for the business document.** You must make sure that your custom solution consumes the correct report data contract. Find the existing Application Suite report in Application Explorer. This report is named **SalesConfirm**. Right-click it, and then click **Duplicate in project** to create the custom solution.
 4.  **Rename the report so that it has a meaningful name.** For this example, name the custom report **SalesConfirmExt** to distinguish it from the standard solution. Compile the project, and deploy the report to verify that the changes have no errors.

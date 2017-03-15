@@ -1,10 +1,9 @@
-# Getting started
-## [Developer home page](developer-home-page.md)
-## [Application stack and server architecture](application-stack-server-architecture.md)
-## [Get an evaluation copy](get-evaluation-copy.md)
-## [Sign up for a subscription](sign-up-preview-subscription.md)
-## [Access Dynamics 365 for Operations instances](access-instances.md)
-## [Development system requirements](development-system-requirements.md)
+# [Developer home page](developer-home-page.md)
+# [Application stack and server architecture](application-stack-server-architecture.md)
+# [Get an evaluation copy](get-evaluation-copy.md)
+# [Sign up for a subscription](sign-up-preview-subscription.md)
+# [Access Dynamics 365 for Operations instances](..\dev-tools\access-instances.md)
+# [Development system requirements](development-system-requirements.md)
 # Fleet Management sample application
 ## [Fleet Management sample application](fleet-management-sample.md)
 ## [Fleet Management sample application overview](introduction-fleet-management-sample.md)
@@ -44,7 +43,7 @@
 ### [X++ operator precedence](../dev-reference/xpp-operator-precedence.md)
 ### [X++ classes and methods](../dev-reference/xpp-classes-methods.md)
 ### [X++ data selection and manipulation](../dev-reference/xpp-data-query.md)
-### [X++ macros](../dev-reference/macros-xpp.md)
+### [X++ macros](../dev-reference/xpp-macros.md)
 ### [X++ attribute classes](../dev-reference/xpp-attribute-classes.md)
 ### [X++ and C# comparison](../dev-reference/xpp-cs-comparison.md)
 ### [X++ syntax](../dev-reference/xpp-syntax.md)
@@ -102,8 +101,8 @@
 ## [X Classes](../dev-reference/x-classes.md)
 # Customize with extensions and overlayering
 ## Extensibility home page
-## [Customize model elements using extensions](../extensions-overlayering/customize-model-elements-extensions.md)
-## [Customize with extensions and overlayering](../customization-overlayering-extensions.md)
+## [Customize model elements using extensions](../extensions-overlayering/..\extensions-overlayering\customize-model-elements-extensions.md)
+## [Customize with extensions and overlayering](customization-overlayering-extensions.md)
 ## [Class extensions](../extensions-overlayering\class-extensions.md)
 ## Database synchronization
 # Move packages between environments
@@ -119,5 +118,4 @@
 ## [Test projects in Visual Studio](../perf-test/testing-support.md)
 ## [Deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 # Dates
-## [Date/time data and time zones](date-time-zones.md)
 ## [Date effectivity](date-effectivity.md)

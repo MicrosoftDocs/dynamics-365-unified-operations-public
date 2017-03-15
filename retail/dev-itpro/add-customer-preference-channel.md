@@ -25,7 +25,7 @@ ms.assetid: 3c13fe1d-2078-4539-b865-e266b6f56e60
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: meeram
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---

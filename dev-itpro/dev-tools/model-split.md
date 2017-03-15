@@ -25,7 +25,7 @@ ms.assetid: feaa09c5-efc7-4594-921e-b42536b18852
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: maertenm
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -47,7 +47,7 @@ There are two methods for customizing: overlayering and extensions. Overlayering
 -   In the cloud, Microsoft can install, patch, upgrade, and change internal APIs without affecting your customizations.
 -   You can service your solutions independently without concerns about other customizations.
 
-There are currently support code extensions, table extensions, form extensions, menu extensions, and enum extensions. The Extensions section in [Customizations: Overlayering and extensions](customization-overlayering-extensions.md) and [Customize model elements using extensions](customize-model-elements-extensions.md) provide a more detailed explanation on how to use extensions.  Extensions should be used on supported elements wherever possible and are best applied when no change to existing Microsoft code is needed. A change to mask a method’s functionality requires overlayering to change the code itself.  Overlayering should be in areas not covered by extensions and when the customization alters the base functionality. The illustration below summarizes differences between the two customization strategies. [![Customization Overview](./media/customization-overview.png)](./media/customization-overview.png)
+There are currently support code extensions, table extensions, form extensions, menu extensions, and enum extensions. The Extensions section in [Customizations: Overlayering and extensions](customization-overlayering-extensions.md) and [Customize model elements using extensions](..\extensions-overlayering\customize-model-elements-extensions.md) provide a more detailed explanation on how to use extensions.  Extensions should be used on supported elements wherever possible and are best applied when no change to existing Microsoft code is needed. A change to mask a method’s functionality requires overlayering to change the code itself.  Overlayering should be in areas not covered by extensions and when the customization alters the base functionality. The illustration below summarizes differences between the two customization strategies. [![Customization Overview](./media/customization-overview.png)](./media/customization-overview.png)
 
 ## Model breakdown
 <table>

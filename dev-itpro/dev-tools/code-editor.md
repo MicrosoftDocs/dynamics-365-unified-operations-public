@@ -25,7 +25,7 @@ ms.assetid: 87d75162-a9dd-43d2-a316-833e2c799f08
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
-ms.dyn365.ops.intro: 01-02-2016
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
@@ -46,7 +46,7 @@ You can open the element designer that corresponds to the current X++ source cod
 See also
 --------
 
-[Technical Concepts Guide](developer-landing-page.md)
+[Technical Concepts Guide](developer-home-page.md)
 
 [Dynamics 'AX 7' development tools](https://ax.help.dynamics.com/en/?p=178721)
 
