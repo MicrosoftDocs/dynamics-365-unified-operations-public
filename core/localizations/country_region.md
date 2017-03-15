@@ -37,7 +37,7 @@ This topic lists Help content for country/region-specific functionality in Dynam
 Localization requirements
 -------------------------
 
--   [Regulatory watch and regulatory update communication](dev-itpro/localization-requirements-regulatory-watch-communication.md)
+-   [Regulatory watch and regulatory update communication](dev-itpro/localization-requirements-regulatory-watch-communication)
 -   [Separate localization models](dev-itpro/localization-requirements-separate-localization-models.md)
 -   [Apply country/region context](dev-itpro/localization-requirements-apply-country-context.md)
 -   [Regulatory certifications](dev-itpro/localization-requirements-regulatory-certifications.md)
