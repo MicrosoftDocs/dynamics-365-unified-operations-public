@@ -1,7 +1,7 @@
 
 # [Cost management home page](cost-management.md)
-# [Cost management content pack](https://docs.microsoft.com/en-us/operations/dev-itpro/analytics-bi-reporting/cost-management-content-pack?toc=/manufacturing/toc.json)
-
+# [Cost management content pack](https://docs.microsoft.com/en-us/operations/dev-itpro/analytics-bi-reporting/cost-management-content-pack.md?toc=/cost-management/toc.json)
+# [Cost management content pack](https://docs.microsoft.com/en-us/operations/dev-itpro/analytics-bi-reporting/cost-management-content-pack.md?toc=/manufacturing/toc.json)
 # Predetermined cost
 ## [Costing sheet](costing-sheets.md)
 ## [Costing version](costing-versions.md)
