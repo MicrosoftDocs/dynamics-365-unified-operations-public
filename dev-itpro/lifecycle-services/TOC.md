@@ -12,7 +12,7 @@
 # [Set up Configuration manager ](set-up-configuration-manager-lcs.md)
 # [Upload custom business processes to Business process modeler from Task recorder](upload-business-processes-bpm-task-recorder.md)
 
-#Release solutions through LCS
+# Release solutions through LCS
 ## [Developing and releasing solutions on Lifecycle Services](lcs-solutions-app-source.md)
 ## [Stage and publish an LCS solution](marketing-content-lcs-solutions.md)
 ## [Add a methodology to an LCS solution](methodologies-lcs-solutions.md)
@@ -21,7 +21,7 @@
 ## [Process and consume data packages in an LCS solution](process-data-packages-lcs-solutions.md)
 ## [Back up database for an LCS solution](database-backup-lcs-solutions.md)
 
-#AX 2012
+# AX 2012
 ## Deployment
 ### [Cloud-hosted environments (AX 2012)](ax-2012\cloud-hosted-environments-lcs.md)
 ## [Copy a configuration](copy-configuration-lcs.md)
