@@ -37,20 +37,26 @@ This page points to resources that will help you use the Microsoft Dynamics 365 
 Onboarding
 ----------
 
-The following resources provide an overview of the Lifecycle Services and how to work with your partner to get onboarded to Dynamics 365 for Operations. [Microsoft FastTrack for Dynamics 365 overview](fasttrack-dynamics-365-overview.md) [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](lcs-works-lcs.md) [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations partners](getting-started-lcs.md) [Sign up for a subscription](sign-up-preview-subscription.md) [Microsoft Dynamics Lifecycle Services User Guide](lcs-user-guide.md) [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](csp-download-customersource.md)
+The following resources provide an overview of the Lifecycle Services and how to work with your partner to get onboarded to Dynamics 365 for Operations. 
+- [Microsoft FastTrack for Dynamics 365 overview](core/get-started/fasttrack-dynamics-365-overview.md) 
+- [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](lifecycle-services/lcs-works-lcs.md) 
+- [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations partners](lifecycle-services/getting-started-lcs.md) 
+- [Sign up for a subscription](dev-tools/sign-up-preview-subscription.md) 
+- [Microsoft Dynamics Lifecycle Services User Guide](lifecycle-services/lcs-user-guide.md) 
+- [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](deployment/csp-download-customersource.md)
 
 ## User interface
 The following resources provide information about the Dynamics 365 for Operations user experience. For example, these resources will help you navigate, personalize, and use Dynamics 365 for Operations more efficiently.
 
 -   [What's new in the Dynamics AX user experience (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
--   [Personalizing the user experience](personalize-user-experience.md)
--   [Configuring and filtering workspaces](configure-filter-workspaces.md)
--   [Navigation search](navigation-search.md)
+-   [Personalizing the user experience](core/get-started/personalize-user-experience.md)
+-   [Configuring and filtering workspaces](core/get-started/configure-filter-workspaces.md)
+-   [Navigation search](core/get-started/navigation-search.md)
 -   [Action search](https://docs.microsoft.com/en-us/dynamics365/operations/core/action-search)
--   [Keyboard shortcuts](shortcut-keys.md)
--   [Display pages side-by-side using the Open in New Window icon](display-pages-side-by-side.md)
--   [Advanced filtering and query options](advanced-filtering-query-options.md)
--   [Dynamics 365 for Operations client FAQ](client-faq.md)
+-   [Keyboard shortcuts](core/get-started/shortcut-keys.md)
+-   [Display pages side-by-side using the Open in New Window icon](core/get-started/display-pages-side-by-side.md)
+-   [Advanced filtering and query options](core/get-started/advanced-filtering-query-options.md)
+-   [Dynamics 365 for Operations client FAQ](core/get-started/client-faq.md)
 -   [Change the banner or logo](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
 
 ## Help system
@@ -60,7 +66,7 @@ The following resources provide an overview of the Help system and explain how t
 -   [Help architecture](work-with-help.md#help-architecture)
 -   [Connecting the help system](work-with-help.md#connecting-the-help-system)
 -   [Creating custom help](work-with-help.md#creating-custom-help)
--   [How to view and export field descriptions](view-export-field-descriptions.md)
+-   [How to view and export field descriptions](core/get-started/view-export-field-descriptions.md)
 -   [Dynamics 365 for Operations help system (fact sheet)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
 ### Task recordings and Task guides
@@ -68,8 +74,8 @@ The following resources provide an overview of the Help system and explain how t
 Task Recorder is a Dynamics 365 for Operations tool that you can use to record the actions that you take in the user interface (UI). When you create a *task recording*, all events that are executed against the server are recorded as you perform them in the UI. These events include adding values, changing settings, and removing data. A *Task guide* is a controlled, guided, interactive experience that leads you through the steps of a task recording. You can open (or *play*) a task guide from the Help system.
 
 -   [Connecting the help system](work-with-help.md#connecting-the-help-system)
--   [Task Recorder in Dynamics 365 for Operations](task-recorder.md)
--   [Create documentation or training using Task recordings](task-recorder.md)
+-   [Task Recorder in Dynamics 365 for Operations](user-interface/task-recorder.md)
+-   [Create documentation or training using Task recordings](user-interface/task-recorder.md)
 -   [New task guides available (February 2016)](new-task-guides-available-february-2016.md)
 
 ## Additional resources
