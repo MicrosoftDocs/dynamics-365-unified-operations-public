@@ -42,5 +42,5 @@
 ## [Update standard cost for a new manufactured item](update-standard-costs-new-manufactured-item.md)
 ## [Update standard cost in a non-manufacturing environment](update-standard-costs-non-manufacturing-environment.md)
 # Data entity
-## [Data entity: Costing](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-costing)
+## [Data entity: Costing](https://docs.microsoft.com/en-us/operations/dev-itpro/data-entities/data-entities-costing)
 
