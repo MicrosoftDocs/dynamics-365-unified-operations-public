@@ -65,8 +65,8 @@ You can create a password to lock and help protect a building block. In this way
 3.  In the **Protect** dialog box, enter and confirm a password, and then click **OK**. The lock icon on the toolbar is highlighted when an open building block is locked.
 
 To unlock a locked building block, open the building block, and then click **Protect/Unprotect** on the toolbar. Alternatively, on the **Tools** menu, click **Unprotect**.
-Building block groups
----------------------
+
+## Building block groups
 
 Building blocks are the row definitions, column definitions, reporting tree definitions, and report definitions that you create for a report. Building block groups are collections of the definitions and dimension sets that are associated with a company. Building block groups can be company-specific, or several companies can share the same set of building blocks. If some of your companies have a different chart of accounts, you might want to use a different building block group for each company. Alternatively, you might want to name all your individual building blocks to reflect the company that they are compatible with.
 ### Create a building block group
@@ -137,10 +137,7 @@ When you open a building block, other users have read-only access that building 
 3.  Select a building block, and then click **Undo Checkout**.
 4.  Click **Yes** to check in the building block.
 
-
-
-See also
---------
+# See also
 
 [Financial reporting for Microsoft Dynamics ERP](financial-reporting-intro.md)
 

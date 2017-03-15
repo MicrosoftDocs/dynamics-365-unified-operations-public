@@ -41,11 +41,15 @@ Document Reporting Services are based on Microsoft SQL Server Reporting Services
 
 ### Service deployment – Local vs. cloud
 
-In a one-box environment, developers can create, modify, and preview reports, from end to end, by using Microsoft Visual Studio 2015. A separate process isn't required in order to add reports to the application's metadata store. Changes to reports are packaged together with other solution updates and then deployed to the cloud after development is completed in the local environment. [![document-reporting-services-topology](./media/document-reporting-services-topology.png)](./media/document-reporting-services-topology.png)
+In a one-box environment, developers can create, modify, and preview reports, from end to end, by using Microsoft Visual Studio 2015. A separate process isn't required in order to add reports to the application's metadata store. Changes to reports are packaged together with other solution updates and then deployed to the cloud after development is completed in the local environment. 
+
+[![document-reporting-services-topology](./media/document-reporting-services-topology.png)](./media/document-reporting-services-topology.png)
 
 ### Viewing reports in Dynamics 365 for Operations
 
-The enhanced report viewing experience that Dynamics 365 for Operations provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following screen shot shows an example of a report preview that is opened from Visual Studio. [![Example of a report preview](./media/2_report.png)](./media/2_report.png)
+The enhanced report viewing experience that Dynamics 365 for Operations provides for end users is the same as the report preview experience in Microsoft Visual Studio. You no longer use a separate design preview in Visual Studio. Instead, just press Ctrl+F5 to build and preview the report in an Internet Explorer window. The report appears exactly as it would appear in the client. Even the user's parameter experience is the same. The following screen shot shows an example of a report preview that is opened from Visual Studio. 
+
+[![Example of a report preview](./media/2_report.png)](./media/2_report.png)
 
 ## Service administration prerequisites
 The following table compares the service administration prerequisites for Microsoft Dynamics AX 2012 and the current version of Dynamics 365 for Operations.

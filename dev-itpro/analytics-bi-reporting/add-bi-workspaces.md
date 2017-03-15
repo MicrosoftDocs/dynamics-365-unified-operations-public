@@ -394,9 +394,13 @@ To work with the sample, you must install the provided demo data.
 5.  If you’re asked to reload the base data, click **Yes**.
 6.  When the data is finished loading, click **Close**.
 7.  Click **Show navigation pane** in the application bar. 
+    
     [![BI10](./media/bi10.png)](./media/bi10.png)
+
 8.  Click on **App links**. 
+    
     [![BI11](./media/bi11.png)](./media/bi11.png)
+    
 9.  Click **System Administration** &gt; **Maintain aggregate measurements**. Select **FMAggregateMeasurements**.
 10. On the application bar, click **Refresh now**. Wait until the processing completes. Processing is indicated at top of the page by a series of moving dots. The processing is completed when the indicator disappears.
 
