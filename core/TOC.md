@@ -1,7 +1,7 @@
 # [Onboard to Dynamics 365 for Operations](get-started\get-started-landing.md)
 ## Introduction to Microsoft Dynamics 365
 ### [Get started with Microsoft FastTrack for Dynamics 365](get-started\fasttrack-dynamics-365-overview.md)
-### [Sign up for a subscription](dev-itpro\dev-tools\sign-up-preview-subscription)
+### [Sign up for a subscription](\dev-itpro\dev-tools\sign-up-preview-subscription)
 ### [How to get the on-premises version of Dynamics AX 2012](\dev-itpro\deployment\csp-download-customersource)
 ## Deploy a demo environment
 ## Explore the user interface
@@ -19,7 +19,7 @@
 ### [View and export field descriptions](get-started\view-export-field-descriptions.md)
 ### [Getting started with Help](\dev-itpro\get-started\help-get-started)
 ### [Connect Help](\dev-itpro\get-started\working-with-help)
-### [How to view and export field descriptions](getstarted\how-to-view-and-export-field-descriptions.md)
+### [How to view and export field descriptions](get-started\how-to-view-and-export-field-descriptions.md)
 ### [Dynamics 365 for Operations help system (fact sheet)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 ### Task guides and task recorder
 #### [Task Recorder in Dynamics 365 for Operations](\dev-itpro\user-interface\task-recorder)
@@ -27,7 +27,7 @@
 #### [Recently added editing features in task recorder](get-started\recently-added-editing-features-in-task-recorder.md)
 ## Find local features
 ### [Country/region-specific Help content](localizations\country_region.md)
-### [Tell Microsoft about new country/region regulatory features](localizations\inform-msft-new-countryregion-regulations.md)
+### [Tell Microsoft about new country/region regulatory features](\dev-itpro\localization-solutions\submit-localization-alerts)
 # [Configure your organization](organization-administration\organization-administration-home-page.md)
 ## [Organizations and organizational hierarchies](organization-administration\organizations-organizational-hierarchies.md)
 ## [Configure organizational hierarchy](organization-administration\plan-organizational-hierarchy.md)
