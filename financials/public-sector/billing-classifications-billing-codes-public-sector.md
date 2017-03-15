@@ -91,7 +91,7 @@ No, but there’s a way to get the results you need anyway. Let’s say that you
 See also
 --------
 
-[Accounts receivable](accounts-receivable.md)
+[Accounts receivable](..\accounts-receivable\accounts-receivable.md)
 
 [Accounts receivable in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=169941)
 

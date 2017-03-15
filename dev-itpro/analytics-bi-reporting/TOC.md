@@ -3,12 +3,12 @@
 
 # Analytical tools and visualizations
 ## [Analytics](analytics.md)
-## [Why we moved from SSAS cubes to aggregate models](../retail/dev-itpro/in-memory-real-time-aggregate-models.md)
+## [Why we moved from SSAS cubes to aggregate models](../retail/dev-itpro/..\migration-upgrade\in-memory-real-time-aggregate-models.md)
 ## [Modeling and aggregate data](model-aggregate-data.md)
 ## [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](../retail/dev-itpro/migrate-upgraded-cube-entity-store.md)
 ## [Add contextual BI to forms](add-contextual-bi-forms.md)
 ## [Aggregate measurements report](aggregate-measurements-report.md)
-## [Aggregate data entities report](aggregate-data-entities-report.md)
+## [Aggregate data entities report](aggregate-..\data-entities\data-entities-report.md)
 ## [Key performance indicator (KPI) report](key-performance-indicators-report.md)
 ## [Power BI integration](power-bi-integration.md)
 ## [Power BI Embedded integration](power-bi-embedded-integration.md)
@@ -21,8 +21,8 @@
 
 # Power BI content 
 ## [Compensation and Benefits content pack for Power BI](compensation-and-benefits-analysis-power-bi-content-pack.md)
-## [Cost accounting analysis Power BI content pack](cost-accounting-analysis-content-pack-for-power-bi.md)
-## [Cost management Power BI content pack](cost-management-content-pack-for-power-bi.md)
+## [Cost accounting analysis Power BI content pack](cost-accounting-analysis-content-pack.md)
+## [Cost management Power BI content pack](cost-management-content-pack.md)
 ## [Credit collections content pack power bi ](credit-collections-content-pack-power-bi.md)
 ## [Employee Competencies and Development content pack for Power BI](employee-competencies-and-development-analysis-power-bi-content-pack.md)
 ## [Financial Performance content pack for Power BI](financial-performance-power-bi-content-pack.md)

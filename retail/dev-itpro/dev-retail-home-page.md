@@ -49,7 +49,7 @@ Retail components
 -   [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 -   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
--   [Access Microsoft Dynamics 365 for Operations instances](access-instances.md)
+-   [Access Microsoft Dynamics 365 for Operations instances](..\dev-tools\access-instances.md)
 
 ## Retail Point of Sale (POS)
 -   [Retail Modern POS architecture](https://ax.help.dynamics.com/en/wiki/Retail-Modern-POS-architecture/)

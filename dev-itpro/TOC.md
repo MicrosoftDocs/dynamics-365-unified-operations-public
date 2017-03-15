@@ -27,7 +27,7 @@
 # [Financials development](financial-dimensions\TOC.md)
 # Supply chain development
 ## [Gantt development guide](user-interface\gantt-development-guide.md)
-## [Create a new transportation management engine](..\manufacturing\transportation-management\create-new-transportation-management-engine.md)
+## [Create a new transportation management engine](https:\\docs.microsoft.com\en-us\dynamics365\operations\manufacturing\transportation-management\create-new-transportation-management-engine\)
 # [Develop and customize using Visual Studio](dev-tools\TOC.md)
 # [Lifecycle Services](lifecycle-services\TOC.md)
 # [Country/region context](localization-solutions\localization-solution-apply-country-context.md)

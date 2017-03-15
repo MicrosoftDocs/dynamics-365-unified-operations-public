@@ -96,7 +96,7 @@ These actions can be used only when the filter results are limited to a single m
 See also
 --------
 
-[Technical concepts guide](developer-landing-page.md)
+[Technical concepts guide](developer-home-page.md)
 
 [Dynamics AX development tools](development-tools.md)
 

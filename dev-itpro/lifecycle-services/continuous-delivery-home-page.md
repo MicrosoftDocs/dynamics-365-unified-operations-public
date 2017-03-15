@@ -47,7 +47,7 @@ FAQ and guidelines
 -   [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
 
 ## Servicing
--   [Servicing environments](developer-landing-page.md#servicing-environments)
+-   [Servicing environments](..\dev-tools\developer-home-page.md#servicing-environments)
 
 ## Additional resources
 -   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.

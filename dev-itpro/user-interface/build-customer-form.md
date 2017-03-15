@@ -37,7 +37,7 @@ In this lab you’ll create a Master Details form and apply the appropriate form
 Prerequisites
 -------------
 
-For this tutorial, you will need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Dynamics AX Instances](access-instances.md).
+For this tutorial, you will need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Dynamics AX Instances](..\dev-tools\access-instances.md).
 
 ## Overview
 To create the form, you’ll start from the existing form, **FmtCustomer**. The form represents the old Master Details template. As a part of the tutorial, you’ll apply the Master Details pattern, which will enforce a consistent structure for this form type. The following illustration shows the **FmtCustomer** starting artifact. [![CustForm1](./media/custform1.png)](./media/custform1.png)
@@ -53,7 +53,7 @@ To create the form, you’ll start from the existing form, **FmtCustomer**. The 
 ## Setup
 ### Import the tutorial project and transactional data
 
-Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you are working on, review [Access Dynamics AX Instances](access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
+Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts you will use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You will use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you are working on, review [Access Dynamics AX Instances](..\dev-tools\access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.

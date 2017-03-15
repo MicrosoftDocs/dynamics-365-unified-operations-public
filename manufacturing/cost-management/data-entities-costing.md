@@ -124,7 +124,7 @@ None
 See also
 --------
 
-[Data entities and packages framework](data-entities-data-packages.md)
+[Data entities and packages framework](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities-data-packages)
 
-[Data entities home page](data-entities.md)
+[Data entities home page](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/data-entities)
 

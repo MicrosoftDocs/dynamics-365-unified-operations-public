@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic points you to a report that lists the aggregate measurements that are available in Dynamics 365 for Operations.
 
-*Aggregate measurements* can be used to define data entities, called *aggregate data entities,* which can be directly bound to Dynamics 365 for Operations forms as a data source. Aggregate data entities can also be used to expose data to Power BI and access data programmatically using the AXQuery object. To learn more about aggregate measurements and aggregate data entities, see [In-memory, real-time aggregate models replace SSAS cubes](in-memory-real-time-aggregate-models.md).
+*Aggregate measurements* can be used to define data entities, called *aggregate data entities,* which can be directly bound to Dynamics 365 for Operations forms as a data source. Aggregate data entities can also be used to expose data to Power BI and access data programmatically using the AXQuery object. To learn more about aggregate measurements and aggregate data entities, see [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md).
 
 ## To view the report
 The [Aggregate measurements report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)lists each aggregate measurement that is available, along with the measure group, measures, and dimensions associated with the measurement.

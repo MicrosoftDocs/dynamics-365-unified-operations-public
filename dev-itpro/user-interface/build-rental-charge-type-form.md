@@ -37,7 +37,7 @@ In this lab you’ll create a Simple List form. A Simple List form can show refe
 Prerequisites
 -------------
 
-For this tutorial, you’ll need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Microsoft Dynamics AX Instances](access-instances.md).
+For this tutorial, you’ll need to access the Microsoft Dynamics AX environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md).
 
 ## Overview
 To create the form, you’ll start from the existing form, **FmtChargeType**. This form uses the Simple List pattern. The following illustration shows the **FmtChargeType** form with the required controls from the Simple List pattern. [![rentalcharge1](./media/rentalcharge1.png)](./media/rentalcharge1.png) Adhering to the form pattern ensures that this Simple List form has the same structure and layout as other Simple List forms.
@@ -51,7 +51,7 @@ To create the form, you’ll start from the existing form, **FmtChargeType**. Th
 ## Setup
 ### Import the tutorial project and transactional data
 
-Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you’ll use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You’ll use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you’re working on, review [Access Microsoft Dynamics AX Instances](access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
+Use Visual Studio to import the tutorial project. The tutorial project includes the artifacts that you’ll use to complete this tutorial. Use Visual Studio to open the FMTutorial project and load the data for the tutorial. You’ll use the FMTDataHelper class to load data for the Fleet Management tutorial. If this is the first tutorial you’re working on, review [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md) and make sure you provision your administrator user if you’re working on a local VM.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.

@@ -63,7 +63,7 @@ The interest code can be set on the billing code, the billing classification, or
 See also
 --------
 
-[Accounts receivable](accounts-receivable.md)
+[Accounts receivable](..\accounts-receivable\accounts-receivable.md)
 
 [Accounts receivable in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=169941)
 

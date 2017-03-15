@@ -16,7 +16,7 @@
 ## [Developing and releasing solutions on Lifecycle Services](lcs-solutions-app-source.md)
 ## [Stage and publish an LCS solution](marketing-content-lcs-solutions.md)
 ## [Add a methodology to an LCS solution](methodologies-lcs-solutions.md)
-## [Migrate code for an LCS solution](code-migration-lcs-solutions.md)
+## [Migrate code for an LCS solution](..\migration-upgrade\code-migration-lcs-solutions.md)
 ## [Validate an application for an LCS solution](app-validation-lcs-solutions.md)
 ## [Process and consume data packages in an LCS solution](process-data-packages-lcs-solutions.md)
 ## [Back up database for an LCS solution](database-backup-lcs-solutions.md)

@@ -72,5 +72,5 @@ During the settlement process, settlement attributes are considered first, then 
 See also
 --------
 
-[Accounts receivable](accounts-receivable.md)
+[Accounts receivable](..\accounts-receivable\accounts-receivable.md)
 

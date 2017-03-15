@@ -64,5 +64,5 @@ You can use posting definitions to create subledger journal lines for originatin
 See also
 --------
 
-[Accounts receivable](accounts-receivable.md)
+[Accounts receivable](..\accounts-receivable\accounts-receivable.md)
 
