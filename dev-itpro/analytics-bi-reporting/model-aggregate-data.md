@@ -108,8 +108,7 @@ In this section you will add a new measure group to an existing aggregate measur
     | Default Aggregate         | **Sum**                             |
     | Field                     | ExtendedAmount (no change required) |
     | Name                      | Revenue                             |
-
-     
+ 
     | Property (RentalId) | Value                         |
     |---------------------|-------------------------------|
     | Default Aggregate   | **DistinctCount**             |
