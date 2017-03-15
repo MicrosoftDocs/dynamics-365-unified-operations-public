@@ -55,9 +55,8 @@ Yes, you can adjust the balance in a benefit accrual plan. You might have to adj
 -   If a worker is granted additional time off, you can add that amount to the amount that was accrued.
 -   If a worker has reached the maximum accrual limit, you can reduce the amount that was accrued to let the worker accrue additional hours.
 
-| ![Important](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Important")**Important**                                                                                                                                                                                            |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| All manual adjustments that you make are accepted, even if they create a plan balance that does not meet the limits that are set by the plan rules. To undo an adjustment, create a new adjustment that offsets the same amount that you added, or that adds the same amount that you subtracted. |
+>**Important**
+>All manual adjustments that you make are accepted, even if they create a plan balance that does not meet the limits that are set by the plan rules. To undo an adjustment, create a new adjustment that offsets the same amount that you added, or that adds the same amount that you subtracted.
 
 To reverse an adjustment, create a second adjustment that has the same type as the adjustment that you want to reverse. Use the same value, but use the opposite sign as the adjustment to reverse. For example, to reverse a carry-forward adjustment of 8.0 hours, create a carry-forward adjustment of -8.0 hours.
 
@@ -67,7 +66,9 @@ You can delete a worker enrollment from a benefit accrual plan only if these sit
 -   You’re logged on to the legal entity where the benefit accrual plan exists.
 -   The benefit accrual plan has no balances, or has only manual adjustments or pending usage.
 
-If the plan has a balance that was created when a pay statement was submitted, you can’t delete the worker enrollment from the plan, but you can deactivate the enrollment. To do this, in the **Benefit accruals** page, select both the **Stop accrual** and **Stop balance reduction** options. When the **Stop accrual** option is selected, no hours accrue in the plan for this worker. When the **Stop balance reduction** option is selected, validation doesn’t occur for hours used, and hours from the plan that are used aren’t subtracted from the worker’s available balance. When you select both options, this has the same effect as removing the worker from the plan. Neither accrual transactions nor usage transactions are created when you submit a pay statement, and the plan doesn’t appear on the pay statement or the payment.
+If the plan has a balance that was created when a pay statement was submitted, you can’t delete the worker enrollment from the plan, but you can deactivate the enrollment. To do this, in the **Benefit accruals** page, select both the **Stop accrual** and **Stop balance reduction** options. 
+
+When the **Stop accrual** option is selected, no hours accrue in the plan for this worker. When the **Stop balance reduction** option is selected, validation doesn’t occur for hours used, and hours from the plan that are used aren’t subtracted from the worker’s available balance. When you select both options, this has the same effect as removing the worker from the plan. Neither accrual transactions nor usage transactions are created when you submit a pay statement, and the plan doesn’t appear on the pay statement or the payment.
 
 ## Why aren’t hours accruing in a worker’s benefit accrual plan?
 If hours aren’t accruing, this usually occurs for one or more of these reasons:
@@ -80,9 +81,9 @@ If hours aren’t accruing, this usually occurs for one or more of these reasons
 When the amount or rate that is used to calculate payroll deductions and employer contributions for a benefit changes, you have to change it both on the benefit itself and on the benefit records of the workers who are enrolled in that benefit. A yellow message bar notifies you when the rates for the worker enrollments don’t match the rates for the benefit.
 
 You can use an automated process to update rates for workers who have a rate source of **Benefit**. You must manually update rates for workers who have a rate source of **Custom**.
-| ![Note](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Note")**Note**                                                                                                                                                                        |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| If the time zone that is set for the legal entity differs from the time zone where the benefit was created, the automated process might cause some dates to be off by one calendar day. If this occurs, you can adjust the dates by running the process again. |
+
+> **Note**
+>If the time zone that is set for the legal entity differs from the time zone where the benefit was created, the automated process might cause some dates to be off by one calendar day. If this occurs, you can adjust the dates by running the process again.
 
 ## How do I change payroll settings when a worker changes to a new position assignment?
 Before you can make the necessary payroll changes, the worker and position information must already be changed in the Human resources module.

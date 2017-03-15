@@ -36,9 +36,6 @@ This topic explains how to submit pay statements, generate checks or electronic 
 
 You can pay workers by check or by electronic payment. When you submit pay statements, an invoice is created and posted to the general ledger for the sum of the worker’s net pay for the payroll vendor that is set up on the **Payroll parameters** page. A payment journal that has lines is created, so that you can generate and post payments. When you submit payments, you can optionally post the payroll costs that are associated with workers to the general journal.
 
-## How issuing worker payments fits in the overall payroll process
-The following illustration shows how this topic fits into the larger picture of payroll processing. ![Basic steps for processing earnings](https://i-technet.sec.s-msft.com/dynimg/IC766958.gif "Basic steps for processing earnings")
-
 ## Prerequisites
 The following table shows the prerequisites that must be in place before you start.
 
@@ -72,7 +69,9 @@ The following table shows the prerequisites that must be in place before you sta
 </table>
 
 ## Submit pay statements for multiple workers in a pay period
-Use this procedure to create a payment journal for multiple pay statements at the same time. Before you generate pay statements, you must generate and release earnings. For more information, see [Generate earnings](generate-earnings.md). To submit pay statements for multiple workers at the same time, follow these steps.
+Use this procedure to create a payment journal for multiple pay statements at the same time. Before you generate pay statements, you must generate and release earnings. For more information, see [Generate earnings](generate-earnings.md). 
+
+To submit pay statements for multiple workers at the same time, follow these steps.
 
 1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](pay-statements.md). **Tip:** Before you generate pay statements, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](pay-statements.md).
 2.  On the **Submit pay statements** page, in the **Pay cycle** field, select the same pay cycle that you selected when you generated and released earnings.
@@ -94,7 +93,9 @@ To create a payment journal for an individual pay statement, follow these steps.
 Continue with the next section, “Generate checks or electronic payments for a payment journal.”
 
 ## Generate checks or electronic payments for a payment journal
-To generate checks and electronic payments for workers, follow these steps after you submit the pay statements and generate the payment journal. **Caution:** If you didn’t finish the bank account disbursements before the pay statements were generated, the workers will be paid by check.
+To generate checks and electronic payments for workers, follow these steps after you submit the pay statements and generate the payment journal. 
+
+**Caution:** If you didn’t finish the bank account disbursements before the pay statements were generated, the workers will be paid by check.
 
 1.  On the **Payment journal** page, select the payment journal, and then, on the Action Pane, click **Lines** to open the **Journal voucher** page.
 2.  Verify that the number of vouchers is correct. There is one journal voucher line for each check pay statement, and one or more journal voucher lines for each electronic pay statement.
@@ -107,26 +108,34 @@ To generate checks and electronic payments for workers, follow these steps after
     The payment status is set to **Sent** for every payment that was generated.
 
 ## Generate a positive pay file for payroll
-You can generate an electronic list of payroll checks that is provided to the bank. When a payroll check is presented to the bank, the bank compares it to the list. If the check matches a check in the list, the bank clears the check. Otherwise, the bank holds the check for review. To generate a positive pay file for payroll, follow these steps.
+You can generate an electronic list of payroll checks that is provided to the bank. When a payroll check is presented to the bank, the bank compares it to the list. If the check matches a check in the list, the bank clears the check. Otherwise, the bank holds the check for review. 
+
+To generate a positive pay file for payroll, follow these steps.
 
 1.  On the **Payroll positive pay** page, in the **Cut-off date** field, enter the last check date to include in the positive pay file. All checks that haven’t been included in a positive pay file through this check date are included in the file.
 2.  Click **OK**.
 
 ## Confirm a positive pay file for payroll
-After the checks that are listed in a payroll positive pay file are paid, you receive a confirmation number from the bank. You can then confirm the positive pay file in your organization's data. When you confirm a positive pay file, you record the confirmation number that you received from the bank. To confirm a positive pay file, follow these steps.
+After the checks that are listed in a payroll positive pay file are paid, you receive a confirmation number from the bank. You can then confirm the positive pay file in your organization's data. When you confirm a positive pay file, you record the confirmation number that you received from the bank. 
+
+To confirm a positive pay file, follow these steps.
 
 1.  On the **Payroll positive pay file summary** page, select a payroll positive pay file that has a status of **Created**.
 2.  Click **Confirmation**.
 3.  Enter the confirmation number that you received from the bank, and then click **OK**.
 
 ## If required: Recall a positive pay file
-If you must change a payroll positive pay file, you can recall it. When you recall a positive pay file, the field that indicates whether each check has been included in a positive pay file is reset. You can then create a new positive pay file. To recall a positive pay file, follow these steps.
+If you must change a payroll positive pay file, you can recall it. When you recall a positive pay file, the field that indicates whether each check has been included in a positive pay file is reset. You can then create a new positive pay file. 
+
+To recall a positive pay file, follow these steps.
 
 1.  On the **Payroll positive pay file summary** page, select a payroll positive pay file that has a status of **Created**.
 2.  Click **Recall**. You receive a message that states that the recall process was successful.
 
 ## Post a payment journal
-You can post a payment journal after you generate checks and electronic payments as described earlier in this topic. To post a payment journal, follow these steps.
+You can post a payment journal after you generate checks and electronic payments as described earlier in this topic. 
+
+To post a payment journal, follow these steps.
 
 1.  On the **Payment journal** page, select the payment journal, and then, on the Action Pane, click **Lines** to open the **Journal voucher** page.
 2.  On the **Post** menu, click **Post**. The payment journal lines are settled to the vendor invoice that was created and posted. You receive a message that indicates the number of vouchers that were posted.
