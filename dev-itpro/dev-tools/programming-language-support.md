@@ -115,5 +115,5 @@ See also
 
 [Dynamics AX LINQ Provider for use in C#](https://ax.help.dynamics.com/en/?p=185911)
 
-[Technical Concepts Guide](developer-landing-page.md)
+[Technical Concepts Guide](developer-home-page.md)
 

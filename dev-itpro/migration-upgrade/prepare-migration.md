@@ -39,10 +39,10 @@ Prerequisites
 
 You will need access to a Dynamics 365 for Operations development environment using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Dynamics 365 for Operation development, customization and user interface concepts before you upgrade your code. Here are some references.
 
--   [Development tools](developer-landing-page.md#development-tools)
+-   [Development tools](..\dev-tools\developer-home-page.md#development-tools)
 -   [Models and packages](models.md)
--   [X++ programming language](developer-landing-page.md#x-programming-language)
--   [Extensions and Overlayering](developer-landing-page.md#customizing-with-extensions-and-overlayering)
+-   [X++ programming language](..\dev-tools\developer-home-page.md#x-programming-language)
+-   [Extensions and Overlayering](..\dev-tools\developer-home-page.md#customizing-with-extensions-and-overlayering)
 -   [User interface development](user-interface-development-home-page.md)
 
 ## Overview of the code migration process

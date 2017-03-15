@@ -47,7 +47,7 @@ Localization requirements
 
 ## Electronic reporting
 -   [Electronic reporting overview](general-electronic-reporting-ger-2.md)
--   [Download Electronic reporting configurations from Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
+-   [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
 -   [Electronic reporting destinations](electronic-reporting-destinations.md)
 -   [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 

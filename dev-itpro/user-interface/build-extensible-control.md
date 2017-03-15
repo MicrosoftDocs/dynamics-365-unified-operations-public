@@ -37,7 +37,7 @@ This wiki describes how to create new application controls that have a property 
 Prerequisites
 -------------
 
-For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](access-instances.md).
+For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](..\dev-tools\access-instances.md).
 
 ## Overview
 The Control Extensibility Framework lets you create new application controls. You can use the same tools that Microsoft uses to build controls that are already present in the program, such as the chart control. Three important artifacts are involved in the process of developing an extensible control:

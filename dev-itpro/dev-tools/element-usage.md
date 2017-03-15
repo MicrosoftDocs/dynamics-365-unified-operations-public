@@ -51,5 +51,5 @@ See also
 
 [Element designers](element-designers.md)
 
-[Technical Concepts Guide](developer-landing-page.md)
+[Technical Concepts Guide](developer-home-page.md)
 

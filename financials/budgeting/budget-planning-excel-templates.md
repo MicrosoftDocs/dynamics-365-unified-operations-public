@@ -42,7 +42,7 @@ Budget plan documents can be viewed and edited using one or more layouts. Each l
 ## Add a header to budget plan document template
 To add header information, select the top row in the Excel file and insert empty rows. Click **Design** in the **Data Connector** to add header fields to the Excel file. [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) In the **Design** tab,** **click **Add** fields, and then select **BudgetPlanHeader** as the entity data source. [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)Point the cursor to the desired location in the Excel file. Click **Add label** to add the field label to the selected location. Select **Add Value** to add the value field to the selected place. Click **Done** to close the designer.
 
-## [![bpt7](./media/bpt71024x615.png)](./media/bpt7.png)
+## [![bpt7](./media/bpt7.png)](./media/bpt7.png)
 Add a calculated column to budget plan document template table
 --------------------------------------------------------------
 

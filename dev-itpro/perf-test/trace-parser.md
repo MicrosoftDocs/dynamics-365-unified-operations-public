@@ -61,5 +61,5 @@ There are two ways that you can obtain the data that you will analyze in the Tra
 See also
 --------
 
-[Technical Concepts Guide](developer-landing-page.md)
+[Technical Concepts Guide](..\dev-tools\developer-home-page.md)
 

@@ -46,7 +46,7 @@ You can open the element designer that corresponds to the current X++ source cod
 See also
 --------
 
-[Technical Concepts Guide](developer-landing-page.md)
+[Technical Concepts Guide](developer-home-page.md)
 
 [Dynamics 'AX 7' development tools](https://ax.help.dynamics.com/en/?p=178721)
 

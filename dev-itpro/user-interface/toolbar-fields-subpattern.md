@@ -65,7 +65,7 @@ ContentGroup (Group) – **Note:** A fields subpattern is used.
 
 -   [Fields and Field Groups](fields-field-groups-subpattern.md)
 -   [Tabular Fields](tabular-fields-subpattern.md)
--   [Dimension Expression Builder](dimension-expression-builder-subpattern.md)
+-   [Dimension Expression Builder](..\financial-dimensions\dimension-expression-builder-subpattern.md)
 
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**

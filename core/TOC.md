@@ -38,12 +38,13 @@
 ## [Configure global address books](organization-administration\plan-configuration-global-address-book-additional-address-books.md)
 ## [Number sequence overview](organization-administration\number-sequence-overview.md)
 ## [Electronic signature overview](organization-administration\electronic-signature-overview.md)
+## [Case management overview](organization-administration\cases.md)
 ## [Configure case security, processes, and categories](organization-administration\plan-case-management.md)
-## [Case management overview](cases.md)
+
 
 ## [Create record templates](organization-administration\record-templates.md)
 ## [Configure and send email](organization-administration\configure-email.md)
-## [Date/time data and time zones](date-time-zones.md)
+## [Date/time data and time zones](organization-administration\date-time-zones.md)
 # Import and export data using data entities
 # Design workflows
 ## [Workflow system overview](organization-administration\overview-workflow-system.md)
@@ -62,9 +63,9 @@
 ## [Configure a parallel activity in a workflow](organization-administration\configure-parallel-activity-workflow.md)
 ## [Configure a parallel branch in a workflow](organization-administration\configure-parallel-branch-workflow.md)
 ## [Configure the properties of a workflow](organization-administration\configure-workflow-properties.md)
-# [Get started with analytics and reporting](https://ax.help.dynamics.com/en/wiki/bi-reporting-resources/)
-# [Configure Office integration](https://ax.help.dynamics.com/en/wiki/office-integration-in-dynamics-ax-7/)
+# [Get started with analytics and reporting](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page/)
+# [Configure Office integration](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/office-integration/)
 # [Explore and create mobile apps](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 # Other resources
 ## [Dynamics 365 for Operations glossary](get-started\glossary.md)
-## [What's new or changed](get-started\whats-new-changed.md)
+## [What's new or changed](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/whats-new-changed)

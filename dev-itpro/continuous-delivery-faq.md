@@ -45,7 +45,7 @@ Dynamics 365 for Operations enables application customization using a new framew
 -   When you need to overlayer code, do not include functional or business logic in the overlayered code. Instead, define and call a delegate method, then implement the logic in your extension model using an event handler. For a detailed example in the context of code migration, see [Delegates.](delegates-migration.md)
 -   Report commonly used over-layering patterns to Microsoft and request extension support.
 
-For more information, see [Customizing with Extensions and Overlayering,](developer-landing-page.md#customizing-with-extensions-and-overlayering) [Models](models.md), and the [Development Tools](developer-landing-page.md#development-tools) section.
+For more information, see [Customizing with Extensions and Overlayering,](developer-home-page.md#customizing-with-extensions-and-overlayering) [Models](models.md), and the [Development Tools](developer-home-page.md#development-tools) section.
 
 ### How do I prevent my models from being customized by customers or other partners?
 

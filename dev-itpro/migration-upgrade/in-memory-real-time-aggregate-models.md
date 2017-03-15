@@ -50,5 +50,5 @@ Perspectives are now modeled using Dynamics 365 for Operations add-ins for Vis
 -   Expose data to PowerBI.
 -   Access data programmatically using the AXQuery object.
 
-[![how-perspectives-are-used-now\_nov2016](./media/how-perspectives-are-used-now_nov2016.png)](./media/how-perspectives-are-used-now_nov2016.png)  
+[![how-perspectives-are-used](./media/how-perspectives-are-used.png)](./media/how-perspectives-are-used.png)  
 

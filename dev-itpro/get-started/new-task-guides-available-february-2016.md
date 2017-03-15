@@ -537,7 +537,7 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Add a calculation to a product configuration model    | Global             |
 | Approve a product configuration model                 | Global             |
 | Complete the basic setup of a released product master | Global             |
-| Create a dimension-based product master               | Global             |
+| Create a ..\financial-dimensions\dimension-based product master               | Global             |
 | Create a hierarchy of product classification          | Global             |
 | Create a product configuration model                  | Global             |
 | Create a product master                               | Global             |
@@ -550,7 +550,7 @@ The (February 2016) APQC Unified library contains the Task guides that are inten
 | Maintain BOM for a product configuration model        | Global             |
 | Maintain route for a product model                    | Global             |
 | Manage released products                              | Global             |
-| Release a dimension-based product master              | Global             |
+| Release a ..\financial-dimensions\dimension-based product master              | Global             |
 | Transfer data for product models                      | Global             |
 
  
