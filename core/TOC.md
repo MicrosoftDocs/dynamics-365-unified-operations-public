@@ -14,7 +14,7 @@
 ### [Personalize the user experience](get-started\personalize-user-experience.md)
 ### [Keyboard shortcuts](get-started\shortcut-keys.md)
 ### [Manage how pages display](get-started\window-management.md)
-### [Understand Lifecycle Services](dev-itpro\lifecycle-services\lcs-works-lcs)
+### [Understand Lifecycle Services](\dev-itpro\lifecycle-services\lcs-works-lcs)
 ## Get help and support
 ### [View and export field descriptions](get-started\view-export-field-descriptions.md)
 ### [Getting started with Help](\dev-itpro\get-started\help-get-started)
