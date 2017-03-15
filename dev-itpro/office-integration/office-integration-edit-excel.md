@@ -214,7 +214,10 @@ An example of such code can be found on the **LedgerJournalTable** form (**Gener
 
         }
 
-  The following image shows the **General ledger** &gt; **Journals** &gt; **General journal** form with the **Open lines in Excel** button highlighted. [![off101i](./media/off101i.png)](./media/off101i.png)To programmatically add generated and template Open in Excel options Open in Excel options can be programmatically added by implementing the ExportToExcelIGeneratedCustomExport and ExportToExcelITemplateCustomExport interfaces. This allows the addition of options to forms where the entity or template doesn’t have the same table as the root datasource. A good example of when you would use this capability is on forms without a datasource, potentially containing just a collection of form parts. The following example adds generated and template Open in Excel options programmatically to the **FMRental** form.
+  The following image shows the **General ledger** &gt; **Journals** &gt; **General journal** form with the **Open lines in Excel** button highlighted. 
+[![off101i](./media/off101i.png)](./media/off101i.png)
+
+To programmatically add generated and template Open in Excel options Open in Excel options can be programmatically added by implementing the ExportToExcelIGeneratedCustomExport and ExportToExcelITemplateCustomExport interfaces. This allows the addition of options to forms where the entity or template doesn’t have the same table as the root datasource. A good example of when you would use this capability is on forms without a datasource, potentially containing just a collection of form parts. The following example adds generated and template Open in Excel options programmatically to the **FMRental** form.
 
     [Form]
     public class FMRental extends FormRun implements ExportToExcelIGeneratedCustomExport, ExportToExcelITemplateCustomExport
@@ -281,7 +284,10 @@ A template Open in Excel option can be programmatically added by implementing th
 
     }
 
-After a filter has been added programmatically, the resulting filter can be viewed in the Excel Data Connector App using the **Filter** button. The following image shows the Excel Data Connector App with the **Filter** button highlighted.[![off101j](./media/off101j.png)](./media/off101j.png) The following image shows the Excel Data Connector App with the **Filter** dialog opened.[![off101k](./media/off101k.png)](./media/off101k.png)
+After a filter has been added programmatically, the resulting filter can be viewed in the Excel Data Connector App using the **Filter** button. The following image shows the Excel Data Connector App with the **Filter** button highlighted.
+[![off101j](./media/off101j.png)](./media/off101j.png) 
+The following image shows the Excel Data Connector App with the **Filter** dialog opened.
+[![off101k](./media/off101k.png)](./media/off101k.png)
 
 ## How do I enable relationship lookups in Excel?
 To enable relationship lookups in the Excel Data Connector, you must ensure the following metadata is set.
@@ -315,7 +321,9 @@ The ability to control “refresh on open” was added as a setting. To opt-in 
 
 ### Error finding entity
 
-The reference to entities changed from using the Private Entity Name (DataEntity.Name) to Public Entity Name (DataEntity.PublicEntityName). If the public and private names for an entity were different and that entity was used in an Excel template or workbook, then this will cause the following error to be displayed in the Excel App: “Error Finding Entity. Details: Entity "&lt;DataEntity.Name&gt;" not found”.[![off101l](./media/off101l.png)](./media/off101l.png) To resolve this, change the binding information in the affected template so that it points to DataEntity.PublicEntityName instead of DataEntity.Name.
+The reference to entities changed from using the Private Entity Name (DataEntity.Name) to Public Entity Name (DataEntity.PublicEntityName). If the public and private names for an entity were different and that entity was used in an Excel template or workbook, then this will cause the following error to be displayed in the Excel App: “Error Finding Entity. Details: Entity "&lt;DataEntity.Name&gt;" not found”.
+[![off101l](./media/off101l.png)](./media/off101l.png) 
+To resolve this, change the binding information in the affected template so that it points to DataEntity.PublicEntityName instead of DataEntity.Name.
 
 1.  For the DataEntity.Name that needs to be replaced, determine the DataEntity.PublicEntityName, for exmaple replace FMCustomerEntity with FleetCustomer.
 2.  Find the affected template.
