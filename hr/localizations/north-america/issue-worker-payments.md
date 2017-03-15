@@ -61,7 +61,7 @@ The following table shows the prerequisites that must be in place before you sta
 <ul>
 <li>Set the <strong>Payroll clearing account</strong> field on the <strong>Calculation settings</strong> tab on the <strong>Payroll parameters</strong> page.</li>
 <li>Set the <strong>Check method of payment</strong>, <strong>Vendor account for worker payments</strong>, <strong>Payment journal name</strong>, and <strong>Procurement category</strong> fields on the <strong>Payment issuance</strong> tab on the <strong>Payroll parameters</strong> page.</li>
-<li>Before you can generate a positive pay file for payroll, you must set up positive pay. For more information, see <a href="set-up-generate-positive-pay-files.md">Set up and generate positive pay</a>.</li>
+<li>Before you can generate a positive pay file for payroll, you must set up positive pay. For more information, see <a href="/financials/accounts-payable/set-up-generate-positive-pay-files.md">Set up and generate positive pay</a>.</li>
 <li>If you generate electronic payments, make sure that the <strong>Electronic method of payment</strong> field is set on the on the <strong>Payment issuance</strong> tab on the <strong>Payroll parameters</strong> page. Additionally, make sure that you’ve entered the bank account disbursements for each worker.</li>
 </ul></td>
 </tr>
