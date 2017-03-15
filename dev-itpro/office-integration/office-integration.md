@@ -93,7 +93,9 @@ To add a record, either start typing in a row directly below a table, or use the
 ## Workbook Designer
 You can use the **Workbook Designer** page to design an editable custom export workbook that contains an entity and a set of fields. To open the **Workbook Designer** (**ExportToExcelWorkbookDesigner**) page, click **Common &gt; Common &gt; Office Integration &gt; Excel workbook designer**. Before you can publish data edits, all the key fields of the entity must be in the Excel table. Key fields have a key symbol next to them. To successfully create or update a record, must have all the mandatory fields in the Excel table. Mandatory fields have an asterisk (\*) next to them. 
 
-[![3\_Office](./media/3_office.png)](./media/3_office.png) To retrieve the resulting workbook, click **Create workbook** in the app bar. 
+[![3\_Office](./media/3_office.png)](./media/3_office.png) 
+
+To retrieve the resulting workbook, click **Create workbook** in the app bar. 
 
 Click **View related form** to see the data that the entity exposes. This button is only enabled for entities that have a **FormRef** property value.
 
