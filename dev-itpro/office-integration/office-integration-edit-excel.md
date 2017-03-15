@@ -352,16 +352,20 @@ To resolve this, change the binding information in the affected template so that
 
 1.  For the DataEntity.Name that needs to be replaced, determine the DataEntity.PublicEntityName, for exmaple replace FMCustomerEntity with FleetCustomer.
 2.  Find the affected template.
-3.  Change file extension on template from .xlsx to .zip.[![off101m](./media/off101m.png)](./media/off101m.png)
+3.  Change file extension on template from .xlsx to .zip.
+    [![off101m](./media/off101m.png)](./media/off101m.png)
 4.  The file to be changed will be one of the webextension\*.xml files in the xlwebextensions directory, such as 2015-05-25-FleetCustomersWithLocations.zipxlwebextensionswebextension2.xml.
 5.  Open the file to ensure that you have the correct location.
-6.  Find the DataEntity.Name,  such as FMCustomerEntity.[![off101n](./media/off101n.png)](./media/off101n.png)
-7.  Extract the zip file.[![off101o](./media/off101o.png)](./media/off101o.png)
+6.  Find the DataEntity.Name,  such as FMCustomerEntity.
+    [![off101n](./media/off101n.png)](./media/off101n.png)
+7.  Extract the zip file.
+    [![off101o](./media/off101o.png)](./media/off101o.png)
 8.  Open the webextension xml file.
 9.  Replace the DataEntity.Name with the corresponding DataEntity.PublicEntityName.
 10. Save the webextension xml file changes.
 11. Rename the old zip file e.g. add “.old” to the name.
-12. Create a new zip file of all the previously extracted content. This usually involves highlighting the content inside the archive/zip folder and creating a zipped folder using that content.[![off101p](./media/off101p.png)](./media/off101p.png)
+12. Create a new zip file of all the previously extracted content. This usually involves highlighting the content inside the archive/zip folder and creating a zipped folder using that content.
+    [![off101p](./media/off101p.png)](./media/off101p.png)
 13. Verify that the zip file has the “\_rels”, “docProps”, and “xl” folders in the root of the zip file.
 14. Rename the zip file as needed, for example back to 2015-05-25-FleetCustomersWithLocations.zip.
 15. Change the zip file extension back to xlsx.
