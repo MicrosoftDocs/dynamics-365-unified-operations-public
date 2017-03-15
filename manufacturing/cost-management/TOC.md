@@ -1,8 +1,7 @@
 
 # [Cost management home page](cost-management.md)
-## [Cost management content pack](\dev-itpro\analytics-bi-reporting\cost-management-content-pack?toc=/manufacturing/toc.json)
-## [Cost management content pack](\dev-itpro\analytics-bi-reporting\cost-management-content-pack?toc=/cost-management/toc.json)
 # Predetermined cost
+## [Cost management content pack](\dev-itpro\analytics-bi-reporting\cost-management-content-pack?toc=/manufacturing/toc.json)
 ## [Costing sheet](costing-sheets.md)
 ## [Costing version](costing-versions.md)
 ## [Simulate cost change by using a costing version for planned cost](simulate-cost-changes-costing-version-planned-costs.md)
