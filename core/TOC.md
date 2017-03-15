@@ -19,7 +19,7 @@
 ### [View and export field descriptions](get-started\view-export-field-descriptions.md)
 ### [Getting started with Help](\dev-itpro\get-started\help-get-started)
 ### [Connect Help](\dev-itpro\get-started\working-with-help)
-### [How to view and export field descriptions](get-started\how-to-view-and-export-field-descriptions.md)
+### [How to view and export field descriptions](get-started\view-export-field-descriptions.md)
 ### [Dynamics 365 for Operations help system (fact sheet)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 ### Task guides and task recorder
 #### [Task Recorder in Dynamics 365 for Operations](\dev-itpro\user-interface\task-recorder)
