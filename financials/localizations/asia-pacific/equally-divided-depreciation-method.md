@@ -106,5 +106,5 @@ No. If you selected an equally divided depreciation profile on the **Books** pag
 See also
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation-japan.md)
+[Fixed asset depreciation FAQ](fixed-asset-depreciation-japan.md)
 
