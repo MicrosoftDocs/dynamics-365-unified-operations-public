@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: View Intelligent Data Management Framework purge or archive jobs (AX 2012)
+title: View purge or archive jobs (AX 2012)
 description: 
 author: kfend
 manager: AnnBe

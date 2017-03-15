@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
+title: Use quick import/export
 description: The purpose of Quick import export is to let you import and export with fewer steps.
 author: margoc
 manager: AnnBe

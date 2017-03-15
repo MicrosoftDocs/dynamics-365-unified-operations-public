@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create Intelligent Data Management Framework purge objects (AX 2012)
+title: Create purge objects (AX 2012)
 description: 
 author: kfend
 manager: AnnBe
