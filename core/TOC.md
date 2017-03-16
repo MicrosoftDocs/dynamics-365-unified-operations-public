@@ -1,3 +1,5 @@
+# [Introduction](index.md)
+
 # [Onboard to Dynamics 365 for Operations](get-started\get-started-landing.md)
 ## Introduction to Microsoft Dynamics 365
 ### [Get started with Microsoft FastTrack for Dynamics 365](get-started\fasttrack-dynamics-365-overview.md)
