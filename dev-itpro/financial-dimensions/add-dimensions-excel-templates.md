@@ -45,7 +45,7 @@ In Dynamics 365 for Operations, the only value that is present on Microsoft Exce
     -   **Name** - Enter the name of the financial dimension, such as Department.
     -   **Related Data Entity** - Select the entity for the financial dimension that you entered in the **Name** field. The following table contains a list of the financial dimensions and the related entities.
 
-| **Financial dimension 'Use values from'** | **Related entity**                        |
+        | **Financial dimension 'Use values from'** | **Related entity**                        |
         |-------------------------------------------|-------------------------------------------|
         | &lt; Custom dimension &gt;                | DimAttributeFinancialTagEntity            |
         | Agreements                                | DimAttributeAgreementHeaderExt\_RUEntity  |
@@ -103,5 +103,6 @@ In Dynamics 365 for Operations, the only value that is present on Microsoft Exce
 # See also
 
 [Add dimensions to Microsoft Excel templates](add-dimensions-excel-templates.md)
+
 [Extensibility home page](..\extensibility\extensibility-home-page.md)
 
