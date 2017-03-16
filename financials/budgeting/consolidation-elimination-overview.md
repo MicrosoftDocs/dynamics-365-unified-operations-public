@@ -81,9 +81,5 @@ There are many consolidation scenarios, and each method can handle the scenarios
     -   By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
 
 
-
-See also
---------
-
-[Currency revalution in a consolidation company](currency-revaluation-consolidation-company.md)
+For more information, see [Currency revalution in a consolidation company](general-ledger\currency-revaluation-consolidation-company.md).
 
