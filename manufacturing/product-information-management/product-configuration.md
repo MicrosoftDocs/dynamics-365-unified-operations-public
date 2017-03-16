@@ -72,9 +72,7 @@ The topics in this section provide information about how to manage constraint-ba
 -   [Approve a product configuration model](http://ax.help.dynamics.com/en/wiki/approve-a-product-model/) (Task guide)
 -   [Transfer data for product models](http://ax.help.dynamics.com/en/wiki/transfer-data-for-product-models/) (Task guide)
 
-## Additional resources
--   Additional help is available as task guides inside Microsoft Dynamics 365 for Operations. To access task guides, click the Help button on any page.
 -   For more information about product configuration, see [Dynamics AX Manufacturing R&D Team blog](https://blogs.msdn.microsoft.com/axmfg/).
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 
 

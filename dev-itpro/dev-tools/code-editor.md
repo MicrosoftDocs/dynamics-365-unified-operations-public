@@ -48,5 +48,5 @@ See also
 
 [Technical Concepts Guide](developer-home-page.md)
 
-[Dynamics 'AX 7' development tools](https://ax.help.dynamics.com/en/?p=178721)
+[Development tools](development-tools.md
 

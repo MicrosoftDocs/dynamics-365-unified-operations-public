@@ -79,8 +79,4 @@ In Dynamics AX, aggregate measurements are deployed to Microsoft SQL Server non
 ## KPI modeling and customization
 In AX 2012 and earlier versions, KPIs and business indicators had to be modeled by using native SQL Server development tools. Although users could pin a KPI or business indicator to a Role Center by using the **Business Overview** Web Part, they could not modify a KPI definition, such as the goal. In Dynamics AX, users can use a rich client form to modify a KPI definition that was built and shipped by a developer. Users can also define new KPIs by using the aggregate data that is contained in aggregate measurements. A developer can model a KPI definition in Microsoft Visual Studio and ship it to a customer, either as a project or together with an independent software vendor (ISV) solution. After a KPI is defined, users can customize it at run time.
 
-See also
---------
-
-[Technical Concepts Guide](https://ax.help.dynamics.com/en/?p=183121)
 

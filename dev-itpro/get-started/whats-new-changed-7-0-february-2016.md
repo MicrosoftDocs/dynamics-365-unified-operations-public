@@ -564,7 +564,7 @@ This change unifies the configuration of the reverse charge applicability rules 
 
 Users can set up definition of tables containing financial data to be exported in a format accepted by German auditors and authorities.
 
-The feature has been implemented as an electronic reporting configuration. [A separate article](gdpdu-audit-data-export.md) describes it in more detail. The functionality is available to Germany and Austria.
+The feature has been implemented as an electronic reporting configuration. [A separate article](financials/localizations/europe/gdpdu-audit-data-export.md) describes it in more detail. The functionality is available to Germany and Austria.
 
 This change gives user much more possibilities in data formatting, transformations, and also provides all the benefits coming from electronic reporting configuration lifecycle management, like easy configuration exchange, versioning, etc.
 

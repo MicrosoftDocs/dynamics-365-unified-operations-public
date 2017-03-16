@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Migrate data using the Data import/export framework (AX 2012)
+title: Migrate data 
 description:  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.
 author: kfend
 manager: AnnBe

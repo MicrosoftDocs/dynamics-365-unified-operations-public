@@ -82,4 +82,3 @@ There are many consolidation scenarios, and each method can handle the scenarios
 
 
 For more information, see [Currency revalution in a consolidation company](general-ledger\currency-revaluation-consolidation-company.md).
-

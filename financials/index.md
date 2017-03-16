@@ -35,12 +35,12 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Operations. 
 
 Select a feature area to learn more about it.
-- [Accounts payable](accounts-payable) 
+- [Accounts payable](accounts-payable\accounts-payable.md) 
 - [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management)
-- [Cost accounting](cost-accounting)
-- [Fixed assets](fixed-assets)
-- [General ledger](general-ledger\general-ledger) 
-- [Project management](project-management)
-- [Public sector](public-sector-functionality) 
-- [Budgeting](budgeting-overview) 
+- [Cash and bank management](cash-bank-management\cash-bank-management.md)
+- [Cost accounting](cost-accounting\cost-accounting.md)
+- [Fixed assets](fixed-assets\fixed-assets.md)
+- [General ledger](general-ledger\general-ledger.md) 
+- [Project management](project-management\project-management.md)
+- [Public sector](public-sector\public-sctor.md) 
+- [Budgeting](budgeting\budgeting-overview.md) 

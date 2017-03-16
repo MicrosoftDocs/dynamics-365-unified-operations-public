@@ -47,7 +47,7 @@
 ### [Vendor collaboration with external vendors](procurement-sourcing\vendor-collaboration-work-external-vendors.md)
 ### [Vendor collaboration with customers](procurement-sourcing\vendor-collaboration-work-customers-dynamics-365-operations.md)
 ### [Collaborate with vendors by using the Vendor portal](procurement-sourcing\collaborate-vendors-vendor-portal.md)
-### [Vendor collaboration mobile workspace](production-control\vendor-collaboration-mobile-workspace.md)
+### [Vendor collaboration mobile workspace](procurement-sourcing\vendor-collaboration-mobile-workspace.md)
 ### [Vendor portal user security](procurement-sourcing\configure-security-vendor-portal-users.md)
 ## Prices and discounts
 ### [Purchase agreements](procurement-sourcing\purchase-agreements.md)
@@ -62,7 +62,7 @@
 ### [Product dimension](product-information-management\product-dimensions.md)
 ### [Product number nomenclature](product-information-management\product-variant-identification-nomenclature.md)
 ### [Product-related translation FAQ](product-information-management\translations-product-related-information.md)
-### [Register serial number in the sales process](product-information-management\register-serial-numbers-sales-process.md)
+### [Register serial number in the sales process](sales-marketing\register-serial-numbers-sales-process.md)
 ### [Search for product during order entry](product-information-management\search-products-product-variants.md)
 ## Create product configuration
 ### [Build a product configuration model](product-information-management\build-product-configuration-model.md)
@@ -80,11 +80,11 @@
 ### [BOMs and formulas](production-control\bill-of-material-bom.md)
 ### [BOM designer functionality](production-control\bom-designer-functionality.md)
 ### [Consolidated batch orders](production-control\consolidated-batch-orders.md)
-### [Manage subcontracting work in production](production-control\manage-subcontracting-work-in-production.md)
+### [Manage subcontracting work in production](production-control\manage-subcontract-work-production.md)
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control\mixed-mode-plan.md)
 ### [Production process](cost-management\production-process-overview.md)
 ### [Production setup requirements](production-control\production-set-up-requirements.md)
-### [Routes and operations](production-control\routes-and-operations.md)
+### [Routes and operations](production-control\routes-operations.md)
 ## Production orders
 ### [Create production orders](production-control\create-production-orders.md)
 ### [Default order settings for dimensions and product variants](production-control\default-order-settings.md)
@@ -111,7 +111,7 @@
 ### [Calculate material consumption](production-control\consumption.md)
 ### [Production feedback](production-control\production-feedback.md)
 ### [Production order defaults in manufacturing execution](production-control\production-order-defaults-manufacturing-execution.md)
-### [Production posting](production-control\production-posting.md)
+### [Production posting](cost-management\production-posting.md)
 ### [Registration for manufacturing execution](production-control\registration-manufacturing-execution.md)
 # Sales and marketing
 ## [Sales home page](sales-marketing\sales.md)
@@ -121,8 +121,8 @@
 ### [Order entry deadlines](sales-marketing\order-entry-deadlines.md)
 ### [Direct deliveries](sales-marketing\direct-deliveries.md)
 ### [Delivery schedules](sales-marketing\delivery-schedules.md)
-### [Serial numbers in the sales process](register-serial-numbers-sales-process.md)
-### [Reservation from same batch](reserve-same-batch-sales-order.md)
+### [Serial numbers in the sales process](sales-marketing\register-serial-numbers-sales-process.md)
+### [Reservation from same batch](sales-marketing\reserve-same-batch-sales-order.md)
 ## [Sales agreements](sales-marketing\sales-agreements.md)
 ## Sales quotations
 ### [Price simulation](sales-marketing\price-simulation.md)

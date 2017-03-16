@@ -66,7 +66,7 @@ The [Supply Chain Management](http://blogs.msdn.com/b/dynamicsaxscm/) blog cont
 -   [How do I account for freight charges in TMS](http://blogs.msdn.com/b/dynamicsaxscm/archive/2015/05/26/how-do-i-account-for-freight-charges-in-tms.aspx)
 
 ## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
+
 -   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account). In particular, see the "Warehouse Management & Transportation Management Systems" page.
 
 

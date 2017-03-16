@@ -74,7 +74,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 
 ### Set up aggregate data
 
-Use FMTAggregateMeasurements to populate the Microsoft SQL Server Analysis Services database with aggregate data. **Note:** These steps must be completed immediately after you use the **FMTDataHelper** class to import data. You may **NOT** need to do these steps if the [aggregate measure is "InMemoryRealTime"](model-aggregate-data.md), depending on what tutorial files you have.
+Use FMTAggregateMeasurements to populate the Microsoft SQL Server Analysis Services database with aggregate data. **Note:** These steps must be completed immediately after you use the **FMTDataHelper** class to import data. You may **NOT** need to do these steps if the [aggregate measure is "InMemoryRealTime"](../analytics-bi-reporting/model-aggregate-data.md), depending on what tutorial files you have.
 
 1.  In Solution Explorer, under **Analytics**, double-click **FMTAggregateMeasurement**.
 2.  In the designer, right-click **FMTAggregateMeasurement**, and then click **Deploy and Process**.

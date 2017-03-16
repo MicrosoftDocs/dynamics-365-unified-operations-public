@@ -174,7 +174,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 
 -   [How to create a Power BI report](..\analytics-bi-reporting\create-powerbi-report-data.md)
 -   [Create a Power BI report and dashboard](..\analytics-bi-reporting\create-powerbi-report-dashboard.md)
--   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
+-   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 -   [Customize App Suite reports using extensions](..\analytics-bi-reporting\customize-app-suite-reports-with-extensions.md)
 
 ### Concepts
@@ -267,10 +267,6 @@ The client is an HTML web client that runs in all major browsers. For informati
 
 ## Supply chain management
 -   [Gantt development guide](gantt-development-guide.md)
-
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
 
 
 See also
