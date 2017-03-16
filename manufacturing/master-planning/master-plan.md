@@ -78,6 +78,4 @@ Overview
 
 ## Additional resources
 -   For more information about master planning, see [Dynamics AX Manufacturing R&D Team blog](https://blogs.msdn.microsoft.com/axmfg/).
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
-
 

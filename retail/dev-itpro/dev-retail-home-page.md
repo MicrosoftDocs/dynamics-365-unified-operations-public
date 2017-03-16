@@ -109,8 +109,6 @@ Retail components
 ## Hotfixes
 -   [Install Retail hotfixes](install-retail-hotfix.md)
 
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 
 

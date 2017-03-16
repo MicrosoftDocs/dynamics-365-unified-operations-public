@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 
-Payroll taxes are set up in two parts. The first part, which is described in this topic, covers the settings that are used throughout the organization, such as the states where you have a nexus or the rates for unemployment taxes. The second part, which is described in [Worker and position payroll tasks](worker-position-payroll-tasks.md), covers the additional tax information that must be provided for each worker. For more information about payroll taxes, see [Tax codes, tax groups, and posting definitions FAQ](tax-codes-tax-groups-posting-definitions.md) and [Payroll data updates FAQ](payroll-data-updates.md).
+Payroll taxes are set up in two parts. The first part, which is described in this topic, covers the settings that are used throughout the organization, such as the states where you have a nexus or the rates for unemployment taxes. The second part, which is described in [Worker and position payroll tasks](worker-position-payroll-tasks.md), covers the additional tax information that must be provided for each worker. For more information about payroll taxes, see [Tax codes, tax groups, and posting definitions FAQ](tax-codes-tax-groups-definitions.md) and [Payroll data updates FAQ](payroll-data-updates.md).
 
 ## Prerequisites
 The primary address for the legal entity must be in the United States.
@@ -112,11 +112,11 @@ When you set up Payroll, a set of system-defined tax groups is automatically cre
 
 However, if several tax codes share the same accounting data, you might want to put these tax codes in a single tax group. Then, if the vendor changes, you can use the tax group to change the vendor for all the tax codes in the group at the same time. This approach can save time and reduce the risk of errors. 
 
-In most cases, when you create a list of tax codes to include in each tax group, you will include all the tax codes that share the same accounting information in a single tax group. Additionally, if a set of tax codes shares the same posting requirements, you can include them in a single tax group that you enable for posting definitions. A tax code can be included in multiple tax groups, provided that only one of the tax groups is enabled for posting definitions. For more information, see [Tax codes, tax groups, and posting definitions FAQ](tax-codes-tax-groups-posting-definitions.md). 
+In most cases, when you create a list of tax codes to include in each tax group, you will include all the tax codes that share the same accounting information in a single tax group. Additionally, if a set of tax codes shares the same posting requirements, you can include them in a single tax group that you enable for posting definitions. A tax code can be included in multiple tax groups, provided that only one of the tax groups is enabled for posting definitions. For more information, see [Tax codes, tax groups, and posting definitions FAQ](tax-codes-tax-groups-definitions.md). 
 
-**Tip:** You can set up the transaction posting definitions so that some tax codes in the group use a different posting definition than the rest of the tax codes in the group. For more information, see [Tax codes, tax groups, and posting definitions FAQ.](tax-codes-tax-groups-posting-definitions.md). 
+**Tip:** You can set up the transaction posting definitions so that some tax codes in the group use a different posting definition than the rest of the tax codes in the group. For more information, see [Tax codes, tax groups, and posting definitions FAQ.](tax-codes-tax-groups-definitions.md). 
 
-After you create tax groups that are enabled for posting definitions, you can assign those tax groups to transaction posting definitions. For more information, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
+After you create tax groups that are enabled for posting definitions, you can assign those tax groups to transaction posting definitions. For more information, see [Posting definitions in the public sector](/financials/public-sector/posting-definitions-public-sector).
 
 ## Next step
 The next step is to set up benefits and mandatory deductions. For more information, see [Benefit setup tasks](benefit-set-up-tasks.md).  
@@ -126,5 +126,5 @@ See also
 
 [Worker and position payroll tasks](worker-position-payroll-tasks.md)
 
-[Posting definitions in the public sector](posting-definitions-public-sector.md)
+[Posting definitions in the public sector](/financials/public-sector/posting-definitions-public-sector)
 

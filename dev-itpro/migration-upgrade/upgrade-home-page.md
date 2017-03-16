@@ -42,8 +42,6 @@ Upgrading your environment and data
 -   [Upgrade to the latest platform of Dynamics 365 for Operations](upgrade-latest-platform-update.md)
 -   [Upgrade the Dynamics AX platform to the August 2016 release](update-platform-each-release.md)
 
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 
 

@@ -366,7 +366,6 @@ On the **Worker's compensation** FastTab, specify the state that each benefit ap
 ## Next step
 The next step is to set up payroll information for positions and workers. For more information, see [Worker and position payroll tasks](worker-position-payroll-tasks.md).
 
-## [ ](garnishmenttaxlevysetuptasks.md)
 
 See also
 --------

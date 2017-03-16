@@ -92,7 +92,7 @@ There are also many topics about advanced warehousing on the [Supply Chain Mana
 -   [Receive and register a pallet with mixed source document lines using 1 license plate – purchase order matching](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/13/receive-and-register-a-pallet-with-mixed-source-document-lines-using-1-license-plate-purchase-order-matching/)
 
 ## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
+
 -   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account). In particular, see the “Warehouse Management & Transportation Management Systems” page.
 
 

@@ -76,7 +76,7 @@ During FastTrack engagements, the Dynamics FastTrack engineering team will offer
 -   ***Workshops*** are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.
 -   ***Tech talks*** focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and/or content.
 
-All sessions are delivered remotely by the FastTrack engineering team. We have time zone-based resources to cover major markets in the Americas, EMEA, and APAC. [![FastTrack diagram](./media/fasttrack_ops-1024x438.png)](./media/fasttrack_ops.png)
+All sessions are delivered remotely by the FastTrack engineering team. We have time zone-based resources to cover major markets in the Americas, EMEA, and APAC. [![FastTrack diagram](./media/fasttrack-ops-1024x438.png)](./media/fasttrack-ops.png)
 
 ## Workshops
 Workshops are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.

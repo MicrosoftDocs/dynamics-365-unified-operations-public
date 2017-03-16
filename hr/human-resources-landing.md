@@ -82,19 +82,14 @@ In addition to compensating your staff with wages, salaries, and bonuses, you ca
 ## Maintain workplace safety and compliance
 Microsoft Dynamics AX can help you maintain a safe work environment that’s in compliance with applicable laws, including the Americans with Disabilities Act and immigration and naturalization laws, among others. For example, you can manage the physical requirements for specific jobs, as well as track requests for accommodations that can help your organization optimize the skills of its workforce.
 
--   [Form I-9 verification](form-i-9-verification.md)
--   [Comply with the Americans with Disabilities Act](comply-ada.md)
+-   [Form I-9 verification](..localizations/north-america/form-i-9-verification.md)
+-   [Comply with the Americans with Disabilities Act](..localizations/north-america/comply-ada.md)
 
 ## Gather information using questionnaires
 You can design and administer questionnaires to gather information that’s used for a variety of purposes. The Questionnaire feature lets you design and create questionnaires. When a questionnaire is ready, you distribute it broadly or to a specific set of respondents to complete. After the respondents provide their answers, you can review and analyze the results.
 
--   [Questionnaires](questionnaires.md)
--   [Design a questionnaire](design-questionnaires.md)
--   [Distribute and complete a questionnaire](distribute-questionnaires.md)
--   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
-
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
-
+-   [Questionnaires](../questionnaire/questionnaires.md)
+-   [Design a questionnaire](../questionnaire/design-questionnaires.md)
+-   [Distribute and complete a questionnaire](../questionnaire/distribute-questionnaires.md)
+-   [View and evaluate the results of a questionnaire](../questionnaire/evaluate-questionnaire-results.md)
 

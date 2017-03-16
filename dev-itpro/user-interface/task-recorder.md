@@ -107,13 +107,13 @@ To show your own custom task recordings in the Help pane so that they can be pla
 See also
 --------
 
-[Dynamics 365 for Operations Help — Getting started](help-get-started.md)
+[Dynamics 365 for Operations Help — Getting started](..\get-started\help-get-started.md)
 
 [Task Recorder in Dynamics 365 for Operations](task-recorder.md)
 
-[Recently added editing features in task recorder](recently-added-editing-features-in-task-recorder.md)
+[Recently added editing features in task recorder](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Dynamics 365 for Operations Help architecture](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=197531)
+[Dynamics 365 for Operations Help architecture](..\get-started\work-with-help.md)
 
 [Creating new training libraries for Dynamics AX within Lifecycle Services using the Task recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
