@@ -38,6 +38,7 @@ Onboarding
 ----------
 
 The following resources provide an overview of the Lifecycle Services and how to work with your partner to get onboarded to Dynamics 365 for Operations. 
+
 [Microsoft FastTrack for Dynamics 365 overview](/core/get-started/fasttrack-dynamics-365-overview) 
 [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](../lifecycle-services/lcs-works-lcs.md) 
 [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations partners](../lifecycle-services/getting-started-lcs.md) 
@@ -70,7 +71,6 @@ The following resources provide an overview of the Help system and explain how t
 ### Task recordings and Task guides
 
 Task Recorder is a Dynamics 365 for Operations tool that you can use to record the actions that you take in the user interface (UI). When you create a *task recording*, all events that are executed against the server are recorded as you perform them in the UI. These events include adding values, changing settings, and removing data. A *Task guide* is a controlled, guided, interactive experience that leads you through the steps of a task recording. You can open (or *play*) a task guide from the Help system.
-
 -   [Connecting the help system](work-with-help.md)
 -   [Task Recorder in Dynamics 365 for Operations](../user-interface/task-recorder.md)
 -   [Create documentation or training using Task recordings](../user-interface/task-recorder.md)

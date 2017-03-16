@@ -55,11 +55,11 @@ Platform compatibility
 </tr>
 <tr class="even">
 <td>Apply the <strong>InternalsVisibleToAttribute</strong> attribute to open internals for consumption from other models.</td>
-<td>As we lock models for over-layering, artifacts will become internal to the model to better isolate implementation details from outside calls. However, it might be advantageous to mark other models as “friends” that have access to the internals. This capability is mainly useful for test scenarios. For this purpose, the <strong>InternalsVisibleTo</strong> tag can be applied to the descriptor XML file for the model that contains the internal code. For more information, see <a href="lock-models.md">Locking Models</a>.</td>
+<td>As we lock models for over-layering, artifacts will become internal to the model to better isolate implementation details from outside calls. However, it might be advantageous to mark other models as “friends” that have access to the internals. This capability is mainly useful for test scenarios. For this purpose, the <strong>InternalsVisibleTo</strong> tag can be applied to the descriptor XML file for the model that contains the internal code.</td>
 </tr>
 <tr class="odd">
 <td>Enable modules to disallow over-layering.</td>
-<td>You can now lock models for over-layering, in two phases: soft locking and hard locking. Soft locking causes occurrences of over-layering to be treated as warnings. Hard locking causes occurrences of over-layering to be treated as errors, and the build of the model is blocked. When hard locking is used, you can't perform over-layering. For more information, see <a href="lock-models.md">Locking Models</a>.</td>
+<td>You can now lock models for over-layering, in two phases: soft locking and hard locking. Soft locking causes occurrences of over-layering to be treated as warnings. Hard locking causes occurrences of over-layering to be treated as errors, and the build of the model is blocked. When hard locking is used, you can't perform over-layering.</td>
 </tr>
 <tr class="even">
 <td>Document Customization Analysis Best Practice rule violations on the <strong>Customization analysis</strong> report.</td>
