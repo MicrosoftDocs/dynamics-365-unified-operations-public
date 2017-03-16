@@ -39,7 +39,7 @@ Deployment
 
 | What can you do?                                                | Why is this important?                                                                                                                                                                                                                       |
 |-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable Azure Resource Manager (ARM) deployments of Dynamics AX. | This feature is now in public preview. With ARM deployments, you can now take advantage of the latest features of Azure. For more information, see [Azure Resource Manager onboarding](arm-onboarding.md). |
+| Enable Azure Resource Manager (ARM) deployments of Dynamics AX. | This feature is now in public preview. With ARM deployments, you can now take advantage of the latest features of Azure. For more information, see [Azure Resource Manager onboarding](../deployment/arm-onboarding.md). |
 
 ## Development and customization
 <table>
@@ -97,7 +97,7 @@ Extensibility features are key features of the Dynamics AX platform because 
 </tr>
 <tr class="even">
 <td>Extensible controls are guided away from non-public application programming interfaces (APIs).</td>
-<td>To minimize future breaks in extensible controls, an effort has been made to differentiate between the public and non-public JavaScript application programming interfaces (APIs) available to extensible controls. As part of this effort, documentation is now available <a href="public-javascript-apis.md">here</a> for the public JavaScript APIs that extensible control authors can use. Additionally, extensible control authors should start ensuring their controls are only using public APIs, as starting with Platform Update 3 any non-public API may be removed or modified as needed. One planned modification for the non-public APIs is to prefix the names with underscores to clearly denote their access level.  In this release, the only APIs that are undergoing this name change are those for which we have high confidence they are not being used.</td>
+<td>To minimize future breaks in extensible controls, an effort has been made to differentiate between the public and non-public JavaScript application programming interfaces (APIs) available to extensible controls. As part of this effort, documentation is now available [here](../user-interface/public-javascript-apis.md) for the public JavaScript APIs that extensible control authors can use. Additionally, extensible control authors should start ensuring their controls are only using public APIs, as starting with Platform Update 3 any non-public API may be removed or modified as needed. One planned modification for the non-public APIs is to prefix the names with underscores to clearly denote their access level.  In this release, the only APIs that are undergoing this name change are those for which we have high confidence they are not being used.</td>
 </tr>
 <tr class="odd">
 <td>Use the updated Gantt control to develop interactive scheduling scenarios.</td>
