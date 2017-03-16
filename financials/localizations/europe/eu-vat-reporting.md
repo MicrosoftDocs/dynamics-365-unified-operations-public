@@ -252,7 +252,7 @@ For general information about setting up sales tax codes, see [Set up sales tax
 You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code. For additional information:
 
 -   [Electronic reporting overview](general-electronic-reporting.md)
--   [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
+-   [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
 -   [Localization requirements – Create a GER configuration](localization-requirements-electronic-reporting-configuration.md)
 
 ## Countryspecific resources for VAT statements

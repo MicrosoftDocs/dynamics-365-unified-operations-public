@@ -69,11 +69,11 @@ This is a simple dialog scenario around Segmented Entry. More advanced scenari
 See also
 --------
 
-[Segmented Entry control Metadata Specification](https://ax.help.dynamics.com/en/?p=145441)
+[Segmented Entry control Metadata Specification](hsegmented-entry-control-metadata-specification.md)
 
-[Segmented Entry control Parm method Specification](https://ax.help.dynamics.com/en/?p=154321)
+[Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control migration walkthrough](https://ax.help.dynamics.com/en/?p=118381)
+[Segmented Entry control migration walkthrough](segmented-entry-control-migration-walkthrough.md)
 
-[Segmented Entry control - Migration guidance](https://ax.help.dynamics.com/en/?p=121441)
+[Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
 

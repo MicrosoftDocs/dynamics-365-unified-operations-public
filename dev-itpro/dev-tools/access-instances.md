@@ -210,8 +210,8 @@ On a VM, you can find most of the application configuration by opening the web.c
 
 The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
 -   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](../retail/dev-itpro/dev-retail-home-page.md)
--   [Retail SDK overview](../retail/dev-itpro/retail-sdk-overview.md)
--   [Retail POS device activation](https://ax.help.dynamics.com/en/wiki/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications/)
+-   [Retail SDK overview](/retail/dev-itpro/retail-sdk-overview)
+-   [Retail POS device activation](/retail/devi-itpro/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.

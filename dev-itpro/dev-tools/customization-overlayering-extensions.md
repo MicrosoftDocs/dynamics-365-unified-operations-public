@@ -513,7 +513,7 @@ Tables, form data sources, form controls, and other element types that support e
 See also
 --------
 
-[Technical Concepts Guide](https://ax.help.dynamics.com/en/?p=183121)
+[Technical Concepts Guide](developer-home-page.md)
 
-[DEV107 - Customize model elements using Extensions](https://ax.help.dynamics.com/en/?p=174821)
+[Customize model elements using extensions](customize-model-elements.md)
 

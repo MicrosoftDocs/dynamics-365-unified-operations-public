@@ -148,7 +148,7 @@ Simple migration scenario - PurchTable form
 See also
 --------
 
-[Dimension Entry control uptake](https://ax.help.dynamics.com/en/?p=154381)
+[Dimension Entry control uptake](dimension-entity-control-update.md
 
-[Dimension Entry control dialog support](https://ax.help.dynamics.com/en/?p=155791)
+[Dimension Entry control dialog support](dimension-entity-control-dialog-support.md)
 
