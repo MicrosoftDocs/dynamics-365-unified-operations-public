@@ -84,7 +84,7 @@
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control\mixed-mode-plan.md)
 ### [Production process](cost-management\production-process-overview.md)
 ### [Production setup requirements](production-control\production-set-up-requirements.md)
-### [Routes and operations](production-control\routes-and-operations.md)
+### [Routes and operations](production-control\routes-operations.md)
 ## Production orders
 ### [Create production orders](production-control\create-production-orders.md)
 ### [Default order settings for dimensions and product variants](production-control\default-order-settings.md)
@@ -111,7 +111,7 @@
 ### [Calculate material consumption](production-control\consumption.md)
 ### [Production feedback](production-control\production-feedback.md)
 ### [Production order defaults in manufacturing execution](production-control\production-order-defaults-manufacturing-execution.md)
-### [Production posting](production-control\production-posting.md)
+### [Production posting](cost-management\production-posting.md)
 ### [Registration for manufacturing execution](production-control\registration-manufacturing-execution.md)
 # Sales and marketing
 ## [Sales home page](sales-marketing\sales.md)
@@ -121,8 +121,8 @@
 ### [Order entry deadlines](sales-marketing\order-entry-deadlines.md)
 ### [Direct deliveries](sales-marketing\direct-deliveries.md)
 ### [Delivery schedules](sales-marketing\delivery-schedules.md)
-### [Serial numbers in the sales process](register-serial-numbers-sales-process.md)
-### [Reservation from same batch](reserve-same-batch-sales-order.md)
+### [Serial numbers in the sales process](sales-marketing\register-serial-numbers-sales-process.md)
+### [Reservation from same batch](sales-marketing\reserve-same-batch-sales-order.md)
 ## [Sales agreements](sales-marketing\sales-agreements.md)
 ## Sales quotations
 ### [Price simulation](sales-marketing\price-simulation.md)
