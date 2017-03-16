@@ -47,7 +47,7 @@
 ### [Vendor collaboration with external vendors](procurement-sourcing\vendor-collaboration-work-external-vendors.md)
 ### [Vendor collaboration with customers](procurement-sourcing\vendor-collaboration-work-customers-dynamics-365-operations.md)
 ### [Collaborate with vendors by using the Vendor portal](procurement-sourcing\collaborate-vendors-vendor-portal.md)
-### [Vendor collaboration mobile workspace](production-control\vendor-collaboration-mobile-workspace.md)
+### [Vendor collaboration mobile workspace](procurement-sourcing\vendor-collaboration-mobile-workspace.md)
 ### [Vendor portal user security](procurement-sourcing\configure-security-vendor-portal-users.md)
 ## Prices and discounts
 ### [Purchase agreements](procurement-sourcing\purchase-agreements.md)
