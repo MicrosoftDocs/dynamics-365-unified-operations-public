@@ -90,4 +90,4 @@ The **Financial reporting** option is the solution. Organization hierarchies tha
 By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
 
 
-For more information, see [Currency revalution in a consolidation company](general-ledger\currency-revaluation-consolidation-company.md).
+For more information, see [Currency revalution in a consolidation company](\finanicials\general-ledger\currency-revaluation-consolidation-company).
