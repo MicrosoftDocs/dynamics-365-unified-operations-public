@@ -82,5 +82,5 @@ The main account setup provides many options for general journal processing:
 
 Accounting structures and advanced rules structures are extremely important for guaranteeing that the data that is required for financial reporting and performance tracking is captured during general journal processing and any documentation. Accounting structures and advanced rules structures let you tailor the data entry experience. You can allow data entry only for financial dimensions that are relevant in each situation, and can also enforce the requirement that mandatory and correct data always be captured.
 
-For more information, see [Planning: Chart of accounts](financials/general-ledger/plan-chart-of-accounts.md). 
+For more information, see [Planning: Chart of accounts](plan-chart-of-accounts.md). 
 
