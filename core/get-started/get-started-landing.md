@@ -20,7 +20,7 @@ audience: Application User
 ms.reviewer: 71
 ms.suite: Released- Dynamics AX 7.0.0
 # ms.tgt_pltfrm: 
-ms.custom: 
+.ms.custom: 
 ms.assetid: ad0cdfac-fd94-41df-9d0c-fbe0a91e2dce
 ms.region: Global
 # ms.industry: 
@@ -57,8 +57,8 @@ The following resources provide information about the Dynamics 365 for Operation
 The following resources provide an overview of the Help system and explain how to view field descriptions.
 
 -   [Getting started with Help](/dev-itpro/system-administration/help-get-started)
--   [Connecting the help system](/dev-itpro/get-started/working-with-help#connecting-the-help-system)
--   [How to view and export field descriptions](view-export-field-descriptions)
+-   [Connecting the help system](/dev-itpro/get-started/working-with-help)
+-   [How to view and export field descriptions](view-export-field-descriptions.md)
 
 ### Task recordings and task guides
 
