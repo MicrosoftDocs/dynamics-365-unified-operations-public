@@ -9,7 +9,7 @@
 ## [Inventory locations](../warehouse-management/inventory-locations.md)
 ## [Inventory statuses](../warehouse-management/inventory-statuses.md)
 ## [Reserve inventory quantity](reserve-inventory-quantities.md)
-## [Reserve the same batch for a sales order](reserve-same-batch-sales-order.md)
+## [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)
 # Consignment inventory
 ## [Consignment](consignment.md)
 ## [Set up consignment](set-up-consignment.md)
