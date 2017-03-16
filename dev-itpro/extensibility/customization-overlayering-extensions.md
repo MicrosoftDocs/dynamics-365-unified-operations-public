@@ -304,95 +304,22 @@ You can use class extensions to author X++Â logic associated with form extensi
 ## Table extensions
 You can create a table extension to extend a table's design and logic. You can add new fields, field groups, indexes, mappings and relations. You can also add new fields to existing field groups, change the label of a table field, change the Created By, Created Date Time, Modified By, Modified Date Time properties. In Microsoft Dynamics AX 2012, you could override the virtual methods of a table's base class to control the behavior that occurred during table operations, such as when creating, reading, updating, or deleting. In the current version, you instead use extensions to implement event handlers that are called from the base implementations of the table methods. The following table lists each table method and its events.
 
-**Published Table method**
-
-**Preceding event**
-
-**Succeeding event**
-
-validateWrite
-
-ValidatingWrite
-
-ValidatedWrite
-
-validateDelete
-
-ValidatingDelete
-
-ValidatedDelete
-
-validateField
-
-ValidatingField
-
-ValidatedField
-
-validateFieldValue
-
-ValidatingFieldValue
-
-ValidatedFieldValue
-
-modifiedField
-
-ModifyingField
-
-ModifiedField
-
-modifiedFieldValue
-
-ModifyingFieldValue
-
-ModifiedFieldValue
-
-Insert
-
-Inserting
-
-Inserted
-
-Update
-
-Updating
-
-Updated
-
-Delete
-
-Deleting
-
-Deleted
-
-Initvalue
-
-InitializingRecord
-
-InitializedRecord
-
-FinalDeleteValidation
-
-Executed when a delete operation is performed on a table object, before the operation is committed to the underlying database table
-
-N/A
-
-FinalInsertValidation
-
-Executed when an insert operation is performed on a table object, before the operation is committed to the underlying database table
-
-N/A
-
-FinalReadValidation
-
-Executed when a read operation is performed on a table object.
-
-N/A
-
-FinalUpdateValidation
-
- Executed when an update operation is performed on a table object, before the operation is committed to the underlying database table.
-
-N/A
+|**Published Table method**|**Preceding event**|**Succeeding event**|
+|---|---|---|
+|validateWrite|ValidatingWrite|ValidatedWrite|
+|validateDelete|ValidatingDelete|ValidatedDelete|
+|validateField|ValidatingField|ValidatedField|
+|validateFieldValue|ValidatingFieldValue|ValidatedFieldValue|
+|modifiedField|ModifyingField|ModifiedField|
+|modifiedFieldValue|ModifyingFieldValue|ModifiedFieldValue|
+|Insert|Inserting|Inserted|
+|Update|Updating|Updated|
+|Delete|Deleting|Deleted|
+|Initvalue|InitializingRecord|InitializedRecord|
+|FinalDeleteValidation|Executed when a delete operation is performed on a table object, before the operation is committed to the underlying database table|N/A|
+|FinalInsertValidation|Executed when an insert operation is performed on a table object, before the operation is committed to the underlying database table|N/A|
+|FinalReadValidation|Executed when a read operation is performed on a table object.|N/A|
+|FinalUpdateValidation|Executed when an update operation is performed on a table object, before the operation is committed to the underlying database table.|N/A|
 
 Validation events capture and return results by using the **DataEventArgs** parameter. The display and edit method modifiers are supported on table extensions.
 
