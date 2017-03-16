@@ -2,6 +2,8 @@
 # [Cost management home page](cost-management.md)
 # Power BI content pack
 ## [Cost management content pack](..\..\dev-itpro\analytics-bi-reporting\cost-management-content-pack?toc=/manufacturing/toc.json)
+## [Test Cost management content pack](\dev-itpro\analytics-bi-reporting\cost-management-content-pack?toc=/manufacturing/toc.json)
+## [Another test Cost management content pack](\dev-itpro\analytics-bi-reporting\cost-management-content-pack)
 # Predetermined cost
 ## [Costing sheet](costing-sheets.md)
 ## [Costing version](costing-versions.md)
@@ -41,6 +43,5 @@
 ## [Update standard cost in a manufacturing environment](update-standard-costs-manufacturing-environment.md)
 ## [Update standard cost for a new manufactured item](update-standard-costs-new-manufactured-item.md)
 ## [Update standard cost in a non-manufacturing environment](update-standard-costs-non-manufacturing-environment.md)
-# Data entity
-## [Data entity: Costing](..\..\dev-itpro\data-entities\data-entities-costing?toc=/manufacturing/toc.json)
+
 
