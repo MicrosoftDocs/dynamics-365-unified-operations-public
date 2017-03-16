@@ -103,10 +103,14 @@ This set of selections is typically used for salaried workers when you want a da
 </table>
 
 ## Adding earning codes to worker position agreements
-If a worker receives recurring earnings or an earning rate that differs from the default earning code, you must assign an earning code to the worker to make sure that earnings are generated correctly. For more information, see [Generate earnings](generate-earnings.md). **Note:** If you're setting up an earning code that is based on hours or pieces, the **Frequency** field isn't available. Earnings that are based on hours are generated based on the **Generate salary** and **Generate earnings from schedule** selections on the **Position** page. Earnings that are based on pieces are entered manually.
+If a worker receives recurring earnings or an earning rate that differs from the default earning code, you must assign an earning code to the worker to make sure that earnings are generated correctly. For more information, see [Generate earnings](generate-earnings.md). 
+
+**Note:** If you're setting up an earning code that is based on hours or pieces, the **Frequency** field isn't available. Earnings that are based on hours are generated based on the **Generate salary** and **Generate earnings from schedule** selections on the **Position** page. Earnings that are based on pieces are entered manually.
 
 ## Setting up worker tax regions
-When you assign a tax region to a worker, all worker tax codes that apply to the worker are set up automatically. All parameters for the worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to verify their accuracy. For more information, see [Tax information tasks](tax-information-tasks.md). To set up tax regions for workers, you must first create a list or spreadsheet that contains the following information for each worker that you're setting up tax regions for:
+When you assign a tax region to a worker, all worker tax codes that apply to the worker are set up automatically. All parameters for the worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to verify their accuracy. For more information, see [Tax information tasks](tax-information-tasks.md). 
+
+To set up tax regions for workers, you must first create a list or spreadsheet that contains the following information for each worker that you're setting up tax regions for:
 
 -   The city and state where the worker claims residency
 -   The city and state of each location where the worker works
@@ -119,10 +123,18 @@ Additionally, for some states, you must specify the school district and municipa
 -   You must then select a school district and municipality, if this information is required. If you use both fields, you must select a school district before you can select a municipality. To determine whether this information is required, consult the state tax office. If it isn't required, leave the fields blank.
 
 ## Changing worker residency (if a change is required)
-The first tax region that is assigned to a worker is designated as the worker's resident tax region. A worker can have only one resident tax region at a time. If you know that a worker's resident tax region will change later, you can set up a new resident tax region that takes effect on a specified date. The current resident tax region automatically expires when the new resident tax region takes effect. **Tip:** If the resident tax region that you want to change has never been used in a payroll run, you can delete it.
+The first tax region that is assigned to a worker is designated as the worker's resident tax region. A worker can have only one resident tax region at a time. If you know that a worker's resident tax region will change later, you can set up a new resident tax region that takes effect on a specified date. The current resident tax region automatically expires when the new resident tax region takes effect. 
+
+**Tip:** If the resident tax region that you want to change has never been used in a payroll run, you can delete it.
 
 ## Assigning default tax regions
-Tax regions are geographic areas where a specific set of payroll taxes applies. Tax regions generally correspond to the cities or towns where your workers reside or work. A worker tax region is a tax region that has been assigned to a specific worker. A default tax region is required for each position that a worker holds. A default tax region is a worker tax region that is used to generate earnings for a specific position that a worker holds. Therefore, if you don't assign a default tax region to the worker's tax position, earnings can't be generated for the position. In this case, to pay the worker, you must manually enter the earnings and then manually enter the tax region on each earning statement line. If a worker's position requires different tax regions at different times, you must still select a single default tax region for the position. You can then change the tax region on individual earning statement lines after you generate earnings for the position. **Note:** Although the default tax region is used to generate earnings for a position, it's assigned to the worker who holds the position, not to the position itself. If the position is later reassigned to a different worker, a default tax region must be assigned to the new worker who holds the position. The default tax region isn't reassigned to the new worker when the position is reassigned. **Note:** If the worker tax region that should be specified for the position isn’t included in the list, close this page, and use the **Worker tax region** page to assign the tax region to the worker. Then return to this page to assign the default tax region.
+Tax regions are geographic areas where a specific set of payroll taxes applies. Tax regions generally correspond to the cities or towns where your workers reside or work. A worker tax region is a tax region that has been assigned to a specific worker. A default tax region is required for each position that a worker holds. A default tax region is a worker tax region that is used to generate earnings for a specific position that a worker holds. Therefore, if you don't assign a default tax region to the worker's tax position, earnings can't be generated for the position. In this case, to pay the worker, you must manually enter the earnings and then manually enter the tax region on each earning statement line. 
+
+If a worker's position requires different tax regions at different times, you must still select a single default tax region for the position. You can then change the tax region on individual earning statement lines after you generate earnings for the position. 
+
+**Note:** Although the default tax region is used to generate earnings for a position, it's assigned to the worker who holds the position, not to the position itself. If the position is later reassigned to a different worker, a default tax region must be assigned to the new worker who holds the position. The default tax region isn't reassigned to the new worker when the position is reassigned. 
+
+**Note:** If the worker tax region that should be specified for the position isn’t included in the list, close this page, and use the **Worker tax region** page to assign the tax region to the worker. Then return to this page to assign the default tax region.
 
 ## Setting up worker tax codes
 You can manage a worker's tax options, such as filing status and total allowances, on the **Worker tax codes** page. You don't have to create or assign the worker tax codes, because the codes are automatically created and assigned to the worker when you create worker tax regions. At first, all parameters for worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to make sure that they're accurate. For more information, see [Tax information tasks](tax-information-tasks.md). You must first create a list or spreadsheet that contains the values of the tax options for all the tax codes that are assigned to each worker whose tax codes you're setting up. These values differ for each tax code. The information is typically collected on IRS Form W-4 or a similar form for the state.
@@ -133,7 +145,13 @@ You can manage a worker's tax options, such as filing status and total allowance
 -   You can also change the value of the parameter directly in the grid. In this case, the new version of the tax code parameter is stamped with the date but not the time. Therefore, the first change that is made during a given day creates a new version of the parameter. If you change the value later during the same day, the new change overwrites the previous change but doesn't create a new version of the parameter. Only the last change is saved in the date-effective version.
 
 ## Enrolling workers in benefits
-Payroll information for a benefit isn't available if the **Payroll impact** field on the **Benefit elements** page is set to **None** for the benefit plan. **Note:** To set up payroll information for a garnishment or tax levy, see [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md). Benefit accrual plans, such as paid time off, aren't set up or calculated like other benefits. For information about how to enroll a worker in a benefit accrual plan, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md). For more information about how to set up a benefit, see [Benefit setup tasks](benefit-set-up-tasks.md). The following table show the information that you must enter on the **Payroll** FastTab. The fields on this FastTab can vary, depending on the setting of the **Payroll impact** field on the **Benefit elements** page.
+Payroll information for a benefit isn't available if the **Payroll impact** field on the **Benefit elements** page is set to **None** for the benefit plan. 
+
+**Note:** To set up payroll information for a garnishment or tax levy, see [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md). Benefit accrual plans, such as paid time off, aren't set up or calculated like other benefits. 
+
+For information about how to enroll a worker in a benefit accrual plan, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md). For more information about how to set up a benefit, see [Benefit setup tasks](benefit-set-up-tasks.md). 
+
+The following table show the information that you must enter on the **Payroll** FastTab. The fields on this FastTab can vary, depending on the setting of the **Payroll impact** field on the **Benefit elements** page.
 
 <table>
 <colgroup>
@@ -181,31 +199,19 @@ Payroll information for a benefit isn't available if the **Payroll impact** fiel
 
 The following table show the information that you must enter on the **Payroll limits** FastTab. This FastTab might contain a set of payroll limits for contributions, deductions, or both contributions and deductions, depending on the value of the **Payroll impact** field on the **Benefit elements** page.
 
-Field
+| Deductions | Field         | Description                                                  | 
+|------------|---------------|--------------------------------------------------------------|
+|            | Limit amount  | The maximum amount that can be deducted from a worker's pay for the selected benefit. If there is no maximum amount, leave this field blank. |  
+|            |               | **Caution:** The **Remaining** field shows the amount that can be deducted for the benefit in future pay periods before the end of the limit period is reached. The amount is automatically updated during each pay run. You can also manually change the amount. Because no change history is kept, we recommend that you not enter or change the value of this field. |
+|            | Limit period  | The period that the deduction limits apply to. For example, the limit amount is 1,200.00, and the **Limit period** field is set to **Year**. In this case, when the cumulative deductions for the benefit reach 1,200.00, no additional deductions are allowed for that benefit for the rest of the year. The **Limit end** field shows the last day of the current limit period. When the current limit period ends, the value of this field is automatically reset to the end of the new limit period. |
+|             |              | **Note:** The limit period is based on the calendar.|
+| **Contributions** | **Field**    |**Description**                                                | 
+|                   | Limit amount |  The maximum amount that the employer can contribute for the selected benefit. If there is no maximum amount, leave this field blank.| 
+|                   |              |**Caution:**  The **Remaining** field shows the amount that can be contributed for the benefit in future pay periods before the end of the limit period is reached. The amount is automatically updated during each pay run. You can also manually change the amount. Because no change history is kept, we recommend that you not enter or change the value of this field. |
+|                  | Limit period | The period that the contribution limits apply to. For example, the limit amount is 1,200.00, and the **Limit period** field is set to **Year**. In this case, when the cumulative contributions for the benefit reach 1,200.00, no additional contributions are allowed for that benefit for the rest of the year. The **Limit end** field shows the last day of the current limit period. When the current limit period ends, the value of this field is automatically reset to the end of the new limit period.|
+|                  |              |**Note:** The limit period is based on the calendar. |
 
-Description
 
-Deductions
-
-Limit amount
-
-The maximum amount that can be deducted from a worker's pay for the selected benefit. If there is no maximum amount, leave this field blank. **Caution:** The **Remaining** field shows the amount that can be deducted for the benefit in future pay periods before the end of the limit period is reached. The amount is automatically updated during each pay run. You can also manually change the amount. Because no change history is kept, we recommend that you not enter or change the value of this field.
-
-Limit period
-
-The period that the deduction limits apply to. For example, the limit amount is 1,200.00, and the **Limit period** field is set to **Year**. In this case, when the cumulative deductions for the benefit reach 1,200.00, no additional deductions are allowed for that benefit for the rest of the year. The **Limit end** field shows the last day of the current limit period. When the current limit period ends, the value of this field is automatically reset to the end of the new limit period. **Note:** The limit period is based on the calendar.
-
-Contributions
-
-Limit amount
-
-The maximum amount that the employer can contribute for the selected benefit. If there is no maximum amount, leave this field blank. **Caution:** The **Remaining** field shows the amount that can be contributed for the benefit in future pay periods before the end of the limit period is reached. The amount is automatically updated during each pay run. You can also manually change the amount. Because no change history is kept, we recommend that you not enter or change the value of this field.
-
-Limit period
-
-The period that the contribution limits apply to. For example, the limit amount is 1,200.00, and the **Limit period** field is set to **Year**. In this case, when the cumulative contributions for the benefit reach 1,200.00, no additional contributions are allowed for that benefit for the rest of the year. The **Limit end** field shows the last day of the current limit period. When the current limit period ends, the value of this field is automatically reset to the end of the new limit period. **Note:** The limit period is based on the calendar.
-
-   
 
 See also
 --------

@@ -170,7 +170,7 @@ LINQ queries can be applied for CRUD operations. But the model for updating, del
 See also
 --------
 
-[Programming language support](https://ax.help.dynamics.com/en/?p=185901)
+[Programming language support](programming-language-support.md)
 
 [Technical Concepts Guide](developer-home-page.md)
 

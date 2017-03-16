@@ -20,7 +20,7 @@ audience: Application User
 ms.reviewer: 71
 ms.suite: Released- Dynamics AX 7.0.0
 # ms.tgt_pltfrm: 
-ms.custom: 
+.ms.custom: 
 ms.assetid: ad0cdfac-fd94-41df-9d0c-fbe0a91e2dce
 ms.region: Global
 # ms.industry: 
@@ -34,9 +34,9 @@ This page points to resources that will help you onboard to Dynamics 365 for Ope
 
 ## Onboarding
 The following resources provide an overview of the Lifecycle Services and how to work with your partner to get onboarded to Dynamics 365 for Operations.
--   [Microsoft FastTrack for Dynamics 365 overview](https://ax.help.dynamics.com/en/wiki/fasttrack-dynamics-365-overview/)
--   [Customer introduction to Lifecycle Services](http://ax.help.dynamics.com/en/wiki/how-lifecycle-services-for-microsoft-dynamics-ax-works-lcs/)
--   [Sign up for a subscription](http://ax.help.dynamics.com/en/wiki/sign-up-for-a-microsoft-dynamics-rainier-preview-subscription/)
+-   [Microsoft FastTrack for Dynamics 365 overview](fasttrack-dynamics-365-overview.md)
+-   [Customer introduction to Lifecycle Services](/dev-itpro/ifecycle-services/lcs-works-lcs)
+-   [Sign up for a subscription](/dev-itpro/dev-tools/sign-up-preview-subscription)
 
 ### Blogs to follow
 
@@ -45,9 +45,9 @@ The following resources provide an overview of the Lifecycle Services and how to
 ## User interface
 The following resources provide information about the Dynamics 365 for Operations user experience. For example, these resources will help you navigate, personalize, and use Dynamics 365 for Operations more efficiently.
 
--   [Dynamics 365 for Operations client FAQ](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/client-qa)
+-   [Dynamics 365 for Operations client FAQ](/core/client-qa)
 -   [What's new in the Dynamics AX user experience (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
--   [Personalizing the user experience](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/personalizing-the-user-experience)
+-   [Personalizing the user experience](personalize-user-experience.md)
 
 ### Blogs to visit
 
@@ -56,17 +56,16 @@ The following resources provide information about the Dynamics 365 for Operation
 ## Help system
 The following resources provide an overview of the Help system and explain how to view field descriptions.
 
--   [Getting started with Help](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/system-administration/help-get-started)
--   [Connecting the help system](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/working-with-help#connecting-the-help-system)
--   [Creating custom help](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/get-started/working-with-help#creating-custom-help)
--   [How to view and export field descriptions](https://docs.microsoft.com/en-us/dynamics365/operations/core/get-started/how-to-view-and-export-field-descriptions)
+-   [Getting started with Help](/dev-itpro/system-administration/help-get-started)
+-   [Connecting the help system](/dev-itpro/get-started/working-with-help)
+-   [How to view and export field descriptions](view-export-field-descriptions.md)
 
 ### Task recordings and task guides
 
 Task Recorder is a Dynamics 365 for Operations tool that you can use to record the actions that you take in the user interface (UI). When you create a *task recording*, all events that are executed against the server are recorded as you perform them in the UI. These events include adding values, changing settings, and removing data. A *task guide* is a controlled, guided, interactive experience that leads you through the steps of a task recording. You can open (or *play*) a task guide from the Help system.
 
--   [Task Recorder in Dynamics 365 for Operations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-recorder-in-ax7)
--   [Create documentation or training using Task recordings](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/task-recorder)
+-   [Task Recorder in Dynamics 365 for Operations](/dev-itpro/user-interface/task-recorder-in-ax7)
+-   [Create documentation or training using Task recordings](/dev-itpro/user-interface/task-recorder)
 
 ### Blogs to visit
 

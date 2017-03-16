@@ -137,5 +137,5 @@ See also
 
 [Cost entries](cost-entries.md)
 
-[What's new and changed in Microsoft Dynamics AX](whats-new-changed.md)
+[What's new and changed in Microsoft Dynamics AX](/dev-itpro/get-started/whats-new-changed)
 

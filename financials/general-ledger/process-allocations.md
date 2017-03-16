@@ -36,18 +36,16 @@ This article provides information about allocations, the options for processing 
 
 Microsoft Dynamics 365 for Operations provides the following capabilities to support this process:
 
--   Manually allocate transaction amounts by using the Split action in accounting distributions, or by applying financial dimension default templates to a document. For more information, see [Accounting distributions.](..\accounts-payable\accounting-distributions.md)
+-   Manually allocate transaction amounts by using the Split action in accounting distributions, or by applying financial dimension default templates to a document. For more information, see [Accounting distributions.](\accounts-payable\accounting-distributions.md)
 -   Automatically allocate transactions amounts based on allocation terms defined on individual main account. Allocation account entries will be generated for each journal based on the percentage and destination ledger account whenever an accounting entry meets the criteria defined as the source ledger account.
--   Automatically allocate ledger balances or fixed amounts based on ledger allocation rules. The ledger allocation rules are processed on a periodic basis using allocation journals. For more information, see [Ledger allocation rules](http://ax.help.dynamics.com/en/wiki/about-allocation-rules/).
+-   Automatically allocate ledger balances or fixed amounts based on ledger allocation rules. The ledger allocation rules are processed on a periodic basis using allocation journals. 
 
 ###  Allocations in budget planning
 
 Ledger allocation rules can be used for budget plans. When you use ledger allocation rules in budget planning, the allocation rules work the same way they would in the ledger, but the source data and destination data comes from the budget plan. You can manually select ledger allocation rules to use for budget plans. Alternatively, you can use an allocation schedule that runs as part of a workflow process.
 
-|                                                                         |
-|-------------------------------------------------------------------------|
-| **Note**                                                                |
-| You can’t use intercompany ledger allocation rules for budget planning. |
+> [!NOTE]
+> You can’t use intercompany ledger allocation rules for budget planning.
 
 
 

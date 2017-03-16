@@ -76,8 +76,6 @@ For information about how to download Power BI content and connect it to your or
 -   [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md)
 -   [Use an Electronic reporting configuration to provide Power BI with data from Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the **Help** button on any page.
--   For information about Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (a CustomerSource account is required).
+
 
 

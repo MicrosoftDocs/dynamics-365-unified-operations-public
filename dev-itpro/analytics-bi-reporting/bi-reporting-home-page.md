@@ -39,10 +39,10 @@ Working with aggregate data
 
 -   [Analytics](analytics.md)
 -   [In-memory, real-time aggregate models replace SSAS cubes](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [BIR 100: Modeling and Using Aggregate Data](model-aggregate-data.md)
--   [BIR 106: Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
+-   [Modeling and using Aggregate Data](model-aggregate-data.md)
+-   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## Selfservice reporting
+## Self service reporting
 -   [Power BI integration](power-bi-integration.md)
 -   [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
 -   [Create a Power BI report by using Microsoft Dynamics 365 for Operations data](create-powerbi-report-data.md)
@@ -102,8 +102,6 @@ Working with aggregate data
 -   [ER Generate electronic documents for payments using a format configuration](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (Task guide)
 -   [ER Upgrade your format by adopting a new, base version of that format](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (Task guide)
 
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 
 

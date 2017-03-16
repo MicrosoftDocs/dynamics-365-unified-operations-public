@@ -3,12 +3,12 @@
 
 # Analytical tools and visualizations
 ## [Analytics](analytics.md)
-## [Why we moved from SSAS cubes to aggregate models](../retail/dev-itpro/..\migration-upgrade\in-memory-real-time-aggregate-models.md)
+## [Why we moved from SSAS cubes to aggregate models](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
 ## [Modeling and aggregate data](model-aggregate-data.md)
-## [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](../retail/dev-itpro/migrate-upgraded-cube-entity-store.md)
+## [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
 ## [Add contextual BI to forms](add-contextual-bi-forms.md)
 ## [Aggregate measurements report](aggregate-measurements-report.md)
-## [Aggregate data entities report](aggregate-..\data-entities\data-entities-report.md)
+## [Aggregate data entities report](aggregate-data-entities-report.md)
 ## [Key performance indicator (KPI) report](key-performance-indicators-report.md)
 ## [Power BI integration](power-bi-integration.md)
 ## [Power BI Embedded integration](power-bi-embedded-integration.md)
@@ -29,9 +29,9 @@
 ## [Organizational Training content pack for Power BI](organizational-training-analysis-power-bi-content-pack.md)
 ## [Purchase content pack for Power BI](purchase-content-pack-for-power-bi.md)
 ## [Recruiting content pack for Power BI](recruiting-analysis-power-bi-content-pack.md)
-## [Retail Channel Performance content pack for Power BI](../retail/dev-itpro/retail-channel-performance-dashboard-power-bi-data.md)
+## [Retail Channel Performance content pack for Power BI](retail-channel-performance-dashboard-power-bi-data.md)
 ## [Sales and profitability performance content pack for Power BI](sales-profitability-performance-content-pack.md)
-## [Set up security for the Cost accounting analysis Power BI content pack](setting-up-security-for-cost-accounting-content-for-power-bi.md)
+## [Set up security for the Cost accounting analysis Power BI content pack](setup-security-cost-accounting-content-pack.md)
 ## [Workforce analysis Power BI content pack ](workforce-analysis-power-bi-content-pack.md)
 
 # Document reporting and printing
@@ -72,5 +72,5 @@
 ### [Set up Electronic reporting to provide Power BI with data from Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 # App suites
-## [ Customize app suite reports with extensions ](dev-tools\customize-app-suite-reports-with-extensions.md)
+## [ Customize app suite reports with extensions ](customize-app-suite-reports-with-extensions.md)
 ## [ Expand app suite report data sets ](expand-app-suite-report-data-sets.md)

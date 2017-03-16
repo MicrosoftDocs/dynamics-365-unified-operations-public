@@ -78,7 +78,7 @@ See also
 
 [Production feedback](https://ax.help.dynamics.com/en/?p=5911)
 
-[Product configuration models](product-configuration-models.md)
+[Product configuration models](\product-information-management\product-configuration-models.md)
 
 [Lean manufacturing](https://ax.help.dynamics.com/en/?p=1521)
 

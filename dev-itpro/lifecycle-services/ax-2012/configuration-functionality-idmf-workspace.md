@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuration in the Intelligent Data Management Framework (AX 2012)
+title: Configuration 
 description: 
 author: kfend
 manager: AnnBe

@@ -38,8 +38,6 @@
 ## [Electronic signature overview](organization-administration\electronic-signature-overview.md)
 ## [Case management overview](organization-administration\cases.md)
 ## [Configure case security, processes, and categories](organization-administration\plan-case-management.md)
-
-
 ## [Create record templates](organization-administration\record-templates.md)
 ## [Configure and send email](organization-administration\configure-email.md)
 ## [Date/time data and time zones](organization-administration\date-time-zones.md)
@@ -62,7 +60,7 @@
 ## [Configure a parallel branch in a workflow](organization-administration\configure-parallel-branch-workflow.md)
 ## [Configure the properties of a workflow](organization-administration\configure-workflow-properties.md)
 # [Get started with analytics and reporting](\dev-itpro\analytics-bi-reporting\bi-reporting-home-page)
-# [Configure Office integration](\dev-itpro\office-integration\office-integration\)
+# [Configure Office integration](\dev-itpro\office-integration\office-integration)
 # [Explore and create mobile apps](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 # Other resources
 ## [Dynamics 365 for Operations glossary](get-started\glossary.md)

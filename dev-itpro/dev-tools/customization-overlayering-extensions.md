@@ -84,7 +84,7 @@ Plug-ins are extension points that are defined by the base application. By using
 
 ### Class Extensions
 
-Class extensions enable you to augment a class by adding methods and variables to existing classes. For more details refer to the topic [class extensions](class-extensions.md).
+Class extensions enable you to augment a class by adding methods and variables to existing classes. For more details refer to the topic [class extensions](..\extensions-overlayering\class-extensions.md).
 
 ## Form extensions
 You can extend the functionality of a form by extending its controls and data sources. For example, in a form extension, you can:
@@ -299,7 +299,7 @@ DialogClosed
 
 ### Code behind extension forms
 
-You can use class extensions to author X++Â logic associated with form extensions. This allows the definition of state variables accessible to form and control event handlers. It also allows overriding form methods without overlayering code. Refer to [this](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/10/11/code-behind-extension-forms-how-to-add-state-variable-and-override-methods-without-overlayering)blog article for an example.
+You can use class extensions to author X++Â logic associated with form extensions. This allows the definition of state variables accessible to form and control event handlers. It also allows overriding form methods without overlayering code. Refer to [this](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/10/11/code-behind-extension-forms-how-to-add-state-variable-and-override-methods-without-overlayering) blog article for an example.
 
 ## Table extensions
 You can create a table extension to extend a table's design and logic. You can add new fields, field groups, indexes, mappings and relations. You can also add new fields to existing field groups, change the label of a table field, change the Created By, Created Date Time, Modified By, Modified Date Time properties. In Microsoft Dynamics AX 2012, you could override the virtual methods of a table's base class to control the behavior that occurred during table operations, such as when creating, reading, updating, or deleting. In the current version, you instead use extensions to implement event handlers that are called from the base implementations of the table methods. The following table lists each table method and its events.
@@ -434,7 +434,7 @@ You can extend a Menu element to achieve the following:
 You can extend a Security Role or a Security Duty to add new duties/privileges to these elements.
 
 ## Report extensions
-You can customize reports and business docs using extensions, below is a list of tutorials that help you learn more. [Customizing App Suite reports using extensions](..\analytics-bi-reporting\customize-app-suite-reports-with-extensions.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. Customizations to reporting solutions in the standard application are fully supported using a pure ‘Extension’ model.  This article offers guidance on how to add the most common customizations to standard application reports without over-layering Application Suite artifacts.  Here are some… [How To: Custom designs for business docs](custom-designs-business-docs.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the steps involved in crafting a custom report design for an existing application business document using a ‘pure’ extension model. Follow the steps below to associate a custom report design with an application document instance…. [How To: Expanding App Suite report data sets](expand-app-suite-report-data-sets.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the expansion of an existing report data set produced using X++ business logic in a Report Data Provider (RDP) class. Use custom delegate handlers and table extensions to include additional field data and/or calculations without… [How To: Extending report menu items](extend-report-menu-items.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom reporting solutions. This article focuses on the process of extending existing application menu items to redirect navigations with minimal code changes. Using this technique you will avoid the hassle of tracking down and replacing all references to an existing application…
+You can customize reports and business docs using extensions, below is a list of tutorials that help you learn more. [Customizing App Suite reports using extensions](..\analytics-bi-reporting\customize-app-suite-reports-with-extensions.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. Customizations to reporting solutions in the standard application are fully supported using a pure ‘Extension’ model.  This article offers guidance on how to add the most common customizations to standard application reports without over-layering Application Suite artifacts.  Here are some… [How To: Custom designs for business docs](..\analytics-bi-reporting\custom-designs-business-docs.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the steps involved in crafting a custom report design for an existing application business document using a ‘pure’ extension model. Follow the steps below to associate a custom report design with an application document instance…. [How To: Expanding App Suite report data sets](..\analytics-bi-reporting\expand-app-suite-report-data-sets.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the expansion of an existing report data set produced using X++ business logic in a Report Data Provider (RDP) class. Use custom delegate handlers and table extensions to include additional field data and/or calculations without… [How To: Extending report menu items](..\analytics-bi-reporting\extend-report-menu-items.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom reporting solutions. This article focuses on the process of extending existing application menu items to redirect navigations with minimal code changes. Using this technique you will avoid the hassle of tracking down and replacing all references to an existing application…
 
 ## Label extensions
 You can create label extension files in order to modify the string value of a label, add new labels to the same label file or add new languages. To create a label extension file you must name it with a \_extension suffix. For example, to extend the **FLM** labels of the Fleet Management model, do the following:
@@ -513,7 +513,7 @@ Tables, form data sources, form controls, and other element types that support e
 See also
 --------
 
-[Technical Concepts Guide](https://ax.help.dynamics.com/en/?p=183121)
+[Technical Concepts Guide](developer-home-page.md)
 
-[DEV107 - Customize model elements using Extensions](https://ax.help.dynamics.com/en/?p=174821)
+[Customize model elements using extensions](customize-model-elements.md)
 

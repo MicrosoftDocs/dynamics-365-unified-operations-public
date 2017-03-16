@@ -77,8 +77,5 @@ The Sales functionality within the Sales and marketing module allows you to mana
 -   [Register sales commissions](http://ax.help.dynamics.com/en/wiki/register-sales-commissions/) (Task guide)
 -   [Broker contract management](https://mbs.microsoft.com/customersource/global/AX/learning/documentation/white-papers/msdaxbrokercontmgmt) (demo script)
 
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
 
 

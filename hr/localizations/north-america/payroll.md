@@ -52,7 +52,7 @@ Basic setup for Payroll involves setting pay cycles and pay periods, calculatio
 ### Taxes
 
 -   [Tax information tasks](tax-information-tasks.md)
--   [Tax codes, tax groups, and posting definitions FAQ](tax-codes-tax-groups-posting-definitions.md)
+-   [Tax codes, tax groups, and posting definitions FAQ](tax-codes-tax-groups-definitions.md)
 
 ### Benefits
 
@@ -89,9 +89,3 @@ A number of tasks are completed after you generate pay statements for your emplo
 ## Other payroll tasks
 -   [Payroll data updates FAQ](payroll-data-updates.md)
 -   [Generate payroll reports](generate-payroll-reports.md)
-
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
-
-

@@ -34,10 +34,11 @@ ms.dyn365.ops.version: Version 1611
 
 This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.
 
-When you post payroll, the accounting distributions that are specified on each pay statement line determine the offset accounts that are used. When each line has a balanced transaction, all transactions for the pay statement can be entered in the general ledger. **Note:** Offset accounts are determined by the posting definitions that are assigned to pay statements on the **Transaction posting definitions** page. When you post a pay statement, all lines must be successfully posted. Otherwise, no lines are posted. Similarly, when you post multiple pay statements, if one statement can't be posted, no pay statements are posted. After you post payroll, you should generate vendor invoices for the payables that were generated from the pay period that you posted. This process combines the amounts from all the pay statements that were posted for the period, and uses the benefit and tax setup information to create an invoice for each vendor. The totals and their corresponding accounting distributions from the original pay statement lines are used to create the invoices.
+When you post payroll, the accounting distributions that are specified on each pay statement line determine the offset accounts that are used. When each line has a balanced transaction, all transactions for the pay statement can be entered in the general ledger. 
 
-## How posting payroll fits into the overall payroll process
-The following illustration shows how this topic fits into the larger picture of payroll processing. ![Basic steps for processing earnings](https://i-technet.sec.s-msft.com/dynimg/IC766976.gif "Basic steps for processing earnings")
+**Note:** Offset accounts are determined by the posting definitions that are assigned to pay statements on the **Transaction posting definitions** page. When you post a pay statement, all lines must be successfully posted. Otherwise, no lines are posted. Similarly, when you post multiple pay statements, if one statement can't be posted, no pay statements are posted. 
+
+After you post payroll, you should generate vendor invoices for the payables that were generated from the pay period that you posted. This process combines the amounts from all the pay statements that were posted for the period, and uses the benefit and tax setup information to create an invoice for each vendor. The totals and their corresponding accounting distributions from the original pay statement lines are used to create the invoices.
 
 ## Prerequisites
 The following table shows the prerequisites that must be in place before you start.
@@ -71,7 +72,11 @@ The following table shows the prerequisites that must be in place before you sta
 </table>
 
 ## Post pay statements and generate vendor invoices for a single pay period
-After you review pay statement for a specific pay period, you post the pay statements to the general ledger and generate vendor invoices for that pay period. **Tip:** The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](pay-statements.md). To post pay statements and generate vendor invoices for a pay period, follow these steps. **Post the pay statements**
+After you review pay statement for a specific pay period, you post the pay statements to the general ledger and generate vendor invoices for that pay period. 
+
+**Tip:** The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](pay-statements.md). To post pay statements and generate vendor invoices for a pay period, follow these steps. 
+
+**Post the pay statements**
 
 1.  Click **Payroll** &gt; **Pay statement processing** &gt; **Post pay statements**.
 2.  In the **Pay cycle** field, select the pay cycle to post pay statements for.
@@ -108,7 +113,9 @@ After pay statements for a specific cycle and pay period have been posted to the
 4.  To verify that at least one vendor invoice was generated, click the pay statement to show the **Pay statement** details. Verify that the **Included in invoice** check box is selected on the line for the benefit plan statement. You can also verify that a new vendor invoice was created and posted for the vendor.
 
 ## Generate multiple invoices for the same vendor
-After pay statements for a specific pay cycle and pay period have been posted to the general ledger, you generate all the vendor invoices for a specific vendor. These invoices include multiple invoices for several benefit plans. To generate multiple invoices for one vendor, follow these steps.
+After pay statements for a specific pay cycle and pay period have been posted to the general ledger, you generate all the vendor invoices for a specific vendor. These invoices include multiple invoices for several benefit plans. 
+
+To generate multiple invoices for one vendor, follow these steps.
 
 1.  On the **Generate vendor invoices** page, in the **Pay cycle** field, select the pay cycle to generate vendor invoices for.
 2.  In the **Pay period** field, select the pay period to post pay statements for. The list includes only the pay periods that are available for the pay cycle. The default pay period is the first open pay period. However, you can select any open pay period in the list.

@@ -12,16 +12,16 @@
 # [Set up Configuration manager ](set-up-configuration-manager-lcs.md)
 # [Upload custom business processes to Business process modeler from Task recorder](upload-business-processes-bpm-task-recorder.md)
 
-#Release solutions through LCS
+# Release solutions through LCS
 ## [Developing and releasing solutions on Lifecycle Services](lcs-solutions-app-source.md)
 ## [Stage and publish an LCS solution](marketing-content-lcs-solutions.md)
 ## [Add a methodology to an LCS solution](methodologies-lcs-solutions.md)
-## [Migrate code for an LCS solution](..\migration-upgrade\code-migration-lcs-solutions.md)
+## [Migrate code for an LCS solution](code-migration-lcs-solutions.md)
 ## [Validate an application for an LCS solution](app-validation-lcs-solutions.md)
 ## [Process and consume data packages in an LCS solution](process-data-packages-lcs-solutions.md)
 ## [Back up database for an LCS solution](database-backup-lcs-solutions.md)
 
-#AX 2012
+# AX 2012
 ## Deployment
 ### [Cloud-hosted environments (AX 2012)](ax-2012\cloud-hosted-environments-lcs.md)
 ## [Copy a configuration](copy-configuration-lcs.md)
@@ -64,11 +64,11 @@
 ### [Customization analysis ](ax-2012\customization-analysis-lcs.md)
 ### [Infrastructure estimator](ax-2012\infrastructure-estimator-lcs.md)
 ### [License sizing estimator](ax-2012\license-sizing-estimator-lcs.md)
-### [RFP responses (AX 2012)](ax-2012\rfp-responses-lcs.md)
+### [RFP responses](ax-2012\rfp-responses-lcs.md)
 ### [System diagnostics](ax-2012\system-diagnostics-lcs.md)
-### [Install and run System diagnostics (AX 2012)](ax-2012\install-run-system-diagnostics-lcs.md)
+### [Install and run System diagnostics](ax-2012\install-run-system-diagnostics-lcs.md)
 ### [Upgrade analysis](ax-2012\upgrade-analysis-lcs.md)
-### [Usage profiler (AX 2012)](ax-2012\usage-profiler-lcs.md)
+### [Usage profiler](ax-2012\usage-profiler-lcs.md)
 ## AX 2012 downloadable tools
 ### [Code Upgrade Tool User Guide](ax-2012\code-upgrade-tool-user-guide.md)
 ### [Lifecycle Services downloadable tools](ax-2012\lcs-downloadable-tools-formerly-informationsource.md)
@@ -79,20 +79,21 @@
 ### [Install the Security Development Tool](ax-2012\install-security-development-tool.md)
 ### [Security Development Tool Overview](ax-2012\overview-security-development-tool-user-interface.md)
 ### [Security Development Tool User Guide](ax-2012\security-development-tool-user-guide.md)
-### [Define or edit entry point permissions (AX 2012)](ax-2012\define-edit-entry-point-permissions.md)
-### [Performance Benchmark Software Development Toolkit (SDK) for Dynamics AX 2012](ax-2012\performance-benchmark-software-development-toolkit-sdk-2012.md)
+### [Define or edit entry point permissions](ax-2012\define-edit-entry-point-permissions.md)
+### [Performance Benchmark Software Development Toolkit (SDK)](ax-2012\performance-benchmark-software-development-toolkit-sdk-2012.md)
 ### [Security Upgrade Advisor Tool user guide](ax-2012\security-upgrade-advisor-tool-user-guide.md)
 ### Intelligent Data Management Framework
 #### [Dynamics AX Intelligent Data Management Framework](ax-2012\microsoft-idmf.md)
 #### [Intelligent Data Management Framework overview](ax-2012\overview-idmf.md)
-#### [Installation Guide for the Intelligent Data Management Framework](ax-2012\installation-guide-idmf.md)
-#### [Configuration in the Intelligent Data Management Framework](ax-2012\configuration-functionality-idmf-workspace.md)
-#### [Analysis in the Intelligent Data Management Framework](ax-2012\analysis-functionality-idmf-workspace.md)
-#### [Intelligent Data Management Framework purge and archive objects](ax-2012\work-with-purge-objects-archive-objects.md)
-#### [Create archive objects for Intelligent Data Management Framework](ax-2012\create-archive-objects.md)
-#### [Create Intelligent Data Management Framework purge objects](ax-2012\create-purge-objects.md)
-#### [Schedule Purge & Analysis Tasks in Intelligent Data Management Framework](ax-2012\schedule-purge-analysis-tasks.md)
-#### [View Intelligent Data Management Framework purge or archive jobs](ax-2012\view-status-purge-archive-jobs.md)
+#### [Installation Guide](ax-2012\installation-guide-idmf.md)
+#### [Configuration](ax-2012\configuration-functionality-idmf-workspace.md)
+#### [Analysis](ax-2012\analysis-functionality-idmf-workspace.md)
+#### [Purge and archive objects](ax-2012\work-with-purge-objects-archive-objects.md)
+#### [Create archive objects](ax-2012\create-archive-objects.md)
+#### [Create purge objects](ax-2012\create-purge-objects.md)
+#### [Schedule purge & analysis tasks](ax-2012\schedule-purge-analysis-tasks.md)
+#### [View purge or archive jobs](ax-2012\view-status-purge-archive-jobs.md)
 #### [Maintain the Dynamics AX Intelligent Data Management Framework](ax-2012\install-ax-2012-r3.md)
-#### [Maintainance in the Intelligent Data Management Framework](ax-2012\maintain-idmf.md)
-#### [Troubleshoot the Intelligent Data Management Framework](ax-2012\troubleshoot-idmf.md)
+#### [Maintenance](ax-2012\maintain-idmf.md)
+#### [Troubleshoot](ax-2012\troubleshoot-idmf.md)
+

@@ -85,5 +85,5 @@ There are many consolidation scenarios, and each method can handle the scenarios
 See also
 --------
 
-[Currency revalution in a consolidation company](currency-revaluation-consolidation-company.md)
+[Currency revalution in a consolidation company](../cash-bank-management/currency-revaluation-consolidation-company.md)
 

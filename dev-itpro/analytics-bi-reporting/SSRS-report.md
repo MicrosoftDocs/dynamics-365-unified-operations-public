@@ -46,5 +46,7 @@ For more information, see [Create next-generation reporting solutions](create-ne
 The [SQL Server Reporting Services Reports report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)lists each report that is available. The report indicates the data set used for the each report, as well as the filters and fields available on each report.
 
 ## How the report is grouped
-The report is a Microsoft Excel file. In this report, the rows are grouped alphabetically on tab 1. All rows are displayed when you click tab 2. [![GeneratedReports](./media/generatedreports.png)](./media/generatedreports.png)
+The report is a Microsoft Excel file. In this report, the rows are grouped alphabetically on tab 1. All rows are displayed when you click tab 2. 
+
+[![GeneratedReports](./media/generatedreports.png)](./media/generatedreports.png)
 

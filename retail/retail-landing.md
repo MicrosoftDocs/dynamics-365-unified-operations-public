@@ -101,7 +101,7 @@ Dynamics 365 for Operations - Retail delivers a complete shopping experience, wi
 -   [Set up RFM analysis](set-up-rfm-analysis.md)
 
 ## []()Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
+
 -   For information about Dynamics 365 for Operations, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account).
 
  

@@ -109,9 +109,9 @@ If package application fails, you have two options:
 -   Click **Abort** to stop package application. **Note:** If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue. [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 
 ## Apply package on a Production environment by using LCS
-In a Production environment, package application through LCS is not self-serve like it is for a Sandbox or other environment types. Customers and partners must submit a request to the Service Engineering team to apply a package when the customer is ready to take the downtime. **Note:** See [Enable additional notifications on package application through LCS](https://ax.help.dynamics.com/en/wp-admin/post.php?post=1139123&action=edit#_Pre-requisite_Step).
+In a Production environment, package application through LCS is not self-serve like it is for a Sandbox or other environment types. Customers and partners must submit a request to the Service Engineering team to apply a package when the customer is ready to take the downtime. 
 
-1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](../servicing/..\servicing\download-hotfix-lcs.md).
+1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](..\servicing\download-hotfix-lcs.md).
     -   For a binary hotfix, upload the hotfix directly to the Asset library.
     -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
 
