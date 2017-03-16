@@ -69,7 +69,7 @@ The following table lists the tools that are provided in LCS and describes the p
 </ul></td>
 </tr>
 <tr class="even">
-<td><a href="cloud-hosted-environments-lcs.md">Cloud-hosted environments</a></td>
+<td>[Cloud-hosted environments](/ax-2012/cloud-hosted-environments-lcs.md)</td>
 <td>Cloud-hosted environments is a tool that you can use to deploy Microsoft Dynamics environments on Microsoft Azure. When you use Cloud-hosted environments , you must select the type of environment to deploy, such as a demo, developer/test, or production environment. Based on your selection, the Cloud-hosted environments tool provisions the appropriate number of virtual machines (VMs) in Azure. These VMs have Microsoft Dynamics components (and all their prerequisites) already installed on them.</td>
 </tr>
 <tr class="odd">
@@ -97,7 +97,7 @@ The following table lists the tools that are provided in LCS and describes the p
 <td>License sizing estimator helps you estimate the number of licenses that are required. It provides a shared workspace that lets you model default and customized roles, and then automatically calculate the required client access licenses (CALs).</td>
 </tr>
 <tr class="even">
-<td><a href="rfp-responses-lcs.md">RFP responses</a></td>
+<td>[RFP responses](/ax-2012/rfp-responses-lcs.md)</td>
 <td>The <strong>RFP responses</strong> page helps partners respond to requests for proposals (RFPs).</td>
 </tr>
 <tr class="odd">
@@ -105,15 +105,15 @@ The following table lists the tools that are provided in LCS and describes the p
 <td>System diagnostics helps administrators monitor Microsoft Dynamics environments.</td>
 </tr>
 <tr class="even">
-<td><a href="update-2012-r3-lcs.md">Updates</a></td>
+<td>[Updates for Dynamics AX 2012 R3](/ax-2012/update-2012-r3-lcs.md)</td>
 <td>The <strong>Updates</strong> page hosts the details about updates that are available for an environment. It also provides access to groups of updates that can be used for slipstream installations.</td>
 </tr>
 <tr class="odd">
-<td><a href="upgrade-analysis-lcs.md">Upgrade analysis</a></td>
+<td>[Upgrade analysis](/ax-2012/upgrade-analysis-lcs.md)</td>
 <td>Upgrade analysis helps you plan your upgrade to the latest version of Microsoft Dynamics 365 for Operations by analyzing code artifacts from Microsoft Dynamics AX 4.0, Dynamics AX 2009, or Dynamics AX 2012.</td>
 </tr>
 <tr class="even">
-<td><a href="usage-profiler-lcs.md">Usage profiler</a></td>
+<td>[Usage profiler](/ax-2012/usage-profiler-lcs.md)</td>
 <td>Usage profiler is a data-gathering tool that helps you describe your projected or current usage of an. The usage profile that is generated can be used for various purposes, such as hardware sizing and support.</td>
 </tr>
 <tr class="odd">
