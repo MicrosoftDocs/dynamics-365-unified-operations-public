@@ -2,8 +2,8 @@
 ## [Dynamics 365 for Operations - Retail for IT pros and developers](dev-retail-home-page.md)
 ## Retail components
 ### Components
-### Retail scale unit
-### Retail channel pack for Power BI
+### [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
+### [Retail Channel Performance content pack for Power BI](../analytics-bi-reporting/retail-channel-performance-dashboard-power-bi-data.md)
 ## Deployment
 ## [Retail POS device activation](retail-device-activation.md)
 ## Point of sale
