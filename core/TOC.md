@@ -21,11 +21,10 @@
 ### [Understand Lifecycle Services](\dev-itpro\lifecycle-services\lcs-works-lcs?toc=/dynamics365/operations/core/toc.json)
 
 ## Get help and support
-### [View and export field descriptions](get-started\view-export-field-descriptions.md)
 ### [Getting started with Help](\dev-itpro\get-started\help-get-started?toc=/dynamics365/operations/core/toc.json)
 ### [Connect Help](\dev-itpro\get-started\working-with-help?toc=/dynamics365/operations/core/toc.json)
-### [How to view and export field descriptions](get-started\view-export-field-descriptions.md)
-### [Dynamics 365 for Operations help system (fact sheet)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+### [View and export field descriptions](get-started\view-export-field-descriptions.md)
+
 ### Task guides and task recorder
 #### [Task Recorder in Dynamics 365 for Operations](\dev-itpro\user-interface\task-recorder?toc=/dynamics365/operations/core/toc.json)
 #### [Create documentation or training using Task recordings](\dev-itpro\user-interface\task-recorder)
@@ -49,7 +48,7 @@
 ## [Configure and send email](organization-administration\configure-email.md)
 ## [Date/time data and time zones](organization-administration\date-time-zones.md)
 
-# [Import and export data using data entities](\dev-itpro\data-entities\data-entities?toc=/dynamics365/operations/core/toc.json)
+# [Import and export data using data entities](\dev-itpro\data-entities\data-entities\TOC?toc=/dynamics365/operations/core/toc.json)
 
 # Design workflows
 ## [Workflow system overview](organization-administration\overview-workflow-system.md)
@@ -69,7 +68,7 @@
 ## [Configure a parallel branch in a workflow](organization-administration\configure-parallel-branch-workflow.md)
 ## [Configure the properties of a workflow](organization-administration\configure-workflow-properties.md)
 
-# [Get started with analytics and reporting](\dev-itpro\analytics-bi-reporting\bi-reporting-home-page?toc=/dynamics365/operations/core/toc.json)
+# [Get started with analytics and reporting](\dev-itpro\analytics-bi-reporting\TOC?toc=/dynamics365/operations/core/toc.json)
 
 # [Configure Office integration](\dev-itpro\office-integration\office-integration?toc=/dynamics365/operations/core/toc.json)
 
