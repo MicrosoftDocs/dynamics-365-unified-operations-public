@@ -259,19 +259,19 @@ You can use Electronic Reporting (ER) to configure statements and report, and t
 ## Countryspecific resources for VAT statements
 The VAT statement for each country must meet the requirements of the country’s legislation. There are predefined general models and formats of VAT statements for the countries listed in the following table.
 
-|                |                                                                                                                               |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------|
-| **Country**    | **Additional information**                                                                                                    |
+
+| Country    | Additional information |
+|----------------|----------------------------|
 | Austria        |  [VAT statement details for Austria](aut-vat-statement-details-austria.md)              |
-| Belgium        |                                                                                                                               |
+| Belgium        |                                                                                         |
 | Czech Republic |  [VAT statement details for Czech Republic](cz-vat-statement-details-for-czech-republic.md) |
 | Estonia        |  [VAT statement details for Estonia](est-vat-statement-details-estonia.md)              |
-| Finland        |                                                                                                                               |
-| Germany        |                                                                                                                               |
+| Finland        |                                                                                           |
+| Germany        |                                                                                            |
 | Latvia         | [VAT statement details for Latvia](lv-vat-statement-details.md)                             |
 | Lithuania      | [VAT statement details for Lithuania](lt-vat-statement-details.md)                          |
-| Netherlands    |                                                                                                                               |
-| Sweden         |                                                                                                                               |
+| Netherlands    |                                                                                            |
+| Sweden         |                                                                               |
 
 
 
