@@ -2,8 +2,10 @@
 ## Introduction to Microsoft Dynamics 365
 ### [Get started with Microsoft FastTrack for Dynamics 365](get-started\fasttrack-dynamics-365-overview.md)
 ### [Sign up for a subscription](\dev-itpro\dev-tools\sign-up-preview-subscription)
-### [How to get the on-premises version of Dynamics AX 2012](\dev-itpro\deployment\csp-download-customersource)
-## [Deploy a demo environment](\dev-itpro\dev-tools\deploy-demo-environment)
+### [How to get the on-premises version of Dynamics AX 2012](\dev-itpro\deployment\csp-download-customersource?toc=/dynamics365/operations/core/toc.json)
+
+## [Deploy a demo environment](\dev-itpro\dev-tools\deploy-demo-environment?toc=/dynamics365/operations/core/toc.json)
+
 ## Explore the user interface
 ### [Action search](get-started\action-search.md)
 ### [Advanced filtering and query syntax](get-started\advanced-filtering-query-options.md)
@@ -14,20 +16,23 @@
 ### [Personalize the user experience](get-started\personalize-user-experience.md)
 ### [Keyboard shortcuts](get-started\shortcut-keys.md)
 ### [Manage how pages display](get-started\window-management.md)
-### [Understand Lifecycle Services](\dev-itpro\lifecycle-services\lcs-works-lcs)
+### [Understand Lifecycle Services](\dev-itpro\lifecycle-services\lcs-works-lcs?toc=/dynamics365/operations/core/toc.json)
+
 ## Get help and support
 ### [View and export field descriptions](get-started\view-export-field-descriptions.md)
-### [Getting started with Help](\dev-itpro\get-started\help-get-started)
-### [Connect Help](\dev-itpro\get-started\working-with-help)
+### [Getting started with Help](\dev-itpro\get-started\help-get-started?toc=/dynamics365/operations/core/toc.json)
+### [Connect Help](\dev-itpro\get-started\working-with-help?toc=/dynamics365/operations/core/toc.json)
 ### [How to view and export field descriptions](get-started\view-export-field-descriptions.md)
 ### [Dynamics 365 for Operations help system (fact sheet)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 ### Task guides and task recorder
-#### [Task Recorder in Dynamics 365 for Operations](\dev-itpro\user-interface\task-recorder)
+#### [Task Recorder in Dynamics 365 for Operations](\dev-itpro\user-interface\task-recorder?toc=/dynamics365/operations/core/toc.json)
 #### [Create documentation or training using Task recordings](\dev-itpro\user-interface\task-recorder)
 #### [Recently added editing features in task recorder](get-started\recently-added-editing-features-in-task-recorder.md)
+
 ## Find local features
 ### [Country/region-specific Help content](localizations\country_region.md)
-### [Tell Microsoft about new country/region regulatory features](\dev-itpro\localization-solutions\submit-localization-alerts)
+### [Tell Microsoft about new country/region regulatory features](\dev-itpro\localization-solutions\submit-localization-alerts?toc=/dynamics365/operations/core/toc.json)
+
 # [Configure your organization](organization-administration\organization-administration-home-page.md)
 ## [Organizations and organizational hierarchies](organization-administration\organizations-organizational-hierarchies.md)
 ## [Configure organizational hierarchy](organization-administration\plan-organizational-hierarchy.md)
@@ -41,7 +46,9 @@
 ## [Create record templates](organization-administration\record-templates.md)
 ## [Configure and send email](organization-administration\configure-email.md)
 ## [Date/time data and time zones](organization-administration\date-time-zones.md)
-# Import and export data using data entities
+
+# [Import and export data using data entities](\dev-itpro\data-entities\data-entities?toc=/dynamics365/operations/core/toc.json)
+
 # Design workflows
 ## [Workflow system overview](organization-administration\overview-workflow-system.md)
 ## [Workflow system architecture](organization-administration\workflow-system-architecture.md)
@@ -59,9 +66,13 @@
 ## [Configure a parallel activity in a workflow](organization-administration\configure-parallel-activity-workflow.md)
 ## [Configure a parallel branch in a workflow](organization-administration\configure-parallel-branch-workflow.md)
 ## [Configure the properties of a workflow](organization-administration\configure-workflow-properties.md)
-# [Get started with analytics and reporting](\dev-itpro\analytics-bi-reporting\bi-reporting-home-page)
-# [Configure Office integration](\dev-itpro\office-integration\office-integration)
+
+# [Get started with analytics and reporting](\dev-itpro\analytics-bi-reporting\bi-reporting-home-page?toc=/dynamics365/operations/core/toc.json)
+
+# [Configure Office integration](\dev-itpro\office-integration\office-integration?toc=/dynamics365/operations/core/toc.json)
+
 # [Explore and create mobile apps](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
+
 # Other resources
 ## [Dynamics 365 for Operations glossary](get-started\glossary.md)
-## [What's new or changed](\dev-itpro\get-started\whats-new-changed)
+## [What's new or changed](\dev-itpro\get-started\whats-new-changed?toc=/dynamics365/operations/core/toc.json)
