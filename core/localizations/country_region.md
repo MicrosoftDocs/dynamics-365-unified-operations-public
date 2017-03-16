@@ -47,9 +47,9 @@ Localization requirements
 
 ## Electronic reporting
 -   [Electronic reporting overview](/dev-itpro/analytics-bi-reporting/general-electronic-reporting)
--   [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
--   [Electronic reporting destinations](electronic-reporting-destinations.md)
--   [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+-   [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
+-   [Electronic reporting destinations](/dev-itpro/analytics-bi-reporting/electronic-reporting-destinations)
+-   [Manage the Electronic reporting configuration lifecycle](/dev-itpro/analytics-bi-reporting/general-electronic-reporting-manage-configuration-lifecycle)
 
 ## Country/region specific help topics
 The following sections list help topics by country/region.
