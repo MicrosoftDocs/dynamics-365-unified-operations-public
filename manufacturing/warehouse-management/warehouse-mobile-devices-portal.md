@@ -80,7 +80,7 @@ To retrieve and install a certificate on your Warehouse Mobile Device Portal hos
 To enable the Warehouse Mobile Devices Portal application to interact with a particular Dynamics 365 for Operations server, you need to complete the following configuration steps after installation:
 
 1.  Register a native application in Azure Active Directory for the Operations tenant. This application should have access to Microsoft Dynamics ERP.
-    1.  Read the following guide to learn about Dynamics 365 for Operations custom service authentication: the Custom services section in the [Dynamics 365 for Operations Services Technical Concepts Guide](services-home-page.md).
+    1.  Read the following guide to learn about Dynamics 365 for Operations custom service authentication: the Custom services section in the [Dynamics 365 for Operations Services Technical Concepts Guide](/dev-itpro/data-entities/services-home-page).
     2.  Follow the steps for “Register a Native Application with AAD”.
     3.  You have now obtained **Client ID** of the application.
 
