@@ -59,5 +59,5 @@ See also
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](vendor-invoices-overview.md)
+[Overview of vendor invoices](/financials/accounts-payable/vendor-invoices-overview)
 
