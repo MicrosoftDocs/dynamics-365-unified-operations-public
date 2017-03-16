@@ -1,5 +1,6 @@
 # Manufacturing home page
-This page points to resources that will help you use the Microsoft Dynamics 365 for Operations - Supply Chain management more effectively.
+This page points to resources that will help you use the Microsoft Dynamics 365 for Operations - Supply Chain management more effectively. On the left-pane, select a feature area to learn more about it. 
+
 ## What's new and in development
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
 
