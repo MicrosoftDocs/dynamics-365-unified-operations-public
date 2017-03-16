@@ -8,7 +8,7 @@ Dynamics 365 for Operations is cloud-hosted. As an IT professional, you can use 
 
 # Developer experience
 The developer experience is based on modern tooling using Visual Studio and .NET components.
--	The development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
+-	The development tools are decoupled from any running environment. You develop against local, XML-based files, not the online database.
 -	Microsoft Visual Studio replaces MorphX as the development environment. Dynamics 365 for Operations customizes the Visual Studio environment to provide you with a smooth and familiar experience.
 -	The X++ compiler generates Common Intermediate Language (CIL) for all features. CIL is the same intermediate language used by other .NET-based (managed) languages, such as the C# programming language.
 -	You can leverage the browser-based client and design patterns for forms to provide an improved end-user experience.
