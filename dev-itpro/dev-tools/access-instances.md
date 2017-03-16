@@ -149,7 +149,6 @@ For developer access, you must be an administrator on the instance. To provision
                Write-Host "SignInName:$($u.SignInName) UserId: $($u.ObjectId)" 
             } 
         }
-
     [![Command in the Windows PowerShell ISE window](./media/retailconfig02-1024x529.png)](./media/retailconfig02.png)
 
 4.  Update the following SQL script, and run it in on AXDB for that environment. Supply values for the following parameters from the preceding Windows PowerShell script output:
@@ -159,8 +158,7 @@ For developer access, you must be an administrator on the instance. To provision
 
     <!-- -->
 
-        DECLARE @TenantId NVARCHAR(1024) 
-        DECLARE @UserId NVARCHAR(1024) 
+        DECLARE @TenantId NVARCHAR(1024)         DECLARE @UserId NVARCHAR(1024) 
         SET @TenantId = ‘‘ 
         SET @UserId = ‘‘ 
         IF(LEN(@TenantId) > 0 AND LEN(@UserId) > 0) 
@@ -209,9 +207,8 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Retail configuration
 
 The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](../retail/dev-itpro/dev-retail-home-page.md)
--   [Retail SDK overview](../retail/dev-itpro/retail-sdk-overview.md)
--   [Retail POS device activation](https://ax.help.dynamics.com/en/wiki/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications/)
+-   [Retail SDK overview](/retail/dev-itpro/retail-sdk-overview)
+-   [Retail POS device activation](/retail/devi-itpro/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.
