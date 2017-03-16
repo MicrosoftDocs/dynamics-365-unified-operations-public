@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 202614
@@ -45,7 +45,7 @@ Dynamics 365 for Operations enables application customization using a new framew
 -   When you need to overlayer code, do not include functional or business logic in the overlayered code. Instead, define and call a delegate method, then implement the logic in your extension model using an event handler. For a detailed example in the context of code migration, see [Delegates.](delegates-migration.md)
 -   Report commonly used over-layering patterns to Microsoft and request extension support.
 
-For more information, see [Customizing with Extensions and Overlayering,](developer-home-page.md#customizing-with-extensions-and-overlayering) [Models](models.md), and the [Development Tools](developer-home-page.md#development-tools) section.
+For more information, see [Extensibility home page](..\extensibility\extensibility-home-page.md) and the [Developer home page](developer-home-page.md).
 
 ### How do I prevent my models from being customized by customers or other partners?
 
@@ -54,11 +54,13 @@ You can block customizations of your model as described in [How to disable model
 ## Continuous delivery
 ### Do I need build environments?
 
-Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Developer topology deployment with continuous build and test automation](continuous-build-test-automation.md) for more details.
+Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Developer topology deployment with continuous build and test automation](..\perf-test\continuous-build-test-automation.md) for more details.
 
 ### What strategy do I use for test automation?
 
-For test automation, concentrate on unit tests (use the SysTest framework) that are data independent or create their own data. Use a smaller number of functional scenario tests (based on Task Recorder) that rely on test data to execute. Scenario tests are more expensive to maintain. Unit tests can then be executed on any development environment easily and quickly. Review the [Test Automation Pyramid](https://blogs.msdn.microsoft.com/dave_froslie/2016/03/09/test-automation-pyramid/) blog article and refer to [Automated testing guidance.](https://blogs.msdn.microsoft.com/axdevalm/2016/08/12/automated-testing-guidance-for-ax-7/) [![](./media/testautomationpyramid1-1024x620.png)](./media/testautomationpyramid1.png) Some key concepts to keep in mind:
+For test automation, concentrate on unit tests (use the SysTest framework) that are data independent or create their own data. Use a smaller number of functional scenario tests (based on Task Recorder) that rely on test data to execute. Scenario tests are more expensive to maintain. Unit tests can then be executed on any development environment easily and quickly. Review the [Test Automation Pyramid](https://blogs.msdn.microsoft.com/dave_froslie/2016/03/09/test-automation-pyramid/) blog article and refer to [Automated testing guidance.](https://blogs.msdn.microsoft.com/axdevalm/2016/08/12/automated-testing-guidance-for-ax-7/) 
+
+![media/testautomationpyramid1.png](media/testautomationpyramid1.png) Some key concepts to keep in mind:
 
 -   Write tests that run independently and do not assume any kind of ordering.
 -   Task recorder tests should be limited to functional scenarios tests.
@@ -79,7 +81,9 @@ Create and manage your test database as follows:
 -   Take a backup (.bak) of your AxDB database.
 -   Share this backup with developers.
 
-On a build environment, copy this backup over to the I:\\DynamicsBackupDatabases (on some environment it may be a different drive than i:). This database will be restored at the beginning of every build. This step is executed as part of the first step of the build definition called **Prepare for build**. [![](./media/prepareforbuild-1024x283.png)](./media/prepareforbuild.png)
+On a build environment, copy this backup over to the I:\\DynamicsBackupDatabases (on some environment it may be a different drive than i:). This database will be restored at the beginning of every build. This step is executed as part of the first step of the build definition called **Prepare for build**. 
+
+![media/prepareforbuild.png](media/prepareforbuild.png)
 
 ### How do I distribute my application to customers?
 
