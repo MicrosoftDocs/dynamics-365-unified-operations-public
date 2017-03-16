@@ -49,7 +49,7 @@ You can customize an application by using *extensions*. An extension enables y
     -   Creating event handlers to respond to event delegates that are defined by the application.
     -   Creating new plug-ins.
 
-To get started, review or complete this tutorial: [Customize model elements using extensions](..\extensions-overlayering\customize-model-elements-extensions.md).
+To get started, review or complete this tutorial: [Customize model elements using extensions](customize-model-elements-extensions.md).
 
 ## Extension models and packages
 You can create a model that contains only new model elements, new code, or extensions. This model is compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step. [![1\_Cust](./media/1_cust.png)](./media/1_cust.png) Extension models have several advantages, including:
@@ -80,11 +80,11 @@ Events are raised as preceding and succeeding operations around the base methods
 
 ### Plug-ins
 
-Plug-ins are extension points that are defined by the base application. By using a class-factory pattern, plug-ins enable you to replace the base functionality. You can see how to implement a plug-in in the wiki tutorial, [Customize model elements using extensions](..\extensions-overlayering\customize-model-elements-extensions.md).
+Plug-ins are extension points that are defined by the base application. By using a class-factory pattern, plug-ins enable you to replace the base functionality. You can see how to implement a plug-in in the wiki tutorial, [Customize model elements using extensions](customize-model-elements-extensions.md).
 
 ### Class Extensions
 
-Class extensions enable you to augment a class by adding methods and variables to existing classes. For more details refer to the topic [class extensions](..\extensions-overlayering\class-extensions.md).
+Class extensions enable you to augment a class by adding methods and variables to existing classes. For more details refer to the topic [class extensions](class-extensions.md).
 
 ## Form extensions
 You can extend the functionality of a form by extending its controls and data sources. For example, in a form extension, you can:
@@ -510,10 +510,7 @@ Tables, form data sources, form controls, and other element types that support e
 -   **Find event handlers**: Searches and lists all methods subscribed to the selected event.
 
 
-See also
---------
+# See also
 
-[Technical Concepts Guide](developer-home-page.md)
-
-[Customize model elements using extensions](customize-model-elements.md)
+[Customize model elements using extensions](customize-model-elements-extensions.md)
 
