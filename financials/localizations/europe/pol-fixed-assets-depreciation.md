@@ -42,7 +42,7 @@ The Fixed assets depreciation features that are based on legal requirements in
 -   The same date, which is an option in the depreciation proposal to fill in the **Date** field value in all journal lines with a **To date** value that is defined in the Depreciation proposal.
 
 ## Polandspecific depreciation methods
-For legal entities in Poland there are additional depreciation methods, rules, and settings that are used to meet specific fixed asset accounting requirements. According to Polish regulations, depreciation is calculated using a yearly depreciation rate. For more information about depreciation methods, see [Fixed asset depreciation](fixed-asset-depreciation.md). The following depreciation methods are available for legal entities in Poland:
+For legal entities in Poland there are additional depreciation methods, rules, and settings that are used to meet specific fixed asset accounting requirements. According to Polish regulations, depreciation is calculated using a yearly depreciation rate. For more information about depreciation methods, see [Fixed asset depreciation](/financials/fixed-assets/fixed-asset-depreciation). The following depreciation methods are available for legal entities in Poland:
 
 -   **Reducing balance (Poland)** – This depreciation method considers special local legal requirements about the value of fixed assets changing during the fiscal year and cost part recognition. The base for this depreciation method includes the following transaction types:
     -   Acquisition
@@ -64,13 +64,13 @@ For legal entities in Poland there are additional depreciation methods, rules, 
     -   Write down
     -   Revaluation
 
-For more information about depreciation methods, see [Fixed asset depreciation](fixed-asset-depreciation.md).
+For more information about depreciation methods, see [Fixed asset depreciation](/financials/fixed-assets/fixed-asset-depreciation).
 
 ## Depreciation percent level parameter
 Reducing balance (Poland) and Straight line percentage (Poland) depreciation methods use the **Depreciation percent level** field on the **Fixed assets parameters** page. This field allows you to choose if the depreciation percent level should be taken from either the depreciation method or an individual fixed asset to calculate depreciation:
 
 -   **Profile (standard)** – Select this option to use the percentage from the** **depreciation profile.
--   **Fixed asset book** –** ** Select this option to use the same depreciation method. The depreciation will be calculated using the percentage on the Fixed assets book.
+-   **Fixed asset book** – Select this option to use the same depreciation method. The depreciation will be calculated using the percentage on the Fixed assets book.
 
 ## Depreciation groups
 Legal entities in Poland can link fixed assets to depreciation groups. Depreciation groups are defined for a fixed asset book to specify fixed asset details such as increasing factor, alternative factor, or cost limit. If a depreciation group is assigned to a fixed asset, the depreciation group controls the depreciation amount, using an increasing factor by which the depreciation amount is multiplied. Create or edit the following depreciation groups on the **Depreciation group** page.

@@ -226,5 +226,5 @@ The following tables show the Accounts payable data structure definitions.
 See also
 --------
 
-[Electronic Reporting overview](general-electronic-reporting.md)
+[Electronic Reporting overview](/dev-itpro/analytics-bi-reporting/general-electronic-reporting)
 
