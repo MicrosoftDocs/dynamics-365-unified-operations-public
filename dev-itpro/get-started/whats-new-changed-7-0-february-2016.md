@@ -135,494 +135,431 @@ This feature works independently of costing methods that are assigned to the pro
 | Expose updatable view by using OData.                                                                        | Not available                                                                                                                                                                                      | The current version of Dynamics AX introduces a public OData service endpoint that enables access to Dynamics AX data in a consistent way across a broad range of clients.                                                     | Your solutions can interact with RESTful services, share data in a discoverable way, and enable broad integration by using the HTTP stack protocol.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Take advantage of the business connector to author business logic and support integration scenarios.         | The business connector is available to call into X++ code from managed code. We recommend that you use the business connector only to author business logic in C\#, not for integration scenarios. | The business connector is no longer supported. The authoring requirement is provided by the fact that X++ is compiled into managed code. Therefore, interop is easier. The integration scenarios are met by using OData.       | You can't use the business connector going forward.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Choose scale (that is, the number of decimal places) on real database fields and extended data types (EDTs). | Scale 16 is the default scale and can't be changed by the developer.                                                                                                                               | EDTs and fields now have a scale property that can be applied to the individual field and EDT. The default is set to 6, not 16.                                                                                                | Performance with NCCI tables (in-memory support in SQL) is faster by orders of magnitude when a smaller scale is used. Change the scale as your use of the individual fields requires.                                                                                                                                                                                                                                                                                                                                                                                                               |
-
 ## Financial management
-**What can you do?**
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>What can you do?</strong></td>
+<td><strong>Dynamics AX 2012</strong></td>
+<td><strong>Dynamics AX 7.0</strong></td>
+<td><strong>Why is this important?</strong></td>
+</tr>
+<tr class="even">
+<td>Export account structures to Microsoft Excel.</td>
+<td>Not available</td>
+<td>You can now select an account structure and export it to Excel.</td>
+<td>Many customers have requested the ability to export account structures to Excel for easier filtering.</td>
+</tr>
+<tr class="odd">
+<td>View ledgers and advanced rule structures that are associated with an account structure on a single page.</td>
+<td> The user must navigate to multiple forms to see the ledger and the account structure that are used. </td>
+<td>FactBoxes have been added to the account structure page.</td>
+<td>It's easier to access important information when account structures are defined and edited.</td>
+</tr>
+<tr class="even">
+<td>View ledgers that are associated with a chart of accounts on a single page.</td>
+<td>The user must navigate to each company and open the ledger form to see the chart of account that is assigned to the ledger.</td>
+<td>FactBoxes have been added to the **Chart of accounts** page.</td>
+<td> It's easier to access important information when a chart of accounts is defined and assigned.</td>
+</tr>
+<tr class="odd">
+<td>View closing sheet adjustments and closing transactions in separate columns on the **Trial balance** list page. </td>
+<td>The user sees both types of transactions in a single column.</td>
+<td>An additional parameter has been added to the **Trial balance** list page.</td>
+<td>It allows for more concise analysis of data and is also required for regulatory reporting in some countries/regions. </td>
+</tr>
+<tr class="even">
+<td>Use the new **Global general journal** page.</td>
+<td>Not available </td>
+<td>New **Global general journal** page to enter general journals. Privileges for this page are added to the **Accountant** role.</td>
+<td>Makes it possible for a shared service accountant to enter general journals across companies without having to leave the form or to switch company context.</td>
+</tr> 
+<tr class="odd">
+<td>Use the new **Accounting source explorer** page.</td>
+<td>Available from Dynamics AX 2012 R3 CU10.</td>
+<td>New **Accounting source explorer** page and actions to navigate there from the **Trial balance** list page and the **Voucher transactions** page.</td>
+<td>Makes it possible view the most detailed information about the source for a trial balance or an accounting entry in general ledger, or for ad-hoc analysis.</td>
+</tr>
+<tr class="even">
+<td>Add additional posting layers.</td>
+<td>Adding additional posting layers was a developer experience.</td>
+<td>Ten posting layers are now available.</td>
+<td>Most customers add additional posting layers.</td>
+</tr>
+<tr class="odd">
+<td>Use the Related voucher option.</td>
+<td>Not available</td>
+<td>The Related voucher option is available for users to see the voucher in the offset company when posting intercompany transactions. From the related vouchers users can click on the details and quickly jump to the offset company voucher.</td>
+<td>When posting intercompany transactions, users had no visibility or tracing to the voucher that was posted in the offset company.</td>
+</tr>
+<tr class="even">
+<td>Mass financial period close</td>
+<td>Not available</td>
+<td>Users are able to update the module access and change the period status for multiple companies at one time.</td>
+<td>Prior to the feature, users had to change what company they were logged in, navigate to the ledger calendar form and manually update the module access and period status.</td>
+</tr>
+<tr class="odd">
+<td>Have exchange rates powered by Oanda.</td>
+<td>Configuring the exchange rate provider to import rates from Oanda was a developer experience. </td>
+<td>If users have a key for Oanda they can enter it when configuring the exchange rate provider.</td>
+<td>Users can take advantage of out-of-the box functionality by having exchange rates powered by Oanda imported in on a scheduled basis.</td>
+</tr>
+<tr class="even">
+<td>Filter financial reports (Management Reporter) based on dimensions, attributes, dates, and scenarios. </td>
+<td> All filtering of Management Reporter reports is handled through the design of the report. For example, if a user who has viewing privileges wants to view a report for a different date, a report designer must make the modification. </td>
+<td>Report options have been added, so that different filters can be applied when a user is viewing a report. A new report is then generated based on those filters.</td>
+<td>Consumers of financial reports can apply different filters for dimensions, dates, attributes, and scenarios without requiring updates to report designs.</td>
+</tr>
+<tr class="odd">
+<td>View financial reports (Management Reporter) within the Microsoft Dynamics AX client.</td>
+<td>A separate web client was used to view Management Reporter reports.</td>
+<td>All financial reports can be accessed in the Dynamics AX client. The user selects a report to view, and the report is displayed in the client.</td>
+<td>You can now view financial reports without having to access a different client/application.</td>
+</tr>
+<tr class="even">
+<td>Print financial reports (Management Reporter) from the Microsoft Dynamics AX client.</td>
+<td>Printing a report would use the browser's print options for printing and only prints what the user can see on the screen. </td>
+<td>The user can choose the detail level and page setup for a report by using the Print option in the financial report in the Dynamics AX client.</td>
+<td>Printed reports print in the way users expect instead of printing a web page.</td>
+</tr><tr class="odd">
+<td>Analyze financial data by using the “Monitor financial performance” content pack for Power BI.</td>
+<td>Not available</td>
+<td>On PowerBI.com, select **Get Data**, and then select the **Dynamics AX – Financial performance** content pack. Enter the URL for your Dynamics AX endpoint to see your data reflected in the dashboard.</td>
+<td>In three to four clicks, organizations can deploy a Power BI dashboard that contains important financial data. Content can be personalized by the organization.</td>
+</tr>
+<tr class="even">
+<td>Track financial period closing processes.</td>
+<td>Not available </td>
+<td>Closing templates and schedules can be created by using the Financial period close configuration. Use the **Financial period close** workspace to track the progress of closing schedules across multiple companies.</td>
+<td>This workspace eliminates manual systems to define, schedule, and communicate close activities. Therefore, the number of days to close is reduced.</td>
+</tr>
+<tr class="odd">
+<td>Monitor budget versus actuals, and create ledger forecasts by using the **Ledger budgets and forecasts** workspace and additional inquiry forms.</td>
+<td>Not available</td>
+<td> The workspace can be accessed through the Dynamics AX dashboard. It includes links to several new inquiry pages: **Actuals vs. budget summary**, **Budget control statistic summary**, **Budget register entries**, and **Budget plans**.</td>
+<td>New inquiry pages enable easy access to budget information. The workspace combines all budget maintenance and monitoring tasks in one place that is easy for budget managers or accounting managers to use.</td>
+</tr>
+<tr class="even">
+<td>Create layouts for budget plans and forecasts.</td>
+<td>The **Budget plan** document is viewed as a list of lines that have effective dates and amounts for combinations of financial dimensions. The user must create and use Excel templates to view budget plan data in a PivotTable.</td>
+<td>An unlimited number of layouts is available for budget plans and forecasts. You can combine selected financial dimensions, user-defined columns, and other row attributes (such as comments, projects, and assets) in the layout. Users can switch the layout for the budget plan document on the fly and edit data by using any selected layout. The configuration of budget planning is simplified by eliminating scenario constraints and using layouts to define which data can be viewed and edited in each stage of the budget plan document.</td>
+<td>It gives the flexibility to create and edit budget plans by using both Excel and the Dynamics AX client. Templates for Excel workbooks can be generated by using the Budget plan layout setup.</td>
+</tr>
+<tr class="odd">
+<td>Print the **Vendor Invoice Transactions** report by using information from the **Detailed Due Day List** report, which includes the days past due. </td>
+<td>You must print two different reports: **Detailed Due Day List** and **Vendor Invoice Transactions**.</td>
+<td>The information on the two reports has been consolidated into the **Vendor Invoice Transactions** report. The **Detailed Due Day List** report was deprecated. </td>
+<td>It eliminates the need to print two separate but related reports.</td>
+</tr>
+<tr class="even">
+<td>Generate regulatory reports directly in PDF format.</td>
+<td>You must first generate a regulatory report in one format and then export it to PDF format.</td>
+<td>The PDF format is the default format for regulatory reports.</td>
+<td>It provides a unified display experience on both the computer monitor and a printed paper copy.</td>
+</tr>
+<tr class="odd">
+<td>Run the sales tax settlement process as a batch process. </td>
+<td>Not available</td>
+<td>On the **Sales tax settlement period** page, you can specify that the settlement process should be run in batch mode.</td>
+<td>For periods that have many tax transactions, the settlement process can be time consuming, and it might be better to run the process in the background as a batch process.</td>
+</tr>
+</tbody>
+</table>
 
-**Dynamics AX 2012**
 
-**Dynamics AX 7.0**
 
-**Why is this important?**
 
-Export account structures to Microsoft Excel.
-
-Not available
-
-You can now select an account structure and export it to Excel.
-
-Many customers have requested the ability to export account structures to Excel for easier filtering.
-
-View ledgers and advanced rule structures that are associated with an account structure on a single page.
-
-The user must navigate to multiple forms to see the ledger and the account structure that are used.
-
-FactBoxes have been added to the account structure page.
-
-It's easier to access important information when account structures are defined and edited.
-
-View ledgers that are associated with a chart of accounts on a single page.
-
-The user must navigate to each company and open the ledger form to see the chart of account that is assigned to the ledger.
-
-FactBoxes have been added to the **Chart of accounts** page.
-
-It's easier to access important information when a chart of accounts is defined and assigned.
-
-View closing sheet adjustments and closing transactions in separate columns on the **Trial balance** list page.
-
-The user sees both types of transactions in a single column.
-
-An additional parameter has been added to the **Trial balance** list page.
-
-It allows for more concise analysis of data and is also required for regulatory reporting in some countries/regions.
-
-Use the new **Global general journal** page.
-
-Not available
-
-New **Global general journal** page to enter general journals. Privileges for this page are added to the **Accountant** role.
-
-Makes it possible for a shared service accountant to enter general journals across companies without having to leave the form or to switch company context.
-
-Use the new **Accounting source explorer** page.
-
-Available from Dynamics AX 2012 R3 CU10.
-
-New **Accounting source explorer** page and actions to navigate there from the **Trial balance** list page and the **Voucher transactions** page.
-
-Makes it possible view the most detailed information about the source for a trial balance or an accounting entry in general ledger, or for ad-hoc analysis.
-
-Add additional posting layers.
-
-Adding additional posting layers was a developer experience.
-
-Ten posting layers are now available.
-
-Most customers add additional posting layers.
-
-Use the Related voucher option.
-
-Not available
-
-The Related voucher option is available for users to see the voucher in the offset company when posting intercompany transactions. From the related vouchers users can click on the details and quickly jump to the offset company voucher.
-
-When posting intercompany transactions, users had no visibility or tracing to the voucher that was posted in the offset company.
-
-Mass financial period close
-
-Not available
-
-Users are able to update the module access and change the period status for multiple companies at one time.
-
-Prior to the feature, users had to change what company they were logged in, navigate to the ledger calendar form and manually update the module access and period status.
-
-Have exchange rates powered by Oanda.
-
-Configuring the exchange rate provider to import rates from Oanda was a developer experience.
-
-If users have a key for Oanda they can enter it when configuring the exchange rate provider.
-
-Users can take advantage of out-of-the box functionality by having exchange rates powered by Oanda imported in on a scheduled basis.
-
-Filter financial reports (Management Reporter) based on dimensions, attributes, dates, and scenarios.
-
-All filtering of Management Reporter reports is handled through the design of the report. For example, if a user who has viewing privileges wants to view a report for a different date, a report designer must make the modification.
-
-Report options have been added, so that different filters can be applied when a user is viewing a report. A new report is then generated based on those filters.
-
-Consumers of financial reports can apply different filters for dimensions, dates, attributes, and scenarios without requiring updates to report designs.
-
-View financial reports (Management Reporter) within the Microsoft Dynamics AX client.
-
-A separate web client was used to view Management Reporter reports.
-
-All financial reports can be accessed in the Dynamics AX client. The user selects a report to view, and the report is displayed in the client.
-
-You can now view financial reports without having to access a different client/application.
-
-Print financial reports (Management Reporter) from the Microsoft Dynamics AX client.
-
-Printing a report would use the browser's print options for printing and only prints what the user can see on the screen.
-
-The user can choose the detail level and page setup for a report by using the Print option in the financial report in the Dynamics AX client.
-
-Printed reports print in the way users expect instead of printing a web page.
-
-Analyze financial data by using the “Monitor financial performance” content pack for Power BI.
-
-Not available
-
-On PowerBI.com, select **Get Data**, and then select the **Dynamics AX – Financial performance** content pack. Enter the URL for your Dynamics AX endpoint to see your data reflected in the dashboard.
-
-In three to four clicks, organizations can deploy a Power BI dashboard that contains important financial data. Content can be personalized by the organization.
-
-Track financial period closing processes.
-
-Not available
-
-Closing templates and schedules can be created by using the Financial period close configuration. Use the **Financial period close** workspace to track the progress of closing schedules across multiple companies.
-
-This workspace eliminates manual systems to define, schedule, and communicate close activities. Therefore, the number of days to close is reduced.
-
-Monitor budget versus actuals, and create ledger forecasts by using the **Ledger budgets and forecasts** workspace and additional inquiry forms.
-
-Not available
-
-The workspace can be accessed through the Dynamics AX dashboard. It includes links to several new inquiry pages: **Actuals vs. budget summary**, **Budget control statistic summary**, **Budget register entries**, and **Budget plans**.
-
-New inquiry pages enable easy access to budget information. The workspace combines all budget maintenance and monitoring tasks in one place that is easy for budget managers or accounting managers to use.
-
-Create layouts for budget plans and forecasts.
-
-The **Budget plan** document is viewed as a list of lines that have effective dates and amounts for combinations of financial dimensions. The user must create and use Excel templates to view budget plan data in a PivotTable.
-
-An unlimited number of layouts is available for budget plans and forecasts. You can combine selected financial dimensions, user-defined columns, and other row attributes (such as comments, projects, and assets) in the layout. Users can switch the layout for the budget plan document on the fly and edit data by using any selected layout. The configuration of budget planning is simplified by eliminating scenario constraints and using layouts to define which data can be viewed and edited in each stage of the budget plan document.
-
-It gives the flexibility to create and edit budget plans by using both Excel and the Dynamics AX client. Templates for Excel workbooks can be generated by using the Budget plan layout setup.
-
-Print the **Vendor Invoice Transactions** report by using information from the **Detailed Due Day List** report, which includes the days past due.
-
-You must print two different reports: **Detailed Due Day List** and **Vendor Invoice Transactions**.
-
-The information on the two reports has been consolidated into the **Vendor Invoice Transactions** report. The **Detailed Due Day List** report was deprecated.
-
-It eliminates the need to print two separate but related reports.
-
-Generate regulatory reports directly in PDF format.
-
-You must first generate a regulatory report in one format and then export it to PDF format.
-
-The PDF format is the default format for regulatory reports.
-
-It provides a unified display experience on both the computer monitor and a printed paper copy.
-
-Run the sales tax settlement process as a batch process.
-
-Not available
-
-On the **Sales tax settlement period** page, you can specify that the settlement process should be run in batch mode.
-
-For periods that have many tax transactions, the settlement process can be time consuming, and it might be better to run the process in the background as a batch process.
 
 ## Foundation
-**What can you do?**
-
-**Dynamics AX 2012**
-
-**Dynamics AX 7.0**
-
-**Why is this important?**
-
-Access the client anytime, anywhere.
-
-The AX 2012 desktop client provides a full set of forms, but it can run only on computers that run Microsoft Windows and requires installation. Terminal Server is often used with the desktop client to enable access over a wide area network (WAN). The Enterprise Portal web client provides a reduced set of forms.
-
-The two AX 2012 clients have been replaced by a single, standards-based web client that provides the full set of functionality of the desktop client together with the reach of the Enterprise Portal client.
-
-It prevents development efforts from being split between two UI platforms. By using standard web interfaces, it eliminates the need for Terminal Server.
-
-Be productive by using the new Task recorder.
-
-The AX 2012 Task recorder requires direct access to an Application Object Server (AOS) computer and elevated privileges, and provides no editing options.
-
-The new Task recorder can be used directly from the web client. Access to Task recorder doesn't require admin privileges. Recorded steps can be viewed live as you record, new editing options have been introduced, and Task recorder supports more scenarios in addition to existing Business process modeler (BPM) scenarios.
-
-The new Task recorder provides a streamlined experience and powers new capabilities in Dynamics AX. Some of these capabilities are available now, and more will follow in the future.
-
-Help users better understand their upcoming work with workspaces.
-
-Role centers provide an overview of information that pertains to a user’s job function in the business or organization.
-
-Workspaces are a new concept in Dynamics AX that are meant to replace role centers as the primary way to navigate to tasks and specific pages. They provide a one-page overview of a business activity and help users to understand the current status, the upcoming workload, and the performance of the process or user. Workspaces are more granular than AX 2012 role centers, and a user may have access to multiple workspaces.
-
-Workspaces are meant to increase user productivity. Developers will need to create a workspace for every significant “activity” supported in the product. A legacy role center from AX 2012 will typically be replaced by multiple workspaces in the current version of Dynamics AX.
-
-Make forms responsive to browser viewport or device size.
-
-In AX 2012, form content was rigidly laid out using columns, and the overall form height/width was largely determined based on the controls on the form.
-
-With the shift to the web in the latest Dynamics AX, a form's dimensions are now based on the browser viewport size or device. Controls and layout parameters have been modified or added to better respond to changes in viewport size.
-
-Form content needs to be more responsive to optimally utilize the available height/width of the browser or device. Achieving responsiveness may require changes in the way a form is modeled.
-
-Use patterns for an enhanced form development experience.
-
-Form templates were available as starting points for form development in AX 2012 based on a form style. The Form Style Checker, an optional add-in, provided information on how a form deviated from its corresponding template.
-
-In the current version of Dynamics AX, form patterns have been introduced. Form patterns represent a combination of form templates and the Form Style Checker tightly integrated into the development experience. Patterns have been defined at the form level (like AX 2012) with additional subpatterns now available at the group and tab page level.
-
-Forms that adhere to patterns have many benefits including a more consistent user interface, a simpler development experience, easier form upgrade path, and increased confidence in form layout responsiveness.
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>What can you do?</strong></td>
+<td><strong>Dynamics AX 2012</strong></td>
+<td><strong>Dynamics AX 7.0</strong></td>
+<td><strong>Why is this important?</strong></td>
+</tr>
+<tr class="even">
+<td>Access the client anytime, anywhere. </td>
+<td>The AX 2012 desktop client provides a full set of forms, but it can run only on computers that run Microsoft Windows and requires installation. Terminal Server is often used with the desktop client to enable access over a wide area network (WAN). The Enterprise Portal web client provides a reduced set of forms.</td>
+<td>The two AX 2012 clients have been replaced by a single, standards-based web client that provides the full set of functionality of the desktop client together with the reach of the Enterprise Portal client.</td>
+<td>It prevents development efforts from being split between two UI platforms. By using standard web interfaces, it eliminates the need for Terminal Server.</td>
+</tr>
+<tr class="odd">
+<td>Be productive by using the new Task recorder.</td>
+<td>The AX 2012 Task recorder requires direct access to an Application Object Server (AOS) computer and elevated privileges, and provides no editing options.</td>
+<td>The new Task recorder can be used directly from the web client. Access to Task recorder doesn't require admin privileges. Recorded steps can be viewed live as you record, new editing options have been introduced, and Task recorder supports more scenarios in addition to existing Business process modeler (BPM) scenarios.</td>
+<td>The new Task recorder provides a streamlined experience and powers new capabilities in Dynamics AX. Some of these capabilities are available now, and more will follow in the future.</td>
+</tr>
+<tr class="even">
+<td>Help users better understand their upcoming work with workspaces.</td>
+<td>Role centers provide an overview of information that pertains to a user’s job function in the business or organization.</td>
+<td>Workspaces are a new concept in Dynamics AX that are meant to replace role centers as the primary way to navigate to tasks and specific pages. They provide a one-page overview of a business activity and help users to understand the current status, the upcoming workload, and the performance of the process or user. Workspaces are more granular than AX 2012 role centers, and a user may have access to multiple workspaces.</td>
+<td>Workspaces are meant to increase user productivity. Developers will need to create a workspace for every significant “activity” supported in the product. A legacy role center from AX 2012 will typically be replaced by multiple workspaces in the current version of Dynamics AX.</td>
+</tr>
+<tr class="odd">
+<td>Make forms responsive to browser viewport or device size.</td>
+<td>In AX 2012, form content was rigidly laid out using columns, and the overall form height/width was largely determined based on the controls on the form.</td>
+<td>With the shift to the web in the latest Dynamics AX, a form's dimensions are now based on the browser viewport size or device. Controls and layout parameters have been modified or added to better respond to changes in viewport size.</td>
+<td>Form content needs to be more responsive to optimally utilize the available height/width of the browser or device. Achieving responsiveness may require changes in the way a form is modeled.</td>
+</tr>
+<tr class="even">
+<td>Use patterns for an enhanced form development experience.</td>
+<td>Form templates were available as starting points for form development in AX 2012 based on a form style. The Form Style Checker, an optional add-in, provided information on how a form deviated from its corresponding template.</td>
+<td>In the current version of Dynamics AX, form patterns have been introduced. Form patterns represent a combination of form templates and the Form Style Checker tightly integrated into the development experience. Patterns have been defined at the form level (like AX 2012) with additional subpatterns now available at the group and tab page level.</td>
+<td>Forms that adhere to patterns have many benefits including a more consistent user interface, a simpler development experience, easier form upgrade path, and increased confidence in form layout responsiveness.</td>
+</tr>
+</tbody>
+</table>
 
 ## Help
-**What can you do?**
-
-**Dynamics AX 2012**
-
-**Dynamics AX 7.0**
-
-**Why is this important?**
-
-Access guided procedural Help (task guides) and conceptual topics by clicking **Help**.
-
-The AX 2012 Help system points to HTML topics that are stored on a local web server. Customers and partners can create their own Help.
-
-The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from the Microsoft wiki. For more information, see [Dynamics AX Help - Getting Started](help-get-started.md) and [New task guides available (February 2016)](new-task-guides-available-february-2016.md).
-
-Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. The wiki provides a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>What can you do?</strong></td>
+<td><strong>Dynamics AX 2012</strong></td>
+<td><strong>Dynamics AX 7.0</strong></td>
+<td><strong>Why is this important?</strong></td>
+</tr>
+<tr class="even">
+<td>Access guided procedural Help (task guides) and conceptual topics by clicking **Help**.</td>
+<td>The AX 2012 Help system points to HTML topics that are stored on a local web server. Customers and partners can create their own Help.</td>
+<td>The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from the Microsoft wiki. For more information, see [Dynamics AX Help - Getting Started](help-get-started.md) and [New task guides available (February 2016)](new-task-guides-available-february-2016.md).</td>
+<td>Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. The wiki provides a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.</td>
+</tr>
+</tbody>
+</table>
 
 ## Human capital management
-**What can you do?**
-
-**Dynamics AX 2012**
-
-**Dynamics AX 7.0**
-
-**Why is this important?**
-
-Transfer skills and certificates to class participants upon course completion.
-
-This is a manual process.
-
-When a course is completed, a new option becomes available to update a participant’s records with the new skills and certificates.
-
-It provides a new and efficient way to update employee records.
-
-Quickly verify employment.
-
-This is a manual process.
-
-Your HR department can quickly verify employment by using a workspace or the employee page.
-
-Your HR department no longer has to access multiple pages to verify the start date, manager, months in the position, and compensation data.
-
-Let employees view, update, and delete information in the system.
-
-Available, but with limited view and update capabilities.
-
-This feature is enabled, and lets employees and contractors view a wide range of personal data. Optionally, a workflow can be used when information is created, updated, or deleted.
-
-It lets employees take control of their information, whether that involves updating address or contact information, applying for a job, taking a questionnaire, or updating their image. When a workflow is enabled, information can be reviewed by an approver or automatically approved, based on your business processes.
-
-Let managers view or edit employee information.
-
-Available, but with limited view and update capabilities.
-
-Depending on configuration settings and security, managers can view or edit employee information.
-
-It lets managers access important employee data, so that they can make better decisions about resourcing, performance, and employee development.
-
-Take advantage of manager self-service functionality.
-
-Not available
-
-Managers can now submit requests for new hires (employees and contractors), transfers and termination (ending employment). Managers can also request a new position, extend a positions duration, or request position changes.
-
-These scenarios were previously only exposed to Human Resources. Enabling these scenarios provides powerful tools to managers in an organization. Optional workflows can be enabled to provide the right level of review and approvals.
-
-Access the results of compensation processing.
-
-Results are available only at the time of processing.
-
-Compensation processing results can now be accessed at any point after the process has been run.
-
-It provides an excellent audit of the process and the outcome of the process. It also provides a comprehensive view of the data before employee records are updated.
-
-Access the results of benefit processing.
-
-Results are available only at the time of processing.
-
-Benefits processing results can now be accessed at any point after the process has been run.
-
-It provides a comprehensive view of the data that is updated by benefit enrollment and cost changes.
-
-View “Date Effective” timeline changes.
-
-Not available
-
-This comparison tool is available for employees, positions, and jobs. It provides a comprehensive view of changes from one version of a record to another.
-
-It saves you time when you view changes that have occurred over time to employees, positions, and job records. It lets you quickly compare two versions of a record, or all records, over time.
-
-View employees by company.
-
-This is a manual process that is performed through filtering.
-
-Employee and contractor lists are automatically filtered by the company that you’re logged on to.
-
-It provides a filtered view of employees who are employed in the logged-on company. For an unfiltered view of all employees and contractors, the worker list is still available. In the current version of Dynamics AX, the system doesn't change company based on the employee that is selected in the list.
-
-Update the course participants list.
-
-Not available
-
-Course participants can be removed from the participants list.
-
-It provides an easy way to update course participants who registered by mistake.
-
-Manage compensation events in a group.
-
-Not available
-
-This feature streamlines the processing of compensation changes for employees.
-
-It provides a simple, streamlined process for updating employee records through the compensation workspace and related pages.
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>What can you do?</strong></td>
+<td><strong>Dynamics AX 2012</strong></td>
+<td><strong>Dynamics AX 7.0</strong></td>
+<td><strong>Why is this important?</strong></td>
+</tr>
+<tr class="even">
+<td>Transfer skills and certificates to class participants upon course completion.</td>
+<td>This is a manual process.</td>
+<td>When a course is completed, a new option becomes available to update a participant’s records with the new skills and certificates.</td>
+<td>It provides a new and efficient way to update employee records.</td>
+</tr>
+<tr class="odd">
+<td>Quickly verify employment.</td>
+<td>This is a manual process.</td>
+<td>Your HR department can quickly verify employment by using a workspace or the employee page.</td>
+<td>Your HR department no longer has to access multiple pages to verify the start date, manager, months in the position, and compensation data.</td>
+</tr>
+<tr class="even">
+<td>Let employees view, update, and delete information in the system.</td>
+<td>Available, but with limited view and update capabilities.</td>
+<td>This feature is enabled, and lets employees and contractors view a wide range of personal data. Optionally, a workflow can be used when information is created, updated, or deleted.</td>
+<td>It lets employees take control of their information, whether that involves updating address or contact information, applying for a job, taking a questionnaire, or updating their image. When a workflow is enabled, information can be reviewed by an approver or automatically approved, based on your business processes.</td>
+</tr>
+<tr class="odd">
+<td>Let managers view or edit employee information.</td>
+<td>Available, but with limited view and update capabilities.</td>
+<td>Depending on configuration settings and security, managers can view or edit employee information.</td>
+<td>It lets managers access important employee data, so that they can make better decisions about resourcing, performance, and employee development.</td>
+</tr>
+<tr class="even">
+<td>Take advantage of manager self-service functionality.</td>
+<td>Not available</td>
+<td>Managers can now submit requests for new hires (employees and contractors), transfers and termination (ending employment). Managers can also request a new position, extend a positions duration, or request position changes.</td>
+<td>These scenarios were previously only exposed to Human Resources. Enabling these scenarios provides powerful tools to managers in an organization. Optional workflows can be enabled to provide the right level of review and approvals.</td>
+</tr>
+<tr class="odd">
+<td>Access the results of compensation processing.</td>
+<td>Results are available only at the time of processing.</td>
+<td>Compensation processing results can now be accessed at any point after the process has been run.</td>
+<td>It provides an excellent audit of the process and the outcome of the process. It also provides a comprehensive view of the data before employee records are updated.</td>
+</tr>
+<tr class="even">
+<td>Access the results of benefit processing.</td>
+<td>Results are available only at the time of processing.</td>
+<td>Benefits processing results can now be accessed at any point after the process has been run.</td>
+<td>It provides a comprehensive view of the data that is updated by benefit enrollment and cost changes.</td>
+</tr>
+<tr class="odd">
+<td>View “Date Effective” timeline changes.</td>
+<td>Not available</td>
+<td>This comparison tool is available for employees, positions, and jobs. It provides a comprehensive view of changes from one version of a record to another.</td>
+<td>It saves you time when you view changes that have occurred over time to employees, positions, and job records. It lets you quickly compare two versions of a record, or all records, over time.</td>
+</tr>
+<tr class="even">
+<td>View employees by company.</td>
+<td>This is a manual process that is performed through filtering.</td>
+<td>Employee and contractor lists are automatically filtered by the company that you’re logged on to.</td>
+<td>It provides a filtered view of employees who are employed in the logged-on company. For an unfiltered view of all employees and contractors, the worker list is still available. In the current version of Dynamics AX, the system doesn't change company based on the employee that is selected in the list.</td>
+</tr>
+<tr class="odd">
+<td>Update the course participants list.</td>
+<td>Not available</td>
+<td>Course participants can be removed from the participants list.</td>
+<td>It provides an easy way to update course participants who registered by mistake.</td>
+</tr>
+<tr class="even">
+<td>Manage compensation events in a group.</td>
+<td>Not available</td>
+<td>This feature streamlines the processing of compensation changes for employees.</td>
+<td>It provides a simple, streamlined process for updating employee records through the compensation workspace and related pages.</td>
+</tr>
+</tbody>
+</table>
 
 ## Inventory management
 No new features have been added.
 
 ## Localization
-**What can you do?**
-
-**Dynamics AX 2012**
-
-**Dynamics AX 7.0**
-
-**Why is this important?**
-
-Configure and generate electronic documents to meet the legal requirements in various countries/regions.
-
-Electronic documents are hard-coded in X++ or as Extensible Stylesheet Language Transformations (XSLTs). Any format adjustments require development efforts. Access to data and formatting aren't isolated. An adjusted format deployment requires a new Microsoft Dynamics AX hotfix package that overrides the existing format. Custom modifications of each format must be manually ported to the source code of a new Microsoft Dynamics AX hotfix package.
-
-Electronic Reporting (ER) is a new tool for configuring and generating electronic documents that target a business user instead of a developer. ER lets you set up data models that are domain-specific and independent of the Microsoft Dynamics AX database as data sources for document formats. A business user can configure the formats, based on these domain-specific data models (for example, for payments, Intrastat reports, or tax reports). The user configures the formats by using simple visual tools that are similar to Excel. ER currently supports the generation of electronic documents in text, XML, and Excel formats. These documents can be generated simultaneously and packed into zip files. Data models and formats support versioning. Format versions can have effective periods. Each data model or format version is stored in a separate configuration and distributed to partners and customers through LCS. Partners and customers can customize Microsoft data models and formats, or create their own. ER saves partner and customer configuration changes as deltas to Microsoft configurations, which simplifies upgrades to new versions of Microsoft configurations. By using LCS, partners can also share their data model and format configurations with other partners and customers, who can customize and share them. Delta customization and easy upgrade are supported through the whole customization chain.
-
-ER simplifies the creation, maintenance, and upgrade of electronic document formats to meet legal requirements in various countries/regions. ER makes the process of creating or changing electronic document formats faster and easier. These changes can be made by business users instead of developers. ER makes it faster and easier for partners and customers to upgrade their format customizations to new versions of formats that are released by Microsoft or other partners. ER provides one common way (through LCS) for Microsoft and partners to distribute electronic document configurations to other partners and customers. ER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements.
-
-(MEX) Generate Mexican value-added tax (VAT) regulatory reports.
-
-You must generate **Sales and Purchases VAT** reports by using the unrealized VAT functionality, so that users can identify transactions that belong to the realized and unrealized sections based on the status.
-
-**Sales and Purchases VAT** reports were modified and now consider the conditional tax feature only by using specific settlement periods for the definition of unrealized and realized sales tax codes.
-
-Changes in the configuration of sales tax codes are required before users can generate these reports correctly. A conditional sales tax feature is required, and the user must configure separate settlement periods, unrealized and realized, to identify the transactions in the related section areas.
-
-(JPN) Manage the Japanese fixed asset accelerated depreciation declaration document.
-
-Not available
-
-Important declaration information is centrally stored in a single document for better maintenance.
-
-Document compliance and ease of management help reduce issues during audits and other reviews.
-
-(JPN) Verify JBA characters on the bank account.
-
-Not available
-
-You can verify that kana name fields contain only the characters that are permitted by the JBA bank format.
-
-It helps reduce interruptions to users during payment file generation because of invalid characters.
-
-(JPN) Catch up the Japan fixed asset penny difference at the end of the fiscal year.
-
-Not available
-
-On the **Fixed asset parameters** page, you can choose to catch up at the end of the fiscal period or the fiscal year.
-
-It provides more flexibility to match local practices.
-
-(JPN) Generate the Japanese Corporate Tax Declaration Appended Tables 16 series at a summarized amount by fixed asset major type.
-
-Not available
-
-On the value models of a fixed asset, you can choose to summarize by major type. By default, this functionality is used for newly created fixed assets.
-
-For large corporations that have thousands of fixed assets, the summarized reports greatly reduce the size of the report that is generated.
-
-(JPN) Start to allocate Special depreciation reserve from the next fiscal year for Japan fixed assets.
-
-Not available
-
-On the value models of a fixed asset that has an appropriate extraordinary depreciation profile, you can choose to start allocation from the next fiscal period or the next fiscal year.
-
-It provides more flexibility to match local practices.
-
-(JPN) Generate a Japan consumption tax report that includes the revised tax rates.
-
-The consumption tax report is available for a tax rate of 5 percent.
-
-The consumption tax report contains a section for the revised tax rate (for example, 8 percent).
-
-The layout was newly announced by the government.
-
-(EU) Configure rounding settings for EU sales list.
-
-Rounding settings for the EU sales list reporting for various countries/regions are hard-coded in X++ or in Extensible Stylesheet Language Transformations (XSLTs).
-
-Rounding settings are added to Foreign trade parameters. You can configure rounding precision, rounding method, output precision, and the behavior for amounts smaller than the rounding precision.
-
-This unifies and simplifies the configuration of the EU sales list reporting. Adjustment of rounding settings no longer requires development efforts.
-
-(EU) Configure reverse charge applicability rules.
-
-Reverse charge applicability rules are hard-coded for the domestic reverse charge scenario. The applicability threshold can be set up per item group. The functionality is available to Great Britain only.
-
-You can configure reverse charge applicability rules per document type (purchase/sales order, vendor invoice, free text invoice, etc.) and a reverse charge group that combines items, items groups, and purchase/sales categories. The applicability rules are date effective. You can also mark individual sales tax codes in sales tax groups as applicable for reverse charge. The sales invoice report is adjusted to represent details of the applied reverse charge. The functionality is available to all European countries/regions.
-
-This change unifies the configuration of the reverse charge applicability rules and supports the adoption of the domestic reverse charge regulations by European countries/regions.
-
-(DE) Generate the German audit file - GDPdUGoBD
-
-Users can set up definition of tables containing financial data to be exported in a format accepted by German auditors and authorities.
-
-The feature has been implemented as an electronic reporting configuration. [A separate article](financials/localizations/europe/gdpdu-audit-data-export.md) describes it in more detail. The functionality is available to Germany and Austria.
-
-This change gives user much more possibilities in data formatting, transformations, and also provides all the benefits coming from electronic reporting configuration lifecycle management, like easy configuration exchange, versioning, etc.
-
-(FR) Balance list with group total accounts report.
-
-Balance list with group total accounts report is implemented as SSRS report (LedgerAccountSum\_FR).
-
-Balance list with group total accounts report is implemented as Management Reporter report available in LCS Asset library localized financial reports folder.
-
-This allows users to get all the benefits and freedom in customizations from using financial reports in Management Reporter.
-
-(EU) Payment advice, Attending note and Control reports for payments.
-
-All those reports are implemented and SSRS reports.
-
-These reports have been implemented as Open XML templates to be used in Microsoft Excel.
-
-Electronic payment configurations contain payment file format setup and templates. This allows users to get all the benefits and freedom in report customizations from using Electronic reporting.
-
-(EU) Configure rounding settings for Intrastat.
-
-Rounding settings for the Intrastat reporting for various countries/regions are hard-coded in X++ or in Extensible Stylesheet Language Transformations (XSLTs).
-
-Rounding settings are added to foreign trade parameters. You can configure rounding precision, rounding method, output precision, and the behavior for amounts smaller than the rounding precision.
-
-This unifies and simplifies the configuration of the Intrastat reporting. Adjustment of rounding settings no longer requires development efforts.
-
-(EU) Set up Intrastat commodity codes in category hierarchies.
-
-Intrastat commodity codes is a separate list. While there is category hierarchy of type Commodity code, these commodity codes could be defaulted in Retail HQent and sales categories.
-
-Separate list of Intrastat commodity codes are merged with product hierarchy of type Commodity code
-
-This unifies the approach for assigning commodity codes to released products and categories in sales and purchase documents.
-
-(EU) Report quantity in additional units for Intrastat by using unit conversion setting.
-
-Intrastat commodity code has a text field to identify additional units, and the** Product** card has a field to identify the quantity of additional units in kilograms.
-
-Additional units for Intrastat commodity code is chosen from the list of Units. The quantity of additional units is calculated through unit conversion settings.
-
-This unifies the approach for recalculation from units of transaction to additional units.
-
-(EU) Assign default transport method to mode of delivery.
-
-Not available
-
-A field for default transport method is added to the Mode of delivery.
-
-This simplifies the preparation of Intrastat reporting.
-
-(EU) Mark released product not to be reported in Intrastat.
-
-Not available
-
-An option to exclude the item from Intrastat reporting is added to released product.
-
-This simplifies the preparation of Intrastat reporting.
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>What can you do?</strong></td>
+<td><strong>Dynamics AX 2012</strong></td>
+<td><strong>Dynamics AX 7.0</strong></td>
+<td><strong>Why is this important?</strong></td>
+</tr>
+<tr class="even">
+<td>Configure and generate electronic documents to meet the legal requirements in various countries/regions.</td>
+<td>Electronic documents are hard-coded in X++ or as Extensible Stylesheet Language Transformations (XSLTs). Any format adjustments require development efforts. Access to data and formatting aren't isolated. An adjusted format deployment requires a new Microsoft Dynamics AX hotfix package that overrides the existing format. Custom modifications of each format must be manually ported to the source code of a new Microsoft Dynamics AX hotfix package.</td>
+<td>Electronic Reporting (ER) is a new tool for configuring and generating electronic documents that target a business user instead of a developer. ER lets you set up data models that are domain-specific and independent of the Microsoft Dynamics AX database as data sources for document formats. A business user can configure the formats, based on these domain-specific data models (for example, for payments, Intrastat reports, or tax reports). The user configures the formats by using simple visual tools that are similar to Excel. ER currently supports the generation of electronic documents in text, XML, and Excel formats. These documents can be generated simultaneously and packed into zip files. Data models and formats support versioning. Format versions can have effective periods. Each data model or format version is stored in a separate configuration and distributed to partners and customers through LCS. Partners and customers can customize Microsoft data models and formats, or create their own. ER saves partner and customer configuration changes as deltas to Microsoft configurations, which simplifies upgrades to new versions of Microsoft configurations. By using LCS, partners can also share their data model and format configurations with other partners and customers, who can customize and share them. Delta customization and easy upgrade are supported through the whole customization chain.</td>
+<td>ER simplifies the creation, maintenance, and upgrade of electronic document formats to meet legal requirements in various countries/regions. ER makes the process of creating or changing electronic document formats faster and easier. These changes can be made by business users instead of developers. ER makes it faster and easier for partners and customers to upgrade their format customizations to new versions of formats that are released by Microsoft or other partners. ER provides one common way (through LCS) for Microsoft and partners to distribute electronic document configurations to other partners and customers. ER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements.</td>
+</tr>
+<tr class="odd">
+<td>(MEX) Generate Mexican value-added tax (VAT) regulatory reports.</td>
+<td>You must generate **Sales and Purchases VAT** reports by using the unrealized VAT functionality, so that users can identify transactions that belong to the realized and unrealized sections based on the status.</td>
+<td>**Sales and Purchases VAT** reports were modified and now consider the conditional tax feature only by using specific settlement periods for the definition of unrealized and realized sales tax codes.</td>
+<td>Changes in the configuration of sales tax codes are required before users can generate these reports correctly. A conditional sales tax feature is required, and the user must configure separate settlement periods, unrealized and realized, to identify the transactions in the related section areas.</td>
+</tr>
+<tr class="even">
+<td>(JPN) Manage the Japanese fixed asset accelerated depreciation declaration document.</td>
+<td>Not available</td>
+<td>Important declaration information is centrally stored in a single document for better maintenance.</td>
+<td>Document compliance and ease of management help reduce issues during audits and other reviews.</td>
+</tr>
+<tr class="odd">
+<td>(JPN) Verify JBA characters on the bank account.</td>
+<td>Not available</td>
+<td>You can verify that kana name fields contain only the characters that are permitted by the JBA bank format.</td>
+<td>It helps reduce interruptions to users during payment file generation because of invalid characters.</td>
+</tr>
+<tr class="even">
+<td>(JPN) Catch up the Japan fixed asset penny difference at the end of the fiscal year.</td>
+<td>Not available</td>
+<td>On the **Fixed asset parameters** page, you can choose to catch up at the end of the fiscal period or the fiscal year.</td>
+<td>It provides more flexibility to match local practices.</td>
+</tr>
+<tr class="odd">
+<td>(JPN) Generate the Japanese Corporate Tax Declaration Appended Tables 16 series at a summarized amount by fixed asset major type.</td>
+<td>Not available</td>
+<td>On the value models of a fixed asset, you can choose to summarize by major type. By default, this functionality is used for newly created fixed assets.</td>
+<td>For large corporations that have thousands of fixed assets, the summarized reports greatly reduce the size of the report that is generated.</td>
+</tr>
+<tr class="even">
+<td>(JPN) Start to allocate Special depreciation reserve from the next fiscal year for Japan fixed assets.</td>
+<td>Not available</td>
+<td>On the value models of a fixed asset that has an appropriate extraordinary depreciation profile, you can choose to start allocation from the next fiscal period or the next fiscal year.</td>
+<td>It provides more flexibility to match local practices.</td>
+</tr>
+<tr class="odd">
+<td>(JPN) Generate a Japan consumption tax report that includes the revised tax rates.</td>
+<td>The consumption tax report is available for a tax rate of 5 percent.</td>
+<td>The consumption tax report contains a section for the revised tax rate (for example, 8 percent).</td>
+<td>The layout was newly announced by the government.</td>
+</tr>
+<tr class="even">
+<td>(EU) Configure rounding settings for EU sales list.</td>
+<td>Rounding settings for the EU sales list reporting for various countries/regions are hard-coded in X++ or in Extensible Stylesheet Language Transformations (XSLTs).</td>
+<td>Rounding settings are added to Foreign trade parameters. You can configure rounding precision, rounding method, output precision, and the behavior for amounts smaller than the rounding precision.</td>
+<td>This unifies and simplifies the configuration of the EU sales list reporting. Adjustment of rounding settings no longer requires development efforts.</td>
+</tr>
+<tr class="odd">
+<td>(EU) Configure reverse charge applicability rules.</td>
+<td>Reverse charge applicability rules are hard-coded for the domestic reverse charge scenario. The applicability threshold can be set up per item group. The functionality is available to Great Britain only.</td>
+<td>You can configure reverse charge applicability rules per document type (purchase/sales order, vendor invoice, free text invoice, etc.) and a reverse charge group that combines items, items groups, and purchase/sales categories. The applicability rules are date effective. You can also mark individual sales tax codes in sales tax groups as applicable for reverse charge. The sales invoice report is adjusted to represent details of the applied reverse charge. The functionality is available to all European countries/regions.</td>
+<td>This change unifies the configuration of the reverse charge applicability rules and supports the adoption of the domestic reverse charge regulations by European countries/regions.</td>
+</tr>
+<tr class="even">
+<td>(DE) Generate the German audit file - GDPdUGoBD</td>
+<td>Users can set up definition of tables containing financial data to be exported in a format accepted by German auditors and authorities.</td>
+<td>The feature has been implemented as an electronic reporting configuration. [A separate article](financials/localizations/europe/gdpdu-audit-data-export) describes it in more detail. The functionality is available to Germany and Austria.</td>
+<td>This change gives user much more possibilities in data formatting, transformations, and also provides all the benefits coming from electronic reporting configuration lifecycle management, like easy configuration exchange, versioning, etc.</td>
+</tr>
+<tr class="odd">
+<td>(FR) Balance list with group total accounts report.</td>
+<td>Balance list with group total accounts report is implemented as SSRS report (LedgerAccountSum\_FR).</td>
+<td>Balance list with group total accounts report is implemented as Management Reporter report available in LCS Asset library localized financial reports folder.</td>
+<td>This allows users to get all the benefits and freedom in customizations from using financial reports in Management Reporter.</td>
+</tr>
+<tr class="even">
+<td>(EU) Payment advice, Attending note and Control reports for payments.</td>
+<td>All those reports are implemented and SSRS reports.</td>
+<td>These reports have been implemented as Open XML templates to be used in Microsoft Excel.</td>
+<td>Electronic payment configurations contain payment file format setup and templates. This allows users to get all the benefits and freedom in report customizations from using Electronic reporting.</td>
+</tr>
+<tr class="odd">
+<td>(EU) Configure rounding settings for Intrastat.</td>
+<td>Rounding settings for the Intrastat reporting for various countries/regions are hard-coded in X++ or in Extensible Stylesheet Language Transformations (XSLTs).</td>
+<td>Rounding settings are added to foreign trade parameters. You can configure rounding precision, rounding method, output precision, and the behavior for amounts smaller than the rounding precision.</td>
+<td>This unifies and simplifies the configuration of the Intrastat reporting. Adjustment of rounding settings no longer requires development efforts.</td>
+</tr>
+<tr class="even">
+<td>(EU) Set up Intrastat commodity codes in category hierarchies.</td>
+<td>Intrastat commodity codes is a separate list. While there is category hierarchy of type Commodity code, these commodity codes could be defaulted in Retail HQent and sales categories.</td>
+<td>Separate list of Intrastat commodity codes are merged with product hierarchy of type Commodity code.</td>
+<td>This unifies the approach for assigning commodity codes to released products and categories in sales and purchase documents.</td>
+</tr>
+<tr class="odd">
+<td>(EU) Report quantity in additional units for Intrastat by using unit conversion setting.</td>
+<td>Intrastat commodity code has a text field to identify additional units, and the** Product** card has a field to identify the quantity of additional units in kilograms.</td>
+<td>Additional units for Intrastat commodity code is chosen from the list of Units. The quantity of additional units is calculated through unit conversion settings.</td>
+<td>This unifies the approach for recalculation from units of transaction to additional units.</td>
+</tr>
+<tr class="even">
+<td>(EU) Assign default transport method to mode of delivery.</td>
+<td>Not available</td>
+<td>A field for default transport method is added to the Mode of delivery.</td>
+<td>This simplifies the preparation of Intrastat reporting.</td>
+</tr>
+<tr class="odd">
+<td>(EU) Mark released product not to be reported in Intrastat.</td>
+<td>Not available</td>
+<td>An option to exclude the item from Intrastat reporting is added to released product.</td>
+<td>This simplifies the preparation of Intrastat reporting.</td>
+</tr>
+</tbody>
+</table>
 
 ## Manufacturing
 |                                                                                                                                                      |                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                       |
