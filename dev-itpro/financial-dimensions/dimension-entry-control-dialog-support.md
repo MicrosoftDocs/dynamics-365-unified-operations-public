@@ -58,7 +58,7 @@ For the second parameter on `addToDialog`, choose the controller class that sati
 See also
 --------
 
-[Dimension Entry control migration walkthrough](dimension-entity-control-migration.md)
+[Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 
-[Dimension Entry control uptake](dimension-entity-control-uptake)
+[Dimension Entry control uptake](dimension-entry-control-uptake)
 
