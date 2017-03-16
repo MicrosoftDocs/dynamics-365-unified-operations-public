@@ -14,6 +14,8 @@ The developer experience is based on modern tooling using Visual Studio and .NET
 -	You can leverage the browser-based client and design patterns for forms to provide an improved end-user experience.
 -	The Application Lifecycle Model (ALM) supports build automation, test automation, and deployment of models to the cloud.
 
+For more information, see [Developer home page](dev-tools/developer-home-page.md).
+
 # BI & reporting
 
 # Mobile apps
@@ -24,4 +26,4 @@ The Microsoft Dynamics 365 for Operations mobile app empowers your organization
 + IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don’t have constant network connectivity. 
 
 # Integration and data entities
-Data from Dynamics 365 for Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, check out XXX
+Data from Dynamics 365 for Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities](data-entities\data-entities.md).
