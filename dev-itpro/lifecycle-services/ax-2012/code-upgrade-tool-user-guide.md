@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Code Upgrade Tool User Guide (AX 2012)
+title: Code Upgrade Tool User Guide
 description: 
 author: kfend
 manager: AnnBe

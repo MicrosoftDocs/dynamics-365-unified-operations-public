@@ -1571,11 +1571,11 @@ Because this method only calls the **validate()** method on the control and does
 See also
 --------
 
-[Segmented Entry control dialog support](https://ax.help.dynamics.com/en/?p=145221)
+[Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)
 
-[Segmented Entry control Metadata Specification](https://ax.help.dynamics.com/en/?p=145441)
+[Segmented Entry control Metadata Specification](segmented-entry-control-metadata-specification.md)
 
-[Segmented Entry control Parm method Specification](https://ax.help.dynamics.com/en/?p=154321)
+[Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control - Migration guidance](https://ax.help.dynamics.com/en/?p=121441)
+[Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
 

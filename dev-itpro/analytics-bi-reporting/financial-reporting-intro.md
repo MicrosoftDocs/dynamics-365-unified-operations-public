@@ -93,10 +93,7 @@ For more information, see the â€œInteractive components and navigation featuresâ
 </tbody>
 </table>
 
+#See also
 
-
-See also
---------
-
-[Generate a financial report](generate-financial-report.md)
+[Generate a financial report](\financials\general-ledger\generate-financial-report.md)
 

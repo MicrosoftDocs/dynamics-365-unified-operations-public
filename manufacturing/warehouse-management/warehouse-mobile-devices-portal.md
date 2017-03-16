@@ -80,7 +80,7 @@ To retrieve and install a certificate on your Warehouse Mobile Device Portal hos
 To enable the Warehouse Mobile Devices Portal application to interact with a particular Dynamics 365 for Operations server, you need to complete the following configuration steps after installation:
 
 1.  Register a native application in Azure Active Directory for the Operations tenant. This application should have access to Microsoft Dynamics ERP.
-    1.  Read the following guide to learn about Dynamics 365 for Operations custom service authentication: the Custom services section in the [Dynamics 365 for Operations Services Technical Concepts Guide](services-home-page.md).
+    1.  Read the following guide to learn about Dynamics 365 for Operations custom service authentication: the Custom services section in the [Dynamics 365 for Operations Services Technical Concepts Guide](/dev-itpro/data-entities/services-home-page).
     2.  Follow the steps for “Register a Native Application with AAD”.
     3.  You have now obtained **Client ID** of the application.
 
@@ -138,7 +138,7 @@ If you see the **Select company** screen, you will connect to Dynamics 365 for O
 ## Servicing the Warehouse Mobile Devices Portal
 Since Warehouse Mobile Devices Portal is released as a standalone component, you need to manually apply hotfixes when they are available. When a hotfix is available, a new instance of the WMDP is deployed side-by-side with the old one. After it has been properly configured and tested, the administrator can retire the old version and make the new, updated version the live version. This hot-swapping servicing model allows minimization of downtime caused by the configuration and testing of the updated environment. To apply a hotfix:
 
-1.  After a new update to the Warehouse Mobile Devices Portal is available on your LCS portal, it can be downloaded to your local environment. Follow this tutorial to retrieve the hotfix: [Download hotfixes from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/servicing/download-hotfix-lcs)
+1.  After a new update to the Warehouse Mobile Devices Portal is available on your LCS portal, it can be downloaded to your local environment. Follow this tutorial to retrieve the hotfix: [Download hotfixes from Lifecycle Services](/dev-itpro/servicing/download-hotfix-lcs)
 2.  The hotfix package will be available as a zip file. If you unpack it, you should be able to find patched version of WarehouseMobileDevicesPortal.msi within SCMSelfService\\Packages.
 3.  Follow the “Install the Warehouse Mobile Devices Portal” section in this document to install another instance of WMDP on your server machine, under a different TCP port than the original instance. Let’s call this instance **patched WMDP** and the original instance **old WMDP instance**. As a good security practice, you should consider using a TCP port that is not exposed through your firewall to the production network, as it is still under configuration.
 4.  Follow the “Configure the Warehouse Mobile Devices Portal web application” section for configuring the **patched WMDP**.

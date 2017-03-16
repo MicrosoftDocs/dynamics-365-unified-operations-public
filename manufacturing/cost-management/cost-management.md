@@ -88,8 +88,4 @@ Cost management walkthrough
 -   [Costing versions](costing-versions.md)
 -   [Simulate cost changes by using a costing version for planned costs](simulate-cost-changes-costing-version-planned-costs.md)
 
-## Additional resources
--   Additional help is available as task guides inside Microsoft Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires CustomerSource account).
-
 

@@ -74,6 +74,7 @@ This information appears in the following areas in the column definition:
 
 -   The headers area of the column definition contains the heading text and formatting that appears in the report. A header can apply to a single column of data, can span multiple columns, or can apply to columns on a conditional basis. The column definition can include as many column header rows as you require. **Note:** Column headers apply to each column of data on the report. Report headers apply to the whole report. You define report headers on the **Headers and Footers** tab of the report definition.
 -   Column detail rows are the rows under the header rows in the column definition. Column detail rows define the information that is included on the report. The following table lists and describes the column detail rows.
+
     | Column detail row name                                                | Description                                                                                            |
     |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
     | Column Type                                                           | (Required) Specify the type of data in the column.                                                     |

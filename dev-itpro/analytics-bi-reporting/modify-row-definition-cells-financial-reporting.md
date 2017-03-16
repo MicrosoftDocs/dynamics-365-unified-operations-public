@@ -34,8 +34,7 @@ ms.dyn365.ops.version:
 
 This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information. 
 
-Specify a row code in a row definition
---------------------------------------
+# Specify a row code in a row definition
 
 In row definitions, the numbers or labels in the **Row Code** cell identify each line in the row definition. You can specify the row code to refer to data in calculations and totals.
 
@@ -93,8 +92,8 @@ The **Format Code** cell offers a selection of preformatted choices for the cont
 1.  In Report Designer, click **Row Definitions**, and then select a row definition to modify.
 2.  Double-click the **Format Code** cell.
 3.  Select a format code in the list. The following table describes the format codes and their actions.
-    | Format code                   | Interpretation of the  format code | Action                                                                                                                                                                                                         |
-    |-------------------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | Format code                   | Interpretation of the  format code | Action|
+    |---|---|---|
     | (None)                        |                                    | Clears the **Format Code** cell.                                                                                                                                                                               |
     | TOT                           | Total                              | Identifies a row that uses mathematical operators in the **Related Formulas/Rows/Units** column. Totals contain simple operators, such as **+** or **-**.                                                      |
     | CAL                           | Calculation                        | Identifies a row that uses mathematical operators in the **Related Formulas/Rows/Units** column. Calculations contain complex operators, such as **+**, **-**, **\***, **/**, and **IF/THEN/ELSE** statements. |

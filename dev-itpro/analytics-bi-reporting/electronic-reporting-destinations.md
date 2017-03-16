@@ -45,7 +45,17 @@ The ER destinations functionality isn't available in the Microsoft Dynamics AX 7
 You can set up destinations only for ER configurations that have been imported, and for the formats that are available on the **Electronic reporting configurations** page.
 
 ## Overview
-The ER destination management functionality is available at **Organization administration** &gt; **Electronic reporting**. Here, you can override the default behavior for a configuration. Imported configurations aren't shown here until you click **New** and then, in the **Reference** field, select a configuration to create destination settings for. \[caption id="attachment\_1657074" align="alignnone" width="640"\][![Selecting a configuration in the Reference field](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg) ER destinations\[/caption\] After you've created a reference, you can create a file destination for each folder, or for a file. \[caption id="attachment\_1657084" align="alignnone" width="640"\][![Creating a file destination](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg) ER file destinations\[/caption\] **Note:** You can create one file destination for each output component of the same format, such as a folder or a file that is selected in the **File Name** field. You can then enable and disable individual destinations for the file destination in the **Destination settings** dialog box. The **Settings** button is used to control all the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it. \[caption id="attachment\_1657124" align="alignnone" width="640"\][![Destination settings dialog box](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg) ER destination settings\[/caption\]
+The ER destination management functionality is available at **Organization administration** &gt; **Electronic reporting**. Here, you can override the default behavior for a configuration. Imported configurations aren't shown here until you click **New** and then, in the **Reference** field, select a configuration to create destination settings for.
+
+[![Selecting a configuration in the Reference field](./media/ger-destinations-2-1611-1024x574.jpg)](./media/ger-destinations-2-1611.jpg) 
+
+After you've created a reference, you can create a file destination for each folder, or for a file. 
+
+[![Creating a file destination](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
+
+**Note:** You can create one file destination for each output component of the same format, such as a folder or a file that is selected in the **File Name** field. You can then enable and disable individual destinations for the file destination in the **Destination settings** dialog box. The **Settings** button is used to control all the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it.
+
+[![Destination settings dialog box](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
 ## Destination types
 Various types of destinations are supported. You can disable or enable all types at the same time. In this way, you can either do nothing or send the component to all configured destinations. The following sections describe the destinations that are supported.
@@ -56,23 +66,45 @@ Set **Enabled** to **Yes** to send an output file by email. After this option is
 
 ### Email address types
 
-When you click **Edit** for the **To** or **Cc** field, the **Email to** dialog box appears. You can then select the type of email address to use. \[caption id="attachment\_1657134" align="alignnone" width="640"\][![Email to dialog box](./media/ger-destinations-email-1-1611-1024x588.jpg)](./media/ger-destinations-email-1-1611.jpg) Selecting the email type\[/caption\]
+When you click **Edit** for the **To** or **Cc** field, the **Email to** dialog box appears. You can then select the type of email address to use.
+
+[![Email to dialog box](./media/ger-destinations-email-1-1611-1024x588.jpg)](./media/ger-destinations-email-1-1611.jpg)
 
 #### Print management
 
-If you select the **Print Management email** type, you can enter fixed email addresses in the **To** field. To use email addresses that aren't fixed, you must select the email source type for a file destination. The following values are supported: **Customer**, **Vendor**, **Prospect**, **Contact**, **Competitor**, **Worker**, **Applicant**, **Prospective vendor**, and **Disallowed vendor**. After you select an email source type, use the button next to the **Email source account** field to open the **Formula designer **form. You can use this form to attach a formula that represents the selected party account to the email destination. \[caption id="attachment\_1657144" align="alignnone" width="640"\][![Configure print management email type](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) Print Management email type\[/caption\] Note that formulas are specific to the ER configuration. In the **Formula** field, enter a document-specific reference to a customer or vendor party type. Instead of typing, you can find the data source node that represents the customer or vendor account, and then click **Add data source** to update the formula. For example, if you use the ISO 20022 Credit Transfer configuration, the node that represents a vendor account is **'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID**. Otherwise, enter any string value, such as **DE-001**, to save a formula. \[caption id="attachment\_888993" align="alignnone" width="640"\][![Formula designer](./media/ger_formuladesignerfordestination-1024x541.jpg)](./media/ger_formuladesignerfordestination.jpg) Destination formula designer – Vendor representation in the ISO 20022 Credit Transfer configuration\[/caption\] In the **Email to** dialog box, click the recycle bin next to the **Email source account** field to permanently delete the formula for the email source account. Alternatively, open the formula designer to change a formula that was previously saved. To assign email addresses, click **Edit** to open the **Assign email addresses** dialog box. \[caption id="attachment\_1657154" align="alignnone" width="640"\][![Assigning email addresses for an email destination](./media/ger-destinations-email-3-1611-1024x587.jpg)](./media/ger-destinations-email-3-1611.jpg) Assigning email addresses for an email ER destination\[/caption\]
+If you select the **Print Management email** type, you can enter fixed email addresses in the **To** field. To use email addresses that aren't fixed, you must select the email source type for a file destination. The following values are supported: **Customer**, **Vendor**, **Prospect**, **Contact**, **Competitor**, **Worker**, **Applicant**, **Prospective vendor**, and **Disallowed vendor**. After you select an email source type, use the button next to the **Email source account** field to open the **Formula designer **form. You can use this form to attach a formula that represents the selected party account to the email destination.
+
+[![Configure print management email type](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
+
+Note that formulas are specific to the ER configuration. In the **Formula** field, enter a document-specific reference to a customer or vendor party type. Instead of typing, you can find the data source node that represents the customer or vendor account, and then click **Add data source** to update the formula. For example, if you use the ISO 20022 Credit Transfer configuration, the node that represents a vendor account is **'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID**. Otherwise, enter any string value, such as **DE-001**, to save a formula.
+
+[![Formula designer](./media/ger_formuladesignerfordestination-1024x541.jpg)](./media/ger_formuladesignerfordestination.jpg)
+
+In the **Email to** dialog box, click the recycle bin next to the **Email source account** field to permanently delete the formula for the email source account. Alternatively, open the formula designer to change a formula that was previously saved. To assign email addresses, click **Edit** to open the **Assign email addresses** dialog box.
+
+[![Assigning email addresses for an email destination](./media/ger-destinations-email-3-1611-1024x587.jpg)](./media/ger-destinations-email-3-1611.jpg)
 
 #### Configuration email
 
-Use this email type if the configuration that you use has a node in the data sources that represents an email address. You can use data sources and functions in the formula designer to get a correctly formatted email address. \[caption id="attachment\_1657164" align="alignnone" width="640"\][![Assigning an email address data source for an email destination](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) Assigning an email address data source for an email ER destination\[/caption\] **Note:** A Simple Mail Transfer Protocol (SMTP) server must be configured and available. You can specify your SMTP server in Dynamics 365 for Operations, at **System administration** &gt; **Setup** &gt; **Email** &gt; **Email parameters**.
+Use this email type if the configuration that you use has a node in the data sources that represents an email address. You can use data sources and functions in the formula designer to get a correctly formatted email address.
+
+[![Assigning an email address data source for an email destination](./media/ger-destinations-email-4-1611-1024x587.jpg)](./media/ger-destinations-email-4-1611.jpg) 
+
+**Note:** A Simple Mail Transfer Protocol (SMTP) server must be configured and available. You can specify your SMTP server in Dynamics 365 for Operations, at **System administration** &gt; **Setup** &gt; **Email** &gt; **Email parameters**.
 
 ### Archive destination
 
-You can use this option to send output to either a Microsoft SharePoint folder or Microsoft Azure Storage. Set **Enabled** to **Yes** to send output to a destination that is defined by the selected document type. Only document types where the group is set to **File** are available for selection. You define document types at **Organization administration** &gt; **Document management** &gt; **Document types**. The configuration for ER destinations is the same as the configuration for the document management system. \[caption id="attachment\_888823" align="alignnone" width="640"\][![Document types page](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) Document type – Group and location fields\[/caption\] The location determines where the file is saved. After the **Archive** destination is enabled, the results of configuration execution can be saved in the Job archive. You can view the results at **Organization administration** &gt; **Electronic reporting** &gt; **Electronic reporting archived jobs**. **Note:** You can select a document type for the Job archive in Dynamics 365 for Operations, at **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Electronic reporting parameters**.
+You can use this option to send output to either a Microsoft SharePoint folder or Microsoft Azure Storage. Set **Enabled** to **Yes** to send output to a destination that is defined by the selected document type. Only document types where the group is set to **File** are available for selection. You define document types at **Organization administration** &gt; **Document management** &gt; **Document types**. The configuration for ER destinations is the same as the configuration for the document management system.
+
+[![Document types page](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
+
+The location determines where the file is saved. After the **Archive** destination is enabled, the results of configuration execution can be saved in the Job archive. You can view the results at **Organization administration** &gt; **Electronic reporting** &gt; **Electronic reporting archived jobs**. **Note:** You can select a document type for the Job archive in Dynamics 365 for Operations, at **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Electronic reporting parameters**.
 
 #### SharePoint
 
-You can save a file in a designated SharePoint folder. You define the default SharePoint server at **Organization administration** &gt; **Document management** &gt; **Document management parameters**, on the **SharePoint** tab. After the SharePoint folder is configured, you can select it as the folder where the ER output will be saved for the document type. \[caption id="attachment\_888833" align="alignnone" width="640"\][![Selecting a SharePoint folder](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) Document type – SharePoint folder selection\[/caption\]
+You can save a file in a designated SharePoint folder. You define the default SharePoint server at **Organization administration** &gt; **Document management** &gt; **Document management parameters**, on the **SharePoint** tab. After the SharePoint folder is configured, you can select it as the folder where the ER output will be saved for the document type. 
+
+[![Selecting a SharePoint folder](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg) 
 
 #### Azure Storage
 
@@ -123,8 +155,7 @@ The formula is specific to the ER configuration. For example, if you use the ISO
 
 The prerequisite is that your format must be available in the ER configurations. If you have your format, open the **Electronic reporting destination** page, and create a new reference to this configuration. You must then have four file destinations, one for each output component. Create the first file destination, give it a name such as **Folder**, and select a file name that represents a folder in your configuration. Then click **Settings**, and make sure that all the destinations are disabled. For this file destination, the folder won't be created. By default, because of hierarchical dependencies between files and parent folders, the files will behave in the same way. In other words, they won't be sent anywhere. To override that default behavior, you must create three more file destinations, one for each file. In the destination settings for each, you must enable the destination that the file should be sent to.
 
-See also
---------
+# See also
 
 [Electronic reporting overview](general-electronic-reporting.md)
 

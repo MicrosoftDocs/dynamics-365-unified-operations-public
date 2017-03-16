@@ -113,7 +113,7 @@ There are a few changes to X++ that require corresponding changes in legacy cust
 See also
 --------
 
-[Dynamics AX LINQ Provider for use in C#](https://ax.help.dynamics.com/en/?p=185911)
+[Dynamics AX LINQ Provider for use in C#](linq-provider-c.md)
 
 [Technical Concepts Guide](developer-home-page.md)
 

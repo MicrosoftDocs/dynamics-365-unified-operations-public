@@ -37,7 +37,7 @@ This topic provides links to topics about extensibility with Microsoft Dynamics 
 The development approach for Dynamics 365 for Operations focuses more on extending the application than on overlayering elements to customize application flows.
 
 -   [Customize model elements using extensions (tutorial)](customize-model-elements-extensions.md)
--   [Customization: overlayering and extensions](..\dev-tools\..\dev-tools\customization-overlayering-extensions.md)
+-   [Customization: overlayering and extensions](..\dev-tools\customization-overlayering-extensions.md)
 -   [Class extensions](class-extensions.md)
 -   [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)
 
@@ -50,8 +50,6 @@ The development approach for Dynamics 365 for Operations focuses more on extendi
 -   [Extension methods](https://blogs.msdn.microsoft.com/mfp/2015/12/15/x-in-ax7-extension-methods/)
 -   [Extensible base enumerations](http://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
 
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 
 

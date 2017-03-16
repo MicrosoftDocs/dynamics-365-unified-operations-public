@@ -208,7 +208,7 @@ For general information about setting up sales tax codes, see [Set up sales tax
 <td>Sum of <strong>Tax base amounts</strong> of the tax transactions which satisfy the following conditions:
 <ul>
 <li>Transaction date is in the selected period.</li>
-<li><strong>Tax direction</strong> is <strong>Use tax</strong>.</li>
+e<li><strong>Tax direction</strong> is <strong>Use tax</strong>.</li>
 <li>The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</li>
 </ul></td>
 </tr>
@@ -218,7 +218,7 @@ For general information about setting up sales tax codes, see [Set up sales tax
 <ul>
 <li>Transaction date is in the selected period.</li>
 <li>Tax direction is <strong>Use tax</strong>.</li>
-<li>The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</li>
+d<li>The transaction <strong>Tax base amount</strong> or <strong>Tax amount</strong> &lt; 0.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -251,9 +251,9 @@ For general information about setting up sales tax codes, see [Set up sales tax
 
 You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code. For additional information:
 
--   [Electronic reporting overview](general-electronic-reporting.md)
--   [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
--   [Localization requirements – Create a GER configuration](localization-requirements-electronic-reporting-configuration.md)
+-   [Electronic reporting overview](/dev-tools/analytics-bi-reporting/general-electronic-reporting)
+-   [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
+-   [Localization requirements – Create a GER configuration](/dev-tools/analytics-bi-reporting/localization-requirements-electronic-reporting-configuration)
 
 ## Countryspecific resources for VAT statements
 The VAT statement for each country must meet the requirements of the country’s legislation. There are predefined general models and formats of VAT statements for the countries listed in the following table.

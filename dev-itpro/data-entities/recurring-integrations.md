@@ -54,7 +54,7 @@ The integration REST API uses the same OAuth 2.0 authentication model as the oth
 2.  Click the **Import or Export** tile to create a new data project. **Note:** If you have an existing data project, click **Load project** on any data project card on the **Data projects** tab.
 3.  Enter a valid job name, data source, and entity name.
 4.  Upload a data file for one or more entities. Make sure that each entity is added, and that no errors occur. **Note:** You can click each entity data card to set up, review, or modify field maps, and to set up XSLT-based transforms that must be applied to inbound data. For export data projects, the entity card also shows a filter link, so that you can set up filters to filter out data. Currently, all recurring data jobs in a data project use the same filter.
-5.  Click **[Save](https://ax.help.dynamics.com/wp-admin/post.php?post=265921&action=edit)**.
+5.  Click **Save**.
 
 ### Create a recurring data job
 

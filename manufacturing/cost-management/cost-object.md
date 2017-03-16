@@ -79,7 +79,7 @@ See also
 
 [Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[What's new or changed in Microsoft Dynamics AX](whats-new-changed.md)
+[What's new or changed in Microsoft Dynamics AX](/dev-itpro/get-started/whats-new-changed)
 
 [Cost entries](cost-entries.md)
 

@@ -102,7 +102,7 @@ The Inventory management module contains basic warehousing capabilities that ena
 -   [Merging inventory batches](merge-inventory-batches.md)
 
 ## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
+
 -   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account).
 
 

@@ -184,5 +184,5 @@ Some of the most frequently used templates are the journal templates. Some of t
 See also
 --------
 
-[Create Open in Excel experiences](office-integration-edit-excel.md)
+[Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
 

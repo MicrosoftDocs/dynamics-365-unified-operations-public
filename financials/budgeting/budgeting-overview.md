@@ -59,8 +59,6 @@ For information about how to bring planning data from other modules into budget
 ## User interface and reporting capabilities
 In Dynamics 365 for Operations, users can create budget plans either directly in the Dynamics 365 for Operations client (by using a configurable budget plan document page) or through Excel. Excel provides several additional capabilities. For example, you can use external data as a source for a budget plan, do custom calculations, and use Microsoft PivotTable and charts. Most of the variables in the budget planning process can be configured. For example, you can define who does budgeting, what is budgeted, and what the process looks like. Although you can use Excel for budget planning, Dynamics 365 for Operations is kept as a single source of truth and helps prevent budget control issues. Periodic processes can be used to bring initial data for budgeting into the budget plan. For reporting, Dynamics 365 for Operations offers a set of standard inquiry pages that let you view and analyze budgeting data. Budget plan data can be accessed through Management Reporter, and separate budget plan scenarios can be displayed as columns on the Management Reporter report.
 
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account).
+
 
 
