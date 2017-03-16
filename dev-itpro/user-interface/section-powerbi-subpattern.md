@@ -68,7 +68,7 @@ Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 ### Related articles
 
 -   [Configuring PowerBI integration for workspaces](..\analytics-bi-reporting\configure-power-bi-integration.md)
--   [Power BI Integration in Dynamics AX](power-bi-integration.md)
+-   [Power BI Integration in Dynamics AX](..\analytics-bi-reporting\power-bi-integration.md)
 
 ### Frequently asked questions
 

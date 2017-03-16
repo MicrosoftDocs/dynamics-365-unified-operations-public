@@ -122,10 +122,5 @@ Here are some helpful links that are related to entities and building Power BI c
 -   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
-
-
-See also
---------
-
-[Setting up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md)
+-   [Setting up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md)
 

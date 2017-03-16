@@ -234,5 +234,5 @@ The following sections list help topics by country/region.
 -   [Year-end 1099 reporting](/financials/localizations/north-america/year-end-1099-reporting)
 -   [Form I-9 verification](/hr/localizations/north-america/form-i-9-verification)
 -   [Payroll](/hr/localizations/north-america/payroll)
-    -   [Tax codes, tax groups, and posting definitions FAQ](/financials/localizations/north-america/tax-codes-tax-groups-posting-definitions)
+    -   [Tax codes, tax groups, and posting definitions FAQ](/financials/localizations/north-america/tax-codes-tax-groups-definitions)
     

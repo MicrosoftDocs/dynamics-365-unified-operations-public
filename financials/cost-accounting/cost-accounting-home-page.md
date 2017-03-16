@@ -65,9 +65,7 @@ The "Get started with Cost Accounting" white paper provides the basic steps to 
 
 -   [Get started with Cost accounting](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (white paper and requires a CustomerSource account)
 
-## Additional resources
--   Additional help is available as task guides inside Microsoft Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires CustomerSource account).
+
 
 
 
