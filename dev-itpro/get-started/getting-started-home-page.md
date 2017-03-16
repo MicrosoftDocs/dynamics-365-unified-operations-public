@@ -39,12 +39,12 @@ Onboarding
 
 The following resources provide an overview of the Lifecycle Services and how to work with your partner to get onboarded to Dynamics 365 for Operations. 
 
-[Microsoft FastTrack for Dynamics 365 overview](/core/get-started/fasttrack-dynamics-365-overview) 
-[Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](../lifecycle-services/lcs-works-lcs.md) 
-[Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations partners](../lifecycle-services/getting-started-lcs.md) 
-[Sign up for a subscription](..dev-tools/sign-up-preview-subscription.md) 
-[Microsoft Dynamics Lifecycle Services User Guide](../lifecycle-services/lcs-user-guide.md) 
-[How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](../deployment/csp-download-customersource.md)
+- [Microsoft FastTrack for Dynamics 365 overview](/core/get-started/fasttrack-dynamics-365-overview) 
+- [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](../lifecycle-services/lcs-works-lcs.md) 
+- [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations partners](../lifecycle-services/getting-started-lcs.md) 
+- [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md) 
+- [Microsoft Dynamics Lifecycle Services User Guide](../lifecycle-services/lcs-user-guide.md) 
+- [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](../deployment/csp-download-customersource.md)
 
 ## User interface
 The following resources provide information about the Dynamics 365 for Operations user experience. For example, these resources will help you navigate, personalize, and use Dynamics 365 for Operations more efficiently.
