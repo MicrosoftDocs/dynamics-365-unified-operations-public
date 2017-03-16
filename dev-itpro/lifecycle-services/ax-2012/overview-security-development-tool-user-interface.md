@@ -65,7 +65,7 @@ Use the shortcut menu to interact with entry points in the tree view. ![Security
 -   **Open in current workspace** – Open the linked menu item in the current workspace.
 -   **Open in security test workspace** – Open the linked menu item in the **Security test** workspace.
 -   **Discover submenu items** – Use Application Object Tree (AOT) metadata to discover entry points that are used in the linked form for the menu item that is currently selected.
--   **Set entry point permissions for current node and expanded subtree items** – Open a guided form, where you can set the access level for the selected entry point and all the expanded subtree items. For more information, see [Define or edit entry point permissions](define-edit-entry-point-permissions.md).
+-   **Set entry point permissions for current node and expanded subtree items** – Open a guided form, where you can set the access level for the selected entry point and all the expanded subtree items. For more information, see [Define or edit entry point permissions](/dev-itpro/define-edit-entry-point-permissions.md).
 -   **Reference duty** – View a list of duties that grant the selected entry point the corresponding access level. You can view the reference duty for the selected security object. This option is available only for roles.
 -   **Reference privilege** – View a list of privileges that grant the selected entry point the corresponding access level. You can view the reference privilege for the selected security object. This option is available only for roles and duties.
 -   **Open new AOT window** – Open a new AOT window for the selected node.
