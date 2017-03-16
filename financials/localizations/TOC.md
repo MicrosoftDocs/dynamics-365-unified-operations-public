@@ -1,3 +1,4 @@
+# [Electronic reporting](dev-itpro/analytics-bi-reporting/general-electronic-reporting.md?toc=/financials/toc.json)
 # [Asia pacific](asia-pacific/TOC.md)			
 # [Europe](europe/TOC.md)
 # [Latin America](latin-america/TOC.md)
