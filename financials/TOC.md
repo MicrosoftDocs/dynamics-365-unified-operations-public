@@ -171,7 +171,7 @@
 ## [Cost control mobile workspace](cost-accounting\cost-controlling-mobile-workspace.md)
 ## [Cost accounting analysis Power BI content](\dev-itpro\analytics-bi-reporting\cost-accounting-analysis-content-pack)
 ## [Set up security for the Cost accounting analysis Power BI content](\dev-itpro\analytics-bi-reporting\setup-security-cost-accounting-content-pack)
-## [Cost accounting hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
+## [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
 # [Public sector](public-sector\public-sector-functionality.md)
 ## [Plan for public sector functionality](public-sector\plan-public-sector-functionality.md)
 ## [Accounts payable in the public sector](public-sector\accounts-payable-public-sector.md)
