@@ -77,37 +77,37 @@ Follow these steps to enable licensing for your solution.
 
 1.  Create an ISV solution. 
     
-    [![Creating an ISV solution](./media/isv1.png)
+    ![Creating an ISV solution](./media/isv1.png)
 
 2.  Add the certificate's public key (.cer file) to your project as a resource.
     1.  Add a new item. 
     
-        [![Adding a new item](./media/isv2.png)
+        ![Adding a new item](./media/isv2.png)
 
     2.  Click **Labels And Resources**, and then click **Resource**. 
     
-        [![Clicking Resource](./media/isv3.png)
+        ![Clicking Resource](./media/isv3.png)
 
     3.  Select the certificate's public key as the resource. 
     
-        [![Selecting the certificate's public key as the resource](./media/isv4.png)
+        ![Selecting the certificate's public key as the resource](./media/isv4.png)
 
     4.  Add the certificate as a resource. 
     
-        [![Adding the certificate as a resource](./media/isv5.png)
+        ![Adding the certificate as a resource](./media/isv5.png)
 
 
 3.  Create a license code. 
     
-    [![Creating a license code](./media/isv6.png)
+    ![Creating a license code](./media/isv6.png)
 
 4.  Map the certificate to the license code. 
 
-    [![Mapping the certificate to the license code](./media/isv7.png)
+    ![Mapping the certificate to the license code](./media/isv7.png)
 
 5.  Create one or more configuration keys. 
 
-    [![Creating a configuration key](./media/isv8.png)
+    ![Creating a configuration key](./media/isv8.png)
 
 6.  Associate the license code with the configuration keys. 
 
@@ -115,29 +115,29 @@ Follow these steps to enable licensing for your solution.
 
 7.  Associate a configuration key to an element in your solution. For example, create a new form. 
 
-    [![Creating a new form](./media/isv10.png)
+    ![Creating a new form](./media/isv10.png)
 
 8.  Add a button to the form. 
 
-    [![Adding a button to the new form](./media/isv11.png)
+    ![Adding a button to the new form](./media/isv11.png)
     
     The button will be visible, because it isn't controlled by a configuration key at first. 
     
-    [![New button is visible when it's first added](./media/isv12.png)
+    ![New button is visible when it's first added](./media/isv12.png)
 
 9.  Associate a configuration key with the button. 
 
-    [![Associating a configuration key with the button](./media/isv13.png) 
+    ![Associating a configuration key with the button](./media/isv13.png) 
     
     The button will no longer be visible, because the configuration key must be available and enabled. 
     
-    [![Button is no longer visible](./media/isv14.png)
+    ![Button is no longer visible](./media/isv14.png)
 
 
 ## Create a package and generate a customerspecific license
 1.  Collect the tenant name and ID for the customer to issue the license to. (You can find this information at **Settings** &gt; **About**.) 
 
-    [![Customer's tenant name and ID](./media/isv15.png)
+    ![Customer's tenant name and ID](./media/isv15.png)
 
 2.  Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key.You must pass the following parameters to the **axutil genlicense** command to create the license file.
 
@@ -176,13 +176,13 @@ Follow these steps to enable licensing for your solution.
 
 4.  The corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, see the **ISVConfigurationKey1** configuration key in the following screen shot. 
 
-    [![ISVConfigurationKey1 configuration key enabled on the License configuration page](./media/isv18.png)
+    ![ISVConfigurationKey1 configuration key enabled on the License configuration page](./media/isv18.png)
 
 5.  In non-production installations, you must start the database synchronization process from Visual Studio.
 
 After the configuration key is enabled, the button become visible, as shown in the following screen shot. 
 
-[![Button is visible after the configuration key is enabled](./media/isv19.png)
+![Button is visible after the configuration key is enabled](./media/isv19.png)
 
 ## Protection best practices
 In Microsoft Dynamics 365 for Operations, solutions can be delivered in two forms:
@@ -192,12 +192,12 @@ In Microsoft Dynamics 365 for Operations, solutions can be delivered in two form
 
 To protect your configuration keys and license codes, we recommend that you release them in binary form, by using a deployable package. Customers will then be able to install and interact with those elements in Visual Studio. Although customers will be able to refer to items in the deployable package, they won't be able to access source code or make modifications to the items. (However, they can create extensions.) More details about the capability to release solutions in binary form will be available soon. The deployable package (binary) can also include classes and other logic that your customer doesn't require access to and should not be able to customize. 
 
-[![Protected vs. unprotected ISV solutions](./media/isv20.png)
+![Protected vs. unprotected ISV solutions](./media/isv20.png)
 
 ## Production environments
 To install ISV licenses in production systems, you must use a deployable package through LCS. You can find a template package for configuration mode at the following location in all Dynamics 365 for Operations installations: &lt;PackagesFolder&gt;\\bin\\CustomDeployablePackage\\ImportISVLicense.zip (Packages folder is typically under j:\\AOSService\\PackagesLocalDirectory or c:\\AOSService\\PackagesLocalDirectory\\) 
 
-[![Location of the template package for configuration mode](./media/isv21.png)
+![Location of the template package for configuration mode](./media/isv21.png)
 
 1.  Make a copy of the package template.
 2.  Put the license file in the following folder within the package template: ImportISVLicense.zipAosServiceScriptsLicense
