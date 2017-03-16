@@ -62,7 +62,7 @@
 ### [Product dimension](product-information-management\product-dimensions.md)
 ### [Product number nomenclature](product-information-management\product-variant-identification-nomenclature.md)
 ### [Product-related translation FAQ](product-information-management\translations-product-related-information.md)
-### [Register serial number in the sales process](product-information-management\register-serial-numbers-sales-process.md)
+### [Register serial number in the sales process](sales-marketing\register-serial-numbers-sales-process.md)
 ### [Search for product during order entry](product-information-management\search-products-product-variants.md)
 ## Create product configuration
 ### [Build a product configuration model](product-information-management\build-product-configuration-model.md)
@@ -80,7 +80,7 @@
 ### [BOMs and formulas](production-control\bill-of-material-bom.md)
 ### [BOM designer functionality](production-control\bom-designer-functionality.md)
 ### [Consolidated batch orders](production-control\consolidated-batch-orders.md)
-### [Manage subcontracting work in production](production-control\manage-subcontracting-work-in-production.md)
+### [Manage subcontracting work in production](production-control\manage-subcontract-work-production.md)
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control\mixed-mode-plan.md)
 ### [Production process](cost-management\production-process-overview.md)
 ### [Production setup requirements](production-control\production-set-up-requirements.md)
