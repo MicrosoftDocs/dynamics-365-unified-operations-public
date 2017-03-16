@@ -169,7 +169,7 @@
 ## [Cost object dimensions](cost-accounting\cost-objects.md)
 ## [Map cost element dimension members to a common set of dimension members](cost-accounting\map-cost-elements-dimension-members.md)
 ## [Cost control mobile workspace](cost-accounting\cost-controlling-mobile-workspace.md)
-## [Cost accounting analysis Power BI content](\dev-itpro\analytics-bi-reporting\cost-accounting-analysis-content-pack)
+## [Cost accounting analysis Power BI content](/dev-itpro/analytics-bi-reporting/cost-accounting-analysis-content-pack)
 ## [Set up security for the Cost accounting analysis Power BI content](\dev-itpro\analytics-bi-reporting\setup-security-cost-accounting-content-pack)
 ## [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
 # [Public sector](public-sector\public-sector-functionality.md)
