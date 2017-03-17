@@ -3,7 +3,7 @@
 
 title: One-time vendors in the public sector
 description: This article provides information about how to create a one-time vendor and invoice, and how to import and create multiple one-time vendors and invoices. 
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-07 17 - 52 - 53
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableL
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19801
@@ -41,9 +41,4 @@ The vendor record uses values from the default one-time vendor account, unless n
 
 ## How do I import and create multiple onetime vendors and invoices?
 To create multiple one-time vendors and invoices, you first create a file that contains the vendor and invoice information, and then import the file into a staging table in Microsoft Dynamics 365 for Operations. You then process the imported file and generate the invoices. For information about how to create the file, see [Planning for one-time vendors in the public sector](plan-one-time-vendors-public-sector.md).  
-
-See also
---------
-
-[Accounts payable in the public sector](https://ax.help.dynamics.com/en/wiki/Accounts-payable-in-the-public-sector/)
 

@@ -3,7 +3,7 @@
 
 title: Add dimensions to a Excel template
 description: This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
-author: twheeloc
+author: robinarh
 manager: AnnBe
 ms.date: 2015-10-29 18 - 19 - 57
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 11314
@@ -37,7 +37,7 @@ This topic provides information about dimensions, dimensions that have entities,
 The only value that is present on Microsoft Excel templates after installation is the MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates you need to complete the following steps:
 
 1.  Add dimensions to the DimensionCombinationEntity or the DimensionSet entity.
-2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create open in Excel experiences](office-integration-edit-excel.md).
+2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create open in Excel experiences](..\office-integration\office-integration-edit-excel.md).
 3.  Publish the template.
 
 This topic shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity. **Note:**  This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
@@ -94,7 +94,5 @@ See also
 
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
-[What’s new or changed](whats-new-changed.md)
-
-[Extensibility home page](extensibility-home-page.md)
+[Extensibility home page](..\extensibility\extensibility-home-page.md)
 

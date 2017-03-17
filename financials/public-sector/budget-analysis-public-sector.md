@@ -3,7 +3,7 @@
 
 title: Budget analysis in the public sector
 description: This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-07 16 - 23 - 04
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDet
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19641
@@ -94,8 +94,5 @@ If the grids are empty in the **Budget analysis** page, try the following action
 ## How do I see updated numbers in the columns when I change the dimension set, dates, posting layers, and other settings?
 After you change the settings at the top of the page, click **Update totals** to see the results of your query.
 
-See also
---------
 
-[Budgeting in the public sector](https://ax.help.dynamics.com/en/wiki/Budgeting-in-the-public-sector/)
 

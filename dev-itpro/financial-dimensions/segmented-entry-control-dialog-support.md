@@ -3,7 +3,7 @@
 
 title: Segmented entry control dialog support
 description: Describes the code pattern to add Segmented Entry controls to dialogs.
-author: twheeloc
+author: robinarh
 manager: AnnBe
 ms.date: 2015-12-12 20 - 44 - 50
 ms.topic: article
@@ -72,7 +72,7 @@ See also
 
 [Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control migration walkthrough](segmented-entry-control-migration-conversion.md)
+[Segmented Entry control migration](segmented-entry-control-conversion.md)
 
 [Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
 

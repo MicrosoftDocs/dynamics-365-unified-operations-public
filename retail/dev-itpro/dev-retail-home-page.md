@@ -4,7 +4,7 @@
 title: Dynamics 365 for Operations  -  Retail for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Retail and commerce in Microsoft Dynamics 365 for Operations.
 author: RobinARH
-manager: AnnBe
+nmanager: AnnBe
 ms.date: 2015-12-12 00 - 52 - 21
 ms.topic: article
 ms.prod: 
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+o# ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 61
@@ -24,7 +24,7 @@ ms.custom: 24411
 ms.assetid: af9a7622-665e-4ed9-89ad-954d4705abfd
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+cms.author: robinr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -39,7 +39,8 @@ Retail components
 
 -   [Components of Microsoft Dynamics 365 for Operations - Retail](..\retail-components.md)
 -   [Retail Store Scale Unit overview](retail-store-system-before-you-begin.md)
--   [Retail Channel Performance Power BI content](\dev-itpro\analytics-bi-reporting\retail-channel-performance-dashboard-power-bi-data.md)
+
+-   [Retail Channel Performance Power BI  content](/dev-itpro/analytics-bi-reporting/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Retail deployment
 -   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)

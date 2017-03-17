@@ -16,12 +16,12 @@
 ## [Check box support in tree controls](check-box-tree-controls.md)
 ## [Filters](filtering.md)
 ## Window management
-## [Code migration: Context menus](..\migration-upgrade\..\migration-upgrade\code-migration-context-menus.md)
-## [Code migration: Mouse double-click](..\migration-upgrade\..\migration-upgrade\code-migration-double-click.md)
+## [Migrate context menu code](..\migration-upgrade\..\migration-upgrade\code-migration-context-menus.md)
+## [Migration mouse double-click code](..\migration-upgrade\..\migration-upgrade\code-migration-double-click.md)
 ## [Contextual data entry for lookups](contextual-data-entry-lookups.md)
 ## [HierarchyViewer control](hierarchy-viewer-control.md)
 ## [Lookup controls](lookups-controls.md)
-## [File upload control](file-upload-control.md)
+## [File upload controls](file-upload-control.md)
 ## [System-defined buttons](system-defined-buttons.md)
 ## [Images](images-form-grid.md)
 ## [Font and background colors for input, table, and grid controls](specify-color-font-background-controls.md)
@@ -29,17 +29,18 @@
 ## [Create icons for workspace tiles](create-icons-workspace-tiles.md)
 ## [Extensible controls - Public JavaScript APIs](public-javascript-apis.md)
 ## [Control checklist](control-checklist.md)
-# Messaging
+# Messages
 ## [Slider and MessageBox](slider-messagebox.md)
 ## [Message center, message bar, and message details API](messaging-api-center-bar-details.md)
 ## [Message center, message bar, and message details FAQ](messaging-user.md)
-# Form pattern guidlines
+# Form pattern guidelines
 ## [Select a form pattern](select-form-pattern.md)
 ## [Form styles and patterns](form-styles-patterns.md)
 # Form patterns
+## [General form guidelines](general-form-guidelines.md)
 ## [Details Master form pattern](details-master-form-pattern.md)
 ## [Details Transaction form pattern](details-transaction-form-pattern.md)
-## [Form Part Section List form patterns](section-list-form-pattern.md)
+## [Form Part Section List form pattern](section-list-form-pattern.md)
 ## [List Page form pattern](list-page-form-pattern.md)
 ## [Simple Details form pattern](simple-details-form-pattern.md)
 ## [Simple List and Details form pattern](simple-list-details-form-pattern.md)
@@ -49,13 +50,12 @@
 ## [Task Single form pattern](task-single-form-pattern.md)
 ## [Wizard form pattern](wizard-form-pattern.md)
 ## [Workspace form pattern](workspace-form-pattern.md)
-## [General form guidelines](general-form-guidelines.md)
 # Support form patterns
 ## [Advanced selection form pattern](advanced-selection-form-pattern.md)
 ## [Dialog form pattern](dialog-form-pattern.md)
 ## [Drop Dialog form pattern](drop-dialog-form-pattern.md)
 ## [Lookup form pattern](lookup-form-pattern.md)
-## [FactBox form patterns](factbox-form-patterns.md)
+## [FactBox form pattern](factbox-form-patterns.md)
 # Sub patterns
 ## [Custom Filter Group subpattern](custom-filter-group-subpattern.md)
 ## [Dimension entry control subpattern](..\financial-dimensions\..\financial-dimensions\dimension-entry-control-subpattern.md)
@@ -85,9 +85,9 @@
 ## [Extensible control layout guidelines](extensible-controls-layout.md)
 ## [Control the text that Task Recorder generates for a control](task-recorder-control-text.md)
 # Build workspaces
+## [Workspaces overview](build-workspaces.md)
 ## [Build navigation](build-navigation.md)
 ## [Build a workspace](build-workspace.md)
-## [Build operational workspaces](build-workspaces.md)
 ## [Tile and list caching for workspaces](tile-list-caching-workspaces.md)
 # Task Recorder
 ## [Task Recorder in Dynamics 365 for Operations](task-recorder.md)
