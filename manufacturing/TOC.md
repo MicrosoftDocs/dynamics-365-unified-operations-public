@@ -78,7 +78,7 @@
 ### [Consolidated batch orders](production-control\consolidated-batch-orders.md)
 ### [Manage subcontracting work in production](production-control\manage-subcontract-work-production.md)
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control\mixed-mode-plan.md)
-### [Production process](cost-management\production-process-overview.md)
+### [Production process](production-control\production-process-overview.md)
 ### [Production setup requirements](production-control\production-set-up-requirements.md)
 ### [Routes and operations](production-control\routes-operations.md)
 ## Production orders
