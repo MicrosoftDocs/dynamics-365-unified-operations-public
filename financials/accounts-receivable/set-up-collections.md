@@ -82,8 +82,15 @@ Update bank accounts so that they have the correct journal when NSF payments a
 Before workers can create activities or send email messages by using the **Collections** page, you must verify that the **Microsoft Outlook synchronization** configuration key is selected, and that Outlook synchronization is set up for those workers.
 
 ## Set up email and address settings for collections customer contacts
-Set up email addresses for customer contacts if you want to send email messages to those contacts from the **Collections** page. The collections contact is used as the default contact on the **Collections** page. You can set up a statement address for a customer if statements should use an address other than the primary address. On the **Credit and Collections** FastTab for a customer, in the **Collections contact** field, select the person in the customer organization who works with your collections agent. This person is used as the default contact on the **Collections** page, and email messages are sent to him or her. **Note:** If a collections contact isn't specified for a customer, the primary contact for the customer is used. If a primary contact isn't specified, email messages are sent to the first address that is listed on the **Contacts** page.
+Set up email addresses for customer contacts if you want to send email messages to those contacts from the **Collections** page. The collections contact is used as the default contact on the **Collections** page. You can set up a statement address for a customer if statements should use an address other than the primary address. 
+
+On the **Credit and Collections** FastTab for a customer, in the **Collections contact** field, select the person in the customer organization who works with your collections agent. This person is used as the default contact on the **Collections** page, and email messages are sent to him or her. 
+
+> [!NOTE] 
+> If a collections contact isn't specified for a customer, the primary contact for the customer is used. If a primary contact isn't specified, email messages are sent to the first address that is listed on the **Contacts** page.
 
 ## Set up email settings for salespeople
-Set up email addresses for salespeople if you want to send email messages to salespeople from the **Collections** page. Set up an email address for each sales representative in each commission sales group. The sales representative who has the **Contact** option selected is the default salesperson that email messages are sent to. If a sales representative isn't specified, the primary salesperson for the customer organization is used. If a primary salesperson isn't specified, email messages are sent to the first salesperson who is listed on the page.
+Set up email addresses for salespeople if you want to send email messages to salespeople from the **Collections** page. Set up an email address for each sales representative in each commission sales group. The sales representative who has the **Contact** option selected is the default salesperson that email messages are sent to. 
+
+If a sales representative isn't specified, the primary salesperson for the customer organization is used. If a primary salesperson isn't specified, email messages are sent to the first salesperson who is listed on the page.
 
