@@ -25,17 +25,14 @@
 ### [Explosion of a BOM version](master-planning\master-plan-explosion-bom-version.md)
 ### [Maintain planned orders](master-planning\maintain-planned-orders.md)
 ### [Trace an explosion](master-planning\trace-explosion.md)
-# Procurement and sourcing
-## [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
+# [Procurement and sourcing](procurement-sourcing\procurement-sourcing.md)
 ## [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
-## [Procurement and sourcing workflows](procurement-sourcing\procurement-sourcing-workflows.md)
+## [Procurement and sourcing workflow](procurement-sourcing\procurement-sourcing-workflows.md)
 ## [Purchasing policies](procurement-sourcing\purchase-policies.md)
-## Procurement product management
-### [Procurement catalogs](procurement-sourcing\procurement-catalogs.md)
+## [Procurement catalogs](procurement-sourcing\procurement-catalogs.md)
 ## [Purchase requisitions](procurement-sourcing\purchase-requisitions-overview.md)
 ### [Purchase requisition workflow](procurement-sourcing\purchase-requisitions-workflow.md) 
-## Request for quotation
-### [Request for quotations (RFQs)](procurement-sourcing\request-quotations.md)
+## [Request for quotations (RFQs)](procurement-sourcing\request-quotations.md)
 ## Purchase orders
 ### [Purchase order overview](procurement-sourcing\purchase-order-overview.md)
 ### [Create purchase orders](procurement-sourcing\purchase-order-creation.md)
