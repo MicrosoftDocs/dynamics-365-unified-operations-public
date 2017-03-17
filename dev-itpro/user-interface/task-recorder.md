@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create documentation or training using Task recordings
