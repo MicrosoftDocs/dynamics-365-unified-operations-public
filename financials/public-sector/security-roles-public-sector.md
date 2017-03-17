@@ -3,7 +3,7 @@
 
 title: Security roles in the public sector
 description: This article describes the functionality for public sector security roles. This functionality includes the Project manager and Purchasing agent roles for the public sector.
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-07 16 - 59 - 50
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: UserRequestListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19721
