@@ -3,7 +3,7 @@
 
 title: Billing classifications and billing codes in the public sector
 description: Public-sector organizations can use billing classifications and billing codes to help manage free text invoices. 
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-07 15 - 35 - 53
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19491
@@ -88,10 +88,5 @@ When billing codes need to be updated, you don’t need to create new billing co
 ## Can I assign the same billing code to more than one billing classification?
 No, but there’s a way to get the results you need anyway. Let’s say that your organization uses a separate billing classification for each department. Three of the departments need a billing code for license agreements. You can’t assign a single “License agreement” billing code to three billing classifications, but you can create a set of three identical billing codes, and assign one to each department.
 
-See also
---------
 
-[Accounts receivable](..\accounts-receivable\accounts-receivable.md)
-
-[Accounts receivable in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=169941)
 
