@@ -49,7 +49,7 @@
 ### [Purchase agreements](procurement-sourcing\purchase-agreements.md)
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
-### [Overview of vendor invoices](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/financials/accounts-payable/vendor-invoices-overview)
+### [Overview of vendor invoices](https://docs.microsoft.com/en-us/operations/financials/accounts-payable/vendor-invoices-overview)
 ### [Vendor posting profiles](/Dynamics-365-Operations/blob/master/financials/accounts-payable/vendor-posting-profiles)
 # Product information management
 ## Product information
