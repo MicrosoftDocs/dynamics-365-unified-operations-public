@@ -37,7 +37,11 @@ The Single Euro Payments Area (SEPA) is set up by the European Commission, and d
 What is the goal of SEPA Direct Debits?
 ---------------------------------------
 
-A SEPA Direct Debit allows a creditor to collect funds from a customer’s bank account, provided that a signed mandate has been granted by the customer to the creditor. The customer signs a mandate that authorizes the creditor to collect a payment and instructs the customer’s bank to pay the collection. SEPA Direct Debits create, for the first time, a payment instrument that can be used for both national and cross-border euro direct debits throughout the 32 SEPA countries/regions. There are two schemes available: the SEPA Core Direct Debit Scheme and the SEPA Business to Business (B2B) Direct Debit Scheme. Both schemes use the same file format.
+A SEPA Direct Debit allows a creditor to collect funds from a customer’s bank account, provided that a signed mandate has been granted by the customer to the creditor. The customer signs a mandate that authorizes the creditor to collect a payment and instructs the customer’s bank to pay the collection. 
+
+SEPA Direct Debits create, for the first time, a payment instrument that can be used for both national and cross-border euro direct debits throughout the 32 SEPA countries/regions. 
+
+There are two schemes available: the SEPA Core Direct Debit Scheme and the SEPA Business to Business (B2B) Direct Debit Scheme. Both schemes use the same file format.
 
 ## What is the Core Direct Debit scheme?
 The SEPA Core Direct Debit Scheme is the basic scheme. It has the following attributes:
