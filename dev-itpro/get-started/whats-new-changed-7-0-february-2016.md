@@ -513,7 +513,7 @@ No new features have been added.
 <tr class="even">
 <td>(DE) Generate the German audit file - GDPdUGoBD</td>
 <td>Users can set up definition of tables containing financial data to be exported in a format accepted by German auditors and authorities.</td>
-<td>The feature has been implemented as an electronic reporting configuration. [A separate article](financials/localizations/europe/gdpdu-audit-data-export) describes it in more detail. The functionality is available to Germany and Austria.</td>
+<td>The feature has been implemented as an electronic reporting configuration. The functionality is available to Germany and Austria.</td>
 <td>This change gives user much more possibilities in data formatting, transformations, and also provides all the benefits coming from electronic reporting configuration lifecycle management, like easy configuration exchange, versioning, etc.</td>
 </tr>
 <tr class="odd">
