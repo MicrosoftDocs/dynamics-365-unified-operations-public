@@ -110,7 +110,6 @@
 ### [Production posting](cost-management\production-posting.md)
 ### [Registration for manufacturing execution](production-control\registration-manufacturing-execution.md)
 # Sales and marketing
-## [Sales home page](sales-marketing\sales.md)
 ## [Marketing](sales-marketing\overview-sales-marketing.md)
 ## Sales orders
 ### [Order promising](sales-marketing\delivery-dates-available-promise-calculations.md)
