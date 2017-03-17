@@ -37,16 +37,16 @@ This page lists the resources that are available for IT pros and developers who 
 Retail components
 -----------------
 
--   [Components of Microsoft Dynamics 365 for Operations - Retail](retail-components.md)
+-   [Components of Microsoft Dynamics 365 for Operations - Retail](..\retail-components.md)
 -   [Retail Store Scale Unit overview](retail-store-system-before-you-begin.md)
--   [Retail Channel Performance content pack for Power BI](retail-channel-performance-dashboard-power-bi-data.md)
+-   [Retail Channel Performance content pack for Power BI](\dev-itpro\analytics-bi-reporting\retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Retail deployment
--   [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md)
--   [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md)
+-   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)
+-   [Manage Retail accounts and devices from headquarters](..\set-up-activation-accounts-validate-devices-hq.md)
 -   [Retail POS device activation](https://ax.help.dynamics.com/en/wiki/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications/)
--   [Install the POS Layout designer](install-pos-layout-designer.md)
--   [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
+-   [Install the POS Layout designer](..\install-pos-layout-designer.md)
+-   [Retail Hardware Station configuration and installation](..\retail-hardware-station-configuration-installation.md)
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 -   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
 -   [Access Microsoft Dynamics 365 for Operations instances](\dev-itpro\dev-tools\access-instances.md)
@@ -55,18 +55,18 @@ Retail components
 -   [Retail Modern POS architecture](https://ax.help.dynamics.com/en/wiki/Retail-Modern-POS-architecture/)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
 -   [Create a Retail Experience app](create-retail-experience-app.md)
--   [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md)
--   [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md)
+-   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)
+-   [Manage Retail accounts and devices from headquarters](..\set-up-activation-accounts-validate-devices-hq.md)
 -   [Retail POS device activation](retail-device-activation.md)
 -   [Security best practices for Dynamics 365 for Operations – Retail Cloud POS in a shared environment](secure-retail-cloud-pos.md)
--   [Install the POS Layout designer](install-pos-layout-designer.md)
+-   [Install the POS Layout designer](..\install-pos-layout-designer.md)
 -   [Use Retail Modern POS in offline mode](retail-modern-pos-offline.md)
 -   [Call a new or customized CRT service in offline mode](call-crt-service-offline.md)
 -   [Modern POS and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
 -   [Add a new custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
 -   [Implementing a return policy by using triggers](trigger-example-return-policy.md)
 -   [Blocking a transaction by using triggers](trigger-example-blocking-transaction.md)
--   [Retail POS screen layouts](pos-screen-layouts.md)
+-   [Retail POS screen layouts](..\pos-screen-layouts.md)
 -   [Add extension properties to a Customer entity](add-extension-properties.md)
 
 ## Retail server
@@ -77,7 +77,7 @@ Retail components
 -   [Retail Server customer and consumer APIs](retail-server-customer-consumer-api.md)
 
 ## Retail hardware station
--   [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md)
+-   [Retail hardware station configuration and installation](..\retail-hardware-station-configuration-installation.md)
 -   [Hardware Station Extensibility](hardware-station-extensibility.md)
 
 ## Retail Store Scale Unit
@@ -94,7 +94,7 @@ Retail components
 -   [Retail SDK Overview](retail-sdk-overview.md)
 -   [Retail SDK packaging](retail-sdk-packaging.md)
 -   [Integrate the Retail SDK with the continuous build system (VSTS)](integrate-retail-sdk-continuous-build.md)
--   [Retail SDK samples](retail-sdk-samples.md)
+-   [Retail SDK samples](retail-sdk\retail-sdk-samples.md)
 
 ## eCommerce
 -   [e-Commerce platform](ecommerce-platform.md)
