@@ -48,5 +48,5 @@ After the checks that are listed in a positive pay file have been paid, you rece
 
 If you must change a positive pay file, you can recall it. Then, for each check in the positive pay file, the field that indicates whether that check has been included in a positive pay file is reset.
 
-For more information, see [Set up and generate positive pay files](\financials\accounts-payable/set-up-generate-positive-pay-files.md).
+For more information, see [Set up and generate positive pay files](set-up-generate-positive-pay-files.md).
 
