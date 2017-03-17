@@ -27,19 +27,20 @@
 ## Product recommendations
 ### [Personalized product recommendations overview](personalized-product-recommendations.md)
 ### [Add a recommendations control on a POS device](add-recommendations-control-pos-screen.md)
-## [Offline POS functionality](pos-offline-functionality.md
+## [Offline POS functionality](pos-offline-functionality.md)
 ## [Shift and cash drawer management](shift-drawer-management.md)
 ## Customer orders
 ### [Customer orders overview](customer-orders-overview.md)
 ### [Hybrid customer orders](hybrid-customer-orders.md)
-## [Track commissions in POS using sales groups](pos-sales-groups-track-commissions.md)
+## Sales associates
+### [Track commissions in POS using sales groups](pos-sales-groups-track-commissions.md)
 ## Device activation
 ### [Configure and install MPOS](retail-modern-pos-device-activation.md)
 ### [Set up extended logon for Cloud POS and MPOS](extended-logon.md)
 ### [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md)
 ## Receipts
 ### [Set up receipt templates](receipt-templates-printing.md) 
-### [Send email receipts from MPOS (email-receipts.md)
+### [Send email receipts from MPOS](email-receipts.md)
 # Monitoring and analysis
 ## [Monitor sales and margin performance](monitor-sales-margin-performance.md)
 ## [Analyze sales trends and patterns](analyze-sales-trends-patterns.md)
@@ -60,7 +61,8 @@
 ## [Set up assortments](set-up-assortments.md)
 # Loyalty
 ## [Set up a customer loyalty program](set-up-customer-loyalty-program.md)
-# [Manage store inventory](work-with-store-inventory.md)
+# Inventory
+## [Manage store inventory](work-with-store-inventory.md)
 # Commerce essentials
 ## [Commerce essentials overview](commerce-essentials.md)
 ## [Organizations and organizational hierarchies (Commerce essentials)](organizational-hierarchies-commerce-essentials.md)
