@@ -40,7 +40,7 @@ Prerequisites
 You will need access to a Dynamics 365 for Operations development environment using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Dynamics 365 for Operation development, customization and user interface concepts before you upgrade your code. Here are some references.
 
 -   [Development tools](..\dev-tools\developer-home-page.md)
--   [Models and packages](models.md)
+-   [Models and packages](..\dev-tools\models.md)
 -   [X++ programming language](..\dev-reference\xpp-language-reference.md)
 -   [Extensions and Overlayering](..\extensibility\extensibility-home-page.md)
 -   [User interface development](..\user-interface\user-interface-development-home-page.md)
@@ -81,7 +81,7 @@ After you upgrade your code using the LCS code upgrade service configure your de
 -   [Configure your developer VM](..\dev-tools\configure-developer-vm.md)
 -   [Configure VSTS](configure-vso-solution.md)
 
-The code upgrade service will provide with Visual Studio solutions that you can open to compile your code. A **code merge** solution for all elements that contain conflicts and an **upgraded** solutions for all your upgraded elements. Typically, you can compile the application by fixing compilation errors in the order shown below. The order is determined based on the package dependencies graph, start with the lowest package in the graph. To determine package dependencies, see [Viewing package dependencies](models.md/#viewing-package-dependencies). A typical order is Application Platform, Application Foundation, Directory, ...etc., Application Suite. For each of your upgraded models:
+The code upgrade service will provide with Visual Studio solutions that you can open to compile your code. A **code merge** solution for all elements that contain conflicts and an **upgraded** solutions for all your upgraded elements. Typically, you can compile the application by fixing compilation errors in the order shown below. The order is determined based on the package dependencies graph, start with the lowest package in the graph. To determine package dependencies, see [Models](..\dev-tools\models.md). A typical order is Application Platform, Application Foundation, Directory, ...etc., Application Suite. For each of your upgraded models:
 
 -   Fix merge conflicts.
 -   Fix compilation errors related to a model split (references across packages).
