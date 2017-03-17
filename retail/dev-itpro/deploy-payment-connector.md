@@ -87,7 +87,7 @@ After you've uploaded your deployable packages to the LCS asset library, you can
 
 #### Download and run installers on client computers
 
-The self-service package contains the installers for both Hardware station and Modern POS. After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers. For information about how to download Hardware station and Modern POS, and install them on client computers, see [Retail Modern POS self-service download/installation, and device activation of Modern POS and Cloud POS](retail-modern-pos-device-activation.md).
+The self-service package contains the installers for both Hardware station and Modern POS. After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers. For information about how to download Hardware station and Modern POS, and install them on client computers, see [Retail Modern POS self-service download/installation, and device activation of Modern POS and Cloud POS](..\retail-modern-pos-device-activation.md).
 
 ## Manual deployment
 This section describes how to manually deploy a payment connector. You can use a manual deployment to test locally in a developer environment. This developer environment can be either cloud-hosted or on a downloadable virtual hard disk (VHD).
