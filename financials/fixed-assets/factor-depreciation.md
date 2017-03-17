@@ -75,5 +75,5 @@ The acquisition price is 100,000, the factor is 20, the service life is 10 years
 | 6    | December 31 | 3,937.36            | 12,042.34             |
 
 ## Straight line depreciation
-The value in the **Factor** field is equal to **50**. In this case, the depreciation is the same in each period, and you should consider the implications of the values that you have specified in other fields, as described in [Straight line service life depreciation](http://authoring.help.dynamics.com/en/wiki/Straight-line-service-life-depreciation/).
+The value in the **Factor** field is equal to **50**. In this case, the depreciation is the same in each period, and you should consider the implications of the values that you have specified in other fields, as described in [Straight line service life depreciation](straight-line-service-life-depreciation.md).
 
