@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Half year depreciation on fixed asset disposal for the Czech Republic
+# Half-yearly depreciation on fixed asset disposal for the Czech Republic
 
 This topic explains how to set up half-yearly depreciation, so that you can apply half the yearly depreciation for fixed assets that are sold or otherwise disposed of.
 
