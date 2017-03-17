@@ -62,8 +62,8 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
 | Own advantage, for a credit balance | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                |
 | Own advantage, for a debit balance  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
 
-> [!NOTE]                                                                                  |
-> If you select Own advantage, the rounding is always to the advantage of the legal entity. |
+> [!NOTE]                                                                                  
+> If you select Own advantage, the rounding is always to the advantage of the legal entity. 
 
 For more information, see [Sales tax overview](indirect-taxes-overview.md). 
 

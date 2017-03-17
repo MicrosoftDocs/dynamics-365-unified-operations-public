@@ -39,7 +39,8 @@ Dynamics 365 for Operations includes a Help system that is based on two main com
 -   A wiki
 -   Task guides
 
-You can access both wiki articles and task guides from the Help pane in Dynamics 365 for Operations as shown in the following screen shot. [![Help pane](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) This article describes the Help system, and explains how you can create custom documentation and training resources for your organization.
+You can access both wiki articles and task guides from the Help pane in Dynamics 365 for Operations as shown in the following screen shot. [![Help pane](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) 
+This article describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 ## The wiki
 The Dynamics 365 for Operations Help wiki ([ax.help.dynamics.com](http://ax.help.dynamics.com/en/)) is the primary source of product documentation for Dynamics 365 for Operations. The wiki offers the following features:
@@ -81,11 +82,11 @@ Task guides are created by using Task Recorder. When you use Task Recorder, all 
 -   **Save task recordings to BPM** – You can save a task recording to a line of a hierarchy in a BPM library in LCS. When you save a task recording to BPM, a flowchart diagram is generated and displayed, together with the steps of the recording. **Note:** To display a task recording in the Dynamics 365 for Operations Help pane and play it as a task guide, you'll have to save the recording to a BPM library.
 -   **Save task recordings as Word documents** – By saving a task recording as a Microsoft Word document, you can easily produce printable training guides for your organization.
 
-For more information about Task Recorder, see [Task recorder in Dynamics 365 for Operations](task-recorder.md).
+For more information about Task Recorder, see [Task recorder in Dynamics 365 for Operations](/user-interface/task-recorder.md).
 
 ### Creating customized task recordings
 
-You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](task-recorder.md).
+You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](/user-interface/task-recorder.md).
 
 ## Inproduct Help
 To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access wiki articles or task guides. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
@@ -138,15 +139,15 @@ See also
 
 [Dynamics 365 for Operations help system (downloadable fact sheet)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
 
-[Task Recorder in Microsoft Dynamics 365 for Operations](task-recorder.md)
+[Task Recorder in Microsoft Dynamics 365 for Operations](/user-interface/task-recorder.md)
 
-[Create documentation or training using Task recordings](task-recorder.md)
+[Create documentation or training using Task recordings](/user-interface/task-recorder.md)
 
-[New task guides (February 2016)](new-task-guides-available-february-2016.md)
+[New task guides (February 2016)](/get-started/new-task-guides-available-february-2016.md)
 
-[New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
+[New or updated task guides (May 2016)](/get-started/new-updated-task-guides-available-may-2016.md)
 
-[New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
+[New or updated task guides (August 2016)](/get-started/new-updated-task-guides-available-august-2016.md)
 
-[New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
+[New or updated Task guides (November 2016)](/get-started/new-task-guides-november-2016.md)
 

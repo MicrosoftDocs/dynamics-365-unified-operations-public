@@ -49,7 +49,7 @@ Retail components
 -   [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 -   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
--   [Access Microsoft Dynamics 365 for Operations instances](..\dev-tools\access-instances.md)
+-   [Access Microsoft Dynamics 365 for Operations instances](\dev-itpro\dev-tools\access-instances.md)
 
 ## Retail Point of Sale (POS)
 -   [Retail Modern POS architecture](https://ax.help.dynamics.com/en/wiki/Retail-Modern-POS-architecture/)
@@ -57,10 +57,10 @@ Retail components
 -   [Create a Retail Experience app](create-retail-experience-app.md)
 -   [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md)
 -   [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md)
--   [Retail POS device activation](https://ax.help.dynamics.com/en/wiki/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications/)
+-   [Retail POS device activation](retail-device-activation.md)
 -   [Security best practices for Dynamics 365 for Operations – Retail Cloud POS in a shared environment](secure-retail-cloud-pos.md)
 -   [Install the POS Layout designer](install-pos-layout-designer.md)
--   [Use Retail Modern POS in offline mode](https://ax.help.dynamics.com/en/wiki/Use-Retail-Modern-POS-in-offline-mode/)
+-   [Use Retail Modern POS in offline mode](retail-modern-pos-offline.md)
 -   [Call a new or customized CRT service in offline mode](call-crt-service-offline.md)
 -   [Modern POS and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
 -   [Add a new custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
@@ -71,9 +71,9 @@ Retail components
 
 ## Retail server
 -   [Architecture of Microsoft Dynamics 365 for Operations - Retail Server](retail-server-architecture.md)
--   [Extend a Retail Server OData controller](https://ax.help.dynamics.com/en/wiki/Extend-a-Retail-Server-OData-Controller/)
--   [Extend the metadata](https://ax.help.dynamics.com/en/wiki/Extend-the-metadata/)
--   [Use Web API and OData controllers together](https://ax.help.dynamics.com/en/wiki/Use-Web-API-and-OData-controllers-together/)
+-   [Extend a Retail Server OData controller](extend-retail-server-odata-controller.md)
+-   [Extend the metadata](extend-metadata.md)
+-   [Web API and OData controllers](odata-controllers-api.md)
 -   [Retail Server customer and consumer APIs](retail-server-customer-consumer-api.md)
 
 ## Retail hardware station

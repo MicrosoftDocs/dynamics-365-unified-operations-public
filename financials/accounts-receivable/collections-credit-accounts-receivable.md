@@ -47,13 +47,21 @@ Before you begin to set up or work with collections, you should understand the f
 The following sections describe each concept.
 
 ## Customer aging snapshots
-An aging snapshot contains the calculated aged balances for a customer at a point in time. This information is displayed on the Aged balances list page and on the Collections page. An aging snapshot must be created before you can view information on the Collections list pages. For each customer, an aging snapshot contains an aging snapshot header and detail records that correspond to each aging period in the aging period definition. The aging snapshot header contains the total amount due, credit limit, packing slip amount, sales order amount, number of disputed transactions, and total amount of the disputed transactions for the customer account. All transactions for the customer are included in the calculation of these amounts. The total amount due, credit limit, packing slip amount, and sales order amount are shown in the Credit information FactBox on the Collections page. For each aging period in the aging period definition, an aging snapshot detail record is created. Each aging snapshot detail record contains the aging period ID and the total amount of the transactions with dates that are in the aging period. Transactions are assigned to an aging period, such as 30 days past due. The date is relative to the Aging as of date that is specified when you create the aging snapshot. This information is shown on the Aged balances list page and in the Aged balances FactBox on the Collections page.
+An aging snapshot contains the calculated aged balances for a customer at a point in time. This information is displayed on the Aged balances list page and on the Collections page. An aging snapshot must be created before you can view information on the Collections list pages. 
+
+For each customer, an aging snapshot contains an aging snapshot header and detail records that correspond to each aging period in the aging period definition. 
+
+The aging snapshot header contains the total amount due, credit limit, packing slip amount, sales order amount, number of disputed transactions, and total amount of the disputed transactions for the customer account. All transactions for the customer are included in the calculation of these amounts. The total amount due, credit limit, packing slip amount, and sales order amount are shown in the Credit information FactBox on the Collections page. 
+
+For each aging period in the aging period definition, an aging snapshot detail record is created. Each aging snapshot detail record contains the aging period ID and the total amount of the transactions with dates that are in the aging period. Transactions are assigned to an aging period, such as 30 days past due. The date is relative to the Aging as of date that is specified when you create the aging snapshot. This information is shown on the Aged balances list page and in the Aged balances FactBox on the Collections page.
 
 ## Collections customer pools
 Customer pools are queries that define a group of customer records that can be displayed and managed for collections or aging processes. Use customer pools to filter information on the Aged balances, Collections activities, and Collections cases list pages. You also use customer pools to filter the customer accounts that are included when aging snapshots are created.
 
 ## Collections agents
-By default, Microsoft Dynamics 365 for Operations users can view all customer information on collections list pages. You can use collections agent records to determine the customer pools that are available to filter information on the collections list pages and on the Collections page. A collections agent is a person who works with customers to make sure that payments are collected in a timely manner. In Microsoft Dynamics 365 for Operations, collections agents are workers who are assigned to users in the User setup page.
+By default, Microsoft Dynamics 365 for Operations users can view all customer information on collections list pages. You can use collections agent records to determine the customer pools that are available to filter information on the collections list pages and on the Collections page. 
+
+A collections agent is a person who works with customers to make sure that payments are collected in a timely manner. In Microsoft Dynamics 365 for Operations, collections agents are workers who are assigned to users in the User setup page.
 
 ## Collections list pages
 The following list pages help you organize collections information.
@@ -61,35 +69,32 @@ The following list pages help you organize collections information.
 -   Collections activities – The columns on the list page display activities that are identified as collections activities. These activities are created by using the Collections page. Use activities to track the work that you do related to collections.
 -   Collections cases – The columns on the list page display information for cases that have a case category with a case type of Collections.
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Note</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>An aging snapshot must be created before you can view information on these list pages. Information is displayed only for customers for whom an aging snapshot has been created.The records that are shown on the list page can be additionally filtered, as follows:
-<ul>
+> [!NOTE]
+> An aging snapshot must be created before you can view information on these list pages. Information is displayed only for customers for whom an aging snapshot has been created.The records that are shown on the list page can be additionally filtered, as follows:
 <li>By default, a Microsoft Dynamics 365 for Operations user has access to all customers who have an aging snapshot.</li>
 <li>If customer pools exist, a user must be set up as a collections agent to use the pools to filter information on the collections list pages. Information is limited to the customers who are included in the selected customer pool.</li>
 <li>If a user is set up as a collections agent, only the pools that are selected for that collections agent are available on the list page. If the Allow agent to view all customer pools toggle is selected in the Collections agent page for the collections agent, all pools are available for that agent.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
 
 ## Collections page
-Use the Collections page to view, manage, and take action on collections information, activities, and cases for a customer. The upper pane displays cases for the selected customer. The middle pane displays transactions for the customer. The lower pane displays activities for the customer. You can create collections cases to track collections information for one or more transactions and activities. The information in the upper and lower panes can be filtered by case. FactBoxes display aged balances and credit limit information for the selected customer. This information is stored in the aging snapshot. If necessary, you can update the aging snapshot with current information. The Action Pane contains buttons that display related information for the selected customer, case, transaction, or activity. You can also perform common actions such as changing the collections status of a transaction, sending email correspondence through the integration with your email provider, reimbursing customers, processing NSF payments, and writing off uncollectible balances.
+Use the Collections page to view, manage, and take action on collections information, activities, and cases for a customer. 
+
+The upper pane displays cases for the selected customer. The middle pane displays transactions for the customer. The lower pane displays activities for the customer. You can create collections cases to track collections information for one or more transactions and activities. The information in the upper and lower panes can be filtered by case. 
+
+FactBoxes display aged balances and credit limit information for the selected customer. This information is stored in the aging snapshot. If necessary, you can update the aging snapshot with current information. 
+
+The Action Pane contains buttons that display related information for the selected customer, case, transaction, or activity. You can also perform common actions such as changing the collections status of a transaction, sending email correspondence through the integration with your email provider, reimbursing customers, processing NSF payments, and writing off uncollectible balances.
 
 ## Waive, reinstate, or reverse interest and fees
-You can waive, reinstate, or reverse complete interest notes, or fees and transaction interest that are a part of interest notes. You can do this from the Collect tab on the Action Pane on the All customers list page by clicking Interest note, Transaction interest, or Fee. These adjustments affect only interest notes, and the interest and fees that they include. Use the steps in the “Create write-off transactions in one step” section to write off all of the charges that a customer owes.
+You can waive, reinstate, or reverse complete interest notes, or fees and transaction interest that are a part of interest notes. You can do this from the Collect tab on the Action Pane on the All customers list page by clicking Interest note, Transaction interest, or Fee. 
+
+These adjustments affect only interest notes, and the interest and fees that they include. Use the steps in the “Create write-off transactions in one step” section to write off all of the charges that a customer owes.
 
 ## Create writeoff transactions
-You can write off bad debts by clicking Write off in the Collections form, and on the Aged balances, Customers, and Open customer invoices list pages. When you write off transactions for a customer, all transactions for the customer are automatically marked for settlement. The amount that is written off depends on the net amount of the marked transactions. The write-off transaction is created in a general journal and can contain up to three types of journal lines.
+You can write off bad debts by clicking Write off in the Collections form, and on the Aged balances, Customers, and Open customer invoices list pages. 
+
+When you write off transactions for a customer, all transactions for the customer are automatically marked for settlement. The amount that is written off depends on the net amount of the marked transactions. The write-off transaction is created in a general journal and can contain up to three types of journal lines.
+
 -   The first type of journal line contains the customer write-off entry. If the marked transactions contain multiple combinations of currency code, dimension, and posting profile, a separate journal line is created for each combination.
 -   The second type of journal line contains the general ledger write-off entry. If the marked transactions contain multiple combinations of currency code, dimension, and posting profile, a separate journal line is created for each combination.
 -   The third type of journal line contains the general ledger write-off information for sales taxes. This journal line is created only if the Separate sales tax toggle is selected in the Accounts receivable parameters page. If the marked transactions contain multiple combinations of sales tax payable account, dimension, and sales tax code, a separate journal line is created for each combination.

@@ -1,12 +1,19 @@
 # [Developer home page](developer-home-page.md)
+
 # [Application stack and server architecture](application-stack-server-architecture.md)
+
 # [Get an evaluation copy](get-evaluation-copy.md)
+
 # [Sign up for a subscription](sign-up-preview-subscription.md)
+
 # [Access Dynamics 365 for Operations instances](..\dev-tools\access-instances.md)
+
 # [Development system requirements](development-system-requirements.md)
+
 # Fleet Management sample application
 ## [Fleet Management sample application](fleet-management-sample.md)
 ## [Fleet Management sample application overview](introduction-fleet-management-sample.md)
+
 # Visual Studio tools
 ## [Development tools for Dynamics 365 for Operations](introduction-visual-studio.md)
 ## [Application Explorer](application-explorer.md)
@@ -27,6 +34,7 @@
 ## [Tools add-ins for Visual Studio](developer-tools-add-ins.md)
 ## [Turn off model customization and deprecate functionality](lock-models.md)
 ## [Update Visual Studio development tools](update-development-tools.md)
+
 # X++ programming language
 ## [X++ and debugger features ](new-x-debugger-features.md)
 ## [Debug X++ against a copy of a production database](debug-x-issue-against-copy-of-production.md)
@@ -48,8 +56,10 @@
 ### [X++ and C# comparison](../dev-reference/xpp-cs-comparison.md)
 ### [X++ syntax](../dev-reference/xpp-syntax.md)
 ## [Application Explorer properties](../dev-reference/application-explorer-aot-properties.md)
+
 # Compile-time functions
 ## [X++ compile-time functions](../dev-reference/xpp-compile-time-functions.md)
+
 # Run-time functions
 ## [X++ business run-time functions](../dev-reference/xpp-business-run-time-functions.md)
 ## [X++ container run-time functions](../dev-reference/xpp-container-run-time-functions.md)
@@ -60,8 +70,10 @@
 ## [X++ run-time functions](../dev-reference/xpp-run-time-functions.md)
 ## [X++ session run-time functions](../dev-reference/xpp-session-run-time-functions.md)
 ## [X++ string run-time functions](../dev-reference/xpp-string-run-time-functions.md)
+
 # System tables
 ## [System tables](../dev-reference/system-tables.md)
+
 # System classes
 ## [API, class, and table reference](../dev-reference/api-reference.md)
 ## [A Classes](../dev-reference/a-classes.md)
@@ -99,23 +111,28 @@
 ## [V Classes](../dev-reference/v-classes.md)
 ## [W Classes](../dev-reference/w-classes.md)
 ## [X Classes](../dev-reference/x-classes.md)
+
 # Customize with extensions and overlayering
 ## Extensibility home page
-## [Customize model elements using extensions](../extensions-overlayering/..\extensions-overlayering\customize-model-elements-extensions.md)
-## [Customize with extensions and overlayering](customization-overlayering-extensions.md)
-## [Class extensions](../extensions-overlayering\class-extensions.md)
+## [Customize model elements using extensions](../extensibility/customize-model-elements-extensions.md)
+## [Customize with extensions and overlayering](../extensibility/customization-overlayering-extensions.md)
+## [Class extensions](../extensibility/class-extensions.md)
 ## Database synchronization
+
 # Move packages between environments
 ## Create and apply a deployable package
+
 # Performance
 ## Performance home page
 ## [Take a trace using Trace parser](../perf-test/trace-trace-tutorial.md)
 ## [PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
 ## [Diagnose problems and analyze performance issues using Trace parser](../perf-test/trace-parser.md)
 ## [Performance timer](../perf-test/performance-timer.md)
+
 # Testing support in Visual Studio
 ## [Testing and validations](../perf-test/testing-validation.md)
 ## [Test projects in Visual Studio](../perf-test/testing-support.md)
 ## [Deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+
 # Dates
 ## [Date effectivity](date-effectivity.md)

@@ -115,5 +115,5 @@ When you're satisfied with all changes that are related to this update, check in
 After a hotfix has been installed on a development VM as described in this article, you don't have to reinstall, resolve conflicts, and validate on other development VMs that are connected to the same VSTS project. Developers and testers who are connected to the same VSTS project can just synchronize the changes into their local VM and then build.
 
 ## Deploy
-After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment. If you use a build instance for build and test automation, the build process will automatically create the deployable package for you. For more information, see [Create and apply a deployable package](create-apply-deployable-package.md).
+After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment. If you use a build instance for build and test automation, the build process will automatically create the deployable package for you. For more information, see [Create and apply a deployable package](/deployment/create-apply-deployable-package.md).
 

@@ -1,7 +1,6 @@
 # [Cost management](cost-management\TOC.md)
 # [Inventory management](inventory-management\TOC.md)
 # Master planning
-## [Master planning home page](production-control\master-plan.md)
 ## Create demand forecast
 ### [Demand forecast overview](master-planning\introduction-demand-forecasting.md)
 ### [Set up a demand forecast](master-planning\demand-forecasting-setup.md)
@@ -26,16 +25,13 @@
 ### [Maintain planned orders](master-planning\maintain-planned-orders.md)
 ### [Trace an explosion](master-planning\trace-explosion.md)
 # Procurement and sourcing
-## [Procurement and sourcing home page](procurement-sourcing\procurement-sourcing.md)
 ## [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
-## [Procurement and sourcing workflows](procurement-sourcing\procurement-sourcing-workflows.md)
+## [Procurement and sourcing workflow](procurement-sourcing\procurement-sourcing-workflows.md)
 ## [Purchasing policies](procurement-sourcing\purchase-policies.md)
-## Procurement product management
-### [Procurement catalogs](procurement-sourcing\procurement-catalogs.md)
+## [Procurement catalogs](procurement-sourcing\procurement-catalogs.md)
 ## [Purchase requisitions](procurement-sourcing\purchase-requisitions-overview.md)
 ### [Purchase requisition workflow](procurement-sourcing\purchase-requisitions-workflow.md) 
-## Request for quotation
-### [Request for quotations (RFQs)](procurement-sourcing\request-quotations.md)
+## [Request for quotations (RFQs)](procurement-sourcing\request-quotations.md)
 ## Purchase orders
 ### [Purchase order overview](procurement-sourcing\purchase-order-overview.md)
 ### [Create purchase orders](procurement-sourcing\purchase-order-creation.md)
@@ -53,8 +49,8 @@
 ### [Purchase agreements](procurement-sourcing\purchase-agreements.md)
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
-### [Overview of vendor invoices](\financials\accounts-payable\vendor-invoices-overview.md)
-### [Vendor posting profiles](\financials\accounts-payable\vendor-posting-profiles.md)
+### [Overview of vendor invoices](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+### [Vendor posting profiles](/Dynamics-365-Operations/blob/master/financials/accounts-payable/vendor-posting-profiles)
 # Product information management
 ## Product information
 ### [BOM and formula](production-control\bill-of-material-bom.md)
@@ -82,7 +78,7 @@
 ### [Consolidated batch orders](production-control\consolidated-batch-orders.md)
 ### [Manage subcontracting work in production](production-control\manage-subcontract-work-production.md)
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control\mixed-mode-plan.md)
-### [Production process](cost-management\production-process-overview.md)
+### [Production process](production-control\production-process-overview.md)
 ### [Production setup requirements](production-control\production-set-up-requirements.md)
 ### [Routes and operations](production-control\routes-operations.md)
 ## Production orders
@@ -114,7 +110,6 @@
 ### [Production posting](cost-management\production-posting.md)
 ### [Registration for manufacturing execution](production-control\registration-manufacturing-execution.md)
 # Sales and marketing
-## [Sales home page](sales-marketing\sales.md)
 ## [Marketing](sales-marketing\overview-sales-marketing.md)
 ## Sales orders
 ### [Order promising](sales-marketing\delivery-dates-available-promise-calculations.md)

@@ -53,7 +53,10 @@ In the following screen shot, the **CustomerList** view has two data sources:
 -   **Root** – CustTable, which has its **SaveDataPerCompany** property set to **Yes**.
 -   **Non-root** – DirPartyTable, which has its **SaveDataPerCompany** property set to **No**.
 
-[![root](./media/root.png)](./media/root.png) The **CustomerList** view has its **AllowCrossCompany** property set to **No**, as shown in the following screen shot. [![crosscomp](./media/crosscomp.png)](./media/crosscomp.png) Given the preceding information about the **CustomerList** view, the system creates the view in the underlying SQL Server system by generating and then running the following SQL **Create View** statement.
+[![root](./media/root.png)](./media/root.png) 
+The **CustomerList** view has its **AllowCrossCompany** property set to **No**, as shown in the following screen shot. 
+[![crosscomp](./media/crosscomp.png)](./media/crosscomp.png) 
+Given the preceding information about the **CustomerList** view, the system creates the view in the underlying SQL Server system by generating and then running the following SQL **Create View** statement.
 
     CREATE VIEW [dbo].[CUSTOMERLIST] 
     AS 
@@ -70,7 +73,8 @@ In the following screen shot, the **CustomerList** view has two data sources:
 
 ### Making DirPartyTable the root data source
 
-[![dirpar](./media/dirpar.png)](./media/dirpar.png) By swapping the positions of the two data source tables in the **CustomerList** view, you make the DirPartyTable table the root data source.
+[![dirpar](./media/dirpar.png)](./media/dirpar.png) 
+By swapping the positions of the two data source tables in the **CustomerList** view, you make the DirPartyTable table the root data source.
 
     CREATE VIEW [dbo].[CUSTOMERLISTPARTY] 
     AS 
@@ -106,7 +110,9 @@ Data entities help you overcome the limitations of tables and view where cross-c
 -   The field can be any field that is extended from the **DataAreaId** extended data type (EDT), and isn't limited to an underlying system **dataAreaId** field.
 -   You can use the **PrimaryCompanyContext** property even when the entity has only shared tables as its data sources, if this makes sense for your specific situation.
 
-The following screen shot shows the value set for the **PrimaryCompanyContext** property on the **FMCustGroupEntity** entity. [![prim1](./media/prim1.png)](./media/prim1.png) When the **PrimaryCompanyContext** value is set to a non-empty value, the entity can't behave as a shared entity. The **dataAreaId** field is added to the SQL **Create View** statement.
+The following screen shot shows the value set for the **PrimaryCompanyContext** property on the **FMCustGroupEntity** entity. 
+[![prim1](./media/prim1.png)](./media/prim1.png) 
+When the **PrimaryCompanyContext** value is set to a non-empty value, the entity can't behave as a shared entity. The **dataAreaId** field is added to the SQL **Create View** statement.
 
     CREATE VIEW [dbo].[FMCUSTGROUPENTITY] 
     AS 
@@ -141,7 +147,11 @@ When the **PrimaryCompanyContext** property is set on the data entity, a **dataA
 | Read (R)    | Results aren't filtered, because no system **dataAreaId** field is created on the view schema.                                   | (The same as for R with X++)   |
 | Write (CUD) | There is no primary company context to set. Therefore, CUD access to the entity is always in the context of the current company. | (The same as for CUD with X++) |
 
-In the current example, the **FMCustomerGroupGlobalEntity** entity has no value assigned to its **PrimaryCompanyContext** property. [![ent1](./media/ent1.png)](./media/ent1.png) However, a **dataAreaId** field from the FMCustGroup table is mapped to the **FMCustomerGroupGlobalEntity** entity as a regular field that is named **LegalEntity**. In this example, the FMCustGroup table is the root data source for **FMCustomerGroupGlobalEntity**. However, we are using this **dataAreaId** field in an informal way that bypasses the automatic mechanisms of the system. All these details are shown in the following screen shot of the **LegalEntity** field. [![ent2](./media/ent2.png)](./media/ent2.png) **Note:** Although the terms *legal entity* and *data entity* both use the word *entity*, don't confuse them. Legal entities and data entities are two entirely different concepts. When the **PrimaryCompanyContext** property is empty, the SQL **Create View** statement usually contains no mention of a system **dataAreaId** column. However, in the current example, **dataAreaId** is "half-mentioned" because of the **LegalEntity** regular field on the data entity. This field is shown in the following SQL statement.
+In the current example, the **FMCustomerGroupGlobalEntity** entity has no value assigned to its **PrimaryCompanyContext** property. 
+[![ent1](./media/ent1.png)](./media/ent1.png) 
+However, a **dataAreaId** field from the FMCustGroup table is mapped to the **FMCustomerGroupGlobalEntity** entity as a regular field that is named **LegalEntity**. In this example, the FMCustGroup table is the root data source for **FMCustomerGroupGlobalEntity**. However, we are using this **dataAreaId** field in an informal way that bypasses the automatic mechanisms of the system. All these details are shown in the following screen shot of the **LegalEntity** field.
+[![ent2](./media/ent2.png)](./media/ent2.png)
+**Note:** Although the terms *legal entity* and *data entity* both use the word *entity*, don't confuse them. Legal entities and data entities are two entirely different concepts. When the **PrimaryCompanyContext** property is empty, the SQL **Create View** statement usually contains no mention of a system **dataAreaId** column. However, in the current example, **dataAreaId** is "half-mentioned" because of the **LegalEntity** regular field on the data entity. This field is shown in the following SQL statement.
 
     CREATE VIEW [dbo].[FMCUSTOMERGROUPGLOBALENTITY] 
     AS 
@@ -162,7 +172,8 @@ This example has two purposes:
 
 ### Test data
 
-The following screen shot of the **Table browser** page shows the test data that is in the **FMCustomerGroupGlobalEntity** entity before the X++ test code is run. [![ent3](./media/ent3.png)](./media/ent3.png)
+The following screen shot of the **Table browser** page shows the test data that is in the **FMCustomerGroupGlobalEntity** entity before the X++ test code is run. 
+[![ent3](./media/ent3.png)](./media/ent3.png)
 
 ### X++ code
 

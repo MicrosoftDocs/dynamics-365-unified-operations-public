@@ -1,9 +1,9 @@
 # Retail development
 ## [Dynamics 365 for Operations - Retail for IT pros and developers](dev-retail-home-page.md)
 ## Retail components
-### Components (missing)
-### r scale unit (missing)
-### r channel pack for power bi (missing)
+### Components
+### [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
+### [Retail Channel Performance content pack for Power BI](../analytics-bi-reporting/retail-channel-performance-dashboard-power-bi-data.md)
 ## Deployment
 ## [Retail POS device activation](retail-device-activation.md)
 ## Point of sale
@@ -37,9 +37,9 @@
 ## Retail SDK
 ### [Retail SDK overview](retail-sdk-overview.md)
 ### [Integrate the Retail SDK with the continuous build system (retail\VSTS)](integrate-retail-sdk-continuous-build.md)
-### [Retail SDK extensibility samples](retail-sdk-extensibility-samples.md)
-### [Retail SDK packaging](retail-sdk-packaging.md)
-### [Retail SDK samples ](retail-sdk-samples.md)
+### [Retail SDK extensibility samples](retail-sdk\retail-sdk-extensibility-samples.md)
+### [Retail SDK packaging](retail-sdk\retail-sdk-packaging.md)
+### [Retail SDK samples ](retail-sdk\retail-sdk-samples.md)
 ## [Define retail channel communications (retail\Commerce Data Exchange)](define-retail-channel-communications-cdx.md)
 ## [Dynamics 365 for Operations versions and update policy](ecommerce-platform-sdk.md)
 ## [Payment methods](payment-methods.md)

@@ -37,7 +37,11 @@ This article provides general information about vendor invoices. Vendor invoices
 Vendor invoices
 ---------------
 
-A vendor invoice from a purchase order is an invoice that is produced when products or services are received according to a purchase order that was placed with a vendor. The vendor invoice contains a header, and one or more lines for items or services. A vendor invoice completes the cycle from purchase order to product receipt to vendor invoice. Although some vendor invoices are connected to a purchase order, vendor invoices can also contain lines that don't correspond to purchase order lines. You can also create vendor invoices that aren't associated with any purchase order. These vendor invoices might represent ongoing services, such as a utility bill, and you don't have to reference a purchase order when you add them. There are several ways to enter a vendor invoice:
+A vendor invoice from a purchase order is an invoice that is produced when products or services are received according to a purchase order that was placed with a vendor. The vendor invoice contains a header, and one or more lines for items or services. A vendor invoice completes the cycle from purchase order to product receipt to vendor invoice. 
+
+Although some vendor invoices are connected to a purchase order, vendor invoices can also contain lines that don't correspond to purchase order lines. You can also create vendor invoices that aren't associated with any purchase order. These vendor invoices might represent ongoing services, such as a utility bill, and you don't have to reference a purchase order when you add them. 
+
+There are several ways to enter a vendor invoice:
 
 -   The vendor invoice register lets you quickly enter invoices that don't reference a purchase order, so that you can accrue the expense. By using the vendor invoice approval journal, you can select those invoices and post them to the vendor balance to reverse the accrual.
 -   The vendor invoice journal lets you quickly enter invoices that don't reference a purchase order, in a single step.
@@ -64,17 +68,16 @@ You can add a new line that wasn't on the purchase order to the vendor invoice.�
 Your organization might use workflows to manage the review process for vendor invoices. Workflow review can be required for the invoice header, the invoice line, or both. The workflow controls apply to the header or the line, depending on where the focus is when you click the control. Instead of the **Post** button, you will see a **Submit** button that you can use to send the vendor invoice through the review process.
 
 ## Matching vendor invoices to product receipts
-You can enter and save information for vendor invoices, and you can match invoice lines to product receipt lines. You can also match partial quantities for a line. You can create a vendor invoice that is based on the product receipt line items that have been received to date, even if all the items for a particular purchase order haven't yet been received. For example, you might use this option if a vendor sends one invoice per month that covers all the deliveries that the vendor shipped during that month. Each product receipt represents a partial or complete delivery of the items on the purchase order. When you post the invoice, the **Invoice remainder** quantity for each item is updated with the total of the received quantities from the selected product receipts. If both the **Invoice remainder** quantity and the **Deliver remainder** quantity for all items on the purchase order are 0 (zero), the status of the purchase order is changed to **Invoiced**. If the **Invoice remainder** quantity isn't 0, the status of the purchase order remains unchanged, and additional invoices can be entered for it. This option assumes that at least one product receipt has been posted for the purchase order. The vendor invoice is based on these product receipts and reflects the quantities from them. The financial information for the invoice is based on the information that is entered when you post the invoice.
+You can enter and save information for vendor invoices, and you can match invoice lines to product receipt lines. You can also match partial quantities for a line. 
+
+You can create a vendor invoice that is based on the product receipt line items that have been received to date, even if all the items for a particular purchase order haven't yet been received. For example, you might use this option if a vendor sends one invoice per month that covers all the deliveries that the vendor shipped during that month. Each product receipt represents a partial or complete delivery of the items on the purchase order. 
+
+When you post the invoice, the **Invoice remainder** quantity for each item is updated with the total of the received quantities from the selected product receipts. If both the **Invoice remainder** quantity and the **Deliver remainder** quantity for all items on the purchase order are 0 (zero), the status of the purchase order is changed to **Invoiced**. If the **Invoice remainder** quantity isn't 0, the status of the purchase order remains unchanged, and additional invoices can be entered for it.
+
+This option assumes that at least one product receipt has been posted for the purchase order. The vendor invoice is based on these product receipts and reflects the quantities from them. The financial information for the invoice is based on the information that is entered when you post the invoice.
 
 ## Working with multiple invoices
+
 You can work with multiple invoices at the same time and post them all at the same time. If you must create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal page. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
 
-See also
---------
-
-[Enter and post invoices in the invoice journal](http://ax.help.dynamics.com/en/wiki/record-a-vendor-invoice-in-the-invoice-journal/)
-
-[Enter and post invoices in the Invoice register form and invoice pool](http://ax.help.dynamics.com/en/wiki/key-invoice-data-in-ap-system-using-invoice-pool/)
-
-[Enter and post invoice in the Invoice register using the approval journal](http://ax.help.dynamics.com/en/wiki/key-invoice-data-in-ap-system-using-invoice-register/)
 

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article shows how partial customer payments are settled when there are multiple discount periods.
 
-Fabrikam offers customer 4031 two cash discount periods. The customer receives a 2-percent cash discount if the invoice is paid in five days and a 1-percent cash discount if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The [settlement parameters](http://ax.help.dynamics.com/en/?p=246884) are located on the **Accounts receivable parameters** page.
+Fabrikam offers customer 4031 two cash discount periods. The customer receives a 2-percent cash discount if the invoice is paid in five days and a 1-percent cash discount if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The settlement parameters are located on the **Accounts receivable parameters** page.
 
 ## Invoice
 On June 25, Arnie enters and posts an invoice for 1,000.00 for customer 4031. When he reviews the cash discounts for this invoice, Arnie sees that customer 4031 receives a 20.00 discount if the invoice is paid by June 30. If the invoice is paid by July 9, the customer receives a 10.00 discount.

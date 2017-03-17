@@ -57,14 +57,14 @@ Translated task guides were shipped in the May APQC Unified Library, and the Get
 -   If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Creating custom help
-You can create custom help for your Dynamics 365 for Operations implementation by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see the topic [How to create a task recording to use as documentation or training](task-recorder.md)..
+You can create custom help for your Dynamics 365 for Operations implementation by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see the topic [How to create a task recording to use as documentation or training](../user-interface/task-recorder.md).
 
 See also
 --------
 
 [Microsoft Dynamics AX Help – Getting started](help-get-started.md)
 
-[How to create a task recording to use as documentation or training](task-recorder.md)
+[How to create a task recording to use as documentation or training](../user-interface/task-recorder.md)
 
 [Creating New Training Libraries for Dynamics AX within Lifecycle Services using the Task Recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
