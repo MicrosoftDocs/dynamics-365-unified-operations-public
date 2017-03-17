@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26961
@@ -101,201 +101,45 @@ You can extend the functionality of a form by extending its controls and data so
 
 Other ways to customize a form, such as reordering controls in the form or subscribing to form or control events, are planned to be included in a future release. In Microsoft Dynamics AX 2012, you could override form methods. In the current version, you use extensions to implement event handlers that are called from the base implementations of form methods. The following table lists each method and its associated events.
 
-**Published form DataSource method**
-
-**Preceding event**
-
-**Succeeding event**
-
-active
-
-N/A
-
-Activated
-
-delete
-
-Deleting
-
-Deleted
-
-validateWrite
-
-ValidatingWriting
-
-ValidatedWrite
-
-write
-
-Writing
-
-Written
-
-create
-
-Creating
-
-Created
-
-executeQuery
-
-N/A
-
-QueryExecuted
-
-linkActive
-
-N/A
-
-PostLinkActive
-
-init
-
-N/A
-
-Initialized
-
-validateDelete
-
-ValidatingDelete
-
-ValidatedDelete
-
-reread
-
-N/A
-
-Reread
-
-selectionChanged
-
-N/A
-
-SelectionChanged
-
-markChanged
-
-N/A
-
-MarkChanged
-
-leaveRecord
-
-LeavingRecord
-
-LeftRecord
-
- 
-
-**Published form Object method**
-
-**Preceding event**
-
-**Succeeding event**
-
-init
-
-Initializing
-
-Initialized
-
-close
-
-Closing
-
-N/A
-
-run
-
-N/A
-
-PostRun
-
-activate
-
-N/A
-
-Activated
-
- 
-
-**Published form Control method**
-
-**Preceding event**
-
-**Succeeding event**
-
-modified
-
-N/A
-
-Modified
-
-validate
-
-Validating
-
-Validated
-
-leave
-
-Leaving
-
-LostFocus
-
-enter
-
-N/A
-
-Enter
-
-gotFocus
-
-N/A
-
-GotFocus
-
-clicked
-
-N/A
-
-Clicked
-
-selectionChange
-
-SelectionChanging
-
-N/A
-
-pageActivated
-
-N/A
-
-PageActivated
-
-allowPageDeactivate
-
-AllowPageDeactivate
-
-N/A
-
-expand
-
-Expanding
-
-Expanded
-
-tabChanged
-
-N/A
-
-TabChanged
-
-dialogClosed
-
-N/A
-
-DialogClosed
+|**Published form DataSource method**|**Preceding event**|**Succeeding event**|
+|---|---|---|
+|active|N/A|Activated|
+|delete|Deleting|Deleted|
+|validateWrite|ValidatingWriting|ValidatedWrite|
+|write|Writing|Written|
+|create|Creating|Created|
+|executeQuery|N/A|QueryExecuted|
+|linkActive|N/A|PostLinkActive|
+|init|N/A|Initialized|
+|validateDelete|ValidatingDelete|ValidatedDelete|
+|reread|N/A|Reread|
+|selectionChanged|N/A|SelectionChanged|
+|markChanged|N/A|MarkChanged|
+|leaveRecord|LeavingRecord|LeftRecord|
+
+
+|**Published form Object method**|**Preceding event**|**Succeeding event**
+|---|---|---|
+|init|Initializing|Initialized
+|close|Closing|N/A
+|run|N/A|PostRun
+|activate|N/A|Activated
+
+
+|**Published form Control method**|**Preceding event**|**Succeeding event**
+|---|---|---|
+|modified|N/A|Modified
+|validate|Validating|Validated
+|leave|Leaving|LostFocus
+|enter|N/A|Enter
+|gotFocus|N/A|GotFocus
+|clicked|N/A|Clicked
+|selectionChange|SelectionChanging|N/A
+|pageActivated|N/A|PageActivated
+|allowPageDeactivate|AllowPageDeactivate|N/A
+|expand|Expanding|Expanded
+|tabChanged|N/A|TabChanged
+|dialogClosed|N/A|DialogClosed
 
 ### Code behind extension forms
 
