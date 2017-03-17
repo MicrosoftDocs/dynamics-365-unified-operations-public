@@ -3,7 +3,7 @@
 
 title: Reimbursements in the public sector
 description: This topic answers common questions related to reimbursements in the public sector. 
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-13 05 - 21 - 25
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: CustBillingClassification
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27311
@@ -64,12 +64,5 @@ No. Reimbursements are not processed for any customer who has pending settlement
 ## Can I reverse reimbursement settlements?
 No, not directly. However, you could use general journal entries to create transactions that would have the effect of reversing the general ledger entries.
 
-See also
---------
 
-[Accounts receivable](..\accounts-receivable\accounts-receivable.md)
-
-[Accounts receivable in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=169941)
-
-[Billing classifications and billing codes in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=169891)
 
