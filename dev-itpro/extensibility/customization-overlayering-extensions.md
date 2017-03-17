@@ -52,14 +52,18 @@ You can customize an application by using *extensions*. An extension enables y
 To get started, review or complete this tutorial: [Customize model elements using extensions](customize-model-elements-extensions.md).
 
 ## Extension models and packages
-You can create a model that contains only new model elements, new code, or extensions. This model is compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step. [![1\_Cust](./media/1_cust.png)](./media/1_cust.png) Extension models have several advantages, including:
+You can create a model that contains only new model elements, new code, or extensions. This model is compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step. 
+
+[![1\_Cust](./media/1_cust.png)](./media/1_cust.png) Extension models have several advantages, including:
 
 -   **Application lifecycle management (ALM):** Extension models simplify and improve the performance of deployments, builds, test automation and delivery to customers.
 -   **Design time performance:** Building your model or project doesn't require you to recompile the entire application.
 -   **Servicing:** In the cloud, Microsoft can install, patch, upgrade, and change internal APIs without affecting your customizations.
 -   **Upgrades:** Unlike overlayering, extensions reduce the cost of upgrading to a new version, as this approach eliminates costly code and metadata conflicts.
 
-The following diagram illustrates how extensions get isolated in their assemblies. [![](./media/ax7customization1.png)](./media/ax7customization1.png)
+The following diagram illustrates how extensions get isolated in their assemblies. 
+
+![./media/ax7customization1.png](./media/ax7customization1.png)
 
 ## Code extensions
 You can extend code in two ways:
@@ -171,7 +175,11 @@ Validation events capture and return results by using the **DataEventArgs** para
 You can extend a View or Data entity to achieveÂ much of theÂ functionalityÂ available withÂ table extensions.
 
 ## Enum extensions
-You can extend any Enum that is marked extensble (IsExtensible=True). [![extensibleenums](./media/extensibleenums-300x158.png)](./media/extensibleenums.png) By extending an Enum, you can add new Enum values to it. It is important to keep the following in mind when dealing with extensible Enums:
+You can extend any Enum that is marked extensble (IsExtensible=True). 
+
+[![extensibleenums](./media/extensibleenums-300x158.png)](./media/extensibleenums.png) 
+
+By extending an Enum, you can add new Enum values to it. It is important to keep the following in mind when dealing with extensible Enums:
 
 1.  You cannot have X++ logic that depends on the integer value of Enum values (For example. *If (Enum1.v1 &gt; Enum1.v2) ...* is not supported for extensible enums)
 2.  WhenÂ Enum values of extensible Enums are synchronized into the database:
@@ -271,11 +279,25 @@ When an event takes place, the delegates described in the sections above get tri
 | onValidatingWrite               | ValidateEventArgs                |
 
 ## Development tools support
-The development tools in Visual Studio provide integrated features to help you create and work with extensions. For example, when you right-click an element name in **Application Explorer**, you can create an extension for that element. [![3\_Cust](./media/3_cust.png)](./media/3_cust.png) To create an extension, the current project in **Solution Explorer** must belong to a model that references the model of the selected element in **Application Explorer**. To view the model for a particular project, view the project properties. [![4\_Cust](./media/4_cust.png)](./media/4_cust.png) Visual Studio creates the extension file for you, either in the current project or in a new project. You can then work with the extension file either as source code or by using a designer. You package a code-extension model for deployment exactly like you would package any other model. On the **Dynamics 365** menu, point to **Deploy**, click **Create Deployment Package**, and then select the check box for the package name.
+The development tools in Visual Studio provide integrated features to help you create and work with extensions. For example, when you right-click an element name in **Application Explorer**, you can create an extension for that element. 
+
+[![3\_Cust](./media/3_cust.png)](./media/3_cust.png) 
+
+To create an extension, the current project in **Solution Explorer** must belong to a model that references the model of the selected element in **Application Explorer**. To view the model for a particular project, view the project properties. 
+
+[![4\_Cust](./media/4_cust.png)](./media/4_cust.png) 
+
+Visual Studio creates the extension file for you, either in the current project or in a new project. You can then work with the extension file either as source code or by using a designer. You package a code-extension model for deployment exactly like you would package any other model. On the **Dynamics 365** menu, point to **Deploy**, click **Create Deployment Package**, and then select the check box for the package name.
 
 ### Framework events
 
-Tables, form data sources, form controls, and other element types that support extension events list the available events (and delegates) under an **Events** collection node. For example, viewing the **Events** node of a table extension shows events that are defined by the framework, and delegate methods that are defined by application developers. [![5\_Cust](./media/5_cust.png)](./media/5_cust.png) **Note**: Events are exposed on the designer on different element and sub-element types, like table events, form events, form data source events, form control events, and others. Open the context menu of an event node to interact with events: [![6\_Cust](./media/6_cust.png)](./media/6_cust.png)
+Tables, form data sources, form controls, and other element types that support extension events list the available events (and delegates) under an **Events** collection node. For example, viewing the **Events** node of a table extension shows events that are defined by the framework, and delegate methods that are defined by application developers. 
+
+[![5\_Cust](./media/5_cust.png)](./media/5_cust.png) 
+
+**Note**: Events are exposed on the designer on different element and sub-element types, like table events, form events, form data source events, form control events, and others. Open the context menu of an event node to interact with events: 
+
+[![6\_Cust](./media/6_cust.png)](./media/6_cust.png)
 
 -   **Copy event handler method**: This option copies a method signature to the clipboard. You can paste it in any X++ code editor to define a method that subscribes to the selected event.
 -   **Find event handlers**: Searches and lists all methods subscribed to the selected event.
