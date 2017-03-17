@@ -314,7 +314,7 @@ Additional menu items options are available on the **Mobile device menu items** 
 </tr>
 <tr class="even">
 <td>Display inventory status</td>
-<td>Select this option to display the status of items in inventory. For more information, see <a href="inventory-statuses.md">Advantages of using Inventory statuses</a>. This option is available for all menu items that use existing work, except cycle counting.</td>
+<td>Select this option to display the status of items in inventory. For more information, see <a href="/inventory-management/inventory-statuses.md">Advantages of using Inventory statuses</a>. This option is available for all menu items that use existing work, except cycle counting.</td>
 </tr>
 <tr class="odd">
 <td>Display summary of pick screen</td>

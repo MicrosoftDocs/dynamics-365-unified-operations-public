@@ -51,7 +51,7 @@ Prerequisites
 <tbody>
 <tr class="odd">
 <td>Read about the Microsoft Dynamics 365 for Operations mobile platform</td>
-<td><a href="mobile-platform.md">Dynamics 365 for Operations mobile platform</a></td>
+<td><a href="dev-itpro/mobile-apps/mobile-platform">Dynamics 365 for Operations mobile platform</a></td>
 </tr>
 <tr class="even">
 <td>Dynamics 365 for Operations</td>

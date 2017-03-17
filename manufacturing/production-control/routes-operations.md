@@ -186,7 +186,7 @@ See also
 
 [Bills of materials and formulas](bill-of-material-bom.md)
 
-[Cost categories used in production routing](cost-management\cost-categories-used-production-routings.md)
+[Cost categories used in production routing](/cost-management/cost-categories-used-production-routings.md)
 
 [Resource capabilities](resource-capabilities.md)
 
