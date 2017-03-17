@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate code for an LCS solution
-description: The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create Dynamics AX Solutions</strong> in LCS. For more details on code migration, see the **Code migration** section in the topic, <a href="http - //ax.help.dynamics.com/en/wiki/technical-concepts-guide"></a>.  After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
+description: The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create Dynamics AX Solutions</strong> in LCS. For more details on code migration, see the **Code migration** section in the topic, <a href="http://ax.help.dynamics.com/en/wiki/technical-concepts-guide"></a>.  After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 author: kfend
 manager: AnnBe
 ms.date: 2016-10-03 22 - 50 - 41
@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 # Migrate code for an LCS solution
 
-The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create Dynamics AX Solutions</strong> in LCS. For more details on code migration, refer to this <a href="http - //ax.help.dynamics.com/en/wiki/technical-concepts-guide/#code-migration">page</a>.  After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
+The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create Dynamics AX Solutions</strong> in LCS. For more details on code migration, refer to this <a href="http://ax.help.dynamics.com/en/wiki/technical-concepts-guide/#code-migration">page</a>.  After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 
 To generate the Customization Analysis report (CAR), run the following command on a Microsoft Dynamics AX development environment.
 
