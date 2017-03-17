@@ -132,7 +132,7 @@ There are three key ways to find delegates and handlers
 -   Class references
 -   SubscribesTo references
 
-The Metadata search tool, described on the [Metadata search in Visual Studio](metadata-search-visual-studio.md) page, is the best way to find either delegates or their handlers. In Visual Studio, go to **Dynamics 365 **&gt; **Metadata Search** to open the metadata search tool. 
+The Metadata search tool, described on the [Metadata search in Visual Studio](..\dev-tools\metadata-search-visual-studio.md) page, is the best way to find either delegates or their handlers. In Visual Studio, go to **Dynamics 365 **&gt; **Metadata Search** to open the metadata search tool. 
 
 [![Del15](./media/del15.png)](./media/del15.png) 
 
