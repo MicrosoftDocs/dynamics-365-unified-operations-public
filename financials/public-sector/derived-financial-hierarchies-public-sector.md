@@ -3,7 +3,7 @@
 
 title: Derived financial hierarchies in the public sector
 description: This article describes the derived financial hierarchies functionality that is available for the public sector. 
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-08 18 - 59 - 20
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: EcoResCategory, EcoResCategoryHierarchyListPage, EcoResCategoryH
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 20911
@@ -45,10 +45,4 @@ An organization has an employee wellness program and an employee education progr
 
  
 
-See also
---------
-
-[General ledger](general-ledger.md)
-
-[General ledger in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=164121)
 
