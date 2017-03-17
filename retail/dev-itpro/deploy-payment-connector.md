@@ -83,7 +83,7 @@ A deployable package is an asset that can be consumed by the LCS deployment serv
 5.  Click **Upload**.
 6.  Select the zipped package, upload it, and then click **Confirm**.
 
-After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](apply-deployable-package-system.md).
+After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](\dev-itpro\deployment\apply-deployable-package-system.md).
 
 #### Download and run installers on client computers
 
