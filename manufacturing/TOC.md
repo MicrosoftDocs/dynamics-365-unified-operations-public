@@ -24,7 +24,7 @@
 ### [Explosion of a BOM version](master-planning\master-plan-explosion-bom-version.md)
 ### [Maintain planned orders](master-planning\maintain-planned-orders.md)
 ### [Trace an explosion](master-planning\trace-explosion.md)
-# [Procurement and sourcing](procurement-sourcing\procurement-sourcing.md)
+# [Procurement and sourcing]
 ## [Procurement and sourcing overview](procurement-sourcing\procurement-sourcing-overview.md)
 ## [Procurement and sourcing workflow](procurement-sourcing\procurement-sourcing-workflows.md)
 ## [Purchasing policies](procurement-sourcing\purchase-policies.md)
