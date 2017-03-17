@@ -40,14 +40,14 @@ FAQ and guidelines
 -   [Development and continuous delivery FAQ](continuous-delivery-faq.md)
 
 ## Build and test automation
--   [Developer topology deployment with continuous build and test automation](continuous-build-test-automation.md)
--   [Testing and validations](testing-validation.md)
--   [PERF103: Introduction to the PerfSDK and multiuser testing with Visual Studio Online](perfsdk-tutorial.md)
--   [Integrate the Retail SDK with the continuous build system (VSTS)](integrate-retail-sdk-continuous-build.md)
+-   [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+-   [Testing and validations](../perf-test/testing-validation.md)
+-   [PERF103: Introduction to the PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
+-   [Integrate the Retail SDK with the continuous build system (VSTS)](retail/dev-itpro/integrate-retail-sdk-continuous-build)
 -   [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
 
 ## Servicing
--   [Servicing environments](..\dev-tools\developer-home-page.md#servicing-environments)
+-   [Servicing environments](..\dev-tools\developer-home-page.md#service-environments)
 
 
 
