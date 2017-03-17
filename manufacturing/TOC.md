@@ -50,7 +50,7 @@
 ### [Purchase agreements](procurement-sourcing\purchase-agreements.md)
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement-sourcing\product-receipt-against-purchase-orders.md)
-### [Overview of vendor invoices](\financials\accounts-payable\vendor-invoices-overview.md)
+### [Overview of vendor invoices](\financials\accounts-payable\vendor-invoices-overview)
 ### [Vendor posting profiles](\financials\accounts-payable\vendor-posting-profiles.md)
 # Product information management
 ## Product information
