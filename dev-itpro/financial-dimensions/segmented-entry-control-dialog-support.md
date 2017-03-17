@@ -3,7 +3,7 @@
 
 title: Segmented entry control dialog support
 description: Describes the code pattern to add Segmented Entry controls to dialogs.
-author: twheeloc
+author: robinarh
 manager: AnnBe
 ms.date: 2015-12-12 20 - 44 - 50
 ms.topic: article
