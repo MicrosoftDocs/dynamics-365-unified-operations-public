@@ -3,7 +3,7 @@
 
 title: Year-end processing in the public sector
 description: This article provides information about year-end processing for a public sector organizations.
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-07 16 - 21 - 31
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: PurchYearEndClose
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19601
