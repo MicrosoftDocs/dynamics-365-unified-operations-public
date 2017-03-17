@@ -37,7 +37,7 @@ This topic explains how to upgrade your Microsoft Dynamics AX platform to the Au
 Overview
 --------
 
-**Important:** This topic applies only to Microsoft Dynamics AX releases prior to August 2016. For Microsoft Dynamics 365 for Operations updates, see the topic: [Upgrade Dynamics 365 for Operations to the latest platform update](upgrade-latest-platform-update.md). The Microsoft Dynamics AX platform consists of the following components:
+**Important:** This topic applies only to Microsoft Dynamics AX releases prior to August 2016. For Microsoft Dynamics 365 for Operations updates, see the topic: [Upgrade Dynamics 365 for Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md). The Microsoft Dynamics AX platform consists of the following components:
 
 -   Dynamics AX platform binaries such as Application Object Server (AOS), the data management framework, the reporting and business intelligence (BI) framework, development tools, and analytics services
 -   The following Application Object Tree (AOT) packages:
@@ -92,7 +92,7 @@ You can find these hotfixes by browsing the check-in history of these models Mic
     -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
     -   If you're upgrading a runtime environment, such as a Tier-2 sandbox or other environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
-4.  Follow the standard instructions for installing a deployable package. See [Install a deployable package in Microsoft Dynamics AX](install-deployable-package.md).
+4.  Follow the standard instructions for installing a deployable package. See [Install a deployable package in Microsoft Dynamics AX](../deployment/install-deployable-package.md).
 5.  If you're working in a development environment, rebuild your application’s code.
 
 **Important:** Do not apply this update in a runtime environment unless you have validated it in a development environment first.
@@ -107,7 +107,7 @@ You can find these hotfixes by browsing the check-in history of these models Mic
 
 ### Install the Visual Studio development tools
 
-Update the Microsoft Visual Studio development tools as described in [Updating the Dynamics AX Visual Studio development tools](update-development-tools.md).
+Update the Microsoft Visual Studio development tools as described in [Updating the Dynamics AX Visual Studio development tools](../dev-tools/update-development-tools.md).
 
 ### Regenerate form adaptor models
 
@@ -183,5 +183,5 @@ Before you apply the platform update package on your development instance, follo
 See also
 --------
 
-[Process for upgrading to the latest Dynamics AX update](upgrade-latest-update.md)
+[Process for upgrading to the latest Dynamics AX update](../migration-upgrade/upgrade-latest-update.md)
 
