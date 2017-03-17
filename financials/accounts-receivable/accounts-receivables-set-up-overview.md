@@ -110,13 +110,5 @@ The following table lists the pages that support the configuration and maintenan
 |                                                      | Salesperson information              | Set up the email address for salespersons. These addresses will appear on the Collections page and you can use them to send email to a salesperson from that page.                                                                                                                |
 
  
-
-
-
-See also
---------
-
-[]()
-
-[Credit and collections in Accounts receivable](https://ax.help.dynamics.com/en/?p=5041)
+For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).
 
