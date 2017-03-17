@@ -54,7 +54,9 @@ To get started, review or complete this tutorial: [Customize model elements usin
 ## Extension models and packages
 You can create a model that contains only new model elements, new code, or extensions. This model is compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step. 
 
-![./media/1_cust.png](./media/1_cust.png) Extension models have several advantages, including:
+![./media/1_cust.png](./media/1_cust.png) 
+
+Extension models have several advantages, including:
 
 -   **Application lifecycle management (ALM):** Extension models simplify and improve the performance of deployments, builds, test automation and delivery to customers.
 -   **Design time performance:** Building your model or project doesn't require you to recompile the entire application.
