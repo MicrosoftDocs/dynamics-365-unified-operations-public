@@ -72,7 +72,7 @@ See also
 
 [Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control migration walkthrough](segmented-entry-control-migration-conversion.md)
+[Segmented Entry control migration](segmented-entry-control-conversion.md)
 
 [Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
 
