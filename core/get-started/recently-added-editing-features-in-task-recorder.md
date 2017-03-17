@@ -45,7 +45,8 @@ You can now add a step anywhere in a task guide without playing back or re-recor
 
 1.  Select the step after which you want the new step to be inserted. Make sure the step is highlighted.
 
-In order for task recorder to insert a step, you must have the correct page open. The correct page is the page on which the new step occurs. Task recorder has a mechanism that determines what the active page is, and will disable the functionality if the correct page isn’t open. [![tg1](./media/tg1.png)](./media/tg1.png) When you are on the correct page, **Insert step** becomes available.
+In order for task recorder to insert a step, you must have the correct page open. The correct page is the page on which the new step occurs. Task recorder has a mechanism that determines what the active page is, and will disable the functionality if the correct page isn’t open. [![tg1](./media/tg1.png)](./media/tg1.png) 
+When you are on the correct page, **Insert step** becomes available.
 
 [![tg2](./media/tg2-231x300.png)](./media/tg2.png)
 
@@ -76,14 +77,13 @@ If you want the first step in the task guide to be within a sub-task, create a s
 5. When you are done editing the task guide, click **Done editing**, and then choose one of the options to save or publish the task guide.
 
 ## Collapse Recording name and description
-You can expand and collapse the **Recording name** and **Recording description** fields. When these fields are collapsed, more steps will be visible in the Task recorder editing pane. [![tg4](./media/tg4-300x252.png)](./media/tg4.png)  
+You can expand and collapse the **Recording name** and **Recording description** fields. When these fields are collapsed, more steps will be visible in the Task recorder editing pane. 
+[![tg4](./media/tg4-300x252.png)](./media/tg4.png)  
 
 See also
 --------
 
-[Task Recorder in Microsoft Dynamics 365 for Operations](task-recorder.md)
+[Create documentation or training using Task recordings](dev-itpro/user-interface/task-recorder)
 
-[Create documentation or training using Task recordings](task-recorder.md)
-
-[Task recorder quick reference](task-recorder-quick-reference.md)
+[Task recorder quick reference](dev-itpro/user-interface/task-recorder-quick-reference)
 
