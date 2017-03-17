@@ -3,7 +3,7 @@
 
 title: Preliminary budgets and apportionments in the public sector
 description: This topic covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-07 16 - 57 - 46
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BudgetBalancesActuals, BudgetControlConfiguration, BudgetTransac
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19701
@@ -36,11 +36,10 @@ This topic covers creating a preliminary budget, and setting up budgeting and bu
 
 The following sections in this topic describe the budgeting features that are available for the public sector.  Before you read this topic, you should also read [Budgeting in the public sector](budgeting-public-sector.md).
 
--   [Setting up budgeting and budget control for apportionments](#set-up-budgeting-and-budget-control-for-apportionments) You can define one or more budget codes for the apportionment budget type and configure budget control for apportionments.
--   [Setting up budgeting and budget control for a preliminary budget](#set-up-budgeting-and-budget-control-for-a-preliminary-budget) You can define budget codes for the preliminary budget type and configure budget control for preliminary budgets.
--   [Creating, viewing, and reversing a preliminary budget](#create-view-and-reverse-a-preliminary-budget)You can create preliminary budget entries, as well as create original budget entries.
+-   [Setting up budgeting and budget control for apportionments] - You can define one or more budget codes for the apportionment budget type and configure budget control for apportionments.
+-   [Setting up budgeting and budget control for a preliminary budget] - You can define budget codes for the preliminary budget type and configure budget control for preliminary budgets.
+-   [Creating, viewing, and reversing a preliminary budget] - You can create preliminary budget entries, as well as create original budget entries.
 
-[]()
 
 ## Set up budgeting and budget control for apportionments
 Apportionments are the portion of the original budget that has been approved for spending. For example, an organization might have an original budget of $1,000,000 but only have authority to spend $150,000 in the first quarter of the fiscal year. You could record an original budget register entry for $1,000,000 for the fiscal year. Then you could record an apportionment budget register entry for $150,000 for the first three months of the year. Only the $150,000 that was apportioned could be spent during the first quarter. **Note:** You cannot apportion more than the original budget amount for the financial dimension values. After you set up basic budgeting and budget control, use the following to add information about apportionments to basic budgeting and budget control.
@@ -82,12 +81,11 @@ You can define budget codes for the preliminary budget type on the **Budget code
 
 ### How do I configure budget control for preliminary budgets?
 
-The **Budget control configuration** page contains the options for working with preliminary budgets. In the **Budget funds available** section, select the **Preliminary budget** option. Note that you may need to click **Create draft** to proceed. **Notes:**
+The **Budget control configuration** page contains the options for working with preliminary budgets. In the **Budget funds available** section, select the **Preliminary budget** option. Note that you may need to click **Create draft** to proceed. 
 
--   If preliminary budgets are included in the budget funds available calculation, it is important to reverse the preliminary budget register entries when the original budget register entries are recorded in the budget balances. If the budget register entries with preliminary budget codes are not reversed, then both the preliminary budget and original budget types are added, which will overstate the available balance. For more information, see "How do I reverse a preliminary budget?" later in this article.
--   In the **Documents and journals** section, when you select the **Purchase requisitions** option, note that the options for purchase orders and vendor invoices options are automatically selected.
+> [!NOTE]
+> If preliminary budgets are included in the budget funds available calculation, it is important to reverse the preliminary budget register entries when the original budget register entries are recorded in the budget balances. If the budget register entries with preliminary budget codes are not reversed, then both the preliminary budget and original budget types are added, which will overstate the available balance. For more information, see "How do I reverse a preliminary budget?" later in this article. In the **Documents and journals** section, when you select the **Purchase requisitions** option, note that the options for purchase orders and vendor invoices options are automatically selected.
 
-[]()
 
 ## Create, view, and reverse a preliminary budget
 After you set up basic budgeting and budget control for the preliminary budget, you can create budget register entries for the preliminary budget type.
