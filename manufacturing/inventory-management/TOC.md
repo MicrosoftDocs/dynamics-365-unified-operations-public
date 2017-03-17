@@ -3,10 +3,10 @@
 # Outbound process
 # Set up inventory tracking
 ## [Cycle counting](../warehouse-management/cycle-counting.md)
-## [Inventory blocking](../warehouse-management/inventory-blocking.md)
-## [Inventory journals](../warehouse-management/inventory-journals.md)
-## [Inventory locations](../warehouse-management/inventory-locations.md)
-## [Inventory statuses](../warehouse-management/inventory-statuses.md)
+## [Inventory blocking](inventory-blocking.md)
+## [Inventory journals](inventory-journals.md)
+## [Inventory locations](inventory-locations.md)
+## [Inventory statuses](inventory-statuses.md)
 ## [Reserve inventory quantity](reserve-inventory-quantities.md)
 ## [Reserve the same batch for a sales order](../sales-marketing/reserve-same-batch-sales-order.md)
 # Consignment inventory
