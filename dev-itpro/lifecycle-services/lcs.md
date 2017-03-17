@@ -36,8 +36,8 @@ Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that p
 
 -   [What's new: Lifecycle Services for Microsoft Dynamics](whats-new-lcs.md)
 -   [Microsoft Dynamics Lifecycle Services User Guide](lcs-user-guide.md)
--   [Projects (Lifecycle Services, LCS)](../ax-2012/projects-lcs.md)
--   [Methodologies (Lifecycle Services, LCS)](../ax-2012/methodologies-lcs.md)
+-   [Projects (Lifecycle Services, LCS)](/ax-2012/projects-lcs.md)
+-   [Methodologies (Lifecycle Services, LCS)](./ax-2012/methodologies-lcs.md)
 -   [Business process modeler (Lifecycle Services, LCS)](business-process-modeler-lcs.md)
 -   [Cloud-hosted environments (Lifecycle Services, LCS)](../ax-2012/cloud-hosted-environments-lcs.md)
 -   [Cloud-powered support (Lifecycle Services, LCS)](cloud-powered-support-lcs.md)
