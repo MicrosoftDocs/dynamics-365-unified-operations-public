@@ -3,7 +3,7 @@
 
 title: Mobile invoice approvals
 description: Mobile capabilities in Microsoft Dynamics 365 for Operations let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
-author: MargoC
+author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-09 19 - 58 - 42
 ms.topic: article
@@ -39,7 +39,7 @@ Prerequisites
 
 | Prerequisite                                                                                            | Description                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobile handbook pre-read                                                                                | <mobile-platform.md>                                                                                                  |
+| Mobile handbook pre-read                                                                                |(/dev-itpro/mobile-apps/mobile-platform.md)                                                                                                  |
 | Dynamics 365 for Operations                                                                             | An environment that has Microsoft Dynamics 365 for Operations version 1611 and Microsoft Dynamics for Operations platform update 3 (November 2016)                   |
 | Install hotfix KB 3204341.                                                                              | Task recorder can erroneously record two Close commands for dropdown dialogs this is included in Dynamics 365 for Operation platform update 3 (November 2016 update) |
 | Install hotfix KB 3207800.                                                                              | This hotfix enables attachments to be viewed on the mobile client this is included in Dynamics 365 for Operation platform update 3 (November 2016 update).           |
@@ -47,7 +47,9 @@ Prerequisites
 | An Android or iOS or a Windows device that has the mobile app installed for Dynamics 365 for Operations | Search for the app in the appropriate app store.                                                                                                                     |
 
 ## Introduction
-Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites” section. These hotfixes don’t provide a workspace for the invoice approvals. To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites” section. The invoice approvals workspace must be designed. Every organization orchestrates and defines its business process for vendor invoices differently. Before you design a mobile experience for vendor invoice approvals, you should consider the following aspects of the business process. The idea is to use these data points as much as possible to optimize the user experience on the device.
+Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites” section. These hotfixes don’t provide a workspace for the invoice approvals. To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites” section. The invoice approvals workspace must be designed. 
+
+Every organization orchestrates and defines its business process for vendor invoices differently. Before you design a mobile experience for vendor invoice approvals, you should consider the following aspects of the business process. The idea is to use these data points as much as possible to optimize the user experience on the device.
 
 -   What fields from the invoice header will the user want to see in the mobile experience, and in what order?
 -   What fields from the invoice lines will the user want to see in the mobile experience, and in what order?
@@ -56,10 +58,14 @@ Mobile approvals for vendor invoices require the three hotfixes that are mention
     -   How many accounting distributions (extended price, sales tax, charges, splits, and so on) are there for an invoice line? Again, apply the 80-20 rule.
     -   Do the invoices also have accounting distributions on the invoice header? If so, should these accounting distributions be available on the device?
 
-    **Note:** This topic doesn’t explain how to edit accounting distributions, because this functionality isn’t currently supported for mobile scenarios.
+> [!NOTE]
+> This topic doesn’t explain how to edit accounting distributions, because this functionality isn’t currently supported for mobile scenarios.
+
 -   Will users want to see attachments for the invoice on the device?
 
-The design of the mobile experience for invoice approvals will differ, depending on the answers to these questions. The objective is to optimize the user experience for the business process on mobile in an organization. In the rest of this topic, we will look at two scenario variations that are based on different answers to the preceding questions. As a general guidance, when working with the mobile designer, make sure to 'publish' the changes to prevent losing the updates.
+The design of the mobile experience for invoice approvals will differ, depending on the answers to these questions. The objective is to optimize the user experience for the business process on mobile in an organization. In the rest of this topic, we will look at two scenario variations that are based on different answers to the preceding questions. 
+
+As a general guidance, when working with the mobile designer, make sure to 'publish' the changes to prevent losing the updates.
 
 ## Designing a simple invoice approval scenario for Contoso
 <table>
@@ -297,7 +303,10 @@ Note that, the name of the pages and other controls in the JS code must be the s
 
 ### Vendor invoice line distributions
 
-The requirements for this scenario confirm that there will be only line-level distributions, and that an invoice will always have only one line. Because this scenario is simple, the user experience on the mobile device must also be simple enough that the user doesn’t have to drill down several levels to view the distributions. Vendor invoices in Dynamics 365 for Operations include the option of showing all distributions from the invoice header. This experience is what we need for the mobile scenario. Therefore, we will use the **VendMobileInvoiceAllDistributionTree** page to design this part of the mobile scenario. Note that knowing the requirements helps us decide which specific page to use and how exactly to optimize the mobile experience for the user when we design the scenario. In the second scenario, we will use a different page to show the distributions, because the requirements for that scenario differ.
+The requirements for this scenario confirm that there will be only line-level distributions, and that an invoice will always have only one line. Because this scenario is simple, the user experience on the mobile device must also be simple enough that the user doesn’t have to drill down several levels to view the distributions. Vendor invoices in Dynamics 365 for Operations include the option of showing all distributions from the invoice header. This experience is what we need for the mobile scenario. Therefore, we will use the **VendMobileInvoiceAllDistributionTree** page to design this part of the mobile scenario. 
+
+> [!NOTE] 
+> Knowing the requirements helps us decide which specific page to use and how exactly to optimize the mobile experience for the user when we design the scenario. In the second scenario, we will use a different page to show the distributions, because the requirements for that scenario differ.
 
 1.  In the URL, replace the name of the menu item, as you did before. The page that appears should resemble the following illustration. [![All distributions page](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 2.  Open the mobile designer from the **Settings** (gear) button.
@@ -310,7 +319,8 @@ The requirements for this scenario confirm that there will be only line-level di
     2.  Currency
     3.  Ledger account
 
-    **Note:** We didn’t select the **Description** column from the distributions grid, because the requirements for this scenario confirmed that the extended price is the only amount that there will be distributions for. Therefore, the user won’t require another field to determine the amount type that the distribution is for. However, in the next scenario, we **will** use this information, because the requirements for that scenario specify that other amount types have distributions (for example, sales tax).
+> [!NOTE] 
+> We didn’t select the **Description** column from the distributions grid, because the requirements for this scenario confirmed that the extended price is the only amount that there will be distributions for. Therefore, the user won’t require another field to determine the amount type that the distribution is for. However, in the next scenario, we **will** use this information, because the requirements for that scenario specify that other amount types have distributions (for example, sales tax).
 8.  Click **Done** to exit edit mode.
 9.  Click **Back** and then **Done** to exit the workspace
 10. Click **Publish workspace** to save your work
@@ -321,7 +331,8 @@ The requirements for this scenario confirm that there will be only line-level di
     1.  It helps guarantee that users can’t navigate directly from the workspace to the **View accounting** page.
     2.  It establishes a navigation control from the **Invoice details** page to the **View accounting** page.
 
-Note that, the name of the pages and other controls in the JS code must be the same from the workspace.
+> [!NOTE] 
+> The name of the pages and other controls in the JS code must be the same from the workspace.
 
 1.  function main(metadataService, dataService, cacheService, $q) {
            return {
