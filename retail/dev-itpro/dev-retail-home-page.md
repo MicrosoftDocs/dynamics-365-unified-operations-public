@@ -39,7 +39,7 @@ Retail components
 
 -   [Components of Microsoft Dynamics 365 for Operations - Retail](..\retail-components.md)
 -   [Retail Store Scale Unit overview](retail-store-system-before-you-begin.md)
--   [Retail Channel Performance content pack for Power BI](\dev-itpro\analytics-bi-reporting\retail-channel-performance-dashboard-power-bi-data.md)
+-   [Retail Channel Performance content pack for Power BI](/dev-itpro/analytics-bi-reporting/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Retail deployment
 -   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)
