@@ -65,7 +65,7 @@
 ### [Calculation for product configuration model FAQ](product-information-management\calculate-product-configuration-models.md)
 ### [Configuration rule](product-information-management\configuration-rules.md)
 ### [Dimension-based configuration](product-information-management\dimension-based-product-configuration.md)
-### [Expression constraint and table constraint](production-control\expression-constraints-table-constraints-product-configuration-models.md)
+### [Expression constraint and table constraint](product-information-management\expression-constraints-table-constraints-product-configuration-models.md)
 ### [Reuse product configuration](product-information-management\reuse-product-configurations.md)
 ### [Set up a configuration model](product-information-management\set-up-maintain-product-configuration-model.md)
 ### [System-defined and user-defined table constraint](product-information-management\system-defined-user-defined-table-constraints.md)
@@ -134,7 +134,7 @@
 # Warehouse management
 ## Setup 
 ### [Control work by using work templates and location directives](warehouse-management\control-warehouse-location-directives.md)
-### [Enable quality management](warehouse-management\enable-quality-management.md)
+### [Enable quality management](inventory-management\enable-quality-management.md)
 ### [Manage warehouse workers](warehouse-management\manage-warehouse-workers.md)
 ### [Set up layout](warehouse-management\warehouse-configuration.md)
 ### [Warehouse work policies](warehouse-management\warehouse-work-policies.md)
@@ -142,12 +142,12 @@
 ## Picking and packing
 ### [Packing materials and fees](warehouse-management\pack-materials-packing-material-fees.md)
 ## Inventory counting
-### [Block inventory](warehouse-management\inventory-blocking.md)
+### [Block inventory](inventory-management\inventory-blocking.md)
 ### [Cycle counting](warehouse-management\cycle-counting.md)
-### [Inventory journal](warehouse-management\inventory-journals.md)
-### [Inventory location](warehouse-management\inventory-locations.md)
-### [Inventory status](warehouse-management\inventory-statuses.md)
-### [Inventory tag counting](warehouse-management\inventory-tag-counting.md)
+### [Inventory journal](inventory-management\inventory-journals.md)
+### [Inventory location](inventory-management\inventory-locations.md)
+### [Inventory status](inventory-management\inventory-statuses.md)
+### [Inventory tag counting](inventory-management\inventory-tag-counting.md)
 ## Containerization 
 ## Replenishment
 ### [Replenishment](warehouse-management\replenishment.md)
