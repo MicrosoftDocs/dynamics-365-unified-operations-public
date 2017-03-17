@@ -40,7 +40,7 @@ Support tool on Microsoft Dynamics Lifecycle Services (LCS) helps you manage sup
 | Virtual machines are only available for Microsoft Dynamics AX 2012 R2 and AX 2012 R3 environments. |
 
 ## Prerequisites
-To use Support tool, you must have previously created a project in Lifecycle Services, and installed and run the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](system-diagnostics-lcs.md).
+To use Support tool, you must have previously created a project in Lifecycle Services, and installed and run the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](../ax-2012/system-diagnostics-lcs.md).
 
 ## Open a new incident
 1.  [Go to Lifecycle Services](https://lcs.dynamics.com).
@@ -62,7 +62,7 @@ To use Support tool, you must have previously created a project in Lifecycle Ser
     -   An incident is created and added to the Incidents list.
     -   Based on the information that the System diagnostics finds, a VM is created that includes that same kernel and application hotfixes as your local environment.
     -   When the VM has been created, you receive an email invitation to access it.
-    -   You receive an email message from the Microsoft Support Engineer who is working on your case. This message asks you to grant the engineer access to your project in the Project contributor role. If you do not grant access, the engineer cannot work on your case. For more information about how to grant access, see [Projects (Lifecycle Services, LCS)](projects-lcs.md).
+    -   You receive an email message from the Microsoft Support Engineer who is working on your case. This message asks you to grant the engineer access to your project in the Project contributor role. If you do not grant access, the engineer cannot work on your case. For more information about how to grant access, see [Projects (Lifecycle Services, LCS)](../ax-2012/projects-lcs.md).
 
 ## Reproduce an incident
 1.  In Lifecycle Services, on the Incidents list, in the Support request ID entry for your incident, under Repro VM action, click Customer repro.
