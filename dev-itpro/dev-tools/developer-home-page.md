@@ -238,7 +238,7 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Segmented Entry control migration walkthrough](..\financial-dimensions\segmented-entry-control-conversion.md)
 -   [Segmented entry control parm Specification](..\financial-dimensions\segmented-entry-control-parm-method-specification.md)
 -   [Creating exchange rate providers](..\financial-dimensions\create-exchange-rate-providers.md)
--   [Financial dimension configuration for integrating applications](..\financial-dimensions\dimension-configuration-integration.md)
+-   [Financial dimension configuration for integrating applications](..\financial-dimensions\financial-dimension-configuration-integration.md)
 -   [Activating financial dimensions](..\financial-dimensions\activate-financial-dimensions.md)
 -   [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial-dimensions\add-dimensions-excel-templates.md)
 
