@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Recruiting content pack for Power BI
-description: This topic describes the Dynamics 365 for Operations - Recruiting content pack for Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+title: Recruiting Power BI content
+description: This topic describes the Dynamics 365 for Operations - Recruiting Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-15 14 - 46 - 16
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Recruiting content pack for Power BI
+# Recruiting Power BI content
 
-This topic describes the Dynamics 365 for Operations - Recruiting content pack for Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+This topic describes the Dynamics 365 for Operations - Recruiting Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 
 Accessing the content pack
 --------------------------

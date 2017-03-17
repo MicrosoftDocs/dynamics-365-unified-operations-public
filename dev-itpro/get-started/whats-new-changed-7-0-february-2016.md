@@ -228,7 +228,7 @@ This feature works independently of costing methods that are assigned to the pro
 <td>The user can choose the detail level and page setup for a report by using the Print option in the financial report in the Dynamics AX client.</td>
 <td>Printed reports print in the way users expect instead of printing a web page.</td>
 </tr><tr class="odd">
-<td>Analyze financial data by using the “Monitor financial performance” content pack for Power BI.</td>
+<td>Analyze financial data by using the “Monitor financial performance” Power BI content.</td>
 <td>Not available</td>
 <td>On PowerBI.com, select **Get Data**, and then select the **Dynamics AX – Financial performance** content pack. Enter the URL for your Dynamics AX endpoint to see your data reflected in the dashboard.</td>
 <td>In three to four clicks, organizations can deploy a Power BI dashboard that contains important financial data. Content can be personalized by the organization.</td>
@@ -705,7 +705,7 @@ The <strong>Catalog management</strong> workspace enables the following functi
 <td>These reports let customers have more BI to predict trends, uncover insights, and operate at continual peak performance.</td>
 </tr>
 <tr class="odd">
-<td>Analyze retail channel sales data by using the “Monitor Retail Channel performance” content pack for Power BI.</td>
+<td>Analyze retail channel sales data by using the “Monitor Retail Channel performance” Power BI content.</td>
 <td>Not available</td>
 <td>On PowerBI.com, select <strong>Get Data</strong>, and then select the <strong>Dynamics AX – Retail Channel performance</strong> content pack. Enter the URL for your Dynamics AX endpoint to see your data reflected in the dashboard.</td>
 <td>In three to four clicks, organizations can deploy a Power BI dashboard that contains important financial data. Content can be personalized by the organization. Additionally, users can embed Power BI dashboard tiles into their personalized workspaces in Dynamics AX, so that they can then see analytical information at a glance.</td>

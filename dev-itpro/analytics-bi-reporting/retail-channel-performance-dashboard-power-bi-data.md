@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail Channel Performance content pack for Power BI
-description: This article provides information about the Microsoft Dynamics AX Retail Channel Performance content pack for Power BI. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+title: Retail Channel Performance Power BI content
+description: This article provides information about the Microsoft Dynamics AX Retail Channel Performance Power BI content. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 author: josaw1
 manager: AnnBe
 ms.date: 2016-07-29 15 - 36 - 26
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Retail Channel Performance content pack for Power BI
+# Retail Channel Performance Power BI content
 
-This article provides information about the Microsoft Dynamics AX Retail Channel Performance content pack for Power BI. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+This article provides information about the Microsoft Dynamics AX Retail Channel Performance Power BI content. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 
 The Microsoft Dynamics AX Retail Channel Performance content pack for Microsoft Power BI lets you quickly build your channel performance analytics. The content pack is designed specifically for channel managers who focus on sales performance to predict trends and uncover insights. Its components draw directly from Retail and commerce data in the Microsoft Dynamics AX database, and provide drill-down reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more. Power BI automatically creates reports and dashboards that give you a great starting point for exploring and analyzing your Retail and commerce data. This article includes the following information:
 
