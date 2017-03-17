@@ -39,7 +39,7 @@ A purchase order (PO) is a document that represents an agreement with a vendor t
 -   [Purchase order creation](purchase-order-creation.md)
 -   [Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
--   [Overview of vendor invoices](vendor-invoices-overview.md)
+-   [Overview of vendor invoices](financials/accounts-payable/vendor-invoices-overview)
 
 ## Types of purchase orders
 There are three types of POs. When you create a PO, you must specify the type. You can set up a default order type for new orders on the **Procurement and sourcing parameters** page.
@@ -83,5 +83,5 @@ See also
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](financials/accounts-payable/vendor-invoices-overview.md)
+[Overview of vendor invoices](financials/accounts-payable/vendor-invoices-overview)
 
