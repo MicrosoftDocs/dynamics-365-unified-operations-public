@@ -40,7 +40,7 @@ ms.dyn365.ops.version: 2012
 Before you begin, your environment must include the following components:
 
 -   A running version of AX 2012 R3 that has been configured for your business. For more information about how to install AX 2012 R3, see [Install Microsoft Dynamics AX 2012](http://technet.microsoft.com/library/fbe52b68-1294-4398-b233-f8ec37c6d531(AX.60).aspx).
--   A running instance of the Data Import/Export Framework. For more information about how to install the Data Import/Export Framework, see [Install the Data import/export framework (AX 2012 R3)](../ax-2012/install-dixf.md). **Important:** You must deploy the DMFEntityExecutionStatusService and DMFService service groups to enable to Configuration manager (beta) to connect to Data Import/Export Framework.
+-   A running instance of the Data Import/Export Framework. For more information about how to install the Data Import/Export Framework, see [Install the Data import/export framework (AX 2012)](./ax-2012/install-dixf.md). **Important:** You must deploy the DMFEntityExecutionStatusService and DMFService service groups to enable to Configuration manager (beta) to connect to Data Import/Export Framework.
 -   An AX 2012 R3 project in Lifecycle Services. **Caution:** Copying configurations between environments can be a destructive operation. All project owners have the right to configure and perform these operations. Make sure that only trusted individuals are set as project owners.
 
 ## Create Data Import/Export Framework source data formats in AX 2012 R3
