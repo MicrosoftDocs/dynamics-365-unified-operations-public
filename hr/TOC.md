@@ -1,7 +1,7 @@
 # [Human Resources home page](human-resources-landing.md)
 # Develop Human resources strategy
 ## [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
-## [Set up the components of a job](creating-a-job.md)
+## [Set up the components of a job](create-job.md)
 ## [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
 ## [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
 ## [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
@@ -26,14 +26,14 @@
 ## [View and evaluate the results of a questionnaire](questionnaire\evaluate-questionnaire-results.md)
 # United States features
 ## Workplace safety and compliance
-### [Form I-9 verification](hr/localizations/north-america/form-i-9-verification.md)
-### [Comply with the ADA](hr/localizations/north-america/usa-comply-with-the-americans-with-disabilities-act.md)
+### [Form I-9 verification](/localizations/north-america/form-i-9-verification.md)
+### [Comply with the ADA](/localizations/north-america/usa-comply-with-the-americans-with-disabilities-act.md)
 ## [Payroll](localizations\north-america\payroll.md)
 ### Payroll Basic Setup
 #### [Set up benefit accrual plans ](localizations\north-america\benefit-accrual-plan-tasks.md)
 #### [Set up benefits](localizations\north-america\benefit-set-up-tasks.md)
 ### Frequencies and Cycles
-### [Pay cycle and pay period tasks](localizations/north-america/pay-cycle-pay-period-tasks-sample.md )
+### [Pay cycle and pay period tasks](/localizations/north-america/pay-cycle-pay-period-tasks-sample.md)
 ### [Payroll calculation and frequency tasks](localizations/north-america/payroll-calculation-frequencies-tasks.md)
 ### [Work schedule and leave tasks](localizations/north-america/work-schedule-leave-tasks.md)
 ### Codes and taxes
