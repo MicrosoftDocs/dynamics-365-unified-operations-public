@@ -1,7 +1,6 @@
 # [Cost management](cost-management\TOC.md)
 # [Inventory management](inventory-management\TOC.md)
 # Master planning
-## [Master planning home page](production-control\master-plan.md)
 ## Create demand forecast
 ### [Demand forecast overview](master-planning\introduction-demand-forecasting.md)
 ### [Set up a demand forecast](master-planning\demand-forecasting-setup.md)
