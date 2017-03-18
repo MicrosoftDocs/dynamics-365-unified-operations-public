@@ -64,16 +64,23 @@ This tutorial requires you to access the Dynamics AX environment using Remote De
     [![Package\_DataModel](./media/package_datamodel.png)](./media/package_datamodel.png)
 
 5.  Click **Next** to advance to the **Select referenced models** step.
-6.  Select **Application Platform** and **Application Foundation** as referenced models.[![ReferenceModels\_DataModel](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png) **Important**: Verify that you've selected the correct referenced models.
+6.  Select **Application Platform** and **Application Foundation** as referenced models.
+
+    [![ReferenceModels\_DataModel](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png) 
+
+    **Important**: Verify that you've selected the correct referenced models.
 7.  Click **Next** to advance to the **Summary** step.
-8.  Verify the information on the summary page, and then select the **Create new project** and **Make this my default model for new projects** check boxes. [![Summary\_DataModel](./media/summary_datamodel.png)](./media/summary_datamodel.png)
+8.  Verify the information on the summary page, and then select the **Create new project** and **Make this my default model for new projects** check boxes. 
+
+    [![Summary\_DataModel](./media/summary_datamodel.png)](./media/summary_datamodel.png)
+
 9.  Click **Finish**. The **New Project** dialog box opens.
 10. Under **Templates**, select **Dynamics AX**.
 11. Select the **Dynamics AX Project** template.
 12. Enter the following values in the fields in the dialog box.
-    |              |                 |
-    |--------------|-----------------|
+
     | **Property** | **Value**       |
+    |--------------|-----------------|
     | **Name**     | FMTDataModel    |
     | **Location** | C:\\FMLab       |
     | **Solution** | Add to solution |
@@ -96,9 +103,9 @@ This tutorial requires you to access the Dynamics AX environment using Remote De
 
 5.  Select the root node of **FMTAddress** in the designer.
 6.  In the **Properties** window, in the **Appearance section**, set the following properties.
-    |                 |                    |
-    |-----------------|--------------------|
+
     | **Property**    | **Value**          |
+    |-----------------|--------------------|
     | **Help Text**   | Check online help. |
     | **Label**       | Address            |
     | **String Size** | 75                 |
@@ -146,7 +153,10 @@ In the table designer for FMTCustomer, you now add several fields to the table.
     | **String** | License        | String Size = 100Label = License                                            |
     | **String** | Thumbnail      | String Size = 100Label = Thumbnail                                          |
 
-    **Tip**: For all new fields in the table that reference an EDT, you can create the field by simply dragging the EDT element from **Solution Explorer** or **Application Explorer** and dropping it on the **Fields** node of the **FMTCustomer** table in the designer. [![AdministratorArrow\_DataModel](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)
+    **Tip**: For all new fields in the table that reference an EDT, you can create the field by simply dragging the EDT element from **Solution Explorer** or **Application Explorer** and dropping it on the **Fields** node of the **FMTCustomer** table in the designer. 
+    
+    [![AdministratorArrow\_DataModel](./media/administratorarrow_datamodel.png)](./media/administratorarrow_datamodel.png)
+    
 2.  Press **Ctrl+S** to save the new fields on the table.
 
 ### Add fields to field groups
