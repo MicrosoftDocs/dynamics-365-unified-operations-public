@@ -2,7 +2,7 @@
 
 # Architecture
 ## [Retail Server architecture](retail-server-architecture.md)
-## [Retail channel communications (retail\Commerce Data Exchange)](define-retail-channel-communications-cdx.md)
+## [Retail channel communications (retail/Commerce Data Exchange)](define-retail-channel-communications-cdx.md)
 ## [MPOS architecture](retail-modern-pos-architecture.md)
 ## [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
 
@@ -33,7 +33,7 @@
 ## [Add properties to a sales order](add-properties-sales-order.md)
 ## [Commerce runtime extensibility and triggers](commerce-runtime-extensibility-trigger.md)
 ### [Trigger example: Blocking transaction](trigger-example-blocking-transaction.md)
-### [Trigger example: Return policy](trigger-example-return policy.md)
+### [Trigger example: Return policy](trigger-example-return-policy.md)
 
 ## [Commerce runtime and Retail Server extensibility ](commerce-runtime-extensibility.md)
 
@@ -52,8 +52,8 @@
 ## [Install Retail hotfixes](install-retail-hotfix.md)
 
 # Retail SDK
-## [Retail SDK overview](retail-sdk\retail-sdk-overview.md)
-## [Integrate the Retail SDK with the continuous build system](retail-sdk\integrate-retail-sdk-continuous-build.md)
-## [Retail SDK extensibility samples](retail-sdk\retail-sdk-extensibility-samples.md)
-## [Retail SDK packaging](retail-sdk\retail-sdk-packaging.md)
-## [Retail SDK samples ](retail-sdk\retail-sdk-samples.md)
+## [Retail SDK overview](retail-sdk/retail-sdk-overview.md)
+## [Integrate the Retail SDK with the continuous build system](retail-sdk/integrate-retail-sdk-continuous-build.md)
+## [Retail SDK extensibility samples](retail-sdk/retail-sdk-extensibility-samples.md)
+## [Retail SDK packaging](retail-sdk/retail-sdk-packaging.md)
+## [Retail SDK samples ](retail-sdk/retail-sdk-samples.md)
