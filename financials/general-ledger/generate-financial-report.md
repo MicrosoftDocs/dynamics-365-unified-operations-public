@@ -153,5 +153,5 @@ See also
 
 [Financial reporting for Microsoft Dynamics ERP](/dev-itpro/analytics-bi-reporting/financial-reporting-intro)
 
-[Report Designer interface](report-designer-interface.md)
+[Report Designer interface](/dev-itpro/analytics-bi-reporting/report-designer-interface)
 
