@@ -101,5 +101,5 @@ After the users are created, you assign them to roles on the **Assign users to r
 See also
 --------
 
-[Role-based security](role-based-security.md)
+[Role-based security](/dev-itpro/system-administration/role-based-security)
 
