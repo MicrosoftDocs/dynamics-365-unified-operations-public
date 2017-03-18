@@ -49,9 +49,9 @@ This tutorial requires you to access the Dynamics AX environment using Remote De
 1.  Start Visual Studio using **Run as administrator**.
 2.  From the **Dynamics AX** window, select **Model Management &gt; Create model** to open the **Create model** wizard.
 3.  Enter the following values for model parameters.
-    |                        |                                                                                                                          |
-    |------------------------|--------------------------------------------------------------------------------------------------------------------------|
+
     | **Property**           | **Value**                                                                                                                |
+    |------------------------|--------------------------------------------------------------------------------------------------------------------------|
     | **Model name**         | FleetMgmntTutorial                                                                                                       |
     | **Model publisher**    | Microsoft Corp                                                                                                           |
     | **Layer**              | isv                                                                                                                      |
@@ -59,7 +59,10 @@ This tutorial requires you to access the Dynamics AX environment using Remote De
     | **Model display name** | Fleet Management Tutorial                                                                                                |
 
     **Note**: Your model name must be **FleetMgmntTutorial**. Don't use any other name. In other tutorials, you'll overwrite model elements in this model by importing a project. If the model you create in this tutorial isn't named **FleetMgmntTutorial**, you may not be able to correctly import the project in other tutorials.
-4.  Click **Next** to advance to the next page, and then select **Create New Package**. The model you're creating will have its own package and build its own .NET assembly. [![Package\_DataModel](./media/package_datamodel.png)](./media/package_datamodel.png)
+4.  Click **Next** to advance to the next page, and then select **Create New Package**. The model you're creating will have its own package and build its own .NET assembly. 
+
+    [![Package\_DataModel](./media/package_datamodel.png)](./media/package_datamodel.png)
+
 5.  Click **Next** to advance to the **Select referenced models** step.
 6.  Select **Application Platform** and **Application Foundation** as referenced models.[![ReferenceModels\_DataModel](./media/referencemodels_datamodel.png)](./media/referencemodels_datamodel.png) **Important**: Verify that you've selected the correct referenced models.
 7.  Click **Next** to advance to the **Summary** step.
@@ -76,13 +79,21 @@ This tutorial requires you to access the Dynamics AX environment using Remote De
     | **Solution** | Add to solution |
 
     [![NewProject\_DataModel](./media/newproject_datamodel.png)](./media/newproject_datamodel.png)
+
 13. Click **OK** to create the project.
 
 ## Create the FMTAddress extended data type
 1.  In **Solution Explorer**, right-click **FMTDataModel**, point to **Add**, and then click **New Item**.
 2.  Under **AX Artifacts**, select **Data Types**.
 3.  Click **EDT String** to select the new item type.
-4.  In the **Name** field, enter **FMTAddress**, and then click **Add**. [![NewItem\_DataModel](./media/newitem_datamodel.png)](./media/newitem_datamodel.png) This adds a new EDT model element to the project, and opens the EDT designer for the new element, as shown in the following illustration. [![EDTelement\_DataModel](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)
+4.  In the **Name** field, enter **FMTAddress**, and then click **Add**. 
+
+    [![NewItem\_DataModel](./media/newitem_datamodel.png)](./media/newitem_datamodel.png) 
+    
+    This adds a new EDT model element to the project, and opens the EDT designer for the new element, as shown in the following illustration. 
+    
+    [![EDTelement\_DataModel](./media/edtelement_datamodel.png)](./media/edtelement_datamodel.png)
+
 5.  Select the root node of **FMTAddress** in the designer.
 6.  In the **Properties** window, in the **Appearance section**, set the following properties.
     |                 |                    |
@@ -93,29 +104,37 @@ This tutorial requires you to access the Dynamics AX environment using Remote De
     | **String Size** | 75                 |
 
     [![EDTProperty\_DataModel](./media/edtproperty_datamodel.png)](./media/edtproperty_datamodel.png)
+
 7.  Press **Ctrl+S** to save the EDT.
 
 ## Add existing model
 Add the other required model element files to the current model and project. You can do this quickly by using the **Add existing item** feature.
 
 1.  In the **Solution Explorer**, right-click **FMTDataModel**, point to **Add**, and then click **Existing Item**.
-2.  Browse to C:\\FMLab\\EDT\\. [![ExistingItem\_DataModel](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)
+2.  Browse to C:\\FMLab\\EDT\\. 
+
+    [![ExistingItem\_DataModel](./media/existingitem_datamodel.png)](./media/existingitem_datamodel.png)
+
 3.  Press **Ctrl+A** to select all of the files, and then click **Add**.
 
 ## Create the FMTCustomer table
 1.  In **Solution Explorer**, right-click **FMTDataModel**, and then click **Add &gt; New Item**.
 2.  In the left pane, expand **Installed**, expand ****AX Artifacts**,** and then click ****Data Model**.**
 3.  In the list of artifacts, select **Table**.
-4.  In the **Name** field, enter **FMTCustomer**, and then click **Add**. The table designer opens. [![Add\_DataModel](./media/add_datamodel.png)](./media/add_datamodel.png)
+4.  In the **Name** field, enter **FMTCustomer**, and then click **Add**. The table designer opens. 
+
+    [![Add\_DataModel](./media/add_datamodel.png)](./media/add_datamodel.png)
 
 ### Add fields to the FMTCustomer table
 
-In the table designer for FMTCustomer, you now add several fields to the table. [![AddFields\_DataModel](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)
+In the table designer for FMTCustomer, you now add several fields to the table. 
+
+[![AddFields\_DataModel](./media/addfields_datamodel.png)](./media/addfields_datamodel.png)
 
 1.  To add each field, right-click **Fields**, click **New**, and then select a type. As you add each field, you must specify the field name and certain other values in the **Properties** window, as described in the following table.
-    |            |                |                                                                             |
-    |------------|----------------|-----------------------------------------------------------------------------|
+
     | **Type**   | **Field name** | **Property values**                                                         |
+    |------------|----------------|-----------------------------------------------------------------------------|
     | **Date**   | CCExpiryDate   | Extended Data Type = FMTCCExpiryDate                                        |
     | **String** | Address        | Extended Data Type = FMTAddressHelp Text = Help text for the address field. |
     | **String** | CellPhone      | Extended Data Type = Phone                                                  |
