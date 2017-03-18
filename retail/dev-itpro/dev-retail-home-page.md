@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dynamics 365 for Operations  -  Retail for IT pros and developers
