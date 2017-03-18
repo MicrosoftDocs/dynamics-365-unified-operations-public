@@ -17,7 +17,7 @@
 ## [Author and distribute Power BI reports with Entity store](author-distribute-power-bi-reports.md)
 ## Upgrade
 ### [Why we moved from SSAS cubes to aggregate models](../migration-upgrade/in-memory-real-time-aggregate-models.md)
-### [Migrate a Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
+### [Migrate a Dynamics AX 2012 R3 sales cube to the entity store](../migration-upgrade/migrate-upgraded-cube-entity-store.md)
 
 # Power BI content 
 ## [Power BI content from Microsoft and partners](power-bi-content-microsoft-partners.md)
