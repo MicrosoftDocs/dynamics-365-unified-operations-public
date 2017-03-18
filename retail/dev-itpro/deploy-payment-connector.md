@@ -37,7 +37,7 @@ This topic describes how to deploy a payment connector package to the appropriat
 Overview
 --------
 
-This topic guides retail IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components of Dynamics 365 for Operations. We assume that the payment connector has been implemented and tested by the payment provider or the payment independent software vendor (ISV), and that it's ready for validation and subsequent production deployment in a customer environment. This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). See the [Retail SDK overview](retail-sdk-overview.md)for information about how to download the SDK. For guidelines about how to package a payment connector, within the downloaded SDK, review the Retail SDK Handbook section on Adding a payment connector, which became available in the SDK in hotfix KB 3183058. This topic also doesn't include information about how to deploy the payment web application, payment front-end processor, or back-end processor, because those applications are managed by payment providers or payment ISVs.
+This topic guides retail IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components of Dynamics 365 for Operations. We assume that the payment connector has been implemented and tested by the payment provider or the payment independent software vendor (ISV), and that it's ready for validation and subsequent production deployment in a customer environment. This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). See the [Retail SDK overview](../retail-sdk/retail-sdk-overview.md)for information about how to download the SDK. For guidelines about how to package a payment connector, within the downloaded SDK, review the Retail SDK Handbook section on Adding a payment connector, which became available in the SDK in hotfix KB 3183058. This topic also doesn't include information about how to deploy the payment web application, payment front-end processor, or back-end processor, because those applications are managed by payment providers or payment ISVs.
 
 ## Before you begin
 A payment provider or a payment ISV creates a payment connector. The payment connector will include some or all of the following folders:
@@ -124,5 +124,5 @@ See also
 
 [Guide to implementing a payment connector and a payment device](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The Guide to Implementing Payment Connector and Payment Device.docx)
 
-[Retail SDK packaging](retail-sdk-packaging.md)
+[Retail SDK packaging](../retail-sdk/retail-sdk-packaging.md)
 

@@ -16,8 +16,8 @@
 ## [Check box support in tree controls](check-box-tree-controls.md)
 ## [Filters](filtering.md)
 ## Window management
-## [Migrate context menu code](..\migration-upgrade\..\migration-upgrade\code-migration-context-menus.md)
-## [Migration mouse double-click code](..\migration-upgrade\..\migration-upgrade\code-migration-double-click.md)
+## [Migrate context menu code](../migration-upgrade/../migration-upgrade/code-migration-context-menus.md)
+## [Migration mouse double-click code](../migration-upgrade/../migration-upgrade/code-migration-double-click.md)
 ## [Contextual data entry for lookups](contextual-data-entry-lookups.md)
 ## [HierarchyViewer control](hierarchy-viewer-control.md)
 ## [Lookup controls](lookups-controls.md)
@@ -58,8 +58,8 @@
 ## [FactBox form pattern](factbox-form-patterns.md)
 # Sub patterns
 ## [Custom Filter Group subpattern](custom-filter-group-subpattern.md)
-## [Dimension entry control subpattern](..\financial-dimensions\..\financial-dimensions\dimension-entry-control-subpattern.md)
-## [Dimension Expression Builder subpattern](..\financial-dimensions\..\financial-dimensions\dimension-expression-builder-subpattern.md)
+## [Dimension entry control subpattern](../financial-dimensions/../financial-dimensions/dimension-entry-control-subpattern.md)
+## [Dimension Expression Builder subpattern](../financial-dimensions/../financial-dimensions/dimension-expression-builder-subpattern.md)
 ## [Fields and Field Groups subpattern](fields-field-groups-subpattern.md)
 ## [Filters and Toolbar subpatterns](filters-toolbar-subpattern.md)
 ## [Fill Text subpattern](fill-text-subpattern.md)

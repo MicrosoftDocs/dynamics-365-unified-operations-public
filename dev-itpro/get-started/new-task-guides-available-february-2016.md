@@ -37,7 +37,7 @@ This wiki lists the Task guides that were released to the Microsoft BPM librarie
 Task guides in the (February 2016) APQC Unified Library for Microsoft Dynamics AX
 ---------------------------------------------------------------------------------
 
-The (February 2016) APQC Unified library contains the Task guides that are intended to be used for Help with the Dynamics AX 7.0.0 release. If you need localized versions of these Task guides, they are available in the (May 2016) APQC Unified Library for Microsoft Dynamics AX. For more information about how to connect the help system to a Task guide library, see [Get started with Help](help-get-started.md).
+The (February 2016) APQC Unified library contains the Task guides that are intended to be used for Help with the Dynamics AX 7.0.0 release. If you need localized versions of these Task guides, they are available in the (May 2016) APQC Unified Library for Microsoft Dynamics AX. For more information about how to connect the help system to a Task guide library, see [Get started with Help](help-overview.md).
 
 ### Accounts payable
 

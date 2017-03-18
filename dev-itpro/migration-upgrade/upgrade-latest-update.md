@@ -37,7 +37,7 @@ This topic describes the process for upgrading to the latest update for Microsof
 Overview
 --------
 
-This topic describes the overall process and the supported scenarios that are related to an upgrade from earlier releases to the current update for Dynamics 365 for Operations. It isn't intended to provide detailed instructions for every step of the process. For details of the contents of each available upgrade see [What's new or changed](whats-new-changed.md).
+This topic describes the overall process and the supported scenarios that are related to an upgrade from earlier releases to the current update for Dynamics 365 for Operations. It isn't intended to provide detailed instructions for every step of the process. For details of the contents of each available upgrade see [What's new or changed](../get-started/whats-new-changed.md).
 
 ## Definitions
 Dynamics 365 for Operations platform updates consist mainly of the following components: Application Object Server (AOS), analytics and reporting, Microsoft Office integration, data management, integration services, the web client, and other binaries. It also includes the following Application Object Tree (AOT) models:

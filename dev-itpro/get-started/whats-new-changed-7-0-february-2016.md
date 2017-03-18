@@ -342,7 +342,7 @@ This feature works independently of costing methods that are assigned to the pro
 <tr class="even">
 <td>Access guided procedural Help (task guides) and conceptual topics by clicking **Help**.</td>
 <td>The AX 2012 Help system points to HTML topics that are stored on a local web server. Customers and partners can create their own Help.</td>
-<td>The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from the Microsoft wiki. For more information, see [Dynamics AX Help - Getting Started](help-get-started.md) and [New task guides available (February 2016)](new-task-guides-available-february-2016.md).</td>
+<td>The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from the Microsoft wiki. For more information, see [Dynamics AX Help - Getting Started](help-overview.md) and [New task guides available (February 2016)](new-task-guides-available-february-2016.md).</td>
 <td>Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. The wiki provides a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.</td>
 </tr>
 </tbody>
