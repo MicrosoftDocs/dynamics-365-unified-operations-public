@@ -49,7 +49,7 @@ You may need to set up the following Procurement and sourcing features for publ
 
 **Note** This also applies to Accounts payable.
 
--   [Public sector accounting in France](public-sector-accounting-france.md) For French organizations, additional steps may be required for the public sector.
+-   [Public sector accounting in France](/localizations/eurore/public-sector-accounting-france.md) For French organizations, additional steps may be required for the public sector.
 
 The following sections describe the Procurement and sourcing features that are available for the public sector.
 
