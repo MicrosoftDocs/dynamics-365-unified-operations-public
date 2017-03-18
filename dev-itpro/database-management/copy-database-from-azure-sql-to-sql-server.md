@@ -48,7 +48,7 @@ Moving a database involves using the sqlpackage.exe command line tool to export
 **Important notes for customers running Retail environments:**
 
 -   Developer environments are not supported as a target for Retail.
--   If you want to perform this activity for Retail, contact [Microsoft support for details](lcs-support.md).
+-   If you want to perform this activity for Retail, contact [Microsoft support for details](../lifecycle-services/lcs-support.md).
 
 ## Prerequisites
 The following prerequisites are required before you can move a database.
@@ -235,7 +235,7 @@ Execute the following SQL script against the imported database. This will add ba
 
 ### Reset the Financial Reporting database
 
-If using Financial Reporting (formerly Management Reporter) then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](reset-financial-reporting-datamart-after-restore.md).
+If using Financial Reporting (formerly Management Reporter) then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](../analytics-bi-reporting/reset-financial-reporting-datamart-after-restore.md).
 
 ## Start using the new database
 To switch the environment and use the new database, stop the services in the following list, rename the AxDB database to AxDB\_orig, and then rename your newly imported database AxDB. Restart the services in the following list:

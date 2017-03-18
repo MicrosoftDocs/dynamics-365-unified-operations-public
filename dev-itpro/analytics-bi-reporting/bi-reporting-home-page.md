@@ -46,7 +46,7 @@ Working with aggregate data
 -   [Power BI integration](power-bi-integration.md)
 -   [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
 -   [Create a Power BI report by using Microsoft Dynamics 365 for Operations data](create-powerbi-report-data.md)
--   [BIR105: Create a Power BI report and dashboard](create-powerbi-report-dashboard.md)
+-   [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md)
 -   [Retail Channel Performance Power BI content](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Financial Performance Power BI content](financial-performance-power-bi-content-pack.md)
 -   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)

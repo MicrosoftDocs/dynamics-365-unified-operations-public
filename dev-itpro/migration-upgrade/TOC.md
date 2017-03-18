@@ -1,6 +1,6 @@
 # [Prepare to move to the latest update of Dynamics 365 for Operations](upgrade-latest-update.md)
 # [Upgrade Dynamics 365 for Operations to the latest platform update](upgrade-latest-platform-update.md)
-# [Process for upgrading a sandbox environment](upgrade-sandbox-environment.md)
+# [Upgrade a sandbox environment](upgrade-sandbox-environment.md)
 # [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md)
 # [Workflow subsystem updates in Dynamics 365 for Operations](workflow-subsystem.md)
 # Code migration

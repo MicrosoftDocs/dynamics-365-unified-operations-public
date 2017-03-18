@@ -202,5 +202,5 @@ Activities for the peripheral simulator are logged within the peripheral simulat
 See also
 --------
 
-[Retail peripherals overview](..\retail-peripherals-overview.md)
+[Retail peripherals overview](retail-peripherals-overview.md)
 

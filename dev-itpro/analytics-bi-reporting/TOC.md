@@ -64,7 +64,7 @@
 ## Electronic reporting
 ### [Electronic reporting overview](general-electronic-reporting.md)
 ### [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
-### [Create an Electronic reporting configuration](localization-requirements-electronic-reporting-configuration.md)
+### [Create an Electronic reporting configuration](electronic-reporting-configuration.md)
 ### [Extend the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md)
 ### [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
 ### [Electronic reporting destinations](electronic-reporting-destinations.md)
