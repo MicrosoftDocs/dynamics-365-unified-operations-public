@@ -84,7 +84,7 @@ Retail is dependent on Dynamics 365 for Operations. We recommend that you famili
 -   [Hardware Station Extensibility](hardware-station-extensibility.md)
 
 ## Retail Store Scale Unit
--   [Retail Store Scale Unit overview](retail-store-system-before-you-begin.md)
+-   [Retail Store Scale Unit overview](retail-store-system-begin.md)
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 
 ## Commerce Runtime
@@ -94,9 +94,9 @@ Retail is dependent on Dynamics 365 for Operations. We recommend that you famili
 -   [Add properties to a sales order](add-properties-sales-order.md)
 
 ## Retail SDK
--   [Retail SDK Overview](retail-sdk-overview.md)
--   [Retail SDK packaging](retail-sdk-packaging.md)
--   [Integrate the Retail SDK with the continuous build system (VSTS)](integrate-retail-sdk-continuous-build.md)
+-   [Retail SDK Overview](retail-sdk\retail-sdk-overview.md)
+-   [Retail SDK packaging](retail-sdk\retail-sdk-packaging.md)
+-   [Integrate the Retail SDK with the continuous build system (VSTS)](retail-sdk\integrate-retail-sdk-continuous-build.md)
 -   [Retail SDK samples](retail-sdk\retail-sdk-samples.md)
 
 ## eCommerce
