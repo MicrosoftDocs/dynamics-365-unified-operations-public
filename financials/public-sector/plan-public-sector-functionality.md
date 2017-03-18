@@ -53,7 +53,7 @@ Budget analysis Budget analysis for revised budgets Budget analysis for actual e
 
 ### French regulatory options
 
-**Note** For information about French regulatory options, see [Public sector accounting in France](public-sector-accounting-france.md). The following pages are available only if the following conditions are met:
+**Note** For information about French regulatory options, see [Public sector accounting in France](/localizations/europe/public-sector-accounting-france.md). The following pages are available only if the following conditions are met:
 
 -   The **Public sector** configuration key is selected.
 -   The **French regulatory** configuration subkey is selected.
