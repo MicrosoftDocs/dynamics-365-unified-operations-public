@@ -67,4 +67,4 @@
 # Commerce essentials
 ## [Commerce essentials overview](commerce-essentials.md)
 ## [Organizations and organizational hierarchies (Commerce essentials)](organizational-hierarchies-commerce-essentials.md)
-# [IT Professional and Developer content](../dev-itpro/TOC.md)
+# [IT Professional and Developer content](dev-itpro/TOC.md)
