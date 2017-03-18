@@ -132,7 +132,7 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 See also
 --------
 
-[Procurement and sourcing](procurement-sourcing.md)
+[Procurement and sourcing](/manufacturing/procurement-sourcing/procurement-sourcing-overview)
 
 [Accounts payable in the public sector](accounts-payable-public-sector.md)
 
