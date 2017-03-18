@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Dynamics 365 for Operations  -  Retail for IT pros and developers
@@ -94,9 +94,9 @@ Retail is dependent on Dynamics 365 for Operations. We recommend that you famili
 -   [Add properties to a sales order](add-properties-sales-order.md)
 
 ## Retail SDK
--   [Retail SDK Overview](retail-sdk\retail-sdk-overview.md)
--   [Retail SDK packaging](retail-sdk\retail-sdk-packaging.md)
--   [Integrate the Retail SDK with the continuous build system (VSTS)](retail-sdk\integrate-retail-sdk-continuous-build.md)
+-   [Retail SDK Overview](retail-sdk-overview.md)
+-   [Retail SDK packaging](retail-sdk-packaging.md)
+-   [Integrate the Retail SDK with the continuous build system (VSTS)](integrate-retail-sdk-continuous-build.md)
 -   [Retail SDK samples](retail-sdk\retail-sdk-samples.md)
 
 ## eCommerce
