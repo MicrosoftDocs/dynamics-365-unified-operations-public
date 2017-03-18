@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sales and profitability performance content pack for Power BI
+title: Sales and profitability performance Power BI content
 description: This topic describes what's included in the Dynamics 365 for Operations - Sales and profitability performance content pack for Microsoft Power BI. It explains how to access the reports included in the content pack and provides information about the data model and entities that are used to build the content pack.
 author: YuyuScheller
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Sales and profitability performance content pack for Power BI
+# Sales and profitability performance Power BI content
 
 This topic describes what's included in the Dynamics 365 for Operations - Sales and profitability performance content pack for Microsoft Power BI. It explains how to access the reports included in the content pack and provides information about the data model and entities that are used to build the content pack.
 
