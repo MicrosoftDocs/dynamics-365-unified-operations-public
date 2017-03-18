@@ -70,7 +70,7 @@ Before you install the new platform update, you must clean up your Microsoft Vis
 
 -   Application Platform
 -   Application Foundation
--   TestEssentials
+/-   TestEssentials
 -   Directory
 
 You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it. ![View History](./media/checkinhistory.png)
@@ -98,7 +98,7 @@ You can find these hotfixes by browsing the check-in history of these Microsoft 
 
 ### Install the Visual Studio development tools
 
-Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](..dev-tools/update-development-tools.md).
+Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](../dev-tools/update-development-tools.md).
 
 ### Regenerate form adaptor models
 
