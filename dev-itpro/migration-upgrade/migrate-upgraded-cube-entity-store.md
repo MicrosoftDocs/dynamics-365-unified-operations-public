@@ -53,7 +53,7 @@ This tutorial requires the Dynamics 365 for Operations May 2016 update or lat
 ## Change upgraded aggregate measurement properties
 As part of the code upgrade process, analysis services projects from the Application Object Tree (AOT) in Dynamics AX 2012 can be migrated to the new aggregate measurements metadata format.
 
-1.  Launch Visual Studio and create a new project in Application Suite. **Note**: You can create a model and include the customized aggregate measurement within that model. For more information, see [Customization: Overlayering and extensions](..\dev-tools\..\dev-tools\customization-overlayering-extensions.md).
+1.  Launch Visual Studio and create a new project in Application Suite. **Note**: You can create a model and include the customized aggregate measurement within that model. For more information, see [Customization: Overlayering and extensions](..\dev-tools\customization-overlayering-extensions.md).
 2.  Open Application Explorer. Navigate to **Analytics** &gt; **Perspectives** &gt; **Aggregate measurements**. You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version of Dynamics 365 for Operations.
 3.  Select **SalesCube**. Right-click and select **Duplicate in project**.
 4.  An aggregate measurement with the name **SalesCubeCopy** will be added to the project.
@@ -185,5 +185,5 @@ As an administrator or a power user, you have successfully authored and publishe
 See also
 --------
 
-[BIR100: Modeling and using aggregate data](model-aggregate-data.md)
+[Modeling and using aggregate data](../analytics-bi-reporting/model-aggregate-data.md)
 
