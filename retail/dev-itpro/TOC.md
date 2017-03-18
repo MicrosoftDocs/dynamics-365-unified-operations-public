@@ -33,7 +33,7 @@
 ## [Add properties to a sales order](add-properties-sales-order.md)
 ## [Commerce runtime extensibility and triggers](commerce-runtime-extensibility-trigger.md)
 ### [Trigger example: Blocking transaction](trigger-example-blocking-transaction.md)
-### [Trigger example: Return policy](trigger-example-return-policy.md)
+### [Trigger example: Return policy](trigger-example-return policy.md)
 
 ## [Commerce runtime and Retail Server extensibility ](commerce-runtime-extensibility.md)
 

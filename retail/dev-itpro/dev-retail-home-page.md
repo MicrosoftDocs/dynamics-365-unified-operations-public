@@ -84,7 +84,7 @@ Retail is dependent on Dynamics 365 for Operations. We recommend that you famili
 -   [Hardware Station Extensibility](hardware-station-extensibility.md)
 
 ## Retail Store Scale Unit
--   [Retail Store Scale Unit overview](retail-store-system-before-you-begin.md)
+-   [Retail Store Scale Unit overview](retail-store-system-begin.md)
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 
 ## Commerce Runtime
