@@ -14,7 +14,7 @@
 # [Post the pre-acquisition of a fixed asset](eeur-pre-acquisition-acquisition-fixed-asset.md)						
 # [Set up signers for print forms](eeu-set-up-signers-for-printing-forms.md)						
 # [Split periods in periodic journals](create-post-periodic-journals.md)						
-# [Viewing transactions on settlement](transactions-on-settlement-form.md)						
+# [Viewing transactions on settlement](transactions-settlement-form.md)						
 # [Invoice and packing slip numbering for Latvia and Lithuania](eeu-invoices-packing-slips-numbering.md)						
 # [Fixed assets disposal for Estonia and Lithuania](eeu-credit-note-reverse-fixed-asset-sale.md)						
 # [Editing invoice IDs on Sales orders](eeu-edit-invoice-id-sales-orders.md)						
@@ -73,8 +73,7 @@
 ## [Fixed asset repair statement](ltu-fixed-asset-repair-statement.md)											
 # Norway						
 ## [Nets import format](nor-nets-import-format.md)						
-# Poland						
-## [Fixed assets disposal](pol-fixed-asset-disposal-functionality-extension-for.md)						
+# Poland										
 ## [Fixed asset disposal functionality extension](pol-fixed-asset-disposal-functionality-extension.md)						
 ## [Fixed assets depreciation](pol-fixed-assets-depreciation.md)						
 ## [Line discount calculation from the unit price](pol-line-discount-calculation-from-unit-price.md)						
