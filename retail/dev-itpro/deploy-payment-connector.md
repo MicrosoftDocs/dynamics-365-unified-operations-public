@@ -63,7 +63,7 @@ A deployable package is an asset that can be consumed by the LCS deployment serv
 
 -   **AOSPaymentPackage** – This type of package deploys one or more payment connectors to AOS.
 -   **RetailDeployablePackage** – This type of package deploys one or more payment connectors to the following components:
-    -   Retail Server
+.    -   Retail Server
     -   Cloud POS
     -   Self-service installer, which enables installation of the following:
         -   Hardware station
@@ -87,7 +87,7 @@ After you've uploaded your deployable packages to the LCS asset library, you can
 
 #### Download and run installers on client computers
 
-The self-service package contains the installers for both Hardware station and Modern POS. After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers. For information about how to download Hardware station and Modern POS, and install them on client computers, see [Retail Modern POS self-service download/installation, and device activation of Modern POS and Cloud POS](retail-modern-pos-device-activation.md).
+The self-service package contains the installers for both Hardware station and Modern POS. After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers. For information about how to download Hardware station and Modern POS, and install them on client computers, see [Retail Modern POS self-service download/installation, and device activation of Modern POS and Cloud POS](../retail-modern-pos-device-activation.md).
 
 ## Manual deployment
 This section describes how to manually deploy a payment connector. You can use a manual deployment to test locally in a developer environment. This developer environment can be either cloud-hosted or on a downloadable virtual hard disk (VHD).
