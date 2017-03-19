@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cash and bank management home page
