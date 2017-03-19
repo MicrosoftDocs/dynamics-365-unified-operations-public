@@ -15,9 +15,9 @@
 # [Set up signers for print forms](eeu-set-up-signers-for-printing-forms.md)						
 # [Split periods in periodic journals](create-post-periodic-journals.md)						
 # [Viewing transactions on settlement](transactions-on-settlement-form.md)						
-# [Invoice and packing slip numbering for Latvia and Lithuania](eeu-invoices-and-packing-slips-numbering.md)						
-# [Fixed assets disposal for Estonia and Lithuania](eeu-credit-note-to-reverse-a-fixed-asset-sale.md)						
-# [Editing invoice IDs on Sales orders](eeu-edit-invoice-id-on-sales-orders.md)						
+# [Invoice and packing slip numbering for Latvia and Lithuania](eeu-invoices-packing-slips-numbering.md)						
+# [Fixed assets disposal for Estonia and Lithuania](eeu-credit-note-reverse-fixed-asset-sale.md)						
+# [Editing invoice IDs on Sales orders](eeu-edit-invoice-id-sales-orders.md)						
 # [Depreciation rounding](eeu-depreciation-rounding.md)						
 # [Credit note reverse fixed asset sale](eeu-credit-note-reverse-fixed-asset-sale.md)						
 # [Advance holders](advance-holders.md)								
@@ -56,9 +56,9 @@
 # Hungary						
 ## [Low cost fixed assets](hun-low-cost-fixed-assets.md)												
 # Italy						
-## [VAT statements details](vat-statements-details-for-italy.md)						
+## [VAT statements details](vat-statements-details-italy.md)						
 ## [Black list report](italian-black-list-report.md)						
-## [Sales tax books](fiscal-books-for-italy.md)						
+## [Sales tax books](fiscal-books-italy.md)						
 ## [Competence date](ita-competence-date.md)						
 ## [Depreciation of fixed assets](ita-depreciation-of-fixed-assets.md)						
 ## [Packing slip date verification on invoices](ita-packing-slip-date-verification-on-invoice.md)						
@@ -67,14 +67,14 @@
 ## [VAT statement details](lv-vat-statement-details.md)						
 ## [Fixed assets accounting](lva-fixed-assets-accounting.md)						
 ## [Fixed assets location fields change](lva-fixed-assets-location-fields-change.md)						
-## [Tax on natural resources report](tax-on-natural-resources-in-latvia.md)						
+## [Tax on natural resources report](tax-natural-resources-latvia.md)						
 ## [Fixed assets location change tracking](lva-fixed-assets-location-fields-change.md)						
 # Lithuania						
 ## [Fixed asset repair statement](ltu-fixed-asset-repair-statement.md)											
 # Norway						
 ## [Nets import format](nor-nets-import-format.md)						
 # Poland						
-## [Fixed assets disposal](pol-fixed-asset-disposal-functionality-extension-for-poland.md)						
+## [Fixed assets disposal](pol-fixed-asset-disposal-functionality-extension-for.md)						
 ## [Fixed asset disposal functionality extension](pol-fixed-asset-disposal-functionality-extension.md)						
 ## [Fixed assets depreciation](pol-fixed-assets-depreciation.md)						
 ## [Line discount calculation from the unit price](pol-line-discount-calculation-from-unit-price.md)						

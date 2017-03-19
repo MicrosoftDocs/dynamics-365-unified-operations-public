@@ -41,6 +41,6 @@ Select a feature area to learn more about it.
 - [Cost accounting](cost-accounting\cost-accounting-home-page.md)
 - [Fixed assets](fixed-assets\fixed-assets.md)
 - [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\project-management.md)
+- [Project management](project-management\overview-project-management-accounting.md)
 - [Public sector](public-sector\public-sector-functionality.md) 
 - [Budgeting](budgeting\budgeting-overview.md) 
