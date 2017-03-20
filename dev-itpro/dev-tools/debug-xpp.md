@@ -42,7 +42,7 @@ To debug X++ code, follow these steps.
 1.  In Visual Studio, open the X++ code to debug.
 2.  Find the line or lines where you want execution to stop, and set breakpoints in those lines. To set a breakpoint in a line, click in the left column of the code editor or press F9 while the cursor is on that line. A red dot indicates that a breakpoint has been set. 
 
-  [![32\_DevoToolsConcept](./media/32_DevoToolsConcept.png.png)](./media/32_DevoToolsConcept.png.png)
+  [![32\_DevoToolsConcept](./media/32_DevoToolsConcept.png)](./media/32_DevoToolsConcept.png)
   
 3.  Set a startup project and a startup object. Startup objects can be any form, any class that has the **main** method, or any menu item. You can set the startup object in the **Properties** pane for the project. Alternatively, right-click the element in Solution Explorer, and then click **Set as Startup Object**.![setasstartupobject](./media/setasstartupobject.jpg)
 4.  On the **Debug** menu, click **Start Debugging**.
