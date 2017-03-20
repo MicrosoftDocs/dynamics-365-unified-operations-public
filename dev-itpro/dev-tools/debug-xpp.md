@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23921
@@ -40,7 +40,10 @@ To debug X++ code, you use the debugger in Microsoft Visual Studio. The process 
 To debug X++ code, follow these steps.
 
 1.  In Visual Studio, open the X++ code to debug.
-2.  Find the line or lines where you want execution to stop, and set breakpoints in those lines. To set a breakpoint in a line, click in the left column of the code editor or press F9 while the cursor is on that line. A red dot indicates that a breakpoint has been set. [![32\_DevoToolsConcept](./media/32_devotoolsconcept.png)](./media/32_devotoolsconcept.png)
+2.  Find the line or lines where you want execution to stop, and set breakpoints in those lines. To set a breakpoint in a line, click in the left column of the code editor or press F9 while the cursor is on that line. A red dot indicates that a breakpoint has been set. 
+
+  [![32\_DevoToolsConcept](./media/32_DevoToolsConcept.png.png)](./media/32_DevoToolsConcept.png.png)
+  
 3.  Set a startup project and a startup object. Startup objects can be any form, any class that has the **main** method, or any menu item. You can set the startup object in the **Properties** pane for the project. Alternatively, right-click the element in Solution Explorer, and then click **Set as Startup Object**.![setasstartupobject](./media/setasstartupobject.jpg)
 4.  On the **Debug** menu, click **Start Debugging**.
 5.  In the application, perform the action that causes the code that you're interested in to run. Typical actions include opening a form. Processing stops at the breakpoints that you set. [![33\_DevoToolsConcept](./media/33_devotoolsconcept.png)](./media/33_devotoolsconcept.png)
