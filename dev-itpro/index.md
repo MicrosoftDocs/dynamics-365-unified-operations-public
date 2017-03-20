@@ -17,6 +17,12 @@ The developer experience is based on modern tooling using Visual Studio and .NET
 For more information, see [Developer home page](dev-tools/developer-home-page.md).
 
 # BI & reporting
+Dynamics 365 for Operations provides five distinct reporting experiences. Specialized tools are provided to meet the complex and diverse reporting needs of various functions throughout the organization.
+- Operational views – Designed to address the specific needs of a given business persona.
+- Business documents – Static documents used to capture and exchange processed business data.
+- Analytical tools and visualizations – Personalized presentations of logical calculations that allow the user to explore their data.
+- Electronic reporting – Tool used to configure formats for electronic documents.
+- Financial reporting – Designed to provide in-depth accounting management tools based on standard views of financial activities across legal entities.
 
 # Mobile apps
 The Microsoft Dynamics 365 for Operations mobile app empowers your organization to mobilize its business processes. After your IT admin enables the mobile workspaces feature for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The Dynamics 365 for Operations mobile app includes the following features that can help increase productivity:
