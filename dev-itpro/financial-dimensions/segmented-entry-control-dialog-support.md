@@ -3,7 +3,7 @@
 
 title: Segmented entry control dialog support
 description: Describes the code pattern to add Segmented Entry controls to dialogs.
-author: twheeloc
+author: robinarh
 manager: AnnBe
 ms.date: 2015-12-12 20 - 44 - 50
 ms.topic: article
@@ -21,8 +21,7 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 25571
-ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5
-ms.search.region: Global
+ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5ms.search.region: Global
 # ms.search.industry: 
 ms.author: ghenriks
 ms.search.validFrom: 2016-02-28
@@ -69,11 +68,11 @@ This is a simple dialog scenario around Segmented Entry. More advanced scenari
 See also
 --------
 
-[Segmented Entry control Metadata Specification](https://ax.help.dynamics.com/en/?p=145441)
+[Segmented Entry control Metadata Specification](segmented-entry-control-metadata-specification.md)
 
-[Segmented Entry control Parm method Specification](https://ax.help.dynamics.com/en/?p=154321)
+[Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control migration walkthrough](https://ax.help.dynamics.com/en/?p=118381)
+[Segmented Entry control migration](segmented-entry-control-conversion.md)
 
-[Segmented Entry control - Migration guidance](https://ax.help.dynamics.com/en/?p=121441)
+[Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
 

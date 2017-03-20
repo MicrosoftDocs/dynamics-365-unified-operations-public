@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 4
 
 ---
 
-# Embed Power BI in workspaces
+# Embedded Power BI in workspaces
 
 Dynamics 365 for Operations now delivers rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 

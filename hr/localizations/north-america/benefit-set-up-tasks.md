@@ -241,57 +241,12 @@ Two tier types are available on the **Contribution calculation rates** page.
 
 The following table shows the formula that is used to calculate the amount of the employer's contribution amount for plans 1 and 2 for each tier type.
 
-Plan
-
-Tier type
-
-Employee earnings
-
-Employee deduction amount
-
-Employer contribution amount
-
-Formula for calculating the employer contribution amount
-
-Plan 1
-
-Single line
-
-1,000.00
-
-100.00
-
-0.00
-
-Cascading tier
-
-1,000.00
-
-100.00
-
-45.00
-
-(1,000 × 0) + (\[1,000 × (0.06 – 0.03)\] × 0.5) + (\[1,000 × (0.03 – 0.00\]) × 1) = 45
-
-Plan 2
-
-Single line
-
-1,000.00
-
-100.00
-
-30.00
-
-Cascading tier
-
-1,000.00
-
-100.00
-
-60.00
-
-(1,000 × 0.03) + (1,000 × 0.02) + (1,000 × 0.01) = 60
+| Plan | Tier type | Employee earnings | Employee deduction amount | Employer contribution amount | Formula for calculating the employer contribution amount |
+|---|---|---|---|---|---|
+| Plan 1 | Single line | 1,000.00 | 100.00 | 0.00 |   |
+| Plan 1 | Cascading tier | 1,000.00 | 100.00 | 45.00 | (1,000 × 0) + (\[1,000 × (0.06 – 0.03)\] × 0.5) + (\[1,000 × (0.03 – 0.00\]) × 1) = 45 |
+| Plan 2 | Single line | 1,000.00 | 100.00 | 30.00 |   |
+| Plan 2 | Cascading tier | 1,000.00 | 100.00 | 60.00 | (1,000 × 0.03) + (1,000 × 0.02) + (1,000 × 0.01) = 60 |
 
 Use the data in your own table to set up the contribution calculation rate tables that you require.
 
@@ -341,17 +296,17 @@ After you've set up benefit elements on the **Benefit elements** page, you must 
 
 After you've created the benefit, you must add some details. Click **Edit**, and enter information on the following FastTabs. On the **Eligibility rules** FastTab, you must select the method that is used to determine eligibility. Select one of the following options.
 
-| Method                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Method                     | Description                                                   |
+|----------------------------|---------------------------------------------------------------|
 | All workers are eligible   | The benefit is included in eligibility processing, but eligibility rules aren't enforced for the benefit. All workers are always eligible. When you select this method, any worker who is included in an eligibility event can enroll in the benefit after the event is processed. However, workers can't enroll at any other time. Therefore, you can limit enrollment in the benefit to the appropriate enrollment periods, but without otherwise limiting eligibility for the benefit. |
-| Rule based                 | User-defined eligibility rules are enforced for the benefit. In the **Rule type** list, select the type of rule type to use. This method is used for most benefits.                                                                                                                                                                                                                                                                                                                       |
-| Bypass eligibility process | The benefit isn't included in eligibility processing. Any worker can be enrolled in the benefit at any time. You don't have to process an eligibility event before you enroll a worker in the benefit. This method is usually used for garnishments and tax levies.                                                                                                                                                                                                                       |
+| Rule based                 | User-defined eligibility rules are enforced for the benefit. In the **Rule type** list, select the type of rule type to use. This method is used for most benefits.                                   |
+| Bypass eligibility process | The benefit isn't included in eligibility processing. Any worker can be enrolled in the benefit at any time. You don't have to process an eligibility event before you enroll a worker in the benefit. This method is usually used for garnishments and tax levies.                                                                  |
 
 If any eligibility overrides are required, enter the following information on the **Eligibility overrides** FastTab.
 
-| Field                       | Description                                                                                                                                                                                                                                                       |
-|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name                        | Select the worker to add an override for.                                                                                                                                                                                                                         |
+| Field                       | Description                                                   |
+|-----------------------------|---------------------------------------------------------------|
+| Name                        | Select the worker to add an override for.                     |
 | Override start Override end | Enter the first and last dates when the override applies. When you determine eligibility for a benefit by using a coverage start date that is in the specified date range, the employee is eligible for the benefit, regardless of the benefit eligibility rules. |
 
 On the **Payroll** FastTab, you must enter the following information for the benefit. Note that this FastTab might include settings only for deductions, only for contributions, or for both deductions and contributions. The settings that are included depend on the value of the **Payroll impact** field for the benefit plan on the **Benefit elements** page. If the **Payroll impact** field is set to **None**, this FastTab isn't available. The values on this FastTab are used as default values on the **Maintain benefits** page for each worker who is enrolled in the selected benefit.
@@ -411,7 +366,6 @@ On the **Worker's compensation** FastTab, specify the state that each benefit ap
 ## Next step
 The next step is to set up payroll information for positions and workers. For more information, see [Worker and position payroll tasks](worker-position-payroll-tasks.md).
 
-## [ ](garnishmenttaxlevysetuptasks.md)
 
 See also
 --------

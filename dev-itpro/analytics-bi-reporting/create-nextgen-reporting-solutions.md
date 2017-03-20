@@ -37,7 +37,7 @@ This tutorial shows how to export data and create a report, expand predefined vi
 Prerequisites
 -------------
 
-For this tutorial, you must access the Microsoft Dynamics AX environment, and you must be provisioned as an administrator on the Dynamics AX instance.  For more information, see the "Access Microsoft Dynamics AX instances" wiki article.
+For this tutorial, you must access the Microsoft Dynamics 365 for Operations environment, and you must be provisioned as an administrator on the instance.
 
 ## Key concepts
 -   Describe the various ways reports can be created and consumed in Dynamics AX
@@ -76,14 +76,13 @@ The most difficult task for developers is selecting the *right* Business Intelli
 
 The following table can be used to compare the basic characteristics of these reporting tools:
 
-|                           |            |            |                              |                   |              |
+| TOOL                  | AUTHOR | TARGET | DATA                     | CONSUMPTION   | DESIGNER |
 |---------------------------|------------|------------|------------------------------|-------------------|--------------|
-| **TOOL**                  | **AUTHOR** | **TARGET** | **DATA**                     | **CONSUMPTION**   | **DESIGNER** |
-| ***Excel***               | Power User | Power User | Transactional                | External          | Free form    |
-| ***Embedded BI***         | Developer  | All users  | Aggregates                   | Internal          | Modeled      |
-| ***SSRS Report***         | Developer  | All users  | Transactional and Aggregates | Internal/External | Free form    |
-| ***Power BI***            | Power User | All users  | Aggregates                   | Internal/External | Free form    |
-| ***Management Reporter*** | Power User | Power User | Transactional                | External          | Modeled      |
+| Excel               | Power User | Power User | Transactional                | External          | Free form    |
+| Embedded BI         | Developer  | All users  | Aggregates                   | Internal          | Modeled      |
+| SSRS Report         | Developer  | All users  | Transactional and Aggregates | Internal/External | Free form    |
+| Power BI            | Power User | All users  | Aggregates                   | Internal/External | Free form    |
+| Management Reporter | Power User | Power User | Transactional                | External          | Modeled      |
 
 ## Create a report using List Pages
 In this section, we'll walk you through the process of exporting Dynamics AX data displayed in an entity details form. Here we’ll demonstrate how every form in Dynamics AX can be viewed as a source of data for management and analysis using the power of Excel.
@@ -101,7 +100,9 @@ In this section, we'll walk you through the process of exporting Dynamics AX dat
 6.  Enter **Complete** in the Status filter field, and then click **Apply**.
 7.  Expand the page action bar, click **Open in Office**, and then select **Rentals**.
 
-[![FMRentals export](./media/fmrentals-export.png)](./media/fmrentals-export.png) After the data has been exported, you can use the power and flexibility of the Excel tools to create reports for presentation or additional analysis. The following is an example of a self-service report authored with Excel. [![FMRentals analysis](./media/fmrentals-analysis-1024x775.png)](./media/fmrentals-analysis.png)
+    [![FMRentals export](./media/fmrentals-export.png)](./media/fmrentals-export.png) 
+
+    After the data has been exported, you can use the power and flexibility of the Excel tools to create reports for presentation or additional analysis. The following is an example of a self-service report authored with Excel. [![FMRentals analysis](./media/fmrentals-analysis-1024x775.png)](./media/fmrentals-analysis.png)
 
 1.  Close the browser session and the exported Excel file.
 
@@ -125,7 +126,9 @@ Business Intelligence can be useful at every level of an organization. Use embed
 7.  Press **Ctrl+Shift+B** to save and build the project.
 8.  Press **Ctrl + F5** to load the form containing the report.
 
-[![FMCustomer activity](./media/fmcustomer-activity-300x224.png)](./media/fmcustomer-activity.png) At this point, you have a collection of pre-defined chart visualizations of Aggregate data. The controls offer basic interactive features like hover text, series filtering, and touch expansion. However, it is often appropriate that a greater degree of user interactivity is required.
+    [![FMCustomer activity](./media/fmcustomer-activity-300x224.png)](./media/fmcustomer-activity.png) 
+
+At this point, you have a collection of pre-defined chart visualizations of Aggregate data. The controls offer basic interactive features like hover text, series filtering, and touch expansion. However, it is often appropriate that a greater degree of user interactivity is required.
 
 ### Change the default chart type for the visualization
 
@@ -137,9 +140,13 @@ Business Intelligence can be useful at every level of an organization. Use embed
 6.  Locate the **Appearance** section in the **Properties** window.
 7.  Update the **Chart type** value and select **Pie**
 8.  Press Ctrl+Shift+B to save and rebuild the project.
-9.  ** **Press Ctrl + F5 to run the report.
+9.  Press Ctrl + F5 to run the report.
 
-The **Reservations by customer** view now visualizes the aggregate data set using a Pie chart to simplify the task of comparing rental activity across customers. [![FMCustomer activity 2](./media/fmcustomer-activity-2-1024x733.png)](./media/fmcustomer-activity-2.png) Additional functions include:
+The **Reservations by customer** view now visualizes the aggregate data set using a Pie chart to simplify the task of comparing rental activity across customers. 
+
+[![FMCustomer activity 2](./media/fmcustomer-activity-2-1024x733.png)](./media/fmcustomer-activity-2.png) 
+
+Additional functions include:
 
 -   Define contextual drill-through navigations using modeled properties
 -   Manage drill-through links using X++ form logic
@@ -160,12 +167,14 @@ SSRS continues to be the platform for producing advanced Business Document solut
 3.  Use the **Application Explorer** to search for objects with **FMRentalsByCust** in the name
 4.  In the **Application Explorer’s** search results, select all **Classes**, the **Output Menu Item**, and the **FMRentalsByCustomer** report
 5.  Right-click and then select **Add to new project**.
-6.  Select the **Dynamics AX Project** template, and then click **OK** to create the project.
+6.  Select the **Dynamics 365** template, and then click **OK** to create the project.
 7.  In **Solution Explorer**, double-click on the **FMRentalsByCustomer** report to open the designer.
 8.  Expand the **Designs** collection in the designer to view the list of design definitions
 9.  Double-click on the **Report** design to view the report definition using the Precision Designer
 
-[![Report designer](./media/report-designer-1024x665.png)](./media/report-designer.png) The above is a screen-shot of the FMRentalsByCustomer report design definition as viewed using the Visual Studio 2015 Precision Designer. The Precision Designer offers a free-form design surface with built-in tools that allow you to customize the content and layout of the report. You can also take advantage of embedded VB code to create run-time design manipulations and support user interactions. As an integrated tool, developers are able to reference AX labels and public APIs to format data in the report body based on AX EDTs. MSDN offers a rich collection of developer documentation related to SSRS formatting capabilities. See the article [here](https://msdn.microsoft.com/en-us/library/bb522712.aspx) on for a good primer on designing effective SSRS reports.
+[![Report designer](./media/report-designer-1024x665.png)](./media/report-designer.png) 
+
+The above is a screen-shot of the FMRentalsByCustomer report design definition as viewed using the Visual Studio 2015 Precision Designer. The Precision Designer offers a free-form design surface with built-in tools that allow you to customize the content and layout of the report. You can also take advantage of embedded VB code to create run-time design manipulations and support user interactions. As an integrated tool, developers are able to reference AX labels and public APIs to format data in the report body based on AX EDTs. MSDN offers a rich collection of developer documentation related to SSRS formatting capabilities. See the article [Reporting Services Reports (SSRS)](https://msdn.microsoft.com/en-us/library/bb522712.aspx) on for a good primer on designing effective SSRS reports.
 
 ## Customizing the parameter experience
 The Reporting Framework offers flexibility through service extensions to facilitate advanced solutions with requirements that cannot be addressed using a modeled solution. Use the VS designer to add basic parameter formatting, grouping, and input validation. X++ based data contract validation is available for more advanced scenarios. Consider adding User Interface (UI) Builder Classes to customize the parameter pane used to prompt for session inputs before running a report. These custom extensions are effective for addressing the following functions:
@@ -179,33 +188,31 @@ The Reporting Framework offers flexibility through service extensions to facilit
 ### Defining parameters defaulting using code
 
 1.  In **Solution Explorer**, double-click on the **FMRentalsByCustUIBuilder** class to open the designer.
-2.  Locate the class **build** method and update the initialization code as follows
+1.  Locate the class **build** method and update the initialization code as follows
 
-<!-- -->
-
-    public void build()
-    {
-        Dialog dialogLocal = this.dialog();
-        contract = this.dataContractObject() as FMRentalsByCustContract;// associate dialog field with data contract method
-        this.addDialogField(methodStr(FMRentalsByCustContract, parmCustGroupId), contract);dialogLocal.addGroup("@SYS41297");
-        fromDateField = this.addDialogField(methodStr(FMRentalsByCustContract, parmFromDate), contract);
-        toDateField = this.addDialogField(methodStr(FMRentalsByCustContract, parmToDate), contract);// set the default date range values
-        fromDateField.value(today() - 365);
-        toDateField.value(today());
-    }
+        public void build()
+        {
+            Dialog dialogLocal = this.dialog();
+            contract = this.dataContractObject() as FMRentalsByCustContract;// associate dialog field with data contract method
+            this.addDialogField(methodStr(FMRentalsByCustContract, parmCustGroupId), contract);dialogLocal.addGroup("@SYS41297");
+            fromDateField = this.addDialogField(methodStr(FMRentalsByCustContract, parmFromDate), contract);
+            toDateField = this.addDialogField(methodStr(FMRentalsByCustContract, parmToDate), contract);// set the default date range values
+            fromDateField.value(today() - 365);
+            toDateField.value(today());
+        }
 
 1.  Press Ctrl+Shift+B to save and rebuild the project.
-2.  Press Ctrl + F5 to run the report.
+1.  Press Ctrl + F5 to run the report.
 
-[![FMRentalsByCust controls](./media/fmrentalsbycust-controls-1024x691.png)](./media/fmrentalsbycust-controls.png) The parameter initialization code above sets the default values of the report execution relative to today’s date. Use the classes UIBuilder to override the framework’s default handling of report parameters. Additional extension scenarios supported:
+[![FMRentalsByCust controls](./media/fmrentalsbycust-controls-1024x691.png)](./media/fmrentalsbycust-controls.png) 
+
+The parameter initialization code above sets the default values of the report execution relative to today’s date. Use the classes UIBuilder to override the framework’s default handling of report parameters. Additional extension scenarios supported:
 
 -   Automatically set query ranges based on session context using Controller classes
 -   Select report designs at runtime using a shared menu item
 -   Modify report data contract values using business logic
 
-<!-- -->
-
--   **Note:** This example demonstrates a UIBuilder extension with an RDP-based based report. For a Query based example that includes a UIBuilder extension, view the **FMCustomerList** report.
+**Note:** This example demonstrates a UIBuilder extension with an RDP-based based report. For a Query based example that includes a UIBuilder extension, view the **FMCustomerList** report.
 
 ## Using VB code to manage running balances
 The Reporting Framework offers flexibility through service extensions to facilitate advanced solutions with requirements that cannot be addressed using a modeled solution. Use the VS designer to add basic parameter formatting, grouping, and input validation. X++ based data contract validation is available for more advanced scenarios. Consider adding User Interface (UI) Builder Classes to customize the parameter pane used to prompt for session inputs before running a report. These custom extensions are effective for addressing the following functions:
@@ -229,7 +236,9 @@ The Reporting Framework offers flexibility through service extensions to facilit
 9.  Select the Project in Solution Explorer, right-click, and then select **Deploy Reports**
 10. Press **Ctrl + F5** to view the report.
 
-[![FMRentalDetails report](./media/fmrentaldetails-report.png)](./media/fmrentaldetails-report.png) This report uses embedded VB script to keep track of running totals so that the balances from the previous page can be referenced on the active page. To inspect report’s VB code, load the report design in the Precision Designer, access the **Report Properties**, and then select the **Code** section. Here you’ll see several functions referenced by the report designs to surface running balances within the report headers and footers.
+[![FMRentalDetails report](./media/fmrentaldetails-report.png)](./media/fmrentaldetails-report.png) 
+
+This report uses embedded VB script to keep track of running totals so that the balances from the previous page can be referenced on the active page. To inspect report’s VB code, load the report design in the Precision Designer, access the **Report Properties**, and then select the **Code** section. Here you’ll see several functions referenced by the report designs to surface running balances within the report headers and footers.
 
 ### Advantages of SSRS reports
 

@@ -72,7 +72,9 @@ If you can’t make a deduction for a garnishment, the garnishment isn’t displ
 | If your organization charges an administrative fee for garnishments or tax levies, you might have to adjust the amount of the administrative fee for any garnishments that aren’t taken in a pay period. |
 
 ## Why isn’t the administrative fee for workers’ garnishments being deducted from their pay?
-To deduct administrative fees from a worker’s pay, you have to create an administrative fee benefit and enroll the worker in that benefit. For more information, see [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md). For support orders, the **Administrative fee** field on the **Maintain benefits** page is used to ensure that the amount of the deduction plus the amount of the fee does not exceed the legal maximum for support orders. For all other garnishment types, this field has no effect and is for information only.
+To deduct administrative fees from a worker’s pay, you have to create an administrative fee benefit and enroll the worker in that benefit. For more information, see [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md). 
+
+For support orders, the **Administrative fee** field on the **Maintain benefits** page is used to ensure that the amount of the deduction plus the amount of the fee does not exceed the legal maximum for support orders. For all other garnishment types, this field has no effect and is for information only.
 
 ## Can a partial deduction be made for a garnishment?
 Yes. For example, if 1,000.00 remains before a worker’s pay reaches 0 (zero), and the requested amount for the next garnishment is 1,250.00, only 1,000.00 is deducted for that garnishment.

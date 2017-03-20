@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Employee Competencies and Development content pack for Power BI
-description: This topic describes the Dynamics 365 for Operations - Employee Competencies and Development content pack for Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+title: Employee Competencies and Development Power BI content
+description: This topic describes the Dynamics 365 for Operations - Employee Competencies and Development Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-15 14 - 45 - 37
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Employee Competencies and Development content pack for Power BI
+# Employee Competencies and Development Power BI content
 
-This topic describes the Dynamics 365 for Operations - Employee Competencies and Development content pack for Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+This topic describes the Dynamics 365 for Operations - Employee Competencies and Development Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 
 Accessing the content pack
 --------------------------

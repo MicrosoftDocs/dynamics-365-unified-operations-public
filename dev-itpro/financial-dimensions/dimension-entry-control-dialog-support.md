@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26321
@@ -55,10 +55,9 @@ In Dynamics 365 for Operations, this code would be converted to:
 
 For the second parameter on `addToDialog`, choose the controller class that satisfies the requirements for your dialog.
 
-See also
---------
+# See also
 
-[Dimension Entry control migration walkthrough](https://ax.help.dynamics.com/en/?p=175861)
+[Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 
-[Dimension Entry control uptake](https://ax.help.dynamics.com/en/?p=154381)
+[Dimension Entry control uptake](dimension-entry-control-uptake.md)
 

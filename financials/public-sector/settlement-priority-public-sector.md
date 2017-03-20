@@ -2,8 +2,8 @@
 # required metadata
 
 title: Settlement priority in the public sector
-description: In Microsoft Dynamics 'AX 7,' you can manually select transactions to settle, or you can use the automatic settlement functionality. Public-sector organizations have additional options for prioritizing settlements by using billing classifications. These options can be used with automatic or manual settlement.
-author: rschloma
+description: In Microsoft Dynamics 365 for Operations, you can manually select transactions to settle, or you can use the automatic settlement functionality. Public-sector organizations have additional options for prioritizing settlements by using billing classifications. These options can be used with automatic or manual settlement.
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-07 16 - 19 - 52
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: CustBillingClassification, CustBillingCode, CustParameters, Cust
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19551
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settlement priority in the public sector
 
-In Microsoft Dynamics 'AX 7,' you can manually select transactions to settle, or you can use the automatic settlement functionality. Public-sector organizations have additional options for prioritizing settlements by using billing classifications. These options can be used with automatic or manual settlement.
+In Microsoft Dynamics 365 for Operations, you can manually select transactions to settle, or you can use the automatic settlement functionality. Public-sector organizations have additional options for prioritizing settlements by using billing classifications. These options can be used with automatic or manual settlement.
 
 How to set the general ledger parameters and accounts receivable parameters for settlement priority
 ---------------------------------------------------------------------------------------------------
@@ -69,8 +69,4 @@ During the settlement process, settlement attributes are considered first, then 
 -   After you enable the **Billing** attribute on the **Settlement priority** page, use the **Up** and **Down** buttons at the top of the page to arrange the active settlement attributes in priority order.
 
 
-See also
---------
-
-[Accounts receivable](..\accounts-receivable\accounts-receivable.md)
 

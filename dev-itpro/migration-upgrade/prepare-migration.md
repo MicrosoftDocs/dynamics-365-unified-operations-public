@@ -39,11 +39,11 @@ Prerequisites
 
 You will need access to a Dynamics 365 for Operations development environment using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Dynamics 365 for Operation development, customization and user interface concepts before you upgrade your code. Here are some references.
 
--   [Development tools](..\dev-tools\developer-home-page.md#development-tools)
--   [Models and packages](models.md)
--   [X++ programming language](..\dev-tools\developer-home-page.md#x-programming-language)
--   [Extensions and Overlayering](..\dev-tools\developer-home-page.md#customizing-with-extensions-and-overlayering)
--   [User interface development](user-interface-development-home-page.md)
+-   [Development tools](..\dev-tools\developer-home-page.md)
+-   [Models and packages](..\dev-tools\models.md)
+-   [X++ programming language](..\dev-reference\xpp-language-reference.md)
+-   [Extensions and Overlayering](..\extensibility\extensibility-home-page.md)
+-   [User interface development](..\user-interface\user-interface-development-home-page.md)
 
 ## Overview of the code migration process
 ### Model split
@@ -72,16 +72,16 @@ The LCS code upgrade service takes a Dynamics AX 2012 R3 model store as input 
 -   Runs migration rules that inform developers what to manually fix by using TODOs.
 -   Automatically checks-in the upgraded solution into your Visual Studio Team Services (VSTS) project.
 
-To configure and run the code upgrade service, see [Configure and execute the code upgrade service in Lifecycle Services](configure-execute-code-upgrade.md).
+To configure and run the code upgrade service, see [Configure and execute the code upgrade service in Lifecycle Services](..\lifecycle-services\configure-execute-code-upgrade.md).
 
 ### Manual migration steps
 
 After you upgrade your code using the LCS code upgrade service configure your developer VM and VSTS to connect to the upgraded code branch.
 
--   [Configure your developer VM](configure-developer-vm.md)
+-   [Configure your developer VM](..\dev-tools\configure-developer-vm.md)
 -   [Configure VSTS](configure-vso-solution.md)
 
-The code upgrade service will provide with Visual Studio solutions that you can open to compile your code. A **code merge** solution for all elements that contain conflicts and an **upgraded** solutions for all your upgraded elements. Typically, you can compile the application by fixing compilation errors in the order shown below. The order is determined based on the package dependencies graph, start with the lowest package in the graph. To determine package dependencies, see [Viewing package dependencies](models.md/#viewing-package-dependencies). A typical order is Application Platform, Application Foundation, Directory, ...etc., Application Suite. For each of your upgraded models:
+The code upgrade service will provide with Visual Studio solutions that you can open to compile your code. A **code merge** solution for all elements that contain conflicts and an **upgraded** solutions for all your upgraded elements. Typically, you can compile the application by fixing compilation errors in the order shown below. The order is determined based on the package dependencies graph, start with the lowest package in the graph. To determine package dependencies, see [Models](..\dev-tools\models.md). A typical order is Application Platform, Application Foundation, Directory, ...etc., Application Suite. For each of your upgraded models:
 
 -   Fix merge conflicts.
 -   Fix compilation errors related to a model split (references across packages).

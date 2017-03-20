@@ -34,14 +34,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article gives an overview of the 125 percent reducing balance method of depreciation.
 
-When you set up a fixed asset depreciation profile and select **125% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned to the depreciation profile are depreciated by the same percentage in each depreciation period. This percentage is calculated based on the service life of the asset. For example, if an asset has a service life of five years, the percentage is calculated as 25 percent (125% ÷ 5). To set up 125% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.
+When you set up a fixed asset depreciation profile and select **125% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned to the depreciation profile are depreciated by the same percentage in each depreciation period. This percentage is calculated based on the service life of the asset. For example, if an asset has a service life of five years, the percentage is calculated as 25 percent (125% ÷ 5).
+
+To set up 125% reducing balance depreciation, you must also select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.
 
 ## Select a depreciation year
-You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page. The default value is **Calendar**. Your selection determines the options that are available in the **Period frequency** field. This field defines the depreciation accrual posting dates and amounts throughout the calendar year.
+You can select either **Calendar** or **Fiscal** in the **Depreciation year** field on the **Depreciation profiles** page. The default value is **Calendar**. 
+
+Your selection determines the options that are available in the **Period frequency** field. This field defines the depreciation accrual posting dates and amounts throughout the calendar year.
 
 ### Calendar
 
-You can keep the default value in the **Depreciation year** field, **Calendar**. The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the scrap value. In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column. If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
+You can keep the default value in the **Depreciation year** field, **Calendar**. 
+
+The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the scrap value. In the examples later in this topic, the depreciation base is the numerator in the first expression in the calculations column. 
+
+If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
 
 -   **Yearly** posts an amount on December 31.
 -   **Monthly** posts a monthly amount at the end of each calendar month.
@@ -51,7 +59,11 @@ You can keep the default value in the **Depreciation year** field, **Calendar**.
 
 ### Fiscal
 
-If you select **Fiscal** in the **Depreciation year** field, 125% reducing depreciation is calculated based on the fiscal year for the fiscal calendar that is specified for the book, or for the fiscal calendar that is selected on the **Ledger** page. Fiscal calendars are set up on the **Fiscal calendars** page. For example, for the fiscal year July 1 through June 30, the depreciation calculation starts on July 1. The fiscal year can be longer or shorter than 12 months. The depreciation is automatically adjusted for each period, and the length of the next fiscal year is determined by the setup of periods on the **Fiscal calendars** page. If you select **Fiscal** as the depreciation year, the following options are available in the **Period frequency** field:
+If you select **Fiscal** in the **Depreciation year** field, 125% reducing depreciation is calculated based on the fiscal year for the fiscal calendar that is specified for the book, or for the fiscal calendar that is selected on the **Ledger** page. Fiscal calendars are set up on the **Fiscal calendars** page. 
+
+For example, for the fiscal year July 1 through June 30, the depreciation calculation starts on July 1. The fiscal year can be longer or shorter than 12 months. The depreciation is automatically adjusted for each period, and the length of the next fiscal year is determined by the setup of periods on the **Fiscal calendars** page. 
+
+If you select **Fiscal** as the depreciation year, the following options are available in the **Period frequency** field:
 
 -   **Yearly** posts the total amount of the depreciation that is calculated for the fiscal year as one amount, on the last day of the fiscal year.
 -   **Fiscal period** posts the total amount of the depreciation that is calculated for the fiscal year. This amount is accrued into the fiscal periods that are defined on the **Fiscal calendars** page.
@@ -73,5 +85,6 @@ The 125% reducing balance method divides 125 percent by the service life years.
 | Year 2 | 7,500 × 25% = 1,875                           | (8,500 – 1,875) = 6,625       | (7,500 – 1,875) = 5,625               |
 | Year 3 | 5,625 × 25% = 1,406.25                        | (6,625 – 1,406.25) = 5,218.75 | (5,625 – 1,406.25) = 4,218.75         |
 
-**Note:** Typically, when the amount that is calculated by using the 125% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.
+> [!NOTE] 
+> Typically, when the amount that is calculated by using the 125% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.
 

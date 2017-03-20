@@ -5,7 +5,7 @@ title: Fixed asset impairment accounting on cash generating units
 description: This article introduces the features for fixed asset impairment that are included in Microsoft Dynamics AX. The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-12 23 - 14 - 44
+ms.date: 2017-03-15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -44,10 +44,10 @@ The primary page is **Cash generating groups** (**Fixed assets** &gt; **Setup** 
 
 ### Optional: Allocating the net book value of shared assets and goodwill
 
-The primary page is **Allocation of net book value of goodwill and shared asset **(**Fixed assets** &gt; **Setup** &gt; **Impairment** &gt; **Allocation of net book value of goodwill and shared asset**). If a user chooses to apply Method II in a CGU group, the net book value of shared assets and goodwill must be allocated to each cash generating unit.
+The primary page is **Allocation of net book value of goodwill and shared asset** (**Fixed assets** &gt; **Setup** &gt; **Impairment** &gt; **Allocation of net book value of goodwill and shared asset**). If a user chooses to apply Method II in a CGU group, the net book value of shared assets and goodwill must be allocated to each cash generating unit.
 
 ## Impairment recognition test
-The primary page is **Fixed assets &gt; Adjustment**. The sub-menus different, depending on whether Method I or Method II is applied. The first step of impairment is the recognition test. Future cash flow that isn't discounted is used as a standard that the carrying amount (or net book value) is compared against. If this future cash flow isn't enough to cover the net book value of the asset, the impairment measurement must recognize the journal amount.
+The primary page is **Fixed assets** &gt; **Adjustment**. The sub-menus different, depending on whether Method I or Method II is applied. The first step of impairment is the recognition test. Future cash flow that isn't discounted is used as a standard that the carrying amount (or net book value) is compared against. If this future cash flow isn't enough to cover the net book value of the asset, the impairment measurement must recognize the journal amount.
 
 ## Measurement of the impairment amount
 The second step is measurement of the impairment amount. The recoverable amount is subtracted from the net book value of the fixed asset to calculate the impairment amount. The recoverable amount is either the value in use or the market value of the asset, whichever is higher. The two steps are done on the same page.

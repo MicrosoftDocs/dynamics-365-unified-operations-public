@@ -43,7 +43,7 @@ In Microsoft Dynamics 365 for Operations, you can import transactions from banks
 ## Bank statements
 A *bank statement* or *account statement* is a summary of financial transactions that have occurred over a given period on a bank account held by a company with a financial institution. In Dynamics 365 for Operations you can import a bank statement. It is important to settle imported transactions with existing transactions as well as verify the opening and ending balance of the bank accounts. The following list includes the supported European formats.
 
--   Advanced bank reconciliation European file formats. For more information, see [Advanced bank reconciliation overview](advanced-bank-reconciliation-overview.md).
+-   Advanced bank reconciliation European file formats. For more information, see [Advanced bank reconciliation overview](/financials/cash-bank-management/advanced-bank-reconciliation-overview).
 -   ISO 20022 camt.053 bank statement message file format
 -   CODA bank statement file format. For more information, see [CODA bank statement](bel-coda-bank-statement-import.md).
 
@@ -63,5 +63,3 @@ In addition to a bank statement, banks can provide specific messages, containing
 -   (DNK) BetalingsserviceBasis-returformat – Return format for customer Betalingsservice export format
 -   [Import payment formats for Sweden](sweden-payment-formats-import.md) - Bankgirot Autogiro returns
 -   (SWE) BankGirot return – Vendor payments return format, which corresponds to Bankgirot export format
-
-

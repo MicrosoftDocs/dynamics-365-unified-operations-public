@@ -36,7 +36,7 @@ Lifecycle Services (LCS) solution packages for Microsoft AppSource, are partner-
 
 This topic points to resources that will help you understand the requirements for creating LCS solutions for Microsoft AppSource. The requirements for creating a LCS solution package fall into six groups.
 
--   [Code migration](..\migration-upgrade\code-migration-lcs-solutions.md)
+-   [Code migration](code-migration-lcs-solutions.md)
 -   [Database backup](database-backup-lcs-solutions.md) and [Process Data Packages (PDP)](process-data-packages-lcs-solutions.md)
 -   [Business process models](business-process-modeler-libraries-lcs-solutions.md)
 -   [Marketing](marketing-content-lcs-solutions.md)

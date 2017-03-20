@@ -64,11 +64,14 @@ This tutorial works on Fleet Management model.
 
 ## Review the FMVehicle form
 1.  In this tutorial, the **FMVehicle** form has been modified with a part that shows the rental history of vehicles that are the same make. The form part has been added to the **FMVehicle** form.
-2.  In Solution Explorer, double-click the **FMVehicle** form. The form designer will open as shown below. Notice the newly added form part. [![BIforms1](./media/biforms1.png)](./media/biforms1.png)
+2.  In Solution Explorer, double-click the **FMVehicle** form. The form designer will open as shown below. Notice the newly added form part. 
+
+    [![BIforms1](./media/biforms1.png)](./media/biforms1.png)
+
 3.  Select the form part reference node **FMVehicleRentalsAndRevenue\_Part**, right-click, and then select **Properties**. Notice following properties in the part reference
-    |                          |                                    |           |
-    |--------------------------|------------------------------------|-----------|
+
     | **Property name**        | **Value**                          | **Notes** |
+    |--------------------------|------------------------------------|-----------|
     | **Name**                 | FMVehicleRentalsAndRevenue\_Part   |           |
     | **Menu item name**       | FMBIVehicleRentalsAndRevenue\_Part |           |
     | **Data source**          | FMVehicle                          |           |
@@ -81,20 +84,25 @@ This tutorial works on Fleet Management model.
 Next, we will review the form part.
 
 1.  In Solution Explorer, select and double-click the form part **FMBIVehicleRentalsAndRevenue\_Part**.
-2.  The form part will be appear in the Form designer as shown below. [![BIforms2](./media/biforms2.png)](./media/biforms2.png)
+2.  The form part will be appear in the Form designer as shown below. 
+    
+    [![BIforms2](./media/biforms2.png)](./media/biforms2.png)
+
 3.  Select **DataSources** &gt; **FMVehicleModel**, right-click, and then select **Properties**.
 4.  Review the following properties.
-    |                   |                |           |
-    |-------------------|----------------|-----------|
+
     | **Property name** | **Value**      | **Notes** |
+    |-------------------|----------------|-----------|
     | **Table**         | FMVehicleModel |           |
     | **Link type**     | Delayed        |           |
 
     **Note:** You could have used other DynaLink types. In this case, we want the form part to refresh asynchronously. So we have selected Delayed as the DynaLink type.
 5.  Next, select the project node, right-click, and then select **Rebuild**. Press **Ctrl+F5** to run the form. You will see the modified Vehicle form.
-6.  Expand the **Rental history of Cars like this** part by clicking the Down Arrow beside the part. [![BIforms3](./media/biforms3.png)](./media/biforms3.png)
+6.  Expand the **Rental history of Cars like this** part by clicking the Down Arrow beside the part. 
+    [![BIforms3](./media/biforms3.png)](./media/biforms3.png)
 7.  Select and click a record to view detailed information about the record.
-8.  To see context being passed to the form part, select the **List** icon on the bottom left and navigate through the records. You will see the part display model specification for each of the cars shown on the page. [![BIforms4](./media/biforms4.png)](./media/biforms4.png)
+8.  To see context being passed to the form part, select the **List** icon on the bottom left and navigate through the records. You will see the part display model specification for each of the cars shown on the page. 
+    [![BIforms4](./media/biforms4.png)](./media/biforms4.png)
 
 ## Adding contextual BI to the form part using an aggregate data entity
 In this section, you’ll model an aggregate data entity. Next, you will add the Aggregate Data entity into the form part and then populate a chart.
@@ -107,16 +115,20 @@ In this section, you’ll model an aggregate data entity. Next, you will add the
     1.  Select the **DataSource** node.
     2.  Right-click, and select **Properties**.
     3.  Select **FMAggregateMeasurement** as the property value for **Measurement property**.
-    4.  Save the aggregate data entity. You will notice the measurement **FMAggregateMeasurements** shown under the **DataSource** node, as shown below. You can expand the aggregate measurement so that you can see each of the fields. [![BIforms5](./media/biforms5.png)](./media/biforms5.png) **Note:** An aggregate data entity can reference only one aggregate measurement. You can’t define aggregate data entities that reference multiple aggregate measurements.
+    4.  Save the aggregate data entity. You will notice the measurement **FMAggregateMeasurements** shown under the **DataSource** node, as shown below. You can expand the aggregate measurement so that you can see each of the fields. 
+        [![BIforms5](./media/biforms5.png)](./media/biforms5.png) 
+        
+        **Note:** An aggregate data entity can reference only one aggregate measurement. You can’t define aggregate data entities that reference multiple aggregate measurements.
 
 4.  Add a measure field to the data entity from the aggregate measurement. Multi-select **NoRentals** and **TotalRevenue** measures by clicking on both of them while pressing the **Ctrl** key.
-5.  Use the drag-and drop operation to move the measures into the **Fields** node. Two fields will be created in the aggregate data entity **FMBIRevenueByVehicleModelbyMonth**, as shown below. [![BIforms6](./media/biforms6.png)](./media/biforms6.png)
+5.  Use the drag-and drop operation to move the measures into the **Fields** node. Two fields will be created in the aggregate data entity **FMBIRevenueByVehicleModelbyMonth**, as shown below. 
+    [![BIforms6](./media/biforms6.png)](./media/biforms6.png)
 6.  Right-click the **Fields** node of **FMBIRevenueByVehicleModelbyMonth**, and then select **New &gt;** **Mapped Field**.
 7.  Add a dimension attribute as a field. Right-click the **Fields** node of **FMBIRevenueByVehicleModelbyMonth**, and then select **Mapped Field.**
 8.  Enter the following property values.
-    |                        |                  |           |
-    |------------------------|------------------|-----------|
+
     | **Property name**      | **Value**        | **Notes** |
+    |------------------------|------------------|-----------|
     | **Name**               | VehicleModel     |           |
     | **Measure Group**      | FMRentalCharges  |           |
     | **Dimension**          | FMVehicle        |           |
@@ -136,15 +148,16 @@ In this section, you’ll model an aggregate data entity. Next, you will add the
 
 13. Launch **Application Explorer**. Click **AOT** &gt; **Data Model** &gt; **Aggregate DataEntities**. The aggregate data entity that you defined should appear in the node.
 
-**NOTE:** Aggregate data entities are currently reflected within an Aggregate DataEntities node. In the future, they will be shown within the **Data Entities** node. [![BIforms7](./media/biforms7.png)](./media/biforms7.png)
+**NOTE:** Aggregate data entities are currently reflected within an Aggregate DataEntities node. In the future, they will be shown within the **Data Entities** node. 
+
+[![BIforms7](./media/biforms7.png)](./media/biforms7.png)
 
 ### Add the Aggregate Data Entity to the form part data source
 
 1.  Select the newly defined aggregate data entity **FMBIRevenueByVehicleModelbyMonth** in Solution Explorer. Drag-and-drop the aggregate data entity to the **Data sources** node of the form part.
 2.  Select the aggregate data entity **FMBIRevenueByVehicleModelbyMonth** in the Data sources node. Right-click, and then select **Properties**. Review the following properties. You do not need to modify defaults.
-    |                   |                                  |           |
-    |-------------------|----------------------------------|-----------|
     | **Property name** | **Value**                        | **Notes** |
+    |-------------------|----------------------------------|-----------|
     | **Name**          | FMBIRevenueByVehicleModelbyMonth |           |
     | **Table**         | FMBIRevenueByVehicleModelbyMonth |           |
     | **Link type**     | Delayed                          |           |
@@ -177,33 +190,35 @@ Model a chart within the form part by using the data in the temp table.
 
 1.  Click in the Form Designer window of **FMBIVehicleRentalsAndRevenue\_Part**. On the right, select the **FormGroupControl** node of the Form designer, right-click, and then select **New** &gt; **Chart**. A chart control will be added to the form part.
 2.  Select **SysChart1**, the root node of the chart, and then enter following properties.
-    |                    |                   |           |
-    |--------------------|-------------------|-----------|
+
     | **Property name**  | **Value**         | **Notes** |
+    |--------------------|-------------------|-----------|
     | **Name**           | RentalHistory     |           |
     | **Height mode**    | Size to available |           |
     | **Width mode**     | Size to available |           |
     | **Legend enabled** | False             |           |
 
 3.  Expand the **Bindings** node, and select **SysBuildChartDataSet1** node. Right-click, and select **Properties**. Enter the following property values.
-    |                   |                                  |           |
-    |-------------------|----------------------------------|-----------|
+
     | **Property name** | **Value**                        | **Notes** |
+    |-------------------|----------------------------------|-----------|
     | **Name**          | NumRentalsByMonth                |           |
     | **Data source**   | FMBIRevenueByVehicleModelbyMonth |           |
     | **Categories**    | RentalMonth                      |           |
 
 4.  Expand the **Series** node, and select the **SysBuildChartMeasure1** node. Right-click, and then select **Properties**. Enter the following property values.
-    |                   |                   |           |
-    |-------------------|-------------------|-----------|
+
     | **Property name** | **Value**         | **Notes** |
+    |-------------------|-------------------|-----------|
     | **Name**          | NumRentals        |           |
     | **Binding**       | NumRentalsByMonth |           |
     | **Chart Type**    | Column            |           |
     | **Value**         | NumRentals        |           |
 
 5.  Save the form part and rebuild.
-6.  Press **Ctrl+F5** to preview the form. You will see a chart for the record that is selected in the grid. [![BIforms8](./media/biforms8.png)](./media/biforms8.png) **Note:** If the chart doesn’t contain any data, complete the following steps.
+6.  Press **Ctrl+F5** to preview the form. You will see a chart for the record that is selected in the grid. 
+    [![BIforms8](./media/biforms8.png)](./media/biforms8.png) 
+    **Note:** If the chart doesn’t contain any data, complete the following steps.
 7.  Close all instances of the browser and rerun the form
 8.  Verify all instances of the browser and rerun the form
 
@@ -215,12 +230,13 @@ To work with the sample, you must install the provided demo data.
 1.  Open Internet Explorer, and navigate to your Dynamics AX instance base URL.
     -   On the cloud environment, the base URL is obtained from LCS
     -   On a local VM, the base URL is [https://usnconeboxax1aos.cloud.onebox.dynamics.com](https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/)
-
 2.  Sign in.
 3.  On the dashboard, scroll to the far right, and in the **Fleet Management** section, click the **Fleet setup** tile.
 4.  On the **Setup** form, click **Load demo data**.
 5.  If you’re prompted to reload the base data, click **Yes**.
 6.  When the data is finished loading, click **Close**.
-7.  Click **Show navigation pane** on the navigation bar. [![BIforms9](./media/biforms9.png)](./media/biforms9.png)
+7.  Click **Show navigation pane** on the navigation bar. 
+
+    [![BIforms9](./media/biforms9.png)](./media/biforms9.png)
 
 

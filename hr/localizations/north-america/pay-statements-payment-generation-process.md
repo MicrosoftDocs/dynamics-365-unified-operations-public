@@ -37,7 +37,9 @@ This topic answers questions that are related to activities that go beyond stand
 This topic describes functionality that is available only if the **Payroll - USA** configuration key is selected.
 
 ## How do I record payments that were made outside Payroll?
-In some cases, a worker payment is made and taxes are withheld outside the Payroll system. For example, when stock shares for an employee are vested, and a specific number of shares is withheld to cover the taxes, the vesting is a worker payment. Although the event occurs outside Payroll, you must record the event and all transactions that are associated with it in Payroll, so that statutory reporting and pay statement reporting are accurate. To record payments that were made outside Payroll, follow these steps.
+In some cases, a worker payment is made and taxes are withheld outside the Payroll system. For example, when stock shares for an employee are vested, and a specific number of shares is withheld to cover the taxes, the vesting is a worker payment. Although the event occurs outside Payroll, you must record the event and all transactions that are associated with it in Payroll, so that statutory reporting and pay statement reporting are accurate. 
+
+To record payments that were made outside Payroll, follow these steps.
 
 1.  Enter the earnings for payments that were made outside Payroll. For instructions, see the "Manually enter worker earnings" section of the [Generate earnings](generate-earnings.md) topic. On the **Line details** FastTab, select the **Manual** check box. **Note:** The earning code for these earnings can’t be set up for a fringe benefit or a gross-up payment run type. The rate basis must be a flat amount.
 2.  Release earnings. For instructions, see the "Release earnings for payment processing" section of the [Work with existing earnings](existing-earnings.md) topic.
@@ -51,7 +53,11 @@ If you must issue a payment to a single worker, you don't use the periodic proce
 -   If a worker is paid a salary, when you try to adjust the earnings statement lines on the final earnings statement, the values are automatically adjusted so that the worker still receives the expected amount for the pay period. To override this behavior, turn off the **Calculate Salary** functionality on the **Earnings statement** page.
 
 ## Why do the benefit lines and amounts on a pay statement differ from what I expect?
-If arrearages were created when the pay statement was generated, the arrearage amounts appear in the **Generated Arrears** FactBox. The arrearages might cause the pay statement benefit lines to differ from the lines and amounts that you expect. If a benefit line seems to be missing, it might have been removed when the benefit was calculated, because the pay wasn’t enough to cover the amount. Likewise, if a benefit line or amount unexpectedly appears on the pay statement, it might have been added to recover arrears from previous pay statements. The pay statement itself doesn't indicate that an arrearage amount has been recovered. To determine whether arrears were recovered on the pay statement, you must use the **Worker arrears** page.
+If arrearages were created when the pay statement was generated, the arrearage amounts appear in the **Generated Arrears** FactBox. The arrearages might cause the pay statement benefit lines to differ from the lines and amounts that you expect. 
+
+If a benefit line seems to be missing, it might have been removed when the benefit was calculated, because the pay wasn’t enough to cover the amount. 
+
+Likewise, if a benefit line or amount unexpectedly appears on the pay statement, it might have been added to recover arrears from previous pay statements. The pay statement itself doesn't indicate that an arrearage amount has been recovered. To determine whether arrears were recovered on the pay statement, you must use the **Worker arrears** page.
 
 ## Can I change the distributions for a pay statement line?
 No. However, you can change distributions for earnings from the earnings statement line. For more information, see [Earnings and the earnings generation process FAQ](earnings-generation-process.md).

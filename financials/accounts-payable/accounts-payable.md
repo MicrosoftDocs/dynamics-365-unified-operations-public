@@ -47,23 +47,18 @@ You can enter vendor invoices manually or receive them electronically through a 
 -   [Resolve discrepancies during invoice totals matching](resolve-invoice-totals-invoice-matching-discrepancies.md)
 -   [Positive pay overview](positive-pay-overview.md)
 -   [Set up and generate positive pay files](set-up-generate-positive-pay-files.md)
--   [Year-end 1099 reporting](year-end-1099-reporting.md)
+-   [Year-end 1099 reporting](../localizations/north-america/year-end-1099-reporting.md)
 
 ## Payments and settlements
 -   [Centralized payments for Accounts payable](centralized-payments-accounts-payable.md)
 -   [Create vendor invoices using a payment proposal](create-vendor-payments-payment-proposal.md)
 -   [Reverse a vendor payment](reverse-vendor-payment.md)
 -   [Vendor payments for a partial amount](vendor-payments-partial-amount.md)
--   [Prepayment invoices and prepayments overview](prepayments-invoices-vs-prepayments.md)
--   [Scenario: Settle a partial vendor payment and settle the final payment in full before the discount date](settle-partial-vendor-payment-or-final-payment-before discount.md)
+-   [Prepayment invoices and prepayments overview](/accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Scenario: Settle a partial vendor payment and settle the final payment in full before the discount date](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 -   [Scenario: Settle a partial vendor payment before the discount date with a final payment after the discount date](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 -   [Scenario: Settle a partial vendor payment that has discounts on vendor credit notes](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 -   [Scenario: Settle a partial vendor payment that has multiple discount periods](settle-partial-vendor-payment-multiple-discount-periods.md)
 -   [Scenario: Take a discount that is more than the calculated discount for a vendor payment](take-discount-more-calculated-discount-vendor-payment.md)
 -   [Scenario: Take a cash discount outside the cash discount period](take-cash-discount-outside-cash-discount-timeframe.md)
-
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account).
-
 

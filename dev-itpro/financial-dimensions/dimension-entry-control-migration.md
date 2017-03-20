@@ -103,8 +103,7 @@ Simple migration scenario - PurchTable form
 | **Before**                                                                                                                                    | **After**                                                                                                                                                                                                                                                                       |
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlLine.reactivate(); | Because this method call does not have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. The entire modified() method and AssetGroup class can be deleted as well. |
 
-## Data field AssetId
-(**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; AssetId &gt; Methods**)
+## Data field AssetId(**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; AssetId &gt; Methods**)
 
 |                                                                                                                                               |                                                                                                                                                                                                       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -114,8 +113,7 @@ Simple migration scenario - PurchTable form
 ## Data field ProcurementCategory
 (**Form &gt; Data sources &gt; PurchLine &gt; Fields &gt; ProcurementCategory &gt; Methods**)
 
-|                                                                                                                                               |                                                                                                                                                                                                      |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                               |                                                                                                                                                                                                      ||-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Before**                                                                                                                                    | **After**                                                                                                                                                                                            |
 | /\* TODO: (Code Upgrade) \[Dimension entry control\] Replace this based on the migration guidance. \*/DimensionEntryControlLine.reactivate(); | Because this method call doesn’t have a parm method called before it, it can be deleted. The Dimension Entry Control only needs to be reactivated if the company or displayed dimension set changes. |
 
@@ -148,7 +146,7 @@ Simple migration scenario - PurchTable form
 See also
 --------
 
-[Dimension Entry control uptake](https://ax.help.dynamics.com/en/?p=154381)
+[Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
-[Dimension Entry control dialog support](https://ax.help.dynamics.com/en/?p=155791)
+[Dimension Entry control dialog support](dimension-entry-control-dialog-support.md)
 

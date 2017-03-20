@@ -37,7 +37,9 @@ Customer posting profiles control the posting of customer transactions to the ge
 Customer posting profiles
 -------------------------
 
-Customer posting profiles enable you to assign general ledger accounts and document settings to all customers, a group of customers or a single customer. These settings will be used when you create sales orders, free text invoices, cash payments, collection letters, and interest notes. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions in this page. The default posting profile is defined in the Ledger and Sales Tax fasttab on the Accounts receivable parameters page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed.
+Customer posting profiles enable you to assign general ledger accounts and document settings to all customers, a group of customers or a single customer. These settings will be used when you create sales orders, free text invoices, cash payments, collection letters, and interest notes. For some transactions, you can select a posting profile that differs from and takes precedence over the posting profiles that are set up for transactions in this page. 
+
+The default posting profile is defined in the Ledger and Sales Tax fasttab on the Accounts receivable parameters page. The default posting profile is then included automatically on the header of new documents where you can change it to a different posting profile if needed.
 
 You can also associate posting definitions with transaction posting types in the Transaction posting definitions page. Posting definitions control the posting of customer transactions to the general ledger instead of posting profiles.
 

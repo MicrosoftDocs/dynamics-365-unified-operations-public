@@ -44,9 +44,9 @@ In Dynamics 365 for Operations, the only value that is present on Microsoft Exce
     -   **Cardinality** - ZeroMore
     -   **Name** - Enter the name of the financial dimension, such as Department.
     -   **Related Data Entity** - Select the entity for the financial dimension that you entered in the **Name** field. The following table contains a list of the financial dimensions and the related entities.
-        |                                           |                                           |
-        |-------------------------------------------|-------------------------------------------|
+
         | **Financial dimension 'Use values from'** | **Related entity**                        |
+        |-------------------------------------------|-------------------------------------------|
         | &lt; Custom dimension &gt;                | DimAttributeFinancialTagEntity            |
         | Agreements                                | DimAttributeAgreementHeaderExt\_RUEntity  |
         | Bank accounts                             | DimAttributeBankAccountTableEntity        |
@@ -95,15 +95,14 @@ In Dynamics 365 for Operations, the only value that is present on Microsoft Exce
 
         DimensionCombinationEntity.DimensionIntegration.Department==DimAttributeOMDepartmentEntity.Value
 
-    [![lookupwiki](./media/lookupwiki.png)](./media/lookupwiki.png)
+    ![lookupwiki](./media/lookupwiki.png)
 
 9.  Build the project and then synchronize it with the database.
 
 
-See also
---------
+# See also
 
 [Add dimensions to Microsoft Excel templates](add-dimensions-excel-templates.md)
 
-[Extensibility home page](extensibility-home-page.md)
+[Extensibility home page](..\extensibility\extensibility-home-page.md)
 

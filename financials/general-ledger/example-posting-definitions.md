@@ -30,21 +30,27 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Posting definitions
+# Posting definition examples
 
 This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
 
-Before you read this topic, you should be familiar with posting definitions and transaction posting definitions. For information, see [Posting definitions](http://ax.help.dynamics.com/en/wiki/about-posting-definitions/). The following examples can be set up on the **Posting definitions** page. Each example contains these sections:
+Before you read this topic, you should be familiar with posting definitions and transaction posting definitions. For information, see [Posting definitions](posting-definitions.md). The following examples can be set up on the **Posting definitions** page. Each example contains these sections:
 
 -   Posting definition – Match criteria
 -   Posting definition – Generated entries
 -   Transactions with the accounts, dimension values, and amounts
 -   Ledger entries generated from the posting definition
 
-When a match occurs between the accounts and dimension values in the **Match criteria** pane for the posting definition and the accounts and dimension values on the transaction, ledger entries are generated based on the **Generated entries** pane for the posting definition. **Note:** To associate a posting definition with a specific transaction type, use the **Transaction posting definitions** page. After you associate a posting definition with a transaction type and select **Use posting definitions** on the **General ledger parameters** page, all transactions of the selected transaction type must use posting definitions.
+When a match occurs between the accounts and dimension values in the **Match criteria** pane for the posting definition and the accounts and dimension values on the transaction, ledger entries are generated based on the **Generated entries** pane for the posting definition. 
+> [!NOTE]
+> To associate a posting definition with a specific transaction type, use the **Transaction posting definitions** page. After you associate a posting definition with a transaction type and select **Use posting definitions** on the **General ledger parameters** page, all transactions of the selected transaction type must use posting definitions.
 
 ## Example: Purchase order encumbrances
-When you enable encumbrance processing by selecting **Enable encumbrance process** on the **General ledger parameters** page, posting definitions must be used to record encumbrances to the general ledger for any accounts that should be reserved. In most cases, all expense accounts are reserved on the balance sheet. Posting definitions for encumbrances are set up for the **Purchasing** module on the **Posting definitions** page. Then, in the **Purchasing** area of the **Transaction posting definitions** page, you can select the **Purchase order** transaction type to associate the posting definition with purchase orders. All voucher transactions for purchase order encumbrances must balance (that is, debits must equal credits) in each unique dimension on a voucher.
+When you enable encumbrance processing by selecting **Enable encumbrance process** on the **General ledger parameters** page, posting definitions must be used to record encumbrances to the general ledger for any accounts that should be reserved. In most cases, all expense accounts are reserved on the balance sheet. 
+
+Posting definitions for encumbrances are set up for the **Purchasing** module on the **Posting definitions** page. Then, in the **Purchasing** area of the **Transaction posting definitions** page, you can select the **Purchase order** transaction type to associate the posting definition with purchase orders. 
+
+All voucher transactions for purchase order encumbrances must balance (that is, debits must equal credits) in each unique dimension on a voucher.
 
 ### Posting definition – Match criteria
 
@@ -52,7 +58,7 @@ When you enable encumbrance processing by selecting **Enable encumbrance process
 |-------------------------|----------------------|----------|
 | Account Structure - P&L | \*                   | 1        |
 
-\*A blank value in the **Match account number** field means that all matching accounts in the defined account structure are part of the matching rule.
+*A blank value in the **Match account number** field means that all matching accounts in the defined account structure are part of the matching rule.
 
 ### Posting definition – Generated entries
 
@@ -81,7 +87,11 @@ Generated ledger entries are created to record the encumbrances.
 In this example, any account that is part of Account Structure - P&L matches the posting definition criteria. Therefore, when 606500-OU\_1-OU\_3566-Training is evaluated, generated entries are created for the accounts that are defined in the **Generated entries** pane for the posting definition.
 
 ## Example: Budget appropriations
-When you enable budget appropriation by selecting **Enable budget appropriation** on the **General ledger parameters** page, posting definitions must be used to record budget register entries to the general ledger. When a budget control configuration is active and is turned on, posting definitions and transaction posting definitions can be used to support the recording of entries for appropriations, revisions, transfers, projects, fixed assets, and supply and demand forecasts to the general ledger. To set up a posting definition for budget register entries that has a budget type of **Original budget**, and that has appropriations enabled, select the **Budget** module on the **Posting definitions** page. Then, in the **Budget** area of the **Transaction posting definitions** page, you can use budget codes to associate the posting definition with budget register entries that have a budget type of **Original budget**. When budget appropriations and posting definitions are enabled, the budget register entries are recorded for budget control and in the general ledger.
+When you enable budget appropriation by selecting **Enable budget appropriation** on the **General ledger parameters** page, posting definitions must be used to record budget register entries to the general ledger. When a budget control configuration is active and is turned on, posting definitions and transaction posting definitions can be used to support the recording of entries for appropriations, revisions, transfers, projects, fixed assets, and supply and demand forecasts to the general ledger. 
+
+To set up a posting definition for budget register entries that has a budget type of **Original budget**, and that has appropriations enabled, select the **Budget** module on the **Posting definitions** page. Then, in the **Budget** area of the **Transaction posting definitions** page, you can use budget codes to associate the posting definition with budget register entries that have a budget type of **Original budget**. 
+
+When budget appropriations and posting definitions are enabled, the budget register entries are recorded for budget control and in the general ledger.
 
 ### Posting definition – Match criteria
 
@@ -89,7 +99,7 @@ When you enable budget appropriation by selecting **Enable budget appropriation*
 |-------------------------|----------------------|----------|
 | Account Structure - P&L | \*                   | 1        |
 
-\*A blank value in the **Match account number** field means that all matching accounts in the defined account structure are part of the matching rule.
+*A blank value in the **Match account number** field means that all matching accounts in the defined account structure are part of the matching rule.
 
 ### Posting definition – Generated entries
 

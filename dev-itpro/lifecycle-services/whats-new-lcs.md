@@ -59,74 +59,154 @@ The Microsoft Dynamics Lifecycle Services team is happy to announce the immediat
 
 1.  To browse folders, from the **SharePoint Online Library** page, click on the folder name. The subfolders and documents within that folder will be shown.
 2.  To download a document, click on the document name.
-3.  To upload a document to a subfolder, navigate to the subfolder by clicking the name of the parent folder. [![LCSSept01](./media/lcssept01-300x172.jpg)](./media/lcssept01.jpg)
-4.  Click **Upload** to add a document to the folder. [![LCSSept02](./media/lcssept02.jpg)](./media/lcssept02.jpg)
+3.  To upload a document to a subfolder, navigate to the subfolder by clicking the name of the parent folder. 
+[![LCSSept01](./media/lcssept01-300x172.jpg)](./media/lcssept01.jpg)
+4.  Click **Upload** to add a document to the folder. 
+[![LCSSept02](./media/lcssept02.jpg)](./media/lcssept02.jpg)
 
 You can also select subfolders while attaching documents to a methodology or task.
 
-1.  From the project dashboard, click **Attach document**. [![LCSSept03](./media/lcssept03-300x201.jpg)](./media/lcssept03.jpg)
-2.  Browse to or select folders from the list on the slider, and then click Next to upload a document to the selected folder. [![LCSSept04](./media/lcssept04.jpg)](./media/lcssept04.jpg) The document will be uploaded to the folder that you selected and attached to the methodology task item on the dashboard.
+1.  From the project dashboard, click **Attach document**. 
+[![LCSSept03](./media/lcssept03-300x201.jpg)](./media/lcssept03.jpg)
+2.  Browse to or select folders from the list on the slider, and then click Next to upload a document to the selected folder. 
+[![LCSSept04](./media/lcssept04.jpg)](./media/lcssept04.jpg) 
+The document will be uploaded to the folder that you selected and attached to the methodology task item on the dashboard.
 
 ## August 2016
 The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the August release of Lifecycle Services. **NEW FEATURES** **Database refresh request** Starting today, when you are working in an implementation project, you can request that sandbox environments to be refreshed with DB backups directly from LCS.
 
-1.  To submit the request, under the **Environments** heading, click **Site reliability work items**. [![LCSWhat'sNew Aug\_01](./media/lcswhatsnew-aug_01.jpg)](./media/lcswhatsnew-aug_01.jpg)
-2.  Click **+ Add**. [![LCSWhat'sNew Aug\_02](./media/lcswhatsnew-aug_02.jpg)](./media/lcswhatsnew-aug_02.jpg)
+1.  To submit the request, under the **Environments** heading, click **Site reliability work items**. 
+[![LCSWhat'sNew Aug\_01](./media/lcswhatsnew-aug_01.jpg)](./media/lcswhatsnew-aug_01.jpg)
+2.  Click **+ Add**. 
+[![LCSWhat'sNew Aug\_02](./media/lcswhatsnew-aug_02.jpg)](./media/lcswhatsnew-aug_02.jpg)
 3.  Click **Database refresh request**.
-4.  Select the source environment, target environment, data, and time, and then click **Submit**. [![LCSWhat'sNew Aug\_03](./media/lcswhatsnew-aug_03.jpg)](./media/lcswhatsnew-aug_03.jpg) You can find the most recent status under **Service request status**. [![LCSWhat'sNew Aug\_04](./media/lcswhatsnew-aug_04.jpg)](./media/lcswhatsnew-aug_04.jpg)
-5.  To communicate with the service engineering team, click the work item, add a comment, and then click **Submit**. [![LCSWhat'sNew Aug\_05](./media/lcswhatsnew-aug_05.jpg)](./media/lcswhatsnew-aug_05.jpg)
+4.  Select the source environment, target environment, data, and time, and then click **Submit**. 
+[![LCSWhat'sNew Aug\_03](./media/lcswhatsnew-aug_03.jpg)](./media/lcswhatsnew-aug_03.jpg) 
+You can find the most recent status under **Service request status**. 
+[![LCSWhat'sNew Aug\_04](./media/lcswhatsnew-aug_04.jpg)](./media/lcswhatsnew-aug_04.jpg)
+5.  To communicate with the service engineering team, click the work item, add a comment, and then click **Submit**. 
+[![LCSWhat'sNew Aug\_05](./media/lcswhatsnew-aug_05.jpg)](./media/lcswhatsnew-aug_05.jpg)
 
-**Methodology and SharePoint integration** In Microsoft Dynamics AX LCS projects, you can now attach documents to a methodology task. To upload a document, after you complete the SharePoint setup, select the task to which you want to upload the document and then click **Attach document**. Browse to the document and then upload it. [![LCSWhat'sNew Aug\_06](./media/lcswhatsnew-aug_06.jpg)](./media/lcswhatsnew-aug_06.jpg) Project team members can click **Download** to download the document. If the document is no longer relevant to the step, click **Detach** to remove the link between the document and the step. [![LCSWhat'sNew Aug\_07](./media/lcswhatsnew-aug_07.jpg)](./media/lcswhatsnew-aug_07.jpg) **Issue search** With the August release of LCS, the following updates to Issue search have been added:
+**Methodology and SharePoint integration** In Microsoft Dynamics AX LCS projects, you can now attach documents to a methodology task. To upload a document, after you complete the SharePoint setup, select the task to which you want to upload the document and then click **Attach document**. Browse to the document and then upload it. 
+[![LCSWhat'sNew Aug\_06](./media/lcswhatsnew-aug_06.jpg)](./media/lcswhatsnew-aug_06.jpg) 
+Project team members can click **Download** to download the document. If the document is no longer relevant to the step, click **Detach** to remove the link between the document and the step. 
+[![LCSWhat'sNew Aug\_07](./media/lcswhatsnew-aug_07.jpg)](./media/lcswhatsnew-aug_07.jpg) 
+**Issue search** With the August release of LCS, the following updates to Issue search have been added:
 
 -   View additional status details for active bugs: See when a bug is **Active**, **Investigating a fix**, or in a **Quality Assurance** step.
--   Subscribe to email notifications: Receive a notification when an issue is resolved . Enter a comma separated list of emails in the box and click **Add** to be notified when the bug is resolved. [![LCSWhat'sNew Aug\_08](./media/lcswhatsnew-aug_08-300x155.jpg)](./media/lcswhatsnew-aug_08.jpg) Additionally, improvements to the View changes page allows for viewable changes of Microsoft Dynamics AX fixes. Specifically, now that the changes enabled, you will see detailed information about the line number that the change was made at. If you click the method name \#linenumber, you will drill directly to that change in the method or object. [![LCSWhat'sNew Aug\_09](./media/lcswhatsnew-aug_09-300x49.jpg)](./media/lcswhatsnew-aug_09.jpg)
+-   Subscribe to email notifications: Receive a notification when an issue is resolved . Enter a comma separated list of emails in the box and click **Add** to be notified when the bug is resolved. 
+[![LCSWhat'sNew Aug\_08](./media/lcswhatsnew-aug_08-300x155.jpg)](./media/lcswhatsnew-aug_08.jpg) 
+Additionally, improvements to the View changes page allows for viewable changes of Microsoft Dynamics AX fixes. Specifically, now that the changes enabled, you will see detailed information about the line number that the change was made at. If you click the method name \#linenumber, you will drill directly to that change in the method or object. 
+[![LCSWhat'sNew Aug\_09](./media/lcswhatsnew-aug_09-300x49.jpg)](./media/lcswhatsnew-aug_09.jpg)
 
- 
 
 ## July 2016
 The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the July release of Lifecycle Services. **NEW FEATURES** **SharePoint integration improvements in LCS (Preview)** With the July release, we have made significant improvements to simplify the LCS SharePoint integration for AX7 projects. The new framework uses user OAuth for performing operations in SharePoint. **Set up SharePoint in an LCS project**
 
 1.  To set up a SharePoint site in an LCS project, go to your LCS AX7 Project, scroll to the right, and click the **Project Settings** tile.
 2.  On the **Project settings** page, click the **SharePoint Online** tab.
-3.  Enter your SharePoint site URL and then click **Next**. Make sure the account you are using has access to the SharePoint that you are trying to setup.[![LCSWhat'sNew July\_01](./media/lcswhatsnew-july_01.jpg)](./media/lcswhatsnew-july_01.jpg)
-4.  Select the folder you want to use for the project. If you don’t have a folder, go to SharePoint and create a new folder. Then select that project from the project selection drop-down and click **Save**. [![LCSWhat'sNew July\_02](./media/lcswhatsnew-july_02.jpg)](./media/lcswhatsnew-july_02.jpg) After the setup is successfully complete, you will see a screen similar to the following: [![LCSWhat'sNew July\_03](./media/lcswhatsnew-july_03.jpg)](./media/lcswhatsnew-july_03.jpg)
-5.  When you go to the SharePoint Online library in the project, you can see the list of documents in the folder. [![LCSWhat'sNew July\_04](./media/lcswhatsnew-july_04.jpg)](./media/lcswhatsnew-july_04.jpg)
-6.  Add additional project documents by clicking +. [![LCSWhat'sNew July\_05](./media/lcswhatsnew-july_05.jpg)](./media/lcswhatsnew-july_05.jpg) LCS project team members who have access to SharePoint folder can directly download files from LCS and update new project documents. In SharePoint, you can see the document in the SharePoint folder. [![LCSWhat'sNew July\_06](./media/lcswhatsnew-july_06.jpg)](./media/lcswhatsnew-july_06.jpg)
+3.  Enter your SharePoint site URL and then click **Next**. Make sure the account you are using has access to the SharePoint that you are trying to setup.
+[![LCSWhat'sNew July\_01](./media/lcswhatsnew-july_01.jpg)](./media/lcswhatsnew-july_01.jpg)
+4.  Select the folder you want to use for the project. If you don’t have a folder, go to SharePoint and create a new folder. Then select that project from the project selection drop-down and click **Save**. 
+[![LCSWhat'sNew July\_02](./media/lcswhatsnew-july_02.jpg)](./media/lcswhatsnew-july_02.jpg) 
+After the setup is successfully complete, you will see a screen similar to the following: 
+[![LCSWhat'sNew July\_03](./media/lcswhatsnew-july_03.jpg)](./media/lcswhatsnew-july_03.jpg)
+5.  When you go to the SharePoint Online library in the project, you can see the list of documents in the folder. 
+[![LCSWhat'sNew July\_04](./media/lcswhatsnew-july_04.jpg)](./media/lcswhatsnew-july_04.jpg)
+6.  Add additional project documents by clicking +. 
+[![LCSWhat'sNew July\_05](./media/lcswhatsnew-july_05.jpg)](./media/lcswhatsnew-july_05.jpg) 
+LCS project team members who have access to SharePoint folder can directly download files from LCS and update new project documents. In SharePoint, you can see the document in the SharePoint folder. 
+[![LCSWhat'sNew July\_06](./media/lcswhatsnew-july_06.jpg)](./media/lcswhatsnew-july_06.jpg)
 
-**LCS solution improvements** If you are an ISV who is working on an AX solution, you can now add the Power BI report model to the solution from solution management. [![LCSWhat'sNew July\_07](./media/lcswhatsnew-july_07.jpg)](./media/lcswhatsnew-july_07.jpg) Customers looking for ISV solutions on Dynamics AX, can now find them at [Microsoft AppSource](https://appsource.microsoft.com/en-us/). Learn more about AppSource [here](https://www.youtube.com/watch?v=2wVJWfVVwlI). [![LCSWhat'sNew July\_08](./media/lcswhatsnew-july_08.jpg)](./media/lcswhatsnew-july_08.jpg) If you are interested in publishing your Dynamics AX solution to Microsoft AppSource, find more information about the listing process [here](https://appsource.microsoft.com/en-us/partners).
+**LCS solution improvements** 
+If you are an ISV who is working on an AX solution, you can now add the Power BI report model to the solution from solution management. 
+[![LCSWhat'sNew July\_07](./media/lcswhatsnew-july_07.jpg)](./media/lcswhatsnew-july_07.jpg) 
+Customers looking for ISV solutions on Dynamics AX, can now find them at [Microsoft AppSource](https://appsource.microsoft.com/en-us/). Learn more about AppSource [here](https://www.youtube.com/watch?v=2wVJWfVVwlI). 
+[![LCSWhat'sNew July\_08](./media/lcswhatsnew-july_08.jpg)](./media/lcswhatsnew-july_08.jpg) 
+If you are interested in publishing your Dynamics AX solution to Microsoft AppSource, find more information about the listing process [here](https://appsource.microsoft.com/en-us/partners).
 
 ## June 2016
-The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the June release of Lifecycle Services. **NEW FEATURES** **LCS language selection** LCS now includes a translated version of the May APQC BPM library and the Getting Started library. To use LCS with a translated UI, click your account name in the upper right corner, click **Preferences**, and choose your language. [![LCS What's new 01](./media/lcs-whats-new-01.png)](./media/lcs-whats-new-01.png) **Ability to deploy Dev and Build/test environments** Starting today in the implementation project for AX 7, you can chose to deploy a Development environment or a Build and test environment. [![1](https://msdnshared.blob.core.windows.net/media/2016/07/11.png)](https://msdnshared.blob.core.windows.net/media/2016/07/11.png) **Methodology improvements** In the Implementation project, you can now **append your existing methodology** with the methodology that is shipped by Microsoft.
+The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the June release of Lifecycle Services. 
+**NEW FEATURES** 
+**LCS language selection** 
+LCS now includes a translated version of the May APQC BPM library and the Getting Started library. To use LCS with a translated UI, click your account name in the upper right corner, click **Preferences**, and choose your language. 
+[![LCS What's new 01](./media/lcs-whats-new-01.png)](./media/lcs-whats-new-01.png) 
+**Ability to deploy Dev and Build/test environments** 
+Starting today in the implementation project for AX 7, you can chose to deploy a Development environment or a Build and test environment. 
+[![1](https://msdnshared.blob.core.windows.net/media/2016/07/11.png)](https://msdnshared.blob.core.windows.net/media/2016/07/11.png) **Methodology improvements** 
+In the Implementation project, you can now **append your existing methodology** with the methodology that is shipped by Microsoft.
 
 1.  To append a methodology click on **…** in your Implementation project methodology section and then select **Append methodology**.
-
 ![2](https://msdnshared.blob.core.windows.net/media/2016/07/21.png)
+2. Select the methodology from the list of available methodologies, and then click **Confirm**.
 
-1.  Select the methodology from the list of available methodologies, and then click **Confirm**.
+Before:
+![3](https://msdnshared.blob.core.windows.net/media/2016/07/3.png)   
+After:
+![4](https://msdnshared.blob.core.windows.net/media/2016/07/4.png) 
+Now, you can customize the locked methodology by **adding phase and tasks** to the implementation methodology that is shipped by Microsoft for the new Dynamics AX. 
+![5](https://msdnshared.blob.core.windows.net/media/2016/07/5.png) 
 
-Before: ![3](https://msdnshared.blob.core.windows.net/media/2016/07/3.png)   After: ![4](https://msdnshared.blob.core.windows.net/media/2016/07/4.png) Now, you can customize the locked methodology by **adding phase and tasks** to the implementation methodology that is shipped by Microsoft for the new Dynamics AX. ![5](https://msdnshared.blob.core.windows.net/media/2016/07/5.png) **Subscription estimator improvements** Starting today, you must complete the Microsoft Excel **Usage profile** and upload the profile to LCS to complete the subscription estimate for your implementation project. You can download the **Sample usage profile** from the **Subscription estimator** page. Click **New estimate** to upload the completed **Usage profile**.   [![6](https://msdnshared.blob.core.windows.net/media/2016/07/6.png)](https://msdnshared.blob.core.windows.net/media/2016/07/6.png) [![7](https://msdnshared.blob.core.windows.net/media/2016/07/7.png)](https://msdnshared.blob.core.windows.net/media/2016/07/7.png)   You can download a completed usage profile from LCS at any time, make changes, and then upload the updated usage profile by clicking **Edit**. ![8](https://msdnshared.blob.core.windows.net/media/2016/07/8.png)   **Note:** We have added additional questions and improved the validation experience in the **Usage profile**, to help us better estimate your needs. **Monitoring and Diagnostic feature updates** Starting in June 2016, Monitoring and Diagnostics features in LCS will be publically available to all environments that are deployed through LCS. **Note:** Only Production environments that are deployed through LCS in **Microsoft Managed Subscription** will be actively monitored by the Microsoft Service Engineering team. All other environments do not have the monitoring features turned on. In addition to the user activity troubleshooting feature (**Activity Tab** on the **Environment monitoring** page), we have added additional features specifically for SQL Troubleshooting, which can be accessed by clicking the **Environment Monitoring** link in the **Monitoring** section on the **Environment Details** page. ![9](https://msdnshared.blob.core.windows.net/media/2016/07/9-1024x182.png)
+**Subscription estimator improvements** 
+Starting today, you must complete the Microsoft Excel **Usage profile** and upload the profile to LCS to complete the subscription estimate for your implementation project. You can download the **Sample usage profile** from the **Subscription estimator** page. Click **New estimate** to upload the completed **Usage profile**.   
+[![6](https://msdnshared.blob.core.windows.net/media/2016/07/6.png)](https://msdnshared.blob.core.windows.net/media/2016/07/6.png) 
+[![7](https://msdnshared.blob.core.windows.net/media/2016/07/7.png)](https://msdnshared.blob.core.windows.net/media/2016/07/7.png)   
+You can download a completed usage profile from LCS at any time, make changes, and then upload the updated usage profile by clicking **Edit**. 
+![8](https://msdnshared.blob.core.windows.net/media/2016/07/8.png)   
+**Note:** We have added additional questions and improved the validation experience in the **Usage profile**, to help us better estimate your needs. **Monitoring and Diagnostic feature updates** Starting in June 2016, Monitoring and Diagnostics features in LCS will be publically available to all environments that are deployed through LCS. 
+**Note:** Only Production environments that are deployed through LCS in **Microsoft Managed Subscription** will be actively monitored by the Microsoft Service Engineering team. All other environments do not have the monitoring features turned on. In addition to the user activity troubleshooting feature (**Activity Tab** on the **Environment monitoring** page), we have added additional features specifically for SQL Troubleshooting, which can be accessed by clicking the **Environment Monitoring** link in the **Monitoring** section on the **Environment Details** page. 
+![9](https://msdnshared.blob.core.windows.net/media/2016/07/9-1024x182.png)
 
 -   **SQL Insights –** This feature gives customers/partners the opportunity to troubleshoot SQL issues by looking at an aggregated view of the most expensive queries that were executed on the environment based on duration, logical IO, CPU, execution count and contention. This feature also provides an advanced troubleshooting experience by showing a trend of the selected query. Detailed metrics for the selected query are shown, along with the query statement and an option to download the query execution plan for diagnostics.
 
-  [![10](https://msdnshared.blob.core.windows.net/media/2016/07/10-1024x343.png)](https://msdnshared.blob.core.windows.net/media/2016/07/10.png) [![11](https://msdnshared.blob.core.windows.net/media/2016/07/111-1024x287.png)](https://msdnshared.blob.core.windows.net/media/2016/07/111.png) [![12](https://msdnshared.blob.core.windows.net/media/2016/07/12-1024x289.png)](https://msdnshared.blob.core.windows.net/media/2016/07/12.png)
+  [![10](https://msdnshared.blob.core.windows.net/media/2016/07/10-1024x343.png)](https://msdnshared.blob.core.windows.net/media/2016/07/10.png) 
+  [![11](https://msdnshared.blob.core.windows.net/media/2016/07/111-1024x287.png)](https://msdnshared.blob.core.windows.net/media/2016/07/111.png) 
+  [![12](https://msdnshared.blob.core.windows.net/media/2016/07/12-1024x289.png)](https://msdnshared.blob.core.windows.net/media/2016/07/12.png)
 
 -   **Just in time SQL Troubleshooting –** This feature gives the customers/partners the opportunity to troubleshoot SQL issues in real time by locating the queries that are blocked and the queries are blocking. This feature also provides a view of aggregated lock information for the tables that currently hold locks on them.
 
-You can ciew this by clicking on the **SQL Now** tab on the **Environment monitoring page**. ![13](https://msdnshared.blob.core.windows.net/media/2016/07/13-1024x471.png)   **BPM and Task guides** The list of task guides that were made available with the February 2016 release of Dynamics AX has been published, and can be found here, [New task guides available (February 2016)](new-task-guides-available-february-2016.md). **BPM Integration with VSTS (Public preview)**
+You can ciew this by clicking on the **SQL Now** tab on the **Environment monitoring page**. 
+![13](https://msdnshared.blob.core.windows.net/media/2016/07/13-1024x471.png)   
+**BPM and Task guides** 
+The list of task guides that were made available with the February 2016 release of Dynamics AX has been published, and can be found here, [New task guides available (February 2016)](/get-started/new-task-guides-available-february-2016.md). **BPM Integration with VSTS (Public preview)**
 
 1.  On the LCS portal, select the **Preview feature management** tile and turn on the feature named **VSO WorkItem Mapping**. This will enable you to preview the new BPM functionality.
 2.  After you have configured Visual Studio Team Services (VSTS) from the LCS project settings, go to your BPM library and on the left-pane, under **Implementation views**, click **Review processes**.
 3.  Click **Sync with VSTS**.
 
-This will synchronize the BPM library hierarchy into your VSTS project, as a hierarchy of work items (Epics, Features, …etc.). This is a one-way sync from LCS to VSTS that will keep your VSTS work items updated with any changes that are made in the LCS BPM library. ![14](https://msdnshared.blob.core.windows.net/media/2016/07/14.png) The VSTS work item types associated with LCS items can be configured from the **VSTS** tab in your LCS project’s **Project settings**. Work item type mapping (VSTS work item type) must be configured before a connection to a VSTS project is established. ![15](https://msdnshared.blob.core.windows.net/media/2016/07/15-1024x487.png)   **Add requirements to a business process** As part of the fit/gap analysis stage of your project, in the **Review processes** view, you can select a business process line and add a requirement that is associated with the selected business process. This requirement will be stored as a requirement work item in VSTS. The **Process details** page will list all requirements in VSTS that are associated with the current business process line. It also allows you to add a new requirement. [![16](https://msdnshared.blob.core.windows.net/media/2016/07/16.png)](https://msdnshared.blob.core.windows.net/media/2016/07/16.png)   When you add a requirement,  enter a title and adescription, and assess whether it is a fit or a gap. ![17](https://msdnshared.blob.core.windows.net/media/2016/07/17.png) **Configuration and data manager: Apply more than one data package at a time** **Configuration and data manager** is a tool that enables you to apply data packages to Dynamics AX cloud environment by using the AX data management framework. With this release, you can select more than one data package and apply them at once to a specific AX instance. When you select more than one package and click **Apply**, you can choose whether you want to apply the packages sequentially or concurrently. [![18](https://msdnshared.blob.core.windows.net/media/2016/07/18.png)](https://msdnshared.blob.core.windows.net/media/2016/07/18.png)   You should apply sequentially if the selected data packages depend on each other. If you select **Apply sequentially**, you will first be prompted to select the order in which the packages are applied. Use the sequence number drop down menus to define the order. ![19](https://msdnshared.blob.core.windows.net/media/2016/07/19.png) You can also enter a tag. A tag can be used as a keyword that will appear on the history page to indicate that these packages have been applied as part of the same job.
+This will synchronize the BPM library hierarchy into your VSTS project, as a hierarchy of work items (Epics, Features, …etc.). This is a one-way sync from LCS to VSTS that will keep your VSTS work items updated with any changes that are made in the LCS BPM library. 
+![14](https://msdnshared.blob.core.windows.net/media/2016/07/14.png) 
+The VSTS work item types associated with LCS items can be configured from the **VSTS** tab in your LCS project’s **Project settings**. Work item type mapping (VSTS work item type) must be configured before a connection to a VSTS project is established. 
+![15](https://msdnshared.blob.core.windows.net/media/2016/07/15-1024x487.png)   
+**Add requirements to a business process** 
+As part of the fit/gap analysis stage of your project, in the **Review processes** view, you can select a business process line and add a requirement that is associated with the selected business process. This requirement will be stored as a requirement work item in VSTS. The **Process details** page will list all requirements in VSTS that are associated with the current business process line. It also allows you to add a new requirement. 
+[![16](https://msdnshared.blob.core.windows.net/media/2016/07/16.png)](https://msdnshared.blob.core.windows.net/media/2016/07/16.png)   When you add a requirement,  enter a title and adescription, and assess whether it is a fit or a gap. 
+![17](https://msdnshared.blob.core.windows.net/media/2016/07/17.png) 
+**Configuration and data manager: Apply more than one data package at a time** **Configuration and data manager** is a tool that enables you to apply data packages to Dynamics AX cloud environment by using the AX data management framework. With this release, you can select more than one data package and apply them at once to a specific AX instance. When you select more than one package and click **Apply**, you can choose whether you want to apply the packages sequentially or concurrently. 
+[![18](https://msdnshared.blob.core.windows.net/media/2016/07/18.png)](https://msdnshared.blob.core.windows.net/media/2016/07/18.png)   You should apply sequentially if the selected data packages depend on each other. If you select **Apply sequentially**, you will first be prompted to select the order in which the packages are applied. Use the sequence number drop down menus to define the order. 
+![19](https://msdnshared.blob.core.windows.net/media/2016/07/19.png) 
+You can also enter a tag. A tag can be used as a keyword that will appear on the history page to indicate that these packages have been applied as part of the same job.
 
 ## May 2016
-The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the May release of Lifecycle Services. **NEW FEATURES** **Microsoft Dynamics AX May 2016 Update is now available** Starting today, you can deploy the Microsoft Dynamics AX May 2016 Update from LCS When you select a topology for deployment in the partner project workspace or in Cloud hosted environment in customer implementation project, you can select either RTW or the May Update (Update 1). For more information about what’s new in the May Update, see the [What’s new or changed](whats-new-changed.md) wiki topic. ![1](https://msdnshared.blob.core.windows.net/media/2016/05/165-e1464377383160.png) When you click **Configure** in the **customer implementation project**,  you will be provided with an option to choose from RTW or the May Update (Update 1). ![2](https://msdnshared.blob.core.windows.net/media/2016/05/259.png) If you want to deploy the Dynamics AX May Update, select **Dynamics AX – Develop (Update 1)**.   ![3](https://msdnshared.blob.core.windows.net/media/2016/05/339.png) This will load the May Update-specific deployment configuration screen for you.   ![4](https://msdnshared.blob.core.windows.net/media/2016/05/432-1024x742.png)   If you want to change back to RTW, click **Supported version** &gt; **Change selected topology**.   ![5](https://msdnshared.blob.core.windows.net/media/2016/05/527-1024x748.png)   **Asset library improvements** The Binary hotfix in the Asset library has a new home.
+The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the May release of Lifecycle Services. **NEW FEATURES** **Microsoft Dynamics AX May 2016 Update is now available** Starting today, you can deploy the Microsoft Dynamics AX May 2016 Update from LCS When you select a topology for deployment in the partner project workspace or in Cloud hosted environment in customer implementation project, you can select either RTW or the May Update (Update 1). For more information about what’s new in the May Update, see the [What’s new or changed](/get-started/whats-new-changed.md) wiki topic. 
+![1](https://msdnshared.blob.core.windows.net/media/2016/05/165-e1464377383160.png)
+When you click **Configure** in the **customer implementation project**,  you will be provided with an option to choose from RTW or the May Update (Update 1). 
+![2](https://msdnshared.blob.core.windows.net/media/2016/05/259.png) 
+If you want to deploy the Dynamics AX May Update, select **Dynamics AX – Develop (Update 1)**.   
+![3](https://msdnshared.blob.core.windows.net/media/2016/05/339.png) 
+This will load the May Update-specific deployment configuration screen for you.   
+![4](https://msdnshared.blob.core.windows.net/media/2016/05/432-1024x742.png)   
+If you want to change back to RTW, click **Supported version** &gt; **Change selected topology**.   
+![5](https://msdnshared.blob.core.windows.net/media/2016/05/527-1024x748.png)   
+**Asset library improvements** The Binary hotfix in the Asset library has a new home.
 
 1.  To locate the Binary hotfix, in the **Asset type** pane, click **Software deployable package**.
 2.  In the pane that opens, in the **Package type** field, select **Binary hotfix**.
 
-![6](https://msdnshared.blob.core.windows.net/media/2016/05/628-1024x492.png)   You can now make a **copy** of an asset directly from asset library. You no longer need to download and then  re-upload the file to LCS to make a copy.  To make a copy, select the file and then click **Copy**. ![7](https://msdnshared.blob.core.windows.net/media/2016/05/723-1024x474.png) A new **Usage profile** Excel worksheet is included in the **Subscription estimator** for the new Dynamics AX. The new worksheet includes an updated questionnaire and improved validations. When you deploy a new environment in the implementation project for the new AX,  you can specify users who need to be emailed about environment specific **notifications**, including planed downtimes. ![8](https://msdnshared.blob.core.windows.net/media/2016/05/817-1024x696.png)
+![6](https://msdnshared.blob.core.windows.net/media/2016/05/628-1024x492.png)   
+You can now make a **copy** of an asset directly from asset library. You no longer need to download and then  re-upload the file to LCS to make a copy.  To make a copy, select the file and then click **Copy**.
+![7](https://msdnshared.blob.core.windows.net/media/2016/05/723-1024x474.png)
+A new **Usage profile** Excel worksheet is included in the **Subscription estimator** for the new Dynamics AX. The new worksheet includes an updated questionnaire and improved validations. When you deploy a new environment in the implementation project for the new AX,  you can specify users who need to be emailed about environment specific **notifications**, including planed downtimes. ![8](https://msdnshared.blob.core.windows.net/media/2016/05/817-1024x696.png)
 
 ## April 2016
 The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the April release of Lifecycle Services. **NEW FEATURES** **Asset library** You can now ship a new version of any file in the asset library and provide release  notes when you publish an asset. This is useful when you have assets that are published with your organization users. Organization users can now get additional versions of the same file and check what has changed with each version from the release notes, before they download a specific version.
@@ -217,7 +297,9 @@ The Microsoft Dynamics Lifecycle Services team is happy to announce the immediat
 -   Instance Characteristics
 -   Retail & Commerce
 
-[![3](https://msdnshared.blob.core.windows.net/media/2016/02/311-1024x475.png)](https://msdnshared.blob.core.windows.net/media/2016/02/311.png) After you have completed the worksheets, enter the data from the summary sheet into the Subscription estimator as shown below by clicking on **+ New estimate**. [![4](https://msdnshared.blob.core.windows.net/media/2016/02/412-1024x492.png)](https://msdnshared.blob.core.windows.net/media/2016/02/412.png) You must also make one estimate the Active estimate. Please make sure the estimate you mark as **Active** is same as the offer you bought through the VL or CSP channel. **New Online service agreement** With this release of LCS, the LCS online service agreement has been updated. You can find the latest online service agreement [here](https://lcs.dynamics.com/Logon/Legal). You need to accept the new online service agreement to continue using LCS. **Issue search** Issue search will now show a download button for new Dynamics AX online issues.  The hotfix package is directly available for download from the **Issue search** page. You no longer need to navigate through the **Update** tile to obtain the hotfix package. **Business process modeler (BPM)** You can now rename a BPM library. To edit a library name or its description:
+[![3](https://msdnshared.blob.core.windows.net/media/2016/02/311-1024x475.png)](https://msdnshared.blob.core.windows.net/media/2016/02/311.png) 
+After you have completed the worksheets, enter the data from the summary sheet into the Subscription estimator as shown below by clicking on **+ New estimate**. [![4](https://msdnshared.blob.core.windows.net/media/2016/02/412-1024x492.png)](https://msdnshared.blob.core.windows.net/media/2016/02/412.png) 
+You must also make one estimate the Active estimate. Please make sure the estimate you mark as **Active** is same as the offer you bought through the VL or CSP channel. **New Online service agreement** With this release of LCS, the LCS online service agreement has been updated. You can find the latest online service agreement [here](https://lcs.dynamics.com/Logon/Legal). You need to accept the new online service agreement to continue using LCS. **Issue search** Issue search will now show a download button for new Dynamics AX online issues.  The hotfix package is directly available for download from the **Issue search** page. You no longer need to navigate through the **Update** tile to obtain the hotfix package. **Business process modeler (BPM)** You can now rename a BPM library. To edit a library name or its description:
 
 1.  Right-click the library and then click **Edit**.
 2.  Enter the new library name and description and then click **OK**.
@@ -235,7 +317,10 @@ The Microsoft Dynamics Lifecycle Services team is happy to announce the immediat
 1.  You can control the order in which data entities and data processing groups are applied.
 2.  You can edit the content of data templates directly from LCS.
 
-## **GER configuration** Microsoftowned configurations for CTP8 were added under the **GER configuration** asset type in the Shared asset library. GER provides one common way (through the LCS Asset library) for Microsoft and partners to distribute electronic document configurations to other partners and customers. GER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements. ![4](https://msdnshared.blob.core.windows.net/media/2016/01/49.png) **LCS Administrators** With January release of LCS, all existing Office 365 administrators of your Microsoft Dynamics AX tenant will also be LCS administrators. Previously, one specific user was assigned the role of LCS administrator. **Business process modeler** We have addressed the issue with B**usiness process modeler** (BPM) search indexing. If you have experienced issues with help content delivery in the newest version of Dynamics AX, this fix helps resolve the issues you have seen. If you have seen the following message in your BPM library, it means that the indexing of the library is pending. ![5](https://msdnshared.blob.core.windows.net/media/2016/01/58.png) Below is a library that has been successfully indexed. ![6](https://msdnshared.blob.core.windows.net/media/2016/01/65.png) **Process data package** We have made significant performance improvements to the process data package creation experience. New Dynamics AX solutions creators can now add database backups to a solution package. ![7](https://msdnshared.blob.core.windows.net/media/2016/01/781024x663.png)
+## **GER configuration** Microsoft owned configurations for CTP8 were added under the **GER configuration** asset type in the Shared asset library. GER provides one common way (through the LCS Asset library) for Microsoft and partners to distribute electronic document configurations to other partners and customers. GER also makes it easier for partners and customers to customize, upgrade, and distribute electronic document formats for their specific business requirements. ![4](https://msdnshared.blob.core.windows.net/media/2016/01/49.png) 
+**LCS Administrators** With January release of LCS, all existing Office 365 administrators of your Microsoft Dynamics AX tenant will also be LCS administrators. Previously, one specific user was assigned the role of LCS administrator. **Business process modeler** We have addressed the issue with B**usiness process modeler** (BPM) search indexing. If you have experienced issues with help content delivery in the newest version of Dynamics AX, this fix helps resolve the issues you have seen. If you have seen the following message in your BPM library, it means that the indexing of the library is pending. ![5](https://msdnshared.blob.core.windows.net/media/2016/01/58.png) 
+Below is a library that has been successfully indexed. ![6](https://msdnshared.blob.core.windows.net/media/2016/01/65.png) 
+**Process data package** We have made significant performance improvements to the process data package creation experience. New Dynamics AX solutions creators can now add database backups to a solution package. ![7](https://msdnshared.blob.core.windows.net/media/2016/01/781024x663.png)
 December 2015
 -------------
 
@@ -243,7 +328,14 @@ The Microsoft Dynamics Lifecycle Services team is happy to announce the immediat
 
 ### NEW FEATURES
 
-Microsoft Dynamics AX Public Preview is here! The public preview of Microsoft Dynamics AX is now available. You can now sign up and deploy a cloud instance of Microsoft Dynamics AX, based on our latest development milestone, known as CTP8. This public preview of Microsoft Dynamics AX can be deployed through Microsoft Dynamics Lifecycle Services. Microsoft Dynamics AX CTP8 is available only to existing Microsoft Dynamics channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. Existing customers can find details on how to get to the preview from [here ](https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview)and partners can find the details [here](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview). **Language preferences** Starting today, LCS will release the public preview of the language preference feature. To enable this for your account, login to LCS , click on your name on the top right corner, and then select **Preferences**. ![1](https://msdnshared.blob.core.windows.net/media/2015/12/110.png) Select your preferred language from the drop down and then click **Save**. [![2](https://msdnshared.blob.core.windows.net/media/2015/12/21.png)](https://msdnshared.blob.core.windows.net/media/2015/12/21.png) **New Unified library** We have shipped the new APQC unified library for the newest version of Microsoft Dynamics AX . This new library is for CTP 8. [![3](https://msdnshared.blob.core.windows.net/media/2015/12/3.png)](https://msdnshared.blob.core.windows.net/media/2015/12/3.png) **Updated methodologies ** We have also shipped two updated methodologies for the newest version of Dynamics AX. [![4](https://msdnshared.blob.core.windows.net/media/2015/12/4.png)](https://msdnshared.blob.core.windows.net/media/2015/12/4.png)To use these new methodology, login to your LCS project and click **Change methdology**. [![5](https://msdnshared.blob.core.windows.net/media/2015/12/5.png)](https://msdnshared.blob.core.windows.net/media/2015/12/5.png) Select the methodology you want to use and then click **Save**. **Note:** If you want to keep the existing phases and tasks in the methodology keep the toggle set to **Yes**. ![6](https://msdnshared.blob.core.windows.net/media/2015/12/6.png) **New data packages** Over 250 new data packages for CTP 8 were also shipped in this release. To import these to the project, in your LCS project go to **Asset library**, select **Process data package**, and then click **Import**. [![7](https://msdnshared.blob.core.windows.net/media/2015/12/7.png)](https://msdnshared.blob.core.windows.net/media/2015/12/7.png) Select the Process Data Packages from the list and import them into the project. [![8](https://msdnshared.blob.core.windows.net/media/2015/12/8.png)](https://msdnshared.blob.core.windows.net/media/2015/12/8.png) The Microsoft Dynamics AX **Code Upgrade service** will now help you upgrade to CTP8.
+Microsoft Dynamics AX Public Preview is here! The public preview of Microsoft Dynamics AX is now available. You can now sign up and deploy a cloud instance of Microsoft Dynamics AX, based on our latest development milestone, known as CTP8. This public preview of Microsoft Dynamics AX can be deployed through Microsoft Dynamics Lifecycle Services. Microsoft Dynamics AX CTP8 is available only to existing Microsoft Dynamics channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. Existing customers can find details on how to get to the preview from [here ](https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview)and partners can find the details [here](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview). **Language preferences** Starting today, LCS will release the public preview of the language preference feature. To enable this for your account, login to LCS , click on your name on the top right corner, and then select **Preferences**. ![1](https://msdnshared.blob.core.windows.net/media/2015/12/110.png) 
+Select your preferred language from the drop down and then click **Save**. [![2](https://msdnshared.blob.core.windows.net/media/2015/12/21.png)](https://msdnshared.blob.core.windows.net/media/2015/12/21.png) 
+**New Unified library** We have shipped the new APQC unified library for the newest version of Microsoft Dynamics AX . This new library is for CTP 8. [![3](https://msdnshared.blob.core.windows.net/media/2015/12/3.png)](https://msdnshared.blob.core.windows.net/media/2015/12/3.png) 
+**Updated methodologies ** We have also shipped two updated methodologies for the newest version of Dynamics AX. [![4](https://msdnshared.blob.core.windows.net/media/2015/12/4.png)](https://msdnshared.blob.core.windows.net/media/2015/12/4.png)
+To use these new methodology, login to your LCS project and click **Change methdology**. [![5](https://msdnshared.blob.core.windows.net/media/2015/12/5.png)](https://msdnshared.blob.core.windows.net/media/2015/12/5.png) 
+Select the methodology you want to use and then click **Save**. **Note:** If you want to keep the existing phases and tasks in the methodology keep the toggle set to **Yes**. ![6](https://msdnshared.blob.core.windows.net/media/2015/12/6.png) 
+**New data packages** Over 250 new data packages for CTP 8 were also shipped in this release. To import these to the project, in your LCS project go to **Asset library**, select **Process data package**, and then click **Import**. [![7](https://msdnshared.blob.core.windows.net/media/2015/12/7.png)](https://msdnshared.blob.core.windows.net/media/2015/12/7.png) Select the Process Data Packages from the list and import them into the project. [![8](https://msdnshared.blob.core.windows.net/media/2015/12/8.png)](https://msdnshared.blob.core.windows.net/media/2015/12/8.png) 
+The Microsoft Dynamics AX **Code Upgrade service** will now help you upgrade to CTP8.
 
 ## November 2015 update
 The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the October release of Lifecycle Services.
@@ -501,7 +593,7 @@ All services have been updated for CU8
 ### Preview release
 
 This release includes a reworked experience with several preview features. These include:
--   A new Methodology tool for projects. A starter methodology is provided, called Sure Step Agile. For more information, see [Methodologies (Lifecycle Services, LCS)](methodologies-lcs.md).
+-   A new Methodology tool for projects. A starter methodology is provided, called Sure Step Agile. For more information, see [Methodologies (Lifecycle Services, LCS)](/ax-2012/methodologies-lcs.md).
     -   You can attach templates, and documents to tasks
     -   You can create your own methodologies
 -   SharePoint Online integration for document storage.
@@ -531,9 +623,9 @@ Updates released in October 2014 included:
 
 ## September 2014 release updates
 Updates released in September 2014 included:
--   The Cloud-hosted environments tool now has customizable settings for domains, virtual networks, and user accounts.For more information, see [Deploy Microsoft Dynamics AX 2012 R3 on Azure using Lifecycle Services](deploy-2012-r3-azure-lcs.md).
+-   The Cloud-hosted environments tool now has customizable settings for domains, virtual networks, and user accounts.For more information, see [Deploy Microsoft Dynamics AX 2012 R3 on Azure using Lifecycle Services](/ax-2012/deploy-2012-r3-azure-lcs.md).
 -   The Issue search tool now shows planned and open regulatory features, and includes searchable resources for Regulatory feature updates and Regulatory white papers, registrations, and reports.For more information, see [Issue search (Lifecycle Services, LCS)](issue-search-lcs.md).
--   The Infrastructure estimator tool has become an independent tool that can be accessed outside of the Usage profiler, and now provides sizing for non-production environments (Dev/Test/Training).For more information, see [Infrastructure estimator (Lifecycle Services, LCS)](infrastructure-estimator-lcs.md).
+-   The Infrastructure estimator tool has become an independent tool that can be accessed outside of the Usage profiler, and now provides sizing for non-production environments (Dev/Test/Training).For more information, see [Infrastructure estimator (Lifecycle Services, LCS)](/ax-2012/infrastructure-estimator-lcs.md).
 -   The Upgrade analysis tool has new summary information in the report.
 -   Support for Safari (v5.1.7) and Firefox (v32) has been added.
 
@@ -546,7 +638,7 @@ Updates released in August 2014 included:
     -   Several new retail environments.
     -   A choice of the number of virtual machines and their size when you are deploying.
 
-    For more information, see [Deploy Microsoft Dynamics AX 2012 R3 on Azure using Lifecycle Services](deploy-2012-r3-azure-lcs.md).
+    For more information, see [Deploy Microsoft Dynamics AX 2012 R3 on Azure using Lifecycle Services](/ax-2012/deploy-2012-r3-azure-lcs.md).
 -   The Issue search tool now includes proactive fixes released by Microsoft.
 -   Nearly 300 error messages have been rewritten to be more clear and helpful.
 
@@ -574,7 +666,7 @@ Updates released in June 2014 included:
     -   Mandatory field
     -   Data consistency
 -   Selection of multiple filters is now possible in Issue search. You can use multiple filters to more quickly find the results you want.
--   Upgrade analysis now supports minor version (in-place) upgrade from AX 2012 to AX 2012 R3. You can upload a zipped model store file for analysis. For more information, see [Upgrade analysis (Lifecycle Services, LCS)](upgrade-analysis-lcs.md).
+-   Upgrade analysis now supports minor version (in-place) upgrade from AX 2012 to AX 2012 R3. You can upload a zipped model store file for analysis. For more information, see [Upgrade analysis (Lifecycle Services, LCS)](/ax-2012/upgrade-analysis-lcs.md).
 -   Consolidated incident list view in cloud powered support now shows all incidents associated with a project, instead of only those incidents filed by the person logged in.
 -   Attachments are now supported in cloud powered support.
 -   Three new customization analysis rules have been added.
@@ -584,7 +676,7 @@ May 2014 release updates included:
 -   Microsoft Azure deployment of Microsoft Dynamics AX 2012 R3: Support for an automated deployment of AX 2012 R3. For more information, see [What's new: Azure deployments of Microsoft Dynamics AX 2012 R3](https://technet.microsoft.com/EN-US/library/dn716026.aspx).
 -   Cloud-powered support is a part of Lifecycle Services that enables customers to manage support incidents. It enables you to create a virtual machine in Azure that has the same hotfixes installed as your local environment, reproduce and record the incident on the virtual machine and then submit it to our support team. Support follows up by investigating, and if possible, testing a fix on the virtual machine, and sending it back to you to verify. For more information, see [Cloud-powered support (Lifecycle Services, LCS)](cloud-powered-support-lcs.md).
 -   Over 100 new business process models have been added to the APQC library to support supply chain management, financials, and service industries.
--   Updates for AX 2012 R3: The Updates page on Lifecycle Services hosts the update installer for Microsoft Dynamics AX 2012 R3 that is used for cumulative updates, and the group of most recent updates. It also provides access to groups of updates that can be used for slipstream installations. For more information, see [Updates for Microsoft Dynamics AX 2012 R3 (Lifecycle Services, LCS)](update-2012-r3-lcs.md).
+-   Updates for AX 2012 R3: The Updates page on Lifecycle Services hosts the update installer for Microsoft Dynamics AX 2012 R3 that is used for cumulative updates, and the group of most recent updates. It also provides access to groups of updates that can be used for slipstream installations. For more information, see [Updates for Microsoft Dynamics AX 2012 R3 (Lifecycle Services, LCS)](/ax-2012/update-2012-r3-lcs.md).
 -   Issue search now includes regulatory feature updates.
 -   The following tools on Lifecycle Services have been updated to support AX 2012 R3:
     -   Business process modeler
@@ -612,5 +704,5 @@ January 2014 release updates included:
 See also
 --------
 
-[What’s new or changed](whats-new-changed.md)
+[What’s new or changed](/get-started/whats-new-changed.md)
 

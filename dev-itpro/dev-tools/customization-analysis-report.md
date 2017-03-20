@@ -55,99 +55,88 @@ This section describes all best practice rules (errors, warnings, or informatio
 
 ### BPCheckPackReturnsConnull
 
-|                     |                                                                                                                                                     |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule applies to all classes that implement the **SysPackable** interface. It makes sure that the **Pack** method doesn't return **Connull()**. |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Container pack method returns connull in a Runbase derived class                                                                                    |
 | Issue type/severity | Code/Warning                                                                                                                                        |
 | How to fix it       | Update the return value of the **Pack** method, or return **Super()** when applicable.                                                              |
 
 ### BPCheckParametersModified
 
-|                     |                                                                                              |
-|---------------------|----------------------------------------------------------------------------------------------|
 | Description         | This rule fails if a parameter of a method is modified inside a method.                      |
+|---------------------|----------------------------------------------------------------------------------------------|
 | Error message       | Parameter 1% in method %1 are modified inside the method                                     |
 | Issue type/severity | Code/Warning                                                                                 |
 | How to fix it       | Refactor your code. Parameters must be modified by the caller, not within the called method. |
 
 ### BPCheckSQLCode
 
-|                     |                                                                                   |
-|---------------------|-----------------------------------------------------------------------------------|
 | Description         | This rule fails if your X++ code contains direct SQL code.                        |
+|---------------------|-----------------------------------------------------------------------------------|
 | Error message       | SQL code found in method %1                                                       |
 | Issue type/severity | Code/Warning                                                                      |
 | How to fix it       | Refactor your code to use X++ to access the Dynamics 365 for Operations database. |
 
 ### BPCheckNestedLoopInCode
 
-|                     |                                                                                                                                                                                                                                                |
-|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if it finds a **while select** loop nested within a loop.                                                                                                                                                                      |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Nested data access loop found in %1 method                                                                                                                                                                                                     |
 | Issue type/severity | Code/Warning                                                                                                                                                                                                                                   |
 | How to fix it       | Refactor your code to use joins instead of nested data access loops. If you can't refactor the code without altering the business logic of your method, document an exception when you submit your Customization Analysis Report to Microsoft. |
 
 ### BPCheckInsertMethodInLoop
 
-|                     |                                                                                                                                                                                |
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rules fails if it finds a call to the method **insert** nested inside a loop. We recommend that you use **InsertRecordList**. This rule doesn't apply to InMemory tables. |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Insert method can be replaced with RecordInsertList in method %1                                                                                                               |
 | Issue type/severity | Code/Warning                                                                                                                                                                   |
 | How to fix it       | Refactor your code to use set-based operations, such as **InsertRecordList**.                                                                                                  |
 
 ### BPCheckSelectwithJoin
 
-|                     |                                                                                                                                                                                                                                                     |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if it finds nested **select** statements that aren't joined.                                                                                                                                                                        |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Nested select statement in %1 method can be joined                                                                                                                                                                                                  |
 | Issue type/severity | Code/Warning                                                                                                                                                                                                                                        |
 | How to fix it       | Refactor your code to use joins instead of a nested **select** statement. If you can't refactor the code without altering the business logic of your method, document an exception when you submit your Customization Analysis Report to Microsoft. |
 
 ### BPFunctionCallwithSelect
 
-|                     |                                                                                                                                                          |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if a function call is found within a **select** statement.                                                                               |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Function call found in select statement in method %1                                                                                                     |
 | Issue type/severity | Code/Warning                                                                                                                                             |
 | How to fix it       | Assign the function’s return value to a local variable before you call the **select** statement, and use the local variable in the **select** statement. |
 
 ### BPCheckinvalidExecuteQuery
 
-|                     |                                                                                                                |
-|---------------------|----------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if a call to **addRange** is found after a call to **super()** in the **ExecuteQuery** method. |
+|---------------------|----------------------------------------------------------------------------------------------------------------|
 | Error message       | Add range after super() should not be added in ExecuteQuery method for form %1                                 |
 | Issue type/severity | Code/Warning                                                                                                   |
 | How to fix it       | Refactor your code to avoid this pattern.                                                                      |
 
 ### BPCheckInvalidInitFormMethod
 
-|                     |                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule makes sure that you don't initialize form controls and data sources in a form’s **init** method before you call **super()**. It fails if it finds a statement that uses **element** or **this** before the call to **super()** (**this.aMethod()** or **element.aMethod()**). An informational message is shown only for some allowed patterns, such as initializing number sequences (**numberSeqPreInit**). |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Form element statements should not be used before super() in init method of form %1                                                                                                                                                                                                                                                                                                                                     |
 | Issue type/severity | Code/Info or Warning                                                                                                                                                                                                                                                                                                                                                                                                    |
 | How to fix it       | Refactor your code to access form controls and data after the call to **super()**. If your code doesn't initialize any form control and doesn't access any form data sources before **super()**, document an exception when you submit your Customization Analysis Report to Microsoft.                                                                                                                                 |
 
 ### BPCheckEmptyLoop
 
-|                     |                                                            |
-|---------------------|------------------------------------------------------------|
 | Description         | This rule fails if it finds loops that have no statements. |
+|---------------------|------------------------------------------------------------|
 | Error message       | Empty loop found in method %1 in class %2                  |
 | Issue type/severity | Code/Warning                                               |
 | How to fix it       | Remove the loop from your code.                            |
 
 ### BPCheckLockQueryRange
 
-|                     |                                                                                                                                        |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if the code calls **AddRange** in the **init** method of the form, and doesn't set the range as locked or hidden.      |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Range should be locked or hidden in form %1                                                                                            |
 | Issue type/severity | Code/Warning                                                                                                                           |
 | How to fix it       | Add **QueryBuildRange.status(RangeStatus::Locked)** or **QueryBuildRange.status(RangeStatus::Hidden)** after the call to **AddRange**. |
@@ -229,18 +218,16 @@ catch(Exception::UpdateConflictNotRecovered) {}</code></pre></td>
 
 ### BPCheckEmptyTableMethod
 
-|                     |                                                                                                                                                                   |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule checks for table methods that have no source code. Empty table methods cause record-set operations on the table to fall back to a row-by-row operation. |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | %1 table has an empty %2 method                                                                                                                                   |
 | Issue type/severity | Code/Warning                                                                                                                                                      |
 | How to fix it       | Remove this method from your code.                                                                                                                                |
 
 ### BPCheckBatchJobsEnabled
 
-|                     |                                                                                                                        |
-|---------------------|------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule makes sure that all classes that extend **RunBaseBatch** have a **canGoBatch** method that returns **true**. |
+|---------------------|------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Custom job is not batch-enabled in class %1                                                                            |
 | Issue type/severity | Code/Warning                                                                                                           |
 | How to fix it       | The **canGoBatch** method must return **true** for all batch classes.                                                  |
@@ -288,27 +275,24 @@ Display TransDate myDateMethod()
 
 ### BPCheckSQLQueryInInit
 
-|                     |                                                                                                                                                                                      |
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if a data access query that has a **while** loop is found in the **init** method of a form. This pattern could cause performance issues when the form is initalized. |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | SQL query with while loop was found in init method of form %1                                                                                                                        |
 | Issue type/severity | Code/Warning                                                                                                                                                                         |
 | How to fix it       | Refactor your code to avoid this pattern.                                                                                                                                            |
 
 ### BPCheckNewQueryWithForm
 
-|                     |                                                                                                                 |
-|---------------------|-----------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if it finds the **new Query()** statement in the **init** or **executeQuery** method of a form. |
+|---------------------|-----------------------------------------------------------------------------------------------------------------|
 | Error message       | Data source query overridden in form method %1                                                                  |
 | Issue type/severity | Code/Warning                                                                                                    |
 | How to fix it       | Refactor your code to avoid this pattern.                                                                       |
 
 ### BPCheckSelectForUpdateAbsent
 
-|                     |                                                                                                                                                                                                       |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if **Select ForUpdate** is used to select records, but an update isn't being performed. This rules doesn't apply to tables that are enabled for Optimistic Concurrency Control (OCC). |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Select ForUpdate not implemented in method %1                                                                                                                                                         |
 | Issue type/severity | Code/Warning                                                                                                                                                                                          |
 | How to fix it       | Use **Select** instead of **Select ForUpdate**, or set the **OCC Enabled** property to **Yes** on the table.                                                                                          |
@@ -347,45 +331,40 @@ Display TransDate myDateMethod()
 
 ### BPCheckMissingDeleteActions
 
-|                     |                                                                                                                                                                                                                                                                                          |
-|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule validates that the value of either a **delete** action or the **On Delete** property of a table relation isn't equal to **None**. The rule isn't triggered when the related or current table is a tempDB, in memory table, reference table, staging table, or parameter table. |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Delete actions missing in table %1 which is related to table %2 with relation name %3                                                                                                                                                                                                    |
 | Issue type/severity | MetaData/Warning                                                                                                                                                                                                                                                                         |
 | How to fix it       | Set a **delete** action value that isn't equal to **None**.                                                                                                                                                                                                                              |
 
 ### BPCheckAddressModel
 
-|                     |                                                                                                                                                                           |
-|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if a table field is of the **AddressZipCodeId** or **AddressStateId** type. These types indicate that the code didn't uptake the newer Address framework. |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Field %1 of table %2 is not part of address location model                                                                                                                |
 | Issue type/severity | MetaData/Warning                                                                                                                                                          |
 | How to fix it       | Replace these types with any other appropriate EDT type in the Directory model.                                                                                           |
 
 ### BPCheckDimensionModel
 
-|                     |                                                                                                                                                                               |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails if a table field is of the **Dimension** or **LedgerAccount** type. These types indicate that the code didn't uptake the newer Financial Dimension framework. |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Field %1 of table %2 is not part of financial dimension framework                                                                                                             |
 | Issue type/severity | MetaData/Warning                                                                                                                                                              |
 | How to fix it       | Replace these types with any other appropriate EDT type in the Dimensions model.                                                                                              |
 
 ### BPCheckNumberofNewFields
 
-|                     |                                                                                                                                                                            |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule verifies that no more than 10 fields were added to a table during the process of customizing or extending that table. This rule doesn't apply to staging tables. |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Number of new fields in table %1 is greater than                                                                                                                           |
 | Issue type/severity | Metadata/Warning                                                                                                                                                           |
 | How to fix it       | Refactor your schema and create related tables instead of adding too many fields to an existing table.                                                                     |
 
 ### BPCheckEnumUpgradeIssue
 
-|                     |                                                                                                                                                                                                           |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule fails when the following condition is met: When you customize an enum (overlayer), new enum values are less than the maximum existing value + 10. This rules doesn't apply to extensible enums. |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | Enum %1 will have upgrade issues                                                                                                                                                                          |
 | Issue type/severity | MetaData/Warning                                                                                                                                                                                          |
 | How to fix it       | Use larger enum values, or extend the enum.                                                                                                                                                               |
@@ -425,18 +404,16 @@ Display TransDate myDateMethod()
 
 ### BPCheckAltenateKeyAbsent
 
-|                     |                                                                                          |
-|---------------------|------------------------------------------------------------------------------------------|
 | Description         | This rule verifies that tables that have a unique index have at least one alternate key. |
+|---------------------|------------------------------------------------------------------------------------------|
 | Error message       | Table %1 does not have an alternate key                                                  |
 | Issue type/severity | MetaData/Warning                                                                         |
 | How to fix it       | Set the **Alternate Key** property to **Yes** on a unique index of the table.            |
 
 ### BPCheckBaseTableModified
 
-|                     |                                                                                                                                                                                              |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Description         | This rule discourages the customization (overlayering) of a list of specific base tables that are shipped by Microsoft. Examples are the SourceDocumentHeader and SourceDocumentLine tables. |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Error message       | %1 is a base table and must not be modified                                                                                                                                                  |
 | Issue type/severity | MetaData/Warning                                                                                                                                                                             |
 | How to fix it       | Don't customize the table.                                                                                                                                                                   |

@@ -231,5 +231,5 @@ See also
 
 [Financial reporting for Microsoft Dynamics ERP](financial-reporting-intro.md)
 
-[Generate a financial report](generate-financial-report.md)
+[Generate a financial report](\financials\general-ledger\generate-financial-report.md)
 

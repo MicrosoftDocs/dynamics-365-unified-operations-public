@@ -34,7 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about accounting distributions and describes the options that are available for processing them. Accounting distributions are used to allocate monetary amounts for a source document to specific ledger accounts. 
 
-Accounting distributions are a program-wide capability that is used and extended by each source document, such as a purchase order, vendor invoice, expense report, and free text invoice. By default, a default accounting distribution is generated for each source document line and monetary amount, and is conditionally enabled for modification. **Note: ** Some documents also support header document monetary amounts, such as charges for orders and invoices. The generic accounting distribution capabilities provide the following options for processing accounting distributions:
+Accounting distributions are a program-wide capability that is used and extended by each source document, such as a purchase order, vendor invoice, expense report, and free text invoice. By default, a default accounting distribution is generated for each source document line and monetary amount, and is conditionally enabled for modification. 
+
+> [!Note] 
+> Some documents also support header document monetary amounts, such as charges for orders and invoices. 
+
+The generic accounting distribution capabilities provide the following options for processing accounting distributions:
 
 -   **Distribute amounts** – View and modify the accounting distributions for an individual document header or line and any child lines, such as taxes or charges.
     -   For the top monetary amount distributions (parent distributions), the main account and financial dimensions might be editable directly in the segmented entry control in the grid. The extended price is a typical example of such a parent distribution.
@@ -53,10 +58,4 @@ Accounting distributions are a program-wide capability that is used and extended
 -   ** View distributions** – View the accounting distributions for the all lines and monetary amounts on the document. You can't modify the accounting distributions from this view.
 
 
-See also
---------
-
-[Accounting distributions and subledger journal entries for free text invoices](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
-
-[Dimension defaulting in accounting distributions (blog)](http://blogs.msdn.com/b/ax_gfm_framework_team_blog/archive/2013/12/16/dimension-defaulting-in-accounting-distributions-blog-1-introduction.aspx)
-
+For more information, see [Accounting distributions and subledger journal entries for free text invoices](accounting-distributions-subledger-journal-entries-vendor-invoices.md).

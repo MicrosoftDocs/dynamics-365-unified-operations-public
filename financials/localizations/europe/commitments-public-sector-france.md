@@ -34,7 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Commitments are budget control source documents used by public sector entities in France. They are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle. 
 
-When commitments are used as part of the budgeting process, each purchase agreement, purchase order, and vendor invoice is associated with at least one commitment. The commitment is relieved when the funds are released from the purchase agreement and the purchase order is confirmed. When an invoice does not reference a purchase order or purchase agreement, the commitment associated with the invoice is relieved when the invoice is posted. In addition, a commitment may specify a vendor. When a vendor is specified, any purchase order, purchase agreement, or vendor invoice that references the commitment must have the same vendor. Commitments are valid from the date they are created through the end of the fiscal year or until they are closed. Commitments cannot be carried over from one fiscal year to the next. For more information, see [Close commitments](#close) in this topic. **Note**: The **Commitment type** field on the **Purchase agreement** page is not related to the commitment document. That field only specifies whether the purchase agreement is based on a value or a quantity.
+When commitments are used as part of the budgeting process, each purchase agreement, purchase order, and vendor invoice is associated with at least one commitment. The commitment is relieved when the funds are released from the purchase agreement and the purchase order is confirmed. When an invoice does not reference a purchase order or purchase agreement, the commitment associated with the invoice is relieved when the invoice is posted. In addition, a commitment may specify a vendor. When a vendor is specified, any purchase order, purchase agreement, or vendor invoice that references the commitment must have the same vendor. Commitments are valid from the date they are created through the end of the fiscal year or until they are closed. Commitments cannot be carried over from one fiscal year to the next. For more information, see [Close commitments](#close) in this topic. 
+>[!NOTE]
+>The **Commitment type** field on the **Purchase agreement** page is not related to the commitment document. That field only specifies whether the purchase agreement is based on a value or a quantity.
 
 ## Set up budget control and related prerequisites
 Before you can use commitments, commitment number sequences must be defined, budget control must be set up, and available budget amounts must be available. The commitment workflow is optional, but recommended.
@@ -64,7 +66,7 @@ There are three ways to consume a commitment.
 A commitment can be restricted to a specific vendor, or it can be available for assignment to any vendor. If the commitment is restricted to a specific vendor, it is available for selection only when the vendor invoice or purchase order specifies the same vendor.
 
 ## Increase or decrease a commitment
-It is sometimes necessary to change a confirmed commitment. For example, if severe weather results in higher-than-planned spending for snow removal and related services, you may need to increase a commitment. When a commitment line has already been referenced by a purchase order or vendor invoice, your ability to delete or change the commitment line may be limited. []()
+It is sometimes necessary to change a confirmed commitment. For example, if severe weather results in higher-than-planned spending for snow removal and related services, you may need to increase a commitment. When a commitment line has already been referenced by a purchase order or vendor invoice, your ability to delete or change the commitment line may be limited.
 
 ## Close commitments
 Commitments must be closed manually.
@@ -72,10 +74,10 @@ Commitments must be closed manually.
 -   You can close a single commitment line or an entire commitment by using the **Close** button on the Action Pane of the commitment.
 -   The purchase order year-end process automatically reverses closing entries and creates or updates budget in commitment documents in the new fiscal year. This is handled by the process. No manual intervention is required. However, after you have processed purchase orders and commitments, you must go to the **Commitment close** page to close the commitments in the closing fiscal year.
 
-**Important**: When you select the commitments that you want to close, be sure that you don't select the commitments that you have already created for the new fiscal year. Closing a commitment line cannot be reversed. If you close a commitment line by mistake, you must create a new commitment to restore the budget reservation. To learn more about the year-end process, see [Year-end processing in the public sector](year-end-processing-public-sector.md).
+**Important**: When you select the commitments that you want to close, be sure that you don't select the commitments that you have already created for the new fiscal year. Closing a commitment line cannot be reversed. If you close a commitment line by mistake, you must create a new commitment to restore the budget reservation. To learn more about the year-end process, see [Year-end processing in the public sector](/financials/public-sector/year-end-processing-public-sector).
 
 See also
 --------
 
-[Public-sector accounting in France](/wiki/public-sector-accounting-in-France/)
+[Public-sector accounting in France](public-sector-accounting-france.md)
 

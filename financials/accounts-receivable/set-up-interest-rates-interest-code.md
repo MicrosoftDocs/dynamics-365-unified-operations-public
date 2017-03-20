@@ -67,7 +67,7 @@ You can set up interest rates that vary depending on the overdue amount, the num
 -   You can use the **Earnings by Currency** tab to define specific interest settings for each currency. This is also where you will define the range.
 -   Use the **Ranges** button to add lines that represent the ranges that you want to set up. The **From** value represents the beginning of the range and the **Interest value** number represents either a percentage or an amount, depending on the selection in the **Calculate interest based on** field on the **Set up Interest codes** page.
 
-## [Example 1: Interest by range = Amount]
+## Example 1: Interest by range = Amount
 You set up an interest code that assesses interest one time for every three months that the invoice payment exceeds the transaction due date. You want to base the calculation on a percentage interest value, according to stepped amount intervals. The interest value will be 1 percent for invoice amounts up to 1,000.00, 2 percent for amounts from 1,001.00 to 5,000.00, and 3 percent for amounts larger than 5,000.00. You set up the interest code field values as follows.
 
 | **Field name**                  | **Field value** |
@@ -86,7 +86,7 @@ You set up the range information as follows.
 | 5,001          | 3                  |
 
  
-[Example 2: Interest by range = Days]
+## Example 2: Interest by range = Days
 --------------------------------------------------
 
 You set up an interest code that assesses interest one time for every 15 days that the invoice payment exceeds the transaction due date. You want to base the calculation on an amount interest value, according to stepped day intervals. The interest value will be 10.00 per 15 days during the first 60 days, 15.00 per 15 days during days 61 to 90, and 20.00 per 15 days from day 91 and after. You set up the interest code field values as follows.
@@ -107,7 +107,7 @@ You set up the range information as follows.
 | 91             | 20                 |
 
  
-[Example 3: Interest by range = Months]
+## Example 3: Interest by range = Months
 ----------------------------------------------------
 
 You set up an interest code that assesses interest one time for every month that the invoice payment exceeds the transaction due date. You want to base the calculation on a percentage interest value, according to stepped month intervals. The interest value will be 1.5 percent per month for the first three overdue months, 2.0 percent per month for the second three months, and 2.5 percent per month for each month beyond the first six months. You set up the interest code field values as follows.
@@ -127,7 +127,7 @@ You set up the range information as follows.
 | 4              | 2                  |
 | 7              | 2.5                |
 
-## [New versions]
+## New versions
 Interest codes are date effective. If you want to modify the interest rate, you can create a **new version** that is effective as of a future date.
 
 To view different versions, you can use the **As of Date** menu choice to select the cutoff date. You can also select the **Display all records** to view all interest codes in the page.

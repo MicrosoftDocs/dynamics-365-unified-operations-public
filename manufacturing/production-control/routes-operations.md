@@ -65,7 +65,7 @@ Sometimes, a combination of multiple operations resources that have different ch
 
 ### Approval of routes
 
-A route must be approved before it can be used in the planning or manufacturing process. Approval indicates that the route design has been completed. The same released product or released product variant can have multiple approved routes. Typically, approval of a route occurs when the first relevant route version is approved. However, in some business scenarios, the approval of the route and the route version are separate activities that might involve different process owners. Each route can be approved or unapproved separately. However, note that, when a route is unapproved, all related route versions are also unapproved. In the Production control parameters, you can specify whether routes can be unapproved, and whether approved routes can be changed. If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](electronic-signature-overview.md).
+A route must be approved before it can be used in the planning or manufacturing process. Approval indicates that the route design has been completed. The same released product or released product variant can have multiple approved routes. Typically, approval of a route occurs when the first relevant route version is approved. However, in some business scenarios, the approval of the route and the route version are separate activities that might involve different process owners. Each route can be approved or unapproved separately. However, note that, when a route is unapproved, all related route versions are also unapproved. In the Production control parameters, you can specify whether routes can be unapproved, and whether approved routes can be changed. If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](/core/organization-administration/electronic-signature-overview).
 
 ## Operations
 An operation is a step in the production process. In Dynamics 365 for Operations, each operation has an ID and a simple description. The following tables shows typical examples of operations from a machine shop.
@@ -150,7 +150,7 @@ When you activate a route version, you designate it as the default route version
 
 ### Electronic signatures
 
-If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](electronic-signature-overview.md).
+If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](/core/organization-administration/electronic-signature-overview).
 
 ### Product change that uses case management
 
@@ -186,9 +186,9 @@ See also
 
 [Bills of materials and formulas](bill-of-material-bom.md)
 
-[Cost categories used in production routing](cost-categories-used-production-routings.md)
+[Cost categories used in production routing](/cost-management/cost-categories-used-production-routings.md)
 
 [Resource capabilities](resource-capabilities.md)
 
-[Electronic signature overview](electronic-signature-overview.md)
+[Electronic signature overview](/core/organization-administration/electronic-signature-overview)
 

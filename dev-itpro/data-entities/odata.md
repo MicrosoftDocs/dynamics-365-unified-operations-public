@@ -115,10 +115,4 @@ The OData protocol supports many similar filtering and querying options on entit
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
 
-See also
---------
-
-[Technical Concepts Guide](https://ax.help.dynamics.com/en/?p=183121)
-
-[Architecture changes in Dynamics 'AX 7'](architecture-changes.md)
 

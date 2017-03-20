@@ -3,7 +3,7 @@
 
 title: Procurement and sourcing in the public sector
 description: This overview introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-07 16 - 45 - 24
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: AgreementClassification, BudgetParameters, ProcCategoryHierarchy
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19681
@@ -49,7 +49,7 @@ You may need to set up the following Procurement and sourcing features for publ
 
 **Note** This also applies to Accounts payable.
 
--   [Public sector accounting in France](public-sector-accounting-france.md) For French organizations, additional steps may be required for the public sector.
+-   [Public sector accounting in France](/localizations/eurore/public-sector-accounting-france.md) For French organizations, additional steps may be required for the public sector.
 
 The following sections describe the Procurement and sourcing features that are available for the public sector.
 
@@ -132,7 +132,7 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 See also
 --------
 
-[Procurement and sourcing](procurement-sourcing.md)
+[Procurement and sourcing](/manufacturing/procurement-sourcing/procurement-sourcing-overview)
 
 [Accounts payable in the public sector](accounts-payable-public-sector.md)
 

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains how partners can get started with Microsoft Dynamics Lifecycle Services (LCS). 
 
-As a Microsoft Dynamics 365 for Operations partner, you can access the current version  by following the steps in [Sign up for a Microsoft Dynamics 365 for Operations subscription](sign-up-preview-subscription.md).
+As a Microsoft Dynamics 365 for Operations partner, you can access the current version  by following the steps in [Sign up for a Microsoft Dynamics 365 for Operations subscription](../dev-tools/sign-up-preview-subscription.md).
 
 ### Projects for partners in LCS
 

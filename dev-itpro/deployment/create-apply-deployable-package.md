@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create and apply a deployable package
+title: Create a deployable package
 description: This wiki describes the workflow for creating and applying a deployable package.
 author: RobinARH
 manager: AnnBe

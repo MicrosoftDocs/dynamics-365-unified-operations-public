@@ -130,7 +130,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 3.  Save the file.
 
 ## Upgrade the database
-1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder. Use the instructions in [Install a deployable package](install-deployable-package.md).
+1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder. Use the instructions in [Install a deployable package](../deployment/install-deployable-package.md).
 2.  Restore a backup of the source database to your one-box demo or development environment that is already running the latest Dynamics 365 for Operations update that you want to upgrade to. **Note:** For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For details about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 3.  Run the runbook file until Step 4: GlobalBackup.
 4.  Rename the existing Update 1 database, and replace it with the source database that you want to upgrade.
@@ -215,7 +215,7 @@ This error can occur if you have enabled database logging on a kernel table such
 
 ### The batch process fails to start
 
-The batch process can fail if the environment has been left in [maintenance mode](maintenance-mode.md) following a change to configuration keys. To resolve, turn maintenance mode off and resume the runbook process.
+The batch process can fail if the environment has been left in [maintenance mode](../system-administration/maintenance-mode.md) following a change to configuration keys. To resolve, turn maintenance mode off and resume the runbook process.
 
 ### The system fails to locate or generate a user GUID
 

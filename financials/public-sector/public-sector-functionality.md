@@ -49,7 +49,7 @@ Use the Public sector functionality to meet the rules, regulations, and reporti
 -   [Accounts receivable in the Public sector](accounts-receivable-public-sector.md)
 -   [Budgeting in the Public sector](budgeting-public-sector.md)
 -   [Fixed assets in the Public sector](fixed-asset-public-sector.md)
--   [French regulatory features](public-sector-accounting-france.md)\*
+-   [French regulatory features](/localizations/europe/public-sector-accounting-france.md)\*
 -   [General ledger in the Public sector](general-ledger-public-sector.md)
 -   [Procurement and sourcing in the Public sector](procurement-sourcing-public-sector.md)
 -   [Security roles in the Public sector](http://ax.help.dynamics.com/en/wiki/security-roles-in-the-public-sector-2/)
@@ -67,10 +67,6 @@ The following table provides information about how this configuration key relate
 | **Detail** | **Description**                                                                                                                                                                                                     |
 | Parent key | None                                                                                                                                                                                                                |
 | Child keys | **Advanced ledger entry** configuration key (AdvancedLedgerEntry) **Public sector 1099G** configuration key (Tax1099G) **Public sector 1099S** configuration key (Tax1099S) **French regulatory** configuration key |
-
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account).
 
 
 See also

@@ -34,7 +34,9 @@ ms.dyn365.ops.version: Platform update 3
 
 This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
 
-Microsoft Dynamics 365 for Operations offers an expanded set of tools to support custom solutions. This topic focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this topic.[![extendingdatasets](./media/extendingdatasets.png)](./media/extendingdatasets.png)  
+Microsoft Dynamics 365 for Operations offers an expanded set of tools to support custom solutions. This topic focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this topic.
+
+[![extendingdatasets](./media/extendingdatasets.png)](./media/extendingdatasets.png)  
 
 ## What's important to know?
 There are a few basic assumptions that you should be aware of before you apply this solution.
@@ -56,13 +58,22 @@ The following walkthrough shows the process of expanding an existing application
 
 [![Custom solution (after customization)](./media/fleet-extension-rentals-list-after-1024x672.png)](./media/fleet-extension-rentals-list-after.png)
 
-1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](..\dev-tools\..\dev-tools\customization-overlayering-extensions.md). For this example, add a custom report to the **Fleet Management Extensions** model.
-2.  **Create a new project in Microsoft Visual Studio.** Make sure that the project is associated with your extension model. The following illustration shows the project settings. [![Project settings in Visual Studio](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
-3.  **Add a table extension to store the custom report data.** Find the temporary cache for the **TmpFMRentalsByCust** data set that is populated by the RDP class, and create an extension in your model. Define the fields that will be used to store the data for the report server, and then click **Save** to save your changes. The following illustration shows the table extension that is required for this example. [![Table extension for this example](./media/fleet-extension-table-extension.png)](./media/fleet-extension-table-extension.png)
+1.  **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](..\extensibility\customization-overlayering-extensions.md). For this example, add a custom report to the **Fleet Management Extensions** model.
+2.  **Create a new project in Microsoft Visual Studio.** Make sure that the project is associated with your extension model. The following illustration shows the project settings. 
+    
+    [![Project settings in Visual Studio](./media/fleet-extension-vs-project-settings.png)](./media/fleet-extension-vs-project-settings.png)
+
+3.  **Add a table extension to store the custom report data.** Find the temporary cache for the **TmpFMRentalsByCust** data set that is populated by the RDP class, and create an extension in your model. Define the fields that will be used to store the data for the report server, and then click **Save** to save your changes. The following illustration shows the table extension that is required for this example. 
+
+    [![Table extension for this example](./media/fleet-extension-table-extension.png)](./media/fleet-extension-table-extension.png)
+
 4.  **Add your custom report to the project.** The custom design closely resembles the standard solution. Therefore, you can just duplicate the existing application report in the **Fleet Management Extension** model, and then update the report design so that it includes the custom title and additional text box in the Rental Charges container.
 5.  **Rename the report so that it has a meaningful name.** For this example, rename the custom report **FERentalsByCustomer** to distinguish it from the standard solution.
 6.  **Restore the report data set references.** Open the report designer, expand the **Datasets** collection, right-click the data set that is named **FMRentalsByCustDS**, and then click **Restore**. The data set is expanded so that it includes the newly introduced columns. Therefore, these columns are now available in the report designer.
-7.  **Customize the report design.** The designer offers a free-form design surface that you can use to create the custom solution. The following illustration shows the custom design that is used for this example. [![Custom design for this example](./media/fleet-extension-custom-design.png)](./media/fleet-extension-custom-design.png)
+7.  **Customize the report design.** The designer offers a free-form design surface that you can use to create the custom solution. The following illustration shows the custom design that is used for this example. 
+
+    [![Custom design for this example](./media/fleet-extension-custom-design.png)](./media/fleet-extension-custom-design.png)
+    
 8.  **Add a new report handler (X++) class to the project.** Give the class a name that appropriately describes that it's a handler for an existing application report. For this example, rename the class **FERentalsByCustomerHandler** to distinguish it from other report handlers.
 9.  **Add a PostHandler method to begin to use your custom report.** In this example, extend the controller class in the standard solution, **FMRentalsByCustController**, by using the following code.
 

@@ -44,15 +44,15 @@ The user interface for Microsoft Dynamics 365 for Operations differs significant
 The form metamodel continues to be used to define controls and application logic. This approach enables Dynamics 365 for Operations to support almost all the existing Form, Form DataSource, and Form Control metamodel and X++ override methods. However, some control types, properties, and override methods have been removed, either because of incompatibility with the new platform or for performance reasons. For example, ActiveX and ManagedHost controls can no longer be used to add custom controls, because they are incompatible with the HTML platform. Instead, a new extensible control framework has been added that lets you add additional controls.
 
 ## Tutorials
--   [CLI101: Building the rental charge type form](build-rental-charge-type-form.md)
--   [CLI102: Building the customer form](build-customer-form.md)
--   [BIR102: Add contextual BI to forms](add-contextual-bi-forms.md)
+-   [Building the rental charge type form](build-rental-charge-type-form.md)
+-   [Building the customer form](build-customer-form.md)
+-   [Add contextual BI to forms](..\analytics-bi-reporting\add-contextual-bi-forms.md)
 
 ## Forms
 -   [Navigation concepts](page-navigation.md)
 -   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)
 -   [Layout](page-layout.md)
--   [Symbol font](./media/dynamicssymbolfont20151201.pdf)
+-   [Symbol font](symbol-font.md)
 -   [Testing forms with custom patterns](testing-forms-custom-patterns.md)
 
 ## Controls
@@ -60,7 +60,7 @@ The form metamodel continues to be used to define controls and application logic
 -   [Sizing for input controls and grid columns](sizing-input-controls-grid-columns.md)
 -   [Check box support in tree controls](check-box-tree-controls.md)
 -   [Filtering](filtering.md)
--   [Window management](window-management.md)
+-   [Window management](\core\get-started\window-management)
 -   [Form statistics addin (Office Mix)](https://mix.office.com/watch/1kuwpf3ooohty)
 -   [Code migration - context menus](..\migration-upgrade\code-migration-context-menus.md)
 -   [Code migration - mouse double click](..\migration-upgrade\code-migration-double-click.md)
@@ -91,15 +91,13 @@ The form metamodel continues to be used to define controls and application logic
 | [Details Master](details-master-form-pattern.md) [Details Transaction](details-transaction-form-pattern.md) [Form Part Section List](section-list-form-pattern.md) [List Page](list-page-form-pattern.md) [Simple Details](simple-details-form-pattern.md) [Simple List](simple-list-form-pattern.md) [Simple List and Details](simple-list-details-form-pattern.md) [Table Of Contents](table-of-contents-form-pattern.md) [Task Single](task-single-form-pattern.md) [Task Double](task-double-form-pattern.md) [Wizard](wizard-form-pattern.md) [Workspace](workspace-form-pattern.md) [General Form Guidelines](general-form-guidelines.md) | [Advanced Selection](advanced-selection-form-pattern.md) [Dialog](dialog-form-pattern.md) [Drop Dialog](drop-dialog-form-pattern.md) [Lookup](lookup-form-pattern.md) [Factbox](factbox-form-patterns.md) | [Custom Filter Group](custom-filter-group-subpattern.md) [Dimension Entry Control](..\financial-dimensions\dimension-entry-control-subpattern.md) [Dimension Expression Builder](..\financial-dimensions\dimension-expression-builder-subpattern.md) [Fields and Field Groups](fields-field-groups-subpattern.md) [Filters and Toolbar](filters-toolbar-subpattern.md) [Fill Text](fill-text-subpattern.md) [Horizontal Fields and Buttons Group](horizontal-fields-buttons-group-subpattern.md) [Image Preview](image-preview-subpattern.md) [List Panel](list-panel-subpattern.md) [Nested Simple List and Details](nested-simple-list-details-subpattern.md) [Section Chart](section-chart-form-pattern.md) [Section Power BI](section-powerbi-subpattern.md) [Section Related Links](section-related-links-subpattern.md) [Section Stacked Chart](section-stacked-chart-subpattern.md) [Section Tabbed List](section-tabbed-list-subpattern.md) [Section Tiles](section-tiles-subpattern.md) [Tabular Fields](tabular-fields-subpattern.md) [Toolbar and List](toolbar-list-subpattern.md) [Toolbar and Fields](toolbar-fields-subpattern.md) [Workspace Filter Group](workspace-filter-group-subpattern.md) |
 
 ## Control extensibility
--   [CLI103: Building an extensible control](build-extensible-control.md)
+-   [Building an extensible control](build-extensible-control.md)
 -   [Extensible control programming reference](extensible-control-programming-reference.md)
 -   [Control extensibility](control-extensibility.md)
 -   [Add localizable labels for an extensible control](create-localizable-labels-client.md)
 -   [Guidelines for extensible controls layout](extensible-controls-layout.md)
 -   [Control the text that Task Recorder generates for a control](task-recorder-control-text.md)
 
-## Additional resources
--   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.
--   For information about Microsoft Dynamics 365 for Operations training, see [Microsoft eLearning](https://mbspartner.microsoft.com/AX/LearningPlans) (requires a CustomerSource account).
+
 
 

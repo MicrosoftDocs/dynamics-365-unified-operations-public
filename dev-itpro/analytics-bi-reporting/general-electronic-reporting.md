@@ -151,7 +151,7 @@ ER supports a format designer that you can use to build the format of a partic
 
 ### Building a configuration to generate electronic documents in OPENXML worksheet format
 
-ER format designer can be used to build a particular electronic document in OPENXML worksheet format. The following illustration shows an example of this type of format (a format configuration to generate OPENXML worksheet with details of a selected payment journal):[![Pic-ER-format-Excel](./media/pic-er-format-excel.jpg)](./media/pic-er-format-excel.jpg) To become familiar with the details of this scenario, play the **ER Create a configuration for reports in OPENXML format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process). Use the referred below Excel file as a template of the designing ER format to complete the step of a format template's import of this task guide: [Template of Payment Report (SampleVendPaymWsReport.xlsx)](./media/samplevendpaymwsreport.xlsx)
+ER format designer can be used to build a particular electronic document in OPENXML worksheet format. The following illustration shows an example of this type of format (a format configuration to generate OPENXML worksheet with details of a selected payment journal):[![Pic-ER-format-Excel](./media/pic-er-format-excel.jpg)](./media/pic-er-format-excel.jpg) To become familiar with the details of this scenario, play the **ER Create a configuration for reports in OPENXML format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process). Use the referred below Excel file as a template of the designing ER format to complete the step of a format template's import of this task guide: [Template of Payment Report (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
 ### Storing a designed format component in a format configuration
 
@@ -159,7 +159,13 @@ ER can store a designed format together with the configured data mappings as a 
 
 ### Configuring Dynamics 365 for Operations to start to use a created format internally
 
-Dynamics 365 for Operations can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment, as shown in the following illustrations [![BACS (UK) format configuration](http://msdynamics.blob.core.windows.net/media/2015/12/GER-BACS-UK-format-configuration-1024x327.png)](http://msdynamics.blob.core.windows.net/media/2015/12/GER-BACS-UK-format-configuration.png) [![Referencing the BACS (UK) format in a payment method](http://msdynamics.blob.core.windows.net/media/2015/12/GER-BACS-UK-format-method-1024x423.png)](./media/ger-bacs-uk-format-method.png) To become familiar with the details of this scenario, play the **ER Use format to generate electronic document for payments** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
+Dynamics 365 for Operations can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment, as shown in the following illustrations: 
+
+[![BACS (UK) format configuration](media/ger-bacs-uk-format-configuration.png) 
+
+[![Referencing the BACS (UK) format in a payment method](media/ger-bacs-uk-format-method.png) 
+
+To become familiar with the details of this scenario, play the **ER Use format to generate electronic document for payments** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ## Handling ER components
 ### Publishing an ER component in LCS to offer it externally (localization)
@@ -264,7 +270,7 @@ ER lets you automatically adopt changes of the latest version of the base compo
 See also
 --------
 
-[Localization requirements – Create an Electronic reporting configuration](localization-requirements-electronic-reporting-configuration.md)
+[Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
 
 [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 

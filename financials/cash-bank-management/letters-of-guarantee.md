@@ -3,7 +3,7 @@
 
 title: Letters of guarantee
 description: This article provides information about letters of guarantee. In a letter of guarantee, a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment or obligation to that person. 
-author: ShylaThompson
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-04 23 - 28 - 07
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BankLGGuarantee
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 18291
@@ -34,7 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about letters of guarantee. In a letter of guarantee, a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment or obligation to that person. 
 
-A letter of guarantee is an agreement by a bank (the guarantor) to pay a set amount of money to some person (the beneficiary) if a bank customer (the principal) defaults on a payment or an obligation to the beneficiary. Letters of guarantee aren't transferable. They apply only to the beneficiary who is named in the agreement. The principal can request an increase or decrease in the value of a letter of guarantee, subject to the terms of the agreement. To liquidate a letter of guarantee, the beneficiary must submit the original letter of guarantee and inform the bank of the principal’s default before the expiration date. The bank then pays the amount that is due to the beneficiary's account, according to the terms in the letter of guarantee. The bank reserves a percentage of the payment as a margin. The percentage is agreed upon and specified in the terms of the agreement. You can create a code to track the purpose of a letter of guarantee. You can also specify the reasons that can be associated with a letter of guarantee when the letter is canceled. You can view the purpose codes and bank reasons on the **Payment purpose codes** and **Bank reasons** pages. You can use the **Letter of guarantee** page to complete these tasks:
+A letter of guarantee is an agreement by a bank (the guarantor) to pay a set amount of money to some person (the beneficiary) if a bank customer (the principal) defaults on a payment or an obligation to the beneficiary. Letters of guarantee aren't transferable. They apply only to the beneficiary who is named in the agreement. The principal can request an increase or decrease in the value of a letter of guarantee, subject to the terms of the agreement. 
+
+To liquidate a letter of guarantee, the beneficiary must submit the original letter of guarantee and inform the bank of the principal’s default before the expiration date. The bank then pays the amount that is due to the beneficiary's account, according to the terms in the letter of guarantee. The bank reserves a percentage of the payment as a margin. The percentage is agreed upon and specified in the terms of the agreement. 
+
+You can create a code to track the purpose of a letter of guarantee. You can also specify the reasons that can be associated with a letter of guarantee when the letter is canceled. You can view the purpose codes and bank reasons on the **Payment purpose codes** and **Bank reasons** pages. 
+
+You can use the **Letter of guarantee** page to complete these tasks:
 
 -   Create correct ledger entries, and eliminate manual entry.
 -   Record all monetary and nonmonetary transactions, and track balances of letters of guarantee.
