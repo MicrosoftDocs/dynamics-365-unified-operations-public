@@ -196,7 +196,9 @@ Create a reference from the X++ project named **FleetManagement Migrated** to th
 1.  Right-click the FleetManagement Migrated project, click **Add**, and then click **Reference**. Select the row for the DriversLicenseEvaluator project in the **Projects** references tab, and then click **OK**. [![AddReference\_LinqC](./media/addreference_linqc1.png)](./media/addreference_linqc1.png)
 2.  Under the FleetManagement Migrated project, expand the **References** node, and there you see new reference to the **DriversLicenseEvaluator** project.
 
-    #### [![SolutionExplorerReferences\_LinqC](./media/solutionexplorerreferences_linqc2.png)](./media/solutionexplorerreferences_linqc2.png) Build sequence
+[![SolutionExplorerReferences\_LinqC](./media/solutionexplorerreferences_linqc2.png)](./media/solutionexplorerreferences_linqc2.png) 
+    
+#### Build sequence
 
     Your C\# DriversLicenseEvaluator project will be built before the FleetManagement Migrated project is built. This is because the added reference makes the Fleet project dependent on your project. The build sequence is easy to see if you right-click the FleetManagement solution, click **Project Build Order**, and then click **Dependencies**.
 
