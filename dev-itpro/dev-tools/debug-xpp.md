@@ -44,10 +44,23 @@ To debug X++ code, follow these steps.
 
   [![32\_DevoToolsConcept](./media/32_DevoToolsConcept.png)](./media/32_DevoToolsConcept.png)
   
-3.  Set a startup project and a startup object. Startup objects can be any form, any class that has the **main** method, or any menu item. You can set the startup object in the **Properties** pane for the project. Alternatively, right-click the element in Solution Explorer, and then click **Set as Startup Object**.![setasstartupobject](./media/setasstartupobject.jpg)
+3.  Set a startup project and a startup object. Startup objects can be any form, any class that has the **main** method, or any menu item. You can set the startup object in the **Properties** pane for the project. Alternatively, right-click the element in Solution Explorer, and then click **Set as Startup Object**.
+
+  ![setasstartupobject](./media/setasstartupobject.jpg)
+  
 4.  On the **Debug** menu, click **Start Debugging**.
-5.  In the application, perform the action that causes the code that you're interested in to run. Typical actions include opening a form. Processing stops at the breakpoints that you set. [![33\_DevoToolsConcept](./media/33_devotoolsconcept.png)](./media/33_devotoolsconcept.png)
-6.  Use the tools in Visual Studio to examine the application. For example, you can hover over variables in the X++ code to see their values. You can also use commands on the **Debug** menu to step through the code. Additionally, tools such as the **Autos** pane in Visual Studio will show important information about the state of the application. [![34\_DevoToolsConcept](./media/34_devotoolsconcept.png)](./media/34_devotoolsconcept.png)Another tool that is specific to Dynamics 365 for Operations is the Infolog. Often, **info()** statements are added to code to log status messages while the application is running. You can view these Infolog messages directly in Visual Studio. On the **View** menu, click **Infolog**. [![35\_DevoToolsConcept](./media/35_devotoolsconcept.png)](./media/35_devotoolsconcept.png)
+5.  In the application, perform the action that causes the code that you're interested in to run. Typical actions include opening a form. Processing stops at the breakpoints that you set. 
+
+  [![33\_DevoToolsConcept](./media/33_DevoToolsConcept.png)](./media/33_devotoolsconcept.png)
+  
+6.  Use the tools in Visual Studio to examine the application. For example, you can hover over variables in the X++ code to see their values. You can also use commands on the **Debug** menu to step through the code. Additionally, tools such as the **Autos** pane in Visual Studio will show important information about the state of the application. 
+
+  [![34\_DevoToolsConcept](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)
+  
+  Another tool that is specific to Dynamics 365 for Operations is the Infolog. Often, **info()** statements are added to code to log status messages while the application is running. You can view these Infolog messages directly in Visual Studio. On the **View** menu, click **Infolog**. 
+  
+  [![35\_DevoToolsConcept](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)
+  
 7.  After you've finished debugging the application, exit Dynamics 365 for Operations. Visual Studio will exit debugging mode.
 
 
