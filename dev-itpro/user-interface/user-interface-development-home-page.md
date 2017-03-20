@@ -52,7 +52,7 @@ The form metamodel continues to be used to define controls and application logic
 -   [Navigation concepts](page-navigation.md)
 -   [The new user experience](https://mix.office.com/watch/1ohsrrpsd02e1)
 -   [Layout](page-layout.md)
--   [Symbol font](./media/dynamicssymbolfont20151201.pdf)
+-   [Symbol font](symbol-font.md)
 -   [Testing forms with custom patterns](testing-forms-custom-patterns.md)
 
 ## Controls
