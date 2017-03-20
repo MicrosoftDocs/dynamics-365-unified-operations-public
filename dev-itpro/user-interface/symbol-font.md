@@ -39,7 +39,7 @@ The Symbol font defines the set of out-of-the-box symbols available for use in 
  
 |Release	|Version	|Symbol Font Update	|Build number	|Availability|
 |---|---|---|---|---|
-|Microsoft Dynamics 365 for Operations platform	|Platform update 5	|[Symbol list + images](https://msdynamics.blob.core.windows.net/media/2017/02/DynamicsSymbolFont_Update5.pdf)	|TBD	|March 2017|
+|Microsoft Dynamics 365 for Operations platform	|Platform update 5	|[Symbol list + images](https://msdynamics.blob.core.windows.net/media/2017/03/DynamicsSymbolFont_Update5.pdf)	|TBD	|March 2017|
 |Microsoft Dynamics 365 for Operations platform	|Platform Update 4	|No changes	|7.0.4425.16161	|February 2017|
 |Microsoft Dynamics 365 for Operations platform	|Platform update 3	|[Symbol list + images](https://msdynamics.blob.core.windows.net/media/2017/02/DynamicsSymbolFont_Update3.pdf)	|7.0.4307.16141	|November 2016|
 |Microsoft Dynamics AX platform	|Platform update 2	|[Symbol list + images](https://msdynamics.blob.core.windows.net/media/2017/02/DynamicsSymbolFont_Update2.pdf)	|7.0.4230.16130	|August 2016|
