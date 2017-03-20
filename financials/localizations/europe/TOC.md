@@ -22,12 +22,12 @@
 # [VAT reporting](eu-vat-reporting.md)
 # [View transactions on settlement](transactions-settlement-form.md)			
 # Austria						
-## [Packing material rates and fees](aut-packing-material-fee-calculation.md)	
+## [Packing material fees](aut-packing-material-fee-calculation.md)	
 ## [VAT statement](aut-vat-statement-details-austria.md)							
 # Belgium						
 ## [CODA bank statement](bel-coda-bank-statement-import.md)						
 # The Czech Republic									
-## [Depreciation suspension for holidays](cze-depreciation-suspension-holidays.md)						
+## [Depreciation suspension](cze-depreciation-suspension-holidays.md)						
 ## [Fixed assets depreciation](cze-fixed-assets-depreciation.md)						
 ## [Half year depreciation](cze-half-depreciation-fixed-asset-disposal.md)
 ## [VAT statement](cz-vat-statement-details-for-czech-republic.md)			
