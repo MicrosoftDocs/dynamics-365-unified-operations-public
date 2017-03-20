@@ -4,8 +4,8 @@
 ## Introduction to Microsoft Dynamics 365
 ### [Get started with Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
 ### [Sign up for a subscription](/dev-itpro/dev-tools/sign-up-preview-subscription)
-### [How to get the on-premises version of Dynamics AX 2012](/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/operations/core/toc.json)
-## [Deploy a demo environment](/dev-itpro/dev-tools/deploy-demo-environment?toc=/dynamics365/operations/core/toc.json)
+### [How to get the on-premises version of Dynamics AX 2012](/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/operations/toc.json)
+## [Deploy a demo environment](/dev-itpro/dev-tools/deploy-demo-environment?toc=/dynamics365/operations/toc.json)
 
 ## Explore the user interface
 ### [Action search](get-started/action-search.md)
@@ -17,20 +17,20 @@
 ### [Personalize the user experience](get-started/personalize-user-experience.md)
 ### [Keyboard shortcuts](get-started/shortcut-keys.md)
 ### [Manage how pages display](get-started/window-management.md)
-### [Understand Lifecycle Services](/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/operations/core/toc.json)
+### [Understand Lifecycle Services](/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/operations/toc.json)
 
 ## Get help and support
-### [Help overview](/dev-itpro/get-started/help-overview?toc=/dynamics365/operations/core/toc.json)
-### [Connect Help](/dev-itpro/get-started/working-with-help?toc=/dynamics365/operations/core/toc.json)
+### [Help overview](/dev-itpro/get-started/help-overview?toc=/dynamics365/operations/toc.json)
+### [Connect Help](/dev-itpro/get-started/working-with-help?toc=/dynamics365/operations/toc.json)
 ### [View and export field descriptions](get-started/view-export-field-descriptions.md)
 
 ### Task guides and task recorder
-#### [Task Recorder](/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/core/toc.json)
-#### [Create documentation or training](/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/core/toc.json)
+#### [Task Recorder](/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
+#### [Create documentation or training](/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
 
 ## Find local features
 ### [Country/region-specific Help content](localizations/country_region.md)
-### [Tell Microsoft about new country/region regulatory features](/dev-itpro/localization-solutions/submit-localization-alerts?toc=/dynamics365/operations/core/toc.json)
+### [Tell Microsoft about new country/region regulatory features](/dev-itpro/localization-solutions/submit-localization-alerts?toc=/dynamics365/operations/toc.json)
 
 # [Configure your organization](organization-administration/organization-administration-home-page.md)
 ## [Organizations and organizational hierarchies](organization-administration/organizations-organizational-hierarchies.md)
@@ -74,4 +74,4 @@
 
 # Other resources
 ## [Dynamics 365 for Operations glossary](get-started/glossary.md)
-## [What's new or changed](/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/core/toc.json)
+## [What's new or changed](/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/toc.json)
