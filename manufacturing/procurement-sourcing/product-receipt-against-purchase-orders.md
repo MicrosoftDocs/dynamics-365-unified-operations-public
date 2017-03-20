@@ -54,5 +54,5 @@ See also
 
 [Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
 
-[Overview of vendor invoices](vendor-invoices-overview.md)
+[Overview of vendor invoices](/financials/accounts-payable/vendor-invoices-overview)
 

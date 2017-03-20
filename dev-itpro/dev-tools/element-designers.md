@@ -46,7 +46,15 @@ To open an element designer, follow these steps.
 
 ### Node properties
 
-When you select the individual nodes in the element designer, the **Properties** pane in Visual Studio shows the various properties for that node. Most of the characteristics of an element are controlled by these properties. For example, the following illustration shows the element designer for the FMCustomer table. Notice that the top-level node is selected. [![18\_DevoToolsConcept](./media/18_devotoolsconcept.png)](./media/18_devotoolsconcept.png) The following illustration shows the set of properties for the table, which corresponds to the top-level node that is selected. [![19\_DevoToolsConcept](./media/19_devotoolsconcept.png)](./media/19_devotoolsconcept.png) Each node for the element will have a set of properties that applies to it. To make it easier to find the properties that you want to work with, use the buttons at the top of the **Properties** pane to control how they are displayed. The properties can be arranged in the following ways.
+When you select the individual nodes in the element designer, the **Properties** pane in Visual Studio shows the various properties for that node. Most of the characteristics of an element are controlled by these properties. For example, the following illustration shows the element designer for the FMCustomer table. Notice that the top-level node is selected. 
+
+[![18\_DevoToolsConcept](./media/18_devotoolsconcept.png)](./media/18_devotoolsconcept.png)
+
+The following illustration shows the set of properties for the table, which corresponds to the top-level node that is selected. 
+
+[![19\_DevoToolsConcept](./media/19_devotoolsconcept.png)](./media/19_devotoolsconcept.png) 
+
+Each node for the element will have a set of properties that applies to it. To make it easier to find the properties that you want to work with, use the buttons at the top of the **Properties** pane to control how they are displayed. The properties can be arranged in the following ways.
 
 | Organization | Description                                                                                                   |
 |--------------|---------------------------------------------------------------------------------------------------------------|
@@ -57,11 +65,19 @@ When you select the individual nodes in the element designer, the **Properties**
 
 ### Working with nodes
 
-When you create or modify elements, you will often find that you must add or remove nodes for the element. For example, to add a field to a table, right-click the **Fields** node for the table element, point to **New**, and then click the type of field to add. [![20\_DevoToolsConcept](./media/20_devotoolsconcept.png)](./media/20_devotoolsconcept.png) To remove a node, right-click the new, and then click **Delete**. You can also perform other actions for a node. You rename a node, duplicate a node, or move the node up or down in the node list.
+When you create or modify elements, you will often find that you must add or remove nodes for the element. For example, to add a field to a table, right-click the **Fields** node for the table element, point to **New**, and then click the type of field to add. 
+
+[![20\_DevoToolsConcept](./media/20_devotoolsconcept.png)](./media/20_devotoolsconcept.png) 
+
+To remove a node, right-click the new, and then click **Delete**. You can also perform other actions for a node. You rename a node, duplicate a node, or move the node up or down in the node list.
 
 ### Searching element nodes
 
-Sometimes, the node list for an element can be long, so that it's difficult to find the specific node that you're looking for. Notice that there is a search bar at the top of each element designer. You can enter a string to search for, and the node list will be filtered to include only the nodes that match the search string. For example, the following illustration shows the element designer for the FMCustomer table after the “Email” search term was applied. Only nodes that have names that match that search term appear in the element designer. [![21\_DevoToolsConcept](./media/21_devotoolsconcept.png)](./media/21_devotoolsconcept.png) If you're working with a customization element or an extension element, you can prefix your search string with **c:** (for "customization elements") or **e:** (for "extension elements") to return only customizations or extensions, respectively. **Examples**
+Sometimes, the node list for an element can be long, so that it's difficult to find the specific node that you're looking for. Notice that there is a search bar at the top of each element designer. You can enter a string to search for, and the node list will be filtered to include only the nodes that match the search string. For example, the following illustration shows the element designer for the FMCustomer table after the “Email” search term was applied. Only nodes that have names that match that search term appear in the element designer. 
+
+[![21\_DevoToolsConcept](./media/21_devotoolsconcept.png)](./media/21_devotoolsconcept.png) 
+
+If you're working with a customization element or an extension element, you can prefix your search string with **c:** (for "customization elements") or **e:** (for "extension elements") to return only customizations or extensions, respectively. **Examples**
 
 -   **e:** returns all extensions that belong to the current element.
 -   **c:** returns all customizations that belong to the current element.
@@ -70,5 +86,7 @@ Sometimes, the node list for an element can be long, so that it's difficult to f
 
 ### Navigating to related elements
 
-The value of a node in the element designer is often a reference to another element. For example, a field node in a table element is typically based on an extended data type (EDT) element. When you right-click a node in the element designer, you can click the **Go to &lt;element&gt;** command to navigate to that related element. For example, when you right-click the **FuelType** node in the list of fields for the FMVehicle table, you can click **Go to Base Enum FMFuelType** to show the base enumeration that is used to define the field. [![22\_DevoToolsConcept](./media/22_devotoolsconcept.png)](./media/22_devotoolsconcept.png)
+The value of a node in the element designer is often a reference to another element. For example, a field node in a table element is typically based on an extended data type (EDT) element. When you right-click a node in the element designer, you can click the **Go to &lt;element&gt;** command to navigate to that related element. For example, when you right-click the **FuelType** node in the list of fields for the FMVehicle table, you can click **Go to Base Enum FMFuelType** to show the base enumeration that is used to define the field. 
+
+[![22\_DevoToolsConcept](./media/22_devotoolsconcept.png)](./media/22_devotoolsconcept.png)
 

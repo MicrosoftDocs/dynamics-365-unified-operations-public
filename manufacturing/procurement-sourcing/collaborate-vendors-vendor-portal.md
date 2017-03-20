@@ -82,5 +82,5 @@ See also
 
 [Configuration of security for vendor collaboration users](configure-security-vendor-portal-users.md)
 
-[Vendor collaboration invoicing workspace](vendor-portal-invoicing-workspace.md)
+[Vendor collaboration invoicing workspace](/financials/accounts-payable/vendor-portal-invoicing-workspace)
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Workforce Metrics content pack for Power BI
-description: This topic describes the Dynamics 365 for Operations - Workforce Metrics content pack for Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+title: Workforce Metrics Power BI content
+description: This topic describes the Dynamics 365 for Operations - Workforce Metrics Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-16 14 - 22 - 19
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Workforce Metrics content pack for Power BI
+# Workforce Metrics Power BI content
 
-This topic describes the Dynamics 365 for Operations - Workforce Metrics content pack for Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+This topic describes the Dynamics 365 for Operations - Workforce Metrics Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 
 Accessing the content pack
 --------------------------

@@ -52,7 +52,7 @@ Information from the usage profile is also used in the project summary report th
 | Total peak concurrent users             | Highest among: Peak of total user load chart, question from Deployment details, and sum of the questions from all the Business process questionnaires.      |
 
 ## Prerequisites
-If you want to import process data from Business process modeler, you must first complete the modeling of the organization. For more information, see [Business process modeler (Lifecycle Services, LCS)](business-process-modeler-lcs.md).
+If you want to import process data from Business process modeler, you must first complete the modeling of the organization. For more information, see [Business process modeler (Lifecycle Services, LCS)](/lifecycle-services/business-process-modeler-lcs.md).
 
 ## Import business processes from BPM
 We recommend that you start by importing data from Business process modeler, and then add additional data manually.

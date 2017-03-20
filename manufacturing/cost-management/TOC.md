@@ -1,9 +1,5 @@
-
-# [Cost management home page](cost-management.md)
 # Power BI content pack
-## [Cost management content pack](..\..\dev-itpro\analytics-bi-reporting\cost-management-content-pack?toc=/manufacturing/toc.json)
-## [Test Cost management content pack](\dev-itpro\analytics-bi-reporting\cost-management-content-pack?toc=/manufacturing/toc.json)
-## [Another test Cost management content pack](\dev-itpro\analytics-bi-reporting\cost-management-content-pack)
+## [Cost management content pack](/dev-itpro/analytics-bi-reporting/cost-management-content-pack?toc=/manufacturing/toc.json)
 # Predetermined cost
 ## [Costing sheet](costing-sheets.md)
 ## [Costing version](costing-versions.md)

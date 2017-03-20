@@ -39,7 +39,7 @@ Prerequisites
 
 | Prerequisite                                                         | Description                                                                                                                                        |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Read about the Microsoft Dynamics 365 for Operations mobile platform | [Dynamics 365 for Operations mobile platform](mobile-platform.md)                                   |
+| Read about the Microsoft Dynamics 365 for Operations mobile platform | [Dynamics 365 for Operations mobile platform](/dev-itpro/mobile-apps/mobile-platform)                                   |
 | Dynamics 365 for Operations                                          | An environment that has Microsoft Dynamics 365 for Operations version 1611 and Microsoft Dynamics for Operations platform update 3 (November 2016) |
 | Hotfix KB 3215650                                                    | Install the hotfix to enable the workspaces that are provided in your Microsoft Dynamics 365 for Operations.                                       |
 | Mobile device that has the Dynamics 365 for Operations app installed | Download the Dynamics 365 for Operations app from your mobile app store.                                                                           |

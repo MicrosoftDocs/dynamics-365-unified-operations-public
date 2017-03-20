@@ -56,7 +56,7 @@ The following resources provide information about the Dynamics 365 for Operation
 ## Help system
 The following resources provide an overview of the Help system and explain how to view field descriptions.
 
--   [Getting started with Help](/dev-itpro/system-administration/help-get-started)
+-   [Getting started with Help](/dev-itpro/system-administration/help-overview)
 -   [Connecting the help system](/dev-itpro/get-started/working-with-help)
 -   [How to view and export field descriptions](view-export-field-descriptions.md)
 

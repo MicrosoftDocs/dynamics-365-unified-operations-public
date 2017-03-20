@@ -65,8 +65,13 @@ In this tutorial, you will learn how create a subscription. This subscription wi
 **Important:** Only one person (tenant administrator) in an organization needs to perform this activity. If you're not the person who is subscribing to this release, wait until your organization has been signed up and you've received your user credentials. Then continue with the [Deploy environments](#_Deploy_environments) procedure.
 
 1.  Microsoft Dynamics 365 for Operations is available only to existing Microsoft Dynamics 365 channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. Existing customers can find details on how to get access to trials [here](https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview), and partners can find the details [here](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview).
-2.  On the **Account setup** page, in the **Country or region** field, select the country. [![Country or region field](./media/countryregionfield.png)](./media/countryregionfield.png)
-3.  Follow the wizard and prompts to complete the sign-up, until you get to the last step. [![You're ready to go...](./media/wizardprompt.png)](./media/wizardprompt.png)
+2.  On the **Account setup** page, in the **Country or region** field, select the country. 
+
+    [![Country or region field](./media/countryregionfield.png)](./media/countryregionfield.png)
+    
+3.  Follow the wizard and prompts to complete the sign-up, until you get to the last step. 
+
+    [![You're ready to go...](./media/wizardprompt.png)](./media/wizardprompt.png)
 
 ## Start a new project in Lifecycle Services
 To use Lifecycle services to manage your environments, you need to create a new project.
@@ -74,17 +79,28 @@ To use Lifecycle services to manage your environments, you need to create a new 
 1.  Go to <https://lcs.dynamics.com/Logon/Index>
 2.  Click **Sign in**.
 3.  **Login** with the account you used to subscribe.
-4.  Click the **+ **icon to create a new project. [![1](./media/11-1024x473.jpg)](./media/11.jpg)
-5.  Select the project type. [![2](./media/21.jpg)](./media/21.jpg)
-6.  Enter the project information and then click **Create**.[![3](./media/31.jpg)](./media/31.jpg)The new project for managing your instance is now created.
+4.  Click the **+ **icon to create a new project. 
 
-## ![ProjectWorkspace](./media/projectworkspace.jpg)
-Add users to Lifecycle Services
--------------------------------
+    [![1](./media/11-1024x473.jpg)](./media/11.jpg)
+    
+5.  Select the project type. 
+
+    [![2](./media/21.jpg)](./media/21.jpg)
+    
+6.  Enter the project information and then click **Create**.
+
+    [![3](./media/31.jpg)](./media/31.jpg)The new project for managing your instance is now created.
+
+    ![ProjectWorkspace](./media/projectworkspace.jpg)
+    
+# Add users to Lifecycle Services
 
 You're already set up as a user of your Lifecycle Services project. If you've also added other Office 365 users you must add them to this project. Other administrators and developers will then be able to deploy their own environments. These Lifecycle Services users are team members who will actively work on the implementation. Don't confuse them with end users. Start on the **Lifecycle Services Project** page.
 
-1.  On the far right of the page, click the **Project users** tile. [![Pic2](./media/pic2.jpg)](./media/pic2.jpg)
+1.  On the far right of the page, click the **Project users** tile. 
+
+    [![Pic2](./media/pic2.jpg)](./media/pic2.jpg)
+    
 2.  In the upper left, click the plus sign (**+**) to add a new user.
 3.  In the **Email** field, enter the email address of the user to add. This should be the Office 365 organization email address that you created earlier.
 4.  In the **Project role** field, select **Project Owner**.
@@ -97,9 +113,14 @@ Environments should be deployed to an existing Azure subscription. **Note:** Eac
 -   Deploy to Microsoft cloud services (Azure)
 -   Download a local VHD
 
-Start on the **Lifecycle Services Project** page. [![pic4](./media/pic4.jpg)](./media/pic4.jpg)
+Start on the **Lifecycle Services Project** page. 
 
-1.  In the **Environments** section, click the plus sign (**+**). The **Microsoft Azure setup** dialog box opens. [![pic5](./media/pic5.jpg)](./media/pic5.jpg)
+[![pic4](./media/pic4.jpg)](./media/pic4.jpg)
+
+1.  In the **Environments** section, click the plus sign (**+**). The **Microsoft Azure setup** dialog box opens. 
+
+    [![pic5](./media/pic5.jpg)](./media/pic5.jpg)
+    
 2.  Enter your Azure subscription ID. This is available on Azure Management Portal (<https://manage.windowsazure.com/>), under the **Settings** button in the lower left.
 3.  Click **Next**.
 4.  Download the Azure Management Certificate to a local folder on your computer, and then upload it to Azure Management Portal (go to **Settings** &gt; **Management Certificates**). This certificate will enable Lifecycle Services to communicate with Azure on your behalf.
@@ -108,9 +129,15 @@ Start on the **Lifecycle Services Project** page. [![pic4](./media/pic4.jpg)](./
 7.  Click **Connect**.
 8.  In the list of available topologies, select the topology to deploy. You can click either the **Download** link to download the VHD or **Next** to deploy on Azure. Azure is the preferred path.
 9.  Enter the environment name.
-10. Read the terms, and then select the check box to indicate you understand them. [![pic6](./media/pic6.jpg)](./media/pic6.jpg)
+10. Read the terms, and then select the check box to indicate you understand them. 
+
+    [![pic6](./media/pic6.jpg)](./media/pic6.jpg)
+    
 11. Click **Next**.
-12. Confirm the details, and then click **Deploy**. **Note:** Developers and administrators who will use their own environments must sign in and repeat these steps. After you deploy your environment, it will be available in the **Environments** list. [![pic7](./media/pic7.jpg)](./media/pic7.jpg)
+12. Confirm the details, and then click **Deploy**. **Note:** Developers and administrators who will use their own environments must sign in and repeat these steps. After you deploy your environment, it will be available in the **Environments** list. 
+
+    [![pic7](./media/pic7.jpg)](./media/pic7.jpg)
+    
 13. Click the environment to view details about the deployment status. The first deployment will take a few hours, but each subsequent deployment will be much faster.
 14. When the deployment status changes to **Deployed**, click **Login **to connect to the client, or click the VM name to the development machine by using Remote Desktop. After the deployment is completed, you can find the base URL, and also the information that you require to connect to the environment via Remote Desktop.
 
@@ -123,11 +150,22 @@ Lifecycle Services is the starting point for performing online administrative ac
 
 ### Explore the Lifecycle Services project
 
-1.  Review the methodology, and complete the tasks and phases as you progress through the life cycle. [![pic8](./media/pic8.jpg)](./media/pic8.jpg)[](./media/methodologyreview.png) **Phases and tasks** – Lets you view tools and resources that are available throughout your ERP experience.
-2.  Scroll to the right, and review the tiles.[![pic9](./media/pic9.jpg)](./media/pic9.jpg)The available tiles include various tools and services in Lifecycle Services. They also include the following additional tiles:
+1.  Review the methodology, and complete the tasks and phases as you progress through the life cycle. 
+
+    [![pic8](./media/pic8.jpg)](./media/pic8.jpg)[](./media/methodologyreview.png) 
+    
+    **Phases and tasks** – Lets you view tools and resources that are available throughout your ERP experience.
+2.  Scroll to the right, and review the tiles.
+
+    [![pic9](./media/pic9.jpg)](./media/pic9.jpg)
+    
+    The available tiles include various tools and services in Lifecycle Services. They also include the following additional tiles:
     -   **My subscription** – The Office 365 subscription management portal is where you can view and work with your online subscriptions. By clicking **User and Groups** in the left navigation section of the page, you can also manage your online users. **Note:** You must be a member of the **Global Administrator** role for your organization’s Microsoft Online tenant to access this link.
     -   **Feedback and bugs** – This tile opens the **General Feedback** page in Microsoft Connect. Use this page to record bugs, design change requests, feature requests, and suggestions.
-    -   **Office 365 users** – This tile opens the **Users and groups** page in Office 365 admin center. You can add, update, and remove users, reset passwords, and assign licenses for other services. **Note:** You must be a member of the **Global Administrator** role for your organization’s Microsoft Online Services tenant to access this link. The installing user is always a global administrator, but others must be added to this role. [![Active users](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+    -   **Office 365 users** – This tile opens the **Users and groups** page in Office 365 admin center. You can add, update, and remove users, reset passwords, and assign licenses for other services. **Note:** You must be a member of the **Global Administrator** role for your organization’s Microsoft Online Services tenant to access this link. The installing user is always a global administrator, but others must be added to this role. 
+        
+        [![Active users](./media/activeusersadmin.png)](./media/activeusersadmin.png)
+        
 
 
 

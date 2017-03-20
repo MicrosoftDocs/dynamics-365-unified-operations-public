@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Architecture changes in Dynamics 365 for Operations
+# Application stack and server architecture
 
 The application stack is divided into three separate models -  Application Platform, Application Foundation, and Application Suite. 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Maintain the Dynamics AX Intelligent Data Management Framework (AX 2012)
+title: Install Data import/export framework for AX 2012 R3
 description: This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3. 
 author: kfend
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 2012 R3 CU8
 
 ---
 
-# Maintain the Dynamics AX Intelligent Data Management Framework (AX 2012)
+# Install the Data import/export framework for AX 2012 R3
 
 This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3. 
 

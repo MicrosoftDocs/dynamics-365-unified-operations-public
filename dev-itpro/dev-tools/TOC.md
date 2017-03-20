@@ -2,7 +2,7 @@
 # [Application stack and server architecture](application-stack-server-architecture.md)
 # [Get an evaluation copy](get-evaluation-copy.md)
 # [Sign up for a subscription](sign-up-preview-subscription.md)
-# [Access Dynamics 365 for Operations instances](..\dev-tools\access-instances.md)
+# [Access Dynamics 365 for Operations instances](../dev-tools/access-instances.md)
 # [Development system requirements](development-system-requirements.md)
 # Fleet Management sample application
 ## [Fleet Management sample application](fleet-management-sample.md)
@@ -16,7 +16,7 @@
 ## [Configure a one-box development environment](configure-developer-vm.md)
 ## [Create a model and data model elements](create-data-model-elements.md)
 ## [Create a new user on a development machine](enable-development-machine.md)
-## [Customization Analysis Report (dev-tools\CAR)](customization-analysis-report.md)
+## [Customization Analysis Report](customization-analysis-report.md)
 ## [Development tools](development-tools.md)
 ## [Element designers](element-designers.md)
 ## [Element usage](element-usage.md)
@@ -30,11 +30,12 @@
 # X++ programming language
 ## [X++ and debugger features ](new-x-debugger-features.md)
 ## [Debug X++ against a copy of a production database](debug-x-issue-against-copy-of-production.md)
+## [Debug X++ code](debug-xpp.md)
 ## [Write business logic using C# and X++ source code](write-business-logic.md)
 ## [Programming language support](programming-language-support.md)
-## [Debug X++ code](debug-xpp.md)
 ## [LINQ provider for C#](linq-provider-c.md)
 ## [Authoring best practices](author-best-practice-rules.md)
+## [Application Explorer properties](../dev-reference/application-explorer-aot-properties.md)
 ## X++ language reference
 ### [X++ language reference](../dev-reference/xpp-language-reference.md)
 ### [X++ variables and data types](../dev-reference/xpp-variables-data-types.md)
@@ -47,7 +48,6 @@
 ### [X++ attribute classes](../dev-reference/xpp-attribute-classes.md)
 ### [X++ and C# comparison](../dev-reference/xpp-cs-comparison.md)
 ### [X++ syntax](../dev-reference/xpp-syntax.md)
-## [Application Explorer properties](../dev-reference/application-explorer-aot-properties.md)
 # Compile-time functions
 ## [X++ compile-time functions](../dev-reference/xpp-compile-time-functions.md)
 # Run-time functions
@@ -101,16 +101,16 @@
 ## [X Classes](../dev-reference/x-classes.md)
 # Customize with extensions and overlayering
 ## Extensibility home page
-## [Customize model elements using extensions](../extensions-overlayering/..\extensions-overlayering\customize-model-elements-extensions.md)
-## [Customize with extensions and overlayering](customization-overlayering-extensions.md)
-## [Class extensions](../extensions-overlayering\class-extensions.md)
+## [Customize model elements using extensions](../extensibility/customize-model-elements-extensions.md)
+## [Customize with extensions and overlayering](../extensibility/customization-overlayering-extensions.md)
+## [Class extensions](../extensibility/class-extensions.md)
 ## Database synchronization
 # Move packages between environments
 ## Create and apply a deployable package
 # Performance
 ## Performance home page
 ## [Take a trace using Trace parser](../perf-test/trace-trace-tutorial.md)
-## [PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
+## [PerfSDK and multiuser testing with Visual Studio Team Services](../perf-test/perfsdk-tutorial.md)
 ## [Diagnose problems and analyze performance issues using Trace parser](../perf-test/trace-parser.md)
 ## [Performance timer](../perf-test/performance-timer.md)
 # Testing support in Visual Studio

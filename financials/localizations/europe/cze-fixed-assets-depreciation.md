@@ -42,12 +42,12 @@ Fixed assets depreciation for the legal requirements in the Czech Republic inc
 ## Depreciation percentages and coefficients
 Per Czech Republic legislation, fixed assets are grouped in depreciation groups. For each depreciation group, legislation has defined specific values for the depreciation rate for the first year, a depreciation rate for subsequent years, and an adjusted acquisition price. To meet the legal requirements in the Czech Republic, different values of the depreciation rate for the first year, for next years, and for the adjusted acquisition price must be set up in different depreciation groups. The **Depreciation groups** page contains the following options.
 
-|                                          |                                                                                                                                                                                                                                                                                                                                                                               |
-|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Field**                                | **Description**                                                                                                                                                                                                                                                                                                                                                               |
-| **Start date**                           | Enter the date when the depreciate group will start.                                                                                                                                                                                                                                                                                                                          |
-| **Depreciation rate for the first year** | Enter the depreciation percentage for the regular CZ depreciation method or the depreciation coefficient for the accelerated CZ depreciation method used in the first depreciation year of this group.                                                                                                                                                                        |
-| **Depreciation rate for next years**     | Enter the depreciation percentage for the regular CZ depreciation method or the depreciation coefficient for the accelerated CZ depreciation method for depreciation in years following the year of acquisition.                                                                                                                                                              |
+| |  |
+|-----|------|
+| **Field**                                | **Description**|
+| **Start date**                           | Enter the date when the depreciate group will start.|
+| **Depreciation rate for the first year** | Enter the depreciation percentage for the regular CZ depreciation method or the depreciation coefficient for the accelerated CZ depreciation method used in the first depreciation year of this group. |
+| **Depreciation rate for next years**     | Enter the depreciation percentage for the regular CZ depreciation method or the depreciation coefficient for the accelerated CZ depreciation method for depreciation in years following the year of acquisition.|
 | **Adjusted acquisition price**           | Enter the depreciation percentage for the regular CZ depreciation method or the depreciation coefficient for the accelerated CZ depreciation method that is extended by an acquisition adjustment. This percentage or coefficient is valid from the year of the acquisition adjustment. All positive and negative adjustments are included in the adjusted acquisition price. |
 
 ## Czech Republicspecific depreciation methods
@@ -56,7 +56,7 @@ For users in legal entities in Czech Republic, there are additional depreciatio
 -   Regular CZ
 -   Accelerated CZ
 
-For more information about depreciation methods, see [Fixed asset depreciation](fixed-asset-depreciation.md).
+For more information about depreciation methods, see [Fixed asset depreciation](/financials/fixed-assets/fixed-asset-depreciation).
 
 ### Regular CZ depreciation method
 
@@ -119,6 +119,3 @@ This example shows depreciation calculated using the accelerated CZ method of d
 | 5                   | (2\* 74583) / (4 - 0) = 37 292   |
 | 6                   | (2\* 37292) / (4 - 1) = 24 861   |
 | 7                   | (2\* 12431) / (4 - 2) = 12 430   |
-
- 
-

@@ -34,19 +34,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This page lists the resources that are available for Retail and commerce in Dynamics 365 for Operations - Retail.
 
-Dynamics 365 for Operations - Retail delivers a complete shopping experience, with a seamless and differentiating omni-channel solution that is modern, mobile, and global. End-to-end capabilities, from modern point of sale (POS) software solutions, store operations, merchandising, e-commerce, call center, marketing, and customer care, to supply chain, financials, and more, can be deployed in the way that makes the most sense for your business. [Retail for IT pros and developers home page](dev-retail-home-page.md) [Commerce essentials home page](commerce-essentials-landing.md) [Call center home page](call-center.md) [Modern Point of sale (MPOS) and Cloud POS home page](//ax.help.dynamics.com/en/wiki/point-of-sale-pos-and-modern-point-of-sale-mpos/)
+Dynamics 365 for Operations - Retail delivers a complete shopping experience, with a seamless and differentiating omni-channel solution that is modern, mobile, and global. End-to-end capabilities, from modern point of sale (POS) software solutions, store operations, merchandising, e-commerce, call center, marketing, and customer care, to supply chain, financials, and more, can be deployed in the way that makes the most sense for your business. [Retail for IT pros and developers home page](dev-itpro/dev-retail-home-page.md) [Commerce essentials home page](commerce-essentials.md) [Call center home page](call-center-functionality.md) [Modern Point of sale (MPOS) and Cloud POS home page](//ax.help.dynamics.com/en/wiki/point-of-sale-pos-and-modern-point-of-sale-mpos/)
 
 ## Channel setup and management
 -   [Initialize seed data in a new Retail environment](enable-configure-retail-functionality.md)
 -   [Define and maintain retail channels](define-maintain-retail-channels.md)
 -   [Create financial dimensions for retail channels and configure dimension values on stores](http://ax.help.dynamics.com/en/wiki/create-financial-dimensions-for-retail-channels-and-configure-dimension-values-on-stores/)(Task guide)
 -   [Online stores](http://ax.help.dynamics.com/en/wiki/online-stores-2/)
--   [Configure an online store](configure-online-store.md)
+-   [Configure an online store](dev-itpro/configure-online-store.md)
 -   [P](payment-methods.md)[ayment methods](payment-methods.md)
 -   [Info codes ](info-codes-retail.md)
 -   [Receipt templates and printing](receipt-templates-printing.md)
 -   [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md)
--   [Define retail channel communications (Commerce Data Exchange)](define-retail-channel-communications-cdx.md)
+-   [Define retail channel communications (Commerce Data Exchange)](dev-itpro/define-retail-channel-communications-cdx.md)
 -   [Post online sales and payments](http://ax.help.dynamics.com/en/wiki/posting-of-online-sales-and-payments/) (Task guide)
 -   [Retail time and attendance](retail-time-attendance.md)
 
@@ -100,9 +100,6 @@ Dynamics 365 for Operations - Retail delivers a complete shopping experience, wi
 -   [Analyze store performance](store-performance-information.md)
 -   [Set up RFM analysis](set-up-rfm-analysis.md)
 
-## []()Additional resources
-
--   For information about Dynamics 365 for Operations, see [Microsoft eLearning](https://mbs2.microsoft.com/members/elearning/dynamicstrainingcert.aspx) (requires CustomerSource account).
 
  
 

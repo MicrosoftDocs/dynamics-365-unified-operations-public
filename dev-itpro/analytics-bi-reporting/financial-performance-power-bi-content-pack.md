@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Financial Performance content pack for Power BI
+title: Financial Performance Power BI content
 description: This topic describes the Microsoft Dynamics 365 for Operations Financial Performance content pack for Microsoft Power BI. It describes the dashboard and reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Financial Performance content pack for Power BI
+# Financial Performance Power BI content
 
 This topic describes the Microsoft Dynamics 365 for Operations Financial Performance content pack for Microsoft Power BI. It describes the dashboard and reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 

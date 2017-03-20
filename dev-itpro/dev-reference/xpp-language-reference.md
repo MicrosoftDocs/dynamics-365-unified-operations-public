@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72181
@@ -49,7 +49,7 @@ The X++ language programming guide is divided into these sections:
 + [X++ attribute classes](xpp-attribute-classes.md) 
 + [X++ classes and methods](xpp-classes-methods.md) 
 + [X++ data selection and manipulation](xpp-data-query.md) 
-+ [X++ macros](macros-xpp.md) 
++ [X++ macros](xpp-macros.md) 
 + [X++ operators](xpp-operators.md) 
 + [X++ statements and loops](xpp-statements-loops.md)
 + [X++ variables and data types](xpp-variables-data-types.md)

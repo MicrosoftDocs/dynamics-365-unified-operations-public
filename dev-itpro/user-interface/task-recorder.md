@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create documentation or training using Task recordings
@@ -102,18 +102,18 @@ You can download and edit Microsoft's task recordings to use them for your own H
 11. Choose how you want to save the task recording.
 
 ## Include your task recordings in the Help pane
-To show your own custom task recordings in the Help pane so that they can be played back as task guides or viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system.](work-with-help.md#connecting-the-help-system)
+To show your own custom task recordings in the Help pane so that they can be played back as task guides or viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connect the Help system.](../get-started/help-connect.md)
 
 See also
 --------
 
-[Dynamics 365 for Operations Help — Getting started](..\get-started\help-get-started.md)
+[Dynamics 365 for Operations Help](..\get-started\help-overview.md)
+
+[Connect Help](..\get-started\help-connect.md)
 
 [Task Recorder in Dynamics 365 for Operations](task-recorder.md)
 
-[Recently added editing features in task recorder](\core\get-started\recently-added-editing-features-in-task-recorder)
-
-[Dynamics 365 for Operations Help architecture](..\get-started\work-with-help.md)
+[Recently added task recorder features](\core\get-started\recently-added-editing-features-in-task-recorder)
 
 [Creating new training libraries for Dynamics AX within Lifecycle Services using the Task recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 

@@ -66,7 +66,7 @@ There may be additional components in use in your environment which require furt
 
 #### Additional steps for Management Reporter
 
-Reset the management reporter database by following the steps in this topic [Resetting the financial reporting data mart after restoring a database](reset-financial-reporting-datamart-after-restore.md) and then reimport the building block groups you exported in an earlier step.
+Reset the management reporter database by following the steps in this topic [Resetting the financial reporting data mart after restoring a database](../analytics-bi-reporting/reset-financial-reporting-datamart-after-restore.md) and then reimport the building block groups you exported in an earlier step.
 
 ## Limitations
 Existing document handling documents which are stored in Azure blob storage will be lost during this upgrade process. If you have custom code which utilises the X++ class FileUpload to place files in blob storage, these documents will also be lost.

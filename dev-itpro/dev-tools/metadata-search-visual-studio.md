@@ -37,10 +37,18 @@ This article describes how to use metadata search to search your code and metada
 Given the large volume of the code base and metadata, it is often necessary to find things in the code that meet a certain criteria. Often times you may not know the name of the metadata element that contains the pattern or meets the criteria. Metadata search is exposed in Visual Studio through two user interfaces: the Metadata Search tool window and the Navigate To window.
 
 ## Metadata search tool window
-You can access the Metadata search tool window from the **Dynamics 365 &gt; Metadata Search** menu command. Enter your search query to start the search. Results will start populating in the window asynchronously as you type. You can double-click any result line to navigate to the corresponding X++ code or metadata that matches your search query.   [![Posted\_MetaSearch](./media/posted_metasearch.png)](./media/posted_metasearch.png) You can also select one or more results, right-click, and then add these elements to a project. You don’t need to wait for the search to complete before you start interacting with the search results. [![AddNewProject\_MetaSearch](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
+You can access the Metadata search tool window from the **Dynamics 365 &gt; Metadata Search** menu command. Enter your search query to start the search. Results will start populating in the window asynchronously as you type. You can double-click any result line to navigate to the corresponding X++ code or metadata that matches your search query.   
+
+[![Posted\_MetaSearch](./media/posted_metasearch.png)](./media/posted_metasearch.png) 
+
+You can also select one or more results, right-click, and then add these elements to a project. You don’t need to wait for the search to complete before you start interacting with the search results. 
+
+[![AddNewProject\_MetaSearch](./media/addnewproject_metasearch.png)](./media/addnewproject_metasearch.png)
 
 ## Navigate To window
-The **Navigate To** window is invoked using the **Ctrl+‘,’** (the comma character) shortcut keys. Pressing **Ctrl+‘,’** displays the query entry box in top right corner of the Visual Studio main document window. You can also access the **Navigate To** window from the Visual Studio **Edit** menu. Enter you search query and see the results appear as you type. A progress indicator will stop when the search is complete. You don’t need to wait for the search to complete to start interacting with the results. [![TypeForm\_MetaSearch](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)
+The **Navigate To** window is invoked using the **Ctrl+‘,’** (the comma character) shortcut keys. Pressing **Ctrl+‘,’** displays the query entry box in top right corner of the Visual Studio main document window. You can also access the **Navigate To** window from the Visual Studio **Edit** menu. Enter you search query and see the results appear as you type. A progress indicator will stop when the search is complete. You don’t need to wait for the search to complete to start interacting with the results. 
+
+[![TypeForm\_MetaSearch](./media/typeform_metasearch.png)](./media/typeform_metasearch.png)
 
 ## Search query syntax
 This section describes the search query syntax and provides example queries.
@@ -64,12 +72,14 @@ The search query is a search string that consists of a set of filters in this ge
 -   **Property**: Apply property filters. Each comma-separated value should be in the form *property\_name=property\_value*
 -   **Code**: Filter using code snippets, use quotes around code snippets. The matching source code is the elements that contain the specified code snippet.
 
-You can get help about using filter and filter syntax by opening the drop-down menu available in the search box.![metadatasearchfilter](./media/metadatasearchfilter.jpg)
+You can get help about using filter and filter syntax by opening the drop-down menu available in the search box.!
+
+[metadatasearchfilter](./media/metadatasearchfilter.jpg)
 
 ## Examples
-|                                                                                           |                                                                                                                                              |
-|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+
 | **Query string**                                                                          | **What it does**                                                                                                                             |
+|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | TrvExpTable                                                                               | If the token is by itself, it is assumed to be the name. So this will find everything in the application that has ‘TrvExpTable’ in the name. |
 | type:form ccount                                                                          | Finds all forms that have ‘ccount’ in their names.                                                                                           |
 | type:form property:formtemplate=listpage                                                  | Finds all forms that contain the property ‘FormTemplate’ equal to ‘ListPage’.                                                                |
