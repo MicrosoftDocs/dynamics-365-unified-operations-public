@@ -228,7 +228,7 @@ This feature works independently of costing methods that are assigned to the pro
 <td>The user can choose the detail level and page setup for a report by using the Print option in the financial report in the Dynamics AX client.</td>
 <td>Printed reports print in the way users expect instead of printing a web page.</td>
 </tr><tr class="odd">
-<td>Analyze financial data by using the “Monitor financial performance” content pack for Power BI.</td>
+<td>Analyze financial data by using the “Monitor financial performance” Power BI content.</td>
 <td>Not available</td>
 <td>On PowerBI.com, select **Get Data**, and then select the **Dynamics AX – Financial performance** content pack. Enter the URL for your Dynamics AX endpoint to see your data reflected in the dashboard.</td>
 <td>In three to four clicks, organizations can deploy a Power BI dashboard that contains important financial data. Content can be personalized by the organization.</td>
@@ -342,7 +342,7 @@ This feature works independently of costing methods that are assigned to the pro
 <tr class="even">
 <td>Access guided procedural Help (task guides) and conceptual topics by clicking **Help**.</td>
 <td>The AX 2012 Help system points to HTML topics that are stored on a local web server. Customers and partners can create their own Help.</td>
-<td>The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from the Microsoft wiki. For more information, see [Dynamics AX Help - Getting Started](help-get-started.md) and [New task guides available (February 2016)](new-task-guides-available-february-2016.md).</td>
+<td>The Help system in the current version of Dynamics AX displays task guides that are stored in Microsoft Dynamics Lifecycle Services (LCS) BPM. The Help system also displays topics from the Microsoft wiki. For more information, see [Dynamics AX Help - Getting Started](help-overview.md) and [New task guides available (February 2016)](new-task-guides-available-february-2016.md).</td>
 <td>Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. The wiki provides a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.</td>
 </tr>
 </tbody>
@@ -705,7 +705,7 @@ The <strong>Catalog management</strong> workspace enables the following functi
 <td>These reports let customers have more BI to predict trends, uncover insights, and operate at continual peak performance.</td>
 </tr>
 <tr class="odd">
-<td>Analyze retail channel sales data by using the “Monitor Retail Channel performance” content pack for Power BI.</td>
+<td>Analyze retail channel sales data by using the “Monitor Retail Channel performance” Power BI content.</td>
 <td>Not available</td>
 <td>On PowerBI.com, select <strong>Get Data</strong>, and then select the <strong>Dynamics AX – Retail Channel performance</strong> content pack. Enter the URL for your Dynamics AX endpoint to see your data reflected in the dashboard.</td>
 <td>In three to four clicks, organizations can deploy a Power BI dashboard that contains important financial data. Content can be personalized by the organization. Additionally, users can embed Power BI dashboard tiles into their personalized workspaces in Dynamics AX, so that they can then see analytical information at a glance.</td>

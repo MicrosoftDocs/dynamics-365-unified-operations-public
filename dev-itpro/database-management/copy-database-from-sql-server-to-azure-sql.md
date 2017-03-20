@@ -37,7 +37,7 @@ This topic describes how to move a Dynamics 365 for Operations database from an 
 Overview
 --------
 
-This procedure can be used to move a Microsoft Dynamics 365 for Operations database from an environment that runs on Microsoft SQL Server (Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Tier 2 or higher). This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment. This process isn't suitable for all situations. For example, you should not use this process to import data for a new legal entity for an existing live deployment. In those situations, we recommend that you use [process data packages](process-data-packages-lcs-solutions.md) or [data entity data packages](..\data-entities\data-entities-data-packages.md). Here is the supported procedure for bringing a golden database into the production environment:
+This procedure can be used to move a Microsoft Dynamics 365 for Operations database from an environment that runs on Microsoft SQL Server (Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Tier 2 or higher). This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment. This process isn't suitable for all situations. For example, you should not use this process to import data for a new legal entity for an existing live deployment. In those situations, we recommend that you use [process data packages](../lifecycle-services/process-data-packages-lcs-solutions.md) or [data entity data packages](..\data-entities\data-entities-data-packages.md). Here is the supported procedure for bringing a golden database into the production environment:
 
 1.  A customer or partner exports the database from SQL Server.
 2.  The customer or partner imports the database to a sandbox environment that runs on an Azure SQL database. **Note:** If you're using Retail components raise a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that the Service Engineering Team update the imported database to be reconfigured for the new environment.
@@ -233,7 +233,7 @@ Run the following script against the imported database. The script performs the 
 
 ### Reset the Financial Reporting database
 
-If using Financial Reporting (formerly Management Reporter) then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](reset-financial-reporting-datamart-after-restore.md).
+If using Financial Reporting (formerly Management Reporter) then follow the steps to reset the financial reporting database in [Resetting the financial reporting data mart after restoring a database](../analytics-bi-reporting/reset-financial-reporting-datamart-after-restore.md).
 
 ### If you're using Retail components
 

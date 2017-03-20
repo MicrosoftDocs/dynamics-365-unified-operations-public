@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Purchase spend analysis content pack for Power BI
+title: Purchase spend analysis Power BI content
 description: This topic describes what is included in the Purchase spend analysis content pack for Microsoft Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that are used to build the content pack.
 author: YuyuScheller
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Purchase spend analysis content pack for Power BI
+# Purchase spend analysis Power BI content
 
 This topic describes what is included in the Purchase spend analysis content pack for Microsoft Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that are used to build the content pack.
 

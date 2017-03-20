@@ -57,8 +57,8 @@ Lifecycle Services
 ## Database administration
 -   [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](..\database-management\copy-database-from-azure-sql-to-sql-server.md)
 -   [Copy a Microsoft Dynamics 365 for Operations database from SQL Server to an Azure SQL Database environment](..\database-management\copy-database-from-sql-server-to-azure-sql.md)
--   [Request a point-in-time database restore on a non-production environment](../database-management/request-a-point-in-time-db-restore.md)
--   [Retain a copy of a Dynamics 365 for Operations database to restore later](../migration-upgrade/retain-copy-dynamics-365-operations-database.md)
+-   [Request a point-in-time database restore on a non-production environment](../database-management/request-point-in-time-restore.md)
+-   [Retain a copy of a Dynamics 365 for Operations database to restore later](../database-management/copy-operations-database.md)
 
 ## Security
 -   [Role-based security](role-based-security.md)

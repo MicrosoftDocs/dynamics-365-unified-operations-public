@@ -54,7 +54,7 @@ You can enter vendor invoices manually or receive them electronically through a 
 -   [Create vendor invoices using a payment proposal](create-vendor-payments-payment-proposal.md)
 -   [Reverse a vendor payment](reverse-vendor-payment.md)
 -   [Vendor payments for a partial amount](vendor-payments-partial-amount.md)
--   [Prepayment invoices and prepayments overview](../cash-bank-management/prepayments-invoices-vs-prepayments.md)
+-   [Prepayment invoices and prepayments overview](/accounts-payable/prepayments-invoices-vs-prepayments.md)
 -   [Scenario: Settle a partial vendor payment and settle the final payment in full before the discount date](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 -   [Scenario: Settle a partial vendor payment before the discount date with a final payment after the discount date](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 -   [Scenario: Settle a partial vendor payment that has discounts on vendor credit notes](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)

@@ -37,12 +37,12 @@ This topic lists Help content for country/region-specific functionality in Dynam
 Localization requirements
 -------------------------
 
--   [Regulatory watch and regulatory update communication](/dev-itpro/localization-solutions/localization-requirements-regulatory-watch-communication)
--   [Separate localization models](/dev-itpro/localization-requirements-separate-localization-models)
--   [Apply country/region context](/dev-itpro/localization-requirements-apply-country-context)
--   [Regulatory certifications](/dev-itpro/localization-requirements-regulatory-certifications)
--   [Classify localization features](/dev-itpro/localization-requirements-classify-localization-features)
--   [Create an electronic reporting configuration](/dev-itpro/localization-requirements-electronic-reporting-configuration)
+-   [Regulatory watch and regulatory update communication](/dev-itpro/localization-solutions/regulatory-watch-communication)
+-   [Separate localization models](/dev-itpro/separate-localization-models)
+-   [Apply country/region context](/dev-itpro/apply-country-context)
+-   [Regulatory certifications](/dev-itpro/regulatory-certifications)
+-   [Classify localization features](/dev-itpro/classify-localization-features)
+-   [Create an electronic reporting configuration](/dev-itpro/electronic-reporting-configuration)
 -   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](/dev-itpro/submit-localization-alerts)
 
 ## Electronic reporting

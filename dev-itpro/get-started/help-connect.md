@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Working with Help
+title: Connect the Help system
 description: This topic describes the components of the Help system for Microsoft Dynamics 365 for Operations, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Working with Help
+# Connect the Help system
 
 This topic describes the components of the Help system for Microsoft Dynamics 365 for Operations, and provides an overview of how to connect them and a summary of how to create custom help. 
 
@@ -62,7 +62,7 @@ You can create custom help for your Dynamics 365 for Operations implementation b
 See also
 --------
 
-[Microsoft Dynamics AX Help – Getting started](help-get-started.md)
+[Microsoft Dynamics AX Help – Getting started](help-overview.md)
 
 [How to create a task recording to use as documentation or training](../user-interface/task-recorder.md)
 

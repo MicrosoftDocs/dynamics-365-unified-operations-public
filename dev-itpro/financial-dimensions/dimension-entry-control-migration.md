@@ -146,7 +146,7 @@ Simple migration scenario - PurchTable form
 See also
 --------
 
-[Dimension Entry control uptake](dimension-entry-control-update.md)
+[Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
 [Dimension Entry control dialog support](dimension-entry-control-dialog-support.md)
 

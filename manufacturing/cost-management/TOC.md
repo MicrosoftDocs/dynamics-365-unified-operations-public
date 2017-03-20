@@ -1,5 +1,5 @@
 # Power BI content pack
-## [Cost management content pack](..\..\dev-itpro\analytics-bi-reporting\cost-management-content-pack?toc=/manufacturing/toc.json)
+## [Cost management content pack](/dev-itpro/analytics-bi-reporting/cost-management-content-pack?toc=/manufacturing/toc.json)
 # Predetermined cost
 ## [Costing sheet](costing-sheets.md)
 ## [Costing version](costing-versions.md)

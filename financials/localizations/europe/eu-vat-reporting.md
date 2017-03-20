@@ -254,7 +254,7 @@ You can use Electronic Reporting (ER) to configure statements and report, and t
 
 -   [Electronic reporting overview](/dev-tools/analytics-bi-reporting/general-electronic-reporting)
 -   [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
--   [Localization requirements – Create a GER configuration](/dev-tools/analytics-bi-reporting/localization-requirements-electronic-reporting-configuration)
+-   [Localization requirements – Create a GER configuration](/dev-tools/analytics-bi-reporting/electronic-reporting-configuration)
 
 ## Countryspecific resources for VAT statements
 The VAT statement for each country must meet the requirements of the country’s legislation. There are predefined general models and formats of VAT statements for the countries listed in the following table.

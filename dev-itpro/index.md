@@ -1,3 +1,35 @@
+---
+# required metadata
+
+title: Overview of Microsoft Dynamics 365 for Operations for Developers and IT Pros
+description: This page helps IT Pros and developers get started wtih Microsoft Dynamics 365 for Operations.  
+author: margoc
+manager: AnnBe
+ms.date: 2016-03-08 19:35:39
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# keywords: 
+# ROBOTS: 
+audience: IT Pro, Developer
+# ms.devlang: 
+ms.reviewer: 71
+ms.suite: Released- Dynamics AX 7.0.0
+# ms.tgt_pltfrm: 
+ms.custom: 62303
+ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
+ms.region: Global
+# ms.industry: 
+ms.author: margoc
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
 # Overview of Microsoft Dynamics 365 for Operations for Developers and IT Pros
 
 Microsoft Dynamics 365 for Operations represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It is designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft.
@@ -17,6 +49,12 @@ The developer experience is based on modern tooling using Visual Studio and .NET
 For more information, see [Developer home page](dev-tools/developer-home-page.md).
 
 # BI & reporting
+Dynamics 365 for Operations provides five distinct reporting experiences. Specialized tools are provided to meet the complex and diverse reporting needs of various functions throughout the organization.
+- Operational views – Designed to address the specific needs of a given business persona.
+- Business documents – Static documents used to capture and exchange processed business data.
+- Analytical tools and visualizations – Personalized presentations of logical calculations that allow the user to explore their data.
+- Electronic reporting – Tool used to configure formats for electronic documents.
+- Financial reporting – Designed to provide in-depth accounting management tools based on standard views of financial activities across legal entities.
 
 # Mobile apps
 The Microsoft Dynamics 365 for Operations mobile app empowers your organization to mobilize its business processes. After your IT admin enables the mobile workspaces feature for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The Dynamics 365 for Operations mobile app includes the following features that can help increase productivity:

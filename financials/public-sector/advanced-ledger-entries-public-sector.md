@@ -3,7 +3,7 @@
 
 title: Advanced ledger entries in the public sector
 description: Public-sector organizations can use advanced ledger entries to create, adjust, and reverse ledger entries. For example, advanced ledger entries can be used to reclassify expenditures if invoices are mistakenly posted to the wrong account or project.
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-07 15 - 36 - 30
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: AdvancedLedgerEntry, BudgetControlConfiguration, LedgerParameter
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19511
@@ -48,10 +48,5 @@ Yes. If you want users to be able to change the financial dimensions for a proje
 ## How do I use advanced ledger entries to record yearend accrual entries?
 Create an advanced ledger entry, select the **Reversing entry** option, and enter a reversing date. The reversing advanced ledger entry is created when the advanced ledger entry is posted. The reversing advanced ledger entry will have a new transaction number and a draft status. The reversing date will be used as the accounting date and the debit or credit amount on each line of the original entry will be reversed. The same posting definition will be used. The transaction text for the header and lines will contain the words “Reversing entry from,” the transaction number of the original advanced ledger entry, and the transaction text of the original advanced ledger entry.
 
-See also
---------
 
-[General ledger](general-ledger.md)
-
-[General ledger in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=164121)
 

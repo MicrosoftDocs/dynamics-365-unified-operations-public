@@ -902,7 +902,7 @@ Eventually during run time, most objects no longer have any variable that points
 
 #### System classes
 
-In Application Explorer, under **System Documentation** &gt; **Classes**, there is a list of the kernel classes or system classes. System classes aren't written in X++, and you can't see their source code. You can't add system classes. System classes usually have a **new** method, but they don't have a **classDeclaration** node. Every application class implicitly extends the **Object** system class. Some system classes are extended by an application class that has a similar name. For instance, **xClassFactory** is extended by **ClassFactory**. In these cases, you should not use the system class. For more information, see [Substitute application classes for system classes](xpp-classes-methods.md#substitute-application-classes-for-system-classes).
+In Application Explorer, under **System Documentation** &gt; **Classes**, there is a list of the kernel classes or system classes. System classes aren't written in X++, and you can't see their source code. You can't add system classes. System classes usually have a **new** method, but they don't have a **classDeclaration** node. Every application class implicitly extends the **Object** system class. Some system classes are extended by an application class that has a similar name. For instance, **xClassFactory** is extended by **ClassFactory**. In these cases, you should not use the system class. For more information, see "Substitute application classes for system classes" in [X++ classes and methods](xpp-classes-methods.md).
 
 #### Extension methods
 

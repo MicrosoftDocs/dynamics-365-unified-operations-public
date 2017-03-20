@@ -70,7 +70,7 @@ Before you install the new platform update, you must clean up your Microsoft Vis
 
 -   Application Platform
 -   Application Foundation
--   TestEssentials
+/-   TestEssentials
 -   Directory
 
 You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it. ![View History](./media/checkinhistory.png)
@@ -83,7 +83,7 @@ You can find these hotfixes by browsing the check-in history of these Microsoft 
     -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
     -   If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
-4.  Follow the standard instructions for installing a deployable package. See [Install a deployable package](install-deployable-package.md).
+4.  Follow the standard instructions for installing a deployable package. See [Install a deployable package](../deployment/install-deployable-package.md).
 5.  If you're working in a development environment, rebuild your application’s code.
 
 **Important:** Apply this update in a runtime environment only if you first validate it in a development environment.
@@ -98,7 +98,7 @@ You can find these hotfixes by browsing the check-in history of these Microsoft 
 
 ### Install the Visual Studio development tools
 
-Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](update-development-tools.md).
+Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](../dev-tools/update-development-tools.md).
 
 ### Regenerate form adaptor models
 

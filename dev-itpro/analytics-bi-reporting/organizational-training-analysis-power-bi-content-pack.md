@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Organizational Training content pack for Power BI
-description: This topic describes the Dynamics 365 for Operations - Organizational Training content pack for Power BI. It explains how to access the content pack, and describes the data model and entities that were used to build the content pack.
+title: Organizational Training Power BI content
+description: This topic describes the Dynamics 365 for Operations - Organizational Training Power BI content. It explains how to access the content pack, and describes the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-15 14 - 45 - 28
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Organizational Training content pack for Power BI
+# Organizational Training Power BI content
 
-This topic describes the Dynamics 365 for Operations - Organizational Training content pack for Power BI. It explains how to access the content pack, and describes the data model and entities that were used to build the content pack.
+This topic describes the Dynamics 365 for Operations - Organizational Training Power BI content. It explains how to access the content pack, and describes the data model and entities that were used to build the content pack.
 
 Accessing the content pack
 --------------------------

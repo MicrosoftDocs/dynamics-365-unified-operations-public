@@ -1,17 +1,18 @@
 # [Prepare to move to the latest update of Dynamics 365 for Operations](upgrade-latest-update.md)
 # [Upgrade Dynamics 365 for Operations to the latest platform update](upgrade-latest-platform-update.md)
-# [Process for upgrading a sandbox environment](upgrade-sandbox-environment.md)
+# [Upgrade a sandbox environment](upgrade-sandbox-environment.md)
 # [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md)
+# [Update development tools](../dev-tools/update-development-tools.md)
 # [Workflow subsystem updates in Dynamics 365 for Operations](workflow-subsystem.md)
 # Code migration
 ## [Prepare to migrate to Dynamics 365 for Operations](prepare-migration.md)
 ## [Configure Visual Studio Team Services mapping during code migration](configure-vso-solution.md)
-## [Model split](..\dev-tools\model-split.md)
+## [Model split](../dev-tools/model-split.md)
 ## [Use delegates to solve dependencies between models when migrating code to Dynamics 365 for Operations](delegates-migration.md)
 # Data changes that affect upgrade
 ## [Single voucher and currency revaluation upgrade ](single-voucher-and-currency-revaluation-upgrade.md)
 ## [Project resource scheduling data model](data-model-changes-resource-management.md)
-# Upgrading analytics
+# Upgrade analytics
 ## [Why we moved from SSAS cubes to aggregate models](in-memory-real-time-aggregate-models.md)
 ## [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
 # Deprecations

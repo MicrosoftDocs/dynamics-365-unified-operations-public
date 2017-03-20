@@ -3,7 +3,7 @@
 
 title: Free text invoices in the public sector
 description: This topic describes the free text invoice functionality that is available for public sector as well as answers common questions about using billing classifications and billing codes with free text invoices.
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-12 23 - 25 - 50
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: CustBillingClassification, CustBillingCode, CustFreeInvoice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 25821
@@ -60,12 +60,5 @@ To learn more about billing codes, see [Billing classifications and billing code
 ## Where does the interest code on a free text invoice come from?
 The interest code can be set on the billing code, the billing classification, or the posting profile.
 
-See also
---------
 
-[Accounts receivable](..\accounts-receivable\accounts-receivable.md)
-
-[Accounts receivable in the public sector](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=169941)
-
-[Accounting distributions and subledger journal entries for free text invoices](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
 

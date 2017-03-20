@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retain a copy of a Dynamics 365 for Operations database to restore later
+title: Create a copy of a Dynamics 365 for Operations database to restore later
 description: This topic provides instructions for exporting a Microsoft Dynamics 365 for Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
 author: MargoC
 manager: AnnBe
@@ -40,7 +40,7 @@ You might want to retain a copy of a Dynamics 365 for Operations database proces
 -   To back up a database before destructive testing and then restore it afterward.
 -   When upgrading to a new major release of Microsoft Dynamics 365 for Operations, this process can be used to export your old test database and bring it forward to the new version.
 
-Be aware that Microsoft also provides a standard feature which provides the ability to restore an Azure SQL database environment to a point-in-time within the last 35 days via a service request. For more information, see [Request a point-in-time database restore on a non-production environment](request-a-point-in-time-db-restore.md).
+Be aware that Microsoft also provides a standard feature which provides the ability to restore an Azure SQL database environment to a point-in-time within the last 35 days via a service request. For more information, see [Request a point-in-time database restore on a non-production environment](request-point-in-time-restore.md).
 
 ## Prerequisites
 To export a database from a sandbox environment you must install the latest SQL Server 2016 Management Studio to the AOS machine in that environment and perform the export on that AOS machine. This is for two reasons. First, there is an IP access restriction on the sandbox SQL Server instance, which only allows a connection from a machine within that environment. Second, the version of SQL Server Management Studio installed by default is for a previous version of SQL Server and can’t complete the tasks required.
