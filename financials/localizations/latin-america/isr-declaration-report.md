@@ -2,7 +2,7 @@
 # required metadata
 
 title: ISR declaration report
-description: In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This topic provides information about generating this report in Microsoft Dynamics AX. 
+description: In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This topic provides information about generating this report in Microsoft Dynamics 365 for Operations. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 2015-09-10 15 - 43 - 54
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # ISR declaration report
 
-In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This topic provides information about generating this report in Microsoft Dynamics AX. 
+In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This topic provides information about generating this report in Microsoft Dynamics 365 for Operations. 
 
 You must present the IRS declaration report for each month on or before the seventeenth day of the following month. The report displays detailed calculations of provisional income tax payments, and is based on the following factors:
 
