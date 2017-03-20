@@ -21,7 +21,7 @@
 
 ## Get help and support
 ### [Help overview](/dynamics365/operations/dev-itpro/get-started/help-overview?toc=/dynamics365/operations/toc.json)
-### [Connect Help](/dynamics365/operations/dev-itpro/get-started/working-with-help?toc=/dynamics365/operations/toc.json)
+### [Connect Help](/dynamics365/operations/dev-itpro/get-started/help-connect?toc=/dynamics365/operations/toc.json)
 ### [View and export field descriptions](get-started/view-export-field-descriptions.md)
 
 ### Task guides and task recorder
