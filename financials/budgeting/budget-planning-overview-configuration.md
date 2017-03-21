@@ -51,7 +51,7 @@ When you understand the concepts and terminology that are used in Microsoft Dyna
 
 [![Budget planning terminology](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
-### Common tasks** **
+### Common tasks
 
 You can use budget planning to perform the following tasks:
 
@@ -77,7 +77,9 @@ In the following example, the corporate headquarters estimates the initial budge
 
 ###  Organization hierarchy for budget planning
 
-On the **Organization hierarchy** page, you can designate an organization hierarchy as a budget planning hierarchy for each budget planning process. The budget planning hierarchy doesn't have to match the standard organization hierarchy that is used for other purposes. Because this hierarchy is used to aggregate and distribute data, you might want it to have a different structure. In the example schema, the sales departments are under a headquarters level that includes budget and finance departments. This structure likely differs from the structure that is used to manage operations for the sales departments. Only one organization hierarchy can be assigned to each budget planning process. For more information, see [Organizations and organizational hierarchies](/core/organization-administration/organizations-organizational-hierarchies).
+On the **Organization hierarchy** page, you can designate an organization hierarchy as a budget planning hierarchy for each budget planning process. The budget planning hierarchy doesn't have to match the standard organization hierarchy that is used for other purposes. Because this hierarchy is used to aggregate and distribute data, you might want it to have a different structure. In the example schema, the sales departments are under a headquarters level that includes budget and finance departments. This structure likely differs from the structure that is used to manage operations for the sales departments. Only one organization hierarchy can be assigned to each budget planning process. 
+
+For more information, see [Organizations and organizational hierarchies](/core/organization-administration/organizations-organizational-hierarchies).
 
 ### User security
 
