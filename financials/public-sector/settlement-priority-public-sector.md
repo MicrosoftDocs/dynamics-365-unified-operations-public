@@ -37,7 +37,12 @@ In Microsoft Dynamics 365 for Operations, you can manually select transactions t
 How to set the general ledger parameters and accounts receivable parameters for settlement priority
 ---------------------------------------------------------------------------------------------------
 
-To use billing classifications to control settlement priorities, you must set both a sales tax parameter in the General ledger app and settlement parameters in the Accounts receivable app. **Note**: Your billing classifications should be completely set up and enabled before you set these parameters. As soon as you enable billing classifications, Billing classification becomes a required field on the free text invoice. To learn more about billing classifications, including how to enable them, see [Billing classifications and billing codes in the public sector](billing-classifications-billing-codes-public-sector.md).
+To use billing classifications to control settlement priorities, you must set both a sales tax parameter in the General ledger app and settlement parameters in the Accounts receivable app. 
+
+> [!NOTE]
+> Your billing classifications should be completely set up and enabled before you set these parameters. As soon as you enable billing classifications, Billing classification becomes a required field on the free text invoice. 
+
+To learn more about billing classifications, including how to enable them, see [Billing classifications and billing codes in the public sector](billing-classifications-billing-codes-public-sector.md).
 
 -   On the **General ledger parameters** page, in the **Sales tax** section, on the **Tax options** FastTab, select the **Sales tax amount per invoice line** option.
 -   On the **Accounts receivable parameters** page, in the **Settlement** section, do the following:
