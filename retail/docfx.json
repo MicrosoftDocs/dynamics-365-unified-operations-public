@@ -11,7 +11,23 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE"
-        ]
+        ], 
+        "src":"retail-sdk",
+        "dest": "retail" 
+      }
+            {
+        "files": [
+          "**/*.md"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE"
+        ], 
+        "src":"dev-itpro",
+        "dest": "retail" 
       }
     ],
     "resource": [
@@ -24,7 +40,21 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ], 
+        "src":"retail-sdk",
+        "dest": "retail" 
+      }{
+        "files": [
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ], 
+        "src":"dev-itpro",
+        "dest": "retail" 
       }
     ],
     "overwrite": [],
