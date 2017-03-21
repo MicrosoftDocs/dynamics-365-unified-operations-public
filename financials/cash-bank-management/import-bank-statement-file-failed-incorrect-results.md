@@ -93,9 +93,8 @@ Sometimes, debits might be imported as credits, and credits might be imported as
 -   MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator template
 
 ## Examples of bank statement formats and technical layouts
-The following table lists examples of the technical layout definitions for advanced bank reconciliation import files and three related bank statement example files. 
-
-[Examples of bank statement formats and technical layouts] https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+The following table lists examples of the technical layout definitions for advanced bank reconciliation import files and three related bank statement example files. You can download the example files and technical layouts here:
+ https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Technical layout definition                                        | Bank statement example file                                     |--------------------------------------------------------------------|-----------------------------------------------------------|
 | [DynamicsAXMT940Layout]                                            | [MT940StatementExample]                                   |
