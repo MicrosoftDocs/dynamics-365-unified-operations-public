@@ -1,20 +1,6 @@
 {
   "build": {
     "content": [
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE"
-        ], 
-        "src":"retail-sdk",
-        "dest": "retail" 
-      },
         {
         "files": [
           "**/*.md"
@@ -31,19 +17,6 @@
       }
     ],
     "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.gif",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ], 
-        "src":"retail-sdk",
-        "dest": "retail" 
-      },
       {
         "files": [
           "**/*.png",
