@@ -3,7 +3,7 @@
 
 title: Purchase orders for a project
 description: This article describes the various methods that you can use to create purchase orders for a project. The method that you use depends on the purpose of the purchase order, and when the purchased items are consumed and charged to a project.
-author: kfend
+author: twheeloc
 manager: AnnBe
 ms.date: 2016-04-29 22 - 02 - 01
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 51
+# ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 83972
@@ -59,7 +59,7 @@ You can use one of the following methods to create a purchase order in Project m
 <td>Use this method to purchase items from an external vendor for consumption on a project. You can create the purchase order in two ways:
 <ul>
 <li>From the project itself. In this case, the project is already defined for the purchase order.</li>
-<li>By navigating to the project purchase order. (Click <strong>Project management and accounting</strong> &gt; <strong>Common</strong> &gt; <strong>Item tasks</strong> &gt; <strong>Project purchase orders</strong>.) You must select both the vendor and the project to create the purchase order for.</li>
+<li>By navigating to the project purchase order. You must select both the vendor and the project to create the purchase order for.</li>
 </ul></td>
 <td>Items are consumed when the vendor invoice is updated.</td>
 </tr>
@@ -76,5 +76,6 @@ You can use one of the following methods to create a purchase order in Project m
 </tbody>
 </table>
 
-**Note:** When you update the vendor invoice or packing slip, you're prompted to update the packing slip on the item requirement.
+> [!NOTE] 
+> When you update the vendor invoice or packing slip, you're prompted to update the packing slip on the item requirement.
 
