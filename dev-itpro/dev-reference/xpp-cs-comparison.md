@@ -483,48 +483,39 @@ The X++ switch example shows the following:
 -   `//break;` to show that `break;` statements are not required in X++, although they are almost always desirable.
 -   case 2, (93-90), 5: to show that multiple expressions can be listed on on **case** clause in X++.
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><pre><code>static void GXppSwitchJob21(Args _args)  // X++ job in AOT &gt; Jobs.
-{
-  int iEnum = 3;
-  int iTemp = 6;
-  switch (iEnum)
-  {
-    case 1:
-    case iTemp:  // 6
-      info(strFmt(&quot;iEnum is one of these values: 1,6: %1&quot;, iEnum));
-      break;
-    case 2, (93-90), str2Int(&quot;5&quot;):  // Equivalent to three &#39;case&#39; clauses stacked, valid in X++.
-    //case 2:
-    //case (93-90):  // Value after each &#39;case&#39; can be a constant, variable, or expression; in X++.
-    //case str2Int(&quot;5&quot;):
-      info(strFmt(&quot;iEnum is one of these values: 2,3,5: %1&quot;, iEnum));
-      //break;  // Not required in X++, but usually wanted.
-    case 4:
-      info(strFmt(&quot;iEnum is one of these values: 4: %1&quot;, iEnum));
-      break;
-    default:
-      info(strFmt(&quot;iEnum is an unforeseen value: %1&quot;, iEnum));
-      break;
-    // None of these &#39;break&#39; occurrences in this example are required for X++ compiler.
-  }
-  return;
-}
-/*** Copied from the Infolog:
-Message (02:32:08 pm)
-iEnum is one of these values: 2,3,5: 3
-iEnum is one of these values: 4: 3
-***/</code></pre></td>
-</tr>
-</tbody>
-</table>
+    static void GXppSwitchJob21(Args _args)  // X++ job in AOT &gt; Jobs.
+    {
+        int iEnum = 3;
+        int iTemp = 6;
+        switch (iEnum)
+        {
+            case 1:
+            case iTemp:  // 6
+                info(strFmt(&quot;iEnum is one of these values: 1,6: %1&quot;, iEnum));
+                break;
+            case 2, (93-90), str2Int(&quot;5&quot;):  // Equivalent to three &#39;case&#39; clauses stacked, valid in X++.
+                //case 2:
+                //case (93-90):  // Value after each &#39;case&#39; can be a constant, variable, or expression; in X++.
+                //case str2Int(&quot;5&quot;):
+                info(strFmt(&quot;iEnum is one of these values: 2,3,5: %1&quot;, iEnum));
+                //break;  // Not required in X++, but usually wanted.
+            case 4:
+                info(strFmt(&quot;iEnum is one of these values: 4: %1&quot;, iEnum));
+                break;
+            default:
+                info(strFmt(&quot;iEnum is an unforeseen value: %1&quot;, iEnum));
+                break;
+                // None of these &#39;break&#39; occurrences in this example are required for X++ compiler.
+        }
+        return;
+    }
 
- 
+    /*** Copied from the Infolog:
+    Message (02:32:08 pm)
+    iEnum is one of these values: 2,3,5: 3
+    iEnum is one of these values: 4: 3
+    ***
+
 
 #### C\# switch Example
 
@@ -1099,11 +1090,28 @@ The syntax is very different between the two languages for an update of the valu
 
 ###  Example 6: Delete One Item
 
-The syntax is very different between the two languages to delete one key-value pair from a collection, while iterating through the collection members. Code examples for the key 102 are in the following table.
+The syntax is very different between the two languages to delete one key-value pair from a collection, while iterating through the collection members. Code examples for the key 102 are shown below.
 
-| X++                                                                                                                                                                                                                                                                   | C\#                          |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| `mapIter = new MapIterator` ` (mapKeyValue);` `//mapIter.begin();` `while (mapIter.more())` { ` iCurrentKey = mapIter.key();` if (104 == iCurrentKey) { ` // mapKeyValue.remove would invalidate the iterator.` ` mapIter.delete();` ` break;` } ` mapIter.next();` } | `dictKeyValue` .Remove(104); |
+X++
+
+    mapIter = new MapIterator
+    (mapKeyValue);
+    //mapIter.begin();
+    while (mapIter.more())
+    {
+        iCurrentKey = mapIter.key();
+        if (104 == iCurrentKey)
+        {
+            // mapKeyValue.remove would invalidate the iterator.
+            mapIter.delete();
+            break;`
+        }
+        mapIter.next();
+    }
+
+C#
+
+    dictKeyValue` .Remove(104);
 
 ## X++, C\# Comparison: Exceptions
 There are some similarities but many differences when we compare exception related behavior between X++ and C\#.
@@ -1697,62 +1705,56 @@ The important things to notice in the X++ example are the following:
 -   The parameter value that passed in to the delegate is received by each event handler method.
 -   The short X++ job at the top of the example starts the test.
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><pre><code>// X++
-// Simple job to start the delegate event test.
-static void DelegateEventTestJob()
-{
-    XppClass::runTheTest(&quot;The information from the X++ job.&quot;);
-}
-// The X++ class that contains the delegate and the event handlers.
-class XppClass
-{
-    delegate void myDelegate(str _information)
-    {
-    }
-    public void myEventSubscriberMethod2(str _information)
-    {
-        info(&quot;X++, hello from instance event handler 2: &quot; + _information);
-    }
-    static public void myEventSubscriberMethod3(str _information)
-    {
-        info(&quot;X++, hello from static event handler 3: &quot; + _information);
-    }
-    static public void runTheTest(str _stringFromJob)
-    {
-        XppClass myXppClass = new XppClass();
-        // Subscribe two event handler methods to the delegate.
-        myXppClass.myDelegate += eventHandler
-                (myXppClass.myEventSubscriberMethod2);
-        myXppClass.myDelegate += eventHandler
-                (XppClass::myEventSubscriberMethod3);
-        // Raise the event by calling the delegate one time,
-        // which calls all the subscribed event handler methods.
-        myXppClass.myDelegate(_stringFromJob);
-    }
-}</code></pre></td>
-</tr>
-</tbody>
-</table>
 
+X++
+
+    // Simple job to start the delegate event test.
+    static void DelegateEventTestJob()
+    {
+        XppClass::runTheTest(&quot;The information from the X++ job.&quot;);
+    }
+    // The X++ class that contains the delegate and the event handlers.
+    class XppClass
+    {
+        delegate void myDelegate(str _information)
+        {
+        }
+        public void myEventSubscriberMethod2(str _information)
+        {
+            info(&quot;X++, hello from instance event handler 2: &quot; + _information);
+        }
+        static public void myEventSubscriberMethod3(str _information)
+        {
+            info(&quot;X++, hello from static event handler 3: &quot; + _information);
+        }
+        static public void runTheTest(str _stringFromJob)
+        {
+            XppClass myXppClass = new XppClass();
+            // Subscribe two event handler methods to the delegate.
+            myXppClass.myDelegate += eventHandler
+                    (myXppClass.myEventSubscriberMethod2);
+            myXppClass.myDelegate += eventHandler
+                    (XppClass::myEventSubscriberMethod3);
+            // Raise the event by calling the delegate one time,
+            // which calls all the subscribed event handler methods.
+            myXppClass.myDelegate(_stringFromJob);
+        }
+    }
  
 
 The output from the previous X++ job is as follows:
 
-|                                                                                                                                                       |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| X++, hello from static event handler 3: The information from the X++ job. X++, hello from instance event handler 2: The information from the X++ job. |
+    X++, hello from static event handler 
+    3: The information from the X++ job. X++, hello from instance event handler 
+    2: The information from the X++ job.
 
 #### C\# Sample
 
 This section contains a C\# code sample for the event design pattern of the previous X++ sample.
-C\#
-Copy Code
+
+C#
+
+
     // C#
     using System;
     // Define the delegate type named MyDelegate.
@@ -1786,9 +1788,9 @@ Copy Code
 
 The output from the previous C\# sample is as follows:
 
-|                                                                                                                                                                              |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| &gt;&gt; CsClass.exe C\#, hello from instance event handler 2: The information from the C\# Main. C\#, hello from static event handler 3: The information from the C\# Main. |
+    CsClass.exe C#, hello from instance event handler 
+    2: The information from the C\# Main. C\#, hello from static event handler 
+    3: The information from the C\# Main. |
 
 ### Events and the AOT
 
