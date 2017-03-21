@@ -93,7 +93,7 @@
 ### [Settle a partial customer payment that has multiple discount periods](accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 ### [Reimburse customers](accounts-receivable/reimburse-customers.md)
 ### [Customer payments for a partial amount](accounts-receivable/customer-payments-partial-amount.md)
-# [Cash and bank management](/cash-bank-management/cash-bank-management.md)
+# [Cash and bank management](cash-bank-management/cash-bank-management.md)
 ## [Cash discounts](cash-bank-management/cash-discount-handling-overpayments.md)
 ## [Settlement overview for centralized payments](cash-bank-management/settlement-overview-centralized-payments.md)
 ## [Settlement overview](cash-bank-management/settlement-overview-centralized-payments.md)
