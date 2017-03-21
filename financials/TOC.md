@@ -60,6 +60,7 @@
 ### [Configure settlement](/cash-bank-management/configure-settlement.md)
 ### [Create vendor payments by using a payment proposal](accounts-payable/create-vendor-payments-payment-proposal.md)
 ### [Reverse a vendor payment](accounts-payable/reverse-vendor-payment.md)
+### [Prepayment invoices and prepayments overview](accounts-payable/prepayments-invoices-vs-prepayments.md)
 ### [Settle a partial vendor payment before the discount date with a final payment after the discount date](/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 ### [Settle a partial vendor payment that has discounts on vendor credit notes](accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 ### [Settle a partial vendor payment that has multiple discount periods](accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
