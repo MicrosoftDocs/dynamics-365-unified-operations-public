@@ -37,58 +37,28 @@ This article provides a list of the data entities that are available for the Mas
 Available data entities
 -----------------------
 
-Suggested sequence
-
-Entity name
-
-Area
-
-Entity type
-
-Dependency
-
-Comments
-
 **20.1.001 MP - Item coverage groups**
 
-1
-
-Item coverage groups
-
-Master planning
-
-Setup
-
-None
+| Suggested sequence | Entity name          | Area            | Entity type | Dependency | Comments |
+|--------------------|----------------------|-----------------|-------------|------------|----------|
+| 1                  | Item coverage groups | Master planning | Setup       | None       |          |
 
 **20.4.001 MP - Item coverage**
 
-2
-
-Item coverage
-
-Master planning
-
-Setup
-
-Item coverage groups, Released products
+| Suggested sequence | Entity name   | Area            | Entity type | Dependency                              | Comments |
+|--------------------|---------------|-----------------|-------------|-----------------------------------------|----------|
+| 2                  | Item coverage | Master planning | Setup       | Item coverage groups, Released products |          |
 
 **20.4.002 MP - Plan groups**
 
-3
-
-Plan groups
-
-Master planning
-
-Setup
-
-None
+| Suggested sequence | Entity name | Area            | Entity type | Dependency | Comments |
+|--------------------|-------------|-----------------|-------------|------------|----------|
+| 3                  | Plan groups | Master planning | Setup       | None       |          |
 
 See also
 --------
 
 [Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](data-entities.md)
+[Data entities](data-entities.md)
 
