@@ -1695,11 +1695,7 @@ This section contains an X++ code example for the event design pattern. It also 
 
 The important things to notice in the X++ example are the following:
 
--   The `XppClass` has a delegate member that is named `myDelegate`.
-    | **Note**                                                                                                                                                                                                                                                                                             |
-    |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | The AOT contains a node for the delegate. The node is located at AOT &gt; Classes &gt; XppClass &gt; myDelegate. Several event handler nodes can be located under the myDelegate node. Event handlers that are represented by nodes in the AOT cannot be removed by the -= operator during run time. |
-
+-   The `XppClass` has a delegate member that is named `myDelegate`. **Note**: The AOT contains a node for the delegate. The node is located at AOT &gt; Classes &gt; XppClass &gt; myDelegate. Several event handler nodes can be located under the myDelegate node. Event handlers that are represented by nodes in the AOT cannot be removed by the -= operator during run time. 
 -   The {} braces at the end of the delegate declaration are required, but they cannot have any code in them.
 -   The `XppClass` has two methods whose parameter signatures are compatible with the delegate. One method is static.
 -   The two compatible methods are added to the delegate with the += operator and the **eventHandler** keyword. These statements do not call the event handler methods, the statements only add the methods to the delegate.
