@@ -117,6 +117,7 @@ This section describes how to create a data entity by using a wizard. We recomm
 This section describes how to add a dimension data source to a new entity. The new entity requires the dimension display value from the dimension tables.
 
 1.  On a new entity, create a data source that has the property values that are shown in the following screen shot. In particular, notice the settings for the properties that are described in the following table.
+
     | Property name | Property value            | Description           |
     |---------------|---------------------------|-----------------------|
     | Allow Add     | No                        |                       |
