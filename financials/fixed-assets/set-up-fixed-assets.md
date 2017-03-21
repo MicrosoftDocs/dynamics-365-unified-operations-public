@@ -40,7 +40,7 @@ Parameters control the general behavior in Fixed assets.
 
 Fixed asset groups let you group your assets and specify default attributes for every asset that is assigned to a group. Books are assigned to fixed asset groups. Books track the financial value of a fixed asset over time by using the depreciation configuration that is defined in the depreciation profile.
 
-Fixed assets are assigned to a group when they are created. By default, the books that are assigned to the fixed asset group are then assigned to the fixed asset. Books that are configured to post to the general ledger are associated with a posting profile. Ledger accounts are defined per book in the posting profile and are used when fixed asset transactions are posted.. ![FixedAssetsComponentsImage](./media/fixedassetscomponentsimage.png)
+Fixed assets are assigned to a group when they are created. By default, the books that are assigned to the fixed asset group are then assigned to the fixed asset. Books that are configured to post to the general ledger are associated with a posting profile. Ledger accounts are defined per book in the posting profile and are used when fixed asset transactions are posted.. ![FixedAssetsComponentsImage](./media/FAComponents_Updated.png)
 
 ## Depreciation profiles
 You should set up depreciation profiles first. In the depreciation profile, you configure how the value of an asset is depreciated over time. You must define the method of depreciation, the depreciation year (calendar year or fiscal year), and the frequency of depreciation.
