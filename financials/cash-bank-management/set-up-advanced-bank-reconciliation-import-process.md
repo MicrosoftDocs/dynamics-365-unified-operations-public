@@ -50,7 +50,7 @@ For all three formats, you must have files that translate the electronic bank st
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
 ## Examples of bank statement formats and technical layouts
-Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files:https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+Below are examples of the advanced bank reconciliation import file technical layout definitions and three related bank statement example files: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Technical layout definition                             | Bank statement example file          |
 |---------------------------------------------------------|--------------------------------------|
