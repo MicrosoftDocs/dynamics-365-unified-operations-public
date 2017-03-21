@@ -96,10 +96,12 @@ Sometimes, debits might be imported as credits, and credits might be imported as
 The following table lists examples of the technical layout definitions for advanced bank reconciliation import files and three related bank statement example files. You can download the example files and technical layouts here:
  https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
-| Technical layout definition                                        | Bank statement example file                                     |--------------------------------------------------------------------|-----------------------------------------------------------|
-| [DynamicsAXMT940Layout]                                            | [MT940StatementExample]                                   |
-| [DynamicsAXISO20022Layout]                                         | [ISO20022StatementExample]                                |
-| [DynamicsAXBAI2Layout]                                             | [BAI2StatementExample]                                    |
+
+| Technical layout definition                             | Bank statement example file          |
+|---------------------------------------------------------|--------------------------------------|
+| DynamicsAXMT940Layout                                   | MT940StatementExample                |
+| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
+| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
 
 
 
