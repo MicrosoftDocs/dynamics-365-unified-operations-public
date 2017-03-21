@@ -1411,8 +1411,10 @@ End of X++ retry program.</code></pre></td>
 #### C\# Sample
 
 The following C\# sample is not a line-by-line translation from the previous X++ sample. Instead the C\# program has a different structure so that it mimics the behavior of the **retry** keyword that the X++ program relies on. The **try** and **catch** blocks are in a called method. The variables that are used in the **try** block are stored in the caller method. The caller method passes the variables as parameters that are decorated with the **ref** keyword, so that their values can be corrected inside the **catch** block of the called method. The called method captures all exceptions, and returns a **boolean** to communicate back to the caller whether a second call is required.
-C\#
-Copy Code
+
+C#
+
+
     using System;
     public class Pgm_CSharp
     {
@@ -1598,6 +1600,7 @@ For more information, see Relational Operators.</td>
 ### Bitwise Operators
 
 The following table compares the bitwise operators between X++ and C\#.
+
 | X++ and C\# | Differences                                          |
 |-------------|------------------------------------------------------|
 | &lt;&lt;    | The left shift operator is the same in X++ and C\#.  |
@@ -1681,6 +1684,7 @@ This section contains an X++ code example for the event design pattern. It also 
 #### X++ Example
 
 The important things to notice in the X++ example are the following:
+
 -   The `XppClass` has a delegate member that is named `myDelegate`.
     | **Note**                                                                                                                                                                                                                                                                                             |
     |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1739,6 +1743,7 @@ class XppClass
  
 
 The output from the previous X++ job is as follows:
+
 |                                                                                                                                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | X++, hello from static event handler 3: The information from the X++ job. X++, hello from instance event handler 2: The information from the X++ job. |
@@ -1780,6 +1785,7 @@ Copy Code
  
 
 The output from the previous C\# sample is as follows:
+
 |                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | &gt;&gt; CsClass.exe C\#, hello from instance event handler 2: The information from the C\# Main. C\#, hello from static event handler 3: The information from the C\# Main. |
@@ -1812,6 +1818,7 @@ The following tables compare the details of precompiler directives between X++ a
 #### Identical Keywords
 
 The following table lists precompiler directives that are similar in X++ and C\#.
+
 | Keyword  | X++                                                                                                           | C\#                                                                                                                                                                                                                                            | Comments                                                                                                                                                                                                     |
 |----------|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#define | In X++, a precompiler variable name can be defined, and a value can be given to that variable.                | In C\#, a precompiler variable name can be defined, but no value can be given to that variable. Also, any \#define in C\# must occur at the top of the file, and cannot occur after any code such as a using statement or a class declaration. | The C\# compiler can input a command line parameter of `/define` to define a precompiler variable name without defining the variable in any C\# code file. The X++ compiler has no counterpart to `/define`. |
@@ -1821,6 +1828,7 @@ The following table lists precompiler directives that are similar in X++ and C\#
 #### Different Keywords with the Same Processing Result
 
 The following table lists precompiler directives that are named differently in X++ and C\#, but that give the same results when processed.
+
 | X++                         | C\#              | Comments                                                                                                                                                                                                                                                                                                                                        |
 |-----------------------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#ifnot                     | \#if \#else      | There is no \#else directive in X++, but the \#ifnot provides similar functionality. In X++, \#ifnot can determine whether a precompiler variable exists, and whether the variable does not have a specific given value. In C\#, \#if can determine whether a precompiler variable exists when the ‘!’ symbol is prefixed to the variable name. |
@@ -1830,6 +1838,7 @@ The following table lists precompiler directives that are named differently in X
 #### Precompiler Directives Exclusive to X++
 
 The following table lists X++ precompiler directives that have no direct counterpart in C\#.
+
 | X++                  | Comments                                                                                                                                                                                                                                                                                                                             |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \#linenumber         | The \#linenumber directive is for obtaining the line number, so that it can be output to the Infolog. The C\# directive \#line is different because its purpose is for setting the line number.                                                                                                                                      |
@@ -2067,6 +2076,7 @@ In X++ the `TreeNode` class provides access to the Application Object Tree (AOT)
 ### Table of Class Comparisons
 
 The following table lists several classes that are available to you when you write C\# code. These are .NET Framework classes. For this table, all C\# classes are in the `System.Reflection` namespace unless otherwise specified. Each row shows the corresponding class, or class member, that is available to you when your write X++ code.
+
 | X++                                                                                        | C\#                                               | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |--------------------------------------------------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `TreeNode`                                                                                 | `System .Assembly`                                | Assembly is the first class to use when a C\# program must gather reflection information. Static methods on the X++ class `TreeNode` are the starting point for reflection in X++.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -2265,6 +2275,7 @@ The following X++ SQL keywords are among those that are not part of ANSI SQL:
 ### Join Clause
 
 The following table lists differences about the **join** keyword of X++ SQL and ANSI SQL.
+
 | Feature                          | X++ SQL                                                                                                                                                                                               | ANSI SQL                                                                                                                                                                                           | Comments                                                                               |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | Columns list.                    | The columns in the columns list must all come from the table listed in the **from** clause, and not from any table in a **join** clause. Columns in the list cannot be qualified by their table name. | The columns in the columns list can come from any table in the **from** or **join** clauses. It helps others to maintain your code when you qualify the columns in the list with their table name. | For more information, see Select Statements on Fields.                                 |
@@ -2313,6 +2324,7 @@ The following code example illustrates the **join** syntax in X++ SQL.
 ### Aggregate Fields
 
 The following table lists some differences in how aggregate fields in the **select** column list are referenced between X++ SQL and ANSI SQL. Aggregate fields are those that are derived by functions such as **sum** or **avg**.
+
 | Feature                     | X++ SQL                                                  | ANSI SQL                                                                                                                    | Comments                                                                       |
 |-----------------------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | Aggregate field name alias. | The aggregate value is in the field that was aggregated. | You can use the **as** keyword to tag an aggregate field with a name alias. The alias can be referenced in subsequent code. | For more information, see Aggregate Functions: Differences Between X++ and SQL |
