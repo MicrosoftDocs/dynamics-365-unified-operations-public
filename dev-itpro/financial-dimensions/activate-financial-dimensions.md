@@ -40,7 +40,11 @@ When a new financial dimension is added to the system, users are prompted with a
 -   A schema change occurs, therefore a special privilege, the Dimension activation privilege is required to run activation.
 -   You should perform this during scheduled maintenance or downtime.
 
-Adding a financial dimension is typically a very deliberate business process. If there is a multi-user environment, such as a user acceptance testing or training environment, only one person should attempt this process. A second option is available when you choose the Activate option, **Rebuild financial dimensions**. [![ActWiki2](./media/actwiki2.png)](./media/actwiki2.png) The **Rebuild financial dimensions **option is set to **No** by default, as it is a process that should only be run if unexpected results occur during the initial activation process. This will drop and re-add all financial dimensions and values to the tables.
+Adding a financial dimension is typically a very deliberate business process. If there is a multi-user environment, such as a user acceptance testing or training environment, only one person should attempt this process. A second option is available when you choose the Activate option, **Rebuild financial dimensions**. 
+
+[![ActWiki2](./media/actwiki2.png)](./media/actwiki2.png) 
+
+The **Rebuild financial dimensions** option is set to **No** by default, as it is a process that should only be run if unexpected results occur during the initial activation process. This will drop and re-add all financial dimensions and values to the tables.
 
 # See also
 
