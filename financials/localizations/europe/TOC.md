@@ -25,7 +25,9 @@
 ## [Packing material fees](aut-packing-material-fee-calculation.md)	
 ## [VAT statement](aut-vat-statement-details-austria.md)							
 # Belgium						
-## [CODA bank statement](bel-coda-bank-statement-import.md)						
+## [CODA bank statement](bel-coda-bank-statement-import.md)	
+## [PRODCOM report setup](prodcom-report-setup.md)
+
 # The Czech Republic									
 ## [Depreciation suspension](cze-depreciation-suspension-holidays.md)						
 ## [Fixed assets depreciation](cze-fixed-assets-depreciation.md)						
