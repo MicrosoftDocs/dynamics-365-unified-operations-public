@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Viewing transactions on settlement for Eastern Europe
+title: View transactions on settlement for Eastern Europe
 description: This topic provides information about the Transactions on settlement page for customers and vendors.
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Viewing transactions on settlement for Eastern Europe
+# View transactions on settlement for Eastern Europe
 
 This topic provides information about the Transactions on settlement page for customers and vendors.
 

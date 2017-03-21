@@ -36,29 +36,12 @@ For legal entities in Poland, the line discount can be calculated from the unit 
 
 For legal entities in Poland, the line discount doesn't have to be calculated from a line amount. Instead, it can be calculated from the unit price of an invoice line. When the Line discount calculation from unit price method is used, the discounted unit price is rounded before the line amount is calculated. The following table shows how the line discount is calculated by both the standard method and the Line discount calculation from unit price method.
 
-Quantity
+|Quantity|Price|Discount percentage|Net amount (Standard method)|Net amount (Line discount calculation from unit price method)|
+|--------|-----|-------------------|---------------|------------------------------------------------|
+|100     |6.75 |5                  |641.25 (6.75 × 100 = 675.00; 675 × 0.95 = 641.25)|641.00 (6.75 × 0.95 = 6.4125; 6.41 × 100 = 641.00)|
 
-Price
-
-Discount percentage
-
-Net amount
-
-Standard method
-
-Line discount calculation from unit price method
-
-100
-
-6.75
-
-5
-
-641.25 (6.75 × 100 = 675.00; 675 × 0.95 = 641.25)
-
-641.00 (6.75 × 0.95 = 6.4125; 6.41 × 100 = 641.00)
-
-**Note:** The 0.95 that is used in the calculations equals 1.00 – 0.05, where 0.05 is the discount amount if the unit price is 1.00.
+> [!NOTE]
+> The 0.95 that is used in the calculations equals 1.00 – 0.05, where 0.05 is the discount amount if the unit price is 1.00.
 
 ## Set up the Calculation of line discount parameter
 The Line discount calculation from unit price method affects both Accounts receivable and Accounts payable, and is set up on the **Accounts receivable parameters** page and the **Procurement and sourcing parameters** page. The **Calculation of line discount** parameter has the following options:
