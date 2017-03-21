@@ -46,9 +46,8 @@ Dynamics AX includes a LINQ provider, which allows the user to access Dynamics A
 ## Two syntactical mechanisms for accessing LINQ
 There are two syntactical approaches for using LINQ, as described in the following table.
 
-|                                                                    |                                                                                           |                                    |
-|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------|
 |                                                                    | **X++**                                                                                   | **C\# and Visual Basic**           |
+|-----------------|-----------------------|------------------------------------|
 | **LINQ by standard method call syntax.**                           | Impractical. Language support for generics is vital for LINQ and is not supported in X++. | Available, requires lambda syntax. |
 | **LINQ by specialized syntax that is understood by the compiler.** | Not available.                                                                            | Available, easier to use.          |
 

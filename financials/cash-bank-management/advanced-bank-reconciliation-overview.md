@@ -3,7 +3,7 @@
 
 title: Advanced bank reconciliation overview
 description: This article describes the flow for the advanced bank reconciliation process. The advanced bank reconciliation feature lets you import bank statements that can be automatically reconciled from within bank transactions.
-author: ShylaThompson
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-11 21 - 23 - 46
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: BankReconciliationMatchRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 22104

@@ -54,7 +54,11 @@ The Governmental Accounting Standards Board (GASB) recommends a set of Generally
     -   Trust funds
     -   Agency funds
 
-The three GAAP fund classes, plus a **Memo** class, are predefined options in Microsoft Dynamics 365 for Operations. Fund types are defined according to the needs of the organization. In most cases, you’ll set up the eight GAAP fund types. The fund types group funds for detailed fiscal tracking and reporting. Many funds can be included in a single high-level report, but each fund remains a separate fiscal and accounting entity with its own general ledger, income statements, and balance sheet reports. Each fund must have a unique fund number. In Dynamics 365 for Operations, fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund. When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund.
+The three GAAP fund classes, plus a **Memo** class, are predefined options in Microsoft Dynamics 365 for Operations. 
+
+Fund types are defined according to the needs of the organization. In most cases, you’ll set up the eight GAAP fund types. The fund types group funds for detailed fiscal tracking and reporting. Many funds can be included in a single high-level report, but each fund remains a separate fiscal and accounting entity with its own general ledger, income statements, and balance sheet reports. 
+
+Each fund must have a unique fund number. In Dynamics 365 for Operations, fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund. When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund.
 
 ### Example
 
@@ -90,7 +94,9 @@ The following table shows these funds grouped by fund class and fund type.
 |                |                        | 3914            | Clerk of Courts                  |
 
 ## How are financial dimensions used with funds?
-Each fund must have a unique fund number. In Dynamics 365 for Operations, fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund. When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund. Public sector organizations usually require balanced entries for financial dimensions related to funds. When a financial dimension or a combination of dimensions is marked to require balanced entries, the system will not post a transaction where debits do not equal credits for the financial dimension.
+Each fund must have a unique fund number. In Dynamics 365 for Operations, fund numbers are used as dimension values in financial account numbers where a dimension has been mapped to a fund. When an account number is linked to a particular fund, it belongs to the set of financial books that are contained by that fund. 
+
+Public sector organizations usually require balanced entries for financial dimensions related to funds. When a financial dimension or a combination of dimensions is marked to require balanced entries, the system will not post a transaction where debits do not equal credits for the financial dimension.
 
 ## How do I set a fund balance to carry over to the new year?
 To learn about year-end processing for funds, see [Year-end processing in the public sector](year-end-processing-public-sector.md).

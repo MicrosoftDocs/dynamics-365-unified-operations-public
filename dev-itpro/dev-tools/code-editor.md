@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23941
@@ -37,16 +37,21 @@ This article reviews the code editor features for Microsoft Dynamics 'AX 7.'
 Code editor
 -----------
 
-You use the code editor in Microsoft Visual Studio to write the X++ code for your applications. The X++ language is fully integrated into the Visual Studio environment. As you write your X++ code, you will see the familiar features of the Visual Studio code editor. For example, IntelliSense is displayed to help you write the code. You can also navigate to methods and classes in the code editor by using the navigation drop-down menus at the top of the code editor window. [![31\_DevoToolsConcept](./media/31_devotoolsconcept.png)](./media/31_devotoolsconcept.png) Other features, such as collapsible sections, are also available.
+You use the code editor in Microsoft Visual Studio to write the X++ code for your applications. The X++ language is fully integrated into the Visual Studio environment. As you write your X++ code, you will see the familiar features of the Visual Studio code editor. For example, IntelliSense is displayed to help you write the code. You can also navigate to methods and classes in the code editor by using the navigation drop-down menus at the top of the code editor window. 
+
+![DevoToolsConcept](./media/31_devotoolsconcept.png) 
+
+Other features, such as collapsible sections, are also available.
 
 ### Opening the element designer
 
-You can open the element designer that corresponds to the current X++ source code by right-clicking in the code editor and then selecting **Open Designer**. ![opendesigner](./media/opendesigner.jpg)
+You can open the element designer that corresponds to the current X++ source code by right-clicking in the code editor and then selecting **Open Designer**. 
 
-See also
---------
+![opendesigner](./media/opendesigner.jpg)
+
+# See also
 
 [Technical Concepts Guide](developer-home-page.md)
 
-[Development tools](development-tools.md
+[Development tools](development-tools.md)
 

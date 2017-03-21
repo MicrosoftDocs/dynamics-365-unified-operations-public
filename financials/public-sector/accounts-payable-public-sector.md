@@ -55,7 +55,8 @@ After you’ve set up the prerequisites,  you might have to set up the follow
 
 
 -   [One-time vendors in the public sector](one-time-vendors-public-sector.md) – When approval or a contract in the form of a purchase order isn't required, you can quickly create one or more invoices at the same time that you create a record for the vendor. For more information, see [Planning for one-time vendors in the public sector](plan-one-time-vendors-public-sector.md).
--   [1099 form overview in the public sector](/localizations/north-americs/form-1099-public-sector.md) – If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information at the end of the calendar year. Public sector organizations use forms 1099-G and 1099-S.
+-   1099 form overview in the public sector – If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information at the end of the calendar year. Public sector organizations use forms 1099-G and 1099-S.
+
 > [!NOTE]
 > This also applies to Procurement and sourcing.
 

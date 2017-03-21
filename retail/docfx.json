@@ -1,7 +1,7 @@
 {
   "build": {
     "content": [
-      {
+        {
         "files": [
           "**/*.md"
         ],
@@ -11,7 +11,9 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE"
-        ]
+        ], 
+        "src":"dev-itpro",
+        "dest": "retail" 
       }
     ],
     "resource": [
@@ -24,7 +26,9 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ], 
+        "src":"dev-itpro",
+        "dest": "retail" 
       }
     ],
     "overwrite": [],

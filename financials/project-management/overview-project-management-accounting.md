@@ -3,7 +3,7 @@
 
 title: Project management and accounting
 description: The project management and accounting functionality can be used in multiple industries to provide a service, produce a product, or achieve a result.  
-author: kfend
+author: twheeloc
 manager: AnnBe
 ms.date: 2016-05-20 16 - 32 - 24
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 51
+# ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 87983
@@ -37,10 +37,16 @@ The project management and accounting functionality can be used in multiple indu
 A project is a group of activities that is designed to provide a service, produce a product, or achieve a result. Projects consume resources and generate financial results in the form of revenues or assets.
 
 ## Projects across industries
-The project management and accounting functionality can be used in multiple industries, as shown in the following illustration. [![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) In a call center, a ticket can be used to describe the set of actions that are required to resolve a call. Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects. In marketing, a campaign represents a set of work that must be delivered. In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods. Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Operations can help with the planning, execution, and analysis of these projects.
+The project management and accounting functionality can be used in multiple industries, as shown in the following illustration. [![Projects accross industries](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+
+In a call center, a ticket can be used to describe the set of actions that are required to resolve a call. Consulting companies, such as management or technical consulting organizations or advertising agencies, refer to their activities as projects. In marketing, a campaign represents a set of work that must be delivered. In project-based manufacturing, a production order relates the various work that must be done to produce some finished goods. Whatever name is used for them, these projects involve resources, schedules, and costs, and the project management and accounting functionality in Microsoft Dynamics 365 for Operations can help with the planning, execution, and analysis of these projects.
 
 ## Project phases
-Although the following process flow is aimed toward external projects, or project that are completed for one or more customers, the functionality also applies to internal, cost-only projects. ![3 stages of a project](./media/3-stages-of-a-project.png) As shown in the preceding illustration, project management and accounting can be divided into three phases:
+Although the following process flow is aimed toward external projects, or project that are completed for one or more customers, the functionality also applies to internal, cost-only projects. 
+
+![3 stages of a project](./media/3-stages-of-a-project.png) 
+
+As shown in the preceding illustration, project management and accounting can be divided into three phases:
 
 1.  Initiate
 2.  Execute
@@ -51,15 +57,23 @@ During project initiation, several key processes occur. You can use a project 
 
 ### Create project quotations
 
-In the initial sales phase of a project, a project quotation lets you provide a customer with a non-binding offer. A quotation can include elements such as the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges. You can also issue a letter of guarantee for a project quotation transaction between your organization and the customer. After the project quotation is created, you can create the letter of guarantees request for the customer and submit it to the bank. After the bank has approved the request, the letter of guarantee is issued to the customer. For more information, see [Project quotations](project-quotations.md).
+In the initial sales phase of a project, a project quotation lets you provide a customer with a non-binding offer. A quotation can include elements such as the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges.
+
+You can also issue a letter of guarantee for a project quotation transaction between your organization and the customer. After the project quotation is created, you can create the letter of guarantees request for the customer and submit it to the bank. After the bank has approved the request, the letter of guarantee is issued to the customer. 
+
+For more information, see [Project quotations](project-quotations.md).
 
 ### Create project contracts
 
-When you enter into a contract with a customer or other funding source to complete a project, you must first create a project contract. Then, when you create the project, you must assign it to the corresponding contract. The type of project that you create for a project contract determines the method that is used to invoice the project customers. You can modify a project contract and the related project, but you can’t change the project type. For more information about project types, see the "Creating projects" section. For more information about project contracts, see [Project contracts](project-contracts.md).
+When you enter into a contract with a customer or other funding source to complete a project, you must first create a project contract. Then, when you create the project, you must assign it to the corresponding contract. The type of project that you create for a project contract determines the method that is used to invoice the project customers. You can modify a project contract and the related project, but you can’t change the project type. For more information about project types, see the "Creating projects" section.
+
+For more information about project contracts, see [Project contracts](project-contracts.md).
 
 ### Create work breakdown structures
 
-The degree of detail in a WBS depends on the level of accuracy that is required in estimates and the level of tracking that is required against those estimates. Projects that have very low tolerance for slippages in schedule or cost usually require a more detailed WBS, and also require diligent tracking of work progress and cost against the WBS. For more information, see [Work breakdown structures](work-breakdown-structures.md).
+The degree of detail in a WBS depends on the level of accuracy that is required in estimates and the level of tracking that is required against those estimates. Projects that have very low tolerance for slippages in schedule or cost usually require a more detailed WBS, and also require diligent tracking of work progress and cost against the WBS. 
+
+For more information, see [Work breakdown structures](work-breakdown-structures.md).
 
 ### Create project forecasts and budgets
 
@@ -69,18 +83,27 @@ You can use forecasting if your organization has an operational perspective and 
 
 You can create six types of projects in Microsoft Dynamics 365 for Operations. Each project type is set up differently for costs and revenue recognition. The project type that you choose depends on the purpose of the project. The following table describes the typical use of each project type.
 
-| Project type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Project type      | Description 
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Time and material | In Time and material projects, the customer is billed for all costs that are incurred on a project. These cost include costs for hours, expenses, items, and fees.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Fixed-price       | In Fixed-price projects, the invoices consist of on-account transactions. A Fixed-price project is invoiced according to a billing schedule that is based on a project contract. Revenue for a Fixed-price project can be calculated and posted throughout the project by using the completed percentage method. Alternatively, revenue can be calculated and posted when the project is completed, by using the completed contract method. Companies can often benefit from using the value of the work in process (WIP) to calculate the degree of completion of a project or group of projects.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Investment        | Investment projects are projects that don't produce immediate earnings. They are typically used for long-term internal projects where the costs must be capitalized. Only costs for items, hours, and expenses can be recorded for an Investment project. Costs in an Investment project are tracked and controlled by using estimate functionality. Investment projects can be set up with an optional maximum capitalization. As an Investment project progresses, you record its costs in WIP accounts, where the costs are held until the project is completed. When the project is eliminated, you transfer the WIP value to a fixed asset, a ledger account, or a new project.**Note:** Transactions on Investment projects aren't shown on the **Post costs**, **Accrue revenue**, or **Create invoice proposals** page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Cost project      | Like Investment projects, Cost projects are typically used to track internal projects, and only hours, expenses, and items can be recorded for them. However, Cost projects are usually of shorter duration than Investment projects. Additionally, unlike Investment projects, Cost projects can’t be capitalized to balance sheet accounts. Instead, their project transactions are posted only to profit and loss accounts. **Note:** Transactions on Cost projects aren't reflected on the **Post costs**, **Accrue revenue**, or **Create invoice proposals** page. Because Cost projects are typically used to track internal projects, they don't usually have to be associated with a customer account. However, if your setup requires that item requirements be created for purchase orders, you must associate the Cost project with a customer. This association is required, because item requirements are managed as sales order lines, and the system requires that a customer be specified. However, this setup won't cause item requirements to be created automatically from a purchase order. For Cost projects, the **Create item requirement** setting is ignored. If you need an item requirement in a Cost project, you can create it manually, provided that a customer is associated with the project. |
-| Internal          | Internal projects are used to track costs on a project that is internal to your organization. Internal projects can provide a planning tool to manage resource consumption. **Note:** Transactions on internal projects aren't reflected on the **Accrue revenue** or **Create invoice proposals** page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Time              | Time projects are used to track time that is associated with non-chargeable and non-productive activities, such as a project to track sick time for workers. Transactions in Time projects aren't posted to the ledger. Instead, they are included in worker utilization reports. Only hour transactions can be recorded in Time projects. You use an hour journal or timesheet to register these hours to the project. After the hours are registered, they appear as project transactions but don't have corresponding voucher transactions.**Note:** Transactions on Time projects aren't reflected on the **Post costs**, **Accrue revenue**, or **Create invoice proposals** page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Time and material | In Time and material projects, the customer is billed for all costs that are incurred on a project. These cost include costs for hours, expenses, items, and fees.                                                                                                                  |
+| Fixed-price       | In Fixed-price projects, the invoices consist of on-account transactions. A Fixed-price project is invoiced according to a billing schedule that is based on a project contract. Revenue for a Fixed-price project can be calculated and posted throughout the project by using the completed percentage method. Alternatively, revenue can be calculated and posted when the project is completed, by using the completed contract method. Companies can often benefit from using the value of the work in process (WIP) to calculate the degree of completion of a project or group of projects.                                                                                                                                     |
+| Investment        | Investment projects are projects that don't produce immediate earnings. They are typically used for long-term internal projects where the costs must be capitalized. Only costs for items, hours, and expenses can be recorded for an Investment project. Costs in an Investment project are tracked and controlled by using estimate functionality. Investment projects can be set up with an optional maximum capitalization. As an Investment project progresses, you record its costs in WIP accounts, where the costs are held until the project is completed. When the project is eliminated, you transfer the WIP value to a fixed asset, a ledger account, or a new project.
+> [!NOTE] 
+> Transactions on Investment projects aren't shown on the **Post costs**, **Accrue revenue**, or **Create invoice proposals** page.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Cost project      | Like Investment projects, Cost projects are typically used to track internal projects, and only hours, expenses, and items can be recorded for them. However, Cost projects are usually of shorter duration than Investment projects. Additionally, unlike Investment projects, Cost projects can’t be capitalized to balance sheet accounts. Instead, their project transactions are posted only to profit and loss accounts. 
+> [!NOTE] 
+> Transactions on Cost projects aren't reflected on the **Post costs**, **Accrue revenue**, or **Create invoice proposals** page. Because Cost projects are typically used to track internal projects, they don't usually have to be associated with a customer account. However, if your setup requires that item requirements be created for purchase orders, you must associate the Cost project with a customer. This association is required, because item requirements are managed as sales order lines, and the system requires that a customer be specified. However, this setup won't cause item requirements to be created automatically from a purchase order. For Cost projects, the **Create item requirement** setting is ignored. If you need an item requirement in a Cost project, you can create it manually, provided that a customer is associated with the project. |
+| Internal          | Internal projects are used to track costs on a project that is internal to your organization. Internal projects can provide a planning tool to manage resource consumption. **Note:** Transactions on internal projects aren't reflected on the **Accrue revenue** or **Create invoice proposals** page.                                                                                                                                                                                                                                                                       |
+| Time              | Time projects are used to track time that is associated with non-chargeable and non-productive activities, such as a project to track sick time for workers. Transactions in Time projects aren't posted to the ledger. Instead, they are included in worker utilization reports. Only hour transactions can be recorded in Time projects. You use an hour journal or timesheet to register these hours to the project. After the hours are registered, they appear as project transactions but don't have corresponding voucher transactions.
+
+> [!NOTE] 
+> Transactions on Time projects aren't reflected on the **Post costs**, **Accrue revenue**, or **Create invoice proposals** page.                                                                                                                                                                                       |
 
 ### Assign workers, categories, and resources
 
-You can schedule worker resources based either on the requirements and schedule of a project, or on the skills and availability of workers. By using the resource scheduling capabilities, you can deploy your organization’s workers efficiently and effectively. You can quickly find the most qualified workers who are available to work on your project. You can also easily see how those workers might be used more effectively during the course of the project. Here are some of the ways that you can use the resource scheduling functionality:
+You can schedule worker resources based either on the requirements and schedule of a project, or on the skills and availability of workers. By using the resource scheduling capabilities, you can deploy your organization’s workers efficiently and effectively. You can quickly find the most qualified workers who are available to work on your project. You can also easily see how those workers might be used more effectively during the course of the project. 
+
+Here are some of the ways that you can use the resource scheduling functionality:
 
 -   Use information about a worker’s attributes, such as education, skills, certifications, and project experience, to match the worker to the requirements of a project.
 -   Use information about a worker’s calendar and availability to match the worker’s schedule to the project calendar.
@@ -94,15 +117,21 @@ During project execution, team members or managers record work and the expense
 
 ### Manage work breakdown structures
 
-A WBS is a description of the work that will be completed for a project. A WBS is a hierarchy of tasks. It represents not only the work for each task, but also the size, cost, and duration of the task. For more information, see [Work breakdown structures](work-breakdown-structures.md).
+A WBS is a description of the work that will be completed for a project. A WBS is a hierarchy of tasks. It represents not only the work for each task, but also the size, cost, and duration of the task. 
+
+For more information, see [Work breakdown structures](work-breakdown-structures.md).
 
 ### Manage project forecasts and budgets
 
-There are two ways to manage and control your projects: project forecasts and project budgets. You can use forecasting if your organization has an operational perspective and focuses on the revenues and costs that are derived from specific transactions. However, if your organization focuses more on financial amounts, you can use budgeting. For more information, see [Project forecasts and budgets](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
+There are two ways to manage and control your projects: project forecasts and project budgets. You can use forecasting if your organization has an operational perspective and focuses on the revenues and costs that are derived from specific transactions. However, if your organization focuses more on financial amounts, you can use budgeting.
+
+For more information, see [Project forecasts and budgets](project-forecasts-budgets.mdhttps:/ax.help.dynamics.com/en/wiki/project-forecasts-and-budgets/).
 
 ### Create production orders
 
-A project-related production order can be linked to a sales order or an item requirement by using either the finished item method or the consumed item method. Additionally, if the production order was created manually, there is no link between the production order and the sales order or item requirement (no link to order). However, if the production order was created automatically to fulfill a sales order or an item requirement, there is a link between the production order and sales order or item requirement (link to order). Based on the combinations of these factors, use one of the following methods:
+A project-related production order can be linked to a sales order or an item requirement by using either the finished item method or the consumed item method. Additionally, if the production order was created manually, there is no link between the production order and the sales order or item requirement (no link to order). However, if the production order was created automatically to fulfill a sales order or an item requirement, there is a link between the production order and sales order or item requirement (link to order). 
+
+Based on the combinations of these factors, use one of the following methods:
 
 -   **Finished item/link to order** – Link the project to a sales order or an item requirement. When you use this method, actual project costs are posted when the sales order is invoiced or when the packing slip is updated for the item requirement. The cost is posted as a finished item.
 -   **Finished item/no link to order** – Actual costs can’t be posted until the production cycle for an item has a status of **Ended**. The cost for the finished item is posted as a single transaction.
@@ -155,12 +184,19 @@ The purpose of the purchase order determines when the purchase order is consumed
 
 #### Sales orders for projects
 
-In Project management and accounting, you can register the consumption of items in several ways. You can sell items or purchase items from a project, or reserve items for a project. You can order items from the company’s inventory for consumption on a project. Alternatively, or you can purchase items from an external vendor. Items can be consumed on all types of projects except Time projects. The way that you order items depends on where you're ordering them from:
+In Project management and accounting, you can register the consumption of items in several ways. You can sell items or purchase items from a project, or reserve items for a project. 
+
+You can order items from the company’s inventory for consumption on a project. Alternatively, or you can purchase items from an external vendor. Items can be consumed on all types of projects except Time projects. 
+
+The way that you order items depends on where you're ordering them from:
 
 -   To order items from the company’s inventory, you must enter the order as an item requirement. If you use the **Item requirements** page, you can set up the requirement so that you receive items as partial deliveries. Therefore, you can postpone consumption of a quantity of the items until the items are required.
 -   To order items from an external vendor, you must create the order as a purchase order on the **Purchase order** page.
 
-**Note:** The packing slip for a project-related sales order can’t be canceled if the items have already been marked for packing. The following table lists the methods for ordering items and describes how the items are consumed.
+> [!NOTE] 
+> The packing slip for a project-related sales order can’t be canceled if the items have already been marked for packing. 
+
+The following table lists the methods for ordering items and describes how the items are consumed.
 
 | Method            | Purpose                                                                                                                                                        | Consumption of item transactions                                                                                                                  |
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -171,11 +207,17 @@ In Project management and accounting, you can register the consumption of items 
 
 ### Process project invoices
 
-The project type determines which invoicing procedure should be applied. Only the two external project types (Time and material and Fixed-price) can be invoiced. Time and material projects and Fixed-price projects are always attached to a project contract. Before you create a customer invoice for a project, you can create a preliminary invoice, or invoice proposal. In an invoice proposal, you can select project transactions to include in a project invoice. You can then review the invoice details before you post the project invoice and send it to the customer or other funding source. For more information about how to process project invoices, see [Project invoicing](/accounts-payable/project-invoicing.md).
+The project type determines which invoicing procedure should be applied. Only the two external project types (Time and material and Fixed-price) can be invoiced. Time and material projects and Fixed-price projects are always attached to a project contract. 
+
+Before you create a customer invoice for a project, you can create a preliminary invoice, or invoice proposal. In an invoice proposal, you can select project transactions to include in a project invoice. You can then review the invoice details before you post the project invoice and send it to the customer or other funding source. 
+
+For more information about how to process project invoices, see [Project invoicing](/accounts-payable/project-invoicing.md).
 
 ### Calculate the cost to complete a project
 
-When you create an estimate, you can choose the method that is used to calculate the cost to complete the project. You select a method in the **Cost to complete method** field on the **Create estimate** page. The method that you choose is applied separately to each cost line in the cost estimate. While a line has a status of **Created**, you can change the method that is applied to it on the **Cost estimate** page. The following table describes the methods for calculating the cost to complete a project.
+When you create an estimate, you can choose the method that is used to calculate the cost to complete the project. You select a method in the **Cost to complete method** field on the **Create estimate** page. The method that you choose is applied separately to each cost line in the cost estimate. While a line has a status of **Created**, you can change the method that is applied to it on the **Cost estimate** page. 
+
+The following table describes the methods for calculating the cost to complete a project.
 
 <table>
 <colgroup>
@@ -201,7 +243,9 @@ When you create an estimate, you can choose the method that is used to calculate
 <li>Compare forecast transactions with actual transactions.</li>
 <li>Maintain, decrease, or increase the estimates for the next period.</li>
 </ol>
-Microsoft Dynamics 365 for Operations doesn't automatically decrease the forecasted estimates. Therefore, it's a good idea to maintain an original forecast model on the Fixed-price project, to establish a baseline for comparison when the project is completed. <strong>Note:</strong> When you select this method, use at least two forecast models. One model should contain the original forecast. For the other model, you should copy forecast transactions from another model. This method is valid only for Fixed-prices and Investment projects.</td>
+Microsoft Dynamics 365 for Operations doesn't automatically decrease the forecasted estimates. Therefore, it's a good idea to maintain an original forecast model on the Fixed-price project, to establish a baseline for comparison when the project is completed. 
+> [!NOTE] 
+> When you select this method, use at least two forecast models. One model should contain the original forecast. For the other model, you should copy forecast transactions from another model. This method is valid only for Fixed-prices and Investment projects.</td>
 </tr>
 <tr class="odd">
 <td>Remaining budget</td>
@@ -223,11 +267,15 @@ Microsoft Dynamics 365 for Operations doesn't automatically decrease the foreca
 </table>
 
 ## Analyze the project
-At its most basic level, a project is used to group transactions that record costs, and then post these costs to the general ledger. Generally, these transactions are the result of business documents, such as timesheets, expense reports, vendor invoices, or inventory transactions. The life cycle of a project usually starts with estimates, forecasts, and budgets that help plan and anticipate the work and financial impact of the project. As you analyze a project, you can evaluate not only the transactions that occurred during the project, but also the accuracy of your estimates and forecasts, the utilization rates of the project team members, and the overall success of the project.
+At its most basic level, a project is used to group transactions that record costs, and then post these costs to the general ledger. 
+
+Generally, these transactions are the result of business documents, such as timesheets, expense reports, vendor invoices, or inventory transactions. The life cycle of a project usually starts with estimates, forecasts, and budgets that help plan and anticipate the work and financial impact of the project. As you analyze a project, you can evaluate not only the transactions that occurred during the project, but also the accuracy of your estimates and forecasts, the utilization rates of the project team members, and the overall success of the project.
 
 ### Analyze cash flow
 
-Use cash flow monitoring to review both the forecasted cash flows and the actual cash flows for a project. You can review cash flows while a project is in progress, or you can view the cash flows of a completed project. By monitoring cash flows, you can evaluate a single project, use the reports to view multiple projects, and transfer project cash flows to the cash flow forecasts in the general ledger.
+Use cash flow monitoring to review both the forecasted cash flows and the actual cash flows for a project. You can review cash flows while a project is in progress, or you can view the cash flows of a completed project. 
+
+By monitoring cash flows, you can evaluate a single project, use the reports to view multiple projects, and transfer project cash flows to the cash flow forecasts in the general ledger.
 
 #### Cash inflow forecasting
 
@@ -255,7 +303,9 @@ Actual cash inflow resembles forecasting, but you can begin your calculations f
 
 #### Cost forecasting
 
-Based on the days that are defined, the cost payment date can differ from the project date. In this case, the cost payment date is calculated by adding the number of days from the project date to the number of days in the terms of payment. For example, the project date of the transaction is March 5, 2012, and the following terms of payment are set:
+Based on the days that are defined, the cost payment date can differ from the project date. In this case, the cost payment date is calculated by adding the number of days from the project date to the number of days in the terms of payment. 
+
+For example, the project date of the transaction is March 5, 2012, and the following terms of payment are set:
 
 -   **Hours:** Current month (**M**)
 -   **Expenses:** 14 days (**D14**)
@@ -267,7 +317,12 @@ Based on these settings, here is the cost payment date for each transaction type
 -   **Expenses:** March 19, 2012, which is 14 days after the date of the transaction.
 -   **Items:** April 4, 2012, which is 30 days after the date of the transaction.
 
-**Note:** The due date for the purchase order is based on the vendor transaction when the project purchase order is created. The due date isn't determined by any default settings. The cost payment date isn't calculated on buffer days. After a project is completed, when all costing and invoicing is completed, both the cost and the sales are posted to the profit and loss accounts. When all sales and vendor invoices are completed, you can view the relationship between fields on the **Cash flow** page and fields on the **Project statements** page.
+> [!NOTE] 
+> The due date for the purchase order is based on the vendor transaction when the project purchase order is created. The due date isn't determined by any default settings. 
+
+The cost payment date isn't calculated on buffer days. After a project is completed, when all costing and invoicing is completed, both the cost and the sales are posted to the profit and loss accounts. 
+
+When all sales and vendor invoices are completed, you can view the relationship between fields on the **Cash flow** page and fields on the **Project statements** page.
 
 | Cash flow page | Project statements page |
 |----------------|-------------------------|
@@ -277,7 +332,10 @@ Based on these settings, here is the cost payment date for each transaction type
 
 ### Review costs
 
-You can monitor the costs that your organization incurs during a project on the **Cost control** page. By comparing the original budgeted costs for the project with the current actual costs and the committed costs, you can determine whether the project is on track, over budget, or under budget. **Note:** When you use the **Cost control** page to view the current status of project costs, use the forecast models that were selected for the original and remaining budget. If you select other forecast models when you calculate costs, the calculation results will not be accurate.
+You can monitor the costs that your organization incurs during a project on the **Cost control** page. By comparing the original budgeted costs for the project with the current actual costs and the committed costs, you can determine whether the project is on track, over budget, or under budget. 
+
+> [!NOTE] 
+> When you use the **Cost control** page to view the current status of project costs, use the forecast models that were selected for the original and remaining budget. If you select other forecast models when you calculate costs, the calculation results will not be accurate.
 
 #### Viewing the remaining budgeted amounts
 
@@ -315,7 +373,11 @@ On the **Cost control** page, on the **Deviation** tab, you can view the differe
 
 ### Analyze utilization
 
-The utilization rate is the percentage of time that a worker performs billable or productive work in a specific working period. Billable hours are the worker’s hours that can be charged to a specific customer. A worker’s utilization rate is calculated by dividing the number of billable hours by the number of working hours in a specific period. For example, if a worker has 30 billable hours in a period, and the number of working hours in the same period is 40, the worker’s utilization rate is 75 percent. When you calculate the utilization rate for a worker, you can calculate either the billable rate or the efficiency rate:
+The utilization rate is the percentage of time that a worker performs billable or productive work in a specific working period. Billable hours are the worker’s hours that can be charged to a specific customer. 
+
+A worker’s utilization rate is calculated by dividing the number of billable hours by the number of working hours in a specific period. For example, if a worker has 30 billable hours in a period, and the number of working hours in the same period is 40, the worker’s utilization rate is 75 percent. 
+
+When you calculate the utilization rate for a worker, you can calculate either the billable rate or the efficiency rate:
 
 -   **Billable rate** – The difference between billable hours and non-billable hours or norm hours.
 -   **Efficiency rate** – The difference between productive hours and non-productive hours or norm hours. Productive hours are the hours that the worker spends contributing to a specific project. Productive hours are typically billed to customers, except in the case of internal projects. Non-productive hours are never billed to a customer.

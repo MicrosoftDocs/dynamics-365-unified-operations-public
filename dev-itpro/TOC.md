@@ -1,12 +1,12 @@
 # [Introduction](index.md)
 
-# [Overview of Dynamics 365 for Operations](get-started/toc.md)
+# [Overview of Dynamics 365 for Operations](get-started/TOC.md)
 
-# [Deployment](deployment/toc.md)
+# [Deployment](deployment/TOC.md)
 
-# [Upgrade and migration](migration-upgrade/toc.md)
+# [Upgrade and migration](migration-upgrade/TOC.md)
 
-# [Servicing](servicing/toc.md)
+# [Servicing](servicing/TOC.md)
 
 # Security
 ## [Role-based security](system-administration/role-based-security.md)

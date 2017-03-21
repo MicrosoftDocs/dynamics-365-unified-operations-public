@@ -69,7 +69,7 @@ These instruments include deposit slips, checks, bills of exchange, and promisso
 -   [Reimburse customers](../accounts-receivable/reimburse-customers.md)
 -   [Scenario: Automatic settlement and prioritization](../accounts-receivable/automatic-settlement-prioritization.md)
 -   [Scenario: Handling cash discount for overpayments](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Scenario: Settle a partial customer payment and settle the final payment in full before the discount date](../accounts-receivable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Scenario: Settle a partial customer payment and settle the final payment in full before the discount date](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
 -   [Scenario: Settle a partial customer payment before the discount date with a final payment after the discount date](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
