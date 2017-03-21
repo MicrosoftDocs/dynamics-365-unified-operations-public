@@ -125,6 +125,7 @@ This section contains two simple code samples. One sample is written in X++, and
 -   Global::info for message output, with and without the Global:: prefix
 -   Global::error for message output
 -   The use of single and double quotation characters (' and ") as string delimiters.
+
     | **Note**                                                                                               |
     |--------------------------------------------------------------------------------------------------------|
     | The best practice is to use double quotation marks for any string that might be displayed to the user. |
@@ -133,7 +134,7 @@ This section contains two simple code samples. One sample is written in X++, and
 
 This X++ code sample is in the form of a job. There is a node titled Jobs in the Application Object Tree (AOT). This sample can be added under the Jobs node, and then the job can be run.
 
-static void JobRs001a_HelloWorld(Args _args)
+    static void JobRs001a_HelloWorld(Args _args)
     {
         if (1 == 1) 
         {
@@ -167,7 +168,9 @@ Here is the actual output from the Infolog window:
 #### C\# Sample
 
 The following C\# program is a rewrite of the previous X++ program. The differences between X++ and C\# are highlighted by commenting out the X++ lines, and replacing them with the C\# syntax.
+
 C#
+
     using System;
     class Pgm_CSharp
     {
@@ -199,11 +202,14 @@ C#
         }
     }
 
- 
-
 ##### Output
 
-Here is the actual output to the C\# console: `Hello World, Explicit .Out , 1.` `Hello World, Implicit default to .Out , 2.` `.Error is like .Out, but can be for warnings, 3.` `.Error is like .Out, but is for errors, 4.`
+Here is the actual output to the C\# console:
+
+    `Hello World, Explicit .Out , 
+    1.` `Hello World, Implicit default to .Out , 
+    2.` `.Error is like .Out, but can be for warnings, 
+    3.` `.Error is like .Out, but is for errors, 4.`
 
 ## X++, C\# Comparison: Loops
 This topic compares the loop features between X++ and C\#.
@@ -298,56 +304,37 @@ The X++ code samples in this topic use the `print` function to display results. 
 The **while** keyword supports looping in both X++ and C\#.
 #### X++ Sample of while
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><pre><code>static void JobRs002a_LoopsWhile(Args _args)
-{
-    int nLoops = 1;
-    while (nLoops &lt;= 88)
+    static void JobRs002a_LoopsWhile(Args _args)
     {
-        print nLoops;
-        pause;
-        // The X++ modulo operator is mod.
-        if ((nLoops mod 4) == 0)
+        int nLoops = 1;
+        while (nLoops &lt;= 88)
         {
-            break;
+            print nLoops;
+            pause;
+            // The X++ modulo operator is mod.
+            if ((nLoops mod 4) == 0)
+            {
+                break;
+            }
+            ++ nLoops;
         }
-        ++ nLoops;
-    }
-    beep(); // Function.
-    pause; // X++ keyword.
-}</code></pre></td>
-</tr>
-</tbody>
-</table>
-
- 
+        beep(); // Function.
+        pause; // X++ keyword.
+} 
 
 ##### Output
 
 The output in the X++ Print window is as follows:
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><pre><code>1
-2
-3
-4</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+    1
+    2
+    3
+    4
 
 #### C\# Sample of while
 
-C\#
-Copy Code
+C#
+
     using System;
     public class Pgm_CSharp
     {
@@ -377,25 +364,17 @@ Copy Code
 ##### Output
 
 The console output from the C\# program is as follows:
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><pre><code>[C:\MyDirectory\]
-&gt;&gt; Rosetta_CSharp_1.exe
-1
-(Press any key to resume.)
-2
-(Press any key to resume.)
-3
-(Press any key to resume.)
-4
-(Press any key to resume.)</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+    [C:\MyDirectory\]
+    &gt;&gt; Rosetta_CSharp_1.exe
+    1
+    (Press any key to resume.)
+    2
+    (Press any key to resume.)
+    3
+    (Press any key to resume.)
+    4
+    (Press any key to resume.)
 
 ### Example 2: The for Loop
 
@@ -403,57 +382,41 @@ The **for** keyword supports looping in both X++ and C\#.
 #### X++ Sample of for
 
 In X++ the counter variable cannot be declared as part of the **for** statement.
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><pre><code>static void JobRs002a_LoopsWhileFor(Args _args)
-{
-    int ii; // The counter.
-    for (ii=1; ii &lt; 5; ii++)
+
+    static void JobRs002a_LoopsWhileFor(Args _args)
     {
-        print ii;
-        pause;
-        // You must click the OK button to proceed
-        // beyond a pause statement.
-        // ii is always less than 99.
-        if (ii &lt; 99)
+        int ii; // The counter.
+        for (ii=1; ii &lt; 5; ii++)
         {
-            continue;
+            print ii;
+            pause;
+            // You must click the OK button to proceed
+            // beyond a pause statement.
+            // ii is always less than 99.
+            if (ii &lt; 99)
+            {
+                continue;
+            }
+            print &quot;This message never appears.&quot;;
         }
-        print &quot;This message never appears.&quot;;
-    }
-    pause; // X++ keyword.
-}</code></pre></td>
-</tr>
-</tbody>
-</table>
+        pause; // X++ keyword.
+}
 
  
 
 ##### Output
 
 The output in the X++ Print window is as follows:
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><pre><code>1
-2
-3
-4</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+    1
+    2
+    3
+    4
 
 #### C\# Sample of for
 
-C\#
-Copy Code
+C#
+
     using System;
     public class Pgm_CSharp
     {
@@ -486,24 +449,15 @@ Copy Code
 ##### Output
 
 The console output from the C\# program is as follows:
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><pre><code>1
-(Press any key to resume.)
-2
-(Press any key to resume.)
-3
-(Press any key to resume.)
-4
-(Press any key to resume.)
-(Press any key to resume.)</code></pre></td>
-</tr>
-</tbody>
-</table>
+    1
+    (Press any key to resume.)
+    2
+    (Press any key to resume.)
+    3
+    (Press any key to resume.)
+    4
+    (Press any key to resume.)
+    (Press any key to resume.)
 
 ## X++, C\# Comparison: Switch
 This topic compares the **switch** statement in X++ and C\#.
@@ -511,6 +465,7 @@ This topic compares the **switch** statement in X++ and C\#.
 ### X++ to C\# Comparisons
 
 In both X++ and C\#, the **switch** statement involves the keywords **case**, **break**, and **default**. The following table lists the differences in the **switch** statement between X++ and C\#.
+
 | Feature                                      | X++                                                                                                                                                                                                                                                                                                                                   | C\#                                                                                                                                                                                                                                                               | Comments                                                                                                                                      |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `break;` at the end of each case block       | In X++, when any **case** block matches the expression value on the **switch** clause, all other **case** and **default** blocks are executed until a `break;` statement is reached. No `break;` statement is ever required in an X++ **switch** statement, but `break;` statements are important in almost all practical situations. | In C\#, a `break;` statement is always needed after the statements in a **case** or **default** block. If a **case** clause has no statements between itself and the next **case** clause, a `break;` statement is not required between the two **case** clauses. | We recommend against omitting the `break;` statement after any case **block**, because it can confuse the next programmer who edits the code. |
@@ -577,8 +532,8 @@ The C\# switch example shows the following:
 -   case 1: has a comment explaining that only constant expressions can be given on a **case** clause.
 -   `break;` statements occur after the last statement in each **case** block that has statements, as is required by C\#.
 
-C\#
-Copy Code
+C#
+
     using System;  // C#
     namespace CSharpSwitch2
     {
@@ -636,12 +591,6 @@ The following X++ features are the same as in C\#:
 
 X++ features that are different in C\# are listed in the following table.
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Feature</th>
@@ -689,6 +638,7 @@ X++ features that are different in C\# are listed in the following table.
 ### Example 1: Case Sensitivity of the == Operator
 
 The `==` and != operators are case insensitive in X++, but are case sensitive in C\#, as is illustrated by the following example.
+
 | X++                               | C\#                                | Comments                                        |
 |-----------------------------------|------------------------------------|-------------------------------------------------|
 | `"HELLO" == "hello"` True in X++. | `"HELLO" == "hello"` False in C\#. | Different case comparisons between X++ and C\#. |
@@ -696,6 +646,7 @@ The `==` and != operators are case insensitive in X++, but are case sensitive in
 ### Example 2: The + String Concatenation Operator
 
 The + and += operators are used to concatenate strings in both X++ and C\#, as is shown by the examples in the following table.
+
 | X++                                                                                            | C\#                | Comments                                                                                                                                          |
 |------------------------------------------------------------------------------------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | myString1 = "Hello" + " world"; Result is equality: `myString1 == "Hello world"`               | (Same as for X++.) | In both X++ and C\#, the behavior of the + operator depends on the data type of its operands. The operator concatenates strings, or adds numbers. |
@@ -704,6 +655,7 @@ The + and += operators are used to concatenate strings in both X++ and C\#, as i
 ### Example 3: Embedding and Escaping String Delimiters
 
 Either single or double quotation marks can be used to delimit strings in X++. The escape character (\\) can be used to embed delimiters in a string. These are illustrated in the following table.
+
 | X++                                                                   | C\#                                                                                                               | Comments                                                                                                                                                                                                                                                                                                                                                                        |
 |-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | myString1 = "He said \\"yes\\"."; Result: He said "yes".              | (Same as for X++.)                                                                                                | The escape character enables you to embed string delimiters inside strings.                                                                                                                                                                                                                                                                                                     |
@@ -714,6 +666,7 @@ Either single or double quotation marks can be used to delimit strings in X++. T
 ### Example 4: Single Escape Character
 
 Examples that illustrate the single escape character in either the input or the output are shown in the following table.
+
 | X++                                            | C\#                                                                                                                                      | Comments                                                                                                       |
 |------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | myString1 = "Red\\ shoe"; Result: Red shoe     | A literal string in C\# cannot contain the two character sequence of escape followed by a space, such as "\\ ". A compiler error occurs. | When the X++ compiler encounters the two character sequence of "\\ ", it discards the single escape character. |
@@ -890,8 +843,8 @@ The output to the Infolog is as follows:
 
 #### C\# Sample
 
-C\#
-Copy Code
+C#
+
     using System;
     public class Pgm_CSharp
     {
@@ -968,12 +921,6 @@ Microsoft Dynamics 365 for Operations provides the X++ `List` collection class.
 
 The following table compares methods on the X++ `List` class to the methods on `System.Collections.Generic.List` from the .NET Framework and C\#.
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Feature</th>
@@ -1034,6 +981,7 @@ The following table compares methods on the X++ `List` class to the methods on `
 ### Example 1: Declaration of a List
 
 The following table displays code examples in X++ and C\# that declare `List` collections.
+
 | X++                                                              | C\#                                                                                                                                                                            |
 |------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `List listStrings ,list2 ,listMerged;` `ListIterator literator;` | `using System;` `using SysCollGen = System.Collections.Generic;` SysCollGen.List&lt;string&gt; listStrings ,list2 ,listMerged; SysCollGen.IEnumerator&lt;string&gt; literator; |
@@ -1041,6 +989,7 @@ The following table displays code examples in X++ and C\# that declare `List` co
 ### Example 2: Construction of a List
 
 In both languages, the type of items that the collection stores must be specified at the time of construction. For class types, X++ can get no more specific than whether the type is a class (Types::Class). Code examples are in the following table.
+
 | X++                                      | C\#                                                |
 |------------------------------------------|----------------------------------------------------|
 | listStrings = new List( Types::String ); | listStrings = new SysCollGen.List&lt;string&gt;(); |
@@ -1048,6 +997,7 @@ In both languages, the type of items that the collection stores must be specifie
 ### Example 3: Add Items to a List
 
 In both X++ and C\#, the collection provides a method for appending an item to the end of the collection, and for inserting an item the start. In C\# the collection provides a method for inserting at any point in the collection based on an index value. In X++ a collection iterator can insert an item at its current position. Code examples are in the following table.
+
 | X++                                                                                           | C\#                                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | listStrings.addEnd ("String\_BB."); listStrings.addStart ("String\_AA.");                     | listStrings.Add ("String\_BB."); listStrings.Insert (0 ,"String\_AA.");     |
@@ -1056,6 +1006,7 @@ In both X++ and C\#, the collection provides a method for appending an item to t
 ### Example 4: Iterate Through a List
 
 Both X++ and C\# have iterator classes that you can use to step through the items in a collection. Code examples are in the following table.
+
 | X++                                                                                                                                                                               | C\#                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `literator = new ListIterator` ` (listStrings);` // Now the iterator points at the first item.                                                                                    | `literator = listStrings` ` .GetEnumerator();` // Now enumerator points before // the first item, not at // the first item.                                                                            |
@@ -1063,11 +1014,14 @@ Both X++ and C\# have iterator classes that you can use to step through the item
 
 ### Example 4b: foreach in C\#
 
-In C\# the **foreach** keyword is often used to simplify the task of iterating through a list. The following code example behaves the same as the previous C\# example. `foreach (string currentString in listStrings)` { ` Console.WriteLine(currentString);` }
+In C\# the **foreach** keyword is often used to simplify the task of iterating through a list. The following code example behaves the same as the previous C\# example. 
+
+    foreach (string currentString in listStrings)` { ` Console.WriteLine(currentString);` }
 
 ###  Example 5: Delete the Second Item
 
 The following table contains code examples that delete the second item from the collection. In X++ this requires an iterator. In C\# the collection itself provides the method for removing an item.
+
 | X++                                                            | C\#                        |
 |----------------------------------------------------------------|----------------------------|
 | `literator.begin();` `literator.next();` `literator.delete();` | `listStrings.RemoveAt(1);` |
@@ -1075,6 +1029,7 @@ The following table contains code examples that delete the second item from the 
 ###  Example 6: Combine Two Collections
 
 The following table contains code examples that combine the contents of two collections into one.
+
 | X++                                                                                                                            | C\#                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | listStrings = List::merge ` (listStrings ,listStr3);` // Or use the `.appendList` method: `listStrings.appendList (listStr3);` | `listStrings.InsertRange` ` (listStrings.Count ,listStr3);` |
@@ -1096,6 +1051,7 @@ The following list describes similarities between X++ and C\# regarding their co
 #### Differences
 
 The following table describes differences between X++ and C\# regarding their collections classes that store key-value pairs:
+
 | Feature        | X++                                                                                                                                                                      | C\#                                                                                    | Comments                                                                                                                     |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | Duplicate keys | In X++ the `Map` class prevents duplicate keys by implicitly treating your call to its `insert` method as an operation to update only the value associated with the key. | In C\# the `Dictionary` class throws an exception when you try to add a duplicate key. | Duplicate keys are prevented in both languages, although by different techniques.                                            |
@@ -1104,6 +1060,7 @@ The following table describes differences between X++ and C\# regarding their co
 ### Example 1: Declaration of a Key-Value Collection
 
 In both languages, the type of items that the key-value collection stores must be specified. In X++ the type is specified at time of construction. In C\# the type is specified at both the time of declaration and the time of construction. Code examples are in the following table.
+
 | X++                                                               | C\#                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `Map mapKeyValue;` `MapEnumerator enumer;` `MapIterator mapIter;` | `SysCollGen.Dictionary` &lt;int,string&gt; ` dictKeyValue;` `SysCollGen.IEnumerator` &lt;SysCollGen.KeyValuePair &lt;int,string&gt;&gt; enumer; `SysCollGen.KeyValuePair` &lt;int,string&gt; ` kvpCurrentKeyValuePair;` |
@@ -1111,6 +1068,7 @@ In both languages, the type of items that the key-value collection stores must b
 ### Example 2: Construction of the Collection
 
 In both languages, the type of items that the key-value collection stores specified during construction. For class types, X++ can get no more specific than whether the type is a class (Types::Class). Code examples are in the following table.
+
 | X++                                                         | C\#                                                                 |
 |-------------------------------------------------------------|---------------------------------------------------------------------|
 | `mapKeyValue =` ` new Map` (Types::Integer ,Types::String); | `dictKeyValue = new` ` SysCollGen.Dictionary` &lt;int,string&gt;(); |
@@ -1118,6 +1076,7 @@ In both languages, the type of items that the key-value collection stores specif
 ### Example 3: Add an Item to the Collection
 
 There is almost no difference in how an item is added to a key-value collection, in X++ and C\#. Code examples are in the following table.
+
 | X++                                                    | C\#                                                    |
 |--------------------------------------------------------|--------------------------------------------------------|
 | `mapKeyValue.insert` ` (xx ,int2str(xx)` + "\_Value"); | `dictKeyValue.Add` ` (xx ,xx.ToString()` + "\_Value"); |
@@ -1125,6 +1084,7 @@ There is almost no difference in how an item is added to a key-value collection,
 ### Example 4: Iterate Through a Key-Value Collection
 
 Enumerators are used to loop through the key-value collections in both X++ and C\#. Code examples are in the following table.
+
 | X++                                                                                                                                                                                      | C\#                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `enumer = mapKeyValue.getEnumerator();` `while (enumer.moveNext())` { ` iCurrentKey = enumer.currentKey();` ` sCurrentValue = enumer.currentValue();` `// Display key and value here.` } | `enumer = dictKeyValue` ` .GetEnumerator();` `while (enumer.MoveNext())` { ` kvpCurrentKeyValuePair = enumer.Current;` ` // Display .Key and .Value properties` ` // of kvpCurrentKeyValuePair here.` } |
@@ -1132,6 +1092,7 @@ Enumerators are used to loop through the key-value collections in both X++ and C
 ### Example 5: Update the Value Associated with a Key
 
 The syntax is very different between the two languages for an update of the value associated to a given key. Code examples for the key 102 are in the following table.
+
 | X++                                                                                        | C\#                                                                                                 |
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | `mapKeyValue.insert` (102 ,".insert(), Re-inserted" + " key 102 with a different value."); | dictKeyValue\[102\] = "The semi-hidden .item property" + " in C\#, Updated the value for key 102."; |
@@ -1139,6 +1100,7 @@ The syntax is very different between the two languages for an update of the valu
 ###  Example 6: Delete One Item
 
 The syntax is very different between the two languages to delete one key-value pair from a collection, while iterating through the collection members. Code examples for the key 102 are in the following table.
+
 | X++                                                                                                                                                                                                                                                                   | C\#                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
 | `mapIter = new MapIterator` ` (mapKeyValue);` `//mapIter.begin();` `while (mapIter.more())` { ` iCurrentKey = mapIter.key();` if (104 == iCurrentKey) { ` // mapKeyValue.remove would invalidate the iterator.` ` mapIter.delete();` ` break;` } ` mapIter.next();` } | `dictKeyValue` .Remove(104); |
@@ -1304,8 +1266,9 @@ End of program.</code></pre></td>
 #### C\# Sample
 
 The following C\# program is a rewrite of the previous X++ program.
-C\#
-Copy Code
+
+C#
+
     using System;
     public class Pgm_CSharp
     {
