@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Introduction to Dynamics 365 for Operations
 
-Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to make smarter decisions quickly through an intelligent user interface that provides access to real-time insights and intelligence.  It enables businesses to transform by delivering proven business logic and enabling them to redesign their business processes faster so they can innovate. It gives businesses the flexibility to grow at their pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
+Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
 
 ## Regions
-Dynamics 365 for Operations resources are distributed across multiple geographical regions around the world. A "region" represents multiple data centers in a single geographical area. We have 34 regions generally available around the world with an additional 4 regions announced. Because we are continuing to expand our global coverage, we maintain an updated list of existing and newly announced regions.
+Dynamics 365 for Operations resources are distributed across multiple geographical regions around the world. A "region" represents multiple data centers in a single geographical area. We have 34 regions generally available, with an additional 4 regions announced. Because we're continuing to expand our global coverage, we maintain an updated list of existing and newly announced regions.
 
 ## Partners
-Microsoft works closely with our partners to ensure that customers can get up and running quickly, in any industry they need. For more information on our partners check their marketplace pages.
+Microsoft works closely with our partners to ensure that customers can get up and running quickly, in any kind of industry. For more information about our partners, check out their marketplace pages.
 
