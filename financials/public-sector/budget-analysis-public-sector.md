@@ -34,13 +34,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 
-This topic describes the budget analysis functionality available for the public sector. Before you read this topic, you should also read [Budgeting in the public sector.](budgeting-public-sector.md) You may be required to set up the following Budgeting features for the public sector. Use the **Budget analysis** page to view revenues and expenditures by financial dimension, using a combination of general ledger and budget control data. You can view summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances. The revenues and expenditures can be summarized by the different levels of the financial dimensions. For example, if the budget dimensions are fund, organization, and main account, you can select **Fund**, **Organization**, or **Main account** to see the financial activity summarized at that level. You also use the **Budget analysis** page to select a financial dimension set and a column set. Select or specify the following, and then click **Update totals:**
+This topic describes the budget analysis functionality available for the public sector. 
+
+Before you read this topic, you should also read [Budgeting in the public sector.](budgeting-public-sector.md). 
+
+You may be required to set up the following Budgeting features for the public sector. Use the **Budget analysis** page to view revenues and expenditures by financial dimension, using a combination of general ledger and budget control data. You can view summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances. 
+
+The revenues and expenditures can be summarized by the different levels of the financial dimensions. For example, if the budget dimensions are fund, organization, and main account, you can select **Fund**, **Organization**, or **Main account** to see the financial activity summarized at that level. 
+
+You also use the **Budget analysis** page to select a financial dimension set and a column set. Select or specify the following, and then click **Update totals:**
 
 -   Parameters
 -   Date information
 -   Financial dimensions
 
-**Note** You create financial dimensions on the **Financial dimensions** page. You specify the date interval for included transactions on the **Date intervals** page in General ledger.
+> [!NOTE] 
+> You create financial dimensions on the **Financial dimensions** page. You specify the date interval for included transactions on the **Date intervals** page in General ledger.
 
 ## What transaction details are available on the Budget analysis page?
 You can select an item in the grid and drill down to see the following transaction details:
@@ -57,7 +66,9 @@ You can select an item in the grid and drill down to see the following transacti
 -   To view the pre-encumbrances and the referenced transactions for the budget analysis inquiry, click **Pre-encumbrance**. The page affects the purchase requisition for the selected transaction. These amounts come from the budget source tracking tables.
 
 ## Should I use the Budget control statistics page or the Budget analysis page?
-The **Budget control statistics** page is the tool to use when you want to analyze a single budget account, or a combination or group of accounts by period and budget control dimension. The **Budget analysis** page is more flexible. You can use it to query in any dimension order across the chart of accounts or to query a subset of an account. For example, you could view a list of year-to-date fund totals, drill down to a specific fund to view department totals, and then drill down to a specific department to view account totals. The following table explains the differences between these pages.
+The **Budget control statistics** page is the tool to use when you want to analyze a single budget account, or a combination or group of accounts by period and budget control dimension. The **Budget analysis** page is more flexible. You can use it to query in any dimension order across the chart of accounts or to query a subset of an account. For example, you could view a list of year-to-date fund totals, drill down to a specific fund to view department totals, and then drill down to a specific department to view account totals.
+
+The following table explains the differences between these pages.
 
 |                                                                                                                         |                                                                                             |
 |-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -66,7 +77,8 @@ The **Budget control statistics** page is the tool to use when you want to analy
 | Includes data from both confirmed and unconfirmed encumbrances.                                                         | Includes data from confirmed encumbrances only.                                             |
 | Includes data from expense accounts only.                                                                               | Includes data from both revenue and expense accounts.                                       |
 
-**Note** If you want the available or remaining budget amounts to include draft transactions, use the **Budget control statistics** page. The **Budget analysis** page displays only posted transactions.
+> [!NOTE] 
+> If you want the available or remaining budget amounts to include draft transactions, use the **Budget control statistics** page. The **Budget analysis** page displays only posted transactions.
 
 ## Can I export the budget analysis results to Microsoft Excel?
 Yes, you can export budget analysis results. On the **Budget analysis** page, press Ctrl+Shift+E.
