@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This overview introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
 
-This article describes the Procurement and sourcing functionality that is available for the public sector. []()
+This article describes the Procurement and sourcing functionality that is available for the public sector. 
 
 ## What are the prerequisites for setting up Procurement and sourcing in the public sector?
 Before you begin to adjust the settings and input your data, you should:
@@ -45,19 +45,29 @@ Before you begin to adjust the settings and input your data, you should:
 
 You may need to set up the following Procurement and sourcing features for public sector organizations:
 
--    [Public sector purchase order codes](purchase-order-codes-public-sector.md) Create codes and special messages for confirming purchase orders. A confirming purchase order circumvents the typical purchasing process.
+-    [Public sector purchase order codes](purchase-order-codes-public-sector.md) 
+Create codes and special messages for confirming purchase orders. A confirming purchase order circumvents the typical purchasing process.
 
-**Note** This also applies to Accounts payable.
+> [!NOTE]
+> This also applies to Accounts payable.
 
--   [Public sector accounting in France](/localizations/eurore/public-sector-accounting-france.md) For French organizations, additional steps may be required for the public sector.
+-   [Public sector accounting in France](/localizations/eurore/public-sector-accounting-france.md) 
+
+For French organizations, additional steps may be required for the public sector.
 
 The following sections describe the Procurement and sourcing features that are available for the public sector.
 
 ## What are vendor certification types?
-You can create and assign to vendor organizations any types of certification that the vendors hold. This includes not only professional credentials, such as a professional engineer’s license or Microsoft SQL Server Certification, but also whether they have liability insurance, minority status, or are in compliance with various environmental or consumer safety standards. You use the **Certification type** page in Accounts payable to enter the certification type and the description.
+You can create and assign to vendor organizations any types of certification that the vendors hold. This includes not only professional credentials, such as a professional engineer’s license or Microsoft SQL Server Certification, but also whether they have liability insurance, minority status, or are in compliance with various environmental or consumer safety standards. 
+
+You use the **Certification type** page in Accounts payable to enter the certification type and the description.
 
 ## What do I need to know about purchase or sales agreement classifications?
-When users create a new purchase agreement or sales agreement, they must always select the type of purchase agreement or sales agreement. Additional public sector controls are available on the **Agreement classifications** pages. To create and specify agreement classifications, you use the **Purchase agreement classification** page in Procurement and sourcing or the **Sales agreement classification** page in Sales and marketing. Take the following information into account when specifying details for purchase or sales agreement classifications.
+When users create a new purchase agreement or sales agreement, they must always select the type of purchase agreement or sales agreement. Additional public sector controls are available on the **Agreement classifications** pages. 
+
+To create and specify agreement classifications, you use the **Purchase agreement classification** page in Procurement and sourcing or the **Sales agreement classification** page in Sales and marketing. 
+
+Take the following information into account when specifying details for purchase or sales agreement classifications.
 
 ### How do I enter information about subcontractors on purchase agreements?
 
@@ -73,7 +83,7 @@ Select the **Activities** option.
 
 ### How do I require direct invoicing and prevent the use of release orders with purchase agreements?
 
-Select the **Require direct invoicing** option. []()
+Select the **Require direct invoicing** option. 
 
 ## Can I view purchase order line amounts?
 Yes. Line amounts for a purchase order can be viewed, including the current ordered amount and any amounts that have been received or invoiced. They can also view any amounts that remain to be invoiced or amounts for pending invoices.
@@ -129,10 +139,6 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 
  
 
-See also
---------
-
-[Procurement and sourcing](/manufacturing/procurement-sourcing/procurement-sourcing-overview)
-
-[Accounts payable in the public sector](accounts-payable-public-sector.md)
+For more information, see [Procurement and sourcing](/manufacturing/procurement-sourcing/procurement-sourcing-overview) and 
+[Accounts payable in the public sector](accounts-payable-public-sector.md).
 
