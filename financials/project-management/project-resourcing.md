@@ -3,7 +3,7 @@
 
 title: Project resourcing
 description: This topic provides information about project resourcing.
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2016-04-13 17 - 38 - 35
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 82022
@@ -43,23 +43,28 @@ One challenge for project managers and resource managers during the project plan
 -   Estimate the number of resources that are required for the entire life cycle of a project.
 -   Draft a work breakdown structure (WBS) by using the initial resource assignments.
 
-[![Project life cycle](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) As project planning proceeds, planned resources can be replaced with staffed resources. The project manager can also go back and update the resourcing reservations during any of the project stages.
+[![Project life cycle](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) 
+
+As project planning proceeds, planned resources can be replaced with staffed resources. The project manager can also go back and update the resourcing reservations during any of the project stages.
 
 ## Set up project resources
-You must set up a calendar and associate it with an employee or a worker. The calendar is used to schedule the project and the working time of the resources that are reserved for the project. During calendar setup, project managers can perform resource leveling as part of resource optimization. Based on the calendar schedule, restrictions can be placed on resources. You can set up a calendar on the **Calendars** page (**Organization administration** &gt; **Setup** &gt; **Calendars** &gt; **Calendars**). When you set up a worker as a project resource, you can select from workers that work in the company for which you are setting up resources or, you can select workers from other companies within your organization. These are intercompany resources. The following procedures explain how to set up a worker as a project resource within your company and how to set up an intercompany project resource.
+You must set up a calendar and associate it with an employee or a worker. The calendar is used to schedule the project and the working time of the resources that are reserved for the project. During calendar setup, project managers can perform resource leveling as part of resource optimization. Based on the calendar schedule, restrictions can be placed on resources. You can set up a calendar on the **Calendars** page. 
+
+When you set up a worker as a project resource, you can select from workers that work in the company for which you are setting up resources or, you can select workers from other companies within your organization. These are intercompany resources. The following procedures explain how to set up a worker as a project resource within your company and how to set up an intercompany project resource.
 
 ### Set up a worker as a project resource
 
-1.  Click **Human resources** &gt; **Workers** &gt; **Workers**.
-2.  In the **Workers** list, select the worker that you're adding as a project resource, and open the worker record.
-3.  On the Action Pane, click **Project** &gt; **Setup** &gt; **Project setup**.
-4.  Select a** **calendar, and then close the page.
+1.  On the **Workers** page, in the **Workers** list, select the worker that you're adding as a project resource, and open the worker record.
+2.  On the Action Pane, click **Project** &gt; **Setup** &gt; **Project setup**.
+3.  Select a calendar, and then close the page.
 
 You can also specify default projects for a resource as a type of pre-assignment. Pre-assignments can be used when the resource manager or project manager knows which projects the resource will be working on in advance. Pre-assignments can also be based on the request of a project sponsor or customer. To pre-assign a project, on the **Assign projects** page, on the **Projects** tab, in the **Remaining projects** list, select the appropriate project.
 
 ### Set up an intercompany resource
 
-When you set up a worker as an intercompany resource, you must complete the setup in the lending company and the borrowing company. **In the lending company:**
+When you set up a worker as an intercompany resource, you must complete the setup in the lending company and the borrowing company. 
+
+**In the lending company:**
 
 1.  In Dynamics 365 for Operations, verify that the lending company is selected, and then complete the procedure above, "Set up a worker as a project resource."
 2.  Go to **General ledger **&gt; **Posting setup **&gt; **Intercompany accounting**. Click **New**.
@@ -75,7 +80,11 @@ When you set up a worker as an intercompany resource, you must complete the setu
 2.  In the search filter, enter the name of the resource that you created in the previous procedure for the lending company to verify that the name is included in the resource list for the borrowing company.
 
 ## Manage resource competencies
-Resource competencies are an essential part of resource management. Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience. You should set up this information for each resource and update it on a regular basis. In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment. [![Examples of skills, certifications, education, and project experience](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) The following procedures explain how to set up some of the competencies for a resource. To set up competencies for a worker, you can use either the **Workers** list page in Human resources or the **Resources** list page in Project management and accounting. For the following procedures, the **Workers** list page in Human resources is used.
+Resource competencies are an essential part of resource management. Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience. You should set up this information for each resource and update it on a regular basis. In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment. [![Examples of skills, certifications, education, and project experience](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
+
+The following procedures explain how to set up some of the competencies for a resource. 
+
+To set up competencies for a worker, you can use either the **Workers** list page in Human resources or the **Resources** list page in Project management and accounting. For the following procedures, the **Workers** list page in Human resources is used.
 
 ### Set up competencies: Certificates
 
@@ -103,7 +112,6 @@ Resource competencies are an essential part of resource management. Competencie
     -   **Project name** - XYZ Upgrade Phase 2
     -   **Project group** - TM\_WIP
     -   **Project contract ID**  - 00000002
-
 3.  Click **Create project**.
 
 ### Assign a resource to a project
@@ -120,13 +128,18 @@ If needed, you can also assign categories for a resource. The category type is e
 
 ### Set up project resource and role characteristics
 
-A project manager can use the project resourcing functionality to create the roles that are required for the project. Roles can be used when confirmed resources are still unknown when reserving resources. Roles can be temporarily reserved as planned resources, so that you can continue the project planning stages. [![Example of a role](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) **Scenario:** Contoso was hired to complete a Time and material project that has an approved project charter. The junior project manager is still completing the scope of the project. The resource manager is currently identifying specific resources that will be reserved to work on the new project. One of the roles that the project sponsor requested, because of the critical nature of the project, is the Senior project manager. The resource manager must acquire the new resource and define the role in the system in case the junior project manager requires the resource information during the project planning. The following steps show how the resource manager can set up the Senior project manager role and associate resource characteristics with it. Later, the role can be used to search for available resources that match the required resource competencies.
+A project manager can use the project resourcing functionality to create the roles that are required for the project. Roles can be used when confirmed resources are still unknown when reserving resources. Roles can be temporarily reserved as planned resources, so that you can continue the project planning stages. 
+
+[![Example of a role](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
+
+**Scenario:** Contoso was hired to complete a Time and material project that has an approved project charter. The junior project manager is still completing the scope of the project. The resource manager is currently identifying specific resources that will be reserved to work on the new project. One of the roles that the project sponsor requested, because of the critical nature of the project, is the Senior project manager. The resource manager must acquire the new resource and define the role in the system in case the junior project manager requires the resource information during the project planning. 
+
+The following steps show how the resource manager can set up the Senior project manager role and associate resource characteristics with it. Later, the role can be used to search for available resources that match the required resource competencies.
 
 1.  Click **Project management and accounting** &gt; **Setup** &gt; **Resources** &gt; **Setup roles**.
 2.  Click **New**, and enter the following values:
     -   **Role ID** - Senior Project Manager
     -   **Description** - Senior Project Manager
-
 3.  Click **Create**.
 4.  Select the **Senior Project Manager** role, and then click **Configure characteristics**.
 5.  In the **Characteristics type** field, select **Skill**.
@@ -146,27 +159,29 @@ A project manager can use the project resourcing functionality to create the ro
     -   **Format for date range view** - Day
     -   **Display availability descriptions** - Yes
     -   **Display remaining capacity** - Yes
-
 7.  In the list of resources, select a resource.
 8.  Click **Hard book** &gt; **Full capacity**.
 9.  Close the page.
 
 ### Assign a resource to a default role
 
-To help project or resource managers, you can drill down further on the resources that can be reserved for a project. You can associate a default role with an existing resource or a newly acquired resource. For example, when Daniel was hired, he had the experience and skills to fill the Business analyst role. The resource manager assigned this role as Daniel's default role. Therefore, the resource manager added Daniel to a pool of business analysts who are available to work on projects. During resource reservation, project managers can filter the role resources that are available to work on projects. They can use this information as one criterion when they perform multi-criteria decision analysis during resource fulfillment. They can also add other resource characteristics to the filter to search for resources that have specific skills, education, and experience for a given project. **Scenario:** An approved project has started, and the Senior project manager role was reserved as a planned resource during the project planning stage. The resource manager has now acquired a resource to fulfill the Senior project manager role.
+To help project or resource managers, you can drill down further on the resources that can be reserved for a project. You can associate a default role with an existing resource or a newly acquired resource. For example, when Daniel was hired, he had the experience and skills to fill the Business analyst role. The resource manager assigned this role as Daniel's default role. Therefore, the resource manager added Daniel to a pool of business analysts who are available to work on projects. 
+
+During resource reservation, project managers can filter the role resources that are available to work on projects. They can use this information as one criterion when they perform multi-criteria decision analysis during resource fulfillment. They can also add other resource characteristics to the filter to search for resources that have specific skills, education, and experience for a given project. 
+
+**Scenario:** An approved project has started, and the Senior project manager role was reserved as a planned resource during the project planning stage. The resource manager has now acquired a resource to fulfill the Senior project manager role.
 
 1.  Click **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.
 2.  In the **Resource** list, select **Daniel Goldschmidt**.
 3.  Click **Project resource** &gt; **Maintain** &gt; **Resource role**.
 4.  Click **New**, and enter the following values:
-    -   **Effective** -** **(The current date)
+    -   **Effective** - (The current date)
     -   **Expiration** - Never
     -   **Role** - Senior Project Manager
-
 5.  Click **Save**, and then close the page.
 6.  On the **Competencies** tab, add the **ProjectMgmt** skill and the **PMP** certificate.
 
-## Set up rolebased pricing
+## Set up role-based pricing
 All cost, sales, and transfer prices can be set up for roles.
 
 1.  Click **Project management and accounting** &gt; **Setup** &gt; **Prices** &gt; **Sales price (hour)**.
@@ -176,7 +191,15 @@ All cost, sales, and transfer prices can be set up for roles.
 5.  In the **Pricing** column, enter a price for the selected resource role.
 
 ## Form a project team
-To use the roles that were previously set up in a project, a project manager must associate the roles with the project. Multiple roles can be assigned for a project, and Dynamics 365 for Operations automatically labels these roles during reservation to prevent confusion. For example, if the project manager requires three software engineers, three Software engineer roles that have software engineer 1, software engineer 2, and software engineer 3 as their labels are automatically generated. If role characteristics were previously set for the role, they are applied as a filter during searches for a resource. Additional characteristics can be added as required to further refine the search. View settings can also be customized to give a better view of resource availability. There are options to show hourly, daily, weekly, monthly, quarterly, and annual availability. There is also an option to show available and remaining capacity on resources. This option is useful for time management when you're estimating available time for activities or resource availability. The project manager can select a role on the page and then, if there is an available resource that fits the requirement, select to reserve a resource to fill the role. Note that the resources don't have to be reserved at this point during the planning stage. When you create a WBS, you can replace roles with staffed resources for the project. If roles are replaced with staffed resources in the WBS, the resource setup automatically updates the project team listing and scheduling. [![Project team listing that includes both roles and actual resources](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) The project manager has various options for booking a resource for a project, such as **Remaining capacity**, **Full capacity**, **Capacity percentage**, and **Specify hours**. These booking options can be canceled at any time if resource assignments change. Two types of booking are supported:
+To use the roles that were previously set up in a project, a project manager must associate the roles with the project. Multiple roles can be assigned for a project, and Dynamics 365 for Operations automatically labels these roles during reservation to prevent confusion. For example, if the project manager requires three software engineers, three Software engineer roles that have software engineer 1, software engineer 2, and software engineer 3 as their labels are automatically generated. If role characteristics were previously set for the role, they are applied as a filter during searches for a resource. Additional characteristics can be added as required to further refine the search. 
+
+View settings can also be customized to give a better view of resource availability. There are options to show hourly, daily, weekly, monthly, quarterly, and annual availability. There is also an option to show available and remaining capacity on resources. This option is useful for time management when you're estimating available time for activities or resource availability. 
+
+The project manager can select a role on the page and then, if there is an available resource that fits the requirement, select to reserve a resource to fill the role. Note that the resources don't have to be reserved at this point during the planning stage. When you create a WBS, you can replace roles with staffed resources for the project. If roles are replaced with staffed resources in the WBS, the resource setup automatically updates the project team listing and scheduling. 
+
+[![Project team listing that includes both roles and actual resources](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
+
+The project manager has various options for booking a resource for a project, such as **Remaining capacity**, **Full capacity**, **Capacity percentage**, and **Specify hours**. These booking options can be canceled at any time if resource assignments change. Two types of booking are supported:
 
 -   **Hard Book** – The resource reservation was approved and confirmed to work on the engagement for the specified duration.
 -   **Soft book** – The resource reservations was tentatively set to work on the engagement for the specified duration.
@@ -201,9 +224,13 @@ The following procedure explains how to create a project team.
 ## Resource capacity synchronization
 The processes for resource synchronization helps guarantee that the calendar and base calendar information trickles down into project resource scheduling. If the calendar is changed, the processes make the required updates to the scheduling of project resources. The processes also help improve performance, because the calendar’s resource information is synchronized in advance, so that updates to resource scheduling information occur more quickly. We recommend that you schedule the processes as a batch instead of one at a time. Otherwise, there is a risk that someone will forget the inclusive dates when the information was last synchronized. If inclusive dates aren't used, gaps can occur during date synchronization.
 
-### ![Calendar synchronization](./media/projectresourcing04-1024x471.jpg)Synchronize resource capacity roll-ups
+### ![Calendar synchronization](./media/projectresourcing04-1024x471.jpg)
 
-The synchronization process is designed to synchronize all resource calendar information. This information includes base calendar information about any changes to the project’s Resource calendar capacity table. If new resources are added in the project, synchronization helps ensure that the updated calendar information is available. This synchronization can be done at any time. We recommend that you use a batch. The options are available in synchronizing capacity reservations.
+**Synchronize resource capacity roll-ups**
+
+The synchronization process is designed to synchronize all resource calendar information. This information includes base calendar information about any changes to the project’s Resource calendar capacity table. If new resources are added in the project, synchronization helps ensure that the updated calendar information is available. This synchronization can be done at any time. 
+
+We recommend that you use a batch. The options are available in synchronizing capacity reservations.
 
 -   Click **Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resources capacity roll-ups**.
 
@@ -287,7 +314,10 @@ Additional options have been added in the WBS to better use the resourcing func
 14. For the **Business analyst 1** resource, open the lookup, and click **Launch resource assignments form**.
 15. Select a worker for the task.
 16. Click **Soft assign** &gt; **Full capacity**.
-17. Click **Save**, and close the page. **Note:** You don't receive a warning that the specified resource is now 2, because the number of resources remains at 1.
+17. Click **Save**, and close the page. 
+
+> [!NOTE] 
+> You don't receive a warning that the specified resource is now 2, because the number of resources remains at 1.
 18. On the **Work breakdown structure** page, validate the resource assignment on the WBS, and then click **Save**.
 
 ## Resource fulfillment for planned resources
