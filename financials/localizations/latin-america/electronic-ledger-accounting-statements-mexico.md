@@ -41,7 +41,9 @@ All companies in Mexico are required to report ledger accounting statements to t
 -   Journal transactions, together with the related subledger transactions (Comprobante Fiscal Digital a través de Internet \[CFDI\], Comprobante Fiscal Digital \[CFD\], and other operations)
 -   Auxiliary ledger account
 
-This functionality is available only when the country/region of the company is defined as MEX. **Note:** The government also requires an additional auxiliary XML file (folios) that details all fiscal documents (CFDI, CFD, and others). This file isn't included in the current feature, because this information is included in the Journal transactions XML file, as specified in Chapter 2.8, section 2.8.1.3 of the Miscellaneous Tax Resolution for 2015 (Second section) of December 30, 2014. For more information, see <http://www.sat.gob.mx/fichas_tematicas/buzon_tributario/Documents/extracto_reglas.pdf>.
+This functionality is available only when the country/region of the company is defined as MEX. 
+> [!NOTE]
+>  The government also requires an additional auxiliary XML file (folios) that details all fiscal documents (CFDI, CFD, and others). This file isn't included in the current feature, because this information is included in the Journal transactions XML file, as specified in Chapter 2.8, section 2.8.1.3 of the Miscellaneous Tax Resolution for 2015 (Second section) of December 30, 2014. For more information, see <http://www.sat.gob.mx/fichas_tematicas/buzon_tributario/Documents/extracto_reglas.pdf>.
 
 ## Prerequisites
 The following process lists the prerequisites that must be in place before you start to generate the XML files that SAT requires. Parameters determine how the data will be exposed in the XML files, and all of them are required. Missing parameters can cause inconsistencies or incorrect validations in the government validation tool.
@@ -108,7 +110,7 @@ Users can now include this information in transactions that are generated from 
 
 ### Electronic reporting
 
-This feature is based on Electronic reporting configuration (GER), where each XML file format is defined by using the model and format designer for electronic reporting. Use the **AX resources** repository configuration type to import these configurations into the current company and enable the generation of XML files. Click **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Repositories**.
+This feature is based on Electronic reporting configuration (ER), where each XML file format is defined by using the model and format designer for electronic reporting. Use the **AX resources** repository configuration type to import these configurations into the current company and enable the generation of XML files. Click **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting** &gt; **Repositories**.
 
 You must upload the following repository models and formats:
 
@@ -118,7 +120,7 @@ You must upload the following repository models and formats:
 4.  Journal XML MX (format)
 5.  Trial Balance XML MX (format)
 
-After the repository is available in your environment, you must identify these formats in the general ledger parameters. Click **General ledger** &gt; **Ledger setup** &gt; **General ledger** **parameters**, and then, in the **Electronic reporting mapping** field group, select the format to use to generate the XML files.
+After the repository is available in your environment, you must identify these formats in the general ledger parameters. Click **General ledger** &gt; **Ledger setup** &gt; **General ledger parameters**, and then, in the **Electronic reporting mapping** field group, select the format to use to generate the XML files.
 
 ## Generate electronic ledger accounting files
 Click **General ledger** &gt; **Inquire and reports** &gt; **Ledger reports** &gt; **Electronic ledger accounting statement** to generate the required XML files and download them to your environment. The following table describes the parameters that you must set.

@@ -42,7 +42,9 @@ BankGirot MAX and BankGirot OCR file import lets you import customer payments i
 1.  Go to the **Payment journal** page.
 2.  Click **Lines**.
 3.  Click **Functions** &gt; **Import payments**.
-4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. **Note**: Before you can complete this step, you must have already imported the configurations from Lifecycle Services (LCS) and set up the methods of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
+4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. 
+  > [!NOTE]
+  >  Before you can complete this step, you must have already imported the configurations from Lifecycle Services (LCS) and set up the methods of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
 
 After you import the payment file, payment journal lines should be created for the selected journal and marked for settlement with customer invoices.
 
@@ -51,7 +53,9 @@ Bankgirot Autogiro returns format for the direct debit payment format of the sam
 
 1.  Go to the **Payment transfers** page.
 2.  Click **Return file-customer**.
-3.  In the dialog box, select corresponding method of payment, and then browse to the location of the file to import. **Note**: Before you can complete this step, you must have already imported the configurations from Lifecycle Services (LCS) and set up the methods of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
+3.  In the dialog box, select corresponding method of payment, and then browse to the location of the file to import. 
+  > [!NOTE]
+  >  Before you can complete this step, you must have already imported the configurations from Lifecycle Services (LCS) and set up the methods of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
 
 After you import the return file, the payments should be updated to the status **Approved**.
 
