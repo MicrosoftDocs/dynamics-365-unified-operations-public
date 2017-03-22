@@ -41,8 +41,8 @@ The following table shows the prerequisites that must be in place before you sta
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -73,7 +73,8 @@ Use this procedure to create a payment journal for multiple pay statements at th
 
 To submit pay statements for multiple workers at the same time, follow these steps.
 
-1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](pay-statements.md). **Tip:** Before you generate pay statements, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](pay-statements.md).
+1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](pay-statements.md). 
+    -  **Tip:** Before you generate pay statements, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](pay-statements.md).
 2.  On the **Submit pay statements** page, in the **Pay cycle** field, select the same pay cycle that you selected when you generated and released earnings.
 3.  In the **Pay period** field, select the same pay period that you selected when you generated and released earnings. The list includes only the pay periods that are available for the pay cycle. The default pay period is the first open pay period, but you can select any open pay period in the list.
 4.  Click **OK** to submit the pay statements. A vendor invoice for the sum of the net pay for all pay statements is created and posted. A payment journal that has lines is also created and posted, so that you can generate and post payments.
@@ -99,11 +100,13 @@ To generate checks and electronic payments for workers, follow these steps after
 
 1.  On the **Payment journal** page, select the payment journal, and then, on the Action Pane, click **Lines** to open the **Journal voucher** page.
 2.  Verify that the number of vouchers is correct. There is one journal voucher line for each check pay statement, and one or more journal voucher lines for each electronic pay statement.
-3.  On the **Functions** menu, click **Generate payments**. **Note:** You must generate electronic payments and check payments separately. Therefore, if you’re generating both electronic payments and check payments, you must complete this step two times.
+3.  On the **Functions** menu, click **Generate payments**. 
+    -  **Note:** You must generate electronic payments and check payments separately. Therefore, if you’re generating both electronic payments and check payments, you must complete this step two times.
 4.  On the **Generate payments** page, select the method of payment and the bank account.
 5.  Click **OK** to generate the payment for the records that match the method of payment and the bank account.
     -   If you selected the check method of payment, the **Payroll check payment** page opens. In the **From** field, verify the starting check number, verify the printing destination, and then click **OK** to print the checks.
-    -   If you selected the electronic method of payment, the **Payroll electronic (Direct deposit)** page opens. Enter the path where the ACH file should be created. (The path that you enter must include the file name.) Enter an effective date and the printing destination, and optionally select the **Pay statement** check box to print the pay statements. Click **OK** to create the ACH file. **Tip:** You can print pay statements later, from the **Reports** menu.
+    -   If you selected the electronic method of payment, the **Payroll electronic (Direct deposit)** page opens. Enter the path where the ACH file should be created. (The path that you enter must include the file name.) Enter an effective date and the printing destination, and optionally select the **Pay statement** check box to print the pay statements. Click **OK** to create the ACH file. 
+    - **Tip:** You can print pay statements later, from the **Reports** menu.
 
     The payment status is set to **Sent** for every payment that was generated.
 
