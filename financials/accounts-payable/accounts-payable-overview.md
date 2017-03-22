@@ -44,7 +44,7 @@ Before you can set up Accounts payable, you must complete the following setup:
     -   If you plan to run exchange rate adjustments, set up currency codes on the Currencies page, set up exchange rate types on the Exchange rate types page, and set up currency exchange rates on the Currency exchange rates page.
 -   In Cash and bank management, set up bank accounts to use with methods of payment.
 
-## [Setup pages for Accounts payable
+## Setup pages for Accounts payable
 
 Use the following pages to set up the basic functionality of Accounts payable for each legal entity. The pages are listed in the recommended order of setup. To make the setup process easier, you can create templates from the first records that you create. In a template, values are typically entered in many fields to reflect the features that the organization wants to implement for a particular type of vendor.
 1.  On the Terms of payment page, define the terms of payment that you assign to sales orders, purchase orders, customers, and vendors, and that determine invoice due dates.
@@ -59,6 +59,7 @@ Use the following pages to set up the basic functionality of Accounts payable fo
 In addition to the basic functionality, Accounts payable has other functionality that you can set up.
 
 The additional setup pages are organized by functionality.
+
 **Policies**
 -   On the Vendor invoice policy page, set up vendor invoice policies.
 
