@@ -73,17 +73,17 @@ Transportation management lets you use manage your company’s transportation, a
 ## Planning transportation in Dynamics 365 for Operations
 In Transportation management, transportation planning can be based either on orders or on the shipments that are created based on those orders. The shipments always exist at some point in time but aren't required for transportation planning. Transfer orders are part of the outbound scenario and can be planned together with sales orders. 
 
-![Load drawing](/transportation-management/media/load-drawing1-1024x477.jpg "Load drawing")
+![Load drawing](./media/Load-drawing1-1024x477.jpg)
 
 ## Inbound transportation
 When you order items from a vendor, and the items must be delivered to your warehouse, you might want to arrange the transport of the items yourself. You can use Dynamics 365 for Operations to plan the transportation and receipt of the inbound load. The following illustration shows the business process flow for planning transportation for an inbound load. 
 
-![Business process flow for inbound load transportation](../media/businessprocessflowforinboundloadtransportation.jpg)
+![Business process flow for inbound load transportation](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## Outbound transportation
 You can plan and process an outbound load to ship specific items from a company’s warehouse to a customer. You can use Dynamics 365 for Operations to plan the transportation and shipping of an outbound load. The following illustration shows the business process flow for planning and processing outbound loads for shipping. 
 
-![Planning and processing outbound loads](../media/planningandprocessingoutboundloads.jpg)
+![Planning and processing outbound loads](./media/Planningandprocessingoutboundloads.jpg)
 
 ## Load building
 Dynamics 365 for Operations provides a load building strategy that is named the Volume-based load building strategy. This strategy lets you use the maximum values that are specified for height and weight in the load template, or you can override the settings by entering new values. To use this strategy, select it in the **Load building strategy** field on the **Setup** FastTab on the **Load building workbench** page. In addition, you can add your own load-building strategies by creating a new class in the Application Object Tree (AOT).
