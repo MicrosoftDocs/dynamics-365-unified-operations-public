@@ -57,7 +57,9 @@ To use more than one build agents, setup your VSTS account with Azure billing: <
 
 -   After your account is linked with the Azure subscription. Follow the instructions in the Azure management portal to provision more build agents - <https://www.visualstudio.com/en-us/get-started/setup/get-more-build-or-load-testing-vs>
 
-[![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) Note: make sure you increase “Private Agents” under PAID option. 
+[![VSTS2](./media/vsts2-300x151.jpg)](./media/vsts2.jpg) 
+
+Note: make sure you increase “Private Agents” under PAID option. 
 
 [![VSTS3](./media/vsts3-300x191.jpg)](./media/vsts3.jpg)
 
@@ -72,7 +74,9 @@ Once build agents are added, add user (who will be deploying build VM from LCS) 
     [![build14](./media/build14.jpg)](./media/build14.jpg)
 
 -   **Deleting Default Pool:** If for some reason you have deleted the default pool, please do not create a new pool with the name "Default". Instead create a new pool with the different name and pass the pool name from the "Advanced Settings" customization from LCS during deployment.
--   **Personal access token:** This token is used for all Lifecycle Services (LCS) background actions, including upgrade and deployment. When a user initiates actions from LCS, LCS expects that users will be added to VSTS. The user must authorize LCS access to VSTS on behalf of the user. Until the projects users authorize with VSTS, you will see the below message in action center: [![VSTS setup in LCS\_May27](./media/vsts-setup-in-lcs_may27-300x216.jpg)](./media/vsts-setup-in-lcs_may27.jpg)
+-   **Personal access token:** This token is used for all Lifecycle Services (LCS) background actions, including upgrade and deployment. When a user initiates actions from LCS, LCS expects that users will be added to VSTS. The user must authorize LCS access to VSTS on behalf of the user. Until the projects users authorize with VSTS, you will see the below message in action center: 
+
+[![VSTS setup in LCS\_May27](./media/vsts-setup-in-lcs_may27-300x216.jpg)](./media/vsts-setup-in-lcs_may27.jpg)
 
 ## Deploy Developer topology from LCS
 LCS provides an option to deploy a Development topology environment. With this option, you can deploy developer and build VMs in the cloud that are connected to your Visual Studio Team System  (VSTS) project.
