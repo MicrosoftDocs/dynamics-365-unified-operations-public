@@ -38,6 +38,7 @@ Brazilian legal entity overview
 -------------------------------
 
 A Brazilian legal entity is organized by fiscal establishments that function in the same way and are in the same operations of a branch. There is a primary fiscal establishment that is considered the Matriz, and related fiscal establishments that are located in other states or outside Brazil. The following illustration shows the structure of a Brazilian legal entity and related fiscal establishments. 
+
 [![structure of a Brazilian legal entity and related fiscal establishments](./media/bralegalentity-236x300.png)](./media/bralegalentity.png)
 
 ## Fiscal establishments
