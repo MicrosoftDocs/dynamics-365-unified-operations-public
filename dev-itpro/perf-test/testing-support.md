@@ -43,10 +43,10 @@ When you create a project in Visual Studio, you can add an X++ unit test. You ex
 
     class FMUnitTestSample extends SysTestCase
     {
-    [SysTestMethodAttribute]
-    public void testTotalsEngineConfig()
-    {
-    }
+        [SysTestMethodAttribute]
+        public void testTotalsEngineConfig()
+        {
+        }
     }
 
 After you save the class, each test appears in Test Explorer, just as a C\# test would appear. 
@@ -64,5 +64,9 @@ You can also discover existing tests for an object in your project. Discovery us
 By using this functionality, you can run all the relevant tests. Test Explorer contains all tests for the current project and all tests for the referenced objects.
 
 ## Generate test code by importing Task Recorder recordings into Visual Studio
-You can import the XML for Task Recorder recordings to generate test code that can be used to validate various business process scenarios. [![5\_Support](./media/5_support.png)](./media/5_support.png) Generated code is based on the SysTest Framework and FormAdaptors. FormAdaptors are wrapper classes over pages. They provide strongly typed application programming interfaces (APIs) that can be used to test page functionality. Pre-generated FormAdaptors are included for each package for built-in pages. In a test module, add a reference to a corresponding FormAdaptor for packages and "Test Essentials," which contain helper methods to run test code.
+You can import the XML for Task Recorder recordings to generate test code that can be used to validate various business process scenarios. 
+
+[![5\_Support](./media/5_support.png)](./media/5_support.png) 
+
+Generated code is based on the SysTest Framework and FormAdaptors. FormAdaptors are wrapper classes over pages. They provide strongly typed application programming interfaces (APIs) that can be used to test page functionality. Pre-generated FormAdaptors are included for each package for built-in pages. In a test module, add a reference to a corresponding FormAdaptor for packages and "Test Essentials," which contain helper methods to run test code.
 
