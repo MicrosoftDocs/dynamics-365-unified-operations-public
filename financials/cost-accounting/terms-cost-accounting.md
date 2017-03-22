@@ -104,15 +104,12 @@ Cost classification groups costs according to their shared characteristics. For 
 Cost behavior classifies costs according to their behavior in relation to changes in key business activities. To control costs effectively, management must understand the cost behavior. There are three types of cost behavior pattern: fixed, variable, and semi-variable.
 
 - **Fixed cost**
-
 A fixed cost is a cost that doesn't vary in the short term, regardless of changes in activity level. For example, a fixed cost can be a basic operating expense of a business, such as rent, that won't be affected even if the activity level increases or decreases.
 
 - **Variable cost**
-
 A variable cost changes according to changes in activity level. For example, a specific direct materials cost is associated with each product that is sold. The more products that are sold, the more direct materials costs there are.
 
 - **Semi-variable cost**
-
 Semi-variable costs are partly fixed and partly variable costs. For example, an Internet access fee includes a standard monthly access fee and a broadband usage fee. The standard monthly access fee is a fixed cost, whereas the broadband usage fee is a variable cost.
 
 **Overhead cost**
@@ -147,7 +144,7 @@ One of the allocation principles is to allocate cost by cost rate. You can choos
 
 The purpose of cost roll-up is to include all costs for a given cost object. The level of aggregation is user-defined. By using cost roll-up, you can aggregate elements of costs that must be allocated from one cost object to another. When cost roll-up isn't used, every single element of costs is allocated from one cost object to another.
 
-**Cost rate policy*
+**Cost rate policy**
 
 The cost rate is used to calculate price per cost object. To understand the elements of the price, you define cost rate policies. There are two types of cost rate: historical cost rate and planned cost rate. A historical cost rate is a calculated rate that is used as a multiplier for the allocation base of a cost object. The rate is calculated based on the cost allocations in the previous period. A planned rate is a user-defined rate.
 
