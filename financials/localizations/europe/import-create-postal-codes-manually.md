@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import or manually create postal codes
-description: This article explains how to import and manually create Dutch postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Operations. 
+description: This article explains how to import and manually create postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Operations. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 2016-01-21 17 - 15 - 40
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Import or manually create postal codes
 
-This article explains how to import and manually create Dutch postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Operations. 
+This article explains how to import and manually create postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Operations. 
 
 The import process lets you update the ZIP/postal codes for a specific country/region. You can also create postal codes manually.
 
