@@ -89,16 +89,16 @@ The following sections list help topics by country/region.
 
 #### Fiscal books
 
--   [Fiscal books overview](bra-fiscal-books.md)	
--   [ICMS tax fiscal documents](bra-icms-tax-fiscal-documents.md)			
--   [Import fiscal documents](bra-import-fiscal-documents.md)
--   [Import and verify NF-e XML documents and DANFE files](bra-import-verify-nf-e-xml-documents-danfe-emails.md)
--   [Fiscal documents](bra-fiscal-documents-fiscal-document-framework.md)	
--   [Fiscal document text placeholders](bra-fiscal-document-text-placeholders.md)					
--   [Purchase complementary fiscal documents](bra-purchase-complementary-fiscal-documents.md)	
--   [Referenced fiscal documents](referenced-fiscal-documents.md)			
--   [Sales complementary fiscal documents](bra-sales-complementary-fiscal-documents.md)			
--   [Service electronic fiscal document](service-electronic-fiscal-document.md)	
+-   [Fiscal books overview](/financials/localizations/latin-america/bra-fiscal-books)	
+-   [ICMS tax fiscal documents](/financials/localizations/latin-america/bra-icms-tax-fiscal-documents)			
+-   [Import fiscal documents](/financials/localizations/latin-america/bra-import-fiscal-documents)
+-   [Import and verify NF-e XML documents and DANFE files](/financials/localizations/latin-america/bra-import-verify-nf-e-xml-documents-danfe-emails)
+-   [Fiscal documents](/financials/localizations/latin-america/bra-fiscal-documents-fiscal-document-framework)	
+-   [Fiscal document text placeholders](/financials/localizations/latin-america/bra-fiscal-document-text-placeholders)					
+-   [Purchase complementary fiscal documents](/financials/localizations/latin-america/bra-purchase-complementary-fiscal-documents)	
+-   [Referenced fiscal documents](/financials/localizations/latin-america/referenced-fiscal-documents)			
+-   [Sales complementary fiscal documents](/financials/localizations/latin-america/bra-sales-complementary-fiscal-documents)			
+-   [Service electronic fiscal document](/financials/localizations/latin-america/service-electronic-fiscal-document)	
 
 ### China
 -   [Bill of materials comparison](/financials/localizations/asia-pacific/chn-bom-comparison)
