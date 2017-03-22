@@ -157,8 +157,8 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
 
 3.  Click **Design** again. The yellow highlighting around the **Navigation List** and the **Panel Tab** indicate that there are problems that need to be resolved under each of these nodes before the pattern can be successfully applied.
 
-    |                                                                                                                                                          |                                                                                                                                                          |
-    |----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | | |
+    |---|---|
     | [![CustForm8](./media/custform8.png)](./media/custform8.png) | [![CustForm9](./media/custform9.png)](./media/custform9.png) |
 
 4.  In the Patterns Information Panel, click **SidePanel**.
