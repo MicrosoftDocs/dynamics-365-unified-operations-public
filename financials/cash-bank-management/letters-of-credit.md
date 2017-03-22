@@ -37,6 +37,7 @@ Letters of credit are bank documents that are commonly used for the purchase and
 Letters of credit are used for international transactions to ensure that payments will be made. A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met. Note that a letter of credit is also referred to as a documentary credit (DC). 
 
 For an import letter of credit, the legal entity is the buyer or the applicant for the letter of credit. For an export letter of credit, the legal entity is the seller or the beneficiary of the letter of credit. The following parties are involved with a letter of credit: 
+
 • The applicant (buyer) who intends to pay for the goods 
 • The beneficiary (seller) who will receive the payment
 • The issuing bank that issues the letter of credit
