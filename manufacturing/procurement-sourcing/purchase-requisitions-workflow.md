@@ -53,7 +53,8 @@ The following illustration shows how a purchase requisition can flow through the
 -   **Purchasing agent** – The user who performs a procurement review and can approve the document.
 -   **The requester's manager** – The user who performs a managerial review and can approve the document.
 
-![Purchase requisition workflow review process](./media/purchreqworkflowoverview_submission.gif) In this example, the workflow process for the purchase requisition includes the following steps:
+![Purchase requisition workflow review process](./media/purchreqworkflowoverview_submission.gif)  
+In this example, the workflow process for the purchase requisition includes the following steps:
 
 1.  The preparer submits a purchase requisition for review.
 2.  The purchasing agent receives a notification. The notification requests that the purchasing agent verify the information in the purchase requisition. If required information is missing, the purchasing agent can either add it or return the purchase requisition to the preparer to add it. When all the required information has been filled in, the purchase requisition can move to the next step in the review process.
