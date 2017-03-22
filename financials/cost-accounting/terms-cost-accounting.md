@@ -34,13 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic defines the key terms that are used in Cost accounting.
 
-The following table defines the key terms in Cost accounting.
-
-Term
-
-Definition
-
-Cost accounting
+**Cost accounting**
 
 Cost accounting lets you collect data from various sources, such as the general ledger, sub-ledgers, budgets, and statistical information. You can then analyze, summarize, and evaluate cost data, so that management can make the best possible decisions for price updates, budgets, cost control, and so on. The source data that is used for cost analysis is treated independently in Cost accounting. Therefore, updates in Cost accounting don’t affect the source data. However, when you collect cost data from various sources, and especially when you import the main accounts from General ledger in Microsoft Dynamics 365 for Operation as cost elements, there is data redundancy, because the same data exists in both General ledger and Cost accounting. This redundancy is required, because you use financial management for external reporting and Cost accounting for internal reporting.
 
