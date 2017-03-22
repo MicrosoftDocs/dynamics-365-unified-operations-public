@@ -82,8 +82,8 @@ To set up the benefit accrual plans, enter the following information on the **Be
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -166,8 +166,6 @@ Each line that you add to a benefit accrual plan provides the rules for accruing
 | Earning code               | The earning codes that increase the plan balance when a pay statement line that includes the earning code is submitted for payment.     |
 | Description                | The description of the selected earning code or earning code group.     |
 | Rate for compensatory time | The rate that is used to calculate the amount of compensatory time. For example, if the worker accrues one hour of compensatory time for each hour that is worked by using the selected earning code, enter **1**. If the worker accrues 1.5 hours of compensatory time, enter **1.5**. **Note:** This control is available only when the accrual rate basis for the plan is **Hours of compensatory time**.                                                                                                                                                                              |
-
-### 
 
 ## Enroll workers in benefit accrual plans
 The process for enrolling workers in benefit accrual plans differs from the process for enrolling them in other benefits. Mass enrollment isn’t available for benefit accrual plans, and eligibility processing isn't performed. 
