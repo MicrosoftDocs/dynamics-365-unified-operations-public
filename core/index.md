@@ -33,9 +33,40 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
 
-## Regions
-Dynamics 365 for Operations resources are distributed across multiple geographical regions around the world. A "region" represents multiple data centers in a single geographical area. We have 34 regions generally available, with an additional 4 regions announced. Because we're continuing to expand our global coverage, we maintain an updated list of existing and newly announced regions.
-
-## Partners
-Microsoft works closely with our partners to ensure that customers can get up and running quickly, in any kind of industry. For more information about our partners, check out their marketplace pages.
-
+This user guide can help you learn how to make Dynamics 365 for Operations work for your business.  Find content for:   
+-	Onboarding and setting up your organization
+-	Financials
+  - Accounts payable
+  - Accounts receivable
+  - Cash and bank management
+  - Cost accounting
+  - Expense management
+  - Fixed assets
+  - General ledger
+  - Project management
+  - Public sector
+- Regional features
+  - Asia Pacific
+  - Europe
+  - Latin America
+  - Middle East and Africa
+  - North America
+-	HR 
+-	Retail
+-	Supply chain management
+  - Cost management
+  - Inventory management
+  - Master planning
+  - Procurement and sourcing
+  - Production control
+  - Sales and marketing
+  - Transportation management
+  - Warehouse management
+-	Admin & developer functionality 
+  -	Analytics
+  -	Data entities
+  -	Office integration
+  -	Mobile apps
+  - System administration
+  - Developer tools
+  
