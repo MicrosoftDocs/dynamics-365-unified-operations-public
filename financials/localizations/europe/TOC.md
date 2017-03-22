@@ -1,5 +1,4 @@
 # [Advance holders](advance-holders.md)
-# [Depreciation rounding](eeu-depreciation-rounding.md)
 # [Edit invoice IDs on sales orders](eeu-edit-invoice-id-sales-orders.md)
 # [EU entry certificates](entry-certificates.md)
 # [EU sales list reporting](eu-sales-list.md)
@@ -29,6 +28,7 @@
 ## [PRODCOM report setup](prodcom-report-setup.md)
 
 # The Czech Republic									
+## [Depreciation rounding](eeu-depreciation-rounding.md)
 ## [Depreciation suspension](cze-depreciation-suspension-holidays.md)						
 ## [Fixed assets depreciation](cze-fixed-assets-depreciation.md)						
 ## [Half year depreciation](cze-half-depreciation-fixed-asset-disposal.md)
