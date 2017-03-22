@@ -68,7 +68,7 @@ Cost elements are used as a function to track and categorize where costs flow to
 -   Personnel costs
 -   Energy costs
 
-**Secondary cost elements** 
+**Secondary cost element** 
 
 The secondary cost elements represent the internal flow of costs, because these costs are created and used only in Cost accounting. Secondary cost elements help guarantee that the source of costs can be traced. These cost elements are used in cost allocations and overhead calculations. Here are some examples of secondary cost elements:
 
@@ -79,15 +79,15 @@ The secondary cost elements represent the internal flow of costs, because these 
 
 A cost control unit represents the cost structure. It must be associated with cost object dimensions in a cost accounting ledger.
 
-**Versions**
+**Version**
 
 Versions are used to simulate, view, and compare various outcomes. By default, all actual costs are viewed in one base version that is known as *actual*. For budgets and calculations, you can work with as many versions as you require. For example, you can import budget data into an original version and then revise the budget in a revised version. For calculations, you can create multiple versions. In these various versions, you can then create calculations by using different calculation rules that will be applied for cost allocation.
 
-**Statements**
+**Statement**
 
 Statements are views for the managers who are responsible for controlling costs. Statements are defined by a cost controller, and they give a quick overview of actual and budgeted costs, and even deviations and calculation versions. To help guarantee that managers view only data that they are accountable for, data that appears in the statements is subject to access rules.
 
-**Data connectors**
+**Data connector**
 
 Data can be imported into Cost accounting from external systems via data connectors. For example, you can import account structures, dimensions, general ledger entries, and budget entries. You can use preconfigured data connectors or custom connectors to import data and create data connections.
 
@@ -103,14 +103,11 @@ Cost classification groups costs according to their shared characteristics. For 
 
 Cost behavior classifies costs according to their behavior in relation to changes in key business activities. To control costs effectively, management must understand the cost behavior. There are three types of cost behavior pattern: fixed, variable, and semi-variable.
 
-- **Fixed cost**
-A fixed cost is a cost that doesn't vary in the short term, regardless of changes in activity level. For example, a fixed cost can be a basic operating expense of a business, such as rent, that won't be affected even if the activity level increases or decreases.
+- **Fixed cost** - A fixed cost is a cost that doesn't vary in the short term, regardless of changes in activity level. For example, a fixed cost can be a basic operating expense of a business, such as rent, that won't be affected even if the activity level increases or decreases.
 
-- **Variable cost**
-A variable cost changes according to changes in activity level. For example, a specific direct materials cost is associated with each product that is sold. The more products that are sold, the more direct materials costs there are.
+- **Variable cost** - A variable cost changes according to changes in activity level. For example, a specific direct materials cost is associated with each product that is sold. The more products that are sold, the more direct materials costs there are.
 
-- **Semi-variable cost**
-Semi-variable costs are partly fixed and partly variable costs. For example, an Internet access fee includes a standard monthly access fee and a broadband usage fee. The standard monthly access fee is a fixed cost, whereas the broadband usage fee is a variable cost.
+- **Semi-variable cost** - Semi-variable costs are partly fixed and partly variable costs. For example, an Internet access fee includes a standard monthly access fee and a broadband usage fee. The standard monthly access fee is a fixed cost, whereas the broadband usage fee is a variable cost.
 
 **Overhead cost**
 
@@ -136,7 +133,7 @@ A cost allocation policy defines the amounts and quantities that must be allocat
 
 The allocation base is the basis that can be used to measure and quantify activities, such as machine hours that are used, kilowatt hours that are consumed, direct labor hours that are spent, or square footage that is occupied. It's used to allocate costs to one or more cost objects.
 
-**Allocation principles**
+**Allocation principle**
 
 One of the allocation principles is to allocate cost by cost rate. You can choose to allocate costs by using the actual period rate or a historical rate. Allocation that uses the reciprocal method helps guarantee that the allocation base is determined by a series of simultaneous equations before allocation is done by using the actual period rate.
 
