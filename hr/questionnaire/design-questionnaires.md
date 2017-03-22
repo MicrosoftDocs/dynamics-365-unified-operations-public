@@ -93,11 +93,12 @@ Questionnaire parameters define the anonymity, number sequence codes, and refere
 
 The number sequence codes are used to organize questions and answers. Based on these number sequence codes, values are automatically assigned to items. 
 
-
 You should define all parameters before you begin to create your data. You can modify the questionnaire parameter settings at any time.
 
 ## Questionnaire components
-Questionnaires comprise three main elements: answer groups that contain the answers for multiple choice questions, questions, and the questionnaire itself. You can optionally group the questions on a questionnaire into result groups. Result groups let you categorize questions and provide further analysis on the questionnaire. [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+Questionnaires comprise three main elements: answer groups that contain the answers for multiple choice questions, questions, and the questionnaire itself. You can optionally group the questions on a questionnaire into result groups. Result groups let you categorize questions and provide further analysis on the questionnaire. 
+
+[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### Answer groups and answers
 
@@ -119,7 +120,8 @@ An answer group can be used for more than one question on the same questionnaire
 A questionnaire must contain questions. Questions can be either open-ended or closed-ended.
 
 -   The responses to open-ended questions aren't controlled, and respondents can type their answers.
--   Closed-ended questions require a list of predefined response options, and the questions can be structured to let a respondent select multiple responses. Questions should be designed to elicit specific information from a respondent and must be linked to an answer group that provides the response options for each closed-ended question. **Note:** Before you can set up closed-ended questions, you must create answer groups and answers.
+-   Closed-ended questions require a list of predefined response options, and the questions can be structured to let a respondent select multiple responses. Questions should be designed to elicit specific information from a respondent and must be linked to an answer group that provides the response options for each closed-ended question. 
+     -  **Note:** Before you can set up closed-ended questions, you must create answer groups and answers.
 
 Questions can be arranged in a conditional question hierarchy, so that secondary questions depend on the answer that the respondent selects for the previous question. You can write the questions first and then arrange them into a hierarchy later.
 
