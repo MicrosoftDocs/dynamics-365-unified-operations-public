@@ -11,6 +11,7 @@
 ## [Consignment](consignment.md)
 ## [Set up consignment](set-up-consignment.md)
 # Quality management
+## [Enable quality management](enable-quality-management.md)
 ## [Inventory blocking](inventory-blocking.md)
 ## [Nonconformance management](enable-nonconformance-management.md)
 ## [Quarantine order](quarantine-orders.md)
