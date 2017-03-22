@@ -2,7 +2,6 @@
 # Indbound process
 # Outbound process
 # Set up inventory tracking
-## [Cycle counting](../warehouse-management/cycle-counting.md)
 ## [Inventory blocking](inventory-blocking.md)
 ## [Inventory journals](inventory-journals.md)
 ## [Inventory locations](inventory-locations.md)
