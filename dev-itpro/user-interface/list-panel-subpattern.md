@@ -105,7 +105,13 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
 
 ## Examples
-Form: **CLIPatterns\_ListPanel** **(FormTabPageControl1)** [![ListPanel(2)](./media/listpanel2-1024x283.png)](./media/listpanel2.png) Form: **SalesSummaryParameters (GroupQuotation)** [![ListPanel(3)](./media/listpanel3.png)](./media/listpanel3.png)
+Form: **CLIPatterns\_ListPanel** **(FormTabPageControl1)** 
+
+[![ListPanel(2)](./media/listpanel2-1024x283.png)](./media/listpanel2.png) 
+
+Form: **SalesSummaryParameters (GroupQuotation)** 
+
+[![ListPanel(3)](./media/listpanel3.png)](./media/listpanel3.png)
 
 ## Resources
 ### Typically used by patterns

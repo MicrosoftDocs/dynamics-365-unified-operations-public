@@ -103,13 +103,9 @@ Importantly, your control should not only identify itself by name, but (using a 
 
 ***Example***
 
-<http://www.w3.org/TR/WCAG20-TECHS/ARIA1.html>
-
-&lt;button aria-label="Close" aria-describedby="descriptionClose"
-
-onclick="myDialog.close()"&gt;X&lt;/button&gt;
-
-&lt;div id="descriptionClose"&gt;Closing this window will discard any information entered and return you to the main page&lt;/div&gt;
+    <http://www.w3.org/TR/WCAG20-TECHS/ARIA1.html>
+    <button aria-label="Close" aria-describedby="descriptionClose" onclick="myDialog.close()"></button>
+    <div id="descriptionClose">Closing this window will discard any information entered and return you to the main page</div>
 
 **Indicate when it is busy** It may not always be clear to the visually-impaired user why the control isn’t responsive. Providing a “busy” message helps in these cases.
 
@@ -117,7 +113,7 @@ onclick="myDialog.close()"&gt;X&lt;/button&gt;
 
 ***Example***
 
-&lt;p aria-live=”polite” aria-busy=”true”&gt;&lt;/p&gt;
+    <p aria-live=”polite” aria-busy=”true”></p>
 
 **Indicate that the contents have been validated and are invalid** The async nature of Dynamics 365 for Operations will result in a dynamic field state change. The message bar will introduce itself to the visually-impaired user, and the control itself should express an invalid state.
 

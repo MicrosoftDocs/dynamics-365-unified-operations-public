@@ -105,11 +105,15 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 ### Toolbar and list
 
-Form: **VendTable (TabCommunication)** [![ToolbarList(3)](./media/toolbarlist3.png)](./media/toolbarlist3.png)
+Form: **VendTable (TabCommunication)** 
+
+[![ToolbarList(3)](./media/toolbarlist3.png)](./media/toolbarlist3.png)
 
 ### Toolbar and list (double)
 
-Form: **SalesQuickQuote (TabPageExistingItems)** [![ToolbarList(4)](./media/toolbarlist4.png)](./media/toolbarlist4.png)
+Form: **SalesQuickQuote (TabPageExistingItems)** 
+
+[![ToolbarList(4)](./media/toolbarlist4.png)](./media/toolbarlist4.png)
 
 ## Resources
 ### Typically used by patterns
@@ -133,5 +137,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### Microsoft Dynamics AX 2012 content
 
-**VendTable** [![ToolbarList(5)](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+**VendTable** 
+
+[![ToolbarList(5)](./media/toolbarlist5.png)](./media/toolbarlist5.png)
 

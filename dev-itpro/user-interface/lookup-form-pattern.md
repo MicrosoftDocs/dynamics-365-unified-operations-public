@@ -132,15 +132,21 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 ### Lookup basic
 
-Form: **SysLanguageLookup** (Click **Settings** &gt; **User settings** on the navigation bar.) [![LookupForm(4)](./media/lookupform4.png)](./media/lookupform4.png)
+Form: **SysLanguageLookup** (Click **Settings** &gt; **User settings** on the navigation bar.) 
+
+[![LookupForm(4)](./media/lookupform4.png)](./media/lookupform4.png)
 
 ### Lookup w/tabs
 
-Form: **CaseCategoryLookup** (Click **Common** &gt; **Common** &gt; **Cases** &gt; **All cases**, and then select a case to go to the details.) ![LookupForm(5)](./media/lookupform5.png)
+Form: **CaseCategoryLookup** (Click **Common** &gt; **Common** &gt; **Cases** &gt; **All cases**, and then select a case to go to the details.) 
+
+![LookupForm(5)](./media/lookupform5.png)
 
 ### Lookup w/preview
 
-Form: **HcmWorkerLookup** (Click **Human resouces** &gt; **Common** &gt; **Organization** &gt; **Positions** &gt; **Positions**, and then click a record to go to the details. Expand the **Worker assignment** FastTab, click **New**, and then click the drop-down arrow in the **Worker** field.) [![LookupForm(6)](./media/lookupform6.png)](./media/lookupform6.png)
+Form: **HcmWorkerLookup** (Click **Human resouces** &gt; **Common** &gt; **Organization** &gt; **Positions** &gt; **Positions**, and then click a record to go to the details. Expand the **Worker assignment** FastTab, click **New**, and then click the drop-down arrow in the **Worker** field.) 
+
+[![LookupForm(6)](./media/lookupform6.png)](./media/lookupform6.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -166,5 +172,15 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-**SysLanguageLookup (Lookup basic)** ![LookupForm(7)](./media/lookupform7.png) **CaseCategoryLookup (Lookup w/tabs)** [![LookupForm(8)](./media/lookupform8.png)](./media/lookupform8.png) **HcmWorkerLookup (Lookup w/preview)** ![LookupForm(9)](./media/lookupform9.png)
+**SysLanguageLookup (Lookup basic)** 
+
+![LookupForm(7)](./media/lookupform7.png) 
+
+**CaseCategoryLookup (Lookup w/tabs)** 
+
+[![LookupForm(8)](./media/lookupform8.png)](./media/lookupform8.png) 
+
+**HcmWorkerLookup (Lookup w/preview)** 
+
+![LookupForm(9)](./media/lookupform9.png)
 

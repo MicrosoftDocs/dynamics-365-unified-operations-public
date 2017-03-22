@@ -49,6 +49,7 @@ Three patterns are described in this document:
 -   **Simple List and Details – Tree** – This is the SL+D pattern that should be used if the “simple list” part of the form is actually a tree.
 
 ## Wireframe
+
 [![Wireframe](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
 
 ## Pattern changes
@@ -131,15 +132,21 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 ### Simple List and Details – List Grid
 
-Form: **PaymTerm** [![Simple List and Details – List Grid example](./media/simplelistanddetails2-1024x558.png)](./media/simplelistanddetails2.png)
+Form: **PaymTerm** 
+
+[![Simple List and Details – List Grid example](./media/simplelistanddetails2-1024x558.png)](./media/simplelistanddetails2.png)
 
 ### Simple List and Details – Tabular Grid
 
-Form: **ExchangeRate** [![Simple List and Details - Tabular Grid example](./media/simplelistanddetails3-1024x557.png)](./media/simplelistanddetails3.png)
+Form: **ExchangeRate** 
+
+[![Simple List and Details - Tabular Grid example](./media/simplelistanddetails3-1024x557.png)](./media/simplelistanddetails3.png)
 
 ### Simple List and Details – Tree
 
-Form: **FiscalCalendars** [![Simple List and Details – Tabular Grid example](./media/simplelistanddetails4-1024x507.png)](./media/simplelistanddetails4.png)
+Form: **FiscalCalendars** 
+
+[![Simple List and Details – Tabular Grid example](./media/simplelistanddetails4-1024x507.png)](./media/simplelistanddetails4.png)
 
 ## Appendix
 ### Frequently asked questions

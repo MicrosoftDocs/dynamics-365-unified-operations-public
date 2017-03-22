@@ -226,23 +226,33 @@ A dialog should **not** have these elements:
 ## Examples
 ### Dialog (basic)
 
-Form: **ProjTableCreate** (Click **Project management and accounting** &gt; **Common** &gt; **Projects** &gt; **All projects**, and then click **New**.) [![DialogForm(5)](./media/dialogform5.png)](./media/dialogform5.png)
+Form: **ProjTableCreate** (Click **Project management and accounting** &gt; **Common** &gt; **Projects** &gt; **All projects**, and then click **New**.) 
+
+[![DialogForm(5)](./media/dialogform5.png)](./media/dialogform5.png)
 
 ### Dialog w/tabs
 
-Form: **CaseDetailCreate** (Click **Common** &gt; **Common** &gt; **Cases** &gt; **All cases**, and then click **New**.) [![DialogForm(6)](./media/dialogform6.png)](./media/dialogform6.png)
+Form: **CaseDetailCreate** (Click **Common** &gt; **Common** &gt; **Cases** &gt; **All cases**, and then click **New**.) 
+
+[![DialogForm(6)](./media/dialogform6.png)](./media/dialogform6.png)
 
 ### Dialog w/FastTabs
 
-This example shows a modified version of the **CaseDetailCreate** form, because the product currently includes no examples of forms that use this pattern. [![DialogForm(7)](./media/dialogform7.png)](./media/dialogform7.png)
+This example shows a modified version of the **CaseDetailCreate** form, because the product currently includes no examples of forms that use this pattern. 
+
+[![DialogForm(7)](./media/dialogform7.png)](./media/dialogform7.png)
 
 ### Dialog w/double tabs
 
-Form: **PurchTableReferences** (Click **Accounts payable** &gt; **Common** &gt; **Purchase orders** &gt; **All purchase orders**, and then click **General** &gt; **Related information** &gt; **Related orders**.) [![DialogForm(8)](./media/dialogform8.png)](./media/dialogform8.png)
+Form: **PurchTableReferences** (Click **Accounts payable** &gt; **Common** &gt; **Purchase orders** &gt; **All purchase orders**, and then click **General** &gt; **Related information** &gt; **Related orders**.) 
+
+[![DialogForm(8)](./media/dialogform8.png)](./media/dialogform8.png)
 
 ### Dialog (read only)
 
-Form: **SalesTablePostings** (Click **Accounts receivable** &gt; **Common** &gt; **Sales orders** &gt; **All sales orders**, and then click **General** &gt; **Related information** &gt; **Postings**.) [![DialogForm(9)](./media/dialogform9.png)](./media/dialogform9.png)
+Form: **SalesTablePostings** (Click **Accounts receivable** &gt; **Common** &gt; **Sales orders** &gt; **All sales orders**, and then click **General** &gt; **Related information** &gt; **Postings**.) 
+
+[![DialogForm(9)](./media/dialogform9.png)](./media/dialogform9.png)
 
 ## Appendix
 ### Frequently asked questions
