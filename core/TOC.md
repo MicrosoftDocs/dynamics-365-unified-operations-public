@@ -66,10 +66,10 @@
 ## [Configure workflow properties](organization-administration/configure-workflow-properties.md)
 
 # Technical topics for users
-## [Analytics home page (Admin & Developer Guide)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
-## [Data entities home page (Admin & Developer Guide)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
-## [Office integration home page (Admin & Developer Guide)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
-## [Mobile apps home page (Admin & Developer Guide)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
+## [Analytics home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
+## [Data entities home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
+## [Office integration home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
+## [Mobile apps home page (Admin & developer guide)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 
 # [Financials guide](/dynamics365/operations/financials/index)
 
