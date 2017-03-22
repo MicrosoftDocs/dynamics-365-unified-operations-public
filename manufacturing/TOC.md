@@ -134,7 +134,6 @@
 # Warehouse management
 ## Setup 
 ### [Control work by using work templates and location directives](warehouse-management/control-warehouse-location-directives.md)
-### [Enable quality management](inventory-management/enable-quality-management.md)
 ### [Manage warehouse workers](warehouse-management/manage-warehouse-workers.md)
 ### [Set up layout](warehouse-management/warehouse-configuration.md)
 ### [Warehouse work policies](warehouse-management/warehouse-work-policies.md)

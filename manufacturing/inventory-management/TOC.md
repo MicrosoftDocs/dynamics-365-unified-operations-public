@@ -2,8 +2,6 @@
 # Indbound process
 # Outbound process
 # Set up inventory tracking
-## [Cycle counting](../warehouse-management/cycle-counting.md)
-## [Inventory blocking](inventory-blocking.md)
 ## [Inventory journals](inventory-journals.md)
 ## [Inventory locations](inventory-locations.md)
 ## [Inventory statuses](inventory-statuses.md)
@@ -12,7 +10,9 @@
 # Consignment inventory
 ## [Consignment](consignment.md)
 ## [Set up consignment](set-up-consignment.md)
-## Quality management
+# Quality management
+## [Enable quality management](enable-quality-management.md)
+## [Inventory blocking](inventory-blocking.md)
 ## [Nonconformance management](enable-nonconformance-management.md)
 ## [Quarantine order](quarantine-orders.md)
 ## [Quality management process](quality-management-processes.md)

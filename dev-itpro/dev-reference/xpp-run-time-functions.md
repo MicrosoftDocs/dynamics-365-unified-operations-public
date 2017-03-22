@@ -121,67 +121,14 @@ For more information, see [X++ Date Run-Time Functions](xpp-date-run-time-functi
 ## Math
 For more information, see [X++ Math Run-Time Functions](xpp-math-run-time-functions.md).
 
-abs
-
-acos
-
-asin
-
-atan
-
-corrFlagGet
-
-corrFlagSet
-
-cos
-
-cosh
-
-decRound
-
-exp
-
-exp10
-
-frac
-
-log10
-
-logN
-
-max
-
-min
-
-power
-
-round
-
-sin
-
-sinh
-
-tan
-
-tanh
-
-trunc
-
-endMth
-
-mkDate
-
-mthName
-
-mthOfYr
-
-nextMth
-
-nextQtr
-
-nextYr
-
-prevMth
+|         |          |               |               |
+|---------|----------|---------------|---------------|
+|abs|acos|asin|atan|
+|corrFlagGet|corrFlagSet|cos|cosh|
+|decRound|exp|exp10|frac|
+|log10|logN|max|min|
+|power|round|sin|sinh|
+|tan|tanh|trunc||
 
 ## Reflection
 For more information, see [X++ Reflection Run-Time Functions](xpp-reflection-run-time-functions.md).

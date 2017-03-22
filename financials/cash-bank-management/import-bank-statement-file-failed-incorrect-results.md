@@ -92,14 +92,16 @@ Sometimes, debits might be imported as credits, and credits might be imported as
 -   ISO20022XML-to-Reconcilation.xslt GetCreditDebit template
 -   MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator template
 
-<!---## Examples of bank statement formats and technical layouts
-The following table lists examples of the technical layout definitions for advanced bank reconciliation import files and three related bank statement example files.
+## Examples of bank statement formats and technical layouts
+The following table lists examples of the technical layout definitions for advanced bank reconciliation import files and three related bank statement example files. You can download the example files and technical layouts here:
+ https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
-| Technical layout definition                                                                                       | Bank statement example file                                                                                     |
-|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [DynamicsAXMT940Layout](./media/dynamicsaxmt940layout1.xlsx)       | [MT940StatementExample](./media/mt940statementexample.pdf)       |
-| [DynamicsAXISO20022Layout](./media/dynamicsaxiso20022layout1.xlsx) | [ISO20022StatementExample](./media/iso20022statementexample.pdf) |
-| [DynamicsAXBAI2Layout](./media/dynamicsaxbai2layout1.xlsx)         | [BAI2StatementExample](./media/bai2statementexample.pdf)         |
--->
+
+| Technical layout definition                             | Bank statement example file          |
+|---------------------------------------------------------|--------------------------------------|
+| DynamicsAXMT940Layout                                   | MT940StatementExample                |
+| DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
+| DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+
 
 
