@@ -71,12 +71,34 @@ The following sections list help topics by country/region.
 
 -   [Packing material fee calculation for Austria](/financials/localizations/europe/aut-packing-material-fee-calculation)
 -   [VAT statement details for Austria](/financials/localizations/europe/aut-vat-statement-details-austria)
--   [OIOUBL standards for electronic invoicing](/financials/localizations/europe/oioubl-standards-electronic-invoicing)
 
 ### Belgium
 
--   [Setting up and maintaining PRODCOM](/financials/localizations/europe/prodcom-report-setup)
 -   [CODA bank statement](/financials/localizations/europe/bel-coda-bank-statement-import)
+-   [PRODCOM report](/financials/localizations/europe/prodcom-report-setup)
+
+
+### Brazil
+
+-   [Examples - Journals generated during the electronic payment return process for Brazil](/financials/localizations/latin-america/bra-examples-journals-generated-electronic-payment-return-process)
+-   [NF-e process overview](/financials/localizations/latin-america/bra-nf-e-process)
+-   [Parameters for legal entities in Brazil](/financials/localizations/latin-america/brazilian-legal-entity-parameters)
+-   [Brazilian taxes](/financials/localizations/latin-america/bra-calculate-taxes)
+-   [Tax attributes](/financials/localizations/latin-america/bra-tax-attributes)
+-   [Tax payments](/financials/localizations/latin-america/tax-payments)
+
+#### Fiscal books
+
+-   [Fiscal books overview](bra-fiscal-books.md)	
+-   [ICMS tax fiscal documents](bra-icms-tax-fiscal-documents.md)			
+-   [Import fiscal documents](bra-import-fiscal-documents.md)
+-   [Import and verify NF-e XML documents and DANFE files](bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+-   [Fiscal documents](bra-fiscal-documents-fiscal-document-framework.md)	
+-   [Fiscal document text placeholders](bra-fiscal-document-text-placeholders.md)					
+-   [Purchase complementary fiscal documents](bra-purchase-complementary-fiscal-documents.md)	
+-   [Referenced fiscal documents](referenced-fiscal-documents.md)			
+-   [Sales complementary fiscal documents](bra-sales-complementary-fiscal-documents.md)			
+-   [Service electronic fiscal document](service-electronic-fiscal-document.md)	
 
 ### China
 -   [Bill of materials comparison](/financials/localizations/asia-pacific/chn-bom-comparison)
@@ -97,6 +119,7 @@ The following sections list help topics by country/region.
     -   [Half year depreciation on fixed asset disposal for the Czech Republic](/financials/localizations/europe/cze-half-depreciation-fixed-asset-disposal)
     -   [Depreciation suspension (holidays)](/financials/localizations/europe/cze-depreciation-suspension-holidays)
     -   [Fixed assets depreciation methods for the Czech Republic](/financials/localizations/europe/cze-fixed-assets-depreciation)
+-   [Post the pre-acquisition of a fixed asset](/financials/localizations/europe/eeur-pre-acquisition-acquisition-fixed-asset)
 -   [VAT statement for the Czech Republic](/financials/localizations/europe/cz-vat-statement-details-for-czech-republic)
 -   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals)
 -   [Set up signers for print forms](/financials/localizations/europe/eeu-set-up-signers-for-printing-forms)
@@ -105,6 +128,7 @@ The following sections list help topics by country/region.
 ### Estonia
 
 -   [VAT statement details for Estonia](/financials/localizations/europe/est-vat-statement-details-estonia)
+-   [Fixed assets disposal](/financials/localizations/europe/eeu-credit-note-reverse-fixed-asset-sale)
 
 ### Europe
 -   [Advance holders](/financials/localizations/europe/advance-holders)
@@ -112,23 +136,28 @@ The following sections list help topics by country/region.
 -   [EU Entry certificates](/financials/localizations/europe/entry-certificates)
 -   [EU Sales list reporting](/financials/localizations/europe/eu-sales-list)
 -   [File formats for methods of payment](/financials/localizations/europe/select-file-formats-for-the-method-of-payments)
--   [SEPA direct debit overview](/financials/accounts-receivable/sepa-direct-debit-overview)
--   [SEPA credit transfer overview](/financials/accounts-payable/sepa-credit-transfer)
+-   [Import or manually create postal codes](/financials/localizations/europe/import-create-postal-codes-manually)
 -   [Intrastat](/financials/localizations/europe/intrastat)
 -   [Invoice issue deadline](/financials/localizations/europe/invoice-issue-deadline)
 -   [OIOUBL standards for electronic invoicing](/financials/localizations/europe/oioubl-standards-electronic-invoicing)
--   [Payment slip report for Europe](/financials/localizations/europe/eur-payment-slip-report-giro)
--   [VAT reporting for Europe](/financials/localizations/europe/eu-vat-reporting)
--   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals)
+-   [Payment slip report](/financials/localizations/europe/eur-payment-slip-report-giro)
+-   [Petty cash](/financials/localizations/europe/eeu-petty-cash)
+-   [Registration IDs](/financials/localizations/europe/registration-ids)
+-   [SEPA direct debit overview](/financials/accounts-receivable/sepa-direct-debit-overview)
+-   [SEPA credit transfer overview](/financials/accounts-payable/sepa-credit-transfer)
 -   [Set up signers for print forms](/financials/localizations/europe/eeu-set-up-signers-for-printing-forms)
+-   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals)
 -   [Update how amounts are displayed on reports and documents](/financials/localizations/europe/eeu-amount-printing-forms)
-
+-   [VAT reporting for Europe](/financials/localizations/europe/eu-vat-reporting](
+-   [View transactions on settlement](/financials/localizations/europe/transactions-settlement-form)
 
 ### France
 -   [Chronological invoice and voucher numbers](/financials/localizations/europe/chronological-invoices-vouchers-france)
 -   [Derogatory depreciation for France](/financials/localizations/europe/derogatory-depreciation)
--   [Penalties for past due customer payments in France](/financials/localizations/europe/apply-penalty-customer-payment-past-due)
 -   [NAF codes and siret numbers](/financials/localizations/europe/naf-codes-siret-numbers)
+-   [Penalties for past due customer payments in France](/financials/localizations/europe/apply-penalty-customer-payment-past-due)
+-   [Print lump sum recovery text on a customer invoice](/financials/localizations/europe/configure-print-lump-sum-recovery-text-customer-invoice)
+-   [RB/SL depreciation](/financials/localizations/europe/rbsl-depreciation)
 
 #### Public Sector in France
 -   [Commitments in the public sector](/financials/localizations/europe/commitments-public-sector-france)
@@ -137,63 +166,65 @@ The following sections list help topics by country/region.
 -   [Titres de recette](/financials/localizations/europe/titres-de-recette-public-sector-france)
 -   [Vendor invoice payment holds](/financials/localizations/europe/vendor-invoice-payment-holds-public-sector-france)
 
+
 ### Germany
 -   [Additional acquisition depreciation](/financials/localizations/europe/additional-acquisition-depreciation)
--   [Invoice issue deadline](/financials/localizations/europe/invoice-issue-deadline)
 -   [German audit file (GDPdU/GoBD)](/financials/localizations/europe/gdpdu-audit-data-export)
 -   [German journal list report](/financials/localizations/europe/german-journal-list-report)
 -   [Print a separate label for credit memos that originate from sales (Task Guide)](/financials/localizations/europe/print-separate-label-credit-memo-originating-sales-deu)
 
 ### Hungary
 
--   [Advance holders](/financials/localizations/europe/advance-holders)
--   [Advance holder transactions](/financials/localizations/europe/advance-holders-transactions)
--   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals)
--   [Set up signers for print forms](/financials/localizations/europe/eeu-set-up-signers-for-printing-forms)
--   [Update how amounts are displayed on reports and documents](/financials/localizations/europe/eeu-amount-printing-forms)
+-   [Low-cost fixed assets](/financials/localizations/europe/hun-low-cost-fixed-assets)
+-   [Post the pre-acquisition of a fixed asset](/financials/localizations/europe/eeur-pre-acquisition-acquisition-fixed-asset)
 
-### Ireland
-
--   [Invoice issue deadline](/financials/localizations/europe/invoice-issue-deadline)
 
 ### Italy
 
 -   [Italian black list report](/financials/localizations/europe/italian-black-list-report)
--   [OIOUBL standards for electronic invoicing](/financials/localizations/europe/oioubl-standards-electronic-invoicing)
-
+-   [VAT statements details](/financials/localizations/europe/vat-statements-details-italy)
+-   [Competence date for transactions](/financials/localizations/europe/ita-competence-date)
+-   [Manual depreciation of fixed assets](/financials/localizations/europe/ita-depreciation-of-fixed-assets)
+-   [Packing slip date verification on invoices for Italy](/financials/localizations/europe/ita-packing-slip-date-verification-on-invoice)
+-   [Italian sales tax books](/financials/localizations/europe/fiscal-books-italy)
+-   [Split payment for invoices issued to the Public Administration](/financials/localizations/europe/split-payment-invoices-issued-public-administration)
 ### Japan
 
--   [Fixed asset depreciation](/financials/localizations/asia-pacific/fixed-asset-depreciation-japan)
--   [Set up reduction entries for fixed assets](/financials/localizations/asia-pacific/set-up-reduction-entry-fixed-assets)
--   [Equally divided depreciation method](/financials/localizations/asia-pacific/equally-divided-depreciation-method)
--   [Allocation rules for fixed assets]/(/financials/localizations/asia-pacific/allocation-rules-fixed-assets)
--   [Set up asset retirement obligation for fixed assets](/financials/localizations/asia-pacific/set-up-asset-retirement-obligation-fixed-assets)
--   [Fixed asset impairment management on cash generating unit](/financials/localizations/asia-pacific/fixed-asset-impairment-accounting-cash-generate-unit)
--   [Consolidated invoices](/financials/localizations/asia-pacific/consolidate-invoices)
 -   [Bank payment fees covered by vendors](/financials/localizations/asia-pacific/bank-payment-fees-vendors)
+-   [Consolidated invoices](/financials/localizations/asia-pacific/consolidate-invoices)
+-   [Pay a vendor by endorsing a bill of exchange](/financials/localizations/asia-pacific/pay-vendor-endorse-bill-of-exchange)
+-   [Progressive withholding tax calculation](/financials/localizations/asia-pacific/japan-progressive-withholding-tax-calculation)
+
+#### Fixed assets for Japan
+-   [Allocation rules for fixed assets](/financials/localizations/asia-pacific/allocation-rules-fixed-assets)
+-   [Equally divided depreciation method](/financials/localizations/asia-pacific/equally-divided-depreciation-method)
+-   [Fixed asset depreciation](/financials/localizations/asia-pacific/fixed-asset-depreciation-japan)
+-   [Fixed asset impairment management on cash generating unit](/financials/localizations/asia-pacific/fixed-asset-impairment-accounting-cash-generate-unit)
+-   [Set up asset retirement obligation for fixed assets](/financials/localizations/asia-pacific/set-up-asset-retirement-obligation-fixed-assets)
+-   [Set up reduction entries for fixed assets](/financials/localizations/asia-pacific/set-up-reduction-entry-fixed-assets)
 
 ### Latvia
 
--   [Advance holders](/financials/localizations/europe/advance-holders)
--   [Advance holder transactions](/financials/localizations/europe/advance-holders-transactions)
--   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals)
--   [Set up signers for print forms](/financials/localizations/europe/eeu-set-up-signers-for-printing-forms)
--   [Update how amounts are displayed on reports and documents](/financials/localizations/europe/eeu-amount-printing-forms)
+-   [Fixed assets accounting for tax purposes](/financials/localizations/europe/lva-fixed-assets-accounting)
+-   [Fixed assets location change tracking](/financials/localizations/europe/lva-fixed-assets-location-fields-change)
+-   [Invoice and packing slip numbering](/financials/localizations/europe/eeu-invoices-packing-slips-numbering)
+-   [Tax on natural resources report](/financials/localizations/europe/tax-natural-resources-latvia)
+-   [VAT statement details](/financials/localizations/europe/lv-vat-statement-details)
 
 ### Lithuania
 
--   [Advance holders](/financials/localizations/europe/advance-holders)
-    -   [Advance holder transactions](/financials/localizations/europe/advance-holders-transactions)
--   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals)
--   [Set up signers for print forms ](/financials/localizations/europe/eeu-set-up-signers-for-printing-forms)
--   [Update how amounts are displayed on reports and documents](/financials/localizations/europe/eeu-amount-printing-forms)
+-   [Fixed asset repair statement](/financials/localizations/europe/ltu-fixed-asset-repair-statement)
+-   [Fixed assets disposal](/financials/localizations/europe/eeu-credit-note-reverse-fixed-asset-sale)
+-   [Invoice and packing slip numbering](/financials/localizations/europe/eeu-invoices-packing-slips-numbering)
+
+
 
 ### Mexico
 
 -   [DIOT declaration statement](/financials/localizations/latin-america/diot-declaration-statement)
 -   [Electronic ledger accounting statements](/financials/localizations/latin-america/electronic-ledger-accounting-statements-mexico)
 -   [Adjustment inflation declaration report](/financials/localizations/latin-america/adjustment-inflation-declaration-report)
--   [ISR declaration report and supporting processes](/financials/localizations/latin-america/mex-isr-declaration-report-supporting-processes)
+-   [ISR declaration report](/financials/localizations/latin-america/mex-isr-declaration-report-supporting-processes)
 -   [Electronic invoices (CFDI)](/financials/localizations/latin-america/electronic-invoices-mexico)
    
 ### Malaysia
@@ -211,31 +242,56 @@ The following sections list help topics by country/region.
 ### Norway
 
 -   [Nets import format](/financials/localizations/europe/nor-nets-import-format)
--   [OIOUBL standards for electronic invoicing](/financials/localizations/europe/oioubl-standards-electronic-invoicing)
 
 ### Poland
 
--   [Advance holders](/financials/localizations/europe/advance-holders)
--   [Split periods in periodic journals](/financials/localizations/europe/create-post-periodic-journals)
--   [Set up signers for print forms](/financials/localizations/europe/eeu-set-up-signers-for-printing-forms)
--   [Update how amounts are displayed on reports and documents](/financials/localizations/europe/eeu-amount-printing-forms)
+-   [Calculate line discounts from the unit price](/financials/localizations/europe/pol-line-discount-calculation-from-unit-price)
+-   [Correction notes](/financials/localizations/europe/pol-correction-notes)
+-   [Duplicate sales invoice numbering](/financials/localizations/europe/pol-sales-invoice-duplicates-numbering)
+-   [Fixed assets depreciation](/financials/localizations/europe/pol-fixed-assets-depreciation)
+-   [Fixed assets disposal](/financials/localizations/europe/pol-fixed-asset-disposal-functionality-extension)
+-   [Turnover and balances statement](/financials/localizations/europe/turnover-balances-statement)
 
+### Saudi Arabia
+
+-   [Zakat reporting](/financials/localizations/middle-east-africa/sau-zakat-reporting)
+
+### Singapore
+
+-   [Generate the Singapore GST-05 report](/financials/localizations/asia-pacific/generate-gst-05-report-singapore)
 
 ### Spain
 
--   [OIOUBL standards for electronic invoicing](/financials/localizations/europe/oioubl-standards-electronic-invoicing)
+-   [Spanish bill of exchange options](/financials/localizations/europe/esp-spanish-bill-of-exchange-options)
+-   [Cash discount is applied in the invoice parameter](/financials/localizations/europe/cash-discount-applied-invoice)
+-   [Use fiscal data from the invoice account](/financials/localizations/europe/esp-fiscal-data-invoice-account)
+-   [Fixed asset revaluation groups](/financials/localizations/europe/esp-fixed-asset-group-revaluation)
+-   [One-time customers](/financials/localizations/europe/esp-no-one-time-customer-for-project-contracts)
+-   [Spanish promissory note options](/financials/localizations/europe/esp-spanish-promissory-note-options)
+-   [Sales and purchase cycles](/financials/localizations/europe/esp-sales-purchase-cycle)
+-   [Special entries and opening sheets](/financials/localizations/europe/opening-sheets-spain)
+
+### Sweden
+
+-   [Import payment formats for Sweden](/financials/localizations/europe/sweden-payment-formats-import)
 
 ### Switzerland
 
 -   [ESR customer payments import](/financials/localizations/europe/che-esr-customer-payments-import)
 
+### Thailand
+
+-   [Stock card reports](/financials/localizations/asia-pacific/thailand-stock-card-reports)
+-   [Unrealized VAT](/financials/localizations/asia-pacific/thailand-unrealized-vat)
+-   [Withholding tax](/financials/localizations/asia-pacific/thailand-withholding-tax)
+
 ### United Kingdom
 
--   [Invoice issue deadline](/financials/localizations/europe/invoice-issue-deadline)
 -   [The Construction Industry Scheme for the United Kingdom](/financials/localizations/europe/construction-industry-scheme)
 
 ### United States
 
--   [Year-end 1099 reporting](/financials/localizations/north-america/year-end-1099-reporting)
 -   [Form I-9 verification](/hr/localizations/north-america/form-i-9-verification)
--   [Payroll](/hr/localizations/north-america/payroll)    
+-   [Year-end 1099 reporting](/financials/localizations/north-america/year-end-1099-reporting)
+-   [Payroll](/hr/localizations/north-america/payroll)
+-   [Public sector](/financials/public-sector/public-sector-functionality)
