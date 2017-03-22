@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: undocumented
+title: Transportation management overview
 description: This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Operations.
 author: YuyuScheller
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# undocumented
+# Transportation management overview
 
 This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Operations.
 
