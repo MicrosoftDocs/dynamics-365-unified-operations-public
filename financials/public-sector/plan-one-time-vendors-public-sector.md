@@ -84,9 +84,6 @@ The following table show the fields that the import file must contain. Each fiel
 | Unit (Optional)                                      | Ten-character limit                               |
 |Line net amount                                       | Decimal values are allowed.                       |
 | Unit price (Optional)                                | Decimal values are allowed.                       |
-|Federal tax ID (Optional)                             | (U.S. only) 1099 number                           |
-| Unit (Optional)                                      | Ten-character limit                               |
-
 
 **Distributions section**
 | Field                                                | Details                                  |
