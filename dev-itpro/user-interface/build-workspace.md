@@ -435,7 +435,7 @@ The first step is to build a query that will be used to populate the cache table
 
     The query that you've constructed should match the following illustration. 
     
-        [![](./media/cachequery.png)](./media/cachequery.png)
+    ![cachequery.png](./media/cachequery.png)
         
 15. Press **Ctrl+S** to save.
 

@@ -40,6 +40,7 @@ Usage
 The Workspace Page Filter Group subpattern is used as part of the Operational Workspace pattern, specifically when a workspace must expose a single workspace-wide filter on the form.
 
 ## Wireframe
+
 [![workspacePageFilterGroupWireframe](./media/workspacepagefiltergroupwireframe.png)](./media/workspacepagefiltergroupwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
@@ -69,7 +70,9 @@ The verification checklist shows the steps for manually verifying that the form 
 -   If more filter fields are needed, they should be put in a configuration dialog (up to five filter fields).
 
 ## Examples
-Form: **ReqCreatePlanWorkspace** (**All workspaces** &gt; **Master Planning**) [![workspacePageFilterGroupExample](./media/workspacepagefiltergroupexample.png)](./media/workspacepagefiltergroupexample.png)
+Form: **ReqCreatePlanWorkspace** (**All workspaces** &gt; **Master Planning**) 
+
+[![workspacePageFilterGroupExample](./media/workspacepagefiltergroupexample.png)](./media/workspacepagefiltergroupexample.png)
 
 ## Appendix
 ### Frequently asked questions

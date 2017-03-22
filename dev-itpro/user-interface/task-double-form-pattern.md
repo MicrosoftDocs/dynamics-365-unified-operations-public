@@ -40,6 +40,7 @@ Usage
 This type of form has previously been used when you wanted to present parent/child entities in the same form. This isn't a recommended pattern for new forms. No new forms should be created that use this pattern. This pattern will provide structure and stability for legacy forms, and will also provide a migration path to more modern form patterns.
 
 ## Wireframe
+
 [![patternTaskDouble](./media/patterntaskdouble.png)](./media/patterntaskdouble.png)[](./media/taskdouble1.png)
 
 ## Pattern changes
@@ -116,7 +117,9 @@ The verification checklist shows the steps for manually verifying that the form 
 -   Selection in the parent grid will update content in the child grid.
 
 ## Example
-Form: **HRMAbsenceTableHistory** [![Task Double example](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
+Form: **HRMAbsenceTableHistory** 
+
+[![Task Double example](./media/taskdouble2-1024x639.png)](./media/taskdouble2.png)
 
 ## Appendix
 ### Frequently asked questions

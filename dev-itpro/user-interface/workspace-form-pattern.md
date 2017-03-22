@@ -45,6 +45,7 @@ Workspaces are a new concept, and are meant to be the primary way that users nav
 The rest of this article will describe only details of the Operational workspace pattern, because the original Workspace pattern is deprecated and should not be used.
 
 ## Wireframe
+
 [![Workspace(1)](./media/workspace1.png)](./media/workspace1.png)
 
 ## Pattern changes for Dynamics AX
@@ -115,7 +116,9 @@ The verification checklist shows the steps for manually verifying that the form 
         -   The remaining filters must be in a workspace configuration dialog.
 
 ## Example
-Form: **FMClerkWorkspace** [![Workspace(3)](./media/workspace3.png)](./media/workspace3.png)
+Form: **FMClerkWorkspace** 
+
+[![Workspace(3)](./media/workspace3.png)](./media/workspace3.png)
 
 ## Appendix
 ### Frequently asked questions

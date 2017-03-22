@@ -63,7 +63,11 @@ In Dynamics AX 2012, when a user enters data that is determined to be invalid or
 
 ### Legacy API support: info(), warning()/checkfailed(), and error()
 
-The legacy **info()**, **warning()**, and **error()** APIs are still supported. However, these APIs now sit on the framework's new messaging system, and their destination is deterministic. In summary, if the use of the API originates from a page, the message appears in a message bar on that same page. (Drop dialogs and slider dialogs are both considered pages.) The following illustration shows **info**, **warning**/**checkfailed**, and **error** message bars that correspond to page actions, or synchronous-authored messages that come from **info()**, **warning()**, and **error()**. [![Messaging\_MessageBarTypes](./media/messaging_messagebartypes.jpg)](./media/messaging_messagebartypes.jpg) **Note:** If the messaging API is called from a slider dialog, but that slider dialog is closed before the message appears, the message is shown in a message bar on the slider dialog's parent page. If that slider dialog is closed before the message appears, and there is no parent page (that is, the parent is a workspace), the message is routed to the Message Center. The messaging API never fails to show a message. If an appropriate host page isn't found, the message is sent to the Message Center.
+The legacy **info()**, **warning()**, and **error()** APIs are still supported. However, these APIs now sit on the framework's new messaging system, and their destination is deterministic. In summary, if the use of the API originates from a page, the message appears in a message bar on that same page. (Drop dialogs and slider dialogs are both considered pages.) The following illustration shows **info**, **warning**/**checkfailed**, and **error** message bars that correspond to page actions, or synchronous-authored messages that come from **info()**, **warning()**, and **error()**. 
+
+[![Messaging\_MessageBarTypes](./media/messaging_messagebartypes.jpg)](./media/messaging_messagebartypes.jpg) 
+
+**Note:** If the messaging API is called from a slider dialog, but that slider dialog is closed before the message appears, the message is shown in a message bar on the slider dialog's parent page. If that slider dialog is closed before the message appears, and there is no parent page (that is, the parent is a workspace), the message is routed to the Message Center. The messaging API never fails to show a message. If an appropriate host page isn't found, the message is sent to the Message Center.
 
 ## The Message() API for explicit add and remove messages
 The messaging system supports the legacy validation message APIs (**info()**, **warning()**/**checkfailed()**, and **error()**), and deterministically routes messages either to a message bar or to the Message Center. The messaging system also clears message bar messages that are related to data validation when the validation is rerun. Additionally, the messaging system includes a new **Message()** API that lets developers explicitly add and remove messages. This API is useful for displaying informational messages about aspects of the user's experience that aren't necessarily related to data validation. In this case, the message should be shown when the current record is displayed. ![Messaging\_SingleMessageBarInfo](./media/messaging_singlemessagebarinfo.jpg)
@@ -77,7 +81,9 @@ The message can then be cleared when a new record is shown on the page.
 The following messaging types are supported: **MessageSeverity::Info**, **MessageSeverity::Warning**, and **MessageSeverity::Error**. Messages that use the **Message()** API are also deterministic. They can be routed to a message bar or the Message Center.
 
 ## The messaging API and batch jobs(asynchronous/longrunning background tasks)
-If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch job that uses SysOp), there is no page context to consider. Therefore, the message is routed to the Message Center. ![Messaging\_EmptyMessageCenter](./media/messaging_emptymessagecenter.jpg)
+If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an asynchronous process (for example, a batch job that uses SysOp), there is no page context to consider. Therefore, the message is routed to the Message Center. 
+
+![Messaging\_EmptyMessageCenter](./media/messaging_emptymessagecenter.jpg)
 
 ### The Message Center
 
@@ -88,7 +94,9 @@ The Message Center can hold up to 500 messages. Messages are then cycled on a f
 A (potentially) long-running task should not present a message bar to the user, because message bars at the top of a page are used to present information about the current page, not some background task that might have started hours earlier. In some cases, a user who has many background tasks running continues to navigate between pages while the tasks are being completed. Therefore, messages that are presented on the current page to notify the user about background tasks are easily overlooked or ignored. Therefore, by design, background tasks send their messages to the Message Center. When a new message appears in the Message Center, a notification informs the user, who might be waiting for the results of an asynchronous task.
 
 ## Error: Should I interrupt the user?
-If a task (batch job or other operation) fails, it's often appropriate to notify the user passively. Because the user can correct the issue and retry the operation at any time, he or she doesn't have to be notified immediately. In these cases, the **error()** API is appropriate, and the user doesn't receive an interrupting dialog. However, in other cases, the user can't proceed until the issue is corrected. For example, if the user tries to save a page that still has invalid data, the client interrupts the user by presenting an error dialog. In these cases, where it's more appropriate to interrupt the user by presenting a dialog, the **box::** API should be used. ![Messaging\_BoxAPI](./media/messaging_boxapi.jpg)
+If a task (batch job or other operation) fails, it's often appropriate to notify the user passively. Because the user can correct the issue and retry the operation at any time, he or she doesn't have to be notified immediately. In these cases, the **error()** API is appropriate, and the user doesn't receive an interrupting dialog. However, in other cases, the user can't proceed until the issue is corrected. For example, if the user tries to save a page that still has invalid data, the client interrupts the user by presenting an error dialog. In these cases, where it's more appropriate to interrupt the user by presenting a dialog, the **box::** API should be used. 
+
+![Messaging\_BoxAPI](./media/messaging_boxapi.jpg)
 
 ## The Message Center – Messages from asynchronous tasks
 The Message Center appears in the navigation pane. It contains messages that don't require any immediate action by the user and aren't required for the current task to continue. Typical examples include feedback from background processes such as a batch job or report completion. The Message Center can express **info**, **warning**, and **error** statuses. Before it's opened, the Message Center indicates the number of messages that have been received since last time that it was opened.
@@ -105,7 +113,9 @@ Message bars are available on primary pages, and in drop dialogs and slider dial
 -   Customer validation has failed.
 -   The transaction on voucher do not balance.
 
-**Presentation** ![Messaging\_MessageBarTypes](./media/messaging_messagebartypes.jpg)
+**Presentation** 
+
+![Messaging\_MessageBarTypes](./media/messaging_messagebartypes.jpg)
 
 ## Message boxes – Errors and immediate notification (completed synchronous operations)
 Use message boxes to alert users about issues that require immediate attention. Because message boxes prevent the user from continuing until the message is read and dismissed, they should be used only for messages that the user can't handle later. Include the following information in error messages that appear in message boxes:
@@ -125,7 +135,11 @@ An error message should include the following two components:
 -   You have insufficient rights to perform this export.
 -   The root folder for catalog import processing is not configured. Configure the root folder using the Vendor catalog import parameters form.
 
-**Presentation** ![Messaging\_BoxAPI](./media/messaging_boxapi.jpg) Messages of the **error** type block the user’s interaction by overlaying the current page with a modal “light box” that contains the message.
+**Presentation** 
+
+![Messaging\_BoxAPI](./media/messaging_boxapi.jpg) 
+
+Messages of the **error** type block the user’s interaction by overlaying the current page with a modal “light box” that contains the message.
 
 ## Messaging from dialogs and slider dialogs
 The deterministic messaging system tries to send messages to the current page. However, not every call from a dialog or slider dialog is routed to that dialog or slider. In some cases, the messaging system sends the message to the parent page instead. This behavior can occur when the messaging system is called while the dialog or slider is being closed. In some cases, the messaging system can be called when the close process for the dialog or slider is started, but the client interrupts the close process for valid reasons. Therefore, there is a "point of no return," after which the messaging system no longer tries to send a message to the dialog or slider, and instead sends the message to the parent page. When the user clicks the **OK** button on the form is entering its closing sequence, shown in the code example that follows.
@@ -146,10 +160,28 @@ The deterministic messaging system tries to send messages to the current page. H
 If the client calls **closeOK()** or **close()** directly, then the final result might be the page or the parent page.
 
 ## Detailed, multiresult messaging that uses SetPrefix() and the Message details pane
-In Dynamics 365 for Operations, the results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored, and a message bar or a Message Center notification is presented to the user. This message bar or Message Center notification indicates that the related task has been completed, and that there might be messages for the user to review. The *notification of results* message uses the task's first call to **SetPrefix()** to frame the message. (This behavior resembles the behavior in Dynamics AX 2012, where the first call is the “title” of the results). In the following example, the text “Posting Results” comes from the first call to **SetPrefix()**. ![Messaging\_MessageDetailsMessageBar](./media/messaging_messagedetailsmessagebar.jpg) The user can then click the **Message Details** link in the message bar to open the **Message details** pane. ![Messaging\_MessageDetailsPane](./media/messaging_messagedetailspane.jpg)
+In Dynamics 365 for Operations, the results of **SetPrefix()** don't actively interrupt the user. Instead, the results are collected and stored, and a message bar or a Message Center notification is presented to the user. This message bar or Message Center notification indicates that the related task has been completed, and that there might be messages for the user to review. The *notification of results* message uses the task's first call to **SetPrefix()** to frame the message. (This behavior resembles the behavior in Dynamics AX 2012, where the first call is the “title” of the results). In the following example, the text “Posting Results” comes from the first call to **SetPrefix()**. 
+
+![Messaging\_MessageDetailsMessageBar](./media/messaging_messagedetailsmessagebar.jpg) 
+
+The user can then click the **Message Details** link in the message bar to open the **Message details** pane. 
+
+![Messaging\_MessageDetailsPane](./media/messaging_messagedetailspane.jpg)
 
 ## SetPrefix() – Creating a collection of related messages
-You use **SetPrefix()** to create collections of related messages. This API is largely backward compatible but is presented in a non-interrupting manner. A results window isn't opened directly. Instead, the user is passively interrupted by the appearance of a message bar on the page that started the task that used the **SetPrefix()** API to group the result messages into a collection. The message bar that notifies the user about the existence of the message collection reflects the severity of the most critical message in the collection. For example, if the collection contains no errors or warnings, the message bar is of the **info** type. ![Messaging\_MessageDetailsMessageBar](./media/messaging_messagedetailsmessagebar.jpg) If the collection contains one or more calls to **warning()**, the message bar is of the **warning** type. ![Messaging\_MessageDetailsWarningMessageBar](./media/messaging_messagedetailswarningmessagebar.jpg) If the collection contains one or more calls to **error()**, the message bar is of the **error** type. ![Messaging\_MessageDetailsErrorMessageBar](./media/messaging_messagedetailserrormessagebar.jpg) **Example**
+You use **SetPrefix()** to create collections of related messages. This API is largely backward compatible but is presented in a non-interrupting manner. A results window isn't opened directly. Instead, the user is passively interrupted by the appearance of a message bar on the page that started the task that used the **SetPrefix()** API to group the result messages into a collection. The message bar that notifies the user about the existence of the message collection reflects the severity of the most critical message in the collection. For example, if the collection contains no errors or warnings, the message bar is of the **info** type. 
+
+![Messaging\_MessageDetailsMessageBar](./media/messaging_messagedetailsmessagebar.jpg) 
+
+If the collection contains one or more calls to **warning()**, the message bar is of the **warning** type. 
+
+![Messaging\_MessageDetailsWarningMessageBar](./media/messaging_messagedetailswarningmessagebar.jpg) 
+
+If the collection contains one or more calls to **error()**, the message bar is of the **error** type. 
+
+![Messaging\_MessageDetailsErrorMessageBar](./media/messaging_messagedetailserrormessagebar.jpg) 
+
+**Example**
 
     myMethod()
     {

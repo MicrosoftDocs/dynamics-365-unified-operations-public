@@ -101,7 +101,7 @@ Use QueryFilter, not QueryBuildRange, for all custom filters. QueryBuildRange do
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps.
 
 -   **Standard form guidelines:**
-    -   Standard form guidelines have been consolidated into the Microsoft Dynamics 'AX 7' General Form Guidelines document.
+    -   [General form guidelines](general-form-guidelines.md)
 -   **Custom Filter Group guidelines:**
     -   All controls (except QuickFilter) are constrained input controls. Open-ended controls, such as strings, integers, and reals, should not be used.
     -   Field labels are turned off to save space. For example, no label is needed for a combobox that has the values **Open**, **Closed**, **Posted**, and All.
@@ -113,11 +113,15 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 ### Custom Filters
 
-Form: **LedgerJournalTable (TopFields)** ![CustomFilterGroup(3)](./media/customfiltergroup3.png)
+Form: **LedgerJournalTable (TopFields)** 
+
+![CustomFilterGroup(3)](./media/customfiltergroup3.png)
 
 ### Custom and Quick Filters
 
-Form: **CustTable** **(CustomFilterGroup)** [![CustomFilterGroup(4)](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
+Form: **CustTable** **(CustomFilterGroup)** 
+
+[![CustomFilterGroup(4)](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
 
 ## Resources
 ### Typically used by form patterns
