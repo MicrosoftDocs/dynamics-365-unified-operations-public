@@ -40,6 +40,7 @@ Overview
 The sales tax framework supports many types of indirect taxes, such as sales tax, value-added tax (VAT), goods and services tax (GST), unit-based fees, and withholding tax. These taxes are calculated and documented during purchase and sales transactions. Periodically, they must be reported and paid to tax authorities. 
 
 The following diagram shows the entities of the tax setup and how they are related.
+
 [![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 For every sales tax that a company must account for, a sales tax code must be defined. A sales tax code stores the tax rates and calculation rules for the sales tax. 
