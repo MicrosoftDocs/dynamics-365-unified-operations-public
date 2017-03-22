@@ -89,8 +89,8 @@ Use Visual Studio to create the **FmtChargeType** form. You’ll use a template 
 4.  Add the **FmtChargeType** table as the data source for the form. Right-click **Data Sources,** and then click **New Data Source**. A data source node is added.
 5.  Click the data source node from the previous step. In the **Properties** window, populate the following properties with the specified values.
 
-    |--------------|------|
     | **Property** | **Value**|
+    |--------------|------|
     | Table        | FMTChargeType|
     | Name         | FMTChargeType *Be sure to specify the value for the Table property first. This property will automatically update to use that same value.* |
 
