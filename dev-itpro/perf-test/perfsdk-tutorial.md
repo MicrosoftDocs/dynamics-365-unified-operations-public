@@ -150,9 +150,12 @@ And restart IIS. Now you can run performance tests against this topology. **Note
 ## Run performance test
 Open ProcureToPay.cs in Visual Studio editor and append the following lines in TestSetup method:
 
-|                                                                                                                                                                                                                                    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| var testroot = System.Environment.GetEnvironmentVariable("DeploymentDir"); if (string.IsNullOrEmpty(testroot)) { testroot = System.IO.Directory.GetCurrentDirectory(); } Environment.SetEnvironmentVariable("testroot", testroot); |
+    var testroot = System.Environment.GetEnvironmentVariable("DeploymentDir"); 
+    if (string.IsNullOrEmpty(testroot)) 
+    {
+        testroot = System.IO.Directory.GetCurrentDirectory(); 
+    } 
+    Environment.SetEnvironmentVariable("testroot", testroot);
 
 Double click on file vsonline.testsettings in your solution files, use the following settings (your PerfSDK folder may be different): 
 
@@ -178,9 +181,11 @@ You can switch to **Graphs view** to view different indicators for the test cont
 ## Troubleshooting
 If you see an error message like this: *System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---&gt; System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to https://sandbox.ax.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp. **This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server.** ---&gt; System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---&gt; System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---&gt; System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host.* you would need to run the following powershell script on your **development machine**:
 
-|                                                                                                                                                                                                                                                                                                                                                                  |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Set-ItemProperty HKLM:SOFTWAREMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false if ((Test-Path HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319)) { Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false } |
+    Set-ItemProperty HKLM:SOFTWAREMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
+    if ((Test-Path HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319)) 
+    { 
+        Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
+    }
 
 
 
