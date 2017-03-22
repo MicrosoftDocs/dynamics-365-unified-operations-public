@@ -125,16 +125,17 @@ The following sections list help topics by country/region.
 
 
 ### France
+-   [Chronological invoice and voucher numbers](/financials/localizations/europe/chronological-invoices-vouchers-france)
 -   [Derogatory depreciation for France](/financials/localizations/europe/derogatory-depreciation)
 -   [Penalties for past due customer payments in France](/financials/localizations/europe/apply-penalty-customer-payment-past-due)
 -   [NAF codes and siret numbers](/financials/localizations/europe/naf-codes-siret-numbers)
 
 #### Public Sector in France
+-   [Commitments in the public sector](/financials/localizations/europe/commitments-public-sector-france)
 -   [Mandats de paiement in the public sector](/financials/localizations/europe/mandats-de-paiement-public-sector-france)
 -   [Public sector accounting](/financials/localizations/europe/public-sector-accounting-france)
--   [Commitments in the public sector](/financials/localizations/europe/commitments-public-sector-france)
 -   [Titres de recette](/financials/localizations/europe/titres-de-recette-public-sector-france)
-
+-   [Vendor invoice payment holds](/financials/localizations/europe/vendor-invoice-payment-holds-public-sector-france)
 
 ### Germany
 -   [Additional acquisition depreciation](/financials/localizations/europe/additional-acquisition-depreciation)
