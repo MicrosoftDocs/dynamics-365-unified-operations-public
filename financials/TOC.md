@@ -33,7 +33,7 @@
 ### [Year-end close](general-ledger/year-end-close.md)
 ## Sales tax
 ### [Sales tax overview](general-ledger/indirect-taxes-overview.md)
-### [Sales tax rates based on the marginal base and malculation methods](general-ledger/marginal-base-field.md)
+### [Sales tax rates based on the marginal base and calculation methods](general-ledger/marginal-base-field.md)
 ### [Sales tax payments and rounding rules](general-ledger/round-sales-tax-payments.md)
 ### [Sales tax calculation methods in the Origin field](general-ledger/sales-tax-calculation-methods-origin-field.md)
 ### [Whole amount and interval calculation options for sales tax codes](general-ledger/whole-amount-interval-options-sales-tax-codes.md)
