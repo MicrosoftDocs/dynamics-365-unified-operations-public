@@ -3,7 +3,7 @@
 
 title: Postdated checks
 description: This article provides information about support for postdated checks in Microsoft Dynamics 365 for Operations. Postdated checks are checks that are issued to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
-author: ShylaThompson
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-11 15 - 16 - 27
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 21741
@@ -49,7 +49,7 @@ Microsoft Dynamics 365 for Operations supports the full management cycle for p
 <tbody>
 <tr class="odd">
 <td>Set up postdated checks</td>
-<td>YYou must set up a new payment method, and specify the payment routine for clearing accounts for issued checks, received checks, and withholding tax.</td>
+<td>You must set up a new payment method, and specify the payment routine for clearing accounts for issued checks, received checks, and withholding tax.</td>
 </tr>
 <tr class="even">
 <td>Register and post a postdated check for a vendor</td>
@@ -62,8 +62,7 @@ Microsoft Dynamics 365 for Operations supports the full management cycle for p
 <tr class="even">
 <td>Register and post a replacement postdated check for a customer or a vendor</td>
 <td>
-<li>If your original check to a vendor or from a customer is lost or damaged, you can issue a replacement postdated check. When you register the check details, provide a reference to the original check, and indicate that the new check is a replacement for the original. You can also post the replacement check.</li>
-</td>
+If your original check to a vendor or from a customer is lost or damaged, you can issue a replacement postdated check. When you register the check details, provide a reference to the original check, and indicate that the new check is a replacement for the original. You can also post the replacement check.</td>
 </tr>
 <tr class="odd">
 <td>Transfer a customer postdated check to a vendor</td>
