@@ -65,13 +65,14 @@
 ## [Configure a parallel branch](organization-administration/configure-parallel-branch-workflow.md)
 ## [Configure workflow properties](organization-administration/configure-workflow-properties.md)
 
-# [Analytics (Admin & Developer Guide)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
+# Technical topics
+## [Analytics home page (Admin & Developer Guide)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
 
-# [Data entities (Admin & Developer Guide)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
+# [Data entities home page (Admin & Developer Guide)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
 
-# [Office integration (Admin & Developer Guide)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
+# [Office integration home page (Admin & Developer Guide)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
 
-# [Mobile apps (Admin & Developer Guide)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
+# [Mobile apps home page (Admin & Developer Guide)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 
 # [Financials guide](/dynamics365/operations/financials/index)
 
