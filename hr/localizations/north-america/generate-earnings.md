@@ -47,7 +47,8 @@ Earnings that are automatically generated use settings for the position to ident
 
 To automatically generate worker earnings, follow these steps.
 
-1.  Click **Payroll** &gt; **Earnings statement processing** &gt; **Generate earnings**. **Note:** To generate earnings from the **Workers** or **Positions** page, click the **Payroll** tab.
+1.  Click **Payroll** &gt; **Earnings statement processing** &gt; **Generate earnings**. 
+     -  **Note:** To generate earnings from the **Workers** or **Positions** page, click the **Payroll** tab.
 2.  Specify the following information for the worker positions to generate earnings for.
 
     | Field      | Description                                    |
@@ -55,7 +56,8 @@ To automatically generate worker earnings, follow these steps.
     | Pay cycle  | Select the pay cycle.                          |
     | Pay period | Select the pay period. The list includes only the pay periods that are available for the pay cycle. The first open pay period is the default pay period, but you can select any open pay period in the list. |
 
-3.  Click **OK** to generate earnings statements. You receive a message that states that the earnings statements were generated successfully. **Note:** Recurring earnings and the earnings from schedules are created first, because salary amounts might be affected by other earnings that are automatically generated.
+3.  Click **OK** to generate earnings statements. You receive a message that states that the earnings statements were generated successfully. 
+    -  **Note:** Recurring earnings and the earnings from schedules are created first, because salary amounts might be affected by other earnings that are automatically generated.
 4.  To view the earnings statements that were created or updated, open the **All Earnings statements** list page.
 5.  Verify that the batch job was completed correctly. (Click **Common** &gt; **Inquiries** &gt; **Batch Jobs** &gt; **My batch jobs**. On the **Batch job** tab, click **Log**, and then inspect the log for any errors that occurred.)
 
@@ -71,7 +73,7 @@ To manually enter earnings that are based on pieces and earnings for exceptions,
     4.  Select the earning code that represents the type of earning. When you select the earning code, the default description, quantity, unit type, and rate are entered from the earning code. Enter a quantity that is appropriate for the unit type. You can also change the rate. However, the that you enter must be a flat rate and must not be calculated by the system.
 
 4.  If you didn't use the automated process to generate earnings before you began to enter lines manually, you can click **Generate earnings** to use the default values on the remaining lines of the worker’s earnings statement. The lines that you entered manually aren't affected. You can also automatically generate earnings statements by using the process that is described earlier in this topic. In that case, the lines that you entered manually *are* affected. 
-**Note:** You can complete this step regardless of whether the worker is paid a salary or paid hourly.
+    -  **Note:** You can complete this step regardless of whether the worker is paid a salary or paid hourly.
 5.  Close the page to save the earnings statement.
 
 ## If required: Generate premium earnings
@@ -82,12 +84,13 @@ If a worker should receive a premium for a pay period that he or she has no othe
 To generate premium earnings for workers, follow these steps.
 
 1.  Determine whether there are dependencies between any premiums that you offer. For example, if you offer a premium that is paid in addition to a shift differential, the additional premium can't be calculated unless the earnings for the shift differential are already on the earnings statement.
-2.  Click **Payroll** &gt; **Periodic** &gt; **Earnings statement processing** &gt; **Generate premium earnings**. **Note:** You can generate premium earnings for a single worker from the worker’s earnings statement, but not from the **Workers** or **Positions** page.
+2.  Click **Payroll** &gt; **Periodic** &gt; **Earnings statement processing** &gt; **Generate premium earnings**. 
+    -  **Note:** You can generate premium earnings for a single worker from the worker’s earnings statement, but not from the **Workers** or **Positions** page.
 3.  Specify the following information for the worker positions to generate premium earnings for.
     <table>
     <colgroup>
-    <col width="50%" />
-    <col width="50%" />
+    <col width="40%" />
+    <col width="60%" />
     </colgroup>
     <thead>
     <tr class="header">

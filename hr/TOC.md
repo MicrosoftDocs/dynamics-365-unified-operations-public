@@ -12,7 +12,7 @@
 ## [Create fixed compensation plans](create-fixed-compensation-plans.md)
 ## [Create variable compensation plans](create-variable-compensation-plans.md)
 # Develop and train employees
-## [Performance management overview] (performance-management-overview.md)
+## [Performance management overview](performance-management-overview.md)
 ## [Align workforce skills with business needs](skills.md)
 ## [Set up training courses](courses.md)
 # Create and maintain benefits

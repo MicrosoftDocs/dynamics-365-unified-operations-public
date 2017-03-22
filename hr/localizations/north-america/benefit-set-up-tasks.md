@@ -49,8 +49,8 @@ To set up benefits, you must first set up benefit types. On the **Benefit elemen
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -84,8 +84,8 @@ You must also set up benefit plans. On the **Benefit elements** page, in the **P
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -119,8 +119,8 @@ Next, you must select the pretax basis for the plan on the **Tax rule** FastTab.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -151,8 +151,8 @@ Enter the following information on the **Payroll details** FastTab.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -256,8 +256,8 @@ Use the data in your own table to set up the contribution calculation rate table
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -288,11 +288,11 @@ Use the data in your own table to set up the contribution calculation rate table
 ## Creating new benefits
 After you've set up benefit elements on the **Benefit elements** page, you must create the benefits so that they can be assigned to workers. When you create a benefit, you link an option to a benefit plan, designate a benefit period, and assign eligibility rules to the benefit. When you create a new benefit, you must enter the following information.
 
-| Field                | Description                                                         |
-|----------------------|---------------------------------------------------------------------|
-| Plan                 | The name of the benefit.                                            |
-| Option               | An option to add to the benefit.                                    |
-| Effective Expiration | The first and last dates when the benefit is available to a worker. |
+| Field             | Description                                                         |
+|-------------------|---------------------------------------------------------------------|
+| Plan              | The name of the benefit.                                            |
+| Option            | An option to add to the benefit.                                    |
+| Effective Expiration| The first and last dates when the benefit is available to a worker. |
 
 After you've created the benefit, you must add some details. Click **Edit**, and enter information on the following FastTabs. On the **Eligibility rules** FastTab, you must select the method that is used to determine eligibility. Select one of the following options.
 
