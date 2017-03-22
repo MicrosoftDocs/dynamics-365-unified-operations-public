@@ -137,8 +137,7 @@ If you want all vendor transactions to have the same posting profile, set up onl
 </tr>
 </tbody>
 </table>
-
-### 
+ 
 
 ### **Table restrictions**
 
