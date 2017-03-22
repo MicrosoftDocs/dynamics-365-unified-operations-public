@@ -3,9 +3,9 @@
 
 title: Vendor invoice payment holds in the public sector in France
 description: The standard processes related to vendor invoice payment holds in Microsoft Dynamics 'AX 7' are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
-author: rschloma
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-13 05 - 21 - 41
+ms.date: 2017-03-22
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27331
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Vendor invoice payment holds in the public sector in France
 
-The standard processes related to vendor invoice payment holds in Microsoft Dynamics 'AX 7' are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
+The standard processes related to vendor invoice payment holds in Microsoft Dynamics 365 for Operations are augmented for French entities in the public sector. This topic describes the vendor invoice payment holds functionality used by the public sector in France.
 
 Set up rules for vendor invoice payment holds
 ---------------------------------------------
@@ -56,7 +56,6 @@ Holds can be placed and released in the following circumstances:
 
 ## Where do I place and release vendor invoice payment holds?
 ### For a vendor
-
 Place or release a payment hold for all invoices for a selected vendor on the **Vendor transactions** page or the **Settle transactions** page. If you place a payment hold for a vendor, this hold includes all existing invoices for that vendor. If you release a payment hold for a vendor, this releases the payment hold only for those vendor invoices that do not have individual payment holds. For example, you place individual payment holds on two different vendor invoices for the same vendor. You later place a payment hold for that vendor. If you later release the payment hold for that vendor, it will not release the individual holds for the two vendor invoices.
 
 ### For a vendor invoice
