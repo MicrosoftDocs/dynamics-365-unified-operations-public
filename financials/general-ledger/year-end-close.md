@@ -38,7 +38,7 @@ At the end of a fiscal year, you must run the year-end close process to transfer
 
 During the year-end close process, there are two types of possible transactions created. An Opening transaction is always generated and is used to create the opening balances in the new fiscal year. The Opening transaction shows the balance sheet ledger account balances in the new fiscal year and balances from the profit and loss ledger account balances in the retained earnings ledger account in the new fiscal year. The Closing transaction is optionally created to bring the balances of the profit and loss accounts down to zero in the fiscal year being closed.
 
-## Prepare to run the yearend close
+## Prepare to run the year-end close
 Before you run the year-end close process, validate the settings for the following: 
 
 On the **Main account** page:
@@ -76,7 +76,7 @@ The **Transfer balance sheet dimensions** is used to define whether the financia
 
 The year-end close process doesn’t adhere to account structures. This is because account structures can change throughout a fiscal year and it's not always possible to identify the relevant account structure due to those changes.  When opening transactions are created, the balances will be brought forward with financial dimensions as defined in the year end close template. The beginning balances entries could include financial dimensions no longer in the current account structure and segment combinations that are no longer valid in the current account structure. If your organization wants to exclude a financial dimension for the retained earning beginning balance, set the financial dimension to be **Close single** and leave the dimension value empty.
 
-## Run the yearend close process
+## Run the year-end close process
 After the year-end close templates are created, the year-end close process is initiated by choosing **Run fiscal year** on the Action Pane. Either select all or a subset of legal entities from the template for which to run the year-end close. When running the year-end close for the first time in a fiscal year, you will likely choose all the legal entities to create beginning balances for all the legal entities. If you're running the year-end close again, you may choose to run the process for only the legal entities for which adjusting entries were posted. 
 
 Select the fiscal year that you would like to run the year end close process against. If more than one closing period exists for the last period of the fiscal year, the **Period name** field will become available so you can select which closing period to post the Closing transaction, if setup is defined to create the Closing transaction. 
