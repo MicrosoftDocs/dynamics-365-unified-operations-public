@@ -203,6 +203,7 @@ Use Visual Studio to apply the Master Details form pattern to the **Customer** f
     | [![CustForm12](./media/custform12.png)](./media/custform12.png) | [![CustForm13](./media/custform13.png)](./media/custform13.png) |
 
 8.  Click **Design** &gt; **GridDetailsTab**. The yellow highlighting around the subnodes indicates that there are problems that need to be resolved under both nodes before the form pattern can be successfully applied.
+
     |                                                                                                                                                             |                                                                                                                                                             |
     |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | [![CustForm14](./media/custform14.png)](./media/custform14.png) | [![CustForm15](./media/custform15.png)](./media/custform15.png) |
