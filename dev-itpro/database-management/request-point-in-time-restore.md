@@ -47,7 +47,7 @@ When you're trying to determine which restore point in time to select, it's impo
 -   You request a point-in-time restore to restore the database to a time before the tests were run, so that the database can be retested in exactly the same way. In this case, there is mismatch of the code version and the database, because the bug fixes were deployed. However, this mismatch is unlikely to cause an issue. Consult the developers who make the customizations to verify that you can proceed.
 -   After the database is restored, synchronize it.
 
-## Pointintime restore process
+## Point-in-time restore process
 The Microsoft Service Engineering team will take your environment offline, complete the point-in-time restore, and then bring the environment back online. You can expect the downtime period to be less than two hours. The period after you enter your request and before our Service Engineers take action will be longer than your environment downtime. In the future, we will provide a self-service method that you can use to perform your own point-in-time restores.
 
 1.  Click the hamburger icon in the upper left of the Microsoft Dynamics Lifecycle Services (LCS) window, and then select **Work items** in the list. [![Work items](./media/selectworkitems.png)](./media/selectworkitems.png)
