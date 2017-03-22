@@ -40,143 +40,45 @@ A great example of right-to-left language support: Microsoft Word
 In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. One example of a program that implements this functionality correctly is Microsoft Word. If you're trying to understand the correct behavior of mixed language presentation, you can use Word for validation. The problem is that most software just implements the Unicode standard to display bidirectional data, without evaluating how that data is actually used. Additionally, there's no attempt to provide the interactive experience that the user actually requires. To understand how Word “gets it right” and provides a great experience, you can inspect the XML of a Word document. There, you will see that Word tracks (and stores together with the run of characters) the keyboard that is used to enter each character, and that it treats each character as a member of the language that is associated with the keyboard. Therefore, the character is given the behavioral aspects of that language. Keeping track of character orientation in a financial program that might record billions of transactions and multi-billions of characters would produce significant transnational and spatial overhead if we stored contextual information for each character. Therefore, this behavior would be considered only for special conditions.
 
 ## Bidirectional text
-To support Arabic and Hebrew, both of which are RTL languages, there is an RTL orientation for the controls in each form, so that an RTL reader can interact with the form in a natural reading manner. For the most part, RTL orientation of the controls works as expected and provides RTL users with the experience that they expect. Dynamics 365 for Operations and modern browsers support RTL orientation, and Dynamics AX conforms to that functionality. However, in some cases, extensible controls (custom controls) require special code to orient their elements correctly. A point of reference in this article is the Win32 CEdit control, which is used primarily for standard text entry (account name, description, user name, and so on, in Microsoft Dynamics AX 2012). The behavior of the HTML Input control mimics the functionality of the CEdit control. Therefore, the same behavior applies to Dynamics 365 for Operations. The CEdit control is a Win32 control that is governed by the rules for bidirectional text management that are defined by the Unicode standard. Bidirectional text occurs when the control hosts both RTL text (such as Arabic or Hebrew) and LTR text within the same string of characters. When you evaluate the examples in this article, remember that, regardless of the orientation of the form (RTL or LTR), the actual text that is presented is never reversed or “mirrored.” English text is always read LTR and Arabic/Hebrew text is always read RTL. When LTR and RTL text are combined, the reader must jump to the beginning of the run of characters in a given orientation. For example, when a mixed string is read from right to left, the individual words might be read like this: **–––––&gt;  &lt;–––––  –––––&gt;  &lt;–––––** **English  Arabic  English  Arabic**
+To support Arabic and Hebrew, both of which are RTL languages, there is an RTL orientation for the controls in each form, so that an RTL reader can interact with the form in a natural reading manner. For the most part, RTL orientation of the controls works as expected and provides RTL users with the experience that they expect. Dynamics 365 for Operations and modern browsers support RTL orientation, and Dynamics AX conforms to that functionality. However, in some cases, extensible controls (custom controls) require special code to orient their elements correctly. A point of reference in this article is the Win32 CEdit control, which is used primarily for standard text entry (account name, description, user name, and so on, in Microsoft Dynamics AX 2012). The behavior of the HTML Input control mimics the functionality of the CEdit control. Therefore, the same behavior applies to Dynamics 365 for Operations. The CEdit control is a Win32 control that is governed by the rules for bidirectional text management that are defined by the Unicode standard. Bidirectional text occurs when the control hosts both RTL text (such as Arabic or Hebrew) and LTR text within the same string of characters. When you evaluate the examples in this article, remember that, regardless of the orientation of the form (RTL or LTR), the actual text that is presented is never reversed or “mirrored.” English text is always read LTR and Arabic/Hebrew text is always read RTL. When LTR and RTL text are combined, the reader must jump to the beginning of the run of characters in a given orientation. For example, when a mixed string is read from right to left, the individual words might be read like this: 
+
+**–––––&gt;  &lt;–––––  –––––&gt;  &lt;–––––** 
+**English  Arabic  English  Arabic**
 
 ## English and Arabic/Hebrew text together: Bidirectional issues
-The visual presentation (glyphs) of English, Arabic, and Hebrew characters on the corresponding keyboards clearly differ. However, those three keyboards also share some symbols. These symbols include numerals, and formatting characters such as parentheses, brackets, and underscores. According to the Unicode bidirectional algorithm, when these characters are used in a bidirectional string, their RTL/LTR orientation depends on **the context of the characters that surround them**. From the Unicode standard (<http://www.unicode.org/versions/Unicode5.1.0/>): **Note:** You can find the Unicode display algorithm at <http://www.unicode.org/reports/tr9/>. (Section 3.3.4 of the algorithm describes how to position neutrals.)
+The visual presentation (glyphs) of English, Arabic, and Hebrew characters on the corresponding keyboards clearly differ. However, those three keyboards also share some symbols. These symbols include numerals, and formatting characters such as parentheses, brackets, and underscores. According to the Unicode bidirectional algorithm, when these characters are used in a bidirectional string, their RTL/LTR orientation depends on **the context of the characters that surround them**. From the Unicode standard (<http://www.unicode.org/versions/Unicode5.1.0/>): 
+
+> [!NOTE]
+> You can find the Unicode display algorithm at <http://www.unicode.org/reports/tr9/>. (Section 3.3.4 of the algorithm describes how to position neutrals.)
 
 -   Characters that have a weak bidirectional type determine their directionality according to their proximity to other characters that have strong directionality.
 -   Characters that have a neutral bidirectional type determine their directionality from either the surrounding strong text or the embedding level.
 
 The following table describes the bidirectional character types.
 
-Category
+|Category|Type|Description|General scope|
+|---|---|---|---|
+|Strong|L|Left-to-Right|LRM, most alphabetic, syllabic, Han ideographs, non-European or non-Arabic digits, …|
+|Strong|LRE|Left-to-Right Embedding|LRE|
+|Strong|LRO|Left-to-Right Override|LRO|
+|Strong|R|Right-to-Left|RLM, Hebrew alphabet, and related punctuation|
+|Strong|AL|Right-to-Left Arabic|Arabic, Thaana, and Syriac alphabets, most punctuation specific to those scripts, …|
+|Strong|RLE|Right-to-Left Embedding|RLE|
+|Strong|RLO|Right-to-Left Override|RLO|
+|Weak|PDF|Pop Directional Format|PDF|
+|Weak|EN|European Number|European digits, Eastern Arabic-Indic digits, …|
+|Weak|ES|European Number Separator|Plus sign, minus sign|
+|Weak|ET|European Number Terminator|Degree sign, currency symbols, …|
+|Weak|AN|Arabic Number|Arabic-Indic digits, Arabic decimal and thousands separators, …|
+|Weak|CS|Common Number Separator|Colon, comma, full stop (period), Non-breaking space, …|
+|Weak|NSM|Nonspacing Mark|Characters marked Mn (Nonspacing_Mark) and Me (Enclosing_Mark) in the Unicode Character Database|
+|Weak|BN|Boundary Neutral|Default ignorables, non-characters, and control characters, other than those that are explicitly given other types|
+|Neutral|B|Paragraph Separator|Paragraph separator, appropriate Newline Functions, higher-level protocol paragraph determination|
+|Neutral|S|Segment Separator|Tab|
+|Neutral|WS|Whitespace|Space, figure space, line separator, form feed, General Punctuation spaces, …|
+|Neutral|ON|Other Neutrals|All other characters, including OBJECT REPLACEMENT CHARACTER|
 
-Type
 
-Description
-
-General scope
-
-Strong
-
-L
-
-Left-to-Right
-
-LRM, most alphabetic, syllabic, Han ideographs, non-European or non-Arabic digits, ...
-
-LRE
-
-Left-to-Right Embedding
-
-LRE
-
-LRO
-
-Left-to-Right Override
-
-LRO
-
-R
-
-Right-to-Left
-
-RLM, Hebrew alphabet, and related punctuation
-
-AL
-
-Right-to-Left Arabic
-
-Arabic, Thaana, and Syriac alphabets, most punctuation specific to those scripts, ...
-
-RLE
-
-Right-to-Left Embedding
-
-RLE
-
-RLO
-
-Right-to-Left Override
-
-RLO
-
-Weak
-
-PDF
-
-Pop Directional Format
-
-PDF
-
-EN
-
-European Number
-
-European digits, Eastern Arabic-Indic digits, ...
-
-ES
-
-European Number Separator
-
-Plus sign, minus sign
-
-ET
-
-European Number Terminator
-
-Degree sign, currency symbols, ...
-
-AN
-
-Arabic Number
-
-Arabic-Indic digits, Arabic decimal and thousands separators, ...
-
-CS
-
-Common Number Separator
-
-Colon, comma, full stop (period), Non-breaking space, ...
-
-NSM
-
-Nonspacing Mark
-
-Characters marked Mn (Nonspacing\_Mark) and Me (Enclosing\_Mark) in the Unicode Character Database
-
-BN
-
-Boundary Neutral
-
-Default ignorables, non-characters, and control characters, other than those that are explicitly given other types
-
-Neutral
-
-B
-
-Paragraph Separator
-
-Paragraph separator, appropriate Newline Functions, higher-level protocol paragraph determination
-
-S
-
-Segment Separator
-
-Tab
-
-WS
-
-Whitespace
-
-Space, figure space, line separator, form feed, General Punctuation spaces, ...
-
-ON
-
-Other Neutrals
-
-All other characters, including OBJECT REPLACEMENT CHARACTER
 
 The fundamental problem with the Unicode standard for bidirectional text is that it fails to capture the user’s intent. Therefore, the algorithm will move characters around within the same string, and put them in a location that the user didn't specify or doesn't want. This issue is troublesome for accounting and financial systems, because the data that users enter into the system might not match the corresponding source documents. As we mentioned, Arabic, English, and Hebrew keyboards share some of the same characters. However, in some cases, those characters are positioned differently, depending on the keyboard that was used to type them, and/or the context of the surrounding characters and the orientation of the input control. These language-neutral characters include commas, periods, parentheses, hyphens, and underscore characters. In some cases, the rules for displaying the same characters varies between languages. Additionally, those rules can change, depending on the kind of data that is displayed. For more information about this issue, see the "Issue: The hyphen used together with numbers: Language-specific behavior" section, later in this article. Some people expect that characters that are entered in RTL mode will appear the same when the form is viewed in LTR mode. In other words, the expectation is that a customer can have some users who use Hebrew and others who use English on the same installation or in the same company.
 
