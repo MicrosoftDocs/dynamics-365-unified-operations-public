@@ -32,10 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Print lump sum recovery text on a customer invoice
 
-This article provides information about how to print a lump sum recovery text that shows the penalty amount on customer invoices.
+This article provides information about how to print a lump sum recovery text that shows the penalty amount on customer invoices for France.
 
-Set up the parameters to print a lump sum recovery text on customer invoices
-----------------------------------------------------------------------------
+## Set up the parameters to print a lump sum recovery text on customer invoices
 
 Use the **Form setup** page to set up the parameters to print a lump sum recovery text on customer invoices. You can enter the lump sum recovery text and the penalty amount to print on customer invoices. You can also enter the number of days in the grace period before a penalty is applied. The penalty is applied after the specified number of days has passed since the document date or the invoice date.
 
