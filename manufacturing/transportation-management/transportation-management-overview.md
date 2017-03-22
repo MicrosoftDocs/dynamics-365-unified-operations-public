@@ -73,7 +73,7 @@ Transportation management lets you use manage your company’s transportation, a
 ## Planning transportation in Dynamics 365 for Operations
 In Transportation management, transportation planning can be based either on orders or on the shipments that are created based on those orders. The shipments always exist at some point in time but aren't required for transportation planning. Transfer orders are part of the outbound scenario and can be planned together with sales orders. 
 
-![Load drawing](../media/load-drawing1-1024x477.jpg)
+![Load drawing](/transportation-management/media/load-drawing1-1024x477.jpg "Load drawing")
 
 ## Inbound transportation
 When you order items from a vendor, and the items must be delivered to your warehouse, you might want to arrange the transport of the items yourself. You can use Dynamics 365 for Operations to plan the transportation and receipt of the inbound load. The following illustration shows the business process flow for planning transportation for an inbound load. 
