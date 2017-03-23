@@ -87,7 +87,9 @@ Apply the Tabular Fields pattern on the top-level group or tab page. Address the
 No manual verification is required.
 
 ## Examples
-Form: **LedgerJournalTransVendPaym** **(Balances)** (**Accounts payable** &gt; **Journals** &gt; **Payment journal** &gt; **Lines**) [![TabularFields(3)](./media/tabularfields3.png)](./media/tabularfields3.png)
+Form: **LedgerJournalTransVendPaym** **(Balances)** (**Accounts payable** &gt; **Journals** &gt; **Payment journal** &gt; **Lines**) 
+
+[![TabularFields(3)](./media/tabularfields3.png)](./media/tabularfields3.png)
 
 ## Resources
 ### Typically used by patterns

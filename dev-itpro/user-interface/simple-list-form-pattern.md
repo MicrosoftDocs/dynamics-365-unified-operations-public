@@ -40,6 +40,7 @@ Usage
 The Simple List pattern is used to maintain data for simple entities. Simple entities are entities that have six or fewer fields and no parent/child relationships. There are some exceptions where entities that have up to 15 fields are still considered simple entities.
 
 ## Wireframe
+
 [![Wireframe](./media/simplelist1-1024x578.png)](./media/simplelist1.png)
 
 ## Pattern changes
@@ -100,7 +101,11 @@ The verification checklist shows the steps for manually verifying that the form 
 -   When there is no data, the grid should not automatically add a new record.
 
 ## Examples
-Form: **CustGroup** [![Simple List example](./media/simplelist2-1024x524.png)](./media/simplelist2.png) **Note:** We plan to extend the grid lines to the right and bottom edges in a future client deliverable.
+Form: **CustGroup** 
+
+[![Simple List example](./media/simplelist2-1024x524.png)](./media/simplelist2.png) 
+
+**Note:** We plan to extend the grid lines to the right and bottom edges in a future client deliverable.
 
 ## Appendix
 ### Frequently asked questions

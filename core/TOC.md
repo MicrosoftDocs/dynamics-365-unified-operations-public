@@ -1,3 +1,4 @@
+# Operations guide
 # [Introduction](index.md)
 
 # [Onboard to Dynamics 365 for Operations](get-started/get-started-landing.md)
@@ -64,13 +65,21 @@
 ## [Configure a parallel branch](organization-administration/configure-parallel-branch-workflow.md)
 ## [Configure workflow properties](organization-administration/configure-workflow-properties.md)
 
-# [Analytics and reporting (link to technical content)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
+# Technical topics for users
+## [Analytics home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
+## [Data entities home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
+## [Office integration home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
+## [Mobile apps home page (Admin & developer guide)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 
-# [Data entities (link to technical content)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
+# [Financials guide](/dynamics365/operations/financials/index)
 
-# [Office integration (link to technical content)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
+# [Human resources guide](/dynamics365/operations/hr/index)
 
-# [Mobile apps (link to technical content)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
+# [Retail guide](/dynamics365/operations/retail/index)
+
+# [Supply chain management guide](/dynamics365/operations/manufacturing/index)
+
+# [Admin & developer guide](/dynamics365/operations/dev-itpro/index)
 
 # Other resources
 ## [Dynamics 365 for Operations glossary](get-started/glossary.md)

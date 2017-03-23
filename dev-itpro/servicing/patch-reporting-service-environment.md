@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Patch SQL Server Reporting Services in a one-box environment

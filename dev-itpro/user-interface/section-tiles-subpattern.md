@@ -75,7 +75,9 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Available sizes include 1 tile tall × 2 tiles wide, 2 × 2, 2 × 3, 2 × 4, 2 × 6, 4 × 4, 4 × 6, and 4 × 8.
 
 ## Examples
-Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order preparation** \[see the **Summary** section\]) [![sectionTilesExample](./media/sectiontilesexample.png)](./media/sectiontilesexample.png)
+Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order preparation** (see the **Summary** section)
+
+[![sectionTilesExample](./media/sectiontilesexample.png)](./media/sectiontilesexample.png)
 
 ## Appendix
 ### Frequently asked questions

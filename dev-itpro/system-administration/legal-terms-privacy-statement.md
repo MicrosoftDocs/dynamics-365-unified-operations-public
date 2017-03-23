@@ -42,7 +42,9 @@ Go to the **System parameters** page and click **Legal and Privacy**. On this p
 -   Enter the link to a page that outlines the legal terms for your organization.
 -   Enter the link to a page that outlines the privacy statement for your organization.
 
-**Note:** Make sure that you enter the full URL, starting with either https or http. Click **Save**.
+**Note:** Make sure that you enter the full URL, starting with either https or http. 
+
+Click **Save**.
 
 ## Validate links
 To validate that the links have been added, on the toolbar at the top of the page, click the **Settings** icon, and then click **About**. In the **Links** section of the pane, you should see two new links:
@@ -50,5 +52,7 @@ To validate that the links have been added, on the toolbar at the top of the pag
 -   **Your organization’s Legal terms**
 -   **Your organization’s Privacy and Cookies**
 
-Click on these links to validate that they open the appropriate pages. **Note:** The links open in a new window, so if you have a pop-up blocker enabled, you will have to add an exception to your pop-up blocker settings to allow Dynamics 365 for Operations to launch a new window.
+Click on these links to validate that they open the appropriate pages. 
+
+**Note:** The links open in a new window, so if you have a pop-up blocker enabled, you will have to add an exception to your pop-up blocker settings to allow Dynamics 365 for Operations to launch a new window.
 

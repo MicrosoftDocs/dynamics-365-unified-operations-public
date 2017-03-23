@@ -72,7 +72,9 @@ The verification checklist shows the steps for manually verifying that the form 
 -   Each Form Part Control should point to a form that uses one of the [Form Part Section List](section-list-form-pattern.md) patterns.
 
 ## Examples
-Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order preparation**) [![tabbedListSectionExample](./media/tabbedlistsectionexample.png)](./media/tabbedlistsectionexample.png)
+Form: **PurchOrderMaintainWorkspace** (**All workspaces** &gt; **Purchase order preparation**) 
+
+[![tabbedListSectionExample](./media/tabbedlistsectionexample.png)](./media/tabbedlistsectionexample.png)
 
 ## Appendix
 ### Frequently asked questions

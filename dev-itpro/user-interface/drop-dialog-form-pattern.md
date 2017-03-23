@@ -97,7 +97,7 @@ DialogContent (Group)
 ## UX guidelines
 The verification checklist shows you the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 
 **Drop dialog guidelines:**
 
@@ -135,7 +135,9 @@ A Drop dialog should **not** have the following:
 ## Examples
 ### Drop dialog (basic)
 
-Form: **CustCollectionsNewActivityAction** (Click **Accounts receivable** &gt; **Common** &gt; **Collections** &gt; **Collections**, select a row to move to details, and then click **Action**.) [![DropDialog(3)](./media/dropdialog3.png)](./media/dropdialog3.png)
+Form: **CustCollectionsNewActivityAction** (Click **Accounts receivable** &gt; **Common** &gt; **Collections** &gt; **Collections**, select a row to move to details, and then click **Action**.) 
+
+[![DropDialog(3)](./media/dropdialog3.png)](./media/dropdialog3.png)
 
 ### Drop dialog (read only)
 

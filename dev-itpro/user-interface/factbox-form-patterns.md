@@ -120,11 +120,15 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 ### Form Part FactBox Grid
 
-Form: **CustTable** &gt; **ContactsInfoPart** [![FactBox(3)](./media/factbox3.png)](./media/factbox3.png)
+Form: **CustTable** &gt; **ContactsInfoPart** 
+
+[![FactBox(3)](./media/factbox3.png)](./media/factbox3.png)
 
 ### Form Part FactBox Card
 
-Form: **CustTable** &gt; **CustStatisticsStatistics** [![FactBox(4)](./media/factbox4.png)](./media/factbox4.png)
+Form: **CustTable** &gt; **CustStatisticsStatistics** 
+
+[![FactBox(4)](./media/factbox4.png)](./media/factbox4.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -157,5 +161,7 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 example
 
-**CustTable** &gt; **ContactsInfoPart** [![FactBox(5)](./media/factbox5.png)](./media/factbox5.png)
+**CustTable** &gt; **ContactsInfoPart** 
+
+[![FactBox(5)](./media/factbox5.png)](./media/factbox5.png)
 

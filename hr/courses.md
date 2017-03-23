@@ -55,8 +55,8 @@ The following table lists the three setup types for courses. Setup types determi
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -102,8 +102,8 @@ The following table lists the possible course statuses and the actions that you 
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -142,6 +142,7 @@ The following table lists the possible course statuses and the actions that you 
 
 ## Course participants
 Course participants are workers, applicants, or contact persons who participate in a training course or event. You can only register participants for open courses. The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.
+
 Workflow
 --------
 

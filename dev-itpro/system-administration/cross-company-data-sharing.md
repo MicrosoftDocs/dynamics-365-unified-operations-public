@@ -37,7 +37,9 @@ This article provides information about cross-company data sharing. Cross-compan
 What is this feature and how does it work?
 ------------------------------------------
 
-Cross-company data sharing lets you replicate (share) reference and group data among companies in a Dynamics 365 for Operations deployment. Data integrity is verified before replication occurs. Here are some examples of cross-company data sharing:
+Cross-company data sharing lets you replicate (share) reference and group data among companies in a Dynamics 365 for Operations deployment. Data integrity is verified before replication occurs. 
+
+Here are some examples of cross-company data sharing:
 
 -   The same payment terms and payment day definitions are used across 15 legal entities.
 -   The same terms of delivery are used across seven legal entities in three countries/regions.

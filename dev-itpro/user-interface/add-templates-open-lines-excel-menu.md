@@ -177,7 +177,10 @@ Some of the most frequently used templates are the journal templates. Some of t
             }
         }
 
-4.  Build the project/model that has the new resources. You should have one new resource and one new class. [![Built project/model](./media/22.png)](./media/22.png)
+4.  Build the project/model that has the new resources. You should have one new resource and one new class. 
+
+        [![Built project/model](./media/22.png)](./media/22.png)
+        
 5.  In the client, go to **Common** &gt; **Common** &gt; **Office integration** &gt; **Document templates** &gt; **Reload system templates**. You will see the new template in the list, and if you open the journal page that you added the template to, you will also see that template on the **Open lines in Excel** menu.
 
 
