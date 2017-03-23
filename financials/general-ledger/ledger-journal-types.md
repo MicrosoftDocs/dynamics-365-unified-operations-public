@@ -2,7 +2,7 @@
 # required metadata
 
 title: Ledger journal types
-description: This article describes the journal types that you can set up for financial journals. Use the Journal names page to set up journals that you can use throughout Microsoft Dynamics AX.
+description: This article describes the journal types that you can set up for financial journals. Use the Journal names page to set up journals that you can use throughout Microsoft Dynamics 365 for Operations.
 author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-03 20 - 27 - 42
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Ledger journal types
 
-This article describes the journal types that you can set up for financial journals. Use the Journal names page to set up journals that you can use throughout Microsoft Dynamics AX.
+This article describes the journal types that you can set up for financial journals. Use the Journal names page to set up journals that you can use throughout Microsoft Dynamics 365 for Operations.
 
 | Journal type                      | Purpose                                                                                                                                                                                                                                                                                                                                                     | Enter transactions on this page                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|

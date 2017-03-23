@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: (POL) Correction notes
+title: Correction notes
 description: This topic provides information about correction notes. A correction note is a document that is required by local regulations in Poland. It's used to correct errors on a vendor invoice. 
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# (POL) Correction notes
+# Correction notes
 
 This topic provides information about correction notes. A correction note is a document that is required by local regulations in Poland. It's used to correct errors on a vendor invoice. 
 

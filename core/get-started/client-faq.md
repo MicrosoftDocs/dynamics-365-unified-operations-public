@@ -55,7 +55,7 @@ To make keyboard access easier, we plan to implement a keyboard shortcut in the
 ## Where is the View details functionality in Dynamics 365 for Operations?
 The **View details** option is available in a couple of ways:
 
--   If a control has **View details **capabilities, and if the control has a value, that value is displayed as a hyperlink. You can click the hyperlink to open a page that contains additional details.
+-   If a control has **View details** capabilities, and if the control has a value, that value is displayed as a hyperlink. You can click the hyperlink to open a page that contains additional details.
 -   **View details** is also an option on Dynamics 365 for Operations shortcut menus. For more information about when Dynamics 365 for Operations shortcut menus are displayed when you right-click, see the previous section.
 
 

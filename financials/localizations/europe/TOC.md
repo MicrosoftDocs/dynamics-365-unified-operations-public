@@ -1,8 +1,7 @@
 # [Advance holders](advance-holders.md)
-# [Depreciation rounding](eeu-depreciation-rounding.md)
 # [Edit invoice IDs on sales orders](eeu-edit-invoice-id-sales-orders.md)
-# [EU Entry certificates](entry-certificates.md)
-# [EU Sales list reporting](eu-sales-list.md)
+# [EU entry certificates](entry-certificates.md)
+# [EU sales list reporting](eu-sales-list.md)
 # [File formats for methods of payment](select-file-formats-for-the-method-of-payments.md)
 # [Fixed assets disposal for Estonia and Lithuania](eeu-credit-note-reverse-fixed-asset-sale.md)
 # [Intrastat](intrastat.md)
@@ -22,12 +21,15 @@
 # [VAT reporting](eu-vat-reporting.md)
 # [View transactions on settlement](transactions-settlement-form.md)			
 # Austria						
-## [Packing material rates and fees](aut-packing-material-fee-calculation.md)	
+## [Packing material fees](aut-packing-material-fee-calculation.md)	
 ## [VAT statement](aut-vat-statement-details-austria.md)							
 # Belgium						
-## [CODA bank statement](bel-coda-bank-statement-import.md)						
+## [CODA bank statement](bel-coda-bank-statement-import.md)	
+## [PRODCOM report setup](prodcom-report-setup.md)
+
 # The Czech Republic									
-## [Depreciation suspension for holidays](cze-depreciation-suspension-holidays.md)						
+## [Depreciation rounding](eeu-depreciation-rounding.md)
+## [Depreciation suspension](cze-depreciation-suspension-holidays.md)						
 ## [Fixed assets depreciation](cze-fixed-assets-depreciation.md)						
 ## [Half year depreciation](cze-half-depreciation-fixed-asset-disposal.md)
 ## [VAT statement](cz-vat-statement-details-for-czech-republic.md)			

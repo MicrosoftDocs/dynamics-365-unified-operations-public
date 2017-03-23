@@ -1,12 +1,12 @@
 # [Introduction](index.md)
 
-# [Overview of Dynamics 365 for Operations](get-started/toc.md)
+# [Overview of Dynamics 365 for Operations](get-started/TOC.md)
 
-# [Deployment](deployment/toc.md)
+# [Deployment](deployment/TOC.md)
 
-# [Upgrade and migration](migration-upgrade/toc.md)
+# [Upgrade and migration](migration-upgrade/TOC.md)
 
-# [Servicing](servicing/toc.md)
+# [Servicing](servicing/TOC.md)
 
 # Security
 ## [Role-based security](system-administration/role-based-security.md)
@@ -20,7 +20,7 @@
 
 # [System configuration](system-administration/TOC.md)
 
-# [Analytics BI & Reporting](analytics-bi-reporting/TOC.md)
+# [Analytics](analytics-bi-reporting/TOC.md)
 
 # Mobile apps
 ## [Install and configure the warehousing app ](/manufacturing/warehouse-management/install-configure-warehousing-app.md)

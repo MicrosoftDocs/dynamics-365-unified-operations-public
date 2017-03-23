@@ -41,7 +41,10 @@ This tutorial requires that you access the environment as an administrator on th
 
 ## Capture the trace
 1.  Before you trace make sure your scenario is in a "Warm" state meaning you executed the scenario you want to trace once before you take the trace. That will prevent things like metadata loading and other possible warm up tasks from being in the trace.
-2.  In the navigation bar, select **Settings**, and then click **Trace**. [![Trace1](./media/trace1-300x176.jpg)](./media/trace1.jpg)
+2.  In the navigation bar, select **Settings**, and then click **Trace**. 
+
+    [![Trace1](./media/trace1-300x176.jpg)](./media/trace1.jpg)
+    
 3.  Name the trace that you are about to capture, and then click **Start trace**.
 4.  Perform actions that need to be analyzed like for example opening "Accounts payable &gt; Vendors &gt; All vendors".
 5.  When you are finished, click **Stop trace**. Then, you can select one of the following options (for this tutorial, select the second option):
@@ -52,7 +55,11 @@ This tutorial requires that you access the environment as an administrator on th
 
 ## Assign trace rights to user
 1.  To give a user rights to capture a trace, go to "System administration &gt; Users &gt; Users".
-2.  Select the user and assign the "System tracing user" role. [![trace2](./media/trace2-284x300.jpg)](./media/trace2.jpg)Remove the user role again once the user is done with tracing to avoid unwanted tracing.
+2.  Select the user and assign the "System tracing user" role. 
+
+    [![trace2](./media/trace2-284x300.jpg)](./media/trace2.jpg)
+    
+    Remove the user role again once the user is done with tracing to avoid unwanted tracing.
 
 ## Open captured trace
 1.  In the navigation bar, select **Settings**, and then click **Trace**.

@@ -191,15 +191,15 @@ MainGridDefaultAction (CommandButton)
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in a browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 **Detail Master guidelines:**
 
 -   There should not be any duplicate **New** and **Delete** buttons.
 -   Should use FastTabs to group the fields instead of traditional tabs. The Details Master w/Standard Tabs pattern groups these related FastTabs into traditional tabs.
     -   In its **default** state, the content of the first FastTab should be fully visible without scrolling.
-    -   **FastTabs** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document.
--   **ActionPane** guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document, in the ActionPane guidelines section.
+    -   **FastTabs** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md)document.
+-   **ActionPane** guidelines have been consolidated into the [General Form Guidelines ](general-form-guidelines.md)document, in the ActionPane guidelines section.
 -   **Page title area:**
     -   The following format should be used: "&lt;ID&gt; : &lt;Description&gt;"
     -   A link to the Details page should be provided in the Main Menu when the List page has been merged into the Details page.
@@ -271,9 +271,13 @@ None.
 
 ##### Details Master (basic)
 
-[![AX 2012 example: Details Master (basic) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png) [![AX 2012 example: Details Master (basic) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
+[![AX 2012 example: Details Master (basic) 1](./media/detailsmaster11-1024x647.png)](./media/detailsmaster11.png) 
+
+[![AX 2012 example: Details Master (basic) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
 
 ##### Details Master w/Standard Tabs
 
-[![AX 2012 example: Details Master w/Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) [![AX 2012 example: Details Master w/Standard Tabs 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
+[![AX 2012 example: Details Master w/Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
+
+[![AX 2012 example: Details Master w/Standard Tabs 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
 

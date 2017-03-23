@@ -40,6 +40,7 @@ Usage
 This container pattern is used to show actions above a subpattern of data fields. The toolbar should contain fewer than 10 actions.
 
 ## Wireframe
+
 [![ToolbarFields(1)](./media/toolbarfields1.png)](./media/toolbarfields1.png)
 
 ## Model
@@ -70,16 +71,18 @@ ContentGroup (Group) – **Note:** A fields subpattern is used.
 ## UX guidelines
 The verification checklist shows the steps for manually verifying that the form complies with UX guidelines. This checklist doesn't include any guidelines that will be enforced automatically through the development environment. Open the form in the browser, and walk through these steps. **Standard form guidelines:**
 
--   Standard form guidelines have been consolidated into the Microsoft Dynamics AX [General Form Guidelines](general-form-guidelines.md)document.
+-   Standard form guidelines have been consolidated into the [General Form Guidelines](general-form-guidelines.md)document.
 
 **Toolbar** **guidelines:**
 
--   Toolbar guidelines have been consolidated into the Dynamics AX [General Form Guidelines ](general-form-guidelines.md)document.
+-   Toolbar guidelines have been consolidated into the Dynamics AX [General Form Guidelines](general-form-guidelines.md) document.
 
 ## Examples
 ### Toolbar and Fields
 
-Form: **HcmPosition** **(WorkerAssignmentTabPage)** [![ToolbarFields(2)](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
+Form: **HcmPosition** **(WorkerAssignmentTabPage)** 
+
+[![ToolbarFields(2)](./media/toolbarfields2-1024x131.png)](./media/toolbarfields2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -101,5 +104,7 @@ This section will have answers to frequently asked questions that are related to
 
 ### Microsoft Dynamics AX 2012 content
 
-**HcmPosition** ![ToolbarFields(3)](./media/toolbarfields3.png)
+**HcmPosition** 
+
+![ToolbarFields(3)](./media/toolbarfields3.png)
 

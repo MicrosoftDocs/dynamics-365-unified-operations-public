@@ -31,11 +31,55 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Introduction to Dynamics 365 for Operations
 
-Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to make smarter decisions quickly through an intelligent user interface that provides access to real-time insights and intelligence.  It enables businesses to transform by delivering proven business logic and enabling them to redesign their business processes faster so they can innovate. It gives businesses the flexibility to grow at their pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
+Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
 
-## Regions
-Dynamics 365 for Operations resources are distributed across multiple geographical regions around the world. A "region" represents multiple data centers in a single geographical area. We have 34 regions generally available around the world with an additional 4 regions announced. Because we are continuing to expand our global coverage, we maintain an updated list of existing and newly announced regions.
+This user guide can help you learn how to make Dynamics 365 for Operations work for your business.  Find content for:   
 
-## Partners
-Microsoft works closely with our partners to ensure that customers can get up and running quickly, in any industry they need. For more information on our partners check their marketplace pages.
-
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p>Onboarding and setting up your organization</p>
+<p>Financials</p>
+<ul><li>Accounts payable</li>
+<li>Accounts receivable</li>
+ <li>Cash and bank management</li>
+<li>Cost accounting</li>
+<li>Expense management</li>
+<li>Fixed assets</li>
+<li>General ledger</li>
+<li>Project management</li>
+<li>Public sector</li></ul>
+<p>Regional features</p>
+  <ul><li>Asia Pacific</li>
+  <li>Europe</li>
+  <li>Latin America</li>
+  <li>Middle East and Africa</li>
+  <li>North America</li></ul>
+  <p>Human resources</p>
+  </td>
+  <td>
+  <p>Retail</p>
+  <p>Supply chain management</p>
+<ul>
+<li>Cost management</li>
+  <li>Inventory management</li>
+  <li>Master planning</li>
+  <li>Procurement and sourcing</li>
+  <li>Production control</li>
+  <li>Sales and marketing</li>
+  <li>Transportation management</li>
+  <li>Warehouse management</li></ul>
+  <p>Admin & developer functionality</p>
+  <ul><li>Analytics</li>
+  <li>Data entities</li>
+  <li>Office integration</li>
+  <li>Mobile apps</li>
+  <li>System administration</li>
+  <li>Developer tools</li></ul></td>
+</tr>
+</tbody>
+</table>

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Posting inventory main accounts by site
+# Post inventory main accounts by site
 
 This topic provides information about the posting of inventory main accounts by site for China.
 

@@ -116,11 +116,15 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 ### Filters and Toolbar - Inline
 
-Form: **HcmWorkforceManagement**  &gt; **HcmOpenPositionsPart** (**All workspaces** &gt; **Workforce management**) [![filterToolbarInline](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
+Form: **HcmWorkforceManagement**  &gt; **HcmOpenPositionsPart** (**All workspaces** &gt; **Workforce management**) 
+
+[![filterToolbarInline](./media/filtertoolbarinline.png)](./media/filtertoolbarinline.png)
 
 ### Filters and Toolbar - Stacked
 
-Form: **HcmWorkforceManagement** &gt; **HcmWorkerOnLeaveListPart** (**All workspaces** &gt; **Workforce management**) [![filterToolbarStacked](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
+Form: **HcmWorkforceManagement** &gt; **HcmWorkerOnLeaveListPart** (**All workspaces** &gt; **Workforce management**) 
+
+[![filterToolbarStacked](./media/filtertoolbarstacked.png)](./media/filtertoolbarstacked.png)
 
 ## Appendix
 ### Frequently asked questions

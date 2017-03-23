@@ -35,6 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 Describes the parm methods that can be set in code on an instance of a Segmented Entry control.
 
 The Segmented Entry control has multiple parm methods that influence how the control will behave. Here is a description of each method.
+
 | Method                               | Description                                                                                                                                                                                                                                                                                                                    |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | parmDataAreaId                       | The company context that the control is running under. In most cases this is curext() but there are scenarios where forms can manually set different company contexts, surface records from different companies, etc. Forms need to evaluate which context the SEC should be running under the various conditions of the form. |

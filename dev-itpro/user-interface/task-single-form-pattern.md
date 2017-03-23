@@ -103,7 +103,11 @@ The verification checklist shows you the steps for manually verifying that the f
 -   The **General** tab must be the second tab and must have the label **General**.
 
 ## Examples
-Form: **LedgerJournalTable** [![Task Single example 1](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png) [![Task Single example 2](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)
+Form: **LedgerJournalTable** 
+
+[![Task Single example 1](./media/tasksingle2-1024x669.png)](./media/tasksingle2.png) 
+
+[![Task Single example 2](./media/tasksingle3-1024x424.png)](./media/tasksingle3.png)
 
 ## Appendix
 ### Frequently asked questions

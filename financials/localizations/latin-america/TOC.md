@@ -20,6 +20,5 @@
 ## [DIOT declaration statement](diot-declaration-statement.md)			
 ## [Electronic invoices (CFDI)](electronic-invoices-mexico.md)			
 ## [Electronic ledger accounting statements](electronic-ledger-accounting-statements-mexico.md)
-## [ISR declaration report](isr-declaration-report.md)
-### [ISR declaration report](mex-isr-declaration-report-supporting-processes.md)
+## [ISR declaration report](mex-isr-declaration-report-supporting-processes.md)
 

@@ -37,7 +37,11 @@ This topic provides information about the file upload control. This control lets
 Overview
 --------
 
-The file upload control lets users upload a file to Microsoft Dynamics 365 for Operations. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. [![FileUpload001](./media/fileupload001.png)](./media/fileupload001.png) The file upload control can have three styles. You control the style by using the **Style** property.
+The file upload control lets users upload a file to Microsoft Dynamics 365 for Operations. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. 
+
+[![FileUpload001](./media/fileupload001.png)](./media/fileupload001.png) 
+
+The file upload control can have three styles. You control the style by using the **Style** property.
 
 -   The **Standard** style shows the file name field together with **Browse**, **Upload**, and **Cancel** buttons.
 -   The **Minimal** style shows only the **Browse** button.
@@ -63,5 +67,7 @@ There are two main types of classes that developers can work with for the file u
 The framework provides a default upload strategy class that is named **FileUploadTemporaryStorageStrategy** and a default upload result class that is named **FileUploadTemporaryStorageResult**. This upload result class stores uploaded files to the temporary blob storage and provides a download URL. Developers can also implement their own custom upload strategy and upload result classes as required. For the upload strategy, two abstract methods from the **FileUploadStrategyBase** class must be implemented: **uploadFile** and **getResultClassName**. The **uploadFile** method handles where and how the file is stored. The **getResultClassName** method retrieves the upload result class that is used in this strategy. The **FileUploadResultBase** class has fields for the file name, the upload status, the content type of the file, and the log message. This class can be extended as required. All new properties should be able to be serialized and deserialized. The **openResult** method opens the file as a stream, and the **deleteResult** method deletes the file from the corresponding data storage.
 
 ## Sequence diagram
-The file upload control accepts the file and upload strategy in the client, and sends them to the file services. The file services start a new session, create an instance of a strategy class, and call the **uploadFile** method. When the **uploadFile** method has finished storing the file in the data source, a file upload result class returns to the file services. This class is sent back to the client, which might trigger the **OnUploadCompleted** event to deal with the post-process. [![FileUploadControlUsageAndDesign1](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
+The file upload control accepts the file and upload strategy in the client, and sends them to the file services. The file services start a new session, create an instance of a strategy class, and call the **uploadFile** method. When the **uploadFile** method has finished storing the file in the data source, a file upload result class returns to the file services. This class is sent back to the client, which might trigger the **OnUploadCompleted** event to deal with the post-process. 
+
+[![FileUploadControlUsageAndDesign1](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 

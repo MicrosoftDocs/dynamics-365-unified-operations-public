@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# EU Sales list reporting
+# EU sales list reporting
 
 This article provides information about European Union (EU) Sales list reporting.
 

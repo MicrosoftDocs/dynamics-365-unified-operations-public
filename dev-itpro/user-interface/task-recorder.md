@@ -65,11 +65,23 @@ Whether you’re creating a new task recording or basing your recording on a Mic
 
 -   **Title**: A title annotation will appear before the step text that task recorder automatically generates. In the task guide, the title annotation appears above the automatically generated text. Use this type of annotation to explain why the user is doing the step or to give additional context.
 
-This is the editing pane that you see when you add an annotation as you create your recording. Enter a title annotation in the **Title** box. [![screen1](./media/screen1.png)](./media/screen1.png) This is what the title annotation looks like in the "bubble" in the task guide. [![screen2](./media/screen2.png)](./media/screen2.png)
+This is the editing pane that you see when you add an annotation as you create your recording. Enter a title annotation in the **Title** box. 
+
+[![screen1](./media/screen1.png)](./media/screen1.png) 
+
+This is what the title annotation looks like in the "bubble" in the task guide. 
+
+[![screen2](./media/screen2.png)](./media/screen2.png)
 
 -   **Notes:** A notes annotation will appear after the step text that task recorder automatically generates. In the task guide it will only be visible if the user clicks the **Show more** link in the task guide bubble. Use this type of annotation to describe anything that a user needs to know to complete the step.
 
-This is the editing pane that you see when you add an annotation as you create your recording. Enter a notes annotation in the **Notes** box. [![screen3](./media/screen3.png)](./media/screen3.png) This is what the notes annotation looks like in the "bubble" in the task guide.[![screen4](./media/screen4.png)](./media/screen4.png)
+This is the editing pane that you see when you add an annotation as you create your recording. Enter a notes annotation in the **Notes** box. 
+
+[![screen3](./media/screen3.png)](./media/screen3.png) 
+
+This is what the notes annotation looks like in the "bubble" in the task guide.
+
+[![screen4](./media/screen4.png)](./media/screen4.png)
 
 -   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step. **Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a form, the task guide “bubble” will appear someplace on the form, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide “bubble” will point to the control when the task guide is played. In the Help pane, an info step annotation will appear as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of Dynamics 365 for Operations, or to refer to other recordings (although you cannot create hyperinks in annotations.).
 

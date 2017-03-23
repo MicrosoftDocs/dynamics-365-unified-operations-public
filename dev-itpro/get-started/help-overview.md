@@ -78,7 +78,7 @@ To access Help content within Dynamics 365 for Operations , either click the **H
 
 ### Accessing articles from the Help pane
 
-From the Help pane, you can access articles that apply to the Dynamics 365 for Operations client. When you first open the Help pane and click the **Wiki** tab, you’ll see the articles that apply to the page that you’re currently on in Dynamics 365 for Operations. If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article. [![Wiki page](./media/wiki-page-1024x683.png)](./media/wiki-page.png)
+From the Help pane, you can access articles that apply to the Dynamics 365 for Operations client. When you first open the Help pane and click the **Wiki** tab, you’ll see the articles that apply to the page that you’re currently on in Dynamics 365 for Operations. If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article. 
 
 ### Accessing Task guides from the Help pane
 

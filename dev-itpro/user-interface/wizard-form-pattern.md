@@ -40,6 +40,7 @@ Usage
 A wizard is a special form of user assistance that takes the user through a task by using an ordered series of tab pages. Wizards are especially useful for complex or infrequent tasks that the user might have difficulty learning or doing, or for tedious, frequently performed tasks.
 
 ## Wireframe
+
 [![Wireframe](./media/wizard1-1024x574.png)](./media/wizard1.png)
 
 ## Pattern changes
@@ -95,7 +96,9 @@ The verification checklist shows the steps for manually verifying that the form 
     -   FastTabs
 
 ## Examples
-Form: **WrkCtrBulkResReqEditWizard** [![wizardExample](./media/wizardexample.png)](./media/wizardexample.png)[](./media/wizard2.png)
+Form: **WrkCtrBulkResReqEditWizard** 
+
+[![wizardExample](./media/wizardexample.png)](./media/wizardexample.png)[](./media/wizard2.png)
 
 ## Appendix
 ### Frequently asked questions

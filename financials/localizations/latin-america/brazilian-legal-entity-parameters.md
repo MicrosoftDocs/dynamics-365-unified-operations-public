@@ -37,7 +37,9 @@ To collect and submit tax statements that report on performance, a Brazilian leg
 Brazilian legal entity overview
 -------------------------------
 
-A Brazilian legal entity is organized by fiscal establishments that function in the same way and are in the same operations of a branch. There is a primary fiscal establishment that is considered the Matriz, and related fiscal establishments that are located in other states or outside Brazil. The following illustration shows the structure of a Brazilian legal entity and related fiscal establishments. [![structure of a Brazilian legal entity and related fiscal establishments](./media/bralegalentity-236x300.png)](./media/bralegalentity.png)
+A Brazilian legal entity is organized by fiscal establishments that function in the same way and are in the same operations of a branch. There is a primary fiscal establishment that is considered the Matriz, and related fiscal establishments that are located in other states or outside Brazil. The following illustration shows the structure of a Brazilian legal entity and related fiscal establishments. 
+
+[![structure of a Brazilian legal entity and related fiscal establishments](./media/bralegalentity-236x300.png)](./media/bralegalentity.png)
 
 ## Fiscal establishments
 A fiscal establishment is a physical location of a legal entity, such as a subsidiary, branch, plant, distribution center, warehouse, or store, that requires a Cadastro Nacional da Pessoa Jurídica (CNPJ) or Inscrição Estadual (IE) tax registration number. A legal entity can have multiple fiscal establishments. Fiscal establishments issue and receive fiscal documents, and assess and pay taxes. You can perform the following tasks:
@@ -50,7 +52,8 @@ A fiscal establishment is a physical location of a legal entity, such as a subsi
 -   Create and post a free text invoice for a fiscal establishment. The CFOP codes that you can select for the free text invoice lines depend on the fiscal establishment. The sales tax groups and item sales tax groups for the free text invoice lines are updated based on the tax matrixes that are attached to the fiscal establishments of the sites via fiscal establishment groups.
 -   Create and post a purchase order by specifying sites that are attached to fiscal establishments for the purchase order lines. The sales tax groups and item sales tax groups for the purchase order lines are updated based on the tax matrixes that are attached to the fiscal establishments of the sites via fiscal establishment groups.
 
-**Note:** You create and assign the address on the **Legal entities** page, and assign it to the fiscal establishment. You can assign only one address to a fiscal establishment. For each fiscal establishment, enter the following tax registration IDs and fiscal information.
+> [!NOTE]
+>  You create and assign the address on the **Legal entities** page, and assign it to the fiscal establishment. You can assign only one address to a fiscal establishment. For each fiscal establishment, enter the following tax registration IDs and fiscal information.
 
 | Field        | Description                                                                                                                                       |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -144,7 +147,9 @@ You can configure information and certificates that are used on the electronic f
 
 ### Tax registration numbers
 
-After a Brazilian legal entity is created, and a fiscal establishment is created that has the related Brazilian address, the following tax registration numbers appear in the legal entity. **Note:** The following tax registration fields belong to the primary address, because the tax registration IDs are created and updated in each fiscal establishment/address.
+After a Brazilian legal entity is created, and a fiscal establishment is created that has the related Brazilian address, the following tax registration numbers appear in the legal entity. 
+> [!NOTE]
+>  The following tax registration fields belong to the primary address, because the tax registration IDs are created and updated in each fiscal establishment/address.
 
 | Field        | Description                                                                            |
 |--------------|----------------------------------------------------------------------------------------|

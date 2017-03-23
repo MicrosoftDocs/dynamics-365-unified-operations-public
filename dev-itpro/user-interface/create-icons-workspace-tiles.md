@@ -61,5 +61,21 @@ As you create a workspace tile, adhere to the following guidelines:
     -   NormalImage=&lt;name of AOTResource&gt;
 
 ## Example
-Consider the following image/icon that is to be used for a new workspace. [![newLogo3](./media/newlogo3.png)](./media/newlogo3.png) This icon would be converted to an image with a transparent background, and white content with the icon centered in a larger image canvas. \[caption id="attachment\_1138933" align="alignleft" width="172"\]![newIcon](./media/newicon.png) Workspace icon image\[/caption\] \[caption id="attachment\_1138963" align="alignleft" width="172"\][![newIcon\_guides](./media/newicon_guides.png)](./media/newicon_guides.png) Workspace icon image overlaid to show the circular portion visible on the tile as well as the area set aside for the icon.\[/caption\]                   Using this image on a workspace tile yields the following result on the dashboard. [![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+Consider the following image/icon that is to be used for a new workspace. 
+
+[![newLogo3](./media/newlogo3.png)](./media/newlogo3.png) 
+
+This icon would be converted to an image with a transparent background, and white content with the icon centered in a larger image canvas. 
+
+![newIcon](./media/newicon.png) 
+
+Workspace icon image
+
+![newIcon\_guides](./media/newicon_guides.png) 
+
+Workspace icon image overlaid to show the circular portion visible on the tile as well as the area set aside for the icon.
+
+Using this image on a workspace tile yields the following result on the dashboard. 
+
+[![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
 

@@ -97,7 +97,9 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Any fields should be placed to the right of the image.
 
 ## Examples
-Form: **RetailVisualProfile** **(Login)** [![ImagePreview(2)](./media/imagepreview2.png)](./media/imagepreview2.png)
+Form: **RetailVisualProfile** **(Login)** 
+
+[![ImagePreview(2)](./media/imagepreview2.png)](./media/imagepreview2.png)
 
 ## Resources
 ### Typically used by patterns

@@ -1,11 +1,12 @@
+# Operations guide
 # [Introduction](index.md)
 
 # [Onboard to Dynamics 365 for Operations](get-started/get-started-landing.md)
 ## Introduction to Microsoft Dynamics 365
 ### [Get started with Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
-### [Sign up for a subscription](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription)
+### [Sign up for a subscription](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/operations/toc.json)
 ### [How to get the on-premises version of Dynamics AX 2012](/dynamics365/operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/operations/toc.json)
-## [Deploy a demo environment](/dynamics365/operations/dev-itpro/dev-tools/deploy-demo-environment?toc=/dynamics365/operations/toc.json)
+## [Deploy a demo environment](/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/operations/toc.json)
 
 ## Explore the user interface
 ### [Action search](get-started/action-search.md)
@@ -21,7 +22,7 @@
 
 ## Get help and support
 ### [Help overview](/dynamics365/operations/dev-itpro/get-started/help-overview?toc=/dynamics365/operations/toc.json)
-### [Connect Help](/dynamics365/operations/dev-itpro/get-started/working-with-help?toc=/dynamics365/operations/toc.json)
+### [Connect Help](/dynamics365/operations/dev-itpro/get-started/help-connect?toc=/dynamics365/operations/toc.json)
 ### [View and export field descriptions](get-started/view-export-field-descriptions.md)
 
 ### Task guides and task recorder
@@ -64,13 +65,21 @@
 ## [Configure a parallel branch](organization-administration/configure-parallel-branch-workflow.md)
 ## [Configure workflow properties](organization-administration/configure-workflow-properties.md)
 
-# [Analytics and reporting (link to technical content)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
+# Technical topics for users
+## [Analytics home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
+## [Data entities home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
+## [Office integration home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
+## [Mobile apps home page (Admin & developer guide)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 
-# [Data entities (link to technical content)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
+# [Financials guide](/dynamics365/operations/financials/index)
 
-# [Office integration (link to technical content)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
+# [Human resources guide](/dynamics365/operations/hr/index)
 
-# [Mobile apps (link to technical content)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
+# [Retail guide](/dynamics365/operations/retail/index)
+
+# [Supply chain management guide](/dynamics365/operations/manufacturing/index)
+
+# [Admin & developer guide](/dynamics365/operations/dev-itpro/index)
 
 # Other resources
 ## [Dynamics 365 for Operations glossary](get-started/glossary.md)

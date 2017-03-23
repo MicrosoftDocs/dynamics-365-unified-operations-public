@@ -34,10 +34,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 
-Microsoft Dynamics 365 for Operations has descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page. Not all pages have field descriptions. We want to provide descriptions only for the more complex fields, not where the use of the field is obvious. Therefore, some pages don't have any field descriptions, some pages have a few descriptions, and some of the more complex pages, such as many of the parameters pages, have many descriptions. If you have access to the Dynamics 365 for Operations development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](/dev-itpro/user-interface/customize-field-help).
+Microsoft Dynamics 365 for Operations has descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page. 
+
+Not all pages have field descriptions. We want to provide descriptions only for the more complex fields, not where the use of the field is obvious. Therefore, some pages don't have any field descriptions, some pages have a few descriptions, and some of the more complex pages, such as many of the parameters pages, have many descriptions. 
+
+If you have access to the Dynamics 365 for Operations development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](/dev-itpro/user-interface/customize-field-help).
 
 ## See field descriptions in the user interface
-You can view field descriptions by hovering over a field. If no description is available, you see the field name when you hover over the field. (Note: In version 7.0.0, field descriptions can be viewed only on the **Field descriptions** page.) The following illustration shows the field description that appears when you hover over the **Lock items during count** field. [![Example of a field description](./media/field-description.png)](./media/field-description.png)
+You can view field descriptions by hovering over a field. If no description is available, you see the field name when you hover over the field. (Note: In version 7.0.0, field descriptions can be viewed only on the **Field descriptions** page.) The following illustration shows the field description that appears when you hover over the **Lock items during count** field. 
+
+[![Example of a field description](./media/field-description.png)](./media/field-description.png)
 
 ## Use the Field descriptions page to view and export field help
 The **Field descriptions** page lets you view and export field descriptions. You can see the descriptions that are available for one page at a time.
@@ -48,7 +54,11 @@ To view the descriptions for a page, follow this step.
 
 -   In the **Select a page** field, type the name of the page. Alternatively, click the arrow to open a list of all the pages, and then browse or filter the list.
 
-You can use either the name of the page that is shown in the user interface (UI) (for example, **Customers**) or the code name (AOT name) that's available when you right-click a page (for example, **CustTable**). For information about the various ways to filter the list of pages, see the "Searching for a page" section later in this article. If you set the **Include fields without a description** option to **Yes**, all the fields on the page are shown, even if they don't have a field description.
+You can use either the name of the page that is shown in the user interface (UI) (for example, **Customers**) or the code name (AOT name) that's available when you right-click a page (for example, **CustTable**). 
+
+For information about the various ways to filter the list of pages, see the "Searching for a page" section later in this article. 
+
+If you set the **Include fields without a description** option to **Yes**, all the fields on the page are shown, even if they don't have a field description.
 
 ### Export the descriptions for a page
 

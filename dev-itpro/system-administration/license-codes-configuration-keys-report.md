@@ -39,5 +39,5 @@ When you purchase Dynamics 365 for Operations, all functionality is included. By
 When a license code or configuration key is disabled, the associated module or feature is removed from the user interface. Large sets of functionality, such as modules, are controlled by license codes. Many license codes, in turn, enable configuration keys that allow you to enable and disable functionality at a more detailed level.
 
 ## To view the report
-The [License codes and configuration keys report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)lists each configuration key that is available. The report also indicates the license code and menu items associated with each configuration key.
+The [License codes and configuration keys report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each configuration key that is available. The report also indicates the license code and menu items associated with each configuration key.
 

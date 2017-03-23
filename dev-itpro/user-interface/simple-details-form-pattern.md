@@ -45,6 +45,7 @@ The Simple Details pattern is used when only a simple set of fields must be pre
 -   **Simple Details w/Panorama** – This is the Simple Details pattern that should be used when information is intended to be displayed in a panorama format.
 
 ## Wireframe
+
 [![Wireframe](./media/simpledetails1-1024x578.png)](./media/simpledetails1.png)
 
 ## Pattern changes
@@ -128,19 +129,27 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 ### Simple Details w/Toolbar and Fields
 
-Form: **AgreementLine** [![Simple Details w/Toolbar and Fields](./media/simpledetails2-1024x688.png)](./media/simpledetails2.png)
+Form: **AgreementLine** 
+
+[![Simple Details w/Toolbar and Fields](./media/simpledetails2-1024x688.png)](./media/simpledetails2.png)
 
 ### Simple Details w/FastTabs
 
-Form: **PlanActivityServiceDetails** [![Simple Details w/FastTab](./media/simpledetails3-1024x587.png)](./media/simpledetails3.png)
+Form: **PlanActivityServiceDetails** 
+
+[![Simple Details w/FastTab](./media/simpledetails3-1024x587.png)](./media/simpledetails3.png)
 
 ### Simple Details w/Standard Tabs
 
-Form: **HcmEmploymentDateManager** (Click **Human Resources** &gt; **Common** &gt; **Workers** &gt; **Workers**, click **General** &gt; **Versions** &gt; **Employment History**, and then click **Date Manager**.) [![Simple Details w/Standard Tabs](./media/simpledetails4-1024x588.png)](./media/simpledetails4.png)
+Form: **HcmEmploymentDateManager** (Click **Human Resources** &gt; **Common** &gt; **Workers** &gt; **Workers**, click **General** &gt; **Versions** &gt; **Employment History**, and then click **Date Manager**.) 
+
+[![Simple Details w/Standard Tabs](./media/simpledetails4-1024x588.png)](./media/simpledetails4.png)
 
 ### Simple Details w/Panorama
 
-Form: **PdsMRCEventTracker** [![Simple Details w/Panorama](./media/simpledetails5-1024x510.png)](./media/simpledetails5.png)
+Form: **PdsMRCEventTracker** 
+
+[![Simple Details w/Panorama](./media/simpledetails5-1024x510.png)](./media/simpledetails5.png)
 
 ## Appendix
 ### Frequently asked questions

@@ -1,4 +1,4 @@
-# [Analytics BI & Reporting](bi-reporting-home-page.md)
+# [Analytics](bi-reporting-home-page.md)
 # [Information access reporting ](information-access-reporting.md)
 
 # Analytical tools and visualizations
