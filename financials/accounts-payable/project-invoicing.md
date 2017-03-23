@@ -89,7 +89,7 @@ For Time and material projects, you can bill a customer or other funding source 
 ## Invoice control
 You can use invoice control to track both invoiced and non-invoiced transactions, and to analyze those transactions against quotations for an end-to-end view of your projects from the quotation stage to completion. You can see which transactions have been charged to a specific project and which lines have been invoiced. You can also view individual transactions, so that you can adjust them after they are posted.
 
-## Invoicing Fixedprice projects
+## Invoicing Fixed-price projects
 To invoice a Fixed-price project, you must define a billing schedule and complete the invoicing procedure.
 
 ### Billing schedule
