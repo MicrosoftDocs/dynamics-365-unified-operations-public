@@ -151,8 +151,8 @@ Enter the following information on the **Payroll details** FastTab.
 
 <table>
 <colgroup>
-<col width="35%" />
-<col width="65%" />
+<col width="25%" />
+<col width="75%" />
 </colgroup>
 <thead>
 <tr class="header">
