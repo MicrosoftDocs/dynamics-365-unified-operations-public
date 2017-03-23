@@ -57,7 +57,11 @@ You can select a location that the work policy applies to. If no location is ass
 You can select a product that the work policy applies to. You can apply the work policy to either all products or selected products.
 
 ## Example
-In the following example, there are two production orders, PRD-001 and PRD-00*2*. Production order PRD-001 has an operation that is named **Assembly**, where product SC1 is being reported as finished to location O1. Production order PRD-002 has an operation that is named **Painting** and consumes product SC1 from location O1. Production order PRD-002 also consumes raw material RM1 from location O1. RM1 is stored in warehouse location BULK-001 and will be picked to location O1 by warehouse work for raw material picking. The picking work is generated when production PRD-002 is released. \[caption id="attachment\_89413" align="aligncenter" width="484"\][![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) Warehouse work policies\[/caption\] When you plan to configure a warehouse work policy for this scenario, you should consider the following information:
+In the following example, there are two production orders, PRD-001 and PRD-00*2*. Production order PRD-001 has an operation that is named **Assembly**, where product SC1 is being reported as finished to location O1. Production order PRD-002 has an operation that is named **Painting** and consumes product SC1 from location O1. Production order PRD-002 also consumes raw material RM1 from location O1. RM1 is stored in warehouse location BULK-001 and will be picked to location O1 by warehouse work for raw material picking. The picking work is generated when production PRD-002 is released. 
+
+[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+
+When you plan to configure a warehouse work policy for this scenario, you should consider the following information:
 
 -   Warehouse work for finished goods put-away isn’t required when you report product SC1 as finished from production order PRD-001 to location O1. This is because the **Painting** operation for production order PRD-002 consumes SC1 at the same location.
 -   Warehouse work for raw material picking is required in order to move raw material RM1 from warehouse location BULK-001 to location O1.
@@ -73,7 +77,9 @@ Here is an example of the work policy that you can set up, based on these consid
 The following procedures provide step-by-step instructions about how to set up the warehouse work policy for this scenario. A sample setup showing how to report a production order as finished to a location that isn’t license plate–controlled is also described.
 
 ## Set up a warehouse work policy
-Warehouse processes don’t always include warehouse work. By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations. The USMF demo data company was used to create this procedure. STEPS (21)
+Warehouse processes don’t always include warehouse work. By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations. The USMF demo data company was used to create this procedure. 
+
+STEPS (21)
 
 |     |                                                                            |
 |-----|----------------------------------------------------------------------------|
@@ -104,17 +110,11 @@ This procedure shows an example of reporting as finished to a location that isn'
 
 **Sub-task: Set up an output location.**
 
-1.
+1. Go to Organization administration &gt; Resources &gt; Resource groups.
 
-Go to Organization administration &gt; Resources &gt; Resource groups.
+2. In the list, select resource group '5102'.
 
-2.
-
-In the list, select resource group '5102'.
-
-3.
-
-Click Edit.
+3. Click Edit.
 
 4.
 
