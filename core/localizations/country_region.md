@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Country/region-specific Help content
-description: This topic lists Help content for country/region-specific functionality in Dynamics 365 for Operations. 
+title: Localization and regulatory features
+description: This topic includes lists of resources that can help you learn more about country/region-specific functionality.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-07-26 15 - 06 - 12
+ms.date: 2017-03-23
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -59,7 +59,7 @@ The Electronic reporting (ER) tool allows you to configure formats for electroni
 -   [Set up Electronic reporting with Power BI](/dev-itpro/analytics-bi-reporting/general-electronic-reporting-report-configuration-get-data-powerbi)
 
 ## Country/region specific help topics
-The following sections list help topics by country/region.
+The following sections list resources by country/region.
 
 ### Australia
 
@@ -80,25 +80,11 @@ The following sections list help topics by country/region.
 
 ### Brazil
 
+-   [Brazilian taxes](/financials/localizations/latin-america/bra-calculate-taxes)
 -   [Examples - Journals generated during the electronic payment return process for Brazil](/financials/localizations/latin-america/bra-examples-journals-generated-electronic-payment-return-process)
+-   [Fiscal books overview](/financials/localizations/latin-america/bra-fiscal-books)	
 -   [NF-e process overview](/financials/localizations/latin-america/bra-nf-e-process)
 -   [Parameters for legal entities in Brazil](/financials/localizations/latin-america/brazilian-legal-entity-parameters)
--   [Brazilian taxes](/financials/localizations/latin-america/bra-calculate-taxes)
--   [Tax attributes](/financials/localizations/latin-america/bra-tax-attributes)
--   [Tax payments](/financials/localizations/latin-america/tax-payments)
-
-#### Fiscal books
-
--   [Fiscal books overview](/financials/localizations/latin-america/bra-fiscal-books)	
--   [ICMS tax fiscal documents](/financials/localizations/latin-america/bra-icms-tax-fiscal-documents)			
--   [Import fiscal documents](/financials/localizations/latin-america/bra-import-fiscal-documents)
--   [Import and verify NF-e XML documents and DANFE files](/financials/localizations/latin-america/bra-import-verify-nf-e-xml-documents-danfe-emails)
--   [Fiscal documents](/financials/localizations/latin-america/bra-fiscal-documents-fiscal-document-framework)	
--   [Fiscal document text placeholders](/financials/localizations/latin-america/bra-fiscal-document-text-placeholders)					
--   [Purchase complementary fiscal documents](/financials/localizations/latin-america/bra-purchase-complementary-fiscal-documents)	
--   [Referenced fiscal documents](/financials/localizations/latin-america/referenced-fiscal-documents)			
--   [Sales complementary fiscal documents](/financials/localizations/latin-america/bra-sales-complementary-fiscal-documents)			
--   [Service electronic fiscal document](/financials/localizations/latin-america/service-electronic-fiscal-document)	
 
 ### China
 -   [Bill of materials comparison](/financials/localizations/asia-pacific/chn-bom-comparison)
@@ -132,7 +118,6 @@ The following sections list help topics by country/region.
 
 ### Europe
 -   [Advance holders](/financials/localizations/europe/advance-holders)
-    -   [Advance holder transactions](/financials/localizations/europe/advance-holders-transactions)
 -   [EU Entry certificates](/financials/localizations/europe/entry-certificates)
 -   [EU Sales list reporting](/financials/localizations/europe/eu-sales-list)
 -   [File formats for methods of payment](/financials/localizations/europe/select-file-formats-for-the-method-of-payments)
@@ -157,15 +142,13 @@ The following sections list help topics by country/region.
 -   [NAF codes and siret numbers](/financials/localizations/europe/naf-codes-siret-numbers)
 -   [Penalties for past due customer payments in France](/financials/localizations/europe/apply-penalty-customer-payment-past-due)
 -   [Print lump sum recovery text on a customer invoice](/financials/localizations/europe/configure-print-lump-sum-recovery-text-customer-invoice)
+-   Public sector
+    -   [Commitments in the public sector](/financials/localizations/europe/commitments-public-sector-france)
+    -   [Mandats de paiement in the public sector](/financials/localizations/europe/mandats-de-paiement-public-sector-france)
+    -   [Public sector accounting](/financials/localizations/europe/public-sector-accounting-france)
+    -   [Titres de recette](/financials/localizations/europe/titres-de-recette-public-sector-france)
+    -   [Vendor invoice payment holds](/financials/localizations/europe/vendor-invoice-payment-holds-public-sector-france)
 -   [RB/SL depreciation](/financials/localizations/europe/rbsl-depreciation)
-
-#### Public Sector in France
--   [Commitments in the public sector](/financials/localizations/europe/commitments-public-sector-france)
--   [Mandats de paiement in the public sector](/financials/localizations/europe/mandats-de-paiement-public-sector-france)
--   [Public sector accounting](/financials/localizations/europe/public-sector-accounting-france)
--   [Titres de recette](/financials/localizations/europe/titres-de-recette-public-sector-france)
--   [Vendor invoice payment holds](/financials/localizations/europe/vendor-invoice-payment-holds-public-sector-france)
-
 
 ### Germany
 -   [Additional acquisition depreciation](/financials/localizations/europe/additional-acquisition-depreciation)
@@ -192,16 +175,15 @@ The following sections list help topics by country/region.
 
 -   [Bank payment fees covered by vendors](/financials/localizations/asia-pacific/bank-payment-fees-vendors)
 -   [Consolidated invoices](/financials/localizations/asia-pacific/consolidate-invoices)
+-   Fixed assets
+    -   [Allocation rules for fixed assets](/financials/localizations/asia-pacific/allocation-rules-fixed-assets)
+    -   [Equally divided depreciation method](/financials/localizations/asia-pacific/equally-divided-depreciation-method)
+    -   [Fixed asset depreciation](/financials/localizations/asia-pacific/fixed-asset-depreciation-japan)
+    -   [Fixed asset impairment management on cash generating unit](/financials/localizations/asia-pacific/fixed-asset-impairment-accounting-cash-generate-unit)
+    -   [Set up asset retirement obligation for fixed assets](/financials/localizations/asia-pacific/set-up-asset-retirement-obligation-fixed-assets)
+    -   [Set up reduction entries for fixed assets](/financials/localizations/asia-pacific/set-up-reduction-entry-fixed-assets)
 -   [Pay a vendor by endorsing a bill of exchange](/financials/localizations/asia-pacific/pay-vendor-endorse-bill-of-exchange)
 -   [Progressive withholding tax calculation](/financials/localizations/asia-pacific/japan-progressive-withholding-tax-calculation)
-
-#### Fixed assets for Japan
--   [Allocation rules for fixed assets](/financials/localizations/asia-pacific/allocation-rules-fixed-assets)
--   [Equally divided depreciation method](/financials/localizations/asia-pacific/equally-divided-depreciation-method)
--   [Fixed asset depreciation](/financials/localizations/asia-pacific/fixed-asset-depreciation-japan)
--   [Fixed asset impairment management on cash generating unit](/financials/localizations/asia-pacific/fixed-asset-impairment-accounting-cash-generate-unit)
--   [Set up asset retirement obligation for fixed assets](/financials/localizations/asia-pacific/set-up-asset-retirement-obligation-fixed-assets)
--   [Set up reduction entries for fixed assets](/financials/localizations/asia-pacific/set-up-reduction-entry-fixed-assets)
 
 ### Latvia
 
