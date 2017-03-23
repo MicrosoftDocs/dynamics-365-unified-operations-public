@@ -38,7 +38,7 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 
 **Product offering: Dynamics 365, Enterprise Edition** 
 
-Minimum seats: **250** combined eligible App or Plan user subscription licenses
+Minimum seats: 250 combined eligible App or Plan user subscription licenses
 Eligible SKUs, apps, or plans:
 -   Sales
 -   Field Service
@@ -47,13 +47,14 @@ Eligible SKUs, apps, or plans:
 -   Plan 1
 -   Plan 2, with the plan to implement Sales, Field Service, Customer Service, Project Service Automation apps.
 
-Minimum seats: **150** combined eligible App or Plan user subscription licenses
+Minimum seats: 150 combined eligible App or Plan user subscription licenses
 Eligible SKUs, apps, or plans:
 -   Operations
 -   Plan 2, with the plan to implement the Operations app. 
 
-**Dynamics CRM Online**
-Minimum seats: **250** combined eligible SKUs
+**Product offering: Dynamics CRM Online**
+
+Minimum seats: 250 combined eligible SKUs
 Eligible SKUs, apps, or plans:
 -   Enterprise
 -   Professional
