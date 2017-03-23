@@ -26,8 +26,8 @@
 ## [Evaluate the results of a questionnaire](questionnaire/evaluate-questionnaire-results.md)
 # United States features
 ## Workplace safety and compliance
-### [Form I-9 employment verification](/localizations/north-america/form-i-9-verification.md)
-### [Comply with the ADA](/localizations/north-america/usa-comply-with-the-americans-with-disabilities-act.md)
+### [Form I-9 employment verification](Dynamics-365-Operations/hr/localizations/north-america/form-i-9-verification.md)
+### [Comply with the ADA](Dynamics-365-Operations/hr/localizations/north-america/usa-comply-with-the-americans-with-disabilities-act.md)
 ## [Payroll](localizations/north-america/payroll.md)
 ### Payroll setup
 #### [Set up payroll for workers](localizations/north-america/worker-position-payroll-tasks.md)
