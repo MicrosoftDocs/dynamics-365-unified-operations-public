@@ -37,66 +37,19 @@ This article provides a list of the data entities that are available for the Pro
 Available data entities
 -----------------------
 
-Suggested sequence
-
-Entity name
-
-Area
-
-Entity type
-
-Dependency
-
-Comments
-
 **25.1.001 PRC - Production Calendars**
 
-1
-
-Working time templates
-
-Production control
-
-Setup
-
-None
-
-2
-
-Calendar
-
-Production control
-
-Setup
-
-Working time templates
-
-3
-
-Working times
-
-Production control
-
-Setup
-
-Calendar
-
-4
-
-Working time
-
-Production control
-
-Setup
-
-Working times
-
-Keep **Skip Staging** set to **OFF**.
+| Suggested sequence | Entity name            | Area               | Entity type | Dependency             | Comments                      |
+|--------------------|------------------------|--------------------|-------------|------------------------|-------------------------------|
+| 1                  | Working time templates | Production control | Setup       | None                   |                               |
+| 2                  | Calendar               | Production control | Setup       | Working time templates |                               |
+| 3                  | Working times          | Production control | Setup       | Calendar               |                               |
+| 4                  | Working time           | Production control | Setup       | Working times          | Keep Skip Staging set to OFF. |
 
 See also
 --------
 
 [Data entities and packages framework](data-entities-data-packages.md)
 
-[Data entities home page](data-entities.md)
+[Data entities](data-entities.md)
 
