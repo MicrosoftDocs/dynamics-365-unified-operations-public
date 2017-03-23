@@ -90,12 +90,19 @@ This topic describes how to upgrade an older source database to the latest Dyna
 ## Download the DataUpgrade.zip script
 To obtain the latest DataUpgrade.zip package, from your target environment that is running the latest Dynamics 365 for Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
 
-1.  In LCS, in the **Environments** section, click your target Dynamics 365 for Operations environment, scroll to the bottom of the page, and then click the **Application binary updates** tile. **Note:** If the Application binary updates tile shows zero updates available then use the DataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 and the Application binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
+1.  In LCS, in the **Environments** section, click your target Dynamics 365 for Operations environment, scroll to the bottom of the page, and then click the **Application binary updates** tile. 
+
+> [!NOTE]
+> If the Application binary updates tile shows zero updates available then use the DataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 and the Application binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
+>
+
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 3.  On the next page, click **Download**.
 4.  After the package is downloaded, extract the contents, and go to the following directory to find the DataUpgrade.zip file (note that the version number in the path will vary): ..\\AOSServiceDSC\\Packages\\files\\dynamicsax-framework-bin.7.0.4127.24083.zip\\CustomDeployablePackage
 
-**Note:** Computers that are deployed from LCS will already have a DataUpgrade.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
+> [!NOTE]
+> Computers that are deployed from LCS will already have a DataUpgrade.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
+> 
 
 ## Remove encryption certification rotation
 1.  Extract the DataUpgrade.zip deployable package to C:\\Temp or a location of your choice.
