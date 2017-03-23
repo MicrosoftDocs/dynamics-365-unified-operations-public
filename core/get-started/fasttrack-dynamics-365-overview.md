@@ -236,7 +236,7 @@ The typical format is a one-hour Skype call. The recommended attendees include t
 
 ### Reporting and Business Intelligence (BI) guidance tech talk
 
-The Reporting and BI guidance tech talk is designed to provide guidance on leveraging key BI and reporting capabilities of Dynamics 365 for Operations. Key topics might include:
+The Reporting and BI guidance tech talk is designed to provide guidance on leveraging key analytics capabilities of Dynamics 365 for Operations. Key topics might include:
 
 -   Entity store
 -   Power Bi

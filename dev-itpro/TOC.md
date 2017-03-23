@@ -20,7 +20,7 @@
 
 # [System configuration](system-administration/TOC.md)
 
-# [Analytics BI & Reporting](analytics-bi-reporting/TOC.md)
+# [Analytics](analytics-bi-reporting/TOC.md)
 
 # Mobile apps
 ## [Install and configure the warehousing app ](/manufacturing/warehouse-management/install-configure-warehousing-app.md)
