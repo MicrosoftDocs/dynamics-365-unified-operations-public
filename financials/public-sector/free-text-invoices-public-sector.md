@@ -51,9 +51,16 @@ First make sure that the invoice is using the right billing classification. Only
 ## I can change some of the fields on my free text invoices all of the time, and I can change all of the fields some of the time. But some of the fields I can only change some of the time. What’s up with that?
 Settings on the billing code control whether you can change certain fields.
 
--   If the billing code on a free text invoice line doesn’t allow rate changes on the invoice, you can’t change the amount, the unit price, or the amount details on the line. **Tip**: If the **Billing code determines** field is set to unit price, you can’t change the unit price, but you can change the amount indirectly by changing the quantity.
+-   If the billing code on a free text invoice line doesn’t allow rate changes on the invoice, you can’t change the amount, the unit price, or the amount details on the line. 
+
+> [!TIP] 
+> If the **Billing code determines** field is set to unit price, you can’t change the unit price, but you can change the amount indirectly by changing the quantity.
+
 -   If the billing code on a free text invoice line doesn’t allow changes to the ledger accounts, you can’t change the accounting distributions on the line. You can change the main account that displays on the free text invoice line, but that change affects only what is displayed. Changing the main account does not affect the distributions.
--   When there’s a project associated with the invoice line, the billing code controls whether you can change the project ID, category, and ledger account. **Tip**: To change the ledger account for invoice lines related to projects, changes have to be allowed both on the billing code itself and on the Projects section of the Accounts receivable parameters page.
+-   When there’s a project associated with the invoice line, the billing code controls whether you can change the project ID, category, and ledger account. 
+
+> [!TIP] 
+> To change the ledger account for invoice lines related to projects, changes have to be allowed both on the billing code itself and on the Projects section of the Accounts receivable parameters page.
 
 To learn more about billing codes, see [Billing classifications and billing codes in the public sector](billing-classifications-billing-codes-public-sector.md).
 
