@@ -68,6 +68,7 @@ The following table show the fields that the import file must contain. Each fiel
 
 
 **Invoice section**
+
 | Field                                                | Details                                           |
 |------------------------------------------------------|---------------------------------------------------|
 | Invoice number                                       | Invoice number, 20-character limit                |
@@ -84,6 +85,7 @@ The following table show the fields that the import file must contain. Each fiel
 | Unit (Optional)                                      | Ten-character limit                               |
 |Line net amount                                       | Decimal values are allowed.                       |
 | Unit price (Optional)                                | Decimal values are allowed.                       |
+
 
 **Distributions section**
 | Field                                                | Details                                  |

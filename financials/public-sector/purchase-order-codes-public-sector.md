@@ -34,7 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about the codes and special messages that can be used with confirming purchase orders. A confirming purchase order bypasses the typical purchasing process.
 
-This article describes the purchase order codes functionality available for the public sector. You must first determine what your codes and messages will be. You can use the **Confirming PO codes** page to create codes and special messages that can be used with confirming purchase orders (POs). A confirming purchase order bypasses the typical purchasing process. For example, you must authorize an unplanned order by using a PO number at the time of a purchase, instead of by using a document that is provided before the item is required. After you set up the codes, you can assign the codes to purchase orders on the **All purchase orders** page. If you assign a confirming PO code to a purchase order on the **Unplanned purchases** FastTab (for example, when you create a new purchase order), the message that is associated with the confirming PO code will be printed at the top of the purchase order.
+This article describes the purchase order codes functionality available for the public sector. You must first determine what your codes and messages will be. You can use the **Confirming PO codes** page to create codes and special messages that can be used with confirming purchase orders (POs). A confirming purchase order bypasses the typical purchasing process. For example, you must authorize an unplanned order by using a PO number at the time of a purchase, instead of by using a document that is provided before the item is required. 
+
+After you set up the codes, you can assign the codes to purchase orders on the **All purchase orders** page. 
+
+If you assign a confirming PO code to a purchase order on the **Unplanned purchases** FastTab (for example, when you create a new purchase order), the message that is associated with the confirming PO code will be printed at the top of the purchase order.
 
 ## Tips
 -   If you change a confirming PO code that was already assigned to a purchase order, the new code will replace the old code. This change affects both new purchase orders and purchase orders that have been posted. For example, a purchase order had a confirming PO code of **Confirming** when it was posted, but that code is later changed to **Emergency**. In this case, every purchase order that had the **Confirming** code will now have the **Emergency** code instead.
