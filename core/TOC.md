@@ -64,7 +64,7 @@
 ## [Configure a parallel branch](organization-administration/configure-parallel-branch-workflow.md)
 ## [Configure workflow properties](organization-administration/configure-workflow-properties.md)
 
-# [Analytics and reporting (link to technical content)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
+# [Analytics and reporting (link to technical content)](/dynamics365/operations/dev-itpro/analytics/bi-reporting-home-page)
 
 # [Data entities (link to technical content)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
 
