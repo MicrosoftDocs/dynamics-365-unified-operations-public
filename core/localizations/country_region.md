@@ -50,13 +50,13 @@ The following resources provide information about planned and new localization f
 
 ## Electronic reporting
 The Electronic reporting (ER) tool allows you to configure formats for electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For more information, refer to one of the following topics:
--   [Electronic reporting overview](/dev-itpro/analytics/general-electronic-reporting)
--   [Manage the Electronic reporting configuration lifecycle](/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle)
--   [Create an Electronic reporting configuration](/dev-itpro/analytics/electronic-reporting-configuration)
--   [Extend the list of Electronic reporting functions](/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension)
--   [Electronic reporting destinations](/dev-itpro/analytics/electronic-reporting-destinations)
--   [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
--   [Set up Electronic reporting with Power BI](/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi)
+-   [Electronic reporting overview](/dev-itpro/analytics-bi-reporting/general-electronic-reporting)
+-   [Manage the Electronic reporting configuration lifecycle](/dev-itpro/analytics-bi-reporting/general-electronic-reporting-manage-configuration-lifecycle)
+-   [Create an Electronic reporting configuration](/dev-itpro/analytics-bi-reporting/electronic-reporting-configuration)
+-   [Extend the list of Electronic reporting functions](/dev-itpro/analytics-bi-reporting/general-electronic-reporting-formulas-list-extension)
+-   [Electronic reporting destinations](/dev-itpro/analytics-bi-reporting/electronic-reporting-destinations)
+-   [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
+-   [Set up Electronic reporting with Power BI](/dev-itpro/analytics-bi-reporting/general-electronic-reporting-report-configuration-get-data-powerbi)
 
 ## Country/region specific help topics
 The following sections list help topics by country/region.
