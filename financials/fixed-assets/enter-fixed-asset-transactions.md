@@ -53,7 +53,7 @@ When a purchase order or the Inventory to fixed assets journal is used to acquir
 Any fixed asset transaction type can be posted in the General journal page. You can also use journals in Fixed assets to post fixed asset transactions.
 
 ## Options for entering fixed asset transaction types
-### 
+
 
 | Transaction type                    | Module                   | Options                                   |
 |-------------------------------------|--------------------------|-------------------------------------------|
