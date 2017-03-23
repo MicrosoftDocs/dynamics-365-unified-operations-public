@@ -40,7 +40,10 @@ Factors are the percentages that are used to depreciate assets. When you set up 
 -   In digressive depreciation, the amount of depreciation per period decreases over time.
 -   In straight line depreciation, the depreciation is the same in each period.
 
-The rules and examples that follow indicate how you can set up factors for each type of depreciation. **Note:** When you select **Factor** in the **Method** field, the **Factor** field and the **Interval** field are displayed.
+The rules and examples that follow indicate how you can set up factors for each type of depreciation. 
+
+> [!NOTE] 
+> When you select **Factor** in the **Method** field, the **Factor** field and the **Interval** field are displayed.
 
 ## Progressive depreciation
 The value in the **Factor** field is more than **50**.
