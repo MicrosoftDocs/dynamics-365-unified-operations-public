@@ -40,7 +40,9 @@ Parameters control the general behavior in Fixed assets.
 
 Fixed asset groups let you group your assets and specify default attributes for every asset that is assigned to a group. Books are assigned to fixed asset groups. Books track the financial value of a fixed asset over time by using the depreciation configuration that is defined in the depreciation profile.
 
-Fixed assets are assigned to a group when they are created. By default, the books that are assigned to the fixed asset group are then assigned to the fixed asset. Books that are configured to post to the general ledger are associated with a posting profile. Ledger accounts are defined per book in the posting profile and are used when fixed asset transactions are posted.. ![FixedAssetsComponentsImage](./media/FAComponents_Updated.png)
+Fixed assets are assigned to a group when they are created. By default, the books that are assigned to the fixed asset group are then assigned to the fixed asset. Books that are configured to post to the general ledger are associated with a posting profile. Ledger accounts are defined per book in the posting profile and are used when fixed asset transactions are posted. 
+
+![FixedAssetsComponentsImage](./media/FAComponents_Updated.png)
 
 ## Depreciation profiles
 You should set up depreciation profiles first. In the depreciation profile, you configure how the value of an asset is depreciated over time. You must define the method of depreciation, the depreciation year (calendar year or fiscal year), and the frequency of depreciation.
@@ -60,7 +62,7 @@ You must define the ledger accounts that are used during the disposal processes,
 ## Fixed asset groups
 Fixed asset group is the only required field when you create a fixed asset. The value of this field determines the default value of several informational fields for the asset. Books are set up so that a default book is assigned to each asset in a group. You can then set attributes for the books that are specific to a group of assets, such as Service life and Depreciation convention.
 
-You can also define special depreciation allowances, or bonus depreciation, for a specific combination of a fixed asset group and a book. You must assign a priority to the special depreciation allowance to specify the order that allowances are calculated in when multiple allowances are assigned to a book
+You can also define special depreciation allowances, or bonus depreciation, for a specific combination of a fixed asset group and a book. You must assign a priority to the special depreciation allowance to specify the order that allowances are calculated in when multiple allowances are assigned to a book.
 
 ## Fixed asset parameters
 The last step is to update the fixed asset parameters.
