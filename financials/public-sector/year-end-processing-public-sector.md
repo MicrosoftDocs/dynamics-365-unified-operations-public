@@ -41,16 +41,16 @@ This topic describes the year-end functionality available for the public sector
 -   Set up year-end closing for all funds and non-funds. Non-funds don't have a fund dimension in the account structure.
 -   Set up multiple closing periods to segregate different types of closing entries, such as general year-end closing and audit adjustments.
 
-## Can the yearend process be run more than one time on the same data?
+## Can the year-end process be run more than one time on the same data?
 Yes, the year-end process can be run multiple times for the same set of data. Typically, if additional transactions must be processed after a general ledger year-end process is run, the year-end process can be run again to close out the nominal accounts and correctly set the opening balances in the new year.
 
-## How do I set up funds for yearend processing?
+## How do I set up funds for year-end processing?
 Year-end processing of general ledger balances is controlled by fund configuration settings in two places:
 
 -   The year-end process of closing ledger balances in the old year and establishing opening balances in the new year is done by using the **Opening transactions** page. A single fund or range of funds is required for processing.
 -   The year-end processing option for purchase order encumbrances is set on the **Purchase order year-end process** page. You can override the option on a specific fund, provided that the general ledger parameters have been set to allow for overrides. To learn more about the parameter settings, see [General ledger in the public sector](general-ledger-public-sector.md).
 
-## How do I set up main accounts for yearend processing?
+## How do I set up main accounts for year-end processing?
 You must select a close type for every account in your chart of accounts. The close type determines how the year-end process handles that main account. There are four close types:
 
 -   **Real** – The balance is used to establish opening balances in the new year.
