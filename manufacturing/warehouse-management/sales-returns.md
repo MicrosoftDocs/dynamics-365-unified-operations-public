@@ -111,11 +111,6 @@ An important step in the return order process is the assignment of a disposition
 In addition to determining how the returned goods are disposed of, disposition codes can cause charges to be applied to the return line. They can also be used to group returns for statistical analysis. Disposition codes are defined as part of the setup of return orders. However, each disposition code must reference one of the built-in disposition actions. The following table lists the built-in disposition codes and their actions. **Important:** If an item should not be returned, but the customer should still be credited, assign the **Credit only** disposition code to the return line.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Disposition code</th>
