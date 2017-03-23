@@ -63,13 +63,11 @@ For example, if you select Yearly, the yearly depreciation is posted only one ti
 
 If you select Fiscal in the Depreciation year field, the straight line depreciation method is used. It is calculated based on the fiscal year, which is set up in the Fiscal calendars page for the fiscal calendar that is selected in the Ledger page. For example, for fiscal year July 1 through June 30, the depreciation calculation starts on July 1. The fiscal year can be longer or shorter than 12 months. The depreciation is adjusted for each fiscal period. The length of the next fiscal year is based on the fiscal periods that you set up when you create a new fiscal year in the Fiscal calendars page.
 
-> [!NOTE] 
-> You can select a fiscal calendar for a value model in the Value models page. You can select a fiscal calendar for a depreciation book in the Depreciation books page. 
 
 If you select Fiscal, the following options are available in the Period frequency field:
 
 -   Yearly posts the total amount of the depreciation calculated for the fiscal year as one amount on the last day of the fiscal year.
--   Fiscal period posts the total amount of the depreciation calculated for the fiscal year, which is accrued into the fiscal periods that are defined for the fiscal calendar that is selected in the Ledger page, or for the fiscal calendar that is selected for the value model or depreciation book for a fixed asset.
+-   Fiscal period posts the total amount of the depreciation calculated for the fiscal year, which is accrued into the fiscal periods that are defined for the fiscal calendar that is selected in the Ledger page, or for the fiscal calendar that is selected for the book for a fixed asset.
 
 ## Example of reducing balance depreciation
 
