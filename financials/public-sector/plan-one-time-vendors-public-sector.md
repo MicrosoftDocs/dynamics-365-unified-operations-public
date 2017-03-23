@@ -3,7 +3,7 @@
 
 title: Plan for one-time vendors in the public sector
 description: This article explains how to prepare to import and create multiple one-time vendors and invoices. 
-author: rschloma
+author: twheeloc
 manager: AnnBe
 ms.date: 2015-12-13 05 - 20 - 08
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: rschloma
+ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27251
@@ -90,7 +90,7 @@ Federal tax ID (Optional)
 
 Tax ID type
 
-(U.S. only) Values can be **Unknown**, **Employer Identification Number**, **Social Security Number**, **Individual Taxpayer Identification Number**, or **Adopted Tax Payer Identification Number**.**Note:** If no federal tax ID is provided, this field should be set to **Unknown**.
+(U.S. only) Values can be **Unknown**, **Employer Identification Number**, **Social Security Number**, **Individual Taxpayer Identification Number**, or **Adopted Tax Payer Identification Number**. **Note:** If no federal tax ID is provided, this field should be set to **Unknown**.
 
 Bank account (Optional)
 
@@ -132,7 +132,7 @@ Line number
 
 Item number (Optional)
 
-20-character limit**Note:** If no item number is provided, you must provide values in the **Procurement category** and **Procurement category hierarchy** fields. If no procurement category and procurement category hierarchy are provided, you must provide a value in the **Item number** field.
+20-character limit **Note:** If no item number is provided, you must provide values in the **Procurement category** and **Procurement category hierarchy** fields. If no procurement category and procurement category hierarchy are provided, you must provide a value in the **Item number** field.
 
 Item name (Optional)
 
