@@ -36,7 +36,8 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 
 ## Eligibility: Microsoft FastTrack for Dynamics 365
 
-**Product offering: Dynamics 365, Enterprise Edition**
+**Product offering: Dynamics 365, Enterprise Edition** 
+
 Minimum seats: **250** combined eligible App or Plan user subscription licenses
 Eligible SKUs, apps, or plans:
 -   Sales
@@ -58,8 +59,8 @@ Eligible SKUs, apps, or plans:
 -   Professional
 -   Basic
 
-[!NOTE]
-2.5 device subscription licenses are considered the equivalent of one Dynamics 365 for Operations user subscription license.
+> [!NOTE]
+> 2.5 device subscription licenses are considered the equivalent of one Dynamics 365 for Operations user subscription license.
 
 ## Overview: Microsoft FastTrack for Dynamics 365
 During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assistance in removing blockers during implementation through the following interactions:
