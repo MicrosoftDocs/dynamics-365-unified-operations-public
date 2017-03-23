@@ -66,7 +66,7 @@ The Microsoft Service Engineering team will take your environment offline, compl
     -   Reschedule the request by clicking the ID, or by selecting the request and then clicking **Reschedule** on the toolbar. You can then change the downtime windows dates and times, and the point in time to restore to.
     -   Cancel the request by selecting the request and then clicking **Cancel** on the toolbar.
 
-## Conditions of a pointintime restore
+## Conditions of a point-in-time restore
 Here is the list of requirements and conditions of operation for a point-in-time restore:
 
 -   Requests must be submitted 24 hours before the desired downtime window, to help guarantee that resources will be available to complete the request.
