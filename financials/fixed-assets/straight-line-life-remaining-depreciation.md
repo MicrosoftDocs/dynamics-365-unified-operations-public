@@ -41,7 +41,7 @@ You can select either **Calendar** or **Fiscal** in the **Depreciation year** fi
 
 ### Calendar
 
-If you select **Calendar** in the ****Depreciation year**** field, a year of January 1 through December 31 is assumed, even if you've defined the fiscal calendar differently. The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the salvage value. In the example later in this topic, the depreciation base is the numerator in the first expression in the calculations column. If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
+If you select **Calendar** in the ***Depreciation year*** field, a year of January 1 through December 31 is assumed, even if you've defined the fiscal calendar differently. The **Calendar** option updates the depreciation base on January 1 of each year. Typically, the depreciation base is the net book value minus the salvage value. In the example later in this topic, the depreciation base is the numerator in the first expression in the calculations column. If you select **Calendar** as the depreciation year, the following options are available in the **Period frequency** field:
 
 -   **Yearly** posts an amount on December 31.
 -   **Monthly** posts a monthly amount at the end of each calendar month.
