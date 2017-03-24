@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 2012
 
 This article explains how to deploy a Retail e-commerce dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services. 
 
-Prerequisites
+## Prerequisites
 -------------
 
 Before you can complete the procedures in this article, make sure that the following prerequisites are in place.
@@ -43,14 +43,14 @@ Before you can complete the procedures in this article, make sure that the follo
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
 
-1. Log on to Lifecycle Services
+## 1. Log on to Lifecycle Services
 
 Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use this website to deploy Dynamics AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Log on to Lifecycle Services](https://lcs.dynamics.com/en/)
 
-2. Create a project
+## 2. Create a project
 
 After you log in to Lifecycle Services, open an existing project, or create a new project. Projects are the key organizer of your experience in Lifecycle Services. The methodology associated with a project determines which phases and tasks are included in the project by default.
-3. Connect the project to your Azure subscription
+## 3. Connect the project to your Azure subscription
 
 Connect the Lifecycle Services project to your Azure subscription. This will enable Lifecycle Services to deploy a Dynamics AX 2012 R3 environment to the subscription. To connect the project to your Azure subscription, complete the following procedure.Keep in mind that a project can be connected to only one Azure subscription. If you have multiple Azure subscriptions, be sure to identify which subscription you want to use before you complete this procedure.
 1.  Click **Cloud-hosted environments**. The **Cloud-hosted environments** page is displayed.
@@ -75,7 +75,7 @@ Connect the Lifecycle Services project to your Azure subscription. This will ena
 8.  Select the region that is closest to you. The Dynamics AX  environment will be deployed to a datacenter in this region.
 9.  Click **Connect**.The project is now connected to the Azure subscription that you specified. If you discover that you connected the project to the wrong Azure subscription (that is, assuming you have multiple Azure subscriptions), you’ll need to delete the project, create a new project, and then repeat this procedure to connect the new project to the appropriate Azure subscription.
 
-## Deploy a Retail ecommerce dev/test environment on Azure
+## 4. Deploy a Retail ecommerce dev/test environment on Azure
 Complete the following procedure to deploy a Retail e-commerce dev/test environment on Azure.
 1.  On the **Cloud-hosted environments** page, click the **Add** (**+**) icon.
 2.  In the **Select environment topology** panel, select **Dev/test**.
@@ -166,7 +166,7 @@ Complete the following procedure to deploy a Retail e-commerce dev/test environm
 14. Click **Next**.
 15. Click **Deploy** to confirm that you’re ready to deploy the environment.The deployment may take a few hours to complete. When the deployment is done, the **Deployment** **Status** column on the **Cloud-hosted environments** page will display **Deployed**. (You may need to refresh your browser to see this.)If the deployment fails, you may see an error message right away. If the error occurs later in the deployment process, error details will be displayed in the details pane on the right-side of the page.
 
-## Prepare the Retail ecommerce dev/test environment for use
+## 5. Prepare the Retail ecommerce dev/test environment for use
 Now that the Retail e-commerce dev/test environment has been deployed on Azure, you can connect it to your Dynamics AX environment that exists on-premises, or on Azure. See the following sections for more information.
 ### Prerequisites
 
@@ -181,7 +181,6 @@ Before you complete the following procedures, make sure that the following prere
 | Sync metadata for Commerce Data Exchange.                                                                                                                       | [Enter parameters for Retail Scheduler](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                              |
 | Create a new, or update an existing online store channel.                                                                                                       | [Set up an online store](https://technet.microsoft.com/EN-US/library/jj682095.aspx)                                                                                                                                                                                                                                         |
 
-### 
 
 ### Complete configuration tasks on the AOS server/virtual machine
 
@@ -199,37 +198,23 @@ From the **Cloud-hosted environments** page, select your Retail e-commerce dev/t
 ### Access the e-commerce site
 
 After you have completed the configuration procedures described above, you can access the e-commerce website at: http://:40002/sites/retailpublishingportal
-6. Learn more about the service accounts for this environment
+
+## 6. Learn more about the service accounts for this environment
 
 The following sections provide information about the service accounts that were created when you deployed the environment.
 ### Domain accounts
 
 The following table lists the default names of the domain accounts that were created when you deployed the environment.
-Domain account
-Description
-Password
-ContosoSQLServiceUser
-The account used to run the following services:
--   SQL Server Analysis Services (MSSQLSERVER)
 
-The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
-ContosoDynamicsInstallUser
-The account used to install Dynamics AX.
-ContosoSPServiceUser
-The account used to run the following services:
--   AppFabric Caching Service
--   SharePoint Search Host Controller
--   SharePoint Server Search 15
--   SharePoint Timer Service
--   SharePoint User Code Host
+| Domain account                  | Description                                                                                                                                                                                         |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|SQLServiceUser      | The account used to run the following services: SQL Server Analysis Services (MSSQLSERVER)                                                                                                          |
+| DynamicsInstallUser | The account used to install Dynamics AX.                                                                                                                                                            |
+| ContosoSPServiceUser            | The account used to run the following services: AppFabric Caching Service, SharePoint Search Host Controller, SharePoint Server Search 15, SharePoint Timer Service, and SharePoint User Code Host. |
+|RetailServiceUser   | The account used to run the following services: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client.                                                                               |
+| BCProxyUser         | The account used as the Business Connector proxy.                                                                                                                                                   |
 
-ContosoRetailServiceUser
-The account used to run the following services:
--   Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client
-
-ContosoBCProxyUser
-The account used as the Business Connector proxy.
-### 
+**Note: **The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
 
 ### Local administrator accounts
 
