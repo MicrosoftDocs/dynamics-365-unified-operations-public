@@ -35,6 +35,7 @@ ms.dyn365.ops.version: 2012
 
 
 You can use the Configuration manager (beta) functionality in Microsoft Dynamics Lifecycle Services to copy a configuration from one instance of Microsoft Dynamics AX 2012 R3 to another.
+
 | **Important**                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments. |
