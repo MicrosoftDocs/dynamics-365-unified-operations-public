@@ -37,9 +37,6 @@ Packing material fees are paid to a recycling company at certain intervals. An a
 Packing material weights and fees are calculated for sales order lines and for purchase order lines.
 
 You can define one or more packing units for an item, for a packing group of items, or for all items. A packing unit consists of the packing materials, their weights, and the number of items that are included in the packing unit. A packing material code is assigned to each type of packing material that is defined. Based on the packing material code, you can specify a price for a specified period. The packing material fee is calculated based on this information.
-> [!NOTE]
-
-> Even if your company does not pay packing material fees, you can use the functionality to calculate statistics for the weights of packing materials.
 
 | **Note**                                                                                                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -60,13 +57,12 @@ When you create a sales order line, the system checks to see whether packing uni
 Packing material transactions for a purchase order line are not created by the system. You create transactions for invoiced purchase order lines manually in the **Packing material transactions** page.
 
 ## Set up customer packagingmaterialfee license numbers
-If the customers pay the packaging material fees, specify the customers' packaging-material-fee license numbers in the **Customers** page. When a license number has been assigned to a customer, the packaging material fees are calculated automatically when sales orders are invoiced. After invoicing, the **Calculate fee** check box is cleared in the **Packing material transactions** page, because you do not have to calculate and print a report. You can print the packaging material weights on the invoice, and inform the customers that they pay the fees. If your company pays the packaging material fees, do not specify the customer license numbers. After invoicing, the **Calculate fee** check box is selected in the **Packing material transactions** page. This indicates that the fees are calculated when a report is created. You can print the weights on the invoice, and indicate that your company pays the fees.
-Print packaging material weights on invoices
---------------------------------------------
+If the customers pay the packaging material fees, specify the customers' packaging-material-fee license numbers in the **Customers** page. When a license number has been assigned to a customer, the packaging material fees are calculated automatically when sales orders are invoiced. After invoicing, the **Calculate fee** check box is cleared in the **Packing material transactions** page, because you do not have to calculate and print a report. You can print the packaging material weights on the invoice, and inform the customers that they pay the fees. 
 
+If your company pays the packaging material fees, do not specify the customer license numbers. After invoicing, the **Calculate fee** check box is selected in the **Packing material transactions** page. This indicates that the fees are calculated when a report is created. You can print the weights on the invoice, and indicate that your company pays the fees.
+
+## Print packaging material weights on invoices
 You can print the packaging material weights on the invoice, and indicate who pays the packaging material fees. The weights are summarized by packaging code.
  
--
-
 
 
