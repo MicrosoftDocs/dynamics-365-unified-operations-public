@@ -43,14 +43,14 @@ Before you can complete the procedures in this article, make sure that the follo
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
 
-## 1. Log on to Lifecycle Services
+1. Log on to Lifecycle Services
+
 Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use this website to deploy Dynamics AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Log on to Lifecycle Services](https://lcs.dynamics.com/en/)
+
 2. Create a project
--------------------
 
 After you log in to Lifecycle Services, open an existing project, or create a new project. Projects are the key organizer of your experience in Lifecycle Services. The methodology associated with a project determines which phases and tasks are included in the project by default.
 3. Connect the project to your Azure subscription
--------------------------------------------------
 
 Connect the Lifecycle Services project to your Azure subscription. This will enable Lifecycle Services to deploy a Dynamics AX 2012 R3 environment to the subscription. To connect the project to your Azure subscription, complete the following procedure.Keep in mind that a project can be connected to only one Azure subscription. If you have multiple Azure subscriptions, be sure to identify which subscription you want to use before you complete this procedure.
 1.  Click **Cloud-hosted environments**. The **Cloud-hosted environments** page is displayed.
@@ -75,7 +75,7 @@ Connect the Lifecycle Services project to your Azure subscription. This will ena
 8.  Select the region that is closest to you. The Dynamics AX  environment will be deployed to a datacenter in this region.
 9.  Click **Connect**.The project is now connected to the Azure subscription that you specified. If you discover that you connected the project to the wrong Azure subscription (that is, assuming you have multiple Azure subscriptions), you’ll need to delete the project, create a new project, and then repeat this procedure to connect the new project to the appropriate Azure subscription.
 
-## 4. Deploy a Retail ecommerce dev/test environment on Azure
+## Deploy a Retail ecommerce dev/test environment on Azure
 Complete the following procedure to deploy a Retail e-commerce dev/test environment on Azure.
 1.  On the **Cloud-hosted environments** page, click the **Add** (**+**) icon.
 2.  In the **Select environment topology** panel, select **Dev/test**.
@@ -166,11 +166,12 @@ Complete the following procedure to deploy a Retail e-commerce dev/test environm
 14. Click **Next**.
 15. Click **Deploy** to confirm that you’re ready to deploy the environment.The deployment may take a few hours to complete. When the deployment is done, the **Deployment** **Status** column on the **Cloud-hosted environments** page will display **Deployed**. (You may need to refresh your browser to see this.)If the deployment fails, you may see an error message right away. If the error occurs later in the deployment process, error details will be displayed in the details pane on the right-side of the page.
 
-## 5. Prepare the Retail ecommerce dev/test environment for use
+## Prepare the Retail ecommerce dev/test environment for use
 Now that the Retail e-commerce dev/test environment has been deployed on Azure, you can connect it to your Dynamics AX environment that exists on-premises, or on Azure. See the following sections for more information.
 ### Prerequisites
 
 Before you complete the following procedures, make sure that the following prerequisites are in place.
+
 | Prerequisite                                                                                                                                                    | More information                                                                                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Set up and configure the Dynamics AX  application object server (AOS), database, and client.As mentioned, AX 2012 R3 may be installed on-premises, or on Azure. | [System setup for Microsoft Dynamics AX](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                             |
@@ -199,7 +200,6 @@ From the **Cloud-hosted environments** page, select your Retail e-commerce dev/t
 
 After you have completed the configuration procedures described above, you can access the e-commerce website at: http://:40002/sites/retailpublishingportal
 6. Learn more about the service accounts for this environment
--------------------------------------------------------------
 
 The following sections provide information about the service accounts that were created when you deployed the environment.
 ### Domain accounts
