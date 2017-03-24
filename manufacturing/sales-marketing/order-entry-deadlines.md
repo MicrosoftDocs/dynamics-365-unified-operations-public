@@ -71,7 +71,7 @@ You're an order processor in Utah, where the time zone is MST (Mountain Standard
 
 The following table shows how the order entry deadlines for sites A and B are converted to MST time.
 
-| A: PST              | A: MST             | B: EST                | B: MST             |
+| Site A: PST         | Site A: MST        | Site B: EST           | Site B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 14:00                 | 12:00              |
 
@@ -99,7 +99,7 @@ You're an order processor in Utah, where the time zone is MST. Therefore, provid
 
 The following table shows how the order entry deadlines for sites A and B are converted to MST time.
 
-| A: PST              | A: MST             | B: EST                | B: MST             |
+| Site A: PST         | Site A: MST        | Site B: EST           | Site B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00               | 14:00              | 13:00                 | 11:00              |
 
