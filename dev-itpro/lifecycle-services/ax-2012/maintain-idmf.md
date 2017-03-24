@@ -186,6 +186,7 @@ The following tables provide descriptions for the controls in the **Configure th
 
 ## Alerts
 This command is used to configure the alerts functionality in IDMF. To receive an email alert, you must configure email parameters from the **Administer** &gt; **Email command**. On the toolbar, click **Alerts** to open the **Configure alerts** window. Select an alert event to generate an alert. The following table describes the alert events you can select.
+
 | Alert event    | Description                                                                                                                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Job start**  | Send an alert when a task starts. This option is selected by default.                                                                                                                                   |
@@ -532,6 +533,7 @@ This command lets you export selected information, such as master data tables, t
 
 ## Master data tables
 This command lets you classify selected tables as the master data tables. The master data synchronization task copies the master data tables from the production database to the archive database.
+
 | **Caution**                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|
 | When a master data table becomes part of an Archive Object, IDMF disables the master data table and does not replicate it, but does archive it. |
@@ -592,6 +594,7 @@ Recommended tables typically belong to the **TableGroup** types **Miscellaneous*
 ### Working with system tables and custom user tables
 
 The Microsoft Dynamics AX application uses certain tables for initialization of Application Object Server (AOS) and to maintain metadata. These tables are part of the Microsoft Dynamics AX database but do not appear in the Application Object Tree (AOT). IDMF considers these tables system tables. However, you may have created some custom tables in the Microsoft Dynamics AX database for integration purposes. These tables may not appear in the AOT. IDMF does not differentiate between the system tables and custom user tables. IDMF lists all system tables and custom user tables on the **System and custom user tables** tab. Review the tables, and make sure that all system tables are selected for data synchronization. You can deselect any custom user tables that are not required in the archive database. This list also includes top 100 tables, based on number of rows, with a **TableGroup** property of **Worksheet**, **WorkSheetHeader**, **WorkSheetLine**, **Transaction**, **TransactionLine**, **TransactionHeader**, or **Miscellaneous**. However, these tables are not selected by default. Determine whether you have to synchronize these tables with the archive database.
+
 | **Caution**                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | You must configure Application Object Server (AOS) to connect with the archive database to view archived transactions. If the system tables are not replicated properly, AOS cannot connect with the archive database. Be sure that users have only read access to the archive database. Modifying archived transactions causes data inconsistency. |
@@ -626,7 +629,6 @@ This section describes how to restore recycled records after a successful purge 
 
 **Caution:** Improper use of a Purge Object or the restoration of purged records can cause unexpected results, database corruption, and application downtime requiring full database and application recovery. You must exercise extreme caution and thoroughly test your recycling strategy in a test environment before working in the production environment.
 Delete recycled records
------------------------
 
 This section describes how to permanently delete recycled records after a successful purge task. A successful purge task is completed with the **Pass** status. The **Trace** pane in the **Status** workspace lists the number of records recycled in each table of the Purge Object. To permanently delete records from the recycled tables on the production database, follow these steps:
 1.  Back up the production and management databases.
