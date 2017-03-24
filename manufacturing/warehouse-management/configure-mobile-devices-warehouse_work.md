@@ -68,127 +68,131 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a 
 ## Configure menu items to create work for another worker or process
 You can set up a menu item that creates work for another worker after an initial action is performed on the mobile device. For example, when one worker uses a mobile device to receive an item, put-away work is created for another worker. To set up a menu item that creates work, on the **Mobile device menu items** page, in the **Mode** field, select **Work**. In the following table, the options in the **Work creation process** field are arranged by work order type.
 
-Work order type
+<table>
+<tbody>
+<tr>
+<th>Work order type</th>
+<th>Option</th>
+<th>Description</th>
+</tr>
+<tr>
+<td rowspan="8">Purchase order</td>
+<td>Purchase order line receiving</td>
+<td>Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and create put-away work for another worker.</td>
+</tr>
+<tr>
+<td>Purchase order line receiving and put away</td>
+<td>Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and put the items away. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td>Purchase order item receiving</td>
+<td>Register the receipt of a quantity of an item for a purchase order by registering the purchase order number and item number, and create put-away work for another worker.</td>
+</tr>
+<tr>
+<td>Purchase order item receiving and put away</td>
+<td>Register the receipt of a quantity of an item for a purchase order by registering the purchase order number, and put the item away. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td>License plate receiving</td>
+<td>Receive an inbound load by using the license plate ID.</td>
+</tr>
+<tr>
+<td>License plate receiving and put away</td>
+<td>Receive and put away an inbound load by using the license plate ID.</td>
+</tr>
+<tr>
+<td>Load item receiving</td>
+<td>Register the receipt of a quantity for a load by using the load ID, and create put-away work for another worker. The item number and product dimensions match the receipt to the purchase order lines.</td>
+</tr>
+<tr>
+<td>Load item receiving and put away</td>
+<td>Register the receipt of a load by using the load ID, and put the items away. The item number and product dimensions match the receipt to the purchase order lines. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td rowspan="2">Return order</td>
+<td>Return order receiving</td>
+<td>Register the receipt of a quantity of an item by registering the RMA number, and create put-away work for another worker.</td>
+</tr>
+<tr>
+<td>Return order receiving and put away</td>
+<td>Register the receipt of a quantity of an item by registering the RMA number, and put the items away. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td rowspan="4">Transfer order</td>
+<td>Transfer order item receiving</td>
+<td>Register the receipt of a quantity of an item, and create put-away work for another worker.
 
-Option
+<strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes.</td>
+</tr>
+<tr>
+<td>Transfer order item receiving and put away</td>
+<td>Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.
 
-Description
+<strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes.</td>
+</tr>
+<tr>
+<td>Transfer order line receiving</td>
+<td>Register the receipt of a quantity of an item, and create put-away work for another worker.</td>
+</tr>
+<tr>
+<td>Transfer order line receiving and put away</td>
+<td>Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td rowspan="4">Production</td>
+<td>Report as finished</td>
+<td>Register a quantity of a finished item that has been finished for a production, and create put-away work for another worker. The quantity can be some or all of the quantity that was planned for production.</td>
+</tr>
+<tr>
+<td>Report as finished and put away</td>
+<td>Register a quantity of a finished item that has been finished for a production, and put the items away. The quantity can be some or all of the quantity that was planned for production. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td>Kanban</td>
+<td>Indicate that a kanban is completed, and create put-away work for another worker.</td>
+</tr>
+<tr>
+<td>Kanban put away</td>
+<td>Indicate that a kanban is completed, and put away the items. The same worker performs both actions.</td>
+</tr>
+<tr>
+<td rowspan="5">Inventory</td>
+<td>Movement</td>
+<td>Register that items have been moved from one location to another. The worker specifies the location that the items are moved from and where they are moved to.</td>
+</tr>
+<tr>
+<td>Quarantine</td>
+<td>Change the status of the on-hand inventory for a license plate or location to make damaged or missing inventory items unavailable.</td>
+</tr>
+<tr>
+<td>Movement by template</td>
+<td>Move items from one location to another in a semi-automated manner. The worker selects the location to move items from, and Microsoft Dynamics 365 for Operations uses the location directive to determine where to move the items to.</td>
+</tr>
+<tr>
+<td>Warehouse transfer</td>
+<td>Register that items have been transferred from one warehouse to another. This option requires that the worker be allowed to perform work in both warehouses.
 
-Purchase order
-
-Purchase order line receiving
-
-Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and create put-away work for another worker.
-
-Purchase order line receiving and put away
-
-Register the receipt of a quantity of an item by using the purchase order number and purchase order line number, and put the items away. The same worker performs both actions.
-
-Purchase order item receiving
-
-Register the receipt of a quantity of an item for a purchase order by registering the purchase order number and item number, and create put-away work for another worker.
-
-Purchase order item receiving and put away
-
-Register the receipt of a quantity of an item for a purchase order by registering the purchase order number, and put the item away. The same worker performs both actions.
-
-License plate receiving
-
-Receive an inbound load by using the license plate ID.
-
-License plate receiving and put away
-
-Receive and put away an inbound load by using the license plate ID.
-
-Load item receiving
-
-Register the receipt of a quantity for a load by using the load ID, and create put-away work for another worker. The item number and product dimensions match the receipt to the purchase order lines.
-
-Load item receiving and put away
-
-Register the receipt of a load by using the load ID, and put the items away. The item number and product dimensions match the receipt to the purchase order lines. The same worker performs both actions.
-
-Return order
-
-Return order receiving
-
-Register the receipt of a quantity of an item by registering the RMA number, and create put-away work for another worker.
-
-Return order receiving and put away
-
-Register the receipt of a quantity of an item by registering the RMA number, and put the items away. The same worker performs both actions.
-
-Transfer order
-
-Transfer order item receiving
-
-Register the receipt of a quantity of an item, and create put-away work for another worker. **Note:** Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes.
-
-Transfer order item receiving and put away
-
-Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions. **Note:** Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes.
-
-Transfer order line receiving
-
-Register the receipt of a quantity of an item, and create put-away work for another worker.
-
-Transfer order line receiving and put away
-
-Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.
-
-Production
-
-Report as finished
-
-Register a quantity of a finished item that has been finished for a production, and create put-away work for another worker. The quantity can be some or all of the quantity that was planned for production.
-
-Report as finished and put away
-
-Register a quantity of a finished item that has been finished for a production, and put the items away. The quantity can be some or all of the quantity that was planned for production. The same worker performs both actions.
-
-Kanban
-
-Indicate that a kanban is completed, and create put-away work for another worker.
-
-Kanban put away
-
-Indicate that a kanban is completed, and put away the items. The same worker performs both actions.
-
-Inventory
-
-Movement
-
-Register that items have been moved from one location to another. The worker specifies the location that the items are moved from and where they are moved to.
-
-Quarantine
-
-Change the status of the on-hand inventory for a license plate or location to make damaged or missing inventory items unavailable.
-
-Movement by template
-
-Move items from one location to another in a semi-automated manner. The worker selects the location to move items from, and Microsoft Dynamics 365 for Operations uses the location directive to determine where to move the items to.
-
-Warehouse transfer
-
-Register that items have been transferred from one warehouse to another. This option requires that the worker be allowed to perform work in both warehouses. **Note:** This menu item requires a default inventory transfer journal where the **Voucher draw** field is set to **Posting**.
-
-License plate loading
-
-Use this option when you're setting up your warehouse for the first time. Scan all the license plates in all locations in the warehouse. The locations must be license plate–controlled. You can't use this option if **Serial number** or **Batch number** is listed above **Location** in the inventory reservation hierarchy.
-
-Cycle count
-
-Adjustment in
-
-Increase the quantity of items in inventory. Specify the location, license plate, item, quantity, unit of measure, and status.
-
-Adjustment out
-
-Reduce the quantity of items in inventory. Specify the location, license plate, item, quantity, unit of measure, and status of the inventory.
-
-Spot cycle counting
-
-Start a count for a location. The worker must count all items in the location. When the result of a count is less than the expected quantity, the missing quantity is considered a loss.
+<strong>Note:</strong> This menu item requires a default inventory transfer journal where the <strong>Voucher draw</strong> field is set to <strong>Posting</strong>.</td>
+</tr>
+<tr>
+<td>License plate loading</td>
+<td>Use this option when you're setting up your warehouse for the first time. Scan all the license plates in all locations in the warehouse. The locations must be license plate–controlled. You can't use this option if <strong>Serial number</strong> or <strong>Batch number</strong> is listed above <strong>Location</strong> in the inventory reservation hierarchy.</td>
+</tr>
+<tr>
+<td rowspan="3">Cycle count</td>
+<td>Adjustment in</td>
+<td>Increase the quantity of items in inventory. Specify the location, license plate, item, quantity, unit of measure, and status.</td>
+</tr>
+<tr>
+<td>Adjustment out</td>
+<td>Reduce the quantity of items in inventory. Specify the location, license plate, item, quantity, unit of measure, and status of the inventory.</td>
+</tr>
+<tr>
+<td>Spot cycle counting</td>
+<td>Start a count for a location. The worker must count all items in the location. When the result of a count is less than the expected quantity, the missing quantity is considered a loss.</td>
+</tr>
+</tbody>
+</table>
 
 ## Configure menu items to process existing work
 In addition to setting up menu items to create warehouse work, you can set up menu items to process work that has already been created. Set the **Mode** field to **Work**, and select the **Use existing work** option. Some additional options then become available on the **General** tab. You can control access to the menu item by assigning one or more work classes on the **Work class** FastTab. The work classes define the work that the menu item can process. The work class can also be used to grant access to specific user roles or to separate processing for different types of operations. The following table describes the options that are available.
@@ -250,7 +254,9 @@ This option is useful when, for example, multiple pallets are staged for a load.
 </table>
 
 ## Additional menu item options
-Additional menu items options are available on the **Mobile device menu items** page. The options vary, depending on the process that you’re configuring the menu item for. The following table describes these options.
+Additional menu items options are available on the **Mobile device menu items** page. The options vary, depending on the process that you’re configuring the menu item for. 
+
+The following table describes these options.
 
 <table>
 <colgroup>
@@ -385,7 +391,9 @@ Additional menu items options are available on the **Mobile device menu items** 
 </table>
 
 ## Require workers to confirm the product, location, or quantity when they pick items
-You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when he or she performs work in the warehouse. Work confirmations help guarantee that the worker is at the correct location or is handling the correct quantity of items. You can also enable Microsoft Dynamics 365 for Operations to automatically confirm the worker’s registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device. The following table describes the various work types that you can use work confirmations with.
+You can set up work confirmations that require that a worker use a mobile device to register the location or quantity when he or she performs work in the warehouse. Work confirmations help guarantee that the worker is at the correct location or is handling the correct quantity of items. You can also enable Microsoft Dynamics 365 for Operations to automatically confirm the worker’s registration. If you enable automatic confirmation, you can't also require confirmations for location or quantity. Work confirmations also include products and product variants. Additionally, you can register confirmations by scanning a bar code. To confirm products and product variants, you must enter an ID for the product or product variant. This ID can be a product ID, product search ID, external ID, GTIN, or bar code. After you enter the ID or scan the bar code, the dimensions for the product variant are displayed on the mobile device. 
+
+The following table describes the various work types that you can use work confirmations with.
 
 | Option                 | Description                                                                |
 |------------------------|----------------------------------------------------------------------------|
