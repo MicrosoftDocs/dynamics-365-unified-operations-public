@@ -214,7 +214,7 @@ The following table lists the default names of the domain accounts that were cre
 |RetailServiceUser   | The account used to run the following services: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client.                                                                               |
 | BCProxyUser         | The account used as the Business Connector proxy.                                                                                                                                                   |
 
-**Note: **The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
+**Note:**The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
 
 ### Local administrator accounts
 
