@@ -100,6 +100,7 @@ The following tables provide descriptions for the controls in the **Add/Edit rul
 ### Walkthrough: Add or modify a rule in a Purge Object
 
 This section provides a walkthrough to add or modify a rule in a Purge Object.
+
 | **Caution**                                                                                                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | This walkthrough deletes and recreates an existing rule from the Purge Object for ease of learning. You must have an excellent understanding of the database design, data flow, process flow, and application functionality of the Microsoft Dynamics AX application to work with rules. An error can cause data corruption or application downtime requiring full database and application recovery. |
@@ -289,9 +290,8 @@ This command lets you import a Purge Object or an Archive Object in XML format. 
 
 ## Save
 This command lets you save a Purge Object, or save a newer version of an Archive Object. You must save a purge template as a Purge Object before you can use it in a purge task. You must save an archive template as an Archive Object before you can use it in an archive task. The archive function does not let you overwrite an existing Archive Object. When you save an archive template or an Archive Object, you always create a new version of the Archive Object. The archive task always uses the most recent version of the Archive Object you save. Working with different versions of Archive Objects is covered in a later section of this topic.
-Show versions
--------------
 
+##Show versions
 This command lets you work with different versions of an Archive Object. Use the following walkthrough to understand this functionality:
 1.  Click **Configure** &gt; **Archive templates/Archive Object** &gt; **BankDeposit** to open the **BankDeposit** Archive Object.
 2.  Review the Archive Object to make sure that the relationship hierarchy, tables, and rules that are contained in this Archive Object apply to your Microsoft Dynamics AX implementation.
