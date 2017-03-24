@@ -95,8 +95,8 @@ Microsoft Dynamics AX can help you maintain a safe work environment that’s in 
 
 You can design and administer questionnaires to gather information that’s used for a variety of purposes. The Questionnaire feature lets you design and create questionnaires. When a questionnaire is ready, you distribute it broadly or to a specific set of respondents to complete. After the respondents provide their answers, you can review and analyze the results.
 
--   [Questionnaires](Dynamics-365-Operations/hr/questionnaire/questionnaires.md)
--   [Design a questionnaire](Dynamics-365-Operations/hr/questionnaire/design-questionnaire.md)
--   [Distribute and complete a questionnaire](Dynamics-365-Operations/hr/questionnaire/distribute-questionnaires-md)
--   [View and evaluate the results of a questionnaire](Dynamics-365-Operations/hr/questionnaire/evaluate-questionnaire-results.md)
+-   [Questionnaires](/hr/questionnaire/questionnaires.md)
+-   [Design a questionnaire](/hr/questionnaire/design-questionnaires.md)
+-   [Distribute and complete a questionnaire](/hr/questionnaire/distribute-questionnaires.md)
+-   [View and evaluate the results of a questionnaire](/hr/questionnaire/evaluate-questionnaire-results.md)
 
