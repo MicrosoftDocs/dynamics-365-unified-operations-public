@@ -68,10 +68,12 @@ The setup for a public sector company uses the same data packages as the setup f
 
 **[General ledger](data-entities-general-ledger.md) and [Bank](data-entities-bank.md)**
 06.1.001 PubSect – Funds
+
 | Suggested sequence | Entity name | Area           | Entity type | Dependency | Comments                                                                    |
 |--------------------|-------------|----------------|-------------|------------|-----------------------------------------------------------------------------|
 | 17                 | Fund types  | General ledger | Setup       | None       | Categorization of funds. Categorization is typically completed by function. |
 | 18                 | Fund        | General ledger | Setup       | Fund types |                                                                             |
+ 
 | Suggested sequence | Package                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 19                 | 03.1.001 GL – Chart of accounts – Shared. Note: Activate financial dimensions, and then import the Financial dimension sets data entity again. To activate financial dimensions, click General ledger > Chart of accounts > Dimensions > Financial dimensions, and select Close on pop up. On the Action Pane, click Activate, and then, on the Activate financial dimensions page, click Activate. The posting type must be added to the Sales tax payable and Use tax payable main accounts. Click General ledger > Chart of accounts > Accounts > Main accounts, and open account 24800. On the Posting validation FastTab, in the Posting type field, select Sales tax. Repeat for this procedure for main account 24801. |
@@ -82,6 +84,7 @@ The setup for a public sector company uses the same data packages as the setup f
 
 06.1.002 PubSect – Posting definition setup
 If you’re using demo data, some records will fail in the Posting definition entry data entity because of a known issue.
+
 | Suggested sequence | Entity name                                   | Area           | Entity type | Dependency                       | Comments                                                                                                                                                                                                                     |
 |--------------------|-----------------------------------------------|----------------|-------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 24                 | Posting definition                            | General ledger | Setup       | None                             |                                                                                                                                                                                                                              |
@@ -93,16 +96,19 @@ If you’re using demo data, some records will fail in the Posting definition en
 | 30                 | Transaction posting definition Receivable     | General ledger | Setup       | Posting definition               | The association of the posting definition with the Receivable module                                                                                                                                                         |
 | 31                 | Transaction posting definition Budget         | General ledger | Setup       | Posting definition, Budget Setup | The association of the posting definition with the Budget module. Note: Budget setup is a dependency for the Transactional posting definition budget. Therefore, this data entity is included with the Budget setup package. |
 
+
 | Suggested sequence | Package                                                                                                                                                                                                                                                                                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 32                 | 03.1.006 GL – Allocations                                                                                                                                                                                                                                                                                                                                                                       |
 | 33                 | 03.1.007 BANK – Bank setup                                                                                                                                                                                                                                                                                                                                                                      |
 | 34                 | 03.1.008 BANK – Bank accounts. Note: If you’re using demo data, remove NSFJournalName from the Bank accounts data entity import file, and re-import Journal names. Then, on the Payment management tab, in the NSF payment journal field for bank accounts PSUS Oper and PSUS Payrol, select CustPay. NSFJournalName has been removed from the Bank accounts data entity in the package on LCS. |
 | 35                 | Re-import 03.1.005 – Ledger journals                                                                                                                                                                                                                                                                                                                                                            |
+
 06.8.001 PubSect – Advanced ledger entry lines
 If you’re using demo data, many records will fail because of dependencies on Project. After the Project master data entity is imported, import the Advanced ledger entry lines data entity again.
 
 Because of a known issue with demo data, the posting definition isn’t attached to many lines. The package on LCS has been modified.
+
 | Suggested sequence | Entity name                 | Area           | Entity type | Dependency                                | Comments                                                                              |
 |--------------------|-----------------------------|----------------|-------------|-------------------------------------------|---------------------------------------------------------------------------------------|
 | 36                 | Advanced ledger entry lines | General ledger | Transaction | General ledger setup, Posting definitions | The general ledger entry that is source document–enabled and uses posting definitions |
@@ -139,10 +145,13 @@ Because of a known issue with demo data, the posting definition isn’t attached
 | 57                 | 10.1.006 Tax – Sales tax setup. Note: Some records in Sales tax authorities and Sales tax period setup will fail because of dependencies on Vendors. You should re-import this package after the Vendors package has been imported. |
 | 58                 | 10.1.007 Tax – Sales tax code groups. Note: Some records in this package will fail because of dependencies on Vendors. You should re-import this package after the Vendors package has been imported.                               |
 | 59                 | 10.1.004 AP – Vendors                                                                                                                                                                                                               |
-| 60                 | 06.1.003 PubSect – Vendor certification types                                                                                                                                                                                       |
+| 60                 | 06.1.003 PubSect – Vendor certification types                                                                            
+|
+
 | Suggested sequence | Entity name                | Area             | Entity type | Dependency | Comments                                                                                                   |
 |--------------------|----------------------------|------------------|-------------|------------|------------------------------------------------------------------------------------------------------------|
 | 61                 | Vendor certification types | Accounts payable | Setup       | None       | Vendor attribute that are related to specific functions that are performed or certifications that are held |
+
 
 | Suggested sequence | Package                                        |
 |--------------------|------------------------------------------------|
@@ -163,6 +172,7 @@ If you’re implementing Accounts receivable but aren't using Accounts payable, 
 | 69                 | 11.1.003 AR – Customers                                                                                                                                                          |
 | 70                 | 11.1.004 AR – Accounts receivable parameters                                                                                                                                     |
 | 71                 | 06.1.004 PubSect – Billing classification and codes. Note: Records will fail because of dependencies on Interest codes and Collection. The package on LCS has not been modified. |
+
 | Suggested sequence | Entity name                                    | Area                | Entity type | Dependency                                                       | Comments                                                                                                                       |
 |--------------------|------------------------------------------------|---------------------|-------------|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | 72                 | Billing classification                         | Accounts Receivable | Setup       | Interest codes US and Collection letters                         | Setup data for classifying details such as the main account, to make it easier to create a group and, in turn, vendor invoices |
@@ -259,10 +269,12 @@ All General ledger data entities and the setup are a prerequisite for importing 
 | 126                | 23.1.013 PRO – Purchase agreement classification                                                                                                                                                                                 |
 
 06.1.005 PubSect – PO commitment
+
 | Suggested sequence | Entity name      | Area        | Entity type | Dependency | Comments                                     |
 |--------------------|------------------|-------------|-------------|------------|----------------------------------------------|
 | 127                | Confirming PO    | Procurement | Setup       | None       | Description of the types of PO confirmations |
 | 128                | Commitment lines | Procurement | Setup       | None       |                                              |
+
 
 | Suggested sequence | Package                                                                                                                                                                                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
