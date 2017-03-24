@@ -1,4 +1,4 @@
-# [Human Resources home page](human-resources-landing.md)
+# [Human resources home page](index.md)
 # Develop Human resources strategy
 ## [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
 ## [Set up job components](create-job.md)
