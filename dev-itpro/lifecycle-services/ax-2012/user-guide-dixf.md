@@ -45,7 +45,11 @@ Various versions of the Data Import/Export Framework are available. The version 
 | The versions of the Data Import/Export Framework in cumulative update 7 and Microsoft Dynamics AX 2012 R3 include functionality that is not available in the version that is available for download from LCS. For more information, see [Migrating data using the Data import/export framework (DIXF, DMF)](migrate-data-dixf.md). |
 
 ## Architecture
-The following diagram shows the architecture of the Data Import/Export Framework. ![Data Migration Framework architecture diagram](./media/dmfarchitecture.png) The Data Import/Export Framework creates a staging table for each entity in the Microsoft Dynamics AX database where the target table resides. Data that is being migrated is first moved to the staging table. There, you can verify the data, and perform any cleanup or conversion that is required. You can then move the data to the target table or export it.
+The following diagram shows the architecture of the Data Import/Export Framework. 
+
+![Data Migration Framework architecture diagram](./media/dmfarchitecture.png) 
+
+The Data Import/Export Framework creates a staging table for each entity in the Microsoft Dynamics AX database where the target table resides. Data that is being migrated is first moved to the staging table. There, you can verify the data, and perform any cleanup or conversion that is required. You can then move the data to the target table or export it.
 
 ## The Import/Export Process
 The following diagram shows the steps that are required to import or export data in Microsoft Dynamics AX. ![Data Migration Framework configuration diagram](./media/dmfconfiguration.png)
@@ -58,6 +62,7 @@ The following diagram shows the steps that are required to import or export data
 2.  Determine which entity to associate with the data. This entity is either the source of the export data or the target for the import data. You can use an existing entity or create a custom entity. For a list of available entities, see [Data import/export framework entities (DIXF, DMF)](entities-dixf.md). For information about how to create a custom entity, see [Create a custom target entity for the Data import/export framework (DIXF, DMF)](create-custom-target-entity-dixf.md).
 3.  Determine which entities should be imported or exported together, and put all these entities in a processing group. A processing group is a set of entities that must be processed in a sequence, or that can logically be grouped together. The entities in a processing group are exported together, or they are imported together from source to staging and then from staging to target. In a processing group, you also associate each entity with a source data format. For more information about how to create a processing group, see [Migrating data using the Data import/export framework (DIXF, DMF)](migrate-data-dixf.md).
 4.  Use the processing group options to either import or export data. For import, you first import the data to a staging table, where you can clean or transform the data as you require. You should validate that the data appears accurate, and that the reference data is mapped correctly. You then migrate the data from the staging table to the target table. You should validate that the entity appears accurate in the target table.
+
     | **Important**                                                                                                                                            |
     |----------------------------------------------------------------------------------------------------------------------------------------------------------|
     | The staging data might contain business information. Therefore, we strongly recommend that you delete the staging data after the migration is completed. |

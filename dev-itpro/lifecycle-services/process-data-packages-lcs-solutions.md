@@ -44,16 +44,30 @@ Before you create your data package, make a plan for what it should include. In 
 6.  Repeat steps 4 and 5 to add more entities to the project. **Note:** As you add each entity to the project, a tile appears that contains the entity's name and two buttons: **View map** and **Filter**. To automatically create a data package when you export the data project, set the **Generate data package** option to **Yes**. If you don't set this option, you can create a data package at the time of export.
 7.  On the Action Pane, click **Export**.
 8.  Click **Download**. The package is saved to the **Downloads** folder of the computer where the browser session is running. When you work with data packages, you must plan for and consider any prerequisites for the entities that will be included in the packages. For example, the customer groups are required in order to create customers. Therefore, you should either import the customer groups into a package before you import customers, or sequence customer groups within a data package that will be completed before customers are imported. For example, in the following illustration, sequencing is set within the data package. As you can see, the Customer groups entity and Customers entity are part of the Customers data project. [![Customers data project containing Customer groups and Customers entities](./media/pdp_03.png)](./media/pdp_03.png)
+
 9.  On the Action Pane, click **Entity sequence** to open the **Definition group entity sequence** page. Based on the current setup, the Customer groups entity and Customers entity are run at the same level. However, this sequence might not be ideal. [![Customer groups and Customers entities at the same execution level](./media/pdp_04.png)](./media/pdp_04.png)
-10. To create a better sequence, select the **Customers** entity, and then update the value of the **Execution unit** field from **1** to **2**. This change helps guarantee that customer groups are imported before the Customers entity is run. [![New sequence for the Customers and Customer groups entities](./media/pdp_05.png)](./media/pdp_05.png)
+
+10. To create a better sequence, select the **Customers** entity, and then update the value of the **Execution unit** field from **1** to **2**. This change helps guarantee that customer groups are imported before the Customers entity is run. 
+
+[![New sequence for the Customers and Customer groups entities](./media/pdp_05.png)](./media/pdp_05.png)
 
 Microsoft Dynamics Lifecycle Services (LCS) contains multiple base data packages that you can use to reduce implementation time. These packages contain the elements that are required in each module/area in order to meet the minimum requirements. For advanced business processes, you might have to add more entities to the list of packages. The data packages that Microsoft publishes on LCS use a numbering sequence that is based on the module, data type, and sequence. Here is an example:
 
--   Module/area number [![Module/area number](./media/pdp_06.png)](./media/pdp_06.png)
--   Data type numbering [![Data type numbering](./media/pdp_07.png)](./media/pdp_07.png)
--   Numbering format [![Numbering format](./media/pdp_08.png)](./media/pdp_08.png)
+-   Module/area number 
 
-The names of data packages include the numbering format, which is followed by the module abbreviation and then a description. For example, the following illustration shows the General ledger data packages. [![General ledger data packages](./media/pdp_09.png)](./media/pdp_09.png)
+[![Module/area number](./media/pdp_06.png)](./media/pdp_06.png)
+
+-   Data type numbering 
+
+[![Data type numbering](./media/pdp_07.png)](./media/pdp_07.png)
+
+-   Numbering format 
+
+[![Numbering format](./media/pdp_08.png)](./media/pdp_08.png)
+
+The names of data packages include the numbering format, which is followed by the module abbreviation and then a description. For example, the following illustration shows the General ledger data packages. 
+
+[![General ledger data packages](./media/pdp_09.png)](./media/pdp_09.png)
 
 ## Process data packages
 A process data package (PDP) consolidates Data import/export framework (DIXF) data packages into a unified bundle. The PDP is then used to configure a business process or a group of business processes in one business process library. Together, DIXF data packages, dependencies between those packages, and business processes that require the packages for their configuration make up a PDP. This section describes how to create a PDP for your LCS solution package. To create a PDP, you must have the following items and knowledge:

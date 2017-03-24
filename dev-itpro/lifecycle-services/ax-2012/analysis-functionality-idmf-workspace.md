@@ -37,7 +37,9 @@ This topic describes the functionality available from the Microsoft Dynamics AX 
 The **Analysis** menu lets you analyze the production and archive databases, and application health statistics, from the production replica database. IDMF automatically starts in the **Analysis dashboard** view for the production database.
 
 ## Analysis dashboard (Production database group)
-The **Analysis dashboard** command shows a graphical view of the database that resembles the following screen shot. At least two database analysis schedules must be completed before the database growth trend chart is displayed. The controls and commands available for the analysis dashboard are similar for the production database and the archive database. The command you click becomes unavailable, to visually distinguish the database that is being used. For example, when you click **Analysis dashboard** from the **Production database** group, the command becomes unavailable, as shown in the following screen shot. ![IDMF Analysis Dashboard](./media/idmfanalysisdashboard.png)
+The **Analysis dashboard** command shows a graphical view of the database that resembles the following screen shot. At least two database analysis schedules must be completed before the database growth trend chart is displayed. The controls and commands available for the analysis dashboard are similar for the production database and the archive database. The command you click becomes unavailable, to visually distinguish the database that is being used. For example, when you click **Analysis dashboard** from the **Production database** group, the command becomes unavailable, as shown in the following screen shot. 
+
+![IDMF Analysis Dashboard](./media/idmfanalysisdashboard.png)
 
 ### Navigation of the Analysis dashboard workspace
 
@@ -53,7 +55,10 @@ The following table describes the panes in the Analysis dashboard workspace.
 | **Row count trend**             | Provides the row count trend analysis of your production or archive database over multiple snapshots. You must have a minimum of two snapshots to see the trend analysis. The trend analysis processes the 10 most recent snapshots. Snapshots that are older than the 10 most recent snapshots are ignored by the trend analysis feature. |
 
 ## Analysis details (Production database group)
-The **Analysis details** command provides detailed database analysis information that resembles the following screen shot. At least two database analysis schedules must be completed before the table growth trend chart and the **Growth trend** button are displayed. Use the Analysis details workspace to work with database and index analysis for the production or archive database, to work with the performance dashboard for the selected database, or to manage indexes for the production database. The controls and commands available for the analysis details are similar for the production database and the archive database. The command you click becomes unavailable, to visually distinguish the database that is being used. For example, when you click **Analysis details** from the **Production database** group, the command becomes unavailable, as shown in the following screen shot. ![IDMF Analysis Details](./media/idmfanalysisdetails.png)
+The **Analysis details** command provides detailed database analysis information that resembles the following screen shot. At least two database analysis schedules must be completed before the table growth trend chart and the **Growth trend** button are displayed. Use the Analysis details workspace to work with database and index analysis for the production or archive database, to work with the performance dashboard for the selected database, or to manage indexes for the production database. The controls and commands available for the analysis details are similar for the production database and the archive database. The command you click becomes unavailable, to visually distinguish the database that is being used. For example, when you click **Analysis details** from the **Production database** group, the command becomes unavailable, as shown in the following screen shot. 
+
+![IDMF Analysis Details](./media/idmfanalysisdetails.png)
+
 ### Navigation of the Analysis details workspace
 
 The following tables provide descriptions for the controls in this workspace. For a detailed explanation of Microsoft SQL Server terms, see the [SQL Server documentation](http://go.microsoft.com/fwlink/?LinkId=227464).
@@ -122,6 +127,7 @@ The following tables provide descriptions for the controls in this workspace. Fo
 #### Fields (Index details pane, Index stats tab)
 
 By default, the data grid displays an average of all snapshots which is indicated by the value **All** in the **Stats time** column. Expand each index to see the statistics for each snapshot.
+
 | Field                   | Description                                                                                                                      |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | **Index name**          | The name of the index. Expand this node to see statistics for each snapshot.                                                     |
@@ -163,13 +169,16 @@ This command lets you create a schedule to defragment fragmented indexes. Follow
 ## Analysis dashboard (Archive database group)
 This command provides similar information for the archive database as the **Analysis dashboard** command in the **Production database** group provides for the production database. For detailed information, see the section "[Analysis dashboard (Production database group)](#AnalysisProduction)."
 Analysis details (Archive database group)
------------------------------------------
 
 This command provides similar information for the archive database as the Analysis details command in the Production database group provides for the production database. For detailed information, see [Analysis functionality in the Microsoft Dynamics AX Intelligent Data Management Framework workspace (IDMF)](analysis-functionality-idmf-workspace.md).
 Show system health
-------------------
 
-This command provides graphical views and details for key measures from the Microsoft Dynamics AX application, based on predetermined queries. You can also create your own queries by using the **Administer** &gt; **Application health check** command. A measure captures aggregated statistics for key business processes for each company in the Microsoft Dynamics AX application. This information is captured across calendar years, based on the ledger periods you set up in the application. For example, the measure **Number of inactive Sales Quotations** is calculated as "the total number of sales quotations which are canceled, confirmed, or lost." The total is grouped by company and by year. The application health check provides key measures for the **Inventory**, **Accounts receivable**, **Accounts payable**, **General ledger**, and **Administration** modules, as shown in the following screen shot. ![Show IDMF system health](./media/idmfshowsystemhealth.png) **Figure 3. Show system health**
+This command provides graphical views and details for key measures from the Microsoft Dynamics AX application, based on predetermined queries. You can also create your own queries by using the **Administer** &gt; **Application health check** command. A measure captures aggregated statistics for key business processes for each company in the Microsoft Dynamics AX application. This information is captured across calendar years, based on the ledger periods you set up in the application. For example, the measure **Number of inactive Sales Quotations** is calculated as "the total number of sales quotations which are canceled, confirmed, or lost." The total is grouped by company and by year. The application health check provides key measures for the **Inventory**, **Accounts receivable**, **Accounts payable**, **General ledger**, and **Administration** modules, as shown in the following screen shot. 
+
+![Show IDMF system health](./media/idmfshowsystemhealth.png) 
+
+**Figure 3. Show system health**
+
 ### Navigation of the Application health check workspace
 
 The following tables provide descriptions for the controls in this workspace.
@@ -331,6 +340,7 @@ The following tables provide descriptions for the controls in this workspace.
 #### Fields (Query stats tab, all panes)
 
 The **Select a snapshot** **time** list lets you select query plan statistics, query text, and a query plan for a specific analysis snapshot. By default, the list displays the most recent time. The data grid filters the information based on your selection. The following table describes the fields in the data grid.
+
 | Field                    | Description                                                                                                        |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------|
 | **Usage count**          | The number of time the plan has been run since it was last compiled.                                               |

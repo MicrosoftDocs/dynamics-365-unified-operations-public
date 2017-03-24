@@ -41,6 +41,7 @@ You can start with default connected flowcharts for Microsoft Dynamics AX, and m
 
 ## Connected flowcharts
 This section explains how to view a connected flowchart, how to modify it, how to export the flowchart to Visio, how to generate a gap analysis, and how to export the gap analysis to a comma-separated file that you can manually import into Microsoft Visual Studio Team Foundation Server as work items. For information about how to upload recordings of custom business processes, see [Upload custom business processes to Business process modeler from Task recorder](upload-business-processes-bpm-task-recorder.md). Activities that can appear in flowcharts are described in the following table.
+
 | Activity                  | Description                                                                                                                                                      |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Script                    | Action performed by a script.                                                                                                                                    |
@@ -74,6 +75,7 @@ Default connected flowcharts are available for many nodes in the industry-standa
 ### Modify a connected flowchart
 
 You can modify an existing connected flowchart to match your company's business process.
+
 | **Note**                                                         |
 |------------------------------------------------------------------|
 | Any time you modify a flowchart, a gap is automatically created. |

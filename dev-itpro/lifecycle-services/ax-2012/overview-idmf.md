@@ -53,7 +53,11 @@ To benefit from this topic, you must have knowledge in the following areas:
 | To use this topic, you must have experience in the maintenance and administration of the Microsoft Dynamics AX application and database. IDMF lets you create or modify Purge Objects and Archive Objects. A Purge Object or an Archive Object defines a hierarchical relationship tree among the Microsoft Dynamics AX application tables. You can then apply rules to select records based on specific criteria. A scheduled purge task selects records that match the criteria in the Purge Object, and deletes them from all the tables in the relationship tree. A scheduled archive task selects and moves records from the production database to the archive database that matches the criteria in the Archive Object. |
 
 ## System architecture
-This section provides a high-level overview of the system architecture of IDMF. IDMF was created using the Microsoft .NET development environment and provides a single document interface (SDI). IDMF uses a database, called the management database, for the storage and retrieval of data, and communicates with an Application Object Server (AOS) instance through the .NET Business Connector. The AOS processes all the business logic and database queries to access the Microsoft Dynamics AX application database. You must install the business connector on the computer where you install IDMF. During installation, IDMF installs a Windows service called the Microsoft Dynamics AX Intelligent Data Management Framework service. This service is used to run scheduled jobs and is referred to as the scheduler service for IDMF. In the post-installation stage, IDMF uses the Microsoft Dynamics AX client to import and compile two X++ projects (XPOs). One XPO is used to create the application entities that are required by IDMF, such as classes, tables, and a job. The Microsoft Dynamics AX Windows client is used to import and synchronize the metadata from Microsoft Dynamics AX with IDMF. The following diagram provides a high-level overview of IDMF system architecture. [![IDMF01](./media/idmf01.jpg)](./media/idmf01.jpg)   **Figure 1. System architecture**
+This section provides a high-level overview of the system architecture of IDMF. IDMF was created using the Microsoft .NET development environment and provides a single document interface (SDI). IDMF uses a database, called the management database, for the storage and retrieval of data, and communicates with an Application Object Server (AOS) instance through the .NET Business Connector. The AOS processes all the business logic and database queries to access the Microsoft Dynamics AX application database. You must install the business connector on the computer where you install IDMF. During installation, IDMF installs a Windows service called the Microsoft Dynamics AX Intelligent Data Management Framework service. This service is used to run scheduled jobs and is referred to as the scheduler service for IDMF. In the post-installation stage, IDMF uses the Microsoft Dynamics AX client to import and compile two X++ projects (XPOs). One XPO is used to create the application entities that are required by IDMF, such as classes, tables, and a job. The Microsoft Dynamics AX Windows client is used to import and synchronize the metadata from Microsoft Dynamics AX with IDMF. The following diagram provides a high-level overview of IDMF system architecture. 
+[![IDMF01](./media/idmf01.jpg)](./media/idmf01.jpg)   
+
+**Figure 1. System architecture**
+
 | **Note**                                                                                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | The system architecture diagram shows a single SQL Server computer with different databases, for ease of illustration. You can deploy these databases on a single database server or on multiple database servers. |
@@ -62,15 +66,27 @@ This section provides a high-level overview of the system architecture of IDMF. 
 This section describes the deployment scenarios for IDMF. As shown in the following sections, the system topology can range from a single-server environment to a multi-server deployment.
 ### Single-server deployment
 
-The following diagram shows the deployment of all components on a single server. This topology is not recommended for the production environment. [![IDMF02](./media/idmf02.jpg)](./media/idmf02.jpg)   **Figure 2. Single-server deployment**
+The following diagram shows the deployment of all components on a single server. This topology is not recommended for the production environment. 
+
+[![IDMF02](./media/idmf02.jpg)](./media/idmf02.jpg)   
+
+**Figure 2. Single-server deployment**
 
 ### Multi-server deployment
 
-The following diagram shows a multi-server deployment, where the AOS instance, the database server, and IDMF are deployed on dedicated servers. [![IDMF03](./media/idmf03.jpg)](./media/idmf03.jpg)   **Figure 3. Multi-server deployment**
+The following diagram shows a multi-server deployment, where the AOS instance, the database server, and IDMF are deployed on dedicated servers. 
+
+[![IDMF03](./media/idmf03.jpg)](./media/idmf03.jpg)   
+
+**Figure 3. Multi-server deployment**
 
 ### Distributed deployment
 
-The following diagram shows a distributed deployment that extends the multi-server topology by putting each database on a dedicated database server. Optionally, you can combine the management database and the production replica database on a single server. [![IDMF04](./media/idmf04.jpg)](./media/idmf04.jpg) **Figure 4. Distributed deployment**
+The following diagram shows a distributed deployment that extends the multi-server topology by putting each database on a dedicated database server. Optionally, you can combine the management database and the production replica database on a single server. 
+
+[![IDMF04](./media/idmf04.jpg)](./media/idmf04.jpg) 
+
+**Figure 4. Distributed deployment**
 
 ## Before you begin
 When you start IDMF for the first time, you are prompted to create a baseline snapshot of the database and the application. The baseline process takes a snapshot of the production database and determines the health of the Microsoft Dynamics AX application. You must create a baseline snapshot before you can use IDMF. Before working with IDMF, be aware of the following considerations:

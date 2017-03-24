@@ -71,6 +71,7 @@ This section lists the procedures required to install and configure the Security
 6.  Click **Compile and Synchronize**.
 7.  When synchronization is completed, press Ctrl+Shift+W to open a Development Workspace.
 8.  Run the **SysSecEntryPointManagerSetup** class to add the following menu items to the standard Microsoft Dynamics AX menus.
+
     | Menu item                     | Menu                               |
     |-------------------------------|------------------------------------|
     | SysSecRoleEntryPointDeveloper | SysContextMenu (AOT Add-Ins)       |

@@ -212,31 +212,13 @@ The following sections provide information about the service accounts that were 
 
 The following table lists the domain accounts that were created when you deployed the environment. You may have entered passwords for these accounts when you deployed the environment. If you did not, we recommend that you change the passwords.
 
-Domain account
+| Domain account                  | Description                                                                                                                  |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| <DomainName>SQLServiceUser      | The account used to run the following services on the SQL-<GUID> virtual machine: SQL Server Analysis Services (MSSQLSERVER) |
+| <DomainName>DynamicsInstallUser | The account used to install Dynamics AX.                                                                                     |
+| <DomainName>RetailServiceUser   | The account used to run the following services: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client.        |
 
-Description
-
-Default password
-
-&lt;DomainName&gt;SQLServiceUser
-
-The account used to run the following services on the SQL-&lt;GUID&gt; virtual machine:
-
--   SQL Server Analysis Services (MSSQLSERVER)
-
-The default passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lcs.dynamics.com/).
-
-&lt;DomainName&gt;DynamicsInstallUser
-
-The account used to install Dynamics AX.
-
-&lt;DomainName&gt;RetailServiceUser
-
-The account used to run the following services:
-
--   Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client
-
-### 
+**Note: **The default passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lcs.dynamics.com/).
 
 ### Local administrator accounts
 

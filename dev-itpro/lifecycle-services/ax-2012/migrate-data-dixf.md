@@ -188,6 +188,7 @@ For files, you must define whether the data comes from a list that consists of c
     </table>
 
 5.  Set the following general parameters for regional settings.
+
     | Option              | Description                                                                                              |
     |---------------------|----------------------------------------------------------------------------------------------------------|
     | **Code page**       | Specify the code page for non-Unicode text.                                                              |
@@ -195,12 +196,14 @@ For files, you must define whether the data comes from a list that consists of c
     | **Language locale** | Specify the locale to provide language-specific information for ordering, and for date and time formats. |
 
 6.  Set the following general parameters for multiple value separators.
+
     | Parameter                    | Description                                                                                                                                                                 |
     |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **Multiple value separator** | Optional: Enter the delimiter to use for fields that contain multiple values that are associated with a single record, such as email addresses, telephone numbers, or URLs. |
 
 7.  Click **Application** to set the parameter values to **Dimensions** and **Name sequence**.
 8.  Set the following general parameters for dimensions.
+
     | Parameter                       | Description                                                                                                                                                        |
     |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **Dimension code**              | Optional: Specify the list of financial dimensions that are part of the source file. The codes for the financial dimensions are pulled from Microsoft Dynamics AX. |
@@ -208,6 +211,7 @@ For files, you must define whether the data comes from a list that consists of c
     | **Dimension format**            | The predefined format of the dimension, based on the financial dimensions and delimiter that you selected.                                                         |
 
 9.  Set the following value for name sequences.
+
     | Parameter         | Description                                                                      |
     |-------------------|----------------------------------------------------------------------------------|
     | **Name sequence** | Specify the default name sequence for parties that are created during migration. |
@@ -228,6 +232,7 @@ This section describes how to create a source data format for data from an XML f
 
 5.  Click **Application** to set the parameter values to **Dimensions** and **Name sequence**.
 6.  Set the following general parameters for dimensions.
+
     | Parameter                       | Description                                                                                                                                                        |
     |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **Dimension code**              | Optional: Specify the list of financial dimensions that are part of the source file. The codes for the financial dimensions are pulled from Microsoft Dynamics AX. |
@@ -235,6 +240,7 @@ This section describes how to create a source data format for data from an XML f
     | **Dimension format**            | The predefined format of the dimension, based on the financial dimensions and delimiter that you selected.                                                         |
 
 7.  Set the following value for name sequences.
+
     | Parameter         | Description                                                                      |
     |-------------------|----------------------------------------------------------------------------------|
     | **Name sequence** | Specify the default name sequence for parties that are created during migration. |
@@ -255,6 +261,7 @@ This section describes how to create a source data format for data from an Excel
 
 5.  Click **Application** to set the parameter values to **Dimensions** and **Name sequence**.
 6.  Set the following general parameters for dimensions.
+
     | Parameter                       | Description                                                                                                                                                        |
     |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **Dimension code**              | Optional: Specify the list of financial dimensions that are part of the source file. The codes for the financial dimensions are pulled from Microsoft Dynamics AX. |
@@ -262,6 +269,7 @@ This section describes how to create a source data format for data from an Excel
     | **Dimension format**            | The predefined format of the dimension, based on the financial dimensions and delimiter that you selected.                                                         |
 
 7.  Set the following value for name sequences.
+
     | Parameter         | Description                                                                      |
     |-------------------|----------------------------------------------------------------------------------|
     | **Name sequence** | Specify the default name sequence for parties that are created during migration. |
@@ -291,6 +299,7 @@ This section describes how to configure a source data format for data from Micro
 2.  Click **New**.
 3.  Click **Type**, and then select **AX**.
 4.  You must set the parameter values for **Dimensions** and **Name sequence**. Set the following general parameters for dimensions.
+
     | Parameter                       | Description                                                                                                                                                        |
     |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | **Dimension code**              | Optional: Specify the list of financial dimensions that are part of the source file. The codes for the financial dimensions are pulled from Microsoft Dynamics AX. |
@@ -298,6 +307,7 @@ This section describes how to configure a source data format for data from Micro
     | **Dimension format**            | The predefined format of the dimension, based on the financial dimensions and delimiter that you selected.                                                         |
 
 5.  Set the following value for name sequences.
+
     | Parameter         | Description                                                                      |
     |-------------------|----------------------------------------------------------------------------------|
     | **Name sequence** | Specify the default name sequence for parties that are created during migration. |

@@ -59,6 +59,7 @@ You can record business process flows in Enterprise Portal for Microsoft Dynamic
 ## Load the trace file
 1.  On the ribbon of the main form, click **Load trace file**.
 2.  Select the .xml file that was created by using the Enterprise Portal event traces. A new window opens that displays all entry points that have been recorded.
+
     | **Tip**                                                                                                                                                                                 |
     |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Sort the entry points by the System user role access level column, and then remove all entry points for which the access level of the System User role is anything other than NoAccess. |
