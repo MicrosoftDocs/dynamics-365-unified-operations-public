@@ -304,9 +304,11 @@ Follow these steps to complete the post-installation tasks:
 1.  Verify that the Microsoft Dynamics AX client starts and opens the Microsoft Dynamics AX application successfully.
 2.  Verify that you have updated the cross-reference system in the Microsoft Dynamics AX application. Without an updated cross-reference system, the post-installation process fails with an error message. See [Installation prerequisites](#Prereq) for instructions.
  
+ 
  | **Note**                                                      |
     |---------------------------------------------------------------|
     | You must run the post-installation tasks as an administrator. |
+
 
 3.    Click **Start** &gt; **All Programs** &gt; **Microsoft Dynamics AX Intelligent Data Management Framework**. Right-click **Post-installation tasks**, and click **Run as Administrator** to complete the post-installation tasks. You can also navigate to the installation location, right- click **PostInstallSetup.exe**, and click **Run as Administrator**. The default installation location is C:Program FilesMicrosoft Dynamics AX Intelligent Data Management Framework.
 
