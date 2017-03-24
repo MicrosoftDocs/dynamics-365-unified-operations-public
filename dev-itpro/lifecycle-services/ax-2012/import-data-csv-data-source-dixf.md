@@ -58,6 +58,7 @@ To work through this example, use any of the delimited demo files that are shipp
 2.  Click **New** and enter the name CSV for the source.
 3.  Verify that the source type is **File**.
 4.  Configure the following options:
+
     | **Setting**                     | **Value**                                                                                    |
     |---------------------------------|----------------------------------------------------------------------------------------------|
     | **File format**                 | Delimited                                                                                    |
