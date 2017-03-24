@@ -58,67 +58,14 @@ Currently, partners must demonstrate that these requirements have been met by do
 
 The following table describes the steps that must be completed during the curation meeting.
 
-Phase
-
-Number
-
-Activity
-
-Process steps
-
-Success criteria
-
-1
-
-1
-
-Validate code.
-
-Run all customer model files by using the CAR tool, and generate the report.
-
-Successfully create a CAR without any localization, accessibility, performance, or security issues.
-
-2
-
-Verify user experience (UX) guidelines.
-
-Follow UX guidelines to implement the workspace correctly.
-
-Reference best practice information in the **Migrate and Create Methodology** section of LCS.
-
-2
-
-3
-
-Create a project.
-
-Create an LCS project by using the solution package.
-
-Successfully create an LCS Package project. Correctly deploy package artifacts, such as the methodology and BPM.
-
-4
-
-Deploy an environment.
-
-Deploy a standard Microsoft Dynamics 365 for Operations environment that has partner code that is based on the package contents (Code, Binaries, and Config).
-
-Successfully deploy at least two Dynamics 365 for Operations environments without any errors. The environment configuration is the same as the reference environment of the partner. (The environment configuration includes components and the configuration.) A user can successfully sign in to this environment without any errors.
-
-5
-
-Configure and deploy data.
-
-Deploy partner-supplied data in the environment without any errors.
-
-View the supplied data in the package in LCS Config manager without any errors. In the specified legal entity, deploy the data that is supplied to the environment without any errors. Create new data in the selected master, and then push the data to the Dynamics 365 for Operations environment, without any errors.
-
-6
-
-Do a sanity check.
-
-After the data has been loaded in the environment, users should be able to sign in and complete typical transactions (as defined in the scope of the solution).
-
-Users can sign in to the data-loaded environment without any errors. Transactions can be completed, as defined in the package scope, without any errors.
+| Phase | Step | Activity                               | Process steps                                                                                                                                                   | Success criteria                                                                                                                                                                                                                                                                                                                        |
+|-------|------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1     | 1    | Validate code                          | Run all customer model files by using the CAR tool, and then generate the report.                                                                               | Successfully create a CAR without any localization, accessibility, performance, or security issues.                                                                                                                                                                                                                                     |
+| 1     | 2    | Verify user experience (UX) guidelines | Follow UX guidelines to implement the workspace correctly.                                                                                                      | Reference best practice information in the Migrate and Create methodology section of LCS.                                                                                                                                                                                                                                               |
+| 2     | 3    | Create a project                       | Create and LCS project by using the solution package.                                                                                                           | Successfully create an LCS Package project. Correctly deploy package artifacts, such as the methodology and BPM.                                                                                                                                                                                                                        |
+| 2     | 4    | Deploy an environment                  | Deploy a standard Microsoft Dynamics 365 for Operations environment that has partner code that is based on the package contents (Code, Binaries, and Config).   | Successfully deploy at least two Dynamics 365 for Operations environments without any errors. The environment configuration is the same as the reference environment of the partner. (The environment configuration includes components and the configuration.) A user can successfully sign in to this environment without any errors. |
+| 2     | 5    | Configure and deploy data              | Deploy partner-supplied ata in the environment without any errors.                                                                                              | View the supplied data in the package in LCS Config manager without any errors. In the specified legal entity, deploy the data that is supplied to the environment without any errors. Create new data in the selected master, and then push the data to the Dynamics 365 for Operations environment, without any errors.               |
+| 2     | 6    | Do a sanity check                      | After the data has been loaded in the environment, users should be able to sign in and complete typical transactions (as defined in the scope of the solution). | Users can sign in to the data-loaded environment without any errors. Transactions can be completed, as defined in the package scope, without any errors.                                                                                                                                                                                |
 
 ### Detailed curation requirements
 
