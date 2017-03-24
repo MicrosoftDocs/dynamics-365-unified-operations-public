@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Work with existing earnings
+title: Process existing earnings
 description: This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
 author: rschloma
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Work with existing earnings
+# Process existing earnings
 
 This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
 

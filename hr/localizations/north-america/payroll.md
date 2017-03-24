@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Payroll overview
 
-Payroll provides full gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
+Payroll provides gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. Payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
 
 Payroll setup
 -----------
@@ -41,30 +41,54 @@ Basic setup for Payroll involves setting pay cycles and pay periods, calculatio
 
 Configuring Payroll also includes setting up earning codes and creating earning code groups, and entering information for tax withholding, benefit accrual, and setting beginning balances.
 
+### Frequencies and cycles
+-   [Pay cycle and pay period tasks]()
+-   [Payroll calculation frequency tasks]()
+-   [Work schedule and leave tasks]()
+
+### Codes
+-   [Earning code and earning code group tasks]()
 
 ## Taxes
-Payroll taxes are set up in two parts. One part of that setup covers the settings that are used throughout your organizations, such as the states where you have a connection or the rates for unemployment taxes. The second part additional tax information toat is provided for each worker. 
+Payroll taxes are set up in two parts. One part covers the settings that are used throughout your organizations, such as the states where you have a connection or the rates for unemployment taxes. The second part additional tax information that is provided for each worker. 
 
 -   [Tax information tasks](tax-information-tasks.md)
+-   [Tax codes, tax groups, and posting definitions]()
 
 ## Benefits
-Topics related to benefits describe how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits. Garnishments and tax levies are also set up as benefits, but the steps for setting them up differ.
+Topics related to benefits describe how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits. 
 
+-   [Benefit accrual plan tasks]()
 -   [Benefit setup tasks](benefit-set-up-tasks.md)
 
 ## Garnishments, tax levies, and premium earnings
 Premium earnings, garnishments, and tax levies won’t be used by all employees. If your organization needs to pay premium earnings or garnish an employee’s pay, Payroll includes a framework that can help ensure that the impact of these transactions is handled correctly.
 
+-   [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md)
+-   [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md)
+-   [Garnishments, tax levies, and administrative fees FAQ](garnishment-tax-levy-administrative-fees.md)
+-   [Premium earning setup tasks](premium-earning-setup-tasks.md)
 
 ## Payroll processing tasks
-Running a payroll includes generating earnings and then issuing worker payments. When those tasks have been completed, you'll post the payroll transactions and then generate vendor invoices, which result in payments being made to employees. The following topics provide detailed information about this process.
+Running a payroll includes generating earnings and then issuing worker payments. When those tasks have been completed, you'll post the payroll transactions and then generate vendor invoices, which result in payments being made to employees. 
 
 -   [Generate earnings](generate-earnings.md)
+-   [Issue worker payments](issue-worker-payments.md)
+-   [Post payroll and generate vendor invoices](post-payroll-generate-vendor-invoices.md)
+-   [Pay statements and the payment generation process](pay-statements-payment-generation-process.md)
 
-A number of tasks are completed after you generate pay statements for your employees. These include releasing earnings for payment processing, and at times, holding earnings from payment processing and changing information on earnings statements.
+Several tasks must be completed after you generate pay statements for your employees. These include releasing earnings for payment processing, and at times, holding earnings from payment processing and changing information on earnings statements.
+
+-   [Process existing payroll payments](existing-payroll-payments.md)
+-   [Process existing earnings](existing-earnings.md)
+-   [Process pay statements](pay-statements.md)
 
 ## Maintenance and reporting
-Maintaining your payroll data involves adjusting the carry-forward balances for accrued benefits, removing a worker from enrollment in a benefit accrual plan, or updating beneft rates for a new plan year. It might also be necessary to change benefits for a worker that has a qualifying life event. 
+Maintaining your payroll data involves adjusting the carry-forward balances for accrued benefits, removing a worker from enrollment in a benefit accrual plan, or updating rates for a new plan year. It might also be necessary to change benefits for a worker that has a qualifying life event. 
+
+-   [Payroll data updates FAQ](payroll-data-updates.md)
 
 Standard payroll reports are provided to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
+
+-   [Generate payroll reports](generate-payroll-reports.md)
 

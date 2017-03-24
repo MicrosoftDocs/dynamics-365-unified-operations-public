@@ -59,6 +59,7 @@ The recruitment project contains the **Job ad** used on the **Employee self serv
 | Canceled  | Recruiting has been canceled for this project.                                           |
 
 Recruiters can also record the **Media** used to advertise the opening through external outlets as well as track **Developments** against the project or applications.
+
 Applicants
 ----------
 
@@ -75,6 +76,7 @@ Employment applications submitted by applicants on the web are either solicited 
 ### Application status
 
 The application status indicates where an application is in the recruitment process. The following table lists the possible application statuses and their description.
+
 | Status    | Indicates that…                                                                           |
 |-----------|-------------------------------------------------------------------------------------------|
 | Received  | The application was received.                                                             |
@@ -89,17 +91,18 @@ The application status indicates where an application is in the recruitment proc
 An **Application’s** correspondence action determines the document or e-mail template that you use to communicate with the applicant who submitted the application. You can associate **Application bookmarks** with correspondence actions to allow you to use values from the Application, Applicant, Interview, and Recruitment project pages in your communications with applicants.  **Application e-mail templates** can be created for the correspondence actions to quickly send e-mails to applicants who have an application with a certain status and correspondence action combination. For example, you may send a Confirmation e-mail to all Applications with a **Status** of Received and a **Correspondence action** of Received.  After sending the e-mail, you have the option to automatically update the status of the applications.
 
 ## Application routing
+
 If an application must be reviewed by several workers, you can use the **Application routing** page to create a worker circulation list in order to manage the process.
-Interviews
-----------
+
+## Interviews
 
 **Applicant interviews** can be scheduled from the **Applications** page.  Use the **Send meeting information** button to send a calendar file with the interview schedule information to the applicant and interviewer.
-Skill mapping
--------------
+
+## Skill mapping
 
 **Skill mapping** and **Skill mapping profiles** can be used to identify candidates who may be a good fit for an opening.
-Hiring applicants
------------------
+
+## Hiring applicants
 
 Use the **Applications** page to hire an applicant. When you hire an applicant, the application record will have a status of **Employed** and the applicant’s global address book person record is associated with the new worker record. Modifications to the global address book information for the new worker record are also displayed in the applicant record. This can help reduce data entry if the new worker ever applies for a different job within your enterprise.  To hire an existing worker into a new position, click **Change position** in the **Application status** drop down to initiate the transfer process.
 
