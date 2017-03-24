@@ -3,7 +3,7 @@
 
 title: Retail Modern POS in offline mode
 description: This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
-author: kfend
+author: robinr
 manager: AnnBe
 ms.date: 2016-02-05 00 - 29 - 31
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31441
@@ -37,7 +37,13 @@ This article explains how to use Retail Modern POS devices in offline mode if th
 A Retail Modern POS device will go offline if the Retail Server is unavailable. When the connection with the Retail Server is lost, the point of sale (POS) automatically switches to the offline database. If a data request doesn't succeed within the time-out interval that is configured in the offline profile, Retail Modern POS automatically switches to the offline database and continues the sales transaction. Retail Modern POS will try to reconnect to the Retail Server after the reconnect attempt interval that is configured in the offline profile. This reconnect attempt will occur only at the beginning of a transaction.
 
 ## Determine the connection mode of Retail Modern POS
-The status header of Retail Modern POS indicates the current connection status. [![connection](./media/connection.png)](./media/connection.png) The **Connection status** page in Retail Modern POS shows the status of the last attempt to synchronize with the offline database. [![connection status](./media/connection-status.png)](./media/connection-status.png)
+The status header of Retail Modern POS indicates the current connection status. 
+
+[![connection](./media/connection.png)](./media/connection.png) 
+
+The **Connection status** page in Retail Modern POS shows the status of the last attempt to synchronize with the offline database. 
+
+[![connection status](./media/connection-status.png)](./media/connection-status.png)
 
 ## Create a button to manually switch between online and offline modes
 You can add a button to Retail Modern POS to manually switch between online and offline modes. Create a button for **POS operation 917 – Database connection status**. Use the button as a toggle to connect or disconnect.

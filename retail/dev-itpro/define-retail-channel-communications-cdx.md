@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 41
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27021
@@ -37,10 +37,14 @@ This article provides an overview of Commerce Data Exchange and its components. 
 Overview
 --------
 
-Commerce Data Exchange is a system that transfers data between Dynamics 365 for Operations and retail channels, such as online stores or brick-and-mortar stores. The database that stores data for a retail channel is separate from the Dynamics 365 for Operations database. The channel database holds only the data that is required for retail transactions. Master data is configured in Dynamics 365 for Operations and distributed to channels. Transactional data is created in the point of sale (POS) system or the online store, and then uploaded to Dynamics 365 for Operations. Data distribution is asynchronous. In other words, the process of gathering and packaging data at the source occurs separately from the process of receiving and applying data at the destination. For some scenarios, such as price and inventory lookups, data must be retrieved in real time. To support these scenarios, Commerce Data Exchange also includes a service that enables real-time communication between Dynamics 365 for Operations and a channel. [![updated-retail-graphic](./media/updated-retail-graphic.png)](./media/updated-retail-graphic.png)  
+Commerce Data Exchange is a system that transfers data between Dynamics 365 for Operations and retail channels, such as online stores or brick-and-mortar stores. The database that stores data for a retail channel is separate from the Dynamics 365 for Operations database. The channel database holds only the data that is required for retail transactions. Master data is configured in Dynamics 365 for Operations and distributed to channels. Transactional data is created in the point of sale (POS) system or the online store, and then uploaded to Dynamics 365 for Operations. Data distribution is asynchronous. In other words, the process of gathering and packaging data at the source occurs separately from the process of receiving and applying data at the destination. For some scenarios, such as price and inventory lookups, data must be retrieved in real time. To support these scenarios, Commerce Data Exchange also includes a service that enables real-time communication between Dynamics 365 for Operations and a channel. 
+
+[![updated-retail-graphic](./media/updated-retail-graphic.png)](./media/updated-retail-graphic.png)  
 
 ## Async Service
-Microsoft SQL Server change tracking on the Dynamics 365 for Operations database is used to determine the data changes that must be sent to channels. Based on a distribution schedule, Dynamics 365 for Operations packages that data and saves it to central storage (Azure blob storage). A separate batch process uses the Commerce Data Exchange: Async Client library to insert this data package into the channel database. [![Async Service](./media/async-300x239.png)](./media/async.png)
+Microsoft SQL Server change tracking on the Dynamics 365 for Operations database is used to determine the data changes that must be sent to channels. Based on a distribution schedule, Dynamics 365 for Operations packages that data and saves it to central storage (Azure blob storage). A separate batch process uses the Commerce Data Exchange: Async Client library to insert this data package into the channel database. 
+
+[![Async Service](./media/async-300x239.png)](./media/async.png)
 
 ### Retail scheduler
 
@@ -63,5 +67,7 @@ Commerce Data Exchange: Real-time Service is an integrated service that provides
 -   Performing inventory counts.
 -   Retrieving sales transactions across stores and completing return transactions.
 
-[![Real-time Service](./media/rts-300x63.png)](./media/rts.png) A predefined Real-time Service profile is created.
+[![Real-time Service](./media/rts.png)](./media/rts.png) 
+
+A predefined Real-time Service profile is created.
 
