@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll workers in a garnishment and tax levy
+title: Enroll workers in a garnishment or tax levy
 description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
 author: rschloma
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Enroll workers in garnishment and tax levies
+# Enroll workers in a garnishment or tax levy
 
 This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
 
