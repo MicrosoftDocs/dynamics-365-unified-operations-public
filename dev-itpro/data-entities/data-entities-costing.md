@@ -37,94 +37,22 @@ This article provides a list of the data entities that are available for the Cos
 Available data entities
 -----------------------
 
-Suggested sequence
-
-Entity name
-
-Area
-
-Entity type
-
-Dependency
-
-Comments
-
 **15.1.001 COS - Costing setup**
 
-1
-
-Cost groups
-
-Costing
-
-Setup
-
-None
-
-2
-
-Cost group profit percentages
-
-Costing
-
-Setup
-
-None
-
-3
-
-Calculation groups
-
-Costing
-
-Setup
-
-None
-
-4
-
-Cost flow assumption policies
-
-Costing
-
-Setup
-
-None
-
-5
-
-Costing versions
-
-Costing
-
-Setup
-
-None
-
-6
-
-Costing sheet nodes and absorption basis
-
-Costing
-
-Setup
-
-None
-
-7
-
-Costing sheet node calculation factors
-
-Costing
-
-Setup
-
-None
+| Suggested sequence | Entity name                              | Area    | Entity type | Dependency | Comments |
+|--------------------|------------------------------------------|---------|-------------|------------|----------|
+| 1                  | Cost groups                              | Costing | Setup       | None       |          |
+| 2                  | Cost group profit percentages            | Costing | Setup       | None       |          |
+| 3                  | Calculation groups                       | Costing | Setup       | None       |          |
+| 4                  | Cost flow assumption policies            | Costing | Setup       | None       |          |
+| 5                  | Costing versions                         | Costing | Setup       | None       |          |
+| 6                  | Costing sheet nodes and absorption basis | Costing | Setup       | None       |          |
+| 7                  | costing sheet node calculation factors   | Costing | Setup       | None       |          |
 
 See also
 --------
 
 [Data entities and packages framework](/dev-itpro/data-entities/data-entities-data-packages)
 
-[Data entities home page](/dev-itpro/data-entities/data-entities)
+[Data entities ](/dev-itpro/data-entities/data-entities)
 
