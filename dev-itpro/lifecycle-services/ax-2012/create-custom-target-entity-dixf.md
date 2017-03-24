@@ -44,11 +44,7 @@ The **Create a custom entity for data import/export Wizard** lets you quickly cr
 
 1.  Go to **Data Import/Export Framework** &gt; **Common** &gt; **Create a custom entity for data import/export**.
 2.  Select the table that is related to the entity that you want to migrate, and then click **Next**.
-   
-   | **Caution**                                                                                                                                  |
-    |----------------------------------------------------------------------------------------------------------------------------------------------|
-    | The wizard can be used to create custom entities that are associated only with tables that do not inherit data structures from other tables. |
-
+   **Caution**: The wizard can be used to create custom entities that are associated only with tables that do not inherit data structures from other tables.
 3.  On the **Select code generation parameters** page, follow these steps:
     1.  The wizard suggests names for the staging table, query, and class. You can accept these names or change them.
     2.  Select a display menu item for the entity. If you have to create a new display menu item, follow the instructions in [How to: Create Menus and Menu Items](https://msdn.microsoft.com/library/5277205c-edb9-498e-b927-406237806217(AX.60).aspx).
