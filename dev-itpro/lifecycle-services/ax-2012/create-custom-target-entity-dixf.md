@@ -44,7 +44,8 @@ The **Create a custom entity for data import/export Wizard** lets you quickly cr
 
 1.  Go to **Data Import/Export Framework** &gt; **Common** &gt; **Create a custom entity for data import/export**.
 2.  Select the table that is related to the entity that you want to migrate, and then click **Next**.
-    | **Caution**                                                                                                                                  |
+   
+   | **Caution**                                                                                                                                  |
     |----------------------------------------------------------------------------------------------------------------------------------------------|
     | The wizard can be used to create custom entities that are associated only with tables that do not inherit data structures from other tables. |
 
@@ -67,6 +68,7 @@ This section describes how to manually create a custom entity.
 
 1.  In Microsoft Dynamics AX, in the AOT, create a staging table for the entity.
 2.  Use the following information to set up the table properties for the staging table.
+
     | Property name               | Value   |
     |-----------------------------|---------|
     | **SaveDataPerCompany**      | No      |
@@ -76,6 +78,7 @@ This section describes how to manually create a custom entity.
     | **ValidTimeStateFieldType** | None    |
 
 3.  Create fields that have the following properties.
+
     | Field name          | Extended data type     | Enum              |
     |---------------------|------------------------|-------------------|
     | **DefinitionGroup** | DMFDefinitionGroupName |                   |
@@ -84,6 +87,7 @@ This section describes how to manually create a custom entity.
     | **ExecutionId**     | DMFExecutionId         |                   |
 
 4.  Create field groups that have the following properties.
+
     | Field group name                                                         | Label                                                                         | Field                                                                                        |
     |--------------------------------------------------------------------------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
     | **ExclusionList**                                                        | **Exclusion List**                                                            | **DefinitionGroup**                                                                          |
