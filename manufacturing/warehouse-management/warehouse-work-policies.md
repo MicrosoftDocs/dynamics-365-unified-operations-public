@@ -70,9 +70,12 @@ Here is an example of the work policy that you can set up, based on these consid
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-| **Work policy name** No put away 01-SC1 | **Work order types** ·         Finished good put away |
-|                                         | **Locations** ·         O1                            |
-|                                         | **Products** ·         SC1                            |
+|**Work policy name**<br>                 |**Work order types**<br>                                   |
+| No put away 01     `                    |- Finished good put away<br>                               |
+|                                         |**Locations**<br>                                      |
+|                                         |- O1   |                                               |
+|                                         |**Products** <br>                                           |
+|                                         |- SC1                                                       |
 
 The following procedures provide step-by-step instructions about how to set up the warehouse work policy for this scenario. A sample setup showing how to report a production order as finished to a location that isn’t license plate–controlled is also described.
 
