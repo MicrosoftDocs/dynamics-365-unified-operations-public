@@ -49,6 +49,11 @@ Your company consists of two sites. The sites are located in different time zone
 
 Sites A and B have defined the following order entry deadlines.
 
+| Day of the week             | A: Order entry deadlines (PST) | B: Order entry deadlines (EST) |
+|-----------------------------|--------------------------------|--------------------------------|
+| Monday                      | 13:00                          | 14:00                               |
+| Tuesday                     | 13:00                          | 14:00                               |
+
 Site A
 
 Site B
