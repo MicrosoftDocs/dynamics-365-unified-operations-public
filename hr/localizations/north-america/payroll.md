@@ -64,7 +64,7 @@ Topics related to benefits describe how to set up current and future benefits th
 ## Garnishments, tax levies, and premium earnings
 Premium earnings, garnishments, and tax levies won’t be used by all employees. If your organization needs to pay premium earnings or garnish an employee’s pay, Payroll includes a framework that can help ensure that the impact of these transactions is handled correctly.
 
--   [Garnishment and tax levy setup tasks](garnishment-tax-levy-setup-tasks.md)
+-   [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md)
 -   [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md)
 -   [Garnishments, tax levies, and administrative fees FAQ](garnishment-tax-levy-administrative-fees.md)
 -   [Premium earning setup tasks](premium-earning-setup-tasks.md)
