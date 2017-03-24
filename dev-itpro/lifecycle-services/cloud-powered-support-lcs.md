@@ -35,9 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 Support tool on Microsoft Dynamics Lifecycle Services (LCS) helps you manage support incidents. Support tile on LCS lets you create a virtual machine (VM) in Microsoft Azure that has the same hotfixes installed as your local environment. You can reproduce and record the incident on the virtual machine, and then submit the VM to our support team. Support follows up by investigating the incident, testing a fix on the virtual machine, if a fix is found, and sending the VM and the fix back to you for verification.
-| **Note**                                                                                           |
-|----------------------------------------------------------------------------------------------------|
-| Virtual machines are only available for Microsoft Dynamics AX 2012 R2 and AX 2012 R3 environments. |
+**Note:** Virtual machines are only available for Microsoft Dynamics AX 2012 R2 and AX 2012 R3 environments.
 
 ## Prerequisites
 To use Support tool, you must have previously created a project in Lifecycle Services, and installed and run the System diagnostics in your environment. For more information, see [System diagnostics (Lifecycle Services, LCS)](/ax-2012/system-diagnostics-lcs.md).
@@ -47,6 +45,7 @@ To use Support tool, you must have previously created a project in Lifecycle Ser
 2.  Open a project, and then click the Support tile.
 3.  On the Incidents list application bar, click Create.
 4.  Search for an existing solution by keyword or by object path in the Microsoft Dynamics AX Application Object Tree (AOT).
+
     | **Note**                                                  |
     |-----------------------------------------------------------|
     | If you click a solution, Issue search opens on a new tab. |
@@ -54,6 +53,7 @@ To use Support tool, you must have previously created a project in Lifecycle Ser
 5.  If you don’t find an existing solution, click Create incident.
 6.  On the Share diagnostic data page, select the appropriate environment.If you have not previously run the System diagnostics in your environment, you are prompted to install and run it. After you run the System diagnostics, you must update the Share diagnostic data page.
 7.  On the Describe the issue pages, enter details about the issue.To create a virtual machine for an issue, select Yes for the question Would you like to create a virtual machine, and then click Create a new virtual machine for your environment. You do not have to submit a virtual machine before you can open an issue.
+    
     | **Note**                                                                                                                                                                                             |
     |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | If you have previously created a virtual machine snapshot for another support incident, you can reuse that snapshot for this issue. Only a single virtual machine snapshot is available at any time. |
@@ -98,6 +98,7 @@ When the support engineer has verified your issue and received a hotfix, he or s
 1.  In Lifecycle Services, on the Incidents list, in the Support request ID entry for your incident, under Repro VM action, click Customer verify.
 2.  On the Proposed solution page, click Start VM. Then, after the VM has started, click Connect.
 3.  When the VM opens, log on to it.
+
     | **Important**                               |
     |---------------------------------------------|
     | The proposed hotfix is installed on the VM. |
