@@ -3,7 +3,7 @@
 
 title: Retail online store publishing architecture
 description: This topic contains conceptual information to help developers and system administrators understand how channels and catalogs are published from the retail module to an online store in Microsoft SharePoint 2013 Products. Understanding the publishing process can help you develop, manage, and troubleshoot your Retail online store.
-author: robinr
+author: robinarh
 manager: AnnBe
 ms.date: 2016-03-29 18 - 43 - 48
 ms.topic: article
