@@ -57,7 +57,11 @@ You can select a location that the work policy applies to. If no location is ass
 You can select a product that the work policy applies to. You can apply the work policy to either all products or selected products.
 
 ## Example
-In the following example, there are two production orders, PRD-001 and PRD-00*2*. Production order PRD-001 has an operation that is named **Assembly**, where product SC1 is being reported as finished to location O1. Production order PRD-002 has an operation that is named **Painting** and consumes product SC1 from location O1. Production order PRD-002 also consumes raw material RM1 from location O1. RM1 is stored in warehouse location BULK-001 and will be picked to location O1 by warehouse work for raw material picking. The picking work is generated when production PRD-002 is released. \[caption id="attachment\_89413" align="aligncenter" width="484"\][![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) Warehouse work policies\[/caption\] When you plan to configure a warehouse work policy for this scenario, you should consider the following information:
+In the following example, there are two production orders, PRD-001 and PRD-00*2*. Production order PRD-001 has an operation that is named **Assembly**, where product SC1 is being reported as finished to location O1. Production order PRD-002 has an operation that is named **Painting** and consumes product SC1 from location O1. Production order PRD-002 also consumes raw material RM1 from location O1. RM1 is stored in warehouse location BULK-001 and will be picked to location O1 by warehouse work for raw material picking. The picking work is generated when production PRD-002 is released. 
+
+[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+
+When you plan to configure a warehouse work policy for this scenario, you should consider the following information:
 
 -   Warehouse work for finished goods put-away isn’t required when you report product SC1 as finished from production order PRD-001 to location O1. This is because the **Painting** operation for production order PRD-002 consumes SC1 at the same location.
 -   Warehouse work for raw material picking is required in order to move raw material RM1 from warehouse location BULK-001 to location O1.
@@ -66,14 +70,19 @@ Here is an example of the work policy that you can set up, based on these consid
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-| **Work policy name** No put away 01-SC1 | **Work order types** ·         Finished good put away |
-|                                         | **Locations** ·         O1                            |
-|                                         | **Products** ·         SC1                            |
+|**Work policy name**<br>                 |**Work order types**<br>                               |
+| No put away 01     `                    |- Finished good put away<br>                           |
+|                                         |**Locations**<br>                                      |
+|                                         |- O1   |                                               |
+|                                         |**Products** <br>                                      |
+|                                         |- SC1                                                  |
 
 The following procedures provide step-by-step instructions about how to set up the warehouse work policy for this scenario. A sample setup showing how to report a production order as finished to a location that isn’t license plate–controlled is also described.
 
 ## Set up a warehouse work policy
-Warehouse processes don’t always include warehouse work. By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations. The USMF demo data company was used to create this procedure. STEPS (21)
+Warehouse processes don’t always include warehouse work. By defining a work policy, you can prevent the creation of work for raw material picking and put-away of finished goods for a set of products at specific locations. The USMF demo data company was used to create this procedure. 
+
+STEPS (21)
 
 |     |                                                                            |
 |-----|----------------------------------------------------------------------------|
@@ -100,109 +109,143 @@ Warehouse processes don’t always include warehouse work. By defining a work po
 | 21. | Click Save.                                                                |
 
 ## Report a production order as finished to a location that isn’t license plate–controlled
-This procedure shows an example of reporting as finished to a location that isn't license plate–controlled. An applicable work policy is the prerequisite for this task. The previous procedure shows the setup of the work policy. STEPS (25)
+This procedure shows an example of reporting as finished to a location that isn't license plate–controlled. An applicable work policy is the prerequisite for this task. The previous procedure shows the setup of the work policy. 
 
-**Sub-task: Set up an output location.**
+STEPS (25)
 
-1.
-
-Go to Organization administration &gt; Resources &gt; Resource groups.
-
-2.
-
-In the list, select resource group '5102'.
-
-3.
-
-Click Edit.
-
-4.
-
-In the Output warehouse field, enter '51'.
-
-5.
-
-In the Output location field, enter '001'.
-
-6.
-
-Location 001 isn't a license plate–controlled location. You can set up a non–license plate output location only if an applicable work policy exists for the location.
-
-**Sub-task: Create a production order and report it as finished.**
-
-1.
-
-Close the page.
-
-2.
-
-Go to Production control &gt; Production orders &gt; All production orders.
-
-3.
-
-Click New production order.
-
-4.
-
-In the Item number field, enter 'L0101'.
-
-5.
-
-Click Create.
-
-6.
-
-On the Action Pane, click Production order.
-
-7.
-
-Click Estimate.
-
-8.
-
-Click OK.
-
-9.
-
-Click Start.
-
-10.
-
-Click the General tab.
-
-11.
-
-In the Automatic BOM consumption field, select 'Never'.
-
-12.
-
-Click OK.
-
-13.
-
-Click Report as finished.
-
-14.
-
-Click the General tab.
-
-15.
-
-Select Yes in the Accept error field.
-
-16.
-
-Click OK.
-
-17.
-
-On the Action Pane, click Warehouse.
-
-18.
-
-Click Work details.
-
-19.
-
-When the production order was reported as finished, no work was generated for put-away. This occurs because a work policy is defined that prevents work from being generated when product L0101 is reported as finished to location 001.
+<table>
+<tbody>
+<tr>
+<td colspan="3"><strong>Sub-task: Set up an output location.</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>1.</td>
+<td>Go to Organization administration &gt; Resources &gt; Resource groups.</td>
+</tr>
+<tr>
+<td></td>
+<td>2.</td>
+<td>In the list, select resource group '5102'.</td>
+</tr>
+<tr>
+<td></td>
+<td>3.</td>
+<td>Click Edit.</td>
+</tr>
+<tr>
+<td></td>
+<td>4.</td>
+<td>In the Output warehouse field, enter '51'.</td>
+</tr>
+<tr>
+<td></td>
+<td>5.</td>
+<td>In the Output location field, enter '001'.</td>
+</tr>
+<tr>
+<td></td>
+<td>6.</td>
+<td>Location 001 isn't a license plate–controlled location. You can set up a non–license plate output location only if an applicable work policy exists for the location.</td>
+</tr>
+<tr>
+<td colspan="3"><strong>Sub-task: Create a production order and report it as finished.</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>1.</td>
+<td>Close the page.</td>
+</tr>
+<tr>
+<td></td>
+<td>2.</td>
+<td>Go to Production control &gt; Production orders &gt; All production orders.</td>
+</tr>
+<tr>
+<td></td>
+<td>3.</td>
+<td>Click New production order.</td>
+</tr>
+<tr>
+<td></td>
+<td>4.</td>
+<td>In the Item number field, enter 'L0101'.</td>
+</tr>
+<tr>
+<td></td>
+<td>5.</td>
+<td>Click Create.</td>
+</tr>
+<tr>
+<td></td>
+<td>6.</td>
+<td>On the Action Pane, click Production order.</td>
+</tr>
+<tr>
+<td></td>
+<td>7.</td>
+<td>Click Estimate.</td>
+</tr>
+<tr>
+<td></td>
+<td>8.</td>
+<td>Click OK.</td>
+</tr>
+<tr>
+<td></td>
+<td>9.</td>
+<td>Click Start.</td>
+</tr>
+<tr>
+<td></td>
+<td>10.</td>
+<td>Click the General tab.</td>
+</tr>
+<tr>
+<td></td>
+<td>11.</td>
+<td>In the Automatic BOM consumption field, select 'Never'.</td>
+</tr>
+<tr>
+<td></td>
+<td>12.</td>
+<td>Click OK.</td>
+</tr>
+<tr>
+<td></td>
+<td>13.</td>
+<td>Click Report as finished.</td>
+</tr>
+<tr>
+<td></td>
+<td>14.</td>
+<td>Click the General tab.</td>
+</tr>
+<tr>
+<td></td>
+<td>15.</td>
+<td>Select Yes in the Accept error field.</td>
+</tr>
+<tr>
+<td></td>
+<td>16.</td>
+<td>Click OK.</td>
+</tr>
+<tr>
+<td></td>
+<td>17.</td>
+<td>On the Action Pane, click Warehouse.</td>
+</tr>
+<tr>
+<td></td>
+<td>18.</td>
+<td>Click Work details.</td>
+</tr>
+<tr>
+<td></td>
+<td>19.</td>
+<td>When the production order was reported as finished, no work was generated for put-away. This occurs because a work policy is defined that prevents work from being generated when product L0101 is reported as finished to location 001.</td>
+</tr>
+</tbody>
+</table>
 

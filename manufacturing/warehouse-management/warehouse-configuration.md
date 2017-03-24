@@ -61,7 +61,13 @@ The entities that you create to define your warehouse layout are used in the que
 
 ### Location stocking limits, location profiles, and fixed picking locations
 
-You must consider the physical layout of the warehouse, both to determine storage capacities (location stocking limits and location profiles) and as part of your attempts to achieve optimal warehouse processes. Location stocking limits help guarantee that work isn't created to request that inventory be put in a location that doesn't have the physical capacity to carry the inventory. For example, if some locations within a warehouse can hold only one pallet per location, location stocking limits can be enabled. The **Quantity **value can be set to **1**, and the **Unit **value can be set to **PL** within a specific location profile grouping. If more advanced calculations are required to control the location capacity constraints, the location profile settings can be used. In this case, the weight and volume are considered when capacity calculations are done. To achieve optimal outbound processes, you should evaluate whether to use fixed picking locations and/or packing locations. Often, minimum/maximum replenishment is used for replenishment processes from a bulk area to the fixed picking locations, and multiple fixed picking locations can be enabled within the same warehouse and for product variants. Consider the flexibility that can you achieve by enabling dedicated demand replenishment overflow locations that are used only for wave/load replenishment processing.
+You must consider the physical layout of the warehouse, both to determine storage capacities (location stocking limits and location profiles) and as part of your attempts to achieve optimal warehouse processes. 
+
+Location stocking limits help guarantee that work isn't created to request that inventory be put in a location that doesn't have the physical capacity to carry the inventory. For example, if some locations within a warehouse can hold only one pallet per location, location stocking limits can be enabled. The **Quantity **value can be set to **1**, and the **Unit **value can be set to **PL** within a specific location profile grouping. 
+
+If more advanced calculations are required to control the location capacity constraints, the location profile settings can be used. In this case, the weight and volume are considered when capacity calculations are done. 
+
+To achieve optimal outbound processes, you should evaluate whether to use fixed picking locations and/or packing locations. Often, minimum/maximum replenishment is used for replenishment processes from a bulk area to the fixed picking locations, and multiple fixed picking locations can be enabled within the same warehouse and for product variants. Consider the flexibility that can you achieve by enabling dedicated demand replenishment overflow locations that are used only for wave/load replenishment processing.
 
 ### Location setup wizard
 
@@ -72,11 +78,17 @@ As part of the configuration of the warehouse, it's important that you enable wa
 
 ### Wave templates
 
-Wave templates help enable the outbound "Release to warehouse" process. As soon as order lines are released (either directly from source documents, via batch job processes, or via loads that have already been created), the wave template functionality is used. You can create three types of wave templates: **Shipping**, **Production order**, and **Kanban**. Parameters are used to define how far the system should automatically go in the outbound work processing. A wave template is selected based on the wave template sequence and criteria that are specified in the template. If a template is listed at the top of the sequence, the criteria in that template are checked first. If the criteria can be met, the wave template is processed. Otherwise, the criteria in the next template are checked, and so on. Therefore, it's a good idea to put the template that has the most specific criteria at the top of the wave template sequence list, so that it's processed first. For example, you want to process all the work for a specific carrier today and temporarily delay processing of the work for other carriers. In this case, the wave template that selects work for that carrier should be listed higher in the sequence than other templates. Otherwise, the work for other carriers might be processed before the work for that carrier is completed. You must specify the wave process methods in each wave template. The methods that are available vary, depending on the wave template type.
+Wave templates help enable the outbound "Release to warehouse" process. As soon as order lines are released (either directly from source documents, via batch job processes, or via loads that have already been created), the wave template functionality is used. 
+
+You can create three types of wave templates: **Shipping**, **Production order**, and **Kanban**. Parameters are used to define how far the system should automatically go in the outbound work processing. A wave template is selected based on the wave template sequence and criteria that are specified in the template. If a template is listed at the top of the sequence, the criteria in that template are checked first. If the criteria can be met, the wave template is processed. Otherwise, the criteria in the next template are checked, and so on. Therefore, it's a good idea to put the template that has the most specific criteria at the top of the wave template sequence list, so that it's processed first. For example, you want to process all the work for a specific carrier today and temporarily delay processing of the work for other carriers. In this case, the wave template that selects work for that carrier should be listed higher in the sequence than other templates. Otherwise, the work for other carriers might be processed before the work for that carrier is completed. 
+
+You must specify the wave process methods in each wave template. The methods that are available vary, depending on the wave template type.
 
 ### Work templates
 
-Work template definitions play an important role in the definition of warehouse management work processes. They define what work is performed, and how the work is done. Templates can also contain a directive code that links to a location directive to determine where work is performed. Work templates include a query that specifies the criteria for the work. Each template must include at least one Pick operation and one Put operation to drive the basic work operation of transferring on-hand inventory from one location to another. If multiple workers must be able to process work for some of your warehouse operations, you might want to use the concept of *staging* for the inventory and separate the work execution into different work classes.
+Work template definitions play an important role in the definition of warehouse management work processes. They define what work is performed, and how the work is done. Templates can also contain a directive code that links to a location directive to determine where work is performed. Work templates include a query that specifies the criteria for the work. Each template must include at least one Pick operation and one Put operation to drive the basic work operation of transferring on-hand inventory from one location to another. 
+
+If multiple workers must be able to process work for some of your warehouse operations, you might want to use the concept of *staging* for the inventory and separate the work execution into different work classes.
 
 ### Work pools
 
@@ -87,11 +99,15 @@ Work pools are used to organize work into groups. For example, you can create a 
 -   Cycle count work by location
 -   Cycle count work by item
 
-When you use work templates to create work, the work pool is automatically assigned to the work. Work pool IDs can also be used to limit the type of work that is directed to a particular warehouse worker, provided that this functionality is configured on the relevant mobile device menu item.
+When you use work templates to create work, the work pool is automatically assigned to the work. 
+
+Work pool IDs can also be used to limit the type of work that is directed to a particular warehouse worker, provided that this functionality is configured on the relevant mobile device menu item.
 
 ### Location directives
 
-As the name suggests, location directives are used to direct the work transactions to the appropriate locations in the warehouse. In other words, they define where to pick and put. To make it easier and quicker to define the actions that are associated with each location directive line, use one of the predefined strategies. For example, you can use the **Empty location with no incoming work** strategy to search for free locations in a warehouse, or you can use **FEFO batch reservation** strategy for outbound sales picking.
+As the name suggests, location directives are used to direct the work transactions to the appropriate locations in the warehouse. In other words, they define where to pick and put. 
+
+To make it easier and quicker to define the actions that are associated with each location directive line, use one of the predefined strategies. For example, you can use the **Empty location with no incoming work** strategy to search for free locations in a warehouse, or you can use **FEFO batch reservation** strategy for outbound sales picking.
 
 See also
 --------
