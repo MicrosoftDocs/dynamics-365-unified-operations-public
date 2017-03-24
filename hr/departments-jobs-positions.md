@@ -140,10 +140,6 @@ Use the position hierarchy to view the reporting structure of positions. If you 
 For some records, you can specify future changes to the record. The following information is date effective.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Records</th>
