@@ -68,10 +68,6 @@ Earning codes are shared across legal entities. However, the information on the 
 Each earning type should have a unique earning code. The following information is entered on the **Earning codes** page.
 
 <table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Fields</th>
@@ -122,10 +118,6 @@ Each earning type should have a unique earning code. The following information i
 The following information is entered on the **General** tab.
 
 <table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
