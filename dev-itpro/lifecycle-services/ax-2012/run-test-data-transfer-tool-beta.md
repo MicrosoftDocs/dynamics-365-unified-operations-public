@@ -80,6 +80,7 @@ After processing is completed, the tool writes the DPLog.xml log file to the cur
     DP.exe direction directory database server
 
 All arguments are optional.
+
 | Parameter   | Default value         | Description                                                                                                                                                                                                                                                                                                           |
 |-------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *direction* | EXPORT                | Specify EXPORT to export data or IMPORT to import data.                                                                                                                                                                                                                                                               |
@@ -100,6 +101,7 @@ The Test Data Transfer Tool (beta) exports and imports three files for each Micr
 ### Export and import process
 
 The following table describes the three types of files.
+
 | File type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | .out      | A bcp data file that contains table data. Columns are separated by \#|EOC|\#. Rows are separated by \#|EOR|\#n.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -117,6 +119,7 @@ The procedure for exporting data consists of the following general steps:
 ### Generate the Metadata.xml file
 
 Before you use the Test Data Transfer Tool (beta) to export data, you must generate the Metadata.xml file on the source system. The Metadata.xml file is used only during export.
+
 | **Note**                                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | The Metadata.xml file can become out of date if you do not update it periodically. If the file is out of date, the exported data might not contain the **elementType** attribute, and the import might not update the IDs to match the IDs in the target database.You must update the file manually. |
@@ -139,11 +142,13 @@ The Test Data Transfer Tool (beta) is designed to export all data from all table
 -   Do not export temp tables.
 
 These filters might not be complete or appropriate for your requirements. For example, you might want to export some of the data that is filtered out by default, or you might have additional tables that should not be exported.
+
 | **Important**                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | If a table contains a **RecVersion** column, the Test Data Transfer Tool (beta) ignores the current value in the table and always exports the table by using the value 1. This feature makes it much easier to compare .out files and see only meaningful differences. This feature is especially useful when you keep your data in a version control system. Most Microsoft Dynamics AX tables contain a **RecVersion** column. |
 
 The following table describes the export strategies that are used in the standard exclude files and the Filters.xml file.
+
 | Content of the table                                                       | Export strategy                 | Reason                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Code, system data, or user data that is not connected to the business data | Exclude this table from export. | This strategy prevents data from being unintentionally changed when business data is imported.                                                                                                                                                                                        |
@@ -182,6 +187,7 @@ To exclude all tables that have names that start with SysVersionControl, use the
 #### Including tables in the export
 
 Typically, you specify the data that is exported by describing the tables that you do not want to export. However, if you want to describe the tables that you do want to export, you can use a regular expression in an exclude list. Just create a regular expression that matches all tables except the tables that you want to export. The following table describes the syntax that you can include in your regular expression.
+
 | Regular expression syntax | Description                                                                                                                                                     |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | .                         | Match any single character.                                                                                                                                     |
@@ -241,7 +247,6 @@ In this case, you can imagine that the SQL query that defines the rows to export
 
 In this case, you can imagine that the SQL query that defines the rows to export is SELECT \* FROM SysPersonalization WHERE 0 = 1.
 Importing data
---------------
 
 The Test Data Transfer Tool (beta) is designed to try to import all the data in the directory that you specify. The tool does not perform any filtering during import. The only exception to this rule is the **SystemSequences** table. The tool exports the **SystemSequences** table just like any other table. However, during import, the tool ignores any data that you supply for this table. Instead, the tool updates the **SystemSequences** table in the database for each table that is imported if the next **RecID** value for that table in the **SystemSequences** table is less than the maximum **RecID** in the table that is being imported. As each table is imported, the tool also makes any adjustments that are required to the other ID values that are stored in the **SystemSequences** table. You can import a table that has no rows in the .out file. You can also not import a table at all. These two operations are not the same. When you import a table that has no rows, the existing data in that table is deleted. However, if you do not import a table at all, the existing data in that table is untouched. For each table that must be imported, the tool performs the following actions:
 1.  The tool searches for a table in the target database that has the same origin GUID.
