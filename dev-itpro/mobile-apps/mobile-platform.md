@@ -62,16 +62,18 @@ We provide a sample workspace for Reservation management. This workspace is base
 8.  After the app has been loaded into the mobile app designer, click **Done** at the bottom of the page.
 9.  Click **Publish workspace**.
 
-### Get the mobile app
+### Get the mobile app
 
-The mobile app is being made available for the most popular mobile operating systems. You must have a Dynamics 365 for Operations instance and valid user credentials in order to log in to the app.
+The mobile app is being made available for the most popular mobile operating systems. You must have a Dynamics 365 for Operations instance and valid user credentials in order to log in to the app.
 
--   Android (available now) - [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
+-   Android (available now) - [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   iPhone (available now) - [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 -   Windows phone (UWP) (coming soon) - Dynamics 365 for Operations on the Windows store
 
 ## Understanding navigation in the mobile app
-Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. [![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. 
+
+[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 -   When you start the app, you land on the **dashboard**. On the **dashboard**, you can see a list of **workspaces** that are published in your Dynamics 365 for Operations environment.
 -   In each **workspace**, you can see a list of **pages** that are available for that workspace.
@@ -85,7 +87,9 @@ Navigation in the mobile app consists of four simple concepts: the dashboard, wo
 At any time, you can pull-to-refresh in the mobile app to make the mobile app update its data or metadata. After you edit an existing workspace or publish a workspace, be sure to pull-to-refresh in the mobile app, in either the list of workspaces (if you added a workspace or business logic) or the list of pages (if you modified a page or an action). Workspaces that have been published to Dynamics 365 for Operations are visible to all users. In Microsoft Dynamics 365 for Operations platform update 3, menu item security automatically hides pages that the user doesn’t have access to. If a user doesn’t have access to any pages in a workspace, the workspace itself is hidden.
 
 ## Using the mobile app designer
-The mobile app designer lets you select the specific data fields from forms that should appear in the mobile app. [![Mobile app designer](./media/mobileappdesigner-1024x468.png)](./media/mobileappdesigner.png)
+The mobile app designer lets you select the specific data fields from forms that should appear in the mobile app. 
+
+[![Mobile app designer](./media/mobileappdesigner-1024x468.png)](./media/mobileappdesigner.png)
 
 1.  Open the Dynamics 365 for Operations client. Include the **&mode=mobile** parameter in the URL to enable the designer.
 2.  Go to **Settings** &gt; **Mobile app**.
@@ -105,8 +109,8 @@ The mobile app designer lets you select the specific data fields from forms that
 
 | Type of change                                                                            | Description                                                                                                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| New workspaces, deleted workspaces, or changes to the name, color, or icon of a workspace | Pull-to-refresh from the main landing page (dashboard) of the app, where you see the list of workspaces. [![Pull-to-refresh from the dashboard](./media/refreshworkspaces-186x300.png)](./media/refreshworkspaces.png) |
-| All other changes (new or changed pages or actions, or changes to business logic)         | Pull-to-refresh from the workspace that has the edited pages or actions. [![Pull-to-refresh from a workspace](./media/refreshpages-187x300.png)](./media/refreshpages.png)                                             |
+| New workspaces, deleted workspaces, or changes to the name, color, or icon of a workspace | Pull-to-refresh from the main landing page (dashboard) of the app, where you see the list of workspaces.<br>[![Pull-to-refresh from the dashboard](./media/refreshworkspaces-186x300.png)](./media/refreshworkspaces.png) |
+| All other changes (new or changed pages or actions, or changes to business logic)         | Pull-to-refresh from the workspace that has the edited pages or actions.<br>[![Pull-to-refresh from a workspace](./media/refreshpages-187x300.png)](./media/refreshpages.png)                                             |
 
 ## Design considerations for the mobile app platform
 The mobile app platform doesn't assume connectivity to Dynamics 365 for Operations. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
@@ -191,8 +195,8 @@ If you want just a details view for an entity, it's likely that the entity is a 
 
 ###### How do I read data from a hidden page?
 
-1.  Identify or create a page that contains the controls with the data that you want.
-2.  Refer to the following code example, which hides the page from the navigation menus, and accesses data on the page using the provided APIs. Note that 'My-Hidden-Page' and 'My-Field-Id' are the names of the page and control, respectively, and can be found when viewing the corresponding page in the designer.
+1.  Identify or create a page that contains the controls with the data that you want.
+2.  Refer to the following code example, which hides the page from the navigation menus, and accesses data on the page using the provided APIs. Note that 'My-Hidden-Page' and 'My-Field-Id' are the names of the page and control, respectively, and can be found when viewing the corresponding page in the designer.
 
         function main(metadataService, dataService, cacheService, $q) {
             myField1Value = ''; // This variable will be populated in appInit, and can then be used elsewhere in the business logic. 
@@ -222,7 +226,7 @@ Actions let users create, update, or delete data, and also run business processe
 
 1.  Identify or create a details view page for the entity.
 2.  Make sure that the form that is used for the details view page includes an **Edit** button that can be used to edit the visible record.
-3.  Make sure that the form that is used for the details view page lets users open a specific record by applying filters in the filter pane.
+3.  Make sure that the form that is used for the details view page lets users open a specific record by applying filters in the filter pane.
 4.  Use the designer to create a new action for the page. While you're designing the action, be careful not to perform any unnecessary actions. Enter data only in those fields that should be available to the user, and click only those buttons that are required (for example, the **Edit** button and the **Save** button).
 
 ### How do I design an action that enables an entity to be deleted?
@@ -302,7 +306,7 @@ This section provides valuable guidelines for building Dynamics 365 for Operatio
     -   After you open the form in the web client, open the filter pane by using the **Show filters** button. [![Show filters button](./media/filterpane.png)](./media/filterpane.png) Then click **Add a filter field**, and verify that the Master Root Data Source appears as the table for fields in the list of available fields. Other tables can also appear, but the Master Root Data Source **must** appear in this list. Otherwise, the mobile app won't enable searches and navigation that uses context.
     -   Searching: The mobile app does online searches against Dynamics 365 for Operations data by using the Filters framework behind the scenes.
     -   Navigation that uses context: The mobile app enables list-to-details navigation (and other context-aware navigation) by first opening the target form via the menu item and then using the Filters framework to show only the specified record context.
-    -   List-to-details navigation: The table that the grid is bound to on form A (the list form) must be the Master Root Data Source on the details form (form B). When a user selects a record in the list on form A, the mobile framework navigates with record context by applying filters on form B that uniquely identify the record.
+    -   List-to-details navigation: The table that the grid is bound to on form A (the list form) must be the Master Root Data Source on the details form (form B). When a user selects a record in the list on form A, the mobile framework navigates with record context by applying filters on form B that uniquely identify the record.
 
 ### Design considerations
 
@@ -342,4 +346,4 @@ If you decide to modify existing forms so that they work with the mobile framewo
 #### Dynamics 365 for Operations form control support
 
 The Dynamics 365 for Operations form controls for the various base data types (strings, dates, and numbers) and grids are supported. However, a few common controls have limited support. **Reference groups** Fields from within Reference groups controls are compatible when you design pages. However, they aren't compatible when you design Actions. Although you might be able to select these fields without experience any issue, Reference groups have a fundamental incompatibility with the mobile framework. We recommend that you not use Reference groups. Instead, add a control directly to the form, and then bind the control directly to the surrogate foreign key (SFK) by using the property sheet.
-
+v
