@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17751
@@ -59,7 +59,9 @@ In Modern POS and Cloud POS, triggers are either cancelable or non-cancelable.
 
 ### Triggers execution workflow
 
-The following diagram shows the execution workflow for both pre-triggers and post-triggers for the **ItemSaleOperation** workflow/operation. [![Trigger Execution Flow](./media/trigger-execution-flow.png)](./media/trigger-execution-flow.png)
+The following diagram shows the execution workflow for both pre-triggers and post-triggers for the **ItemSaleOperation** workflow/operation. 
+
+[![Trigger Execution Flow](./media/trigger-execution-flow.png)](./media/trigger-execution-flow.png)
 
 ### Supported trigger events
 
@@ -157,7 +159,9 @@ Transactions can't have both return and sale operations if a fiscal register is
 
 1.  Implement an **IPreProductSaleTrigger** trigger to detect the situation and show a message to prompt the cashier.
 2.  Write trigger business logic in the **Execute** method in the implementation class.
-3.  Register the trigger as part of the **PostLogonTrigger** implementation on the **DOMContentLoad** event. [![Trigger01](./media/trigger01.png)](./media/trigger01.png)
+3.  Register the trigger as part of the **PostLogonTrigger** implementation on the **DOMContentLoad** event. 
+
+[![Trigger01](./media/trigger01.png)](./media/trigger01.png)
 
 **Purpose:** To customize Modern POS/Cloud POS to implement the Swedish localization requirement that the same transaction not include both sale and return lines when a fiscal register is connected. Open a Modern POS project, and add a new TypeScript (.ts) file to add the trigger implementation. We are creating a new TypeScript file for our customization to keep our customization separate from the product code and make upgrades easier to manage.
 
@@ -166,7 +170,10 @@ Transactions can't have both return and sale operations if a fiscal register is
     -   If you're using a cloud-hosted computer, the path is I:/RetailSDK.
     -   If you're using a locally downloaded machine, the path is C:\\Microsoft Dynamics AX\\70\\Retail SDK.
 
-3.  In POS.Core\\Triggers\\, create a new TypeScript file that is named **TriggerSample.ts**. [![Trigger02](./media/trigger02-1024x411.png)](./media/trigger02.png)
+3.  In POS.Core\\Triggers\\, create a new TypeScript file that is named **TriggerSample.ts**. 
+
+[![Trigger02](./media/trigger02-1024x411.png)](./media/trigger02.png)
+
 4.  Add the following code to the TriggerSample.ts file.
 
         ///<reference path="ITrigger.ts" />

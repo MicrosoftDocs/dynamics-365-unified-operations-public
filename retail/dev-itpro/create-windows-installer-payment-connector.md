@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 141573
@@ -50,5 +50,7 @@ The installer must install the required files in the following structure:
 -   **Other utility tools** – If you have other utility tools, such as a configuration utility for a payment terminal device, you can include them here. If you don’t support any payment terminal devices, you can omit these files. The utility tool should be designed to interact only with the payment terminal devices. It should not interact with anything in Hardware station or Modern POS. Hardware station and Modern POS will be packaged together with files from the Payment Connector folder.
 -   **README.txt** – This file describes the contents of the folder and how to use any utilities that are included. The file must also include the payment page URLs that are required in the Cloud POS web.config and Modern POS package.appxmanifest files. If you support any payment terminal devices, the file must also mention the name of the assembly that implements the IPaymentDevice interface. The assembly will be registered in the Hardware Station .config file.
 
-The following illustration shows the file structure for a connector that is named TestConnector. [![File structure for TestConnector](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
+The following illustration shows the file structure for a connector that is named TestConnector. 
+
+[![File structure for TestConnector](./media/paymentconnectorinstaller.png)](./media/paymentconnectorinstaller.png)
 

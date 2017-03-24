@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 44351
@@ -46,6 +46,7 @@ To create an attribute, you must define an attribute type and then assign the at
 
 1.  In the client, click **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.
 2.  Click **New**, and enter the following values.
+
     | Property       | Value        |
     |----------------|--------------|
     | Name           | GiftWrap     |
@@ -57,6 +58,7 @@ After you define an attribute, you can add it to an attribute group.
 
 1.  Click **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute groups**.
 2.  Click **New**, and enter the following values.
+
     | Property      | Value                       |
     |---------------|-----------------------------|
     | Name          | SalesOrderGroup             |

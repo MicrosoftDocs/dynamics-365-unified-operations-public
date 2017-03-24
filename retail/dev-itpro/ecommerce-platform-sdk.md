@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Operations versions and update policy
+title: e-Commerce Platform SDK
 description: This topic describes the E-Commerce Platform SDK.
 author: kfend
 manager: AnnBe
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18101
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Dynamics 365 for Operations versions and update policy
+# e-Commerce Platform SDK
 
-This topic describes the E-Commerce Platform SDK.
+This topic describes the e-Commerce Platform SDK.
 
-**Purpose: The** E-Commerce Platform SDK consist of the following components:
+**Purpose:** The e-Commerce Platform SDK consist of the following components:
 
 -   Framework
 -   Controls
@@ -77,9 +77,9 @@ If you are accessing the web storefront over https, then you will need to update
 
 The E-Commerce web site will operate on an operating unit number(channel) specified in the web.config. To change it, change the OU \# below. Note that Fabrikam is “077” in the demo data. You will need to update the “retailServerUrl” inside web.config of the RetailStorefrontWebSite. The following two fields will need to be updated to use the machine name instead of local host:
 
--   <ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">
+    <ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">
 
--   <add key="OperatingUnitNumber" value="068" />
+    <add key="OperatingUnitNumber" value="068" />
 
 ## Configure authentication providers
 ### Authentication providers that you are using

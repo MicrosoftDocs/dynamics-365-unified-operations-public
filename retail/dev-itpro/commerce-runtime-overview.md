@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 218654
@@ -37,7 +37,9 @@ This article provides information about the architecture and configuration of th
 Commerce Runtime architecture
 -----------------------------
 
-The following diagram shows the components of the Microsoft Dynamics 365 for Operations Commerce Runtime (CRT). [![Commerce Runtime components](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
+The following diagram shows the components of the Microsoft Dynamics 365 for Operations Commerce Runtime (CRT). 
+
+[![Commerce Runtime components](./media/crt-architecture-1024x793.jpg)](./media/crt-architecture.jpg)
 
 ### Data access
 
