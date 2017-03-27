@@ -60,11 +60,6 @@ The following diagram shows the statuses that are assigned to a purchase requisi
 The overall status of a purchase requisition is determined by the status of the purchase requisition lines. Therefore, the review process must be completed for all purchase requisition lines before the review process for the whole purchase requisition can be completed. The following table describes the statuses that are assigned to a purchase requisition header and lines as the purchase requisition moves through the workflow process.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Purchase requisition status</th>

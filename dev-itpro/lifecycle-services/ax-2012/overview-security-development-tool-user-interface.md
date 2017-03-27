@@ -74,7 +74,9 @@ Use the shortcut menu to interact with entry points in the tree view. ![Security
 -   **AOT properties for menu item** – Open the AOT properties for the linked menu item.
 
 ## List view
-This section describes the controls on the ribbon of the list view. The list view provides a list of all entry points for your Microsoft Dynamics AX environment. To bulk update the level of access to entry points, you can select multiple rows in the list view. ![Security Development Tool List View](./media/sdt_listcontextmenu.png)
+This section describes the controls on the ribbon of the list view. The list view provides a list of all entry points for your Microsoft Dynamics AX environment. To bulk update the level of access to entry points, you can select multiple rows in the list view.
+![Security Development Tool List View](./media/sdt_listcontextmenu.png)
+
 | **Note**                                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | When you select an entry point in the list, the entry point is not selected automatically in the tree view. Use the shortcut menu to interact with entry points in the list view. The options resemble the options that are available in the tree view. |

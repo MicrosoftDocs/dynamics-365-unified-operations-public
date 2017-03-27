@@ -53,9 +53,9 @@ Your paid time off (PTO) plan has three rates, which are based on years of emplo
 
 The benefit accrual is based on the years of employment. For workers to accrue the correct total, you must convert the years of employment to months of employment. You must also convert the number of PTO days per year to the number of PTO hours that accrue for every hour that is worked. To convert the years of employment to months of employment, multiply the number of years by 12. Here are the calculations for the example plan:
 
-0 × 12 = 0 
-5 × 12 = 60 
-10 × 12 = 120
+   >   0 × 12 = 0 
+   >   5 × 12 = 60 
+   >   10 × 12 = 120
 
 To convert the PTO days per year to the hourly accrual rate, multiply the number of days that accrue per year by the number of hours in a work day to get the number of hours that accrue per year. Then divide that number by the number of hours that are worked in a year to get the hourly accrual rate. The following formula will work for most workers: 
 
@@ -63,9 +63,9 @@ Number of days accrued per year × 8 hours worked in a day ÷ 2,080 hours worked
 
 Here are the calculations for the example plan:
 
-10 × 8 ÷ 2,080 = 0.03846 
-15 × 8 ÷ 2,080 = 0.05769 
-20 × 8 ÷ 2,080 = 0.07692
+   >   10 × 8 ÷ 2,080 = 0.03846 
+   >   15 × 8 ÷ 2,080 = 0.05769 
+   >   20 × 8 ÷ 2,080 = 0.07692
 
 Enter these numbers into a table, as shown here, to make it easier for you to set up the plan rules.
 
@@ -81,10 +81,6 @@ Enter these numbers into a table, as shown here, to make it easier for you to se
 To set up the benefit accrual plans, enter the following information on the **Benefit accrual plans** page.
 
 <table>
-<colgroup>
-<col width="35%" />
-<col width="65%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>

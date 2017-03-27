@@ -131,6 +131,7 @@ With the modified configuration file, when you create or update an archive or pu
 ### Trace pane
 
 All tasks contain the following fields. Archive and restore archive tasks do not include **Start time** and **End time** fields, but provide a **Duration** field instead.
+
 | Field          | Description                                                                                                                                                                                                                                                                                                                         |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Start time** | The start time of the subtask. This field is available for all tasks except for ledger periods, archive, and restore tasks.                                                                                                                                                                                                         |

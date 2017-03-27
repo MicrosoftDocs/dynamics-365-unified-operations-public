@@ -53,37 +53,14 @@ This example shows how you can limit the configuration of a speaker to specific 
 
 The next table shows the combinations that are defined by the **Color and finish** table constraint. By using this table constraint, you can configure a speaker that has an oak finish and a black grill, a Rosewood finish and a white grill, and so on.
 
-Table constraint
-
-Finish
-
-Grill
-
-Color and finish
-
-Oak
-
-Black
-
-Rosewood
-
-White
-
-White
-
-Black
-
-White
-
-White
-
-Black
-
-Black
-
-Black
-
-Metal
+| Finish         | Grill                       |
+|----------------|-----------------------------|
+| Oak            | Black                       |
+| Rosewood       | White                       |
+| White          | Black                       |
+| White          | White                       |
+| Black          | Black                       |
+| Black          | Metal                       | 
 
 You can create system-defined and user-defined table constraints. For more information, see [System-defined and user-defined table constraints](system-defined-user-defined-table-constraints.md).
 
@@ -91,7 +68,9 @@ You can create system-defined and user-defined table constraints. For more infor
 You must use Optimization Modeling Language (OML) syntax when you write constraints. The system uses Microsoft Solver Foundation constraint solver to solve the constraints.
 
 ## Should I use table constraints or expression constraints?
-You can use either expression constraints or table constraints, depending on how you prefer to build the constraints. You build a table constraint as a matrix, whereas an expression constraint is an individual statement. When you configure a product, it doesn't matter what kind of constraint is used. The following example shows how the two methods differ. When you configure a product by using the following constraint setups, these combinations are allowed:
+You can use either expression constraints or table constraints, depending on how you prefer to build the constraints. You build a table constraint as a matrix, whereas an expression constraint is an individual statement. When you configure a product, it doesn't matter what kind of constraint is used. The following example shows how the two methods differ.  
+
+When you configure a product by using the following constraint setups, these combinations are allowed:
 
 -   A product in the color Black, and in size 30 or 50
 -   A product in the color Red and in size 20

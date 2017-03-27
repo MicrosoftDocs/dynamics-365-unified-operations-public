@@ -47,26 +47,26 @@ You want to provide the cashier and manager more information about sales. For ex
 5.  Open the CustomControl.html file, and replace the existing code with the following code. This code adds two new properties and binds them to the **CustomControlOptions** class.
 
         <!DOCTYPE html>
-        <html>
-        <head>
-        <meta charset="utf-8" />
-        <title>CustomControl</title>
-        </head>
-        <body>
-        <div data-bind="customControlInternal: 'CustomControlOptions'">
-        <div class="panel marginBottom1 marginTop05 primaryPanelBackgroundColor highContrastBorderThin height01">
-        <div class="row padTop1 padBottom0">
-        <div class="secondaryFontColor"><h4>Total quantities:</h4></div>
-        <div class="textRight"><h4 data-bind="text: _quantities" class="wrapText"></h4></div>
-        </div>
-        <div class="row padTop1 padBottom0">
-        <div class="secondaryFontColor"><h4>Voided lines:</h4></div>
-        <div class="textRight"><h4 data-bind="text: _voidedLines" class="wrapText"></h4></div>
-        </div>
-        </div>
-        </div>
-        </body>
-        </html>
+            <html>
+                <head>
+                    <meta charset="utf-8" />
+                    <title>CustomControl</title>
+                </head>
+                <body>
+                    <div data-bind="customControlInternal: 'CustomControlOptions'">
+                        <div class="panel marginBottom1 marginTop05 primaryPanelBackgroundColor highContrastBorderThin height01">
+                            <div class="row padTop1 padBottom0">
+                                <div class="secondaryFontColor"><h4>Total quantities:</h4></div>
+                                <div class="textRight"><h4 data-bind="text: _quantities" class="wrapText"></h4></div>
+                            </div>
+                            <div class="row padTop1 padBottom0">
+                                <div class="secondaryFontColor"><h4>Voided lines:</h4></div>
+                                <div class="textRight"><h4 data-bind="text: _voidedLines" class="wrapText"></h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </body>
+            </html>
 
 6.  Open the CustomControl.ts file, and add the following code. There are two methods. One method retrieves the total quantities, and the other retrieves the voided quantities. The values are assigned to private variables that are bound to the user interface on the HTML page.
 

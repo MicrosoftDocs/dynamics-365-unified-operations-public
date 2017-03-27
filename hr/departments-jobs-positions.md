@@ -105,7 +105,8 @@ Use job types to classify similar jobs into categories. Job types, just like job
 ### Areas of responsibility
 
 Use areas of responsibility to indicate the work roles, processes, and products that a worker in a position for that job would be responsible for. An example of an area of responsibility for a job titled “Accountant” might be “Financial reporting for Product A”.
- Positions
+
+Positions
 ----------
 
 Positions are an important element of the lower level of an organization hierarchy. A position is an individual instance of a job. For example, the position, “Sales manager (East),” is just one of the positions that is associated with the job, “Sales manager.” Positions exist in a department and are assigned to workers.
@@ -140,10 +141,6 @@ Use the position hierarchy to view the reporting structure of positions. If you 
 For some records, you can specify future changes to the record. The following information is date effective.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Records</th>

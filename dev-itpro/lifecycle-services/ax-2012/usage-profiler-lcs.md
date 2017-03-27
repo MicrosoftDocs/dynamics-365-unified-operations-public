@@ -86,6 +86,7 @@ The following table lists the sections that you can enter data for.
 ### Enter data directly in Usage profiler
 
 Click each section, and enter the requested data for your organization. Only modules that were imported from Business Process Modeler will be visible.
+
 | **Note**                                                                                                                               |
 |----------------------------------------------------------------------------------------------------------------------------------------|
 | The **Usage profiler** page is a panorama page. Scroll to the right by using your mouse wheel or the lower scroll bar in your browser. |

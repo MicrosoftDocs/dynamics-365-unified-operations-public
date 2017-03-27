@@ -169,7 +169,7 @@ The following links (also included in the methodology) describe key concepts and
 ## User interface concepts
 The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](..\user-interface\user-interface-development-home-page.md).
 
-## BI and reporting
+## Analytics
 ### Tutorials
 
 -   [How to create a Power BI report](..\analytics-bi-reporting\create-powerbi-report-data.md)

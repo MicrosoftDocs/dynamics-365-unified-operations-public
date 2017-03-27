@@ -73,8 +73,6 @@ See also
 
 [How to: Add a Relation to a Table](http://msdn.microsoft.com/library/1b164b99-de08-4557-8da5-1931d9469ca1(AX.60).aspx)
 
-[How to: Create a Field Group](href="http://msdn.microsoft.com/library/798cf898-d5a0-45f2-9e68-edd0aedc13a4(AX.60).aspx)
-
 [How to: Create an Index](http://msdn.microsoft.com/library/5c412c46-724b-4498-ab42-51725f15c71a(AX.60).aspx)
 
 [Tables, Views, and Maps](http://msdn.microsoft.com/library/9c62bde0-46a1-4b48-87b2-778a68627cd1(AX.60).aspx)

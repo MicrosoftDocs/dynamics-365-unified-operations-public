@@ -37,10 +37,20 @@ This article describes calculations for product configuration models and explain
 Calculations can be used for arithmetic or logical operations. They complement expression constraints in product configuration models. You can define calculations on the **Constraint-based product configuration model details** page and then build expressions for the calculations in the expression editor. For more information, see Create calculations.
 
 ## What is a calculation?
-A calculation is an element that you can use in a product configuration model. Calculations complement constraints by letting you use decimal numbers to calculate values when you configure a product. Additionally, calculations have a larger set of available operators than constraints have. Like a constraint, a calculation is associated with a specific component in a product configuration model, and can’t be reused by or shared with another component. One important difference between calculations and constraints is that calculations are imperative (unidirectional), whereas constraints are declarative (bi-directional). For more information about constraints, see [Expression constraints and table constraints](http://ax.help.dynamics.com/en/wiki/expression-constraints-and-table-constraints/). A calculation consists of a target attribute and a calculation expression.
+A calculation is an element that you can use in a product configuration model. Calculations complement constraints by letting you use decimal numbers to calculate values when you configure a product. Additionally, calculations have a larger set of available operators than constraints have.  
+
+Like a constraint, a calculation is associated with a specific component in a product configuration model, and can’t be reused by or shared with another component. One important difference between calculations and constraints is that calculations are imperative (unidirectional), whereas constraints are declarative (bi-directional). For more information about constraints, see [Expression constraints and table constraints](http://ax.help.dynamics.com/en/wiki/expression-constraints-and-table-constraints/).  
+
+A calculation consists of a target attribute and a calculation expression.
 
 ## What is a target attribute?
-A target attribute is an attribute that receives the result of the calculation expression. In the following expression, the target attribute is a tablecloth measurement: **Expression:** If\[decimalAttribute1 &lt;= decimalAttribute2, True, False\] **DecimalAttribute1** is the table length, and **decimalAttribute2** is the tablecloth length. The expression returns the value **True** to the target attribute if **decimalAttribute2** is greater than or equal to **decimalAttribute1**. Otherwise, the expression returns **False**. Therefore, the tablecloth measurement is acceptable if the tablecloth length is the same as or exceeds the length of the table.
+A target attribute is an attribute that receives the result of the calculation expression.  
+
+In the following expression, the target attribute is a tablecloth measurement:  
+
+**Expression:** If\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]  
+
+**DecimalAttribute1** is the table length, and **decimalAttribute2** is the tablecloth length. The expression returns the value **True** to the target attribute if **decimalAttribute2** is greater than or equal to **decimalAttribute1**. Otherwise, the expression returns **False**. Therefore, the tablecloth measurement is acceptable if the tablecloth length is the same as or exceeds the length of the table.
 
 ## What attribute types can be set to target attributes?
 All attribute types that the product configurator supports can be set to target attributes, except text without a fixed list.
@@ -50,7 +60,11 @@ No, the value of a target attribute can’t restrict the values of the input at
 
 ### Example
 
-In the following expression, the target for the calculation is the length of a power cord, and the input value is a color: **Expression:** \[If Color == "Green", 1.5, 1.0\] When you configure the item, the length of the power cord is set to **1.5** if you specify **Green** as the value of color attribute. If you specify any other color, the length is set to **1.0**. However, because calculations are unidirectional, the calculation doesn't set the value of the color attribute to **Green** if you specify a length of **1.5**.
+In the following expression, the target for the calculation is the length of a power cord, and the input value is a color:  
+
+**Expression:** \[If Color == "Green", 1.5, 1.0\]  
+
+When you configure the item, the length of the power cord is set to **1.5** if you specify **Green** as the value of color attribute. If you specify any other color, the length is set to **1.0**. However, because calculations are unidirectional, the calculation doesn't set the value of the color attribute to **Green** if you specify a length of **1.5**.
 
 ## What happens if a calculation has a target attribute of the integer type but a calculation generates a decimal number?
 If a target attribute is of the integer type, but a calculation generates a decimal number, only the integer part of the calculated result is returned. The decimal part is removed, and the result isn't rounded. For example, a result of 12.70 is shown as 12.

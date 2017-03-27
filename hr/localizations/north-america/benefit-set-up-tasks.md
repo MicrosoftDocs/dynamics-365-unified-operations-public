@@ -48,10 +48,6 @@ A benefit is a combination of the benefit type, plan, and option:
 To set up benefits, you must first set up benefit types. On the **Benefit elements** page, in the **Types** area, click **New** to create a benefit type. Then enter the following information.
 
 <table>
-<colgroup>
-<col width="35%" />
-<col width="65%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -83,10 +79,6 @@ To set up benefits, you must first set up benefit types. On the **Benefit elemen
 You must also set up benefit plans. On the **Benefit elements** page, in the **Plans** area, click **New** to create a new benefit plan. Then enter the following information.
 
 <table>
-<colgroup>
-<col width="35%" />
-<col width="65%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -115,13 +107,11 @@ You must also set up benefit plans. On the **Benefit elements** page, in the **P
 </tbody>
 </table>
 
-Next, you must select the pretax basis for the plan on the **Tax rule** FastTab. The pretax basis determines the pattern of before-tax and after-tax treatment for payroll deductions and employer contributions. In the rare event that no preset options are available for your plan, select **Custom**, and then select a custom pretax method to specify the taxes that should not be deducted from the paychecks of employees who enroll in the plan. **Caution:** Select **Custom** only when no preset patterns are appropriate. If you must use **Custom**, work with your legal advisors to verify that the settings for the benefit plan are correct. For **Retirement** plans, you must enter the following information on the **Retirement plans** FastTab.
+Next, you must select the pretax basis for the plan on the **Tax rule** FastTab. The pretax basis determines the pattern of before-tax and after-tax treatment for payroll deductions and employer contributions. In the rare event that no preset options are available for your plan, select **Custom**, and then select a custom pretax method to specify the taxes that should not be deducted from the paychecks of employees who enroll in the plan. 
+
+**Caution:** Select **Custom** only when no preset patterns are appropriate. If you must use **Custom**, work with your legal advisors to verify that the settings for the benefit plan are correct. For **Retirement** plans, you must enter the following information on the **Retirement plans** FastTab.
 
 <table>
-<colgroup>
-<col width="35%" />
-<col width="65%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -150,10 +140,6 @@ You enter the actual amount of the contribution limit on the <strong>Payroll det
 Enter the following information on the **Payroll details** FastTab.
 
 <table>
-<colgroup>
-<col width="35%" />
-<col width="65%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -189,7 +175,11 @@ Deductions and contributions for the selected benefit plan are included in payro
 </tr>
 <tr class="odd">
 <td>Deduction priority</td>
-<td>Enter a number to specify where this deduction should be made in the sequence of applicable deductions. The lower the deduction priority number that you enter, the higher the deduction priority. The lowest deduction priority number that you can enter is 0 (zero). When amounts are deducted from pay statements, the deductions start with the benefit that has the lowest deduction priority number. When multiple benefits have the same number, the deductions for those benefits are made in alphabetical order. <strong>Caution:</strong> Some benefits are considered mandatory deductions in some states. Those benefit plans should have the highest deduction priority (that is, the lowest deduction priority number). In many states, deductions for garnishments and tax levies must be made before deductions for any other benefits are made. For more information, see <a href="garnishment-tax-levy-set-up-tasks.md">Garnishment and tax levy setup tasks</a>. By default, the value in this field is entered on the <strong>Maintain benefits</strong> page when a worker is enrolled in a benefit. You can change the value for a worker at the time of enrollment or at any other time. If you change the default value, existing benefit assignments don't change. You must change those values individually.</td>
+<td>Enter a number to specify where this deduction should be made in the sequence of applicable deductions. The lower the deduction priority number that you enter, the higher the deduction priority. The lowest deduction priority number that you can enter is 0 (zero). When amounts are deducted from pay statements, the deductions start with the benefit that has the lowest deduction priority number. When multiple benefits have the same number, the deductions for those benefits are made in alphabetical order. 
+
+<strong>Caution:</strong> Some benefits are considered mandatory deductions in some states. Those benefit plans should have the highest deduction priority (that is, the lowest deduction priority number). In many states, deductions for garnishments and tax levies must be made before deductions for any other benefits are made. For more information, see <a href="garnishment-tax-levy-set-up-tasks.md">Garnishment and tax levy setup tasks</a>. 
+
+By default, the value in this field is entered on the <strong>Maintain benefits</strong> page when a worker is enrolled in a benefit. You can change the value for a worker at the time of enrollment or at any other time. If you change the default value, existing benefit assignments don't change. You must change those values individually.</td>
 </tr>
 <tr class="even">
 <td>Default deduction limits Default contribution limits</td>
@@ -255,10 +245,6 @@ Use the data in your own table to set up the contribution calculation rate table
 **Caution:** The tier type that you select can significantly affect the amount of the employer's contribution for the retirement benefit plan. See the example earlier in this section to understand how tier types affect employer contribution amounts. When you create your rate table, you must enter the following information on the **Maintain rate structure versions** page.
 
 <table>
-<colgroup>
-<col width="35%" />
-<col width="65%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -312,10 +298,6 @@ If any eligibility overrides are required, enter the following information on th
 On the **Payroll** FastTab, you must enter the following information for the benefit. Note that this FastTab might include settings only for deductions, only for contributions, or for both deductions and contributions. The settings that are included depend on the value of the **Payroll impact** field for the benefit plan on the **Benefit elements** page. If the **Payroll impact** field is set to **None**, this FastTab isn't available. The values on this FastTab are used as default values on the **Maintain benefits** page for each worker who is enrolled in the selected benefit.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>

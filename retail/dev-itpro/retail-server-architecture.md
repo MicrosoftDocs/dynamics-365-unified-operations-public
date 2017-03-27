@@ -3,7 +3,7 @@
 
 title: Retail Server architecture
 description: This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
-author: kfend
+author: robinr
 manager: AnnBe
 ms.date: 2016-02-05 00 - 51 - 34
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 31521
@@ -37,13 +37,13 @@ This article describes the architecture of Retail Server. Retail Server provides
 Retail Server architecture
 --------------------------
 
-The commerce runtime is wrapped in a Retail Server layer. Retail Server uses a web API and OData to support thin clients both in the store and online on tablets and phones. The commerce runtime communicates with Retail Headquarters through Commerce Data Exchange services. The following diagram shows the architecture of Retail Server. [![RetailServer](./media/retailserver.png)](./media/retailserver.png) Retail Server uses the following concepts.
+The commerce runtime is wrapped in a Retail Server layer. Retail Server uses a web API and OData to support thin clients both in the store and online on tablets and phones. The commerce runtime communicates with Retail Headquarters through Commerce Data Exchange services. The following diagram shows the architecture of Retail Server. 
+
+[![RetailServer](./media/retailserver.png)](./media/retailserver.png) 
+
+Retail Server uses the following concepts.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Concept</th>

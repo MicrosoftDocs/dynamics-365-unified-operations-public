@@ -44,9 +44,8 @@ Before you can assign a skill to a person or a job, create a skill-mapping searc
 
 ## Rating models
 Rating models help evaluate a person's actual level of skill, the level they should work to achieve, or the level of skill that is required for a job. You can enter up to 10 levels for a rating model.  Each level in a rating model is assigned a factor.  The factor value will be used to normalize the scores of skills that use different rating models.  The factor must be a number between 0-9 and each level must have a unique factor.  Levels with higher factor values carry more weight in a rating model.
- Specify job skills
--------------------
 
+## Specify job skills
 When you enter information about a job, you can specify the skills that a person should have to perform the work required for the job.  In addition you can specify the desired level for each skill as well the level of importance of the skill. Different jobs can require different levels of importance for the same skill.
 
 ## Enter skills for workers, applicants, or contacts

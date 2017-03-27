@@ -1,10 +1,11 @@
-# [Human Resources home page](human-resources-landing.md)
+# [Human resources home page](index.md)
 # Develop Human resources strategy
 ## [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
 ## [Set up job components](create-job.md)
 ## [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
 ## [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
 ## [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
+## [Use workflow to manage employee information](use-workflow-to-manage-employee-information.md)
 # Recruit, hire, and motivate employees
 ## [Manage a recruiting process](manage-recruiting-process.md)
 ## [Mass hire projects](mass-hire-projects.md)
@@ -26,8 +27,8 @@
 ## [Evaluate the results of a questionnaire](questionnaire/evaluate-questionnaire-results.md)
 # United States features
 ## Workplace safety and compliance
-### [Form I-9 employment verification](/localizations/north-america/form-i-9-verification.md)
-### [Comply with the ADA](/localizations/north-america/usa-comply-with-the-americans-with-disabilities-act.md)
+### [Form I-9 employment verification](localizations/north-america/form-i-9-verification.md)
+### [Comply with the ADA](localizations/north-america/usa-comply-with-the-americans-with-disabilities-act.md)
 ## [Payroll](localizations/north-america/payroll.md)
 ### Payroll setup
 #### [Set up payroll for workers](localizations/north-america/worker-position-payroll-tasks.md)

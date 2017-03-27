@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 18341
@@ -59,13 +59,27 @@ Checklist to follow before activation
 
 ## Activate a Modern POS or Cloud POS device by using guided activation
 1.  Open the initial device activation page for Modern POS or Cloud POS. You're prompted to sign in.
-2.  On the **Before you start** page, follow the instructions, and then click **Next**.![p24](./media/p24.png)
+2.  On the **Before you start** page, follow the instructions, and then click **Next**.
+
+    ![p24](./media/p24.png)
+
 3.  Start Cloud POS or Modern POS.
-4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Retail Modern POS self-service and device activation](..\retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.[![p18](./media/p18.png)](./media/p18.png)
+4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Retail Modern POS self-service and device activation](..\retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
+
+    [![p18](./media/p18.png)](./media/p18.png)
+
 5.  Click **Next** to populate the list of stores.
-6.  Select the correct store in the list.[![p20](./media/p20.png)](./media/p20.png)
-7.  Select the correct register and device. **Note:** The device can be **Pending**, **De-activated**, or **Activated**. Alternatively, if you turned on the Retail HQ **Allow devices to be associated to registers from store** setting, you might see a list of registers that have no device associated with them. [![p22](./media/p22.png)](./media/p22.png)
-8.  Click **Activate**. The device should be activated. [![p23](./media/p23.png)](./media/p23.png)
+6.  Select the correct store in the list.
+
+    [![p20](./media/p20.png)](./media/p20.png)
+
+7.  Select the correct register and device. **Note:** The device can be **Pending**, **De-activated**, or **Activated**. Alternatively, if you turned on the Retail HQ **Allow devices to be associated to registers from store** setting, you might see a list of registers that have no device associated with them. 
+
+    [![p22](./media/p22.png)](./media/p22.png)
+
+8.  Click **Activate**. The device should be activated. 
+
+    [![p23](./media/p23.png)](./media/p23.png)
 
 ## Create a device ID from Modern POS and Cloud POS
 We have added features to create a device (that is, automatically generate a device ID) from Modern POS or Cloud POS, so that the device can be associated with a register that doesn't yet have devices mapped to it. This functionality can be used in Modern POS only if you set the HQ settings as follows.
@@ -78,8 +92,20 @@ We have added features to create a device (that is, automatically generate a dev
 6.  Click **Activate** to create a new device ID, associate it with the selected register, and complete the activation.
 
 ## Activate the device for Modern POS by using a configuration file
-IT Pros can now easily configure device activation for Modern POS by using a configuration file that can be downloaded together with Modern POS. This file is now available on the **Devices** page for the appropriate Modern POS device (**Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**). [![Configuration file download](./media/p16_11_16-1024x481.png)](./media/p16_11_16.png) The configuration file is used to enter the Retail Server URL, device ID, and register number for device activation. During installation, the installer selects this file and populates the values for device activation. **Important:** The user must put the file in the same folder as the Modern POS self-service package and run the .exe file. [![Configuration file](./media/p17_11_16-1024x532.png)](./media/p17_11_16.png) Modern POS starts in Manual entry mode, and the Retail Server URL, device ID, and register ID are pre-populated for activation.
+IT Pros can now easily configure device activation for Modern POS by using a configuration file that can be downloaded together with Modern POS. This file is now available on the **Devices** page for the appropriate Modern POS device (**Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**). 
+
+[![Configuration file download](./media/p16_11_16-1024x481.png)](./media/p16_11_16.png) 
+
+The configuration file is used to enter the Retail Server URL, device ID, and register number for device activation. During installation, the installer selects this file and populates the values for device activation. **Important:** The user must put the file in the same folder as the Modern POS self-service package and run the .exe file. 
+
+[![Configuration file](./media/p17_11_16-1024x532.png)](./media/p17_11_16.png) 
+
+Modern POS starts in Manual entry mode, and the Retail Server URL, device ID, and register ID are pre-populated for activation.
 
 ## Activate the device for Cloud POS by using syntactic sugar
-IT Pros can now configure device activation for Cloud POS by providing the device ID and register ID as the part of the Cloud POS URL. The link is available in the **Cloud POS URL** field on the **Devices** page. (**Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**). [![Cloud POS URL field](./media/p15_11_16-1024x436.png)](./media/p15_11_16.png) Cloud POS starts in Manual entry mode, and the Retail Server URL, device ID, and register ID are pre-populated for activation.
+IT Pros can now configure device activation for Cloud POS by providing the device ID and register ID as the part of the Cloud POS URL. The link is available in the **Cloud POS URL** field on the **Devices** page. (**Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**). 
+
+[![Cloud POS URL field](./media/p15_11_16.png)](./media/p15_11_16.png) 
+
+Cloud POS starts in Manual entry mode, and the Retail Server URL, device ID, and register ID are pre-populated for activation.
 

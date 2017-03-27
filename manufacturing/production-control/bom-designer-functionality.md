@@ -34,7 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs). You can click Setup to select different configurations and specify what information appears on the lines of the tree.
 
-When you open the **BOM designer** page from the **Released products** page, it displays the hierarchy of bills of materials (BOMs) that are active and approved for the selected item, the default order site of the item, and the actual date. Click **Filter** to change the initial selection in the view. By setting the display principle to **Selected/Active or Selected**, you can select individual BOM or route versions to use in the view. You can select non-approved and non-active BOM versions to show or maintain in the BOM designer. **Note:** If you open the BOM designer from the **Bills of materials** list page, it doesn't display route information. Currently, the selection of a BOM or route version is a property of the BOM and route version, and applies to all instances of the BOM designer. The following sections describe the functionality that is available on the various tabs of the BOM designer.
+When you open the **BOM designer** page from the **Released products** page, it displays the hierarchy of bills of materials (BOMs) that are active and approved for the selected item, the default order site of the item, and the actual date.  
+
+Click **Filter** to change the initial selection in the view. By setting the display principle to **Selected/Active or Selected**, you can select individual BOM or route versions to use in the view. You can select non-approved and non-active BOM versions to show or maintain in the BOM designer.  
+
+**Note:** If you open the BOM designer from the **Bills of materials** list page, it doesn't display route information. Currently, the selection of a BOM or route version is a property of the BOM and route version, and applies to all instances of the BOM designer.  
+
+The following sections describe the functionality that is available on the various tabs of the BOM designer.
 
 ## Analyzing a BOM structure by using the BOM designer
 The BOM designer has two sections:
@@ -51,10 +57,6 @@ The BOM designer has two sections:
 The filter that is applied for the BOM and route is displayed in the header of the BOM designer. You can change the filter by using the **Filter** dialog box. The following table describes the fields in this dialog box.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>

@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 85493
@@ -50,7 +50,11 @@ However, for most other cases, and especially when you don't have access to Even
 
 ### Find Retail-specific events in Event Viewer
 
-To start Event Viewer on a computer, right-click the **Start** button, and then click **Event Viewer**. [![Event Viewer command on the shortcut menu for the Start button](./media/launch-event-viewer.png)](./media/launch-event-viewer.png) All Retail-specific event logs can be found under the following path in Event Viewer: Application and Services Logs\\Microsoft\\Dynamics We provide the following Retail-specific event logs:
+To start Event Viewer on a computer, right-click the **Start** button, and then click **Event Viewer**. 
+
+[![Event Viewer command on the shortcut menu for the Start button](./media/launch-event-viewer.png)](./media/launch-event-viewer.png) 
+
+All Retail-specific event logs can be found under the following path in Event Viewer: Application and Services Logs\\Microsoft\\Dynamics We provide the following Retail-specific event logs:
 
 -   **Commerce-RetailServer** – This log contains events that are logged by the Retail Server components.
 -   **Commerce-ModernPos** – This log contains events that are logged by Retail Modern POS. These events include events from the TypeScript and C\# (CRT) layer.
@@ -96,7 +100,9 @@ Whenever a POS client makes a call to the Retail Server, the AppSessionID and U
 
 #### Request activity on Retail Server
 
-Every event that is logged as part of a Retail Server request has the same ActivityID as the initial event that was logged for the initial incoming request event (Event ID 5000). These events are available in both Event Viewer and LCS Log Search. [![Data flow between a POS client and Retail Server](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
+Every event that is logged as part of a Retail Server request has the same ActivityID as the initial event that was logged for the initial incoming request event (Event ID 5000). These events are available in both Event Viewer and LCS Log Search. 
+
+[![Data flow between a POS client and Retail Server](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
 
 ### Finding Retail Modern POS events in Event Viewer
 
@@ -105,7 +111,9 @@ Every event that is logged by Retail Modern POS includes the following data poin
 -   **AppSessionID** – A unique ID that is generated when the app is first started. It's included with every event that is logged from Retail Modern POS.
 -   **UserSessionID** – A unique ID that is generated when a user signs in to Retail Modern POS. It's included with every event that is logged from Retail Modern POS, for as long as the user remains signed in. When a new user signs in, a new UserSessionID is created.
 
-You can find the AppSessionID and UserSessionID values on the **Details** tab in Event Viewer on the machine where Retail Modern POS is installed. [![Details tab in Event Viewer](./media/correlation-1024x672.png)](./media/correlation.png)
+You can find the AppSessionID and UserSessionID values on the **Details** tab in Event Viewer on the machine where Retail Modern POS is installed. 
+
+[![Details tab in Event Viewer](./media/correlation-1024x672.png)](./media/correlation.png)
 
 ### Finding incoming Retail Server request events in Event Viewer
 
@@ -155,5 +163,5 @@ You can filter by the following criteria to refine your query:
 -   POS user session ID
 -   Severity level
 
-[![Search results on the Environment monitoring page](./media/log-search-results-1024x485.png)](./media/log-search-results.png)
+[![Search results on the Environment monitoring page](./media/log-search-results.png)](./media/log-search-results.png)
 

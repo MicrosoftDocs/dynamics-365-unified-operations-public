@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 17971
@@ -37,13 +37,19 @@ This topic explains how to extend Hardware Station to add support for new device
 Retail Hardware Station overview
 --------------------------------
 
-Retail Hardware Station is used by Retail Modern POS and Cloud POS to connect to retail hardware peripherals such as printers, cash drawers, scanners, and payment terminals. \[caption id="attachment\_262924" align="alignnone" width="300"\][![HWS-Local-Traditional](./media/hws-local-300x236.png)](./media/hws-local.png) Traditional local setup\[/caption\] \[caption id="attachment\_262934" align="alignnone" width="300"\][![HWS-Shared](./media/hws-shared-300x224.png)](./media/hws-shared.png) Shared setup\[/caption\]
+Retail Hardware Station is used by Retail Modern POS and Cloud POS to connect to retail hardware peripherals such as printers, cash drawers, scanners, and payment terminals. 
+
+[![HWS-Local-Traditional](./media/hws-local-300x236.png)](./media/hws-local.png)
+
+[![HWS-Shared](./media/hws-shared-300x224.png)](./media/hws-shared.png)
 
 ## Retail Hardware Station setup
 Before you start, use the information in [Retail hardware station configuration and installation](..\retail-hardware-station-configuration-installation.md) to install Hardware Station, and to get a feel of what hardware is and how it's installed.
 
 ## Retail Hardware Station architecture
-Hardware Station exposes Web API for Hardware Station application programming interfaces (APIs). Hardware Station can be extended either by implementing a new controller for a new device (for example, a cash dispenser) or by overriding an existing controller for an existing device type (for example, a new Audio Jack magnetic stripe reader \[MSR\] implementation). \[caption id="attachment\_262954" align="alignnone" width="640"\][![Hardware Station Architecture](./media/hardware-station-architecture-1024x764.png)](./media/hardware-station-architecture.png) Hardware Station architecture\[/caption\]
+Hardware Station exposes Web API for Hardware Station application programming interfaces (APIs). Hardware Station can be extended either by implementing a new controller for a new device (for example, a cash dispenser) or by overriding an existing controller for an existing device type (for example, a new Audio Jack magnetic stripe reader (MSR) implementation).
+
+[![Hardware Station Architecture](./media/hardware-station-architecture-1024x764.png)](./media/hardware-station-architecture.png)
 
 ## Retail Hardware Station extensibility scenarios
 Extensibility in Hardware Station is achieved by using [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/en-us/library/dd460648(v=vs.110).aspx), which is supported by .NET. **Extensibility guideline:** Always write your extension in your own extension assembly. That way, you're writing a true extension, and upgrades will be much easier. There are two basic scenarios for extension:
@@ -115,9 +121,14 @@ For this scenario, we will add support for a new device type for an existing dev
 ## Retail Hardware Station extensibility configuration
 ### Configuration for IIS-hosted Hardware Station
 
-Before Hardware Station can consume your extension, the **composition** section in the Hardware Station Web.config file must be updated so that it includes an entry for your extension. The order of the composition targets in the configuration file determines precedence. \[caption id="attachment\_263184" align="alignnone" width="960"\][![Hardware Station Web Config](./media/hws-webconfig.png)](./media/hws-webconfig.png) Hardware Station Web.config file\[/caption\]
+Before Hardware Station can consume your extension, the **composition** section in the Hardware Station Web.config file must be updated so that it includes an entry for your extension. The order of the composition targets in the configuration file determines precedence. 
+
+[![Hardware Station Web Config](./media/hws-webconfig.png)](./media/hws-webconfig.png)
 
 ### Configuration for local IPC-based Hardware Station
 
-Before local Hardware Station can consume your extension, the **composition** section in the Modern POS DLLHost.exe.config file (C:\\Program Files (x86)\\Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker) must be updated so that it includes an entry for your extension. The order of the composition targets in the configuration file determines precedence. \[caption id="attachment\_263194" align="alignleft" width="960"\][![Local Hardware station config](./media/hws-dll-host-local-config.png)](./media/hws-dll-host-local-config.png) Local Hardware station configuration\[/caption\]
+Before local Hardware Station can consume your extension, the **composition** section in the Modern POS DLLHost.exe.config file (C:\\Program Files (x86)\\Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker) must be updated so that it includes an entry for your extension. The order of the composition targets in the configuration file determines precedence.
+
+[![Local Hardware station config](./media/hws-dll-host-local-config.png)
+
 

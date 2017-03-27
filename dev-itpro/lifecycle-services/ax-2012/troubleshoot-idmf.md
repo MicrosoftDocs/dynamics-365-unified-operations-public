@@ -93,6 +93,7 @@ If an archive schedule fails or is aborted, you must try to restart or revert it
 
 ## Unable to select an archive schedule for restoration
 The archive schedule that you want to restore may be disabled, so that you cannot select it. This occurs when your previous attempt to restore the schedule has either been aborted or failed. In the Status window, navigate to the aborted or failed restore schedule. Right-click the schedule, and then select **Restart schedule** or **Revert schedule**, depending on the action you have to perform. If the schedule failed during the initialization state, no data was archived. In that case, there is no need to restore or revert the schedule, and IDMF displays a warning that asks you to create a new schedule. Use the **Schedule** menu to create a new archive schedule.
+
 | **Note**                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------|
 | Always restart or revert a failed archive schedule before you create a new archive schedule for the same Archive Object. |

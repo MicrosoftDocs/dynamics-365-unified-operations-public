@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 104593
@@ -46,7 +46,11 @@ To enable the property to be read later, you can use this syntax.
     bool? property = (bool?)entity.GetProperty("EXTENSION_PROPERTY_ADDED");
 
 ## Using extension properties on CRT entities with persistence
-Any extension property that you add to an entity stays in memory for the lifetime of the object. Additionally, the extension property travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server/the CRT, the key-value pair is also available in that process. Additionally, if that entity is sent to Microsoft Dynamics 365 for Operations during a Commerce Data Exchange: Real-time Service (RTS) call, the key-value pair is also available in the Dynamics 365 for Operations process. However, as we mentioned earlier, it isn't persisted by default. If you must persist an extension property, you must do data modeling to help guarantee that you make the right design choices about where the data should reside. You can use a new column in the same table, you can use a new table and a join, or you can use another approach. The recommended approach is to use a new table and a join. This approach fits most requirements well. For this approach, the customizer must learn where all “writes” occur and update the SQL code (stored procedures), and must also learn where all the “reads” occur and update that SQL code (SQL view). The EmailPreference sample provides a good end-to-end example. In that sample, a single SQL view and a single SQL stored procedure are changed via customization. It's important to note that new SQL objects must have the correct role permissions granted. For example, a new table that must be included in Commerce Data Exchange (CDX) synchronization jobs must be granted access by DataSyncUsersRole. For other roles that are available, inspect the main SQL script in the Retail Sdk\\Database folder.
+Any extension property that you add to an entity stays in memory for the lifetime of the object. Additionally, the extension property travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server/the CRT, the key-value pair is also available in that process. Additionally, if that entity is sent to Microsoft Dynamics 365 for Operations during a Commerce Data Exchange: Real-time Service (RTS) call, the key-value pair is also available in the Dynamics 365 for Operations process. However, as we mentioned earlier, it isn't persisted by default. 
+
+If you must persist an extension property, you must do data modeling to help guarantee that you make the right design choices about where the data should reside. You can use a new column in the same table, you can use a new table and a join, or you can use another approach. The recommended approach is to use a new table and a join. This approach fits most requirements well. For this approach, the customizer must learn where all “writes” occur and update the SQL code (stored procedures), and must also learn where all the “reads” occur and update that SQL code (SQL view). The EmailPreference sample provides a good end-to-end example. In that sample, a single SQL view and a single SQL stored procedure are changed via customization. 
+
+It's important to note that new SQL objects must have the correct role permissions granted. For example, a new table that must be included in Commerce Data Exchange (CDX) synchronization jobs must be granted access by DataSyncUsersRole. For other roles that are available, inspect the main SQL script in the Retail Sdk\\Database folder.
 
     IF (SELECT OBJECT_ID('ax.RETAILCUSTPREFERENCE')) IS NULL 
     BEGIN

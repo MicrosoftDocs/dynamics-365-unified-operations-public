@@ -3,7 +3,7 @@
 
 title: Block a transaction using triggers
 description: This wiki shows how you can use a trigger to block an invoice or credit transaction.
-author: josaw1
+author: robinarh
 manager: AnnBe
 ms.date: 2016-03-17 18 - 37 - 22
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: josaw1
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65893

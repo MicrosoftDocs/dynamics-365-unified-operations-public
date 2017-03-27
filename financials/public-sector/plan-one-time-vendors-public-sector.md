@@ -58,7 +58,7 @@ The following table show the fields that the import file must contain. Each fiel
 | City                                           |                                                         |
 | City                                           |                                                         |
 |Federal tax ID (Optional)                       | (U.S. only) 1099 number                                 |
-| Tax ID type                                    | (U.S. only) Values can be **Unknown**, **Employer Identification Number**, **Social Security Number**, **Individual Taxpayer Identification Number**, or **Adopted Tax Payer Identification Number**.**Note:** If no federal tax ID is provided, this field should be set to **Unknown**.                                               |
+| Tax ID type                                    | (U.S. only) Values can be **Unknown**, **Employer Identification Number**, **Social Security Number**, **Individual Taxpayer Identification Number**, or **Adopted Tax Payer Identification Number**.  **Note:** If no federal tax ID is provided, this field should be set to **Unknown**.                                               |
 | Bank account (Optional)                        | Bank account name                                       |
 | Bank account number                            |                                                         |
 | Routing number (Optional)                      |                                                         |
@@ -68,6 +68,7 @@ The following table show the fields that the import file must contain. Each fiel
 
 
 **Invoice section**
+
 | Field                                                | Details                                           |
 |------------------------------------------------------|---------------------------------------------------|
 | Invoice number                                       | Invoice number, 20-character limit                |
@@ -76,7 +77,7 @@ The following table show the fields that the import file must contain. Each fiel
 | Invoice date                                         | Date format                                       |
 | Due date (Optional)                                  | Date format                                       |
 | Line number                                          |                                                   |
-|Item number (Optional)                                | 20-character limit**Note:** If no item number is provided, you must provide values in the **Procurement category** and **Procurement category hierarchy** fields. If no procurement category and procurement category hierarchy are provided, you must provide a value in the **Item number** field.                    |
+|Item number (Optional)                                | 20-character limit   **Note:** If no item number is provided, you must provide values in the **Procurement category** and **Procurement category hierarchy** fields. If no procurement category and procurement category hierarchy are provided, you must provide a value in the **Item number** field.                    |
 | Item name (Optional)                                 |  60-character limit                               |
 | Procurement category hierarchy (Optional)            |    **Note:** If you provide a value for this field, the **Procurement category** field is also required.                                                                         |
 | Procurement category (Optional)                      | **Note:** If you provide a value for this field, the **Procurement category hierarchy** field is also required.                                                                        |
@@ -84,6 +85,7 @@ The following table show the fields that the import file must contain. Each fiel
 | Unit (Optional)                                      | Ten-character limit                               |
 |Line net amount                                       | Decimal values are allowed.                       |
 | Unit price (Optional)                                | Decimal values are allowed.                       |
+
 
 **Distributions section**
 | Field                                                | Details                                  |

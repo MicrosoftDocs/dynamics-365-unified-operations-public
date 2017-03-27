@@ -3,7 +3,7 @@
 
 title: Implement a return policy using triggers
 description: This topic has two examples which show how you can implement a new policy using a trigger.
-author: josaw1
+author: robinarh
 manager: AnnBe
 ms.date: 2016-03-17 18 - 37 - 11
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: josaw1
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 65863

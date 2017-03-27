@@ -84,9 +84,9 @@ The **Support** tile in a Lifecycle Services project uses Microsoft Visual Stud
 1.  Sign in to LCS by using an account that has the **Owner** role for the LCS project that Dynamics AX is deployed in.
 2.  Open the project in LCS.
 3.  Click **Project settings**, and then click the **Visual Studio Team Services** link.
-    |                                                                                                                                                                                          |                                                                                                                                                                                                                |
-    |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [![LCS-Project-Tiles](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png) | [![LCS-Project-Settings-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png) |
+
+    [![LCS-Project-Tiles](./media/lcs-project-tiles-237x300.png)](./media/lcs-project-tiles.png)
+    [![LCS-Project-Settings-VSO](./media/lcs-project-settings-vso-1024x320.png)](./media/lcs-project-settings-vso.png)
 
 4.  Click **Setup Visual Studio Team Services.**
 5.  In the **Visual Studio Team Services site URL** field, enter the URL of the VSTS project that you created in the previous section.
@@ -109,9 +109,12 @@ If you are on Microsoft Dynamics 365 for Operations platform update 4, or if you
 5.  Optional: Set the work stoppage fields to **Yes**.
 6.  Optional: Upload a Dynamics AX task recording.
 7.  Set the option to share your email address with LCS to **Yes**. The **Submit** button won't be available unless you share your email address.
-8.  Click **Submit**. [![Contact Support](./media/contact-support.png)](./media/contact-support.png)
 
-                                          You should receive a confirmation message that states that the issue has been submitted to LCS. Users who are in the **Operations users** role are notified that a new issue has been submitted to LCS. To view the issue that was submitted, click the **Support** tile in the LCS project that is associated with this Dynamics AX instance.
+8.  Click **Submit**. 
+
+[![Contact Support](./media/contact-support.png)](./media/contact-support.png)
+
+You should receive a confirmation message that states that the issue has been submitted to LCS. Users who are in the **Operations users** role are notified that a new issue has been submitted to LCS. To view the issue that was submitted, click the **Support** tile in the LCS project that is associated with this Dynamics AX instance.
 
 ## Create an issue in the Dynamics 365 for Operations client (Microsoft Dynamics 365 for Operations platform update 4 and platform update 3 KB 4010473)
 If you have not taken platform update 4 for Microsoft Dynamics 365 for Operations, or if you have not consumed KB 4010473 for platform update 3, complete the procedure in the previous section. The Support experience has been updated to show updates that are published by Microsoft within the Dynamics 365 for Operations client. In Dynamics 365 for Operations, on the top bar, click **?**, and then click **Support**. [![wiki1](./media/wiki1-1024x518.png)](./media/wiki1.png) **Note:** If you haven’t already connected to Lifecycle Services (LCS) before you will see a dialog to connect to LCS. Click the link to connect before proceeding. [![wiki2](./media/wiki2.png)](./media/wiki2.png)

@@ -44,6 +44,7 @@ You can search for a common question, or browse and filter by functionality and 
 3.  Enter a search term in the search filter box, and click the magnifying glass.
 4.  You can filter the list of responses by functionality and persona.
 5.  If you have found RFP responses that you want to use, select them. Selections are retained as you navigate between pages, and change functionality filters.
+
     | **Note**                                                            |
     |---------------------------------------------------------------------|
     | All selected questions are cleared when you change persona filters. |

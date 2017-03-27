@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 15151
@@ -38,9 +38,15 @@ Retail server
 -------------
 
 1.  Download the hotfix package.
-2.  Unzip the package. [![Extract\_RetailHotfix](./media/extract_retailhotfix.png)](./media/extract_retailhotfix.png)
+2.  Unzip the package. 
+
+    [![Extract\_RetailHotfix](./media/extract_retailhotfix.png)](./media/extract_retailhotfix.png)
+
 3.  Go to the Retail server files in the extracted zip folder.
-4.  Stop the Retail server IIS website. [![WebsiteHome\_RetailHotfix](./media/websitehome_retailhotfix.png)](./media/websitehome_retailhotfix.png)
+4.  Stop the Retail server IIS website. 
+
+    [![WebsiteHome\_RetailHotfix](./media/websitehome_retailhotfix.png)](./media/websitehome_retailhotfix.png)
+
 5.  Back up files.
 6.  Copy Retail server files from the zip folder to the following location:
     -   Navigate to IIS, right-click the RetailServer website and select **Explore**.
@@ -51,7 +57,9 @@ Retail server
 ## Cloud POS
 ##### Follow the same steps as for Retail server (as described above)
 
-You will find the install folder for Cloud POS the same way as for Retail Server, by navigating to IIS, and selecting CloudPOS website, instead of Retail Server website. [![CloudMultiBox\_RetailHotfix](./media/cloudmultibox_retailhotfix.png)](./media/cloudmultibox_retailhotfix.png)
+You will find the install folder for Cloud POS the same way as for Retail Server, by navigating to IIS, and selecting CloudPOS website, instead of Retail Server website. 
+
+[![CloudMultiBox\_RetailHotfix](./media/cloudmultibox_retailhotfix.png)](./media/cloudmultibox_retailhotfix.png)
 
 ## Channel database
 1.  Download the hotfix.
@@ -165,5 +173,7 @@ Upload a package located at *C:\\Packages\\ModernPOSSetup.exe* with version "7.0
 
 ### Example 2
 
-Upload a package located at *C:\\Packages\\ModernPOSSetup.exe* with version "7.0.968.0" and PackageType as 'ModernPosWithOffline'. If there exists a package of the same type in the cloud storage, it will be removed from the storage. The details required to access the cloud storage will be accessed via the configuration file available for the IIS website 'MyCompanyWebsite'. .\\RetailSelfServiceOnDemandPackageUploader.ps1 -PackageFilePath *C:\\Packages\\ModernPOSSetup.exe" -PackageVersion "7.0.968.0" -PackageType ModernPosWithOffline -AOSWebsiteName "MyCompanyWebsite* [![Powershell\_RetailHotfix](./media/powershell_retailhotfix.png)](./media/powershell_retailhotfix.png)  
+Upload a package located at *C:\\Packages\\ModernPOSSetup.exe* with version "7.0.968.0" and PackageType as 'ModernPosWithOffline'. If there exists a package of the same type in the cloud storage, it will be removed from the storage. The details required to access the cloud storage will be accessed via the configuration file available for the IIS website 'MyCompanyWebsite'. .\\RetailSelfServiceOnDemandPackageUploader.ps1 -PackageFilePath *C:\\Packages\\ModernPOSSetup.exe" -PackageVersion "7.0.968.0" -PackageType ModernPosWithOffline -AOSWebsiteName "MyCompanyWebsite* 
+
+[![Powershell\_RetailHotfix](./media/powershell_retailhotfix.png)](./media/powershell_retailhotfix.png)  
 
