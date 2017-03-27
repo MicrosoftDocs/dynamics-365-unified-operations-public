@@ -114,9 +114,11 @@ To enter a new regulatory alert, click the plus sign (**+**) at the top of the 
 
 ## Review regulatory alerts that have been entered into the project
 To view the regulatory alerts that have been entered into your alerting project, use the alert grid. This grid provides a high-level list view of the alerts that have been submitted, and shows the alert title, country/region, law enforced date, and so on.
+
 [![Alert grid](./media/alert-grid-300x117.png)](./media/alert-grid.png) 
 
 You can search the contents of the grid by using the filter/search field and then selecting from the default search options. You can drill into the detail of an alert by clicking the alert ID, which is a hyperlink. The completed alert submission page opens, where you can review the alert details, and also any comments and attachments.
+
 [![Review alert](./media/review-alert-300x195.png)](./media/review-alert.png)
 
 ## Process submitted alerts options
