@@ -1,4 +1,3 @@
-# Operations guide
 # [Introduction](index.md)
 
 # [Onboard to Dynamics 365 for Operations](get-started/get-started-landing.md)
@@ -71,15 +70,15 @@
 ## [Office integration home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
 ## [Mobile apps home page (Admin & developer guide)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 
-# [Financials guide](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/operations/financials/index)
 
-# [Human resources guide](/dynamics365/operations/hr/index)
+# [Human resources](/dynamics365/operations/hr/index)
 
-# [Retail guide](/dynamics365/operations/retail/index)
+# [Retail](/dynamics365/operations/retail/index)
 
-# [Supply chain management guide](/dynamics365/operations/manufacturing/index)
+# [Supply chain management](/dynamics365/operations/manufacturing/index)
 
-# [Admin & developer guide](/dynamics365/operations/dev-itpro/index)
+# [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
 
 # Other resources
 ## [Dynamics 365 for Operations glossary](get-started/glossary.md)
