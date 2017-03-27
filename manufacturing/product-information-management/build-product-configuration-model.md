@@ -139,7 +139,9 @@ A dedicated application programming interface (API) has been implemented, so tha
 
 The API is implemented by using a set of **PCAdaptor** classes that expose the data structure of the product configuration models. An instance of the **PCAdaptor** class must be created for each model that will be extended. After a configuration session is completed, the system checks for an instance of this class and runs it if it's found.  
 
-The following flow diagram outlines the process. [caption id="attachment\_285921" align="alignleft" width="943"\][![Flow diagram](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
+The following flow diagram outlines the process.  
+
+[![Flow diagram](./media/product_configuration_2.png)](./media/product_configuration_2.png)  
 
 Product configuration API flow diagram
 
