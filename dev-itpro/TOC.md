@@ -43,8 +43,9 @@
 
 # [Develop and customize using Visual Studio](dev-tools/TOC.md)
 
-# [Country/region context](localization-solutions/apply-country-context.md)
+# [Localizations](/dynamics365/operations/localizations/country_region?toc=/dynamics365/operations/dev-itpro/toc.json)
 ## [Classify localization features](localization-solutions/classify-localization-features.md)
+## [Country/region context](localization-solutions/apply-country-context.md)
 ## [Regulatory certifications](localization-solutions/regulatory-certifications.md)
 ## [Regulatory updates](localization-solutions/regulatory-watch-communication.md)
 ## [Separate localization models](localization-solutions/separate-models.md)
