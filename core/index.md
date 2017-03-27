@@ -42,7 +42,7 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Onboarding and setting up your organization</p>
+<td><p>Onboarding your organization</p>
 <p>Financials</p>
 <ul><li>Accounts payable</li>
 <li>Accounts receivable</li>
@@ -60,9 +60,27 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
   <li>Middle East and Africa</li>
   <li>North America</li></ul>
   <p>Human resources</p>
-  </td>
+   <ul><li>Asia Pacific</li>
+  <li>HR strategy</li>
+  <li>Recruit, hire & motivate</li>
+  <li>Employee training</li>
+  <li>Benefits</li>
+  <li>Questionnaire</li>
+  <li>US features</li>
+</ul></td>
   <td>
   <p>Retail</p>
+  <ul>
+<li>Call center</li>
+  <li>Channel setup and management</li>
+  <li>MPOS and Cloud POS</li>
+  <li>Monitoring and analysis</li>
+  <li>Discounts and price adjustments</li>
+  <li>Products and merchandising</li>
+  <li>Loyalty</li>
+  <li>Inventory</li>
+  <li>Commerce essentials</li>
+  <li>Retail developer and administration </li></ul>
   <p>Supply chain management</p>
 <ul>
 <li>Cost management</li>
@@ -73,12 +91,12 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
   <li>Sales and marketing</li>
   <li>Transportation management</li>
   <li>Warehouse management</li></ul>
-  <p>Admin & developer functionality</p>
+  <p>Developer & admin functionality</p>
   <ul><li>Analytics</li>
   <li>Data entities</li>
-  <li>Office integration</li>
   <li>Mobile apps</li>
-  <li>System administration</li>
+  <li>Office integration</li>
+  <li>Administration</li>
   <li>Developer tools</li></ul></td>
 </tr>
 </tbody>
