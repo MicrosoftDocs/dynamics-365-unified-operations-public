@@ -80,7 +80,9 @@ Your product is a T-shirt that comes in different sizes and colors and the varia
 -   Size dimension values: Small, Medium, Large
 -   Color dimension values: Red, Green, Black
 
-The name of a product variant that is based on the dimension values Small and Red is **\#3:Small:Red**. A customer wants to buy some small, red T-shirts and the name of the T-shirt must appear in French on the invoice. You translate the dimension values, Small and Red, into French, and the name of the product variant is **\#3:Petit:Rouge**.
+The name of a product variant that is based on the dimension values Small and Red is **\#3:Small:Red**.  
+
+A customer wants to buy some small, red T-shirts and the name of the T-shirt must appear in French on the invoice. You translate the dimension values, Small and Red, into French, and the name of the product variant is **\#3:Petit:Rouge**.
 <table>
 <colgroup>
 <col width="100%" />
@@ -110,7 +112,10 @@ Dimension values are product specific and you can manage the translations for th
 
 **Example**  
 
-Your company produces T-shirts in different styles, and each style is available in the sizes Small, Medium, and Large. The sizes are collected in one dimension value group. When a new T-shirt style is added, you can associate it with the dimension value group that is used for sizes, so that all the sizes are available for the product. You can also add or change translations for the sizes in the dimension value group at any time. A dimension value that is associated with a product through a dimension variant group must be maintained from the product variant group. To create a dimension value group, follow these steps:
+Your company produces T-shirts in different styles, and each style is available in the sizes Small, Medium, and Large. The sizes are collected in one dimension value group. When a new T-shirt style is added, you can associate it with the dimension value group that is used for sizes, so that all the sizes are available for the product. You can also add or change translations for the sizes in the dimension value group at any time.  
+
+A dimension value that is associated with a product through a dimension variant group must be maintained from the product variant group.   
+To create a dimension value group, follow these steps:
 1.  Click **Product information management** &gt; **Setup** &gt; **Variant groups**.
 2.  Select **Size** **groups**, **Color groups**, or **Style groups**.
 3.  Click **New**, and then enter a name for the group in the **Size** **group**, **Color group**, or **Style group** field. Click **Sizes**, **Colors**, or **Styles** to create lines for the groups.
