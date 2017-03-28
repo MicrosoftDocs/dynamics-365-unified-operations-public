@@ -214,5 +214,5 @@ See also
 
 [Office Integration Troubleshooting](office-integration-troubleshooting.md)
 
-[Application stack and server architecture](../dev-itpro/application-stack-server-architecture.md)
+[Application stack and server architecture](../dev-tools/application-stack-server-architecture.md)
 
