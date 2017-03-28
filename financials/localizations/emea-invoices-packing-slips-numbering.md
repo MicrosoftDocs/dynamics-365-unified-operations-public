@@ -102,7 +102,7 @@ You can assign specific number sequences to invoices and packing slips that are 
 | Type           | Select the type of document to number: **Invoice** or **Packing slip**.                                                                         |
 | Auto numbering | Select this option to automatically assign a number to a document. You can manually select or clear this option for individual documents.       |
 
-For information about how to manually number invoices and packing slips, see [(EEU) Edit invoice ID on Sales orders](eeu-edit-invoice-id-sales-orders.md).
+For information about how to manually number invoices and packing slips, see [(EEU) Edit invoice ID on Sales orders](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=1162853&preview=true).
 
 ## Affected processes
 The headers of the following documents are updated with invoice and packing slip numbering:
