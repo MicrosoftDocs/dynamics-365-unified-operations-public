@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+# ms.reviewer: ShylaThompson
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265264
@@ -47,12 +47,13 @@ To configure tax integration for China, complete the following tasks.
     -   Default description and unit for the golden tax invoice
     -   Whether to include non-deductible VAT invoices
 
-The tax integration process is illustrated in the following diagram. [![IC666469](./media/ic666469.gif)](./media/ic666469.gif)
+The tax integration process is illustrated in the following diagram.
+[![IC666469](./media/ic666469.gif)](./media/ic666469.gif)
 
 See also
 --------
 
-[Import the Chinese Golden Tax data entity](import-chinese-golden-tax-data-entity.md)
+[Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md)
 
-[Chinese tax integration modification for VAT customer invoices FAQ](chn-chinese-tax-integration-vat-customer-invoices.md)
+[Chinese tax integration modification for VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
 
