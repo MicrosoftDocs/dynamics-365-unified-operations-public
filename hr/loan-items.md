@@ -56,5 +56,5 @@ If an item becomes damaged or misplaced, enter a fictitious return record. Then 
 See also
 --------
 
-[Human resources](https://ax.help.dynamics.com/en/wiki/human-recources/)
+[Human resources](../human-resources-landing.md)
 

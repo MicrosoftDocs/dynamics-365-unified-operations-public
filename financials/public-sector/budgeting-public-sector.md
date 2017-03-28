@@ -57,7 +57,7 @@ You may be required to set up the following Budgeting features:
 See also
 --------
 
-[Budgeting](https://ax.help.dynamics.com/en/wiki/Budgeting/)
+[Budgeting](../budgeting/budgeting-overview.md)
 
 [Accounts payable in the public sector](accounts-payable-public-sector.md)
 

@@ -73,5 +73,5 @@ If a synchronous or other form action or evaluation produces an error, there ca
 See also
 --------
 
-[User interface concepts](https://ax.help.dynamics.com/en/wiki/user-interface-concepts/)
+[User interface development home page](user-interface-development-home-page.md)
 

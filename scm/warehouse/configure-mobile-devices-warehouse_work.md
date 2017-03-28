@@ -414,7 +414,7 @@ See also
 
 [Warehouse mobile device display settings](change-warehouse-mobile-device-displays.md)
 
-[Set up a mobile device menu item for completing work of type Purchase order](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
+[Set up a mobile device menu item for completing work of type Purchase order (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Set up a mobile device menu item to register received items](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Set up a mobile device menu item to register received items (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 

@@ -45,5 +45,5 @@ Existing configurations aren't affected by subsequent changes to the configurati
 See also
 --------
 
-[Dimension-based product configuration](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=231054)
+[Dimension-based product configuration](dimension-based-product-configuration.md)
 

@@ -45,7 +45,7 @@ The processes for both long-term strategic planning and annual budget planning a
 -   [Budget control: Overview and configuration](budget-control-overview-configuration.md)
 -   [Budget planning: Overview and configuration](budget-planning-overview-configuration.md)
 -   [Position forecasting](position-forecasting.md)
--   [Budget planning justification documents](https://ax.help.dynamics.com/en/budget-planning-justification-documents)
+-   [Budget planning justification documents](budget-planning-justification-docs.md)
 -   [Microsoft Excel templates for budget planning](budget-planning-excel-templates.md)
 
 ## Budgeting tools in Dynamics 365 for Operations

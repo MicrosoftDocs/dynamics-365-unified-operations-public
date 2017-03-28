@@ -52,9 +52,9 @@ To enable nonconformance management, follow these steps:
 See also
 --------
 
-[Create and process a non conformance](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Create and process a non conformance (task guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
 [Quality management processes](quality-management-processes.md)
 
-[Set up prerequisites for non-conformance management](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Set up prerequisites for non-conformance management (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
 

@@ -139,8 +139,5 @@ A cycle counting difference occurs in the following scenarios if the **Is a cy
 
 You can adjust differences in the counted value and then accept the counted value on the **Cycle count pending review** page. You can verify the modified count of the item quantity on the **On hand by location** page. The counted value is rejected if the difference can't be approved.
 
-See also
---------
 
-[Define cycle counting](https://ax.help.dynamics.com/en/wiki/define-cycle-counting/)
 

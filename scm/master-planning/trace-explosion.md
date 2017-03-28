@@ -46,5 +46,5 @@ You can view details about futures and actions for a selected order. On the **Ex
 See also
 --------
 
-[Master plans](https://ax.help.dynamics.com/en/wiki//master-plans)
+[Master plans](master-plans.md)
 
