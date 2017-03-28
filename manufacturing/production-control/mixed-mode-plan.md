@@ -67,5 +67,7 @@ Resource consumption requires that the warehouse that materials are picked from 
 For work that is independent of a supply policy, you don't have to change information on the BOM if the supply is changed. For ad-hoc changes, Dynamics 365 for Operations makes sure that materials are sourced from the right warehouse.
 
 ## Process manufacturing – The production type
-For full flexibility in mixed mode, we recommend that you use production type BOMs for all products. You can then use production orders, kanbans, transfer orders, or purchase orders to supply a product. For process manufacturing, you must use a production type of **Formula**, **Co-product**, **By-product**, or **Planning item**. Kanbans and production orders can't be used for these production types.
+For full flexibility in mixed mode, we recommend that you use production type BOMs for all products. You can then use production orders, kanbans, transfer orders, or purchase orders to supply a product.  
+
+For process manufacturing, you must use a production type of **Formula**, **Co-product**, **By-product**, or **Planning item**. Kanbans and production orders can't be used for these production types.
 
