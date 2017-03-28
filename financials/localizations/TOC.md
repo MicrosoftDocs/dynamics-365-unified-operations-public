@@ -58,7 +58,7 @@
 ## [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md)
 ## [Split periods in periodic journals](emea-create-post-periodic-journals.md)
 ## [Update how amounts are displayed on reports and documents](emea-amount-printing-forms.md)
-## [VAT reporting](emea-eu-vat-reporting.md)
+## [VAT reporting](emea-vat-reporting.md)
 ## [View transactions on settlement](emea-transactions-settlement-form.md)
 ## Austria
 ### [Packing material fees](emea-aut-packing-material-fee-calculation.md)
@@ -74,7 +74,7 @@
 ### [Half year depreciation](emea-cze-half-depreciation-fixed-asset-disposal.md)
 ### [VAT statement](emea-cze-vat-statement-details.md)
 ## Estonia
-### [VAT statement](emea-est-est-vat-statement-details.md)
+### [VAT statement](emea-est-vat-statement-details.md)
 ## France
 ### Public sector
 #### [Public sector accounting](emea-fra-public-sector-accounting.md)
