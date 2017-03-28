@@ -55,7 +55,7 @@ See also
 
 [Business process modeler (Lifecycle Services, LCS)](business-process-modeler-lcs.md)
 
-[Business process libraries in Business process modeler](business-process-modeler-libraries.md)
+[Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
 
-[Flowcharts in Business process modeler](flowcharts-business-process-modeler.)
+[Flowcharts in Business process modeler](flowcharts-business-process-modeler.md)
 
