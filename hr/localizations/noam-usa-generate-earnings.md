@@ -88,10 +88,6 @@ To generate premium earnings for workers, follow these steps.
     -  **Note:** You can generate premium earnings for a single worker from the worker’s earnings statement, but not from the **Workers** or **Positions** page.
 3.  Specify the following information for the worker positions to generate premium earnings for.
     <table>
-    <colgroup>
-    <col width="40%" />
-    <col width="60%" />
-    </colgroup>
     <thead>
     <tr class="header">
     <th>Field</th>
