@@ -48,7 +48,7 @@
 ## [Country/region context](localization-solutions/apply-country-context.md)
 ## [Regulatory certifications](localization-solutions/regulatory-certifications.md)
 ## [Regulatory updates](localization-solutions/regulatory-watch-communication.md)
-## [Separate localization models](localization-solutions/separate-models.md)
+## [Separate localization models](localization-solutions/separate-localization-models.md)
 ## [Submit a regulatory alert](localization-solutions/submit-localization-alerts.md)
 
 # [Financials development](financial-dimensions/TOC.md)
