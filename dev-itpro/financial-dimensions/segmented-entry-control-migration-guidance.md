@@ -924,5 +924,6 @@ See also
 
 [Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control migration walkthrough](segmented-entry-control-migration-walkthrough.md)
+[Segmented Entry control migration](segmented-entry-control-conversion.md)
+
 
