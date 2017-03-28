@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Analytics
+title: Analytics, aggregate measurements, and KPI modeling
 description: This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 author: sericks007
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Analytics
+# Analytics, aggregate measurements, and KPI modeling
 
 This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 
