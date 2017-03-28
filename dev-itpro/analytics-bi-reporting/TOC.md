@@ -2,7 +2,7 @@
 # [Information access reporting ](information-access-reporting.md)
 
 # Analytical tools and visualizations
-## [Analytics](analytics.md)
+## [Analytics, aggregate measurements, and KPI modeling](analytics.md)
 ## [Modeling and aggregate data](model-aggregate-data.md)
 ## [Add contextual BI to forms](add-contextual-bi-forms.md)
 ## [Aggregate measurements report](aggregate-measurements-report.md)
