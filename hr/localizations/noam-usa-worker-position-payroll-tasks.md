@@ -40,10 +40,6 @@ For more information, see [Payroll data updates FAQ](payroll-data-updates.md). [
 You must specify payroll details and add them to a position before you can generate payroll for the position. The following table show the information that you must enter on the **Payroll** FastTab.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -103,12 +99,12 @@ This set of selections is typically used for salaried workers when you want a da
 </table>
 
 ## Adding earning codes to worker position agreements
-If a worker receives recurring earnings or an earning rate that differs from the default earning code, you must assign an earning code to the worker to make sure that earnings are generated correctly. For more information, see [Generate earnings](generate-earnings.md). 
+If a worker receives recurring earnings or an earning rate that differs from the default earning code, you must assign an earning code to the worker to make sure that earnings are generated correctly. For more information, see [Generate earnings](noam-usa-generate-earnings.md). 
 
 **Note:** If you're setting up an earning code that is based on hours or pieces, the **Frequency** field isn't available. Earnings that are based on hours are generated based on the **Generate salary** and **Generate earnings from schedule** selections on the **Position** page. Earnings that are based on pieces are entered manually.
 
 ## Setting up worker tax regions
-When you assign a tax region to a worker, all worker tax codes that apply to the worker are set up automatically. All parameters for the worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to verify their accuracy. For more information, see [Tax information tasks](tax-information-tasks.md). 
+When you assign a tax region to a worker, all worker tax codes that apply to the worker are set up automatically. All parameters for the worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to verify their accuracy. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md). 
 
 To set up tax regions for workers, you must first create a list or spreadsheet that contains the following information for each worker that you're setting up tax regions for:
 
@@ -137,7 +133,7 @@ If a worker's position requires different tax regions at different times, you mu
 **Note:** If the worker tax region that should be specified for the position isn’t included in the list, close this page, and use the **Worker tax region** page to assign the tax region to the worker. Then return to this page to assign the default tax region.
 
 ## Setting up worker tax codes
-You can manage a worker's tax options, such as filing status and total allowances, on the **Worker tax codes** page. You don't have to create or assign the worker tax codes, because the codes are automatically created and assigned to the worker when you create worker tax regions. At first, all parameters for worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to make sure that they're accurate. For more information, see [Tax information tasks](tax-information-tasks.md). You must first create a list or spreadsheet that contains the values of the tax options for all the tax codes that are assigned to each worker whose tax codes you're setting up. These values differ for each tax code. The information is typically collected on IRS Form W-4 or a similar form for the state.
+You can manage a worker's tax options, such as filing status and total allowances, on the **Worker tax codes** page. You don't have to create or assign the worker tax codes, because the codes are automatically created and assigned to the worker when you create worker tax regions. At first, all parameters for worker tax codes are set to their default values. We recommend that you review the worker tax codes for each worker to make sure that they're accurate. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md). You must first create a list or spreadsheet that contains the values of the tax options for all the tax codes that are assigned to each worker whose tax codes you're setting up. These values differ for each tax code. The information is typically collected on IRS Form W-4 or a similar form for the state.
 
 ### Tips for setting up worker tax codes
 
@@ -147,17 +143,13 @@ You can manage a worker's tax options, such as filing status and total allowance
 ## Enrolling workers in benefits
 Payroll information for a benefit isn't available if the **Payroll impact** field on the **Benefit elements** page is set to **None** for the benefit plan. 
 
-**Note:** To set up payroll information for a garnishment or tax levy, see [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md). Benefit accrual plans, such as paid time off, aren't set up or calculated like other benefits. 
+**Note:** To set up payroll information for a garnishment or tax levy, see [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md). Benefit accrual plans, such as paid time off, aren't set up or calculated like other benefits. 
 
-For information about how to enroll a worker in a benefit accrual plan, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md). For more information about how to set up a benefit, see [Benefit setup tasks](benefit-set-up-tasks.md). 
+For information about how to enroll a worker in a benefit accrual plan, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md). For more information about how to set up a benefit, see [Benefit setup tasks](noam-usa-benefit-set-up-tasks.md). 
 
 The following table show the information that you must enter on the **Payroll** FastTab. The fields on this FastTab can vary, depending on the setting of the **Payroll impact** field on the **Benefit elements** page.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -216,11 +208,11 @@ The following table show the information that you must enter on the **Payroll li
 See also
 --------
 
-[Tax information tasks](tax-information-tasks.md)
+[Tax information tasks](noam-usa-tax-information-tasks.md)
 
-[Benefit setup tasks](benefit-set-up-tasks.md)
+[Benefit setup tasks](noam-usa-benefit-set-up-tasks.md)
 
-[Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md)
+[Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
-[Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md)
+[Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
 

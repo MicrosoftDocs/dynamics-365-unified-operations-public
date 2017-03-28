@@ -38,7 +38,7 @@ Some earnings, contributions, and deductions should be processed in specific pay
 
 You can use payroll calculation frequencies to control which pay periods these payroll elements are processed in. You create the payroll calculation frequencies that you require for your payroll and then assign pay periods to those frequencies. You can then assign the frequencies to earning codes on a worker details page, and to benefit contributions and deductions. 
 
-**Note:** The payroll calculation frequency and the pay cycle frequency aren't the same. The *pay cycle frequency* determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the *payroll calculation frequency* to select the specific pay periods when specific earnings or other payroll entities should be processed. For more information about pay cycle frequencies, see [Pay cycle and pay period tasks](pay-cycle-pay-period-tasks-sample.md). 
+**Note:** The payroll calculation frequency and the pay cycle frequency aren't the same. The *pay cycle frequency* determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the *payroll calculation frequency* to select the specific pay periods when specific earnings or other payroll entities should be processed. For more information about pay cycle frequencies, see [Pay cycle and pay period tasks](noam-usa-pay-cycle-pay-period-tasks-sample.md). 
 
 By default, all earnings, contributions, and deductions are processed in every pay period. If this behavior meets your payroll processing requirements, you don't have to complete the tasks in this topic.
 
@@ -71,11 +71,11 @@ You can assign pay periods from one or more pay cycles to every payroll calculat
 ## Assign payroll calculation frequencies to payroll elements
 You assign payroll calculation frequencies to payroll elements to control when those payroll elements are processed.
 
--   To specify when the deductions and contributions for a benefit are processed, see “Create a new benefit” in [Benefit setup tasks](benefit-set-up-tasks.md).
--   To specify when an earning code is processed for a worker, see “Add earning codes to worker position assignments” in [Worker and position payroll tasks](worker-position-payroll-tasks.md).
+-   To specify when the deductions and contributions for a benefit are processed, see “Create a new benefit” in [Benefit setup tasks](noam-usa-benefit-set-up-tasks.md).
+-   To specify when an earning code is processed for a worker, see “Add earning codes to worker position assignments” in [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
 
 If you don't specify a payroll calculation frequency for these payroll elements, they will be processed in every pay period.
 
 ## Next step
-The next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](work-cycle-work-period-tasks.md).
+The next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](noam-usa-work-cycle-work-period-tasks.md).
 

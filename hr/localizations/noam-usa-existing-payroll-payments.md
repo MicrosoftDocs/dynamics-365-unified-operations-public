@@ -80,7 +80,7 @@ Sometimes, you must void a check. For example, if the payment journal was alread
 
 If the check or Automated Clearing House (ACH) file that contains the payment hasn’t been created, but the pay statement has been submitted or posted, you don’t have to void the payment. However, you do have to reverse the pay statement. On the **All pay statements**, follow the steps for reversing a payment. 
 
-If the pay statement hasn’t been submitted or posted, you don't reverse the pay statement. Instead, delete it. For more information, see [Work with pay statements](pay-statements.md). 
+If the pay statement hasn’t been submitted or posted, you don't reverse the pay statement. Instead, delete it. For more information, see [Work with pay statements](noam-usa-pay-statements.md). 
 
 To void a check and reverse the payment, follow these steps.
 

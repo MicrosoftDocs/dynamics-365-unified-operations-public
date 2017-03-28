@@ -44,10 +44,6 @@ After you post payroll, you should generate vendor invoices for the payables tha
 The following table shows the prerequisites that must be in place before you start.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Category</th>
@@ -74,7 +70,7 @@ The following table shows the prerequisites that must be in place before you sta
 ## Post pay statements and generate vendor invoices for a single pay period
 After you review pay statement for a specific pay period, you post the pay statements to the general ledger and generate vendor invoices for that pay period. 
 
-**Tip:** The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](pay-statements.md). To post pay statements and generate vendor invoices for a pay period, follow these steps. 
+**Tip:** The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](noam-usa-pay-statements.md). To post pay statements and generate vendor invoices for a pay period, follow these steps. 
 
 **Post the pay statements**
 
@@ -101,7 +97,7 @@ To post a pay statement for a specific worker to the general ledger, and then su
 
 1.  On the **All pay statements** page, select the pay statement for the specific worker and pay period.
 2.  On the **Financials** tab, in the **Accounting** group, click **Post**.
-3.  Select the **Submit for payment after posting** check box. For more information about this check box, see [Issue worker payments](issue-worker-payments.md).
+3.  Select the **Submit for payment after posting** check box. For more information about this check box, see [Issue worker payments](noam-usa-issue-worker-payments.md).
 4.  On the **Post the selected pay statement** page, click **Post**. You receive a message that states that the pay statement was posted successfully. You can’t delete or recalculate the invoice. **Tip:** To verify that the pay statement was posted, click the pay statement to show the **Pay statement** details. If the pay statement was posted successfully, **Posted** appears in the pay statement header.
 
 ## Generate vendor invoices for a specific benefit plan

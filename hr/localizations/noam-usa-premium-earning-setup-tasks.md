@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.
 
-To set up and pay simple premiums, such as annual bonuses, you just have to create an earning code for the premium. Then, when it's time to pay the premium, you add the earning code to earnings statements. For more information, see [Earning code and earning code group tasks](earning-code-group-tasks.md). Other premiums are based on other earnings, or on characteristics of the worker or position. This topic explains how to set up the more complex types of premiums that are supported.
+To set up and pay simple premiums, such as annual bonuses, you just have to create an earning code for the premium. Then, when it's time to pay the premium, you add the earning code to earnings statements. For more information, see [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md). Other premiums are based on other earnings, or on characteristics of the worker or position. This topic explains how to set up the more complex types of premiums that are supported.
 
 ## Prerequisites
 The following table shows the prerequisites that must be in place before you start.
@@ -43,7 +43,7 @@ The following table shows the prerequisites that must be in place before you sta
 |---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Organization hierarchy purposes | On the **Organization hierarchy purposes** page, **Legal entity** must be selected as the only organization type that is allowed for premium earnings.                                                                                                                                     |
 | Policy parameters               | On the **Policy parameters** page, **Companies** must be included in the **Order or precedence** list.                                                                                                                                                                                     |
-| Related configuration tasks     | Complete the basic setup of Payroll before you set up premiums. Note that work cycles and work periods are required for regular-rate-of-pay premiums. For more information, see [Work cycle and work period tasks](work-cycle-work-period-tasks.md). |
+| Related configuration tasks     | Complete the basic setup of Payroll before you set up premiums. Note that work cycles and work periods are required for regular-rate-of-pay premiums. For more information, see [Work cycle and work period tasks](noam-usa-work-cycle-work-period-tasks.md). |
 
 ## Types of premiums
 ### Premiums that are based on earning codes
@@ -166,10 +166,6 @@ Premium codes contain the information that is required in order to generate prem
 Field values on the **General** FastTab of the **Premium codes** page define the rule that triggers this premium, the earning code that is used, whether earnings are created based on earning lines or the earnings statement, and the calculation frequency. The following table shows the information that you must enter.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -207,7 +203,7 @@ Field values on the **General** FastTab of the **Premium codes** page define the
 ## Setting up regularrateofpay premiums
 Regular-rate-of-pay premiums are most often used for overtime earnings that are paid in addition to the base earning rate. These earnings include any adjustments that are required by the FLSA. 
 
-Before you set up a regular-rate-of-pay premium, review the earning codes that were created during the basic Payroll setup process, to make sure that all earning codes that are required for nondiscretionary earnings have been created. Make sure that work cycles and work periods have been set up. For more information, see [Work cycle and work period tasks](work-cycle-work-period-tasks.md). Additionally, identify all the various overtime earnings that your organization pays. For example, your organization pays both time-and-a-half and double-time for overtime hours that are worked on first, second, and third shifts. This combination requires that you have six earning codes to correctly calculate and pay all overtime premiums. Union contracts, location differentials, and other factors might require additional earning codes. 
+Before you set up a regular-rate-of-pay premium, review the earning codes that were created during the basic Payroll setup process, to make sure that all earning codes that are required for nondiscretionary earnings have been created. Make sure that work cycles and work periods have been set up. For more information, see [Work cycle and work period tasks](noam-usa-work-cycle-work-period-tasks.md). Additionally, identify all the various overtime earnings that your organization pays. For example, your organization pays both time-and-a-half and double-time for overtime hours that are worked on first, second, and third shifts. This combination requires that you have six earning codes to correctly calculate and pay all overtime premiums. Union contracts, location differentials, and other factors might require additional earning codes. 
 
 You set up an earning code group for nondiscretionary earnings on the **Earning code groups** page. Create a new earning group, and enter a name and a brief description for it. For example, you might enter **FLSA earnings** as the name and **All nondiscretionary earnings** as the description. Add the relevant earning codes. 
 
@@ -218,5 +214,5 @@ You must create an earning code to calculate and pay the premium amounts for eac
 See also
 --------
 
-[Earning code and earning code group tasks](earning-code-group-tasks.md)
+[Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md)
 
