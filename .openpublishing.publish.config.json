@@ -49,25 +49,8 @@
     },
     {
       "docset_name": "d365OpsHR",
-
       "build_source_folder": "hr",
-
       "build_output_subfolder": "d365OpsHR",
-      "locale": "en-us",
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "d365OpsManufacturing",
-      "build_source_folder": "manufacturing",
-      "build_output_subfolder": "d365OpsManufacturing",
       "locale": "en-us",
       "open_to_public_contributors": false,
       "type_mapping": {
