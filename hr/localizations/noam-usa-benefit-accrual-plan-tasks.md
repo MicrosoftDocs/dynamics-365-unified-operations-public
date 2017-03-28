@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
 
-For more information about benefit accrual plans, see [Payroll data updates FAQ](payroll-data-updates.md).
+For more information about benefit accrual plans, see [Payroll data updates FAQ](noam-usa-payroll-data-updates.md).
 
 ## Gather the required information
 A benefit accrual plan includes a set of rules that determine how hours in the plan accrue and are used. The plan also includes a list of earning codes that are matched against the earning codes on earnings statement lines. Therefore, the plan balance can be reduced when a specific earning code is used. 
@@ -173,5 +173,5 @@ If the service date basis is set to **Seniority date**, make sure that a seniori
 **Note:** You can add and delete enrollments only for benefit accrual plans for the legal entity that you're signed in to.
 
 ## Next step
-The next step is to set up payroll taxes. For more information, see [Tax information tasks](tax-information-tasks.md).
+The next step is to set up payroll taxes. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md).
 
