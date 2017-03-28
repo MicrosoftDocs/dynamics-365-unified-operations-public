@@ -149,7 +149,7 @@ The following links (also included in the methodology) describe key concepts and
 -   [Download hotfixes from Lifecycle Services](..\servicing\download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\servicing\install-metadata-hotfix-package.md)
--   [Install retail hotfixes](\retail\dev-itpro\install-retail-hotfix.md)
+-   [Install retail hotfixes](/dynamics365/operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/operations/dev-itpro/toc.json)
 -   [Installing a financial reporting binary hotfix](..\servicing\install-financial-reporting-binary-hotfix.md)
 -   [Patching the reporting service](..\servicing\patch-reporting-service-environment.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)

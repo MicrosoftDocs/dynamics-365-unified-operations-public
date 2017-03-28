@@ -53,9 +53,9 @@ You can upload business process artifacts (\*.axbpm files) to the business proce
 See also
 --------
 
-[Business process modeler (Lifecycle Services, LCS)](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=491)
+[Business process modeler (Lifecycle Services, LCS)](business-process-modeler-lcs.md)
 
-[Business process libraries in Business process modeler](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=229411)
+[Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
 
-[Flowcharts in Business process modeler](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=229441)
+[Flowcharts in Business process modeler](flowcharts-business-process-modeler.md)
 

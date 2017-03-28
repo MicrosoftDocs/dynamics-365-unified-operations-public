@@ -614,7 +614,7 @@ The posting definition looks for a match on any account part of the Expense acco
 See also
 --------
 
-[Accounts payable](https://ax.help.dynamics.com/en/wiki/Accounts-payable/)
+[Accounts payable](../accounts-payable/accounts-payable.md)
 
 [Accounts payable in the public sector](accounts-payable-public-sector.md)
 

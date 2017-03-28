@@ -48,8 +48,5 @@ The client-side behavior for the control is defined by using HTML and JavaScrip
 ## Control extensibility architecture overview
 The following diagram shows the artifacts that are involved and their relation to each other. [![Control extensibility architecture](./media/extensibilitycontrolarchitecture.png)](./media/extensibilitycontrolarchitecture.png)
 
-See also
---------
 
-[User interface concepts](https://ax.help.dynamics.com/en/?p=187651)
 

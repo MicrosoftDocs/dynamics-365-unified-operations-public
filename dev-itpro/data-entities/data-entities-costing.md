@@ -52,7 +52,7 @@ Available data entities
 See also
 --------
 
-[Data entities and packages framework](/dev-itpro/data-entities/data-entities-data-packages)
+[Data entities and packages framework](/dynamics365/operations/dev-itpro/data-entities/data-entities-data-packages)
 
-[Data entities ](/dev-itpro/data-entities/data-entities)
+[Data entities ](/dynamics365/operations/dev-itpro/data-entities/data-entities)
 
