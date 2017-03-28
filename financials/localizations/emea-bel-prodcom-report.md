@@ -48,10 +48,10 @@ Before you can generate the PRODCOM report, you must set up the following on the
 
 4.  Specify an automatic recalculation preference.
 5.  Set up number sequences.
-6.  Specify the branch ID for Legal entity or Warehouses. For more information about the branch ID of Legal entity processing, including required prerequisites, see [Registration IDs](registration-ids.md).
+6.  Specify the branch ID for Legal entity or Warehouses. For more information about the branch ID of Legal entity processing, including required prerequisites, see [Registration IDs](emea-registration-ids.md).
 
 ## Assign PRODCOM properties to an item
-Assign PRODCOM properties to an item (**Product information management &gt; Products &gt; Released products**). Open the **Released product details** page, in the **Foreign trade** section, open the PRODCOM dialog box and provide the following details.
+Assign PRODCOM properties to an item (**Product information management** &gt; **Products** &gt; **Released products**). Open the **Released product details** page, in the **Foreign trade** section, open the PRODCOM dialog box and provide the following details.
 
 -   **Product made in company** - Select this check box to report quantities and values of products that were delivered by companies.****
 -   **Delivery to a third party** - Select this check box to report quantities and values of products that were delivered by third parties.

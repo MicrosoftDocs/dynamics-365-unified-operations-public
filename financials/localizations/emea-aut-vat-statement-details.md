@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic explains how to set up the VAT statement for legal entities in Austria.
 
-This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Austria only. For more information about the setup of the VAT statement, see [(EU) VAT reporting](eu-vat-reporting.md). The rest of this topic shows how to set up sales tax codes and sales tax reporting codes for the Austrian VAT declaration, so that VAT statements can be generated.
+This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Austria only. For more information about the setup of the VAT statement, see [VAT reporting](emea-eu-vat-reporting.md). The rest of this topic shows how to set up sales tax codes and sales tax reporting codes for the Austrian VAT declaration, so that VAT statements can be generated.
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the correct format for the appropriate tax authority, you must set up the report layout for the sales tax authorities. On the **Sales tax authorities** page, in the **Report layout** field, select **Austrian report layout**. Select the same sales tax authority for the sales tax settlement period that will be used in the sales tax codes.
@@ -98,44 +98,15 @@ To review or change the VAT statement configuration for legal entities in Austri
 ## Generate a VAT statement
 At the end of the VAT reporting period, run **Settle and post** **sales tax** to calculate statement line amounts for the definition of sales tax reporting codes that you created. The following table describes the fields that you must set.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Settlement period</td>
-<td>Select the applicable reporting period.</td>
-</tr>
-<tr class="even">
-<td>From date</td>
-<td>Enter the first day of the sales tax settlement period to calculate sales tax for. This value corresponds to the date in the <strong>From</strong> field on the <strong>Sales tax settlement periods</strong> page.</td>
-</tr>
-<tr class="odd">
-<td>Transaction date</td>
-<td>Enter the date when the sales tax report is calculated. The default value is the current date. The end date of the settlement period that is shown in the <strong>From</strong> field corresponds to the <strong>To</strong> field on the <strong>Sales tax settlement periods</strong> page. The sales tax payment is calculated for all transactions that were posted during the settlement period.</td>
-</tr>
-<tr class="even">
-<td>Sales tax payment version</td>
-<td>Select the type of transactions to include in the sales tax payment calculation:
-<ul>
-<li><strong>Original</strong> – Include sales tax transactions of the first posted settlement calculation for the period.</li>
-<li><strong>Latest corrections</strong> – Include sales tax transactions that are included in the most recent settlement calculation for the period.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Format mapping</td>
-<td>Specify <strong>U30</strong>.</td>
-</tr>
-</tbody>
-</table>
+|Field|Description|
+|-----|-----------|
+|Settlement period|Select the applicable reporting period.|
+|From date|Enter the first day of the sales tax settlement period to calculate sales tax for. This value corresponds to the date in the From field on the Sales tax settlement periods page.|
+|Transaction date|Enter the date when the sales tax report is calculated. The default value is the current date. The end date of the settlement period that is shown in the From field corresponds to the To field on the Sales tax settlement periods page. The sales tax payment is calculated for all transactions that were posted during the settlement period.|
+|Sales tax payment version|Select the type of transactions to include in the sales tax payment calculation: 
+**Original** – Include sales tax transactions of the first posted settlement calculation for the period.
+**Latest corrections** – Include sales tax transactions that are included in the most recent settlement calculation for the period.|
+|Format mapping|Specify U30.|
 
 To generate a VAT XML file, use the **Report sales tax for settlement period** page.
 

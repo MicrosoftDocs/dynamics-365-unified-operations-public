@@ -103,7 +103,7 @@
 ## [Postdated checks](cash-bank-management/postdated-checks.md)
 ## [Prepayment invoices vs. prepayments](accounts-payable/prepayments-invoices-vs-prepayments.md)
 ## [Handling cash discounts for overpayments](cash-bank-management/cash-discount-handling-overpayments.md)
-## [Set up centralized payments](accounts-payable/set-up-centralized-payments.md)
+## [Set up centralized payments](cash-bank-management/set-up-centralized-payments.md)
 ## [Automatic settlement and prioritization](accounts-receivable/automatic-settlement-prioritization.md)
 ## Advanced bank reconciliation
 ### [Advanced bank reconciliation overview](cash-bank-management/configure-advanced-bank-reconciliation.md)
