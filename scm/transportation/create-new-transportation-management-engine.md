@@ -119,7 +119,7 @@ One way to deploy third-party TMS engines is through a deployment package. This 
 
   [![Selecting the TMSEngines model ](./media/071.png)](./media/071.png)
 
-3.  You can now deploy the package to the target environment. For a tutorial, see [Install a deployable package](/dev-itpro/deployment/install-deployable-package).
+3.  You can now deploy the package to the target environment. For a tutorial, see [Install a deployable package](/dynamics365/operations/dev-itpro/deployment/install-deployable-package).
 
 ## Set up the TMS engine in Dynamics 365 for Operations
 This section explains how to set up Dynamics 365 for Operations to use a TMS engine, and shows how the new engine that we have created is used in rate shopping. The example in this section uses the USMF demo data company.

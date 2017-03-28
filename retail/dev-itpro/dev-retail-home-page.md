@@ -34,14 +34,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This page lists the resources that are available for IT pros and developers who support Retail and commerce in Microsoft Dynamics 365 for Operations.
 
-Retail is dependent on Dynamics 365 for Operations. We recommend that you familiarize yourself with the core [deployment and development content](/dev-itpro/index).
+Retail is dependent on Dynamics 365 for Operations. We recommend that you familiarize yourself with the core [deployment and development content](/dynamics365/operations/dev-itpro/index).
 
 ## Retail components and architecture
 -   [Components of Microsoft Dynamics 365 for Operations - Retail](..\retail-components.md)
 -   [MPOS architecture](https://ax.help.dynamics.com/en/wiki/Retail-Modern-POS-architecture/)
 -   [Architecture of Microsoft Dynamics 365 for Operations - Retail Server](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
--   [Retail Channel Performance Power BI  content](/dev-itpro/analytics-bi-reporting/retail-channel-performance-dashboard-power-bi-data.md)
+-   [Retail Channel Performance Power BI  content](/dynamics365/operations/dev-itpro/analytics-bi-reporting/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Retail deployment
 -   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)

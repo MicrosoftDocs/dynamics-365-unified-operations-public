@@ -207,7 +207,7 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Retail configuration
 
 The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Retail SDK overview](/retail/dev-itpro/retail-sdk-overview)
+-   [Retail SDK overview](/retail/dynamics365/operations/dev-itpro/retail-sdk-overview)
 -   [Retail POS device activation](/retail/devi-itpro/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications)
 
 ## Redeploying or restarting the runtime on the VM

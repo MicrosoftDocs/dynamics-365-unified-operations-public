@@ -101,5 +101,5 @@ See also
 
 [Configuration of security for vendor collaboration users](configure-security-vendor-portal-users.md)
 
-[Vendor collaboration invoicing workspace](/financials/accounts-payable/vendor-portal-invoicing-workspace)
+[Vendor collaboration invoicing workspace](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
 
