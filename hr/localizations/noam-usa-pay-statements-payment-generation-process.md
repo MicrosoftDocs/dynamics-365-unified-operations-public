@@ -41,8 +41,8 @@ In some cases, a worker payment is made and taxes are withheld outside the Payro
 
 To record payments that were made outside Payroll, follow these steps.
 
-1.  Enter the earnings for payments that were made outside Payroll. For instructions, see the "Manually enter worker earnings" section of the [Generate earnings](generate-earnings.md) topic. On the **Line details** FastTab, select the **Manual** check box. **Note:** The earning code for these earnings can’t be set up for a fringe benefit or a gross-up payment run type. The rate basis must be a flat amount.
-2.  Release earnings. For instructions, see the "Release earnings for payment processing" section of the [Work with existing earnings](existing-earnings.md) topic.
+1.  Enter the earnings for payments that were made outside Payroll. For instructions, see the "Manually enter worker earnings" section of the [Generate earnings](noam-usa-generate-earnings.md) topic. On the **Line details** FastTab, select the **Manual** check box. **Note:** The earning code for these earnings can’t be set up for a fringe benefit or a gross-up payment run type. The rate basis must be a flat amount.
+2.  Release earnings. For instructions, see the "Release earnings for payment processing" section of the [Work with existing earnings](noam-usa-existing-earnings.md) topic.
 3.  Generate the pay statement. For instructions, see the "Generate pay statements" section of the Work with existing earnings topic. The payment run type must be **Manual**. If you don’t want to record accounting-related information or post the pay statement to the general ledger, select **Disable accounting**.
 4.  Add tax lines and benefit lines to the statement. For instructions, see the "Modify pay statements" section of the Work with existing earnings topic. You can add, remove, or change all tax lines and benefit lines on the pay statement, even lines that are usually locked. These lines include Federal Insurance Contributions Act (FICA) lines. When the pay statement is correct, click **Finalize** in the message bar.
 
@@ -60,7 +60,7 @@ If a benefit line seems to be missing, it might have been removed when the benef
 Likewise, if a benefit line or amount unexpectedly appears on the pay statement, it might have been added to recover arrears from previous pay statements. The pay statement itself doesn't indicate that an arrearage amount has been recovered. To determine whether arrears were recovered on the pay statement, you must use the **Worker arrears** page.
 
 ## Can I change the distributions for a pay statement line?
-No. However, you can change distributions for earnings from the earnings statement line. For more information, see [Earnings and the earnings generation process FAQ](earnings-generation-process.md).
+No. However, you can change distributions for earnings from the earnings statement line. For more information, see [Earnings and the earnings generation process FAQ](noam-usa-earnings-generation-process.md).
 
 ## Can I create a pay statement that has zero earnings?
 Yes. For example, if you must create a pay statement just so that you can correct benefit and tax contributions or deductions, you can manually create the pay statement.
