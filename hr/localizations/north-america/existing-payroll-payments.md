@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Work with existing payroll payments
+title: Process existing payroll payments
 description: This topic describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged. It also explains how to complete similar tasks after pay statements have been generated or payments have been issued to workers.
 author: rschloma
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Work with existing payroll payments
+# Process existing payroll payments
 
 This topic describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged. It also explains how to complete similar tasks after pay statements have been generated or payments have been issued to workers.
 

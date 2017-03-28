@@ -58,17 +58,26 @@ To connect to a VSTS project, LCS is authenticated using a personal access token
 
 ### Create an ax7.version file
 
-The code upgrade tile in LCS automatically finds the version of Dynamics 365 for Operations that you are migrating from, by reading the ax7.version file under the Main folder in your source control. You must create this file manually, either in Visual Studio or through the VSTS portal, as shown below. This file is not needed if you migrated your code from Dynamics AX 2012 R3 or an earlier version. The version number entered here must be the application version (not the platform version). [![ax7\_versionfile](./media/ax7_versionfile.png)](./media/ax7_versionfile.png) For more information about how to identify which application version you have, see [Overview of Microsoft Dynamics AX build numbers](https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/).
+The code upgrade tile in LCS automatically finds the version of Dynamics 365 for Operations that you are migrating from, by reading the ax7.version file under the Main folder in your source control. You must create this file manually, either in Visual Studio or through the VSTS portal, as shown below. This file is not needed if you migrated your code from Dynamics AX 2012 R3 or an earlier version. The version number entered here must be the application version (not the platform version). 
+
+[![ax7\_versionfile](./media/ax7_versionfile.png)](./media/ax7_versionfile.png) 
+
+For more information about how to identify which application version you have, see [Overview of Microsoft Dynamics AX build numbers](https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/).
 
 ### Execute the code upgrade tile
 
-1.  In your LCS project, select the **Code upgrade** tile. [![codeupgradetile](./media/codeupgradetile.png)](./media/codeupgradetile.png)
+1.  In your LCS project, select the **Code upgrade** tile. 
+
+[![codeupgradetile](./media/codeupgradetile.png)](./media/codeupgradetile.png)
+
 2.  In the bottom left corner of the screen, click **Add**, and then enter a name and description. Select the version you are upgrading from as Microsoft Dynamics AX 7, and then click **Create**.
     -   If you are upgrading your code from Dynamics AX 2012 R3, select the version you are upgrading from. You will be prompted to upload a zipped version of your Dynamics AX 2012 R3 model store file.
     -   If the **Estimation Only** check box is selected, the tool only generates a report and does not check in or create a new code branch in VSTS for you. You should use this option if you want to evaluate the potential size of the work involved in upgrading before you commit to the actual upgrade.
 
     [![codeupgrade\_new](./media/codeupgrade_new.png)](./media/codeupgrade_new.png)
 3.  Click **Analyze code** in the bottom right corner. The code upgrade process will start. This typically takes 40 minutes for a large solution to complete. When complete, return to the **Code upgrade** tile in LCS to view the results.
-4.  The code upgrade service creates a new branch and checks in the upgraded code to your VSTS project. After the upgrade process is complete, your code will exist in a new branch under the **Releases** folder. The branch name is suffixed with the date and time of the upgrade. [![codeupgradebranch](./media/codeupgradebranch-300x192.png)](./media/codeupgradebranch.png)
+4.  The code upgrade service creates a new branch and checks in the upgraded code to your VSTS project. After the upgrade process is complete, your code will exist in a new branch under the **Releases** folder. The branch name is suffixed with the date and time of the upgrade. 
+
+[![codeupgradebranch](./media/codeupgradebranch-300x192.png)](./media/codeupgradebranch.png)
 
 

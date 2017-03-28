@@ -17,7 +17,7 @@ ms.search.form: AssetBookTable, AssetDepreciationProfile, AssetTable, AssetTaxDe
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+# ms.reviewer: ShylaThompson
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264374
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Fixed assets accounting for tax purposes
 
-This topic provides information about the tax Depreciation functionality for Latvia, including the tax depreciation setup and calculation and printing the tax depreciation report. 
+This topic provides information about the tax depreciation functionality for Latvia, including the tax depreciation setup and calculation and printing the tax depreciation report. 
 > [!NOTE]
->Tax depreciation works with the value models. The value model and depreciation book have been merged into a single concept that is called a *book.* For more information, see [Fixed asset value model and depreciation book merge](/financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge).
+> Tax depreciation works with the value models. The value model and depreciation book have been merged into a single concept that is called a *book.* For more information, see [Fixed asset value model and depreciation book merge](/financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge).
 
 ## Set up a depreciation profile
 When you set up a depreciation profile, consider the following.
@@ -52,13 +52,15 @@ Use the **Books** page to define a tax category. Books are also referred to as 
 
 -   **Posting layer** - Select **Tax** in this field.
 -   **Summarize for category** - Select this option if tax depreciation should be summarized and calculated for all fixed assets that have the same book selected in the **Category** field.
--   **Tax coefficients** -** **You can set up tax coefficients for each coefficient to adjust the acquisition price for the fiscal year.
+-   **Tax coefficients** - You can set up tax coefficients for each coefficient to adjust the acquisition price for the fiscal year.
 
 <!---For more information about setting up books, see [Set up depreciation books](http://ax.help.dynamics.com/en/wiki/set-up-depreciation-books/).-->
 
 ### Set up tax depreciation calculation
 
-To set up tax depreciation calculation, on the **Fixed assets** page, select a fixed asset. Then, on the **General** FastTab, select a **Book** in the **Category** field. A fixed asset should only have one book associated in the current posting layer. **Note:** This field displays the books record with a posting layer value equal to Tax only.
+To set up tax depreciation calculation, on the **Fixed assets** page, select a fixed asset. Then, on the **General** FastTab, select a **Book** in the **Category** field. A fixed asset should only have one book associated in the current posting layer. 
+> [!NOTE]
+> This field displays the books record with a posting layer value equal to Tax only.
 
 ## Calculate tax depreciation
 To calculate fixed asset tax depreciation, on the **Tax depreciation** page, create a New tax period to use for reporting.

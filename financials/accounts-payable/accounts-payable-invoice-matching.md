@@ -101,7 +101,7 @@ Two-way matching is controlled for the legal entity by the Line matching policy 
 
 Price totals matching is controlled for the legal entity by the Match price totals field on the Accounts payable parameters page. The purchase price total tolerance percentage and tolerance amount (not-to-exceed amount) are also specified on that page.
 
-## Twoway, net unit price matching
+## Two-way, net unit price matching
 Use two-way matching to help make sure that the variance between the price information on the purchase order and the invoice is within acceptable tolerances. You can compare price information for the net unit price of each item on the invoice. This is called net unit price matching. 
 
 Nine line amounts are compared on the Invoice matching details page, as shown in the following table. If the allowable price tolerance for net unit price matching is 10%, the 22.61% variance for the net unit price is considered a matching discrepancy.
@@ -169,7 +169,7 @@ The same line amounts are compared on the Invoice matching details page as for 
 Three-way matching is controlled for the legal entity by the Line matching policy field on the Accounts payable parameters page. Depending on the selection in the Allow matching policy override field, you can select three-way matching for a specific vendor, item, or item and vendor combination on the Matching policy page, and for a specific purchase order on the Purchase order page.
 
 ## Charges matching
-You can use charges matching to help make sure that charges amounts do not deviate from expected amounts by more than an acceptable variance percentage. The total amounts for each charges code that applies to the invoice and purchase order are compared in the Compare charges values - Invoice: %1 page, as shown in the following table. If the allowable tolerance for the charges code is 25%, the 99,999,999,999.99% variance percentage for the License charges code is considered a matching discrepancy.
+You can use charges matching to help make sure that charges amounts do not deviate from expected amounts by more than an acceptable variance percentage. The total amounts for each charges code that applies to the invoice and purchase order are compared in the Compare charges values - Invoice: page, as shown in the following table. If the allowable tolerance for the charges code is 25%, the 99,999,999,999.99% variance percentage for the License charges code is considered a matching discrepancy.
 
 > [!NOTE] 
 > A variance percentage of 99,999,999,999.99% means that the expected amount based on the purchase order is zero and the actual amount on the invoice is a positive value. 

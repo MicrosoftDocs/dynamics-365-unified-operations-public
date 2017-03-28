@@ -42,7 +42,9 @@ To import the file provided by Nets bank, complete the following steps.
 1.  Go to the **Payment journal** page
 2.  Click **Lines.**
 3.  Click **Functions** &gt; **Import payments**.
-4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. In the same dialog box, you must also specify a **Sender ID** to ensure that the correct file is selected for import (00008080 value should be specified on the dialog for the Nets bank). **Note**: Before you can complete this step, you must have already imported the **Nets (No)** configurations from Lifecycle Services (LCS) and set up the Nets method of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
+4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. In the same dialog box, you must also specify a **Sender ID** to ensure that the correct file is selected for import (00008080 value should be specified on the dialog for the Nets bank). 
+  > [!NOTE]
+  > Before you can complete this step, you must have already imported the **Nets (No)** configurations from Lifecycle Services (LCS) and set up the Nets method of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
 
 The process is similar for importing enrollment messages from the **eInvoice enrollment and answer** page. Regardless of whether the file has only payment transactions, only enrollment messages, or both, everything will be imported in one action.
 

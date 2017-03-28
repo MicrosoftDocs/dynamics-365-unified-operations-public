@@ -73,9 +73,9 @@ First, we will add a new tile to the form FMTClerkWorkspace.
 2.  In the designer, expand **PanoramaBody**.
 3.  Right-click **TileContainer**, and then click **New** &gt; **Tile Button.**
 4.  Specify the following properties for the new tile button.
-    |              |                     |
-    |--------------|---------------------|
+    
     | **Property** | **Value**           |
+    |--------------|---------------------|
     | Text         | Test tile           |
     | Tile         | FMTAllCustomersTile |
 
@@ -84,7 +84,12 @@ First, we will add a new tile to the form FMTClerkWorkspace.
 6.  Right-click **FMTutorial**, and then click **Rebuild**.
 7.  Press **Ctrl+F5** to run the project.
 
-After you build and run the project, the Fleet management clerk workspace will launch. The new tile named, **Test tile**, that you created will be included in the first section of the workspace, at the end of the set of tiles. [![Nav1](./media/nav1.png)](./media/nav1.png) **Note:** The tile will not navigate anywhere when clicked. To enable this, you can define a Menu Item Name on FMTAllCustomersTile, under **Tiles** in **Solution Explorer**.
+After you build and run the project, the Fleet management clerk workspace will launch. The new tile named, **Test tile**, that you created will be included in the first section of the workspace, at the end of the set of tiles. 
+
+[![Nav1](./media/nav1.png)](./media/nav1.png) 
+
+> [!NOTE]
+> The tile will not navigate anywhere when clicked. To enable this, you can define a Menu Item Name on FMTAllCustomersTile, under **Tiles** in **Solution Explorer**.
 
 ## Add a new workspace to the navigation pane
 Next, we will add the FMTClerkWorkspace form to the navigation pane. We will do this in two locations:
@@ -98,9 +103,9 @@ Next, we will add the FMTClerkWorkspace form to the navigation pane. We will do 
 2.  Click **AX Artifacts** &gt; **User Interface** &gt; **Display Menu Item**. In the **Name** property, enter **FMTClerkWorkspace**.
 3.  Click **Add**.
 4.  Specify the following properties for the new menu item.
-    |              |                                 |
-    |--------------|---------------------------------|
+
     | **Property** | **Value**                       |
+    |--------------|---------------------------------|
     | Label        | Reservation management tutorial |
     | Object       | FMTClerkWorkspace               |
 
@@ -110,9 +115,9 @@ Next, we will add the FMTClerkWorkspace form to the navigation pane. We will do 
 2.  Click **AX Artifacts** &gt; **User Interface** &gt; **Tile**. In the **Name** property, enter **FMTClerkWorkspace**.
 3.  Click **Add**.
 4.  Specify the following properties for the new tile.
-    |              |                   |
-    |--------------|-------------------|
+
     | **Property** | **Value**         |
+    |--------------|-------------------|
     | MenuItemName | FMTClerkWorkspace |
 
 ### Add a menu extension for the navigation pane
@@ -123,10 +128,13 @@ Next, we will add the FMTClerkWorkspace form to the navigation pane. We will do 
 4.  Select the new submenu. In the **Name** property, enter **NavPaneMenuFleetTutorial**.
 5.  In **Solution Explorer** or **Application Explorer**, locate the **FMTClerkWorkspace** tile, and drag it onto the newly created submenu. Click **Save**.
 6.  Right-click **FMTutorial**, and then click **Rebuild**.
-7.  Press **Ctrl+F5** to run the project. After you build and run the project, the navigation pane will contain a link to the new workspace. Open the navigation pane by clicking the navigation pane button (three lines) at the top right of the application window. [![Nav2](./media/nav2.png)](./media/nav2.png)
-8.  When you open the navigation pane, select **All workspaces**, and scroll down in the list after it opens. You should see the following new Reservation management tutorial workspace in the list. [![Nav3](./media/nav3.png)](./media/nav3.png)
+7.  Press **Ctrl+F5** to run the project. After you build and run the project, the navigation pane will contain a link to the new workspace. Open the navigation pane by clicking the navigation pane button (three lines) at the top right of the application window. 
 
- 
+    [![Nav2](./media/nav2.png)](./media/nav2.png)
+    
+8.  When you open the navigation pane, select **All workspaces**, and scroll down in the list after it opens. You should see the following new Reservation management tutorial workspace in the list. 
+
+    [![Nav3](./media/nav3.png)](./media/nav3.png)
 
 ### Add the form to the main menu structure
 
@@ -139,18 +147,18 @@ Now you’ll add a new main menu section that contains a tile that points to the
 5.  In the properties list, set the **Label** property to **Fleet management tutorial**.
 6.  In the designer, right-click **FleetManagementTutorial**, and click **New** &gt; **Submenu**.
 7.  Specify the following properties for the new submenu.
-    |              |            |
-    |--------------|------------|
+
     | **Property** | **Value**  |
+    |--------------|------------|
     | Name         | Workspaces |
     | Label        | Workspaces |
 
 8.  In **Solution Explorer** or **Application Explorer**, locate the **FMTClerkWorkspace** display menu item and drag it onto the new **Workspaces** submenu.
 9.  In the designer, right-click **FleetManagementTutorial**, and then click **New** &gt; **Submenu**.
 10. Specify the following properties for the new submenu.
-    |              |           |
-    |--------------|-----------|
+
     | **Property** | **Value** |
+    |--------------|-----------|
     | Name         | Common    |
     | Label        | Common    |
 
@@ -159,16 +167,23 @@ Now you’ll add a new main menu section that contains a tile that points to the
 13. In **Solution Explorer**, locate and open the new extension. Select and double-click **MainMenu.Extension** to open it.
 14. In the designer, right click **MainMenu.Extension**, point to **New**, and then click **Menu reference**.
 15. Specify the following properties for the new menu reference.
-    |              |                         |
-    |--------------|-------------------------|
+
     | **Property** | **Value**               |
+    |--------------|-------------------------|
     | Name         | FleetManagementTutorial |
     | Menu Name    | FleetManagementTutorial |
 
 16. Click **Save**.
 17. Right-click **FMTutorial**, and then click **Build**.
 18. Press **Ctrl+F5** to run the project.
-19. Go to the main menu section you just modified. Open the navigation pane and scroll down until you see the new top-level **Fleet management tutorial** menu. You may need to clear your browser cache by pressing **Ctrl+F5**. [![Nav4](./media/nav4.png)](./media/nav4.png)
-20. Click **Fleet management tutorial** &gt; **Workspaces** to expand that submenu. Your navigation pane should look like the following. [![Nav5](./media/nav5.png)](./media/nav5.png) If you click on the **Common** submenu, you will see the menu item that you modeled there. You can click either of these links to check that you have set up the references correctly. If you have set up the references correctly, the tutorial workspace you’re working on should open when clicked on.
+19. Go to the main menu section you just modified. Open the navigation pane and scroll down until you see the new top-level **Fleet management tutorial** menu. You may need to clear your browser cache by pressing **Ctrl+F5**. 
+
+    [![Nav4](./media/nav4.png)](./media/nav4.png)
+    
+20. Click **Fleet management tutorial** &gt; **Workspaces** to expand that submenu. Your navigation pane should look like the following. 
+
+    [![Nav5](./media/nav5.png)](./media/nav5.png) 
+    
+    If you click on the **Common** submenu, you will see the menu item that you modeled there. You can click either of these links to check that you have set up the references correctly. If you have set up the references correctly, the tutorial workspace you’re working on should open when clicked on.
 
 

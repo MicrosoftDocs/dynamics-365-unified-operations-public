@@ -42,57 +42,36 @@ Microsoft Dynamics Lifecycle Services is a cloud-based collaborative workspace t
 ## Purchase an Azure subscription
 To use Azure, you must purchase a subscription. For information about subscription plans and pricing details, see the [Azure pricing](https://azure.microsoft.com/en-us/pricing/) page. Then follow the instructions on that page to purchase a subscription. The subscription must be large enough to support the AX 2012 R3 environment that you want to deploy on Azure. The following table lists the types of AX 2012 R3 environments that you can deploy on Azure, and the number of cores required to deploy each environment in its default configuration. **Note:** Keep in mind that when you deploy an environment, you can change the number and size of the virtual machines that are deployed. However, this table lists the number of cores required to deploy each environment in its *default* configuration.
 
-**Type of environment**
+**Environment type:** - Demo
 
-**Environment name**
 
-**Number of cores to deploy the environment in its default configuration**
+| Environment name       | Number of cores to deploy the environment in its default configuration |
+|------------------------|------------------------------------------------------------------------|
+| AX 2012 R3 demo        | 8 cores                                                                |
+| AX 2012 R3 CU8 demo    | 8 cores                                                                |
+| Retail essentials demo | 8 cores                                                                |
 
-Demo
 
-AX 2012 R3 demo
+**Environment type:** - Dev/test
 
-8 cores
 
-AX 2012 R3 CU8 demo
+| Environment name                   | Number of cores to deploy the environment in its default configuration |
+|------------------------------------|------------------------------------------------------------------------|
+| Development                        | 9 cores                                                                |
+| Development with shared SQL Server | 14 cores                                                               |
+| Test                               | 13 cores                                                               |
+| Retail essentials dev/test         | 4 cores                                                                |
+| Retail e-commerce dev/test         | 4 cores                                                                |
+| Retail mobility dev/test           | 4 cores                                                                |
 
-8 cores
 
-Retail essentials demo
+**Environment type:** - High availability
 
-8 cores
 
-Dev/test
+| Environment name              | Number of cores to deploy the environment in its default configuration |
+|-------------------------------|------------------------------------------------------------------------|
+| High availability environment | 45 cores                                                               |
 
-Development
-
-9 cores
-
-Development with shared SQL Server
-
-14 cores
-
-Test
-
-13 cores
-
-Retail essentials dev/test
-
-4 cores
-
-Retail e-commerce dev/test
-
-4 cores
-
-Retail mobility dev/test
-
-4 cores
-
-High availability
-
-High availability environment
-
-45 cores
 
 If you already have an Azure subscription, note the following:
 
@@ -1043,5 +1022,12 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
  
 
 ## Next steps
-[Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md) [Deploy a Retail essentials demo environment on Azure](deploy-retail-essentials-demo-environment-azure.md) [Deploy a development environment on Azure](deploy-development-environment-azure.md) [Deploy a test environment on Azure](deploy-test-environment-azure.md) [Deploy a Retail essentials dev/test environment on Azure](deploy-retail-essentials-devtest-environment-azure.md) [Deploy a Retail e-commerce dev/test environment on Azure](deploy-retail-ecommerce-devtest-environment-azure.md) [Deploy a Retail mobility dev/test environment on Azure](deploy-retail-mobility-devtest-environment-azure.md) [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md)
+- [Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md) 
+- [Deploy a Retail essentials demo environment on Azure](deploy-retail-essentials-demo-environment-azure.md) 
+- [Deploy a development environment on Azure](deploy-development-environment-azure.md) 
+- [Deploy a test environment on Azure](deploy-test-environment-azure.md) 
+- [Deploy a Retail essentials dev/test environment on Azure](deploy-retail-essentials-devtest-environment-azure.md) 
+- [Deploy a Retail e-commerce dev/test environment on Azure](deploy-retail-ecommerce-devtest-environment-azure.md) 
+- [Deploy a Retail mobility dev/test environment on Azure](deploy-retail-mobility-devtest-environment-azure.md) 
+- [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md)
 

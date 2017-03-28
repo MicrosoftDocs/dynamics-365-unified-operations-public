@@ -34,12 +34,15 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how to create Microsoft Excel templates that can be used with budget plans.
 
-This topic shows how to create Excel templates that will be used with budget plans using the standard demo data set and the Admin user login. For more information about budget planning, see [Budget planning overview.](budget-planning-overview-configuration.md) You can also follow the [Budget planning 101](budget-plan.md) tutorial to learn basic module configuration and usage principles.
+This topic shows how to create Excel templates that will be used with budget plans using the standard demo data set and the Admin user login. For more information about budget planning, see [Budget planning overview.](budget-planning-overview-configuration.md) 
+You can also follow the [Budget planning 101](budget-plan.md) tutorial to learn basic module configuration and usage principles.
 
 ## Generate a worksheet using budget plan document layout
 Budget plan documents can be viewed and edited using one or more layouts. Each layout can have an associated budget plan document template to view and edit the budget plan data in an Excel worksheet. In this topic, a budget plan document template will be generated using an existing layout configuration. Open the **Budget plans list** (**Budgeting**&gt; **Budget plans**). Click **New** to create a new budget plan document. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
 Use the **Add** line option to add lines. Click **Layouts** to view the budget plan document layout configuration. 
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+
 You can review the layout configuration and adjust it as needed. Go to **Template** &gt; **Generate** to create an Excel file for this layout. After the template is generated, go to **Template** &gt; **View** to open and review the budget plan document template. You can save the Excel file to your local drive. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
 
 > [!NOTE] 

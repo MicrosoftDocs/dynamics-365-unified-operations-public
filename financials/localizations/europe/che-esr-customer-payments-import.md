@@ -50,7 +50,9 @@ For more information, see [Payment slip report (Giro)](eur-payment-slip-report-
 1.  Go to the **Payment journal** page
 2.  Click **Lines**.
 3.  Click **Functions** &gt; **Import payments**.
-4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. **Note**: Before you can complete this step, you must have already imported the **ESR (CH)** configurations from Lifecycle Services (LCS) and set up the ESR method of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
+4.  In the dialog box, select the method of payment, and then browse to the location of the file to import. 
+  > [!NOTE]
+  >  Before you can complete this step, you must have already imported the **ESR (CH)** configurations from Lifecycle Services (LCS) and set up the ESR method of payment. For more information, see [File formats for method of payments](select-file-formats-for-the-method-of-payments.md).
 
 After you import the payment file, payment journal lines are created and marked for settlement with customer invoices based on the payment reference. If there are any fees specified for the bank account that are represented in the file, such as transactions between the main account and fee account, these fees will be added to the journal.
 

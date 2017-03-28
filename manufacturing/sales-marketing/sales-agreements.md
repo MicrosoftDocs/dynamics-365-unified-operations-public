@@ -34,13 +34,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about sales agreements. A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices and discounts.
 
-A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices, special discounts, and other special terms, such as payment and delivery terms. The prices and discounts of the sales agreement override the prices and discounts that are stated in any trade agreements that exist. The validity period of a sales agreement is defined by the **Effective date** and **Expiration date** fields on the agreement. A customer's sales order qualifies for the agreement terms if the requested ship date of the order is within the validity period. All sales order lines that are linked to a sales agreement contribute to fulfillment of that sales agreement. You can create a sales order directly from a sales agreement by using the **Release order** action. Alternatively, you can select an effective sales agreement when you're taking orders (see the "Applying sales agreements in the ordering process" section of this article). **Note:** In earlier versions, sales agreements were referred to as blanket sales orders.
+A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices, special discounts, and other special terms, such as payment and delivery terms. The prices and discounts of the sales agreement override the prices and discounts that are stated in any trade agreements that exist.  
+
+The validity period of a sales agreement is defined by the **Effective date** and **Expiration date** fields on the agreement. A customer's sales order qualifies for the agreement terms if the requested ship date of the order is within the validity period. All sales order lines that are linked to a sales agreement contribute to fulfillment of that sales agreement.  
+
+You can create a sales order directly from a sales agreement by using the **Release order** action. Alternatively, you can select an effective sales agreement when you're taking orders (see the "Applying sales agreements in the ordering process" section of this article).  
+
+**Note:** In earlier versions, sales agreements were referred to as blanket sales orders.
 
 ## Commitment types
 Each line in a sales agreement expresses a commitment to sell something. In general, there are two categories of commitment:
 
--   **Value commitment **– The customer agrees to buy products for a specific amount.
--   **Quantity commitment **– The customer agrees to buy a specific quantity of products.
+-   **Value commitment** – The customer agrees to buy products for a specific amount.
+-   **Quantity commitment** – The customer agrees to buy a specific quantity of products.
 
 In addition, a contract can commit the customer to buy a specific product or products in a product category. By combining these two factors (value versus quantity, and specific products versus product categories), we get four types of commitment:
 
@@ -69,10 +75,18 @@ The following policies affect the way that the link between a sales agreement co
 -   **Minimum release amount** and **Maximum release amount** – If an amount is specified, a message is displayed if you make any change to an order line that causes the order line to differ from the related commitment.
 
 ## Fulfillment calculations for sales agreements
-The **Fulfillment** tab on the **Line details** FastTab on the **Sales agreements** page shows fulfillment quantities and amounts. In the **Fulfillment** area, you can view the total quantities and amounts for all order lines that are linked to the specified sales agreement. You can also view the remaining amount or quantity that is required to fulfill the commitment. In the **Agreement** area, you can view the quantities and amounts from the specified sales agreement. These quantities and amounts are the total quantities and amounts that were committed.
+The **Fulfillment** tab on the **Line details** FastTab on the **Sales agreements** page shows fulfillment quantities and amounts.  
+
+In the **Fulfillment** area, you can view the total quantities and amounts for all order lines that are linked to the specified sales agreement. You can also view the remaining amount or quantity that is required to fulfill the commitment.  
+
+In the **Agreement** area, you can view the quantities and amounts from the specified sales agreement. These quantities and amounts are the total quantities and amounts that were committed.
 
 ## Confirmations and version history for sales agreements
-When you confirm a sales agreement, the current version of the sales agreement is stored in a history table. If you change the sales agreement, you can confirm it again to store another version of the sales agreement in the history. If you don't confirm a sales agreement, you can still use it to create sales orders. However, history information for the sales agreement isn't stored. You can preview or print all revisions of the confirmations. You can then share the revisions with your customer to obtain approval.
+When you confirm a sales agreement, the current version of the sales agreement is stored in a history table. If you change the sales agreement, you can confirm it again to store another version of the sales agreement in the history.  
+
+If you don't confirm a sales agreement, you can still use it to create sales orders. However, history information for the sales agreement isn't stored.  
+
+You can preview or print all revisions of the confirmations. You can then share the revisions with your customer to obtain approval.
 
 ## Applying sales agreements during the ordering process
 If you don't release sales orders directly for a sales agreements, you can still link a sales agreement to an order during the order entry process. When you're creating a new sales order and select a sales agreement, the terms of that agreement, such as the payment terms, delivery terms, and delivery address, are applied to the order header, and the link between the agreement and the order is created. Then, on the order lines, when you can select products and categories that are specified in the sales agreement, the prices and discounts are copied from that agreement. The same sales order can include both lines that aren't related to a sales agreement and lines that have a commitment for a sales agreement.
@@ -88,7 +102,11 @@ If you've created (released) a sales order against a sales agreement, some f
 | Quantity                                                          | If you specify a quantity that exceeds the quantity that is specified on a sales agreement line where the **Max is enforced** check box is selected, a message box prompts you to save the changed quantity. Click **Yes** to remove the link to the sales agreement line and recalculate the price. Click **No** to remove the link to the sales agreement line without recalculating the price.                                                            |
 
 ## Returning an item that was ordered from a sales agreement
-When a customer returns a product that was ordered from a sales agreement, Microsoft Dynamics 365 for Operations can find and automatically update the related sales agreement commitment to reflect the change in quantity or amount. By creating a return order that is based on the original sales order that is linked to a sales agreement, you establish a relation between the sales agreement commitment, the sales order line, and the return order invoice. If you don't want to deduct the returned item quantity from the sales agreement commitment, you can use the **Remove link** control on the **Return order** page to remove the link between the return order and the sales agreement commitment. If you must reestablish the link later, click **Create link**. **Note:** A return order can be linked to only one sales agreement. If a customer returns multiple products that were ordered from multiple sales agreements, you must create a new return order for each product and create a link to the corresponding sales agreement.
+When a customer returns a product that was ordered from a sales agreement, Microsoft Dynamics 365 for Operations can find and automatically update the related sales agreement commitment to reflect the change in quantity or amount. By creating a return order that is based on the original sales order that is linked to a sales agreement, you establish a relation between the sales agreement commitment, the sales order line, and the return order invoice.  
+
+If you don't want to deduct the returned item quantity from the sales agreement commitment, you can use the **Remove link** control on the **Return order** page to remove the link between the return order and the sales agreement commitment. If you must reestablish the link later, click **Create link**.  
+
+**Note:** A return order can be linked to only one sales agreement. If a customer returns multiple products that were ordered from multiple sales agreements, you must create a new return order for each product and create a link to the corresponding sales agreement.
 
 ## Automatic search for sales agreements
 In some situations where sales orders are created indirectly, such as when you create a credit note or intercompany sales orders, you can control whether Microsoft Dynamics 365 for Operations automatically searches for applicable sales agreements.

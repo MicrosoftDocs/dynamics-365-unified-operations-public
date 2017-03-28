@@ -40,6 +40,7 @@ Usage
 The Advanced Selection form pattern should be used when the primary user task is to select a set of items. This task is usually accomplished through a multi-select list. However, in many scenarios, users must select items that aren't contiguous and, at the same time, must see the set of items that they are selecting. This pattern resembles the List panel pattern, in that the user selects items in one list and adds them to another. However, this pattern allows for custom filters and a “wide” list on top, and uses most of the screen "real estate" of the page (typically, it's a Large dialog). Use this pattern when a user must be able to filter and select in a large, wide list.
 
 ## Wireframe
+
 [![Advanced Selection pattern wireframe](./media/advancedselection1.png)](./media/advancedselection1.png)
 
 ### Related patterns
@@ -62,7 +63,9 @@ The verification checklist shows the steps for manually verifying that the form 
     -   When there is no data, the grid should not automatically add a new record.
 
 ## Example
-Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procurement categories**. On the **Vendors** FastTab, click **Add**.) [![advancedSelectionExample](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
+Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procurement categories**. On the **Vendors** FastTab, click **Add**.) 
+
+[![advancedSelectionExample](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
 ## Appendix
 ### Frequently asked questions

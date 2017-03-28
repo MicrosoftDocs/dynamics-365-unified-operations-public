@@ -89,8 +89,8 @@ You set up benefit types for garnishments, tax levies, and administrative fees o
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -146,16 +146,16 @@ Enter the following information.
 
 On the **Tax rule** FastTab, enter the following information.
 
-| Field           | Description                                                           |
-|-----------------|-----------------------------------------------------------------------|
-| Pretax basis    | Select **None**.                                                      |
+| Field         | Description                                         |
+|---------------|-----------------------------------------------------|
+| Pretax basis  | Select **None**.                                    |
 
 On the **Payroll details** FastTab, enter the following information.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="35%" />
+<col width="65%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -207,9 +207,9 @@ On the **Accounting** FastTab, you can also optionally enter the default financi
 
 You also set up benefit options on the **Benefit elements** page. Click **Options** to show the **Define benefit options** area. To create a new benefit option, click **New**, and enter the following information.
 
-| Field                                                   | Description                                         |
-|---------------------------------------------------------|-----------------------------------------------------|
-| Option Description                                      | Enter a name and a description for the option. For example, you might enter **01** as the name and **Garnishment/tax levy** as the description. When you create benefit options for garnishments, we recommend that you create a set of numbered options for garnishments and tax levies. For example, you might create options 01, 02, and 03. By numbering the options in this manner, you can quickly see the order that the garnishments were entered in. You can optionally create a separate numbered sequence for each type of garnishment or tax levy. |
+| Field                                    | Description                                         |
+|------------------------------------------|-----------------------------------------------------|
+| Option Description                       | Enter a name and a description for the option. For example, you might enter **01** as the name and **Garnishment/tax levy** as the description. When you create benefit options for garnishments, we recommend that you create a set of numbered options for garnishments and tax levies. For example, you might create options 01, 02, and 03. By numbering the options in this manner, you can quickly see the order that the garnishments were entered in. You can optionally create a separate numbered sequence for each type of garnishment or tax levy. |
 | Allow dependent coverage Allow beneficiary designations | Dependent coverage and beneficiary designations don't apply to garnishments or tax levies. Therefore, don't select the **Allow dependent coverage** and **allow beneficiary designations** check boxes.        |
 
 ## Creating benefits for garnishments and tax levies
@@ -228,12 +228,12 @@ Next, on the **Eligibility rules** FastTab, change the eligibility from **All wo
 
 Next, on the **Payroll details** FastTab, enter the following payroll information. The values that you enter here are used as default values when you enroll a worker in the garnishment or tax levy.
 
-| Field                                     | Description                    |
-|-------------------------------------------|--------------------------------|
-| Frequency                                 | Select how often payroll calculations should occur. The frequency determines the pay periods that the selected benefit is calculated in. Most often, garnishments and tax levies use **All**.          |
-| Basis                                     | Leave this field set to the default value, **Fixed amount**. When the **Fixed amount** basis is used, the payroll process starts with a fixed deduction amount, regardless of the amount of earnings. You can change the value to **Percent of earnings**, as required, when you enroll a worker in the garnishment or tax levy. |
+| Field                         | Description                    |
+|-------------------------------|--------------------------------|
+| Frequency                     | Select how often payroll calculations should occur. The frequency determines the pay periods that the selected benefit is calculated in. Most often, garnishments and tax levies use **All**.          |
+| Basis                         | Leave this field set to the default value, **Fixed amount**. When the **Fixed amount** basis is used, the payroll process starts with a fixed deduction amount, regardless of the amount of earnings. You can change the value to **Percent of earnings**, as required, when you enroll a worker in the garnishment or tax levy. |
 | Amount or rate (Garnishment and tax levy) | For garnishment and tax levy benefits, leave this field set to **0.0000**. The correct amount or rate is set on the **Maintain benefits** page for a specific worker when the worker is enrolled in the garnishment or tax levy.                                                                                                 |
-| Amount or rate (Administrative fees)      | For administrative fee benefits, enter the amount of the fee that your organization charges. If you charge different administrative fees under different circumstances, you might want to create separate administrative fee benefits for each fee amount.                                                                       |
+| Amount or rate (Administrative fees) | For administrative fee benefits, enter the amount of the fee that your organization charges. If you charge different administrative fees under different circumstances, you might want to create separate administrative fee benefits for each fee amount.                            |
 
 Finally, on the **Earning basis** FastTab, enter the earning codes that can be included when the basis is **Percent of earnings**. To enter an earning code, click **Add**, and then select the earning code in the list. Typically, your legal department determines the appropriate earning codes. Don't enter earning codes if the basis is **Fixed amount**, or if the benefit is for administrative fees. 
 

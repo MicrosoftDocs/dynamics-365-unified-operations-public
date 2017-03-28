@@ -262,39 +262,15 @@ The following sections provide information about the service accounts that were 
 
 The following table lists the default names of the domain accounts that were created when you deployed the environment.
 
-Domain account
+| Domain account                  | Description                                                                                                           |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| <DomainName>AOSServiceUser      | The account used to run the following services: Microsoft Dynamics AX Object Server                                   |
+| <DomainName>SQLServiceUser      | The account used to run the following services: SQL Server Analysis Services (MSSQLSERVER)                            |
+| <DomainName>DynamicsInstallUser | The account used to install Dynamics AX.                                                                              |
+| <DomainName>RetailServiceUser   | The account used to run the following services: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client. |
+| <DomainName>BCProxyUser         | The account used as the Business Connector proxy.                                                                     |
 
-Description
-
-Password
-
-&lt;DomainName&gt;AOSServiceUser
-
-The account used to run the following services:
-
--   Microsoft Dynamics AX Object Server
-
-The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
-
-&lt;DomainName&gt;SQLServiceUser
-
-The account used to run the following services:
-
--   SQL Server Analysis Services (MSSQLSERVER)
-
-&lt;DomainName&gt;DynamicsInstallUser
-
-The account used to install Dynamics AX.
-
-&lt;DomainName&gt;RetailServiceUser
-
-The account used to run the following services:
-
--   Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client
-
-&lt;DomainName&gt;BCProxyUser
-
-The account used as the Business Connector proxy.
+**Note: **The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
 
 ### Local administrator accounts
 

@@ -47,4 +47,13 @@ The Public Digital Bookkeeping System, or Sistema Público de Escrituração Dig
 -   Fiscal books reporting
 -   SPED – CIAP (Controle de Credito de ICMS do Ativo Permanente, or Fixed asset tax credit control)
 
-
+## Additional resources
+-   [ICMS tax fiscal documents](bra-icms-tax-fiscal-documents.md)			
+-   [Import fiscal documents](bra-import-fiscal-documents.md)
+-   [Import and verify NF-e XML documents and DANFE files](bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+-   [Fiscal documents](bra-fiscal-documents-fiscal-document-framework.md)	
+-   [Fiscal document text placeholders](bra-fiscal-document-text-placeholders.md)
+-   [Purchase complementary fiscal documents](bra-purchase-complementary-fiscal-documents.md)	
+-   [Referenced fiscal documents](referenced-fiscal-documents.md)			
+-   [Sales complementary fiscal documents](bra-sales-complementary-fiscal-documents.md)
+-   [Service electronic fiscal document](service-electronic-fiscal-document.md)	

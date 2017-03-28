@@ -34,60 +34,40 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-The following table lists the pages that support the close Accounts receivable business process. **Note:** To open some of the pages in the table, you must enter information or specify parameter settings.
+The following table lists the pages that support the close Accounts receivable business process.
 
-Business process component task
+> [!NOTE] 
+> To open some of the pages in the table, you must enter information or specify parameter settings.
 
-Page name
-
-Usage
+**Business process component task**                   
 
 Close periods in the general ledger
 
-Batch job
+| Page name                            | Usage                                                                                      |
+|--------------------------------------|--------------------------------------------------------------------------------------------|
+|Batch job                             | View or create batch jobs. Batch jobs might not be completed, and you want make sure that all posting is completed.                                                                                                               |
+|Confirm sales order                   | Update sales orders.                                                                       |
+|Foreign currency revaluation          | Generate transactions that update the value of open customer transactions in foreign currencies.                                                                                                                         |
+| Journal                              | Post invoices, payments, and promissory notes.                                             |
+| Journal voucher                      | -   **Payment journal** – Generate, process, and post payments.
+                                         -   **Draw bill of exchange journal** – Post bills of exchange.
+                                         -   **Protest bill of exchange journal** – Post protested bills of exchange.
+                                         -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
+                                         -   **Remittance journal** – Post remittances.
+                                         -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
+| Packing slip posting                 | Update packing slips for sales orders.                                                     |
+| Post free text invoice               | Post free text invoices.                                                                   |
+| Posting invoice                      | Post invoices for sales orders.                                                            |
+| Posting picking list                 |Update picking lists for sales orders.                                                      |
 
-View or create batch jobs. Batch jobs might not be completed, and you want make sure that all posting is completed.
-
-Confirm sales order
-
-Update sales orders.
-
-Foreign currency revaluation
-
-Generate transactions that update the value of open customer transactions in foreign currencies.
-
-Journal
-
-Post invoices, payments, and promissory notes.
-
-Journal voucher
-
--   **Payment journal** – Generate, process, and post payments.
--   **Draw bill of exchange journal** – Post bills of exchange.
--   **Protest bill of exchange journal** – Post protested bills of exchange.
--   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
--   **Remittance journal** – Post remittances.
--   **Settle bill of exchange journal** – Post settled bills of exchange.
-
-Packing slip posting
-
-Update packing slips for sales orders.
-
-Post free text invoice
-
-Post free text invoices.
-
-Posting invoice
-
-Post invoices for sales orders.
-
-Posting picking list
-
-Update picking lists for sales orders.
+**Business process component task**   
 
 Create and submit the EU sales list
 
-EU sales list
+| Page name                            | Usage                                                                                      |
+|--------------------------------------|--------------------------------------------------------------------------------------------|
+|EU sales list                         | Report on European Union (EU) sales to the tax authority for value-added tax (VAT) declaration purposes.                                                                                                                           |
 
-Report on European Union (EU) sales to the tax authority for value-added tax (VAT) declaration purposes.
+
+
 

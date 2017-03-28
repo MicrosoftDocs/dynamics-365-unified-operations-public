@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up asset retirement obligation for fixed assets
+# Set up asset retirement obligation
 
 In Japan, asset retirement obligation (ARO) is recognized for fixed assets that have legal obligations at their retirement. This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired.
 
@@ -44,7 +44,10 @@ Asset retirement obligation (ARO) is used to distribute the retirement cost of a
 | Step 3\*    | Debit: Interest expenses **27** Credit: ARO liability **27**                                                                                                                              |
 | Step 4      | Debit: Accumulated depreciation (FA) **10,000** Debit: Accumulated depreciation (ARO) **863** Credit: Equipment **10,863** Debit: ARO liability **1,000** Credit: Other payable **1,000** |
 
-\* Steps 2 and 3 are repeated multiple times throughout the service life of the fixed asset. \[caption id="attachment\_232811" align="alignnone" width="1230"\][![T-account representation of the ARO transactions](./media/aro-t-account.png)](./media/aro-t-account.png) T-account representation of the ARO transactions\[/caption\]
+> [!NOTE]
+>\* Steps 2 and 3 are repeated multiple times throughout the service life of the fixed asset.
+
+![T-account representation of the ARO transactions](./media/aro-t-account.png) 
 
 ## Setup information
 To use ARO, you must complete the following setup tasks:
@@ -64,7 +67,7 @@ If you don't have access to the pages that are used to complete this task, conta
 | Category                  | Prerequisite                                                                                                                                                         |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configuration keys        | Ensure that the Fixed **Assets** configuration key is available under the **Data Dictionary** &gt; **Configuration Keys** node in the Application Object Tree (AOT). |
-| Security roles and duties | To perform this task, you must be a member of the **-Maintain fixed assets-** security role.                                                                         |
+| Security roles and duties | To perform this task, you must be a member of the **-Maintain fixed assets-** security role.|
 
 
 

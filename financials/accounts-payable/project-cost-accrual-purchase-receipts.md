@@ -41,6 +41,7 @@ The following example scenario illustrates this.
 Contoso Consulting has started a new cloud deployment project. A purchase order is created to buy a computer for the project. The computer will cost $1500 and installation services will cost $150. The vendor has delivered and installed the computer, but the invoice has not yet reached Contoso Consulting. The project manager would like to see project cost accrual of $1650 before the invoice gets delivered. This cost should also be reflected in the company's month end financial statements. 
 
 The accrued cost needs to be recorded on both the financial level and project level for reporting purposes. In Dynamics 365 for Operations, the financial update of the product receipt can be tracked for the item and procurement categories. 
+
 For items, on the **Accounts payable parameters** page, select the **Post product receipts to ledger** option.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
@@ -51,6 +52,7 @@ The **Purchase expenditure un-invoiced** and **Purchase accrual** accounts in *
 [![accruals3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
 
 Using this same scenario, let's see how posting a product receipt will impact General ledger and Project information. 
+
 **Step 1:** Create and confirm a new purchase order for the project to record the purchase of a computer for $1500 and installation services for $150.
 [![accruals4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
@@ -60,11 +62,15 @@ When the purchase order is confirmed, transactions for the committed cost ar
 > [!NOTE]
 > The transactions for the committed cost will have the **Transaction Origin** field set to **Purchase Order**. Creating and confirming a purchase order does not create transactions for a project. 
 
-**Step 2:** Goods and services get delivered and a product receipt is registered. Posting a product receipt will generate and post a voucher to the ledger. The voucher will debit the purchase expenditure, un-invoiced account, and credit purchase accrual account. 
+**Step 2:** Goods and services get delivered and a product receipt is registered. 
+
+Posting a product receipt will generate and post a voucher to the ledger. The voucher will debit the purchase expenditure, un-invoiced account, and credit purchase accrual account. 
 [![accruals6](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
-> Posting a product receipt will use the posting setup for procurement categories and products, and not the posting setup for the project categories. In order to correctly reflect financial impact of purchase accruals, this setup needs to be aligned. It is possible to map procurement categories to project categories on the **Procurement category** page.
+> Posting a product receipt will use the posting setup for procurement categories and products, and not the posting setup for the project categories. In order to correctly reflect financial impact of purchase accruals, this setup needs to be aligned. 
+
+It is possible to map procurement categories to project categories on the **Procurement category** page.
 [![accruals7](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
 **Step 3:** Create a draft vendor invoice. 

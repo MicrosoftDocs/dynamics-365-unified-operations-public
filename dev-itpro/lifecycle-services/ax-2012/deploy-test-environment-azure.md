@@ -423,54 +423,16 @@ The following sections provide information about the service accounts that were 
 
 The following table lists the default names of the domain accounts that were created when you deployed the environment.
 
-**Domain account**
+| Domain account                  | Description                                                                                                                                                                                                                                                                                                                                              |
+|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <DomainName>AOSServiceUser      | The account used to run the following services on AOS-<GUID> virtual machines: Microsoft Dynamics AX Object Server.                                                                                                                                                                                                                                      |
+| <DomainName>SQLServiceUser      | The account used to run the following services on SQL-<GUID> virtual machines: SQL Server Analysis Services (MSSQLSERVER)                                                                                                                                                                                                                                |
+| <DomainName>DynamicsInstallUser | The account used to install AX 2012 R3.                                                                                                                                                                                                                                                                                                                  |
+| <DomainName>SPServiceUser       | The account used to run the following services on EP-<GUID> virtual machines: AppFabric, SharePoint Search Host Controller, SharePoint Server Search 15, SharePoint Timer Service, and SharePoint User Code Host                                                                                                                                         |
+| <DomainName>BCProxyUser         | The account used as the Business Connector proxy.                                                                                                                                                                                                                                                                                                        |
+| <DomainName>AXServiceUser       | The account used to run the following services on AOS-<GUID> virtual machines: Microsoft Dynamics AX Data Import/Export Framework Services and Microsoft Dynamics ERP RapidStart Connector. The account is also used to run the following services on CLI-<GUID> virtual machines: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client. |
 
-**Description**
-
-**Password**
-
-&lt;DomainName&gt;AOSServiceUser
-
-The account used to run the following services on AOS-&lt;GUID&gt; virtual machines:
-
--   Microsoft Dynamics AX Object Server
-
-The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
-
-&lt;DomainName&gt;SQLServiceUser
-
-The account used to run the following services on SQL-&lt;GUID&gt; virtual machines:
-
--   SQL Server Analysis Services (MSSQLSERVER)
-
-&lt;DomainName&gt;DynamicsInstallUser
-
-The account used to install AX 2012 R3.
-
-&lt;DomainName&gt;SPServiceUser
-
-The account used to run the following services on EP-&lt;GUID&gt; virtual machines:
-
--   AppFabric Caching Service
--   SharePoint Search Host Controller
--   SharePoint Server Search 15
--   SharePoint Timer Service
--   SharePoint User Code Host
-
-&lt;DomainName&gt;BCProxyUser
-
-The account used as the Business Connector proxy.
-
-&lt;DomainName&gt;AXServiceUser
-
-The account used to run the following services on AOS-&lt;GUID&gt; virtual machines:
-
--   Microsoft Dynamics AX Data Import/Export Framework Service
--   Microsoft Dynamics ERP RapidStart Connector
-
-The account is also used to run the following services on CLI-&lt;GUID&gt; virtual machines:
-
--   Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client
+**Note:** The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
 
  
 

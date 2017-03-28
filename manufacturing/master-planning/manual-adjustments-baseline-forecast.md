@@ -44,10 +44,24 @@ The **Adjusted demand forecast** page includes a grid that has the following str
 -   The values in the cells represent the forecast for one item, item allocation key, and so on, for that specific forecast bucket.
 
 ## Forecast aggregation and deaggregation
-The subtitle of the page shows the level of forecast aggregation. For example, if the subtitle of the page is **Company / Site / Allocation key / Item number / Color / Size / Configuration / Style**, there is no forecast aggregation, and the forecast is shown at the level of the item and its dimensions. To change the aggregation, use the **Change forecast dimensions** page, which you can open from the application menu. To modify the forecast, click in any of the cells that are available, and type the adjusted forecast value. The edited cell immediately becomes bold to indicate that the forecast that it shows isn't the forecast that the demand forecasting service created, but has been manually adjusted. If you change the aggregation to make the page show more aggregated data, you can use the **Demand forecast lines** page to see the individual forecast lines that make up the aggregated forecast. For example, you've generated the forecast at the item level, but you know that the demand for this item will increase across all sites because of a promotion or another similar event. In this case, you can set the aggregation to **Company / Item allocation key / Item** on the **Change forecast dimensions** page. You can adjust the global forecast for the item across all sites in the **Adjusted demand forecast** grid. To see the effect of your change across all sites, open the **Demand forecast lines** page. On this page, you will see one line for the item for each site, the adjusted forecast quantity, and the original forecast quantity. When the adjustment of the forecasted quantity is made at an aggregated level, the system uses weighted allocation to distribute the change among the lines that create the aggregation. You can also make manual adjustments on the **Demand forecast lines** page, by modifying either the **Total quantity** value or the **Quantity** cells in the de-aggregation grid.
+The subtitle of the page shows the level of forecast aggregation. 
+
+For example, if the subtitle of the page is **Company / Site / Allocation key / Item number / Color / Size / Configuration / Style**, there is no forecast aggregation, and the forecast is shown at the level of the item and its dimensions. To change the aggregation, use the **Change forecast dimensions** page, which you can open from the application menu. 
+
+To modify the forecast, click in any of the cells that are available, and type the adjusted forecast value. The edited cell immediately becomes bold to indicate that the forecast that it shows isn't the forecast that the demand forecasting service created, but has been manually adjusted. 
+
+If you change the aggregation to make the page show more aggregated data, you can use the **Demand forecast lines** page to see the individual forecast lines that make up the aggregated forecast. 
+
+For example, you've generated the forecast at the item level, but you know that the demand for this item will increase across all sites because of a promotion or another similar event. In this case, you can set the aggregation to **Company / Item allocation key / Item** on the **Change forecast dimensions** page. You can adjust the global forecast for the item across all sites in the **Adjusted demand forecast** grid. To see the effect of your change across all sites, open the **Demand forecast lines** page. On this page, you will see one line for the item for each site, the adjusted forecast quantity, and the original forecast quantity. 
+
+When the adjustment of the forecasted quantity is made at an aggregated level, the system uses weighted allocation to distribute the change among the lines that create the aggregation. 
+
+You can also make manual adjustments on the **Demand forecast lines** page, by modifying either the **Total quantity** value or the **Quantity** cells in the de-aggregation grid.
 
 ## Viewing details of the forecast
-You can open the **Demand forecast details** page to view more information about the forecast. The **Demand forecast details** page shows the following information in graphical and tabular formats:
+You can open the **Demand forecast details** page to view more information about the forecast. 
+
+The **Demand forecast details** page shows the following information in graphical and tabular formats:
 
 -   The historical demand that the forecast predictions are based on.
 -   The current forecast that is used by Master planning.

@@ -23,6 +23,7 @@ ms.search.scope: Operations, Core
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
+
 # ms.search.industry: 
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
@@ -34,7 +35,9 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
 
-The vendor collaboration interface in Microsoft Dynamics 365 for Operations exposes information about purchase orders, invoices, and consignment stock to external vendors. You can create new vendor collaboration contacts and request that new users are provisioned if you're working as an external vendor with the **Vendor admin (external)** security role, or similar permissions. You can also perform these tasks if you're working as a procurement professional. In this topic, this role refers to a procurement professional who is working within the company that owns the instance of Dynamics 365 for Operations. For more information about how to use vendor collaboration if you're an external vendor, see [Vendor with customers](vendor-collaboration-work-customers-dynamics-365-operations.md). For more information about how to use vendor collaboration if you're a procurement professional, see [Vendor collaboration to with external vendors](vendor-collaboration-work-external-vendors.md).
+The vendor collaboration interface in Microsoft Dynamics 365 for Operations exposes information about purchase orders, invoices, and consignment stock to external vendors. You can create new vendor collaboration contacts and request that new users are provisioned if you're working as an external vendor with the **Vendor admin (external)** security role, or similar permissions. You can also perform these tasks if you're working as a procurement professional. In this topic, this role refers to a procurement professional who is working within the company that owns the instance of Dynamics 365 for Operations. For more information about how to use vendor collaboration if you're an external vendor, see [Vendor with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+
+For more information about how to use vendor collaboration if you're a procurement professional, see [Vendor collaboration to with external vendors](vendor-collaboration-work-external-vendors.md).
 
 ## Add new vendor collaboration contacts
 If you want someone to have access to vendor collaboration they first have to be added as a vendor collaboration contact. You may also want to add contacts for employees in your company who won't use vendor collaboration. For example, they could be the point of contact for other kinds of procurement information. New contacts are added on the **All contacts** page, which is accessed from the **Vendor collaboration** &gt; **Contacts** menu. To add a new contact:
@@ -52,7 +55,9 @@ Vendor collaboration user requests can be raised by a procurement professional, 
 -   If you're an external vendor, you submit requests from the **All contacts** page within the **Vendor collaboration** module.
 -   If you're a procurement professional, you submit requests from the **View contacts** page. To do this, on the vendor record, in the **Setup** section in the Action pane, select **Contacts** &gt; **View contacts**.
 
-You can make a request to provision a user, to inactivate a user, or to modify security roles. If you're an external vendor administrator, you must be registered as a contact person for the vendor accounts that you want to make user requests for, and you must have access to the vendor collaboration interface for those vendor accounts. When a request is submitted it is added to the **Vendor collaboration user requests** list in the **Vendor collaboration** module, and to the **Vendor collaboration user request** list in the **Procurement and sourcing** module (the Procurement and sourcing module is not accessible to external users).
+You can make a request to provision a user, to inactivate a user, or to modify security roles. If you're an external vendor administrator, you must be registered as a contact person for the vendor accounts that you want to make user requests for, and you must have access to the vendor collaboration interface for those vendor accounts.  
+
+When a request is submitted it is added to the **Vendor collaboration user requests** list in the **Vendor collaboration** module, and to the **Vendor collaboration user request** list in the **Procurement and sourcing** module (the Procurement and sourcing module is not accessible to external users).
 
 ### Provision a user
 
@@ -81,7 +86,9 @@ To request that a user is inactivated:
 
 ### Modify security roles
 
-The **Maintain vendor user roles** page is the same as the **Provision vendor user** page except that the list of security roles can be edited. To request that the security roles are modified for a user:
+The **Maintain vendor user roles** page is the same as the **Provision vendor user** page except that the list of security roles can be edited.  
+
+To request that the security roles are modified for a user:
 
 1.  On the **All contacts** page, click **Maintain** **vendor user roles**.
 2.  Write a comment in the **Business justification** field.

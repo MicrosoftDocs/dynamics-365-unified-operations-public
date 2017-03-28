@@ -34,10 +34,14 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
 
-The **Vendor collaboration** module is targeted at vendors who don’t have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Operations. It allows vendors to work with purchase order, invoice, and consignment inventory information. This topic describes how you can collaborate with external vendors who are using the vendor collaboration interface to work with POs and consignment inventory. It also describes how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors will see when they respond to a PO. For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md). For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](/financials/accounts-payable/vendor-portal-invoicing-workspace). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
+The **Vendor collaboration** module is targeted at vendors who don’t have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Operations. It allows vendors to work with purchase order, invoice, and consignment inventory information. This topic describes how you can collaborate with external vendors who are using the vendor collaboration interface to work with POs and consignment inventory. It also describes how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors will see when they respond to a PO. For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+
+For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](/financials/accounts-payable/vendor-portal-invoicing-workspace). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
 ## Define the information shown to vendors when they respond to POs
-When vendors respond to a PO that you send them, they see a dialog box where they need to confirm that they want to accept, reject, or accept the PO with changes. The information that needs to be shown to the vendor at that point may be specific for your business, so you can specify the text that will show on each of the three confirmation messages. For example, the text could inform the vendor about the next steps in the process, or about terms and conditions. To define the text that's shown in the PO response:
+When vendors respond to a PO that you send them, they see a dialog box where they need to confirm that they want to accept, reject, or accept the PO with changes. The information that needs to be shown to the vendor at that point may be specific for your business, so you can specify the text that will show on each of the three confirmation messages. For example, the text could inform the vendor about the next steps in the process, or about terms and conditions.  
+
+To define the text that's shown in the PO response:
 
 1.  Open the **Information for vendors responding to POs** page.
 2.  Select one of the response types.
@@ -70,7 +74,9 @@ Purchase orders are prepared in Dynamics 365 for Operations. When the PO has a s
 
 ### Confirmation and acceptance of the PO by the vendor
 
-When a vendor has accepted a purchase order, the PO may be automatically confirmed, or it may need to be manually confirmed. This depends on whether the **Vendor activation **field is set to **Active (PO is auto-confirmed)** for the vendor, or to **Active (PO is not auto-confirmed)**. The following table shows the typical exchange of information, depending on how the vendor responds when you send a PO for confirmation.
+When a vendor has accepted a purchase order, the PO may be automatically confirmed, or it may need to be manually confirmed. This depends on whether the **Vendor activation **field is set to **Active (PO is auto-confirmed)** for the vendor, or to **Active (PO is not auto-confirmed)**.  
+
+The following table shows the typical exchange of information, depending on how the vendor responds when you send a PO for confirmation.
 
 <table>
 <colgroup>
@@ -125,7 +131,7 @@ When you cancel a PO, the status is changed to **Approved**. You must send the P
 You can add attachments such as files, images, and notes to the PO using the document management system. The attachments added with the restriction of type **External** will be visible for the vendor when you send the PO to them.
 
 ## Purchase order statuses and versions
-This section describes the different statuses that a PO can have up to the time when it's confirmed, and at what point new versions of the PO are made available to the vendor. There are differences in this, depending on whether you use change management for purchase orders . 
+This section describes the different statuses that a PO can have up to the time when it's confirmed, and at what point new versions of the PO are made available to the vendor. There are differences in this, depending on whether you use change management for purchase orders. 
 
 ### Versions and statuses if you don't use change management
 
@@ -141,11 +147,15 @@ The following table shows an example of the changes in status and version that a
 | You send the new version of the PO to the vendor.                        | A new version is registered in the vendor collaboration interface, and the status is changed to **In External Review**.                                      |
 | The vendor accepts the new version of the PO.                            | The status is still **In External Review** unless the vendor account is configured to automatically set the PO to a **Confirmed** state when they accept it. |
 
-Vendors don’t have to confirm the PO using the vendor collaboration interface. They can also send an email message or communicate their acceptance of a PO via other channels. You can then confirm the order manually in Dynamics 365 for Operations. If you do this, you'll receive a warning that the order is being confirmed even though there is no response from the vendor. The PO then appears in the confirmation history as an open confirmed order that doesn’t have any responses. The vendor no longer has the option to confirm or reject the PO. **Note:** The version of the PO that is available to other processes in Dynamics 365 for Operations is always the latest version, even if that version hasn’t yet been registered in the vendor collaboration interface.
+Vendors don’t have to confirm the PO using the vendor collaboration interface. They can also send an email message or communicate their acceptance of a PO via other channels. You can then confirm the order manually in Dynamics 365 for Operations. If you do this, you'll receive a warning that the order is being confirmed even though there is no response from the vendor. The PO then appears in the confirmation history as an open confirmed order that doesn’t have any responses. The vendor no longer has the option to confirm or reject the PO.  
+
+**Note:** The version of the PO that is available to other processes in Dynamics 365 for Operations is always the latest version, even if that version hasn’t yet been registered in the vendor collaboration interface.
 
 ### Versions and statuses if you use change management
 
-If change management is enabled for POs, the PO goes through an approval workflow to reach the **Approved** status. This process isn’t visible to the vendor. The following table shows an example of the changes in status and version that a PO might go through when change management is turned on. The version is registered when the PO is approved, not when the PO is sent to the vendor or confirmed.
+If change management is enabled for POs, the PO goes through an approval workflow to reach the **Approved** status. This process isn’t visible to the vendor.  
+
+The following table shows an example of the changes in status and version that a PO might go through when change management is turned on. The version is registered when the PO is approved, not when the PO is sent to the vendor or confirmed.
 
 |                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

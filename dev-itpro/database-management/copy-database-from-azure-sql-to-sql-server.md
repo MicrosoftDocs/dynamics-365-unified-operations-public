@@ -275,7 +275,13 @@ When you attempt to download the SQL Management Studio install, you might rece
 
 ### Database synchronization fails
 
-When you synchronize the database against the newly imported database from Visual Studio, the synchronization might fail with the following error: *"Failed to open SQL connection* *syncengine.exe exited with code -1."* Also, in the Windows application log, you will find this message logged under event ID 140: *Object Server Database Synchronizer:* *The internal system table version number stored in the database is higher than the version supported by the kernel (141/138). Use a newer Microsoft Dynamics kernel, or start Microsoft Dynamics using the -REPAIR command line parameter to enforce synchronization.* This can occur when the platform build number of the current environment is lower than the platform build number of the source environment. Depending on your circumstances, either upgrade the current environment’s platform to match the source environment, by using the **Updates** tiles on the LCS **Environment** page, or adjust the expected version in the database by using the following query.
+When you synchronize the database against the newly imported database from Visual Studio, the synchronization might fail with the following error:
+> *"Failed to open SQL connection* *syncengine.exe exited with code -1."* 
+
+Also, in the Windows application log, you will find this message logged under event ID 140: 
+> *Object Server Database Synchronizer:* *The internal system table version number stored in the database is higher than the version supported by the kernel (141/138). Use a newer Microsoft Dynamics kernel, or start Microsoft Dynamics using the -REPAIR command line parameter to enforce synchronization.* 
+
+This can occur when the platform build number of the current environment is lower than the platform build number of the source environment. Depending on your circumstances, either upgrade the current environment’s platform to match the source environment, by using the **Updates** tiles on the LCS **Environment** page, or adjust the expected version in the database by using the following query.
 
     UPDATE SQLSYSTEMVARIABLES
 

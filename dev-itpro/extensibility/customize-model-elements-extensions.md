@@ -95,7 +95,10 @@ If you've already installed the demo data, you can skip to the next section.
 1.  In the VM, open Internet Explorer and navigate to the application's base URL.
 2.  Sign in.
 3.  On the dashboard, open the navigation pane and navigate to **Fleet Management &gt; Setup &gt; Fleet Setup**. [![FleetSetup\_CustomizeModel](./media/fleetsetup_customizemodel.png)](./media/fleetsetup_customizemodel.png)
-4.  Click **Setup Demo Data**. [![Configuration\_CustomizeModel](./media/configuration_customizemodel.png)](./media/configuration_customizemodel.png)
+4.  Click **Setup Demo Data**. 
+    
+    [![Configuration\_CustomizeModel](./media/configuration_customizemodel.png)](./media/configuration_customizemodel.png)
+    
 5.  If you're prompted to reload the demo data, click **Yes**.
 6.  When the data is finished loading, click **Close**.
 7.  On the dashboard, open the navigation bar and navigate to **System Administration &gt; Common &gt; Maintain aggregate measurements**. (Steps 7 to 9 are not applicable on newer releases)
@@ -105,56 +108,117 @@ If you've already installed the demo data, you can skip to the next section.
 ## Open the FMRental form on the onebox environment
 1.  In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application. For more information, see [Access Microsoft Dynamics AX Instances](..\dev-tools\access-instances.md).
 2.  Sign in, if prompted.
-3.  Find the **Reservation Management** tile and click to open the Reservation Management workspace. [![](./media/reservationmanagementtile.jpg)](./media/reservationmanagementtile.jpg)
-4.  When the **Reservation Management** workspace opens, click **Current rentals**. [![](./media/reservationmanagementworkspace.jpg)](./media/reservationmanagementworkspace.jpg)
-5.  This will open the **Rental** form in grid view. [![RentalForm\_CustomizeModel](./media/rentalform_customizemodel.png)](./media/rentalform_customizemodel.png)
-6.  After the **Rental** form loads, click **Options &gt; Change view &gt; Header** to open the **Header view**.[![HeaderView\_CustomizeModel](./media/headerview_customizemodel.png)](./media/headerview_customizemodel.png)
-7.  When the **Header view** form loads, scroll to the bottom and expand the **Discounts** tab. This tab isn't part of the Fleet Management model. It has been modeled in the Fleet Management Extension Model as an extension to the **FMRental** form.[![Discounts\_CustomizeModel](./media/discounts_customizemodel.png)](./media/discounts_customizemodel.png)
+3.  Find the **Reservation Management** tile and click to open the Reservation Management workspace. 
+
+    [![](./media/reservationmanagementtile.jpg)](./media/reservationmanagementtile.jpg)
+    
+4.  When the **Reservation Management** workspace opens, click **Current rentals**. 
+
+    [![](./media/reservationmanagementworkspace.jpg)](./media/reservationmanagementworkspace.jpg)
+    
+5.  This will open the **Rental** form in grid view. 
+
+    [![RentalForm\_CustomizeModel](./media/rentalform_customizemodel.png)](./media/rentalform_customizemodel.png)
+    
+6.  After the **Rental** form loads, click **Options &gt; Change view &gt; Header** to open the **Header view**.
+
+    [![HeaderView\_CustomizeModel](./media/headerview_customizemodel.png)](./media/headerview_customizemodel.png)
+    
+7.  When the **Header view** form loads, scroll to the bottom and expand the **Discounts** tab. This tab isn't part of the Fleet Management model. It has been modeled in the Fleet Management Extension Model as an extension to the **FMRental** form.
+
+    [![Discounts\_CustomizeModel](./media/discounts_customizemodel.png)](./media/discounts_customizemodel.png)
+    
 8.  Click **Add** to add a discount.
-9.  Select the **Frequent Customer** discount, and then click **OK**. The selected discount is added to the **Discounts** grid. [![FCDiscount\_CustomizeModel](./media/fcdiscount_customizemodel.png)](./media/fcdiscount_customizemodel.png)
+9.  Select the **Frequent Customer** discount, and then click **OK**. The selected discount is added to the **Discounts** grid. 
+
+    [![FCDiscount\_CustomizeModel](./media/fcdiscount_customizemodel.png)](./media/fcdiscount_customizemodel.png)
+    
 10. Use the shortcut key, **Alt+F2** to open the FactBox.
-11. Expand the **Rental total** FactBox on the right and view the discount savings that are applied. [![RentalTotal\_CustomizeModel](./media/rentaltotal_customizemodel.png)](./media/rentaltotal_customizemodel.png)
+11. Expand the **Rental total** FactBox on the right and view the discount savings that are applied. 
+
+    [![RentalTotal\_CustomizeModel](./media/rentaltotal_customizemodel.png)](./media/rentaltotal_customizemodel.png)
 
 ## Overview of the Fleet management discount extension project
 In this tutorial, the **FleetManagementDiscounts** Project contains the model elements that belong to the model named **Fleet Management Extension**. Here, you'll explore and learn about the project elements.
 
 ### Navigate to FMRental.Extension in the Tree Designer
 
-1.  In the Visual Studio, in **Solution Explorer**, in the **FleetManagement Discounts** project, expand **User Interface &gt; Form Extensions**. [![SolutionExplorer1\_CustomizeModel](./media/solutionexplorer1_customizemodel.png)](./media/solutionexplorer1_customizemodel.png) The **FMRental.Extension** element is an extension element that extends the functionality of the **FMRental** form by adding two new data sources and a new tab control.
+1.  In the Visual Studio, in **Solution Explorer**, in the **FleetManagement Discounts** project, expand **User Interface &gt; Form Extensions**. 
+    
+    [![SolutionExplorer1\_CustomizeModel](./media/solutionexplorer1_customizemodel.png)](./media/solutionexplorer1_customizemodel.png)
+    
+    The **FMRental.Extension** element is an extension element that extends the functionality of the **FMRental** form by adding two new data sources and a new tab control.
 2.  In **Solution Explorer**, double-click **FMRental.Extension** to open the designer. As the following image shows:
     -   The data sources shown in *italic* text are data sources defined in the baseline form.
     -   The data sources shown in **bold** are the ones defined in the current extension.
 
-    The designer presents an integrated view of the model element, including its extensions. Read-only nodes are shown in italic text, while nodes that belong to the current extension are shown in bold, with other visual cues that indicate the type of customization. [![FMRentalExt\_CustomizeModel](./media/fmrentalext_customizemodel.png)](./media/fmrentalext_customizemodel.png)
-3.  In the designer's search box, type 'e:' as shown in the image below. This filters the current designer to only show nodes that belong to the current extension. [![RentalExt-e\_CustomizeModel](./media/rentalext-e_customizemodel.png)](./media/rentalext-e_customizemodel.png)
-4.  You can also type 'e:LineViewDiscounts' to filter the designer to show nodes that match the name **LineViewDiscounts** and that belong to the current extension. [![LineViewDiscounts\_CustomizeModel](./media/lineviewdiscounts_customizemodel.png)](./media/lineviewdiscounts_customizemodel.png)
-5.  Expand the **LineViewDiscounts** node to see its contents. [![ExpandLVDNode\_CustomizeModel](./media/expandlvdnode_customizemodel.png)](./media/expandlvdnode_customizemodel.png)
+    The designer presents an integrated view of the model element, including its extensions. Read-only nodes are shown in italic text, while nodes that belong to the current extension are shown in bold, with other visual cues that indicate the type of customization. 
+    
+        [![FMRentalExt\_CustomizeModel](./media/fmrentalext_customizemodel.png)](./media/fmrentalext_customizemodel.png)
+        
+3.  In the designer's search box, type 'e:' as shown in the image below. This filters the current designer to only show nodes that belong to the current extension. 
+
+    [![RentalExt-e\_CustomizeModel](./media/rentalext-e_customizemodel.png)](./media/rentalext-e_customizemodel.png)
+    
+4.  You can also type 'e:LineViewDiscounts' to filter the designer to show nodes that match the name **LineViewDiscounts** and that belong to the current extension. 
+
+    [![LineViewDiscounts\_CustomizeModel](./media/lineviewdiscounts_customizemodel.png)](./media/lineviewdiscounts_customizemodel.png)
+    
+5.  Expand the **LineViewDiscounts** node to see its contents. 
+
+    [![ExpandLVDNode\_CustomizeModel](./media/expandlvdnode_customizemodel.png)](./media/expandlvdnode_customizemodel.png)
 
 ### Open the FMRental.Extension XML file to view the metadata
 
 1.  In the **Solution Explorer**, right-click FMRental.Extension form extension, and then click **Open with**.
 2.  In the **Open with** dialog box, select **XML (Text) Editor**, and then click **OK**.
 3.  When prompted to close the designer, click **Yes**.
-4.  Click the corresponding minus signs to collapse the child nodes of the **Controls** and **DataSources** nodes. Refer to the following image for the correct result. [![FMRentalCode\_CustomizeModel](./media/fmrentalcode_customizemodel.png)](./media/fmrentalcode_customizemodel.png) The XML file contains the metadata associated with the **FMRental.Extension** element. You can see that this file contains metadata that describes only one tab page control and two data sources that are part of the extension. You can also see that it doesn't contain any metadata from the base form.
+4.  Click the corresponding minus signs to collapse the child nodes of the **Controls** and **DataSources** nodes. Refer to the following image for the correct result. 
+
+    [![FMRentalCode\_CustomizeModel](./media/fmrentalcode_customizemodel.png)](./media/fmrentalcode_customizemodel.png) 
+    
+    The XML file contains the metadata associated with the **FMRental.Extension** element. You can see that this file contains metadata that describes only one tab page control and two data sources that are part of the extension. You can also see that it doesn't contain any metadata from the base form.
 
 ### View other elements in the Fleet Management discount extension project
 
 The **FleetManagement Discounts** project contains two new tables, **FEDiscount** and **FERentalDiscountRelationTable**, and two extensions to existing Fleet Management tables, **FMRental** and **FMRentalCharge**.
 
 1.  In **Solution Explorer**, in FleetManagement Discounts, double-click **Data Model &gt; Table Extensions &gt; FMRental.Extension** to open the designer.
-2.  Expand the **Fields** node to see that this extension contains one added field, FEVehicleRateDiscount, to the base FMRental table. [![Nodes\_CustomizeModel](./media/nodes_customizemodel.png)](./media/nodes_customizemodel.png)
+2.  Expand the **Fields** node to see that this extension contains one added field, FEVehicleRateDiscount, to the base FMRental table. 
+
+    [![Nodes\_CustomizeModel](./media/nodes_customizemodel.png)](./media/nodes_customizemodel.png)
+    
 3.  Similarly, open the **FMRentalChange.Extension** element in the designer to explore its contents.
 
 ### Inspect the data event handlers
 
-In **Solution Explorer**, in the FleetManagement Discounts project, double-click **Code &gt; Classes &gt; FMRentalCharge\_Extension** to open the code editor. [![FMRentalChargeCode\_CustomizeModel](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events. **Note:** Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of [X++ debugger features](..\dev-tools\new-x-debugger-features.md)article.
+In **Solution Explorer**, in the FleetManagement Discounts project, double-click **Code &gt; Classes &gt; FMRentalCharge\_Extension** to open the code editor. 
+
+    [![FMRentalChargeCode\_CustomizeModel](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) 
+    
+This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events. **Note:** Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of [X++ debugger features](..\dev-tools\new-x-debugger-features.md)article.
 
 ### View the plug-in classes
 
 In the event handler code of the **FMRentalCharge\_Extension** class shown in the previous section, notice that both event handlers call **FMTotalsEngineBase::GetInstance** to retrieve the current instance of the Fleet Management calculation engine. The calculation engines are implemented by using plug-in classes. A class factory creates the appropriate instances of a plug-in class based on configuration or business data.
 
-1.  In the code editor window that displays FMRentalCharge\_Extension.xpp, right-click **GetInstance**, and then click **Go To Definition**. This will open the code of the abstract class **FMTotalsEngineBase**. This abstract class is called a **plugin point** and it's associated with the following attribute: \[Microsoft.Dynamics.AX.Platform.Extensibility.ExportInterfaceAttribute()\] [![GoDefinition\_CustomizeModel](./media/godefinition_customizemodel.png)](./media/godefinition_customizemodel.png) Plug-in classes represent extensions or implementations of abstract classes or interfaces. Plug-in classes are associated with attributes defining their metadata and the plug-in point. In this example, there are two plug-in classes associated with the **FMTotalsEngineBase** plug-in point. The base calculation engine is defined by the plug-in class **FMTotalsEngine**. You can find it in the project **FleetManagement Migrated &gt; Code &gt; Classes**. [![Code1\_CustomizeModel](./media/code1_customizemodel.png)](./media/code1_customizemodel.png) The discount calculation engine is defined by the plug-in class **FEDiscountEngine**. You can find it in the project **FleetManagement Discounts &gt; Code &gt; Classes**. [![Code2\_CustomizeModel](./media/code2_customizemodel.png)](./media/code2_customizemodel.png)
-2.  Look at the **GetInstance** method. It uses the plug-in factory **SysPluginFactory::Instance** to instantiate the current calculation engine based on current plug-in metadata. The plug-in metadata is specified in the global configuration table, **FMParameters**. [![Code3\_CustomizeModel](./media/code3_customizemodel.png)](./media/code3_customizemodel.png) Dynamics AX also supports configurable plug-in classes where the plug-in metadata associate with the class isn't known at development time and is configurable at runtime by an administrator. This isn't in the scope of this tutorial.
+1.  In the code editor window that displays FMRentalCharge\_Extension.xpp, right-click **GetInstance**, and then click **Go To Definition**. This will open the code of the abstract class **FMTotalsEngineBase**. This abstract class is called a **plugin point** and it's associated with the following attribute: \[Microsoft.Dynamics.AX.Platform.Extensibility.ExportInterfaceAttribute()\] 
+
+    [![GoDefinition\_CustomizeModel](./media/godefinition_customizemodel.png)](./media/godefinition_customizemodel.png) 
+    
+    Plug-in classes represent extensions or implementations of abstract classes or interfaces. Plug-in classes are associated with attributes defining their metadata and the plug-in point. In this example, there are two plug-in classes associated with the **FMTotalsEngineBase** plug-in point. The base calculation engine is defined by the plug-in class **FMTotalsEngine**. You can find it in the project **FleetManagement Migrated &gt; Code &gt; Classes**. 
+    
+    [![Code1\_CustomizeModel](./media/code1_customizemodel.png)](./media/code1_customizemodel.png) 
+    
+    The discount calculation engine is defined by the plug-in class **FEDiscountEngine**. You can find it in the project **FleetManagement Discounts &gt; Code &gt; Classes**. 
+    
+    [![Code2\_CustomizeModel](./media/code2_customizemodel.png)](./media/code2_customizemodel.png)
+    
+2.  Look at the **GetInstance** method. It uses the plug-in factory **SysPluginFactory::Instance** to instantiate the current calculation engine based on current plug-in metadata. The plug-in metadata is specified in the global configuration table, **FMParameters**. 
+    
+    [![Code3\_CustomizeModel](./media/code3_customizemodel.png)](./media/code3_customizemodel.png) 
+    
+    Dynamics AX also supports configurable plug-in classes where the plug-in metadata associate with the class isn't known at development time and is configurable at runtime by an administrator. This isn't in the scope of this tutorial.
 
 ## Create additional Fleet Management extensions
 This section shows how you can use the Visual Studio tools to create and interact with extensions.
@@ -162,17 +226,41 @@ This section shows how you can use the Visual Studio tools to create and interac
 ### Extend the FMVehicle Table
 
 1.  In **Solution Explorer**, select the **FleetManagement Discounts** project.
-2.  In Visual studio, in **Application Explorer,** click **View &gt; Application Explorer**, and search for the table named FMVehicle. Type "FMVehicle type:Table" in the filter bar and press **Enter**. [![AppExplorerSmall\_CustomizeModel](./media/appexplorersmall_customizemodel.png)](./media/appexplorersmall_customizemodel.png)
-3.  Right-click **FMVehicle**, and then click **Create extension**. [![AppExplorerLarge1\_CustomizeModel](./media/appexplorerlarge1_customizemodel.png)](./media/appexplorerlarge1_customizemodel.png) This will create an extension of the **FMVehicle** table in the **FleetManagement Discounts** project named **FMVehicle.Extension**. [![ExpandDiscountsNode2\_CustomizeModel](./media/expanddiscountsnode2_customizemodel.png)](./media/expanddiscountsnode2_customizemodel.png)
-4.  In **Solution Explorer**, right-click **FMVehicle.Extension**, and then click **Open with**. In the dialog box, select **XML (Text) Editor**, and then click **OK**. **Note**: This extension file is simply a template that doesn't contain metadata from the base **FMVehicle** table. An extension file will always contain only the metadata that defines the extension and nothing from the base model element. [![Code4\_CustomizeModel](./media/code4_customizemodel.png)](./media/code4_customizemodel.png)
+2.  In Visual studio, in **Application Explorer,** click **View &gt; Application Explorer**, and search for the table named FMVehicle. Type "FMVehicle type:Table" in the filter bar and press **Enter**. 
+
+    [![AppExplorerSmall\_CustomizeModel](./media/appexplorersmall_customizemodel.png)](./media/appexplorersmall_customizemodel.png)
+    
+3.  Right-click **FMVehicle**, and then click **Create extension**. 
+
+    [![AppExplorerLarge1\_CustomizeModel](./media/appexplorerlarge1_customizemodel.png)](./media/appexplorerlarge1_customizemodel.png)
+    
+    This will create an extension of the **FMVehicle** table in the **FleetManagement Discounts** project named **FMVehicle.Extension**. 
+    
+        [![ExpandDiscountsNode2\_CustomizeModel](./media/expanddiscountsnode2_customizemodel.png)](./media/expanddiscountsnode2_customizemodel.png)
+        
+4.  In **Solution Explorer**, right-click **FMVehicle.Extension**, and then click **Open with**. In the dialog box, select **XML (Text) Editor**, and then click **OK**. **Note**: This extension file is simply a template that doesn't contain metadata from the base **FMVehicle** table. An extension file will always contain only the metadata that defines the extension and nothing from the base model element. 
+
+    [![Code4\_CustomizeModel](./media/code4_customizemodel.png)](./media/code4_customizemodel.png)
+    
 5.  Close the XML editor.
 6.  In **Solution Explorer**, double-click **FMVehicle.Extension** to open the designer.
 7.  Right-click **Fields** and add a new integer field. Change the name of the field to **NumberOfCyclinders**.
 8.  In the **Properties** window, set the **Label** property of the new field to **NumberofCylinders**.
-9.  Drag-and-drop the **NumberOfCylinders** field into the **AutoReport** field group to entend the field group of the base table. [![NumberOfCylinders\_CustomizeModel](./media/numberofcylinders_customizemodel.png)](./media/numberofcylinders_customizemodel.png)
+9.  Drag-and-drop the **NumberOfCylinders** field into the **AutoReport** field group to entend the field group of the base table. 
+
+    [![NumberOfCylinders\_CustomizeModel](./media/numberofcylinders_customizemodel.png)](./media/numberofcylinders_customizemodel.png)
+    
 10. Save FMVehicle.Extension.
-11. Expand the **Events** node. The **Events** node lists all events that the table exposes. This includes events that are defined by the framework, and delegate methods that are defined by application developers. [![EventsNode\_CustomizeModel](./media/eventsnode_customizemodel.png)](./media/eventsnode_customizemodel.png) **Note**: Different framework events are exposed on the designers of many types of element and sub-elements, like table events, form events, form data source events, and form control events.
-12. Right-click onValidatedWrite, and then select **Copy event handler method**. [![onValidateWrite\_CustomizeModel](./media/onvalidatewrite_customizemodel.png)](./media/onvalidatewrite_customizemodel.png) This step copies the event handler method signature to the clipboard.
+11. Expand the **Events** node. The **Events** node lists all events that the table exposes. This includes events that are defined by the framework, and delegate methods that are defined by application developers. 
+
+    [![EventsNode\_CustomizeModel](./media/eventsnode_customizemodel.png)](./media/eventsnode_customizemodel.png)
+    
+    **Note**: Different framework events are exposed on the designers of many types of element and sub-elements, like table events, form events, form data source events, and form control events.
+12. Right-click onValidatedWrite, and then select **Copy event handler method**. 
+
+    [![onValidateWrite\_CustomizeModel](./media/onvalidatewrite_customizemodel.png)](./media/onvalidatewrite_customizemodel.png) 
+    
+    This step copies the event handler method signature to the clipboard.
 13. Add a new class named **FMVehicleEventHandlers** to the **FleetManagement Discounts** project.
 14. In **Solution Explorer**, double-click **FEVehicleEventHandlers** to open the code editor.
 15. Right-click and paste the event handler method that you copied in step 12.
@@ -216,8 +304,14 @@ Next, add an extension to the **FMVehicle** form in the **FleetManagement Discou
 
 1.  Use **Application Explorer** to find the form named **FMVehicle**, and in the **Application Explorer** filter bar, enter the *FMVehicle type:form*.
 2.  Right-click the form, and then click **Create extension**.
-3.  Add a new integer control named **NumberOfCylinders** to the **Attributes2** group control as shown below. You can find this control by expanding **Design &gt; Tab &gt; TabPageDetails &gt; TabHeader &gt; DetailsDetails &gt; Attributes2**. [![NumCylInteger\_CustomizeModel](./media/numcylinteger_customizemodel.png)](./media/numcylinteger_customizemodel.png)
-4.  Bind the new control to the **NumberOfCylinders** data field in the properties window as follows. [![DataField\_CustomizeModel](./media/datafield_customizemodel.png)](./media/datafield_customizemodel.png)
+3.  Add a new integer control named **NumberOfCylinders** to the **Attributes2** group control as shown below. You can find this control by expanding **Design &gt; Tab &gt; TabPageDetails &gt; TabHeader &gt; DetailsDetails &gt; Attributes2**. 
+
+    [![NumCylInteger\_CustomizeModel](./media/numcylinteger_customizemodel.png)](./media/numcylinteger_customizemodel.png)
+    
+4.  Bind the new control to the **NumberOfCylinders** data field in the properties window as follows. 
+    
+    [![DataField\_CustomizeModel](./media/datafield_customizemodel.png)](./media/datafield_customizemodel.png)
+    
 5.  Save FMVehicle.Extension and build the project.
 
 ### Test your extensions
@@ -226,7 +320,10 @@ Next, add an extension to the **FMVehicle** form in the **FleetManagement Discou
 2.  Similarly, in FleetManagement Discounts, set the **FMVehicle.Extension** form as the startup object.
 3.  Press **Ctrl+F5** to start without debugging, or use the **Debug** menu.
 4.  After the **Vehicles** form opens, select a vehicle to view its details.
-5.  Expand the **Details** tab and notice the new **Number of Cylinders** field. [![](./media/nbofcyls.jpg)](./media/nbofcyls.jpg)
+5.  Expand the **Details** tab and notice the new **Number of Cylinders** field. 
+
+    [![](./media/nbofcyls.jpg)](./media/nbofcyls.jpg)
+    
 6.  In the Action Pane, click **Edit**, and change the value in the **Number of cylinders** field to 12.
 7.  In the Action Pane, click **Save**.
 8.  Notice the validation error.
@@ -235,7 +332,10 @@ Next, add an extension to the **FMVehicle** form in the **FleetManagement Discou
 ## Experiment with event handlers on form controls
 This is an example of adding event handler methods on existing controls.
 
-1.  Find the **AddLine** command button control in the **FMRental** form designer, right-click the **OnClicked** event, and select **Copy event handler method**.[![addlineOnClickedEvent](./media/addlineonclickedevent.jpg)](./media/addlineonclickedevent.jpg)
+1.  Find the **AddLine** command button control in the **FMRental** form designer, right-click the **OnClicked** event, and select **Copy event handler method**.
+
+    [![addlineOnClickedEvent](./media/addlineonclickedevent.jpg)](./media/addlineonclickedevent.jpg)
+    
 2.  Paste the event handler method in a class of the Fleet Management Extension model and add X++ code to implement it.
 
 <!-- -->
@@ -275,12 +375,17 @@ Extension methods enable you to extend tables by creating new display and edit
        }
     }
 
-On a form or form extension, you can bind a control to this display method by setting "Data Source = FMVehicle" and "Data method = "FMVehicle\_Extension::CupHoldersDisplay" as the image below shows. [![extensiondisplaymethod](./media/extensiondisplaymethod.jpg)](./media/extensiondisplaymethod.jpg)
+On a form or form extension, you can bind a control to this display method by setting "Data Source = FMVehicle" and "Data method = "FMVehicle\_Extension::CupHoldersDisplay" as the image below shows. 
+
+    [![extensiondisplaymethod](./media/extensiondisplaymethod.jpg)](./media/extensiondisplaymethod.jpg)
 
 ## Create a Fleet extension package for deployment
 To deploy your extension to another environment, for example, a test, pre-production or production environment, you must create a deployment package.
 
-1.  In Visual Studio, on the **Dynamics AX** menu, point to **Deploy**, and then click **Create Deployment Package**. [![CreateDeploymentPackage\_CustomizeModel](./media/createdeploymentpackage_customizemodel.png)](./media/createdeploymentpackage_customizemodel.png)
+1.  In Visual Studio, on the **Dynamics AX** menu, point to **Deploy**, and then click **Create Deployment Package**. 
+
+    [![CreateDeploymentPackage\_CustomizeModel](./media/createdeploymentpackage_customizemodel.png)](./media/createdeploymentpackage_customizemodel.png)
+    
 2.  Select the **Fleet Management Extension** check box.
 3.  In the **Package file location** text box, enter "c:FMLab".
 4.  Click **Create**. This will create a deployment package that contains the Fleet management Extension package.

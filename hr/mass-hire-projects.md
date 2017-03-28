@@ -59,10 +59,6 @@ A mass hire project can have the following statuses.
 On the **Mass hire project** page, click **Open project** or **Close project** to change the status of a mass hire project. The following table describes what you can do with a project according to its status.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Status</th>

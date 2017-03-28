@@ -53,59 +53,35 @@ Azure offers three types of services: Software-as-a-Service (SaaS), Platform-as-
 When you deploy AX 2012 R3 on Azure, you will be using the IaaS offering. This means that Azure provides the virtual machines, storage, and networking capabilities. You must manage and secure the operating systems, applications, and data installed on the virtual machines. [![DeployAXonAzureUsingLCS1](./media/deployaxonazureusinglcs1.jpg)](./media/deployaxonazureusinglcs1.jpg)
 
 ## Architecture of AX 2012 R3 on Azure
-To deploy AX 2012 R3 on Azure, you can use Microsoft Dynamics Lifecycle Services. Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. The Cloud-hosted environments tool, available on the Lifecycle Services website, helps you deploy AX 2012 R3 environments on Azure. When you use the Cloud-hosted environments tool to deploy, you’ll need to select the type of environment that you want to deploy on Azure, such as a demo or development/test environment. Based on your selection, the Cloud-hosted environments tool provisions the appropriate number of virtual machines on Azure. These virtual machines have AX 2012 R3 components—and all of their prerequisites—already installed on them. For example, if you deploy an AX 2012 R3 test environment, the architecture looks like this: [![DeployAXonAzureUsingLCS2](./media/deployaxonazureusinglcs2.jpg)](./media/deployaxonazureusinglcs2.jpg)   You can deploy the following types of AX 2012 R3 environments on Azure with the Cloud-hosted environments tool:
+To deploy AX 2012 R3 on Azure, you can use Microsoft Dynamics Lifecycle Services. Lifecycle Services is a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. The Cloud-hosted environments tool, available on the Lifecycle Services website, helps you deploy AX 2012 R3 environments on Azure. When you use the Cloud-hosted environments tool to deploy, you’ll need to select the type of environment that you want to deploy on Azure, such as a demo or development/test environment. Based on your selection, the Cloud-hosted environments tool provisions the appropriate number of virtual machines on Azure. These virtual machines have AX 2012 R3 components—and all of their prerequisites—already installed on them. For example, if you deploy an AX 2012 R3 test environment, the architecture looks like this: 
+[![DeployAXonAzureUsingLCS2](./media/deployaxonazureusinglcs2.jpg)](./media/deployaxonazureusinglcs2.jpg)   
 
-**Type of environment**
+You can deploy the following types of AX 2012 R3 environments on Azure with the Cloud-hosted environments tool:
 
-**Environment**
+**Demo environment**
 
-**Description**
+| Environment            | Description                                                                                                                                                                                                                                                             |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AX 2012 R3 demo        | Deploy this environment to demo AX 2012 R3. This environment includes 1 virtual machine. This virtual machine has Windows Server—and the software and sample data that you’ll need to demo AX 2012 R3—already installed on it.                                          |
+| AX 2012 R3 CU8 demo    | Deploy this environment to demo AX 2012 R3 Cumulative Update 8.This environment includes 1 virtual machine. This virtual machine has Windows Server—and the software and sample data that you’ll need to demo AX 2012 R3 CU8—already installed on it.                   |
+| Retail essentials demo | Deploy this environment to demo Retail essentials for AX 2012 R3. This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software and sample data that you’ll need to demo Retail essentials—already installed on it. |
 
-Demo
+**Dev/test environment**
 
-AX 2012 R3 demo
+| Environment                        | Description                                                                                                                                                                                                                                                                                                                                                                            |
+|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Development                        | Deploy this environment to develop features for AX 2012 R3.This environment includes 2 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 development purposes—already installed on them.                                                                                                                       |
+| Development with shared SQL Server | Deploy this environment to develop features for AX 2012 R3. The database for each development VM instance will be deployed to a shared SQL Server instance.This environment includes 3 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 development purposes—already installed on them.                       |
+| Test                               | Deploy this environment to test features for AX 2012 R3.This environment includes 4 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 testing purposes—already installed on them.                                                                                                                              |
+| Retail essentials dev/test         | Deploy this environment to develop or test features for Retail essentials for AX 2012 R3.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail essentials development and testing purposes—already installed on it.                                                                            |
+| Retail e-commerce dev/test         | Deploy this environment to create and test an online sales channel that is fully integrated with AX 2012 R3.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail e-commerce—already installed on it.                                                                                          |
+| Retail mobility dev/test           | Deploy this environment to enable your sales staff to process sales transactions, enter customer orders, and perform daily operations and inventory management with mobile devices anywhere in a store.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail mobility—already installed on it. |
 
-Deploy this environment to demo AX 2012 R3.This environment includes 1 virtual machine. This virtual machine has Windows Server—and the software and sample data that you’ll need to demo AX 2012 R3—already installed on it.
+**High availability environment**
 
-AX 2012 R3 CU8 demo
-
-Deploy this environment to demo AX 2012 R3 Cumulative Update 8.This environment includes 1 virtual machine. This virtual machine has Windows Server—and the software and sample data that you’ll need to demo AX 2012 R3 CU8—already installed on it.
-
-Retail essentials demo
-
-Deploy this environment to demo Retail essentials for AX 2012 R3.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software and sample data that you’ll need to demo Retail essentials—already installed on it.
-
-Dev/test
-
-Development
-
-Deploy this environment to develop features for AX 2012 R3.This environment includes 2 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 development purposes—already installed on them.
-
-Development with shared SQL Server
-
-Deploy this environment to develop features for AX 2012 R3. The database for each development VM instance will be deployed to a shared SQL Server instance.This environment includes 3 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 development purposes—already installed on them.
-
-Test
-
-Deploy this environment to test features for AX 2012 R3.This environment includes 4 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need for AX 2012 R3 testing purposes—already installed on them.
-
-Retail essentials dev/test
-
-Deploy this environment to develop or test features for Retail essentials for AX 2012 R3.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail essentials development and testing purposes—already installed on it.
-
-Retail e-commerce dev/test
-
-Deploy this environment to create and test an online sales channel that is fully integrated with AX 2012 R3.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail e-commerce—already installed on it.
-
-Retail mobility dev/test
-
-Deploy this environment to enable your sales staff to process sales transactions, enter customer orders, and perform daily operations and inventory management with mobile devices anywhere in a store.This environment includes 1 virtual machine, by default. This virtual machine has Windows Server—and the software that you’ll need for Retail mobility—already installed on it.
-
-High availability
-
-High availability
-
-Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability.This environment includes 14 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3—already installed on them.**Note: **When you deploy this environment, the AX 2012 R3 CU8 version of this environment is deployed by default. If you want to deploy the AX 2012 R3 RTM version, you can select that version during deployment.
+| Environment       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| High availability | Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability. This environment includes 14 virtual machines, by default. These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3 — already installed on them. Note: When you deploy this environment, the AX 2012 R3 CU8 version of this environment is deployed by default. If you want to deploy the AX 2012 R3 RTM version, you can select that version during deployment. |
 
 For more information about the virtual machines, and the software installed on each virtual machine in these environments, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
 

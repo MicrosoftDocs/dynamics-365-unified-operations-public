@@ -23,6 +23,7 @@ ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 11614
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
+
 # ms.search.industry: 
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
@@ -34,7 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about purchasing policies. A purchasing policy is a collection of rules that control the requisition process. Purchasing policies help procurement administrators implement their procurement strategy by creating a policy structure that is aligned with the organization’s strategic purchasing requirements.
 
-A purchasing policy consists of a set of policy rules. When you define a policy rule, you first select a rule type. You then create a rule for the rule type by defining the settings, the start date, and the end date for the rule. For example, an administrator creates a policy, selects the **Catalog policy** rule type, and then adds a catalog policy rule to the policy. This catalog policy rule specifies that the Adventure catalog must be used for internal procurement. After the purchasing policy is associated with a particular organization, employees of that organization see the Adventure catalog when they create requisitions.
+A purchasing policy consists of a set of policy rules. When you define a policy rule, you first select a rule type. You then create a rule for the rule type by defining the settings, the start date, and the end date for the rule.  
+
+For example, an administrator creates a policy, selects the **Catalog policy** rule type, and then adds a catalog policy rule to the policy. This catalog policy rule specifies that the Adventure catalog must be used for internal procurement. After the purchasing policy is associated with a particular organization, employees of that organization see the Adventure catalog when they create requisitions.
 
 ## Assigning policies to organizations
 Before a policy can take effect, it must be associated with an organization. Purchasing policies are associated with the **Procurement internal control** hierarchy purpose. Therefore, purchasing policies apply only to organizations in hierarchies that have a hierarchy purpose of **Procurement internal control**. You can also select organizations from the flat list of legal entities in the CompanyInfo table. These legal entities are designated in the policy framework as “Companies.”
@@ -44,11 +47,27 @@ Depending on how you configure your purchasing policies, multiple rules can affe
 
 ### Example 1: Simple purchasing policy configuration
 
-Organization that are small and less complex can set up purchasing policies by legal entity, and can use only the Companies organization hierarchy. For Fabrikam, a small business, purchasing requirements vary little across the organization. Purchasing rules vary only among the organization's legal entities. For example, employees of Fabrikam Canada and employees of Fabrikam U.S. purchase goods and services from different catalogs and different vendors. Therefore, Fabrikam sets up its purchasing policies at the legal-entity level. Fabrikam creates two purchasing policies. Policy A applies to its U.S. legal entity, 1111. Policy B applies to its Canadian legal entity, 2222. When an employee in legal entity 1111 creates a purchase requisition, the policy rules are derived from policy A. For example, the product catalog that the employee sees is specified in the catalog policy rule for policy A. When an employee in legal entity 2222 creates a purchase requisition, the policy rules are derived from policy B. **Note:** If an employee of legal entity 1111 purchases an item on behalf of an employee of legal entity 2222, the policy rules that are specified for legal entity 2222 (that is, the policy rules from policy B) are applied.
+Organizations that are small and less complex can set up purchasing policies by legal entity, and can use only the Companies organization hierarchy.  
+
+For Fabrikam, a small business, purchasing requirements vary little across the organization. Purchasing rules vary only among the organization's legal entities. For example, employees of Fabrikam Canada and employees of Fabrikam U.S. purchase goods and services from different catalogs and different vendors. Therefore, Fabrikam sets up its purchasing policies at the legal-entity level.  
+
+Fabrikam creates two purchasing policies. Policy A applies to its U.S. legal entity, 1111. Policy B applies to its Canadian legal entity, 2222. When an employee in legal entity 1111 creates a purchase requisition, the policy rules are derived from policy A. For example, the product catalog that the employee sees is specified in the catalog policy rule for policy A.  
+
+When an employee in legal entity 2222 creates a purchase requisition, the policy rules are derived from policy B.  
+
+**Note:** If an employee of legal entity 1111 purchases an item on behalf of an employee of legal entity 2222, the policy rules that are specified for legal entity 2222 (that is, the policy rules from policy B) are applied.
 
 ### Example 2: Complex purchasing policy configuration
 
-In the previous example, all purchasing rules were defined in a single organization hierarchy, the Companies organization hierarchy. However, a complex organization might define policies for multiple organization hierarchies. Contoso is a large company that requires complex purchasing rules to control the requisition process. Contoso has defined rules for two different organization hierarchies: Department and Global purchasing control. Policy 123 is defined for the Department organization hierarchy for the Sales UK – Sales department. In policy 123, the purchase requisition control rule specifies that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is selected. Policy 456 is defined for the Global purchasing control organization hierarchy for the Sales and Marketing department. In policy 456, the purchase requisition control rule doesn't specify that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is de-selected. Sam works in the Sales UK – Sales department in Contoso’s United Kingdom office. The policies for both the Department and Global purchasing control organization hierarchies apply to his department. When Sam creates a purchase requisition, the system must determine which policy to apply. The system administrator set up the purchasing policy parameters to specify that purchasing policies must be applied in the following order of precedence:
+In the previous example, all purchasing rules were defined in a single organization hierarchy, the Companies organization hierarchy. However, a complex organization might define policies for multiple organization hierarchies.  
+
+Contoso is a large company that requires complex purchasing rules to control the requisition process. Contoso has defined rules for two different organization hierarchies: Department and Global purchasing control.  
+
+Policy 123 is defined for the Department organization hierarchy for the Sales UK – Sales department. In policy 123, the purchase requisition control rule specifies that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is selected.  
+
+Policy 456 is defined for the Global purchasing control organization hierarchy for the Sales and Marketing department. In policy 456, the purchase requisition control rule doesn't specify that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is de-selected.  
+
+Sam works in the Sales UK – Sales department in Contoso’s United Kingdom office. The policies for both the Department and Global purchasing control organization hierarchies apply to his department. When Sam creates a purchase requisition, the system must determine which policy to apply. The system administrator set up the purchasing policy parameters to specify that purchasing policies must be applied in the following order of precedence:
 
 1.  Global purchasing control
 2.  Department

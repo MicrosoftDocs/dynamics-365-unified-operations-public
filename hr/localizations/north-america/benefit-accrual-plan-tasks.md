@@ -53,9 +53,9 @@ Your paid time off (PTO) plan has three rates, which are based on years of emplo
 
 The benefit accrual is based on the years of employment. For workers to accrue the correct total, you must convert the years of employment to months of employment. You must also convert the number of PTO days per year to the number of PTO hours that accrue for every hour that is worked. To convert the years of employment to months of employment, multiply the number of years by 12. Here are the calculations for the example plan:
 
-0 × 12 = 0 
-5 × 12 = 60 
-10 × 12 = 120
+   >   0 × 12 = 0 
+   >   5 × 12 = 60 
+   >   10 × 12 = 120
 
 To convert the PTO days per year to the hourly accrual rate, multiply the number of days that accrue per year by the number of hours in a work day to get the number of hours that accrue per year. Then divide that number by the number of hours that are worked in a year to get the hourly accrual rate. The following formula will work for most workers: 
 
@@ -63,9 +63,9 @@ Number of days accrued per year × 8 hours worked in a day ÷ 2,080 hours worked
 
 Here are the calculations for the example plan:
 
-10 × 8 ÷ 2,080 = 0.03846 
-15 × 8 ÷ 2,080 = 0.05769 
-20 × 8 ÷ 2,080 = 0.07692
+   >   10 × 8 ÷ 2,080 = 0.03846 
+   >   15 × 8 ÷ 2,080 = 0.05769 
+   >   20 × 8 ÷ 2,080 = 0.07692
 
 Enter these numbers into a table, as shown here, to make it easier for you to set up the plan rules.
 
@@ -81,10 +81,6 @@ Enter these numbers into a table, as shown here, to make it easier for you to se
 To set up the benefit accrual plans, enter the following information on the **Benefit accrual plans** page.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -143,12 +139,12 @@ Each line that you add to a benefit accrual plan provides the rules for accruing
 | Field                 | Description                                                                                    |
 |-----------------------|------------------------------------------------------------------------------------------------|
 | Months of service     | The minimum number of months of service for the selected rule. The number of months of service is based on the employment start date, the seniority date, or a date that is specified for the worker on the **Benefit accruals** page. 
-|                        |**Note:** The employment start date is on the **Employment history** page, and the seniority date is on the **Worker** page. We recommend that you verify that the **Seniority date** field has a value. If you use the seniority date to determine the months of service, and the **Seniority date** field on the **Worker** page is blank, the worker can use hours from the benefit accrual plan, but no hours can accrue to that plan. |
-|                            |We recommend that every plan include a row that starts at 0 (zero) months of service. Each row ends when the next row starts. The last row starts at the specified number of months and doesn't end. For example, the rows in your plan have 0, 60, and 120 for months of service. The rate and limits in the first row start when a worker is hired and are applied through the end of the worker's eleventh month. The second row starts at 12 months, and the rates and limits are applied through the end of the fifty-ninth month. The third row starts at 60 months, and the rates and limits are applied as long as the worker continues to be employed by your organization. |
+|                       |**Note:** The employment start date is on the **Employment history** page, and the seniority date is on the **Worker** page. We recommend that you verify that the **Seniority date** field has a value. If you use the seniority date to determine the months of service, and the **Seniority date** field on the **Worker** page is blank, the worker can use hours from the benefit accrual plan, but no hours can accrue to that plan. |
+|                       |We recommend that every plan include a row that starts at 0 (zero) months of service. Each row ends when the next row starts. The last row starts at the specified number of months and doesn't end. For example, the rows in your plan have 0, 60, and 120 for months of service. The rate and limits in the first row start when a worker is hired and are applied through the end of the worker's eleventh month. The second row starts at 12 months, and the rates and limits are applied through the end of the fifty-ninth month. The third row starts at 60 months, and the rates and limits are applied as long as the worker continues to be employed by your organization. |
 | Amount or rate        | The amount of the accrual if the accrual rate basis is a fixed amount, or the rate that is used to calculate the amount if the accrual rate basis is an hourly rate. For example, in a plan where a worker accrues 80 hours each year, if the benefit accrues at an hourly rate, enter 0.03846. If the benefit accrues as a fixed amount by date, enter 80. The rate for compensatory time plans is entered on the **Earning codes for plan accrual** FastTab.                                                          |
 | Maximum accrual limit | The maximum number of hours that can accrue in the plan in a single plan year. When this number is reached, no more hours accrue in the plan until the start of the next plan year, unless a manual adjustment reduces the accrued amount for the plan year. If the plan isn't reset each year, this value is the maximum number of hours that can accrue over the life of the plan.     |
 | Minimum balance       | The number of hours that must be available in the plan before a worker can use hours from the plan. When the available balance is less than this number, the worker can’t use any hours from the plan until additional hours have accrued, or until the available balance has been adjusted. 
-|                            |**Tip:** To let workers take time off before they have accrued the hours, enter a negative number. If an earnings statement includes hours that will reduce the available balance in the plan to less than the minimum balance, the earnings statement lines that include those hours aren’t released.                                                                      |
+|                       |**Tip:** To let workers take time off before they have accrued the hours, enter a negative number. If an earnings statement includes hours that will reduce the available balance in the plan to less than the minimum balance, the earnings statement lines that include those hours aren’t released.                                                                      |
 | Carry-forward limit   | The highest number of hours that can be carried forward from one plan year to the next. If the **Carry forward balances** option isn't selected, this field isn't available, and no hours are carried forward.      |
 
 -   The earning codes that are entered on the **Earning codes for plan usage** FastTab are used to verify the available balance when an earnings statement that includes the earning code is released. The codes are also used to reduce the plan balance when a pay statement line that includes the earning code is submitted for payment.
@@ -166,8 +162,6 @@ Each line that you add to a benefit accrual plan provides the rules for accruing
 | Earning code               | The earning codes that increase the plan balance when a pay statement line that includes the earning code is submitted for payment.     |
 | Description                | The description of the selected earning code or earning code group.     |
 | Rate for compensatory time | The rate that is used to calculate the amount of compensatory time. For example, if the worker accrues one hour of compensatory time for each hour that is worked by using the selected earning code, enter **1**. If the worker accrues 1.5 hours of compensatory time, enter **1.5**. **Note:** This control is available only when the accrual rate basis for the plan is **Hours of compensatory time**.                                                                                                                                                                              |
-
-### 
 
 ## Enroll workers in benefit accrual plans
 The process for enrolling workers in benefit accrual plans differs from the process for enrolling them in other benefits. Mass enrollment isn’t available for benefit accrual plans, and eligibility processing isn't performed. 

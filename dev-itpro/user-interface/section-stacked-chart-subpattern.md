@@ -70,7 +70,9 @@ The verification checklist shows the steps for manually verifying that the form 
 -   Each Form Part Control should point to a form that uses the [Section Chart](section-chart-form-pattern.md) pattern.
 
 ## Examples
-Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) [![sectionStackedChartExample](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
+Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
+
+[![sectionStackedChartExample](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
 
 ## Appendix
 ### Frequently asked questions

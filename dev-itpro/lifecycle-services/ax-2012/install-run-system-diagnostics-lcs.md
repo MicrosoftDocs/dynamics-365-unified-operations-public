@@ -48,6 +48,7 @@ To install the System diagnostics on-premises component, the following is requir
 This section describes the permissions that are required for the service account that the Lifecycle Services Diagnostic Service (LCSDiagFXService.exe) runs as.
 
 -   The service account must be a domain account that is a user in Microsoft Dynamics AX and a member of the **BusinessConnector** role.We strongly recommend that, if possible, the account be the same account used for the .NET Business Connector proxy. For more information, see [Specify the .NET Business Connector proxy account](http://technet.microsoft.com/library/3e46dc0a-2ff4-4a06-ae61-041e52dcc774(AX.60).aspx) and [Assign users to security roles](http://technet.microsoft.com/library/214ee45b-5b99-4ea8-9454-f4297f68e38c(AX.60).aspx).
+
     | **Note**                                                                                                                     |
     |------------------------------------------------------------------------------------------------------------------------------|
     | If you reuse the .NET Business connector proxy account, you must still add it as a member of the **BusinessConnector** role. |
@@ -59,6 +60,7 @@ This section describes the permissions that are required for the service account
 #### Configure read permissions to the registry
 
 On each server in your environment that hosts an AOS instance or Microsoft Dynamics AX SQL Server business database, you must grant read access to a registry key in the HKEY\_LOCAL\_MACHINE hive to the service account for the System diagnostics.
+
 | **Caution**                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | The following procedure includes editing the Windows Registry. Editing the registry incorrectly can cause serious problems that may require you to reinstall Windows. Microsoft cannot guarantee that problems resulting from incorrectly editing the registry can be solved.You should make a backup copy of the registry files (System.dat and User.dat) before you edit the registry. |
@@ -169,11 +171,13 @@ To install the on-premises component of System diagnostics, you must be a member
 2.  Open a project and click the **System diagnostics** tile.
 3.  On the **Admin** page, download the compressed installer (**LCSDiagFX\_x64.zip.**).
 4.  Extract the installer to a computer that is running a Microsoft Dynamics AX client.The computer must have network access to all other servers in the environment, and must be running the .NET Business Connector if you are using the NET Business Connector proxy account as a service account.
+
     | **Important**                                                                                                                                                                                                      |
     |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | In a production environment, we recommend that you install the on-premises component on a computer that is running only a client, not on computers that are also running an AOS instance or a SQL Server instance. |
 
 5.  Run **Setup.exe**.
+    
     | **Note**                           |
     |------------------------------------|
     | Do not run the .msi file directly. |

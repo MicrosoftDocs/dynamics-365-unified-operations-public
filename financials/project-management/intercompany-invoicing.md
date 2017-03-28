@@ -3,7 +3,7 @@
 
 title: Intercompany invoicing
 description: This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Operations.
-author: kfend
+author: twheeloc
 manager: AnnBe
 ms.date: 2016-06-22 23 - 53 - 53
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 51
+# ms.reviewer: twheeloc
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 94153
@@ -34,7 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information and examples about intercompany invoicing for projects in Microsoft Dynamics 365 for Operations.
 
-Your organization might have multiple divisions, subsidiaries, and other legal entities that transfer products and services to each other for projects. The legal entity that provides the service or product is called the *lending legal entity*, and the legal entity that receives the service or product is called the *borrowing legal entity*. The following illustration shows a typical scenario where two legal entities, SI FR (the borrowing legal entity) and SI USA (the lending legal entity) share resources to deliver a project for customer A. For this scenario, SI FR is contracted to deliver the work to customer A. [![Intercompany invoicing example](./media/interco.invoicing-01.jpg)](./media/interco.invoicing-01.jpg) The goal is to make cost control, revenue recognition, taxes, and transfer price for intercompany project transactions more flexible and powerful. In addition, the following capabilities are provided:
+Your organization might have multiple divisions, subsidiaries, and other legal entities that transfer products and services to each other for projects. The legal entity that provides the service or product is called the *lending legal entity*, and the legal entity that receives the service or product is called the *borrowing legal entity*. 
+
+The following illustration shows a typical scenario where two legal entities, SI FR (the borrowing legal entity) and SI USA (the lending legal entity) share resources to deliver a project for customer A. For this scenario, SI FR is contracted to deliver the work to customer A. 
+
+[![Intercompany invoicing example](./media/interco.invoicing-01.jpg)](./media/interco.invoicing-01.jpg) 
+
+The goal is to make cost control, revenue recognition, taxes, and transfer price for intercompany project transactions more flexible and powerful. In addition, the following capabilities are provided:
 
 -   Create customer invoices against a project in a borrowing legal entity by using intercompany timesheets, expenses, and vendor invoices in a lending legal entity.
 -   Support tax calculations and indirect costs.
@@ -49,10 +55,12 @@ Your organization might have multiple divisions, subsidiaries, and other legal e
     -   **Contribution ratio** – The number that you enter in the **Pricing** field is the contribution ratio, which is expressed as a percentage of the sales price.
 
 ## Example 1: Set up parameters for intercompany invoicing
-In this example, USSI is a lending legal entity, and its resources are reporting time against the borrowing legal entity, FRSI, which owns the contract with the end customer. Hours and expenses that USSI employees report can be included in the project invoice that FRSI generates. In addition, there is a third source of transactions that can originate from the lending legal entity (USSI in this example) when it provides shared vendors services to subsidiaries (such as FRSI) and then passes on those costs to projects within those subsidiaries. All matching invoice documents and tax calculations are completed by Dynamics 365 for Operations. For this example, FRSI must be a customer in the USSI legal entity, and USSI must be a vendor in the FRSI legal entity. You can then set up an intercompany relationship between the two legal entities. The following procedure shows how to set up the parameters so that both legal entities can participate in intercompany invoicing.
+In this example, USSI is a lending legal entity, and its resources are reporting time against the borrowing legal entity, FRSI, which owns the contract with the end customer. Hours and expenses that USSI employees report can be included in the project invoice that FRSI generates. In addition, there is a third source of transactions that can originate from the lending legal entity (USSI in this example) when it provides shared vendors services to subsidiaries (such as FRSI) and then passes on those costs to projects within those subsidiaries. All matching invoice documents and tax calculations are completed by Dynamics 365 for Operations. 
+
+For this example, FRSI must be a customer in the USSI legal entity, and USSI must be a vendor in the FRSI legal entity. You can then set up an intercompany relationship between the two legal entities. The following procedure shows how to set up the parameters so that both legal entities can participate in intercompany invoicing.
 
 1.  Set up FRSI as a customer in the USSI legal entity, and set up USSI as a vendor in the FRSI legal entity. There are three entry points for the steps that are required for this task.
-    | Step | Entry point                                                                       | Description                                                                                                                                                                                                                                                                                     |
+    | Step | Entry point                                                                       | Description   |
     |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | A    | In USSI, click **Accounts receivable** &gt; **Customers** &gt; **All customers**. | Create a new customer record for FRSI, and select the customer group.                                                                                                                                                                                                                           |
     | B    | In FRSI, click **Accounts payable** &gt; **Vendors** &gt; **All vendors**.        | Create a new vendor record for USSI, and select the vendor group.                                                                                                                                                                                                                               |

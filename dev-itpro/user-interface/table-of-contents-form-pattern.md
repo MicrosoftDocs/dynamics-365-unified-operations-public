@@ -40,6 +40,7 @@ Usage
 The Table of Contents pattern should be used when two or more logically related forms are required for setup configuration. The vertical arrangement of tabs implies the order of completion. This form pattern is also used for collections of unrelated items, such as tab pages that have a different root entity per tab. This form pattern contains a collection of smaller content regions, each of which follows a container subpattern such as Toolbar and List, Nested Simple List and Details, or Fields and Field Groups.
 
 ## Wireframe
+
 [![TOC(1)](./media/toc1.png)](./media/toc1.png)
 
 ## Pattern changes
@@ -108,7 +109,9 @@ The verification checklist shows the steps for manually verifying that the form 
     -   Standard tabs on a TOC tab page.
 
 ## Examples
-Form: **CustParameters** [![TOC(2)](./media/toc2.png)](./media/toc2.png)
+Form: **CustParameters** 
+
+[![TOC(2)](./media/toc2.png)](./media/toc2.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -126,5 +129,7 @@ This section will have answers to frequently asked questions that are related t
 
 ### AX 2012 content
 
-[![TOC(3)](./media/toc3.png)](./media/toc3.png)[![TOC(4)](./media/toc4.png)](./media/toc4.png)
+[![TOC(3)](./media/toc3.png)](./media/toc3.png)
+
+[![TOC(4)](./media/toc4.png)](./media/toc4.png)
 

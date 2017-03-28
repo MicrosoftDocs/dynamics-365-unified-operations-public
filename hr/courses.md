@@ -54,10 +54,6 @@ You can use course types to categorize courses according to the structure or con
 The following table lists the three setup types for courses. Setup types determine the structure of the course.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Setup type</th>
@@ -93,18 +89,13 @@ For each course, you can complete the following tasks.
 -   Recommend hotels to course participants
 -   Create a course description, which you can then advertise on Employee self service
 
-| **Note**                                                      |
-|---------------------------------------------------------------|
-| You can delete a course only if no one has registered for it. |
-
+  >**Note**
+  >You can delete a course only if no one has registered for it. 
+    
 ## Course statuses
 The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Status</th>
@@ -142,6 +133,7 @@ The following table lists the possible course statuses and the actions that you 
 
 ## Course participants
 Course participants are workers, applicants, or contact persons who participate in a training course or event. You can only register participants for open courses. The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.
+
 Workflow
 --------
 

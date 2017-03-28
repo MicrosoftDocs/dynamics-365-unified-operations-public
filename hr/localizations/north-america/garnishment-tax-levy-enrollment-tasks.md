@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll workers in garnishment and tax levies
+title: Enroll workers in a garnishment or tax levy
 description: This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
 author: rschloma
 manager: AnnBe
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Enroll workers in garnishment and tax levies
+# Enroll workers in a garnishment or tax levy
 
 This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
 
 If you have questions about garnishments and tax levies that aren't answered in this topic, or in the [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md) or [Garnishments, tax levies, and administrative fees](garnishment-tax-levy-administrative-fees.md) topics, contact your legal advisors. To learn more about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees](garnishment-tax-levy-administrative-fees.md).
 
-## Enrolling a worker in a garnishment or tax levy
+## Enroll a worker in a garnishment or tax levy
 When the Payroll department is notified about a court-ordered garnishment or tax levy, the federal government requires that deductions begin within a specific number of days. As for other garnishment rules, some states might use federal rules, or they might set their own requirements. For example, a state might require that deductions begin in the first payroll payment, no later than three days after the court order is received. Because this payment might occur in the current pay period, it's in your interest to enroll workers as quickly as possible. 
 
 When you enroll a worker, you set up payroll information, together with details of the garnishment or tax levy. 
@@ -68,10 +68,6 @@ Enter the following information on the **Payroll limits** FastTab. In most cases
 If the garnishment enhancement hotfix is installed, skip to the table for the **Garnishment and tax levy details** FastTab. If the garnishment enhancement hotfix isn't installed, enter the following information on the **Garnishment details** and **Tax levy details** pages. If you require more information about these fields, contact your legal advisors.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -139,10 +135,6 @@ If the worker is enrolled in more than one garnishment or tax levy, you must com
 Set up each garnishment type only one time for each worker. When a worker has more than one garnishment of the same type, all the garnishments that have the same type use the rules that are set up for that type. State and local tax levies are an exception. In this case, you set up one state tax levy type and one local tax levy type for each state. On the **Garnishment and tax levy rules** page, enter the following information for each garnishment type that a worker is enrolled in.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>

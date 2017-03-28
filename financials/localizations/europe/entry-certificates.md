@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# EU Entry certificates
+# EU entry certificates
 
 This article provides information about European Union (EU) entry certificates.
 

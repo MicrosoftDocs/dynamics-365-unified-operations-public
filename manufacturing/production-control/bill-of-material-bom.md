@@ -37,7 +37,11 @@ This article provides information about bills of materials (BOMs) and formulas, 
 Bills of materials
 ------------------
 
-A bill of materials (BOM) defines the components that are required in order to produce a product. The components can be raw materials, semifinished products, or ingredients. In some cases, services can be referenced in a BOM. However, BOMs typically describe the *material resources* that are required. When it's combined with a route or production flow that describes the operations and resources that are required in order to build a product, the BOM forms the foundation for calculating the estimated cost of the product. A BOM is an individual entity that is described by the following information:
+A bill of materials (BOM) defines the components that are required in order to produce a product. The components can be raw materials, semifinished products, or ingredients. In some cases, services can be referenced in a BOM. However, BOMs typically describe the *material resources* that are required.  
+
+When it's combined with a route or production flow that describes the operations and resources that are required in order to build a product, the BOM forms the foundation for calculating the estimated cost of the product.  
+
+A BOM is an individual entity that is described by the following information:
 
 -   BOM ID
 -   BOM name
@@ -64,7 +68,9 @@ The types of BOM that are actually used in an implementation depend on the imple
 
 ### Approval of BOMs and formulas
 
-Each BOM and formula can be separately approved or unapproved. Typically, approval of a BOM or formula occurs when the first relevant BOM version is approved. However, in some business scenarios, these approvals might be different steps in the process and might involve different process owners. Note that, if a BOM is unapproved, all related BOM versions are also unapproved.
+Each BOM and formula can be separately approved or unapproved. Typically, approval of a BOM or formula occurs when the first relevant BOM version is approved. However, in some business scenarios, these approvals might be different steps in the process and might involve different process owners.  
+
+Note that, if a BOM is unapproved, all related BOM versions are also unapproved.
 
 ## BOM and formula versions
 To relate a specific BOM or formula to a product variant that can be produced, you must create a BOM version or formula version. The validity of BOM versions and formula versions can be constrained by period, quantity, site, specific product dimensions, and other criteria. Formula versions have additional important attributes, such as yield, co-product and by-product definitions, and the cost distribution instructions for the formula.
@@ -83,10 +89,14 @@ The product change case for approval and activation of new or changed BOMs an
 
 ### Alternative BOM versions
 
-Sometimes, the active BOM version or formula version should not be used in forecasts, sales, or a parent product. In this case, you can select a specific approved BOM as part of the requirement (forecast line, sales line, or BOM line) if an approved BOM version or formula version exists for the alternative BOM or formula. When planned orders, production orders, or kanbans are created, the planner or shop floor supervisor can use any approved BOM version that is valid on the requested planned production date to plan for or produce a specific product. The BOM version that is used doesn't have to be activated as the default BOM version.
+Sometimes, the active BOM version or formula version should not be used in forecasts, sales, or a parent product. In this case, you can select a specific approved BOM as part of the requirement (forecast line, sales line, or BOM line) if an approved BOM version or formula version exists for the alternative BOM or formula.  
+
+When planned orders, production orders, or kanbans are created, the planner or shop floor supervisor can use any approved BOM version that is valid on the requested planned production date to plan for or produce a specific product. The BOM version that is used doesn't have to be activated as the default BOM version.
 
 ## BOM and formula lines
-A BOM line is created for each material, service, or ingredient. The line defines the planned consumption of the specified product variant and also defines the various attributes that are related to the planned consumption. BOM lines can have the following line types: **Item**, **Phantom**, **Pegged supply**, **Vendor**.
+A BOM line is created for each material, service, or ingredient. The line defines the planned consumption of the specified product variant and also defines the various attributes that are related to the planned consumption.  
+
+BOM lines can have the following line types: **Item**, **Phantom**, **Pegged supply**, **Vendor**.
 
 ### Item
 
@@ -94,7 +104,9 @@ Select the **Item** line type for materials or services that are directly consum
 
 ### Phantom
 
-Select the **Phantom** line type when you want to explode any lower-level BOM items that are contained on the BOM line. In Master scheduling, in planned cost calculation, or on estimation of a production order that uses BOM lines of the **Phantom** type, the parent BOM line that refers to a product variant that has a phantom BOM is replaced by the component items that are listed as BOM lines in that BOM, as determined by the applicable active BOM version of that product variant. If the product variant has an applicable active route, the operations of that route are merged into the parent route. Note that phantoms are typically used to simplify the engineering process. Extensive use of phantom BOMs in many levels has an effect on performance, especially in highly repetitive manufacturing scenarios. To improve performance, you should avoid deep hierarchies of phantoms. Instead, use pre-exploded production BOMs and routes.
+Select the **Phantom** line type when you want to explode any lower-level BOM items that are contained on the BOM line. In Master scheduling, in planned cost calculation, or on estimation of a production order that uses BOM lines of the **Phantom** type, the parent BOM line that refers to a product variant that has a phantom BOM is replaced by the component items that are listed as BOM lines in that BOM, as determined by the applicable active BOM version of that product variant. If the product variant has an applicable active route, the operations of that route are merged into the parent route.  
+
+Note that phantoms are typically used to simplify the engineering process. Extensive use of phantom BOMs in many levels has an effect on performance, especially in highly repetitive manufacturing scenarios. To improve performance, you should avoid deep hierarchies of phantoms. Instead, use pre-exploded production BOMs and routes.
 
 ### Pegged supply
 
@@ -102,5 +114,7 @@ Select the **Pegged supply** line type when you want to create a subproduction, 
 
 ### Vendor
 
-Select the **Vendor** line type if the production process uses a subcontractor, and you want a subproduction or purchase order to be created automatically for the subcontractor. **Note about subcontracted operations in a BOM:** The service or work that is performed by the subcontractor must be created as service item that is tracked in inventory. You must attach the service item to the parent item as a BOM line. The route must contain an operation that is assigned to the subcontractor's operations resource.
+Select the **Vendor** line type if the production process uses a subcontractor, and you want a subproduction or purchase order to be created automatically for the subcontractor.  
+
+**Note about subcontracted operations in a BOM:** The service or work that is performed by the subcontractor must be created as service item that is tracked in inventory. You must attach the service item to the parent item as a BOM line. The route must contain an operation that is assigned to the subcontractor's operations resource.
 

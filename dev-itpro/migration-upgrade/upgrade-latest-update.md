@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Prepare to move to the latest update of Dynamics 365 for Operations
+title: Overview of moving to the latest update of Dynamics 365 for Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
 author: MargoC
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Prepare to move to the latest update of Dynamics 365 for Operations
+# Overview of moving to the latest update of Dynamics 365 for Operations
 
 This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
 
@@ -81,59 +81,16 @@ Use this scenario when one (or a small number of) hotfix is required for a speci
 ## Scenario 2: Upgrade your custom code
 This scenario describes the process for upgrading code from an earlier release to the current release. This process is required before embarking on scenario 3 and is to be completed by a developer before other activities can begin. Code upgrade is needed when you deploy new environments as part of the process of upgrading your application to a new major or cumulative release.
 
-**Source environment**
-
-**Target environment**
-
-**Do I need the code upgrade service?**
-
-Microsoft Dynamics AX 2012
-
-Dynamics 365 for Operations
-
-Yes
-
-February 2016
-
-May 2016 (Platform update 1, Application 7.0.1)
-
-Yes
-
-February 2016
-
-August 2016 (Platform update 2, Application 7.0.1)
-
-Yes
-
-May 2016 (Platform update 1, Application 7.0.1)
-
-August 2016 (Platform update 2, Application 7.0.1)
-
-No
-
-February 2016
-
-Release 1611 (Platform update 3, Application 7.1.0)
-
-Yes
-
-May 2016 (Platform update 1, Application 7.0.1)
-
-Release 1611 (Platform update 3, Application 7.1.0)
-
-Yes
-
-August 2016 (Platform update 2, Application 7.0.1)
-
-Release 1611 (Platform update 3, Application 7.1.0)
-
-Yes
-
-Any newer release
-
-Same environment with upgraded platform (Scenario 4 below)
-
-No
+| Source environment                                   | Target environment                                           | Do I need the code upgrade service? |
+|-----------------------------------------------------|--------------------------------------------------------------|-------------------------------------|
+| Microsoft Dynamics AX 2012                          | Dynamics 365 for Operations                                  | Yes                                 |
+| Feb-16                                              | May 2016 (Platform update 1, Application 7.0.1)              | Yes                                 |
+| Feb-16                                              | August 2016 (Platform update 2, Application 7.0.1)           | Yes                                 |
+| May 2016 (Platform update 1, Application 7.0.1)     | August 2016 (Platform update 2, Application 7.0.1)           | No                                  |
+| Feb-16                                              | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
+| May 2016 (Platform update 1, Application 7.0.1)     | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
+| August 2016 (Platform update 2, Application 7.0.1)  | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
+| Release 1611 (Platform update 3, Application 7.1.0) | Newer version of the platform, like platform update 4        | No                                  |
 
 Regardless of whether you're a live customer or you're still in the implementation phase of your project, follow these steps to upgrade your code to the latest platform and application updates.
 

@@ -59,7 +59,10 @@ The Warehouse Mobile Devices Portal installer supports the installation of up to
 4.  Click **Next**.
 5.  On the **IIS configuration** page, in the **Website port** field, enter the TCP port on which the website is meant to be available. For example, type 8999.
 6.  Click **Next**.
-7.  The setup wizard is now ready to complete installation. [![wmdp-wizard-02](./media/wmdp-wizard-02.png)](./media/wmdp-wizard-02.png)
+7.  The setup wizard is now ready to complete installation. 
+
+    [![wmdp-wizard-02](./media/wmdp-wizard-02.png)](./media/wmdp-wizard-02.png)
+
 8.  Click **Install**.
 9.  When the installation is complete, click **Finish**.
 

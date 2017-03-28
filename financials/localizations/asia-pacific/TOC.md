@@ -1,5 +1,8 @@
 # Australia			
-## [Bank file formats](set-up-method-of-payment-pay-vendors-australian-banks.md)			
+## [Bank file formats](set-up-method-of-payment-pay-vendors-australian-banks.md)
+## [Business activity statement (BAS)](business-activity-statement-bas-overview.md)			
+## [Low-value pool depreciation](low-value-pool-depreciation.md)			
+
 # China
 ## [Bill of materials comparison](chn-bom-comparison.md)
 ## [Chinese vouchers](chinese-vouchers.md)			
@@ -17,7 +20,6 @@
 ### [Allocation rules](allocation-rules-fixed-assets.md)			
 ### [Depreciation FAQ](fixed-asset-depreciation-japan.md)
 #### [Equally divided depreciation method](equally-divided-depreciation-method.md)			
-#### [Low-value pool depreciation](low-value-pool-depreciation.md)			
 ### [Impairment accounting](impairment-accounting-fixed-assets.md)
 #### [Impairment accounting on CGU](fixed-asset-impairment-accounting-cash-generate-unit.md)			
 ### [Set up ARO](set-up-asset-retirement-obligation-fixed-assets.md)
@@ -25,7 +27,6 @@
 ## [Pay a vendor by endorsing a bill of exchange](pay-vendor-endorse-bill-of-exchange.md)
 ## [Progressive withholding tax calculation](japan-progressive-withholding-tax-calculation.md)			
 # Malaysia			
-## [Business activity statement (BAS)](business-activity-statement-bas-overview.md)			
 ## [Goods and Services Tax (GST)](gst-malaysia.md)			
 # Singapore			
 ## [Generate the GST-05 report](generate-gst-05-report-singapore.md)			

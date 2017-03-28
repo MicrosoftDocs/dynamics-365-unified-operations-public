@@ -36,8 +36,8 @@ This topic describes how to create a bill of lading when using warehouse managem
 
 A bill of lading is a legal document between the company that ships the items and the carrier. The document accompanies the shipped items, and it serves as a receipt of shipment when the items are delivered at the destination. If you're using warehouse management, there are two ways to generate a bill of lading:
 
--   Create the report manually, using the **Bill of lading** page.
--   Generate the report from the **Load planning workbench**.
+  -   Create the report manually, using the **Bill of lading** page.
+  -   Generate the report from the **Load planning workbench**.
 
 If you generate the bill of lading from the **Load planning workbench**, the load status must be **Shipped.** If there's more than one shipment in the load, a bill of lading is created for each shipment. After a bill of lading has been created you can make changes to it on the **Bill of lading** page.
 

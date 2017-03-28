@@ -66,17 +66,17 @@ After you've hired staff, you can set up plans to effectively and equitably mana
 ## Develop and train employees
 To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
 
--   [Performance management overview](http://ax.help.dynamics.com/en/wiki/performance-management-overview/)
+-   [Performance management](http://ax.help.dynamics.com/en/wiki/performance-management-overview/)
 
 ## Create and maintain benefits
 In addition to compensating your staff with wages, salaries, and bonuses, you can develop benefit programs such as health insurance and retirement plans. You can also manage benefits such as loan programs, in which your company lends items, such as computers or phones, to its employees.
 
--   [Define and manage a benefit program](manage-benefit-program.md)
+-   [Manage a benefit program](manage-benefit-program.md)
 
 ## Maintain workplace safety and compliance
 Microsoft Dynamics AX can help you maintain a safe work environment that’s in compliance with applicable laws, including the Americans with Disabilities Act and immigration and naturalization laws, among others. For example, you can manage the physical requirements for specific jobs, as well as track requests for accommodations that can help your organization optimize the skills of its workforce.
 
--   [Form I-9 verification](/localizations/north-america/form-i-9-verification.md)
+-   [Form I-9 employment verification](/localizations/north-america/form-i-9-verification.md)
 -   [Comply with the Americans with Disabilities Act](/localizations/north-america/comply-ada.md)
 
 ## Gather information using questionnaires

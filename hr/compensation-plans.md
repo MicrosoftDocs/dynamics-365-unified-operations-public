@@ -46,10 +46,6 @@ Employees can be enrolled in one or more plans of both types. An employee must m
 The following table lists components of the compensation process that can be integral in setting up your company's compensation plans.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Component</th>
@@ -130,6 +126,7 @@ The following table lists components of the compensation process that can be int
 
 ## Process events
 A process event calculates compensation information for a specific period for all employees who are enrolled in one or more fixed or variable compensation plans. You can run a process event repeatedly to test or update calculated compensation results.
+
 Compensation events
 -------------------
 

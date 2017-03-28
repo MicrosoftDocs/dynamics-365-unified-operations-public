@@ -61,6 +61,7 @@ To compare entity data between companies or legal entities, use the **Compare en
 5.  On the **Select source and target companies** page, select one source company, and one or more target companies to compare the data to.
 6.  Enter parameters for the batch job, enter the number of batch tasks to use when the batch is run, and then click **Next &gt;**.
 7.  Click **Finish** to create the processing group that compares the entity data to the information in the other companies. The **Comparison processing group** form opens.
+
     | **Note**                                                                                                                                                   |
     |------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | If the **Comparison processing group** does not list a processing group, then close it, and click **Compare entity data between companies** to re-open it. |
