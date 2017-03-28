@@ -61,10 +61,9 @@ See also
 
 [Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)
 
-
 [Segmented Entry control Metadata Specification](segmented-entry-control-metadata-specification.md)
 
-[Segmented Entry control migration walkthrough](segmented-entry-control-migration-walkthrough.md)
+[Segmented Entry control migration](segmented-entry-control-conversion.md)
 
 [Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
 
