@@ -37,7 +37,8 @@ This topic describes the components of the Help system for Microsoft Dynamics 36
 Help architecture
 -----------------
 
-The following illustration shows the parts of the Dynamics 365 for Operations help system. The in-product help system pulls articles from the Dynamics 365 for Operations Help Wiki, as well as task guides stored in Business Process Modeler in Microsoft Dynamics Lifecycle Services (LCS). **Note** The features listed in the diagram with an asterisk (\*) are on our roadmap, but are not available yet. [![Help architecture](./media/help-architecture-1024x800.png)](./media/help-architecture.png)
+The following illustration shows the parts of the Dynamics 365 for Operations help system. The in-product help system pulls articles from the Dynamics 365 for Operations site on https://docs.microsoft.com, as well as task guides stored in Business Process Modeler in Microsoft Dynamics Lifecycle Services (LCS). 
+**Note** The features listed in the diagram with an asterisk (\*) are on our roadmap, but are not available yet. [![Help architecture](./media/help-architecture-1024x800.png)](./media/help-architecture.png)
 
 ## Connecting the help system
 Using the System Parameters form, system administrators connect the pieces of the help system for an implementation. [![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) On the **System parameters** page, follow these steps:
@@ -51,7 +52,7 @@ After you complete these steps, you can open the Help pane and click the Task g
 
 ### Showing translated task guides
 
-Translated task guides were shipped in the May APQC Unified Library, and the Getting Started library. In Dynamics 365 for Operations, to see localized task guide help, make sure that you are connected to the May library. The language that a task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. **Note:** Even though many task guides have been translated, right now the Dynamics 365 for Operations client is not showing the translated task guide names. Also, only the task guides that were released in February are available in translation in the May library at this point. We will release an updated library with additional translations.
+Translated task guides were first shipped in the May APQC Unified Library, and the Getting Started library. In Dynamics 365 for Operations, to see localized task guide help, make sure that you are connected to the May library. The language that a task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. **Note:** Even though many task guides have been translated, right now the Dynamics 365 for Operations client is not showing the translated task guide names. Also, only the task guides that were released in February are available in translation in the May library at this point. We will release an updated library with additional translations.
 
 -   If a task guide has been translated, when you open that task guide all the text of the task guide will appear in your selected language.
 -   If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
@@ -62,9 +63,11 @@ You can create custom help for your Dynamics 365 for Operations implementation b
 See also
 --------
 
-[Microsoft Dynamics AX Help – Getting started](help-overview.md)
+[Help overview](help-overview.md)
 
-[How to create a task recording to use as documentation or training](../user-interface/task-recorder.md)
+[Task recorder overview](task-recorder.md)
+
+[How to create a task recording to use as documentation or training](../user-interface/task-recorder-training.md)
 
 [Creating New Training Libraries for Dynamics AX within Lifecycle Services using the Task Recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
