@@ -40,18 +40,20 @@ This topic describes functionality that is available only if the **Payroll - USA
 Yes, you can update all the tax codes in a tax group at the same time. The financial information for each tax code is set up separately for each legal entity. If you change the values for one legal entity, the values for other legal entities aren’t affected. When you update a tax code by using the mass-update functionality, the changes are effective immediately. To make date-effective changes to a tax code, use the **Maintain versions** button on the **Tax codes** page.
 
 ## Can I mass-create tax groups?
-Yes. When you set up Payroll, you automatically create a set of system-defined tax groups the first time that you click the **Update tax data** link on the **Payroll** area page. Each system-defined tax group contains tax codes of a particular type. For example, all tax codes for school districts are included in the SCHL tax group, and all tax codes for state income tax are included in the SIT tax group. These tax groups are updated every time that you run the **Update tax data** process. You can manually create additional tax groups. For more information, see [Tax information tasks](tax-information-tasks.md).
+Yes. When you set up Payroll, you automatically create a set of system-defined tax groups the first time that you click the **Update tax data** link on the **Payroll** area page. Each system-defined tax group contains tax codes of a particular type. For example, all tax codes for school districts are included in the SCHL tax group, and all tax codes for state income tax are included in the SIT tax group. These tax groups are updated every time that you run the **Update tax data** process. You can manually create additional tax groups. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md).
 
 ## Why are some tax codes not posted according to the posting definition that is associated with their tax group?
 There are two possible reasons for this behavior:
 
 -   The **Employer tax** option for the tax code on the **Tax codes** page is incorrect for the line type on the **Transaction posting definitions** page. If some tax codes in a tax group have the correct employer tax setting for the line type, but other tax codes in the tax group don’t have the correct setting, the tax codes that have the correct setting use the posting definition for the tax group. The other tax codes use the posting definition that is specified for the **All** code for their line type. The following table shows the correct relationships of line types and employer tax settings.
+
     | Line type          | Required setting for the Employer tax option |
     |--------------------|----------------------------------------------|
     | Tax - contribution | Selected                                     |
     | Tax - deduction    | Cleared                                      |
 
 -   On the **Transaction posting definitions** page, the tax code is entered on a line that uses the **Table** code. Table lines take precedence over group lines. The following table shows that value that you can enter in the **Payroll code** field, based on the value that is entered in the **Code** field. It also shows the result that each combination of a code and a payroll code produces.
+
     | Code  | Payroll code | Result                                                                                                                                           |
     |-------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
     | Table | A tax code   | The tax code uses the specified transaction posting definition, even if the tax code is in a tax group that uses a different posting definition. |
