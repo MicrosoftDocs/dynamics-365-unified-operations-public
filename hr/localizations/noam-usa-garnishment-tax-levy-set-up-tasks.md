@@ -34,13 +34,13 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
 
-If you have questions about garnishments that aren't answered in this topic, or in [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md) or [Garnishments, tax levies, and administrative fees](garnishment-tax-levy-administrative-fees.md), contact your legal advisor. Here is a summary of each step in the process:
+If you have questions about garnishments that aren't answered in this topic, or in [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md) or [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md), contact your legal advisor. Here is a summary of each step in the process:
 
 1.  **Set up disposable income definitions** – When the court imposes an order to garnish a worker's wages, the actual amount of the garnishment is limited to a percentage of the worker's disposable income. The federal definition of disposable income is built into the payroll calculation. However, some states require additional reductions to disposable income. You can use disposable income definitions to identify those reductions and help guarantee that the correct earnings and deductions are included when the worker's disposable income is calculated.
 2.  **Set up benefit elements for garnishments, tax levies, and administrative fees** – Because garnishments and tax levies are processed as benefits, each garnishment or tax levy consists of a benefit type, plan, and option. Together, these elements create a single instance of a garnishment or tax levy. Administrative fees aren't permitted in every state. Even in states where administrative fees are permitted, they are never mandatory. Your organization must decide whether to charge them.
 3.  **Create benefits for garnishments, tax levies, and administrative fees** – You must have at least one benefit for garnishments and at least one benefit for tax levies. If a worker has more than one garnishment of the same type, you must have more than one garnishment benefit of that type. If your organization charges an administrative fee for handling garnishments and tax levies, you must have at least one benefit for the fee. You can also optionally have additional benefits for other administrative fees.
 
-**Note:** In this topic, the term *garnishment* implies both garnishments and tax levies, unless the text specifies otherwise. For more information about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees](garnishment-tax-levy-administrative-fees.md).
+**Note:** In this topic, the term *garnishment* implies both garnishments and tax levies, unless the text specifies otherwise. For more information about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md).
 
 ## Setting up disposable income definitions
 When the court imposes an order to garnish a worker's wages, the actual amount of the garnishment is limited to a percentage of the worker's disposable income. Under the federal definition, the disposable income is determined by subtracting all deductions that are required by law from a worker's gross earnings or income. Gross earnings include wages, commissions, bonuses, paid time off (PTO) pay, and periodic pension statements. Here are some of the deductions that are required by law:
@@ -88,10 +88,6 @@ When you set up the benefit elements for garnishments and tax levies, remember t
 You set up benefit types for garnishments, tax levies, and administrative fees on the **Benefit elements** page. In the **Type** section of the **Benefit elements** page, enter the following information.
 
 <table>
-<colgroup>
-<col width="35%" />
-<col width="65%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -153,10 +149,6 @@ On the **Tax rule** FastTab, enter the following information.
 On the **Payroll details** FastTab, enter the following information.
 
 <table>
-<colgroup>
-<col width="35%" />
-<col width="65%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Field</th>
@@ -240,14 +232,14 @@ Finally, on the **Earning basis** FastTab, enter the earning codes that can be i
 **Caution:** You can't change the list of earning codes on the **Maintain benefits** page for a specific worker. However, you can change the basis. If you change the basis to **Percent of earnings**, but no earning codes are entered here, the calculated amount of the deduction for the garnishment or tax levy is 0 (zero).
 
 ## Next step
-The next step is to enroll workers in garnishments and tax levies. For more information, see [Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md).    
+The next step is to enroll workers in garnishments and tax levies. For more information, see [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md).    
 
 See also
 --------
 
-[Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md)
+[Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
 
-[Benefit setup tasks](benefit-set-up-tasks.md)
+[Benefit setup tasks](noam-usa-benefit-set-up-tasks.md)
 
-[Worker and position payroll tasks](worker-position-payroll-tasks.md)
+[Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
 
