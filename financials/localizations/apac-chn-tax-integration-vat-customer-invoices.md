@@ -82,7 +82,7 @@ To map the added fields to table, follow these steps:
 See also
 --------
 
-[Configure tax integration for China](configure-tax-integration-china.md)
+[Configure tax integration for China](apac-chn-tax-integration.md)
 
-[Import the Chinese Golden Tax data entity](import-chinese-golden-tax-data-entity.md)
+[Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md)
 
