@@ -45,7 +45,7 @@ A *bank statement* or *account statement* is a summary of financial transactions
 
 -   Advanced bank reconciliation European file formats. For more information, see [Advanced bank reconciliation overview](/financials/cash-bank-management/advanced-bank-reconciliation-overview).
 -   ISO 20022 camt.053 bank statement message file format
--   CODA bank statement file format. For more information, see [CODA bank statement](bel-coda-bank-statement-import.md).
+-   CODA bank statement file format. For more information, see [CODA bank statement](emea-bel-coda-bank-statement-import.md).
 
 ## Customer and vendor payments import and return messages
 In addition to a bank statement, banks can provide specific messages, containing information about customer and vendor payments, which can be imported into Dynamics 365 for Operations and reconciled with customer and vendor transactions. When a company needs to receive information about incoming customer payments transactions from the bank, the import formats can be used. For companies that use direct debit and credit transfer, the return messages can be received to update the status of payments that were previously exported. The difference between import formats and return formats is that returns are targeted mostly to update already created payment journal lines (they can be created when direct debit or credit transfer were initiated) instead of creating new lines. Some complex import formats can also include return scenarios. The following example shows how this division should be implemented.
@@ -53,7 +53,7 @@ In addition to a bank statement, banks can provide specific messages, containing
 ##### Import formats
 
 -   ISO 20022 camt.054 bank notification message
--   [Nets import format](nor-nets-import-format.md) - Complex feature for Norwegian payment formats
+-   [Nets import format](emea-nor-nets-import-format.md) - Complex feature for Norwegian payment formats
 -   ESR customer payments import
 -   Import payment formats for Sweden - BankGirot Max and BankGirot OCR formats
 
@@ -61,5 +61,5 @@ In addition to a bank statement, banks can provide specific messages, containing
 
 -   ISO 20022 pain.002 payment status report
 -   (DNK) BetalingsserviceBasis-returformat – Return format for customer Betalingsservice export format
--   [Import payment formats for Sweden](sweden-payment-formats-import.md) - Bankgirot Autogiro returns
+-   [Import payment formats for Sweden](emea-swe-payment-formats-import.md) - Bankgirot Autogiro returns
 -   (SWE) BankGirot return – Vendor payments return format, which corresponds to Bankgirot export format
