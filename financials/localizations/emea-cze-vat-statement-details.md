@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 
-This topic includes country-specific information about VAT statement setup for users in legal entities in the Czech Republic. For more information about general VAT reporting, see [VAT reporting](eu-vat-reporting.md).
+This topic includes country-specific information about VAT statement setup for users in legal entities in the Czech Republic. For more information about general VAT reporting, see [VAT reporting](emea-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the specific tax authority, you must set up the report layout for the sales tax authorities.
