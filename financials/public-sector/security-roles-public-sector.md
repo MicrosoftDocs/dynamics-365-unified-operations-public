@@ -101,5 +101,5 @@ After the users are created, you assign them to roles on the **Assign users to r
 See also
 --------
 
-[Role-based security](/dev-itpro/system-administration/role-based-security)
+[Role-based security](/dynamics365/operations/dev-itpro/system-administration/role-based-security)
 

@@ -43,7 +43,7 @@
 
 # [Develop and customize using Visual Studio](dev-tools/TOC.md)
 
-# [Localizations](/dynamics365/operations/localizations/country_region?toc=/dynamics365/operations/dev-itpro/toc.json)
+# [Localizations](/dynamics365/operations/localizations/country_region?toc=/dynamics365/operations/dynamics365/operations/dev-itpro/toc.json)
 ## [Classify localization features](localization-solutions/classify-localization-features.md)
 ## [Country/region context](localization-solutions/apply-country-context.md)
 ## [Regulatory certifications](localization-solutions/regulatory-certifications.md)
@@ -57,4 +57,4 @@
 ## [Gantt development guide](user-interface/gantt-development-guide.md)
 ## [Create a new transportation management engine](/manufacturing/transportation-management/create-new-transportation-management-engine)
 
-# [Retail development](/retail/dev-itpro/TOC)
+# [Retail development](/retail/dynamics365/operations/dev-itpro/TOC)

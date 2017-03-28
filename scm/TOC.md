@@ -50,7 +50,7 @@
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement-sourcing/product-receipt-against-purchase-orders.md)
 ### [Overview of vendor invoices](https://docs.microsoft.com/en-us/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
-### [Vendor posting profiles](/Dynamics-365-Operations/blob/master/financials/accounts-payable/vendor-posting-profiles)
+### [Vendor posting profiles](/dynamics365/operations/master/financials/accounts-payable/vendor-posting-profiles)
 # Product information management
 ## Product information
 ### [BOM and formula](production-control/bill-of-material-bom.md)

@@ -36,27 +36,27 @@ Microsoft Dynamics 356 for Operations includes functionality for some country/re
 
 ## Developer and ISV information
 The following resources provide information that can help developers and ISVs who are creating country/region-specific customizations.
--   [Separate localization models](/dev-itpro/separate-localization-models)
--   [Apply country/region context](/dev-itpro/apply-country-context)
--   [Regulatory certifications](/dev-itpro/regulatory-certifications)
--   [Classify localization features](/dev-itpro/classify-localization-features)
+-   [Separate localization models](/dynamics365/operations/dev-itpro/separate-localization-models)
+-   [Apply country/region context](/dynamics365/operations/dev-itpro/apply-country-context)
+-   [Regulatory certifications](/dynamics365/operations/dev-itpro/regulatory-certifications)
+-   [Classify localization features](/dynamics365/operations/dev-itpro/classify-localization-features)
 -   [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
 ## Localization updates
 The following resources provide information about planned and new localization features. 
 -   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC)
--   [Regulatory watch and regulatory update communication](/dev-itpro/localization-solutions/regulatory-watch-communication)
--   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](/dev-itpro/submit-localization-alerts)
+-   [Regulatory watch and regulatory update communication](/dynamics365/operations/dev-itpro/localization-solutions/regulatory-watch-communication)
+-   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](/dynamics365/operations/dev-itpro/submit-localization-alerts)
 
 ## Electronic reporting
 The Electronic reporting (ER) tool allows you to configure formats for electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For more information, refer to one of the following topics:
--   [Electronic reporting overview](/dev-itpro/analytics-bi-reporting/general-electronic-reporting)
--   [Manage the Electronic reporting configuration lifecycle](/dev-itpro/analytics-bi-reporting/general-electronic-reporting-manage-configuration-lifecycle)
--   [Create an Electronic reporting configuration](/dev-itpro/analytics-bi-reporting/electronic-reporting-configuration)
--   [Extend the list of Electronic reporting functions](/dev-itpro/analytics-bi-reporting/general-electronic-reporting-formulas-list-extension)
--   [Electronic reporting destinations](/dev-itpro/analytics-bi-reporting/electronic-reporting-destinations)
--   [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
--   [Set up Electronic reporting with Power BI](/dev-itpro/analytics-bi-reporting/general-electronic-reporting-report-configuration-get-data-powerbi)
+-   [Electronic reporting overview](/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting)
+-   [Manage the Electronic reporting configuration lifecycle](/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-manage-configuration-lifecycle)
+-   [Create an Electronic reporting configuration](/dynamics365/operations/dev-itpro/analytics-bi-reporting/electronic-reporting-configuration)
+-   [Extend the list of Electronic reporting functions](/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-formulas-list-extension)
+-   [Electronic reporting destinations](/dynamics365/operations/dev-itpro/analytics-bi-reporting/electronic-reporting-destinations)
+-   [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
+-   [Set up Electronic reporting with Power BI](/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-report-configuration-get-data-powerbi)
 
 ## Country/region specific help topics
 The following sections list resources by country/region.
