@@ -50,49 +50,24 @@ Use the **Advance holder groups** page to create an advance holder group. You c
 ### Employee posting profile
 
 Use the **Employee posting profiles** page to create a profile for advance holder transactions. You can specify the following information for the employee posting profile.
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Field</strong></td>
-<td><strong>Description</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Posting profile</strong></td>
-<td>Enter the posting profile identification code for the advance holder.</td>
-</tr>
-<tr class="odd">
-<td><strong>Description</strong></td>
-<td>Enter a brief description of the posting profile.</td>
-</tr>
-<tr class="even">
-<td><strong>Valid for</strong></td>
-<td>Select one of the following options for the level of grouping for setting up the posting profile:
-<ul>
-<li><strong>Table</strong> – This option is used to set up the posting profile for one advance holder. You must indicate the advance holder code in the <strong>Reference</strong> field.</li>
-<li><strong>Group</strong> – This option is used to set up the posting profile for a group of advance holders. You must indicate the group code in the <strong>Reference</strong> field.</li>
-<li><strong>All</strong> – This option is used to set up the posting profile for all advance holders.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><strong>Reference</strong></td>
-<td>Select the advance holder code if <strong>Table</strong> is selected in the <strong>Valid for</strong> field, or select the advance holder group if <strong>Group</strong> is selected in the <strong>Valid for</strong> field.</td>
-</tr>
-<tr class="even">
-<td><strong>Summary account</strong></td>
-<td>Select the summary account for posting the transactions.</td>
-</tr>
-</tbody>
-</table>
+|Field |Description|
+|------|-----------|
+|Posting profile|Enter the posting profile identification code for the advance holder.|
+|Description|Enter a brief description of the posting profile.|
+|Valid for|Select one of the following options for the level of grouping for setting up the posting profile: 
+**Table** – This option is used to set up the posting profile for one advance holder. You must indicate the advance holder code in the Reference field.
+**Group** – This option is used to set up the posting profile for a group of advance holders. You must indicate the group code in the Reference field.
+**All** – This option is used to set up the posting profile for all advance holders.|
+|Reference|Select the advance holder code if Table is selected in the Valid for field, or select the advance holder group if Group is selected in the Valid for field.|
+|Summary account|Select the summary account for posting the transactions.|
+
+
 
 ### Account payable parameters
 
 To reflect advance holder’s transactions you must set up the following on the **Account payable parameters** page in the **Advance holders** section.
-|                                                |                                                                                                                                                                                  |
-|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                |                   |
+|------------------------------------------------|-------------------|
 |  **Field**                                     | **Description**                                                                                                                                                                  |
 | **Posting profile**                            | Select the default profile to complete transactions for advance holders.                                                                                                         |
 | **Advance holder sorting**                     | If selected, advance holders will be displayed at the beginning of the list in the **Advance holders** page.                                                                     |
@@ -137,5 +112,5 @@ To preview and print a report based on advance holders’ transactions, click **
 See also
 --------
 
-[Advance holder transactions](advance-holders-transactions.md)
+[Advance holder transactions](emea-advance-holders-transactions.md)
 
