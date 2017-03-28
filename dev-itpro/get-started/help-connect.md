@@ -65,7 +65,7 @@ See also
 
 [Help overview](help-overview.md)
 
-[Task recorder overview](task-recorder.md)
+[Task recorder overview](../user-interface/task-recorder.md)
 
 [How to create a task recording to use as documentation or training](../user-interface/task-recorder-training.md)
 
