@@ -56,9 +56,9 @@ Because earning codes are used to uniquely identify every type of earning that w
 
 -   **Base pay hourly earnings** – If you have workers on multiple shifts, you must have a separate earning code for each shift.
 -   **Salaried earnings** – You must have a separate earning code for each fixed compensation plan.
--   **Premiums** – If premiums are paid based on other earnings, such as shift differentials or overtime earnings, or on a worker's characteristics, such as bonuses based on credentials, you must have additional earning codes. For more information, see [Premium earning setup tasks](premium-earning-setup-tasks.md).
+-   **Premiums** – If premiums are paid based on other earnings, such as shift differentials or overtime earnings, or on a worker's characteristics, such as bonuses based on credentials, you must have additional earning codes. For more information, see [Premium earning setup tasks](noam-usa-premium-earning-setup-tasks.md).
 -   **Leave** – You must have separate earning codes for jury duty, bereavement leave, and any other type of leave that your organization offers.
--   **Benefit accruals** – You must have a separate earning code for every benefit accrual plan. The earning code for a benefit accrual plan is used to verify the available balance in the plan and reduce the balance when a pay statement line that includes the earning code is submitted for payment. For more information, see [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md).
+-   **Benefit accruals** – You must have a separate earning code for every benefit accrual plan. The earning code for a benefit accrual plan is used to verify the available balance in the plan and reduce the balance when a pay statement line that includes the earning code is submitted for payment. For more information, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).
 -   **Retroactive earnings** – We recommend that you create a retroactive earning code for every type of earning that can be paid retroactively. It's helpful if the names of the two codes resemble each other. For example, if the regular earning code is named **Hourly union 1st shift**, the retroactive earning code might be named **Hourly union 1st shift retro**.
 -   **Miscellaneous or occasional earnings** – Many organizations provide car allowances, reimbursement of relocation expenses, and other miscellaneous earnings. You must have a separate earning code for each type of miscellaneous or occasional earning.
 
@@ -90,7 +90,7 @@ Each earning type should have a unique earning code. The following information i
 </tr>
 <tr class="odd">
 <td>Productive</td>
-<td>Select this option if the earning code is used for productive hours. Productive hours represent regular work hours, whereas nonproductive hours represent hours that weren't actually worked, such as vacation and sick pay hours. Hours that are worked, but that are accounted for under another earning code, are also considered nonproductive. This information is used in several benefit and tax calculations, such as the calculation of the regular-rate-of-pay premium that is required for overtime hours under the Fair Labor Standards Act (FLSA). For more information about premium earnings, see <a href="premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</td>
+<td>Select this option if the earning code is used for productive hours. Productive hours represent regular work hours, whereas nonproductive hours represent hours that weren't actually worked, such as vacation and sick pay hours. Hours that are worked, but that are accounted for under another earning code, are also considered nonproductive. This information is used in several benefit and tax calculations, such as the calculation of the regular-rate-of-pay premium that is required for overtime hours under the Fair Labor Standards Act (FLSA). For more information about premium earnings, see <a href="noam-usa-premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</td>
 </tr>
 <tr class="even">
 <td>Description</td>
@@ -140,7 +140,7 @@ The following information is entered on the **General** tab.
 <li>To set up a 1-percent uniform allowance that is paid each pay period, select <strong>Pay period</strong> in the <strong>Rate basis</strong> field, and enter <strong>.01</strong> in the <strong>Amount or multiplier</strong> field. The worker then receives 1 percent of his or her pay each pay period.</li>
 </ul></li>
 <li>If <strong>Retroactive</strong> is selected, the earning code is set up for retroactive pay. This option is available only if the <strong>Retroactive earning</strong> option is selected.</li>
-<li>If <strong>Percent of earnings</strong>, <strong>Hours of earnings</strong>, or <strong>Regular rate of pay</strong> is selected, select an earning code group in the <strong>Basis earning code group</strong> field. These rate bases are most often used to generate premium earnings. For more information, see <a href="premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</li>
+<li>If <strong>Percent of earnings</strong>, <strong>Hours of earnings</strong>, or <strong>Regular rate of pay</strong> is selected, select an earning code group in the <strong>Basis earning code group</strong> field. These rate bases are most often used to generate premium earnings. For more information, see <a href="noam-usa-premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -149,7 +149,7 @@ The following information is entered on the **General** tab.
 <ul>
 <li>If the rate basis is a flat amount, the value in this field is treated as a currency amount. For example, if you enter <strong>500</strong> in this field, the value is considered a flat amount of 500.00.</li>
 <li>When the rate basis is <strong>Hourly</strong>, <strong>Pay period</strong>, <strong>Monthly</strong>, or <strong>Annually</strong>, this field is used together with the <strong>Rate basis</strong> field to determine the earnings amount. The rate basis method determines the appropriate compensation rate for workers. Workers who have different hourly rates can use the same hourly earning code, because the correct hourly rate is calculated for each worker and position. For example, if the compensation rate is $24,000 per year, and the worker’s pay cycle is monthly, select <strong>Pay period</strong> as the rate basis, and enter a multiplier of <strong>1</strong>. The generated earnings will be $2,000.</li>
-<li>For information about the value that you should use when the rate basis is <strong>Hours of earnings</strong>, <strong>Percent of earnings</strong>, or <strong>Regular rate of pay</strong>, see <a href="premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</li>
+<li>For information about the value that you should use when the rate basis is <strong>Hours of earnings</strong>, <strong>Percent of earnings</strong>, or <strong>Regular rate of pay</strong>, see <a href="noam-usa-premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</li>
 </ul>
 <strong>Note:</strong> This field is ignored when retroactive earning codes are calculated.</td>
 </tr>
@@ -161,7 +161,7 @@ The following information is entered on the **General** tab.
 <li>If the rate basis is <strong>Percent of earnings</strong>, the line uses the earning codes in the earning code group to identify eligible earnings. The earning code adds an additional percentage to the eligible amount.</li>
 <li>If the rate basis is <strong>Regular rate of pay</strong>, the line uses the earning codes in the earning code group to identify eligible earnings. The earning code adds an amount that is based on the sum of all eligible earnings during a work period. This option is most often used to calculate the amount of the overtime premium that is required by the FLSA.</li>
 </ul>
-For information about how to use earning code groups to generate premium earnings, see <a href="premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</td>
+For information about how to use earning code groups to generate premium earnings, see <a href="noam-usa-premium-earning-setup-tasks.md">Premium earning setup tasks</a>.</td>
 </tr>
 <tr class="even">
 <td>Retroactive earning</td>
@@ -243,12 +243,12 @@ You can assign earning codes to groups when you create them, or you can assign a
 On the **Earning code groups** tab of the **Earning codes** page, you can see each group that an earning code belongs to. Additionally, on the **Earning codes** tab of the **Earning code groups** page, you can see each earning code that belongs to the selected group.
 
 ## Next step
-The next step is to set up schedules, leave types, and benefit accrual plans. For more information, see [Work schedule and leave tasks](work-schedule-leave-tasks.md) and [Benefit accrual plan tasks](benefit-accrual-plan-tasks.md).  
+The next step is to set up schedules, leave types, and benefit accrual plans. For more information, see [Work schedule and leave tasks](noam-usa-work-schedule-leave-tasks.md) and [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).  
 
 See also
 --------
 
-[Generate earnings](generate-earnings.md)
+[Generate earnings](noam-usa-generate-earnings.md)
 
-[Generate payroll reports](generate-payroll-reports.md)
+[Generate payroll reports](noam-usa-generate-payroll-reports.md)
 
