@@ -57,5 +57,5 @@ You also use the **Vendor settlement for 1099s** page to enter or update 1099 in
 See also
 --------
 
-[Accounts payable in the public sector](https://ax.help.dynamics.com/en/wiki/Accounts-payable-in-the-public-sector/)
+[Accounts payable in the public sector](../public-sector/accounts-payable-public-sector.md)
 

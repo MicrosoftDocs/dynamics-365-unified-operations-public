@@ -180,5 +180,5 @@ When you use **ColumnsMode**=**Fill** to dynamically create columns, based on th
 See also
 --------
 
-[User interface concepts](https://ax.help.dynamics.com/en/?p=187651)
+[User interface development home page](user-interface-development-home-page.md)
 

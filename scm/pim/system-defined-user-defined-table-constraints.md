@@ -65,5 +65,5 @@ Before a table constraint can take effect on a product configuration model, the 
 See also
 --------
 
-[Key concepts in product configuration models](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=1041)
+[Key concepts in product configuration models](product-configuration-models.md)
 

@@ -214,5 +214,5 @@ See also
 
 [Office Integration Troubleshooting](office-integration-troubleshooting.md)
 
-[Architecture changes](https://ax.help.dynamics.com/en/?p=185064)
+[Application stack and server architecture](../dev-itpro/application-stack-server-architecture.md)
 

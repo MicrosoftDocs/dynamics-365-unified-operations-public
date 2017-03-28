@@ -40,7 +40,7 @@ This topic describes the steps for deploying an upgrade to a non-production sand
 If you have any customizations or ISV solutions you must have already completed [code upgrade](upgrade-latest-update.md#scenario-2-upgrade-your-custom-code) and have your upgraded deployable packages ready in your asset library in Lifecycle Services. We strongly recommend that you perform the data upgrade on a development environment before upgrading in a sandbox environment. It is much faster to make corrections and re-run the process in a development environment, so you can reduce the overall time to upgrade by working in a development environment first.
 
 ## Export the database
-Follow the steps in this article to export the database to a bacpac file from the existing sandbox environment you wish to upgrade: [Retain a copy of a Dynamics 365 for Operations database to restore later](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=1589364&preview=true#export-the-dynamics-365-for-operations-database).
+Follow the steps in this article to export the database to a bacpac file from the existing sandbox environment you wish to upgrade: [Copy a Dynamics 365 for Operations database to restore later](../database-management/copy-operations-database.md).
 
 #### Additional steps for Management Reporter
 
@@ -56,7 +56,7 @@ In your Lifecycle Services implementation project:
 2.  In the main LCS Project page, in the Environments pane, the deleted environment will display the options to request a deployment – click and request the environment to be deployed with the new version and select your upgraded custom deployable packages from your asset library to be deployed to the environment.
 
 ## Import the database
-Follow the steps in this article to import the database from a bacpac file into the newly redeployed sandbox environment: [Retain a copy of a Dynamics 365 for Operations database to restore later](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=1589364&preview=true#import-the-dynamics-365-for-operations-database).
+Follow the steps in this article to import the database from a bacpac file into the newly redeployed sandbox environment: [Copy a Dynamics 365 for Operations database to restore later](../database-management/copy-operations-database.md).
 
 ## Run the data upgrade package
 Execute the data upgrade as described in this article: [Upgrade data in development, demo or sandbox environments.](upgrade-data-to-latest-update.md)

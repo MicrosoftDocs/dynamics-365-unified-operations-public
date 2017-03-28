@@ -93,7 +93,7 @@ See also
 
 [Quarantine orders](quarantine-orders.md)
 
-[Set up quality orders](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
+[Set up quality orders (task guide)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
-[Inspect the quality of goods](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Inspect the quality of goods (task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
 

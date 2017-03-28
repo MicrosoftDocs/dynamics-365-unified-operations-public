@@ -75,7 +75,7 @@ See also
 
 [Plan data import, export, and migration](http://technet.microsoft.com/library/a05289fb-0f8f-4563-be3c-7c840bfea7e1(AX.60).aspx)
 
-[Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=761)
+[Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md)
 
-[Run the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=371)
+[Run the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](run-test-data-transfer-tool-beta.md)
 

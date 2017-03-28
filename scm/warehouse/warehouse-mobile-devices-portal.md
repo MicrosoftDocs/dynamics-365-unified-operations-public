@@ -87,7 +87,7 @@ To enable the Warehouse Mobile Devices Portal application to interact with a par
     2.  Follow the steps for “Register a Native Application with AAD”.
     3.  You have now obtained **Client ID** of the application.
 
-2.  Create a new user account in Azure Active Directory for the Operations tenant. The purpose of this user account is to access the WMDP specific custom service, which the Operations server exposes. After completing this step, you will have **WMDP user credentials**, which consist of a **WMDP email address** and a **WMDP password**. To learn about the basic steps for adding users to Azure AD and Dynamics 365 for Operations, refer to this tutorial: [Sign up for a Microsoft Dynamics 365 for Operations subscription](https://ax.help.dynamics.com/wiki/sign-up-for-a-microsoft-dynamics-rainier-preview).
+2.  Create a new user account in Azure Active Directory for the Operations tenant. The purpose of this user account is to access the WMDP specific custom service, which the Operations server exposes. After completing this step, you will have **WMDP user credentials**, which consist of a **WMDP email address** and a **WMDP password**. To learn about the basic steps for adding users to Azure AD and Dynamics 365 for Operations, refer to this tutorial: [Sign up for a Microsoft Dynamics 365 for Operations subscription]((/dynamics365/operations/dev-itpro/sign-up-preview-subscription).
 3.  Create an Operations user that corresponds to the **WMDP user credentials**.
     1.  In Dynamics 365 for Operations, go to **System administration** &gt; **Common** &gt; **Users**.
     2.  Create a new user.

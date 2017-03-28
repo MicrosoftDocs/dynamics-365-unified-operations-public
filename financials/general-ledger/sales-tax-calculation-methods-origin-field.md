@@ -125,7 +125,7 @@ Document / journal is set to Amounts include sales tax = No Transaction line am
 See also
 --------
 
-[Determining sale tax rates based on the Marginal base and Calculation method fields](https://ax.help.dynamics.com/en/wp-admin/post.php?post=1411&action=edit)
+[Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md)
 
-[Whole amount and Interval calculation options for sales tax codes](https://ax.help.dynamics.com/en/wp-admin/post.php?post=76941&action=edit)
+[Whole amount and Interval calculation options for sales tax codes](whole-amount-interval-options-sales-tax-codes.md)
 

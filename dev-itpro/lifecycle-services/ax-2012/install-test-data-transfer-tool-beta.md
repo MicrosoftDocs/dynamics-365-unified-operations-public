@@ -53,5 +53,5 @@ See also
 
 [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md)
 
-[Run the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=371)
+[Run the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](run-test-data-transfer-tool.md)
 

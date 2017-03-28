@@ -100,5 +100,5 @@ All of the policy rules for a particular audit policy share the same batch param
 See also
 --------
 
-[Audit policy violations and cases](https://ax.help.dynamics.com/en/wiki/audit-policy-v…ns-and-cases-2/)
+[Audit policy violations and cases](audit-policy-violations-cases.md)
 

@@ -85,5 +85,5 @@ You can create a skill profile analysis to view a list of the competencies of a 
 See also
 --------
 
-[Human resources](https://ax.help.dynamics.com/en/wiki/human-recources/)
+[Human resources](../human-resources-overview.md)
 
