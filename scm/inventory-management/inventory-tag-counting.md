@@ -39,5 +39,5 @@ By creating lines on the **Tag counting** page, you place a tag number on each 
 See also
 --------
 
-[Cycle counting](/warehouse-management/cycle-counting.md)
+[Cycle counting](/warehouse/cycle-counting.md)
 

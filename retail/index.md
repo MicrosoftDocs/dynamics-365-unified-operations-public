@@ -6,7 +6,7 @@ This page points to resources that will help you use Microsoft Dynamics 365 for 
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
 
 ## IT Pro and developer resources
-Go to the [Microsoft Dynamics 365 for Operations for Developers and IT Pros](../dev-itpro/dev-retail-home-page.md) page to browse the resources that are available for IT pros and developers who support Microsoft Dynamics 365 for Operations - Retail.
+Go to the [Microsoft Dynamics 365 for Operations for Developers and IT Pros](dev-itpro/dev-retail-home-page.md) page to browse the resources that are available for IT pros and developers who support Microsoft Dynamics 365 for Operations - Retail.
 
 ## Blogs
 You can find opinions, news, and other information about Microsoft Dynamics 365 for Operations - Retail and other solutions on the <a href="https://community.dynamics.com/b/msftdynamicsblog">Microsoft Dynamics 365 blog</a>.

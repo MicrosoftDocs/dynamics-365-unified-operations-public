@@ -76,9 +76,9 @@ The following steps in the production life cycle can occur for all order types o
 See also
 --------
 
-[Production feedback](https://ax.help.dynamics.com/en/?p=5911)
+[Production feedback](production-feedback.md)
 
-[Product configuration models](\product-information-management\product-configuration-models.md)
+[Product configuration models](../product-information-management/product-configuration-models.md)
 
-[Lean manufacturing](https://ax.help.dynamics.com/en/?p=1521)
+[Lean manufacturing](lean-manufacturing-overview.md)
 

@@ -23,7 +23,7 @@
 # [Analytics](analytics-bi-reporting/TOC.md)
 
 # Mobile apps
-## [Install and configure the warehousing app ](/manufacturing/warehouse-management/install-configure-warehousing-app.md)
+## [Install and configure the warehousing app ](/dynamics365/operations/scm/warehouse/install-configure-warehousing-app)
 ## [Mobile platform for Dynamics 365 for Operations](mobile-apps/mobile-platform.md)
 ## Mobile workspace X++ APIs - NEED TO FIND THIS TOPIC IN GITHUB
 
@@ -43,7 +43,7 @@
 
 # [Develop and customize using Visual Studio](dev-tools/TOC.md)
 
-# [Localizations](/dynamics365/operations/localizations/country_region?toc=/dynamics365/operations/dynamics365/operations/dev-itpro/toc.json)
+# [Localizations](/dynamics365/operations/financials/localizations/country_region?toc=/dynamics365/operations/dev-itpro/toc.json)
 ## [Classify localization features](localization-solutions/classify-localization-features.md)
 ## [Country/region context](localization-solutions/apply-country-context.md)
 ## [Regulatory certifications](localization-solutions/regulatory-certifications.md)
@@ -55,6 +55,6 @@
 
 # Supply chain development
 ## [Gantt development guide](user-interface/gantt-development-guide.md)
-## [Create a new transportation management engine](/manufacturing/transportation-management/create-new-transportation-management-engine)
+## [Create a new transportation management engine](/dynamics365/operations/scm/transportation/create-new-transportation-management-engine)
 
-# [Retail development](/retail/dynamics365/operations/dev-itpro/TOC)
+# [Retail development](/dynamics365/operations/retail/dev-itpro/TOC)
