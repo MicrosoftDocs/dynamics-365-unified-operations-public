@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 2015-12-08 21 - 09 - 56
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+dms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations
+/ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21021
 ms.assetid: df56463c-126e-4a09-bcdc-4fda52e99f46
@@ -37,7 +37,7 @@ This page lists the MPOS and Cloud POS resources that are available in Dynamics 
 Developer and IT Pro
 --------------------
 
--   [Developer and IT documentation](dev-retail-home-page.md)
+-   [Developer and IT documentation](dev-itpro/dev-retail-home-page.md)
 
 ## Overview
 -   [Retail Modern POS functional overview (part 1)](https://mix.office.com/watch/1mhlvuetfyue6) (Office Mix)
@@ -49,7 +49,7 @@ Developer and IT Pro
 
 ## Screen layout and customization
 -   [Configuring screen layouts for POS](pos-screen-layouts.md)
--   [Add a new custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
+-   [Add a new custom control to an MPOS screen layout](dev-itpro/add-new-custom-control-mpos-screen-layout.md)
 -   [POS application and user language settings](pos-application-user-language-settings.md)
 -   [Setting up and managing images for Retail Modern POS](set-up-manage-images-retail-mpos.md)
 
