@@ -65,12 +65,12 @@ The following table shows the prerequisites that must be in place before you sta
 </table>
 
 ## Submit pay statements for multiple workers in a pay period
-Use this procedure to create a payment journal for multiple pay statements at the same time. Before you generate pay statements, you must generate and release earnings. For more information, see [Generate earnings](generate-earnings.md). 
+Use this procedure to create a payment journal for multiple pay statements at the same time. Before you generate pay statements, you must generate and release earnings. For more information, see [Generate earnings](noam-usa-generate-earnings.md). 
 
 To submit pay statements for multiple workers at the same time, follow these steps.
 
-1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](pay-statements.md). 
-    -  **Tip:** Before you generate pay statements, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](pay-statements.md).
+1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](noam-usa-pay-statements.md). 
+    -  **Tip:** Before you generate pay statements, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see “Modify pay statements” in [Work with pay statements](noam-usa-pay-statements.md).
 2.  On the **Submit pay statements** page, in the **Pay cycle** field, select the same pay cycle that you selected when you generated and released earnings.
 3.  In the **Pay period** field, select the same pay period that you selected when you generated and released earnings. The list includes only the pay periods that are available for the pay cycle. The default pay period is the first open pay period, but you can select any open pay period in the list.
 4.  Click **OK** to submit the pay statements. A vendor invoice for the sum of the net pay for all pay statements is created and posted. A payment journal that has lines is also created and posted, so that you can generate and post payments.
@@ -80,7 +80,7 @@ To submit pay statements for multiple workers at the same time, follow these ste
 ## Submit individual pay statements
 To create a payment journal for an individual pay statement, follow these steps.
 
-1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](pay-statements.md).
+1.  Generate pay statements, so that earnings, benefits, and taxes are calculated. For more information, see [Work with pay statements](noam-usa-pay-statements.md).
 2.  On the **Calculated pay statements** page, select the worker pay statement to create the payment journal for, and then click **Submit for payment**. The **Submit for payment** button is also available on the **Pay statement** page.
 3.  Optional: Select the **Post the selected pay statement** check box to post the pay statement. You can post the pay statements as a separate step at any time by using the **Post pay statements** page.
 4.  Click **Submit** to submit the pay statements. A vendor invoice for the net pay of the pay statement is created and posted. A payment journal that has lines is also created, so that you can generate and post the payment.
