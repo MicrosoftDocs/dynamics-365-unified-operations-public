@@ -45,18 +45,18 @@ The following resources provide information that can help developers and ISVs wh
 ## Localization updates
 The following resources provide information about planned and new localization features. 
 -   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC)
--   [Regulatory watch and regulatory update communication](/dynamics365/operations/dev-itpro/localization-solutions/regulatory-watch-communication)
+-   [Regulatory watch and regulatory update communication](/dynamics365/operations/dev-itpro/lcs-solutions/regulatory-watch-communication)
 -   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](/dynamics365/operations/dev-itpro/submit-localization-alerts)
 
 ## Electronic reporting
 The Electronic reporting (ER) tool allows you to configure formats for electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For more information, refer to one of the following topics:
--   [Electronic reporting overview](/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting)
--   [Manage the Electronic reporting configuration lifecycle](/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-manage-configuration-lifecycle)
--   [Create an Electronic reporting configuration](/dynamics365/operations/dev-itpro/analytics-bi-reporting/electronic-reporting-configuration)
--   [Extend the list of Electronic reporting functions](/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-formulas-list-extension)
--   [Electronic reporting destinations](/dynamics365/operations/dev-itpro/analytics-bi-reporting/electronic-reporting-destinations)
--   [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/operations/dev-itpro/analytics-bi-reporting/download-electronic-reporting-configuration-lcs)
--   [Set up Electronic reporting with Power BI](/dynamics365/operations/dev-itpro/analytics-bi-reporting/general-electronic-reporting-report-configuration-get-data-powerbi)
+-   [Electronic reporting overview](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
+-   [Manage the Electronic reporting configuration lifecycle](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle)
+-   [Create an Electronic reporting configuration](/dynamics365/operations/dev-itpro/analytics/electronic-reporting-configuration)
+-   [Extend the list of Electronic reporting functions](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension)
+-   [Electronic reporting destinations](/dynamics365/operations/dev-itpro/analytics/electronic-reporting-destinations)
+-   [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+-   [Set up Electronic reporting with Power BI](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi)
 
 ## Country/region specific help topics
 The following sections list resources by country/region.

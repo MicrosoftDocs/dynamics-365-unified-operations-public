@@ -53,7 +53,7 @@ You can create new test cases to test the functionality in an application.
 1.  Open Visual Studio as an administrator.
 2.  On the **File** menu, click **Open** &gt; **Project/Solution**, and then select **FleetManagement** **solution** from the desktop folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
 3.  In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then click **New Project**.
-4.  Choose **Dynamics AX **as the project type to create.
+4.  Choose **Dynamics 365 for Operations **as the project type to create.
 5.  Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:UsersPublicDesktopFleetManagement) as the location, and then click **OK**. 
 
         [![55](./media/55.png)](./media/55.png)
@@ -135,7 +135,7 @@ You can create new test cases to test the functionality in an application.
 ## Test module creation to manage test code and FormAdaptors
 Creating a test specific module helps to keep test code together and manageable.
 
-1.  Open **Visual Studio** and go to **Dynamics AX** &gt; **Model Management** &gt; **Create model**.
+1.  Open **Visual Studio** and go to **Dynamics 365 for Operations** &gt; **Model Management** &gt; **Create model**.
 
         [![60](./media/60-1024x574.png)](./media/60.png)
         
@@ -148,13 +148,13 @@ Creating a test specific module helps to keep test code together and manageable.
         [![62](./media/62-1024x786.png)](./media/62.png)
         
 
-After the base test module is in place, you can import a Task Recorder recording to generate test code. When you import a Task Recorder recording XML, test code is generated using FormAdaptors. Form adaptors are wrapper classes over forms which provide strongly typed API that can be used to test form functionality. In Dynamics AX, we have included pre-generated FormAdapters for each package for built-in forms. In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.
+After the base test module is in place, you can import a Task Recorder recording to generate test code. When you import a Task Recorder recording XML, test code is generated using FormAdaptors. Form adaptors are wrapper classes over forms which provide strongly typed API that can be used to test form functionality. In Dynamics 365 for Operations, we have included pre-generated FormAdapters for each package for built-in forms. In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.
 
 ## Import a Task Recorder recording into Visual Studio to generate test code
 You can generate test code from Task Recorder recording to execute headless (non-UI) test.
 
-1.  Record a scenario in Dynamics AX by using Task Recorder.
-2.  To import a Task Recording, in Visual Studio, click **Dynamics AX** &gt; **Addins** &gt; **Import Task Recording**. 
+1.  Record a scenario in Dynamics 365 for Operations by using Task Recorder.
+2.  To import a Task Recording, in Visual Studio, click **Dynamics 365 for Operations** &gt; **Addins** &gt; **Import Task Recording**. 
 
         [![63](./media/63-1024x613.png)](./media/63.png)
         
@@ -180,7 +180,7 @@ You can generate test code from Task Recorder recording to execute headless (non
 
         [![67](./media/67-1024x658.png)](./media/67.png)
         
-7.  Select the test and then click **Run** &gt; **Execute selected**. This will execute test against the locally deployed Dynamics AX. 
+7.  Select the test and then click **Run** &gt; **Execute selected**. This will execute test against the locally deployed Dynamics 365 for Operations. 
 
         [![68](./media/68-1024x652.png)](./media/68.png)
 

@@ -151,7 +151,7 @@ When you run a missing account analysis, the following keyboard shortcuts are av
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics ERP](/dynamics365/operations/dev-itpro/analytics-bi-reporting/financial-reporting-intro)
+[Financial reporting for Microsoft Dynamics ERP](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
 
-[Report Designer interface](/dynamics365/operations/dev-itpro/analytics-bi-reporting/report-designer-interface)
+[Report Designer interface](/dynamics365/operations/dev-itpro/analytics/report-designer-interface)
 

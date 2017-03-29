@@ -60,7 +60,7 @@ Two subpatterns are described in this article:
 
 [![filterToolbarStackedWireframe](./media/filtertoolbarstackedwireframe.png)](./media/filtertoolbarstackedwireframe.png)
 
-## Pattern changes for Dynamics AX
+## Pattern changes for Dynamics 365 for Operations
 These patterns didn't exist for Microsoft Dynamics AX 2012.
 
 ## Model

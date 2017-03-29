@@ -69,5 +69,5 @@ See also
 
 [How to create a task recording to use as documentation or training](../user-interface/task-recorder-training-docs.md)
 
-[Creating New Training Libraries for Dynamics AX within Lifecycle Services using the Task Recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Creating New Training Libraries for Dynamics 365 for Operations within Lifecycle Services using the Task Recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
