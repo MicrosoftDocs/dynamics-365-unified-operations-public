@@ -2,7 +2,7 @@
 # required metadata
 
 title: New task guides (February 2016)
-description: This wiki lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.  The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics AX, and (February 2016) Getting started.
+description: This wiki lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.  The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations, and (February 2016) Getting started.
 author: josaw1
 manager: AnnBe
 ms.date: 2016-07-15 23 - 21 - 40
@@ -32,12 +32,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # New task guides (February 2016)
 
-This wiki lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.  The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics AX, and (February 2016) Getting started.
+This wiki lists the Task guides that were released to the Microsoft BPM libraries as of February 2016.  The libraries that were published include the (February 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations, and (February 2016) Getting started.
 
-Task guides in the (February 2016) APQC Unified Library for Microsoft Dynamics AX
+Task guides in the (February 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations
 ---------------------------------------------------------------------------------
 
-The (February 2016) APQC Unified library contains the Task guides that are intended to be used for Help with the Dynamics AX 7.0.0 release. If you need localized versions of these Task guides, they are available in the (May 2016) APQC Unified Library for Microsoft Dynamics AX. For more information about how to connect the help system to a Task guide library, see [Get started with Help](help-overview.md).
+The (February 2016) APQC Unified library contains the Task guides that are intended to be used for Help with the Dynamics 365 for Operations 7.0.0 release. If you need localized versions of these Task guides, they are available in the (May 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations. For more information about how to connect the help system to a Task guide library, see [Get started with Help](help-overview.md).
 
 ### Accounts payable
 

@@ -70,7 +70,7 @@ Manual package deployment must be used for the following topologies. For informa
 ## Apply package on demo/dev/test/build/sandbox environments by using LCS
 **Note:** Package application causes system downtime. All the relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
-1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](../servicing/..\servicing\download-hotfix-lcs.md).
+1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
     -   For a binary hotfix, upload the hotfix directly to the Asset library.
     -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
 
@@ -111,7 +111,7 @@ If package application fails, you have two options:
 ## Apply package on a Production environment by using LCS
 In a Production environment, package application through LCS is not self-serve like it is for a Sandbox or other environment types. Customers and partners must submit a request to the Service Engineering team to apply a package when the customer is ready to take the downtime. 
 
-1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](..\servicing\download-hotfix-lcs.md).
+1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
     -   For a binary hotfix, upload the hotfix directly to the Asset library.
     -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
 
@@ -151,5 +151,5 @@ In a Production environment, package application through LCS is not self-serve l
 See also
 --------
 
-[Install a deployable package in Microsoft Dynamics AX](install-deployable-package.md)
+[Install a deployable package](install-deployable-package.md)
 

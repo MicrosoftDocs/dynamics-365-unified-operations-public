@@ -343,7 +343,7 @@ The Microsoft Dynamics App for Office can be run in Word to enable the creation 
 3.  Sign in to the app:
     1.  Click **Sign In**. The Azure Active Directory sign-in screen should provide a list of credentials. If you encounter an error, force a sign-out (by using the sign-out link in the lower-right corner of the app), and then sign in again.
     2.  Select the appropriate account, or click **Use another account**.
-    3.  Enter the credentials for that Microsoft Dynamics AX environment, and then click **Sign in**.
+    3.  Enter the credentials for that Microsoft Dynamics 365 for Operations environment, and then click **Sign in**.
 
 4.  Load the template designer applet:
     1.  After sign-in, click **Load applets**.

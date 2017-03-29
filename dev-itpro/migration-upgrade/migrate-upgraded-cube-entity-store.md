@@ -185,5 +185,5 @@ As an administrator or a power user, you have successfully authored and publishe
 See also
 --------
 
-[Modeling and using aggregate data](../analytics-bi-reporting/model-aggregate-data.md)
+[Modeling and using aggregate data](../analytics/model-aggregate-data.md)
 

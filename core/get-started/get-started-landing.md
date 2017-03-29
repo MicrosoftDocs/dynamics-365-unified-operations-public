@@ -18,7 +18,6 @@ keywords: DefaultDashboard
 audience: Application User
 # ms.devlang: 
 ms.reviewer: 71
-ms.suite: Released- Dynamics AX 7.0.0
 # ms.tgt_pltfrm: 
 .ms.custom: 
 ms.assetid: ad0cdfac-fd94-41df-9d0c-fbe0a91e2dce
@@ -46,7 +45,7 @@ The following resources provide an overview of the Lifecycle Services and how to
 The following resources provide information about the Dynamics 365 for Operations user experience. For example, these resources will help you navigate, personalize, and use Dynamics 365 for Operations more efficiently.
 
 -   [Dynamics 365 for Operations client FAQ](/core/client-qa)
--   [What's new in the Dynamics AX user experience (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
+-   [What's new in the Dynamics 365 for Operations user experience (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
 -   [Personalizing the user experience](personalize-user-experience.md)
 
 ### Blogs to visit
@@ -56,7 +55,7 @@ The following resources provide information about the Dynamics 365 for Operation
 ## Help system
 The following resources provide an overview of the Help system and explain how to view field descriptions.
 
--   [Getting started with Help](/dynamics365/operations/dev-itpro/system-administration/help-overview)
+-   [Getting started with Help](/dynamics365/operations/dev-itpro/sysadmin/help-overview)
 -   [Connecting the help system](/dynamics365/operations/dev-itpro/get-started/working-with-help)
 -   [How to view and export field descriptions](view-export-field-descriptions.md)
 

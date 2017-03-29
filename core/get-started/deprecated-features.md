@@ -18,7 +18,6 @@ ms.technology:
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: sericks007
-ms.suite: Released- Dynamics AX platform update 2
 # ms.tgt_pltfrm: 
 ms.custom: 21821
 ms.assetid: fc0261c9-6e02-4d80-bbc4-41bacb325fc4

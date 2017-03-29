@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update. Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using the "other" type service request in Lifecycle Services.
 
-This topic describes how to upgrade an older source database to the latest Dynamics 365 for Operations update. The source database can be from CTP 7 or later. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database-management\copy-database-from-azure-sql-to-sql-server.md). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
+This topic describes how to upgrade an older source database to the latest Dynamics 365 for Operations update. The source database can be from CTP 7 or later. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
 ## Before you begin
 1.  You must have a functional one-box demo or development environment that is already successfully running with the latest Dynamics 365 for Operations update.
@@ -222,7 +222,7 @@ This error can occur if you have enabled database logging on a kernel table such
 
 ### The batch process fails to start
 
-The batch process can fail if the environment has been left in [maintenance mode](../system-administration/maintenance-mode.md) following a change to configuration keys. To resolve, turn maintenance mode off and resume the runbook process.
+The batch process can fail if the environment has been left in [maintenance mode](../sysadmin/maintenance-mode.md) following a change to configuration keys. To resolve, turn maintenance mode off and resume the runbook process.
 
 ### The system fails to locate or generate a user GUID
 

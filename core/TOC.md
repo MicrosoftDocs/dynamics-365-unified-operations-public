@@ -30,7 +30,7 @@
 
 ## Find local features
 ### [Country/region-specific Help content](localizations/country_region.md)
-### [Tell Microsoft about new country/region regulatory features](/dynamics365/operations/dev-itpro/localization-solutions/submit-localization-alerts?toc=/dynamics365/operations/toc.json)
+### [Tell Microsoft about new country/region regulatory features](/dynamics365/operations/dev-itpro/lcs-solutions/submit-localization-alerts?toc=/dynamics365/operations/toc.json)
 
 # [Configure your organization](organization-administration/organization-administration-home-page.md)
 ## [Organizations and organizational hierarchies](organization-administration/organizations-organizational-hierarchies.md)
@@ -65,7 +65,7 @@
 ## [Configure workflow properties](organization-administration/configure-workflow-properties.md)
 
 # Technical topics for users
-## [Analytics home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
+## [Analytics home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/analytics/bi-reporting-home-page)
 ## [Data entities home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
 ## [Office integration home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
 ## [Mobile apps home page (Admin & developer guide)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)

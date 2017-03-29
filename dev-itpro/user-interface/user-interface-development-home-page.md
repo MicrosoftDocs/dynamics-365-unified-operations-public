@@ -46,7 +46,7 @@ The form metamodel continues to be used to define controls and application logic
 ## Tutorials
 -   [Building the rental charge type form](build-rental-charge-type-form.md)
 -   [Building the customer form](build-customer-form.md)
--   [Add contextual BI to forms](..\analytics-bi-reporting\add-contextual-bi-forms.md)
+-   [Add contextual BI to forms](..\analytics\add-contextual-bi-forms.md)
 
 ## Forms
 -   [Navigation concepts](page-navigation.md)

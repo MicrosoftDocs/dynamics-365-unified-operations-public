@@ -40,7 +40,7 @@ This topic describes the steps for deploying an upgrade to a non-production sand
 If you have any customizations or ISV solutions you must have already completed [code upgrade](upgrade-latest-update.md#scenario-2-upgrade-your-custom-code) and have your upgraded deployable packages ready in your asset library in Lifecycle Services. We strongly recommend that you perform the data upgrade on a development environment before upgrading in a sandbox environment. It is much faster to make corrections and re-run the process in a development environment, so you can reduce the overall time to upgrade by working in a development environment first.
 
 ## Export the database
-Follow the steps in this article to export the database to a bacpac file from the existing sandbox environment you wish to upgrade: [Copy a Dynamics 365 for Operations database to restore later](../database-management/copy-operations-database.md).
+Follow the steps in this article to export the database to a bacpac file from the existing sandbox environment you wish to upgrade: [Copy a Dynamics 365 for Operations database to restore later](../database/copy-operations-database.md).
 
 #### Additional steps for Management Reporter
 
@@ -56,7 +56,7 @@ In your Lifecycle Services implementation project:
 2.  In the main LCS Project page, in the Environments pane, the deleted environment will display the options to request a deployment – click and request the environment to be deployed with the new version and select your upgraded custom deployable packages from your asset library to be deployed to the environment.
 
 ## Import the database
-Follow the steps in this article to import the database from a bacpac file into the newly redeployed sandbox environment: [Copy a Dynamics 365 for Operations database to restore later](../database-management/copy-operations-database.md).
+Follow the steps in this article to import the database from a bacpac file into the newly redeployed sandbox environment: [Copy a Dynamics 365 for Operations database to restore later](../database/copy-operations-database.md).
 
 ## Run the data upgrade package
 Execute the data upgrade as described in this article: [Upgrade data in development, demo or sandbox environments.](upgrade-data-to-latest-update.md)
@@ -66,7 +66,7 @@ There may be additional components in use in your environment which require furt
 
 #### Additional steps for Management Reporter
 
-Reset the management reporter database by following the steps in this topic [Resetting the financial reporting data mart after restoring a database](../analytics-bi-reporting/reset-financial-reporting-datamart-after-restore.md) and then reimport the building block groups you exported in an earlier step.
+Reset the management reporter database by following the steps in this topic [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md) and then reimport the building block groups you exported in an earlier step.
 
 ## Limitations
 Existing document handling documents which are stored in Azure blob storage will be lost during this upgrade process. If you have custom code which utilises the X++ class FileUpload to place files in blob storage, these documents will also be lost.

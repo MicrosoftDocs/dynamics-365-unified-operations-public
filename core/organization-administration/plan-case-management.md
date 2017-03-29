@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure case security, processes, and categories
-description: This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics AX.
+description: This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
 ms.date: 2015-12-11 23 - 25 - 46
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure case security, processes, and categories
 
-This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics AX.
+This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics 365 for Operations.
 
 You can use the case functionality to resolve both issues that are external to your organization and internal issues.
 
