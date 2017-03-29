@@ -67,12 +67,11 @@ If you can’t make a deduction for a garnishment, the garnishment isn’t displ
 -   The worker is enrolled in a garnishment, but the rules for the garnishment type haven’t been added. When you enroll a worker in a garnishment, you must make sure that the garnishment type has been added to the **Garnishment and tax levy rules** page. State and local tax levies require a separate rule for each combination of garnishment type and state. For example, suppose a worker has three garnishments for student loans and two for state tax levies – one from Arkansas and one from Missouri. The **Garnishment and tax levy rules** page for that worker must have one rule for student loans, one rule for state tax levies from Arkansas, and one rule for state tax levies from Missouri.
 -   Settings on the garnishment enrollment or garnishment rule create a deduction of 0 (zero). A number of settings on the **Maintain benefits** page and the **Garnishment and tax levy rules** page can create a calculated deduction amount of 0 (zero) if they are entered incorrectly. For example, if a position for which the worker has no earnings is selected on the **Payroll details** FastTab, or if the alternative limit on the **Garnishment and tax levy rules** page is left blank, no amount is deducted for the affected garnishment.
 
-| **Note**                                                                                                                                                                                                 |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| If your organization charges an administrative fee for garnishments or tax levies, you might have to adjust the amount of the administrative fee for any garnishments that aren’t taken in a pay period. |
+> [!NOTE]
+> If your organization charges an administrative fee for garnishments or tax levies, you might have to adjust the amount of the administrative fee for any garnishments that aren’t taken in a pay period.
 
 ## Why isn’t the administrative fee for workers’ garnishments being deducted from their pay?
-To deduct administrative fees from a worker’s pay, you have to create an administrative fee benefit and enroll the worker in that benefit. For more information, see [Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md). 
+To deduct administrative fees from a worker’s pay, you have to create an administrative fee benefit and enroll the worker in that benefit. For more information, see [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md). 
 
 For support orders, the **Administrative fee** field on the **Maintain benefits** page is used to ensure that the amount of the deduction plus the amount of the fee does not exceed the legal maximum for support orders. For all other garnishment types, this field has no effect and is for information only.
 
@@ -84,7 +83,7 @@ Yes. For example, if 1,000.00 remains before a worker’s pay reaches 0 (zero), 
 See also
 --------
 
-[Garnishment and tax levy setup tasks](garnishment-tax-levy-set-up-tasks.md)
+[Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
-[Garnishment and tax levy enrollment tasks](garnishment-tax-levy-enrollment-tasks.md)
+[Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
 
