@@ -18,7 +18,7 @@
 ## [Data entities: Retail](data-entities-retail.md)
 ## [Data entities: Sales and marketing (Execution)](data-entities-sales-marketing.md)
 ## [Data entities: Sales and marketing (Pre-sales)](data-entities-sales-marketing-pre-sales.md)
-## [Data entities: System administration](data-entities-sysadmin.md)
+## [Data entities: System administration](data-entities-system-administration.md)
 ## [Data entities: Workflow](data-entities-workflow.md)
 
 # Working with entities
