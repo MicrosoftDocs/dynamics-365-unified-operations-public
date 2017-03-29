@@ -23,7 +23,6 @@
 
 # Working with entities
 ## [Best practices for importing vouchers using the General journal entity](tips-tricks-import-general-journal-entity.md)
-## [Upgrade bank journal composite entity](upgrade-bank-journal-composite-entity.md)
 
 # Creating data entities
 ## [Data entities and packages framework](data-entities-data-packages.md)
