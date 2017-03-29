@@ -2,7 +2,7 @@
 # required metadata
 
 title: LINQ provider for C#
-description: This article discusses the LINQ provider that is part of Microsoft Dynamics AX.
+description: This article discusses the LINQ provider that is part of Microsoft Dynamics 365 for Operations.
 author: pvillads
 manager: AnnBe
 ms.date: 2015-12-13 01 - 58 - 12
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # LINQ provider for C#
 
-This article discusses the LINQ provider that is part of Microsoft Dynamics AX.
+This article discusses the LINQ provider that is part of Microsoft Dynamics 365 for Operations.
 
 LINQ (Language Integrated Query) is a set of classes and methods that enable you to access data that is stored in a variety of places and formats. The LINQ framework is the standard for accessing data in managed languages. LINQ presents to programmers a unified and consistent API for data access from heterogeneous data sources, such as:
 
@@ -41,7 +41,7 @@ LINQ (Language Integrated Query) is a set of classes and methods that enable you
 -   Flickr pictures and XML
 -   SQL Server
 
-Dynamics AX includes a LINQ provider, which allows the user to access Dynamics AX business data by using .NET managed languages.
+Dynamics 365 for Operations includes a LINQ provider, which allows the user to access Dynamics 365 for Operations business data by using .NET managed languages.
 
 ## Two syntactical mechanisms for accessing LINQ
 There are two syntactical approaches for using LINQ, as described in the following table.
@@ -109,7 +109,7 @@ Next is another use of LINQ in C\#, except this time the more standard syntax is
         .OrderBy(primaryAndForeign => primaryAndForeign.P.AccountNum)
         .Select(primaryAndForeign => primaryAndForeign.P);
 
-There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C\# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C\# compiler doesn't handle the extensions provided by Dynamics AX.
+There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C\# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C\# compiler doesn't handle the extensions provided by Dynamics 365 for Operations.
 
 ### Limitation of the specialized LINQ syntax
 
@@ -164,7 +164,7 @@ The model that's provided by LINQ allows queries to be composed of subqueries. T
 
 ### Set based operations with LINQ
 
-LINQ queries can be applied for CRUD operations. But the model for updating, deleting, and inserting records isn't useful for the expression of set based operations. For a future release of Dynamics AX, we're working on extensions to add to the LINQ model that will translate into set based operations.
+LINQ queries can be applied for CRUD operations. But the model for updating, deleting, and inserting records isn't useful for the expression of set based operations. For a future release of Dynamics 365 for Operations, we're working on extensions to add to the LINQ model that will translate into set based operations.
 
 See also
 --------

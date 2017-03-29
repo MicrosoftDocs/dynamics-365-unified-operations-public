@@ -40,10 +40,6 @@ You can pay workers by check or by electronic payment. When you submit pay state
 The following table shows the prerequisites that must be in place before you start.
 
 <table>
-<colgroup>
-<col width="35%" />
-<col width="65%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Category</th>

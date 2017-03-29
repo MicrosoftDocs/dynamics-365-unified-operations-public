@@ -58,13 +58,13 @@ Overtime premiums can be processed only for work periods that are in the system.
 **Note:** If you've already generated work periods for this work cycle, the **First work period start date** value is the first calendar day after the last day of the last existing work period. You can’t change this value. There can’t be a gap of any number of days between the end date of one work period and the start date of the next work period. Therefore, you can delete only work periods that are at the end of the list of work periods.
 
 ## Assign work cycles to positions
-Typically, work cycles are assigned to non-exempt positions when the positions are set up for payroll. For more information, see [Worker and position payroll tasks](worker-position-payroll-tasks.md).
+Typically, work cycles are assigned to non-exempt positions when the positions are set up for payroll. For more information, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
 
 ## Next step
-The next step is to set up earning codes and earning code groups. For more information, see [Earning code and earning code group tasks](earning-code-group-tasks.md).  
+The next step is to set up earning codes and earning code groups. For more information, see [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md).  
 
 See also
 --------
 
-[Worker and position payroll tasks](worker-position-payroll-tasks.md)
+[Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
 

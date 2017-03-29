@@ -142,7 +142,7 @@ Before you proceed with additional data import, you must setup the Project manag
 
 **26.1.013 PA - Projects master**
 
-Forecasts models aren’t part of the Dynamics AX 7.0.0 release. During import, you can unmap the **EXTERNALREVISION mapping** field to import the Projects entity. If you’re using demo data to import, about 80 or more Project record will fail, because some of the inclusive projects dates are wrong.
+Forecasts models aren’t part of the Dynamics 365 for Operations 7.0.0 release. During import, you can unmap the **EXTERNALREVISION mapping** field to import the Projects entity. If you’re using demo data to import, about 80 or more Project record will fail, because some of the inclusive projects dates are wrong.
 
 | Suggested sequence | Entity name | Area     | Entity type | Dependency | Comments                                |
 |--------------------|-------------|----------|-------------|------------|-----------------------------------------|

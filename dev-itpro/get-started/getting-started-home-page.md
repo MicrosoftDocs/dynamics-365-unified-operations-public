@@ -40,11 +40,11 @@ The following resources provide an overview of how to work with your partner to 
 - [Microsoft FastTrack for Dynamics 365 overview](/core/get-started/fasttrack-dynamics-365-overview) 
 - [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md) 
 - [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](../lifecycle-services/lcs-works-lcs.md) 
-- [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](../deployment/csp-download-customersource.md)
+- [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
 
 ## User interface
 The following resources provide information about the Dynamics 365 for Operations user experience. 
--   [What's new in the Dynamics AX user experience (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
+-   [What's new in the Dynamics 365 for Operations user experience (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
 -   [Personalizing the user experience](/core/get-started/personalize-user-experience)
 -   [Configuring and filtering workspaces](/core/get-started/configure-filter-workspaces)
 -   [Navigation search](/core/get-started/navigation-search)

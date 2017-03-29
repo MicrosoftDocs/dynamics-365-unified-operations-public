@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extensible controls  -  Public JavaScript APIs
-description: This topic shows where to find documentation about the public JavaScript APIs that can be used by extensible controls in Microsoft Dynamics AX. 
+description: This topic shows where to find documentation about the public JavaScript APIs that can be used by extensible controls in Microsoft Dynamics 365 for Operations. 
 author: jasongre
 manager: AnnBe
 ms.date: 2016-08-15 21 - 40 - 14
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Extensible controls  -  Public JavaScript APIs
 
-This topic shows where to find documentation about the public JavaScript APIs that can be used by extensible controls in Microsoft Dynamics AX. 
+This topic shows where to find documentation about the public JavaScript APIs that can be used by extensible controls in Microsoft Dynamics 365 for Operations. 
 
 To minimize future breaks in extensible controls, an effort has been made to differentiate between the public and non-public JavaScript application programming interfaces (APIs) available to extensible controls. Control authors should ensure they only use public APIs, as **any non-public API may be removed or modified in a future release**. One of the planned modifications is to prefix the names of the non-public APIs with underscores to clearly denote access level. Documentation for the full set of public APIs can be found in [Extensible Controls - Public JavaScript APIs](https://mbs.microsoft.com/Files/public/CS/AX/DynamicsAX_JavaScript_API_Documentation_Update2_07_2016.pdf).
 

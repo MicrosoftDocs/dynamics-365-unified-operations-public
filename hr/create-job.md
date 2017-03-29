@@ -64,10 +64,6 @@ You maintain job functions by using the **Job functions** page. On the **Job f
 Job tasks describe the basic tasks that a worker who is in a position for a job must complete. The same job task can be added to multiple jobs, and to positions for the jobs that use those job tasks. The following table shows some examples of job tasks.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Job</th>

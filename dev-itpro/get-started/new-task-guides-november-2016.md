@@ -2,7 +2,7 @@
 # required metadata
 
 title: New or updated Task guides (November 2016)
-description: This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released.
+description: This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 author: josaw1
 manager: AnnBe
 ms.date: 2017-02-15 21 - 04 - 48
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # New or updated Task guides (November 2016)
 
-This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released.
+This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 
 The (November 2016 -- all languages) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations platform update 3, Microsoft Dynamics AX Platform update 2, the Dynamics AX May 2016 update, and the Microsoft Dynamics AX February 2016 release. For more information about these releases, see [What’s new or changed](whats-new-changed.md). Localized versions of the Task guides are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md). **Note:** An asterisk (**\***) next to the title of a Business process modeler (BPM) line indicates that the Task guide for that business process was created for Dynamics 365 for Operations November 2016 update and isn’t supported in earlier versions of Microsoft Dynamics AX.
 

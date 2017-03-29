@@ -41,7 +41,7 @@ Retail is dependent on Dynamics 365 for Operations. We recommend that you famili
 -   [MPOS architecture](retail-modern-pos-architecture.md)
 -   [Architecture of Microsoft Dynamics 365 for Operations - Retail Server](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
--   [Retail Channel Performance Power BI  content](/dynamics365/operations/dev-itpro/analytics-bi-reporting/retail-channel-performance-dashboard-power-bi-data.md)
+-   [Retail Channel Performance Power BI  content](/dynamics365/operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Retail deployment
 -   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)

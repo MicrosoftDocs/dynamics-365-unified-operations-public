@@ -50,5 +50,5 @@ The **Rebuild financial dimensions** option is set to **No** by default, as it i
 
 [Set up financial dimensions](http://ax.help.dynamics.com/en/wiki/set-up-financial-dimensions/)
 
-[Maintenance mode](..\system-administration\maintenance-mode.md)
+[Maintenance mode](..\sysadmin\maintenance-mode.md)
 
