@@ -15,14 +15,14 @@
 ## [Process and consume data packages](lcs-solutions/process-data-packages-lcs-solutions.md)
 ## [Back up a solution database](lcs-solutions/database-backup-lcs-solutions.md)
 
-## [Localization solutions]
+## [Localizations](/dynamics365/operations/localizations/country_region?toc=/dynamics365/operations/dev-itpro/toc.json)
 ### [Classify localization features](lcs-solutions/classify-localization-features.md)
 ### [Country/region context](lcs-solutions/apply-country-context.md)
 ### [Regulatory certifications](lcs-solutions/regulatory-certifications.md)
 ### [Regulatory updates](lcs-solutions/regulatory-watch-communication.md)
 ### [Separate localization models](lcs-solutions/separate-localization-models.md)
 ### [Submit a regulatory alert](lcs-solutions/submit-localization-alerts.md)
-### [Out of the box localizations](/dynamics365/operations/financials/localizations/country_region?toc=/dynamics365/operations/dev-itpro/toc.json)
+
 
 # [Analytics](analytics/TOC.md)
 
