@@ -39,7 +39,7 @@ If you have been asked to customize your environment, or if you are tasked with 
 ### IT Pro and developer resources
 Go to the [Microsoft Dynamics 365 for Operations for Developers and IT Pros](dev-itpro/dev-retail-home-page.md) page to browse the resources that are available for IT pros and developers who support Microsoft Dynamics 365 for Operations - Retail.
 
-## What's new and in development
+### What's new and in development
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
 
 ### Blogs
