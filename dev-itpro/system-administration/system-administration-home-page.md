@@ -72,7 +72,7 @@ Lifecycle Services
 -   [ISV licensing](../dev-tools/isv-licensing.md)
 
 ## Retail
--   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](/dev-itpro/dev-retail-home-page.md)
+-   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](/dynamics365/operations/dev-itpro/dev-retail-home-page.md)
 
 ## Mobile
 -   [Dynamics 365 for Operations mobile platform](../mobile-apps/mobile-platform.md)

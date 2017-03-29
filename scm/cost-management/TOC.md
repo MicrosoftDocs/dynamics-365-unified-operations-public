@@ -1,0 +1,43 @@
+# Power BI content pack
+## [Cost management content pack](/dynamics365/operations/dev-itpro/analytics-bi-reporting/cost-management-content-pack?toc=/dynamics365/operations/toc.json)
+# Predetermined cost
+## [Costing sheet](costing-sheets.md)
+## [Costing version](costing-versions.md)
+## [Simulate cost change by using a costing version for planned cost](simulate-cost-changes-costing-version-planned-costs.md)
+# Inventory costing
+## [Adjust on-hand inventory cost value](adjust-hand-inventory-cost-values.md)
+## [Cost object](cost-object.md)
+## [Cost entry](cost-entries.md)
+## [Cost group](cost-groups.md)
+## [FIFO with physical value and marking](fifo-physical-value-marking.md)
+## [Include physical value](include-physical-value.md)
+## [Inventory object value](physical-quantity.md)
+## [Inventory close](inventory-close.md)
+## [LIFO Date with physical value and marking](lifo-date-physical-value-marking.md)
+## [LIFO with physical value and marking](lifo-physical-value-marking.md)
+## [Moving average](moving-average.md)
+## [Physical and financial update](physical-financial-updates.md)
+## [Running average cost price](running-average-cost-price.md)
+## [Tracking running average cost per inventory dimension](track-running-average-cost-per-inventory-dimension.md)
+## [Weighted average date](weighted-average-date.md)
+## [Weighted average with physical value and marking](weighted-average-physical-value-marking.md)
+# Manufacturing costing
+## [BOM calculation group](bom-calculation-groups.md)
+## [Common sources of production variance](common-sources-of-production-variances.md)
+## [Cost category used in production routing](cost-categories-used-production-routings.md)
+## [Cost category used in Production control and Project management accounting](cost-categories-used-production-control-project-management-accounting.md)
+## [Production order cost analysis](production-order-cost-analysis.md)
+## [Production order cost estimation](production-order-cost-estimation.md)
+## [Production posting](production-posting.md)
+## [Set up a product that can be produced or procured](manufactured-items-treated-as-purchased-items.md)
+## [Total cost allocation method](methodology-total-cost-allocation.md)
+# Standard cost
+## [BOM calculations with standard cost](information-used-bom-calculations-standard-costs.md)
+## [Manage standard cost update](manage-standard-cost-updates.md)
+## [Prerequisite for a standard cost conversion](prerequisites-standard-cost-conversion.md)
+## [Standard cost conversion overview](standard-cost-conversion-overview.md)
+## [Update standard cost in a manufacturing environment](update-standard-costs-manufacturing-environment.md)
+## [Update standard cost for a new manufactured item](update-standard-costs-new-manufactured-item.md)
+## [Update standard cost in a non-manufacturing environment](update-standard-costs-non-manufacturing-environment.md)
+
+

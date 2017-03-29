@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create a copy of a Dynamics 365 for Operations database to restore later
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 
 ---
 
-# Retain a copy of a Dynamics 365 for Operations database to restore later
+# Create a copy of a Dynamics 365 for Operations database to restore later
 
 This topic provides instructions for exporting a Microsoft Dynamics 365 for Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
 

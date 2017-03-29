@@ -43,7 +43,15 @@ You should carefully consider all the settings on the **Production order defaul
 -   **Quantity validation** – Order defaults for validating start and feedback quantities on production orders.
 
 ## Types of production jobs
-On the **Operations** tab, you select the types of production jobs that require registration on the **Job registration** page. Typically, workers make registrations on setup jobs and process jobs. However, if job scheduling is applied, you can select other job types, such as transport jobs, that workers must also make registrations on when a production order is processed. **Important:** Make sure that all relevant job types are selected. Otherwise, jobs might not be available for registration on the **Job registration** page. Align your selections with the selections that are made in the **Job management** column on the **Route groups** page. If **Job management** is selected on the route group, the job type will be reported as finished on the production order. This reporting occurs when the job is reported as finished in Manufacturing execution. When all job types that **Job management** is selected for have been reported as finished on an operation, Manufacturing execution will also report the operation as finished. **Note:** Some job types can be reported manually through production journals. In this case, select **Job management** for the job type, but don't select the job type for registration on the **Operations** tab on the **Production order defaults** page.
+On the **Operations** tab, you select the types of production jobs that require registration on the **Job registration** page. 
+
+Typically, workers make registrations on setup jobs and process jobs. However, if job scheduling is applied, you can select other job types, such as transport jobs, that workers must also make registrations on when a production order is processed. 
+
+**Important:** Make sure that all relevant job types are selected. Otherwise, jobs might not be available for registration on the **Job registration** page. Align your selections with the selections that are made in the **Job management** column on the **Route groups** page. 
+
+If **Job management** is selected on the route group, the job type will be reported as finished on the production order. This reporting occurs when the job is reported as finished in Manufacturing execution. When all job types that **Job management** is selected for have been reported as finished on an operation, Manufacturing execution will also report the operation as finished. 
+
+**Note:** Some job types can be reported manually through production journals. In this case, select **Job management** for the job type, but don't select the job type for registration on the **Operations** tab on the **Production order defaults** page.
 
 ## BOM consumption and picking list journals
 Materials can be set up so that they are consumed either automatically or manually during production. Automatic consumption is controlled by the flushing principle that is set up on the bill of materials (BOM) lines, and by the setting of the **Automatic BOM consumption** field in the production order defaults. Automatic consumption can be set up so that it occurs when a production order is started or reported as finished. Alternatively, it can occur on the job level when a job is started or completed.

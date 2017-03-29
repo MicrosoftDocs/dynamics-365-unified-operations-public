@@ -72,5 +72,5 @@ The following table provides information about how this configuration key relate
 See also
 --------
 
-[Planning for public sector functionality](https://ax.help.dynamics.com/en/wiki/Planning-for-public-sector-functionality)
+[Planning for public sector functionality](plan-public-sector-functionality.md)
 

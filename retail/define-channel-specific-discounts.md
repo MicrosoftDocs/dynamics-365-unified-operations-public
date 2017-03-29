@@ -65,5 +65,5 @@ The following example illustrates the tasks involved in setting up a channel d
 See also
 --------
 
-[Price adjustments and discounts](http://axhelp.https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=74921)
+[Price adjustments and discounts](price-adjustments-discounts.md)
 

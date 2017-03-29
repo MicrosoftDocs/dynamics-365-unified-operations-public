@@ -76,7 +76,7 @@
 
 # [Retail](/dynamics365/operations/retail/index)
 
-# [Supply chain management](/dynamics365/operations/manufacturing/index)
+# [Supply chain management](/dynamics365/operations/scm/index)
 
 # [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
 
