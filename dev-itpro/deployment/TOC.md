@@ -5,6 +5,6 @@
 # Deploy custom code
 ## [Create a deployable package](create-apply-deployable-package.md)
 ## [Apply a deployable package](apply-deployable-package-system.md)
-## [Manually apply a deployable package](manual-deployable-package.md)
+## [Install a deployable package](install-deployable-package.md)
 
 # [Cloud Service Provider downloads and Dynamics 365 for Operations 2012](csp-download-customersource.md)
