@@ -46,7 +46,7 @@ The French public sector features are available when the following conditions ar
 Additional setup steps for specific features are covered in the article for each feature.
 
 ## French public sector topics
--   [Mandats de paiement](emea-fra-mandats-de-paiement-public-sector.md) The director uses the mandat de paiement to notify the accountant that the organization is obligated to pay a specific amount to another entity, and to authorize the accountant to pay that amount.
+-   [Mandats de paiement](emea-fra-mandats-de-paiement.md) The director uses the mandat de paiement to notify the accountant that the organization is obligated to pay a specific amount to another entity, and to authorize the accountant to pay that amount.
 -   [Vendor invoice payment holds](emea-fra-vendor-invoice-payment-holds-public-sector.md) The standard processes that are related to payment holds for vendor invoices are augmented for French entities in the public sector.
 -   [Titres de recette](emea-fra-titres-de-recette-public-sector.md) The director uses the titre de recette to notify the accountant that the organization is entitled to collect a specific amount from another entity, and to authorize the accountant to collect that amount.
 -   [Commitments](emea-fra-commitments-public-sector.md) Commitments are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle.
