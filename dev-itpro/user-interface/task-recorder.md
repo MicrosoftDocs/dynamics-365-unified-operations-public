@@ -3,7 +3,7 @@
 
 title: Task Recorder in Dynamics 365 for Operations | Microsoft Docs
 description: This article describes the how to use Task Recorder to record Microsoft Dynamics 365 for Operations client functions.
-author: RobinARH
+author: josaw1
 manager: AnnBe
 ms.date: 2015-12-11 23:52:32
 ms.topic: article
@@ -17,14 +17,14 @@ keywords: SysTaskRecorderPane
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: 41
+ms.reviewer: josaw1
 ms.suite: Released- Dynamics AX 7.0.0
 # ms.tgt_pltfrm: 
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
 ms.region: Global
 # ms.industry: 
-ms.author: shshabazz
+ms.author: jasongre
 
 ---
 
