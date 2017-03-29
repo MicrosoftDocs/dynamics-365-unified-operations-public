@@ -92,7 +92,7 @@ You can find these hotfixes by browsing the check-in history of these models Mic
     -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
     -   If you're upgrading a runtime environment, such as a Tier-2 sandbox or other environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
-4.  Follow the standard instructions for installing a deployable package. See [Install a deployable package in Microsoft Dynamics AX](../deployment/install-deployable-package.md).
+4.  Follow the standard instructions for installing a deployable package. See [Apply a deployable package](../deployment/apply-deployable-package-system.md).
 5.  If you're working in a development environment, rebuild your application’s code.
 
 **Important:** Do not apply this update in a runtime environment unless you have validated it in a development environment first.
