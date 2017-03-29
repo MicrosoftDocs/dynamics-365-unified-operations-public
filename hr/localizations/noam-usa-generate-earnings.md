@@ -38,7 +38,7 @@ You can automatically generate earnings for salaried positions, for positions th
 
 When you automatically generate earnings, we recommend that you use the batch processing mode to improve performance. You must manually enter some earnings, such as sick time and paid time off. You can enter these earnings either before or after you use the automated process to generate the standard earning lines. If you use the automated process first, you must manually add and remove earning lines until the earnings statement is correct. 
 
-**Note:** This topic describes how to generate earnings for a worker pay period for the first time. If you've already generated earnings, and you want to change them or take additional action on them, see [Work with existing earnings](existing-earnings.md). 
+**Note:** This topic describes how to generate earnings for a worker pay period for the first time. If you've already generated earnings, and you want to change them or take additional action on them, see [Work with existing earnings](noam-usa-existing-earnings.md). 
 
 ## Automatically generate earnings
 Earnings that are automatically generated use settings for the position to identify the pay cycle, legal entity, and whether the earnings should be generated as a salary amount or based on a schedule. During this process, recurring earnings that are assigned to a specific worker are automatically generated if they are due in the specified pay period and pay cycle. 
@@ -161,18 +161,18 @@ You can also calculate retroactive pay for salaried workers. The salary-based ea
 5.  Verify that the batch job was completed correctly. (Click **Common** &gt; **Inquiries** &gt; **Batch Jobs** &gt; **My batch jobs**. On the **Batch job** tab, click **Log**, and then inspect the log for any errors that occurred.)
 
 ## Next step
-After you generate earnings, you must release them before you can create pay statements. You might also have to change the earnings or put certain earnings on hold. For more information, see [Work with existing earnings](existing-earnings.md).
+After you generate earnings, you must release them before you can create pay statements. You might also have to change the earnings or put certain earnings on hold. For more information, see [Work with existing earnings](noam-usa-existing-earnings.md).
 
 See also
 --------
 
-[Work with existing earnings](existing-earnings.md)
+[Work with existing earnings](noam-usa-existing-earnings.md)
 
-[Work with pay statements](pay-statements.md)
+[Work with pay statements](noam-usa-pay-statements.md)
 
-[Issue worker payments](issue-worker-payments.md)
+[Issue worker payments](noam-usa-issue-worker-payments.md)
 
-[Post payroll and generate vendor invoices](post-payroll-generate-vendor-invoices.md)
+[Post payroll and generate vendor invoices](noam-usa-post-payroll-generate-vendor-invoices.md)
 
-[Work with existing payroll payments](existing-payroll-payments.md)
+[Work with existing payroll payments](noam-usa-existing-payroll-payments.md)
 
