@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User
+audience: Application User, Developer
 # ms.devlang: 
 # ms.reviewer: 101
 ms.search.scope: Operations, Core
