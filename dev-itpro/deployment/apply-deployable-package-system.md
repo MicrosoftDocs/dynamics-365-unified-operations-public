@@ -42,7 +42,7 @@ Package deployment using automated flows in LCS are supported on the following t
 -   **Implementation Project**: All environments (Dev, Test, Build, Demo, Sandbox, and Production) are now supported. Automated package application is self-serve on all environments except Production. For Production environments, customers must submit a request through LCS to the Service Engineering team to apply packages.
 -   **Partner Projects**: Demo- and single-box Dev/Test environments are supported.
 
-Manual package deployment must be used for the following topologies. For information about manual package deployment, see [Install a deployable package in Microsoft Dynamics 365 for Operations](install-deployable-package.md).
+Manual package deployment must be used for the following topologies. For information about manual package deployment, see [Manually create a deployable package](manual-deployable-package.md).
 
 -   Downloadable VHD
 -   Partner Projects: Multi-box Dev/Test topology deployments.
