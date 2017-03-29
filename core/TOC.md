@@ -28,9 +28,7 @@
 #### [Task Recorder](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
 #### [Create documentation or training](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
 
-## Find local features
-### [Country/region-specific Help content](localizations/country_region.md)
-### [Tell Microsoft about new country/region regulatory features](/dynamics365/operations/dev-itpro/lcs-solutions/submit-localization-alerts?toc=/dynamics365/operations/toc.json)
+## [Country/region-specific Help content](localizations/country_region.md)
 
 # [Configure your organization](organization-administration/organization-administration-home-page.md)
 ## [Organizations and organizational hierarchies](organization-administration/organizations-organizational-hierarchies.md)
