@@ -266,13 +266,13 @@ The VAT statement for each country must meet the requirements of the country’s
 |----------------|---------------------------------------------------------------------------------|
 | Austria        |  [VAT statement details for Austria](emea-aut-vat-statement-details.md)         |
 | Belgium        |                                                                                 |
-| Czech Republic |  [VAT statement details for Czech Republic](emea-cz-vat-statement-details.md)   |
-| Estonia        |  [VAT statement details for Estonia](emea-est-vat-statement-details-estonia.md) |
+| Czech Republic |  [VAT statement details for Czech Republic](emea-cze-vat-statement-details.md)   |
+| Estonia        |  [VAT statement details for Estonia](emea-est-vat-statement-details.md) |
 | Finland        |                                                                                 |
 | Germany        |                                                                                 |
-| Italy          | [VAT statement details for Italy](emea-ita-vat-statement-details.md)            |
+| Italy          | [VAT statement details for Italy](emea-ita-vat-statements-details.md)            |
 | Latvia         | [VAT statement details for Latvia](emea-lva-vat-statement-details.md)           |
-| Lithuania      | [VAT statement details for Lithuania](emea-lt-vat-statement-details.md)         |
+| Lithuania      | [VAT statement details for Lithuania](emea-ltu-vat-statement-details.md)         |
 | Netherlands    |                                                                                 |
 | Sweden         |                                                                                 |
 
