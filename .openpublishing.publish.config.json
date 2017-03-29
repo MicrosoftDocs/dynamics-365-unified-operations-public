@@ -7,6 +7,7 @@
       "build_source_folder": "core",
       "build_output_subfolder": "d365OpsCore",
       "locale": "en-us",
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -22,6 +23,7 @@
       "build_source_folder": "dev-itpro",
       "build_output_subfolder": "d365OpsDevITPro",
       "locale": "en-us",
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -37,6 +39,7 @@
       "build_source_folder": "financials",
       "build_output_subfolder": "d365OpsFinancials",
       "locale": "en-us",
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -52,6 +55,7 @@
       "build_source_folder": "hr",
       "build_output_subfolder": "d365OpsHR",
       "locale": "en-us",
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -67,6 +71,23 @@
       "build_source_folder": "retail",
       "build_output_subfolder": "d365OpsRetail",
       "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "d365OpsSCM",
+      "build_source_folder": "SCM",
+      "build_output_subfolder": "d365OpsSCM",
+      "locale": "en-us",
+      "monikers": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
