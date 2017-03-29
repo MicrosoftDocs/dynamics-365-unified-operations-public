@@ -110,6 +110,7 @@
 ### [VAT statement details](emea-lva-vat-statement-details.md)
 ## Lithuania
 ### [Fixed asset repair statement](emea-ltu-fixed-asset-repair-statement.md)
+### [VAT statement details](emea-ltu-vat-statement-details.md)
 ## Norway
 ### [Nets import format](emea-nor-nets-import-format.md)
 ## Poland
