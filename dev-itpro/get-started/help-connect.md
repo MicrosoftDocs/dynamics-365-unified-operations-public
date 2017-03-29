@@ -38,7 +38,7 @@ Help architecture
 -----------------
 
 The following illustration shows the parts of the Dynamics 365 for Operations Help system. The in-product Help system pulls articles from the Dynamics 365 for Operations site on https://docs.microsoft.com, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS). 
-**Note:** The features listed in the diagram with an asterisk (\*) are on our roadmap, but are not available yet. [![Help architecture](./media/help-architecture-1024x800.png)](./media/help-architecture.png)
+**Note:** The features listed in the diagram with an asterisk (\*) are planned, but are not available yet. [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
 
 ## Connecting the Help system
 Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation. [![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) On the **System parameters** page, follow these steps:
