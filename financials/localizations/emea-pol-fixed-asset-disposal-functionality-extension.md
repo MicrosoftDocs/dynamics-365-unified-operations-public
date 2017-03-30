@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic provides information about fixed asset disposal functionality for users in legal entities in Poland. 
 
-Fixed assets can be sold using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information about fixed asset disposal, see [Fixed asset disposal posting accounts](..fixed-assets/fixed-asset-disposal-posting-accounts). For users in legal entities in Poland, the fixed assets disposal functionality extension includes:
+Fixed assets can be sold using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information about fixed asset disposal, see [Fixed asset disposal posting accounts](..fixed-assets/fixed-asset-disposal-posting-accounts.md). For users in legal entities in Poland, the fixed assets disposal functionality extension includes:
 
 -   A template for asset disposal on the **Fixed asset posting profiles** page.
 -   Two additional parameters on the **Permission to sell fixed asset** page. A **Check whether asset can be sold** check box and a **Permission to sell fixed asset** check box on the **Reference and notes** FastTab of a fixed asset. If the **Check whether asset can be sold** check box is selected, only assets marked as **Permission to sell fixed asset** can be sold.
