@@ -14,4 +14,4 @@
         topicHref: /dynamics365/operations/organization-administration/organization-administration-home-page
       - name: Localizations
         tocHref: /dynamics365/operations/localizations/
-        topicHref: /dynamics365/operations/localizations/country_region
+        topicHref: country_region
