@@ -50,7 +50,12 @@ The Cost accounting module allows you to do the following:
 -   Create statements that can be viewed in the workspace.
 -   Create reports by using Excel.
 
-## Cost accounting daily tasks
+## Get started
+
+The Hands-on labs for Cost accounting provide the basic steps to configure Microsoft Dynamics 365 for Operations – Cost Accounting in order to make the actual cost analysis. It also provides a series of procedures that you can complete in the order which they appear.
+
+-   [Get started with Cost accounting](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (white paper and requires a CustomerSource account)
+
 To understand how you can use Cost accounting for your daily work, you must understand these concepts.
 
 -   [Key terms in Cost accounting](terms-cost-accounting.md)
@@ -60,12 +65,15 @@ To understand how you can use Cost accounting for your daily work, you must und
 -   [Cost object dimensions](cost-objects.md)
 -   [Create cost objects](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (Task guide)
 
-## Get started
-The "Get started with Cost Accounting" white paper provides the basic steps to configure Microsoft Dynamics 365 for Operations - Cost Accounting in order to make the actual cost analysis. It also provides a series of procedures that you can complete in the order which they appear.
+## Cost control mobile workspace
+With the Cost control mobile workspace, cost center managers can see the cost center performance anytime and anywhere.
 
--   [Get started with Cost accounting](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc) (white paper and requires a CustomerSource account)
+-   [Cost control mobile workspace](cost-controlling-mobile-workspace.md)
 
+## Cost accounting analysis Power BI content
+The Cost accounting analysis Microsoft Power BI content is intended for cost controllers or anyone who is responsible for performing cost control of an organization. It includes the key metrics, such as cost, magnitude, and cost rate by actual cost, budget cost, and flexible budget cost. It uses transaction data from Cost accounting in Microsoft Dynamics 365 for Operations and provides an aggregate view of costs for the whole organization in one reporting currency. Managers can filter the data by cost objects to perform cost control of their organizational units, even if the organization can have several legal entities.
 
-
+-   [Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
+-   [Set up security for the Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
 
 
