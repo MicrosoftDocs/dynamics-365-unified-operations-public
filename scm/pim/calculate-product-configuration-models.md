@@ -39,7 +39,7 @@ Calculations can be used for arithmetic or logical operations. They complement e
 ## What is a calculation?
 A calculation is an element that you can use in a product configuration model. Calculations complement constraints by letting you use decimal numbers to calculate values when you configure a product. Additionally, calculations have a larger set of available operators than constraints have.  
 
-Like a constraint, a calculation is associated with a specific component in a product configuration model, and can’t be reused by or shared with another component. One important difference between calculations and constraints is that calculations are imperative (unidirectional), whereas constraints are declarative (bi-directional). For more information about constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints.md).  
+Like a constraint, a calculation is associated with a specific component in a product configuration model, and can’t be reused by or shared with another component. One important difference between calculations and constraints is that calculations are imperative (unidirectional), whereas constraints are declarative (bi-directional). For more information about constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints-product-configuration-models.md).  
 
 A calculation consists of a target attribute and a calculation expression.
 
