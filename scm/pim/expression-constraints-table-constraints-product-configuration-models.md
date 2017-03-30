@@ -44,7 +44,7 @@ Table constraints list the combinations of values that are allowed for attribute
 
 ### Example of a table constraint
 
-This example shows how you can limit the configuration of a speaker to specific cabinet finishes and fronts. The first table shows the cabinet finishes and fronts that are generally available for configuration. The values are defined for the **Cabinet finish **and **Front grill** attribute types.
+This example shows how you can limit the configuration of a speaker to specific cabinet finishes and fronts. The first table shows the cabinet finishes and fronts that are generally available for configuration. The values are defined for the **Cabinet finish** and **Front grill** attribute types.
 
 | Attribute type | Values                      |
 |----------------|-----------------------------|
