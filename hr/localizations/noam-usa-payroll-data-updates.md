@@ -106,7 +106,7 @@ To change the payroll settings after that is done, follow these steps:
 When a worker has a qualifying life event that allows for a change of benefits, other payroll data for that worker might also change because of the event.
 
 To change the benefits, follow these steps:
-1.  Go to [Define and manage a benefit program](..manage-benefit-program.md) and complete the following:
+1.  Go to [Define and manage a benefit program](../manage-benefit-program.md) and complete the following:
     -   Create an eligibility event.
     -   Process eligibility for benefits.
     -   Enroll workers in benefits.
