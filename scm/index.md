@@ -23,4 +23,4 @@ For example, you can read the recent posts about:
 * The <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Operations - BOM Calculation by Using a Costing Sheet</a> white paper describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. You can do exercises in the Appendix for learning purposes, and use the knowledge that you’ve gained from reading this document to do BOM calculation analysis.
 
 ## eLearning courses
-For information about Microsoft Dynamics 365 for Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal. (requires CustomerSource account)
+For information about Microsoft Dynamics 365 for Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 
