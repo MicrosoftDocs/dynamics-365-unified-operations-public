@@ -39,6 +39,7 @@ The development approach for Dynamics 365 for Operations focuses more on extendi
 -   [Customize model elements using extensions (tutorial)](customize-model-elements-extensions.md)
 -   [Customization: overlayering and extensions](customization-overlayering-extensions.md)
 -   [Class extensions](class-extensions.md)
+-   [Customize App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md)
 -   [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)
 
 ## Blog posts
