@@ -71,7 +71,7 @@ To achieve optimal outbound processes, you should evaluate whether to use fixed
 
 ### Location setup wizard
 
-To quickly create the locations within a warehouse, you can use the **Location setup **wizard. As part of this process, you can easily maintain the format of the location names.
+To quickly create the locations within a warehouse, you can use the **Location setup** wizard. As part of this process, you can easily maintain the format of the location names.
 
 ## Warehouse processes
 As part of the configuration of the warehouse, it's important that you enable warehouse processes according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
