@@ -73,7 +73,7 @@ With the Cost control mobile workspace, cost center managers can see the cost ce
 ## Cost accounting analysis Power BI content
 The Cost accounting analysis Microsoft Power BI content is intended for cost controllers or anyone who is responsible for performing cost control of an organization. It includes the key metrics, such as cost, magnitude, and cost rate by actual cost, budget cost, and flexible budget cost. It uses transaction data from Cost accounting in Microsoft Dynamics 365 for Operations and provides an aggregate view of costs for the whole organization in one reporting currency. Managers can filter the data by cost objects to perform cost control of their organizational units, even if the organization can have several legal entities.
 
--   [Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
--   [Set up security for the Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
+-   [Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack.md)
+-   [Set up security for the Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
 
 
