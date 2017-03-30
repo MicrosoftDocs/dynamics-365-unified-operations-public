@@ -56,7 +56,7 @@ For users in legal entities in Czech Republic, there are additional depreciatio
 -   Regular CZ
 -   Accelerated CZ
 
-For more information about depreciation methods, see [Fixed asset depreciation](../fixed-assets/fixed-asset-depreciation).
+For more information about depreciation methods, see [Fixed asset depreciation](../fixed-assets/fixed-asset-depreciation.md).
 
 ### Regular CZ depreciation method
 
