@@ -80,7 +80,12 @@ As part of the configuration of the warehouse, it's important that you enable wa
 
 Wave templates help enable the outbound "Release to warehouse" process. As soon as order lines are released (either directly from source documents, via batch job processes, or via loads that have already been created), the wave template functionality is used. 
 
-You can create three types of wave templates: **Shipping**, **Production order**, and **Kanban**. Parameters are used to define how far the system should automatically go in the outbound work processing. A wave template is selected based on the wave template sequence and criteria that are specified in the template. If a template is listed at the top of the sequence, the criteria in that template are checked first. If the criteria can be met, the wave template is processed. Otherwise, the criteria in the next template are checked, and so on. Therefore, it's a good idea to put the template that has the most specific criteria at the top of the wave template sequence list, so that it's processed first. For example, you want to process all the work for a specific carrier today and temporarily delay processing of the work for other carriers. In this case, the wave template that selects work for that carrier should be listed higher in the sequence than other templates. Otherwise, the work for other carriers might be processed before the work for that carrier is completed. 
+You can create three types of wave templates: 
+-   **Shipping**
+-   **Production order**
+-   **Kanban**. 
+
+Parameters are used to define how far the system should automatically go in the outbound work processing. A wave template is selected based on the wave template sequence and criteria that are specified in the template. If a template is listed at the top of the sequence, the criteria in that template are checked first. If the criteria can be met, the wave template is processed. Otherwise, the criteria in the next template are checked, and so on. Therefore, it's a good idea to put the template that has the most specific criteria at the top of the wave template sequence list, so that it's processed first. For example, you want to process all the work for a specific carrier today and temporarily delay processing of the work for other carriers. In this case, the wave template that selects work for that carrier should be listed higher in the sequence than other templates. Otherwise, the work for other carriers might be processed before the work for that carrier is completed. 
 
 You must specify the wave process methods in each wave template. The methods that are available vary, depending on the wave template type.
 
