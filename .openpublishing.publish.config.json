@@ -84,7 +84,7 @@
     },
     {
       "docset_name": "d365OpsSCM",
-      "build_source_folder": "SCM",
+      "build_source_folder": "scm",
       "build_output_subfolder": "d365OpsSCM",
       "locale": "en-us",
       "monikers": [],
