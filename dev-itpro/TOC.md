@@ -29,7 +29,7 @@
 # [Data entities](data-entities/TOC.md)
 
 # Mobile apps
-## [Install and configure the warehousing app ](/dynamics365/operations/scm/warehouse/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Install and configure the warehousing app ](/dynamics365/operations/scm/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
 ## Mobile workspace X++ APIs - NEED TO FIND THIS TOPIC IN GITHUB
 

@@ -112,5 +112,5 @@ To make it easier and quicker to define the actions that are associated with eac
 See also
 --------
 
-[Configure locations in a WMS-enabled warehouse (task guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+[Configure locations in a WMS-enabled warehouse (task guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
 
