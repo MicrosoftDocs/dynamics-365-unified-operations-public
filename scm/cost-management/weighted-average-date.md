@@ -32,7 +32,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Weighted average date
 
-Weighted average date is an inventory model that is based on the weighted average principle. For the weighted average principle, issues from inventory are valued at the average value of the items that are received into inventory for each day in the inventory closing period. When you run an inventory closing by using weighted average date, all daily receipts are settled against a virtual issue. This virtual issue holds the total received quantity and value for that day. The virtual issue has a corresponding virtual receipt that the issues will be settled against. Therefore, all issues receive the same average cost. The virtual issue and virtual receipt can be considered a virtual transfer that is known as the *weighted average inventory closing transfer*. If only one receipt has occurred on or before the date, you don't have to value the average. Because all issues are settled from that receipt, the virtual transfer won't be created. Likewise, if only issues occur on the date, there are no receipts to value the average from, and the virtual transfer won't be created. When you use weighted average date, you can mark inventory transactions so that a specific item receipt is settled against a specific issue. In this case, you don't use the weighted average date rule. We recommend a monthly inventory closing when you use the weighted average date inventory model. The following formula is used to calculate the weighted average date costing method: Weighted average = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) During inventory close, the calculation is performed every day through the closing period, as shown in the following illustration. 
+Weighted average date is an inventory model that is based on the weighted average principle. For the weighted average principle, issues from inventory are valued at the average value of the items that are received into inventory for each day in the inventory closing period. When you run an inventory closing by using weighted average date, all daily receipts are settled against a virtual issue. This virtual issue holds the total received quantity and value for that day. The virtual issue has a corresponding virtual receipt that the issues will be settled against. Therefore, all issues receive the same average cost. The virtual issue and virtual receipt can be considered a virtual transfer that is known as the *weighted average inventory closing transfer*. 
+
+If only one receipt has occurred on or before the date, you don't have to value the average. Because all issues are settled from that receipt, the virtual transfer won't be created. Likewise, if only issues occur on the date, there are no receipts to value the average from, and the virtual transfer won't be created. When you use weighted average date, you can mark inventory transactions so that a specific item receipt is settled against a specific issue. In this case, you don't use the weighted average date rule. We recommend a monthly inventory closing when you use the weighted average date inventory model. 
+
+The following formula is used to calculate the weighted average date costing method: 
+
+Weighted average = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+
+During inventory close, the calculation is performed every day through the closing period, as shown in the following illustration. 
 
 ![Weighted average date daily calculation model](./media/weightedaveragedatedailycalculationmodel.gif) 
 
@@ -57,7 +65,9 @@ The current version uses the same direct settlement principle that was used for 
 -   One receipt and one or several issues have been posted in the period.
 -   Only issues have been posted in the period, and the inventory contains on-hand items from a previous closing.
 
-In the following scenario, a financially updated receipt and issue have been posted. During inventory close, the system settles the receipt directly against the issue, and no adjustment to the cost price is required on issue. The following illustration shows these transactions:
+In the following scenario, a financially updated receipt and issue have been posted. During inventory close, the system settles the receipt directly against the issue, and no adjustment to the cost price is required on issue. 
+
+The following illustration shows these transactions:
 
 -   1a. Inventory physical receipt is updated for a quantity of 5 at a cost of USD 10.00 each.
 -   1b. Inventory financial receipt is updated for a quantity of 5 at a cost of USD 10.00 each.
@@ -81,7 +91,9 @@ In the following scenario, a financially updated receipt and issue have been pos
 -   Settlements that are performed by inventory close are represented by dashed red arrows that go diagonally from a receipt to an issue.
 
 ## Weighted average date summarized settlement when the Include physical value option isn't used
-Weighted average is based on the principle that all receipts in a closing period are summarized into a new inventory transfer transaction. This transaction is known as w*eighted average inventory closing*. All the receipts for the day are settled against the issue of the newly created inventory transfer transaction. All issues for the day are settled against the receipt of the new inventory transfer transaction. If the on-hand inventory is positive after the inventory close, the on-hand inventory and the value of the inventory are summarized on the new inventory transfer transaction receipt. If the on-hand inventory is negative after the inventory close, the on-hand inventory and the value of the inventory are the sum of individual issues that haven't been fully settled. In the following scenario, several financially updated receipts and issues have been posted during the period. During inventory close, the system evaluates every day to determine how each day should be treated by closing. 
+Weighted average is based on the principle that all receipts in a closing period are summarized into a new inventory transfer transaction. This transaction is known as w*eighted average inventory closing*. All the receipts for the day are settled against the issue of the newly created inventory transfer transaction. All issues for the day are settled against the receipt of the new inventory transfer transaction. If the on-hand inventory is positive after the inventory close, the on-hand inventory and the value of the inventory are summarized on the new inventory transfer transaction receipt. If the on-hand inventory is negative after the inventory close, the on-hand inventory and the value of the inventory are the sum of individual issues that haven't been fully settled. 
+
+In the following scenario, several financially updated receipts and issues have been posted during the period. During inventory close, the system evaluates every day to determine how each day should be treated by closing. 
 
 The following illustration shows these transactions: 
 
