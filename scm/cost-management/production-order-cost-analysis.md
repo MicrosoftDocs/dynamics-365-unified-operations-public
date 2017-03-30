@@ -44,7 +44,11 @@ The variances reflect a comparison of the reported production activities and the
 -   Production price variance
 -   Production substitution variance
 
-The following diagram shows the four variances that account for the difference between a production order's actual costs and the calculated costs within the item's cost record when the production order is ended. ![Variances that account for differences in a completed production order](./media/control.jpg) You can analyze the production variances by using the **Variance** page or the **Production variance** report. Use the display options to view detailed variances by item and operations resource, or by cost group. The policy for cost breakdown in the inventory parameters determines whether the variances are tracked by cost group. You can also use the **single**, **multi**, and **total** display options to view summarized variances. The information about detailed variances can help you understand the source of each variance. To predict variances before you end a production order, analyze the detailed information that is provided on the **Cost estimates and costings** report.
+The following diagram shows the four variances that account for the difference between a production order's actual costs and the calculated costs within the item's cost record when the production order is ended. 
+
+![Variances that account for differences in a completed production order](./media/control.jpg) 
+
+You can analyze the production variances by using the **Variance** page or the **Production variance** report. Use the display options to view detailed variances by item and operations resource, or by cost group. The policy for cost breakdown in the inventory parameters determines whether the variances are tracked by cost group. You can also use the **single**, **multi**, and **total** display options to view summarized variances. The information about detailed variances can help you understand the source of each variance. To predict variances before you end a production order, analyze the detailed information that is provided on the **Cost estimates and costings** report.
 
 ## Cost analysis for current production orders
 Separate reports provide information about each type of transaction. Use these reports to analyze costs for reported production activities. Information is displayed only for current production orders that have a status of **Started** or **Reported as finished**.
