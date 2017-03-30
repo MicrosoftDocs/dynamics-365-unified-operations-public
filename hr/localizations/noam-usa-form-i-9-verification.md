@@ -54,5 +54,5 @@ You can use the **Renew Form I-9 alarm list** report to identify employees whose
 See also
 --------
 
-[Organizing your workforce using departments, jobs, and positions](departments-jobs-positions.md)
+[Organizing your workforce using departments, jobs, and positions](..departments-jobs-positions.md)
 
