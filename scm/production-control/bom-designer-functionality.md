@@ -98,7 +98,7 @@ The filter that is applied for the BOM and route is displayed in the header of t
 When you use the BOM designer to review or edit BOMs that consist of one or more levels of phantoms, the route that is associated with the top item typically spans the complete BOM hierarchy. To simplify the overview, you can lock the top-level route in the display by clicking **View** &gt; **Lock route**. To unlock the route, click **View** &gt; **Unlock route**.
 
 ## Adding and editing BOMs and BOM lines
-Use the **BOM lines **or **BOM** functions to modify the BOM lines or BOM. When you select a node in the tree, the type of the node determines that functions that are available.
+Use the **BOM lines** or **BOM** functions to modify the BOM lines or BOM. When you select a node in the tree, the type of the node determines that functions that are available.
 
 | Function                            | Description                                                                                               | Node type and conditions                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
