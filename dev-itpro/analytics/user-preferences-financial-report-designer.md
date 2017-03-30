@@ -3,7 +3,7 @@
 
 title: User preferences in financial report designer
 description: This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience. You can also control how individual reports, the report library, and the default file locations are displayed. 
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
 ms.date: 2016-02-04 19 - 44 - 33
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 31161
@@ -43,10 +43,6 @@ Set user preferences
 
 ## Options dialog box options
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>User option</th>
@@ -56,7 +52,7 @@ Set user preferences
 <tbody>
 <tr class="odd">
 <td>At startup</td>
-<td>Select what you see when Management Reporters starts. Select one of the following options:
+<td>Select what you see when Report Designer starts. Select one of the following options:
 <ul>
 <li><strong>Load last loaded report</strong> – Open the last report that you viewed.</li>
 <li><strong>Show Open window</strong> – Open the <strong>Open</strong> window. The <strong>Open</strong> window provides a search window that you can use to quickly find building blocks.</li>
@@ -64,7 +60,7 @@ Set user preferences
 </ul></td>
 </tr>
 <tr class="even">
-<td>Display confirmation before exiting Management Reporter</td>
+<td>Display confirmation before exiting Report Designer</td>
 <td>Select whether to receive a warning message when you exit the application. This message helps guarantee that you don't exit the program unintentionally.</td>
 </tr>
 <tr class="odd">
@@ -83,5 +79,5 @@ Set user preferences
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics ERP](financial-reporting-intro.md)
+[Financial reporting](financial-reporting-intro.md)
 
