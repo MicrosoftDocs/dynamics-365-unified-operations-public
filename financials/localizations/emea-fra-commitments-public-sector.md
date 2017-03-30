@@ -74,7 +74,7 @@ Commitments must be closed manually.
 -   You can close a single commitment line or an entire commitment by using the **Close** button on the Action Pane of the commitment.
 -   The purchase order year-end process automatically reverses closing entries and creates or updates budget in commitment documents in the new fiscal year. This is handled by the process. No manual intervention is required. However, after you have processed purchase orders and commitments, you must go to the **Commitment close** page to close the commitments in the closing fiscal year.
 
-**Important**: When you select the commitments that you want to close, be sure that you don't select the commitments that you have already created for the new fiscal year. Closing a commitment line cannot be reversed. If you close a commitment line by mistake, you must create a new commitment to restore the budget reservation. To learn more about the year-end process, see [Year-end processing in the public sector](..public-sector/year-end-processing-public-sector).
+**Important**: When you select the commitments that you want to close, be sure that you don't select the commitments that you have already created for the new fiscal year. Closing a commitment line cannot be reversed. If you close a commitment line by mistake, you must create a new commitment to restore the budget reservation. To learn more about the year-end process, see [Year-end processing in the public sector](..public-sector/year-end-processing-public-sector.md).
 
 See also
 --------
