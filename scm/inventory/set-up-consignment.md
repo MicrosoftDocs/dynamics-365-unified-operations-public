@@ -52,5 +52,5 @@ The **Inventory ownership change** journal is used to record the transfer of own
 [![inventory-ownership-change-journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## Vendor collaboration in consignment processes
-If your vendors are using the vendor collaboration interface, they can use this to monitor the consumption of inventory at your site. For more information about setting up vendors to use vendor collaboration, see [Configuration of security for vendor collaboration users](../procurement-sourcing/configure-security-vendor-portal-users.md).
+If your vendors are using the vendor collaboration interface, they can use this to monitor the consumption of inventory at your site. For more information about setting up vendors to use vendor collaboration, see [Configuration of security for vendor collaboration users](../procurement/configure-security-vendor-portal-users.md).
 

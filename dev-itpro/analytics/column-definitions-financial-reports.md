@@ -585,7 +585,7 @@ You can divide the amount in a column by a specified number of periods. For exam
 See also
 --------
 
-[Row definitions in financial reporting](http://ax.help.dynamics.com/en/wiki/row-definitions-in-financial-reporting/)
+[Row definitions in financial reporting](row-definitions-financial-reporting.md)
 
 [Advanced formatting options in financial reporting](advanced-formatting-options-financial-reporting.md)
 

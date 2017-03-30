@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This topic provides information about credit notes for fixed assets disposal posted by a free text invoice for users in legal entities in Estonia and Lithuania.
 
-Fixed assets can be sold using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information, see [Fixed asset disposal posting accounts](/financials/fixed-assets/fixed-asset-disposal-posting-accounts). Fixed assets disposal credit note functionality allows users in legal entities in Estonia and Latvia to create a credit note for a free text invoice with sales of a fixed asset and then post it. To create a credit note to reverse a free text invoice that was generated for the sale of a fixed asset, complete the following steps:
+Fixed assets can be sold using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information, see [Fixed asset disposal posting accounts](/operations/financials/fixed-assets/fixed-asset-disposal-posting-accounts). Fixed assets disposal credit note functionality allows users in legal entities in Estonia and Latvia to create a credit note for a free text invoice with sales of a fixed asset and then post it. To create a credit note to reverse a free text invoice that was generated for the sale of a fixed asset, complete the following steps:
 
 1.  Click **Accounts receivable** &gt; **Invoices** &gt; **All free text invoices**.
 2.  Select the free text invoice that you are creating a credit note for.

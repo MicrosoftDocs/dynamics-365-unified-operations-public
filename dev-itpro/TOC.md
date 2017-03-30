@@ -15,7 +15,7 @@
 ## [Process and consume data packages](lcs-solutions/process-data-packages-lcs-solutions.md)
 ## [Back up a solution database](lcs-solutions/database-backup-lcs-solutions.md)
 
-## [Localizations](/dynamics365/operations/localizations/country_region?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Localizations](lcs-solutions/country-region.md)
 ### [Classify localization features](lcs-solutions/classify-localization-features.md)
 ### [Country/region context](lcs-solutions/apply-country-context.md)
 ### [Regulatory certifications](lcs-solutions/regulatory-certifications.md)
@@ -29,7 +29,7 @@
 # [Data entities](data-entities/TOC.md)
 
 # Mobile apps
-## [Install and configure the warehousing app ](/dynamics365/operations/scm/warehouse/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Install and configure the warehousing app ](/dynamics365/operations/scm/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
 ## Mobile workspace X++ APIs - NEED TO FIND THIS TOPIC IN GITHUB
 
@@ -41,7 +41,7 @@
 ## [Customize the Open in Microsoft Office menu](office-integration/customize-open-office-menu.md)
 ## [Troubleshooting](office-integration/office-integration-troubleshooting.md)
 
-# [Financials development](financial-dimensions/TOC.md)
+# [Financials development](financial/TOC.md)
 
 # Supply chain development
 ## [Gantt development guide](user-interface/gantt-development-guide.md)

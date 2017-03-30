@@ -93,14 +93,10 @@ Cross-company data sharing isn't supported for the following scenarios:
 3.  In the **Asset type** list, click **Data package**.
 4.  Click any of the available data package files to download them.
 
-For details about how to configure Dynamics 365 for Operations to use a template, see [Configure financial cross-company data sharing](http://ax.help.dynamics.com/en/wiki/configure-financial-cross-company-data-sharing/).
+For details about how to configure Dynamics 365 for Operations to use a template, see [Configure financial cross-company data sharing (Task guide)](http://ax.help.dynamics.com/en/wiki/configure-financial-cross-company-data-sharing/).
 
 ## Currently supported crosscompany data sharing templates
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Package name on LCS</th>
@@ -148,5 +144,5 @@ For details about how to configure Dynamics 365 for Operations to use a template
 See also
 --------
 
-[Configure financial cross-company data sharing](http://ax.help.dynamics.com/en/wiki/configure-financial-cross-company-data-sharing/)
+[Configure financial cross-company data sharing (Task guide)](http://ax.help.dynamics.com/en/wiki/configure-financial-cross-company-data-sharing/)
 

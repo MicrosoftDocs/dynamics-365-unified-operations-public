@@ -93,14 +93,14 @@ Yes. Line amounts for a purchase order can be viewed, including the current ord
 Let’s say you view a purchase order line with purchases posted to two ledger accounts. One ledger account is for office furniture ordered from a vendor. The second ledger account is for office supplies. The ordered amount is equal to the sum of the invoiced amounts, pending invoice amounts, and invoice remaining amounts. The received amount is the portion of the ordered amount that has been received from the vendor.
 
 <table style="width:100%;">
-<colgroup>
+
 <col width="16%" />
 <col width="16%" />
 <col width="16%" />
 <col width="16%" />
 <col width="16%" />
 <col width="16%" />
-</colgroup>
+
 <tbody>
 <tr class="odd">
 <td><strong>Ledger account</strong></td>
@@ -139,6 +139,6 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 
  
 
-For more information, see [Procurement and sourcing](/dynamics365/operations/scm/procurement-sourcing/procurement-sourcing-overview) and 
+For more information, see [Procurement and sourcing](/dynamics365/operations/scm/procurement/procurement-sourcing-overview) and 
 [Accounts payable in the public sector](accounts-payable-public-sector.md).
 

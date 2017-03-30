@@ -59,7 +59,7 @@ Table fields are based on a primitive data type or an extended data type. For mo
 1.  Right-click the **Fields** node of your table.
 2.  Click **New**, and then choose a primitive data type to base your field on. If you plan to base the field on a specific extended data type, you must choose a primitive data type that the extended data type is based on.
 3.  To base the field on an extended data type, set the **ExtendedDataType** property.
-4.  Modify additional field properties, as needed. For more information, see [Table Field Properties](http://ax.help.dynamics.com/en/wiki/table-field-properties/).
+4.  Modify additional field properties, as needed. For more information, see [Table Field Properties](table-properties.md).
 5.  To delete the field, right-click it, and then click **Delete**.
 
 ### Restart the AOS after Adding Fields to Tables

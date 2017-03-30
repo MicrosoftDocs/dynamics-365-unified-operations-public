@@ -41,7 +41,10 @@ The request for quotation (RFQ) process covers the following tasks:
 -   Transferring accepted bids to a purchase order, purchase agreement, or purchase requisition
 
 The following illustration provides an overview of the RFQ process.  
-[![Request for quotation process](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg) You can create an RFQ from planned orders, from a purchase requisition, or from a manual entry. The RFQ that you create is called an RFQ case, and this is the base document that you use to issue an RFQ to each vendor. After you prepare the RFQ case and add vendors, click **Send** on the RFQ case, and an RFQ journal is generated for each vendor that you sent the RFQ to. You can configure the print management settings for the Send action to either print a report for each vendor to an archive or send a report to each vendor's email address. In addition, the RFQ journal for each vendor can be used to generate a report that you can send or resend to a vendor later. You can also configure the Send action to generate a reply sheet that the vendor can fill out.  
+
+[![Request for quotation process](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
+
+You can create an RFQ from planned orders, from a purchase requisition, or from a manual entry. The RFQ that you create is called an RFQ case, and this is the base document that you use to issue an RFQ to each vendor. After you prepare the RFQ case and add vendors, click **Send** on the RFQ case, and an RFQ journal is generated for each vendor that you sent the RFQ to. You can configure the print management settings for the Send action to either print a report for each vendor to an archive or send a report to each vendor's email address. In addition, the RFQ journal for each vendor can be used to generate a report that you can send or resend to a vendor later. You can also configure the Send action to generate a reply sheet that the vendor can fill out.  
 
 If you must amend an RFQ after you send it, you can resend the RFQ to vendors when you've finished.  
 

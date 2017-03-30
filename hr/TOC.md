@@ -27,7 +27,7 @@
 ## [Evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 # United States features
 ## Workplace safety and compliance
-### [Form I-9 employment verification](localizations/noam-usa-form-i-9-verification)
+### [Form I-9 employment verification](localizations/noam-usa-form-i-9-verification.md)
 ### [Comply with the ADA](localizations/noam-usa-comply-ada.md)
 ## [Payroll](localizations/noam-usa-payroll.md)
 ### Payroll setup

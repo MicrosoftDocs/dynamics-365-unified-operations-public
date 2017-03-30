@@ -101,6 +101,7 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 ### Language support
 
 -   [Programming language support](programming-language-support.md)
+-   [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
 -   [Debugging X++ code](debug-xpp.md)
 -   [LINQ provider for use in C\#](linq-provider-c.md)
 -   [Authoring best practice rules](author-best-practice-rules.md)
@@ -226,21 +227,21 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Dynamics 365 for Operations mobile platform](..\mobile-apps\mobile-platform.md)
 
 ## Global finance management
--   [Dimension entry control dialog support](..\financial-dimensions\dimension-entry-control-dialog-support.md)
--   [Dimension entry control migration](..\financial-dimensions\dimension-entry-control-migration.md)
--   [Dimension entry control uptake](..\financial-dimensions\dimension-entry-control-uptake.md)
--   [Add dimensions to the Microsoft Excel template](..\financial-dimensions\dimensions-overview.md)
+-   [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
+-   [Dimension entry control migration](..\financial\dimension-entry-control-migration.md)
+-   [Dimension entry control uptake](..\financial\dimension-entry-control-uptake.md)
+-   [Add dimensions to the Microsoft Excel template](..\financial\dimensions-overview.md)
 -   [Create Open in Office experiences for Excel and Word](..\office-integration\office-integration-edit-excel.md)
 -   [Add templates to open lines in Excel menu](..\user-interface\add-templates-open-lines-excel-menu.md)
--   [Segmented entry control dialog support](..\financial-dimensions\segmented-entry-control-dialog-support.md)
--   [Segmented entry control metadata specification](..\financial-dimensions\segmented-entry-control-metadata-specification.md)
--   [Segmented entry control - migration guidance](..\financial-dimensions\segmented-entry-control-migration-guidance.md)
--   [Segmented Entry control migration walkthrough](..\financial-dimensions\segmented-entry-control-conversion.md)
--   [Segmented entry control parm Specification](..\financial-dimensions\segmented-entry-control-parm-method-specification.md)
--   [Creating exchange rate providers](..\financial-dimensions\create-exchange-rate-providers.md)
--   [Financial dimension configuration for integrating applications](..\financial-dimensions\financial-dimension-configuration-integration.md)
--   [Activating financial dimensions](..\financial-dimensions\activate-financial-dimensions.md)
--   [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial-dimensions\add-dimensions-excel-templates.md)
+-   [Segmented entry control dialog support](..\financial\segmented-entry-control-dialog-support.md)
+-   [Segmented entry control metadata specification](..\financial\segmented-entry-control-metadata-specification.md)
+-   [Segmented entry control - migration guidance](..\financial\segmented-entry-control-migration-guidance.md)
+-   [Segmented Entry control migration walkthrough](..\financial\segmented-entry-control-conversion.md)
+-   [Segmented entry control parm Specification](..\financial\segmented-entry-control-parm-method-specification.md)
+-   [Creating exchange rate providers](..\financial\create-exchange-rate-providers.md)
+-   [Financial dimension configuration for integrating applications](..\financial\financial-dimension-configuration-integration.md)
+-   [Activating financial dimensions](..\financial\activate-financial-dimensions.md)
+-   [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial\add-dimensions-excel-templates.md)
 
 ## Licensing
 -   [ISV licensing](isv-licensing.md)

@@ -102,5 +102,5 @@ You can specify more than one expression in the same file. Each expression must 
 See also
 --------
 
-[Configuration of mobile devices for warehouse work](configure-mobile-devices-warehouse_work.md)
+[Configuration of mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
 

@@ -74,7 +74,7 @@ Developer and IT Pro
 -   [Track commissions in POS using sales groups](pos-sales-groups-track-commissions.md)
 
 ## Device activation
--   [Cloud POS and Modern POS guided device activation and client simplifications](http://ax.help.dynamics.com/en/wiki/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications/)
+-   [Cloud POS and Modern POS guided device activation and client simplifications](retail-modern-pos-device-activation.md)
 
 ## []()Additional resources
 -   Additional help is available as task guides inside Dynamics 365 for Operations. To access task guides, click the Help button on any page.

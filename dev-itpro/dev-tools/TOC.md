@@ -31,6 +31,7 @@
 ## [X++ and debugger features ](new-x-debugger-features.md)
 ## [Debug X++ against a copy of a production database](debug-x-issue-against-copy-of-production.md)
 ## [Debug X++ code](debug-xpp.md)
+## [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
 ## [Write business logic using C# and X++ source code](write-business-logic.md)
 ## [Programming language support](programming-language-support.md)
 ## [LINQ provider for C#](linq-provider-c.md)

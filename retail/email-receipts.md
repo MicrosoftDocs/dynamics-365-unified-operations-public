@@ -37,7 +37,7 @@ In Retail Modern Point of Sale (MPOS), you can send receipt emails at the time a
 Prerequisite
 ------------
 
-You must configure a SMTP server to send email receipts. For more information about email parameters, see [Email parameters page (field descriptions).](http://ax.help.dynamics.com/en/wiki/e-mail-parameters-page-field-descriptions/)
+You must configure a SMTP server to send email receipts. 
 
 ## Set up email receipts
 ### Set default options for email receipts

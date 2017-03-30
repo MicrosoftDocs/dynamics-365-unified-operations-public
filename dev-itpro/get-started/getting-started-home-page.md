@@ -37,7 +37,7 @@ Start here to onboard quickly and learn the Microsoft Dynamics 365 for Operation
 ## Onboarding
 The following resources provide an overview of how to work with your partner to get onboarded to Dynamics 365 for Operations and how to use Dynamics 365 for Operations Lifecycle Services. 
 
-- [Microsoft FastTrack for Dynamics 365 overview](/core/get-started/fasttrack-dynamics-365-overview) 
+- [Microsoft FastTrack for Dynamics 365 overview](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md) 
 - [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](../lifecycle-services/lcs-works-lcs.md) 
 - [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
@@ -45,22 +45,22 @@ The following resources provide an overview of how to work with your partner to 
 ## User interface
 The following resources provide information about the Dynamics 365 for Operations user experience. 
 -   [What's new in the Dynamics 365 for Operations user experience (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
--   [Personalizing the user experience](/core/get-started/personalize-user-experience)
--   [Configuring and filtering workspaces](/core/get-started/configure-filter-workspaces)
--   [Navigation search](/core/get-started/navigation-search)
--   [Action search](/core/get-started/action-search)
--   [Keyboard shortcuts](/core/get-started/shortcut-keys)
--   [Display pages side-by-side using the Open in New Window icon](/core/get-started/display-pages-side-by-side)
--   [Advanced filtering and query options](/core/get-started/advanced-filtering-query-options)
--   [Dynamics 365 for Operations client FAQ](/core/get-started/client-faq)
--   [Change the banner or logo](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
+-   [Personalizing the user experience](/dynamics365/operations/get-started/personalize-user-experience)
+-   [Configuring and filtering workspaces](/dynamics365/operations/get-started/configure-filter-workspaces)
+-   [Navigation search](/dynamics365/operations/get-started/navigation-search)
+-   [Action search](/dynamics365/operations/get-started/action-search)
+-   [Keyboard shortcuts](/dynamics365/operations/get-started/shortcut-keys)
+-   [Display pages side-by-side using the Open in New Window icon](/dynamics365/operations/get-started/display-pages-side-by-side)
+-   [Advanced filtering and query options](/dynamics365/operations/get-started/advanced-filtering-query-options)
+-   [Dynamics 365 for Operations client FAQ](/dynamics365/operations/get-started/client-faq)
+-   [Change the banner or logo (Task guide)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
 
 ## Help system
 The following resources provide an overview of the Help system and explain how to view field descriptions.
 
 -   [Getting started with Help](help-overview.md)
 -   [Connect the Help system](help-connect.md)
--   [How to view and export field descriptions](/core/get-started/view-export-field-descriptions)
+-   [How to view and export field descriptions](/dynamics365/operations/get-started/view-export-field-descriptions)
 -   [Dynamics 365 for Operations help system (fact sheet)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
 ### Task recordings and Task guides

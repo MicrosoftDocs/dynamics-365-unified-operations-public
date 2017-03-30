@@ -38,12 +38,7 @@ Cost management
 ---------------
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -137,12 +132,12 @@ This feature works independently of costing methods that are assigned to the pro
 | Choose scale (that is, the number of decimal places) on real database fields and extended data types (EDTs). | Scale 16 is the default scale and can't be changed by the developer.                                                                                                                               | EDTs and fields now have a scale property that can be applied to the individual field and EDT. The default is set to 6, not 16.                                                                                                | Performance with NCCI tables (in-memory support in SQL) is faster by orders of magnitude when a smaller scale is used. Change the scale as your use of the individual fields requires.                                                                                                                                                                                                                                                                                                                                                                                                               |
 ## Financial management
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -278,12 +273,12 @@ This feature works independently of costing methods that are assigned to the pro
 
 ## Foundation
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -326,12 +321,12 @@ This feature works independently of costing methods that are assigned to the pro
 
 ## Help
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -350,12 +345,12 @@ This feature works independently of costing methods that are assigned to the pro
 
 ## Human capital management
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -437,12 +432,12 @@ No new features have been added.
 
 ## Localization
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -598,12 +593,12 @@ No new features have been added.
 Microsoft Azure-hosted Retail HQ offers centralized management of and complete visibility into all aspects of commerce operations through a web client.
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -741,12 +736,12 @@ The <strong>Catalog management</strong> workspace enables the following functi
 Retail Server and data management lets consumers and enterprises create an omni-channel shopping experience across online, in-store, and call center channels.
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -837,12 +832,12 @@ Retail Server and data management lets consumers and enterprises create an omni-
 Retail offers immersive mobile experiences anywhere, any time, and on any device. This functionality enables enhanced shopping and store experiences across all channels.
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -923,12 +918,12 @@ A retail and commerce-focused configuration option helps streamline retail-speci
 ### POS Task recorder
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -952,12 +947,12 @@ A retail and commerce-focused configuration option helps streamline retail-speci
 ### Extensibility
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -985,12 +980,12 @@ Additionally, a framework is available that lets you build and package these co
 Lifecycle Services (LCS) provides a set of services that customers and partners can use to manage the lifecycle of the system from sign-up to daily operations.
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -1037,12 +1032,12 @@ There is an improved “low-touch” client component installation via self-serv
 
 ## Sales
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
+
+
+
+
+
+
 <tbody>
 <tr class="odd">
 <td><strong>What can you do?</strong></td>
@@ -1056,7 +1051,7 @@ There is an improved “low-touch” client component installation via self-serv
 <td>Based on the existing algorithms for delivery date calculation, the <strong>Delivery alternatives </strong>page offers a new user experience for order promising:
 <ul>
 <li>It consolidates relevant information from multiple forms into one space.</li>
-<li>It offers “ready-made” alternative delivery packages, such as a combination site/warehouse/variant/transport mode, based on the fastest delivery (earliest available date) criterion that the user can choose from.</li>
+<li>It offers “ready-made” alternative delivery packages, such as a combination site/warehousing/variant/transport mode, based on the fastest delivery (earliest available date) criterion that the user can choose from.</li>
 <li>It lets the user select options from the simulation interface and transfer them to the sales order line.</li>
 </ul></td>
 <td>Companies that aspire to provide high customer service while committing to an inventory optimization strategy must be able to promise orders reliably and competitively. After all, their customers’ own business requires that products be available on time. The <strong>Delivery alternatives</strong> task page makes the order promising task quicker, easier, and more systematic by identifying and recommending the best alternative order delivery dates in one interactive place.</td>

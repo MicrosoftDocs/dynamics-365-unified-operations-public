@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
 
-This user guide can help you learn how to make Dynamics 365 for Operations work for your business.  Find content for:   
+This user guide can help you learn how to make Dynamics 365 for Operations work for your business.    
 
 <table>
 <colgroup>
@@ -42,62 +42,52 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Onboarding your organization</p>
+<td><p><a href="onboarding-home.md">Onboarding your organization</a></p>
 <p>Financials</p>
-<ul><li>Accounts payable</li>
-<li>Accounts receivable</li>
- <li>Cash and bank management</li>
-<li>Cost accounting</li>
-<li>Expense management</li>
-<li>Fixed assets</li>
-<li>General ledger</li>
-<li>Project management</li>
-<li>Public sector</li></ul>
-<p>Regional features</p>
-  <ul><li>Asia Pacific</li>
-  <li>Europe</li>
-  <li>Latin America</li>
-  <li>Middle East and Africa</li>
-  <li>North America</li></ul>
-  <p>Human resources</p>
-   <ul><li>Asia Pacific</li>
-  <li>HR strategy</li>
-  <li>Recruit, hire & motivate</li>
-  <li>Employee training</li>
-  <li>Benefits</li>
-  <li>Questionnaire</li>
-  <li>US features</li>
+<ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
+<li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
+<li><a href="financials/budgeting/budgeting-overview.md">Budgeting</a></li>
+<li><a href="financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></li>
+<li><a href="financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></li>
+<li><a href="financials/fixed-assets/fixed-assets.md">Fixed assets</a></li>
+<li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
+<li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
+<li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
+<p><a href="country-region.md">Regional features</a></p>
+<p>Human resources</p>
+   <ul>
+  <li><a href="hr/departments-jobs-positions.md">HR strategy</a></li>
+  <li><a href="hr/manage-recruiting-process.md">Recruit, hire & motivate</a></li>
+  <li><a href="hr/performance-management-overview.md">Employee training</a></li>
+  <li><a href="hr/manage-benefit-program.md">Benefits</a></li>
+  <li><a href="hr/questionnaire.md">Questionnaire</a></li>
+  <li><a href="hr/noam-us-payroll.md">US features</a></li>
 </ul></td>
   <td>
   <p>Retail</p>
   <ul>
-<li>Call center</li>
-  <li>Channel setup and management</li>
-  <li>MPOS and Cloud POS</li>
-  <li>Monitoring and analysis</li>
-  <li>Discounts and price adjustments</li>
-  <li>Products and merchandising</li>
-  <li>Loyalty</li>
-  <li>Inventory</li>
-  <li>Commerce essentials</li>
-  <li>Retail developer and administration </li></ul>
+<li><a href="retail/call-center-functionality.md">Call center</a></li>
+  <li><a href="retail/define-maintain-retail-channels.md">Channel setup and management</a></li>
+  <li><a href="retail/define-maintain-channel-clients-registers-hw-stations.md">MPOS and Cloud POS</a></li>
+  <li><a href="retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration </a></li></ul>
   <p>Supply chain management</p>
 <ul>
-<li>Cost management</li>
-  <li>Inventory management</li>
-  <li>Master planning</li>
-  <li>Procurement and sourcing</li>
-  <li>Production control</li>
-  <li>Sales and marketing</li>
-  <li>Transportation management</li>
-  <li>Warehouse management</li></ul>
+<li><a href="scm/cost-management/costing-sheets.md">Cost management</a></li>
+  <li><a href="scm/inventory/inventory-locations.md">Inventory management</a></li>
+  <li><a href="scm/master-planning/master-plans.md">Master planning</a></li>
+  <li><a href="scm/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
+  <li><a href="scm/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
+  <li><a href="scm/production-control/create-production-orders">Production control</a></li>
+  <li><a href="scm/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
+  <li><a href="scm/transportation/transportation-management-overview.md">Transportation management</a></li>
+  <li><a href="scm/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
   <p>Developer & admin functionality</p>
-  <ul><li>Analytics</li>
-  <li>Data entities</li>
-  <li>Mobile apps</li>
-  <li>Office integration</li>
-  <li>Administration</li>
-  <li>Developer tools</li></ul></td>
+  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</ a></li>
+  <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
+  <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobile apps</a></li>
+  <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>
+  <li><a href="dev-itpro/sysadmin/system-administration-home-page.md">Administration</a></li>
+  <li><a href="dev-itpro/dev-tools/developer-home-page.md">Developer tools</a></li></ul></td>
 </tr>
 </tbody>
 </table>
