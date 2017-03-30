@@ -32,7 +32,7 @@ When using the **EventHandlerAcceptResult** class, the delegate handler method c
         InventLocationType _inventLocationType, 
         EventHandlerAcceptResult _result)
     {
-        switch (_inventLocationType)
+        switch (_inventLocationType)
         {
             case InventLocationType::Standard: 
             case InventLocationType::Quarantine: 
