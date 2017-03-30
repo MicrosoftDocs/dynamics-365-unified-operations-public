@@ -101,6 +101,7 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 ### Language support
 
 -   [Programming language support](programming-language-support.md)
+-   [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
 -   [Debugging X++ code](debug-xpp.md)
 -   [LINQ provider for use in C\#](linq-provider-c.md)
 -   [Authoring best practice rules](author-best-practice-rules.md)
