@@ -34,17 +34,12 @@ ms.dyn365.ops.version: 2012
 
 This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
 
-For information about system properties available for tables, see [System and Common Properties](http://ax.help.dynamics.com/en/wiki/system-and-common-properties/). For guidelines about setting property values, see [Best Practices for Table Properties](http://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx). Next is a list of topics about the properties of AOT elements that are sub-elements under a table element.
+For guidelines about setting property values, see [Best Practices for Table Properties](http://msdn.microsoft.com/library/5def498e-107d-4a2b-a621-fbbe0243e399(AX.60).aspx). Next is a list of topics about the properties of AOT elements that are sub-elements under a table element.
 
 ## Table Properties
 The following table describes the properties of table elements in the AOT.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Property</th>

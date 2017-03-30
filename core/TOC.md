@@ -1,6 +1,6 @@
 # [Introduction](index.md)
 
-# [Onboard to Dynamics 365 for Operations](get-started/get-started-landing.md)
+# [Onboard to Dynamics 365 for Operations](get-started/onboarding-home.md)
 ## Introduction to Microsoft Dynamics 365
 ### [Get started with Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
 ### [Sign up for a subscription](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/operations/toc.json)
@@ -28,9 +28,7 @@
 #### [Task Recorder](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
 #### [Create documentation or training](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
 
-## Find local features
-### [Country/region-specific Help content](localizations/country_region.md)
-### [Tell Microsoft about new country/region regulatory features](/dynamics365/operations/dev-itpro/localization-solutions/submit-localization-alerts?toc=/dynamics365/operations/toc.json)
+## [Country/region-specific Help content](localizations/country-region.md)
 
 # [Configure your organization](organization-administration/organization-administration-home-page.md)
 ## [Organizations and organizational hierarchies](organization-administration/organizations-organizational-hierarchies.md)
@@ -63,12 +61,6 @@
 ## [Configure a parallel activity](organization-administration/configure-parallel-activity-workflow.md)
 ## [Configure a parallel branch](organization-administration/configure-parallel-branch-workflow.md)
 ## [Configure workflow properties](organization-administration/configure-workflow-properties.md)
-
-# Technical topics for users
-## [Analytics home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/analytics-bi-reporting/bi-reporting-home-page)
-## [Data entities home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/data-entities/data-entities)
-## [Office integration home page (Admin & developer guide)](/dynamics365/operations/dev-itpro/office-integration/office-integration)
-## [Mobile apps home page (Admin & developer guide)](https://ax.help.dynamics.com/en/wiki/mobile-workspaces-recently-released/)
 
 # [Financials](/dynamics365/operations/financials/index)
 

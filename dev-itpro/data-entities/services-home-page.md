@@ -37,9 +37,9 @@ This topic describes the service endpoints that are available in Microsoft Dynam
 This article describes the service endpoints that are available.
 
 ## List of services
-The following table lists all the service endpoints that were available in Microsoft Dynamics AX 2012 and the service endpoints in Dynamics 365 for Operations.
+The following table lists all the service endpoints that were available in Microsoft Dynamics 365 for Operations 2012 and the service endpoints in Dynamics 365 for Operations.
 
-| Service endpoint            | Dynamics AX 2012 | Dynamics 365 for Operations    |
+| Service endpoint            | Dynamics 365 for Operations 2012 | Dynamics 365 for Operations    |
 |-----------------------------|------------------|--------------------------------|
 | Document Services (AXDs)    | Yes              | No – Replaced by data entities |
 | SOAP-based Metadata Service | Yes              | No – Replaced by REST metadata |
@@ -53,14 +53,14 @@ The following table lists all the service endpoints that were available in Micro
 ## Custom services
 ### SOAP-based Custom Service
 
-The SOAP-based services remain the same as they were in Dynamics AX 2012.
+The SOAP-based services remain the same as they were in Dynamics 365 for Operations 2012.
 
 #### Key changes
 
 -   All the service groups under the **AOTService group** node are automatically deployed.
 -   All services that must be deployed must be part of a service group.
 
-The SOAP endpoint is at https://&lt;host\_uri&gt;/soap/Services/&lt;service\_group\_name&gt;. **Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl The following documentation is from the Dynamics AX 2012 X++ Custom SOAP Services, and it will help you design and write services:
+The SOAP endpoint is at https://&lt;host\_uri&gt;/soap/Services/&lt;service\_group\_name&gt;. **Example:** https://usnconeboxax1aos.cloud.onebox.dynamics.com/soap/services/UserSessionService?wsdl The following documentation is from the Dynamics 365 for Operations 2012 X++ Custom SOAP Services, and it will help you design and write services:
 
 -   [Using Custom Services \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/hh509052.aspx)
 -   [Walkthrough: Exposing an X++ Class as a Data Contract \[AX 2012\] (TechNet)](http://technet.microsoft.com/en-us/library/gg844225.aspx)
@@ -295,7 +295,6 @@ In previous versions, you could consume web services from X++ code by adding Mic
                 info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
             }
 
-For more information, see [Troubleshoot service authentication](troubleshoot-service-authentication.md).
 
 See also
 --------

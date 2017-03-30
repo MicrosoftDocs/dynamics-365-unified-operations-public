@@ -84,7 +84,7 @@ See also
 
 [Production feedback](production-feedback.md)
 
-[Product configuration models](../product-information-management/product-configuration-models.md)
+[Product configuration models](../pim/product-configuration-models.md)
 
 [Lean manufacturing](lean-manufacturing-overview.md)
 

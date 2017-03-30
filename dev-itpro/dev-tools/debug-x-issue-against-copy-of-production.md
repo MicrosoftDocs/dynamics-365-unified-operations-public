@@ -63,7 +63,7 @@ When an issue occurs in the production environment, the system administrator can
 3.  In the dialog box, click **Find**. All the builds from the build server are listed.
 4.  Select the build that is currently deployed to the production environment, and then select to run a full build. When the database is copied, only the system administrator will be able to access the sandbox database. The system administrator must complete the following tasks:
     -   Remove any data that you don't want in the sandbox database, such as employee salaries.
-    -   Enable or add the developer as a user in Microsoft Dynamics AX.
+    -   Enable or add the developer as a user in Microsoft Dynamics 365 for Operations.
     -   Create a new SQL sign-in for the developer to use. This step lets the system administrator maintain the security of the sandbox environment. The developer will only have access to one database for a time. The following code can be used to create the new SQL sign-in.
 
             CREATE USER devtempuser WITH PASSWORD = ''

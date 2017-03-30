@@ -55,7 +55,7 @@ Follow these steps to configure the properties of the workflow.
 
 1.  Click the canvas to make sure that no workflow element is selected.
 2.  Click **Properties** to open the **Properties** page for the workflow.
-3.  Follow the procedures in the [Configure the properties of a workflow](http://axhelp.dynamics.com/en/wiki/configure-the-properties-of-a-workflow/) topic.
+3.  Follow the procedures in the [Configure the properties of a workflow](configure-workflow-properties.md) topic.
 
 ## Configure the elements of the workflow
 Configure each element that you dragged onto the canvas. For information about how to configure each workflow element, see the following topics:
@@ -67,7 +67,7 @@ Configure each element that you dragged onto the canvas. For information about h
 -   [Configure a manual decision](configure-manual-decision-workflow.md)
 -   [Configure a conditional decision](configure-conditional-decision-workflow.md)
 -   [Configure a parallel activity](configure-parallel-activity-workflow.md)
--   [Configure a parallel branch](http://ax.help.dynamics.com/en/wiki/configure-a-parallel-branch/)
+-   [Configure a parallel branch](configure-parallel-branch-workflow.md)
 -   [Configure a line-item workflow](configure-line-item-workflow.md)
 
 ## Resolve any errors or warnings

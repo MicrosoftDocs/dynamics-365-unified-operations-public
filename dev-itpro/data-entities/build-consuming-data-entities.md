@@ -2,7 +2,7 @@
 # required metadata
 
 title: Build and consume data entities
-description: This tutorial shows how to build an entity in Fleet Management in Microsoft Visual Studio, and also how to consume some out-of-band (OOB) entities in an integration scenario. You will see how Microsoft Dynamics AX simplifies the development of data entities in the Visual Studio development environment. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
+description: This tutorial shows how to build an entity in Fleet Management in Microsoft Visual Studio, and also how to consume some out-of-band (OOB) entities in an integration scenario. You will see how Microsoft Dynamics 365 for Operations simplifies the development of data entities in the Visual Studio development environment. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 author: RobinARH
 manager: AnnBe
 ms.date: 2016-04-04 20 - 15 - 06
@@ -32,13 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build and consume data entities
 
-This tutorial shows how to build an entity in Fleet Management in Microsoft Visual Studio, and also how to consume some out-of-band (OOB) entities in an integration scenario. You will see how Microsoft Dynamics AX simplifies the development of data entities in the Visual Studio development environment. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
+This tutorial shows how to build an entity in Fleet Management in Microsoft Visual Studio, and also how to consume some out-of-band (OOB) entities in an integration scenario. You will see how Microsoft Dynamics 365 for Operations simplifies the development of data entities in the Visual Studio development environment. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 
 Prerequisites
 -------------
 
--   This tutorial requires that you access the Microsoft Dynamics AX environment by using Remote Desktop, and that you be provisioned as an administrator on the Dynamics AX instance. For more information, see the "Access Microsoft Dynamics AX instances" document.
--   Throughout this tutorial, baseUrl refers to the base URL of the Dynamics AX instance.
+-   This tutorial requires that you access the Microsoft Dynamics 365 for Operations environment by using Remote Desktop, and that you be provisioned as an administrator on the Dynamics 365 for Operations instance. For more information, see the "Access Microsoft Dynamics 365 for Operations instances" document.
+-   Throughout this tutorial, baseUrl refers to the base URL of the Dynamics 365 for Operations instance.
     -   In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
     -   On a local virtual machine (VM), the base URL is [https://usnconeboxax1aos.cloud.onebox.dynamics.com](https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/).
 
@@ -78,9 +78,9 @@ FMLabCustomerEntity
 
 Staging tables are used in import/export scenarios to provide intermediary storage during file parsing and transformation. These tables are also used in connector integration scenarios. In many cases, staging table are mapped 1:1 to an entity. The staging table that corresponds to the **FMLabCustomerEntity** entity is named FMLabCustomerStaging.
 
-### Create a new Dynamics AX project
+### Create a new Dynamics 365 for Operations project
 
-1.  In Visual Studio click **File** &gt; **New** &gt; **Project**, and then select **Dynamics AX Project**.
+1.  In Visual Studio click **File** &gt; **New** &gt; **Project**, and then select **Dynamics 365 for Operations Project**.
 2.  Right-click the project, click **Properties**, and verify that the project is in the Fleet Management model. If it isn't, set the **Model** property to **Fleet Management**.
 
 ### Add a new data entity to your project
@@ -194,7 +194,7 @@ After you create your data entity, you can validate import/export.
 10. Click **Import Now**. After the import is completed, the job status page opens.
 
 ## Consuming entities by using OData
-In this section, you will learn how to expose and consume an entity for OData. Before you begin, verify that the Fleet demo data is loaded from the Microsoft Dynamics AX client: \[baseURL\]/?f=FMSetup
+In this section, you will learn how to expose and consume an entity for OData. Before you begin, verify that the Fleet demo data is loaded from the Microsoft Dynamics 365 for Operations client: \[baseURL\]/?f=FMSetup
 
 ### Review the FleetRental entity and add a navigation property for OData
 
@@ -302,7 +302,7 @@ Actions provide a way to inject behaviors into the data model. In Dynamics 'AX 7
 
 The action that you just added can be invoked through code, as you will see in the next section.
 
-### Consume the Dynamics AX OData API from an external console application
+### Consume the Dynamics 365 for Operations OData API from an external console application
 
 In this section, you will use a console application to consume the OData endpoints that are exposed in the Fleet Management application. The console application first creates a new customer and then creates a new reservation for that customer. This tutorial shows how easy it is to use OData together with standard .NET Windows Communication Foundation (WCF) data service libraries to integrate with Dynamics AX.
 
@@ -311,17 +311,17 @@ In this section, you will use a console application to consume the OData endpoin
 3.  In the **Open Project** dialog box, browse to **C:FMLabOdata4ConsoleApplication**, and then select **Odata4ConsoleApplication.csproj**.
 4.  Click **Open**. The **Odata4ConsoleApplication** project appears in Solution Explorer.
 5.  In Solution Explorer, double-click **OdataProxyGenerator.tt**.
-6.  In the code editor, replace the following string with your organization's Dynamics AX URL.
+6.  In the code editor, replace the following string with your organization's Dynamics 365 for Operations URL.
 
         <baseURL> public const string MetadataDocumentUri = "<baseURL>/data/"
 
 7.  Save the OdataProxyGenerator.tt file.
 8.  In the **Save of Read-only file** dialog box, click **Overwrite**. The proxy class for the OData metadata endpoint is generated. This operation might take a few minutes.
 9.  In Solution Explorer, double-click **Program.cs**.
-10. Replace the value of the **dynamicsBaseUri** variable with your organization's Dynamics AX URL.
+10. Replace the value of the **dynamicsBaseUri** variable with your organization's Dynamics 365 for Operations URL.
 11. Verify that there is a final closing slash (/) in the URL, and then click **Save**.
 12. In the **Save of Read-only file** dialog box, click **Overwrite**.
-13. Press F5 to run the application, and then follow the instructions in the output console window. The application might prompt you for your Dynamics AX credentials. After the application has run, the new customer and the corresponding reservation are created in Dynamics AX.
+13. Press F5 to run the application, and then follow the instructions in the output console window. The application might prompt you for your Dynamics AX credentials. After the application has run, the new customer and the corresponding reservation are created in Dynamics 365 for Operations.
 14. Follow these steps to verify that the new reservation appears on the **Rental** page:
     1.  Start Internet Explorer, and enter the following URL in the address bar: \[baseURL\]/?mi=FMRental The **FMRental** page shows the list of rentals.[![Rental list](./media/rental-list.png)](./media/rental-list.png)
     2.  At the bottom of the list, click **Next** to view the next page. On this page, you can see that the reservation was created for the new customer that you added.[![customer reservation](./media/customer-reservation.png)](./media/customer-reservation.png)

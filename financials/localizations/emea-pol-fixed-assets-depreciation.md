@@ -42,7 +42,7 @@ The Fixed assets depreciation features that are based on legal requirements in
 -   The same date, which is an option in the depreciation proposal to fill in the **Date** field value in all journal lines with a **To date** value that is defined in the Depreciation proposal.
 
 ## Polandspecific depreciation methods
-For legal entities in Poland there are additional depreciation methods, rules, and settings that are used to meet specific fixed asset accounting requirements. According to Polish regulations, depreciation is calculated using a yearly depreciation rate. For more information about depreciation methods, see [Fixed asset depreciation](/financials/fixed-assets/fixed-asset-depreciation). The following depreciation methods are available for legal entities in Poland:
+For legal entities in Poland there are additional depreciation methods, rules, and settings that are used to meet specific fixed asset accounting requirements. According to Polish regulations, depreciation is calculated using a yearly depreciation rate. For more information about depreciation methods, see [Fixed asset depreciation](../fixed-assets/fixed-asset-depreciation.md). The following depreciation methods are available for legal entities in Poland:
 
 -   **Reducing balance (Poland)** – This depreciation method considers special local legal requirements about the value of fixed assets changing during the fiscal year and cost part recognition. The base for this depreciation method includes the following transaction types:
     -   Acquisition
@@ -64,7 +64,7 @@ For legal entities in Poland there are additional depreciation methods, rules, 
     -   Write down
     -   Revaluation
 
-For more information about depreciation methods, see [Fixed asset depreciation](/financials/fixed-assets/fixed-asset-depreciation).
+For more information about depreciation methods, see [Fixed asset depreciation](../fixed-assets/fixed-asset-depreciation.md).
 
 ## Depreciation percent level parameter
 Reducing balance (Poland) and Straight line percentage (Poland) depreciation methods use the **Depreciation percent level** field on the **Fixed assets parameters** page. This field allows you to choose if the depreciation percent level should be taken from either the depreciation method or an individual fixed asset to calculate depreciation:

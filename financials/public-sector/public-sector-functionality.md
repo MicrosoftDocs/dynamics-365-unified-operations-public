@@ -52,7 +52,7 @@ Use the Public sector functionality to meet the rules, regulations, and reporti
 -   [French regulatory features](/localizations/europe/public-sector-accounting-france.md)\*
 -   [General ledger in the Public sector](general-ledger-public-sector.md)
 -   [Procurement and sourcing in the Public sector](procurement-sourcing-public-sector.md)
--   [Security roles in the Public sector](http://ax.help.dynamics.com/en/wiki/security-roles-in-the-public-sector-2/)
+-   [Security roles in the Public sector](security-roles-public-sector.md)
 
 \* Applicable only if your organization is in France.
 

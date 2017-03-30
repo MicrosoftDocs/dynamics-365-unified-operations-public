@@ -107,7 +107,7 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 
 ### Reference
 
--   [X++ language reference](..\dev-reference\xpp-language-reference.md)
+-   [X++ language reference](..\dev-ref\xpp-language-reference.md)
 
 ## Customize with extensions and overlayering
 -   [Extensibility home page](..\extensibility\extensibility-home-page.md)
@@ -146,12 +146,12 @@ The following links (also included in the methodology) describe key concepts and
 
 ## Service environments
 -   [Configure and execute the code upgrade service in Lifecycle Services](..\lifecycle-services\configure-execute-code-upgrade.md)
--   [Download hotfixes from Lifecycle Services](..\servicing\download-hotfix-lcs.md)
+-   [Download hotfixes from Lifecycle Services](..\migration-upgrade\download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
--   [Install an application metadata hotfix](..\servicing\install-metadata-hotfix-package.md)
+-   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
 -   [Install retail hotfixes](/dynamics365/operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/operations/dev-itpro/toc.json)
--   [Installing a financial reporting binary hotfix](..\servicing\install-financial-reporting-binary-hotfix.md)
--   [Patching the reporting service](..\servicing\patch-reporting-service-environment.md)
+-   [Installing a financial reporting binary hotfix](..\migration-upgrade\install-financial-reporting-binary-hotfix.md)
+-   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 -   [Updating the Visual Studio development tools](update-development-tools.md)
 
 ## Performance
@@ -172,23 +172,23 @@ The client is an HTML web client that runs in all major browsers. For informati
 ## Analytics
 ### Tutorials
 
--   [How to create a Power BI report](..\analytics-bi-reporting\create-powerbi-report-data.md)
--   [Create a Power BI report and dashboard](..\analytics-bi-reporting\create-powerbi-report-dashboard.md)
+-   [How to create a Power BI report](..\analytics\create-powerbi-report-data.md)
+-   [Create a Power BI report and dashboard](..\analytics\create-powerbi-report-dashboard.md)
 -   [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
--   [Customize App Suite reports using extensions](..\analytics-bi-reporting\customize-app-suite-reports-with-extensions.md)
+-   [Customize App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md)
 
 ### Concepts
 
--   [Analytics](..\analytics-bi-reporting\analytics.md)
--   [Power BI integration](..\analytics-bi-reporting\power-bi-integration.md)
--   [Configuring Power BI integration for workspaces](..\analytics-bi-reporting\configure-power-bi-integration.md)
+-   [Analytics](..\analytics\analytics.md)
+-   [Power BI integration](..\analytics\power-bi-integration.md)
+-   [Configuring Power BI integration for workspaces](..\analytics\configure-power-bi-integration.md)
 
 ## Reporting services
--   [Create next-generation reporting solutions](..\analytics-bi-reporting\create-nextgen-reporting-solutions.md)
--   [Document Reporting Services overview](..\analytics-bi-reporting\document-reporting-services.md)
--   [Tips to help prevent long-running reports from timing out](..\analytics-bi-reporting\prevent-long-running-reports-timing-out.md)
--   [Power BI integration](..\analytics-bi-reporting\power-bi-integration.md)
--   [Extending the list of electronic reporting functions](..\analytics-bi-reporting\general-electronic-reporting-formulas-list-extension.md)
+-   [Create next-generation reporting solutions](..\analytics\create-nextgen-reporting-solutions.md)
+-   [Document Reporting Services overview](..\analytics\document-reporting-services.md)
+-   [Tips to help prevent long-running reports from timing out](..\analytics\prevent-long-running-reports-timing-out.md)
+-   [Power BI integration](..\analytics\power-bi-integration.md)
+-   [Extending the list of electronic reporting functions](..\analytics\general-electronic-reporting-formulas-list-extension.md)
 -   [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
 -   [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)
 
@@ -211,8 +211,8 @@ The client is an HTML web client that runs in all major browsers. For informati
 ## Build workspaces
 ### Tutorials
 
--   [Modeling and using aggregate data](..\analytics-bi-reporting\model-aggregate-data.md)
--   [Adding KPI’s to workspaces](..\analytics-bi-reporting\add-bi-workspaces.md)
+-   [Modeling and using aggregate data](..\analytics\model-aggregate-data.md)
+-   [Adding KPI’s to workspaces](..\analytics\add-bi-workspaces.md)
 -   [Building navigation](..\user-interface\build-navigation.md)
 
 ### Concepts
@@ -226,21 +226,21 @@ The client is an HTML web client that runs in all major browsers. For informati
 -   [Dynamics 365 for Operations mobile platform](..\mobile-apps\mobile-platform.md)
 
 ## Global finance management
--   [Dimension entry control dialog support](..\financial-dimensions\dimension-entry-control-dialog-support.md)
--   [Dimension entry control migration](..\financial-dimensions\dimension-entry-control-migration.md)
--   [Dimension entry control uptake](..\financial-dimensions\dimension-entry-control-uptake.md)
--   [Add dimensions to the Microsoft Excel template](..\financial-dimensions\dimensions-overview.md)
+-   [Dimension entry control dialog support](..\financial\dimension-entry-control-dialog-support.md)
+-   [Dimension entry control migration](..\financial\dimension-entry-control-migration.md)
+-   [Dimension entry control uptake](..\financial\dimension-entry-control-uptake.md)
+-   [Add dimensions to the Microsoft Excel template](..\financial\dimensions-overview.md)
 -   [Create Open in Office experiences for Excel and Word](..\office-integration\office-integration-edit-excel.md)
 -   [Add templates to open lines in Excel menu](..\user-interface\add-templates-open-lines-excel-menu.md)
--   [Segmented entry control dialog support](..\financial-dimensions\segmented-entry-control-dialog-support.md)
--   [Segmented entry control metadata specification](..\financial-dimensions\segmented-entry-control-metadata-specification.md)
--   [Segmented entry control - migration guidance](..\financial-dimensions\segmented-entry-control-migration-guidance.md)
--   [Segmented Entry control migration walkthrough](..\financial-dimensions\segmented-entry-control-conversion.md)
--   [Segmented entry control parm Specification](..\financial-dimensions\segmented-entry-control-parm-method-specification.md)
--   [Creating exchange rate providers](..\financial-dimensions\create-exchange-rate-providers.md)
--   [Financial dimension configuration for integrating applications](..\financial-dimensions\financial-dimension-configuration-integration.md)
--   [Activating financial dimensions](..\financial-dimensions\activate-financial-dimensions.md)
--   [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial-dimensions\add-dimensions-excel-templates.md)
+-   [Segmented entry control dialog support](..\financial\segmented-entry-control-dialog-support.md)
+-   [Segmented entry control metadata specification](..\financial\segmented-entry-control-metadata-specification.md)
+-   [Segmented entry control - migration guidance](..\financial\segmented-entry-control-migration-guidance.md)
+-   [Segmented Entry control migration walkthrough](..\financial\segmented-entry-control-conversion.md)
+-   [Segmented entry control parm Specification](..\financial\segmented-entry-control-parm-method-specification.md)
+-   [Creating exchange rate providers](..\financial\create-exchange-rate-providers.md)
+-   [Financial dimension configuration for integrating applications](..\financial\financial-dimension-configuration-integration.md)
+-   [Activating financial dimensions](..\financial\activate-financial-dimensions.md)
+-   [Add the ability to look up values for financial dimensions in Microsoft Excel templates](..\financial\add-dimensions-excel-templates.md)
 
 ## Licensing
 -   [ISV licensing](isv-licensing.md)

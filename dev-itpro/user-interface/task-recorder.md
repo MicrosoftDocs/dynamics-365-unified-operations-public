@@ -18,7 +18,7 @@ keywords: SysTaskRecorderPane
 audience: Developer
 # ms.devlang: 
 ms.reviewer: josaw1
-ms.suite: Released- Dynamics AX 7.0.0
+
 # ms.tgt_pltfrm: 
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f

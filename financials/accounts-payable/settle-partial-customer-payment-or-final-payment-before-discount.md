@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.
 
-Fabrikam sells goods to customer 4028. Fabrikam offers a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. Fabrikam also offers cash discounts on partial payments. The [settlement parameters](http://ax.help.dynamics.com/en/?p=246884) are located on the **Accounts receivable parameters** page.
+Fabrikam sells goods to customer 4028. Fabrikam offers a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. Fabrikam also offers cash discounts on partial payments. The settlement parameters are located on the **Accounts receivable parameters** page.
 
 ## Customer invoice
 On June 25, Arnie enters and posts an invoice for 1,000.00 for customer 4028. Arnie can view this transaction on the **Customer transactions** page.

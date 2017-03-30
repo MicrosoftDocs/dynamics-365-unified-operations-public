@@ -42,7 +42,7 @@ Low-value pool depreciation is a reducing balance depreciation method that is us
 
 A low-value pool is created when a low-cost or low-value asset is created in or transferred to a low-value pool. You can use the low-value pool depreciation method on the **Depreciation profiles** page for your company, if the primary address of the legal entities is in Australia. It's assumed that your company is using Australian dollars (AUD) as the functional currency.
 
-## Lowvalue pool depreciation profile
+## Low-value pool depreciation profile
 To use the low-value pool depreciation method, you must enter information in the following fields on the **General** tab on the **Depreciation profiles** page:
 
 -   Low cost value

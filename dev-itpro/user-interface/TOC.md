@@ -59,8 +59,8 @@
 ## [FactBox form pattern](factbox-form-patterns.md)
 # Sub patterns
 ## [Custom Filter Group subpattern](custom-filter-group-subpattern.md)
-## [Dimension entry control subpattern](../financial-dimensions/../financial-dimensions/dimension-entry-control-subpattern.md)
-## [Dimension Expression Builder subpattern](../financial-dimensions/../financial-dimensions/dimension-expression-builder-subpattern.md)
+## [Dimension entry control subpattern](../financial/dimension-entry-control-subpattern.md)
+## [Dimension Expression Builder subpattern](../financial/dimension-expression-builder-subpattern.md)
 ## [Fields and Field Groups subpattern](fields-field-groups-subpattern.md)
 ## [Filters and Toolbar subpatterns](filters-toolbar-subpattern.md)
 ## [Fill Text subpattern](fill-text-subpattern.md)

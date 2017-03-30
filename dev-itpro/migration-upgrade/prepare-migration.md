@@ -41,7 +41,7 @@ You will need access to a Dynamics 365 for Operations development environment 
 
 -   [Development tools](..\dev-tools\developer-home-page.md)
 -   [Models and packages](..\dev-tools\models.md)
--   [X++ programming language](..\dev-reference\xpp-language-reference.md)
+-   [X++ programming language](..\dev-ref\xpp-language-reference.md)
 -   [Extensions and Overlayering](..\extensibility\extensibility-home-page.md)
 -   [User interface development](..\user-interface\user-interface-development-home-page.md)
 
