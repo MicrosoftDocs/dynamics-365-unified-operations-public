@@ -67,7 +67,7 @@ Configure each element that you dragged onto the canvas. For information about h
 -   [Configure a manual decision](configure-manual-decision-workflow.md)
 -   [Configure a conditional decision](configure-conditional-decision-workflow.md)
 -   [Configure a parallel activity](configure-parallel-activity-workflow.md)
--   [Configure a parallel branch](configure-parallel-branch-workflow.md/)
+-   [Configure a parallel branch](configure-parallel-branch-workflow.md)
 -   [Configure a line-item workflow](configure-line-item-workflow.md)
 
 ## Resolve any errors or warnings
