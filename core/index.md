@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 71
+ms.reviewer: margoc
 
 # ms.tgt_pltfrm: 
 ms.custom: 62303
@@ -42,9 +42,9 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Onboarding your organization</p>
+<td><p><a href="onboarding-home.htm">Onboarding your organization</a></p>
 <p>Financials</p>
-<ul><li>Accounts payable</li>
+<ul><li><a href="dynamics365/operations/financials/accounts-payable/accounts-payable.htm">Accounts payable</a></li>
 <li>Accounts receivable</li>
  <li>Cash and bank management</li>
 <li>Cost accounting</li>
