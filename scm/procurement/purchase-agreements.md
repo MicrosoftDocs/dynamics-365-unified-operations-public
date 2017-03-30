@@ -52,7 +52,6 @@ Each line in a purchase agreement is a commitment to buy something. You can use 
 Pricing terms can vary, depending on the type of commitment. The pricing terms from purchase agreements override any other pricing terms that are set up for trade agreements. The following table describes the price-related fields that are affected by each commitment type. Fields that contain **Yes** can be updated on an order line.
 
 | Commitment type                   | Unit price | Price unit | Discount percent | Cash discount amount |
-
 |-----------------------------------|------------|------------|------------------|----------------------|
 | Product quantity commitment       | Yes        | Yes        | Yes              | Yes                  |
 | Product value commitment          |            |            | Yes              |                      |
