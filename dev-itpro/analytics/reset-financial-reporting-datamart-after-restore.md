@@ -3,7 +3,7 @@
 
 title: Reset the financial reporting data mart after restoring a database
 description: This topic describes how to reset the financial reporting data mart after restoring a Microsoft Dynamics 365 for Operations database. 
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 2016-12-08 16 - 20 - 13
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-# ms.reviewer: 2231
+# ms.reviewer: ShylaThompson
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261824
@@ -49,7 +49,11 @@ First, export the report designs located in the Report Designer, using the follo
 5.  Enter a file name and select a secure location where you want to save the exported report definitions.
 6.  Click **Save**.
 
-The file can be copied or uploaded to a secure location, allowing it to be imported into a different environment at another time. Information about using a Microsoft Azure storage account can be found in [Transfer data with the AzCopy Command-Line Utility](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Note:** Microsoft doesn’t provide a storage account as part of your Dynamics 365 for Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. **Important:** Be aware of the behavior of the D drive on Azure Virtual Machines. Do not keep your exported building block groups here permanently. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+The file can be copied or uploaded to a secure location, allowing it to be imported into a different environment at another time. Information about using a Microsoft Azure storage account can be found in [Transfer data with the AzCopy Command-Line Utility](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
+> [!NOTE]
+> Microsoft doesn’t provide a storage account as part of your Dynamics 365 for Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. 
+> [!WARNING]
+> Be aware of the behavior of the D drive on Azure Virtual Machines. Do not keep your exported building block groups here permanently. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ## Stop services
 Use Remote Desktop to connect to all the computers in the environment and stop the following Windows services by using services.msc:
@@ -102,7 +106,9 @@ Use services.msc to restart the services that you stopped earlier:
 Import your report designs from the Report Designer, using the file created during the export:
 
 1.  In the Report Designer, go to **Company** &gt; **Building Block Groups**.
-2.  Select the building block group to export, and click **Export**. **Note:** For Dynamics 365 for Operations, only one building block group is supported, **Default**.
+2.  Select the building block group to export, and click **Export**. 
+    > [!NOTE]
+    > For Dynamics 365 for Operations, only one building block group is supported, **Default**.
 3.  Select the **Default** building block and click **Import**.
 4.  Select the file containing the exported report definitions and click **Open**.
 5.  In the Import dialog box, select the report definitions to import:
