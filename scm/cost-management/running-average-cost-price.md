@@ -35,6 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group. However, before inventory close is run, the system calculates a running average cost price that is typically used when issue transactions are posted.
 
 The system estimates this running average cost price for an item by using the following formula: 
+
 Estimated price = (Physical amount + Financial amount) ÷ (Physical quantity + Financial quantity)
 
 ## Using the running average cost price
