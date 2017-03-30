@@ -5,7 +5,7 @@ This page points to resources that will help you use the Microsoft Dynamics 365 
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
 
 ## Core concepts and tasks
-*  On the left-pane, select a feature area to learn more about it. 
+*  In the left pane, select a feature area to learn more about it. 
 *  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Process inbound ASNs in Warehouse management</a> (video) 
 
 
