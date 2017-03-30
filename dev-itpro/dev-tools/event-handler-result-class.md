@@ -28,7 +28,9 @@ To mitigate this confusion, two new result type classes have been introduced in 
 When using the **EventHandlerAcceptResult** class, the delegate handler method can only respond by calling the **accept** method. When using the **EventHandlerRejectResult** class, only the **reject** method can be called.
 
     [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
-    public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerAcceptResult _result)
+    public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(
+        InventLocationType _inventLocationType, 
+        EventHandlerAcceptResult _result)
     {
         switch (_inventLocationType)
         {
