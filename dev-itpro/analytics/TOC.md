@@ -28,6 +28,7 @@
 ## [Custom design business docs ](custom-designs-business-docs.md)
 
 # [Financial reporting](financial-reporting-intro.md)
+## [Generate a financial report](generate-financial-report.md)
 ## [Financial report components](financial-report-components.md)
 ## [Report designer](report-designer-interface.md)
 ## [User preferences](user-preferences-financial-report-designer.md)
