@@ -74,7 +74,13 @@ The  default inventory order settings also apply when creating:
 -   Planned production orders
 
 ## Full definition of a released product
-When creating a transaction, you need to specify the full definition of a released product on the line before Dynamics 365 for Operations attempts to identify the default order settings. The full definition of released product means that the item number and all the active product dimensions, such as configuration, size, style, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you need to specify all of the required product dimensions before the site, warehouse, quantities, and lead time will display by default on the order line. Not all of the default order settings parameters are applied when creating order or journal lines. Quantities and lead times will only display by default when appropriate. For example, when counting a journal line, only the site and warehouse will display by default when the line is created. Obviously no quantity defaulting or checks on multiple and minimums are performed when creating the line or posting the journal. The system always attempts to find a default site and warehouse when a order or journal line is created. The site is not always displayed by default from the order settings. For example, when creating a sales order or a purchase order, the site from the order header is automatically used on the order lines. When creating a BOM line, the site from the BOM header is used. After the site is determined, it will be used to find any site specific order settings that can then be used as the default for the warehouse. The default order type, the purchase, and the inventory lead times can be overriden by the item's coverage rules on the **Item coverage** page. Although the default order settings don't allow for the distinction between the production and transfer lead time, the item coverage rules allow for it. However, the item coverage setup will only be used by MRP when creating planned production and planned transfer orders and will not apply when manually creating production and transfer orders. 
+When creating a transaction, you need to specify the full definition of a released product on the line before Dynamics 365 for Operations attempts to identify the default order settings. The full definition of released product means that the item number and all the active product dimensions, such as configuration, size, style, and color, are specified on the transaction. For example, if you manually create a purchase order line for a released product variant, you need to specify all of the required product dimensions before the site, warehouse, quantities, and lead time will display by default on the order line. 
+
+Not all of the default order settings parameters are applied when creating order or journal lines. Quantities and lead times will only display by default when appropriate. For example, when counting a journal line, only the site and warehouse will display by default when the line is created. Obviously no quantity defaulting or checks on multiple and minimums are performed when creating the line or posting the journal. 
+
+The system always attempts to find a default site and warehouse when a order or journal line is created. The site is not always displayed by default from the order settings. For example, when creating a sales order or a purchase order, the site from the order header is automatically used on the order lines. When creating a BOM line, the site from the BOM header is used. After the site is determined, it will be used to find any site specific order settings that can then be used as the default for the warehouse. 
+
+The default order type, the purchase, and the inventory lead times can be overriden by the item's coverage rules on the **Item coverage** page. Although the default order settings don't allow for the distinction between the production and transfer lead time, the item coverage rules allow for it. However, the item coverage setup will only be used by MRP when creating planned production and planned transfer orders and will not apply when manually creating production and transfer orders. 
 
 ## Default order settings rules
 You can define general default order settings and any number of default order setting rules that apply only in certain conditions, such as site or a specific product dimension or product dimensions combination. You can't define warehouse specific order settings.
@@ -89,11 +95,15 @@ For distinct released products, you can define general order settings or site sp
 
 ### Site specific order settings
 
-To create site specific order settings, click **New**. In **Details view**, fill in the site in the **Settings applicable for** &gt; **Site** field. In the **Grid view**, fill in the site in the **Site** column. The new rule will automatically get a new rank value, higher than zero. You can create as many site specific rule as needed and you can assign all the site specific rules the same rank, to model that they are equally important. If you are in **Details view**, you can't get the overview of the rules created for the item. Toggle the **Show/Hide list** button to see overview information. When an order line of any type is created and it has no site provided, Dynamics 365 for Operations searches for a rule with no site specified. This could help determine a default site on the order line. This site is then used to search for a site specific rule, where a default warehouse may have been set. This warehouse is applied to the order line.
+To create site specific order settings, click **New**. In **Details view**, fill in the site in the **Settings applicable for** &gt; **Site** field. In the **Grid view**, fill in the site in the **Site** column. The new rule will automatically get a new rank value, higher than zero. You can create as many site specific rule as needed and you can assign all the site specific rules the same rank, to model that they are equally important. 
+
+If you are in **Details view**, you can't get the overview of the rules created for the item. Toggle the **Show/Hide list** button to see overview information. When an order line of any type is created and it has no site provided, Dynamics 365 for Operations searches for a rule with no site specified. This could help determine a default site on the order line. This site is then used to search for a site specific rule, where a default warehouse may have been set. This warehouse is applied to the order line.
 
 ### Specific order settings for product dimension
 
-You can define order settings rules for any active product dimension or combination of active product dimensions. If a product dimension field is left empty, then that the rule applies to all values of the product dimension. Consider the following example product.
+You can define order settings rules for any active product dimension or combination of active product dimensions. If a product dimension field is left empty, then that the rule applies to all values of the product dimension. 
+
+Consider the following example product.
 
 |                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
@@ -102,14 +112,18 @@ You can define order settings rules for any active product dimension or combinat
 | **Configuration** (used to model the type of light) | C1-Visible red light, C2-Infrared light |
 | **Style** (used to model the engineering revision)  | R1, R2, R3                              |
 
-For this example, assume that the product is procured and not produced. Also assume that configuration C1 is more commonly used, so it has shorter lead times. Create the following default order settings to model this scenario.
+For this example, assume that the product is procured and not produced. Also assume that configuration C1 is more commonly used, so it has shorter lead times. 
+
+Create the following default order settings to model this scenario.
 
 | Rank | Site | Configuration | Style | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Yes                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-When a purchase order line or a planned purchase order is created for XW56, Configuration C1, regardless of the revision or site the line is placed at, the lead time will be considered 2. Assume that all revisions besides R3 are stopped. You can create the following default order settings rules.
+When a purchase order line or a planned purchase order is created for XW56, Configuration C1, regardless of the revision or site the line is placed at, the lead time will be considered 2. Assume that all revisions besides R3 are stopped.
+
+You can create the following default order settings rules.
 
 | Rank | Site | Configuration | Style | Purchase - Override default settings | Purchase lead time | Purchase - Stopped | Sales - Override default settings | Sales - Stopped |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
@@ -118,7 +132,11 @@ When a purchase order line or a planned purchase order is created for XW56, Conf
 | 10   |      | C1            |       | Yes                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-The two rules for stopping the old revisions have the same ranking, meaning they are equally important. Both of them have a higher rank than the rule for configuration C1, meaning that they take precedence over the rule for configuration C1. This example explains the need for the rank. If a purchase order is created for configuration C1 and revision R2, in the absence of the rank, the two rules defined for R2 and C1 would be ambiguous. To solve the ambiguity, Dynamics 365 for Operations will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and revision R2, the user will get a warning message that the item is on hold and that this is caused by the revision value. If the rule for the configuration had a higher rank than the one for revision, then the creation of a purchase order line for configuration C1 and revision R2 would have succeeded and no 'item on hold' message would have be given to the user. Consider the following default order setting rules.
+The two rules for stopping the old revisions have the same ranking, meaning they are equally important. Both of them have a higher rank than the rule for configuration C1, meaning that they take precedence over the rule for configuration C1. 
+
+This example explains the need for the rank. If a purchase order is created for configuration C1 and revision R2, in the absence of the rank, the two rules defined for R2 and C1 would be ambiguous. To solve the ambiguity, Dynamics 365 for Operations will search through the rules in descending order of rank and apply the first applicable rule. In the current example, when a purchase order line is created for configuration C1 and revision R2, the user will get a warning message that the item is on hold and that this is caused by the revision value. If the rule for the configuration had a higher rank than the one for revision, then the creation of a purchase order line for configuration C1 and revision R2 would have succeeded and no 'item on hold' message would have be given to the user. 
+
+Consider the following default order setting rules.
 
 | Rank | Site | Configuration | Style | Default site | Default warehouse | Purchase - Override default storage dimensions | Purchase warehouse |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
@@ -126,7 +144,15 @@ The two rules for stopping the old revisions have the same ranking, meaning the
 | 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-The system traverses the set of rules two times in order to determine the site and warehouse. When a purchase order line is created for configuration C1, style R2, the site is determined based on the rule with rank 10. Then the system searches for a rule for site 2 in order to determine a warehouse. Rule 20 is found and because it has a higher rank, the warehouse on the purchase order line will be 22, and not 21. As a general guidance, specific rules and rules for dimensions that are more important than other dimensions get higher ranks, while more generic rules get lower ranks. The rule with rank zero serves as a safety net. If no other rules are hit, then the default order settings from rule zero will be used. Because the rank number is so important, on the **Default order settings** Action Pane, there are functions to move a rule up or down and to renumber the rules, so that they are always in increments of 10. The number of rules created for a released product may be many. In order to get a better sense of what each rule is overriding and why it's needed, we recommend using the **Grid view** on the **Default order settings** page. You can enable the grid view by going to the **Options** Action Pane &gt; **Page options** &gt; **Change view** &gt; **Grid view**. The number of columns displayed in the grid could be quite significant, especially for the sales and inventory tabs. To limit the number of columns shown in the grid, groups of columns can be hidden or displayed by using the buttons on the **Default order settings** &gt; **Column display** menu.
+The system traverses the set of rules two times in order to determine the site and warehouse. When a purchase order line is created for configuration C1, style R2, the site is determined based on the rule with rank 10. Then the system searches for a rule for site 2 in order to determine a warehouse. Rule 20 is found and because it has a higher rank, the warehouse on the purchase order line will be 22, and not 21. 
+
+As a general guidance, specific rules and rules for dimensions that are more important than other dimensions get higher ranks, while more generic rules get lower ranks. 
+
+The rule with rank zero serves as a safety net. If no other rules are hit, then the default order settings from rule zero will be used. 
+
+Because the rank number is so important, on the **Default order settings** Action Pane, there are functions to move a rule up or down and to renumber the rules, so that they are always in increments of 10. 
+
+The number of rules created for a released product may be many. In order to get a better sense of what each rule is overriding and why it's needed, we recommend using the **Grid view** on the **Default order settings** page. You can enable the grid view by going to the **Options** Action Pane &gt; **Page options** &gt; **Change view** &gt; **Grid view**. The number of columns displayed in the grid could be quite significant, especially for the sales and inventory tabs. To limit the number of columns shown in the grid, groups of columns can be hidden or displayed by using the buttons on the **Default order settings** &gt; **Column display** menu.
 
 ### Specific order settings for released product variant
 
