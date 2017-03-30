@@ -90,7 +90,7 @@ No. The values that you set when you configure a product are the values that are
 If you remove an input value in a calculation, the value of the target attribute is also removed.
 
 ## Why do I receive an error message that says that my model is in contradiction?
-This message is shown when a calculation includes an error, or when a contradiction exists in one or more constraints. For more information about contradictions in constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints.md). Here are some situations where errors can occur in calculations:
+This message is shown when a calculation includes an error, or when a contradiction exists in one or more constraints. For more information about contradictions in constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints-product-configuration-models.md). Here are some situations where errors can occur in calculations:
 
 -   A value is divided by 0 (zero).
 -   A conflict exists between the following two elements:
