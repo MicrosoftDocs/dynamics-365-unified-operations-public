@@ -45,7 +45,7 @@ The Microsoft Dynamics 365 for Operations platform consists of the following com
     -   Application Foundation
     -   Test Essentials
 
-**Important:** To move to the latest Dynamics 365 for Operations platform, your Dynamics 365 for Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in platform update 3, so that seamless continuous updates can be made to the platform. For more information see the [Upgrading to platform update 3 from an earlier build](http://ax.help.dynamics.com/en/upgrade-latest-platform-upgrade#earlier) section at the end of this topic.
+**Important:** To move to the latest Dynamics 365 for Operations platform, your Dynamics 365 for Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in platform update 3, so that seamless continuous updates can be made to the platform. For more information see the **Upgrading to platform update 3 from an earlier build** section at the end of this topic.
 
 ## Overall flow
 The following illustration shows the overall process for upgrading the Microsoft Dynamics AX platform to the latest update. [![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)

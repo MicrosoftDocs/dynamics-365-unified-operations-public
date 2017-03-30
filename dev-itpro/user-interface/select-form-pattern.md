@@ -373,8 +373,8 @@ Form: FmClerkWorkspace
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Custom Filters](custom-filter-group-subpattern.md) (two variants)             | Containers that display QuickFilters and any other modeled custom filters                           |
 | Fields (five variants)                                                                                           | Containers that primarily display individual fields                                                 |
-| [Dimension Expression Builder](..\financial-dimensions\dimension-expression-builder-subpattern.md)     | Containers that include a Dimension Expression Builder control                                      |
-| [Dimension Entry Control](..\financial-dimensions\dimension-entry-control-subpattern.md)               | Containers that include a Dimension Entry Control                                                   |
+| [Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md)     | Containers that include a Dimension Expression Builder control                                      |
+| [Dimension Entry Control](../financial/dimension-entry-control-subpattern.md)               | Containers that include a Dimension Entry Control                                                   |
 | [List Panel](list-panel-subpattern.md)                                         | Containers that display two lists that users move items between                                     |
 | [Nested Simple List and Details](nested-simple-list-details-subpattern.md) | Containers that are used to embed a simpler Simple List and Details form inside a section in a form |
 | [Toolbar and Fields](toolbar-fields-subpattern.md)                         | Containers that display actions above a set of fields                                               |
@@ -399,7 +399,7 @@ Form: LedgerJournalTable (TopFields)
 
 [![HowToSelectAFormPattern (16)](./media/howtoselectaformpattern-16.jpg)](./media/howtoselectaformpattern-16.jpg)
 
-**[Custom and Quick Filters](..\financial-dimensions\dimension-entry-control-subpattern.md)** Use this variant when a QuickFilter is required.
+**[Custom and Quick Filters](../financial/dimension-entry-control-subpattern.md)** Use this variant when a QuickFilter is required.
 
 Form: CustTable (CustomFilterGroup)
 
@@ -505,11 +505,11 @@ Form: HcmPosition (WorkerAssignmentTabPage)
 
 [![HowToSelectAFormPattern (29)](./media/howtoselectaformpattern-29.jpg)](./media/howtoselectaformpattern-29.jpg)
 
-**[Dimension Entry Control](..\financial-dimensions\dimension-entry-control-subpattern.md)** Use this form pattern on tab pages that have only a Dimension Entry Control.
+**[Dimension Entry Control](../financial/dimension-entry-control-subpattern.md)** Use this form pattern on tab pages that have only a Dimension Entry Control.
 
 Form: CustTable (TabFinancialDimensions)
 
 [![HowToSelectAFormPattern (30)](./media/howtoselectaformpattern-30.jpg)](./media/howtoselectaformpattern-30.jpg)
 
-**[Dimension Expression Builder](..\financial-dimensions\dimension-expression-builder-subpattern.md)** Use this form pattern on containers that include a Dimension Expression Builder control.
+**[Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md)** Use this form pattern on containers that include a Dimension Expression Builder control.
 

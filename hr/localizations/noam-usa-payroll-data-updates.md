@@ -95,7 +95,7 @@ To change the payroll settings after that is done, follow these steps:
     -   Assign default tax regions: A default tax region is required for each position that a worker holds.
     -   Configure worker tax codes: If the new position is in a different tax region, or if it is paid by a different legal entity, you can assign additional tax codes to the worker. You must set up these tax codes before the worker can be paid.
 
-2.  When you change a worker position, this also might change which benefits the worker is eligible for. Go to [Define and manage a benefit program](/hr/manage-benefit-program.md) and complete these tasks:
+2.  When you change a worker position, this also might change which benefits the worker is eligible for. Go to [Define and manage a benefit program](./manage-benefit-program.md) and complete these tasks:
     -   Create an eligibility event.
     -   Process eligibility for benefits.
     -   Enroll workers in benefits.
@@ -106,7 +106,7 @@ To change the payroll settings after that is done, follow these steps:
 When a worker has a qualifying life event that allows for a change of benefits, other payroll data for that worker might also change because of the event.
 
 To change the benefits, follow these steps:
-1.  Go to [Define and manage a benefit program](/hr/manage-benefit-program.md) and complete the following:
+1.  Go to [Define and manage a benefit program](./manage-benefit-program.md) and complete the following:
     -   Create an eligibility event.
     -   Process eligibility for benefits.
     -   Enroll workers in benefits.

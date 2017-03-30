@@ -249,7 +249,7 @@ You can't use reserved keywords as solver names for attributes, components, or s
 See also
 --------
 
-[Create an expression constraint](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Create an expression constraint (Task guide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Add a calculation to a product configuration model](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Add a calculation to a product configuration model (Task guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
 

@@ -173,7 +173,7 @@ All tiles require a backing query to retrieve the correct information.
 
 6.  Press **Ctrl+S** to save.
 
-Tiles also have a refresh frequency property that controls how often the counts on the tiles are automatically updated. The value that is set for this property should be based on the demand for updated counts, together with query execution speed against volume data. For guidance about how to set this property, see [How to - Tile and List Caching for Workspaces](http://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=246774). For this lab, the default value of 10 minutes will be enough.
+Tiles also have a refresh frequency property that controls how often the counts on the tiles are automatically updated. The value that is set for this property should be based on the demand for updated counts, together with query execution speed against volume data. For guidance about how to set this property, see [Tile and List Caching for Workspaces](tile-list-caching-workspaces.md). For this lab, the default value of 10 minutes will be enough.
 
 ### Add a tile button to the workspace form
 

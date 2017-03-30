@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article walks you through a scenario where partial payments are made for a vendor invoice, and a cash discount is taken.
 
-Fabrikam buys goods from vendor 3064. The vendor gives Fabrikam a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The [settlement parameters](http://ax.help.dynamics.com/en/?p=246884) are located on the **Accounts payable parameters** page. On June 25, April enters an invoice for 1,000.00 for vendor 3064.
+Fabrikam buys goods from vendor 3064. The vendor gives Fabrikam a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The settlement parameters are located on the **Accounts payable parameters** page. On June 25, April enters an invoice for 1,000.00 for vendor 3064.
 
 ## Vendor invoice on June 25
 On June 25, April enters and posts an invoice for 1,000.00 for vendor 3064. April can view this transaction on the **Vendor transactions** page.

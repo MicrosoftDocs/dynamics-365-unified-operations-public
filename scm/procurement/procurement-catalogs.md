@@ -75,5 +75,5 @@ Updates are published either automatically or manually, depending on the option 
 See also
 --------
 
-[Set up a procurement category hierarchy](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Set up a procurement category hierarchy (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
 

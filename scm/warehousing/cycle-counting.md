@@ -87,7 +87,7 @@ The following table shows the prerequisites that must be in place before you can
 <li>Cycle count grouping</li>
 <li>Spot cycle counting</li>
 </ul>
-For more information, see <a href="http://ax.help.dynamics.com/en/wiki/Configure-mobile-devices-for-warehouse-work">Configure mobile devices for warehouse work</a>.</li>
+For more information, see (<a href="configure-mobile-devices-warehouse">Configure mobile devices for warehouse work</a>.</li>
 <li>Set up a menu for the mobile device.</li>
 <li>Create a work user account, and assign a mobile device menu to the work user ID.</li>
 </ul></td>

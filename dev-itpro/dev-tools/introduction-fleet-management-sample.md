@@ -58,7 +58,7 @@ See also
 
 [Using the Fleet Management sample](fleet-management-sample.md)
 
-[Customize model elements using extensions](http://ax.help.dynamics.com/en/wiki/customize-model-elements-using-extensions-2/)
+[Customize model elements using extensions](../extensibility/customize-model-elements-extensions.md)
 
 [Developer Home Page](developer-home-page.md)
 

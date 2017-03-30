@@ -182,7 +182,7 @@ For developer access, you must be an administrator on the instance. To provision
 
 ### Base URL of the local application
 
-After the user is provisioned as an administrator, that user can access the instance on the computer by navigating to the following base URL: https://usnconeboxax1aos.cloud.onebox.dynamics.com. If you're using version control and plan to connect multiple development VMs to the same Visual Studio Team Services (VSTS) project, rename your local VM. For instructions, see [Rename a local development VM to enable access to Visual Studio Team Services](http://ax.help.dynamics.com/visual-studio-online-vso-machine-renaming).
+After the user is provisioned as an administrator, that user can access the instance on the computer by navigating to the following base URL: https://usnconeboxax1aos.cloud.onebox.dynamics.com. If you're using version control and plan to connect multiple development VMs to the same Visual Studio Team Services (VSTS) project, rename your local VM. For instructions, see [Rename a local development VM to enable access to Visual Studio Team Services](../migration-upgrade/vso-machine-renaming.md).
 
 #### Retail configuration
 
@@ -207,8 +207,8 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Retail configuration
 
 The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Retail SDK overview](/retail/dynamics365/operations/dev-itpro/retail-sdk-overview)
--   [Retail POS device activation](/retail/devi-itpro/cloud-pos-and-modern-pos-guided-device-activation-and-client-simplifications)
+-   [Retail SDK overview](/dynamics365/operations/retail/dynamics365/operations/dev-itpro/retail-sdk-overview)
+-   [Retail POS device activation](/dynamics365/operations/retail/dev-itpro/retail-device-activation.md)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.

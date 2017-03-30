@@ -201,7 +201,7 @@ You can ciew this by clicking on the **SQL Now** tab on the **Environment monito
 
 **BPM and Task guides** 
 
-The list of task guides that were made available with the February 2016 release of Dynamics AX has been published, and can be found here, [New task guides available (February 2016)](/get-started/new-task-guides-available-february-2016.md). **BPM Integration with VSTS (Public preview)**
+The list of task guides that were made available with the February 2016 release of Dynamics AX has been published, and can be found here, [New task guides available (February 2016)](../get-started/new-task-guides-available-february-2016.md). **BPM Integration with VSTS (Public preview)**
 
 1.  On the LCS portal, select the **Preview feature management** tile and turn on the feature named **VSO WorkItem Mapping**. This will enable you to preview the new BPM functionality.
 2.  After you have configured Visual Studio Team Services (VSTS) from the LCS project settings, go to your BPM library and on the left-pane, under **Implementation views**, click **Review processes**.
@@ -237,7 +237,7 @@ You should apply sequentially if the selected data packages depend on each other
 You can also enter a tag. A tag can be used as a keyword that will appear on the history page to indicate that these packages have been applied as part of the same job.
 
 ## May 2016
-The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the May release of Lifecycle Services. **NEW FEATURES** **Microsoft Dynamics AX May 2016 Update is now available** Starting today, you can deploy the Microsoft Dynamics AX May 2016 Update from LCS When you select a topology for deployment in the partner project workspace or in Cloud hosted environment in customer implementation project, you can select either RTW or the May Update (Update 1). For more information about what’s new in the May Update, see the [What’s new or changed](/get-started/whats-new-changed.md) wiki topic. 
+The Microsoft Dynamics Lifecycle Services team is happy to announce the immediate availability of the May release of Lifecycle Services. **NEW FEATURES** **Microsoft Dynamics AX May 2016 Update is now available** Starting today, you can deploy the Microsoft Dynamics AX May 2016 Update from LCS When you select a topology for deployment in the partner project workspace or in Cloud hosted environment in customer implementation project, you can select either RTW or the May Update (Update 1). For more information about what’s new in the May Update, see the [What’s new or changed](../get-started/whats-new-changed.md) wiki topic. 
 
 ![1](https://msdnshared.blob.core.windows.net/media/2016/05/165-e1464377383160.png)
 
@@ -639,7 +639,7 @@ Microsoft owned configurations for CTP8 were added under the **GER configuration
 With January release of LCS, all existing Office 365 administrators of your Microsoft Dynamics AX tenant will also be LCS administrators. Previously, one specific user was assigned the role of LCS administrator. 
 
 **Business process modeler** 
-We have addressed the issue with B**usiness process modeler** (BPM) search indexing. If you have experienced issues with help content delivery in the newest version of Dynamics AX, this fix helps resolve the issues you have seen. If you have seen the following message in your BPM library, it means that the indexing of the library is pending. 
+We have addressed the issue with **Business process modeler** (BPM) search indexing. If you have experienced issues with help content delivery in the newest version of Dynamics AX, this fix helps resolve the issues you have seen. If you have seen the following message in your BPM library, it means that the indexing of the library is pending. 
 
 ![5](https://msdnshared.blob.core.windows.net/media/2016/01/58.png) 
 
@@ -656,5 +656,5 @@ We have made significant performance improvements to the process data package cr
 See also
 --------
 
-[What’s new or changed](/get-started/whats-new-changed.md)
+[What’s new or changed](../get-started/whats-new-changed.md)
 
