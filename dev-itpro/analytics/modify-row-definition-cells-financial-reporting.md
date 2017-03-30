@@ -3,7 +3,7 @@
 
 title: Modify row definition cells
 description: This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information. 
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
 ms.date: 2016-03-07 16 - 09 - 06
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 # ms.tgt_pltfrm: 
 ms.custom: 58881
@@ -42,7 +42,9 @@ In row definitions, the numbers or labels in the **Row Code** cell identify each
 
 A row code is required for all rows. You can mix numeric, alphanumeric, and unset (empty) row codes in a row definition. The row code can be any positive integer (below 100,000,000) or a descriptive label that identifies that row. A descriptive label must follow these rules:
 
--   The label must begin with an alphabetical character (a through z or A through Z), and can be any combination of numbers and letters up to 16 characters. **Note:** A label can include the underscore character (\_), but no other special characters are allowed.
+-   The label must begin with an alphabetical character (a through z or A through Z), and can be any combination of numbers and letters up to 16 characters. 
+    > [!NOTE]
+    > A label can include the underscore character (\_), but no other special characters are allowed.
 -   The label can't use any of the following reserved words: AND, OR, IF, THEN, ELSE, PERIODS, TO, BASEROW, UNIT, NULL, CPO, or RPO.
 
 The following examples are valid row codes:
@@ -60,10 +62,14 @@ The following examples are valid row codes:
 
 1.  In Report Designer, click **Row Definitions**, and then open the row definition to modify.
 2.  On the **Edit** menu, click **Renumber Rows**.
-3.  In the **Renumber Rows** dialog box, specify new values for the starting row code and the row code increment. You can reset the numeric row codes to equally spaced values. However, report designer renumbers only row codes that begin with numbers (for example, 130 or 246). It doesn't renumber row codes that begin with letters (for example, INCOME\_93 or TP0693). **Note:** When you renumber row codes, report designer automatically updates **TOT** and **CAL** references. For example, if a **TOT** row refers to a range that starts with row code 100, and you renumber rows, starting with 90, the starting **TOT** reference changes from 100 to 90.
+3.  In the **Renumber Rows** dialog box, specify new values for the starting row code and the row code increment. You can reset the numeric row codes to equally spaced values. However, report designer renumbers only row codes that begin with numbers (for example, 130 or 246). It doesn't renumber row codes that begin with letters (for example, INCOME\_93 or TP0693). 
+> [!NOTE]
+> When you renumber row codes, report designer automatically updates **TOT** and **CAL** references. For example, if a **TOT** row refers to a range that starts with row code 100, and you renumber rows, starting with 90, the starting **TOT** reference changes from 100 to 90.
 
 ## Add a description
-The description cell provides the description of the financial data in the row of the report, such as "Revenue" or "Net Income." The text in the **Description** cell appears on the report exactly as you enter it in the row definition. **Note:** The width of the description column on the report is set in the column definition. If the text in the **Description** column in the row definition is long, verify the width of the **DESC** column. When you use the **Insert Rows from** dialog box, the values in the **Description** column are the segment values or dimension values from the financial data. You can insert rows to add descriptive text, such as a section heading or a section total, and to add formatting, such as a line before a total row. If the report includes a reporting tree, you can include the additional text that is defined for the reporting units in the reporting tree. You can also limit the additional text to a specific reporting unit.
+The description cell provides the description of the financial data in the row of the report, such as "Revenue" or "Net Income." The text in the **Description** cell appears on the report exactly as you enter it in the row definition. 
+> [!NOTE]
+> The width of the description column on the report is set in the column definition. If the text in the **Description** column in the row definition is long, verify the width of the **DESC** column. When you use the **Insert Rows from** dialog box, the values in the **Description** column are the segment values or dimension values from the financial data. You can insert rows to add descriptive text, such as a section heading or a section total, and to add formatting, such as a line before a total row. If the report includes a reporting tree, you can include the additional text that is defined for the reporting units in the reporting tree. You can also limit the additional text to a specific reporting unit.
 
 ### Add the description for a line on a report
 
@@ -85,7 +91,9 @@ The description cell provides the description of the financial data in the row o
 4.  In the **Select reporting unit for restriction** field, expand or collapse the reporting tree, and then select a reporting unit.
 
 ## Add a format code
-The **Format Code** cell offers a selection of preformatted choices for the content of that row. If the **Format Code** cell is blank, the row is interpreted as a financial data detail row. **Note:** If a report contains non-amount formatting rows that are related to amount rows that have been suppressed (for example, because of zero balances), you can use the **Related Formulas/Rows/Units** column to prevent title and format rows from being printed.
+The **Format Code** cell offers a selection of preformatted choices for the content of that row. If the **Format Code** cell is blank, the row is interpreted as a financial data detail row. 
+> [!NOTE]
+> If a report contains non-amount formatting rows that are related to amount rows that have been suppressed (for example, because of zero balances), you can use the **Related Formulas/Rows/Units** column to prevent title and format rows from being printed.
 
 ### Add a format code to a report row
 
@@ -144,7 +152,9 @@ When you create a row total formula, you must use row codes to specify which row
 
 ### Relate a format row to an amount row
 
-In the **Format Code** column in a row definition, the **DES**, **LFT**, **RGT**, **CEN**, **---**, and **===** format codes apply formatting to non-amount rows. To prevent this formatting from being printed when the related amount rows are suppressed (for example, because the amount rows contain zero values or no period activity), you must relate the format rows to the corresponding amount rows. This functionality is useful when you want to prevent headers or formatting that is related to subtotals from being printed when there is no detail to print for the period. **Note:** You can also prevent the detailed amount rows from being printed by clearing the option to display rows without amounts. This option is located on the **Settings** tab of the report definition. By default, transaction detail accounts that have a zero balance or no period activity are suppressed in reports. To show these transaction detail accounts, select the **Display rows without an amounts** check box on the **Settings** tab of the report definition.
+In the **Format Code** column in a row definition, the **DES**, **LFT**, **RGT**, **CEN**, **---**, and **===** format codes apply formatting to non-amount rows. To prevent this formatting from being printed when the related amount rows are suppressed (for example, because the amount rows contain zero values or no period activity), you must relate the format rows to the corresponding amount rows. This functionality is useful when you want to prevent headers or formatting that is related to subtotals from being printed when there is no detail to print for the period. 
+    > [!NOTE]
+    >  You can also prevent the detailed amount rows from being printed by clearing the option to display rows without amounts. This option is located on the **Settings** tab of the report definition. By default, transaction detail accounts that have a zero balance or no period activity are suppressed in reports. To show these transaction detail accounts, select the **Display rows without an amounts** check box on the **Settings** tab of the report definition.
 
 ### Relate a format row to an amount row
 
@@ -200,7 +210,9 @@ Sorting codes sort accounts or values, sort an actual or budget variance report
 1.  In Report Designer, click **Row Definitions**, and then open the row definition to modify.
 2.  Double-click the **Format Code** cell, and then select a sorting code.
 3.  In the **Related Formulas/Rows/Units** cell, specify the range of row codes to sort. To specify a range, enter the first row code, a colon (:), and then the last row code. For example, enter **160:490** to specify that the range is row 160 through row 490.
-4.  In the **Column Restriction** cell, enter the letter of the report column to use for the sorting. **Note:** Include only amount rows in a sort calculation.
+4.  In the **Column Restriction** cell, enter the letter of the report column to use for the sorting. 
+    > [!NOTE]
+    > Include only amount rows in a sort calculation.
 
 ### Examples of ascending and descending column values
 
@@ -224,255 +236,38 @@ In the following example, the values in column D of the report will be sorted in
 
 Here is an example of the report that is generated.
 
-**Variance Analysis (Sorted by Variance)**
-
-**Beijing and Atlanta Regions**
-
-**For the Seven Months Ending July 31, 2013**
-
-**July**
-
-**YTD**
-
-**Actual**
-
-**Budget**
-
-**Variance**
-
-**Actual**
-
-**Budget**
-
-**Variance**
-
-**Sorted by Monthly Variance in Ascending Order**
-
-COGS
-
-873,872
-
-236,144
-
-(637,728)
-
-4,864,274
-
-1,590,315
-
-(3,273,959)
-
-Salaries and Wages
-
-97,624
-
-65,573
-
-(32,051)
-
-653,884
-
-441,664
-
-(212,220)
-
-Sales Discounts
-
-36,383
-
-24,152
-
-(12,231)
-
-241,562
-
-162,670
-
-(78,892)
-
-Sales Returns
-
-10,917
-
-7,246
-
-(3,671)
-
-62,809
-
-48,803
-
-(14,006)
-
-Rent Expense
-
-12,052
-
-9,019
-
-(3,033)
-
-80,444
-
-60,748
-
-(19,696)
-
-Office Expense
-
-5,023
-
-3,291
-
-(1,732)
-
-33,420
-
-22,098
-
-(11,322)
-
-Travel Expense
-
-7,656
-
-7,641
-
-(15)
-
-51,062
-
-51,469
-
-407
-
-Sales
-
-1,240,119
-
-410,389
-
-829,730
-
-7,139,288
-
-2,764,549
-
-4,374,739
-
-**Sorted by YTD Absolute Variance in Descending Order**
-
-Sales
-
-1,240,119
-
-410,389
-
-829,730
-
-7,139,288
-
-2,764,549
-
-4,374,739
-
-Travel Expense
-
-7,656
-
-7,641
-
-(15)
-
-51,062
-
-51,469
-
-407
-
-Office Expense
-
-5,023
-
-3,291
-
-(1,732)
-
-33,420
-
-22,098
-
-(11,322)
-
-Sales Returns
-
-10,917
-
-7,246
-
-(3,671)
-
-62,809
-
-48,803
-
-(14,006)
-
-Rent Expense
-
-12,052
-
-9,019
-
-(3,033)
-
-80,444
-
-60,748
-
-(19,696)
-
-Sales Discounts
-
-36,383
-
-24,152
-
-(12,231)
-
-241,562
-
-162,670
-
-(78,892)
-
-Salaries and Wages
-
-97,624
-
-65,573
-
-(32,051)
-
-653,884
-
-441,664
-
-(212,220)
-
-COGS
-
-873,872
-
-236,144
-
-(637,728)
-
-4,864,274
-
-1,590,315
-
-(3,273,959)
+|||||||||
+|---|---|---|---|---|---|---|
+|**Variance Analysis (Sorted by Variance)**|||||||
+
+|**Beijing and Atlanta Regions**|||||||
+
+|**For the Seven Months Ending July 31, 2013**|||||||
+
+||**July**|**YTD**|||||
+
+||**Actual**|**Budget**|**Variance**|**Actual**|**Budget**|**Variance**|
+
+|**Sorted by Monthly Variance in Ascending Order**|||||||
+
+|COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
+
+|Salaries and Wages|97,624|65,573|(32,051)|653,884|441,664|(212,220)|
+|Sales Discounts|36,383|24,152|(12,231)|241,562|162,670|(78,892)|
+|Sales Returns|10,917|7,246|(3,671)|62,809|48,803|(14,006)|
+|Rent Expense|12,052|9,019|(3,033)|80,444|60,748|(19,696)|
+|Office Expense|5,023|3,291|(1,732)|33,420|22,098|(11,322)|
+|Travel Expense|7,656|7,641|(15)|51,062|51,469|407|
+|Sales|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739|
+|**Sorted by YTD Absolute Variance in Descending Order**|||||||
+|Sales|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739|
+|Travel Expense|7,656|7,641|(15)|51,062|51,469|407|
+|Office Expense|5,023|3,291|(1,732)|33,420|22,098|(11,322)|
+|Sales Returns|10,917|7,246|(3,671)|62,809|48,803|(14,006)|
+|Rent Expense|12,052|9,019|(3,033)|80,444|60,748|(19,696)|
+|Sales Discounts|36,383|24,152|(12,231)|241,562|162,670|(78,892)|
+|Salaries and Wages|97,624|65,573|(32,051)|653,884|441,664|(212,220)|
+|COGS|873,872|236,144|(637,728)|4,864,274|1,590,315|(3,273,959)|
 
 ## Specify a Format Override cell
 The **Format Override** cell specifies the formatting that is used for the row when the report is printed. This formatting overrides the formatting that is specified in the column definition and the report definition. By default, the formatting that is specified in those definitions is currency. If one row of the report lists the number of assets, such as the number of buildings, and another row lists the monetary value of those assets, you can override the currency formatting and enter numeric formatting for the row that specifies the number of buildings. You specify this information in the **Format Override** dialog box. The available options depend on the format category that you select. The **Sample** area of the dialog box shows example formats. The following format categories are available:
@@ -496,7 +291,9 @@ Currency formatting applies to a fiscal amount and includes the currency symbol.
 -   **Currency symbol** – The currency symbol for the report. This value overrides the **Regional Options** setting for the company information.
 -   **Negative numbers** – Negative numbers can have a minus sign (-), they can appear in parentheses, or they can have a triangle (∆).
 -   **Decimal places** – The number of digits to show after the decimal point.
--   **Zero value override text** – The text to include in the report when the amount is 0 (zero). This text appears as the last line in the **Sample** area. **Note:** If printing is suppressed for zero values or no period activity, this text is suppressed.
+-   **Zero value override text** – The text to include in the report when the amount is 0 (zero). This text appears as the last line in the **Sample** area. 
+    > [!NOTE]
+    >  If printing is suppressed for zero values or no period activity, this text is suppressed.
 
 ### Numeric formatting
 
@@ -504,7 +301,9 @@ Numeric formatting applies to any amount and doesn't include a currency symbol. 
 
 -   **Negative numbers** – Negative numbers can have a minus sign (-), they can appear in parentheses, or they can have a triangle (∆).
 -   **Decimal places** – The number of digits to show after the decimal point.
--   **Zero value override text** – The text to include in the report when the amount is 0 (zero). This text appears as the last line in the **Sample** area. **Note:** If printing is suppressed for zero values or no period activity, this text is suppressed.
+-   **Zero value override text** – The text to include in the report when the amount is 0 (zero). This text appears as the last line in the **Sample** area. 
+    > [!NOTE]
+    >  If printing is suppressed for zero values or no period activity, this text is suppressed.
 
 ### Percentage formatting
 
@@ -512,14 +311,18 @@ Percentage formatting includes the percent sign (%). The following options are a
 
 -   **Negative numbers** – Negative numbers can have a minus sign (-), they can appear in parentheses, or they can have a triangle (∆).
 -   **Decimal places** – The number of digits to display after the decimal point.
--   **Zero value override text** – The text to include in the report when the amount is 0 (zero). This text appears as the last line in the **Sample** area. **Note:** If printing is suppressed for zero values or no period activity, this text is suppressed.
+-   **Zero value override text** – The text to include in the report when the amount is 0 (zero). This text appears as the last line in the **Sample** area. 
+    > [!NOTE]
+    >  If printing is suppressed for zero values or no period activity, this text is suppressed.
 
 ### Custom formatting
 
 Use the custom formatting category to create a custom format override. The following options are available:
 
 -   **Type** – The custom format.
--   **Zero value override text** – The text to include in the report when the amount is 0 (zero). This text appears as the last line in the **Sample** area. **Note:** If printing is suppressed for zero values or no period activity, this text is suppressed.
+-   **Zero value override text** – The text to include in the report when the amount is 0 (zero). This text appears as the last line in the **Sample** area. 
+    > [!NOTE]
+    >  If printing is suppressed for zero values or no period activity, this text is suppressed.
 
 The type should represent the positive value and then the negative value. Typically, you enter a similar format that differentiates positive and negative values. For example, to specify that both positive and negative values have two decimal places, but negative values appear in parentheses, enter **0.00;(0.00)**. The following table shows custom formats that you can use to control the format of your values. All the examples start from the value 1234.56.
 
@@ -574,14 +377,18 @@ When you select a specific account, report designer usually combines the account
 
 ### Book code modifiers
 
-You can limit a row to an existing book code. The column definition must include at least one **FD** column that has a book code. **Note:** The book code restriction for a row overrides the book code restrictions in the column definition for that row.
+You can limit a row to an existing book code. The column definition must include at least one **FD** column that has a book code. 
+> [!NOTE]
+> The book code restriction for a row overrides the book code restrictions in the column definition for that row.
 
 ### Account and transaction attributes
 
 Some accounting systems support account attributes and transaction attributes in the financial data. These attributes function like virtual account segments, and can carry additional information about the account or transaction. This additional information might be account IDs, batch IDs, postal codes, or other attributes. If your accounting system supports attributes, you can use account attributes or transaction attributes as row modifiers in the row definition. For information about how to override row information, see the "Override a column definition" section earlier in this article.
 
 ## Specify a Link to Financial Dimensions cell
-The **Link to Financial Dimensions** cell contains links to the financial data that should be included in each row of a report. This cell contains dimension values, but you can specify cells in a Microsoft Excel worksheet instead of, or in addition to, segment values or dimension values. To open the **Dimensions** dialog box, double-click the **Link to Financial Dimensions** cell. **Note:** Report Designer can't select accounts, dimensions, or fields from the Microsoft Dynamics ERP system that include any of the following reserved characters: &, \*, \[, \], {, or }. To specify information for a row that is already in the row definition, add the information in the **Link to Financial Dimensions** cell. To add new rows that link to the financial data, use the **Insert Rows from** dialog box to create new rows in the report definition. The column title changes, depending on how the column is configured, as shown in the following table.
+The **Link to Financial Dimensions** cell contains links to the financial data that should be included in each row of a report. This cell contains dimension values, but you can specify cells in a Microsoft Excel worksheet instead of, or in addition to, segment values or dimension values. To open the **Dimensions** dialog box, double-click the **Link to Financial Dimensions** cell. 
+> [!NOTE]
+> Report Designer can't select accounts, dimensions, or fields from the Microsoft Dynamics ERP system that include any of the following reserved characters: &, \*, \[, \], {, or }. To specify information for a row that is already in the row definition, add the information in the **Link to Financial Dimensions** cell. To add new rows that link to the financial data, use the **Insert Rows from** dialog box to create new rows in the report definition. The column title changes, depending on how the column is configured, as shown in the following table.
 
 | Link type that is selected       | The description of the Link column changes to this |
 |----------------------------------|----------------------------------------------------|
@@ -610,21 +417,27 @@ By default, report designer doesn't print any row that doesn't have a correspond
 3.  On the **File** menu, click **Save** to save your changes.
 
 ## Use wildcard characters and ranges in a row definition
-When you enter a natural segment value in the **Dimensions** dialog box, you can put a wildcard character (? or \*) in any position of a segment. Report designer extracts all the values for the defined positions without considering the wildcard characters. For example, the row definition contains only natural segment values, and natural segments have four characters. By entering **6???** in a row, you instruct report designer to include all accounts that have a natural segment value that starts with a 6. If you enter **6\***, the same results are returned, but the results also include variable-width values, such as **60** and **600000**. Report designer replaces each wildcard character (?) with the complete range of possible values, which include letters and special characters. For example, in the range from **12?0** through **12?4**, the wildcard character in **12?0** is replaced with the lowest value in the character set, and the wildcard character in **12?4** is replaced with the highest value in the character set. **Note:** You should avoid using wildcard characters for the starting and ending accounts in ranges. If you use wildcard characters in either the starting account or the ending account, you might receive unexpected results.
+When you enter a natural segment value in the **Dimensions** dialog box, you can put a wildcard character (? or \*) in any position of a segment. Report designer extracts all the values for the defined positions without considering the wildcard characters. For example, the row definition contains only natural segment values, and natural segments have four characters. By entering **6???** in a row, you instruct report designer to include all accounts that have a natural segment value that starts with a 6. If you enter **6\***, the same results are returned, but the results also include variable-width values, such as **60** and **600000**. Report designer replaces each wildcard character (?) with the complete range of possible values, which include letters and special characters. For example, in the range from **12?0** through **12?4**, the wildcard character in **12?0** is replaced with the lowest value in the character set, and the wildcard character in **12?4** is replaced with the highest value in the character set. 
+> [!NOTE]
+> You should avoid using wildcard characters for the starting and ending accounts in ranges. If you use wildcard characters in either the starting account or the ending account, you might receive unexpected results.
 
 ### Single-segment or single-dimension ranges
 
-You can specify a range of segment values or dimension values. The benefit of specifying a range is that you don't have to update the row definition every time that a new segment value or dimension value is added to the financial data. For example, the range **+Account=\[6100:6900\]** pulls the values from accounts 6100 through 6900 into the row amount. When a range includes a wildcard character (?), report designer doesn't evaluate the range on a character-by-character basis. Instead, the low and high ends of the range are determined, and then the end values and all values between them are included. **Note:** Report Designer can't select accounts, dimensions, or fields from the Microsoft Dynamics ERP system that include any of the following reserved characters: &, \*, \[, \], {, or }. You can add an ampersand (&) only when you're automatically building row definitions by using the **Insert Rows from Dimensions** dialog box.
+You can specify a range of segment values or dimension values. The benefit of specifying a range is that you don't have to update the row definition every time that a new segment value or dimension value is added to the financial data. For example, the range **+Account=\[6100:6900\]** pulls the values from accounts 6100 through 6900 into the row amount. When a range includes a wildcard character (?), report designer doesn't evaluate the range on a character-by-character basis. Instead, the low and high ends of the range are determined, and then the end values and all values between them are included. 
+> [!NOTE]
+> Report Designer can't select accounts, dimensions, or fields from the Microsoft Dynamics ERP system that include any of the following reserved characters: &, \*, \[, \], {, or }. You can add an ampersand (&) only when you're automatically building row definitions by using the **Insert Rows from Dimensions** dialog box.
 
 ### Multiple-segment or multiple-dimension ranges
 
-When you enter a range by using combinations of multiple dimension values, the range comparison is done on a ..\financial-dimensions\dimension-by-dimension basis. The range comparison can't be done on either a character-by-character basis or a partial segment basis. For example, the range **+Account=\[5000:6000\], Department=\[1000:2000\], Cost center=\[00\]** includes only the accounts that match each segment. In this scenario, the first dimension must be in the range from 5000 through 6000, the second dimension must be in the range from 1000 through 2000, and the last dimension must be 00. For example, **+Account=\[5100\], Department=\[1100\], Cost center=\[01\]** isn't included on the report, because the last segment is outside the specified range. If a segment value includes spaces, enclose that value in square brackets (\[ \]). The following values are valid for a four-character segment: **\[ 234\], \[123 \], \[1 34\]**. Dimension values should be enclosed in square brackets (\[ \]), and report designer adds these brackets for you. When a multiple-segment or multiple-dimension range includes wildcard characters (? or \*), the low and high ends of the whole multiple-segment or multiple-dimension range are determined, and then the end values and all values between them are included. If you have a large range, such as the whole range of accounts from 40000 through 99999, you should specify a valid starting account and ending account whenever possible. **Note:** Report Designer can't select accounts, dimensions, or fields from the Microsoft Dynamics ERP system that include any of the following reserved characters: &, \*, \[, \], {, or }. You can add an ampersand (&) only when you're automatically building row definitions by using the **Insert Rows from Dimensions** dialog box.
+When you enter a range by using combinations of multiple dimension values, the range comparison is done on a ..\financial-dimensions\dimension-by-dimension basis. The range comparison can't be done on either a character-by-character basis or a partial segment basis. For example, the range **+Account=\[5000:6000\], Department=\[1000:2000\], Cost center=\[00\]** includes only the accounts that match each segment. In this scenario, the first dimension must be in the range from 5000 through 6000, the second dimension must be in the range from 1000 through 2000, and the last dimension must be 00. For example, **+Account=\[5100\], Department=\[1100\], Cost center=\[01\]** isn't included on the report, because the last segment is outside the specified range. If a segment value includes spaces, enclose that value in square brackets (\[ \]). The following values are valid for a four-character segment: **\[ 234\], \[123 \], \[1 34\]**. Dimension values should be enclosed in square brackets (\[ \]), and report designer adds these brackets for you. When a multiple-segment or multiple-dimension range includes wildcard characters (? or \*), the low and high ends of the whole multiple-segment or multiple-dimension range are determined, and then the end values and all values between them are included. If you have a large range, such as the whole range of accounts from 40000 through 99999, you should specify a valid starting account and ending account whenever possible. 
+> [!NOTE]
+> Report Designer can't select accounts, dimensions, or fields from the Microsoft Dynamics ERP system that include any of the following reserved characters: &, \*, \[, \], {, or }. You can add an ampersand (&) only when you're automatically building row definitions by using the **Insert Rows from Dimensions** dialog box.
 
 ## Add or subtract from other accounts in a row definition
 To add or subtract the monetary amounts in one account from the monetary amounts in another account, you can use the plus sign (+) and the minus sign (-) in the **Link to Financial Dimensions** cell. The following table shows acceptable formats for adding and subtracting links to financial data.
 
-| Operation                                                                               | Use this format                                                                                              |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Operation  | Use this format  |
+|------------|-----------------|
 | Add two fully qualified accounts.                                                       | +Division=\[000\], Account=\[1205\], Department=\[00\]+Division=\[100\], Account=\[1205\], Department=\[00\] |
 | Add two segment values.                                                                 | +Account=\[1205\]+Account=\[1210\]                                                                           |
 | Add segment values that include wildcard characters.                                    | +Account=\[120?+Account=\[11??\]                                                                             |
@@ -638,7 +451,9 @@ To add or subtract the monetary amounts in one account from the monetary amounts
 | Subtract a range of segment values.                                                     | -Account=\[1200:1205\]                                                                                       |
 | Subtract a range of segment values that include wildcard characters.                    | -Account=\[120?:130?\]                                                                                       |
 
-Although you can modify the accounts directly, you can also use the **Dimensions** dialog box to apply the correct formatting to your financial data links. Any of the values can include wildcard characters (? or \*). However, Report Designer can't select accounts, dimensions, or fields from the Microsoft Dynamics ERP system that include any of the following reserved characters: &, \*, \[, \], {, or }. **Note:** To subtract values, you must put parentheses around those values. For example, if you enter **450?-(4509)**, it's displayed as **+Account=\[4509\]-Account=\[450?\]**, and you're instructing report designer to subtract the amount for account segment 4509 from the amount for any account segment that starts with 450.
+Although you can modify the accounts directly, you can also use the **Dimensions** dialog box to apply the correct formatting to your financial data links. Any of the values can include wildcard characters (? or \*). However, Report Designer can't select accounts, dimensions, or fields from the Microsoft Dynamics ERP system that include any of the following reserved characters: &, \*, \[, \], {, or }. 
+> [!NOTE]
+> To subtract values, you must put parentheses around those values. For example, if you enter **450?-(4509)**, it's displayed as **+Account=\[4509\]-Account=\[450?\]**, and you're instructing report designer to subtract the amount for account segment 4509 from the amount for any account segment that starts with 450.
 
 ### Add or subtract accounts from other accounts
 
@@ -652,7 +467,8 @@ Although you can modify the accounts directly, you can also use the **Dimensions
 
 4.  Repeat steps 2 through 3 to add more operations.
 
-**Note:** The operator applies to all dimensions in the row.
+> [!NOTE]
+> The operator applies to all dimensions in the row.
 
 ## Description of the Dimensions dialog box
 The following table describes the fields in the **Dimensions** dialog box.
@@ -684,7 +500,9 @@ A dimension value set is a named group of dimension values. A dimension value se
 2.  On the **Edit** menu, click **Manage Dimension Value Sets**.
 3.  In the **Manage Dimension Value Sets** dialog box, in the **Dimension** field, select the dimension type.
 4.  In the list, select the dimension value set to update, and then click **Modify**.
-5.  In the **Modify** dialog box, modify the formula values to include in the set. **Note:** If you add new accounts or dimensions, make sure that you modify the existing dimension value sets to incorporate the changes.
+5.  In the **Modify** dialog box, modify the formula values to include in the set. 
+    > [!NOTE]
+    >  If you add new accounts or dimensions, make sure that you modify the existing dimension value sets to incorporate the changes.
 6.  Double-click the cell, and select the appropriate operator, **From** account, and **To** account.
 7.  Click **OK** to close the **Modify** dialog box and save your changes.
 
@@ -707,5 +525,5 @@ A dimension value set is a named group of dimension values. A dimension value se
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Financial reporting](financial-reporting-intro.md)
 
