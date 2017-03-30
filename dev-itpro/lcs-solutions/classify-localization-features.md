@@ -54,5 +54,5 @@ The following table explains the components of the naming convention.
 | Feature type        | REG or COMP | The type of feature                                                                                                           | REG                     |
 | Feature name        | Text        | A short feature title that describes what the feature is used for                                                             | Direct sales tax report |
 
-For more information about BPM, see [Upload business processes to BPM](../lifecycle-services/upload-business-processes-bpm-task-recorder).
+For more information about BPM, see [Upload business processes to BPM](../lifecycle-services/upload-business-processes-bpm-task-recorder.md).
 
