@@ -28,12 +28,30 @@ There are several components you’ll set up to define the relationships among a
 -   [Configure and install MPOS](retail-modern-pos-device-activation.md)
 -   [Offline POS functionality](pos-offline-functionality.md)
 
+## Set up a customer loyalty program
+You can set up your loyalty program so that customers earn points based on specific criteria, and the points can be calculated in various ways. Your loyalty program can be simple or complex, and apply across your legal entities in any retail channel.
+-   [Set up a customer loyalty program](set-up-customer-loyalty-program.md)
+
+## Set up discounts and price adjustments
+You can make price adjustments to products, and can also set up discounts that are applied to a line item or a transaction at the POS, in a call center sales order, or in an online order. 
+-   [Price adjustments and discounts](price-adjustments-discounts.md)
+-   [Define channel-specific discounts](define-channel-specific-discounts.md)
+-   [Determine the optimal combination of overlapping discounts](optimal-combination-overlapping-discounts.md)
+
+## Set up retail products
+Before you can offer products for sale in your retail channels, you'll need to create and configure the products in Dynamics 365 for Operations. You can create the products, define the product properties and attributes, and assign the products to retail category hierarchies. To make the products available to your retail channels and add them to an active assortment, you'll then release the products to the legal entities in which they are available.
+-   [Set up retail products](set-up-retail-products.md)
+
+## Monitor and analyze performance
+Using your Dynamics 365 for Operations data, you can analyze store performance, customer and product profitability, sales trends, and more.
+-   [Assess customer and product profitability](assess-customer-product-profitability.md)
+-   [Analyze store performance](store-performance-information.md)
+
+
 ## Customize and administer Retail environments
 If you have been asked to customize your environment, or if you are tasked with deploying and maintaining your system, check out the developer and system administrator content specific to Retail, as well as the more general content for Microsoft Dynamics 365 for Operations. 
 -   [Dynamics 365 for Operations - Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
 -   [Microsoft Dynamics 365 for Operations for Developers and IT Pros](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
-
-
 
 ## More resources
 ### What's new and in development
