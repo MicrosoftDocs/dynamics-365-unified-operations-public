@@ -29,9 +29,9 @@ When using the **EventHandlerAcceptResult** class, the delegate handler method c
 
     [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
     public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(InventLocationType _inventLocationType, EventHandlerAcceptResult _result)
-    { 
-        switch (_inventLocationType) 
-        { 
+    {
+        switch (_inventLocationType)
+        {
             case InventLocationType::Standard: 
             case InventLocationType::Quarantine: 
             case InventLocationType::Transit: 
