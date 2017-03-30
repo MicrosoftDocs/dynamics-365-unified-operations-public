@@ -47,10 +47,6 @@ The following components of financial reporting make it easy to create, view, an
 
 ## Features
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Feature</th>

@@ -109,7 +109,7 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Register the receipt of a load by using the load ID, and put the items away. The item number and product dimensions match the receipt to the purchase order lines. The same worker performs both actions.</td>
 </tr>
 <tr>
-<td rowspan="2">Return order</td>
+<td>Return order</td>
 <td>Return order receiving</td>
 <td>Register the receipt of a quantity of an item by registering the RMA number, and create put-away work for another worker.</td>
 </tr>
@@ -118,7 +118,7 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Register the receipt of a quantity of an item by registering the RMA number, and put the items away. The same worker performs both actions.</td>
 </tr>
 <tr>
-<td rowspan="4">Transfer order</td>
+<td>Transfer order</td>
 <td>Transfer order item receiving</td>
 <td>Register the receipt of a quantity of an item, and create put-away work for another worker.
 
@@ -139,7 +139,7 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.</td>
 </tr>
 <tr>
-<td rowspan="4">Production</td>
+<td>Production</td>
 <td>Report as finished</td>
 <td>Register a quantity of a finished item that has been finished for a production, and create put-away work for another worker. The quantity can be some or all of the quantity that was planned for production.</td>
 </tr>
@@ -156,7 +156,7 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Indicate that a kanban is completed, and put away the items. The same worker performs both actions.</td>
 </tr>
 <tr>
-<td rowspan="5">Inventory</td>
+<td>Inventory</td>
 <td>Movement</td>
 <td>Register that items have been moved from one location to another. The worker specifies the location that the items are moved from and where they are moved to.</td>
 </tr>
@@ -179,7 +179,7 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Use this option when you're setting up your warehouse for the first time. Scan all the license plates in all locations in the warehouse. The locations must be license plate–controlled. You can't use this option if <strong>Serial number</strong> or <strong>Batch number</strong> is listed above <strong>Location</strong> in the inventory reservation hierarchy.</td>
 </tr>
 <tr>
-<td rowspan="3">Cycle count</td>
+<td>Cycle count</td>
 <td>Adjustment in</td>
 <td>Increase the quantity of items in inventory. Specify the location, license plate, item, quantity, unit of measure, and status.</td>
 </tr>
@@ -198,10 +198,10 @@ You can set up a menu item that creates work for another worker after an initial
 In addition to setting up menu items to create warehouse work, you can set up menu items to process work that has already been created. Set the **Mode** field to **Work**, and select the **Use existing work** option. Some additional options then become available on the **General** tab. You can control access to the menu item by assigning one or more work classes on the **Work class** FastTab. The work classes define the work that the menu item can process. The work class can also be used to grant access to specific user roles or to separate processing for different types of operations. The following table describes the options that are available.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
+
+
+
 <thead>
 <tr class="header">
 <th>Option</th>
@@ -259,10 +259,10 @@ Additional menu items options are available on the **Mobile device menu items** 
 The following table describes these options.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
+
+
+
+
 <thead>
 <tr class="header">
 <th>Field</th>
