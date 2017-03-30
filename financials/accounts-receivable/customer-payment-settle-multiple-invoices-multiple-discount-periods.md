@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 
-Fabrikam sells goods to customer 4032. Fabrikam offers a cash discount of 1 percent if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The [settlement parameters](http://ax.help.dynamics.com/en/?p=246884) are located on the **Accounts receivable parameters** page.
+Fabrikam sells goods to customer 4032. Fabrikam offers a cash discount of 1 percent if the invoice is paid in 14 days. Fabrikam also offers cash discounts on partial payments. The settement parameters are located on the **Accounts receivable parameters** page.
 
 ## Invoices
 Customer 4032 has three invoices that total 3,000.00:

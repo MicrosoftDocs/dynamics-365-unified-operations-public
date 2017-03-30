@@ -41,7 +41,7 @@
 ## [Customize the Open in Microsoft Office menu](office-integration/customize-open-office-menu.md)
 ## [Troubleshooting](office-integration/office-integration-troubleshooting.md)
 
-# [Financials development](financial-dimensions/TOC.md)
+# [Financials development](financial/TOC.md)
 
 # Supply chain development
 ## [Gantt development guide](user-interface/gantt-development-guide.md)

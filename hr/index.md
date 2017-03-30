@@ -73,8 +73,8 @@ After you've hired staff, you can set up plans to effectively and equitably mana
 To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
 
 -   [Performance management](performance-management-overview.md)
--   [Align workforce skills and business needs]()
--   [Administer training through courses]()
+-   [Align workforce skills and business needs](skills.md)
+-   [Administer training through courses](courses.md)
 
 ## Create and maintain benefits
 
@@ -88,15 +88,15 @@ In addition to compensating your staff with wages, salaries, and bonuses, you ca
 
 Microsoft Dynamics AX can help you maintain a safe work environment that’s in compliance with applicable laws, including the Americans with Disabilities Act and immigration and naturalization laws, among others. For example, you can manage the physical requirements for specific jobs, as well as track requests for accommodations that can help your organization optimize the skills of its workforce.
 
--   [Form I-9 employment verification](/localizations/north-america/form-i-9-verification.md)
--   [Comply with the Americans with Disabilities Act](/localizations/north-america/comply-ada.md)
+-   [Form I-9 employment verification](localizations/north-america/form-i-9-verification.md)
+-   [Comply with the Americans with Disabilities Act](localizations/north-america/comply-ada.md)
 
 ## Gather information using questionnaires
 
 You can design and administer questionnaires to gather information that’s used for a variety of purposes. The Questionnaire feature lets you design and create questionnaires. When a questionnaire is ready, you distribute it broadly or to a specific set of respondents to complete. After the respondents provide their answers, you can review and analyze the results.
 
--   [Questionnaires](/hr/questionnaire/questionnaires.md)
--   [Design a questionnaire](/hr/questionnaire/design-questionnaires.md)
--   [Distribute and complete a questionnaire](/hr/questionnaire/distribute-questionnaires.md)
--   [View and evaluate the results of a questionnaire](/hr/questionnaire/evaluate-questionnaire-results.md)
+-   [Questionnaires](questionnaires.md)
+-   [Design a questionnaire](design-questionnaires.md)
+-   [Distribute and complete a questionnaire](distribute-questionnaires.md)
+-   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
 

@@ -254,9 +254,9 @@ d<li>The transaction <strong>Tax base amount</strong> or <strong>Tax amount</str
 
 You can use Electronic Reporting (ER) to configure statements and report, and to export data different electronic formats without changing X++ code. For additional information:
 
--   [Electronic reporting overview](/dev-tools/analytics/general-electronic-reporting)
--   [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
--   [Localization requirements – Create a GER configuration](/dev-tools/analytics/electronic-reporting-configuration)
+-   [Electronic reporting overview](dynamics365/operations/dev-itpro/dev-itpro/analytics/general-electronic-reporting)
+-   [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+-   [Localization requirements – Create a GER configuration](dynamics365/operations/dev-itpro/analytics/electronic-reporting-configuration)
 
 ## Countryspecific resources for VAT statements
 The VAT statement for each country must meet the requirements of the country’s legislation. There are predefined general models and formats of VAT statements for the countries listed in the following table.

@@ -64,7 +64,7 @@ The form metamodel continues to be used to define controls and application logic
 -   [Form statistics addin (Office Mix)](https://mix.office.com/watch/1kuwpf3ooohty)
 -   [Code migration - context menus](..\migration-upgrade\code-migration-context-menus.md)
 -   [Code migration - mouse double click](..\migration-upgrade\code-migration-double-click.md)
--   [Contextual data entry for lookups](http://ax.help.dynamics.com/en/wiki/how-to-contextual-lookups/)
+-   [Contextual data entry for lookups](contextual-data-entry-lookups.md)
 -   [HierarchyViewer control](hierarchy-viewer-control.md)
 -   [Lookup controls](lookups-controls.md)
 -   [File upload control](file-upload-control.md)

@@ -8,7 +8,7 @@
     items:
       - name: Get started
         tocHref: /dynamics365/operations/get-started/
-        topicHref: /dynamics365/operations/get-started/get-started-landing
+        topicHref: /dynamics365/operations/get-started/onboarding-home
       - name: Organization administration
         tocHref: /dynamics365/operations/organization-administration/
         topicHref: /dynamics365/operations/organization-administration/organization-administration-home-page

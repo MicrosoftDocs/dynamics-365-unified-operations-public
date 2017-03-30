@@ -42,8 +42,8 @@ The following components of financial reporting make it easy to create, view, an
 | Component        | Functions                                                                                                                                                                                                                                                                           | Additional information                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Report Designer  | Create report building blocks that can be combined to define and generate a report. The report wizard guides less experienced users through the design process. Advanced users can create new report building blocks or modify existing building blocks to meet their requirements. |                                                                                                 |
-| Web Viewer       | View financial reports in a web browser. Web Viewer doesn't require that financial reporting server components be installed.                                                                                                                                                        | [Web viewer](http://ax.help.dynamics.com/en/wiki/web-viewer-in-management-reporter/)            |
-| Report schedules | Schedule a single report or a group of reports so that it is generated on a regular basis.                                                                                                                                                                                          | [Generate a report](http://ax.help.dynamics.com/en/wiki/generate-a-management-reporter-report/) |
+| Web Viewer       | View financial reports in a web browser. Web Viewer doesn't require that financial reporting server components be installed.                                                                                                                                                        | [Web viewer](financial-reporter-designer-web-client.md)            |
+| Report schedules | Schedule a single report or a group of reports so that it is generated on a regular basis.                                                                                                                                                                                          | [Generate a report](dynamics365\operations\financials\general-ledger\generate-financial-report) |
 
 ## Features
 <table>
@@ -91,5 +91,5 @@ For more information, see the “Interactive components and navigation features�
 
 #See also
 
-[Generate a financial report](\financials\general-ledger\generate-financial-report.md)
+[Generate a financial report]((dynamics365\operations\financials\general-ledger\generate-financial-report)
 

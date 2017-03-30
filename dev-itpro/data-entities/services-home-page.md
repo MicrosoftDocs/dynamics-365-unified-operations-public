@@ -295,7 +295,6 @@ In previous versions, you could consume web services from X++ code by adding Mic
                 info(ServiceLibrary.StockQuoteClass::GetQuote("MSFT"));
             }
 
-For more information, see [Troubleshoot service authentication](troubleshoot-service-authentication.md).
 
 See also
 --------

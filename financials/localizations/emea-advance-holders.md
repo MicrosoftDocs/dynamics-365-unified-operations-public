@@ -83,7 +83,7 @@ To reflect advance holder’s transactions you must set up the following on the 
 To correctly register and post a purchase order through an advance holder, you must use a Terms of payment that was set up with the **From advance holder** option set to **True**.
 ### Create an advance holder creation
 
-Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information.](http://ax.help.dynamics.com/en/wiki/enter-worker-information/) Use the **Advance holders** page to set up a worker as an advance holder. Select the worker to use as an advance holder, click **Edit**, and then set the **Advance holder** option to **True**. You must also complete the following fields.
+Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information (Task guide).](http://ax.help.dynamics.com/en/wiki/enter-worker-information/) Use the **Advance holders** page to set up a worker as an advance holder. Select the worker to use as an advance holder, click **Edit**, and then set the **Advance holder** option to **True**. You must also complete the following fields.
 |                |                                                                                             |
 |----------------|---------------------------------------------------------------------------------------------|
 | **Field**      | **Description**                                                                             |

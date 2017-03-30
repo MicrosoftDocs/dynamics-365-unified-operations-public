@@ -195,7 +195,7 @@ The configuration process includes a step in which the system will suggest a con
 See also
 --------
 
-[Create a product number nomenclature for predefined product variants](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
+[Create a product number nomenclature for predefined product variants (Task guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
-[Create a product number nomenclature for configured product variants](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+[Create a product number nomenclature for configured product variants (Task guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
 

@@ -114,7 +114,7 @@ The following table lists websites that provide Dynamics 365 for Operations cont
 | [MSDN](http://aka.ms/AXMSDN)                                             | Hosts content from previous releases that is written for developers.                                                                                                                                                                       |
 | [TechNet](http://aka.ms/TechNet)                                         | Hosts content from previous releases that is written for IT professionals and application users.                                                                                                                                           |
 | [Dynamics Community](http://community.dynamics.com/en/)                  | Hosts blogs, forums, and videos.                                                                                                                                                                                                           |
-| [Microsoft.com/Dynamics/](//www.microsoft.com/dynamics/)                 | Provides evaluation and sales information.                                                                                                                                                                                                 |
+| [Microsoft.com/Dynamics/](http://www.microsoft.com/dynamics/)                 | Provides evaluation and sales information.                                                                                                                                                                                                 |
 
 
 
