@@ -183,7 +183,9 @@ To create a purchase order for purchase requisition lines that aren't eligible f
 
 The process for demand consolidation starts when a purchase requisition is approved in a workflow and, if budget control is configured for your organization, when the budget reservations and pre-encumbrances have been recorded. The following diagram shows the process flow for demand consolidation.  
 
-[![Process flow for demand consolidation](./media/demand-consolidation.gif)](./media/demand-consolidation.gif) To consolidate approved purchase requisition lines, follow these steps:
+[![Process flow for demand consolidation](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+
+To consolidate approved purchase requisition lines, follow these steps:
 
 1.  Review approved requisition lines that have been held for manual processing, and that are eligible for demand consolidation.
 2.  Select lines to add to a consolidation opportunity.
