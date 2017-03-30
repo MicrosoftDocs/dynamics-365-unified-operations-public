@@ -39,7 +39,9 @@ Customers can return items for various reasons. For example, an item might be de
 ## Return order process
 The following illustration gives an overview of the return order process.  
 
-[![salesreturns01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg) There are two types of return order process: physical return and credit only.
+[![salesreturns01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+
+There are two types of return order process: physical return and credit only.
 
 -   **Physical return** – The return order authorizes the physical return of products.
 -   **Credit only** – The return order authorizes a customer credit but doesn't require that the customer physically return the products.
