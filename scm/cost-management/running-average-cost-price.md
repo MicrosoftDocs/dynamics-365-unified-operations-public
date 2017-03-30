@@ -48,6 +48,7 @@ The following table shows when the system posts inventory transactions by using 
 | The denominator\*\* is 0 (zero).                        | No                                                       | Yes                                                               |
 
 \* Numerator = (Physical amount + Financial amount) \*\* Denominator = (Physical quantity + Financial quantity) 
+
 **Note:** If the **Include physical value** option isn't selected for an item, the system uses 0 (zero) for both the physical amount and the physical quantity. For information about this option, see [Include physical value](include-physical-value.md).
 
 ## Avoiding pricing amplification
