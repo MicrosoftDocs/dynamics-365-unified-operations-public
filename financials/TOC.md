@@ -206,4 +206,7 @@
 ## [Project quotations](project-management/project-quotations.md)
 ## [Project resourcing](project-management/project-resourcing.md)
 ## [Work breakdown structures](project-management/work-breakdown-structures.md)
+# [Financial reporting](/dev-itpro/analytics/financial-reporting-intro)
+## [Generate a financial report](/dev-itpro/analytics/generate-financial-report)
+## [Report designer](/dev-itpro/analytics/report-designer-interface)
 # [Localizations](localizations/TOC.md)
