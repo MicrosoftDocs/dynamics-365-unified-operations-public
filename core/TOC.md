@@ -28,7 +28,7 @@
 #### [Task Recorder](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
 #### [Create documentation or training](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
 
-## [Country/region-specific Help content](localizations/country-region.md)
+## [Country/region-specific Help content](/dynamics365/operations/dev-itpro/localizations/country-region.md)
 
 # [Configure your organization](organization-administration/organization-administration-home-page.md)
 ## [Organizations and organizational hierarchies](organization-administration/organizations-organizational-hierarchies.md)

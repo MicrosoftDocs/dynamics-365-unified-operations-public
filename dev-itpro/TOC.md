@@ -15,7 +15,7 @@
 ## [Process and consume data packages](lcs-solutions/process-data-packages-lcs-solutions.md)
 ## [Back up a solution database](lcs-solutions/database-backup-lcs-solutions.md)
 
-## [Localizations](/dynamics365/operations/localizations/country_region?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Localizations](lcs-solutions/country-region.md)
 ### [Classify localization features](lcs-solutions/classify-localization-features.md)
 ### [Country/region context](lcs-solutions/apply-country-context.md)
 ### [Regulatory certifications](lcs-solutions/regulatory-certifications.md)
