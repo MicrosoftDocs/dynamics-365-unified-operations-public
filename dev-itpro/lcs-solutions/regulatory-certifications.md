@@ -53,5 +53,5 @@ In the BPM business process library, certifications should be located under **AP
 -   APQC level 8.0 Manage Financial Resources (10009)
     -   PT-REG-Certification for Fiscal printers
 
-For more information about BPM, see [BPM flowcharts](dev-itpro/lifecycle-services/flowcharts-business-process-modeler.md).
+For more information about BPM, see [BPM flowcharts](../lifecycle-services/flowcharts-business-process-modeler.md).
 
