@@ -73,7 +73,7 @@ Dynamics 365 for Operations - Retail delivers a complete shopping experience, wi
 -   [Create product packages and use in purchase orders](http://ax.help.dynamics.com/en/wiki/create-product-packages-and-use-in-purchase-order/)(Task guide)
 -   [Push products from distribution center to stores using buyer's push](http://ax.help.dynamics.com/en/wiki/push-products-from-distribution-center-to-stores-using-buyers-push/)(Task guide)
 -   [Cross-dock products from receiving warehouse to stores](http://ax.help.dynamics.com/en/wiki/cross-dock-products-from-receiving-warehouse-to-stores/)(Task guide)
--   [Work with store inventory](retail-store-inventory.md)
+-   [Work with store inventory](work-with-store-inventory.md)
 
 ## Discounts and price adjustments
 -   [Price adjustments and discounts](price-adjustments-discounts.md)
