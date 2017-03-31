@@ -52,7 +52,7 @@ The enhanced report viewing experience that Dynamics 365 for Operations provide
 [![Example of a report preview](./media/2_report.png)](./media/2_report.png)
 
 ## Service administration prerequisites
-The following table compares the service administration prerequisites for Microsoft Dynamics 365 for Operations 2012 and the current version of Dynamics 365 for Operations.
+The following table compares the service administration prerequisites for Microsoft Dynamics AX 2012 and the current version of Dynamics 365 for Operations.
 
 <table>
 <colgroup>

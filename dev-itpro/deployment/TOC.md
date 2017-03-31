@@ -7,4 +7,4 @@
 ## [Apply a deployable package](apply-deployable-package-system.md)
 ## [Install a deployable package](install-deployable-package.md)
 
-# [Cloud Service Provider downloads and Dynamics 365 for Operations 2012](csp-download-customersource.md)
+# [Cloud Service Provider downloads and Dynamics AX 2012](csp-download-customersource.md)

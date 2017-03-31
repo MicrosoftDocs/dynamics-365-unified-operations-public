@@ -53,7 +53,7 @@ A details form with lines (Details Transaction form) consists of one form that c
 [![Wireframe: Grid view](./media/detailstransaction3-1024x575.png)](./media/detailstransaction3.png)
 
 ## Pattern changes
-Here are the main changes to this pattern since Microsoft Dynamics 365 for Operations 2012:
+Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
 -   A List style grid was been added to the left of the Details view content, which is shown in either Header view or Line view.
 -   List Page and Details Master have been merged into a single form. This change has the following benefits:
