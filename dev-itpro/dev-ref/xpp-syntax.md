@@ -1356,12 +1356,12 @@ Copy Code
 
  
 
-## X++ Language Syntax is Stricter in Microsoft Dynamics 365 for Operations 2012
-Starting in Microsoft Dynamics 365 for Operations 2012, the syntax rules for X++ are stricter than in previous versions of the product. This topic describes the syntax changes.
+## X++ Language Syntax is Stricter in Microsoft Dynamics AX 2012
+Starting in Microsoft Dynamics AX 2012, the syntax rules for X++ are stricter than in previous versions of the product. This topic describes the syntax changes.
 
 ### Table of X++ Syntax Changes
 
-The following table displays a list of syntax changes that start in Microsoft Dynamics 365 for Operations 2012.
+The following table displays a list of syntax changes that start in Microsoft Dynamics AX 2012.
 
 <table>
 <colgroup>
@@ -1374,8 +1374,8 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 <tr class="header">
 <th>Area</th>
 <th>Syntax rule</th>
-<th>Before Microsoft Dynamics 365 for Operations 2012</th>
-<th>Starting with Microsoft Dynamics 365 for Operations 2012</th>
+<th>Before Microsoft Dynamics AX 2012</th>
+<th>Starting with Microsoft Dynamics AX 2012</th>
 </tr>
 </thead>
 <tbody>

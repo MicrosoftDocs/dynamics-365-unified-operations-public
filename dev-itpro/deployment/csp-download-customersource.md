@@ -2,7 +2,7 @@
 # required metadata
 
 title: Information for customers who purchased Dynamics 365 for Operations through a Cloud Service Provider
-description: Customers who have purchased Dynamics 365 for Operations through a Microsoft Cloud Solution Provider (CSP) and are entitled to on-premises software can download Dynamics 365 for Operations 2012 R3 from CustomerSource. 
+description: Customers who have purchased Dynamics 365 for Operations through a Microsoft Cloud Solution Provider (CSP) and are entitled to on-premises software can download Dynamics AX 2012 R3 from CustomerSource. 
 author: margoc
 manager: AnnBe
 ms.date: 2016-11-29 23 - 25 - 52
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: 2012
 
 # Information for customers who purchased Dynamics 365 for Operations through a Cloud Service Provider
 
-Customers who have purchased Dynamics 365 for Operations through a Microsoft Cloud Solution Provider (CSP) and are entitled to on-premises software can download Dynamics 365 for Operations 2012 R3 from CustomerSource. 
+Customers who have purchased Dynamics 365 for Operations through a Microsoft Cloud Solution Provider (CSP) and are entitled to on-premises software can download Dynamics AX 2012 R3 from CustomerSource. 
 
-If you have purchased Dynamics 365 for Operations through a Cloud Solution Provider and are entitled to on-premises software, you can get Dynamics 365 for Operations 2012 R3 as follows:
+If you have purchased Dynamics 365 for Operations through a Cloud Solution Provider and are entitled to on-premises software, you can get Dynamics AX 2012 R3 as follows:
 
--   Go to [CustomerSource](https://mbs.microsoft.com/customersource/), log in, and download [Dynamics 365 for Operations 2012 R3](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/product-releases/MSDYAX2012R3Release).
+-   Go to [CustomerSource](https://mbs.microsoft.com/customersource/), log in, and download [Dynamics AX 2012 R3](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/product-releases/MSDYAX2012R3Release).
 
 If you haven’t previously accessed CustomerSource, here are some resources to help you get started:
 
