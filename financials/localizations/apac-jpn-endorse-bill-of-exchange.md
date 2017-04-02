@@ -5,7 +5,7 @@ title: Pay a vendor by endorsing a bill of exchange
 description: In Japan, bills of exchange (BOEs) are often endorsed to a vendor and used as a method of payment. In Microsoft Dynamics 365 for Operations, a list page for BOEs provides centralized management of the BOE lifecycle.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-01-06 20 - 53 - 35
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

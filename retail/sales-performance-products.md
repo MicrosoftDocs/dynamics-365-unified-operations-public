@@ -4,7 +4,7 @@ title: Assess sales performance by product
 description: You can study profitability for the top 10 products using Microsoft Dynamics 365 for Operations. 
 author: josaw1
 manager: AnnBe
-ms.date: 2016-05-12 18 - 15 - 11
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

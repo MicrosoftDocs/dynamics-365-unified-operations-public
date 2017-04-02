@@ -5,7 +5,7 @@ title: Set up payroll for workers
 description: Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topics provides information about these tasks and the fields that are used to complete them.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-11-01 18 - 57 - 14
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

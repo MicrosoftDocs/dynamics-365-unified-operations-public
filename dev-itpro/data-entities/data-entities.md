@@ -5,7 +5,7 @@ title: Data entities
 description: This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 20 - 23 - 53
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

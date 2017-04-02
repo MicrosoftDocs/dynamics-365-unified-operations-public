@@ -5,7 +5,7 @@ title: New or updated task guides (August 2016)
 description: This topic lists the new or updated Task guides that were released to the Microsoft (August 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-11-03 21 - 08 - 33
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

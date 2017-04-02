@@ -5,7 +5,7 @@ title: Bill of materials comparison for China
 description: This topic provides information about BOM comparison for China.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-31 17 - 04 - 14
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

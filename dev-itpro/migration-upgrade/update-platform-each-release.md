@@ -5,7 +5,7 @@ title: Upgrade the Dynamics AX platform to the August 2016 release
 description: This topic explains how to upgrade your Microsoft Dynamics AX platform to the August 2016 release of Dynamics AX.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-08-15 18 - 30 - 38
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

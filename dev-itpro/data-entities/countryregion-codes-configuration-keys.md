@@ -5,7 +5,7 @@ title: Country/region codes and configuration keys
 description: This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-09-14 07 - 32 - 07
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
-title: Create a custom target entity for the Data import/export framework (DIXF) (AX 2012)
+title: Create an archive object for the Intelligent Data Management Framework (AX 2012)
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-04 21 - 51 - 40
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create a custom target entity for the Data import/export framework (DIXF) (AX 2012)
+# Create an archive object for the Intelligent Data Management Framework (AX 2012)
 
 
 

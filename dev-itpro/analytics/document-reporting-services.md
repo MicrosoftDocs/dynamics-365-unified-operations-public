@@ -5,7 +5,7 @@ title: Document Reporting Services overview
 description: This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-03-21 14 - 30 - 43
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

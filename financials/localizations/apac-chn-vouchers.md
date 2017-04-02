@@ -5,7 +5,7 @@ title: Chinese vouchers
 description: This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 for Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-3-14
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

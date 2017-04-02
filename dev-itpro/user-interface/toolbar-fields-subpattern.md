@@ -5,7 +5,7 @@ title: Toolbar and Fields subpattern
 description: This article provides information about the Toolbar and Fields subpattern. This container pattern is used to show actions above a subpattern of data fields. The toolbar should contain fewer than 10 actions.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 21 - 26 - 28
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

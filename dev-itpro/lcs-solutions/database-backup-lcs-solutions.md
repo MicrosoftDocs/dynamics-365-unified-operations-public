@@ -5,7 +5,7 @@ title: Back up database for an LCS solution
 description: A Dynamics 365 for Operations database backup is required for your LCS solution package. When you back up your database, you must include the master, reference, and transactional data that is specific to your solution and industry. This will be used for your pre-sales demo deployments. 
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-03 22 - 49 - 33
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

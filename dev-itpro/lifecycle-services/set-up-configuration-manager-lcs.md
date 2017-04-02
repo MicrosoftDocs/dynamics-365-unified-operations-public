@@ -5,7 +5,7 @@ title: Set up Configuration manager
 description: 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 22 - 07 - 42
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

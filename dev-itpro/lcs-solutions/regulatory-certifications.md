@@ -5,7 +5,7 @@ title: Regulatory certifications
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must include details about any regulatory certifications that the solution requires in order to be legally compliant for sale in the intended market. This article shows how information about certifications is used in the title of the feature.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-14 15 - 54 - 18
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

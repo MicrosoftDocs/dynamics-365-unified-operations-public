@@ -5,7 +5,7 @@ title: Model split
 description: This topic explains the split of the stack into three main models -  the Application Platform, the Application Foundation, and the Application Suite.
 author: maertenm
 manager: AnnBe
-ms.date: 2015-12-13 02 - 27 - 13
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Cost entries
 description: This article provides information about cost entries and when they are created. A cost entry is a record that registers the quantity and cost of a given event.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 09 - 22
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

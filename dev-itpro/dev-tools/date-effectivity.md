@@ -5,7 +5,7 @@ title: Date effectivity
 description: This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 19 - 32 - 05
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

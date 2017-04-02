@@ -5,7 +5,7 @@ title: Earnings and generating earnings FAQ
 description: This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation. 
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15 - 30 - 54
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Dynamics 365 for Operations client FAQ
 description: This article provides answers to frequently asked questions about the Microsoft Dynamics 365 for Operations client.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-11-04 19 - 47 - 08
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

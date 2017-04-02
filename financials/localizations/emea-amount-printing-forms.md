@@ -5,7 +5,7 @@ title: Update how amounts are displayed on reports and documents
 description: This topic provides information about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-16 19 - 53 - 21
+ms date: 2017-04-04
 ms.topic: 
 ms.prod: 
 ms.service: 

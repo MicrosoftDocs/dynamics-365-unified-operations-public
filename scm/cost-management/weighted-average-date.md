@@ -5,7 +5,7 @@ title: Weighted average date
 description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-07 19 - 58 - 01
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

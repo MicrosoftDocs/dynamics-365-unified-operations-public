@@ -5,7 +5,7 @@ title: Test Data Transfer Tool (beta)
 description: The Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta) (DP.exe) is a command-line tool that exports data from a Microsoft Dynamics AX 2012 business database in a production or non-production environment. The tool also imports data into a Microsoft Dynamics AX 2012 business database in a non-production environment. The non-production environment can be either a development or test environment.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-05 18 - 00 - 16
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

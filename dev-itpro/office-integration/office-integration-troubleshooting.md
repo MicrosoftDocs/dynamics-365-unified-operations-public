@@ -5,7 +5,7 @@ title: Office integration troubleshooting
 description: This article provides answers to questions, tips, and troubleshooting information for the Microsoft Dynamics 365 for Operations Office integration capabilities. The questions and issues discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 2016-03-29 20 - 37 - 22
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

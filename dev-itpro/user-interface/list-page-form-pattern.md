@@ -5,7 +5,7 @@ title: List Page form pattern
 description: This article provides information about the List Page form pattern. A list page presents a set of data on a UI that is optimized for browsing records, so that you can find and work with a specific record. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-02 23 - 17 - 39
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

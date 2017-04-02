@@ -5,7 +5,7 @@ title: Master planning and multisite functionality
 description: Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08 - 44 - 29
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

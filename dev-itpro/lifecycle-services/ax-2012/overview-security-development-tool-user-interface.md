@@ -5,7 +5,7 @@ title: Security Development Tool (AX 2012)
 description: This topic describes the user interface of the Security Development Tool.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-05 17 - 51 - 41
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

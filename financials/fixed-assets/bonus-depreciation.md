@@ -5,7 +5,7 @@ title: Bonus depreciation
 description: This article provides an overview of the bonus depreciation functionality.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 21 - 07 - 55
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

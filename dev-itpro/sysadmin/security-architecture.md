@@ -5,7 +5,7 @@ title: Security architecture
 description: This article provides an overview of the security architecture of Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-03 20 - 18 - 50
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

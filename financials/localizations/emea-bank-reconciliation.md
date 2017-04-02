@@ -5,7 +5,7 @@ title: Bank statement and payment reconciliation overview for the EU
 description: This topic provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-23 22 - 06 - 44
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

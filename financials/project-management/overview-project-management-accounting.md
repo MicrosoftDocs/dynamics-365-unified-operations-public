@@ -5,7 +5,7 @@ title: Project management and accounting
 description: The project management and accounting functionality can be used in multiple industries to provide a service, produce a product, or achieve a result.  
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-05-20 16 - 32 - 24
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: undocumented
 description: An action message is a system-generated suggestion to change an existing planned or firmed order.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 21 - 54
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

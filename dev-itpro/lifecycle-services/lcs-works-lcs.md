@@ -5,7 +5,7 @@ title: Lifecycle Services for Dynamics 365 for Operations customers
 description: This article is intended for customers who have signed up for the current version of Microsoft Dynamics 365 for Operations. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 author: kfend
 manager: AnnBe
-ms.date: 2016-05-05 20 - 29 - 38
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

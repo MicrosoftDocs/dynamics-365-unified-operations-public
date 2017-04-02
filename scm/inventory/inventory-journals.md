@@ -5,7 +5,7 @@ title: Inventory journals
 description: This article describes how you can use inventory journals to post various types of physical inventory transactions. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-23 23 - 15 - 03
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

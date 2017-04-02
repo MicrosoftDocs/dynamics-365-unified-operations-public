@@ -5,7 +5,7 @@ title: Section Related Links subpattern
 description: This article provides information about the Section Related Links subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for the last panorama section that contains a set of links to other forms.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 22 - 34 - 29
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

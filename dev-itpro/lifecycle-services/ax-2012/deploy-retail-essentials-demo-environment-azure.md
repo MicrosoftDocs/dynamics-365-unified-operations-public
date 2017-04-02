@@ -5,7 +5,7 @@ title: Deploy a Retail essentials demo environment on Azure (AX 2012)
 description: 
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-02 16 - 53 - 48
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

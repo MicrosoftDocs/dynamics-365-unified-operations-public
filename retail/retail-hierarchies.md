@@ -5,7 +5,7 @@ title: Retail hierarchies
 description: This article describes retail hierarchies in Microsoft Dynamics AX.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-03 20 - 54 - 28
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

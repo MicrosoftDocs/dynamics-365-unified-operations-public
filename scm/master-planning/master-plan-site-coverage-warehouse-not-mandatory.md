@@ -5,7 +5,7 @@ title: Master planning for site coverage, warehouse not mandatory
 description: This topic describes how an item that has the site dimension set for coverage is planned.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08 - 46 - 21
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

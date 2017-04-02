@@ -5,7 +5,7 @@ title: Aggregate data entities report
 description: This topic points you to a report that lists the aggregate data entities that are available in Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-10-11 20 - 21 - 44
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

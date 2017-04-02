@@ -5,7 +5,7 @@ title: Printing in Dynamics 365 for Operations applications
 description: In Microsoft Dynamics 365 for Operations, you can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-03-21 14 - 29 - 51
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

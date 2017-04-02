@@ -5,7 +5,7 @@ title: Manage how pages display
 description: This article describes the Open in new window feature that is available in the web client. This feature lets users view the data from multiple pages in a side-by-side format.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-03-10 01 - 39 - 26
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

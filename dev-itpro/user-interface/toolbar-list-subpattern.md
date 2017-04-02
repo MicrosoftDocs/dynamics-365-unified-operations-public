@@ -5,7 +5,7 @@ title: Toolbar and List subpattern
 description: This article provides information about the Toolbar and List form subpattern. This subpattern is used to show child collections for the parent entity as either a tabular grid or a tree. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 21 - 34 - 06
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

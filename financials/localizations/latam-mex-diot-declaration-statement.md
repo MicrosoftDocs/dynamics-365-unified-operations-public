@@ -5,7 +5,7 @@ title: DIOT declaration statement
 description: This topic provides information about the DIOT declaration statement for Mexico.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-04-08 15 - 49 - 36
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

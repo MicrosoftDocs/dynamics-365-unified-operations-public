@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
-title: Information for customers who purchased Dynamics 365 for Operations through a Cloud Service Provider
+title: Get access to Dynamics AX 2012 through a Cloud Service Provider
 description: Customers who have purchased Dynamics 365 for Operations through a Microsoft Cloud Solution Provider (CSP) and are entitled to on-premises software can download Dynamics AX 2012 R3 from CustomerSource. 
 author: margoc
 manager: AnnBe
-ms.date: 2016-11-29 23 - 25 - 52
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

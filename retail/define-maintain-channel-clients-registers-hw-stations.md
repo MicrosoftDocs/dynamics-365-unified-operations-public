@@ -5,7 +5,7 @@ title: Define and maintain channel clients, registers, and hardware stations
 description: This wiki covers how to connect peripherals to your Retail POS.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-06-15 20 - 49 - 33
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

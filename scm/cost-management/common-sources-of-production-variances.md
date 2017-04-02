@@ -5,7 +5,7 @@ title: Common sources of production variances
 description: This article explains various typical sources of each type of production variance. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-11 13 - 26 - 41
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

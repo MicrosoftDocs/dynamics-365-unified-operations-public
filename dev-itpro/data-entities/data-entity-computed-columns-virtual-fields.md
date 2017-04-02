@@ -5,7 +5,7 @@ title: Compute columns and virtual fields in a data entity
 description: This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have. The article includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 21 - 37 - 15
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

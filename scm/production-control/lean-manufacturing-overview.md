@@ -5,7 +5,7 @@ title: Lean manufacturing overview
 description: This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics AX.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 20 - 37
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

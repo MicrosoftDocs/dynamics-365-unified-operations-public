@@ -5,7 +5,7 @@ title: Power BI content in LCS from Microsoft and your partners
 description: This topic explains how to find and install Power BI content that is distributed by the Dynamics 365 for Operations team and your partners via Lifecycle Services (LCS). 
 author: sericks007
 manager: AnnBe
-ms.date: 2017-01-04 14 - 43 - 24
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

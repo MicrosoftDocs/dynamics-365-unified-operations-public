@@ -5,7 +5,7 @@ title: Budget planning integration with other modules
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-10 10 - 09 - 48
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

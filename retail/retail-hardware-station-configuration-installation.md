@@ -5,7 +5,7 @@ title: Retail hardware station configuration and installation
 description: This tutorial explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-13 04 - 48 - 42
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

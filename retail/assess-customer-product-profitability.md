@@ -5,7 +5,7 @@ title: Assess customer and product profitability
 description: This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about customers and product profitability from your Microsoft Dynamics 365 for Operations data. 
 author: josaw1
 manager: AnnBe
-ms.date: 2016-02-24 15 - 00 - 32
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

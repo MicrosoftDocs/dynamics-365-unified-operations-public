@@ -5,7 +5,7 @@ title: Dimension Entry control dialog support
 description: Describes the code pattern for putting a Dimension Entry control on a dialog.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-12 23 - 48 - 02
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

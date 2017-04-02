@@ -5,7 +5,7 @@ title: Design principles and best practices
 description: This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-13 00 - 14 - 56
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

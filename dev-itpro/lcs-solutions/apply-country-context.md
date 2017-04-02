@@ -5,7 +5,7 @@ title: Apply country/region context
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement all country-specific or region-specific functionality so that it can be controlled by country/region context. This article describes how to apply country/region context to meet these requirements. In this article you can find information how you should use country context property and what application objects control user interface elements.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-11 14 - 25 - 00
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

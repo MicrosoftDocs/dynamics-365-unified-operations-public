@@ -5,7 +5,7 @@ title: Approve and confirm purchase orders
 description: This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-16 14 - 19 - 17
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Settle a partial customer payment before the discount date with a final p
 description: This article discusses the effect of settling payments to invoices for customers. The scenario focuses on the effects in the subledger, not in General ledger.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23 - 34 - 54
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

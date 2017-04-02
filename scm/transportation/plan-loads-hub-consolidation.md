@@ -5,7 +5,7 @@ title: Plan loads using hub consolidation
 description: This article describes the feature for consolidating shipments in a hub when you deliver goods from different warehouses to the same customer, or when you receive goods from multiple vendors in the same warehouse.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-15 07 - 19 - 09
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

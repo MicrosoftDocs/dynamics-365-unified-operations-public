@@ -5,7 +5,7 @@ title: Intercompany accounting setup
 description: This topic explains how to set up intercompany accounting so that you can use intercompany journals for ledger allocations and financial journals, such as daily journals, vendor invoice journals, and payment journals.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 20 - 44 - 04
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

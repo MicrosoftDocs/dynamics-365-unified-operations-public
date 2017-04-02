@@ -5,7 +5,7 @@ title: Retail peripherals overview
 description: This topic explains the concepts that are related to retail peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-01-30 20 - 11 - 55
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

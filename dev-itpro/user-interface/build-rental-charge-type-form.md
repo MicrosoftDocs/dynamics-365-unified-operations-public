@@ -5,7 +5,7 @@ title: Build the Rental Charge Type form
 description: In this lab you’ll create a Simple List form. A Simple List form can show reference or secondary data that has six or fewer fields. For example, the form that you create will list and describe the types of rental charges. 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-02 22 - 51 - 08
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

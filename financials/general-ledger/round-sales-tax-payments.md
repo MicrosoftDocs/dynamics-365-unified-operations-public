@@ -5,7 +5,7 @@ title: Sales tax payments and rounding rules
 description: This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-14 12 - 24 - 02
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

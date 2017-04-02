@@ -5,7 +5,7 @@ title: Details Transaction form pattern
 description: This article provides information about the Details Transaction form pattern. Forms that use this pattern can have two details views that the user can switch between -  a Header view and a Line view.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-04 00 - 18 - 36
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

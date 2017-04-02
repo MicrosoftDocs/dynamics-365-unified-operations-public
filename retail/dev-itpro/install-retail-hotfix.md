@@ -5,7 +5,7 @@ title: Install Retail hotfixes
 description: Use this tutorial to install Retail hotfixes for Microsoft Dynamics AX.
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-03 19 - 39 - 22
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

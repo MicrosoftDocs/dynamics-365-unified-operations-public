@@ -5,7 +5,7 @@ title: Purchasing policies
 description: This article provides information about purchasing policies. A purchasing policy is a collection of rules that control the requisition process. Purchasing policies help procurement administrators implement their procurement strategy by creating a policy structure that is aligned with the organization’s strategic purchasing requirements.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 55 - 12
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

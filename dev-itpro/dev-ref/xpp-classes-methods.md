@@ -5,7 +5,7 @@ title: X++ classes and methods
 description: This topic describes how to create and use classes and interfaces in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-08-27 00 - 36 - 06
+ms date: 2017-04-04
 ms.topic: 
 ms.prod: 
 ms.service: 

@@ -5,7 +5,7 @@ title: Segmented entry control metadata
 description: Describes the design-time metadata properties for Segmented Entry controls.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-12 20 - 45 - 01
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

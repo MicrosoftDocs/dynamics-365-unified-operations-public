@@ -5,7 +5,7 @@ title: Moving average
 description: 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-17 15 - 16 - 47
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Install a deployable package
 description: This tutorial walks you through the steps for applying a deployable package on a system. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-13 23 - 50 - 03
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

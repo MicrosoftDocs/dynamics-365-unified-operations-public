@@ -5,7 +5,7 @@ title: Deploy a test environment on Azure (AX 2012)
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-02 16 - 44 - 26
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
-title: Examples -  Journals generated during the electronic payment return process for Brazil
+title: Journals generated during the electronic payment return process for Brazil
 description: This topic shows how payment journals are generated when you import and post the return file for electronic payments. The approved payment lines in the return file can be posted either to one journal or multiple journals.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-02-03 16 - 41 - 43
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Examples -  Journals generated during the electronic payment return process for Brazil
+# Journals generated during the electronic payment return process for Brazil
 
 This topic shows how payment journals are generated when you import and post the return file for electronic payments. The approved payment lines in the return file can be posted either to one journal or multiple journals.
 

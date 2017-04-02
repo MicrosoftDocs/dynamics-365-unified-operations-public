@@ -5,7 +5,7 @@ title: Upgrade data in development or demo environments
 description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update. Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using the "other" type service request in Lifecycle Services.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-08-03 20 - 21 - 44
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
