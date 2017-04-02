@@ -5,7 +5,7 @@ title: Balance sheet financial reports
 description: This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-11-04 19 - 29 - 22
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

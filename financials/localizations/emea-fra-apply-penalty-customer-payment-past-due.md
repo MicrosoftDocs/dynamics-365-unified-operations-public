@@ -5,7 +5,7 @@ title: Penalties for past due customer payments in France
 description: In France, you can apply a penalty when a customer payment is past due and you can print the lump sum recovery text that displays the penalty amount that must be paid on the invoice, and the due date of the payment. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-02-04 20 - 58 - 17
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

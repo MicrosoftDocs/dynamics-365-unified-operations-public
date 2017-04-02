@@ -5,7 +5,7 @@ title: Set up bills of exchange
 description: This topic describes the steps for setting up bills of exchange.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-02-08 21 - 05 - 51
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

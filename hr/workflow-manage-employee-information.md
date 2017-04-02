@@ -5,7 +5,7 @@ title: Use workflows to manage employee information
 description: This topic explains how you can use the workflow capability for Human resources to manage employee information. For example, you can associate a workflow with a position and configure an approval workflow that is started when employees change their record.
 author: rschloma
 manager: AnnBe
-ms.date: 2017-02-03 16 - 16 - 43
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

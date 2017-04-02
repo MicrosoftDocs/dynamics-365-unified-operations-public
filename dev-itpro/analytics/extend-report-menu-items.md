@@ -5,7 +5,7 @@ title: Extend report menu items
 description: This topic shows how to extend existing application menu items so that, after only minimal code changes, navigations are redirected to a custom reporting solution. 
 author: sericks007
 manager: AnnBe
-ms.date: 2017-01-09 20 - 09 - 13
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

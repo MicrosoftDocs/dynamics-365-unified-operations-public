@@ -5,7 +5,7 @@ title: View transactions on settlement for Eastern Europe
 description: This topic provides information about the Transactions on settlement page for customers and vendors.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-02-14 18 - 49 - 49
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

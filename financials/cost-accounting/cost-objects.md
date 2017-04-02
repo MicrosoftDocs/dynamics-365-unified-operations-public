@@ -5,7 +5,7 @@ title: Cost object dimensions
 description: When you analyze costs, you use cost element dimensions to determine where costs flow to. You use cost object dimensions to determine where you should assign costs. This topic provides information about cost object dimensions.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-11-01 13 - 17 - 57
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

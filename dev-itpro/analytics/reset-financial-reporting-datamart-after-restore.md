@@ -5,7 +5,7 @@ title: Reset the financial reporting data mart after restoring a database
 description: This topic describes how to reset the financial reporting data mart after restoring a Microsoft Dynamics 365 for Operations database. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-08 16 - 20 - 13
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: P Classes
 description: System API classes that start with the letter P.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-24 14 - 22 - 52
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

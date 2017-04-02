@@ -5,7 +5,7 @@ title: Use a customer payment to settle multiple invoices that span multiple dis
 description: This article shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23 - 30 - 23
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

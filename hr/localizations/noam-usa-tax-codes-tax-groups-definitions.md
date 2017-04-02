@@ -5,7 +5,7 @@ title: Tax codes, tax groups, and posting definitions FAQ
 description: This topic answers frequently asked questions about tax and posting definitions.
 author: rschloma
 manager: AnnBe
-ms.date: 2017-03-16
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

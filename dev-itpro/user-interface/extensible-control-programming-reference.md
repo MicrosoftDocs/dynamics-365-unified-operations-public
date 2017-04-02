@@ -5,7 +5,7 @@ title: Extensible control programming reference
 description: This topic provides reference content for extensible control programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-17 19 - 36 - 49
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

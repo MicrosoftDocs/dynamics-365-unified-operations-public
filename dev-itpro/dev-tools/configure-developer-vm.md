@@ -5,7 +5,7 @@ title: Configure a one-box development environment
 description: This article describes recommended configurations of your one-box developer environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 23 - 19 - 58
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

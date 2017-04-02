@@ -5,7 +5,7 @@ title: Segmented entry control parm methods
 description: Describes the parm methods that can be set in code on an instance of a Segmented Entry control.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-12 20 - 45 - 42
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

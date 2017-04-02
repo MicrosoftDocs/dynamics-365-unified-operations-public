@@ -5,7 +5,7 @@ title: Procurement and sourcing overview
 description: This article gives an overview of the functionality that's available in the Procurement and sourcing module.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-04 13 - 19 - 33
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

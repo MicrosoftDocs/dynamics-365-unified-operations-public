@@ -5,7 +5,7 @@ title: Manage items lent to workers
 description: Loan items are records that help managers track the physical items that your company lends to its workers. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-09-10 21 - 06 - 49
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

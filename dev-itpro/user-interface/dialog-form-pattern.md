@@ -5,7 +5,7 @@ title: Dialog form pattern
 description: This article provides information about the Dialog form pattern. A dialog box represents an action or activity that users can explicitly commit or cancel. It's used when a user initiates a specific task or process, and the system requires user input about how or whether to proceed.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 21 - 58 - 05
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

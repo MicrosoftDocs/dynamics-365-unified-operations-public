@@ -5,7 +5,7 @@ title: Retail and commerce
 description: This page lists the resources that are available for Retail and commerce in Dynamics 365 for Operations - Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-11 15 - 21 - 29
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

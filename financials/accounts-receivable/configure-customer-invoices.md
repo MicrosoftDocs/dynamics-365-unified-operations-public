@@ -5,7 +5,7 @@ title: Create a customer invoice
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-04-04 23 - 11 - 36
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

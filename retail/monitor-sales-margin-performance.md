@@ -5,7 +5,7 @@ title: Monitor sales and margin performance
 description: You can monitor sales and margin performance in real time using Microsoft Dynamics 365 for Operations.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-05-12 18 - 12 - 18
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

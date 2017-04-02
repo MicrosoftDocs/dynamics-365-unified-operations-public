@@ -5,7 +5,7 @@ title: Activate financial dimensions
 description: This topic contains information about the activating financial dimension process.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-09-13 17 - 16 - 27
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

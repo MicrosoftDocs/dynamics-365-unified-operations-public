@@ -5,7 +5,7 @@ title: Data entities - Beginning balances
 description: This article provides a list of the data entities that are available for beginning balance functionality that is related to Budget control in Microsoft Dynamics 365 for Operations. If you're using Budget control, you must set it up and activate it before any balances are posted. Any transactional data that is posted before Budget control is activated won't be included.
 author: kfend
 manager: AnnBe
-ms.date: 2016-11-17 16 - 06 - 00
+ms date: 2017-04-04
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations

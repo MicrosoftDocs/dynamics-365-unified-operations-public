@@ -5,7 +5,7 @@ title: Database synchronization
 description: This wiki provides information about the importance of not synchronizing tables and views until they are fully compiled. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 23 - 28 - 35
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

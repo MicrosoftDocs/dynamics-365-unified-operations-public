@@ -5,7 +5,7 @@ title: Information access and reporting in Dynamics 365 for Operations
 description: This topic explains the various reporting options available as part of the Dynamics 365 for Operations platform.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-01-06 15 - 17 - 12
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

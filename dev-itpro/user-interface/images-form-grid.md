@@ -5,7 +5,7 @@ title: Images
 description: This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used.  
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-26 02 - 17 - 20
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

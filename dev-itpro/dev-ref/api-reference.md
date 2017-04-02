@@ -5,7 +5,7 @@ title: API, class, and table reference
 description: This topic describes where to find API documentation in Visual Studio and on the wiki.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-09 00 - 09 - 13
+ms date: 2017-04-04
 ms.topic: 
 ms.prod: 
 ms.service: 

@@ -5,7 +5,7 @@ title: Security and data entities
 description: Data entities support entry point security similar to menu items and forms. In order to provide flexibility in defining a security model, data entities allow separate security configuration for each integration mode.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 21 - 30 - 20
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

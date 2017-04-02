@@ -5,7 +5,7 @@ title: Manage Retail accounts and devices from headquarters
 description: This article explains how an IT Pro can set up Retail activation accounts for retail workers to activate Modern POS or Cloud POS devices.
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-07 22 - 30 - 17
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

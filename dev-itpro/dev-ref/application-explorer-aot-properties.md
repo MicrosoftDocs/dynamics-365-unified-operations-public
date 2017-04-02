@@ -5,7 +5,7 @@ title: Application Explorer properties
 description: This article describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-05-12 18 - 45 - 02
+ms date: 2017-04-04
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Create purchase orders
 description: This article describes the process and options when you manually create a purchase order.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-16 14 - 19 - 03
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

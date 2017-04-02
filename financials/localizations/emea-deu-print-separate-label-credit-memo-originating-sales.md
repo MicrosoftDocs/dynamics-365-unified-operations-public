@@ -5,7 +5,7 @@ title: Print a separate label for credit memos that originate from sales
 description: This article explains how to specify the label that appears on credit memos that originate from sales.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-01-06 20 - 58 - 38
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

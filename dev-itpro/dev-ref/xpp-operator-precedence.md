@@ -5,7 +5,7 @@ title: Operator precedence
 description: This article describes operator precedence in Microsoft Dynamics 365 for Operations.
 author: pvillads
 manager: AnnBe
-ms.date: 2015-09-14 12 - 26 - 12
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

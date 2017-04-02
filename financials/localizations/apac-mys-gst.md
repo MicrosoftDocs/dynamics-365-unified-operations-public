@@ -5,7 +5,7 @@ title: Malaysia Goods and Services Tax
 description: This article provides information about how to set up Goods and Services Tax (GST) for a Malaysian company and explains the functionality that Microsoft Dynamics 365 for Operations provides for GST.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-03-15
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

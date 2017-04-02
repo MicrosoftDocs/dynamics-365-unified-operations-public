@@ -5,7 +5,7 @@ title: Lifecycle Services for Dynamics 365 for Operations partners
 description: This article explains how partners can get started with Microsoft Dynamics Lifecycle Services (LCS). 
 author: kfend
 manager: AnnBe
-ms.date: 2016-05-05 20 - 29 - 07
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

@@ -5,7 +5,7 @@ title: Purchase agreements
 description: This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 58 - 22
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

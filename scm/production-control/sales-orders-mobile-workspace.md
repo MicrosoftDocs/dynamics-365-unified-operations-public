@@ -5,7 +5,7 @@ title: Sales orders mobile workspace for Microsoft Dynamics 365 for Operations a
 description: With the sales orders mobile workspace, you can stay up-to-date on your sales orders anywhere and anytime. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-12 16 - 53 - 31
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

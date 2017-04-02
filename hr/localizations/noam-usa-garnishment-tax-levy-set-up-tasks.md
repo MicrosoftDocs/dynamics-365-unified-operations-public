@@ -5,7 +5,7 @@ title: Set up garnishments and tax levies
 description: This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15 - 41 - 54
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

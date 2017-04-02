@@ -5,7 +5,7 @@ title: General ledger and Financial reporting home page
 description: Use General ledger to define and manage the legal entity’s financial records. The general ledger is a register of debit and credit entries. These entries are classified using the accounts that are listed in a chart of accounts. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-17 13 - 22 - 35
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

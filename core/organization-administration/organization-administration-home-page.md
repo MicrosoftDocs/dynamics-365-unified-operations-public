@@ -5,7 +5,7 @@ title: Organization administration home page
 description: This topic points to resources that will help you use Microsoft Dynamics 365 for Operations in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-07 21 - 32 - 26
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

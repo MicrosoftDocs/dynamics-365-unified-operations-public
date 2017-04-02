@@ -5,7 +5,7 @@ title: Reverse the production order status
 description: This topic describes how to reverse production order status. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-23 19 - 00 - 04
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

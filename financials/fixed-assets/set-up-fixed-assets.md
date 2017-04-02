@@ -5,7 +5,7 @@ title: Set up fixed assets
 description: This topic provides an overview of Fixed assets module setup.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 22 - 55 - 03
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

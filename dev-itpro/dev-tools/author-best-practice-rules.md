@@ -5,7 +5,7 @@ title: Authoring best practices
 description: This topic describes how you can author best practice rules in C#, for both metadata and X++ code. Best practice checks are run by the compiler and in daily builds to catch objectionable practices that are unacceptable in shipping code. The features can also be used to author simple one-of tools to gather information about the application.
 author: pvillads
 manager: AnnBe
-ms.date: 2016-02-12 19 - 45 - 02
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

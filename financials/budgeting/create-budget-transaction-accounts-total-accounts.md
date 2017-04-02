@@ -5,7 +5,7 @@ title: Create a budget from transaction accounts and total accounts
 description: This article provides an overview of the process for creating budgets based on total accounts. It also explains how to turn on budget control for total accounts, if budget control is required.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-01 16 - 44 - 37
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

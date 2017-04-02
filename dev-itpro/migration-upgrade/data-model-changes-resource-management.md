@@ -5,7 +5,7 @@ title: Project resource scheduling data model
 description: This topic provides information about the Project resource scheduling data model.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-10-07 18 - 13 - 21
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

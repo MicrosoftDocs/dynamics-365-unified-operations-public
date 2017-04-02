@@ -5,7 +5,7 @@ title: Data entities - Public sector
 description: This article provides a list of the data entities that are available for the Public sector functionality in Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
-ms.date: 2016-06-29 14 - 26 - 10
+ms date: 2017-04-04
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations

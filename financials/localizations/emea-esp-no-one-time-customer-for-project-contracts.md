@@ -5,7 +5,7 @@ title: One-time customers
 description: This topic provides information about one-time customers.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-16 21 - 38 - 18
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

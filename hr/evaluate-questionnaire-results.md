@@ -5,7 +5,7 @@ title: View and evaluate the results of a questionnaire
 description: This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-04 18 - 36 - 29
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

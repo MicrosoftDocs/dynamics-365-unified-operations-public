@@ -5,7 +5,7 @@ title: J Classes
 description: System API classes that start with the letter J.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-05 00 - 12 - 53
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

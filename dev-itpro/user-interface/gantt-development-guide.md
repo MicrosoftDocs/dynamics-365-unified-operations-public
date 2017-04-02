@@ -5,7 +5,7 @@ title: Gantt development guide
 description: This article describes how to create new forms by using the Gantt control. We highly recommend that you look at the code in the Tutorial_Gantt form. This code demonstrates the full capabilities of the Gantt control, and shows how to load data and work with the application programming interface (API).
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-04 18 - 08 - 57
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

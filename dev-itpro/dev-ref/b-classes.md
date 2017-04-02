@@ -5,7 +5,7 @@ title: B Classes
 description: System API classes that start with the letter B.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-18 20 - 20 - 46
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

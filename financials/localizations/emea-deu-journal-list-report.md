@@ -5,7 +5,7 @@ title: German journal list report
 description: This article explains what the German journal list report is used for, who typically uses it, and how to run it.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-01-06 20 - 55 - 39
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

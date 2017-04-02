@@ -5,7 +5,7 @@ title: Fiscal calendars, fiscal years, and periods
 description: This article discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 23 - 27 - 13
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

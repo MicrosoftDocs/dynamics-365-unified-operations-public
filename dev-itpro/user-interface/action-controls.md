@@ -5,7 +5,7 @@ title: Action controls
 description: Actions are an essential component of any enterprise resource planning (ERP) system, and are triggered by mouse click, keyboard, or touch.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-02-25 09 - 29 - 45
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

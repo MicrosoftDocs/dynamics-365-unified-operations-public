@@ -5,7 +5,7 @@ title: Post fixed asset transactions to posting layers
 description: This article gives an overview of posting layer functionality for fixed asset transactions.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 20 - 18 - 26
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

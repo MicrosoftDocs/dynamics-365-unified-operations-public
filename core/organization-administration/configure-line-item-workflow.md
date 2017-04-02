@@ -5,7 +5,7 @@ title: Configure a line-item workflow
 description: This topic explains how to configure a line-item workflow element.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-09-30 15 - 59 - 28
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

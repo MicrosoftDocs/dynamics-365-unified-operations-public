@@ -5,7 +5,7 @@ title: Acquire assets through procurement
 description: This article describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 21 - 04 - 15
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

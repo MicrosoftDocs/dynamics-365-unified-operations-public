@@ -5,7 +5,7 @@ title: Workflow actions
 description: This article explains the actions that each participant in a workflow approval process can take.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-02-29 15 - 15 - 11
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

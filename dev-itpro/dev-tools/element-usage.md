@@ -5,7 +5,7 @@ title: Element usage
 description: This article reviews the commands that have been added to the Microsoft Visual studio Tools to help you determine how elements are used in an application. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-09-14 08 - 50 - 13
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

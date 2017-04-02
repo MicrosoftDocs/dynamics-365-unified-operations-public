@@ -5,7 +5,7 @@ title: Routes and operations
 description: This topic provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-24 16 - 05 - 12
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

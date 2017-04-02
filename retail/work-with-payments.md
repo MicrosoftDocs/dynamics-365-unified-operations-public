@@ -5,7 +5,7 @@ title: Payment methods in a call center
 description: This topic covers the different payment methods you can use in a call center in Retail and commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-06-14 18 - 34 - 52
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

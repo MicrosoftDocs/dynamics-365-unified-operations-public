@@ -5,7 +5,7 @@ title: Production process overview
 description: This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 17 - 53 - 41
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

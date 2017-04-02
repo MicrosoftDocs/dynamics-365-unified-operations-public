@@ -5,7 +5,7 @@ title: Budget planning data allocation
 description: This article describes the various allocation methods that are available in Microsoft Dynamics 365 for Operations and how they can be used.  
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 19 - 55 - 03
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

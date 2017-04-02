@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
-title: Vendor collaboration mobile workspace for Microsoft Dynamics 365 for Operations app
+title: Vendor collaboration mobile workspace
 description: With the vendor collaboration mobile workspace, your vendors can stay up-to-date on the purchase orders that have been sent to them for approval and view information about new and updated purchase orders and contacts.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-12 16 - 36 - 37
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Vendor collaboration mobile workspace for Microsoft Dynamics 365 for Operations app
+# Vendor collaboration mobile workspace
 
 With the vendor collaboration mobile workspace, your vendors can stay up-to-date on the purchase orders that have been sent to them for approval and view information about new and updated purchase orders and contacts.
 

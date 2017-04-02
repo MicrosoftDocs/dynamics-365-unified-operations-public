@@ -5,7 +5,7 @@ title: Set up assortments
 description: This article describes what an assortment is and explains how to set up assortments in Microsoft Dynamics 365 for Operations - Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-03 20 - 52 - 27
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

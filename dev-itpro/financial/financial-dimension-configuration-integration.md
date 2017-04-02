@@ -5,7 +5,7 @@ title: Financial dimension configuration for integrating applications
 description: This topic describes the Financial dimension configuration for integrating applications page. This page contains two important areas for setup, the order of financial dimensions for financial reporting and the data entity integration formats. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-06-13 14 - 07 - 46
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

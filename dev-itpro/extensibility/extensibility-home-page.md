@@ -5,7 +5,7 @@ title: Extensibility home page
 description: This topic provides links to topics about extensibility with Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-02-01 19 - 35 - 12
+ms date: 2017-04-04
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations

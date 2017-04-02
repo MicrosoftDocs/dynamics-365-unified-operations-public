@@ -5,7 +5,7 @@ title: Manage subcontracting work in production
 description: This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Operations. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-25 09 - 48 - 23
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

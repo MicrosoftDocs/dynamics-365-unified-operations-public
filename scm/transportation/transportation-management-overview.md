@@ -5,7 +5,7 @@ title: Transportation management overview
 description: This topic gives an overview of the transportation management functionality in Microsoft Dynamics 365 for Operations.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-28 15 - 02 - 17
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

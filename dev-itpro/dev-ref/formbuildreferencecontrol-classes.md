@@ -5,7 +5,7 @@ title: F Classes - FormBuildReferenceControl to FormButtonSeparatorControl
 description: API reference for classes from FormBuildReferenceControl to FormButtonSeparatorControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 23 - 03 - 54
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

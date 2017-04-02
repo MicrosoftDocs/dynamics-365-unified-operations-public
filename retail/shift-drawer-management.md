@@ -5,7 +5,7 @@ title: Shift and cash drawer management
 description: This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-07-28 19 - 03 - 49
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

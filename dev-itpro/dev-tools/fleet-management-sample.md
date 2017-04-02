@@ -5,7 +5,7 @@ title: Fleet Management sample application
 description: This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-10-19 23 - 01 - 38
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

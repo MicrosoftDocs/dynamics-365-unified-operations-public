@@ -5,7 +5,7 @@ title: Expression constraints and table constraints in product configuration mod
 description: This topic describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 08 - 06
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

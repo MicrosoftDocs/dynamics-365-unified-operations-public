@@ -5,7 +5,7 @@ title: Set up Credit and collections
 description: This article explains how to set up the collections functionality.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23 - 04 - 01
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

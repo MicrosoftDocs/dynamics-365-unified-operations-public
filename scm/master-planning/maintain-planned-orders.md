@@ -5,7 +5,7 @@ title: Maintain planned orders
 description: This article provides information about how to manage planned orders. It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 10 - 45
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

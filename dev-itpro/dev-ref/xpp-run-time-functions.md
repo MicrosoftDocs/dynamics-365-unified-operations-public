@@ -5,7 +5,7 @@ title: X++ run-time functions
 description: This wiki describes the X++ run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-05 00 - 29 - 58
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

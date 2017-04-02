@@ -5,7 +5,7 @@ title: Set up pay cycles and pay periods
 description: Pay cycles determine the intervals that workers are paid in. This topic explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 19 - 09 - 48
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Master planning for site and warehouse coverage, warehouse not mandatory
 description: This topic describes how an item that has site and warehouse as coverage dimensions is planned. The warehouse dimension is not mandatory.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08 - 49 - 16
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

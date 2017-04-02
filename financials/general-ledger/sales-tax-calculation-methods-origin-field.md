@@ -5,7 +5,7 @@ title: Sales tax calculation methods in the Origin field
 description: This article explains the options in the Origin field on the sales tax codes page and how sales tax is calculated based on the selected option for a sales tax code.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-09-14 07 - 29 - 34
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

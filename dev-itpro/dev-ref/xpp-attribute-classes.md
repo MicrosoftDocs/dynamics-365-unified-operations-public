@@ -5,7 +5,7 @@ title: X++ attribute classes
 description: This topic describes the use of attributes in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-08-27 00 - 35 - 44
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

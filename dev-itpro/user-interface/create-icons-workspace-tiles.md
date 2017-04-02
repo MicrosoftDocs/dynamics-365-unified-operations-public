@@ -5,7 +5,7 @@ title: Create icons for workspace tiles
 description: This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 author: jasongre
 manager: AnnBe
-ms.date: 2016-08-19 23 - 15 - 21
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

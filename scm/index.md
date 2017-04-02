@@ -1,4 +1,36 @@
-﻿# Supply chain management home page
+﻿---
+# required metadata
+
+title: Supply chain management home page
+description: This page points to resources that will help you use the Microsoft Dynamics 365 for Operations - Supply Chain management more effectively. 
+author: yuyus
+manager: AnnBe
+ms date: 2017-04-04
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+# ms.reviewer: yuyus
+ms.search.scope: Operations, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
+ms.search.region: global
+ms.search.industry: 
+ms.author: yuyus
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
+---
+
+# Supply chain management home page
 This page points to resources that will help you use the Microsoft Dynamics 365 for Operations - Supply Chain management more effectively. 
 
 ## What's new and in development

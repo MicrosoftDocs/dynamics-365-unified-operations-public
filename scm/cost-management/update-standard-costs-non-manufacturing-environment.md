@@ -5,7 +5,7 @@ title: Update standard costs in a non-manufacturing environment
 description: This article provides guidance for updating standard costs in a non-manufacturing environment.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-11 13 - 26 - 29
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

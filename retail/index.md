@@ -1,3 +1,35 @@
+﻿---
+# required metadata
+
+title: Retail home page
+description: Home page for Dynamics 365 for Operations – Retail
+author: josaw1
+manager: AnnBe
+ms date: 2017-04-04
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+# ms.reviewer: josaw
+ms.search.scope: Operations, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
+---
+
 # Retail home page
 Dynamics 365 for Operations – Retail delivers a complete shopping experience, with a seamless and differentiating omni-channel solution that is modern, mobile, and global. End-to-end capabilities, from modern point of sale (POS) software solutions, store operations, merchandising, e-commerce, call center, marketing, and customer care, to supply chain, financials, and more, can be deployed in the way that makes the most sense for your business.
 

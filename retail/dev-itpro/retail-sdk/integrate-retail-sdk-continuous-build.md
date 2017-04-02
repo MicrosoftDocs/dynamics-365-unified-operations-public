@@ -5,7 +5,7 @@ title: Integrate the Retail SDK with the continuous build system (VSTS)
 description: The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Operations and Retail components. This article outlines the manual steps for merging both build systems. 
 author: MargoC
 manager: AnnBe
-ms.date: 2016-04-12 22 - 07 - 22
+ms date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

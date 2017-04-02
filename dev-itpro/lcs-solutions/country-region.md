@@ -5,7 +5,7 @@ title: Localization and regulatory features
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-03-23
+ms date: 2017-04-04
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -63,41 +63,53 @@ The following sections list resources by country/region.
 
 ### Australia
 
--   [Bank file formats](/dynamics365/operations/financials/localizations/asia-pacific/set-up-method-of-payment-pay-vendors-australian-banks)
--   [Business Activity Statement (BAS)](/dynamics365/operations/financials/localizations/asia-pacific/business-activity-statement-bas-overview)
--   [Low value pool depreciation](/dynamics365/operations/financials/localizations/asia-pacific/low-value-pool-depreciation)
+-   [Bank file formats](/dynamics365/operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
+-   [Business activity statement ](/dynamics365/operations/financials/localizations/apac-aus-business-activity-statement.md)
+-   [Low-value pool depreciation](/dynamics365/operations/financials/localizations/apac-aus-low-value-pool-depreciation.md)
+
 
 ### Austria
 
--   [Packing material fee calculation for Austria](/dynamics365/operations/financials/localizations/europe/aut-packing-material-fee-calculation)
--   [VAT statement details for Austria](/dynamics365/operations/financials/localizations/europe/aut-vat-statement-details-austria)
+-   [Packing material fees](/dynamics365/operations/financials/localizations/emea-aut-packing-material-fee-calculation.md)
+-   [VAT statement](/dynamics365/operations/financials/localizations/emea-aut-vat-statement-details.md)
 
 ### Belgium
 
--   [CODA bank statement](/dynamics365/operations/financials/localizations/europe/bel-coda-bank-statement-import)
--   [PRODCOM report](/dynamics365/operations/financials/localizations/europe/prodcom-report-setup)
+-   [CODA bank statement](/dynamics365/operations/financials/localizations/emea-bel-coda-bank-statement-import.md)
+-   [PRODCOM report setup](/dynamics365/operations/financials/localizations/emea-bel-prodcom-report.md)
 
 
 ### Brazil
 
--   [Brazilian taxes](/dynamics365/operations/financials/localizations/latin-america/bra-calculate-taxes)
--   [Examples - Journals generated during the electronic payment return process for Brazil](/dynamics365/operations/financials/localizations/latin-america/bra-examples-journals-generated-electronic-payment-return-process)
--   [Fiscal books overview](/dynamics365/operations/financials/localizations/latin-america/bra-fiscal-books)	
--   [NF-e process overview](/dynamics365/operations/financials/localizations/latin-america/bra-nf-e-process)
--   [Parameters for legal entities in Brazil](/dynamics365/operations/financials/localizations/latin-america/brazilian-legal-entity-parameters)
+-   [Fiscal books](/dynamics365/operations/financials/localizations/latam-bra-fiscal-books.md)
+-   [Fiscal document text placeholders](/dynamics365/operations/financials/localizations/latam-bra-fiscal-document-text-placeholders.md)
+-   [Fiscal documents](/dynamics365/operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md)
+-   [ICMS tax fiscal documents](/dynamics365/operations/financials/localizations/latam-bra-icms-tax-fiscal-documents.md)
+-   [Import and verify NF-e XML documents and DANFE files](/dynamics365/operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+-   [Import fiscal documents](/dynamics365/operations/financials/localizations/latam-bra-import-fiscal-documents.md)
+-   [Journals generated during the electronic payment return process](/dynamics365/operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md)
+-   [NF-e process](/dynamics365/operations/financials/localizations/latam-bra-nf-e-process.md)
+-   [Parameters for legal entities](/dynamics365/operations/financials/localizations/latam-bra-legal-entity-parameters.md)
+-   [Purchase complementary fiscal documents](/dynamics365/operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md)
+-   [Referenced fiscal documents](/dynamics365/operations/financials/localizations/latam-bra-referenced-fiscal-documents.md)
+-   [Sales complementary fiscal documents](/dynamics365/operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents.md)
+-   [Service electronic fiscal document](/dynamics365/operations/financials/localizations/latam-bra-service-electronic-fiscal-document.md)
+-   [Tax attributes](/dynamics365/operations/financials/localizations/latam-bra-tax-attributes.md)
+-   [Tax payments](/dynamics365/operations/financials/localizations/latam-bra-tax-payments.md)
+-   [Taxes](/dynamics365/operations/financials/localizations/latam-bra-calculate-taxes.md)
+
 
 ### China
--   [Bill of materials comparison](/dynamics365/operations/financials/localizations/asia-pacific/chn-bom-comparison)
--   [Chinese vouchers](/dynamics365/operations/financials/localizations/asia-pacific/chinese-vouchers)
--   [Configure tax integration for China](/dynamics365/operations/financials/localizations/asia-pacific/configure-tax-integration-china)
-    -   [VAT customer invoices FAQ](/dynamics365/operations/financials/localizations/asia-pacific/chn-chinese-tax-integration-vat-customer-invoices)
--   Fixed assets
-    -   [Allocation rules for fixed assets](/dynamics365/operations/financials/localizations/asia-pacific/allocation-rules-fixed-assets)
-    -   [Depreciation methods for fixed assets](/dynamics365/operations/financials/localizations/asia-pacific/depreciation-methods-fixed-assets-china)
--   [Import the Chinese Golden Tax data entity](/dynamics365/operations/financials/localizations/asia-pacific/import-chinese-golden-tax-data-entity)
--   [Monthly average cost model for China](/dynamics365/operations/financials/localizations/asia-pacific/chn-monthly-average-cost-model)
--   [Posting inventory main accounts by site](/dynamics365/operations/financials/localizations/asia-pacific/chn-about-posting-inventory-main-accounts-by-site)
--   [Display debit and credit amounts for ledger accounts](/dynamics365/operations/financials/localizations/asia-pacific/set-up-negative-debits-credits-china)
+-   [Bill of materials comparison](/dynamics365/operations/financials/localizations/apac-chn-bom-comparison.md)
+-   [Chinese vouchers](/dynamics365/operations/financials/localizations/apac-chn-vouchers.md)
+-   [Configure tax integration](/dynamics365/operations/financials/localizations/apac-chn-tax-integration.md)
+    -   [VAT customer invoices FAQ](/dynamics365/operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+    -   [Depreciation methods fixed assets ](/dynamics365/operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
+-   [Import the Chinese Golden Tax data entity](/dynamics365/operations/financials/localizations/apac-chn-import-golden-tax-data-entity.md)
+-   [Monthly average cost model](/dynamics365/operations/financials/localizations/apac-chn-monthly-average-cost-model.md)
+-   [Post inventory main accounts by site](/dynamics365/operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
+-   [Display debit and credit amounts for ledger accounts](/dynamics365/operations/financials/localizations/apac-chn-negative-debits-credits.md)
+
 
 ### The Czech Republic
 -   Fixed asset depreciation
