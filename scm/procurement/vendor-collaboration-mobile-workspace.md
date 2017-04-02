@@ -5,7 +5,7 @@ title: Vendor collaboration mobile workspace
 description: With the vendor collaboration mobile workspace, your vendors can stay up-to-date on the purchase orders that have been sent to them for approval and view information about new and updated purchase orders and contacts.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

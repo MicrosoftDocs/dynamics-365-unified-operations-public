@@ -5,7 +5,7 @@ title: Dynamics 365 for Operations  -  Retail for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Retail and commerce in Microsoft Dynamics 365 for Operations.
 author: RobinARH
 nmanager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

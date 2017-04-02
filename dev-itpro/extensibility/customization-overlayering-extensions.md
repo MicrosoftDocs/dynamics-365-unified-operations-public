@@ -5,7 +5,7 @@ title: Customize with extensions and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

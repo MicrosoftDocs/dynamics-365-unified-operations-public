@@ -5,7 +5,7 @@ title: Build a product configuration model
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

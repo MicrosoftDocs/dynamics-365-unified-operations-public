@@ -5,7 +5,7 @@ title: Set up and maintain vendor collaboration
 description: This topic describes the configuration tasks that are needed to set up Dynamics 365 for Operations to use vendor collaboration. It also describes how to provision new vendor collaboration users.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

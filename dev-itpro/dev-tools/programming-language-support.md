@@ -5,7 +5,7 @@ title: Programming language support
 description: This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Operations.
 author: pvillads
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

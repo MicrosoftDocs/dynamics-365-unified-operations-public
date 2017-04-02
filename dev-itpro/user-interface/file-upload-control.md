@@ -5,7 +5,7 @@ title: File upload control
 description: This topic provides information about the file upload control. This control lets users upload files to Microsoft Dynamics 365 for Operations.
 author: aneesmsft
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

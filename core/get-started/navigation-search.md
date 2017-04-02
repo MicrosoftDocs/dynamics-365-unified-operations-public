@@ -5,7 +5,7 @@ title: Navigation search
 description: This article explains how to use the search functionality to navigate to pages in Microsoft Dynamics 365 for Operations.
 author: aneesmsft
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Data entities - Global address book
 description: This article provides a list of the data entities that are available for the Global address book functionality in Microsoft Dynamics 365 for operations.
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

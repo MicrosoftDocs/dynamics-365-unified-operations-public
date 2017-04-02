@@ -5,7 +5,7 @@ title: Merge inventory batches
 description: This article provides information about how to consolidate two or more inventory batches into a merged batch. 
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

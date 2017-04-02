@@ -5,7 +5,7 @@ title: Call center functionality
 description: This article provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Operations.
 author: josaw1
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

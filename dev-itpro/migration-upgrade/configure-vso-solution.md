@@ -5,7 +5,7 @@ title: Configure Visual Studio Team Services mapping during code migration
 description: This tutorial shows how to map your development box to the Visual Studio Team Services (VSTS) project after the LCS code upgrade service has completed. 
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

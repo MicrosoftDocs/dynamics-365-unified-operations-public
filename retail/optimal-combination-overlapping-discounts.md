@@ -5,7 +5,7 @@ title: Determine the optimal combination of overlapping discounts
 description: When discounts overlap, you must determine the combination of overlapping discounts that will produce the lowest transaction total or the highest total discount. When the discount amount varies according to the price of the products that are purchased, such as in the common “Buy 1, get 1 X percent off” (BOGO) retail discount, this process becomes an issue of combinatorial optimization.
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

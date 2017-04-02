@@ -5,7 +5,7 @@ title: Public sector accounting in France
 description: This article describes public sector accounting in France.
 author: rschloma
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

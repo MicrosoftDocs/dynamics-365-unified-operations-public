@@ -5,7 +5,7 @@ title: Projects in Dynamics 365 for Operations
 description: The Dynamics 365 for Operations project type is part of the Microsoft Visual Studio Tools for Dynamics 365 for Operations. 
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

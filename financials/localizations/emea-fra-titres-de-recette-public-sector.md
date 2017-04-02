@@ -5,7 +5,7 @@ title: Titres de recette in the public sector in France
 description: The titre de recette is used by the director to notify the accountant that the organization is entitled to collect a specific amount from another entity, and to authorize the accountant to deposit that amount. The director or the accountant may delegate a representative to perform the task, but the responsibility for each task remains with the director or the accountant. The titre maintains the strict separation that is required between the operational role of the director and the accounting role of the accountant.
 author: rschloma
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

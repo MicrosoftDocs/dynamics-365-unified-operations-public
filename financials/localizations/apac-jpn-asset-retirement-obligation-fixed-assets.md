@@ -5,7 +5,7 @@ title: Set up asset retirement obligation for fixed assets
 description: In Japan, asset retirement obligation (ARO) is recognized for fixed assets that have legal obligations at their retirement. This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired.
 author: ShylaThompson
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

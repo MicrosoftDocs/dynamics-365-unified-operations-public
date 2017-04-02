@@ -5,7 +5,7 @@ title: Dimension-based product configuration
 description: Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

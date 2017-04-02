@@ -5,7 +5,7 @@ title: EU Sales list reporting
 description: This article provides information about European Union (EU) Sales list reporting.
 author: ShylaThompson
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

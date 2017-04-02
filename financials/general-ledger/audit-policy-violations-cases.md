@@ -5,7 +5,7 @@ title: Audit policy violations and cases
 description: The article explains how audit cases are generated from violations of audit policy rules. It also includes information about the various ways that audit policies use the document selection date range.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

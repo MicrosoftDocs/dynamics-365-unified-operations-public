@@ -5,7 +5,7 @@ title: Dynamics AX 2012 features that haven't been implemented but aren't deprec
 description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Dynamics 365 for Operations. Although these features haven't yet been implemented, they aren't deprecated. 
 author: sericks007
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

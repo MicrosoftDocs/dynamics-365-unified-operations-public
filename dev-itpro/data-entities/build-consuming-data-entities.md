@@ -5,7 +5,7 @@ title: Build and consume data entities
 description: This tutorial shows how to build an entity in Fleet Management in Microsoft Visual Studio, and also how to consume some out-of-band (OOB) entities in an integration scenario. You will see how Microsoft Dynamics 365 for Operations simplifies the development of data entities in the Visual Studio development environment. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

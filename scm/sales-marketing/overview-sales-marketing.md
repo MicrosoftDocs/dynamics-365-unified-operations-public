@@ -5,7 +5,7 @@ title: Sales and marketing
 description: You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

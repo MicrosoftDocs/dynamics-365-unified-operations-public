@@ -5,7 +5,7 @@ title: Dimension entry control migration
 description: This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

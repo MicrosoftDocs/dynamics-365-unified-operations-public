@@ -5,7 +5,7 @@ title: Inventory statuses
 description: This article describes how you can use inventory statuses to categorize and keep track of inventory.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

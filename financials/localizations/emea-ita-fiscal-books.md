@@ -5,7 +5,7 @@ title: Italian sales tax books
 description: The topic describes how to set up and use Italian sales tax books and Italian sales tax book sections.
 author: ShylaThompson
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

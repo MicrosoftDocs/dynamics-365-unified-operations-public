@@ -5,7 +5,7 @@ title: Create record templates
 description: This article introduces the concept of record templates and explains how they can be used to create records that share information.
 author: pvillads
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

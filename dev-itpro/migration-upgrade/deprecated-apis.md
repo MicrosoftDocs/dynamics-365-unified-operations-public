@@ -5,7 +5,7 @@ title: Deprecated APIs in Dynamics 365 for Operations
 description: This document provides the list of deprecated APIs and migration guidance for some of the deprecated APIs.
 author: aneesmsft
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

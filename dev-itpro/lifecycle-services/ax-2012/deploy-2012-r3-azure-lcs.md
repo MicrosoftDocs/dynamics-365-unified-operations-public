@@ -5,7 +5,7 @@ title: Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services
 description: 
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

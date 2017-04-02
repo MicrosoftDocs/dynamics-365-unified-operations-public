@@ -5,7 +5,7 @@ title: Tax attributes for Brazil
 description: This topic explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
 author: ShylaThompson
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

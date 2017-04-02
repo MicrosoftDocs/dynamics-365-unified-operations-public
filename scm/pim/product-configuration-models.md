@@ -5,7 +5,7 @@ title: Product configuration models overview
 description: This article defines terms and concepts that are relevant to product configuration models. Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

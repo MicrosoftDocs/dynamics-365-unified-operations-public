@@ -5,7 +5,7 @@ title: Build operations
 description: This topic reviews the process to build projects and full build of model packages.
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

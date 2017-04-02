@@ -5,7 +5,7 @@ title: Continuous delivery home page
 description: These topics describe tools and guidelines related to continuous delivery of your solution.
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations

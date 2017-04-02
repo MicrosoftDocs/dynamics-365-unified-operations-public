@@ -5,7 +5,7 @@ title: Derived books
 description: This article provides an overview of derived book functionality.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

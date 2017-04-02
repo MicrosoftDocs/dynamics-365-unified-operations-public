@@ -5,7 +5,7 @@ title: Purchase order codes in the public sector
 description: This article provides information about the codes and special messages that can be used with confirming purchase orders. A confirming purchase order bypasses the typical purchasing process.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

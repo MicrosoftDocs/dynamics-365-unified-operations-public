@@ -5,7 +5,7 @@ title: Access Dynamics 365 for Operations instances
 description: This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configurations settings for developers and administrators.
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

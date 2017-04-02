@@ -5,7 +5,7 @@ title: Configure Accounts payable
 description: This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics AX. It also describes setup steps that you must complete before you start to set up Accounts payable.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

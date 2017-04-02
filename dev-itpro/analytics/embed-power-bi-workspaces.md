@@ -5,7 +5,7 @@ title: Embed Power BI in workspaces
 description: Dynamics 365 for Operations now delivers rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 author: sericks007
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

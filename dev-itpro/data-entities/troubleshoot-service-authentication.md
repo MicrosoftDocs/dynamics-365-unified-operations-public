@@ -5,7 +5,7 @@ title: Service authentication troubleshooting
 description: This topic provides some tips for troubleshooting issues that involve service authentication.  
 author: nimakms
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

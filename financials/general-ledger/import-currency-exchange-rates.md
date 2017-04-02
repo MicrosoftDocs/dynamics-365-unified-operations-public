@@ -5,7 +5,7 @@ title: Import currency exchange rates
 description: If a legal entity has received invoices in foreign currencies, it’s necessary to convert the foreign currency into the local currency. This means that up-to-date exchange rates for different currencies are required. This topic provides an overview of the required settings and processing for importing foreign exchange reference rates published over the Internet by the exchange rate providers, such as the European Central Bank and the Central Bank of Russia.
 author: ShylaThompson
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

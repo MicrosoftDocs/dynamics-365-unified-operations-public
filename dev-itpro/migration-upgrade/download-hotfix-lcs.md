@@ -5,7 +5,7 @@ title: Download hotfixes from Lifecycle Services
 description: Use this tutorial to download the Microsoft Dynamics 365 for Operations hotfixes from Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

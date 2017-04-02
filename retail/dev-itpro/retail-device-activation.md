@@ -5,7 +5,7 @@ title: Retail POS device activation
 description: This article explains the new guided device activation for Retail Cloud POS and Retail Modern POS, and explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 author: MargoC
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

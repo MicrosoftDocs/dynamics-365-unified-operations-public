@@ -5,7 +5,7 @@ title: Commerce runtime overview
 description: This article provides information about the architecture and configuration of the Microsoft Dynamics 365 for Operations Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the retail channel. 
 author: MargoC
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

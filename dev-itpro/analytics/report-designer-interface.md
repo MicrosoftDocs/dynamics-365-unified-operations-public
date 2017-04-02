@@ -5,7 +5,7 @@ title: Report Designer interface
 description: This article explains how to navigate through Report Designer and how to use the various options to meet your specific requirements. 
 author: ShylaThompson
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

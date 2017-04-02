@@ -5,7 +5,7 @@ title: Standard cost conversion overview
 description: This article provides a process overview to help you set up and run a standard cost conversion. The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion. 
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

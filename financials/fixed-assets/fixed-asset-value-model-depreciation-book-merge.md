@@ -5,7 +5,7 @@ title: Fixed asset value model and depreciation book merge
 description: In previous releases, there were two valuation concepts for fixed assets -  value models and depreciation books. In the Microsoft Dynamics 365 for Operations 1611 release, the value model functionality and depreciation book functionality have been merged into a single concept that is known as a book.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

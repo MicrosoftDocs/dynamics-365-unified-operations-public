@@ -5,7 +5,7 @@ title: Competence date for transactions
 description: This topic provides information about the competence date and explains how to enable the functionality for transactions in Italy.
 author: ShylaThompson
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

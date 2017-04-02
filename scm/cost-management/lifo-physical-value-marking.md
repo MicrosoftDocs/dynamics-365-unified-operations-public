@@ -5,7 +5,7 @@ title: LIFO with physical value and marking
 description: Last in, First out (LIFO) is an inventory model in which the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. 
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

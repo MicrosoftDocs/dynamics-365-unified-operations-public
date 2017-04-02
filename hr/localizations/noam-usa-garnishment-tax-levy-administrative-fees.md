@@ -5,7 +5,7 @@ title: Garnishments, tax levies, and administrative fees FAQ
 description: This topic lists frequently asked questions and answers about garnishments and tax levies. It provides information to help you quickly and accurately set up garnishments and tax levies to keep your organization in compliance with applicable laws, regulations, and court orders. If you have a question that isn’t answered here or in the related topics, confer with your legal advisors.
 author: rschloma
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

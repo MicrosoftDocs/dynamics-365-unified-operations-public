@@ -5,7 +5,7 @@ title: Foreign currency revaluation for General ledger
 description: This topic provides an overview of the following for the general ledger foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

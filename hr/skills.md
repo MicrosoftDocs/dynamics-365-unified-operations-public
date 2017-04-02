@@ -5,7 +5,7 @@ title: Align workforce skills with business needs
 description: You can track the skills that workers, applicants, or contact persons have, or should have, to fulfill their roles effectively. You can also specify the skills that are required for a specific job.
 author: rschloma
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

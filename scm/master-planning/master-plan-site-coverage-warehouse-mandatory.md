@@ -5,7 +5,7 @@ title: Master planning for site coverage, mandatory warehouse
 description: This topic describes how an item that has the site as coverage dimension is planned. Warehouse is a mandatory dimension.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Retail SDK extensibility samples
 description: The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Retail.  
 author: josaw1
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

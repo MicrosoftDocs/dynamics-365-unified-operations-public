@@ -5,7 +5,7 @@ title: Vendor collaboration invoicing workspace
 description: This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

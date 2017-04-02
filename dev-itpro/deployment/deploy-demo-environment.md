@@ -5,7 +5,7 @@ title: Deploy a Microsoft Dynamics 365 for Operations demo environment
 description: This topic explains how to deploy a single-box Microsoft Dynamics 365 for Operations demo environment on Microsoft Azure through Microsoft Dynamics Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

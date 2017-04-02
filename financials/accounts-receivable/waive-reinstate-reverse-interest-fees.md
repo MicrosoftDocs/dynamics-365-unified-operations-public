@@ -5,7 +5,7 @@ title: Waive, reinstate, or reverse interest fees
 description: This article explains how to waive, reinstate, and reverse charges for interest and fees.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

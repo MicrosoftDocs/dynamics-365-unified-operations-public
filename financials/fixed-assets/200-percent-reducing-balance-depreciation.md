@@ -5,7 +5,7 @@ title: 200 percent reducing balance depreciation
 description: This article gives an overview of the 200 percent reducing balance method of depreciation.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

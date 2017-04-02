@@ -5,7 +5,7 @@ title: Create and use deep links
 description: Learn how to create shareable, secured URLs to forms and records.
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

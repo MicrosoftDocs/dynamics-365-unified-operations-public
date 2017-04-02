@@ -5,7 +5,7 @@ title: Year-end processing in the public sector
 description: This article provides information about year-end processing for a public sector organizations.
 author: twheeloc
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Product-related translations FAQ
 description: This topic describes how to manage translations for products, product dimension values, and product attributes. 
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

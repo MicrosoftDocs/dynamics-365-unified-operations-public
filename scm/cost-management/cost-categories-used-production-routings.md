@@ -5,7 +5,7 @@ title: Cost categories used in production routing
 description: This article provides information about cost categories that apply to manufacturing environments that use routing.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
