@@ -1,7 +1,7 @@
 ﻿---
 # required metadata
 
-title: Copy Dynamics 365 for Operations database from Azure SQL to SQL Server
+title: Copy Dynamics 365 for Operations database - Azure SQL to SQL Server
 description: This topic provides information about how to export a Microsoft Dynamics 365 for Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
 author: MargoC
 manager: AnnBe
