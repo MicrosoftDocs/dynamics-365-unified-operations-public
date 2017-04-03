@@ -1,4 +1,4 @@
-﻿----
+﻿---
 # required metadata
 
 title: Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)

@@ -56,5 +56,5 @@ Accommodations represent changes to work environments or business operations tha
 See also
 --------
 
-[Human resources](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=197861&preview=true)
+[Human resources](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/hr/index.md)
 

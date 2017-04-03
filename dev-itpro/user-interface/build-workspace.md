@@ -57,7 +57,7 @@ Use Microsoft Visual Studio to import the tutorial project. The tutorial project
 5.  In the **Select the file to import** dialog box, browse to the **Downloads** folder, click **FMTutorialDataModel.axpp**, and then click **Open**.
 6.  Select the **Overwrite Elements** check box and the **Current solution** option. The following illustration shows the completed **Import Project** dialog box. 
 
-    [![](./media/importproject1.png)](./media/importproject1.png)
+    [![Import project](./media/importproject1.png)](./media/importproject1.png)
     
 7.  Click **OK**.
 8.  In Solution Explorer, expand **Classes**, and then, under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.
@@ -100,7 +100,7 @@ Operational workspaces can optionally include a panorama section that contains u
 1.  In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
 2.  Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer. 
 
-    [![](./media/fmtworkspaceinitial-1024x650.png)](./media/fmtworkspaceinitial.png)
+    [![Open form](./media/fmtworkspaceinitial-1024x650.png)](./media/fmtworkspaceinitial.png)
     
 
 ## Exercise 2: Create a new tile for the workspace
@@ -196,7 +196,7 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 1.  In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
 2.  Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer. 
 
-    [![](./media/currentrentalstile.png)](./media/currentrentalstile.png)
+    [![Rentals tile](./media/currentrentalstile.png)](./media/currentrentalstile.png)
     
 3.  Click the **Current rentals** tile. You go to the **Rentals** page, which should be filtered to the three current rentals.
 4.  Click the **Back** button or the **Close** button to return to the workspace.
@@ -209,11 +209,11 @@ A system administrator can modify tile cache parameters at run time by using the
 1.  Click in the navigation search field on the navigation bar.
 2.  Type **Tile data**, and then click ******Tile data cache configuration****** in the search results. 
 
-    [![](./media/tilecachesearch.png)](./media/tilecachesearch.png)
+    [![Tile cache search](./media/tilecachesearch.png)](./media/tilecachesearch.png)
     
 3.  Find the **FMTCurrentRentalsTile** record. 
 
-    [![](./media/tilecacheparams-1024x328.png)](./media/tilecacheparams.png)
+    [![Tile cache parameters](./media/tilecacheparams-1024x328.png)](./media/tilecacheparams.png)
     
 
 From this page, the system administrator can perform several run-time modifications to a tile cache. For example, the system administrator can enable/disable the data cache, modify the refresh frequency, and enable/disable the ability to manually refresh the count tile. Note that tile caches are registered when a form that has a tile is first opened. Therefore, the list of tiles that is shown in your environment might differ from the list in the preceding illustration.
@@ -239,7 +239,7 @@ Next, you will next see how to include an additional list in the workspace. This
 
 4.  Right-click **AvailableVehiclesContainer**, point to **New**, and then click **Form Part**. **Note:** **Form Part **is the only control type that the Operational Workspace pattern allows here. This control will be used to link to the form that you will build to hold the content for this section. 
 
-    [![](./media/addsection1.png)](./media/addsection1.png)
+    [![Add section](./media/addsection1.png)](./media/addsection1.png)
     
 5.  In the **Properties** window, set the **Name** property to **AvailableVehiclesPart**.
 6.  Press **Ctrl+S** to save.
@@ -273,7 +273,7 @@ Next, you will next see how to include an additional list in the workspace. This
 7.  Notice the **Pattern: &lt;select&gt;** notation next to **Form Design**. This indicates the required pattern for this node. Right-click **Design**, point to **Apply pattern**, and then click **Form Part Section List**. This form pattern is typically used by workspace lists.
 8.  Click the **Pattern** tab to see the expected content for this pattern. This information will help guide you as you create content for the form. **Note:** In the future, we plan to provide a mechanism for automatically creating a form structure, based on a selected form pattern. 
 
-    [![](./media/formpartsectionlist.png)](./media/formpartsectionlist.png) 
+    [![Section list](./media/formpartsectionlist.png)](./media/formpartsectionlist.png) 
     
     In particular, this pattern looks for the following elements:
     -   An optional header group that contains any filters and actions that are required for this workspace list.
@@ -372,7 +372,7 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 1.  In Solution Explorer, right-click the **FmtClerkWorkspace** form, and then click **Set as Startup Object**.
 2.  Press **Ctrl+F5** to build and run the form. The form opens in Internet Explorer. 
 
-    [![](./media/availablelist.png)](./media/availablelist.png)
+    [![Available list](./media/availablelist.png)](./media/availablelist.png)
     
 3.  Click the **Available vehicles** tab to see the new list.
 4.  Click in the QuickFilter, type **Lit**, and then press **Enter** to filter down to Litware model vehicles that are available.
@@ -435,7 +435,7 @@ The first step is to build a query that will be used to populate the cache table
 
     The query that you've constructed should match the following illustration. 
     
-    ![cachequery.png](./media/cachequery.png)
+    ![Cache query](./media/cachequery.png)
         
 15. Press **Ctrl+S** to save.
 

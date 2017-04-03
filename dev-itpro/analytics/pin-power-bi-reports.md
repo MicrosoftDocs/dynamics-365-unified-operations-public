@@ -6,9 +6,9 @@ description: Microsoft Dynamics 365 for Operations uses Power BI for data explor
 author: sericks007
 manager: AnnBe
 ms.date: 2017-04-04
-ms.topic: 
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

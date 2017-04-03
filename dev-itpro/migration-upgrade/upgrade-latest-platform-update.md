@@ -6,9 +6,9 @@ description: This topic explains how to upgrade your Microsoft Dynamics 365 for 
 author: MargoC
 manager: AnnBe
 ms.date: 2017-04-04
-ms.topic: 
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

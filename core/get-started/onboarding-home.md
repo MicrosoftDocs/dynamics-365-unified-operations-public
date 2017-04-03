@@ -34,4 +34,4 @@ To get started with Microsoft Dynamics 365 for Operations, you can pick a subscr
 The following resources provide an overview of the Lifecycle Services and how to work with your partner to get onboarded to Dynamics 365 for Operations.
 -   [Sign up for a subscription](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription)
 -   [Microsoft FastTrack for Dynamics 365 overview](fasttrack-dynamics-365-overview.md)
--   [Customer introduction to Lifecycle Services](/dynamics365/operations/dev-itpro/ifecycle-services/lcs-works-lcs)
+-   [Customer introduction to Lifecycle Services](/dynamics365/operations/dev-itpro/lifecycle-services/lcs-works-lcs)

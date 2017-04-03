@@ -74,7 +74,7 @@ For more information about Task Recorder, see [Task recorder in Dynamics 365 for
 You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../user-interface/task-recorder.md).
 
 ## In-product Help
-To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. [![Help pane](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
 
 ### Accessing articles from the Help pane
 
