@@ -96,7 +96,6 @@ A customer wants to buy some small, red T-shirts and the name of the T-shirt mus
 <tr class="odd">
 <td>To set the preferred language of a customer, follow these steps:
 <ol>  
-<li>  </li>
 <li>Click <strong>Sales and marketing</strong> &gt; <strong>Common</strong> &gt; <strong>Customers</strong> &gt; <strong>All</strong> <strong>customers</strong>.</li>
 <li>Double-click a customer to open the <strong>Customers</strong> page. On the <strong>General</strong> tab, in the <strong>Language</strong> field, select the <strong>language</strong>.</li>
 </ol></td>
