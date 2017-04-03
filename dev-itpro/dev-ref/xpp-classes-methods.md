@@ -6,9 +6,9 @@ description: This topic describes how to create and use classes and interfaces i
 author: RobinARH
 manager: AnnBe
 ms.date: 2017-04-04
-ms.topic: 
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

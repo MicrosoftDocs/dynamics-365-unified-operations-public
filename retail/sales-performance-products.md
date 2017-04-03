@@ -1,3 +1,4 @@
+---
 # required metadata
 
 title: Assess sales performance by product

@@ -1,8 +1,8 @@
 ﻿---
 # required metadata
 
-title: Create an archive object for the Intelligent Data Management Framework (AX 2012)
-description: 
+title: Create an archive object for the Intelligent Data Management Framework
+description: This topic describes how to use archive objects.
 author: kfend
 manager: AnnBe
 ms.date: 2017-04-04
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Create an archive object for the Intelligent Data Management Framework (AX 2012)
+# Create an archive object for the Intelligent Data Management Framework
 
 
 

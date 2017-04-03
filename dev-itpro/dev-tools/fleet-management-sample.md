@@ -47,11 +47,11 @@ To work with the sample, you must install the provided demo data.
 2.  Sign in.
 3.  On the dashboard, open the navigation pane and go to **Fleet Management &gt; Setup &gt; Fleet setup**. 
 
-    [![FleetSetup1\_IntroFleetMgmt](./media/fleetsetup1_introfleetmgmt1.png)](./media/fleetsetup1_introfleetmgmt1.png)
+    [![Fleet Setup](./media/fleetsetup1_introfleetmgmt1.png)](./media/fleetsetup1_introfleetmgmt1.png)
     
 4.  Click **Setup Demo Data**. 
     
-    [![LoadDemoData\_IntroFleetMgmt](./media/loaddemodata_introfleetmgmt1.png)](./media/loaddemodata_introfleetmgmt1.png)
+    [![Load Demo Data](./media/loaddemodata_introfleetmgmt1.png)](./media/loaddemodata_introfleetmgmt1.png)
     
 5.  If you're prompted to reload the demo data, click **Yes**.
 6.  When the data is finished loading, click **Close**.
@@ -60,26 +60,26 @@ To work with the sample, you must install the provided demo data.
 Keep in mind that you’re working with the migrated app in this section. The forms that you see are directly ported from the Microsoft Dynamics AX 2012 version of the sample. Although they have been modified and restyled, they have not been reimagined.
 
 1.  Open Internet Explorer, and sign into Microsoft Dynamics 365 for Operations.
-2.  To return to the **Dashboard**, click the Microsoft Dynamics logo in the top-left corner of the page.[![ReturntoDash\_IntroFleetMgmt](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) The dashboard is the main hub for working with Dynamics 365 for Operations. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
+2.  To return to the **Dashboard**, click the Microsoft Dynamics logo in the top-left corner of the page.[![Return to Dash](./media/returntodash_introfleetmgmt.png)](./media/returntodash_introfleetmgmt.png) The dashboard is the main hub for working with Dynamics 365 for Operations. You can see the various tiles, organized into sections, which lead to parts of the application. The dashboard is designed for horizontal scrolling, which is an optimization for working well on modern devices. The button to the right of the dashboard shows the navigation bar.
 3.  From the Dashboard, open the navigation bar and go to **Fleet Management** &gt; **Common** &gt; **Customers** &gt; **Customer**. 
 
-    [![Customers\_IntroFleetMgmt](./media/customers_introfleetmgmt.png)](./media/customers_introfleetmgmt.png) 
+    [![Customers](./media/customers_introfleetmgmt.png)](./media/customers_introfleetmgmt.png) 
     
-    [![NewCustomer\_IntroFleetMgmt](./media/newcustomer_introfleetmgmt1.png)](./media/newcustomer_introfleetmgmt1.png)
+    [![New Customer](./media/newcustomer_introfleetmgmt1.png)](./media/newcustomer_introfleetmgmt1.png)
         
 4.  On the Action Pane, click the Microsoft Office logo, then click on **Customers** under **Export to Excel **to send the information in the grid view to a Microsoft Excel spreadsheet. This operation can take some time.
 
-    [![ExportToExcel](./media/exporttoexcel.jpg)](./media/exporttoexcel.jpg)
+    [![Export to excel](./media/exporttoexcel.jpg)](./media/exporttoexcel.jpg)
     
 5.  When prompted, click **Open** to view the data in Excel.
 6.  Close Excel.
 7.  To switch to the **Details** view, click on a value in the **First Name** column. 
 
-    [![](./media/customer.jpg)](./media/customer.jpg) This view shows detailed information for a single customer.
+    [![First name](./media/customer.jpg)](./media/customer.jpg) This view shows detailed information for a single customer.
     
 8.  Click **Show list** to show the navigation list. 
 
-    [![ListNav\_IntroFleetMgmt](./media/listnav_introfleetmgmt1.png)](./media/listnav_introfleetmgmt1.png)
+    [![Navigation list](./media/listnav_introfleetmgmt1.png)](./media/listnav_introfleetmgmt1.png)
     
 9.  Click the various customer names in the navigation list in the side pane, and watch as the detailed information about each customer changes.
 10. Select the customer **Phil Spencer**. You'll notice the charts update to indicate Phil's previous rental preferences.
@@ -87,7 +87,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 12. Add yourself as a customer.
     -   On the Action Pane, click **New**. 
         
-        [![AddYourself\_IntroFleetMgmt](./media/addyourself_introfleetmgmt1.png)](./media/addyourself_introfleetmgmt1.png)
+        [![Add yourself](./media/addyourself_introfleetmgmt1.png)](./media/addyourself_introfleetmgmt1.png)
         
     -   Fill in the form to add yourself as a customer. Make sure that you provide your name, a 16-digit number in the credit card field, and address information, at a minimum. **Note**: You don't have to take any action to save a new record in Dynamics 365 for Operations.
 
@@ -115,7 +115,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 7.  Click the Dynamics icon to return to the dashboard.
 8.  On the navigation bar, navigate to **Fleet management** &gt; **Vehicles** &gt; **Vehicle Maintenance**. 
 
-    [![VehicleMaintenance\_IntroFleetMgmt](./media/vehiclemaintenance_introfleetmgmt.png)](./media/vehiclemaintenance_introfleetmgmt.png) 
+    [![Vehicle Maintenance](./media/vehiclemaintenance_introfleetmgmt.png)](./media/vehiclemaintenance_introfleetmgmt.png) 
     
     In the **Vehicle Maintenance** form, the **Stauts** field shows that your rental is awaiting examination by the service department. **Note**: You might need to wait up to two minutes for the batch framework to change the status of the vehicle. On the Action Pane, click **Refresh** periodically to update the view, until you see the status change. Keep in mind that a different person usually handles each step in a workflow; the brief delay introduced by the batch framework is not an issue in a real-world application.
 9.  Select the row that contains your rental. On the Action Pane, click **Workflow**, and then click **Examination complete**. **Note**: You may need to refresh the page to get the full set of options under Workflow.
@@ -129,12 +129,12 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 
 1.  On the dashboard, navigate to **Fleet Management** &gt; **Setup** &gt; **Workflow setup**. The **Workflow Setup** page shows the list of workflows. 
 
-    [![](./media/workflowsetup.jpg)](./media/workflowsetup.jpg)
+    [![Workflow setup](./media/workflowsetup.jpg)](./media/workflowsetup.jpg)
     
 2.  In the **Workflow ID** column, click the ID of your vehicle maintenance workflow.
 3.  Accept any prompts that ask you for permission to run code. After a short wait, the workflow editor opens. **Note:** This step works on the one-box environment, but not in the cloud. You can view the workflow diagram in the workflow editor. The following illustration shows the workflow.
 
-    [![Workflow\_IntroFleetMgmt](./media/workflow_introfleetmgmt.png)](./media/workflow_introfleetmgmt.png)
+    [![Workflow diagram](./media/workflow_introfleetmgmt.png)](./media/workflow_introfleetmgmt.png)
     
 4.  When you are done, close the **Workflow** window.
 
@@ -159,7 +159,7 @@ The Microsoft Dynamics 365 for Operations web client enables users who have appr
      
 6.  Click **Save**. 
 
-    [![NewKPI\_IntroFleetMgmt](./media/newkpi_introfleetmgmt1.png)](./media/newkpi_introfleetmgmt1.png) 
+    [![New KPI](./media/newkpi_introfleetmgmt1.png)](./media/newkpi_introfleetmgmt1.png) 
     
     **Note:** If the **Save** button isn’t visible in the **New KPI** dialog box, use a higher screen resolution so that you can see the entire dialog. You can see the KPI details page that contains details about the KPI that you created. You can make changes in the **Details** section. You will modify the default threshold values so that if the value is less than 90% of the goal, the KPI will show red and if the value is over 110% of the goal, the KPI will show green.
 7.  Click **Edit**.
@@ -173,12 +173,12 @@ The Microsoft Dynamics 365 for Operations web client enables users who have appr
      
 9.  In the application bar, click **Save 
 
-    [![KPIGraph\_IntroFleetMgmt](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)**
+    [![KPI Graph](./media/kpigraph_introfleetmgmt.png)](./media/kpigraph_introfleetmgmt.png)**
     
 10. Click the form caption to return to the grid view.
 11. Click the **Name** column header, change the filter operator to **contains**, and update the filter field value to **Number**. You will see the new KPI is available in the list.
 
-    [![KPIList\_IntroFleetMgmt](./media/kpilist_introfleetmgmt1.png)](./media/kpilist_introfleetmgmt1.png)
+    [![KPI List](./media/kpilist_introfleetmgmt1.png)](./media/kpilist_introfleetmgmt1.png)
 
 ## Launch an operational report
 In this tutorial, you’ll launch an operational report that contains a list of customers who are currently renting vehicles.
@@ -186,7 +186,7 @@ In this tutorial, you’ll launch an operational report that contains a list of 
 1.  Use the dashboard to open the **Reservation management** workspace.
 2.  Click the **Customers report** tile. Do not enter anything in the parameter for **Customer group**. 
 
-    [![CustomerList\_IntroFleetMgmt](./media/customerlist_introfleetmgmt1.png)](./media/customerlist_introfleetmgmt1.png)
+    [![Customer List](./media/customerlist_introfleetmgmt1.png)](./media/customerlist_introfleetmgmt1.png)
     
 3.  Click **OK** to close the dialog box. Microsoft Dynamics 365 for Operations will render the report and show the list of customers. The report may take a minute to render.
 
@@ -208,7 +208,7 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
 
 4.  Click **Assign Roles**. 
 
-    [![AssignRoles\_IntroFleetMgmt](./media/assignroles_introfleetmgmt.png)](./media/assignroles_introfleetmgmt.png)
+    [![Assign Roles](./media/assignroles_introfleetmgmt.png)](./media/assignroles_introfleetmgmt.png)
     
 5.  Select **Fleet management branch manager**, and then click **OK**.
 6.  Click the user name on the top right, and then click **Sign Out**. You’ll be redirected back to the sign-n page

@@ -6,10 +6,10 @@ description: This topic provides an overview of the process for setting up and s
 author: ShylaThompson
 manager: AnnBe
 ms.date: 2017-04-04
-ms.topic: 
+ms.topic: article
 ms.prod: 
 ms.service: 
-ms.technology: 
+ms.technology: Dynamics365Operations
 
 # optional metadata
 
