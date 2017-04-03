@@ -51,7 +51,7 @@ Create codes and special messages for confirming purchase orders. A confirming p
 > [!NOTE]
 > This also applies to Accounts payable.
 
--   [Public sector accounting in France](/localizations/eurore/public-sector-accounting-france.md) 
+-   [Public sector accounting in France](/localizations/emea-fra-public-sector-accounting.md) 
 
 For French organizations, additional steps may be required for the public sector.
 
