@@ -63,4 +63,4 @@ The following restrictions apply when you create links in posting definitions:
 -   You can assign a posting definition to any transaction type, but the transaction type must be in the same module as the posting definition. Use the **Transaction posting definitions** page to see what module a transaction type is in.
 
 
-For more information, see [Posting definitions examples](/general-ledger/example-posting-definitions.md). 
+For more information, see [Posting definitions examples](example-posting-definitions.md). 
