@@ -34,7 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Describes the design-time metadata properties for Segmented Entry controls.
 
-The custom properties for the Segmented Entry control are found under the Controller group. Here is an example. \[caption id="attachment\_145451" align="alignnone" width="568"\][![SEC Property Sheet Example](./media/10.jpg)](./media/10.jpg) SEC Property Sheet Example\[/caption\] Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  See the table at the bottom of this article for more details.
+The custom properties for the Segmented Entry control are found under the Controller group. Here is an example. 
+
+[![SEC Property Sheet Example](./media/10.jpg)](./media/10.jpg) 
+
+Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  See the table at the bottom of this article for more details.
 
 ##### Property details
 
