@@ -37,7 +37,7 @@ The LCS-integrated experience supports both code upgrades and new projects. The 
 Enable the build system
 -----------------------
 
-To get started, you must follow all the steps to get a full Dynamics 365 for Operations continuous build system up and running. For information, see [Developer topology deployment with continuous build and test automation](\dev-itpro\perf-test\continuous-build-test-automation.md). After deployment, you create the build definition and build steps. Build at least one time, so that you become familiar with it and are sure that you can build without errors. Then move to the next step.
+To get started, you must follow all the steps to get a full Dynamics 365 for Operations continuous build system up and running. For information, see [Developer topology deployment with continuous build and test automation](\dynamics365\operations\dev-itpro\perf-test\continuous-build-test-automation). After deployment, you create the build definition and build steps. Build at least one time, so that you become familiar with it and are sure that you can build without errors. Then move to the next step.
 
 ## Prepare the Retail SDK
 ### Getting the Retail SDK
