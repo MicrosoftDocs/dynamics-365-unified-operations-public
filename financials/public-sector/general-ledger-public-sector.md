@@ -63,5 +63,5 @@ You can use derived financial hierarchies to collect and analyze posted transact
 See also
 --------
 
-[General ledger](/general-ledger/general-ledger.md)
+[General ledger](../general-ledger/general-ledger.md)
 
