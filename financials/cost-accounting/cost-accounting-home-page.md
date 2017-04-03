@@ -6,9 +6,9 @@ description: This topic provides a list of the help topics and other resources t
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-04-04
-ms.topic: 
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
