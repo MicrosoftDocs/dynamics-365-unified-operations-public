@@ -5,7 +5,7 @@ title: Recently added editing features in task recorder
 description: If you use task recorder to create task guides, you can edit your files more efficiently using the functionality described in this wiki.
 author: josaw1
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

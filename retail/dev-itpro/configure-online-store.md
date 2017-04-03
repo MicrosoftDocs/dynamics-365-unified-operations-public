@@ -5,7 +5,7 @@ title: Configure an online store
 description: This article provides links to topics that will help you centrally configure and manage and online store from Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

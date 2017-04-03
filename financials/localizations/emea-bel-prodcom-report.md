@@ -5,7 +5,7 @@ title: Set up and maintain PRODCOM
 description: This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 for Operations. 
 author: ShylaThompson
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

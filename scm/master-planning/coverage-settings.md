@@ -5,7 +5,7 @@ title: Coverage settings
 description: Master scheduling uses coverage settings to calculate item requirements. 
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Dynamics 365 for Operations glossary
 description: The Microsoft Dynamics 365 for Operations glossary defines key terms and concepts in the Dynamics 365 for Operations product. 
 author: tonyafehr
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: 
 ms.prod: 
 ms.service: 

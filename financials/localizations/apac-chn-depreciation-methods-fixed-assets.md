@@ -5,7 +5,7 @@ title: Depreciation methods for fixed assets
 description: This topic describes the depreciation method set up for legal entities in China.
 author: ShylaThompson
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

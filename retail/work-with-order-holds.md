@@ -5,7 +5,7 @@ title: Order holds
 description: This topic describes holds on orders using Retail and commerce in Dynamics AX.
 author: josaw1
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

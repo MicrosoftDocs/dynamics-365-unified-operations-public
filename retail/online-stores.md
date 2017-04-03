@@ -5,7 +5,7 @@ title: Online store overview
 description: This article provides information about Retail online stores and how to set them up in Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

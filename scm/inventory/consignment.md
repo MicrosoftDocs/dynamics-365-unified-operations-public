@@ -5,7 +5,7 @@ title: Consignment
 description: This topic explains how to use the inbound consignment inventory processes.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

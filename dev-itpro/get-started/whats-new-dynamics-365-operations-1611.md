@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Operations version 1611 (Novemb
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 author: sericks007
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

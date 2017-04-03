@@ -5,7 +5,7 @@ title: Create exchange rate providers
 description: This article describes how to set up an exchange rate provider. 
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

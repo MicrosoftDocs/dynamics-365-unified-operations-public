@@ -5,7 +5,7 @@ title: Replenishment
 description: This article describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

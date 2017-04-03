@@ -5,7 +5,7 @@ title: Set up vendor accounts
 description: This topic describes the types of information that you must specify when you create a new vendor account.
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

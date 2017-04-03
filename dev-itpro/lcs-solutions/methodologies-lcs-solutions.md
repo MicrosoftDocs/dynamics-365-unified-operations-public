@@ -5,7 +5,7 @@ title: Add a methodology to an LCS solution
 description: This topic explains how to create and modify methodologies. It also provides information about the requirements for methodologies.
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

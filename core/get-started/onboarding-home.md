@@ -5,7 +5,7 @@ title: Onboarding to Microsoft Dynamics 365 for Operations
 description: This page points to resources that will help you onboard to Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

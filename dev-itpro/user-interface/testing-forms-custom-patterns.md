@@ -5,7 +5,7 @@ title: Test forms with custom patterns
 description: This topic how to test forms using custom patterns.
 author: jasongre
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

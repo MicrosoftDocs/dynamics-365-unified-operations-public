@@ -5,7 +5,7 @@ title: Details Master form pattern
 description: This article provides information about the Details Master form pattern. A details form is the primary method for entering data into Microsoft Dynamics 365 for Operations.
 author: jasongre
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Inventory on-hand mobile workspace for Microsoft Dynamics 365 for Operati
 description: The Inventory on-hand mobile workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere. 
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

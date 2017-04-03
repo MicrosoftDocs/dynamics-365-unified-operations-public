@@ -5,7 +5,7 @@ title: X++ container run-time functions
 description: This wiki describes the container run-time functions.
 author: RobinARH
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

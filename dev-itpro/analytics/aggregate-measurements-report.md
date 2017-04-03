@@ -5,7 +5,7 @@ title: Aggregate measurements report
 description: This topic points you to a report that lists the aggregate measurements that are available in Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

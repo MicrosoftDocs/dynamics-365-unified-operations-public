@@ -5,7 +5,7 @@ title: Set up Business process modeler libraries for an LCS solution
 description: This topic explains how to create and work with Business process modeler (BPM) libraries.
 author: kfend
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

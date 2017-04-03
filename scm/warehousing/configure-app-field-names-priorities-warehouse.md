@@ -5,7 +5,7 @@ title: Configure app field names in Warehousing app
 description: This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 for Operations. 
 author: YuyuScheller
 manager: AnnBe
-ms date: 2017-04-04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
