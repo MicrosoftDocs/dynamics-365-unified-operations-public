@@ -102,5 +102,5 @@ For information about the various way to find pages, see the "Searching for page
 See also
 --------
 
-[Customize field help](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help.md)
+[Customize field help](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
 
