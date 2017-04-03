@@ -48,7 +48,7 @@ For more information about OData, see the following webpages.
 
 | To learn about this topic                                                        | See this webpage                                        |
 |----------------------------------------------------------------------------------|---------------------------------------------------------|
-| Open Data Protocol Standards                                                     | <http://www.odata.org/documentation/odata-version-4-0>  |
+| Open Data Protocol Standards                                                     | <http://www.odata.org/documentation/>  |
 | Open Data Protocol: Data access for the web, the cloud, mobile devices, and more | <http://msdn.microsoft.com/en-us/data/hh237663.aspx>    |
 | Open Data Protocol by example                                                    | <http://msdn.microsoft.com/en-us/library/ff478141.aspx> |
 
@@ -98,7 +98,7 @@ In this example, the **SysODataCollectionAttribute** class enables OData to expo
 -   The X++ type for the members of this list
 -   The public name of the OData resource that is contained in the collection
 
-After these actions are exposed, they can be invoked from the service root URL. To learn more about OData actions, see [http://www.odata.org/2011/10/actions-in-odata/](http://www.odata.org/2011/10/actions-in-odata/.).
+After these actions are exposed, they can be invoked from the service root URL. To learn more about OData actions, see [Action in OData](http://odata.org/blog/actions-in-odata/).
 
 ## Querying or browsing an OData endpoint
 OData enables an SQL-like language for creating rich queries against the database to include only those data items that you want in the results. To create a query, append criteria to the resource path. For example, you can query the **Customers** entity collection by appending the following query options in your browser.

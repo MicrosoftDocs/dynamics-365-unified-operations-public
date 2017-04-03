@@ -41,7 +41,7 @@ In this section, you'll create a new project in Visual Studio Online. This proje
 
 ### Sign up to Visual Studio Online, create an account, and create a new project
 
-Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Online. Click **Sign up**. If you already have an account in Visual Studio Online, go to the [Create a Visual Studio Online project](#_Create_a_Visual) section later in this wiki. 
+Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Online. Click **Sign up**. If you already have an account in Visual Studio Online, go to the Create a Visual Studio Online project section later in this topic. 
 
 [![SignUp\_UsingDevoTools](./media/signup_usingdevotools.png)](./media/signup_usingdevotools.png)
 

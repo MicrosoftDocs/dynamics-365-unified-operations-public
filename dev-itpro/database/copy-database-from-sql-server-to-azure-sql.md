@@ -52,7 +52,7 @@ The process for moving a database involves using the sqlpackage.exe command-line
 4.  Import the database into an Azure SQL database.
 5.  Run a script to update the database.
 
-If you encounter issues, see the [Known issues and limitations](#issues) section at the end of this topic. It explains how to troubleshoot, gives performance tips, and explains limitations of the copy process.
+If you encounter issues, see the Known issues and limitations section at the end of this topic. It explains how to troubleshoot, gives performance tips, and explains limitations of the copy process.
 
 ## Prerequisites
 -   The source SQL Server–based environment must be running Microsoft SQL Server 2016 Release to Manufacturing (RTM) (13.0.1601.5) or later. The Community Technology Preview (CTP) versions of SQL Server 2016 might cause errors. If the source environment is running an earlier version of SQL Server 2016, you must first back up the database and restore it to another environment that is running SQL Server 2016 RTM (13.0.1601.5) or later.
@@ -60,7 +60,7 @@ If you encounter issues, see the [Known issues and limitations](#issues) section
     -   Because of an Internet Protocol (IP) access restriction on all instances of Dynamics 365 for Operations that run on Azure SQL Database, connections are allowed only from a computer in that environment.
     -   The version of Management Studio that is installed by default is for a previous version of SQL Server and can't perform the required tasks.
 
-**Important:** If your environment includes Retail components, you must manually store some environment-specific values before you begin. See the [Additional steps for Retail environments](#retail) section.
+**Important:** If your environment includes Retail components, you must manually store some environment-specific values before you begin. See the Additional steps for Retail environments section.
 
 ## Before you begin
 Encrypted and environment-specific values can't be imported into a new environment. After you've completed the import, you must re-enter some data from your source environment in your target environment.
@@ -141,7 +141,7 @@ Here is an explanation of the parameters:
 -   **tf** (target file) – The path and name of the file to export to. The folder should already exist, but the export process will create the file.
 
 ## Import the database into an Azure SQL database
-Copy the .bacpac file that was generated in the previous step to the AOS computer in the target environment. A typical golden database .bacpac file will be smaller than 100 MB. Therefore, you can copy and paste the file through a Remote Desktop (RDP) window. If the .bacpac file is much larger than 100 MB, [upload the file to an Azure storage account,](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/) and then download it to the target AOS computer. **Note:** Microsoft doesn't provide a storage account as part of your Dynamics 365 for Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer. (For more details, see the [Known issues](#issues) section.) Open a **Command Prompt** window as an administrator, and run the following commands.
+Copy the .bacpac file that was generated in the previous step to the AOS computer in the target environment. A typical golden database .bacpac file will be smaller than 100 MB. Therefore, you can copy and paste the file through a Remote Desktop (RDP) window. If the .bacpac file is much larger than 100 MB, [upload the file to an Azure storage account,](https://azure.microsoft.com/en-gb/documentation/articles/storage-use-azcopy/) and then download it to the target AOS computer. **Note:** Microsoft doesn't provide a storage account as part of your Dynamics 365 for Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription. For performance reasons, we recommend that you put the .bacpac file on drive D on the AOS computer. (For more details, see the Known issues section.) Open a **Command Prompt** window as an administrator, and run the following commands.
 
     cd C:\Program Files (x86)\Microsoft SQL Server\130\DAC\bin\
 

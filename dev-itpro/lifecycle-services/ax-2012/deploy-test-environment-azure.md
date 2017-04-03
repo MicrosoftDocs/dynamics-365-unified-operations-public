@@ -369,7 +369,7 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 <td><strong>Note</strong></td>
 </tr>
 <tr class="even">
-<td>To process the cubes that are included with AX 2012 R3, we recommend that you increase the ExternalCommandTimeout value to 7200. For more information, see <a href="http://www.basarat.com/2011/04/ssas-error-in-processing-dimension.html">SSAS Error in processing a dimension: HYT00, Query Timeout Expired</a> on the <a href="http://www.basarat.com/">Coding Rocks!</a> blog.</td>
+<td>To process the cubes that are included with AX 2012 R3, we recommend that you increase the ExternalCommandTimeout value to 7200.</td>
 </tr>
 </tbody>
 </table>

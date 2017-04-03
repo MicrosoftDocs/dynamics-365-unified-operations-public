@@ -75,8 +75,6 @@ Task Recorder is a Dynamics 365 for Operations tool that you can use to record 
 See also
 --------
 
-[Creating New Training Libraries for Dynamics 365 for Operations within Lifecycle Services using the Task Recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [New Task guides (February 2016)](new-task-guides-available-february-2016.md)
 
 [New or updated Task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
