@@ -57,7 +57,7 @@
 ## [Vendor collaboration invoicing workspace](accounts-payable/vendor-portal-invoicing-workspace.md)
 ## Payments and settlements
 ### [Centralized payments for Accounts payable](accounts-payable/centralized-payments-accounts-payable.md)
-### [Configure settlement](/cash-bank-management/configure-settlement.md)
+### [Configure settlement](cash-bank-management/configure-settlement.md)
 ### [Create vendor payments by using a payment proposal](accounts-payable/create-vendor-payments-payment-proposal.md)
 ### [Reverse a vendor payment](accounts-payable/reverse-vendor-payment.md)
 ### [Prepayment invoices and prepayments overview](accounts-payable/prepayments-invoices-vs-prepayments.md)
