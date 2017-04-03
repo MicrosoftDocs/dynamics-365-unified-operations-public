@@ -5,7 +5,7 @@ title: Lookup form pattern
 description: This article provides information about the Lookup form pattern. Custom lookup forms should be used when a standard framework-provided lookup would not provide the correct data, or when advanced visualization of the data is required.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-01 01 - 10 - 25
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

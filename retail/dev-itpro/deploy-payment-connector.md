@@ -5,7 +5,7 @@ title: Deploy a payment connector
 description: This topic describes how to deploy a payment connector package to the appropriate components of Microsoft Dynamics 365 for Operations. 
 author: MargoC
 manager: AnnBe
-ms.date: 2016-08-18 21 - 31 - 02
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

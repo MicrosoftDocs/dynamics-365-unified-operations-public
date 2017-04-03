@@ -5,7 +5,7 @@ title: Fiscal books for Brazil
 description: This topic provides information about fiscal books. Fiscal books are one of three projects that make up the Public Digital Bookkeeping System (SPED). They can help you consolidate fiscal and statutory books into electronic files to fulfill the requirements for SPED. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-02-08 21 - 13 - 24
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

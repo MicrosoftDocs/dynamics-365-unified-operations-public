@@ -5,7 +5,7 @@ title: Half year depreciation on fixed asset disposal for the Czech Republic
 description: This topic explains how to set up half-yearly depreciation, so that you can apply half the yearly depreciation for fixed assets that are sold or otherwise disposed of.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-19 16 - 25 - 43
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

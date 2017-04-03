@@ -5,7 +5,7 @@ title: Organizations and organizational hierarchies (Commerce essentials)
 description: Commerce essentials has three types of internal organizations that you can define to help an organization carry out a business process or achieve a goal. 
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-09 14 - 53 - 48
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

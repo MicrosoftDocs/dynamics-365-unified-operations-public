@@ -5,7 +5,7 @@ title: Control extensibility
 description: This article describes the architecture that lets developers extend the user interface and also define new user interface patterns. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-13 06 - 40 - 04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

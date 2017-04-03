@@ -5,7 +5,7 @@ title: Production setup requirements
 description: This article provides information about setup requirements before you can work with Production control. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-25 13 - 02 - 09
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

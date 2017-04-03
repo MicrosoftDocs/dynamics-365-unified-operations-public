@@ -5,7 +5,7 @@ title: Workflow system overview
 description: This article describes the workflow system in Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-02-29 15 - 10 - 28
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: ISV licensing
 description: This article describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 author: maertenm
 manager: AnnBe
-ms.date: 2016-03-24 19 - 53 - 15
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

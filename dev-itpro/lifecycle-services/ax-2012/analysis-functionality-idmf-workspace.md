@@ -5,7 +5,7 @@ title: Analysis
 description: This topic describes the functionality available from the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) Analysis menu.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-04 20 - 04 - 53
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

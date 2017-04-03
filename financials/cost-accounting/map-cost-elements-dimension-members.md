@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Map different cost element dimension members to a common set of dimension members
+title: Map cost element dimension members to a common set of dimension members
 description: By mapping different cost element dimension members to a common set of cost element dimension members, you merge data into a common format for analysis purposes.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-11-01 13 - 45 - 07
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Map different cost element dimension members to a common set of dimension members
+# Map cost element dimension members to a common set of dimension members
 
 By mapping different cost element dimension members to a common set of cost element dimension members, you merge data into a common format for analysis purposes.
 

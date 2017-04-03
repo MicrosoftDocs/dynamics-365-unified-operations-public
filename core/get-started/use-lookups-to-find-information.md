@@ -5,7 +5,7 @@ title: Use lookups to find information
 description: In Microsoft Dynamics 365 for Operations, many fields have lookups that can help you easily find the correct or desired value. Several enhancements have been added to lookups that make these controls more usable and make users more productive. In this topic, you will learn about these new lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.  
 author: jasongre
 manager: AnnBe
-ms.date: 2017-02-08 18 - 52 - 05
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

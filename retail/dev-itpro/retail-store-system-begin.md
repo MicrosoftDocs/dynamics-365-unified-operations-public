@@ -5,7 +5,7 @@ title: Retail Store Scale Unit overview
 description: This topic describes the Retail Store Scale Unit and when to use it.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-10-28 19 - 05 - 32
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

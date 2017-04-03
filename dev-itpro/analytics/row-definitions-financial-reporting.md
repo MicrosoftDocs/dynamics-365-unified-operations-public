@@ -3,9 +3,9 @@
 
 title: Row definitions in financial report designer
 description: A row definition is a report component, or building block, that specifies the contents of each row on a financial report. A row definition can be combined with column definitions, reporting tree definitions, and report definitions to create a building block group that can be used by multiple companies.
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 42 - 39
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 # ms.tgt_pltfrm: 
 ms.custom: 68873
@@ -177,5 +177,5 @@ To make it easier to view the columns that you're working on in the row definiti
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics 365 for Operations](financial-reporting-intro.md)
+[Financial reporting](financial-reporting-intro.md)
 

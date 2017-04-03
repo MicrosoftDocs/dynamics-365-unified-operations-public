@@ -5,7 +5,7 @@ title: Create a Power BI report by using Dynamics 365 for Operations data
 description: This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http - //app.powerbi.com.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-12 19 - 09 - 37
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

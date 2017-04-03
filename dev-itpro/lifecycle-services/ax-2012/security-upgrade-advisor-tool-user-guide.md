@@ -5,7 +5,7 @@ title: Security Upgrade Advisor Tool user guide (AX 2012)
 description: The Microsoft Dynamics AX Security Upgrade Advisor Tool is intended to help simplify the process of upgrading security settings from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012. 
 author: kfend
 manager: AnnBe
-ms.date: 2016-01-25 15 - 35 - 30
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

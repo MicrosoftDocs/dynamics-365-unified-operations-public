@@ -5,7 +5,7 @@ title: Data import/export framework entities (AX 2012)
 description: This topic lists the entities that can be imported by using the Data Import/Export Framework, the application module that each entity is associated with, and the class, staging table, and target table for each entity.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-04 22 - 27 - 09
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

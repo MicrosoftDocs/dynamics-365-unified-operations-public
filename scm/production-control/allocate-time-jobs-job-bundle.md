@@ -5,7 +5,7 @@ title: Allocate time to jobs in a job bundle
 description: In Manufacturing execution, you can bundle jobs. You can then start multiple jobs at the same time on the Job list page.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-25 13 - 04 - 25
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

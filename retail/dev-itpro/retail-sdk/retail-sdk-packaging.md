@@ -5,7 +5,7 @@ title: Retail SDK packaging
 description: This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-17 19 - 43 - 46
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

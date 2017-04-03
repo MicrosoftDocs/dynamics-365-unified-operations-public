@@ -5,7 +5,7 @@ title: Handling cash discounts for overpayments
 description: This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23 - 14 - 39
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Filters and Toolbar subpatterns
 description: This article provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-01-11 18 - 40 - 37
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

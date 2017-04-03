@@ -5,7 +5,7 @@ title: View and export field descriptions
 description: This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 24
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -102,5 +102,6 @@ For information about the various way to find pages, see the "Searching for page
 See also
 --------
 
-[Customize field help](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help.md)
+[Customize field help](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
 

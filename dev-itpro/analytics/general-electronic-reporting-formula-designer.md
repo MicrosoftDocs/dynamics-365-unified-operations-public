@@ -5,7 +5,7 @@ title: Formula designer in Electronic reporting
 description: This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use Microsoft Excel–like formulas for data transformation to meet the requirements for that document's fulfillment and formatting. Various types of functions are supported -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions).
 author: kfend
 manager: AnnBe
-ms.date: 2016-03-07 15 - 27 - 59
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

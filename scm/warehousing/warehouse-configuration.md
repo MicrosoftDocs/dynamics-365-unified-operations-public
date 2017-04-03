@@ -5,7 +5,7 @@ title: Warehouse configuration
 description: This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 43
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -71,7 +71,7 @@ To achieve optimal outbound processes, you should evaluate whether to use fixed
 
 ### Location setup wizard
 
-To quickly create the locations within a warehouse, you can use the **Location setup **wizard. As part of this process, you can easily maintain the format of the location names.
+To quickly create the locations within a warehouse, you can use the **Location setup** wizard. As part of this process, you can easily maintain the format of the location names.
 
 ## Warehouse processes
 As part of the configuration of the warehouse, it's important that you enable warehouse processes according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
@@ -80,7 +80,12 @@ As part of the configuration of the warehouse, it's important that you enable wa
 
 Wave templates help enable the outbound "Release to warehouse" process. As soon as order lines are released (either directly from source documents, via batch job processes, or via loads that have already been created), the wave template functionality is used. 
 
-You can create three types of wave templates: **Shipping**, **Production order**, and **Kanban**. Parameters are used to define how far the system should automatically go in the outbound work processing. A wave template is selected based on the wave template sequence and criteria that are specified in the template. If a template is listed at the top of the sequence, the criteria in that template are checked first. If the criteria can be met, the wave template is processed. Otherwise, the criteria in the next template are checked, and so on. Therefore, it's a good idea to put the template that has the most specific criteria at the top of the wave template sequence list, so that it's processed first. For example, you want to process all the work for a specific carrier today and temporarily delay processing of the work for other carriers. In this case, the wave template that selects work for that carrier should be listed higher in the sequence than other templates. Otherwise, the work for other carriers might be processed before the work for that carrier is completed. 
+You can create three types of wave templates: 
+-   **Shipping**
+-   **Production order**
+-   **Kanban** 
+
+Parameters are used to define how far the system should automatically go in the outbound work processing. A wave template is selected based on the wave template sequence and criteria that are specified in the template. If a template is listed at the top of the sequence, the criteria in that template are checked first. If the criteria can be met, the wave template is processed. Otherwise, the criteria in the next template are checked, and so on. Therefore, it's a good idea to put the template that has the most specific criteria at the top of the wave template sequence list, so that it's processed first. For example, you want to process all the work for a specific carrier today and temporarily delay processing of the work for other carriers. In this case, the wave template that selects work for that carrier should be listed higher in the sequence than other templates. Otherwise, the work for other carriers might be processed before the work for that carrier is completed. 
 
 You must specify the wave process methods in each wave template. The methods that are available vary, depending on the wave template type.
 
@@ -112,5 +117,5 @@ To make it easier and quicker to define the actions that are associated with eac
 See also
 --------
 
-[Configure locations in a WMS-enabled warehouse (task guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Configure locations in a WMS-enabled warehouse (task guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
 

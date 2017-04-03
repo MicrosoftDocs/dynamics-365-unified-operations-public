@@ -5,7 +5,7 @@ title: Add contextual BI to forms
 description: In this tutorial you'll model a form part that displays the previous rental history of vehicles. You'll add the form part to the Vehicles form using a DynaLink. When the user views a vehicle record, the part displays relevant rental history. 
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-12 19 - 10 - 00
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

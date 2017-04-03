@@ -5,7 +5,7 @@ title: Design a questionnaire
 description: This topic describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-04 18 - 16 - 06
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

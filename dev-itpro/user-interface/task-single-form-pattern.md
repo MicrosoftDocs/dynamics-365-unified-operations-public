@@ -5,7 +5,7 @@ title: Task Single form pattern
 description: This article provides information about the Task Single form pattern. This pattern was previously used to present data that users would perceive as originating from a single data source that had multiple records.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-02 23 - 39 - 07
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

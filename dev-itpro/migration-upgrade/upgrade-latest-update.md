@@ -5,7 +5,7 @@ title: Overview of moving to the latest update of Dynamics 365 for Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-07-18 22 - 13 - 43
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

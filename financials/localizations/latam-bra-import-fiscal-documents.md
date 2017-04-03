@@ -5,7 +5,7 @@ title: Import fiscal documents for Brazil
 description: This topic describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-02-09 15 - 40 - 31
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

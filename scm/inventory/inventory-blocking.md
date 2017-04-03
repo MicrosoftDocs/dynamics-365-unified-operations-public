@@ -5,7 +5,7 @@ title: Inventory blocking
 description: This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics AX. You can use inventory blocking to prevent items from being processed or consumed.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08 - 05 - 55
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

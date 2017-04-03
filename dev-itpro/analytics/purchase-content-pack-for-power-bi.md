@@ -5,7 +5,7 @@ title: Purchase spend analysis Power BI content
 description: This topic describes what is included in the Purchase spend analysis content pack for Microsoft Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that are used to build the content pack.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-12-30 09 - 40 - 51
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -135,7 +135,7 @@ The Purchase spend analysis content pack includes a report that consists of a se
 \* Purchase this year and last year, and growth by procurement category
 
 ## Data model and entities
-Dynamics 365 for Operations data is used for the report in the Purchase spend analysis content pack. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information about the Entity store, see the [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. The aggregate measurements in this content pack are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 for Operations 2012 R3. To stage the cube’s aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in the [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content pack.
+Dynamics 365 for Operations data is used for the report in the Purchase spend analysis content pack. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information about the Entity store, see the [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. The aggregate measurements in this content pack are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube’s aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in the [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content pack.
 
 | Entity        | Key aggregate measurements | Data source for Dynamics 365 for Operations | Field              | Description                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|

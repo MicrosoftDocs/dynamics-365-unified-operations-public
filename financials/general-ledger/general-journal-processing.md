@@ -5,7 +5,7 @@ title: General journal processing
 description: This articles describes capabilities in Microsoft Dynamics 365 for Operations that can help make general journal processing easier, and that can also help guarantee that correct data is captured and internal control isn't compromised.  
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 20 - 42 - 19
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Message center, message bar, and message details FAQ
 description: This article introduces the rich, powerful messaging system that is available in Microsoft Dynamics 365 for Operations. This messaging system replaces the Infolog window that was used in previous versions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-18 01 - 00 - 33
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

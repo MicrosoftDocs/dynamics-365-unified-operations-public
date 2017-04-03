@@ -5,7 +5,7 @@ title: Special entries and opening sheets
 description: Legal entities in Spain can post special entries as opening entries for the current period, while adapting accounts to changes in accounting rules.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-02 21 - 05 - 24
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

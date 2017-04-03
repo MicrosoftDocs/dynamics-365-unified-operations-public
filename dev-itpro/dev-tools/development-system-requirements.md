@@ -5,7 +5,7 @@ title: Development system requirements
 description: This wiki lists the system requirements for development.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-09 21 - 11 - 24
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

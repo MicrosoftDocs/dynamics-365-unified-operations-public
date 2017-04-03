@@ -5,7 +5,7 @@ title: Set up bank reconciliation matching rules
 description: This article explains how to set up reconciliation matching rules and reconciliation matching rule sets to help with the bank reconciliation process. Reconciliation matching rules are a set of criteria that are used to filter bank statement lines and bank document lines during the reconciliation process.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-01 16 - 05 - 17
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

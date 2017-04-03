@@ -5,7 +5,7 @@ title: Input controls and grid column sizes
 description: This article describes how to create a consistent look and feel for forms by controlling the size of controls and grids.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 19 - 49 - 15
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

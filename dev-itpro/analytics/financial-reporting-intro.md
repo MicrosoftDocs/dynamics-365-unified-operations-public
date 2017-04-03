@@ -5,7 +5,7 @@ title: Financial reporting for Dynamics 365 for Operations
 description: Financial reporting for Dynamics 365 for Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 29
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -42,7 +42,7 @@ The following components of financial reporting make it easy to create, view, an
 | Component        | Functions                                                                                                                                                                                                                                                                           | Additional information                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Report Designer  | Create report building blocks that can be combined to define and generate a report. The report wizard guides less experienced users through the design process. Advanced users can create new report building blocks or modify existing building blocks to meet their requirements. |                                                                                                 |
-| Report schedules | Schedule a single report or a group of reports so that it is generated on a regular basis.                                                                                                                                                                                          | [Generate a report](generate-a-management-reporter-report.md) |
+| Report schedules | Schedule a single report or a group of reports so that it is generated on a regular basis.                                                                                                                                                                                          | [Generate a financial report](generate-financial-report.md) |
 
 ## Features
 <table>

@@ -5,7 +5,7 @@ title: SQL Server Reporting Services reports
 description: This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available in Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-10-11 15 - 40 - 59
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

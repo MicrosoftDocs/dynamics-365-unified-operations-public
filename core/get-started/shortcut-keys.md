@@ -5,7 +5,7 @@ title: Keyboard shortcuts
 description: The following keyboard shortcuts apply across Microsoft Dynamics 365 for Operations. 
 author: jasongre
 manager: AnnBe
-ms.date: 2016-02-24 17 - 58 - 25
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

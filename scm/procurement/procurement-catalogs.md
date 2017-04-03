@@ -5,7 +5,7 @@ title: Procurement catalogs
 description: This article describes, at a high level, how purchasing professionals can set up and maintain procurement catalogs. Procurement catalogs define the items and services that company employees can order for internal use.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08 - 13 - 02
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

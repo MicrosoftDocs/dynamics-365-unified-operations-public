@@ -5,7 +5,7 @@ title: Set up training courses
 description: Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-15 18 - 13 - 01
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

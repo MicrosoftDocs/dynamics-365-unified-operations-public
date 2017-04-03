@@ -5,7 +5,7 @@ title: Configure Lifecycle Services security
 description: Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-09-14 12 - 25 - 15
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

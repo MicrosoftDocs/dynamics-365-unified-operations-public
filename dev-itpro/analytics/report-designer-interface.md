@@ -3,9 +3,9 @@
 
 title: Report Designer interface
 description: This article explains how to navigate through Report Designer and how to use the various options to meet your specific requirements. 
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 18 - 50 - 10
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 59041
@@ -229,7 +229,7 @@ The report designer toolbar provides quick access to commands for navigating w
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics ERP](financial-reporting-intro.md)
+[Financial reporting](financial-reporting-intro.md)
 
-[Generate a financial report](\financials\general-ledger\generate-financial-report.md)
+[Generate a financial report](generate-financial-report.md)
 

@@ -5,7 +5,7 @@ title: Letters of guarantee
 description: This article provides information about letters of guarantee. In a letter of guarantee, a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment or obligation to that person. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-04 23 - 28 - 07
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Fixed assets disposal for Poland
 description: This topic provides information about fixed asset disposal functionality for users in legal entities in Poland. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-11 14 - 59 - 08
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

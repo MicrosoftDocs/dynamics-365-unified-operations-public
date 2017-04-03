@@ -5,7 +5,7 @@ title: Petty cash for Eastern Europe
 description: This topic provides information about the petty cash functionality that lets users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia reflect cash operations in the system.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-30 22 - 18 - 53
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Retail Modern POS configuration and installation
 description: This topic describes how to configure, download, and install Retail Modern POS on a variety of platforms.  It then describes how to activate Retail Modern POS through device activation.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-07 22 - 30 - 33
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Cost management Power BI content
 description: This topic describes what is included in the Cost management Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-02-10 15 - 44 - 04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

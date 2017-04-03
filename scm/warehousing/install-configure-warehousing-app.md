@@ -5,7 +5,7 @@ title: Install and configure Microsoft Dynamics 365 for Operations &#8211; Wareh
 description: This topic describes how to install and configure Microsoft Dynamics 365 for Operations - Warehousing.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-18 14 - 23 - 32
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Process existing earnings
 description: This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-11-01 16 - 40 - 01
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

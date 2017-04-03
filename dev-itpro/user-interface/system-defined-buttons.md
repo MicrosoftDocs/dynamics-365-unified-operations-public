@@ -5,7 +5,7 @@ title: System-defined buttons
 description: This topic describes the system-defined buttons.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-18 23 - 10 - 00
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

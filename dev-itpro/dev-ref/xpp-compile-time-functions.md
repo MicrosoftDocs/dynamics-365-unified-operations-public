@@ -5,7 +5,7 @@ title: X++ compile-time functions
 description: This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-01-15 19 - 29 - 32
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

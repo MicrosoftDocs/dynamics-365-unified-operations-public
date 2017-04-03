@@ -5,7 +5,7 @@ title: Questionnaires
 description: This topic provides general information about questionnaires, and links to more detailed information. A questionnaire is a set of questions that is used to collect information for various purposes. You can design, create, distribute, and complete questionnaires, and then analyze the results. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-04 16 - 44 - 25
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

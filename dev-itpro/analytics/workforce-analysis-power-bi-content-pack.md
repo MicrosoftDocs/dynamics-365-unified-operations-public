@@ -5,7 +5,7 @@ title: Workforce Metrics Power BI content
 description: This topic describes the Dynamics 365 for Operations - Workforce Metrics Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-12-16 14 - 22 - 19
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

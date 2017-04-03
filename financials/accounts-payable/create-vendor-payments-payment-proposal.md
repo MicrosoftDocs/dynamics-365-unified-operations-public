@@ -5,7 +5,7 @@ title: Create vendor payments by using a payment proposal
 description: This topic provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23 - 21 - 59
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

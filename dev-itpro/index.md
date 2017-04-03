@@ -5,7 +5,7 @@ title: Overview of Microsoft Dynamics 365 for Operations for Developers and IT P
 description: This page helps IT Pros and developers get started wtih Microsoft Dynamics 365 for Operations.  
 author: margoc
 manager: AnnBe
-ms.date: 2016-03-08 19:35:39
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

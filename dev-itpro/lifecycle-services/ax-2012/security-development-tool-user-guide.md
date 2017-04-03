@@ -5,7 +5,7 @@ title: Security Development Tool (AX 2012)
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-04 23 - 57 - 17
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

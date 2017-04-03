@@ -5,7 +5,7 @@ title: Validate an application for an LCS solution
 description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that an LCS solution package can be successfully deployed. 
 author: kfend
 manager: AnnBe
-ms.date: 2016-10-03 22 - 49 - 50
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

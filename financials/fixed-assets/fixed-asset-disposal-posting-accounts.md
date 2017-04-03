@@ -5,7 +5,7 @@ title: Fixed asset disposal posting accounts
 description: This article explains how to set up general ledger posting accounts for disposing of assets.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 21 - 04 - 08
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Request for quotations (RFQs)
 description: This article provides an overview of requests for quotation (RFQs), which organizations issue when they must purchase items or services, and want to receive competitive offers from several vendors. In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify. You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08 - 08 - 48
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

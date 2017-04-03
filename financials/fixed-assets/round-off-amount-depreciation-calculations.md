@@ -5,7 +5,7 @@ title: Round-off amount for depreciation calculations
 description: This article discusses the Round-off depreciation field that is found on the Book setup pages.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23 - 00 - 51
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Fixed asset repair statement for Lithuania
 description: This topic explains how to submit repair information for a fixed asset and generate a fixed asset repair report. Repair information must be stored for all fixed assets. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-12 22 - 45 - 40
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

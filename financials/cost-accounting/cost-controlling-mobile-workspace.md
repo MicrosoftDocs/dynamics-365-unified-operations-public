@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
-title: Cost controlling mobile workspace for Microsoft Dynamics 365 for Operations app
+title: Cost controlling mobile workspace
 description: With the Cost controlling mobile workspace, cost center managers can see the cost center performance anytime and anywhere. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-12 16 - 53 - 04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Cost controlling mobile workspace for Microsoft Dynamics 365 for Operations app
+# Cost controlling mobile workspace
 
 With the Cost controlling mobile workspace, cost center managers can see the cost center performance anytime and anywhere. 
 

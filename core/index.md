@@ -5,7 +5,7 @@ title: Introduction to Dynamics 365 for Operations
 description: Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
 author: margoc
 manager: AnnBe
-ms.date: 2016-03-08 19:35:39
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -42,7 +42,7 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="onboarding-home.md">Onboarding your organization</a></p>
+<td><p><a href="get-started/onboarding-home.md">Onboarding your organization</a></p>
 <p>Financials</p>
 <ul><li><a href="financials/accounts-payable/accounts-payable.md">Accounts payable</a></li>
 <li><a href="financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></li>
@@ -53,15 +53,15 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
 <li><a href="financials/general-ledger/general-ledger.md">General ledger</a></li>
 <li><a href="financials/project-management/overview-project-management-accounting.md">Project management</a></li>
 <li><a href="financials/public-sector/public-sector-functionality.md">Public sector</a></li></ul>
-<p><a href="country-region.md">Regional features</a></p>
+<p><a href="dev-itpro/lcs-solutions/country-region.md">Regional features</a></p>
 <p>Human resources</p>
    <ul>
   <li><a href="hr/departments-jobs-positions.md">HR strategy</a></li>
   <li><a href="hr/manage-recruiting-process.md">Recruit, hire & motivate</a></li>
   <li><a href="hr/performance-management-overview.md">Employee training</a></li>
   <li><a href="hr/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="hr/questionnaire.md">Questionnaire</a></li>
-  <li><a href="hr/noam-us-payroll.md">US features</a></li>
+  <li><a href="hr/questionnaires.md">Questionnaire</a></li>
+  <li><a href="hr/localizations/noam-us-payroll.md">US features</a></li>
 </ul></td>
   <td>
   <p>Retail</p>
@@ -82,7 +82,7 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
   <li><a href="scm/transportation/transportation-management-overview.md">Transportation management</a></li>
   <li><a href="scm/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
   <p>Developer & admin functionality</p>
-  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</ a></li>
+  <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
   <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>
   <li><a href="dev-itpro/mobile-apps/mobile-platform.md">Mobile apps</a></li>
   <li><a href="dev-itpro/office-integration/office-integration.md">Office integration</a></li>

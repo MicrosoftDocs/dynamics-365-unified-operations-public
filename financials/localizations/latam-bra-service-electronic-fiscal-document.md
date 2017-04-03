@@ -5,7 +5,7 @@ title: Service electronic fiscal document for Brazil
 description: This topic provides an overview of the service electronic fiscal document.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-02-08 21 - 11 - 15
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

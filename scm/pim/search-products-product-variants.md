@@ -5,7 +5,7 @@ title: Search for products and product variants during order entry
 description: Use the <strong>Item number </strong>field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-11-02 09 - 16 - 27
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

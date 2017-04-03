@@ -5,7 +5,7 @@ title: Horizontal Fields and Buttons Group subpattern
 description: This article provides information about the Horizontal Fields and Buttons Group form subpattern. This subpattern is used when actions must be defined for an individual field on a form.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-11-04 20 - 50 - 52
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Set up taxes, tax regions, tax codes, and tax groups
 description: This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 19 - 10 - 05
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

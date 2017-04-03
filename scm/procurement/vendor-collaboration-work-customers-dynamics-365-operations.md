@@ -5,7 +5,7 @@ title: Vendor collaboration with customers
 description: This topic describes how you can use vendor collaboration in Dynamics 365 for Operations to work with POs and to monitor consignment inventory.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-31 15 - 54 - 44
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

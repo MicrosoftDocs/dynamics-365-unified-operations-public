@@ -5,7 +5,7 @@ title: Fixed asset depreciation
 description: This article provides an overview of depreciation for fixed assets.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 20 - 21 - 29
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

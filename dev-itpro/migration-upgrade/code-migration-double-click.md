@@ -5,7 +5,7 @@ title: Code migration - Mouse double-click
 description: In Microsoft Dynamics 365 for Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-18 23 - 21 - 21
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

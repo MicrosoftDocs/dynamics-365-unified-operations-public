@@ -5,7 +5,7 @@ title: Ledger allocation rules
 description: This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 20 - 15 - 45
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

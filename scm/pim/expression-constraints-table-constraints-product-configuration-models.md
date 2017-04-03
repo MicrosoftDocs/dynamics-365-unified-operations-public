@@ -5,7 +5,7 @@ title: Expression constraints and table constraints in product configuration mod
 description: This topic describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 08 - 06
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -44,7 +44,7 @@ Table constraints list the combinations of values that are allowed for attribute
 
 ### Example of a table constraint
 
-This example shows how you can limit the configuration of a speaker to specific cabinet finishes and fronts. The first table shows the cabinet finishes and fronts that are generally available for configuration. The values are defined for the **Cabinet finish **and **Front grill** attribute types.
+This example shows how you can limit the configuration of a speaker to specific cabinet finishes and fronts. The first table shows the cabinet finishes and fronts that are generally available for configuration. The values are defined for the **Cabinet finish** and **Front grill** attribute types.
 
 | Attribute type | Values                      |
 |----------------|-----------------------------|

@@ -5,7 +5,7 @@ title: Product dimensions
 description: There are four product dimensions -  Color, Configuration, Size and Style. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 11 - 04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

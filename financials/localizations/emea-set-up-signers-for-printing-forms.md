@@ -5,7 +5,7 @@ title: Set up signers for print forms
 description: For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, and Russia, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-14 16 - 25 - 05
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: VAT statement details for Austria
 description: This topic explains how to set up the VAT statement for legal entities in Austria.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-16 21 - 26 - 36
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

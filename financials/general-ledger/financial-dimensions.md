@@ -5,7 +5,7 @@ title: Financial dimensions
 description: This article explains the different types of financial dimensions and how they are set up.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 23 - 27 - 28
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Quarantine orders
 description: This article describes how quarantine orders are used to block inventory. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-25 09 - 53 - 00
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

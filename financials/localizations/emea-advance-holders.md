@@ -5,7 +5,7 @@ title: Advance holders
 description: Learn about advance holder functionality in Microsoft Dynamics 365 for Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-12 21 - 45 - 42
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

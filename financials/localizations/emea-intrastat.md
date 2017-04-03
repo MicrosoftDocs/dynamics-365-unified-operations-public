@@ -5,7 +5,7 @@ title: Intrastat
 description: This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-21 16 - 12 - 11
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

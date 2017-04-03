@@ -5,7 +5,7 @@ title: Navigation in Dynamics 365 for Operations
 description: This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-07-28 19 - 47 - 25
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Adjust on-hand inventory cost values
 description: Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 12 - 09
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

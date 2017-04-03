@@ -5,7 +5,7 @@ title: Lifecycle Services for Dynamics 365 for Operations
 description: Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Microsoft Dynamics 365 for Operations implementations.
 author: kfend
 manager: AnnBe
-ms.date: 2016-03-28 17 - 43 - 56
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

@@ -5,7 +5,7 @@ title: Set up products that can be produced or procured
 description: Products can be sourced in various ways -  they can be produced (manufactured) or procured (purchased). This article describes some typical points to consider when you configure products to support multi-sourcing. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-11 19 - 54 - 18
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

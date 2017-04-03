@@ -5,7 +5,7 @@ title: Workflow subsystem updates in Dynamics 365 for Operations
 description: This article reviews the workflow system in Microsoft Dynamics 365 for Operations. It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system. 
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-02 20 - 55 - 59
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

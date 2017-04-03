@@ -5,7 +5,7 @@ title: Retail Modern POS architecture
 description: This wiki describes the POS topology.
 author: robinr
 manager: AnnBe
-ms.date: 2016-04-29 18 - 55 - 46
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

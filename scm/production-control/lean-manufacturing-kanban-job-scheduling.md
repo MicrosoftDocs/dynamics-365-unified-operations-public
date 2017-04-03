@@ -5,7 +5,7 @@ title: Kanban job scheduling for lean manufacturing
 description: This article provides information about visual control over kanban job scheduling and various ways to schedule kanban jobs.  
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 02 - 36
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -37,7 +37,9 @@ This article provides information about visual control over kanban job schedulin
 The **Kanban job scheduling** page provides visual control over the schedules of lean manufacturing work cells. It gives an overview of all kanban jobs and provides multiple filtering capabilities. From this page, you can move to all other pages that are related to kanban configuration and execution.
 
 ## Automatic scheduling of kanban jobs
-Scheduling can be triggered automatically if you set the **Automatic planning quantity** parameter on the kanban rule. If you set **Automatic planning quantity** to **1**, each kanban job is planned immediately when it's created. The result is a series of first pull, first serve operations. If you set **Automatic planning quantity** to a value that is more than 1, kanban jobs are grouped before they are planned. This concept enables kanban sizes to be reduced below the actual economic batch sizes. For example, the economic batch size for a specific item (or item family) is 30. Instead of creating kanbans that use the product quantity, 30, you can configure the kanban rule so that it has a product quantity of 10 and an **Automatic planning quantity **value of **3**. Although automatic planning schedules the kanban jobs for the work cell only when three unplanned jobs exist, it's fully transparent to the planner and the shop floor supervisor that two unplanned jobs might be awaiting execution. The planner or shop floor manager can then take those two jobs into production by manually planning them or creating additional kanbans.
+Scheduling can be triggered automatically if you set the **Automatic planning quantity** parameter on the kanban rule. If you set **Automatic planning quantity** to **1**, each kanban job is planned immediately when it's created. The result is a series of first pull, first serve operations. If you set **Automatic planning quantity** to a value that is more than 1, kanban jobs are grouped before they are planned. 
+
+This concept enables kanban sizes to be reduced below the actual economic batch sizes. For example, the economic batch size for a specific item (or item family) is 30. Instead of creating kanbans that use the product quantity, 30, you can configure the kanban rule so that it has a product quantity of 10 and an **Automatic planning quantity** value of **3**. Although automatic planning schedules the kanban jobs for the work cell only when three unplanned jobs exist, it's fully transparent to the planner and the shop floor supervisor that two unplanned jobs might be awaiting execution. The planner or shop floor manager can then take those two jobs into production by manually planning them or creating additional kanbans.
 
 ## Manual scheduling
 For manual scheduling, Microsoft Dynamics AX 2012 introduced the kanban scheduling board. Manual scheduling can be combined with automatic scheduling. The kanban scheduling board lets you plan and unplan jobs, moved them in sequence, or move them from period to period. Jobs that are based on a kanban rule where the **Automatic planning** value is more than **0** can be manually unplanned. However, these jobs will be replanned when the next automatic planning event occurs (that is, when a new kanban is created). The following options are available for manual scheduling:

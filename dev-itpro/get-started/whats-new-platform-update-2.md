@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics AX platform update 2 (August 2016)
 description: This topic describes features that are either new or changed in Microsoft Dynamics AX platform update 2. This version was released in August 2016 and has a build number of 7.0.4230.16130. 
 author: sericks007
 manager: AnnBe
-ms.date: 2016-08-16 20 - 05 - 41
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

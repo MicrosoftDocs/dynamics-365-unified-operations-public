@@ -5,7 +5,7 @@ title: Work breakdown structures
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-11-22 14 - 38 - 31
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

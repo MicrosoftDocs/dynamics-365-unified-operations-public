@@ -5,7 +5,7 @@ title: Electronic signature overview
 description: This article provides an overview of electronic signatures and describes how they can be used in Microsoft Dynamics 365 for Operations.
 author: maertenm
 manager: AnnBe
-ms.date: 2015-12-02 21 - 19 - 12
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

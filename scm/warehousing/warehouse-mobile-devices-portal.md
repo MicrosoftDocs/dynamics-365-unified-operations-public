@@ -5,7 +5,7 @@ title: Warehouse Mobile Devices Portal (WMDP) for Dynamics 365 for Operations
 description: This article describes how to enable the Warehouse Mobile Devices Portal for Microsoft Dynamics 365 for Operations. It also explains how to service and upgrade your environment.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-28 11 - 57 - 22
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

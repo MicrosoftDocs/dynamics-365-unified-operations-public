@@ -5,7 +5,7 @@ title: Cloud-hosted environments (AX 2012)
 description: In Microsoft Dynamics Lifecycle Services, Cloud-hosted environments is a tool that you can use to deploy Microsoft Dynamics AX environments on Microsoft Azure.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-02 22 - 51 - 00
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

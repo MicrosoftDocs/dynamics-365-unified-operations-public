@@ -5,7 +5,7 @@ title: Quality management overview
 description: This article describes how you can use quality management in Microsoft Dynamics 365 for Operations to help improve product quality within your supply chain.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-17 09 - 19 - 40
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

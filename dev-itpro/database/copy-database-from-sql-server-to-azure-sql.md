@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
-title: Copy a Dynamics 365 for Operations database from SQL Server to a production Azure SQL Database environment
+title: Copy Dynamics 365 for Operations database from SQL Server to production Azure SQL
 description: This topic describes how to move a Dynamics 365 for Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
 author: MargoC
 manager: AnnBe
-ms.date: 2016-11-16 21 - 24 - 46
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
