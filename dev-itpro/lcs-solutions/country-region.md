@@ -189,12 +189,12 @@ The following sections list resources by country/region.
 -   [Bank payment fees covered by vendors](/dynamics365/operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
 -   [Consolidated invoices](/dynamics365/operations/financials/localizations/apac-jpn-consolidate-invoices)
 #### Fixed assets
-    -   [Allocation rules for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
-    -   [Equally divided depreciation method](/dynamics365/operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
-    -   [Fixed asset depreciation](/dynamics365/operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
-    -   [Fixed asset impairment management on cash generating unit](/dynamics365/operations/financials/localizations/apac-jpn-fixed-asset-impairment-accounting-cash-generate-unit)
-    -   [Set up asset retirement obligation for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-set-up-asset-retirement-obligation-fixed-assets)
-    -   [Set up reduction entries for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-set-up-reduction-entry-fixed-assets)
+   -  [Allocation rules for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
+   -  [Equally divided depreciation method](/dynamics365/operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
+   -  [Fixed asset depreciation](/dynamics365/operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
+   -  [Fixed asset impairment management on cash generating unit](/dynamics365/operations/financials/localizations/apac-jpn-fixed-asset-impairment-accounting-cash-generate-unit)
+   -  [Set up asset retirement obligation for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-set-up-asset-retirement-obligation-fixed-assets)
+   -  [Set up reduction entries for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-set-up-reduction-entry-fixed-assets)
 -   [Pay a vendor by endorsing a bill of exchange](/dynamics365/operations/financials/localizations/apac-jpn-pay-vendor-endorse-bill-of-exchange)
 -   [Progressive withholding tax calculation](/dynamics365/operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
 
