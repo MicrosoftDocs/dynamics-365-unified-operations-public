@@ -200,6 +200,8 @@ All General ledger data entities and the setup are a prerequisite for importing 
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 82                 | 12.1.003 BUD – Budget planning setup. A demo data issue will cause records to fail in the Budget plan stage rule data entity. The package on LCS has been modified. |
 | 83                 | 12.01.004 BUD – Forecast position                                                                                                                                   |
+
+
 **[Costing](data-entities-costing.md)**
 
 | Suggested sequence | Package                      |
