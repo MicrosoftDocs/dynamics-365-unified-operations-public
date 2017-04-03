@@ -124,7 +124,8 @@ This method can be removed if there is
 no custom implementation */
 // dimensionDefaultingController.pageActivated();</code></pre>
 
-### Dynamics 365 for Operations If this call is made within the pageActivated method of the Dimension Entry control’s parent control or the form init method, it can be removed. The intent of this method call outside the above mentioned locations isn’t clear. Remove the call and test the control.
+### Dynamics 365 for Operations 
+If this call is made within the pageActivated method of the Dimension Entry control’s parent control or the form init method, it can be removed. The intent of this method call outside the above mentioned locations isn’t clear. Remove the call and test the control.
 
 ### Dynamics AX 2012
 <pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
