@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Help overview
@@ -54,7 +54,7 @@ We've migrated all of the content from our previous help wiki to docs. We’re v
 
 ### When can we use it?
 
-You can read content on docs right now -- it is fully public and searchable without requiring sign-in. You can use any of your favorite search engines to find content. You can comment on articles on the site if you choose, by signing in with a GitHub account.
+You can read content on docs right now -- it is fully public and searchable without requiring sign-in. You can use any of your favorite search engines to find content. You can comment on articles on the site if you choose, by signing in.
 
 
 ## Task guides
