@@ -175,7 +175,7 @@ Electronic reporting (ER) is the tool to use to configure electronic document fo
 -   Use formulas to define data transformations into groups containing summary data and logical calculations.
 
 ## Financial reporting
-Standard financial reports are provided using the default main account categories in Dynamics 365 for Operations. Use the report designer to create or modify traditional financial statements, such as Income statement and Balance sheet and share the results with other members of your organization. For detailed information about the Financial reporting tooling, see [Financial reporting](\financials\general-ledger\general-ledger.md). Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year. 
+Standard financial reports are provided using the default main account categories in Dynamics 365 for Operations. Use the report designer to create or modify traditional financial statements, such as Income statement and Balance sheet and share the results with other members of your organization. For detailed information about the Financial reporting tooling, see [Financial reporting](/dynamics365/operations/financials/general-ledger/general-ledger). Example applications of electronic reporting include balance sheets, cash flow, and summary trial balance year over year. 
 
 [![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png) 
 
