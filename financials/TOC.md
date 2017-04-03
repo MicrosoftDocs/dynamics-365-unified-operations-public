@@ -25,7 +25,7 @@
 ### [Publish journal lines and documents from Excel](general-ledger/open-lines-excel-journals-documents.md)
 ### [View journal entries and transactions](general-ledger/view-journal-entries-transactions.md)
 ### [Currency revaluation in a consolidation company](general-ledger/currency-revaluation-consolidation-company.md)
-### [Foreign currency revaluation for General ledger](/foreign-currency-revaluation-general-ledger.md)
+### [Foreign currency revaluation for General ledger](general-ledger/foreign-currency-revaluation-general-ledger.md)
 ### [Import currency exchange rates](general-ledger/import-currency-exchange-rates.md)
 ## Period end close
 ### [Close the general ledger at period end](general-ledger/close-general-ledger-at-period-end.md)
