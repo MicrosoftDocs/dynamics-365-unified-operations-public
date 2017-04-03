@@ -262,9 +262,6 @@ None.
 ### AX 2012 content
 
 #### AX 2012 links
-
--   [AX2012 Details Master Dev Guidelines](http://team/sites/mbsux/ax6ux/Supporting/Shared%20Documents/ax6ux/Detail%20Form.MHT)
--   [AX2012 Details Master UX Guidelines](http://team/sites/mbsux/ax6ux/Supporting/_layouts/WordViewer.aspx?id=/sites/mbsux/ax6ux/Supporting/Shared%20Documents/UXGuidelines_Detailform_Masterdata.docx&Source=http%3A%2F%2Fteam%2Fsites%2Fmbsux%2Fax6ux%2FSupporting%2Fdefault%2Easpx&DefaultItemOpen=1)
 -   [AX2012 MSDN Details Forms](http://msdn.microsoft.com/EN-US/library/hh397318.aspx)
 
 #### AX 2012 example

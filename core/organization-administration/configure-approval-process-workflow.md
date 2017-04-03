@@ -167,7 +167,7 @@ When a document is assigned to a user for approval, the user must act on the doc
 An approval process consists of approval steps. Complete the following procedure to add steps the approval process and configure the steps.
 1.  In the workflow editor, double-click the approval process. The workflow editor displays the steps of the approval process.
 2.  To add an approval step, drag the step from the **Workflow elements** area to the canvas.
-3.  To configure an approval step, see [Configure an approval step](http://axhelp.dynamics.com/en/wiki/configure-an-approval-step/).
+3.  To configure an approval step, see [Configure an approval step](configure-approval-step-workflow.md).
 
 
 

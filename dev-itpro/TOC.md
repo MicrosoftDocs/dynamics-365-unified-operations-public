@@ -47,7 +47,7 @@
 ## [Gantt development guide](user-interface/gantt-development-guide.md)
 ## [Create a new transportation management engine](/dynamics365/operations/scm/transportation/create-new-transportation-management-engine?toc=/dynamics365/operations/dev-itpro/toc.json)
 
-# [Retail development](/dynamics365/operations/retail/dev-itpro/TOC)
+# [Retail development](/dynamics365/operations/retail/dev-itpro/dev-retail-home-page)
 
 # [Deployment](deployment/TOC.md)
 

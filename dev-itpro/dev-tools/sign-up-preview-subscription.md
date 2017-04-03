@@ -62,7 +62,7 @@ In this tutorial, you will learn how create a subscription. This subscription wi
 3.  If you're not sure whether you're signed in, delete your browser cookies, and close your browser before you continue.
 
 ## Subscribe
-**Important:** Only one person (tenant administrator) in an organization needs to perform this activity. If you're not the person who is subscribing to this release, wait until your organization has been signed up and you've received your user credentials. Then continue with the [Deploy environments](#_Deploy_environments) procedure.
+**Important:** Only one person (tenant administrator) in an organization needs to perform this activity. If you're not the person who is subscribing to this release, wait until your organization has been signed up and you've received your user credentials. Then continue with the procedure.
 
 1.  Microsoft Dynamics 365 for Operations is available only to existing Microsoft Dynamics 365 channel partners and customers who are currently enrolled in the Business Ready Enhancement Plan (BREP) service plan. Existing customers can find details on how to get access to trials [here](https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview), and partners can find the details [here](https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview).
 2.  On the **Account setup** page, in the **Country or region** field, select the country. 

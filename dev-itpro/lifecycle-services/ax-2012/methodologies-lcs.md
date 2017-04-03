@@ -66,7 +66,5 @@ Methodologies can have phases that are associated with Visual Studio Team Founda
 See also
 --------
 
-[Configure Lifecycle Services security (LCS)](http://axhelp.dynamics.com/wiki/configure-lifecycle-services-security-lcs/">Configure Lifecycle Services security (LCS))
-
-[Projects (Lifecycle Services, LCS)](http://axhelp.dynamics.com/wiki/projects-lifecycle-services-lcs/">Projects (Lifecycle Services, LCS))
+[Configure Lifecycle Services security](../configure-lcs-security.md)
 

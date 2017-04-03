@@ -53,7 +53,7 @@ This topic describes the e-Commerce Platform SDK.
     2.  However, the publishing of the web storefront from RetailSDK will drop the files at C:\\inetpub\\RetailWeb\\Storefront.
     3.  Hence, the physical path of the RetailStorefrontWebSite must be updated to point to “C:\\inetpub\\RetailWeb\\Storefront” to access web storefront on the same ports as before. Another option would be to create a new website and have that point to the inetpub location.
 
-6.  Browse to <http://localhost:55080> or access the https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/ to see a test asp.net web site.
+6.  Browse to http://localhost:55080 or access the https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/ to see a test asp.net web site.
 
 ### Enabling anonymous access
 
@@ -68,8 +68,8 @@ The following configuration changes will be required if either of these applies:
 
 You will need to update the “retailServerUrl” inside web.config of the RetailStorefrontWebSite. The following two fields will need to be updated to use the machine name instead of local host:
 
--   retailServerUrl=<http://localhost:35080/RetailServer/V1>
--   &lt;add key="RetailServerRoot" value="<http://localhost:35080/RetailServer/V1>" /&gt;
+-   retailServerUrl=http://localhost:35080/RetailServer/V1
+-   &lt;add key="RetailServerRoot" value="http://localhost:35080/RetailServer/V1" /&gt;
 
 If you are accessing the web storefront over https, then you will need to update the above urls to the https equivalent.
 
@@ -94,5 +94,3 @@ The E-Commerce platform uses OpenID as the mechanism for authentication. You can
 
 2.  The Retail Shared Parameters-&gt; Open ID Providers form can be used to register additional providers.
 3.  Run distribution schedule 1110.
-
-

@@ -46,7 +46,7 @@ Each data entity has certain properties that give you the option to override the
 | AllowEditOnCreate |              |                   | Applies     |
 | Mandatory         |              |                   | Applies     |
 
-[ ](http://dynamics/teams/Server/Rainier/Shared%20Documents/Data%20Management%20Platform/Data%20Entity%20Uptake/Workshop/Metadata%20properties.xlsx)
+
 
 ### Entity level
 
