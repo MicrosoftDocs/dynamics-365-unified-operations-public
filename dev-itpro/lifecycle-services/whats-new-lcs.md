@@ -651,7 +651,6 @@ Below is a library that has been successfully indexed.
 **Process data package** 
 We have made significant performance improvements to the process data package creation experience. New Dynamics AX solutions creators can now add database backups to a solution package. 
 
-![7](https://msdnshared.blob.core.windows.net/media/2016/01/781024x663.png)
 
 See also
 --------

@@ -88,7 +88,10 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 1.  Create a new entity that is named **FMLabCustomerEntity**. Right-click you project, and then click **Add** &gt; **New item**. The **Add New Item** dialog box opens.
 2.  Select **Data Entity**, and then set the **Name** property to **FMLabCustomerEntity**. For more information about best practices for entity naming, see "Data entity concepts guide."
 3.  Click **Add**.
-4.  In the **Data entity** wizard, specify the properties for the data entity that you're creating. Use the values that are shown in the following screen shot. [![Data Entity Wizard](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
+4.  In the **Data entity** wizard, specify the properties for the data entity that you're creating. Use the values that are shown in the following screen shot. 
+
+[![Data Entity Wizard](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
+
 5.  Click **Next**. For more information about the function of each property, see "Data entity concepts guide."
 6.  Add fields to the new entity from your data source, as shown in the following screen shot. You can add fields from the primary data source, **FMCustomer**. For this entity, clear the check box for the **Image** and **LicenseImage** container types to simplify testing.
 7.  Rename the data entity fields to reflect public data contract standards, or click **Convert labels to field names** to generate names from the existing labels.
@@ -103,7 +106,10 @@ Staging tables are used in import/export scenarios to provide intermediary stora
     -   PrimaryAddress \_Country &gt; Country
 
     [ ](./media/data-entity-wizard-3.png)
-11. Click **Finish**. A data entity item and staging table are added to the project. [![Solution explorer](./media/solution-explorer.png)](./media/solution-explorer.png)
+    
+11. Click **Finish**. A data entity item and staging table are added to the project.
+
+[![Solution explorer](./media/solution-explorer.png)](./media/solution-explorer.png)
 
 ### Build your project
 
@@ -119,9 +125,17 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 3.  Set the **Label** property to **Fleet Lab Customers**. [![FMLabCustomerEntity - Properties](./media/fmlabcustomerentity-properties.png)](./media/fmlabcustomerentity-properties.png)
 4.  In the left pane, click **Data Sources** &gt; **FMCustomer** &gt; **Data Sources** &gt; **FMAddressTable**.
 5.  Change the **Is Read Only** property to **No**. This is a known issue. Eventually, the value will be set to **Yes** or **No** automatically, based on the type of join. The value should be **Yes** for composition scenarios, and **No** for associations (surrogate foreign key expansions). This property enables the data source to be read/write. [![FMLabCustomerEntity - Properties2](./media/fmlabcustomerentity-properties2.png)](./media/fmlabcustomerentity-properties2.png)
-6.  In the **FMLabCustomerEntity** designer, click **Keys** &gt; **EntityKey**, and then expand the **Fields** node. Verify that the list of fields matches the following screen shot. [![FMLabCustomerEntity](./media/fmlabcustomerentity.png)](./media/fmlabcustomerentity.png)
-7.  To visually validate the staging table that will be used for import/export, open the **FMLabCustomerStaging** table in the designer, and then select the **FMLabCustomerStaging** node. [![fMLabCustomerStaging - Properties](./media/fmlabcustomerstaging-properties.png)](./media/fmlabcustomerstaging-properties.png)
-8.  Click **FMLabCustomerStaging** &gt; **Fields**. In the following screen shot, the standard fields of the staging tables are selected. All entity staging tables have these standard fields. The screen shot also shows the data fields that belong on this data entity. [![FMLabCustomerStaging](./media/fmlabcustomerstaging.png)](./media/fmlabcustomerstaging.png)
+6.  In the **FMLabCustomerEntity** designer, click **Keys** &gt; **EntityKey**, and then expand the **Fields** node. Verify that the list of fields matches the following screen shot. 
+
+[![FMLabCustomerEntity](./media/fmlabcustomerentity.png)](./media/fmlabcustomerentity.png)
+
+7.  To visually validate the staging table that will be used for import/export, open the **FMLabCustomerStaging** table in the designer, and then select the **FMLabCustomerStaging** node. 
+
+[![fMLabCustomerStaging - Properties](./media/fmlabcustomerstaging-properties.png)](./media/fmlabcustomerstaging-properties.png)
+
+8.  Click **FMLabCustomerStaging** &gt; **Fields**. In the following screen shot, the standard fields of the staging tables are selected. All entity staging tables have these standard fields. The screen shot also shows the data fields that belong on this data entity. 
+[![FMLabCustomerStaging](./media/fmlabcustomerstaging.png)](./media/fmlabcustomerstaging.png)
+
 9.  In Solution Explorer, right-click your project, and then select **Rebuild** to rebuild and synchronize the project.
 
 ## Testing data entities
@@ -175,11 +189,12 @@ Data entities that have the **Data Management Enabled** property can be used t
 After you create your data entity, you can validate import/export.
 
 1.  Create a sample CSV file that you can import. Copy the following text, and save it as **FM Lab Customer Import.csv**.
-    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | CELLPHONE,DRIVERSLICENSE,EMAIL,FIRSTNAME,LASTNAME,CUSTOMERGROUP,ADDRESSLINE1,ADDRESSLINE2,CITY,STATE,ZIPCODE,COUNTRY(999) 555-0100,S615-3939-2349,chris.spencer@adatum.com,Chris,Spencer,adv\_mem\_1,444 Main Street,,Orlando,FL,77899,US(188) 555-0101,S615-3939-2350,Ichiro.lannin@blueyonderairlines.com,Ichiro,Lannin,non\_mem\_1,12 Long Street,,New York City,NY,99087,US(777) 555-0102,S615-3939-2351,josh.smith@fourthcoffee.com,Josh,Smith,adv\_mem\_1,9606 122th Avenue,,Sydney,TX,99874,US(456) 555-0103,S615-3939-2352,Vince@fabrikam.us,Vince,Ahmed,non\_mem\_1,123 Microsoft Way,Unit 87,Seattle,WA,90001,US(345) 555-0104,S615-3939-2353,tony.parker@lucernepublishing.com,Tony,Parker,non\_mem\_1,12012 11th PLNE,Apt 160,San Francisco,CA,75645,US(312) 555-0105,S615-3939-2354,Julia@fineartschool.net,Julia,Natarajan,exec\_mem\_1,449 Long Street,Apt 160,Bruxelles,ID,34213,US |
+    
+CELLPHONE,DRIVERSLICENSE,EMAIL,FIRSTNAME,LASTNAME,CUSTOMERGROUP,ADDRESSLINE1,ADDRESSLINE2,CITY,STATE,ZIPCODE,COUNTRY(999) 555-0100,S615-3939-2349,chris.spencer@adatum.com,Chris,Spencer,adv\_mem\_1,444 Main Street,,Orlando,FL,77899,US(188) 555-0101,S615-3939-2350,Ichiro.lannin@blueyonderairlines.com,Ichiro,Lannin,non\_mem\_1,12 Long Street,,New York City,NY,99087,US(777) 555-0102,S615-3939-2351,josh.smith@fourthcoffee.com,Josh,Smith,adv\_mem\_1,9606 122th Avenue,,Sydney,TX,99874,US(456) 555-0103,S615-3939-2352,Vince@fabrikam.us,Vince,Ahmed,non\_mem\_1,123 Microsoft Way,Unit 87,Seattle,WA,90001,US(345) 555-0104,S615-3939-2353,tony.parker@lucernepublishing.com,Tony,Parker,non\_mem\_1,12012 11th PLNE,Apt 160,San Francisco,CA,75645,US(312) 555-0105,S615-3939-2354,Julia@fineartschool.net,Julia,Natarajan,exec\_mem\_1,449 Long Street,Apt 160,Bruxelles,ID,34213,US
+
 
 2.  Click **User Dashboard** &gt; **Data management**.
+
 3.  In the **Data Management** workspace, click the **Import** tile.
 4.  On the **Import** page, enter the import details, as shown in the following screen shot.![Import new record](./media/import-new-record.png)
 5.  Click the **Upload data** button next to the **Upload file for entity** field, and select the CSV file that you created.
@@ -205,6 +220,7 @@ You will review the existing **FleetRental** entity and then create a relationsh
 3.  In Application Explorer, search for **FMCustomerEntity**, right-click it, and then select **Add to project**.
 4.  In Solution Explorer, right-click **FMRentalEntity**, and then select **Open**.
 5.  In the view designer, select the root node, **FMRentalEntity**, and review the following properties.
+
     | Property               | Value        | Description                                                                                                             |
     |------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------|
     | IsPublic               | Yes          | When this property is set to **Yes**, the entity is visible by using the OData application programming interface (API). |
@@ -215,6 +231,7 @@ You will review the existing **FleetRental** entity and then create a relationsh
 7.  Select **Customer Relation**, and then click **Delete**.
 8.  Right-click **Relations**, and then select **New** &gt; **Relation**.
 9.  Select **Relation1**, and set the following properties.
+
     | Property                        | Value            |
     |---------------------------------|------------------|
     | Cardinality                     | ZeroMore         |
@@ -228,6 +245,7 @@ You will review the existing **FleetRental** entity and then create a relationsh
 10. In the view designer, right-click the **CustomerRelation** node, and then select **New** &gt; **Normal**.
 11. Right-click the new node under **CustomerRelation**, and then select **Properties**.
 12. Set the following properties.
+
     | Property      | Value                                                                         |
     |---------------|-------------------------------------------------------------------------------|
     | Field         | **CustomerDriverLicense**This is the foreign key field on **FMRentalEntity**. |
