@@ -276,8 +276,9 @@ An image control has a property that is named **imageList**. You pass in an inst
         return imgCnt;
     }
     /*
-       Note: The legacy image resource ID's #ImageInfo, #ImageWarning, #ImageError are mapped from the legacy resource id to a symbol name in the X++
-    class ImageLoader
+       Note: The legacy image resource ID's #ImageInfo, #ImageWarning, #ImageError are 
+       mapped from the legacy resource id to a symbol name in the X++
+       class ImageLoader
     */
 
 ## Display method that returns an ImageRes (legacy image resource ID)
