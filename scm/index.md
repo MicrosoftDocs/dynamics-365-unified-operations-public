@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Supply chain management home page
+
+[!include[<go-live-banner>](<dynamics365/operations/go-live-banner.md>)]
+
 This page points to resources that will help you use the Microsoft Dynamics 365 for Operations - Supply Chain management more effectively. 
 
 ## What's new and in development
