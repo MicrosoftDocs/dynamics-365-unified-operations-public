@@ -2,7 +2,7 @@
 # required metadata
 
 title: Block a transaction using triggers
-description: This wiki shows how you can use a trigger to block an invoice or credit transaction.
+description: This topic shows how you can use a trigger to block an invoice or credit transaction.
 author: robinarh
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Block a transaction using triggers
 
-This wiki shows how you can use a trigger to block an invoice or credit transaction.
+This topic shows how you can use a trigger to block an invoice or credit transaction.
 
 This topic shows how you can block an invoice or credit transaction.
 
