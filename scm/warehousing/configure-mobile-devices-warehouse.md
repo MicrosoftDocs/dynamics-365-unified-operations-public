@@ -320,7 +320,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Display inventory status</td>
-<td>Select this option to display the status of items in inventory. For more information, see <a href="./inventory/inventory-statuses.md">Advantages of using Inventory statuses</a>. This option is available for all menu items that use existing work, except cycle counting.</td>
+<td>Select this option to display the status of items in inventory. This option is available for all menu items that use existing work, except cycle counting.</td>
 </tr>
 <tr class="odd">
 <td>Display summary of pick screen</td>
@@ -417,4 +417,4 @@ See also
 [Set up a mobile device menu item for completing work of type Purchase order (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
 [Set up a mobile device menu item to register received items (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
-
+[Advantages of using Inventory statuses](../inventory/inventory-statuses.md)
