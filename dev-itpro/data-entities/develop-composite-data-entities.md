@@ -5,7 +5,7 @@ title: Develop composite data entities
 description: A composite entity is a concept that allows you to build a single entity by leveraging multiple entities that are related to each other. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 23 - 51 - 24
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

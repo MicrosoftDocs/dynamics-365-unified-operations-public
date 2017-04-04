@@ -16,7 +16,7 @@
 # [Retail store system, before you begin](retail-store-system-begin.md)
 # [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 
-# [Retail Channel Performance Power BI content](/dynamics365/operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+# [Retail Channel Performance Power BI content](/dynamics365/operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
 
 # Point of sale
 ## [Retail POS device activation](retail-device-activation.md)

@@ -5,7 +5,7 @@ title: Reconcile freight in transportation management
 description: This article describes the freight reconciliation process.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-09 11 - 18 - 22
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

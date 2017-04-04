@@ -5,7 +5,7 @@ title: Download hotfixes from Lifecycle Services
 description: Use this tutorial to download the Microsoft Dynamics 365 for Operations hotfixes from Lifecycle Services (LCS).
 author: kfend
 manager: AnnBe
-ms.date: 2016-02-26 19 - 53 - 09
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -40,8 +40,8 @@ This tutorial will guide you through downloading the newest version of Microsoft
 2.  Select an environment from the LCS project.
 3.  On the **Environment** page, **Monitoring** is shown in two sections, **X++ updates** and **Binary updates**. The update tiles show the hotfixes that are relevant or required for your environment. For example, if a specific X++ hotfix is already installed on your environment, we will not include that X++ hotfix in the  X++ updates.There are two kinds of updates - X++ updates and binary updates. There are two kinds of binary updates - application and platform.
 4.  Select one of the update tiles to view the list of available hotfixes that can be used to create a hotfix package for download.
-5.  Select the applicable KBs, and then click **Add hotfix to package**. [![](./media/add-hotfixes.png)](./media/add-hotfixes.png) **Note**: For X++ updates, if you want to download all available updates at this point, you should click on Select all and then click on **Add** instead of **Add hotfix to package**.
-6.  Click **Download package** to download the hotfix package. [![](./media/donwload-hotfix.png)](./media/donwload-hotfix.png) After you select **Download package**, the **Review and download hotfixes** page will open. Use this page to review selected hotfixes, discard the package, return to the hotfix selections, or download the final package. [![](./media/review-and-download-hotfixes.png)](./media/review-and-download-hotfixes.png)
+5.  Select the applicable KBs, and then click **Add hotfix to package**. [![Add hotfix](./media/add-hotfixes.png)](./media/add-hotfixes.png) **Note**: For X++ updates, if you want to download all available updates at this point, you should click on Select all and then click on **Add** instead of **Add hotfix to package**.
+6.  Click **Download package** to download the hotfix package. [![Download hotfix](./media/donwload-hotfix.png)](./media/donwload-hotfix.png) After you select **Download package**, the **Review and download hotfixes** page will open. Use this page to review selected hotfixes, discard the package, return to the hotfix selections, or download the final package. [![Review and download hotfixes](./media/review-and-download-hotfixes.png)](./media/review-and-download-hotfixes.png)
 
 This tutorial is a part of the [Servicing environments](..\dev-tools\developer-home-page.md#service-environments) content.
 

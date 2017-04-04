@@ -5,7 +5,7 @@ title: Data entities - Retail
 description: This article provides a list of the data entities that are available for the Retail functionality in Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
-ms.date: 2016-06-29 14 - 20 - 32
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -125,13 +125,14 @@ Available data entities
 | 32                 | POS visual profile        | Retail | Setup       | None       | This entity imports the parameters for the various POS visual profiles.        |
 
 **Note:** The following set of information must be manually added from the UI.
-|     | Offline profile             | Retail | Setup |   | This data must be entered manually. |
-|-----|-----------------------------|--------|-------|---|-------------------------------------|
-|     | Keyboard mapping groups     | Retail | Setup |   | This data must be entered manually. |
-|     | Hardware profile            | Retail | Setup |   | This data must be entered manually. |
-|     | RTS profile                 | Retail | Setup |   | This data must be entered manually. |
-|     | Database connection profile | Retail | Setup |   | This data must be entered manually. |
-|     | Data sync interval          | Retail | Setup |   | This data must be entered manually. |
+
+| Offline profile             | Retail | Setup |   | This data must be entered manually. |
+|-----------------------------|--------|-------|---|-------------------------------------|
+| Keyboard mapping groups     | Retail | Setup |   | This data must be entered manually. |
+| Hardware profile            | Retail | Setup |   | This data must be entered manually. |
+| RTS profile                 | Retail | Setup |   | This data must be entered manually. |
+| Database connection profile | Retail | Setup |   | This data must be entered manually. |
+| Data sync interval          | Retail | Setup |   | This data must be entered manually. |
 
 **27.4.009 RET - Channel master**
 
@@ -160,14 +161,16 @@ Available data entities
 | 43                 | Store shelves            | Retail | Setup       | None       | This entity imports the shelving setup for the stores.                                        |
 
 **Note:** Manual setup by using the UI is required for channel configuration.
+
 The following group isn’t a set of entities but information that must be manually created in the UI for channel configuration.
-| 1 | Channel profile                | Retail | Setup |   | This data must be entered manually. |
-|---|--------------------------------|--------|-------|---|-------------------------------------|
-|   | Data sync interval             | Retail | Setup |   | This data must be entered manually. |
-|   | Channel database               | Retail | Setup |   | This data must be entered manually. |
-|   | Channel database group         | Retail | Setup |   | This data must be entered manually. |
-|   | Retail shared parameters       | Retail | Setup |   | This data must be entered manually. |
-|   | Retail headquarters parameters | Retail | Setup |   | This data must be entered manually. |
+
+| Channel profile                | Retail | Setup |   | This data must be entered manually. |
+|--------------------------------|--------|-------|---|-------------------------------------|
+| Data sync interval             | Retail | Setup |   | This data must be entered manually. |
+| Channel database               | Retail | Setup |   | This data must be entered manually. |
+| Channel database group         | Retail | Setup |   | This data must be entered manually. |
+| Retail shared parameters       | Retail | Setup |   | This data must be entered manually. |
+| Retail headquarters parameters | Retail | Setup |   | This data must be entered manually. |
 
 **27.4.012 RET - Merchandising – Assortment**
 

@@ -5,7 +5,7 @@ title: POS hardware peripherals
 description: Retail Modern point of sale (POS) and Cloud POS can utilize a wide range of POS hardware peripherals, with multiple interfaces and deployment options to achieve a retailer’s various business scenarios. 
 author: josaw1
 manager: AnnBe
-ms.date: 2016-10-21 16 - 55 - 57
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

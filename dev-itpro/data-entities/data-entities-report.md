@@ -5,7 +5,7 @@ title: Data entities report
 description: This topic points you to a report that lists the data entities available in Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-10-10 13 - 32 - 44
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

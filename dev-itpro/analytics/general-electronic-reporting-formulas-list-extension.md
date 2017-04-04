@@ -5,7 +5,7 @@ title: Extend the list of Electronic reporting functions
 description: Various types of functions are supported in Electronic reporting expressions for data transformation -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, Electronic reporting lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
 author: kfend
 manager: AnnBe
-ms.date: 2016-03-07 16 - 10 - 11
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

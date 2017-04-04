@@ -5,7 +5,7 @@ title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
 description: This topic describes the options on the Microsoft Dynamics AX Intelligent Data Management Framework(IDMF) Schedule menu, and how to use them.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-05 17 - 58 - 43
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

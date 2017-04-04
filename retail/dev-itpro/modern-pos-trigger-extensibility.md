@@ -5,7 +5,7 @@ title: Modern POS and Cloud POS trigger extensibility
 description: This article explains the client-side trigger functionality in Modern POS and Cloud POS.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 20 - 34 - 36
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

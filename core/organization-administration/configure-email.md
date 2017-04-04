@@ -5,7 +5,7 @@ title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 2017-01-26 20 - 28 - 31
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -160,9 +160,9 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 See also
 --------
 
-[Office integration troubleshooting](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting)
+[Office integration troubleshooting](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting)
 
-[Office integration tutorial](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/office-integration-tutorial)
+[Office integration tutorial](/dynamics365/operations/dev-itpro/office-integration/office-integration-tutorial)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
 

@@ -5,7 +5,7 @@ title: Posting definitions
 description: This article provides information about posting definitions, and how to define and link them. For supported posting types and documents, you can use posting definitions instead of posting profiles to classify main accounts and financial dimensions on accounting entries.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-03 20 - 43 - 23
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -63,4 +63,4 @@ The following restrictions apply when you create links in posting definitions:
 -   You can assign a posting definition to any transaction type, but the transaction type must be in the same module as the posting definition. Use the **Transaction posting definitions** page to see what module a transaction type is in.
 
 
-For more information, see [Posting definitions examples](/general-ledger/example-posting-definitions.md). 
+For more information, see [Posting definitions examples](example-posting-definitions.md). 

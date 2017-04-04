@@ -5,10 +5,10 @@ title: Best practices for importing vouchers using the General journal entity
 description: This topic provides tips for importing data into the General journal by using the General journal entity.  
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-06-24 18 - 03 - 41
-ms.topic: 
+ms.date: 2017-04-04
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

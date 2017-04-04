@@ -5,7 +5,7 @@ title: Lookup controls
 description: This article discusses how to enable lookup behavior on controls. It also discusses how to create multi-select lookups and outlines lookup scenarios that are no longer supported.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-04 18 - 37 - 27
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

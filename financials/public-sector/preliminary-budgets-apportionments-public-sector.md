@@ -5,7 +5,7 @@ title: Preliminary budgets and apportionments in the public sector
 description: This topic covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-07 16 - 57 - 46
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

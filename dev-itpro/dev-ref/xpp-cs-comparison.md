@@ -5,7 +5,7 @@ title: X++ and C# comparison
 description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-29 20 - 41 - 17
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

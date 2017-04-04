@@ -3,9 +3,9 @@
 
 title: Financial reporting for Dynamics 365 for Operations
 description: Financial reporting for Dynamics 365 for Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 29
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -42,8 +42,7 @@ The following components of financial reporting make it easy to create, view, an
 | Component        | Functions                                                                                                                                                                                                                                                                           | Additional information                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Report Designer  | Create report building blocks that can be combined to define and generate a report. The report wizard guides less experienced users through the design process. Advanced users can create new report building blocks or modify existing building blocks to meet their requirements. |                                                                                                 |
-| Web Viewer       | View financial reports in a web browser. Web Viewer doesn't require that financial reporting server components be installed.                                                                                                                                                        | [Web viewer](financial-reporter-designer-web-client.md)            |
-| Report schedules | Schedule a single report or a group of reports so that it is generated on a regular basis.                                                                                                                                                                                          | [Generate a report](/dynamics365/operations/financials/general-ledger/generate-financial-report) |
+| Report schedules | Schedule a single report or a group of reports so that it is generated on a regular basis.                                                                                                                                                                                          | [Generate a financial report](generate-financial-report.md) |
 
 ## Features
 <table>
@@ -84,12 +83,12 @@ The following components of financial reporting make it easy to create, view, an
 <li>Add dimension filters to limit the report content to a specific dimension or combination of dimensions.</li>
 <li>Add attribute filters to limit the report content to a specific attribute or combination of attributes.</li>
 </ul>
-For more information, see the “Interactive components and navigation features” section in <a href="https://technet.microsoft.com/en-us/library/dn469079.aspx">Desktop Viewer interface</a>.</td>
+</td>
 </tr>
 </tbody>
 </table>
 
 #See also
+[Generate a financial report](generate-financial-report.md)
 
-[Generate a financial report]((dynamics365\operations\financials\general-ledger\generate-financial-report)
 

@@ -5,7 +5,7 @@ title: Generate payroll reports
 description: This topic describes the standard payroll reports that Dynamics 365 for Operations provides to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15 - 31 - 32
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

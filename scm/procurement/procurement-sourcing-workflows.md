@@ -5,7 +5,7 @@ title: Procurement and sourcing workflows
 description: Some organizations require that purchase requisitions and purchase orders are approved by a user other than the person who entered the transaction. To set up an approval process, you can create a workflow.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-09-10 08 - 04 - 44
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

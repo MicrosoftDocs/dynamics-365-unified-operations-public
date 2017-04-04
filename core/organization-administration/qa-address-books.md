@@ -5,7 +5,7 @@ title: Address books
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-11 23 - 25 - 59
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

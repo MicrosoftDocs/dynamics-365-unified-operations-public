@@ -5,7 +5,7 @@ title: Details Transaction form pattern
 description: This article provides information about the Details Transaction form pattern. Forms that use this pattern can have two details views that the user can switch between -  a Header view and a Line view.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-04 00 - 18 - 36
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -53,7 +53,7 @@ A details form with lines (Details Transaction form) consists of one form that c
 [![Wireframe: Grid view](./media/detailstransaction3-1024x575.png)](./media/detailstransaction3.png)
 
 ## Pattern changes
-Here are the main changes to this pattern since Microsoft Dynamics 365 for Operations 2012:
+Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
 
 -   A List style grid was been added to the left of the Details view content, which is shown in either Header view or Line view.
 -   List Page and Details Master have been merged into a single form. This change has the following benefits:

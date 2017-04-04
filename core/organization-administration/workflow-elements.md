@@ -5,7 +5,7 @@ title: Workflow elements
 description: This article describes the various elements that make up a workflow.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-02-29 15 - 15 - 39
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

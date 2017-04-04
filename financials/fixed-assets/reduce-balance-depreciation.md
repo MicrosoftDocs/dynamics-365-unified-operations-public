@@ -5,7 +5,7 @@ title: Reduce balance depreciation
 description: This article gives an overview of the Reducing balance method of depreciation.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-09-10 20 - 42 - 33
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

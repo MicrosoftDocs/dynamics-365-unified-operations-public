@@ -5,10 +5,10 @@ title: Upgrade Dynamics 365 for Operations to the latest platform update
 description: This topic explains how to upgrade your Microsoft Dynamics 365 for Operations platform version to the latest platform release.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-11-04 00 - 14 - 31
-ms.topic: 
+ms.date: 2017-04-04
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

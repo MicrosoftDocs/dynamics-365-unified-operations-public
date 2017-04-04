@@ -3,9 +3,9 @@
 
 title: Generate a financial report
 description: This topic provides information about generating a financial report. 
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 31 - 40
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 68843
@@ -47,8 +47,6 @@ The following table explains the options that are available for generating repor
 | Check for missing accounts or data in a report, and validate the accuracy of a report |                      |
 
 When you generate a report, the options that you have specified on the Report definition tabs are used. The Output and Distribution tab lets you specify a report library location, which provides an easy way to share the report.
-
-###  
 
 ## Schedule report generation
 Many companies have a core set of reports that are run at scheduled intervals to align with their business processes. You can schedule a report to be generated regularly, such as daily, weekly, monthly, or annually. This can be a single report or a group of reports that includes multiple companies. You must enter your credentials for each of the companies that are specified, such as those in a reporting tree definition. If the credentials are not valid, the report will display only the information that you have permission to access, such as the company that you are logged on to at the time. Output information is read first from the report group, and then from the individual reports.
@@ -144,14 +142,10 @@ When you run a missing account analysis, the following keyboard shortcuts are av
 | Open the selected report definition  | Ctrl+R                     |
 | Open the selected row definition     | Ctrl+O                     |
 
- 
-
-
-
+ 
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics ERP](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+[Financial reporting](financial-reporting-intro.md)
 
-[Report Designer interface](/dynamics365/operations/dev-itpro/analytics/report-designer-interface)
-
+[Report Designer interface](report-designer-interface.md)

@@ -5,10 +5,10 @@ title: Use quick import/export
 description: The purpose of Quick import export is to let you import and export with fewer steps.
 author: margoc
 manager: AnnBe
-ms.date: 2016-06-06 19 - 34 - 36
-ms.topic: 
+ms.date: 2017-04-04
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

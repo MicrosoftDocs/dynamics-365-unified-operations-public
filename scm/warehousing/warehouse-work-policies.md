@@ -5,10 +5,10 @@ title: Warehouse work policies
 description: A new warehouse work policy is introduced in Microsoft Dynamics AX 7.0.1 (May 2016 update). This work policy controls whether warehouse work is created for warehouse processes in manufacturing.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-03 19 - 26 - 21
-ms.topic: 
+ms.date: 2017-04-04
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

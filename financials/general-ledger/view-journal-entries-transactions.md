@@ -5,7 +5,7 @@ title: View journal entries and transactions
 description: This article explains the various ways that you can view journal entries and transactions. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-01 16 - 42 - 09
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -56,6 +56,8 @@ In addition to the financial reports, you can use the following ledger reports t
 -   **Transaction origin** – This transaction report shows the account by journal, and by transaction, accounting, and reporting currency. It also shows each line of the journal that was used as an offset.
 
 
-For more information, see [General ledger account balances](general-ledger-account-balances.md), 
-[Accounting source explorer](\financials\accounts-payable\accounting-source-explorer) and [Financial reporting](financial-reporting-getting-started.md)
+##See also
+- [General ledger account balances](general-ledger-account-balances.md) 
+- [Accounting source explorer](..\accounts-payable\accounting-source-explorer.md)
+- [Financial reporting](financial-reporting-getting-started.md)
 

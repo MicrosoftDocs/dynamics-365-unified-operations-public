@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Help overview
 description: This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
-ms.date: 2015-12-04 02 - 12 - 46
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -54,7 +54,7 @@ We've migrated all of the content from our previous help wiki to docs. We’re v
 
 ### When can we use it?
 
-You can read content on docs right now -- it is fully public and searchable without requiring sign-in. You can use any of your favorite search engines to find content. You can comment on articles on the site if you choose, by signing in with a GitHub account.
+You can read content on docs right now -- it is fully public and searchable without requiring sign-in. You can use any of your favorite search engines to find content. You can comment on articles on the site if you choose, by signing in.
 
 
 ## Task guides
@@ -74,7 +74,7 @@ For more information about Task Recorder, see [Task recorder in Dynamics 365 for
 You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../user-interface/task-recorder.md).
 
 ## In-product Help
-To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. [![Help pane](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
 
 ### Accessing articles from the Help pane
 
@@ -113,7 +113,7 @@ The following table lists websites that provide Dynamics 365 for Operations cont
 | [Support blog](http://aka.ms/AXSupportBlog)                              | Provides tips and tricks that are posted by the Dynamics 365 for Operations Support team.                                                                                                                                                  |
 | [MSDN](http://aka.ms/AXMSDN)                                             | Hosts content from previous releases that is written for developers.                                                                                                                                                                       |
 | [TechNet](http://aka.ms/TechNet)                                         | Hosts content from previous releases that is written for IT professionals and application users.                                                                                                                                           |
-| [Dynamics Community](http://community.dynamics.com/en/)                  | Hosts blogs, forums, and videos.                                                                                                                                                                                                           |
+| [Dynamics Community](http://community.dynamics.com/)                  | Hosts blogs, forums, and videos.                                                                                                                                                                                                           |
 | [Microsoft.com/Dynamics/](http://www.microsoft.com/dynamics/)                 | Provides evaluation and sales information.                                                                                                                                                                                                 |
 
 

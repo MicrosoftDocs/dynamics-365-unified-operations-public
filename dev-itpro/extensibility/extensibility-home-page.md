@@ -5,7 +5,7 @@ title: Extensibility home page
 description: This topic provides links to topics about extensibility with Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-02-01 19 - 35 - 12
+ms.date: 2017-04-04
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -39,6 +39,7 @@ The development approach for Dynamics 365 for Operations focuses more on extendi
 -   [Customize model elements using extensions (tutorial)](customize-model-elements-extensions.md)
 -   [Customization: overlayering and extensions](customization-overlayering-extensions.md)
 -   [Class extensions](class-extensions.md)
+-   [Customize App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md)
 -   [Customize by overlayering metadata source code (Office Mix)](https://mix.office.com/watch/1ol6ov90jrd4w)
 
 ## Blog posts

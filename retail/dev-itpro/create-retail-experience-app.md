@@ -5,7 +5,7 @@ title: Create a Retail Experience app
 description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
 manager: AnnBe
-ms.date: 2016-11-02 18 - 01 - 40
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

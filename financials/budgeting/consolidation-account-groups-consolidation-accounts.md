@@ -5,7 +5,7 @@ title: Consolidation account groups and additional consolidation accounts
 description: This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they are used in Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-01-03 19 - 31 - 01
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

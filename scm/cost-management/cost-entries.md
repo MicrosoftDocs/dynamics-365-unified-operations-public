@@ -5,7 +5,7 @@ title: Cost entries
 description: This article provides information about cost entries and when they are created. A cost entry is a record that registers the quantity and cost of a given event.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 09 - 22
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -56,13 +56,16 @@ The new **Cost entries** page lets you view and control registrations of quant
 -   A few days after the invoice event is registered, the cost increases to 11.00 USD. Therefore, the total amount is 1,100 USD. A second voucher is created to account for the difference of 100 USD.
 -   A few days later, a miscellaneous charge of 15.00 USD to cover the transportation cost is registered on the purchase order.
 
-| Voucher | Date       | Reference      | Number | Lot ID  | Reference Lot | Return Lot ID | Quantity | Amount  |
-|---------|------------|----------------|--------|---------|---------------|---------------|----------|---------|
-| 00001   | 01-01-2015 | Purchase order | 100001 | 0000101 |               |               | 100.00   | 1000.00 |
-| 00002   | 20-01-2015 | Purchase order | 100001 | 0000101 |               |               |          | 100.00  |
-| 00003   | 31-01-2015 | Adjustment     | 100001 | 0000101 |               |               |          | 15.00   |
+| Voucher | Date       | Reference      | Number | Lot ID  | Quantity | Amount  |
+|---------|------------|----------------|--------|---------|---------------|----|
+| 00001   | 01-01-2015 | Purchase order | 100001 | 0000101 | 100.00   | 1000.00 |
+| 00002   | 20-01-2015 | Purchase order | 100001 | 0000101 |          | 100.00  |
+| 00003   | 31-01-2015 | Adjustment     | 100001 | 0000101 |          | 15.00   |
 
-The **Cost entries** page enables filtering by document ID and document date. **Note:** Cost entries are available only for [cost objects](cost-object.md) or released products.
+The **Cost entries** page enables filtering by document ID and document date. 
+
+> [!NOTE]
+> Cost entries are available only for [cost objects](cost-object.md) or released products.
 
 See also
 --------

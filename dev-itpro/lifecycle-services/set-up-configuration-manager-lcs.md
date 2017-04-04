@@ -5,7 +5,7 @@ title: Set up Configuration manager
 description: 
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-03-08 22 - 07 - 42
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -81,7 +81,7 @@ Complete the following procedure in the environment that you intend to export a 
 ## Install and configure the local component of the System diagnostics (Lifecycle Services)
 Complete the following procedure in the environment that you intend to export a configuration from. **Important:** If you have already installed the local component of the System diagnostics for your project and environment, you must uninstall it by using **Add/Remove programs**. Only one instance of Microsoft Dynamics AX Application Object Server (AOS) per environment can be used with Configuration management, regardless of the number of instances that are discovered.
 
-1.  Install the local component of the System diagnostics. For details, see [Install and run System diagnostics (Lifecycle Services)](/ax-2012/install-run-system-diagnostics-lcs.md). Important: For this beta release, we require that you add the service account for the System diagnostics to the sysadmin role in AX 2012 R3.
+1.  Install the local component of the System diagnostics. For details, see [Install and run System diagnostics (Lifecycle Services)](./ax-2012/install-run-system-diagnostics-lcs.md). Important: For this beta release, we require that you add the service account for the System diagnostics to the sysadmin role in AX 2012 R3.
 2.  Click **Start** &gt; **Microsoft Dynamics AX Lifecycle Services Diagnostic Service Discovery**.
 3.  In the **Environment Discovery** window, enter a name for the environment, and the fully-qualified name of the Microsoft SQL Server instance and database. Then click Discover environment.
 4.  After discovery is completed, enter the values in the **Configuration management (Beta)** section, click **Save**, and then click **Upload environment**.

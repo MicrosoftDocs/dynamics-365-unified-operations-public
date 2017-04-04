@@ -5,7 +5,7 @@ title: Production order cost analysis
 description: This article provides information about the cost analysis that you can do for completed and current production orders. You can analyze the estimated costs and actual costs by using the Price calculation page or the Cost estimates and costings report. You can view information about the estimated and actual costs (and quantity) for each component item, the routing operation, and the indirect cost.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-11 13 - 25 - 42
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -44,7 +44,11 @@ The variances reflect a comparison of the reported production activities and the
 -   Production price variance
 -   Production substitution variance
 
-The following diagram shows the four variances that account for the difference between a production order's actual costs and the calculated costs within the item's cost record when the production order is ended. ![Variances that account for differences in a completed production order](./media/control.jpg) You can analyze the production variances by using the **Variance** page or the **Production variance** report. Use the display options to view detailed variances by item and operations resource, or by cost group. The policy for cost breakdown in the inventory parameters determines whether the variances are tracked by cost group. You can also use the **single**, **multi**, and **total** display options to view summarized variances. The information about detailed variances can help you understand the source of each variance. To predict variances before you end a production order, analyze the detailed information that is provided on the **Cost estimates and costings** report.
+The following diagram shows the four variances that account for the difference between a production order's actual costs and the calculated costs within the item's cost record when the production order is ended. 
+
+![Variances that account for differences in a completed production order](./media/control.jpg) 
+
+You can analyze the production variances by using the **Variance** page or the **Production variance** report. Use the display options to view detailed variances by item and operations resource, or by cost group. The policy for cost breakdown in the inventory parameters determines whether the variances are tracked by cost group. You can also use the **single**, **multi**, and **total** display options to view summarized variances. The information about detailed variances can help you understand the source of each variance. To predict variances before you end a production order, analyze the detailed information that is provided on the **Cost estimates and costings** report.
 
 ## Cost analysis for current production orders
 Separate reports provide information about each type of transaction. Use these reports to analyze costs for reported production activities. Information is displayed only for current production orders that have a status of **Started** or **Reported as finished**.

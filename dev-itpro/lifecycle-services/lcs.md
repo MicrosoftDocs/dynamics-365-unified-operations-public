@@ -5,7 +5,7 @@ title: Lifecycle Services for Dynamics 365 for Operations
 description: Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Microsoft Dynamics 365 for Operations implementations.
 author: kfend
 manager: AnnBe
-ms.date: 2016-03-28 17 - 43 - 56
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -36,21 +36,21 @@ Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that p
 
 -   [What's new: Lifecycle Services for Microsoft Dynamics](whats-new-lcs.md)
 -   [Microsoft Dynamics Lifecycle Services User Guide](lcs-user-guide.md)
--   [Projects (Lifecycle Services, LCS)](/ax-2012/projects-lcs.md)
+-   [Projects (Lifecycle Services, LCS)](./ax-2012/projects-lcs.md)
 -   [Methodologies (Lifecycle Services, LCS)](./ax-2012/methodologies-lcs.md)
 -   [Business process modeler (Lifecycle Services, LCS)](business-process-modeler-lcs.md)
--   [Cloud-hosted environments (Lifecycle Services, LCS)](/ax-2012/cloud-hosted-environments-lcs.md)
+-   [Cloud-hosted environments (Lifecycle Services, LCS)](./ax-2012/cloud-hosted-environments-lcs.md)
 -   [Cloud-powered support (Lifecycle Services, LCS)](cloud-powered-support-lcs.md)
 -   [Configuration manager (Lifecycle Services, LCS)](configuration-manager-lcs.md)
--   [Customization analysis (Lifecycle Services, LCS)](/ax-2012/customization-analysis-lcs.md)
--   [Infrastructure estimator (Lifecycle Services, LCS)](/ax-2012/infrastructure-estimator-lcs.md)
+-   [Customization analysis (Lifecycle Services, LCS)](./ax-2012/customization-analysis-lcs.md)
+-   [Infrastructure estimator (Lifecycle Services, LCS)](./ax-2012/infrastructure-estimator-lcs.md)
 -   [Issue Search (Lifecycle Services, LCS)](issue-search-lcs.md)
--   [License sizing estimator (Lifecycle Services, LCS)](/ax2012/license-sizing-estimator-lcs.md)
--   [RFP responses (Lifecycle Services, LCS)](/ax-2012/rfp-responses-lcs.md)
--   [System diagnostics (Lifecycle Services, LCS)](/ax-2012/system-diagnostics-lcs.md)
--   [Upgrade analysis (Lifecycle Services, LCS)](/ax-2012/upgrade-analysis-lcs.md)
--   [Usage profiler](/ax-2012/usage-profiler-lcs.md)
--   [Lifecycle Services downloadable Tools](/ax-2012/lcs-downloadable-tools-formerly-informationsource.md)
+-   [License sizing estimator (Lifecycle Services, LCS)](./ax-2012/license-sizing-estimator-lcs.md)
+-   [RFP responses (Lifecycle Services, LCS)](./ax-2012/rfp-responses-lcs.md)
+-   [System diagnostics (Lifecycle Services, LCS)](./ax-2012/system-diagnostics-lcs.md)
+-   [Upgrade analysis (Lifecycle Services, LCS)](./ax-2012/upgrade-analysis-lcs.md)
+-   [Usage profiler](./ax-2012/usage-profiler-lcs.md)
+-   [Lifecycle Services downloadable Tools](./ax-2012/lcs-downloadable-tools-formerly-informationsource.md)
 
 ### Additional resources
 

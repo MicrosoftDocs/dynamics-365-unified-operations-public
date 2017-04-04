@@ -5,7 +5,7 @@ title: Split periods in periodic journals
 description: Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the journal is posted. When you create the journal, you specify the period interval for the recurrence, such as days or months. You also specify the number of periods for which the journal will be posted.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-02 21 - 05 - 30
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

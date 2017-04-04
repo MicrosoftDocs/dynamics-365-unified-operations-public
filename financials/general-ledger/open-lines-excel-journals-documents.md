@@ -5,7 +5,7 @@ title: Publish journal lines and documents from Excel
 description: This topic explains how to enter and publish lines for general journals from Microsoft Excel. It includes information about the various templates that you can use, depending on the type of transactions that you're entering.
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-08 17 - 50 - 05
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -51,7 +51,7 @@ Users can enter and publish lines for financial journals from Microsoft Excel. A
 
 When the lines are published, they are validated to make sure that they comply with the rules that are set up in the financial journals. After the lines are published, users can edit or post the vouchers from Microsoft Dynamics 365 for Operations. 
 
-To add financial dimensions to a template, additional changes are required. For additional information, see [Add dimensions to the Microsoft Excel template](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). After dimensions are added to the entity, they are available in the Excel designer and can be added to the template.
+To add financial dimensions to a template, additional changes are required. For additional information, see [Add dimensions to the Microsoft Excel template](\dynamics365\operations\dev-itpro\financial-dimensions\add-dimensions-excel-templates). After dimensions are added to the entity, they are available in the Excel designer and can be added to the template.
 
 
 

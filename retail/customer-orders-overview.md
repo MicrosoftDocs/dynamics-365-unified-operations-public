@@ -5,7 +5,7 @@ title: Customer orders overview
 description: This topic provides information about customer orders in Retail Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-11-30 21 - 04 - 59
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Set up a continuity program for a call center
 description: This article describes how to set up a continuity program for a call center.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-03 22 - 12 - 11
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

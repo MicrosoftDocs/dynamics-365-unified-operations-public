@@ -5,7 +5,7 @@ title: Inventory object values
 description: This article provides information about how the values of an inventory object are calculated. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 09 - 05
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -34,7 +34,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about how the values of an inventory object are calculated. 
 
-A new functionality that is named **physical quantity **lets you see the values of a specific inventory object. A cost object represents the entity level where inventory accounting is performed. For more information about cost objects, see [Cost objects](cost-object.md). To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page. Here is how the value of an inventory object is calculated: Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity The following example shows how the values of an inventory object and a cost object are calculated. Two product receipt events are registered on item A:
+A new functionality that is named **physical quantity** lets you see the values of a specific inventory object. 
+
+A cost object represents the entity level where inventory accounting is performed. For more information about cost objects, see [Cost objects](cost-object.md). 
+
+To see the values of a specific inventory object, click **Physical quantity** on the **Cost object** page. Here is how the value of an inventory object is calculated: 
+
+Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity 
+
+The following example shows how the values of an inventory object and a cost object are calculated. Two product receipt events are registered on item A:
 
 -   Product receipt 1: Quantity = 100 pcs., Amount = $1,000.00, Site = 1, Warehouse =11, Batch No. = B1
 -   Product receipt 2: Quantity = 50 pcs., Amount = $800.00, Site = 1, Warehouse =11, Batch No. = B2

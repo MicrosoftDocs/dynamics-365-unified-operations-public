@@ -5,7 +5,7 @@ title: X++ session run-time functions
 description: This wiki describes the session run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-04 22 - 14 - 39
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

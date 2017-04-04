@@ -5,7 +5,7 @@ title: Retail Channel Performance Power BI content
 description: This article provides information about the Microsoft Dynamics 365 for Operations Retail Channel Performance Power BI content. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-07-29 15 - 36 - 26
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

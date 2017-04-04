@@ -5,7 +5,7 @@ title: Settlement overview for centralized payments
 description: Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments. This eliminates the need to enter the same transaction in multiple legal entities and saves time by streamlining the payment proposal process, the settlement process, open transaction editing, and closed transaction editing for centralized payments. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-10-31 18 - 23 - 48
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

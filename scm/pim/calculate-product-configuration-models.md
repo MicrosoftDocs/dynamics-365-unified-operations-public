@@ -5,7 +5,7 @@ title: Calculations for product configuration models FAQ
 description: This article describes calculations for product configuration models and explains how to use calculations together with constraints.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 11 - 25
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -39,7 +39,7 @@ Calculations can be used for arithmetic or logical operations. They complement e
 ## What is a calculation?
 A calculation is an element that you can use in a product configuration model. Calculations complement constraints by letting you use decimal numbers to calculate values when you configure a product. Additionally, calculations have a larger set of available operators than constraints have.  
 
-Like a constraint, a calculation is associated with a specific component in a product configuration model, and can’t be reused by or shared with another component. One important difference between calculations and constraints is that calculations are imperative (unidirectional), whereas constraints are declarative (bi-directional). For more information about constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints.md).  
+Like a constraint, a calculation is associated with a specific component in a product configuration model, and can’t be reused by or shared with another component. One important difference between calculations and constraints is that calculations are imperative (unidirectional), whereas constraints are declarative (bi-directional). For more information about constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints-product-configuration-models.md).  
 
 A calculation consists of a target attribute and a calculation expression.
 
@@ -90,7 +90,7 @@ No. The values that you set when you configure a product are the values that are
 If you remove an input value in a calculation, the value of the target attribute is also removed.
 
 ## Why do I receive an error message that says that my model is in contradiction?
-This message is shown when a calculation includes an error, or when a contradiction exists in one or more constraints. For more information about contradictions in constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints.md). Here are some situations where errors can occur in calculations:
+This message is shown when a calculation includes an error, or when a contradiction exists in one or more constraints. For more information about contradictions in constraints, see [Expression constraints and table constraints](expression-constraints-table-constraints-product-configuration-models.md). Here are some situations where errors can occur in calculations:
 
 -   A value is divided by 0 (zero).
 -   A conflict exists between the following two elements:

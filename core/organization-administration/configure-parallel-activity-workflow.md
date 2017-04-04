@@ -5,7 +5,7 @@ title: Configure a parallel activity in a workflow
 description: To configure a parallel activity, complete the following procedures in the workflow editor.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-09-30 15 - 56 - 21
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -51,7 +51,7 @@ Follow these steps to add and configure the branches of this parallel activity.
     |------------------------------------------------------------------------------------------------------------------|
     | The order of the branches is not important because all the branches of a parallel activity run at the same time. |
 
-3.  To configure each branch, see [Configure a parallel branch](http://axhelp.dynamics.com/en/wiki/configure-a-parallel-branch/).
+3.  To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).
 
 
 

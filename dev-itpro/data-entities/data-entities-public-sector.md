@@ -5,7 +5,7 @@ title: Data entities - Public sector
 description: This article provides a list of the data entities that are available for the Public sector functionality in Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
-ms.date: 2016-06-29 14 - 26 - 10
+ms.date: 2017-04-04
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -200,6 +200,8 @@ All General ledger data entities and the setup are a prerequisite for importing 
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 82                 | 12.1.003 BUD – Budget planning setup. A demo data issue will cause records to fail in the Budget plan stage rule data entity. The package on LCS has been modified. |
 | 83                 | 12.01.004 BUD – Forecast position                                                                                                                                   |
+
+
 **[Costing](data-entities-costing.md)**
 
 | Suggested sequence | Package                      |

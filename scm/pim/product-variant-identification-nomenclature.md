@@ -5,7 +5,7 @@ title: Product number nomenclature
 description: This topic describes how you can set up a product number nomenclature to replace the fixed format, [Product master number - Configuration - Size - Color - Style], with a targeted format that includes the product master number, active product dimensions, and text delimiters of your choice. You can also build a nomenclature to identify configurations that are created by the constraint-based product configurator. These nomenclatures can contain attributes of your choice.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-31 12 - 44 - 47
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

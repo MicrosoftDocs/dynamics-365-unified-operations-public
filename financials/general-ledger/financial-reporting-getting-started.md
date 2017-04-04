@@ -5,7 +5,7 @@ title: Financial reporting
 description: This topic describes where to access financial reporting in Microsoft Dynamics 365 for Operations and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-10-19 23 - 20 - 32
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

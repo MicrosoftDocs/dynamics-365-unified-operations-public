@@ -5,7 +5,7 @@ title: Registration IDs
 description: This topic provides information about setting up and using registration IDs.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-03-16
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

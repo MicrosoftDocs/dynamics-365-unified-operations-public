@@ -5,7 +5,7 @@ title: Behavioral properties on data entities
 description: 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 20 - 11 - 57
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

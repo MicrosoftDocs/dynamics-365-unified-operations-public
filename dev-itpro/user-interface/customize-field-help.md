@@ -5,7 +5,7 @@ title: Customize field Help
 description: This article describes how you can customize existing field descriptions and add your own descriptions.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-06-14 13 - 38 - 47
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

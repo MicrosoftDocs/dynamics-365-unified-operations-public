@@ -5,7 +5,7 @@ title: Payroll data updates FAQ
 description: A number of changes can and do happen at the end of a year that require changes to your payroll data. Workers can change their benefit election, or your company might change benefit rates, and benefit balances. Workers who move into different positions also result in changes to payroll data. This topic lists questions and answers that address these kinds of changes.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 16 - 08 - 31
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -95,7 +95,7 @@ To change the payroll settings after that is done, follow these steps:
     -   Assign default tax regions: A default tax region is required for each position that a worker holds.
     -   Configure worker tax codes: If the new position is in a different tax region, or if it is paid by a different legal entity, you can assign additional tax codes to the worker. You must set up these tax codes before the worker can be paid.
 
-2.  When you change a worker position, this also might change which benefits the worker is eligible for. Go to [Define and manage a benefit program](./manage-benefit-program.md) and complete these tasks:
+2.  When you change a worker position, this also might change which benefits the worker is eligible for. Go to [Define and manage a benefit program](../manage-benefit-program.md) and complete these tasks:
     -   Create an eligibility event.
     -   Process eligibility for benefits.
     -   Enroll workers in benefits.
@@ -106,7 +106,7 @@ To change the payroll settings after that is done, follow these steps:
 When a worker has a qualifying life event that allows for a change of benefits, other payroll data for that worker might also change because of the event.
 
 To change the benefits, follow these steps:
-1.  Go to [Define and manage a benefit program](./manage-benefit-program.md) and complete the following:
+1.  Go to [Define and manage a benefit program](../manage-benefit-program.md) and complete the following:
     -   Create an eligibility event.
     -   Process eligibility for benefits.
     -   Enroll workers in benefits.
@@ -115,6 +115,3 @@ To change the benefits, follow these steps:
 3.  If the worker has moved to a new location, go to [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md) and complete these tasks:
     -   Set up worker tax regions.
     -   Change worker residency.
-
-
-

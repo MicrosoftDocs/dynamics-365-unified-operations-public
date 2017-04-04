@@ -5,7 +5,7 @@ title: Cycle counting
 description: This article describes how you can use cycle counting with the warehousing solution that is available in Warehouse management. This article doesn't apply to the warehousing solution that's available in Inventory management.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 11 - 46 - 20
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -44,7 +44,6 @@ The following illustration shows the cycle counting process. ![Process flow for 
 
 ## Cycle counting prerequisites
 The following table shows the prerequisites that must be in place before you can use cycle counting.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -87,7 +86,7 @@ The following table shows the prerequisites that must be in place before you can
 <li>Cycle count grouping</li>
 <li>Spot cycle counting</li>
 </ul>
-For more information, see (<a href="configure-mobile-devices-warehouse">Configure mobile devices for warehouse work</a>.</li>
+</li>
 <li>Set up a menu for the mobile device.</li>
 <li>Create a work user account, and assign a mobile device menu to the work user ID.</li>
 </ul></td>
@@ -139,5 +138,6 @@ A cycle counting difference occurs in the following scenarios if the **Is a cy
 
 You can adjust differences in the counted value and then accept the counted value on the **Cycle count pending review** page. You can verify the modified count of the item quantity on the **On hand by location** page. The counted value is rejected if the difference can't be approved.
 
-
+# See also
+[Configure mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
 

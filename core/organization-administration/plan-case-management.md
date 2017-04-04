@@ -5,7 +5,7 @@ title: Configure case security, processes, and categories
 description: This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-11 23 - 25 - 46
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

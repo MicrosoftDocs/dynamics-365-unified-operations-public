@@ -5,7 +5,7 @@ title: Retail and commerce
 description: This page lists the resources that are available for Retail and commerce in Dynamics 365 for Operations - Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-11 15 - 21 - 29
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -73,7 +73,7 @@ Dynamics 365 for Operations - Retail delivers a complete shopping experience, wi
 -   [Create product packages and use in purchase orders](http://ax.help.dynamics.com/en/wiki/create-product-packages-and-use-in-purchase-order/)(Task guide)
 -   [Push products from distribution center to stores using buyer's push](http://ax.help.dynamics.com/en/wiki/push-products-from-distribution-center-to-stores-using-buyers-push/)(Task guide)
 -   [Cross-dock products from receiving warehouse to stores](http://ax.help.dynamics.com/en/wiki/cross-dock-products-from-receiving-warehouse-to-stores/)(Task guide)
--   [Work with store inventory](retail-store-inventory.md)
+-   [Work with store inventory](work-with-store-inventory.md)
 
 ## Discounts and price adjustments
 -   [Price adjustments and discounts](price-adjustments-discounts.md)

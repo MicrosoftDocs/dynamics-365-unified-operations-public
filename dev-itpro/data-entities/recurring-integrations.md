@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. For the current version of Microsoft Dynamics 365 for Operations, we have tried to simplify this process for all parties who are involved.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 19 - 31 - 13
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -41,8 +41,8 @@ In Dynamics 365 for Operations, the integration does the following:
 
 -   It builds on data entities and the rich data management platform (Data Import/Export Framework \[DIXF\]).
 -   It enables the exchange of documents/files between Dynamics 365 for Operations and any third-party application or service.
--   It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters. [![image001](./media/image001-1024x348.png)](./media/image001.png)
--   It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from and send data back to integration systems. [![image003](./media/image003-1024x431.png)](./media/image003.png)
+-   It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters. [![Formats](./media/image001-1024x348.png)](./media/image001.png)
+-   It uses secure REST application programming interfaces (APIs) and authorization mechanisms to receive data from and send data back to integration systems. [![REST](./media/image003-1024x431.png)](./media/image003.png)
 
 ## Authorization for the integration REST API
 The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Azure Active Directory (AAD) and give it appropriate permission to Dynamics 365 for Operations . When you create and enable a recurring job, you'll be prompted to enter the AAD application ID that will be interacting with that recurring job. Therefore, be sure to note down the application ID.
@@ -65,12 +65,12 @@ The integration REST API uses the same OAuth 2.0 authentication model as the oth
     -   Specify **File** to indicate that your external integration will push individual files for processing via this recurring data job. In this case, the format of the file that is expected is the same as the format that was specified when the entity was added to the data project.
     -   Specify **Data package** to indicate that you can push only data package files for processing. A data package is a new format for submitting multiple data files as a single unit that can be used in integration jobs.
 
-5.  Click **Set processing recurrence**, and set a valid recurrence for your data job. [![](./media/image007-11_16.png)](./media/image007-11_16.png)
+5.  Click **Set processing recurrence**, and set a valid recurrence for your data job. [![Processing recurrent](./media/image007-11_16.png)](./media/image007-11_16.png)
 6.  Optional: Click **Set monitoring recurrence**, and provide a monitoring recurrence. **Note:** Currently, the monitoring recurrence enables load monitoring only on your recurring data job queue. No additional policies are supported via this service. You can use this feature to fine-tune the processing recurrence as required by load demand.
 7.  Click **OK**, and then click **Yes** in the confirmation dialog box.
 
 ## Manage recurring data jobs
-Open the System Administration workspace (not module) and click the Data Management IT tile. [![Data management workspace](./media/image011_2016-300x292.png)](./media/image011_2016.png) In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. [![image013](./media/image013.jpg)](./media/image013.jpg)
+Open the System Administration workspace (not module) and click the Data Management IT tile. [![Data management workspace](./media/image011_2016-300x292.png)](./media/image011_2016.png) In this workspace, on the **Recurring data job** tab, click the recurring job to view more details for. The **Management** page contains a grid that lists any messages that are waiting in the queue. This view helps you monitor messages and processing status. [![Management page](./media/image013.jpg)](./media/image013.jpg)
 
 ## Submitting data to recurring data jobs
 You can use well-known integration REST endpoints to integrate with the client, submit documents (import), or poll available documents for download (export). These endpoints support OAuth.
@@ -88,7 +88,7 @@ In the message body, you can the pass the data as a memory stream. **Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
 
-To get the activity ID, go to the manage recurring job view, and copy and paste the GUID (highlighted in the following screen shot). [![image015](./media/image015.jpg)](./media/image015.jpg)
+To get the activity ID, go to the manage recurring job view, and copy and paste the GUID (highlighted in the following screen shot). [![Manage recurring job](./media/image015.jpg)](./media/image015.jpg)
 
 ### For export (dequeue)
 

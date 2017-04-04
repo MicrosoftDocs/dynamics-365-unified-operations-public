@@ -5,7 +5,7 @@ title: View financial reports
 description: This article describes how to view and explore financial reports in Microsoft Dynamics AX. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-10-19 23 - 03 - 18
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

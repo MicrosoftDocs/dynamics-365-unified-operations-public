@@ -5,7 +5,7 @@ title: Metadata properties - ReadOnly, AllowEdit, Mandatory
 description: This article covers the behavioral properties of metadata for ReadOnly, AllowEdit, and Mandatory. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-04 21 - 45 - 18
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -46,7 +46,7 @@ Each data entity has certain properties that give you the option to override the
 | AllowEditOnCreate |              |                   | Applies     |
 | Mandatory         |              |                   | Applies     |
 
-[ ](http://dynamics/teams/Server/Rainier/Shared%20Documents/Data%20Management%20Platform/Data%20Entity%20Uptake/Workshop/Metadata%20properties.xlsx)
+
 
 ### Entity level
 

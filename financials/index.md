@@ -5,7 +5,7 @@ title: Financial management home page
 description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Operations. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-10-11 23 - 09 - 11
+ms.date: 2017-04-04
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations

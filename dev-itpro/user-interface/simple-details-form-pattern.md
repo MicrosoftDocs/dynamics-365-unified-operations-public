@@ -5,7 +5,7 @@ title: Simple Details form pattern
 description: This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 01 - 08 - 23
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

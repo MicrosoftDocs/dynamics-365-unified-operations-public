@@ -5,7 +5,7 @@ title: Purchase agreements
 description: This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 58 - 22
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -52,7 +52,6 @@ Each line in a purchase agreement is a commitment to buy something. You can use 
 Pricing terms can vary, depending on the type of commitment. The pricing terms from purchase agreements override any other pricing terms that are set up for trade agreements. The following table describes the price-related fields that are affected by each commitment type. Fields that contain **Yes** can be updated on an order line.
 
 | Commitment type                   | Unit price | Price unit | Discount percent | Cash discount amount |
-
 |-----------------------------------|------------|------------|------------------|----------------------|
 | Product quantity commitment       | Yes        | Yes        | Yes              | Yes                  |
 | Product value commitment          |            |            | Yes              |                      |

@@ -5,7 +5,7 @@ title: Info codes
 description: This article provides an overview about info codes, info code groups, and how to use them.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-11 22 - 44 - 20
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

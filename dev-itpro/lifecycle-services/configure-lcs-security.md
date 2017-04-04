@@ -5,7 +5,7 @@ title: Configure Lifecycle Services security
 description: Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-09-14 12 - 25 - 15
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -54,7 +54,7 @@ The information in this section is intended to help you access CustomerSource or
 
 ### Signing in to CustomerSource or PartnerSource
 
-Visit the [CustomerSource sign-in page](https://mbs.microsoft.com/customersource//t_blank), and enter the user name and password for your Microsoft account (previously known as Windows Live ID) to access the site. If you don't have access to your organization’s CustomerSource account, follow the steps on the [How to sign in to CustomerSource](http://www.microsoft.com/dynamics/customer/en-us/access-customersource/default.aspx/t_blank) page.
+Visit the [CustomerSource sign-in page](https://mbs.microsoft.com/customersource/), and enter the user name and password for your Microsoft account (previously known as Windows Live ID) to access the site. If you don't have access to your organization’s CustomerSource account, follow the steps on the [How to sign in to CustomerSource](http://www.microsoft.com/dynamics/customer/en-us/access-customersource/default.aspx/t_blank) page.
 
 ### Determining the administrator for your organization in CustomerSource or PartnerSource
 

@@ -5,7 +5,7 @@ title: Commitments in the public sector in France
 description: Commitments are budget control source documents used by public sector entities in France. They are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle. 
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 16 - 19 - 15
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Commitments are budget control source documents used by public sector entities in France. They are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle. 
 
-When commitments are used as part of the budgeting process, each purchase agreement, purchase order, and vendor invoice is associated with at least one commitment. The commitment is relieved when the funds are released from the purchase agreement and the purchase order is confirmed. When an invoice does not reference a purchase order or purchase agreement, the commitment associated with the invoice is relieved when the invoice is posted. In addition, a commitment may specify a vendor. When a vendor is specified, any purchase order, purchase agreement, or vendor invoice that references the commitment must have the same vendor. Commitments are valid from the date they are created through the end of the fiscal year or until they are closed. Commitments cannot be carried over from one fiscal year to the next. For more information, see [Close commitments](#close) in this topic. 
+When commitments are used as part of the budgeting process, each purchase agreement, purchase order, and vendor invoice is associated with at least one commitment. The commitment is relieved when the funds are released from the purchase agreement and the purchase order is confirmed. When an invoice does not reference a purchase order or purchase agreement, the commitment associated with the invoice is relieved when the invoice is posted. In addition, a commitment may specify a vendor. When a vendor is specified, any purchase order, purchase agreement, or vendor invoice that references the commitment must have the same vendor. Commitments are valid from the date they are created through the end of the fiscal year or until they are closed. Commitments cannot be carried over from one fiscal year to the next.  
 >[!NOTE]
 >The **Commitment type** field on the **Purchase agreement** page is not related to the commitment document. That field only specifies whether the purchase agreement is based on a value or a quantity.
 

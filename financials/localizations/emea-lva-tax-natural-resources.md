@@ -5,7 +5,7 @@ title: Tax on natural resources report
 description: This topic explains how to set up and generate the Tax on natural resources (NR Tax) report.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-02-13 19 - 46 - 10
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

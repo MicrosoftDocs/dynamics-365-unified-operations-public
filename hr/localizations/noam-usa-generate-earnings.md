@@ -5,7 +5,7 @@ title: Generate earnings
 description: This topic describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 15 - 30 - 35
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

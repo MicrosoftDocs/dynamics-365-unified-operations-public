@@ -5,7 +5,7 @@ title: Organizational Training Power BI content
 description: This topic describes the Dynamics 365 for Operations - Organizational Training Power BI content. It explains how to access the content pack, and describes the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-12-15 14 - 45 - 28
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

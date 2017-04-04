@@ -5,7 +5,7 @@ title: Take a trace using Trace parser
 description: This tutorial provides guidelines on how to take traces.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-12 20 - 41 - 00
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

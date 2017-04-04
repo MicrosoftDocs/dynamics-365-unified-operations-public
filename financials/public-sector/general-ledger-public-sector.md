@@ -5,7 +5,7 @@ title: General ledger in the public sector
 description: This topic describes the General ledger functionality that is available for the public sector.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-13 05 - 19 - 30
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -63,5 +63,5 @@ You can use derived financial hierarchies to collect and analyze posted transact
 See also
 --------
 
-[General ledger](/general-ledger/general-ledger.md)
+[General ledger](../general-ledger/general-ledger.md)
 

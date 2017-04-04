@@ -5,7 +5,7 @@ title: Components of Dynamics 365 for Operations - Retail
 description: This topic describes the various components that make up Microsoft Dynamics 365 for Operations - Retail.
 author: MargoC
 manager: AnnBe
-ms.date: 2016-10-31 16 - 42 - 06
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

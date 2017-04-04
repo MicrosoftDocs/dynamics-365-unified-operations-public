@@ -5,7 +5,7 @@ title: Set up taxes, tax regions, tax codes, and tax groups
 description: This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 19 - 10 - 05
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -114,9 +114,9 @@ However, if several tax codes share the same accounting data, you might want to 
 
 In most cases, when you create a list of tax codes to include in each tax group, you will include all the tax codes that share the same accounting information in a single tax group. Additionally, if a set of tax codes shares the same posting requirements, you can include them in a single tax group that you enable for posting definitions. A tax code can be included in multiple tax groups, provided that only one of the tax groups is enabled for posting definitions. For more information, see [Tax codes, tax groups, and posting definitions FAQ](noam-usa-tax-codes-tax-groups-definitions.md). 
 
-**Tip:** You can set up the transaction posting definitions so that some tax codes in the group use a different posting definition than the rest of the tax codes in the group. For more information, see [Tax codes, tax groups, and posting definitions FAQ.](noam-usa-tax-codes-tax-groups-definitions.md). 
+**Tip:** You can set up the transaction posting definitions so that some tax codes in the group use a different posting definition than the rest of the tax codes in the group. For more information, see [Tax codes, tax groups, and posting definitions FAQ](noam-usa-tax-codes-tax-groups-definitions.md). 
 
-After you create tax groups that are enabled for posting definitions, you can assign those tax groups to transaction posting definitions. For more information, see [Posting definitions in the public sector](/financials/public-sector/posting-definitions-public-sector).
+After you create tax groups that are enabled for posting definitions, you can assign those tax groups to transaction posting definitions. For more information, see [Posting definitions in the public sector](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/financials/public-sector/posting-definitions-public-sector.md).
 
 ## Next step
 The next step is to set up benefits and mandatory deductions. For more information, see [Benefit setup tasks](noam-usa-benefit-set-up-tasks.md).  
@@ -126,5 +126,5 @@ See also
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
 
-[Posting definitions in the public sector](/financials/public-sector/posting-definitions-public-sector)
+[Posting definitions in the public sector](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/financials/public-sector/posting-definitions-public-sector.md)
 

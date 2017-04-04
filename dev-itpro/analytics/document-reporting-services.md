@@ -5,7 +5,7 @@ title: Document Reporting Services overview
 description: This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 author: sericks007
 manager: AnnBe
-ms.date: 2016-03-21 14 - 30 - 43
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -52,7 +52,7 @@ The enhanced report viewing experience that Dynamics 365 for Operations provide
 [![Example of a report preview](./media/2_report.png)](./media/2_report.png)
 
 ## Service administration prerequisites
-The following table compares the service administration prerequisites for Microsoft Dynamics 365 for Operations 2012 and the current version of Dynamics 365 for Operations.
+The following table compares the service administration prerequisites for Microsoft Dynamics AX 2012 and the current version of Dynamics 365 for Operations.
 
 <table>
 <colgroup>

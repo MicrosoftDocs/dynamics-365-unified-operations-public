@@ -5,7 +5,7 @@ title: Use the Excel add-in
 description: This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. To open the entity data, you can start from either Excel or Microsoft Dynamics 365 for Operations.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 2017-01-19 15 - 09 - 43
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

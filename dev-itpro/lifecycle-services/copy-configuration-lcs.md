@@ -5,7 +5,7 @@ title: Copy a configuration
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-03 20 - 22 - 34
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

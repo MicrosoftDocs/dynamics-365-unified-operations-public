@@ -5,7 +5,7 @@ title: Configure expense management
 description: This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics AX. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-11 22 - 56 - 54
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

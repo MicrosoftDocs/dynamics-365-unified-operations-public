@@ -5,10 +5,10 @@ title: X++ operators
 description: This topic describes the operators supported in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-08-27 00 - 51 - 34
-ms.topic: 
+ms.date: 2017-04-04
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

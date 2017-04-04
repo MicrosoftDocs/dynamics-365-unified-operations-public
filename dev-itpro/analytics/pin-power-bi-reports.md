@@ -5,10 +5,10 @@ title: Pin Power BI reports to workspaces
 description: Microsoft Dynamics 365 for Operations uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces in Dynamics 365 for Operations to give your users an interactive data exploration experience.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-01-05 15 - 13 - 20
-ms.topic: 
+ms.date: 2017-04-04
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata

@@ -5,7 +5,7 @@ title: Cash and bank management home page
 description: You can use Cash and bank management to maintain the legal entity’s bank accounts and the financial instruments that are associated with those bank accounts. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-11 20 - 01 - 57
+ms.date: 2017-04-04
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -57,7 +57,7 @@ These instruments include deposit slips, checks, bills of exchange, and promisso
 -   [Vendor payments for a partial amount](../accounts-payable/vendor-payments-partial-amount.md)
 -   [Prepayment invoices and prepayments overview](../accounts-payable/prepayments-invoices-vs-prepayments.md)
 -   [Scenario: Settle a partial vendor payment and settle the final payment in full before the discount date](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Scenario: Settle a partial vendor payment before the discount date with a final payment after the discount date](/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Scenario: Settle a partial vendor payment before the discount date with a final payment after the discount date](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 -   [Scenario: Settle a partial vendor payment that has discounts on vendor credit notes](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 -   [Scenario: Settle a partial vendor payment that has multiple discount periods](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
 -   [Scenario: Take a discount that is more than the calculated discount for a vendor payment](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)

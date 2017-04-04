@@ -5,7 +5,7 @@ title: Initialize seed data in a new Retail environment
 description: This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Operations - Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-02-17 01 - 31 - 19
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

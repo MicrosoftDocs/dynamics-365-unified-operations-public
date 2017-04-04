@@ -5,7 +5,7 @@ title: Material substitution in manufacturing
 description: This topic describes how to substitute materials during the production process. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-03-23 19 - 04 - 15
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

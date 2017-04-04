@@ -5,7 +5,7 @@ title: Price simulation
 description: This article provides information about price simulation for quotations. Price simulation helps you to evaluate the effect of deductions on the future sales price during the quotation process, before you commit to a specific price.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-11-04 19 - 10 - 14
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

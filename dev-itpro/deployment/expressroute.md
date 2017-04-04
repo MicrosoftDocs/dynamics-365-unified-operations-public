@@ -5,7 +5,7 @@ title: Azure ExpressRoute and Dynamics 365 for Operations
 description: Customers can use Microsoft Azure ExpressRoute with Dynamics 365 for Operations to connect to their on-premises infrastructure. This topic provides the information that you need to get started with ExpressRoute.
 author: kfend
 manager: AnnBe
-ms.date: 2016-12-01 19 - 18 - 40
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Consolidation and elimination overview
 description: This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-01 17 - 03 - 56
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -90,4 +90,4 @@ The **Financial reporting** option is the solution. Organization hierarchies tha
 By using the **Export company balances** option to export from one instance and then using the **Consolidate with import** option on the other instance, you can consolidate the data.
 
 
-For more information, see [Currency revalution in a consolidation company](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+For more information, see [Currency revalution in a consolidation company](..\general-ledger\currency-revaluation-consolidation-company.md).

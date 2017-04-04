@@ -5,7 +5,7 @@ title: Create a new user on a development machine
 description: When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM). This article explains how to enable another user account as a developer on a development VM.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-02-06 00 - 43 - 04
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Set up payroll calculation frequencies
 description: This topic describes how to set up payroll calculation frequencies. Payroll calculation frequencies determine how often payroll contributions and deductions take place throughout the payroll process.
 author: rschloma
 manager: AnnBe
-ms.date: 2016-10-31 19 - 09 - 37
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

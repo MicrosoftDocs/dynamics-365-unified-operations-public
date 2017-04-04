@@ -5,7 +5,7 @@ title: Action search
 description: This article describes the action search functionality in Microsoft Dynamics 365 for Operations. Action search will help you find and run actions on a page.
 author: jasongre
 manager: AnnBe
-ms.date: 2016-03-08 19 - 35 - 39
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

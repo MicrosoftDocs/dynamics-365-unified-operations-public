@@ -5,7 +5,7 @@ title: Analyze store performance
 description: This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Operations data. 
 author: josaw1
 manager: AnnBe
-ms.date: 2016-03-01 20 - 59 - 53
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

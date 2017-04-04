@@ -5,7 +5,7 @@ title: Extend a Retail Server OData controller
 description: This article provides code that extends the CustomController class.
 author: kfend
 manager: AnnBe
-ms.date: 2016-02-06 00 - 48 - 15
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

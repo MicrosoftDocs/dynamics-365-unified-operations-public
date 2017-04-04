@@ -5,7 +5,7 @@ title: Import or manually create postal codes
 description: This article explains how to import and manually create postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Operations. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-01-21 17 - 15 - 40
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

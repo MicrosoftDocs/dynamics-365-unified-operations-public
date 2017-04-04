@@ -5,7 +5,7 @@ title: Production posting
 description: This article provides information about different types of postings in the production process.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18 - 31 - 53
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

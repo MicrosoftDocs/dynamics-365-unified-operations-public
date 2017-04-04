@@ -5,7 +5,7 @@ title: What's new or changed
 description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-13 04 - 48 - 13
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 
 This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Operations.
 
-To upgrade to the latest version, see [Process for upgrading to the latest Dynamics 365 for Operations update](/migration-upgrade/upgrade-latest-update.md).
+To upgrade to the latest version, see [Process for upgrading to the latest Dynamics 365 for Operations update](../migration-upgrade/upgrade-latest-update.md).
 <table>
 <colgroup>
 <col width="20%" />

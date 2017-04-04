@@ -5,7 +5,7 @@ title: Configure screen layouts for POS
 description: This topic provides information about screen layouts for the Microsoft Dynamics 365 for Operations - Retail point of sale (POS) experiences.
 author: josaw1
 manager: AnnBe
-ms.date: 2016-06-09 20 - 55 - 06
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

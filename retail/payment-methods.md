@@ -5,7 +5,7 @@ title: Payment methods
 description: Each payment type that a retailer accepts must be configured in Retail and commerce in Microsoft Dynamics 365 for Operations when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.
 author: MargoC
 manager: AnnBe
-ms.date: 2015-12-03 20 - 52 - 48
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

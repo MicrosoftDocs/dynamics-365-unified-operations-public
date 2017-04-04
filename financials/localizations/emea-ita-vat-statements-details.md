@@ -5,7 +5,7 @@ title: VAT statements details for Italy
 description: This topic explains how to set up a VAT statement for legal entities in Italy. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-02-07 20 - 05 - 56
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

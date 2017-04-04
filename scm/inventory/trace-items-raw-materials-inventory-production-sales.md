@@ -5,7 +5,7 @@ title: Item and raw material tracing in inventory, production, and sales
 description: This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-28 15 - 00 - 11
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Plan your chart of accounts
 description: This article provides information that will help you plan the chart of accounts for your organization.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-02 23 - 04 - 17
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

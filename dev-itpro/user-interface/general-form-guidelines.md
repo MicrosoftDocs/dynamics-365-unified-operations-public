@@ -5,7 +5,7 @@ title: General form guidelines
 description: This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 00 - 21 - 07
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

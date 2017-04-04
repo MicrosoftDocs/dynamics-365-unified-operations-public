@@ -5,7 +5,7 @@ title: Dimension entry control subpattern
 description: This article provides information about the Dimension Entry Control subpattern. This subpattern is used when you have a group or tab page that uses the Dimension Entry control (DEC). 
 author: jasongre
 manager: AnnBe
-ms.date: 2015-12-03 21 - 38 - 48
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

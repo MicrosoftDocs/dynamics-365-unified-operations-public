@@ -5,7 +5,7 @@ title: Analysis
 description: This topic describes the functionality available from the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) Analysis menu.
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-04 20 - 04 - 53
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -167,7 +167,7 @@ This command lets you create a schedule to defragment fragmented indexes. Follow
 | Some indexes retain a non-zero fragmentation percentage even after the defragmentation schedule is completed successfully. This is normal behavior. |
 
 ## Analysis dashboard (Archive database group)
-This command provides similar information for the archive database as the **Analysis dashboard** command in the **Production database** group provides for the production database. For detailed information, see the section "[Analysis dashboard (Production database group)](#AnalysisProduction)."
+This command provides similar information for the archive database as the **Analysis dashboard** command in the **Production database** group provides for the production database.
 Analysis details (Archive database group)
 
 This command provides similar information for the archive database as the Analysis details command in the Production database group provides for the production database. For detailed information, see [Analysis functionality in the Microsoft Dynamics AX Intelligent Data Management Framework workspace (IDMF)](analysis-functionality-idmf-workspace.md).

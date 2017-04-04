@@ -5,7 +5,7 @@ title: Modern Point of Sale (MPOS) and Cloud POS
 description: This page lists the MPOS and Cloud POS resources that are available in Dynamics 365 for Operations - Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 2015-12-08 21 - 09 - 56
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 dms.service: Dynamics365Operations

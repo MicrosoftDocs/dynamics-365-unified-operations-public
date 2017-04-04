@@ -5,7 +5,7 @@ title: Add links to your organization's legal terms and privacy statement
 description: This topic explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 for Operations.
 author: aneesmsft
 manager: AnnBe
-ms.date: 2017-01-19 15 - 06 - 18
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

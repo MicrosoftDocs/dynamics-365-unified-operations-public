@@ -3,9 +3,9 @@
 
 title: Regulatory certifications
 description: As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must include details about any regulatory certifications that the solution requires in order to be legally compliant for sale in the intended market. This article shows how information about certifications is used in the title of the feature.
-author: kfend
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2015-12-14 15 - 54 - 18
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
+# ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 27581
@@ -53,5 +53,5 @@ In the BPM business process library, certifications should be located under **AP
 -   APQC level 8.0 Manage Financial Resources (10009)
     -   PT-REG-Certification for Fiscal printers
 
-For more information about BPM, see <https://technet.microsoft.com/en-us/library/dn268623.aspx>.
+For more information about BPM, see [BPM flowcharts](../lifecycle-services/flowcharts-business-process-modeler.md).
 

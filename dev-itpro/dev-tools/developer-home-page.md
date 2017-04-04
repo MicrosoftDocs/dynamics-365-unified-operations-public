@@ -5,7 +5,7 @@ title: Developer home page
 description: This topic provides links to topics about development with Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2015-12-10 20 - 47 - 56
+ms.date: 2017-04-04
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -101,6 +101,7 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 ### Language support
 
 -   [Programming language support](programming-language-support.md)
+-   [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
 -   [Debugging X++ code](debug-xpp.md)
 -   [LINQ provider for use in C\#](linq-provider-c.md)
 -   [Authoring best practice rules](author-best-practice-rules.md)

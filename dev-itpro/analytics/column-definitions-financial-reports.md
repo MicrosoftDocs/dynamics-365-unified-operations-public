@@ -3,9 +3,9 @@
 
 title: Column definitions in financial reports
 description: This article provides information about column definitions. A column definition is a report component, or building block, that defines the contents of columns on a report. Like row definitions, basic column definitions can be used on multiple reports.
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-08-09 21 - 27 - 36
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 # ms.tgt_pltfrm: 
 ms.custom: 106601
@@ -324,9 +324,9 @@ The **Print Control** cell can contain codes that adjust the display or the prin
 4.  Select an option in the **Conditional print options** field. By default, **(none)** is selected. You can select only one conditional print code at a time.
 5.  Click **OK**.
 
-**Tip:** You can also enter the print codes directly in the **Print Control** cell. Separate multiple print control codes with a comma.
+> [!TIP]
+> You can also enter the print codes directly in the **Print Control** cell. Separate multiple print control codes with a comma.
 
-### 
 
 ## Column types
 The type of information that each column on a report includes is specified by the value in the **Column Type** row in the column definition. Each column definition must contain at least one description (**DESC**) column and one amount (**FD**, **WKS**, or **CALC**) column. **Note:** The column type codes don't apply to all accounting systems. If you select a type that isn't valid for your accounting system, that column is blank on the report.
@@ -511,7 +511,8 @@ A multiple-currency report can display amounts in the natural (local) currency, 
 -   **Currency Display** – Specify the type of currency (natural, functional, or reporting) that the transactions are displayed in. This functionality is sometimes referred to as currency translation. Currency translation is the ability to report general ledger amounts in a currency that might not be the functional currency of the company or the currency that the transaction was entered in.
 -   **Currency Filter** – Specify a currency filter. Only transactions that are entered in the selected currency are displayed on the report.
 
-**Note:** To create reports that use multiple currencies, you must select the **Include all reporting currencies** check box on the **Report** tab of the report definition. To determine a company’s functional currency, follow these steps.
+> [!NOTE]
+> To create reports that use multiple currencies, you must select the **Include all reporting currencies** check box on the **Report** tab of the report definition. To determine a company’s functional currency, follow these steps.
 
 1.  In Report Designer, on the **Company** menu, click **Companies**.
 2.  In the **Companies** dialog box, select a company, and then click **View**.
@@ -523,7 +524,8 @@ A multiple-currency report can display amounts in the natural (local) currency, 
 2.  Double-click the **Currency Display** cell in the appropriate **FD** column, and then select the option for displaying currency information: **Natural/originating currency**, **Functional currency from company information**, or the reporting currency.
 3.  Double-click the **Currency Filter** cell in the appropriate **FD** column, and then select the appropriate currency code in the list. Only transactions that are entered in this currency are displayed on the report.
 
-**Note:** The options that are described here might differ, depending on the ERP system. For more information, see your [Microsoft ERP system documentation](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
+> [!NOTE]
+> The options that are described here might differ, depending on the ERP system. For more information, see your [Microsoft ERP system documentation](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### Example for Currency Display and Currency Filter cells
 

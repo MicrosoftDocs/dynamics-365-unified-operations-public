@@ -5,7 +5,7 @@ title: Management Reporter -  The designer and web client
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 2016-03-08 22 - 25 - 02
+ms.date: 2017-04-04
 ms.topic: 
 ms.prod: 
 ms.service: 

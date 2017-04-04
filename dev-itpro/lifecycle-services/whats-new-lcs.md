@@ -5,7 +5,7 @@ title: What's new in Lifecycle Services
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-02 16 - 48 - 17
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -651,7 +651,6 @@ Below is a library that has been successfully indexed.
 **Process data package** 
 We have made significant performance improvements to the process data package creation experience. New Dynamics AX solutions creators can now add database backups to a solution package. 
 
-![7](https://msdnshared.blob.core.windows.net/media/2016/01/781024x663.png)
 
 See also
 --------

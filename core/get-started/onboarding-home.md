@@ -5,7 +5,7 @@ title: Onboarding to Microsoft Dynamics 365 for Operations
 description: This page points to resources that will help you onboard to Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15:19:40
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -34,4 +34,4 @@ To get started with Microsoft Dynamics 365 for Operations, you can pick a subscr
 The following resources provide an overview of the Lifecycle Services and how to work with your partner to get onboarded to Dynamics 365 for Operations.
 -   [Sign up for a subscription](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription)
 -   [Microsoft FastTrack for Dynamics 365 overview](fasttrack-dynamics-365-overview.md)
--   [Customer introduction to Lifecycle Services](/dynamics365/operations/dev-itpro/ifecycle-services/lcs-works-lcs)
+-   [Customer introduction to Lifecycle Services](/dynamics365/operations/dev-itpro/lifecycle-services/lcs-works-lcs)

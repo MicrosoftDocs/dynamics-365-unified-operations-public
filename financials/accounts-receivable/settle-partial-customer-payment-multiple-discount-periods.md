@@ -5,7 +5,7 @@ title: Settle a partial customer payment that has multiple discount periods
 description: This article shows how partial customer payments are settled when there are multiple discount periods.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-02 23 - 29 - 40
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

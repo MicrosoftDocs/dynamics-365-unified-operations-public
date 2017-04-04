@@ -5,7 +5,7 @@ title: Plan for public sector functionality
 description: This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics 365 for Operations.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-12-07 17 - 55 - 20
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -53,7 +53,7 @@ Budget analysis Budget analysis for revised budgets Budget analysis for actual e
 
 ### French regulatory options
 
-**Note** For information about French regulatory options, see [Public sector accounting in France](/localizations/europe/public-sector-accounting-france.md). The following pages are available only if the following conditions are met:
+**Note** For information about French regulatory options, see [Public sector accounting in France](/localizations/emea-fra-public-sector-accounting.md). The following pages are available only if the following conditions are met:
 
 -   The **Public sector** configuration key is selected.
 -   The **French regulatory** configuration subkey is selected.

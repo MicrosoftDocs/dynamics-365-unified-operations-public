@@ -5,7 +5,7 @@ title: Consolidated batch orders
 description: This article describes the concept of consolidated batch orders.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-07 09 - 17 - 20
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

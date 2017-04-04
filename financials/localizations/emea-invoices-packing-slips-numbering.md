@@ -5,7 +5,7 @@ title: Invoice and packing slip numbering for Latvia and Lithuania
 description: This topic explains how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-01-30 22 - 11 - 30
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -102,7 +102,7 @@ You can assign specific number sequences to invoices and packing slips that are 
 | Type           | Select the type of document to number: **Invoice** or **Packing slip**.                                                                         |
 | Auto numbering | Select this option to automatically assign a number to a document. You can manually select or clear this option for individual documents.       |
 
-For information about how to manually number invoices and packing slips, see [(EEU) Edit invoice ID on Sales orders](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=1162853&preview=true).
+For information about how to manually number invoices and packing slips, see [Edit invoice ID on Sales orders](emea-edit-invoice-id-sales-orders.md).
 
 ## Affected processes
 The headers of the following documents are updated with invoice and packing slip numbering:

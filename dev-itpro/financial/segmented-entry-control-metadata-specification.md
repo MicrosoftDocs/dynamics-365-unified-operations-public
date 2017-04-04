@@ -5,7 +5,7 @@ title: Segmented entry control metadata
 description: Describes the design-time metadata properties for Segmented Entry controls.
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-12 20 - 45 - 01
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -34,7 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Describes the design-time metadata properties for Segmented Entry controls.
 
-​The custom properties for the Segmented Entry control are found under the Controller group. Here is an example. \[caption id="attachment\_145451" align="alignnone" width="568"\][![SEC Property Sheet Example](./media/10.jpg)](./media/10.jpg) SEC Property Sheet Example\[/caption\] Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  See the table at the bottom of this article for more details.
+The custom properties for the Segmented Entry control are found under the Controller group. Here is an example. 
+
+[![SEC Property Sheet Example](./media/10.jpg)](./media/10.jpg) 
+
+Certain properties may be non-editable based on the Controller class that is selected. This is because only certain properties are relevant for each of the various controller classes.  See the table at the bottom of this article for more details.
 
 ##### Property details
 
@@ -52,17 +56,103 @@ Describes the design-time metadata properties for Segmented Entry controls.
 
   This table shows which properties are valid for each Controller type (marked with 'X' means valid).
 
-|                                   |                             |                                     |                               |                              |                                     |                                   |
-|-----------------------------------|-----------------------------|-------------------------------------|-------------------------------|------------------------------|-------------------------------------|-----------------------------------|
-|                                   | **​BudgetLedger-Dimension** | **​BudgetPlanning-LedgerDimension** | **​DimensionDynamic-Account** | **​LedgerDimension-Account** | **​LedgerDimension-DefaultAccount** | **​LedgerDimension-AccountAlias** |
-| Validate Blocked For Manual Entry | ​X                          | ​X                                  | ​X                            | ​X                           | ​X                                  | ​X                                |
-| ​Account Type Field               | ​                           | ​                                   | ​X                            | ​                            | ​                                   | ​                                 |
-| ​Is Default Account               | ​                           | ​                                   | ​X                            | ​                            | ​                                   | ​                                 |
-| ​Lock Main Account Segment        | ​                           | ​X                                  | ​X                            | ​X                           | X​                                  |                                   |
-| ​Posting Type                     | ​                           | ​X                                  | ​X                            | ​X                           | ​X                                  | ​X                                |
-| ​Include Total Accounts           | ​                           | ​                                   | ​X                            | ​                            | ​X                                  | ​                                 |
-| ​Include Financial Accounts       | ​                           | ​                                   | ​X                            | ​                            | ​X                                  | ​                                 |
+## Validate Blocked For Manual Entry 
 
+BudgetLedgerDimension: Yes
+
+BudgetPlanningLedgerDimension: Yes 
+
+DimensionDynamicAccount: Yes
+
+LedgerDimensionAccount: Yes
+
+LedgerDimensionDefaultAccount: Yes
+
+LedgerDimensionAccountAlias: Yes
+
+## Account Type Field     
+
+BudgetLedgerDimension: No
+
+BudgetPlanningLedgerDimension: No
+
+DimensionDynamicAccount: Yes
+
+LedgerDimensionAccount: No
+
+LedgerDimensionDefaultAccount​: No
+
+LedgerDimensionAccountAlias: No
+
+## Is Default Account     
+
+BudgetLedgerDimension: No
+
+BudgetPlanningLedgerDimension: No
+
+DimensionDynamicAccount: Yes
+
+LedgerDimensionAccount: No
+
+LedgerDimensionDefaultAccount​: No
+
+LedgerDimensionAccountAlias: No
+
+## Lock Main Account Segment        
+
+BudgetLedgerDimension: No
+
+BudgetPlanningLedgerDimension: Yes
+
+DimensionDynamicAccount: Yes
+
+LedgerDimensionAccount: Yes
+
+LedgerDimensionDefaultAccount: Yes
+
+LedgerDimensionAccountAlias: No
+
+## Posting Type 
+
+BudgetLedgerDimension: No
+
+BudgetPlanningLedgerDimension: Yes
+
+DimensionDynamicAccount: Yes
+
+LedgerDimensionAccount: Yes
+
+LedgerDimensionDefaultAccount​: Yes 
+
+LedgerDimensionAccountAlias: Yes
+
+## Include Total Accounts 
+
+BudgetLedgerDimension: No
+
+BudgetPlanningLedgerDimension: No
+
+DimensionDynamicAccount: Yes
+
+LedgerDimensionAccount: No
+
+LedgerDimensionDefaultAccount​: Yes
+
+LedgerDimensionAccountAlias: No
+
+## Include Financial Accounts       
+
+BudgetLedgerDimension: No
+
+BudgetPlanningLedgerDimension: No
+
+DimensionDynamicAccount: Yes
+
+LedgerDimensionAccount: No
+
+LedgerDimensionDefaultAccount​: Yes
+
+LedgerDimensionAccountAlias: No
  
 
 See also

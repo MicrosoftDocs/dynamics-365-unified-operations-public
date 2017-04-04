@@ -5,7 +5,7 @@ title: Where to start
 description: Start here to onboard quickly and learn the Microsoft Dynamics 365 for Operations UI.
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15 - 19 - 40
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -40,7 +40,7 @@ The following resources provide an overview of how to work with your partner to 
 - [Microsoft FastTrack for Dynamics 365 overview](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md) 
 - [Lifecycle Services (LCS) for Microsoft Dynamics 365 for Operations customers](../lifecycle-services/lcs-works-lcs.md) 
-- [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
+- [How customers who purchased Microsoft Dynamics 365 for Operations through a Cloud Service Provider can get the on-premises version of Dynamics AX 2012](../deployment/csp-download-customersource.md)
 
 ## User interface
 The following resources provide information about the Dynamics 365 for Operations user experience. 
@@ -74,8 +74,6 @@ Task Recorder is a Dynamics 365 for Operations tool that you can use to record 
 
 See also
 --------
-
-[Creating New Training Libraries for Dynamics 365 for Operations within Lifecycle Services using the Task Recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
 [New Task guides (February 2016)](new-task-guides-available-february-2016.md)
 

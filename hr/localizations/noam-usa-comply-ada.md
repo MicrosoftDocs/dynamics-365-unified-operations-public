@@ -5,7 +5,7 @@ title: Comply with the Americans with Disabilities Act
 description: This article describes features that can assist your organization in complying with the Americans with Disabilities Act (ADA). This information applies only to legal entities doing business in the United States.
 author: rschloma
 manager: AnnBe
-ms.date: 2015-09-10 15 - 08 - 58
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -56,5 +56,6 @@ Accommodations represent changes to work environments or business operations tha
 See also
 --------
 
-[Human resources](https://ax.help.dynamics.com/en/?post_type=incsub_wiki&p=197861&preview=true)
+[Human resources](../index.md)
+
 

@@ -5,7 +5,7 @@ title: System tables
 description: This wiki describes the system tables.
 author: RobinARH
 manager: AnnBe
-ms.date: 2016-07-27 16 - 39 - 02
+ms.date: 2017-04-04
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -205,7 +205,7 @@ The DataArea table contains a list of companies that have been created in the da
 | id           | String  | DataAreaId    |                  | ID for an area of data                                                                                                    |
 | isVirtual    | Enum    |               | boolean          |                                                                                                                           |
 | name         | String  | UserIdStr     |                  | Name                                                                                                                      |
-| Partition    | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition    | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId        | Int64   | RecId         |                  |                                                                                                                           |
 | recVersion   | Integer | RecVersion    |                  |                                                                                                                           |
 | timeZone     | Enum    |               | Timezone         |                                                                                                                           |
@@ -241,8 +241,8 @@ The DatabaseLog table stores configuration information for the SysDatabaseLog ta
 |-------------------|-------------|-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | domainId          | String      | DomainId          |                  | ID for the domain                                                                                                         |
 | logField          | Integer     | FieldId           |                  | ID for the field                                                                                                          |
 | logTable          | Integer     | TableId           |                  | ID for the table                                                                                                          |
@@ -290,8 +290,8 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 | accessTypeFkeyUse | Enum        |                   | AccessType       |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | domainId          | String      | DomainId          |                  | ID for the domain                                                                                                         |
 | elementName       | String      | UtilElementName   |                  | Name of the application element.                                                                                          |
 | groupId           | String      | UserGroupId       |                  | ID for the user group                                                                                                     |
@@ -326,9 +326,9 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_AccessRightsList Table](#del_accessrightslist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL-AccessRightsList Table
 
-## []()DEL\_CompanyDomainList
+## DEL_CompanyDomainList
 The CompanyDomainList table contains associations between the DomainInfo and DataArea tables. Security rights are granted per domain.
 
 ### Fields
@@ -338,8 +338,8 @@ The CompanyDomainList table contains associations between the DomainInfo and Dat
 | companyId         | String      | SelectableDataArea |                  | ID for the company you can select                                                                                         |
 | createdBy         | String      | CreatedBy          |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime    |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime   |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | domainId          | String      | DomainId           |                  | ID for the domain                                                                                                         |
 | modifiedBy        | String      | ModifiedBy         |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime   |                  |                                                                                                                           |
@@ -367,9 +367,9 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_CompanyDomainList Table](#del_companydomainlist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL_CompanyDomainList Table
 
-## []()DEL\_DomainInfo
+## DEL_DomainInfo
 Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
 
 ### Fields
@@ -399,9 +399,9 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_DomainInfo Table](#del_domaininfo)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL_DomainInfo Table
 
-## []()DEL\_UserGroupInfo
+## DEL_UserGroupInfo
 The UserGroupInfo table contains the list of available user groups.
 
 ### Fields
@@ -427,9 +427,9 @@ The UserGroupInfo table contains the list of available user groups.
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_UserGroupInfo Table](#del_usergroupinfo)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL_UserGroupInfo Table
 
-## []()DEL\_UserGroupList
+## DEL_UserGroupList
 The UserGroupList table contains the list of users associated with each user groups.
 
 ### Fields
@@ -438,8 +438,8 @@ The UserGroupList table contains the list of users associated with each user gro
 |-------------------|-------------|-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | groupId           | String      | UserGroupId       |                  | ID for the user group                                                                                                     |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -464,7 +464,7 @@ The UserGroupList table contains the list of users associated with each user gro
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_UserGroupList Table](#del_usergrouplist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL_UserGroupList Table
 
 ## []()ModelSecPolRuntimeEx
 The ModelSecPolRuntimeEx table stores the runtime metadata that is necessary to apply security policies.
@@ -546,16 +546,16 @@ The Partitions table contains the list of data partitions in the system.
 
 | Field             | Type        | Extended Type     | Enumeration Type | Description                                                                                                                             |
 |-------------------|-------------|-------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| createdBy         | String      | CreatedBy         |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS))               |
-| createdDateTime   | UtcDateTime | CreatedDateTime   |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS))               |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS))               |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS))               |
-| modifiedBy        | String      | ModifiedBy        |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS))               |
-| modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS))               |
-| name              | String      | UserIdStr         |                  | Name (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS))          |
-| PartitionKey      | String      | PartitionKey      |                  | Partition Key (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| RecId             | Int64       | RecId             |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS))               |
-| recVersion        | Integer     | RecVersion        |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS))               |
+| createdBy         | String      | CreatedBy         |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| createdDateTime   | UtcDateTime | CreatedDateTime   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| modifiedBy        | String      | ModifiedBy        |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| name              | String      | UserIdStr         |                  | Name (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))          |
+| PartitionKey      | String      | PartitionKey      |                  | Partition Key (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| RecId             | Int64       | RecId             |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
+| recVersion        | Integer     | RecVersion        |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS))               |
 
 ### Field Groups
 
@@ -594,14 +594,14 @@ The PrintJobHeader table contains information regarding the current print job
 | createdBy           | String      | CreatedBy        |                  |                                                                                                                           |
 | createdDateTime     | UtcDateTime | CreatedDateTime  |                  |                                                                                                                           |
 | dataAreaId          | String      | DataAreaId       |                  |                                                                                                                           |
-| dEL\_CreatedTime    | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime    | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | deviceName          | String      |                  |                  |                                                                                                                           |
 | format              | Enum        |                  | PrintFormat      |                                                                                                                           |
 | jobDescription      | String      |                  |                  |                                                                                                                           |
 | jobStatus           | Enum        |                  | PrintJobStatus   |                                                                                                                           |
 | jobType             | String      |                  |                  |                                                                                                                           |
 | numberOfPages       | Int         |                  |                  |                                                                                                                           |
-| Partition           | Int64       | Partition        |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition           | Int64       | Partition        |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | printedBy           | String      | UserId           |                  | ID for the user                                                                                                           |
 | printedDate         | date        |                  |                  |                                                                                                                           |
 | printedTime         | Int         |                  |                  |                                                                                                                           |
@@ -647,7 +647,7 @@ The PrintJobPages table contains information regarding the currently printing pa
 | pageContents     | Container |               |                  |                                                                                                                           |
 | pageNo           | Int       |               |                  |                                                                                                                           |
 | pagesHeaderRecId | Int64     | RecId         |                  | Unique ID for the record in the database                                                                                  |
-| Partition        | Int64     | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition        | Int64     | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId            | Int64     | RecId         |                  |                                                                                                                           |
 | recVersion       | Integer   | RecVersion    |                  |                                                                                                                           |
 
@@ -911,7 +911,7 @@ Rules for dynamically assigning users to role
 |---------------------------|-------------|---------------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | MembershipRuleDescription | String      | MembershipRuleDescription |                  | Description of the automatic role membership rule                                                                         |
 | MembershipRuleName        | String      | MembershipRuleName        |                  | Name of the automatic role membership rule                                                                                |
-| Partition                 | Int64       | Partition                 |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition                 | Int64       | Partition                 |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId                     | Int64       | RecId                     |                  |                                                                                                                           |
 | recVersion                | Integer     | RecVersion                |                  |                                                                                                                           |
 | RuleQuery                 | Container   |                           |                  |                                                                                                                           |
@@ -1164,9 +1164,9 @@ The SecuritySegregationOfDutiesConflict table stores information about segregati
 | AssignmentMode          | Enum        |                                    | RoleAssignmentMode            |                                                                                                                           |
 | createdBy               | String      | CreatedBy                          |                               |                                                                                                                           |
 | createdDateTime         | UtcDateTime | CreatedDateTime                    |                               |                                                                                                                           |
-| dEL\_CreatedTime        | Integer     | DEL\_CreatedTime                   |                               | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime        | Integer     | DEL\_CreatedTime                   |                               | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_ExistingTask       | Int64       | RecId                              |                               |                                                                                                                           |
-| dEL\_ModifiedTime       | Integer     | DEL\_ModifiedTime                  |                               | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_ModifiedTime       | Integer     | DEL\_ModifiedTime                  |                               | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_NewTask            | Int64       | RecId                              |                               |                                                                                                                           |
 | ExistingDuty            | Int64       | RecId                              |                               |                                                                                                                           |
 | ExistingRole            | Int64       | RecId                              |                               | Unique ID for the record in the database                                                                                  |
@@ -1176,7 +1176,7 @@ The SecuritySegregationOfDutiesConflict table stores information about segregati
 | NewDuty                 | Int64       | RecId                              |                               |                                                                                                                           |
 | NewRole                 | Int64       | RecId                              |                               | Unique ID for the record in the database                                                                                  |
 | NewTask                 | Int64       | RecId                              |                               | Unique ID for the record in the database                                                                                  |
-| Partition               | Int64       | Partition                          |                               | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition               | Int64       | Partition                          |                               | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | ReasonForOverride       | VarString   | SegregationOfDutiesOverrideComment |                               | Comment explaining the reason for overriding the segregation of duties violation                                          |
 | RecId                   | Int64       | RecId                              |                               |                                                                                                                           |
 | recVersion              | Integer     | RecVersion                         |                               |                                                                                                                           |
@@ -1547,7 +1547,7 @@ The SecurityUserRole table contains the user to role mappings.
 |------------------|-------------|---------------|----------------------|---------------------------------------------------------------------------------------------------------------------------|
 | AssignmentMode   | Enum        |               | RoleAssignmentMode   |                                                                                                                           |
 | AssignmentStatus | Enum        |               | RoleAssignmentStatus |                                                                                                                           |
-| Partition        | Int64       | Partition     |                      | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition        | Int64       | Partition     |                      | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId            | Int64       | RecId         |                      |                                                                                                                           |
 | recVersion       | Integer     | RecVersion    |                      |                                                                                                                           |
 | SecurityRole     | Int64       | RecId         |                      | Unique ID for the record in the database                                                                                  |
@@ -1589,7 +1589,7 @@ The SecurityUserRoleCondition table contains the list of companies that constrai
 |------------------|---------|---------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | ControllingKey   | int64   |               |                  |                                                                                                                           |
 | DataArea         | String  | DataAreaId    |                  | ID for an area of data                                                                                                    |
-| Partition        | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition        | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId            | Int64   | RecId         |                  |                                                                                                                           |
 | recVersion       | Integer | RecVersion    |                  |                                                                                                                           |
 | SecurityUserRole | Int64   | RecId         |                  | Unique ID for the record in the database                                                                                  |
@@ -1738,7 +1738,7 @@ The SqlStatistics table stores related database statistics for the user. This ta
 
 | Field             | Type        | Extended Type     | Enumeration Type | Description                                                                                                               |
 |-------------------|-------------|-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | indexId           | Integer     | IndexId           |                  | ID for the index                                                                                                          |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -1887,7 +1887,7 @@ The SysActiveTempTable table provides data about the temporary database tables t
 | Field            | Type        | Extended Type    | Enumeration Type | Description                                                                                                               |
 |------------------|-------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdDateTime  | UtcDateTime | CreatedDateTime  |                  |                                                                                                                           |
-| dEL\_CreatedTime | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | InstanceId       | String      | UtilElementName  |                  | Name of the application element.                                                                                          |
 | RecId            | Int64       | RecId            |                  |                                                                                                                           |
 | recVersion       | Integer     | RecVersion       |                  |                                                                                                                           |
@@ -1946,7 +1946,7 @@ The SysBreakpointList table contains a list of developers that have breakpoints 
 |------------------|-------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdBy        | String      | CreatedBy        |                  |                                                                                                                           |
 | createdDateTime  | UtcDateTime | CreatedDateTime  |                  |                                                                                                                           |
-| dEL\_CreatedTime | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime | Integer     | DEL\_CreatedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | machineName      | String      | NetworkDomain    |                  |                                                                                                                           |
 | RecId            | Int64       | RecId            |                  |                                                                                                                           |
 | recVersion       | Integer     | RecVersion       |                  |                                                                                                                           |
@@ -2037,7 +2037,7 @@ The SysCacheFlush table contains data that is used for synchronization of caches
 | createdBy       | String      | CreatedBy       |                  |                                                                                                                           |
 | createdDateTime | UtcDateTime | CreatedDateTime |                  |                                                                                                                           |
 | EventsContainer | Container   |                 |                  |                                                                                                                           |
-| Partition       | Int64       | Partition       |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition       | Int64       | Partition       |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId           | Int64       | RecId           |                  |                                                                                                                           |
 | recVersion      | Integer     | RecVersion      |                  |                                                                                                                           |
 | SessionId       | Int         |                 |                  |                                                                                                                           |
@@ -2071,7 +2071,7 @@ The SysClientSessions contains the data for the client sessions that are current
 |------------------|-------------|---------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | clientComputer   | String      | UserIdStr           |                  | Name                                                                                                                                    |
 | clientType       | Int         |                     |                  |                                                                                                                                         |
-| DataPartition    | String      | PartitionKey        |                  | Partition Key (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| DataPartition    | String      | PartitionKey        |                  | Partition Key (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_company     | String      |                     |                  |                                                                                                                                         |
 | DEL\_Login\_time | Int         |                     |                  |                                                                                                                                         |
 | helpLanguage     | String      | InstalledLanguageId |                  |                                                                                                                                         |
@@ -2124,16 +2124,16 @@ The SysConfig table contains license and configuration information.
 | configType        | Enum        |                   | ConfigType       |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | expiration        | String      |                   |                  |                                                                                                                           |
 | id                | Int         |                   |                  |                                                                                                                           |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
 | RecId             | Int64       | RecId             |                  |                                                                                                                           |
 | recVersion        | Integer     | RecVersion        |                  |                                                                                                                           |
-| shadowValue       | String      |                   |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| timestamp         | String      |                   |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| shadowValue       | String      |                   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| timestamp         | String      |                   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | userCount         | Int         |                   |                  |                                                                                                                           |
 | value             | String      |                   |                  |                                                                                                                           |
 
@@ -2161,8 +2161,8 @@ The SysEncryptionKey table stores the encryption key that is used to encrypt the
 |-------------------|-------------|-------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | Key               | Container   |                   |                  |                                                                                                                           |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -2246,7 +2246,7 @@ The SysLastValue table is storage for the usage data that is recorded as users n
 | designName  | String    | UtilElementName    |                  | Name of the application element.                                                                                          |
 | elementName | String    | UtilElementName    |                  | Name of the application element.                                                                                          |
 | isKernel    | Enum      |                    | boolean          |                                                                                                                           |
-| Partition   | Int64     | Partition          |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition   | Int64     | Partition          |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId       | Int64     | RecId              |                  |                                                                                                                           |
 | recordType  | Enum      |                    | UtilElementType  |                                                                                                                           |
 | recVersion  | Integer   | RecVersion         |                  |                                                                                                                           |
@@ -2942,12 +2942,12 @@ The SysRecordLevelSecurity table contains all the record level security restrict
 | companyId         | String      | SelectableDataArea |                  | ID for the company you can select                                                                                         |
 | createdBy         | String      | CreatedBy          |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime    |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime   |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime   |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_groupId      | String      | UserGroupId        |                  | ID for the user group                                                                                                     |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | modifiedBy        | String      | ModifiedBy         |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime   |                  |                                                                                                                           |
-| Partition         | Int64       | Partition          |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition         | Int64       | Partition          |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId             | Int64       | RecId              |                  |                                                                                                                           |
 | recVersion        | Integer     | RecVersion         |                  |                                                                                                                           |
 | restriction       | Container   |                    |                  |                                                                                                                           |
@@ -3083,7 +3083,7 @@ The TableCollectionList table stores the mapping between table collections and v
 
 | Field           | Type    | Extended Type   | Enumeration Type | Description                                                                                                               |
 |-----------------|---------|-----------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Partition       | Int64   | Partition       |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition       | Int64   | Partition       |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId           | Int64   | RecId           |                  |                                                                                                                           |
 | recVersion      | Integer | RecVersion      |                  |                                                                                                                           |
 | tableCollection | String  | UtilElementName |                  | Name of the application element.                                                                                          |
@@ -3201,7 +3201,7 @@ The UserDataAreaFilter table contains a list of selectable companies for a user.
 | Field      | Type    | Extended Type | Enumeration Type | Description                                                                                                               |
 |------------|---------|---------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | DataArea   | String  | DataAreaId    |                  | ID for an area of data                                                                                                    |
-| Partition  | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition  | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId      | Int64   | RecId         |                  |                                                                                                                           |
 | recVersion | Integer | RecVersion    |                  |                                                                                                                           |
 | User       | String  | UserId        |                  | ID for the user                                                                                                           |
@@ -3246,7 +3246,7 @@ The UserInfo table contains a list of users and their active directory and defau
 | credentialRecId           | int64   |                     |                      |                                                                                                                           |
 | debuggerPopup             | Int     |                     |                      |                                                                                                                           |
 | debugInfo                 | Int     |                     |                      |                                                                                                                           |
-| defaultPartition          | Enum    |                     | boolean              | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| defaultPartition          | Enum    |                     | boolean              | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | DEL\_\_unused1            | String  |                     |                      |                                                                                                                           |
 | DEL\_\_unused2            | String  |                     |                      |                                                                                                                           |
 | DEL\_defaultModelId       | Int     |                     |                      |                                                                                                                           |
@@ -3263,7 +3263,7 @@ The UserInfo table contains a list of users and their active directory and defau
 | formFontSize              | Int     |                     |                      |                                                                                                                           |
 | garbagecollectlimit       | Int     |                     |                      |                                                                                                                           |
 | generalInfo               | Int     |                     |                      |                                                                                                                           |
-| globalExcelExportFilePath | String  |                     |                      | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| globalExcelExportFilePath | String  |                     |                      | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | globalExcelExportLocation | Int     |                     |                      |                                                                                                                           |
 | globalExcelExportMode     | Int     |                     |                      |                                                                                                                           |
 | globalFormOpenMode        | Int     |                     |                      |                                                                                                                           |
@@ -3281,7 +3281,7 @@ The UserInfo table contains a list of users and their active directory and defau
 | networkAlias              | String  | NetworkAlias        |                      |                                                                                                                           |
 | networkDomain             | String  | NetworkDomain       |                      |                                                                                                                           |
 | notifyTimeZoneMismatch    | Enum    |                     | boolean              |                                                                                                                           |
-| Partition                 | Int64   | Partition           |                      | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition                 | Int64   | Partition           |                      | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | preferredCalendar         | Enum    |                     | PreferredCalendar    |                                                                                                                           |
 | PreferredLocale           | String  | PreferredLocale     |                      |                                                                                                                           |
 | preferredTimeZone         | Enum    |                     | Timezone             |                                                                                                                           |
@@ -3348,7 +3348,7 @@ The UserInfoStartupModel table holds the preferred startup model for each layer 
 |------------|---------|---------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Layer      | Enum    |               | UtilEntryLevel   |                                                                                                                           |
 | ModelId    | Int64   | ModelRecid    |                  | The ID of the model.                                                                                                      |
-| Partition  | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition  | Int64   | Partition     |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId      | Int64   | RecId         |                  |                                                                                                                           |
 | recVersion | Integer | RecVersion    |                  |                                                                                                                           |
 | UserId     | String  | UserGroupId   |                  | ID for the user group                                                                                                     |
@@ -3390,8 +3390,8 @@ The UtilElements table contains the application that is shown in the AOT.
 | code              | Container   |                   |                  |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
 | name              | String      | UtilElementName   |                  | Name of the application element.                                                                                          |
@@ -3430,8 +3430,8 @@ The UtilElementsOld table contains the application model stored in the applicati
 | code              | Container   |                   |                  |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
 | name              | String      | UtilElementName   |                  | Name of the application element.                                                                                          |
@@ -3466,8 +3466,8 @@ The UtilIdElements table contains the application model shown in the AOT.
 | code              | Container   |                   |                  |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | id                | Int         |                   |                  |                                                                                                                           |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -3507,8 +3507,8 @@ The UtilIdElementsOld table contains the application model stored in the applica
 | code              | Container   |                   |                  |                                                                                                                           |
 | createdBy         | String      | CreatedBy         |                  |                                                                                                                           |
 | createdDateTime   | UtcDateTime | CreatedDateTime   |                  |                                                                                                                           |
-| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
-| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| dEL\_CreatedTime  | Integer     | DEL\_CreatedTime  |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
+| dEL\_ModifiedTime | Integer     | DEL\_ModifiedTime |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | id                | Int         |                   |                  |                                                                                                                           |
 | modifiedBy        | String      | ModifiedBy        |                  |                                                                                                                           |
 | modifiedDateTime  | UtcDateTime | ModifiedDateTime  |                  |                                                                                                                           |
@@ -3583,7 +3583,7 @@ The VirtualDataAreaList table stores the mapping between real companies and virt
 | Field           | Type    | Extended Type      | Enumeration Type | Description                                                                                                               |
 |-----------------|---------|--------------------|------------------|---------------------------------------------------------------------------------------------------------------------------|
 | id              | String  | SelectableDataArea |                  | ID for the company you can select                                                                                         |
-| Partition       | Int64   | Partition          |                  | (This field applies only to the following version(s): Microsoft Dynamics 365 for Operations 2012 R3, Microsoft Dynamics 365 for Operations 2012 R2 (SYS)) |
+| Partition       | Int64   | Partition          |                  | (This field applies only to the following version(s): Microsoft Dynamics AX 2012 R3, Microsoft Dynamics AX 2012 R2 (SYS)) |
 | RecId           | Int64   | RecId              |                  |                                                                                                                           |
 | recVersion      | Integer | RecVersion         |                  |                                                                                                                           |
 | virtualDataArea | String  | VirtualDataArea    |                  | ID for a virtual company                                                                                                  |

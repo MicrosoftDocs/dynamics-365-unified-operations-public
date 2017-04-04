@@ -5,7 +5,7 @@ title: Install the Security Development Tool (AX 2012)
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2015-12-04 23 - 30 - 27
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

@@ -5,7 +5,7 @@ title: Resource capabilities
 description: This article provides information about resource capabilities. A capability is the ability of an operations resource to perform a particular activity. The article explains how capabilities and related concepts, such as proficiency level and priority, are used to select appropriate resources for an activity.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-01-22 12 - 28 - 10
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

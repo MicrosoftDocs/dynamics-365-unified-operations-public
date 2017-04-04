@@ -5,7 +5,7 @@ title: Derived financial hierarchies in the public sector
 description: This article describes the derived financial hierarchies functionality that is available for the public sector. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2015-12-08 18 - 59 - 20
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

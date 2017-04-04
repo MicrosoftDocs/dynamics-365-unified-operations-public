@@ -5,7 +5,7 @@ title: Product-related translations FAQ
 description: This topic describes how to manage translations for products, product dimension values, and product attributes. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-10-07 08 - 37 - 18
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -96,7 +96,6 @@ A customer wants to buy some small, red T-shirts and the name of the T-shirt mus
 <tr class="odd">
 <td>To set the preferred language of a customer, follow these steps:
 <ol>  
-<li>  </li>
 <li>Click <strong>Sales and marketing</strong> &gt; <strong>Common</strong> &gt; <strong>Customers</strong> &gt; <strong>All</strong> <strong>customers</strong>.</li>
 <li>Double-click a customer to open the <strong>Customers</strong> page. On the <strong>General</strong> tab, in the <strong>Language</strong> field, select the <strong>language</strong>.</li>
 </ol></td>

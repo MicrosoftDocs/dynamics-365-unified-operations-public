@@ -5,7 +5,7 @@ title: Add BI to workspaces
 description: In this tutorial, you’ll add BI controls such as KPI tiles to an existing workspace. 
 author: sericks007
 manager: AnnBe
-ms.date: 2015-12-12 19 - 09 - 49
+ms.date: 2017-04-04
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -384,7 +384,7 @@ To work with the sample, you must install the provided demo data.
 
 1.  Open Internet Explorer, and go to your instance base URL.
     -   In the cloud environment, the base URL is obtained from LCS
-    -   On a local VM, the base URL is [https://usnconeboxax1aos.cloud.onebox.dynamics.com](https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/).
+    -   On a local VM, the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com.
 
 2.  Sign in.
 3.  On the dashboard, scroll to the right, and in the **Fleet Management** section, click the **Fleet setup** tile.

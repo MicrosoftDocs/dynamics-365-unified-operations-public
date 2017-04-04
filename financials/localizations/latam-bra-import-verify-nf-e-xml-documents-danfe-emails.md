@@ -5,10 +5,10 @@ title: Import and verify NF-e XML documents and DANFE files for Brazil
 description: This topic answers questions about the process for importing and verifying Nota fiscal eletrônica (NF-e) XML documents and Documento auxiliar da Nota fiscal eletrônica (DANFE) that you receive in emails.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-02-03 16 - 39 - 29
-ms.topic: 
+ms.date: 2017-04-04
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
