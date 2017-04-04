@@ -145,7 +145,7 @@ The following sections list resources by country/region.
 -   [Set up signers for print forms](/dynamics365/operations/financials/localizations/emea-eeu-set-up-signers-for-printing-forms)
 -   [Split periods in periodic journals](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [Update how amounts are displayed on reports and documents](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)
--   [VAT reporting for Europe](/dynamics365/operations/financials/localizations/emea-vat-reporting](
+-   [VAT reporting for Europe](/dynamics365/operations/financials/localizations/emea-vat-reporting)
 -   [View transactions on settlement](/dynamics365/operations/financials/localizations/emea-transactions-settlement-form)
 
 ### France
@@ -254,13 +254,13 @@ The following sections list resources by country/region.
 ### Spain
 
 -   [Spanish bill of exchange options](/dynamics365/operations/financials/localizations/emea-esp-spanish-bill-of-exchange-options)
--   [Cash discount is applied in the invoice parameter](/dynamics365/operations/financials/localizations/emea-cash-discount-applied-invoice)
+-   [Cash discount is applied in the invoice parameter](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
 -   [Use fiscal data from the invoice account](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
 -   [Fixed asset revaluation groups](/dynamics365/operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
 -   [One-time customers](/dynamics365/operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
 -   [Spanish promissory note options](/dynamics365/operations/financials/localizations/emea-esp-spanish-promissory-note-options)
 -   [Sales and purchase cycles](/dynamics365/operations/financials/localizations/emea-esp-sales-purchase-cycle)
--   [Special entries and opening sheets](/dynamics365/operations/financials/localizations/emea-opening-sheets)
+-   [Special entries and opening sheets](/dynamics365/operations/financials/localizations/emea-esp-opening-sheets-spain)
 
 ### Sweden
 
