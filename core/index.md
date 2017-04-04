@@ -61,7 +61,7 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
   <li><a href="human-resources/performance-management-overview.md">Employee training</a></li>
   <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
   <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
-  <li><a href="human-resources/localizations/noam-us-payroll.md">US features</a></li>
+  <li><a href="human-resources/localizations/noam-usa-payroll.md">US features</a></li>
 </ul></td>
   <td>
   <p>Retail</p>
