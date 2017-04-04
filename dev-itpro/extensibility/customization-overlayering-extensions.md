@@ -5,7 +5,7 @@ title: Customize with extensions and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -86,7 +86,7 @@ Events are raised as preceding and succeeding operations around the base methods
 
 ### Plug-ins
 
-Plug-ins are extension points that are defined by the base application. By using a class-factory pattern, plug-ins enable you to replace the base functionality. You can see how to implement a plug-in in the wiki tutorial, [Customize model elements using extensions](customize-model-elements-extensions.md).
+Plug-ins are extension points that are defined by the base application. By using a class-factory pattern, plug-ins enable you to replace the base functionality. You can see how to implement a plug-in in the tutorial, [Customize model elements using extensions](customize-model-elements-extensions.md).
 
 ### Class Extensions
 

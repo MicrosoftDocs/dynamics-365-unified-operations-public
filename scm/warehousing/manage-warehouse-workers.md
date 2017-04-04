@@ -5,7 +5,7 @@ title: Manage warehouse workers
 description: This article describes how you can use Microsoft Dynamics AX to help control and monitor the work that's carried out by employees in your warehouses.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Version control, metadata search, and navigation
 description: This tutorial will walk you through configuring Visual Studio Team Systems (previously known as Visual Studio Online) to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -57,7 +57,7 @@ Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Online. 
 
 ### Create a Visual Studio Online team project
 
-If you already have a Visual Studio Online account, go to your account using Internet Explorer. This wiki article uses **.visualstudio.com** as the example URL for illustration purposes.
+If you already have a Visual Studio Online account, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
 
 1.  Go to http://.visualstudio.com.
 2.  Under **Recent projects & teams**, click **New** to create a new project. 

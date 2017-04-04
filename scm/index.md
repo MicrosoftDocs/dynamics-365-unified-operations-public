@@ -5,7 +5,7 @@ title: Supply chain management home page
 description: This page points to resources that will help you use the Microsoft Dynamics 365 for Operations - Supply Chain management more effectively. 
 author: yuyus
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

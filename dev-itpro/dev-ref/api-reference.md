@@ -2,10 +2,10 @@
 # required metadata
 
 title: API, class, and table reference
-description: This topic describes where to find API documentation in Visual Studio and on the wiki.
+description: This topic describes where to find API documentation in Visual Studio and on the Microsoft docs site.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # API, class, and table reference
 
-This topic describes where to find API documentation in Visual Studio and on the wiki.
+This topic describes where to find API documentation in Visual Studio and on the Microsoft docs site.
 
 Application classes and tables
 ------------------------------
@@ -55,9 +55,9 @@ Application tables are being similar to application classes, but with the follo
 All application classes are under Application Explorer &gt; Classes. Every application class has the constructor method named `new`, even if the class has no new node in the AOT. If the class has no explicit new node, the implicit `new` method is public. A design pattern that is sometimes used in the application classes is to declare the explicit `new` constructor method as `private`. Then a `public static` method is added to call the `new` method. The static method can restrict or control the call the `new` method based on various conditions, if necessary.
 
 ## System classes and tables
-### System API, class, and table documentation is on the Help wiki
+### System API, class, and table documentation is on the Microsoft docs site
 
-Documentation for the classes and functions that are listed under **System Documentation** in Application Explorer is available on the Help wiki.
+Documentation for the classes and functions that are listed under **System Documentation** in Application Explorer is available on the Microsoft docs site.
 
 ## X++ compiletime functions
 [X++ compile-time functions](xpp-compile-time-functions.md)

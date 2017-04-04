@@ -5,7 +5,7 @@ title: Product configuration models overview
 description: This article defines terms and concepts that are relevant to product configuration models. Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -79,7 +79,7 @@ If the attribute type is <strong>Boolean</strong>, <strong>Integer</strong> with
 <td>Constraints</td>
 <td>Constraints describe the restrictions of the product model configuration. Constraints are used to guarantee that only valid values are selected when a product is being configured. Constraints can be either expression constraints or table constraints:
 <ul>
-<li>Expression constraints can be used only for the component that they are tied to. The expression constraints for a component can reference attributes of the component's subcomponents. The Product configuration solver is used to solve the constraints, and you must use the solver syntax when you write the constraints. For more information, see the wiki link about expression constraints and table constraints.</li>
+<li>Expression constraints can be used only for the component that they are tied to. The expression constraints for a component can reference attributes of the component's subcomponents. The Product configuration solver is used to solve the constraints, and you must use the solver syntax when you write the constraints. For more information, see the topic link about expression constraints and table constraints.</li>
 <li>Table constraints must be defined before they can be applied to a component in a product configuration model. Table constraints can be either user-defined or system-defined. A user-defined table constraint is a type of matrix that can be used to describe the set of combinations for the attribute values that are defined by attribute types. For example, if speakers are produced, the matrix for a user-defined table constraint might have columns for the speaker finish and grill.</li>
 </ul>
 <strong>Example</strong> Speakers are available in four finishes: Black, Oak, Rosewood, and White. The speakers can have one of three front grills: Black, Metal, or White. The Black finish is available for all grills, but the other finishes are limited to specific grills. The following table shows an example of the information that is displayed on the <strong>Allowed combinations</strong> tab on the <strong>Edit table constraint</strong> page.

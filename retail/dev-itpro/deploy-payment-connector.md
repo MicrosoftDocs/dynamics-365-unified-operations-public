@@ -5,7 +5,7 @@ title: Deploy a payment connector
 description: This topic describes how to deploy a payment connector package to the appropriate components of Microsoft Dynamics 365 for Operations. 
 author: MargoC
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -83,7 +83,7 @@ A deployable package is an asset that can be consumed by the LCS deployment serv
 5.  Click **Upload**.
 6.  Select the zipped package, upload it, and then click **Confirm**.
 
-After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](\dev-itpro\deployment\apply-deployable-package-system.md).
+After you've uploaded your deployable packages to the LCS asset library, you can deploy them to your environments through the LCS portal. After you've validated your deployment in your sandbox environment, you can create a service request to deploy it to your production environment. For more information, see [Apply a deployable package](/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system).
 
 #### Download and run installers on client computers
 

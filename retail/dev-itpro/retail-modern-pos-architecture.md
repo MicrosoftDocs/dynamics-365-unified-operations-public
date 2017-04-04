@@ -2,10 +2,10 @@
 # required metadata
 
 title: Retail Modern POS architecture
-description: This wiki describes the POS topology.
+description: This topic describes the POS topology.
 author: robinr
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail Modern POS architecture
 
-This wiki describes the POS topology.
+This topic describes the POS topology.
 
 Retail Modern POS topology
 --------------------------

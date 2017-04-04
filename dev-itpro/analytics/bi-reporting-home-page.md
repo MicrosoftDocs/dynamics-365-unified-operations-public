@@ -5,7 +5,7 @@ title: BI &amp; reporting home page
 description: This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations

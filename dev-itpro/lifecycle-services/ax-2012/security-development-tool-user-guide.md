@@ -5,7 +5,7 @@ title: Security Development Tool (AX 2012)
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -49,7 +49,7 @@ See also
 
 [Install the Security Development Tool (AX 2012)](install-security-development-tool.md)
 
-[Define or edit entry point permissions (AX 2012)](/define-edit-entry-point-permissions.md)
+[Define or edit entry point permissions (AX 2012)](define-edit-entry-point-permissions.md)
 
 [Record entry points in Microsoft Dynamics AX Enterprise Portal](record-entry-points-enterprise-portal.md)
 

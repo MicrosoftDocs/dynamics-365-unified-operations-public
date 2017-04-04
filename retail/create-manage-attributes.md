@@ -5,7 +5,7 @@ title: Create and manage attributes
 description: This article describes attributes in Microsoft Dynamics 365 for Operations. Attributes let you describe a product and its characteristics through user-defined fields.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -38,110 +38,28 @@ Attributes let you describe a product and its characteristics through user-defin
 
 #### Examples
 
-Category
+| Category   | Attribute                | Permissible values          | Default value |
+|------------|--------------------------|-----------------------------|---------------|
+| TV & Video | Brand                    | Any valid Brand value       | None          |
+| TV         | Screen Size              | 20″–80″                     | None          |
+| TV         | Vertical Resolution      | 480i, 720p, 1080i, or 1080p | 1080p         |
+| TV         | Screen Refresh Rate      | 60hz, 120hz, or 240hz       | 60hz          |
+| TV         | HDMI Inputs              | 0–10                        | 3             |
+| TV         | DVI Inputs               | 0–10                        | 1             |
+| TV         | Composite Inputs         | 0–10                        | 2             |
+| TV         | Component Inputs         | 0–10                        | 1             |
+| LCD        | 3D Ready                 | Yes or No                   | Yes           |
+| LCD        | 3D Enabled               | Yes or No                   | No            |
+| Plasma     | Operating Temp From      | 32–110 degrees              | 32            |
+| Plasma     | Operating Temp To        | 32–110 degrees              | 100           |
+| Projection | Projection Tube Warranty | 6, 12, or 18 months         | 12            |
+| Projection | # of Projection Tubes    | 1–5                         | 3             |
 
-Attribute
-
-Permissible values
-
-Default value
-
-TV & Video
-
-Brand
-
-Any valid **Brand** value
-
-None
-
-TV
-
-Screen Size
-
-**20"**–**80"**
-
-None
-
-Vertical Resolution
-
-**480i**, **720p**, **1080i**, or **1080p**
-
-**1080p**
-
-Screen Refresh Rate
-
-**60hz**, **120hz**, or **240hz**
-
-**60hz**
-
-HDMI Inputs
-
-**0**–**10**
-
-**3**
-
-DVI Inputs
-
-**0**–**10**
-
-**1**
-
-Composite Inputs
-
-**0**–**10**
-
-**2**
-
-Component Inputs
-
-**0**–**10**
-
-**1**
-
-LCD
-
-3D Ready
-
-**Yes** or **No**
-
-**Yes**
-
-3D Enabled
-
-**Yes** or **No**
-
-**No**
-
-Plasma
-
-Operating Temp From
-
-**32**–**110** degrees
-
-**32**
-
-Operating Temp To
-
-**32**–**110** degrees
-
-**100**
-
-Projection
-
-Projection Tube Warranty
-
-**6**, **12**, or **18** months
-
-**12**
-
-\# of Projection Tubes
-
-**1**–**5**
-
-**3**
 
 ## Attribute type
-  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Attributes are based on attribute types. Attribute types identify the type of data that can be entered for a specific attribute. Currently, Microsoft Dynamics 365 for Operations supports the following attribute types:
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
+  
+Attributes are based on attribute types. Attribute types identify the type of data that can be entered for a specific attribute. Currently, Microsoft Dynamics 365 for Operations supports the following attribute types:
 
 -   **Currency** – This attribute type supports currency values. It can be bounded (that is, it can support a value range), or it can be left open.
 -   **DateTime** – This attribute type supports date and time values. It can be bounded (that is, it can support a value range), or it can be left open.

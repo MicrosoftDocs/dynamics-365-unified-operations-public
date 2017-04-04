@@ -5,7 +5,7 @@ title: Install a metadata hotfix
 description: This topic will guide you through installing an Application Metadata hotfix on your development environment.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

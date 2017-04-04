@@ -5,7 +5,7 @@ title: User interface development home page
 description: This topic contains links to topics about developing user interface elements.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -60,7 +60,7 @@ The form metamodel continues to be used to define controls and application logic
 -   [Sizing for input controls and grid columns](sizing-input-controls-grid-columns.md)
 -   [Check box support in tree controls](check-box-tree-controls.md)
 -   [Filtering](filtering.md)
--   [Window management](\core\get-started\window-management)
+-   [Window management](/dynamics365/operations/get-started/window-management)
 -   [Form statistics addin (Office Mix)](https://mix.office.com/watch/1kuwpf3ooohty)
 -   [Code migration - context menus](..\migration-upgrade\code-migration-context-menus.md)
 -   [Code migration - mouse double click](..\migration-upgrade\code-migration-double-click.md)

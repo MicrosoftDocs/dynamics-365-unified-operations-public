@@ -5,7 +5,7 @@ title: Procurement and sourcing in the public sector
 description: This overview introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -51,7 +51,7 @@ Create codes and special messages for confirming purchase orders. A confirming p
 > [!NOTE]
 > This also applies to Accounts payable.
 
--   [Public sector accounting in France](/localizations/emea-fra-public-sector-accounting.md) 
+-   [Public sector accounting in France](../localizations/emea-fra-public-sector-accounting.md) 
 
 For French organizations, additional steps may be required for the public sector.
 
@@ -139,6 +139,6 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 
  
 
-For more information, see [Procurement and sourcing](/dynamics365/operations/scm/procurement/procurement-sourcing-overview) and 
+For more information, see [Procurement and sourcing](/dynamics365/operations/supply-chain/procurement/procurement-sourcing-overview) and 
 [Accounts payable in the public sector](accounts-payable-public-sector.md).
 

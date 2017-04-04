@@ -5,7 +5,7 @@ title: Microsoft FastTrack for Dynamics 365 overview
 description: Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success.  
 author: margoc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -85,7 +85,7 @@ The Kickoff workshop is designed to initiate FastTrack engagements and provide i
 -   Engagement scope, schedule and adoption targets
 -   Responsibilities among customer, partner, and Microsoft FastTrack engineering team
 -   Explanation on how services are delivered, where and when to seek help from Microsoft FastTrack engineering team
--   Introduction to Dynamics Lifecycle Service (LCS) and Dynamics 365 for Operations Help Wiki
+-   Introduction to Dynamics Lifecycle Service (LCS) and Dynamics 365 for Operations Microsoft docs site
 -   Pre-activation checklist
 -   Environment planning
 -   Regular touchpoint schedule

@@ -5,7 +5,7 @@ title: Data entities and packages framework
 description: This topic provides information about using data entities and data entity packages in Microsoft Dynamics 365 for Operations. 
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

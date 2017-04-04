@@ -5,7 +5,7 @@ title: Create purchase orders
 description: This article describes the process and options when you manually create a purchase order.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -71,7 +71,7 @@ Sometimes, you might want to divide the quantity that you’ve ordered, so that 
 Charges can be automatically added to PO lines, if automatic charges have been set up for the vendor or vendor charge group, and for the item or item charge group. However, more typically, charges are added manually at the order line level. To add a charge, open the **Maintain charges** page by using the **Maintain charges** action on the **Financials** menu in the **Lines** view. The advantage of adding charges directly at the order line level is that the charge can be allocated as an inventory cost. To set up charge codes to account product cost, use the **Item** debit option. These types of charges must be allocated from the PO header to the lines before the order can be confirmed. For example, you might want to allocate charges based on the quantity on each line. The charge category also affects how charges are accounted. For example, fixed charges specify a fixed amount, and percent charges are calculated as a percentage of the net amount for the order line. POs can be assigned to a load, and the load might include an estimate of the expected expense for the transportation cost. You can allocate this expense from the load back to the PO lines.
 
 ## Purchase order actions
-After you’ve added the header and lines to the PO, you must often complete additional steps before the order is ready to be confirmed. Because so many options are available, you might find it helpful to use [Action search](/dynamics365/operations/action-search) to find the relevant menu item.  
+After you’ve added the header and lines to the PO, you must often complete additional steps before the order is ready to be confirmed. Because so many options are available, you might find it helpful to use [Action search](/dynamics365/operations/get-started/action-search) to find the relevant menu item.  
 
 You can configure products on the order so that they have supplementary items. Supplementary items are products that must or can be bought together with other products. Supplementary products might be added free of charge as accompanying products, or you may be able to decide whether to add them to the order or not. You can review the supplementary items after each order line that is added. However, you will probably find it more convenient to review and add relevant supplementary items for all the order lines by using the **Supplementary items** page, which you can open from the Action Pane.  
 

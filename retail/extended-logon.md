@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set up extended logon functionality for Cloud POS and MPOS
-description: This wiki covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).
+description: This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).
 author: josaw1
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up extended logon functionality for Cloud POS and MPOS
 
-This wiki covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).
+This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).
 
 Setting up extended logon
 =========================

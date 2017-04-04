@@ -5,7 +5,7 @@ title: Accounts receivable home page
 description: Use Accounts receivable to track customer invoices and incoming payments.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations

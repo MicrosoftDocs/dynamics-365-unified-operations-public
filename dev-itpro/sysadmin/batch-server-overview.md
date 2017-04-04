@@ -5,7 +5,7 @@ title: Batch server overview
 description: This article describes batch processing and batch servers, and how to plan for their use.
 author: maertenm
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

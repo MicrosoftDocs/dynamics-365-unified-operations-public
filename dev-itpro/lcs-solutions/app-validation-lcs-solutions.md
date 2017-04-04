@@ -5,7 +5,7 @@ title: Validate an application for an LCS solution
 description: This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that an LCS solution package can be successfully deployed. 
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -52,7 +52,6 @@ Currently, partners must demonstrate that these requirements have been met by do
 -   Deployable packages
 -   Models (code and tests)
 -   Marketing content
--   Wiki help (optional)
 
 ### Curation meeting
 
@@ -83,7 +82,7 @@ The following table provides more information about each curation requirement.
 | Deployable packages          | Incorporate the deployable packages that are required in order to bring your custom features and functionality into Dynamics 365 for Operations.                                                                                                                                     |
 | Models (code and tests)      | Incorporate any model files that are required for your solution.                                                                                                                                                                                                                     |
 | Marketing content            | Add your marketing content, which includes logos, descriptions, and screen shots of your solution package. The logo should be industry-specific and should not include your company name. The description should be aligned with your business processes.                            |
-| Wiki Help (optional)         | When wiki Help pages are released, use them to build Help content for your solution package.                                                                                                                                                                                         |
+
 
 ## Update and maintenance requirements
 If you have a curated solution that is published on AppSource, you must keep the solution up to date. After each release in the fall and spring, you will have six weeks to upgrade your code. You must update and test the following artifacts:

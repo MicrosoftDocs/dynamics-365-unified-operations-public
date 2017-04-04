@@ -2,10 +2,10 @@
 # required metadata
 
 title: System tables
-description: This wiki describes the system tables.
+description: This topic describes the system tables.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # System tables
 
-This wiki describes the system tables.
+This topic describes the system tables.
 
 []()Common
 ----------

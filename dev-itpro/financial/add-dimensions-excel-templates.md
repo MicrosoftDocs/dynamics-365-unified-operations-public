@@ -5,7 +5,7 @@ title: Add look up values for financial dimensions to Excel templates
 description: This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

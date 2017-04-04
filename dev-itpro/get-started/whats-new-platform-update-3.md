@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Operations platform update 3 (N
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 3. This version was released in November 2016 and has a build number of 7.0.4307.16141.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -112,7 +112,7 @@ Locking the platform paves the way for seamless servicing and continuous update 
 </tr>
 <tr class="odd">
 <td>Customize Help using extensions</td>
-<td>You can add a tab to the Dynamics 365 for Operations Help form to display third-party Help content, alongside the Task guides and Wiki sources that ship out of the box. In previous versions, the only way to access to a user's search terms, so that they can be used in the additional source of Help, was to overlayer the form. A delegate has now been added to the Help form (SysHelpPane), so you can intercept a user's search terms and use them to search for Help content in third-party systems.</td>
+<td>You can add a tab to the Dynamics 365 for Operations Help form to display third-party Help content, alongside the Task guides and topic sources that ship out of the box. In previous versions, the only way to access to a user's search terms, so that they can be used in the additional source of Help, was to overlayer the form. A delegate has now been added to the Help form (SysHelpPane), so you can intercept a user's search terms and use them to search for Help content in third-party systems.</td>
 </tr>
 <tr class="even">
 <td>Prevent unsupported changes of configuration key properties.</td>

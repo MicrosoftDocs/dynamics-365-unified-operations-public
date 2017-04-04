@@ -5,7 +5,7 @@ title: Retail SDK samples
 description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

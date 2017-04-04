@@ -2,10 +2,10 @@
 # required metadata
 
 title: F Classes - FormGroupControl to FormIntControl
-description: This wiki contains API reference documentation for classes from FormGroupControl to FormIntControl.
+description: This topic contains API reference documentation for classes from FormGroupControl to FormIntControl.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormGroupControl to FormIntControl
 
-This wiki contains API reference documentation for classes from FormGroupControl to FormIntControl.
+This topic contains API reference documentation for classes from FormGroupControl to FormIntControl.
 
 Class FormGroupControl
 ----------------------

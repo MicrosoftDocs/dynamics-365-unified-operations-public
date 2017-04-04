@@ -5,7 +5,7 @@ title: Report Designer interface
 description: This article explains how to navigate through Report Designer and how to use the various options to meet your specific requirements. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -163,7 +163,7 @@ The **Help** menu is available to all users and includes the following commands.
 
 | Command | Description                                                  |
 |---------|--------------------------------------------------------------|
-| Help    | Open the Dynamics 365 for Operations help wiki page for financial reporting. |
+| Help    | Open the Dynamics 365 for Operations help topic page for financial reporting. |
 |         |                                                              |
 
 ## Report Designer toolbar buttons

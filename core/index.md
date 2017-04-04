@@ -5,7 +5,7 @@ title: Introduction to Dynamics 365 for Operations
 description: Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
 author: margoc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -56,12 +56,12 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
 <p><a href="dev-itpro/lcs-solutions/country-region.md">Regional features</a></p>
 <p>Human resources</p>
    <ul>
-  <li><a href="hr/departments-jobs-positions.md">HR strategy</a></li>
-  <li><a href="hr/manage-recruiting-process.md">Recruit, hire & motivate</a></li>
-  <li><a href="hr/performance-management-overview.md">Employee training</a></li>
-  <li><a href="hr/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="hr/questionnaires.md">Questionnaire</a></li>
-  <li><a href="hr/localizations/noam-us-payroll.md">US features</a></li>
+  <li><a href="human-resources/departments-jobs-positions.md">HR strategy</a></li>
+  <li><a href="human-resources/manage-recruiting-process.md">Recruit, hire & motivate</a></li>
+  <li><a href="human-resources/performance-management-overview.md">Employee training</a></li>
+  <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
+  <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
+  <li><a href="human-resources/localizations/noam-usa-payroll.md">US features</a></li>
 </ul></td>
   <td>
   <p>Retail</p>
@@ -72,15 +72,15 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
   <li><a href="retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration </a></li></ul>
   <p>Supply chain management</p>
 <ul>
-<li><a href="scm/cost-management/costing-sheets.md">Cost management</a></li>
-  <li><a href="scm/inventory/inventory-locations.md">Inventory management</a></li>
-  <li><a href="scm/master-planning/master-plans.md">Master planning</a></li>
-  <li><a href="scm/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
-  <li><a href="scm/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
-  <li><a href="scm/production-control/create-production-orders">Production control</a></li>
-  <li><a href="scm/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
-  <li><a href="scm/transportation/transportation-management-overview.md">Transportation management</a></li>
-  <li><a href="scm/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
+<li><a href="supply-chain/cost-management/costing-sheets.md">Cost management</a></li>
+  <li><a href="supply-chain/inventory/inventory-locations.md">Inventory management</a></li>
+  <li><a href="supply-chain/master-planning/master-plans.md">Master planning</a></li>
+  <li><a href="supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></li>
+  <li><a href="supply-chain/pim/set-up-maintain-product-configuration-model.md">Product information management</a></li>
+  <li><a href="supply-chain/production-control/create-production-orders">Production control</a></li>
+  <li><a href="supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></li>
+  <li><a href="supply-chain/transportation/transportation-management-overview.md">Transportation management</a></li>
+  <li><a href="supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></li></ul>
   <p>Developer & admin functionality</p>
   <ul><li><a href="dev-itpro/analytics/analytics.md">Analytics</a></li>
   <li><a href="dev-itpro/data-entities/data-entities.md">Data entities</a></li>

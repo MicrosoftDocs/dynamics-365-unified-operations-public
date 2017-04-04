@@ -5,7 +5,7 @@ title: Upgrade home page
 description: These topics describe the process for upgrading your Dynamics 365 for Operations environment and data.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations

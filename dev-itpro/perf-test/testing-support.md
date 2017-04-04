@@ -2,10 +2,10 @@
 # required metadata
 
 title: Test projects in Visual Studio
-description: This wiki describes the options for testing in Visual Studio.
+description: This topic describes the options for testing in Visual Studio.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Test projects in Visual Studio
 
-This wiki describes the options for testing in Visual Studio.
+This topic describes the options for testing in Visual Studio.
 
 A custom unit test adapter is available in Visual Studio. This adapter lets test authors use the standard **Test Explorer** window in Visual Studio to schedule X++ tests and analyze test results. Developers can author tests by using **SysTestAdaptor**. They can also generate test code from Task Recorder recordings. These test cases can then be added to build systems for validations. 
 

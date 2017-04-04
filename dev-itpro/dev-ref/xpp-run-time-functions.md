@@ -2,10 +2,10 @@
 # required metadata
 
 title: X++ run-time functions
-description: This wiki describes the X++ run-time functions.
+description: This topic describes the X++ run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ run-time functions
 
-This wiki describes the X++ run-time functions.
+This topic describes the X++ run-time functions.
 
 The X++ language provides nearly 200 system functions that aren't part of any class and are executed at run time. Run-time functions are used for data type conversions, mathematical operations, and so on. Here are some common run-time functions:
 

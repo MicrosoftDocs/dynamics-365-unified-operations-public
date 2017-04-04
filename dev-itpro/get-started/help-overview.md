@@ -5,7 +5,7 @@ title: Help overview
 description: This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -47,7 +47,7 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](https:/
 
 -   **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.
 -    **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
--   ** Access to different types of content** – The site lets you quickly access different types of content about Dynamics 365 for Operations, such as Microsoft Office Mix presentations, task guides, videos, and wiki articles.
+-   ** Access to different types of content** – The site lets you quickly access different types of content about Dynamics 365 for Operations, such as Microsoft Office Mix presentations, task guides, videos, and topics.
 -    **Content that supports your business processes** – The site includes business process–focused content that takes advantage of the Business Process Modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 We've migrated all of the content from our previous help wiki to docs. We’re very excited about our new site and hope that you will be too.

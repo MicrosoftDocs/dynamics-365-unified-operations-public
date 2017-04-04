@@ -5,7 +5,7 @@ title: Make manual adjustments to the baseline forecast
 description: This article explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

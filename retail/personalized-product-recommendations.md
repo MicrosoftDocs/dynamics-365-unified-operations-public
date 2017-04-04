@@ -5,7 +5,7 @@ title: Personalized product recommendations overview
 description: In Dynamics 365 for Operations, product recommendations can be displayed on the point of sale (POS) device. The recommendations are items that the customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. For retailers with large catalogs, recommendations help the customer with product discovery. By showcasing products targeted to a customer’s interests and buying habits, product recommendations can help retailers with up-sell and cross-sell, and can enhance customer retention. In Dynamics 365 for Operations, product recommendations are powered by cognitive services and Microsoft Azure machine learning.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -46,14 +46,14 @@ Product recommendations are enabled for the following POS scenarios. They are a
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-1.  On the **Transaction** page:
+2.  On the **Transaction** page:
 
 -   The recommendation engine suggests items based on the entire list of items in the basket.
 -   If the store associate adds a customer to the transaction, the recommendation engine provides personal recommendations using the customer’s transaction history and the list of items in the basket.
 
 **Note**  To display recommendations on the **Transaction** page, the retailer needs to update the screen layout in Dynamics 365 for Operations. The **Recommendations** control must be dropped on to the **Transaction** page. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-1.  On the **Customer details** page:
+3.  On the **Customer details** page:
     -   The recommendation engine suggests items based on the user ID and items in the customer’s wish list.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)

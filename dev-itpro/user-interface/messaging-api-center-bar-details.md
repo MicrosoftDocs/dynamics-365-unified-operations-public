@@ -5,7 +5,7 @@ title: Message center, message bar, and message details API
 description: This topic describes the messaging system.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Analyze sales trends and patterns
 description: You can study sales trends and patterns in real time in Microsoft Dynamics 365 for Operations - Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

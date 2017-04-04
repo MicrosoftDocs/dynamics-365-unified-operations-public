@@ -5,7 +5,7 @@ title: Master planning and multisite functionality
 description: Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -40,7 +40,7 @@ When a dimension is mandatory, a dimension value must be entered on all inventor
 
 When the warehouse is not set to mandatory, it may not be known from the initial demand. The planning engine must determine which warehouse to use based on the settings that are defined for the item, individual warehouses, and the details of the order line.
 
-The following wiki articles describe how the planning engine works, when different settings are defined, to determine the warehouse to use.
+The following topics describe how the planning engine works, when different settings are defined, to determine the warehouse to use.
 
 [Master planning - site and warehouse coverage, warehouse mandatory](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 

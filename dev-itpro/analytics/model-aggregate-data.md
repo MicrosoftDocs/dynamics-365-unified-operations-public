@@ -5,7 +5,7 @@ title: Modeling and aggregate data
 description: This tutorial will walk you through the process of modeling aggregate data .
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -37,7 +37,7 @@ This tutorial will walk you through the process of modeling aggregate data .
 Prerequisites
 -------------
 
-This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the wiki named [Access Microsoft Dynamics 265 for Operations instances](..\dev-tools\access-instances.md).
+This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the topic named [Access Microsoft Dynamics 265 for Operations instances](..\dev-tools\access-instances.md).
 
 ## Key concepts
 -   **Aggregate measurements**, similar to **perspectives** and **Cubes** from earlier versions, enable you to model and consume aggregate data.

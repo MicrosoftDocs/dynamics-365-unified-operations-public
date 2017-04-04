@@ -5,7 +5,7 @@ title: View and design financial reports
 description: This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Operations. Financial reporting consists of a viewing experience within Dynamics 365 for Operations and a click-once report designer that lets you create and edit financial reports.  
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
