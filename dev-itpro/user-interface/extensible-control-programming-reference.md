@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Extensible control programming reference
@@ -51,7 +51,7 @@ The X++ API of your control is the Form-developer-facing API. Be sure to conside
 The runtime class defines the public, developer-facing API for your control. It also contains the runtime logic for your control. The job of the runtime class is to maintain the state of the control via the control’s properties.
 
 ## Runtime: Class declaration
-Declare an X++ class that extends **FormTemplateControl** or a type derived from **FormTemplateControl***. ***FormTemplateControl** contains basic properties that are necessary for every control, such as the Template ID and the [Resource Bundle](#_Resource_Bundle_Path). The following example extends the base control class, **FormTemplateControl**.
+Declare an X++ class that extends **FormTemplateControl** or a type derived from **FormTemplateControl***. ***FormTemplateControl** contains basic properties that are necessary for every control, such as the Template ID and the Resource Bundle. The following example extends the base control class, **FormTemplateControl**.
 
     class MyControl extends FormTemplateControl
 
@@ -105,7 +105,7 @@ You supply the following arguments to the **FormPropertyAttribute** constructor:
 -   **Read only**: An optional boolean that specifies whether this property is writable from the control’s JavaScript class. By default, properties have **Read only** set to **false,** so they are writeable. This argument does not affect the ability to write to this property from X++. To make the X++ method read only, remove all method arguments from the method declaration. A majority of properties should not be writable from the control’s JavaScript class. Because most property values require validation, a command should be used as a setter for the property so that validation logic is can be run before the backing property is set.
 -   **Execute immediate**: An optional Boolean that specifies whether writes to this property are deferred or require immediate execution. By default, properties have **Execute immediate** set to **false,** so writes are deferred. Because the majority of properties should not be writeable form the control’s JavaScript class, the **Execute immediate** flag defaults to **false** and provides performance benefits. Even in the case of properties that are writable from the control’s JavaScript class, the performance side effects of immediate execution should be carefully considered before enabling the behavior.
 
-The following example shows a typical property declaration. Most properties share the same boilerplate code for getting/setting, as shown below. The textProperty variable is the backing [FormProperty](#_FormProperty) field for this property.
+The following example shows a typical property declaration. Most properties share the same boilerplate code for getting/setting, as shown below. The textProperty variable is the backing FormProperty field for this property.
 
 ```
 [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
@@ -170,10 +170,10 @@ class MyControl extends FormTemplateControl
 ```
 
 ## Runtime: new method
-The **new** method on a control’s X++ runtime class is called as a part of instantiating the control on a form. For the details on when the **new** method is called in the form lifecycle, please see the Control Lifecycle Diagrams. This method is used for instantiation of a control’s FormProperties and setting the control’s Template ID and Resource Bundle Path. See typical use of the **new** method in the example for [FormProperty](#FormProperty).
+The **new** method on a control’s X++ runtime class is called as a part of instantiating the control on a form. For the details on when the **new** method is called in the form lifecycle, please see the Control Lifecycle Diagrams. This method is used for instantiation of a control’s FormProperties and setting the control’s Template ID and Resource Bundle Path. See typical use of the **new** method in the example for FormProperty.
 
 ## Runtime: applyBuild method
-The **applyBuild** method on a control’s X++ runtime class is called as a part of instantiating the control on a form. For the details on when the **applyBuild** method is called in the form lifecycle, please see the Control Lifecycle Diagrams. This method is used for initialization of a control’s FormProperties to their default values, or to the values specified by the form developer who placed the control on the form. See typical use of the **applyBuild **method in the example for [FormProperty](#FormProperty).
+The **applyBuild** method on a control’s X++ runtime class is called as a part of instantiating the control on a form. For the details on when the **applyBuild** method is called in the form lifecycle, please see the Control Lifecycle Diagrams. This method is used for initialization of a control’s FormProperties to their default values, or to the values specified by the form developer who placed the control on the form. See typical use of the **applyBuild **method in the example for FormProperty.
 
 ## Runtime: FormBindingUtil::initbinding method
 The **FormBindingUtil** is an API provided by the control framework. It is used to bind FormProperties to data fields and data methods on a data source. The following example binds the data field with name "Value" on the data source with name "DataSource1" to the textProperty FormProperty of the runtime class.

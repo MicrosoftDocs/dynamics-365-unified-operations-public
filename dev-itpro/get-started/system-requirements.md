@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: System requirements
@@ -123,7 +123,7 @@ The computer must meet all system requirements for installing and using the foll
 -   At least 10 GB of free space (The channel database can require a large amount of space.)
 
 ## Requirements for development on local VMs
-For information about the requirements for development on local virtual machines (VMs), see [VM running on-premises](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
+For information about the requirements for development on local virtual machines (VMs), see [VM running on-premises](../dev-tools/access-instances.md).
 
 See also
 --------
