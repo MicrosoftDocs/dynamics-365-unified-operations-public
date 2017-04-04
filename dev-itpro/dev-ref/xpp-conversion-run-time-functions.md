@@ -2,7 +2,7 @@
 # required metadata
 
 title: X++ conversion run-time functions
-description: This wiki describes the conversion run-time functions.
+description: This topic describes the conversion run-time functions.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ conversion run-time functions
 
-This wiki describes the conversion run-time functions.
+This topic describes the conversion run-time functions.
 
 any2Date
 --------

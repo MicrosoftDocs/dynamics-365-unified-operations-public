@@ -163,7 +163,7 @@ The **Help** menu is available to all users and includes the following commands.
 
 | Command | Description                                                  |
 |---------|--------------------------------------------------------------|
-| Help    | Open the Dynamics 365 for Operations help wiki page for financial reporting. |
+| Help    | Open the Dynamics 365 for Operations help topic page for financial reporting. |
 |         |                                                              |
 
 ## Report Designer toolbar buttons

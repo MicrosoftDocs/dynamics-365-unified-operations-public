@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment with continuous build and test automation
-description: This wiki describes how to deploy a developer topology that supports continuous build and test automation.
+description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Deployment with continuous build and test automation
 
-This wiki describes how to deploy a developer topology that supports continuous build and test automation.
+This topic describes how to deploy a developer topology that supports continuous build and test automation.
 
 Prerequisite: This requires a Visual Studio Team Services (VSTS) account for cloud VM deployment.
 

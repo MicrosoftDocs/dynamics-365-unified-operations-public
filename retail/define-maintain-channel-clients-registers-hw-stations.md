@@ -2,7 +2,7 @@
 # required metadata
 
 title: Define and maintain channel clients, registers, and hardware stations
-description: This wiki covers how to connect peripherals to your Retail POS.
+description: This topic covers how to connect peripherals to your Retail POS.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Define and maintain channel clients, registers, and hardware stations
 
-This wiki covers how to connect peripherals to your Retail POS.
+This topic covers how to connect peripherals to your Retail POS.
 
 **Note:** For specific installation instructions, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md) and [Retail Modern POS self-service download/installation, and device activation of Modern POS and Cloud POS](retail-modern-pos-device-activation.md).
 

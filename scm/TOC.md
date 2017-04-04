@@ -49,8 +49,8 @@
 ### [Purchase agreements](procurement/purchase-agreements.md)
 ## Product receipts and invoicing
 ### [Product receipt against purchase orders](procurement/product-receipt-against-purchase-orders.md)
-### [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/scm/toc.json)
-### [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/scm/toc.json)
+### [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
+### [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
 # Product information management
 ## Product information
 ### [BOM and formula](production-control/bill-of-material-bom.md)

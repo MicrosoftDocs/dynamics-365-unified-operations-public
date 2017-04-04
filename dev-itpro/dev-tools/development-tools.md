@@ -57,7 +57,7 @@ Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Online. 
 
 ### Create a Visual Studio Online team project
 
-If you already have a Visual Studio Online account, go to your account using Internet Explorer. This wiki article uses **.visualstudio.com** as the example URL for illustration purposes.
+If you already have a Visual Studio Online account, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
 
 1.  Go to http://.visualstudio.com.
 2.  Under **Recent projects & teams**, click **New** to create a new project. 
