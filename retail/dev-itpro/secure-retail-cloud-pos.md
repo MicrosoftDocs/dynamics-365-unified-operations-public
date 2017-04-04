@@ -5,7 +5,7 @@ title: Security best practices for Retail Cloud POS in a shared environment
 description: Microsoft Dynamics 365 for Operations - Retail Cloud POS is a web application that runs in the context of a browser. This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

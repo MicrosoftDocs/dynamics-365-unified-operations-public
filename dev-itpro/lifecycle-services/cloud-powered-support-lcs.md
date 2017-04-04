@@ -5,7 +5,7 @@ title: Manage Dynamics 365 for Operations Support experiences
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

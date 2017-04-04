@@ -5,7 +5,7 @@ title: Prerequisites for a standard cost conversion
 description: This topic discusses tasks to perform before you run a standard cost conversion. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

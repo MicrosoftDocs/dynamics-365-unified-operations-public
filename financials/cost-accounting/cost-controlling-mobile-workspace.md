@@ -5,7 +5,7 @@ title: Cost controlling mobile workspace
 description: With the Cost controlling mobile workspace, cost center managers can see the cost center performance anytime and anywhere. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Help overview
 description: This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -54,7 +54,7 @@ We've migrated all of the content from our previous help wiki to docs. We’re v
 
 ### When can we use it?
 
-You can read content on docs right now -- it is fully public and searchable without requiring sign-in. You can use any of your favorite search engines to find content. You can comment on articles on the site if you choose, by signing in with a GitHub account.
+You can read content on docs right now -- it is fully public and searchable without requiring sign-in. You can use any of your favorite search engines to find content. You can comment on articles on the site if you choose, by signing in.
 
 
 ## Task guides
@@ -113,7 +113,7 @@ The following table lists websites that provide Dynamics 365 for Operations cont
 | [Support blog](http://aka.ms/AXSupportBlog)                              | Provides tips and tricks that are posted by the Dynamics 365 for Operations Support team.                                                                                                                                                  |
 | [MSDN](http://aka.ms/AXMSDN)                                             | Hosts content from previous releases that is written for developers.                                                                                                                                                                       |
 | [TechNet](http://aka.ms/TechNet)                                         | Hosts content from previous releases that is written for IT professionals and application users.                                                                                                                                           |
-| [Dynamics Community](http://community.dynamics.com/en/)                  | Hosts blogs, forums, and videos.                                                                                                                                                                                                           |
+| [Dynamics Community](http://community.dynamics.com/)                  | Hosts blogs, forums, and videos.                                                                                                                                                                                                           |
 | [Microsoft.com/Dynamics/](http://www.microsoft.com/dynamics/)                 | Provides evaluation and sales information.                                                                                                                                                                                                 |
 
 

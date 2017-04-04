@@ -5,7 +5,7 @@ title: List Panel subpattern
 description: This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
 author: jasongre
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

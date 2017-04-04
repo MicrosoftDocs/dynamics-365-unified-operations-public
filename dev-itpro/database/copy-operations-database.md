@@ -5,7 +5,7 @@ title: Create a copy of a Dynamics 365 for Operations database to restore later
 description: This topic provides instructions for exporting a Microsoft Dynamics 365 for Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
 author: MargoC
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

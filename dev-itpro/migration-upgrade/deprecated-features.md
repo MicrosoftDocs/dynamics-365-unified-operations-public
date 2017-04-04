@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

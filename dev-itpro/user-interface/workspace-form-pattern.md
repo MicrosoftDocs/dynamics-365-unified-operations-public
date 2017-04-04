@@ -5,7 +5,7 @@ title: Workspace form pattern
 description: This article discusses the Operational workspace form pattern. Workspaces are a new concept in Microsoft Dynamics AX, and are intended to be the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
 author: jasongre
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

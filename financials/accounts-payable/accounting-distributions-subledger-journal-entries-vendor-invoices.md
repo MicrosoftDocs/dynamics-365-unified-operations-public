@@ -5,7 +5,7 @@ title: Accounting distributions and subledger journal entries for vendor invoice
 description: Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

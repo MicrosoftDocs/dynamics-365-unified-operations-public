@@ -5,7 +5,7 @@ title: LINQ provider for C#
 description: This article discusses the LINQ provider that is part of Microsoft Dynamics 365 for Operations.
 author: pvillads
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

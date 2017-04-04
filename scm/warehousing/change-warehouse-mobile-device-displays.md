@@ -5,7 +5,7 @@ title: Warehouse mobile device display settings
 description: This article describes how to set up the appearance of a mobile device display and map keyboard shortcuts to controls such as buttons. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

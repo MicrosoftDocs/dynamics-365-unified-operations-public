@@ -5,7 +5,7 @@ title: Depreciation methods and conventions
 description: This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics AX.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

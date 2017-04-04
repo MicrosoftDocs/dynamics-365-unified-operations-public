@@ -5,7 +5,7 @@ title: Add contextual BI to forms
 description: In this tutorial you'll model a form part that displays the previous rental history of vehicles. You'll add the form part to the Vehicles form using a DynaLink. When the user views a vehicle record, the part displays relevant rental history. 
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -229,7 +229,7 @@ To work with the sample, you must install the provided demo data.
 
 1.  Open Internet Explorer, and navigate to your Dynamics 365 for Operations instance base URL.
     -   On the cloud environment, the base URL is obtained from LCS
-    -   On a local VM, the base URL is [https://usnconeboxax1aos.cloud.onebox.dynamics.com](https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/)
+    -   On a local VM, the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com
 2.  Sign in.
 3.  On the dashboard, scroll to the far right, and in the **Fleet Management** section, click the **Fleet setup** tile.
 4.  On the **Setup** form, click **Load demo data**.

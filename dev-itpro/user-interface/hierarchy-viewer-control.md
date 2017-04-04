@@ -5,7 +5,7 @@ title: HierarchyViewer control
 description: This article provides information about the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Build and consume data entities
 description: This tutorial shows how to build an entity in Fleet Management in Microsoft Visual Studio, and also how to consume some out-of-band (OOB) entities in an integration scenario. You will see how Microsoft Dynamics 365 for Operations simplifies the development of data entities in the Visual Studio development environment. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -40,7 +40,7 @@ Prerequisites
 -   This tutorial requires that you access the Microsoft Dynamics 365 for Operations environment by using Remote Desktop, and that you be provisioned as an administrator on the Dynamics 365 for Operations instance. For more information, see the "Access Microsoft Dynamics 365 for Operations instances" document.
 -   Throughout this tutorial, baseUrl refers to the base URL of the Dynamics 365 for Operations instance.
     -   In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
-    -   On a local virtual machine (VM), the base URL is [https://usnconeboxax1aos.cloud.onebox.dynamics.com](https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/).
+    -   On a local virtual machine (VM), the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com.
 
 ## Key concepts
 -   Developing a data entity in Microsoft Visual Studio
@@ -192,7 +192,9 @@ After you create your data entity, you can validate import/export.
     
 CELLPHONE,DRIVERSLICENSE,EMAIL,FIRSTNAME,LASTNAME,CUSTOMERGROUP,ADDRESSLINE1,ADDRESSLINE2,CITY,STATE,ZIPCODE,COUNTRY(999) 555-0100,S615-3939-2349,chris.spencer@adatum.com,Chris,Spencer,adv\_mem\_1,444 Main Street,,Orlando,FL,77899,US(188) 555-0101,S615-3939-2350,Ichiro.lannin@blueyonderairlines.com,Ichiro,Lannin,non\_mem\_1,12 Long Street,,New York City,NY,99087,US(777) 555-0102,S615-3939-2351,josh.smith@fourthcoffee.com,Josh,Smith,adv\_mem\_1,9606 122th Avenue,,Sydney,TX,99874,US(456) 555-0103,S615-3939-2352,Vince@fabrikam.us,Vince,Ahmed,non\_mem\_1,123 Microsoft Way,Unit 87,Seattle,WA,90001,US(345) 555-0104,S615-3939-2353,tony.parker@lucernepublishing.com,Tony,Parker,non\_mem\_1,12012 11th PLNE,Apt 160,San Francisco,CA,75645,US(312) 555-0105,S615-3939-2354,Julia@fineartschool.net,Julia,Natarajan,exec\_mem\_1,449 Long Street,Apt 160,Bruxelles,ID,34213,US
 
-2.  Click **User Dashboard** &gt; **Data management**, or click http://%5BbaseUrl%5D/?f=DataManagementWorkspace.
+
+2.  Click **User Dashboard** &gt; **Data management**.
+
 3.  In the **Data Management** workspace, click the **Import** tile.
 4.  On the **Import** page, enter the import details, as shown in the following screen shot.![Import new record](./media/import-new-record.png)
 5.  Click the **Upload data** button next to the **Upload file for entity** field, and select the CSV file that you created.

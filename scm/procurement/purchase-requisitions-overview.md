@@ -5,7 +5,7 @@ title: Purchase requisition overview
 description: This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

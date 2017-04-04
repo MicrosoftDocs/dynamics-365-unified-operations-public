@@ -1,4 +1,4 @@
-# [Localization overview](/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [Localization overview](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
 # Asia-Pacific
 ## Australia
 ### [Bank file formats](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -119,7 +119,7 @@
 ### [Duplicate sales invoice numbering](emea-pol-sales-invoice-duplicates-numbering.md)
 ### [Fixed asset depreciation](emea-pol-fixed-assets-depreciation.md)
 ### [Fixed asset disposal functionality extension](emea-pol-fixed-asset-disposal-functionality-extension.md)
-### [Turnover balances statement](emea-turnover-balances-statement.md)
+### [Turnover balances statement](emea-pol-turnover-balances-statement.md)
 ## Spain
 ### [Bill of exchange options](emea-esp-bill-of-exchange-options.md)
 ### [Apply cash discounts in the invoice](emea-esp-cash-discount-applied-invoice.md)
@@ -163,7 +163,3 @@
 
 # North America
 ## [Year-end 1099 reporting for the United States](noam-usa-year-end-1099-reporting.md)
-	
-			
-			
-			

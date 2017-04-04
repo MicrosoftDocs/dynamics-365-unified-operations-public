@@ -5,7 +5,7 @@ title: Budget planning justification documents
 description: Justification documents provide a narrative for those requesting a budget to explain why a specific budget is necessary. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

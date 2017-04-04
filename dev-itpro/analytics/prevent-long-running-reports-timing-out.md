@@ -5,7 +5,7 @@ title: Tips to prevent long-running reports from timing out
 description: This article provides tips that can help you prevent reports that run for a long time from timing out. 
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -47,7 +47,8 @@ If the report uses the Report Data Provider (RDP) to retrieve data, the report s
 6.  Introduce a **Controller** class to run the report.
 7.  Update the Output Menu Item so that it points to the **Controller** class instead of the report.
 
-For a quick YouTube video that demonstrates the process, see [Creating a pre-process RDP class for a Long Running Report](http://View:http://www.youtube.com/watch?v=6tdQtHV2WAc&list=UUfGIUxWmd1ZA11NB8FgVWpw).
+The following video demonstrates the process: 
+> [!VIDEO http://www.youtube.com/watch?v=6tdQtHV2WAc&list=UUfGIUxWmd1ZA11NB8FgVWpw]
 
 ## Use batch processing
 To improve performance when you print statements or reports that include large amounts of data, use batch processing. When you use batch processing, you can run specific tasks as batch jobs and then schedule those batch jobs to run on a different computer (a batch server). By moving the processing of these tasks to a batch server, you can improve the report performance on the client computer. You can also apply range restrictions to limit the size of each batch. To further improve performance, don't submit one large batch. Instead submit multiple smaller batches for processing at the same time on different servers. Many tasks can be run as part of batch jobs. For more information, see [Batch processing overview](..\sysadmin\batch-processing-overview.md).

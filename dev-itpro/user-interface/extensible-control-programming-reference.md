@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
 title: Extensible control programming reference
 description: This topic provides reference content for extensible control programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -51,7 +51,7 @@ The X++ API of your control is the Form-developer-facing API. Be sure to conside
 The runtime class defines the public, developer-facing API for your control. It also contains the runtime logic for your control. The job of the runtime class is to maintain the state of the control via the control’s properties.
 
 ## Runtime: Class declaration
-Declare an X++ class that extends **FormTemplateControl** or a type derived from **FormTemplateControl***. ***FormTemplateControl** contains basic properties that are necessary for every control, such as the [Template ID](#_Template_ID_(str)) and the [Resource Bundle](#_Resource_Bundle_Path). The following example extends the base control class, **FormTemplateControl**.
+Declare an X++ class that extends **FormTemplateControl** or a type derived from **FormTemplateControl***. ***FormTemplateControl** contains basic properties that are necessary for every control, such as the Template ID and the Resource Bundle. The following example extends the base control class, **FormTemplateControl**.
 
     class MyControl extends FormTemplateControl
 
@@ -78,7 +78,7 @@ The **FormCommandAttribute** is applied to a method in your control class, whic
     -   Capitalize the first letter, and use PascalCase.
     -   Use a verb in the name.
     -   Include the Property name if the Command is used to read/write a FormProperty (ex: Set\_&lt;PropertyName&gt;)
-    -   Do not use any of the names of [inherited JavaScript properties](#_Inherited_properties).
+    -   Do not use any of the names of inherited JavaScript properties.
 -   **Execute immediate**: An optional boolean that specifies whether calls to this command are deferred or require immediate execution. By default, commands have **Execute immediate** set to **true,** so calls are not deferred. Most commands likely require immediate execution because their X++ logic must run before allowing the user to complete their next action. However, commands that have no side-effects on the user’s ability to take their next action can likely be safely deferred to gain a performance benefit. For commands that can be deferred, set Execute immediate to **false** to reduce network chattiness.
 
 The following example declares a command with the name of "SetText".
@@ -101,11 +101,11 @@ You supply the following arguments to the **FormPropertyAttribute** constructor:
 -   **FormPropertyKind:** A required **FormProperyKind** value that specifies the type of the property. Use **FormPropertyKind::Value** for Properties not bound to a data source field, and use **FormPropertyKind::BindableValue** for properties that may be bound to a data source field.
 -   **Name:** A required string that specifies the name of the property. A few best practices for naming properties:
     -   Capitalize the first letter, and use PascalCase.
-    -   Do not use any of the names of [inherited JavaScript properties](#_Inherited_properties)
+    -   Do not use any of the names of inherited JavaScript properties
 -   **Read only**: An optional boolean that specifies whether this property is writable from the control’s JavaScript class. By default, properties have **Read only** set to **false,** so they are writeable. This argument does not affect the ability to write to this property from X++. To make the X++ method read only, remove all method arguments from the method declaration. A majority of properties should not be writable from the control’s JavaScript class. Because most property values require validation, a command should be used as a setter for the property so that validation logic is can be run before the backing property is set.
 -   **Execute immediate**: An optional Boolean that specifies whether writes to this property are deferred or require immediate execution. By default, properties have **Execute immediate** set to **false,** so writes are deferred. Because the majority of properties should not be writeable form the control’s JavaScript class, the **Execute immediate** flag defaults to **false** and provides performance benefits. Even in the case of properties that are writable from the control’s JavaScript class, the performance side effects of immediate execution should be carefully considered before enabling the behavior.
 
-The following example shows a typical property declaration. Most properties share the same boilerplate code for getting/setting, as shown below. The textProperty variable is the backing [FormProperty](#_FormProperty) field for this property.
+The following example shows a typical property declaration. Most properties share the same boilerplate code for getting/setting, as shown below. The textProperty variable is the backing FormProperty field for this property.
 
 ```
 [FormPropertyAttribute(FormPropertyKind::Value, "Text", true)
@@ -122,7 +122,7 @@ private void parmText(str value = textProperty.parmValue())
 ## Runtime: FormProperty
 ##### Behavior
 
-**FormProperty** is an X++ [derived type](https://msdn.microsoft.com/en-us/library/esd9wew8(v=vs.100).aspx) used by the control framework for the synchronization of property values between X++ and JavaScript. **FormProperty** objects are considered the backing fields used internally by p[roperties](#_FormPropertyAttribute). Each **FormProperty** is typically used in 4 places throughout a control’s X++ runtime class:
+**FormProperty** is an X++ [derived type](https://msdn.microsoft.com/en-us/library/esd9wew8(v=vs.100).aspx) used by the control framework for the synchronization of property values between X++ and JavaScript. **FormProperty** objects are considered the backing fields used internally by properties. Each **FormProperty** is typically used in 4 places throughout a control’s X++ runtime class:
 
 1.  The **FormProperty** is declared, usually right below the class declaration
 2.  The **FormProperty** is instantiated in the **new** method of the class
@@ -170,10 +170,10 @@ class MyControl extends FormTemplateControl
 ```
 
 ## Runtime: new method
-The **new** method on a control’s X++ runtime class is called as a part of instantiating the control on a form. For the details on when the **new** method is called in the form lifecycle, please see the [Control Lifecycle Diagrams](#_Control_Lifecycle_Diagrams). This method is used for instantiation of a control’s [FormProperties](#_FormProperty) and setting the control’s [Template ID](#_Template_ID_(str)) and [Resource Bundle Path](#_Resource_Bundle_Path). See typical use of the **new** method in the example for [FormProperty](#_FormPropert).
+The **new** method on a control’s X++ runtime class is called as a part of instantiating the control on a form. For the details on when the **new** method is called in the form lifecycle, please see the Control Lifecycle Diagrams. This method is used for instantiation of a control’s FormProperties and setting the control’s Template ID and Resource Bundle Path. See typical use of the **new** method in the example for FormProperty.
 
 ## Runtime: applyBuild method
-The **applyBuild** method on a control’s X++ runtime class is called as a part of instantiating the control on a form. For the details on when the **applyBuild** method is called in the form lifecycle, please see the [Control Lifecycle Diagrams](#_Control_Lifecycle_Diagrams). This method is used for initialization of a control’s [FormProperties](#_FormProperty) to their default values, or to the values specified by the form developer who placed the control on the form. See typical use of the **applyBuild **method in the example for [FormProperty](#FormProperty).
+The **applyBuild** method on a control’s X++ runtime class is called as a part of instantiating the control on a form. For the details on when the **applyBuild** method is called in the form lifecycle, please see the Control Lifecycle Diagrams. This method is used for initialization of a control’s FormProperties to their default values, or to the values specified by the form developer who placed the control on the form. See typical use of the **applyBuild **method in the example for FormProperty.
 
 ## Runtime: FormBindingUtil::initbinding method
 The **FormBindingUtil** is an API provided by the control framework. It is used to bind FormProperties to data fields and data methods on a data source. The following example binds the data field with name "Value" on the data source with name "DataSource1" to the textProperty FormProperty of the runtime class.
@@ -336,7 +336,7 @@ The following section documents the HTML attributes that are used in the control
 
 ### data-dyn-bind
 
-**data-dyn-bind**, the data binding attribute, standardizes many common DOM manipulations - such as modifying an element’s attributes, properties and CSS, or handling DOM events - through a declarative HTML-based API. The data binding attribute allows for these behaviors without requiring complex JavaScript. Using the data binding attribute rather than writing complex JavaScript can save the control developer valuable time by making things such as designing, debugging and maintaining the control much easier. However, complex JavaScript is still available when scenarios require its use. The data binding attribute binds HTML element behaviors to values supplied by the control developer. The values supplied can be simple JavaScript [variables](http://www.w3schools.com/js/js_variables.asp), JavaScript [comparison](http://www.w3schools.com/js/js_comparisons.asp) or [arithmetic](http://www.w3schools.com/js/js_arithmetic.asp) expressions, JavaScript [functions](http://www.w3schools.com/js/js_functions.asp) and JSON [objects](http://www.w3schools.com/json/). The values supplied can also be [observable variables](#_Observable_framework), created using the [APIs described in this document](#_$dyn.observable). The way in which the supplied value is bound to the HTML element is determined by the binding handler that is used with the data binding attribute. A list of [all supported binding handlers](#_Binding_handlers) is provided in this document. The data binding attribute requires the following syntax when used with any binding handler. The syntax for **data-dyn-bind** is:
+**data-dyn-bind**, the data binding attribute, standardizes many common DOM manipulations - such as modifying an element’s attributes, properties and CSS, or handling DOM events - through a declarative HTML-based API. The data binding attribute allows for these behaviors without requiring complex JavaScript. Using the data binding attribute rather than writing complex JavaScript can save the control developer valuable time by making things such as designing, debugging and maintaining the control much easier. However, complex JavaScript is still available when scenarios require its use. The data binding attribute binds HTML element behaviors to values supplied by the control developer. The values supplied can be simple JavaScript [variables](http://www.w3schools.com/js/js_variables.asp), JavaScript [comparison](http://www.w3schools.com/js/js_comparisons.asp) or [arithmetic](http://www.w3schools.com/js/js_arithmetic.asp) expressions, JavaScript [functions](http://www.w3schools.com/js/js_functions.asp) and JSON [objects](https://www.w3schools.com/js/js_json_objects.asp). The values supplied can also be observable variables, created using the APIs described in this document. The way in which the supplied value is bound to the HTML element is determined by the binding handler that is used with the data binding attribute. A list of all supported binding handlers is provided in this document. The data binding attribute requires the following syntax when used with any binding handler. The syntax for **data-dyn-bind** is:
 
     data-dyn-bind="[first binding handler]: [value to bind to]"
 
@@ -344,7 +344,7 @@ The data binding attribute accepts a comma-separated list of binding handler-val
 
     data-dyn-bind="text: 'Hi', visible: true"
 
-The data binding attribute is a custom HTML attribute understood by the control framework. The data binding attribute can be applied to any HTML element. Some HTML elements may not have the behavior which the binding handler modifies. For example, using the [text binding handler](#_text) on an **&lt;svg&gt;** element will not show the text since the **&lt;svg&gt;** element does not have a textContent property. The control framework reads and executes the data bindings specified in the control’s template at runtime. The lifecycle for the control in the browser can be summarized as follows:
+The data binding attribute is a custom HTML attribute understood by the control framework. The data binding attribute can be applied to any HTML element. Some HTML elements may not have the behavior which the binding handler modifies. For example, using the text binding handler on an **&lt;svg&gt;** element will not show the text since the **&lt;svg&gt;** element does not have a textContent property. The control framework reads and executes the data bindings specified in the control’s template at runtime. The lifecycle for the control in the browser can be summarized as follows:
 
 1.  The control’s HTM file is loaded by the browser.
 2.  Any script or resource files referenced in the HTM file are also loaded by the browser. Steps 1 and 2 are executed only once during a user’s session, even if there are multiple instances of the control.
@@ -530,7 +530,7 @@ The list of items to bind the child element to. If an array list is supplied, th
 
 ##### Scope variables
 
-When inside the scope of the **foreach,** the following scope variables are useful and can be used on the repeatable child element: [$data](#_$data), [$index](#_$index_(in_foreach)), [$control](#_$control_1), [your own scope variables](#_*vars*). The following example uses **foreach** to render a span element for each color in the array.
+When inside the scope of the **foreach,** the following scope variables are useful and can be used on the repeatable child element: $data, index, control, your own scope variables. The following example uses **foreach** to render a span element for each color in the array.
 
 ```
 // In your control’s code-behind JS file
@@ -553,7 +553,7 @@ self.colors = ['Red','Blue','Green'];
 </div>
 ```
 
-The following examples shows a nested **foreach** binding. This example showcases how to use the [$index framework scope variable](#_$index_(in_foreach)) and [custom scope variables](#_vars) to access the binding context from the parent element.
+The following examples shows a nested **foreach** binding. This example showcases how to use the index framework scope variable and custom scope variables to access the binding context from the parent element.
 
 ```
     // In your control’s code-behind JS file
@@ -645,7 +645,7 @@ self.show(true);
 
 ##### Behavior
 
-Specifies the height and width of the control. The sizing binding handler should always be applied to the root element of the template (the element that has the id attribute), and supplied the height and width values from the X++ instance of the control by using the $dyn.layout.sizing helper function. See [Example 1](#_Example_1).
+Specifies the height and width of the control. The sizing binding handler should always be applied to the root element of the template (the element that has the id attribute), and supplied the height and width values from the X++ instance of the control by using the $dyn.layout.sizing helper function. See Example 1.
 
 ##### Arguments
 
@@ -685,7 +685,7 @@ self.bigBox = true;
 
 ##### Behavior
 
-Binds to the textContent property of the element. The text binding handler is meant to be used with UI text. It is not meant to bind non-string values (such as numbers, dates or Booleans) to the element. Convert all values into strings before supplying them to the binding handler, by using the [$dyn.format](#_$dyn.format) function. The text binding handler will replace all of the content inside of the element with the binding, whether or not the existing content is HTML or simple text.
+Binds to the textContent property of the element. The text binding handler is meant to be used with UI text. It is not meant to bind non-string values (such as numbers, dates or Booleans) to the element. Convert all values into strings before supplying them to the binding handler, by using the dyn.format function. The text binding handler will replace all of the content inside of the element with the binding, whether or not the existing content is HTML or simple text.
 
 ##### Arguments
 
@@ -710,7 +710,7 @@ self.text = "Hello";
 
 ##### Behavior
 
-Creates an HTML scope variable with the supplied name and value. The created scope variable is accessible only from bindings in the template. In addition, the scope variable is inherited by child elements. Binding handlers are executed in the order in which they appear on the element. Since the vars binding adds variables to the binding context, it is a best practice to always place the vars binding before all other bindings on the element. This will ensure that the subsequent bindings can access scope variables added by the vars binding. Do not create scope variables with any of the following names, as these names are reserved for framework scope variables: [$control](#_$control), [$data](#_$data), [$index](#_$index_(in_foreach)), and $value
+Creates an HTML scope variable with the supplied name and value. The created scope variable is accessible only from bindings in the template. In addition, the scope variable is inherited by child elements. Binding handlers are executed in the order in which they appear on the element. Since the vars binding adds variables to the binding context, it is a best practice to always place the vars binding before all other bindings on the element. This will ensure that the subsequent bindings can access scope variables added by the vars binding. Do not create scope variables with any of the following names, as these names are reserved for framework scope variables: $control, $data, $index, and $value.
 
 ##### Arguments
 
@@ -734,7 +734,7 @@ Hello World!
 
 ##### Example 2
 
-For an example, see the [foreach binding handler examples](#_Example_1_1).
+For an example, see the foreach binding handler examples.
 
 #### visible
 
@@ -762,7 +762,7 @@ self.Visible(false); // set the X++ observable property to false
 ```
 
 ## HTML: Scope variables
-Scope variables can be used when binding values to binding handlers. Scope variables are only accessible from within the control’s HTML template, and can only be used with the [data binding attribute](#_data-dyn-bind). Scope variables are neither accessible from other HTML attributes nor from the control’s JavaScript class, but scope variables can be used in inline JavaScript expressions, functions and JSON objects that are passed to binding handlers.
+Scope variables can be used when binding values to binding handlers. Scope variables are only accessible from within the control’s HTML template, and can only be used with the data binding attribute. Scope variables are neither accessible from other HTML attributes nor from the control’s JavaScript class, but scope variables can be used in inline JavaScript expressions, functions and JSON objects that are passed to binding handlers.
 
 #### $control
 
@@ -774,11 +774,11 @@ The *$control* scope variable provides the bindings in the HTML template with ac
 
 #### $data
 
-The *$data* scope variable provides elements with access to their current binding context. Only variables defined in $data (the binding context) or scope variables, can be used inside of HTML bindings. Variables that do not exist in the current binding context and do not exist as current scope variable cannot be accessed from an HTML binding. In most cases the binding context will be the control’s JavaScript instance, so *$data* and *$control* will be equivalent. However, in some cases the binding context can change. For example, for elements inside of a **[foreach](#_foreach)** binding, *$data* provides the elements with access to the current array item. In cases involving multiple nested **foreach** bindings, elements in a nested binding may need access to the array item in a parent **foreach** binding. To access items in the parent **foreach** binding, you may [create a scope variable](#_vars) which will be accessible to elements in the nested **foreach** biding. For an example, see the [foreach binding handler examples](#_Example_1_1).
+The *$data* scope variable provides elements with access to their current binding context. Only variables defined in $data (the binding context) or scope variables, can be used inside of HTML bindings. Variables that do not exist in the current binding context and do not exist as current scope variable cannot be accessed from an HTML binding. In most cases the binding context will be the control’s JavaScript instance, so *$data* and *$control* will be equivalent. However, in some cases the binding context can change. For example, for elements inside of a **foreach** binding, *$data* provides the elements with access to the current array item. In cases involving multiple nested **foreach** bindings, elements in a nested binding may need access to the array item in a parent **foreach** binding. To access items in the parent **foreach** binding, you may create a scope variable which will be accessible to elements in the nested **foreach** biding. For an example, see the foreach binding handler examples.
 
 #### $index
 
-The $index scope variable provides a 0-based index of the array item when in a **foreach** binding. For an example, see the [foreach binding handler examples](#_Example_1_1).
+The $index scope variable provides a 0-based index of the array item when in a **foreach** binding. For an example, see the foreach binding handler examples.
 
 ## JavaScript: Inherited properties
 #### Visible
@@ -898,7 +898,7 @@ The newly created observable The following example creates and observable variab
 
 ##### Usage
 
-Accesses the value of an observable variable. When **$dyn.value** is called from inside of an observer function (such as an observer passed to **[$dyn.observe](#_$dyn.observe_(best_practice)** or **[$dyn.computed](#_$dyn.computed)**, as well as the binding expression passed to a [binding handler](#_Usage)) a dependency on the observable is created. This will cause the binding handler or callback to re-execute whenever the value of the observable changes. Because this dependency is created automatically when using **$dyn.value**, it is important to only use **$dyn.value** when you intentionally wish to create such a dependency. If you wish to access the value of an observable without creating a dependency, you should use [$dyn.peek](#_$dyn.peek).
+Accesses the value of an observable variable. When **$dyn.value** is called from inside of an observer function (such as an observer passed to **$dyn.observe** or **$dyn.computed**, as well as the binding expression passed to a binding handler) a dependency on the observable is created. This will cause the binding handler or callback to re-execute whenever the value of the observable changes. Because this dependency is created automatically when using **$dyn.value**, it is important to only use **$dyn.value** when you intentionally wish to create such a dependency. If you wish to access the value of an observable without creating a dependency, you should use $dyn.peek.
 
 ```
 $dyn.value(observable)

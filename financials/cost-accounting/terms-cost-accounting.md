@@ -5,7 +5,7 @@ title: Cost accounting terminology
 description: This topic defines the key terms that are used in Cost accounting.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

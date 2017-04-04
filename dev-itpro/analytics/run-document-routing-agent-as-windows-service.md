@@ -5,7 +5,7 @@ title: Run the Document Routing Agent as a Windows service
 description: The Document Routing Agent can be run as either a desktop application or a Microsoft Windows service. This topic provides important information that will help you select the correct execution mode.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

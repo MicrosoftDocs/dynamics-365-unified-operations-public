@@ -5,7 +5,7 @@ title: Localization and regulatory features
 description: This topic includes lists of resources that can help you learn more about country/region-specific functionality.  
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -112,7 +112,6 @@ The following sections list resources by country/region.
 
 
 ### The Czech Republic
-#NAME?
     -   [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
     -   [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
     -   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
@@ -130,34 +129,41 @@ The following sections list resources by country/region.
 
 ### Europe
 -   [Advance holders](/dynamics365/operations/financials/localizations/emea-advance-holders)
--   [EU Entry certificates](/dynamics365/operations/financials/localizations/emea-entry-certificates)
--   [EU Sales list reporting](/dynamics365/operations/financials/localizations/emea-eu-sales-list)
+-   [Edit invoice IDs on sales orders](/dynamics365/operations/financials/localizations/emea-edit-invoice-id-sales-orders)
+-   [EU entry certificates](/dynamics365/operations/financials/localizations/emea-entry-certificates)
+-   [EU sales list reporting](/dynamics365/operations/financials/localizations/emea-eu-sales-list)
 -   [File formats for methods of payment](/dynamics365/operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
--   [Import or manually create postal codes](/dynamics365/operations/financials/localizations/emea-import-create-postal-codes-manually)
+-   [Fixed assets disposal for Estonia and Lithuania](/dynamics365/operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 -   [Intrastat](/dynamics365/operations/financials/localizations/emea-intrastat)
--   [Invoice issue deadline](/dynamics365/operations/financials/localizations/emea-invoice-issue-deadline)
--   [OIOUBL standards for electronic invoicing](/dynamics365/operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
+-   [Invoice and packing slip numbering for Latvia and Lithuania](/dynamics365/operations/financials/localizations/emea-invoices-packing-slips-numbering)
+-   [Invoice issue deadlines](/dynamics365/operations/financials/localizations/emea-invoice-issue-deadline)
+-   [OIOUBL standards](/dynamics365/operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
 -   [Payment slip report](/dynamics365/operations/financials/localizations/emea-eur-payment-slip-report-giro)
--   [Petty cash](/dynamics365/operations/financials/localizations/emea-eeu-petty-cash)
+-   [Petty cash](/dynamics365/operations/financials/localizations/emea-petty-cash)
+-   [Post the pre-acquisition of a fixed asset](/dynamics365/operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
+-   [Postal codes](/dynamics365/operations/financials/localizations/emea-import-create-postal-codes-manually)
 -   [Registration IDs](/dynamics365/operations/financials/localizations/emea-registration-ids)
--   [SEPA direct debit overview](/dynamics365/operations/financials/accounts-receivable/sepa-direct-debit-overview)
--   [SEPA credit transfer overview](/dynamics365/operations/financials/accounts-payable/sepa-credit-transfer)
--   [Set up signers for print forms](/dynamics365/operations/financials/localizations/emea-eeu-set-up-signers-for-printing-forms)
+-   [SEPA Credit transfer overview](/dynamics365/operations/financials/accounts-payable/sepa-credit-transfer)
+-   [SEPA Direct debit overview](/dynamics365/operations/financials/accounts-receivable/sepa-direct-debit-overview)
+-   [Set up signers for print forms](/dynamics365/operations/financials/localizations/emea-set-up-signers-for-printing-forms)
 -   [Split periods in periodic journals](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [Update how amounts are displayed on reports and documents](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)
+
 -   [VAT reporting for Europe](/dynamics365/operations/financials/localizations/emea-vat-reporting)
+
 -   [View transactions on settlement](/dynamics365/operations/financials/localizations/emea-transactions-settlement-form)
+
 
 ### France
 -   [Chronological invoice and voucher numbers](/dynamics365/operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
 -   [Derogatory depreciation for France](/dynamics365/operations/financials/localizations/emea-fra-derogatory-depreciation)
 -   [NAF codes and siret numbers](/dynamics365/operations/financials/localizations/emea-fra-naf-codes-siret-numbers)
 -   [Penalties for past due customer payments in France](/dynamics365/operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due)
--   [Print lump sum recovery text on a customer invoice](/dynamics365/operations/financials/localizations/emea-fra-configure-print-lump-sum-recovery-text-customer-invoice)
+-   [Print lump sum recovery text on a customer invoice](/dynamics365/operations/financials/localizations/emea-fra-print-lump-sum-recovery-text)
 -   [RB/SL depreciation](/dynamics365/operations/financials/localizations/emea-fra-rbsl-depreciation)
 #### Public sector
    -   [Commitments in the public sector](/dynamics365/operations/financials/localizations/emea-fra-commitments-public-sector)
-   -   [Mandats de paiement in the public sector](/dynamics365/operations/financials/localizations/emea-fra-mandats-de-paiement-public-sector)
+   -   [Mandats de paiement in the public sector](/dynamics365/operations/financials/localizations/emea-fra-mandats-de-paiement)
    -   [Public sector accounting](/dynamics365/operations/financials/localizations/emea-fra-public-sector-accounting)
    -   [Titres de recette](/dynamics365/operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Vendor invoice payment holds](/dynamics365/operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
@@ -172,8 +178,6 @@ The following sections list resources by country/region.
 ### Hungary
 
 -   [Low-cost fixed assets](/dynamics365/operations/financials/localizations/emea-hun-low-cost-fixed-assets)
--   [Post the pre-acquisition of a fixed asset](/dynamics365/operations/financials/localizations/emea-hun-pre-acquisition-acquisition-fixed-asset)
-
 
 ### Italy
 
@@ -184,6 +188,7 @@ The following sections list resources by country/region.
 -   [Packing slip date verification on invoices for Italy](/dynamics365/operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Italian sales tax books](/dynamics365/operations/financials/localizations/emea-ita-fiscal-books)
 -   [Split payment for invoices issued to the Public Administration](/dynamics365/operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
+
 ### Japan
 
 -   [Bank payment fees covered by vendors](/dynamics365/operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
@@ -192,10 +197,10 @@ The following sections list resources by country/region.
    -  [Allocation rules for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
    -  [Equally divided depreciation method](/dynamics365/operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
    -  [Fixed asset depreciation](/dynamics365/operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
-   -  [Fixed asset impairment management on cash generating unit](/dynamics365/operations/financials/localizations/apac-jpn-fixed-asset-impairment-accounting-cash-generate-unit)
-   -  [Set up asset retirement obligation for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-set-up-asset-retirement-obligation-fixed-assets)
-   -  [Set up reduction entries for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-set-up-reduction-entry-fixed-assets)
--   [Pay a vendor by endorsing a bill of exchange](/dynamics365/operations/financials/localizations/apac-jpn-pay-vendor-endorse-bill-of-exchange)
+   -  [Fixed asset impairment management on cash generating unit](/dynamics365/operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
+   -  [Set up asset retirement obligation for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
+   -  [Set up reduction entries for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
+-   [Pay a vendor by endorsing a bill of exchange](/dynamics365/operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
 -   [Progressive withholding tax calculation](/dynamics365/operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
 
 ### Latvia
@@ -209,7 +214,6 @@ The following sections list resources by country/region.
 ### Lithuania
 
 -   [Fixed asset repair statement](/dynamics365/operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
--   [Fixed assets disposal](/dynamics365/operations/financials/localizations/emea-ltu-credit-note-reverse-fixed-asset-sale)
 -   [Invoice and packing slip numbering](/dynamics365/operations/financials/localizations/emea-invoices-packing-slips-numbering)
 
 
@@ -220,7 +224,7 @@ The following sections list resources by country/region.
 -   [Electronic ledger accounting statements](/dynamics365/operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements)
 -   [Adjustment inflation declaration report](/dynamics365/operations/financials/localizations/latam-mex-adjustment-inflation-declaration-report)
 -   [ISR declaration report](/dynamics365/operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes)
--   [Electronic invoices (CFDI)](/dynamics365/operations/financials/localizations/latam-mex-electronic-invoices)
+-   [Electronic invoices (CFDI)](/dynamics365/operations/financials/localizations/latam-mex-CFDI-electronic-invoices)
    
 ### Malaysia
 
@@ -253,12 +257,13 @@ The following sections list resources by country/region.
 
 ### Spain
 
+
 -   [Spanish bill of exchange options](/dynamics365/operations/financials/localizations/emea-esp-spanish-bill-of-exchange-options)
 -   [Cash discount is applied in the invoice parameter](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
 -   [Use fiscal data from the invoice account](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
 -   [Fixed asset revaluation groups](/dynamics365/operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
 -   [One-time customers](/dynamics365/operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
--   [Spanish promissory note options](/dynamics365/operations/financials/localizations/emea-esp-spanish-promissory-note-options)
+-   [Spanish promissory note options](/dynamics365/operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Sales and purchase cycles](/dynamics365/operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Special entries and opening sheets](/dynamics365/operations/financials/localizations/emea-esp-opening-sheets-spain)
 
@@ -278,11 +283,11 @@ The following sections list resources by country/region.
 
 ### United Kingdom
 
--   [The Construction Industry Scheme for the United Kingdom](/dynamics365/operations/financials/localizations/emea-gbr-construction-industry-scheme)
+-   [The Construction Industry Scheme for the United Kingdom](/dynamics365/operations/financials/localizations/emea-gbr-cis-construction-industry-scheme)
 
 ### United States
 
--   [Form I-9 verification](/dynamics365/operations/hr/localizations/noram-usa-form-i-9-verification)
--   [Year-end 1099 reporting](/dynamics365/operations/financials/localizations/noram-usa-year-end-1099-reporting)
--   [Payroll](/dynamics365/operations/hr/localizations/noram-usa-payroll)
+-   [Form I-9 verification](/dynamics365/operations/human-resources/localizations/noam-usa-form-i-9-verification)
+-   [Year-end 1099 reporting](/dynamics365/operations/financials/localizations/noam-usa-year-end-1099-reporting)
+-   [Payroll](/dynamics365/operations/human-resources/localizations/noam-usa-payroll)
 -   [Public sector](/dynamics365/operations/financials/public-sector/public-sector-functionality)

@@ -5,7 +5,7 @@ title: BOM designer functionality
 description: This article describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs). You can click Setup to select different configurations and specify what information appears on the lines of the tree.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

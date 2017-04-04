@@ -5,7 +5,7 @@ title: Azure Resource Manager onboarding
 description: This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

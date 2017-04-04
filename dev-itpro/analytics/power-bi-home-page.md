@@ -5,7 +5,7 @@ title: Power BI home page
 description: This topic lists resources to help you use Power BI with Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

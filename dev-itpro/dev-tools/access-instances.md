@@ -5,7 +5,7 @@ title: Access Dynamics 365 for Operations instances
 description: This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configurations settings for developers and administrators.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -207,8 +207,8 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Retail configuration
 
 The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Retail SDK overview](/dynamics365/operations/retail/dynamics365/operations/dev-itpro/retail-sdk-overview)
--   [Retail POS device activation](/dynamics365/operations/retail/dev-itpro/retail-device-activation.md)
+-   [Retail SDK overview](/dynamics365/operations/retail/dev-itpro/retail-sdk-overview)
+-   [Retail POS device activation](/dynamics365/operations/retail/dev-itpro/retail-device-activation)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.

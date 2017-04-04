@@ -5,7 +5,7 @@ title: Journals generated during the electronic payment return process for Brazi
 description: This topic shows how payment journals are generated when you import and post the return file for electronic payments. The approved payment lines in the return file can be posted either to one journal or multiple journals.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

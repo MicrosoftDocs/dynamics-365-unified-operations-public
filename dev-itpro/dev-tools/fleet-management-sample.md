@@ -5,7 +5,7 @@ title: Fleet Management sample application
 description: This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -123,7 +123,7 @@ Keep in mind that you’re working with the migrated app in this section. The fo
 11. You might again need to wait up to two minutes for the batch framework to process the change. On the Action Pane, click **Refresh** periodically, until you see the **Status** field change. Notice that the vehicle now has a status of **Awaiting Service**.
 12. Optionally, you can continue to repeat these workflow steps to take the vehicle through the service and cleaning phases. After cleaning is completed, the final status is **Done**.
 13. Click **Workflow**, and then click **View history**. The **Workflow history** form provides information about the vehicle workflow.
-14. Click **Tracking details** to see the activities. [![](./media/workflow.jpg)](./media/workflow.jpg)
+14. Click **Tracking details** to see the activities. [![Tracking details](./media/workflow.jpg)](./media/workflow.jpg)
 
 ### To view the setup behind the workflow
 

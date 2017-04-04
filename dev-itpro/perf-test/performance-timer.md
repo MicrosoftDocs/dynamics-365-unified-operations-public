@@ -5,7 +5,7 @@ title: Performance timer
 description: This topic provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
 
-To open the Performance timer, open your webpage with the added parameter debug=develop: <https://testax21aos.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop> **Note: **When you run in debug mode you will notice slower performance. You can quickly get an overview of most performance issues by pressing F12 and working with the debugging tools that are available in your browser. The timer will show up here. 
+To open the Performance timer, open your webpage with the added parameter debug=develop: https://*yoursite*.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop **Note: **When you run in debug mode you will notice slower performance. You can quickly get an overview of most performance issues by pressing F12 and working with the debugging tools that are available in your browser. The timer will show up here. 
 
 [![timer](./media/timer.png)](./media/timer.png) 
 

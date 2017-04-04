@@ -5,7 +5,7 @@ title: Post payroll and generate vendor invoices
 description: This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.
 author: rschloma
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

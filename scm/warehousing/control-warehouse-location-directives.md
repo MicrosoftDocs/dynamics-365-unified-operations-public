@@ -5,7 +5,7 @@ title: Control warehouse work by using work templates and location directives
 description: This article describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

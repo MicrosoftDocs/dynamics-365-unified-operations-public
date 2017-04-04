@@ -5,7 +5,7 @@ title: Fixed asset acquisition posting accounts
 description: This article explains how to set up general ledger posting accounts for acquiring assets.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -6,7 +6,7 @@
 
 # [User interface development](user-interface/TOC.md)
 
-# Release solutions using LCS
+# Release solutions using Lifecycle Services
 ## [Develop and release](lcs-solutions/lcs-solutions-app-source.md)
 ## [Stage and publish](lcs-solutions/marketing-content-lcs-solutions.md)
 ## [Add a methodology](lcs-solutions/methodologies-lcs-solutions.md)
@@ -47,7 +47,7 @@
 ## [Gantt development guide](user-interface/gantt-development-guide.md)
 ## [Create a new transportation management engine](/dynamics365/operations/scm/transportation/create-new-transportation-management-engine?toc=/dynamics365/operations/dev-itpro/toc.json)
 
-# [Retail development](/dynamics365/operations/retail/dev-itpro/TOC)
+# [Retail development](/dynamics365/operations/retail/dev-itpro/dev-retail-home-page)
 
 # [Deployment](deployment/TOC.md)
 

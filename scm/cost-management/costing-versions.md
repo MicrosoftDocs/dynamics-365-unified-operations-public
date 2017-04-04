@@ -5,7 +5,7 @@ title: Costing versions
 description: This article provides information about costing versions, how to maintain them, and the types of data that you can include in them. The primary purpose of a costing version is to contain cost records about items, cost categories, and calculation formulas for indirect costs.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

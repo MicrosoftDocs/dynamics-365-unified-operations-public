@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for Microsoft Dynamics 365 for Operations, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -69,5 +69,4 @@ See also
 
 [How to create a task recording to use as documentation or training](../user-interface/task-recorder-training-docs.md)
 
-[Creating New Training Libraries for Dynamics 365 for Operations within Lifecycle Services using the Task Recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 

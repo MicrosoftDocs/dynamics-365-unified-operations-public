@@ -5,7 +5,7 @@ title: Straight line service life depreciation
 description: This article gives an overview of the Straight line service life method of depreciation.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

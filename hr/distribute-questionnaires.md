@@ -5,7 +5,7 @@ title: Distribute and complete a questionnaire
 description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

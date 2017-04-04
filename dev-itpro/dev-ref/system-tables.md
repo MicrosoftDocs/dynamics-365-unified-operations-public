@@ -5,7 +5,7 @@ title: System tables
 description: This wiki describes the system tables.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -326,9 +326,9 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_AccessRightsList Table](#del_accessrightslist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL-AccessRightsList Table
 
-## []()DEL\_CompanyDomainList
+## DEL_CompanyDomainList
 The CompanyDomainList table contains associations between the DomainInfo and DataArea tables. Security rights are granted per domain.
 
 ### Fields
@@ -367,9 +367,9 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_CompanyDomainList Table](#del_companydomainlist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL_CompanyDomainList Table
 
-## []()DEL\_DomainInfo
+## DEL_DomainInfo
 Use of this table could lead to an Elevation of Privileges attack or a Denial of Service attack. Therefore, the AOSAuthorization property is set to an enumeration value of CreateUpdateDelete. The Application Object Server authorizes each create, update, and delete action on the table by confirming that the current user has permission to perform the requested operation on that table. If the user who initiates the operation is not authorized to perform the operation, an exception occurs.
 
 ### Fields
@@ -399,9 +399,9 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_DomainInfo Table](#del_domaininfo)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL_DomainInfo Table
 
-## []()DEL\_UserGroupInfo
+## DEL_UserGroupInfo
 The UserGroupInfo table contains the list of available user groups.
 
 ### Fields
@@ -427,9 +427,9 @@ The UserGroupInfo table contains the list of available user groups.
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_UserGroupInfo Table](#del_usergroupinfo)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL_UserGroupInfo Table
 
-## []()DEL\_UserGroupList
+## DEL_UserGroupList
 The UserGroupList table contains the list of users associated with each user groups.
 
 ### Fields
@@ -464,7 +464,7 @@ The UserGroupList table contains the list of users associated with each user gro
 
 ### Inheritance Hierarchy
 
-[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [DEL\_UserGroupList Table](#del_usergrouplist)
+[xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) DEL_UserGroupList Table
 
 ## []()ModelSecPolRuntimeEx
 The ModelSecPolRuntimeEx table stores the runtime metadata that is necessary to apply security policies.

@@ -5,7 +5,7 @@ title: Issue search on Lifecycle Services
 description: This article provides information about the Issue search tool on Microsoft Dynamics Lifecycle Services (LCS). It explains how to search for product issues and regulatory features, and describes the information that is provided for each status.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
