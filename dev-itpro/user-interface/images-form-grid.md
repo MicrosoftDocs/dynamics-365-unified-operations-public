@@ -83,6 +83,7 @@ For the list of symbols that are available in the symbol font, see [Symbol font]
 
 ### Run time
 Sometimes, you don't have an image for a particular record in a grid, but you don't want an empty space where the image should be. The following example shows how you can use a display method to check for an image value, and then substitute a placeholder image instead.
+
     public display container customerImage()
     {     
         ImageReference imgRef;
