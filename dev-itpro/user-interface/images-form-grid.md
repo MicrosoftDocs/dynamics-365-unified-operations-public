@@ -78,11 +78,24 @@ For the list of symbols that are available in the symbol font, see [Symbol font]
 |---|---|
 | <ul><li>Usually, the symbol font is the smallest payload to send to the client.</li><li>You can easily customize the images by using Cascading Style Sheets (CSS).</li><li>The symbol font should already be cached on the user's computer. Therefore, no extra bandwidth is used, and there are no additional network requests that might slow down page loads.</li><li>Colors can be controlled by themes.</li><li>The images are automatically scaled on high-DPI displays.</li></ul>|A limited number of framework-defined symbols is available. |
 
-| Design time | Run time |
-|---|---|
-| <strong>Image location:</strong> Symbol <strong>Typical image:</strong> &quot;Person&quot; | Sometimes, you don't have an image for a particular record in a grid, but you don't want an empty space where the image should be. The following example shows how you can use a display method to check for an image value, and then substitute a placeholder image instead.<br><pre><code>public display container customerImage()<br>{<br>    ImageReference imgRef;<br>    container imgContainer = this.Image;<br>    if(imgContainer == connull())<br>    {<br>        // there is no image… the container is null<br>        // show a generic person outline image<br>        imgRef = ImageReference::constructForSymbol(&quot;Person&quot;);<br>        imgContainer = imgRef.pack();<br>    }<br>    return imgContainer;<br>}</code></pre> |
+### Design time
+<strong>Image location:</strong> Symbol <strong>Typical image:</strong> &quot;Person&quot;
 
-
+### Run time
+Sometimes, you don't have an image for a particular record in a grid, but you don't want an empty space where the image should be. The following example shows how you can use a display method to check for an image value, and then substitute a placeholder image instead.
+    public display container customerImage()
+    {     
+        ImageReference imgRef;
+        container imgContainer = this.Image;
+        if(imgContainer == connull())
+        {
+            // there is no image… the container is null
+            // show a generic person outline image
+            imgRef = ImageReference::constructForSymbol(&quot;Person&quot;);
+            imgContainer = imgRef.pack();
+        }
+        return imgContainer;
+    }
 
 
 ## Image type: AOTResource
