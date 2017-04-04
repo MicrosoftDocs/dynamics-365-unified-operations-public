@@ -102,11 +102,21 @@ Sometimes, you don't have an image for a particular record in a grid, but you do
 ## Image type: AOTResource
 
 | Pros | Cons |
-| In addition to the pros of using URL images (see the next section), AOT resources are modeled and managed by the development tools. | A limited number of framework-defined images is available. |
-
-| Design time | Run time |
 |---|---|
-| You just create a new resource and then save the image into the Application Object Tree (AOT) resource. When you model your image control on a page, you specify the resource name, not the image name. This approach is typically used for legacy images (icons) that don’t have equivalents in the symbol font. <strong>Image location:</strong> AOTResource <strong>Typical image:</strong> &quot;ResourceMicrosoft Dynamics AX&quot; (a .jpg is added to resources) |<pre><code>public display container imageDataMethod()<br>{<br>    ImageReference imgClass = <br>        ImageReference::constructForAotResource(&quot;<br>ResourceMicrosoft Dynamics AX&quot;);<br>    return imgClass.pack();<br>}</code></pre> |
+| In addition to the pros of using URL images (see the next section), AOT resources are modeled and managed by the development tools. | A   limited number of framework-defined images is available. |
+
+### Design time
+| You just create a new resource and then save the image into the Application Object Tree (AOT) resource. When you model your image control on a page, you specify the resource name, not the image name. This approach is typically used for legacy images (icons) that don’t have equivalents in the symbol font. <strong>Image location:</strong> AOTResource <strong>Typical image:</strong> &quot;ResourceMicrosoft Dynamics AX&quot; (a .jpg is added to resources) |
+
+### Run time
+
+    public display container imageDataMethod()
+    {
+        ImageReference imgClass =  
+              ImageReference::constructForAotResource(
+                  "ResourceMicrosoft Dynamics AX");
+        return imgClass.pack();
+    }
 
 ## Image type: URL Image
 
