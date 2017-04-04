@@ -112,7 +112,6 @@ The following sections list resources by country/region.
 
 
 ### The Czech Republic
-#NAME?
     -   [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
     -   [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
     -   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
@@ -129,7 +128,7 @@ The following sections list resources by country/region.
 -   [Fixed assets disposal](/dynamics365/operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 
 ### Europe
--   [Advance holders](emea-advance-holders.md)
+-   [Advance holders](/dynamics365/operations/financials/localizations/emea-advance-holders)
 -   [Edit invoice IDs on sales orders](/dynamics365/operations/financials/localizations/emea-edit-invoice-id-sales-orders)
 -   [EU entry certificates](/dynamics365/operations/financials/localizations/emea-entry-certificates)
 -   [EU sales list reporting](/dynamics365/operations/financials/localizations/emea-eu-sales-list)
