@@ -73,169 +73,46 @@ A symbol font is the most performant and scalable image format. We expect that c
 For the list of symbols that are available in the symbol font, see [Symbol font](symbol-font.md).
 
 ## Image type: Symbol
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>Usually, the symbol font is the smallest payload to send to the client.</li>
-<li>You can easily customize the images by using Cascading Style Sheets (CSS).</li>
-<li>The symbol font should already be cached on the user's computer. Therefore, no extra bandwidth is used, and there are no additional network requests that might slow down page loads.</li>
-<li>Colors can be controlled by themes.</li>
-<li>The images are automatically scaled on high-DPI displays.</li>
-</ul></td>
-<td>A limited number of framework-defined symbols is available.</td>
-</tr>
-<tr class="even">
-<td>Design time</td>
-<td>Run time</td>
-</tr>
-<tr class="odd">
-<td><strong>Image location:</strong> Symbol <strong>Typical image:</strong> &quot;Person&quot;</td>
-<td>Sometimes, you don't have an image for a particular record in a grid, but you don't want an empty space where the image should be. The following example shows how you can use a display method to check for an image value, and then substitute a placeholder image instead.
-<pre><code>public display container customerImage()
-{
-    ImageReference imgRef;
-    container imgContainer = this.Image;
-    if(imgContainer == connull())  // there is no image… the container is null
-    {
-        // show a generic person outline image
-        imgRef = ImageReference::constructForSymbol(&quot;Person&quot;);
-        imgContainer = imgRef.pack();
-    }
-    return imgContainer;
-}</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+| Pros | Cons |
+|---|---|
+| <ul><li>Usually, the symbol font is the smallest payload to send to the client.</li><li>You can easily customize the images by using Cascading Style Sheets (CSS).</li><li>The symbol font should already be cached on the user's computer. Therefore, no extra bandwidth is used, and there are no additional network requests that might slow down page loads.</li><li>Colors can be controlled by themes.</li><li>The images are automatically scaled on high-DPI displays.</li></ul>|A limited number of framework-defined symbols is available. |
+
+| Design time | Run time |
+|---|---|
+| <strong>Image location:</strong> Symbol <strong>Typical image:</strong> &quot;Person&quot; | Sometimes, you don't have an image for a particular record in a grid, but you don't want an empty space where the image should be. The following example shows how you can use a display method to check for an image value, and then substitute a placeholder image instead.<br><pre><code>public display container customerImage()<br>{<br>    ImageReference imgRef;<br>    container imgContainer = this.Image;<br>    if(imgContainer == connull())<br>    {<br>        // there is no image… the container is null<br>        // show a generic person outline image<br>        imgRef = ImageReference::constructForSymbol(&quot;Person&quot;);<br>        imgContainer = imgRef.pack();<br>    }<br>    return imgContainer;<br>}</code></pre> |
+
+
+
 
 ## Image type: AOTResource
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>In addition to the pros of using URL images (see the next section), AOT resources are modeled and managed by the development tools.</td>
-<td>A limited number of framework-defined images is available.</td>
-</tr>
-<tr class="even">
-<td>Design time</td>
-<td>Run time</td>
-</tr>
-<tr class="odd">
-<td>You just create a new resource and then save the image into the Application Object Tree (AOT) resource. When you model your image control on a page, you specify the resource name, not the image name. This approach is typically used for legacy images (icons) that don’t have equivalents in the symbol font. <strong>Image location:</strong> AOTResource <strong>Typical image:</strong> &quot;ResourceMicrosoft Dynamics AX&quot; (a .jpg is added to resources)</td>
-<td><pre><code>public display container imageDataMethod()
-{
-    ImageReference imgClass = 
-        ImageReference::constructForAotResource(&quot;ResourceMicrosoft Dynamics AX&quot;);
-    return imgClass.pack();
-}</code></pre></td>
-</tr>
-</tbody>
-</table>
+
+| Pros | Cons |
+| In addition to the pros of using URL images (see the next section), AOT resources are modeled and managed by the development tools. | A limited number of framework-defined images is available. |
+
+| Design time | Run time |
+|---|---|
+| You just create a new resource and then save the image into the Application Object Tree (AOT) resource. When you model your image control on a page, you specify the resource name, not the image name. This approach is typically used for legacy images (icons) that don’t have equivalents in the symbol font. <strong>Image location:</strong> AOTResource <strong>Typical image:</strong> &quot;ResourceMicrosoft Dynamics AX&quot; (a .jpg is added to resources) |<pre><code>public display container imageDataMethod()<br>{<br>    ImageReference imgClass = <br>        ImageReference::constructForAotResource(&quot;<br>ResourceMicrosoft Dynamics AX&quot;);<br>    return imgClass.pack();<br>}</code></pre> |
 
 ## Image type: URL Image
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>This approach provides an easy way to reference any image anywhere on web.</li>
-<li>This approach supports full-color images.</li>
-<li>The web browser can cache the image, based on the settings of the server that hosts the image.</li>
-</ul></td>
-<td><ul>
-<li>The transfer size isn’t as small as it is for symbols, but it's reasonable. The URL is sent as a string for each control that uses the image. The browser then downloads the image from the URL, and from that point, standard browser caching rules apply.</li>
-<li>You can’t easily theme the images by using CSS.</li>
-<li>Unless the URL points to a Scalable Vector Graphics (SVG) file, the image isn't automatically scaled on high-DPI displays.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Design time</td>
-<td>Run time</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>The following example shows an image that uses a URL that is contained in a string.
-<pre><code>public display container imageDataMethod()
-{
-ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);
-return imgClass.pack();
-}</code></pre>
-This code sends a small JavaScript Object Notation (JSON) message to the control on the client. This message instructs the control to treat the image as a URL and let the browser do the work of downloading the image. No download occurs on the server. <strong>Storing an image URL in a database table</strong> You can also have a container field for the image column on your table. You can then use code that resembles the following example to store the <strong>ImageReference</strong> pack.
-<pre><code>ImageReference imgClass;
-CLIControls_ImageTable imgTable;
-ttsbegin;
-imgClass = ImageReference::constructForUrl(
-    &quot;
-    http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg&quot;);
-imgTable.ImageField = imgClass.pack();
-imgTable.insert();
-ttscommit;</code></pre>
-This code causes the user’s browser to download the image from the specified URL. The use of ImageReference involves some overhead, but this approach lets you use a single application programming interface (API) to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.</td>
-</tr>
-</tbody>
-</table>
+
+| Pros | Cons |
+|---|---|
+| <ul><li>This approach provides an easy way to reference any image anywhere on web.</li><li>This approach supports full-color images.</li><li>The web browser can cache the image, based on the settings of the server that hosts the image.</li></ul> | <ul><li>The transfer size isn’t as small as it is for symbols, but it's reasonable. The URL is sent as a string for each control that uses the image. The browser then downloads the image from the URL, and from that point, standard browser caching rules apply.</li><li>You can’t easily theme the images by using CSS.</li><li>Unless the URL points to a Scalable Vector Graphics (SVG) file, the image isn't automatically scaled on high-DPI displays.</li></ul> |
+
+| Design time | Run time |
+|---|---|
+| | The following example shows an image that uses a URL that is contained in a string.<br><pre><code>public display container imageDataMethod()<br>{<br>ImageReference imgClass = ImageReference::constructForUrl(this.ImageURL);<br>return imgClass.pack();<br>}</code></pre><br>This code sends a small JavaScript Object Notation (JSON) message to the control on the client. This message instructs the control to treat the image as a URL and let the browser do the work of downloading the image. No download occurs on the server. <strong>Storing an image URL in a database table</strong> You can also have a container field for the image column on your table. You can then use code that resembles the following example to store the <strong>ImageReference</strong> pack.<br><pre><code>ImageReference imgClass;<br>CLIControls_ImageTable imgTable;<br>ttsbegin;<br>imgClass = ImageReference::constructForUrl(<br>    &quot;<br>    http://dynamics/PublishingImages/ERPLogos/DynamicsLogo.jpg&quot;);<br>imgTable.ImageField = imgClass.pack();<br>imgTable.insert();<br>ttscommit;</code></pre>This code causes the user’s browser to download the image from the specified URL. The use of ImageReference involves some overhead, but this approach lets you use a single application programming interface (API) to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.|
 
 ## Image type: Binary Image
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Usually, this approach offers the easiest migration if the <strong>Image</strong> class in X++ was already used, or if binary images were previously stored in the database.</td>
-<td><ul>
-<li>This approach involves the largest transfer size, because the binary image is encoded as a string and sent to the client as part of the interaction.</li>
-<li>The browser can't cache the images.</li>
-<li>For a grid, the binary-encoded image is sent for every row, even if multiple rows use the same image. Therefore, this approach can lead to very large transfer sizes in the interactions.</li>
-<li>You can't easily theme the images by using CSS.</li>
-<li>The images aren't automatically scaled on high-DPI displays.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Design time</td>
-<td>Run time</td>
-</tr>
-<tr class="odd">
-<td><strong>Using a database field</strong> This approach is typically used to display data, such as employee pictures and product images. You can bind directly to a field, or you can use a display method. Data Source Data Field Data Method</td>
-<td>Typically, the images are loaded from database, and no additional code is required. For cases where the image is managed in a data method, see the data method examples.</td>
-</tr>
-</tbody>
-</table>
+
+| Pros | Cons |
+|---|---|
+| Usually, this approach offers the easiest migration if the <strong>Image</strong> class in X++ was already used, or if binary images were previously stored in the database. | <ul><li>This approach involves the largest transfer size, because the binary image is encoded as a string and sent to the client as part of the interaction.</li><li>The browser can't cache the images.</li><li>For a grid, the binary-encoded image is sent for every row, even if multiple rows use the same image. Therefore, this approach can lead to very large transfer sizes in the interactions.</li><li>You can't easily theme the images by using CSS.</li><li>The images aren't automatically scaled on high-DPI displays.</li></ul> |
+
+| Design time | Run time |
+|---|---|
+| <strong>Using a database field</strong> This approach is typically used to display data, such as employee pictures and product images. You can bind directly to a field, or you can use a display method. Data Source Data Field Data Method | Typically, the images are loaded from database, and no additional code is required. For cases where the image is managed in a data method, see the data method examples. |
 
 ## Display methods and images (three return types)
 When you use a display method for an image type to show an image in a grid, three return types are understood by the image control that works with the framework. All three return types can be used to display an image.
@@ -289,7 +166,7 @@ An image control has a property that is named **imageList**. You pass in an inst
         {
             return 0;
         }
-        if (_hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Ignore   ||
+        if (_hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Ignore   ||
         _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Approved ||
         _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Loaded)
         {
@@ -316,8 +193,8 @@ An image control has a property that is named **imageList**. You pass in an inst
 ## Display method that returns a container
     public display container checkIfError(HRMCompEventEmpl _hrmCompEventEmpl)
     {
-        ImageReference  imageReference;
-        container       imageContainer;
+        ImageReference  imageReference;
+        container       imageContainer;
         if (_hrmCompEventEmpl.RecId && _hrmCompEventEmpl.Status == HRMCompEventEmplStatus::Created)
         {
             switch (_hrmCompEventEmpl.ErrorStatus)
@@ -351,16 +228,16 @@ Model a page that has an image control and a **FileUpload** button.
     {
         //when uploading an image, this method is called upon completion.
         uploadControl = FileUpload1;
-        uploadControl.notifyUploadCompleted +=  eventhandler(this.UploadCompleted);
+        uploadControl.notifyUploadCompleted +=  eventhandler(this.UploadCompleted);
     }
     // form close() release the callback event handler
     public void close()
     {
         // when the form closes, release the eventhandler for file upload callback
-        //  FileUpload uploadControl;
+        //  FileUpload uploadControl;
         super();
-        //  uploadControl = FileUpload1;
-        uploadControl.notifyUploadCompleted -=  eventhandler(this.UploadCompleted);
+        //  uploadControl = FileUpload1;
+        uploadControl.notifyUploadCompleted -=  eventhandler(this.UploadCompleted);
     }
     // when the upload completes, grab the image and store it in the database
     /// <summary> 
@@ -395,7 +272,7 @@ In this example, an image is created from scratch. However, developers can also 
     public void clicked()
     {
         Binary binaryImage;
-        Image  image;
+        Image  image;
         int x,y;
         super();
         InteropPermission perm = new InteropPermission(InteropKind::ClrInterop);
@@ -481,9 +358,9 @@ There might be times when you have no image for a particular record in a grid, b
     {
         ImageReference imgRef;
         container imgContainer = this.Image;
-        if(imgContainer == connull())  // there is no image… the container is null
+        if(imgContainer == connull())  // there is no image… the container is null
         {
-            imgRef = ImageReference::constructForSymbol("Person");  // show a generic person outline image
+            imgRef = ImageReference::constructForSymbol("Person");  // show a generic person outline image
             imgContainer = imgRef.pack();
         }
         return imgContainer;
@@ -515,4 +392,3 @@ You can have a container field for the image column on your table. You can then 
     ttscommit;
 
 Like the display method that is described in the "Using a display method to show an image from a URL string" section, this code causes the user's browser to download the image from the specified URL. Although this approach involves some overhead, you can use a single API to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.
-
