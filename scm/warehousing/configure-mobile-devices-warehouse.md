@@ -5,7 +5,7 @@ title: Set up mobile devices for warehouse work
 description: This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -320,7 +320,7 @@ The following table describes these options.
 </tr>
 <tr class="even">
 <td>Display inventory status</td>
-<td>Select this option to display the status of items in inventory. For more information, see <a href="/inventory/inventory-statuses.md">Advantages of using Inventory statuses</a>. This option is available for all menu items that use existing work, except cycle counting.</td>
+<td>Select this option to display the status of items in inventory. For more information, see <a href="inventory/inventory-statuses.md">Advantages of using Inventory statuses</a>. This option is available for all menu items that use existing work, except cycle counting.</td>
 </tr>
 <tr class="odd">
 <td>Display summary of pick screen</td>

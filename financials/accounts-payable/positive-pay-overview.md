@@ -5,7 +5,7 @@ title: Positive pay overview
 description: This article provides information about positive pay, which is used to generate an electronic list of checks that can be presented to a bank. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

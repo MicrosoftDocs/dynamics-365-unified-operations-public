@@ -5,7 +5,7 @@ title: Stage and publish an LCS solution
 description: This topic explains how to upload the marketing content for your LCS solution package to the Azure Publishing Portal, and how to stage and publish your solution.
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

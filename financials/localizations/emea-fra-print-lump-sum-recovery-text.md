@@ -5,7 +5,7 @@ title: Print lump sum recovery text on a customer invoice
 description: This article provides information about how to print a lump sum recovery text that shows the penalty amount on customer invoices.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

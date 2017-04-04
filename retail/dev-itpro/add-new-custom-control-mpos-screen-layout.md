@@ -5,7 +5,7 @@ title: Add a custom control to an MPOS screen layout
 description: This topic explains how to add a new custom control to a Modern POS (MPOS) screen layout.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

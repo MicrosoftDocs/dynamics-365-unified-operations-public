@@ -5,7 +5,7 @@ title: Configure an automated task in a workflow
 description: This topic explains how to configure the properties for an automated task.
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

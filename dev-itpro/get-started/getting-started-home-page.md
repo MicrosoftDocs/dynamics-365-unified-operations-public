@@ -5,7 +5,7 @@ title: Where to start
 description: Start here to onboard quickly and learn the Microsoft Dynamics 365 for Operations UI.
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

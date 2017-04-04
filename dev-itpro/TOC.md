@@ -6,7 +6,7 @@
 
 # [User interface development](user-interface/TOC.md)
 
-# Release solutions using LCS
+# Release solutions using Lifecycle Services
 ## [Develop and release](lcs-solutions/lcs-solutions-app-source.md)
 ## [Stage and publish](lcs-solutions/marketing-content-lcs-solutions.md)
 ## [Add a methodology](lcs-solutions/methodologies-lcs-solutions.md)

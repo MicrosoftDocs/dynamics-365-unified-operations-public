@@ -5,7 +5,7 @@ title: Right-to-left language support and bidirectional text
 description: In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This article discusses the issue of bidirectional text and how it's handled.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations

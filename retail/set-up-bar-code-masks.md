@@ -5,7 +5,7 @@ title: Set up bar code masks
 description: This topic describes how to set up bar code mask characters, bar code masks, and how to assign bar code masks to bar codes.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

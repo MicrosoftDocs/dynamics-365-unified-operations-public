@@ -5,7 +5,7 @@ title: Find support for Dynamics 365 for Operations and Dynamics Lifecycle Servi
 description: This article explains how to get help with Microsoft Dynamics 365 for Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

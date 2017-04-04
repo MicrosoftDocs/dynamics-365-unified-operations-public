@@ -5,7 +5,7 @@ title: Elimination rules
 description: This topic provides information about elimination rules and the various options for reporting about eliminations.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

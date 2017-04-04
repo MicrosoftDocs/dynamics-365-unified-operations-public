@@ -5,7 +5,7 @@ title: Font and background colors for input, table, and grid controls
 description: This article provides information about the new color picker control that lets users select a color.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

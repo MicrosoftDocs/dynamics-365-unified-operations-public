@@ -5,7 +5,7 @@ title: Power BI integration
 description: This article explains how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your Microsoft Dynamics 365 for Operations data. 
 author: clwesene
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

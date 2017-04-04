@@ -5,7 +5,7 @@ title: Prepare to migrate to Dynamics 365 for Operations
 description: In this topic, we will describe the LCS code upgrade service and Visual Studio tools that help you migrate your code and metadata from Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations. Most of these steps also apply to code migration between two major versions of Dynamics 365 for Operations. 
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

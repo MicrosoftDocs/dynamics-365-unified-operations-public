@@ -5,7 +5,7 @@ title: X++ reflection run-time functions
 description: This wiki describes the reflection run-time functions.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

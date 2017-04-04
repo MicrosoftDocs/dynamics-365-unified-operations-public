@@ -5,7 +5,7 @@ title: Build and debug a project
 description: In this tutorial, you’ll learn about using the tools in Visual Studio to analyze and debug code in the Fleet Management application. You’ll go through a simple developer scenario in which you will set breakpoints, modify some code, and build the result. 
 author: pvillads
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

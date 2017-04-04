@@ -5,7 +5,7 @@ title: Plan your Dynamics AX 2012 R3 deployment on Azure
 description: Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process. 
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

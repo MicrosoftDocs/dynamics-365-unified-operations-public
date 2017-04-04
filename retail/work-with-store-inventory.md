@@ -5,7 +5,7 @@ title: Manage store inventory
 description: This article describes the types of documents that you can use to manage inventory.
 author: josaw1
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

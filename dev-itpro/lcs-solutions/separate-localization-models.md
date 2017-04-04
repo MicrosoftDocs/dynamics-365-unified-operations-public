@@ -5,7 +5,7 @@ title: Separate localization models
 description: As part of the requirements for LCS solutions for localization &amp; translation, if a localization solution for previous versions of Microsoft Dynamics 365 for Operations or Microsoft Dynamics 365 for Operations contains both regulatory and competitive features, localization ISV solution providers must split the solution into separate models for each feature type. This article provides information about this requirement.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

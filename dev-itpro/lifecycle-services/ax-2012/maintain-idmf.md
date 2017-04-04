@@ -5,7 +5,7 @@ title: Maintainance in the Intelligent Data Management Framework (AX 2012)
 description: 
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services

@@ -5,7 +5,7 @@ title: Thailand unrealized VAT
 description: This topic provides information about unrealized VAT and how to set it up. It also explains how to calculate and post purchase orders that have unrealized purchase VAT and sales orders that have unrealized sales VAT, and generate reports.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

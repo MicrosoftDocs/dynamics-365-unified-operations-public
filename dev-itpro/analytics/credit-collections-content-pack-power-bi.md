@@ -5,7 +5,7 @@ title: Credit and collections Power BI content pack
 description: This topic describes what's included in the Dynamics 365 for Operations - Credit and collections management content pack for Microsoft Power BI. It explains how to access the reports included in the content pack and provides information about the data model and entities that are used to build the content pack.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: Article
 ms.prod: 
 ms.service: Dynamics365Operations

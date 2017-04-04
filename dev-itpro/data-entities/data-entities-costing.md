@@ -5,7 +5,7 @@ title: Data entities - Costing
 description: This article provides a list of the data entities that are available for the Costing functionality in Microsoft Dynamics 365 for Operations.
 author: kfend
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: reference
 ms.prod: 
 ms.service: Dynamics365Operations

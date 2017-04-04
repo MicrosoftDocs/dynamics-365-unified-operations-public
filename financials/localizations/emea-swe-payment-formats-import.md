@@ -5,7 +5,7 @@ title: Import payment formats for Sweden
 description: This topic provides information about the BankGirot MAX, BankGirot OCR import, and BankGirot return formats for Sweden.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
