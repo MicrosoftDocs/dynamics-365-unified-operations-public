@@ -5,7 +5,7 @@ title: Work with pay statements
 description: This topic describes the process for generating pay statements. It also describes other tasks, such as reversing a pay statement, that you might have to complete after you generate pay statements.
 author: rschloma
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

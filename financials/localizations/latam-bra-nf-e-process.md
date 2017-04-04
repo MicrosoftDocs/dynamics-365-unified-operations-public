@@ -5,11 +5,11 @@ title: NF-e process overview for Brazil
 description: This topic provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: 
-ms.technology: Dynamics365Operations
+ms.service: Dynamics365Operations
+ms.technology: 
 
 # optional metadata
 

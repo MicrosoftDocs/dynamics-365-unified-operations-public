@@ -5,7 +5,7 @@ title: Control checklist
 description: This article categorizes and describes all the release criteria for controls.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -230,7 +230,7 @@ Controls must use the SysTaskRecorder X++ API to indicate which actions on the c
 -   For controls that enable values to be set via properties, **SysTaskRecorder::addPropertyUserAction** should be called when the value is being set in X++. This method call tells Task Recorder to record the setting of the property.
 -   A similar method exists for commands (**SysTaskRecorder::addCommandUserAction**).
 
-For more information, see [Determine the text that Task recorder generates for a control](/wiki/control-the-text-that-task-recorder-generates-for-a-control).
+For more information, see [Determine the text that Task recorder generates for a control](task-recorder-control-text.md).
 
 #### Task Recorder playback support
 

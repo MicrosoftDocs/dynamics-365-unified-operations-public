@@ -5,7 +5,7 @@ title: Postdated checks
 description: This article provides information about support for postdated checks in Microsoft Dynamics 365 for Operations. Postdated checks are checks that are issued to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

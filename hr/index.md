@@ -5,7 +5,7 @@ title: Human resources
 description: Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
 author: rschloma
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations

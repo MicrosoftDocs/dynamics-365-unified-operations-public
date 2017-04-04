@@ -5,7 +5,7 @@ title: ESR customer payments import
 description: This topic provides information about importing customer payments in the ESR format.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

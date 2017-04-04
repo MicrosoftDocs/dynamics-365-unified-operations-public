@@ -5,7 +5,7 @@ title: Set up and generate positive pay files
 description: This article explains how to set up positive pay and generate positive pay files. 
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

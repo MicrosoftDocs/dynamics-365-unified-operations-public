@@ -5,7 +5,7 @@ title: Retail SDK overview
 description: This article provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

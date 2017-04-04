@@ -5,7 +5,7 @@ title: Direct deliveries
 description: This article provides information about direct deliveries. Direct deliveries are deliveries that are sent directly from the vendor to your customer.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

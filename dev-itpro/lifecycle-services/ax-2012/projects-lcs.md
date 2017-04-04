@@ -5,7 +5,7 @@ title: Record entry points in Dynamics AX Enterprise Portal
 description: This article provides information about projects in Microsoft Dynamics Lifecycle Services (LCS). It describes some important features and also explains the role of the project methodology.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

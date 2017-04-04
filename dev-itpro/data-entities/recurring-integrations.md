@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. For the current version of Microsoft Dynamics 365 for Operations, we have tried to simplify this process for all parties who are involved.
 author: RobinARH
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

@@ -5,7 +5,7 @@ title: Plan freight transportation routes with multiple stops
 description: This article describes the various elements that you use to plan transportation routes in Microsoft Dynamics AX.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

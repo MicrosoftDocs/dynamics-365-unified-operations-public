@@ -5,7 +5,7 @@ title: Financial period close workspace
 description: This article provides an overview of the Financial period close workspace and the associated configuration.
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

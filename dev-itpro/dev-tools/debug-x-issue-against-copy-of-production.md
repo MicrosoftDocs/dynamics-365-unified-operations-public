@@ -5,7 +5,7 @@ title: Debug X++ against a copy of a production database
 description: This topic explains how to configure X++ debugging so that you can investigate issues in the production environment. For this procedure, you make a copy of the production database and then configure a developer environment to connect to the copied database.
 author: MargoC
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -37,7 +37,7 @@ This topic explains how to configure X++ debugging so that you can investigate i
 Solution overview
 -----------------
 
-When an issue that requires X++ debugging occurs in a production environment, the system administrator and developer work together to configure debugging and then debug the issue. The following illustration shows an overview of the process. \[caption id="attachment\_1202943" align="alignnone" width="611"\][![](./media/debugxpp.jpg)](./media/debugxpp.jpg) Process overview\[/caption\]
+When an issue that requires X++ debugging occurs in a production environment, the system administrator and developer work together to configure debugging and then debug the issue. The following illustration shows an overview of the process. [![Debug X+=](./media/debugxpp.jpg)](./media/debugxpp.jpg)
 
 1.  In Microsoft Dynamics Lifecycle Services (LCS), the system administrator requests that a copy of the database be added to the sandbox environment.
 2.  In Microsoft Visual Studio Team Services (VSTS), the developer synchronizes the local code to the same build that is running in the production environment.
