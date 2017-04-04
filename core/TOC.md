@@ -64,7 +64,7 @@
 
 # [Financials](/dynamics365/operations/financials/index)
 
-# [Human resources](/dynamics365/operations/hr/index)
+# [Human resources](/dynamics365/operations/human-resources/index)
 
 # [Retail](/dynamics365/operations/retail/index)
 

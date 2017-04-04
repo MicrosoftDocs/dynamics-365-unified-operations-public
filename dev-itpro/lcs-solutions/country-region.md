@@ -282,7 +282,7 @@ The following sections list resources by country/region.
 
 ### United States
 
--   [Form I-9 verification](/dynamics365/operations/hr/localizations/noram-usa-form-i-9-verification)
+-   [Form I-9 verification](/dynamics365/operations/human-resources/localizations/noram-usa-form-i-9-verification)
 -   [Year-end 1099 reporting](/dynamics365/operations/financials/localizations/noram-usa-year-end-1099-reporting)
--   [Payroll](/dynamics365/operations/hr/localizations/noram-usa-payroll)
+-   [Payroll](/dynamics365/operations/human-resources/localizations/noram-usa-payroll)
 -   [Public sector](/dynamics365/operations/financials/public-sector/public-sector-functionality)
