@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure screen layouts for POS
