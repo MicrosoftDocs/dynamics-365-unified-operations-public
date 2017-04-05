@@ -1,3 +1,34 @@
+---
+# required metadata
+
+title: Extend the RunBase class
+description: This topic contains an example that shows how a RunBase class can be augmented end to end.
+author: robinarh
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer
+# ms.devlang: 
+ms.reviewer: robinarh
+ms.search.scope: Operations, Platform, AX Platform
+# ms.tgt_pltfrm: 
+ms.custom: 89563
+ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: pvillads
+ms.search.validFrom: 2016-05-31
+ms.dyn365.ops.version: Platform update 1
+
+---
 
 # Extend the RunBase class
 
