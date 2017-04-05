@@ -105,6 +105,7 @@
 ## [Customize model elements using extensions](../extensibility/customize-model-elements-extensions.md)
 ## [Customize with extensions and overlayering](../extensibility/customization-overlayering-extensions.md)
 ## [Class extensions](../extensibility/class-extensions.md)
+## [Extend the RunBase class](../extensibility/extend-runbase-class.md)
 ## Database synchronization
 # Move packages between environments
 ## Create and apply a deployable package
