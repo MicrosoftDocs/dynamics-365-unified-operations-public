@@ -232,7 +232,8 @@ We recommend that you use the registration mechanism that is described in this s
  	<li>Define a Shortcuts object on the control's prototype. Then define the keyboard shortcuts inside the Shortcuts object. These shortcuts should have the following structure. Make sure that the key code that you're trying to use is defined in the $dyn.ui.KeyCodes object.
 <pre>Shortcuts: {
     Name: {
-        Keys: { modifier1: true, modifier2:true, keyCode: $dyn.ui.KeyCodes.* }, //Only specify the modifiers you need (between alt, ctrl/meta, shift)
+        Keys: { modifier1: true, modifier2:true, keyCode: $dyn.ui.KeyCodes.* }, 
+        //Only specify the modifiers you need (between alt, ctrl/meta, shift)
         Handler: function (evt) {
             // Code to handle shortcut.
         },
