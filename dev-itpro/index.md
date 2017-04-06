@@ -32,7 +32,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Overview of Microsoft Dynamics 365 for Operations for Developers and IT Pros
 
-[!include[<go-live-banner>](<dynamics365/operations/go-live-banner.md>)]
+[!include[go-live-banner](/dynamics365/operations/includes/go-live-banner)]
+
 Microsoft Dynamics 365 for Operations represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It's designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft.
 
 # IT Pro experience
