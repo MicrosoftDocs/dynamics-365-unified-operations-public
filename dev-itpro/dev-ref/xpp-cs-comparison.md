@@ -1256,6 +1256,7 @@ The important things to notice in the X++ example are the following:
 -   The parameter value that passed in to the delegate is received by each event handler method.
 -   The short X++ job at the top of the example starts the test.
 
+<pre>
     // X++
     // Simple job to start the delegate event test.
     static void DelegateEventTestJob()
@@ -1289,7 +1290,7 @@ The important things to notice in the X++ example are the following:
             myXppClass.myDelegate(_stringFromJob);
         }
     }
- 
+</pre> 
 
 The output from the previous X++ job is as follows:
 
@@ -1371,7 +1372,7 @@ The following table lists precompiler directives that are similar in X++ and C\#
 The following table lists precompiler directives that are named differently in X++ and C\#, but that give the same results when processed.
 
 | X++ | C# | Comments |
-|---|---|---|---|
+|---|---|---|
 | \#ifnot                     | \#if \#else      | There is no \#else directive in X++, but the \#ifnot provides similar functionality. In X++, \#ifnot can determine whether a precompiler variable exists, and whether the variable does not have a specific given value. In C\#, \#if can determine whether a precompiler variable exists when the ‘!’ symbol is prefixed to the variable name. |
 | `//BP Deviation documented` | \#pragma warning | These X++ and C\# entries are not equivalent, but there is a partial similarity. Both suppress compiler warning messages.                    |
 | \#macrolib                  | .HPP file in C++ | There is a partial similarity between the X++ directive \#macrolib versus an .HPP file in C++. Both can contain several \#define statements.            |
