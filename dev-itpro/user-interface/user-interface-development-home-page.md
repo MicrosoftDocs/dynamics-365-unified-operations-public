@@ -73,6 +73,7 @@ The form metamodel continues to be used to define controls and application logic
 -   [Specify the font and background colors for input, table, and grid controls](specify-color-font-background-controls.md)
 -   [Support for right-to-left languages: A primer on bidirectional text](bidirectional-support.md)
 -   [Creating icons for workspace tiles](create-icons-workspace-tiles.md)
+-   [Keyboard shortcuts for extensible controls](keyboard-shortcuts-controls.md)
 -   [Extensible controls – public JavaScript APIs](public-javascript-apis.md)
 
 ## Messaging
