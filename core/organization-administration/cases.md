@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Case management overview
 
 
+[!include[banner](../includes/go-live-banner.md)]
 
 By planning, tracking, and analyzing cases, you can develop efficient resolutions that can be used for similar issues. For example, when customer service representatives or Human Resources generalists create cases, they can find information in knowledge articles to help them work with or resolve a case more efficiently. The following examples show how cases can be used for different situations in an organization.
 
