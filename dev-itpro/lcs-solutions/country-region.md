@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Localization and regulatory features
 
-Microsoft Dynamics 356 for Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft Dynamics AX Product Availability Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
+Microsoft Dynamics 356 for Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
 
 ## Developing localized solutions
 The following resources provides guidance and information that can help developers and ISVs who are creating country/region-specific customizations or are created a solution for a country that Microsoft does not support.
