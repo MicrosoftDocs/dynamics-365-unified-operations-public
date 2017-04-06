@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 # Introduction to Dynamics 365 for Operations
 
-[!INCLUDE[GoLiveBanner](/go-live-banner.md)]
+[!INCLUDE[GoLiveBanner](go-live-banner.md)]
 
 
 Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
