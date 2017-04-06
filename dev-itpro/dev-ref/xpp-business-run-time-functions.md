@@ -2,7 +2,7 @@
 # required metadata
 
 title: X++ business run-time functions
-description: This wiki describes the business run-time functions.
+description: This topic describes the business run-time functions.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ business run-time functions
 
-This wiki describes the business run-time functions.
+This topic describes the business run-time functions.
 
 These functions enter financial data and calculate formulas.
 

@@ -85,7 +85,7 @@ The Kickoff workshop is designed to initiate FastTrack engagements and provide i
 -   Engagement scope, schedule and adoption targets
 -   Responsibilities among customer, partner, and Microsoft FastTrack engineering team
 -   Explanation on how services are delivered, where and when to seek help from Microsoft FastTrack engineering team
--   Introduction to Dynamics Lifecycle Service (LCS) and Dynamics 365 for Operations Help Wiki
+-   Introduction to Dynamics Lifecycle Service (LCS) and Dynamics 365 for Operations Microsoft docs site
 -   Pre-activation checklist
 -   Environment planning
 -   Regular touchpoint schedule

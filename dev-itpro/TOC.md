@@ -29,7 +29,7 @@
 # [Data entities](data-entities/TOC.md)
 
 # Mobile apps
-## [Install and configure the warehousing app ](/dynamics365/operations/scm/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Install and configure the warehousing app ](/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
 ## Mobile workspace X++ APIs - NEED TO FIND THIS TOPIC IN GITHUB
 
@@ -45,7 +45,7 @@
 
 # Supply chain development
 ## [Gantt development guide](user-interface/gantt-development-guide.md)
-## [Create a new transportation management engine](/dynamics365/operations/scm/transportation/create-new-transportation-management-engine?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Create a new transportation management engine](/dynamics365/operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/operations/dev-itpro/toc.json)
 
 # [Retail development](/dynamics365/operations/retail/dev-itpro/dev-retail-home-page)
 

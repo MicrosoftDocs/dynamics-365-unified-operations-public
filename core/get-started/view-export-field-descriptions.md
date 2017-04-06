@@ -85,11 +85,11 @@ This section provides information to help you troubleshoot issues that you might
 
 ### I can't find a field description
 
-We’re in the process of adding descriptions for the more complex fields. If you require help for a particular field, let us know by adding a comment for this wiki article.
+We’re in the process of adding descriptions for the more complex fields. If you require help for a particular field, let us know by adding a comment for this topic.
 
 ### The field description isn't helpful
 
-Let us know by adding a comment for this wiki article. If you can, describe the additional information that you require.
+Let us know by adding a comment for this topic. If you can, describe the additional information that you require.
 
 ### I can't find a field on the Field descriptions page
 
