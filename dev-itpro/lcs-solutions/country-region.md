@@ -32,19 +32,24 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Localization and regulatory features
 
-Microsoft Dynamics 356 for Operations includes functionality for some country/region-specific regulations and processes. This functionality is enabled based on the primary address of the active legal entity. This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
+Microsoft Dynamics 356 for Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft Dynamics AX Product Availability Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
 
-## Developer and ISV information
-The following resources provide information that can help developers and ISVs who are creating country/region-specific customizations.
+## Developing localized solutions
+The following resources provides guidance and information that can help developers and ISVs who are creating country/region-specific customizations or are created a solution for a country that Microsoft does not support.
 -   [Separate localization models](separate-localization-models.md)
 -   [Apply country/region context](apply-country-context.md)
 -   [Regulatory certifications](regulatory-certifications.md)
 -   [Classify localization features](classify-localization-features.md)
 -   [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## Localization updates
+## Localization updates and communication
 The following resources provide information about planned and new localization features. 
--   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC)
+
+### Localization updates
+-   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Updated weekly)
+-   [LCS issue search](lifecycle-services/issue-search-lcs.md)(Updated daily)
+
+### Communication and alerts
 -   [Regulatory watch and regulatory update communication](regulatory-watch-communication.md)
 -   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](submit-localization-alerts.md)
 
@@ -112,10 +117,10 @@ The following sections list resources by country/region.
 
 
 ### The Czech Republic
-    -   [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
-    -   [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
-    -   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
-    -   [Fixed assets depreciation methods for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+-  [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
+-  [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
+-   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
+-   [Fixed assets depreciation methods for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
 -   [Post the pre-acquisition of a fixed asset](/dynamics365/operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [VAT statement for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Split periods in periodic journals](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
