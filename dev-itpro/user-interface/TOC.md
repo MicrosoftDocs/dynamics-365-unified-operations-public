@@ -80,6 +80,7 @@
 ## [Workspace Page Filter Group subpattern](workspace-filter-group-subpattern.md)
 # Control extensibility
 ## [Build an extensible control](build-extensible-control.md)
+## [Keyboard shortcuts for extensible controls](keyboard-shortcuts-controls.md)
 ## [Extensible control programming reference](extensible-control-programming-reference.md)
 ## [Control extensibility](control-extensibility.md)
 ## [Create localizable labels](create-localizable-labels-client.md)
