@@ -61,7 +61,15 @@ The Electronic reporting (ER) tool allows you to configure formats for electroni
 -   [Extend the list of Electronic reporting functions](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Electronic reporting destinations](../analytics/electronic-reporting-destinations.md)
 -   [Download Electronic reporting configurations from Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
--   [Set up Electronic reporting with Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Configure Electronic reporting to pull data into Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+## Task guides
+Task guides are available from the product help pane and they provide a guided walk-through of key business processes. You can open a task guide to read the steps of a business process or you can play a task guide to walk through a business process and enter data along the way.
+
+To find task guides, navigate to a page in Microsoft Dynamics 365 for Operations and click Help. Task guides that use the page are listed in the help pane. You can also use the help pane to search for task guides by title.
+
+To learn more, see [Task guides](/dynamics365/operations/dev-itpro/get-started/help-overview#task-guides).
+
 
 ## Country/region specific help topics
 The following sections list resources by country/region.
@@ -296,3 +304,4 @@ The following sections list resources by country/region.
 -   [Year-end 1099 reporting](/dynamics365/operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Payroll](/dynamics365/operations/human-resources/localizations/noam-usa-payroll)
 -   [Public sector](/dynamics365/operations/financials/public-sector/public-sector-functionality)
+
