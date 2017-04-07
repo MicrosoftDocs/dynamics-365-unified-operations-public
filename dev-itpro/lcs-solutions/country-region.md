@@ -66,7 +66,7 @@ The Electronic reporting (ER) tool allows you to configure formats for electroni
 -   [Configure Electronic reporting to pull data into Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## Task guides
-Task guides are available from the product help pane and they provide a guided walk-through of key business processes. You can open a task guide to read the steps of a business process or you can play a task guide to walk through a business process and enter data along the way.
+Task guides are available from the product help pane and they provide a guided walk-through of key business processes. You can open a task guide to read the steps of a business process or you can play a task guide to walk through a business process and enter data.
 
 To find task guides, navigate to a page in Microsoft Dynamics 365 for Operations and click Help. Task guides that use the page are listed in the help pane. You can also use the help pane to search for task guides by title.
 
