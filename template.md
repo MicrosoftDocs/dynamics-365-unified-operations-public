@@ -2,7 +2,7 @@
 # required metadata
 
 title: [Topic name]
-description: [Full description that appears in the search results. Usually the first paragraph of your topic.]
+description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: [your GitHub alias]
 manager: AnnBe
 ms.date: 04/04/2017
