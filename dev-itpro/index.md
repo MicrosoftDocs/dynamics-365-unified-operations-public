@@ -6,7 +6,7 @@ description: This page helps IT Pros and developers get started wtih Microsoft D
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
-ms.topic: article
+ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
@@ -22,7 +22,7 @@ ms.reviewer: 71
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
-ms.region: Global
+ms.search.region: Global
 # ms.industry: 
 ms.author: margoc
 ms.search.validFrom: 2016-02-28

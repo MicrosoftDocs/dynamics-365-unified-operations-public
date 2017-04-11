@@ -6,7 +6,7 @@ description: This page points to resources that will help you use the Microsoft 
 author: yuyus
 manager: AnnBe
 ms.date: 04/04/2017
-ms.topic: article
+ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 

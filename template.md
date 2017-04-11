@@ -57,7 +57,7 @@ Here are some key things to note about metadata.
     - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
     - **ms.custom** 
     - **ms.assetid** - This is the GUID of the article that is used for internal tracking purposes. When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com).
-    - **ms.region** - Use "global" or enter a country-region value.
+    - **ms.search.region** - Use "global" or enter a country-region value.
     - **ms.author** - Use your Microsoft alias.  
 
 ## Basic Markdown, GFM, and special characters
