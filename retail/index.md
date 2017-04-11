@@ -6,7 +6,7 @@ description: Home page for Dynamics 365 for Operations – Retail
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
-ms.topic: article
+ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 

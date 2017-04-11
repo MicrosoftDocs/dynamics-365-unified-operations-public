@@ -57,7 +57,7 @@ To invoke the installation of the metadata hotfix, you can call the SCDPBundleIn
 
 If you're not using VSTS or TFS for source control, use the following command.
 
-    SCDPBundleInstall.exe -packagepath=<scdp file containing the hotfix> -metadatastorepath=<metadata packages root folder>
+    SCDPBundleInstall.exe -install -packagepath=<scdp file containing the hotfix> -metadatastorepath=<metadata packages root folder>
 
 #### With version control (recommended)
 

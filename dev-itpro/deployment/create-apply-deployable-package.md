@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a deployable package
-description: This wiki describes the workflow for creating and applying a deployable package.
+description: This topic describes the workflow for creating and applying a deployable package.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create and apply a deployable package
 
-This wiki describes the workflow for creating and applying a deployable package.
+This topic describes the workflow for creating and applying a deployable package.
 
 Overview of the packaging and deployment process
 ------------------------------------------------

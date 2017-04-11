@@ -2,7 +2,7 @@
 # required metadata
 
 title: X++ container run-time functions
-description: This wiki describes the container run-time functions.
+description: This topic describes the container run-time functions.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ container run-time functions
 
-This wiki describes the container run-time functions.
+This topic describes the container run-time functions.
 
 These functions manipulate the contents of containers.
 

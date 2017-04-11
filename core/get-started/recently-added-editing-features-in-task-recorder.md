@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recently added editing features in task recorder
-description: If you use task recorder to create task guides, you can edit your files more efficiently using the functionality described in this wiki.
+description: If you use task recorder to create task guides, you can edit your files more efficiently using the functionality described in this topic.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Recently added editing features in task recorder
 
-If you use task recorder to create task guides, you can edit your files more efficiently using the functionality described in this wiki.
+If you use task recorder to create task guides, you can edit your files more efficiently using the functionality described in this topic.
 
 These features are available on the **Settings &gt; Task recorder &gt; Edit recording** menu.
 

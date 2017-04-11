@@ -61,7 +61,7 @@ The system can be accessed by end users. The administrator can add users to this
 
 1.  Go to your LCS project page.
 2.  In the **Environments** section, click the deployed environment.
-3.  When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Dynamics 365 for Operations** in the upper-right corner. ****
+3.  When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Dynamics 365 for Operations** in the upper-right corner.
 4.  Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
 5.  In your browser, make a note of the Dynamics 365 for Operations base URL after you sign in. For example, the base URL might be **https://dynamicsAx7aosContoso.cloud.dynamics.com**.
 
@@ -207,7 +207,7 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Retail configuration
 
 The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Retail SDK overview](/dynamics365/operations/retail/dev-itpro/retail-sdk-overview)
+-   [Retail SDK overview](/dynamics365/operations/retail/dev-itpro/retail-sdk/retail-sdk-overview)
 -   [Retail POS device activation](/dynamics365/operations/retail/dev-itpro/retail-device-activation)
 
 ## Redeploying or restarting the runtime on the VM
