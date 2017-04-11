@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Welcome to human resources
 
-[!include[go-live-banner](includes/banner.md)]
+[!include[banner](includes/banner.md)]
 
 Human resources streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. It also provides a framework for human resources staff to manage areas of oversight. These areas include employee recruitment and retention, benefits administration, training, performance reviews, and change management.
 
