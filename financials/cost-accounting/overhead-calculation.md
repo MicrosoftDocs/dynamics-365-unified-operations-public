@@ -304,161 +304,130 @@ The fixed cost should be distributed evenly to the individual cost objects that 
 
 ##### Journal
 
-Journal
-
-Journal type
-
-Fiscal calendar period
-
-Version
-
-00002
-
-Cost distribution calculation journal
-
-Fiscal
-
-2017
-
-Period 1
-
-Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1
+<table>
+<thead>
+<tr>
+<th>Journal</th>
+<th>Journal type</th>
+<th colspan="3">Fiscal calendar period</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00002</td>
+<td>Cost distribution calculation journal</td>
+<td>Fiscal</td>
+<td>2017</td>
+<td>Period 1</td>
+<td>Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</td>
+</tr>
+</tbody>
+</table>
 
 ##### Journal entries (Cost object balance journal entries)
 
-Accounting date
-
-Cost object
-
-Cost element
-
-Cost behavior
-
-Amount
-
-January 31, 2017
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-Fixed cost
-
-1,000.00
-
-January 31, 2017
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-Variable cost
-
-9,000.00
+<table>
+<thead>
+<tr>
+<th>Accounting date</th>
+<th colspan="2">Cost object</th>
+<th colspan="2">Cost element</th>
+<th>Cost behavior</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January 31, 2017</td>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>1,000.00</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>9,000.00</td>
+</tr>
+</tbody>
+</table>
 
 ##### Cost entries
 
-Cost object
-
-Cost element
-
-Cost behavior
-
-Amount
-
-Accounting date
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-Fixed cost
-
--1,000.00
-
-January 31, 2017
-
-CC001
-
-HR
-
-10001
-
-Electricity
-
-Fixed cost
-
-500.00
-
-January 31, 2017
-
-CC002
-
-Finance
-
-10001
-
-Electricity
-
-Fixed cost
-
-500.00
-
-January 31, 2017
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-Variable cost
-
--9,000.00
-
-January 31, 2017
-
-CC001
-
-HR
-
-10001
-
-Electricity
-
-Variable cost
-
-1,285.71
-
-January 31, 2017
-
-CC002
-
-Finance
-
-10001
-
-Electricity
-
-Variable cost
-
-7,714.29
-
-January 31, 2017
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th colspan="2">Cost element</th>
+<th>Cost behavior</th>
+<th>Amount</th>
+<th>Accounting date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>-1,000.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC001</td>
+<td>HR</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>500.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>500.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>-9,000.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC001</td>
+<td>HR</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>1,285.71</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>7,714.29</td>
+<td>January 31, 2017</td>
+</tr>
+</tbody>
+</table>
 
 For detailed information about cost distribution and allocation bases, see Cost distribution policy and Allocation bases. (Note that this topic isn't competed yet but is coming soon.)
 
@@ -470,195 +439,183 @@ The overhead rate is used to charge one or more specific cost objects. The charg
 
 Cost object CC001 HR contributes to a set of internal projects. A statistical dimension member that is named HR projects is created to measure the consumed magnitude.
 
-Cost object
-
-Hours
-
-Proj 1
-
-Project 1
-
-3
-
-Proj 2
-
-Project 2
-
-1
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Hours</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proj 1</td>
+<td>Project 1</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Proj 2</td>
+<td>Project 2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 
 A predetermined cost rate for the cost projects contribution has been defined.
 
-Cost object
-
-Cost element
-
-Cost behavior
-
-Units
-
-Rate
-
-CC001
-
-HR
-
-10001
-
-Variable cost
-
-1
-
-10
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Cost element</th>
+<th>Cost behavior</th>
+<th>Units</th>
+<th>Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC001</td>
+<td>HR</td>
+<td>10001</td>
+<td>Variable cost</td>
+<td>1</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
 
 The following table shows the result when the HR projects are applied as an allocation base.
 
-Cost object
-
-Magnitude
-
-Cost element
-
-Allocation factor
-
-Amount
-
-Proj 1
-
-Project 1
-
-3
-
-10001
-
-(3 ÷ 1) × 10.00
-
-30.00
-
-Proj 2
-
-Project 2
-
-1
-
-10001
-
-(1 ÷ 1) × 10.00
-
-10.00
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Magnitude</th>
+<th>Cost element</th>
+<th>Allocation factor</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proj 1</td>
+<td>Project 1</td>
+<td>3</td>
+<td>10001</td>
+<td>(3 ÷ 1) × 10.00</td>
+<td>30.00</td>
+</tr>
+<tr>
+<td>Proj 2</td>
+<td>Project 2</td>
+<td>1</td>
+<td>10001</td>
+<td>(1 ÷ 1) × 10.00</td>
+<td>10.00</td>
+</tr>
+</tbody>
+</table>
 
 ##### Journal
 
-Journal
-
-Journal type
-
-Fiscal calendar period
-
-Version
-
-00003
-
-Overhead rate calculation journal
-
-Fiscal
-
-2017
-
-Period 1
-
-Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1
+<table>
+<thead>
+<tr>
+<th>Journal</th>
+<th>Journal type</th>
+<th colspan="3">Fiscal calendar period</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00003</td>
+<td>Overhead rate calculation journal</td>
+<td>Fiscal</td>
+<td>2017</td>
+<td>Period 1</td>
+<td>Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</td>
+</tr>
+</tbody>
+</table>
 
 ##### Journal entries (Journal entries for overhead rate calculation)
 
-Accounting date
-
-Cost object
-
-Magnitude
-
-January 31, 2017
-
-Proj 1
-
-Internal Proj 1
-
-3.00
-
-January 31, 2017
-
-Proj 2
-
-Internal Proj 2
-
-1.00
+<table>
+<thead>
+<tr>
+<th>Accounting date</th>
+<th colspan="2">Cost object</th>
+<th>Magnitude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January 31, 2017</td>
+<td>Proj 1</td>
+<td>Internal Proj 1</td>
+<td>3.00</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>Proj 2</td>
+<td>Internal Proj 2</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table>
 
 ##### Cost entries
 
-Cost object
-
-Cost element
-
-Cost behavior
-
-Amount
-
-Accounting date
-
-CC0001
-
-HR
-
-10001
-
-Electricity
-
-Variable cost
-
--30.00
-
-January 31, 2017
-
-Proj 1
-
-Internal Proj 1
-
-10001
-
-Electricity
-
-Variable cost
-
-30.00
-
-January 31, 2017
-
-CC001
-
-HR
-
-10001
-
-Electricity
-
-Variable cost
-
--10.00
-
-January 31, 2017
-
-Proj 2
-
-Internal Proj 2
-
-10001
-
-Electricity
-
-Variable cost
-
-10.00
-
-January 31, 2017
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th colspan="2">Cost element</th>
+<th>Cost behavior</th>
+<th>Amount</th>
+<th>Accounting date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC0001</td>
+<td>HR</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>-30.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Proj 1</td>
+<td>Internal Proj 1</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>30.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC001</td>
+<td>HR</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>-10.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Proj 2</td>
+<td>Internal Proj 2</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>10.00</td>
+<td>January 31, 2017</td>
+</tr>
+</tbody>
+</table>
 
 For detailed information about overhead rate policy, see Overhead rate policy and Allocation bases. (Note that this topic isn't competed yet but is coming soon.)
 
@@ -670,1014 +627,786 @@ Allocation is used to allocate the balance of a cost object to other cost object
 
 Here is a simple example that explains how you can trace the flow of cost. Cost object CC001 HR contributes to several cost objects. A statistical dimension member that is named HR services is created to measure the consumed magnitude.
 
-Cost object
-
-HR services
-
-CC002
-
-Finance
-
-35
-
-CC003
-
-Assembly
-
-55
-
-CC004
-
-Packaging
-
-10
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>HR services</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>35</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>55</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
 
 Cost object CC002 Finance contributes to several cost objects. A statistical dimension member that is named Finance services is created to measure the consumed magnitude.
 
-Cost object
-
-Finance services
-
-CC003
-
-Assembly
-
-65
-
-CC004
-
-Packaging
-
-35
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Finance services</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>65</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>35</td>
+</tr>
+</tbody>
+</table>
 
 Cost object CC003 Assembly contributes to several cost objects. A statistical dimension member that is named Assembly services is created to measure the consumed magnitude.
 
-Cost object
-
-Assembly services (hours)
-
-Prod 1
-
-Product 1
-
-60
-
-Prod 2
-
-Product 2
-
-20
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Assembly services (hours)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
 
 Cost object CC004 Packaging contributes to several cost objects. A statistical dimension member that is named Packaging services is created to measure the consumed magnitude.
 
-Cost object
-
-Packaging services (hours)
-
-Prod 1
-
-Product 1
-
-80
-
-Prod 2
-
-Product 2
-
-15
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Packaging services (hours)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
 
 **Note:** In Dynamics 365 for Operations, statistical measures such as the production hours that a product consumes can be derived from source data. For more detailed information about statistical measure providers, see Statistical measure provider template. (Note that this topic isn't completed yet but is coming soon.) The following table shows the result when the HR services are applied as an allocation base for total cost (fixed cost and variable cost).
 
-Cost object
-
-Magnitude
-
-Allocation factor
-
-Amount
-
-Cost behavior
-
-CC002
-
-Finance
-
-35
-
-(35 ÷ 100) × 500.00
-
-175.00
-
-Fixed cost
-
-CC003
-
-Assembly
-
-55
-
-(55 ÷ 100) × 500.00
-
-275.00
-
-Fixed cost
-
-CC004
-
-Packaging
-
-10
-
-(10 ÷ 100) × 500.00
-
-50.00
-
-Fixed cost
-
-CC002
-
-Finance
-
-35
-
-(35 ÷ 100) × 1,245.71
-
-436.00
-
-Variable cost
-
-CC003
-
-Assembly
-
-55
-
-(55 ÷ 100) × 1,245.71
-
-685.14
-
-Variable cost
-
-CC004
-
-Packaging
-
-10
-
-(10 ÷ 100) × 1,245.71
-
-124.57
-
-Variable cost
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Magnitude</th>
+<th>Allocation factor</th>
+<th>Amount</th>
+<th>Cost behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>35</td>
+<td>(35 ÷ 100) × 500.00</td>
+<td>175.00</td>
+<td>Fixed cost</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>55</td>
+<td>(55 ÷ 100) × 500.00</td>
+<td>275.00</td>
+<td>Fixed cost</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>10</td>
+<td>(10 ÷ 100) × 500.00</td>
+<td>50.00</td>
+<td>Fixed cost</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>35</td>
+<td>(35 ÷ 100) × 1,245.71</td>
+<td>436.00</td>
+<td>Variable cost</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>55</td>
+<td>(55 ÷ 100) × 1,245.71</td>
+<td>685.14</td>
+<td>Variable cost</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>10</td>
+<td>(10 ÷ 100) × 1,245.71</td>
+<td>124.57</td>
+<td>Variable cost</td>
+</tr>
+</tbody>
+</table>
 
 The following table shows the result when the Finance services are applied as an allocation base for total cost (fixed cost and variable cost).
 
-Cost object
-
-Magnitude
-
-Allocation factor
-
-Amount
-
-Cost behavior
-
-CC003
-
-Assembly
-
-65
-
-(65 ÷ 100) × (500.00 + 175.00)
-
-438.75
-
-Fixed cost
-
-CC004
-
-Packaging
-
-35
-
-(35 ÷ 100) × (500.00 + 175.00)
-
-236.25
-
-Fixed cost
-
-CC003
-
-Assembly
-
-65
-
-(65 ÷ 100) × (7,714.29 + 436.00)
-
-5,297.69
-
-Variable cost
-
-CC004
-
-Packaging
-
-35
-
-(35 ÷ 100) × (7,714.29 + 436.00)
-
-2,852.60
-
-Variable cost
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Magnitude</th>
+<th>Allocation factor</th>
+<th>Amount</th>
+<th>Cost behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>65</td>
+<td>(65 ÷ 100) × (500.00 + 175.00)</td>
+<td>438.75</td>
+<td>Fixed cost</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>35</td>
+<td>(35 ÷ 100) × (500.00 + 175.00)</td>
+<td>236.25</td>
+<td>Fixed cost</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>65</td>
+<td>(65 ÷ 100) × (7,714.29 + 436.00)</td>
+<td>5,297.69</td>
+<td>Variable cost</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>35</td>
+<td>(35 ÷ 100) × (7,714.29 + 436.00)</td>
+<td>2,852.60</td>
+<td>Variable cost</td>
+</tr>
+</tbody>
+</table>
 
 The following table shows the result when the Assembly services are applied as an allocation base for total cost (fixed cost and variable cost).
 
-Cost object
-
-Magnitude
-
-Allocation factor
-
-Amount
-
-Cost behavior
-
-Prod 1
-
-Product 1
-
-60
-
-(60 ÷ 80) × (275.00 + 438.75)
-
-535.31
-
-Fixed cost
-
-Prod 2
-
-Product 2
-
-20
-
-(20 ÷ 80) × (275.00 + 438.75)
-
-178.44
-
-Fixed cost
-
-Prod 1
-
-Product 1
-
-60
-
-(60 ÷ 80) × (5,297.69 + 685.14)
-
-4,487.12
-
-Variable cost
-
-Prod 2
-
-Product 2
-
-20
-
-(20 ÷ 80) × (5,297.69 + 685.14)
-
-1,495.71
-
-Variable cost
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Magnitude</th>
+<th>Allocation factor</th>
+<th>Amount</th>
+<th>Cost behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>60</td>
+<td>(60 ÷ 80) × (275.00 + 438.75)</td>
+<td>535.31</td>
+<td>Fixed cost</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>20</td>
+<td>(20 ÷ 80) × (275.00 + 438.75)</td>
+<td>178.44</td>
+<td>Fixed cost</td>
+</tr>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>60</td>
+<td>(60 ÷ 80) × (5,297.69 + 685.14)</td>
+<td>4,487.12</td>
+<td>Variable cost</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>20</td>
+<td>(20 ÷ 80) × (5,297.69 + 685.14)</td>
+<td>1,495.71</td>
+<td>Variable cost</td>
+</tr>
+</tbody>
+</table>
 
 The following table shows the result when the Packaging services are applied as an allocation base for total cost (fixed cost and variable cost).
 
-Cost object
-
-Magnitude
-
-Allocation factor
-
-Amount
-
-Cost behavior
-
-Prod 1
-
-Product 1
-
-80
-
-(80 ÷ 95) × (50.00 + 236.25)
-
-241.05
-
-Fixed cost
-
-Prod 2
-
-Product 2
-
-15
-
-(15 ÷ 95) × (50.00 + 236.25)
-
-45.20
-
-Fixed cost
-
-Prod 1
-
-Product 1
-
-80
-
-(80 ÷ 95) × (2,852.60 + 124.57)
-
-2,507.09
-
-Variable cost
-
-Prod 2
-
-Product 2
-
-15
-
-(15 ÷ 95) × (2,852.60 + 124.57)
-
-470.08
-
-Variable cost
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Magnitude</th>
+<th>Allocation factor</th>
+<th>Amount</th>
+<th>Cost behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>80</td>
+<td>(80 ÷ 95) × (50.00 + 236.25)</td>
+<td>241.05</td>
+<td>Fixed cost</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>15</td>
+<td>(15 ÷ 95) × (50.00 + 236.25)</td>
+<td>45.20</td>
+<td>Fixed cost</td>
+</tr>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>80</td>
+<td>(80 ÷ 95) × (2,852.60 + 124.57)</td>
+<td>2,507.09</td>
+<td>Variable cost</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>15</td>
+<td>(15 ÷ 95) × (2,852.60 + 124.57)</td>
+<td>470.08</td>
+<td>Variable cost</td>
+</tr>
+</tbody>
+</table>
 
 ##### Journal entries (cost object balance journal entries)
 
-Journal
-
-Journal type
-
-Fiscal calendar period
-
-Version
-
-00004
-
-Cost allocation journal
-
-Fiscal
-
-2017
-
-Period 1
-
-Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1
+<table>
+<thead>
+<tr>
+<th>Journal</th>
+<th>Journal type</th>
+<th colspan="3">Fiscal calendar period</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00004</td>
+<td>Cost allocation journal</td>
+<td>Fiscal</td>
+<td>2017</td>
+<td>Period 1</td>
+<td>Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</td>
+</tr>
+</tbody>
+</table>
 
 ##### Journal lines
 
-Accounting date
-
-Cost object
-
-Cost element
-
-Cost behavior
-
-Amount
-
-January 31, 2017
-
-CC001
-
-HR
-
-10001
-
-Electricity
-
-Fixed cost
-
-500.00
-
-January 31, 2017
-
-CC001
-
-HR
-
-10001
-
-Electricity
-
-Variable cost
-
-1,245.71
-
-January 31, 2017
-
-CC002
-
-Finance
-
-10001
-
-Electricity
-
-Fixed cost
-
-675.00
-
-January 31, 2017
-
-CC002
-
-Finance
-
-10001
-
-Electricity
-
-Variable cost
-
-8,150.29
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Fixed cost
-
-713.75
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Variable cost
-
-5,982.83
-
-January 31, 2017
-
-CC003
-
-Packaging
-
-10001
-
-Electricity
-
-Fixed cost
-
-286.25
-
-January 31, 2017
-
-CC003
-
-Packaging
-
-10001
-
-Electricity
-
-Variable cost
-
-2,977.17
-
-January 31, 2017
-
-Prod 1
-
-Product 1
-
-10001
-
-Electricity
-
-Fixed cost
-
-776.36
-
-January 31, 2017
-
-Prod 1
-
-Product 1
-
-10001
-
-Electricity
-
-Variable cost
-
-6,994.21
-
-January 31, 2017
-
-Prod 2
-
-Product 1
-
-10001
-
-Electricity
-
-Fixed cost
-
-223.64
-
-January 31, 2017
-
-Prod 2
-
-Product 1
-
-10001
-
-Electricity
-
-Variable cost
-
-1,965.79
+<table>
+<thead>
+<tr>
+<th>Accounting date</th>
+<th colspan="2">Cost object</th>
+<th colspan="2">Cost element</th>
+<th>Cost behavior</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January 31, 2017</td>
+<td>CC001</td>
+<td>HR</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>500.00</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>CC001</td>
+<td>HR</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>1,245.71</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>CC002</td>
+<td>Finance</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>675.00</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>CC002</td>
+<td>Finance</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>8,150.29</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>713.75</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>5,982.83</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>CC003</td>
+<td>Packaging</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>286.25</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>CC003</td>
+<td>Packaging</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>2,977.17</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>776.36</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>6,994.21</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>Prod 2</td>
+<td>Product 1</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>223.64</td>
+</tr>
+<tr>
+<td>January 31, 2017</td>
+<td>Prod 2</td>
+<td>Product 1</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>1,965.79</td>
+</tr>
+</tbody>
+</table>
 
 ##### Cost entries
 
-Cost object
-
-Cost element
-
-Cost behavior
-
-Amount
-
-Accounting date
-
-CC001
-
-HR
-
-10001
-
-Electricity
-
-Fixed cost
-
--500.00
-
-January 31, 2017
-
-CC002
-
-Finance
-
-10001
-
-Electricity
-
-Fixed cost
-
-175.00
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Fixed cost
-
-275.00
-
-January 31, 2017
-
-CC004
-
-Packaging
-
-10001
-
-Electricity
-
-Fixed cost
-
-50,00
-
-January 31, 2017
-
-CC001
-
-HR
-
-10001
-
-Electricity
-
-Variable cost
-
--1,245.71
-
-January 31, 2017
-
-CC002
-
-Finance
-
-10001
-
-Electricity
-
-Variable cost
-
-436.00
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Variable cost
-
-685.14
-
-January 31, 2017
-
-CC004
-
-Packaging
-
-10001
-
-Electricity
-
-Variable cost
-
-124.57
-
-January 31, 2017
-
-CC002
-
-Finance
-
-10001
-
-Electricity
-
-Fixed cost
-
--675.00
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Fixed cost
-
-438.75
-
-January 31, 2017
-
-CC004
-
-Packaging
-
-10001
-
-Electricity
-
-Fixed cost
-
-236.25
-
-January 31, 2017
-
-CC002
-
-Finance
-
-10001
-
-Electricity
-
-Variable cost
-
--8,150.29
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Variable cost
-
-5,297.69
-
-January 31, 2017
-
-CC004
-
-Packaging
-
-10001
-
-Electricity
-
-Variable cost
-
-2,852.60
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Fixed cost
-
--713.75
-
-January 31, 2017
-
-Prod 1
-
-Product 1
-
-10001
-
-Electricity
-
-Fixed cost
-
-535.31
-
-January 31, 2017
-
-Prod 2
-
-Product 2
-
-10001
-
-Electricity
-
-Fixed cost
-
-178.44
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Variable cost
-
--5,982.83
-
-January 31, 2017
-
-Prod 1
-
-Product 1
-
-10001
-
-Electricity
-
-Variable cost
-
-4,487.12
-
-January 31, 2017
-
-Prod 2
-
-Product 2
-
-10001
-
-Electricity
-
-Variable cost
-
-1,495.71
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Fixed cost
-
--286.25
-
-January 31, 2017
-
-Prod 1
-
-Product 1
-
-10001
-
-Electricity
-
-Fixed cost
-
-241.05
-
-January 31, 2017
-
-Prod 2
-
-Product 2
-
-10001
-
-Electricity
-
-Fixed cost
-
-45.20
-
-January 31, 2017
-
-CC003
-
-Assembly
-
-10001
-
-Electricity
-
-Variable cost
-
--2,977.17
-
-January 31, 2017
-
-Prod 1
-
-Product 1
-
-10001
-
-Electricity
-
-Variable cost
-
-2,507.09
-
-January 31, 2017
-
-Prod 2
-
-Product 2
-
-10001
-
-Electricity
-
-Variable cost
-
-470.08
-
-January 31, 2017
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th colspan="2">Cost element</th>
+<th>Cost behavior</th>
+<th>Amount</th>
+<th>Accounting date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC001</td>
+<td>HR</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>-500.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>175.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>275.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>50,00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC001</td>
+<td>HR</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>-1,245.71</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>436.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>685.14</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>124.57</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>-675.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>438.75</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>236.25</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>-8,150.29</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>5,297.69</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC004</td>
+<td>Packaging</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>2,852.60</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>-713.75</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>535.31</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>178.44</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>-5,982.83</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>4,487.12</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>1,495.71</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>-286.25</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>241.05</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>45.20</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>-2,977.17</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Prod 1</td>
+<td>Product 1</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>2,507.09</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>Prod 2</td>
+<td>Product 2</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>470.08</td>
+<td>January 31, 2017</td>
+</tr>
+</tbody>
+</table>
 
 ## Conclusion
 In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dummy cost center ID. Therefore, cost accountants will know that this cost must be allocated. In Cost accounting, the costs flow across organizational units and levels, based on the policies and rules that are applied. Each cost has been associated with an allocation base that provides the best assessment for the allocation of costs.
 
-Cost element
-
-Cost object
-
-Total
-
-CC099
-
-CC001
-
-CC002
-
-CC003
-
-CC004
-
-Proj 1
-
-Proj 2
-
-Prod 1
-
-Prod 2
-
-10001 Electricity
-
-**0.00**
-
-**0.00**
-
-**0.00**
-
-**0.00**
-
-**30.00**
-
-**10.00**
-
-**7,770.57**
-
-**2,189.43**
-
-**10,000.00**
-
-Unclassified
-
-0.00
-
-Fixed cost
-
-0.00
-
-0.00
-
-0.00
-
-0.00
-
-0.00
-
-776.36
-
-223.64
-
-**1,000.00**
-
-Variable cost
-
-000
-
-0.00
-
-0.00
-
-0.00
-
-0.00
-
-30.00
-
-10.00
-
-6,994.21
-
-1,965.79
-
-**9,000.00**
+<table>
+<thead>
+<tr>
+<th colspan="2" rowspan="2">Cost element</th>
+<th colspan="9">Cost object</th>
+<th rowspan="2">Total</th>
+</tr>
+<tr>
+<th>CC099</th>
+<th>CC001</th>
+<th>CC002</th>
+<th>CC003</th>
+<th>CC004</th>
+<th>Proj 1</th>
+<th>Proj 2</th>
+<th>Prod 1</th>
+<th>Prod 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">10001 Electricity</td>
+<td style="text-align: right;"><strong>0.00</strong></td>
+<td style="text-align: right;"><strong>0.00</strong></td>
+<td style="text-align: right;"><strong>0.00</strong></td>
+<td style="text-align: right;"><strong>0.00</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>30.00</strong></td>
+<td style="text-align: right;"><strong>10.00</strong></td>
+<td style="text-align: right;"><strong>7,770.57</strong></td>
+<td style="text-align: right;"><strong>2,189.43</strong></td>
+<td style="text-align: right;"><strong>10,000.00</strong></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: left;">Unclassified</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Fixed cost</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">776.36</td>
+<td style="text-align: right;">223.64</td>
+<td style="text-align: right;"><strong>1,000.00</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Variable cost</td>
+<td style="text-align: right;">000</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">0.00</td>
+<td style="text-align: right;">30.00</td>
+<td style="text-align: right;">10.00</td>
+<td style="text-align: right;">6,994.21</td>
+<td style="text-align: right;">1,965.79</td>
+<td style="text-align: right;"><strong>9,000.00</strong></td>
+</tr>
+</tbody>
+</table>
 
 **Note:** This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, this overhead cost is allocated to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more detailed information, see Cost roll-up policy. (Note that this topic isn't competed yet but is coming soon.)
 
