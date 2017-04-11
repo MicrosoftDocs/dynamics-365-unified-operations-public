@@ -22,7 +22,7 @@ ms.reviewer: josaw1
 # ms.tgt_pltfrm: 
 ms.custom: 24271
 ms.assetid: bbb6914b-91bc-4477-9d5a-bb48d339882f
-ms.region: Global
+ms.search.region: Global
 # ms.industry: 
 ms.author: jasongre
 

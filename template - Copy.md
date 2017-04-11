@@ -22,7 +22,7 @@ ms.suite: [product release]
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: [Go get from guidgenerator.com]
-# ms.region: 
+# ms.search.region: 
 # ms.industry: 
 ms.author: [Microsoft alias]
 
