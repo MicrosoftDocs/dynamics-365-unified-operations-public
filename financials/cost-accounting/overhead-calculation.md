@@ -57,25 +57,26 @@ Overhead calculation is run independently of the version. Therefore, you can cal
 ## Calculate and allocate the Electricity overhead cost
 In Financial accounting, some costs, such as electricity, are registered as a lump sum. Therefore, detailed managerial insight isn't provided for Cost accounting. In Cost accounting, to provide correct managerial insight across all organizational units and levels, costs must flow through the organizational units. This flow must be based on either an accurate record of the consumption or a fair assessment. In the general ledger, an electricity cost can be posted as shown in the following table.
 
-Accounting date
-
-Cost center
-
-Main account
-
-Amount in the accounting currency
-
-January 3, 2017
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-10,000.00
+<table>
+<thead>
+<tr>
+<th>Accounting date</th>
+<th colspan="2">Cost center</th>
+<th colspan="2">Main account</th>
+<th>Amount in the accounting currency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January 3, 2017</td>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>10,000.00</td>
+</tr>
+</tbody>
+</table>
 
 ### Step 1: Process the cost behavior calculation
 
@@ -91,119 +92,103 @@ In some cases, part of the cost is a fixed fee, and the remaining cost is based 
 
 ##### Journal
 
-Journal
-
-Journal type
-
-Fiscal calendar period
-
-Version
-
-00001
-
-Cost behavior calculation journal
-
-Fiscal
-
-2017
-
-Period 1
-
-Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1
+<table>
+<thead>
+<tr>
+<th>Journal</th>
+<th>Journal type</th>
+<th colspan="3">Fiscal calendar period</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00001</td>
+<td>Cost behavior calculation journal</td>
+<td>Fiscal</td>
+<td>2017</td>
+<td>Period 1</td>
+<td>Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1</td>
+</tr>
+</tbody>
+</table>
 
 ##### Journal entries (Cost object balance journal entries)
 
-Accounting date
-
-Cost object
-
-Cost element
-
-Cost behavior
-
-Amount
-
-January 3, 2017
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-Unclassified
-
-10,000.00
+<table>
+<thead>
+<tr>
+<th>Accounting date</th>
+<th colspan="2">Cost object</th>
+<th colspan="2">Cost element</th>
+<th>Cost behavior</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January 3, 2017</td>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Unclassified</td>
+<td>10,000.00</td>
+</tr>
+</tbody>
+</table>
 
 ##### Cost entries
 
-Cost object
-
-Cost element
-
-Cost behavior
-
-Amount
-
-Accounting date
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-Unclassified
-
-10,000.00
-
-January 3, 2017
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-Unclassified
-
--10,000.00
-
-January 31, 2017
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-Fixed cost
-
-1,000.00
-
-January 31, 2017
-
-CC099
-
-Default cost center
-
-10001
-
-Electricity
-
-Variable cost
-
-9,000.00
-
-January 31, 2017
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th colspan="2">Cost element</th>
+<th>Cost behavior</th>
+<th>Amount</th>
+<th>Accounting date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Unclassified</td>
+<td>10,000.00</td>
+<td>January 3, 2017</td>
+</tr>
+<tr>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Unclassified</td>
+<td>-10,000.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Fixed cost</td>
+<td>1,000.00</td>
+<td>January 31, 2017</td>
+</tr>
+<tr>
+<td>CC099</td>
+<td>Default cost center</td>
+<td>10001</td>
+<td>Electricity</td>
+<td>Variable cost</td>
+<td>9,000.00</td>
+<td>January 31, 2017</td>
+</tr>
+</tbody>
+</table>
 
 For detailed information about cost behavior, see Cost behavior policy. (Note that this topic isn't competed yet but is coming soon.)
 
@@ -215,115 +200,107 @@ Cost distribution is used to redistribute cost from one cost object to one or mo
 
 In Financial accounting, electricity costs are often registered as a lump sum. In Cost accounting, this approach isn't detailed enough. The variable cost should be distributed to the individual cost objects on a fair basis. The most logical allocation basis is the consumption of electricity (Kwh). A statistical dimension member that is named Electricity is created, and electricity consumption is recorded. By default, all statistical dimension members become available as allocation bases.
 
-Cost object
-
-Kwh
-
-CC001
-
-HR
-
-1,000
-
-CC002
-
-Finance
-
-6,000
-
-CC003
-
-Assembly
-
-0
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Kwh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC001</td>
+<td>HR</td>
+<td>1,000</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>6,000</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
 
 The following table shows the result when electricity consumption is applied as an allocation base for variable costs.
 
-Cost object
-
-Magnitude
-
-Allocation factor
-
-Amount
-
-CC001
-
-HR
-
-1,000
-
-(1,000 ÷ 7,000) × 9,000.00
-
-1,285.71
-
-CC002
-
-Finance
-
-6,000
-
-(6,000 ÷ 7,000) × 9,000.00
-
-7,714.29
-
-CC003
-
-Assembly
-
-0
-
-(0 ÷ 7,000) × 9,000.00
-
-0.00
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Magnitude</th>
+<th>Allocation factor</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC001</td>
+<td>HR</td>
+<td>1,000</td>
+<td>(1,000 ÷ 7,000) × 9,000.00</td>
+<td>1,285.71</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>6,000</td>
+<td>(6,000 ÷ 7,000) × 9,000.00</td>
+<td>7,714.29</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>0</td>
+<td>(0 ÷ 7,000) × 9,000.00</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table>
 
 The fixed cost should be distributed evenly to the individual cost objects that have consumed electricity. You can achieve this result by using the Electricity statistical dimension member in a formula allocation base: (Electricity &gt; 0.00) The following table shows the result when electricity consumption is applied as an allocation base for variable costs.
 
-Cost object
-
-Formula
-
-Magnitude
-
-Allocation factor
-
-Amount
-
-CC001
-
-HR
-
-(1,000 &gt; 0.00)
-
-1
-
-(1 ÷ 2) × 1,000.00
-
-500.00
-
-CC002
-
-Finance
-
-(6,000 &gt; 0.00)
-
-1
-
-(1 ÷ 2) × 1,000.00
-
-500.00
-
-CC003
-
-Assembly
-
-(0 &gt; 0.00)
-
-0
-
-(0 ÷ 2) × 1,000.00
-
-0.00
+<table>
+<thead>
+<tr>
+<th colspan="2">Cost object</th>
+<th>Formula</th>
+<th>Magnitude</th>
+<th>Allocation factor</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC001</td>
+<td>HR</td>
+<td>(1,000 &gt; 0.00)</td>
+<td>1</td>
+<td>(1 ÷ 2) × 1,000.00</td>
+<td>500.00</td>
+</tr>
+<tr>
+<td>CC002</td>
+<td>Finance</td>
+<td>(6,000 &gt; 0.00)</td>
+<td>1</td>
+<td>(1 ÷ 2) × 1,000.00</td>
+<td>500.00</td>
+</tr>
+<tr>
+<td>CC003</td>
+<td>Assembly</td>
+<td>(0 &gt; 0.00)</td>
+<td>0</td>
+<td>(0 ÷ 2) × 1,000.00</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table>
 
 ##### Journal
 
