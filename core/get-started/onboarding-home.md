@@ -21,7 +21,7 @@ ms.reviewer: 71
 # ms.tgt_pltfrm: 
 .ms.custom: 
 ms.assetid: ad0cdfac-fd94-41df-9d0c-fbe0a91e2dce
-ms.region: Global
+ms.search.region: Global
 # ms.industry: 
 ms.author: sericks
 

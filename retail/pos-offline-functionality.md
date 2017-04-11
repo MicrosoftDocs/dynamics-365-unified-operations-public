@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-# audience: 
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations, Core

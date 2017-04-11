@@ -6,7 +6,7 @@ description: Microsoft Dynamics 365 for Operations is Microsoft’s business app
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
-ms.topic: article
+ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
@@ -22,7 +22,7 @@ ms.reviewer: 71
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
-ms.region: Global
+ms.search.region: Global
 # ms.industry: 
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 # Introduction to Dynamics 365 for Operations
+
+[!include[banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
 

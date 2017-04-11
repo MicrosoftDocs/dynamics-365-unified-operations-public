@@ -29,15 +29,17 @@ ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
 ---
+# Deploy a Microsoft Dynamics 365 for Operations demo environment
+This topic explains how to deploy a single-box Microsoft Dynamics 365 for Operations demo environment on Microsoft Azure through Microsoft Dynamics Lifecycle Services (LCS).
 
-# Prerequisites
+## Prerequisites
 Before you begin your deployment, the following prerequisites must be in place:
 
 - Verify that you have a Microsoft Azure subscription, and that you are a co-administrator on it.
 - Verify that you have access to a Microsoft Dynamics Lifecycle Services (LCS) project and permissions to deploy an environment.
 - Verify that you’ve connected your Azure subscription to your LCS project by using the information in the Azure Resource Manager onboarding topic.
 
-# Deploy a Dynamics 365 for Operations demo environment on Azure
+## Deploy a Dynamics 365 for Operations demo environment on Azure
 Use this procedure to deploy a single-box Microsoft Dynamics 365 for Operations demo environment on Azure through LCS.
 
 1. In LCS, open your project, and then, in the **Environments** section, click the plus sign (**+**).
@@ -52,7 +54,7 @@ Note: The size of the VM and the number of instances affect the cost of your sub
 9. In the **Confirm** message box, click **Deploy**.
 10. Open the **Cloud hosted environments** page to view the status of the deployment. After the deployment is successfully completed, the environment will be ready to demo Dynamics 365 for Operations.
 
-# Open the Dynamics 365 for Operations client
+## Open the Dynamics 365 for Operations client
 Use this procedure to connect to the VM where the Dynamics 365 for Operations demo instance is installed. 
 
 1. In LCS, open the **Cloud-hosted environments** page, and select the demo environment that you just deployed.
