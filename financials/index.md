@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Financial management home page
 
-[!include[go-live-banner](includes/go-live-banner.md)]
+[!include[go-live-banner](includes/banner.md)]
 
 This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Operations. 
 
