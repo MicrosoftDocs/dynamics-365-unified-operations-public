@@ -94,8 +94,8 @@ Procurement and sourcing covers all steps from identifying a need for product an
 
 ## Product receipt and invoicing
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
--   [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
--   [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles)
+-   [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
+-   [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
 
 ## Procurement and sourcing workflows
 -   [Procurement and sourcing overview](procurement-sourcing-overview.md)
