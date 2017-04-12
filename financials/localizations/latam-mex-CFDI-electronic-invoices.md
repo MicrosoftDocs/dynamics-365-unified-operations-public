@@ -52,7 +52,7 @@ There are two methods for generating electronic invoices:
 > [!NOTE]
 >  Integration with the PAC web service is not part of the Mexican localization. For information about how to customize a web service connection with a PAC, see “Customizing the integration with PAC web services” later in this article. 
 
-The following illustration shows the process for generating an electronic invoice by using the CFDI method. ![The electronic invoice process for Mexico](./media/about-electronic-invoices-cfdi.jpg)    
+The following illustration shows the process for generating an electronic invoice by using the CFDI method. ![The electronic invoice process for Mexico](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
 
 ### Requirements for using electronic invoices
 
