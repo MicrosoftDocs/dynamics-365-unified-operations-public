@@ -1,14 +1,26 @@
-- name: Dynamics 365 for Operations
-  tocHref: /dynamics365/operations/
-  topicHref: /dynamics365/operations/index
+- name: Dynamics 365
+  tocHref: /dynamics365/
+  topicHref: /dynamics365
   items:
-  - name: Cross-product features
+  - name: Operations
     tocHref: /dynamics365/operations/
     topicHref: /dynamics365/operations/index
     items:
-      - name: Get started
-        tocHref: /dynamics365/operations/get-started/
-        topicHref: /dynamics365/operations/get-started/onboarding-home
-      - name: Organization administration
-        tocHref: /dynamics365/operations/organization-administration/
-        topicHref: /dynamics365/operations/organization-administration/organization-administration-home-page
+    - name: Overview
+      tocHref: /dynamics365/operations/
+      topicHref: /dynamics365/operations/index
+    - name: Developer and Administrator
+      tocHref: /dynamics365/operations/dev-itpro/
+      topicHref: /dynamics365/operations/dev-itpro/index
+    - name: Financials
+      tocHref: /dynamics365/operations/financials/
+      topicHref: /dynamics365/operations/financials/index
+    - name: Human resources
+      tocHref: /dynamics365/operations/hr/
+      topicHref: /dynamics365/operations/hr/index
+    - name: Retail
+      tocHref: /dynamics365/operations/retail/
+      topicHref: /dynamics365/operations/retail/index
+    - name: SCM
+      tocHref: /dynamics365/operations/scm/
+      topicHref: /dynamics365/operations/scm/index
