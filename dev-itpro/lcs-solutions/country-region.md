@@ -82,7 +82,6 @@ The following sections list resources by country/region.
 -   [Business activity statement ](/dynamics365/operations/financials/localizations/apac-aus-business-activity-statement)
 -   [Low-value pool depreciation](/dynamics365/operations/financials/localizations/apac-aus-low-value-pool-depreciation)
 
-
 ### Austria
 
 -   [Packing material fees](/dynamics365/operations/financials/localizations/emea-aut-packing-material-fee-calculation)
@@ -92,7 +91,6 @@ The following sections list resources by country/region.
 
 -   [CODA bank statement](/dynamics365/operations/financials/localizations/emea-bel-coda-bank-statement-import)
 -   [PRODCOM report setup](/dynamics365/operations/financials/localizations/emea-bel-prodcom-report)
-
 
 ### Brazil
 
@@ -113,7 +111,6 @@ The following sections list resources by country/region.
 -   [Tax payments](/dynamics365/operations/financials/localizations/latam-bra-tax-payments)
 -   [Taxes](/dynamics365/operations/financials/localizations/latam-bra-calculate-taxes)
 
-
 ### China
 -   [Bill of materials comparison](/dynamics365/operations/financials/localizations/apac-chn-bom-comparison)
 -   [Chinese vouchers](/dynamics365/operations/financials/localizations/apac-chn-vouchers)
@@ -124,7 +121,6 @@ The following sections list resources by country/region.
 -   [Monthly average cost model](/dynamics365/operations/financials/localizations/apac-chn-monthly-average-cost-model)
 -   [Post inventory main accounts by site](/dynamics365/operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site)
 -   [Display debit and credit amounts for ledger accounts](/dynamics365/operations/financials/localizations/apac-chn-negative-debits-credits)
-
 
 ### The Czech Republic
 -  [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
@@ -163,11 +159,8 @@ The following sections list resources by country/region.
 -   [Set up signers for print forms](/dynamics365/operations/financials/localizations/emea-set-up-signers-for-printing-forms)
 -   [Split periods in periodic journals](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [Update how amounts are displayed on reports and documents](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)
-
 -   [VAT reporting for Europe](/dynamics365/operations/financials/localizations/emea-vat-reporting)
-
 -   [View transactions on settlement](/dynamics365/operations/financials/localizations/emea-transactions-settlement-form)
-
 
 ### France
 -   [Chronological invoice and voucher numbers](/dynamics365/operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -182,7 +175,6 @@ The following sections list resources by country/region.
    -   [Public sector accounting](/dynamics365/operations/financials/localizations/emea-fra-public-sector-accounting)
    -   [Titres de recette](/dynamics365/operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Vendor invoice payment holds](/dynamics365/operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
-
 
 ### Germany
 -   [Additional acquisition depreciation](/dynamics365/operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
@@ -231,8 +223,6 @@ The following sections list resources by country/region.
 -   [Fixed asset repair statement](/dynamics365/operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
 -   [Invoice and packing slip numbering](/dynamics365/operations/financials/localizations/emea-invoices-packing-slips-numbering)
 
-
-
 ### Mexico
 
 -   [DIOT declaration statement](/dynamics365/operations/financials/localizations/latam-mex-diot-declaration-statement)
@@ -271,7 +261,6 @@ The following sections list resources by country/region.
 -   [Generate the Singapore GST-05 report](/dynamics365/operations/financials/localizations/apac-sgp-generate-gst-05-report)
 
 ### Spain
-
 
 -   [Spanish bill of exchange options](/dynamics365/operations/financials/localizations/emea-esp-spanish-bill-of-exchange-options)
 -   [Cash discount is applied in the invoice parameter](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
