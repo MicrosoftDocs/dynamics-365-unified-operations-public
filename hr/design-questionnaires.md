@@ -113,7 +113,8 @@ Answer groups and answers are components that make up the main body of informati
 
 An answer group can be used for more than one question on the same questionnaire, and can also be used on more than one questionnaire. 
 
-**Note:** If you modify answer text in answer groups that have already been used on completed questionnaires, data can become difficult to evaluate, and questionnaire results might no longer be valid. If you must change an answer group, consider creating a new answer group instead of changing an existing one. You can't delete answer groups that are attached to a question or answer, or that have been answered.
+>**Note**
+>If you modify answer text in answer groups that have already been used on completed questionnaires, data can become difficult to evaluate, and questionnaire results might no longer be valid. If you must change an answer group, consider creating a new answer group instead of changing an existing one. You can't delete answer groups that are attached to a question or answer, or that have been answered.
 
 ### Questions
 
@@ -121,12 +122,14 @@ A questionnaire must contain questions. Questions can be either open-ended or cl
 
 -   The responses to open-ended questions aren't controlled, and respondents can type their answers.
 -   Closed-ended questions require a list of predefined response options, and the questions can be structured to let a respondent select multiple responses. Questions should be designed to elicit specific information from a respondent and must be linked to an answer group that provides the response options for each closed-ended question. 
-     -  **Note:** Before you can set up closed-ended questions, you must create answer groups and answers.
+    >**Note** 
+    > Before you can set up closed-ended questions, you must create answer groups and answers.
 
 Questions can be arranged in a conditional question hierarchy, so that secondary questions depend on the answer that the respondent selects for the previous question. You can write the questions first and then arrange them into a hierarchy later.
 
 ## Setting up questionnaires
-**Note:** Before you can set up a questionnaire, you must set up answers, questions, and prerequisites. 
+>**Note**
+>  Before you can set up a questionnaire, you must set up answers, questions, and prerequisites. 
 
 For each questionnaire, you can specify the following information:
 
@@ -162,7 +165,8 @@ You can complete the following tasks on the **Questionnaires** page:
 -   Delete and add questions.
 -   Make changes in the result groups and sequence number. 
 
-**Caution:** Be careful when you change questionnaires that have already been answered. Changes can reduce the accuracy of statistics and therefore make them a poor basis for evaluation. Consider creating a new question instead of changing a question that has already been answered.
+>**Caution**
+> Be careful when you change questionnaires that have already been answered. Changes can reduce the accuracy of statistics and therefore make them a poor basis for evaluation. Consider creating a new question instead of changing a question that has already been answered.
 
 In a questionnaire, you can't delete the following types of questions:
 
@@ -180,7 +184,8 @@ A result group is used to calculate points and categorize the results of a quest
 -   Generate statistics for each result group to help you analyze results.
 -   Print a report that shows results for each result group, and also optional points/texts that are based on points that are earned in each result group.
 
-**Note:** Before you can set up result groups, you must complete the following tasks:
+> **Note**
+>   Before you can set up result groups, you must complete the following tasks:
 
 -   Set up closed-ended questions. For a closed-ended question, the input type on the **Questions** page must be **Check box**, **Alternative button**, or **Combo box**.
 -   Define points for answers in the answer groups that are assigned to each question.
@@ -190,7 +195,8 @@ To attach questions to a questionnaire by using result groups, first set up the 
 
 You can set up multiple result groups to evaluate the points that a respondent earns in each category. After a questionnaire is completed, you can view the points that have been achieved for each result group. 
 
-**Tip:** To evaluate a questionnaire by using points but not separate categories, you can add all questions to a single result group. 
+> **Tip**
+>    To evaluate a questionnaire by using points but not separate categories, you can add all questions to a single result group. 
 
 For each result group, you can also set up one or more point-based messages that respondents receive after they complete a questionnaire. The text that is shown can vary, depending on the score that a respondent achieves in a result group. To use point-based messages, you must define point intervals and a description of each interval. When a respondent achieves a score in a specific interval, the text for that interval is included on the results report. 
 
@@ -216,13 +222,15 @@ The following table shows the point-based messages that you define for the “le
 
 You can set up point intervals and texts for each result group on a questionnaire. Texts that correspond to each respondent’s score are displayed for each result group. 
 
-**Note:** You can change intervals and texts. However, if a questionnaire has been completed, changes might cause differences between previous and new result reports.
+> **Note**
+>   You can change intervals and texts. However, if a questionnaire has been completed, changes might cause differences between previous and new result reports.
 
 ### Conditional question hierarchies
 
 Conditional question hierarchies are optional when you set up a questionnaire. 
 
-**Note:** Before you can set up a conditional question hierarchy, you must attach questions that have assigned answer groups to the questionnaire. 
+> **Note**
+>   Before you can set up a conditional question hierarchy, you must attach questions that have assigned answer groups to the questionnaire. 
 
 To use conditional questions to create a question hierarchy in a questionnaire, you can make the sequence that questions are presented in depend on the answer that a respondent selects for each question. By basing the question sequence on a respondent’s answer, you can modify the questionnaire as the respondent completes it.
 

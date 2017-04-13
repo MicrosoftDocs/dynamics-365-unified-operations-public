@@ -57,7 +57,8 @@ To assign a questionnaire group to a questionnaire, on the **Questionnaires** p
 ## Planned answer sessions in a questionnaire
 Planned answer sessions are questionnaires that you've designed and selected the respondents for. 
 
-**Note:** Before you can set up planned answer sessions, you must design a questionnaire. 
+> **Note**
+>   Before you can set up planned answer sessions, you must design a questionnaire. 
 
 On the **Planned answer session** page, you can create a planned answer session for an individual employee. The list on the page displays all planned questionnaires. 
 
@@ -103,7 +104,8 @@ Click **Functions** &gt; **Start** to make the questionnaire available to the us
 ## Notifying respondents about questionnaires that are available to them
 When you distribute a questionnaire, you must notify respondents that questionnaires are available to them. 
 
-**Note:** Respondents must be users in Microsoft Dynamics 365 for Operations to complete a questionnaire.
+> **Note**
+>   Respondents must be users in Microsoft Dynamics 365 for Operations to complete a questionnaire.
 
 ### Notifying respondents about a planned answer session
 
@@ -113,12 +115,14 @@ If you use a planned answer session, you must notify the person directly, such a
 
 Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire. Enter the email text on the **E-mail for employee self service** tab. After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents. Respondents can then sign in to the website and complete the questionnaire. 
 
-**Note:** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.
+> **Note**
+>   Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.
 
 ## Ending a scheduled questionnaire
 You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions. After a scheduled questionnaire is ended, you can't copy its settings to a new schedule. 
 
-**Note:** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page. You can then end the schedule.
+> **Note**
+>   If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page. You can then end the schedule.
 
 ## Completing questionnaires
 After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents. You can complete the questionnaires that are available to you from two locations:

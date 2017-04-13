@@ -123,10 +123,12 @@ The following sections list resources by country/region.
 -   [Display debit and credit amounts for ledger accounts](/dynamics365/operations/financials/localizations/apac-chn-negative-debits-credits)
 
 ### The Czech Republic
--  [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
--  [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
+
+-   [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
+-   [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
 -   [Fixed assets depreciation methods for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+
 -   [Post the pre-acquisition of a fixed asset](/dynamics365/operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [VAT statement for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Split periods in periodic journals](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
@@ -169,6 +171,7 @@ The following sections list resources by country/region.
 -   [Penalties for past due customer payments in France](/dynamics365/operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due)
 -   [Print lump sum recovery text on a customer invoice](/dynamics365/operations/financials/localizations/emea-fra-print-lump-sum-recovery-text)
 -   [RB/SL depreciation](/dynamics365/operations/financials/localizations/emea-fra-rbsl-depreciation)
+
 #### Public sector
    -   [Commitments in the public sector](/dynamics365/operations/financials/localizations/emea-fra-commitments-public-sector)
    -   [Mandats de paiement in the public sector](/dynamics365/operations/financials/localizations/emea-fra-mandats-de-paiement)
@@ -200,6 +203,7 @@ The following sections list resources by country/region.
 
 -   [Bank payment fees covered by vendors](/dynamics365/operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
 -   [Consolidated invoices](/dynamics365/operations/financials/localizations/apac-jpn-consolidate-invoices)
+
 #### Fixed assets
    -  [Allocation rules for fixed assets](/dynamics365/operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
    -  [Equally divided depreciation method](/dynamics365/operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)

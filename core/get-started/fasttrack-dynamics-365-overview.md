@@ -66,7 +66,7 @@ Eligible SKUs, apps, or plans:
 ## Overview: Microsoft FastTrack for Dynamics 365
 During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assistance in removing blockers during implementation through the following interactions:
 
--   ******Regular touchpoints****** are typically 30-minute calls that continue throughout the duration of the engagements. Small technical proof points are sometimes provided to help remove customer roadblocks.
+-   **Regular touchpoints** are typically 30-minute calls that continue throughout the duration of the engagements. Small technical proof points are sometimes provided to help remove customer roadblocks.
 -   ***Workshops*** are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.
 -   ***Tech talks*** focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and/or content.
 

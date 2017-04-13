@@ -6,7 +6,7 @@ description: This page helps IT Pros and developers get started wtih Microsoft D
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
-ms.topic: article
+ms.topic: index-page
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
@@ -22,7 +22,7 @@ ms.reviewer: 71
 # ms.tgt_pltfrm: 
 ms.custom: 62303
 ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
-ms.region: Global
+ms.search.region: Global
 # ms.industry: 
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Overview of Microsoft Dynamics 365 for Operations for Developers and IT Pros
+
+[!include[banner](includes/banner.md)]
 
 Microsoft Dynamics 365 for Operations represents the next-generation enterprise resource planning (ERP) offering from Microsoft. It's designed to enable the entire ERP application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. It leverages the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft.
 

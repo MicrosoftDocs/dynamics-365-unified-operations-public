@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sales orders mobile workspace for Microsoft Dynamics 365 for Operations app
+title: Sales orders mobile workspace
 description: With the sales orders mobile workspace, you can stay up-to-date on your sales orders anywhere and anytime. 
 author: YuyuScheller
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Sales orders mobile workspace for Microsoft Dynamics 365 for Operations app
+# Sales orders mobile workspace
 
 With the sales orders mobile workspace, you can stay up-to-date on your sales orders anywhere and anytime. 
 
