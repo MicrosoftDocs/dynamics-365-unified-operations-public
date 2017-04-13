@@ -53,10 +53,10 @@ You use job types to group similar jobs into categories. Job types aren't requir
 ## Job functions
 Job junctions describe high-level functional categories and relate high-level duties. Job functions aren't required. You can use job functions, together with job types, to filter compensation plans to specific jobs. You associate job functions and job types with compensation plans by setting up eligibility rules on the **Eligibility rules** page. You can then attach a set of levels to a compensation plan that apply to the specific combination of a job type and job function that you've defined through an eligibility rule. (These features apply to both fixed compensation plans and variable compensation plans.) However, if you plan to use job functions when you set up eligibility rules for compensation management, you should set up job functions before you set up jobs. The following table shows some examples of job functions.
 
-| Job           | Job function      |
-|---------------|-------------------|
-| Sales manager | Mid-level Manager |
-| Accountant    | Professionals     |
+| Job           | Job function         |
+|---------------|----------------------|
+| Sales manager | Mid-level Manager    |
+| Accountant    | Professionals        |
 
 You maintain job functions by using the **Job functions** page. On the **Job functions** page, enter an identification code and a brief description for the job function.
 
