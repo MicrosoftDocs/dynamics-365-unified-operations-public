@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-05-31
 ---
 
 # INTERVAT tax declaration
-"[!include[banner](includes/banner.md)]"
+"[!include[banner](../includes/banner.md)]"
 
 
 This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
