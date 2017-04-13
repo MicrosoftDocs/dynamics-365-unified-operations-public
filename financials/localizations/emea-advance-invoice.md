@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Advance invoices for Eastern Europe
-"[!include[banner](includes/banner.md)]"
+"[!include[banner](../includes/banner.md)]"
 
 
 An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. This topic provides information about advance invoices for Eastern Europe.
