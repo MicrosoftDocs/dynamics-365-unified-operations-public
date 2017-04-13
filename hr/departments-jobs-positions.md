@@ -60,10 +60,6 @@ A job is a collection of tasks and responsibilities that are required of a perso
 You can create job tasks that describe the basic tasks that a worker in a position for that job must complete. The same job task can be added to multiple jobs, and positions for those jobs will inherit those job tasks. Examples of job tasks are listed in the following table.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Job</th>
