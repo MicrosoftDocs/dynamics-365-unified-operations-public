@@ -138,6 +138,6 @@ See the field descriptions in [Additional sales tax report boxes](https://ax.hel
 Additional resources
 --------
 
-[Belgian sales tax reporting codes](http://www.taxexpert.be/bestand/Betekenis vakken BTW-aangifte.pdf)
+[Belgian sales tax reporting codes](http://www.taxexpert.be/bestand/Betekenis%20vakken%20BTW-aangifte.pdf)
 
 
