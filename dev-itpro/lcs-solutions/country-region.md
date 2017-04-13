@@ -49,7 +49,7 @@ The following resources provide information about planned and new localization f
 
 ### Localization updates
 -   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Updated weekly)
--   [LCS issue search](lifecycle-services/issue-search-lcs.md) (Updated daily)
+-   [LCS issue search](../lifecycle-services/issue-search-lcs.md) (Updated daily)
 
 ### Communication and alerts
 -   [Regulatory watch and regulatory update communication](regulatory-watch-communication.md)
