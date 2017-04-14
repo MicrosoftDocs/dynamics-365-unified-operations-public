@@ -38,15 +38,15 @@ Human resources streamlines many routine recordkeeping tasks and automates a num
 
 You can use Human resources to complete these tasks:
 
-Administer organizational structures.
-Maintain comprehensive worker information from hire to retire.
-Define and administer benefit plans, enroll workers, assign dependent coverage, and designate beneficiaries.
-Establish and monitor absence policies.
-Implement and track profile-based time management and generate pay information to export to a payroll system.
-Manage worker competencies.
-Review performance and implement worker goals.
-Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
-Recruit workers and track applicants.
+> + Administer organizational structures.
+> + Maintain comprehensive worker information from hire to retire.
+> + Define and administer benefit plans, enroll workers, assign dependent coverage, and designate beneficiaries.
+> + Establish and monitor absence policies.
+> + Implement and track profile-based time management and generate pay information to export to a payroll system.
+> + Manage worker competencies.
+> + Review performance and implement worker goals.
+> + Set up, deliver, and analyze training courses that include agendas, sessions, and tracks.
+> + Recruit workers and track applicants.
 
 Develop a human resources strategy
 ---------------------------------------------------------

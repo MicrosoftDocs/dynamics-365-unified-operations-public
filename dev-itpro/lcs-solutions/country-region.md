@@ -32,19 +32,26 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Localization and regulatory features
 
-Microsoft Dynamics 356 for Operations includes functionality for some country/region-specific regulations and processes. This functionality is enabled based on the primary address of the active legal entity. This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
+Microsoft Dynamics 356 for Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
 
-## Developer and ISV information
-The following resources provide information that can help developers and ISVs who are creating country/region-specific customizations.
+This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
+
+## Developing localized solutions
+The following resources provides guidance and information that can help developers and ISVs who are creating country/region-specific customizations or are created a solution for a country that Microsoft does not support.
 -   [Separate localization models](separate-localization-models.md)
 -   [Apply country/region context](apply-country-context.md)
 -   [Regulatory certifications](regulatory-certifications.md)
 -   [Classify localization features](classify-localization-features.md)
 -   [Country Codes - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## Localization updates
+## Localization updates and communication
 The following resources provide information about planned and new localization features. 
--   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC)
+
+### Localization updates
+-   [Localization portal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Updated weekly)
+-   [LCS issue search](../lifecycle-services/issue-search-lcs.md) (Updated daily)
+
+### Communication and alerts
 -   [Regulatory watch and regulatory update communication](regulatory-watch-communication.md)
 -   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](submit-localization-alerts.md)
 
@@ -56,7 +63,15 @@ The Electronic reporting (ER) tool allows you to configure formats for electroni
 -   [Extend the list of Electronic reporting functions](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Electronic reporting destinations](../analytics/electronic-reporting-destinations.md)
 -   [Download Electronic reporting configurations from Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
--   [Set up Electronic reporting with Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Configure Electronic reporting to pull data into Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+## Task guides
+Task guides are available from the product help pane and they provide a guided walk-through of key business processes. You can open a task guide to read the steps of a business process or you can play a task guide to walk through a business process and enter data.
+
+To find task guides, navigate to a page in Microsoft Dynamics 365 for Operations and click Help. Task guides that use the page are listed in the help pane. You can also use the help pane to search for task guides by title.
+
+To learn more, see [Task guides](/dynamics365/operations/dev-itpro/get-started/help-overview#task-guides).
+
 
 ## Country/region specific help topics
 The following sections list resources by country/region.
@@ -67,7 +82,6 @@ The following sections list resources by country/region.
 -   [Business activity statement ](/dynamics365/operations/financials/localizations/apac-aus-business-activity-statement)
 -   [Low-value pool depreciation](/dynamics365/operations/financials/localizations/apac-aus-low-value-pool-depreciation)
 
-
 ### Austria
 
 -   [Packing material fees](/dynamics365/operations/financials/localizations/emea-aut-packing-material-fee-calculation)
@@ -77,7 +91,6 @@ The following sections list resources by country/region.
 
 -   [CODA bank statement](/dynamics365/operations/financials/localizations/emea-bel-coda-bank-statement-import)
 -   [PRODCOM report setup](/dynamics365/operations/financials/localizations/emea-bel-prodcom-report)
-
 
 ### Brazil
 
@@ -98,7 +111,6 @@ The following sections list resources by country/region.
 -   [Tax payments](/dynamics365/operations/financials/localizations/latam-bra-tax-payments)
 -   [Taxes](/dynamics365/operations/financials/localizations/latam-bra-calculate-taxes)
 
-
 ### China
 -   [Bill of materials comparison](/dynamics365/operations/financials/localizations/apac-chn-bom-comparison)
 -   [Chinese vouchers](/dynamics365/operations/financials/localizations/apac-chn-vouchers)
@@ -110,12 +122,13 @@ The following sections list resources by country/region.
 -   [Post inventory main accounts by site](/dynamics365/operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site)
 -   [Display debit and credit amounts for ledger accounts](/dynamics365/operations/financials/localizations/apac-chn-negative-debits-credits)
 
-
 ### The Czech Republic
+
 -   [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
--       [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
-    -   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
-    -   [Fixed assets depreciation methods for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+-   [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
+-   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
+-   [Fixed assets depreciation methods for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+
 -   [Post the pre-acquisition of a fixed asset](/dynamics365/operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [VAT statement for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Split periods in periodic journals](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
@@ -148,11 +161,8 @@ The following sections list resources by country/region.
 -   [Set up signers for print forms](/dynamics365/operations/financials/localizations/emea-set-up-signers-for-printing-forms)
 -   [Split periods in periodic journals](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [Update how amounts are displayed on reports and documents](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)
-
 -   [VAT reporting for Europe](/dynamics365/operations/financials/localizations/emea-vat-reporting)
-
 -   [View transactions on settlement](/dynamics365/operations/financials/localizations/emea-transactions-settlement-form)
-
 
 ### France
 -   [Chronological invoice and voucher numbers](/dynamics365/operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -168,7 +178,6 @@ The following sections list resources by country/region.
    -   [Public sector accounting](/dynamics365/operations/financials/localizations/emea-fra-public-sector-accounting)
    -   [Titres de recette](/dynamics365/operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Vendor invoice payment holds](/dynamics365/operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
-
 
 ### Germany
 -   [Additional acquisition depreciation](/dynamics365/operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
@@ -257,7 +266,6 @@ The following sections list resources by country/region.
 
 ### Spain
 
-
 -   [Spanish bill of exchange options](/dynamics365/operations/financials/localizations/emea-esp-spanish-bill-of-exchange-options)
 -   [Cash discount is applied in the invoice parameter](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
 -   [Use fiscal data from the invoice account](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
@@ -291,3 +299,4 @@ The following sections list resources by country/region.
 -   [Year-end 1099 reporting](/dynamics365/operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Payroll](/dynamics365/operations/human-resources/localizations/noam-usa-payroll)
 -   [Public sector](/dynamics365/operations/financials/public-sector/public-sector-functionality)
+

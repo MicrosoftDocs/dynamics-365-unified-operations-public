@@ -1,7 +1,7 @@
 # [Introduction](index.md)
 
 # [Onboard to Dynamics 365 for Operations](get-started/onboarding-home.md)
-## Introduction to Microsoft Dynamics 365
+## Introduction to Dynamics 365 for Operations
 ### [Get started with Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
 ### [Sign up for a subscription](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/operations/toc.json)
 ### [How to get the on-premises version of Dynamics AX 2012](/dynamics365/operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/operations/toc.json)
