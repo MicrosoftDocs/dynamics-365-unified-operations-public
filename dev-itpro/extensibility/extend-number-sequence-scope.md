@@ -32,42 +32,44 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extend the number sequence scope
 
-This topic explains how developers can extend number sequence scope.
+This topic explains how developers can extend the number sequence scope.
 
 The scope of a number sequence defines which organization uses the number sequence. The scope can be **Shared**, **Company**, **Legal entity**, or **Operating unit**. **Legal entity** and **Company** scopes can be combined with fiscal calendar periods to create even more specific number sequences. New number sequence scopes can be added through extensions.  
 
-## Create enum extension for NumberSeqParameterType enum. 
+## Create an enum extension for NumberSeqParameterType
 
 In the extension, add a new enum value that for the new scope type. 
 
-## Create enum extension for NumberSequenceType enum 
+## Create an enum extension for NumberSequenceType 
 
-Add a new enum value for the new scope type. NumberSequenceType enum is used in NumberSequenceTableEntity and NumberSequencesReferenceEntity.
+Add a new enum value for the new scope type. The **NumberSequenceType** enum is used in **NumberSequenceTableEntity** and **NumberSequencesReferenceEntity**.
 
-## Create table extension for NumberSequenceScope table
+## Create a table extension for the NumberSequenceScope table
 
 Add a new field for the new scope type.
 
-## Create extension class for NumberSeqScope class
-1. Create a post handler for NumberSeqScope::getValidScopeTypes method. In the event handler method, add the new scope type to the valid scope types list.
-2. Create an event handler for onGetFormatSegmentShortName delegate. In the event handler, return the short name for the new scope type.
-3. Create a post handler for NumberSeqScope::find method and add logic for the new scope type so the corresponding NumberSeqScope instance can be found.   
-4. Create a post handler for NumberSeqScope::getId method and add logic for the new scope type so the corresponding record can be found(or created if not exist) in NumberSequenceScope table. 
+## Create an extension class for NumberSeqScope class
 
-## Create extension class for NumberSequenceScopeFactory class
+1. Create a post handler for the **NumberSeqScope::getValidScopeTypes** method. In the event handler method, add the new scope type to the valid scope types list.
+1. Create an event handler for the **onGetFormatSegmentShortName** delegate. In the event handler, return the short name for the new scope type.
+1. Create a post handler for the **NumberSeqScope::find** method and add logic for the new scope type so the corresponding **NumberSeqScope** instance can be found.   
+1. Create a post handler for the **NumberSeqScope::getId** method and add logic for the new scope type so the corresponding record can be found (or created if it does not exist) in the **NumberSequenceScope** table. 
+
+## Create an extension class for NumberSequenceScopeFactory class
+
 Add a method that initializes new NumberSeqScope that represents the new scope type.
 
-## Create form extension for NumberSequenceDetails form
-Add controls that shows the new scope type to the Scope tab page.
+## Create a form extension for NumberSequenceDetails form
+Add controls that show the new scope type to the **Scope** tab page.
 
-## Create extension class for NumberSequenceDetails form
-1. Create post handler for updateScopeControlVisibility method to show the new scope type when the new scope type is selected in the Scope combo box
-2. Create post handler for updateScopeControlValues method to update the values of the controls in the Scope tab
-3. Create post handler for createScope method to initialize a NumberSeqScope instance when the new scope type is selected.
-4. Create event handler for getShortNameForParameterType delegate to return the short name for the new scope type.
+## Create an extension class for NumberSequenceDetails form
+1. Create a post handler for the **updateScopeControlVisibility** method to show the new scope type when the new scope type is selected in the **Scope** combo box.
+2. Create a post handler for the **updateScopeControlValues** method to update the values of the controls in the **Scope** tab
+3. Create a post handler for the **createScope** method to initialize a **NumberSeqScope** instance when the new scope type is selected.
+4. Create an event handler for the **getShortNameForParameterType** delegate to return the short name for the new scope type.
 
 ## Add extension class for NumberSequenceTableEntity and NumberSequencesReferenceEntity data entities
 
-Create post handlers for GenerateNumberSequenceScopeTypes and GenerateNumberSequenceScopeValues methods to generate NumberSequenceScope for the new scope type.
+Create post handlers for the **GenerateNumberSequenceScopeTypes** and **GenerateNumberSequenceScopeValues** methods to generate the **NumberSequenceScope** for the new scope type.
 
 
