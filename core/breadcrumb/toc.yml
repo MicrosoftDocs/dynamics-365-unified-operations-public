@@ -6,9 +6,6 @@
     tocHref: /dynamics365/operations/
     topicHref: /dynamics365/operations/index
     items:
-    - name: Overview
-      tocHref: /dynamics365/operations/
-      topicHref: /dynamics365/operations/index
     - name: Developer and Administrator
       tocHref: /dynamics365/operations/dev-itpro/
       topicHref: /dynamics365/operations/dev-itpro/index
