@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Platfrom update 6
 
 ---
 # Copy configuration data to another company
-Configurations
-==============
 
 Overview
 --------
