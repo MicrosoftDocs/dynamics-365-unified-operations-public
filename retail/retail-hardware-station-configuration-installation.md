@@ -121,7 +121,9 @@ Current security standards state that the following options should be set in a p
 -   Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.
 -   Only trusted certificate authorities should be used to procure certificates that will be used on computers that run Retail hardware station.
 
-**Note:** It's critical that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
+**Important:** Most common, lower security software and services will cease to function after disabling all lower security standards.  To use these again, navigate to the above registry keys and set the "Enabled" key to "1" instead of "0".
+
+**Important:** It's critical that you review security guidelines for Internet Information Services (IIS) and Payment Card Industry (PCI) requirements.
 
 ## Troubleshooting
 ### Retail Modern POS can detect the hardware station in its list for selection, but it can't complete the pairing
