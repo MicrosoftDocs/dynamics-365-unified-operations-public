@@ -24,9 +24,9 @@ ms.custom: 77523
 ms.assetid: 62232067-9999-4045-ad24-7a6c44e7e641
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kuntalme
+ms.author: mfalkner
 ms.search.validFrom: 2017-04-30
-ms.dyn365.ops.version: Platfrom update 6
+ms.dyn365.ops.version: Platfrom update 7
 
 ---
 # Copy configuration data to another company
