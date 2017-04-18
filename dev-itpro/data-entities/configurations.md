@@ -269,8 +269,9 @@ build your configurations
                                  
 
 Using the data management workspace
+-----------------------------------
 
-[]{#_Hlk479844095 .anchor}The data management workspace provides access
+The data management workspace provides access
 to key tasks for data management while providing information on projects
 and project execution tasks. For configurations, you should be using the
 enhanced view, which you can enable using the enhanced view button. If
@@ -388,41 +389,49 @@ The following list shows how the templates were set up to handle the
 dependencies. Please note that the entities do *not* require these
 sequences to work. They have been created to help you create better
 configurations.
-
  
 
-  **Module**                **Unit**   **Level**   **Sequence**
-  ------------------------- ---------- ----------- --------------
-  System setup              1          10          10
-  Global address book       1          15          10
-  General ledger shared     1          20          10
-  Workflow                  1          22          10
-  General ledger            1          25          10
-  Band 1 for dependencies   1          30          10
-  Band 2 for dependencies   1          40          10
-  Band 3 for dependencies   1          50          10
-  Band 4 for dependencies   1          60          10
-  Band 5 for dependencies   1          70          10
-  Band 6 for dependencies   1          80          10
-  Band 7 for dependencies   1          90          10
-  Bank                      1          100         10
-  Accounts payable          1          120         10
-  Tax                       1          130         10
-  Accounts receivable       1          140         10
-  Fixed assets              1          150         10
-  Budgeting                 1          160         10
-  Inventory management      1          300         10
-  Product management        1          310         10
-  Procurement               1          320         10
-  Sales and Marketing       1          330         10
-  Warehouse management      1          400         10
-  Production control        1          410         10
-  Costing                   1          420         10
-  Retail                    1          500         10
-  Expense management        1          600         10
-  Project accounting        1          650         10
-  Human resources           1          700         10
-  Payroll                   1          800         10
+|  **Module**               |**Unit**   |**Level**   |**Sequence**|
+|-------------------------	|--:	|----:	|---:	|
+| System setup            	| 1 	|  10 	| 10 	|
+| Global address book     	| 1 	|  15 	| 10 	|
+| General ledger shared   	| 1 	|  20 	| 10 	|
+| Workflow                	| 1 	|  22 	| 10 	|
+| General ledger          	| 1 	|  25 	| 10 	|
+| Band 1 for dependencies 	| 1 	|  30 	| 10 	|
+| Band 2 for dependencies 	| 1 	|  40 	| 10 	|
+| Band 3 for dependencies 	| 1 	|  50 	| 10 	|
+| Band 4 for dependencies 	| 1 	|  60 	| 10 	|
+| Band 5 for dependencies 	| 1 	|  70 	| 10 	|
+| Band 6 for dependencies 	| 1 	|  80 	| 10 	|
+| Band 7 for dependencies 	| 1 	|  90 	| 10 	|
+| Bank                    	| 1 	| 100 	| 10 	|
+| Accounts payable        	| 1 	| 120 	| 10 	|
+| Tax                     	| 1 	| 130 	| 10 	|
+| Accounts receivable     	| 1 	| 140 	| 10 	|
+| Fixed assets            	| 1 	| 150 	| 10 	|
+| Budgeting               	| 1 	| 160 	| 10 	|
+| Inventory management    	| 1 	| 300 	| 10 	|
+| Product management      	| 1 	| 310 	| 10 	|
+| Procurement             	| 1 	| 320 	| 10 	|
+| Sales and Marketing     	| 1 	| 330 	| 10 	|
+| Warehouse management    	| 1 	| 400 	| 10 	|
+| Production control      	| 1 	| 410 	| 10 	|
+| Costing                 	| 1 	| 420 	| 10 	|
+| Retail                  	| 1 	| 500 	| 10 	|
+| Expense management      	| 1 	| 600 	| 10 	|
+| Project accounting      	| 1 	| 650 	| 10 	|
+| Human resources         	| 1 	| 700 	| 10 	|
+| Payroll                 	| 1 	| 800 	| 10 	|
+| Sales and Marketing     	| 1 	| 330 	| 10 	|
+| Warehouse management    	| 1 	| 400 	| 10 	|
+| Production control      	| 1 	| 410 	| 10 	|
+| Costing                 	| 1 	| 420 	| 10 	|
+| Retail                  	| 1 	| 500 	| 10 	|
+| Expense management      	| 1 	| 600 	| 10 	|
+| Project accounting      	| 1 	| 650 	| 10 	|
+| Human resources         	| 1 	| 700 	| 10 	|
+| Payroll                 	| 1 	| 800 	| 10 	|
 
 We reserved levels 10-22 for the shared system entities so that they are
 processed first. Almost all systems also use the company specific
