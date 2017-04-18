@@ -13,11 +13,11 @@
       tocHref: /dynamics365/operations/financials/
       topicHref: /dynamics365/operations/financials/index
     - name: Human resources
-      tocHref: /dynamics365/operations/hr/
-      topicHref: /dynamics365/operations/hr/index
+      tocHref: /dynamics365/operations/human-resources/
+      topicHref: /dynamics365/operations/human-resources/index
     - name: Retail
       tocHref: /dynamics365/operations/retail/
       topicHref: /dynamics365/operations/retail/index
-    - name: SCM
-      tocHref: /dynamics365/operations/scm/
-      topicHref: /dynamics365/operations/scm/index
+    - name: Supply chain
+      tocHref: /dynamics365/operations/supply-chain/
+      topicHref: /dynamics365/operations/supply-chain/index
