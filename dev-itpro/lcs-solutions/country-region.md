@@ -266,7 +266,7 @@ The following sections list resources by country/region.
 
 ### Spain
 
--   [Spanish bill of exchange options](/dynamics365/operations/financials/localizations/emea-esp-spanish-bill-of-exchange-options)
+-   [Spanish bill of exchange options](/dynamics365/operations/financials/localizations/emea-esp-bill-of-exchange-options)
 -   [Cash discount is applied in the invoice parameter](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
 -   [Use fiscal data from the invoice account](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
 -   [Fixed asset revaluation groups](/dynamics365/operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
