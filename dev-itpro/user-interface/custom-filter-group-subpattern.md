@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom Filter Group subpattern
-description: 
+description: This topic provides information about the Custom Filter Group subpattern.
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
