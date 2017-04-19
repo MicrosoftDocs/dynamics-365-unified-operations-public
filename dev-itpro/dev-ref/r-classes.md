@@ -2,7 +2,7 @@
 # required metadata
 
 title: R Classes
-description: 
+description: System API classes that start with the letter R.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
