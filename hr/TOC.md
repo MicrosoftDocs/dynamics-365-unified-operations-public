@@ -60,8 +60,6 @@
 #### [Payroll data updates FAQ](localizations/noam-usa-payroll-data-updates.md)
 #### [Generate payroll reports](localizations/noam-usa-generate-payroll-reports.md)
 
-# [Dynamics 365 for Operations overview](/dynamics365/operations/index)
-
 # [Financials](/dynamics365/operations/financials/index)
 
 # [Retail](/dynamics365/operations/retail/index)
@@ -71,5 +69,5 @@
 # [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary.md?toc=/dynamics365/operations/human-resources/toc.json)
+## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/human-resources/toc.json)
 ## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/human-resources/toc.json)

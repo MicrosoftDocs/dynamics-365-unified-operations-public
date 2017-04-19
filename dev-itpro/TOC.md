@@ -62,8 +62,6 @@
 ## [Get support for Dynamics 365 for Operations and Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
 
-# [Dynamics 365 for Operations overview](/dynamics365/operations/index)
-
 # [Financials](/dynamics365/operations/financials/index)
 
 # [Human resources](/dynamics365/operations/human-resources/index)
@@ -73,5 +71,5 @@
 # [Supply chain management](/dynamics365/operations/supply-chain/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary.md?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/dev-itpro/toc.json)
 ## [What's new or changed](get-started/whats-new-changed)

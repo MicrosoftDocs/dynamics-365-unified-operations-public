@@ -156,8 +156,6 @@
 ### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Warehouse mobile device display settings](warehousing/change-warehouse-mobile-device-displays.md)
 
-# [Dynamics 365 for Operations overview](/dynamics365/operations/index)
-
 # [Financials](/dynamics365/operations/financials/index)
 
 # [Human resources](/dynamics365/operations/human-resources/index)
@@ -167,5 +165,5 @@
 # [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary.md?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
 ## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
