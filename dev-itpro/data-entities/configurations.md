@@ -2,10 +2,12 @@
 # required metadata
 
 title: Copy configuration data to another company
-description: 
+description: Configurations are used to manage the movement of company configuration
+38
+data between instances of Dynamics 365 for Finance and Operations
 author: mfalkner
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 06/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,8 +17,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, Implementer
-# ms.devlang: 
+audience: Developer, IT Pro# ms.devlang: 
 ms.reviewer: margoc
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
@@ -46,14 +47,14 @@ feature supports the following scenarios:
     framework to import it
 
 Configurations are created using the data import and export projects
-that you can access from the data management workspace. The page allows
+that you can access from the data management workspace. The import and export pages allow
 you to add and remove the entities that you need to manage the movement
 of company and shared data. Once you create the list of entities in your
 configuration, you can export or import the configuration using the data
 management framework for processing. You can export packages locally or
 move them to your LCS library for import into another instance.
 
-Configuration **templates** are a predefined list of entities for each
+Configuration templates are a predefined list of entities for each
 module area that can be used in a data project. You can create, view and
 modify these templates using the template page in the data management
 workspace.
@@ -232,6 +233,7 @@ The process for importing a configuration is as follows:
 
 6)  Use Remove entity to remove one or more selected entities
 
+
 You are ready to import a configuration. However, you may want to use
 some additional features to control the export process:
 
@@ -260,6 +262,7 @@ Special entity setup considerations for exporting and importing configurations
 There are several entities that require some additional steps when you
 are doing configurations. Please follow these recommendations as you
 build your configurations
+
 
   Entity name   Technical name   Action needed
   ------------- ---------------- ---------------
