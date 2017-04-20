@@ -170,6 +170,7 @@
 ## [Cost element dimensions](cost-accounting/cost-elements.md)
 ## [Cost object dimensions](cost-accounting/cost-objects.md)
 ## [Map cost element dimension members to a common set of dimension members](cost-accounting/map-cost-elements-dimension-members.md)
+## [Overhead calculation](cost-accounting/overhead-calculation.md)
 ## [Cost control mobile workspace](cost-accounting/cost-controlling-mobile-workspace.md)
 ## [Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
 ## [Set up security for the Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
@@ -207,3 +208,15 @@
 ## [Project resourcing](project-management/project-resourcing.md)
 ## [Work breakdown structures](project-management/work-breakdown-structures.md)
 # [Localizations](localizations/TOC.md)
+
+# [Human resources](/dynamics365/operations/human-resources/index)
+
+# [Retail](/dynamics365/operations/retail/index)
+
+# [Supply chain management](/dynamics365/operations/supply-chain/index)
+
+# [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
+
+# Other resources
+## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)

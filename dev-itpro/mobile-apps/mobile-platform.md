@@ -34,8 +34,19 @@ ms.dyn365.ops.version: Platform update 3
 
 Microsoft Dynamics 365 for Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
 
-Getting started with the mobile app
------------------------------------
+In addition to this topic, there is a video series on create a mobile app:
+
+[Tutorial 1: Building the sales order page](https://youtu.be/PdegfBxifl8)
+
+[Tutorial 2: Building the sales order details page](https://youtu.be/mF-vlbnRte0)
+
+[Tutorial 3: Building the create new sales order action](https://youtu.be/VYw9oTv9t3o)
+
+[Tutorial 4: Adding a lookup to the create new sales order action](https://youtu.be/eNJKd0IYmZk)
+
+[Tutorial 5: Adding a lookup and hiding pages using mobile business logic](https://youtu.be/kIJKk9J8FvI)
+
+# Getting started with the mobile app
 
 After you acquire a development environment, complete the following procedures to get started with development.
 
@@ -68,7 +79,6 @@ The mobile app is being made available for the most popular mobile operating sys
 
 -   Android (available now) - [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   iPhone (available now) - [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
--   Windows phone (UWP) (coming soon) - Dynamics 365 for Operations on the Windows store
 
 ## Understanding navigation in the mobile app
 Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. 
