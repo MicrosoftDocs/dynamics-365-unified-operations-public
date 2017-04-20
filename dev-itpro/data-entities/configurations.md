@@ -263,6 +263,7 @@ There are several entities that require some additional steps when you
 are doing configurations. Please follow these recommendations as you
 build your configurations
 
+Insert the  list of entities that are special
 
   Entity name   Technical name   Action needed
   ------------- ---------------- ---------------
@@ -464,6 +465,14 @@ rearrange the entities if the sequence doesn’t work for your
 installation. If you want to add your own templates to a configuration,
 you can follow the guidelines above to ensure that your template merges
 correctly into a project that uses other templates.
+
+Merged templates
+----------------
+
+We also created larger templates that are a combination of the smaller module templates.
+-   System and Shared includes system setup, global address book, shared general ledger, and workflow
+-   Financials includes general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting
+-   Supply chain includes inventory management, product management, procurement, sales and marketing, warehouse management, production control, and costing
 
 Master data
 -----------
