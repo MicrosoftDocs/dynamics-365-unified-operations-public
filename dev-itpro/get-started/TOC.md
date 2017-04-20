@@ -5,6 +5,8 @@
 ## [Help system overview](help-overview.md)
 ## [Connect the Help system](help-connect.md)
 # [What's new or changed](whats-new-changed.md)
+## [Operations platform update 5 (March 2017)](whats-new-platform-update-5.md)
+## [Operations platform update 4 (February 2017)](whats-new-platform-update-4.md)
 ## [Operations version 1611 (November 2016)]whats-new-dynamics-365-operations-1611.md)
 ## [Operations platform update 3 (November 2016)](whats-new-platform-update-3.md)
 ## [Dynamics AX platform update 2 (August 2016)](whats-new-platform-update-2.md) 
