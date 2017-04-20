@@ -5,7 +5,7 @@ title: Overhead calculation
 description: This topic describes the typical processes for calculating and allocating overhead costs.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 03-10-2017 15 - 36 - 15
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
