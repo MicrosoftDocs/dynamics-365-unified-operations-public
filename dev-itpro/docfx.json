@@ -31,7 +31,8 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "search_scope": ["Dynamics365Operations"]
+      "search_scope": ["Dynamics365Operations"], 
+      "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json"
     },
     "fileMetadata": {},
     "template": [],

@@ -104,6 +104,15 @@ You can now start the program. **Note:** This installation occurs only for the a
 
 You can now start the program.
 
+## Updating the Retail Modern POS application
+
+**Note:** To learn more about deployable packages, see the article <a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.
+
+1.  After a Retail Modern POS application is uploaded into the environment, the version of the package can be selected on the device.  The package listings should include the new uploaded application.
+2.  To update the Retail Modern POS application, follow the same steps listed above.  The application can be updated in-place simply by running the newer version of the Self-service installer.  Uninstallation is not required and is not recommended.  Further, device activation status will be maintained after updating.
+3.  If the configuration file has changed (due to various configuration changes in Operations), an updating installation will not update the Retail Modern POS application.  The current configuration is the used settings.
+
+
 ## Create a worker
 For this topic, we have already created workers and assigned them to the Houston address book in the demo data provided. Therefore, this topic will use pre-generated data.
 

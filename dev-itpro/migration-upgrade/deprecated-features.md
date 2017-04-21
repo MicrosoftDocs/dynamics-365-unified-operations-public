@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
+ms.dyn365.ops.version: Platform update 6
 
 ---
 
@@ -480,6 +480,16 @@ Data partitions provide a logical separation of data in the Microsoft Dynamics A
 | Replaced by another feature? | The new web client is based on the desktop Form metadata and programming model that have been modified to provide a rich web platform. |
 | Modules affected             | All                                                                                                                                    |
 
+### Direct database connection
+
+In Dynamics AX 2012 R3, Retail Modern POS could connect directly to the Channel DB in similar fashion to Enterprise POS. This was in addition to the standard communication method of Retail Modern POS communicating through Retail Server.  
+
+|                              |                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| Reason for deprecation       | Direct database connectivity required lower security protocols and was primarily used to achieve the highest levels of performance. Due to the performance and security enhancements that have occurred in Dynamics 365 for Operations, this functionality now causes more issues than it solves. |
+| Replaced by another feature? | No. Only standard Retail Server communication is now supported.    |
+| Modules affected             | Channel DB/Retail Modern POS                                    |
+
 ### Dutch SWIFT MT940
 
 |                              |                                                                                                                                                                                                                                       |
@@ -669,6 +679,16 @@ This feature let you change the name of one of the three standard product dimen
 | Reason for deprecation       | The current version of Dynamics AX doesn't support label changes at run time. |
 | Replaced by another feature? | No                                                                            |
 | Modules affected             | Product information management                                                |
+
+### Retail Server connectivity using HTTP
+
+In Dynamics AX 2012 R3, the Retail Server could function using HTTP communication (non-secured). This was in addition to the standard communication using HTTPS.
+
+|                              |                                                                               |
+|------------------------------|-------------------------------------------------------------------------------|
+| Reason for deprecation       | Due to new security requirements, only secured communication using TLS 1.2 (or above, as available) is now supported. The self-service installer will automatically configure the computer for this communication. |
+| Replaced by another feature? | No. Only standard HTTPS communication is now supported.                                                                           |
+| Modules affected             | Retail Server                                                |
 
 ### Role Center pages
 

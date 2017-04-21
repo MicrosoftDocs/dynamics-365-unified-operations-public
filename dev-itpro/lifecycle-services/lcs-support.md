@@ -70,7 +70,7 @@ To obtain support for Dynamics 365 for Operations or LCS, use the resources in t
 <li>On the <strong>Active issue</strong> tab, select your issue, and then click <strong>Submit to Microsoft</strong>.</li>
 <li>On the <strong>Submitted to Microsoft</strong> tab, click <strong>Submit a new Incident</strong> to submit the issue.</li>
 </ul>
-If you are a Microsoft Premier Customer, you can submit support tickets from <a href="https://premier.microsoft.com/"><span style="color: #0066cc;">Microsoft Premier Online</span></a>. For more information about the support workflow from Dynamics 365 for Operations to LCS, see Set up your technical support for <a href="ax-support-experience.md"><span style="color: #0066cc;">Microsoft Dynamics 365 for Operations</span></a>.</td>
+If you are a Microsoft Premier Customer, you can submit support tickets from <a href="https://premier.microsoft.com/"><span style="color: #0066cc;">Microsoft Premier Online</span></a>. </td>
 </tr>
 <tr class="even">
 <td>Open a support ticket with the Dynamics 365 for Operations support team.</td>
