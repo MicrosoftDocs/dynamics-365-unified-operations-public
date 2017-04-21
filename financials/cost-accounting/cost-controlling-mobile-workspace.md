@@ -64,7 +64,9 @@ The **Cost controlling** mobile workspace for the Dynamics 365 for Operations a
     -   Details for previous period
     -   Details for year to date
 
-    When you select a link, a card is shown for each cost element. The following amounts are shown on every card: Actual, Budget, Budget variance, Budget variance %, Revised budget, Revised budget variance, and Revised budget variance %. [![Card for a cost element ](./media/cost-controlling.png)](./media/cost-controlling.png)
+    When you select a link, a card is shown for each cost element. The following amounts are shown on every card: Actual, Budget, Budget variance, Budget variance %, Revised budget, Revised budget variance, and Revised budget variance %. 
+    
+    [![Card for a cost element ](./media/cost-controlling.png)](./media/cost-controlling.png)
 
 ## Prerequisites
 Before you can use the **Cost controlling** mobile workspace, make sure that your system administrator has the following prerequisites in place.
@@ -123,7 +125,9 @@ Download and install the Dynamics 365 for Operations mobile app from your mobil
 2.  Enter your Dynamics 365 for Operations URL.
 3.  Enter the company to sign in to. For example, enter **USMF**.
 4.  The first time that you sign in, you’re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
-5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator later publishes a new workspace, you can pull to refresh the list of mobile workspaces. [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator later publishes a new workspace, you can pull to refresh the list of mobile workspaces. 
+
+[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## View the performance of your cost center by using the Cost controlling mobile workspace
 1.  On your mobile device, select the **Cost controlling** workspace.
