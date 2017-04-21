@@ -113,6 +113,7 @@
 ## [Marketing](sales-marketing/overview-sales-marketing.md)
 ## Sales orders
 ### [Order promising](sales-marketing/delivery-dates-available-promise-calculations.md)
+### [Delivery alternatives](sales-marketing/delivery-alternatives.md)
 ### [Order entry deadlines](sales-marketing/order-entry-deadlines.md)
 ### [Direct deliveries](sales-marketing/direct-deliveries.md)
 ### [Delivery schedules](sales-marketing/delivery-schedules.md)
