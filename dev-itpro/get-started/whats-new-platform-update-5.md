@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-03-31
 ---
 
 # What's new or changed in Dynamics 365 for Operations platform update 5 (March 2017)
-"[!include[banner](includes/banner.md)]"
+"[!include[banner](../includes/banner.md)]"
 
 
 This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 5. This version was released in March 2017 and has a build number of 7.0.4475.16165.
