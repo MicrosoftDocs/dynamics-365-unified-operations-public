@@ -31,15 +31,10 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Delivery alternatives
-"[!include[banner](includes/banner.md)]"
-
 
 Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
 
-Delivery alternatives
----------------------
-
-In the Microsoft Dynamics 365 for Operations version 1611 (November 2016) release, sales order takers can use the **Delivery alternatives** page to discover alternative order fulfillment options. The redesigned page layout gives a better overview of all alternative options. It also lets order takers look beyond the current company for fulfillment opportunities. They can now view both intercompany opportunities and opportunities from external vendors. By sorting the options by delivery date, sales order takers can view an �intelligent� list of delivery alternatives. In addition, parameters help them better manage the suggested deliveries. Because transport time can affect delivery dates, sales order takers can explore the various transportation choices that carriers offer. Because detailed information is shown for each suggestion, order takers can make informed decisions directly from the **Delivery alternatives** page.
+In the Microsoft Dynamics 365 for Operations version 1611 (November 2016) release, sales order takers can use the **Delivery alternatives** page to discover alternative order fulfillment options. The redesigned page layout gives a better overview of all alternative options. It also lets order takers look beyond the current company for fulfillment opportunities. They can now view both intercompany opportunities and opportunities from external vendors. By sorting the options by delivery date, sales order takers can view an intelligent list of delivery alternatives. In addition, parameters help them better manage the suggested deliveries. Because transport time can affect delivery dates, sales order takers can explore the various transportation choices that carriers offer. Because detailed information is shown for each suggestion, order takers can make informed decisions directly from the **Delivery alternatives** page.
 
 ## Open the Delivery alternatives page
 You can open the **Delivery** **alternatives** page from the sales order line.
@@ -68,7 +63,7 @@ The delivery date control method determines how the system establishes delivery 
 <tr class="even">
 <td><strong>None</strong></td>
 <td><ul>
-<li>Delivery alternatives for sales lines aren�t supported. This option turns off delivery data control.</li>
+<li>Delivery alternatives for sales lines aren't supported. This option turns off delivery data control.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -119,47 +114,34 @@ This tab shows a summary of the product and details of the current sales line.
 
 This tab shows a list of delivery alternatives that is sorted by receipt data. Above the list, you can select which options to base the suggestions on. You can also select the mode of delivery, which determines the transport days. The following options are available:
 
--   **Include other product variants �** This option is available for products that have product variants. It will include delivery alternatives for other variants of the product. This option isn�t available for CTP.
--   **Include partial quantity** � By default, only suggestions that fulfill the full quantity of the sales line are included. Select this option to include suggestions that only partially fulfill the order line. This option is useful when the customer requests an earlier delivery date and accepts partial delivery.
--   **Include later dates** � By default, only suggestions that are better (earlier) than the current dates on the sales line are shown. Select this option to include later dates. This option can be useful in situations where parameters other than the date have priority. For example, a specific vendor or warehouse might be preferred.
--   **Mode of delivery** � Select the preferred mode of delivery to optimize transport time and cost. You will immediately see the effect on the suggested delivery alternatives. Therefore, it�s easy to compare the alternatives.
--   **Include procurement** � When procurement is selected, the suggested delivery alternatives include options to procure from both external vendors and other companies in the enterprise (intercompany). The **Include procurement** option is supported for ATP and ATP + Issue margin delivery date control. Procurement options from the default purchase vendor for the product and all approved vendors for the product are included.
+-   **Include other product variants** - This option is available for products that have product variants. It will include delivery alternatives for other variants of the product. This option isn't available for CTP.
+-   **Include partial quantity** - By default, only suggestions that fulfill the full quantity of the sales line are included. Select this option to include suggestions that only partially fulfill the order line. This option is useful when the customer requests an earlier delivery date and accepts partial delivery.
+-   **Include later dates** - By default, only suggestions that are better (earlier) than the current dates on the sales line are shown. Select this option to include later dates. This option can be useful in situations where parameters other than the date have priority. For example, a specific vendor or warehouse might be preferred.
+-   **Mode of delivery** - Select the preferred mode of delivery to optimize transport time and cost. You will immediately see the effect on the suggested delivery alternatives. Therefore, it's easy to compare the alternatives.
+-   **Include procurement** - When procurement is selected, the suggested delivery alternatives include options to procure from both external vendors and other companies in the enterprise (intercompany). The **Include procurement** option is supported for ATP and ATP + Issue margin delivery date control. Procurement options from the default purchase vendor for the product and all approved vendors for the product are included.
 -   For external vendors, the calculation is based on the purchase lead time.
 -   For intercompany, the calculation considers what is available from the sourcing company, based on delivery date control in the sourcing company.
 -   **Delivery type** (Relevant for procurement)
-    -   **Stock** � Products are shipped from the sourcing warehouse to the site/warehouse on the sales line. They are then shipped from that warehouse to the customer.
-    -   **Direct delivery** � Products are shipped directly from the sourcing warehouse to the customer.
+    -   **Stock** - Products are shipped from the sourcing warehouse to the site/warehouse on the sales line. They are then shipped from that warehouse to the customer.
+    -   **Direct delivery** - Products are shipped directly from the sourcing warehouse to the customer.
 
 ### Availability information
 
 Information on this tab is related to the delivery alternative line that is selected. The following information is shown, depending on the delivery date control for the sales line:
 
 -   **Sales lead time**
-
-<!-- -->
-
--   **Available today** � Show the current physical on-hand, physical reserved, and available physical inventory.
--   **Parameters** � Show the inventory unit and sales lead time.
-
-<!-- -->
+    -   **Available today** - Show the current physical on-hand, physical reserved, and available physical inventory.
+    -   **Parameters** - Show the inventory unit and sales lead time.
 
 -   **ATP and ATP + Issue margin**
-
-<!-- -->
-
--   **Available today** � Show the current physical on-hand, physical reserved, and available physical inventory.
--   **Parameters** � Show the inventory unit and sales lead time.
--   **Future availability** � Show a graphical representation of current and future availability for the selected site and warehouse under **Delivery alternatives**. You can click the chart columns to see more detailed information about the future availability of the product. The slider shows a list of relevant demand and supply orders within the ATP time fence.
-
-<!-- -->
+    -   **Available today** - Show the current physical on-hand, physical reserved, and available physical inventory.
+    -   **Parameters** - Show the inventory unit and sales lead time.
+    -   **Future availability** - Show a graphical representation of current and future availability for the selected site and warehouse under **Delivery alternatives**. You can click the chart columns to see more detailed information about the future availability of the product. The slider shows a list of relevant demand and supply orders within the ATP time fence.
 
 -   **CTP**
-
-<!-- -->
-
--   **Available today** � Show the current physical on-hand, physical reserved, and available physical inventory.
--   **Parameters** � Show the inventory unit and sales lead time.
--   **Explosion** � Show a supply explosion of the selected delivery alternative. You can use **Setup** to change the fields and inventory dimensions that are shown in the explosion.
+    -   **Available today** - Show the current physical on-hand, physical reserved, and available physical inventory.
+    -   **Parameters** - Show the inventory unit and sales lead time.
+    -   **Explosion** - Show a supply explosion of the selected delivery alternative. You can use **Setup** to change the fields and inventory dimensions that are shown in the explosion.
 
 ### Impact of selected alternative
 
