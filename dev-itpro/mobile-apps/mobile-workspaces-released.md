@@ -31,19 +31,19 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Mobile workspaces recently released for the Dynamics 365 for Operations mobile app
-"[!include[banner](includes/banner.md)]"
+"[!include[banner](../includes/banner.md)]"
 
 
 This topics lists the mobile workspaces that have recently been released for the Microsoft Dynamics 365 for Operations mobile app.
 
-Mobile workspaces that were�released in April 2017
+Mobile workspaces that were released in April 2017
 --------------------------------------------------
 
 | Mobile workspace   | Description                                                                                                                                                                                                      | Learn more                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Expense management | This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt. | [Expense management mobile workspace](http://ax.help.dynamics.com/en/wiki/expense-management-mobile-workspace/) |
+| Expense management | This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt. | [Expense management mobile workspace](dynamics365/operations/financials/expense-management/expense-management-mobile-workspace) |
 
-## Mobile workspaces that were�released in March 2017
+## Mobile workspaces that were released in March 2017
 | Mobile workspace   | Description                                                                                   | Learn more                                                                                                                                                                              |
 |--------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Project time entry | This workspace lets users enter and save time against a project by using their mobile device. | [Project time entry mobile workspace for the Dynamics 365 for Operations app](http://ax.help.dynamics.com/en/wiki/project-time-entry-mobile-workspace-for-dynamics-365-for-operations/) |
