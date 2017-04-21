@@ -5,7 +5,7 @@ title: Publish a mobile workspace
 description: This topic describes the steps that system administrators can follow to publish a mobile workspace. You must publish a mobile workspace before users can access it in the Dynamics 365 for Operations mobile app. 
 author: sericks007
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-02-28
 ---
 
 # Publish a mobile workspace
-"[!include[banner](includes/banner.md)]"
+"[!include[banner](../includes/banner.md)]"
 
 
 This topic describes the steps that system administrators can follow to publish a mobile workspace. You must publish a mobile workspace before users can access it in the Dynamics 365 for Operations mobile app. 
@@ -56,14 +56,14 @@ Before you publish a mobile workspace, make sure that the following prerequisite
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics�365 for Operations version�1611 with platform update�3 or later must be implemented.</td>
+<td>Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
 <td>System administrator</td>
-<td>If you don�t already have Dynamics�365 for Operations deployed in your organization, your system administrator should see <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Deploy a Microsoft Dynamics�365 for Operations demo environment</a>.</td>
+<td>If you don't already have Dynamics 365 for Operations deployed in your organization, your system administrator should see <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
-<td>KBs that�contain the mobile workspaces that are provided by Microsoft must be implemented.</td>
+<td>KBs that contain the mobile workspaces that are provided by Microsoft must be implemented.</td>
 <td>System administrator</td>
-<td>You must implement the KBs (hotfixes) that contain the mobile workspaces that are provided by Microsoft. To implement the KBs, see the �Prerequisites� section of the topic about the mobile workspace that your organization wants to use:
+<td>You must implement the KBs (hotfixes) that contain the mobile workspaces that are provided by Microsoft. To implement the KBs, see the "Prerequisites" section of the topic about the mobile workspace that your organization wants to use:
 <ul>
 <li><a href="http://ax.help.dynamics.com/en/wiki/cost-controlling-mobile-workspace/">Cost controlling mobile workspaces</a></li>
 <li><a href="http://ax.help.dynamics.com/en/wiki/inventory-on-hand-mobile-workspace/">Inventory on-hand mobile workspace</a></li>
@@ -73,18 +73,20 @@ Before you publish a mobile workspace, make sure that the following prerequisite
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Deployable packages that contain custom mobile workspaces must be applied to the Dynamics�365 for Operations system.</td>
+<td>Deployable packages that contain custom mobile workspaces must be applied to the Dynamics 365 for Operations system.</td>
 <td>System administrator</td>
-<td>If you want to use custom mobile workspaces that an independent software vendor (ISV) created, you must apply the deployable package to your Dynamics�365 for Operations system. For instructions, see <a href="http://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Apply a deployable package on a Microsoft Dynamics�365 for Operations system</a>.</td>
+<td>If you want to use custom mobile workspaces that an independent software vendor (ISV) created, you must apply the deployable package to your Dynamics 365 for Operations system. For instructions, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## Publish a mobile workspace to the Dynamics 365 for Operations mobile app
-1.  Start Dynamics�365 for Operations in your browser.
+1.  Start Dynamics 365 for Operations in your browser.
 2.  On the **System parameters** page, on the **Manage mobile workspaces** tab, select the workspace to publish.
 3.  Click **Publish mobile workspace**.
 
-After a new workspace is published, users will have to pull to refresh the list of mobile workspaces. [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+After a new workspace is published, users will have to pull to refresh the list of mobile workspaces. 
+
+[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 
