@@ -5,7 +5,7 @@ title: Sales orders mobile workspace
 description: This topic provides information about the Sales orders mobile workspace, which is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace helps you stay up to date on your sales orders anywhere and anytime. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-01-12 16 - 53 - 31
+ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -133,7 +133,9 @@ Download and install the Dynamics 365 for Operations mobile app from your mobil
 2.  Enter your Dynamics 365 for Operations URL.
 3.  Enter the company to sign in to. For example, enter **USMF**.
 4.  The first time that you sign in, you’re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
-5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator later publishes a new workspace, you can pull to refresh the list of mobile workspaces. [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator later publishes a new workspace, you can pull to refresh the list of mobile workspaces. 
+
+    [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## View information about sales orders for a customer by using the mobile workspace
 1.  On your mobile device, select the **Sales orders** workspace.
