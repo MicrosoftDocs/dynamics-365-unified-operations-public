@@ -73,7 +73,7 @@ Calculation that is based on a route is as valid as calculation that is based on
 When material is consumed from inventory to WIP, the cost of material is added to WIP at its actual standard cost for a cost group. This operation occurs under the following conditions:
 
 -   Kanban issues are posted for kanban picking lines that update inventory.
--   Transfer jobs are completed that update inventory on pick but not receipt (Transfer of material from inventory�to WIP).
+-   Transfer jobs are completed that update inventory on pick but not receipt (Transfer of material from inventory to WIP).
 
 ## Receiving products from the production flow
 Products are received from the production flow under the following conditions:
