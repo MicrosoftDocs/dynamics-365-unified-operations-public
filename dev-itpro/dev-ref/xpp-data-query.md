@@ -21,7 +21,7 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150273
-ms.assetid: 80e7f48a-a2fd-41f8-9e24-961aaea1934f
+ms.assetid: 999a5ecf-559b-4d66-8b05-9a8e477e0518
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robinr
