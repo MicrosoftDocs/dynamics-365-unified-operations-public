@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Expense management mobile workspace
-"[!include[banner](includes/banner.md)]"
+"[!include[banner](../includes/banner.md)]"
 
 
 This topic provides information about the Expense management mobile workspace that is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt.
