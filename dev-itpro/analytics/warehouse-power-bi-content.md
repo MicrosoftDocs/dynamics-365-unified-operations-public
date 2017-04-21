@@ -122,7 +122,7 @@ The following key aggregate measurements are used as the basis of the content.
 ## Additional resources
 Here are some helpful links that are related to entities and building Power BI content:
 
--   [Data entities](..data-entities/data-entities.md)
+-   [Data entities](../data-entities/data-entities.md)
 -   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Data modeling using Power�BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Adding Power�BI tiles to workspaces](configure-power-bi-integration.md)
