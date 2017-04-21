@@ -37,7 +37,11 @@ This topic provides information about the Arrival overview feature. The Arrival 
 The **Arrival overview** page provides an overview of all expected incoming items. It also shows arrivals that can be initialized based on the overview. This topic focuses on the receiving process.
 
 ## Business scenario
-Consider the following scenario in the inbound processes. [![Business scenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png) Sammy, a receiving clerk, wants to know what is expected to be received on the current day. On the **Arrival overview** page, Sammy can get an overview of the current tasks, and a rough estimate of quantities, volume, weight, different order types, and so on. Later, a delivery arrives at one of the inbound docks, and Sammy receives a list of the delivery. On the **Arrival overview** page, Sammy can perform the following tasks:
+Consider the following scenario in the inbound processes. 
+
+[![Business scenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png) 
+
+Sammy, a receiving clerk, wants to know what is expected to be received on the current day. On the **Arrival overview** page, Sammy can get an overview of the current tasks, and a rough estimate of quantities, volume, weight, different order types, and so on. Later, a delivery arrives at one of the inbound docks, and Sammy receives a list of the delivery. On the **Arrival overview** page, Sammy can perform the following tasks:
 
 -   Identify the matching receipt order, and register the receipt as **In progress**. The lines that are required for a registration are automatically generated, and the receipt can be monitored, even though the transactions haven't yet been posted as **Registered**.
 -   Access the appropriate arrival journal reference (that is, the **Item arrival** journal or the **Production input** journal), and identify journals that are ready for a product receipt update.
@@ -65,7 +69,10 @@ For this example, the **Arrival overview profile name** field on the **Arrival o
 
 To automatically create arrival journals from the **Arrival overview** page, you must define appropriate information in the **Journal** field group on the **Arrival options** FastTab.
 
--   You must specify a journal name to create a journal. [![Specifying a journal name](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+-   You must specify a journal name to create a journal. 
+
+[![Specifying a journal name](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+
 -   If you specify values in the **Warehouse** and **Location** fields, those values are applied on the journal lines. If you don't specify values, the system uses the values from the dimension that is specified on the inventory transactions.
 
 #### Items that are received from one expected receipt order
