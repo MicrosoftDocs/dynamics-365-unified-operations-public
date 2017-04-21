@@ -1,4 +1,3 @@
-﻿---
 # required metadata
 
 title: Cost controlling mobile workspace
@@ -33,6 +32,43 @@ ms.dyn365.ops.version: Version 1611
 # Cost controlling mobile workspace
 
 With the Cost controlling mobile workspace, cost center managers can see the cost center performance anytime and anywhere. 
+
+Overview of the Cost controlling mobile workspace
+-------------------------------------------------
+
+The **Cost controlling** mobile workspace provides an instant view of the current performance of cost centers by comparing actual costs against the budgeted costs. You can drill down to statuses of individual cost elements. For example, an employee receives an invitation to an international conference, but the organization must cover all the travel expenses. The employee asks his manger whether he can attend the conference. The manager opens the **Cost controlling** mobile workspace on her mobile device to see whether she has budget for the employee to attend the conference.
+
+### Data security
+
+The data in the **Cost controlling** mobile workspace is secured through user credentials. Cost center managers are allowed to see data only for their own cost center. The access-level security is managed in the **Cost accounting** module. Cost accountants define the configuration of the **Cost controlling** mobile workspace in the **Cost accounting** module. After the workspace is published to the Microsoft Dynamics 365 for Operations mobile app, it's available in the app. Therefore, all cost center managers in the organization can view data in the same format.
+
+### Actions, views, and links
+
+The **Cost controlling** mobile workspace for the Dynamics 365 for Operations app provides the following actions, views, and links:
+
+-   **Actions:**
+    -   Use **Select configuration** to select a layout.
+    -   Use **Select cost object** to select the cost centers to filter data on. 
+    > [!NOTE]
+    > The cost centers that appear in the list depend on the access that is granted in the **Cost accounting** module.
+    
+-   **Views:** Based on the actions that are selected and the configuration in the **Cost accounting** module, you can view the following information on the cards.
+    -   Actual vs budget (current period)
+    -   Actual vs revised budget (current period)
+    -   Actual vs budget (previous period)
+    -   Actual vs revised budget (previous period)
+    -   Actual vs budget (year to date)
+    -   Actual vs revised budget (year to date)
+
+    The following amounts are shown on every card: Actual, Budget, Variance, and Variance %.
+-   **Links:**
+    -   Details for current period
+    -   Details for previous period
+    -   Details for year to date
+
+    When you select a link, a card is shown for each cost element. The following amounts are shown on every card: Actual, Budget, Budget variance, Budget variance %, Revised budget, Revised budget variance, and Revised budget variance %. 
+    
+    [![Card for a cost element ](./media/cost-controlling.png)](./media/cost-controlling.png)
 
 Prerequisites
 -------------
