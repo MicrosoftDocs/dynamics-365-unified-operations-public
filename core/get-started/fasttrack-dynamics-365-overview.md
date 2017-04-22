@@ -47,7 +47,7 @@ Eligible SKUs, apps, or plans:
 -   Plan 1
 -   Plan 2, with the plan to implement Sales, Field Service, Customer Service, Project Service Automation apps.
 
-Minimum seats: 150 combined eligible App or Plan user subscription licenses
+Minimum seats: 20 combined eligible App or Plan user subscription licenses
 Eligible SKUs, apps, or plans:
 -   Operations
 -   Plan 2, with the plan to implement the Operations app. 
@@ -62,6 +62,8 @@ Eligible SKUs, apps, or plans:
 
 > [!NOTE]
 > 2.5 device subscription licenses are considered the equivalent of one Dynamics 365 for Operations user subscription license.
+
+![Chart of options](media/number-seats.png)
 
 ## Overview: Microsoft FastTrack for Dynamics 365
 During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assistance in removing blockers during implementation through the following interactions:
