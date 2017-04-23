@@ -32,6 +32,8 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Copy a Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment
 
+[!include[banner](../includes/banner.md)]
+
 This topic provides information about how to export a Microsoft Dynamics 365 for Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
 
 Overview
