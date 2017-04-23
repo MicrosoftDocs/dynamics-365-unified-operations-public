@@ -17,7 +17,7 @@ ms.search.form: RetailHardwareStation
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+# ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 27161

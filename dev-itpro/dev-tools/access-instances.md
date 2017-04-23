@@ -2,10 +2,10 @@
 # required metadata
 
 title: Access Dynamics 365 for Operations instances
-description: This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configurations settings for developers and administrators.
-author: RobinARH
+description: This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configuration settings for developers and administrators.
+author: robadawy
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
