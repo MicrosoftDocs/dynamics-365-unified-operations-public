@@ -40,7 +40,7 @@ This article provides a list of the data entities that are available for the Sys
 | Suggested sequence | Entity name    | Area         | Entity type | Dependency | Comments                                                   |
 |--------------------|----------------|--------------|-------------|------------|------------------------------------------------------------|
 | 1                  | Currencies     | System setup | Setup       | None       | Define the currencies to use in the system.                |
-| 2                  | Exchange rates | System setup | Setup       | Currencies | Define currency exchange rates between any two currencies. |
+| 2                  | Exchange rates | System setup | Setup       | Currencies, exchange rate types | Define currency exchange rates between any two currencies. Exchange rate types can be defined under General ledger > Currencies > Exchange rate types. |
 
 **01.1.002 SYS – System parameters**
 
