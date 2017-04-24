@@ -30,7 +30,7 @@
 >    
 
 >   All the amounts in the content pack are shown in the system currency. You
->   can set the system currency on the Systems parameters form.
+>   can set the system currency on the System parameters form.
 
 >    
 
