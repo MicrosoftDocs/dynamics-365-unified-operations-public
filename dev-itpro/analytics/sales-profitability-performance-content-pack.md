@@ -50,6 +50,7 @@ Profitability can be analyzed by:
 
 ## Accessing the content pack
 The Sales and profitability performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+**Note:** KB 4011327 is a prerequisites for his Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
 
 ## Metrics included in the content pack
 The content pack includes a report that consists of a set of metrics visualized as charts, tiles, and tables. The following table provides an overview of the visualisations in the content pack.
