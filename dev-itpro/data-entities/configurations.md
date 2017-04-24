@@ -100,13 +100,11 @@ defaults:
 
 -   TXT for the delimited data source
 
-### Templates in LCS
+### Templates for configurations
 
-Predefined templates are available in Life Cycle Services (LCS) as
-shared assets for download and import into a Dynamics 365 installation.
-These templates are sequenced so that the data managed by the entities
+Predefined templates are automatically loaded in Dynamics 365 for an instance. They are sequenced so that the data managed by the entities
 will be processed in the correct sequence. New templates and updates
-will be released through Life Cycle Services (LCS) in between releases.
+will be delivered in new releases or through periodic updates. You can update your existing instance by using the refresh button in the framework parameters found on the data management workspace.
 
 You can also add multiple templates to a single data project. The
 predefined templates are designed to maintain the correct sequence when
@@ -245,7 +243,7 @@ some additional features to control the export process:
     button to update any entities that you have selected.
 
 3)  Add filters to the entity with the Filter icon. The data will be
-    filtered as it is imported.
+    filtered as it is imported. If you add a filter, the filter icon will change to an edit icon.
 
 4)  If necessary, change the entity mappings using the View map icon.
 
@@ -317,7 +315,7 @@ is:
     than one entity for that button to appear
 
 5)  Add filters to the entity with the Filter icon. Then review the
-    results of the filters using the Preview icon
+    results of the filters using the Preview icon. If you add a filter, the filter icon will change to an edit icon.
 
 6)  If necessary, change the entity mappings using the View map icon.
 
