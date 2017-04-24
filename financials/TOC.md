@@ -207,6 +207,7 @@
 ## [Project quotations](project-management/project-quotations.md)
 ## [Project resourcing](project-management/project-resourcing.md)
 ## [Work breakdown structures](project-management/work-breakdown-structures.md)
+## [Project time entry mobile workspace](project-management/project-time-entry-mobile-workspace.md)
 # [Localizations](localizations/TOC.md)
 
 # [Human resources](/dynamics365/operations/human-resources/index)

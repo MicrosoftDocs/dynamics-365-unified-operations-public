@@ -29,8 +29,11 @@
 # [Data entities](data-entities/TOC.md)
 
 # Mobile apps
-## [Install and configure the warehousing app ](/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Mobile app home page](mobile-apps/Mobile-app-home-page.md)
+## [Mobile workspaces recently released](mobile-apps/mobile-workspaces-released.md)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
+## [Install and configure the warehousing app ](/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
+
 
 # Office integration
 ## [Office integration](office-integration/office-integration.md)
