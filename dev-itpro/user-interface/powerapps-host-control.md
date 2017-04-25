@@ -44,7 +44,7 @@ In Microsoft PowerApps, you can manage organizational data by running an app tha
 3.  In the **Properties** pane, enter the **App ID** value.
 4.  If your PowerApps app shares or is linked to the current data source on your page, you should pass the ID of the primary or linked key field for the data that you want your PowerApps app to show. In this case, provide the ID as the value of the **Entity ID**, **Entity ID Data Source/Field**, or **DataMethod** property. This value will then be passed to your PowerApps app as a parm value, and your PowerApps app must use that value to obtain the linked data. 
     
-    ![PowerApps Host control properties window](media/powerapps-properties.md)
+    ![PowerApps Host control properties window](media/powerapps-properties.png)
     
 5.  In some cases, your PowerApps app might be hosted in a development or sandbox PowerApps environment that is provided by Microsoft. In this case, you must supply that override URL as the value of the **PowerApps Environment Override** property.
 
