@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail Store Scale Unit overview
