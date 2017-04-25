@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Payroll data updates FAQ
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Payroll data updates FAQ
+
+[!include[banner](../includes/banner.md)]
+
 
 A number of changes can and do happen at the end of a year that require changes to your payroll data. Workers can change their benefit election, or your company might change benefit rates, and benefit balances. Workers who move into different positions also result in changes to payroll data. This topic lists questions and answers that address these kinds of changes.
 

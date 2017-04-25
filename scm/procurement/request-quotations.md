@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Request for quotations (RFQs)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Request for quotations (RFQs)
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides an overview of requests for quotation (RFQs), which organizations issue when they must purchase items or services, and want to receive competitive offers from several vendors. In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify. You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.
 
@@ -191,6 +194,7 @@ The following table shows how the RFQ status changes as you accept and reject bi
 | **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
 | Accept one of the bids. | Received              | Accepted               | Received                     | Accepted                      | Received                   | Accepted                    |
 | Reject the other bids.  | Rejected              | Accepted               | Rejected                     | Accepted                      | Rejected                   | Accepted                    |
+
 
 
 

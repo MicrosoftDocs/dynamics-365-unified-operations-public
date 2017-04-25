@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Tax codes, tax groups, and posting definitions FAQ
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Tax codes, tax groups, and posting definitions FAQ
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic answers frequently asked questions about tax and posting definitions.
 
@@ -80,3 +83,4 @@ A tax code can belong to only one tax group that is enabled for posting definiti
 
 ## Don't see your question here?
 We're working to include as many questions as we can, so that Microsoft Dynamics AX Help will be more useful to people just like you. Tell us what question you would like to add to this topic. Send email to <adocs@microsoft.com>.
+

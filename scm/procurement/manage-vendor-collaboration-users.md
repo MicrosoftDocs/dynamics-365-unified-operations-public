@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Manage vendor collaboration users
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Manage vendor collaboration users
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
 
@@ -94,5 +97,6 @@ To request that the security roles are modified for a user:
 2.  Write a comment in the **Business justification** field.
 3.  In the **Maintain user roles** section, select the security roles that you want to assign, or clear the ones that you want to remove.
 4.  Click **Submit**.
+
 
 

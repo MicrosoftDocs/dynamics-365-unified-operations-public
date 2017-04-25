@@ -113,6 +113,7 @@
 ## [Marketing](sales-marketing/overview-sales-marketing.md)
 ## Sales orders
 ### [Order promising](sales-marketing/delivery-dates-available-promise-calculations.md)
+### [Delivery alternatives](sales-marketing/delivery-alternatives.md)
 ### [Order entry deadlines](sales-marketing/order-entry-deadlines.md)
 ### [Direct deliveries](sales-marketing/direct-deliveries.md)
 ### [Delivery schedules](sales-marketing/delivery-schedules.md)
@@ -155,3 +156,15 @@
 ### [Set up mobile devices for warehouse work](warehousing/configure-mobile-devices-warehouse.md)
 ### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Warehouse mobile device display settings](warehousing/change-warehouse-mobile-device-displays.md)
+
+# [Financials](/dynamics365/operations/financials/index)
+
+# [Human resources](/dynamics365/operations/human-resources/index)
+
+# [Retail](/dynamics365/operations/retail/index)
+
+# [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
+
+# Other resources
+## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
+## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Metadata properties - ReadOnly, AllowEdit, Mandatory
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Metadata properties - ReadOnly, AllowEdit, Mandatory
+
+[!include[banner](../includes/banner.md)]
+
 
 This article covers the behavioral properties of metadata for ReadOnly, AllowEdit, and Mandatory. 
 
@@ -187,6 +190,7 @@ This is enforced for all consumers (X++, OData, and so on). <strong>Important:</
 </tr>
 </tbody>
 </table>
+
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Restore a database on a non-production environment
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Restore a database on a non-production environment
+
+[!include[banner](../includes/banner.md)]
+
 
 Microsoft Dynamics 365 for Operations lets you request that a database be restored to a specific point in time that is within 35 days of your request. This topic describes how to request a point-in-time restore.
 
@@ -77,5 +80,6 @@ Here is the list of requirements and conditions of operation for a point-in-time
     -   The Management Reporter database will also remain in the current state and must be reset after the restore is completed.
 -   The Dynamics 365 for Operations database will be left at the precise state that it was in at the requested point in time. We do **not** withhold batches or restrict access to the restored database.
 -   LCS users who have a role of **Project Owner** or **Environment Manager** in LCS will have access to the Azure SQL Database and machine credentials for all non-production environments. To help guarantee security of the data that is copied to non-production environments, restrict membership in these roles.
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Issue search on Lifecycle Services
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Issue search on Lifecycle Services
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Issue search tool on Microsoft Dynamics Lifecycle Services (LCS). It explains how to search for product issues and regulatory features, and describes the information that is provided for each status.
 
@@ -144,4 +147,5 @@ For white papers, certifications, registrations, and reports: The title, product
 
 ## Issue details
 The code changes are provided for reference only and should not be manually inserted into a higher development layer. Otherwise, they become unsupported customized objects that the partner or customer assumes full responsibility for.
+
 

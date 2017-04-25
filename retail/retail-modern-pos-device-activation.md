@@ -1,7 +1,7 @@
----
+﻿---
 # required metadata
 
-title: Retail Modern POS configuration and installation
+title: Retail Modern POS installation and updates
 description: This topic describes how to configure, download, and install Retail Modern POS on a variety of platforms.  It then describes how to activate Retail Modern POS through device activation.
 author: josaw1
 manager: AnnBe
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail Modern POS configuration and installation
 
+[!include[banner](includes/banner.md)
+
+
 This topic describes how to configure, download, and install Retail Modern POS on a variety of platforms.  It then describes how to activate Retail Modern POS through device activation.
 
 Technology
@@ -53,7 +56,7 @@ Before you start the steps outlined in this article, follow these steps:
 -   Verify that you can access the Retail Server from the device.
 -   Verify that the Dynamics 365 for Operations environment contains the Retail permission groups and jobs in the **Human resources** module, given as part of the demo data installed.
 
-## Download and install Retail Modern POS
+## <a id="Install"> </a>Download and install Retail Modern POS
 ### Verify that the device is correctly configured
 
 1.  Use your Microsoft Azure Active Directory (Azure AD) credentials to sign in to the Dynamics 365 for Operations trial.
@@ -103,14 +106,6 @@ You can now start the program. **Note:** This installation occurs only for the a
 4.  Upon completion, the application should be available to run from the application list on the device (Example: Upon installing the application on a Windows Phone, it can be run from the home screen tiles list).
 
 You can now start the program.
-
-## Updating the Retail Modern POS application
-
-**Note:** To learn more about deployable packages, see the article <a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.
-
-1.  After a Retail Modern POS application is uploaded into the environment, the version of the package can be selected on the device.  The package listings should include the new uploaded application.
-2.  To update the Retail Modern POS application, follow the same steps listed above.  The application can be updated in-place simply by running the newer version of the Self-service installer.  Uninstallation is not required and is not recommended.  Further, device activation status will be maintained after updating.
-3.  If the configuration file has changed (due to various configuration changes in Operations), an updating installation will not update the Retail Modern POS application.  The current configuration is the used settings.
 
 
 ## Create a worker
@@ -168,6 +163,14 @@ This procedure should be completed before you activate Cloud POS or Modern POS. 
 
 The device should now be activated and ready to use.
 
+## Updating the Retail Modern POS application
+
+**Note:** To learn more about deployable packages, see the article [Apply a deployable package](/dev-itpro/deployment/apply-deployable-package-system).
+
+1.  After a Retail Modern POS application is uploaded into the environment, the version of the package can be selected on the device.  The package listings should include the new uploaded application.
+2.  To update the Retail Modern POS application, follow the same steps listed above in the section [Download and install Retail Modern POS](#Install).  The application can be updated in-place simply by running the newer version of the Self-service installer.  Uninstallation is not required and is not recommended.  Further, device activation status will be maintained after updating.
+3.  The installer will use the currently installed configuration settings. If the configuration file has changed (due to various configuration changes in Operations), an update will not change the Retail Modern POS application settings.
+
 ## Troubleshooting
 ### Troubleshoot installation
 
@@ -219,9 +222,14 @@ The device should now be activated and ready to use.
     -   Make sure that the Real-time Service profile has the correct access.
     -   Make sure that the electronic funds transfer (EFT) configuration value is present.
 
+### Troubleshoot Retail Modern POS connectivity
+On a Onebox system, such as a developer topology or a demo environment, or when Retail Store Scale Unit and Retail Modern POS are installed on the same computer, Retail Modern POS is unable to complete device activation.
+
+***Solution:*** This issue occurs because Retail Modern POS is unable to make network calls to the same computer (Calls to itself). To mitigate this issue, an AppContainer loopback exception must be enabled to allow for communications to occur to the same computer. Various applications will assist in enabling this for Retail Modern POS. For more information on loopback, see <a href="https://msdn.microsoft.com/en-us/library/windows/apps/hh780593.aspx">How to enable loopback and troubleshoot network isolation</a>.
 
 See also
 --------
 
 [Install the POS Layout designer](install-pos-layout-designer.md)
+
 

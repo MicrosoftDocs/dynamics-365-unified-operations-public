@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Install report design templates
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install report design templates
 
+[!include[banner](../includes/banner.md)]
+
+
 This articles describes how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible header and footer branding.
 
 Introduction
@@ -42,8 +45,8 @@ This article introduces a new set of developer tools that take the form of repo
 ## Why aren't these designs the default designs for the application suite reports?
 There are two primary reasons why we are maintaining the legacy solutions for Dynamics 365 for Operations:
 
--   **Modern designs don't include code behind.** Whereas the legacy solutions use embedded Microsoft Visual Basic (VB) code to recognize configuration keys and honor regulatory requirements that vary by region, the modern designs offer much less flexibility. The benefit of a simple design that has minimal code behind comes at the expense of reusability across regions.
--   **Modern designs aren't available for all business documents.** As for any 'preview,' there is a gap between supported business documents and the availability of a modern design. Despite the lack of aesthetics in the legacy designs, they provide a sense of consistency, for better or worse.
+-   **Modern designs don't include code.** Although the legacy solutions use embedded Microsoft Visual Basic (VB) code to recognize configuration keys and honor regulatory requirements that vary by region, the modern designs offer much less flexibility. The benefit of a simple design that has minimal code behind it comes at the expense of reusability across regions.
+-   **Modern designs aren't available for all business documents.** There is a gap between supported business documents and the availability of a modern design. Although the legacy designs aren't as aesthetically pleasing, they provide a sense of consistency.
 
 **Important:** These simple modern designs are **not** recommended for all types of deployments. They are intended for cases where the customer doesn't require run-time control over the layout of the document through existing application configuration settings.
 
@@ -51,13 +54,11 @@ There are two primary reasons why we are maintaining the legacy solutions for Dy
 The report designs have been bundled into a model file and posted to Microsoft Dynamics Lifecycle Services (LCS), so that you can easily access them from your existing subscription. Use the following procedure to obtain the report design solutions and install them in your local development environment. After you've installed them, you must apply some customizations to incorporate the new report designs for the appropriate scenarios. Follow these steps to install the modern report designs for the application suite.
 
 1.  Download the ApplicationSuiteModernDesigns model file from the **Shared asset library** page on LCS. Sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) to access the deployment dashboard, and then save the model file to a location that is accessible from the development environment. [![ApplicationSuiteModernDesigns model file](./media/lcs-shared-asset-library-1024x489.png)](./media/lcs-shared-asset-library.png)
-2.  Import the model file into your local development environment. To install a model file in a Dynamics 365 for Operations development environment, use the ModelUtil.exe tool and the **-import** directive.
+2.  Import the model file into your local development environment. To install a model file in a Dynamics 365 for Operations development environment, use the ModelUtil.exe tool and the **-import** directive. Here is an example.
 
         ModelUtil.exe -import -metadatastorepath=[path of the metadata store] -file=[full path of the file to import]
 
-    **Example**
-
-    1.  Navigate to the C:\\AOSService\\PackagesLocalDirectory\\bin folder.
+    1.  Navigate to the **C:\AOSService\PackagesLocalDirectory\bin** folder.
     2.  Run the following command.
 
             ModelUtil.exe -import -metadatastorepath=C:\AOSService\PackagesLocalDirectory -file="E:\Test\AppSuiteModernDesigns.axmodel"
@@ -77,6 +78,7 @@ The report designs have been bundled into a model file and posted to Microsoft D
         this.parmReportName(ssrsReportStr(CustAccountStatementExt, DesignName));
 
     At this point, you should be able to access the modern report designs from the application. Be sure to perform thorough test validations on these design templates before you deploy to production environments.
+
 
 
 

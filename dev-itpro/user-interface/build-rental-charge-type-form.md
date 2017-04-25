@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Build the Rental Charge Type form
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Build the Rental Charge Type form
+
+[!include[banner](../includes/banner.md)]
+
 
 In this lab you’ll create a Simple List form. A Simple List form can show reference or secondary data that has six or fewer fields. For example, the form that you create will list and describe the types of rental charges. 
 
@@ -137,5 +140,6 @@ Use Visual Studio to build and run the **FmtChargeType** form.
     [![rentalcharge5](./media/rentalcharge5.png)](./media/rentalcharge5.png)
     
 7.  The form opens in view mode. Click **Edit** in the Action Pane to switch the form into edit mode. To return to view mode, click **Options** and then **Read mode**.
+
 
 

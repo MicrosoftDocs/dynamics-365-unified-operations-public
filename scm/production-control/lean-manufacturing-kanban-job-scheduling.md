@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Kanban job scheduling for lean manufacturing
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Kanban job scheduling for lean manufacturing
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about visual control over kanban job scheduling and various ways to schedule kanban jobs.  
 
@@ -72,4 +75,5 @@ The **Kanban job scheduling** list page contains a FactBox that shows the availa
 
 See also
 --------
+
 

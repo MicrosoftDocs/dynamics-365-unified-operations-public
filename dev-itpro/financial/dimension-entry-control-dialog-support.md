@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Dimension Entry control dialog support
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension Entry control dialog support
 
+[!include[banner](../includes/banner.md)]
+
+
 Describes the code pattern for putting a Dimension Entry control on a dialog.
 
 The code pattern to add Dimension Entry controls to dialogs has changed for Microsoft Dynamics 365 for Operations. This is an example of the old model:
@@ -60,4 +63,5 @@ For the second parameter on `addToDialog`, choose the controller class that sati
 [Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)
+
 

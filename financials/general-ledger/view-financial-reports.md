@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: View financial reports
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # View financial reports
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how to view and explore financial reports in Microsoft Dynamics AX. It includes information about the various options that you can apply to financial reports to change their appearance and the data that they include.
 
@@ -90,4 +93,5 @@ See also
 --------
 
 [Financial reporting for Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+
 

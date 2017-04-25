@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Build operations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Build operations
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic reviews the process to build projects and full build of model packages.
 
@@ -116,4 +119,5 @@ See also
 [Development tools](development-tools.md)
 
 [Developer home page](developer-home-page.md)
+
 

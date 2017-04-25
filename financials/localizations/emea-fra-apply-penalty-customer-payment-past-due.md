@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Penalties for past due customer payments in France
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Penalties for past due customer payments in France
 
+[!include[banner](../includes/banner.md)]
+
+
 In France, you can apply a penalty when a customer payment is past due and you can print the lump sum recovery text that displays the penalty amount that must be paid on the invoice, and the due date of the payment. 
 
 What is lump sum recovery text?
@@ -52,5 +55,6 @@ After you set up the parameter to print lump sum recovery text, it is printed on
 -   Free text invoices
 -   Customer proforma invoices
 -   Customer credit notes
+
 
 

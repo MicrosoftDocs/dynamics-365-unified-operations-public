@@ -1,6 +1,7 @@
 # [Overview of information access and reporting](information-access-reporting.md)
 
 # [Access Power BI content](power-bi-content-microsoft-partners.md)
+## [Power BI content recently released](power-bi-content-released.md)
 ## [Compensation and benefits](compensation-and-benefits-analysis-power-bi-content-pack.md)
 ## [Cost accounting analysis](cost-accounting-analysis-content-pack.md)
 ### [Security for the Cost accounting analysis](setup-security-cost-accounting-content-pack.md)

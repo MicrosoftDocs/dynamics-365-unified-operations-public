@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: SQL Server Reporting Services reports
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # SQL Server Reporting Services reports
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available in Dynamics 365 for Operations.
 
 Reports can be defined simply as any visualization of a structured data set. This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information. To account for this broad definition, Dynamics 365 for Operations offers several tools to produce reports to satisfy complex business requirements. One of these tools is SQL Server Reporting Services. SSRS reports provide the following advantages:
@@ -49,4 +52,5 @@ The [SQL Server Reporting Services Reports report](https://mbs.microsoft.com/cu
 The report is a Microsoft Excel file. In this report, the rows are grouped alphabetically on tab 1. All rows are displayed when you click tab 2. 
 
 [![GeneratedReports](./media/generatedreports.png)](./media/generatedreports.png)
+
 

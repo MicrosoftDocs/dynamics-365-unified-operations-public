@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Azure Resource Manager onboarding
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 2
 ---
 
 # Azure Resource Manager onboarding
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how to complete the Azure Resource Manager (ARM) onboarding process for your connectors. 
 
@@ -102,5 +105,6 @@ Complete this procedure only if you didn't complete steps 6 through 8 of the pr
 
 1.  In LCS, on the **Project** page, in the **Environments** section, click **Microsoft Azure settings**.
 2.  On the **Microsoft Azure setup** page, select the region to deploy to, and then click **Connect**. The ARM onboarding flow is now completed. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Retail home page
@@ -39,11 +39,9 @@ Dynamics 365 for Operations – Retail delivers a complete shopping experience, 
 This page points to resources that will help you use Microsoft Dynamics 365 for Operations - Retail more effectively. On the leftmost pane, select a feature area to learn more about it. 
 
 ## Set up Retail channels
-As you set up your Retail experience, you'll decide how to define and configure your brick and mortar store (called *retail store* in Dynamics 365 for Operations) and online store operations. 
+As you set up your Retail experience, you'll decide how to define and configure your stores -- brick and mortar store, online store, and call center. 
 
-Each retail store can have its own payment methods, price groups, POS solutions, income accounts, expense accounts, and staff. After you create your retail store, you assign the products that you want the store to carry. You also assign employees, registers, and customers to the store. Finally, you add the new store to an organization hierarchy.
-
-When you create your online store, you must set up components such as assortments, attributes, payment methods, and shipping methods. You can also define prices, promotions, discounts, and shipping terms that are specific to the online store.
+Each retail store can have its own payment methods, delivery methods, price groups, income/expense accounts, registers, and staff. After you create your retail store, you create an assortment of products that you want the store to carry. You can also define store-specific prices and discounts that are applicable to products that are available in the store.
 
 -   [Define retail channels](define-maintain-retail-channels.md)
 -   [Online store overview](online-stores.md)
@@ -54,10 +52,10 @@ You can set up a call center as a type of retail channel. In a call center, work
 -   [Call center functionality](call-center-functionality.md)
 -   [Create call center catalogs](create-call-center-catalogs.md)
 
-## Define your POS and MPOS solutions
-Retail Modern POS (MPOS) is a point-of-sale app for PCs, tablets, and phones. Sales staff can process sales transactions, customer orders, and perform daily operations and inventory management with mobile devices anywhere in the store, as well as at PC-based registers. Cloud POS is a browser-based POS. 
+## Define your POS solutions
+Retail Modern POS (MPOS) is a point-of-sale app for PCs, tablets, and phones. Sales staff can process sales transactions and customer orders, perform clienteling activities, and perform daily operations and inventory management with mobile devices anywhere in the store, as well as at PC-based registers. Cloud POS is a browser-based POS that can be launched on any standard browser. 
 
-There are several components you’ll set up to define the relationships among a store, the POS registers or channels within the store, and the retail peripherals that those registers or channels use to process transactions. You’ll also define the characteristics of a specific instance of the POS, including the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who logs on to that register.
+There are several components you’ll set up to define the relationships among a store, the POS registers within the store, and the retail peripherals that those registers use to process transactions. You’ll also define the characteristics of a specific instance of the POS, including the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, the visual experience for the user who logs on to that register, and the functionalities that are enabled in the register. You'll also define whether the register can operate in a disconnected or offline state.
 
 -   [Define and maintain channel clients, registers, and hardware stations](define-maintain-channel-clients-registers-hw-stations.md)
 -   [Configure and install MPOS](retail-modern-pos-device-activation.md)
@@ -97,3 +95,4 @@ You can find opinions, news, and other information about Microsoft Dynamics 365 
 There are many topics about Retail on the <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX product team blog</a>. Some of these posts were written for the previous version of Dynamics 365 for Operations, but the same concepts still apply, and the procedures are similar in the current version.
 
 The <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog</a> provides Microsoft Dynamics Partners with a single resource to learn about what’s new and trending in MBS Operations.
+

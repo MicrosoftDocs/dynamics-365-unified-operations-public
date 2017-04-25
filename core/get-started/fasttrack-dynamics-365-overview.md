@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Microsoft FastTrack for Dynamics 365 overview
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Microsoft FastTrack for Dynamics 365 overview
 
+[!include[banner](../includes/banner.md)]
+
+
 Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success.  
 
 ## Eligibility: Microsoft FastTrack for Dynamics 365
@@ -47,7 +50,7 @@ Eligible SKUs, apps, or plans:
 -   Plan 1
 -   Plan 2, with the plan to implement Sales, Field Service, Customer Service, Project Service Automation apps.
 
-Minimum seats: 150 combined eligible App or Plan user subscription licenses
+Minimum seats: 20 combined eligible App or Plan user subscription licenses
 Eligible SKUs, apps, or plans:
 -   Operations
 -   Plan 2, with the plan to implement the Operations app. 
@@ -62,6 +65,8 @@ Eligible SKUs, apps, or plans:
 
 > [!NOTE]
 > 2.5 device subscription licenses are considered the equivalent of one Dynamics 365 for Operations user subscription license.
+
+![Chart of options](media/number-seats.png)
 
 ## Overview: Microsoft FastTrack for Dynamics 365
 During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assistance in removing blockers during implementation through the following interactions:
@@ -288,4 +293,5 @@ The Servicing tech talk is designed to provide guidance on the servicing options
 -   Cloud powered support
 
 The typical format is a one-hour Skype call. The recommended attendees include project managers and technical resources from customer and partner teams.
+
 

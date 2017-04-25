@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: System tables
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # System tables
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the system tables.
 
@@ -3647,4 +3650,5 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 ### Inheritance Hierarchy
 
 [xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [VSAssembly Table](#vsassembly)
+
 

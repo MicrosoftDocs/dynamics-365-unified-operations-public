@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Operations scheduling options
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Operations scheduling options
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the options for operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 
@@ -133,4 +136,5 @@ See also
 --------
 
 [Operations scheduling](operations-scheduling.md)
+
 

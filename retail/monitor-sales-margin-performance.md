@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Monitor sales and margin performance
 
+[!include[banner](includes/banner.md)]
+
+
 You can monitor sales and margin performance in real time using Microsoft Dynamics 365 for Operations.
 
 As part of Dynamics 365 for Operations, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:
@@ -51,3 +54,4 @@ Additionally, two unique reports that take advantage of hierarchical grid struct
 -   **Category and product management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**
 -   **Pricing and discount management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports**
+

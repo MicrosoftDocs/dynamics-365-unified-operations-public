@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create a Power BI report by using Dynamics 365 for Operations data
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create a Power BI report by using Dynamics 365 for Operations data
+
+[!include[banner](../includes/banner.md)]
+
 
 This tutorial outlines the process for creating an end user–friendly data model, reports, and dashboards in the version of Power BI that is currently available from http - //app.powerbi.com.
 
@@ -233,5 +236,6 @@ In this section, you will create a dashboard by using the data model that you 
 
     [![PowerBI23](./media/powerbi23.png)](./media/powerbi23.png)
     
+
 
 

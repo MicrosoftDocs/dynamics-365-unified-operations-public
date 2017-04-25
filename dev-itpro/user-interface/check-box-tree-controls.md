@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Check box support in tree controls
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Check box support in tree controls
+
+[!include[banner](../includes/banner.md)]
+
 
 This article is intended as a primer for using check box controls in the tree control. It's not a general “how to” for using tree controls.
 
@@ -154,4 +157,5 @@ To react to or track the checked state of a node (**idx** is the node index), us
     {
         super(_Idx, _newState);
     }
+
 

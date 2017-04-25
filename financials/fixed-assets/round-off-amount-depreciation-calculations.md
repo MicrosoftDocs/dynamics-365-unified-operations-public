@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Round-off amount for depreciation calculations
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Round-off amount for depreciation calculations
 
+[!include[banner](../includes/banner.md)]
+
+
 This article discusses the Round-off depreciation field that is found on the Book setup pages.
 
 Round-off depreciation amounts are set for each book. Round-off depreciation amounts are used in the fixed asset depreciation profile that shows the future depreciation and value of the fixed asset, and also in depreciation proposals. Enter the lowest depreciation amount that is allowed for the book. 
@@ -48,6 +51,7 @@ Depreciation without rounding is calculated as 2,444.44. As the following table 
 | Rounding 1.00   | 2,444.00            |
 | Rounding 10.00  | 2,440.00            |
 | Rounding 100.00 | 2,400.00            |
+
 
 
 

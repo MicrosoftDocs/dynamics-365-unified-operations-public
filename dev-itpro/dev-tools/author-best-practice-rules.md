@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Authoring best practices
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Authoring best practices
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how you can author best practice rules in C#, for both metadata and X++ code. Best practice checks are run by the compiler and in daily builds to catch objectionable practices that are unacceptable in shipping code. The features can also be used to author simple one-of tools to gather information about the application.
 
@@ -352,6 +355,7 @@ As described above the best practice rules are often run as part of the build o
 -   Run BP on all items in the model (and only for this one model in the module): `xppbp -module:FleetManagement -model:FleetManagement –all`
 -   Run BP on all items in all models in the module: `xppbp -module:FleetManagement –all`
 -   Write the output to log files: `xppbp -module:FleetManagement -all -xmllog=Log.xml -log=Log.txt`
+
 
 
 

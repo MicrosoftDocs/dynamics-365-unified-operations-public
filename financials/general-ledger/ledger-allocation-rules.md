@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Ledger allocation rules
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Ledger allocation rules
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
 
 Ledger allocation rules are used to automatically calculate and generate allocation journals and account entries for the allocation of ledger balances or fixed amounts. Allocation methods can be variable or fixed. The following allocation methods can be used for ledger allocation rules:
@@ -50,5 +53,6 @@ Each allocation rule has four components: general, source, destination, and offs
 -   **Destination** – This component defines how the result of the allocation calculation should be distributed and accounted for. For example, there can be one destination line for each department.
 -   **Offset** – This component defines how main accounts and dimensions should be determined for the offset entries that balance the destination entries. User-defined options are typically used instead of accounts and dimensions that are based on the source. When **Data source** is set to **Fixed value**, **Source** can't be used as an option.
 -   **Ledger allocation basis rules** – These rules use their own source filter criteria to determine which ledger balances should be used for allocation (for example, the revenue per department). Each allocation basis rule can be used with multiple allocation rules.
+
 
 

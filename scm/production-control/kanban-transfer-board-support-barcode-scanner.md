@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Kanban transfer board support for barcode scanners
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Kanban transfer board support for barcode scanners
+
+[!include[banner](../includes/banner.md)]
+
 
 The Kanban transfer board supports scanner input from a widget barcode scanner to Select, Start, Complete, and Empty a kanban job.
 
@@ -188,6 +191,7 @@ The status of the selected job and the status of any pegged jobs for event kanba
 </tr>
 </tbody>
 </table>
+
 
 
 

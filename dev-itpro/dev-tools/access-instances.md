@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
 title: Access Dynamics 365 for Operations instances
-description: This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configurations settings for developers and administrators.
-author: RobinARH
+description: This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configuration settings for developers and administrators.
+author: robadawy
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 2051
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 10031
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Access Dynamics 365 for Operations instances
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how to access development instances of Microsoft Dynamics 365 for Operations, configure on-premises development VMs, and find important configurations settings for developers and administrators.
 
@@ -67,7 +70,7 @@ The system can be accessed by end users. The administrator can add users to this
 
 ### Accessing the cloud instance through Remote Desktop
 
-Some cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this topic).
+Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this topic).
 
 1.  Click the VM name.
 2.  Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by clicking the eye icon.
@@ -83,7 +86,9 @@ An environment virtual hard disk (VHD) is made available for download from LCS, 
 
 ### Retail configuration
 
-A newer downloadable VHD is also provided, in **Preview** state, to support Retail point-of-sale (POS) customization scenarios. This VHD is based on Microsoft Windows Server 2016 and lets you test your customized Retail POS app in an emulator on the VM. Except for this difference, both VHDs are self-contained and support the same set of developer scenarios. To use the downloadable VHD for POS customizations, you must also follow this step.
+Follow the steps in this section if you are also configuring Dynamics 365 for Operations for Retail.
+
+To use the downloadable VHD for POS customizations, you must also follow this step.
 
 -   On the host computer, enable Nested VM support. For more information, see [Run Hyper-V in a Virtual Machine with Nested Virtualization](https://msdn.microsoft.com/en-us/virtualization/hyperv_on_windows/user_guide/nesting).
 
@@ -108,7 +113,7 @@ Follow these steps to run the VM from Hyper-V Manager.
 
 #### Retail configuration
 
-For the downloadable VHD for POS customizations, you must also follow these steps on the guest VM.
+For POS customizations, you must also follow these steps on the guest VM.
 
 1.  Download and install [Microsoft Emulator for Windows 10 Mobile Anniversary Update](https://www.microsoft.com/en-us/download/details.aspx?id=53424).
 2.  Start the Hyper-V host service. For more information, see [Hyper-V: The Hyper-V Virtual Machine Management service must be running](https://technet.microsoft.com/en-us/library/ee956894(v=ws.10).aspx). If errors occur during startup, you can also try to uninstall and reinstall the Hyper-V role on the guest VM.
@@ -121,6 +126,8 @@ For developer access, you must be an administrator on the instance. To provision
 2.  Enter your email address, and then click **Submit**.
 
 ### Retail configuration
+
+Follow the steps in this section if you are also configuring Dynamics 365 for Operations for Retail.
 
 #### For Dynamics 365 for Operations, Version 1611
 
@@ -217,4 +224,5 @@ To restart the local runtime and redeploy all the packages, follow these steps.
 2.  Right-click **AOSDeploy.cmd**, and then click **Run as administrator**.
 
 This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Letters of credit and import collections
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Letters of credit and import collections
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides general information about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
 
 Letters of credit
@@ -54,4 +57,5 @@ A letter of credit can be **revocable** or **irrevocable**. The nature of a lett
 An import collection is an agreement between the bank and the exporter (seller), in which the bank agrees to deliver the shipping documentation to the international importer (buyer). The bank is expected to deliver the shipping documentation upon receipt of payment for the shipped goods in cash, or upon receipt of a signed draft toward the payment. 
 
 An import collection helps guarantee that the seller is paid when the buyer collects the shipping documents to take delivery of the imported goods.
+
 

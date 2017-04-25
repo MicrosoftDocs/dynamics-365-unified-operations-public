@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Development and continuous delivery FAQ
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 2
 ---
 
 # Development and continuous delivery FAQ
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 
@@ -144,5 +147,6 @@ A customer subscription comes with three environments by default: a dev or build
 3.  Apply configuration data packages on a sandbox environment.
 4.  Apply configuration data packages on a production environment.
 5.  Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
+
 
 

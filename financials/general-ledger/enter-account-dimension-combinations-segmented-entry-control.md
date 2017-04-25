@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Enter account and dimension combinations (segmented entry control)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Enter account and dimension combinations (segmented entry control)
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
 
@@ -114,4 +117,5 @@ The following table describes the keyboard shortcuts that can be used when the l
 </table>
 
  
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Reset the financial reporting data mart after restoring a database
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Reset the financial reporting data mart after restoring a database
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how to reset the financial reporting data mart after restoring a Microsoft Dynamics 365 for Operations database. 
 
@@ -116,5 +119,6 @@ Import your report designs from the Report Designer, using the file created duri
     -   To import specific reports, rows, columns, trees, or dimension sets, select the reports, rows, columns, trees, or dimension sets to import.
 
 6.  Click **Import**.
+
 
 

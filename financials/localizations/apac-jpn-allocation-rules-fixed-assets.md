@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Allocation rules for fixed assets
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Allocation rules for fixed assets
 
+[!include[banner](../includes/banner.md)]
+
+
 In Japan, a fixed asset is registered under an administrative department, and the depreciation amount must be allocated among the usage departments. You can set up an allocation rule to allocate depreciation amounts to multiple financial dimensions by percentage. This article answers some frequently asked questions about the allocation rules for fixed assets.
 
 You can set up an allocation rule to allocate depreciation costs for a fixed asset to a dimension of your legal entity. Fixed assets can be put into service for multiple dimensions, such as departments or cost centers. When you depreciate a fixed asset, the depreciation cost is posted to an offset account. By setting up an allocation rule, you can share the depreciation cost of the fixed asset between multiple dimensions of your legal entity.
@@ -62,5 +65,6 @@ For this example, the depreciation cost amount of a fixed asset is 120 currency 
 -   Total rounded-down depreciation cost of the fixed asset = 1.00 × 100 = 100 currency units
 
 If the total rounded-down depreciation cost that must be allocated across each dimension is less than the rounding amount, the allocation rule isn't applied to the depreciation. Instead, the depreciation amount is either posted to the main account or offset by using the posting profile rules that you set up on the **Fixed asset posting profiles** page. To avoid these and similar scenarios, you can manually adjust the rounding rule for fixed asset depreciation on the **Currencies** page.
+
 
 

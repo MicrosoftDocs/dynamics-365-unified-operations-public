@@ -29,8 +29,11 @@
 # [Data entities](data-entities/TOC.md)
 
 # Mobile apps
-## [Install and configure the warehousing app ](/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [Mobile app home page](mobile-apps/Mobile-app-home-page.md)
+## [Mobile workspaces recently released](mobile-apps/mobile-workspaces-released.md)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
+## [Install and configure the warehousing app ](/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/operations/dev-itpro/toc.json)
+
 
 # Office integration
 ## [Office integration](office-integration/office-integration.md)
@@ -52,8 +55,6 @@
 
 # [Upgrade and migration](migration-upgrade/TOC.md)
 
-# [Servicing](servicing/TOC.md)
-
 # [System administration](sysadmin/TOC.md)
 
 # [Lifecycle Services](lifecycle-services/TOC.md)
@@ -62,4 +63,17 @@
 
 # Support
 ## [Get support for Dynamics 365 for Operations and Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Log a premier support ticket](lifecycle-services/premier-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
+
+# [Financials](/dynamics365/operations/financials/index)
+
+# [Human resources](/dynamics365/operations/human-resources/index)
+
+# [Retail](/dynamics365/operations/retail/index)
+
+# [Supply chain management](/dynamics365/operations/supply-chain/index)
+
+# Other resources
+## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/dev-itpro/toc.json)
+## [What's new or changed](get-started/whats-new-changed.md)

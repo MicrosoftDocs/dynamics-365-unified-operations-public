@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Message center, message bar, and message details FAQ
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Message center, message bar, and message details FAQ
+
+[!include[banner](../includes/banner.md)]
+
 
 This article introduces the rich, powerful messaging system that is available in Microsoft Dynamics 365 for Operations. This messaging system replaces the Infolog window that was used in previous versions.
 
@@ -194,4 +197,5 @@ If the collection contains one or more calls to **error()**, the message bar is 
 
 ## SetPrefix() and asynchronous processes
 The use of **SetPrefix()** is also deterministic. In other words, if you use **SetPrefix()**, and there is no page context (for example, an asynchronous batch operation), the notification of results is sent to the Message Center, which isn't associated with any page.
+
 

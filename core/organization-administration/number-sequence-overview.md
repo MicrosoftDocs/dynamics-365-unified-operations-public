@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Number sequence overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Number sequence overview
+
+[!include[banner](../includes/banner.md)]
+
 
 Number sequences in Microsoft Dynamics 365 for Operations are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a <em>reference</em>.
 
@@ -80,6 +83,7 @@ Number sequences can be continuous or non-continuous. A continuous number sequen
 ### Automatic cleanup of number sequences
 
 In case of a power failure, an application error, or other unexpected failure, the system cannot recycle numbers automatically for continuous number sequences. You can run the cleanup process manually or automatically to recover the lost numbers. Carefully consider server usage when you plan the cleanup process. We recommend that you perform the cleanup as a batch job during non-peak hours.
+
 
 
 

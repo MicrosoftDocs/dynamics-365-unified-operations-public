@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Diagnose problems and analyze performance issues using Trace parser
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Diagnose problems and analyze performance issues using Trace parser
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how you can use the Trace parser to consume traces and analyze performance in your deployment. You can use the Trace Parser to find and diagnose various types of errors. You can also use the tool to visualize execution of X++ methods, as well as the execution call tree.
 
 **Note:** There are many more features in the Trace parser which work similar to Microsoft Dynamics AX 2012. See <http://blogs.msdn.com/axperf> for more information.
@@ -62,4 +65,5 @@ See also
 --------
 
 [Developer home page](..\dev-tools\developer-home-page.md)
+
 

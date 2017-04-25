@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Three-way matching policies
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Three-way matching policies
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides examples of three-way matching.
 
@@ -145,4 +148,5 @@ If approval is required for invoices to be posted with invoice matching discrepa
 
 
 For more information, see [Accounts payable invoice matching](accounts-payable-invoice-matching.md).
+
 

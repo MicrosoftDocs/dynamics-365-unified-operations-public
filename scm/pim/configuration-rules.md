@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configuration rules
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configuration rules
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides general information about configuration rules. Configuration rules define relationships between items in a bill of materials (BOM) for products that use the dimension-based configuration technology.
 
 Configuration rules are available when you define dimension-based configuration models. Configuration rules are used to either enforce or prohibit specific item combinations in a bill of materials (BOM). After a BOM has been created and the relevant items have been assigned to their respective configuration groups, one or more configuration rules can be defined. If two items belong together, the **Select** operator is used to ensure inclusion. If two items are mutually exclusive, the **Deselect** operator is used to ensure exclusion.  
@@ -46,4 +49,5 @@ See also
 --------
 
 [Dimension-based product configuration](dimension-based-product-configuration.md)
+
 

@@ -1,11 +1,11 @@
----
+﻿---
 # required metadata
 
 title: Install a deployable package
-description: This tutorial walks you through the steps for applying a deployable package on a system. 
-author: RobinARH
+description: This topic walks you through the steps for using the command line to apply either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
+author: manalidongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -24,7 +24,7 @@ ms.custom: 24191
 ms.assetid: 42d238d6-ff03-41b6-b2d5-c94bcdc37576
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shailesn
+ms.author: manado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -32,12 +32,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install a deployable package
 
-This tutorial walks you through the steps for applying a deployable package on a system. 
+[!include[banner](../includes/banner.md)]
 
-Introduction
-------------
 
-This tutorial walks you through the steps for applying a deployable package on a system. This package can be either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment. This article describes the process using the command line and requires remote access to the environments. On the other hand, and in most cases, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in [Apply a deployable package on a system](apply-deployable-package-system.md), without the need to understand the process described on this page.
+This topic walks you through the steps for using the command line to apply either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
+
+This command line process requires remote access to the environments. In most cases, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in [Apply a deployable package on a system](apply-deployable-package-system.md), without the need to understand the process described on this page.
 
 ## Key concepts
 -   **Deployable package**– A deployable package is a unit of deployment that can be applied in any environment. It can consist of a binary hotfix to the AOS runtime components, an updated application package, or a new application package.
@@ -47,7 +47,7 @@ This tutorial walks you through the steps for applying a deployable package on 
 ## Collect topology configuration data
 1.  In Microsoft Dynamics Lifecycle Services (LCS), open the **Environment **page.
 2.  Click the name of a virtual machine (VM), and establish a Remote Desktop connection to the VM by using the user name and password that are provided on the**Environment**page.
-3.  On the VM, download the zip file for the deployable package from LCS. **Note:** After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties **dialog box, on the **General **tab, click **Unblock **to unlock the files. Finally, extract the files, and continue with the next step.
+3.  On the VM, download the zip file for the deployable package from LCS. **Note:** After you download the zip file, right-click it, and then select **Properties**. Then, in the **Properties** dialog box, on the **General** tab, click **Unblock** to unlock the files. Finally, extract the files, and continue with the next step. Also, make sure that the **zip** file is stored in a non-user folder
 4.  In the folder where the deployable package was extracted, find and open the file that is named DefaultTopologyData.xml. You must populate this file with the VM name and installed components.
     -   To populate the VM name, follow these steps:
         1.  Open Windows Explorer, right-click **This PC**, and then select **Properties**.
@@ -172,5 +172,6 @@ The runbook provides the sequence of steps that must be run to update the enviro
         AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
 
 -   To verify database synchronization, navigate to the aosservce\\scripts\\ folder and find the dbsync.error.txt file. Find the file, and look for any errors.
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: General journal processing
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # General journal processing
+
+[!include[banner](../includes/banner.md)]
+
 
 This articles describes capabilities in Microsoft Dynamics AX that can help make general journal processing easier, and that can also help guarantee that correct data is captured and internal control isn't compromised.  
 
@@ -83,4 +86,5 @@ The main account setup provides many options for general journal processing:
 Accounting structures and advanced rules structures are extremely important for guaranteeing that the data that is required for financial reporting and performance tracking is captured during general journal processing and any documentation. Accounting structures and advanced rules structures let you tailor the data entry experience. You can allow data entry only for financial dimensions that are relevant in each situation, and can also enforce the requirement that mandatory and correct data always be captured.
 
 For more information, see [Planning: Chart of accounts](plan-chart-of-accounts.md). 
+
 

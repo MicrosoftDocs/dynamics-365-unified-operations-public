@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Plan your Dynamics AX 2012 R3 deployment on Azure
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Plan your Dynamics AX 2012 R3 deployment on Azure
+
+[!include[banner](../includes/banner.md)]
+
 
 Before you can deploy Microsoft Dynamics AX 2012 R3 on Microsoft Azure, there are several things you must consider and decisions you must make. This article guides you through the planning process. 
 
@@ -1030,4 +1033,5 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 - [Deploy a Retail e-commerce dev/test environment on Azure](deploy-retail-ecommerce-devtest-environment-azure.md) 
 - [Deploy a Retail mobility dev/test environment on Azure](deploy-retail-mobility-devtest-environment-azure.md) 
 - [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md)
+
 

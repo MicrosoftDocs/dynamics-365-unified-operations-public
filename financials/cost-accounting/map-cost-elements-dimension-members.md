@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Map cost element dimension members to a common set of dimension members
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Map cost element dimension members to a common set of dimension members
 
+[!include[banner](../includes/banner.md)]
+
+
 By mapping different cost element dimension members to a common set of cost element dimension members, you merge data into a common format for analysis purposes.
 
 If you're a global company and comply with statutory accounting requirements, you might use multiple charts of accounts. When you import cost element dimension members from different charts of accounts, you can end up with a mix of accounts. However, these accounts might actually have the same nature, and you might want to analyze and allocate costs for them by using a common format.
@@ -53,4 +56,5 @@ The various charts of accounts that you use might be set up to use different cur
 
 ## Update mappings at any time
 You can update the mapping definitions for a cost element dimension at any time. Because mappings aren't date-effective, changes are applied the next time that you process cost transactions or run cost calculations.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Table properties
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Table properties
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the properties that are in the<strong> Properties</strong> window for table elements in the Application Object Tree (AOT). Table elements are located under <strong>Data Dictionary</strong> &gt; <strong>Tables</strong>.
 
@@ -362,4 +365,5 @@ See also
 --------
 
 [Data Dictionary Node in the AOT](http://msdn.microsoft.com/library/4d7d1f77-11b8-4d8a-a44c-85e7d288c368(AX.60).aspx)
+
 

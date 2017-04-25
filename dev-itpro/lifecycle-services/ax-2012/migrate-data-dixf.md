@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Migrate data 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Migrate data using the Data import/export framework (AX 2012)
+
+[!include[banner](../includes/banner.md)]
+
 
  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.
 
@@ -566,4 +569,5 @@ After the job has finished running, follow these steps to validate the data in t
 #### Clean up staging data
 
 After you have finished migrating your data, you should clean up the staging tables. Open **Data import export framework** &gt; **Periodic** &gt; **Staging cleanup** to identify data that you no longer require.
+
 

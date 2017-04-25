@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: G Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # G Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter G.
 
@@ -67,4 +70,5 @@ A container that represents the assemblies of the GAC.
 Initializes a new instance of the Gac class.
 
     public void new()
+
 

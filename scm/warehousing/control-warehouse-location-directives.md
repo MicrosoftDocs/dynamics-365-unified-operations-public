@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Control warehouse work by using work templates and location directives
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Control warehouse work by using work templates and location directives
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 
@@ -65,4 +68,5 @@ Location directives have one additional level of detail: *location directive act
 For this example, we will consider a purchase order process where the location directive must find free capacity within a warehouse for inventory items that have just been registered at the receiving dock. First, we want to try to find free capacity within the warehouse by consolidating with existing on-hand inventory. If consolidation isn't possible, we then want to find an empty location. 
 
 For this scenario, we must define two location directive actions. The first action in the sequence must use the **Consolidate** strategy, and the second should use the **Empty location with no incoming work** strategy. Unless we define a third action to handle an overflow scenario, two outcomes are possible when there is no more capacity in the warehouse: work can be created even though no locations are defined, or the work creation process can fail. The outcome is determined by the setup on the **Location directive failures** page, where you can decide whether to select the **Stop work on location directive failure** option for each work order type.
+
 

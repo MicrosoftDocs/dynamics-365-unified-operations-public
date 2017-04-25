@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Costing sheets
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Costing sheets
 
+[!include[banner](../includes/banner.md)]
+
+
 Setting up the costing sheet involves two objectives. As the first objective, you define the format for displaying cost of goods sold information about a manufactured item or production order. The formatted display is termed a costing sheet. As the second objective, you define the basis for calculating indirect costs. The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas. The two objectives of costing sheet setup are described in this article. 
 
 A costing sheet is the formatted display of information about the cost of goods that are sold for a manufactured item or a production order. When you set up a costing sheet, you define the format for the information and also define the basis for calculating indirect costs. The costing sheet setup builds on the cost group features for displaying information and for the formulas that are used to calculated indirect cost. Here is more information about the two objectives of costing sheet setup:
@@ -47,6 +50,7 @@ Two blocking policies for a costing version determine whether pending costs can 
 After you define the costing sheet format and calculations for indirect costs, you must perform a separate step to validate and save the information. The costing sheet represents a company-wide format for consistently displaying information about the costs of goods sold. 
 
 The costing sheet is displayed as part of the **Calculate item cost** page. The costing sheet can be displayed for a manufactured item’s calculated cost record on the **Item price** page or for an order-specific calculation record on the **BOM calculation results** page. It can also be displayed as part of the **Price calculation** page for a production order.
+
 
 
 

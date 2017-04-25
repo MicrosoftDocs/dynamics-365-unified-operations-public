@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Advanced filtering and query syntax
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Advanced filtering and query syntax
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.
 
@@ -233,6 +236,7 @@ See the table in the next section for additional details about <strong>SysQueryR
 </tr>
 </tbody>
 </table>
+
 
 
 

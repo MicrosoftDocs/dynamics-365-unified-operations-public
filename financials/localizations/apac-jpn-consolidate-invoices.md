@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Consolidated invoices for Japan
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consolidated invoices for Japan
 
+[!include[banner](../includes/banner.md)]
+
+
 In Japan, invoices are consolidated each month for payment. This article provides information about consolidated invoices, and explains how the invoice amount and due date are calculated.
 
 You can consolidate several vendor invoices, purchase orders, purchase returns, and purchase journals into a consolidated vendor invoice for payment. You don't have to issue payments for the separate vendor transactions. You can also consolidate customer invoices, sales orders, sales returns, and sales journals into a customer consolidated invoice that you can send to the customer.
@@ -62,6 +65,7 @@ Invoices are consolidated each month, based on the consolidation day that you sp
 | INV002         | May 10, 2012 | May 10, 2012      | June 29, 2012 |
 | INV003         | May 18, 2012 | June 10, 2012     | July 31, 2012 |
 | INV004         | June 8, 2012 | June 10, 2012     | July 31, 2012 |
+
 
 
 

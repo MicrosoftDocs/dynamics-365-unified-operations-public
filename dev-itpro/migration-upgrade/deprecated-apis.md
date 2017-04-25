@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Deprecated APIs in Dynamics 365 for Operations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Deprecated APIs in Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 This document provides the list of deprecated APIs and migration guidance for some of the deprecated APIs.
 
@@ -1048,6 +1051,7 @@ Remove calls to these APIs from your code.</td>
 </tr>
 </tbody>
 </table>
+
 
 
 

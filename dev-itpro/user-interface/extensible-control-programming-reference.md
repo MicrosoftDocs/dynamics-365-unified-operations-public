@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extensible control programming reference
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides reference content for extensible control programming.
 
 This document describes the API, HTML, and JavaScript support for creating extensible controls.
@@ -1104,6 +1107,7 @@ Control Lifecycle Diagrams
 
 ## Control Instantiation
 [![ExtensibilityProcess](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+
 
 
 

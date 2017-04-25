@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Power BI integration
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Power BI integration
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your Microsoft Dynamics 365 for Operations data. 
 
 Microsoft Power BI is a collection of tools and services that enables interactive visualizations and dashboards. Power BI is the tool that many users choose when they want to create interactive visualizations and self-service reports for Microsoft Dynamics 365 for Operations. Power BI can connect to multiple data sources, both on premises and in the cloud, to create combined reports and dashboards. Dynamics 365 for Operations uses Open Data Protocol (OData) V4 to provide data securely to Power BI. [![powerbioverview](./media/powerbioverview.jpg)](./media/powerbioverview.jpg) Dynamics 365 for Operations integrates with Power BI by being a first-class source of data to Power BI authoring tools, such as Microsoft Excel and Power BI Desktop. After reports are authored, they can be published to PowerBI.com for collaboration and mobile access. Although dashboards and reports can be used on PowerBI.com, they can also be pinned to the Dynamics 365 for Operations client to provide interactive visuals that are related to business processes. You can see an overview of the Power BI tools [here](https://powerbi.microsoft.com/tour).
@@ -47,4 +50,5 @@ After reports are published to PowerBI.com, users can build dashboards, share wi
 
 ## Embedding Power BI visuals in the Dynamics 365 for Operations client
 PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin reports from PowerBI.com to Dynamics 365 for Operations workspaces and pages to provide contextual insights that are related to business operations. Power BI tiles that are pinned to the Dynamics 365 for Operations client provide insightful visuals at a glance. They also let users open PowerBI.com for interactive analysis. [![fmclerkworkspacepowerbi](./media/fmclerkworkspacepowerbi.jpg)](./media/fmclerkworkspacepowerbi.jpg) You can learn how to configure workspace integration  in the topic [Configure Power BI integration](configure-power-bi-integration.md).
+
 

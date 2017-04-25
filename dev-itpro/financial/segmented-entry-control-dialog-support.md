@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Segmented entry control dialog support
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Segmented entry control dialog support
+
+[!include[banner](../includes/banner.md)]
+
 
 Describes the code pattern to add Segmented Entry controls to dialogs.
 
@@ -76,4 +79,5 @@ See also
 [Segmented Entry control migration](segmented-entry-control-conversion.md)
 
 [Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+
 

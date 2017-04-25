@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Print lump sum recovery text on a customer invoice
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Print lump sum recovery text on a customer invoice
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about how to print a lump sum recovery text that shows the penalty amount on customer invoices for France.
 
 ## Set up the parameters to print a lump sum recovery text on customer invoices
@@ -40,4 +43,5 @@ Use the **Form setup** page to set up the parameters to print a lump sum recover
 
 ## Print the lump sum recovery text on a customer invoice
 Use the **Posting invoice** page to print the lump sum recovery text that shows the penalty amount on customer invoices. On the **Posting invoice** page, select the **Print lump sum recovery text** check box for each line. A selected check box indicates that the lump sum recovery text is printed on the customer invoices. When you post the sales order, the lump sum recovery text is printed on the customer invoice. You can also print the lump sum recovery text on a customer invoice that you print from the **Invoice journal** page.
+
 

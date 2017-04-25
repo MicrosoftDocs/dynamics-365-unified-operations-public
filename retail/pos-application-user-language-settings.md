@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: POS application and user language settings
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # POS application and user language settings
+
+[!include[banner](includes/banner.md)
+
 
 This topic describes how to change language settings in Retail Modern POS (MPOS) and Cloud POS.
 
@@ -68,6 +71,7 @@ The POS user’s language setting is set from **All workers** on the **Worker** 
 | **Company** | Default                    | Default                                                           |
 | **Store**   | Overrides company          | Overrides company                                                 |
 | **User**    | Overrides store or company | Never                                                             |
+
 
 
 

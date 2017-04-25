@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Financial dimensions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Financial dimensions
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains the different types of financial dimensions and how they are set up.
 
@@ -75,6 +78,7 @@ The Text translation page allows you to enter text to be displayed in different 
 **Legal entity overrides** 
 
 Not all dimensions are valid for all legal entities and some may only be relevant for a specific time period. In this scenario the Legal entity overrides section can be used to identify which companies the dimension should be suspended for, who the owner is and the time period the dimension is active.
+
 
 
 

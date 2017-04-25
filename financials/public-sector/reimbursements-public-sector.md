@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Reimbursements in the public sector
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reimbursements in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic answers common questions related to reimbursements in the public sector. 
 
 What happens if I create a separate reimbursement transaction for each billing classification?
@@ -63,6 +66,7 @@ No. Reimbursements are not processed for any customer who has pending settlement
 
 ## Can I reverse reimbursement settlements?
 No, not directly. However, you could use general journal entries to create transactions that would have the effect of reversing the general ledger entries.
+
 
 
 

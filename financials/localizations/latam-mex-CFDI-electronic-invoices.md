@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Electronic invoices (CFDI)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Electronic invoices (CFDI)
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the electronic invoices that your organization can submit to the Mexican tax authority (SAT). It describes the currently approved method for submitting electronic invoices (CFDI), the requirements for using them, and the information that they include.
 
@@ -87,4 +90,5 @@ An electronic invoice includes the following details:
 
 ## Customizing the integration PAC web services
 As is explained in detail in the Mexican localization scope document, integration with PAC web services requires customization. This customization varies, depending on the PAC web services that are contracted.
+
 

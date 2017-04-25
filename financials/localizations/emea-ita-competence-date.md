@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Competence date for transactions
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Competence date for transactions
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the competence date and explains how to enable the functionality for transactions in Italy.
 
 In Italy, companies must use a posting date when they post transactions. The posting date is the date when the company acknowledges the transaction. Adjustment and closing transactions can be done several months after the last day of the fiscal year. (Usually, these transactions occur on the date when the balance sheet is approved by the Board of Directors.) These transactions must be reported on the Italian fiscal journal on the date when they are posted, but they must have a reference to their competence date. Therefore, two dates are required:
@@ -53,5 +56,6 @@ To enable this functionality for transactions, on the **General ledger parameter
 -   Project – Accrue turnover
 -   Project – Estimate post
 -   Project – Estimate reverse
+
 
 

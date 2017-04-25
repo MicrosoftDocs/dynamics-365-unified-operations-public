@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ run-time functions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ run-time functions
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the X++ run-time functions.
 
@@ -218,6 +221,7 @@ The number of milliseconds that the thread actually paused.
             i = sleep(seconds*1000);
             print "job slept for " + int2str(i/1000) + " seconds";
     }
+
 
 
 

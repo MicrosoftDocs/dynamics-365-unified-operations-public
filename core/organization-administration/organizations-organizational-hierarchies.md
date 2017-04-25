@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Organizations and organizational hierarchies
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Organizations and organizational hierarchies
 
+[!include[banner](../includes/banner.md)]
+
+
 An organization is a group of people who are working together to carry out a business process or achieve a goal. Organizational hierarchies represent the relationships between the organizations that make up your business.
 
 Organizations
@@ -62,6 +65,7 @@ Organizational hierarchies
 --------------------------
 
 Set up organizational hierarchies to view and report on your business from different perspectives. For example, you can set up a hierarchy of legal entities for tax, legal, or statutory reporting. Set up a hierarchy that is based on operating units to report financial information that is not legally required, but that is used for internal control. For example, you can create a purchasing hierarchy to control purchasing policies, rules, and business processes. Each hierarchy is assigned a purpose in Microsoft Dynamics 365 for Operations. The purpose of a hierarchy determines the types of organizations that can be included in the hierarchy. The purpose also determines which application scenarios a hierarchy can be used in. Organizations in a hierarchy can share parameters, policies, and transactions. An organization can inherit or override the parameters of its parent organization. However, shared master data, such as products and address books, applies to the whole organization and cannot be overridden for individual organizations. Creating organizations and hierarchies requires careful planning. For more information, see [Plan the organizational hierarchy](plan-organizational-hierarchy.md).
+
 
 
 

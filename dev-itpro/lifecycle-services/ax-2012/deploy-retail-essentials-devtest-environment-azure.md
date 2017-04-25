@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Deploy a Retail essentials dev/test environment on Azure (AX 2012)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Deploy a Retail essentials dev/test environment on Azure (AX 2012)
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains how to deploy a Retail essentials dev/test environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
 
@@ -275,4 +278,5 @@ The following table lists the default names of the domain accounts that were cre
 ### Local administrator accounts
 
 Each virtual machine that you deployed has a local administrator account. This account is: builtinaxlocaladmin. The passwords for the local administrator accounts are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Info codes
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Info codes
 
+[!include[banner](includes/banner.md)
+
+
 This article provides an overview about info codes, info code groups, and how to use them.
 
 Info codes provide a way for you to capture data at a point-of-sale (POS) register. You can use info codes to prompt the cashier to enter information during various actions at the POS, such as item sales, item returns, or selecting customers. Cashiers can select input from a list or enter it as a code, number, date, or text. You can assign info codes to predefined store actions, retail items, payment methods, customers, or specific point-of-sale activities. You can use info codes to do the following:
@@ -51,6 +54,7 @@ In Dynamics 365 for Operations - Retail, you can create groups of info codes. In
 
  
 -
+
 
 
 

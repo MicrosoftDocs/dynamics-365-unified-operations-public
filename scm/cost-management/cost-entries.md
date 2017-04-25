@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Cost entries
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Cost entries
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about cost entries and when they are created. A cost entry is a record that registers the quantity and cost of a given event.
 
@@ -71,4 +74,5 @@ See also
 --------
 
 [Cost objects](cost-object.md)
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ conversion run-time functions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ conversion run-time functions
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the conversion run-time functions.
 
@@ -956,4 +959,5 @@ Use this function instead of the **int2str** function for very large integers, s
 
     info(int2str(3123456789)); //returns -1171510507 as a string.
     info(uint2str(3123456789)); //returns 3123456789 as a string.
+
 

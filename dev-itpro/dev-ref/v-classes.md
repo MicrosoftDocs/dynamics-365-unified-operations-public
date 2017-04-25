@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: V Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # V Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter V.
 
@@ -1403,4 +1406,5 @@ newName
 Initializes a new instance of the VSSItem class.
 
     private void new()
+
 

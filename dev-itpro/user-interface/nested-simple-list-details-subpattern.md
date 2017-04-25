@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Nested Simple List and Details subpattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Nested Simple List and Details subpattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Nested Simple List and Details (NSL+D) subpattern. This subpattern is used to display information about a secondary or child entity when that child entity is presented within another form type.
 
@@ -123,4 +126,5 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![AX 2012 example](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
+
 

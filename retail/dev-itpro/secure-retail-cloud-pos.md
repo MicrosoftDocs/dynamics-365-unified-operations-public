@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security best practices for Retail Cloud POS in a shared environment
 
+[!include[banner](../includes/banner.md)]
+
+
 Microsoft Dynamics 365 for Operations - Retail Cloud POS is a web application that runs in the context of a browser. This topic provides recommendations that can help secure Retail Cloud POS in a shared environment.
 
 Background
@@ -345,5 +348,6 @@ You can define a list of websites that a store worker (cashier) requires for nor
 -   Bing Maps resources
 -   Media resources
 -   Credit Card Payment acceptance page (optional)
+
 
 

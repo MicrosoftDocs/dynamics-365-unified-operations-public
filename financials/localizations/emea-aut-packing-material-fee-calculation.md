@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Packing material fee calculation for Austria
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Packing material fee calculation for Austria
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about packing material rates and fees in Austria.
 
@@ -113,4 +116,5 @@ Use the Packing material calculation journal to calculate packing material fees 
 
 ## Print the Packing materials fee calculation report
 The **Packing materials fee calculation** report contains information about packing materials fees that were calculated by using Austrian rules. To print this report, on the **Packing material calculation journal** page, select the calculated journal, and then click **Print report**.
+
 

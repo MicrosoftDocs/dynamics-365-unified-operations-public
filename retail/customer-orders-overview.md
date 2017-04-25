@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Customer orders overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Customer orders overview
+
+[!include[banner](includes/banner.md)
+
 
 This topic provides information about customer orders in Retail Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 
@@ -100,4 +103,5 @@ See also
 --------
 
 [Hybrid customer orders](hybrid-customer-orders.md)
+
 

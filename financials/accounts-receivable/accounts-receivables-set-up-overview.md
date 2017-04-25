@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure Accounts receivables and Credit and collections
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Configure Accounts receivables and Credit and collections
+
+[!include[banner](../includes/banner.md)]
+
 
 Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.
 
@@ -111,4 +114,5 @@ The following table lists the pages that support the configuration and maintenan
 
  
 For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).
+
 

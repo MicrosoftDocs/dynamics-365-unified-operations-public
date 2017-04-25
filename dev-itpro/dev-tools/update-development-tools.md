@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Update Visual Studio development tools
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update Visual Studio development tools
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to update the development tools.
 
 Use this tutorial to update your Visual Studio development tools with a new version. It explains how to uninstall your existing Visual Studio development tools and install the new extension. The new extension is in the form of an installable VSIX file. This file is a part of the binary hotfix available on the Dynamics Lifecycle Services (LCS) site. The VSIX file is located in the **DevToolsService\\Scripts** folder of the binary hotfix package. Whenever you update a developer machine with an AOS binary hotfix, it is also recommended to install the development tools that are packaged within the same binary hotfix.
@@ -55,5 +58,6 @@ In order to install a new version of the development tools, you'll need to unins
 2.  Double-click (or right-click and **Open**) the VSIX file of the new version.
 3.  Follow the installation instructions.
 4.  When installation is complete, you can start Visual Studio and start developing your application.
+
 
 

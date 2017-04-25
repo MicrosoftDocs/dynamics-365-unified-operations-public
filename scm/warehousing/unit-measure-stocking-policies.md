@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Unit of measure and stocking policies
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Unit of measure and stocking policies
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how default units, unit sequences, and unit conversions are used in warehouse processes.
 
 Unit sequence groups define the sequence of units that can be used in warehouse operations. They are created on the **Unit sequence groups** page. The sequence shows the relationship of the various units. For example, you store pallets that contain boxes that contain individual pieces of items. In this case, you must provide the three different units and the logical order of the layers. Unit sequence groups let you define the policies for the grouping of license plates, and the default units that should be used for various warehouse processes. This article applies to both the advanced warehousing solution that is available in Warehouse management and the more basic warehousing solution that is available in Inventory management.
@@ -50,4 +53,5 @@ To set the default units that should be used for receiving processes on mobile 
 
 ## Default order settings
 As part of the creation of released products, you must select default units for purchases, sales, and inventory to process the various orders. You can set the default units and quantities for the various source documents by using the **Default order settings** and **Site specific order settings** pages. You can access these pages from the **Released products** page.
+
 

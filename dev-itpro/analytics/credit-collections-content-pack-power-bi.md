@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Credit and collections Power BI content pack
@@ -32,7 +32,11 @@ ms.dyn365.ops.version: Version 1611
 
 # Credit and collections Power BI content pack
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes what's included in the Dynamics 365 for Operations - Credit and collections management content pack for Microsoft Power BI. It explains how to access the reports included in the content pack and provides information about the data model and entities that are used to build the content pack.
+
 
 
 

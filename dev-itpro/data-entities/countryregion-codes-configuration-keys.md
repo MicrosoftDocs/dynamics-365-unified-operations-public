@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Country/region codes and configuration keys
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Country/region codes and configuration keys
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides scenarios that are applicable from an implementation perspective for both configuration keys and country/region. 
 
@@ -105,4 +108,5 @@ The behavior of configuration keys and a country/region that are applied at the 
     |_F3 (UK inferred)
 
     |_F4 (UK inferred)
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Postdated checks
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Postdated checks
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about support for postdated checks in Microsoft Dynamics 365 for Operations. Postdated checks are checks that are issued to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
 
@@ -86,6 +89,7 @@ If your original check to a vendor or from a customer is lost or damaged, you ca
 </tr>
 </tbody>
 </table>
+
 
 
 

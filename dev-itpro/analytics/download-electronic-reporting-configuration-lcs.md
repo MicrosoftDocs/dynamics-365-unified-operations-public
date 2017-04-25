@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Download Electronic reporting configurations from Lifecycle Services
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Download Electronic reporting configurations from Lifecycle Services
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
 
 This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).
@@ -48,9 +51,10 @@ This tutorial guides you through the process of downloading the newest version o
     1.  Click **Add** to add a new repository.
     2.  Select **LCS** as the repository type.
     3.  Click **Create repository**.
-    4.  Enter a name and description for the repository.
-    5.  Click **OK** to confirm the new repository entry.
-    6.  In the grid, select the new repository of the **LCS** type.
+    4. If prompted, follow the authorization instructions.
+    5.  Enter a name and description for the repository.
+    6.  Click **OK** to confirm the new repository entry.
+    7.  In the grid, select the new repository of the **LCS** type.
 
 6.  Click **Open** to view the list of ER configurations for the selected repository. [![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  In the configurations tree in the left pane, select the ER configuration that you require.
@@ -63,4 +67,5 @@ See also
 --------
 
 [Electronic reporting overview](general-electronic-reporting.md)
+
 

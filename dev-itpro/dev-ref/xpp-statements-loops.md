@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ statements, loops, and exception handling
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ statements, loops, and exception handling
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes statements, loops, and exception handling in X++.
 
@@ -753,4 +756,5 @@ In this syntax, *statement* can be a block of statements, and *expression* decla
             textFromFile = sr.ReadToEnd();
         }
     }
+
 

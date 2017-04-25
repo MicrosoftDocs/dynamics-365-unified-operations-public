@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Process existing earnings
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Process existing earnings
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
 
@@ -73,4 +76,5 @@ See also
 --------
 
 [Earnings and the earnings generation process Q&A](noam-usa-earnings-generation-process.md)
+
 

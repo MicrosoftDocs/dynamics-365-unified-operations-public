@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Electronic reporting destinations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Electronic reporting destinations
+
+[!include[banner](../includes/banner.md)]
+
 
 You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who are granted appropriate access rights can also modify destination settings at run time. This article explains ER destination management, the types of destinations that are supported, and security considerations.
 
@@ -158,4 +161,5 @@ The prerequisite is that your format must be available in the ER configurations.
 # See also
 
 [Electronic reporting overview](general-electronic-reporting.md)
+
 

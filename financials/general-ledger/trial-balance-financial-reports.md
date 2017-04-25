@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Trial balance financial reports
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Trial balance financial reports
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements. 
 
@@ -110,4 +113,5 @@ See also
 [View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
 

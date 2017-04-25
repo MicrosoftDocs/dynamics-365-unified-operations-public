@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Add a methodology to an LCS solution
@@ -31,6 +31,9 @@ ms.dyn365.ops.version:
 ---
 
 # Add a methodology to an LCS solution
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how to create and modify methodologies. It also provides information about the requirements for methodologies.
 
@@ -75,4 +78,5 @@ See also
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+
 

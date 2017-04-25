@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up payroll calculation frequencies
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Set up payroll calculation frequencies
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how to set up payroll calculation frequencies. Payroll calculation frequencies determine how often payroll contributions and deductions take place throughout the payroll process.
 
@@ -78,4 +81,5 @@ If you don't specify a payroll calculation frequency for these payroll elements,
 
 ## Next step
 The next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](noam-usa-work-cycle-work-period-tasks.md).
+
 

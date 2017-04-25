@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Vendor collaboration with customers
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Vendor collaboration with customers
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how you can use vendor collaboration in Dynamics 365 for Operations to work with POs and to monitor consignment inventory.
 
@@ -72,4 +75,5 @@ See also
 --------
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
+
 

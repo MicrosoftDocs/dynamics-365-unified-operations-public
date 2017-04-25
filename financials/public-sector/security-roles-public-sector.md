@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Security roles in the public sector
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Security roles in the public sector
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the functionality for public sector security roles. This functionality includes the Project manager and Purchasing agent roles for the public sector.
 
@@ -102,4 +105,5 @@ See also
 --------
 
 [Role-based security](/dynamics365/operations/dev-itpro/sysadmin/role-based-security)
+
 

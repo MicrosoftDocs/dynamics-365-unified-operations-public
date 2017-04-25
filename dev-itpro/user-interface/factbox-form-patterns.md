@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: FactBox form patterns
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # FactBox form patterns
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 
@@ -164,4 +167,5 @@ This section will have answers to frequently asked questions that are related to
 **CustTable** &gt; **ContactsInfoPart** 
 
 [![FactBox(5)](./media/factbox5.png)](./media/factbox5.png)
+
 

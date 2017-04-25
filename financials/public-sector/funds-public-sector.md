@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Funds in the public sector
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Funds in the public sector
+
+[!include[banner](../includes/banner.md)]
+
 
 A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 
@@ -100,4 +103,5 @@ Public sector organizations usually require balanced entries for financial dimen
 
 ## How do I set a fund balance to carry over to the new year?
 To learn about year-end processing for funds, see [Year-end processing in the public sector](year-end-processing-public-sector.md).
+
 

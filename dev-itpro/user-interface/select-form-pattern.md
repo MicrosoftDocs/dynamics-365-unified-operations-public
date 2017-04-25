@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Select a form pattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Select a form pattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information that will help you select the best form pattern for the forms that you migrate. 
 
@@ -512,4 +515,5 @@ Form: CustTable (TabFinancialDimensions)
 [![HowToSelectAFormPattern (30)](./media/howtoselectaformpattern-30.jpg)](./media/howtoselectaformpattern-30.jpg)
 
 **[Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md)** Use this form pattern on containers that include a Dimension Expression Builder control.
+
 

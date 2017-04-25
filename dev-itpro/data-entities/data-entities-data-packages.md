@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Data entities and packages framework
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Data entities and packages framework
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about using data entities and data entity packages in Microsoft Dynamics 365 for Operations. 
 
@@ -221,4 +224,5 @@ See also
 [Data entities](data-entities.md)
 
 [Data entities](data-entities.md)
+
 

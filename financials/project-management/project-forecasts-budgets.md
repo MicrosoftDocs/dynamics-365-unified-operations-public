@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Project forecasts and budgets
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Project forecasts and budgets
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -84,4 +87,5 @@ Project budgets are automatically associated with two forecast models, one for o
 Forecast models have a single-layer hierarchy. This means that one project forecast must be associated with one forecast model.
 
 If you use project forecasting, you can identify models as submodels. You can then create forecasts by department, time period, or region. For example, you can create a forecast model for a year, and then create submodels for the Northeast, Southeast, Northwest, and Southwest regional forecasts that regional heads submit. By selecting different options in the available reports, you can view information by total forecast or by submodel.
+
 

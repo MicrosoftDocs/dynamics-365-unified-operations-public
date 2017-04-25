@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Low-value pool depreciation
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Low-value pool depreciation
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the low-value pool depreciation method that is used in Australia. Low-cost and low-value assets can be allocated to a low-value pool if their cost or opening adjustable value is less than a specified amount.
 
@@ -65,6 +68,7 @@ If you have a low-cost asset that has a net book value of AUD 800.00, the first-
 |----------------------------------------------------------------|---------------------|--------------------|
 | First year that the low-value pool depreciation method is used | 18.75% (AUD 150.00) | 37.5% (AUD 300.00) |
 | Second year                                                    | 37.5% (AUD 243.75)  | 37.5% (AUD 187.50) |
+
 
 
 

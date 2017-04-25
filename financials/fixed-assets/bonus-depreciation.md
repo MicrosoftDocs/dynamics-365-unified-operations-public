@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Bonus depreciation
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Bonus depreciation
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides an overview of the bonus depreciation functionality.
 
@@ -65,4 +68,5 @@ When bonus depreciation is calculated by using the proposal process, a bonus dep
 You can create an unlimited number of bonus depreciation records. After you assign those records to the asset group book, they are applied to the asset book. 
 
 Bonus depreciation is entered as either a percentage or a fixed amount. When you post depreciation proposals, bonus depreciation transactions are posted to the book as separate transactions from the depreciation transactions.
+
 

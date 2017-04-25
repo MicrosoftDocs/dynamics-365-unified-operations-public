@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Retail POS device activation
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Retail POS device activation
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains the new guided device activation for Retail Cloud POS and Retail Modern POS, and explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 
@@ -108,4 +111,5 @@ IT Pros can now configure device activation for Cloud POS by providing the devic
 [![Cloud POS URL field](./media/p15_11_16.png)](./media/p15_11_16.png) 
 
 Cloud POS starts in Manual entry mode, and the Retail Server URL, device ID, and register ID are pre-populated for activation.
+
 

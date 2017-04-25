@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Date/time data and time zones
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Date/time data and time zones
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about date and time fields, and time zones in Microsoft Dynamics 365 for Operations.
 
 Date and time fields
@@ -44,6 +47,7 @@ There are three types of date and time fields in Microsoft Dynamics 365 for Oper
 
 ## Time zones
 To express UTC times in the local time, you must provide a time zone. The time zone controls the offset from UTC that is the equivalent of the local time. For example, the offset for Moscow is UTC+3. Your preferred time zone is first set according to the Windows locale of your computer, although it might have been changed by an administrator. Your preferred time zone is used only when displaying combined dates and times. To set the preferred time zone for a user, go to **Users** page. The page will show the list of users of the system. Select the user that you want to set the preferred time zone for, and click **User options**. On the **Language and region** tab, select the preferred time zone.
+
 
 
 

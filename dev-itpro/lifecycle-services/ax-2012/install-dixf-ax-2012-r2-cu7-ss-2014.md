@@ -33,6 +33,9 @@ ms.dyn365.ops.version: 2012
 
 # Install the AX 2012 R2 CU7 Data import/export framework for SQL Server 2014
 
+[!include[banner](../includes/banner.md)]
+
+
 To use the Data import/export framework for Microsoft Dynamics AX 2012 R2 cumulative update 7 (CU7) with SQL Server 2014 Integration Services or later, you must install AX 2012 R2 CU7, and then apply the update <a href="https://mbs2.microsoft.com/Knowledgebase/KBDisplay.aspx?scid=kb;en-us;3018235">KB 3018235</a>.
 
 The following instructions apply for an environment in which SQL Server 2014 or a later version is installed. If you are running SQL Server 2008 or SQL Server 2012 Integration Services, you can install the Data Import/Export Framework for Dynamics AX 2012 R2 CU7 by using the update installer. For more information, see [Install the Data Import/Export Framework binary updates (CU7)](https://technet.microsoft.com/en-us/library/hh538446.aspx#DIXFInstall). To see which versions of Integration Services are supported with the Data Import/Export Framework, see the [Microsoft Dynamics AX 2012 System Requirements](http://go.microsoft.com/fwlink/?LinkId=165377).
@@ -126,4 +129,5 @@ See also
 --------
 
 [Configure the version of SQL Server Integration Services used by the Data import/export framework in an environment with multiple versions (DIXF)](configure-sql-server-integration-services-multiple-versions-dixf.md)
+
 

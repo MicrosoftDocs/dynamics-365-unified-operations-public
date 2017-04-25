@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Prepayment invoices vs. prepayments
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Prepayment invoices vs. prepayments
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides describes and contrasts the two methods that organizations can use for advance payments (prepayments). In one method, you create a prepayment invoice that is associated with a purchase order. In the other method, you create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers.
 
 Organizations might issue prepayments (advance payments) to vendors for goods or services before those goods or services are fulfilled. Two methods can be used to issue prepayments to vendors. To minimize risk, you can track prepayments by defining the prepayment on a purchase order. For this method, you must create a prepayment invoice that is associated with a purchase order. This method is referred to as prepayment invoicing. Organizations that don't want to track prepayments as closely or don't receive a prepayment invoice from their vendor can use prepayment journal vouchers instead of the prepayment invoicing method. You can create prepayment journal vouchers by creating journal entries and marking them as prepayment journal vouchers. For this method, you can't track which prepayments to a vendor are made against which purchase orders. However, you can mark a posted prepayment for settlement against a purchase order.
@@ -64,5 +67,6 @@ Prepayment invoices are a common business practice. A vendor issues prepayment 
 3.  The Accounts payable coordinator records the prepayment invoice against the purchase order, and then the prepayment invoice is paid.
 4.  After the vendor delivers the goods or services, and the related vendor invoices have been received, the Accounts payable coordinator applies the prepayment amount that was already paid against the invoice.
 5.  The Accounts payable coordinator pays and settles the remaining amount of the invoice.
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: List Panel subpattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # List Panel subpattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the List Panel form subpattern. Application teams use this subpattern to manage two lists that move data between each other.
 
@@ -134,4 +137,5 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![ListPanel(4)](./media/listpanel4.png)](./media/listpanel4.png)
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Registration IDs
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Registration IDs
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about setting up and using registration IDs.
 
@@ -104,5 +107,6 @@ For more information about registration IDs processing, including required prere
 -   Set up VAT ID
 -   VAT ID registration of vendor
 -   Party search using VAT ID
+
 
 

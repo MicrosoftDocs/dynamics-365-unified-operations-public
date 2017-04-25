@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Organize report components in report designer
@@ -31,6 +31,9 @@ ms.dyn365.ops.version:
 ---
 
 # Organize report components in report designer
+
+[!include[banner](../includes/banner.md)]
+
 
 After you've designed building blocks and generated reports, it's helpful to organize these objects so that they are easier for users to locate. This article explains how to organize existing reports, building blocks, and objects in report designer.
 
@@ -159,4 +162,5 @@ See also
 --------
 
 [Financial reporting](financial-reporting-intro.md)
+
 

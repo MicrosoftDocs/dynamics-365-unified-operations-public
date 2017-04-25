@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Details Master form pattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Details Master form pattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Details Master form pattern. A details form is the primary method for entering data into Microsoft Dynamics 365 for Operations.
 
@@ -277,4 +280,5 @@ None.
 [![AX 2012 example: Details Master w/Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
 
 [![AX 2012 example: Details Master w/Standard Tabs 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
+
 

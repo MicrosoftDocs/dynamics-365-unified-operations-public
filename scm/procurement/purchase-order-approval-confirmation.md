@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Approve and confirm purchase orders
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Approve and confirm purchase orders
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the statuses that a purchase order (PO) goes through after it has been created, and the effect of enabling change management on POs.
 
@@ -86,4 +89,5 @@ See also
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
 [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
 

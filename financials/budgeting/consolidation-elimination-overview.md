@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Consolidation and elimination overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Consolidation and elimination overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 
@@ -91,3 +94,4 @@ By using the **Export company balances** option to export from one instance and 
 
 
 For more information, see [Currency revalution in a consolidation company](..\general-ledger\currency-revaluation-consolidation-company.md).
+

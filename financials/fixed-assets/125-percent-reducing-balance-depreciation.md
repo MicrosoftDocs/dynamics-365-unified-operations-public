@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: 125 percent reducing balance depreciation
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # 125 percent reducing balance depreciation
+
+[!include[banner](../includes/banner.md)]
+
 
 This article gives an overview of the 125 percent reducing balance method of depreciation.
 
@@ -87,4 +90,5 @@ The 125% reducing balance method divides 125 percent by the service life years.
 
 > [!NOTE] 
 > Typically, when the amount that is calculated by using the 125% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.
+
 

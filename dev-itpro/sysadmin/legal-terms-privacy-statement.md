@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Add links to your organization's legal terms and privacy statement
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add links to your organization's legal terms and privacy statement
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how administrators can add links to their organization's legal terms and privacy statement in the <strong>About</strong> pane of Microsoft Dynamics 365 for Operations.
 
 Organizations often need to ensure that the links to their legal terms and privacy statement are readily available and visible to users in order to meet legal and compliance requirements. Administrators of an organization can follow these steps to have the links to their legal terms and privacy statement be available in the **About **pane (**Settings** &gt; **About**).
@@ -55,4 +58,5 @@ To validate that the links have been added, on the toolbar at the top of the pag
 Click on these links to validate that they open the appropriate pages. 
 
 **Note:** The links open in a new window, so if you have a pop-up blocker enabled, you will have to add an exception to your pop-up blocker settings to allow Dynamics 365 for Operations to launch a new window.
+
 

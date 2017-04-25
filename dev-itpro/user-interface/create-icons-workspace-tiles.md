@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create icons for workspace tiles
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Create icons for workspace tiles
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 
@@ -78,4 +81,5 @@ Workspace icon image overlaid to show the circular portion visible on the tile a
 Using this image on a workspace tile yields the following result on the dashboard. 
 
 [![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+
 

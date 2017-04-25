@@ -32,17 +32,25 @@ ms.dyn365.ops.version: Version 1611
 
 # Copy a Dynamics 365 for Operations database from SQL Server to a production Azure SQL Database environment
 
+[!include[banner](../includes/banner.md)]
+
+
+[!include[banner](../includes/banner.md)]
+
 This topic describes how to move a Dynamics 365 for Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
 
 Overview
 --------
 
-This procedure can be used to move a Microsoft Dynamics 365 for Operations database from an environment that runs on Microsoft SQL Server (Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Tier 2 or higher). This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment. This process isn't suitable for all situations. For example, you should not use this process to import data for a new legal entity for an existing live deployment. In those situations, we recommend that you use [process data packages](../lcs-solutions/process-data-packages-lcs-solutions.md) or [data entity data packages](..\data-entities\data-entities-data-packages.md). Here is the supported procedure for bringing a golden database into the production environment:
+This procedure can be used to move a Microsoft Dynamics 365 for Operations database from an environment that runs on Microsoft SQL Server (Tier 1 or one-box) to an environment that runs on a Microsoft Azure SQL database (Tier 2 or higher). This process is typically performed before go-live to bring a golden (or seed) database that contains only system configuration data into a production environment. This process isn't suitable for all situations. For example, you should not use this process to import data for a new legal entity for an existing live deployment. In those situations, we recommend that you use [process data packages](../lcs-solutions/process-data-packages-lcs-solutions.md) or [data entity data packages](../data-entities/data-entities-data-packages.md). Here is the supported procedure for bringing a golden database into the production environment:
 
 1.  A customer or partner exports the database from SQL Server.
 2.  The customer or partner imports the database to a sandbox environment that runs on an Azure SQL database. **Note:** If you're using Retail components raise a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that the Service Engineering Team update the imported database to be reconfigured for the new environment.
 3.  The customer or partner uses a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that Microsoft Support update the sandbox database to the production environment.
-4.  Support copies the database from the sandbox environment to the production environment. **Note:** Microsoft accepts requests to copy a database into a production environment only before go-live. li&gt;
+4.  Support copies the database from the sandbox environment to the production environment. 
+
+> [!NOTE]
+> Microsoft accepts requests to copy a database into a production environment only before go-live. 
 
 The process for moving a database involves using the sqlpackage.exe command-line tool to export the database from SQL Server and import it into an Azure SQL database. Because the file name extension for the exported data file is .bacpac, the process is often referred to as the bacpac process. Here are the high-level steps:
 
@@ -293,5 +301,6 @@ The following guidelines can help you achieve optimal performance:
 -   To help improve performance, in a one-box environment (which is also known as a Tier 1 environment) that is hosted in Azure, put the .bacpac file on drive D when you export it. For more information about the temporary drive on Azure computers, see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) post on the Azure Support Team blog.
 -   To help make the import process faster, and to help improve the speed of restore from a .bak file, grant the account that is running the SQL Server Windows service the [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) right. To easily implement this guideline for a developer environment, set SQL Server to run as the axlocaladmin account.
 -   We recommend that you not use the option to export and import from SQL Azure in Management Studio. (This option is also known as “Export data tier application”). We recommend that you not use this approach, because there can be memory limitations for larger databases.
+
 
 

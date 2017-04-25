@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Spanish bill of exchange options
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Spanish bill of exchange options
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes specific options and changes in basic bill of exchange process implemented in Microsoft Dynamics 365 for Operations for legal entities in Spain.
 
 For legal entities in Spain, the bill of exchange functionality has additional options:
@@ -58,5 +61,6 @@ If the **Date treatment on bill of exchange journal** parameter is set to **Yes*
 -   Remittance journal
 -   Protest bill of exchange journal
 -   Redraw bill of exchange journal
+
 
 

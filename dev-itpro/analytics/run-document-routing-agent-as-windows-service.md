@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Run the Document Routing Agent as a Windows service
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 2
 ---
 
 # Run the Document Routing Agent as a Windows service
+
+[!include[banner](../includes/banner.md)]
+
 
 The Document Routing Agent can be run as either a desktop application or a Microsoft Windows service. This topic provides important information that will help you select the correct execution mode.
 
@@ -83,4 +86,5 @@ By default, the Document Routing Agent runs as a desktop application. To run the
 6.  Start the service.
 
 The Document Routing Agent is now running as a Windows service.
+
 

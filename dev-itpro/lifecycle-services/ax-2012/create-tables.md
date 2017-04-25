@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create tables
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Create tables
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -76,4 +79,5 @@ See also
 [How to: Create an Index](http://msdn.microsoft.com/library/5c412c46-724b-4498-ab42-51725f15c71a(AX.60).aspx)
 
 [Tables, Views, and Maps](http://msdn.microsoft.com/library/9c62bde0-46a1-4b48-87b2-778a68627cd1(AX.60).aspx)
+
 

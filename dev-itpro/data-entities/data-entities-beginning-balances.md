@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Data entities - Beginning balances
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Data entities - Beginning balances
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides a list of the data entities that are available for beginning balance functionality that is related to Budget control in Microsoft Dynamics 365 for Operations. If you're using Budget control, you must set it up and activate it before any balances are posted. Any transactional data that is posted before Budget control is activated won't be included.
 
@@ -133,5 +136,6 @@ See also
 --------
 
 [Data entities and packages framework](data-entities-data-packages.md)
+
 
 

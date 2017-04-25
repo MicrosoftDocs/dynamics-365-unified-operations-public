@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure global address books
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Configure global address books
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books in Microsoft Dynamics 365 for Operations. Some of the decisions will require that you confirm the decisions that have been made for other areas of the product, such as the organization hierarchy.
 
@@ -65,5 +68,6 @@ After you create the global address book, you can create additional address book
 You can create address books at any time, and you can also set security parameters for the address books at any time. You aren't required to set security privileges for an address book, but if you don't, all workers in your organization can view all party records in that address book. You can set security privileges to party records through address books. Security privileges are based on teams. This approach guarantees that only workers who are assigned to a team that has access to an address book can view the party records in that address book. You must select the teams that have access to each address book. For each address book, you can set security privileges that allow or deny access to specific teams. If you grant a team privileges to an address book, all members of that team can view the records in the address book. If you don't grant a team access to an address book, the members of that team can't view the address book or its contents. **Decision:**
 
 -   Which teams should have access to each new address book that you will create?
+
 
 

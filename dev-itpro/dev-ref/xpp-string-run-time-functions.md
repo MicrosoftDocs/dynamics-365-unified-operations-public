@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ string run-time functions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ string run-time functions
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the string run-time functions.
 
@@ -778,4 +781,5 @@ If a minus sign precedes the value of the *\_number* parameter, the substring w
     subStr("abcdef"),2,99) //Returns the string "cdef".
     subStr("abcdef",2,3) //Returns the string "bcd".
     subStr("abcdef",2,-3); //Returns the string "ab".
+
 

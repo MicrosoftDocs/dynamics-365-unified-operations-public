@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Position forecasting
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Position forecasting
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -220,4 +223,5 @@ For both the generation process and the selection process, the start date on the
 Budget plan lines show the source of the budget amounts (the forecast position number) but aren't linked. Therefore, changes to the forecast position aren't shown on the budget plan line, and changes to the budget plan line are shown in the forecast position. If you change a forecast position and want the updates to be included in a budget plan, you must bring the forecast position into the plan again. However, remember that this process removes all lines where that forecast position is assigned. Therefore, any changes that you've made to those lines are removed. 
 
 To see which budget plans a forecast position has been included in, you can generate the **Forecast positions by budget plan** report. Alternatively, on the forecast position, you can open the **Associated budget plans** FactBox to view the plans.
+
 

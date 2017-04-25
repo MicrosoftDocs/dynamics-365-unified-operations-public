@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Office integration tutorial
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Office integration tutorial
+
+[!include[banner](../includes/banner.md)]
+
 
 In this tutorial, you will use and build Office integration experiences that involve Excel, Word, Document Management, and email. 
 
@@ -477,4 +480,5 @@ See also
 [Office integration](office-integration.md)
 
 [Office Integration Troubleshooting](office-integration-troubleshooting.md)
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Import and verify NF-e XML documents and DANFE files for Brazil
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Import and verify NF-e XML documents and DANFE files for Brazil
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic answers questions about the process for importing and verifying Nota fiscal eletrônica (NF-e) XML documents and Documento auxiliar da Nota fiscal eletrônica (DANFE) that you receive in emails.
 
@@ -67,4 +70,5 @@ You can use the **Received XML inquiry** page to inquire about the status of NF-
 
 ## How do I generate a list of NFe documents that weren't posted, but that I received the XML documents for?
 You can use the **Posted** option on the **Received NF-e XML documents** page to verify the NF-e documents that weren't posted, but that you received the XML documents for.
+
 

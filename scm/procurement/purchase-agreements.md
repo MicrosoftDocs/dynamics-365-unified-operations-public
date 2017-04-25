@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Purchase agreements
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Purchase agreements
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
 
@@ -99,4 +102,5 @@ See also
 [Create a purchase agreement (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
 [Create a purchase release order from a purchase agreement (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+
 

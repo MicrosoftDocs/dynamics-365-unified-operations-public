@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Reporting tree definitions in financial reports
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Reporting tree definitions in financial reports
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about reporting tree definitions. A reporting tree definition is a report component, or building block, that helps define the structure and hierarchy of your organization.
 
@@ -210,4 +213,5 @@ The following examples show possible information that is used in a reporting tre
 # See also
 
 [Financial reporting](financial-reporting-intro.md)
+
 

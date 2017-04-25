@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Half-year depreciation on additional acquisitions for Austria
@@ -31,7 +31,8 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Half-year depreciation on additional acquisitions for Austria
-"[!include[banner](../includes/banner.md)]"
+
+[!include[banner](../includes/banner.md)]
 
 
 This topic provides information for users in legal entities in Austria about the depreciation of additional acquisitions when the Half year convention is used for fixed asset depreciation.
@@ -50,5 +51,6 @@ In legal entities in Austria depreciation for additional acquisitions and acquis
 
 ## Halfyear depreciation on additional acquisitions calculation
 When **Apply specific rules for half year depreciation** checkbox is marked, and **Automatically create depreciation adjustment amounts with disposal** checkbox is marked, the depreciation adjustment amount for fixed assets with **Straight line life remaining** depreciation method and **Half year (start of year)** convention used, is posted automatically with the disposal calculated according to the half year convention rules.
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: RFP responses (AX 2012)
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # RFP responses (AX 2012)
 
+[!include[banner](../includes/banner.md)]
+
+
 The RFP responses page contains common questions found on Requests for Proposals (RFPs), and recommended answers. This section of Microsoft Dynamics Lifecycle Services is only available to partners, in Pre-sales projects.
 
 Getting started
@@ -51,5 +54,6 @@ You can search for a common question, or browse and filter by functionality and 
 
 6.  To clear all filters, in the app bar, click **Reset**.
 7.  To export the selected responses, in the app bar, click **Export**.
+
 
 

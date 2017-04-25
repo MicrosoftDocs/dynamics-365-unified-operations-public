@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fixed assets home page
@@ -32,9 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed assets home page
 
+[!include[banner](../includes/banner.md)]
+
+
 Fixed assets are items of value, such as buildings, vehicles, land, and equipment, which are owned by an individual or organization.
 
 You can set up and enter acquisition information for fixed assets, and then manage them by depreciating them and setting a capitalization threshold to determine depreciation. You can calculate adjustments to the fixed assets, and also dispose of them. When you use General ledger together with Fixed assets, you can view the current value of all fixed assets. The way in which fixed assets are handled must correspond to both international accounting standards and the accounting legislation in each country/region. Requirements might include rules for recording acquisition and disposal transactions, depreciation, lifetimes, and write-ups and write-downs of fixed assets. The Fixed assets functionality incorporates many of these standards and rules.
+
 
 
 

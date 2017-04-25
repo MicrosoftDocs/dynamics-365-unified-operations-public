@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Chronological invoice and voucher numbers for France
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Chronological invoice and voucher numbers for France
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable for legal entities in France.  
 
@@ -83,4 +86,5 @@ If different customers use different patterns for numbering, you must set up chr
 
 ## Invoice posting
 When you post an invoice or a credit note, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
+
 

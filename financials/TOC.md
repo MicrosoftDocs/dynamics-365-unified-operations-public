@@ -207,4 +207,17 @@
 ## [Project quotations](project-management/project-quotations.md)
 ## [Project resourcing](project-management/project-resourcing.md)
 ## [Work breakdown structures](project-management/work-breakdown-structures.md)
+## [Project time entry mobile workspace](project-management/project-time-entry-mobile-workspace.md)
 # [Localizations](localizations/TOC.md)
+
+# [Human resources](/dynamics365/operations/human-resources/index)
+
+# [Retail](/dynamics365/operations/retail/index)
+
+# [Supply chain management](/dynamics365/operations/supply-chain/index)
+
+# [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
+
+# Other resources
+## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)

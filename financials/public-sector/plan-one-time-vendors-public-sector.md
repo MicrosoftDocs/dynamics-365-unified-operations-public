@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Plan for one-time vendors in the public sector
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Plan for one-time vendors in the public sector
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains how to prepare to import and create multiple one-time vendors and invoices. 
 
@@ -106,4 +109,5 @@ See also
 [One-time vendors in the public sector](one-time-vendors-public-sector.md)
 
 [Accounts payable in the public sector](accounts-payable-public-sector.md)
+
 

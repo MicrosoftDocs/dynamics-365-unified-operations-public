@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: VAT statement details for Latvia
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # VAT statement details for Latvia
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how to set up the VAT statement for legal entities in Latvia.
 
@@ -71,4 +74,5 @@ To review or change the VAT statement configuration, on the **Reporting configur
 
 ## Generate a VAT statement
 To generate a VAT XML file, on the **Sales tax payments** page, select one or more vouchers, and then click **Export VAT XML file**.
+
 

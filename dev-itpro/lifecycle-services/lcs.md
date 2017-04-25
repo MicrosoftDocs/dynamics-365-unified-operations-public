@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Lifecycle Services for Dynamics 365 for Operations
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Lifecycle Services for Dynamics 365 for Operations
 
+[!include[banner](../includes/banner.md)]
+
+
 Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your Microsoft Dynamics 365 for Operations implementations.
 
 -   [What's new: Lifecycle Services for Microsoft Dynamics](whats-new-lcs.md)
@@ -56,5 +59,6 @@ Lifecycle Services (LCS) for Microsoft Dynamics is a collaboration portal that p
 
 -   For information about how to contact Microsoft if you have technical questions about Microsoft Dynamics 365 for Operations, or if you need help accessing Microsoft Dynamics Lifecycle Services (LCS), see [Find support for Microsoft Dynamics 365 for Operations and Microsoft Dynamics Lifecycle Services](lcs-support.md).
 -   For information about how to contact Microsoft if you have technical questions about Microsoft Dynamics AX 2012 or need support, see [Microsoft Dynamics AX 2012 Support experience](cloud-powered-support-lcs.md).
+
 
 

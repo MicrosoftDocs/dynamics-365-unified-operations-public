@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Depreciation effects with reversals
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Depreciation effects with reversals
+
+[!include[banner](../includes/banner.md)]
+
 
 This article discusses potential implications of reversing a fixed asset transaction. 
 
@@ -96,4 +99,5 @@ See also
 --------
 
 [Fixed asset depreciation](fixed-asset-depreciation.md)
+
 

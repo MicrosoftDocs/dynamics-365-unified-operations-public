@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Developer home page
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Developer home page
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides links to topics about development with Microsoft Dynamics 365 for Operations.
 
@@ -253,4 +256,5 @@ The client is an HTML web client that runs in all major browsers. For informati
 # See also
 
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
+
 

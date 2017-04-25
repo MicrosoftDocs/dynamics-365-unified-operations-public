@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Warehouse work policies
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Warehouse work policies
+
+[!include[banner](../includes/banner.md)]
+
 
 A new warehouse work policy is introduced in Microsoft Dynamics AX 7.0.1 (May 2016 update). This work policy controls whether warehouse work is created for warehouse processes in manufacturing.
 
@@ -248,4 +251,5 @@ STEPS (25)
 </tr>
 </tbody>
 </table>
+
 

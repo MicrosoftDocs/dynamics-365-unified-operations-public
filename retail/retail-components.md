@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Components of Dynamics 365 for Operations - Retail
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Components of Dynamics 365 for Operations - Retail
+
+[!include[banner](includes/banner.md)
+
 
 This topic describes the various components that make up Microsoft Dynamics 365 for Operations - Retail.
 
@@ -87,6 +90,7 @@ Dynamics 365 for Operations - Retail provides mid-market and large retailers wit
 </tr>
 </tbody>
 </table>
+
 
 
 

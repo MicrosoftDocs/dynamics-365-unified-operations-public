@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Information access and reporting in Dynamics 365 for Operations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Information access and reporting in Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains the various reporting options available as part of the Dynamics 365 for Operations platform.
 
@@ -191,5 +194,6 @@ Standard financial reports are provided using the default main account categorie
 -   User controls are tailored for the specialized needs of financial reporting.
 -   Create roll-up reports containing data across companies or business units.
 -   Utilizes a financial data mart for optimized performance.
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Recurring integrations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Recurring integrations
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, is a critical piece that any platform must support. For the current version of Microsoft Dynamics 365 for Operations, we have tried to simplify this process for all parties who are involved.
 
@@ -111,4 +114,5 @@ Use the API.
 **Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
+
 

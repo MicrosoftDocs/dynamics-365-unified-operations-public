@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure Power BI integration for workspaces
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Configure Power BI integration for workspaces
+
+[!include[banner](../includes/banner.md)]
+
 
 This tutorial describes the configuration that is required for a new Microsoft Dynamics 365 for Operations environment to support integration with PowerBI.com. This configuration enables workspaces to show the Power BI control and lets users pin visualizations to a workspace.
 
@@ -123,4 +126,5 @@ Users will now see the Power BI control in specific workspaces. (The control mus
 # See also
 
 [Sign up for Power BI service](https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-sign-up-for-power-bi-service/)
+
 

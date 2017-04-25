@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create a customer invoice
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create a customer invoice
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -156,6 +159,7 @@ The following fields change the behavior of the posting process.
 </tr>
 </tbody>
 </table>
+
 
 
 
