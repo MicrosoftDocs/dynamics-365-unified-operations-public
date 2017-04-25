@@ -31,12 +31,11 @@ ms.search.validFrom: 2016-05-31
 ---
 
 # Sales tax reports for Poland (setting up tax information and other features)
-[!include[banner](includes/banner.md)]
+[!include[banner](../includes/banner.md)
 
 This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland. 
 
-Poland - VAT report date codes
-------------------------------
+## Poland - VAT report date codes
 
 Per the Polish Accountancy Act, which took effect on September 29, 1994, value-added tax (VAT) for sales, purchases, and imported products must be processed separately. For every posted sales transaction or purchase transaction where the **Date of VAT register** or **VAT report date code** field is set, the tax will be accounted in relevant VAT registers. The **VAT report date code** field appears on several transaction pages. When you update or post transactions, information about the VAT report date code is posted to the tax tables. It will then be printed on the Polish VAT register. To set up VAT report date codes, open the **VAT report date codes** page (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **VAT report date codes**), and set the following fields.
 
@@ -167,7 +166,7 @@ The following pages include the VAT report date code.
 <tr class="odd">
 <td>Specification
 <ul>
-<li>Click <strong>Accounts payable</strong> &gt; <strong>Vendors</strong> &gt; <strong>All vendors</strong>. On the <strong>Invoice</strong> tab, in the <strong>Settle</strong> group, click <strong>Settle transactions</strong>. Click <strong>Inquiry</strong> &gt; <strong>Specifications</strong>, Then, on the <strong>Setup</strong> tab, in the <strong>View</strong> field, select <strong>Purchase</strong>. �or� Click <strong>Accounts receivable</strong> &gt; <strong>Customers</strong> &gt; <strong>All customers</strong>. On the <strong>Collect</strong> tab, in the <strong>Settle</strong> group, click <strong>Settle transactions</strong>. Click <strong>Inquiry</strong> &gt; <strong>Specifications</strong>. Then, on the <strong>Setup</strong> tab, in the <strong>View</strong> field, select <strong>Sales order</strong>.</li>
+<li>Click <strong>Accounts payable</strong> &gt; <strong>Vendors</strong> &gt; <strong>All vendors</strong>. On the <strong>Invoice</strong> tab, in the <strong>Settle</strong> group, click <strong>Settle transactions</strong>. Click <strong>Inquiry</strong> &gt; <strong>Specifications</strong>, Then, on the <strong>Setup</strong> tab, in the <strong>View</strong> field, select <strong>Purchase</strong>. -or- Click <strong>Accounts receivable</strong> &gt; <strong>Customers</strong> &gt; <strong>All customers</strong>. On the <strong>Collect</strong> tab, in the <strong>Settle</strong> group, click <strong>Settle transactions</strong>. Click <strong>Inquiry</strong> &gt; <strong>Specifications</strong>. Then, on the <strong>Setup</strong> tab, in the <strong>View</strong> field, select <strong>Sales order</strong>.</li>
 </ul></td>
 <td></td>
 </tr>
@@ -223,7 +222,7 @@ The following shared functionality works on all the preceding pages:
 -   When you post an invoice, sales tax transactions are split by service tariff number. Even the sales tax group and item sales tax group are the same.
 -   When you create a credit note for any posted invoice where the lines have a value in the **Service tariff number** field, the service tariff number is copied to credit note lines from the original document, not from the credit note header. The service tariff number can be edited on for the correction line.
 
-## Poland � Base amount for VAT
+## Poland - Base amount for VAT
 The **Base amount for VAT** field is enabled when you enter a tax transaction (the **Tax code** field has a value on journal lines) in the following journals:
 
 -   Invoice journal (click **Accounts payable** &gt; **Journals** &gt; **Invoices** &gt; **Invoice journal**, click **Lines**, and then click the **General** tab)
@@ -232,7 +231,7 @@ The **Base amount for VAT** field is enabled when you enter a tax transaction (t
 
 In the **Base amount for VAT** field, you manually enter the tax base amount. After you post a journal, the value from the **Base amount for VAT** field transferred to **the Amount origin** field in tax transactions.
 
-## Poland � Sales tax (VAT) reporting
+## Poland - Sales tax (VAT) reporting
 This feature is used in ledger journals where multiple lines have the same voucher. When the following fields on one line are changed, a message box appears that lets you update the fields on other lines that have the same voucher:
 
 -   Invoice
@@ -243,12 +242,13 @@ This feature is used in ledger journals where multiple lines have the same vouch
 -   Date of VAT register
 -   VAT report date code
 
-**Note:** The message box appears only when the fields were changed for a line where a sales tax group, item sales tax group, and sales tax code are set up. The message is triggered on the following journal pages:
+> [!NOTE]
+> The message box appears only when the fields were changed for a line where a sales tax group, item sales tax group, and sales tax code are set up. The message is triggered on the following journal pages:
 
 -   General journal (click **General ledger** &gt; **Journals** &gt; **General journal**, and then click **Lines**)
 -   Invoice journal (click **Accounts payable** &gt; **Journals** &gt; **Invoices** &gt; **Invoice journal**, and then click **Lines**)
 
-## Poland � Tax direction for the line
+## Poland - Tax direction for the line
 The feature is related to postings through the general journal that involves sales tax transactions. The system automatically determines the sales tax direction that should be assigned to tax transactions that are created, based on the account type that was used for the posting. This feature enables main accounts to be determined correctly and the sales tax direction to be assigned correctly for general journal lines within the same voucher. Lines must meet one of the following conditions:
 
 -   The account type is **Customer**, **Vendor**, or **Petty cash**, and the offset account type is **Ledger**. The offset account must be specified.
