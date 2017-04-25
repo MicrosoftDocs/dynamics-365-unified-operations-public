@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Monitor sales and margin performance
