@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Settle a partial vendor payment before the discount date with a final payment after the discount date
@@ -123,6 +123,7 @@ April then posts the payment. When she opens the **Vendor transactions** page, s
 | DISC-10020 | Cash discount    | 7/1/2015  |         | 3.00                                 |                                       | 0.00    | USD      |
 | APP-10021  | Payment          | 7/15/2015 |         | 693.00                               |                                       | 0.00    | USD      |
 | DISC-10021 | Cash discount    | 7/15/2015 |         | 7.00                                 |                                       | 0.00    | USD      |
+
 
 
 

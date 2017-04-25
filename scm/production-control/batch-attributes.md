@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Batch attributes
@@ -55,5 +55,6 @@ You can access the pages for products that you select on the **Released products
 
 ## Reserve batches
 You can search on batch attributes when you do batch reservations for a sales order to fullfill a customer's order, or when you pick and reserve batches for a production order. The search helps locate an inventory batch that contains the product that has the batch attribute that you want. After you locate the batch or batches, you can reserve the product to the originating inventory transaction line.
+
 
 

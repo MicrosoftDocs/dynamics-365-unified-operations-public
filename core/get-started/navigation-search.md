@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Navigation search
@@ -55,5 +55,6 @@ From an administration and security perspective, the navigation search functiona
 The list of search results is limited to 10 items. If you do not find what you're looking for in the results, you should try refining or updating the input. From a development perspective, the navigation search functionality is very easy to leverage since there is virtually no delay between the deployment of menu items and their ability to show up in search results. As long as the menu items are linked to from either the navigation pane or the dashboard, they will automatically become searchable. The navigation search functionality also includes a much-requested feature for power users: the ability to quickly navigate to a page based on the technical form name. Many users are so familiar with the system that they know the exact form names they work with. If you are one of these users, you can enter **form:** followed by the name of the form you are looking for. For example, if you enter **form: vendinvoice**, the search results will show all pages where the form name starts with **vendinvoice**. 
 
 [![search-for-form-vendinvoice](./media/search-for-form-vendinvoice.png)](./media/search-for-form-vendinvoice.png)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Zakat reporting
@@ -52,6 +52,7 @@ Saudi companies of all types and companies owned by nationals of the Gulf Cooper
 -   Other adjustments report
 -   Other additions report
 -   Other deductions report
+
 
 
 

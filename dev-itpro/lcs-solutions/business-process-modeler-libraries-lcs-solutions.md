@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up Business process modeler libraries for an LCS solution
@@ -128,5 +128,6 @@ See also
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+
 
 

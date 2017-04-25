@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Allocation rules for fixed assets
@@ -65,6 +65,7 @@ For this example, the depreciation cost amount of a fixed asset is 120 currency 
 -   Total rounded-down depreciation cost of the fixed asset = 1.00 × 100 = 100 currency units
 
 If the total rounded-down depreciation cost that must be allocated across each dimension is less than the rounding amount, the allocation rule isn't applied to the depreciation. Instead, the depreciation amount is either posted to the main account or offset by using the posting profile rules that you set up on the **Fixed asset posting profiles** page. To avoid these and similar scenarios, you can manually adjust the rounding rule for fixed asset depreciation on the **Currencies** page.
+
 
 
 

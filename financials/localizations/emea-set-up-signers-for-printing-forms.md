@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up signers for print forms
@@ -170,5 +170,6 @@ The Officials functionality shows the default predefined signers from the Offici
 -   Cash order
 
 **Note:** After a document is posted, officials can't be edited.
+
 
 

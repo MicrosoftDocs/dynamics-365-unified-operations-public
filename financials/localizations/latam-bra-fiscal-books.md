@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fiscal books for Brazil
@@ -60,4 +60,5 @@ The Public Digital Bookkeeping System, or Sistema Público de Escrituração Dig
 -   [Referenced fiscal documents](latam-bra-referenced-fiscal-documents.md)			
 -   [Sales complementary fiscal documents](latam-bra-sales-complementary-fiscal-documents.md)
 -   [Service electronic fiscal document](latam-bra-service-electronic-fiscal-document.md)	
+
 

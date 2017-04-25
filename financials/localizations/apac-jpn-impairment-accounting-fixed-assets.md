@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Impairment accounting for fixed assets
@@ -69,6 +69,7 @@ Yes, you can generate the following reports that contain information about impai
 -   Fixed asset transactions report
 -   Fixed asset impairment transactions report
 -   Review fixed assets for impairment report
+
 
 
 

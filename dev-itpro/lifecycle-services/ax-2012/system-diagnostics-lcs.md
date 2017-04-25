@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: System diagnostics 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # System diagnostics (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 
@@ -63,6 +63,7 @@ Before you can use the System diagnostics, you must complete the following tasks
 The following topics explain how to install and use System diagnostics.
 -   [Install and run System diagnostics (Lifecycle Services)](install-run-system-diagnostics-lcs.md)
 -   [Use System diagnostics (Lifecycle Services)](system-diagnostics-lcs.md)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Lookup form pattern
@@ -186,5 +186,6 @@ This section will have answers to frequently asked questions that are related to
 **HcmWorkerLookup (Lookup w/preview)** 
 
 ![LookupForm(9)](./media/lookupform9.png)
+
 
 

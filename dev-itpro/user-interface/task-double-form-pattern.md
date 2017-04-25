@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Task Double form pattern
@@ -136,5 +136,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![AX 2012 visual example](./media/taskdouble3.png)](./media/taskdouble3.png)
+
 
 

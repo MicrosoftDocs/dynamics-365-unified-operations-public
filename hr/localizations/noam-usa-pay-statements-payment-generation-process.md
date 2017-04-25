@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Pay statements and generating payments FAQ
@@ -75,6 +75,7 @@ Yes. For example, if you must create a pay statement just so that you can correc
 3.  Select the worker to update benefit and tax deductions or contributions for, and then click **OK**.
 4.  Click the **Benefit deductions** tab to add benefit deduction lines, or click the **Benefit contributions** tab to add benefit contribution lines.
 5.  Click the **Tax deductions** tab to add tax deduction lines, or click the **Tax** **contributions** tab to add tax contribution lines. Then click **Calculate**. **Important:** You must calculate the pay statement before you can submit it for payment or post it to the general ledger.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: C Classes
@@ -5115,5 +5115,6 @@ cueReferenceName
 The name to use to identify this form, report, table, query, or other application object.
 
  
+
 
 

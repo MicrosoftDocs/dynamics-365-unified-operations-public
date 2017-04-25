@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Continuous delivery home page
@@ -51,6 +51,7 @@ FAQ and guidelines
 
 ## Servicing
 -   [Servicing environments](..\dev-tools\developer-home-page.md#service-environments)
+
 
 
 

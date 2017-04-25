@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Brazilian taxes
@@ -86,5 +86,6 @@ For sales transactions with taxation codes that have a **1. with credit/debit** 
 ## Additional resources
 -   [Brazilian tax attributes](latam-bra-tax-attributes.md)
 -   [Brazilian tax payments](latam-bra-tax-payments.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ syntax
@@ -1497,5 +1497,6 @@ See also
 --------
 
 [X++ Language Reference](xpp-language-reference.md)
+
 
 

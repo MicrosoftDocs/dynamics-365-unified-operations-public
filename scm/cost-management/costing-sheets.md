@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Costing sheets
@@ -50,6 +50,7 @@ Two blocking policies for a costing version determine whether pending costs can 
 After you define the costing sheet format and calculations for indirect costs, you must perform a separate step to validate and save the information. The costing sheet represents a company-wide format for consistently displaying information about the costs of goods sold. 
 
 The costing sheet is displayed as part of the **Calculate item cost** page. The costing sheet can be displayed for a manufactured item’s calculated cost record on the **Item price** page or for an order-specific calculation record on the **BOM calculation results** page. It can also be displayed as part of the **Price calculation** page for a production order.
+
 
 
 

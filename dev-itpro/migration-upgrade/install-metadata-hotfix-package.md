@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Install a metadata hotfix
@@ -119,5 +119,6 @@ After a hotfix has been installed on a development VM as described in this artic
 
 ## Deploy
 After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment. If you use a build instance for build and test automation, the build process will automatically create the deployable package for you. For more information, see [Create and apply a deployable package](../deployment/create-apply-deployable-package.md).
+
 
 

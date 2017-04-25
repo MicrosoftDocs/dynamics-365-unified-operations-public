@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Electronic reporting destinations
@@ -161,5 +161,6 @@ The prerequisite is that your format must be available in the ER configurations.
 # See also
 
 [Electronic reporting overview](general-electronic-reporting.md)
+
 
 

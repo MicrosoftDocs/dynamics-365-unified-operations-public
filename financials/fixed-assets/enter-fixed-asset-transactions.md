@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed asset transaction options
@@ -73,5 +73,6 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 
 
 For more information, see [Fixed assets integration](fixed-asset-integration.md).
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Add a methodology to an LCS solution
@@ -78,5 +78,6 @@ See also
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+
 
 

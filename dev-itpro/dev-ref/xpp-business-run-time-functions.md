@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ business run-time functions
@@ -539,5 +539,6 @@ The number of periods that the investment must run for.
         print term(100,0.14,3000);  //returns the value '12.58'.
         pause;
     }
+
 
 

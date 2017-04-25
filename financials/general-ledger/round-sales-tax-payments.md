@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sales tax payments and rounding rules
@@ -69,5 +69,6 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
 > If you select Own advantage, the rounding is always to the advantage of the legal entity. 
 
 For more information, see [Sales tax overview](indirect-taxes-overview.md). 
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Depreciation methods and conventions
@@ -94,5 +94,6 @@ See also
 [175 percent reducing balance depreciation](175-percent-reducing-balance-depreciation.md)
 
 [200 percent reducing balance depreciation](200-percent-reducing-balance-depreciation.md)
+
 
 

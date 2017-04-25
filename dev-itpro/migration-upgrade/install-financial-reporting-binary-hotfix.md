@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Install a financial reporting binary hotfix
@@ -72,5 +72,6 @@ See also
 --------
 
 [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
+
 
 

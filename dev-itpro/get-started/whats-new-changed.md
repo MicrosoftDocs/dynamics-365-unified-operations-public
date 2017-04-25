@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: What's new or changed
@@ -119,6 +119,7 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 </tr>
 </tbody>
 </table>
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Vendor collaboration with customers
@@ -75,5 +75,6 @@ See also
 --------
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
+
 
 

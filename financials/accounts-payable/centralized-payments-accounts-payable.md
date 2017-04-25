@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Centralized payments for Accounts payable
@@ -302,6 +302,7 @@ Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee. The paymen
 | Due to Fabrikam (Fabrikam West)      |              | 75.00         |
 | Accounts payable (Fabrikam West)     | 25.00        |               |
 | Due to Fabrikam East (Fabrikam West) |              | 25.00         |
+
 
 
 

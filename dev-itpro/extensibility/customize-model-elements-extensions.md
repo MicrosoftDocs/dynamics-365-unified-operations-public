@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customize model elements using extensions
@@ -398,5 +398,6 @@ See also
 --------
 
 [Download FMLab sample code](https://github.com/Microsoft/FMLab)
+
 
 

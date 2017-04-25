@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Message center, message bar, and message details FAQ
@@ -197,5 +197,6 @@ If the collection contains one or more calls to **error()**, the message bar is 
 
 ## SetPrefix() and asynchronous processes
 The use of **SetPrefix()** is also deterministic. In other words, if you use **SetPrefix()**, and there is no page context (for example, an asynchronous batch operation), the notification of results is sent to the Message Center, which isn't associated with any page.
+
 
 

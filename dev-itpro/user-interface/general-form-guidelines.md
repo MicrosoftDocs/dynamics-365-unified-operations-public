@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: General form guidelines
@@ -250,6 +250,7 @@ This section will have answers to frequently asked questions that are related t
 
 -   **What types of fields aren't supported as summary fields on Fast Tabs?**
     -   For performance reasons, we don't currently support reference groups and display methods. Additionally, unbound fields can't be used as summary fields.
+
 
 
 

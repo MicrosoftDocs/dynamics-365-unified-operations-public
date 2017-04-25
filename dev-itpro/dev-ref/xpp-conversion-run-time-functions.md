@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ conversion run-time functions
@@ -959,5 +959,6 @@ Use this function instead of the **int2str** function for very large integers, s
 
     info(int2str(3123456789)); //returns -1171510507 as a string.
     info(uint2str(3123456789)); //returns 3123456789 as a string.
+
 
 

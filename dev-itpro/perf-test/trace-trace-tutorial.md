@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Take a trace using Trace parser
@@ -72,5 +72,6 @@ This tutorial requires that you access the environment as an administrator on th
 5.  Delete the trace if you want. You might do this if you have downloaded it.
 
 **Note: **The trace will be deleted after 7 days. For more information about the desktop version of trace parser, see [Trace parser: Using the desktop version to diagnose problems and analyze performance issues](trace-parser.md).
+
 
 

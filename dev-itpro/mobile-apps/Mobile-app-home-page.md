@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dynamics 365 for Operations mobile app home page
@@ -175,6 +175,7 @@ See also
 --------
 
 [Mobile workspaces recently released for the Dynamics 365 for Operations mobile app](mobile-workspaces-released.md)
+
 
 
 

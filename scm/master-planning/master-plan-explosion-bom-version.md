@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Explosion of a BOM version
@@ -50,5 +50,6 @@ See also
 [Master planning - how the BOM version is determined](master-plan-bom-version-determined.md)
 
 [Master planning and multisite functionality](master-plan-multisite-functionality.md)
+
 
 

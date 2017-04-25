@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ classes and methods
@@ -877,6 +877,7 @@ The following table shows the keywords that describe the use of delegates.
 | eventHandler                            | myClassInstance.myDelegate += eventHandler(otherClass.myInstanceMethod); | Although the syntax of the **eventHandler** keyword might give the impression that **eventHandler** is an X++ function, it isn't a function. The **eventHandler** keyword tells the compiler that a method is being subscribed to a delegate.                                           |
 | Subscribe or add a method to a delegate | myClassInstance.myDelegate += eventHandler(OtherClass::aStaticMethod);   | In the code, the static method **OtherClass::aStaticMethod** becomes subscribed to the delegate.                                                                                                                                                                                        |
 | Call a delegate                         | myClassInstance.myDelegate("Hello");                                     | This call to the delegate prompts the delegate to call each method that is subscribed to the delegate. The subscribed methods are called in the same order in which they were added to the delegate. One subscribed method must be completed before the delegate calls the next method. |
+
 
 
 

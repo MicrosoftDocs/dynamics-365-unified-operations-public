@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: System-defined buttons
@@ -233,5 +233,6 @@ However, if you must suppress one of these buttons (strongly discouraged), you 
             attachButton= this.control(this.controlId(#SystemDefinedAttachButton)) as FormCommandButtonControl; 
             attachButton.visible(false); 
         }
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Generate earnings
@@ -178,5 +178,6 @@ See also
 [Post payroll and generate vendor invoices](noam-usa-post-payroll-generate-vendor-invoices.md)
 
 [Work with existing payroll payments](noam-usa-existing-payroll-payments.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Commerce runtime and Retail Server extensibility
@@ -382,5 +382,6 @@ Before calling the new retail server API please make sure you have performed the
     return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
 
 Please refer the retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects for more details on how to call the new retail server api in mpos.
+
 
 

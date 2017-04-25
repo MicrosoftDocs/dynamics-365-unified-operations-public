@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure an approval step in a workflow
@@ -256,6 +256,7 @@ If a user doesn't take action on a document in the allotted time, the document i
 
 5.  Repeat steps 3 through 4 for each user that should be added to the escalation path. You can change the order of the users.
 6.  If the users in the escalation path don't respond in the allotted time, the system automatically take action on the document. To specify the action that the system takes, select the **Action** row, and then, on the **End action** tab, select an action.
+
 
 
 

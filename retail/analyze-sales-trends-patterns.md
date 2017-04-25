@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Analyze sales trends and patterns
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Analyze sales trends and patterns
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 You can study sales trends and patterns in real time in Microsoft Dynamics 365 for Operations - Retail.
@@ -48,4 +48,5 @@ Users can also study sales trends and patterns by hour across different levels o
 -   **Retail store management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel sales by hour report**
 -   **Retail store financials** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel sales by hour report**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by hour report**
+
 

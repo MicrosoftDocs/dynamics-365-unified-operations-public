@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Depreciation rounding
@@ -43,5 +43,6 @@ Depreciation amounts are rounded up or down, based on the value that is entered 
 |-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
 |CZK 1,111.11|1|CZK 1,111.11 ÷ 1 = CZK 1,111.11|CZK 1,111.1|CZK 1,111.11 is rounded up to CZK 1,112. Final depreciation amount: CZK 1,112 × 1 = CZK 1,112|CZK 1,111.11 is rounded down to CZK 1,111. Final depreciation amount: CZK 1,111 × 1 = CZK 1,111|
 |CZK 1,234.5|10|CZK 1,234.5 ÷ 10 = CZK 123.45|CZK 1,235|CZK 123.45 is rounded up to CZK 124. Final depreciation amount: CZK 124 × 10 = CZK 1,240|CZK 123.45 is rounded down to CZK 123. Final depreciation amount: CZK 123 × 10 = CZK 1,230|
+
 
 

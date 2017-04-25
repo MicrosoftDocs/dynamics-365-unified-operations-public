@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost controlling mobile workspace
@@ -145,6 +145,7 @@ Download and install the Dynamics 365 for Operations mobile app from your mobil
 10. Select the **Details for current period** link.
 11. View the performance of individual cost elements.
 12. You can also search for specific cost elements.
+
 
 
 

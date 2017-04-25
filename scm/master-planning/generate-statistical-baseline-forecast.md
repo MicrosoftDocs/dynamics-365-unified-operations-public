@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Generate a statistical baseline forecast
@@ -76,5 +76,6 @@ See also
 [Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 [Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+
 
 

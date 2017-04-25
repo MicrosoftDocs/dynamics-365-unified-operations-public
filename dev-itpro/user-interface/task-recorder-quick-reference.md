@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Task Recorder quick reference
@@ -159,6 +159,7 @@ These options allow you to remove steps from the recording. If you delete a pend
 </tr>
 </tbody>
 </table>
+
 
 
 

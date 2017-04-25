@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Financial management home page
@@ -32,9 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Financial management home page
 
-[!include[banner](../includes/banner.md)]
-
-
 [!include[banner](includes/banner.md)]
 
 This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Operations. 
@@ -49,4 +46,5 @@ Select a feature area to learn more about it.
 - [Project management](project-management\overview-project-management-accounting.md)
 - [Public sector](public-sector\public-sector-functionality.md) 
 - [Budgeting](budgeting\budgeting-overview.md) 
+
 

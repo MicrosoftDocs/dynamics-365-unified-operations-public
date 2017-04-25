@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Additional acquisition depreciation
@@ -49,6 +49,7 @@ In 2015, your organization acquired a fixed asset for 60,000. Your organization 
 | March 2016    | 1,000                                                           | 250 for January, 250 for February, and 250 for March              | 1,750                     |
 | April 2016    | 1,000                                                           | 250                                                               | 1,250                     |
 | May 2016      | 1,000                                                           | 250                                                               | 1,250                     |
+
 
 
 

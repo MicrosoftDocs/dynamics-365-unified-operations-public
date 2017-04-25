@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Install Data import/export framework for AX 2012 R3
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 2012 R3 CU8
 
 # Install the Data import/export framework for AX 2012 R3
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic describes how to install the Data Import/Export Framework for Microsoft Dynamics AX 2012 R3. 
@@ -85,6 +85,7 @@ In order to connect to the Data Import/Export Framework from an external service
 2.  Under **Service Groups**, deploy the following two service groups:
     -   **DMFEntityExecutionService**
     -   **DMFService**
+
 
 
 

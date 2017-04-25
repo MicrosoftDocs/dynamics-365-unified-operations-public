@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Automatic settlement and prioritization
@@ -84,6 +84,7 @@ If there is no user-defined settlement priority, transactions are automatically 
 | Invoice 2     | 9/1/2015   | 10002   | 250.00                         | 250.00           | 0.00    | USD      |
 | Invoice 3     | 10/15/2015 |         | 500.00                         | 350.00           | 150.00  | USD      |
 | Interest note | 10/15/2015 |         | 7.00                           | 0.00             | 0.00    | USD      |
+
 
 
 

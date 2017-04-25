@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Publish a mobile workspace
@@ -92,6 +92,7 @@ Before you publish a mobile workspace, make sure that the following prerequisite
 After a new workspace is published, users will have to pull to refresh the list of mobile workspaces. 
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+
 
 
 

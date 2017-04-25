@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Registration IDs
@@ -107,6 +107,7 @@ For more information about registration IDs processing, including required prere
 -   Set up VAT ID
 -   VAT ID registration of vendor
 -   Party search using VAT ID
+
 
 
 

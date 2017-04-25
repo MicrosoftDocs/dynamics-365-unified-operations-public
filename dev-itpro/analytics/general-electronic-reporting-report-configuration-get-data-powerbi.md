@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure Electronic reporting to pull data into Power BI
@@ -128,5 +128,6 @@ See also
 [Electronic reporting destinations](electronic-reporting-destinations.md)
 
 [Electronic reporting overview](general-electronic-reporting.md)
+
 
 

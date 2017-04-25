@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Build the Rental Charge Type form
@@ -140,6 +140,7 @@ Use Visual Studio to build and run the **FmtChargeType** form.
     [![rentalcharge5](./media/rentalcharge5.png)](./media/rentalcharge5.png)
     
 7.  The form opens in view mode. Click **Edit** in the Action Pane to switch the form into edit mode. To return to view mode, click **Options** and then **Read mode**.
+
 
 
 

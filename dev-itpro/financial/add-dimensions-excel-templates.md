@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Add look up values for financial dimensions to Excel templates
@@ -108,5 +108,6 @@ In Dynamics 365 for Operations, the only value that is present on Microsoft Exce
 [Add dimensions to Microsoft Excel templates](add-dimensions-excel-templates.md)
 
 [Extensibility home page](..\extensibility\extensibility-home-page.md)
+
 
 

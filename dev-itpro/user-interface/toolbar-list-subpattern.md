@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Toolbar and List subpattern
@@ -143,5 +143,6 @@ This section will have answers to frequently asked questions that are related to
 **VendTable** 
 
 [![ToolbarList(5)](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+
 
 

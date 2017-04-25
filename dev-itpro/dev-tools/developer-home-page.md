@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Developer home page
@@ -256,5 +256,6 @@ The client is an HTML web client that runs in all major browsers. For informati
 # See also
 
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Titres de recette in the public sector in France
@@ -72,6 +72,7 @@ To open the database inquiry page on the **Maintain titres de recette** page, sp
     | Table | Derived table | Field                        | Criteria   |
     |-------|---------------|------------------------------|------------|
     | Titre | Titre         | Accountant acceptance status | "Rejected" |
+
 
 
 

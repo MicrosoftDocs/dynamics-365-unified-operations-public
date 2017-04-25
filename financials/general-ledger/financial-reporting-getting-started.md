@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Financial reporting
@@ -126,5 +126,6 @@ See also
 [View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reporting blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
 
 

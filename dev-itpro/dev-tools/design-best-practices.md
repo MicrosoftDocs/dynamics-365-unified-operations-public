@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Design principles and best practices
@@ -104,6 +104,7 @@ A data entity should provide a holistic object that encapsulates the relevant bu
 **Do**
 
 -   Name the EntitySet in plural form. For example, the EntitySet for the **ReleasedProduct** EntityType is **ReleasedProducts**.
+
 
 
 

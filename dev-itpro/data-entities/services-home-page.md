@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Service endpoints
@@ -303,5 +303,6 @@ See also
 --------
 
 [Troubleshoot service authentication](troubleshoot-service-authentication.md)
+
 
 

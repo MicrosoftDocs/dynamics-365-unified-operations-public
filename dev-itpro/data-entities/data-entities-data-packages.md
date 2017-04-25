@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entities and packages framework
@@ -224,5 +224,6 @@ See also
 [Data entities](data-entities.md)
 
 [Data entities](data-entities.md)
+
 
 

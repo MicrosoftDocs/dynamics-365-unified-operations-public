@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up RFM analysis
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up RFM analysis
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.
@@ -44,5 +44,6 @@ Recency, frequency, and monetary (RFM) analysis is a marketing tool that your or
 -   **Monetary rating of 5** – When the customer makes a purchase, he or she spends a significant amount of money.
 
 If your organization uses an aggregate number for the score, the individual ratings are added together. For the same example, the customer has a rating of 13 (5 + 3 + 5).
+
 
 

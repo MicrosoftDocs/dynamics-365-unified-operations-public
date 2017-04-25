@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure a parallel branch in a workflow
@@ -57,5 +57,6 @@ See also
 --------
 
 [Create a workflow](create-workflow.md)
+
 
 

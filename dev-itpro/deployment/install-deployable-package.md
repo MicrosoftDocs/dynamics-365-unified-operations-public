@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Install a deployable package
@@ -172,6 +172,7 @@ The runbook provides the sequence of steps that must be run to update the enviro
         AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
 
 -   To verify database synchronization, navigate to the aosservce\\scripts\\ folder and find the dbsync.error.txt file. Find the file, and look for any errors.
+
 
 
 

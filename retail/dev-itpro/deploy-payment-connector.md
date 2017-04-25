@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Deploy a payment connector
@@ -128,5 +128,6 @@ See also
 [Guide to implementing a payment connector and a payment device](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 
 [Retail SDK packaging](retail-sdk/retail-sdk-packaging.md)
+
 
 

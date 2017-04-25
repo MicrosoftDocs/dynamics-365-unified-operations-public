@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Diagnose problems and analyze performance issues using Trace parser
@@ -65,5 +65,6 @@ See also
 --------
 
 [Developer home page](..\dev-tools\developer-home-page.md)
+
 
 

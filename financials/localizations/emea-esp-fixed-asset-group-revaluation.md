@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed asset revaluation groups
@@ -94,6 +94,7 @@ You can set up a revaluation group in the **Revaluation groups** page. In the up
 </tr>
 </tbody>
 </table>
+
 
 
 

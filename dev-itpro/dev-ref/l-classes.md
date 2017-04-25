@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: L Classes
@@ -2056,5 +2056,6 @@ A Boolean value that indicates whether to use a predefined Oracle service.
 #### Remarks
 
 By default, a predefined service is not used.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Activate financial dimensions
@@ -54,5 +54,6 @@ The **Rebuild financial dimensions** option is set to **No** by default, as it i
 [Set up financial dimensions (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-financial/)
 
 [Maintenance mode](..\sysadmin\maintenance-mode.md)
+
 
 

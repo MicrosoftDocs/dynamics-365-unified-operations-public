@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Foreign currency revaluation for Accounts payable and Accounts receivable
@@ -68,6 +68,7 @@ A record is kept every time that you run a foreign currency revaluation. From th
     -   **None** – No financial dimensions are posted. If you have a required financial dimension in your account structure, the revaluation process is still run and creates accounting entries that have no financial dimensions. You will receive a warning message first, so that you can cancel the revaluation.
     -   **Table** – The financial dimensions of the customer account or vendor account are posted on the foreign currency revaluation transactions.
     -   **Posting** – The financial dimensions of the transaction that is being revalued are posted on the foreign currency revaluation transactions. By default, the financial dimensions from the original transaction's AR/AP ledger account will be used for the revaluation transaction's AR/AP main account, and the financial dimensions from the original transaction's expense/asset/revenue ledger account will be used for the revaluation transaction's unrealized gain/loss main account.
+
 
 
 

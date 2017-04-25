@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Take a discount that is more than the calculated discount for a vendor payment
@@ -52,5 +52,6 @@ Discount information appears at the bottom of the **Settle transactions** page.
 | Cash discount amount to take | 60.00     |
 
 April posts the payment journal. The invoice is fully settled by using a payment of 940.00 and a discount of 60.00.
+
 
 

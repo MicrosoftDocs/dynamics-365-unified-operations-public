@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sales complementary fiscal documents for Brazil
@@ -64,5 +64,6 @@ Before you can create or post sales complementary fiscal documents, the followin
 
 ## Examples
 [![Examples of an original invoice and sales complementary fiscal documents of each of the three types](./media/salescomplementary-1024x409.png)](./media/salescomplementary.png)
+
 
 

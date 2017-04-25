@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: V Classes
@@ -1406,5 +1406,6 @@ newName
 Initializes a new instance of the VSSItem class.
 
     private void new()
+
 
 

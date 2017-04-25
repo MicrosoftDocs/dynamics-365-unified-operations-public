@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entities - Fixed assets
@@ -81,5 +81,6 @@ See also
 [Data entities and packages framework](data-entities-data-packages.md)
 
 [Data entities](data-entities.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed asset depreciation
@@ -60,5 +60,6 @@ Each book has a calendar that is used when you depreciate fixed assets. By defau
 You can create shared calendars by using the **Fiscal calendars** page in General ledger.
 
 For more informations, see [Depreciation methods and conventions](depreciation-methods-conventions.md).
+
 
 

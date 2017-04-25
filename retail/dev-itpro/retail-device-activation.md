@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail POS device activation
@@ -111,5 +111,6 @@ IT Pros can now configure device activation for Cloud POS by providing the devic
 [![Cloud POS URL field](./media/p15_11_16.png)](./media/p15_11_16.png) 
 
 Cloud POS starts in Manual entry mode, and the Retail Server URL, device ID, and register ID are pre-populated for activation.
+
 
 

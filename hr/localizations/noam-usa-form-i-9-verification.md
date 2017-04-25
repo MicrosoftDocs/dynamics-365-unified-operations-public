@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Form I-9 employment verification
@@ -58,5 +58,6 @@ See also
 --------
 
 [Organizing your workforce using departments, jobs, and positions](../departments-jobs-positions.md)
+
 
 

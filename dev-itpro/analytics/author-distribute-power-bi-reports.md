@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Author and distribute Power BI reports with Entity store
@@ -98,6 +98,7 @@ In the previous section, you uploaded the PBIX file into LCS to migrate from the
 -   You can ship Power BI reports with your ISV solution that includes models, demo data, etc. You can “wow” your users with rich, interactive reports that are shipped as part of your solution.
 -   You can ship reports “out of band” with your solution. Because PBIX files are stand-alone implementation assets, you can continue to ship reports as regular updates to your customers – get feedback and continue to improve them. Developing reports is easy (as you have seen above), so you can iterate quickly
 -   You can also build and share customized Power BI reports with specific customers – as you always have.
+
 
 
 

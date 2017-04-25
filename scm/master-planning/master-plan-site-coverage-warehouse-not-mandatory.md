@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Master planning for site coverage, warehouse not mandatory
@@ -65,5 +65,6 @@ See also
 [Master planning - site and warehouse coverage, warehouse mandatory](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
 [Master planning - how the BOM version is determined](master-plan-bom-version-determined.md)
+
 
 

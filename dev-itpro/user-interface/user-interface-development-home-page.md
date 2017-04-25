@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: User interface development home page
@@ -101,6 +101,7 @@ The form metamodel continues to be used to define controls and application logic
 -   [Add localizable labels for an extensible control](create-localizable-labels-client.md)
 -   [Guidelines for extensible controls layout](extensible-controls-layout.md)
 -   [Control the text that Task Recorder generates for a control](task-recorder-control-text.md)
+
 
 
 

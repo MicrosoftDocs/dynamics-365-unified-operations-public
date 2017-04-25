@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed asset acquisition posting accounts
@@ -48,5 +48,6 @@ When Invoice journal or Purchase orders in Accounts payable are used for fixed a
 For acquisitions posted using the Inventory to fixed assets journal in General ledger, the fixed asset is not bought from external sources, but transferred from the company's own inventory. Therefore, the offset account is an inventory issue account for the inventory item in Inventory management.
 
 For more information, see [Acquire assets through procurement](acquire-assets-procurement.md).
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up HR parameters across legal entities
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up HR parameters across legal entities
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 You must set up shared parameters for records that are shared across companies, such as Position records. This article explains how to set up Human resources parameters across legal entities.
@@ -55,5 +55,6 @@ See also
 --------
 
 [Set up company specific HR parameters](set-up-company-specific-hr-parameters.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Postdated checks
@@ -89,6 +89,7 @@ If your original check to a vendor or from a customer is lost or damaged, you ca
 </tr>
 </tbody>
 </table>
+
 
 
 

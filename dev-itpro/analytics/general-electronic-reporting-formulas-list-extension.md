@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Extend the list of Electronic reporting functions
@@ -115,5 +115,6 @@ See also
 [Electronic reporting overview](general-electronic-reporting.md)
 
 [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
+
 
 

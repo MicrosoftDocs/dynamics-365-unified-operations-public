@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Low-cost fixed assets
@@ -56,5 +56,6 @@ When you create an acquisition transaction for an asset that uses the book for l
 ### Generate acquisition and depreciation transactions for low-cost fixed assets
 
 When you acquire an asset, you create an acquisition transaction from the pre-acquisition transaction. When you post the acquisition transaction for a low-cost asset, the depreciation transaction is generated automatically.
+
 
 

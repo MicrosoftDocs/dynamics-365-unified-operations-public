@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Default order settings for dimensions and product variants
@@ -172,5 +172,6 @@ If the rule system for default order settings is too cumbersome, then there is t
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 The rank in this case doesn't really matter, so you can choose to hide it. This solution potentially introduces a maintenance issue. However, you may want to consider using this setup if you are consider integrating with Product Lifecycle Management (PLM) systems.
+
 
 

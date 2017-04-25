@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Depreciation suspension (holidays)
@@ -44,5 +44,6 @@ Depreciation suspension postpones the depreciation that should be calculated for
 -   Accelerated CZ
 
 To suspend fixed asset depreciation, on the **Fixed assets** page, select the fixed asset, and then click **Books** &gt; **Suspension**. On the **Depreciation suspension** page, click **Create new suspension**, and then select the year of suspension. On the **Suspension** page, a new record is created that contains suspension information. To cancel the suspension operation, select the record on the **Suspension** page, and then click **Cancel depreciation suspension**.
+
 
 

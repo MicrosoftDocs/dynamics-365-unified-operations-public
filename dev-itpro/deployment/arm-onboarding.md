@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Azure Resource Manager onboarding
@@ -105,6 +105,7 @@ Complete this procedure only if you didn't complete steps 6 through 8 of the pr
 
 1.  In LCS, on the **Project** page, in the **Environments** section, click **Microsoft Azure settings**.
 2.  On the **Microsoft Azure setup** page, select the region to deploy to, and then click **Connect**. The ARM onboarding flow is now completed. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
+
 
 
 

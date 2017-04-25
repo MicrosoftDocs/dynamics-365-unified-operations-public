@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Inventory close
@@ -91,5 +91,6 @@ In some circumstances, you might not be able to do anything about the warnings. 
 Occasionally, you might have to reverse a completed inventory close to return settlements to the state that they had before adjustments were made. When you reverse a completed inventory close, inventory is reopened to enable posting in the period that the inventory close covers. Related changes might also be made in the general ledger. After you've finished making adjustments, you can run inventory close again for the period that you're working with. 
 
 **Note:** Only the last inventory period that was closed can be reopened. To reverse an earlier inventory close, you must reverse each subsequent inventory close one at a time, starting with the most recent close.
+
 
 

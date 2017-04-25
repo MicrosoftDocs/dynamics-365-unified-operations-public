@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dynamics AX 2012 features that haven't been implemented but aren't deprecated
@@ -354,6 +354,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 </tbody>
 </table>
+
 
 
 

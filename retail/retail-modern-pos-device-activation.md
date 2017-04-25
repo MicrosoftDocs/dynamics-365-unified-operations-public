@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail Modern POS installation and updates
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail Modern POS configuration and installation
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic describes how to configure, download, and install Retail Modern POS on a variety of platforms.  It then describes how to activate Retail Modern POS through device activation.
@@ -231,5 +231,6 @@ See also
 --------
 
 [Install the POS Layout designer](install-pos-layout-designer.md)
+
 
 

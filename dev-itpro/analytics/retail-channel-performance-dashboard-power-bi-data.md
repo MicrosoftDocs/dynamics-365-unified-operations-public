@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail Channel Performance Power BI content
@@ -85,5 +85,6 @@ See also
 [Power BI integration](power-bi-integration.md)
 
 [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
+
 
 

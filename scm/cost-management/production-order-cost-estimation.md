@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Production order cost estimation
@@ -66,6 +66,7 @@ A cost estimate also provides the following information:
 -   Comparisons of cost information from previous productions
 -   Budget and forecasting information
 -   Estimates of the production size that is required in order to maintain a particular cost
+
 
 
 

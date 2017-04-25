@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up bank reconciliation matching rules
@@ -55,6 +55,7 @@ On the **Reconciliation matching rules** page, you can select which actions and 
 | **Mark new transactions**          | Create criteria to specify how new transactions should be marked on the **Bank reconciliation workshee**t page when the matching rule is run.                                                                                                                                                                 | **Step 1: Find statement lines** – Add selection fields to specify which bank statement lines should be selected from the **Bank reconciliation worksheet** page. **Step 2: Find Dynamics 365 for Operations bank transactions **– You can add selection criteria to search bank document lines. If no bank document is found, a statement line will be marked as a new transaction.                                                                                                                                                                                                                                             |
 
  
+
 
 
 

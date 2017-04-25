@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Free text invoices in the public sector
@@ -69,6 +69,7 @@ To learn more about billing codes, see [Billing classifications and billing code
 
 ## Where does the interest code on a free text invoice come from?
 The interest code can be set on the billing code, the billing classification, or the posting profile.
+
 
 
 

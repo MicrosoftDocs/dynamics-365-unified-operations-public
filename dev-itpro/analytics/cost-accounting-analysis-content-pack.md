@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost accounting analysis Power BI content
@@ -128,5 +128,6 @@ Here are some helpful links that are related to entities and building Power BI c
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
 -   [Setting up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md)
+
 
 

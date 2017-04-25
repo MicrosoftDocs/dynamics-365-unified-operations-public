@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cash discounts
@@ -77,5 +77,6 @@ An invoice for 1000 USD with cash discount terms of 20D2% is posted on February 
 =
 
  
+
 
 

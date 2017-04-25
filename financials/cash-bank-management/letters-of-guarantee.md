@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Letters of guarantee
@@ -62,6 +62,7 @@ The following table describes the actions that you can perform on a letter of gu
 | Extend              | After you provide the letter of guarantee to the beneficiary, extend the period of validity, if an extension is required. |
 | Cancel              | When the purpose that the letter of guarantee was requested for no longer applies, cancel the agreement.                  |
 | Liquidate           | When the beneficiary presents the letter of guarantee to the bank, cash out the letter of guarantee.                      |
+
 
 
 

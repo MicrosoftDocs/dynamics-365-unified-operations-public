@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure Accounts payable
@@ -149,6 +149,7 @@ The additional setup pages are organized by functionality.
 **Cash and bank management**
 
 -   On the Payment purpose codes page, set up the Central Bank purpose code.
+
 
 
 

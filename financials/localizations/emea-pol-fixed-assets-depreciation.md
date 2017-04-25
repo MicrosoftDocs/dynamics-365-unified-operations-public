@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed assets depreciation for Poland
@@ -112,5 +112,6 @@ Legal entities in Poland can link fixed assets to depreciation groups. Deprecia
 </table>
 
  
+
 
 

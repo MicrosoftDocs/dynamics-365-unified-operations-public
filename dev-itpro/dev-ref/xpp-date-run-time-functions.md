@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ date run-time functions
@@ -606,5 +606,6 @@ The year of the specified date.
 ### Remarks
 
     year(0221998); //Returns the value 1998.
+
 
 

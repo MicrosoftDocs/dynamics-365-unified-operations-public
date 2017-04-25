@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Upgrade budget planning
@@ -165,6 +165,7 @@ Several data entities have been added to enable rapid implementation of Budget p
 -   Budget plan priorities
 -   Budget plan columns
 -   Budget plan layout elements
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: List Page form pattern
@@ -145,5 +145,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![AX 2012 example](./media/listpage3-1024x671.png)](./media/listpage3.png)
+
 
 

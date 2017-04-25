@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed asset depreciation for Japan FAQ
@@ -144,5 +144,6 @@ You can import the following schedules to recalculate the depreciation and servi
 -   Years passed schedule
 
 The depreciation rate schedule that you import depends on the type of depreciation method that you use for a fixed asset.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure the code upgrade service in Lifecycle Services
@@ -82,6 +82,7 @@ For more information about how to identify which application version you have, s
 4.  The code upgrade service creates a new branch and checks in the upgraded code to your VSTS project. After the upgrade process is complete, your code will exist in a new branch under the **Releases** folder. The branch name is suffixed with the date and time of the upgrade. 
 
 [![codeupgradebranch](./media/codeupgradebranch-300x192.png)](./media/codeupgradebranch.png)
+
 
 
 

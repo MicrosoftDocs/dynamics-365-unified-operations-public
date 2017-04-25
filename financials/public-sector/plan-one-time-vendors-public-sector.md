@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Plan for one-time vendors in the public sector
@@ -109,5 +109,6 @@ See also
 [One-time vendors in the public sector](one-time-vendors-public-sector.md)
 
 [Accounts payable in the public sector](accounts-payable-public-sector.md)
+
 
 

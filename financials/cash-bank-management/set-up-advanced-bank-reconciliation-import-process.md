@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up the advanced bank reconciliation import process
@@ -181,5 +181,6 @@ The final step is to test that you can import your bank statement.
 8.  Click **OK**.
 
 If the import is successful, you will receive a message that states that your statement was imported. If the import wasn't successful, in the **Data management** workspace, in the **Job history** section, find the job. Click **Execution details** for the job to open the **Execution summary** page, and then click **View execution log** to view the import errors.
+
 
 

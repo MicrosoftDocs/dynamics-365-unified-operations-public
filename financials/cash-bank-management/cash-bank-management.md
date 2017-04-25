@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cash and bank management home page
@@ -77,4 +77,5 @@ These instruments include deposit slips, checks, bills of exchange, and promisso
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Scenario: Use one customer payment to settle multiple invoice that span multiple discount periods](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
 

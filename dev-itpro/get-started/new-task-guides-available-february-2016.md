@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: New task guides (February 2016)
@@ -732,5 +732,6 @@ See also
 [New or updated Task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
+
 
 

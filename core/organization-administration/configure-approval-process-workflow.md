@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure an approval process in a workflow
@@ -171,6 +171,7 @@ An approval process consists of approval steps. Complete the following procedure
 1.  In the workflow editor, double-click the approval process. The workflow editor displays the steps of the approval process.
 2.  To add an approval step, drag the step from the **Workflow elements** area to the canvas.
 3.  To configure an approval step, see [Configure an approval step](configure-approval-step-workflow.md).
+
 
 
 

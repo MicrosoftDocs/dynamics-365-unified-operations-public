@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up technical support for Dynamics 365 for Operations
@@ -168,5 +168,6 @@ When you deploy Dynamics AX from Microsoft Dynamics Lifecycle Services (LCS), n
 
 ## Prevent users from creating issues from the AX client
 By default, the System User role has the privilege, *SysLCSCPSIssueEntry* assigned. This privilege controls access to the **Contact your support team** menu item on the help menu. If you want to prevent users from being able to create and submit issues from the AX client, remove this privilege from the System User role.
+
 
 

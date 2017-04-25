@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Modify row definition cells
@@ -529,5 +529,6 @@ See also
 --------
 
 [Financial reporting](financial-reporting-intro.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Segmented entry control migration guidance
@@ -928,6 +928,7 @@ See also
 [Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
 [Segmented Entry control migration](segmented-entry-control-conversion.md)
+
 
 
 

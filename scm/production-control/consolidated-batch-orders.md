@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Consolidated batch orders
@@ -47,6 +47,7 @@ A consolidated batch order can contain any combination of the following orders:
 -   Multiple bulk orders and multiple packed orders
 -   Multiple bulk orders and a single packed order
 -   Only packed orders
+
 
 
 

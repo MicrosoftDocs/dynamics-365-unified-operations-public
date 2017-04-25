@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Export and import a model
@@ -66,6 +66,7 @@ If you install a model on a development environment that contains customization
 2.  In the dialog box, select the model to check for conflicts. This is the model that contains customizations to elements in the newly installed baseline model.
 3.  Click **Create project**. A project is generated that contains only the elements in that model that have conflicts. [![AddUpdate\_MetaHotfix](./media/addupdate_metahotfix.png)](./media/addupdate_metahotfix.png)
 4.  Open the designer for the conflicting element to view and resolve conflicts by using the tools that are provided. For an introduction to conflict resolution tools that are available in a Dynamics 365 for Operations development environment, see the [Resolve conflicts using Visual Studio tools](https://mix.office.com/watch/1rl75ei2cs6d7) Microsoft Office Mix.
+
 
 
 

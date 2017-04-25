@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Posting inventory main accounts by site
@@ -50,5 +50,6 @@ Organizations that stock more than 100 inventory items and also maintain several
 | 15085        | Raw materials | Site 2 | 3,299,398 |
 
 By setting up main accounts for inventory values by site, you can post inventory transactions, such as inventory journals, sales orders, purchase orders, production journals, and project item journals, for each site.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Simple Details form pattern
@@ -162,6 +162,7 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   Investigate whether Simple Details forms that show a small amount of related content should have a different presentation than a full-page form.
+
 
 
 

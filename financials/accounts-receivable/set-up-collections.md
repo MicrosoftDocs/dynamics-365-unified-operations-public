@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up Credit and collections
@@ -96,5 +96,6 @@ On the **Credit and Collections** FastTab for a customer, in the **Collections c
 Set up email addresses for salespeople if you want to send email messages to salespeople from the **Collections** page. Set up an email address for each sales representative in each commission sales group. The sales representative who has the **Contact** option selected is the default salesperson that email messages are sent to. 
 
 If a sales representative isn't specified, the primary salesperson for the customer organization is used. If a primary salesperson isn't specified, email messages are sent to the first salesperson who is listed on the page.
+
 
 

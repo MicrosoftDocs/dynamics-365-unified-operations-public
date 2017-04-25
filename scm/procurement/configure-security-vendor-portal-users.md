@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Vendor portal user security
@@ -53,5 +53,6 @@ See also
 --------
 
 [Vendor collaboration](collaborate-vendors-vendor-portal.md)
+
 
 

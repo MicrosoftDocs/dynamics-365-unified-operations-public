@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: System requirements
@@ -134,5 +134,6 @@ See also
 --------
 
 [Get an evaluation copy of Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+
 
 

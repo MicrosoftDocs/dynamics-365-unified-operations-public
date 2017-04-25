@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Operator precedence
@@ -59,6 +59,7 @@ Operators on the same line have equal precedence. If there is more than one of t
 [Arithmetic Operators](http://msdn.microsoft.com/library/cffbc613-3875-4520-9dea-046dc99aab99(AX.60).aspx)
 
 [Relational Operators](http://msdn.microsoft.com/library/702af366-4d46-445e-bd4b-722c9845199f(AX.60).aspx)
+
 
 
 

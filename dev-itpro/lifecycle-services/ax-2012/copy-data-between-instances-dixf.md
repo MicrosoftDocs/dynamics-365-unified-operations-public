@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Copy data between Dynamics AX instances (AX 2012)
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Copy data between Dynamics AX instances (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 
@@ -95,5 +95,6 @@ The following diagram illustrates the path that data takes during the export and
 
 ## Validate the data in target
 Verify that the customer data from the original instance is now displayed in the **All Customers** form. Click **Accounts receivable** &gt; **Common** &gt; **Customer** &gt; **All Customers **form.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Bank statement and payment reconciliation overview for the EU
@@ -66,4 +66,5 @@ In addition to a bank statement, banks can provide specific messages, containing
 -   (DNK) BetalingsserviceBasis-returformat – Return format for customer Betalingsservice export format
 -   [Import payment formats for Sweden](emea-swe-payment-formats-import.md) - Bankgirot Autogiro returns
 -   (SWE) BankGirot return – Vendor payments return format, which corresponds to Bankgirot export format
+
 

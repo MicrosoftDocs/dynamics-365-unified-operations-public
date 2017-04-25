@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Consolidation account groups and additional consolidation accounts
@@ -54,6 +54,7 @@ You can find additional consolidation accounts in the **Setup** area of the **Co
 -   **SAT level** – This field is used to report account statements to the Mexican tax authorities. 
 
 When you've finished creating your consolidation account groups and additional consolidation accounts, you can select the group in the Consolidate online process.
+
 
 
 

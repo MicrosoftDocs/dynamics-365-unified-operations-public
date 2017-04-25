@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Metadata search in Visual Studio
@@ -103,5 +103,6 @@ You can get help about using filter and filter syntax by opening the drop-down 
 | type:formbuttoncontrol property:text=                                                     | Finds all form Button Controls that have **empty** text properties.                                                                          |
 
      
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Personalize the user experience
@@ -118,5 +118,6 @@ It is possible to personalize a page and share it with other users by simply ex
 **Users:** This is where you can decide for each user if they can perform either implicit or explicit personalization. You can also decide if each user can perform implicit or explicit personalization on a specific form. Lastly, you can import or export or delete a personalization for each user. 
 
 **Note:** In its initial release, personalization administration allows only management on a user by user basis.
+
 
 

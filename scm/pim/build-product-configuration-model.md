@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Build a product configuration model
@@ -162,5 +162,6 @@ The purpose of the configuration is to create a distinct variant of the product 
 ### Multiple sites and intercompany
 
 If configuration will be done at a site, or even a company, that differs from the site or company where production will occur, the BOM and the route will be created for and put at the supplier site in the supplying company. The product variant will be released in all companies that participate in the supply chain.
+
 
 

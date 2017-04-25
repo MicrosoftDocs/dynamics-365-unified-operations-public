@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: View financial reports
@@ -93,5 +93,6 @@ See also
 --------
 
 [Financial reporting for Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+
 
 

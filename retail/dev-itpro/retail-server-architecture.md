@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail Server architecture
@@ -94,5 +94,6 @@ Retail Server uses the following concepts.
 </table>
 
 You can create your own entity type or complex type, extend an existing controller, add a new controller, and customize the metadata. If you customize the commerce runtime, you must also customize various components in Retail Server to expose those changes to your Retail Modern POS clients.
+
 
 

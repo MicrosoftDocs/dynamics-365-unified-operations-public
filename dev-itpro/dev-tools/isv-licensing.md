@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: ISV licensing
@@ -231,6 +231,7 @@ More than one license can be installed at a time. If one of the licenses depends
     However, if a self-signed ISV certificate was used, that certificate must be imported instead of the CA certificate.
 
         certutil -addstore root c:tempisvcert.cer
+
 
 
 

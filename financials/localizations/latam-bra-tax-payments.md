@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Tax payments in Brazil
@@ -161,5 +161,6 @@ When a tax payment is reversed, the status of the original transaction is set to
 
 ## Deleting tax payments
 You can delete tax payments if the voucher number wasn't blank when the payment transaction was posted.
+
 
 

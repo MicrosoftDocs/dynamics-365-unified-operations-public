@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Packing materials and fees
@@ -67,6 +67,7 @@ If your company pays the packaging material fees, do not specify the customer li
 ## Print packaging material weights on invoices
 You can print the packaging material weights on the invoice, and indicate who pays the packaging material fees. The weights are summarized by packaging code.
  
+
 
 
 

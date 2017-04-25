@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dimension entry control subpattern
@@ -68,5 +68,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None.
+
 
 

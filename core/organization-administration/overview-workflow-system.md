@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Workflow system overview
@@ -55,6 +55,7 @@ There are several benefits of using the workflow system in your organization:
 -   **Consistent processes** – You can define how specific documents, such as purchase requisitions and expense reports, are processed. By using the workflow system, you ensure that documents are processed and approved in a consistent and efficient manner.
 -   **Process visibility** – You can track the status, history, and performance metrics of workflow instances. This helps you determine whether changes should be made to the workflow to improve efficiency.
 -   **Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.
+
 
 
 

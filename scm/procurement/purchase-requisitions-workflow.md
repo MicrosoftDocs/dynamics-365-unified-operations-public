@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Purchase requisition workflow
@@ -121,5 +121,6 @@ See also
 [Procurement and sourcing workflows](procurement-sourcing-workflows.md)
 
 [Purchase requisition overview](purchase-requisitions-overview.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Derived financial hierarchies in the public sector
@@ -51,6 +51,7 @@ An organization has an employee wellness program and an employee education progr
 -   **Analyze posted transaction data:** In the filter results, view account numbers and their account and financial dimension details.
 
  
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Inventory journal reports
@@ -50,6 +50,7 @@ To set up a relationship between a specific report and a journal type, on the 
 | Latvia             | Transfer delivery note              | Transfer         | InternalTransferDeliveryNote\_LV        |
 | Latvia             | Counting document report            | Counting         | CountedDocument\_LV                     |
 | Latvia             | Counting list report                | Counting         | Counting list                           |
+
 
 
 

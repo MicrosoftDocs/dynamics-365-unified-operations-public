@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Modeling and aggregate data
@@ -287,5 +287,6 @@ Notice that the KPI details page for the new KPI, **FMTRevenuePerRental** is sho
 [Adding BI to workspaces](add-bi-workspaces.md)
 
 [Adding contextual BI to forms](add-contextual-bi-forms.md)
+
 
 

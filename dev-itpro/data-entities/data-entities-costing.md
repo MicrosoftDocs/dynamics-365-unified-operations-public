@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entities - Costing
@@ -58,5 +58,6 @@ See also
 [Data entities and packages framework](/dynamics365/operations/dev-itpro/data-entities/data-entities-data-packages)
 
 [Data entities ](/dynamics365/operations/dev-itpro/data-entities/data-entities)
+
 
 

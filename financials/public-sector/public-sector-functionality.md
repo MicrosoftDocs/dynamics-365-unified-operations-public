@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Public sector home page
@@ -76,5 +76,6 @@ See also
 --------
 
 [Planning for public sector functionality](plan-public-sector-functionality.md)
+
 
 

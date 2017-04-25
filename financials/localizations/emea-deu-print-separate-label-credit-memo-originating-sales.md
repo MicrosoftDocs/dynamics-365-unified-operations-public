@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Print a separate label for credit memos that originate from sales
@@ -41,6 +41,7 @@ On the **Legal entities** page, you can use the **Print corrective invoice on a
 
 -   If the **Print corrective invoice on a sales memo** option is set to **No**, the label "Gutschrift" will be printed on all credit memos.
 -   If the **Print corrective invoice on a sales memo** option is set to **Yes**, the label "Rechnungskorrektur” will be printed on credit memos from sales orders, free text invoices, and project invoices.
+
 
 
 

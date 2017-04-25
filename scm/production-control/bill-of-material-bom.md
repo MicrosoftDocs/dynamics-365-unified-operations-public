@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Bills of materials and formulas
@@ -120,5 +120,6 @@ Select the **Pegged supply** line type when you want to create a subproduction, 
 Select the **Vendor** line type if the production process uses a subcontractor, and you want a subproduction or purchase order to be created automatically for the subcontractor.  
 
 **Note about subcontracted operations in a BOM:** The service or work that is performed by the subcontractor must be created as service item that is tracked in inventory. You must attach the service item to the parent item as a BOM line. The route must contain an operation that is assigned to the subcontractor's operations resource.
+
 
 

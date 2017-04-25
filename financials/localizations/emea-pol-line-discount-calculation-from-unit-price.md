@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Line discount calculation from the unit price for Poland
@@ -57,6 +57,7 @@ The **Calculation of line discount** parameter affects the following documents:
 -   Sales orders
 -   Purchase orders
 -   Vendor invoices
+
 
 
 

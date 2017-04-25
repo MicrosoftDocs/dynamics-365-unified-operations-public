@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Production process overview
@@ -90,5 +90,6 @@ See also
 [Product configuration models](../pim/product-configuration-models.md)
 
 [Lean manufacturing](lean-manufacturing-overview.md)
+
 
 

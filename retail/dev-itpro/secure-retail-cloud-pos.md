@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Security best practices for Retail Cloud POS in a shared environment
@@ -348,6 +348,7 @@ You can define a list of websites that a store worker (cashier) requires for nor
 -   Bing Maps resources
 -   Media resources
 -   Credit Card Payment acceptance page (optional)
+
 
 
 

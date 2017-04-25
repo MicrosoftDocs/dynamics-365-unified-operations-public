@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Azure ExpressRoute and Dynamics 365 for Operations
@@ -52,6 +52,7 @@ This information is necessary to determine whether a standard or premium offerin
 -   [ExpressRoute technical overview](https://azure.microsoft.com/en-us/documentation/articles/expressroute-introduction/)
 -   [ExpressRoute partners and peering locations](https://azure.microsoft.com/en-us/documentation/articles/expressroute-locations/)
 -   [ExpressRoute pricing](https://azure.microsoft.com/en-us/pricing/details/expressroute/)
+
 
 
 

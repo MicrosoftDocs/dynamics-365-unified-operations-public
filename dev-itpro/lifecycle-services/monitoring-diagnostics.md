@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Monitoring and diagnostics (Lifecycle Services, LCS)
@@ -160,5 +160,6 @@ The Index analysis tool shows aggregated index and table information, based on u
 ### System diagnostics
 
 The System diagnostic tool is a rule-based framework that runs a predefined set of rules against the environment and provides a report about the status of the rules. If failures occur, this tool provides recommendations for addressing the issue. To start the System diagnostics tool, on the LCS project dashboard, click the hamburger icon, and then click **System diagnostic**.
+
 
 

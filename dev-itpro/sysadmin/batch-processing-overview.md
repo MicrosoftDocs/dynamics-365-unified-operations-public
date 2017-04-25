@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Batch processing overview
@@ -50,5 +50,6 @@ After a batch job has been processed, you can view the history. The history incl
 Use batch groups to categorize batch tasks and run them on specific servers. The servers in your environment might have different software installed, or they might be available at different times of the day. Batch groups are used to direct batch tasks to the most appropriate server. Tasks in the same batch job can belong to different batch groups. 
 
 For example, server A is set up to print reports, and server B is set up to send electronic documents. You can use batch groups to make sure that reporting tasks are run on server A and electronic documents are processed by server B.
+
 
 

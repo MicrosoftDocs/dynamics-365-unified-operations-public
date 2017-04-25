@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ data selection and manipulation
@@ -1304,5 +1304,6 @@ You can use the settings that are shown in the last column to explicitly skip or
         }
         insertList.insertDatabase();
     }
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost categories used in production routing
@@ -58,5 +58,6 @@ The cost record for a cost category can be site-specific or company-wide. To mak
 A routing operation generally inherits the cost categories that are assigned to the operations resource or master operation. When a production order is created, the routing operations in the production route reflect the selected route version. You can override the cost categories that are assigned to the operations in the production route. 
 
 Some types of production work can apply to project time estimates and reporting. In this case, a cost category is required for production and project purposes. You must define additional project-related information when a cost category is flagged for use in projects.
+
 
 

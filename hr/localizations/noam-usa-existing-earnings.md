@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Process existing earnings
@@ -76,5 +76,6 @@ See also
 --------
 
 [Earnings and the earnings generation process Q&A](noam-usa-earnings-generation-process.md)
+
 
 

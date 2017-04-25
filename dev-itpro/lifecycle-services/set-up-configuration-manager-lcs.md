@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up Configuration manager
@@ -148,5 +148,6 @@ Complete the following procedure in the environment that you intend to export a 
 
 ## Next steps
 The environment is now ready for you to copy and manage configurations. For more information, see [Copy a configuration (Lifecycle Services, LCS)](copy-configuration-lcs.md).
+
 
 

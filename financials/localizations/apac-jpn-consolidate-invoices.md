@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Consolidated invoices for Japan
@@ -65,6 +65,7 @@ Invoices are consolidated each month, based on the consolidation day that you sp
 | INV002         | May 10, 2012 | May 10, 2012      | June 29, 2012 |
 | INV003         | May 18, 2012 | June 10, 2012     | July 31, 2012 |
 | INV004         | June 8, 2012 | June 10, 2012     | July 31, 2012 |
+
 
 
 

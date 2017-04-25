@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Overview of moving to the latest update of Dynamics 365 for Operations
@@ -154,5 +154,6 @@ Execute the data upgrade process on a copy of your target database – if alread
 
 ## Scenario 4: Upgrade to the most current platform only
 If you're running an environment that doesn't contain any customization of the platform AOT models (Application Platform, Application Foundation, Directory and Test Essentials), you can do an in-place update of your platform, without upgrading to a new environment. For more information about this process, see: [Upgrade Dynamics 365 for Operations to the latest platform update](upgrade-latest-platform-update.md). If you only upgrade your platform, there is no need to do code upgrade (Scenario 2 above) or run data upgrade scripts.
+
 
 

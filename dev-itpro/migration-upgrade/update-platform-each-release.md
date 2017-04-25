@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Upgrade the Dynamics AX platform to the August 2016 release
@@ -187,5 +187,6 @@ See also
 --------
 
 [Process for upgrading to the latest Dynamics AX update](../migration-upgrade/upgrade-latest-update.md)
+
 
 

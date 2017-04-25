@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Price simulation
@@ -148,5 +148,6 @@ You run a price simulation and apply a 10-percent total discount to the BR-12 un
 | New total contribution ratio                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38.93%   |
 
 The price simulation affects only the line that it's applied to and reduces the total for that line.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Aggregate data entities report
@@ -41,5 +41,6 @@ Aggregate measurements can be used to define data entities, called *aggregate d
 
 ## To view the report
 The [Aggregate data entities report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)lists each aggregate date entity that is available, along with the data source, table group, entity category, and fields associated with the entity.
+
 
 

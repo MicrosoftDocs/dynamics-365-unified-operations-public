@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up and generate positive pay files
@@ -165,5 +165,6 @@ After the checks that are listed in a positive pay file have been paid, you rece
 
 ## Recall a positive pay file
 If you must change a positive pay file, you can recall it. On the **Positive pay file summary** page, select a positive pay file that has a status of **Created**, and then select the **Recall** action. For each check in the positive pay file, the field that indicates whether that check has been included in a positive pay file is reset. You can then create a new positive pay file that includes the check that was recalled.
+
 
 

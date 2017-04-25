@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Delivery schedules
@@ -60,5 +60,6 @@ Document printouts of orders and quotations that have a delivery schedule show 
 -   Browse list pages and reports
 
 When you confirm sales quotations, the resulting sales orders show the whole delivery schedule, even the order lines that have multiple deliveries. In addition, the whole delivery schedule is shown on all the major pages, such as sales orders, sales quotations, and purchase orders.
+
 
 

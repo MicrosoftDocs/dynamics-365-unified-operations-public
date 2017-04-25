@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: R Classes
@@ -30195,5 +30195,6 @@ The following example shows a new instance of the RunAsPermission class. The Sys
         _userId = _userInfo.Id; 
         _perm = new RunAsPermission(_userId); 
     }
+
 
 

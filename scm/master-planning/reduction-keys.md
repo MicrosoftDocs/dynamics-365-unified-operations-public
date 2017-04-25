@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Reduction keys
@@ -136,5 +136,6 @@ See also
 --------
 
 [Master plans](master-plans.md)
+
 
 

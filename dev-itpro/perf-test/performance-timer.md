@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Performance timer
@@ -57,5 +57,6 @@ For more information, click a link. In the next screen, you can see how many SQL
 [![3\_Timer](./media/3_timer.png)](./media/3_timer.png) 
 
 This information can help you to understand what to trace and where to start troubleshooting. In addition to this topic, you can watch this video for more information: [PERF The Performance Timer and Other Tools](https://mix.office.com/watch/ij5cqidra5q3)
+
 
 

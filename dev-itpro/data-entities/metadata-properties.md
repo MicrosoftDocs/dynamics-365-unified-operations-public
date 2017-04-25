@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Metadata properties - ReadOnly, AllowEdit, Mandatory
@@ -190,6 +190,7 @@ This is enforced for all consumers (X++, OData, and so on). <strong>Important:</
 </tr>
 </tbody>
 </table>
+
 
 
 

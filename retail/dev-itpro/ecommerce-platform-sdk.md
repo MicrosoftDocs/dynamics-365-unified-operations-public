@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: e-Commerce Platform SDK
@@ -97,3 +97,4 @@ The E-Commerce platform uses OpenID as the mechanism for authentication. You can
 
 2.  The Retail Shared Parameters-&gt; Open ID Providers form can be used to register additional providers.
 3.  Run distribution schedule 1110.
+

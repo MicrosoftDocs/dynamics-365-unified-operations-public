@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: BOM designer functionality
@@ -121,6 +121,7 @@ Click **Setup** to customize the information that is shown in the tree view of t
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | BOM         | Use the check boxes to select the criteria that are shown in the tree structure. The BOM designer displays the selected criteria at the bottom of both tabs. |
 | Route       | Use the check boxes to select the criteria that are shown for the routes.                                                                                    |
+
 
 
 

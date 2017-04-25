@@ -55,3 +55,4 @@ Additionally, two unique reports that take advantage of hierarchical grid struct
 -   **Pricing and discount management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports**
 
+

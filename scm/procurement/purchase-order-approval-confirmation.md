@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Approve and confirm purchase orders
@@ -89,5 +89,6 @@ See also
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
 [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
 
 

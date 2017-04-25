@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Determine the BOM version
@@ -44,6 +44,7 @@ The site dimension is always known and is stated on the demand transaction. The 
 -   If there is no general BOM version to use, the demand explosion stops at this point.
 
 A valid BOM version, whether site-specific or general, must meet the required criteria for date and quantity.
+
 
 
 

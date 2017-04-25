@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Models
@@ -79,5 +79,6 @@ See also
 [Developer home page](developer-home-page.md)
 
 [Distribution of models: How to export and import model files](models-export-import.md)
+
 
 

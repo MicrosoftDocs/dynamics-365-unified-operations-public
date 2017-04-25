@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure Power BI integration for workspaces
@@ -126,5 +126,6 @@ Users will now see the Power BI control in specific workspaces. (The control mus
 # See also
 
 [Sign up for Power BI service](https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-sign-up-for-power-bi-service/)
+
 
 

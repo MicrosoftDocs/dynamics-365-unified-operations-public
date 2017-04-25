@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: System tables
@@ -3650,5 +3650,6 @@ Use of this table could lead to an Elevation of Privileges attack or a Denial of
 ### Inheritance Hierarchy
 
 [xRecord Class](x-classes.md#class-xrecord) [Common Table](#common) [VSAssembly Table](#vsassembly)
+
 
 

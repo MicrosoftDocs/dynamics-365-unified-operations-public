@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: OData
@@ -117,6 +117,7 @@ The OData protocol supports many similar filtering and querying options on entit
 
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
+
 
 
 

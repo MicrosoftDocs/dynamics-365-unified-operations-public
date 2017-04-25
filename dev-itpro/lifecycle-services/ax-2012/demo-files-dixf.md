@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Demo files for the Data import/export framework
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Demo files for the Data import/export framework
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 
@@ -1622,6 +1622,7 @@ The following files are available in the versions of Data Import/Export Framewor
 | ProdParametersEntity              | WorkTimeLineEntity                |
 | ProductEntity                     | WorkTimeTableEntity               |
 | ProductMasterEntity               | WrkCtrParametersEntity            |
+
 
 
 

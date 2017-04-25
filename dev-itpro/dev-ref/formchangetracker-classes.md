@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: F Classes - FormChangeTracker to FormControlEventArgs
@@ -11919,6 +11919,7 @@ cancel
 
 | Method | Description |
 |--------|-------------|
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Billing classifications and billing codes in the public sector
@@ -90,6 +90,7 @@ When billing codes need to be updated, you don’t need to create new billing co
 
 ## Can I assign the same billing code to more than one billing classification?
 No, but there’s a way to get the results you need anyway. Let’s say that your organization uses a separate billing classification for each department. Three of the departments need a billing code for license agreements. You can’t assign a single “License agreement” billing code to three billing classifications, but you can create a set of three identical billing codes, and assign one to each department.
+
 
 
 

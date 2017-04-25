@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Nets import format
@@ -56,5 +56,6 @@ OCR, Avtalegiro, and eInvoice transactions should be imported and settled based 
 
 ## eInvoice and AvtaleGiro enrollment import
 You receive a message to update payment defaults values for the corresponding customer account, specified in the **Method of payment** and **Payment specification** fields. This defines the characteristics of the export messages, generated for this customer account in the future. A set of rules intended to be executed while importing the file should be specified on the **Import file **page and can be defined on the **eInvoice integration types** page. In different cases, you can apply different integration types. Specific rules should be specified on the **eInvoice Payment mode change** page. The rules can be specified based on message **Status**, such as Active for subscription messages, Deleted for subscription cancelations, and Warning if the payer requires written notification attributes. This requires payment specifications to be defined for the selected method of payment. On the **eInvoice enrollment and answer** page, you can view imported eInvoice messages. To confirm that enrollment messages are received, you can generate answer messages when enrollments are ready for posting. Post the enrollments for the customer account updates to take effect. For AvtaleGiro messages, payment mode changes are applied during the file import process.
+
 
 

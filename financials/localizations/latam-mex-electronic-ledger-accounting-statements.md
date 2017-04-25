@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Electronic ledger accounting statements
@@ -184,6 +184,7 @@ Click **General ledger** &gt; **Inquire and reports** &gt; **Ledger reports** &g
 </tr>
 </tbody>
 </table>
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Recalculate replacement costs and insured values for fixed asset groups
@@ -80,6 +80,7 @@ The next day, your manager informs you that computers decreased 8 percent inste
 
 > [!NOTE]  
 > You cannot reverse the -10 factor by entering a factor of positive 10 (or a factor of 2, the difference between -10 and -8), because the amounts will not be calculated as you intend. 
+
 
 
 

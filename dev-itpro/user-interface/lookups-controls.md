@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Lookup controls
@@ -119,5 +119,6 @@ Note that the selectTarget and callerFormControl will be set automatically if th
 ### Creating a slider dialog (instead of a lookup form) when the lookup button is used
 
 Lookup controls should open lookup forms when the lookup button is used (not slider dialogs or other kinds of forms).  The first reason for this is product consistency. The second and more important reason is that opening a slider dialog from a lookup is incompatible with the new type-ahead feature in lookups.
+
 
 

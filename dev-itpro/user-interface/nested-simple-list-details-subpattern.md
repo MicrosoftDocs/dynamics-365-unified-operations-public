@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Nested Simple List and Details subpattern
@@ -126,5 +126,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![AX 2012 example](./media/nestedsimplelistanddetails3.png)](./media/nestedsimplelistanddetails3.png)
+
 
 

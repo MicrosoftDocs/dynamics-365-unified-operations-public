@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Three-way matching policies
@@ -148,5 +148,6 @@ If approval is required for invoices to be posted with invoice matching discrepa
 
 
 For more information, see [Accounts payable invoice matching](accounts-payable-invoice-matching.md).
+
 
 

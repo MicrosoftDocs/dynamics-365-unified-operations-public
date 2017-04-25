@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Block a transaction using triggers
@@ -129,6 +129,7 @@ This topic shows how you can block an invoice or credit transaction.
         }
 
 12. Click **Save**.
+
 
 
 

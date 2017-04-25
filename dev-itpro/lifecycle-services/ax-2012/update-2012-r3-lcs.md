@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Updates for Dynamics AX 2012 R3
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Updates for Dynamics AX 2012 R3
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 
@@ -46,6 +46,7 @@ The Updates page on Microsoft Dynamics Lifecycle Services hosts the update insta
 For detailed instructions see:
 -   [Apply updates to database, AOS, and clients](http://technet.microsoft.com/library/5aa25046-422c-4bb7-8fae-5901b3bd426c(AX.60).aspx)
 -   [Include cumulative updates and hotfixes in a new installation (slipstreaming)](http://technet.microsoft.com/library/bda5bb5d-78a2-491d-b2e4-713f1ef08a20(AX.60).aspx)
+
 
 
 

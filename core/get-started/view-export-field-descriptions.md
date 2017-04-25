@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: View and export field descriptions
@@ -106,6 +106,7 @@ See also
 --------
 
 [Customize field help](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
 
 
 

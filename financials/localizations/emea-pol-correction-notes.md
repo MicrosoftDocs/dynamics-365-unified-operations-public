@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Correction notes
@@ -49,6 +49,7 @@ If a vendor issues a sales document to a company, but makes a mistake about the 
 | Posted          | A selected option indicates that the selected correction note has been posted.                                                                                                                                                                                           |
 | Original text   | Enter the original text from the invoice that must be corrected.                                                                                                                                                                                                         |
 | Corrected text  | Enter the correct text for the invoice.                                                                                                                                                                                                                                  |
+
 
 
 

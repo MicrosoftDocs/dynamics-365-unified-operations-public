@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Financial dimensions
@@ -78,6 +78,7 @@ The Text translation page allows you to enter text to be displayed in different 
 **Legal entity overrides** 
 
 Not all dimensions are valid for all legal entities and some may only be relevant for a specific time period. In this scenario the Legal entity overrides section can be used to identify which companies the dimension should be suspended for, who the owner is and the time period the dimension is active.
+
 
 
 

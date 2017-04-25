@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Keyboard shortcuts
@@ -208,5 +208,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Operati
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 
  
+
 
 

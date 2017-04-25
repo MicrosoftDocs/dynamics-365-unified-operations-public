@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up security for the Cost accounting analysis Power BI content
@@ -66,5 +66,6 @@ We assume that your organization wants to restrict data access. If, for some rea
 
 ## Additional resources
 To learn more about Power BI row-level security, see [Manage security on your model in Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
 
 

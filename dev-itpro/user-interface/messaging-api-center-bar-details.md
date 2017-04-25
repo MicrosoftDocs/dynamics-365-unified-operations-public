@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Message center, message bar, and message details API
@@ -77,5 +77,6 @@ See also
 --------
 
 [User interface development home page](user-interface-development-home-page.md)
+
 
 

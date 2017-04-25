@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail Store Scale Unit configuration and installation
@@ -239,6 +239,7 @@ Use Control Panel in Microsoft Windows to uninstall Retail Store system.
 2.  In Control Panel, select **Programs** &gt; **Uninstall a program**.
 3.  In the **Programs and Features** window, select **Microsoft Dynamics 365 for Operations for Retail Store system**, and then, above the list of programs, select **Uninstall**.
 4.  Wait for the uninstaller to finish removing the program.
+
 
 
 

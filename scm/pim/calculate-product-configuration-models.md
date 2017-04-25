@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Calculations for product configuration models FAQ
@@ -106,6 +106,7 @@ Calculations aren't included in the validation. You must test the product config
 
 1.  Click **Product information management** &gt; **Common** &gt; **Product configuration models**.
 2.  Select a product configuration model, and then, on the Action Pane, in the **Run** group, click **Test**.
+
 
 
 

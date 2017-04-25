@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Audit policy violations and cases
@@ -64,5 +64,6 @@ Here are some other ways that an audit policy uses the document selection date
 
 
 For more information, see [Audit policy rules](audit-policy-rules.md)
+
 
 

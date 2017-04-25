@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Country/region codes and configuration keys
@@ -108,5 +108,6 @@ The behavior of configuration keys and a country/region that are applied at the 
     |_F3 (UK inferred)
 
     |_F4 (UK inferred)
+
 
 

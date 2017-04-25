@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Prepayment invoices vs. prepayments
@@ -67,6 +67,7 @@ Prepayment invoices are a common business practice. A vendor issues prepayment 
 3.  The Accounts payable coordinator records the prepayment invoice against the purchase order, and then the prepayment invoice is paid.
 4.  After the vendor delivers the goods or services, and the related vendor invoices have been received, the Accounts payable coordinator applies the prepayment amount that was already paid against the invoice.
 5.  The Accounts payable coordinator pays and settles the remaining amount of the invoice.
+
 
 
 

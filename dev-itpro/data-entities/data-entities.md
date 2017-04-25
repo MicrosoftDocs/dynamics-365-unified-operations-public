@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entities
@@ -168,5 +168,6 @@ When you compete the wizard, it produces the following two items:
 #### Building an entity from a table
 
 You can quickly create an entity from a table, and then customize the properties, data sources, and fields later. Right-click the table, and then select **Addins** &gt; **Create data entity**. [![Over5](./media/over5.png)](./media/over5.png)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: VAT statements details for Italy
@@ -134,6 +134,7 @@ Per Italian legislation, rules apply to settlement periods. For example, after 
 |-----------------|---------------------------------------------------------------------------------------------------|
 | **Closed**      | Indicates if the Italian sales tax book for the period has been updated and automatically closed. |
 | **Last period** | Select this option if the period is the last period in a sales tax year.                          |
+
 
 
 

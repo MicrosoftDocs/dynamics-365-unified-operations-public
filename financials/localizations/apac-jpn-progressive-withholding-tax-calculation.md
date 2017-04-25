@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Progressive withholding tax
@@ -132,6 +132,7 @@ In this example, withholding tax is calculated by using an **Origin of percentag
 | 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
 | 2,001–0                 | 20 percent | 2,545.00                                        | 509.00          |
 |                         |            | **Total WHT amount**                            | **759.00**      |
+
 
 
 

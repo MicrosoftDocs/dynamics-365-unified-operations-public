@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Expression constraints and table constraints in product configuration models
@@ -255,5 +255,6 @@ See also
 [Create an expression constraint (Task guide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
 [Add a calculation to a product configuration model (Task guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Half year depreciation on fixed asset disposal for the Czech Republic
@@ -61,6 +61,7 @@ After you set up the depreciation methods, you can apply half the yearly depreci
 8.  Optional: Select the **Summarize depreciation** check box to summarize the calculated depreciation for each fixed asset or for each value model.
 9.  Click **OK** to close the **Depreciation proposal** page.
 10. Post the journal.
+
 
 
 

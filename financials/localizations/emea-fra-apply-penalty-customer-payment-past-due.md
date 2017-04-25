@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Penalties for past due customer payments in France
@@ -55,6 +55,7 @@ After you set up the parameter to print lump sum recovery text, it is printed on
 -   Free text invoices
 -   Customer proforma invoices
 -   Customer credit notes
+
 
 
 

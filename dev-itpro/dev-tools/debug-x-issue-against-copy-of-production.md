@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Debug X++ against a copy of a production database
@@ -93,5 +93,6 @@ Next, the developer edits the web.config file for Application Object Server (AOS
 4.  Debug the issue.
 
 After the developer has finished, the system administrator can remove "devtempuser" from the sandbox database. This step prevents the developer from having permanent access to the sandbox database.
+
 
 

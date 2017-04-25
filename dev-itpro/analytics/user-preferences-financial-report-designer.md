@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: User preferences in financial report designer
@@ -83,5 +83,6 @@ See also
 --------
 
 [Financial reporting](financial-reporting-intro.md)
+
 
 

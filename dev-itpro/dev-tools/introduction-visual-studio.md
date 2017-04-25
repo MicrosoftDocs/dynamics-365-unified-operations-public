@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Development tools for Dynamics 365 for Operations
@@ -123,6 +123,7 @@ The code in a solution is stored as XML. The following instructions show you how
 3.  On the **View** menu, click **Error List** to see the list of best-practice warnings. We've deliberately left some warnings in the build to demonstrate this feature.
 4.  Double-click any warning message to view the code or resource that caused the warning.
 5.  In the **Window** menu, click **Close All Documents** to close all open documents.
+
 
 
 

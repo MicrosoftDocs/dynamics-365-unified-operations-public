@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed asset disposal posting accounts
@@ -44,6 +44,7 @@ For both transaction types, the ledger account is credited for the disposal valu
 Click Disposal and then click Sale or Scrap, and then set up detailed accounts to reverse the net book value of the fixed asset. You can also enter information in the Post value and Sales value type fields in the Disposal parameters page. 
 
 The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only. However, when the sale of an asset is exceeds the net book value of the low-value pool, the net book value is reduced to zero.
+
 
 
 

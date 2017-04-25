@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ language reference
@@ -60,4 +60,5 @@ The X++ language programming guide is divided into these sections:
 # See also
 + [X++ Syntax](xpp-syntax.md)
 + [X++ and C# Comparison](xpp-cs-comparison.md)
+
 

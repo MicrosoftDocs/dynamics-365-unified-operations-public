@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up benefit accrual plans
@@ -177,5 +177,6 @@ If the service date basis is set to **Seniority date**, make sure that a seniori
 
 ## Next step
 The next step is to set up payroll taxes. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md).
+
 
 

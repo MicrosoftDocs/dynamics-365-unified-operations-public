@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fiscal documents and fiscal document framework for Brazil
@@ -72,6 +72,7 @@ After a fiscal document is posted, the user can see the following information.
 | **Fiscal document texts**         | View the fiscal document texts that are attached to the fiscal document.                                                                                                                                                                                                                                                                                             |
 | **Fiscal reference**              | View the fiscal references that are attached to the fiscal document.                                                                                                                                                                                                                                                                                                 |
 | **Import declaration**            | View the import declaration information for the fiscal document.                                                                                                                                                                                                                                                                                                     |
+
 
 
 

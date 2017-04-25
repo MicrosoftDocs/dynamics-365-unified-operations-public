@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Organization administration home page
@@ -85,6 +85,7 @@ Number sequences
 -   [Change the banner or logo](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (Task guide)
 -   [About date/time data and time zones](date-time-zones.md)
 -   [Record templates](record-templates.md)
+
 
 
 

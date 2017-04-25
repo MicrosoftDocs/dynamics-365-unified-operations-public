@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Kanban transfer board support for barcode scanners
@@ -191,6 +191,7 @@ The status of the selected job and the status of any pegged jobs for event kanba
 </tr>
 </tbody>
 </table>
+
 
 
 

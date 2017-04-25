@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Microsoft FastTrack for Dynamics 365 overview
@@ -293,5 +293,6 @@ The Servicing tech talk is designed to provide guidance on the servicing options
 -   Cloud powered support
 
 The typical format is a one-hour Skype call. The recommended attendees include project managers and technical resources from customer and partner teams.
+
 
 

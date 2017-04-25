@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Apply country/region context
@@ -92,5 +92,6 @@ See also
 --------
 
 [ISO codes](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Define and maintain channel clients, registers, and hardware stations
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Define and maintain channel clients, registers, and hardware stations
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic covers how to connect peripherals to your Retail POS.
@@ -163,5 +163,6 @@ Additional activation-related information includes the worker who changed the ac
 ### Client data synchronization
 
 All changes to a POS client, except changes in the device activation status, must be synced to the channel database to take effect. To sync changes to the channel database, navigate to **Retail and commerce** &gt; **Retail IT** &gt; **Distribution schedule**, and run the required distribution schedule. For client changes, you should run the “Registers” and “Channel configuration” distribution schedules.
+
 
 

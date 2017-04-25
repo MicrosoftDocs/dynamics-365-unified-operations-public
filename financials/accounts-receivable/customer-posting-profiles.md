@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customer posting profiles
@@ -145,6 +145,7 @@ Specify the following values to set up your posting profile:
 | **Interest**          | Select this toggle if interest should be calculated on outstanding balances for customer accounts that use this profile. If this toggle is cleared, interest will not be calculated for these customers.                                           |
 | **Collection letter** | Select this toggle if collection letters should be generated for customer accounts that use this profile. If this toggle is cleared, collection letters will not be generated for these customers.                                                 |
 | **Close**             | Select a posting profile to change to when transactions that have this posting profile are closed. A transaction is regarded as closed when it has been settled in full.                                                                           |
+
 
 
 

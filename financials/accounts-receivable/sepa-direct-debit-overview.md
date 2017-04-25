@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: SEPA direct debit overview
@@ -85,6 +85,7 @@ You can generate electronic payment files for SEPA direct debits in the followin
 
 ## How do refunds and returns work with SEPA direct debits?
 Under both SEPA Direct Debit schemes, customers have certain rights to refunds. The customer is allowed to recall any authorized transactions during an eight-week period after the due date, without having to give a reason. In the case of unauthorized transactions, the period is extended to 13 months after the due date. Reversals of any payments that have been made are accomplished manually by using the Cancel payment button in the Customer transactions page.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Budgeting in the public sector
@@ -67,5 +67,6 @@ See also
 [Accounts receivable in the public sector](accounts-receivable-public-sector.md)
 
 [General ledger in the public sector](general-ledger-public-sector.md)
+
 
 

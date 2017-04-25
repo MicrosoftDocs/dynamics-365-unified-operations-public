@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Install report design templates
@@ -78,6 +78,7 @@ The report designs have been bundled into a model file and posted to Microsoft D
         this.parmReportName(ssrsReportStr(CustAccountStatementExt, DesignName));
 
     At this point, you should be able to access the modern report designs from the application. Be sure to perform thorough test validations on these design templates before you deploy to production environments.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Business Activity Statement (BAS)
@@ -97,4 +97,5 @@ The following list provides an overview of the process to calculate GST and prep
 </tr>
 </tbody>
 </table>
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure app field names in Warehousing app
@@ -150,5 +150,6 @@ See also
 --------
 
 [Install and configure Microsoft Dynamics 365 for Operations – Warehousing](install-configure-warehousing-app.md)
+
 
 

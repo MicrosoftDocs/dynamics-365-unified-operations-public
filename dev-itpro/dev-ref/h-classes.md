@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: H Classes
@@ -905,5 +905,6 @@ BackColor
 ### Method finalize
 
     public void finalize()
+
 
 

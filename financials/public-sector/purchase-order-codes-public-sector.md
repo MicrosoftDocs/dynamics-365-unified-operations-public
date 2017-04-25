@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Purchase order codes in the public sector
@@ -48,5 +48,6 @@ If you assign a confirming PO code to a purchase order on the **Unplanned purcha
 -   You can create messages in different languages. This feature is helpful when you are purchasing from merchants in other countries or regions. For example, your organization is located in an English-speaking country or region, and you want to create a Spanish message for confirming purchase orders that have a confirming PO code **Confirming**.
 
  
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Replenishment
@@ -74,6 +74,7 @@ Load demand replenishment sums the demand for several loads and creates the repl
 | Location profiles       | Location profiles are required in order to create locations.                                                                                                                                                                                       |
 | Location directives     | Location directives are required in order to guide work to the locations where replenishment is required, and to the locations that inventory is sourced from.                                                                                     |
 | Work templates          | Work templates of the **Replenishment** type are required in order to create replenishment work so that inventory can be moved to the desired locations.                                                                                           |
+
 
 
 

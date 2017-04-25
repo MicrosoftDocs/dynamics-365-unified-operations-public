@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fill Text subpattern
@@ -87,6 +87,7 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   The pattern currently sets the **HeightMode** property of the control to **SizeToAvailable**. This can produce very tall string controls if the pattern is used in a **SizeToAvailable** container. We’re investigating whether this control should use **SizeToContent** height, or whether it should not set the property at all and should instead let the developer decide the appropriate control height.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Warehouse configuration
@@ -121,5 +121,6 @@ See also
 --------
 
 [Configure locations in a WMS-enabled warehouse (task guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
 
 

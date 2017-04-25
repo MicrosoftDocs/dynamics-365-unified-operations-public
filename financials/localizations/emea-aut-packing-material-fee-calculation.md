@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Packing material fee calculation for Austria
@@ -116,5 +116,6 @@ Use the Packing material calculation journal to calculate packing material fees 
 
 ## Print the Packing materials fee calculation report
 The **Packing materials fee calculation** report contains information about packing materials fees that were calculated by using Austrian rules. To print this report, on the **Packing material calculation journal** page, select the calculated journal, and then click **Print report**.
+
 
 

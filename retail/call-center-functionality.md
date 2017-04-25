@@ -1,4 +1,4 @@
-ï»¿---
+---
 # required metadata
 
 title: Call center functionality
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Call center functionality
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article provides an overview of the call center sales functionality in Microsoft Dynamics 365 for Operations.
@@ -51,6 +51,7 @@ After you enable these features in the call center settings, they are availableÂ
 -   Sales clerks can add a retailer's coupons to the order.
 -   Sales clerks can sell continuity programs.
 -   Orders can be put on hold manually or automatically, to indicate that additional investigation is required before the order can be processed.
+
 
 
 

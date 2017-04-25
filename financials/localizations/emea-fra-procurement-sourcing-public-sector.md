@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Procurement and sourcing in the public sector in France
@@ -65,5 +65,6 @@ You can create purchase agreement classifications that add administrative fields
 -   To add information about milestones and tasks to purchase agreements, select the **Activities** option on the purchase agreement classification.
 
  
+
 
 

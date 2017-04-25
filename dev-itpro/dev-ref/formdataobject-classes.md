@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: F Classes - FormDataObject to FormFastTabHeaderControl
@@ -14574,6 +14574,7 @@ Performs data filtering for the control, based on the specified string.
 
 searchStr  
 The string value to use to filter data; optional.
+
 
 
 

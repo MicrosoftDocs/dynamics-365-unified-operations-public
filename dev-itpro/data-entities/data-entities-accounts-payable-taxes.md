@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entities - Accounts payable and taxes
@@ -131,5 +131,6 @@ See also
 [Data entities and packages framework](data-entities-data-packages.md)
 
 [Data entities](data-entities.md)
+
 
 

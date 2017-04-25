@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Update standard costs for a new manufactured item
@@ -54,6 +54,7 @@ To add new manufacturing items throughout the frozen period, follow these steps.
 5.  Use the **Costing version setup** page to change the blocking flag to allow activation of the pending cost records in the second costing version.
 6.  Use the **Activate prices** page (which you open from the **Costing version maintenance** page) to enable all pending cost records in the second costing version. You can also enable the pending cost records for individual items by clicking the **Activate** button on the **Item price** page.
 7.  Use the **Costing version setup** page to change the blocking flags in the second costing version to prevent additional data maintenance. The blocking policies prevent the entry of new pending costs and the activation of pending costs.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Plan freight transportation routes with multiple stops
@@ -56,5 +56,6 @@ A scheduled route is a predefined route plan that has a schedule for the shippin
 
 ## Load building workbench
 The Load building workbench uses the customer addresses and delivery dates from sales orders, and the scheduled routes that are available, to propose a load. By default, the values from the route are entered on the workbench. However, you can select a "from" date that is earlier than the "from" date on the route. When a load is proposed, the delivery address and delivery date of all open sales orders are checked. If the postal code of the delivery address matches the postal code of a hub in the route plan, and if the delivery date is within the range that is selected in the criteria, the sales order is proposed for the load. The capacity of the load template is also considered. Only one load is proposed at a time. If you have a sales order that isn't included, you might have to use a different load template (for example, a load template for a bigger truck or container) or plan an extra delivery.
+
 
 

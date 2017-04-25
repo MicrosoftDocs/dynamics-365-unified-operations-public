@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Master planning and multisite functionality
@@ -54,5 +54,6 @@ The following topics describe how the planning engine works, when different sett
 [Master planning - site coverage, warehouse not mandatory](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Master planning - How the BOM version is determined](master-plan-bom-version-determined.md)
+
 
 

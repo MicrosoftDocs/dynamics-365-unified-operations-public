@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fleet Management sample application overview
@@ -68,5 +68,6 @@ See also
 [Download the FMLab sample code](https://github.com/Microsoft/FMLab)
 
 [Create the FleetManagement solution](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)
+
 
 

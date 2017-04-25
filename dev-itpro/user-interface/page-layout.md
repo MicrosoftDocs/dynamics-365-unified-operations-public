@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Layout in Dynamics 365 for Operations
@@ -184,5 +184,6 @@ See also
 --------
 
 [User interface development home page](user-interface-development-home-page.md)
+
 
 

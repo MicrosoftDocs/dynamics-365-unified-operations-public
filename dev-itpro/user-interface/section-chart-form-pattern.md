@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Section Chart form pattern
@@ -82,5 +82,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Lifecycle Services for Dynamics 365 for Operations partners
@@ -57,5 +57,6 @@ Create a Microsoft Dynamics AX 2012 project workspace. You can use the project t
 ### Projects for customers in LCS
 
 For every customer who signs up for LCS, an Implementation project workspace is automatically created during the sign-up process. As a partner, you can't create an Implementation project. For more information about the Implementation project workspace, see [How Lifecycle Services for Microsoft Dynamics 365 for Operations works (LCS)](lcs-works-lcs.md). Services within project workspaces behave in the same manner. However, an important difference between an Implementation project and other project types is the ability to configure the current version of Dynamics 365 for Operations, which is managed by Microsoft.
+
 
 

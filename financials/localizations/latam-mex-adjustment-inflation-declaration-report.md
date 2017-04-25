@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Adjustment inflation declaration report
@@ -127,6 +127,7 @@ This report shows the calculation of the capital and result account code inflati
 -   The **B-10 adjustment** slider is on for the main account.
 -   The account type for the main account is **Balance** **sheet**, **Asset**, **Liability**, or **Equity**.
 -   The adjustment type of the main account is **Transaction** **date**.
+
 
 
 

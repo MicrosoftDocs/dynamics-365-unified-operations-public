@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Download Electronic reporting configurations from Lifecycle Services
@@ -67,5 +67,6 @@ See also
 --------
 
 [Electronic reporting overview](general-electronic-reporting.md)
+
 
 

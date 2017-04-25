@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Publish journal lines and documents from Excel
@@ -55,6 +55,7 @@ Users can enter and publish lines for financial journals from Microsoft Excel. A
 When the lines are published, they are validated to make sure that they comply with the rules that are set up in the financial journals. After the lines are published, users can edit or post the vouchers from Microsoft Dynamics 365 for Operations. 
 
 To add financial dimensions to a template, additional changes are required. For additional information, see [Add dimensions to the Microsoft Excel template](/dynamics365/operations/dev-itpro/financial/add-dimensions-excel-templates). After dimensions are added to the entity, they are available in the Excel designer and can be added to the template.
+
 
 
 

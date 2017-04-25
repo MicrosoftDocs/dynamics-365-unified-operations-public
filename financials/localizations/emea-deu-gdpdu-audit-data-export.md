@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: German audit file (GDPdU/GoBD)
@@ -230,5 +230,6 @@ See also
 --------
 
 [Electronic Reporting overview](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
+
 
 

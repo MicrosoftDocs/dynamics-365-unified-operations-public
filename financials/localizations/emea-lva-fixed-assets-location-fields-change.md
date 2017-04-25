@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed assets location change tracking for Latvia
@@ -49,6 +49,7 @@ Your modification is saved when you click **Save** or when you move your focus 
 2.  Select a fixed asset.
 3.  On the **Fixed asset** tab, click **Transfers** &gt; **Internal transfer history**.
 4.  Optional: Click **Print** &gt; **Internal transfer statement**.
+
 
 
 

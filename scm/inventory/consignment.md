@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Consignment
@@ -85,6 +85,7 @@ The vendor collaboration interface has three pages related to the inbound consig
 -   **Purchase orders** **consuming consignment inventory** - Shows detailed purchase order information related to the ownership change from the consignment process.
 -   **Products received from consignment inventory** - Shows information about the items and quantities that have product receipts updated during the ownership change process.
 -   **On-hand consignment inventory** - Shows information about the consignment items that they are expected to deliver, and the items that are already physically available at the customer site.
+
 
 
 

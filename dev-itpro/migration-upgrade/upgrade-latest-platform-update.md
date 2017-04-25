@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Upgrade Dynamics 365 for Operations to the latest platform update
@@ -165,5 +165,6 @@ See also
 --------
 
 [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
+
 
 

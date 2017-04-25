@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customize field Help
@@ -65,5 +65,6 @@ See also
 [Create and use localizable labels in the client](create-localizable-labels-client.md)
 
 [View and export field descriptions](/dynamics365/operations/get-started/view-export-field-descriptions)
+
 
 

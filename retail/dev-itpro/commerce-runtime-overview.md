@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Commerce runtime overview
@@ -62,5 +62,6 @@ On top of the workflow layer is the application programming interface (API) laye
 
 ## Commerce Runtime configuration
 Services are enumerated as types in the CRT configuration file. You can add types in the CRT configuration file to control which services are loaded in the CRT. Services are loaded in the order in which they are listed in the configuration file. All the default services are loaded automatically. However, if you add a new service above one of the default services, the new service replaces the default service.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Pay a vendor by endorsing a bill of exchange
@@ -50,5 +50,6 @@ The lifecycle of a BOE ends when the BOE is paid or expires. For endorsed BOEs, 
 
 ## Reserve endorsement
 If the status of a BOE is **Endorsed**, a user can reserve its endorsement.
+
 
 

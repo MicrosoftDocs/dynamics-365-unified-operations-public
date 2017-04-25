@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Maintain planned orders
@@ -55,5 +55,6 @@ See also
 --------
 
 [Master plans](master-plans.md)
+
 
 

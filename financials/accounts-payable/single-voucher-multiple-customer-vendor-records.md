@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Single voucher with multiple customer or vendor records
@@ -257,5 +257,6 @@ To avoid unwanted issues with future settlements for this transaction, instead o
 | 002         | Vendor           | 1001        |                 |  75.00    |            | Ledger          | 999999---          |
 
  
+
 
 

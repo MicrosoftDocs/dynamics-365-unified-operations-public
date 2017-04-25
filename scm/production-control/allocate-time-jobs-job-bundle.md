@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Allocate time to jobs in a job bundle
@@ -113,5 +113,6 @@ Consider the three jobs that are performed by a worker who has an hourly wage of
 | Job 3 | (3.33 ÷ 5) × USD 12.00                 | USD 8.00                | 5 hours        | USD 40.00         |
 
 The corrected cost per hour and the job time are posted in a production journal. **Note:** If you select the **Cost category** option on the **General** tab on the **Production order defaults** page, the actual time for each job is transferred to a production journal, where the cost is applied to the cost category of the specific job.
+
 
 

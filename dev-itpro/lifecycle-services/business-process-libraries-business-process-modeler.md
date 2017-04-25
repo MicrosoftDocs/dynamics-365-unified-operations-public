@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Business process libraries in Business process modeler
@@ -75,6 +75,7 @@ You can export information about a business process library, and all the flowcha
 2.  Open a business process library.
 3.  In the **Core Business Processes** list, right-click a top-level node in the library.
 4.  On the app bar, click **Doc**, and save the document.
+
 
 
 

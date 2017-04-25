@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Intrastat
@@ -243,5 +243,6 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </table>
 
  
+
 
 
