@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-05-31
 ---
 
 # Sales tax reports for Poland (setting up tax information and other features)
-[!include[banner](../includes/banner.md)
+[!include[banner](../includes/banner.md)]
 
 This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland. 
 
