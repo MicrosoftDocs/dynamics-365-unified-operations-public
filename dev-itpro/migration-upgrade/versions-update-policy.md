@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dynamics 365 for Operations versions and update policy
@@ -57,10 +57,13 @@ The following table provides information about the multiple releases of Microsof
 |                       |                                |                                             |                                                  |
 |-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------------|
 |                       | **Microsoft Dynamics AX 7.0 ** | **Microsoft Dynamics AX application 7.0.1** | **Microsoft Dynamics 365 for Operations (1611)** |
-| **Platform update 3** | Supported                      | Supported                                   | Supported                                        |
-| **Platform update 2** | Supported                      | Supported                                   |                                                  |
-| **Platform update 1** | Supported                      | Supported                                   |                                                  |
-| **Platform 7.0**      | Supported                      |                                             |                                                  |
+| **Platform update 6** | Compatible                      | Compatible                                   | Compatible                                        |
+| **Platform update 5** | Compatible                      | Compatible                                   | Compatible                                        |
+| **Platform update 4** | Compatible                      | Compatible                                   | Compatible                                        |
+| **Platform update 3** | Compatible                      | Compatible                                   | Compatible                                        |
+| **Platform update 2** | Compatible                      | Compatible                                   |                                                  |
+| **Platform update 1** | Compatible                      | Compatible                                   |                                                  |
+| **Platform 7.0**      | Compatible                      |                                             |                                                  |
 
  
 
