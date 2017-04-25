@@ -59,7 +59,7 @@ The following table provides information about the multiple releases of Microsof
 
 |                       |                                |                                             |                                                  |
 |-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------------|
-|                       | **Microsoft Dynamics AX 7.0 ** | **Microsoft Dynamics AX application 7.0.1** | **Microsoft Dynamics 365 for Operations (1611)** |
+|                       | **Microsoft Dynamics AX 7.0** | **Microsoft Dynamics AX application 7.0.1** | **Microsoft Dynamics 365 for Operations (1611)** |
 | **Platform update 6** | Compatible                      | Compatible                                   | Compatible                                        |
 | **Platform update 5** | Compatible                      | Compatible                                   | Compatible                                        |
 | **Platform update 4** | Compatible                      | Compatible                                   | Compatible                                        |
@@ -67,8 +67,6 @@ The following table provides information about the multiple releases of Microsof
 | **Platform update 2** | Compatible                      | Compatible                                   |                                                  |
 | **Platform update 1** | Compatible                      | Compatible                                   |                                                  |
 | **Platform 7.0**      | Compatible                      |                                             |                                                  |
-
- 
 
 ## Update policy
 Microsoft Dynamics 365 for Operations is serviced as a cloud offering. Updates to the Dynamics 365 for Operations platform and application will be handled in the following manner:
