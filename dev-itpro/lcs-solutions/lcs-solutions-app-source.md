@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: LCS Solutions for AppSource home page
@@ -45,6 +45,7 @@ This topic points to resources that will help you understand the requirements fo
 -   [Marketing](marketing-content-lcs-solutions.md)
 -   [Methodologies](methodologies-lcs-solutions.md)
 -   [App validation](app-validation-lcs-solutions.md)
+
 
 
 

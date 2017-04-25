@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Operations scheduling
@@ -83,5 +83,6 @@ See also
 --------
 
 [Operation scheduling options](operation-scheduling-options.md)
+
 
 

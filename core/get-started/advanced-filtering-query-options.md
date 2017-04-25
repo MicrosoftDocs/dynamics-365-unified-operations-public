@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Advanced filtering and query syntax
@@ -236,6 +236,7 @@ See the table in the next section for additional details about <strong>SysQueryR
 </tr>
 </tbody>
 </table>
+
 
 
 

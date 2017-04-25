@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Budget planning
@@ -266,5 +266,6 @@ B. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning co
 C. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In Workflow Stages tab Associate the workflow Auto – approve created in A step with the stages Initial and Submitted 
 
 [![Budgeting and budget planning](./media/screenshot42.png)](./media/screenshot42.png)  
+
 
 

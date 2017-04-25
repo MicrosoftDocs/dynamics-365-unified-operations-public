@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Inventory on-hand mobile workspace 
@@ -99,6 +99,7 @@ To view workspaces on your mobile app, you must first publish the desired worksp
     -   By physical inventory (This view represents the total amount.)
     -   By physical reserved (This view represents the reserved amount.)
     -   By available physical (This view represents the available amount that has no reservations.)
+
 
 
 

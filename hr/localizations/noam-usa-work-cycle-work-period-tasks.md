@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up work cycles and work periods
@@ -70,5 +70,6 @@ See also
 --------
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
+
 
 

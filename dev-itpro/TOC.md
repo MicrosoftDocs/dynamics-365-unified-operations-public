@@ -77,3 +77,4 @@
 # Other resources
 ## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/dev-itpro/toc.json)
 ## [What's new or changed](get-started/whats-new-changed.md)
+

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Report definitions in financial report designer
@@ -97,5 +97,6 @@ See also
 --------
 
 [Financial reporting](financial-reporting-intro.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Quality management processes
@@ -107,5 +107,6 @@ See also
 [Set up quality orders (task guide)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
 [Inspect the quality of goods (task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
 
 

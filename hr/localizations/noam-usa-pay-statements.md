@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Work with pay statements
@@ -149,5 +149,6 @@ Benefit accrual lines are created when you submit a pay statement for payment. Y
 
 ## Reverse a pay statement
 To reverse a pay statement that has been posted or submitted for payment, see [Work with existing payroll payments](noam-usa-existing-payroll-payments.md).
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Product number nomenclature
@@ -201,5 +201,6 @@ See also
 [Create a product number nomenclature for predefined product variants (Task guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
 [Create a product number nomenclature for configured product variants (Task guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+
 
 

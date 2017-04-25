@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Demand forecasting overview
@@ -90,5 +90,6 @@ See also
 [Monitoring forecast accuracy](monitor-forecast-accuracy.md)
 
 [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+
 
 

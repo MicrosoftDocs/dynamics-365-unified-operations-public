@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Generate a financial report
@@ -152,4 +152,5 @@ See also
 [Financial reporting](financial-reporting-intro.md)
 
 [Report Designer interface](report-designer-interface.md)
+
 

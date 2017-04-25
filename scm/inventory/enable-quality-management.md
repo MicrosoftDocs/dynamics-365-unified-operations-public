@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Quality management overview
@@ -365,5 +365,6 @@ See also
 [Quality management processes](quality-management-processes.md)
 
 [Enabling nonconformance management](enable-nonconformance-management.md)
+
 
 

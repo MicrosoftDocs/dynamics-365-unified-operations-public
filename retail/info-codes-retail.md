@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Info codes
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Info codes
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article provides an overview about info codes, info code groups, and how to use them.
@@ -54,6 +54,7 @@ In Dynamics 365 for Operations - Retail, you can create groups of info codes. In
 
  
 -
+
 
 
 

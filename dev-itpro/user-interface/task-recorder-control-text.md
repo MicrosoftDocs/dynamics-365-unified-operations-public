@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Control the text that Task Recorder generates for a control
@@ -101,5 +101,6 @@ The following code example shows how property change events are logged to Task r
                 }
             }
         }
+
 
 

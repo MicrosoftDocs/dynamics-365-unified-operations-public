@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Hybrid customer orders
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Hybrid customer orders
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 A hybrid customer order is a single order, which contains products that can be carried out of the store by the customer, as well as products that will be picked up or shipped later.
@@ -48,5 +48,6 @@ See also
 --------
 
 [Customer orders overview](customer-orders-overview.md)
+
 
 

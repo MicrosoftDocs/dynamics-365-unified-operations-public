@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Macros in X++
@@ -674,5 +674,6 @@ The following code example demonstrates the range of macro referencing in class 
             ****************/
         }
     }
+
 
 

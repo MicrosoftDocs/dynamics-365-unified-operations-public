@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Add properties to a sales order
@@ -99,6 +99,7 @@ After you create a sales order in the commerce runtime, you can view the new att
 3.  Click **Retail and commerce** &gt; **Retail IT** &gt; **Synchronize orders** to create a sales order.
 4.  Click **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales orders** &gt; **All sales orders**.
 5.  On the **Retail** tab, and click **Retail attributes**. You should see the attribute that you created.
+
 
 
 

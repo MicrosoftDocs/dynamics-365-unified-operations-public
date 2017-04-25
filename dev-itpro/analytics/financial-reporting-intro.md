@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Financial reporting for Dynamics 365 for Operations
@@ -93,6 +93,7 @@ The following components of financial reporting make it easy to create, view, an
 
 #See also
 [Generate a financial report](generate-financial-report.md)
+
 
 
 

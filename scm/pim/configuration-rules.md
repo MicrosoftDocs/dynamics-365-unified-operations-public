@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configuration rules
@@ -49,5 +49,6 @@ See also
 --------
 
 [Dimension-based product configuration](dimension-based-product-configuration.md)
+
 
 

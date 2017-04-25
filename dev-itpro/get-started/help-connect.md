@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Connect the Help system
@@ -75,6 +75,7 @@ See also
 [Task recorder overview](../user-interface/task-recorder.md)
 
 [How to create a task recording to use as documentation or training](../user-interface/task-recorder-training-docs.md)
+
 
 
 

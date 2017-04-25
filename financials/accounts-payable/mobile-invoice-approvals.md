@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Mobile invoice approvals
@@ -489,5 +489,6 @@ The following variations can be done for scenario 1, based on the requirements 
 
 ## Conclusion
 The mobile platform and the application capabilities let you design mobile scenarios that are optimized for a user base in an organization. Based on the examples that are provided in this topic, you can try other variations and create different experiences that meet a specific need.
+
 
 

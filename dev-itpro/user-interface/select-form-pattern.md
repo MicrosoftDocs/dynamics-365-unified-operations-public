@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Select a form pattern
@@ -515,5 +515,6 @@ Form: CustTable (TabFinancialDimensions)
 [![HowToSelectAFormPattern (30)](./media/howtoselectaformpattern-30.jpg)](./media/howtoselectaformpattern-30.jpg)
 
 **[Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md)** Use this form pattern on containers that include a Dimension Expression Builder control.
+
 
 

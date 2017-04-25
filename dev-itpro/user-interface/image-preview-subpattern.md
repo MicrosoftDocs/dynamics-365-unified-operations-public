@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Image Preview subpattern
@@ -125,5 +125,6 @@ None.
 ### AX 2012 content
 
 [![ImagePreview(3)](./media/imagepreview3.png)](./media/imagepreview3.png)
+
 
 

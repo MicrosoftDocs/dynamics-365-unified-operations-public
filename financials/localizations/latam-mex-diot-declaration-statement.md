@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: DIOT declaration statement
@@ -136,6 +136,7 @@ In the DIOT declaration statement, the amounts have either positive or negative 
 | Credit amount with negative-sales tax amount | Minus sign (–)             |
 | Debit amount with positive-sales tax amount  | Minus sign (–)             |
 | Debit amount with negative-sales tax amount  | Plus sign (+)              |
+
 
 
 

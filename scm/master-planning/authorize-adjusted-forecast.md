@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Authorize an adjusted forecast
@@ -53,5 +53,6 @@ See also
 [Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 [Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+
 
 

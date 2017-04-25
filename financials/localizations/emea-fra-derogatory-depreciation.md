@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Derogatory depreciation for France
@@ -49,5 +49,6 @@ In derogatory depreciation, an extra amount of depreciation is calculated as the
 -   The **Placed in service** dates must be the same in both value models as soon as the models are assigned to a specific asset.
 
 On the **Fixed asset posting profiles** page, you set up GL accounts for **Derogatory increase** and **Derogatory decrease** transactions in the accounting value model. On the **Disposal parameters** page, you can complete the setup to post derogatory increase amounts or derogatory decrease amounts to specific G/L accounts during disposal. You can review the derogatory depreciation amounts for the accounting value model on the **Fixed asset balances** page, the **Fixed asset note** report, or the **Fixed asset movement** report.
+
 
 

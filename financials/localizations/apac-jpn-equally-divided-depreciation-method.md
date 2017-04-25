@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Equally divided depreciation method
@@ -110,5 +110,6 @@ See also
 --------
 
 [Fixed asset depreciation FAQ](apac-jpn-fixed-asset-depreciation.md)
+
 
 

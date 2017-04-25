@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Compensation plans
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Compensation plans
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
@@ -137,5 +137,6 @@ Each time a process event is run, a compensation event is created.  Compensatio
 
 ## Recommendations
 After you run a process event, you can recommend adjustments to an employee’s merit increase or award amount, based on the calculated guidelines of the process event. To make recommendations for employees, you must enable recommendations when you set up compensation plans or when you set up the process event.
+
 
 

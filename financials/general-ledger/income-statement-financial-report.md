@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Income statement financial report
@@ -74,5 +74,6 @@ See also
 [View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reportign Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
 
 

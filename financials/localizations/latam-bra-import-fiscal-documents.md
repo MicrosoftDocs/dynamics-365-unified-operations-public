@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Import fiscal documents for Brazil
@@ -161,6 +161,7 @@ For this scenario, you must create and post a direct import fiscal document.
 </tr>
 </tbody>
 </table>
+
 
 
 

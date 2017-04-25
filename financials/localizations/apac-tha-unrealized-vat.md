@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Thailand unrealized VAT
@@ -65,6 +65,7 @@ Follow these steps to calculate and post sales orders that have unrealized sales
 1.  **Create and post a sales order that has unrealized sales VAT.** The sales order can be for an item of the **Item** type or the **Service** type. When you post the sales order before you receive the payment from the customer, the unrealized sales VAT is posted to the unrealized sales VAT account.
 2.  **Reverse the unrealized sales VAT that was posted.** After you receive and make the payment, the unrealized sales VAT is reversed, and the output VAT is posted. You can use the **Payments** page to generate the tax invoice or receipt/tax invoice for the transaction. You can then send the tax invoice or receipt/tax invoice to the customer.
 3.  **Generate the Output sales tax report.** This report includes the transactions that the sales VAT is realized for, and includes the details of the VAT that the legal entity receives for the sales of goods and services.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Bank file formats for Australian banks
@@ -45,6 +45,7 @@ You can pay vendors electronically through banks. The names of the banks and the
 | Westpac Banking Corporation    | Corporate OnlineBusiness Online       | WBC Direct Entry System (AU)   |
 | St. George Bank                | Business Banking Online               | STG Direct Credit Service (AU) |
 | National Australia Bank        | Internet BankingNAB ConnectNAB Online | NAB Direct Credit Service (AU) |
+
 
 
 

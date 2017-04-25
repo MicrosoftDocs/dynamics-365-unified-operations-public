@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Advanced ledger entries in the public sector
@@ -50,6 +50,7 @@ Yes. If you want users to be able to change the financial dimensions for a proje
 
 ## How do I use advanced ledger entries to record yearend accrual entries?
 Create an advanced ledger entry, select the **Reversing entry** option, and enter a reversing date. The reversing advanced ledger entry is created when the advanced ledger entry is posted. The reversing advanced ledger entry will have a new transaction number and a draft status. The reversing date will be used as the accounting date and the debit or credit amount on each line of the original entry will be reversed. The same posting definition will be used. The transaction text for the header and lines will contain the words “Reversing entry from,” the transaction number of the original advanced ledger entry, and the transaction text of the original advanced ledger entry.
+
 
 
 

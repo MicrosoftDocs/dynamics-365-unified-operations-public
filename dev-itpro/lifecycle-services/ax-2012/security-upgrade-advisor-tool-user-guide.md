@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Security Upgrade Advisor Tool user guide (AX 2012)
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 2012 R3 CU8
 
 # Security Upgrade Advisor Tool user guide (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 The Microsoft Dynamics AX Security Upgrade Advisor Tool is intended to help simplify the process of upgrading security settings from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012. 
@@ -242,5 +242,6 @@ No Record Level Security (RLS) rules are upgraded. In Microsoft Dynamics AX 2012
 ### What are the next steps to complete the security upgrade?
 
 After the Excel spreadsheet with the results is generated, you can use the role generation and privilege generation functionality in the tool to create roles and privileges automatically. Then, test the system by assigning users to those roles, and validating that they have access and the exposed functionality is accurate.
+
 
 

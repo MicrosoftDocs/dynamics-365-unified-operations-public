@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: HierarchyViewer control
@@ -105,5 +105,6 @@ You don’t have to populate the whole node structure. Instead, you can populate
 
 ## Changing node visuals
 You can't change node visuals. The intended design is for the control to offer a set of unbound controls that have a default layout that you can manipulate by using an **ExtendedStyle** property to offer a predefined set of alternatives that the author can select.
+
 
 

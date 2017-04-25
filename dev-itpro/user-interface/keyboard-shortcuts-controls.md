@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Keyboard shortcuts for extensible controls
@@ -295,4 +295,5 @@ Here is a Dialogs example that extends the Form control.
     },
 })
 </pre>
+
 

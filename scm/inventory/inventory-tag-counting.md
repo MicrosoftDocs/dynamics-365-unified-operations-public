@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Inventory tag counting
@@ -43,5 +43,6 @@ See also
 --------
 
 [Cycle counting](../warehousing/cycle-counting.md)
+
 
 

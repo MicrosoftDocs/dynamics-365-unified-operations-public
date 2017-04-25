@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: LINQ provider for C#
@@ -175,5 +175,6 @@ See also
 [Programming language support](programming-language-support.md)
 
 [Technical Concepts Guide](developer-home-page.md)
+
 
 

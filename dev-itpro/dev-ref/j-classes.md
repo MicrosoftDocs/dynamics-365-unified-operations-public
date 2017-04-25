@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: J Classes
@@ -240,5 +240,6 @@ The column of the cursor position; optional.
 #### Remarks
 
 If the node is a method, the code editor opens. If the node is a documentation object, the Help editor opens.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Enroll workers in a garnishment or tax levy
@@ -322,5 +322,6 @@ See also
 --------
 
 [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+
 
 

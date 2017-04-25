@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up assortments
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up assortments
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article describes what an assortment is and explains how to set up assortments in Microsoft Dynamics 365 for Operations - Retail.
@@ -56,6 +56,7 @@ After you complete the prerequisites, you can create an assortment and assign it
 2.  Select the retail channels or the high-level groups of retail channels that the assortment applies to.
 3.  Add product categories, individual products, or product variants to the assortment. You can include all products in a specific category, or you can exclude selected products from a category that is included in the assortment.
 4.  Publish the assortment. When you publish an assortment, the retail assortment scheduler is automatically run. This process generates the list of products. When this process is completed, the products become available to the retail channels that the product assortment is assigned to. If changes are made to an assortment that has been published, or to the retail channels that the assortment is assigned to, the assortment must be updated. To update the assortment when changes are made, you can run the retail assortment scheduler as a batch job.
+
 
 
 

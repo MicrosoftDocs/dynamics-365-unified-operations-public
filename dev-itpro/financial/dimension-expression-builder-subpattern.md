@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dimension Expression Builder subpattern
@@ -76,5 +76,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
 
 

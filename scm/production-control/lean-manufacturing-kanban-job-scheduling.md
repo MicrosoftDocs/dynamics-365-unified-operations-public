@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Kanban job scheduling for lean manufacturing
@@ -75,5 +75,6 @@ The **Kanban job scheduling** list page contains a FactBox that shows the availa
 
 See also
 --------
+
 
 

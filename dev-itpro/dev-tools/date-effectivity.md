@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Date effectivity
@@ -177,6 +177,7 @@ Create a new entity that is named **FMVehicleRateEntity**, and add it to the pr
 #### Test your project
 
 -   Build your project again, and run the following X++ job to test your project. [![Testing the project](./media/capa-504x1024.png)](./media/capa.png)
+
 
 
 

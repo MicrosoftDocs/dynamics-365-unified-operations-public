@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Inform about country/region regulatory features
@@ -113,4 +113,5 @@ To narrow the search even more, you can apply the following additional filters
 -   **Status:** Select specific statuses.
 
 ![Filters to find planned and released regulatory features in Issue search](./media/issue-search-categories.jpg)
+
 

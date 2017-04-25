@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed assets in the public sector
@@ -51,6 +51,7 @@ Public sector organizations typically require balanced entries for the financial
 The transfer-from and transfer-to accounts are not the accounts in which the fixed asset’s net book value is held. Rather, the transfer-from and transfer-to accounts are the main accounts used to balance entries in financial dimensions. They are used only when a financial dimension for the fixed asset requires balancing. The transfer-from account will have a debit entry, and the transfer-to account will have a credit entry.
 
 For details, see [Funds in the public sector](funds-public-sector.md).
+
 
 
 

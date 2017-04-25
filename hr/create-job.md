@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Setting up the components of a job
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Setting up the components of a job
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
@@ -92,5 +92,6 @@ You maintain job tasks by using the **Job tasks** page. On the **Job tasks** pa
 
 ## Areas of responsibility
 You use areas of responsibility to indicate the work roles, processes, and products that a worker who is in a position for a job is responsible for. For example, for a job that is named "Accountant," one area of responsibility might be "Financial reporting for product A." You maintain areas of responsibility by using the **Areas of responsibility** page, which you can find by using the Search function. On the **Areas of responsibility** page, enter a name and description for the responsibility. In the **Note** field, you can optionally enter additional information. The notes can be updated for a specific job without changing the notes that you entered here.
+
 
 

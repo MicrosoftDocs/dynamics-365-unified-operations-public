@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create documentation or training using Task recordings
@@ -133,5 +133,6 @@ See also
 [Creating new training libraries for Dynamics AX within Lifecycle Services using the Task recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
 [Create Rich Help Topics with Task Recorder (external link)](https://mbspartner.microsoft.com/AX/Videos/970)
+
 
 

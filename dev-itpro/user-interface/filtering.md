@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Filters
@@ -143,5 +143,6 @@ Yes, you can use the QuickFilter to filter other collection controls, but you mu
 
 ## Grid column header filtering/sorting
 In Dynamics 365 for Operations, the grid filtering experience is more closely aligned with the experience in Microsoft Excel. When the user clicks a column header (for columns that can be filtered), a drop dialog appears, and the user can use it to filter the column. The filtering experience here mimics the filtering experience in the Filter Pane. Additionally, there are options to sort the grid based on the column that is currently selected. [![4\_Filter](./media/4_filter.png)](./media/4_filter.png)
+
 
 

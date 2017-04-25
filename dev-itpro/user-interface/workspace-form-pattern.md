@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Workspace form pattern
@@ -142,5 +142,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![Workspace(5)](./media/workspace5.png)](./media/workspace5.png)
+
 
 

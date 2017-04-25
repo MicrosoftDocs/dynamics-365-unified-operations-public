@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customize with extensions and overlayering
@@ -311,5 +311,6 @@ Tables, form data sources, form controls, and other element types that support e
 # See also
 
 [Customize model elements using extensions](customize-model-elements-extensions.md)
+
 
 

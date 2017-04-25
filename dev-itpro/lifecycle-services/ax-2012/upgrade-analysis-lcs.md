@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Upgrade analysis 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Upgrade analysis (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 This article explains how to use Upgrade analysis in Lifecycle Services (LCS). Upgrade analysis helps you plan full-version, minor-version, and in-place upgrades to Microsoft Dynamics AX 2012.
@@ -110,5 +110,6 @@ See also
 [Upgrading to a new version of Microsoft Dynamics AX](https://msdn.microsoft.com/en-us/library/aa588216.aspx)
 
 [Scenario: Perform in-place upgrade to AX 2012 R2 or AX 2012 R3](https://technet.microsoft.com/en-us/library/jj733502.aspx)
+
 
 

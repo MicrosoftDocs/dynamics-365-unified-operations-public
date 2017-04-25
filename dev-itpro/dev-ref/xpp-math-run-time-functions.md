@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ math run-time functions
@@ -724,5 +724,6 @@ The following example truncates 2.7147 to 2.00.
         print strFmt("r = %1",  r);
         pause;
     }
+
 
 

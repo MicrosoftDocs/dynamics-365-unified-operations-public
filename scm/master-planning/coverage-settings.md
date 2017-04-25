@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Coverage settings
@@ -57,5 +57,6 @@ See also
 --------
 
 [Master plans](master-plans.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: U Classes
@@ -335,5 +335,6 @@ The following example calls the UtilFile.reindex method. It checks whether the u
 ### Method flushCache
 
     public void flushCache()
+
 
 

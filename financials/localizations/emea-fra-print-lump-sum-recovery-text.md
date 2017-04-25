@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Print lump sum recovery text on a customer invoice
@@ -43,5 +43,6 @@ Use the **Form setup** page to set up the parameters to print a lump sum recover
 
 ## Print the lump sum recovery text on a customer invoice
 Use the **Posting invoice** page to print the lump sum recovery text that shows the penalty amount on customer invoices. On the **Posting invoice** page, select the **Print lump sum recovery text** check box for each line. A selected check box indicates that the lump sum recovery text is printed on the customer invoices. When you post the sales order, the lump sum recovery text is printed on the customer invoice. You can also print the lump sum recovery text on a customer invoice that you print from the **Invoice journal** page.
+
 
 

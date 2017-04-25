@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entities - Expense management
@@ -126,5 +126,6 @@ See also
 [Data entities and packages framework](data-entities-data-packages.md)
 
 [Data entities](data-entities.md)
+
 
 

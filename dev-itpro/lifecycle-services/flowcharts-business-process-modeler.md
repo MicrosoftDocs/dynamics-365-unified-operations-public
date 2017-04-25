@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Flowcharts in Business process modeler
@@ -137,6 +137,7 @@ Unconnected flowcharts can be very helpful for describing high-level business pr
 A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar. [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Toolbar and Fields subpattern
@@ -110,5 +110,6 @@ This section will have answers to frequently asked questions that are related to
 **HcmPosition** 
 
 ![ToolbarFields(3)](./media/toolbarfields3.png)
+
 
 

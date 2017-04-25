@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Centralized payments for Accounts receivable
@@ -302,6 +302,7 @@ Fabrikam receives a payment of 75.00 from customer 4000, Northwind Traders. The 
 | Accounts receivable (Fabrikam West)    |              | 75.00         |
 | Due from Fabrikam East (Fabrikam West) | 25.00        |               |
 | Accounts receivable (Fabrikam West)    |              | 25.00         |
+
 
 
 

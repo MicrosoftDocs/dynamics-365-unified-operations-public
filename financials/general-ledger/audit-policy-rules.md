@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Audit policy rules
@@ -104,5 +104,6 @@ See also
 --------
 
 [Audit policy violations and cases](audit-policy-violations-cases.md)
+
 
 

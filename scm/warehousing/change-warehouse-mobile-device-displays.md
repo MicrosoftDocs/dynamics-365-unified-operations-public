@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Warehouse mobile device display settings
@@ -106,5 +106,6 @@ See also
 --------
 
 [Configuration of mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+
 
 

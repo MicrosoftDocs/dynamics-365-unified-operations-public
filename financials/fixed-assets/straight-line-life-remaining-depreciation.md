@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Straight line life remaining depreciation
@@ -81,6 +81,7 @@ The depreciation amount is the same every year: (Acquisition cost – Salvage v
 | Year 3 | (7,000 – 1,000) ÷ 3 = 2,000                   | 5,000                                 |
 | Year 4 | (5,000 – 1,000) ÷ 2 = 2,000                   | 3,000                                 |
 | Year 5 | (3,000 – 1,000) ÷ 1 = 2,000                   | 1,000                                 |
+
 
 
 

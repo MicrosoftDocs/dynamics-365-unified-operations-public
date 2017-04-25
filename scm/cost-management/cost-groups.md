@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost groups
@@ -55,6 +55,7 @@ A cost group can be assigned a cost group type and a behavior for supplemental s
 
 -   **Cost group type** − Each cost group must be assigned a cost group type to indicate that the cost group applies to direct material, direct manufacturing, or direct outsourcing, or to designate it as indirect or undefined. A cost group that is designated as direct material can be assigned to items. A direct manufacturing cost group can be assigned to cost categories. A direct outsourcing cost group can be assigned to a product type of service, so that you can classify costs that are associated with the service purchase to subcontracting activities. An indirect cost group can be assigned to indirect costs for surcharges or rates. A cost group that is designated as undefined can be assigned to items, cost categories, or indirect costs. The assignment of a cost group type serves several purposes. First, it constrains the ability to assign a cost group and to view a list of applicable cost groups. Second, it provides supplemental segmentation for reporting purposes. Third, it can be used to assign ledger accounts for variances.
 -   **Behavior** − Each cost group can optionally be assigned a behavior to indicate that the cost group applies to fixed costs or variable costs. A cost group that has a null value for behavior is treated as a variable cost. The assignment of a behavior serves only a reporting purpose. For example, costs can be displayed with segmentation of fixed and variable costs on the costing sheet and on the **Cost rollup by cost group** page. If you assign a profit setting percentage to each cost group, the bill of materials (BOM) calculation provides a suggested sales price, based on a cost-plus-markup approach.
+
 
 
 

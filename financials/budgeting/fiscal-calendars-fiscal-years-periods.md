@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fiscal calendars, fiscal years, and periods
@@ -65,6 +65,7 @@ Budget cycles are the length of time during which a budget is used. Budget cycle
 
 ## Maintain periods for your organization
 You can use the Ledger calendar page to view the details of the fiscal calendar, fiscal years, and periods used by your organization. You can also change the status of the periods and select which users can post accounting transactions to periods. For example, at the start of a new period, you might want a group of users to finish posting financial transactions in the previous period, while other groups work only in the new period.
+
 
 
 

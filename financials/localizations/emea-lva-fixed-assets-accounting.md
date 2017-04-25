@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed assets accounting for tax purposes
@@ -89,5 +89,6 @@ To view the tax depreciation details, click **Tax depreciation details** to open
 
 ## Print the Tax depreciation report
 The **Tax depreciation** report provides Latvian users with tax reporting that is relevant to fixed assets in a company. To print the report, go to the **Tax depreciation calculation** page, select a specific record to summarize at the **Category** level. Click **Tax depreciation report** for categories that are not summarized using the **Tax depreciation** report.
+
 
 

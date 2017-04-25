@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Posting definitions in the public sector
@@ -626,5 +626,6 @@ See also
 [Budgeting in the public sector](budgeting-public-sector.md)
 
 [General ledger in the public sector](general-ledger-public-sector.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up asset retirement obligation for fixed assets
@@ -71,6 +71,7 @@ If you don't have access to the pages that are used to complete this task, conta
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configuration keys        | Ensure that the Fixed **Assets** configuration key is available under the **Data Dictionary** &gt; **Configuration Keys** node in the Application Object Tree (AOT). |
 | Security roles and duties | To perform this task, you must be a member of the **-Maintain fixed assets-** security role.|
+
 
 
 

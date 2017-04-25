@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Settlement priority in the public sector
@@ -75,6 +75,7 @@ During the settlement process, settlement attributes are considered first, then 
 -   After you add billing codes to a billing classification, use the **Up** and **Down** buttons on the **Billing codes** FastTab to arrange the billing codes in priority order. (This is necessary only if you plan to use **Billing code** as your invoice line priority.)
 -   After you create all of the billing classifications for your organization, use the **Up** and **Down** buttons at the top of the **Billing classifications** page to arrange the billing classifications in priority order.
 -   After you enable the **Billing** attribute on the **Settlement priority** page, use the **Up** and **Down** buttons at the top of the page to arrange the active settlement attributes in priority order.
+
 
 
 

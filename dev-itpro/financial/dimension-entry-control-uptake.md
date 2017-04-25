@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dimension entry control uptake
@@ -295,4 +295,5 @@ See also
 [Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 
 [Dimension Entry control dialog support](dimension-entry-control-dialog-support.md)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 
@@ -140,6 +140,7 @@ To deploy an environment that can be configured for high availability, see:
 </tr>
 </tbody>
 </table>
+
 
 
 

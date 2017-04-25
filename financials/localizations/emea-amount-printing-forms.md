@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Update how amounts are displayed on reports and documents
@@ -59,6 +59,7 @@ To set up full and short names for currency units and subunits for a language, 
     | **Conjunction 'and' between units and parts**             | Select to print the conjunction “and” between the currency units and unit parts. For example, on invoices or reports, the amount for LTL 100.20 will be displayed as 100 Litas and 20 Centas.                      |
 
 5.  Click **Save**.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Generate payroll reports
@@ -54,6 +54,7 @@ The following table summarizes when and why you use each report.
 | Form W-2 reconciliation                  |                                                                                                                        |                                                                                                                                 | Use this report to balance Form W-2s and run validation before you issue Form W-2s to workers.         | Use this report to balance Form W-2s and run validation before you issue Form W-2s to workers.  |
 | Form W-2                                 |                                                                                                                        |                                                                                                                                 | Use this report to create Form W-2s that you can issue to workers.                                     | Use this report to create Form W-2s that you can issue to workers.                              |
 | Electronic Form W-2                      |                                                                                                                        |                                                                                                                                 | Use this report to file Form W-2s with the Social Security Administration.                             |                                                                                                 |
+
 
 
 

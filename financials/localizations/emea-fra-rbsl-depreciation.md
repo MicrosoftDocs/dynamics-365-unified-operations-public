@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: RB/SL depreciation
@@ -56,5 +56,6 @@ When you create a **Fixed asset group/value model** setup, you specify the numbe
 | **Total** | **Not applicable**                | **Not applicable**                  | **1,000.00**                          | **Not applicable** |
 
 **Note:** If you depreciated an asset by using fixed asset software other than Microsoft Dynamics 365 for Operations, you must post the acquisition and the accumulated depreciation in Dynamics 365 for Operations for the period before you started using Dynamics 365 for Operations. For example, if you started using Dynamics 365 for Operations on January 1, 2016, you must post the acquisition and accumulated depreciation in Dynamics 365 for Operations for the period that ended December 31, 2015. After you post the acquisition, you must change the acquisition date to the correct date from your previous software and enter the remaining life of the asset. You can then depreciate the asset as usual, starting on January 1, 2016.
+
 
 

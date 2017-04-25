@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Financial report components
@@ -143,5 +143,6 @@ When you open a building block, other users have read-only access that building 
 # See also
 
 [Financial reporting](financial-reporting-intro.md)
+
 
 

@@ -39,3 +39,4 @@ These topics describe how to manage the databases that support Microsoft Dynamic
 [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](http://ax.help.dynamics.com/en/wiki/copy-an-ax-database-from-azure-sql-database-to-sql-server/) [Copy a Microsoft Dynamics 365 for Operations database from SQL Server to an Azure SQL Database environment](http://ax.help.dynamics.com/en/wiki/copy-a-database-from-sql-server-to-azure-sql/) [Request a point-in-time restore on a non-production environment](http://ax.help.dynamics.com/en/wiki/request-a-point-in-time-restore-on-a-non-production-environment/) [Retain a copy of a Microsoft Dynamics 365 for Operations database to restore later](http://ax.help.dynamics.com/en/wiki/retain-copy-dynamics-365-operations-database/) �
 
 
+

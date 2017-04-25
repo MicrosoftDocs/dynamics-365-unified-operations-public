@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: What's new or changed in Dynamics AX application version 7.0.1 (May 2016)
@@ -85,5 +85,6 @@ See also
 [What's new or changed](whats-new-changed.md)
 
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Migrate code for an LCS solution
@@ -53,5 +53,6 @@ See also
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 
 [Technical Concepts Guide for code migration](..\dev-tools\developer-home-page.md#code-migration)
+
 
 

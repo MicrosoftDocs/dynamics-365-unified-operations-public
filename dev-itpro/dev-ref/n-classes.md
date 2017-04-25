@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: N Classes
@@ -166,5 +166,6 @@ blockSize
 Initializes a new instance of the NumberSequenceSessionLessCache class.
 
     public void new()
+
 
 

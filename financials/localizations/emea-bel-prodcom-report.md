@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up and maintain PRODCOM
@@ -67,5 +67,6 @@ Use the **Intrastat to PRODCOM conversion** page to assign PRODCOM codes to Intr
 
 ## Use PRODCOM
 Use the **PRODCOM** page to create PRODCOM periods and transfer sales lines to the PRODCOM report. After you enter the dates for the declaration period and then enter the section codes, you can transfer the sales lines to the PRODCOM report. After you transfer the sales lines to the report, you can review and edit the products on the PRODCOM list, and then you can print the report.
+
 
 

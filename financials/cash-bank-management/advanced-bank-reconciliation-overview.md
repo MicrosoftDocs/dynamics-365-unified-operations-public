@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Advanced bank reconciliation overview
@@ -52,6 +52,7 @@ The advanced bank reconciliation feature lets you import bank statements. The im
     -   View bank statements and Dynamics 365 for Operations bank transactions side by side.
     -   Automatically post Dynamics 365 for Operations bank transactions if they appear on a bank statement but don't appear in Dynamics 365 for Operations.
     -   Generate a reconciliation statement.
+
 
 
 

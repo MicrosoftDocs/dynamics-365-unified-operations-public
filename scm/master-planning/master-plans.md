@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Master plans
@@ -59,5 +59,6 @@ See also
 [Separating tactical and operative planning for master scheduling](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
 [Master Planning: Use a static and dynamic Master Plan or use one plan?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+
 
 

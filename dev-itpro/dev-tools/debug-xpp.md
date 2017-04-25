@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Debug X++ code
@@ -71,6 +71,7 @@ See also
 --------
 
 [Technical Concepts Guide](developer-home-page.md)
+
 
 
 

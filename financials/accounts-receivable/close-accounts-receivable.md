@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Close Accounts receivable
@@ -70,6 +70,7 @@ Create and submit the EU sales list
 | Page name                            | Usage                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
 |EU sales list                         | Report on European Union (EU) sales to the tax authority for value-added tax (VAT) declaration purposes.                                                                                                                           |
+
 
 
 

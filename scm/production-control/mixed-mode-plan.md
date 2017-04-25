@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Mixed mode planning - Combine discrete, process, and lean sourcing
@@ -71,5 +71,6 @@ For work that is independent of a supply policy, you don't have to change inform
 
 ## Process manufacturing – The production type
 For full flexibility in mixed mode, we recommend that you use production type BOMs for all products. You can then use production orders, kanbans, transfer orders, or purchase orders to supply a product. For process manufacturing, you must use a production type of **Formula**, **Co-product**, **By-product**, or **Planning item**. Kanbans and production orders can't be used for these production types.
+
 
 

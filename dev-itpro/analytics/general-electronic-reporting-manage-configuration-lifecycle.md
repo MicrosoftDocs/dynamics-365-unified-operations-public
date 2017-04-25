@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Manage the Electronic reporting configuration lifecycle
@@ -83,5 +83,6 @@ See also
 --------
 
 [Electronic reporting overview](general-electronic-reporting.md)
+
 
 

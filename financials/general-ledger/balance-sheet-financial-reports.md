@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Balance sheet financial reports
@@ -85,5 +85,6 @@ See also
 [View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
 
 

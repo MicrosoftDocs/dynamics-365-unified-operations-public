@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Register serial numbers in the sales process
@@ -82,6 +82,7 @@ Yes, the retail point of sale (POS) will prompt the user to enter a serial numbe
 This functionality is available to all roles that can maintain sales packing slips and sales invoices. The following duties let workers correct serial numbers, and register blank entries for serial numbers that can't be read or scanned:
 -   Maintain serial number corrections
 -   Maintain registration of non-readable serial numbers
+
 
 
 

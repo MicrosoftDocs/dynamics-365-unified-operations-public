@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Budget planning integration with other modules
@@ -148,5 +148,6 @@ Select a line and click the **Budget plan lines** button to run the **Budget pla
 Use the **Supply forecast** and **Demand forecast** buttons run these queries. In both cases, the query searches for forecast lines that could have created the budget plan lines. 
 
 Additional reports that are available include the **Forecast positions by budget plan** report. This report is especially useful when you want to determine whether a position has been correctly allocated to budget plans.
+
 
 

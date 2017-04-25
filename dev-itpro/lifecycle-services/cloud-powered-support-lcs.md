@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Manage Dynamics 365 for Operations Support experiences
@@ -108,6 +108,7 @@ When the support engineer has verified your issue and received a hotfix, he or s
 
 4.  Try to reproduce the issue on the VM.If you cannot reproduce the issue, on the Proposed solution page, select Yes for Accept proposed solution. Enter remarks about how the solution worked, and then click Submit your response.
 5.  When you have finished recreating the issue, on the Reproduce issue page, select Yes for Issue reproduced in VM, and then click Submit your virtual machine.
+
 
 
 

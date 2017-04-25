@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Intercompany invoicing
@@ -112,6 +112,7 @@ When the lending legal entity, USSI, posts the intercompany customer invoice, a 
 | A    | **Accounts payable** &gt; **Invoices** &gt; **Pending vendor invoices**                            | Review the invoice to verify that the timesheet values are included, and then post the vendor invoice.                  |
 | B    | **Project management and accounting** &gt; **Project invoices** &gt; **Project invoice proposals** | Create a new project invoice for the project, and verify that the hour transactions that were posted appear.            |
 | C    | The **Project invoice** page                                                                       | Select the project invoice, and then click **View details** to review the cost and sales amount. Then post the invoice. |
+
 
 
 

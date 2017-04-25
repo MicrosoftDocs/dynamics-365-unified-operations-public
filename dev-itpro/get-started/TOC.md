@@ -18,3 +18,4 @@
 ### [May 2016 task guides](new-updated-task-guides-available-may-2016.md)
 ### [February 2016 task guides](new-task-guides-available-february-2016.md)
 ### [Dynamics AX 7.0 (February 2016)](whats-new-changed-7-0-february-2016.md)
+

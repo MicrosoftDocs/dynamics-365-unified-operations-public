@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Task Single form pattern
@@ -124,5 +124,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![AX 2012 visual example](./media/tasksingle4.png)](./media/tasksingle4.png)
+
 
 

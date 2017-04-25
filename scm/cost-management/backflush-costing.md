@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Backflush costing
@@ -126,6 +126,7 @@ You should run backflush costing to periodically value the WIP and produce an en
     -   All indirect cost calculated for the consumed material within the period is calculated and deducted from WIP. The remaining indirect cost is posted as a variance.
 
 5.  Calculate the production variances to standard cost. The variance is calculated per cost group.
+
 
 
 

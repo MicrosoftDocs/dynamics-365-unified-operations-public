@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Plan for public sector functionality
@@ -78,5 +78,6 @@ See also
 --------
 
 [Public sector functionality](public-sector-functionality.md)
+
 
 

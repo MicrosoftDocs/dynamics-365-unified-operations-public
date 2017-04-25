@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Settle a partial customer payment before the discount date with a final payment after the discount date
@@ -112,6 +112,7 @@ Arnie changes the value in the **Use cash discount** field back to **Normal**, b
 | ARP-10020  |                  | 7/1/2015  |         |                                      | 297.00                                | 0.00    | USD      |
 | DISC-10020 |                  | 7/1/2015  |         |                                      | 3.00                                  | 0.00    | USD      |
 | ARP-10021  |                  | 7/11/2015 |         |                                      | 700.00                                | 0.00    | USD      |
+
 
 
 

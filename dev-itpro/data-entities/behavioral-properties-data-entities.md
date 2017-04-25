@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Behavioral properties on data entities
@@ -176,6 +176,7 @@ This behavior is enforced for all consumers – X++, OData, and so on. <strong>
 </tr>
 </tbody>
 </table>
+
 
 
 

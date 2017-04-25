@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: 150 percent reducing balance depreciation
@@ -90,5 +90,6 @@ The 150% reducing balance method divides 150 percent by the service life years.
 
 > [!NOTE]
 > Typically, when the amount that is calculated by using the 150% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.
+
 
 

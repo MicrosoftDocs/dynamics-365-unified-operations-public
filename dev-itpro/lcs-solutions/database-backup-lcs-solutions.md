@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Back up database for an LCS solution
@@ -43,5 +43,6 @@ See also
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+
 
 

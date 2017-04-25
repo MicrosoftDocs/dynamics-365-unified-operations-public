@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Amortize constant costs for a manufactured item
@@ -45,6 +45,7 @@ The quantity of a costing lot size for a manufactured item is used in a bill of 
 -   Specified calculation quantity in an order-specific BOM calculation − An order-specific BOM calculation can be performed for a line item on a sales order, sales quotation, or service order. The specified calculation quantity uses the quantity on the originating line item, but the default quantity can be overridden. You can select whether the order-specific BOM calculation uses a make-to-order or multilevel explosion mode.
 
 The calculated amount of a manufactured item’s amortized constant costs is termed charges.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: PerfSDK and multiuser testing with Visual Studio Online
@@ -189,6 +189,7 @@ If you see an error message like this: *System.TypeInitializationException: Syst
     { 
         Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
     }
+
 
 
 

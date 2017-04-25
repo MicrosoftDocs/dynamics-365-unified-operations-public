@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Year-end processing in the public sector
@@ -62,5 +62,6 @@ You must select a close type for every account in your chart of accounts. The cl
 -   **Not applicable** – The account isn't included in year-end processing.
 
 Posting definitions govern the accounting that occurs on the closing entries, and they also help create the opening transactions for the new year. To learn more, see [Posting definitions in the public sector](posting-definitions-public-sector.md).
+
 
 

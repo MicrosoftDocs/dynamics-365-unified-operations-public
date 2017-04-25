@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed assets disposal for Poland
@@ -87,5 +87,6 @@ A sale or scrap disposal of a fixed asset allows disposal of an entire fixed as
 -   **General** tab on the **Free text invoice** line.
 
 By default, the **Partial sales** field value is **100**. When a user selects the **Disposal scrap** or **Disposal sale** transaction type and an asset in a journal, the net book value will default on the journal line. If the user changes the percentage, the net book value on the journal line is reduced. The user can also manually change the net book value, after which the percentage in the **Partial sales** field will be recalculated. **Example** A fixed asset has been acquired at USD 10.000, depreciation USD 1.000, net book value USD 9.000. First partial sale 50% - net book value calculated for the journal line is 50% of USD 9.000 = USD 4.500. Second partial sale 50% - net book value calculated for the journal line is 50% of the remaining net book value USD 4.500 = USD 2.250. If a user wants to expense the remaining net book value of USD 2.250, he must enter a percentage of 100 on a journal or a free text invoice line.
+
 
 

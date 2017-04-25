@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Consolidation and elimination overview
@@ -94,4 +94,5 @@ By using the **Export company balances** option to export from one instance and 
 
 
 For more information, see [Currency revalution in a consolidation company](..\general-ledger\currency-revaluation-consolidation-company.md).
+
 

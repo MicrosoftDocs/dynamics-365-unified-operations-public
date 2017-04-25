@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Settle a partial customer payment that has discounts on credit notes
@@ -66,5 +66,6 @@ Discount information appears at the bottom of the **Settle transactions** page.
 | Cash discount amount to take | -1.00     |
 
 The settlement will be 100.00, and will include a payment of 99.00 and a discount of 1.00.
+
 
 

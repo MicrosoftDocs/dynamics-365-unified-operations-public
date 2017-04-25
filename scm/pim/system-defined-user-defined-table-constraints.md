@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: System-defined and user-defined table constraints
@@ -69,5 +69,6 @@ See also
 --------
 
 [Key concepts in product configuration models](product-configuration-models.md)
+
 
 

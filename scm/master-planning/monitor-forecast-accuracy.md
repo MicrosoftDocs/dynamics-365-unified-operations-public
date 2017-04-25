@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Monitor forecast accuracy
@@ -51,5 +51,6 @@ See also
 [Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
 
 [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+
 
 

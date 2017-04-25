@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Get access to Dynamics AX 2012 through a Cloud Service Provider
@@ -47,5 +47,6 @@ If you haven’t previously accessed CustomerSource, here are some resources t
 -   [Quick Start Guide for Microsoft Dynamics Cloud Service Support Benefits](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
  **Note** There is currently no on-premises release of the current release of Dynamics 365 for Operations, version 1611.
+
 
 

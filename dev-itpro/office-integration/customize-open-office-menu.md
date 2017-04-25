@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customize the Open in Microsoft Office menu
@@ -264,5 +264,6 @@ Sometimes, it's appropriate that the Action Pane of a page have a menu item but
 -   **Parameters:** The ID of the menu item
 
 Then, a mouse click of this menu item button is equivalent to a mouse click of the corresponding menu item on the **Open in Office** menu.
+
 
 

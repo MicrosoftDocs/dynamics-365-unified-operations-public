@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customer payments for a partial amount
@@ -63,5 +63,6 @@ When customers make a payment, there might be a very small amount that must sti
 
 ## Full settlement
 Customers might make a partial payment where the remaining amount won't be paid but is greater than the underpayment amount that is specified on the **Account payable parameters** page. If you want to mark the invoice as fully settled, you can use the **Full settlement** option on the **Settle transaction** page. (You can enable the full settlement functionality by using a configuration key.) For example, an invoice is posted for 1,000.00, and the customer makes a payment of 990.00. You've agreed that the customer doesn't have to pay the remaining 10.00. After you mark the invoice for settlement, you can also mark select **Full settlement**. The invoice will then be considered fully settled. The 10.00 difference is posted to a cash discount account as an additional cash discount amount.
+
 
 

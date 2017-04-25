@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: EventHandlerResult classes in request or response scenarios
@@ -86,4 +86,5 @@ The two new classes also contain a **newSingleResponse** static constructor for 
     {
         ret = result.isAccepted();
     }
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Class extensions
@@ -170,5 +170,6 @@ Static state applies to the type instead of an instance of the type. The followi
             staticState = 77;
         }
     }
+
 
 

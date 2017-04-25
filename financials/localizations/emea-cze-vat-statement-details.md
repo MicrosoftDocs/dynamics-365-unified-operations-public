@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: VAT statement for the Czech Republic
@@ -153,5 +153,6 @@ You can use the **Electronic reporting** workspace to review or change the VAT 
 
 ## Generate the VAT statement
 To generate a VAT XML file, open the **Sales tax payments** page, select vouchers, and then click **Export VAT XML file**.
+
 
 

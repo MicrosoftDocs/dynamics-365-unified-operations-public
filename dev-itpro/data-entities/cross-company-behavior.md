@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cross-company behavior
@@ -186,5 +186,6 @@ Here's how the X++ test code works with the shared entity:
 -   It accesses the data entity with one specific company when a new record is created.
 
 [![snip2](./media/snip2.png)](./media/snip2.png)
+
 
 

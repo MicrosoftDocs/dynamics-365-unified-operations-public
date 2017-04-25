@@ -60,6 +60,7 @@ There are several benefits of using the workflow system in your organization:
 -   **Process visibility** – You can track the status, history, and performance metrics of workflow instances. This helps you determine whether changes should be made to the workflow to improve efficiency.
 -   **Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.
 
+
 ## Workflow content
 
 + [Workflow architecture](workflow-system-architecture.md)

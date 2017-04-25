@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: SQL Server Reporting Services reports
@@ -52,5 +52,6 @@ The [SQL Server Reporting Services Reports report](https://mbs.microsoft.com/cu
 The report is a Microsoft Excel file. In this report, the rows are grouped alphabetically on tab 1. All rows are displayed when you click tab 2. 
 
 [![GeneratedReports](./media/generatedreports.png)](./media/generatedreports.png)
+
 
 

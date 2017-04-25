@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Vendor invoices overview
@@ -82,6 +82,7 @@ This option assumes that at least one product receipt has been posted for the pu
 ## Working with multiple invoices
 
 You can work with multiple invoices at the same time and post them all at the same time. If you must create multiple invoices, use the **Pending vendor invoices** page. If you must post and print multiple vendor invoices, use the invoice approval journal page. If you're using the invoice approval journal, at least one product receipt must be posted for the purchase order, and an invoice for the purchase order must be posted in an invoice register. The financial information for the invoice comes from the invoice that was posted in the register.
+
 
 
 

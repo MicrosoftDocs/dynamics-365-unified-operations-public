@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Add links to your organization's legal terms and privacy statement
@@ -58,5 +58,6 @@ To validate that the links have been added, on the toolbar at the top of the pag
 Click on these links to validate that they open the appropriate pages. 
 
 **Note:** The links open in a new window, so if you have a pop-up blocker enabled, you will have to add an exception to your pop-up blocker settings to allow Dynamics 365 for Operations to launch a new window.
+
 
 

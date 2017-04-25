@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure expense management
@@ -141,6 +141,7 @@ You can create expense report policies so that your organization can save time 
 -   When does the policy expire?
 -   What is the policy rule?
 -   What is the outcome of the policy rule?
+
 
 
 

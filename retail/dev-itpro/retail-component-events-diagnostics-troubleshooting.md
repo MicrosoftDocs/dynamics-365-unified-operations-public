@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail component events for diagnostics and troubleshooting
@@ -167,5 +167,6 @@ You can filter by the following criteria to refine your query:
 -   Severity level
 
 [![Search results on the Environment monitoring page](./media/log-search-results.png)](./media/log-search-results.png)
+
 
 

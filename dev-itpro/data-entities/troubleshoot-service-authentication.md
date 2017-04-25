@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Service authentication troubleshooting
@@ -77,6 +77,7 @@ You can also look at the event logs of the instance machine, if you have access 
 
 -   The **"aud"** segment of the JWT might contain a URI that has a trailing slash. The slash must be removed.
 -   The **"aud"** segment of the JWT might contain a URI that uses an incorrect capitalization style. The URI must be all lowercase.
+
 
 
 

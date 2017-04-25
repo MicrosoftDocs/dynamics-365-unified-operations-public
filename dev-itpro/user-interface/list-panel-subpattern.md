@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: List Panel subpattern
@@ -137,5 +137,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![ListPanel(4)](./media/listpanel4.png)](./media/listpanel4.png)
+
 
 

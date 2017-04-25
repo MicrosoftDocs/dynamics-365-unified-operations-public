@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Advance invoices for Eastern Europe
@@ -154,6 +154,7 @@ Create a purchase order, or select an existing purchase order. Click **Invoice**
 | Percent                                         | Specify the percentage of the prepayment for the purchase order.                                                         |
 | Update purchase                                 | Select from the options. The advance invoice amount will be calculated based on the Purchase order amount for the items. |
 | Posting profile with prepayment journal voucher | Specify the posting profile for the prepayment.                                                                          |
+
 
 
 

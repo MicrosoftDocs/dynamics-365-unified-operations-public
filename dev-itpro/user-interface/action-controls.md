@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Action controls
@@ -138,5 +138,6 @@ Keyboard shortcuts are another mechanism for triggering some actions. Many act
 
 ## Action search
 Dynamics AX 2012 included a Key Tips feature that let users run any command in an action pane by pressing Alt and then a series of letters. The action search feature is now implemented as the replacement for the old Key Tips feature. Action search can be accessed through a search field that is located in the standard action pane at the top of the form. Currently, it's represented by a magnifying glass icon in the action pane (note this is different from the navigation search feature in the navigation bar).  In the action search field, you can type the beginning of the name of the action that you want to perform in the field (typically, only two to four characters are required). This search mechanism then finds all buttons in visible action panes on the form that match the search string. You can then use click the button in the result list to run the command. For productivity, focus then returns to your last position in the form after the button has been triggered. You can also initiate action search by pressing Ctrl+/ or Alt+Q. Press the keyboard shortcut again will return focus to your last position in the form.
+
 
 

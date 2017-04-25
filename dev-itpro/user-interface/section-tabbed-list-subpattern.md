@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Section Tabbed List subpattern
@@ -87,5 +87,6 @@ This section will have answers to frequently asked questions that are related t
 ### Open issues
 
 None
+
 
 

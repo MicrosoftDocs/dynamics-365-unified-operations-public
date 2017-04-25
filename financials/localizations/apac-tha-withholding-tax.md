@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Withholding tax in Thailand
@@ -83,5 +83,6 @@ You must generate the **Withholding tax certificate** report after you've settle
 ### Generate the Withholding tax special report
 
 When you submit the **Withholding tax (Por Ngor Dor 53)** or **Withholding tax (Por Ngor Dor 3)** report, and you pay the withheld tax to the Revenue Department of Thailand, the department issues a receipt number. You must enter this receipt number in the **Receipt number** field on the **Posted withholding tax** page. Then, at the end of the month, you must generate the **Withholding tax special** report and submit it to the Revenue Department of Thailand. This report is generated in a format that is specified by the Revenue Department of Thailand.
+
 
 

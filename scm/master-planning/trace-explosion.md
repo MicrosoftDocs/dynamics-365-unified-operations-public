@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Use tracing for explosion
@@ -50,5 +50,6 @@ See also
 --------
 
 [Master plans](master-plans.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Handling cash discounts for overpayments
@@ -140,6 +140,7 @@ The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page) | 10.50        |               |
 | Accounts receivable                                                                              |              | 10.50         |
+
 
 
 

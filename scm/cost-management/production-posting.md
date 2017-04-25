@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Production posting
@@ -59,5 +59,6 @@ In the **Production control parameters**, you can use the **Ledger posting** fie
 -   **Production groups** – Use the ledger accounts that are set up on the production groups for both material and time consumption. The production groups are associated with the released products and copied to the production orders when those orders are created. The posting on the production orders will then follow the production groups that are associated with the production order.
 
 **Note:** If the standard method for calculating the cost of the finished item was used, the final transactions reflect this fact. If actual costs and the costs that are calculated by using the standard method differ, the difference is posted to the account that shows profit or loss.
+
 
 

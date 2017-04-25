@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Power BI Embedded integration
@@ -60,5 +60,6 @@ While both Power BI services are available, it's important to know which is best
 
 ## Service availability
 Power BI Embedded is available in most data centers now. You can check the latest availability on [Azure status](https://azure.microsoft.com/status/).
+
 
 

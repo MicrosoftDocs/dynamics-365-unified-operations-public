@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Import or manually create postal codes
@@ -52,4 +52,5 @@ For some countries, you must use the Data management framework to import codes,
 
 ## Create ZIP/postal codes manually
 Instead of importing codes, you can use the **Address setup** page to manually add new ZIP/postal codes.
+
 

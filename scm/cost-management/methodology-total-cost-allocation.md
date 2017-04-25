@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Total cost allocation method
@@ -65,6 +65,7 @@ The **By-product cost allocation** field on the **Co-products** page is an enume
 -   **Percent** ─ The cost amount is calculated as a percentage of the total cost of raw materials that are consumed in the production. The percentage that is used for the calculation is entered in the field.
 -   **Per series** ─ The cost amount is calculated as an amount per standard batch size of the production order. This amount is independent of the reported quantity in the production. The amount that is used for the calculation is entered in the field.
 -   **Per quantity** ─ The cost amount is calculated as an amount per reported quantity of the formula item in the production. The amount that is used for the calculation is entered in the field.
+
 
 
 

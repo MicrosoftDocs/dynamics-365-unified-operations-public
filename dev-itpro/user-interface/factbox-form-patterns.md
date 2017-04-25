@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: FactBox form patterns
@@ -167,5 +167,6 @@ This section will have answers to frequently asked questions that are related to
 **CustTable** &gt; **ContactsInfoPart** 
 
 [![FactBox(5)](./media/factbox5.png)](./media/factbox5.png)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Extensible control programming reference
@@ -1107,6 +1107,7 @@ Control Lifecycle Diagrams
 
 ## Control Instantiation
 [![ExtensibilityProcess](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Add contextual BI to forms
@@ -241,6 +241,7 @@ To work with the sample, you must install the provided demo data.
 7.  Click **Show navigation pane** on the navigation bar. 
 
     [![BIforms9](./media/biforms9.png)](./media/biforms9.png)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Quarantine orders
@@ -73,5 +73,6 @@ See also
 --------
 
 [Inventory blocking](inventory-blocking.md)
+
 
 

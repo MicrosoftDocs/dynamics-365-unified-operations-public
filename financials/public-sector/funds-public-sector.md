@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Funds in the public sector
@@ -103,5 +103,6 @@ Public sector organizations usually require balanced entries for financial dimen
 
 ## How do I set a fund balance to carry over to the new year?
 To learn about year-end processing for funds, see [Year-end processing in the public sector](year-end-processing-public-sector.md).
+
 
 

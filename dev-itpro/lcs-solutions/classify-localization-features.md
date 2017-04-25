@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Classify localization features
@@ -58,5 +58,6 @@ The following table explains the components of the naming convention.
 | Feature name        | Text        | A short feature title that describes what the feature is used for                                                             | Direct sales tax report |
 
 For more information about BPM, see [Upload business processes to BPM](../lifecycle-services/upload-business-processes-bpm-task-recorder.md).
+
 
 

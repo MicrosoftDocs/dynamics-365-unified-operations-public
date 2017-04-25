@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Office integration
@@ -218,5 +218,6 @@ See also
 [Office Integration Troubleshooting](office-integration-troubleshooting.md)
 
 [Application stack and server architecture](../dev-tools/application-stack-server-architecture.md)
+
 
 

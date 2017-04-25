@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Monthly average cost model for China
@@ -69,6 +69,7 @@ Many Chinese manufacturing and trading companies use a monthly average cost mode
 | The monthly average cost is calculated, including all receipt and issue transactions. If the receipt transactions have not been invoiced, the estimated physical price is considered. The calculated monthly average cost is used to settle all issued transactions for the month, whether they are invoiced or not. When the receipts are invoiced, if there are differences between the estimated physical price and the invoiced price, the difference is added to the current on-hand inventory value. No adjustment is made to the previously issued transactions. If the current inventory quantity is 0 (zero), the differences are adjusted in the expense account. | Only the monthly average cost from invoiced receipts is calculated, and only invoiced issue transactions are settled. Non-invoiced receipts and issue transactions are calculated and settled only when they are invoiced. |
 
  
+
 
 
 

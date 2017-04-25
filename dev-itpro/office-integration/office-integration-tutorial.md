@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Office integration tutorial
@@ -480,5 +480,6 @@ See also
 [Office integration](office-integration.md)
 
 [Office Integration Troubleshooting](office-integration-troubleshooting.md)
+
 
 

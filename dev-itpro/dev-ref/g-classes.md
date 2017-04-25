@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: G Classes
@@ -70,5 +70,6 @@ A container that represents the assemblies of the GAC.
 Initializes a new instance of the Gac class.
 
     public void new()
+
 
 

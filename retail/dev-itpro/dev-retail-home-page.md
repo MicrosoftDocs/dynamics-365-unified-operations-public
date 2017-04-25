@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dynamics 365 for Operations  -  Retail for IT pros and developers
@@ -114,6 +114,7 @@ Retail is dependent on Dynamics 365 for Operations. We recommend that you famili
 
 ## Hotfixes
 -   [Install Retail hotfixes](install-retail-hotfix.md)
+
 
 
 

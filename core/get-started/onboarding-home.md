@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Onboarding to Microsoft Dynamics 365 for Operations
@@ -38,4 +38,5 @@ The following resources provide an overview of the Lifecycle Services and how to
 -   [Sign up for a subscription](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription)
 -   [Microsoft FastTrack for Dynamics 365 overview](fasttrack-dynamics-365-overview.md)
 -   [Customer introduction to Lifecycle Services](/dynamics365/operations/dev-itpro/lifecycle-services/lcs-works-lcs)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: B Classes
@@ -702,5 +702,6 @@ data
 ### Method finalize
 
     public void finalize()
+
 
 

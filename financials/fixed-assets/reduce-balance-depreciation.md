@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Reduce balance depreciation
 description: This article gives an overview of the Reducing balance method of depreciation.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -86,6 +86,7 @@ Using the Reducing balance method, 30 percent of the depreciation base (net book
 
  
 -
+
 
 
 

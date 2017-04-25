@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Organize report components in report designer
@@ -162,5 +162,6 @@ See also
 --------
 
 [Financial reporting](financial-reporting-intro.md)
+
 
 

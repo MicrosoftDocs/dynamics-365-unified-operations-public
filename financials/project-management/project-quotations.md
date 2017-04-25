@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Project quotations
@@ -44,5 +44,6 @@ In a project quotation, you enter the services, basic contact information, speci
 The project quotation is a non-binding estimate of the work that must be performed. However, when the information in the quotation is copied to a project that is associated with a project contract, that information becomes part of a binding agreement between two parties. 
 
 If the customer approves the project quotation, you can copy the information in the project quotation to a project. You can also copy the project quotation information to a project forecast at the same time.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Inventory journals
@@ -97,5 +97,6 @@ A journal can be accessed by only one user at a time. If several users must acce
 
 ## Posting journal lines
 You can post the journal lines that you create at any time until you've locked an item from additional transactions. The data that you enter in a journal remains in that journal, even if you close the journal without posting the lines.
+
 
 

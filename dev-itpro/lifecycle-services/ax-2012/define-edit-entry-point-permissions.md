@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Define or edit entry point permissions (AX 2012)
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Define or edit entry point permissions (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 
@@ -92,6 +92,7 @@ The following example shows how to use the guided form to update the entry point
 11. Review the entries in the **Current access level** column to verify whether the role now grants the new permission to the entry points.
 12. Use the **Security test** workspace to validate the permissions.
 13. Use **Load additional metadata** to validate whether licensing requirements have changed.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Use fiscal data from the invoice account
@@ -74,6 +74,7 @@ When the **Invoice account** field is changed, the following fields can be updat
 -   Name
 -   Sales tax group
 -   Tax exemption
+
 
 
 

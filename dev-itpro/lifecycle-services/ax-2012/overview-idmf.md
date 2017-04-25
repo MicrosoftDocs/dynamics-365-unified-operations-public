@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Intelligent Data Management Framework overview (AX 2012)
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Intelligent Data Management Framework overview (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic describes the administration and use of the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF). IDMF lets system administrators optimize the performance of Microsoft Dynamics AX installations. IDMF assesses the health of the Microsoft Dynamics AX application, analyzes current usage patterns, and helps reduce database size.
@@ -139,6 +139,7 @@ This section explains the terminology and concepts used in IDMF.
 | Restore                                               | The process of restoring archived data from the archive database to the production database. The restore process moves qualifying data from the archive database to the production database.                                                                                                                                                                                                                                      |
 | Rule                                                  | A condition that you put on a field in one of the entities in a Purge Object or an Archive Object. When you have multiple rules, they form the "and" clauses in a query.                                                                                                                                                                                                                                                          |
 | System health, also referred to as application health | System health provides analysis for selected measures from the Inventory management, Accounts receivable, Accounts payable, General ledger, and Administration modules of Microsoft Dynamics AX.                                                                                                                                                                                                                                  |
+
 
 
 

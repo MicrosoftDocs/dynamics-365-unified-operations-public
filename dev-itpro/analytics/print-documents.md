@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Printing in Dynamics 365 for Operations applications
@@ -77,5 +77,6 @@ The client-based solution lets customers manage the scale of their printing need
 ### Service components for network printing
 
 The following diagram shows the basic components that help support network printing operations. [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png) Note that a single printer can be registered with multiple Document Routing Agents. To resolve the printer preferences, the hosted service uses the network path that uniquely identifies every network printer. As a result, even when a printer is registered by multiple clients, it appears as a single selection in the list of printers available in Dynamics 365 for Operations applications.
+
 
 

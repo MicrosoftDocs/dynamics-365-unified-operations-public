@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Purchase agreements
@@ -102,5 +102,6 @@ See also
 [Create a purchase agreement (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
 [Create a purchase release order from a purchase agreement (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+
 
 

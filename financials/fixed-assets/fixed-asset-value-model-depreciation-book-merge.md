@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed asset value model and depreciation book merge
@@ -75,5 +75,6 @@ Inquiries and reports support all books. Reports that aren't included in the fol
 
 ## Upgrade
 The upgrade process will move your existing setup and all your existing transactions to the new book structure. Value models will remain as they currently are, as a book that posts to the general ledger. However, depreciation books will be moved to a book that has the **Post to general ledger** option set to **No**. Depreciation book journal names will be moved to a general ledger journal name that has the posting layer set to **None**.
+
 
 

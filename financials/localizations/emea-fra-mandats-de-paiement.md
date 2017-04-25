@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Mandats de paiement in the public sector in France
@@ -73,6 +73,7 @@ To open the database inquiry page on the **Maintain mandats de paiement** page, 
     | Table  | Derived table | Field                        | Criteria   |
     |--------|---------------|------------------------------|------------|
     | Mandat | Mandat        | Accountant acceptance status | "Rejected" |
+
 
 
 

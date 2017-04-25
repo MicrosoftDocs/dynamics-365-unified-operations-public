@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Extensible control layout guidelines
@@ -111,5 +111,6 @@ A good way to tell is to inspect the element and look for the desired classes.
     -   For **$dyn.layout.Size.content**, there should be no extra classes, and the manual height/width should be specified inline on the element.
 
 If these classes don't appear as you expected, examine the usage of your binding handlers, and make sure that you've read through the list of dos and don'ts on this page.
+
 
 

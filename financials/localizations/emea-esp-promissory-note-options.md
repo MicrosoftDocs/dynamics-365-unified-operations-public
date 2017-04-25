@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Spanish promissory note options
@@ -54,5 +54,6 @@ If the **Date treatment (promissory notes journal)** parameter is set to **Yes**
 
 ## Invoice confirmation
 If the **Confirming invoices treatment** parameter is set to **Yes**, a separate line is created for each invoice number when you create payment proposals for Remittance journals and Settle promissory note journals. Separate lines are created, regardless of the selection in the **Period** field for the method of payment. Each invoice amount can be verified in the Remittance journal. If the **Confirming invoices treatment** parameter is set to **No**, journal lines can include amounts for multiple invoices, depending on the selection in the **Period** field.
+
 
 

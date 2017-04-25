@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ attribute classes
@@ -170,5 +170,6 @@ You use the **DictMethod** class to find the metadata value of an attribute tha
             ("CustCustomerService", "create");
     }
     **************/
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Vendor payments for a partial amount
@@ -57,5 +57,6 @@ For example, you receive a 2-percent cash discount if the invoice is paid within
 
 ## Overpayment/underpayment amounts
 You might make a partial payment where the amount that must still be settled is very small. For example, the vendor invoice is for 1,000.00, and you pay 999.90. If the remaining amount is less than the amount that is specified for overpayments or underpayments on the **Accounts payable parameters** page, the difference is automatically posted to an overpayment/underpayment ledger account.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Workflow subsystem updates in Dynamics 365 for Operations
@@ -62,5 +62,6 @@ See also
 --------
 
 [Technical Concepts Guide for Developers](..\dev-tools\developer-home-page.md)
+
 
 

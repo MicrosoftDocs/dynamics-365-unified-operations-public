@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Write business logic using C# and X++ source code
@@ -255,6 +255,7 @@ For this test, we'll be debugging the C\# code that we've written. To do this, w
 7.  Find the variable customer a few lines above your breakpoint.
 8.  Right-click the customer variable, and then click **QuickWatch**. Any long integer value proves that your LINQ query worked. [![QuickWatch\_LinqC](./media/quickwatch_linqc2.png)](./media/quickwatch_linqc2.png)
 9.  Press **F5** to complete the **Save** operation.
+
 
 
 

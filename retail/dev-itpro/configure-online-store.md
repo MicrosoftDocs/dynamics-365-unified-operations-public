@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure an online store
@@ -64,5 +64,6 @@ The topics listed in the following table help you configure Dynamics 365 for Ope
 | Set up channel integration profiles. | Profiles enable the components of Retail to communicate with each other. Set up profiles before you configure data exchange settings. | [Set up a Real-time Service profile](https://technet.microsoft.com/en-us/library/hh580631.aspx) (TechNet content for Microsoft Dynamics AX 2012) [Set up a channel profile](https://technet.microsoft.com/en-us/library/jj677402.aspx) (TechNet content for Microsoft Dynamics AX 2012) |
 
  
+
 
 

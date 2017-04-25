@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Build an extensible control
@@ -408,5 +408,6 @@ In this tutorial, you've seen how you can use X++ when you define the design-tim
 
 ## Bidirectional or righttoleft support
 To validate right-to-left (RTL) support for your extensible control, you simply need to set the **dir** (direction) attribute on the HTML document. When this attribute is changed, the browser will automatically change the layout direction of your control. You should make sure that your control doesn’t implement any styling which interferes with this layout. Instead of setting this attribute manually, you can also validate by placing your control on a form, and then selecting a RTL language. Selecting a RTL language will cause the client to also update the **dir** attribute appropriately. For more information, see [dir attribute](http://www.w3.org/TR/html5/dom.html#the-dir-attribute) in the HTML standards.
+
 
 

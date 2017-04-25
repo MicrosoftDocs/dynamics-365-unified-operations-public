@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Wizard form pattern
@@ -122,5 +122,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![AX 2012 example](./media/wizard3.png)](./media/wizard3.png)
+
 
 

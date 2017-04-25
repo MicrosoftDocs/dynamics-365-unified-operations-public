@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Call CRT service in offline mode
@@ -55,6 +55,7 @@ When a point of sale (POS) device goes offline (in other words, when it isn't co
         <add source="assembly" value="Contoso.Commerce.Runtime.Services" />
 
 9.  Restart dllhost.exe. (You should restart the dllhost.exe for MPOS to read the new config file, this will be required even when you do any upgrade if it has config file changes.)
+
 
 
 

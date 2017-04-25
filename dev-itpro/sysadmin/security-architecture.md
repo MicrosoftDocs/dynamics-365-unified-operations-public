@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Security architecture
@@ -63,5 +63,6 @@ Use the extensible data security framework to control access to transactional da
 Record-level security, which was a mechanism for securing data in Dynamics AX 2012 and earlier versions, is now obsolete. Extensible data security is the recommended mechanism for securing or filtering data in the program. 
 
 Additionally, the Table Permissions Framework helps protect some data. Data security for specific tables is enforced by Application Object Server (AOS).
+
 
 

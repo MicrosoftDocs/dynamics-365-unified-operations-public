@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Form styles and patterns
@@ -167,6 +167,7 @@ Some forms are structurally close to a defined form pattern, but because some as
 3.  Save the form, so that the property values are set by the pattern.
 4.  Remove the pattern.
 5.  Move the controls that deviate from the pattern back to their original location.
+
 
 
 

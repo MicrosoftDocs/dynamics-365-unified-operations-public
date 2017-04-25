@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure authentication providers
@@ -48,6 +48,7 @@ Here is a walkthrough of the process for registering OpenID providers so that
 3.  For the test online store, edit the web.config file so that it specifies the correct redirect URL and domain, as shown in the following example. If you're using a third-party online store, this information can be stored as required.
 
         redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
+
 
 
 

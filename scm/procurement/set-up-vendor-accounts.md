@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up vendor accounts
@@ -109,5 +109,6 @@ If you must make payments to a vendor bank account, you can enter information ab
 You can specify the default accounts that automatically appear in vendor invoice journals for the specified vendor. This functionality can be useful if you typically pay for the same types of items or services from the same vendors over time. When you specify a default account, you can quickly and efficiently enter journal entries in the invoice journal. The default accounts that you specify aren't used for purchase orders, or for vendor invoices that are entered on the **Vendor invoice** page.  
 
 You select default accounts on the **Default account setup** page, which you can open from the **Invoice** tab on the vendor record. The accounts that you select here appear in the filtered list of accounts for the vendor account when you enter a journal entry. You can set one of the accounts as a default account.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Symbol font
@@ -49,5 +49,6 @@ The Symbol font defines the set of out-of-the-box symbols available for use in 
 |Microsoft Dynamics AX platform	|Platform update 1	|[Symbol list + images](https://msdynamics.blob.core.windows.net/media/2017/02/DynamicsSymbolFont_Update1.pdf)	|7.0.4127.16103	|May 2016|
 |Microsoft Dynamics AX platform	|7.0	|[Symbol list + images](https://msdynamics.blob.core.windows.net/media/2017/02/DynamicsSymbolFont_RTW.pdf)	|7.0.4030.16079	|February 2016|
  
+
 
 

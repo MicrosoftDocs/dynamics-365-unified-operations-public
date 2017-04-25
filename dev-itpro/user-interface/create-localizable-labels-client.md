@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create localizable labels
@@ -105,5 +105,6 @@ If the browser doesn't find the file, you might have mistyped the name of the la
 ### Microsoft Visual Studio form previewer
 
 The form previewer isn't currently configured to load labels via the label resource controller. The form previewer will load only labels that are defined directly in the .js file for the code behind (located at /Resources/Scripts). Until the form previewer is updated so that it can load .js files from the label resource controller, make sure that you also define the labels in the .js file for the code behind of the control. The dependency on these labels will be removed in a future update.
+
 
 

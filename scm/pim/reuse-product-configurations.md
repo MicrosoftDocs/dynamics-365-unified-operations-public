@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Reuse product configurations
@@ -47,5 +47,6 @@ To enable configurations to be reused, you must specify the following informatio
 
 ## Resetting configuration reuse
 When you reset configuration reuse, previously created configurations are no longer considered. You might want to reset configuration reuse if the BOM or route was changed, but no related attributes were changed. You reset configuration reuse on the **General** FastTab for the component.
+
 
 

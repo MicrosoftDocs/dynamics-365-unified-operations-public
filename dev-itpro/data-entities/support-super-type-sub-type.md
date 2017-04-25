@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Super types and sub types
@@ -67,5 +67,6 @@ In this example, we create a single entity, **Party**, that can be used for both
 -   **Organization-specific attributes** – **OrgNumber**, **ABC**, and so on. These fields are mapped to derived data source DirPartyTable\_DirOrganization.
 
 [![sub9](./media/sub9.png)](./media/sub9.png) Mapping fields from base and multiple derived types in a single data entity is a design-time task. However, at run time, we must specify when each derived type should be created. This can be based on fields such as **InstanceRelationType**, or a computed column can be created to use **String** to represent different types. In the **Party** entity example, a **PartyType** computed column can be created to represent the **Person** and **Organization** derived types. The following code snippet illustrates this approach. [![sub10](./media/sub10.png)](./media/sub10.png) In this example, the **Party** type is computed by using the **InstanceRelationType** column on DirPartyTable. This approach works for reading data. However, to do **Create** or **Update** operations, you must write code where you override the **initializeEntityDataSource** method on the data entity, based on type, and set a correct instance of the derived type for the data source run-time context buffer. [![sub11](./media/sub11.png)](./media/sub11.png)
+
 
 

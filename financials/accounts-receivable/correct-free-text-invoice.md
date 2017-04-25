@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Correct a free text invoice
@@ -54,5 +54,6 @@ You can identify canceling and correcting invoices in two ways:
 
 > [!NOTE]
 > This feature is available only if the **Free text invoice correction** configuration key is selected.
+
 
 

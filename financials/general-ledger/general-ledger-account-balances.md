@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: General ledger account balances
@@ -54,5 +54,6 @@ When a user changes the parameters the balances are refreshed. The user can also
 Users can drill down on the balances to view the transactions that make up the balance.    
 
 For more information, see [View financial reports](view-financial-reports.md).
+
 
 

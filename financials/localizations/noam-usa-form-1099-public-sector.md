@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Form 1099 in the public sector
@@ -61,5 +61,6 @@ See also
 --------
 
 [Accounts payable in the public sector](https://ax.help.dynamics.com/en/wiki/Accounts-payable-in-the-public-sector/)
+
 
 

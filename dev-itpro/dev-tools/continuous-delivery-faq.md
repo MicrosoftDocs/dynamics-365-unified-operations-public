@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Development and continuous delivery FAQ
@@ -147,6 +147,7 @@ A customer subscription comes with three environments by default: a dev or build
 3.  Apply configuration data packages on a sandbox environment.
 4.  Apply configuration data packages on a production environment.
 5.  Refresh a sandbox database from production. Copy the production environment's database to a tier-2 sandbox environment. This is typical after the application is live and you want to debug an issue or validate upcoming updates.
+
 
 
 

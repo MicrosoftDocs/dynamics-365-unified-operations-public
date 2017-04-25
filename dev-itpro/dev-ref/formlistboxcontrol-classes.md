@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: F Classes - FormListBoxControl to FormNotifyEventArgs
@@ -12107,5 +12107,6 @@ formDataSource
 Initializes a new instance of the FormNotifyEventArgs class.
 
     public void new()
+
 
 

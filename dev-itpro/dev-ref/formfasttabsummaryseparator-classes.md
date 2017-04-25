@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: F Classes - FormFastTabSummarySeparator to FormGridControl
@@ -8368,5 +8368,6 @@ Indicates that the mouse pointer has left the control.
 Sets the focus on the control.
 
     public void setFocus()
+
 
 

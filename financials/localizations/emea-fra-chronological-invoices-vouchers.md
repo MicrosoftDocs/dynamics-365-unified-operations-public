@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Chronological invoice and voucher numbers for France
@@ -86,5 +86,6 @@ If different customers use different patterns for numbering, you must set up chr
 
 ## Invoice posting
 When you post an invoice or a credit note, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
+
 
 

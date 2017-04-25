@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Benefit eligibility policies
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Benefit eligibility policies
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.
@@ -58,5 +58,6 @@ See also
 --------
 
 [Defining and managing a benefit program](manage-benefit-program.md)
+
 
 

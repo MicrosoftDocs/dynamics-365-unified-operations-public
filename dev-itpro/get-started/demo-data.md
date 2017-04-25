@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Demo data overview
@@ -72,6 +72,7 @@ The demo data set supports 40 languages across 16 countries/regions, and also su
 | USPI         | Contoso Process Industry             |
 | USRT         | Contoso Retail USA                   |
 | USSI         | Contoso Consulting USA               |
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: (CHN) Chinese tax integration modification for VAT customer invoices FAQ
@@ -88,5 +88,6 @@ See also
 [Configure tax integration for China](apac-chn-tax-integration.md)
 
 [Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md)
+
 
 

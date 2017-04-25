@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Inventory blocking
@@ -72,5 +72,6 @@ See also
 [Quality management processes](quality-management-processes.md)
 
 [Inspect the quality of goods (task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
 
 

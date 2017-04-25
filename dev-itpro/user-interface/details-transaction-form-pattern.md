@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Details Transaction form pattern
@@ -225,5 +225,6 @@ None currently.
 ##### Grid view
 
 [![AX 2012 example: Grid view](./media/detailstransaction9-1024x727.png)](./media/detailstransaction9.png)
+
 
 

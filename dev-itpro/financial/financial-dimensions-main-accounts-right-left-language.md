@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Financial dimensions and main accounts in a right-to-left language
@@ -46,5 +46,6 @@ Financial dimensions and main accounts are key components of the planning phase 
 -   Avoid using the selected chart of accounts delimiter in financial dimension and main account values.
 
 By following these best practices, you help guarantee consistent representation of the user defined-order throughout the system.
+
 
 

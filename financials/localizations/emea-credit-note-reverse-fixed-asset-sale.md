@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed assets disposal for Estonia and Lithuania
@@ -46,5 +46,6 @@ Fixed assets can be sold using disposal functionality through a free text invoi
 5.  Post the credit note.
 
 The fixed asset disposal transactions, created when you posted the credit note, are reversed. The status of the fixed asset remains **Sold**. You can still change the status of the fixed asset manually, if necessary.
+
 
 

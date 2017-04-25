@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create a copy of a Dynamics 365 for Operations database to restore later
@@ -153,5 +153,6 @@ If the source and target environments have different SQL user passwords, then yo
 
 ## Limitations
 The link between the database and document handling documents that are stored in Azure blob storage might be broken after importing a database. If you have custom code that utilizes the X++ class FileUpload to place files in blob storage, the links to these files might also be broken.
+
 
 

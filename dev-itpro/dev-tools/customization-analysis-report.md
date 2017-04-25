@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customization Analysis Report (CAR)
@@ -420,6 +420,7 @@ Display TransDate myDateMethod()
 | Error message       | %1 is a base table and must not be modified                                                                                                                                                  |
 | Issue type/severity | MetaData/Warning                                                                                                                                                                             |
 | How to fix it       | Don't customize the table.                                                                                                                                                                   |
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure a manual task in a workflow
@@ -352,6 +352,7 @@ When the manual task is assigned to a user, the user must take action on the tas
 5.  Select the **Delegate** check box if the user should be able to assign the task to another user.
 6.  Select the **Reassign** check box if the user should be able to reassign the task to another user in the work item queue.
 7.  Select the **Release** check box if the user should be able to reassign the task to the work item queue. Another user can then complete the task.
+
 
 
 

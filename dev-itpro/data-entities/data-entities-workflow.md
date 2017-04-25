@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entities - Workflow
@@ -69,5 +69,6 @@ See also
 [Data entities and packages framework](data-entities-data-packages.md)
 
 [Data entities](data-entities.md)
+
 
 

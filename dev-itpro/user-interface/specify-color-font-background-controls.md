@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Font and background colors for input, table, and grid controls
@@ -165,5 +165,6 @@ Previously, run-time conversion that used **WinAPI::RGB2Int** was required, beca
     Static int GrayColor = 0xdcdcdc
 
     Static int GrayColor = 14474460; // DCDCDC or 220,220,220
+
 
 

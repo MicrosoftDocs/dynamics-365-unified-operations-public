@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Prepare to migrate to Dynamics 365 for Operations
@@ -299,6 +299,7 @@ Refer to these topics to migrate code Dynamics AX 2012 that deals with context m
 
 -   [Context menus](code-migration-context-menus.md)
 -   [Mouse double-click](code-migration-double-click.md)
+
 
 
 

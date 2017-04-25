@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create or update a methodology (LCS)
@@ -67,6 +67,7 @@ There are two ways to make changes to a methodology. You can append an existing 
 -   Copy a phase or task.
 -   Reorder phases and tasks.
 -   Delete a phase or task.
+
 
 
 

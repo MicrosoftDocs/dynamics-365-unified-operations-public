@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: German journal list report
@@ -41,6 +41,7 @@ The **German journal list** report shows a list of transactions that are produce
 
 1.  Run the Journalizing function (**General ledger** &gt; **Periodic tasks** &gt; **General journals** &gt; **Journalizing**).
 2.  On the **Ledger journals** page, select a line, and then click **German journal list**.
+
 
 
 

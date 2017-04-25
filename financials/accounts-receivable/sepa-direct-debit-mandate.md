@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up SEPA direct debit mandate
@@ -61,4 +61,5 @@ You must set up a method of payment for direct debit mandates. You use this meth
 
 See Also
 [Direct debit overview](sepa-direct-debit-overview.md) 
+
 

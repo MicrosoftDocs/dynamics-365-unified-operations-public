@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Check box support in tree controls
@@ -157,5 +157,6 @@ To react to or track the checked state of a node (**idx** is the node index), us
     {
         super(_Idx, _newState);
     }
+
 
 

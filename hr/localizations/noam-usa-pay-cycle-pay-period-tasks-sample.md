@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up pay cycles and pay periods
@@ -103,5 +103,6 @@ Typically, pay cycles are assigned to positions when the positions are set up fo
 If you must control the specific pay periods that various payroll elements are processed in, the next step is to set up payroll calculation frequencies. For more information, see [Payroll calculation frequencies tasks](noam-usa-payroll-calculation-frequencies-tasks.md). 
 
 If you decide not to set up payroll calculation frequencies, the next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](noam-usa-work-cycle-work-period-tasks.md).
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up centralized payments
@@ -61,5 +61,6 @@ When you create a payment in one legal entity that settles invoices in other leg
 
 ## Set up default descriptions
 You can define default descriptions for intercompany settlement vouchers. The default description is included on the due-to and due-from transactions during the cross-company settlement process. On the **Default descriptions** page, you can create new descriptions for both **Intercompany customer settlement** and **Intercompany vendor settlement** by selecting a language and then entering text.
+
 
 

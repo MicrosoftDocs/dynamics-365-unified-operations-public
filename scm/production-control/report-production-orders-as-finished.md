@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Report production orders as finished
@@ -50,5 +50,6 @@ The quantity is reported to the output location. Warehouse work is then gener
 
 ## Set a production order to Reporting as finished
 You can set a production order to **Report as finished** through the standard production order update function, or through the route and job card journals, or through the journal **Report as finished**. You can also update the stage to **Report as finished** through the job card terminal and job card device pages, when you report on the last job of the production order. Finally, you can enable the **Report as finished** option as a process for the handheld warehouse device solution.  
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Common sources of production variances
@@ -64,6 +64,7 @@ Here are some typical sources of a **production substitution** variance:
 -   You manually add an operation to the production route and report that operation as consumed.
 -   When you create the production order, you select a BOM version that differs from the BOM version that is used in the standard cost calculation.
 -   When you create the production order, you select a route version that differs from the route version that is used in the standard cost calculation.
+
 
 
 

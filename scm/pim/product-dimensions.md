@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Product dimensions
@@ -70,6 +70,7 @@ A company sells denim jeans. The item, Jeans, uses the Color and Size product di
 | Brown | L    |
 | Brown | XL   |
 | Brown | XXL  |
+
 
 
 

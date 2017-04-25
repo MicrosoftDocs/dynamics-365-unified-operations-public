@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Waive, reinstate, or reverse interest fees
@@ -98,5 +98,6 @@ You can reverse interest transactions by using the **Transaction interest** but
 You can view the detailed history of adjustments that were made for interest notes, such as the user who entered the adjustment, the type of adjustment, the amount, and when the adjustment was entered. For example, you might want to view the previous adjustments that were entered for an interest note before you create a new interest note. 
 
 You can reverse interest transactions by using the **History** button on the **Collect** tab of the **Customer** page.
+
 
 

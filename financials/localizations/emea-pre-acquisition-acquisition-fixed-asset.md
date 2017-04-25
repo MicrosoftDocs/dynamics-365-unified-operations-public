@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Post the pre-acquisition of a fixed asset
@@ -56,6 +56,7 @@ Before you can post a pre-acquisition, you must complete the following setup:
 8.  Click **Select** to set up the selection criteria, and then click **OK**.
 9.  Click **OK** to close the **Pre-acquisition proposal** page.
 10. Click **Post** &gt; **Post** to post the pre-acquisition transaction. On the **Books** page, the status of the fixed asset should now be **Acquired**.
+
 
 
 

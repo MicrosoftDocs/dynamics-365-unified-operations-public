@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Run the Document Routing Agent as a Windows service
@@ -86,5 +86,6 @@ By default, the Document Routing Agent runs as a desktop application. To run the
 6.  Start the service.
 
 The Document Routing Agent is now running as a Windows service.
+
 
 

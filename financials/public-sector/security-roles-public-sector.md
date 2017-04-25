@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Security roles in the public sector
@@ -105,5 +105,6 @@ See also
 --------
 
 [Role-based security](/dynamics365/operations/dev-itpro/sysadmin/role-based-security)
+
 
 

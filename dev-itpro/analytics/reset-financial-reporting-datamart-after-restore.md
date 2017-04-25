@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Reset the financial reporting data mart after restoring a database
@@ -119,6 +119,7 @@ Import your report designs from the Report Designer, using the file created duri
     -   To import specific reports, rows, columns, trees, or dimension sets, select the reports, rows, columns, trees, or dimension sets to import.
 
 6.  Click **Import**.
+
 
 
 

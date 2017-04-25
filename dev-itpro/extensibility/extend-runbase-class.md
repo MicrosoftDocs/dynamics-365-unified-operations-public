@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Extend the RunBase class
@@ -166,4 +166,5 @@ final class MySysUserLogCleanup_Extension
     }
 }
 </pre>
+
 

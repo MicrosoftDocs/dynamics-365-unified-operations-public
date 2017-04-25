@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Spanish bill of exchange options
@@ -61,6 +61,7 @@ If the **Date treatment on bill of exchange journal** parameter is set to **Yes*
 -   Remittance journal
 -   Protest bill of exchange journal
 -   Redraw bill of exchange journal
+
 
 
 

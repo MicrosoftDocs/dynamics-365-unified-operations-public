@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure and send email
@@ -168,5 +168,6 @@ See also
 [Office integration tutorial](/dynamics365/operations/dev-itpro/office-integration/office-integration-tutorial)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
+
 
 

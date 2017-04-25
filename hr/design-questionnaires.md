@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Design a questionnaire
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Design a questionnaire
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
@@ -251,5 +251,6 @@ See also
 [Distributing and completing questionnaires](distribute-questionnaires.md)
 
 [Viewing and evaluating the results of questionnaires](evaluate-questionnaire-results.md)
+
 
 

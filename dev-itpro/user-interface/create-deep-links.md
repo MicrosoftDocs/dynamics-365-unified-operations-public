@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create and use deep links
@@ -108,5 +108,6 @@ System.Uri fullURI = generator.GenerateFullUrl();
 // to get the encoded URI, use the following code
 fullURI.AbsoluteUri
 ```
+
 
 

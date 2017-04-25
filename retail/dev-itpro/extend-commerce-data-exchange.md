@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Extend Commerce Data Exchange - Real-time Service
@@ -103,5 +103,6 @@ After you've finished building your new extension methods, the project will be d
 3.  From the serviceResponse object, you can read the response values from Real-time Service.
 
 **Note:** The **InvokeExtensionMethod** method takes two parameters. One parameter is the Real-time Service method name, and the other is the list of parameters that should be used. The method name that is passed should be the same as the method name that you created in the **RetailTransactionServiceEx** class.
+
 
 

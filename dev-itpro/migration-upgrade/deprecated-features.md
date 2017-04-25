@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Deprecated features
@@ -813,6 +813,7 @@ Human Resources Payroll information
 | Reason for deprecation       | This functionality has been replaced by another feature.                                    |
 | Replaced by another feature? | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX) |
 | Modules affected             | General ledger                                                                              |
+
 
 
 

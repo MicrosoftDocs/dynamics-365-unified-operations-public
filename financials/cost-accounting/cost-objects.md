@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost object dimensions
@@ -46,5 +46,6 @@ Cost objects are known as *cost object dimensions*. After you’ve decided which
 
 ## Import cost object dimension members through data connectors
 To make the import of cost object dimension members easier, you use data connectors to retrieve the values from the entities that you want to use as cost object dimensions. You can use either the pre-built data connectors or custom data connectors that you build.
+
 
 

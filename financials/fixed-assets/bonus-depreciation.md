@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Bonus depreciation
@@ -68,5 +68,6 @@ When bonus depreciation is calculated by using the proposal process, a bonus dep
 You can create an unlimited number of bonus depreciation records. After you assign those records to the asset group book, they are applied to the asset book. 
 
 Bonus depreciation is entered as either a percentage or a fixed amount. When you post depreciation proposals, bonus depreciation transactions are posted to the book as separate transactions from the depreciation transactions.
+
 
 

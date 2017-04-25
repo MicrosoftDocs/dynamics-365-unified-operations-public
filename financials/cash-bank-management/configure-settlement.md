@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure settlement
@@ -61,6 +61,7 @@ The following parameters affect how settlements are processed in Microsoft Dynam
 -   **Mark lines on free text invoices and interest notes (AR only)** – Set this option to **Yes** to enable the **Mark invoice lines** button on the **Enter customer payments**, **Payment journal voucher**, and **Settle transactions** pages. This button lets users mark individual lines for settlement.
 -   **Prioritize settlement (AR only)** – Set this option to **Yes** to enable the **Mark by priority** button on the **Enter customer payments** and **Settle transactions** pages. This button lets users assign the predetermined settlement order to transactions.  After the settlement order has been applied to a transaction, the order and the payment allocation can be modified before posting.
 -   **Use priority for automatic settlements** – Set this option to **Yes** to use the defined priority order when transactions are automatically settled. This field is available only if the **Prioritize settlement** and **Automatic settlement** options are set to **Yes**.
+
 
 
 

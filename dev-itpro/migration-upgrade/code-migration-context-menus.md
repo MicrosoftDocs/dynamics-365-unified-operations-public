@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Code migration - Context menus
@@ -151,6 +151,7 @@ As you migrate context menus, consider the following guidelines:
 -   Right-click is a shortcut. Therefore, the commands on the context menu should **always** be available in other places on the page.
 -   Don't create submenus of context menus. Submenus are hard to use and aren't touch-friendly.
 -   Limit the number of menu items to five.
+
 
 
 

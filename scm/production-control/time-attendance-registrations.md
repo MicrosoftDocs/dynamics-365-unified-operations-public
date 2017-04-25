@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Time and attendance registration
@@ -120,6 +120,7 @@ Workers with job tasks that do not require immediate feedback, as is the case wi
 -   Time consumption
 -   Project fees
 -   Project items
+
 
 
 

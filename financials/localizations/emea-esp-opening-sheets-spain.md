@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Special entries and opening sheets
@@ -58,5 +58,6 @@ To create a new **Opening sheet,** click **New** on the **Opening sheets** page,
 | **Post**           | Specify the posting date for the adjustments.                                                                                                                                                                                                                                                     |
 
 After you enter the general information about the opening sheet, you'll need to specify the main accounts to include in the opening sheet. To do this, click **Opening accounts** &gt; **Load balances** on the **Opening sheets** page. To post all ledger account balances and adjustments to the opening sheet, click **Post**.
+
 
 

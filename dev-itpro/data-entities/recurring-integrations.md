@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Recurring integrations
@@ -114,5 +114,6 @@ Use the API.
 **Example**
 
     POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
+
 
 

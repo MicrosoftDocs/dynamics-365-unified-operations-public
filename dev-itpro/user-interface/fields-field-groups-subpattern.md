@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fields and Field Groups subpattern
@@ -117,5 +117,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 **InventLocation** [![FieldsFieldGroups(4)](./media/fieldsfieldgroups4.png)](./media/fieldsfieldgroups4.png)
+
 
 

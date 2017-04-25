@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: System administration home page
@@ -88,6 +88,7 @@ Lifecycle Services
 -   [Cross-company data sharing](/dynamics365/operations/financials/cross-company-data-sharing)
 -   [Maintenance mode](maintenance-mode.md)
 -   [Demo data overview](../get-started/demo-data.md)
+
 
 
 

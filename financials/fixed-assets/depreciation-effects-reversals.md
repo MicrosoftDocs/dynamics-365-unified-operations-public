@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Depreciation effects with reversals
@@ -99,5 +99,6 @@ See also
 --------
 
 [Fixed asset depreciation](fixed-asset-depreciation.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Procurement and sourcing in the public sector
@@ -144,5 +144,6 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 
 For more information, see [Procurement and sourcing](/dynamics365/operations/supply-chain/procurement/procurement-sourcing-overview) and 
 [Accounts payable in the public sector](accounts-payable-public-sector.md).
+
 
 

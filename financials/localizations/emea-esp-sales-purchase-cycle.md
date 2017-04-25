@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sales and purchase cycles for Spain
@@ -57,6 +57,7 @@ You can specify which documents are active for a specific customer or vendor.
 
 -   To set up a specific sales document cycle for a customer, on the **All customers** page, select a customer. Then click **Sell** &gt; **Set up** &gt; **Sales cycle** &gt; **Edit**.
 -   To set up a specific purchase document cycle for a vendor, on the **All vendors** page, select a **Vendor**. Then click **Procurement** &gt; **Set up** &gt; **Purchase cycle** &gt; **Edit**.
+
 
 
 

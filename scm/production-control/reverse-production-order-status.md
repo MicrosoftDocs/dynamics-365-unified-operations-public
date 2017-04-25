@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Reverse the production order status
@@ -55,5 +55,6 @@ When you reverse the status of a production order from **Released** to **Schedul
 
 ## From Started to Released
 When you reverse the status of a production order from **Started** to **Released**, all items that were reported as finished are reverted. If material has been picked, or if inbound and outbound deliveries have been made to production, those settings are reversed. The **Remain status** field on the production order’s BOM lines is changed from **Ended** to **Material consumption**. If time has been registered, or if quantities have been reported as finished for the operations in the production route, those settings are reversed. The **Remain status** field is changed from **Ended** to **Route consumption** in the production route. The settings for all items that are posted as in process or work in process are reversed. On the **Production order details** page, fields that show a quantity that was started or reported as finished are reset. The dates for those transactions are also reset.
+
 
 

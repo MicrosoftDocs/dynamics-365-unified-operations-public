@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Row definitions in financial report designer
@@ -181,5 +181,6 @@ See also
 --------
 
 [Financial reporting](financial-reporting-intro.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Letters of credit
@@ -49,5 +49,6 @@ For an import letter of credit, the legal entity is the buyer or the applicant f
 The letter of credit includes a description of the goods, any required documents, the date of shipment, and the expiration date after which payment will not be made. The issuing bank collects a margin for the letter of credit. 
 
 A letter of credit can be revocable or irrevocable. The nature of a letter of credit can be transferable, non transferable, or revolving. Typically, a letter of credit is an irrevocable and confirmed agreement that payment will be made to a specific beneficiary upon submission of complete and accurate shipping documentation.
+
 
 

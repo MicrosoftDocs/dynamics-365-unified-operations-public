@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Get an evaluation copy
@@ -44,6 +44,7 @@ A public preview of Microsoft Dynamics 365 for Operations is available. You can
 -   [How can I setup a Dynamics 365 for Operations solution trial instance in Azure with my customization and demo data?](https://blogs.msdn.microsoft.com/lcs/2016/03/03/how-can-i-setup-a-dynamics-ax-solution-trial-instance-in-azure-with-my-customization-and-demo-data/)
 -   [How do I login to the new AX as a demo user persona?](https://blogs.msdn.microsoft.com/lcs/2016/03/17/how-do-i-login-to-the-new-ax-as-a-demo-user-persona/)
 -   [December 2015 release notes](https://blogs.msdn.microsoft.com/lcs/2015/12/18/december-2015-release-notes/)
+
 
 
 

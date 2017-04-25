@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Extend a Retail Server OData controller
@@ -66,5 +66,6 @@ A controller is a mapping for a commerce entity that controls create, read, upda
             }
         }
     }
+
 
 

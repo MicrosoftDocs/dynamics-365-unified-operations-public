@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Order entry deadlines
@@ -112,5 +112,6 @@ See also
 --------
 
 [Delivery schedules](delivery-schedules.md)
+
 
 

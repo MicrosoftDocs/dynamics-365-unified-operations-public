@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Make manual adjustments to the baseline forecast
@@ -86,5 +86,6 @@ See also
 [Monitoring forecast accuracy](monitor-forecast-accuracy.md)
 
 [Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sales tax rates based on the Marginal base and Calculation methods
@@ -225,5 +225,6 @@ Total duty = 5.00 x 8 = 40.00
 Total invoice amount = 200.00 + 39.00 + 40.00 = 279.00
 
 For more information, see [Whole amount and Interval calculation options for sales tax codes](whole-amount-interval-options-sales-tax-codes.md) and [Sales tax calculation methods in the Origin field](sales-tax-calculation-methods-origin-field.md).
+
 
 

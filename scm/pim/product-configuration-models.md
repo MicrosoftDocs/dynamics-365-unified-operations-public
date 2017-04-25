@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Product configuration models overview
@@ -154,6 +154,7 @@ You can view whether a released product can be used as a component or subcompone
 </tr>
 </tbody>
 </table>
+
 
 
 

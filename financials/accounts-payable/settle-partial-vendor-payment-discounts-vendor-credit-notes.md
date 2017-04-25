@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Settle a partial vendor payment that has discounts on vendor credit notes
@@ -72,6 +72,7 @@ April can review the vendor transactions on the **Vendor transactions** page by 
 | Inv-10071  |                  | 7/2/2015  | CR10071 | 200.00                               |                                       | 0.00    | USD      |
 | DISC-10071 |  Cash discount   | 7/2/2015  |         | 2.00                                 |                                       | 0.00    | USD      |
 | DISC-10071 |  Cash discount   | 7/2/2015  |         |                                      | 2.00                                  | 0.00    | USD      |
+
 
 
 

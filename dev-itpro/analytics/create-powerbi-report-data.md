@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create a Power BI report by using Dynamics 365 for Operations data
@@ -236,6 +236,7 @@ In this section, you will create a dashboard by using the data model that you 
 
     [![PowerBI23](./media/powerbi23.png)](./media/powerbi23.png)
     
+
 
 
 

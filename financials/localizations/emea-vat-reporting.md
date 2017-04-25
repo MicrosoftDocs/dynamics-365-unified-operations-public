@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: VAT reporting for Europe
@@ -278,6 +278,7 @@ The VAT statement for each country must meet the requirements of the country’s
 | Lithuania      | [VAT statement details for Lithuania](emea-ltu-vat-statement-details.md)         |
 | Netherlands    |                                                                                 |
 | Sweden         |                                                                                 |
+
 
 
 

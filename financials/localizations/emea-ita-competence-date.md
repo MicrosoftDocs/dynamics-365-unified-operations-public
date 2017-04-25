@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Competence date for transactions
@@ -56,6 +56,7 @@ To enable this functionality for transactions, on the **General ledger parameter
 -   Project – Accrue turnover
 -   Project – Estimate post
 -   Project – Estimate reverse
+
 
 
 

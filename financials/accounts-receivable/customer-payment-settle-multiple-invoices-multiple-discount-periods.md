@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Use a customer payment to settle multiple invoices that span multiple discount periods
@@ -102,6 +102,7 @@ Arnie views the information on the **Customer transactions** page.
 | FTI-10042  | Invoice          | 6/25/2015 | 10042   | 1,000.00                             |                                       | 505.10   | USD      |
 | ARP-10040  | Payment          | 6/29/2015 |         |                                      | 1,485.00                              | 0.00     | USD      |
 | DISC-10040 | Cash discount    | 6/29/2015 |         |                                      | 9.90                                  | 0.00     | USD      |
+
 
 
 

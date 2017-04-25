@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cross-company data sharing
@@ -148,5 +148,6 @@ See also
 --------
 
 [Configure financial cross-company data sharing (Task guide)](http://ax.help.dynamics.com/en/wiki/configure-financial-cross-company-data-sharing/)
+
 
 

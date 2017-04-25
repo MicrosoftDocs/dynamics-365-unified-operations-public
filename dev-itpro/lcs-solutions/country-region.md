@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Localization and regulatory features
@@ -302,5 +302,6 @@ The following sections list resources by country/region.
 -   [Year-end 1099 reporting](/dynamics365/operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Payroll](/dynamics365/operations/human-resources/localizations/noam-usa-payroll)
 -   [Public sector](/dynamics365/operations/financials/public-sector/public-sector-functionality)
+
 
 

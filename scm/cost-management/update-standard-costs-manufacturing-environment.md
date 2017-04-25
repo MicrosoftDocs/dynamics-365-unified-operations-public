@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Update standard costs in a manufacturing environment
@@ -50,5 +50,6 @@ Updates can reflect new items, cost categories, or indirect cost calculation for
 -   Calculate costs for a new manufactured item, based on its defined, approved, and active BOM and route information.
 
 Each case requires careful consideration about how to update standard costs.
+
 
 

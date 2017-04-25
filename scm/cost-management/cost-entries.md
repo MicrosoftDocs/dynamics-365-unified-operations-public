@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost entries
@@ -74,5 +74,6 @@ See also
 --------
 
 [Cost objects](cost-object.md)
+
 
 
