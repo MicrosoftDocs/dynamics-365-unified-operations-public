@@ -63,7 +63,20 @@ There are several benefits of using the workflow system in your organization:
 ## Workflow content
 
 + [Workflow architecture](workflow-system-architecture.md)
++ [Wprkflow elements](workflow-elements.md)
 + [Workflow actions](workflow-actions.md)
++ [Create a workflow](create-workflow.md)
++ [Configure workflow properties](configure-workflow-properties.md)
++ [Configure a manual task in a workflow](configure-manual-task-workflow.md)
++ [Configure an automated task in a workflow](configure-automated-task-workflow.md)
++ [Configure an approval process in a workflow](configure-approval-process-workflow.md)
++ [Configure an approval step in a workflow](configure-approval-step-workflow.md)
++ [Configure a manual decision in a workflow](configure-manual-decision-workflow.md)
++ [Configure a conditional decision in a workflow](configure-conditional-decision-workflow.md)
++ [Configure a parallel activity in a workflow](configure-parallel-activity-workflow.md)
++ [Configure a parallel branch in a workflow](configure-parallel-branch-workflow.md)
++ [Configure a line-item workflow](configure-line-item-workflow.md)
+
 
 
 
