@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Workflow system overview
 description: This article describes the workflow system in Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -47,7 +47,11 @@ Workflow is a system that is installed with Dynamics 365 for Operations and tha
 
 ### Workflow is a business process
 
-A workflow represents a business process. It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document. For example, the following figure shows a workflow for expense reports. ![Workflow with elements that are assigned to users](./media/workflow_user.gif) To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts that Sam routes to him. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
+A workflow represents a business process. It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document. For example, the following figure shows a workflow for expense reports. 
+
+![Workflow with elements that are assigned to users](./media/workflow_user.gif) 
+
+To better understand this workflow, suppose that Sam submits an expense report for USD 7,000. In this scenario, Ivan must review the receipts that Sam routes to him. Then Frank and Sue must approve the expense report. Now suppose that Sam submits an expense report for USD 11,000. In this scenario, Ivan must review the receipts, and Frank, Sue, and Ann must approve the expense report.
 Benefits of using the workflow system
 -------------------------------------
 
@@ -56,6 +60,10 @@ There are several benefits of using the workflow system in your organization:
 -   **Process visibility** – You can track the status, history, and performance metrics of workflow instances. This helps you determine whether changes should be made to the workflow to improve efficiency.
 -   **Centralized work list** – Users can view a centralized work list that displays the workflow tasks and approvals that are assigned to them.
 
+## Workflow content
+
++ [Workflow architecture](workflow-system-architecture.md)
++ [Workflow actions](workflow-actions.md)
 
 
 
