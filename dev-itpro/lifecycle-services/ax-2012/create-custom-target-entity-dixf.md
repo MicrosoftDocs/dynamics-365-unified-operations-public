@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Create a custom target entity for the Data import/export framework (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic describes how to create a custom entity, so that you can use the Microsoft Dynamics AX Data Import/Export Framework to import, export, or migrate data that does not fit a predefined entity.

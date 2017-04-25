@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Configure the version of SSIS used by the AX 2012 Data import/export framework
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 

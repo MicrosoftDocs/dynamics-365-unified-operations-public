@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic describes how to install the Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta). Only advanced users should use this tool. 

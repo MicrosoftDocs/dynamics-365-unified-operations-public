@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Performance Benchmark Software Development Toolkit (SDK) for Dynamics AX 2012
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 The Microsoft Dynamics AX 2012 Performance Benchmark Software Development Toolkit (SDK) provides partners and customers with extensible features to develop benchmarks that closely mimic their custom implementation.

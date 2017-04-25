@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Join Enterprise Portal servers into a single server farm (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 This article explains how to join Enterprise Portal servers (for Microsoft Dynamics AX 2012) into a single server farm. 

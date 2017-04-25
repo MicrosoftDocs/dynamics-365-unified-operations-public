@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # View Intelligent Data Management Framework purge or archive jobs (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 

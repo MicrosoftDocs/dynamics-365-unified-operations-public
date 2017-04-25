@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Record entry points in Dynamics AX Enterprise Portal
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 This article provides information about projects in Microsoft Dynamics Lifecycle Services (LCS). It describes some important features and also explains the role of the project methodology.

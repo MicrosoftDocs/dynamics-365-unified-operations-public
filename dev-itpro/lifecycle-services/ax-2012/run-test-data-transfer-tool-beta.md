@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 

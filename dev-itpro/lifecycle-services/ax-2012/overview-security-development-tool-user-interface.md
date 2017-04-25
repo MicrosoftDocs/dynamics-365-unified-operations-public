@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Security Development Tool (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic describes the user interface of the Security Development Tool.

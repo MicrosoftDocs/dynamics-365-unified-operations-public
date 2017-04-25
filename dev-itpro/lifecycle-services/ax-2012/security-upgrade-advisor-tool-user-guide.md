@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 2012 R3 CU8
 
 # Security Upgrade Advisor Tool user guide (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 The Microsoft Dynamics AX Security Upgrade Advisor Tool is intended to help simplify the process of upgrading security settings from earlier versions of Microsoft Dynamics AX to Microsoft Dynamics AX 2012. 

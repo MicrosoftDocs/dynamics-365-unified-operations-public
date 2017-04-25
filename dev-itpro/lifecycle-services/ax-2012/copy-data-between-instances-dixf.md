@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Copy data between Dynamics AX instances (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 

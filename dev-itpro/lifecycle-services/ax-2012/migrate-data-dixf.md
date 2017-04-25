@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Migrate data using the Data import/export framework (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
  This topic describes how to use the Data Import/Export Framework for Microsoft Dynamics AX 2012 to migrate data.

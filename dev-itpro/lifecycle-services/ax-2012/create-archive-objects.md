@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Create an archive object for the Intelligent Data Management Framework
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Deploy a Dynamics AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 

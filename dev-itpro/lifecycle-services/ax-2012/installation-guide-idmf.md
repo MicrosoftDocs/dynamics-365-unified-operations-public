@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Installation Guide for the Intelligent Data Management Framework (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 This topic describes the system requirements and steps to install the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF). 

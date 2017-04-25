@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Demo files for the Data import/export framework
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 

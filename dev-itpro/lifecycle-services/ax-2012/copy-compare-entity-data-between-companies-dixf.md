@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 2012
 
 # Copying and comparing entity data between companies (AX 2012)
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](../../includes/banner.md)]
 
 
 
