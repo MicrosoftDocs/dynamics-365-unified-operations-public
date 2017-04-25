@@ -51,7 +51,7 @@ The **Warehouse performance** Microsoft Power BI content was created so that war
 ## Accessing the Power BI content
 You can find the **Warehouse performance** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). System administrators can download the content and connect it to your Dynamics 365 for Operations data by following the instructions in [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). 
 
-**Note:** KB 4011327**�**is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+**Note: KB 4011327** is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## Metrics that are included in the Power BI content
 The **Warehouse performance** Power BI content includes a report. This report consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Warehouse performance** Power BI content.
@@ -127,8 +127,8 @@ Here are some helpful links that are related to entities and building Power BI c
 
 -   [Data entities](../data-entities/data-entities.md)
 -   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Data modeling using Power�BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power�BI tiles to workspaces](configure-power-bi-integration.md)
+-   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
+-   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
 
 
 
