@@ -188,10 +188,12 @@ The following sections list resources by country/region.
 -   [Additional acquisition depreciation](/dynamics365/operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
 -   [German audit file (GDPdU/GoBD)](/dynamics365/operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
 -   [German journal list report](/dynamics365/operations/financials/localizations/emea-deu-journal-list-report)
--   [Print a separate label for credit memos that originate from sales (Task Guide)](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
+-   [Print a separate label for credit memos that originate from sales](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
 
 ### Hungary
 
+-   [Fixed asset depreciation methods](/dynamics365/operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods)	
+-   [Move a fixed asset to inventory](/dynamics365/operations/financials/localizations/emea-hun-fixed-asset-to-inventory)
 -   [Low-cost fixed assets](/dynamics365/operations/financials/localizations/emea-hun-low-cost-fixed-assets)
 
 ### Italy
@@ -262,6 +264,7 @@ The following sections list resources by country/region.
 -   [Fixed assets disposal](/dynamics365/operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
 -   [Returnable packaging](/dynamics365/operations/financials/localizations/emea-pol-returnable-packages)
 -   [Sales tax reports](/dynamics365/operations/financials/localizations/emea-pol-sales-tax-reports)
+-   [Standard audit file (SAF)](/dynamics365/operations/financials/localizations/emea-pol-standard-audit-file-saf)
 -   [Turnover and balances statement](/dynamics365/operations/financials/localizations/emea-pol-turnover-balances-statement)
 
 ### Saudi Arabia
