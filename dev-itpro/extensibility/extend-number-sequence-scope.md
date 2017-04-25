@@ -38,7 +38,7 @@ The scope of a number sequence defines which organization uses the number sequen
 
 To create a new scope and have it show up in the client and work as expected, complete the follow steps:
 
-1. Create an enum extension for **NumberSeqParameterType**: In the extension, add a new enum value that for the new scope type. 
+1. Create an enum extension for **NumberSeqParameterType**: In the extension, add a new enum value for the new scope type. 
 1. Create an enum extension for **NumberSequenceType**: Add a new enum value for the new scope type. The **NumberSequenceType** enum is used in **NumberSequenceTableEntity** and **NumberSequencesReferenceEntity**.
 1. Create a table extension for the **NumberSequenceScope** table: Add a new field for the new scope type.
 1. Create an extension class for **NumberSeqScope** class:
@@ -53,6 +53,6 @@ To create a new scope and have it show up in the client and work as expected, co
   2. Create a post handler for the **updateScopeControlValues** method to update the values of the controls in the **Scope** tab
   3. Create a post handler for the **createScope** method to initialize a **NumberSeqScope** instance when the new scope type is selected.
   4. Create an event handler for the **getShortNameForParameterType** delegate to return the short name for the new scope type.
-1. Add extension class for **NumberSequenceTableEntity** and **NumberSequencesReferenceEntity** data entities: (You can skip this step you are not using data entities.) Create post handlers for the **GenerateNumberSequenceScopeTypes** and **GenerateNumberSequenceScopeValues** methods to generate the **NumberSequenceScope** for the new scope type.
+1. Add an extension class for the **NumberSequenceTableEntity** and **NumberSequencesReferenceEntity** data entities. Create post handlers for the **GenerateNumberSequenceScopeTypes** and **GenerateNumberSequenceScopeValues** methods to generate the **NumberSequenceScope** for the new scope type.
 
 
