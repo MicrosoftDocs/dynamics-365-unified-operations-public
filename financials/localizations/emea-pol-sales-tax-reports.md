@@ -5,7 +5,7 @@ title: Sales tax reports for Poland (setting up tax information and other featur
 description: This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland. 
 author: annbe
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -31,12 +31,11 @@ ms.search.validFrom: 2016-05-31
 ---
 
 # Sales tax reports for Poland (setting up tax information and other features)
-"[!include[banner](includes/banner.md)]"
-
+[!include[banner](includes/banner.md)]
 
 This topic provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland. 
 
-Poland � VAT report date codes
+Poland - VAT report date codes
 ------------------------------
 
 Per the Polish Accountancy Act, which took effect on September 29, 1994, value-added tax (VAT) for sales, purchases, and imported products must be processed separately. For every posted sales transaction or purchase transaction where the **Date of VAT register** or **VAT report date code** field is set, the tax will be accounted in relevant VAT registers. The **VAT report date code** field appears on several transaction pages. When you update or post transactions, information about the VAT report date code is posted to the tax tables. It will then be printed on the Polish VAT register. To set up VAT report date codes, open the **VAT report date codes** page (**Tax** &gt; **Setup** &gt; **Sales tax** &gt; **VAT report date codes**), and set the following fields.
@@ -65,10 +64,10 @@ Per the Polish Accountancy Act, which took effect on September 29, 1994, value-a
 <td>Include in VAT report</td>
 <td>Select one of the following options:
 <ul>
-<li><strong>With VAT report date</strong> � The report shows the whole invoice amount if the calculated date in the <strong>Date of VAT register</strong> field on the <strong>Invoice posting</strong> page is in the date interval for the report.</li>
-<li><strong>With VAT report date not later than</strong> � The report shows the whole invoice amount if the date in the <strong>Date of VAT register</strong> field is in the date interval for the report. The date is calculated based on the information in the <strong>Counted from</strong> and <strong>Number of days</strong> fields.</li>
-<li><strong>With date of physical payment</strong> � If you select the <strong>Partial settlements</strong> check box, the report shows the settled part of the invoice amount if the reporting interval includes the payment dates. If the <strong>Partial settlements</strong> check box is cleared, the report doesn't show the invoice amount until the invoice is completely settled.</li>
-<li><strong>With date of physical payment not later than</strong> � If you select the <strong>Partial settlements</strong> check box, the report shows settlements that occur in the date interval for the report. If the calculated value in the <strong>Date of VAT register</strong> field is in the date interval for the report, the report shows the whole invoice amount, except the settled amounts for the previous period. If the <strong>Partial settlements</strong> check box is cleared, select <strong>Transaction date</strong> or <strong>VAT date</strong> in the <strong>Counted from</strong> field to specify the criterion that is used to calculate the date of the VAT register.</li>
+<li><strong>With VAT report date</strong> - The report shows the whole invoice amount if the calculated date in the <strong>Date of VAT register</strong> field on the <strong>Invoice posting</strong> page is in the date interval for the report.</li>
+<li><strong>With VAT report date not later than</strong>  The report shows the whole invoice amount if the date in the <strong>Date of VAT register</strong> field is in the date interval for the report. The date is calculated based on the information in the <strong>Counted from</strong> and <strong>Number of days</strong> fields.</li>
+<li><strong>With date of physical payment</strong> - If you select the <strong>Partial settlements</strong> check box, the report shows the settled part of the invoice amount if the reporting interval includes the payment dates. If the <strong>Partial settlements</strong> check box is cleared, the report doesn't show the invoice amount until the invoice is completely settled.</li>
+<li><strong>With date of physical payment not later than</strong> - If you select the <strong>Partial settlements</strong> check box, the report shows settlements that occur in the date interval for the report. If the calculated value in the <strong>Date of VAT register</strong> field is in the date interval for the report, the report shows the whole invoice amount, except the settled amounts for the previous period. If the <strong>Partial settlements</strong> check box is cleared, select <strong>Transaction date</strong> or <strong>VAT date</strong> in the <strong>Counted from</strong> field to specify the criterion that is used to calculate the date of the VAT register.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -125,7 +124,7 @@ The following pages include the VAT report date code.
 <tr class="odd">
 <td>Prepayment handling
 <ol>
-<li>Click <strong>Accounts payable</strong> &gt; <strong>Vendor</strong> <strong>details</strong> &gt; <strong>Transactions</strong>. �or� Click <strong>Accounts receivable</strong> &gt; <strong>Customer</strong> <strong>details</strong> &gt; <strong>Transactions</strong>.</li>
+<li>Click <strong>Accounts payable</strong> &gt; <strong>Vendor</strong> <strong>details</strong> &gt; <strong>Transactions</strong>. -or- Click <strong>Accounts receivable</strong> &gt; <strong>Customer</strong> <strong>details</strong> &gt; <strong>Transactions</strong>.</li>
 <li>Select a prepayment transaction, and then click <strong>Prepayment handling</strong>.</li>
 </ol></td>
 <td>The <strong>VAT report date code</strong> field is visible if you selected <strong>Advanced</strong> in the <strong>Prepayment handling</strong> field on the <strong>Accounts payable parameters</strong> page or the <strong>Accounts receivable parameters</strong> page.</td>
@@ -203,7 +202,7 @@ The following pages include the VAT report date code.
 </tbody>
 </table>
 
-## Poland � Name of services for VAT reporting
+## Poland - Name of services for VAT reporting
 Service tariff numbers are required when you report information about VAT that involves a transaction with a party that isn't located in Poland. You set up service tariff numbers on the **Service tariff numbers** page. To set up service tariff numbers, click **Tax** &gt; **Setup** &gt; **Sales tax** &gt; **Service tariff number**, and set the following fields.
 
 | Field                      | Description                                                                          |
@@ -279,7 +278,7 @@ Here are the results of the posting:
 -   Line 3 has a tax transaction that has a sales tax direction of **Sales tax receivable**.
 -   Line 4 has a tax transaction that has a sales tax direction of **Sales tax payable**.
 
-## Poland � SSRS VAT register report
+## Poland - SSRS VAT register report
 The **VAT register** report is considered the main tax summary document. The VAT statement is prepared based on this report. It's the main tax reporting audit document in every Polish company. The VAT for sales, purchases, and imported products must be processed separately. The legislation also defines several official reports for VAT and conditions for transactions that must be included on the reports. The **VAT register** report is a basic document that is used in Polish accounting as the basis for reporting taxes to the tax authorities. The VAT registers are printed regularly for reporting periods. (They are usually printed every month.) The reports must be printed on paper, and they must be signed by one or more authorities, such as a chief accountant or a CFO. They are used as the basis for the monthly VAT 7 tax declaration. You can access **VAT register** reports from several places:
 
 -   Tax &gt; Inquiries and reports &gt; Sales tax reports &gt; EU summary VAT register
