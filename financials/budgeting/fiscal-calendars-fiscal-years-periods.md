@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fiscal calendars, fiscal years, and periods
 
+[!include[banner](../includes/banner.md)]
+
+
 This article discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
 
 Fiscal calendars provide a framework for the financial activity of an organization. Each fiscal calendar contains one or more fiscal years, and each fiscal year contains multiple periods. Fiscal calendars can be based on a January 1 to December 31 calendar year, or on any dates that you select. For example, some organizations select a fiscal calendar that starts on July 1 of one year and ends on June 30 of the following year. 
@@ -62,6 +65,8 @@ Budget cycles are the length of time during which a budget is used. Budget cycle
 
 ## Maintain periods for your organization
 You can use the Ledger calendar page to view the details of the fiscal calendar, fiscal years, and periods used by your organization. You can also change the status of the periods and select which users can post accounting transactions to periods. For example, at the start of a new period, you might want a group of users to finish posting financial transactions in the previous period, while other groups work only in the new period.
+
+
 
 
 

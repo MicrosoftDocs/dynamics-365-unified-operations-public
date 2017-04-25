@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Quality management processes
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the quality management process for nonconforming products. It describes how you can use quality control functionality, how to define and maintain nonconformances, and how to handle corrections.
 
 Quality assurance involves product testing and the management of nonconforming material. Quality management processes help guarantee a high level of product quality in your supply chain. These processes also help optimize supply chain processes and increase customer satisfaction. Quality management can help you manage turnaround times when you're dealing with nonconforming products, regardless of point of origin of those products. You can link diagnostic results to correction tasks. The system can schedule tasks to correct problems and therefore help prevent recurrences of those problems in the future. Quality management also lets you track issues (including internal problems) by problem type, and lets you identify solutions as either short-term or long-term. Statistics about key performance indicators (KPIs) provide insight into nonconformance problems that have previously occurred and the solutions that were applied to correct them. You can use historical data to help review the effectiveness of quality measures that have previously been taken and to determine appropriate measures in the future.
@@ -104,4 +107,6 @@ See also
 [Set up quality orders (task guide)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
 [Inspect the quality of goods (task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 

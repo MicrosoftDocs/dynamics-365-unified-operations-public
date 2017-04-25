@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # View transactions on settlement for Eastern Europe
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the Transactions on settlement page for customers and vendors.
 
 Use the **Transactions on settlement** page to view information about complex settlement transactions for a customer or a vendor. This feature is available only for legal entities that have their primary address in Lithuania, Latvia, Estonia, Czech Republic, Hungary, or Poland. You can find the **Transactions on settlement** page at the following locations:
@@ -48,5 +51,7 @@ Settlement-related information is captured and can be shown on the **Transaction
 -   **Penny difference** – An invoice is settled with a payment that has a slightly different amount than the invoice.
 -   **Conditional tax posting** – An invoice is settled with a payment that conditional tax has been applied to.
 -   **Cross-company settlement** – Intercompany functionality is used to settle an invoice with a payment from an organization.
+
+
 
 

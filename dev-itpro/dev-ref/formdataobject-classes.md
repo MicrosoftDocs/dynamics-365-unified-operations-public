@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormDataObject to FormFastTabHeaderControl
 
+[!include[banner](../includes/banner.md)]
+
+
 API reference for classes from FormDataObject to FormFastTabHeaderControl.
 
 Class FormDataObject
@@ -14571,6 +14574,8 @@ Performs data filtering for the control, based on the specified string.
 
 searchStr  
 The string value to use to filter data; optional.
+
+
 
 
 

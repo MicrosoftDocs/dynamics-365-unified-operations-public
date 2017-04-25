@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build a workspace
 
+[!include[banner](../includes/banner.md)]
+
+
 In this tutorial, you will create a new tile and include it in the summary section of a workspace, build a new list for a workspace, and create a data cache for the list in the workspace.
 
 Prerequisites
@@ -678,5 +681,7 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 ## Related tutorials
 -   [Building the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
 -   [Building navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the Dynamics AX menu structure.
+
+
 
 

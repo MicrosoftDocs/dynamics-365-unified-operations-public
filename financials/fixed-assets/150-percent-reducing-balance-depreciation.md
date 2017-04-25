@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # 150 percent reducing balance depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the 150 percent reducing balance method of depreciation.
 
 When you set up a fixed asset depreciation profile and select **150% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned the depreciation profile are depreciated by the same percentage in each depreciation period. This percentage is calculated based on the service life of the asset. For example, if an asset has a service life of five years, the percentage is calculated as 30 percent (150% ÷ 5). 
@@ -87,4 +90,6 @@ The 150% reducing balance method divides 150 percent by the service life years.
 
 > [!NOTE]
 > Typically, when the amount that is calculated by using the 150% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.
+
+
 

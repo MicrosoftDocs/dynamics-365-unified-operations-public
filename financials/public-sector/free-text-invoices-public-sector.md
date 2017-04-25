@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Free text invoices in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the free text invoice functionality that is available for public sector as well as answers common questions about using billing classifications and billing codes with free text invoices.
 
 Do I have to select a billing classification for every free text invoice?
@@ -66,6 +69,8 @@ To learn more about billing codes, see [Billing classifications and billing code
 
 ## Where does the interest code on a free text invoice come from?
 The interest code can be set on the billing code, the billing classification, or the posting profile.
+
+
 
 
 

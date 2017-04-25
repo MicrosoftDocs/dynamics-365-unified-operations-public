@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consolidation and elimination overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 
 When you consolidate data, the financial results for multiple subsidiary companies are combined into results for a single, consolidated company. Subsidiaries might be on different versions or systems, they might not be fully owned, and they might use different currencies. There are multiple options for consolidating data:
@@ -91,3 +94,5 @@ By using the **Export company balances** option to export from one instance and 
 
 
 For more information, see [Currency revalution in a consolidation company](..\general-ledger\currency-revaluation-consolidation-company.md).
+
+

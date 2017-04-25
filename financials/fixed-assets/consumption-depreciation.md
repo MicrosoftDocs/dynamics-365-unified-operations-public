@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consumption depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the Consumption method of depreciation.
 
 If you set up a depreciation profile for fixed assets and select **Consumption** in the **Method** field on the **Depreciation profiles** page, fixed assets are assigned to the depreciation profile based on their usage. You don't have to set up percentages and intervals on the **Depreciation profiles** page. After you create a depreciation profile that uses the Consumption method, you can set up the method in various ways.
@@ -68,4 +71,6 @@ The following factor for consumption depreciation is set up for January 31:
 -   The estimated quantity of the fixed asset is 2,000.
 
 The depreciation proposal on January 31 is as follows: Estimated quantity × Percentage × Unit depreciation 2,000 × .10 × 1.5 = 300
+
+
 

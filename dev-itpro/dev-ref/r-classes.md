@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # R Classes
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Class Random
@@ -30192,4 +30195,6 @@ The following example shows a new instance of the RunAsPermission class. The Sys
         _userId = _userInfo.Id; 
         _perm = new RunAsPermission(_userId); 
     }
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset transaction options
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the different methods available to create fixed asset transactions.
 
 You can set up Fixed assets for integration with Accounts payable, Accounts receivable, Procurement and sourcing, and General ledger. You can also transfer items in Inventory management to Fixed assets if you want to use those items internally.
@@ -70,4 +73,6 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 
 
 For more information, see [Fixed assets integration](fixed-asset-integration.md).
+
+
 

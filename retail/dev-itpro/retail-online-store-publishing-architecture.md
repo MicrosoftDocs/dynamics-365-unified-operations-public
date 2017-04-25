@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail online store publishing architecture
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic contains conceptual information to help developers and system administrators understand how channels and catalogs are published from the retail module to an online store in Microsoft SharePoint 2013 Products. Understanding the publishing process can help you develop, manage, and troubleshoot your Retail online store.
 
 Publish a Retail online store channel
@@ -68,5 +71,7 @@ After you've completed these steps, you're ready to publish the Retail online st
 4.  The system determines whether any new attributes were added for the listing. If new attribute were added (for example, if the “red jeans” listing includes a new attribute that is named **texture**, and this attribute is marked as **Included** at the channel level), the system creates a custom site column for that attribute. The system also creates a new rule for the list item and completes the process in SharePoint by creating a new row for the “red jeans” listing.
 5.  The CRT records the publishing status for the listing.
 6.  Async Server synchronizes the publishing status of the listing with all other publishing statuses. The status is either **Published** or **Error**.
+
+
 
 

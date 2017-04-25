@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales tax payments and rounding rules
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.
 
 Periodically, sales tax needs to be reported and paid to tax authorities. This can be done by running the settle and post sales tax process in the Sales tax page. Sales tax for a period will be settled against the sales tax accounts and the sales tax balance will be posted to the Sales tax settlement account. The sales tax balance, which is posted on the Sales tax settlement account, can be rounded as required by tax authorities by setting up a rounding rule on the Sales tax page. 
@@ -66,4 +69,6 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
 > If you select Own advantage, the rounding is always to the advantage of the legal entity. 
 
 For more information, see [Sales tax overview](indirect-taxes-overview.md). 
+
+
 

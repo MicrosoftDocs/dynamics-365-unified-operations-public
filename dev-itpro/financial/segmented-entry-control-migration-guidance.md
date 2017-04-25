@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control migration guidance
 
+[!include[banner](../includes/banner.md)]
+
+
 This article guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
 
 The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, *all forms should interact only with the application programming interface (API) of the **Segmented Entry** control instance*. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController** and **DimensionDynamicAccountController**). Any property that was previously manipulated or called on the controller must now be called on the control. **Notes:**
@@ -925,5 +928,7 @@ See also
 [Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
 [Segmented Entry control migration](segmented-entry-control-conversion.md)
+
+
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Debug X++ code
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio. 
 
 To debug X++ code, you use the debugger in Microsoft Visual Studio. The process is similar to the process that is used for any other application that is created in Visual Studio. For example, the standard tools for examining the application are available when your code is stopped at a breakpoint.
@@ -68,5 +71,7 @@ See also
 --------
 
 [Technical Concepts Guide](developer-home-page.md)
+
+
 
 

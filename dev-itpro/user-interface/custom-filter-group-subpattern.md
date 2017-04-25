@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Custom Filter Group subpattern
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Usage
@@ -160,4 +163,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![CustomFilterGroup(5)](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Patch SQL Server Reporting Services in a one-box environment
 
+[!include[banner](../includes/banner.md)]
+
+
 The following procedure is for one-box development environments only.
 
 Patch the Reporting Service
@@ -103,4 +106,6 @@ The following changes are made with the reporting service installation: The foll
 -   msshrtmi.dll
 
 An SSRS service account will be updated to use the local system. A new SSRS catalog database DynamicsAxReportServer and temp database DynamicsAxReportServerTempDB database will be created, and SSRS will be configured to use these two databases. The default catalog database ReportServer and ReportServerTempDBstill exist, but are set to not be used by reporting services. The SSRS service will be updated to use Windows Authentication. An xml configuration file ReportPVMConfiguration.xml will be created in the SSRS bin folder for the report runtime. A report root folder named **Dynamics** and a new security role named **DynamicsBrowser** will be created. Both AOS Web application AppPool identity and batch service account will be added to this custom role. Note that during deployment, the report folder will be deleted and then recreated. Therefore all the previously deployed reports will be deleted from the SSRS server.  After you reinstall the reporting extension, you must redeploy the reports.  
+
+
 

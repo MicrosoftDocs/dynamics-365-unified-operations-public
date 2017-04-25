@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # ISV licensing
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 
 The Microsoft Dynamics ecosystem provides tools and frameworks that let independent software vendors (ISVs) build, deploy, sell, and therefore monetize vertical industry solutions that can be repackaged. The ISV licensing feature provides the following benefits:
@@ -228,6 +231,8 @@ More than one license can be installed at a time. If one of the licenses depends
     However, if a self-signed ISV certificate was used, that certificate must be imported instead of the CA certificate.
 
         certutil -addstore root c:tempisvcert.cer
+
+
 
 
 

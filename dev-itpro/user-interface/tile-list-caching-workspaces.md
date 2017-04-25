@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Tile and list caching for workspaces
 
+[!include[banner](../includes/banner.md)]
+
+
 It's important that workspaces perform well, and that they be responsive (that is, the data that appears in a workspace is refreshed as expected and kept up to date). This topic discusses framework support for caching data that is used for tiles and lists.
 
 Introduction
@@ -172,5 +175,7 @@ Here a few general guidelines to consider when you optimize queries. This isn't 
     -   **Missing index:** Analyze your WHERE conditions, and make sure that a selective index exists.
     -   **Processing the same table/row many times:** Especially when you do joins, try not to repeat yourself. Minimize the number of times that the same table/row must be processed. If you have tables that must be part of the result set but aren't used to narrow down the result set, move them as far out as possible (especially in union queries).
 -   **Test on volume data.** To identify issues in your query, always run it on volume data.
+
+
 
 

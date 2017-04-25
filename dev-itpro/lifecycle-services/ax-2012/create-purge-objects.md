@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Create Intelligent Data Management Framework purge objects (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 Considerations for Purge Objects, driver tables, relations, and rules
@@ -201,6 +204,8 @@ This section provides a walkthrough for working with a purge template.
 6.  Repeat steps 1 through 3, but save the object as **PurchReqTable**, the original name.
 7.  In the **Overwrite Purge Object** dialog box, click **Yes** to overwrite the object with the new version. Click **OK** to continue.
 8.  Repeat step 5. Notice that the icons of a Purge Object and a saved purge template are same. This is because when you save a purge template, it becomes a Purge Object.
+
+
 
 
 

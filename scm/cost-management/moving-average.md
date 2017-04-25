@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Moving average
 
+[!include[banner](../includes/banner.md)]
+
+
 The following are prerequisites when you use moving average cost as a costing method.
 1.  In the **Item model groups** page, set up an item model group that has Moving average selected in the **Inventory model** field. **Note:** By default, when Moving average is selected, the **Post physical inventory** and **Post financial inventory** fields are also selected. 
 
@@ -110,6 +113,8 @@ In this moving average example, the inventory value report is printed to support
 |                  | October 31   | Total                      | 2        | 32.00  | 16.00             |
 
  **Note:** You cannot reconcile the general ledger with inventory by using the **Transaction time sorting** option. The report must be printed by using the **Posting date** option.
+
+
 
 
 

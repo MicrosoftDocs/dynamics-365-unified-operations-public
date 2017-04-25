@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service endpoints
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the service endpoints that are available in Microsoft Dynamics 365 for Operations.
 
 This article describes the service endpoints that are available.
@@ -300,4 +303,6 @@ See also
 --------
 
 [Troubleshoot service authentication](troubleshoot-service-authentication.md)
+
+
 

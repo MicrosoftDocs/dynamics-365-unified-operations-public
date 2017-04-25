@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 3
 
 # Customize App Suite reports using extensions
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic discusses a series of scenarios for customizing App Suite reports.
 
 Microsoft Dynamics 365 for Operations offers an expanded set of tools to support custom solutions. Customizations to reporting solutions in the standard application are fully supported using a pure extension model. This topic contains guidance about how to add the most common customizations to standard application reports without overlayering Application Suite artifacts. Here are some of the key benefits of using an extension-based approach when customizing the application:
@@ -52,5 +55,7 @@ The other two scenarios offer insights on how to use extensions to redirect app
 
 -   [Extend report menu items](extend-report-menu-items.md) – Customize application menu items to redirect references to a custom report design.
 -   [Custom designs for business documents](custom-designs-business-docs.md) – Delegate handlers allow you to add custom report designs to an existing Print Management document instance.
+
+
 
 

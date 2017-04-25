@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Images
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used.  
 
 **Note:** For accessibility, when you use an image to indicate status or show data, the image must be accompanied by a tooltip, enhanced preview, label, or other textual representation that describes the value or status that the image represents. 
@@ -416,3 +419,5 @@ You can have a container field for the image column on your table. You can then 
     ttscommit;
 
 Like the display method that is described in the "Using a display method to show an image from a URL string" section, this code causes the user's browser to download the image from the specified URL. Although this approach involves some overhead, you can use a single API to handle images that are created from binary data, URLs, AOT resources, or symbols. You can even mix and match image types between rows of data.
+
+

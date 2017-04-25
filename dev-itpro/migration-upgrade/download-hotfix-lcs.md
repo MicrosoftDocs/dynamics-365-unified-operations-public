@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Download hotfixes from Lifecycle Services
 
+[!include[banner](../includes/banner.md)]
+
+
 Use this tutorial to download the Microsoft Dynamics 365 for Operations hotfixes from Lifecycle Services (LCS).
 
 This tutorial will guide you through downloading the newest version of Microsoft Dynamics hotfix from Lifecycle services (LCS).  This tutorial is a part of the [Servicing environments](..\dev-tools\developer-home-page.md#service-environments) content.
@@ -44,4 +47,6 @@ This tutorial will guide you through downloading the newest version of Microsoft
 6.  Click **Download package** to download the hotfix package. [![Download hotfix](./media/donwload-hotfix.png)](./media/donwload-hotfix.png) After you select **Download package**, the **Review and download hotfixes** page will open. Use this page to review selected hotfixes, discard the package, return to the hotfix selections, or download the final package. [![Review and download hotfixes](./media/review-and-download-hotfixes.png)](./media/review-and-download-hotfixes.png)
 
 This tutorial is a part of the [Servicing environments](..\dev-tools\developer-home-page.md#service-environments) content.
+
+
 

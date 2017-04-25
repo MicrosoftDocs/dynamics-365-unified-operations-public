@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up payroll for workers
 
+[!include[banner](../includes/banner.md)]
+
+
 Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topics provides information about these tasks and the fields that are used to complete them.
 
 For more information, see [Payroll data updates FAQ](noam-usa-payroll-data-updates.md). [![Flow of worker and position tasks](./media/worker-tasks.gif)](./media/worker-tasks.gif)
@@ -215,4 +218,6 @@ See also
 [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
 [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+
+
 

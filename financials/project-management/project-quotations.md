@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Project quotations
 
+[!include[banner](../includes/banner.md)]
+
+
 This article introduces the concept of project quotations, which you can use to make an attractive offer to a customer as the first step of the project phase. A project quotation might include the items and services that are quoted, basic contact information, special trade agreements and discounts, and possible taxes and surcharges. 
 
 The ability to monitor, review, and control the pipeline of project quotations and orders is an important part of project management. Various tools in Microsoft Dynamics 365 for Operations can help with these tasks. For example, correct reference data definitions (quotation types, quotation origin, and prognosis and probability) help you analyze the pipeline. You can use these tools to categorize the reasons why a project quotation was won or lost, and to determine the potential value of a quotation. 
@@ -41,4 +44,6 @@ In a project quotation, you enter the services, basic contact information, speci
 The project quotation is a non-binding estimate of the work that must be performed. However, when the information in the quotation is copied to a project that is associated with a project contract, that information becomes part of a binding agreement between two parties. 
 
 If the customer approves the project quotation, you can copy the information in the project quotation to a project. You can also copy the project quotation information to a project forecast at the same time.
+
+
 

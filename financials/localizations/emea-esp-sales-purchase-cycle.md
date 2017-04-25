@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Sales and purchase cycles for Spain
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to set up sales order or purchase order cycles for a vendor or customer for legal entities in Spain.  
 
 Depending on the requirements of their customers and vendors, some Spanish companies don't update all documents that are included in the sales or purchase cycle. Here are some examples of sales or purchase documents that aren't updated:
@@ -54,5 +57,7 @@ You can specify which documents are active for a specific customer or vendor.
 
 -   To set up a specific sales document cycle for a customer, on the **All customers** page, select a customer. Then click **Sell** &gt; **Set up** &gt; **Sales cycle** &gt; **Edit**.
 -   To set up a specific purchase document cycle for a vendor, on the **All vendors** page, select a **Vendor**. Then click **Procurement** &gt; **Set up** &gt; **Purchase cycle** &gt; **Edit**.
+
+
 
 

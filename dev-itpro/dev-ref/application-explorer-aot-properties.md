@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Application Explorer properties
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the properties that appear in the Properties window of Microsoft Visual Studio for items in Application Explorer.
 
 Many nodes in Application Explorer represent elements that have properties associated with them. You can read or modify these properties in the **Properties** window of Microsoft Visual Studio.
@@ -3941,6 +3944,8 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 </tbody>
 </table>
+
+
 
 
 

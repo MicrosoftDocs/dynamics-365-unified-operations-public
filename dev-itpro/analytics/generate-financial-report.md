@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Generate a financial report
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about generating a financial report. 
 
 To generate a report, open the report definition and then click the Generate button in the toolbar. The Report Queue Status window will open and indicate the location of your report in the queue. By default, the generated report will open in the Web Viewer.
@@ -149,3 +152,5 @@ See also
 [Financial reporting](financial-reporting-intro.md)
 
 [Report Designer interface](report-designer-interface.md)
+
+

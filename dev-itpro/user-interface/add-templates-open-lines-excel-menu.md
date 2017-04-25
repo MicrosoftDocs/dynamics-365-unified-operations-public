@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add templates to the Open lines in Excel menu
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.
 
 Some of the most frequently used templates are the journal templates. Some of these journal templates have been promoted so that they appear on the **Open lines in Excel** menu by default. However, when you add a new template to the system, it's available on the **Open in Office** menu by default. To promote the template so that it's available on the **Open lines in Excel** menu, follow these steps.
@@ -188,4 +191,6 @@ See also
 --------
 
 [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
+
+
 

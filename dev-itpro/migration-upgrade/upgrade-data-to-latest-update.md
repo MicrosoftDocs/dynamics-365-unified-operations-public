@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # Upgrade data in development, demo, or sandbox environments
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update. 
 Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using the "other" type service request in Lifecycle Services.
 
@@ -303,4 +306,6 @@ See also
 --------
 
 [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Deploy a Dynamics AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 Prerequisites
@@ -103,5 +106,7 @@ Complete the following procedure to connect to the virtual machine where the AX 
 4.  At the bottom of the page, click **Open** to open the .rdp file.
 5.  When prompted for credentials, enter the user name and password found on the **Cloud-hosted environments** page for this environment.
 6.  When the virtual machine’s desktop is displayed, click the Microsoft Dynamics AX icon to open the AX 2012 R3 client.
+
+
 
 

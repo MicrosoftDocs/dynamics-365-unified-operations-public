@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT statement details for Austria
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up the VAT statement for legal entities in Austria.
 
 This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Austria only. For more information about the setup of the VAT statement, see [VAT reporting](emea-vat-reporting.md). The rest of this topic shows how to set up sales tax codes and sales tax reporting codes for the Austrian VAT declaration, so that VAT statements can be generated.
@@ -109,4 +112,6 @@ At the end of the VAT reporting period, run **Settle and post** **sales tax** to
 |Format mapping|Specify U30.|
 
 To generate a VAT XML file, use the **Report sales tax for settlement period** page.
+
+
 

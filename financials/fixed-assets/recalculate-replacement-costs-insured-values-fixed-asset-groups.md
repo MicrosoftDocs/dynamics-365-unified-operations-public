@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Recalculate replacement costs and insured values for fixed asset groups
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains the process to update the replacement costs and insured values for fixed assets.
 
 Periodically, you might be notified that the cost to replace or insure specific fixed assets has changed. For example, your manager might inform you that inflation was 3 percent last year, so you need to increase the replacement cost of all fixed assets by 3 percent. 
@@ -77,6 +80,8 @@ The next day, your manager informs you that computers decreased 8 percent inste
 
 > [!NOTE]  
 > You cannot reverse the -10 factor by entering a factor of positive 10 (or a factor of 2, the difference between -10 and -8), because the amounts will not be calculated as you intend. 
+
+
 
 
 

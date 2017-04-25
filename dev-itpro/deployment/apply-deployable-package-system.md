@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # Apply a deployable package on a Dynamics 365 for Operations environment
 
+[!include[banner](../includes/banner.md)]
+
+
 Supported environments
 ----------------------
 
@@ -68,9 +71,10 @@ Manual package deployment must be used for the following topologies. For informa
 ## Apply package on demo/dev/test/build/sandbox environments by using LCS
 **Note:** Package application causes system downtime. All the relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
+Before you begin, verify that the deployable package has been uploaded to your LCS Asset library.
+
 1.  For a binary hotfix, upload the hotfix directly to the Asset library. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
-    -   For a binary hotfix, upload the hotfix directly to the Asset library.
-    -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
+    -   For an application (AOT) deployable package (Resulting of from an X++ hotfix or application customization and extensions), create the deployable package on your development or build environment than upload it to the LCS Asset Library.
 
 2.  Open the **Environment details** view for the environment where you want to apply the package.
 3.  Click **Maintain** &gt; **Apply updates** to apply an update.
@@ -145,9 +149,13 @@ In a Production environment, package application through LCS is not self-serve l
 -   When the deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request with the new package. [![Comment from Microsoft that changes were reverted, and that the customer must validate the environment](./media/applypackage_prod_18-1024x346.png)](./media/applypackage_prod_18.png)
 -   When you're closing a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
+## Deploying packages in Retail environments
+If you are using Dynamics 365 for Operations - Retail components (such as Retail Modern POS), after you have applied a deployable package to your environment, you will need to update your in-store components as well. See [Retail Modern POS installation and updates](/retail/retail-modern-pos-device-activation) for details.
 
 See also
 --------
 
 [Install a deployable package](install-deployable-package.md)
+
+
 

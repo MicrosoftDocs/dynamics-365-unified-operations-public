@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 2
 
 # Run the Document Routing Agent as a Windows service
 
+[!include[banner](../includes/banner.md)]
+
+
 The Document Routing Agent can be run as either a desktop application or a Microsoft Windows service. This topic provides important information that will help you select the correct execution mode.
 
 Earlier versions of the Document Routing Agent required an active Microsoft Windows sign-in to keep the desktop application running. In Microsoft Dynamics AX platform update 2 (August 2016), the Document Routing Agent includes an option that lets you select the mode of execution. The process can run as either a desktop application or a Windows service. When the application runs as a Windows service, it can be started automatically after a computer restart. It can also be configured to run under the security context of a specific user account. This enhancement lets customers host the Document Routing Agent on secured domain resources such as network print servers.
@@ -83,4 +86,6 @@ By default, the Document Routing Agent runs as a desktop application. To run the
 6.  Start the service.
 
 The Document Routing Agent is now running as a Windows service.
+
+
 

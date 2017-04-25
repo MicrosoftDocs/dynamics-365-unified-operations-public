@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Fixed assets accounting for tax purposes
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the tax depreciation functionality for Latvia, including the tax depreciation setup and calculation and printing the tax depreciation report. 
 > [!NOTE]
 > Tax depreciation works with the value models. The value model and depreciation book have been merged into a single concept that is called a *book.* For more information, see [Fixed asset value model and depreciation book merge](../fixed-assets/fixed-asset-value-model-depreciation-book-merge.md).
@@ -86,4 +89,6 @@ To view the tax depreciation details, click **Tax depreciation details** to open
 
 ## Print the Tax depreciation report
 The **Tax depreciation** report provides Latvian users with tax reporting that is relevant to fixed assets in a company. To print the report, go to the **Tax depreciation calculation** page, select a specific record to summarize at the **Category** level. Click **Tax depreciation report** for categories that are not summarized using the **Tax depreciation** report.
+
+
 

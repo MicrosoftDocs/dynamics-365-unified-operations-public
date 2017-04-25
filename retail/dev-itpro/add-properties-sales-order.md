@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add properties to a sales order
 
+[!include[banner](../includes/banner.md)]
+
+
 By customizing the properties of sales orders, you can send additional data from your online store to meet the requirements of your business processes. This article explains how to add properties to a sales order.
 
 The starter store has sales order properties that you can use to capture data during order transactions. However, you can extend the sales order properties to send additional data during order transactions. For example, you can add a **GiftWrap** attribute to indicate that an item should be gift-wrapped. To customize sales order properties, you must complete the following tasks:
@@ -96,5 +99,7 @@ After you create a sales order in the commerce runtime, you can view the new att
 3.  Click **Retail and commerce** &gt; **Retail IT** &gt; **Synchronize orders** to create a sales order.
 4.  Click **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales orders** &gt; **All sales orders**.
 5.  On the **Retail** tab, and click **Retail attributes**. You should see the attribute that you created.
+
+
 
 

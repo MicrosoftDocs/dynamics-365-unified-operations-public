@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Keyboard shortcuts
 
+[!include[banner](../includes/banner.md)]
+
+
 The following keyboard shortcuts apply across Microsoft Dynamics 365 for Operations. 
 
 **Note:** The keyboard shortcuts described here refer to the United States keyboard layout. Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.
@@ -205,4 +208,6 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Operati
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 
  
+
+
 

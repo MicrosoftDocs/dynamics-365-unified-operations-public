@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail time and attendance
 
+[!include[banner](includes/banner.md)]
+
+
 This topic describes the scenarios that are supported for time and attendance management in Microsoft Dynamics 365 for Operations - Retail. 
 
 Manage worker setup and scheduling
@@ -137,4 +140,6 @@ A Dynamics 365 for Operations - Retail user follows the workflow to calculate, a
 -   Register Absence
 
 For more information about how to process time and attendance registrations, see <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+
+
 

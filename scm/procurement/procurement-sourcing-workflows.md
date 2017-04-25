@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing workflows
 
+[!include[banner](../includes/banner.md)]
+
+
 Some organizations require that purchase requisitions and purchase orders are approved by a user other than the person who entered the transaction. To set up an approval process, you can create a workflow.
 
 A workflow represents a business process. It defines how a document flows through the system and indicates who must complete a task or approve a document. There are several benefits of using the workflow system in your organization:
@@ -75,4 +78,6 @@ See also
 [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
+
+
 

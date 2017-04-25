@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Code migration - Context menus
 
+[!include[banner](../includes/banner.md)]
+
+
 A new programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Operations. It also includes UX guidelines for context menus.
 
 In Microsoft Dynamics AX 2012 and earlier versions, developers modified right-click context menus (shortcut menus) by using the **PopupMenu** class. This class relied on Microsoft Windows application programming interfaces (APIs) that aren't available on the web. In Dynamics 365 for Operations, the **ContextMenu** APIs have been created as replacements to provide similar functionality. Previously, the **context()** and **showContextMenu()** method overrides were the entry points for modifying context menus for specific controls. These overrides typically contained code to add options to the context menu, and also to process the user’s selection. The code for processing the user's selection used a wait model. In Dynamics 365 for Operations, these overrides are being removed, and the wait model is being eliminated. Instead, developers must create two overrides: **getContextMenuOptions()** to add options to the context menu and **selectedMenuOption()** to process the user’s selection.
@@ -148,5 +151,7 @@ As you migrate context menus, consider the following guidelines:
 -   Right-click is a shortcut. Therefore, the commands on the context menu should **always** be available in other places on the page.
 -   Don't create submenus of context menus. Submenus are hard to use and aren't touch-friendly.
 -   Limit the number of menu items to five.
+
+
 
 

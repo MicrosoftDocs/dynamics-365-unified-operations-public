@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Details Transaction form pattern
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the Details Transaction form pattern. Forms that use this pattern can have two details views that the user can switch between -  a Header view and a Line view.
 
 Usage
@@ -222,4 +225,6 @@ None currently.
 ##### Grid view
 
 [![AX 2012 example: Grid view](./media/detailstransaction9-1024x727.png)](./media/detailstransaction9.png)
+
+
 

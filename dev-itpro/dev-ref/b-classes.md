@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # B Classes
 
+[!include[banner](../includes/banner.md)]
+
+
 System API classes that start with the letter B.
 
 Class Binary
@@ -699,4 +702,6 @@ data
 ### Method finalize
 
     public void finalize()
+
+
 

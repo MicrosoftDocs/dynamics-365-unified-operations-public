@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update standard costs in a manufacturing environment
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides guidance about how to update standard costs in a manufacturing environment. 
 
 Updates can reflect new items, cost categories, or indirect cost calculation formulas. They can also reflect corrections and cost changes. The type of update affects the steps that you must complete to update standard costs, as illustrated in the following cases:
@@ -47,4 +50,6 @@ Updates can reflect new items, cost categories, or indirect cost calculation for
 -   Calculate costs for a new manufactured item, based on its defined, approved, and active BOM and route information.
 
 Each case requires careful consideration about how to update standard costs.
+
+
 

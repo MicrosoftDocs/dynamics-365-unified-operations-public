@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 Security and permissions
@@ -284,6 +287,8 @@ The Test Data Transfer Tool (beta) generates SQL statements from the names of th
 
 ## Run SQL scripts after import
 The Test Data Transfer Tool (beta) lets you run SQL scripts after you complete the import. Any modifications that you have to make to imported data can be completed by using the SQL scripts. Before you complete your data import, write the SQL script, and then save the file as an .sql file in the \[Import\] subfolder in the same location as the tool. When the import is completed, the tool automatically runs the SQL script file that you have stored in the \[Import\] folder.
+
+
 
 
 

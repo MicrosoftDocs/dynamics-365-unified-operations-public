@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Section Chart form pattern
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
 
 Usage
@@ -79,4 +82,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
+
 

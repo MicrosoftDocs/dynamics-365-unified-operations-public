@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Make manual adjustments to the baseline forecast
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how you can make manual adjustments to a baseline forecast and view details of the forecast. 
 
 Before you make manual adjustments, it's important that you understand a few concepts on various pages.
@@ -83,4 +86,6 @@ See also
 [Monitoring forecast accuracy](monitor-forecast-accuracy.md)
 
 [Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+
+
 

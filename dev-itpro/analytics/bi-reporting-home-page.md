@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # BI &amp; reporting home page
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Operations.
 
 Working with aggregate data
@@ -101,6 +104,8 @@ Working with aggregate data
 -   [ER Use Document Management files in format outputs (Part 5: Modify and run format)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (Task guide)
 -   [ER Generate electronic documents for payments using a format configuration](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (Task guide)
 -   [ER Upgrade your format by adopting a new, base version of that format](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (Task guide)
+
+
 
 
 

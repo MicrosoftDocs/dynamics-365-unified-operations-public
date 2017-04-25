@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Set up and generate positive pay files
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to set up positive pay and generate positive pay files. 
 
 Set up positive pay to generate an electronic list of checks that is provided to the bank. Then, when a check is presented to the bank, the bank compares it with the list of checks. If the check matches a check in the list, the bank clears it. If the check doesn't match a check in the list, the bank holds it for review.
@@ -162,4 +165,6 @@ After the checks that are listed in a positive pay file have been paid, you rece
 
 ## Recall a positive pay file
 If you must change a positive pay file, you can recall it. On the **Positive pay file summary** page, select a positive pay file that has a status of **Created**, and then select the **Recall** action. For each check in the positive pay file, the field that indicates whether that check has been included in a positive pay file is reset. You can then create a new positive pay file that includes the check that was recalled.
+
+
 

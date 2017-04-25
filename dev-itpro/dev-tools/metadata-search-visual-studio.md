@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Metadata search in Visual Studio
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how to use metadata search to search your code and metadata for arbitrary patterns and content. 
 
 Given the large volume of the code base and metadata, it is often necessary to find things in the code that meet a certain criteria. Often times you may not know the name of the metadata element that contains the pattern or meets the criteria. Metadata search is exposed in Visual Studio through two user interfaces: the Metadata Search tool window and the Navigate To window.
@@ -100,4 +103,6 @@ You can get help about using filter and filter syntax by opening the drop-down 
 | type:formbuttoncontrol property:text=                                                     | Finds all form Button Controls that have **empty** text properties.                                                                          |
 
      
+
+
 

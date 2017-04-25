@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail Server customer and consumer APIs
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 
 Overview
@@ -241,5 +244,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 -   Task&lt;PagedResult&lt;ProductPrice&gt;&gt; ProductManager.GetActivePrices(ProjectionDomain projectDomain, IEnumerable&lt;Int64&gt; productIds, DateTimeOffset activeDate, String customerId, IEnumerable&lt;AffiliationLoyaltyTier&gt; affiliationLoyaltyTiers, QueryResultSettings queryResultSettings)
 -   Task&lt;PagedResult&lt;MediaLocation&gt;&gt; ProductManager.GetMediaLocations(Int64 recordId, Int64 channelId, Int64 catalogId, QueryResultSettings queryResultSettings)
 -   Task&lt;PagedResult&lt;MediaBlob&gt;&gt; ProductManager.GetMediaBlobs(Int64 recordId, Int64 channelId, Int64 catalogId, QueryResultSettings queryResultSettings)
+
+
 
 

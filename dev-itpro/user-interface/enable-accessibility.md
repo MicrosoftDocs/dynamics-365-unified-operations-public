@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # Accessibility in forms, products, and controls
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 
 Accessibility is about inclusion, that is, a person with a disability can perform the same task as a person without that disability. Making an accessible control or form should be as fundamental as making it secure, high-performing, or easy-to-understand.
@@ -162,4 +165,6 @@ Importantly, your control should not only identify itself by name, but (using a 
 [aria-valuemax](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuemax) - Defines the maximum allowed value for a range widget.
 
 [aria-valuemin](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuemin) - Defines the minimum allowed value for a range widget.
+
+
 

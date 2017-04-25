@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ run-time functions
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the X++ run-time functions.
 
 The X++ language provides nearly 200 system functions that aren't part of any class and are executed at run time. Run-time functions are used for data type conversions, mathematical operations, and so on. Here are some common run-time functions:
@@ -218,6 +221,8 @@ The number of milliseconds that the thread actually paused.
             i = sleep(seconds*1000);
             print "job slept for " + int2str(i/1000) + " seconds";
     }
+
+
 
 
 

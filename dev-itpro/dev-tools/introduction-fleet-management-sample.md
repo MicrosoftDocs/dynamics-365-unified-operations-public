@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fleet Management sample application overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic is an overview of the Fleet Management sample application.
 
 The Fleet Management sample application has been provided to showcase development and foundation capabilities. Fleet Management represents a solution that an ISV might create for a car-rental agency. Fleet Management data includes vehicles which are available for renting, and customers who can rent and return these vehicles. Employees can also run a maintenance workflow on these vehicles. **Note**
@@ -65,4 +68,6 @@ See also
 [Download the FMLab sample code](https://github.com/Microsoft/FMLab)
 
 [Create the FleetManagement solution](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot)
+
+
 

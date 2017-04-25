@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budgeting overview
 
+[!include[banner](../includes/banner.md)]
+
+
 Almost every company that uses Financials functionality in Microsoft Dynamics 365 for Operations will have to be able to create reports of budget vs. actuals. This article explains the minimum configuration that is required in order to create budgets in Dynamics 365 for Operations or load them from a third-party program.
 
 Overview
@@ -82,4 +85,6 @@ The budget manager can review the current state of a budget in the **Ledger budg
 The **Actual vs budget** inquiry page lets you drill into the details of the budget versus actual amounts. Select a line on the inquiry page, and then click **Period balances** to see budget and actual amounts spread across fiscal periods. The **Budget account entries** page provides drill-through to the details of the budget amount in budget register entries. The **General journal entries** page opens the ledger transactions that are included in the calculated **Actuals** amount. 
 
 A company that is using Budget planning functionality can create and use *budget forecasts* in the **Ledger budgets and forecasts** workspace.
+
+
 

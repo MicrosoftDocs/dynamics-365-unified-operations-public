@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost accounting terminology
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic defines the key terms that are used in Cost accounting.
 
 **Cost accounting**
@@ -156,4 +159,6 @@ A statistical dimension is the expression of a count or sum of an object that ca
 **Statistical entry**
 
 Statistical entries hold the recorded sum or count value for a given statistical dimension. The recorded sum or count value is also referred to as the magnitude.
+
+
 

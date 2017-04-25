@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Financial Performance Power BI content
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the Microsoft Dynamics 365 for Operations Financial Performance content pack for Microsoft Power BI. It describes the dashboard and reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 
 Accessing the content pack
@@ -104,5 +107,7 @@ Here are some helpful links that are related to entities and building Power BI c
 -   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
+
+
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormBuildReferenceControl to FormButtonSeparatorControl
 
+[!include[banner](../includes/banner.md)]
+
+
 API reference for classes from FormBuildReferenceControl to FormButtonSeparatorControl.
 
 Class FormBuildReferenceControl
@@ -19279,6 +19282,8 @@ Performs data filtering for the control, based on the specified string.
 
 searchStr  
 The string value to use to filter data; optional.
+
+
 
 
 

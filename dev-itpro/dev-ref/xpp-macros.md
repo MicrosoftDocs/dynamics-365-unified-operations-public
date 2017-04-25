@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Macros in X++
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to create and use macros in X++.
 
 Precompiler directives are processed before the the code is compiler. The directives declare and handle macros and their values. The directives are removed by the precompiler so that the X++ compiler never encounters them. The X++ compiler only sees the sequence of characters written into the X++ code by the directives.
@@ -671,4 +674,6 @@ The following code example demonstrates the range of macro referencing in class 
             ****************/
         }
     }
+
+
 

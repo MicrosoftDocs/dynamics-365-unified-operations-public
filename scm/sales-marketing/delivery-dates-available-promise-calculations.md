@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Order promising
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 
 Order promising calculates the earliest ship and receipt dates, and is based on the delivery date control method and transport days. You can select among four delivery date control methods:
@@ -73,4 +76,6 @@ You create a sales order line for the product and enter **150** as the quantity.
 Because the delivery date control is method is ATP, the ATP data is calculated to find the earliest possible ship date. Based on the settings, the delayed purchase order and sales order are considered, and the resulting ATP quantity for the current date is 0. Tomorrow, when the delayed purchase order is expected to be received, the ATP quantity is calculated as more than 0 (in this case, it's calculated as 125). However, 10 days from now, when the additional purchase order for 100 pieces is expected to be received, the ATP quantity becomes more than 150.  
 
 Therefore, the ship date is set to 10 days from now, based on the ATP calculation. Therefore, you tell the customer that the requested quantity can be delivered 10 days from now.
+
+
 

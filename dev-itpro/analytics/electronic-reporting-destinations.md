@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Electronic reporting destinations
 
+[!include[banner](../includes/banner.md)]
+
+
 You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who are granted appropriate access rights can also modify destination settings at run time. This article explains ER destination management, the types of destinations that are supported, and security considerations.
 
 Electronic reporting (ER) format configurations usually contain at least one output component: a file. Typically, configurations contain multiple file output components of different types (for example, XML, TXT, or XLSX) that are grouped into either a single folder or multiple folders. ER destination management lets you preconfigure what occurs when each component is run. By default, when a configuration is run, a dialog box appears that lets the user save or open the file. The same behavior is also used when you import an ER configuration and don't configure any specific destinations for it. After a destination is created for a main output component, that destination overrides the default behavior, and the folder or file is sent according to the destination's settings.
@@ -158,4 +161,6 @@ The prerequisite is that your format must be available in the ER configurations.
 # See also
 
 [Electronic reporting overview](general-electronic-reporting.md)
+
+
 

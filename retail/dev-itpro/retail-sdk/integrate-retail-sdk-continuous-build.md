@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Integrate the Retail SDK with the continuous build system (VSTS)
 
+[!include[banner](../../includes/banner.md)]
+
+
 The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Operations and Retail components. This article outlines the manual steps for merging both build systems. 
 
 Enable the build system
@@ -213,5 +216,7 @@ You must complete this task only if you must add built Retail binaries to the Dy
 1.  Use a normal AXReference in your Dynamics 365 for Operations project.
 2.  Add the corresponding AXReference folder and the XML file inside it to VSTS.
 3.  Update the Copy-RetailBinaries.ps1 file with the appropriate file commands to get the binary file from the Retail SDK to the Dynamics 365 for Operations bin folder. The Microsoft Windows PowerShell file includes a sample that copies the PricingEngine.dll file into the ApplicationSuite bin folder. Depending on the modules that you're building, the files and folders must be changed so that they are in a different location.
+
+
 
 

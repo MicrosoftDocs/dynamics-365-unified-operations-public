@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # ISR declaration report and supporting processes for Mexico
 
+[!include[banner](../includes/banner.md)]
+
+
 In Mexico, all individuals or corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This topic provides information about generating this report.
 
 You must present the IRS declaration report for each month on or before the seventeenth day of the following month. The report displays detailed calculations of provisional income tax payments, and is based on the following factors:
@@ -76,5 +79,7 @@ You can generate a detailed ISR report, or the report can summarize each main
 -   **Type of report**: Select one of the following values:
     -   **Details**: The values are grouped by concept category and the main accounts that are linked to each category. Each record on the report shows the main account, the account name of the main account, voucher numbers, the period that the report is generated for, the posting type of the transactions, and the value of the transactions. The report also indicates whether the transactions are debits or credits. All the amount fields on the report are shown in the company currency
     -   **Summary**: The values are grouped by concept category, and the aggregate value of each concept category is calculated. This report shows the minimum amount, the fixed amount, the utility ratio, and the ISR rates. All the amount fields on the report are shown in the company currency.
+
+
 
 

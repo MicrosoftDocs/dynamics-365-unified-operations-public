@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Service authentication troubleshooting
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides some tips for troubleshooting issues that involve service authentication.  
 
 When you troubleshoot service authentication issues, there are a few basic and common procedures that can help resolve the issues that are most often encountered. These procedures also provide a hands-on demonstration of how the authentication mechanism works. This topic includes instructions and also lists a few common issues that users have encountered so far.
@@ -74,5 +77,7 @@ You can also look at the event logs of the instance machine, if you have access 
 
 -   The **"aud"** segment of the JWT might contain a URI that has a trailing slash. The slash must be removed.
 -   The **"aud"** segment of the JWT might contain a URI that uses an incorrect capitalization style. The URI must be all lowercase.
+
+
 
 

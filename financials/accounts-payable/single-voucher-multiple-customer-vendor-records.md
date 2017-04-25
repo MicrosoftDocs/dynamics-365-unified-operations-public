@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Single voucher with multiple customer or vendor records
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing. 
 
 Some common examples where one voucher is used for multiple customers or vendors include balance transfers between customers, and netting balances between customers and vendors in the same organization. 
@@ -254,4 +257,6 @@ To avoid unwanted issues with future settlements for this transaction, instead o
 | 002         | Vendor           | 1001        |                 |  75.00    |            | Ledger          | 999999---          |
 
  
+
+
 

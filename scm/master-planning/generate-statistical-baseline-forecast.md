@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Generate a statistical baseline forecast
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the parameters and filters that are used in the calculation of demand forecasting. 
 
 When you create a baseline forecast, you must first specify the parameters and filters that are used in the calculation. For example, you can create a baseline forecast that estimates demand based on transaction data from the past year for a specific company, for the coming month, and for a selected group of items. 
@@ -73,4 +76,6 @@ See also
 [Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 [Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+
+
 

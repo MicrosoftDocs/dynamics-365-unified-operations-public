@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Enroll workers in a garnishment or tax levy
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
 
 If you have questions about garnishments and tax levies that aren't answered in this topic, or in the [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md) or [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md) topics, contact your legal advisors. To learn more about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md).
@@ -319,4 +322,6 @@ See also
 --------
 
 [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+
+
 

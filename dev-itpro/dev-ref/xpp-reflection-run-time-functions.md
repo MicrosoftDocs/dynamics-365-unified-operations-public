@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ reflection run-time functions
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the reflection run-time functions.
 
 classIdGet
@@ -453,4 +456,6 @@ The following example tests whether the first element in a container, **c**, is 
     {
             // More code.
     }
+
+
 

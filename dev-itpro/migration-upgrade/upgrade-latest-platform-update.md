@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 3
 
 # Upgrade Dynamics 365 for Operations to the latest platform update
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to upgrade your Microsoft Dynamics 365 for Operations platform version to the latest platform release.
 
 Overview
@@ -162,4 +165,6 @@ See also
 --------
 
 [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
+
+
 

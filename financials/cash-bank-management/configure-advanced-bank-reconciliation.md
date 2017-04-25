@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Advanced bank reconciliation overview
 
+[!include[banner](../includes/banner.md)]
+
+
 Advanced bank reconciliation allows you to import electronic bank statements and automatically reconcile with bank transactions in Microsoft Dynamics 365 for Operations.  This article will explain the set up processes for reconciliation.  
 
 There are a number of pieces that must be set up before using the advanced bank reconciliation functionality. For more information about setting up bank statement import, see [Set up the bank statement import process](set-up-advanced-bank-reconciliation-import-process.md).  Requirements for set up of the reconciliation process are detailed below.
@@ -61,4 +64,6 @@ You must first enable Advanced bank reconciliation for the bank account.  A num
 The **Bank account name in statements** field is the name used for the bank account on your electronic bank statements.  This name is used when determining what transactions to import for a bank account from a statement that may contain information for multiple bank accounts. 
 
 The option to **Reconcile after import** will automatically validate the bank statement, create a new bank reconciliation and worksheet, and run the Default matching rule set.  This functionality automates the process up to the point of the transactions that must be manually matched.  The setting on the bank account will default when importing.
+
+
 

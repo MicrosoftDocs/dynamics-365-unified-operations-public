@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage the Electronic reporting configuration lifecycle
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to manage the lifecycle of Electronic reporting (ER) configurations for the Microsoft Dynamics 365 for Operations solution.
 
 Overview
@@ -80,4 +83,6 @@ See also
 --------
 
 [Electronic reporting overview](general-electronic-reporting.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # VAT statements details for Italy
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up a VAT statement for legal entities in Italy. 
 
 Set up customer/vendor tax information for tax reports
@@ -131,6 +134,8 @@ Per Italian legislation, rules apply to settlement periods. For example, after 
 |-----------------|---------------------------------------------------------------------------------------------------|
 | **Closed**      | Indicates if the Italian sales tax book for the period has been updated and automatically closed. |
 | **Last period** | Select this option if the period is the last period in a sales tax year.                          |
+
+
 
 
 

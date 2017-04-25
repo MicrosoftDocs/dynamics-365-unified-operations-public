@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Fixed asset repair statement for Lithuania
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to submit repair information for a fixed asset and generate a fixed asset repair report. Repair information must be stored for all fixed assets. 
 
 Enter details for a fixed asset repair statement
@@ -62,4 +65,6 @@ To generate the report, go to **Fixed assets** **&gt; Inquires and** **Reports**
 | **Print from repair percent** | Enter the percentage of the fixed asset’s acquisition value that can be spent on repairs before the fixed asset must be included on the report. The report includes only those fixed assets for which the ratio of repair costs to acquisition value is higher than the percentage that you enter in this field. |
 
  
+
+
 

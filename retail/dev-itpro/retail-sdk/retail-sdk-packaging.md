@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail SDK packaging
 
+[!include[banner](../../includes/banner.md)]
+
+
 This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail.
 
 Prerequisites
@@ -137,4 +140,6 @@ In the Asset library for the project, upload the customized Retail Server, Retai
 ### Step 2
 
 Request a new LCS topology by going to the **Environments** section and requesting a new environment. [![LCSDeployment](./media/lcsdeployment-1024x530.png)](./media/lcsdeployment.png) [![LCSAXBaseVersion](./media/lcsaxbaseversion.png)](./media/lcsaxbaseversion.png) [![SelectCustomizedPackage](./media/selectcustomizedpackage.png)](./media/selectcustomizedpackage.png)
+
+
 

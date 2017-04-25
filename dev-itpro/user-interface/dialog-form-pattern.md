@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dialog form pattern
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the Dialog form pattern. A dialog box represents an action or activity that users can explicitly commit or cancel. It's used when a user initiates a specific task or process, and the system requires user input about how or whether to proceed.
 
 Usage
@@ -286,4 +289,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![DialogForm(10)](./media/dialogform10.png)](./media/dialogform10.png)
+
+
 

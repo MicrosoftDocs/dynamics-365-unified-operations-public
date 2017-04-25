@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 3
 
 # Process for upgrading a sandbox environment
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the steps for deploying an upgrade to a non-production sandbox or stand-alone sandbox environment. 
 
 This topic describes the steps for deploying an upgrade to a non-production sandbox or stand-alone sandbox environment. You do not need to follow this procedure for default sandbox environments that are tied to live production environments. Microsoft will upgrade the default sandbox environments for production sandboxes. For more information see the end to end upgrade process here: [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md).
@@ -70,4 +73,6 @@ Reset the management reporter database by following the steps in this topic [Re
 
 ## Limitations
 Existing document handling documents which are stored in Azure blob storage will be lost during this upgrade process. If you have custom code which utilises the X++ class FileUpload to place files in blob storage, these documents will also be lost.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Retail peripheral simulator
 
+[!include[banner](includes/banner.md)]
+
+
 This topic describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 for Operations - Retail.
 
 Overview
@@ -203,4 +206,6 @@ See also
 --------
 
 [Retail peripherals overview](retail-peripherals-overview.md)
+
+
 

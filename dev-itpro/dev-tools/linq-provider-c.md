@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # LINQ provider for C#
 
+[!include[banner](../includes/banner.md)]
+
+
 This article discusses the LINQ provider that is part of Microsoft Dynamics 365 for Operations.
 
 LINQ (Language Integrated Query) is a set of classes and methods that enable you to access data that is stored in a variety of places and formats. The LINQ framework is the standard for accessing data in managed languages. LINQ presents to programmers a unified and consistent API for data access from heterogeneous data sources, such as:
@@ -172,4 +175,6 @@ See also
 [Programming language support](programming-language-support.md)
 
 [Technical Concepts Guide](developer-home-page.md)
+
+
 

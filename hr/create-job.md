@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Setting up the components of a job
 
+[!include[banner](includes/banner.md)]
+
+
 This topic describes the conceptual elements that a job can include and provides examples of how you can use those elements in your organization. 
 
 Before you can create jobs, you must set up some reference information. You can create a job that has only a name. However, by including additional information, such as a job title, you provide default values for the positions that are assigned to the job. Additionally, some of the information that you enter can be used to filter compensation plans to specific jobs. If you want to set up eligibility that you can use to filter compensation plans to a specific job, you should set up job functions and job types before you set up jobs. By having these default values available, you will save time when you add positions to the job. 
@@ -89,4 +92,6 @@ You maintain job tasks by using the **Job tasks** page. On the **Job tasks** pa
 
 ## Areas of responsibility
 You use areas of responsibility to indicate the work roles, processes, and products that a worker who is in a position for a job is responsible for. For example, for a job that is named "Accountant," one area of responsibility might be "Financial reporting for product A." You maintain areas of responsibility by using the **Areas of responsibility** page, which you can find by using the Search function. On the **Areas of responsibility** page, enter a name and description for the responsibility. In the **Note** field, you can optionally enter additional information. The notes can be updated for a specific job without changing the notes that you entered here.
+
+
 

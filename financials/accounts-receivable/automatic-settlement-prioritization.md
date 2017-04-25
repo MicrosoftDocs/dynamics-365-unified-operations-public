@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Automatic settlement and prioritization
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how transactions are settled if you select Automatic settlement on the Accounts receivable parameters page. It also explains how automatic settlement can be used in combination with the payment priority.
 
 You have two options when you settle payments with invoices and other transactions. You can manually select the transactions to settle, or Microsoft Dynamics 365 for Operations can select the transactions automatically by using the automatic settlement functionality. You can also customize how automatic settlements are processed by using the **Prioritize settlement** option. All these options are part of the settlement parameters that are defined on the **Accounts receivable parameters** page. The way that transactions are automatically settled can differ, depending on the method that you use for automatic settlement. The following methods are available:
@@ -81,6 +84,8 @@ If there is no user-defined settlement priority, transactions are automatically 
 | Invoice 2     | 9/1/2015   | 10002   | 250.00                         | 250.00           | 0.00    | USD      |
 | Invoice 3     | 10/15/2015 |         | 500.00                         | 350.00           | 150.00  | USD      |
 | Interest note | 10/15/2015 |         | 7.00                           | 0.00             | 0.00    | USD      |
+
+
 
 
 

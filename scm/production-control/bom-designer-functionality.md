@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # BOM designer functionality
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs). You can click Setup to select different configurations and specify what information appears on the lines of the tree.
 
 When you open the **BOM designer** page from the **Released products** page, it displays the hierarchy of bills of materials (BOMs) that are active and approved for the selected item, the default order site of the item, and the actual date.  
@@ -118,6 +121,8 @@ Click **Setup** to customize the information that is shown in the tree view of t
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | BOM         | Use the check boxes to select the criteria that are shown in the tree structure. The BOM designer displays the selected criteria at the bottom of both tabs. |
 | Route       | Use the check boxes to select the criteria that are shown for the routes.                                                                                    |
+
+
 
 
 

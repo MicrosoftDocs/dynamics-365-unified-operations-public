@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounting source explorer
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about Accounting source explorer, which you can use for detailed analysis of the source information behind general ledger accounting entries.
 
 Accounting source explorer is a new page that shows source information. You can use Accounting source explorer either as a stand-alone tool or to analyze the details behind general ledger accounting entries. For example, you can use Accounting source explorer to get the most detailed source information for a balance in Trail balance or for a voucher transaction. You can then use the Export to MS Excel feature to further slice and dice the information in Microsoft Excel (for example, in a PivotTable or on a PivotTable report).
@@ -51,4 +54,6 @@ For source documents that use the source document reference identities concept, 
 -   Discounts per vendor, product, department
 
 For these documents, you can also navigate to the actual source document from Accounting source explorer.
+
+
 

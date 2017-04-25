@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Vendor collaboration with external vendors
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
 
 The **Vendor collaboration** module is targeted at vendors who don’t have electronic data interchange (EDI) integration with Microsoft Dynamics 365 for Operations. It allows vendors to work with purchase order, invoice, and consignment inventory information. This topic describes how you can collaborate with external vendors who are using the vendor collaboration interface to work with POs and consignment inventory. It also describes how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors will see when they respond to a PO. For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
@@ -174,5 +177,7 @@ If you’re using consignment inventory, vendors can use the vendor collaborati
 -   **Purchase orders consuming consignment inventory** - Purchase orders for consignment inventory are generated when the ownership of the inventory is changed from the vendor to your company. A product receipt is posted at the same time. These consignment purchase orders are only displayed on the **Purchase orders consuming consignment inventory** page. They are not included in the **All confirmed purchase orders** page in the **Vendor collaboration** module.
 -   **Products received from consignment inventory** - This page lists all the transactions where the ownership of products has been transferred from the vendor to your company. Vendors can use this information to invoice the customer.
 -   **On-hand consignment inventory** - This page shows the vendor owned on-hand consignment inventory that has been received at your warehouse.
+
+
 
 

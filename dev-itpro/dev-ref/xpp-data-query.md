@@ -32,6 +32,9 @@ ms.search.validFrom: 2016-02-28
 
 # X++ data selection and manipulation
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the support for data selection and manipulation in the X++ language.
 
 You can use SQL statements, either interactively or within source code, to access and retrieve data that is stored in the database. You use the following statements for data manipulation:
@@ -1301,4 +1304,6 @@ You can use the settings that are shown in the last column to explicitly skip or
         }
         insertList.insertDatabase();
     }
+
+
 

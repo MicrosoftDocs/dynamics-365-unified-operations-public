@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Common sources of production variances
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains various typical sources of each type of production variance. 
 
 Here are some typical sources of a **lot size** variance:
@@ -61,5 +64,7 @@ Here are some typical sources of a **production substitution** variance:
 -   You manually add an operation to the production route and report that operation as consumed.
 -   When you create the production order, you select a BOM version that differs from the BOM version that is used in the standard cost calculation.
 -   When you create the production order, you select a route version that differs from the route version that is used in the standard cost calculation.
+
+
 
 

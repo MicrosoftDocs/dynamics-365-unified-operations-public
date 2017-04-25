@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Thailand unrealized VAT
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about unrealized VAT and how to set it up. It also explains how to calculate and post purchase orders that have unrealized purchase VAT and sales orders that have unrealized sales VAT, and generate reports.
 
 Unrealized purchase value-added tax (VAT), or deferred input VAT, is the calculated VAT amount that isn't due until the invoice is paid. This amount is posted to an unrealized purchase VAT account and can be claimed only after the tax invoice is received. Unrealized sales VAT, or deferred output VAT, is the calculated VAT amount that isn't due until the invoice is paid. This amount is posted to an unrealized sales VAT account and can be claimed only after a tax invoice or receipt/tax invoice is printed.
@@ -62,5 +65,7 @@ Follow these steps to calculate and post sales orders that have unrealized sales
 1.  **Create and post a sales order that has unrealized sales VAT.** The sales order can be for an item of the **Item** type or the **Service** type. When you post the sales order before you receive the payment from the customer, the unrealized sales VAT is posted to the unrealized sales VAT account.
 2.  **Reverse the unrealized sales VAT that was posted.** After you receive and make the payment, the unrealized sales VAT is reversed, and the output VAT is posted. You can use the **Payments** page to generate the tax invoice or receipt/tax invoice for the transaction. You can then send the tax invoice or receipt/tax invoice to the customer.
 3.  **Generate the Output sales tax report.** This report includes the transactions that the sales VAT is realized for, and includes the details of the VAT that the legal entity receives for the sales of goods and services.
+
+
 
 

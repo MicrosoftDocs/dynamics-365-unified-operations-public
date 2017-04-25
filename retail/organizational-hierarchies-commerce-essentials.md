@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Organizations and organizational hierarchies (Commerce essentials)
 
+[!include[banner](includes/banner.md)]
+
+
 Commerce essentials has three types of internal organizations that you can define to help an organization carry out a business process or achieve a goal. 
 
 An organization is a group of people who work together to carry out a business process or achieve a goal. An organizational hierarchy represents the relationships between the business units that make up your organization.
@@ -73,6 +76,8 @@ The following table describes the Commerce essentials scenarios where organizat
 | Manage retail replenishment                                                    | Group stores to replenish inventory based on replenishment rules.                                                                                                                                                                                                                                          | Retail replenishment |
 | Report data for stores                                                         | Group stores for reporting.                                                                                                                                                                                                                                                                                | Retail reporting     |
 | Post inventory, calculate statements, or post statements for a group of stores | Create a group of stores that can be assigned to a batch job. When you define a batch job to post inventory, calculate statements, or post statements, you can specify which hierarchy the job applies to. When stores are added to or removed from the hierarchy, you don’t have to modify the batch job. | Retail POS posting   |
+
+
 
 
 

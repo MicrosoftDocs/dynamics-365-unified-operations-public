@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Modeling a lean organization
 
+[!include[banner](../includes/banner.md)]
+
+
 The article provides information about the key concepts in modeling a lean organization. 
 
 Typically, a lean manufacturing scenario is more than just a collection of unrelated kanban rules or material supply policies. The flow of material and products throughout work cells and locations for a specific production or supply scenario can be described as a sequence or small network of process or transfer activities. This sequence or network is known as a production flow.
@@ -64,4 +67,6 @@ To better support continuous improvement, the production flows are implemented i
 
 ## Simplicity
 For the implementation of Lean manufacturing for Dynamics AX, we choose a production flow and activity approach that enables simple and complex production scenarios to be modeled in a single scalable architecture. A closer look at the activity concept reveals a new simplicity for those users who require it: the shop floor and logistics workers. By reporting against activity-based jobs instead of inventory transactions, a unified user interface for all lean manufacturing variants transfers the business complexity from the user interface to where it belongs: the production flow as the backbone of lean manufacturing.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Payroll data updates FAQ
 
+[!include[banner](../includes/banner.md)]
+
+
 A number of changes can and do happen at the end of a year that require changes to your payroll data. Workers can change their benefit election, or your company might change benefit rates, and benefit balances. Workers who move into different positions also result in changes to payroll data. This topic lists questions and answers that address these kinds of changes.
 
 This topic describes functionality that is available only if the **Payroll - USA** configuration key is selected.
@@ -115,3 +118,4 @@ To change the benefits, follow these steps:
 3.  If the worker has moved to a new location, go to [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md) and complete these tasks:
     -   Set up worker tax regions.
     -   Change worker residency.
+

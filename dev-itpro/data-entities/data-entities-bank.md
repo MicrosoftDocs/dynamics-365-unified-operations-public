@@ -32,12 +32,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Data entities - Bank
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides a list of the data entities that are available for the Bank and cash management functionality in Microsoft Dynamics 365 for Operations.
 
 Available data entities
 -----------------------
 
-**03.1.001 BANK – Bank setup**
+**04.1.001 BANK – Bank setup**
 
 | Suggested sequence | Entity name             | Area                | Entity type | Dependency            | Comments                                                                                                                    |
 |--------------------|-------------------------|---------------------|-------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -47,7 +50,7 @@ Available data entities
 | 4                  | Payment purpose codes   | Bank                | Setup       | None                  | Define payment purpose codes for the central bank, if it’s required.                                                        |
 | 5                  | Customer charge groups  | Accounts receivable | Setup       | None                  | Define charges groups for customers or vendors.                                                                             |
 
-**03.1.002 BANK – Bank accounts**
+**04.1.002 BANK – Bank accounts**
 
 **Note:** To help guarantee a successful import, you might have to unmap some fields or attributes that are set on the bank account. If these fields haven't all been imported yet, you can add the entities to the Bank setup package.
 
@@ -63,4 +66,6 @@ See also
 [Data entities and packages framework](data-entities-data-packages.md)
 
 [Data entities](data-entities.md)
+
+
 

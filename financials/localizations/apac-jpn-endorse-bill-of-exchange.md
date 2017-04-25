@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Pay a vendor by endorsing a bill of exchange
 
+[!include[banner](../includes/banner.md)]
+
+
 In Japan, bills of exchange (BOEs) are often endorsed to a vendor and used as a method of payment. In Microsoft Dynamics 365 for Operations, a list page for BOEs provides centralized management of the BOE lifecycle.
 
 To start managing a BOE in Dynamics 365 for Operations, open the Draw bill of exchange journal. When this type of journal is posted, if the status of the BOE is **Drawn**, users can manage the BOE lifecycle in following stages.
@@ -47,4 +50,6 @@ The lifecycle of a BOE ends when the BOE is paid or expires. For endorsed BOEs, 
 
 ## Reserve endorsement
 If the status of a BOE is **Endorsed**, a user can reserve its endorsement.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormListBoxControl to FormNotifyEventArgs
 
+[!include[banner](../includes/banner.md)]
+
+
 API reference for classes from FormListBoxControl to FormNotifyEventArgs.
 
 Class FormListBoxControl
@@ -12104,4 +12107,6 @@ formDataSource
 Initializes a new instance of the FormNotifyEventArgs class.
 
     public void new()
+
+
 

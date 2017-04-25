@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Balance sheet financial reports
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 
 Default balance sheet reports
@@ -82,4 +85,6 @@ See also
 [View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 

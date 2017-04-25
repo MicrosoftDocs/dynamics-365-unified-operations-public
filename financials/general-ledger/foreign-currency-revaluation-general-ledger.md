@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Foreign currency revaluation for General ledger
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides an overview of the following for the general ledger foreign currency revaluation process -  setup, running the process, calculation for the process, and how to reverse the revaluation transactions, if necessary. 
 
 As part of a period-end, accounting conventions require general ledger account balances in foreign currencies to be revalued using different exchange rate types (current, historical, average, etc.). For example, one accounting convention requires assets and liabilities to be revalued at the current exchange rate, fixed assets at the historical exchange rate, and profit and loss accounts at the monthly average. The General ledger foreign currency revaluation can be used to revalue the balance sheet and profit and loss accounts. 
@@ -118,4 +121,6 @@ The following accounting entry will be created.
 If you need to reverse the revaluation transaction, select the **Reverse transaction** button on the **Foreign currency revaluation** page. A new foreign currency revaluation historical record will be created to maintain the historical audit trail of when the revaluation occurred or was reversed. 
 
 You can reverse the results of the revaluation out of date order, but you may need to also reverse a more current revaluation to ensure the correct balances for each revalued main account. The reversals can occur out of date order because there is no way to control which main accounts are revalued and the frequency of when they are revalued. For example, an organization may choose to revalue their cash main accounts on a quarterly basis, but all other main accounts monthly.
+
+
 

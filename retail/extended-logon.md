@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up extended logon functionality for Cloud POS and MPOS
 
+[!include[banner](includes/banner.md)]
+
+
 This topic covers your options for setting up extended logon for Cloud POS and Retail Modern POS (MPOS).
 
 Setting up extended logon
@@ -74,4 +77,6 @@ Using extended logon
 ====================
 
 When extended logon is configured, and a worker has been assigned a bar code or magnetic stripe, the worker just has to swipe or scan his or her card while the POS logon page is displayed. If a password is also required before logon can proceed, the worker is prompted to enter his or her password.
+
+
 

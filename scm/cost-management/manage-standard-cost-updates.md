@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage standard cost updates
 
+[!include[banner](../includes/banner.md)]
+
+
 Updates to standard cost data can be managed by using two different approaches -  the one-version approach and the two-version approach. 
 
 The one-version approach uses a single costing version that contains all cost records. These records include the original costs and all cost updates.
@@ -40,6 +43,8 @@ The two-version approach uses one version that contains records of the original 
 -   **Two-version approach to cost data updates** − The two-version approach requires an additional costing version that contains only the cost updates. The identifier for this version is 2016-STD-CHANGES. Cost updates are recorded in 2016-STD-CHANGES and are set to a status of “Pending.”With the two-version approach, the BOM calculations of pending costs for manufactured items require a fallback data source. This is because the additional costing version 2016-STD-CHANGES contains only a subset of cost data. The fallback can be expressed as the active costs or as the costing version 2016-STD, because both identify the source of cost data when it is not included in 2016-STD-CHANGES. After the pending costs become active, the costing version 2016-STD-CHANGES will contain the current active costs that reflect the updates, whereas the original costing version 2016-STD will be untouched.When the two-version approach is used, blocking policies for the original costing version should be set up to prevent updates. Identical blocking policies should be set up for the additional costing version, except for the specified from-date and the selective use of blocking policies to allow for updates. The specified from-date should be updated with each batch of changes to reflect the scheduled activation date.
 
 This example used one additional costing version for managing updates throughout the year 2016. More than one additional costing version can be used, such as a separate version for each batch of updates. When more than one additional costing is used, the fallback must be expressed as the active costs, because the active costs are spread over multiple costing versions.
+
+
 
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail SDK extensibility samples
 
+[!include[banner](../../includes/banner.md)]
+
+
 The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Retail.  
 
 The Retail software development kit (SDK) includes extensibility samples. You can also use these projects as boilerplate projects to get started with a specific customization. For example, to start a new commerce runtime (CRT) extension, you can just copy one of the CommerceRuntime sample projects into a new folder, adjust the project import paths, and then start working in the project. For most of the samples, additional step-by-step instructions are available in the Retail SDK\\Documents folder. The following table provides a high-level list of the samples.
@@ -123,4 +126,6 @@ The Retail software development kit (SDK) includes extensibility samples. You ca
 </table>
 
    
+
+
 

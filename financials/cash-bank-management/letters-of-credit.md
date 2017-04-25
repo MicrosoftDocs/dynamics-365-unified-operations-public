@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Letters of credit
 
+[!include[banner](../includes/banner.md)]
+
+
 Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders. 
 
 Letters of credit are used for international transactions to ensure that payments will be made. A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met. Note that a letter of credit is also referred to as a documentary credit (DC). 
@@ -46,4 +49,6 @@ For an import letter of credit, the legal entity is the buyer or the applicant f
 The letter of credit includes a description of the goods, any required documents, the date of shipment, and the expiration date after which payment will not be made. The issuing bank collects a margin for the letter of credit. 
 
 A letter of credit can be revocable or irrevocable. The nature of a letter of credit can be transferable, non transferable, or revolving. Typically, a letter of credit is an irrevocable and confirmed agreement that payment will be made to a specific beneficiary upon submission of complete and accurate shipping documentation.
+
+
 

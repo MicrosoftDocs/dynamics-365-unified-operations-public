@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install a metadata hotfix
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic will guide you through installing an Application Metadata hotfix on your development environment.
 
 A metadata hotfix package contains changes (metadata or X++ source code) to model elements (XML files) in your development environment. A hotfix can also contain new model elements. A metadata hotfix package is in the form of an SCDP file. This article describes the process for installing a metadata hotfix package and explains how to share the package with other developers who are working on the same project.
@@ -116,4 +119,6 @@ After a hotfix has been installed on a development VM as described in this artic
 
 ## Deploy
 After you’ve applied a metadata hotfix to your development environment, resolved conflicts, and validated your changes, you must create a deployable package and apply your changes to your test or sandbox environment. If you use a build instance for build and test automation, the build process will automatically create the deployable package for you. For more information, see [Create and apply a deployable package](../deployment/create-apply-deployable-package.md).
+
+
 

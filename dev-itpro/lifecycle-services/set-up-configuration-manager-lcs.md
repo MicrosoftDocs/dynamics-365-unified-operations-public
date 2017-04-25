@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Set up Configuration manager
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 **Important:** This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import/Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments.
@@ -145,4 +148,6 @@ Complete the following procedure in the environment that you intend to export a 
 
 ## Next steps
 The environment is now ready for you to copy and manage configurations. For more information, see [Copy a configuration (Lifecycle Services, LCS)](copy-configuration-lcs.md).
+
+
 

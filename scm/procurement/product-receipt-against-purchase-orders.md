@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Product receipt against purchase orders
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the various options for registering products as received.
 
 Product receipt is the process of recording that products that were ordered have been received, so that the purchase order (PO) lines can then be processed for invoicing. In some cases, products go through preregistration, where additional information from the supplier is recorded before the products are received. When products arrive, they are first marked as **Registered**. The products might then go through additional processes, such as quality management, before they are finally marked as **Received**.
@@ -71,4 +74,6 @@ See also
 [Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
 
 [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 

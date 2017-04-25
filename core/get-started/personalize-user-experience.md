@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Personalize the user experience
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how you can personalize Microsoft Dynamics 365 for Operations.
 
 There are many types of personalizations in Microsoft Dynamics 365 for Operations. Some personalizations are selections that you make in a list of options on a setup page. Some personalizations are implicit, for  example, Dynamics 365 for Operations keeps track of the widths of grid columns if you adjust them, and the expanded/collapsed state of FastTabs. Other personalizations are explicit. For explicit personalizations, you enter an interactive personalization mode and modify the appearance of a page by directly managing the way that elements appear or act on the page. 
@@ -115,4 +118,6 @@ It is possible to personalize a page and share it with other users by simply ex
 **Users:** This is where you can decide for each user if they can perform either implicit or explicit personalization. You can also decide if each user can perform implicit or explicit personalization on a specific form. Lastly, you can import or export or delete a personalization for each user. 
 
 **Note:** In its initial release, personalization administration allows only management on a user by user basis.
+
+
 

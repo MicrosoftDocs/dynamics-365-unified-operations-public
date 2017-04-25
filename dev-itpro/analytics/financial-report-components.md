@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Financial report components
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how the components, or building blocks, of report definitions are used in financial reporting. These building blocks include row definitions, column definitions, and reporting tree definitions. The article explains how to organize and lock building blocks, and how to work with building block groups. 
 
 The design philosophy behind financial report designer is to break information down into the smallest component or building block, and then mix and match the components as required. Therefore, your report formatting is separate from your financial data, and you can change the design of a report without modifying the financial data in your Microsoft Dynamics ERP system. By using this building block approach, you can combine text, amounts, and calculations to produce the reports that you require. Additionally, this flexibility encourages creativity by making it easy for you to view your operations in different ways. The individual building blocks of a report definition are similar to a three-dimensional spreadsheet, but they have more power. A report definition specifies the row definition, column definition, and optional reporting tree definition that should be used for the report. It also includes information about where to store the report that is generated and how to format it. For better reusability and sharing, you can create a building block group, which is a collection of existing report definitions, row definitions, column definitions, reporting tree definitions, and dimension sets that are associated with a company in.
@@ -140,4 +143,6 @@ When you open a building block, other users have read-only access that building 
 # See also
 
 [Financial reporting](financial-reporting-intro.md)
+
+
 

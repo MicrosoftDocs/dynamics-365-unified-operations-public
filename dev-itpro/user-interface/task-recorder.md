@@ -30,6 +30,9 @@ ms.author: jasongre
 
 # Task Recorder in Dynamics 365 for Operations
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the how to use Task Recorder to record Microsoft Dynamics 365 for Operations client functions.
 
 Overview
@@ -415,6 +418,8 @@ After completing a business process recording using Task Recorder, a developer m
     -   Does not support displaying a "generic value" during the Task guide. Currently displays the value that was used during recording.
 -   Filter pane, which is the filter that pops out from the left side
     -   The Task guide does not point to the individual elements within the Filter pane that need to be clicked on.
+
+
 
 
 

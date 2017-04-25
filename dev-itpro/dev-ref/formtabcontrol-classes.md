@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormTabControl to FormWindowControl
 
+[!include[banner](../includes/banner.md)]
+
+
 API reference for classes from FormTabControl to FormWindowControl.
 
 Class FormTabControl
@@ -15752,6 +15755,8 @@ An integer value that indicates the vertical client coordinate of the mouse posi
 
 y  
 An integer value that indicates the vertical client coordinate of the mouse position.
+
+
 
 
 

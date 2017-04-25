@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budget analysis in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page. 
 
 This topic describes the budget analysis functionality available for the public sector. 
@@ -105,6 +108,8 @@ If the grids are empty in the **Budget analysis** page, try the following action
 
 ## How do I see updated numbers in the columns when I change the dimension set, dates, posting layers, and other settings?
 After you change the settings at the top of the page, click **Update totals** to see the results of your query.
+
+
 
 
 

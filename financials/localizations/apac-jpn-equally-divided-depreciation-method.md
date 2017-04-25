@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Equally divided depreciation method
 
+[!include[banner](../includes/banner.md)]
+
+
 In Japan, lump-sum assets, low-value assets, and deferred assets are depreciated in equal amounts in each year of the service life. This article answers some frequently asked questions about equally divided depreciation.
 
 Equally divided depreciation lets you depreciate a deferred, low-value, or lump-sum fixed asset equally over one or more fiscal periods within the useful life of the fixed asset. You can set up the equally divided depreciation method on the **Depreciation profiles** page.
@@ -107,4 +110,6 @@ See also
 --------
 
 [Fixed asset depreciation FAQ](apac-jpn-fixed-asset-depreciation.md)
+
+
 

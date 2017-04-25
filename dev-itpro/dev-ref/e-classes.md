@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # E Classes
 
+[!include[banner](../includes/banner.md)]
+
+
 System API classes that start with the letter E.
 
 Class Editor
@@ -471,4 +474,6 @@ You override this method when you derive a class from the CodeAccessPermission c
 Initializes a new instance of the ExecutePermission class. End.
 
     public void new()
+
+
 

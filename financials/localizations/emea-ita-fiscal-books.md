@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Italian sales tax books
 
+[!include[banner](../includes/banner.md)]
+
+
 The topic describes how to set up and use Italian sales tax books and Italian sales tax book sections.
 
 According to Italian fiscal legislation, every value-added tax (VAT) transaction must belong to a tax book (*Libro IVA*) that will be used for tax reporting. To fulfill these legislative requirements, Microsoft Dynamics 365 for Operations implements Italian sales tax books. Sales tax books can be of different types. You must specify the sales tax book type to help guarantee that all sales and purchase transactions are included on the **Italian sales tax payment** report. You can keep as many sales tax books of the **Sales** and **Purchase** types as you require. Every tax book can be divided into multiple tax book sections (*Sezionale IVA*). All sales tax transactions must be sequentially numbered (without gaps) and ordered by posting date. A tax book section is equivalent to a number sequence for the Italian sales tax voucher number (*Protocollo IVA*) that must always be applied during posting to help guarantee chronological order by posting date.
@@ -235,4 +238,6 @@ When the setup is completed, the sales tax book sections appear on the **Number 
 -   Project management and accounting parameters
 
 Voucher numbers that are assigned during posting must be sequentially ordered by posting date, and the sales tax transactions that use the same number sequence code must be posted in order. If the voucher numbers aren't sequentially ordered, the user receives an error message. In addition, posting is interrupted if a sales tax transaction isn't assigned to any sales tax book section when the user updates an invoice. Whenever a voucher is posted through a sales tax book section, the identifiers of the related sales tax book and sales tax book section are saved in the tax transactions. (Click **Tax** &gt; **Sales tax inquiries** &gt; **Posted sales tax**, and then click the **Posting** tab.) This data can then be used during further sales tax reporting. Italian sales tax books are used for filtering, grouping, and sorting on the report that is accessed at **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Sales Tax (Italy)**.
+
+
 

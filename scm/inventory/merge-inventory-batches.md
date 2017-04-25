@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Merge inventory batches
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about how to consolidate two or more inventory batches into a merged batch. 
 
 When you merge batches, calculations can help optimize the characteristics and batch attributes of the merged batch. After you select the source batches, you can review and change the merged batch before you post it. You can also transfer the batch merge to an inventory journal for approval. Inventory can then be reserved or posted directly from that inventory journal. When you post a merged batch, the inventory is adjusted for the source batches and the merged batch.
@@ -143,4 +146,6 @@ You can approve the inventory journal for the batch merge from the **All batch m
 
 ## After I merged a catchweight item, why can’t I see the catchweight information in the inventory journal?
 You can merge batches of catch-weight items just like all other items. However, the catch-weight information doesn't appear in the inventory journal. We recommend that you verify the catch-weight information before you transfer the batch merge to the inventory journal.
+
+
 

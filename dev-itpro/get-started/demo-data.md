@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Demo data overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of the demo data that is available with Microsoft Dynamics 365 for Operations.
 
 Demo data is the base data set that is released with Microsoft Dynamics 365 for Operations for implementation support and demonstration purposes. The current demo data set supports the following verticals:
@@ -69,6 +72,8 @@ The demo data set supports 40 languages across 16 countries/regions, and also su
 | USPI         | Contoso Process Industry             |
 | USRT         | Contoso Retail USA                   |
 | USSI         | Contoso Consulting USA               |
+
+
 
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales tax calculation methods in the Origin field
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains the options in the Origin field on the sales tax codes page and how sales tax is calculated based on the selected option for a sales tax code.
 
 For each sales tax code that you create in the Sales tax codes page, you must select the method of calculation to apply to the tax base amount in the Origin field.
@@ -128,4 +131,6 @@ See also
 [Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md)
 
 [Whole amount and Interval calculation options for sales tax codes](whole-amount-interval-options-sales-tax-codes.md)
+
+
 

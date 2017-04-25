@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add dimensions to a Excel template
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 
 The only value that is present on Microsoft Excel templates after installation is the MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates you need to complete the following steps:
@@ -105,4 +108,6 @@ See also
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
 [Extensibility home page](..\extensibility\extensibility-home-page.md)
+
+
 

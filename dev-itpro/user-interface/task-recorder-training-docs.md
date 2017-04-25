@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create documentation or training using Task recordings
+
+[!include[banner](../includes/banner.md)]
+
 This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 
 Learn about Task recorder
@@ -130,4 +133,6 @@ See also
 [Creating new training libraries for Dynamics AX within Lifecycle Services using the Task recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
 [Create Rich Help Topics with Task Recorder (external link)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
 

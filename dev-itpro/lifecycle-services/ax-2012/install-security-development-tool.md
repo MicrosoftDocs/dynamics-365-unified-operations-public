@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Install the Security Development Tool (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 **Note: **This is pre-release documentation of a preliminary nature and is subject to change at any time without notice. Microsoft cannot guarantee the accuracy of any information provided herein. Before you install the Security Development Tool, be aware that we assume that you meet the following prerequisites:
@@ -76,6 +79,8 @@ This section lists the procedures required to install and configure the Security
     |-------------------------------|------------------------------------|
     | SysSecRoleEntryPointDeveloper | SysContextMenu (AOT Add-Ins)       |
     | SysSecRoleEntryPoint          | System AdministrationSetupSecurity |
+
+
 
 
 

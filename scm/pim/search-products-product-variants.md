@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Search for products and product variants during order entry
 
+[!include[banner](../includes/banner.md)]
+
+
 Use the <strong>Item number </strong>field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
 
 Sometimes, having too much of something is not the best situation to be in, and this is especially true if you sell a number of products that are similar, and you are trying to remember item numbers or product search names in order to find the right product to put on a sales order. You can use the **Item number** field on a sales order line or a purchase order line as a search field. You can enter any part of a product name, number, or dimension and get a lookup that displays all the items that match the search word.
@@ -86,4 +89,6 @@ The table only has to be populated when the search criteria is modified. Newly r
 You can enable this functionality by going to **Sales and marketing &gt; Setup &gt; Search &gt; Search parameters** and setting **Enable lookup for search** to **Yes** on the **General** tab.  
 
 For sales order line entry, the default behavior is to open the **Product search** page when you start typing in the **Item number** field, and then press the **Tab** key. The **Product search** page changes the context during order line creation and may be considered unnecessarily intrusive. If you prefer to get the search results in a lookup and not lose context during order line entry, you can use the search lookup instead. If you search for a product or product variant, but you don't select anything in the lookup and press the **Tab** key, the **Product search** page will display.
+
+
 

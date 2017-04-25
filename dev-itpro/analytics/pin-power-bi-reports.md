@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # Pin Power BI reports to workspaces
 
+[!include[banner](../includes/banner.md)]
+
+
 Microsoft Dynamics 365 for Operations uses Power BI for data exploration. This topic explains how you can pin full-page Power BI reports to workspaces in Dynamics 365 for Operations to give your users an interactive data exploration experience.
 
 This topic assumes that you're familiar with the feature that lets you pin Microsoft Power BI tiles to a workspace. For more information, see [Power BI integration](power-bi-integration.md). If you're a developer who is creating a workspace, to let users pin Power BI tiles to the workspace, embed the Power BI tile control.
@@ -44,4 +47,6 @@ You can open and run Power BI reports in the Dynamics 365 for Operations clien
 
 ## Power BI in usercreated workspaces
 So far, we have described how to add Power BI tiles and reports to "developer-created" workspaces. Developer-created workspaces are workspaces that are created by Microsoft (that is, they are built into the product), by your independent software vendor (ISV) or partner, or by in-house developers. However, in Microsoft Dynamics AX platform update 1 (May 2016), users can create new workspaces by using the personalization capabilities of the client. To create a new workspace, on the home page (or the dashboard), right-click the tile for a workspace, and then click **Add a workspace**. A new workspace is created. New workspaces are named **My Workspace 1**, **My Workspace 2**, and so on. You can change the name later. Click the workspace that you just created. You can now add Power BI tiles and reports by using the same options that we discussed earlier. The following illustration shows an example. [![Power BI report in a user-created workspace](./media/my-workspace-with-tiles-and-reports-1024x584.jpg)](./media/my-workspace-with-tiles-and-reports.jpg)
+
+
 

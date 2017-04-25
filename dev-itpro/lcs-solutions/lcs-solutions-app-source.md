@@ -32,6 +32,9 @@ ms.dyn365.ops.version:
 
 # LCS Solutions for AppSource home page
 
+[!include[banner](../includes/banner.md)]
+
+
 Lifecycle Services (LCS) solution packages for Microsoft AppSource, are partner-designed and developed solutions that can be automatically deployed on Microsoft Azure to deliver an end-to-end solution using industry and vertical-specific content.
 
 This topic points to resources that will help you understand the requirements for creating LCS solutions for Microsoft AppSource. The requirements for creating a LCS solution package fall into six groups.
@@ -42,5 +45,7 @@ This topic points to resources that will help you understand the requirements fo
 -   [Marketing](marketing-content-lcs-solutions.md)
 -   [Methodologies](methodologies-lcs-solutions.md)
 -   [App validation](app-validation-lcs-solutions.md)
+
+
 
 

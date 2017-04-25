@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # What's new or changed in Dynamics AX 7.0 (February 2016)
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes features that are either new or changed in Microsoft Dynamics AX 7.0. This version contains both platform and application features and was released in February 2016.
 
 Cost management
@@ -1082,4 +1085,6 @@ See also
 [What’s new or changed](whats-new-changed.md)
 
 [New task guides available (February 2016)](new-task-guides-available-february-2016.md)
+
+
 

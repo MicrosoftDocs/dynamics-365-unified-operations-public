@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Log premier support tickets using Microsoft Dynamics Lifecycle Services
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic shows how Microsoft Premier customers can submit a support incident using Microsoft Dynamics Lifecycle Services (LCS).
 
 1.  In LCS, use the **Support** tile to manage support incidents. To submit issues directly to Microsoft, go to the **Support** tile in your LCS project.
@@ -81,3 +84,5 @@ This topic shows how Microsoft Premier customers can submit a support incident u
 12.	Review the incident details, and then click **Submit** to create an incident. 
 
 ![Submit the case](media/submit-button.png)
+
+

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the functionality that's available in the Procurement and sourcing module.
 
 Procurement and sourcing covers all the steps from identifying a need for product and services through procuring the product, receipt, invoicing, and processing of payment with vendors. Procurement processes can be configured toward specific business needs by defining purchasing policies and workflows.
@@ -92,4 +95,6 @@ Invoiced purchase orders will record the liability into the vendor account withi
 
 ## Vendor performance
 Performance and review of purchasing is supported through *procurement and account payable reports,* which include spend analysis and vendor performance analysis.
+
+
 

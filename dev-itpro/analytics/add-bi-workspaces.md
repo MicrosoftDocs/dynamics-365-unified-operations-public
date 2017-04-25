@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add BI to workspaces
 
+[!include[banner](../includes/banner.md)]
+
+
 In this tutorial, you’ll add BI controls such as KPI tiles to an existing workspace. 
 
 Key concepts
@@ -403,4 +406,6 @@ To work with the sample, you must install the provided demo data.
 10. On the application bar, click **Refresh now**. Wait until the processing completes. Processing is indicated at top of the page by a series of moving dots. The processing is completed when the indicator disappears.
 
  
+
+
 

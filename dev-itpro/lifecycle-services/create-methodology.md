@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create or update a methodology (LCS)
 
+[!include[banner](../includes/banner.md)]
+
+
 Lifecycle Services (LCS) for Microsoft Dynamics provides methodologies that you can use to ensure a more repeatable and predictable implementation project experience. You can use one of the provided methodologies or create your own. With a methodology, you can easily track and report on your progress.
 
 A methodology consists of phases, tasks, and milestones. Each phase can have any number of tasks, some of which are mandatory. When all of the tasks in a phase are completed, the phase can be marked as complete. You can also create a milestone for when you anticipate a phase to be completed. The following methodologies are included in an LCS project:
@@ -64,5 +67,7 @@ There are two ways to make changes to a methodology. You can append an existing 
 -   Copy a phase or task.
 -   Reorder phases and tasks.
 -   Delete a phase or task.
+
+
 
 

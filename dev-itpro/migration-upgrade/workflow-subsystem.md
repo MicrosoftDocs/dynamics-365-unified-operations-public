@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Workflow subsystem updates in Dynamics 365 for Operations
 
+[!include[banner](../includes/banner.md)]
+
+
 This article reviews the workflow system in Microsoft Dynamics 365 for Operations. It describes the changes that have been implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system. 
 
 The workflow system in Dynamics 365 for Operations will already be familiar to you if you've used Microsoft Dynamics AX 2012. For more information about the workflow subsystem in Dynamics AX 2012, see the following topics.
@@ -59,4 +62,6 @@ See also
 --------
 
 [Technical Concepts Guide for Developers](..\dev-tools\developer-home-page.md)
+
+
 

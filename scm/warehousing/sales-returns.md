@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Sales returns
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 
 Customers can return items for various reasons. For example, an item might be defective, or it might not meet the customer's expectations. The return process starts when a customer issues a request to return an item. After the customer's request is received, a return order is created in Microsoft Dynamics 365 for Operations.
@@ -313,4 +316,6 @@ In this example, the return order line is created by using the **Find sales orde
 [![Return order line that is created by using Find sales order ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
 
 **Note:** **Discount** and **Return cost price** are set correctly. Therefore, an exact reversal of the customer invoice occurs.
+
+
 

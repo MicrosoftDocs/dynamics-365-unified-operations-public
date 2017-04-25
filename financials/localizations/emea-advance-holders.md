@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Advance holders
 
+[!include[banner](../includes/banner.md)]
+
+
 Learn about advance holder functionality in Microsoft Dynamics 365 for Operations.
 
 An *advance holder* is an employee of a company who is accountable for an expense amount that is provided by the organization. Only a company's worker can be an advance holder. When a procurement happens, an advance holder reports to the company about the expenditures that were made. The company reimburses the employee for the expense amount. A company controls a balance for each advance holder. Users in legal entities in Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia can reflect specific transactions accompanying operations with company’s employees who are accountable for the expense amount that is provided by the organization.
@@ -113,4 +116,6 @@ See also
 --------
 
 [Advance holder transactions](emea-advance-holders-transactions.md)
+
+
 

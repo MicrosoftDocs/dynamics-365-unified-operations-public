@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Advanced selection form pattern
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the Advanced Selection form pattern. This Dialog form pattern lets users filter and select items from a large, wide list. Like the List Panel pattern, this pattern should be used when the primary user task is to select a set of items.
 
 Usage
@@ -75,4 +78,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None at this time
+
+
 

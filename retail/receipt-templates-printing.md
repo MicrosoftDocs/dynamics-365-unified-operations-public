@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Receipt templates and printing
 
+[!include[banner](includes/banner.md)]
+
+
 This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Microsoft Dynamics 365 for Operations - Retail includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 
 **Important:** You must set up form layouts and receipt profiles to print receipts and other documents from Retail Modern POS and Cloud POS. You can include multiple form layouts in a receipt profile. You can then assign the receipt profile to a printer by modifying a hardware profile.
@@ -72,4 +75,6 @@ Receipt profiles are assigned directly to printers through the hardware profile.
 2.  Select the printer, and then, in the **Receipt profile** field, assign the receipt profile to use on the register.
 
 **Note:** If two printers are used, one printer can be used to print standard 40-column thermal receipts. The second printer is typically used to print full-page receipt types that require more information. These receipt types include customer order receipts and customer invoices.
+
+
 

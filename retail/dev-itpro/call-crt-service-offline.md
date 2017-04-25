@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Call CRT service in offline mode
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how provide offline support for point of sale (POS).
 
 When a point of sale (POS) device goes offline (in other words, when it isn't connected to Retail Server), the POS automatically switches to the local commerce runtime (CRT). The POS client communicates with the local CRT by using the Retail proxy. To enable the proxy to understand your custom service, you must extend the Retail proxy project to support your request type.
@@ -52,5 +55,7 @@ When a point of sale (POS) device goes offline (in other words, when it isn't co
         <add source="assembly" value="Contoso.Commerce.Runtime.Services" />
 
 9.  Restart dllhost.exe. (You should restart the dllhost.exe for MPOS to read the new config file, this will be required even when you do any upgrade if it has config file changes.)
+
+
 
 

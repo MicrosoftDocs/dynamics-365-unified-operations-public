@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Product dimensions
 
+[!include[banner](../includes/banner.md)]
+
+
 There are four product dimensions -  Color, Configuration, Size and Style. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
 
 Product dimensions are characteristics that serve to identify a product variant. You can use combinations of product dimensions to define product variants. You must define at least one product dimension for a product master in order to create a product variant.
@@ -67,6 +70,8 @@ A company sells denim jeans. The item, Jeans, uses the Color and Size product di
 | Brown | L    |
 | Brown | XL   |
 | Brown | XXL  |
+
+
 
 
 

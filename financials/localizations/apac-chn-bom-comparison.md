@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Bill of materials comparison for China
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about BOM comparison for China.
 
 A product might be accompanied by several versions of its bill of materials (BOM) over the course of its life cycle, because many products are redesigned or modified to meet changing requirements. In general, the cost of a BOM reflects the actual cost of production, and is derived from the components and materials that are used, in addition to the direct and indirect costs of creating the final product. The price of the BOM can be assigned manually, or it can be calculated by marking up the costs that are incurred during the manufacture or construction of the product. Use the **BOM comparison** page to compare the component quantities and inventory cost, or the latest purchase price of the components, among the various BOM versions. BOM comparison also lets you to perform the following tasks:
@@ -66,6 +69,8 @@ The following table shows how a BOM comparison is done. In this example, product
 | FG003   | FG003V1 |        | MT003      | 4        | pcs  | USD 30.00 |
 |         |         |        | MT004      | 2        | box  | USD 23.00 |
 |         |         |        | MT005      | 3        | kg   | USD 18.00 |
+
+
 
 
 

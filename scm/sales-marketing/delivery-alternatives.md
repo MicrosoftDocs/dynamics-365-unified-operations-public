@@ -32,6 +32,9 @@ ms.search.validFrom: 2016-11-30
 
 # Delivery alternatives
 
+[!include[banner](../includes/banner.md)]
+
+
 Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
 
 In Microsoft Dynamics 365 for Operations version 1611 (November 2016), sales order takers can use the **Delivery alternatives** page to discover alternative order fulfillment options. The redesigned page layout gives a better overview of all alternative options. It also lets order takers look beyond the current company for fulfillment opportunities. They can now view both intercompany opportunities and opportunities from external vendors. By sorting the options by delivery date, sales order takers can view an intelligent list of delivery alternatives. In addition, parameters help them better manage the suggested deliveries. Because transport time can affect delivery dates, sales order takers can explore the various transportation choices that carriers offer. Because detailed information is shown for each suggestion, order takers can make informed decisions directly from the **Delivery alternatives** page.
@@ -151,5 +154,7 @@ See also
 --------
 
 [Order promising](http://ax.help.dynamics.com/en/wiki/delivery-dates-and-available-to-promise-calculations/)
+
+
 
 

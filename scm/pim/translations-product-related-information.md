@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Product-related translations FAQ
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to manage translations for products, product dimension values, and product attributes. 
 
 What product-related data can be translated?
@@ -126,6 +129,8 @@ To manage translations for values in a dimension value group, follow these steps
 
 ## When can translations of productrelated information be managed?
 Translations of product-related information can be managed at any time. When translations are updated for a dimension value that is associated with a product, the product information is updated, regardless of whether the product has transactions.
+
+
 
 
 

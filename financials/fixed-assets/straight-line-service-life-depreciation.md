@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Straight line service life depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the Straight line service life method of depreciation.
 
 When you set up a fixed asset depreciation profile and select Straight line service life in the Method field in the Depreciation profiles page, the assets that have this depreciation profile assigned to them are depreciated based on the total service life of the asset. This generally is the same depreciation amount in each depreciation period. 
@@ -106,6 +109,8 @@ The service life of the acquisition adjustment is the same as that of the fixed 
 | Year 6 | Remaining 800\*                           | 1,800 – 800 = 1,000                   |
 
 \*Because the remaining amount is less than the depreciation amount, only the remaining amount minus the salvage value is taken.
+
+
 
 
 

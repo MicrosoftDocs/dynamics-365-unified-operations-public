@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # User interface development home page
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic contains links to topics about developing user interface elements.
 
 The user interface for Microsoft Dynamics 365 for Operations differs significantly from the interface for Microsoft Dynamics AX 2012. The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls. The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server. For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client. The client in Dynamics 365 for Operations is an HTML web client that runs in all major browsers. These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see [System requirements](../get-started/system-requirements.md)). The move to a web client has produced the following changes to client forms and controls:
@@ -98,6 +101,8 @@ The form metamodel continues to be used to define controls and application logic
 -   [Add localizable labels for an extensible control](create-localizable-labels-client.md)
 -   [Guidelines for extensible controls layout](extensible-controls-layout.md)
 -   [Control the text that Task Recorder generates for a control](task-recorder-control-text.md)
+
+
 
 
 

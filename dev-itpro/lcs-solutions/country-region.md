@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Localization and regulatory features
 
+[!include[banner](../includes/banner.md)]
+
+
 Microsoft Dynamics 356 for Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
 
 This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
@@ -299,4 +302,6 @@ The following sections list resources by country/region.
 -   [Year-end 1099 reporting](/dynamics365/operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Payroll](/dynamics365/operations/human-resources/localizations/noam-usa-payroll)
 -   [Public sector](/dynamics365/operations/financials/public-sector/public-sector-functionality)
+
+
 

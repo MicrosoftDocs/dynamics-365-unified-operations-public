@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Project resource scheduling data model
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the Project resource scheduling data model.
 
 Physical data model for Project resource scheduling
@@ -116,4 +119,6 @@ The following table lists the facade classes that you can use as a starting poin
 | ResourceWorkerFacade   | Contains the methods to retrieve the **Employment** type.                                                                                                                                                                              |
 
  
+
+
 

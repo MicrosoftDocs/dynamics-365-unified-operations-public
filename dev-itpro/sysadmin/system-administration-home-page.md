@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # System administration home page
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic lists resources that are available for system administrators.
 
 Lifecycle Services
@@ -78,12 +81,15 @@ Lifecycle Services
 -   [Dynamics 365 for Operations mobile platform](../mobile-apps/mobile-platform.md)
 
 ## General administration
+-   [Dynamics 365 for Operations cloud platform monthly updates](faq-platform-monthly-update.md)
 -   [Batch processing overview](batch-processing-overview.md)
 -   [Batch server overview](batch-server-overview.md)
 -   [Create a batch job](http://ax.help.dynamics.com/en/wiki/create-a-batch-job/) (Task guide)
 -   [Cross-company data sharing](/dynamics365/operations/financials/cross-company-data-sharing)
 -   [Maintenance mode](maintenance-mode.md)
 -   [Demo data overview](../get-started/demo-data.md)
+
+
 
 
 

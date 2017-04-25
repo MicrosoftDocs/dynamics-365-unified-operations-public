@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Extensible control programming reference
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Extensible control programming reference
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides reference content for extensible control programming.
 
@@ -1104,6 +1107,8 @@ Control Lifecycle Diagrams
 
 ## Control Instantiation
 [![ExtensibilityProcess](./media/extensibilityprocess-951x1024.png)](./media/extensibilityprocess.png)
+
+
 
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail Server architecture
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
 
 Retail Server architecture
@@ -91,4 +94,6 @@ Retail Server uses the following concepts.
 </table>
 
 You can create your own entity type or complex type, extend an existing controller, add a new controller, and customize the metadata. If you customize the commerce runtime, you must also customize various components in Retail Server to expose those changes to your Retail Modern POS clients.
+
+
 

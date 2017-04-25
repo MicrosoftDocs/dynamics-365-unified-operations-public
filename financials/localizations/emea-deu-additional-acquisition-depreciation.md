@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Additional acquisition depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how depreciation is calculated for additional acquisitions in Germany and provides an example. Acquisition adjustments for fixed assets must always be calculated as if the adjustments were made on the first day of the business year.
 
 Acquisition adjustments for fixed assets must be calculated as if the adjustments were made on the first day of the business year, regardless of when the adjustment transactions were actually created. The following formula is used to calculate the base amount of the fixed asset for depreciation: Net book value of the fixed asset on the last day of the previous business year + All acquisition adjustments for the fixed asset in the current year.
@@ -46,6 +49,8 @@ In 2015, your organization acquired a fixed asset for 60,000. Your organization 
 | March 2016    | 1,000                                                           | 250 for January, 250 for February, and 250 for March              | 1,750                     |
 | April 2016    | 1,000                                                           | 250                                                               | 1,250                     |
 | May 2016      | 1,000                                                           | 250                                                               | 1,250                     |
+
+
 
 
 

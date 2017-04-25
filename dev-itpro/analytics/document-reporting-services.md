@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Document Reporting Services overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the integrated reporting solution that is available in Microsoft Dynamics 365 for Operations. This solution simplifies service administration, increases developer productivity, and provides an enhanced report viewing experience for users.
 
 Document Reporting Services
@@ -115,6 +118,8 @@ The process for developing a report in the current version of Dynamics 365 for O
 </tr>
 </tbody>
 </table>
+
+
 
 
 

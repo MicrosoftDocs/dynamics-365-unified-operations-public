@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Compute columns and virtual fields in a data entity
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about computed and virtual fields, which are the two types of unmapped fields that a data entity can have. The article includes information about the properties of unmapped fields, and examples that show how to create, use, and test them.
 
 Overview
@@ -225,6 +228,8 @@ The following **main** method tests your computed and virtual fields. Both field
             info(customer.FullName);
             ttsabort;
         }
+
+
 
 
 

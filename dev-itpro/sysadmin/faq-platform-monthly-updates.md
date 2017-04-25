@@ -31,6 +31,9 @@ ms.search.validFrom: 2017-03-31
 ---
 
 # Dynamics 365 for Operations cloud platform monthly updates FAQ
+
+[!include[banner](../includes/banner.md)]
+
 "[!include[banner](../includes/banner.md)]"
 
 
@@ -74,5 +77,7 @@ If you are already on platform update 4 or later, applying an application **bina
 
 ## What is the guidance to customers who are going live?
 The recommendation is that you sign off with testing the platform update that's no more than a month before go live. The expectation is that you will test all scenarios and sign off using the T - 1 month platform update. This ensures that you are on the latest platform update with all available fixes.
+
+
 
 

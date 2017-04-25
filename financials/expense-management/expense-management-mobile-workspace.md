@@ -31,6 +31,9 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Expense management mobile workspace
+
+[!include[banner](../includes/banner.md)]
+
 "[!include[banner](../includes/banner.md)]"
 
 
@@ -132,6 +135,8 @@ Download and install the Dynamics 365 for Operations mobile app from your mobile
 8.  Select to **Take photo** or **Choose image**.
 9.  If you selected **Take photo**, you're taken to the camera on your mobile device, so that you can take a photo of the receipt. When you've finished taking a photo, click **OK** to accept the photo. �or� If you selected **Choose image**, select an image in the list.
 10. Select **Done**.
+
+
 
 
 

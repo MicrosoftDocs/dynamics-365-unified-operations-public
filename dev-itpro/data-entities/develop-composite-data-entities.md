@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Develop composite data entities
 
+[!include[banner](../includes/banner.md)]
+
+
 A composite entity is a concept that allows you to build a single entity by leveraging multiple entities that are related to each other. 
 
 What is a composite entity?
@@ -134,5 +137,7 @@ We recommend that you import and export the data as a normal entity from DIXF st
     -   Use this file for initial mapping only.
     -   When the mapping is successful, import the actual file which does not have the line data into the entity. Use reimport or upload a new file.
     -   This should import files with partial data (blank child records), depending on the validity of the records.
+
+
 
 

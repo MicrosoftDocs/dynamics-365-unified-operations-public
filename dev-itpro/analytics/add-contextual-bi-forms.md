@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add contextual BI to forms
 
+[!include[banner](../includes/banner.md)]
+
+
 In this tutorial you'll model a form part that displays the previous rental history of vehicles. You'll add the form part to the Vehicles form using a DynaLink. When the user views a vehicle record, the part displays relevant rental history. 
 
 Prerequisites
@@ -238,5 +241,7 @@ To work with the sample, you must install the provided demo data.
 7.  Click **Show navigation pane** on the navigation bar. 
 
     [![BIforms9](./media/biforms9.png)](./media/biforms9.png)
+
+
 
 

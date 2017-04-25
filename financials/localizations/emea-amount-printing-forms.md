@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Update how amounts are displayed on reports and documents
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about how to update how amounts are displayed on reports and other documents for Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia.
 
 For legal entities in Estonia, Latvia, Lithuania, Poland, Czech Republic, Hungary, and Russia, you can set up full names and short names for currency units and subunits. These names can be used to transform how amounts are represented on documents and reports. For example: The amount **LTL 100.20** can be displayed as **100 Litas 20 Centas**.
@@ -56,5 +59,7 @@ To set up full and short names for currency units and subunits for a language, 
     | **Conjunction 'and' between units and parts**             | Select to print the conjunction “and” between the currency units and unit parts. For example, on invoices or reports, the amount for LTL 100.20 will be displayed as 100 Litas and 20 Centas.                      |
 
 5.  Click **Save**.
+
+
 
 

@@ -31,7 +31,8 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Credit note on cash discount
-"[!include[banner](../includes/banner.md)]"
+
+[!include[banner](../includes/banner.md)]
 
 
 This topic provides information that will help legal entities in the Czech Republic create, post, and print credit notes for cash discounts that are given to customers.
@@ -92,5 +93,7 @@ Companies in the Czech Republic must issue credit notes for cash discounts that 
 
 ## Credit notes for cash discounts
 Credit notes for cash discounts are posted automatically when open customer transactions (customer invoice and customer payment) are settled. When credit notes for cash discounts are posted, they include the reason codes that you set up in Account receivable parameters, and a reference to the original invoice. Credit notes for cash discounts are numbered by using the number sequence that you set up for credit notes. The document printout is named **Tax corrective document**. It includes the original invoice number, the VAT base and amount, and the reason why a correction was printed.
+
+
 
 

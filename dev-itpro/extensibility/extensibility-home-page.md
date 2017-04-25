@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 4
 
 # Extensibility home page
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides links to topics about extensibility with Microsoft Dynamics 365 for Operations.
 
 The development approach for Dynamics 365 for Operations focuses more on extending the application than on overlayering elements to customize application flows.
@@ -51,6 +54,8 @@ The development approach for Dynamics 365 for Operations focuses more on extendi
 -   [Extending class state](https://blogs.msdn.microsoft.com/mfp/2017/01/31/extending-class-state/)
 -   [Extension methods](https://blogs.msdn.microsoft.com/mfp/2015/12/15/x-in-ax7-extension-methods/)
 -   [Extensible base enumerations](http://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
+
+
 
 
 

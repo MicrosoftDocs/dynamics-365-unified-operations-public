@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Copy a configuration
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 You can use the Configuration manager (beta) functionality in Microsoft Dynamics Lifecycle Services to copy a configuration from one instance of Microsoft Dynamics AX 2012 R3 to another.
@@ -60,6 +63,8 @@ You can create a stored configuration by exporting it from a specified legal ent
 4.  Review the companies that are available in the partitions in your environment. Select the companies to work with by selecting the location of the company that you are importing from (for example, initialDAT), and then click **Continue**.
 5.  Select the entities to copy to a stored configuration.
 6.  Click **Continue** to import your stored configuration. After a configuration has been created, you can review what it contains.
+
+
 
 
 

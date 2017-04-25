@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounting distributions and subledger journal entries for vendor invoices
 
+[!include[banner](../includes/banner.md)]
+
+
 Accounting distributions are used to define how an amount will be accounted for, such as how the expense, tax, or charges will be accounted for on a vendor invoice. Every amount that must be accounted for when the vendor invoice is journalized will have one or more accounting distributions. 
 
 Accounting distributions 
@@ -248,6 +251,8 @@ Accounting distributions for taxes cannot be created until taxes are calculated.
 Before you post a vendor invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts. This view of the full accounting entry is called a subledger journal. 
 
 If the subledger journal entry is incorrect when you preview it before you journalize the vendor invoice, you cannot modify the subledger journal entry. Instead, you must modify the accounting distributions or the posting profile. The accounting distributions are used to define one side of the accounting entry, the debit or the credit. The offsetting subledger journal account entry is created by using the posting profiles, such as from the vendor account or tax.
+
+
 
 
 

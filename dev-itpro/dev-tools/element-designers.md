@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Element designers
 
+[!include[banner](../includes/banner.md)]
+
+
 This article reviews the element designers and explains how to use them.
 
 The Microsoft Visual Studio Tools for Microsoft Dynamics 365 for Operations contain designers for each kind of element in the program. You use these designers when you create or modify elements.
@@ -89,4 +92,6 @@ If you're working with a customization element or an extension element, you can 
 The value of a node in the element designer is often a reference to another element. For example, a field node in a table element is typically based on an extended data type (EDT) element. When you right-click a node in the element designer, you can click the **Go to &lt;element&gt;** command to navigate to that related element. For example, when you right-click the **FuelType** node in the list of fields for the FMVehicle table, you can click **Go to Base Enum FMFuelType** to show the base enumeration that is used to define the field. 
 
 [![22\_DevoToolsConcept](./media/22_devotoolsconcept.png)](./media/22_devotoolsconcept.png)
+
+
 

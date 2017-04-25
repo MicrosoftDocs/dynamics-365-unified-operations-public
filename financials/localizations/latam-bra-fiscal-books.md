@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Fiscal books for Brazil
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about fiscal books. Fiscal books are one of three projects that make up the Public Digital Bookkeeping System (SPED). They can help you consolidate fiscal and statutory books into electronic files to fulfill the requirements for SPED. 
 
 The Public Digital Bookkeeping System, or Sistema Público de Escrituração Digital (SPED) provides detailed information about the fiscal documents that are related to services and goods, calculations of profits, logistical operations, and financial transactions. SPED is divided into three projects: electronic documents, fiscal books, and accounting books. Fiscal books can help you consolidate fiscal and statutory books into electronic files to fulfill the requirements for SPED. Here are the fiscal books:
@@ -57,3 +60,5 @@ The Public Digital Bookkeeping System, or Sistema Público de Escrituração Dig
 -   [Referenced fiscal documents](latam-bra-referenced-fiscal-documents.md)			
 -   [Sales complementary fiscal documents](latam-bra-sales-complementary-fiscal-documents.md)
 -   [Service electronic fiscal document](latam-bra-service-electronic-fiscal-document.md)	
+
+

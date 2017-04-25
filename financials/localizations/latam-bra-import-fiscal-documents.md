@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Import fiscal documents for Brazil
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
 
 You can issue a direct import fiscal document when you create a purchase order to import items from a foreign vendor. An import fiscal document records transit information about the items that you import. The import fiscal document is used to release items from customs and to validate the entry of the items in the warehouse of the legal entity. You must specify the import declaration information (the addition number and import declaration number) for a purchase order that is issued to import items from a foreign vendor before you post the purchase order. A direct import fiscal document includes the following information:
@@ -158,6 +161,8 @@ For this scenario, you must create and post a direct import fiscal document.
 </tr>
 </tbody>
 </table>
+
+
 
 
 

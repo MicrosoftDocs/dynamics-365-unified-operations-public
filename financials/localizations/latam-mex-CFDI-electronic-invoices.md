@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Electronic invoices (CFDI)
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the electronic invoices that your organization can submit to the Mexican tax authority (SAT). It describes the currently approved method for submitting electronic invoices (CFDI), the requirements for using them, and the information that they include.
 
 An electronic invoice is a legally accepted digital tax receipt that your organization submits to the Mexican tax authority (Servicio de Administración Tributaria \[SAT\]). Microsoft Dynamics 365 for Operations helps guarantee that the electronic invoices that your organization generates are secure, confidential, authentic, and legally acceptable. You can also make sure that international standards are applied to your electronic invoices. You can generate an electronic invoice for the following documents when a transaction is posted:
@@ -87,4 +90,6 @@ An electronic invoice includes the following details:
 
 ## Customizing the integration PAC web services
 As is explained in detail in the Mexican localization scope document, integration with PAC web services requires customization. This customization varies, depending on the PAC web services that are contracted.
+
+
 

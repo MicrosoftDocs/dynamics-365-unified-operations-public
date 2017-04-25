@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up reduction entries for fixed assets
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about reduction entries for fixed assets and how to set them up in Microsoft Dynamics 365 for Operations. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
 
 When you acquire a fixed asset by using a government subsidy, the subsidy is treated as taxable revenue. However, if you account for the whole government grant as revenue, the result is a large amount of corporate income tax, which reduces the subsidizing effect of the grant. Therefore, a special accounting treatment called a reduction entry is permitted. Basically, reduction entries defer the corporate income tax throughout the service life of the fixed asset that is acquired. Two types of accounting treatment are allowed:
@@ -102,4 +105,6 @@ See also
 --------
 
 [Microsoft Dynamics AX 2012 R3 Fixed Asset Loc﻿alization Feature Set - Japan](https://mbs.microsoft.com/partnersource/global/deployment/documentation/white-papers/msdAX2012R3JapanFixedAssets)
+
+
 

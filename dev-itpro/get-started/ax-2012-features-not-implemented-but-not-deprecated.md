@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 2
 
 # Dynamics AX 2012 features that haven't been implemented but aren't deprecated
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Dynamics 365 for Operations. Although these features haven't yet been implemented, they aren't deprecated. 
 
 <table>
@@ -351,6 +354,8 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 </tbody>
 </table>
+
+
 
 
 

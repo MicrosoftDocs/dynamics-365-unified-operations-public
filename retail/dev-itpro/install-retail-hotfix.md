@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install Retail hotfixes
 
+[!include[banner](../includes/banner.md)]
+
+
 Use this tutorial to install Retail hotfixes for Microsoft Dynamics AX.
 
 Retail server
@@ -176,4 +179,6 @@ Upload a package located at *C:\\Packages\\ModernPOSSetup.exe* with version "7.0
 Upload a package located at *C:\\Packages\\ModernPOSSetup.exe* with version "7.0.968.0" and PackageType as 'ModernPosWithOffline'. If there exists a package of the same type in the cloud storage, it will be removed from the storage. The details required to access the cloud storage will be accessed via the configuration file available for the IIS website 'MyCompanyWebsite'. .\\RetailSelfServiceOnDemandPackageUploader.ps1 -PackageFilePath *C:\\Packages\\ModernPOSSetup.exe" -PackageVersion "7.0.968.0" -PackageType ModernPosWithOffline -AOSWebsiteName "MyCompanyWebsite* 
 
 [![Powershell\_RetailHotfix](./media/powershell_retailhotfix.png)](./media/powershell_retailhotfix.png)  
+
+
 

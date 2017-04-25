@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail hardware station configuration and installation
 
+[!include[banner](includes/banner.md)]
+
+
 This tutorial explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 
 Download Retail hardware station by using self-service
@@ -150,5 +153,7 @@ You can use Control Panel in Microsoft Windows to uninstall Retail hardware stat
 2.  In Control Panel, click **Programs** &gt; **Uninstall a program**. The **Programs and Features** window opens.
 3.  Select **Microsoft Dynamics 365 for Operations for Retail hardware station**, and then click **Uninstall** above the list of programs.
 4.  Wait for the uninstaller to finish removing the program.
+
+
 
 

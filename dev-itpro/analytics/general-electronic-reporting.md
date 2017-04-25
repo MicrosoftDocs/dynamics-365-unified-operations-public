@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Electronic reporting overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 
 Electronic reporting (ER) is a tool that you can use to configure formats for electronic documents in accordance with the legal requirements of various countries/regions. ER lets you manage these formats during their lifecycle. For example, you can adopt new regulatory requirements, and can generate business documents in the required format to electronically exchange information with government bodies, banks, and other parties. The ER engine is targeted at business users instead of developers. Because you configure formats, not code, the processes of creating and adjusting formats for electronic documents are faster and easier. ER currently supports the TEXT, XML, and OPENXML worksheet formats. However, an extension interface provides support for more formats.
@@ -273,4 +276,6 @@ See also
 [Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
 
 [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Debug X++ against a copy of a production database
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to configure X++ debugging so that you can investigate issues in the production environment. For this procedure, you make a copy of the production database and then configure a developer environment to connect to the copied database.
 
 Solution overview
@@ -90,4 +93,6 @@ Next, the developer edits the web.config file for Application Object Server (AOS
 4.  Debug the issue.
 
 After the developer has finished, the system administrator can remove "devtempuser" from the sandbox database. This step prevents the developer from having permanent access to the sandbox database.
+
+
 

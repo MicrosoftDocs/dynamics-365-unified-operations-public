@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create and use deep links
 
+[!include[banner](../includes/banner.md)]
+
+
 Learn how to create shareable, secured URLs to forms and records.
 
 Overview
@@ -105,4 +108,6 @@ System.Uri fullURI = generator.GenerateFullUrl();
 // to get the encoded URI, use the following code
 fullURI.AbsoluteUri
 ```
+
+
 

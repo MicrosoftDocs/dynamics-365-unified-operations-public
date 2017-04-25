@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Posting definitions in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides examples of public sector posting definitions that you can use to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
 
 This article describes the posting definitions functionality available for the public sector. Before you read this topic, you should be familiar with posting definitions.
@@ -623,4 +626,6 @@ See also
 [Budgeting in the public sector](budgeting-public-sector.md)
 
 [General ledger in the public sector](general-ledger-public-sector.md)
+
+
 

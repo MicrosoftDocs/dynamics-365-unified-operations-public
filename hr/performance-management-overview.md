@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Performance management overview
 
+[!include[banner](includes/banner.md)]
+
+
 The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 
 As the following diagram shows, there are three pages that help you manage the process:
@@ -154,4 +157,6 @@ Performance journal source types describe where the performance journals come fr
 ### Review types
 
 Performance review types help you control the behavior of a review. You can enable or disable workflow for a review. If the review does not use workflow, you can define the default status that will be used when the review is created. You can also decide if the employee, the manager, or both will be required to sign off on the review.
+
+
 

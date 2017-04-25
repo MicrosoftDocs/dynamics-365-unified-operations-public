@@ -75,3 +75,4 @@ Here are some guiding rules that you should keep in mind when you're contributin
 - **DON'T** treat the repo as a general database store. Only store text and art in the repository. 
 - **DON'T** check in anything that should not be seen by other people, for example an email address, password, access token, or internal server name. Even if you delete the text from the file, it will remain in the history and can be viewed from there. 
 
+

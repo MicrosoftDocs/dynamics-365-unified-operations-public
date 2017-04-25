@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control dialog support
 
+[!include[banner](../includes/banner.md)]
+
+
 Describes the code pattern to add Segmented Entry controls to dialogs.
 
 The process to add Segmented Entry controls to dialogs has changed for Microsoft Dynamics 365 for Operations. This is an example from Dynamics AX 2012:
@@ -76,4 +79,6 @@ See also
 [Segmented Entry control migration](segmented-entry-control-conversion.md)
 
 [Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+
+
 

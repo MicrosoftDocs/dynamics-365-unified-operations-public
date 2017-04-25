@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Payment methods in a call center
 
+[!include[banner](includes/banner.md)]
+
+
 This topic covers the different payment methods you can use in a call center in Retail and commerce.
 
 The payment methods that are used in other channels in Retail and commerce in Microsoft Dynamics AX, such as cash, checks, credit cards, and gift cards, can also be used in call centers. After you set up a payment method for a call center, it appears as one of the options in the **Payments** section of the **Sales order** page for call center users. Additionally, you can set up coupons to offer discounts to customers who place an order with your organization’s call center. Coupons can be for a fixed amount discount, or for a percentage of an item price or the order total. For example, an amount-based coupon might offer customers a 75.00 discount when the customer spends 750.00 or more. You can create different types of coupons, set up parent/child coupons, and copy or void a coupon. Use the options  in the following table to create coupons.
@@ -48,5 +51,7 @@ If you submit a credit card payment from the **Sales order** page and receive a 
 
 -   Check holds let finance personnel process orders that have been put on hold because a check was used as the payment method, and the check hold threshold amount was exceeded. The hold can be manually released, or it automatically expires at the end of the configured period.
 -   You can set thresholds above which refunds that are issued via checks and credit cards must be manually approved. Any refund that exceeds the threshold amount is added to the approval queue. After you approve the refund, the return sales order can be invoiced.
+
+
 
 

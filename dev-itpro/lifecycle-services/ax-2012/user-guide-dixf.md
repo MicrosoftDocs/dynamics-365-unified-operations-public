@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Data import/export framework user guide (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 Various versions of the Data Import/Export Framework are available. The version that you use depends on the version of Microsoft Dynamics AX that you run in your environment:
@@ -68,6 +71,8 @@ The following diagram shows the steps that are required to import or export data
     | The staging data might contain business information. Therefore, we strongly recommend that you delete the staging data after the migration is completed. |
 
     For export, you also move the data from the source to a staging table, where you can clean or transform the data as you require. You then export the data either to Microsoft Dynamics AX or to a file. The first option creates a .dat file and a .def file for the data, so that it can be imported into another Microsoft Dynamics AX instance. The second option creates a flat file for the data.
+
+
 
 
 

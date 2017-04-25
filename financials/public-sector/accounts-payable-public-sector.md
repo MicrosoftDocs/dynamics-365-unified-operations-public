@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts payable in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics AX. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project Accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
 
 What are the prerequisites for setting up Accounts payable in the public sector?
@@ -102,6 +105,8 @@ When you create cover and signature pages for a payment report, you can specify 
 ### How do I view purchase order line amounts?
 
 You can view line amounts for a purchase order. These amounts include the current ordered amount, and any amounts that have been received or invoiced. You can also view any amounts that must still be invoiced or amounts for invoices that are pending. Tip For example, you view a purchase order line that has purchases that are posted to two ledger accounts. One ledger account is for items that are ordered from a vendor for office furniture. The second ledger account is for office supplies. The ordered amount is equal to the sum of the invoiced, pending invoice, and invoice remaining amounts. The received amount is the part of the ordered amount that has been received from the vendor.
+
+
 
 
 

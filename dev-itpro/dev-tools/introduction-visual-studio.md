@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Development tools for Dynamics 365 for Operations
 
+[!include[banner](../includes/banner.md)]
+
+
 This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools. 
 
 In this tutorial, you'll take a tour of the Fleet Management solution in Visual Studio. You'll see how a project is organized in the Visual Studio development environment. Much of what you'll see uses standard Visual Studio features, plus you will notice that we've added some new customized features. Along the way we'll point out some of these new and customized features and how they ease development. This tutorial will focus on:
@@ -120,5 +123,7 @@ The code in a solution is stored as XML. The following instructions show you how
 3.  On the **View** menu, click **Error List** to see the list of best-practice warnings. We've deliberately left some warnings in the build to demonstrate this feature.
 4.  Double-click any warning message to view the code or resource that caused the warning.
 5.  In the **Window** menu, click **Close All Documents** to close all open documents.
+
+
 
 

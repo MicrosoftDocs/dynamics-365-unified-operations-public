@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure the properties of a workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to configure the various properties of a workflow.
 
 To configure the properties of a workflow, open the workflow in the workflow editor. Click the canvas of the workflow editor, and then click **Properties** to open the **Properties** page. You can then use the following procedures to configure the various properties of the workflow.
@@ -171,5 +174,7 @@ To enter comments about the changes that you made to the workflow, follow these 
 2.  In the **Enter comments about the workflow** field, enter your comments.
 3.  Review your comments. After you add comments, you can't modify them.
 4.  Click **Add** to add your comments to the **Comment history** area.
+
+
 
 

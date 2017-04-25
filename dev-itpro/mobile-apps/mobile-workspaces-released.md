@@ -31,6 +31,9 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Mobile workspaces recently released for the Dynamics 365 for Operations mobile app
+
+[!include[banner](../includes/banner.md)]
+
 "[!include[banner](../includes/banner.md)]"
 
 
@@ -60,6 +63,8 @@ Mobile workspaces that were released in April 2017
 | Mobile workspace        | Description                                                                    | Learn more                                                                                                            |
 |-------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Vendor invoice approval | Learn how to design and create a mobile workspace for vendor invoice approval. | [Mobile invoice approvals](/dynamics365/operations/financials/accounts-payable/mobile-invoice-approvals) |
+
+
 
 
 

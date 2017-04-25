@@ -31,6 +31,9 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Power BI content recently released for Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 "[!include[banner](../includes/banner.md)]"
 
 
@@ -66,6 +69,8 @@ Power BI content that was released in February 2017
 | Workforce metrics                             | This Power BI content helps HR professionals analyze headcount, demographics, attrition, and positon data.                                                                   | [Workforce metrics Power BI content](workforce-analysis-power-bi-content-pack.md)                                                 |
 | Compensation and benefits reports             | This Power BI content helps HR professionals analyze data about benefit plans and provides a breakdown of salaried versus hourly employees.                                  | [Compensation and benefits Power BI content](compensation-and-benefits-analysis-power-bi-content-pack.md)                         |
 | Practice manager                              | This Power BI content helps project managers analyze projects, such as revenue and budget performance, schedule performance, and the earned value for each project.          |                                                                                                                                                                              |
+
+
 
 
 

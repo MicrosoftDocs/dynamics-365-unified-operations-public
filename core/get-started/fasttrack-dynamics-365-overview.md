@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Microsoft FastTrack for Dynamics 365 overview
 
+[!include[banner](../includes/banner.md)]
+
+
 Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success.  
 
 ## Eligibility: Microsoft FastTrack for Dynamics 365
@@ -290,4 +293,6 @@ The Servicing tech talk is designed to provide guidance on the servicing options
 -   Cloud powered support
 
 The typical format is a one-hour Skype call. The recommended attendees include project managers and technical resources from customer and partner teams.
+
+
 

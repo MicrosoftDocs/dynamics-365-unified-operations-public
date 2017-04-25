@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Deploy a test environment on Azure (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 Prerequisites
@@ -439,4 +442,6 @@ The following table lists the default names of the domain accounts that were cre
 ### Local administrator accounts
 
 Each virtual machine that you deployed has a local administrator account. This account is: builtinaxlocaladmin. The passwords for the local administrator accounts are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
+
+
 

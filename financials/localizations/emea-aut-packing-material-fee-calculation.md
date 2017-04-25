@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Packing material fee calculation for Austria
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about packing material rates and fees in Austria.
 
 In Europe, there are regulations about packaging waste. These regulations work on the principle of "collective producer responsibility." In other words, they enforce the requirement that producers or sellers of packaging take responsibility for the environmental impact of that packaging. According to the regulations, producers are obligated to pay a portion of the cost of recovering and recycling their packaging. This payment is known as a packing material fee*,* and it's paid periodically to a recycling company. A company should calculate the weight of each type of packing material (paper, plastic, metal, and so on) that was used during a sale or purchase, and multiply that weight by the package material rate. The government provides the package material rate for each type of packing material. In Austria, a more complex formula for is used for packing material fees. Packing materials are divided into various categories (for example, Household and Commercial), and the government provides tax rates for packing materials in each category. The category that packing material belongs to depends on size and the products that the packaging was used for. Packing material fees are calculated and reported, but no ledger transactions are posted automatically, because the fees aren't considered taxes that must be paid to an authority.
@@ -113,4 +116,6 @@ Use the Packing material calculation journal to calculate packing material fees 
 
 ## Print the Packing materials fee calculation report
 The **Packing materials fee calculation** report contains information about packing materials fees that were calculated by using Austrian rules. To print this report, on the **Packing material calculation journal** page, select the calculated journal, and then click **Print report**.
+
+
 

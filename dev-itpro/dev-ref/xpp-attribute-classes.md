@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ attribute classes
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the use of attributes in X++.
 
 An attribute is a non-abstract class that extends (inherits from) the **SysAttribute** class. Attributes represent or store metadata about types and methods. An attribute can be attached to a class, an interface, or a method of a class, interface, or table.
@@ -167,4 +170,6 @@ You use the **DictMethod** class to find the metadata value of an attribute tha
             ("CustCustomerService", "create");
     }
     **************/
+
+
 

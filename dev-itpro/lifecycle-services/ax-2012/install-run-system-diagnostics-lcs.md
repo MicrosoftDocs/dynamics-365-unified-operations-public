@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Install and run System diagnostics (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 In Microsoft Dynamics Lifecycle Services, System diagnostics includes an on-premises component that must be installed before you can use the service to discover Microsoft Dynamics AX environments and collect data.
 
 Install the System diagnostics on-premises component
@@ -228,6 +231,8 @@ You can collect data on demand from the **Environment Discovery** window. We rec
 12. Click next -&gt; And in following screen make sure that **Mark this key as exportable** is set. Click next and finish
 13. Now when running Lifecycle services system diagnostics setup choose on new environment use an existing certificate
 14. Certificate generated in first step should be present in client certificates lookup choose it and continue as usual:
+
+
 
 
 

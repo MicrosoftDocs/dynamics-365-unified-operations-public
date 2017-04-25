@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Layout in Dynamics 365 for Operations
 
+[!include[banner](../includes/banner.md)]
+
+
 This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 
 Introduction
@@ -181,4 +184,6 @@ See also
 --------
 
 [User interface development home page](user-interface-development-home-page.md)
+
+
 

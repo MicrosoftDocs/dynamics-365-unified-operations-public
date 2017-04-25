@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # VAT reporting for Europe
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.
 
 This topic provides a generic approach to setting up and generating the VAT statement. This approach is common for users in legal entities in the following countries/regions:
@@ -275,6 +278,8 @@ The VAT statement for each country must meet the requirements of the country’s
 | Lithuania      | [VAT statement details for Lithuania](emea-ltu-vat-statement-details.md)         |
 | Netherlands    |                                                                                 |
 | Sweden         |                                                                                 |
+
+
 
 
 
