@@ -1,4 +1,3 @@
-﻿---
 # required metadata
 
 title: Known issues
@@ -41,7 +40,7 @@ Known issues in Dynamics 365 for Operations can be found by using the Issue se
 
 | **Release**                                    | **Version**       | **Build number** | **Availability** | **Search for this text**                                                       |
 |------------------------------------------------|-------------------|------------------|------------------|--------------------------------------------------------------------------------|
-| Microsoft Dynamics 365 for Operations platform | Platform update 6 | XX               | April 2017    | Known issue in Dynamics 365 for Operations platform update 6 (April 2017)   |
+| Microsoft Dynamics 365 for Operations platform | Platform update 6 | 7.0.4509.16180               | April 2017    | Known issue in Dynamics 365 for Operations platform update 6 (April 2017)   |
 | Microsoft Dynamics 365 for Operations platform | Platform update 5 | 7.0.4475.16165   | March 2017    | Known issue in Dynamics 365 for Operations platform update 5 (March 2017)   |
 | Microsoft Dynamics 365 for Operations platform | Platform update 4 | 7.0.4425.16161   | February 2017    | Known issue in Dynamics 365 for Operations platform update 4 (February 2017)   |
 | Microsoft Dynamics 365 for Operations          | 1611              |  7.1.1541.3036   | November 2016    | Known issue in Dynamics 365 for Operations version 1611 with platform update 3 |
