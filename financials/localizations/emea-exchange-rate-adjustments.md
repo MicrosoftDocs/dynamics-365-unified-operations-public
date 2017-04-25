@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Exchange rate adjustments
