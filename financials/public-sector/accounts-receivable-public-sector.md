@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Accounts receivable in the public sector
