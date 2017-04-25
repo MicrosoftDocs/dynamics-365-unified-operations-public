@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Collaborate with vendors by using the Vendor portal
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Collaborate with vendors by using the Vendor portal
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how purchasing agents can use the Vendor portal to collaborate with external vendors during the purchase order confirmation process. This information applies only to the February 2016 &amp; May 2016 versions of Dynamics AX.
 
@@ -102,4 +105,5 @@ See also
 [Configuration of security for vendor collaboration users](configure-security-vendor-portal-users.md)
 
 [Vendor collaboration invoicing workspace](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+
 

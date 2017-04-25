@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: F Classes - FormBuildButtonControl to FormBuildFastTabSummarySeparator
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # F Classes - FormBuildButtonControl to FormBuildFastTabSummarySeparator
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter F.
 
@@ -15836,6 +15839,7 @@ objectMethodToCall
 <!-- -->
 
 overrideObject  
+
 
 
 

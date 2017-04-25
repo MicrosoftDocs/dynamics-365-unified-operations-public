@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Sales agreements
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Sales agreements
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about sales agreements. A sales agreement is a contract that commits the customer to buy products in a specific quantity or for a specific amount over time, in exchange for special prices and discounts.
 
@@ -113,4 +116,5 @@ In some situations where sales orders are created indirectly, such as when you c
 
 ## Financial dimensions on sales agreements
 You can copy financial dimensions to either document headers or individual lines of a sales agreement. You can change the dimensions on an agreement header or agreement line at any time. In this case, the dimensions are automatically copied to the release header or release line of release orders.
+
 

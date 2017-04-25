@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create a call center catalog
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create a call center catalog
+
+[!include[banner](includes/banner.md)
+
 
 This article provides an overview of the process for creating a catalog for a call center. 
 
@@ -72,4 +75,5 @@ You can also add the following items to a call center catalog. These items are o
 
 ## Publish the catalog
 By publishing a catalog for a call center, you finalize the product information in the catalog. Publication also indicates that the catalog is ready for any additional actions that you want to perform. For example, you can create a printed catalog. You can publish your catalogs manually, or you can use a batch process to publish according to a schedule. Before you can publish a catalog, the catalog must be validated and approved. To change the catalog after it's published, you can retract the catalog and then republish it.
+
 

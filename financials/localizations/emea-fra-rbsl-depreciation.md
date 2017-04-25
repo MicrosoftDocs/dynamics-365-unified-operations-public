@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: RB/SL depreciation
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # RB/SL depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 RB/SL is a depreciation method that is used in France. Depreciation amounts are calculated by using both the reducing balance depreciation method and the straight-line remaining depreciation method. The larger of the two calculated depreciation amounts is then used as the RB/SL reducing balance depreciation amount.
 
 The RB/SL (France) depreciation method always uses the monthly depreciation period in the depreciation profile. When you create a fixed asset and assign a value model by using the RB/SL (France) depreciation method, the start date of the depreciation is always the first day of the month, and the end date is always the end of the fiscal year. The reducing balance depreciation amount is calculated by using the reducing balance percentage, which is calculated based on RB/SL factors. You set up the RB/SL factors according to the service life of the fixed asset on the **RB/SL factors** page. For example, you can set up the following factors.
@@ -53,4 +56,5 @@ When you create a **Fixed asset group/value model** setup, you specify the numbe
 | **Total** | **Not applicable**                | **Not applicable**                  | **1,000.00**                          | **Not applicable** |
 
 **Note:** If you depreciated an asset by using fixed asset software other than Microsoft Dynamics 365 for Operations, you must post the acquisition and the accumulated depreciation in Dynamics 365 for Operations for the period before you started using Dynamics 365 for Operations. For example, if you started using Dynamics 365 for Operations on January 1, 2016, you must post the acquisition and accumulated depreciation in Dynamics 365 for Operations for the period that ended December 31, 2015. After you post the acquisition, you must change the acquisition date to the correct date from your previous software and enter the remaining life of the asset. You can then depreciate the asset as usual, starting on January 1, 2016.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Install report design templates
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Install report design templates
+
+[!include[banner](../includes/banner.md)]
+
 
 This articles describes how to install the modern report design templates in the application suite. You can use these samples to create graphically rich business documents that have flexible header and footer branding.
 
@@ -75,6 +78,7 @@ The report designs have been bundled into a model file and posted to Microsoft D
         this.parmReportName(ssrsReportStr(CustAccountStatementExt, DesignName));
 
     At this point, you should be able to access the modern report designs from the application. Be sure to perform thorough test validations on these design templates before you deploy to production environments.
+
 
 
 

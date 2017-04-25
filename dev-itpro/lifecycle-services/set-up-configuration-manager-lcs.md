@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up Configuration manager
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Set up Configuration manager
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -145,4 +148,5 @@ Complete the following procedure in the environment that you intend to export a 
 
 ## Next steps
 The environment is now ready for you to copy and manage configurations. For more information, see [Copy a configuration (Lifecycle Services, LCS)](copy-configuration-lcs.md).
+
 

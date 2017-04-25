@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Mobile platform for Dynamics 365 for Operations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Mobile platform for Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 Microsoft Dynamics 365 for Operations includes support for a mobile phone app. The mobile approach lets you reuse business logic and modeling from the product. It also enables rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions to include customizations that are made to the product. 
 
@@ -372,3 +375,4 @@ If you decide to modify existing forms so that they work with the mobile framewo
 #### Dynamics 365 for Operations form control support
 
 The Dynamics 365 for Operations form controls for the various base data types (strings, dates, and numbers) and grids are supported. However, a few common controls have limited support. **Reference groups** Fields from within Reference groups controls are compatible when you design pages. However, they aren't compatible when you design Actions. Although you might be able to select these fields without experience any issue, Reference groups have a fundamental incompatibility with the mobile framework. We recommend that you not use Reference groups. Instead, add a control directly to the form, and then bind the control directly to the surrogate foreign key (SFK) by using the property sheet.
+

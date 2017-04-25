@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: e-Commerce Platform SDK
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # e-Commerce Platform SDK
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the e-Commerce Platform SDK.
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Sales tax rates based on the Marginal base and Calculation methods
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Sales tax rates based on the Marginal base and Calculation methods
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains how the values in the fields Marginal base and Calculation method determine the tax rate(s) in sales and purchase transactions.
 
@@ -222,4 +225,5 @@ Total duty = 5.00 x 8 = 40.00
 Total invoice amount = 200.00 + 39.00 + 40.00 = 279.00
 
 For more information, see [Whole amount and Interval calculation options for sales tax codes](whole-amount-interval-options-sales-tax-codes.md) and [Sales tax calculation methods in the Origin field](sales-tax-calculation-methods-origin-field.md).
+
 

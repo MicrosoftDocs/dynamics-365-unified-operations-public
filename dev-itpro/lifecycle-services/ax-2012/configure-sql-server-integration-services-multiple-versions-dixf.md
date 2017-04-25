@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure the version of SSIS used by the AX 2012 Data import/export framework
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Configure the version of SSIS used by the AX 2012 Data import/export framework
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -117,6 +120,7 @@ You can force the Data Import/Export Framework to use a version of Integration S
 4.  Save the file.
 5.  Restart the Data Import/Export Framework service.
 6.  Test that your changes are working as expected.
+
 
 
 

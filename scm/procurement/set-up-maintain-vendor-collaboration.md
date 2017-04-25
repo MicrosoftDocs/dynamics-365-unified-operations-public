@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up and maintain vendor collaboration
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Set up and maintain vendor collaboration
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the configuration tasks that are needed to set up Dynamics 365 for Operations to use vendor collaboration. It also describes how to provision new vendor collaboration users.
 
@@ -125,4 +128,5 @@ See also
 --------
 
 [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md)
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Inventory statuses
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory statuses
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how you can use inventory statuses to categorize and keep track of inventory.
 
 You can use inventory statuses to categorize inventory. You can then initiate appropriate actions, such as replenishment or put-away work. 
@@ -52,4 +55,5 @@ For outbound work, use items that have an available inventory status. If you hav
 After you set up inventory statuses, you can set the default inventory status for a site, item, and warehouse. You can also set a default status for sales, transfer, and purchase orders. The default status for sales orders and outbound transfer order can't have the **Inventory blocking** option set to **Yes**. The inventory status that is inherited from the default settings on a site, warehouse, item, purchase order, transfer order or sales order can be changed by using the mobile device, or on the purchase order, sales order, or transfer order line. 
 
 To plan coverage for items that have an available inventory status, select the **Coverage plan by dimension** option for a storage dimension on the **Storage dimension groups** page. When you open the **Item Coverage** wizard, items that have an available status appear on the **Status** page. To create coverage settings for these items, select the inventory status ID for the available inventory statuses. Based on the coverage settings, you can calculate the item requirements and forecast the supply and demand of available items during master planning. You can't create an item coverage setup that has a blocked inventory status. Alternatively, use the **Item coverage** page to create or modify the item coverage parameters.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Work with pay statements
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Work with pay statements
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the process for generating pay statements. It also describes other tasks, such as reversing a pay statement, that you might have to complete after you generate pay statements.
 
@@ -146,4 +149,5 @@ Benefit accrual lines are created when you submit a pay statement for payment. Y
 
 ## Reverse a pay statement
 To reverse a pay statement that has been posted or submitted for payment, see [Work with existing payroll payments](noam-usa-existing-payroll-payments.md).
+
 

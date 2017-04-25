@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: What's new in Lifecycle Services
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # What's new in Lifecycle Services
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -656,4 +659,5 @@ See also
 --------
 
 [What’s new or changed](../get-started/whats-new-changed.md)
+
 

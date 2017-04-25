@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure tax integration for China
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Configure tax integration for China
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the process for configuring tax integration for China.
 
 To configure tax integration for China, complete the following tasks.
@@ -56,4 +59,5 @@ See also
 [Import the Chinese Golden Tax data entity](apac-chn-import-golden-tax-data-entity.md)
 
 [Chinese tax integration modification for VAT customer invoices FAQ](apac-chn-tax-integration-vat-customer-invoices.md)
+
 

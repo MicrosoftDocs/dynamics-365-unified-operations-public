@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Office integration troubleshooting
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Office integration troubleshooting
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides answers to questions, tips, and troubleshooting information for the Microsoft Dynamics 365 for Operations Office integration capabilities. The questions and issues discussed range across user, administration, and development scenarios.
 
@@ -99,4 +102,5 @@ See also
 [Office Integration lab and walkthroughs](office-integration-tutorial.md)
 
 [Configuring PowerBI Integration](..\analytics\configure-power-bi-integration.md)
+
 

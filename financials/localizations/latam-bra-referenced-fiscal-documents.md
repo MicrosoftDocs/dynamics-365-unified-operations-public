@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Referenced fiscal documents for Brazil
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Referenced fiscal documents for Brazil
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides an overview of referenced fiscal documents that are used in Brazil.
 
@@ -96,6 +99,7 @@ Fiscal document text placeholders are predefined tags that represent specific va
 | %FiscalRef\_InvAccCNPJCPFNumRef       | The taxpayer registration number (CNPJ/CPF) of the reference invoice account. |
 | %FiscalRef\_FiscalPrinterSerialNumber | The serial number of the fiscal printer.                                      |
 | %FiscalRef\_ECFNumber                 | The fiscal printer number in the retail store.                                |
+
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: General ledger in the public sector
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General ledger in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the General ledger functionality that is available for the public sector.
 
 How do General ledger parameters need to be set for public sector organizations?
@@ -64,4 +67,5 @@ See also
 --------
 
 [General ledger](../general-ledger/general-ledger.md)
+
 

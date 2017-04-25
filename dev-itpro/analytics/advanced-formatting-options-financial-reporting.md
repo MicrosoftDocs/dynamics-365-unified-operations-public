@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Advanced formatting options in financial reporting
@@ -31,6 +31,9 @@ ms.dyn365.ops.version:
 ---
 
 # Advanced formatting options in financial reporting
+
+[!include[banner](../includes/banner.md)]
+
 
 When you create a report in financial reporting, additional formatting functions are available, including filters for dimensions, restrictions for columns and reporting units, non-printing rows, and IF/THEN/ELSE statements in calculations. 
 
@@ -265,4 +268,5 @@ To restrict a calculation to a single reporting unit in a reporting tree, so tha
 ### IF/THEN/ELSE statements in a column definition
 
 An **IF/THEN/ELSE** statement enables any calculation to depend on the results from any other column. You can refer to other columns, but you can't refer to a report cell in the **IF** statement. Any calculation must be applied to the whole column. For example, the statement **IF B&gt;100 THEN B ELSE C\*1.25** means, "If the amount in column B is more than 100, put the value from column B into the **CALC** column. If the amount in column B isn't more than 100, multiply the value in column C by 1.25, and put the result into the **CALC** column." Always follow the **IF** statement with a logic statement that can be evaluated as true or false. The formulas that you use for both the **THEN** statement and the **ELSE** statement can contain references to any number of columns, and these formulas can be as complex as you want to make them. **Note:** You can't put the results of a calculation into any other column. The results must be in the column that contains the formula.
+
 

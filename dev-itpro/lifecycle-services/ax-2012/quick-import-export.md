@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Use quick import/export
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 2012 R3 CU8
 
 # Run the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 
+[!include[banner](../includes/banner.md)]
+
+
 The purpose of Quick import export is to let you import and export with fewer steps.
 
 We added the Quick Import Export feature to let users import or export simple jobs that they want to execute quickly. Ideally this feature is used in scenarios in which a file automatically maps to the system and user does not need to go through advanced mapping or create repeated import or export jobs.
@@ -42,4 +45,5 @@ We added the Quick Import Export feature to let users import or export simple jo
 -   You do not need to create a processing group to use quick import/export, one will be automatically created by the system when executing the import or export job. You can also choose keep the history of the data imported by the quick import/export.
 
   Note that Quick import export assumes that you are familiar with the concepts of DIXF.
+
 

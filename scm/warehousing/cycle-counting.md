@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Cycle counting
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Cycle counting
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how you can use cycle counting with the warehousing solution that is available in Warehouse management. This article doesn't apply to the warehousing solution that's available in Inventory management.
 
@@ -140,4 +143,5 @@ You can adjust differences in the counted value and then accept the counted valu
 
 # See also
 [Configure mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+
 

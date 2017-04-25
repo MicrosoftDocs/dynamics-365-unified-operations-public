@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Depreciation methods and conventions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Depreciation methods and conventions
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides an overview of the depreciation conventions and depreciation methods that are supported by Microsoft Dynamics AX.
 
@@ -91,4 +94,5 @@ See also
 [175 percent reducing balance depreciation](175-percent-reducing-balance-depreciation.md)
 
 [200 percent reducing balance depreciation](200-percent-reducing-balance-depreciation.md)
+
 

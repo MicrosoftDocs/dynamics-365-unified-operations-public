@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up training courses
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up training courses
+
+[!include[banner](includes/banner.md)
+
 
 Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.
 
@@ -138,6 +141,7 @@ Workflow
 --------
 
 Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval.  A workflow can be assigned to a course on the **General** FastTab on the **Courses** page.
+
 
 
 

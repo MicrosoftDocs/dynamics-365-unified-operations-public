@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Stock card reports
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Stock card reports
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about stock card reports for legal entities in Thailand. A stock card report contains information about inventory movement, quantity, and cost for each item and warehouse, and must be generated when the government requests it. The stock card report is generated either before or after the inventory close process. 
 
 You can generate the following stock card reports:
@@ -55,4 +58,5 @@ Use the **Closing and adjustment** page to recalculate inventory after the inven
 
 ## Generate the stock card report
 You can group items by site, warehouse, location, item number, or item group, and then generate the stock card reports. Use the **Stock card – Physical** report to generate the physical stock card report. Use the **Stock card – Financial** report to generate the financial stock card report. You can generate a detailed or summarized stock card report.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Key performance indicator (KPI) report
@@ -32,10 +32,14 @@ ms.dyn365.ops.version: Platform update 1
 
 # Key performance indicator (KPI) report
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic points you to a report that lists the KPIs that are available in Dynamics 365 for Operations.
 
 A key performance indicator (KPI) is a collection of calculations used to measure business success. KPIs are used in the Fleet Management sample application.
 
 ## To view the report
 The [Key performance indicators (KPI) report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists the KPIs that are available in the Fleet Management sample application.
+
 

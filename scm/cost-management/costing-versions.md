@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Costing versions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Costing versions
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about costing versions, how to maintain them, and the types of data that you can include in them. The primary purpose of a costing version is to contain cost records about items, cost categories, and calculation formulas for indirect costs.
 
@@ -67,4 +70,5 @@ The main reason for enabling purchase price data is to define purchase price re
 To enable purchase price content, you first define a BOM calculation group that contains a cost price model for the item’s purchase price, and assign the BOM calculation group to purchased items. You then use a cost price model for the BOM calculation group when you perform BOM calculations that use planned costs to calculate the sales price of manufactured items. 
 
 The purchase price records for items are also used as reference information. By changing the status of an item’s purchase price record from **Pending** to **Active**, you can update the item’s base purchase price. However, the base purchase price isn't site-specific and can be manually overridden. The item's base purchase price is used as a default purchase price on purchase orders.
+
 

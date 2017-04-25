@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Quality management processes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Quality management processes
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the quality management process for nonconforming products. It describes how you can use quality control functionality, how to define and maintain nonconformances, and how to handle corrections.
 
@@ -104,4 +107,5 @@ See also
 [Set up quality orders (task guide)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
 [Inspect the quality of goods (task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
 

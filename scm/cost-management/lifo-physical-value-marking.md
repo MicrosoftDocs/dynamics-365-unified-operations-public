@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: LIFO with physical value and marking
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # LIFO with physical value and marking
+
+[!include[banner](../includes/banner.md)]
+
 
 Last in, First out (LIFO) is an inventory model in which the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. 
 
@@ -146,5 +149,6 @@ The following illustration shows the effects of the LIFO inventory model on this
 -   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
 -   Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
 -   Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
+
 
 

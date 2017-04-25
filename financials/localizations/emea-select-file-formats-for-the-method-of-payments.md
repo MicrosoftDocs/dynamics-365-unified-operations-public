@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: File formats for methods of payment
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # File formats for methods of payment
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the two methods for getting file formats that you can use for methods of payment.
 
 There are two methods that you can use to get file formats for use with methods of payment, electronic reporting (ER) file formats or X++ file formats. When you set up a method of payment for a customer or vendor, you indicate which file formats and standards should be used for payments and how payments will be processed. You can select from the following types of formats:
@@ -55,5 +58,6 @@ To select file formats that are based on X++ code, complete the following step
 4.  Select a file format from the **Available** list and move it to the **Selected** list with the arrow control.
 5.  Close the **File formats for methods of payment** page.
 6.  On the **File formats** FastTab, select the file format to use for the method of payment from the appropriate file format field. The General electronic reporting options should be set to **No** for X++ file formats.
+
 
 

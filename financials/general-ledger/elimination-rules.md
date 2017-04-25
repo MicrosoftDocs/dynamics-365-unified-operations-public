@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Elimination rules
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Elimination rules
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about elimination rules and the various options for reporting about eliminations.
 
@@ -155,4 +158,5 @@ There are two ways to process elimination transactions, during the consolidate o
 In a company defined as an elimination company, select **Elimination journal** in the Consolidations module. After you have selected the journal name, click **Lines**. You can run the proposal by selecting the **Proposals** menu and then selecting **Elimination proposal**.
 
 Select the company that is the source of the consolidated data, and then choose the rule that you want to process. Enter a start date to begin the search for elimination amounts, and an end date to end the search date for elimination amounts. The **GL posting date** field is the date used for posting the journal to the general ledger. After you click **OK**, you can review the amounts and post the journal.
+
 

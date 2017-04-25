@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Cost object dimensions
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost object dimensions
 
+[!include[banner](../includes/banner.md)]
+
+
 When you analyze costs, you use cost element dimensions to determine where costs flow to. You use cost object dimensions to determine where you should assign costs. This topic provides information about cost object dimensions.
 
 A cost object can be any type of object that you want to estimate, allocate costs to, or measure directly. Typical cost objects include products, projects, resources, departments, cost centers, and geographical regions. Management uses cost objects to quantify costs and also to drive profitability analysis.
@@ -43,4 +46,5 @@ Cost objects are known as *cost object dimensions*. After you’ve decided which
 
 ## Import cost object dimension members through data connectors
 To make the import of cost object dimension members easier, you use data connectors to retrieve the values from the entities that you want to use as cost object dimensions. You can use either the pre-built data connectors or custom data connectors that you build.
+
 

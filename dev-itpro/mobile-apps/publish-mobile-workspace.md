@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Publish a mobile workspace
@@ -31,6 +31,9 @@ ms.search.validFrom: 2017-02-28
 ---
 
 # Publish a mobile workspace
+
+[!include[banner](../includes/banner.md)]
+
 "[!include[banner](../includes/banner.md)]"
 
 
@@ -89,5 +92,6 @@ Before you publish a mobile workspace, make sure that the following prerequisite
 After a new workspace is published, users will have to pull to refresh the list of mobile workspaces. 
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+
 
 

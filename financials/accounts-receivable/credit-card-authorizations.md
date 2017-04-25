@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Credit card setup, authorization, and capture
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Credit card setup, authorization, and capture
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides an overview of credit card authorization in Microsoft Dynamics AX. It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.
 
@@ -76,6 +79,7 @@ If you ship part of an order, the amount of the partial order is captured, and t
 
 ## Voiding an authorization
 To void a credit card authorization, you can change the method of payment to another method that doesn't have a type of Credit card.
+
 
 
 

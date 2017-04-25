@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Data entities - Accounts receivable
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Data entities - Accounts receivable
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides a list of the data entities that are available for the Accounts receivable functionality in Microsoft Dynamics 365 for Operations.
 
@@ -84,4 +87,5 @@ See also
 [Data entities and packages framework](data-entities-data-packages.md)
 
 [Data entities](data-entities.md)
+
 

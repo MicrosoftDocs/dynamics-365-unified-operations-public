@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Class extensions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Class extensions
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the new class extension model in X++.
 
@@ -167,4 +170,5 @@ Static state applies to the type instead of an instance of the type. The followi
             staticState = 77;
         }
     }
+
 

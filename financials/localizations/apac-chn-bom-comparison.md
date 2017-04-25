@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Bill of materials comparison for China
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Bill of materials comparison for China
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about BOM comparison for China.
 
@@ -66,6 +69,7 @@ The following table shows how a BOM comparison is done. In this example, product
 | FG003   | FG003V1 |        | MT003      | 4        | pcs  | USD 30.00 |
 |         |         |        | MT004      | 2        | box  | USD 23.00 |
 |         |         |        | MT005      | 3        | kg   | USD 18.00 |
+
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Dynamics 365 for Operations glossary
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Dynamics 365 for Operations glossary
+
+[!include[banner](../includes/banner.md)]
+
 
 The Microsoft Dynamics 365 for Operations glossary defines key terms and concepts in the Dynamics 365 for Operations product. 
 
@@ -727,4 +730,5 @@ A person who assumes the role of an employee or a contractor and is paid in exch
 ###### **workspace**
 
 A page that provides an overview of one of the activities that the user performs. The page uses tiles, lists, and charts to display pending work and related data from multiple sources, and the page surfaces frequent tasks related to this data. Tiles shown in the summary section of the workspace are also displayed in the related section in the dashboard.
+
 

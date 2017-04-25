@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Best practices for importing vouchers using the General journal entity
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Best practices for importing vouchers using the General journal entity
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides tips for importing data into the General journal by using the General journal entity.  
 
@@ -70,4 +73,5 @@ The following sections describe the effect of these settings, and also explain h
 -   If the **Voucher number** field is set to **Auto-generated**, the import won't succeed. The **Auto-generated** setting for the **Voucher number** field isn't supported.
 
 By default, the General journal entity uses set-based processing. After you evaluate the business requirements for your organization, you can change the **Set-based processing** setting by clicking **Data entities** in the **Data management** workspace. Set-based processing is used to speed up the import process. If you don't use set-based processing, import of the General journal entity import will be slower.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure Accounts payable
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Configure Accounts payable
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics AX. It also describes setup steps that you must complete before you start to set up Accounts payable.
 
@@ -146,6 +149,7 @@ The additional setup pages are organized by functionality.
 **Cash and bank management**
 
 -   On the Payment purpose codes page, set up the Central Bank purpose code.
+
 
 
 

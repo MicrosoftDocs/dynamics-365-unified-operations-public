@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Production process overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Production process overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 
@@ -87,4 +90,5 @@ See also
 [Product configuration models](../pim/product-configuration-models.md)
 
 [Lean manufacturing](lean-manufacturing-overview.md)
+
 

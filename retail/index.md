@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Retail home page
@@ -95,3 +95,4 @@ You can find opinions, news, and other information about Microsoft Dynamics 365 
 There are many topics about Retail on the <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX product team blog</a>. Some of these posts were written for the previous version of Dynamics 365 for Operations, but the same concepts still apply, and the procedures are similar in the current version.
 
 The <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">Microsoft Dynamics Operations Partner Community Blog</a> provides Microsoft Dynamics Partners with a single resource to learn about what’s new and trending in MBS Operations.
+

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fixed asset acquisition posting accounts
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset acquisition posting accounts
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to set up general ledger posting accounts for acquiring assets.
 
 Accounts used for posting fixed asset acquisitions may vary depending upon the method used to acquire the asset. On the Fixed asset posting profiles page, on the Ledger accounts tab, select Acquisition and Acquisition adjustment to set up fixed asset accounts to post to the ledger. 
@@ -45,4 +48,5 @@ When Invoice journal or Purchase orders in Accounts payable are used for fixed a
 For acquisitions posted using the Inventory to fixed assets journal in General ledger, the fixed asset is not bought from external sources, but transferred from the company's own inventory. Therefore, the offset account is an inventory issue account for the inventory item in Inventory management.
 
 For more information, see [Acquire assets through procurement](acquire-assets-procurement.md).
+
 

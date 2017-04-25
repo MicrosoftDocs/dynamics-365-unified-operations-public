@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Sales tax payments and rounding rules
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Sales tax payments and rounding rules
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.
 
@@ -66,4 +69,5 @@ The following table shows how an amount of 98,765.43 is rounded by using each ro
 > If you select Own advantage, the rounding is always to the advantage of the legal entity. 
 
 For more information, see [Sales tax overview](indirect-taxes-overview.md). 
+
 

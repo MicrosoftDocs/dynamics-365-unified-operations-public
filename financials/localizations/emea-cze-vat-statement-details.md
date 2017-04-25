@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: VAT statement for the Czech Republic
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # VAT statement for the Czech Republic
+
+[!include[banner](../includes/banner.md)]
+
 
 Set up and generate the VAT statement for users in legal entities located in the Czech Republic.
 
@@ -150,4 +153,5 @@ You can use the **Electronic reporting** workspace to review or change the VAT 
 
 ## Generate the VAT statement
 To generate a VAT XML file, open the **Sales tax payments** page, select vouchers, and then click **Export VAT XML file**.
+
 

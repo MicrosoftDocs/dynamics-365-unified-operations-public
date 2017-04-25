@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Purchase order codes in the public sector
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchase order codes in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the codes and special messages that can be used with confirming purchase orders. A confirming purchase order bypasses the typical purchasing process.
 
 This article describes the purchase order codes functionality available for the public sector. You must first determine what your codes and messages will be. You can use the **Confirming PO codes** page to create codes and special messages that can be used with confirming purchase orders (POs). A confirming purchase order bypasses the typical purchasing process. For example, you must authorize an unplanned order by using a PO number at the time of a purchase, instead of by using a document that is provided before the item is required. 
@@ -45,4 +48,5 @@ If you assign a confirming PO code to a purchase order on the **Unplanned purcha
 -   You can create messages in different languages. This feature is helpful when you are purchasing from merchants in other countries or regions. For example, your organization is located in an English-speaking country or region, and you want to create a Spanish message for confirming purchase orders that have a confirming PO code **Confirming**.
 
  
+
 

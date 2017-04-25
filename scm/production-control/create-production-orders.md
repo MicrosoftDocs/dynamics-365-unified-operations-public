@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create production orders
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create production orders
 
+[!include[banner](../includes/banner.md)]
+
+
 When a production order is created, a request is initiated to start producing an item. The production order contains information about what will be produced, the quantity to produce, and the planned finish date. It also contains information about which materials to consume and which process to follow to produce the item.
 
 A production order passes through stages of the production life cycle. When an order is created, it is assigned the status **Created**. When an order is finished, it is assigned the status **Ended**. A parameter setting in each stage allows a user to configure each step. The setting can be set up for a single user or for all users.
@@ -43,5 +46,6 @@ A production order can be created in the following scenarios:
 -   Created by master planning execution based on material demand.
 -   Created directly from a sales order line or when a higher-level production order is created and estimated (pegged supply).
 -   Created manually.
+
 
 

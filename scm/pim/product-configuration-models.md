@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Product configuration models overview
@@ -31,6 +31,9 @@ ms.dyn365.version: AX 7.0.0
 ---
 
 # Product configuration models overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article defines terms and concepts that are relevant to product configuration models. Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
 
@@ -151,6 +154,7 @@ You can view whether a released product can be used as a component or subcompone
 </tr>
 </tbody>
 </table>
+
 
 
 

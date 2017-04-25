@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Consumption depreciation
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Consumption depreciation
+
+[!include[banner](../includes/banner.md)]
+
 
 This article gives an overview of the Consumption method of depreciation.
 
@@ -68,4 +71,5 @@ The following factor for consumption depreciation is set up for January 31:
 -   The estimated quantity of the fixed asset is 2,000.
 
 The depreciation proposal on January 31 is as follows: Estimated quantity × Percentage × Unit depreciation 2,000 × .10 × 1.5 = 300
+
 

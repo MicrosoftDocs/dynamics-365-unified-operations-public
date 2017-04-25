@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Dimension entry control migration
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Dimension entry control migration
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run. It uses the PurchTable form as an example.
 
@@ -149,4 +152,5 @@ See also
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
 [Dimension Entry control dialog support](dimension-entry-control-dialog-support.md)
+
 

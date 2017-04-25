@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Petty cash for Eastern Europe
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Petty cash for Eastern Europe
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about the petty cash functionality that lets users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia reflect cash operations in the system.
 
@@ -477,6 +480,7 @@ The settled amount is reflected in the <strong>Settled currency</strong> field o
 | Cash transaction                              | Go to **Cash and bank management** &gt; **Inquiries and reports** &gt; **Cash transactions** to view cash transactions. Use the **Filter** function to specify additional criteria to limit the selection of cash transactions. |
 | Journal of registration (for Estonia, Russia) | The report at **Cash and bank management** &gt; **Inquiries and reports** &gt; **Journal of registration** reflects all cash reimbursement and cash disbursement slips that have been issued.                                   |
 | Cash book (for Latvia, Lithuania, Russia)     | The report at **Cash and bank management** &gt; **Inquiries and reports** &gt; **Cash book report** reflects actual cash fund movements (receipts and expenditures).                                                            |
+
 
 
 

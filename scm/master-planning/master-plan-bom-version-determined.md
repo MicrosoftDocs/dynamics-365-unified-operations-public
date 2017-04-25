@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Determine the BOM version
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Determine the BOM version
 
+[!include[banner](../includes/banner.md)]
+
+
 During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site. 
 
 The site dimension is always known and is stated on the demand transaction. The following process is used to determine the BOM version to use:
@@ -41,6 +44,7 @@ The site dimension is always known and is stated on the demand transaction. The 
 -   If there is no general BOM version to use, the demand explosion stops at this point.
 
 A valid BOM version, whether site-specific or general, must meet the required criteria for date and quantity.
+
 
 
 

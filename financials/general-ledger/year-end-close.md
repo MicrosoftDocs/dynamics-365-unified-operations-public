@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Year-end close
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Year-end close
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the required setup and steps for running the general ledger year-end close process. 
 
@@ -88,4 +91,5 @@ If you would like to reverse a previous year end close for the selected fiscal y
 The year-end close process defaults to run in batch mode. It’s a best practice to run the process in batch mode, to allow the user to return to other activities. After the year end close process is complete, the **Date of last year end close** will be updated with the session date.
 
 For more information, see [Close the general ledger at period end](close-general-ledger-at-period-end.md).
+
 

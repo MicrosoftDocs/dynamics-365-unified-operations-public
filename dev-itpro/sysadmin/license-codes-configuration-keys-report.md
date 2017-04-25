@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: License codes and configuration keys report
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # License codes and configuration keys report
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic points you to a report that lists the license codes and configuration keys available in Dynamics 365 for Operations.
 
 When you purchase Dynamics 365 for Operations, all functionality is included. By default, some features and functionality that you do not use may be enabled. The administrator should disable the features that are not needed by disabling license codes and configuration keys.
@@ -40,4 +43,5 @@ When a license code or configuration key is disabled, the associated module or f
 
 ## To view the report
 The [License codes and configuration keys report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each configuration key that is available. The report also indicates the license code and menu items associated with each configuration key.
+
 

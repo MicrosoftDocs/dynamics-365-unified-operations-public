@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Sales complementary fiscal documents for Brazil
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Sales complementary fiscal documents for Brazil
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes sales complementary invoice for the Brazilian localization.
 
 Overview
@@ -61,4 +64,5 @@ Before you can create or post sales complementary fiscal documents, the followin
 
 ## Examples
 [![Examples of an original invoice and sales complementary fiscal documents of each of the three types](./media/salescomplementary-1024x409.png)](./media/salescomplementary.png)
+
 

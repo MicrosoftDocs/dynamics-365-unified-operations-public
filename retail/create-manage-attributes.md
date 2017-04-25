@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create and manage attributes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create and manage attributes
+
+[!include[banner](includes/banner.md)
+
 
 This article describes attributes in Microsoft Dynamics 365 for Operations. Attributes let you describe a product and its characteristics through user-defined fields.
 
@@ -96,4 +99,5 @@ Attributes are based on attribute types. Attribute types identify the type of da
 ### At the retail channel level
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) The default values of attributes can be overridden for individual products in specific catalogs that are targeted for specific retail channels.
+
 

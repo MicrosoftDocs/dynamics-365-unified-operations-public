@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Add look up values for financial dimensions to Excel templates
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about how you can add the ability to look up dimension values in Microsoft Excel templates.
 
 In Dynamics 365 for Operations, the only value that is present on Microsoft Excel templates after installation is MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates, you need to complete the steps in the [Add dimensions to the Microsoft Excel templates](dimensions-overview.md) topic. After you have added the dimensions, if you want the ability to look up a list of dimension values, complete the steps in this topic. **Note:**  This information is subject to change for each release, so be sure to check back frequently for the most up-to-date information.
@@ -105,4 +108,5 @@ In Dynamics 365 for Operations, the only value that is present on Microsoft Exce
 [Add dimensions to Microsoft Excel templates](add-dimensions-excel-templates.md)
 
 [Extensibility home page](..\extensibility\extensibility-home-page.md)
+
 

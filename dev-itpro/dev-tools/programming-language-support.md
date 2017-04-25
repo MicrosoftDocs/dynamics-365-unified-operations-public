@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Programming language support
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Programming language support
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic reviews the changes made to the compiler for Microsoft Dynamics 365 for Operations.
 
@@ -116,4 +119,5 @@ See also
 [Dynamics AX LINQ Provider for use in C#](linq-provider-c.md)
 
 [Technical Concepts Guide](developer-home-page.md)
+
 

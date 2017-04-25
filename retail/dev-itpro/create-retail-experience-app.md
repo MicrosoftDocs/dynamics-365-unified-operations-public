@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create a Retail Experience app
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Create a Retail Experience app
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 
@@ -202,4 +205,5 @@ To test the iOS app on an emulator follow the below steps on Visual Studio
 4.  Run it in VS.
 
 The below link from Xamarin explains the **distribution techniques** that are available for Xamarin.iOS applications and provides pointers to more detailed documents. [https://developer.xamarin.com/guides/ios/deployment,\_testing,\_and\_metrics/app\_distribution/](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/app_distribution/) The below link from Apple explains how to **maintain your signing identities and certificates** [https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) **Note**: If you are using the certificates as a part of Apple Developer Enterprise Program if you install an app manually (e.g. for testing) then you must also manually establish trust as described in the following link. [https://support.apple.com/en-us/HT204460](https://support.apple.com/en-us/HT204460)
+
 

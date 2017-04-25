@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Financial reporting
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Financial reporting
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes where to access financial reporting in Microsoft Dynamics 365 for Operations and how to use the financial reporting capabilities. It includes a description of the default financial reports that are provided.
 
@@ -123,4 +126,5 @@ See also
 [View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reporting blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
 

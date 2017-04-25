@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Construction Industry Scheme for the United Kingdom
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Construction Industry Scheme for the United Kingdom
+
+[!include[banner](../includes/banner.md)]
+
 
 The Construction Industry Scheme (CIS) is a scheme in the United Kingdom that specifies the rules that contractors and deemed contractors in the construction industry must follow when they make payments to subcontractors for construction work. This article describes functionality in Microsoft Dynamics AX that supports the requirements from these regulations.
 
@@ -91,4 +94,5 @@ Use the **Withholding tax payments** page to settle the withholding taxes to a w
 ### Correct posted withholding taxes
 
 Use the **Undo settlement**, **Vendors**, and **Vendor payments** pages to correct the posted withholding taxes.
+
 

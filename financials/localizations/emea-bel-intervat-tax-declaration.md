@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: INTERVAT tax declaration
@@ -31,7 +31,8 @@ ms.search.validFrom: 2016-05-31
 ---
 
 # INTERVAT tax declaration
-"[!include[banner](../includes/banner.md)]"
+
+[!include[banner](../includes/banner.md)]
 
 
 This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
@@ -139,5 +140,6 @@ Additional resources
 --------
 
 [Belgian sales tax reporting codes](http://www.taxexpert.be/bestand/Betekenis%20vakken%20BTW-aangifte.pdf)
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Dimensions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Dimensions
+
+[!include[banner](../includes/banner.md)]
+
 
 To support different dimension patterns, a set of framework data entities has been created that can be used as data sources in other entities that involve dimensions.
 
@@ -144,5 +147,6 @@ This section describes how to add a dimension data source to a new entity. The n
 
     [![Overriding the persistEntity method](./media/dim16.png)](./media/dim16.png)
     
+
 
 

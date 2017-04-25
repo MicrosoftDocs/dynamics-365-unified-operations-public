@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Install the Test Data Transfer Tool (beta) for Dynamics AX (AX 2012)
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to install the Microsoft Dynamics AX 2012 Test Data Transfer Tool (beta). Only advanced users should use this tool. 
 
 You must be a database administrator or a developer who has experience using Microsoft SQL Server. You must also have permission to read from or write directly to the Microsoft Dynamics AX 2012 database that you are working with, and to execute applications directly on the computer that is hosting the database. Before you begin, your environment must include the following components:
@@ -54,4 +57,5 @@ See also
 [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md)
 
 [Run the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](run-test-data-transfer-tool-beta.md)
+
 

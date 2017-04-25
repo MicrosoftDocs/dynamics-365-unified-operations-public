@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ compile-time functions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ compile-time functions
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic lists the compile-time functions and describes their syntax, parameters, and return values.
 
@@ -2470,4 +2473,5 @@ This is a compile-time function. For more information, see [Overview](#overview)
         print s;
         pause;
     }
+
 

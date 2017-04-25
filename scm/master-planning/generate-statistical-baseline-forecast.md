@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Generate a statistical baseline forecast
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Generate a statistical baseline forecast
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the parameters and filters that are used in the calculation of demand forecasting. 
 
@@ -73,4 +76,5 @@ See also
 [Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 [Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+
 

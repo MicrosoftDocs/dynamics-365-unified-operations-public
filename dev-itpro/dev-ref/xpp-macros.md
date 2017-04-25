@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Macros in X++
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Macros in X++
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how to create and use macros in X++.
 
@@ -671,4 +674,5 @@ The following code example demonstrates the range of macro referencing in class 
             ****************/
         }
     }
+
 

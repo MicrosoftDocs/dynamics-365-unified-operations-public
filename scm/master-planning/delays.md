@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Delays
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Delays
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about delayed dates in master planning. A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.
 
 Master planning can calculate the earliest fulfillment date for a transaction, based on lead times, material availability, capacity availability, and various planning parameters. 
@@ -50,4 +53,5 @@ See also
 --------
 
 [Coverage settings](coverage-settings.md)
+
 

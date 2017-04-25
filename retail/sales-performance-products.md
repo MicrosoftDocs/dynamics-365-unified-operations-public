@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Assess sales performance by product
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Assess sales performance by product
 
+[!include[banner](includes/banner.md)
+
+
 You can study profitability for the top 10 products using Microsoft Dynamics 365 for Operations. 
 
 As part of Dynamics 365 for Operations, users can also study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:
@@ -46,3 +49,4 @@ For this assessment, you can use the out-of-box **Top products** report, which y
 -   **Retail store management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**
 -   **Category and product management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**
+

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Procurement and sourcing workflows
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Procurement and sourcing workflows
+
+[!include[banner](../includes/banner.md)]
+
 
 Some organizations require that purchase requisitions and purchase orders are approved by a user other than the person who entered the transaction. To set up an approval process, you can create a workflow.
 
@@ -75,4 +78,5 @@ See also
 [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
+
 

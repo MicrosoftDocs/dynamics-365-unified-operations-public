@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Chinese vouchers
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Chinese vouchers
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 for Operations.
 
 You must create a voucher document for every posted journal. You can print a paper voucher and a posted journal. Based on your requirements, you can use the Voucher type setup wizard to set up the **Get**, **Pay** and **Transfer** voucher types that are often used, or you can create new voucher types on the **Voucher type setup** page. You can use booking vouchers to enter and group transactions into the Receipt voucher, Payment voucher, or Transfer voucher. 
@@ -48,5 +51,6 @@ The Chinese voucher number should be sequential, and there should be no gaps in 
 
 ## Printing a Chinese voucher
 You can print a Chinese voucher either before or after you post the voucher. The printed voucher shows information such as the history of renumbered Chinese vouchers, and tax information before or after the voucher was posted. You can review the printed information to verify that the information is the same before and after posting, and that the information is correct. For example, if you select sales tax in a journal voucher, the final voucher information includes the sales tax. However, the sales tax might differ from the sales tax that was part of the journal. The printed result must be accurate, and it must be the same as the result that is generated after the final posting. Therefore, you can print a Chinese voucher that has the correct information from both the journal voucher and the voucher transactions. You can also print Chinese vouchers in a batch after you filter the information by Chinese voucher type and fiscal period.
+
 
 

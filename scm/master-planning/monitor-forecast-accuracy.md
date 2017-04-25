@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Monitor forecast accuracy
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Monitor forecast accuracy
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the types of forecast accuracy that Microsoft Dynamics 365 for Operations calculates, and explains how you can view the accuracy values.
 
 Dynamics 365 for Operations calculates the following types of forecast accuracy:
@@ -48,4 +51,5 @@ See also
 [Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
 
 [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+
 

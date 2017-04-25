@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: F Classes - FormReferenceControl to FormStringControl
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # F Classes - FormReferenceControl to FormStringControl
+
+[!include[banner](../includes/banner.md)]
+
 
 API reference for classes from FormReferenceControl to FormStringControl.
 
@@ -13964,4 +13967,5 @@ Is called when the user has finished dragging a form control.
 #### Remarks
 
 This event is not raised unless the DragDrop property is enabled for the control and a beginDrag event has already been started. To drag a control, a user presses the mouse button in the control area and then moves the mouse pointer.
+
 

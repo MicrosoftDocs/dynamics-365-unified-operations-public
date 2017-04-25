@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Purge and archive objects (AX 2012)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Intelligent Data Management Framework purge and archive objects (AX 2012)
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -331,6 +334,7 @@ The following tables provide descriptions for the controls in the **Validate all
 | **Remove invalid tables**             | Select this field to remove all tables that are contained in templates and objects that are not in the production database. Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.                                                                                                                                                                                                                                                            |
 | **Remove tables with invalid fields** | The templates and objects may be using invalid fields in relationships and rules. A field that is not valid can be caused by your license, disabled security keys, disabled configuration keys, or incomplete post-installation tasks, such as the database synchronization. Select this field to remove all tables that contain fields that are not valid from templates and objects. Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any. |
 | **Remove tables with zero row**       | Select this field to remove all tables without rows from all templates and objects. Removing a table from the templates and objects also removes related child tables from the relationship hierarchy, if there are any.                                                                                                                                                                                                                                                                                                    |
+
 
 
 

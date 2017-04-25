@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Inventory blocking
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Inventory blocking
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides an overview of inventory blocking, which is part of the quality inspection process in Microsoft Dynamics AX. You can use inventory blocking to prevent items from being processed or consumed.
 
@@ -69,4 +72,5 @@ See also
 [Quality management processes](quality-management-processes.md)
 
 [Inspect the quality of goods (task guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
 

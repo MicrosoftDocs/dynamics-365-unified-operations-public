@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: P Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # P Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter P.
 
@@ -3253,4 +3256,5 @@ propname
 selecttab  
 
 #### Return Value
+
 

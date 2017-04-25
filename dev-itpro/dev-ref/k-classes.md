@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: K Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # K Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter K.
 
@@ -109,4 +112,5 @@ Initializes a new instance of the Keywords class.
 ### Method finalize
 
     public void finalize()
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: View purge or archive jobs (AX 2012)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # View Intelligent Data Management Framework purge or archive jobs (AX 2012)
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -219,4 +222,5 @@ To update the **Status** workspace, click **Refresh** on the toolbar.
 
 ## Export to Excel
 This command lets you export selected rows from the data grid, from all workplaces where this command is available.
+
 

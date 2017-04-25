@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Default offset accounts for vendor invoice journals and invoice approval journals
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Default offset accounts for vendor invoice journals and invoice approval journals
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -98,6 +101,7 @@ Use the following table to help decide where you should assign default accounts 
 </tr>
 </tbody>
 </table>
+
 
 
 

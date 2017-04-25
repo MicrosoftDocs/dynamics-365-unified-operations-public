@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Tax attributes for Brazil
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Tax attributes for Brazil
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
 
@@ -95,6 +98,7 @@ The following fields on the **Product information** page are required for a Braz
 | ICMS on service                         | The ICMS tax that is applied on an item of the service type.                       |
 | Approximate tax percentage (Tax burden) | The tax rate that is used to calculate the approximate tax amount for the product. |
 | CEST (Tax substitution code)            | The code number that is used if tax substitution is allowed for the item.          |
+
 
 
 

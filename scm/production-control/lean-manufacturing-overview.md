@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Lean manufacturing overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Lean manufacturing overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics AX.
 
@@ -79,6 +82,7 @@ Kanban jobs are fully integrated with current processes for inventory transactio
 In addition, lean manufacturing supports the purchasing and invoicing processes for services that are referenced by subcontracted activities.
 -   You can assign purchase agreement lines and services to subcontracted activities.
 -   You can create periodic purchase orders and receipt advices to support the purchase and invoicing of the services.
+
 
 
 

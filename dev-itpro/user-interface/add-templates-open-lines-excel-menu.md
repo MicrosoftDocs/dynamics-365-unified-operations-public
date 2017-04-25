@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Add templates to the Open lines in Excel menu
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Add templates to the Open lines in Excel menu
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how you can promote a template to the Open lines in the Excel menu that is available on journal pages.
 
@@ -188,4 +191,5 @@ See also
 --------
 
 [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: VAT statement details for Austria
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # VAT statement details for Austria
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how to set up the VAT statement for legal entities in Austria.
 
@@ -109,4 +112,5 @@ At the end of the VAT reporting period, run **Settle and post** **sales tax** to
 |Format mapping|Specify U30.|
 
 To generate a VAT XML file, use the **Report sales tax for settlement period** page.
+
 

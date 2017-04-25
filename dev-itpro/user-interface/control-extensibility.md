@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Control extensibility
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Control extensibility
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the architecture that lets developers extend the user interface and also define new user interface patterns. 
 
 You can extend the existing application user interface (UI) and can also define entirely new UI patterns to create compelling new user experiences. By using modern tools such as HTML5, CSS3, and jQuery, developers can define customized visualizations of business data and drastically enhance the program's interaction patterns.
@@ -47,6 +50,7 @@ The client-side behavior for the control is defined by using HTML and JavaScrip
 
 ## Control extensibility architecture overview
 The following diagram shows the artifacts that are involved and their relation to each other. [![Control extensibility architecture](./media/extensibilitycontrolarchitecture.png)](./media/extensibilitycontrolarchitecture.png)
+
 
 
 

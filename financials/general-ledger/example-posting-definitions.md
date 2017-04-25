@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Posting definitions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Posting definition examples
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
 
@@ -126,6 +129,7 @@ Generated ledger entries are created to record the original budget in each dimen
 | 300146-OU\_1-OU\_3566-Training | 250.00 |        |         |
 
 In this example, any account that is part of Account Structure - P&L matches the posting definition criteria. Therefore, when 606400-OU\_1-OU\_3566-Training is evaluated, the generated ledger entries are created.
+
 
 
 

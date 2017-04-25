@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Metadata search in Visual Studio
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Metadata search in Visual Studio
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how to use metadata search to search your code and metadata for arbitrary patterns and content. 
 
@@ -100,4 +103,5 @@ You can get help about using filter and filter syntax by opening the drop-down 
 | type:formbuttoncontrol property:text=                                                     | Finds all form Button Controls that have **empty** text properties.                                                                          |
 
      
+
 

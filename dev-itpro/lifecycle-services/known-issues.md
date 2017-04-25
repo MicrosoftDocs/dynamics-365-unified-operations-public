@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Known issues
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 6
 
 # Known issues
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to view the known issues that you might experience when you use Dynamics 365 for Operations.
 
 Known issues in Dynamics 365 for Operations can be found by using the Issue search tool in Microsoft Dynamics Lifecycle Services (LCS). You can sign in to [Lifecycle Services](https://lcs.dynamics.com/) by using your CustomerSource or PartnerSource account. Then, in the **Issue search** box, enter the text listed in the table below. **Note:** Be sure to enter the text exactly as it appears in the table below. Otherwise, you may get different search results.
@@ -50,4 +53,5 @@ Known issues in Dynamics 365 for Operations can be found by using the Issue se
 | Microsoft Dynamics AX application              | 7.0               | 7.0.1265.3015    | February 2016    | Known issue in February 2016 release                                           |
 
  
+
 

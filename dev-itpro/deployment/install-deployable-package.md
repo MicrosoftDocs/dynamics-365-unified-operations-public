@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Install a deployable package
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Install a deployable package
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic walks you through the steps for using the command line to apply either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
 
@@ -169,5 +172,6 @@ The runbook provides the sequence of steps that must be run to update the enviro
         AXUpdateInstaller.exe execute -runbookid=[runbook ID] -versioncheck=true
 
 -   To verify database synchronization, navigate to the aosservce\\scripts\\ folder and find the dbsync.error.txt file. Find the file, and look for any errors.
+
 
 

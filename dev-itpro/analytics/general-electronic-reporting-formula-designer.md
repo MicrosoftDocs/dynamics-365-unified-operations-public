@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Formula designer in Electronic reporting
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Formula designer in Electronic reporting
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use Microsoft Excel–like formulas for data transformation to meet the requirements for that document's fulfillment and formatting. Various types of functions are supported -  text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions).
 
@@ -572,4 +575,5 @@ See also
 [Electronic Reporting overview](general-electronic-reporting.md)
 
 [Extend the list of Electronic reporting (ER) functions](general-electronic-reporting-formulas-list-extension.md)
+
 

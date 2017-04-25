@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Total cost allocation method
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Total cost allocation method
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides guidelines for using total cost allocation (TCA). TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.
 
 Total cost allocation (TCA) is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula. This method is dynamic. It calculates the cost as a weighted average between the quantities that are reported as finished for the formula item and the co-products. When TCA is used, you don't have to review cost allocations for every batch order. If TCA isn't used, the formula calculation uses existing functionality.
@@ -62,5 +65,6 @@ The **By-product cost allocation** field on the **Co-products** page is an enume
 -   **Percent** ─ The cost amount is calculated as a percentage of the total cost of raw materials that are consumed in the production. The percentage that is used for the calculation is entered in the field.
 -   **Per series** ─ The cost amount is calculated as an amount per standard batch size of the production order. This amount is independent of the reported quantity in the production. The amount that is used for the calculation is entered in the field.
 -   **Per quantity** ─ The cost amount is calculated as an amount per reported quantity of the formula item in the production. The amount that is used for the calculation is entered in the field.
+
 
 

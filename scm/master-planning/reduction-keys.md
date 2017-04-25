@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Reduction keys
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Reduction keys
+
+[!include[banner](../includes/banner.md)]
+
 
 This articles provides examples that show how to set up a reduction key. It includes information about the various reduction key settings and the results of each. You can use a reduction key to define how to reduce forecast requirements.
 
@@ -133,4 +136,5 @@ See also
 --------
 
 [Master plans](master-plans.md)
+
 

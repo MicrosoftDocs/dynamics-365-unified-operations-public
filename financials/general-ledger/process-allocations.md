@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Process allocations
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Process allocations
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 for Operations, and how they can be used in budget planning. Allocations are used to distribute amounts across multiple ledger account combinations. They help guarantee that expenses or revenue is charged to the correct object in accounting.
 
 Microsoft Dynamics 365 for Operations provides the following capabilities to support this process:
@@ -46,6 +49,7 @@ Ledger allocation rules can be used for budget plans. When you use ledger alloca
 
 > [!NOTE]
 > You can’t use intercompany ledger allocation rules for budget planning.
+
 
 
 

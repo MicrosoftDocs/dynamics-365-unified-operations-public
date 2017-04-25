@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Plan your chart of accounts
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan your chart of accounts
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information that will help you plan the chart of accounts for your organization.
 
 To track and maintain financial information in an organization, you can set up a chart of accounts. A chart of accounts is a collection of accounts that define a financial framework. To further track the transactions in these accounts, you can add segments, which are known as financial dimensions. For example, an expense account might include financial dimensions that are named Department, Cost center, and Purpose. User-defined rules, which are known as account structures and advanced rules, determine how financial dimensions are attached to the main accounts and other financial dimensions, and also how transactions are entered. 
@@ -57,4 +60,5 @@ Use the **Configure account structures** page to create account structures. Acco
 Not all main accounts are valid for all legal entities and some may only be relevant for a specific time period. In this scenario the Legal entity overrides section can be used to identify which companies the main account should be suspended for, who the owner is and the time period the dimension is active. The overrides at the shared level cannot be more restrictive than the overrides at the legal entity level.
 
 For more information, see [Financial dimensions](financial-dimensions.md).
+
 

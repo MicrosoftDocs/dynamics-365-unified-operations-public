@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Tabular Fields subpattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Tabular Fields subpattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Tabular Fields subpattern. This subpattern is used to show information efficiently in a tabular format. 
 
@@ -110,5 +113,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   None
+
 
 

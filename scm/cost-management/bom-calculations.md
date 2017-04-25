@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: BOM calculations
@@ -31,6 +31,9 @@ ms.search.validFrom: 2016-02-28
 ---
 
 # BOM calculations
+
+[!include[banner](../includes/banner.md)]
+
 
 The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the Calculations page. This topic provides information about BOM calculations.
 
@@ -92,6 +95,7 @@ An order-specific BOM calculation represents a variation of a BOM calculation fo
 
 -   An order-specific BOM calculation doesn't generate an item cost record within a costing version. Therefore, the BOM calculation policies aren't applied when an item cost record is created, or when a cost record is overwritten.
 -   An order-specific BOM calculation always uses the active cost records for components, cost categories, and indirect cost calculation formulas.
+
 
 
 

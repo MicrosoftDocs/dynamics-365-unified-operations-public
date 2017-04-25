@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Project invoicing
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Project invoicing
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
 
@@ -123,4 +126,5 @@ The same document can include transactions that are selected for crediting, cred
 To credit an invoiced amount, you first select the invoiced amount to credit and then create a credit note. You create a credit note by following the same procedure that you would use to generate a customer invoice. 
 
 You can create an invoice that has a negative amount, which becomes an invoice that is classified as a credit note. To create and print a credit note, you must select the transactions that were previously posted for a customer invoice, and then modify the transactions. Unless the primary address of the legal entity is in Germany, the title of the invoice will be "Corrective invoice."
+
 

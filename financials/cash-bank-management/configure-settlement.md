@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure settlement
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure settlement
 
+[!include[banner](../includes/banner.md)]
+
+
 How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
 
 The following parameters affect how settlements are processed in Microsoft Dynamics 365 for Operations. Settlement is the process of settling an invoice against a payment or credit note. These parameters are located in the **Settlement** area of the **Accounts receivable parameters** and **Accounts payable parameters** pages.
@@ -58,5 +61,6 @@ The following parameters affect how settlements are processed in Microsoft Dynam
 -   **Mark lines on free text invoices and interest notes (AR only)** – Set this option to **Yes** to enable the **Mark invoice lines** button on the **Enter customer payments**, **Payment journal voucher**, and **Settle transactions** pages. This button lets users mark individual lines for settlement.
 -   **Prioritize settlement (AR only)** – Set this option to **Yes** to enable the **Mark by priority** button on the **Enter customer payments** and **Settle transactions** pages. This button lets users assign the predetermined settlement order to transactions.  After the settlement order has been applied to a transaction, the order and the payment allocation can be modified before posting.
 -   **Use priority for automatic settlements** – Set this option to **Yes** to use the defined priority order when transactions are automatically settled. This field is available only if the **Prioritize settlement** and **Automatic settlement** options are set to **Yes**.
+
 
 

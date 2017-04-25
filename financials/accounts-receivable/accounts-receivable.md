@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Accounts receivable home page
@@ -32,9 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts receivable home page
 
+[!include[banner](../includes/banner.md)]
+
+
 Use Accounts receivable to track customer invoices and incoming payments.
 
 You can create customer invoices that are based on sales orders or packing slips. You can also enter free text invoices that are not related to sales orders. You can receive payments by using several different payment types. These include bills of exchange, cash, checks, credit cards, and electronic payments. If your organization includes multiple legal entities, you can use centralized payments to record payments in a single legal entity on behalf of the other legal entities.
+
 
 
 

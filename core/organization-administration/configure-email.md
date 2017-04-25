@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure and send email
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Configure and send email
+
+[!include[banner](../includes/banner.md)]
+
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
@@ -165,4 +168,5 @@ See also
 [Office integration tutorial](/dynamics365/operations/dev-itpro/office-integration/office-integration-tutorial)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
+
 

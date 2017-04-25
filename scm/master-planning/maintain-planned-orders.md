@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Maintain planned orders
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintain planned orders
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about how to manage planned orders. It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.
 
 You can manage planned orders from the **Master planning** workspace, the **Planned order** list, or the **Planned production orders**, **Planned purchase orders**, and **Planned transfer** lists. You can use the **Status** field to help track your progress. The following values are used:
@@ -52,4 +55,5 @@ See also
 --------
 
 [Master plans](master-plans.md)
+
 

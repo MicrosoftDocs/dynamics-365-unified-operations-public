@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Quality management overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Quality management overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how you can use quality management in Microsoft Dynamics 365 for Operations to help improve product quality within your supply chain.
 
@@ -362,4 +365,5 @@ See also
 [Quality management processes](quality-management-processes.md)
 
 [Enabling nonconformance management](enable-nonconformance-management.md)
+
 

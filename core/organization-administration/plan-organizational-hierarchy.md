@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure organizational hierarchy
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Configure organizational hierarchy
+
+[!include[banner](../includes/banner.md)]
+
 
 Before you set up organizations and organization hierarchies in Microsoft Dynamics 365 for Operations, make sure that you plan how your business will be modeled. The organization model has a significant effect on the implementation of Dynamics 365 for Operations and on business processes. 
 
@@ -70,6 +73,7 @@ Consider the following best practices when you implement an organization hierarc
 -   Before you model major restructuring scenarios, use the hierarchy's effective dates to perform an impact analysis and a validation test.
 -   Use draft mode to change a hierarchy before you publish a new version in a production environment.
 -   Limit the number of people who have permissions to add or remove organizations from a hierarchy in a production environment. A smaller number reduces the chance that costly mistakes can occur and corrections must be made.
+
 
 
 

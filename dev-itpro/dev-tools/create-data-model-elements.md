@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create a model and data model elements
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create a model and data model elements
+
+[!include[banner](../includes/banner.md)]
+
 
 In this tutorial, you'll use Visual Studio's Dynamics AX menu to create a new model named Fleet Management tutorial. You'll also create and edit new model elements.
 
@@ -203,5 +206,6 @@ In the table designer for FMTCustomer, you now add several fields to the table.
 5.  On the **Models** tab, click **Build**.
 6.  Click **Close**  in the dialog box.
 7.  On the **Window** menu, click **Close All Documents**, to close all open documents.
+
 
 

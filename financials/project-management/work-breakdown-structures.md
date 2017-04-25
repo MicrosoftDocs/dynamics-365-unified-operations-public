@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Work breakdown structures
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Work breakdown structures
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -339,4 +342,5 @@ Effort = Number of resources × Duration × Number of hours in a standard workin
 You can correct all scheduling errors at the same time by clicking **Fix all scheduling errors**. 
 
 Alternatively, you can correct scheduling errors individually by clicking the warning icon for each task.
+
 

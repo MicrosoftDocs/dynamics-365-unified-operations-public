@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fill Text subpattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Fill Text subpattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Fill Text subpattern. This subpattern is used when a single String or StaticText control must stretch to the full width of the container, so that users have more space to enter information.
 
@@ -84,5 +87,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   The pattern currently sets the **HeightMode** property of the control to **SizeToAvailable**. This can produce very tall string controls if the pattern is used in a **SizeToAvailable** container. We’re investigating whether this control should use **SizeToContent** height, or whether it should not set the property at all and should instead let the developer decide the appropriate control height.
+
 
 

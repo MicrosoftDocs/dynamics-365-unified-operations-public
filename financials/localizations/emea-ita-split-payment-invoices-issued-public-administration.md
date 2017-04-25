@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Split payment for invoices issued to the Public Administration
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Split payment for invoices issued to the Public Administration
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about the split payment accounting schema.
 
@@ -111,4 +114,5 @@ VAT split payment
 220
 
  
+
 

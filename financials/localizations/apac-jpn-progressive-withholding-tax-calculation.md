@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Progressive withholding tax
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Progressive withholding tax
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about progressive withholding tax in Japan. Per the legal requirement in Japan, the tax percentage changes, depending on the interval in proportion to the invoice amount. The tax ratio also changes, based on the payment amount.
 
@@ -129,6 +132,7 @@ In this example, withholding tax is calculated by using an **Origin of percentag
 | 1,001–2,000             | 15 percent | 1,000.00                                        | 150.00          |
 | 2,001–0                 | 20 percent | 2,545.00                                        | 509.00          |
 |                         |            | **Total WHT amount**                            | **759.00**      |
+
 
 
 

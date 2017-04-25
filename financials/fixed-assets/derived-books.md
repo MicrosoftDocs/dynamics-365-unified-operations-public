@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Derived books
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Derived books
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of derived book functionality.
 
 The purpose of derived books is to simplify the posting of fixed asset book transactions that are planned for regular intervals.  You choose one book as the primary book. This usually is the book that is used for accounting depreciation. You then attach to it other books that are set up to post transactions in the same intervals as the primary book. Tax depreciation books are often set up as derived books. 
@@ -48,4 +51,5 @@ When the transaction is posted, an acquisition transaction is generated and post
 > Books that are set up to post transactions at intervals other than the primary book intervals must be attached to the fixed asset as separate books and not as derived books.  
 
 For more information, see [Posting with derived books](post-derived-value-models.md).
+
 

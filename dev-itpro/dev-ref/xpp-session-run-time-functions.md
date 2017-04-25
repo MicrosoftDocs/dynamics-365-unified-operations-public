@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ session run-time functions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ session run-time functions
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the session run-time functions.
 
@@ -321,4 +324,5 @@ The complete prefix for the execution can be fetched by using the **getPrefix** 
             i = setPrefix("Prefix");
             print i;
     }
+
 

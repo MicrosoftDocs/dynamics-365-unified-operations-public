@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: F Classes - FormChangeTracker to FormControlEventArgs
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # F Classes - FormChangeTracker to FormControlEventArgs
+
+[!include[banner](../includes/banner.md)]
+
 
 API reference for classes from FormChangeTracker to FormControlEventArgs.
 
@@ -11916,6 +11919,7 @@ cancel
 
 | Method | Description |
 |--------|-------------|
+
 
 
 

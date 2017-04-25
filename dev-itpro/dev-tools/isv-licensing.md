@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: ISV licensing
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # ISV licensing
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 
@@ -228,6 +231,7 @@ More than one license can be installed at a time. If one of the licenses depends
     However, if a self-signed ISV certificate was used, that certificate must be imported instead of the CA certificate.
 
         certutil -addstore root c:tempisvcert.cer
+
 
 
 

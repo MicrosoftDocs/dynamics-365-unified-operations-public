@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure a parallel activity in a workflow
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure a parallel activity in a workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 To configure a parallel activity, complete the following procedures in the workflow editor.
 
 A parallel activity consists of workflow branches that run at the same time.
@@ -52,6 +55,7 @@ Follow these steps to add and configure the branches of this parallel activity.
     | The order of the branches is not important because all the branches of a parallel activity run at the same time. |
 
 3.  To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).
+
 
 
 

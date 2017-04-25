@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Advance holders
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Advance holders
+
+[!include[banner](../includes/banner.md)]
+
 
 Learn about advance holder functionality in Microsoft Dynamics 365 for Operations.
 
@@ -113,4 +116,5 @@ See also
 --------
 
 [Advance holder transactions](emea-advance-holders-transactions.md)
+
 

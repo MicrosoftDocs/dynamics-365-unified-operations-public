@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Reverse a vendor payment
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Reverse a vendor payment
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the differences between reversing, deleting, voiding, and rejecting a payment. Additionally, it explains the two methods for reversing a vendor check. 
 
@@ -82,5 +85,6 @@ If the check that was reversed was issued for a customer refund, the following e
 
 -   A transaction is posted against the customer account for the payment reversal, and the settlement between the original payment and the document that the payment was originally settled against is reversed (a negative payment is created).
 -   A payment reversal is applied to the original payment. The **Last settlement voucher** field on the **Customer transactions** page for the original customer payment is updated to reflect the voucher number of the reversed transaction.
+
 
 

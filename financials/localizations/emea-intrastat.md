@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Intrastat
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Intrastat
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). It provides an overview of the reporting process, and describes the required settings and prerequisites.
 
@@ -240,4 +243,5 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 </table>
 
  
+
 

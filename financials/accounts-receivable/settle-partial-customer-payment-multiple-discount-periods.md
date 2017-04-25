@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Settle a partial customer payment that has multiple discount periods
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Settle a partial customer payment that has multiple discount periods
+
+[!include[banner](../includes/banner.md)]
+
 
 This article shows how partial customer payments are settled when there are multiple discount periods.
 
@@ -96,6 +99,7 @@ The invoice balance is now 0.00. Arnie views the information on the **Customer t
 | DISC-10030 |  Cash discount   | 6/28/2015 |         |                                      | 6.00                                  | 0.00    | USD      |
 | ARP-10031  |  Payment         | 7/8/2015  |         |                                      | 693.00                                | 0.00    | USD      |
 | DISC-1031  |  Cash discount   | 7/8/2015  |         |                                      | 7.00                                  | 0.00    | USD      |
+
 
 
 

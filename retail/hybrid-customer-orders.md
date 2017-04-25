@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Hybrid customer orders
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Hybrid customer orders
 
+[!include[banner](includes/banner.md)
+
+
 A hybrid customer order is a single order, which contains products that can be carried out of the store by the customer, as well as products that will be picked up or shipped later.
 
 In Microsoft Dynamics 365 for Operations - Retail, you can select either carry out all products or carry out selected products for a customer order. The product lines that are marked as carry out are automatically invoiced after the order is created, similarly this is the same for an order that is to be picked-up after the order is created. The amount due on hybrid orders is determined by adding the deposit percentage on pick and ship product lines with the full amount of the carry out lines. For hybrid orders, the system switches between customer order mode and cash and carry mode as follows:
@@ -45,4 +48,5 @@ See also
 --------
 
 [Customer orders overview](customer-orders-overview.md)
+
 

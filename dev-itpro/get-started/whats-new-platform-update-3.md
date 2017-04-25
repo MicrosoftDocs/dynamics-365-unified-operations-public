@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Operations platform update 3 (November 2016)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # What's new or changed in Dynamics 365 for Operations platform update 3 (November 2016)
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 3. This version was released in November 2016 and has a build number of 7.0.4307.16141.
 
@@ -158,4 +161,5 @@ See also
 --------
 
 [What's new or changed](whats-new-changed.md)
+
 

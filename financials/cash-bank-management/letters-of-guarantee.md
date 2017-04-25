@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Letters of guarantee
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Letters of guarantee
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about letters of guarantee. In a letter of guarantee, a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment or obligation to that person. 
 
 A letter of guarantee is an agreement by a bank (the guarantor) to pay a set amount of money to some person (the beneficiary) if a bank customer (the principal) defaults on a payment or an obligation to the beneficiary. Letters of guarantee aren't transferable. They apply only to the beneficiary who is named in the agreement. The principal can request an increase or decrease in the value of a letter of guarantee, subject to the terms of the agreement. 
@@ -59,6 +62,7 @@ The following table describes the actions that you can perform on a letter of gu
 | Extend              | After you provide the letter of guarantee to the beneficiary, extend the period of validity, if an extension is required. |
 | Cancel              | When the purpose that the letter of guarantee was requested for no longer applies, cancel the agreement.                  |
 | Liquidate           | When the beneficiary presents the letter of guarantee to the bank, cash out the letter of guarantee.                      |
+
 
 
 

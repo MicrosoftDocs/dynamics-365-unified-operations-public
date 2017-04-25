@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Install the Data import/export framework (AX 2012)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Install the Data import/export framework (AX 2012)
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -136,4 +139,5 @@ Verify that the following files are present in the C:Program Files (x86)Microsof
 ### Changes to the location of the Data Import/Export Framework service
 
 If you have to update the location where you run Integration Services and the Data Import/Export Framework service, you can update the endpoint address in the Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file to use the new server name. &lt;endpoint address="http://&lt;&lt;NEW MACHINE NAME&gt;&gt;:7000/DMFService/DMFServiceHelper.svc" **Note:** The Microsoft.Dynamics.AX.DMF.ServiceProxy.dll.config file is located in the C:Program Files (x86)Microsoft Dynamics AX60ServerBin folder on the server that is running the AOS instance.
+
 

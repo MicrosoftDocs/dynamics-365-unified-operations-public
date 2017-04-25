@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Cost categories used in production routing
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cost categories used in production routing
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about cost categories that apply to manufacturing environments that use routing.
 
 Cost categories apply to manufacturing environments that use routing. They are assigned to operations resources and routing operations to define hourly costs and to segment cost contributions in a manufactured item’s calculated costs. The cost groups that are assigned to cost categories classify manufacturing cost contributions, based on the operation resources and the type of activity, such as setup time and run time. The specificity of cost group assignments enables manufacturing overhead to be calculated based on routing information. 
@@ -55,4 +58,5 @@ The cost record for a cost category can be site-specific or company-wide. To mak
 A routing operation generally inherits the cost categories that are assigned to the operations resource or master operation. When a production order is created, the routing operations in the production route reflect the selected route version. You can override the cost categories that are assigned to the operations in the production route. 
 
 Some types of production work can apply to project time estimates and reporting. In this case, a cost category is required for production and project purposes. You must define additional project-related information when a cost category is flagged for use in projects.
+
 

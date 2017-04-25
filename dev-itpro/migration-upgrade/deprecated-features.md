@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Deprecated features
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 6
 ---
 
 # Deprecated features
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
 
@@ -810,6 +813,7 @@ Human Resources Payroll information
 | Reason for deprecation       | This functionality has been replaced by another feature.                                    |
 | Replaced by another feature? | Management Reporter (labeled **Financial reporting** in the current version of Dynamics AX) |
 | Modules affected             | General ledger                                                                              |
+
 
 
 

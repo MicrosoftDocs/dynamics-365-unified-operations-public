@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Workflow actions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Workflow actions
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains the actions that each participant in a workflow approval process can take.
 
@@ -95,4 +98,5 @@ When an approver delegates a document, the document is assigned to another user 
 ### Request change
 
 When an approver requests a change to a document, the document is sent back to the originator. For example, Sam has submitted an expense report for USD 12,000, and this document is assigned to Sue. If Sue requests a change, the expense report is sent back to Sam. Sam can resubmit the expense report. He can make the requested changes first, or he can resubmit the original version of the expense report. If Sam resubmits the expense report, it's sent to Frank for approval, because Frank is the first approver in the approval process.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Process and consume data packages in an LCS solution
@@ -31,6 +31,9 @@ ms.dyn365.ops.version:
 ---
 
 # Process and consume data packages in an LCS solution
+
+[!include[banner](../includes/banner.md)]
+
 
 A Microsoft Dynamics 365 for Operations data package can consist of one to many data entities. A typical data package consists of a group of entities for a particular task, process, or function. For example, the data entities that are required for General ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, package header, and any additional files for the data entities that are included.
 
@@ -135,4 +138,5 @@ See also
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+
 

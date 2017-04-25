@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Horizontal Fields and Buttons Group subpattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Horizontal Fields and Buttons Group subpattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Horizontal Fields and Buttons Group form subpattern. This subpattern is used when actions must be defined for an individual field on a form.
 
@@ -109,4 +112,5 @@ This section will have answers to frequently asked questions that are related to
 ### Dynamics AX 2012 content
 
 **SalesTable** [![HorizontalFieldsButtons(3)](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+
 

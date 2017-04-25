@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Workflow elements
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Workflow elements
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the various elements that make up a workflow.
 
@@ -86,4 +89,5 @@ A *parallel activity* is a workflow element that includes two or more workflow b
 ### Subworkflow
 
 A *subworkflow* is a workflow that runs in the context of another workflow.
+
 

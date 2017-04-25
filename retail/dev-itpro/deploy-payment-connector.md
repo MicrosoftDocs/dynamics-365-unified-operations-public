@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Deploy a payment connector
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Deploy a payment connector
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how to deploy a payment connector package to the appropriate components of Microsoft Dynamics 365 for Operations. 
 
@@ -125,4 +128,5 @@ See also
 [Guide to implementing a payment connector and a payment device](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 
 [Retail SDK packaging](retail-sdk/retail-sdk-packaging.md)
+
 

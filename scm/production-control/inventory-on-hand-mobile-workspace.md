@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Inventory on-hand mobile workspace 
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Inventory on-hand mobile workspace
+
+[!include[banner](../includes/banner.md)]
+
 
 The Inventory on-hand mobile workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere. 
 
@@ -96,6 +99,7 @@ To view workspaces on your mobile app, you must first publish the desired worksp
     -   By physical inventory (This view represents the total amount.)
     -   By physical reserved (This view represents the reserved amount.)
     -   By available physical (This view represents the available amount that has no reservations.)
+
 
 
 

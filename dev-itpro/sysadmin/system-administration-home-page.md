@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: System administration home page
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # System administration home page
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic lists resources that are available for system administrators.
 
@@ -85,6 +88,7 @@ Lifecycle Services
 -   [Cross-company data sharing](/dynamics365/operations/financials/cross-company-data-sharing)
 -   [Maintenance mode](maintenance-mode.md)
 -   [Demo data overview](../get-started/demo-data.md)
+
 
 
 

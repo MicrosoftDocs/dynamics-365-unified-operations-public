@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Introduction to Dynamics 365 for Operations
@@ -93,3 +93,4 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
 </tr>
 </tbody>
 </table>
+

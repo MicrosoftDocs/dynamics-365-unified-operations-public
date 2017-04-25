@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Tax payments in Brazil
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Tax payments in Brazil
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 
@@ -158,4 +161,5 @@ When a tax payment is reversed, the status of the original transaction is set to
 
 ## Deleting tax payments
 You can delete tax payments if the voucher number wasn't blank when the payment transaction was posted.
+
 

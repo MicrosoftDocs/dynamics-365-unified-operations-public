@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Malaysia Goods and Services Tax
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Malaysia Goods and Services Tax
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about how to set up Goods and Services Tax (GST) for a Malaysian company and explains the functionality that Microsoft Dynamics 365 for Operations provides for GST.
 
@@ -193,6 +196,7 @@ Certain business data should be captured in AX to generate the GAF.   For the 
 -   **Posting layer:** Specify which posting layers to generate the GAF from. The posting layers affect the ledger transactions that are included in the GAF.
 
 You should run the “Settle and post sales tax” process before you generate the GAF for a period. Only those transactions that are included in a sales tax payment will be included in the GAF.
+
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Commerce runtime and Retail Server extensibility
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Commerce runtime and Retail Server extensibility
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes various ways that you can extend the commerce runtime (CRT) and Retail Server. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Retail Server controller and add a controller for an entity.
 
@@ -379,4 +382,5 @@ Before calling the new retail server API please make sure you have performed the
     return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
 
 Please refer the retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects for more details on how to call the new retail server api in mpos.
+
 

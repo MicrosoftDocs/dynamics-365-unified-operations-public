@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Quarantine orders
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Quarantine orders
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how quarantine orders are used to block inventory. 
 
@@ -70,4 +73,5 @@ See also
 --------
 
 [Inventory blocking](inventory-blocking.md)
+
 

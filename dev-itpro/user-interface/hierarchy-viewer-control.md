@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: HierarchyViewer control
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # HierarchyViewer control
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
 
@@ -102,4 +105,5 @@ You don’t have to populate the whole node structure. Instead, you can populate
 
 ## Changing node visuals
 You can't change node visuals. The intended design is for the control to offer a set of unbound controls that have a default layout that you can manipulate by using an **ExtendedStyle** property to offer a predefined set of alternatives that the author can select.
+
 

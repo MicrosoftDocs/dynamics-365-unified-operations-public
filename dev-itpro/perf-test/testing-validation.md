@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Testing and validations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Testing and validations
+
+[!include[banner](../includes/banner.md)]
+
 
 This tutorial shows you how to create and run test cases.
 
@@ -188,4 +191,5 @@ You can generate test code from Task Recorder recording to execute headless (non
 After the test module is a part of source control, the build process template will discover all test modules, which contain the word **Test** in the name. The following illustration shows build and test execution as part of Visual Studio Online. 
 
 [![69](./media/69.png)](./media/69.png)
+
 

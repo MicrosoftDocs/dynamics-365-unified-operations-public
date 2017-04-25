@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Keyboard shortcuts
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Keyboard shortcuts
+
+[!include[banner](../includes/banner.md)]
+
 
 The following keyboard shortcuts apply across Microsoft Dynamics 365 for Operations. 
 
@@ -205,4 +208,5 @@ The following keyboard shortcuts apply across Microsoft Dynamics 365 for Operati
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 
  
+
 

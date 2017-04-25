@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Cost accounting analysis Power BI content
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Cost accounting analysis Power BI content
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes what is included in the Cost accounting analysis Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
@@ -125,4 +128,5 @@ Here are some helpful links that are related to entities and building Power BI c
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
 -   [Setting up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md)
+
 

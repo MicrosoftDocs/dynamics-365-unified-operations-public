@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Straight line service life depreciation
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Straight line service life depreciation
+
+[!include[banner](../includes/banner.md)]
+
 
 This article gives an overview of the Straight line service life method of depreciation.
 
@@ -106,6 +109,7 @@ The service life of the acquisition adjustment is the same as that of the fixed 
 | Year 6 | Remaining 800\*                           | 1,800 – 800 = 1,000                   |
 
 \*Because the remaining amount is less than the depreciation amount, only the remaining amount minus the salvage value is taken.
+
 
 
 

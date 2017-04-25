@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Define and maintain retail channels
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Define and maintain retail channels
+
+[!include[banner](includes/banner.md)
+
 
 This article provides an overview of the process for setting up brick-and-mortar stores, which are referred to as retail stores in Microsoft Dynamics 365 for Operations. It includes information about the tasks that you must complete both before and after you set up a retail store.
 
@@ -81,4 +84,5 @@ After you enter the details for the retail store, complete these tasks to send t
 
 ## Organization hierarchies
 Retail uses organization hierarchies in Microsoft Dynamics AX to structure retail channels. Organization hierarchies represent the relationships between the organizations that make up your business. When you set up stores, you can add them to an organization hierarchy. The stores then share data that is used for assortments, replenishment, and reporting.
+
 

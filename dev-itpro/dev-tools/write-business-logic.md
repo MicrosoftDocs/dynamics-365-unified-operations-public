@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Write business logic using C# and X++ source code
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Write business logic using C# and X++ source code
+
+[!include[banner](../includes/banner.md)]
+
 
 The primary goal of this tutorial is to illustrate the interoperability between C# and X++ in Microsoft Dynamics AX. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
 
@@ -252,5 +255,6 @@ For this test, we'll be debugging the C\# code that we've written. To do this, w
 7.  Find the variable customer a few lines above your breakpoint.
 8.  Right-click the customer variable, and then click **QuickWatch**. Any long integer value proves that your LINQ query worked. [![QuickWatch\_LinqC](./media/quickwatch_linqc2.png)](./media/quickwatch_linqc2.png)
 9.  Press **F5** to complete the **Save** operation.
+
 
 

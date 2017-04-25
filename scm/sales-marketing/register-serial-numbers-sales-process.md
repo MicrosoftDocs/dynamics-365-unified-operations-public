@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Register serial numbers in the sales process
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Register serial numbers in the sales process
+
+[!include[banner](../includes/banner.md)]
+
 
 This articles explains how you can register serial numbers on packing slips or invoices during the sales process. This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.
 
@@ -79,6 +82,7 @@ Yes, the retail point of sale (POS) will prompt the user to enter a serial numbe
 This functionality is available to all roles that can maintain sales packing slips and sales invoices. The following duties let workers correct serial numbers, and register blank entries for serial numbers that can't be read or scanned:
 -   Maintain serial number corrections
 -   Maintain registration of non-readable serial numbers
+
 
 
 

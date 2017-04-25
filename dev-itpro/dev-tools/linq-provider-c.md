@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: LINQ provider for C#
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # LINQ provider for C#
+
+[!include[banner](../includes/banner.md)]
+
 
 This article discusses the LINQ provider that is part of Microsoft Dynamics 365 for Operations.
 
@@ -172,4 +175,5 @@ See also
 [Programming language support](programming-language-support.md)
 
 [Technical Concepts Guide](developer-home-page.md)
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Use fiscal data from the invoice account
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Use fiscal data from the invoice account
+
+[!include[banner](../includes/banner.md)]
+
 
 For legal entities in Spain, the Use fiscal data from invoice account functionality enables fiscal data on sales orders, free text invoices, and purchase orders to be updated automatically, based on information from the invoice account. This topic provides information about the Use fiscal data from invoice account functionality and explains how to set it up.
 
@@ -71,5 +74,6 @@ When the **Invoice account** field is changed, the following fields can be updat
 -   Name
 -   Sales tax group
 -   Tax exemption
+
 
 

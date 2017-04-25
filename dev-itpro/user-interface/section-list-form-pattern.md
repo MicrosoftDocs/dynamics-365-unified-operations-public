@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Form Part Section List form patterns
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Form Part Section List form patterns
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Form Part Section List form patterns. These workspace-specific patterns have been developed to show filtered lists inside workspaces.
 
@@ -139,4 +142,5 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
 

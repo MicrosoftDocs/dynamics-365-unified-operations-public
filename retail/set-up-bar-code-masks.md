@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up bar code masks
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up bar code masks
+
+[!include[banner](includes/banner.md)
+
 
 This topic describes how to set up bar code mask characters, bar code masks, and how to assign bar code masks to bar codes.
 
@@ -84,4 +87,5 @@ Bar codes masks must be assigned to bar codes before they can be used. Continuin
 5.  Click **Save**.
 
 The bar code mask can now be used to create bar codes for products. The above steps are examples of how to create bar code masks for products, but they also illustrate how to create bar code masks for any of the other supported bar code types. Bar code masks, types, and lengths should be adjusted for use in your specific environment.
+
 

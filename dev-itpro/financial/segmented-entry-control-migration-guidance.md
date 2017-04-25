@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Segmented entry control migration guidance
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Segmented entry control migration guidance
+
+[!include[banner](../includes/banner.md)]
+
 
 This article guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
 
@@ -925,5 +928,6 @@ See also
 [Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
 [Segmented Entry control migration](segmented-entry-control-conversion.md)
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Retail Channel Performance Power BI content
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Retail Channel Performance Power BI content
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Microsoft Dynamics 365 for Operations Retail Channel Performance Power BI content. This content pack lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 
@@ -82,4 +85,5 @@ See also
 [Power BI integration](power-bi-integration.md)
 
 [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
+
 

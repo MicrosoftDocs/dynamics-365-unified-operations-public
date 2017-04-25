@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Reconcile freight in transportation management
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reconcile freight in transportation management
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the freight reconciliation process.
 
 Freight reconciliation can be done manually, or it can be set up to occur automatically. To use automatic freight reconciliation, you must set up an audit master where you can define criteria that determine which freight bills are matched automatically.
@@ -46,4 +49,5 @@ If you're reconciling freight manually, you must match each invoice line with th
 [![Freight reconcilation tasks in Dynamics AX](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 ## Automatic reconciliation
 To use automatic reconciliation, you must specify the schedule for reconciliation, and the invoices and shipping carriers to use. The matching of the invoice lines and freight bills is done according to the setup of the audit master and freight bill type. After you run the automatic reconciliation, you must handle any invoices that the system can't match. You must then process these invoices manually before you can post all the invoices for payment.
+
 

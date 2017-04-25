@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Financial reporting for Dynamics 365 for Operations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version:
 ---
 
 # Financial reporting for Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 Financial reporting for Dynamics 365 for Operations allows financial and business professionals to create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
 
@@ -90,5 +93,6 @@ The following components of financial reporting make it easy to create, view, an
 
 #See also
 [Generate a financial report](generate-financial-report.md)
+
 
 

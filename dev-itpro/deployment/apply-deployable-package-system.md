@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Apply a deployable package on a Dynamics 365 for Operations environment
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Apply a deployable package on a Dynamics 365 for Operations environment
+
+[!include[banner](../includes/banner.md)]
+
 
 Supported environments
 ----------------------
@@ -153,4 +156,5 @@ See also
 --------
 
 [Install a deployable package](../retail/retail-modern-pos-device-activation)
+
 

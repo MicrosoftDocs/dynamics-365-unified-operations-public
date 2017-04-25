@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Import fiscal documents for Brazil
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Import fiscal documents for Brazil
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the functionality for direct import fiscal documents that is available for the Brazilian localization.
 
@@ -158,6 +161,7 @@ For this scenario, you must create and post a direct import fiscal document.
 </tr>
 </tbody>
 </table>
+
 
 
 

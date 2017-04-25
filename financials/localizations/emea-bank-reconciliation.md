@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Bank statement and payment reconciliation overview for the EU
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Bank statement and payment reconciliation overview for the EU
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries.
 
 In Microsoft Dynamics 365 for Operations, you can import transactions from banks and settle these transactions against existing transactions. In Europe, you can do this for the following scenarios:
@@ -63,3 +66,4 @@ In addition to a bank statement, banks can provide specific messages, containing
 -   (DNK) BetalingsserviceBasis-returformat – Return format for customer Betalingsservice export format
 -   [Import payment formats for Sweden](emea-swe-payment-formats-import.md) - Bankgirot Autogiro returns
 -   (SWE) BankGirot return – Vendor payments return format, which corresponds to Bankgirot export format
+

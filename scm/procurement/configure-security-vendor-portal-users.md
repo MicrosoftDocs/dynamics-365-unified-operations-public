@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Vendor portal user security
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Vendor portal user security
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to set up security for external vendors who use the Vendor portal. This information applies only to the February 2016 &amp; May 2016 versions of Dynamics AX.
 
 The Vendor portal functionality has been replaced by extended vendor collaboration functionality in Dynamics 365 for Operations version 1611. For more information about setting up security for vendor collaboration, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md). The Vendor portal exposes a limited set of information about purchase orders (POs) to external vendors. It's important that you correctly set up user permissions for the Vendor portal in Microsoft Dynamics AX, so that vendors don't have unintended access to additional information in your Dynamics AX installation. **Important:** Unlike other users, external vendors should not have the **SystemUser** role. The **SystemUser** role grants access to a set of privileges that aren't suitable for external users.
@@ -50,4 +53,5 @@ See also
 --------
 
 [Vendor collaboration](collaborate-vendors-vendor-portal.md)
+
 

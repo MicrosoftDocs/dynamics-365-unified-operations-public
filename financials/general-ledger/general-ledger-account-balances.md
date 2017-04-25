@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: General ledger account balances
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # General ledger account balances
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains two ways to view general ledger account balances -  the Trial balance list page and financial reports. It also discusses how to update dimension set balances.
 
 There are a variety of ways users can view balances in the general ledger. Some of the most common options are:
@@ -51,4 +54,5 @@ When a user changes the parameters the balances are refreshed. The user can also
 Users can drill down on the balances to view the transactions that make up the balance.    
 
 For more information, see [View financial reports](view-financial-reports.md).
+
 

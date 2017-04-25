@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: DIOT declaration statement
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # DIOT declaration statement
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about the DIOT declaration statement for Mexico.
 
@@ -133,6 +136,7 @@ In the DIOT declaration statement, the amounts have either positive or negative 
 | Credit amount with negative-sales tax amount | Minus sign (–)             |
 | Debit amount with positive-sales tax amount  | Minus sign (–)             |
 | Debit amount with negative-sales tax amount  | Plus sign (+)              |
+
 
 
 

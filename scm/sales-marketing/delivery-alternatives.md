@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Delivery alternatives
@@ -31,6 +31,9 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Delivery alternatives
+
+[!include[banner](../includes/banner.md)]
+
 
 Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
 
@@ -151,5 +154,6 @@ See also
 --------
 
 [Order promising](http://ax.help.dynamics.com/en/wiki/delivery-dates-and-available-to-promise-calculations/)
+
 
 

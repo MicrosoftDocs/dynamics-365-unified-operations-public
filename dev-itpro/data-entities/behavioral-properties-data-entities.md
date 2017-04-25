@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Behavioral properties on data entities
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Behavioral properties on data entities
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -173,6 +176,7 @@ This behavior is enforced for all consumers – X++, OData, and so on. <strong>
 </tr>
 </tbody>
 </table>
+
 
 
 

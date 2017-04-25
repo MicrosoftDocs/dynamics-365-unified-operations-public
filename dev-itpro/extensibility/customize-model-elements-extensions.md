@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Customize model elements using extensions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Customize model elements using extensions
+
+[!include[banner](../includes/banner.md)]
+
 
 In this tutorial, you’ll become familiar with the Fleet Management Extension model. To demonstrate the extension capabilities of Dynamics AX, this model contains elements that extend the functionality of the Fleet Management application.
 
@@ -395,4 +398,5 @@ See also
 --------
 
 [Download FMLab sample code](https://github.com/Microsoft/FMLab)
+
 

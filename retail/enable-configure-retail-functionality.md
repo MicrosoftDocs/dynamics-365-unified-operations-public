@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Initialize seed data in a new Retail environment
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Initialize seed data in a new Retail environment
 
+[!include[banner](includes/banner.md)
+
+
 This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Operations - Retail.
 
 After the Retail solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the retail configuration to create the basic configuration data. **Important:** Before you initialize the retail configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up retail stores. This step must be completed for each legal entity that you use for retail. To initialize the retail configuration, follow these steps.
@@ -61,5 +64,6 @@ Additionally, logging that is related to the payment card industry (PCI) is enab
 -   Retail channels
 -   Registers and devices
 -   Assortments
+
 
 

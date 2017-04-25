@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Electronic reporting overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Electronic reporting overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 
@@ -273,4 +276,5 @@ See also
 [Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
 
 [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
 

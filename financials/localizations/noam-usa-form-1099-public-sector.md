@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Form 1099 in the public sector
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form 1099 in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides tips and information about how to set up Form 1099 functionality for Accounts payable in the public sector.
 
 The 1099 tax form is required if you do business with vendors that are subject to United States 1099 tax. This topic describes the 1099 functionality that is available for the public sector. We also recommend that you review Internal Revenue Service (IRS) rule changes for the applicable tax year before you set up and process 1099 statements. If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the U.S. tax authorities at the end of the calendar year. The vendors are typically organizations that provide services to your organization. The vendors can also be people who aren't employees. You must also send a statement to each 1099 vendor that you do business with, to inform the vendor of the amount that you're reporting to the tax authorities. Legal public sector organizations that have a primary address in the United States can submit Form 1099-G or Form 1099-S to the IRS. The 1099-G income tax form is used to report income from government sources, such as state or local tax refunds, unemployment benefits, grants, or subsidies. The 1099-S income tax form is used to report income from the sale or exchange of certain types of real estate. In Microsoft Dynamics 365 for Operations, the 1099 setup procedures must typically be completed only one time. However, you can use this information later if you want to modify or view existing entries.
@@ -58,4 +61,5 @@ See also
 --------
 
 [Accounts payable in the public sector](https://ax.help.dynamics.com/en/wiki/Accounts-payable-in-the-public-sector/)
+
 

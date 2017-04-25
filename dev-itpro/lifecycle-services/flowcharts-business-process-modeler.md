@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Flowcharts in Business process modeler
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Flowcharts in Business process modeler
+
+[!include[banner](../includes/banner.md)]
+
 
 You can use Business process modeler in Microsoft Dynamics Lifecycle Services (LCS) to define and store business process flowcharts for an organization. This article explains how you can modify the default connected flowcharts for Microsoft Dynamics 365 for Operations, create and upload connected flowcharts from Task recorder, and import a business process model flowchart from another library. It also explains how to upload and view unconnected flowcharts.
 
@@ -134,6 +137,7 @@ Unconnected flowcharts can be very helpful for describing high-level business pr
 A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar. [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
+
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Procurement and sourcing in the public sector in France
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing in the public sector in France
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how the standard features that are related to procurement and sourcing are augmented for French entities in the public sector. These features are used to help meet the requirements of the Code des Marchés Publics. 
 
 Set spending thresholds by procurement category
@@ -62,4 +65,5 @@ You can create purchase agreement classifications that add administrative fields
 -   To add information about milestones and tasks to purchase agreements, select the **Activities** option on the purchase agreement classification.
 
  
+
 

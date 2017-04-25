@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fixed asset transaction options
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Fixed asset transaction options
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the different methods available to create fixed asset transactions.
 
@@ -70,4 +73,5 @@ Any fixed asset transaction type can be posted in the General journal page. You 
 
 
 For more information, see [Fixed assets integration](fixed-asset-integration.md).
+
 

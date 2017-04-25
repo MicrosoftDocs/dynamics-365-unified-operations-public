@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure authentication providers
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure authentication providers
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides an overview of the process for configuring a new OpenID authentication provider.
 
 The E-Commerce platform uses industry-standard [OpenID Connect](http://openid.net/connect/) as the mechanism for authentication. This article covers the pages that you use to register the OpenID providers that are used in an online store. Retail Server uses OpenID Connect as the mechanism to support authenticated customers. OpenID Connect is a universally accepted standard that acts as simple and evolved identity provider on top of OAuth 2.0. Retail Server can be integrated with both ready-to-use OpenID providers through the Microsoft Azure Access Control service and other independently available providers. In addition, any custom providers that support OpenID connect can be integrated. These providers can be registered with Microsoft Dynamics 365 for Operations. The following illustration shows the step-by-step handshake that occurs between the Retail Server and the E-Commerce front-end server to pass the authentication token for subsequent calls. 
@@ -45,6 +48,7 @@ Here is a walkthrough of the process for registering OpenID providers so that
 3.  For the test online store, edit the web.config file so that it specifies the correct redirect URL and domain, as shown in the following example. If you're using a third-party online store, this information can be stored as required.
 
         redirectUrl=https://usnconeboxax1ecom.cloud.onebox.dynamics.com/en/Pages/OauthV2Redirect/OauthV2Redirect.aspx
+
 
 
 

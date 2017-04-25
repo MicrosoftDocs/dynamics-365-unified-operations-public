@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Dynamics 365 for Operations client FAQ
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dynamics 365 for Operations client FAQ
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides answers to frequently asked questions about the Microsoft Dynamics 365 for Operations client.
 
 Why aren't symbols loaded when I use Dynamics 365 for Operations?
@@ -57,5 +60,6 @@ The **View details** option is available in a couple of ways:
 
 -   If a control has **View details** capabilities, and if the control has a value, that value is displayed as a hyperlink. You can click the hyperlink to open a page that contains additional details.
 -   **View details** is also an option on Dynamics 365 for Operations shortcut menus. For more information about when Dynamics 365 for Operations shortcut menus are displayed when you right-click, see the previous section.
+
 
 

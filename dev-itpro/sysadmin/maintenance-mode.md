@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Maintenance mode
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Maintenance mode
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about maintenance mode in Microsoft Dynamics 365 for Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
 
@@ -73,4 +76,5 @@ The Dynamics Service Engineering team will move your system into maintenance mo
 
 ## Troubleshooting
 Errors can be found in Event viewer.
+
 

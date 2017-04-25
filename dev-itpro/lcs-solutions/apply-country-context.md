@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Apply country/region context
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Apply country/region context
+
+[!include[banner](../includes/banner.md)]
+
 
 As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must implement all country-specific or region-specific functionality so that it can be controlled by country/region context. This article describes how to apply country/region context to meet these requirements. In this article you can find information how you should use country context property and what application objects control user interface elements.
 
@@ -89,4 +92,5 @@ See also
 --------
 
 [ISO codes](http://www.iso.org/iso/country_codes/iso_3166_code_lists/country_names_and_code_elements.htm)
+
 

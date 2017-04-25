@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Financial dimensions and main accounts in a right-to-left language
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Financial dimensions and main accounts in a right-to-left language
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes some of the implementation decisions that you should consider when you use a right-to-left language in Microsoft Dynamics 365 for Operations, and you must set up financial dimensions and main accounts.
 
 Financial dimensions and main accounts are key components of the planning phase for an implementation. After financial dimensions and main accounts are created in the system, they are used on the **Configure account structures**, **Advanced rule structures**, and **Financial dimension configuration for integrating applications** pages. The order that is defined on those pages is used in the system for data entry and consumption. In some places in the system, the financial dimensions and main accounts appear in separate fields. However, in other places, such as journals, the financial dimensions and main accounts appear as a single string.
@@ -43,4 +46,5 @@ Financial dimensions and main accounts are key components of the planning phase 
 -   Avoid using the selected chart of accounts delimiter in financial dimension and main account values.
 
 By following these best practices, you help guarantee consistent representation of the user defined-order throughout the system.
+
 

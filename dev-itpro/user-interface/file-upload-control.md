@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: File upload control
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # File upload control
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about the file upload control. This control lets users upload files to Microsoft Dynamics 365 for Operations.
 
@@ -70,4 +73,5 @@ The framework provides a default upload strategy class that is named **FileUplo
 The file upload control accepts the file and upload strategy in the client, and sends them to the file services. The file services start a new session, create an instance of a strategy class, and call the **uploadFile** method. When the **uploadFile** method has finished storing the file in the data source, a file upload result class returns to the file services. This class is sent back to the client, which might trigger the **OnUploadCompleted** event to deal with the post-process. 
 
 [![FileUploadControlUsageAndDesign1](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
+
 

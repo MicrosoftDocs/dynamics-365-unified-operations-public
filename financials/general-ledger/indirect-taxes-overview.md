@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Sales tax overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Sales tax overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 
@@ -94,4 +97,5 @@ You settle sales taxes each month. On June 15, you create a customer invoice of 
 You typically would have to settle and pay 2,500 to the tax authority when the invoice is posted in June, even though you have not received the payment from the customer. 
 
 However, if you are using a conditional sales tax, you settle with the tax authority when you receive the payment from the customer on July 30.
+
 
