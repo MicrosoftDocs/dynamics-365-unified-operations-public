@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of depreciation for fixed assets.
 
 Depreciation is a periodic transaction that typically reduces the value of the fixed asset on the balance sheet, and is charged as an expenditure to a profit and loss account. Therefore, a main account is typically used to credit the periodic depreciation on the balance sheet. An offset account is an account in the profit and loss part of the chart of accounts.
@@ -57,4 +60,6 @@ Each book has a calendar that is used when you depreciate fixed assets. By defau
 You can create shared calendars by using the **Fiscal calendars** page in General ledger.
 
 For more informations, see [Depreciation methods and conventions](depreciation-methods-conventions.md).
+
+
 

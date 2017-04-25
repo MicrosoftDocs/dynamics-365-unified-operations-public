@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Report BOMs as finished
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about reporting BOMs as finished.
 
 The **Report as finished** and **Max. report as Finished** pages are used to report bills of materials (BOMs) as finished. Conceptually, the process for reporting a BOM as finished is the same as the process for reporting a production order as finished. This process can be used in, for example, simple assembly and kitting processes, where the more advanced capabilities of production orders aren't required. The **Report as finished** page lets you report multiple BOMs as finished in a batch. The **Max. report as Finished** page lets you report only one BOM as finished at a time. The **Report as finished** page is available from a menu item in Inventory management, and both pages are available as a menu items on the **Released products** page.
@@ -88,4 +91,6 @@ In this case, item number COMP is exploded into its raw material, item number RM
 | 1     | RM          | -1       |
 
 In this case, the two on-hand pieces of item number COMP are considered. However, because three pieces of item number FG are required, one piece of item number RM is also required in order to make the additional one piece of COMP.
+
+
 

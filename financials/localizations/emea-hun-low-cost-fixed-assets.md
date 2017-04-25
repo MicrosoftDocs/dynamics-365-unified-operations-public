@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Low-cost fixed assets
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about low-cost fixed assets for Hungary.
 
 A low-cost asset is an asset for which the acquisition cost doesn't exceed a predefined amount. Hungarian tax law defines the limit (threshold) for low-cost assets. These assets can be fully depreciated at the same time that they are acquired.
@@ -53,4 +56,6 @@ When you create an acquisition transaction for an asset that uses the book for l
 ### Generate acquisition and depreciation transactions for low-cost fixed assets
 
 When you acquire an asset, you create an acquisition transaction from the pre-acquisition transaction. When you post the acquisition transaction for a low-cost asset, the depreciation transaction is generated automatically.
+
+
 

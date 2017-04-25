@@ -32,6 +32,9 @@ ms.dyn365.version: AX 7.0.0
 
 # POS hardware peripherals
 
+[!include[banner](includes/banner.md)]
+
+
 Retail Modern point of sale (POS) and Cloud POS can utilize a wide range of POS hardware peripherals, with multiple interfaces and deployment options to achieve a retailer’s various business scenarios. 
 
 To support the widest selection of devices across manufactures and models, POS utilizes standard interfaces such as OLE for Retail POS (OPOS), Windows device drivers, and Windows point of service application program interfaces (APIs). Generally, POS will work on these devices provided that the appropriate driver is supplied. However, because each manufacturer and software developer’s implementation of these standards can vary, there are often differences in supported capabilities or behaviors.
@@ -68,5 +71,7 @@ The following list includes device models, in each class, that have been tested 
 
 -   Barcode – Honeywell 1900, HP LS2208
 -   MSR – Magtek PN - 21073075
+
+
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure an automated task in a workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to configure the properties for an automated task.
 
 To configure an automated task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties for the automated task.
@@ -108,5 +111,7 @@ You can send notifications to people when an automated task has been run or canc
     </table>
 
 8.  Repeat steps 3 through 7 for each event that you selected in step 2.
+
+
 
 

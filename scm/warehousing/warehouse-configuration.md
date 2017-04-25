@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Warehouse configuration
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 
 **Note:** This article applies to features in the **Warehouse management** module (advanced warehousing). It doesn't apply to warehouse features in the **Inventory management** module.
@@ -118,4 +121,6 @@ See also
 --------
 
 [Configure locations in a WMS-enabled warehouse (task guide)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
+
 

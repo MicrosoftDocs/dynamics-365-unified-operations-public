@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Troubleshoot the Intelligent Data Management Framework (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 This topic contains information about troubleshooting the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF).
 
 Known issues
@@ -114,6 +117,8 @@ Follow these steps to troubleshoot failed schedules:
 4.  A schedule may fail if the data file or log file in the database becomes full.
 
 You must fix the error conditions before you rerun the schedule.
+
+
 
 
 

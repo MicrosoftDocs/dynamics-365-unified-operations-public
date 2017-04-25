@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Help overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 
 Dynamics 365 for Operations includes a Help system that is based on two main components:
@@ -131,6 +134,8 @@ See also
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 [New task guides (February 2016)](new-task-guides-available-february-2016.md)
+
+
 
 
 

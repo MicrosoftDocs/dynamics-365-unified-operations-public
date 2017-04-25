@@ -32,6 +32,9 @@ ms.search.validFrom: 2016-11-30
 
 # Vendor collaboration mobile workspace for Microsoft Dynamics 365 for Operations app
 
+[!include[banner](../includes/banner.md)]
+
+
 With the vendor collaboration mobile workspace, your vendors can stay up-to-date on the purchase orders that have been sent to them for approval and view information about new and updated purchase orders and contacts.
 
 Prerequisites
@@ -154,5 +157,7 @@ Note that an indicator shows **Delivering**=yes/no, which is used to indicate th
 
 ## Open confirmed orders
 When the purchase order is confirmed by the customer, which means the purchase order is changed to the Confirmed state, it will appear in the open confirmed order. It will stay in the list until it is registered as received by the customer.
+
+
 
 

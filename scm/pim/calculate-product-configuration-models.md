@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Calculations for product configuration models FAQ
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes calculations for product configuration models and explains how to use calculations together with constraints.
 
 Calculations can be used for arithmetic or logical operations. They complement expression constraints in product configuration models. You can define calculations on the **Constraint-based product configuration model details** page and then build expressions for the calculations in the expression editor. For more information, see Create calculations.
@@ -103,5 +106,7 @@ Calculations aren't included in the validation. You must test the product config
 
 1.  Click **Product information management** &gt; **Common** &gt; **Product configuration models**.
 2.  Select a product configuration model, and then, on the Action Pane, in the **Run** group, click **Test**.
+
+
 
 

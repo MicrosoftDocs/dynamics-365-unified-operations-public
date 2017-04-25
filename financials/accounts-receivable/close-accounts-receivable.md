@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Close Accounts receivable
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 The following table lists the pages that support the close Accounts receivable business process.
@@ -67,6 +70,8 @@ Create and submit the EU sales list
 | Page name                            | Usage                                                                                      |
 |--------------------------------------|--------------------------------------------------------------------------------------------|
 |EU sales list                         | Report on European Union (EU) sales to the tax authority for value-added tax (VAT) declaration purposes.                                                                                                                           |
+
+
 
 
 

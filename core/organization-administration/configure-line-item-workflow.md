@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure a line-item workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to configure a line-item workflow element.
 
 To configure a line-item workflow element, in the workflow editor, right-click the element, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties of the line-item workflow element.
@@ -56,5 +59,7 @@ Follow these steps to specify whether the same workflow is used to process all t
     6.  To verify that the set of conditions that you entered is configured correctly, click **Test**. On the **Test workflow condition** page, in the **Validate condition** area, select a record, and then click **Test**. The system evaluates the record to determine whether it meets the conditions that you defined. Click **OK** or **Cancel** to return to the **Properties** page.
 
     On the **Workflow** tab, select the workflow select the workflow to use to process line items that meet the set of conditions that you defined.
+
+
 
 

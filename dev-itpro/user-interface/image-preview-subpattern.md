@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Image Preview subpattern
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the Image Preview form subpattern. This subpattern can be used for most images that appear within a form container, especially within a FastTab or Group. 
 
 Usage
@@ -122,4 +125,6 @@ None.
 ### AX 2012 content
 
 [![ImagePreview(3)](./media/imagepreview3.png)](./media/imagepreview3.png)
+
+
 

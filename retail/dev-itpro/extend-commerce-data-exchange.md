@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extend Commerce Data Exchange - Real-time Service
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how you can extend Commerce Data Exchange -  Real-time service by adding extension methods to the RetailTransactionServiceEx class. Real-time Service enables retail clients to interact with retail functionality in real time.
 
 To extend Commerce Data Exchange: Real-time Service, you create a new method in the **RetailTransactionServiceEx** class. This method must meet the following criteria:
@@ -100,4 +103,6 @@ After you've finished building your new extension methods, the project will be d
 3.  From the serviceResponse object, you can read the response values from Real-time Service.
 
 **Note:** The **InvokeExtensionMethod** method takes two parameters. One parameter is the Real-time Service method name, and the other is the list of parameters that should be used. The method name that is passed should be the same as the method name that you created in the **RetailTransactionServiceEx** class.
+
+
 

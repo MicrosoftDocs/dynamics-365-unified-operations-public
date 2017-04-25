@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a new transportation management engine
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how to create a new transportation management engine in Microsoft Dynamics 365 for Operations. 
 
 Transportation management (TMS) engines define the logic that is used to generate and process transportation rates in Transportation management. Microsoft Dynamics 365 for Operations provides several different engine types that calculate different parameters, such as rates, transit times, and the number of zones that will be crossed during transit. This article explains how to use the Microsoft Visual Studio development environment together with Dynamics 365 for Operations development tools to create and deploy a new TMS engine, and then how to set up the engine in Operations. For more information about the engines that Dynamics 365 for Operations provides, see [Transportation management engines](transportation-management-engines.md).
@@ -143,5 +146,7 @@ This section explains how to set up Dynamics 365 for Operations to use a TMS eng
 -   If you’re using development tools for Dynamics 365 for Operations, it's useful to add a new Dynamics 365 for Operations project to your solution. If you set this project as your startup project and start a debugging session, you can debug both X++ and C\# code in the same debugging session.
 -   Every time that you change and recompile your ThirdPartyTMSEngines project, you must manually copy the resulting assembly to the Dynamics 365 for Operations binary location or deploy through a deployment package. Otherwise, you might run by using a stale assembly.
 -   After you execute TMS-specific operations in Dynamics 365 for Operations, the Internet Information Services (IIS) worker process might lock the ThirdPartyTMSEngines assembly so that the assembly can’t be updated. In this case, restart the w3svc process.
+
+
 
 

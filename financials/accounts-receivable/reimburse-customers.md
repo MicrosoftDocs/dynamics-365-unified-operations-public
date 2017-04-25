@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reimburse customers
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance. 
 
 The following table shows the prerequisites that must be in place before you start.
@@ -51,5 +54,7 @@ When you create reimbursement transactions, a vendor invoice is created for the 
     The credit amounts are transferred to the vendor accounts of the customers and are processed as ordinary payments. If a customer doesn't have a vendor account, a one-time vendor account is automatically created for the customer.
 3.  To view the reimbursement transactions that were created, use the **Reimbursement** page.
 4.  In Accounts payable, create a payment for the vendor invoices that were created by the reimbursement process.
+
+
 
 

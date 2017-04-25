@@ -31,6 +31,7 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Credit note on cash discount
+
 [!include[banner](../includes/banner.md)]
 
 
@@ -104,3 +105,4 @@ Credit notes for cash discounts are numbered by using the number sequence that
 you set up for credit notes. The document printout is named **Tax corrective
 document**. It includes the original invoice number, the VAT base and amount,
 and the reason why a correction was printed.
+

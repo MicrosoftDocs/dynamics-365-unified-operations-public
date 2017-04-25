@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Commitments in the public sector in France
 
+[!include[banner](../includes/banner.md)]
+
+
 Commitments are budget control source documents used by public sector entities in France. They are used to reserve budgeted amounts so that an organization can explicitly track budget reservations for management and reporting throughout the expenditure cycle. 
 
 When commitments are used as part of the budgeting process, each purchase agreement, purchase order, and vendor invoice is associated with at least one commitment. The commitment is relieved when the funds are released from the purchase agreement and the purchase order is confirmed. When an invoice does not reference a purchase order or purchase agreement, the commitment associated with the invoice is relieved when the invoice is posted. In addition, a commitment may specify a vendor. When a vendor is specified, any purchase order, purchase agreement, or vendor invoice that references the commitment must have the same vendor. Commitments are valid from the date they are created through the end of the fiscal year or until they are closed. Commitments cannot be carried over from one fiscal year to the next.  
@@ -80,4 +83,6 @@ See also
 --------
 
 [Public-sector accounting in France](emea-fra-public-sector-accounting.md)
+
+
 

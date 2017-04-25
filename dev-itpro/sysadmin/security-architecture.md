@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security architecture
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of the security architecture of Microsoft Dynamics 365 for Operations.
 
 When you understand the security architecture of Microsoft Dynamics 365 for Operations, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture of Dynamics 365 for Operations. 
@@ -60,4 +63,6 @@ Use the extensible data security framework to control access to transactional da
 Record-level security, which was a mechanism for securing data in Dynamics AX 2012 and earlier versions, is now obsolete. Extensible data security is the recommended mechanism for securing or filtering data in the program. 
 
 Additionally, the Table Permissions Framework helps protect some data. Data security for specific tables is enforced by Application Object Server (AOS).
+
+
 

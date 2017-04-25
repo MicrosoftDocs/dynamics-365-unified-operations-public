@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build an extensible control
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 
 Prerequisites
@@ -405,4 +408,6 @@ In this tutorial, you've seen how you can use X++ when you define the design-tim
 
 ## Bidirectional or righttoleft support
 To validate right-to-left (RTL) support for your extensible control, you simply need to set the **dir** (direction) attribute on the HTML document. When this attribute is changed, the browser will automatically change the layout direction of your control. You should make sure that your control doesn’t implement any styling which interferes with this layout. Instead of setting this attribute manually, you can also validate by placing your control on a form, and then selecting a RTL language. Selecting a RTL language will cause the client to also update the **dir** attribute appropriately. For more information, see [dir attribute](http://www.w3.org/TR/html5/dom.html#the-dir-attribute) in the HTML standards.
+
+
 

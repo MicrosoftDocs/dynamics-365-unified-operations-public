@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Year-end 1099 reporting
 
+[!include[banner](../includes/banner.md)]
+
+
 If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information to the U.S. tax authorities at the end of the calendar year. The vendors are typically individuals who are not employees and who provide services to your organization. You must also send a statement to each 1099 vendor that you do business with, informing them of the amount that you are reporting to the tax authorities.
 
 When you set up a vendor to be a 1099 vendor, the amounts are tracked within Microsoft Dynamics 365 for Operations throughout the year. On invoice lines, you use the 1099 box and 1099 amount fields to track 1099 amounts. As you settle payments against these invoices that contain 1099 information, the 1099 settled values are tracked.
@@ -73,6 +76,8 @@ If you use these forms, the following tips provide more information:
 
 ## 1099OID form
 An original issue discount (OID) is a type of interest that is created when debt instruments, such as bonds or notes, are issued at a discount. The OID is the difference between the stated redemption price of the instrument at maturity and its original issue price. The redemption price is the face value of the bond or note, and the issue price is the amount for which the bond or note was first sold by the issuer. An OID is treated as taxable income for the owner of the debt obligation. The issuer must report the issue of the bonds or notes to the Internal Revenue Service (IRS) using the 1099-OID form within 30 days of the date of issue. The issuer is liable for a penalty of one percent of the issue price, up to a maximum of USD 50,000, if the OID is not reported.
+
+
 
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Fixed assets depreciation for Poland
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about fixed assets depreciation for legal entities in Poland.
 
 The Fixed assets depreciation features that are based on legal requirements in Poland include:
@@ -109,4 +112,6 @@ Legal entities in Poland can link fixed assets to depreciation groups. Deprecia
 </table>
 
  
+
+
 

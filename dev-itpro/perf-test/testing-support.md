@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Test projects in Visual Studio
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the options for testing in Visual Studio.
 
 A custom unit test adapter is available in Visual Studio. This adapter lets test authors use the standard **Test Explorer** window in Visual Studio to schedule X++ tests and analyze test results. Developers can author tests by using **SysTestAdaptor**. They can also generate test code from Task Recorder recordings. These test cases can then be added to build systems for validations. 
@@ -69,4 +72,6 @@ You can import the XML for Task Recorder recordings to generate test code that c
 [![5\_Support](./media/5_support.png)](./media/5_support.png) 
 
 Generated code is based on the SysTest Framework and FormAdaptors. FormAdaptors are wrapper classes over pages. They provide strongly typed application programming interfaces (APIs) that can be used to test page functionality. Pre-generated FormAdaptors are included for each package for built-in pages. In a test module, add a reference to a corresponding FormAdaptor for packages and "Test Essentials," which contain helper methods to run test code.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Define channel-specific discounts
 
+[!include[banner](includes/banner.md)]
+
+
 Retailers often set different discounts in different channels. This topic reviews the concepts you need to know to create a discount for a specific channel. 
 
 Channel-specific discounts
@@ -67,4 +70,6 @@ See also
 --------
 
 [Price adjustments and discounts](price-adjustments-discounts.md)
+
+
 

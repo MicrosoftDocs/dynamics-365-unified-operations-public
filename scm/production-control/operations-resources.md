@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Operations resources
 
+[!include[banner](../includes/banner.md)]
+
+
 Operations resources perform the activities of a project or a production process. They can be of different types, and can have different capabilities. 
 
 Operations resources
@@ -84,4 +87,6 @@ When a resource group is used as a lean work cell, the capacity of the work cell
 
 ## Costing resources
 When you define an activity such as a route operation or a project hour forecast, you can specify the requirement for a specific operations resource or resource group. However, you can also specify the requirement for an operations resource of a specific type, or an operations resource that has a specific capability or competency. For this reason, the actual resource assignment isn't made until the activity is scheduled and capacity is reserved. Therefore, on a route operation, you can specify that estimation and BOM calculation must be based on a specific operations resource. This operations resource is referred to as the costing resource. You can also transfer cost categories and operation times from the costing resource to the activity. When the operation is scheduled, estimation and BOM calculation are done by using the operations resource that is actually scheduled.
+
+
 

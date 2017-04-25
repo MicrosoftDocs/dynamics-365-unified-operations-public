@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Depreciation effects with reversals
 
+[!include[banner](../includes/banner.md)]
+
+
 This article discusses potential implications of reversing a fixed asset transaction. 
 
 You can reverse fixed asset transactions, and the transactions that are associated with a fixed asset. You can also revoke a reversed transaction. 
@@ -96,4 +99,6 @@ See also
 --------
 
 [Fixed asset depreciation](fixed-asset-depreciation.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up a product configuration model
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the steps for setting up and creating a product configuration model.
 
 | Task                                                        | Description                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -50,6 +53,8 @@ This article describes the steps for setting up and creating a product configura
 | Test a product configuration model.                         | Test the product configuration model from either the **Constraint-based product configuration model details** page or the **Product configuration models list** page. Testing the product configuration models simulates the product model configuration process that occurs during order handling.                                                                                                |
 | Create product configuration model template.                | Create a product configuration model template on the **Configuration templates** page. A configuration template includes values for attributes in the product configuration model. Select the attribute values on the **Configure line** page. You can select to load a product model configuration template during product model configuration.                                                   |
 | Configure an item.                                          | Product configuration models can be configured from a sales order, sales quotation, purchase order, or production order.                                                                                                                                                                                                                                                                           |
+
+
 
 
 

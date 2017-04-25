@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Resource capabilities
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about resource capabilities. A capability is the ability of an operations resource to perform a particular activity. The article explains how capabilities and related concepts, such as proficiency level and priority, are used to select appropriate resources for an activity.
 
 A capability is the ability of an operations resource to perform a particular activity. An operations resource can have more than one capability assigned to it, and a capability can be assigned to more than one resource. You can temporarily assign capabilities to resources by defining a start date and expiration date on the capability assignment. When the capability for a resource expires, the resource can't be scheduled for a project or a production that requires that capability. A capability that has expired can be renewed. You can delete capabilities, provided that they aren't on a route relation or on part of a production route of an active production order. In general, be careful when you delete capabilities. Instead, consider adjusting the expiration date on the resources that have the capability. Capabilities can be assigned to all types of resources: tool, vendor, machine, location, facility, or human resource.
@@ -57,4 +60,6 @@ In this example, both machines can be selected by the scheduling engine, because
 
 ## Competencies for human resources
 When you have operations resources of the **Human resources** type that are linked to workers in Human resources, you can also take advantage of the competencies of workers when you define the resource requirements for a production route. In other words, you can also specify requirements for specific skills, courses, certificates, or titles. The scheduling engine can then select resources that are linked to workers, and the selection will be based on the competencies of those workers. The competencies are set up in Human resources, not on the **Resource capabilities** page. When you define skills, courses, certificates, or titles as resource requirements, you must use the Human resources functionality and link each resource of the **Human resources** type to a corresponding worker. If you aren't using the Human resources functionality, you can define capabilities on the **Resource capabilities** page that resemble or duplicate the competencies from Human resources. However, the **Resource capabilities** page doesn't contain the functionality that is required in order to maintain skills, courses, certifications, or titles.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost accounting analysis Power BI content
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes what is included in the Cost accounting analysis Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 Overview
@@ -42,8 +45,7 @@ The **Cost accounting analysis** Microsoft Power BI content is intended for cost
 ## Accessing the Power BI content
 You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). 
 
-> [!NOTE]
-> **KB4011327** is a prerequisite for the **Cost accounting analysis** Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+> NOTE - **KB4011327** is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## Metrics that are included in the Power BI content
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cost accounting analysis** Power BI content.
@@ -126,4 +128,6 @@ Here are some helpful links that are related to entities and building Power BI c
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
 -   [Setting up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md)
+
+
 

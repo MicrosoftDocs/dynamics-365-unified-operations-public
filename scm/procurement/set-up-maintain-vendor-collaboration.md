@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up and maintain vendor collaboration
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the configuration tasks that are needed to set up Dynamics 365 for Operations to use vendor collaboration. It also describes how to provision new vendor collaboration users.
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. This topic describes the configuration tasks that you need to set up vendor collaboration in Dynamics 365 for Operations. It also describes how to set up a workflow to provision new vendor collaboration users, and manage the security roles for these users.
@@ -125,4 +128,6 @@ See also
 --------
 
 [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Define retail channel communications (Commerce Data Exchange)
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of Commerce Data Exchange and its components. It explains the part that each component plays in the transfer of data between Microsoft Dynamics 365 for Operations and retail channels.
 
 Overview
@@ -70,4 +73,6 @@ Commerce Data Exchange: Real-time Service is an integrated service that provides
 [![Real-time Service](./media/rts.png)](./media/rts.png) 
 
 A predefined Real-time Service profile is created.
+
+
 

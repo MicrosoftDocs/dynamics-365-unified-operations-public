@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Business process modeler
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about Business process modeler in Microsoft Dynamics Lifecycle Services (LCS). You can use this tool to create, view, and modify business process libraries and flowcharts for Microsoft Dynamics AX. The article also lists the prerequisites and explains how to start using Business process modeler.
 
 In Microsoft Dynamics Lifecycle Services, you can use Business process modeler to create, view, and modify business-process libraries and flowcharts for Microsoft Dynamics AX. Business process modeler helps you align your Microsoft Dynamics AX processes with industry-standard processes as described by [American Productivity & Quality Center (APQC)](http://www.apqc.org/). You can perform fit-gap analysis between the business needs and the default processes in Microsoft Dynamics AX. You can also add new business processes and create flowcharts for processes that are not already defined in Microsoft Dynamics AX 2012. You can use Business process modeler artifacts with the following applications:
@@ -68,4 +71,6 @@ See also
 [Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
 
 [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md)
+
+
 

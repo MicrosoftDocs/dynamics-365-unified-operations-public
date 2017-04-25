@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Whole amount and Interval calculation options for sales tax codes
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
 
 You can set up a sales tax code to be calculated based on a whole amount or an interval amount. In the Sales tax codes page, use the Calculation method field on the Calculation FastTab to select how to calculate a sales tax code.
@@ -87,6 +90,8 @@ The sales tax is the sum of the tax amounts that are calculated for each amount 
  
 
 For more information, see [Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md).
+
+
 
 
 

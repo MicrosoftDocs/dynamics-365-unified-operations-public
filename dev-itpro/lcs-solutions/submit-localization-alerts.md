@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inform about country/region regulatory features
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service. This article also explains how to track planned and released regulatory features through LCS Issue search. 
 
 Accessing the regulatory alert submission service
@@ -110,3 +113,5 @@ To narrow the search even more, you can apply the following additional filters
 -   **Status:** Select specific statuses.
 
 ![Filters to find planned and released regulatory features in Issue search](./media/issue-search-categories.jpg)
+
+

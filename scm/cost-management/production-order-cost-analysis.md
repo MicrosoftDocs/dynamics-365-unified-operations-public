@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production order cost analysis
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the cost analysis that you can do for completed and current production orders. You can analyze the estimated costs and actual costs by using the Price calculation page or the Cost estimates and costings report. You can view information about the estimated and actual costs (and quantity) for each component item, the routing operation, and the indirect cost.
 
 The actual costs for a production order are based on the reported consumption of material and routing operations. You can access detailed transactions about the reported consumption of material, routing operations, and indirect costs for a production order on the **Production posting** page.
@@ -64,4 +67,6 @@ See also
 --------
 
 [Common sources of production variances](common-sources-of-production-variances.md)
+
+
 

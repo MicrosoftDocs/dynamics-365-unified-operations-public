@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Adjust on-hand inventory cost values
 
+[!include[banner](../includes/banner.md)]
+
+
 Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.
 
 You can use the **Adjustment of on-hand inventory** page to adjust the cost value of on-hand inventory quantities after an inventory close process is run. **Note:** To open the **Adjustment of on-hand inventory** page, on the **Closing and adjustment** page, select the record of a completed inventory close process, and then click **Adjustment** &gt; **On-hand**. **Example:** You have the following transactions in February:
@@ -46,4 +49,6 @@ This item was set up with the first in, first out (FIFO) inventory model, and in
 -   February 5: A quantity of 1 at a cost of USD 13.00
 
 To set the cost of these two items to USD 15.00, use the on-hand adjustment option to adjust the open on-hand quantities as of the last inventory close period. **Note:** The posting date of the on-hand adjustment transaction will be the date of the last inventory close. This date can't be modified.
+
+
 

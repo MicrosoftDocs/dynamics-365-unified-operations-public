@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security roles in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the functionality for public sector security roles. This functionality includes the Project manager and Purchasing agent roles for the public sector.
 
 All users must be assigned to at least one security role to have access to Microsoft Dynamics 365 for Operations. Security roles determine which duties users can perform and which parts of the user interface they can view.
@@ -102,4 +105,6 @@ See also
 --------
 
 [Role-based security](/dynamics365/operations/dev-itpro/sysadmin/role-based-security)
+
+
 

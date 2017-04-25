@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure and filter workspaces
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview about how to configure and filter workspaces.
 
 Configuring a workspace
@@ -67,4 +70,6 @@ If individual sections of the workspace have filters, you can filter each sectio
 [![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png) 
 
 As with a workspace-wide filter, select or enter a value in the field to filter the contents of the section.
+
+
 

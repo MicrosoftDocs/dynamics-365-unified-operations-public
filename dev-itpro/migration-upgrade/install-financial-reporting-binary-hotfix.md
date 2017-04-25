@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Install a financial reporting binary hotfix
 
+[!include[banner](../includes/banner.md)]
+
+
 Use this tutorial to install a financial reporting binary hotfix from Microsoft Dynamics Lifecycle Services (LCS). 
 
 ### Update a one-box environment
@@ -69,4 +72,6 @@ See also
 --------
 
 [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
+
+
 

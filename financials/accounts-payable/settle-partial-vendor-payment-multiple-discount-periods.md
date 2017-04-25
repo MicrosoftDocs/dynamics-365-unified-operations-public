@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial vendor payment that has multiple discount periods
 
+[!include[banner](../includes/banner.md)]
+
+
 This article walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts. 
 
 Vendor 3054 offers Fabrikam a cash discount of 2 percent if an invoice is paid in five days and a cash discount of 1 percent if the invoice is paid in 14 days.
@@ -138,6 +141,8 @@ On July 20, April creates a final payment for 200.00. No discount is taken, beca
 | APP-10061  | 7/12/2015 |         | 495.00                               |                                       | 0.00    | USD      |
 | DISC-10061 | 7/12/2015 |         | 5.00                                 |                                       | 0.00    | USD      |
 | APP-10062  | 7/20/2015 |         | 200.00                               |                                       | 0.00    | USD      |
+
+
 
 
 

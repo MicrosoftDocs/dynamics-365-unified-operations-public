@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up premium earnings
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about premium earnings and how to set them up. Premium earnings are extra earnings, such as bonuses or overtime premiums, that are paid to workers when specific conditions are met. Other types of premium earnings include a differential for hours that are worked on a second or third shift, and additional pay for workers who hold a certificate for advanced training or qualifications.
 
 To set up and pay simple premiums, such as annual bonuses, you just have to create an earning code for the premium. Then, when it's time to pay the premium, you add the earning code to earnings statements. For more information, see [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md). Other premiums are based on other earnings, or on characteristics of the worker or position. This topic explains how to set up the more complex types of premiums that are supported.
@@ -215,4 +218,6 @@ See also
 --------
 
 [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md)
+
+
 

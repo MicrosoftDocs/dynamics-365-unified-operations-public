@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Monitoring and diagnostics (Lifecycle Services, LCS)
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Microsoft Dynamics 365 for Operations environments that you manage.
 
 To have a successful onboarding experience to the cloud service for Microsoft Dynamics 365 for Operations, you must know the health of your environments at all times. You must also be able to troubleshoot any health issues that occur. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center for Dynamics 365 for Operations, contains a collection of monitoring and diagnostics tools that can help guarantee that you have an accurate view of the environments that you manage.
@@ -157,4 +160,6 @@ The Index analysis tool shows aggregated index and table information, based on u
 ### System diagnostics
 
 The System diagnostic tool is a rule-based framework that runs a predefined set of rules against the environment and provides a report about the status of the rules. If failures occur, this tool provides recommendations for addressing the issue. To start the System diagnostics tool, on the LCS project dashboard, click the hamburger icon, and then click **System diagnostic**.
+
+
 

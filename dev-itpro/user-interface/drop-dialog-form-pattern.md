@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Drop Dialog form pattern
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the Drop Dialog form pattern. This pattern is used to initiate actions when the number of fields is seven or fewer. 
 
 Usage
@@ -158,4 +161,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![DropDialog(4)](./media/dropdialog4.png)](./media/dropdialog4.png)
+
+
 

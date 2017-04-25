@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Symbol font
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides a link to the list of available symbols for each release.  A description of the various locations in the product where symbols are used as well as usage guidelines for each location is also included.  
 
 The Symbol font defines the set of out-of-the-box symbols available for use in the product.  These symbols are primarily used by buttons, tiles, and image controls. With each release, there are often updates to the symbol font in terms of added or removed symbols. This page provides links to the list of available symbols (the name and image) for each release. A description of the various locations in the product where symbols are used as well as usage guidelines for each location is also included in each file.
@@ -46,4 +49,6 @@ The Symbol font defines the set of out-of-the-box symbols available for use in 
 |Microsoft Dynamics AX platform	|Platform update 1	|[Symbol list + images](https://msdynamics.blob.core.windows.net/media/2017/02/DynamicsSymbolFont_Update1.pdf)	|7.0.4127.16103	|May 2016|
 |Microsoft Dynamics AX platform	|7.0	|[Symbol list + images](https://msdynamics.blob.core.windows.net/media/2017/02/DynamicsSymbolFont_RTW.pdf)	|7.0.4030.16079	|February 2016|
  
+
+
 

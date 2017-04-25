@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reuse product configurations
 
+[!include[banner](../includes/banner.md)]
+
+
 You can specify that you want to automatically reuse an existing configuration for a product. Then, when a user has completed a configuration session, the system verifies whether a configuration that matches the user’s selections already exists. If a matching configuration is found, the configuration ID, corresponding bill of materials (BOM), and route are reused.
 
 Requirements for reusing configurations
@@ -44,4 +47,6 @@ To enable configurations to be reused, you must specify the following informatio
 
 ## Resetting configuration reuse
 When you reset configuration reuse, previously created configurations are no longer considered. You might want to reset configuration reuse if the BOM or route was changed, but no related attributes were changed. You reset configuration reuse on the **General** FastTab for the component.
+
+
 

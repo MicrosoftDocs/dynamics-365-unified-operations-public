@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure expense management
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the considerations and the decisions that you must make during the planning process before you configure Expense management in Microsoft Dynamics AX. In the Expense management area, you can store information about payment methods, travel requisitions, expense reports, and policies, among other things. 
 
 Because many of the decisions that you make when you plan your configuration for Expense management are based on your organization’s hierarchy and financial structure, you must refer to the planning documents for those areas.
@@ -138,5 +141,7 @@ You can create expense report policies so that your organization can save time 
 -   When does the policy expire?
 -   What is the policy rule?
 -   What is the outcome of the policy rule?
+
+
 
 

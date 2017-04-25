@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Accounts payable invoice matching
 
+[!include[banner](../includes/banner.md)]
+
+
 Accounts payable invoice matching is the process of matching vendor invoice, purchase order, and product receipt information.
 
 When matching documents, differences among these documents are called matching discrepancies. Matching discrepancies are compared with the tolerances that are specified. If a matching discrepancy exceeds the tolerance percentage or amount, match variance icons are displayed on the Vendor invoice page and on the Invoice history and matching details page. 
@@ -193,5 +196,7 @@ Vendor invoices are often based on product receipts that represent actual shipme
 -   View and approve price match discrepancies between the invoice net unit price and the purchase order net unit price. You can set up price tolerance percentages for legal entities, vendors, and items. If the vendor invoice line price is not in the acceptable price tolerance, you can save the invoice until it is approved for posting, or until you receive a correction from the vendor.
 
 For more information, see [Three-way matching policies](three-way-matching-policies.md).
+
+
 
 

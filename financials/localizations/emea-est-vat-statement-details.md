@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT statement details for Estonia
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up a VAT statement for legal entities in Estonia.
 
 This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Estonia only. For more information about the setup of VAT statements, see [VAT reporting](emea-vat-reporting.md).
@@ -102,4 +105,6 @@ Then set the following fields.
 | Purchase annex (In the **Export** field group) | Set this option to **Yes** to export invoices and credit notes in the Purchase annex.                                               |
 
 **Note:** The field values in the **Period** field group are entered automatically, based on options on the **Sales tax settlement periods** page. To set up sales tax settlement periods, go to the **Sales tax settlement periods** page.
+
+
 

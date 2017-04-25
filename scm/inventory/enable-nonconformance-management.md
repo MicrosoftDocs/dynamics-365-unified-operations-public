@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Nonconformance management
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the basic setup that is required in order to use nonconformances. Additional setup is required if you want to use quality orders. 
 
 To enable nonconformance management, follow these steps:
@@ -57,4 +60,6 @@ See also
 [Quality management processes](quality-management-processes.md)
 
 [Set up prerequisites for non-conformance management (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+
+
 

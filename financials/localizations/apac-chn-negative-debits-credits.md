@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Display debit and credit amounts for ledger accounts
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
 
 You can view credit and debit amounts for ledger accounts in two separate columns on the **Voucher transactions** inquiry page. You can also view the negative amounts that are related to the reversing entries. All negative amounts are displayed in red letters on the **Voucher transactions** inquiry page.
@@ -39,5 +42,7 @@ You can view credit and debit amounts for ledger accounts in two separate column
 1.  Click **General ledger** &gt; **Ledger Setup** &gt; **General ledger parameters**.
 2.  Set the **Show amount in debit/credit columns** slider to **Yes**.
 3.  Open **General ledger** &gt; **Inquiries and reports** &gt; **Voucher transactions** to confirm.
+
+
 
 

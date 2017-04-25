@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create variable compensation plans
 
+[!include[banner](includes/banner.md)]
+
+
 Variable compensation makes up an employee's irregular pay, such as bonuses or stock awards. This article describes the components that must be set up before you can use variable compensation and enroll an employee in a variable compensation plan.
 
 The calculation of variable compensation amounts for your employees can be based on several factors, such as the employee's performance, the employee's compensation level, and the department's performance.
@@ -106,4 +109,6 @@ See also
 --------
 
 [Compensation plans](compensation-plans.md)
+
+
 

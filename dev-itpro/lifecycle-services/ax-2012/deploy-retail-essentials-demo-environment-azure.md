@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Deploy a Retail essentials demo environment on Azure (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 This article explains how to deploy a Retail essentials demo environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services.
@@ -137,6 +140,8 @@ Complete the following procedure to connect to the virtual machine where the Dy
 4.  At the bottom of the page, click **Open** to open the .rdp file.
 5.  When prompted for credentials, enter the user name and password for the &lt;DomainName&gt;Administrator account. You can find the password for this account on the **Cloud-hosted environments** page for this environment.
 6.  When the virtual machine’s desktop is displayed, click the **Microsoft Dynamics AX** icon to open the Microsoft Dynamics AX client.
+
+
 
 
 

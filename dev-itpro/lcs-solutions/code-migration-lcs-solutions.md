@@ -32,6 +32,9 @@ ms.dyn365.ops.version:
 
 # Migrate code for an LCS solution
 
+[!include[banner](../includes/banner.md)]
+
+
 The first step in completing your solution package is to upgrade your code using the best practices in <strong>Migrate and Create Dynamics 365 for Operations Solutions</strong> in LCS. After this step is complete, you must run the Customization Analysis report. This report analyzes your customization and extension models, and runs a predefined set of best practice rules. 
 
 To generate the Customization Analysis report (CAR), run the following command on a Microsoft Dynamics 365 for Operations development environment.
@@ -50,4 +53,6 @@ See also
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
 
 [Technical Concepts Guide for code migration](..\dev-tools\developer-home-page.md#code-migration)
+
+
 

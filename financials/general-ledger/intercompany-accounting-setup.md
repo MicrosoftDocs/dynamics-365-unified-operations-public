@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Intercompany accounting setup
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up intercompany accounting so that you can use intercompany journals for ledger allocations and financial journals, such as daily journals, vendor invoice journals, and payment journals.
 
 Intercompany journals can be created in various scenarios, such as for daily journals, vendor invoice journals, ledger allocations, and centralized payments. To enable these scenarios, you must set up intercompany accounting.
@@ -50,4 +53,6 @@ Select the **Debit account (Due from)** and **Credit account (Due to)** for both
 Finally, select which legal entity will receive the accounting for supporting amounts, such as cash discount or realized gains/losses for centralized payments. 
 
 A reciprocal relationship can easily be set up on the **Intercompany accounting** page by using the **Create reciprocal relationship** button after the first legal entity pair is created. When the reciprocal pair is created, the information for the destination company is copied to the originating company and vice versa. The journal defined for the destination company will remain. Most organizations use the same naming convention for their journal names, so that the journal name is the same. If the journal name is different, a warning will appear on the field to notify you that the journal doesn't exist and a different journal can be selected.
+
+
 

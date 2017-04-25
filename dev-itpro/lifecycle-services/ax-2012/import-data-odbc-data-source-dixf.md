@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Import data from an ODBC data source (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 You can use the Microsoft Dynamics AX 2012 Data Import/Export Framework to import data from an ODBC data source into Microsoft Dynamics AX 2012. 
 
 This walkthrough illustrates the following tasks:
@@ -127,5 +130,7 @@ Verify that the vendor data from the ODBC source is displayed in either of the f
     2.  Review the staging data to validate that it matches the ODBC source.
     3.  Click **Validate all** to verify that all the related reference data is correct and present in the system.
 -   Verify that the customer data from the ODBC source is now displayed in **Accounts payable** &gt; **Common** &gt; **Vendor** &gt; **All Vendors** form.
+
+
 
 

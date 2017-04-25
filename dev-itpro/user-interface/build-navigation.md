@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build navigation
 
+[!include[banner](../includes/banner.md)]
+
+
 In this tutorial, you will add navigational elements to a workspace and the navigation pane.
 
 Prerequisites
@@ -185,5 +188,7 @@ Now you’ll add a new main menu section that contains a tile that points to the
     [![Nav5](./media/nav5.png)](./media/nav5.png) 
     
     If you click on the **Common** submenu, you will see the menu item that you modeled there. You can click either of these links to check that you have set up the references correctly. If you have set up the references correctly, the tutorial workspace you’re working on should open when clicked on.
+
+
 
 

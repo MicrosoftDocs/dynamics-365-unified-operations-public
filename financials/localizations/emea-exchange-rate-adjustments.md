@@ -31,7 +31,8 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Exchange rate adjustments
-"[!include[banner](../includes/banner.md)]"
+
+[!include[banner](../includes/banner.md)]
 
 
 This topic provides information about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
@@ -82,5 +83,7 @@ For the preceding revaluation, notice that the entry from January 3, 2013, is a 
 For the preceding revaluation, notice that the entry from January 1, 2013, is a direct reversal of the entry below it (from January 3, 2013). Even the GL accounts and posting types are the same. Additionally, notice that the **Correction** flag has been set.
 
 The system behavior is the same, regardless of whether the **Correction** option in the **Transaction reversal** section on the **General ledger parameters** page is set to **Yes** or **No**.
+
+
 
 

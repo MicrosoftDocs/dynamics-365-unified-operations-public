@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail hierarchies
 
+[!include[banner](includes/banner.md)]
+
+
 This article describes retail hierarchies in Microsoft Dynamics AX.
 
 You can create a retail category hierarchy to organize the products that you sell through your retail channels. You can use retail product hierarchies to categorize or group products. You can then use these products to create product assortments and customer loyalty programs. You can also assign product attributes and properties, assign a pricing structure, include the products in product promotions, and use the products for reporting. You can create one retail category hierarchy to represent all the products and categories in your organization, and then use that category hierarchy for multiple purposes. Alternatively, you can create multiple retail category hierarchies for special purposes, such as product promotions. When you create a retail product hierarchy, you must assign a category hierarchy type to identify the purpose of the category hierarchy. For example, only product hierarchies that are assigned the **Retail navigation hierarchy** type are referenced when you browse products by category online or in point of sale (POS).
@@ -46,4 +49,6 @@ The following table lists the types of retail category hierarchies that are avai
 | Retail navigation hierarchy   | Use this hierarchy type to group and organize products into categories so that the products can be browsed online or in POS.                                                                                                                                                                                       |
 
 By using a retail category hierarchy to structure your products, you can set up and maintain product attributes and properties at the category level. These attributes and properties include settings for product dimensions and POS settings. Any products that you assign to the categories automatically inherit the attributes and properties that you define. You can also copy the property settings for any product to multiple products in a selected category at the same time.
+
+
 

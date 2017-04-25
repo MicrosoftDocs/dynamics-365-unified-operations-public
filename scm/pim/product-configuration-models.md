@@ -32,6 +32,9 @@ ms.dyn365.version: AX 7.0.0
 
 # Product configuration models overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article defines terms and concepts that are relevant to product configuration models. Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
 
 Product configuration models are created to represent a generic product structure. After you've set up a product configuration model, you can configure a distinct product variant that has a unique bill of materials (BOM) and a unique route. Product configuration models use both declarative constraints and imperative calculations to handle the relations and limitations between different product variants. You can configure items on sales orders, sales quotations, purchase orders, and production orders. The following table describes the table constraint–based terms and concepts.
@@ -151,6 +154,8 @@ You can view whether a released product can be used as a component or subcompone
 </tr>
 </tbody>
 </table>
+
+
 
 
 

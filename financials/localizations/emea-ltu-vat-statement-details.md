@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT statement details for Lithuania
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up a VAT statement for legal entities in Lithuania.
 
 This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Lithuania only. For more information about the setup of VAT statements, see [VAT reporting](emea-vat-reporting.md).
@@ -74,4 +77,6 @@ To review or change the VAT statement configuration, on the **Reporting configur
 
 ## Generate a VAT statement
 To generate a VAT XML file, on the **Sales tax payments** page, select one or more vouchers, and then click **Export VAT XML file**.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Split payment for invoices issued to the Public Administration
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the split payment accounting schema.
 
 The split payment accounting schema is valid for the sale of goods and services rendered to the Public Administration. The split payment mechanism transfers the tax payment obligation to the Public Administration who are obligated to pay only the taxable base to the supplier. The VAT is credited to a specific reserved account. Companies that have relationships with the Public Administration should ensure that the relevant VAT is recorded in the register sales, without contributing to the periodic VAT payment.
@@ -111,4 +114,6 @@ VAT split payment
 220
 
  
+
+
 

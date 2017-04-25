@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Sales orders mobile workspace
 
+[!include[banner](../includes/banner.md)]
+
+
 With the sales orders mobile workspace, you can stay up-to-date on your sales orders anywhere and anytime. 
 
 Prerequisites
@@ -117,6 +120,8 @@ To view workspaces on your mobile app, you must first publish the desired worksp
 6.  If **Sales orders** is selected, a list of sales orders for the customer will be displayed.
 7.  Select **Sales order**.
 8.  Here you can view information about sales order lines, shipments, customer contact information, and order taker contact information.
+
+
 
 
 

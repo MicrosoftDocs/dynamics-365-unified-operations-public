@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Modeling and aggregate data
 
+[!include[banner](../includes/banner.md)]
+
+
 This tutorial will walk you through the process of modeling aggregate data .
 
 Prerequisites
@@ -284,4 +287,6 @@ Notice that the KPI details page for the new KPI, **FMTRevenuePerRental** is sho
 [Adding BI to workspaces](add-bi-workspaces.md)
 
 [Adding contextual BI to forms](add-contextual-bi-forms.md)
+
+
 

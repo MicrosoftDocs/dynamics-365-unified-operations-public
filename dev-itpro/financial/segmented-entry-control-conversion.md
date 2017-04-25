@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control migration
 
+[!include[banner](../includes/banner.md)]
+
+
 This tutorial walks you through two migration scenarios for the Segmented Entry control -  a simple scenario (for the SMAServiceOrderTable form) and a complex scenario (for the LedgerJournalTransDaily form).
 
 Simple migration scenario – SMAServiceOrderTable form
@@ -1578,4 +1581,6 @@ See also
 [Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
 
 [Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+
+
 

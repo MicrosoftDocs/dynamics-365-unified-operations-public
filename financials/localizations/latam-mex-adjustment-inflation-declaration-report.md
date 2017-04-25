@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Adjustment inflation declaration report
 
+[!include[banner](../includes/banner.md)]
+
+
 Microsoft Dynamics 365 for Operations users can process inflation adjustments by using INPC rates, various methods (such as opening balance, balance, monthly balance, and transaction date), and various dimensions.
 
 All companies in Mexico are required to apply the NIF B-10 process to inflation recognition in financial statements if the cumulative inflation rate during the last three years equals or exceeds 26 percent. By using the Índice Nacional de Precios al Consumidor (INPC) index rates every month, you can express the transaction values at the closing date of the general balance sheet. When the inflation adjustment process is run, the ledger balances are adjusted, and voucher entries are posted according to the INPC rates. Adjustment methods are defined, and you can view the effect of the inflation adjustment by generating simulation reports before you run the actual process.
@@ -124,5 +127,7 @@ This report shows the calculation of the capital and result account code inflati
 -   The **B-10 adjustment** slider is on for the main account.
 -   The account type for the main account is **Balance** **sheet**, **Asset**, **Liability**, or **Equity**.
 -   The adjustment type of the main account is **Transaction** **date**.
+
+
 
 

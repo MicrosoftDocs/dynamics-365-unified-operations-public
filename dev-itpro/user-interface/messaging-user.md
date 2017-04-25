@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Message center, message bar, and message details FAQ
 
+[!include[banner](../includes/banner.md)]
+
+
 This article introduces the rich, powerful messaging system that is available in Microsoft Dynamics 365 for Operations. This messaging system replaces the Infolog window that was used in previous versions.
 
 Microsoft Dynamics AX 2012 uses an all-purpose window that opens to display a list of the most recently reported informational messages, warnings, or errors. This window is appropriately and generically named the Information Log or Infolog. Although the Infolog is a beneficial tool in some cases, its “one size fits all” approach was judged to be ineffective for differentiating the severity of messages and the need to interrupt the user. Therefore, Microsoft Dynamics 365 for Operations has a richer, more powerful messaging system:
@@ -194,4 +197,6 @@ If the collection contains one or more calls to **error()**, the message bar is 
 
 ## SetPrefix() and asynchronous processes
 The use of **SetPrefix()** is also deterministic. In other words, if you use **SetPrefix()**, and there is no page context (for example, an asynchronous batch operation), the notification of results is sent to the Message Center, which isn't associated with any page.
+
+
 

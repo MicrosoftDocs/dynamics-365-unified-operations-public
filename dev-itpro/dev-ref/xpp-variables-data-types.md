@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ variables and data types
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes variables and data types in X++.
 
 Variables
@@ -1067,4 +1070,6 @@ Microsoft Dynamics 365 for Operations doesn't support the concept of **null** va
 | Utcdatetime | Any value that has its date portion set to **1900-01-01**, regardless of the value of the time portion For example, the value **1900-01-01T22:33:44** is treated as **null**. Note that any **utcDateTime** value that has its date portion set to **1900-01-01** is shown as blank by the X++ **print** statement. Only the value **1900-01-01T00:00:00** is shown as blank by the **Global::info** method. That value is the value from the **DateTimeUtil::MinValue** method. |
 
 Therefore, when the **validateField** method checks whether a user has entered a value in a mandatory field, **0** isn't accepted in an **integer** type field, the first entry isn't accepted in an **enum** type field, and so on. Additionally, in SQL X++ statements, the values that are listed in the previous table yield **false** in a Boolean comparison. However, In non-SQL X++ statements, the equal and relational operators work with these values, just as they work with other values. Variables of the **container** type, and classes and variables of the **table** type can be **null** in the traditional DBMS sense. A **table** type is **null** if all its fields have their **null** value.
+
+
 

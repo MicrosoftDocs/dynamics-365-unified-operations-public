@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Personalized product recommendations overview
 
+[!include[banner](includes/banner.md)]
+
+
 In Dynamics 365 for Operations, product recommendations can be displayed on the point of sale (POS) device. The recommendations are items that the customer might be interested in based on their purchase history, items in their wish list, and items that other customers purchased online and in brick-and-mortar stores. For retailers with large catalogs, recommendations help the customer with product discovery. By showcasing products targeted to a customer’s interests and buying habits, product recommendations can help retailers with up-sell and cross-sell, and can enhance customer retention. In Dynamics 365 for Operations, product recommendations are powered by cognitive services and Microsoft Azure machine learning.
 
 Scenarios
@@ -84,4 +87,6 @@ See also
 --------
 
 [Add a recommendations control to the transaction page on a POS device](add-recommendations-control-pos-screen.md)
+
+
 

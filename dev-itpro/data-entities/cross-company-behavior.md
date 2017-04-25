@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cross-company behavior
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about how data entities interact with the cross-company concept. To understand this aspect of data entities, you must understand how tables and views apply the cross-company concept. Therefore, this topic begins with a brief review of tables and views, and then explains how data entities are related.
 
 Review of tables and views for cross-company
@@ -183,4 +186,6 @@ Here's how the X++ test code works with the shared entity:
 -   It accesses the data entity with one specific company when a new record is created.
 
 [![snip2](./media/snip2.png)](./media/snip2.png)
+
+
 

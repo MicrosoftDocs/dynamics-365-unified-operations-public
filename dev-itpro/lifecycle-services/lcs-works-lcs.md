@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Lifecycle Services for Dynamics 365 for Operations customers
 
+[!include[banner](../includes/banner.md)]
+
+
 This article is intended for customers who have signed up for the current version of Microsoft Dynamics 365 for Operations. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 
 LCS workspace for the current version of Dynamics 365 for Operations****
@@ -84,4 +87,6 @@ To provision your environment, you must to complete a configuration checklist. A
 Because the information that you enter determines your experience, carefully review your input. After you've entered all the required information, sign-off is required for the deployment request. The user who completes the sign-off becomes the system administrator on the Dynamics 365 for Operations instance. Verify that the correct user completes the sign-off for the deployment. After the sign-off is completed, the Microsoft site reliability engg. team reviews the request. After the team has reviewed the information that you entered, it initiates the provisioning. If the information isn't correct, the team will contact you. After the provisioning is completed, the status is updated to indicate that the environment has been deployed, as shown in the following screen shot. If the provisioning takes longer than expected, the Microsoft site reliability engg. team reviews the status and takes appropriate actions. These actions might include contacting you. After the environment is provisioned, click **Full details** to open the **Detailed environment** page, where you can sign in to the system, view the monitoring status, or view relevant updates. 
 
 [![Status for an environment that has been successfully provisioned](./media/12.jpg)](./media/12.jpg)
+
+
 

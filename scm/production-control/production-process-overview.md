@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production process overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 
 The production of products, a process that is also known as the production life cycle, follows specific steps that are required to complete the manufacture of an item. The life cycle begins with the creation of the production order, batch order, or kanban. It ends with a finished, manufactured item that is ready for either a customer or another phase of production. Each step in the life cycle requires different kinds of information to complete the process. As each step is completed, the production order, batch order, or kanban shows a change in the production status. Different types of products require different manufacturing processes.  
@@ -87,4 +90,6 @@ See also
 [Product configuration models](../pim/product-configuration-models.md)
 
 [Lean manufacturing](lean-manufacturing-overview.md)
+
+
 

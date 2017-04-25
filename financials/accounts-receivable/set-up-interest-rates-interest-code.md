@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up interest rates for an interest code
 
+[!include[banner](../includes/banner.md)]
+
+
 Interest codes contain settings that determine when interest is charged and how it is calculated on overdue accounts.
 
 You can set up a single interest code and apply it to multiple customer posting profiles, billing codes, or to specific invoice lines. When the interest code details are changed, all features that use the code will automatically implement the changes on new transactions. For each interest code, you can set up two types of rates:
@@ -131,4 +134,6 @@ You set up the range information as follows.
 Interest codes are date effective. If you want to modify the interest rate, you can create a **new version** that is effective as of a future date.
 
 To view different versions, you can use the **As of Date** menu choice to select the cutoff date. You can also select the **Display all records** to view all interest codes in the page.
+
+
 

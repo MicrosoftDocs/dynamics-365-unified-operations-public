@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Warehouse Mobile Devices Portal (WMDP) for Dynamics 365 for Operations
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how to enable the Warehouse Mobile Devices Portal for Microsoft Dynamics 365 for Operations. It also explains how to service and upgrade your environment.
 
 Warehouse Mobile Devices Portal (WMDP) is a web application hosted in IIS. It uses ASP.NET MVC runtime. For the current version of Microsoft Dynamics 365 for Operations, WMDP is provided as a standalone component, meant for self-deployment on-premises. In order to enable the WMDP on your environment, you need to download the installer, deploy the WMDP application, and configure it to connect with a Dynamics 365 for Operations server. This article explains how to enable WMDP on your environment. It also explains the process of introducing a hotfix into your environment.
@@ -160,4 +163,6 @@ Since Warehouse Mobile Devices Portal is released as a standalone component, you
 
 ## Troubleshooting
 **Problem:** You see this generic error: “Sorry, an error occurred while processing your request. Please retry your request or contact your system administrator.” **Solution:** If you open the Event Viewer and navigate to Application logs, you will find a log sourced by ASP.NET, with exception details, as shown in the following example. [![ASP.NET log in the Event Viewer Application logs](./media/151.png)](./media/151.png) Some additional information about the errors in the Event Viewer is available in this blog post: [Warehouse Mobile Devices Portal for Microsoft Dynamics AX](http://community.dynamics.com/ax/b/dynamicsaxseven/archive/2016/03/17/warehouse-mobile-devices-portal-for-microsoft-dynamics-ax).
+
+
 

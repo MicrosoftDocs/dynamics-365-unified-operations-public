@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail component events for diagnostics and troubleshooting
 
+[!include[banner](../includes/banner.md)]
+
+
 To enable diagnostics and troubleshooting, all Retail components, which include clients such as the Retail Modern POS and server components such as Retail Server, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Retail-specific components.
 
 Viewing events in Event Viewer
@@ -164,4 +167,6 @@ You can filter by the following criteria to refine your query:
 -   Severity level
 
 [![Search results on the Environment monitoring page](./media/log-search-results.png)](./media/log-search-results.png)
+
+
 

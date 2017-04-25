@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 2
 
 # Recently added editing features in task recorder
 
+[!include[banner](../includes/banner.md)]
+
+
 If you use task recorder to create task guides, you can edit your files more efficiently using the functionality described in this topic.
 
 These features are available on the **Settings &gt; Task recorder &gt; Edit recording** menu.
@@ -91,4 +94,6 @@ See also
 [Create documentation or training using Task recordings](/dynamics365/operations/dev-itpro/user-interface/task-recorder)
 
 [Task recorder quick reference](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
+
+
 

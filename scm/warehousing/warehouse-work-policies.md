@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Warehouse work policies
 
+[!include[banner](../includes/banner.md)]
+
+
 A new warehouse work policy is introduced in Microsoft Dynamics AX 7.0.1 (May 2016 update). This work policy controls whether warehouse work is created for warehouse processes in manufacturing.
 
 This work policy controls whether warehouse work is created for warehouse processes in manufacturing. You can set up the work policy by using a combination of **work order types**, an **inventory location**, and a **product**. For example, product L0101 is reported as finished to output location 001. The finished good is later consumed in another production order at output location 001. In this case, you can set up a work policy to prevent the work for finished goods put-away from being created when you report product L0101 as finished to output location 001. The work policy is an individual entity that can be described through the following information:
@@ -248,4 +251,6 @@ STEPS (25)
 </tr>
 </tbody>
 </table>
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension-based product configuration
 
+[!include[banner](../includes/banner.md)]
+
+
 Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.
 
 Dimension-based product configuration is one of the three built-in product configuration technologies. The two other technologies are predefined variants and constraint-based configuration. All three technologies use a product master as the starting point and allow the user to create many product variants for one product master.
@@ -76,4 +79,6 @@ The natural sequence for building a product model for a dimension-based product 
 ### Suggested use
 
 The dimension-based configuration technology is best used for products with limited variability and the combination of the standard product dimensions size, color, style, and configuration is unsuitable for identifying a specific product variant. An example could be bicycle with frame height, wheel size, brake types, and different gears.
+
+
 

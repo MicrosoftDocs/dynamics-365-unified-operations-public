@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Prerequisites for a standard cost conversion
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic discusses tasks to perform before you run a standard cost conversion. 
 
 Before you run a standard cost conversion, follow these steps:
@@ -51,6 +54,8 @@ Before you run a standard cost conversion, follow these steps:
 
         An active cost breakdown means that if you enable a manufactured item's cost, the result will be stored in the cost group segmentation in the item's cost record. If you put no value in the **Cost breakdown** field, the cost group segmentation will not be maintained for standard cost items. That is, a manufactured item's standard cost will be calculated and maintained as a single amount without cost group segmentation, and the cost contributions of manufactured components will be aggregated into the single amount.
     -   Use the **Variances to standard** field to select summarized or per cost group. The selection of per cost group enables you to identify purchase price variances and production variances by cost group. This also enables you to identify the four types of production variances (the lot size, quantity, price, and substitution variances). If you select summarized, you cannot identify variances by cost group, and you cannot identify the four types of production variances. You can only view a summarized production variance. The policy about variance to standard is independent of the cost breakdown policy. That is, you can select a cost breakdown policy of none, and select variances per cost group, so that production variances by cost group will still be captured.
+
+
 
 
 

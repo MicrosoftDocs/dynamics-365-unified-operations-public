@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Tax on natural resources report
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up and generate the Tax on natural resources (NR Tax) report.
 
 Latvian companies must periodically submit a **Tax on natural resources** (**NR tax**) report. This functionality applies only to legal entities in Latvia. Tax must also be calculated on imported or self-produced goods that are used internally. Finally, tax on natural resources must be calculated for packaging materials that are used to package goods that are sold within the reporting period.
@@ -151,5 +154,7 @@ Natural resources taxes are calculated during inventory journal transactions, an
 14. Select the person who is responsible for the report.
 15. Select the tax authority.
 16. Click **OK** to print the statement for tax on natural resources.
+
+
 
 

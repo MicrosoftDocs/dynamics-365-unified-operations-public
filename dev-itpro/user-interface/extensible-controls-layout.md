@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extensible control layout guidelines
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.
 
 Dos and don'ts for achieving the desired layout
@@ -108,4 +111,6 @@ A good way to tell is to inspect the element and look for the desired classes.
     -   For **$dyn.layout.Size.content**, there should be no extra classes, and the manual height/width should be specified inline on the element.
 
 If these classes don't appear as you expected, examine the usage of your binding handlers, and make sure that you've read through the list of dos and don'ts on this page.
+
+
 

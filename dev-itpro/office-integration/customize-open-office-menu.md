@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 4
 
 # Customize the Open in Microsoft Office menu
 
+[!include[banner](../includes/banner.md)]
+
+
 Most pages include an Open in Microsoft Office menu. This topics provides information about the Open in Office menu, and explains how customize it by adding, removing, and changing options.
 
 Overview
@@ -261,4 +264,6 @@ Sometimes, it's appropriate that the Action Pane of a page have a menu item but
 -   **Parameters:** The ID of the menu item
 
 Then, a mouse click of this menu item button is equivalent to a mouse click of the corresponding menu item on the **Open in Office** menu.
+
+
 

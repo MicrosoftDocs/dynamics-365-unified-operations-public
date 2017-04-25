@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Operations scheduling
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 
 You can schedule production at the operation level and the job level. Unlike job scheduling, operations scheduling doesn't explode the operations for the production route into jobs. If you want to include more detail in the scheduling, such as information about current capacity, you can run job scheduling after you run operations scheduling. You can also run job scheduling only. Job scheduling is typically used to schedule individual jobs on the shop floor for an immediate or short-term time frame.
@@ -80,4 +83,6 @@ See also
 --------
 
 [Operation scheduling options](operation-scheduling-options.md)
+
+
 

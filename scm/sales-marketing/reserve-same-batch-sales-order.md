@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reserve the same batch for a sales order
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to set up a product to allow reservation of inventory against a single batch of inventory.
 
 Same batch reservation lets you reserve inventory for a sales order line against a single batch of inventory. For example, a customer who orders wallpaper can request that the whole order be filled from the same batch or lot, to avoid inconsistencies among the rolls. To set up a product to use same batch reservation, the following settings must be active in the item model group, tracking dimension group, and storage dimension group that you assign to the product:
@@ -45,5 +48,7 @@ When you reserve inventory for a product on a sales order line that is set up fo
 -   The batch disposition code has **Block reservation** for sales flagged as **Blocked**.
 -   The batch has expired, based on the expiration date and any applicable customer sellable days. The item can still be considered for reservation if the item model group for the item is First Expiry First Out (FEFO) date–controlled, and if the best-before date is selected as the pick criterion.
 -   The batch doesn't have enough shelf-life days remaining, based on the expiration date and best-before date, plus any customer sellable days.
+
+
 
 

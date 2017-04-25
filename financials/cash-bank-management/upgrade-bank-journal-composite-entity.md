@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Update the bank journal composite entity
 
+[!include[banner](../includes/banner.md)]
+
+
 The following steps are needed in order to add the additional BankTransactionType field to the composite BankJournalEntity.
 
 Use the following steps to add the additional BankTransactionType field to the composite BankJournalEntity.
@@ -55,5 +58,7 @@ Use the following steps to add the additional BankTransactionType field to the 
             -   Verify that Bank Transaction type is mapped from Source to Staging.
 
 3.  Import the new statement.
+
+
 
 

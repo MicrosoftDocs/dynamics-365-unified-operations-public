@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master planning for site and warehouse coverage, warehouse not mandatory
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how an item that has site and warehouse as coverage dimensions is planned. The warehouse dimension is not mandatory.
 
 This master planning scenario involves the following conditions:
@@ -65,4 +68,6 @@ See also
 [Master planning - site coverage, warehouse not mandatory](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Master planning - How the BOM version is determined](master-plan-bom-version-determined.md)
+
+
 

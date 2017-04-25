@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Test forms with custom patterns
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic how to test forms using custom patterns.
 
 Introduction
@@ -108,4 +111,6 @@ Follow these steps. At each step, examine your form for layout issues. As part 
 ### Information/guidelines about layout
 
 For information about the layout properties, and for guidelines about scenarios that you should avoid, see [Page layout](page-layout.md).
+
+
 

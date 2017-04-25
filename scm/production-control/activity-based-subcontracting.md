@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Activity-based subcontracting
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.
 
 In Microsoft Dynamics 365 for Operations, there are two approaches for subcontracting: production orders and lean manufacturing. In the lean manufacturing approach, the subcontracting work is modeled as a service that is related to an activity of a production flow. A special type of cost group type that is named **Direct outsourcing** has been introduced, and the subcontracting services are no longer part of a bill of materials (BOM). The cost accounting of subcontracted work is fully integrated into the costing solution for lean manufacturing.
@@ -105,4 +108,6 @@ People often consider transport nonproductive and think that it adds no value. H
 Activity-based subcontracting in lean manufacturing lets you integrate carriers and transport vendors that move material and products between the locations of a production flow. By modeling a transfer activity, you can assign a carrier or vendor. The transfer activities/job is based on a service and purchase agreement, and you can create purchase orders and receipt advisories, based on the actual transfer jobs. This functionality is the same as the functionality for subcontracted process activities.  
 
 Therefore, Dynamics 365 for Operations now supports BOM calculation that includes transport services, the creation of related purchase orders, integrated receipt registration, and the integration of transport service costs into the production flow costing.
+
+
 

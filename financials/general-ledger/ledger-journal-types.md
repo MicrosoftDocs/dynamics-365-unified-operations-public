@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Ledger journal types
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the journal types that you can set up for financial journals. Use the Journal names page to set up journals that you can use throughout Microsoft Dynamics 365 for Operations.
 
 | Journal type                      | Purpose                                                                                                                                                                                                                                                                                                                                                     | Enter transactions on this page                                |
@@ -65,6 +68,8 @@ This article describes the journal types that you can set up for financial journ
 | Vendor invoice recording          | Post vendor invoices that are in a journal.                                                                                                                                                                                                                                                                                                                 | Invoice journal                                                |
 | Vendor redraw promissory note     | Redraw a promissory note that has previously been honored by your organization’s bank.                                                                                                                                                                                                                                                                      | Redraw promissory note journal                                 |
 | Vendor settle promissory note     | Create vendor settle promissory note transactions.                                                                                                                                                                                                                                                                                                          | Settle promissory note journal                                 |
+
+
 
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Electronic signature overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of electronic signatures and describes how they can be used in Microsoft Dynamics 365 for Operations.
 
 What is an electronic signature?
@@ -83,5 +86,7 @@ Occasionally, you might want a user to sign for another user's changes. For exam
 1.  On the **Options** page, on the **Accounts** tab, click **Designate approver**.
 2.  In the **Approver user ID** field, select the ID of the user who must sign for another user's changes.
 3.  In the **Sign for user ID** field, select the ID of the user whose changes must be signed for.
+
+
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # e-Commerce Platform SDK
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the e-Commerce Platform SDK.
 
 **Purpose:** The e-Commerce Platform SDK consist of the following components:
@@ -94,3 +97,4 @@ The E-Commerce platform uses OpenID as the mechanism for authentication. You can
 
 2.  The Retail Shared Parameters-&gt; Open ID Providers form can be used to register additional providers.
 3.  Run distribution schedule 1110.
+

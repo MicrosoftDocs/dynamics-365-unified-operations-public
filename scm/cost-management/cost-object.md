@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cost objects
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about costs objects, and explains how costs and quantities are accumulated. A cost object is an entity that costs and quantities are accumulated for. A cost object entity can be either a product or product variants, such as variants for style and color.  
 
 Cost objects
@@ -82,4 +85,6 @@ See also
 [What's new or changed in Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 [Cost entries](cost-entries.md)
+
+
 

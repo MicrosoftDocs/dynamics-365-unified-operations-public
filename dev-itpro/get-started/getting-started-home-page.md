@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Where to start
 
+[!include[banner](../includes/banner.md)]
+
+
 Start here to onboard quickly and learn the Microsoft Dynamics 365 for Operations UI.
 
 ## Onboarding
@@ -80,4 +83,6 @@ See also
 [New or updated Task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 
 [New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Register serial numbers in the sales process
 
+[!include[banner](../includes/banner.md)]
+
+
 This articles explains how you can register serial numbers on packing slips or invoices during the sales process. This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.
 
 Many companies just want to capture serial numbers for service and warranty purposes, and don't have to maintain serial numbers in inventory from receipt to issue. In these scenarios, Microsoft Dynamics 365 for Operations lets you register the serial numbers on the packing slips or invoices when products are sold. If products are later returned, you can trace each product to an invoice to determine whether you sold the product, and whether the service or warranty obligations are valid.
@@ -79,6 +82,8 @@ Yes, the retail point of sale (POS) will prompt the user to enter a serial numbe
 This functionality is available to all roles that can maintain sales packing slips and sales invoices. The following duties let workers correct serial numbers, and register blank entries for serial numbers that can't be read or scanned:
 -   Maintain serial number corrections
 -   Maintain registration of non-readable serial numbers
+
+
 
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Element usage
 
+[!include[banner](../includes/banner.md)]
+
+
 This article reviews the commands that have been added to the Microsoft Visual studio Tools to help you determine how elements are used in an application. 
 
 Because of the large number of elements in a typical application, commands have been added to the Microsoft Visual Studio Tools to make it easier to determine how an element is used.
@@ -52,4 +55,6 @@ See also
 [Element designers](element-designers.md)
 
 [Technical Concepts Guide](developer-home-page.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consolidated batch orders
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the concept of consolidated batch orders.
 
 A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item. The relation between the bulk item and the packed item is expressed in a bulk item conversion. This bulk item conversion is defined on the bulk item itself.  
@@ -44,5 +47,7 @@ A consolidated batch order can contain any combination of the following orders:
 -   Multiple bulk orders and multiple packed orders
 -   Multiple bulk orders and a single packed order
 -   Only packed orders
+
+
 
 

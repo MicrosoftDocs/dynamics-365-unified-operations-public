@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Straight line life remaining depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the Straight line life remaining method of depreciation.
 
 When you set up a fixed asset depreciation profile and select **Straight line life remaining** in the **Method** field on the **Depreciation profiles** page, the depreciation of fixed assets that are assigned to the depreciation profile is based on the remaining service life of the asset. The depreciation amount is generally the same in each depreciation period. To set up straight line life remaining depreciation, you also must select options in the **Depreciation year** field and the **Period frequency** field on the **Depreciation profiles** page. The options that are available in the **Period frequency** field vary, depending on the value that is selected in the **Depreciation year** field.
@@ -78,6 +81,8 @@ The depreciation amount is the same every year: (Acquisition cost – Salvage v
 | Year 3 | (7,000 – 1,000) ÷ 3 = 2,000                   | 5,000                                 |
 | Year 4 | (5,000 – 1,000) ÷ 2 = 2,000                   | 3,000                                 |
 | Year 5 | (3,000 – 1,000) ÷ 1 = 2,000                   | 1,000                                 |
+
+
 
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up garnishments and tax levies
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
 
 If you have questions about garnishments that aren't answered in this topic, or in [Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md) or [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md), contact your legal advisor. Here is a summary of each step in the process:
@@ -242,4 +245,6 @@ See also
 [Benefit setup tasks](noam-usa-benefit-set-up-tasks.md)
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
+
+
 

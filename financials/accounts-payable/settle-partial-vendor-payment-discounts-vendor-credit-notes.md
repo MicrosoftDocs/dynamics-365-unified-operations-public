@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial vendor payment that has discounts on vendor credit notes
 
+[!include[banner](../includes/banner.md)]
+
+
 This article walks you through a scenario where a credit memo is settled against an invoice.
 
 Fabrikam’s vendors give cash discounts on credit notes. Vendor 3050 lets Fabrikam take a cash discount of 1 percent if an invoice is paid in 14 days.
@@ -69,6 +72,8 @@ April can review the vendor transactions on the **Vendor transactions** page by 
 | Inv-10071  |                  | 7/2/2015  | CR10071 | 200.00                               |                                       | 0.00    | USD      |
 | DISC-10071 |  Cash discount   | 7/2/2015  |         | 2.00                                 |                                       | 0.00    | USD      |
 | DISC-10071 |  Cash discount   | 7/2/2015  |         |                                      | 2.00                                  | 0.00    | USD      |
+
+
 
 
 

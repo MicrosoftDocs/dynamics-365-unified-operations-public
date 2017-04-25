@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Data entity wizard rules
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
 
 Natural key expansion of surrogate foreign keys
@@ -73,4 +76,6 @@ The default value of data entity fields is **auto**. This value is used unless 
 -   If the field’s **Is mandatory** property and the related field’s **Is mandatory** are both **false**, both fields are explicitly set to **false**.
 
 If the field’s **Is mandatory** property and the related field’s **Is mandatory** property differ in value, both fields remain unchanged. In this case, the default value of **auto** is used.
+
+
 

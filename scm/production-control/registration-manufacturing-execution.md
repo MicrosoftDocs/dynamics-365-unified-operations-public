@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Registration for manufacturing execution
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes key concepts and terms that you need to understand to configure and use manufacturing execution. 
 
 Manufacturing execution is intended to be used primarily by manufacturing companies. Workers can register time and item consumption on production jobs by using the **Job registration** page. All registrations are approved and are later transferred to the relevant modules. Continuous approval and transfer of registrations lets managers easily track actual costs on production orders.
@@ -60,5 +63,7 @@ Workers can make various types of registrations in manufacturing execution for w
 -   **Register breaks** (available with time and attendance) – During the work day, workers can register that they are leaving their workstation to take a break. Several break types can be set up. When a worker returns and logs on again, the system registers that the worker is back, and the break registration stops.
 -   **Register indirect activities** (available with time and attendance) – Indirect activities are nonproductive activities that workers might engage in during a workday, such as a department meeting, a team meeting, or a maintenance job that is performed on the shop floor. Workers can make registrations on the indirect activities that are set up.
 -   **Register overtime** (available with time and attendance) – Workers who have been asked to work longer hours can select whether the extra hours should be registered as flextime or overtime.
+
+
 
 

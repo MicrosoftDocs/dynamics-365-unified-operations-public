@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Check box support in tree controls
 
+[!include[banner](../includes/banner.md)]
+
+
 This article is intended as a primer for using check box controls in the tree control. It's not a general “how to” for using tree controls.
 
 Microsoft Dynamics AX 2012 includes several examples of tree controls that were enhanced so that they both show data in a tree hierarchy and let the user select one or more nodes by using check boxes. In Dynamics AX 2012, the tree control had no built-in support for check box controls. Instead, an image of a check box was added for each node in the tree control. The image state for each node was then toggled as the user clicked the check box. 
@@ -154,4 +157,6 @@ To react to or track the checked state of a node (**idx** is the node index), us
     {
         super(_Idx, _newState);
     }
+
+
 

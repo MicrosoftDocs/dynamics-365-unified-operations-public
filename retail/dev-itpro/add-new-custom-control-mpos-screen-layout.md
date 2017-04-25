@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add a custom control to an MPOS screen layout
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to add a new custom control to a Modern POS (MPOS) screen layout.
 
 Scenario
@@ -137,5 +140,7 @@ You want to provide the cashier and manager more information about sales. For ex
 2.  On the welcome screen, click the **Current transaction** button.
 3.  Add any item to the transaction, and verify that the total quantity is shown correctly in the custom control.
 4.  Void any line in the transaction, and verify that the voided line count is shown correctly in the custom control.
+
+
 
 

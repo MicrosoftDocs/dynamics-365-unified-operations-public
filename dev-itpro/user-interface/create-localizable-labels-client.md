@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create localizable labels
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to create localizable labels for client components and HTML/JavaScript controls.
 
 This article details the process for creating **localizable** labels for client components and HTML/JavaScript controls. This process uses the existing localization tools and process for labels to bring localization support to client components and HMTL/JavaScript controls. The following process relies on the label resource controller that can serialize label files into their JavaScript equivalents so that the labels can be used by the client components and HTML/JavaScript controls. The label resource controller is deployed automatically. It is an MVC service that is located at the /Resources/Labels endpoint.
@@ -102,4 +105,6 @@ If the browser doesn't find the file, you might have mistyped the name of the la
 ### Microsoft Visual Studio form previewer
 
 The form previewer isn't currently configured to load labels via the label resource controller. The form previewer will load only labels that are defined directly in the .js file for the code behind (located at /Resources/Scripts). Until the form previewer is updated so that it can load .js files from the label resource controller, make sure that you also define the labels in the .js file for the code behind of the control. The dependency on these labels will be removed in a future update.
+
+
 

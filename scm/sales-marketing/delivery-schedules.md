@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Delivery schedules
 
+[!include[banner](../includes/banner.md)]
+
+
 Delivery schedules allow you to track order line quantity when you are using multiple deliveries for a single sales order, sales quotation, or purchase order.
 
 Use a delivery schedule when the total quantity on an order or quotation line must be delivered in multiple shipments. Individual shipments are represented by delivery lines. Two or more delivery lines make up one delivery schedule. The delivery lines can have different delivery dates, quantities, modes of delivery, and storage dimensions, such as site and warehouse.  
@@ -57,4 +60,6 @@ Document printouts of orders and quotations that have a delivery schedule show 
 -   Browse list pages and reports
 
 When you confirm sales quotations, the resulting sales orders show the whole delivery schedule, even the order lines that have multiple deliveries. In addition, the whole delivery schedule is shown on all the major pages, such as sales orders, sales quotations, and purchase orders.
+
+
 

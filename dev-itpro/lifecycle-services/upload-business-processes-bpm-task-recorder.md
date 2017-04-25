@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Upload custom business processes to Business process modeler
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Upload custom business processes to Business process modeler
 
+[!include[banner](../includes/banner.md)]
+
+
 In Microsoft Dynamics Lifecycle Services, you can record information about custom business processes by using an updated version of Task recorder. You can then upload the files that you record to Business process modeler.
 
 This topic explains where to find the updated version of Task recorder and how to upload the custom business process files that you record. The updated version of Task recorder is available as a hotfix. You can download the hotfix from the following sites:
@@ -58,4 +61,6 @@ See also
 [Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
 
 [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md)
+
+
 

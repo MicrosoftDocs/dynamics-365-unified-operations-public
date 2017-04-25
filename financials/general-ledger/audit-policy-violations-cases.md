@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Audit policy violations and cases
 
+[!include[banner](../includes/banner.md)]
+
+
 The article explains how audit cases are generated from violations of audit policy rules. It also includes information about the various ways that audit policies use the document selection date range.
 
 How audit cases are generated
@@ -61,4 +64,6 @@ Here are some other ways that an audit policy uses the document selection date
 
 
 For more information, see [Audit policy rules](audit-policy-rules.md)
+
+
 

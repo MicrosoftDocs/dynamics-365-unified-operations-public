@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Performance timer
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow. 
 
 To open the Performance timer, open your webpage with the added parameter debug=develop: https://*yoursite*.cloud.test.dynamics.com/en/?cmp=USMF&debug=develop **Note: **When you run in debug mode you will notice slower performance. You can quickly get an overview of most performance issues by pressing F12 and working with the debugging tools that are available in your browser. The timer will show up here. 
@@ -54,4 +57,6 @@ For more information, click a link. In the next screen, you can see how many SQL
 [![3\_Timer](./media/3_timer.png)](./media/3_timer.png) 
 
 This information can help you to understand what to trace and where to start troubleshooting. In addition to this topic, you can watch this video for more information: [PERF The Performance Timer and Other Tools](https://mix.office.com/watch/ij5cqidra5q3)
+
+
 

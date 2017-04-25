@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Data entities - Workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides a list of the data entities that are available for the Workflow functionality in Microsoft Dynamics 365 for Operations.
 
 Available data entities
@@ -66,4 +69,6 @@ See also
 [Data entities and packages framework](data-entities-data-packages.md)
 
 [Data entities](data-entities.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up vendor accounts
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the types of information that you must specify when you create a new vendor account.
 
 When you create a vendor account, you enter information about the vendor. This information is used to automatically enter data in documents and to track activity that involves the vendor. For example, you can configure the following information for a vendor:
@@ -106,4 +109,6 @@ If you must make payments to a vendor bank account, you can enter information ab
 You can specify the default accounts that automatically appear in vendor invoice journals for the specified vendor. This functionality can be useful if you typically pay for the same types of items or services from the same vendors over time. When you specify a default account, you can quickly and efficiently enter journal entries in the invoice journal. The default accounts that you specify aren't used for purchase orders, or for vendor invoices that are entered on the **Vendor invoice** page.  
 
 You select default accounts on the **Default account setup** page, which you can open from the **Invoice** tab on the vendor record. The accounts that you select here appear in the filtered list of accounts for the vendor account when you enter a journal entry. You can set one of the accounts as a default account.
+
+
 

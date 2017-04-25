@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Close the general ledger at period end
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the tasks that are typically completed when performing a period closing for General ledger. 
 
 In General ledger, you can complete closing procedures for a period or a year. Closing processes prepare the system for a new period. To prepare the system for a new year, you must run the year end close process. Each organization has different processes and steps that it performs for the end of a period. Here are some optional steps for period ends:
@@ -48,6 +51,8 @@ In General ledger, you can complete closing procedures for a period or a year. C
 -   Set ledger periods to **On hold**, so that no further posting occurs. You can also restrict a period to a specific user group while period-end activities are occurring, for better control. It's not a good idea to set periods to **Permanently closed**, because you can't reopen a period that has been closed.
 
 The Financial period close workspace can be used to organize and track the tasks required for various period end processes. Refer to the [Financial period close workspace](financial-period-close-workspace.md) and [Year end close](Year-end-close.md) topics for more information. 
+
+
 
 
 

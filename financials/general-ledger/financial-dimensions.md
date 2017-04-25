@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Financial dimensions
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains the different types of financial dimensions and how they are set up.
 
 Use the Financial dimensions page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions, custom dimensions and entity backed dimensions. Custom dimensions are shared across legal entities and the values are entered and maintained by the user. Entity backed dimensions are dimensions whose values are defined elsewhere in the system, such as Customers or Stores. Some entity backed dimensions are shared across legal entities, and come entity backed dimensions are company specific. 
@@ -75,6 +78,8 @@ The Text translation page allows you to enter text to be displayed in different 
 **Legal entity overrides** 
 
 Not all dimensions are valid for all legal entities and some may only be relevant for a specific time period. In this scenario the Legal entity overrides section can be used to identify which companies the dimension should be suspended for, who the owner is and the time period the dimension is active.
+
+
 
 
 

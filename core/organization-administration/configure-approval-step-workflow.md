@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure an approval step in a workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to configure the properties of an approval step.
 
 To configure an approval step in the workflow editor, right-click the approval step, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties of the approval step.
@@ -253,5 +256,7 @@ If a user doesn't take action on a document in the allotted time, the document i
 
 5.  Repeat steps 3 through 4 for each user that should be added to the escalation path. You can change the order of the users.
 6.  If the users in the escalation path don't respond in the allotted time, the system automatically take action on the document. To specify the action that the system takes, select the **Action** row, and then, on the **End action** tab, select an action.
+
+
 
 

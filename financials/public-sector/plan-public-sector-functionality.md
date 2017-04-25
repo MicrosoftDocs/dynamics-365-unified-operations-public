@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan for public sector functionality
 
+[!include[banner](../includes/banner.md)]
+
+
 This article suggests the first steps to setting up Public sector functionality in Microsoft Dynamics 365 for Operations.
 
 What should I do first?
@@ -75,4 +78,6 @@ See also
 --------
 
 [Public sector functionality](public-sector-functionality.md)
+
+
 

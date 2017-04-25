@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Post with derived books
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how to use derived books.
 
 When you post transactions for a book that contains derived books, the derived book transactions are posted automatically in journals, purchase orders, or free text invoices. However, if you prepare the primary book transactions in the Fixed assets journal, you can view and modify the amounts of the derived transactions before you post them.
@@ -59,4 +62,6 @@ When an acquisition is posted for a fixed asset with book VM 1, the acquisition 
 > If you do not use derived books, you must post the acquisition of the fixed asset both for book VM 1 and book VM 2.
 
 For more information, see [Derived books](derived-books.md)
+
+
 

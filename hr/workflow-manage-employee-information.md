@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Use workflows to manage employee information
 
+[!include[banner](includes/banner.md)]
+
+
 This topic explains how you can use the workflow capability for Human resources to manage employee information. For example, you can associate a workflow with a position and configure an approval workflow that is started when employees change their record.
 
 The workflow capability for Human resources provides numerous workflows for managing human resources activities. Additionally, numerous options are available so that you can modify specific workflows and associate them with a reporting hierarchy. Workflows are available to help manage changes to several standard types of employee information. You can associate a workflow with a position. Then, if employees change their employee record, a workflow is started that requires approval before the new information is saved. Workflows are predefined for the following types of information to help you efficiently manage changes and keep your employees’ data accurate:
@@ -72,5 +75,7 @@ To configure a basic workflow that is started when employees request changes to 
 10. Go to **Human Resources** &gt; **Positions** &gt; **Position hierarchy types**.
 11. Select **Matrix**.
 12. Add the **Worker identification number** workflow to the list.
+
+
 
 

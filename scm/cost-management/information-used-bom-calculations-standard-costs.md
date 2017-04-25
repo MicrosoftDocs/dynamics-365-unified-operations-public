@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # BOM calculations with standard costs
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 The purchased item information that is used in a standard cost BOM calculation includes the following:
@@ -81,6 +84,8 @@ The costing version information that is used in a standard cost BOM calculation 
 -   Content of the costing version must include costs − The content must include costs. It can optionally include sales prices in order to calculate suggested sales prices for manufactured items.
 
 Several sources of information can be specified when initiating a BOM calculation. This includes the site, the calculation date, and the costing version.
+
+
 
 
 

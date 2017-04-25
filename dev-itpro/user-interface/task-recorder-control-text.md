@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Control the text that Task Recorder generates for a control
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how Task recorder determines what instruction label to generate for controls. It then explains how you can make sure that these labels are meaningful for the user.
 
 Every control must have useful and meaningful instruction labels, so that the task guide, Microsoft Word document, and Help content meet Content Publishing standards for readability. We must first define two terms:
@@ -98,4 +101,6 @@ The following code example shows how property change events are logged to Task r
                 }
             }
         }
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # 175 percent reducing balance depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the 175 percent reducing balance method of depreciation.
 
 When you set up a fixed asset depreciation profile and select **175% reducing balance** in the **Method** field on the **Depreciation profiles** page, fixed assets that are assigned the depreciation profile are depreciated by the same percentage in each depreciation period. 
@@ -87,4 +90,6 @@ The 175% reducing balance depreciation method divides 175 percent by the servic
 
 > [!NOTE] 
 > Typically, when the amount that is calculated by using the 175% reducing balance depreciation method becomes less than the amount that would be calculated by using the straight line method, there is a conversion to the straight line method for the remaining life.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Commerce runtime extensibility and triggers
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains trigger support for the Microsoft Dynamics AX commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 
 CRT trigger overview
@@ -77,4 +80,6 @@ To implement a trigger, you must complete these tasks, as shown in the code exam
 
 ## Trigger CommerceRunTime.config updates
 When you extend the CRT, make sure that you always write your extension in your own assembly. After you write the trigger extension in your assembly, you must add an entry in the **composition** section of the .config file for the CRT, so that the trigger is loaded at run time. The following example shows a .config file that includes an entry for a trigger implementation in the **CRTExtensionTrigger** assembly. [![CRTExtensionTrigger](./media/crtextensiontrigger-1024x489.png)](./media/crtextensiontrigger.png)
+
+
 

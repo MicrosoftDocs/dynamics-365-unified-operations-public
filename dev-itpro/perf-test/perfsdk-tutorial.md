@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # PerfSDK and multiuser testing with Visual Studio Online
 
+[!include[banner](../includes/banner.md)]
+
+
 Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
 
 *Time:* 30 minutes In this lab, you will take a tour of Performance SDK and multi user testing with Visual Studio Online. You will see how to convert a scenario recorded with Task Recorder and convert it to a single user test and then a multi user test. **Note:** This lab requires that you access the environment as an administrator. For more information, refer to the document named [Access Microsoft Dynamics 365 for Operations Instances](..\dev-tools\access-instances.md). **Prerequisites**
@@ -186,6 +189,8 @@ If you see an error message like this: *System.TypeInitializationException: Syst
     { 
         Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
     }
+
+
 
 
 

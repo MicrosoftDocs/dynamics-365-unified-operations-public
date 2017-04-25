@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up retail products
 
+[!include[banner](includes/banner.md)]
+
+
 This article describes how to set up retail products in Microsoft Dynamics 365 for Operations - Retail.
 
 Before you can offer products for resale in your retail channels, you must create and configure the products in Dynamics 365 for Operations AX - Retail. Retail uses the product features in Dynamics 365 for Operations to create organization-wide products in the product master. You can create the products, define the product properties and attributes, and assign the products to retail category hierarchies. To make the products available to your retail channels and add them to an active assortment, you must release the products to the legal entities where they are available. To set up the products that you sell by using retail channels, complete the following tasks.
@@ -42,5 +45,7 @@ Before you can offer products for resale in your retail channels, you must creat
 4.  Add products to assortments. An assortment represents a collection of products that you offer in your retail channels. You can define one or more assortments, and each product can be assigned to one or more assortments. To assign products to retail channels, you assign the assortments to those retail channels. When you create an assortment, you can add products that haven't yet been released to a legal entity. However, you must release the products to a legal entity before those products can be made available to the retail channels.
 5.  Add products to navigation hierarchies. Before products can be browsed online or in point of sale (POS), they must be categorized in a Retail navigation hierarchy.
 6.  Add products to catalogs. Although this step is optional for POS, online stores require that products be included in at least one catalog.
+
+
 
 

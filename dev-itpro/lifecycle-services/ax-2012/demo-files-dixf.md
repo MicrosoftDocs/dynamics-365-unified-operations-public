@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Demo files for the Data import/export framework
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 The demo files can be used together with the Contoso demo data for Microsoft Dynamics AX 2012. Specifically, the files are intended to be used together with the CEU Contoso Entertainment Systems (West) company.
@@ -1619,6 +1622,8 @@ The following files are available in the versions of Data Import/Export Framewor
 | ProdParametersEntity              | WorkTimeLineEntity                |
 | ProductEntity                     | WorkTimeTableEntity               |
 | ProductMasterEntity               | WrkCtrParametersEntity            |
+
+
 
 
 

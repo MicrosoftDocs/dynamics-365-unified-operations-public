@@ -32,6 +32,9 @@ ms.search.validFrom: 2016-11-30
 
 # Cost controlling mobile workspace
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the Cost controlling mobile workspace, which is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace lets cost center managers view information about cost center performance anytime and anywhere. 
 
 Overview of the Cost controlling mobile workspace
@@ -142,5 +145,7 @@ Download and install the Dynamics 365 for Operations mobile app from your mobil
 10. Select the **Details for current period** link.
 11. View the performance of individual cost elements.
 12. You can also search for specific cost elements.
+
+
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version:
 
 # Set up Business process modeler libraries for an LCS solution
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to create and work with Business process modeler (BPM) libraries.
 
 Create a business process library
@@ -125,4 +128,6 @@ See also
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up bills of exchange
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the steps for setting up bills of exchange.
 
 A bill of exchange is a written or electronic order from a customer that specifies that another party, usually a bank, should pay a stated amount to the company. When you use a bill of exchange as payment for a sales order invoice or free text invoice, you credit the customer account. That credit is secured by the bill of exchange until the customer pays the bill of exchange to the bank. Typically, you will settle the invoice with the bill of exchange on the due date. When you receive notification from your bank that the bill of exchange has been honored, you can close the bill of exchange. You can draw a bill of exchange through your bank at either of the following times:
@@ -81,6 +84,8 @@ Set up customers for bills of exchange
 --------------------------------------
 
 On the **Customers** page, for each customer who has agreed to pay by using a bill of exchange, you can set up a default method of payment for bills of exchange on the **Payment defaults** tab.
+
+
 
 
 

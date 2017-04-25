@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory close
 
+[!include[banner](../includes/banner.md)]
+
+
 As part of the process to settle issue transactions with receipt transactions, you can also choose to have the general ledger updated to reflect the adjustments that have been made.
 
 The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group. As part of the settlement process, you can specify that the general ledger should be updated, so that it reflects the adjustments that have been made. However, until inventory close or recalculation has been run, issue transactions are posted at the calculated running average cost price. 
@@ -88,4 +91,6 @@ In some circumstances, you might not be able to do anything about the warnings. 
 Occasionally, you might have to reverse a completed inventory close to return settlements to the state that they had before adjustments were made. When you reverse a completed inventory close, inventory is reopened to enable posting in the period that the inventory close covers. Related changes might also be made in the general ledger. After you've finished making adjustments, you can run inventory close again for the period that you're working with. 
 
 **Note:** Only the last inventory period that was closed can be reopened. To reverse an earlier inventory close, you must reverse each subsequent inventory close one at a time, starting with the most recent close.
+
+
 

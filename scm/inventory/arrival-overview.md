@@ -32,6 +32,9 @@ ms.search.validFrom: 2016-02-28
 
 # Arrival overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
 
 The **Arrival overview** page provides an overview of all expected incoming items. It also shows arrivals that can be initialized based on the overview. This topic focuses on the receiving process.
@@ -123,4 +126,6 @@ When all goods have been registered, the warehouse manager or purchasing manager
 
 ## Summary
 The **Arrival overview** page can help the warehouse manager and warehouse workers achieve an overview of expected work that must be done as part of an inbound process. The page can also be used to start the item arrival process, to help guarantee that items are tracked at the first entry into the warehouse.
+
+
 

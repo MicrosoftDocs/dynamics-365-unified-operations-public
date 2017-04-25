@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # C Classes
 
+[!include[banner](../includes/banner.md)]
+
+
 System API classes that start with the letter C.
 
 Class ClassNode
@@ -5112,4 +5115,6 @@ cueReferenceName
 The name to use to identify this form, report, table, query, or other application object.
 
  
+
+
 

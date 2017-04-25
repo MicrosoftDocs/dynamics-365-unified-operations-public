@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # New or updated task guides (May 2016)
 
+[!include[banner](../includes/banner.md)]
+
+
 This article lists the new or updated Task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX. No new Getting Started Library was released. 
 
 []()Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX
@@ -199,4 +202,6 @@ See also
 [New or updated Task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
+
+
 

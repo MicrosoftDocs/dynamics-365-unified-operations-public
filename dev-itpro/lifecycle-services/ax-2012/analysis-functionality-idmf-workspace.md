@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Analysis in the Intelligent Data Management Framework (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 This topic describes the functionality available from the Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) Analysis menu.
 
 The **Analysis** menu lets you analyze the production and archive databases, and application health statistics, from the production replica database. IDMF automatically starts in the **Analysis dashboard** view for the production database.
@@ -370,6 +373,8 @@ The **Select a snapshot** **time** list lets you select query plan statistics, q
 
 ## Export to Excel
 This command lets you export selected rows from the data grid in all workspaces where this command is available.
+
+
 
 
 

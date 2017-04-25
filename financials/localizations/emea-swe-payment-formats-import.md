@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Import payment formats for Sweden
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the BankGirot MAX, BankGirot OCR import, and BankGirot return formats for Sweden.
 
 BankGirot MAX, BankGirot OCR
@@ -58,4 +61,6 @@ Bankgirot Autogiro returns format for the direct debit payment format of the sam
   >  Before you can complete this step, you must have already imported the configurations from Lifecycle Services (LCS) and set up the methods of payment. For more information, see [File formats for method of payments](emea-select-file-formats-for-the-method-of-payments.md).
 
 After you import the return file, the payments should be updated to the status **Approved**.
+
+
 

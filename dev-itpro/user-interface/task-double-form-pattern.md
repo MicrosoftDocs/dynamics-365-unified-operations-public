@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Task Double form pattern
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the Task Double form pattern. This pattern was previously used to present a parent and child entity in the same form.
 
 Usage
@@ -133,4 +136,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![AX 2012 visual example](./media/taskdouble3.png)](./media/taskdouble3.png)
+
+
 

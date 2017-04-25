@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Consignment
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to use the inbound consignment inventory processes.
 
 Consignment inventory is inventory that’s owned by a vendor, but stored at your site. When you’re ready to consume or use the inventory, you take over the ownership of the inventory. This topic includes information about how to physically receive vendor-owned inventory on-hand without creating general ledger transactions, how to start a production process where the vendor-owned inventory can be physically reserved. and how to change the ownership of the raw material in order to be able to process the consumption as part of the production order processing. There’s also some information about how vendors can monitor consumption of their inventory using the vendor collaboration interface. For information about how to enable and configure inbound consignment processes, see [Setting up consignment](set-up-consignment.md).
@@ -82,5 +85,7 @@ The vendor collaboration interface has three pages related to the inbound consig
 -   **Purchase orders** **consuming consignment inventory** - Shows detailed purchase order information related to the ownership change from the consignment process.
 -   **Products received from consignment inventory** - Shows information about the items and quantities that have product receipts updated during the ownership change process.
 -   **On-hand consignment inventory** - Shows information about the consignment items that they are expected to deliver, and the items that are already physically available at the customer site.
+
+
 
 

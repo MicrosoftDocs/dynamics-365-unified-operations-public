@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cost entries
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about cost entries and when they are created. A cost entry is a record that registers the quantity and cost of a given event.
 
 Cost entries are aggregations of inventory transactions that are recorded on active financial inventory dimensions.
@@ -71,4 +74,6 @@ See also
 --------
 
 [Cost objects](cost-object.md)
+
+
 

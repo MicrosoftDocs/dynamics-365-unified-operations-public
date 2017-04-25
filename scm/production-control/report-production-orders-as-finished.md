@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Report production orders as finished
 
+[!include[banner](../includes/banner.md)]
+
+
 Report as finished is a production stage. At this stage, a finished product is reported and moved from the production order to the inventory.
 
 When a quantity of the finished goods is reported as finished on a production order it is updated as on-hand in the inventory. Partial quantities of the originally planned order quantity can be reported as finished. It is also possible to report error quantities with an associated error reason when reporting quantities as finished. When the production order reach the stage Reported as finished it indicates that no more quantity is going to be reported at the production  order.
@@ -47,4 +50,6 @@ The quantity is reported to the output location. Warehouse work is then gener
 
 ## Set a production order to Reporting as finished
 You can set a production order to **Report as finished** through the standard production order update function, or through the route and job card journals, or through the journal **Report as finished**. You can also update the stage to **Report as finished** through the job card terminal and job card device pages, when you report on the last job of the production order. Finally, you can enable the **Report as finished** option as a process for the handheld warehouse device solution.  
+
+
 

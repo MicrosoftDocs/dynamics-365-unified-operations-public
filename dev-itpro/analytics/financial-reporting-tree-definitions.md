@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Reporting tree definitions in financial reports
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about reporting tree definitions. A reporting tree definition is a report component, or building block, that helps define the structure and hierarchy of your organization.
 
 Financial reporting supports flexible reporting, so that you can easily make changes as your business structure changes. Reports are built from various components, or building blocks. One of these building blocks is a reporting tree definition. A reporting tree definition helps define the structure and hierarchy of your organization. It's a cross-dimensional hierarchical structure that is based on the dimensional relationships in your financial data. It provides information at the reporting unit level and at a summary level for all units in the tree. Reporting tree definitions can be combined with column definitions and report definitions, to create a building block group that can be used by multiple companies. A reporting unit is used for each box in an organizational chart. A reporting unit can be an individual department from the financial data, or it can be a higher-level summary unit that combines information from other reporting units. For a report definition that includes a reporting tree, one report is generated for each reporting unit and for the summary level. All these reports use the row and column definitions that are specified in the report definition, unless the report definition specifies that the reporting tree from the row definition should be used. Row and column definitions are important components in the design and functionality of financial reports. Reporting trees increase the power of the components and support flexible reporting as the business structure changes. Financial reports that aren't based on a reporting tree use only some of the capabilities of financial reporting. You can use multiple reporting tree definitions together with the same row and column definitions to view your organization’s data in various ways.
@@ -210,4 +213,6 @@ The following examples show possible information that is used in a reporting tre
 # See also
 
 [Financial reporting](financial-reporting-intro.md)
+
+
 

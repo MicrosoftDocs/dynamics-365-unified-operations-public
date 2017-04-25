@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Preliminary budgets and apportionments in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic covers creating a preliminary budget, and setting up budgeting and budget control for apportionments and a preliminary budget. 
 
 The following sections in this topic describe the budgeting features that are available for the public sector.  Before you read this topic, you should also read [Budgeting in the public sector](budgeting-public-sector.md).
@@ -126,4 +129,6 @@ To view additional information about preliminary budgets, select the following i
 When you create an original budget entry and use the budget model and dimension values that contain preliminary budget amounts, the preliminary budget amounts can be reversed. For example, you could enter a preliminary budget amount of $2,500 in ledger account 50000. Later, if you enter an original budget amount of $10,000 in ledger account 50000, the preliminary budget amount of $2,500 would be reversed. The ledger account 50000 would have a budget amount of $10,000. 
 
 You can view the budget register entries for the original budget by selecting the budget account entry on the **Budget account entries** FastTab on the **Budget resister entry** page. On the menu bar, click **Related information**, and then click **Budget register entries**.
+
+
 

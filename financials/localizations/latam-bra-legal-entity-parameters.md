@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Parameters for legal entities in Brazil
 
+[!include[banner](../includes/banner.md)]
+
+
 To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This topic explains how to set the parameters to specify this information.
 
 Brazilian legal entity overview
@@ -319,6 +322,8 @@ In Brazil, you must specify the accountant details for tax reporting in the mont
 | **CRC**                 | The registration number of the accountant in the regional accounting council, or Conselho Regional de Contabilidade (CRC). |
 | **CRC issuer state**    | The state where the CRC document was issued.                                                                               |
 | **CRC expiration date** | The expiration date of the CRC document.                                                                                   |
+
+
 
 
 

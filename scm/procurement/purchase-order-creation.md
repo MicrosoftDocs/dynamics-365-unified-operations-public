@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create purchase orders
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the process and options when you manually create a purchase order.
 
 When you create a purchase order (PO), general information about the whole order is specified in the PO header, and you then add one or more PO lines. This article describes some of the most frequently used options that are available.  
@@ -96,4 +99,6 @@ See also
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
 [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 

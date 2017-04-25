@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Application stack and server architecture
 
+[!include[banner](../includes/banner.md)]
+
+
 The application stack is divided into three separate models -  Application Platform, Application Foundation, and Application Suite. 
 
 Overview
@@ -74,4 +77,6 @@ Dynamics 365 for Operations uses many features of the Azure platform, such as Mi
 The architecture of the development environment resembles the architecture of the cloud instance. It also includes the software development kit (SDK), which consists of the Visual Studio development tools and other components. Source control through Team Foundation Server or Visual Studio Online enables multiple-developer scenarios, where each developer uses a separate development environment. Deployment packages can be compiled and generated on a development environment and deployed to cloud instances by using LCS. The following diagram shows how the key components interact in a development environment.
 
 [![CloudEnvironmentTechConcepts](./media/cloudenvironmenttechconcepts.png)](./media/cloudenvironmenttechconcepts.png)
+
+
 

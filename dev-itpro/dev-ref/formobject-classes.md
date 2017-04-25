@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # F Classes - FormObject to FormRealControl
 
+[!include[banner](../includes/banner.md)]
+
+
 API reference for classes from FormObject to FormRealControl.
 
 Class FormObject
@@ -8438,6 +8441,8 @@ x
 <!-- -->
 
 y  
+
+
 
 
 

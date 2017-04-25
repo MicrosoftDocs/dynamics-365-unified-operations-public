@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Inventory locations
 
+[!include[banner](../includes/banner.md)]
+
+
 Inventory locations are used with basic warehousing (WMS I) to determine where items are stored and where items are picked from in a WMS I warehouse.
 
 This topic applies to features in the Inventory management module. It does not apply to features in the Warehouse management module.
@@ -69,4 +72,6 @@ See also
 --------
 
 [Create a new warehouse layout (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+
+
 

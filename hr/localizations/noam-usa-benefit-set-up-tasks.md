@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up benefits
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
 
 Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits. Garnishments and tax levies are also set up as benefits, but the steps for setting them up differ. For more information, see [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md). After you set up benefit elements by using the **Benefit elements** page, you must create the benefits so that they can be assigned to workers. When you create a benefit, you link an option to a benefit plan, designate a benefit period, and assign eligibility rules to the benefit. 
@@ -357,4 +360,6 @@ See also
 [Payroll calculation frequency tasks](noam-usa-payroll-calculation-frequencies-tasks.md)
 
 [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+
+
 

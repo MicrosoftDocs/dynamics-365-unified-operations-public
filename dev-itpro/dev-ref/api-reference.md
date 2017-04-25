@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # API, class, and table reference
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes where to find API documentation in Visual Studio and on the Microsoft docs site.
 
 Application classes and tables
@@ -113,6 +116,8 @@ Documentation for the classes and functions that are listed under **System Docum
 -   [V classes](v-classes.md)
 -   [W classes](w-classes.md)
 -   [X classes](x-classes.md)
+
+
 
 
 

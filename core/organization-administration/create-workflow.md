@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 2
 
 # Create a workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 This topics explains how to create a workflow.
 
 Open the workflow editor
@@ -81,6 +84,8 @@ When you're ready to save and activate the workflow, follow these steps.
 3.  If all errors and warnings have been resolved, the **Activate workflow** page appears. Select one of the following options:
     -   To activate this version of the workflow, click **Activate the new version**. When a workflow is active, users can submit documents to it for processing.
     -   If you don't want to activate this version, click **Do not activate the new version**. You can activate the workflow later.
+
+
 
 
 

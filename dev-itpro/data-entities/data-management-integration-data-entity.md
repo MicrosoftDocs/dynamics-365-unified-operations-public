@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Data management and integration using data entities
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides a brief overview of the mechanics of synchronous and asynchronous integration.
 
 Synchronous services
@@ -47,4 +50,6 @@ Integration through the data management platform provides more capabilities and
 -   **Target **– This is the data entity where data will be imported.
 
 The following diagram shows an inbound flow. [![Inbound flow](./media/over6-1024x464.png)](./media/over6.png)
+
+
 

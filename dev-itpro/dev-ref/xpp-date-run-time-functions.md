@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ date run-time functions
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the date run-time functions.
 
 dayName
@@ -603,4 +606,6 @@ The year of the specified date.
 ### Remarks
 
     year(0221998); //Returns the value 1998.
+
+
 
