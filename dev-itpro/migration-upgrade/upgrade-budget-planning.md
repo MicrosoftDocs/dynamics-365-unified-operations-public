@@ -49,7 +49,7 @@ Many significant changes have been made in Budgeting for Dynamics 365 for Operat
 -   Matrix fields for worksheet templates
 -   Budget plan Microsoft Excel template wizard
 
-Some new concepts can�t be directly upgraded from the previous functionality. Therefore, you must complete some reconfiguration to address these new concepts. The following sections describe the concepts that have replaced the items in the preceding list.
+Some new concepts can't be directly upgraded from the previous functionality. Therefore, you must complete some reconfiguration to address these new concepts. The following sections describe the concepts that have replaced the items in the preceding list.
 
 ### Columns
 
@@ -57,7 +57,7 @@ Columns are a new concept that replace parts of the Excel template and also matr
 
 ### Layouts
 
-Layouts are a new concept that replace the Excel template. Layouts contain the columns that define which budget or actuals data and periods should be shown. Layouts are also shared between the client and the Excel add-in. Therefore, the user experience when you enter or view data in the Dynamics 365 for Operations client is better than the user experience in AX 2012. To enter data in the Dynamics 365 for Operations client, you�re no longer limited to viewing and entering a single scenario in a transaction view. Instead, a comparison view lets you easily view and enter amounts for multiple periods and accounts at the same time. Layouts can also be defined so that you can enter and view currency, comments, and other optional data. Layouts also let you define which ledger dimensions and dimension descriptions should be shown. Layouts also incorporate scenario constraints to define which columns in a template can be edited and which columns should be available in Excel. After you define a layout, a template is generated for it. This template, in turn, creates the corresponding Excel template. You can then edit the Excel template to incorporate more formulas and formatting, and then upload it again. Layouts are then assigned to each stage rule on the **Budget planning process** page. Therefore, the layouts replace templates, which were assigned and used in a similar manner.
+Layouts are a new concept that replace the Excel template. Layouts contain the columns that define which budget or actuals data and periods should be shown. Layouts are also shared between the client and the Excel add-in. Therefore, the user experience when you enter or view data in the Dynamics 365 for Operations client is better than the user experience in AX 2012. To enter data in the Dynamics 365 for Operations client, you're no longer limited to viewing and entering a single scenario in a transaction view. Instead, a comparison view lets you easily view and enter amounts for multiple periods and accounts at the same time. Layouts can also be defined so that you can enter and view currency, comments, and other optional data. Layouts also let you define which ledger dimensions and dimension descriptions should be shown. Layouts also incorporate scenario constraints to define which columns in a template can be edited and which columns should be available in Excel. After you define a layout, a template is generated for it. This template, in turn, creates the corresponding Excel template. You can then edit the Excel template to incorporate more formulas and formatting, and then upload it again. Layouts are then assigned to each stage rule on the **Budget planning process** page. Therefore, the layouts replace templates, which were assigned and used in a similar manner.
 
 ### Budget planning processes
 
@@ -104,7 +104,7 @@ To help you determine how to configure the upgraded system, the following exampl
 4.  On the **Budget planning stage rules and layouts** FastTab, in the **Layout** field, select a layout that was previously configured, and that is appropriate for this stage.
 5.  Continue to select the same or different layouts for the various budget planning stages, and then save your changes.
 
-## Additional features to consider�in your budgeting process
+## Additional features to consider in your budgeting process
 ### Budget planning workspace
 
 This workspace is designed for both the budget owner and individual budget contributors. It has links to any budget documents that require your attention. It also has reports and key performance indicators (KPIs) for the budget process. The budget administrator can define the current Budget planning process for all users on the **Budgeting parameters** page. On the **Workspace settings** tab, the **Budget planning** FastTab includes a field where you can select the budget planning process.

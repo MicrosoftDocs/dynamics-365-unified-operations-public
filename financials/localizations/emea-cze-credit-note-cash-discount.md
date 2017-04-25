@@ -58,7 +58,7 @@ Companies in the Czech Republic must issue credit notes for cash discounts that 
 <tbody>
 <tr class="odd">
 <td>Set up number sequences.</td>
-<td>Create a continuous number sequence for a legal entity. For more information, see <a href="http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/">Set up number sequences on an individual basis.</a> On the <strong>Accounts receivable parameters</strong> page, select the number sequence that you created for <strong>Sales credit note</strong>. Additionally, set up a number sequence for <strong>Sales credit note voucher</strong>. You can use the same number�sequence�that you used for <strong>Sales credit note</strong>.</td>
+<td>Create a continuous number sequence for a legal entity. For more information, see <a href="http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/">Set up number sequences on an individual basis.</a> On the <strong>Accounts receivable parameters</strong> page, select the number sequence that you created for <strong>Sales credit note</strong>. Additionally, set up a number sequence for <strong>Sales credit note voucher</strong>. You can use the same number sequence that you used for <strong>Sales credit note</strong>.</td>
 </tr>
 <tr class="even">
 <td>Set up sales tax codes.</td>
