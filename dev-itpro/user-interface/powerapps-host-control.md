@@ -36,10 +36,16 @@ In Microsoft PowerApps, you can manage organizational data by running an app tha
 
 # Host a PowerApps app on a page
 
-1.  In PowerApps, find the web-based PowerApps app that you want to host, and record or copy the **App ID** value. [<img src="https://msdynamics.blob.core.windows.net/media/2017/04/PowerAppInfoPage-300x225.png" alt="App ID value" class="alignnone wp-image-273843" width="408" height="313" />](https://msdynamics.blob.core.windows.net/media/2017/04/PowerAppInfoPage.png)
+1.  In PowerApps, find the web-based PowerApps app that you want to host, and record or copy the **App ID** value.
+  
+    ![PowerApps app id](media/powerapps-appid.png)
+  
 2.  In Visual Studio, open your project, and then, in the form designer, add an instance of a PowerApps Host control to your page.
 3.  In the **Properties** pane, enter the **App ID** value.
-4.  If your PowerApps app shares or is linked to the current data source on your page, you should pass the ID of the primary or linked key field for the data that you want your PowerApps app to show. In this case, provide the ID as the value of the **Entity ID**, **Entity ID Data Source/Field**, or **DataMethod** property. This value will then be passed to your PowerApps app as a parm value, and your PowerApps app must use that value to obtain the linked data. [<img src="https://msdynamics.blob.core.windows.net/media/2017/04/PowerAppProperties-300x287.png" alt="Entity ID, Entity ID Data Source/Field, and DataMethod properties" class="alignnone wp-image-273853" width="411" height="400" />](https://msdynamics.blob.core.windows.net/media/2017/04/PowerAppProperties.png)
+4.  If your PowerApps app shares or is linked to the current data source on your page, you should pass the ID of the primary or linked key field for the data that you want your PowerApps app to show. In this case, provide the ID as the value of the **Entity ID**, **Entity ID Data Source/Field**, or **DataMethod** property. This value will then be passed to your PowerApps app as a parm value, and your PowerApps app must use that value to obtain the linked data. 
+    
+    ![PowerApps Host control properties window](media/powerapps-properties.md)
+    
 5.  In some cases, your PowerApps app might be hosted in a development or sandbox PowerApps environment that is provided by Microsoft. In this case, you must supply that override URL as the value of the **PowerApps Environment Override** property.
 
 Sizing is determined by the container that you put your control in. If you put your control in a form pattern that has limited available space, and your PowerApps app has been designed to be larger than the available space, your PowerApps app will have scroll bars.
