@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: undocumented
@@ -54,6 +54,7 @@ On the **Coverage groups** page, you can select the action messages that you wan
 | **Decrease**        | If you select this message, production orders, purchase orders, and other receipt transactions should be decreased to prevent excess inventory levels.                                                                                                   |
 | **Increase**        | If you select this message, production orders, purchase orders, and other receipt transactions should be increased to prevent shortages in inventory.                                                                                                    |
 | **Derived actions** | If you select this message, action messages are created for derived requirements, for example, actions for component orders fulfilling the production.                                                                                                   |
+
 
 
 

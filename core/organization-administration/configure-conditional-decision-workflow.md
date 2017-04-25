@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure a conditional decision in a workflow
@@ -55,6 +55,7 @@ The system determines which branch is used by evaluating the submitted document 
     2.  Select a record in the **Validate condition** area of the form.
     3.  Click **Test**. The system evaluates the record to determine whether it meets the conditions that you defined.
     4.  Click **OK** or **Cancel** to return to the **Properties** form.
+
 
 
 

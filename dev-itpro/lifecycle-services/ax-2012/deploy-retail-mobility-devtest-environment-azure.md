@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Deploy a Retail mobility dev/test environment on Azure (AX 2012)
@@ -226,5 +226,6 @@ The following table lists the domain accounts that were created when you deploye
 ### Local administrator accounts
 
 Each virtual machine that you deployed has a local administrator account. This account is: builtinaxlocaladmin. The passwords for the local administrator accounts are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lcs.dynamics.com/).
+
 
 

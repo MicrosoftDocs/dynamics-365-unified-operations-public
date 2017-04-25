@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
@@ -170,5 +170,6 @@ To obtain support for Microsoft Dynamics AX, use the resources listed in the fol
 </table>
 
    
+
 
 

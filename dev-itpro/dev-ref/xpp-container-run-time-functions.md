@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ container run-time functions
@@ -300,5 +300,6 @@ The first element of the container is specified by the number **1**.
             print "";
             conPrint(c2);
     }
+
 
 

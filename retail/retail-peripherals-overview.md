@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail peripherals overview
@@ -811,5 +811,6 @@ See also
 --------
 
 [Retail peripheral simulator](retail-peripheral-simulator.md)
+
 
 

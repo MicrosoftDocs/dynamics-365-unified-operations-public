@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dimension Entry control dialog support
@@ -63,5 +63,6 @@ For the second parameter on `addToDialog`, choose the controller class that sati
 [Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
 
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Procurement and sourcing home page
@@ -108,6 +108,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (white paper)
 -   [Purchasing policies](purchase-policies.md)
 -   [Create purchasing policies](http://ax.help.dynamics.com/en/wiki/create-purchasing-policies/)
+
 
 
 

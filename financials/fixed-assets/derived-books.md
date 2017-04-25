@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Derived books
@@ -51,5 +51,6 @@ When the transaction is posted, an acquisition transaction is generated and post
 > Books that are set up to post transactions at intervals other than the primary book intervals must be attached to the fixed asset as separate books and not as derived books.  
 
 For more information, see [Posting with derived books](post-derived-value-models.md).
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Currency revaluation in a consolidation company
@@ -91,6 +91,7 @@ You will see additional transactions for the reporting currency amounts.
 | 130100         | EUR      | -500.00 | Original amount of -500 × 1                          |
 | 801400         | EUR      | 250     | 500 – 333.33 = 166.67 166.67 + 83.33 = 250           |
 | 801600         | EUR      | -250    | -500 – (-333.33) = -166.67 -166.67 + (-83.33) = -250 |
+
 
 
 

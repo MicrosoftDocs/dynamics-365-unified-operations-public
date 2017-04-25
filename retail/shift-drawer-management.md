@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Shift and cash drawer management
@@ -101,6 +101,7 @@ A shared shift is used in an environment where multiple cashiers share a cash dr
 8.  After you’ve removed the cash from the last cash drawer, count all the cash from all the cash drawers.
 9.  Use the **Declare tender** operation to declare the total amount of cash from all the cash drawers that are included in the shared shift.
 10. Use the **Close shift** operation to close the shared shift.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ run-time functions
@@ -221,6 +221,7 @@ The number of milliseconds that the thread actually paused.
             i = sleep(seconds*1000);
             print "job slept for " + int2str(i/1000) + " seconds";
     }
+
 
 
 

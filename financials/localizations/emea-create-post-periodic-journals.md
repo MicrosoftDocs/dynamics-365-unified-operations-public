@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Split periods in periodic journals
@@ -52,5 +52,6 @@ An insurance company offers your organization a discount for prepaying the insur
 | **Period interval**   | Determine an interval between posting periods.                                                                                                                                                              |
 
 For example, to generate quarterly postings, enter **4** in the **Number of periods** field, select **Months** in the **Unit** field, and enter **3** in the **Period interval** field. The system generates four journal lines, each for one fourth of the journal line amount that you entered, at 3-month intervals. Similar functionality is also available for the general journal. When viewing general journal lines, select **Period journal** &gt; **Save journal**.
+
 
 

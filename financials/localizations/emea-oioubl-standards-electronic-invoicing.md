@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: OIOUBL standards for electronic invoicing
@@ -49,4 +49,5 @@ Dynamics 365 for Operations (1611) offers implementation of electronic invoicing
 -   Sales & Project invoice (IT)
 
 The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. In Microsoft Dynamics 365 for Operations, validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. As the requirements as well as supported countries and formats is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Install and run System diagnostics (AX 2012)
@@ -231,6 +231,7 @@ You can collect data on demand from the **Environment Discovery** window. We rec
 12. Click next -&gt; And in following screen make sure that **Mark this key as exportable** is set. Click next and finish
 13. Now when running Lifecycle services system diagnostics setup choose on new environment use an existing certificate
 14. Certificate generated in first step should be present in client certificates lookup choose it and continue as usual:
+
 
 
 

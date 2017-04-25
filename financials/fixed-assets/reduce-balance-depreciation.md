@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Reduce balance depreciation
@@ -86,6 +86,7 @@ Using the Reducing balance method, 30 percent of the depreciation base (net book
 
  
 -
+
 
 
 

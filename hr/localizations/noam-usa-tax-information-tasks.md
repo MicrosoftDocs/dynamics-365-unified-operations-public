@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up taxes, tax regions, tax codes, and tax groups
@@ -130,5 +130,6 @@ See also
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
 
 [Posting definitions in the public sector](/dynamics365/operations/financials/public-sector/posting-definitions-public-sector)
+
 
 

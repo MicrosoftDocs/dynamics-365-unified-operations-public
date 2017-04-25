@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: RFP responses (AX 2012)
@@ -54,6 +54,7 @@ You can search for a common question, or browse and filter by functionality and 
 
 6.  To clear all filters, in the app bar, click **Reset**.
 7.  To export the selected responses, in the app bar, click **Export**.
+
 
 
 

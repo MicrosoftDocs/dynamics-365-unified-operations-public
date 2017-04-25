@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Troubleshoot 
@@ -117,6 +117,7 @@ Follow these steps to troubleshoot failed schedules:
 4.  A schedule may fail if the data file or log file in the database becomes full.
 
 You must fix the error conditions before you rerun the schedule.
+
 
 
 

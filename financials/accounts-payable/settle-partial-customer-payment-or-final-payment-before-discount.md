@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Settle a partial customer payment and the final payment in full before the discount date
@@ -150,6 +150,7 @@ Arnie posts this journal and reviews the customer transactions on the **Customer
 | DISC-10010 | Cash discount    | 7/1/2015  |         |                                      | 5.00                                  | 0.00    | USD      |
 | ARP-10011  | Payment          | 7/8/2015  |         |                                      | 495.00                                | 0.00    | USD      |
 | DISC-10011 | Cash discount    | 7/8/2015  |         |                                      | 5.00                                  | 0.00    | USD      |
+
 
 
 

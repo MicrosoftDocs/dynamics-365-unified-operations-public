@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Acquire assets through procurement
@@ -112,5 +112,6 @@ The following are variations for this scenario:
 
 
 For more informations, see [Fixed assets integration](fixed-asset-integration.md).
+
 
 

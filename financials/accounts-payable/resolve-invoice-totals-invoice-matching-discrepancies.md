@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Resolve discrepancies during invoice totals matching
@@ -48,6 +48,7 @@ After you identify a discrepancy, you might have to contact the vendor if you th
 -   Accept the price difference, and post the invoice that has matching discrepancies. Your system might be set up to require approval before it can post if there are matching discrepancies. In this case, you must approve the matching discrepancy and can optionally enter an approval comment. You can then select to post the invoice.
 -   Revise the invoice amount to the expected amount, and post the invoice.
 -   Request a full credit and a new, corrected invoice from the vendor.
+
 
 
 

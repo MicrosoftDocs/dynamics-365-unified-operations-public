@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fiscal document text placeholders for Brazil
@@ -115,6 +115,7 @@ Tags that support fiscal document text for referenced processes
 | %DifICMS\_pICMSInterPart | Percentage defined to recipient federal state (based on fiscal document year). |
 | %DifICMS\_vICMSUFDest    | Tax amount for recipient state.                                                |
 | %DifICMS\_vICMSUFRemet   | Tax amount for issuer state.                                                   |
+
 
 
 

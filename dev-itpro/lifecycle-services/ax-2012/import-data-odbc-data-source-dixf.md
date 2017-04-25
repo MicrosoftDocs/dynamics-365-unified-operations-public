@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Import data from an ODBC data source (AX 2012)
@@ -130,6 +130,7 @@ Verify that the vendor data from the ODBC source is displayed in either of the f
     2.  Review the staging data to validate that it matches the ODBC source.
     3.  Click **Validate all** to verify that all the related reference data is correct and present in the system.
 -   Verify that the customer data from the ODBC source is now displayed in **Accounts payable** &gt; **Common** &gt; **Vendor** &gt; **All Vendors** form.
+
 
 
 

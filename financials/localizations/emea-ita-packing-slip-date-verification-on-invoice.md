@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Packing slip date verification on invoices for Italy
@@ -41,6 +41,7 @@ For legal entities with primary addresses in Italy there is a packing slip date�
 
 -   Packing slips that are dated later than the invoice are not be included in the suggested update quantity.
 -   For project management and accounting, when you create an invoice proposal, only the customer packing slips that are dated earlier than the invoice proposal are included in the proposal. **Note**: If the user input date for the invoice proposal is empty, the system date is used.
+
 
 
 

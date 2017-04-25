@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Join Enterprise Portal servers into a single server farm (AX 2012)
@@ -176,6 +176,7 @@ To learn the name of the WSS\_Content\_\* database for a particular site, follo
 2.  Go to **Application management** &gt; **View site collection**.
 3.  In the upper-right corner, select the site that is hosted on port 81. The result screen should indicate which database is used for the selected site.
 4.  Delete all WSS\_Content\_\* databases that aren't used by the server that site 81 is created on. In this case, keep the WSS\_Content\_\* database that is used by EP-01, and delete every other database that has a name that starts with WSS\_Content\_\*.
+
 
 
 

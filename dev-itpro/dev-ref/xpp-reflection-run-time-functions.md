@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ reflection run-time functions
@@ -456,5 +456,6 @@ The following example tests whether the first element in a container, **c**, is 
     {
             // More code.
     }
+
 
 

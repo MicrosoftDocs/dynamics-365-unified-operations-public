@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Edit invoice IDs on sales orders for Eastern Europe
@@ -65,5 +65,6 @@ For legal entities in Czech Republic, Estonia, Hungary, Lithuania, Latvia, and P
 </table>
 
  
+
 
 

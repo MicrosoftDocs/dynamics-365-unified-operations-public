@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Depreciation methods for fixed assets
@@ -46,6 +46,7 @@ To create a depreciation profile:
 1. On the **Fixed assets parameters** page, select the **SYDM and DRBM** depreciation methods.
 2. Create a new depreciation profile. Use the method of either **Sum year digits** or **Double reducing balance**.
 3. Create a book for the depreciation method, use either **Sum year digits** or **Double reducing balance**.
+
 
 
 

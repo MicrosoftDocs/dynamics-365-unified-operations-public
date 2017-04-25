@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Accounts receivable in the public sector
@@ -68,5 +68,6 @@ See also
 --------
 
 [Accounts receivable](..\accounts-receivable\accounts-receivable.md)
+
 
 

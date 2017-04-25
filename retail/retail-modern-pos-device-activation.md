@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail Modern POS installation and updates
@@ -231,5 +231,6 @@ See also
 --------
 
 [Install the POS Layout designer](install-pos-layout-designer.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Form Part Section List form patterns
@@ -142,5 +142,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
 
 

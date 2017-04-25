@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Financial management home page
@@ -49,4 +49,5 @@ Select a feature area to learn more about it.
 - [Project management](project-management\overview-project-management-accounting.md)
 - [Public sector](public-sector\public-sector-functionality.md) 
 - [Budgeting](budgeting\budgeting-overview.md) 
+
 

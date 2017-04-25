@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Add templates to the Open lines in Excel menu
@@ -191,5 +191,6 @@ See also
 --------
 
 [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
+
 
 

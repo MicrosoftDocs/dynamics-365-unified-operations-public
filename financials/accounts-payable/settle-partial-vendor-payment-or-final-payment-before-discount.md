@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Settle a partial vendor payment and the final payment in full before the discount date
@@ -143,6 +143,7 @@ April posts the payment journal and reviews the vendor transactions on the **Ven
 | DISC-10010 | Cash discount    | 7/1/2015  |         | 5.00                                 |                                       | 0.00    | USD      |
 | APP-10011  | Payment          | 7/8/2015  |         | 495.00                               |                                       | 0.00    | USD      |
 | DISC-10011 | Cash discount    | 7/8/2015  |         | 5.00                                 |                                       | 0.00    | USD      |
+
 
 
 

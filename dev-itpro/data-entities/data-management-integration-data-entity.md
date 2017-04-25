@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data management and integration using data entities
@@ -50,5 +50,6 @@ Integration through the data management platform provides more capabilities and
 -   **Target **– This is the data entity where data will be imported.
 
 The following diagram shows an inbound flow. [![Inbound flow](./media/over6-1024x464.png)](./media/over6.png)
+
 
 

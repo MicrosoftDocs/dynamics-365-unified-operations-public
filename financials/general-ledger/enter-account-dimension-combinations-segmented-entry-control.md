@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Enter account and dimension combinations (segmented entry control)
@@ -117,5 +117,6 @@ The following table describes the keyboard shortcuts that can be used when the l
 </table>
 
  
+
 
 

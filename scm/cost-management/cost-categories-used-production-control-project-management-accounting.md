@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost categories used in Production control and Project management accounting
@@ -44,5 +44,6 @@ Some types of production work can apply to project time estimates and reporting.
 -   Typically, the ledger accounts that are related to costs and sales are defined for the category group that is assigned to the cost category. However, specific accounts can be defined for an individual cost category.
 
 Additional buttons on the **Cost categories** page let you access project-related information about a selected cost category. For example, you can view project-related transactions, define employees or projects, define hourly costs and sales prices, and view reports.
+
 
 

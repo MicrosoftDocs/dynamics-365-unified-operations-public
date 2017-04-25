@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Turnover and balances statement for Poland
@@ -46,5 +46,6 @@ The Turnover and balances statement must include the following columns:
 -   Balance on the date
 
 The standard way to calculate the account balance is to include the difference in the amount of debit and credit on the appropriate side of the account. For Poland, different calculation rules apply to Accounts receivable and Accounts payable main accounts in the chart of accounts. The balance should be calculated as a separately summed debit and credit. The difference between the debit and credit amount is made by unsettled customer or vendor transactions.
+
 
 

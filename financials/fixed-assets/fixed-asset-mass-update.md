@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed asset mass update
@@ -44,6 +44,7 @@ When you update the depreciation convention for assets, you delete all depreciat
 To update the depreciation convention for assets that have already been disposed of, you must first delete the existing disposal transactions. You must also delete all transactions that were generated because of the disposal process. 
 
 After you update the depreciation convention for assets, you can process depreciation and extraordinary depreciation for each asset. You can also make manual depreciation adjustments, if any adjustments are required.
+
 
 
 

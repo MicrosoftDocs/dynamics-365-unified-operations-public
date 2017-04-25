@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create and manage attributes
@@ -99,5 +99,6 @@ Attributes are based on attribute types. Attribute types identify the type of da
 ### At the retail channel level
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) The default values of attributes can be overridden for individual products in specific catalogs that are targeted for specific retail channels.
+
 
 

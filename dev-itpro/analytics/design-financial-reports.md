@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: View and design financial reports
@@ -190,5 +190,6 @@ In this exercise, you’ll be creating a new report. The report is a side-by-sid
 [Financial reporting](\financials\general-ledger\financial-reporting-getting-started.md) 
 [View financial reports](\financials\general-ledger\view-financial-reports.md) 
 [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Public sector accounting in France
@@ -56,6 +56,7 @@ Additional setup steps for specific features are covered in the article for each
 -   [Procurement and sourcing](emea-fra-procurement-sourcing-public-sector.md)
     -   The standard features that are related to purchase agreements are augmented for French entities in the public sector.  For example, you can create tranches and lots, control department access, manage vendor certifications, and set up prime contractors, co-contractors, and subcontractors. These capabilities help you meet the requirements of the Code des Marchés Publics.
     -   To meet public sector regulatory requirements in France, you might have to set spending thresholds for purchases in the procurement categories that are defined by the Clé de Contrôle Marché. A **Spending thresholds by category** policy rule that is used with purchasing policies lets you use effective date attributes, predicted expenditure amounts, and threshold amounts to support required procurement practices, and to ensure the efficient and effective use of public funds.
+
 
 
 

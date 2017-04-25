@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Reserve the same batch for a sales order
@@ -48,6 +48,7 @@ When you reserve inventory for a product on a sales order line that is set up fo
 -   The batch disposition code has **Block reservation** for sales flagged as **Blocked**.
 -   The batch has expired, based on the expiration date and any applicable customer sellable days. The item can still be considered for reservation if the item model group for the item is First Expiry First Out (FEFO) date–controlled, and if the best-before date is selected as the pick criterion.
 -   The batch doesn't have enough shelf-life days remaining, based on the expiration date and best-before date, plus any customer sellable days.
+
 
 
 

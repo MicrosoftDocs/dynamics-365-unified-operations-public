@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Malaysia Goods and Services Tax
@@ -196,6 +196,7 @@ Certain business data should be captured in AX to generate the GAF.   For the 
 -   **Posting layer:** Specify which posting layers to generate the GAF from. The posting layers affect the ledger transactions that are included in the GAF.
 
 You should run the “Settle and post sales tax” process before you generate the GAF for a period. Only those transactions that are included in a sales tax payment will be included in the GAF.
+
 
 
 

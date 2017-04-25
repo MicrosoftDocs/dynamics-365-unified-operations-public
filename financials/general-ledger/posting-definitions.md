@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Posting definitions
@@ -67,4 +67,5 @@ The following restrictions apply when you create links in posting definitions:
 
 
 For more information, see [Posting definitions examples](example-posting-definitions.md). 
+
 

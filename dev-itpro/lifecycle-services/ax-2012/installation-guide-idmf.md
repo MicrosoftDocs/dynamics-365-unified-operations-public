@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Installation guide 
@@ -425,4 +425,5 @@ Follow these steps to run the post-installation tasks manually:
 4.  Open and run the job **DMTAddEnumValue** in the Application Object Tree (AOT). This job adds an enum value, **DMTArchiveSummary**, to the enums **LedgerTransType** and **InventTransType**. IDMF uses the enum **DMTArchiveSummary** during the archival process. **Note**: You must perform this step before you continue with the next step.
 5.  Synchronize the database. In the Microsoft Dynamics AX Windows client, click **Application Object Tree** on the toolbar. In the AOT window, right-click the **Data Dictionary** node, and then select **Synchronize**.
 6.  Navigate to C:Program FilesMicrosoft Dynamics AX Intelligent Data Management FrameworkXPO. This folder contains X++ project (XPO). Using the Microsoft Dynamics AX client, import the Summation XPO file. IDMF uses the Summation XPO file when archiving data or restoring archived data, to make adjusting entries to Ledger, Inventory and Bank transactions.
+
 

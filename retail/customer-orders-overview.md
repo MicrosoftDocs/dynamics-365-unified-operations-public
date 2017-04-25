@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customer orders overview
@@ -103,5 +103,6 @@ See also
 --------
 
 [Hybrid customer orders](hybrid-customer-orders.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Number sequence overview
@@ -83,6 +83,7 @@ Number sequences can be continuous or non-continuous. A continuous number sequen
 ### Automatic cleanup of number sequences
 
 In case of a power failure, an application error, or other unexpected failure, the system cannot recycle numbers automatically for continuous number sequences. You can run the cleanup process manually or automatically to recover the lost numbers. Carefully consider server usage when you plan the cleanup process. We recommend that you perform the cleanup as a batch job during non-peak hours.
+
 
 
 

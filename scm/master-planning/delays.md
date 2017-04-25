@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Delays
@@ -53,5 +53,6 @@ See also
 --------
 
 [Coverage settings](coverage-settings.md)
+
 
 

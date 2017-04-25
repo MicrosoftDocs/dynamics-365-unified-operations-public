@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create a deployable package
@@ -52,5 +52,6 @@ After you have completed the development of the modules, follow these steps to 
 
 ## Apply a deployable package
 For information about how to apply a deployable package in an environment, see [Installing a deployable package](install-deployable-package.md).
+
 
 

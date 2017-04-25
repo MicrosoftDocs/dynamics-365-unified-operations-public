@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost objects
@@ -85,5 +85,6 @@ See also
 [What's new or changed in Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 [Cost entries](cost-entries.md)
+
 
 

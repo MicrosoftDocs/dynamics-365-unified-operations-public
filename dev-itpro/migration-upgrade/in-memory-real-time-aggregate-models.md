@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Why we moved from SSAS cubes to aggregate models
@@ -54,5 +54,6 @@ Perspectives are now modeled using Dynamics 365 for Operations add-ins for Vis
 -   Access data programmatically using the AXQuery object.
 
 [![how-perspectives-are-used](./media/how-perspectives-are-used.png)](./media/how-perspectives-are-used.png)  
+
 
 

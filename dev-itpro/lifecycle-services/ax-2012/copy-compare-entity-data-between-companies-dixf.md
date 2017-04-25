@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Copying and comparing entity data between companies (AX 2012)
@@ -76,6 +76,7 @@ To compare entity data between companies or legal entities, use the **Compare en
 12. To update a record that exists in both systems to match the source system, select the records that you want to copy in the **Different** tab.
 13. When you have selected all of the records that you would like to modify, click **Update**.
 14. In the **Write data from source to target** form, determine whether to use batch processing, identify a batch group, and then click **OK**. The data will be written to the specified systems. After the data has been modified, the **Transfer status** for a row will change to **Completed**.
+
 
 
 

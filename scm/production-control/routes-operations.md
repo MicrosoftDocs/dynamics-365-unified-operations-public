@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Routes and operations
@@ -244,5 +244,6 @@ See also
 [Resource capabilities](resource-capabilities.md)
 
 [Electronic signature overview](/dynamics365/operations/organization-administration/electronic-signature-overview)
+
 
 

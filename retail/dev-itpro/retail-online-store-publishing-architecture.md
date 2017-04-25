@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail online store publishing architecture
@@ -71,6 +71,7 @@ After you've completed these steps, you're ready to publish the Retail online st
 4.  The system determines whether any new attributes were added for the listing. If new attribute were added (for example, if the “red jeans” listing includes a new attribute that is named **texture**, and this attribute is marked as **Included** at the channel level), the system creates a custom site column for that attribute. The system also creates a new rule for the list item and completes the process in SharePoint by creating a new row for the “red jeans” listing.
 5.  The CRT records the publishing status for the listing.
 6.  Async Server synchronizes the publishing status of the listing with all other publishing statuses. The status is either **Published** or **Error**.
+
 
 
 

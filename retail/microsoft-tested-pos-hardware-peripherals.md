@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: POS hardware peripherals
@@ -71,6 +71,7 @@ The following list includes device models, in each class, that have been tested 
 
 -   Barcode – Honeywell 1900, HP LS2208
 -   MSR – Magtek PN - 21073075
+
 
 
 

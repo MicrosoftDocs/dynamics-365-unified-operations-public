@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Demo files for the Data import/export framework
@@ -1622,6 +1622,7 @@ The following files are available in the versions of Data Import/Export Framewor
 | ProdParametersEntity              | WorkTimeLineEntity                |
 | ProductEntity                     | WorkTimeTableEntity               |
 | ProductMasterEntity               | WrkCtrParametersEntity            |
+
 
 
 

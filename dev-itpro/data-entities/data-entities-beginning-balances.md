@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entities - Beginning balances
@@ -136,6 +136,7 @@ See also
 --------
 
 [Data entities and packages framework](data-entities-data-packages.md)
+
 
 
 

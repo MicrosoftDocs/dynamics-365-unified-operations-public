@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Call center catalogs
@@ -43,6 +43,7 @@ In a call center, you can use product catalogs to identify the products that you
 -   **Free products** – Products can be included in a customer's order at no additional charge. These products are automatically added to an order when the source code for the catalog is entered into the order.
 -   **Scripts** – Scripts are texts that a call center worker reads to a customer when a sales order is being created. Scripts can include greetings or purchase suggestions.
 -   **Page layout** – A page layout captures the page position of products in the printed catalog. This information is used for the catalog area analysis report.
+
 
 
 

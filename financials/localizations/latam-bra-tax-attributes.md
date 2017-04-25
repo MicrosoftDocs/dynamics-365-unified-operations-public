@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Tax attributes for Brazil
@@ -98,6 +98,7 @@ The following fields on the **Product information** page are required for a Braz
 | ICMS on service                         | The ICMS tax that is applied on an item of the service type.                       |
 | Approximate tax percentage (Tax burden) | The tax rate that is used to calculate the approximate tax amount for the product. |
 | CEST (Tax substitution code)            | The code number that is used if tax substitution is allowed for the item.          |
+
 
 
 

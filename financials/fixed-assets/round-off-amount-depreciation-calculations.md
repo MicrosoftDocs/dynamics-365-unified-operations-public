@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Round-off amount for depreciation calculations
@@ -51,6 +51,7 @@ Depreciation without rounding is calculated as 2,444.44. As the following table 
 | Rounding 1.00   | 2,444.00            |
 | Rounding 10.00  | 2,440.00            |
 | Rounding 100.00 | 2,400.00            |
+
 
 
 

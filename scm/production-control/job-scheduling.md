@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Job scheduling
@@ -79,5 +79,6 @@ Resources are assigned to jobs through job scheduling. You can establish maximum
 
 ## Resource efficiency
 Job scheduling considers the efficiency percentages that are specified for the resources. Efficiency percentages reduce or increase the time that is reserved for the resource. Therefore, lead time is also increased or decreased. The following formula is used for the calculation: Scheduling time = Time × 100 ÷ Efficiency percentage In this formula, *Time* includes both the run time and the setup time.
+
 
 

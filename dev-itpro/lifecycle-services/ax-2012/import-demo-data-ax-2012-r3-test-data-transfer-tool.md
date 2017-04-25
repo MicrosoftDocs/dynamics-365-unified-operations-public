@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Import demo data for AX 2012 R3 by using the Test Data Transfer Tool
@@ -64,5 +64,6 @@ See also
 [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md)
 
 [Run the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](run-test-data-transfer-tool-beta.md)
+
 
 

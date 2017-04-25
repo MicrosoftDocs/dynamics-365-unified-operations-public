@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create a custom target entity for the Data import/export framework (AX 2012)
@@ -241,6 +241,7 @@ You can add a data source, so that the referenced table can be added to the targ
 #### Create a function
 
 You can create a function on the entity class. The related fields for the RefRecId field on the staging table should be natural keys from the staging table. You create a method on the entity class to convert the string to a RecId. For example, the CustTable table includes the CompanyNAFCode field, which is the RecId of the CompanyNAFCode table. In this case, you can create a function on DMFCustomerEntityClass to convert the string (DMFCustomerEntity.CompanyIdNAF) to a RecId (CompanyNAFCode.RecID). When you create a function, you must create a field group for the staging table, and the return fields on the target must be specified in the **getReturnFields** method in the entity class.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Upgrade analysis 
@@ -110,5 +110,6 @@ See also
 [Upgrading to a new version of Microsoft Dynamics AX](https://msdn.microsoft.com/en-us/library/aa588216.aspx)
 
 [Scenario: Perform in-place upgrade to AX 2012 R2 or AX 2012 R3](https://technet.microsoft.com/en-us/library/jj733502.aspx)
+
 
 

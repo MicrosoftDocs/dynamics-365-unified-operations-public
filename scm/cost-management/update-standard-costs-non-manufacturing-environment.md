@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Update standard costs in a non-manufacturing environment
@@ -53,6 +53,7 @@ To correct, adjust, or update standard costs for new items, follow these steps.
 4.  Use the **Costing version maintenance** page to change the blocking flag to allow activation of the pending cost records that are enclosed in the second costing version.
 5.  Use the **Activate prices** page (which you open from the **Costing version maintenance** page) to activate all pending item cost records that are enclosed in the second costing version. You can also activate the pending cost records for individual items by clicking the **Activate pending price** button on the **Item price** page.
 6.  To prevent additional data maintenance, use the **Costing version setup** page to change the blocking flags that are enclosed in the second costing version. The blocking policies will prevent the entry of new pending costs and the activation of pending costs.
+
 
 
 

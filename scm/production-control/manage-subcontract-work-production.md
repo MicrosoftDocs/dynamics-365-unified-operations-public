@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Manage subcontracting work in production
@@ -105,5 +105,6 @@ Semi-finished products are the exception to this rule. To transfer semi-finished
 **Note:** A production route for a single production order can't cross multiple sites. This rule also applies to the subcontracted work. Therefore, the warehouses that represent the vendor-managed material locations must be defined in the same site as the internal resources that are used in the route. Although production flows can cross sites, they can't transport semi-finished products from one site to another, because that operation implies a change of cost context.  
 
 Typically, the output warehouse and location of a subcontracted resource group are directly allocated to the warehouse and location of the next step of the operation in the route or production flow. This setup helps reduce the amount of job reporting that occurs or the number additional transfer operations that must be modeled.
+
 
 

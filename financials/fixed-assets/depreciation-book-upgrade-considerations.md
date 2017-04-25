@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Depreciation book upgrade overview
@@ -94,5 +94,6 @@ When using the system-generated number sequence approach (option 1), the upgrade
 When using the user-defined existing number sequence approach (option 2), the data upgrade checks whether the number sequence with the specified scope exists in the database for each partition and company with depreciation book transactions. If it does exist, the upgrade will use row-by-row processing to allocate the voucher numbers as specified by the number sequence using the number sequence framework. If the number sequence does not exist with the specified scope, the upgrade will use the default system-defined number sequence approach to allocate the voucher numbers, and will create a new number sequence with specified default parameters after the allocation.
 
 With either approach, the data upgrade script will also use the number sequence for the **Voucher series** field on the new general ledger journal names created for the former depreciation book journal names.
+
 
 

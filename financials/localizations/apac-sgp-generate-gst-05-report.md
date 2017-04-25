@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Generate the Singapore GST-05 report
@@ -46,5 +46,6 @@ Singapore companies must file a goods and services tax (GST) return (GST-05) on 
 -   On the sales tax authority page, specify the dedicated **Singapore report layout** reporting format.
 
 When you settle and post sales tax to process a tax settlement, the GST-05 report will be generated and printed.
+
 
 

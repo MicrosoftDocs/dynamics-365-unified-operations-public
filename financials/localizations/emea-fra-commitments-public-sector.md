@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Commitments in the public sector in France
@@ -83,5 +83,6 @@ See also
 --------
 
 [Public-sector accounting in France](emea-fra-public-sector-accounting.md)
+
 
 

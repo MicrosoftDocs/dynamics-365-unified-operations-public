@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Find support for Dynamics 365 for Operations and Dynamics Lifecycle Services
@@ -96,5 +96,6 @@ For technical questions that are related to signing in to and accessing Customer
 </table>
 
 For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
+
 
 

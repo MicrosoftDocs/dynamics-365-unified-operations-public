@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Manage Retail accounts and devices from headquarters
@@ -92,6 +92,7 @@ Before handing an activation account to a worker, an IT Pro must run the Validat
 12. Make sure that the language is set up for the Commerce Data Exchange: Real-time Service user profile (JBB in the demo data).
 13. Make sure that the Real-time Service profile has the correct access.
 14. Make sure that the electronic funds transfer (EFT) configuration value is present.
+
 
 
 

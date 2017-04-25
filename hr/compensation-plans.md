@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Compensation plans
@@ -137,5 +137,6 @@ Each time a process event is run, a compensation event is created.  Compensatio
 
 ## Recommendations
 After you run a process event, you can recommend adjustments to an employee’s merit increase or award amount, based on the calculated guidelines of the process event. To make recommendations for employees, you must enable recommendations when you set up compensation plans or when you set up the process event.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure Visual Studio Team Services mapping during code migration
@@ -62,5 +62,6 @@ The LCS code upgrade service automatically checks your upgraded code into Visua
             -   If you are migrating between 2 versions of the new Dynamics AX (Dynamics 365 for Operations), you will be mapping to the metadata folder under one of the **Releases** branch.
 
 [![vstsmapping](./media/vstsmapping.png)](./media/vstsmapping.png) Once you have mapped these folders, you can synchronize the code to your local box. Right-click on Metadata and select **Get latest**. Similarly synchronize the Projects folder. After synchronizing the metadata folder, refresh your models in Visual Studio from **Dynamics 365 for Operations** &gt; **Model Management** &gt; **Refresh Models**. [![VSRefreshModels](./media/vsrefreshmodels.png)](./media/vsrefreshmodels.png) You are now ready to open your projects, resolve conflicts, build, test and complete your code migration.
+
 
 

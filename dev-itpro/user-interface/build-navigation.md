@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Build navigation
@@ -188,6 +188,7 @@ Now you’ll add a new main menu section that contains a tile that points to the
     [![Nav5](./media/nav5.png)](./media/nav5.png) 
     
     If you click on the **Common** submenu, you will see the menu item that you modeled there. You can click either of these links to check that you have set up the references correctly. If you have set up the references correctly, the tutorial workspace you’re working on should open when clicked on.
+
 
 
 

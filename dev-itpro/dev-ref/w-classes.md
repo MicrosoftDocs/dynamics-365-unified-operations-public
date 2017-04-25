@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: W Classes
@@ -3598,5 +3598,6 @@ hGDIObject
 Initializes a new instance of the WinAPINative class.
 
     private void new()
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Office integration troubleshooting
@@ -102,5 +102,6 @@ See also
 [Office Integration lab and walkthroughs](office-integration-tutorial.md)
 
 [Configuring PowerBI Integration](..\analytics\configure-power-bi-integration.md)
+
 
 

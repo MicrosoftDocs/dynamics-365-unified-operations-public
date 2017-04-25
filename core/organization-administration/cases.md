@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Case management overview
@@ -53,5 +53,6 @@ Cristine, the Human Resources generalist for the Great Britain division of Fabri
 ### In the United States
 
 Luke, the Human Resources generalist for the United States division of Fabrikam, receives an email message from Shannon, a Fabrikam employee. Shannon is a machine operator who was injured on the job six months ago. Since then, she has been working with Humongous Insurance to have her medical expenses paid. Because Shannon contacted Luke about this issue four weeks ago, a case has already been created. Shannon’s new email message explains that Humongous Insurance is still not returning her telephone calls. Luke opens the existing case, adds Shannon’s email message as a document, and reviews the case log. When Luke created this case, he assigned the **Insurance** category to it. He now sees that there is a new knowledge article that is associated with the **Insurance** category. Luke reads the knowledge article and learns that all phones at Humongous Insurance are down while the company’s telephone system is being updated. The article states that the insurance company sent an email message to all its customers, but that several customers did not receive the message because of a problem with the company’s email system. All customers who have active insurance claims are asked to send their inquiries to Humongous Insurance by email or paper mail. Luke sends Shannon an email message that explains what she must do to have her insurance claim settled. He also ranks the knowledge article that he read as a helpful source of information. Luke creates another activity for himself, so that he can follow up with both Shannon and Humongous Insurance in four weeks to make sure that the claim has been resolved. After four weeks, Luke contacts Shannon. He learns that Humongous Insurance has paid her claims, and that she is happy with the resolution. Luke changes the status of the case to **Closed**.
+
 
 

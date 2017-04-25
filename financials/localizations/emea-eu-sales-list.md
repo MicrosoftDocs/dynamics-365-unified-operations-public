@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: EU Sales list reporting
@@ -164,5 +164,6 @@ You can generate an **EU Sales list** report by using the **Reporting** function
 ### Closing the EU Sales list reporting period
 
 When you've completed the reporting process for a specific period (for example, when tax authorities have accepted the **EU Sales list** report), you can mark the ESL records that are included on the report for the period by setting the **Reporting status** value to **Closed**. To set this status, use the **Mark as closed** function on the **EU Sales list** page. If you revert the closing of the period, you can mark ESL records by setting the **Reporting status** value to **Included**. These records can then be included on an **EU Sales list** report again. To set this status, use the **Mark as** **included** function on the **EU Sales list** page.
+
 
 

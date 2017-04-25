@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Deploy Dynamics AX 2012 R3 on Azure using Lifecycle Services
@@ -140,6 +140,7 @@ To deploy an environment that can be configured for high availability, see:
 </tr>
 </tbody>
 </table>
+
 
 
 

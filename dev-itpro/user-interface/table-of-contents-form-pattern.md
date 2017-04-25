@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Table of Contents form pattern
@@ -135,5 +135,6 @@ This section will have answers to frequently asked questions that are related t
 [![TOC(3)](./media/toc3.png)](./media/toc3.png)
 
 [![TOC(4)](./media/toc4.png)](./media/toc4.png)
+
 
 

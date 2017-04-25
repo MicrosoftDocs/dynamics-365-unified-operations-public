@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Log premier support tickets using Microsoft Dynamics Lifecycle Services
@@ -84,4 +84,5 @@ This topic shows how Microsoft Premier customers can submit a support incident u
 12.	Review the incident details, and then click **Submit** to create an incident. 
 
 ![Submit the case](media/submit-button.png)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: E Classes
@@ -474,5 +474,6 @@ You override this method when you derive a class from the CodeAccessPermission c
 Initializes a new instance of the ExecutePermission class. End.
 
     public void new()
+
 
 

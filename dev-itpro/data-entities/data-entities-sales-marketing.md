@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entities - Sales and marketing (Execution)
@@ -182,5 +182,6 @@ See also
 [Data entities and packages framework](data-entities-data-packages.md)
 
 [Data entities](data-entities.md)
+
 
 

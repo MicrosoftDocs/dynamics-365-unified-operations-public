@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: I Classes
@@ -4175,5 +4175,6 @@ This example uses the Io class to write to ExampleFile.
         // Close the code access permission scope. 
         CodeAccessPermission::revertAssert(); 
     }
+
 
 

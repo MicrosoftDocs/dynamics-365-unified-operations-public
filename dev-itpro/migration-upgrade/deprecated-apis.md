@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Deprecated APIs in Dynamics 365 for Operations
@@ -1051,6 +1051,7 @@ Remove calls to these APIs from your code.</td>
 </tr>
 </tbody>
 </table>
+
 
 
 

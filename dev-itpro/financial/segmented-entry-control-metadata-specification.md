@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Segmented entry control metadata
@@ -168,5 +168,6 @@ See also
 [Segmented Entry control migration](segmented-entry-control-conversion.md)
 
 [Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+
 
 

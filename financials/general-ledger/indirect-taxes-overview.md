@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sales tax overview
@@ -97,5 +97,6 @@ You settle sales taxes each month. On June 15, you create a customer invoice of 
 You typically would have to settle and pay 2,500 to the tax authority when the invoice is posted in June, even though you have not received the payment from the customer. 
 
 However, if you are using a conditional sales tax, you settle with the tax authority when you receive the payment from the customer on July 30.
+
 
 

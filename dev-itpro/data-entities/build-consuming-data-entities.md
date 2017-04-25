@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Build and consume data entities
@@ -353,5 +353,6 @@ See also
 --------
 
 [Developing an entity and using it for data migration](develop-entity-for-data-migration.md)
+
 
 

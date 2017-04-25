@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ session run-time functions
@@ -324,5 +324,6 @@ The complete prefix for the execution can be fetched by using the **getPrefix** 
             i = setPrefix("Prefix");
             print i;
     }
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Advance holder transactions
@@ -66,5 +66,6 @@ When you settle advance holder balances via cash, journal entries for closing th
 | **Automatic**                | Select the **Automatic** check box to create and post automatically a journal that is preset on the **Accounts payable parameters** page.     |
 
 After the slip journal is processed, if the amount in the **Amount to be transferred** field was negative, a disbursement slip is generated for the advance holder when the balances are closed. If the amount in the **Amount to be transferred** field was positive, a reimbursement slip is generated.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: F Classes - FormTabControl to FormWindowControl
@@ -15755,6 +15755,7 @@ An integer value that indicates the vertical client coordinate of the mouse posi
 
 y  
 An integer value that indicates the vertical client coordinate of the mouse position.
+
 
 
 

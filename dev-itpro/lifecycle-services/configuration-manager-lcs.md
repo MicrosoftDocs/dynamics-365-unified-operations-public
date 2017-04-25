@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configuration manager
@@ -49,6 +49,7 @@ The Configuration manager (beta) functionality in Microsoft Dynamics Lifecycle S
 For more information, see:
 -   [Set up Configuration manager (Lifecycle Services, LCS)](set-up-configuration-manager-lcs.md)
 -   [Copy a configuration (Lifecycle Services, LCS)](copy-configuration-lcs.md)
+
 
 
 

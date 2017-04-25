@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Manage vendor collaboration users
@@ -97,6 +97,7 @@ To request that the security roles are modified for a user:
 2.  Write a comment in the **Business justification** field.
 3.  In the **Maintain user roles** section, select the security roles that you want to assign, or clear the ones that you want to remove.
 4.  Click **Submit**.
+
 
 
 

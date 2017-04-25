@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Vendor collaboration invoicing workspace
@@ -65,5 +65,6 @@ You can create a new vendor invoice by selecting the **New** action on the **Ven
 
 
 For more information, see [Collaborating with vendors by using the Vendor portal](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+
 
 

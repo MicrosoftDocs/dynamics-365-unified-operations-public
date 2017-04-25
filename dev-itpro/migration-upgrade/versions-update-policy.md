@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dynamics 365 for Operations versions and update policy
@@ -77,6 +77,7 @@ Application and platform updates will be scheduled with you, the customer. When
 3.  After the 24 hours, Microsoft will notify you of the required downtime window (if any) and apply the security update to your Dynamics 365 for Operations production environment.
 
 Dynamics 365 for Operations is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy), which provides consistent and predictable guidelines for product support availability.
+
 
 
 

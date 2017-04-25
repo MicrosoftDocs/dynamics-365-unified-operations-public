@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Reimbursements in the public sector
@@ -66,6 +66,7 @@ No. Reimbursements are not processed for any customer who has pending settlement
 
 ## Can I reverse reimbursement settlements?
 No, not directly. However, you could use general journal entries to create transactions that would have the effect of reversing the general ledger entries.
+
 
 
 

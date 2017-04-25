@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Database management home page
@@ -43,6 +43,7 @@ These topics describe how to manage the databases that support Microsoft Dynamic
 [Copy a Microsoft Dynamics 365 for Operations database from SQL Server to an Azure SQL Database environment](copy-database-from-sql-server-to-azure-sql.md) 
 [Request a point-in-time restore on a non-production environment](request-point-in-time-restore.md) 
 [Retain a copy of a Microsoft Dynamics 365 for Operations database to restore later](copy-operations-database.md)
+
 
 
 

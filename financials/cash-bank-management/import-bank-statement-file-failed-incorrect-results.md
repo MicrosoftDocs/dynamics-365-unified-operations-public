@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Bank statement file import troubleshooting
@@ -105,6 +105,7 @@ The following table lists examples of the technical layout definitions for advan
 | DynamicsAXMT940Layout                                   | MT940StatementExample                |
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+
 
 
 

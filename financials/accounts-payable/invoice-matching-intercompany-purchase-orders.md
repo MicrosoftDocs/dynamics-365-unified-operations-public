@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Invoice matching and intercompany purchase orders
@@ -71,6 +71,7 @@ For example, you follow these steps.
 2.  In Fabrikam Sales, perform an invoice update for ICSO999. Posting is unsuccessful, because the item is out of stock and has not yet been received. Therefore, the financial information cannot be updated.
 3.  In Fabrikam Sales, register that the items have been received, and post a packing slip for ICSO999. A product receipt for ICPO333 is automatically posted in Fabrikam Purchase. In Fabrikam Purchase, the received quantity for item B-R14 changes to 100.
 4.  In Fabrikam Sales, perform an invoice update for ICSO999. Posting is successful in both legal entities. In Fabrikam Purchase, the quantity that is purchased for item B-R14 changes to 100.
+
 
 
 

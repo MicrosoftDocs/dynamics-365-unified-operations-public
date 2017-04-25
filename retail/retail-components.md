@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Components of Dynamics 365 for Operations - Retail
@@ -90,6 +90,7 @@ Dynamics 365 for Operations - Retail provides mid-market and large retailers wit
 </tr>
 </tbody>
 </table>
+
 
 
 

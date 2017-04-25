@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail Modern POS in offline mode
@@ -124,6 +124,7 @@ You can’t complete the following operations when the channel database is offli
 | 1055         | Close shift       |
 | 1056         | Print X           |
 | 1057         | Reprint Z         |
+
 
 
 

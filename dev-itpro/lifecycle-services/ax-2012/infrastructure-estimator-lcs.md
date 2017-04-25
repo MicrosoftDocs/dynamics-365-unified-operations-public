@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Infrastructure estimator (AX 2012)
@@ -119,6 +119,7 @@ If you want to create an infrastructure estimate for a production environment, y
 
 ## View infrastructure estimates
 On the main Infrastructure estimator page, select an estimate to view the details.
+
 
 
 

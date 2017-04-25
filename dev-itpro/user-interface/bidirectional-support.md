@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Right-to-left language support and bidirectional text
@@ -211,5 +211,6 @@ The WPF RichTxt control has a flag that tries to format text according the first
 **Workarounds:** Don't use weak or neutral characters for grouping when you use English. For example, use "Dynamics DAT". 
 
 **Recommendation:** None of the controls provide the desired behavior. You must educate users about the fundamental behavior when weak or neutral characters are used together with English text. Don't use weak or neutral characters unless English characters appear on each side.
+
 
 

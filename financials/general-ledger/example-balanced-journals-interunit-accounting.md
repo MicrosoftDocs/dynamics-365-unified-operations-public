@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Balanced journals for interunit accounting
@@ -56,6 +56,7 @@ Therefore, the following accounting entries are created automatically to balanc
 |-----------------------------------|-----------|
 | (Interunit Debit) – MSP – OU\_256 | 100.00 DR |
 | (Interunit Credit) – NY – OU\_249 | 100.00 CR |
+
 
 
 

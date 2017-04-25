@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Whole amount and Interval calculation options for sales tax codes
@@ -90,6 +90,7 @@ The sales tax is the sum of the tax amounts that are calculated for each amount 
  
 
 For more information, see [Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md).
+
 
 
 

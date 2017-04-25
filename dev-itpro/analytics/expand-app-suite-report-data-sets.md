@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Expand Application Suite report data sets
@@ -130,5 +130,6 @@ The following walkthrough shows the process of expanding an existing application
             }
 
 You’ve now finished expanding the report data set. After the application is compiled, it will begin to reroute user navigations to the new report design by using the custom X++ business logic that you defined in the report class handler that is defined in the extension model.
+
 
 

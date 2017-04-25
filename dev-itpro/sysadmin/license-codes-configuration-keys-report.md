@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: License codes and configuration keys report
@@ -43,5 +43,6 @@ When a license code or configuration key is disabled, the associated module or f
 
 ## To view the report
 The [License codes and configuration keys report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each configuration key that is available. The report also indicates the license code and menu items associated with each configuration key.
+
 
 

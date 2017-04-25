@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dynamics AX Intelligent Data Management Framework (AX 2012)
@@ -50,6 +50,7 @@ The Microsoft Dynamics AX Intelligent Data Management Framework (IDMF) lets syst
 -   The **ByFiscalYear** template is configurable, and has been hidden by default because it should only be run intentionally, after testing in a non-production environment. It removes financial transactions from the production database.
 
 Go to the [Services Download](http://go.microsoft.com/fwlink/?LinkID=228149) page.
+
 
 
 

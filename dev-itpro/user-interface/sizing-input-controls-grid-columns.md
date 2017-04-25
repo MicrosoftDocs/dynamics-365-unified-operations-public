@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Input controls and grid column sizes
@@ -67,6 +67,7 @@ As the previous table shows, if you change the width of a grid-hosted control fr
 | WidthMode         | Column Width | Use size-to-parent behavior.                                                                                                                           |
 | DisplayLength     | N            | The developer-defined control width, which is specified in characters. (Values are mapped to the sizing groups that are listed in the previous table.) |
 | Width             | N            | The developer-defined control width, which is specified in pixels.                                                                                     |
+
 
 
 

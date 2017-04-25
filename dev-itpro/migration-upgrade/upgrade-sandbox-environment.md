@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Process for upgrading a sandbox environment
@@ -73,5 +73,6 @@ Reset the management reporter database by following the steps in this topic [Re
 
 ## Limitations
 Existing document handling documents which are stored in Azure blob storage will be lost during this upgrade process. If you have custom code which utilises the X++ class FileUpload to place files in blob storage, these documents will also be lost.
+
 
 

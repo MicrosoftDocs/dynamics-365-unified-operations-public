@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Methodologies (AX 2012)
@@ -70,5 +70,6 @@ See also
 --------
 
 [Configure Lifecycle Services security](../configure-lcs-security.md)
+
 
 

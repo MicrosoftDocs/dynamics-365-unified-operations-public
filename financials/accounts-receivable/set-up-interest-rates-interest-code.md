@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up interest rates for an interest code
@@ -134,5 +134,6 @@ You set up the range information as follows.
 Interest codes are date effective. If you want to modify the interest rate, you can create a **new version** that is effective as of a future date.
 
 To view different versions, you can use the **As of Date** menu choice to select the cutoff date. You can also select the **Display all records** to view all interest codes in the page.
+
 
 

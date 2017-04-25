@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: EU Entry certificates
@@ -128,6 +128,7 @@ If you don't have access to the pages that are used to complete this task, conta
 </tr>
 </tbody>
 </table>
+
 
 
 

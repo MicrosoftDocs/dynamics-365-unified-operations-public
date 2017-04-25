@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Comply with the Americans with Disabilities Act
@@ -60,6 +60,7 @@ See also
 --------
 
 [Human resources](../index.md)
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Commerce essentials overview
@@ -50,5 +50,6 @@ Commerce essentials includes all the retail back-office capabilities that are bu
 
 ## How is Commerce essentials different?
 In addition to providing unified navigation and retail-only pages, Commerce essentials hides all non-retail page elements, such as fields and controls. The result is a streamlined user interface that helps retailers focus on the task at hand. Retailers that have a full product license can use Commerce essentials as a starting point for more retail-oriented users. Other elements, such as advanced HR capabilities, can be added to Commerce essentials as they are required, according to the terms of the license agreement that is in place. As part of the streamlining and simplification that Commerce essentials provides, accounting export capability lets retailers map totals that are accrued in Commerce essentials to the account numbers in their existing accounting system. As the retail system generates financial data, this data can easily be exported from Commerce essentials into the retailer's accounting system. If more advanced integration capabilities are required, Commerce essentials also includes the full Import/Export framework that is included in Dynamics 365 for Operations. The hundreds of data entities that are included by default give Commerce essentials the flexibility to fit comfortably into a multi-tier environment where multiple specialized systems are used.
+
 
 

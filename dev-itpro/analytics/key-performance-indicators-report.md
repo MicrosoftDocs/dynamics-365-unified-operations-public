@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Key performance indicator (KPI) report
@@ -41,5 +41,6 @@ A key performance indicator (KPI) is a collection of calculations used to measur
 
 ## To view the report
 The [Key performance indicators (KPI) report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists the KPIs that are available in the Fleet Management sample application.
+
 
 

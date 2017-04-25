@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail hierarchies
@@ -49,5 +49,6 @@ The following table lists the types of retail category hierarchies that are avai
 | Retail navigation hierarchy   | Use this hierarchy type to group and organize products into categories so that the products can be browsed online or in POS.                                                                                                                                                                                       |
 
 By using a retail category hierarchy to structure your products, you can set up and maintain product attributes and properties at the category level. These attributes and properties include settings for product dimensions and POS settings. Any products that you assign to the categories automatically inherit the attributes and properties that you define. You can also copy the property settings for any product to multiple products in a selected category at the same time.
+
 
 

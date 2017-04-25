@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Production setup requirements
@@ -82,6 +82,7 @@ If you're working with routes, operations must be defined for every production r
 1.  **Production groups** – Set up production groups to establish relationships between the production order and ledger accounts. The ledger accounts are used to post or group orders for reporting.
 2.  **Production pools** – Create production pools to group production orders so that you can process urgent production orders, or delete and post groups of orders.
 3.  **Properties** – Define properties to create special attributes that you can assign to your resources to control the order of productions. These attributes are connected to the working time template.
+
 
 
 

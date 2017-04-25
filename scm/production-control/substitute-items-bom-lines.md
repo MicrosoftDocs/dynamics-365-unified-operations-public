@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Material substitution in manufacturing
@@ -51,5 +51,6 @@ You can substitute materials during planning only when you're using formulas, no
 
 ## Substituting material during production
 Consider the following scenario: A piece of metal plate is required for a welding operation. During the operation, a warehouse worker informs the machine operator that the plate is out of stock. However, it's decided that the plate can be substituted with a plate that is slightly thicker. That way, the operation can be finalized. Material can be added to the BOM for an open production order. If the production order has a status of **Started**, users are asked to re-estimate the order when they add a new item to the production BOM. After the material is added, a new picking list can be created for the new item. You don't have to add the new material to the production BOM. Instead, you can add it directly to the production picking list. Then, when the picking list is posted, the system adds the material to the production BOM.
+
 
 

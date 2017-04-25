@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Journals generated during the electronic payment return process for Brazil
@@ -76,6 +76,7 @@ When you post the approved payment lines, the three payment lines are posted to 
 | 002            | 1            | January 5, 2013  | Approved | 1,000  |
 | 003            | 1            | January 1, 2013  | Approved | 3,000  |
 | 004            | 1            | January 3, 2013  | Approved | 4,000  |
+
 
 
 

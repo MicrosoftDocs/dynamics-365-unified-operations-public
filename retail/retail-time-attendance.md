@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail time and attendance
@@ -140,5 +140,6 @@ A Dynamics 365 for Operations - Retail user follows the workflow to calculate, a
 -   Register Absence
 
 For more information about how to process time and attendance registrations, see <https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+
 
 

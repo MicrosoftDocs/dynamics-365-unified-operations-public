@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Project resource scheduling data model
@@ -119,5 +119,6 @@ The following table lists the facade classes that you can use as a starting poin
 | ResourceWorkerFacade   | Contains the methods to retrieve the **Employment** type.                                                                                                                                                                              |
 
  
+
 
 

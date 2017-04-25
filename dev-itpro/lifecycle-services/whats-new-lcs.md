@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: What's new in Lifecycle Services
@@ -659,5 +659,6 @@ See also
 --------
 
 [What’s new or changed](../get-started/whats-new-changed.md)
+
 
 

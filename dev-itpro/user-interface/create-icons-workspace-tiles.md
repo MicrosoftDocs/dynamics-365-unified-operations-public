@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create icons for workspace tiles
@@ -81,5 +81,6 @@ Workspace icon image overlaid to show the circular portion visible on the tile a
 Using this image on a workspace tile yields the following result on the dashboard. 
 
 [![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Action search
@@ -77,5 +77,6 @@ In the previous example, action search showed results from the standard Action P
 
 ## Action search vs. Navigation search
 Whereas action search is intended to find and run actions on a page, there is a separate search mechanism for finding and navigating to pages in Dynamics 365 for Operations. For more information about that feature, see the [Navigation search](navigation-search.md) article.
+
 
 

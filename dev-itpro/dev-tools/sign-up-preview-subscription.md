@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sign up for a subscription
@@ -169,6 +169,7 @@ Lifecycle Services is the starting point for performing online administrative ac
         
         [![Active users](./media/activeusersadmin.png)](./media/activeusersadmin.png)
         
+
 
 
 

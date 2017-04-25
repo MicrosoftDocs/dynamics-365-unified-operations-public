@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dialog form pattern
@@ -289,5 +289,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![DialogForm(10)](./media/dialogform10.png)](./media/dialogform10.png)
+
 
 

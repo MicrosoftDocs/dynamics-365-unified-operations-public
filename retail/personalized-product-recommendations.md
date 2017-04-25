@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Personalized product recommendations overview
@@ -87,5 +87,6 @@ See also
 --------
 
 [Add a recommendations control to the transaction page on a POS device](add-recommendations-control-pos-screen.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create fixed compensation plans
@@ -110,5 +110,6 @@ See also
 --------
 
 [Compensation plans](compensation-plans.md)
+
 
 

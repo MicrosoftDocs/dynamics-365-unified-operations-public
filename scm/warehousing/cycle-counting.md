@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cycle counting
@@ -143,5 +143,6 @@ You can adjust differences in the counted value and then accept the counted valu
 
 # See also
 [Configure mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+
 
 

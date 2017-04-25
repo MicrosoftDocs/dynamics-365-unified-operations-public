@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store
@@ -189,5 +189,6 @@ See also
 --------
 
 [Modeling and using aggregate data](../analytics/model-aggregate-data.md)
+
 
 

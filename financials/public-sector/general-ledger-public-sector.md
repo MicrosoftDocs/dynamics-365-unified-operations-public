@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: General ledger in the public sector
@@ -67,5 +67,6 @@ See also
 --------
 
 [General ledger](../general-ledger/general-ledger.md)
+
 
 

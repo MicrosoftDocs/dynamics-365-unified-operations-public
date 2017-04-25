@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure Lifecycle Services security
@@ -109,5 +109,6 @@ You can invite users from inside or outside your organization to join your proje
 </table>
 
 After you've configured security for one project, you can import the users to another project.
+
 
 

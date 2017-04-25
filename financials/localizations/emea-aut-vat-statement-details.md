@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: VAT statement details for Austria
@@ -112,5 +112,6 @@ At the end of the VAT reporting period, run **Settle and post** **sales tax** to
 |Format mapping|Specify U30.|
 
 To generate a VAT XML file, use the **Report sales tax for settlement period** page.
+
 
 

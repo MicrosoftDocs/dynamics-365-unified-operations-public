@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Tools add-ins for Visual Studio
@@ -54,5 +54,6 @@ See also
 [Developer home page](developer-home-page.md)
 
 [Development tools](development-tools.md)
+
 
 

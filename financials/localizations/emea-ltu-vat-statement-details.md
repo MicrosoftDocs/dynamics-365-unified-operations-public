@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: VAT statement details for Lithuania
@@ -77,5 +77,6 @@ To review or change the VAT statement configuration, on the **Reporting configur
 
 ## Generate a VAT statement
 To generate a VAT XML file, on the **Sales tax payments** page, select one or more vouchers, and then click **Export VAT XML file**.
+
 
 

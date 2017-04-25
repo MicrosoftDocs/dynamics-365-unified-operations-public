@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Copy data between Dynamics AX companies (AX 2012)
@@ -95,6 +95,7 @@ Verify that the customer data from the original company is displayed in either o
     2.  Review the staging data to validate that it matches the source.
     3.  Click **Validate all** to verify that all the related reference data is correct and present in the system.
 -   Verify that the customer data from the CEU company is now displayed in the **All Customers form**. Click **Accounts receivable** &gt; **Common** &gt; **Customer** &gt; **All Customers **form.
+
 
 
 

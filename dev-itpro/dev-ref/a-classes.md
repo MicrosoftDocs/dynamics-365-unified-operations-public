@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: A Classes
@@ -1488,5 +1488,6 @@ Microsoftinternal use only.
 Initializes a new instance of the AxaptaCOMConnectorMonitor class.
 
     public void new()
+
 
 

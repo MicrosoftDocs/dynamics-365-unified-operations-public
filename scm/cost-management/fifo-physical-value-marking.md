@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: FIFO with physical value and marking
@@ -131,6 +131,7 @@ The new running average cost price reflects the average of the financially and p
 -   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
 -   Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
 -   Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data entity wizard rules
@@ -76,5 +76,6 @@ The default value of data entity fields is **auto**. This value is used unless 
 -   If the field’s **Is mandatory** property and the related field’s **Is mandatory** are both **false**, both fields are explicitly set to **false**.
 
 If the field’s **Is mandatory** property and the related field’s **Is mandatory** property differ in value, both fields remain unchanged. In this case, the default value of **auto** is used.
+
 
 

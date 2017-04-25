@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Financial period close workspace
@@ -111,5 +111,6 @@ Assign the calendar appropriate for the closing schedule, to indicate the workin
 You must also define the companies that will be associated with the closing schedule. If template tasks are assigned to multiple companies, separate tasks will be created for each company that is in the closing schedule and assigned to the template task. 
 
 After a closing schedule is completed, select the **Closed** option for it. The task history will still be available from the **All financial period close tasks** list page, but the closing schedule will be removed from the workspace. After a closing schedule has been marked as **Closed**, you won't be able to add tasks to it, edit tasks, or remove tasks from it.
+
 
 

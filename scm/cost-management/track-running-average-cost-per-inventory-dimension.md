@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Tracking running average cost per inventory dimension
@@ -58,5 +58,6 @@ The running average cost price for warehouse GW is USD 11.20, and the running av
 -   A purchase order for a quantity of 2 at a cost price of USD 15.00 has been invoiced for warehouse GW and batch BBB.
 
 The running average cost price for warehouse GW and batch AAA is USD 11.20, and the running average cost price for warehouse GW and batch BBB is USD 15.00.
+
 
 

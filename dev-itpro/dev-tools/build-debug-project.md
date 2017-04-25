@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Build and debug a project
@@ -203,5 +203,6 @@ Earlier in this tutorial, you had the opportunity to add code to the project and
 5.  Rebuild the Fleet Management Migrated project by right-clicking the project name and then clicking **Rebuild**. You'll notice that the violations of the best practice rules that you specified appear in the **Error list** window.
 
 Because Microsoft can’t know all of the best practice checks that a development organization wants to use, the **Best Practice** system is extensible. You author new best practice rules and add them to the system. This is done by creating a class in C\# that identifies the problem; the class is compiled, and the assembly is selected in the dialog that appears when you click **Install Extension** in the **Options** window. An example of how to implement a best practice rule can be found in the **C:\\FMLab\\Code Best Practice Example** folder.
+
 
 

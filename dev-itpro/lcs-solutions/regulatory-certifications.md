@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Regulatory certifications
@@ -57,5 +57,6 @@ In the BPM business process library, certifications should be located under **AP
     -   PT-REG-Certification for Fiscal printers
 
 For more information about BPM, see [BPM flowcharts](../lifecycle-services/flowcharts-business-process-modeler.md).
+
 
 

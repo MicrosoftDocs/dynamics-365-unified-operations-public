@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Accounting source explorer
@@ -54,5 +54,6 @@ For source documents that use the source document reference identities concept, 
 -   Discounts per vendor, product, department
 
 For these documents, you can also navigate to the actual source document from Accounting source explorer.
+
 
 

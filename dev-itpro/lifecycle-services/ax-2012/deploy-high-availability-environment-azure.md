@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Deploy a high-availability environment on Azure (AX 2012)
@@ -475,5 +475,6 @@ Note: The passwords are displayed on the Cloud-hosted environments page in [Life
 ### Local administrator accounts
 
 Each virtual machine that you deployed has a local administrator account. This account is: builtinaxlocaladmin. The passwords for the local administrator accounts are displayed on the **Cloud-hosted environments** page in Lifecycle Services.
+
 
 

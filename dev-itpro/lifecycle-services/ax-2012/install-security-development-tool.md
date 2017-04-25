@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Install the Security Development Tool (AX 2012)
@@ -79,6 +79,7 @@ This section lists the procedures required to install and configure the Security
     |-------------------------------|------------------------------------|
     | SysSecRoleEntryPointDeveloper | SysContextMenu (AOT Add-Ins)       |
     | SysSecRoleEntryPoint          | System AdministrationSetupSecurity |
+
 
 
 

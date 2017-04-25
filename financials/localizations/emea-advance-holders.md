@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Advance holders
@@ -116,5 +116,6 @@ See also
 --------
 
 [Advance holder transactions](emea-advance-holders-transactions.md)
+
 
 

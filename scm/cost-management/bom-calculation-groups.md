@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: BOM calculations groups
@@ -92,5 +92,6 @@ A BOM calculation generates warning messages. You can view the warnings about a 
 -   Identify when the item on a BOM line has a profitability percentage that is less than you want.
 
 You can define multiple BOM calculation groups, depending on your requirements for variations in warning messages. For example, one BOM calculation group that has warning conditions about an active BOM, a component quantity of 0 (zero), and component cost of 0 (zero) might be enough. When you start a BOM calculation, you can override the warning conditions that are associated with the BOM calculation group. You can also add or remove warning conditions. For example, if the current situation doesn't involve routing data, you can remove the warning condition about an active route. **Note:** Time and attendance includes a **Calculation groups** page, but that page has no relationship to BOM calculation groups. In Time and attendance, workers can be assigned to calculation groups that reflect the grouping of workers who are associated with the same supervisor or manager. Calculation of worker registrations can be done either automatically or manually by a supervisor or manager.
+
 
 

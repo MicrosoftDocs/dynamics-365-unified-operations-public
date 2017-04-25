@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Receipt templates and printing
@@ -75,5 +75,6 @@ Receipt profiles are assigned directly to printers through the hardware profile.
 2.  Select the printer, and then, in the **Receipt profile** field, assign the receipt profile to use on the register.
 
 **Note:** If two printers are used, one printer can be used to print standard 40-column thermal receipts. The second printer is typically used to print full-page receipt types that require more information. These receipt types include customer order receipts and customer invoices.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Info codes
@@ -54,6 +54,7 @@ In Dynamics 365 for Operations - Retail, you can create groups of info codes. In
 
  
 -
+
 
 
 

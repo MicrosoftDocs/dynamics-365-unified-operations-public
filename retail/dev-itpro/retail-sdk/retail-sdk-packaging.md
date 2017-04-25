@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail SDK packaging
@@ -140,5 +140,6 @@ In the Asset library for the project, upload the customized Retail Server, Retai
 ### Step 2
 
 Request a new LCS topology by going to the **Environments** section and requesting a new environment. [![LCSDeployment](./media/lcsdeployment-1024x530.png)](./media/lcsdeployment.png) [![LCSAXBaseVersion](./media/lcsaxbaseversion.png)](./media/lcsaxbaseversion.png) [![SelectCustomizedPackage](./media/selectcustomizedpackage.png)](./media/selectcustomizedpackage.png)
+
 
 

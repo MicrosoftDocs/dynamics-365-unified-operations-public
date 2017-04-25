@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Security and data entities
@@ -90,5 +90,6 @@ Security modeling follows a pattern similar to modeling security with privileges
 
 ## Organization on Roles** **
 Data entities support associating a company when assigned to a user to filter data based on that company.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Issue search on Lifecycle Services
@@ -147,5 +147,6 @@ For white papers, certifications, registrations, and reports: The title, product
 
 ## Issue details
 The code changes are provided for reference only and should not be manually inserted into a higher development layer. Otherwise, they become unsupported customized objects that the partner or customer assumes full responsibility for.
+
 
 

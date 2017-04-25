@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost element dimensions
@@ -79,5 +79,6 @@ To ease the setup of cost element dimension members in Cost accounting, you can
 
 ## Implementation considerations
 As cost elements represent the lowest level of cost details, you should make sure that all the cost elements required to make the managerial reporting are included when you implement the cost elements structure. It can be a challenge to find an appropriate number of cost elements for cost control. Having thousands of cost elements can make it difficult to control each cost element. As an alternative, you can group cost elements and manage cost control at an aggregated level.
+
 
 

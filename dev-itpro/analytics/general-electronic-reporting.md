@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Electronic reporting overview
@@ -276,5 +276,6 @@ See also
 [Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
 
 [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+
 
 

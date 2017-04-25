@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Define and maintain retail channels
@@ -84,5 +84,6 @@ After you enter the details for the retail store, complete these tasks to send t
 
 ## Organization hierarchies
 Retail uses organization hierarchies in Microsoft Dynamics AX to structure retail channels. Organization hierarchies represent the relationships between the organizations that make up your business. When you set up stores, you can add them to an organization hierarchy. The stores then share data that is used for assortments, replenishment, and reporting.
+
 
 

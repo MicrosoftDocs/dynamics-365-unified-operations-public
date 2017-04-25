@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Send email receipts from Retail Modern POS
@@ -93,5 +93,6 @@ Depending on the settings that you configured, you'll need to run the respective
 
 ## MPOS transaction
 After synchronizing the changes to the store, MPOS will prompt the user for an email address for each transaction (if enabled). If the customer already has an email address on file, that address will appear in the email address prompt. If a customer hasn't been named, or the named customer doesn’t have an email address, enter an email address and then click **Send**. When the transaction is finalized, the real-time service will send the customer an email with the receipt in the body of the message as configured above.
+
 
 

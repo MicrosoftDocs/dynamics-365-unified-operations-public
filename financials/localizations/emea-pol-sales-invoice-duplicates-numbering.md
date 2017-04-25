@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Duplicate sales invoice numbering for Poland
@@ -45,5 +45,6 @@ For legal entities in Poland, the Duplicate sales invoice numbering functionalit
 | Created by             | The identifier of the user who duplicated the invoice.                                                                        |
 
 To delete a duplicate invoice, click **Delete**. **Note:** Only the last duplicate invoice can be deleted. To print a duplicate invoice, click **Print** &gt; **Original preview** or **Copy preview**.
+
 
 

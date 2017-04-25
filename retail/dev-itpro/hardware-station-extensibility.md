@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Hardware Station extensibility
@@ -133,6 +133,7 @@ Before Hardware Station can consume your extension, the **composition** section 
 Before local Hardware Station can consume your extension, the **composition** section in the Modern POS DLLHost.exe.config file (C:\\Program Files (x86)\\Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker) must be updated so that it includes an entry for your extension. The order of the composition targets in the configuration file determines precedence.
 
 [![Local Hardware station config](./media/hws-dll-host-local-config.png)
+
 
 
 

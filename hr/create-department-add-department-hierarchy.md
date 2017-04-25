@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create a department and associate it with the department hierarchy
@@ -59,6 +59,7 @@ To add a department to the department hierarchy, follow these steps.
 4.  In the list of departments that appears, select the department to add to the hierarchy.
 5.  Save your changes. You receive a message that a draft version of the hierarchy has been created.
 6.  When you're ready, click **Publish** in the hierarchy designer. You can enter an effective date that indicates when the hierarchy should be published. For example, to add a new department at the beginning of the next calendar year, set the effective date to January 1 of the new calendar year. The changes to the hierarchy will take effect on that date.
+
 
 
 

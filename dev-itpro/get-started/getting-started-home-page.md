@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Where to start
@@ -83,5 +83,6 @@ See also
 [New or updated Task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 
 [New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
+
 
 

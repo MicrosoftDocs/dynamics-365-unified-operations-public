@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Import and verify NF-e XML documents and DANFE files for Brazil
@@ -70,5 +70,6 @@ You can use the **Received XML inquiry** page to inquire about the status of NF-
 
 ## How do I generate a list of NFe documents that weren't posted, but that I received the XML documents for?
 You can use the **Posted** option on the **Received NF-e XML documents** page to verify the NF-e documents that weren't posted, but that you received the XML documents for.
+
 
 

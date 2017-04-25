@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Credit card setup, authorization, and capture
@@ -79,6 +79,7 @@ If you ship part of an order, the amount of the partial order is captured, and t
 
 ## Voiding an authorization
 To void a credit card authorization, you can change the method of payment to another method that doesn't have a type of Credit card.
+
 
 
 

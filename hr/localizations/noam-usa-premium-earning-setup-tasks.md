@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up premium earnings
@@ -218,5 +218,6 @@ See also
 --------
 
 [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md)
+
 
 

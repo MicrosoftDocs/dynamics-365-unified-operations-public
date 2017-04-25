@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Electronic invoices (CFDI)
@@ -90,5 +90,6 @@ An electronic invoice includes the following details:
 
 ## Customizing the integration PAC web services
 As is explained in detail in the Mexican localization scope document, integration with PAC web services requires customization. This customization varies, depending on the PAC web services that are contracted.
+
 
 

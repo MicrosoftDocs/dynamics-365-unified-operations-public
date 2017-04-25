@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ statements, loops, and exception handling
@@ -756,5 +756,6 @@ In this syntax, *statement* can be a block of statements, and *expression* decla
             textFromFile = sr.ReadToEnd();
         }
     }
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
@@ -389,6 +389,7 @@ IDMF considers an unexpected error condition a failure and cancels a task when t
 
 ## Export to Excel
 This command exports the selected task to Microsoft Excel.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Define channel-specific discounts
@@ -70,5 +70,6 @@ See also
 --------
 
 [Price adjustments and discounts](price-adjustments-discounts.md)
+
 
 

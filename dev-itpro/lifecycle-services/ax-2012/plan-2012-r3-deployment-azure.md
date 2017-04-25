@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Plan your Dynamics AX 2012 R3 deployment on Azure
@@ -1033,5 +1033,6 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 - [Deploy a Retail e-commerce dev/test environment on Azure](deploy-retail-ecommerce-devtest-environment-azure.md) 
 - [Deploy a Retail mobility dev/test environment on Azure](deploy-retail-mobility-devtest-environment-azure.md) 
 - [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md)
+
 
 

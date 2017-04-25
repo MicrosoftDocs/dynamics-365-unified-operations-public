@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up work schedules and leave
@@ -96,5 +96,6 @@ Repeat this step for any additional salaried positions that the worker holds.
 
 ## Next step
 The next step is to set up benefit accrual plans. For more information, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).
+
 
 

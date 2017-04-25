@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Import payment formats for Sweden
@@ -61,5 +61,6 @@ Bankgirot Autogiro returns format for the direct debit payment format of the sam
   >  Before you can complete this step, you must have already imported the configurations from Lifecycle Services (LCS) and set up the methods of payment. For more information, see [File formats for method of payments](emea-select-file-formats-for-the-method-of-payments.md).
 
 After you import the return file, the payments should be updated to the status **Approved**.
+
 
 

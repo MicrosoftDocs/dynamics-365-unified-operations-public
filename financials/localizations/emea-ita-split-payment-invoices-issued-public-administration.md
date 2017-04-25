@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Split payment for invoices issued to the Public Administration
@@ -114,5 +114,6 @@ VAT split payment
 220
 
  
+
 
 

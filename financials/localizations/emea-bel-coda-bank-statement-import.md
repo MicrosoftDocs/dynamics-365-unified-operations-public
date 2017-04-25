@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: CODA bank statement
@@ -64,5 +64,6 @@ Complete the following steps to process the bank statement transactions.
 4.  After all transactions in the bank statement are settled, they are ready to be transferred to the general ledger journal (**CODA** &gt;**Transfer to ledger**). Journal settings should be specified for the bank account. Journals can be opened on the **Bank accounts **page for the selected record by clicking **Set up** &gt; **CODA journal**.
 
 After processing bank statement transactions is complete, a new general ledger journal is created and ready for posting.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: View transactions on settlement for Eastern Europe
@@ -51,6 +51,7 @@ Settlement-related information is captured and can be shown on the **Transaction
 -   **Penny difference** – An invoice is settled with a payment that has a slightly different amount than the invoice.
 -   **Conditional tax posting** – An invoice is settled with a payment that conditional tax has been applied to.
 -   **Cross-company settlement** – Intercompany functionality is used to settle an invoice with a payment from an organization.
+
 
 
 

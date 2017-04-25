@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Use quick import/export
@@ -45,5 +45,6 @@ We added the Quick Import Export feature to let users import or export simple jo
 -   You do not need to create a processing group to use quick import/export, one will be automatically created by the system when executing the import or export job. You can also choose keep the history of the data imported by the quick import/export.
 
   Note that Quick import export assumes that you are familiar with the concepts of DIXF.
+
 
 

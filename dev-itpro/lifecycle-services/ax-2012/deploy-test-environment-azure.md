@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Deploy a test environment on Azure (AX 2012)
@@ -442,5 +442,6 @@ The following table lists the default names of the domain accounts that were cre
 ### Local administrator accounts
 
 Each virtual machine that you deployed has a local administrator account. This account is: builtinaxlocaladmin. The passwords for the local administrator accounts are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
+
 
 

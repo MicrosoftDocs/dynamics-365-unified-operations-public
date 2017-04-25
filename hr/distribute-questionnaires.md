@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Distribute and complete a questionnaire
@@ -143,5 +143,6 @@ See also
 [Using questionnaires](questionnaires.md)
 
 [Viewing and evaluating the results of questionnaires](evaluate-questionnaire-results.md)
+
 
 

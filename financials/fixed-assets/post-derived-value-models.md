@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Post with derived books
@@ -62,5 +62,6 @@ When an acquisition is posted for a fixed asset with book VM 1, the acquisition 
 > If you do not use derived books, you must post the acquisition of the fixed asset both for book VM 1 and book VM 2.
 
 For more information, see [Derived books](derived-books.md)
+
 
 

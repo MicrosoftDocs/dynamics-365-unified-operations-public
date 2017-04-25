@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Build operations
@@ -119,5 +119,6 @@ See also
 [Development tools](development-tools.md)
 
 [Developer home page](developer-home-page.md)
+
 
 

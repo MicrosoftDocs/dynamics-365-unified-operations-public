@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Financial dimension configuration for integrating applications
@@ -78,5 +78,6 @@ See also
 --------
 
 [Dimensions in Excel](dimensions-overview.md)
+
 
 

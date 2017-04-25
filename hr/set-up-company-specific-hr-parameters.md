@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up company-specific HR parameters
@@ -62,5 +62,6 @@ See also
 --------
 
 [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
+
 
 

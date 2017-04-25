@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: License sizing estimator (AX 2012)
@@ -62,5 +62,6 @@ To use License sizing estimator, you enter data and generate reports. **Importan
 ### Generate a report
 
 On the **License sizing estimator** page, click **Generate report**. The report summarizes the data that you’ve entered, and provides estimated licensing information in the form of a table and a pie chart.
+
 
 

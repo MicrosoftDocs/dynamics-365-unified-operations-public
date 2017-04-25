@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Modern POS and Cloud POS trigger extensibility
@@ -323,6 +323,7 @@ Transactions can't have both return and sale operations if a fiscal register is
     2.  In the left navigation pane, use product search (the search icon) to search for the text "shirt."
     3.  Select one of the shirt products, and then, on the app bar, click **Sell now**.
     4.  Observe that **IPreProductSaleTrigger** trigger is run. You should receive a message that states that you can't perform a sale and a return in same transaction.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Security Development Tool (AX 2012)
@@ -104,5 +104,6 @@ See also
 [Define or edit entry point permissions](define-edit-entry-point-permissions.md)
 
 [Record entry points in Microsoft Dynamics AX Enterprise Portal](record-entry-points-enterprise-portal.md)
+
 
 

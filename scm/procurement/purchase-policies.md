@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Purchasing policies
@@ -150,6 +150,7 @@ The purchase order creation and demand consolidation rule defines the policy rul
     -   **Do not allow demand consolidation** – No approved purchase requisition lines are eligible for demand consolidation. This option is selected by default and applies only to purchase requisition lines that require manual processing for purchase order creation.
     -   **Always allow demand consolidation** – All approved purchase requisition lines are eligible for demand consolidation. **Note:** If you select the **Always allow demand consolidation** option on the **Demand consolidation** tab, but you select the **Automatically create purchase orders** option on the **Manual purchase order creation** tab, all purchase requisitions are held for manual processing.
     -   **Allow demand consolidation under these conditions** – Define the criteria that determine whether approved purchase requisition lines are eligible for demand consolidation. For each type of purchase requisition line, you can set the criteria by procurement category and vendor. If you select **Allow demand consolidation under these conditions**, you can set the criteria by procurement category and vendor for each type of purchase requisition line. When you select a procurement category, any subcategories for that procurement category are also selected. If you select the **All** option for a specific line type, all purchase requisition lines of that line type are eligible for demand consolidation.
+
 
 
 

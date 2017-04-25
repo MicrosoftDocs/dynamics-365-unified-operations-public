@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Position budgeting troubleshooting
@@ -66,6 +66,7 @@ The dates on the forecast position cost element line must be within the followin
 -   The activation and retirement dates of the position.
 -   The activation and expiration dates of the budget cost element.
 -   The start and end dates of the budget cycle that is associated with the budget planning process of the forecast position.
+
 
 
 

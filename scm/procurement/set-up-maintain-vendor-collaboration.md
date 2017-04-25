@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up and maintain vendor collaboration
@@ -128,5 +128,6 @@ See also
 --------
 
 [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md)
+
 
 

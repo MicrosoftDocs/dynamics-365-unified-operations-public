@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Tax on natural resources report
@@ -154,6 +154,7 @@ Natural resources taxes are calculated during inventory journal transactions, an
 14. Select the person who is responsible for the report.
 15. Select the tax authority.
 16. Click **OK** to print the statement for tax on natural resources.
+
 
 
 

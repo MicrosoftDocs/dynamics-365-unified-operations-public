@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure screen layouts for POS
@@ -99,5 +99,6 @@ See also
 --------
 
 [Install the Retail POS Layout designer](install-pos-layout-designer.md)
+
 
 

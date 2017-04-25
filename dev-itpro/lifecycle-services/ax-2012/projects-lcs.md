@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Record entry points in Dynamics AX Enterprise Portal
@@ -46,5 +46,6 @@ Projects are the main organizer of your experience in Microsoft Dynamics Lifecyc
 | Change ownership.    | You can change the ownership of a project as you require. For example, you can change the ownership from a partner to a customer, or to a different person at a customer.                  |
 
 You must follow the methodology in your implementation project. The methodology framework is designed to guide you through the implementation. As you perform actions in LCS, you can begin to mark the phases and tasks as completed. Locked methodology tasks can be marked as completed after you complete the prerequisite. You can click the lock icon to learn what you must complete before you can mark a task as completed. As you work through the phases and tasks in the methodology, environments become available for you to configure. **Delete a project** When you have LCS opened, you have a view on recent projects. Click the option 'All projects'. You then have a view on all projects in a list style. Select a project and click the Trashbin icon. The project with all related information will be deleted.
+
 
 

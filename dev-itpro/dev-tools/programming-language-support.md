@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Programming language support
@@ -119,5 +119,6 @@ See also
 [Dynamics AX LINQ Provider for use in C#](linq-provider-c.md)
 
 [Technical Concepts Guide](developer-home-page.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Plan your chart of accounts
@@ -60,5 +60,6 @@ Use the **Configure account structures** page to create account structures. Acco
 Not all main accounts are valid for all legal entities and some may only be relevant for a specific time period. In this scenario the Legal entity overrides section can be used to identify which companies the main account should be suspended for, who the owner is and the time period the dimension is active. The overrides at the shared level cannot be more restrictive than the overrides at the legal entity level.
 
 For more information, see [Financial dimensions](financial-dimensions.md).
+
 
 

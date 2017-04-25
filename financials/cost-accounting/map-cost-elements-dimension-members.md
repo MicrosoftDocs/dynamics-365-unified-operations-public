@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Map cost element dimension members to a common set of dimension members
@@ -56,5 +56,6 @@ The various charts of accounts that you use might be set up to use different cur
 
 ## Update mappings at any time
 You can update the mapping definitions for a cost element dimension at any time. Because mappings aren't date-effective, changes are applied the next time that you process cost transactions or run cost calculations.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Warehouse work policies
@@ -251,5 +251,6 @@ STEPS (25)
 </tr>
 </tbody>
 </table>
+
 
 

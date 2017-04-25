@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail SDK extensibility samples
@@ -126,5 +126,6 @@ The Retail software development kit (SDK) includes extensibility samples. You ca
 </table>
 
    
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
@@ -855,5 +855,6 @@ See also
 --------
 
 [What's new or changed](whats-new-changed.md)
+
 
 

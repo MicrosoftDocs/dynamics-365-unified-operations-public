@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Purchase complementary fiscal documents for Brazil
@@ -65,5 +65,6 @@ Before you can create and post purchase complementary fiscal document, the follo
 
 ## Examples
 [![Example that shows an original invoice together with purchase complementary fiscal documents of each of the three types](./media/purchcomplementary-1024x349.png)](./media/purchcomplementary.png)
+
 
 

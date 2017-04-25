@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Calculate material consumption
@@ -84,5 +84,6 @@ Step consumption is used to calculate constant consumption in quantity intervals
 | 200.00      | 40.0000  |
 
 The bill of materials (BOM) quantity is 1, and the production quantity is 110. The formula for the consumption is From series (Quantity) = Consumption. Because the production quantity is 110, it falls into the "From 100 series." Therefore, the quantity is 20.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Align workforce skills with business needs
@@ -76,5 +76,6 @@ See also
 --------
 
 [Human resources](index.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Test Data Transfer Tool (beta) 
@@ -81,5 +81,6 @@ See also
 [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md)
 
 [Run the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](run-test-data-transfer-tool-beta.md)
+
 
 

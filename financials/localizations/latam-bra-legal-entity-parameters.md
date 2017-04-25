@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Parameters for legal entities in Brazil
@@ -322,6 +322,7 @@ In Brazil, you must specify the accountant details for tax reporting in the mont
 | **CRC**                 | The registration number of the accountant in the regional accounting council, or Conselho Regional de Contabilidade (CRC). |
 | **CRC issuer state**    | The state where the CRC document was issued.                                                                               |
 | **CRC expiration date** | The expiration date of the CRC document.                                                                                   |
+
 
 
 

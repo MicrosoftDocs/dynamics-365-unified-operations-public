@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Validate an application for an LCS solution
@@ -109,5 +109,6 @@ See also
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+
 
 

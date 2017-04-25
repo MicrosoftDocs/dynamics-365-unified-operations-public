@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Payment methods in a call center
@@ -51,6 +51,7 @@ If you submit a credit card payment from the **Sales order** page and receive a 
 
 -   Check holds let finance personnel process orders that have been put on hold because a check was used as the payment method, and the check hold threshold amount was exceeded. The hold can be manually released, or it automatically expires at the end of the configured period.
 -   You can set thresholds above which refunds that are issued via checks and credit cards must be manually approved. Any refund that exceeds the threshold amount is added to the approval queue. After you approve the refund, the return sales order can be invoiced.
+
 
 
 

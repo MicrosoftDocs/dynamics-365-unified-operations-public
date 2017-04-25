@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Accessibility in forms, products, and controls
@@ -165,5 +165,6 @@ Importantly, your control should not only identify itself by name, but (using a 
 [aria-valuemax](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuemax) - Defines the maximum allowed value for a range widget.
 
 [aria-valuemin](http://www.w3.org/TR/wai-aria/states_and_properties#aria-valuemin) - Defines the minimum allowed value for a range widget.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Take a cash discount outside the cash discount period
@@ -92,6 +92,7 @@ Discount information appears at the bottom of the **Settle open transactions** p
 | Use cash discount            | Normal    |
 | Cash discount taken          | 0.00      |
 | Cash discount amount to take | -5.05     |
+
 
 
 

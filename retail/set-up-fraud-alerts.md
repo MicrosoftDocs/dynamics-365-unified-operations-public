@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up fraud alerts
@@ -43,5 +43,6 @@ Before you set up and use fraud checking rules, you must enable fraud checking a
 -   **Dynamic rules** can be composed from variables and conditions.
 
 Before you create a dynamic rule, you must create the variables and conditions that define who the rule applies to and when the rule should be applied. For example, you want to create a rule to require that any sales order that customer 1202 places that is worth 1,000.00 or more be put on hold until the customer payment can be verified. In this case, the variables are customer 1202 and an order total of 1,000.00. The condition specifies that if customer 1202 places an order, and the total amount of the order is equal to or more than 1,000.00, the sales order must be put on hold until the customer payment can be verified.
+
 
 

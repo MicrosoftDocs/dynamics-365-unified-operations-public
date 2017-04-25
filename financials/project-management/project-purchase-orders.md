@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Purchase orders for a project
@@ -81,5 +81,6 @@ You can use one of the following methods to create a purchase order in Project m
 
 > [!NOTE] 
 > When you update the vendor invoice or packing slip, you're prompted to update the packing slip on the item requirement.
+
 
 

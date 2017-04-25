@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create variable compensation plans
@@ -109,5 +109,6 @@ See also
 --------
 
 [Compensation plans](compensation-plans.md)
+
 
 

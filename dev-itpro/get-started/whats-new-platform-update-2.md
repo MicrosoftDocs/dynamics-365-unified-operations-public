@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: What's new or changed in Dynamics AX platform update 2 (August 2016)
@@ -148,5 +148,6 @@ See also
 --------
 
 [What's new or changed](whats-new-changed.md)
+
 
 

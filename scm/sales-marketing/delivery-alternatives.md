@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Delivery alternatives
@@ -154,6 +154,7 @@ See also
 --------
 
 [Order promising](http://ax.help.dynamics.com/en/wiki/delivery-dates-and-available-to-promise-calculations/)
+
 
 
 

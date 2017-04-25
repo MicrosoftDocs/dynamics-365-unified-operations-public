@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: One-time customers
@@ -49,6 +49,7 @@ A one-time customer is a customer who does not have a long-term relationship wit
 1.  Open the **Project management and accounting parameters** page.
 2.  Set the **No one-time customer for project contracts** parameter to **True**.
 3.  Click **Save**.
+
 
 
 

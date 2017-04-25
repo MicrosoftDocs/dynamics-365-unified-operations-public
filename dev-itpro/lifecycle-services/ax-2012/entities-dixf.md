@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Data import/export framework entities (AX 2012)
@@ -192,5 +192,6 @@ This topic lists the entities that can be imported by using the Data Import/Expo
 | Vendor invoice line(Documents)                                              | Vendor                 | DMFVendInvoiceInfoLineEntityClass       | DMFVendInvoiceInfoLineEntity         | DMFVendInvoiceInfoLineTargetEntity       |
 
  
+
 
 

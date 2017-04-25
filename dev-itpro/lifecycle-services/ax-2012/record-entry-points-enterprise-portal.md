@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Record entry points in Dynamics AX Enterprise Portal
@@ -68,6 +68,7 @@ You can record business process flows in Enterprise Portal for Microsoft Dynamic
     | Sort the entry points by the System user role access level column, and then remove all entry points for which the access level of the System User role is anything other than NoAccess. |
 
 3.  To update the level of access for the recorded entry points, select multiple rows in the list, and then click **Mark as recorded**. You are returned to the main form, and the entry points are marked as recorded. From the main form, you can use the **Set entry point permissio**ns function to update the access level. When you have finished, you can switch back to the window that displays the trace data for the Enterprise Portal entry point by clicking **Go to the Enterprise Portal trace data window**.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Accruals overview
@@ -49,5 +49,6 @@ After you determine which accounts to use, you can specify how the voucher numbe
 
 ## Ledger accruals
 When you enter a journal, you can click **Ledger accruals** on the **Functions** menu. Then, when you select the accrual scheme, you will see the base amount from the journal that will be spread over the period, as determined by the accrual scheme. For example, if you pay an employee's insurance for the whole year in January, and the amount is 12,000, you must recognize that expense each month. You can select the start date. You can also specify whether the amount that is accrued is based on the account or the offset account. After you make your selections, click **Transactions** to view all the transactions that have been created based on the accrual scheme. For example, if you spread the 12,000 in insurance expenses over the year, you will see 1,000 for each month. After you post the journal, you can view the transactions by using the **Voucher transactions** inquiry page. If an accrual scheme can't be applied (for example, when a sales order invoice or purchase order invoice is involved), you can credit the prepaid amount and debit the expense amount. You can then select **Offset** when you apply the accrual scheme.
+
 
 

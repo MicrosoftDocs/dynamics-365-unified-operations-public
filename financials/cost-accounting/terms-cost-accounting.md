@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cost accounting terminology
@@ -159,5 +159,6 @@ A statistical dimension is the expression of a count or sum of an object that ca
 **Statistical entry**
 
 Statistical entries hold the recorded sum or count value for a given statistical dimension. The recorded sum or count value is also referred to as the magnitude.
+
 
 

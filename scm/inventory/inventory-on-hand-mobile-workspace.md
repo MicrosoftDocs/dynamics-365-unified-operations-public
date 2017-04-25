@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Inventory on-hand mobile workspace
@@ -131,6 +131,7 @@ Download and install the Dynamics 365 for Operations mobile app from your mobile
     -   By physical inventory (This view represents the total amount.)
     -   By physical reserved (This view represents the reserved amount.)
     -   By available physical (This view represents the available amount that has no reservations.)
+
 
 
 

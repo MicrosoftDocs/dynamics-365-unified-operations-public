@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Regulatory watch and regulatory update communication
@@ -148,6 +148,7 @@ The following table describes the processing options that are available for aler
 > Alerts can be stored in LCS as references.
 
 > Further processing, such as potential engineering of a related feature, will be handled in the ISV solution provider's existing systems.
+
 
 
 

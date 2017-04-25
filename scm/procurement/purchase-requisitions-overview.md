@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Purchase requisition overview
@@ -203,5 +203,6 @@ See also
 [Create a requisition for consumption (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
+
 
 

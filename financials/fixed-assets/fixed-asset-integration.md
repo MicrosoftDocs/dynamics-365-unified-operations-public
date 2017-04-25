@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Fixed assets integration
@@ -98,5 +98,6 @@ To delete the association between a project and an asset, clear the **Fixed asse
 You can also designate a fixed asset that you’re creating or manufacturing as part of an estimate project. At the end of an estimate project, you can automatically post an asset acquisition transaction.
 
 For more information, see [Acquire assets through procurement](acquire-assets-procurement.md)
+
 
 

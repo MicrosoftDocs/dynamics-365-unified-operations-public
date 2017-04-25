@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Standard cost conversion overview
@@ -104,5 +104,6 @@ See also
 --------
 
 [Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
+
 
 

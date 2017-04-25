@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Column definitions in financial reports
@@ -593,5 +593,6 @@ See also
 [Row definitions in financial reporting](row-definitions-financial-reporting.md)
 
 [Advanced formatting options in financial reporting](advanced-formatting-options-financial-reporting.md)
+
 
 

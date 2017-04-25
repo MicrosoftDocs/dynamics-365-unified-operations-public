@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Initialize seed data in a new Retail environment
@@ -64,6 +64,7 @@ Additionally, logging that is related to the payment card industry (PCI) is enab
 -   Retail channels
 -   Registers and devices
 -   Assortments
+
 
 
 

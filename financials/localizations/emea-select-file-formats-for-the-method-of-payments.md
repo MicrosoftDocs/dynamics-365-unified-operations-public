@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: File formats for methods of payment
@@ -58,6 +58,7 @@ To select file formats that are based on X++ code, complete the following step
 4.  Select a file format from the **Available** list and move it to the **Selected** list with the arrow control.
 5.  Close the **File formats for methods of payment** page.
 6.  On the **File formats** FastTab, select the file format to use for the method of payment from the appropriate file format field. The General electronic reporting options should be set to **No** for X++ file formats.
+
 
 
 

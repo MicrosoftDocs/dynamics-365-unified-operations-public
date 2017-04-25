@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Manual depreciation
@@ -79,5 +79,6 @@ If you select **Half-Yearly** in the ****Period frequency** field**, you set u
 | December 31 | (11,000 – 1,000) × 50% = 5,000 |
 
 The total of percentages for all intervals doesn't have to be 100. However, you receive a message if the value in the **Cumulative percentage** field on the **Fixed asset depreciation profile schedules** page isn't **100**.
+
 
 

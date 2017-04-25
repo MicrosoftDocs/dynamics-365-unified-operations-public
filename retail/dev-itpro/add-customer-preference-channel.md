@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Add customer preference data to a channel database
@@ -102,6 +102,7 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
 17. On the **Scheduler job** page, click **1010** to select the “Customers” job.
 18. On the **Subjobs** tab, click **New**, and then enter **RetailCustPreference** as the subjob number. Click **Save**.
 19. On the **Retail channel schema** page, select **Dynamics 365 for Operations **as the schema name, and then click **Generate queries**.
+
 
 
 

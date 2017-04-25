@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up fixed assets
@@ -79,5 +79,6 @@ On the Purchase orders FastTab, you can configure how assets are created as part
 You can configure reason codes so that they are required for changes to a fixed asset or for specific fixed asset transactions.
 
 Finally, on the Number sequences tab, you define number sequences for Fixed assets. The Fixed asset number sequence can be overridden by the Fixed asset group number sequence if it has been specified.
+
 
 

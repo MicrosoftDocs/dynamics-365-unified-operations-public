@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dimensions
@@ -147,6 +147,7 @@ This section describes how to add a dimension data source to a new entity. The n
 
     [![Overriding the persistEntity method](./media/dim16.png)](./media/dim16.png)
     
+
 
 
 

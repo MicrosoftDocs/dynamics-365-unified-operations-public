@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up and process recurring invoices
@@ -68,5 +68,6 @@ Print recurring free text invoices
 ----------------------------------
 
 After recurring invoices are posted, you can print the invoices from the free text invoice list page. You can print the invoices that are selected, or you can select a range of invoices to print.
+
 
 

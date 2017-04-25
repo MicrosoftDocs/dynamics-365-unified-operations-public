@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create a Power BI report and dashboard
@@ -228,5 +228,6 @@ You can repeat this process to build out your dashboard.
 
 [Power BI integration in Dynamics 365 for Operations](power-bi-integration.md)
 [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Procurement catalogs
@@ -79,5 +79,6 @@ See also
 --------
 
 [Set up a procurement category hierarchy (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
 
 

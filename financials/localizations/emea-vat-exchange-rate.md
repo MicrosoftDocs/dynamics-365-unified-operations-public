@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: VAT exchange rate overview
@@ -63,6 +63,7 @@ Overview
 ========
 
 After you've configured the system to use VAT exchange rates, if you must enter a document or create an order that uses a foreign currency, you can use **Sales tax transactions** page to set the **Date of VAT register** value to pick up and set the default **Sales tax exchange rate** value. You can edit both fields. You can also use the **Adjusted amount origin (VAT exchange rate)** or **Adjusted sales tax amount (VAT exchange rate)** field to enter actual VAT amounts in the local currency that is stated in an external document. When you review the accounting, you can view sales tax difference amounts on the **Subledger journal** page. When a document is posted, for transactions that are posted to the general ledger accounts that you've configured, you can view any differences in sales tax amounts that are caused by the difference between the VAT currency exchange rate and the accounting currency exchange rate for your organization.
+
 
 
 

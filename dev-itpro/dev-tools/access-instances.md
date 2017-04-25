@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Access Dynamics 365 for Operations instances
@@ -224,5 +224,6 @@ To restart the local runtime and redeploy all the packages, follow these steps.
 2.  Right-click **AOSDeploy.cmd**, and then click **Run as administrator**.
 
 This process might take a while. The process is completed when the cmd.exe window closes. If you just want to restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart AOSWebApplication from IIS.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Reporting tree definitions in financial reports
@@ -213,5 +213,6 @@ The following examples show possible information that is used in a reporting tre
 # See also
 
 [Financial reporting](financial-reporting-intro.md)
+
 
 

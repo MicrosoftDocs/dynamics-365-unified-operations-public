@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create a budget from transaction accounts and total accounts
@@ -49,5 +49,6 @@ When a budget is used in reporting, such as on a financial statement, the budget
 -   The budget amount that is entered directly on the total account.
 
 Therefore, you can create separate budgets for the most significant transaction accounts in the interval of the total account, and then add the available budget amount to the total account.
+
 
 

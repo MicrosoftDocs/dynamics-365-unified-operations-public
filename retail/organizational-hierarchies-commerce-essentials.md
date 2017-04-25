@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Organizations and organizational hierarchies (Commerce essentials)
@@ -76,6 +76,7 @@ The following table describes the Commerce essentials scenarios where organizat
 | Manage retail replenishment                                                    | Group stores to replenish inventory based on replenishment rules.                                                                                                                                                                                                                                          | Retail replenishment |
 | Report data for stores                                                         | Group stores for reporting.                                                                                                                                                                                                                                                                                | Retail reporting     |
 | Post inventory, calculate statements, or post statements for a group of stores | Create a group of stores that can be assigned to a batch job. When you define a batch job to post inventory, calculate statements, or post statements, you can specify which hierarchy the job applies to. When stores are added to or removed from the hierarchy, you don’t have to modify the batch job. | Retail POS posting   |
+
 
 
 

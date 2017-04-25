@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: F Classes - FormReferenceControl to FormStringControl
@@ -13967,5 +13967,6 @@ Is called when the user has finished dragging a form control.
 #### Remarks
 
 This event is not raised unless the DragDrop property is enabled for the control and a beginDrag event has already been started. To drag a control, a user presses the mouse button in the control area and then moves the mouse pointer.
+
 
 

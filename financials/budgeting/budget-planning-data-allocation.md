@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Budget planning data allocation
@@ -77,5 +77,6 @@ Next, you create a stage allocation on the **Budget planning configuration** pag
 Finally, add an automated task for budget planning stage allocation at the desired workflow stage. In the following example, two budget planning stage allocations (outlined in red) have been inserted into the workflow.
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure and filter workspaces
@@ -70,5 +70,6 @@ If individual sections of the workspace have filters, you can filter each sectio
 [![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png) 
 
 As with a workspace-wide filter, select or enter a value in the field to filter the contents of the section.
+
 
 

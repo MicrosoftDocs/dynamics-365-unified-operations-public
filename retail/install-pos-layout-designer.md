@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Install the Retail POS Layout designer
@@ -59,5 +59,6 @@ See also
 --------
 
 [Configure, download, install, and activate Retail Modern POS](retail-modern-pos-device-activation.md)
+
 
 

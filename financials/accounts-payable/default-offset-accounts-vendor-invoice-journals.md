@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Default offset accounts for vendor invoice journals and invoice approval journals
@@ -101,6 +101,7 @@ Use the following table to help decide where you should assign default accounts 
 </tr>
 </tbody>
 </table>
+
 
 
 

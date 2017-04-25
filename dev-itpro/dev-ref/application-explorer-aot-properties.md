@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Application Explorer properties
@@ -3944,6 +3944,7 @@ The default value is <strong>Auto</strong>.</td>
 </tr>
 </tbody>
 </table>
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Include physical value
@@ -56,5 +56,6 @@ The check box has slightly different effects, depending on the inventory model t
 -   A purchase order for a quantity of 3 and a cost price of USD 12.00 that has been invoice-updated
 
 In this case, the running average cost price will be USD 11.20, because both physically updated transactions and financially updated transactions are used to calculate the cost price. **Example 2** You haven't selected the **Include physical value** check box, and the cost price on the item setup is USD 10.00. You receive a purchase order for a quantity of 20 and a cost price of USD 12.00 that has been packing slip–updated. When a sales order is posted, the posted cost amount is USD 10.00, because the running average cost price won't include physically posted transactions. **Note:** For comparison, if you select the **Include physical value** check box for this item, when a sales order is posted, the posted cost amount will be USD 12.00.
+
 
 

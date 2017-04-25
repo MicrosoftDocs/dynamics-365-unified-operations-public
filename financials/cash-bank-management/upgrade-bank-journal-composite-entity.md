@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Update the bank journal composite entity
@@ -58,6 +58,7 @@ Use the following steps to add the additional BankTransactionType field to the 
             -   Verify that Bank Transaction type is mapped from Source to Staging.
 
 3.  Import the new statement.
+
 
 
 

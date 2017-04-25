@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Request for quotations (RFQs)
@@ -194,6 +194,7 @@ The following table shows how the RFQ status changes as you accept and reject bi
 | **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
 | Accept one of the bids. | Received              | Accepted               | Received                     | Accepted                      | Received                   | Accepted                    |
 | Reject the other bids.  | Rejected              | Accepted               | Rejected                     | Accepted                      | Rejected                   | Accepted                    |
+
 
 
 

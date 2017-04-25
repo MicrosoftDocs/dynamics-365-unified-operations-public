@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Retail Modern POS architecture
@@ -53,5 +53,6 @@ The view, view-controller, and devices layers depend on the operating system (fo
 Cloud POS is a hosted version of Retail Modern POS, and varies only in the way that it is rendered on specific devices or in specific browsers. Additionally, Retail Modern POS supports offline mode and therefore a local CRT. Other native peripheral support is also specific to Retail Modern POS. 
 
 [![CloudPOS and MPOS](./media/cloudpos-and-mpos.png)](./media/cloudpos-and-mpos.png)
+
 
 

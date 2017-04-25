@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Credit and collections in Accounts receivable
@@ -107,6 +107,7 @@ Process not sufficient funds (NSF) payments
 --------------------------------------------
 
 You can process NSF payments by clicking NSF payment in the Collections page. When you click this button, the payment is canceled. If an NSF fee applies for the customer, a charge transaction is created in a payment journal. The fee amount is based on the settings for the automatic charges. The automatic charges that apply for NSF payments are specified by the charges group that is selected in the Bank accounts page for the affected bank account.
+
 
 
 

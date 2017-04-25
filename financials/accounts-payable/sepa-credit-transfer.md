@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: SEPA credit transfer overview
@@ -129,5 +129,6 @@ The International Bank Account Number (IBAN) and Bank Identifier Code (BIC) are 
 
 ## How do I transmit a payment file to the bank?
 When you generate payments, the payment file is generated, and you're asked to save it from your web browser to any available location. The next step is to send the XML file to your bank. This process varies from bank to bank. Follow the instructions from your bank to submit the files to the bank for processing.
+
 
 

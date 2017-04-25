@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Version control, metadata search, and navigation
@@ -278,5 +278,6 @@ You can use Application Explorer to search for all or some elements of a model a
 4.  Specify your project properties in the new project dialog and click **OK** to create the project.
 
 **Tip:** To create a project from search results, you can add any type, name, or other filters to your search as long as all results are in the same model. For example: *model:"Fleet Management" type:Table name:^FM* will return all tables in the Fleet Management model with a name starting with the letters FM.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up reduction entries for fixed assets
@@ -105,5 +105,6 @@ See also
 --------
 
 [Microsoft Dynamics AX 2012 R3 Fixed Asset Loc﻿alization Feature Set - Japan](https://mbs.microsoft.com/partnersource/global/deployment/documentation/white-papers/msdAX2012R3JapanFixedAssets)
+
 
 

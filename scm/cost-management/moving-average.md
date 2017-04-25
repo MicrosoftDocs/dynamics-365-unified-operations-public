@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Moving average
@@ -113,6 +113,7 @@ In this moving average example, the inventory value report is printed to support
 |                  | October 31   | Total                      | 2        | 32.00  | 16.00             |
 
  **Note:** You cannot reconcile the general ledger with inventory by using the **Transaction time sorting** option. The report must be printed by using the **Posting date** option.
+
 
 
 

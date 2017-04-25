@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Compute columns and virtual fields in a data entity
@@ -228,6 +228,7 @@ The following **main** method tests your computed and virtual fields. Both field
             info(customer.FullName);
             ttsabort;
         }
+
 
 
 

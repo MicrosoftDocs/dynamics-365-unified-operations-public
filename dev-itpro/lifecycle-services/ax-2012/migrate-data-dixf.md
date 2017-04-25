@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Migrate data 
@@ -569,5 +569,6 @@ After the job has finished running, follow these steps to validate the data in t
 #### Clean up staging data
 
 After you have finished migrating your data, you should clean up the staging tables. Open **Data import export framework** &gt; **Periodic** &gt; **Staging cleanup** to identify data that you no longer require.
+
 
 

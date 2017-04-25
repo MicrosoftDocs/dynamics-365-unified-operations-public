@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure a line-item workflow
@@ -59,6 +59,7 @@ Follow these steps to specify whether the same workflow is used to process all t
     6.  To verify that the set of conditions that you entered is configured correctly, click **Test**. On the **Test workflow condition** page, in the **Validate condition** area, select a record, and then click **Test**. The system evaluates the record to determine whether it meets the conditions that you defined. Click **OK** or **Cancel** to return to the **Properties** page.
 
     On the **Workflow** tab, select the workflow select the workflow to use to process line items that meet the set of conditions that you defined.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: View purge or archive jobs (AX 2012)
@@ -222,5 +222,6 @@ To update the **Status** workspace, click **Refresh** on the toolbar.
 
 ## Export to Excel
 This command lets you export selected rows from the data grid, from all workplaces where this command is available.
+
 
 

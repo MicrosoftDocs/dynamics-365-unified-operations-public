@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Horizontal Fields and Buttons Group subpattern
@@ -112,5 +112,6 @@ This section will have answers to frequently asked questions that are related to
 ### Dynamics AX 2012 content
 
 **SalesTable** [![HorizontalFieldsButtons(3)](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+
 
 

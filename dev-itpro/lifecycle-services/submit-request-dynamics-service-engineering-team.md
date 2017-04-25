@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Submit a request to the Dynamics Service Engineering team
@@ -49,6 +49,7 @@ The following request types are supported by this functionality:
 -   **Other requests** – This includes requests other than those listed above or automated flow requests. For example, you might use this request type for upgrade or to request the system be put into maintenance mode. Note, this should not be used to submit support requests.
 -   **Package application** – To apply a package to the Production environment, on the **Environment details** page, click **Maintain** to select the package to apply. Then, select **Schedule**.
 -   **Environment deployment** – To set the deployment options and submit a request to the Dynamics Service Engineering team to deploy a new environment, click **Configure** on the **Environments** pane.
+
 
 
 

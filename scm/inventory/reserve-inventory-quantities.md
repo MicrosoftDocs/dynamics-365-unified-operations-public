@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Reserve inventory quantities
@@ -87,5 +87,6 @@ There are two options related to reservations on the **Inventory and warehouse 
 ### Inventory reservation policies on the Production parameters page
 
 The value of the **Reservation** field on the **General** tab on the **Production parameters** page determines the default point in the production process at which inventory should be reserved. For example, inventory could be reserved when work is scheduled, or when work is started.
+
 
 

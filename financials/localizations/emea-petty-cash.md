@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Petty cash for Eastern Europe
@@ -480,6 +480,7 @@ The settled amount is reflected in the <strong>Settled currency</strong> field o
 | Cash transaction                              | Go to **Cash and bank management** &gt; **Inquiries and reports** &gt; **Cash transactions** to view cash transactions. Use the **Filter** function to specify additional criteria to limit the selection of cash transactions. |
 | Journal of registration (for Estonia, Russia) | The report at **Cash and bank management** &gt; **Inquiries and reports** &gt; **Journal of registration** reflects all cash reimbursement and cash disbursement slips that have been issued.                                   |
 | Cash book (for Latvia, Lithuania, Russia)     | The report at **Cash and bank management** &gt; **Inquiries and reports** &gt; **Cash book report** reflects actual cash fund movements (receipts and expenditures).                                                            |
+
 
 
 

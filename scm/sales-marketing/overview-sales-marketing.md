@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sales and marketing
@@ -126,5 +126,6 @@ A free text invoice is an invoice that isn't related to a sales order. It contai
 #### Pro forma invoice
 
 A pro forma invoice is an invoice that is prepared as an estimate of the actual invoice amount before the invoice is posted. You can print a pro forma invoice for either a customer invoice or a free text invoice.
+
 
 

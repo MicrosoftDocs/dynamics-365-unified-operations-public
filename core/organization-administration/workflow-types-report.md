@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Workflow types report
@@ -41,5 +41,6 @@ To create a workflow, you must first select the *type* of workflow that you want
 
 ## View the report
 The [Workflow types report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep)lists each type of workflow that is available. The report also describes what each type of workflow is used for and indicates whether the workflows of each type are associated with a specific company in the organization or with the whole organization.
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure Accounts receivables and Credit and collections
@@ -114,5 +114,6 @@ The following table lists the pages that support the configuration and maintenan
 
  
 For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).
+
 
 

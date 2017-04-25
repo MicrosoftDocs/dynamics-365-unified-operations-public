@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: One-time vendors in the public sector
@@ -44,5 +44,6 @@ The vendor record uses values from the default one-time vendor account, unless n
 
 ## How do I import and create multiple onetime vendors and invoices?
 To create multiple one-time vendors and invoices, you first create a file that contains the vendor and invoice information, and then import the file into a staging table in Microsoft Dynamics 365 for Operations. You then process the imported file and generate the invoices. For information about how to create the file, see [Planning for one-time vendors in the public sector](plan-one-time-vendors-public-sector.md).  
+
 
 

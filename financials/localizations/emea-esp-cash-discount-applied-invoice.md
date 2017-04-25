@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Cash discount is applied in the invoice parameter
@@ -46,6 +46,7 @@ Usually, cash discounts are calculated during the settlement process for custome
 -   Ledger journals
 -   Invoice journals
 -   Free text invoices
+
 
 
 

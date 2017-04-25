@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Dynamics Lifecycle Services user guide
@@ -66,5 +66,6 @@ See also
 --------
 
 [Lifecycle Services](https://lcs.dynamics.com/)
+
 
 

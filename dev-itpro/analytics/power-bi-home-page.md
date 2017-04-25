@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Power BI home page
@@ -78,6 +78,7 @@ For information about how to download Power BI content and connect it to your or
 -   [Pin Power BI reports to workspaces](pin-power-bi-reports.md)
 -   [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md)
 -   [Use an Electronic reporting configuration to provide Power BI with data from Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
 
 
 

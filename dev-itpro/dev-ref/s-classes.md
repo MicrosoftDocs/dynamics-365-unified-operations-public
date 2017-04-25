@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: S Classes
@@ -5544,6 +5544,7 @@ Initializes a new instance of the systemSequence class.
 #### Parameters
 
 tableId  
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Test forms with custom patterns
@@ -111,5 +111,6 @@ Follow these steps. At each step, examine your form for layout issues. As part 
 ### Information/guidelines about layout
 
 For information about the layout properties, and for guidelines about scenarios that you should avoid, see [Page layout](page-layout.md).
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Mass hire projects
@@ -99,6 +99,7 @@ On the **Mass hire project** page, click **Open project** or **Close project** t
 </table>
 
  
+
 
 
 

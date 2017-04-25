@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Inventory locations
@@ -72,5 +72,6 @@ See also
 --------
 
 [Create a new warehouse layout (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+
 
 

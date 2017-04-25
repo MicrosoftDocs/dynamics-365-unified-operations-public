@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: View journal entries and transactions
@@ -63,5 +63,6 @@ In addition to the financial reports, you can use the following ledger reports t
 - [General ledger account balances](general-ledger-account-balances.md) 
 - [Accounting source explorer](..\accounts-payable\accounting-source-explorer.md)
 - [Financial reporting](financial-reporting-getting-started.md)
+
 
 

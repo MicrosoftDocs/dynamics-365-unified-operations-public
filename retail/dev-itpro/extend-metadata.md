@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Extend the metadata
@@ -59,5 +59,6 @@ When you use OData together with Microsoft Dynamics AX for Retail, metadata defi
             }
         }
     }
+
 
 

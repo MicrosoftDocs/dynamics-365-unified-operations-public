@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Q Classes
@@ -4288,6 +4288,7 @@ sourceCursor
 <!-- -->
 
 isForward  
+
 
 
 

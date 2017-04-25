@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Design a questionnaire
@@ -251,5 +251,6 @@ See also
 [Distributing and completing questionnaires](distribute-questionnaires.md)
 
 [Viewing and evaluating the results of questionnaires](evaluate-questionnaire-results.md)
+
 
 

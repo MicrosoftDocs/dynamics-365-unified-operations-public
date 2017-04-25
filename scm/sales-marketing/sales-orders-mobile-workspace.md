@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sales orders mobile workspace
@@ -147,6 +147,7 @@ Download and install the Dynamics 365 for Operations mobile app from your mobil
 4.  Select the customer.
 5.  Select **Contact information** or **Sales orders**. If you select **Sales orders**, a list of sales orders for the customer is shown.
 6.  Select **Sales order**. You can now view information about sales order lines, information about shipments, customer contact information, and contact information for the order taker.
+
 
 
 

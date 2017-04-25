@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Configure a one-box development environment
@@ -50,5 +50,6 @@ Setup
 
 ## Debugging
 For better performance of the X++ debugger, you might want to turn off IntelliTrace. IntelliTrace collects the complete execution history of an application. It is not supported for X++ debugging and causes performance issues in the IDE when debugging large packages like Application Suite. To turn off Intellitrace, click **Options** &gt; **IntelliTrace** &gt; **Enable IntelliTrace**, clear the check box, and then click **OK**. Note that Intellitrace is only available in the Enterprise version of Visual Studio 2015.    
+
 
 

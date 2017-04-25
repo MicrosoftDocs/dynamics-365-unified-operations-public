@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Aggregate measurements report
@@ -44,5 +44,6 @@ The [Aggregate measurements report](https://mbs.microsoft.com/customersource/no
 
 ## How the report is grouped
 The report is a Microsoft Excel file. For large reports, the rows are grouped alphabetically on tab 1. All rows are displayed when you click tab 2. [![GeneratedReports](./media/generatedreports.png)](./media/generatedreports.png)
+
 
 

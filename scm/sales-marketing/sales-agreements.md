@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sales agreements
@@ -116,5 +116,6 @@ In some situations where sales orders are created indirectly, such as when you c
 
 ## Financial dimensions on sales agreements
 You can copy financial dimensions to either document headers or individual lines of a sales agreement. You can change the dimensions on an agreement header or agreement line at any time. In this case, the dimensions are automatically copied to the release header or release line of release orders.
+
 
 

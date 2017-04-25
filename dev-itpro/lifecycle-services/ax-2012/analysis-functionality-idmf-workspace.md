@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Analysis
@@ -373,6 +373,7 @@ The **Select a snapshot** **time** list lets you select query plan statistics, q
 
 ## Export to Excel
 This command lets you export selected rows from the data grid in all workspaces where this command is available.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Control checklist
@@ -250,5 +250,6 @@ The task guide will ask the JavaScript part of the control for the DOM element t
 #### Task Recorder copy/paste/validate support
 
 For controls that need to support either Copy, Paste, or Validate (mainly for advanced X++ testing purposes), the SysTaskRecorder API exposes static methods that enable the control to inform Task Recorder when a value has been copied, pasted, or validated.
+
 
 

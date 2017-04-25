@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customize App Suite reports using extensions
@@ -55,6 +55,7 @@ The other two scenarios offer insights on how to use extensions to redirect app
 
 -   [Extend report menu items](extend-report-menu-items.md) – Customize application menu items to redirect references to a custom report design.
 -   [Custom designs for business documents](custom-designs-business-docs.md) – Delegate handlers allow you to add custom report designs to an existing Print Management document instance.
+
 
 
 

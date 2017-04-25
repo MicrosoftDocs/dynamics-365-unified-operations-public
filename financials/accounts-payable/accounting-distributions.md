@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Accounting distributions
@@ -62,4 +62,5 @@ The generic accounting distribution capabilities provide the following options f
 
 
 For more information, see [Accounting distributions and subledger journal entries for free text invoices](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+
 

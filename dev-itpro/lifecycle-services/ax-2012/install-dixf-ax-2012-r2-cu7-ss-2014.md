@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Install the AX 2012 R2 CU7 Data import/export framework for SQL Server 2014
@@ -129,5 +129,6 @@ See also
 --------
 
 [Configure the version of SQL Server Integration Services used by the Data import/export framework in an environment with multiple versions (DIXF)](configure-sql-server-integration-services-multiple-versions-dixf.md)
+
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Unit of measure and stocking policies
@@ -53,5 +53,6 @@ To set the default units that should be used for receiving processes on mobile 
 
 ## Default order settings
 As part of the creation of released products, you must select default units for purchases, sales, and inventory to process the various orders. You can set the default units and quantities for the various source documents by using the **Default order settings** and **Site specific order settings** pages. You can access these pages from the **Released products** page.
+
 
 

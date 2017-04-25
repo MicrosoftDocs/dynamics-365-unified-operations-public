@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Price adjustments and discounts
@@ -49,5 +49,6 @@ There are four types of retail discounts:
 -   **Threshold discount** – A discount that is applied when the transaction total is more than a specified amount.
 
 Both price adjustments and discounts can be associated with price groups. Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.
+
 
 

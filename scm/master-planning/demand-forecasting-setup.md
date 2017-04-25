@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Demand forecasting setup
@@ -90,5 +90,6 @@ See also
 [Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
 [Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+
 
 

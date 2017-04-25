@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: POS application and user language settings
@@ -71,6 +71,7 @@ The POS user’s language setting is set from **All workers** on the **Worker** 
 | **Company** | Default                    | Default                                                           |
 | **Store**   | Overrides company          | Overrides company                                                 |
 | **User**    | Overrides store or company | Never                                                             |
+
 
 
 

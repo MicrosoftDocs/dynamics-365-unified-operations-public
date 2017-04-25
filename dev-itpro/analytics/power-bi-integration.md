@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Power BI integration
@@ -50,5 +50,6 @@ After reports are published to PowerBI.com, users can build dashboards, share wi
 
 ## Embedding Power BI visuals in the Dynamics 365 for Operations client
 PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin reports from PowerBI.com to Dynamics 365 for Operations workspaces and pages to provide contextual insights that are related to business operations. Power BI tiles that are pinned to the Dynamics 365 for Operations client provide insightful visuals at a glance. They also let users open PowerBI.com for interactive analysis. [![fmclerkworkspacepowerbi](./media/fmclerkworkspacepowerbi.jpg)](./media/fmclerkworkspacepowerbi.jpg) You can learn how to configure workspace integration  in the topic [Configure Power BI integration](configure-power-bi-integration.md).
+
 
 

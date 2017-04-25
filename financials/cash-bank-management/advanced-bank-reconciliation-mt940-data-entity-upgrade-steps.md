@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Advanced bank reconciliation MT940 Import – Composite data entity upgrade
@@ -67,6 +67,7 @@ Use the following steps to add the bank statement import entity to support the 
                 -   Verify that **SequenceNumber** is mapped from Source to Staging.
 
 3.  Import the new statement.
+
 
 
 

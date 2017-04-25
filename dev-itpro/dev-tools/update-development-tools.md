@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Update Visual Studio development tools
@@ -58,6 +58,7 @@ In order to install a new version of the development tools, you'll need to unins
 2.  Double-click (or right-click and **Open**) the VSIX file of the new version.
 3.  Follow the installation instructions.
 4.  When installation is complete, you can start Visual Studio and start developing your application.
+
 
 
 

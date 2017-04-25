@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up earning codes and earning code groups
@@ -254,5 +254,6 @@ See also
 [Generate earnings](noam-usa-generate-earnings.md)
 
 [Generate payroll reports](noam-usa-generate-payroll-reports.md)
+
 
 

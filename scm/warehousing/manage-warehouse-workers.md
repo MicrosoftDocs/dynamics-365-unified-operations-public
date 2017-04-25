@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Manage warehouse workers
@@ -59,6 +59,7 @@ Analysis of the time that is used to process work items can help drive improveme
 
 -   **Labor by user** – This report shows worker productivity, based on actual times against expected times.
 -   **Labor by work transaction type** – You can use this report to investigate inefficiencies in specific warehouse processes. For example, you notice that picks for transfer orders are taking longer this week than in previous weeks. You can then use this information for further investigation.
+
 
 
 

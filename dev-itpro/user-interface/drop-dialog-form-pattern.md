@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Drop Dialog form pattern
@@ -161,5 +161,6 @@ This section will have answers to frequently asked questions that are related to
 ### AX 2012 content
 
 [![DropDialog(4)](./media/dropdialog4.png)](./media/dropdialog4.png)
+
 
 

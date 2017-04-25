@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Import data from a CSV data source (AX 2012)
@@ -111,6 +111,7 @@ View staging data:
 1.  In **Data Import/Export Framework**, click **Common** &gt; **Processing group** &gt; **Execution history** &gt; **View staging data**, and then select the job that ran.
 2.  Click **Target**.
 3.  Verify that the data is correct.
+
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Maintainance in the Intelligent Data Management Framework (AX 2012)
@@ -646,5 +646,6 @@ This section describes how to permanently delete recycled records after a succes
 4.  A purge task deletes records from the tables in the relationship tree of the Purge Object, and inserts them into purge tables in the production database. The naming convention of purge tables is purge\_nnnn, where nnnn is the ID of the table in the production database. For example, **table purge\_343** contains records that are deleted from the **PurchParm** table. Look at the **Properties** pane in the **Configure** &gt; **Purge templates/Purge Object** workspace to get the table ID for a table in the Purge Object. Start SQL Server Management Studio, and navigate to the **Tables** node for the production database in the left pane. Verify that records for the traceid you used in step 1 do not exist in the purge tables that correspond to the tables in the **Trace** pane of the **Status** workspace.
 
 Perform this activity during a scheduled maintenance window. **Caution:** These records are permanently deleted from the database. You must exercise extreme caution and thoroughly test your recycling strategy in a test environment before working in the production environment.
+
 
 

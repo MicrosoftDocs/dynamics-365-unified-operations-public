@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Sales returns
@@ -316,5 +316,6 @@ In this example, the return order line is created by using the **Find sales orde
 [![Return order line that is created by using Find sales order ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
 
 **Note:** **Discount** and **Return cost price** are set correctly. Therefore, an exact reversal of the customer invoice occurs.
+
 
 

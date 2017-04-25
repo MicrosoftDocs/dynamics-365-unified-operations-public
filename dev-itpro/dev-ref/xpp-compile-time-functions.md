@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: X++ compile-time functions
@@ -2473,5 +2473,6 @@ This is a compile-time function. For more information, see [Overview](#overview)
         print s;
         pause;
     }
+
 
 

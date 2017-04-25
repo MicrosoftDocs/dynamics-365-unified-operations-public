@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: M Classes
@@ -4163,5 +4163,6 @@ arrayIndex
 Initializes a new instance of the MultiSelectionContext class.
 
     private void new()
+
 
 

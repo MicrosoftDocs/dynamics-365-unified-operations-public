@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Customization analysis
@@ -74,5 +74,6 @@ See also
 --------
 
 [Best Practices for Microsoft Dynamics AX Development](http://msdn.microsoft.com/library/833e44ff-d89a-459a-84be-0cc5da57ee90(AX.60).aspx)
+
 
 

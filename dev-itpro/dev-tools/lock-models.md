@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Turn off model customization and deprecate functionality
@@ -153,5 +153,6 @@ Again, for the reasons that we mentioned earlier, you may never be able to get 
 ### Deprecating metadata
 
 For deprecating model elements (tables, data entities, EDTs, Enums, ...etc.), use the property **IsObsolete** that is available on all model element types. **IsObsolete** is also available on table, view, and data entity fields. When you set **IsObsolete** to Yes, references to that element or field will cause compilation warnings.
+
 
 

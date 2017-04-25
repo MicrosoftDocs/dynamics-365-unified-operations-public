@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: K Classes
@@ -112,5 +112,6 @@ Initializes a new instance of the Keywords class.
 ### Method finalize
 
     public void finalize()
+
 
 

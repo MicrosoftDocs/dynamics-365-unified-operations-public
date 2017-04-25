@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Product-related translations FAQ
@@ -129,6 +129,7 @@ To manage translations for values in a dimension value group, follow these steps
 
 ## When can translations of productrelated information be managed?
 Translations of product-related information can be managed at any time. When translations are updated for a dimension value that is associated with a product, the product information is updated, regardless of whether the product has transactions.
+
 
 
 

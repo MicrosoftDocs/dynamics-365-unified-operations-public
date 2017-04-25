@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Benefit eligibility policies
@@ -58,5 +58,6 @@ See also
 --------
 
 [Defining and managing a benefit program](manage-benefit-program.md)
+
 
 

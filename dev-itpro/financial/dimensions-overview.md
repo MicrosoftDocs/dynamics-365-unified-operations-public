@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Add dimensions to a Excel template
@@ -108,5 +108,6 @@ See also
 [Dimension Entry control uptake](dimension-entry-control-uptake.md)
 
 [Extensibility home page](..\extensibility\extensibility-home-page.md)
+
 
 

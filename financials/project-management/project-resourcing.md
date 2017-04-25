@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Project resourcing
@@ -359,6 +359,7 @@ After you have either verified or completed the tasks above, you can complete th
 1.  Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.
 2.  In the list of projects, click the **Project ID** link for the **XYZ Upgrade Phase 2** project.
 3.  On the **Project team and scheduling** FastTab, verify that the project resources that are listed are correct.
+
 
 
 

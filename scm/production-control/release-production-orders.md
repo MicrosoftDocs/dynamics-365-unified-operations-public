@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Release production orders
@@ -65,6 +65,7 @@ Work for raw material picking is generated during release. Work is generated onl
 -   A location directive for raw materials picking that determines which warehouse location to pick the materials in
 -   A wave template for raw materials, where policies for the execution of warehouse work are configured
 -   A production input location that determines where materials are put
+
 
 
 

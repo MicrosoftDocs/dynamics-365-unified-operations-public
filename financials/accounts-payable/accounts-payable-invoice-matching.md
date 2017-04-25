@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Accounts payable invoice matching
@@ -196,6 +196,7 @@ Vendor invoices are often based on product receipts that represent actual shipme
 -   View and approve price match discrepancies between the invoice net unit price and the purchase order net unit price. You can set up price tolerance percentages for legal entities, vendors, and items. If the vendor invoice line price is not in the acceptable price tolerance, you can save the invoice until it is approved for posting, or until you receive a correction from the vendor.
 
 For more information, see [Three-way matching policies](three-way-matching-policies.md).
+
 
 
 

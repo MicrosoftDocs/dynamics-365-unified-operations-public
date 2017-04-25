@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create production orders
@@ -46,6 +46,7 @@ A production order can be created in the following scenarios:
 -   Created by master planning execution based on material demand.
 -   Created directly from a sales order line or when a higher-level production order is created and estimated (pegged supply).
 -   Created manually.
+
 
 
 

@@ -21,3 +21,4 @@
 # Trace item and batch
 ## [Merge inventory batch](merge-inventory-batches.md)
 ## [Trace item and raw material](trace-items-raw-materials-inventory-production-sales.md)
+

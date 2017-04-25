@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: BOM calculations
@@ -95,6 +95,7 @@ An order-specific BOM calculation represents a variation of a BOM calculation fo
 
 -   An order-specific BOM calculation doesn't generate an item cost record within a costing version. Therefore, the BOM calculation policies aren't applied when an item cost record is created, or when a cost record is overwritten.
 -   An order-specific BOM calculation always uses the active cost records for components, cost categories, and indirect cost calculation formulas.
+
 
 
 

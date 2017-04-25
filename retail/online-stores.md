@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Online store overview
@@ -58,5 +58,6 @@ Before you create an online store, you must define the retail channel navigation
 
 ## Organization hierarchies
 Organization hierarchies are used to structure retail channels. Organization hierarchies represent the relationships between the organizations that make up your business. When you set up online stores, you can add them to an organization hierarchy. The stores then share the data that is used for assortments, replenishment, and reporting. When you create an organization hierarchy, you assign a purpose to it. The purpose indicates how the hierarchy is used in the business structure. You can create one organization hierarchy for your store operations, and use that hierarchy for assortments, replenishment, and reporting. Alternatively, you can create a separate organization hierarchy for each purpose. You can also create multiple hierarchies that have the same purpose, and assign a separate channel to each one. If you plan to publish retail product catalogs to the online store, you should, at a minimum, add the online store to an organization hierarchy for assortments. The products in a catalog are selected from the assortments that are assigned to the online store. When the catalog is published, the publishing process compares the effective dates for the assortment that is assigned to the online store with the products that are included in the catalog to determine which products to make available in the online store.
+
 
 

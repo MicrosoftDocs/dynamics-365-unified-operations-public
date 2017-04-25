@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Define retail channel communications (Commerce Data Exchange)
@@ -73,5 +73,6 @@ Commerce Data Exchange: Real-time Service is an integrated service that provides
 [![Real-time Service](./media/rts.png)](./media/rts.png) 
 
 A predefined Real-time Service profile is created.
+
 
 

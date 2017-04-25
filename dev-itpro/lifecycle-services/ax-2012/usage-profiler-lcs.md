@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Usage profiler 
@@ -107,6 +107,7 @@ You can view a report of your estimated weekly peak load and the operating sites
 
 1.  On the main **Usage profiler** page, click **Summary** to view the **Summary** report.
 2.  On the main **Usage profiler** page, click **Infrastructure estimation** to view the **Infrastructure estimation** report.
+
 
 
 

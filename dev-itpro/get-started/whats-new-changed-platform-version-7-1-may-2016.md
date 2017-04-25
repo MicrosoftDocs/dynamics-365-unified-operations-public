@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: What's new or changed in Dynamics AX platform update 1 (May 2016)
@@ -257,5 +257,6 @@ See also
 [What’s new or changed](whats-new-changed.md)
 
 [New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
+
 
 

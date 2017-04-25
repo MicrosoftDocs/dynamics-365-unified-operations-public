@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up bar codes
@@ -49,5 +49,6 @@ See also
 --------
 
 [Set up bar code masks](set-up-bar-code-masks.md)
+
 
 

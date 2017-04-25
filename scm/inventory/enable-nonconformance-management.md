@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Nonconformance management
@@ -60,5 +60,6 @@ See also
 [Quality management processes](quality-management-processes.md)
 
 [Set up prerequisites for non-conformance management (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+
 
 

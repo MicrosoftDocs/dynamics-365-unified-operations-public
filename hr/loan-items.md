@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Manage items lent to workers
@@ -60,5 +60,6 @@ See also
 --------
 
 [Human resources](index.md)
+
 
 

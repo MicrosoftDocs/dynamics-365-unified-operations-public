@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Analyze store performance
@@ -50,4 +50,5 @@ This report provides a snapshot of following summaries as part of store performa
 -   Tax summary
 -   Price overrides summary
 -   Discounts summary
+
 

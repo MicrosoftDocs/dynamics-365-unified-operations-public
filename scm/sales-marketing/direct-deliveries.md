@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Direct deliveries
@@ -56,5 +56,6 @@ If you try to delete a sales order line that has a delivery type of **Direct del
 
 ## Warehouse
 When you create a direct delivery, the items that you sell never physically arrive at your warehouse. However, you must still specify a warehouse on the sales order line. Similarly, picking requirements might be specified on the item model group for the item. However, because the items never physically arrive at your warehouse, these requirements are ignored when the sales order is a direct delivery.
+
 
 

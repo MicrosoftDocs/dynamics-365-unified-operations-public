@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Create a customer invoice
@@ -159,6 +159,7 @@ The following fields change the behavior of the posting process.
 </tr>
 </tbody>
 </table>
+
 
 
 
