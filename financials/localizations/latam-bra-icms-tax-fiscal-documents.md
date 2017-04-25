@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: ICMS tax fiscal documents for Brazil
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # ICMS tax fiscal documents for Brazil
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains the concept of tax fiscal documents and describes the requirements for generating them.
 
@@ -131,5 +134,6 @@ The following prerequisites must be set up before you can create and post tax
 
 -   Incoming fiscal documents to transfer the ICMS tax credit from other legal entities, subsidiaries/branches of same company/organization destined for compensation of the debt balance of the ICMS (CFOP:1.601 and 1.602)
 -   Incoming fiscal documents to appropriate 1/48 of the ICMS credit (CFOP:1.604) (CIAP)
+
 
 

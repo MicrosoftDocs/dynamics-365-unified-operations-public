@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Settlement overview
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settlement overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides general information about the settlement process. It describes the types of transactions that can be settled, when and how transactions can be settled, and the results of the settlement process.
 
 During settlement, the transactions on one document are applied to the transactions on another document to increase or decrease the balance of each document. For example, a payment can be applied to an invoice. Various transaction types can be settled, at different times, and through various methods. Settlement can also cause new transactions to be generated.
@@ -53,4 +56,5 @@ As transactions are settled, the outstanding balance of each transaction is incr
 -   If the payment amount equals the invoice amount, both the payment and the invoice are closed, and the balance of both is 0.00.
 
 If a [payment is less than the invoice amount](../accounts-payable/vendor-payments-partial-amount.md) because of a cash discount, write-off, or underpayment, the invoice and payment might still be closed, depending on the setup of settlement in Accounts payable parameters and Accounts receivable parameters. Settlement can also generate transactions. For example, the settlement of an invoice and payment might produce a cash discount, realized gain or loss, sales tax adjustments, write-offs, or penny differences.
+
 

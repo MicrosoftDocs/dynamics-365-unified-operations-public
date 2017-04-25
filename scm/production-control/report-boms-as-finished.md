@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Report BOMs as finished
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Report BOMs as finished
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about reporting BOMs as finished.
 
@@ -88,4 +91,5 @@ In this case, item number COMP is exploded into its raw material, item number RM
 | 1     | RM          | -1       |
 
 In this case, the two on-hand pieces of item number COMP are considered. However, because three pieces of item number FG are required, one piece of item number RM is also required in order to make the additional one piece of COMP.
+
 

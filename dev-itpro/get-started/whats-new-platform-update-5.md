@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Operations platform update 5 (March 2017)
@@ -31,6 +31,7 @@ ms.search.validFrom: 2017-03-31
 ---
 
 # What's new or changed in Dynamics 365 for Operations platform update 5 (March 2017)
+
 [!include[banner](../includes/banner.md)]
 
 
@@ -50,6 +51,7 @@ Development and customization
 | Feature                                              | **Why this is important**                                                                                                                                                                                                                                                                                                  |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enhanced administration features for personalization | The personalization administrator can now apply or remove form personalizations for groups of users. Previously personalization administration was only possible one user at a time. For more information, see [Personalize the user experience](https://docs.microsoft.com/en-us/dynamics365/operations/get-started/personalize-user-experience). |
+
 
 
 

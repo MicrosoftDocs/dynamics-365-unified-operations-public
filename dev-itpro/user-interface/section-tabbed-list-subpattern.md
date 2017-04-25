@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Section Tabbed List subpattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Section Tabbed List subpattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Section Tabbed List subpattern. This subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains a set of vertical tabs, each of which contains a filtered list of data.
 
@@ -84,4 +87,5 @@ This section will have answers to frequently asked questions that are related t
 ### Open issues
 
 None
+
 

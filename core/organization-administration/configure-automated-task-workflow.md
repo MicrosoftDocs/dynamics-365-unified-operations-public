@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure an automated task in a workflow
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Configure an automated task in a workflow
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how to configure the properties for an automated task.
 
@@ -108,5 +111,6 @@ You can send notifications to people when an automated task has been run or canc
     </table>
 
 8.  Repeat steps 3 through 7 for each event that you selected in step 2.
+
 
 

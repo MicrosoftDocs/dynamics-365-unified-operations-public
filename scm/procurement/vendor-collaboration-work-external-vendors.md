@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Vendor collaboration with external vendors
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Vendor collaboration with external vendors
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
 
@@ -174,5 +177,6 @@ If you’re using consignment inventory, vendors can use the vendor collaborati
 -   **Purchase orders consuming consignment inventory** - Purchase orders for consignment inventory are generated when the ownership of the inventory is changed from the vendor to your company. A product receipt is posted at the same time. These consignment purchase orders are only displayed on the **Purchase orders consuming consignment inventory** page. They are not included in the **All confirmed purchase orders** page in the **Vendor collaboration** module.
 -   **Products received from consignment inventory** - This page lists all the transactions where the ownership of products has been transferred from the vendor to your company. Vendors can use this information to invoice the customer.
 -   **On-hand consignment inventory** - This page shows the vendor owned on-hand consignment inventory that has been received at your warehouse.
+
 
 

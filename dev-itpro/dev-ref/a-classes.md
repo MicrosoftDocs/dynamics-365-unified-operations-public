@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: A Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # A Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter A.
 
@@ -1485,4 +1488,5 @@ Microsoftinternal use only.
 Initializes a new instance of the AxaptaCOMConnectorMonitor class.
 
     public void new()
+
 

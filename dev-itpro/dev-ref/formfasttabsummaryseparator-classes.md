@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: F Classes - FormFastTabSummarySeparator to FormGridControl
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # F Classes - FormFastTabSummarySeparator to FormGridControl
+
+[!include[banner](../includes/banner.md)]
+
 
 API reference for classes from FormFastTabSummarySeparator to FormGridControl.
 
@@ -8365,4 +8368,5 @@ Indicates that the mouse pointer has left the control.
 Sets the focus on the control.
 
     public void setFocus()
+
 

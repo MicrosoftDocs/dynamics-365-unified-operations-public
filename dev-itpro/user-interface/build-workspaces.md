@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Build operational workspaces
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Build operational workspaces
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 
@@ -177,4 +180,5 @@ When a workspace contains a chat, that chart is be modeled as a separate form, a
 #### Count tiles have queries defined
 
 A tile caching system has been implemented to improve performance of workspaces, as these forms generally contain several count tiles. For these count tiles to work correctly with the caching system, each tile must have a query defined. That query may be defined on the tile or on the menu item referenced by the tile. The intent of this BP check is to ensure a query is defined in one of these two locations for all count tiles.
+
 

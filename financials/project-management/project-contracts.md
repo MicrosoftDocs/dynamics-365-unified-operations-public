@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Project contracts
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Project contracts
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes and provides examples of the project contracts that you can create for various types of projects and funding sources, and how you can manage contracts and invoice project customers in Microsoft Dynamics 365 for Operations.
 
@@ -344,4 +347,5 @@ When you set up the project contract, you agree to bill the customer each month 
 -   You create a customer invoice at the end of each calendar month during the project.
 
 During the first month, a total of 800 hours are recorded by the consultants on the project. The cost of office supplies that are charged to the project is 2,000. Therefore, at the end of the month, you create an invoice for 122,000, which is calculated as 800 hours at 150 per hour, plus 2,000 for office supplies.
+
 

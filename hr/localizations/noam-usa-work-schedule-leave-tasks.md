@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up work schedules and leave
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Set up work schedules and leave
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 
@@ -93,4 +96,5 @@ Repeat this step for any additional salaried positions that the worker holds.
 
 ## Next step
 The next step is to set up benefit accrual plans. For more information, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).
+
 

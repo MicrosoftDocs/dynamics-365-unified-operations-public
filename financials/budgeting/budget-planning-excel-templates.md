@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Budget planning templates for Excel
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Budget planning templates for Excel
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how to create Microsoft Excel templates that can be used with budget plans.
 
@@ -128,4 +131,5 @@ Yes, most of the standard Excel capabilities will work in budget plan templates
 You can also create and use pivot tables and charts for additional groupings and visualizations of budget data. On the **Data** tab, in the **Connections** group, click **Refresh All**, and then click **Connection Properties**. Click the **Usage** tab. Under **Refresh**, select the **Refresh data when opening the file** check box. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
+
 

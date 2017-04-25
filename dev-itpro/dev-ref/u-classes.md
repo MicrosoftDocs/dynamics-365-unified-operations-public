@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: U Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # U Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter U.
 
@@ -332,4 +335,5 @@ The following example calls the UtilFile.reindex method. It checks whether the u
 ### Method flushCache
 
     public void flushCache()
+
 

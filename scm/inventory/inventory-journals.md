@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Inventory journals
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Inventory journals
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how you can use inventory journals to post various types of physical inventory transactions. 
 
@@ -94,4 +97,5 @@ A journal can be accessed by only one user at a time. If several users must acce
 
 ## Posting journal lines
 You can post the journal lines that you create at any time until you've locked an item from additional transactions. The data that you enter in a journal remains in that journal, even if you close the journal without posting the lines.
+
 

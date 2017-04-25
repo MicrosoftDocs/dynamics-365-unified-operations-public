@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Overview of Microsoft Dynamics 365 for Operations for Developers and IT Pros
@@ -67,3 +67,4 @@ The Microsoft Dynamics 365 for Operations mobile app empowers your organization
 
 # Integration and data entities
 Data from Dynamics 365 for Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities](data-entities\data-entities.md).
+

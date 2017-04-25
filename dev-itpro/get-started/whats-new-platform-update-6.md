@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Operations platform update 6 (April 2017)
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 6
 
 # What's new or changed in Dynamics 365 for Operations platform update 6 (April 2017)
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in April 2017 and has a build number of XXX.
 
 General
@@ -41,3 +44,4 @@ General
 |----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **What you can do**                                            | **Why is this important**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |   
+

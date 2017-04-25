@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Install and configure Microsoft Dynamics 365 for Operations &#8211; Warehousing
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Install and configure Microsoft Dynamics 365 for Operations &#8211; Warehousing
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how to install and configure Microsoft Dynamics 365 for Operations - Warehousing.
 
@@ -102,5 +105,6 @@ In case of a lost or compromised device, you must remove access to Dynamics 365 
 6.  Click the **Configure** tab, scroll down and ensure that the **Client ID** of the application is the same as in step 2 in this section.
 7.  Click the **Delete** button in the command bar.
 8.  Click **Yes** in the confirmation message.
+
 
 

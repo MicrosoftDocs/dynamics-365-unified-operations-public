@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Italian black list report
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Italian black list report
+
+[!include[banner](../includes/banner.md)]
+
 
 Learn how to set up and maintain the Italian black list report.
 
@@ -67,5 +70,6 @@ Use the **Italian black list report** page to create a new report and transfer t
 -   Use **Transfer** to transfer the customer and vendor invoice transactions to the **Transactions** section based on the criteria that are specified in the **General** section. Only transactions that are associated with a sales tax code are displayed on the report. Verify the transactions and make changes, if required.
 -   Use **Apply threshold** to exclude invoices from the **Italian black list** report that are below the threshold amount that is specified in the **Threshold amount** field in the **General** section.
 -   Use **Report** to generate and export the report as a file.
+
 
 

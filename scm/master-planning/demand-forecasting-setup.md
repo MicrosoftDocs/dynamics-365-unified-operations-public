@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Demand forecasting setup
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Demand forecasting setup
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the setup tasks that you must perform to prepare for demand forecasting.  
 
@@ -87,4 +90,5 @@ See also
 [Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
 [Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+
 

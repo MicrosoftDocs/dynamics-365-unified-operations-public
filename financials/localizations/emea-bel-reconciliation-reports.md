@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Reconciliation reports for Belgium
@@ -31,7 +31,8 @@ ms.search.validFrom: 2016-05-31
 ---
 
 # Reconciliation reports for Belgium
-"[!include[banner](../includes/banner.md)]"
+
+[!include[banner](../includes/banner.md)]
 
 
 This topic describes the standard reports that Dynamics 365 for Operations provides to help you with the INTERVAT tax declaration and reconciliation analysis.
@@ -93,5 +94,6 @@ The parameters for this report give you lots of flexibility. You can get a very 
 
 ## Purchase sales tax transactions
 The **Purchase sales tax transactions** report shows transactions that have a purchase duty. The purchase duty is calculated and posted together with sale tax payments. Both purchase duties and sales taxes are reported for the settlement period. The settlement period is defined per sales tax authority on the **Sales tax settlement periods** page. The information in the header section of the report provides includes relevant details such as the tax exempt number, enterprise number, period. The information in the details section includes the journal, voucher, date, vendor account, name, amount inclusive of sales tax, and sales tax reporting codes. This report is an external report. The accountant or accounting manager periodically generates it and submits to the appropriate authorities. To print the **Purchase sales tax transactions** report, click **Tax** &gt; **Inquiries and reports** &gt; **Sales tax reports** &gt;**Purchase sales tax transactions**.
+
 
 

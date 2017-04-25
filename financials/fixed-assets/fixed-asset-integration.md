@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fixed assets integration
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Fixed assets integration
+
+[!include[banner](../includes/banner.md)]
+
 
 Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up Fixed assets so that it is integrated with purchase orders.
 
@@ -95,4 +98,5 @@ To delete the association between a project and an asset, clear the **Fixed asse
 You can also designate a fixed asset that you’re creating or manufacturing as part of an estimate project. At the end of an estimate project, you can automatically post an asset acquisition transaction.
 
 For more information, see [Acquire assets through procurement](acquire-assets-procurement.md)
+
 

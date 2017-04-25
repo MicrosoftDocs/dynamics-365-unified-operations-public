@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Production order defaults in manufacturing execution
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Production order defaults in manufacturing execution
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -71,5 +74,6 @@ Material consumption during the Report as finished process for a production or
 -   **Flushing principle** – When a production order is reported as finished, quantities of materials will be consumed according to the flushing principle that is set on the production BOM lines. Only material lines where the flushing principle is set to **Finish** will be consumed.
 -   **Always** – Quantities of materials that are proportional to the quantity that is reported as finished will always be consumed.
 -   **Never** – Quantities of materials will never be consumed.
+
 
 

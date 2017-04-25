@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: N Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # N Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter N.
 
@@ -163,4 +166,5 @@ blockSize
 Initializes a new instance of the NumberSequenceSessionLessCache class.
 
     public void new()
+
 

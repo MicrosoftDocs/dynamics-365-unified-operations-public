@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: O Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # O Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter O.
 
@@ -2045,4 +2048,5 @@ You can override the method as part of the process of making an API more secure.
 Initializes a new instance of the OverwriteSystemfieldsPermission class.
 
     public void new()
+
 

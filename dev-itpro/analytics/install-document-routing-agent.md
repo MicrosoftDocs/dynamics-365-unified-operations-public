@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Install the Document Routing Agent to enable network printer devices
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Install the Document Routing Agent to enable network printer devices
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 for Operations.
 
@@ -129,4 +132,5 @@ Not at this time. There are several hard dependencies on Azure capabilities that
 ###### Does the user who installs the Document Routing Agent have to be part of a Dynamics 365 for Operations security group?
 
 Yes. To access the agent installation links, the user must be part of the **Document routing client** security role.
+
 

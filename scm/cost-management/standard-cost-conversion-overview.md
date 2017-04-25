@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Standard cost conversion overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Standard cost conversion overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides a process overview to help you set up and run a standard cost conversion. The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion. 
 
@@ -101,4 +104,5 @@ See also
 --------
 
 [Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
+
 

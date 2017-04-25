@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fixed asset revaluation groups
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Fixed asset revaluation groups
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about fixed asset revaluation groups for Spain.
 
@@ -91,6 +94,7 @@ You can set up a revaluation group in the **Revaluation groups** page. In the up
 </tr>
 </tbody>
 </table>
+
 
 
 

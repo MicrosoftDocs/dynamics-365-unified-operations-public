@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Supply chain management home page
@@ -59,3 +59,4 @@ For example, you can read the recent posts about:
 
 ## eLearning courses
 For information about Microsoft Dynamics 365 for Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 
+

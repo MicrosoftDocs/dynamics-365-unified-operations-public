@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ container run-time functions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ container run-time functions
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the container run-time functions.
 
@@ -297,4 +300,5 @@ The first element of the container is specified by the number **1**.
             print "";
             conPrint(c2);
     }
+
 

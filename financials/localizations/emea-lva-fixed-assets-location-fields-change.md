@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fixed assets location change tracking for Latvia
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Fixed assets location change tracking for Latvia
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about the change tracking functionality for fixed asset location fields for legal entities with a primary address in Latvia.
 
 For legal entities with a primary address in Latvia, when you modify the following fields on the **Fixed asset** page, a record of the modification is saved for later viewing.
@@ -46,5 +49,6 @@ Your modification is saved when you click **Save** or when you move your focus 
 2.  Select a fixed asset.
 3.  On the **Fixed asset** tab, click **Transfers** &gt; **Internal transfer history**.
 4.  Optional: Click **Print** &gt; **Internal transfer statement**.
+
 
 

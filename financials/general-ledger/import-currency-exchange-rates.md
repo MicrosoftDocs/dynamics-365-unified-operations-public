@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Import currency exchange rates
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Import currency exchange rates
 
+[!include[banner](../includes/banner.md)]
+
+
 If a legal entity has received invoices in foreign currencies, it’s necessary to convert the foreign currency into the local currency. This means that up-to-date exchange rates for different currencies are required. This topic provides an overview of the required settings and processing for importing foreign exchange reference rates published over the Internet by the exchange rate providers, such as the European Central Bank and the Central Bank of Russia.
 
 The following sections describe the flow of information that is used for setting up and processing the import of foreign exchange rates.
@@ -58,6 +61,7 @@ You can import exchange rates from the exchange rate providers source, and set t
 | **Create necessary currency pairs**    | This check box manages the automatic creation of currency pairs, if the currency pairs that are imported do not exist. This option might not be available for some providers.                                                                                                                                                                                               |
 | **Override existing exchange rates**   | This check box manages the update of the existing exchange rate for a currency pair when the exchange rate for a specific date already exists. If you do not select this check box, the exchange rate for the specific dates is not imported if another exchange rate already exists.                                                                                       |
 | **Prevent import on national holiday** | This check box manages the import of the exchange rate for a date that is a public holiday. For example, if you select this check box and use the European Central Bank as the exchange rate provider, the system will not update the exchange rate on a public holiday that is related to the current legal entity. This option might not be available for some providers. |
+
 
 
 

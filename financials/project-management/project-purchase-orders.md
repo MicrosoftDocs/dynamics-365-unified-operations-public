@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Purchase orders for a project
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Purchase orders for a project
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the various methods that you can use to create purchase orders for a project. The method that you use depends on the purpose of the purchase order, and when the purchased items are consumed and charged to a project.
 
@@ -78,4 +81,5 @@ You can use one of the following methods to create a purchase order in Project m
 
 > [!NOTE] 
 > When you update the vendor invoice or packing slip, you're prompted to update the packing slip on the item requirement.
+
 

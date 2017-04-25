@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Simulate cost changes by using a costing version for planned costs
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Simulate cost changes by using a costing version for planned costs
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how you can simulate the effects of cost changes on a manufactured item’s calculated costs by using a separate costing version for planned costs.
 
 You can simulate the effects of cost changes on the calculated costs of a manufactured item by using a separate costing version for planned costs. Use this separate costing version to enter pending cost records that reflect incremental cost changes, and to calculate the cost impact on manufactured items. Because the Active costs fallback principle will be used in the bill of materials (BOM) calculations, only the incremental cost changes must be entered.
@@ -58,4 +61,5 @@ The following scenarios illustrate how the simulation costing version is used to
 -   Simulate the cost change in an indirect cost calculation formula. For example, the cost change might reflect an expected increase or decrease in manufacturing overhead. To define the change in an indirect cost calculation formula, use the **Costing sheet setup** page to enter a pending cost record in the simulation of costing version, and to validate and save the change.
 
 After you enter the simulated cost changes, calculate the costs for manufactured items that are affected by the cost changes. Use the **Calculation** page for the simulation costing version, and identify the selected manufactured items that will be affected by the cost changes. The BOM calculations apply to all manufactured items unless you select specific items. Alternatively, you can use the BOM calculation option for where-used updates. View the item cost records in the simulation costing version to analyze how the simulated cost changes affected the costs of the selected manufactured items. Use the **Item price** page and the **Calculate item cost** page to view and analyze the costs.
+
 

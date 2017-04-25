@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Overhead calculation
@@ -31,6 +31,9 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Overhead calculation
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the typical processes for calculating and allocating overhead costs.
 
@@ -1410,4 +1413,5 @@ In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dumm
 
 > [!NOTE]
 > This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, this overhead cost is allocated to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more detailed information, see Cost roll-up policy. (Note that this topic isn't competed yet but is coming soon.)
+
 

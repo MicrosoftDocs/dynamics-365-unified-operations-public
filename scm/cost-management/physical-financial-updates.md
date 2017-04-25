@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Physical and financial updates
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Physical and financial updates
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides an overview of which types of transactions increase or decrease inventory quantities. 
 
@@ -73,4 +76,5 @@ When a financial transaction is posted, the status of the transaction record is 
 -   Negative quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer
 
 Transactions that decrease quantity are posted at the running average cost price. Therefore, the inventory close procedure is required in order to settle issue transactions to receipt transactions, based on the inventory model that is assigned to each item.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Add extension properties to a customer entity
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Add extension properties to a customer entity
+
+[!include[banner](../includes/banner.md)]
+
 
 This tutorial shows how to use extension properties to extend an entity. 
 
@@ -284,5 +287,6 @@ You will manually change the channel database for development. For the live depl
 1.  Add the channel database change file to the database folder, and register it in **customization.settings**.
 2.  Run **msbuild** for the whole Retail SDK solution. All packages will have all appropriate changes.
 3.  Deploy packages, either by using Microsoft Dynamics Lifecycle Services (LCS) or manually.
+
 
 

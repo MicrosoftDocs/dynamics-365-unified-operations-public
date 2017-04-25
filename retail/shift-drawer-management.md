@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Shift and cash drawer management
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Shift and cash drawer management
+
+[!include[banner](includes/banner.md)
+
 
 This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone. Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.
 
@@ -98,5 +101,6 @@ A shared shift is used in an environment where multiple cashiers share a cash dr
 8.  After you’ve removed the cash from the last cash drawer, count all the cash from all the cash drawers.
 9.  Use the **Declare tender** operation to declare the total amount of cash from all the cash drawers that are included in the shared shift.
 10. Use the **Close shift** operation to close the shared shift.
+
 
 

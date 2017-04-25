@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Post the pre-acquisition of a fixed asset
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Post the pre-acquisition of a fixed asset
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up and post fixed asset pre-acquisitions.
 
 **Note:** The functionality for posting fixed asset pre-acquisitions is available only for legal entities that have their primary address in Hungary or the Czech Republic. A pre-acquisition of a fixed asset isn't depreciable, and it doesn't affect the acquisition costs or the net book value of the fixed asset. When you post a pre-acquisition, the status of the fixed asset is changed to **Acquired**. A fixed asset that has the **Acquired** status isn't depreciable. By contrast, when you post an acquisition, the status is changed to **Open**, and the fixed asset is depreciable.
@@ -53,5 +56,6 @@ Before you can post a pre-acquisition, you must complete the following setup:
 8.  Click **Select** to set up the selection criteria, and then click **OK**.
 9.  Click **OK** to close the **Pre-acquisition proposal** page.
 10. Click **Post** &gt; **Post** to post the pre-acquisition transaction. On the **Books** page, the status of the fixed asset should now be **Acquired**.
+
 
 

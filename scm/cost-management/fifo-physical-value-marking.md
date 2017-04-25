@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: FIFO with physical value and marking
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # FIFO with physical value and marking
+
+[!include[banner](../includes/banner.md)]
+
 
 First in, First out (FIFO) is an inventory model in which the first acquired receipts are issued first. Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the financial date of the inventory transaction. 
 
@@ -128,5 +131,6 @@ The new running average cost price reflects the average of the financially and p
 -   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
 -   Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
 -   Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
+
 
 

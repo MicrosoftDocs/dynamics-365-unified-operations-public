@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Customization Analysis Report (CAR)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Customization Analysis Report (CAR)
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
 
@@ -417,6 +420,7 @@ Display TransDate myDateMethod()
 | Error message       | %1 is a base table and must not be modified                                                                                                                                                  |
 | Issue type/severity | MetaData/Warning                                                                                                                                                                             |
 | How to fix it       | Don't customize the table.                                                                                                                                                                   |
+
 
 
 

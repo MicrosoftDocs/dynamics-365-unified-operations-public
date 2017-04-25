@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Use the Excel add-in
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Use the Excel add-in
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel. To open the entity data, you can start from either Excel or Microsoft Dynamics 365 for Operations.
 
@@ -98,5 +101,6 @@ There are a few issues that can be resolved through some easy steps.
 -   **The Load applets button is shown.** If the Excel add-in has a **Load applets** button after sign-in, you probably aren't signed in as the correct user. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, click it, sign out, and then sign back in.
 -   **You receive a "Forbidden" message.** If you receive a "Forbidden" message while the Excel add-in is loading metadata, the account that is signed in to the Excel add-in doesn't have permission to use the targeted service, instance, or database. To resolve this issue, verify that the correct user name appears in the upper-right corner of the Excel add-in. If an incorrect user name appears, click it, sign out, and then sign back in.
 -   **A blank webpage is shown over Excel.** If a blank webpage opens during the sign-in process, the account requires AD FS, but the version of Excel that is running the add-in isn't recent enough to load the sign-in dialog box. To resolve this issue, update the version of Excel that you're using. To update the version of Excel when you're in an enterprise that is on the deferred channel, use the [Office deployment tool](https://technet.microsoft.com/library/jj219422.aspx) to [move from the deferred channel to the current channel](https://technet.microsoft.com/library/mt455210.aspx).
+
 
 

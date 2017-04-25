@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: NF-e process overview for Brazil
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # NF-e process overview for Brazil
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 
 You can use a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties. You can generate an NF-e from any of the following fiscal documents:
@@ -61,5 +64,6 @@ After the status of the NF-e is received from SEFAZ, you can perform the followi
 -   If the NF-e is denied, you must cancel the NF-e.
 -   If the NF-e is rejected and can be fixed, you can correct the incorrect information, and then click **Resend** on the **NF-e federal** tab of the **Fiscal document** page to resend the NF-e to SEFAZ.
 -   If the NF-e is rejected and can't be fixed, you must cancel the discarded NF-e that has discarded number. The NF-e export or import process detects the fiscal document that is posted and marked for discard, and then generates an XML message in the specified format for the discarded NF-e number. This XML message is then transmitted to SEFAZ, and the fiscal document status is set to **Discarded**.
+
 
 

@@ -34,6 +34,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
+
+[!include[banner](../includes/banner.md)]
+
 This topic describes how to move a Dynamics 365 for Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
 
 Overview
@@ -298,5 +301,6 @@ The following guidelines can help you achieve optimal performance:
 -   To help improve performance, in a one-box environment (which is also known as a Tier 1 environment) that is hosted in Azure, put the .bacpac file on drive D when you export it. For more information about the temporary drive on Azure computers, see the [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/) post on the Azure Support Team blog.
 -   To help make the import process faster, and to help improve the speed of restore from a .bak file, grant the account that is running the SQL Server Windows service the [Instance File Initialization](https://msdn.microsoft.com/en-us/library/ms175935.aspx) right. To easily implement this guideline for a developer environment, set SQL Server to run as the axlocaladmin account.
 -   We recommend that you not use the option to export and import from SQL Azure in Management Studio. (This option is also known as “Export data tier application”). We recommend that you not use this approach, because there can be memory limitations for larger databases.
+
 
 

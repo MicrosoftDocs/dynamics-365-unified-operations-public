@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Prepare to migrate to Dynamics 365 for Operations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Prepare to migrate to Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 In this topic, we will describe the LCS code upgrade service and Visual Studio tools that help you migrate your code and metadata from Dynamics AX 2012 R3 to Microsoft Dynamics 365 for Operations. Most of these steps also apply to code migration between two major versions of Dynamics 365 for Operations. 
 
@@ -296,5 +299,6 @@ Refer to these topics to migrate code Dynamics AX 2012 that deals with context m
 
 -   [Context menus](code-migration-context-menus.md)
 -   [Mouse double-click](code-migration-double-click.md)
+
 
 

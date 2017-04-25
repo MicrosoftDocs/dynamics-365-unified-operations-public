@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: List Page form pattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # List Page form pattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the List Page form pattern. A list page presents a set of data on a UI that is optimized for browsing records, so that you can find and work with a specific record. 
 
@@ -142,4 +145,5 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![AX 2012 example](./media/listpage3-1024x671.png)](./media/listpage3.png)
+
 

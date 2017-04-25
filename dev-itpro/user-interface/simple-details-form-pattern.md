@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Simple Details form pattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Simple Details form pattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 
@@ -159,5 +162,6 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 -   Investigate whether Simple Details forms that show a small amount of related content should have a different presentation than a full-page form.
+
 
 

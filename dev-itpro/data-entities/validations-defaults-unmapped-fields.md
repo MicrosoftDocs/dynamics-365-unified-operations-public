@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Validations, defaults, and unmapped fields
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Validations, defaults, and unmapped fields
+
+[!include[banner](../includes/banner.md)]
+
 
 Validations are defined on the tables that back up the entities. Validations are defined at both the field level and the record level.
 
@@ -240,6 +243,7 @@ The following table provides a computed example if a **UnitOfMeasure** relations
 | Virtual field                                                                                                                                                                                                                                                       | Computed field                                                                                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | On postLoad()*//Check to see if record exists in UnitOfMeasureInternalCode.UnitOfMeasure//Set hasFixedInternalCode value based on the field*if(this.UnitOfMeasure)this.HasFixedInternalCodeVirtual = NoYes::Yes; else this.HasFixedInternalCodeVirtual = NoYes::No; | On computedFieldMethod()*//Desired SQL computed column statement(CASE WHEN T2.RECID IS NULL THEN 0 ELSE 1 END) AS INT)* |
+
 
 
 

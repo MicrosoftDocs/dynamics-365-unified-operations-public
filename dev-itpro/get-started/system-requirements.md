@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: System requirements
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 2
 ---
 
 # System requirements
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Operations.
 
@@ -131,4 +134,5 @@ See also
 --------
 
 [Get an evaluation copy of Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+
 

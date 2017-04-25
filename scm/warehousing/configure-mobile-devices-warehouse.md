@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up mobile devices for warehouse work
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up mobile devices for warehouse work
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 
@@ -418,3 +421,4 @@ See also
 
 [Set up a mobile device menu item to register received items (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 [Advantages of using Inventory statuses](../inventory/inventory-statuses.md)
+

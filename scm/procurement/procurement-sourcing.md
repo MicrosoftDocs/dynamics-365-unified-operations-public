@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Procurement and sourcing home page
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Procurement and sourcing home page
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
 
@@ -105,6 +108,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (white paper)
 -   [Purchasing policies](purchase-policies.md)
 -   [Create purchasing policies](http://ax.help.dynamics.com/en/wiki/create-purchasing-policies/)
+
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Create a deployable package
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create and apply a deployable package
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the workflow for creating and applying a deployable package.
 
 Overview of the packaging and deployment process
@@ -49,4 +52,5 @@ After you have completed the development of the modules, follow these steps to 
 
 ## Apply a deployable package
 For information about how to apply a deployable package in an environment, see [Installing a deployable package](install-deployable-package.md).
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Business process libraries in Business process modeler
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Business process libraries in Business process modeler
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains how to view a standard business process library in Business process modeler, how to copy and modify a business process library, and how to export information about the business process library to Microsoft Word.
 
@@ -72,6 +75,7 @@ You can export information about a business process library, and all the flowcha
 2.  Open a business process library.
 3.  In the **Core Business Processes** list, right-click a top-level node in the library.
 4.  On the app bar, click **Doc**, and save the document.
+
 
 
 

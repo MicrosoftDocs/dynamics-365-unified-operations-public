@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up consignment
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up consignment
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to configure inbound consignment inventory operations. 
 
 Consignment inventory is inventory that’s owned by a vendor, but stored at your site. When you’re ready to consume or use the inventory, you take over the ownership of the inventory. This topic describes the setup needed to enable consignment processes. For more information about consignment processes, see [Consignment](consignment.md).
@@ -53,4 +56,5 @@ The **Inventory ownership change** journal is used to record the transfer of own
 
 ## Vendor collaboration in consignment processes
 If your vendors are using the vendor collaboration interface, they can use this to monitor the consumption of inventory at your site. For more information about setting up vendors to use vendor collaboration, see [Configuration of security for vendor collaboration users](../procurement/configure-security-vendor-portal-users.md).
+
 

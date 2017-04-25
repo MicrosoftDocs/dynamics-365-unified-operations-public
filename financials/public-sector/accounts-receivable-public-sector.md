@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Accounts receivable in the public sector
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Accounts receivable in the public sector
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the Accounts receivable functionality that is available for the public sector.
 
@@ -65,4 +68,5 @@ See also
 --------
 
 [Accounts receivable](..\accounts-receivable\accounts-receivable.md)
+
 

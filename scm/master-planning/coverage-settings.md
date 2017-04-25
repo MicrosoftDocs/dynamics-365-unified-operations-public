@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Coverage settings
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Coverage settings
 
+[!include[banner](../includes/banner.md)]
+
+
 Master scheduling uses coverage settings to calculate item requirements. 
 
 You can specify coverage settings in several ways:
@@ -54,4 +57,5 @@ See also
 --------
 
 [Master plans](master-plans.md)
+
 

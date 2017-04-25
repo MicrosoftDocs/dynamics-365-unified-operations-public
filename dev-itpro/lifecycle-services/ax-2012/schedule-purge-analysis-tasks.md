@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the options on the Microsoft Dynamics AX Intelligent Data Management Framework(IDMF) Schedule menu, and how to use them.
 
@@ -386,6 +389,7 @@ IDMF considers an unexpected error condition a failure and cancels a task when t
 
 ## Export to Excel
 This command exports the selected task to Microsoft Excel.
+
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Form I-9 employment verification
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form I-9 employment verification
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
 
 The Immigration Reform and Control Act (IRCA) requires U.S. employers to verify the employment eligibility status of all newly hired employees, even U.S. citizens. IRCA makes it unlawful for employers to knowingly hire or continue to use unauthorized workers. 
@@ -55,4 +58,5 @@ See also
 --------
 
 [Organizing your workforce using departments, jobs, and positions](../departments-jobs-positions.md)
+
 

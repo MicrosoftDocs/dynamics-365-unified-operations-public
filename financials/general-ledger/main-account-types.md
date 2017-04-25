@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Main account types
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Main account types
 
+[!include[banner](../includes/banner.md)]
+
+
 The main account types determine how a main account is used in the chart of accounts.
 
 You must select a main account type when you create a main account in the Main accounts - chart of accounts page.
@@ -39,6 +42,7 @@ You must select a main account type when you create a main account in the Main a
 -   Balance sheet, Asset, Liability, and Equity – These main accounts are used as transaction accounts to record the amounts that a legal entity owns or owes.
 -   Total – These main accounts are used to add account intervals. Configure the Total main account type by using the Account interval page, which displays the total of the group balances for all account intervals. Access the Account interval page by click Totals on the General tab once you have selected a Total account type.
 -   Reporting – These main accounts are used for financial statement reporting for Brazil only.
+
 
 
 

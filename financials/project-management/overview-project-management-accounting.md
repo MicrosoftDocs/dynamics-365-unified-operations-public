@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Project management and accounting
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Project management and accounting
+
+[!include[banner](../includes/banner.md)]
+
 
 The project management and accounting functionality can be used in multiple industries to provide a service, produce a product, or achieve a result.  
 
@@ -412,5 +415,6 @@ After the statement is calculated, you can view the following information on the
 -   **Consumption** – Information about the consumption of hours, items, expenses, and payroll transactions.
 -   **Invoice** – Information about invoices and on-account invoicing.
 -   **Hour rate** – The hour rates for hours that are posted to revenue and cost accounts.
+
 
 

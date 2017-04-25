@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: EU Entry certificates
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # EU entry certificates
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about European Union (EU) entry certificates.
 
@@ -125,6 +128,7 @@ If you don't have access to the pages that are used to complete this task, conta
 </tr>
 </tbody>
 </table>
+
 
 
 

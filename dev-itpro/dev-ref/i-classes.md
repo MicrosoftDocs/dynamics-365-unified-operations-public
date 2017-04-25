@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: I Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # I Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter I.
 
@@ -4172,4 +4175,5 @@ This example uses the Io class to write to ExampleFile.
         // Close the code access permission scope. 
         CodeAccessPermission::revertAssert(); 
     }
+
 

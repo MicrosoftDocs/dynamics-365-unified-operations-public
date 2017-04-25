@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Toolbar and List subpattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Toolbar and List subpattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Toolbar and List form subpattern. This subpattern is used to show child collections for the parent entity as either a tabular grid or a tree. 
 
@@ -140,4 +143,5 @@ This section will have answers to frequently asked questions that are related to
 **VendTable** 
 
 [![ToolbarList(5)](./media/toolbarlist5.png)](./media/toolbarlist5.png)
+
 

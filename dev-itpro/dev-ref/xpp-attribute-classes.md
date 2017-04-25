@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ attribute classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ attribute classes
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the use of attributes in X++.
 
@@ -167,4 +170,5 @@ You use the **DictMethod** class to find the metadata value of an attribute tha
             ("CustCustomerService", "create");
     }
     **************/
+
 

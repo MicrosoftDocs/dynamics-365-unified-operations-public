@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Inventory on-hand mobile workspace
@@ -31,6 +31,9 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Inventory on-hand mobile workspace
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about the Inventory on-hand mobile workspace, which is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
 
@@ -128,6 +131,7 @@ Download and install the Dynamics 365 for Operations mobile app from your mobile
     -   By physical inventory (This view represents the total amount.)
     -   By physical reserved (This view represents the reserved amount.)
     -   By available physical (This view represents the available amount that has no reservations.)
+
 
 
 

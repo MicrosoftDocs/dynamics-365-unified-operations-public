@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ operators
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ operators
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the operators supported in X++.
 
@@ -306,4 +309,5 @@ The order that a compound expression is evaluated in can be important. For examp
 | Conditional                                                      | ? :                                    |
 
 Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, **&&** (logical **AND**) and **||** (logical **OR**) have the same precedence, and are evaluated from left to right. Therefore, **0&&0||1 == 1**, and **1||0&&0 == 0**.
+
 

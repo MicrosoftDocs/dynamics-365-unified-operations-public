@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Explosion of a BOM version
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Explosion of a BOM version
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.
 
 A demand explosion of a bill of materials (BOM) version creates a demand for each BOM line item at a specific site and, possibly, at a specific warehouse. In a site-specific BOM, a specific warehouse can be defined for each BOM line. Additionally, for each BOM line, the item's dimension settings determine whether the warehouse is required. The resulting demand for each BOM line item then becomes the starting point for additional demand explosion. This master planning scenario involves the following conditions:
@@ -47,4 +50,5 @@ See also
 [Master planning - how the BOM version is determined](master-plan-bom-version-determined.md)
 
 [Master planning and multisite functionality](master-plan-multisite-functionality.md)
+
 

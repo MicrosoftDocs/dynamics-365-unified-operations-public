@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: New or updated Task guides (November 2016)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # New or updated Task guides (November 2016)
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic lists the new or updated Task guides that were released to the Microsoft (November 2016 - all languages) APQC Unified Library for Microsoft Dynamics 365 for Operations. No new Getting Started Library was released.
 
@@ -600,4 +603,5 @@ See also
 [New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
 
 [New or updated task guides available (August 2016)](new-updated-task-guides-available-august-2016.md)
+
 

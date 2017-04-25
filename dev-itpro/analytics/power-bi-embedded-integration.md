@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Power BI Embedded integration
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 4
 
 # Power BI Embedded integration
 
+[!include[banner](../includes/banner.md)]
+
+
 With Microsoft Dynamics 365 for Operations, Power BI content developed by partners and ISVs can be embedded directly into the application. Read this topic to learn more about some of the amazing things possible using Power BI Embedded.
 
 Overview
@@ -57,4 +60,5 @@ While both Power BI services are available, it's important to know which is best
 
 ## Service availability
 Power BI Embedded is available in most data centers now. You can check the latest availability on [Azure status](https://azure.microsoft.com/status/).
+
 

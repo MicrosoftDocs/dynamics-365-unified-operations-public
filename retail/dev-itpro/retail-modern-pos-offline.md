@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Retail Modern POS in offline mode
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Retail Modern POS in offline mode
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains how to use Retail Modern POS devices in offline mode if the Retail Server is unavailable.
 
@@ -121,6 +124,7 @@ You can’t complete the following operations when the channel database is offli
 | 1055         | Close shift       |
 | 1056         | Print X           |
 | 1057         | Reprint Z         |
+
 
 
 

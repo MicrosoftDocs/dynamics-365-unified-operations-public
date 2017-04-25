@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Purchase spend analysis Power BI content
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Purchase spend analysis Power BI content
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes what is included in the Purchase spend analysis content pack for Microsoft Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that are used to build the content pack.
 
@@ -168,5 +171,6 @@ Here are some helpful links that are related to entities and building Power BI c
 -   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
+
 
 

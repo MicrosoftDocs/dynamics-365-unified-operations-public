@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Procurement and sourcing in the public sector
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Procurement and sourcing in the public sector
+
+[!include[banner](../includes/banner.md)]
+
 
 This overview introduces you to the public sector Procurement and sourcing functionality. This includes purchase order codes, vendor certification types, purchase agreement classification functionality, and purchase order line amounts.
 
@@ -141,4 +144,5 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 
 For more information, see [Procurement and sourcing](/dynamics365/operations/supply-chain/procurement/procurement-sourcing-overview) and 
 [Accounts payable in the public sector](accounts-payable-public-sector.md).
+
 

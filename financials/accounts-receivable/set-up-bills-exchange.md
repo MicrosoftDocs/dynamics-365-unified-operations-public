@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up bills of exchange
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Set up bills of exchange
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the steps for setting up bills of exchange.
 
@@ -81,6 +84,7 @@ Set up customers for bills of exchange
 --------------------------------------
 
 On the **Customers** page, for each customer who has agreed to pay by using a bill of exchange, you can set up a default method of payment for bills of exchange on the **Payment defaults** tab.
+
 
 
 

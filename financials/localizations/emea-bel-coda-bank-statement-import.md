@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: CODA bank statement
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # CODA bank statement
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic includes information about CODA, which is a report format used in the Belgian electronic banking system. 
 
 For Belgian bank statement imports, you'll use the CODA file format. This feature lets you verify company bank account opening and ending balances, and reconcile imported transactions based on reconciliation rules.
@@ -61,4 +64,5 @@ Complete the following steps to process the bank statement transactions.
 4.  After all transactions in the bank statement are settled, they are ready to be transferred to the general ledger journal (**CODA** &gt;**Transfer to ledger**). Journal settings should be specified for the bank account. Journals can be opened on the **Bank accounts **page for the selected record by clicking **Set up** &gt; **CODA journal**.
 
 After processing bank statement transactions is complete, a new general ledger journal is created and ready for posting.
+
 

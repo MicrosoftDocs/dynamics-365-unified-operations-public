@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Analyze store performance
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Analyze store performance
 
+[!include[banner](includes/banner.md)
+
+
 This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Microsoft Dynamics 365 for Operations data. 
 
 As part of Dynamics 365 for Operations, users can study store performance in real time across different levels of the organization hierarchy over a selected period by opening the out-of-box **Channel summary** report from any of the following locations:
@@ -47,3 +50,4 @@ This report provides a snapshot of following summaries as part of store performa
 -   Tax summary
 -   Price overrides summary
 -   Discounts summary
+

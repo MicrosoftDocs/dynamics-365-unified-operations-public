@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Convert accounting or reporting currencies
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Convert accounting or reporting currencies
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -78,4 +81,5 @@ After the currency conversion, you must generate all reconciliation reports agai
 -   If the customer and vendor reconciliation reports display a difference amount on the total line, and no difference amount existed before the conversion, this difference amount must be posted. The account is the summary account for customers and vendors. The offset account is the ledger account for conversion loss or conversion profit.
 
 When all ledger transaction journals have been deleted, you can journalize the ledger transactions. Click **General ledger** &gt; **Periodic** &gt; **Journals** &gt; **Journalizing**. You can revalue foreign currency amounts after the currency conversion, if revaluation is required. You revalue foreign currency amounts by selecting **Standard** in the **Method** field for the revaluation.
+
 

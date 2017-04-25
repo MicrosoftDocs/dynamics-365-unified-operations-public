@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Workflow system architecture
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Workflow system architecture
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the architecture of the workflow system in Microsoft Dynamics 365 for Operations.
 
 The workflow infrastructure consists of two components that are hosted on Application Object Server (AOS): the X++ workflow runtime and the managed workflow runtime. The X++ workflow runtime consists of the following components:
@@ -50,4 +53,5 @@ Either the messaging batch job or the workflow runtime API can invoke the applic
 | 4    | Both                     | This same messaging pattern is repeated, as required, throughout the lifecycle of the workflow instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 The workflow architecture helps provide a reliable and durable messaging system, and also helps guarantee that the state of the workflow is always synchronized with the state of the application. If an unexpected hardware or software failure occurs, the workflow instance state is returned to its last known saved point, and the message stays in the queue. Therefore, from an architecture perspective, the recovery model is to fix the problem and resume the workflow.
+
 

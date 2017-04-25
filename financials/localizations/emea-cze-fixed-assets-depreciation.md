@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fixed assets depreciation methods for the Czech Republic
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Fixed assets depreciation methods for the Czech Republic
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about fixed assets depreciation for legal entities in the Czech Republic. 
 
@@ -119,3 +122,4 @@ This example shows depreciation calculated using the accelerated CZ method of d
 | 5                   | (2\* 74583) / (4 - 0) = 37 292   |
 | 6                   | (2\* 37292) / (4 - 1) = 24 861   |
 | 7                   | (2\* 12431) / (4 - 2) = 12 430   |
+

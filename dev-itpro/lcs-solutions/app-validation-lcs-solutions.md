@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Validate an application for an LCS solution
@@ -31,6 +31,9 @@ ms.dyn365.ops.version:
 ---
 
 # Validate an application for an LCS solution
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about the requirements that are used to verify that custom code meets Microsoft guidelines, and that an LCS solution package can be successfully deployed. 
 
@@ -106,4 +109,5 @@ See also
 --------
 
 [LCS Solutions for AppSource home page](lcs-solutions-app-source.md)
+
 

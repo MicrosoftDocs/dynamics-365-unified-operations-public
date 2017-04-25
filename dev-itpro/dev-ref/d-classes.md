@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: D Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # D Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter D.
 
@@ -10902,6 +10905,7 @@ callbackObject
 <!-- -->
 
 setFocus  
+
 
 
 

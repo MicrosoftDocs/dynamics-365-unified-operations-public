@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Income statement financial report
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Income statement financial report
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the default report for income statements. It also describes the building blocks that are associated with this report. 
 
@@ -71,4 +74,5 @@ See also
 [View financial reports](view-financial-reports.md)
 
 [Dynamics Financial Reportign Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
 

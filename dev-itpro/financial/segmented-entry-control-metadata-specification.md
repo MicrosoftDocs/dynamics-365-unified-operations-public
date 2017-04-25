@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Segmented entry control metadata
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Segmented entry control metadata
+
+[!include[banner](../includes/banner.md)]
+
 
 Describes the design-time metadata properties for Segmented Entry controls.
 
@@ -165,4 +168,5 @@ See also
 [Segmented Entry control migration](segmented-entry-control-conversion.md)
 
 [Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+
 

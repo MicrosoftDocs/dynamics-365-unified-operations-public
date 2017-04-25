@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Section Stacked Chart subpattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Section Stacked Chart subpattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about the Section Stacked Chart subpattern. This subpattern is used as part of the Operational Workspace pattern when a panorama section contains one or two charts.  
 
@@ -82,4 +85,5 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
 

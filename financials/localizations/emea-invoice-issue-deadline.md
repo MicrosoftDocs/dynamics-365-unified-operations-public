@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Invoice issue deadline
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Invoice issue deadline
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains how to set up parameters to calculate the due dates for issuing customer invoices and vendor invoices in the European Union (EU).
 
@@ -121,6 +124,7 @@ If you don't have access to the pages that are used to complete the tasks that a
 </tr>
 </tbody>
 </table>
+
 
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure case security, processes, and categories
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Configure case security, processes, and categories
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the considerations and decisions that you must make during the planning process, before you configure cases in Microsoft Dynamics 365 for Operations.
 
@@ -75,5 +78,6 @@ The Case category hierarchy provides a list of categories that you can assign ca
     -   If so, what are the activity category, type, purpose, and phase?
     -   Should a follow-up activity for the case be created?
     -   If so, what are the follow-up activity category, type, purpose, and phase?
+
 
 

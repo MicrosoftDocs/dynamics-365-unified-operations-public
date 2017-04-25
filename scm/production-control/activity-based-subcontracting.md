@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Activity-based subcontracting
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Activity-based subcontracting
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.
 
@@ -105,4 +108,5 @@ People often consider transport nonproductive and think that it adds no value. H
 Activity-based subcontracting in lean manufacturing lets you integrate carriers and transport vendors that move material and products between the locations of a production flow. By modeling a transfer activity, you can assign a carrier or vendor. The transfer activities/job is based on a service and purchase agreement, and you can create purchase orders and receipt advisories, based on the actual transfer jobs. This functionality is the same as the functionality for subcontracted process activities.  
 
 Therefore, Dynamics 365 for Operations now supports BOM calculation that includes transport services, the creation of related purchase orders, integrated receipt registration, and the integration of transport service costs into the production flow costing.
+
 

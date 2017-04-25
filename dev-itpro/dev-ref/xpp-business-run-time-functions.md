@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X++ business run-time functions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X++ business run-time functions
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the business run-time functions.
 
@@ -536,4 +539,5 @@ The number of periods that the investment must run for.
         print term(100,0.14,3000);  //returns the value '12.58'.
         pause;
     }
+
 

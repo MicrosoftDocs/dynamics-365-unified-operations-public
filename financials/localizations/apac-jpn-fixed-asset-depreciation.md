@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fixed asset depreciation for Japan FAQ
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Fixed asset depreciation for Japan FAQ
+
+[!include[banner](../includes/banner.md)]
+
 
 This article answers some frequently asked questions about fixed asset depreciation for Japan.
 
@@ -141,4 +144,5 @@ You can import the following schedules to recalculate the depreciation and servi
 -   Years passed schedule
 
 The depreciation rate schedule that you import depends on the type of depreciation method that you use for a fixed asset.
+
 

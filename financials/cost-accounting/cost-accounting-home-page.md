@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Cost accounting home page
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Cost accounting home page
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides a list of the help topics and other resources that are available for Cost accounting.
 
@@ -75,5 +78,6 @@ The Cost accounting analysis Microsoft Power BI content is intended for cost con
 
 -   [Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)
 -   [Set up security for the Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+
 
 

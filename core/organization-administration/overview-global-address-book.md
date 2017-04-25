@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Global address book
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Global address book
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -79,4 +82,5 @@ Each party record’s addresses, locations, and contact information are shared a
 ### Locations and transactions
 
 When a party role is included in a transaction, the location, address, or contact information of the party can be accessed when transaction details are entered.
+
 

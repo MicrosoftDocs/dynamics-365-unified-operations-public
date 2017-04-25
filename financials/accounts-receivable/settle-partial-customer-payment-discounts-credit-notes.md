@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Settle a partial customer payment that has discounts on credit notes
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial customer payment that has discounts on credit notes
 
+[!include[banner](../includes/banner.md)]
+
+
 This article walks you through a scenario where a cash discount is taken on a credit note when the original invoice also had a cash discount. 
 
 Fabrikam allows customers to take cash discounts on partial payments and also on credit notes (credit memos). A cash discount can be taken on a credit note when the credit note is issued for an invoice that the customer took a cash discount on. Instead of providing a credit for the full amount, you can credit the customer's balance for an amount that excludes the cash discount percent that the customer took. The settlement parameters are located on the **Accounts receivable parameters** page.
@@ -63,4 +66,5 @@ Discount information appears at the bottom of the **Settle transactions** page.
 | Cash discount amount to take | -1.00     |
 
 The settlement will be 100.00, and will include a payment of 99.00 and a discount of 1.00.
+
 

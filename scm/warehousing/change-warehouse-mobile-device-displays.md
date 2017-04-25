@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Warehouse mobile device display settings
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Warehouse mobile device display settings
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how to set up the appearance of a mobile device display and map keyboard shortcuts to controls such as buttons. 
 
@@ -103,4 +106,5 @@ See also
 --------
 
 [Configuration of mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+
 

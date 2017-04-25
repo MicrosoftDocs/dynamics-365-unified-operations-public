@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: System-defined buttons
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # System-defined buttons
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the system-defined buttons.
 
@@ -230,4 +233,5 @@ However, if you must suppress one of these buttons (strongly discouraged), you 
             attachButton= this.control(this.controlId(#SystemDefinedAttachButton)) as FormCommandButtonControl; 
             attachButton.visible(false); 
         }
+
 

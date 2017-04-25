@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up benefits
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Set up benefits
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
 
@@ -357,4 +360,5 @@ See also
 [Payroll calculation frequency tasks](noam-usa-payroll-calculation-frequencies-tasks.md)
 
 [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Why we moved from SSAS cubes to aggregate models
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Why we moved from SSAS cubes to aggregate models
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how Microsoft Dynamics 365 for Operations has transitioned from using SQL Server Analysis Services (SSAS) cubes to in-memory, real-time aggregate models for analytics.
 
 The world is moving to real-time, proactive analytics. Reporting and trending on historical data is being replaced by up-to-the-second visualizations and proactive guidance. In-memory, real-time aggregate models now replace the perspectives that were previously used for analytics.
@@ -51,4 +54,5 @@ Perspectives are now modeled using Dynamics 365 for Operations add-ins for Vis
 -   Access data programmatically using the AXQuery object.
 
 [![how-perspectives-are-used](./media/how-perspectives-are-used.png)](./media/how-perspectives-are-used.png)  
+
 

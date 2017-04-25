@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Generate a financial report
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Generate a financial report
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about generating a financial report. 
 
@@ -149,3 +152,4 @@ See also
 [Financial reporting](financial-reporting-intro.md)
 
 [Report Designer interface](report-designer-interface.md)
+

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Expense management
@@ -32,7 +32,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Expense management
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 [Planning expense management](plan-expense-management.md) More information will be added later; check back soon.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Batch server overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Batch server overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes batch processing and batch servers, and how to plan for their use.
 
@@ -102,4 +105,5 @@ You have three batch servers: AOS1, AOS2, and AOS3. By default, all the batch se
 You create a named batch group, BG1, and configure it to run on AOS2 and AOS3. Therefore, tasks from jobs in BG1 will run only on AOS2 or AOS3, depending on the number available threads. AOS1 won't process tasks from jobs in BG1. Likewise, AOS2 and AOS3 will process tasks from BG1 only. 
 
 You can configure AOS2 and AOS3 to process tasks from other batch groups. These batch groups include the default batch group.
+
 

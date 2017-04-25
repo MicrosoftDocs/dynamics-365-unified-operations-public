@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Code editor
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Code editor
 
+[!include[banner](../includes/banner.md)]
+
+
 This article reviews the code editor features for Microsoft Dynamics 'AX 7.'
 
 Code editor
@@ -54,4 +57,5 @@ You can open the element designer that corresponds to the current X++ source cod
 [Technical Concepts Guide](developer-home-page.md)
 
 [Development tools](development-tools.md)
+
 

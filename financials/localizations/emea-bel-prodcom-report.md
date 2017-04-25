@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up and maintain PRODCOM
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up and maintain PRODCOM
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up and maintain PRODCOM in Microsoft Dynamics 365 for Operations. 
 
 Manufacturers of industrial products are required to report the quantities and values of products sold, as well as employment data, to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. Most producers submit an itemized PRODCOM report to the NIS monthly, using one of six standard report formats. The NIS determines the report layout, depending on the nature of the materials produced. The PRODCOM report displays production statistics for industrial products that are manufactured by production companies operating in Belgium. This report is typically used by accounting managers and accountants.
@@ -64,4 +67,5 @@ Use the **Intrastat to PRODCOM conversion** page to assign PRODCOM codes to Intr
 
 ## Use PRODCOM
 Use the **PRODCOM** page to create PRODCOM periods and transfer sales lines to the PRODCOM report. After you enter the dates for the declaration period and then enter the section codes, you can transfer the sales lines to the PRODCOM report. After you transfer the sales lines to the report, you can review and edit the products on the PRODCOM list, and then you can print the report.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Right-to-left language support and bidirectional text
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Right-to-left language support and bidirectional text
+
+[!include[banner](../includes/banner.md)]
+
 
 In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This article discusses the issue of bidirectional text and how it's handled.
 
@@ -208,4 +211,5 @@ The WPF RichTxt control has a flag that tries to format text according the first
 **Workarounds:** Don't use weak or neutral characters for grouping when you use English. For example, use "Dynamics DAT". 
 
 **Recommendation:** None of the controls provide the desired behavior. You must educate users about the fundamental behavior when weak or neutral characters are used together with English text. Don't use weak or neutral characters unless English characters appear on each side.
+
 

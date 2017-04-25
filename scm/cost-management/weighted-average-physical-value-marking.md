@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Weighted average with physical value and marking
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Weighted average with physical value and marking
+
+[!include[banner](../includes/banner.md)]
+
 
 
 
@@ -227,6 +230,7 @@ The following diagram illustrates this series of transactions with the effects o
 -   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
 -   Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
 -   Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
+
 
 
 

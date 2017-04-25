@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: PerfSDK and multiuser testing with Visual Studio Online
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # PerfSDK and multiuser testing with Visual Studio Online
+
+[!include[banner](../includes/banner.md)]
+
 
 Take a tour of Performance SDK and multiuser testing with Visual Studio Online and learn how convert a scenario recorded with Task Recorder into a single user test and then a multiuser test.
 
@@ -186,6 +189,7 @@ If you see an error message like this: *System.TypeInitializationException: Syst
     { 
         Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
     }
+
 
 
 

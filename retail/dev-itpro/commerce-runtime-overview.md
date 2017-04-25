@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Commerce runtime overview
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Commerce runtime overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the architecture and configuration of the Microsoft Dynamics 365 for Operations Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the retail channel. 
 
 Commerce Runtime architecture
@@ -59,4 +62,5 @@ On top of the workflow layer is the application programming interface (API) laye
 
 ## Commerce Runtime configuration
 Services are enumerated as types in the CRT configuration file. You can add types in the CRT configuration file to control which services are loaded in the CRT. Services are loaded in the order in which they are listed in the configuration file. All the default services are loaded automatically. However, if you add a new service above one of the default services, the new service replaces the default service.
+
 

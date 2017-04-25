@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Debug X++ code
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Debug X++ code
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic reviews how you can debug X++ code by using the debugging feature in Microsoft Visual Studio. 
 
@@ -68,5 +71,6 @@ See also
 --------
 
 [Technical Concepts Guide](developer-home-page.md)
+
 
 

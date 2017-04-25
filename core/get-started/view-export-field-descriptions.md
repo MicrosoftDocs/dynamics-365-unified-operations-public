@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: View and export field descriptions
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # View and export field descriptions
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 
@@ -103,5 +106,6 @@ See also
 --------
 
 [Customize field help](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: OData
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # OData
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about Open Data Protocol (OData) and explains how you can use OData V4 to expose updatable views.
 
@@ -114,5 +117,6 @@ The OData protocol supports many similar filtering and querying options on entit
 
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
+
 
 

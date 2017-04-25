@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Fixed assets depreciation for Poland
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # Fixed assets depreciation for Poland
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides information about fixed assets depreciation for legal entities in Poland.
 
@@ -109,4 +112,5 @@ Legal entities in Poland can link fixed assets to depreciation groups. Deprecia
 </table>
 
  
+
 

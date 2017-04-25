@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Bills of materials and formulas
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Bills of materials and formulas
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. BOMs and formulas specify the required materials or ingredients for a specific product. Formulas also specify the co-products and by-products that are received in a specific production context. 
 
@@ -117,4 +120,5 @@ Select the **Pegged supply** line type when you want to create a subproduction, 
 Select the **Vendor** line type if the production process uses a subcontractor, and you want a subproduction or purchase order to be created automatically for the subcontractor.  
 
 **Note about subcontracted operations in a BOM:** The service or work that is performed by the subcontractor must be created as service item that is tracked in inventory. You must attach the service item to the parent item as a BOM line. The route must contain an operation that is assigned to the subcontractor's operations resource.
+
 

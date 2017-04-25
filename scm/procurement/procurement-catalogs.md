@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Procurement catalogs
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Procurement catalogs
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes, at a high level, how purchasing professionals can set up and maintain procurement catalogs. Procurement catalogs define the items and services that company employees can order for internal use.
 
@@ -76,4 +79,5 @@ See also
 --------
 
 [Set up a procurement category hierarchy (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
 

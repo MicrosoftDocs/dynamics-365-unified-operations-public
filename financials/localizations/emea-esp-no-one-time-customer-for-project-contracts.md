@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: One-time customers
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # One-time customers
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about one-time customers.  
 
 A one-time customer is a customer who does not have a long-term relationship with your company. For one-time customers, you typically don't need to save information like address, contact, or tax exempt details. To indicate that a customer is a one-time customer, complete the following steps:
@@ -46,5 +49,6 @@ A one-time customer is a customer who does not have a long-term relationship wit
 1.  Open the **Project management and accounting parameters** page.
 2.  Set the **No one-time customer for project contracts** parameter to **True**.
 3.  Click **Save**.
+
 
 

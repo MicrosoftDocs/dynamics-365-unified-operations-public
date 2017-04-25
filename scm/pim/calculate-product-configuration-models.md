@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Calculations for product configuration models FAQ
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Calculations for product configuration models FAQ
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes calculations for product configuration models and explains how to use calculations together with constraints.
 
@@ -103,5 +106,6 @@ Calculations aren't included in the validation. You must test the product config
 
 1.  Click **Product information management** &gt; **Common** &gt; **Product configuration models**.
 2.  Select a product configuration model, and then, on the Action Pane, in the **Run** group, click **Test**.
+
 
 

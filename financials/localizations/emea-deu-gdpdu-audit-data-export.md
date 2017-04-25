@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: German audit file (GDPdU/GoBD)
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # German audit file (GDPdU/GoBD)
+
+[!include[banner](../includes/banner.md)]
+
 
 Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form. This article describes how the current version of Microsoft Dynamics 365 for Operations supports the GDPdU/GoBD audit file requirements. It also shows the tables that are set up as examples in the electronic reporting configurations.
 
@@ -227,4 +230,5 @@ See also
 --------
 
 [Electronic Reporting overview](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
+
 

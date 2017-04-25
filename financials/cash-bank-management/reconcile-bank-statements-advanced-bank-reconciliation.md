@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Reconcile bank statements by using advanced bank reconciliation
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Reconcile bank statements by using advanced bank reconciliation
+
+[!include[banner](../includes/banner.md)]
+
 
 The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Operations. This topic explains the reconciliation process.  
 
@@ -96,4 +99,5 @@ After all statement lines have been processed, you should mark the Bank reconcil
 
 ## Post new transactions that are associated with the reconciliation
 Bank statement transactions that you marked as **New** on the reconciliation worksheet are posted on the **Bank statement** page. On the **Bank statement** page, select the statement ID to view the statement details. On the **Accounting** menu, you can use the **View distributions** and **View accounting** options to view details behind the new transactions and the associated ledger entries. Select the **Post** option to post the bank statement lines that are marked as **New** to the general ledger. Note that posting can be completed only one time per bank statement.
+
 

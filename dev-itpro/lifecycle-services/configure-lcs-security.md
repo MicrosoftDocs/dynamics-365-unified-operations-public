@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Configure Lifecycle Services security
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Configure Lifecycle Services security
+
+[!include[banner](../includes/banner.md)]
+
 
 Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization.
 
@@ -106,4 +109,5 @@ You can invite users from inside or outside your organization to join your proje
 </table>
 
 After you've configured security for one project, you can import the users to another project.
+
 

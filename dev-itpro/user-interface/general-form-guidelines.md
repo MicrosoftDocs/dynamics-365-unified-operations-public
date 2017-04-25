@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: General form guidelines
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # General form guidelines
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 
@@ -247,5 +250,6 @@ This section will have answers to frequently asked questions that are related t
 
 -   **What types of fields aren't supported as summary fields on Fast Tabs?**
     -   For performance reasons, we don't currently support reference groups and display methods. Additionally, unbound fields can't be used as summary fields.
+
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Retail Store Scale Unit configuration and installation
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Retail Store Scale Unit configuration and installation
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Operations headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Dynamics 365 for Operations environment already provides these components, but you can now configure them to work locally in a store, in either a single-computer setup (the default option) or a multi-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
 
@@ -236,5 +239,6 @@ Use Control Panel in Microsoft Windows to uninstall Retail Store system.
 2.  In Control Panel, select **Programs** &gt; **Uninstall a program**.
 3.  In the **Programs and Features** window, select **Microsoft Dynamics 365 for Operations for Retail Store system**, and then, above the list of programs, select **Uninstall**.
 4.  Wait for the uninstaller to finish removing the program.
+
 
 

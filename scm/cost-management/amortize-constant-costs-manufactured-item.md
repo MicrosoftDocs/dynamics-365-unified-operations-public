@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Amortize constant costs for a manufactured item
@@ -32,6 +32,9 @@ ms.search.validFrom: 2016-02-28
 
 # Amortize constant costs for a manufactured item
 
+[!include[banner](../includes/banner.md)]
+
+
 A manufactured item’s constant costs reflect the operation setup times and the components that have a constant quantity or a constant scrap amount. 
 
 The concept of a costing lot size is used to amortize these constant costs in the calculated cost of a manufactured item. This concept has several synonyms, one of which is accounting lot size. The concept of amortizing constant costs also has several synonyms, one of which is proportional constant costs.
@@ -42,6 +45,7 @@ The quantity of a costing lot size for a manufactured item is used in a bill of 
 -   Specified calculation quantity in an order-specific BOM calculation − An order-specific BOM calculation can be performed for a line item on a sales order, sales quotation, or service order. The specified calculation quantity uses the quantity on the originating line item, but the default quantity can be overridden. You can select whether the order-specific BOM calculation uses a make-to-order or multilevel explosion mode.
 
 The calculated amount of a manufactured item’s amortized constant costs is termed charges.
+
 
 
 

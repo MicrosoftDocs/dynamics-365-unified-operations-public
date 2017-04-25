@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Form styles and patterns
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Form styles and patterns
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this topic. 
 
@@ -164,5 +167,6 @@ Some forms are structurally close to a defined form pattern, but because some as
 3.  Save the form, so that the property values are set by the pattern.
 4.  Remove the pattern.
 5.  Move the controls that deviate from the pattern back to their original location.
+
 
 

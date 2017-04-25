@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: T Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # T Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter T.
 
@@ -2747,4 +2750,5 @@ An util-element is a tree node that can be accessed via the UtilElements and Uti
 Initializes a new instance of the TreeNodeType class.
 
     private void new()
+
 

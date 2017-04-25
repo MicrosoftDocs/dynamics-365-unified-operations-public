@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Modify row definition cells
@@ -31,6 +31,9 @@ ms.dyn365.ops.version:
 ---
 
 # Modify row definition cells
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information. 
 
@@ -526,4 +529,5 @@ See also
 --------
 
 [Financial reporting](financial-reporting-intro.md)
+
 

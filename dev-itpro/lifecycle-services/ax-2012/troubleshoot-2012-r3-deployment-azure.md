@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2012
 ---
 
 # Troubleshoot your Dynamics AX 2012 R3 deployment on Azure
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains how to resolve common issues and how to get assistance with your Microsoft Dynamics AX 2012 R3 environment on Azure.
 
@@ -167,4 +170,5 @@ To obtain support for Microsoft Dynamics AX, use the resources listed in the fol
 </table>
 
    
+
 

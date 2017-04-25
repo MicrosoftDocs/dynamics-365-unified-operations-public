@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Extend a Retail Server OData controller
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Extend a Retail Server OData controller
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides code that extends the CustomController class.
 
 A controller is a mapping for a commerce entity that controls create, read, update, and delete (CRUD) behaviors and actions for a commerce entity type. Each commerce entity must have a corresponding controller. You can extend a controller that is included with Microsoft Dynamics AX to add new business actions that meet your business requirement. To extend an existing controller, you must define a new class that extends an existing controller class. In the new class, you use the **ExtendedController** attribute to indicate that the new class extends an existing controller, and to indicate which controller the new class extends. In this example, the new class extends the controller for the **Customer** entity type. Each entity type is associated with only one controller. When you create a new controller that overrides an existing controller, the new controller that has the **ExtendedController** attribute is used instead of the original controller. In the following example, the **ExtendedCustomersController** class extends the **CustomersController** class, and takes the entity type and the key field of the **Customer** entity type as parameters. You can find the sample code from this topic in the Retail software development kit (SDK).
@@ -63,4 +66,5 @@ A controller is a mapping for a commerce entity that controls create, read, upda
             }
         }
     }
+
 

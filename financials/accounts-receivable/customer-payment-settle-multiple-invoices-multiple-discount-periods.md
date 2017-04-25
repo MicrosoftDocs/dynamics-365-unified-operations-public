@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Use a customer payment to settle multiple invoices that span multiple discount periods
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Use a customer payment to settle multiple invoices that span multiple discount periods
+
+[!include[banner](../includes/banner.md)]
+
 
 This article shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 
@@ -99,6 +102,7 @@ Arnie views the information on the **Customer transactions** page.
 | FTI-10042  | Invoice          | 6/25/2015 | 10042   | 1,000.00                             |                                       | 505.10   | USD      |
 | ARP-10040  | Payment          | 6/29/2015 |         |                                      | 1,485.00                              | 0.00     | USD      |
 | DISC-10040 | Cash discount    | 6/29/2015 |         |                                      | 9.90                                  | 0.00     | USD      |
+
 
 
 

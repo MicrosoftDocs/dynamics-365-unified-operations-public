@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Set up benefit accrual plans
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Set up benefit accrual plans
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
 
@@ -174,4 +177,5 @@ If the service date basis is set to **Seniority date**, make sure that a seniori
 
 ## Next step
 The next step is to set up payroll taxes. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md).
+
 

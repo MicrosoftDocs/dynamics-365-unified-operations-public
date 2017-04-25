@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Dimension Expression Builder subpattern
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Dimension Expression Builder subpattern
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the Dimension Expression Builder subpattern, which is applied to container controls that use the Dimension Expression Builder control.  
 
@@ -73,4 +76,5 @@ This section will have answers to frequently asked questions that are related to
 ### Open issues
 
 None
+
 

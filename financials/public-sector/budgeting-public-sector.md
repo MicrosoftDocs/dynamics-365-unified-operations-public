@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Budgeting in the public sector
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budgeting in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This overview introduces you to the budgeting functionality that is available for public sector. This includes budget analysis, preliminary budgets and apportionments, and posting definitions.
 
 What are the prerequisites to setting up Budgeting in the public sector?
@@ -64,4 +67,5 @@ See also
 [Accounts receivable in the public sector](accounts-receivable-public-sector.md)
 
 [General ledger in the public sector](general-ledger-public-sector.md)
+
 

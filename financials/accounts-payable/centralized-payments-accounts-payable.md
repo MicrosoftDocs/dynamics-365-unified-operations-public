@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Centralized payments for Accounts payable
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Centralized payments for Accounts payable
+
+[!include[banner](../includes/banner.md)]
+
 
 Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, the same payments don't have to be entered in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios.
 
@@ -299,6 +302,7 @@ Fabrikam generates a payment of 75.00 for vendor 3004, Fourth Coffee. The paymen
 | Due to Fabrikam (Fabrikam West)      |              | 75.00         |
 | Accounts payable (Fabrikam West)     | 25.00        |               |
 | Due to Fabrikam East (Fabrikam West) |              | 25.00         |
+
 
 
 

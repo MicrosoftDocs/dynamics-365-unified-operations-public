@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: X Classes
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # X Classes
+
+[!include[banner](../includes/banner.md)]
+
 
 System API classes that start with the letter X.
 
@@ -10869,6 +10872,7 @@ node
 <!-- -->
 
 label  
+
 
 
 

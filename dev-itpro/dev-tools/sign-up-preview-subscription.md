@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Sign up for a subscription
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Sign up for a subscription
+
+[!include[banner](../includes/banner.md)]
+
 
 In this tutorial, you will learn how to subscribe to the preview/partner offer and deploy an environment.
 
@@ -166,6 +169,7 @@ Lifecycle Services is the starting point for performing online administrative ac
         
         [![Active users](./media/activeusersadmin.png)](./media/activeusersadmin.png)
         
+
 
 
 

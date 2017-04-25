@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Purchase order overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Purchase order overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.
 
@@ -92,4 +95,5 @@ See also
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
 [Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
 

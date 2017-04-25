@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Handling cash discounts for overpayments
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Handling cash discounts for overpayments
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
 
@@ -137,6 +140,7 @@ The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page) | 10.50        |               |
 | Accounts receivable                                                                              |              | 10.50         |
+
 
 
 

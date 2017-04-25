@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Overview of Power BI integration with Entity store
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Overview of Power BI integration with Entity store
+
+[!include[banner](../includes/banner.md)]
+
 
 Entity store is an operational data store that is included with Microsoft Dynamics 365 for Operations. This topic describes how Entity store enables Power BI integration with Dynamics 365 for Operations.
 
@@ -72,4 +75,5 @@ This page includes a list of aggregate measurements. You can stage any of these 
 [![Configure refresh dialog box](./media/retail-cube-refresh-1024x548.jpg)](./media/retail-cube-refresh.jpg) 
 
 The batch framework is used for scheduling. Therefore, refresh jobs can be monitored, load balanced, and prioritized by using the capabilities of the batch framework. As of the May 2016 update, we support only full updates. However, we will enable incremental updates soon. Eventually, in a future update, the system will update Entity store based on actual usage patterns. Therefore, as an administrator, you will have to use the **Configure refresh** dialog box only as an exception.
+
 

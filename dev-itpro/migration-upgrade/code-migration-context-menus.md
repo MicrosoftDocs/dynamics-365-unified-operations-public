@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Code migration - Context menus
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Code migration - Context menus
+
+[!include[banner](../includes/banner.md)]
+
 
 A new programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Operations. It also includes UX guidelines for context menus.
 
@@ -148,5 +151,6 @@ As you migrate context menus, consider the following guidelines:
 -   Right-click is a shortcut. Therefore, the commands on the context menu should **always** be available in other places on the page.
 -   Don't create submenus of context menus. Submenus are hard to use and aren't touch-friendly.
 -   Limit the number of menu items to five.
+
 
 

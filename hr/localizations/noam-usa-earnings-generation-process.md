@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Earnings and generating earnings FAQ
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Earnings and generating earnings FAQ
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic answers some frequently asked questions about earnings and generating earnings. It includes questions about distributions and earning lines, recurring earnings, calculating salaries for workers who are on leave, and earnings generation. 
 
@@ -73,4 +76,5 @@ When you generate earnings, you might receive the following message: “The sele
 
 ## Don't see your question here?
 We're working to include as many questions as we can, so that Help will be more useful to people just like you. Tell us what question you would like to add to this topic. Send email to <adocs@microsoft.com>. Announcements: To see known issues and recent fixes, use [Issue search](http://go.microsoft.com/fwlink/?LinkID=389258) in [Microsoft Dynamics Lifecycle Services](http://go.microsoft.com/fwlink/?LinkID=306505) (LCS).
+
 

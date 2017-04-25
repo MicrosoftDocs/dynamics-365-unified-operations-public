@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Advance holder transactions
@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Advance holder transactions
 
+[!include[banner](../includes/banner.md)]
+
+
 Learn how to work with advance holder transactions in Microsoft Dynamics 365 for Operations.
 
 Transactions for these workers who are advance holders can be posted by using advance holder accounts. The worker ID that is specified for each advance holder can be used to track all advance holder transactions. This number is retrieved as an account number for advance holder transactions in the **General journals** and **Advance holder transactions** pages.
@@ -63,4 +66,5 @@ When you settle advance holder balances via cash, journal entries for closing th
 | **Automatic**                | Select the **Automatic** check box to create and post automatically a journal that is preset on the **Accounts payable parameters** page.     |
 
 After the slip journal is processed, if the amount in the **Amount to be transferred** field was negative, a disbursement slip is generated for the advance holder when the balances are closed. If the amount in the **Amount to be transferred** field was positive, a reimbursement slip is generated.
+
 

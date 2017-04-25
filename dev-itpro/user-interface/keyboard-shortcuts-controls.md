@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Keyboard shortcuts for extensible controls
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Keyboard shortcuts for extensible controls
+
+[!include[banner](../includes/banner.md)]
+
 
 Keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose keyboard shortcuts for your extensible controls. It also outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 
@@ -292,3 +295,4 @@ Here is a Dialogs example that extends the Form control.
     },
 })
 </pre>
+

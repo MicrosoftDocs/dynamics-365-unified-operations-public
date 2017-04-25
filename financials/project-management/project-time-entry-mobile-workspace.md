@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Project time entry mobile workspace for the Dynamics 365 for Operations app
@@ -31,6 +31,9 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Project time entry mobile workspace
+
+[!include[banner](../includes/banner.md)]
+
 "[!include[banner](../includes/banner.md)]"
 
 
@@ -125,6 +128,7 @@ Download and install the Dynamics 365 for Operations mobile app from your mobile
 11. Select the line property.
 12. Optional: Enter any external and internal comments.
 13. Select **Done**.
+
 
 
 

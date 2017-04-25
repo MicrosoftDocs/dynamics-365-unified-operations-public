@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Navigation in Dynamics 365 for Operations
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Navigation in Dynamics 365 for Operations
+
+[!include[banner](../includes/banner.md)]
+
 
 This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 
@@ -126,4 +129,5 @@ There is a convenient search mechanism for finding and navigating to forms and w
 The search keywords are matched not only to the caption of the navigation elements but also to the corresponding path. For example, a search on the keywords "ven bal report" returns results that match "vendor balance" in the caption and "report" in the path. 
 
 [![navSearchExample2](./media/navsearchexample2.png)](./media/navsearchexample2.png)
+
 

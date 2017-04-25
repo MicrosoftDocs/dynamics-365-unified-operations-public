@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Project cost accrual on purchase receipts
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Project cost accrual on purchase receipts
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes how accrued project costs from purchase receipts can be tracked in Microsoft Dynamics 365 for Operations. 
 
@@ -84,4 +87,5 @@ In the **Committed cost** page, records created in step 1 will be closed and new
 [![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 The vendor invoice will remain in a pending state until the actual vendor invoice arrives.
+
 

@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Advance invoices for Eastern Europe
@@ -31,7 +31,8 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Advance invoices for Eastern Europe
-"[!include[banner](../includes/banner.md)]"
+
+[!include[banner](../includes/banner.md)]
 
 
 An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order. This topic provides information about advance invoices for Eastern Europe.
@@ -153,6 +154,7 @@ Create a purchase order, or select an existing purchase order. Click **Invoice**
 | Percent                                         | Specify the percentage of the prepayment for the purchase order.                                                         |
 | Update purchase                                 | Select from the options. The advance invoice amount will be calculated based on the Purchase order amount for the items. |
 | Posting profile with prepayment journal voucher | Specify the posting profile for the prepayment.                                                                          |
+
 
 
 

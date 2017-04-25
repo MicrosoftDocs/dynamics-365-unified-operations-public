@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Inventory object values
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Inventory object values
+
+[!include[banner](../includes/banner.md)]
+
 
 This article provides information about how the values of an inventory object are calculated. 
 
@@ -146,4 +149,5 @@ See also
 [Cost entries](cost-entries.md)
 
 [What's new and changed in Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+
 

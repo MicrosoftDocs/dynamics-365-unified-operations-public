@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Find support for Dynamics 365 for Operations and Dynamics Lifecycle Services
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Find support for Dynamics 365 for Operations and Dynamics Lifecycle Services
+
+[!include[banner](../includes/banner.md)]
+
 
 This article explains how to get help with Microsoft Dynamics 365 for Operations or Microsoft Dynamics Lifecycle Services (LCS). 
 
@@ -93,4 +96,5 @@ For technical questions that are related to signing in to and accessing Customer
 </table>
 
 For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
+
 

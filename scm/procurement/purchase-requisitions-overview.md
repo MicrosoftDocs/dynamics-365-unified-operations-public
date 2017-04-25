@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Purchase requisition overview
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Purchase requisition overview
+
+[!include[banner](../includes/banner.md)]
+
 
 This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 
@@ -200,4 +203,5 @@ See also
 [Create a requisition for consumption (task guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
+
 
