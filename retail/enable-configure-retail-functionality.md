@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Initialize seed data in a new Retail environment
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Operations - Retail.

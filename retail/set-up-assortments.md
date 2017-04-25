@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up assortments
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article describes what an assortment is and explains how to set up assortments in Microsoft Dynamics 365 for Operations - Retail.

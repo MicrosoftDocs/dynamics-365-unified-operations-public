@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage Retail accounts and devices from headquarters
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article explains how an IT Pro can set up Retail activation accounts for retail workers to activate Modern POS or Cloud POS devices.

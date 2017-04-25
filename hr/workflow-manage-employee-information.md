@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Use workflows to manage employee information
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic explains how you can use the workflow capability for Human resources to manage employee information. For example, you can associate a workflow with a position and configure an approval workflow that is started when employees change their record.

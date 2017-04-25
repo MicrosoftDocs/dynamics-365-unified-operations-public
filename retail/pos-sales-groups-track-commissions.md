@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Track commissions in POS using sales groups
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.

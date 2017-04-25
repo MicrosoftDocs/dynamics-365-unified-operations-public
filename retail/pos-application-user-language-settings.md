@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # POS application and user language settings
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic describes how to change language settings in Retail Modern POS (MPOS) and Cloud POS.

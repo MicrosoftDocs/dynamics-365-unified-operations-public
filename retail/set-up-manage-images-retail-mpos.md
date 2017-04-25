@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up and manage images for Retail Modern POS
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article explains the steps that are involved in setting up and managing images for the various entities that appear in Retail Modern POS (MPOS).

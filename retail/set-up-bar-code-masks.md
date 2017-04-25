@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up bar code masks
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic describes how to set up bar code mask characters, bar code masks, and how to assign bar code masks to bar codes.

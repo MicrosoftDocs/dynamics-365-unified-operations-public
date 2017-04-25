@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Order holds
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic describes holds on orders using Retail and commerce in Dynamics AX.

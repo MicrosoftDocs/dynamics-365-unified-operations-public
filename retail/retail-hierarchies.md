@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail hierarchies
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article describes retail hierarchies in Microsoft Dynamics AX.

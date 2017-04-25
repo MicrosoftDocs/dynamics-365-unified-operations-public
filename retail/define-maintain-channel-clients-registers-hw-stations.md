@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Define and maintain channel clients, registers, and hardware stations
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic covers how to connect peripherals to your Retail POS.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Retail SDK samples
 
-[!include[banner](../../includes/banner.md)
+[!include[banner](../../includes/banner.md)]
 
 
 This topic describes three new samples that were released together with the Retail SDK in December 2016.

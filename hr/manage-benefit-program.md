@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Define and manage a benefits program
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This topic provides information about how to set up an manage benefits.

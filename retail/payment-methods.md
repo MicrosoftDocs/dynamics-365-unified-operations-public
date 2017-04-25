@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Payment methods
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 Each payment type that a retailer accepts must be configured in Retail and commerce in Microsoft Dynamics 365 for Operations when the system is set up. This article describes the payment types that you can set up and describes the process for setting them up.

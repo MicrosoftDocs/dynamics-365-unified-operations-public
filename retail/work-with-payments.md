@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Payment methods in a call center
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic covers the different payment methods you can use in a call center in Retail and commerce.

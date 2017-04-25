@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Analyze sales trends and patterns
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 You can study sales trends and patterns in real time in Microsoft Dynamics 365 for Operations - Retail.

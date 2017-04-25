@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Organizations and organizational hierarchies (Commerce essentials)
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 Commerce essentials has three types of internal organizations that you can define to help an organization carry out a business process or achieve a goal. 

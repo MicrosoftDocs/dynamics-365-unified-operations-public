@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Assess sales performance by product
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 You can study profitability for the top 10 products using Microsoft Dynamics 365 for Operations. 

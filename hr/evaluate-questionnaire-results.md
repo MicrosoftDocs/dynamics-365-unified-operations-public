@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View and evaluate the results of a questionnaire
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Receipt templates and printing
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article describes how to modify form layouts to control how receipts, invoices, and other documents are printed. Microsoft Dynamics 365 for Operations - Retail includes a form layout designer that you can use to easily create and modify various kinds of form layouts.

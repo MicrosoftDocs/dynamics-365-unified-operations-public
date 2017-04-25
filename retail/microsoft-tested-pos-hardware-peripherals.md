@@ -32,7 +32,7 @@ ms.dyn365.version: AX 7.0.0
 
 # POS hardware peripherals
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 Retail Modern point of sale (POS) and Cloud POS can utilize a wide range of POS hardware peripherals, with multiple interfaces and deployment options to achieve a retailer’s various business scenarios. 

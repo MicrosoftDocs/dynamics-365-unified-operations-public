@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up company-specific HR parameters
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 The settings of some Human resources (HR) parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific HR parameters.

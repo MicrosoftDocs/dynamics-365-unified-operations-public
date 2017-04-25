@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up training courses
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.

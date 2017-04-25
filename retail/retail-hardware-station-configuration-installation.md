@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail hardware station configuration and installation
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This tutorial explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail SDK overview
 
-[!include[banner](../../includes/banner.md)
+[!include[banner](../../includes/banner.md)]
 
 
 This article provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.

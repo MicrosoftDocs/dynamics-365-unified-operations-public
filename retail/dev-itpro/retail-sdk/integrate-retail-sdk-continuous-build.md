@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Integrate the Retail SDK with the continuous build system (VSTS)
 
-[!include[banner](../../includes/banner.md)
+[!include[banner](../../includes/banner.md)]
 
 
 The LCS-integrated experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Dynamics 365 for Operations and Retail components. This article outlines the manual steps for merging both build systems. 

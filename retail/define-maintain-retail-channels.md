@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Define and maintain retail channels
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article provides an overview of the process for setting up brick-and-mortar stores, which are referred to as retail stores in Microsoft Dynamics 365 for Operations. It includes information about the tasks that you must complete both before and after you set up a retail store.

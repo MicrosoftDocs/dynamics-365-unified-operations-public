@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail SDK extensibility samples
 
-[!include[banner](../../includes/banner.md)
+[!include[banner](../../includes/banner.md)]
 
 
 The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Retail.  

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up a customer loyalty program
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 This article describes how to set up a loyalty program. Loyalty programs can help increase customer loyalty by rewarding customers for buying products in your retail stores. In Microsoft Dynamics 365 for Operations, you can set up simple or complex loyalty programs that apply across your legal entities in any retail channel.
