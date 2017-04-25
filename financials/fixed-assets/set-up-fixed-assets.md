@@ -1,11 +1,11 @@
-﻿---
+---
 # required metadata
 
 title: Set up fixed assets
 description: This topic provides an overview of Fixed assets module setup.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
