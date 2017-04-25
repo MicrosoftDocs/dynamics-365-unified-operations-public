@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow system overview
-description: This article describes the workflow system in Microsoft Dynamics 365 for Operations.
+description: This topic describes the workflow system in Microsoft Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
 ms.date: 04/25/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article describes the workflow system in Microsoft Dynamics 365 for Operations.
+This topic describes the workflow system in Microsoft Dynamics 365 for Operations.
 
 What is workflow?
 -----------------
@@ -43,11 +43,11 @@ What is workflow?
 The term *workflow* can be defined in two ways: as a system and as a business process.
 ### Workflow is a system
 
-Workflow is a system that is installed with Dynamics 365 for Operations and that runs on the Application Object Server (AOS). The workflow system provides functionality that you can use to create individual workflows, or business processes.
+Workflow is a system that is installed with Dynamics 365 for Operations and runs on the Application Object Server (AOS). The workflow system provides functionality that you can use to create individual workflows, or business processes.
 
 ### Workflow is a business process
 
-A workflow represents a business process. It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document. For example, the following figure shows a workflow for expense reports. 
+A workflow represents a business process. It defines how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document. For example, the following illustration shows a workflow for expense reports. 
 
 ![Workflow with elements that are assigned to users](./media/workflow_user.gif) 
 
@@ -63,7 +63,7 @@ There are several benefits of using the workflow system in your organization:
 ## Workflow content
 
 + [Workflow architecture](workflow-system-architecture.md)
-+ [Wprkflow elements](workflow-elements.md)
++ [Workflow elements](workflow-elements.md)
 + [Workflow actions](workflow-actions.md)
 + [Create a workflow](create-workflow.md)
 + [Configure workflow properties](configure-workflow-properties.md)
@@ -76,7 +76,3 @@ There are several benefits of using the workflow system in your organization:
 + [Configure a parallel activity in a workflow](configure-parallel-activity-workflow.md)
 + [Configure a parallel branch in a workflow](configure-parallel-branch-workflow.md)
 + [Configure a line-item workflow](configure-line-item-workflow.md)
-
-
-
-
