@@ -139,6 +139,7 @@
 ### [Set up layout](warehousing/warehouse-configuration.md)
 ### [Warehouse work policies](warehousing/warehouse-work-policies.md)
 ### [Unit of measure and stocking policies](warehousing/unit-measure-stocking-policies.md)
+### [Warehouse Power BI content](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
 ## Picking and packing
 ### [Packing materials and fees](warehousing/pack-materials-packing-material-fees.md)
 ## Inventory counting
