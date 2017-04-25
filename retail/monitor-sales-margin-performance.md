@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Monitor sales and margin performance
 
-[!include[banner](includes/banner.md)
+[!include[banner](includes/banner.md)]
 
 
 You can monitor sales and margin performance in real time using Microsoft Dynamics 365 for Operations.
