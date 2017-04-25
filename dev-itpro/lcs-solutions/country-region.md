@@ -84,12 +84,14 @@ The following sections list resources by country/region.
 
 ### Austria
 
+-   [Half-year depreciation](/dynamics365/operations/financials/localizations/emea-aut-half-year-depreciation)
 -   [Packing material fees](/dynamics365/operations/financials/localizations/emea-aut-packing-material-fee-calculation)
 -   [VAT statement](/dynamics365/operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### Belgium
 
 -   [CODA bank statement](/dynamics365/operations/financials/localizations/emea-bel-coda-bank-statement-import)
+-   [Intervat tax declaration](/dynamics365/operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [PRODCOM report setup](/dynamics365/operations/financials/localizations/emea-bel-prodcom-report)
 
 ### Brazil
@@ -124,6 +126,7 @@ The following sections list resources by country/region.
 
 ### The Czech Republic
 
+-   [Cash discount on credit note](/dynamics365/operations/financials/localizations/emea-cze-credit-note-cash-discount.md)
 -   [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
 -   [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
@@ -145,6 +148,7 @@ The following sections list resources by country/region.
 -   [Edit invoice IDs on sales orders](/dynamics365/operations/financials/localizations/emea-edit-invoice-id-sales-orders)
 -   [EU entry certificates](/dynamics365/operations/financials/localizations/emea-entry-certificates)
 -   [EU sales list reporting](/dynamics365/operations/financials/localizations/emea-eu-sales-list)
+-   [Exchange rate adjustments](/dynamics365/operations/financials/localizations/emea-exchange-rate-adjustments)
 -   [File formats for methods of payment](/dynamics365/operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 -   [Fixed assets disposal for Estonia and Lithuania](/dynamics365/operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 -   [Intrastat](/dynamics365/operations/financials/localizations/emea-intrastat)
@@ -161,6 +165,7 @@ The following sections list resources by country/region.
 -   [Set up signers for print forms](/dynamics365/operations/financials/localizations/emea-set-up-signers-for-printing-forms)
 -   [Split periods in periodic journals](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [Update how amounts are displayed on reports and documents](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)
+-   [VAT exchange rates](/dynamics365/operations/financials/localizations/emea-vat-exchange-rate)
 -   [VAT reporting for Europe](/dynamics365/operations/financials/localizations/emea-vat-reporting)
 -   [View transactions on settlement](/dynamics365/operations/financials/localizations/emea-transactions-settlement-form)
 
@@ -198,6 +203,7 @@ The following sections list resources by country/region.
 -   [Packing slip date verification on invoices for Italy](/dynamics365/operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Italian sales tax books](/dynamics365/operations/financials/localizations/emea-ita-fiscal-books)
 -   [Split payment for invoices issued to the Public Administration](/dynamics365/operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
+-   [Withholding tax](/dynamics365/operations/financials/localizations/emea-ita-withholding tax)
 
 ### Japan
 
@@ -254,6 +260,8 @@ The following sections list resources by country/region.
 -   [Duplicate sales invoice numbering](/dynamics365/operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering)
 -   [Fixed assets depreciation](/dynamics365/operations/financials/localizations/emea-pol-fixed-assets-depreciation)
 -   [Fixed assets disposal](/dynamics365/operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
+-   [Returnable packaging](/dynamics365/operations/financials/localizations/emea-pol-returnable-packages)
+-   [Sales tax reports](/dynamics365/operations/financials/localizations/emea-pol-sales-tax-reports)
 -   [Turnover and balances statement](/dynamics365/operations/financials/localizations/emea-pol-turnover-balances-statement)
 
 ### Saudi Arabia
@@ -268,12 +276,14 @@ The following sections list resources by country/region.
 
 -   [Spanish bill of exchange options](/dynamics365/operations/financials/localizations/emea-esp-bill-of-exchange-options)
 -   [Cash discount is applied in the invoice parameter](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
--   [Use fiscal data from the invoice account](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
+-   [Conditional sales tax](/dynamics365/operations/financials/localizations/emea-esp-conditional-sales-tax)
 -   [Fixed asset revaluation groups](/dynamics365/operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
+-   [Intra-community VAT](/dynamics365/operations/financials/localizations/emea-esp-intra-community-vat)
 -   [One-time customers](/dynamics365/operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
 -   [Spanish promissory note options](/dynamics365/operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Sales and purchase cycles](/dynamics365/operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Special entries and opening sheets](/dynamics365/operations/financials/localizations/emea-esp-opening-sheets-spain)
+-   [Use fiscal data from the invoice account](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
 
 ### Sweden
 
