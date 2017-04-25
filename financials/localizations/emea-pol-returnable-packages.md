@@ -31,13 +31,8 @@ ms.search.validFrom: 2016-11-30
 ---
 
 # Returnable packaging for Poland
-"[!include[banner](includes/banner.md)]"
+[!include[banner](../includes/banner.md)]
 
-
-The topic describes how to set up and use returnable packaging for Poland.
-
-Introduction
-------------
 
 The functionality for returnable packaging lets you handle the registration of packages that can be returned by customers. Users can define packaging codes and specify the amount of the deposit that a customer pays for returned packaging materials. This functionality is an extension of the standard functionality for packaging materials.
 
@@ -94,10 +89,10 @@ On the **Sales order** page, on the Action Pane, on the **Pick and pack** tab, c
 
 ### Print and post invoices
 
-On the **Sales order** page, on the Action Pane, on the **Invoice** tab, click **Generate** &gt; **Invoice**. After invoices are posted, users can inquire about package transactions that have posted deposit amounts for each invoice. Click **Inventory management** &gt; **Setup** &gt; **Packing materials** &gt; **Return packages**, and then, on the **Transactions** tab, click **Transactions** to open the **Return packages transactions** page. Click **Voucher** to open the **Voucher transactions** page. Verify the customer deposit amounts that are posted to the main account. The main account number is specified on the **Customer posting profiles** page. To print the **Deposit packages transactions** report, click **Printout**. Users can also inquire about return package totals for a selected customer. Click **Accounts receivable** &gt; **All customers**, and then, on the **Collect** tab, click� **Packages at customer** to open the **Return packages transactions** page.
+On the **Sales order** page, on the Action Pane, on the **Invoice** tab, click **Generate** &gt; **Invoice**. After invoices are posted, users can inquire about package transactions that have posted deposit amounts for each invoice. Click **Inventory management** &gt; **Setup** &gt; **Packing materials** &gt; **Return packages**, and then, on the **Transactions** tab, click **Transactions** to open the **Return packages transactions** page. Click **Voucher** to open the **Voucher transactions** page. Verify the customer deposit amounts that are posted to the main account. The main account number is specified on the **Customer posting profiles** page. To print the **Deposit packages transactions** report, click **Printout**. Users can also inquire about return package totals for a selected customer. Click **Accounts receivable** &gt; **All customers**, and then, on the **Collect** tab, click **Packages at customer** to open the **Return packages transactions** page.
 
 ## Post and print packages returns
-To enter information about the packages that customers return, click **Accounts receivable** &gt; **All customers**, and then, on the **Collect** tab, click�**Packages return** to open the **Return packages confirmation** page. Enter values in the following fields. **Return packages section**
+To enter information about the packages that customers return, click **Accounts receivable** &gt; **All customers**, and then, on the **Collect** tab, click **Packages return** to open the **Return packages confirmation** page. Enter values in the following fields. **Return packages section**
 
 | Field       | Description                                                                                        |
 |-------------|----------------------------------------------------------------------------------------------------|
