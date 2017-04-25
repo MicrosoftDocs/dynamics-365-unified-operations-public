@@ -96,7 +96,9 @@
 ### [Journal list report](emea-deu-journal-list-report.md)
 ### [Print a separate label for credit memos that originate from sales](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Hungary
+### [Fixed asset depreciation methods](emea-hun-fixed-assets-depreciation-methods.md)	
 ### [Low-cost fixed assets](emea-hun-low-cost-fixed-assets.md)
+### [Move a fixed asset to inventory](emea-hun-fixed-asset-to-inventory.md)
 ## Italy
 ### [VAT statements details](emea-ita-vat-statements-details.md)
 ### [Black list report](emea-ita-black-list-report.md)
@@ -124,6 +126,7 @@
 ### [Fixed asset disposal functionality extension](emea-pol-fixed-asset-disposal-functionality-extension.md)
 ### [Returnable packaging](emea-pol-returnable-packages.md)
 ### [Sales tax reports](emea-pol-sales-tax-reports.md)
+### [Standard audit file (SAF)](emea-pol-standard-audit-file-saf.md)
 ### [Turnover balances statement](emea-pol-turnover-balances-statement.md)
 ## Spain
 ### [Apply cash discounts in the invoice](emea-esp-cash-discount-applied-invoice.md)
