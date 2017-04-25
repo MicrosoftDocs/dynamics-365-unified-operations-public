@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-02-28
 ---
 
 # Database management home page
-"[!include[banner](includes/banner.md)]"
+"[!include[banner](../includes/banner.md)]"
 
 
 These topics describe how to manage the databases that support Microsoft Dynamics 365 for Operations. 
