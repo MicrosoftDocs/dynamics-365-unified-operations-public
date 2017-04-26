@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Operations.
+This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Operations. 
 
 Working with aggregate data
 ---------------------------
