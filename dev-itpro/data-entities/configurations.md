@@ -207,10 +207,26 @@ There are several entities that require some additional steps when you
 are doing configurations. Please follow these recommendations as you
 build your configurations. As we continue to improve the product, we will eliminate as many special steps as possible. 
 
-Insert the  list of entities that are special
-
-  Entity name   Technical name   Action needed
-  ------------- ---------------- ---------------
+| Area                           | Entity                                 | Action to take                                                                                                                                                                                        
+|--------------------------------|----------------------------------------|-----------------------------------------------------------
+| System setup                   | Legal entities                         | Apply a filter to Company if you only want one legal entity |
+|                                | Operating unit                         | Unmap ManagerPersonnelNumber unless you have imported workers |
+|                                | Organization Hierarchy                 | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Remove the export entity and add the import entity  |
+|                                | User Information                       | Apply a filter where ID is not equal to Admin. Unmap PersonName because there is no mapping to the directory. |
+| GL Shared                      | Financial Dimension Values             | All values, including custom values, will be exported. Remove the custom values before importing them. If you leave them in the package, they will not import but the custom values will be populated as you import the data that backs the custom dimension. |
+| Workflow                       | Workflow Version                       | Change the owner in the package data to Admin unless the users in the workflow are already imported |  
+| General ledger                 | Ledger                                 | Apply a filter to Company if you only want one legal entity |  
+|                                | Ledger Fiscal Calendar year            | Apply a filter to Company if you only want one legal entity |
+|                                | Ledger fiscal calendar period          | Apply a filter to Company if you only want one legal entity |
+|                                | Main account legal entity overrides    | Apply a filter to Company if you only want one legal entity |
+|                                | Financial dimension value legal entity | Apply a filter to Company if you only want one legal entity |
+| Accounts payable               | Vendors                                | Unmap DefaultPurchaseSite , DefaultProcurementWarehouseID, Tax1099BoxID, Tax1099Type |
+| Accounts receivable            | Customer write-off reason code         | Apply a filter to Company if you only want one legal entity |
+|                                | Customer details                       | Unmap CollectionsContactPersonID and EmployeeResponsibleNumber unless workers have been imported |
+| Inventory                      | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity |
+|                                | Site current postal address            | Apply a filter to Company if you only want one legal entity | 
+| Product information management | Products                               | Unmap NMFCCode and STCCCode. There are no entities available for those codes at this time |
+| Sales and marketing            | Leads                                  | Unmap LeadOpeningPersonnelNumber, LeadClosingPersonnelNumber, LeadResponsiblePersonnelNumber unless workers have been imported |
                                  
                                  
 Import a configuration
