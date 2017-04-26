@@ -110,6 +110,8 @@
 ## Database synchronization
 # Move packages between environments
 ## Create and apply a deployable package
+# Continuous delivery
+## Continuous delivery home page(continuous-delivery-home-page.md)
 # Performance
 ## Performance home page
 ## [Take a trace using Trace parser](../perf-test/trace-trace-tutorial.md)
