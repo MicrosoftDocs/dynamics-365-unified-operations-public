@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: RobinARH
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
