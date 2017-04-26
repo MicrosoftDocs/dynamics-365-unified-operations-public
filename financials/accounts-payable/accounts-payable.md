@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides an overview of Accounts payable.
+This topic provides an overview of Accounts payable. 
 
 You can enter vendor invoices manually or receive them electronically through a data entity. After the invoices are entered or received, you can review and approve the invoices by using an invoice approval journal or the **Vendor invoice** page. You can use invoice matching, vendor invoice policies, and workflow to automate the review process so that invoices that meet certain criteria are automatically approved, and the remaining invoices are flagged for review by an authorized user.
 
