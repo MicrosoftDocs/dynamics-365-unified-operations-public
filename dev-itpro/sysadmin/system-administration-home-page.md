@@ -81,7 +81,7 @@ Lifecycle Services
 -   [Dynamics 365 for Operations mobile platform](../mobile-apps/mobile-platform.md)
 
 ## General administration
--   [Dynamics 365 for Operations cloud platform monthly updates](faq-platform-monthly-update.md)
+-   [Dynamics 365 for Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
 -   [Batch processing overview](batch-processing-overview.md)
 -   [Batch server overview](batch-server-overview.md)
 -   [Create a batch job](http://ax.help.dynamics.com/en/wiki/create-a-batch-job/) (Task guide)
