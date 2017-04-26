@@ -153,6 +153,7 @@
 ## Replenishment
 ### [Replenishment](warehousing/replenishment.md)
 ## Mobile devices
+### [Install and configure the warehousing app ](warehousing/install-configure-warehousing-app.md)
 ### [Configure field names in warehousing app](warehousing/configure-app-field-names-priorities-warehouse.md)
 ### [Set up mobile devices for warehouse work](warehousing/configure-mobile-devices-warehouse.md)
 ### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
