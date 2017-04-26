@@ -18,7 +18,7 @@ ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad

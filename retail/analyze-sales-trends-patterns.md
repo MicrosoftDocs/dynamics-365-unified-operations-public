@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 85183
 ms.assetid: df9c62a2-6f13-4a08-bdca-07d041172c1b
