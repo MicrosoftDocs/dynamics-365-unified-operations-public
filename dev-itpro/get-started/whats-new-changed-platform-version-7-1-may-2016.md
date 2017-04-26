@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # What's new or changed in Dynamics AX platform update 1 (May 2016)
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes features that are either new or changed in Microsoft Dynamics AX platform update 1. This version was released in May 2016 and has a build number of 7.0.4127.16103.
 
 Platform compatibility
@@ -254,4 +257,6 @@ See also
 [What’s new or changed](whats-new-changed.md)
 
 [New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
+
+
 

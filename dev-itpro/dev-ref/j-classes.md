@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # J Classes
 
+[!include[banner](../includes/banner.md)]
+
+
 System API classes that start with the letter J.
 
 Class Job
@@ -237,4 +240,6 @@ The column of the cursor position; optional.
 #### Remarks
 
 If the node is a method, the code editor opens. If the node is a documentation object, the Help editor opens.
+
+
 

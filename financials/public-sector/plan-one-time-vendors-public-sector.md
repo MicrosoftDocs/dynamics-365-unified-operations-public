@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Plan for one-time vendors in the public sector
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to prepare to import and create multiple one-time vendors and invoices. 
 
 Typically, if you plan to mass-import vendor and invoice information, you first create a data file in spreadsheet format and save it in CSV (comma-separated values) format.
@@ -106,4 +109,6 @@ See also
 [One-time vendors in the public sector](one-time-vendors-public-sector.md)
 
 [Accounts payable in the public sector](accounts-payable-public-sector.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View journal entries and transactions
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains the various ways that you can view journal entries and transactions. 
 
 Users who want to view journals and transactions have several ways to access the data. They can take advantage of inquiry pages that provide drill-down ability, or they can use various report options in the general ledger.
@@ -60,4 +63,6 @@ In addition to the financial reports, you can use the following ledger reports t
 - [General ledger account balances](general-ledger-account-balances.md) 
 - [Accounting source explorer](..\accounts-payable\accounting-source-explorer.md)
 - [Financial reporting](financial-reporting-getting-started.md)
+
+
 

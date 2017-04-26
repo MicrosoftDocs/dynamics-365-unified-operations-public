@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Batch processing overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of batch processing in Microsoft Dynamics 365 for Operations.
 
 Many tasks in Dynamics 365 for Operations can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, performing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. 
@@ -47,4 +50,6 @@ After a batch job has been processed, you can view the history. The history incl
 Use batch groups to categorize batch tasks and run them on specific servers. The servers in your environment might have different software installed, or they might be available at different times of the day. Batch groups are used to direct batch tasks to the most appropriate server. Tasks in the same batch job can belong to different batch groups. 
 
 For example, server A is set up to print reports, and server B is set up to send electronic documents. You can use batch groups to make sure that reporting tasks are run on server A and electronic documents are processed by server B.
+
+
 

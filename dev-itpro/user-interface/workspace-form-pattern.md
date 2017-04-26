@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Workspace form pattern
 
+[!include[banner](../includes/banner.md)]
+
+
 This article discusses the Operational workspace form pattern. Workspaces are a new concept in Microsoft Dynamics AX, and are intended to be the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
 
 Usage
@@ -139,4 +142,6 @@ This section will have answers to frequently asked questions that are related to
 #### AX 2012 example
 
 [![Workspace(5)](./media/workspace5.png)](./media/workspace5.png)
+
+
 

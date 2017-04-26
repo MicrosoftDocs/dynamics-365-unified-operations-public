@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Master planning and multisite functionality
 
+[!include[banner](../includes/banner.md)]
+
+
 Master planning takes the settings of the site and warehouse inventory dimensions into account. 
 
 The site dimension is mandatory, and you can set the warehouse dimension to be mandatory.
@@ -51,4 +54,6 @@ The following topics describe how the planning engine works, when different sett
 [Master planning - site coverage, warehouse not mandatory](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Master planning - How the BOM version is determined](master-plan-bom-version-determined.md)
+
+
 

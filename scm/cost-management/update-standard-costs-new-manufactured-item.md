@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update standard costs for a new manufactured item
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides guidance for updating standard costs for a new manufactured item. 
 
 The following guidelines assume that you use a two-version approach to update standard costs. In this approach, one costing version contains the standard costs that were originally defined for the frozen period, and the second costing version contains the incremental updates that pertain to the new manufactured items. The incremental updates are entered as cost records in the second costing version, and eventually they are enabled. The two-version approach requires that you define a second costing version. Here are the guidelines for defining this costing version:
@@ -51,5 +54,7 @@ To add new manufacturing items throughout the frozen period, follow these steps.
 5.  Use the **Costing version setup** page to change the blocking flag to allow activation of the pending cost records in the second costing version.
 6.  Use the **Activate prices** page (which you open from the **Costing version maintenance** page) to enable all pending cost records in the second costing version. You can also enable the pending cost records for individual items by clicking the **Activate** button on the **Item price** page.
 7.  Use the **Costing version setup** page to change the blocking flags in the second costing version to prevent additional data maintenance. The blocking policies prevent the entry of new pending costs and the activation of pending costs.
+
+
 
 

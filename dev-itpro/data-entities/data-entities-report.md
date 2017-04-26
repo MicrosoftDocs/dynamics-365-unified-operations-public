@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # Data entities report
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic points you to a report that lists the data entities available in Microsoft Dynamics 365 for Operations.
 
 A *data entity* is an abstraction from the physical implementation of database tables. For example, in normalized tables, a lot of the data for each customer might be stored in a customer table, and then the rest might be spread across a small set of related tables. In this case, the data entity for the customer concept appears as one de-normalized view, in which each row contains all the data from the customer table and its related tables. A data entity encapsulates a business concept into a format that makes development and integration easier. The abstracted nature of a data entity can simplify application development and customization. Later, the abstraction also insulates application code from the inevitable churn of the physical tables from version to version of Microsoft Dynamics 365 for Operations. For more information about data entities, see [Data entities home page](data-entities.md).
@@ -41,4 +44,6 @@ The [Data entities report](https://mbs.microsoft.com/customersource/northamerica
 
 ## How the report is grouped
 The report is a Microsoft Excel file. For large reports, the rows are grouped alphabetically on tab 1. All rows are displayed when you click tab 2. [![GeneratedReports](./media/generatedreports.png)](./media/generatedreports.png)
+
+
 

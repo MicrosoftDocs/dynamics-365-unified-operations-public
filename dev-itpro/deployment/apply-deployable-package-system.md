@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Apply a deployable package on a Dynamics 365 for Operations system
-description: This tutorial walks you through the steps for applying a deployable package on a Microsoft Dynamics 365 for Operations system. This package can be either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
-author: kfend
+title: Apply a deployable package on a Dynamics 365 for Operations environment
+description: This topic describes how to deploy either a binary hotfix for an AOS or a deployable package that was created in your development environment.
+author: manalidongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: Lifecycle Services
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 51
+# ms.reviewer: kfend
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 107013
@@ -30,14 +30,15 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Apply a deployable package on a Dynamics 365 for Operations system
+# Apply a deployable package on a Dynamics 365 for Operations environment
 
-This tutorial walks you through the steps for applying a deployable package on a Microsoft Dynamics 365 for Operations system. This package can be either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
+[!include[banner](../includes/banner.md)]
+
 
 Supported environments
 ----------------------
 
-Package deployment using automated flows in LCS are supported on the following topologies:
+Package deployment using automated flows in Dynamics 365 for Operations Lifecycle Services are supported on the following topologies:
 
 -   **Implementation Project**: All environments (Dev, Test, Build, Demo, Sandbox, and Production) are now supported. Automated package application is self-serve on all environments except Production. For Production environments, customers must submit a request through LCS to the Service Engineering team to apply packages.
 -   **Partner Projects**: Demo- and single-box Dev/Test environments are supported.
@@ -53,7 +54,7 @@ Manual package deployment must be used for the following topologies. For informa
 -   **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary hotfix, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 
 ## Supported package types
--   **AOT deployable package** – A deployable package that is generated after the application source code is applied, any conflicts are resolved, and the code is compiled.
+-   **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created on a development or build environment.
 -   **Binary package** – A deployable package that contains binary dynamic-link libraries (DLLs) that the platform and application depend on.
 -   **Combined Retail deployable package** – A combined deployable package is a combination of various retail packages that are generated after the Retail code is combined.
 -   **Merged package** –** **A package that is created by merging one package of each type. For example, one Binary package, one AOT package, and one Retail package. The packages are merged in the Asset Library for the project in LCS.
@@ -70,9 +71,10 @@ Manual package deployment must be used for the following topologies. For informa
 ## Apply package on demo/dev/test/build/sandbox environments by using LCS
 **Note:** Package application causes system downtime. All the relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
-1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
-    -   For a binary hotfix, upload the hotfix directly to the Asset library.
-    -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
+Before you begin, verify that the deployable package has been uploaded to your LCS Asset library.
+
+1.  For a binary hotfix, upload the hotfix directly to the Asset library. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
+    -   For an application (AOT) deployable package (Resulting of from an X++ hotfix or application customization and extensions), create the deployable package on your development or build environment than upload it to the LCS Asset Library.
 
 2.  Open the **Environment details** view for the environment where you want to apply the package.
 3.  Click **Maintain** &gt; **Apply updates** to apply an update.
@@ -147,9 +149,13 @@ In a Production environment, package application through LCS is not self-serve l
 -   When the deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request with the new package. [![Comment from Microsoft that changes were reverted, and that the customer must validate the environment](./media/applypackage_prod_18-1024x346.png)](./media/applypackage_prod_18.png)
 -   When you're closing a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
+## Deploying packages in Retail environments
+If you are using Dynamics 365 for Operations - Retail components (such as Retail Modern POS), after you have applied a deployable package to your environment, you will need to update your in-store components as well. See [Retail Modern POS installation and updates](/retail/retail-modern-pos-device-activation) for details.
 
 See also
 --------
 
 [Install a deployable package](install-deployable-package.md)
+
+
 

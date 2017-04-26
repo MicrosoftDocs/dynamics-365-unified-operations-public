@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Import or manually create postal codes
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to import and manually create postal codes in the correct format. This topic includes information about feature that was added for Microsoft Dynamics 365 for Operations. 
 
 The import process lets you update the ZIP/postal codes for a specific country/region. You can also create postal codes manually.
@@ -49,3 +52,5 @@ For some countries, you must use the Data management framework to import codes,
 
 ## Create ZIP/postal codes manually
 Instead of importing codes, you can use the **Address setup** page to manually add new ZIP/postal codes.
+
+

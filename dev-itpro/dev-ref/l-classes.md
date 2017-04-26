@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # L Classes
 
+[!include[banner](../includes/banner.md)]
+
+
 System API classes that start with the letter L.
 
 Class Label
@@ -2053,4 +2056,6 @@ A Boolean value that indicates whether to use a predefined Oracle service.
 #### Remarks
 
 By default, a predefined service is not used.
+
+
 

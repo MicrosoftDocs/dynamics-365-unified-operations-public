@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Order entry deadlines
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about order entry deadlines. An order entry deadline is a cut-off time that determines whether a customer order is treated (and fulfilled) as if it was received on the current day or the next day.
 
 In many companies, only sales orders that are received before a certain time of day are treated as if they were received on that day. Any orders that are received after that time are treated as if they are received on the next business day. This cut-off time for orders is known as the order entry deadline.  
@@ -109,4 +112,6 @@ See also
 --------
 
 [Delivery schedules](delivery-schedules.md)
+
+
 

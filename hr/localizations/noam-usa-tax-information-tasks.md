@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Set up taxes, tax regions, tax codes, and tax groups
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Set up taxes, tax regions, tax codes, and tax groups
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 
@@ -127,4 +130,6 @@ See also
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
 
 [Posting definitions in the public sector](/dynamics365/operations/financials/public-sector/posting-definitions-public-sector)
+
+
 

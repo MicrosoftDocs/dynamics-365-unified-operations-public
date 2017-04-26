@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Design principles and best practices
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
 
 Entity design principles
@@ -101,5 +104,7 @@ A data entity should provide a holistic object that encapsulates the relevant bu
 **Do**
 
 -   Name the EntitySet in plural form. For example, the EntitySet for the **ReleasedProduct** EntityType is **ReleasedProducts**.
+
+
 
 

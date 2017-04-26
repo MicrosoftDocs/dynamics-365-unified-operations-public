@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Methodologies (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 Methodologies in LCS provide a tool that you can use to ensure more repeatable, predictable implementation projects. You can use one of our methodologies, or create your own. With a methodology, you can easily track and report on your progress.
 
 Methodologies can have phases that are associated with Visual Studio Team Foundation Services, phases can have tasks, and both tasks and methodologies can be associated with tools on Lifecycle Services and resources and documents stored on websites, either internal or external to your organization.
@@ -67,4 +70,6 @@ See also
 --------
 
 [Configure Lifecycle Services security](../configure-lcs-security.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure organizational hierarchy
 
+[!include[banner](../includes/banner.md)]
+
+
 Before you set up organizations and organization hierarchies in Microsoft Dynamics 365 for Operations, make sure that you plan how your business will be modeled. The organization model has a significant effect on the implementation of Dynamics 365 for Operations and on business processes. 
 
 Organizational hierarchies represent the relationships between the organizations that make up a business. Therefore, the most important consideration when you model organizations is the structure of your business. We recommend that you define organization structures based on feedback from executives and senior managers from functional areas, such as finance and accounting, human resources, operations, purchasing, and sales and marketing. When you are planning hierarchies, it is also important to consider the relationship between the organizational hierarchy and financial dimensions. You can set up multiple organizational hierarchies to represent different views of your business. By using financial dimensions, you can create reports based on these views. Work with your Microsoft Dynamics 365 for Operations partner to create hierarchies that address both organizational and statutory reporting needs. **Note:** Although you can use financial dimensions to represent legal entities without creating the legal entities in Dynamics 365 for Operations, financial dimensions aren’t designed to address the operational or business needs of legal entities. The interunit accounting functionality in Dynamics 365 for Operations is designed to address only the accounting entries that are created by each transaction. **Caution:** You shouldn’t decide how to model organizations based only on the information in this article. This documentation is a guide. You can work with your Dynamics 365 for Operations Partner for additional guidance. Your Dynamics 365 for Operations Partner has gained experience in various industries and across the customer base.
@@ -70,6 +73,8 @@ Consider the following best practices when you implement an organization hierarc
 -   Before you model major restructuring scenarios, use the hierarchy's effective dates to perform an impact analysis and a validation test.
 -   Use draft mode to change a hierarchy before you publish a new version in a production environment.
 -   Limit the number of people who have permissions to add or remove organizations from a hierarchy in a production environment. A smaller number reduces the chance that costly mistakes can occur and corrections must be made.
+
+
 
 
 

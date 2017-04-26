@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # M Classes
 
+[!include[banner](../includes/banner.md)]
+
+
 System API classes that start with the letter M.
 
 Class ManagedEventArgs
@@ -4160,4 +4163,6 @@ arrayIndex
 Initializes a new instance of the MultiSelectionContext class.
 
     private void new()
+
+
 

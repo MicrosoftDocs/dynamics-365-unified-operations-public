@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure a parallel branch in a workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 To configure a parallel branch, complete the following procedures in the workflow editor.
 
 A parallel branch is essentially a workflow that runs in the context of a parent workflow.
@@ -54,4 +57,6 @@ See also
 --------
 
 [Create a workflow](create-workflow.md)
+
+
 

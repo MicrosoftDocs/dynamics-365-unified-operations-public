@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ math run-time functions
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the math run-time functions.
 
 These functions perform mathematical calculations.
@@ -721,4 +724,6 @@ The following example truncates 2.7147 to 2.00.
         print strFmt("r = %1",  r);
         pause;
     }
+
+
 

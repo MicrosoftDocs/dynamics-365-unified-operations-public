@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Factor depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the factor depreciation method.
 
 Factors are the percentages that are used to depreciate assets. When you set up a fixed asset depreciation profile and select **Factor** in the **Method** field on the **Depreciation profiles** page, you can set up progressive, digressive, or straight line depreciation:
@@ -79,4 +82,6 @@ The acquisition price is 100,000, the factor is 20, the service life is 10 years
 
 ## Straight line depreciation
 The value in the **Factor** field is equal to **50**. In this case, the depreciation is the same in each period, and you should consider the implications of the values that you have specified in other fields, as described in [Straight line service life depreciation](straight-line-service-life-depreciation.md).
+
+
 

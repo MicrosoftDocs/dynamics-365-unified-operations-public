@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement and sourcing overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the functionality that's available in the Procurement and sourcing module.
 
 Procurement and sourcing covers all the steps from identifying a need for product and services through procuring the product, receipt, invoicing, and processing of payment with vendors. Procurement processes can be configured toward specific business needs by defining purchasing policies and workflows.
@@ -43,7 +46,7 @@ The need for products or services may arise from *requisitions*, for example, wh
   
 The procurement department identifies suppliers for required products and services, and this can involve a *request for quotation* being sent out to multiple potential suppliers. It's possible to share the specifications of the product that's being requested and potential vendors can view these to see if they can deliver a product that conforms with them. Vendors return their bids which are then reviewed by the procurement department before they select the supplier that they want to procure from.  
 
-Purchase orders include an option to send out a *purchase inquiry* to the vendor as an alternative to a more comprehensive request for quotation process. The purchase inquiry can be used to help establish terms like prices, discounts, and delivery date for the order. If vendors are set up to use the **Vendor** portal,* * purchase inquiry functionality is disabled. Instead the order is shared on the **Vendor** portal, and when a *confirmation request* is sent the vendor can directly confirm the order.  
+Purchase orders include an option to send out a *purchase inquiry* to the vendor as an alternative to a more comprehensive request for quotation process. The purchase inquiry can be used to help establish terms like prices, discounts, and delivery date for the order. If vendors are set up to use the **Vendor** portal, purchase inquiry functionality is disabled. Instead the order is shared on the **Vendor** portal, and when a *confirmation request* is sent the vendor can directly confirm the order.  
 
 *Vendor catalogs* can be used to collect information on the product assortment that vendors can supply. Vendors can publish their own catalog, so it's easier to keep the catalog up to date. It's possible to attach an *approved vendor list* to a product, and this can help guide vendor selection when new purchase orders are opened, and prevent the use of unintended vendors.
 
@@ -92,4 +95,6 @@ Invoiced purchase orders will record the liability into the vendor account withi
 
 ## Vendor performance
 Performance and review of purchasing is supported through *procurement and account payable reports,* which include spend analysis and vendor performance analysis.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Demand forecasting overview
 
+[!include[banner](../includes/banner.md)]
+
+
 Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders. The enhanced demand forecast reduction rules provide an ideal solution for mass customization.
 
 To generate the baseline forecast, a summary of historical transactions is passed to a Microsoft Azure Machine Learning service that is hosted on Azure. Because this service isn't shared among users, it can easily be customized to meet industry-specific requirements. You can use Dynamics 365 for Operations to visualize the forecast, adjust the forecast, and view key performance indicators (KPIs) about forecast accuracy.
@@ -87,4 +90,6 @@ See also
 [Monitoring forecast accuracy](monitor-forecast-accuracy.md)
 
 [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+
+
 

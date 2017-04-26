@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ and debugger features
 
+[!include[banner](../includes/banner.md)]
+
+
 This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features. This is a walkthrough of the new features with exercises included to practice using these features. 
 
 In previous versions, the X++ code was compiled into pseudo-code, or p-code, that was interpreted on the server or on the client application. This code was then subject to further compilation into CIL. Today the story is much simpler--only CIL is supported, and this code is generated from a new compiler. In this tutorial, we’ll be discussing some of the new features that have been added to the X++ language for Microsoft Dynamics 365 for Operations. As we run through the scenarios, you’ll also see some of the new features in the debugger.
@@ -598,4 +601,6 @@ Put a breakpoint on the print statements by pressing F9 while that statement is 
 ### The immediate window
 
 The immediate window is a useful feature in the VS debugger that allows the user to enter expression and statements to evaluate at any given time. This feature isn't currently implemented in the X++ stack, as is the case for many other languages, notably F\#. However, that doesn't mean that the savvy user can't benefit from the immediate window. It just means that snippets must be expressed in C\#, not in X++. There's a separate document that describes the details of how this can be done to great effect.
+
+
 

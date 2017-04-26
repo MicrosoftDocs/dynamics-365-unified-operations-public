@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Security Development Tool (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 | **Note**                                                                                                                                                                                   |
@@ -52,4 +55,6 @@ See also
 [Define or edit entry point permissions (AX 2012)](define-edit-entry-point-permissions.md)
 
 [Record entry points in Microsoft Dynamics AX Enterprise Portal](record-entry-points-enterprise-portal.md)
+
+
 

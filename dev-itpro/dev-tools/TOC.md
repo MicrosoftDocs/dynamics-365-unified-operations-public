@@ -106,6 +106,7 @@
 ## [Customize with extensions and overlayering](../extensibility/customization-overlayering-extensions.md)
 ## [Class extensions](../extensibility/class-extensions.md)
 ## [Extend the RunBase class](../extensibility/extend-runbase-class.md)
+## [Extend the number sequence scope](../extensibility/extend-number-sequence-scope.md)
 ## Database synchronization
 # Move packages between environments
 ## Create and apply a deployable package
@@ -121,3 +122,6 @@
 ## [Deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 # Dates
 ## [Date effectivity](date-effectivity.md)
+# Licensing
+## [ISV licensing](isv-licensing.md)
+

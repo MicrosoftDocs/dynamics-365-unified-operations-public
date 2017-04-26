@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Tools add-ins for Visual Studio
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic reviews the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
 
 A lot of great tools have been added to Microsoft Visual Studio to support development. However, there will always be additional tools to meet specific requirements. To make it easier to add these additional tools, an **Add-ins** infrastructure has been provided for developers. The additional tools are available in two places:
@@ -51,4 +54,6 @@ See also
 [Developer home page](developer-home-page.md)
 
 [Development tools](development-tools.md)
+
+
 

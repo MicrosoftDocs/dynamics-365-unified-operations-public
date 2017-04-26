@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Date effectivity
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
 
 There are different design patterns for date-effective features that involve data entities. The patterns are classified into two main categories:
@@ -174,5 +177,7 @@ Create a new entity that is named **FMVehicleRateEntity**, and add it to the pr
 #### Test your project
 
 -   Build your project again, and run the following X++ job to test your project. [![Testing the project](./media/capa-504x1024.png)](./media/capa.png)
+
+
 
 

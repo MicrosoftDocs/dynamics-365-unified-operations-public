@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build operations
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic reviews the process to build projects and full build of model packages.
 
 The elements of a model must be built so that they can be used by the application. You can build the elements in a project. You can also build all the elements in a model. The following actions are performed during a build operation:
@@ -116,4 +119,6 @@ See also
 [Development tools](development-tools.md)
 
 [Developer home page](developer-home-page.md)
+
+
 

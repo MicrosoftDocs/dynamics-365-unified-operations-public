@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # View Intelligent Data Management Framework purge or archive jobs (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 You can use the options on the Microsoft Dynamics AX IDMF **Status **menu to refresh the status of all currently running jobs and provide details for all currently running and completed jobs. On the toolbar, click **Status** to open the **Status** workspace.
@@ -219,4 +222,6 @@ To update the **Status** workspace, click **Refresh** on the toolbar.
 
 ## Export to Excel
 This command lets you export selected rows from the data grid, from all workplaces where this command is available.
+
+
 

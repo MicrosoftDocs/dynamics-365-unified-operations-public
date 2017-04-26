@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up assortments
 
+[!include[banner](includes/banner.md)]
+
+
 This article describes what an assortment is and explains how to set up assortments in Microsoft Dynamics 365 for Operations - Retail.
 
 An assortment is a collection of related products that you assign to a retail channel, such as a brick-and-mortar store or an online store. You use assortments to identify the products that are available in each store. An assortment can include categories of products. Therefore, all products that are assigned to a specific category are included in the assortment. An assortment can also include specific products and specific variants of products. By setting up an assortment, you can assign thousands of products to your retail channels at that same time, in any combination that your stores require. You can set up as many product assortments as you require. Each product can be included in one or more assortments, and each assortment can be assigned to one or more retail channels. For example, you define one assortment that includes a base set of products. All stores receive this assortment. You then define another assortment that includes only large sporting equipment. Only your larger stores receive this assortment. The following diagram shows how products can be assigned to assortments, and how those assortments can be assigned to retail channels. ![Product assortment relationships](./media/assortments_relationship.gif)
@@ -53,5 +56,7 @@ After you complete the prerequisites, you can create an assortment and assign it
 2.  Select the retail channels or the high-level groups of retail channels that the assortment applies to.
 3.  Add product categories, individual products, or product variants to the assortment. You can include all products in a specific category, or you can exclude selected products from a category that is included in the assortment.
 4.  Publish the assortment. When you publish an assortment, the retail assortment scheduler is automatically run. This process generates the list of products. When this process is completed, the products become available to the retail channels that the product assortment is assigned to. If changes are made to an assortment that has been published, or to the retail channels that the assortment is assigned to, the assortment must be updated. To update the assortment when changes are made, you can run the retail assortment scheduler as a batch job.
+
+
 
 

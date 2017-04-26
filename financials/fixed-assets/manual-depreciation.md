@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manual depreciation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article gives an overview of the manual depreciation method.
 
 When you set up a fixed asset depreciation profile and select **Manual** in the **Method** field on the **Depreciation profiles** page, the depreciation of fixed assets that are assigned to the depreciation profile is determined by the percentage that you enter for each interval in the calendar year. The intervals that you set up percentages for are posted according to the value that you select in the **Period frequency** field on the **General** FastTab of the **Depreciation profiles** page. Here are the values that you can select:
@@ -76,4 +79,6 @@ If you select **Half-Yearly** in the ****Period frequency** field**, you set u
 | December 31 | (11,000 – 1,000) × 50% = 5,000 |
 
 The total of percentages for all intervals doesn't have to be 100. However, you receive a message if the value in the **Cumulative percentage** field on the **Fixed asset depreciation profile schedules** page isn't **100**.
+
+
 

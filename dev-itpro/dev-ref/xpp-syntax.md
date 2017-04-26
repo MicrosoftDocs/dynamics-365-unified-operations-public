@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ syntax
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic contains contains the syntax reference for X++. 
 
 X++ Keywords
@@ -1494,4 +1497,6 @@ See also
 --------
 
 [X++ Language Reference](xpp-language-reference.md)
+
+
 

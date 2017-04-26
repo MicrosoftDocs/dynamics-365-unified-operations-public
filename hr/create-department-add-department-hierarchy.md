@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a department and associate it with the department hierarchy
 
+[!include[banner](includes/banner.md)]
+
+
 A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. You can use departments to report on functional areas. Departments might have profit and loss responsibility.
 
 A department might include a group of cost centers. Positions can be assigned to departments. To create a department, click **Human Resources** &gt; **Departments** &gt; **Department**. The following table describes the fields that are available.
@@ -56,5 +59,7 @@ To add a department to the department hierarchy, follow these steps.
 4.  In the list of departments that appears, select the department to add to the hierarchy.
 5.  Save your changes. You receive a message that a draft version of the hierarchy has been created.
 6.  When you're ready, click **Publish** in the hierarchy designer. You can enter an effective date that indicates when the hierarchy should be published. For example, to add a new department at the beginning of the next calendar year, set the effective date to January 1 of the new calendar year. The changes to the hierarchy will take effect on that date.
+
+
 
 

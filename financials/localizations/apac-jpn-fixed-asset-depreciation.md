@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fixed asset depreciation for Japan FAQ
 
+[!include[banner](../includes/banner.md)]
+
+
 This article answers some frequently asked questions about fixed asset depreciation for Japan.
 
 A fixed asset depreciates over the course of its useful life. Therefore, the acquisition value of the asset decreases. To regulate the depreciation of a fixed asset, you must assign one of the following depreciation methods to the asset, based on the date when the asset was put into service:
@@ -141,4 +144,6 @@ You can import the following schedules to recalculate the depreciation and servi
 -   Years passed schedule
 
 The depreciation rate schedule that you import depends on the type of depreciation method that you use for a fixed asset.
+
+
 

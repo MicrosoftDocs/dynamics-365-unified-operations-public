@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Retail Store Scale Unit overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the Retail Store Scale Unit and when to use it.
 
 Overview
@@ -59,4 +62,6 @@ See also
 --------
 
 [Retail Store Scale Unit download and configuration through self-service](retail-store-scale-unit-configuration-installation.md)
+
+
 

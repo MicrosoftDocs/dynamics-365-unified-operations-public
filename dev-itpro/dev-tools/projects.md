@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Projects in Dynamics 365 for Operations
 
+[!include[banner](../includes/banner.md)]
+
+
 The Dynamics 365 for Operations project type is part of the Microsoft Visual Studio Tools for Dynamics 365 for Operations. 
 
 The Dynamics 365 for Operations project type is part of the Microsoft Visual Studio Tools for Dynamics 365 for Operations. This project type resembles other projects in Visual Studio. It helps you organize and manage the elements that you're working with for a model. For example, the project can have folders that help you group the elements. A Visual Studio solution can contain multiple projects. There is one important constraint for a project: it can contain elements from only one model. If you must work with elements from different models, you must use multiple projects in your Visual Studio solution.
@@ -146,5 +149,7 @@ To use the contents of a project package file, you must import the .axpp file in
 4.  Specify whether you want to open the project in the current selection, in a new solution, or not at all.
 5.  In the **Details** field, review the elements that will be imported. You can clear the check box next to any elements that you don't want to import. [![17\_DevoToolsConcept](./media/17_devotoolsconcept.png)](./media/17_devotoolsconcept.png)
 6.  Click **OK** to complete the import process.
+
+
 
 

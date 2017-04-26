@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Install and configure Microsoft Dynamics 365 for Operations &#8211; Warehousing
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to install and configure Microsoft Dynamics 365 for Operations - Warehousing.
 
 Dynamics 365 for Operations - Warehousing is an application available on Google Play Store and Windows Store. For the current version of Microsoft Dynamics 365 for Operations, this app is provided as a standalone component, which means self-deployment on devices used for warehouse tasks. In order to use the app in your Dynamics 365 for Operations environment, you must download the app on each device and configure it to connect to your Dynamics 365 for Operations environment. This topic describes how to install the app on your devices. It also explains how to configure the app to connect to your Dynamics 365 for Operations environment.
@@ -102,5 +105,7 @@ In case of a lost or compromised device, you must remove access to Dynamics 365 
 6.  Click the **Configure** tab, scroll down and ensure that the **Client ID** of the application is the same as in step 2 in this section.
 7.  Click the **Delete** button in the command bar.
 8.  Click **Yes** in the confirmation message.
+
+
 
 

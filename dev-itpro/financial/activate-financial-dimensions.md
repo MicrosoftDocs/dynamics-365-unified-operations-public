@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Activate financial dimensions
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic contains information about the activating financial dimension process.
 
 When a new financial dimension is added to the system, users are prompted with a message stating that the financial dimension is not consumable until Dimension activation is run. When Dimension activation is run, a database schema change occurs in the **DimensionAttributeValueCombination** and **DimensionAttributeValueSet** tables. The schema change adds a new column to the table for each financial dimension. During this process, a schema lock is placed on the two tables by Microsoft SQL Server so that the table can be updated. When the process is complete, the tables are no longer locked. If this process is attempted when a journal is open, then a deadlock may occur. If this happens, the user could potentially receive a metadata error from the server. Users can refresh the session to get the updated metadata. The message the user receives states:
@@ -51,4 +54,6 @@ The **Rebuild financial dimensions** option is set to **No** by default, as it i
 [Set up financial dimensions (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-financial/)
 
 [Maintenance mode](..\sysadmin\maintenance-mode.md)
+
+
 

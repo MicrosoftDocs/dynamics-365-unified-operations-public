@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customer orders overview
 
+[!include[banner](includes/banner.md)]
+
+
 This topic provides information about customer orders in Retail Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 
 In an omni-channel retail world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
@@ -100,4 +103,6 @@ See also
 --------
 
 [Hybrid customer orders](hybrid-customer-orders.md)
+
+
 

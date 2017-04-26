@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Job scheduling
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about job scheduling, which is a more detailed form of scheduling than operations scheduling. You can use job scheduling to schedule individual jobs or shop orders, and to control the manufacturing environment.
 
 You can use job scheduling to schedule individual jobs or shop orders, and to control the manufacturing environment. Job scheduling breaks down each operation into its individual tasks or jobs. These jobs are then assigned to the operations resources that will perform them. Job scheduling also lets you synchronize all jobs that are referenced by the selected job. You can specify a start date and time or end date and time for the job, and then run scheduling. The time that you specify can be the start time or the end time, depending on the scheduling direction. This functionality is useful when, for example, a job can be run only on one machine at a time, or when you want to optimize the job that is run for each resource.
@@ -76,4 +79,6 @@ Resources are assigned to jobs through job scheduling. You can establish maximum
 
 ## Resource efficiency
 Job scheduling considers the efficiency percentages that are specified for the resources. Efficiency percentages reduce or increase the time that is reserved for the resource. Therefore, lead time is also increased or decreased. The following formula is used for the calculation: Scheduling time = Time × 100 ÷ Efficiency percentage In this formula, *Time* includes both the run time and the setup time.
+
+
 

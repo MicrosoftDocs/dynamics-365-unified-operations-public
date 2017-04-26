@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budget planning data allocation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the various allocation methods that are available in Microsoft Dynamics 365 for Operations and how they can be used.  
 
 You can distribute the data in a budget plan in a number of ways to accurately portray the projected amounts.
@@ -74,4 +77,6 @@ Next, you create a stage allocation on the **Budget planning configuration** pag
 Finally, add an automated task for budget planning stage allocation at the desired workflow stage. In the following example, two budget planning stage allocations (outlined in red) have been inserted into the workflow.
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+
+
 

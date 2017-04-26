@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Handling cash discounts for overpayments
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
 
 An invoice is considered overpaid when the payment amount is more than the invoice amount minus the cash discount. To specify how an obtainable cash discount difference is handled when an invoice is overpaid, use the **Cash discount administration** and **Maximum overpayment or underpayment** fields on the **Accounts receivable parameters** page. In the following example, the customer has overpaid the invoice by 0.50.
@@ -137,6 +140,8 @@ The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page) | 10.50        |               |
 | Accounts receivable                                                                              |              | 10.50         |
+
+
 
 
 

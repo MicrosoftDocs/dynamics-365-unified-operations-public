@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Weighted average with physical value and marking
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 When you run an inventory closing, all receipts are settled against a virtual issue, which holds the total received quantity and value. This virtual issue has a corresponding virtual receipt from which the issues are settled. In this manner, all issues get the same average cost. The virtual issue and receipt can be seen as a virtual transfer, which is named the weighted average inventory closing transfer.
@@ -227,6 +230,8 @@ The following diagram illustrates this series of transactions with the effects o
 -   Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the sequence of inventory transaction postings in the timeline.
 -   Inventory closings are represented by a red vertical dashed line and the label Inventory Close.
 -   Settlements that are performed by inventory close are represented by dotted red arrows going diagonally from a receipt to an issue.
+
+
 
 
 

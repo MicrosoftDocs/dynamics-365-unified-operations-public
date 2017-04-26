@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Security Development Tool (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 This topic describes the user interface of the Security Development Tool.
 
 **Note:** This is pre-release documentation of a preliminary nature and is subject to change at any time without notice. Microsoft cannot guarantee the accuracy of any information provided herein.
@@ -101,4 +104,6 @@ See also
 [Define or edit entry point permissions](define-edit-entry-point-permissions.md)
 
 [Record entry points in Microsoft Dynamics AX Enterprise Portal](record-entry-points-enterprise-portal.md)
+
+
 

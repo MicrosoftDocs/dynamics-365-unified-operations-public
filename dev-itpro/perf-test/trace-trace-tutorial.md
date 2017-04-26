@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Take a trace using Trace parser
 
+[!include[banner](../includes/banner.md)]
+
+
 This tutorial provides guidelines on how to take traces.
 
 In this tutorial, you'll take a tour of how to collect and download traces. The trace analysis tool works largely similar to the Dynamics AX 2012 version yet it is not backward compatible and you can't use it to analyze Dynamics AX 2012 traces. The trace parser tool can be found in the PerfSDK folder on your development deployments.
@@ -69,4 +72,6 @@ This tutorial requires that you access the environment as an administrator on th
 5.  Delete the trace if you want. You might do this if you have downloaded it.
 
 **Note: **The trace will be deleted after 7 days. For more information about the desktop version of trace parser, see [Trace parser: Using the desktop version to diagnose problems and analyze performance issues](trace-parser.md).
+
+
 

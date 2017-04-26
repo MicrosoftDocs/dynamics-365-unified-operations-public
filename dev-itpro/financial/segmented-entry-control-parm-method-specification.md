@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Segmented entry control parm methods
 
+[!include[banner](../includes/banner.md)]
+
+
 Describes the parm methods that can be set in code on an instance of a Segmented Entry control.
 
 The Segmented Entry control has multiple parm methods that influence how the control will behave. Here is a description of each method.
@@ -66,4 +69,6 @@ See also
 [Segmented Entry control migration](segmented-entry-control-conversion.md)
 
 [Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+
+
 

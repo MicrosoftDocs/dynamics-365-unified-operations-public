@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reserve inventory quantities
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the different options that are available for reserving inventory.
 
 You can automatically reserve inventory quantities for a specific sales order. This means that reserved inventory cannot be withdrawn from the warehouse for other orders unless the inventory reservation, or part of the inventory reservation, is canceled.
@@ -84,4 +87,6 @@ There are two options related to reservations on the **Inventory and warehouse 
 ### Inventory reservation policies on the Production parameters page
 
 The value of the **Reservation** field on the **General** tab on the **Production parameters** page determines the default point in the production process at which inventory should be reserved. For example, inventory could be reserved when work is scheduled, or when work is started.
+
+
 

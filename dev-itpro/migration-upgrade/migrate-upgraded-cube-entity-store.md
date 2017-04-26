@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store
 
+[!include[banner](../includes/banner.md)]
+
+
 In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in Microsoft Dynamics 365 for Operations. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 
 The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram. For an overview of Power BI integration with entity store, see [Power BI integration with entity store](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). [![Power BI Architecture diagram](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
@@ -186,4 +189,6 @@ See also
 --------
 
 [Modeling and using aggregate data](../analytics/model-aggregate-data.md)
+
+
 

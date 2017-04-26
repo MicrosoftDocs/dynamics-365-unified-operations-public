@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Models
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
 
 To work with models in the model store, you use tools in Microsoft Visual Studio. You can create new models and change parameters for existing models.
@@ -76,4 +79,6 @@ See also
 [Developer home page](developer-home-page.md)
 
 [Distribution of models: How to export and import model files](models-export-import.md)
+
+
 

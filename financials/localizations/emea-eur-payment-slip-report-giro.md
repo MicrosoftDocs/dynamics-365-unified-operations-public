@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Payment slip report for Europe
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about payment slip reports for Europe.
 
 The functionality for payment slip reports is available for legal entities that have their primary address in Denmark, Belgium, Norway, Switzerland, or Finland. Businesses often attach printed payment slips to invoices to provide a payment reference for posting and settlement. The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices.
@@ -63,5 +66,7 @@ After you set up the payment slip attachment format for sales invoices, free tex
 2.  Create a new customer, or select an existing customer.
 3.  On the **Invoice and delivery** FastTab, in the **On a customer invoice**, **On a free text invoice**, **On an interest note**, **On a collection letter**, **On a project invoice**, and **On an account statement** fields, select the format for payment slip attachments that will accompany documents of each type that are sent to the selected customer.
 4.  Close the form to save your changes.
+
+
 
 

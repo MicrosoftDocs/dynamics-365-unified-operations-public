@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Vendor collaboration with customers
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how you can use vendor collaboration in Dynamics 365 for Operations to work with POs and to monitor consignment inventory.
 
 This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 for Operations. It includes information about how to monitor and respond to purchase orders, and how to monitor consignment inventory. It's also possible to use vendor collaboration to work with invoices. For more information, see [Vendor collaboration invoicing workspace](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
@@ -72,4 +75,6 @@ See also
 --------
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Bank payment fees covered by vendors
 
+[!include[banner](../includes/banner.md)]
+
+
 In Japan, the bank payment fees are usually covered by vendors (the receiving party). This topic answers some of the frequently asked questions about bank payment fees that are covered by vendors.
 
 When you make payments to a vendor, the bank payment fees can be covered by you or by the vendor. When the vendor covers the bank payment fees, you can set up the process in such a way that bank payment fees are automatically deducted from each payment that the company makes to the vendor. Complete the following tasks to set up and calculate the bank payment fees for a vendor:
@@ -70,4 +73,6 @@ To calculate the consumption tax on the bank payment fees, set up the following 
 
 ## How can I differentiate bank accounts from the same bank?
 To differentiate two different bank accounts within the same bank, you can use the bank group as a filter for the bank rule. On the **Bank rules for payment fee** page, in the **Third party bank group** and **Company bank group** fields, select **Bank groups**. Then, in the **Relationship** field, select **&lt;&gt;**.
+
+
 

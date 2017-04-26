@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 
 Cost accounting
@@ -852,4 +855,6 @@ See also
 --------
 
 [What's new or changed](whats-new-changed.md)
+
+
 

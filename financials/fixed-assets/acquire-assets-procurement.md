@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Acquire assets through procurement
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets.
 
  The following methods are available for integrating Fixed assets and Accounts payable, and you must use the same method for all fixed assets:
@@ -109,4 +112,6 @@ The following are variations for this scenario:
 
 
 For more informations, see [Fixed assets integration](fixed-asset-integration.md).
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure Accounts receivables and Credit and collections
 
+[!include[banner](../includes/banner.md)]
+
+
 Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.
 
 You can set up customer groups, customers, posting profiles, various payment options, interest notes, collection letters, commissions, parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable and Credit and collections information.
@@ -111,4 +114,6 @@ The following table lists the pages that support the configuration and maintenan
 
  
 For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).
+
+
 

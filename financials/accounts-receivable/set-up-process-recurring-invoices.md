@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up and process recurring invoices
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to set up and process recurring invoices. You can use recurring invoices if you must invoice customers for the same amount on a regular basis.
 
 Create a recurring free text invoice template
@@ -65,4 +68,6 @@ Print recurring free text invoices
 ----------------------------------
 
 After recurring invoices are posted, you can print the invoices from the free text invoice list page. You can print the invoices that are selected, or you can select a range of invoices to print.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Simple List form pattern
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about the Simple List form pattern. This pattern is used to maintain data for simple entities.
 
 Usage
@@ -119,4 +122,6 @@ None at this time.
 ### AX 2012 content
 
 [![AX 2012 example](./media/simplelist3.png)](./media/simplelist3.png)
+
+
 

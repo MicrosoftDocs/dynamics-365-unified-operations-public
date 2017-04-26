@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Role-based security
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides an overview of the elements of role-based security in Microsoft Dynamics 365 for Operations. 
 
 In role-based security, access is not granted to individual users, only to security roles. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who is not assigned to any role has no privileges. 
@@ -82,6 +85,8 @@ By default, privileges are provided for all features in Dynamics 365 for Operati
 Each function in Dynamics 365 for Operations, such as a form or a service, is accessed through an entry point. Menu items, web content items, and service operations are referred to collectively as entry points. 
 
 In the security model for Dynamics 365 for Operations, permissions group the securable objects and access levels that are required to run a function. This includes any tables, fields, forms, or server side methods that are accessed through the entry point.
+
+
 
 
 

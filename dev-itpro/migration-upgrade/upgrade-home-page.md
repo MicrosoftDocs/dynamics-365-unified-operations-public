@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Upgrade home page
 
+[!include[banner](../includes/banner.md)]
+
+
 These topics describe the process for upgrading your Dynamics 365 for Operations environment and data.
 
 Upgrading your environment and data
@@ -40,6 +43,8 @@ Upgrading your environment and data
 -   [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
 -   [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md)
 -   [Upgrade to the latest platform of Dynamics 365 for Operations](upgrade-latest-platform-update.md)
+
+
 
 
 

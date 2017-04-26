@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Components of Dynamics 365 for Operations - Retail
 
+[!include[banner](includes/banner.md)]
+
+
 This topic describes the various components that make up Microsoft Dynamics 365 for Operations - Retail.
 
 Dynamics 365 for Operations - Retail provides mid-market and large retailers with a complete head office and point of sale (POS) solution that includes support for online and brick-and-mortar stores. It can help retailers increase financial returns, improve service, manage growth, reach customers, and streamline efficiencies.
@@ -87,6 +90,8 @@ Dynamics 365 for Operations - Retail provides mid-market and large retailers wit
 </tr>
 </tbody>
 </table>
+
+
 
 
 

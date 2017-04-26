@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 3
 
 # Custom designs for business documents
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic shows how to create a custom report design for an existing application business document by using a pure extension model. 
 
 Microsoft Dynamics 365 for Operations includes an expanded set of tools to support custom solutions. This topic focuses on the steps for creating a custom report design for an existing application business document by using a pure extension model. Follow the steps later in this topic to associate a custom report design with an instance of an application document. When you've finished, users can configure Print management settings to select the custom design whenever it's appropriate, based on transaction details. The following illustration shows a typical application customization.[![extendingprintmgt](./media/extendingprintmgt1.png)](./media/extendingprintmgt1.png)  
@@ -93,4 +96,6 @@ The following walkthrough shows the process of introducing a custom report desig
 11. **Update the Print management settings to use the custom business document.** For this example, go to **Accounts receivable** &gt; **Setup** &gt; **Forms** &gt; **Form setup**. Click **Print Management**, find the document configuration settings, and then select the custom design. The following illustration shows the Print management settings after the changes have been compiled. [![Print Management settings after compilation](./media/app-extension-print-mgt-after-1024x608.png)](./media/app-extension-print-mgt-after.png)
 
 You’ve now finished customizing the business document. Users will now be presented with the custom report design for the business document when they process transactions in the application.
+
+
 

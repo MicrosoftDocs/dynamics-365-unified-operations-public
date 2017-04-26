@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up mobile devices for warehouse work
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 
 **Note:** This article applies to features in Warehouse management. It doesn't apply to features in Inventory management. The menu items that appear on the menus on a warehouse mobile device are configured on the **Mobile device menu items** page. Because the menu items can be put onto different menus, it's easy to configure menu structures so that only specific types of work are exposed to specific users. You can configure menu items to perform the following tasks:
@@ -418,3 +421,5 @@ See also
 
 [Set up a mobile device menu item to register received items (task guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 [Advantages of using Inventory statuses](../inventory/inventory-statuses.md)
+
+

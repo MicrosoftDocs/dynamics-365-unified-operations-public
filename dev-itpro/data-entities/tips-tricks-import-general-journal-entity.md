@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Best practices for importing vouchers using the General journal entity
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides tips for importing data into the General journal by using the General journal entity.  
 
 You can use the General journal entity to import vouchers that have an account or offset account type of **Ledger, Customer, Vendor, or Bank**. The voucher can be entered as one line, using both the **Account** field and the **Offset account** field, or as a multi-line voucher, where only the **Account** field is used (and the **Offset account** is left blank on each line). The General journal entity doesn't support every account type. Instead, other entities exist for scenarios where different combinations of account types are required. For example, to import a project transaction, use the Project expense journal entity. Each entity is designed to support specific scenarios, which means additional fields may be available in entities for those scenarios but not in entities for a different scenario.
@@ -70,4 +73,6 @@ The following sections describe the effect of these settings, and also explain h
 -   If the **Voucher number** field is set to **Auto-generated**, the import won't succeed. The **Auto-generated** setting for the **Voucher number** field isn't supported.
 
 By default, the General journal entity uses set-based processing. After you evaluate the business requirements for your organization, you can change the **Set-based processing** setting by clicking **Data entities** in the **Data management** workspace. Set-based processing is used to speed up the import process. If you don't use set-based processing, import of the General journal entity import will be slower.
+
+
 

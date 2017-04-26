@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Mobile invoice approvals
 
+[!include[banner](../includes/banner.md)]
+
+
 Mobile capabilities in Microsoft Dynamics 365 for Operations let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
 
 Prerequisites
@@ -486,4 +489,6 @@ The following variations can be done for scenario 1, based on the requirements 
 
 ## Conclusion
 The mobile platform and the application capabilities let you design mobile scenarios that are optimized for a user base in an organization. Based on the examples that are provided in this topic, you can try other variations and create different experiences that meet a specific need.
+
+
 

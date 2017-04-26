@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View and export field descriptions
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
 
 Microsoft Dynamics 365 for Operations has descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can also view and export descriptions on the **Field descriptions** page. 
@@ -103,5 +106,7 @@ See also
 --------
 
 [Customize field help](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
+
 
 

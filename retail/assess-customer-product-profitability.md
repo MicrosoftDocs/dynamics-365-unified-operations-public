@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Assess customer and product profitability
 
+[!include[banner](includes/banner.md)]
+
+
 This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about customers and product profitability from your Microsoft Dynamics 365 for Operations data. 
 
 As part of Dynamics 365 for Operations, users can study profitability for the top customers (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:
@@ -58,4 +61,6 @@ For this assessment, you can use the out-of-box **Top products** report, which y
 -   **Retail store management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**
 -   **Category and product management** workspace Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Products and categories** &gt; **Retail store management** &gt; **Reports** &gt; **Top products report**
 -   **Inquiries and reports** section Dynamics 365 for Operations &gt; **Retail and commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**
+
+
 

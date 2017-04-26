@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Allocate time to jobs in a job bundle
 
+[!include[banner](../includes/banner.md)]
+
+
 In Manufacturing execution, you can bundle jobs. You can then start multiple jobs at the same time on the Job list page.
 
 If you bundle jobs, you must define how the total registered time for all the jobs should be allocated to each job. You define the allocation by selecting one of the following options in the **Bundle type** field on the **Allocation keys** page:
@@ -110,4 +113,6 @@ Consider the three jobs that are performed by a worker who has an hourly wage of
 | Job 3 | (3.33 ÷ 5) × USD 12.00                 | USD 8.00                | 5 hours        | USD 40.00         |
 
 The corrected cost per hour and the job time are posted in a production journal. **Note:** If you select the **Cost category** option on the **General** tab on the **Production order defaults** page, the actual time for each job is transferred to a production journal, where the cost is applied to the cost category of the specific job.
+
+
 

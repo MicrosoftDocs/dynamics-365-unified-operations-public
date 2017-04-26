@@ -32,6 +32,9 @@ ms.dyn365.ops.version: 2012
 
 # Configuration in the Intelligent Data Management Framework (AX 2012)
 
+[!include[banner](../../includes/banner.md)]
+
+
 
 
 Purge and archive functionality
@@ -102,6 +105,8 @@ The discovery process creates a hierarchical relationship tree for a Purge Objec
 | **Caution**                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | You must understand the Microsoft Dynamics AX metadata and application before you start working with the exception parameters list, Archive Objects, or Purge Objects. You must functionally validate the Purge Object or Archive Object to maintain database and application integrity. |
+
+
 
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add extension properties to a customer entity
 
+[!include[banner](../includes/banner.md)]
+
+
 This tutorial shows how to use extension properties to extend an entity. 
 
 In this tutorial, an entity is extended in Microsoft Dynamics AX, and persisted in both Dynamics AX and the channel databases. The point of sale (POS) user interface (UI) then provides access to the value. The new value is also written synchronously to Dynamics AX via the Commerce Data Exchange (CDX) transaction service. No customizations are required for the commerce runtime or Retail Server, because extension properties flow automatically. Changes are required in forms, tables, the Real-time Service (RTS) client, CDX, the channel database, and the POS (both Retail Modern POS and Cloud POS). This tutorial doesn't support offline mode.
@@ -284,5 +287,7 @@ You will manually change the channel database for development. For the live depl
 1.  Add the channel database change file to the database folder, and register it in **customization.settings**.
 2.  Run **msbuild** for the whole Retail SDK solution. All packages will have all appropriate changes.
 3.  Deploy packages, either by using Microsoft Dynamics Lifecycle Services (LCS) or manually.
+
+
 
 

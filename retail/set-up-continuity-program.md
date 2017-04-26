@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up a continuity program for a call center
 
+[!include[banner](includes/banner.md)]
+
+
 This article describes how to set up a continuity program for a call center.
 
 In a continuity program, which is also known as a recurring order program, customers receive regular product shipments according to a predefined schedule. Each shipment can contain a different product, as in the case of a book-of-the-month club, or the same product can be sent repeatedly. To set up a continuity program, you must complete the following tasks.
@@ -51,5 +54,7 @@ After you've set up a continuity program as described above, you can create a c
 -   **Extend continuity lines** (if required) – Extend the number of times that a continuity event can be repeated. The repetition of shipments can then extend beyond the limit that was set in the **Continuity repeat threshold** field in the call center parameters.
 -   **Perform a continuity update** (if required) – Synchronize changes between the continuity program and the continuity parent sales orders.
 -   **Close continuity parent lines and orders** – Close continuity orders.
+
+
 
 

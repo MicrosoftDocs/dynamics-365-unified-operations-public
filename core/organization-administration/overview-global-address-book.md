@@ -2,7 +2,7 @@
 # required metadata
 
 title: Global address book
-description: 
+description: The global address book can help you understand the relationships among people and organizations that are associated with your organization. For example, a customer may also be a vendor in a marketing campaign, or a worker in your organization may also be a vendor.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -32,9 +32,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Global address book
 
+[!include[banner](../includes/banner.md)]
 
 
-The global address book can help you understand the relationships among the people and organizations that are associated with your organization. For example, a customer might also be a vendor in a marketing campaign, or a worker in your organization might also be a vendor. The global address book is a centralized repository for master data that must be stored for all internal and external persons and organizations that the company interacts with. The data that is associated with party records includes the party's name, address, and contact information. Other details vary, depending on whether the party is a person or an organization. Each party record is assigned to a party, and each party can be associated with one or more party roles in a company. Party roles include customer, prospect, worker, user, vendor, competitor, applicant, and contact. For example, the organization party First Up Consultants, can be associated with customer, business relation, and vendor roles in the CEE company, and can also be associated with the vendor role in the CEU company. Here are some of the benefits of this shared data:
+
+
+The global address book is a centralized repository for master data that must be stored for all internal and external persons and organizations that the company interacts with. The data that is associated with party records includes the party's name, address, and contact information. Other details vary, depending on whether the party is a person or an organization. Each party record is assigned to a party, and each party can be associated with one or more party roles in a company. Party roles include customer, prospect, worker, user, vendor, competitor, applicant, and contact. For example, the organization party First Up Consultants, can be associated with customer, business relation, and vendor roles in the CEE company, and can also be associated with the vendor role in the CEU company. Here are some of the benefits of this shared data:
 
 -   The data shows the relationships that people and organizations have with other areas of the company. The relationship between two organizations changes when one organization has multiple roles, such as vendor and customer. Communication between the two organization also changes. There might be special agreements that can be negotiated to encourage a closer partnership with the other organization.
 -   Setup and maintenance are easier. For example, when an address changes, the update must be made in only one place. All the other associated records are updated automatically.
@@ -79,4 +82,6 @@ Each party record’s addresses, locations, and contact information are shared a
 ### Locations and transactions
 
 When a party role is included in a transaction, the location, address, or contact information of the party can be accessed when transaction details are entered.
+
+
 

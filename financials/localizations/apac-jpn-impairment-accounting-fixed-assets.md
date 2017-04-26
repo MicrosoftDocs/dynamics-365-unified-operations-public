@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Impairment accounting for fixed assets
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic includes information about impairment accounting for fixed assets in Japan.
 
 You can perform the following tasks to set up and calculate fixed asset impairments by using Microsoft Dynamics 365 for Operations:
@@ -66,5 +69,7 @@ Yes, you can generate the following reports that contain information about impai
 -   Fixed asset transactions report
 -   Fixed asset impairment transactions report
 -   Review fixed assets for impairment report
+
+
 
 

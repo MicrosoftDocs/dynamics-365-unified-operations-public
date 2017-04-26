@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Procurement catalogs
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes, at a high level, how purchasing professionals can set up and maintain procurement catalogs. Procurement catalogs define the items and services that company employees can order for internal use.
 
 Purchasing professionals can create and maintain catalogs of the items and services that can be purchased for internal use in an organization. After catalogs are set up, company employees can create purchase requisitions to order from them. The catalogs can be used to enforce purchasing policies, so that employees can order only the items and services that are allowed for their buying legal entity. When you create a procurement catalog, you should consider the following tasks:
@@ -76,4 +79,6 @@ See also
 --------
 
 [Set up a procurement category hierarchy (Task guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
+
 

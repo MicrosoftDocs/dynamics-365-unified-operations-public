@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Calculate material consumption
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about various options that are related to the calculation of material consumption. 
 
 The following options that are related to the calculation of material consumption are available on the **Setup** and **Step consumption** tabs on the **Line details** FastTab of the **Bill of materials** page.
@@ -81,4 +84,6 @@ Step consumption is used to calculate constant consumption in quantity intervals
 | 200.00      | 40.0000  |
 
 The bill of materials (BOM) quantity is 1, and the production quantity is 110. The formula for the consumption is From series (Quantity) = Consumption. Because the production quantity is 110, it falls into the "From 100 series." Therefore, the quantity is 20.
+
+
 

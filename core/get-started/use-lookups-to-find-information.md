@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use lookups to find information
 
+[!include[banner](../includes/banner.md)]
+
+
 In Microsoft Dynamics 365 for Operations, many fields have lookups that can help you easily find the correct or desired value. Several enhancements have been added to lookups that make these controls more usable and make users more productive. In this topic, you will learn about these new lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.  
 
 Responsive lookups
@@ -84,4 +87,6 @@ Instead, the user needs to clear the value of the lookup control, open the looku
 After the filter has been applied (see the image below), the user can find and select the row as usual. 
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
 

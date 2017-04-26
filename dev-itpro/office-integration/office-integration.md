@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Office integration
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic reviews Microsoft Office integration concepts and features.
 
 Microsoft Dynamics 365 for operations depends on several technologies:
@@ -215,4 +218,6 @@ See also
 [Office Integration Troubleshooting](office-integration-troubleshooting.md)
 
 [Application stack and server architecture](../dev-tools/application-stack-server-architecture.md)
+
+
 

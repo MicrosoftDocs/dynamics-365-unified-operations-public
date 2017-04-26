@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Maintenance mode
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about maintenance mode in Microsoft Dynamics 365 for Operations. Maintenance mode is a new system-wide setting that lets system administrators safely make system changes that might affect system functionality.
 
 Microsoft Dynamics 365 for Operations includes a new system-wide setting that is named maintenance mode. When maintenance mode is turned on, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, configuration keys can be enabled or disabled. While maintenance mode is on, only system administrators and users who have the **Maintenance mode user** role can sign in to the system. By default, maintenance mode is turned off.
@@ -40,9 +43,9 @@ Microsoft Dynamics 365 for Operations includes a new system-wide setting that i
 When maintenance mode is off, you can't edit the **License configuration** page.
 You can turn on maintenance mode locally by running the following command. 
 
-**Note:** On some virtual machines (VMs), the exact location of the Deployment.Setup.exe tool might differ. Check AosService\\WebRoot\\bin\\.
+**Note:** On some virtual machines (VMs), the exact location of the Deployment.Setup.exe tool might differ. Check AosServiceWebRootbin.
 
-    c:\packages\bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir c:packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd *********** --setupmode maintenancemode --isinmaintenancemode true
+    c:\packagesbinMicrosoft.Dynamics.AX.Deployment.Setup.exe --metadatadir c:packages --bindir c:\packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd *********** --setupmode maintenancemode --isinmaintenancemode true
 
 The following table describes the parameters that are used in this command.
 
@@ -64,10 +67,15 @@ If you try to access Dynamics 365 for Operations while the system is in mainten
 
 You can turn off maintenance mode by running the following command.
 
-    c:\packages\bin\Microsoft.Dynamics.AX.Deployment.Setup.exe --metadatadir c:\packages --bindir c:packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd *********** --setupmode maintenancemode --isinmaintenancemode false
+    c:packagesbinMicrosoft.Dynamics.AX.Deployment.Setup.exe --metadatadir c:\packages --bindir c:packages --sqlserver . --sqldatabase axdbrain --sqluser AOSUser --sqlpwd *********** --setupmode maintenancemode --isinmaintenancemode false
 
 ## Maintenance mode in production environments
 To turn on maintenance mode in a production environment, you must submit a request to the Dynamics Service Engineering (DSE) team by using the **Other request** form in LCS on the **Service requests** page. For more information about submitting a request through LCS, see , see [Submit a request to the Dynamics Service Engineering team](../lifecycle-services/submit-request-dynamics-service-engineering-team.md). 
 
 The Dynamics Service Engineering team will move your system into maintenance mode and work with you to complete the configuration updates. After the team receives a confirmation from you that the updates are complete, they will remove your system from maintenance mode.
+
+## Troubleshooting
+Errors can be found in Event viewer.
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 2
 
 # What's new or changed
 
+[!include[banner](../includes/banner.md)]
+
+
 This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Operations.
 
 To upgrade to the latest version, see [Process for upgrading to the latest Dynamics 365 for Operations update](../migration-upgrade/upgrade-latest-update.md).
@@ -55,15 +58,24 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations platform</td>
+<td>Platform update 6</td>
+<td> 7.0.4509.16180</td>
+<td>April 2017</td>
+<td><a href="whats-new-platform-update-6.md">What’s new or changed in Dynamics 365 for Operations platform update 6 (April 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Operations platform</td>
+<td>Platform update 5</td>
+<td> 7.0.4475.16165</td>
+<td>March 2017</td>
+<td><a href="whats-new-platform-update-5.md">What’s new or changed in Dynamics 365 for Operations platform update 5 (March 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Operations platform</td>
 <td>Platform update 4</td>
-<td>7.0.4425.16160</td>
+<td> 7.0.4425.16161</td>
 <td>February 2017</td>
-<td><ol>
-<li>Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a>.</li>
-<li>Select the <strong>What's New</strong> tab.</li>
-<li>In the <strong>Applications</strong> section, select <strong>Dynamics 365 for Operations</strong>.</li>
-<li>In the <strong>Areas</strong> section, select <strong>Cloud Platform</strong>.</li>
-</ol></td>
+<td><a href="whats-new-platform-update-4.md">What’s new or changed in Dynamics 365 for Operations platform update 4 (February 2017)</a></td>
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Operations</td>
@@ -116,6 +128,8 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 </tr>
 </tbody>
 </table>
+
+
 
 
 

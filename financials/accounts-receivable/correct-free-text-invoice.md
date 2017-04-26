@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Correct a free text invoice
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
 
 To correct a free text invoice that has already been posted, open the posted free text invoice. On the **Invoice** page, select **Cancel**, and then select **Correct invoice**. Select a reason code, add comments, and select the date for new corrected invoice. You can modify the corrected invoice, and post it. 
@@ -51,4 +54,6 @@ You can identify canceling and correcting invoices in two ways:
 
 > [!NOTE]
 > This feature is available only if the **Free text invoice correction** configuration key is selected.
+
+
 

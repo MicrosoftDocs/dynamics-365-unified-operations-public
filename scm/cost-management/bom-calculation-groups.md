@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # BOM calculations groups
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about calculation groups for bills of materials (BOMs) and how to set them up. To run a BOM calculation, you must either set up calculation groups and assign them to individual items, or set a default calculation group. The calculation settings from the calculation group are then used as default values on the BOM calculation page at the time of BOM calculation. 
 
 A default calculation group is required on the **Inventory and warehouse management parameters** page, or a product-specific calculation group is required on the **Released product details** page. The system first looks for the calculation group setup on the **Released product details** page. If it doesn't find a calculation group there, it looks on the **Inventory and warehouse management parameters** page. If the system can't find a calculation group, the user receives an error message during calculation. A calculation group contains policies for the cost price model, the sales price model, and the warnings checklist. The calculation settings from the calculation group are used as default values on the **BOM calculation** page at the time of BOM calculation.
@@ -89,4 +92,6 @@ A BOM calculation generates warning messages. You can view the warnings about a 
 -   Identify when the item on a BOM line has a profitability percentage that is less than you want.
 
 You can define multiple BOM calculation groups, depending on your requirements for variations in warning messages. For example, one BOM calculation group that has warning conditions about an active BOM, a component quantity of 0 (zero), and component cost of 0 (zero) might be enough. When you start a BOM calculation, you can override the warning conditions that are associated with the BOM calculation group. You can also add or remove warning conditions. For example, if the current situation doesn't involve routing data, you can remove the warning condition about an active route. **Note:** Time and attendance includes a **Calculation groups** page, but that page has no relationship to BOM calculation groups. In Time and attendance, workers can be assigned to calculation groups that reflect the grouping of workers who are associated with the same supervisor or manager. Calculation of worker registrations can be done either automatically or manually by a supervisor or manager.
+
+
 

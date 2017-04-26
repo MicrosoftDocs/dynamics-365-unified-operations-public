@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dynamics 365 for Operations  -  Retail for IT pros and developers
 
+[!include[banner](../includes/banner.md)]
+
+
 This page lists the resources that are available for IT pros and developers who support Retail and commerce in Microsoft Dynamics 365 for Operations.
 
 Retail is dependent on Dynamics 365 for Operations. We recommend that you familiarize yourself with the core [deployment and development content](/dynamics365/operations/dev-itpro/index).
@@ -111,6 +114,8 @@ Retail is dependent on Dynamics 365 for Operations. We recommend that you famili
 
 ## Hotfixes
 -   [Install Retail hotfixes](install-retail-hotfix.md)
+
+
 
 
 

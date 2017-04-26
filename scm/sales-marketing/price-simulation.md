@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Price simulation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about price simulation for quotations. Price simulation helps you to evaluate the effect of deductions on the future sales price during the quotation process, before you commit to a specific price.
 
 A price simulation for a quotation shows a new total amount, based on a proposed new price. A price simulation can also show a new amount for a specific line that is created in an existing quotation. You can enter a price simulation and apply it later. Alternatively, you can use the original quotation without a price simulation and make more changes as you work through the sales process with your customer.  
@@ -145,4 +148,6 @@ You run a price simulation and apply a 10-percent total discount to the BR-12 un
 | New total contribution ratio                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38.93%   |
 
 The price simulation affects only the line that it's applied to and reduces the total for that line.
+
+
 

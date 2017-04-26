@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Data entities - Master planning
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides a list of the data entities that are available for the Master planning functionality in Microsoft Dynamics 365 for Operations.
 
 Available data entities
@@ -61,4 +64,6 @@ See also
 [Data entities and packages framework](data-entities-data-packages.md)
 
 [Data entities](data-entities.md)
+
+
 

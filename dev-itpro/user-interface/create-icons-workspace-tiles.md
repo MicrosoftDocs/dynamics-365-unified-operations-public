@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 1
 
 # Create icons for workspace tiles
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 
 The dashboard contains a set of workspace tiles to which the user has access. Each of these tiles contains an icon specific to that workspace. For out-of-the-box workspaces provided by Microsoft, the icons used on the workspace tiles generally correspond to a symbol from the [Symbol font](symbol-font.md). This article discusses the guidelines and recommendations for creating and assigning icons to tiles for workspaces created by Microsoft Certified Partners or individual customers.
@@ -78,4 +81,6 @@ Workspace icon image overlaid to show the circular portion visible on the tile a
 Using this image on a workspace tile yields the following result on the dashboard. 
 
 [![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+
+
 

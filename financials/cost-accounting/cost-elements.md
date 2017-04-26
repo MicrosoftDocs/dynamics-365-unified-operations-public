@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Cost element dimensions
 
+[!include[banner](../includes/banner.md)]
+
+
 As one of the core pillars in Cost accounting, cost element dimensions are used to categorize and track where costs flow to. 
 
 A cost element corresponds to a cost-relevant item in the chart of accounts. Basically, it can be any type of element at the lowest level in a business where costs can flow to. Cost elements as a concept range from ledger accounts to all cost-relevant resources. Currently, Cost accounting supports ledger accounts.
@@ -76,4 +79,6 @@ To ease the setup of cost element dimension members in Cost accounting, you can
 
 ## Implementation considerations
 As cost elements represent the lowest level of cost details, you should make sure that all the cost elements required to make the managerial reporting are included when you implement the cost elements structure. It can be a challenge to find an appropriate number of cost elements for cost control. Having thousands of cost elements can make it difficult to control each cost element. As an alternative, you can group cost elements and manage cost control at an aggregated level.
+
+
 

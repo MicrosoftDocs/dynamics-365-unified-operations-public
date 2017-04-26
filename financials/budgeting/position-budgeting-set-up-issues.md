@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Position budgeting troubleshooting
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides answers to questions that you might have when you configure position budgeting. It addresses frequently asked questions about how to create budget cost elements, compensation groups, and compensation grids. 
 
 Why can’t I find the forecast position page in Human resources?
@@ -63,5 +66,7 @@ The dates on the forecast position cost element line must be within the followin
 -   The activation and retirement dates of the position.
 -   The activation and expiration dates of the budget cost element.
 -   The start and end dates of the budget cycle that is associated with the budget planning process of the forecast position.
+
+
 
 

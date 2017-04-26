@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # View and design financial reports
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 for Operations. Financial reporting consists of a viewing experience within Dynamics 365 for Operations and a click-once report designer that lets you create and edit financial reports.  
 
 Exercise 1: Generate and explore a default financial report
@@ -187,4 +190,6 @@ In this exercise, you’ll be creating a new report. The report is a side-by-sid
 [Financial reporting](\financials\general-ledger\financial-reporting-getting-started.md) 
 [View financial reports](\financials\general-ledger\view-financial-reports.md) 
 [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 

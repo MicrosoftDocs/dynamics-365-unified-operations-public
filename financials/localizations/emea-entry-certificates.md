@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # EU entry certificates
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about European Union (EU) entry certificates.
 
 You can complete the following tasks for a European Union (EU) entry certificate:
@@ -125,6 +128,8 @@ If you don't have access to the pages that are used to complete this task, conta
 </tr>
 </tbody>
 </table>
+
+
 
 
 

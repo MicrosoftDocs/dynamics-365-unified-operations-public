@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Production order cost estimation
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about production cost estimation. Production cost estimation provides the projected material and capacity consumption costs of producing an item in the planned production order quantity. 
 
 After you create a production order, you must estimate production costs. The purpose is to estimate item and route consumption for the production process, because these estimates are used as the basis for subsequent scheduling and production processes.
@@ -63,5 +66,7 @@ A cost estimate also provides the following information:
 -   Comparisons of cost information from previous productions
 -   Budget and forecasting information
 -   Estimates of the production size that is required in order to maintain a particular cost
+
+
 
 

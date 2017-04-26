@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Message center, message bar, and message details API
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes the messaging system.
 
 Message API
@@ -74,4 +77,6 @@ See also
 --------
 
 [User interface development home page](user-interface-development-home-page.md)
+
+
 

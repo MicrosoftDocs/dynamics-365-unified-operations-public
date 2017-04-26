@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Running average cost price
 
+[!include[banner](../includes/banner.md)]
+
+
 The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group. However, before inventory close is run, the system calculates a running average cost price that is typically used when issue transactions are posted.
 
 The system estimates this running average cost price for an item by using the following formula: 
@@ -75,4 +78,6 @@ However, if your business model allows for the following practices, they can hel
 -   If you do *not* select the **Include physical value** option for an item, clear the **Financial negative inventory** option on the **Item model groups** page.
 
 Additionally, consider that the maximum offset in your physical inventory value is limited by the number of physical transactions, and the difference between physical and financial prices. Provided that all physical transactions are eventually updated financially, the physical value can't rise to extreme levels. Finally, note that the amplification effect decreases significantly when the accumulated offset is spread out over several on-hand pieces instead of just one.
+
+
 

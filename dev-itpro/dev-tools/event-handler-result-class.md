@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # EventHandlerResult classes in request or response scenarios
 
+[!include[banner](../includes/banner.md)]
+
+
 Delegate methods and delegate handler methods can be declared to support a request/response scenario, where the delegate calling logic requests the subscribers to provide a response. To support this scenario the **EventHandlerResult** class is most often passed as a parameter, and the delegate handler methods provide their result using one of the result methods on the class. However, the **EventHandlerResult** class can only contain a single result, so if multiple subscribers provide their individual result, the last respondent wins, and the results from the previous subscribers are overwritten.
 
 Before the functionality described in this topic was introduced (platform update 5), there was no mechanism to ensure that, at most, a single subscriber provided a result, and that no results were lost if there were multiple subscribers.
@@ -83,3 +86,5 @@ The two new classes also contain a **newSingleResponse** static constructor for 
     {
         ret = result.isAccepted();
     }
+
+

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Registration IDs
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about setting up and using registration IDs.
 
 Many countries and regions have different regulations and requirements for recording registration numbers or IDs. This topic provides an overview of the required settings and processing of supported registration types for parties in different European countries/regions. All countries/regions have their requirements for supporting various country-specific functionalities related to registration numbers provided by different state offices. Examples of registration numbers include, social security number (SSN), tax identification number (TIN), and European VAT identification (EU VAT ID). This feature provides unified framework for all countries in all regions taking into account country-specific requirements of some European countries. The following sections describe the overall flow of information that is used for setting up and processing registration IDs.
@@ -104,5 +107,7 @@ For more information about registration IDs processing, including required prere
 -   Set up VAT ID
 -   VAT ID registration of vendor
 -   Party search using VAT ID
+
+
 
 

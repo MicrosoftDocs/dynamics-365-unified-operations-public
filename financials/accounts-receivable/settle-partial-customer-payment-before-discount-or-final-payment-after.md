@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial customer payment before the discount date with a final payment after the discount date
 
+[!include[banner](../includes/banner.md)]
+
+
 This article discusses the effect of settling payments to invoices for customers. The scenario focuses on the effects in the subledger, not in General ledger.
 
 Fabrikam sells goods to customer 4027. Fabrikam offers a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. Fabrikam also offers cash discounts on partial payments. The settlement parameters are located on the **Accounts receivable parameters** page.
@@ -109,6 +112,8 @@ Arnie changes the value in the **Use cash discount** field back to **Normal**, b
 | ARP-10020  |                  | 7/1/2015  |         |                                      | 297.00                                | 0.00    | USD      |
 | DISC-10020 |                  | 7/1/2015  |         |                                      | 3.00                                  | 0.00    | USD      |
 | ARP-10021  |                  | 7/11/2015 |         |                                      | 700.00                                | 0.00    | USD      |
+
+
 
 
 

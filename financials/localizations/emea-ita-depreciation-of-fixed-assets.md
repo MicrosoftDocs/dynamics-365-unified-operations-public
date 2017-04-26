@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Manual depreciation of fixed assets for Italy
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about fixed assets depreciation for legal entities in Italy. 
 
 For legal entities in Italy, the manual depreciation method has additional functionality that includes the following fields:
@@ -47,4 +50,6 @@ For legal entities in Italy, the manual depreciation method has additional func
     -   Purchase order
 
 The **Depreciation run date** should be set up at the time of acquisition and is set to the system date during the acquisition. The **Depreciation run date** is used to calculate depreciation for the **Number of days remaining** or **Number of Months remaining**, depending on the **Calculation basis** value. If the **Depreciation run date** is before the middle of the month (either the 15th or 14th for February), then the current month is included in number of months, otherwise the asset is considered as acquired in the next month.
+
+
 

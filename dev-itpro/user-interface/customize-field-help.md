@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Customize field Help
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes how you can customize existing field descriptions and add your own descriptions.
 
 Microsoft Dynamics 365 for Operations has descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can customize these descriptions if, for example, you want to add company-specific information. You can also add descriptions for additional fields. You create field descriptions by using the **HelpText** property for field controls. The **HelpText** property is no longer specified for table fields and data types, as it was in previous versions of Microsoft Dynamics 365 for Operations. Additionally, the inheritance of the **HelpText** property from data types and table fields to form controls is obsolete. Field descriptions are intended to be specific to an individual field, in the context of the other controls and information that are available on the page. To add and customize field descriptions, you must have access to the Dynamics 365 for Operations development environment. Like other metadata changes, new descriptions should be added in a new model to prevent them from being overwritten when a new version of Operations is released. For more information, see [Customization: Overlayering and extensions](..\extensibility\customization-overlayering-extensions.md).
@@ -62,4 +65,6 @@ See also
 [Create and use localizable labels in the client](create-localizable-labels-client.md)
 
 [View and export field descriptions](/dynamics365/operations/get-started/view-export-field-descriptions)
+
+
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Authorize an adjusted forecast
 
+[!include[banner](../includes/banner.md)]
+
+
 Not all forecast data must be authorized immediately. This article explains how you can specify the period that a forecast is authorized for. It also explains how you can authorize the forecast for specific companies and forecast models.
 
 Not all forecast data must be authorized immediately. You can specify the start and end dates of the period that the forecast is authorized for. This functionality lets you freeze specific buckets. 
@@ -50,4 +53,6 @@ See also
 [Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 [Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+
+
 

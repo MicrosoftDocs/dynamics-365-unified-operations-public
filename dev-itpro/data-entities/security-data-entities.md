@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security and data entities
 
+[!include[banner](../includes/banner.md)]
+
+
 Data entities support entry point security similar to menu items and forms. In order to provide flexibility in defining a security model, data entities allow separate security configuration for each integration mode.
 
 Role based security (with entry point)
@@ -87,4 +90,6 @@ Security modeling follows a pattern similar to modeling security with privileges
 
 ## Organization on Roles** **
 Data entities support associating a company when assigned to a user to filter data based on that company.
+
+
 

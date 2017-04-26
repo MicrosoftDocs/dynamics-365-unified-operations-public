@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure screen layouts for POS
 
+[!include[banner](includes/banner.md)]
+
+
 This topic provides information about screen layouts for the Microsoft Dynamics 365 for Operations - Retail point of sale (POS) experiences.
 
 The Microsoft Dynamics 365 for Operations - Retail point of sale (POS) user interface can be configured using a combination of visual profiles and screen layouts, assigned to stores, registers, and/or users.
@@ -96,4 +99,6 @@ See also
 --------
 
 [Install the Retail POS Layout designer](install-pos-layout-designer.md)
+
+
 

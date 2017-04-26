@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use tracing for explosion
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.
 
 By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order. The following examples show how you can use the tracing information:
@@ -47,4 +50,6 @@ See also
 --------
 
 [Master plans](master-plans.md)
+
+
 

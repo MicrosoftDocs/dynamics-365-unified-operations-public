@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up pay cycles and pay periods
 
+[!include[banner](../includes/banner.md)]
+
+
 Pay cycles determine the intervals that workers are paid in. This topic explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
 
 A pay cycle determines how often payroll is run and the specific days that workers are paid on. For example, a pay cycle is monthly, and employees are paid on the last day of the month. Alternatively, a pay cycle is weekly, and employees are paid on the Tuesday after the end of the pay period. 
@@ -100,4 +103,6 @@ Typically, pay cycles are assigned to positions when the positions are set up fo
 If you must control the specific pay periods that various payroll elements are processed in, the next step is to set up payroll calculation frequencies. For more information, see [Payroll calculation frequencies tasks](noam-usa-payroll-calculation-frequencies-tasks.md). 
 
 If you decide not to set up payroll calculation frequencies, the next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](noam-usa-work-cycle-work-period-tasks.md).
+
+
 

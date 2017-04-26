@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Regulatory certifications
 
+[!include[banner](../includes/banner.md)]
+
+
 As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must include details about any regulatory certifications that the solution requires in order to be legally compliant for sale in the intended market. This article shows how information about certifications is used in the title of the feature.
 
 Regulatory certification can take various forms, from data privacy to certification of compliance with specific regulations. However, one thing that all regulatory certifications have in common is that they are required by the laws and regulations of the country/region of operation. These certifications are enforced, and non-adherence can lead to severe consequences for an organization that does business in that country/region. When the business process library is constructed, regulatory certifications must be identified as regulatory requirements in the Microsoft Dynamics Lifecycle Services (LCS) Business process modeler (BPM) library through the title of the localization solution feature. The label for this title will conform to the following naming convention that indicates the country/region and certification type through prefixes, as shown in the following table.
@@ -54,4 +57,6 @@ In the BPM business process library, certifications should be located under **AP
     -   PT-REG-Certification for Fiscal printers
 
 For more information about BPM, see [BPM flowcharts](../lifecycle-services/flowcharts-business-process-modeler.md).
+
+
 

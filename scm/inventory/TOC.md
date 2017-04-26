@@ -1,5 +1,6 @@
 # Create warehouse layout
-# Indbound process
+# Inbound process
+## [Arrival overview](arrival-overview.md)
 # Outbound process
 # Set up inventory tracking
 ## [Inventory journals](inventory-journals.md)
@@ -11,6 +12,7 @@
 ## [Consignment](consignment.md)
 ## [Set up consignment](set-up-consignment.md)
 # Quality management
+## [Inventory on-hand mobile workspace](inventory-on-hand-mobile-workspace.md)
 ## [Enable quality management](enable-quality-management.md)
 ## [Inventory blocking](inventory-blocking.md)
 ## [Nonconformance management](enable-nonconformance-management.md)
@@ -19,3 +21,4 @@
 # Trace item and batch
 ## [Merge inventory batch](merge-inventory-batches.md)
 ## [Trace item and raw material](trace-items-raw-materials-inventory-production-sales.md)
+

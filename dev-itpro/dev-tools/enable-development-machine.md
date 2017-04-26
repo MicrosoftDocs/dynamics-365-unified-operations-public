@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a new user on a development machine
 
+[!include[banner](../includes/banner.md)]
+
+
 When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM). This article explains how to enable another user account as a developer on a development VM.
 
 When an environment is first deployed, only one user account is enabled as a developer on the virtual machine (VM). This user is preconfigured by Microsoft Dynamics Lifecycle Services (LCS) or is the local administrator account on downloaded virtual hard disks (VHDs). However, you can enable a new user account to develop on the VM. Even after you enable a new account, only one developer can develop at a time on the same VM/application.
@@ -56,6 +59,8 @@ To enable a new user account to develop on the VM, the user account must be an�
 4.  If more than one user account will be developing on the same version control workspace, you need to make the workspace public.
     1.  In Visual Studio, open **Source Control Explorer**, select the workspace dropdown and select **Manage workspaces**.
     2.  Select the application workspace, click **Edit,** then click **Advanced** and set the workspace to **Public workspace**.[![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)
+
+
 
 
 

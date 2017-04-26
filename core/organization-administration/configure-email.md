@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure and send email
 
+[!include[banner](../includes/banner.md)]
+
+
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
 In Dynamics 365 for Operations, both administrators and users set the behavior of the email subsystem.
@@ -88,7 +91,7 @@ Email that is sent directly from the server, without user interaction, via SMTP 
 The default email address for each user is pulled from the **Email** field on the **Users** page (**System administration** &gt; **Users** &gt; **Users**). An email address should be specified for each user for sign in, so this field should be populated. Users can override this default if needed.
 
 ## User: Email provider selection section on the Options page
-The **Options** page can be opened via **Settings &gt; Options**. The **Email provider selection** section is on the **Account** tab.
+The **Options** page can be opened via **Settings &gt; User options**. The **Email provider selection** section is on the **Account** tab.
 
 | Field                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -165,4 +168,6 @@ See also
 [Office integration tutorial](/dynamics365/operations/dev-itpro/office-integration/office-integration-tutorial)
 
 [Configure email functionality in Microsoft Dynamics AX [AX 2012]](https://technet.microsoft.com/en-us/library/aa834374.aspx)
+
+
 

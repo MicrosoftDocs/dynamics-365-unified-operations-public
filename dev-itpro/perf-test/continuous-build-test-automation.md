@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Deployment with continuous build and test automation
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic describes how to deploy a developer topology that supports continuous build and test automation.
 
 Prerequisite: This requires a Visual Studio Team Services (VSTS) account for cloud VM deployment.
@@ -208,4 +211,6 @@ Select specific completed build and view success/ failure details.
 [![build10](./media/build10-1024x446.jpg)](./media/build10.jpg) Click on Test link to visualize test execution failure. 
 
 [![build11](./media/build11-1024x455.jpg)](./media/build11.jpg)
+
+
 

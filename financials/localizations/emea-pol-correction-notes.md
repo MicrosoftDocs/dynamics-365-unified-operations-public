@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Correction notes
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about correction notes. A correction note is a document that is required by local regulations in Poland. It's used to correct errors on a vendor invoice. 
 
 If a vendor issues a sales document to a company, but makes a mistake about the company’s address or value-added tax (VAT) identification number, local regulations in Poland require that the company issue a correction note to the vendor. A correction note contains both the original text and the corrected text. You can create, post, and print a correction note from the Correction notes journal. The following fields are available on the Correction notes journal.
@@ -46,6 +49,8 @@ If a vendor issues a sales document to a company, but makes a mistake about the 
 | Posted          | A selected option indicates that the selected correction note has been posted.                                                                                                                                                                                           |
 | Original text   | Enter the original text from the invoice that must be corrected.                                                                                                                                                                                                         |
 | Corrected text  | Enter the correct text for the invoice.                                                                                                                                                                                                                                  |
+
+
 
 
 

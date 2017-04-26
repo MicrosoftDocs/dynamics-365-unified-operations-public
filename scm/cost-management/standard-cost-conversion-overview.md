@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Standard cost conversion overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides a process overview to help you set up and run a standard cost conversion. The steps listed are intended to be completed after you've completed the prerequisites for a standard cost conversion. 
 
 Use the **Standard cost conversions** page to convert the inventory model for a batch of selected items from an actual costing approach to a standard costing approach. The conversion process involves a prerequisite inventory close, several steps during a transition period, which is defined by a transition start date and a planned conversion date, and then the conversion and an associated inventory close.
@@ -101,4 +104,6 @@ See also
 --------
 
 [Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
+
+
 

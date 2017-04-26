@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Settle a partial vendor payment and the final payment in full before the discount date
 
+[!include[banner](../includes/banner.md)]
+
+
 This article walks you through a scenario where partial payments are made for a vendor invoice, and a cash discount is taken.
 
 Fabrikam buys goods from vendor 3064. The vendor gives Fabrikam a cash discount of 1 percent if the invoice is paid in 14 days. Invoices must be paid in 30 days. The vendor also lets Fabrikam take cash discounts on partial payments. The settlement parameters are located on the **Accounts payable parameters** page. On June 25, April enters an invoice for 1,000.00 for vendor 3064.
@@ -140,6 +143,8 @@ April posts the payment journal and reviews the vendor transactions on the **Ven
 | DISC-10010 | Cash discount    | 7/1/2015  |         | 5.00                                 |                                       | 0.00    | USD      |
 | APP-10011  | Payment          | 7/8/2015  |         | 495.00                               |                                       | 0.00    | USD      |
 | DISC-10011 | Cash discount    | 7/8/2015  |         | 5.00                                 |                                       | 0.00    | USD      |
+
+
 
 
 

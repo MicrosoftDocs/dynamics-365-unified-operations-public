@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Platform update 2
 
 # Upgrade the Dynamics AX platform to the August 2016 release
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to upgrade your Microsoft Dynamics AX platform to the August 2016 release of Dynamics AX.
 
 Overview
@@ -184,4 +187,6 @@ See also
 --------
 
 [Process for upgrading to the latest Dynamics AX update](../migration-upgrade/upgrade-latest-update.md)
+
+
 

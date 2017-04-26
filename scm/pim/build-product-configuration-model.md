@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build a product configuration model
 
+[!include[banner](../includes/banner.md)]
+
+
 The need to configure products to meet special requirements is becoming the rule rather than the exception, in both business-to-business and business-to-consumer relationships.
 
 A manufacturer that supports configure-to-order scenarios has an opportunity to tend more carefully to customer needs. Additionally, by stocking semi-finished goods in the form of generic components instead of finished products, the manufacturer can reduce the capital that is tied to inventory.  
@@ -159,4 +162,6 @@ The purpose of the configuration is to create a distinct variant of the product 
 ### Multiple sites and intercompany
 
 If configuration will be done at a site, or even a company, that differs from the site or company where production will occur, the BOM and the route will be created for and put at the supplier site in the supplying company. The product variant will be released in all companies that participate in the supply chain.
+
+
 

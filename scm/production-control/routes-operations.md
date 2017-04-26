@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Routes and operations
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
 
 Overview
@@ -241,4 +244,6 @@ See also
 [Resource capabilities](resource-capabilities.md)
 
 [Electronic signature overview](/dynamics365/operations/organization-administration/electronic-signature-overview)
+
+
 

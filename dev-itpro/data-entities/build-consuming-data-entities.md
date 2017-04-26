@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build and consume data entities
 
+[!include[banner](../includes/banner.md)]
+
+
 This tutorial shows how to build an entity in Fleet Management in Microsoft Visual Studio, and also how to consume some out-of-band (OOB) entities in an integration scenario. You will see how Microsoft Dynamics 365 for Operations simplifies the development of data entities in the Visual Studio development environment. You will also preview how these data entities will be consumed in various integrations scenarios, such as data import and export, integration, and OData services.
 
 Prerequisites
@@ -350,4 +353,6 @@ See also
 --------
 
 [Developing an entity and using it for data migration](develop-entity-for-data-migration.md)
+
+
 

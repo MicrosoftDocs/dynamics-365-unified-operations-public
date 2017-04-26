@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customize with extensions and overlayering
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 
 Overlayering
@@ -308,4 +311,6 @@ Tables, form data sources, form controls, and other element types that support e
 # See also
 
 [Customize model elements using extensions](customize-model-elements-extensions.md)
+
+
 

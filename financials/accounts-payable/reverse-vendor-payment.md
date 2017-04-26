@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Reverse a vendor payment
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the differences between reversing, deleting, voiding, and rejecting a payment. Additionally, it explains the two methods for reversing a vendor check. 
 
 Occasionally, after a vendor payment has been posted, the payment must be reversed. Reversal differs from deleting, voiding, or rejecting a payment. You can delete a payment only if its status is **Created**. This status indicates that the payment has been created but hasn't yet been generated. This limitation always applies, regardless of the method of payment. You can void unposted checks after they have been generated but before they have been posted. If the generated payment is done as an electronic fund transfer (EFT), you can reject the payment before it's posted. To reject a payment, change the **Payment status** value. A payment that has been voided or rejected can be regenerated after the **Payment status** value is changed back to **None**. 
@@ -82,5 +85,7 @@ If the check that was reversed was issued for a customer refund, the following e
 
 -   A transaction is posted against the customer account for the payment reversal, and the settlement between the original payment and the document that the payment was originally settled against is reversed (a negative payment is created).
 -   A payment reversal is applied to the original payment. The **Last settlement voucher** field on the **Customer transactions** page for the original customer payment is updated to reflect the voucher number of the reversed transaction.
+
+
 
 

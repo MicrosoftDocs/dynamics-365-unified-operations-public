@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Tracking running average cost per inventory dimension
 
+[!include[banner](../includes/banner.md)]
+
+
 An inventory dimension group is attached to every inventory item. Therefore, the running average cost price of an item is calculated based on the selected inventory dimensions that are being tracked financially.
 
 There are three types of inventory dimensions: product, storage, and tracking. Product dimensions include configuration, size, and color. Product dimensions are always tracked financially. Storage and tracking dimensions include site, warehouse, location, inventory status, license plate, batch number, and serial number. You can decide which storage and tracking dimensions are tracked financially. 
@@ -55,4 +58,6 @@ The running average cost price for warehouse GW is USD 11.20, and the running av
 -   A purchase order for a quantity of 2 at a cost price of USD 15.00 has been invoiced for warehouse GW and batch BBB.
 
 The running average cost price for warehouse GW and batch AAA is USD 11.20, and the running average cost price for warehouse GW and batch BBB is USD 15.00.
+
+
 

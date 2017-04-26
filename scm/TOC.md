@@ -113,6 +113,7 @@
 ## [Marketing](sales-marketing/overview-sales-marketing.md)
 ## Sales orders
 ### [Order promising](sales-marketing/delivery-dates-available-promise-calculations.md)
+### [Delivery alternatives](sales-marketing/delivery-alternatives.md)
 ### [Order entry deadlines](sales-marketing/order-entry-deadlines.md)
 ### [Direct deliveries](sales-marketing/direct-deliveries.md)
 ### [Delivery schedules](sales-marketing/delivery-schedules.md)
@@ -138,6 +139,7 @@
 ### [Set up layout](warehousing/warehouse-configuration.md)
 ### [Warehouse work policies](warehousing/warehouse-work-policies.md)
 ### [Unit of measure and stocking policies](warehousing/unit-measure-stocking-policies.md)
+### [Warehouse Power BI content](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
 ## Picking and packing
 ### [Packing materials and fees](warehousing/pack-materials-packing-material-fees.md)
 ## Inventory counting
@@ -151,6 +153,7 @@
 ## Replenishment
 ### [Replenishment](warehousing/replenishment.md)
 ## Mobile devices
+### [Install and configure the warehousing app ](warehousing/install-configure-warehousing-app.md)
 ### [Configure field names in warehousing app](warehousing/configure-app-field-names-priorities-warehouse.md)
 ### [Set up mobile devices for warehouse work](warehousing/configure-mobile-devices-warehouse.md)
 ### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
@@ -167,3 +170,4 @@
 # Other resources
 ## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
 ## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+

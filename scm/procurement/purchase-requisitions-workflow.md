@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Purchase requisition workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved. When a purchase requisition is submitted for review, the workflow process is started. After a purchase requisition is approved, a purchase order can be generated for the purchase requisition lines and submitted to the vendor for order fulfillment.
 
 Before a purchase requisition can be submitted for review, you must configure a workflow. The workflow process can include one or more review steps, in any order. The workflow process can also be configured to skip the review tasks and automatically approve the purchase requisition. You can configure the workflow to route the purchase requisition as a single document, or you can route individual purchase requisition lines to the appropriate reviewers. You can also create a scenario where the purchase requisition is routed as a single document to some reviewers and selected purchase requisition lines are routed to other reviewers.  
@@ -118,4 +121,6 @@ See also
 [Procurement and sourcing workflows](procurement-sourcing-workflows.md)
 
 [Purchase requisition overview](purchase-requisitions-overview.md)
+
+
 

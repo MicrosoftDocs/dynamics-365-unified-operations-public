@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Invoice and packing slip numbering for Latvia and Lithuania
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic explains how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
 
 For legal entities that have a primary address in Latvia or Lithuania, you can set up conditional numbering for invoices and packing slips that is based on the assigned user or user group.
@@ -129,4 +132,6 @@ Additionally, forms below are supplemented by the **Documents to update** field:
 -   Purchasing Posting product receipt form.
 
 The “**Documents to update**” field influences on the “**Document status**” field in “**Packing slip journal**” and "**Invoice Journal**". On **Packing slip** creation, the “**Document status**” field value is equal to “**None**”. If any **Packing slip** was chosen in field “**Documents to update**” then its “**Document status**” would be “**Broken**” and the “**Document status**” of **Packing slip** where it was done will be “**Canceled**”.
+
+
 

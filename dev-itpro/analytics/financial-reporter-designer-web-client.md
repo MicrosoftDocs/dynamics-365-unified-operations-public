@@ -32,6 +32,11 @@ ms.dyn365.version: AX 7.0.0
 
 # Management Reporter -  The designer and web client
 
+[!include[banner](../includes/banner.md)]
+
+
+
+
 
 
 

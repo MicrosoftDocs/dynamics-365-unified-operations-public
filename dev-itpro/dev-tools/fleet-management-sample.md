@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Fleet Management sample application
 
+[!include[banner](../includes/banner.md)]
+
+
 This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
 
 In this tutorial, you’ll take a tour of the Fleet Management sample. The overviews in this tutorial provide some background knowledge and contextual info. You’ll walk through an end-to-end scenario that this sample application is designed to support. This is information that you should have before proceeding to other Microsoft Dynamics 365 for Operations tutorials.
@@ -215,5 +218,7 @@ In this tutorial, you’ll access the system as a user that has been assigned a 
 7.  Sign in using the credentials for the user who you assigned the security role to in the steps above.
 8.  Notice that in the dshboard, this user can see only items that are related to his security role. Items that system administrators can see are now hidden.
 9.  Click **Sign out** to sign out of the session.
+
+
 
 

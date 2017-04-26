@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Turn off model customization and deprecate functionality
 
+[!include[banner](../includes/banner.md)]
+
+
 This article describes the process of disabling customization of a model. By following this process, you make it ineligible for over-layering. Developers will still be able to extend that model. This article also describes how you can deprecate obsolete functionality.
 
 Typically, you build an application in models that depend on other models. At the very least, your models will depend on the Application Platform model that is provided by Microsoft. Microsoft Dynamics 365 for Operations is designed to run on the Microsoft Azure cloud platform. In other words, it runs off-premises, in data centers that are managed by Microsoft. Because we can’t support changes from a large number of vendors in the fundamental models, your applications can no longer over-layer artifacts in those models. Therefore, to build your applications, you must use extensions instead of over-layering. Even though all the artifacts in the models that you depend on are available for documentation purposes, you can’t compile someone else’s intellectual property and run it in the cloud.
@@ -150,4 +153,6 @@ Again, for the reasons that we mentioned earlier, you may never be able to get 
 ### Deprecating metadata
 
 For deprecating model elements (tables, data entities, EDTs, Enums, ...etc.), use the property **IsObsolete** that is available on all model element types. **IsObsolete** is also available on table, view, and data entity fields. When you set **IsObsolete** to Yes, references to that element or field will cause compilation warnings.
+
+
 

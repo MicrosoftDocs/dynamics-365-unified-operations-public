@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Journals generated during the electronic payment return process for Brazil
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Journals generated during the electronic payment return process for Brazil
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic shows how payment journals are generated when you import and post the return file for electronic payments. The approved payment lines in the return file can be posted either to one journal or multiple journals.
 
@@ -73,6 +76,8 @@ When you post the approved payment lines, the three payment lines are posted to 
 | 002            | 1            | January 5, 2013  | Approved | 1,000  |
 | 003            | 1            | January 1, 2013  | Approved | 3,000  |
 | 004            | 1            | January 3, 2013  | Approved | 4,000  |
+
+
 
 
 

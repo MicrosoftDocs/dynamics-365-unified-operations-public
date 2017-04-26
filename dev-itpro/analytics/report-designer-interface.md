@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Report Designer interface
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to navigate through Report Designer and how to use the various options to meet your specific requirements. 
 
 Report Designer menu commands
@@ -232,4 +235,6 @@ See also
 [Financial reporting](financial-reporting-intro.md)
 
 [Generate a financial report](generate-financial-report.md)
+
+
 

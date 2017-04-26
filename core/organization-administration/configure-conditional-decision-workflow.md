@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure a conditional decision in a workflow
 
+[!include[banner](../includes/banner.md)]
+
+
 Use the following procedure to configure the properties of a conditional decision.
 
 A conditional decision is a point at which a workflow divides into two branches. To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.
@@ -52,6 +55,8 @@ The system determines which branch is used by evaluating the submitted document 
     2.  Select a record in the **Validate condition** area of the form.
     3.  Click **Test**. The system evaluates the record to determine whether it meets the conditions that you defined.
     4.  Click **OK** or **Cancel** to return to the **Properties** form.
+
+
 
 
 

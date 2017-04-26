@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Code migration - Mouse double-click
 
+[!include[banner](../includes/banner.md)]
+
+
 In Microsoft Dynamics 365 for Operations, the mouseDblClick() override has been deprecated, and you will have to move this logic to new controls.
 
 In Microsoft Dynamics AX 2012, the mouse double-click event was used for various reasons. For example, it helped provide a better user experience and provided an alternative way to run certain scenarios. Here are some examples of common usage patterns:
@@ -78,5 +81,7 @@ As you migrate mouse double-click methods, you should consider the following gui
 -   To move items between controls, use the **SysListPanel** class or the ListPanel pattern whenever possible.
 -   When you add buttons to replace mouse double-click logic, put the button as close as possible (contextually) to the control.
 -   In some cases, you might have to redesign the form to accommodate the logic that was present in the **mouseDblClick()** method.
+
+
 
 

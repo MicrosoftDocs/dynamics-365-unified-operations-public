@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Budget planning overview
 
+[!include[banner](../includes/banner.md)]
+
+
 This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
 
 Overview of budget planning
@@ -190,4 +193,6 @@ On the **Actions** menu, you can also create a new process by copying an existin
 Another useful command on the **Actions** menu is **View budget process status**. This command graphically displays the budget plans within a process, together with relevant data, such as the plans’ workflow status, summaries by amount and by unit, and one-click navigation to the budget plans themselves.
 
 [![Budget planning process status](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
 

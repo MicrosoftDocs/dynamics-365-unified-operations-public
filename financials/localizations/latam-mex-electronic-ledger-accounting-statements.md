@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Electronic ledger accounting statements
 
+[!include[banner](../includes/banner.md)]
+
+
 This article explains how to set up and generate the general ledger XML files version 1.1 that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
 
 All companies in Mexico are required to report ledger accounting statements to the Mexican tax authorities (Servicio de Administración Tributaria \[SAT\]) every month. Annex 24 of Miscellaneous Tax Resolution for 2015 requires that you submit general ledger XML files version 1.1. You can generate the following XML files per company:
@@ -181,6 +184,8 @@ Click **General ledger** &gt; **Inquire and reports** &gt; **Ledger reports** &g
 </tr>
 </tbody>
 </table>
+
+
 
 
 

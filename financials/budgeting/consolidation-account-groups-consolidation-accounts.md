@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Consolidation account groups and additional consolidation accounts
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they are used in Microsoft Dynamics 365 for Operations.
 
 Consolidation account groups
@@ -51,5 +54,7 @@ You can find additional consolidation accounts in the **Setup** area of the **Co
 -   **SAT level** – This field is used to report account statements to the Mexican tax authorities. 
 
 When you've finished creating your consolidation account groups and additional consolidation accounts, you can select the group in the Consolidate online process.
+
+
 
 

@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up asset retirement obligation
 
+[!include[banner](../includes/banner.md)]
+
+
 In Japan, asset retirement obligation (ARO) is recognized for fixed assets that have legal obligations at their retirement. This article explains how the ARO liability is recognized, amortized, and accrued, and how the fixed asset and ARO liability are retired.
 
 Asset retirement obligation (ARO) is used to distribute the retirement cost of an asset to its service life. ARO is initially recognized as a liability when you acquire or construct a fixed asset. The ARO liability is equal to the present value of the estimated retirement cost for the asset at the beginning of its service life. When the ARO liability is added to the acquisition cost of the fixed asset, the ARO liability cost is amortized throughout the service life of the fixed asset. Interest expense on the ARO liability is accrued at the discount rate, so that the final ARO liability reaches the initially estimated retirement cost. When the fixed asset is retired, the payable due is accounted for in the ARO liability account. No more expenses are accounted unless there is a difference from the original estimate. The following table shows a real-world example of the life cycle.
@@ -68,6 +71,8 @@ If you don't have access to the pages that are used to complete this task, conta
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configuration keys        | Ensure that the Fixed **Assets** configuration key is available under the **Data Dictionary** &gt; **Configuration Keys** node in the Application Object Tree (AOT). |
 | Security roles and duties | To perform this task, you must be a member of the **-Maintain fixed assets-** security role.|
+
+
 
 
 

@@ -1,9 +1,9 @@
-﻿---
+---
 # required metadata
 
 title: Create a copy of a Dynamics 365 for Operations database to restore later
 description: This topic provides instructions for exporting a Microsoft Dynamics 365 for Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
-author: MargoC
+author: tariqbell
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-# ms.reviewer: 11
+# ms.reviewer: margoc
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 269254
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 ---
 
 # Create a copy of a Dynamics 365 for Operations database to restore later
+
+[!include[banner](../includes/banner.md)]
+
 
 This topic provides instructions for exporting a Microsoft Dynamics 365 for Operations database to a file and then reimporting that file to the same instance or another instance of the application. This procedure can only be used in non-production environments. 
 
@@ -150,4 +153,6 @@ If the source and target environments have different SQL user passwords, then yo
 
 ## Limitations
 The link between the database and document handling documents that are stored in Azure blob storage might be broken after importing a database. If you have custom code that utilizes the X++ class FileUpload to place files in blob storage, the links to these files might also be broken.
+
+
 

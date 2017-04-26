@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Direct deliveries
 
+[!include[banner](../includes/banner.md)]
+
+
 This article provides information about direct deliveries. Direct deliveries are deliveries that are sent directly from the vendor to your customer.
 
 Direct deliveries save delivery time and reduce the costs that are associated with carrying inventory, because you don't hold the products in your warehouse before you ship them to the customer.  
@@ -53,4 +56,6 @@ If you try to delete a sales order line that has a delivery type of **Direct del
 
 ## Warehouse
 When you create a direct delivery, the items that you sell never physically arrive at your warehouse. However, you must still specify a warehouse on the sales order line. Similarly, picking requirements might be specified on the item model group for the item. However, because the items never physically arrive at your warehouse, these requirements are ignored when the sales order is a direct delivery.
+
+
 

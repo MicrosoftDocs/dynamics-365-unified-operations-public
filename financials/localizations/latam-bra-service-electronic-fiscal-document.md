@@ -32,6 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 # Electronic fiscal document for services
 
+[!include[banner](../includes/banner.md)]
+
+
 This topic provides an overview of the service electronic fiscal document.
 
 When a fiscal document is about service in Brazil, different rules apply than a regular electronic fiscal document. The model for a services fiscal document in Brazil is SE and includes ISS, PIS, and COFINS taxes.
@@ -102,4 +105,6 @@ On the **Import RPS file** page, enter the following information:
 -   **Fiscal document type** - Select the fiscal document type for the electronic fiscal document for services.
 
 When you import an electronic fiscal document for services, information about the electronic fiscal document for services, such as the RPS import date, fiscal document number, fiscal document date, and validation number, is updated based on the return file layout group that is specified in the **Return file layout group** field on the **Fiscal document types** page.
+
+
 

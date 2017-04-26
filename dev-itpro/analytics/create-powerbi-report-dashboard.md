@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a Power BI report and dashboard
 
+[!include[banner](../includes/banner.md)]
+
+
 This tutorial guides you though the process of creating a basic Power BI report and explains how to start to create a dashboard on PowerBI.com.
 
 Key concepts
@@ -225,4 +228,6 @@ You can repeat this process to build out your dashboard.
 
 [Power BI integration in Dynamics 365 for Operations](power-bi-integration.md)
 [Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
+
+
 

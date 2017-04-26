@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Upgrade data in development or demo environments
-description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update. Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using the "other" type service request in Lifecycle Services.
-author: MargoC
+title: Upgrade data in development, demo, or sandbox environments
+description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update.
+author: tariqbell
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 11
+ms.reviewer: margoc
 ms.search.scope: Operations, Platform, AX Platform
 # ms.tgt_pltfrm: 
 ms.custom: 106163
@@ -30,9 +30,13 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Upgrade data in development or demo environments
+# Upgrade data in development, demo, or sandbox environments
 
-This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update. Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using the "other" type service request in Lifecycle Services.
+[!include[banner](../includes/banner.md)]
+
+
+This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update. 
+Note that the Microsoft Service Engineering (DSE) Team will execute this process for you in the Production and Sandbox environments. You can contact them using the "other" type service request in Lifecycle Services.
 
 This topic describes how to upgrade an older source database to the latest Dynamics 365 for Operations update. The source database can be from CTP 7 or later. To copy a database from a production environment back to a one-box demo or development environment, follow the steps in [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a Microsoft SQL Server Environment](..\database\copy-database-from-azure-sql-to-sql-server.md). This process does not apply to the upgrade of data in Management Reporter or the Retail channel database. It also does not apply to the upgrade of document attachments that are stored in Microsoft Azure blob storage.
 
@@ -87,25 +91,27 @@ This topic describes how to upgrade an older source database to the latest Dyna
 
         delete from classidtable where id >= 0xf000 and id <= 0xffff
 
-## Download the DataUpgrade.zip script
-To obtain the latest DataUpgrade.zip package, from your target environment that is running the latest Dynamics 365 for Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
+## Download the MinorVersionDataUpgrade.zip script
+To obtain the latest MinorVersionDataUpgrade.zip package from your target environment that is running the latest Dynamics 365 for Operations update, download the latest binary updates from Microsoft Dynamics Lifecycle Services (LCS).
+> [!NOTE]
+> In earlier versions (prior to Platform update 4) the package was named DataUpgrade.zip. 
 
 1.  In LCS, in the **Environments** section, click your target Dynamics 365 for Operations environment, scroll to the bottom of the page, and then click the **Application binary updates** tile. 
 
 > [!NOTE]
-> If the Application binary updates tile shows zero updates available then use the DataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 and the Application binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
+> If the Application binary updates tile shows zero updates available then use the MinorVersionDataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 and the Application binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
 >
 
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.
 3.  On the next page, click **Download**.
-4.  After the package is downloaded, extract the contents, and go to the following directory to find the DataUpgrade.zip file (note that the version number in the path will vary): ..\\AOSServiceDSC\\Packages\\files\\dynamicsax-framework-bin.7.0.4127.24083.zip\\CustomDeployablePackage
+4.  After the package is downloaded, extract the contents, and go to the following directory to find the MinorVersionDataUpgrade.zip file (note that the version number in the path will vary): ..\\AOSServiceDSC\\Packages\\files\\dynamicsax-framework-bin.7.0.4127.24083.zip\\CustomDeployablePackage
 
 > [!NOTE]
-> Computers that are deployed from LCS will already have a DataUpgrade.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
+> Computers that are deployed from LCS will already have a MinorVersionDataUpgrade.zip file. However, that file is out of date and includes issues that have been resolved in later fixes. Always download the latest version of the file from LCS.
 > 
 
 ## Remove encryption certification rotation
-1.  Extract the DataUpgrade.zip deployable package to C:\\Temp or a location of your choice.
+1.  Extract the MinorVersionDataUpgrade.zip deployable package to C:\\Temp or a location of your choice.
 2.  Open the following file in a text editor: C:\\Temp\\DataUpgrade\\RotateConfigData\\ServicingRotations.json file. Modify the file as shown here, and save it. This step is required only for one-box environments. Because you're removing the need for encryption certificate rotations, old data in encrypted fields in your database will no longer be readable. This is a technical limitation for a one-box data upgrade. New data that goes into those fields after the upgrade is completed is unaffected. For details about the affected fields, see the ["Encrypted fields in demo data"](#encrypted-fields-in-demo-data) section later in this topic.
 
         {
@@ -137,7 +143,7 @@ This step is required if you're upgrading a database from the February 2016 rele
 3.  Save the file.
 
 ## Upgrade the database
-1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder. Use the instructions in [Install a deployable package](../deployment/install-deployable-package.md).
+1.  Install the deployable package from the C:\\Temp\\DataUpgrade folder (the location you extracted to earlier). Use the instructions in [Install a deployable package](../deployment/install-deployable-package.md).
 2.  Restore a backup of the source database to your one-box demo or development environment that is already running the latest Dynamics 365 for Operations update that you want to upgrade to. **Note:** For better upload/download speed between Azure virtual machines (VMs), we recommend that you use AzCopy. For details about how to download and use AzCopy to copy to or from an Azure blob store, see [Transfer data with the AzCopy Command-Line Utility](https://azure.microsoft.com/en-us/documentation/articles/storage-use-azcopy/).
 3.  Run the runbook file until Step 4: GlobalBackup.
 4.  Rename the existing Update 1 database, and replace it with the source database that you want to upgrade.
@@ -300,4 +306,6 @@ See also
 --------
 
 [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](upgrade-latest-update.md)
+
+
 
