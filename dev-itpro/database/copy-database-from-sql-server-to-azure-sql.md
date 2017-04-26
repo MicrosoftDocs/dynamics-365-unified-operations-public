@@ -34,9 +34,6 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-
-[!include[banner](../includes/banner.md)]
-
 This topic describes how to move a Dynamics 365 for Operations database from an environment that runs on SQL Server (Tier 1 or one-box) to an environment that runs on an Azure SQL database (Tier 2 or higher). 
 
 Overview
@@ -245,7 +242,21 @@ If using Financial Reporting (formerly Management Reporter) then follow the step
 
 ### If you're using Retail components
 
-If you're using Retail components must raise a service request of the **Other request** type in Microsoft Dynamics Lifecycle Services (LCS) to ask that the Service Engineering Team update the imported database to be reconfigured for the new environment.
+If you’re using Retail components, you must perform additional steps to re-provision the target environment.
+1. Navigate to the Shared asset library.
+2. Select **Software deployable package**.
+3. Download the Environment reprovisioning tool.
+4. Navigate to the asset library for your project 
+5. Select **Software deployable package** and select **New** to create a new package.
+6. Specify a name and description. You can use "Environment reprovisioning tool" for the package name.
+7. Upload the previously downloaded package.
+8. Navigate to the Environment details page for your target environment
+9. Select **Maintain** > **Apply updates**.
+10. Select the Environment reprovisioning tool that you previously uploaded and click **Apply** to apply the package.
+11. Monitor the progress of the package deployment. 
+ 
+Learn more about how to apply a deployable package in the topic [Apply a deployable package](../deployment/create-apply-deployable-package.md). Learn how to apply a deployable package manually in the topic [Install a deployable package](../deployment/install-deployable-package.md).
+
 
 ## Raise a service request to copy database
 To copy the golden database to a production environment, you must submit a service request of the **Other request** type through LCS to ask that Microsoft run the copy action. **Note:** You can't use a request of the **Database refresh request** type, because the request involves copying to a production environment.
