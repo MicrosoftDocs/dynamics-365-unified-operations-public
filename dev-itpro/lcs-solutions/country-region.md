@@ -129,7 +129,7 @@ The following sections list resources by country/region.
 
 ### The Czech Republic
 
--   [Cash discount on credit note](/dynamics365/operations/financials/localizations/emea-cze-credit-note-cash-discount.md)
+-   [Cash discount on credit note](/dynamics365/operations/financials/localizations/emea-cze-credit-note-cash-discount)
 -   [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
 -   [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
