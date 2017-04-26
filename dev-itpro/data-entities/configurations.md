@@ -70,10 +70,10 @@ are still delivered in the standard view to provide consistency with our
 prior releases. However, you should switch them by using the Enhanced
 view menu button on each page for configurations.
 
-The enhanced settings are saved for each user per each legal entity.
+The view settings are saved for each user per each legal entity.
 However, if you would like to change the system default to the enhanced
 view, you can select the Framework parameters tile on the data
-management workspace and change the page default from standard to
+management workspace and change the view default from standard to
 enhanced for all users and legal entities.
 
 ### Default data sources file extensions
@@ -102,13 +102,13 @@ defaults:
 
 ### Templates for configurations
 
-Predefined templates are automatically loaded in Dynamics 365 for an instance. They are sequenced so that the data managed by the entities
-will be processed in the correct sequence. New templates and updates
+Predefined templates are automatically loaded in Dynamics 365 when an instance is created. New templates and updates
 will be delivered in new releases or through periodic updates. You can update your existing instance by using the refresh button in the framework parameters found on the data management workspace.
 
-You can also add multiple templates to a single data project. The
+The templates are sequenced so that the data managed by the entities
+will be processed in the correct sequence. The
 predefined templates are designed to maintain the correct sequence when
-they are merged. See the section on **sequencing philosophy** for more
+they are merged. You can also add multiple templates to a single data project. See the section on sequencing philosophy for more
 information.
 
 Export a configuration
@@ -132,7 +132,7 @@ The process for creating configurations is as follows:
     (Configuration).
 
 5)  Now add the entities that represent the information that you want to
-    export. You can add entities using several methods
+    export. You can add entities using several methods:
 
     a.  Add entity – enter the first part of name of the entity until it
         appears in the lookup.
@@ -143,15 +143,14 @@ The process for creating configurations is as follows:
         entities. Select the entities in the grid that you want to add
 
     c.  Add file – browse to a file that has a name that matches an
-        entity and a file extension that matches the values that you
-        entered in the data sources.
+        entity and a file extension that matches the file extensions that were added in the data sources.
 
-    d.  Add template – select from a list of **templates** that you have
-        added to your instance
+    d.  Add template – select from a list of templates that you have
+        added to your instance or were automatically created when your installation was created
 
 6)  Select a target data format. The system remembers that last data
     format that you selected or, if you select a file, it will default
-    the data format to the file extension found in the data sources
+    the data format to the data sources that matches the file extension
 
 7)  Select the appropriate Add button and the entities will be added to
     your data project. If you load a template and there is already an
@@ -168,7 +167,7 @@ some additional features to control the export process:
     entities by unit, level and sequence
 
 2)  If want to change the execution sequence of any of the entities,
-    edit the unit, level, or sequence manually or use the Resequence
+    you can edit the unit, level, or sequence manually or you can use the Resequence
     button to update any entities that you have selected. You must
     select more than one entity for the Resequence button to appear. You
     can change the unit, level and sequence individually or enable
@@ -201,6 +200,19 @@ tasks:
     on the execution details form to download the configuration settings
     and the data that was exported.
 
+Setup considerations for certain entities used to export configurations
+------------------------------------------------------------------------------
+
+There are several entities that require some additional steps when you
+are doing configurations. Please follow these recommendations as you
+build your configurations. As we continue to improve the product, we will eliminate as many special steps as possible. 
+
+Insert the  list of entities that are special
+
+  Entity name   Technical name   Action needed
+  ------------- ---------------- ---------------
+                                 
+                                 
 Import a configuration
 ----------------------
 
@@ -231,7 +243,6 @@ The process for importing a configuration is as follows:
 
 6)  Use Remove entity to remove one or more selected entities
 
-
 You are ready to import a configuration. However, you may want to use
 some additional features to control the export process:
 
@@ -242,31 +253,14 @@ some additional features to control the export process:
     edit the unit, level, or sequence manually or use the resequence
     button to update any entities that you have selected.
 
-3)  Add filters to the entity with the Filter icon. The data will be
-    filtered as it is imported. If you add a filter, the filter icon will change to an edit icon.
+3)  If necessary, change the entity mappings using the View map icon.
 
-4)  If necessary, change the entity mappings using the View map icon.
-
-5)  Use the check box in the Disable column to temporarily stop the
+4)  Use the check box in the Disable column to temporarily stop the
     entity from being used when exporting a data project
 
 Now that you have completed your configuration, use the import button to
 start the import. You can monitor your results on the execution details
 page that is displayed.
-
-Special entity setup considerations for exporting and importing configurations
-------------------------------------------------------------------------------
-
-There are several entities that require some additional steps when you
-are doing configurations. Please follow these recommendations as you
-build your configurations
-
-Insert the  list of entities that are special
-
-  Entity name   Technical name   Action needed
-  ------------- ---------------- ---------------
-                                 
-                                 
 
 Using the data management workspace
 -----------------------------------
@@ -345,6 +339,24 @@ use some additional features to control the export process:
     template. The existing entities will be removed before the project
     entities are copied into the template.
 
+Merged templates
+----------------
+
+We created larger templates that are a combination of the smaller module templates for convenience. You can use the larger templates or add any combination of smaller templates to build a data project. 
+-   System and Shared includes system setup, global address book, shared general ledger, and workflow
+-   Financials includes general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting
+-   Supply chain includes inventory management, product management, procurement, sales and marketing, warehouse management, production control, and costing
+ 
+Master data in the templates
+----------------------------
+
+Many of the templates include entities for master data such as customers, vendors, and released products. These are included to indicate the proper sequence of entities that you will need once you have loaded parameters and reference data. Master entities are most often sequenced in the module bands number from 100 and up (see sequencing philosophy) and they will shown in the grid under entity category as master.
+
+Obsolete entities
+-----------------
+
+As we create newer versions of Dynamics 365 for Finance and Operations, we may need to update the functionality of an entity. A new entity may be created with a modified name for it and the original entity will be marked as obsolete. You will no longer be able to add the obsolete entities to a new data project or template. However, if you load a data package that has the obsolete entity in it, you will be warned about the existence of an obsolete entity but you will be able to still import your data.
+
 Sequencing philosophy
 ---------------------
 
@@ -381,13 +393,13 @@ are tags that represenet tasks that can be done for the general ledger.
 
 The long term goal for sequencing is to have Dynamics 365 for Finance
 and Operations to sequence all of the entities automatically for every
-configuration. In the interim, we have assigned the sequences to
+configuration. In the interim, we have created the sequences for the
 entities in each of the templates to make it easier to process
 configurations.
 
 The following list shows how the templates were set up to handle the
 dependencies. Please note that the entities do *not* require these
-sequences to work. They have been created to help you create better
+sequences to work. They have been created to help you build better
 configurations.
  
 
@@ -463,18 +475,3 @@ rearrange the entities if the sequence doesn’t work for your
 installation. If you want to add your own templates to a configuration,
 you can follow the guidelines above to ensure that your template merges
 correctly into a project that uses other templates.
-
-Merged templates
-----------------
-
-We also created larger templates that are a combination of the smaller module templates.
--   System and Shared includes system setup, global address book, shared general ledger, and workflow
--   Financials includes general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting
--   Supply chain includes inventory management, product management, procurement, sales and marketing, warehouse management, production control, and costing
-
-Master data
------------
-
-Included in templates
-
-Marked as disabled?
