@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Microsoft Dynamics 365 for Operations enable business processes that are common to both the public and private sectors, such as budgeting, purchasing, accounts payable, and accounts receivable tasks. 
 
-Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include:
+Use the Public sector functionality to meet the rules, regulations, and reporting requirements for organizations that serve the public. The business processes affected include: 
 
 -   Fund accounting, derived financial hierarchies, and posting definitions for accounts receivable and the general ledger.
 -   Preliminary budgets, apportionments, and commitments.
