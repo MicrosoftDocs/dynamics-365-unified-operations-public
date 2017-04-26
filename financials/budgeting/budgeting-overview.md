@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Operations.
+This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 for Operations. 
 
 Components of budgeting functionality
 -------------------------------------
