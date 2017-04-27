@@ -43,7 +43,7 @@ To use this feature, click the **Search** icon to display the **Search** box. Yo
 
 **Note:** The **Search** box helps you find and navigate to pages. It will not help you find specific data or actions. 
 
-[![search-box](./media/search-box.png)](./media/search-box.png) 
+[![search-box](media/navigation-search.png "Search box") 
 
 ## Quickly navigate to a particular page
 The navigation search feature also serves as a great way for you to quickly navigate to a particular page. For example, if you are an accounts payable clerk who frequently uses the **Payment journal** page, you could enter "payment journal" in the search box. Because the input is an exact match for the page title, the page is listed at the top of the search results, and you can quickly navigate to it. 
