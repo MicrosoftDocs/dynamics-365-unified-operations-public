@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 When you download a developer virtual machine (VM), you must provision it.
 
-For information about provisioning a downloaded development topology virtual machine, see [Access Microsoft Dynamics 365 for Operations instances](\dev-itpro\dev-tools\access-instances.md).
+For information about provisioning a downloaded development topology virtual machine, see [Access Microsoft Dynamics 365 for Operations instances](/dynamics365/operations/dev-itpro/dev-tools/access-instances).
 
 
 
