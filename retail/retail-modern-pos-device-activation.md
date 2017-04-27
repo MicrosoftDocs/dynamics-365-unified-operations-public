@@ -165,7 +165,7 @@ The device should now be activated and ready to use.
 
 ## Updating the Retail Modern POS application
 
-**Note:** To learn more about deployable packages, see the article [Apply a deployable package](/dev-itpro/deployment/apply-deployable-package-system).
+**Note:** To learn more about deployable packages, see the article [Apply a deployable package](/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system).
 
 1.  After a Retail Modern POS application is uploaded into the environment, the version of the package can be selected on the device.  The package listings should include the new uploaded application.
 2.  To update the Retail Modern POS application, follow the same steps listed above in the section [Download and install Retail Modern POS](#Install).  The application can be updated in-place simply by running the newer version of the Self-service installer.  Uninstallation is not required and is not recommended.  Further, device activation status will be maintained after updating.
