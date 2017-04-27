@@ -50,7 +50,7 @@ The navigation search feature also serves as a great way for you to quickly navi
 
 The search results list displays the page title as well as the navigation path. This helps make you aware of the location of the page in the application. It also helps you differentiate between two or more similar pages in the results. 
 
-When you search for a page, your input is matched against the page title, as well as its navigation path. For example, if you enter “receivable” in the** **search box, you will see results for the pages available to you in the Accounts Receivable area--even though the page titles do not include the word “receivable." 
+When you search for a page, your input is matched against the page title, as well as its navigation path. For example, if you enter “receivable” in the search box, you will see results for the pages available to you in the Accounts Receivable area--even though the page titles do not include the word “receivable." 
 
 ## Quickly navigate to a page based on the technical form name
 The navigation search functionality also includes a much-requested feature for power users: the ability to quickly navigate to a page based on the technical form name. Many users are so familiar with the system that they know the exact form names they work with. If you are one of these users, you can enter **form:** followed by the name of the form you are looking for. For example, if you enter **form: vendinvoice**, the search results will show all pages where the form name starts with **vendinvoice**. 
