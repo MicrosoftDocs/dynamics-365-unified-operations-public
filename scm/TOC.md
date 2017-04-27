@@ -80,7 +80,7 @@
 ### Maintain master data
 #### [Bills of materials and formulas](production-control/bill-of-material-bom.md)
 #### [BOM designer functionality](production-control/bom-designer-functionality.md)
-#### [Bom calculations](..cost-management/bom-calculations.md)
+#### [Bom calculations](../cost-management/bom-calculations.md)
 #### [Operations resources](production-control/operations-resources.md)
 #### [Resource capabilities](production-control/resource-capabilities.md)
 #### [Production order defaults in manufacturing execution](production-control/production-order-defaults-manufacturing-execution.md)
@@ -123,7 +123,7 @@
 ## Process manufacturing
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control/mixed-mode-plan.md)
 ### Maintain master data
-#### [Bills of materials and formulas](bill-of-material-bom.md)
+#### [Bills of materials and formulas](production-control/bill-of-material-bom.md)
 #### [Operations resources](production-control/operations-resources.md)
 #### [Resource capabilities](production-control/resource-capabilities.md)
 #### [Batch attributes](production-control/batch-attributes.md)
