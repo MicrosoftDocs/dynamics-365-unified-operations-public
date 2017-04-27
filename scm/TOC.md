@@ -56,6 +56,7 @@
 ### [BOM and formula](production-control/bill-of-material-bom.md)
 ### [BOM designer functionality](production-control/bom-designer-functionality.md)
 ### [Product dimension](pim/product-dimensions.md)
+### [Default order settings for dimensions and product variants](production-control/default-order-settings.md)
 ### [Product number nomenclature](pim/product-variant-identification-nomenclature.md)
 ### [Product-related translation FAQ](pim/translations-product-related-information.md)
 ### [Register serial number in the sales process](sales-marketing/register-serial-numbers-sales-process.md)
@@ -70,45 +71,79 @@
 ### [Set up a configuration model](pim/set-up-maintain-product-configuration-model.md)
 ### [System-defined and user-defined table constraint](pim/system-defined-user-defined-table-constraints.md)
 # Production control
-## Production process    
-### [Activity-based subcontracting](production-control/activity-based-subcontracting.md)
-### [Batch attributes](production-control/batch-attributes.md)
-### [BOMs and formulas](production-control/bill-of-material-bom.md)
-### [BOM designer functionality](production-control/bom-designer-functionality.md)
-### [Consolidated batch orders](production-control/consolidated-batch-orders.md)
-### [Manage subcontracting work in production](production-control/manage-subcontract-work-production.md)
+## Discrete manufacturing
 ### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control/mixed-mode-plan.md)
-### [Production process](production-control/production-process-overview.md)
-### [Production setup requirements](production-control/production-set-up-requirements.md)
-### [Routes and operations](production-control/routes-operations.md)
-## Production orders
-### [Create production orders](production-control/create-production-orders.md)
-### [Default order settings for dimensions and product variants](production-control/default-order-settings.md)
-### [Release production orders](production-control/release-production-orders.md)
-### [Reverse the production order status](production-control/reverse-production-order-status.md)
-### [Report BOMs as finished](production-control/report-boms-as-finished.md)
-### [Report production orders as finished](production-control/report-production-orders-as-finished.md)
-## Lean production 
-### [Kanban transfer board support for barcode scanners](production-control/kanban-transfer-board-support-barcode-scanner.md) 
-### [Kanban job scheduling for lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+### [Activity-based subcontracting](production-control/activity-based-subcontracting.md)
+### [Manage subcontracting work in production](production-control/manage-subcontract-work-production.md)
+### Routes and operations
+#### [Routes and operations](production-control/routes-operations.md)
+### Maintain master data
+#### [Bills of materials and formulas](production-control/bill-of-material-bom.md)
+#### [BOM designer functionality](production-control/bom-designer-functionality.md)
+#### [Bom calculations](../cost-management/bom-calculations.md)
+#### [Operations resources](production-control/operations-resources.md)
+#### [Resource capabilities](production-control/resource-capabilities.md)
+#### [Production order defaults in manufacturing execution](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Production setup requirements](production-control/production-set-up-requirements.md)
+#### [Time and attendance registration](production-control/time-attendance-registrations.md)
+### Schedule production operations
+#### [Operations scheduling](production-control/operations-scheduling.md)
+#### [Job scheduling](production-control/job-scheduling.md)
+#### [Operations scheduling options](production-control/operation-scheduling-options.md)
+#### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
+### Operate production jobs
+#### [Production process](production-control/production-process-overview.md)
+#### [Create production orders](production-control/create-production-orders.md)
+#### [Release production orders](production-control/release-production-orders.md)
+#### [Reverse the production order status](production-control/reverse-production-order-status.md)
+#### [Report production orders as finished](production-control/report-production-orders-as-finished.md)
+#### [Report BOMs as finished](production-control/report-boms-as-finished.md)
+#### [Registration for manufacturing execution](production-control/registration-manufacturing-execution.md)
+#### [Production feedback](production-control/production-feedback.md)
+### Manage financials in production
+#### [Allocate time to jobs in a job bundle](production-control/allocate-time-jobs-job-bundle.md)
+#### [Calculate material consumption](production-control/consumption.md)
+#### [Production posting](cost-management/production-posting.md)
+## Lean manufacturing 
+### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control/mixed-mode-plan.md)
 ### [Lean manufacturing overview](production-control/lean-manufacturing-overview.md)
-### [Model a lean organization](production-control/lean-manufacturing-modeling-lean-organization.md)
-## Schedule operations and jobs
-### [Allocate time to jobs in a job bundle](production-control/allocate-time-jobs-job-bundle.md)
-### [Job scheduling](production-control/job-scheduling.md)
-### [Operations scheduling options](production-control/operation-scheduling-options.md)
-### [Operations scheduling](production-control/operations-scheduling.md)
-## Resources
-### [Operations resources](production-control/operations-resources.md)
-### [Resource capabilities](production-control/resource-capabilities.md)
-### [Time and attendance registration](production-control/time-attendance-registrations.md)
-## Manufacturing execution
-### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
-### [Calculate material consumption](production-control/consumption.md)
-### [Production feedback](production-control/production-feedback.md)
-### [Production order defaults in manufacturing execution](production-control/production-order-defaults-manufacturing-execution.md)
-### [Production posting](cost-management/production-posting.md)
-### [Registration for manufacturing execution](production-control/registration-manufacturing-execution.md)
+### [Activity-based subcontracting](production-control/activity-based-subcontracting.md)
+### [Manage subcontracting work in production](production-control/manage-subcontract-work-production.md)
+### Maintain master data
+#### [Model a lean organization](production-control/lean-manufacturing-modeling-lean-organization.md)
+#### [Operations resources](production-control/operations-resources.md)
+#### [Time and attendance registration](production-control/time-attendance-registrations.md)
+### Schedule kanban jobs
+#### [Kanban job scheduling for lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+#### [Job scheduling](production-control/job-scheduling.md)
+### Operate kanban jobs
+#### [Production process](production-control/production-process-overview.md)
+#### [Kanban transfer board support for barcode scanners](production-control/kanban-transfer-board-support-barcode-scanner.md)
+#### [Production feedback](production-control/production-feedback.md)
+## Process manufacturing
+### [Mixed mode planning: Combine discrete, process, and lean sourcing](production-control/mixed-mode-plan.md)
+### Maintain master data
+#### [Bills of materials and formulas](production-control/bill-of-material-bom.md)
+#### [Operations resources](production-control/operations-resources.md)
+#### [Resource capabilities](production-control/resource-capabilities.md)
+#### [Batch attributes](production-control/batch-attributes.md)
+#### [Production order defaults in manufacturing execution](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Production setup requirements](production-control/production-set-up-requirements.md)
+#### [Time and attendance registration](production-control/time-attendance-registrations.md)
+### Schedule production operations
+#### [Operations scheduling](production-control/operations-scheduling.md)
+#### [Operations scheduling options](production-control/operation-scheduling-options.md)
+#### [Job scheduling](production-control/job-scheduling.md)
+#### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
+### Operate production jobs
+#### [Production process](production-control/production-process-overview.md)
+#### [Consolidated batch orders](production-control/consolidated-batch-orders.md)
+#### [Registration for manufacturing execution](production-control/registration-manufacturing-execution.md)
+#### [Production feedback](production-control/production-feedback.md)
+### Manage financials in production
+#### [Allocate time to jobs in a job bundle](production-control/allocate-time-jobs-job-bundle.md)
+#### [Calculate material consumption](production-control/consumption.md)
+#### [Production posting](cost-management/production-posting.md)
 # Sales and marketing
 ## [Marketing](sales-marketing/overview-sales-marketing.md)
 ## Sales orders
