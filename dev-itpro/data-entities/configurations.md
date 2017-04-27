@@ -216,13 +216,19 @@ build your configurations. As we continue to improve the product, we will elimin
 | GL Shared                      | Financial Dimension Values             | All values, including custom values, will be exported. Remove the custom values before importing them. If you leave them in the package, they will not import but the custom values will be populated as you import the data that backs the custom dimension. |
 | Workflow                       | Workflow Version                       | Change the owner in the package data to Admin unless the users in the workflow are already imported |  
 | General ledger                 | Ledger                                 | Apply a filter to Company if you only want one legal entity |  
-|                                | Ledger Fiscal Calendar year            | Apply a filter to Company if you only want one legal entity |
-|                                | Ledger fiscal calendar period          | Apply a filter to Company if you only want one legal entity |
+|                                | Ledger Fiscal Calendar year            | Apply a filter to Ledger name if you only want one legal entity |
+|                                | Ledger fiscal calendar period          | Apply a filter to Ledger name if you only want one legal entity |
 |                                | Main account legal entity overrides    | Apply a filter to Company if you only want one legal entity |
-|                                | Financial dimension value legal entity | Apply a filter to Company if you only want one legal entity |
-| Accounts payable               | Vendors                                | Unmap DefaultPurchaseSite , DefaultProcurementWarehouseID, Tax1099BoxID, Tax1099Type |
+|                                | Financial dimension value legal entity | Apply a filter to Legal entity if you only want one legal entity |
+| Accounts payable               | Vendors                                | Unmap DefaultPurchaseSite , DefaultProcurementWarehouseID, Tax1099BoxID, Tax1099Type unless sites, warehouses and 1099 information has been set up |
 | Accounts receivable            | Customer write-off reason code         | Apply a filter to Company if you only want one legal entity |
 |                                | Customer details                       | Unmap CollectionsContactPersonID and EmployeeResponsibleNumber unless workers have been imported |
+| Budget                         | Budget cost elements                   | Apply a filter to Legal entity if you only want one legal entity | 
+|                                | Budget plan process                    | Apply a filter to Ledger if you only want one legal entity | 
+|                                | Budget plan allocation schedule        | Apply a filter to Ledger if you only want one legal entity | 
+|                                | Budget Plan Stage Rule                 | If you applied a filter to Budget plan process, you may see errors when importing stage rules. The entity currently does not have a Ledger name in it that can be filtered so it will contain all companies | 
+|                                | Budget Plan Priority Constraint        | You will see the same issue described for stage rules | 
+|                                | Budget Plan Process Administration     | You will see the same issue described for stage rules | 
 | Inventory                      | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity |
 |                                | Site current postal address            | Apply a filter to Company if you only want one legal entity | 
 | Product information management | Products                               | Unmap NMFCCode and STCCCode. There are no entities available for those codes at this time |
