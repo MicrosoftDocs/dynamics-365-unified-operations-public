@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage Dynamics 365 for Operations Support experiences
-description: 
+description: This topic provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services (LCS) to manage support incidents. 
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -36,8 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-
-Support tool on Microsoft Dynamics Lifecycle Services (LCS) helps you manage support incidents. Support tile on LCS lets you create a virtual machine (VM) in Microsoft Azure that has the same hotfixes installed as your local environment. You can reproduce and record the incident on the virtual machine, and then submit the VM to our support team. Support follows up by investigating the incident, testing a fix on the virtual machine, if a fix is found, and sending the VM and the fix back to you for verification.
+The Support tile on LCS lets you create a virtual machine (VM) in Microsoft Azure that has the same hotfixes installed as your local environment. You can reproduce and record the incident on the virtual machine, and then submit the VM to our support team. Support follows up by investigating the incident, testing a fix on the virtual machine, if a fix is found, and sending the VM and the fix back to you for verification.
 **Note:** Virtual machines are only available for Microsoft Dynamics AX 2012 R2 and AX 2012 R3 environments.
 
 ## Prerequisites

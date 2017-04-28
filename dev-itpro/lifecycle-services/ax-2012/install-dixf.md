@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install the Data import/export framework (AX 2012)
-description: 
+description: This topic provides information about how to install the data import/export framework.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
