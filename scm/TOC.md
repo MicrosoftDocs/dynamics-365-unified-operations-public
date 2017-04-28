@@ -128,10 +128,10 @@
 #### [Operations scheduling options](production-control/operation-scheduling-options.md)
 #### [Job scheduling](production-control/job-scheduling.md)
 #### [Time and attendance registration](production-control/time-attendance-registrations.md) 
-#### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
 ### Operate production jobs
 #### [Production process](production-control/production-process-overview.md)
 #### [Consolidated batch orders](production-control/consolidated-batch-orders.md)
+#### [Material substitution in manufacturing](production-control/substitute-items-bom-lines.md)
 #### [Registration for manufacturing execution](production-control/registration-manufacturing-execution.md)
 #### [Production feedback](production-control/production-feedback.md)
 ### Manage financials in production
