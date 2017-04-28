@@ -81,11 +81,10 @@ The following key aggregate measurements are used as the basis of the content.
 | ProjectAccountingCube\_Projects | Cost performance index, Schedule performance index, Percentage of work completed, Project actual billable Hours ratio Earned value | Project | ProjectAccountingCube\_Projects[Earned value] / ProjectAccountingCube\_Projects[Total actual cost of completed tasks], ProjectAccountingCube\_Projects[Earned value] / ProjectAccountingCube\_Projects[Total planned cost of completed tasks], Percentage of work completed = ProjectAccountingCube\_Projects[Total actual cost of completed tasks] / (ProjectAccountingCube\_Projects[Total actual cost of completed tasks] + ProjectAccountingCube\_Projects[Total planned cost of project] - ProjectAccountingCube\_Projects[Total planned cost of completed tasks]), ProjectAccountingCube\_Projects[Project total actual billable utilized hours] / (ProjectAccountingCube\_Projects[Project total actual billable utilized hours] + ProjectAccountingCube\_Projects[Project total actual billable burden hours]), ProjectAccountingCube\_Projects[Total planned cost of project] \* ProjectAccountingCube\_Projects[Percentage of work completed] | Calculation of total earned value divided by total actual cost, Calculation of total earned value divided by total planned cost Total percentage of completed work based off total actual cost of completed task and planned cost of the project Total actual billable hours based on utilized + burden, Total planned cost multiply by percentage of completed work | 
 | ProjectAccountingCube\_TotalEstimatedCosts   | CompletedActivityPlannedCost | ProjTable  | Sum(TotalCostPrice)  | Total cost price in estimates for all project transaction types with completed tasks   |
 
-Additional resources
-
+## Additional resources
 
 Here are some helpful links that are related to entities and building Power BI content:
--   [Data entities](https://ax.help.dynamics.com/en/wiki/data-entities/)
+-   [Data entities](dynamics365/operations/dev-itpro/data-entities/data-entities)
 -   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Adding Power BI tiles to workspaces](http://ax.help.dynamics.com/en/wiki/configuring-powerbi-integration/)
