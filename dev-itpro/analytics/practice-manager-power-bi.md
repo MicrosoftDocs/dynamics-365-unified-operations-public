@@ -49,18 +49,17 @@ You can find the **Practice manager** Power BI content in the Shared assets libr
 
 To watch a demo of how to implement the Power BI content, see this [Office mix](https://mix.office.com/watch/9puyb1b2xs1w).
 
-**Visualizations included in the Power BI content**
+**Reports that are included in the Power BI content**
 
-The following table provides an overview of the visualizations in the **Practice manager** Power BI content.
+The following table provides details about the metrics found on each report pages in the **Practice manager** Power BI content.
 
-| **Report page**                                      | **Visualization**               |
+| **Report page**                                      | **Metrics**               |
 |------------------------------------------------------|-----------------------------------------------|
-| Dashboard (rename this for 7.2 to Projects overview) | Created projects Estimated projects In process projects Number of projects by
-stage Number of projects by city  Actual revenue by customer Budget gross margin by project Earned value management overview |
-| Cost                                                 | Actual vs budget cost by month Actual vs budget cost by year Actual vs budget cost by category Actual cost by transaction type       |
-| Revenue                                              | Actual revenue by month Actual revenue by postal code Actual vs budget revenue by category Actual revenue by customer industry        |
+| Dashboard  | Created projects, estimated projects, in-process projects, number of projects by stage, number of projects by city,  actual revenue by customer, budget gross margin by project, earned value management overview, |
+| Cost                                                 | Actual vs budget cost by month, actual vs budget cost by year, actual vs budget cost by category, Actual cost by transaction type       |
+| Revenue                                              | Actual revenue by month, Actual revenue by postal code, Actual vs budget revenue by category, Actual revenue by customer industry        |
 | EVM                                                  | Cost and schedule performance index by project                 |
-| Hours                                                | Actual billable utilized hours vs actual billable burden hours vs budget hours Actual billable utilized hours vs actual billable burden hours by project Actual billable utilized hours vs actual billable burden hours by resource Actual billable hours ratio by project Actual billable hours ratio by resource |
+| Hours                                                | Actual billable utilized hours vs actual billable burden hours vs budget hours, cctual billable utilized hours vs actual billable burden hours by project, actual billable utilized hours vs actual billable burden hours by resource, actual billable hours ratio by project, actual billable hours ratio by resource |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin 
 in Power BI, see Create and Configure a Dashboard. You can also use the export underlying data functionality to export underlying data 
