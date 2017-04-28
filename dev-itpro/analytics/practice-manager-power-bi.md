@@ -62,7 +62,7 @@ The following table provides details about the metrics found on each report page
 | Hours                                                | Actual billable utilized hours vs actual billable burden hours vs budget hours, Actual billable utilized hours vs actual billable burden hours by project, Actual billable utilized hours vs actual billable burden hours by resource, Actual billable hours ratio by project, Actual billable hours ratio by resource |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin 
-in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the export underlying data functionality to export underlying data 
+in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the export underlying data functionality to export underlying data 
 that is summarized on a visualization.
 
 **Understanding the data model and entities**
