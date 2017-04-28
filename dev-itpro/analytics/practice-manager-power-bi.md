@@ -87,4 +87,4 @@ Here are some helpful links that are related to entities and building Power BI c
 -   [Data entities](dynamics365/operations/dev-itpro/data-entities/data-entities)
 -   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](http://ax.help.dynamics.com/en/wiki/configuring-powerbi-integration/)
+-   [Configure Power BI integration for workspaces](configure-power-bi-integration.md)
