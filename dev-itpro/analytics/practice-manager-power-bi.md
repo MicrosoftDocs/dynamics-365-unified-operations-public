@@ -62,14 +62,14 @@ The following table provides details about the metrics found on each report page
 | Hours                                                | Actual billable utilized hours vs actual billable burden hours vs budget hours, Actual billable utilized hours vs actual billable burden hours by project, Actual billable utilized hours vs actual billable burden hours by resource, Actual billable hours ratio by project, Actual billable hours ratio by resource |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin 
-in Power BI, see Create and Configure a Dashboard. You can also use the export underlying data functionality to export underlying data 
+in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the export underlying data functionality to export underlying data 
 that is summarized on a visualization.
 
 **Understanding the data model and entities**
 
-Dynamics 365 for Operations data is used to populate the report in the Practice Manager BI Report content pack. This is represented as 
-aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database optimized for analytics. Read more about 
-it in the blog [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
+Dynamics 365 for Operations data is used to fill the report pages in the **Practice manager** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
+
+The following key aggregate measurements are used as the basis of the content.
 
 | **Entity**   | **Key aggregate measurements**   | **Data source for Dynamics 365 for Operations** | **Field**  | **Description**     |
 |--------------|----------------------------------|-------------------------------------------------|------------|---------------------|
