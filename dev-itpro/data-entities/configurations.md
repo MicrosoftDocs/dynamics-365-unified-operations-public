@@ -361,7 +361,14 @@ use some additional features to control the export process:
     template. The existing entities will be removed before the project
     entities are copied into the template.
 
-Merged templates
+### Loading default templates
+-----------------------------
+
+Default templates are delivered with each new release in the product. These templates are automatically loaded when you first install your instance of Dynamics 365 for Finance and Operations. 
+
+Once they are loaded, you can change them to suit your business needs. However, if you want to retrieve the default templates, you can use the reload default templates button to add them back to your system. You can either replace the templates with the latest versions or select an option to make a copy the old templates first and then add the default templates.
+
+### Merged templates
 ----------------
 
 We created larger templates that are a combination of the smaller module templates for convenience. You can use the larger templates or add any combination of smaller templates to build a data project. 
@@ -369,18 +376,28 @@ We created larger templates that are a combination of the smaller module templat
 -   Financials includes general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting
 -   Supply chain includes inventory management, product management, procurement, sales and marketing, warehouse management, production control, and costing
  
-Master data in the templates
+### Master data in the templates
 ----------------------------
 
 Many of the templates include entities for master data such as customers, vendors, and released products. These are included to indicate the proper sequence of entities that you will need once you have loaded parameters and reference data. Master entities are most often sequenced in the module bands number from 100 and up (see sequencing philosophy) and they will shown in the grid under entity category as master.
 
-Obsolete entities
+Entities
+---------
+
+### Obsolete entities
 -----------------
 
 As we create newer versions of Dynamics 365 for Finance and Operations, we may need to update the functionality of an entity. A new entity may be created with a modified name for it and the original entity will be marked as obsolete. You will no longer be able to add the obsolete entities to a new data project or template. However, if you load a data package that has the obsolete entity in it, you will be warned about the existence of an obsolete entity but you will be able to still import your data.
 
-Sequencing philosophy
----------------------
+### Self referencing entities
+-------------------------
+
+There are entities that represent tables that have references to themselves. For example, when you create a cash discount, you can refer to a next cash discount. To import data, it is necessary to sequence the data so that the cash discount referred to in the next cash discount field is imported first, followed by the cash discount that uses it.
+
+We have added a class called DMFImportExportSequencer that you can add to an entity that will sequence your data in self referencing entities and enable the data to load in a single pass. You view the code required to update your entities in the Cash Discount entity (CashDiscountEntity).
+
+Sequencing philosophy for templates
+-----------------------------------
 
 ### Units, levels and sequences
 
