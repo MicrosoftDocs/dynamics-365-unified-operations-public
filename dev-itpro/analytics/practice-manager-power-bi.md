@@ -53,10 +53,8 @@ To watch a demo of how to implement the Power BI content, see this [Office mix](
 
 The following table provides an overview of the visualizations in the **Practice manager** Power BI content.
 
-
-
 | **Report page**                                      | **Visualization**               |
-
+|------------------------------------------------------|-----------------------------------------------|
 | Dashboard (rename this for 7.2 to Projects overview) | Created projects Estimated projects In process projects Number of projects by
 stage Number of projects by city  Actual revenue by customer Budget gross margin by project Earned value management overview |
 | Cost                                                 | Actual vs budget cost by month Actual vs budget cost by year Actual vs budget cost by category Actual cost by transaction type       |
