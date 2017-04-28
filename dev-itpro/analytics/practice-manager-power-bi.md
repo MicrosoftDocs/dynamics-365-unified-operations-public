@@ -5,7 +5,7 @@ title: Practice manager content pack for Power BI
 description: This topic describes what's included in the Practice Manager BI Report Dynamics 365 for Operations content pack for Microsoft Power BI. It explains how to access the reports included in the content pack and provides information about the data model and entities that are used to build the content pack.
 author: knelson
 manager: AnnBe
-ms.date: 04/27/2017
+ms.date: 04/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -31,33 +31,27 @@ ms.dyn365.version:
 
 [!includebanner]
 
-# Practice Manager content pack for Power BI
+# Practice manager Power BI content
 
-This topic describes what's included in the Practice Manager BI Report Dynamics 365 for Operations content pack for Microsoft Power BI. 
-It explains how to access the reports included in the content pack and provides information about the data model and entities that are 
-used to build the  content pack.
+This topic describes what's included in the **Practice manager** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the  content.
 
 **Overview**
 
-This content pack was created for practice managers and project managers to provide them with key metrics related to the projects the 
-organization is working on. The dashboard will provide an overview of the projects and related customers. A report level filter can be 
-used to report for specific legal entities. It pulls data from the project accounting cubes for Dynamics 365 for Operations.
+The **Practice manager** Power BI content was created for practice managers and project managers to provide them with key metrics related to the projects the organization is working on. The dashboard will provide an overview of the projects and related customers. A report-level filter can be used to report for specific legal entities. This Power BI content pulls data from the project accounting aggregate measurements for Dynamics 365 for Operations.
 
-The content pack contains 5 report pages consisting of one overview page and 4 details pages providing details of project costs, 
-revenues, earned value management and hours metrics sliced and diced across different dimensions.
+The **Practice manager** Power BI content contains five report pages: one overview page and four pages providing details of project costs, revenues, earned value management, and hour metrics sliced and diced across different dimensions.
 
-All the amounts in the content pack are shown in the system currency. You can set the system currency on the Systems parameters form.
+All the amounts in the content are shown in the system currency. You can set the system currency on the Systems parameters page.
 
-**Accessing the content pack**
+**Accessing the Power BI content**
 
-You can find the Practice Manager BI Report Dynamics 365 for Operations content pack in the Shared assets library in Microsoft Dynamics
-Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for
-Operations data, see Power BI content from Microsoft and your partners.
+You can find the **Practice manager** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
-**Reports included in the content pack**
+To watch a demo of how to implement the Power BI content, see this [Office mix](https://mix.office.com/watch/9puyb1b2xs1w).
 
-The content pack includes a report that consists of a set of metrics visualized as charts, tiles, and tables.
-The following table provides an overview of the visualizations in the content pack.
+**Visualizations included in the Power BI content**
+
+The following table provides an overview of the visualizations in the **Practice manager** Power BI content.
 
 
 
