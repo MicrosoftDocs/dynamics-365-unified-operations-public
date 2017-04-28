@@ -34,7 +34,7 @@
     "externalReference": [],
     "globalMetadata": {
       "layout": "Conceptual",
-      "SearchScope": ["Operations"],
+      "searchScope": ["Operations"],
        "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json"
     },
     "fileMetadata": {},
