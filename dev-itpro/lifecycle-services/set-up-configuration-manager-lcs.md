@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Configuration manager
-description: 
+description: This topic provides information about how to set up the Configuration manager.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
