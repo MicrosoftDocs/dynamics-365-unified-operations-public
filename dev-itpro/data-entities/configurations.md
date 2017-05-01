@@ -210,16 +210,19 @@ build your configurations. As we continue to improve the product, we will elimin
 | Area                           | Entity                                 | Action to take                                                                                                                                                                                        
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
 | System setup                   | Legal entities                         | Apply a filter to Company if you only want one legal entity |
+|                                | Number sequence code                   | The number sequence codes can be shared or specific to a legal entity. If you want all number sequences, you must have the legal entities setup for the number sequences that are stored for a specific legal entity. If you only want the shared sequences, apply a filter to remove the number sequences that are specific to a legal entity |
+|                                | Number sequence references             | The number sequence references follow the same pattern as number sequence codes |
 |                                | Operating unit                         | Unmap ManagerPersonnelNumber unless you have imported workers |
 |                                | Organization hierarchy                 | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Remove the export entity and add the import entity  |
 |                                | User information                       | Apply a filter where ID is not equal to Admin. Unmap PersonName because there is no mapping to the directory. |
 | GL Shared                      | Account structures active group        | This is a composite entity that will export and import only the active account structures. If you use the other account structure entities, the active account structures will be changed to draft and you will need to activate them before they can be used. |
-|                                | Advanced rule structures active group  | Used in combination with account structures active group entity, this composite entity  will export and import only the active advanced rule structures active. If you use the other advanced rule structures entities, the advanced rule structures will be changed to draft and you will need to activate them before they can be used. |
+|                                | Advanced rule structures active group  | Used in combination with account structures active group entity, this composite entity will export and import only the active advanced rule structures active. If you use the other advanced rule structures entities, the advanced rule structures will be changed to draft and you will need to activate them before they can be used. |
 |                                | Financial dimension values             | All values, including custom values, will be exported. Remove the custom values before importing them. If you leave them in the package, they will not import but the custom values will be populated as you import the data that backs the custom dimension. |
-|                                | Financial Dimension legal entity overrides | Apply a filter to Company if you only want one legal entity |
-| Workflow                       | Workflow Version                       | Change the owner in the package data to Admin unless the users in the workflow are already imported |  
+|                                | Financial dimension legal entity overrides | Apply a filter to Company if you only want one legal entity |
+| Workflow                       | Workflow version                       | Change the owner in the package data to Admin unless the users in the workflow are already imported |  
+|                                | Workflow expression                    | Some workflow expressions may be too long for an Excel cell. Use XML as the export format instead of Excel |  
 | General ledger                 | Ledger                                 | Apply a filter to Company if you only want one legal entity |  
-|                                | Ledger Fiscal Calendar year            | Apply a filter to Ledger name if you only want one legal entity |
+|                                | Ledger fiscal Calendar year            | Apply a filter to Ledger name if you only want one legal entity |
 |                                | Ledger fiscal calendar period          | Apply a filter to Ledger name if you only want one legal entity |
 |                                | Main account legal entity overrides    | Apply a filter to Company if you only want one legal entity |
 |                                | Financial dimension value legal entity | Apply a filter to Legal entity if you only want one legal entity |
@@ -229,9 +232,9 @@ build your configurations. As we continue to improve the product, we will elimin
 | Budget                         | Budget cost elements                   | Apply a filter to Legal entity if you only want one legal entity | 
 |                                | Budget plan process                    | Apply a filter to Ledger if you only want one legal entity | 
 |                                | Budget plan allocation schedule        | Apply a filter to Ledger if you only want one legal entity | 
-|                                | Budget Plan Stage Rule                 | If you applied a filter to Budget plan process, you may see errors when importing stage rules. The entity currently does not have a Ledger name in it that can be filtered so it will contain all companies | 
-|                                | Budget Plan Priority Constraint        | You will see the same issue described for stage rules | 
-|                                | Budget Plan Process Administration     | You will see the same issue described for stage rules | 
+|                                | Budget plan stage Rule                 | If you applied a filter to Budget plan process, you may see errors when importing stage rules. The entity currently does not have a Ledger name in it that can be filtered so it will contain all companies | 
+|                                | Budget plan priority constraint        | You will see the same issue described for stage rules | 
+|                                | Budget plan process administration     | You will see the same issue described for stage rules | 
 | Inventory                      | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity |
 |                                | Site current postal address            | Apply a filter to Company if you only want one legal entity | 
 | Product information management | Products                               | Unmap NMFCCode and STCCCode. There are no entities available for those codes at this time |
