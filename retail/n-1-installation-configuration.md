@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install the Retail Async Server Connector service Dynamics AX 2012 R3 for use with Dynamics 365 for Operations
+title: Installing N-1 components for use with Microsoft Dynamics 365 for Operations - Retail 
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: jashanno
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.intro: [month/year of release that feature was introduced in, in forma
 ms.dyn365.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Install the Retail Async Server Connector service Dynamics AX 2012 R3 for use with Dynamics 365 for Operations
+# Installing N-1 components for use with Microsoft Dynamics 365 for Operations - Retail
 
 [!include[banner](../includes/banner.md)]
 
