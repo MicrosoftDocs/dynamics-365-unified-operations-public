@@ -213,7 +213,7 @@ build your configurations. As we continue to improve the product, we will elimin
 |                                | Number sequence code                   | The number sequence codes can be shared or specific to a legal entity. If you want all number sequences, you must have the legal entities setup for the number sequences that are stored for a specific legal entity. If you only want the shared sequences, apply a filter to remove the number sequences that are specific to a legal entity |
 |                                | Number sequence references             | The number sequence references follow the same pattern as number sequence codes |
 |                                | Operating unit                         | Unmap ManagerPersonnelNumber unless you have imported workers |
-|                                | Organization hierarchy                 | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Remove the export entity and add the import entity  |
+|                                | Organization hierarchy - published     | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Remove the export entity and add the import entity when you import |
 |                                | User information                       | Apply a filter where ID is not equal to Admin. Unmap PersonName because there is no mapping to the directory. |
 | GL Shared                      | Account structures active group        | This is a composite entity that will export and import only the active account structures. If you use the other account structure entities, the active account structures will be changed to draft and you will need to activate them before they can be used. |
 |                                | Advanced rule structures active group  | Used in combination with account structures active group entity, this composite entity will export and import only the active advanced rule structures active. If you use the other advanced rule structures entities, the advanced rule structures will be changed to draft and you will need to activate them before they can be used. |
@@ -227,8 +227,10 @@ build your configurations. As we continue to improve the product, we will elimin
 |                                | Main account legal entity overrides    | Apply a filter to Company if you only want one legal entity |
 |                                | Financial dimension value legal entity | Apply a filter to Legal entity if you only want one legal entity |
 | Accounts payable               | Vendors                                | Unmap DefaultPurchaseSite , DefaultProcurementWarehouseID, Tax1099BoxID, Tax1099Type unless sites, warehouses and 1099 information has been set up |
+| Tax                            | Sales tax parameters                   | The default value for the marginal base calculations method is "Total" for sales tax parameters. The Ledger Parameters entity does not set that value. However, some tax codes use a marginal base of "Line", which will fail validation. A new entity called Sales tax parameters preset entity was created to allow you to import the marginal base calculation method first so you can then import tax codes | 
 | Accounts receivable            | Customer write-off reason code         | Apply a filter to Company if you only want one legal entity |
 |                                | Customer details                       | Unmap CollectionsContactPersonID and EmployeeResponsibleNumber unless workers have been imported |
+|                                | Customers                              | The Customers entity was designed for use with Odata scenarios. For configurations, use the Customer definitions entity and the Customer details entity. The Customer definitions entities allows you to import the basic information about a customer so entities that require a customer will have that information. The Customer details entity contains addition information about a customer that you can add after parameters and reference data has been set up |
 | Budget                         | Budget cost elements                   | Apply a filter to Legal entity if you only want one legal entity | 
 |                                | Budget plan process                    | Apply a filter to Ledger if you only want one legal entity | 
 |                                | Budget plan allocation schedule        | Apply a filter to Ledger if you only want one legal entity | 
@@ -237,7 +239,13 @@ build your configurations. As we continue to improve the product, we will elimin
 |                                | Budget plan process administration     | You will see the same issue described for stage rules | 
 | Inventory                      | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity |
 |                                | Site current postal address            | Apply a filter to Company if you only want one legal entity | 
+|                                | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity | 
 | Product information management | Products                               | Unmap NMFCCode and STCCCode. There are no entities available for those codes at this time |
+|                                | Products                               | The EcoResProduct and EcoResReleasedProduct entities should be used for configurations. The EcoResProductMaster, EcoResDistinctProduct, EcoResReleasedProductMaster, EcoResReleasedDistinctProduct entities should be used for Odata scenarios |
+|                                | Product document attachments           | For Product documents (EcoResProductDocumentAttachmentEntity) and released product documents (EcoResReleasedProductDocumentAttachmentEntity, you must never skip staging because additional steps are performed in the staging environment. You must use a data package for export and for import  because the export file needs to be accompanied by a resources folder with the attechments. The entities support images, documents, notes, and links. When you export, you will see an image file with a name that looks like a GUID. It is a valid data package needed to complete the import |
+|                                | Period template                        | The Period template entity is a shared entity. It can be filtered by Legal entity but the Period template lines entity does not have a Legal entity field. If you want to import a single legal entity, you can filter the period template. However, you must remove the period template lines that are not related to that legal entity |
+| Procurement                    | Vendors                                | Unmap purchase site and warehouse unless they are set up. Unmap the 1099 box id and 1099 type unless you have opened the 1099 form. Unmap the vendor bank acccount ID. The vendor bank account entity will set up the link to the bank account when the vendor when it is imported |
+|                                | Vendor catalog                         | Please refer to the discussion for importing vendor catalogs in the Supply Chain Management blog https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/  |
 | Sales and marketing            | Leads                                  | Unmap LeadOpeningPersonnelNumber, LeadClosingPersonnelNumber, LeadResponsiblePersonnelNumber unless workers have been imported |
                                  
                                  
@@ -506,7 +514,7 @@ installation. If you want to add your own templates to a configuration,
 you can follow the guidelines above to ensure that your template merges
 correctly into a project that uses other templates.
 
-Entities
+Additional information about entities
 ---------
 
 ### Obsolete entities
@@ -517,6 +525,17 @@ As we create newer versions of Dynamics 365 for Finance and Operations, we may n
 ### Self referencing entities
 -------------------------
 
-There are entities that represent tables that have references to themselves. For example, when you create a cash discount, you can refer to a next cash discount. To import data, it is necessary to sequence the data so that the cash discount referred to in the next cash discount field is imported first, followed by the cash discount that uses it.
+There are entities that represent tables that have references to themselves. For example, when you create a cash discount, you can refer to a next cash discount. To import data, it is necessary to sequence the data so that the cash discount referred to in the next cash discount field is imported first, followed by the cash discount that uses it. 
 
-We have added a class called DMFImportExportSequencer that you can add to an entity that will sequence your data in self referencing entities and enable the data to load in a single pass. You view the code required to update your entities in the Cash Discount entity (CashDiscountEntity).
+We have added a class called DMFImportExportSequencer that you can add to an entity that will sequence your data in self referencing entities and enable the data to load in a single pass. You can view the code required to update your entities in the Cash Discount entity (CashDiscountEntity).
+
+We have added the class to a number of entities that are self referencing. The list includes:
+-   Cash discounts
+-   Customers
+-   Tax codes
+-   Budget control groups
+-   Projects
+-   Product categories
+-   Warehouses
+-   Budget plan workflow stage
+-   Sales units
