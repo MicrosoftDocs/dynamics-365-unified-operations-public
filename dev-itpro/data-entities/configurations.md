@@ -205,58 +205,75 @@ Setup considerations for certain entities used to export configurations
 ------------------------------------------------------------------------------
 
 There are several entities that require some additional steps when you
-are doing configurations. In many cases, these steps occur if you are exporting from a 
-golden build that has multiple legal entities in it but you only want to import the data 
-from one of those legal entities. Entities with shared data will require a filter to remove
-all other entities except the one that you want.
-
-Please follow these recommendations as you build your configurations. We will continue to eliminate special 
+are doing configurations. Please follow these recommendations as you build 
+your configurations. We will continue to eliminate special 
 steps as we improve the configuration feature.
 
-| Area                           | Entity                                 | Action to take                                                                                                                                                                                        
+### Using special purpose entities
+The following entities require special handling when used in configurations: 
+
+| Area                           | Entity                                 | Action to take                                            |  
+|--------------------------------|----------------------------------------|-----------------------------------------------------------
+| System setup                   | Organization hierarchy - published     | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Remove the export entity and add the import entity when you import |
+| GL Shared                      | Account structures active group        | This is a composite entity that will export and import only the active account structures. If you use any other account structure entities, the active account structures will be changed to draft and you will need to activate them before they can be used. |
+|                                | Advanced rule structures active group  | Used in combination with account structures active group entity, this composite entity will export and import only the active advanced rule structures active. If you use any other advanced rule structures entities, the advanced rule structures will be changed to draft and you will need to activate them before they can be used. |
+|                                | Financial dimension values             | All values, including custom values, will be exported. Remove the custom values before importing them. If you leave them in the package, they will not import but the custom values will be populated as you import the data that backs the custom dimension. |
+| Workflow                       | Workflow version                       | Change the owner for every record in the package data to Admin unless the users in the workflow are already imported |  
+|                                | Workflow expression                    | Some workflow expressions may be too long for an Excel cell. Use XML as the export format instead of Excel |  
+| Tax                            | Sales tax parameters                   | The default value for the marginal base calculations method is "Total" for sales tax parameters. The Ledger Parameters entity does not set that value. However, some tax codes use a marginal base of "Line", which will fail validation. A new entity called Sales tax parameters preset entity was created to allow you to import the marginal base calculation method first so you can then import tax codes | 
+| Accounts receivable            | Customers                              | The Customers entity was designed for use with Odata scenarios. For configurations, use the Customer definitions entity and the Customer details entity. The Customer definitions entities allows you to import the basic information about a customer so entities that require a customer will have that information. The Customer details entity contains addition information about a customer that you can add after parameters and reference data has been set up |
+| Inventory management           | Warehouse locations                    | Some warehouses locations require a Location profile ID.   Location profile ids require a Location format. This information must be imported before the warehouse location  | 
+| Product information management | Products                               | The EcoResProduct and EcoResReleasedProduct entities should be used for configurations. The EcoResProductMaster, EcoResDistinctProduct, EcoResReleasedProductMaster, EcoResReleasedDistinctProduct entities should be used for Odata scenarios |
+|                                | Product document attachments           | For Product documents (EcoResProductDocumentAttachmentEntity) and released product documents (EcoResReleasedProductDocumentAttachmentEntity, you must never skip staging because additional steps are performed in the staging environment. You must use a data package for export and for import  because the export file needs to be accompanied by a resources folder with the attechments. The entities support images, documents, notes, and links. When you export, you will see an image file with a name that looks like a GUID. It is a valid data package needed to complete the import |
+| Procurement                    | Vendor catalog                         | Please refer to the discussion for importing vendor catalogs in the Supply Chain Management blog https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/  |
+
+
+### Remove the mapping for specific fields
+A golden build may not have customer-specific fields set up. These fields should be unmapped to ensure that the import works. For example, workers are stored in many tables but they may not be set up in a golden build. The following entities may need to be unmapped:
+
+| Area                           | Entity                                 | Action to take                                            |  
+|--------------------------------|----------------------------------------|-----------------------------------------------------------
+| System setup                   | Operating unit                         | Unmap ManagerPersonnelNumber unless you have imported workers |
+|                                | User information                       | Apply a filter where ID is not equal to Admin. Unmap PersonName because there is no mapping to the directory. |
+| Accounts payable               | Vendors                                | Unmap purchase site and warehouse unless they are set up. Unmap the 1099 box id and 1099 type unless you have opened the 1099 form. Unmap the vendor bank acccount ID. The vendor bank account entity will set up the link to the bank account when the vendor when it is imported |
+| Accounts receivable            | Customer details                       | Unmap EmployeeResponsibleNumber unless workers have been imported. Unmap CollectionsContactPersonID unless workers and their contact information has been imported |
+| Inventory management           | Warehouse current postal address       | Unmap the Picking store area and Input store area unless Retail information has been imported | 
+| Product information management | Products                               | Unmap NMFCCode and STCCCode. There are no entities available for those codes at this time |
+|                                | Released products                      | Unmap project category, default product color, default configuration, default product size, and default product style. This entity is self-referencing and has not yet been updated to load these fields in a single pass |
+|                                | Period template                        | The Period template entity is a shared entity. It can be filtered by Legal entity but the Period template lines entity does not have a Legal entity field. If you want to import a single legal entity, you can filter the period template. However, you must remove the period template lines that are not related to that legal entity |
+|                                | Item coverage group                    | Unmap Period template ID unless they were already imported |
+| Procurement                    | Vendors                                | Unmap purchase site and warehouse unless they are set up. Unmap the 1099 box id and 1099 type unless you have opened the 1099 form. Unmap the vendor bank acccount ID. The vendor bank account entity will set up the link to the bank account when the vendor when it is imported |
+| Sales and marketing            | Leads                                  | Unmap LeadOpeningPersonnelNumber, LeadClosingPersonnelNumber, LeadResponsiblePersonnelNumber unless workers have been imported |
+
+
+### Golden builds with multiple legal entities
+If you are exporting from a golden build that has multiple legal entities in it 
+but you only want to import the data from one of those legal entities, you will need 
+to apply a filter on the legal entity fields. This filter must remove all other entities except the one that you want.
+The following entities may need filters:
+
+| Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
 | System setup                   | Legal entities                         | Apply a filter to Company if you only want one legal entity |
 |                                | Number sequence code                   | The number sequence codes can be shared or specific to a legal entity. If you want all number sequences, you must have the legal entities setup for the number sequences that are stored for a specific legal entity. If you only want the shared sequences, apply a filter to remove the number sequences that are specific to a legal entity |
 |                                | Number sequence references             | The number sequence references follow the same pattern as number sequence codes |
-|                                | Operating unit                         | Unmap ManagerPersonnelNumber unless you have imported workers |
-|                                | Organization hierarchy - published     | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Remove the export entity and add the import entity when you import |
-|                                | User information                       | Apply a filter where ID is not equal to Admin. Unmap PersonName because there is no mapping to the directory. |
 | Global address book            | Multiple entities                      | If your source environment contains multiple legal entities, the global address book will contain data for each legal entity. All of those legal entities will be created when you import the data unless you remove the data for the legal entities that you do not want to load |
-| GL Shared                      | Account structures active group        | This is a composite entity that will export and import only the active account structures. If you use the other account structure entities, the active account structures will be changed to draft and you will need to activate them before they can be used. |
-|                                | Advanced rule structures active group  | Used in combination with account structures active group entity, this composite entity will export and import only the active advanced rule structures active. If you use the other advanced rule structures entities, the advanced rule structures will be changed to draft and you will need to activate them before they can be used. |
-|                                | Financial dimension values             | All values, including custom values, will be exported. Remove the custom values before importing them. If you leave them in the package, they will not import but the custom values will be populated as you import the data that backs the custom dimension. |
-| Workflow                       | Workflow version                       | Change the owner for every record in the package data to Admin unless the users in the workflow are already imported |  
-|                                | Workflow expression                    | Some workflow expressions may be too long for an Excel cell. Use XML as the export format instead of Excel |  
 | General ledger                 | Ledger                                 | Apply a filter to Company if you only want one legal entity |  
 |                                | Ledger fiscal Calendar year            | Apply a filter to Ledger name if you only want one legal entity |
 |                                | Ledger fiscal calendar period          | Apply a filter to Ledger name if you only want one legal entity |
 |                                | Main account legal entity overrides    | Apply a filter to Company if you only want one legal entity |
 |                                | Financial dimension value legal entity | Apply a filter to Legal entity if you only want one legal entity |
-| Accounts payable               | Vendors                                | Unmap purchase site and warehouse unless they are set up. Unmap the 1099 box id and 1099 type unless you have opened the 1099 form. Unmap the vendor bank acccount ID. The vendor bank account entity will set up the link to the bank account when the vendor when it is imported |
-| Tax                            | Sales tax parameters                   | The default value for the marginal base calculations method is "Total" for sales tax parameters. The Ledger Parameters entity does not set that value. However, some tax codes use a marginal base of "Line", which will fail validation. A new entity called Sales tax parameters preset entity was created to allow you to import the marginal base calculation method first so you can then import tax codes | 
 | Accounts receivable            | Customer write-off reason code         | Apply a filter to Company if you only want one legal entity |
-|                                | Customer details                       | Unmap EmployeeResponsibleNumber unless workers have been imported. Unmap CollectionsContactPersonID unless workers and their contact information has been imported |
-|                                | Customers                              | The Customers entity was designed for use with Odata scenarios. For configurations, use the Customer definitions entity and the Customer details entity. The Customer definitions entities allows you to import the basic information about a customer so entities that require a customer will have that information. The Customer details entity contains addition information about a customer that you can add after parameters and reference data has been set up |
 | Budget                         | Budget cost elements                   | Apply a filter to Legal entity if you only want one legal entity | 
 |                                | Budget plan process                    | Apply a filter to Ledger if you only want one legal entity | 
 |                                | Budget plan allocation schedule        | Apply a filter to Ledger if you only want one legal entity | 
 |                                | Budget plan stage Rule                 | If you applied a filter to Budget plan process, you may see errors when importing stage rules. The entity currently does not have a Ledger name in it that can be filtered so it will contain all companies | 
 |                                | Budget plan priority constraint        | You will see the same issue described for stage rules | 
 |                                | Budget plan process administration     | You will see the same issue described for stage rules | 
-| Inventory                      | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity |
+| Inventory management           | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity |
 |                                | Site current postal address            | Apply a filter to Company if you only want one legal entity | 
-|                                | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity. Unmap the Picking store area and Input store area unless Retail information has been imported | 
-|                                | Warehouse locations                    | Some warehouses locations require a Location profile ID.   Location profile ids require a Location format. This information must be imported before the warehouse location  | 
-| Product information management | Products                               | Unmap NMFCCode and STCCCode. There are no entities available for those codes at this time |
-|                                | Products                               | The EcoResProduct and EcoResReleasedProduct entities should be used for configurations. The EcoResProductMaster, EcoResDistinctProduct, EcoResReleasedProductMaster, EcoResReleasedDistinctProduct entities should be used for Odata scenarios |
-|                                | Released products                      | Unmap project category, default product color, default configuration, default product size, and default product style. This entity is self-referencing and has not yet been updated to load these fields in a single pass |
-|                                | Product document attachments           | For Product documents (EcoResProductDocumentAttachmentEntity) and released product documents (EcoResReleasedProductDocumentAttachmentEntity, you must never skip staging because additional steps are performed in the staging environment. You must use a data package for export and for import  because the export file needs to be accompanied by a resources folder with the attechments. The entities support images, documents, notes, and links. When you export, you will see an image file with a name that looks like a GUID. It is a valid data package needed to complete the import |
-|                                | Period template                        | The Period template entity is a shared entity. It can be filtered by Legal entity but the Period template lines entity does not have a Legal entity field. If you want to import a single legal entity, you can filter the period template. However, you must remove the period template lines that are not related to that legal entity |
-|                                | Item coverage group                    | Unmap Period template ID unless they were already imported |
-| Procurement                    | Vendors                                | Unmap purchase site and warehouse unless they are set up. Unmap the 1099 box id and 1099 type unless you have opened the 1099 form. Unmap the vendor bank acccount ID. The vendor bank account entity will set up the link to the bank account when the vendor when it is imported |
-|                                | Vendor catalog                         | Please refer to the discussion for importing vendor catalogs in the Supply Chain Management blog https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/  |
-| Sales and marketing            | Leads                                  | Unmap LeadOpeningPersonnelNumber, LeadClosingPersonnelNumber, LeadResponsiblePersonnelNumber unless workers have been imported |
-                                 
+|                                | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity. | 
+                         
                                  
 Import a configuration
 ----------------------
