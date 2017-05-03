@@ -383,7 +383,7 @@ Default templates are delivered with each new release in the product. These temp
 Once they are loaded, you can change them to suit your business needs. However, if you want to retrieve the default templates, you can use the reload default templates button to add them back to your system. You can either replace the templates with the latest versions or select an option to make a copy the old templates first and then add the default templates.
 
 ### Merged templates
-----------------
+--------------------
 
 We created larger templates that are a combination of the smaller module templates for convenience. You can use the larger templates or add any combination of smaller templates to build a data project. 
 -   System and Shared includes system setup, global address book, shared general ledger, and workflow
@@ -391,9 +391,18 @@ We created larger templates that are a combination of the smaller module templat
 -   Supply chain includes inventory management, product management, procurement, sales and marketing, warehouse management, production control, and costing
  
 ### Master data in the templates
-----------------------------
+--------------------------------
 
 Many of the templates include entities for master data such as customers, vendors, and released products. These are included to indicate the proper sequence of entities that you will need once you have loaded parameters and reference data. Master entities are most often sequenced in the module bands number from 100 and up (see sequencing philosophy) and they will shown in the grid under entity category as master.
+
+### Templates with the same entity
+----------------------------------
+
+There are entities that are needed in more than one template. For example, you need payment terms in both Accounts payable and Accounts receivable. However, you may only need the Accounts receivable template so we added the entity to both templates.
+
+A data project can only have one instance of an entity in it. If you add a template that contains an entity that already exists in a data project, the entity in that template will replace the entity in the project. 
+
+You can use this capability to override the default templates without changing them. For example, if the worker field has been unmapped in your data project but you have your own template that adds workers, you can build a template that includes the entities that have the worker field. In that template, you can map the worker field and it will replace the entities in the data project that unmapped the field.
 
 Sequencing philosophy for templates
 -----------------------------------
