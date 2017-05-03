@@ -205,8 +205,13 @@ Setup considerations for certain entities used to export configurations
 ------------------------------------------------------------------------------
 
 There are several entities that require some additional steps when you
-are doing configurations. Please follow these recommendations as you
-build your configurations. As we continue to improve the product, we will eliminate as many special steps as possible. 
+are doing configurations. In many cases, these steps occur if you are exporting from a 
+golden build that has multiple legal entities in it but you only want to import the data 
+from one of those legal entities. Entities with shared data will require a filter to remove
+all other entities except the one that you want.
+
+Please follow these recommendations as you build your configurations. We will continue to eliminate special 
+steps as we improve the configuration feature.
 
 | Area                           | Entity                                 | Action to take                                                                                                                                                                                        
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
