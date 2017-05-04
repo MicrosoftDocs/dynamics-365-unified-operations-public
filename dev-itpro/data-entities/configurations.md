@@ -102,8 +102,7 @@ defaults:
 
 ### Templates for configurations
 
-Predefined templates are automatically loaded in Dynamics 365 when an instance is created. New templates and updates
-will be delivered in new releases or through periodic updates. You can update your existing instance by using the refresh button in the framework parameters found on the data management workspace.
+Predefined templates have been created that will help you create a configuration. [More here]
 
 The templates are sequenced so that the data managed by the entities
 will be processed in the correct sequence. The
@@ -214,7 +213,7 @@ The following entities require special handling when used in configurations:
 
 | Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
-| System setup                   | Organization hierarchy - published     | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Remove the export entity and add the import entity when you import |
+| System setup                   | Organization hierarchy - published     | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Both entities are currently in the template. After exporting the package, copy the data from the Organization hierarchy - published file to the Organization hierarchy file. When you import the package, disable the Organization hierarchy - published entity.  |
 | GL Shared                      | Account structures active group        | This is a composite entity that will export and import only the active account structures. If you use any other account structure entities, the active account structures will be changed to draft and you will need to activate them before they can be used. |
 |                                | Advanced rule structures active group  | Used in combination with account structures active group entity, this composite entity will export and import only the active advanced rule structures active. If you use any other advanced rule structures entities, the advanced rule structures will be changed to draft and you will need to activate them before they can be used. |
 |                                | Financial dimension values             | All values, including custom values, will be exported. Remove the custom values before importing them. If you leave them in the package, they will not import but the custom values will be populated as you import the data that backs the custom dimension. |
