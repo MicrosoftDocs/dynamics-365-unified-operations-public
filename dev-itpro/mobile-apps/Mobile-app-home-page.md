@@ -65,7 +65,7 @@ Navigation in the mobile app consists of four simple concepts: the dashboard, wo
 ## Implementation process
 The following illustration shows the process for implementing the Dynamics 365 for Operations mobile app in your organization. 
 
-[![](./media/mobile-implementation-process_4.png)](./media/mobile-implementation-process_4.png) 
+[![Mobile apps implementation process](./media/mobile-implementation-process_4.png)]
 
 The following table includes links to resources that can help you implement the Dynamics 365 for Operations mobile app in your organization. The numbers in the first column correspond to the numbered steps in the previous illustration.
 
