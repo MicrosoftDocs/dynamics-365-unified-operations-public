@@ -58,9 +58,12 @@ The following illustration shows the overall process for upgrading the Dynamics 
 After upgrading to Platform update 6 (April 2017), an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage.
 
 ## How to get the latest platform package
-There are 3 ways you can get a hold of a platform update package. 1) In Lifecycle Services (LCS), import the platform update package from the Shared Asset Library (as described next), 2) search for "platform update" in LCS **Issue Search**, or 3) click on the **Binary Updates** tile of your environment's page in LCS (As of platform update 4, downloading binary updates in LCS include an upgrade to the latest platform).
+There are 3 ways you can get the latest platform update package.
+1. In Lifecycle Services (LCS), import the platform update package from the Shared Asset Library (as described next), or
+2. Search for "platform update" in LCS **Issue Search**, or 
+3. Click on the **Binary Updates** tile of your environment's page in LCS (As of platform update 4, downloading binary updates in LCS include an upgrade to the latest platform).
 
-###Import the platform update package
+### Import the platform update package
 Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Dynamics 365 packages are currently prefixed with *Dynamics 365 for Operations Platform Update* (for example, Dynamics 365 for Operations Platform Update 3)*.* Use these steps to import the platform update package:
 
 1.  Go to your LCS project's Asset library.
