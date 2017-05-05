@@ -46,8 +46,6 @@ Monthly updates are backward compatible and non-breaking. An explicit opt-in opt
 ## How can I update my environment to the latest monthly update?
 To install the latest monthly platform update on an existing environment, go to [Lifecycle Services (LCS)](https://lcs.dynamics.com/). In the Shared asset library, select the **Software deployable package** tab. You will find the latest platform update package that you can deploy. For example, the deployable package for platform update 5 is shown below. This package can be imported to the project's asset library and then can be applied to a specific environment through the update flows. For more details, see [Upgrade Dynamics 365 for Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md).
 
-[![Deployable package](./media/deployable-package-for-latest-platform-udpate.png)
-
 [![Deployable package in LCS](./media/deployable-package-in-lcs.png)
 
 New environments that are deployed will include the latest platform update.
