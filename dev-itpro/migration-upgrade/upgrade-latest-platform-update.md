@@ -48,23 +48,29 @@ The Microsoft Dynamics 365 for Operations platform consists of the following com
     -   Application Foundation
     -   Test Essentials
 
-**Important:** To move to the latest Dynamics 365 for Operations platform, your Dynamics 365 for Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in platform update 3, so that seamless continuous updates can be made to the platform. For more information, see the **Upgrading to platform update 3 from an earlier build** section at the end of this topic.
+**Important:** To move to the latest Dynamics 365 for Operations platform, your Dynamics 365 for Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than platform update 3, see the **Upgrading to platform update 3 from an earlier build** section at the end of this topic.
 
 ## Overall flow
 The following illustration shows the overall process for upgrading the Dynamics 365 for Operations platform to the latest update. [![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
 
-## Import the platform update package
+### Migrate files for Document management
+After upgrading to Platform update 6 (April 2017), an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage.
+
+## How to get the latest platform package
+There are 3 ways you can get a hold of a platform update package. 1) In Lifecycle Services (LCS), import the platform update package from the Shared Asset Library (as described next), 2) search for "platform update" in LCS **Issue Search**, or 3) click on the **Binary Updates** tile of your environment's page in LCS (As of platform update 4, downloading binary updates in LCS include an upgrade to the latest platform).
+
+###Import the platform update package
 Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Dynamics 365 packages are currently prefixed with *Dynamics 365 for Operations Platform Update* (for example, Dynamics 365 for Operations Platform Update 3)*.* Use these steps to import the platform update package:
 
 1.  Go to your LCS project's Asset library.
 2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
 3.  Select the desired platform update package.
 
-## Choose the correct package deployment strategy
-From a process perspective, a platform upgrade package resembles a binary hotfix deployable package.
+## Choose the correct package deployment avenue
+From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
 
--   To apply a package to your development or build environment, follow the instructions in this topic.
--   To apply a package to your demo, tier-2 sandbox, or production environment, follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Operations system](..\deployment\apply-deployable-package-system.md).
+-   To apply a platform update package to your local development environment or build environment, follow the instructions in this topic.
+-   To apply a platform update package to your cloud development, demo, tier-2 sandbox, or production environment, update directly from LCS. Follow the instructions for applying a binary hotfix in [Apply a deployable package on a Microsoft Dynamics 365 for Operations system](..\deployment\apply-deployable-package-system.md).
 
 ## Apply the platform update package on your development environment
 ### Delete platform metadata hotfixes from your VSTS project
@@ -132,9 +138,6 @@ If you're connected to Microsoft SQL Server Integration Services 2016 (13.0), ru
 If you're connected to an earlier release of Microsoft SQL Server Integration Services, run the following command.
 
     msiexec /i "DIXF_Service_x64.msi" ISSQLSERVERVERSION="Bin" SERVICEACCOUNT="NT AUTHORITY\NetworkService" /qb /lv DIXF_log.txt
-
-### Migrate files for Documement management
-After upgrading to Platform update 6 (April 2017), an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage.
 
 ## Apply the platform update package on a build environment
 If the build machine has been used for one or more builds, you should restore the metadata packages folder from the metadata backup folder before you upgrade the VM to a newer Dynamics 365 for Operations platform. You should then delete the metadata backup. These steps help ensure that the platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
