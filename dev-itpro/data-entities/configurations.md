@@ -387,14 +387,13 @@ use some additional features to control the export process:
     entities in Excel and click on the Publish button
 
 2)  If you exported a template and you want to bring that template back
-    into Dynamics, select Import template, browse to the template file,
-    click on Upload, and then click on Create template to load it
+    into Dynamics, select Import template, browse to the template file, 
+    and then click on Create template to load it
 
 3)  If you want to replace the contents of an existing template, select
     the replace from template button, browse to the template file that has
-    the entities that you want to import, click on Upload, and then
-    click on Create template to load it. The template values in the current template
-    will be replaced by the new template
+    the entities that you want to import, and click on Create template to load it. 
+    The template values in the current template will be replaced by the new template.
 
 4)  If you want to create a template from a project, follow the steps
     above to create a new template. Use the Replace template from
@@ -555,7 +554,9 @@ Additional information about entities
 ### Obsolete entities
 -----------------
 
-As we create newer versions of Dynamics 365 for Finance and Operations, we may need to update the functionality of an entity. A new entity may be created with a differnt name and the original entity will be marked as obsolete. You will no longer be able to add the obsolete entities to a new data project or template. However, if you load a data package that has the obsolete entity in it, you will be warned about the existence of an obsolete entity but you will be able to still import your data.
+As we create newer versions of Dynamics 365 for Finance and Operations, we may need to update the functionality of an entity. A new entity may be created with a different name and the original entity will be marked as obsolete. You will no longer be able to add the obsolete entities to a new data project or template. 
+
+If you load a data package that has the obsolete entity in it, you will be warned about the existence of an obsolete entity but you will be able to still import your data. You can find the obsolete entities by selecting the Obsolete column and filtering on Yes.
 
 ### Self referencing entities
 -------------------------
