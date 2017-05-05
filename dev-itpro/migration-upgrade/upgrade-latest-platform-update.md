@@ -51,7 +51,8 @@ The Microsoft Dynamics 365 for Operations platform consists of the following com
 **Important:** To move to the latest Dynamics 365 for Operations platform, your Dynamics 365 for Operations implementation **cannot** have any customizations (overlayering) of any of the AOT packages that belong to the platform. This restriction was introduced in platform update 3, so that seamless continuous updates can be made to the platform. If you are running on an platform that is older than platform update 3, see the **Upgrading to platform update 3 from an earlier build** section at the end of this topic.
 
 ## Overall flow
-The following illustration shows the overall process for upgrading the Dynamics 365 for Operations platform to the latest update. [![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
+The following illustration shows the overall process for upgrading the Dynamics 365 for Operations platform to the latest update.
+[![Upgrade process for implementations that have no customization of the platform](./media/flownocustomisations.jpg)](./media/flownocustomisations.jpg)
 
 ### Migrate files for Document management
 After upgrading to Platform update 6 (April 2017), an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage.
@@ -66,7 +67,7 @@ Platform update packages are released by Microsoft and can be imported from the 
 2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
 3.  Select the desired platform update package.
 
-## Choose the correct package deployment avenue
+## Choose the correct package deployment method
 From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
 
 -   To apply a platform update package to your local development environment or build environment, follow the instructions in this topic.
@@ -75,14 +76,16 @@ From a process perspective, deploying a platform upgrade package resembles a b
 ## Apply the platform update package on your development environment
 ### Delete platform metadata hotfixes from your VSTS project
 
-Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project. Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
+Before you install the new platform update, you must clean up your Microsoft Visual Studio Team Services (VSTS) source control project. If you are already on platform update 3 or newer, you can skip this section.  
+Remove any X++ or metadata hotfixes that you've installed on your existing platform. If you have any X++ or metadata hotfixes that are checked in to your VSTS project for any of the following Microsoft models, delete them from your project by using the Microsoft Visual Studio Source Control Explorer.
 
 -   Application Platform
 -   Application Foundation
-/-   TestEssentials
+-   TestEssentials
 -   Directory
 
-You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it. ![View History](./media/checkinhistory.png)
+You can find these hotfixes by browsing the check-in history of these Microsoft models. For example, use Source Control Explorer to browse the check-in history of the Trunk\\Main\\Metadata\\ApplicationFoundation\\ApplicationFoundation folder, and delete all XML files that have been checked in to it.
+![View History](./media/checkinhistory.png)
 
 ### Install the deployable package
 
