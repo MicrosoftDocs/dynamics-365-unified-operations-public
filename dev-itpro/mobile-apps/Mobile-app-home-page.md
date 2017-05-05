@@ -34,8 +34,6 @@ ms.search.validFrom: 2017-02-28
 
 [!include[banner](../includes/banner.md)]
 
-[!include[banner](../includes/banner.md)]
-
 
 This topic describes the Microsoft Dynamics 365 for Operations mobile app and provides links to resources that can help you implement it in your organization.
 
