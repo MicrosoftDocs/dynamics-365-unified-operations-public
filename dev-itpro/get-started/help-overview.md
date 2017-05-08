@@ -60,13 +60,22 @@ We've migrated all of the content from our previous help wiki to docs. We’re v
 
 ### How can I contribute? 
 
-Leave us a comment! Click **Comments** to get to the comments at the bottom of the page.
-![Comments](./media/comments.png)]
+Leave us a comment! 
 
-Start typing your comments, and then click **Post comment**.
+1 Click **Comments** to get to the comments at the bottom of the page.
+
+![Comments](./media/comments.png)
+
+2 Start typing your comments, and then click **Post comment**.
+
 ![Post comment](./media/before-signin.png)
 
-Click an icon on the left to sign in with any of the following types of accounts, or, on the right, enter an email address, and a new password to create a new account for this site: 
+3 Select the type of account you want to sign in with:  
+Click one of the icons on the left to associate this site with an existing account, such as a Twitter, Facebook, or Microsoft account. 
+
+Or 
+
+On the right, enter an email address, and a new password to create a new account for the site. 
 
 ![Sign in options](./media/signin-options.png)
 
