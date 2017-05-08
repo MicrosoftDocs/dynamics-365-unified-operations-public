@@ -92,7 +92,7 @@ The next important step is to expose the financial dimensions as separate fields
 
 ### Dynamics 365 for Operations version 1611
 
-For Microsoft Dynamics 365 for Operations version 1611 or later, you should use the wizard that is available in Microsoft Visual Studio (at **Dynamics 365** &gt; **Addins** &gt; **Add financial dimensions for Odata**). For instructions, see [Add dimensions to the Microsoft Excel template](dimensions-overview).
+For Microsoft Dynamics 365 for Operations version 1611 or later, you should use the wizard that is available in Microsoft Visual Studio (at **Dynamics 365** &gt; **Addins** &gt; **Add financial dimensions for Odata**). For instructions, see [Add dimensions to the Microsoft Excel template](dimensions-overview.md).
 
 ### Earlier versions of Dynamics 365 for Operations
 
