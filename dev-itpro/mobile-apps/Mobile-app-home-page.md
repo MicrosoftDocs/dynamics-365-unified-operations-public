@@ -158,11 +158,5 @@ The following table includes links to resources that can help you implement the 
 
 
 
-See also
---------
-
-[Mobile workspaces recently released for the Dynamics 365 for Operations mobile app](mobile-workspaces-released.md)
-
-
 
 
