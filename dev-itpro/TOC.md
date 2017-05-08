@@ -31,6 +31,7 @@
 # Mobile apps
 ## [Mobile app home page](mobile-apps/Mobile-app-home-page.md)
 ## [Mobile workspaces recently released](mobile-apps/mobile-workspaces-released.md)
+## [Publish a mobile workspace](mobile-apps/publish-mobile-workspace.md)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
 
 # Office integration
