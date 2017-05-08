@@ -42,7 +42,8 @@ Dynamics 365 for Operations includes a Help system that is based on two main com
 -   A documentation site
 -   Task guides
 
-You can access both articles and task guides from the Help pane in Dynamics 365 for Operations as shown in the following screen shot. [![Help pane](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) 
+You can access both articles and task guides from the Help pane in Dynamics 365 for Operations as shown in the following screen shot. 
+[![Help pane](./media/help-pane-ops-task-guides-1024x741.png)]
 This article describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 ## Help on docs.microsoft.com
@@ -55,9 +56,17 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynami
 
 We've migrated all of the content from our previous help wiki to docs. We’re very excited about our new site and hope that you will be too.
 
-### When can we use it?
+### How can I contribute? 
 
-You can read content on docs right now -- it is fully public and searchable without requiring sign-in. You can use any of your favorite search engines to find content. You can comment on articles on the site if you choose, by signing in.
+Leave us a comment! Click **Comments** to get to the comments at the bottom of the page.
+[!Comments](./media/comments.png)]
+
+Start typing your comments, and then click **Post comment**.
+[!Post comment](./media/before-signin.png)]
+
+Click an icon on the left to sign in with any of the following types of accounts, or, on the right, enter an email address, and a new password to create a new account for this site: 
+
+[!Sign in options](./media/signin-options.png)]
 
 
 ## Task guides
