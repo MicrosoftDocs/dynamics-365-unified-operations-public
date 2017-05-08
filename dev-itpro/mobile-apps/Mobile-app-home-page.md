@@ -123,7 +123,7 @@ The following table includes links to resources that can help you implement the 
 <td>5</td>
 <td>ISV</td>
 <td>Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</td>
-<td><a href="../deployment/create-apply-deployable-package">Generate a deployable package</a></td>
+<td><a href="../deployment/create-apply-deployable-package">Create a deployable package</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
