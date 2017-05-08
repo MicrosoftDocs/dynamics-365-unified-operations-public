@@ -42,8 +42,10 @@ Dynamics 365 for Operations includes a Help system that is based on two main com
 -   A documentation site
 -   Task guides
 
-You can access both articles and task guides from the Help pane in Dynamics 365 for Operations as shown in the following screen shot. 
+You can access both articles and task guides from the Help pane in Dynamics 365 for Operations as shown in the following screen shot.
+
 [![Help pane](./media/help-pane-ops-task-guides-1024x741.png)]
+
 This article describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 ## Help on docs.microsoft.com
@@ -59,18 +61,26 @@ We've migrated all of the content from our previous help wiki to docs. We’re v
 ### How can I contribute? 
 
 Leave us a comment! Click **Comments** to get to the comments at the bottom of the page.
-[!Comments](./media/comments.png)]
+[![Comments](./media/comments.png)]
 
 Start typing your comments, and then click **Post comment**.
-[!Post comment](./media/before-signin.png)]
+[![Post comment](./media/before-signin.png)]
 
 Click an icon on the left to sign in with any of the following types of accounts, or, on the right, enter an email address, and a new password to create a new account for this site: 
 
-[!Sign in options](./media/signin-options.png)]
+[![Sign in options](./media/signin-options.png)]
 
 
 ## Task guides
-A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. [![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) To begin the guided, interactive experience, click **Start task guide** at the bottom of the Help pane. A black pointer opens and indicates the action that you have to perform. Follow the directions that appear in the UI, and enter data as directed. [![Task guide step instruction](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **Important:** The data that you enter when you play a Task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
+A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. 
+
+[![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) 
+
+To begin the guided, interactive experience, click **Start task guide** at the bottom of the Help pane. A black pointer opens and indicates the action that you have to perform. Follow the directions that appear in the UI, and enter data as directed. 
+[![Task guide step instruction](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) 
+
+> [!IMPORTANT] 
+> The data that you enter when you play a Task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
 
 ### It all begins with Task Recorder
 
@@ -86,7 +96,9 @@ For more information about Task Recorder, see [Task recorder in Dynamics 365 for
 You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../user-interface/task-recorder.md).
 
 ## In-product Help
-To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. [![Help pane](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
+
+[![Help pane](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
 
 ### Accessing articles from the Help pane
 
@@ -106,7 +118,8 @@ Before you can access Task guides from the Help pane, a System administrator has
 3.  Select the BPM libraries (within the selected project) to retrieve task recordings from.
 4.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the Help pane.
 
-After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Dynamics 365 for Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. [![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
+After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Dynamics 365 for Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. 
+[![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
 
 ### Where are the translated Task guides?
 
