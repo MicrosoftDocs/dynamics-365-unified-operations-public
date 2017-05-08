@@ -42,8 +42,8 @@ feature supports the following scenarios:
 -   Export configurations, where you can create configurations of
     entities and use the data management framework to export it
 
--   Import configurations with rules, where you can upload a
-    configuration package, add rules, and use the data management
+-   Import configurations, where you can upload a
+    configuration package and use the data management
     framework to import it
 
 Configurations are created using the data import and export projects
@@ -226,8 +226,8 @@ The following entities require special handling when used in configurations:
 | Tax                            | Sales tax parameters                   | The default value for the marginal base calculations method is "Total" for sales tax parameters. The Ledger Parameters entity does not set that value. However, some tax codes use a marginal base of "Line", which will fail validation. A new entity called Sales tax parameters preset entity was created to allow you to import the marginal base calculation method first so you can then import tax codes | 
 | Accounts receivable            | Customers                              | The Customers entity was designed for use with Odata scenarios. For configurations, use the Customer definitions entity and the Customer details entity. The Customer definitions entities allows you to import the basic information about a customer so entities that require a customer will have that information. The Customer details entity contains addition information about a customer that you can add after parameters and reference data has been set up |
 | Inventory management           | Warehouse locations                    | Some warehouses locations require a Location profile ID.   Location profile ids require a Location format. This information must be imported before the warehouse location  | 
-| Product information management | Products                               | The EcoResProduct and EcoResReleasedProduct entities should be used for configurations. The EcoResProductMaster, EcoResDistinctProduct, EcoResReleasedProductMaster, EcoResReleasedDistinctProduct entities should be used for Odata scenarios |
-|                                | Product document attachments           | For Product documents (EcoResProductDocumentAttachmentEntity) and released product documents (EcoResReleasedProductDocumentAttachmentEntity, you must never skip staging because additional steps are performed in the staging environment. You must use a data package for export and for import  because the export file needs to be accompanied by a resources folder with the attechments. The entities support images, documents, notes, and links. When you export, you will see an image file with a name that looks like a GUID. It is a valid data package needed to complete the import |
+| Product information management | Products                               | The Products and Released Products entities should be used for configurations. The Product master and Released product master entities should be used for Odata scenarios |
+|                                | Product document attachments           | For Product document attachments and Released product document attachments, you must never skip staging because additional steps are performed in the staging environment. You must use a data package for export and for import  because the export file needs to be accompanied by a resources folder with the attechments. The entities support images, documents, notes, and links. When you export, you will see an image file with a name that looks like a GUID. It is a valid data package needed to complete the import |
 | Procurement                    | Vendor catalog                         | Please refer to the discussion for importing vendor catalogs in the Supply Chain Management blog https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/  |
 
 
@@ -257,25 +257,25 @@ The following entities may need filters:
 
 | Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
-| System setup                   | Legal entities                         | Apply a filter to Company if you only want one legal entity |
+| System setup                   | Legal entities                         | Apply a filter to Company  |
 |                                | Number sequence code                   | The number sequence codes can be shared or specific to a legal entity. If you want all number sequences, you must have the legal entities setup for the number sequences that are stored for a specific legal entity. If you only want the shared sequences, apply a filter to remove the number sequences that are specific to a legal entity |
 |                                | Number sequence references             | The number sequence references follow the same pattern as number sequence codes |
-| Global address book            | Multiple entities                      | If your source environment contains multiple legal entities, the global address book will contain data for each legal entity. All of those legal entities will be created when you import the data unless you remove the data for the legal entities that you do not want to load |
-| General ledger                 | Ledger                                 | Apply a filter to Company if you only want one legal entity |  
-|                                | Ledger fiscal Calendar year            | Apply a filter to Ledger name if you only want one legal entity |
-|                                | Ledger fiscal calendar period          | Apply a filter to Ledger name if you only want one legal entity |
-|                                | Main account legal entity overrides    | Apply a filter to Company if you only want one legal entity |
-|                                | Financial dimension value legal entity | Apply a filter to Legal entity if you only want one legal entity |
-| Accounts receivable            | Customer write-off reason code         | Apply a filter to Company if you only want one legal entity |
-| Budget                         | Budget cost elements                   | Apply a filter to Legal entity if you only want one legal entity | 
-|                                | Budget plan process                    | Apply a filter to Ledger if you only want one legal entity | 
-|                                | Budget plan allocation schedule        | Apply a filter to Ledger if you only want one legal entity | 
+| Global address book            | Multiple entities                      | The global address book will contain data for each legal entity. All of those legal entities will be created when you import the data unless you remove the data for the legal entities that you do not want to load |
+| General ledger                 | Ledger                                 | Apply a filter to Company  |  
+|                                | Ledger fiscal Calendar year            | Apply a filter to Ledger name  |
+|                                | Ledger fiscal calendar period          | Apply a filter to Ledger name  |
+|                                | Main account legal entity overrides    | Apply a filter to Company |
+|                                | Financial dimension value legal entity | Apply a filter to Legal entity |
+| Accounts receivable            | Customer write-off reason code         | Apply a filter to Company  |
+| Budget                         | Budget cost elements                   | Apply a filter to Legal entity | 
+|                                | Budget plan process                    | Apply a filter to Ledger | 
+|                                | Budget plan allocation schedule        | Apply a filter to Ledger  | 
 |                                | Budget plan stage Rule                 | If you applied a filter to Budget plan process, you may see errors when importing stage rules. The entity currently does not have a Ledger name in it that can be filtered so it will contain all companies | 
 |                                | Budget plan priority constraint        | You will see the same issue described for stage rules | 
 |                                | Budget plan process administration     | You will see the same issue described for stage rules | 
-| Inventory management           | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity |
-|                                | Site current postal address            | Apply a filter to Company if you only want one legal entity | 
-|                                | Warehouse current postal address       | Apply a filter to Company if you only want one legal entity. | 
+| Inventory management           | Warehouse current postal address       | Apply a filter to Company |
+|                                | Site current postal address            | Apply a filter to Company | 
+|                                | Warehouse current postal address       | Apply a filter to Company  | 
                          
                                  
 Import a configuration
@@ -420,7 +420,9 @@ We have created larger templates that cover multiple module areas. You can use t
 ### Master data in the templates
 --------------------------------
 
-Many of the templates include entities for master data such as customers, vendors, and released products. These are included to indicate the proper sequence of entities that you will need once you have loaded parameters and reference data. Master entities are most often sequenced in the module bands number from 100 and up (see sequencing philosophy) and they will shown in the grid under entity category as master. If you do not want to include master data in your configuration, remove those entities from your project.
+Many of the templates include entities for master data such as customers, vendors, and released products. These are included to indicate the proper sequence of entities that you will need once you have loaded parameters and reference data. Master entities are most often sequenced in the module bands number from 100 and up (see sequencing philosophy) and they will shown in the grid under entity category as master. 
+
+If you do not want to include master data in your configuration, remove those entities from your project.
 
 ### Templates with the same entity
 ----------------------------------
@@ -470,9 +472,11 @@ configuration. Until we reach that goal, we have created sequences for the
 entities in each of the templates that represent the dependency order between entities.
 
 The following list shows how the templates were set up to handle the
-dependencies. Please note that the entities do *not* require these
-sequences number. However, you may inadvertently change the order that entities are 
-processed an error can occur unless you update the sequence of dependent entities.
+dependencies. Please note that the entities do *not* require the
+sequences numbers that have been assigned. You can sequence them differently if you want. 
+However, you may inadvertently change the order in which entities are 
+processed. If an entity requires data that has not been imported by another entity, you may see errors due to a 
+missing dependent data.
  
 
 |  **Module**               |**Unit**   |**Level**   |**Sequence**|
@@ -521,7 +525,7 @@ We reserved levels 10-22 for the shared system entities so that they are
 processed first. Almost all systems also use the company specific
 general ledger entities so we reserved level 25 for those entities.
 These levels represent the minimum basic setup required for most
-configurations.
+shared data in a configuration.
 
 Once the basic setup is complete, there are many entities that can
 be loaded in parallel across all the modules. Instead of forcing them to
@@ -563,7 +567,7 @@ If you load a data package that has the obsolete entity in it, you will be warne
 
 There are entities that represent tables that have references to themselves. For example, when you create a cash discount, you can refer to related cash discount that creates a tiered discount calculation. To import data, it is necessary to sequence the data so that the cash discount referred to in the Next cash discount field is imported first, followed by the cash discount that uses it. 
 
-We have added a class called DMFImportExportSequencer that you can add to an entity that will sequence your data in self referencing entities and enable the data to load in a single pass. You can view the code required to update your entities in the Cash Discount entity (CashDiscountEntity).
+We have added a class called DMFImportExportSequencer that will sequence the data in self referencing entities and enable the data to load in a single pass. You can view the code required to update entities in the Cash Discount entity (CashDiscountEntity).
 
 We have added the class to a number of self referencing entities and we will add it to more entities as needed. Further examples of this type of entity includes:
 -   Customers
