@@ -35,7 +35,7 @@ ms.dyn365.version:
 
 This topic describes what is included in the **Practice manager** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
-**Overview**
+## Overview
 
 The **Practice manager** Power BI content was created for practice managers and project managers. It provides key metrics that are related to the projects that the organization is working on. The dashboard gives an overview of the projects and related customers. A report-level filter can be used to report for specific legal entities. This Power BI content pulls data from the project accounting aggregate measurements for Microsoft Dynamics 365 for Operations.
 
@@ -43,13 +43,13 @@ The **Practice manager** Power BI content contains five report pages: one overvi
 
 All the amounts in the content are shown in the system currency. You can set the system currency on the **System parameters** page.
 
-**Accessing the Power BI content**
+## Accessing the Power BI content
 
 You can find the **Practice manager** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
 To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
-**Reports that are included in the Power BI content**
+## Reports that are included in the Power BI content
 
 The following table provides details about the metrics that are found on each report page in the **Practice manager** Power BI content.
 
@@ -64,7 +64,7 @@ The following table provides details about the metrics that are found on each re
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin 
 in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the Export underlying data functionality to export the underlying data that is summarized in a visualization.
 
-**Understanding the data model and entities**
+## Understanding the data model and entities
 
 Dynamics 365 for Operations data is used to fill the report pages in the **Practice manager** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
