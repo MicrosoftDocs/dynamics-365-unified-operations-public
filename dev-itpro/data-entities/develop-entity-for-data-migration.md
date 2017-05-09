@@ -124,11 +124,15 @@ In this exercise, you will use the **Project Category** entity that you just bu
 1.  After you've finished building the **Project Category** entity, start the client.
 2.  Change the company to **USSI**.
 3.  In the **Data management** workspace, click **Export** to begin data extraction.
-4.  Enter the export details, such as entity name and target data format. 
+4.  Enter the export details, such as entity name and target data format.
+
 [![Entering export details](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png) 
+
 Use the following file as the sample file format for XML: 
 [ProjectCategoryExport\_Sample](https://go.microsoft.com/fwlink/?linkid=845209). 
+
 Open this file in a text editor, and save it as an XML file. If the sample file mapping isn't valid, there is an incorrect field name in the entity. Fix either the entity or the sample file to continue.
+
 5.  Click **Filter**, and then specify **Project** as the filter criterion, so that only limited data is exported. 
 [![Filtering by project](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
 
@@ -187,6 +191,7 @@ In this exercise, you will use a new set of files to import data through the exi
 7.  Select the records that you fixed, and then click **Validate**. Refresh the page to verify that the status of the records is **Validated**.
 8.  Click **Copy data to target**.
 9.  In the **Select a job ID to run** dialog box, in the **Run for** field, select **Criteria**, and set **Row selected by user** to **Yes**. Then click **OK**. 
+
 [![Selecting a job to run](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
 
 10. On the **Target data execution** page, click **Run**.
