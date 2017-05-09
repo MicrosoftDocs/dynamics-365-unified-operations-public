@@ -58,6 +58,12 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations platform</td>
+<td>Platform update 7</td>
+<td> TBD</td>
+<td>May 2017</td>
+<td><a href="whats-new-platform-update-7.md">What’s new or changed in Dynamics 365 for Operations platform update 7 (May 2017)</a></td>
+</tr><tr class="odd">
+<td>Microsoft Dynamics 365 for Operations platform</td>
 <td>Platform update 6</td>
 <td> 7.0.4509.16180</td>
 <td>April 2017</td>
