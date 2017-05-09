@@ -46,7 +46,7 @@ Monthly updates are backward compatible and non-breaking. An explicit opt-in opt
 ## How can I update my environment to the latest monthly update?
 To install the latest monthly platform update on an existing environment, go to [Lifecycle Services (LCS)](https://lcs.dynamics.com/). In the Shared asset library, select the **Software deployable package** tab. You will find the latest platform update package that you can deploy. For example, the deployable package for platform update 5 is shown below. This package can be imported to the project's asset library and then can be applied to a specific environment through the update flows. For more details, see [Upgrade Dynamics 365 for Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md).
 
-[![Deployable package in LCS](./media/deployable-package-in-lcs.png)
+![Deployable package in LCS](./media/deployable-package-in-lcs.png)
 
 New environments that are deployed will include the latest platform update.
 
@@ -78,7 +78,7 @@ If you are already on platform update 4 or later, applying an application **bina
 The recommendation is that you sign off with testing the platform update that's no more than a month before go live. The expectation is that you will test all scenarios and sign off using the T - 1 month platform update. This ensures that you are on the latest platform update with all available fixes.
 
 ## What is a planned maintenance update?
-A planned maintenance update is explained in [Planned maintenance window FAQ](../lifecycle-services/planned-maintenance-window-faq.md)
+A planned maintenance update is explained in [Planned maintenance window FAQ](../lifecycle-services/planned-maintenance-window-faq.md).
 
 
 
