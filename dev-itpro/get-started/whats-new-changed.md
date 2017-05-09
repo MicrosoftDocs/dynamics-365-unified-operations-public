@@ -38,6 +38,9 @@ ms.dyn365.ops.version: Platform update 2
 This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Operations.
 
 To upgrade to the latest version, see [Process for upgrading to the latest Dynamics 365 for Operations update](../migration-upgrade/upgrade-latest-update.md).
+
+To learn more about the mobile workspaces and Power BI content recently released, see [Mobile workspaces recently released for the Dynamics 365 for Operations mobile app](../mobile-apps/mobile-workspaces-released.md) and [Power BI content recently released for Dynamics 365 for Operations](../analytics/power-bi-content-released.md)
+
 <table>
 <colgroup>
 <col width="20%" />
