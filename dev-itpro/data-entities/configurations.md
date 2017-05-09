@@ -480,47 +480,38 @@ processed. If an entity requires data that has not been imported by another enti
 missing dependent data.
  
 
-|  **Module**               |**Unit**   |**Level**   |**Sequence**|
-|-------------------------	|--:	|----:	|---:	|
-| System setup            	| 1 	|  10 	| 10 	|
-| Global address book     	| 1 	|  15 	| 10 	|
-| General ledger shared   	| 1 	|  20 	| 10 	|
-| Workflow                	| 1 	|  22 	| 10 	|
-| General ledger          	| 1 	|  25 	| 10 	|
-| Band 1 for dependencies 	| 1 	|  30 	| 10 	|
-| Band 2 for dependencies 	| 1 	|  40 	| 10 	|
-| Band 3 for dependencies 	| 1 	|  50 	| 10 	|
-| Band 4 for dependencies 	| 1 	|  60 	| 10 	|
-| Band 5 for dependencies 	| 1 	|  70 	| 10 	|
-| Band 6 for dependencies 	| 1 	|  80 	| 10 	|
-| Band 7 for dependencies 	| 1 	|  90 	| 10 	|
-| Bank                    	| 1 	| 100 	| 10 	|
-| Accounts payable        	| 1 	| 120 	| 10 	|
-| Tax                     	| 1 	| 130 	| 10 	|
-| Accounts receivable     	| 1 	| 140 	| 10 	|
-| Fixed assets            	| 1 	| 150 	| 10 	|
-| Budgeting               	| 1 	| 160 	| 10 	|
-| Inventory management    	| 1 	| 300 	| 10 	|
-| Product management      	| 1 	| 310 	| 10 	|
-| Procurement             	| 1 	| 320 	| 10 	|
-| Sales and Marketing     	| 1 	| 330 	| 10 	|
-| Warehouse management    	| 1 	| 400 	| 10 	|
-| Production control      	| 1 	| 410 	| 10 	|
-| Costing                 	| 1 	| 420 	| 10 	|
-| Retail                  	| 1 	| 500 	| 10 	|
-| Expense management      	| 1 	| 600 	| 10 	|
-| Project accounting      	| 1 	| 650 	| 10 	|
-| Human resources         	| 1 	| 700 	| 10 	|
-| Payroll                 	| 1 	| 800 	| 10 	|
-| Sales and Marketing     	| 1 	| 330 	| 10 	|
-| Warehouse management    	| 1 	| 400 	| 10 	|
-| Production control      	| 1 	| 410 	| 10 	|
-| Costing                 	| 1 	| 420 	| 10 	|
-| Retail                  	| 1 	| 500 	| 10 	|
-| Expense management      	| 1 	| 600 	| 10 	|
-| Project accounting      	| 1 	| 650 	| 10 	|
-| Human resources         	| 1 	| 700 	| 10 	|
-| Payroll                 	| 1 	| 800 	| 10 	|
+|  **Module**               |**Unit**   |**Level**   |
+|-------------------------	|--:	|----:	|
+| System setup            	| 1 	|  10 	| 
+| Global address book     	| 1 	|  15 	|
+| General ledger shared   	| 1 	|  20 	|
+| Workflow                	| 1 	|  22 	| 
+| General ledger          	| 1 	|  25 	| 
+| Band 1 for dependencies 	| 1 	|  30 	| 
+| Band 2 for dependencies 	| 1 	|  40 	| 
+| Band 3 for dependencies 	| 1 	|  50 	| 
+| Band 4 for dependencies 	| 1 	|  60 	| 
+| Band 5 for dependencies 	| 1 	|  70 	|
+| Band 6 for dependencies 	| 1 	|  80 	| 
+| Band 7 for dependencies 	| 1 	|  90 	| 
+| Bank                    	| 1 	| 100 	|
+| Accounts payable        	| 1 	| 120 	|
+| Tax                     	| 1 	| 130 	|
+| Accounts receivable     	| 1 	| 140 	|
+| Fixed assets            	| 1 	| 150 	|
+| Budgeting               	| 1 	| 160 	|
+| Inventory management    	| 1 	| 300 	|
+| Product management      	| 1 	| 310 	|
+| Procurement             	| 1 	| 320 	| 
+| Sales and Marketing     	| 1 	| 330 	|
+| Warehouse management    	| 1 	| 400 	|
+| Production control      	| 1 	| 410 	|
+| Costing                 	| 1 	| 420 	|
+| Retail                  	| 1 	| 500 	| 
+| Expense management      	| 1 	| 600 	|
+| Project accounting      	| 1 	| 650 	|
+| Human resources         	| 1 	| 700 	|
+| Payroll                 	| 1 	| 800 	|
 
 We reserved levels 10-22 for the shared system entities so that they are
 processed first. Almost all systems also use the company specific
