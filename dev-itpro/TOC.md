@@ -31,6 +31,7 @@
 # Mobile apps
 ## [Mobile app home page](mobile-apps/Mobile-app-home-page.md)
 ## [Mobile workspaces recently released](mobile-apps/mobile-workspaces-released.md)
+## [Publish a mobile workspace](mobile-apps/publish-mobile-workspace.md)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
 
 # Office integration
@@ -64,6 +65,7 @@
 ## [Log a premier support ticket](lifecycle-services/premier-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
 ## [Set up technical support for Dynamics 365 for Operations](lifecycle-services/support-experience.md) 
+## [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
 
 # [Financials](/dynamics365/operations/financials/index)
 

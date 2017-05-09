@@ -35,7 +35,8 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "searchScope": ["Operations"],
-       "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json"
+      "breadcrumb_path": "/dynamics365/operations/breadcrumb/toc.json",
+      "brand": "dyn-ops"
     },
     "fileMetadata": {},
     "template": [],

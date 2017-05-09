@@ -34,7 +34,6 @@ ms.search.validFrom: 2016-11-30
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 This topics lists the mobile workspaces that have recently been released for the Microsoft Dynamics 365 for Operations mobile app.

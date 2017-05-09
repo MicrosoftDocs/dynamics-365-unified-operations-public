@@ -57,6 +57,7 @@ You're developing a new solution for a Project module. As part of your implement
 
 In this exercise, you will build an entity, **Project Category**, that uses the ProjCategory table as its primary data source. This entity has the following properties.
 
+
 | Property               | Value                 |
 |------------------------|-----------------------|
 | Entity AOT name        | ProjectCategoryEntity |
@@ -68,6 +69,7 @@ In this exercise, you will build an entity, **Project Category**, that uses the 
 | Enable data management | Yes                   |
 
 The entity also has the following fields.
+
 
 | Fields                   |
 |--------------------------|
@@ -88,6 +90,7 @@ The entity also has the following fields.
 1.  In Visual Studio, create a new Dynamics 365 for Operations project.
 2.  In Solution Explorer, select the project, and then right-click **Properties**.
 3.  Specify the following project properties, and then click **OK**.
+
     | Property                      | Value             |
     |-------------------------------|-------------------|
     | Model                         | Application Suite |
@@ -97,14 +100,19 @@ The entity also has the following fields.
 4.  From the project, right-click **Add** &gt; **New item**.
 5.  Select **Data Model** &gt; **Data Entity** as your new item.
 6.  Enter a name, and then click **Add** to start the **Data** **Entity** wizard.
-7.  On the first page of the wizard, specify the set of properties for the entity by using the table earlier in this exercise. Then click **Next**. [![Specify properties page](./media/specifyproperties_devoentity.png)](./media/specifyproperties_devoentity.png)
+7.  On the first page of the wizard, specify the set of properties for the entity by using the table earlier in this exercise. Then click **Next**. 
+
+[![Specify properties page](./media/specifyproperties_devoentity.png)](./media/specifyproperties_devoentity.png)
+
 8.  On the next page, add fields from the primary data source. Make sure that each field name reflects the public contract (see the table earlier in this exercise). To use the field's label as the field name, select the **Convert label to field names** option. Clear the option for any fields that are not required for the entity.
 9.  Click **Finish** to complete the wizard, and to add the entity and its artifacts to the project.
 10. Build your project, so that you can start to use the entity.
 
 #### Expected outcome
 
--   In Visual Studio, the following artifacts will appear in the project after you've completed the **Data Entity** wizard. [![New project artifacts](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
+-   In Visual Studio, the following artifacts will appear in the project after you've completed the **Data Entity** wizard. 
+[![New project artifacts](./media/testappsuite_devoentity.png)](./media/testappsuite_devoentity.png)
+
 -   Right-click the data entity, and then select **Open table browser**. **Note:** Make sure that your company is set to **USSI**.
 
 ### Exercise 2: Export a limited set of data by using a sample file mapping and filters
@@ -116,14 +124,26 @@ In this exercise, you will use the **Project Category** entity that you just bu
 1.  After you've finished building the **Project Category** entity, start the client.
 2.  Change the company to **USSI**.
 3.  In the **Data management** workspace, click **Export** to begin data extraction.
-4.  Enter the export details, such as entity name and target data format. [![Entering export details](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png) Use the following file as the sample file format for XML: [ProjectCategoryExport\_Sample](https://go.microsoft.com/fwlink/?linkid=845209). Open this file in a text editor, and save it as an XML file. If the sample file mapping isn't valid, there is an incorrect field name in the entity. Fix either the entity or the sample file to continue.
-5.  Click **Filter**, and then specify **Project** as the filter criterion, so that only limited data is exported. [![Filtering by project](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
+4.  Enter the export details, such as entity name and target data format.
+
+[![Entering export details](./media/exportprojectcategory_devoentity.png)](./media/exportprojectcategory_devoentity.png) 
+
+Use the following file as the sample file format for XML: 
+[ProjectCategoryExport\_Sample](https://go.microsoft.com/fwlink/?linkid=845209). 
+
+Open this file in a text editor, and save it as an XML file. If the sample file mapping isn't valid, there is an incorrect field name in the entity. Fix either the entity or the sample file to continue.
+
+5.  Click **Filter**, and then specify **Project** as the filter criterion, so that only limited data is exported. 
+[![Filtering by project](./media/inquiry_devoentity.png)](./media/inquiry_devoentity.png)
+
 6.  In the **Export** dialog box, click **OK**.
 
 #### Expected outcome
 
 -   Fifteen records are successfully exported.
--   The output is similar to the following file: [ProjectCategoryExport\_Output](https://go.microsoft.com/fwlink/?linkid=845210). (Open the file in a text editor to verify this outcome.)
+-   The output is similar to the following file: 
+[ProjectCategoryExport\_Output](https://go.microsoft.com/fwlink/?linkid=845210). 
+(Open the file in a text editor to verify this outcome.)
 
 ## Migrating data in multiple files by using the Data Import/Export Framework
 ### Business problem
@@ -170,7 +190,10 @@ In this exercise, you will use a new set of files to import data through the exi
 6.  Click **Edit** to fix records that have errors. (The **Customer Group** value for records DM10221 and DM1022 isn't valid.)
 7.  Select the records that you fixed, and then click **Validate**. Refresh the page to verify that the status of the records is **Validated**.
 8.  Click **Copy data to target**.
-9.  In the **Select a job ID to run** dialog box, in the **Run for** field, select **Criteria**, and set **Row selected by user** to **Yes**. Then click **OK**. [![Selecting a job to run](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
+9.  In the **Select a job ID to run** dialog box, in the **Run for** field, select **Criteria**, and set **Row selected by user** to **Yes**. Then click **OK**. 
+
+[![Selecting a job to run](./media/selectjob_devoentity.png)](./media/selectjob_devoentity.png)
+
 10. On the **Target data execution** page, click **Run**.
 11. When the run is completed, refresh the page to see the latest staging status.
 
