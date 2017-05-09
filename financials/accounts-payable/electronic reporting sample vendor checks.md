@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic reporting sample vendor checks
-description: This article provides general information using the electronic reporting sample check formats.
+description: This topic provides general information about how to use the Electronic reporting sample check formats.
 author: twheeloc
 manager: AnnBe
 ms.date: 05/09/2017
@@ -33,17 +33,17 @@ ms.dyn365.version:
 
 # Electronic reporting sample check formats
 
-Electronic reporting can be used to format vendor checks. There are many bank specific or check provider specific check formats available in the market. Sample check formats have been included in the Electronic reporting tool repository.
+You can use Electronic reporting to format vendor checks. Many bank-specific and check provider–specific check formats are available in the market. Sample check formats have been included in the Electronic reporting tool repository.
 
-## What check formats are currently supported?
+## What check formats are currently supported?
 
-You should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of GER configuration. The next section, “What do I have to set up?”, provides a link to the topic that explains how to create an LCS repository to review available configurations and import selected configurations.
+You should always go to the Shared asset library on Microsoft Dynamics Lifecycle Services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**. The next section, “What do I have to set up?,” includes a link to a topic that explains how to create an LCS repository so that you can review available configurations and import selected configurations.
 
-Dynamics 365 for Operations includes a sample format where the check is on top, followed by two remittance sections and a sample format where the check is in the middle, in between two remittance sections. These sample formats correspond to Deluxe business checks formats.
+Microsoft Dynamics 365 for Operations includes a sample format where the check is on top, followed by two remittance sections. It also includes a sample format where the check is in the middle, between two remittance sections. These sample formats correspond to Deluxe business checks formats.
 
 ## What do I have to set up?
 
- - Before you can print checks using electronic reporting, at least one active check configuration must be imported into your ER configurations. For instructions, see [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
- - When you configure Cash and Bank management checks for the bank account, select the Generic electronic Export format check box, and select the appropriate check format as an export format configuration.
- - You must also specify the number of slip lines that will print on your remittance. Be sure to include the header rows when you calculate this number.
- - When you generate payments for the configured bank account in the payment journal, the checks will be printed using the specified format.
+- Before you can print checks by using Electronic reporting, at least one active check configuration must be imported into your Electronic reporting configurations. For instructions, see [Download Electronic reporting configurations from Lifecycle Services](/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+- When you configure Cash and bank management checks for the bank account, select the **Generic electronic Export format** check box, and select the appropriate check format as an export format configuration.
+- You must also specify the number of slip lines that will be printed on the remittance. Be sure to include the header rows when you calculate this number.
+- When you generate payments for the configured bank account in the payment journal, the checks will be printed by using the specified format.
