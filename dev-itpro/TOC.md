@@ -65,7 +65,7 @@
 ## [Log a premier support ticket](lifecycle-services/premier-support.md)
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
 ## [Set up technical support for Dynamics 365 for Operations](lifecycle-services/support-experience.md) 
-## [Planned maintenance window FAQ](planned-maintenance-window-faq.md) 
+## [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
 
 # [Financials](/dynamics365/operations/financials/index)
 
