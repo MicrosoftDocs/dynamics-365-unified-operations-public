@@ -87,7 +87,7 @@ The following table includes links to resources that can help you implement the 
 <td>1</td>
 <td>System administrator</td>
 <td>Implement Dynamics 365 for Operations for the organization.</td>
-<td>If you don't already have Dynamics 365 for Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>If you don't already have Dynamics 365 for Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -123,13 +123,13 @@ The following table includes links to resources that can help you implement the 
 <td>5</td>
 <td>ISV</td>
 <td>Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</td>
-<td><a href="../deployment/create-apply-deployable-package">Create a deployable package</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>System administrator</td>
 <td>Apply the deployable package that contains the custom workspaces that are provided by the ISV.</td>
-<td><a href="../deployment/apply-deployable-package-system">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>

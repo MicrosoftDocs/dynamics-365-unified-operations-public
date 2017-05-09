@@ -60,7 +60,7 @@ Before you publish a mobile workspace, make sure that the following prerequisite
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
 <td>System administrator</td>
-<td>If you don't already have Dynamics 365 for Operations deployed in your organization, your system administrator should see <a href="../deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>If you don't already have Dynamics 365 for Operations deployed in your organization, your system administrator should see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>KBs that contain the mobile workspaces that are provided by Microsoft must be implemented.</td>
@@ -78,7 +78,7 @@ Before you publish a mobile workspace, make sure that the following prerequisite
 <tr class="odd">
 <td>Deployable packages that contain custom mobile workspaces must be applied to the Dynamics 365 for Operations system.</td>
 <td>System administrator</td>
-<td>If you want to use custom mobile workspaces that an independent software vendor (ISV) created, you must apply the deployable package to your Dynamics 365 for Operations system. For instructions, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.</td>
+<td>If you want to use custom mobile workspaces that an independent software vendor (ISV) created, you must apply the deployable package to your Dynamics 365 for Operations system. For instructions, see <a href="../deployment/apply-deployable-package-system.md">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.</td>
 </tr>
 </tbody>
 </table>
