@@ -249,22 +249,24 @@ A golden build may not have customer-specific fields set up. These fields should
 
 
 ### Golden builds with multiple legal entities
+The templates are optimized for exporting a golden build with a single legal entity.
 If you are exporting from a golden build that has multiple legal entities in it 
 but you only want to import the data from one of those legal entities, you will need 
 to apply a filter on the legal entity fields. This filter must remove all other entities except the one that you want.
-The following entities may need filters:
+The following entities may need filters when you export the data:
 
 | Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
 | System setup                   | Legal entities                         | Apply a filter to Company  |
 |                                | Number sequence code                   | The number sequence codes can be shared or specific to a legal entity. If you want all number sequences, you must have the legal entities setup for the number sequences that are stored for a specific legal entity. If you only want the shared sequences, apply a filter to remove the number sequences that are specific to a legal entity |
 |                                | Number sequence references             | The number sequence references follow the same pattern as number sequence codes |
+|                                | Organization hierarchies               | There is no legal entity filter. Manually remove any references to the other legal entities that are not being imported  |
 | Global address book            | Multiple entities                      | The global address book will contain data for each legal entity. All of those legal entities will be created when you import the data unless you remove the data for the legal entities that you do not want to load |
 | General ledger                 | Ledger                                 | Apply a filter to Company  |  
 |                                | Ledger fiscal Calendar year            | Apply a filter to Ledger name  |
 |                                | Ledger fiscal calendar period          | Apply a filter to Ledger name  |
 |                                | Main account legal entity overrides    | Apply a filter to Company |
-|                                | Financial dimension value legal entity | Apply a filter to Legal entity |
+|                                | Financial dimension value legal entity | Apply a filter to Legal entity but also include records with empty legal entities (shared values)|
 | Accounts receivable            | Customer write-off reason code         | Apply a filter to Company  |
 | Budget                         | Budget cost elements                   | Apply a filter to Legal entity | 
 |                                | Budget plan process                    | Apply a filter to Ledger | 
@@ -276,7 +278,8 @@ The following entities may need filters:
 |                                | Site current postal address            | Apply a filter to Company | 
 |                                | Warehouse current postal address       | Apply a filter to Company  | 
                          
-                                 
+If you want to change the legal entity ID to another value, change the values in the fields listed above to the new legal entity value. For example, for Legal entities, change Company from the exported value to a new value in the exported file.
+
 Import a configuration
 ----------------------
 
@@ -476,7 +479,7 @@ The following list shows how the templates were set up to handle the
 dependencies. Please note that the entities do *not* require the
 sequences numbers that have been assigned. You can sequence them differently if you want. 
 However, you may inadvertently change the order in which entities are 
-processed. If an entity requires data that has not been imported by another entity, you may see errors due to a 
+processed. If an entity requires data that has not been imported by another entity, you may see errors due to  
 missing dependent data.
  
 
