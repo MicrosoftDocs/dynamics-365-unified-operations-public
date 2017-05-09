@@ -64,3 +64,46 @@ The Analytics page provides key metrics, such as vendor invoices that are past d
 It contains 9 report pages consisting of an overview page and 8 details pages providing details of accounts payable payment metrics.
 
 The following table contains the visualization information.
+
+| Report page                       | Visualization                                                                     |
+|-----------------------------------|-----------------------------------------------------------------------------------|
+| Vendor payments overview          | Invoices past due 
+                                      Invoices due today 
+                                      Discounts taken to discounts lost 
+                                      Invoices due in future by cash discount date 
+                                      Invoices due in future by due date 
+                                      Invoices paid late to invoices paid on time 
+                                      Payment workflow assignment 
+                                      Vendor to customer balance 
+                                      Open invoices with payment hold                                                  |
+| Invoices past due                 | Invoices due today 
+                                      Invoices due today details 
+                                      Invoices due today per company 
+                                      Invoices due today per vendor group                                              |
+| Discounts taken to discounts lost | Discounts taken to discount lost 
+                                      Discounts taken to discount lost details 
+                                      Discounts taken to discount lost per company 
+                                      Discounts taken to discount lost per vendor group                                |
+| Invoices due in future            | Invoices due in future 
+                                      Invoices due in future details 
+                                      Invoices due in future per company 
+                                      Invoices due in future per vendor group 
+                                      Invoices due in future by cash discount date 
+                                      Invoices due in future by due date                                               |
+| Invoices paid late                | Invoices paid after due date 
+                                      Invoices paid after due date details 
+                                      Invoices paid after due date per company 
+                                      Invoices paid after due date per vendor group 
+                                      Invoices paid late versus invoices paid on time                                  |
+| Payment workflow                  | Vendor payment workflow instances 
+                                      Vendor payment workflow instances per approver 
+                                      Vendor payment workflow instances per company 
+                                      Average days in workflow by approver                                             |
+| Vendor to customer balance        | Vendor to customer balance 
+                                      Vendor to customer balance per company 
+                                      Vendor to customer balance details                                               |
+| Invoices with payment hold        | Invoices with payment hold 
+                                      Invoices with payment hold details 
+                                      Invoices with payment hold per company 
+                                      Invoices with payment hold per vendor group                                      |
+
