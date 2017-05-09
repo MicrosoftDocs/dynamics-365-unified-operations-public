@@ -5,7 +5,7 @@ title: Dynamics 365 for Operations versions and update policy
 description: This topic lists the most recent versions of Microsoft Dynamics 365 for Operations. The Dynamics 365 for Operations update policy is outlined, as well.
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -43,6 +43,7 @@ Recent versions of Dynamics 365 for Operations
 |                                                |                   |                  |                  |                          |                                                                                                                                                                                      |
 |------------------------------------------------|-------------------|------------------|------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Release**                                    | **Version**       | **Build number** | **Availability** |  **Support end date**  | **To learn more**                                                                                                                                                                        |
+| Microsoft Dynamics 365 for Operations platform | Platform update 7 |  TBD  | May 2017    | May 31, 2018 |  [What’s new or changed in Dynamics 365 for Operations platform update 7 (May 2017)](../get-started/whats-new-platform-update-7.md)  |
 | Microsoft Dynamics 365 for Operations platform | Platform update 6 |  7.0.4509.16180  | April 2017    | April 30, 2018 |  [What’s new or changed in Dynamics 365 for Operations platform update 6 (April 2017)](../get-started/whats-new-platform-update-6.md)  |
 | Microsoft Dynamics 365 for Operations platform | Platform update 5 |  7.0.4475.16165  | March 2017    | March 31, 2018 |  [What’s new or changed in Dynamics 365 for Operations platform update 5 (March 2017)](../get-started/whats-new-platform-update-5.md)  |
 | Microsoft Dynamics 365 for Operations platform | Platform update 4 |  7.0.4425.16161  | February 2017    |February 28, 2018 | [What’s new or changed in Dynamics 365 for Operations platform update 4 (February 2017)](../get-started/whats-new-platform-update-4.md)  |
@@ -60,6 +61,7 @@ The following table provides information about the multiple releases of Microsof
 |                       |                                |                                             |                                                  |
 |-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------------|
 |                       | **Microsoft Dynamics AX 7.0** | **Microsoft Dynamics AX application 7.0.1** | **Microsoft Dynamics 365 for Operations (1611)** |
+| **Platform update 7** | Compatible                      | Compatible                                   | Compatible                                        |
 | **Platform update 6** | Compatible                      | Compatible                                   | Compatible                                        |
 | **Platform update 5** | Compatible                      | Compatible                                   | Compatible                                        |
 | **Platform update 4** | Compatible                      | Compatible                                   | Compatible                                        |
