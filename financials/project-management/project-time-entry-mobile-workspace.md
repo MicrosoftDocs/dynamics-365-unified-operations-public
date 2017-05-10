@@ -5,7 +5,7 @@ title: Project time entry mobile workspace for the Dynamics 365 for Operations a
 description: This topic provides information about the Project time entry mobile workspace. This workspace lets users enter and save time against a project by using their mobile device.
 author: annbe
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -34,7 +34,6 @@ ms.search.validFrom: 2016-11-30
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 This topic provides information about the Project time entry mobile workspace for the Dynamics 365 for Operations mobile app. This workspace lets users enter and save time against a project by using their mobile device.
