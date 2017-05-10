@@ -70,6 +70,7 @@ Dynamics 365 for Operations data is used to fill the report pages in the **Pract
 
 The following key aggregate measurements are used as the basis of the content.
 
+[!div class="mx-tdBreakAll"]
 | Entity   | Key aggregate measurements   | Data source for Dynamics 365 for Operations | Field  | Description     |
 |--------------|----------------------------------|-------------------------------------------------|------------|---------------------|
 | ProjectAccountingCube_ActualHourUtilization | ActualBillableUtilizedHours, ActualBillableBurdenHours | ProjEmplTrans | Sum(ActualUtilizationBillableRate), Sum(ActualBurdenBillableRate) | Total of actual billable utilized hours, Total of actual burden rate |
