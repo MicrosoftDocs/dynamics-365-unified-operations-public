@@ -58,6 +58,9 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynami
 
 We've migrated all of the content from our previous help wiki to docs. We’re very excited about our new site and hope that you will be too.
 
+### Searching on docs.microsoft.com
+We get a lot of questions about how to search for our content. 
+
 ### How can I contribute? 
 
 Leave us a comment! 
