@@ -5,7 +5,7 @@ title: Nomenclature of product variant numbers and names
 description: This topic describes how you can set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format. The new nomenclature has a targeted format that includes the product master number, active product dimensions, and text delimiters of your choice. You can also create a nomenclature for product names. Finally, you can build a nomenclature to identify configurations that are created by the constraint-based product configurator. These nomenclatures can contain attributes of your choice.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 2016-10-31 12 - 44 - 47
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
