@@ -33,6 +33,7 @@
 ## [Mobile workspaces recently released](mobile-apps/mobile-workspaces-released.md)
 ## [Publish a mobile workspace](mobile-apps/publish-mobile-workspace.md)
 ## [Mobile platform](mobile-apps/mobile-platform.md)
+## [Mobile workspace X++ APIs](mobile-apps/mobile-workspace-xpp-apis.md)
 
 # Office integration
 ## [Office integration](office-integration/office-integration.md)
