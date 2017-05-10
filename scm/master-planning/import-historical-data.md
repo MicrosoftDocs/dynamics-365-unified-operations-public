@@ -19,8 +19,8 @@ audience: Application User
 # ms.reviewer: yuyus
 # ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc]
-ms.assetid: [Go get from guidgenerator.com]
+# ms.custom: 220104
+ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 # ms.search.industry: Manufacturing
 ms.author: roxanad
