@@ -2,9 +2,7 @@
 # required metadata
 
 title: Vendor payments workspace
-description: The Vendor payments workspace shows you information related to processing vendor payments. There are two views on this 
-workspace, including My work and Analytics. My work shows summary tiles, vendor transaction lists and related vendor information. 
-The Analytics view utilizes Power BI capabilities to display visuals related to vendor payments.
+description: This topic provides information about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
 author: twheeloc
 manager: AnnBe
 ms.date: 05/09/2017
@@ -34,45 +32,42 @@ ms.dyn365.version:
 
 [!include[banner](../includes/banner.md)]
 
-# My Work
+The **Vendor payments** workspace shows information that is related to the processing of vendor payments. This workspace includes a **My work** view and an **Analytics** page. The **My work** view shows summary tiles, vendor transaction grids, and related vendor information. The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to vendor payments.
 
-## Summary tiles
+## My work view
 
-The **Summary** tiles give an overview of the state of your payment information. You can see payment journals that are not yet posted, 
-invoices that are past due, all vendors, and vendors that are on hold. From the summary section, you can create a new pay run. 
-This information is for the company that you are logged into.
+### Summary tiles
 
-## Vendor transactions tabular lists
+The tiles in the **Summary** section give an overview of the state of your payment information. You can see payment journals that aren't yet posted, invoices that are past due, all vendors, and vendors that are on hold. From the **Summary** section, you can create a new pay run.
 
-In the **Vendor transaction tabular lists** section, a listing of the invoices past due and payments not settled are displayed. 
-From the Invoices past due list, navigation to the settlement history for the selected invoice is provided. From the Payments not 
-settled list, you can view the settlement history and settle the invoice using the actions located above the list.
+The information in the **Summary** section is for the company that you're signed in to.
 
-Centralized payment clerks are provided with a filter at the top of the Vendor transaction lists that allows the selection of a 
-company. The company is filtered to only those companies that are defined within the centralized payment organizational hierarchy 
-that the centralized payment clerk has rights to view.
+### Vendor transactions grids
 
-The **Find transactions** capability allows you to search for a vendor transaction.
+The **Vendor transactions** section contains grids that show the invoices that are past due and payments that aren't settled. From the **Invoices past due** grid, you can view the settlement history for a selected invoice. From the **Payments not settled** grid, you can view the settlement history for a selected invoice and settle an invoice.
 
-## Related information
+Centralized payment clerks can use a filter that appears at the top of each grid to select a company. The grid is then filtered so that it shows only those companies that are defined in the centralized payment organizational hierarchy that the centralized payment clerk has rights to view.
 
-You can view the **Vendor aging** report and the **Payment summary by date** report by using the links provided in the Related 
-information section of the workspace.
+The **Find transactions** tab in the **Vendor transactions** section lets you search for a vendor transaction.
 
-## Analytics
-The Analytics page provides key metrics, such as vendor invoices that are past due and vendor invoices that are due in the future. 
-It contains 9 report pages consisting of an overview page and 8 details pages providing details of accounts payable payment metrics.
+### Related information
 
-The following table contains the visualization information.
+You can view the **Vendor aging** report and the **Payment summary by date** report by using the links in the **Related information** section of the workspace.
 
-| Report page                       | Visualization  |
-|-----------------------------------|----------------|
-| Vendor payments overview          | Invoices past due<br>Invoices due today<br>Discounts taken to discounts lost<br>Invoices due in future by cash discount date<br>Invoices due in future by due date<br>Invoices paid late to invoices paid on time<br>Payment workflow assignment<br>Vendor to customer balance<br>Open invoices with payment hold |
-| Invoices past due                 | Invoices past due<br>Invoices past due details<br>Total open invoices<br>Invoices past due per vendor group<br>Invoices past due per company |
-| Invoices due today                | Invoices due today<br>Invoices due today details<br>Invoices due today per company<br>Invoices due today per vendor group |
-| Discounts taken to discounts lost | Discounts taken to discount lost<br>Discounts taken to discount lost details<br>Discounts taken to discount lost per company<br>Discounts taken to discount lost per vendor group |
-| Invoices due in future            | Invoices due in future<br>Invoices due in future details<br>Invoices due in future per company<br>Invoices due in future per vendor group<br>Invoices due in future by cash discount date<br>Invoices due in future by due date |
-| Invoices paid late                | Invoices paid after due date<br>Invoices paid after due date details<br>Invoices paid after due date per company<br>Invoices paid after due date per vendor group<br>Invoices paid late versus invoices paid on time |
-| Payment workflow                  | Vendor payment workflow instances<br>Vendor payment workflow instances per approver<br>Vendor payment workflow instances per company<br>Average days in workflow by approver |
-| Vendor to customer balance        | Vendor to customer balance<br>Vendor to customer balance per company<br>Vendor to customer balance details |
-| Invoices with payment hold        | Invoices with payment hold<br>Invoices with payment hold details<br>Invoices with payment hold per company<br>Invoices with payment hold per vendor group |
+## Analytics page
+
+The **Analytics** page provides important metrics, such as vendor invoices that are past due and vendor invoices that are due in the future. This page contains nine report pages. One page provides an overview, and the other eight pages provide details about Accounts payable payment metrics.
+
+The following table shows the visualizations that are available on each report page.
+
+| Report page | Visualization |
+|-------------|---------------|
+| Vendor payments overview | <ul><li>Invoices past due</li><li>Invoices due today</li><li>Discounts taken to discounts lost</li><li>Invoices due in future by cash discount date</li><li>Invoices due in future by due date</li><li>Invoices paid late to invoices paid on time</li><li>Payment workflow assignment</li><li>Vendor to customer balance</li><li>Open invoices with payment hold</li></ul> |
+| Invoices past due | <ul><li>Invoices past due</li><li>Invoices past due details</li><li>Total open invoices</li><li>Invoices past due per vendor group</li><li>Invoices past due per company</li></ul> |
+| Invoices due today | <ul><li>Invoices due today</li><li>Invoices due today details</li><li>Invoices due today per company</li><li>Invoices due today per vendor group</li></ul> |
+| Discounts taken to discounts lost | <ul><li>Discounts taken to discount lost</li><li>Discounts taken to discount lost details</li><li>Discounts taken to discount lost per company</li><li>Discounts taken to discount lost per vendor group</li></ul> |
+| Invoices due in future | <ul><li>Invoices due in future</li><li>Invoices due in future details</li><li>Invoices due in future per company</li><li>Invoices due in future per vendor group</li><li>Invoices due in future by cash discount date</li><li>Invoices due in future by due date</li></ul> |
+| Invoices paid late | <ul><li>Invoices paid after due date</li><li>Invoices paid after due date details</li><li>Invoices paid after due date per company</li><li>Invoices paid after due date per vendor group</li><li>Invoices paid late versus invoices paid on time</li></ul> |
+| Payment workflow | <ul><li>Vendor payment workflow instances</li><li>Vendor payment workflow instances per approver</li><li>Vendor payment workflow instances per company</li><li>Average days in workflow by approver</li></ul> |
+| Vendor to customer balance | <ul><li>Vendor to customer balance</li><li>Vendor to customer balance per company</li><li>Vendor to customer balance details</li></ul> |
+| Invoices with payment hold | <ul><li>Invoices with payment hold</li><li>Invoices with payment hold details</li><li>Invoices with payment hold per company</li><li>Invoices with payment hold per vendor group</li></ul> |
