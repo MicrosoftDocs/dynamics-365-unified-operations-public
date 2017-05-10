@@ -105,7 +105,9 @@ Download and install the Dynamics 365 for Operations mobile app from your mobile
 2.  Enter your Dynamics 365 for Operations URL.
 3.  Enter the company to sign in to. For example, enter **USMF**.
 4.  The first time that you sign in, you re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
-5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator publishes a new workspace later, you can pull to refresh the list of mobile workspaces. [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator publishes a new workspace later, you can pull to refresh the list of mobile workspaces. 
+
+[![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## Capture a receipt by using the Expense management mobile workspace
 1.  On your mobile device, select the **Expense management** workspace.
@@ -115,7 +117,7 @@ Download and install the Dynamics 365 for Operations mobile app from your mobile
     1.  You're taken to the camera on your mobile device, so that you can take a photo of the receipt. When you've finished taking a photo, click **OK** to accept the photo.
     2.  Optional: Enter a name for the photo, and enter any notes.
 
-     or  If you selected **Choose image**, follow these steps:
+     -**Or**-  If you selected **Choose image**, follow these steps:
     1.  Select an image in the list.
     2.  Optional: Enter a name for the image, and enter any notes.
 
