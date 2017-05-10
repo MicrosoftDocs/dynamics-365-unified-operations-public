@@ -249,36 +249,63 @@ A golden build may not have customer-specific fields set up. These fields should
 
 
 ### Golden builds with multiple legal entities
-The templates are optimized for exporting a golden build with a single legal entity.
+The templates are optimized for exporting a golden build with a single legal entity. 
 If you are exporting from a golden build that has multiple legal entities in it 
 but you only want to import the data from one of those legal entities, you will need 
-to apply a filter on the legal entity fields. This filter must remove all other entities except the one that you want.
-The following entities may need filters when you export the data:
+to apply a filter on the legal entity fields to export the correct data. 
+This filter must remove all other entities except the one that you want.
+In some cases, you will need to take some additional steps to clean up the exported data.
+
+Most of the changes occur in the system setup and general ledger areas. We recommend that you set up a golden build that uses a single legal entity to eliminate these steps if you need this information from these areas. 
+
+The following entities need filters or special handling when you export the data:
 
 | Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
 | System setup                   | Legal entities                         | Apply a filter to Company  |
-|                                | Number sequence code                   | The number sequence codes can be shared or specific to a legal entity. If you want all number sequences, you must have the legal entities setup for the number sequences that are stored for a specific legal entity. If you only want the shared sequences, apply a filter to remove the number sequences that are specific to a legal entity |
+|                                | Number sequence code                   | The number sequence codes can be shared or be specific to a legal entity. If you want to import all number sequences, you must have the legal entities setup for the number sequences that are stored for a specific legal entity. If you only want the shared sequences, apply a filter to remove the number sequences that are specific to a legal entity. If you only want number sequences for a legal entity, apply a filter to Company |
+|                                |                                        | Number sequences can also have scope. You must delete number sequences where 1) the SCOPETYPE is DataArea and SCOPEVALUE is not equal to the legal entity or is blank, 2) the SCOPETYPE is LegalEntity and SCOPEVALUE is not equal to the legal entity and 3) the SCOPETYPE is DataAreaFiscalCalendar and SCOPEVALUE is not equal to the legal entity |
 |                                | Number sequence references             | The number sequence references follow the same pattern as number sequence codes |
-|                                | Organization hierarchies               | There is no legal entity filter. Manually remove any references to the other legal entities that are not being imported  |
-| Global address book            | Multiple entities                      | The global address book will contain data for each legal entity. All of those legal entities will be created when you import the data unless you remove the data for the legal entities that you do not want to load |
+|                                | Organization hierarchies               | There is no legal entity filter. Manually remove any references to the other legal entities that are not being imported. For example, if you have set up Centralized payments but you are only loading one legal entity, then you must not import the Centralized payments hierarchy  |
+| Global address book            | Multiple entities                      | The global address book contains data for all legal entities. All legal entities will be created when you import the data unless you remove the data for the legal entities that you do not want to load.  Delete all records for other legal entities to ensure that those legal entities are not created or apply a filter to the Legal entity data area (<> blank). You will also need to remove global address book records that are used in the other legal entities |
+|                                | Party postal addresses                 | Address records for legal entities other than the one being imported must be manually be deleted before import |
+|                                | Party contacts                         | Contact records for legal entities other than the one being imported must be manually be deleted before import |
+|                                | Workflow                               | Apply a filter on DataAreaID. Many of the workflow entities cannot be filtered for legal entity so you may see import failures if you do not remove the data in all workflow entities related to other legal entities that you do not want. We recommend setting up workflows manually for this scenario.|
 | General ledger                 | Ledger                                 | Apply a filter to Company  |  
-|                                | Ledger fiscal Calendar year            | Apply a filter to Ledger name  |
+|                                | Ledger fiscal calendar year            | Apply a filter to Ledger name  |
 |                                | Ledger fiscal calendar period          | Apply a filter to Ledger name  |
 |                                | Main account legal entity overrides    | Apply a filter to Company |
 |                                | Financial dimension value legal entity | Apply a filter to Legal entity but also include records with empty legal entities (shared values)|
+|                                | Financial dimension values             | Apply a filter to Legal entity. However, you cannot filter out custom dimension values so you will need to delete them. They will be restored when you import data for the tables that are backing the custom dimensions |
+|                                | Journal names                          | Apply a filter to Voucher series company ID |
+|                                | Ledger allocation basis source         | Apply a filter to Legal entity |
+|                                | Ledger allocation rule destination     | Apply a filter to Company |
 | Accounts receivable            | Customer write-off reason code         | Apply a filter to Company  |
-| Budget                         | Budget cost elements                   | Apply a filter to Legal entity | 
-|                                | Budget plan process                    | Apply a filter to Ledger | 
-|                                | Budget plan allocation schedule        | Apply a filter to Ledger  | 
-|                                | Budget plan stage Rule                 | If you applied a filter to Budget plan process, you may see errors when importing stage rules. The entity currently does not have a Ledger name in it that can be filtered so it will contain all companies | 
+| Budget                         | Budget control configuration           | Apply a filter to Legal entity              |
+|                                | Budget control configuration activation| Apply a filter to Legal entity              |
+|                                | Budget control cycle model             | Apply a filter to Legal entity              |
+|                                | Budget control dimension attribute     | Apply a filter to Legal entity              |
+|                                | Budget control documents and journals  | Apply a filter to Legal entity              |
+|                                | Budget control group                   | Apply a filter to Legal entity              |
+|                                | Budget control group criteria          | Apply a filter to Legal entity              |
+|                                | Budget control message level           | Apply a filter to Legal entity              |
+|                                | Budget control over budget permissions | Apply a filter to Legal entity              |
+|                                | Budget control rule                    | Apply a filter to Legal entity              |
+|                                | Budget control rule criteria           | Apply a filter to Legal entity              |
+|                                | Budget cost dlements                   | Apply a filter to Cost element data area id |
+|                                | Budget dimensions                      | Apply a filter to Legal entity              |
+|                                | Budget plan allocation schedule        | Apply a filter to Ledger                    |
+|                                | Budget plan process                    | Apply a filter to Ledger                    |
+|                                | Budget plan stage rule                 | If you applied a filter to Budget plan process, you may see errors when importing stage rules. The entity currently does not have a Ledger name in it that can be filtered so it will contain all companies | 
 |                                | Budget plan priority constraint        | You will see the same issue described for stage rules | 
 |                                | Budget plan process administration     | You will see the same issue described for stage rules | 
-| Inventory management           | Warehouse current postal address       | Apply a filter to Company |
-|                                | Site current postal address            | Apply a filter to Company | 
-|                                | Warehouse current postal address       | Apply a filter to Company  | 
+|                                | Budget transfer rules                  | Apply a filter to Legal entity              |
+| Inventory management           | Warehouse current postal address       | Apply a filter to Warehouse legal entity |
+|                                | Site current postal address            | Apply a filter to Operational site legal entity | 
+|                                | Tracking number groups                 | Apply a filter to Number sequence scope data area  | 
                          
-If you want to change the legal entity ID to another value, change the values in the fields listed above to the new legal entity value. For example, for Legal entities, change Company from the exported value to a new value in the exported file.
+### Changing the legal entity value before importing
+If you want to change the legal entity ID to another value, you must change the values in all fields like those listed above to the new legal entity value. For example, for Legal entities, change Company from the exported value to a new value in the exported file. There are many places where the legal entity ID is stored so making this change can be difficult and cause errors. We are considering a feature to help do this work in a future release.
 
 Import a configuration
 ----------------------
