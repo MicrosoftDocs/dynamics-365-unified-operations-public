@@ -117,7 +117,7 @@ Download and install the Dynamics 365 for Operations mobile app from your mobile
     1.  You're taken to the camera on your mobile device, so that you can take a photo of the receipt. When you've finished taking a photo, click **OK** to accept the photo.
     2.  Optional: Enter a name for the photo, and enter any notes.
 
-     -**Or**-  If you selected **Choose image**, follow these steps:
+     **Or:**  If you selected **Choose image**, follow these steps:
     1.  Select an image in the list.
     2.  Optional: Enter a name for the image, and enter any notes.
 
