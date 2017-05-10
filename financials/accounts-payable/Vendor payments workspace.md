@@ -65,45 +65,14 @@ It contains 9 report pages consisting of an overview page and 8 details pages pr
 
 The following table contains the visualization information.
 
-| Report page                       | Visualization                                                                     |
-|-----------------------------------|-----------------------------------------------------------------------------------|
-| Vendor payments overview          | Invoices past due 
-                                      Invoices due today 
-                                      Discounts taken to discounts lost 
-                                      Invoices due in future by cash discount date 
-                                      Invoices due in future by due date 
-                                      Invoices paid late to invoices paid on time 
-                                      Payment workflow assignment 
-                                      Vendor to customer balance 
-                                      Open invoices with payment hold                                                  |
-| Invoices past due                 | Invoices due today 
-                                      Invoices due today details 
-                                      Invoices due today per company 
-                                      Invoices due today per vendor group                                              |
-| Discounts taken to discounts lost | Discounts taken to discount lost 
-                                      Discounts taken to discount lost details 
-                                      Discounts taken to discount lost per company 
-                                      Discounts taken to discount lost per vendor group                                |
-| Invoices due in future            | Invoices due in future 
-                                      Invoices due in future details 
-                                      Invoices due in future per company 
-                                      Invoices due in future per vendor group 
-                                      Invoices due in future by cash discount date 
-                                      Invoices due in future by due date                                               |
-| Invoices paid late                | Invoices paid after due date 
-                                      Invoices paid after due date details 
-                                      Invoices paid after due date per company 
-                                      Invoices paid after due date per vendor group 
-                                      Invoices paid late versus invoices paid on time                                  |
-| Payment workflow                  | Vendor payment workflow instances 
-                                      Vendor payment workflow instances per approver 
-                                      Vendor payment workflow instances per company 
-                                      Average days in workflow by approver                                             |
-| Vendor to customer balance        | Vendor to customer balance 
-                                      Vendor to customer balance per company 
-                                      Vendor to customer balance details                                               |
-| Invoices with payment hold        | Invoices with payment hold 
-                                      Invoices with payment hold details 
-                                      Invoices with payment hold per company 
-                                      Invoices with payment hold per vendor group                                      |
-
+| Report page                       | Visualization  |
+|-----------------------------------|----------------|
+| Vendor payments overview          | Invoices past due<br>Invoices due today<br>Discounts taken to discounts lost<br>Invoices due in future by cash discount date<br>Invoices due in future by due date<br>Invoices paid late to invoices paid on time<br>Payment workflow assignment<br>Vendor to customer balance<br>Open invoices with payment hold |
+| Invoices past due                 | Invoices past due<br>Invoices past due details<br>Total open invoices<br>Invoices past due per vendor group<br>Invoices past due per company |
+| Invoices due today                | Invoices due today<br>Invoices due today details<br>Invoices due today per company<br>Invoices due today per vendor group |
+| Discounts taken to discounts lost | Discounts taken to discount lost<br>Discounts taken to discount lost details<br>Discounts taken to discount lost per company<br>Discounts taken to discount lost per vendor group |
+| Invoices due in future            | Invoices due in future<br>Invoices due in future details<br>Invoices due in future per company<br>Invoices due in future per vendor group<br>Invoices due in future by cash discount date<br>Invoices due in future by due date |
+| Invoices paid late                | Invoices paid after due date<br>Invoices paid after due date details<br>Invoices paid after due date per company<br>Invoices paid after due date per vendor group<br>Invoices paid late versus invoices paid on time |
+| Payment workflow                  | Vendor payment workflow instances<br>Vendor payment workflow instances per approver<br>Vendor payment workflow instances per company<br>Average days in workflow by approver |
+| Vendor to customer balance        | Vendor to customer balance<br>Vendor to customer balance per company<br>Vendor to customer balance details |
+| Invoices with payment hold        | Invoices with payment hold<br>Invoices with payment hold details<br>Invoices with payment hold per company<br>Invoices with payment hold per vendor group |
