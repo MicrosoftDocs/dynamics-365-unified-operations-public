@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Import historical data for demand forecast
-description: In order to get accuracy of demand forecast accuracy, you need historical demand per item or item allocation ke. Use data entities to import historical demand data from any systems to keep a longer history of demand forecast data.
+title: Import historical data for demand forecasts
+description: To get accurate demand forecasts, you require historical demand data per item or item allocation key. This topic explains how to use data entities to import historical demand data from any system, so that you have a longer history of demand forecast data.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 05/10/2017
@@ -29,41 +29,37 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Import historical data for demand forecast
+# Import historical data for demand forecasts
 
 [!include[banner](../includes/banner.md)]
 
+To help guarantee the accuracy of demand forecasts, you must have as much historical demand data as you can get per item or item allocation key. If the historical demand data isn't already imported, use the **Historical external demand** (ReqDemPlanHistoricalExternalDemandEntity) data entity in Microsoft Dynamics 365 for Operations to import it.
 
-In order to get accuracy of demand forecast accuracy, you need as much historical demand per item or item allocation key as possible. If the historical demand data are not imported, use the **Historical external demand#** (ReqDemPlanHistoricalExternalDemandEntity) data entity in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
+In the **Data management** workspace, you can see an overview of all the fields in the entity.
 
-Navigate to the **Data management workspace** to get an overview of all the fields in the entity.
+1. Open the **Data management** workspace.
+2. Click the **Data entities** tile.
+3. Search the entity list for **Historical external demand**.
+4. Click **Target fields**. The following entity fields are mandatory: site (**DeliveringSiteId**), date (**DemandDate**), quantity (**DemandQuantity**), and either item number (**ItemNumber**) or item allocation key (**ProductAllocationKeyId**).
 
-1. Click the **Data entities** tile.
-2. Search the entity list for **Historical external demand**.
-3. Click **Target fields**. The mandatory entity fields are: site (**DeliveringSiteId**), date (**DemandDate**), quantity (**DemandQuantity**), and either the item number (**ItemNumber**) or the item allocation key (**ProductAllocationKeyId**).
+To use the data entity, you must have a Microsoft Excel file or comma-separated values (CSV) file that contains the historical demand data. The following example shows how to import the data from a CSV file.
 
-To use the data entity, you need a Microsoft Excel file or CSV file with the historical demand. The following section shows how to import the data in .csv file. 
+## Example
 
-# Example 
-You can use this file as an example: HistoricalDemandData. The file contains the historical demand of item D0001 and only the mandatory fields: site, quantity and the demand date.
+You can use the following file as an example: HistoricalDemandData. This file contains the historical demand data for item D0001. It contains only the following mandatory fields: site, quantity, and the demand date.
 
-1. Select the company to which you want to import the historical demand.
-2. Go to the **Data management workspace**.
+1. Select the company to import the historical demand data into.
+2. Open the **Data management** workspace.
 3. Click the **Import** tile.
-4. Provide a name for the import project for example, Import historical demand for item D0001.
-5. Set the **Source** data format to the file format. If you import the example file, select CSV.
-6. Select the **Historical external demand** entity in the **Entity name** field.
-7. Save the example file to your machine and upload it.
+4. Enter a name for the import project, such as **Import historical demand for item D0001**.
+5. In the **Source data format** field, select the file format of the file that you're importing. To import the HistoricalDemandData file for this example, select **CSV**.
+6. In the **Entity name** field, select **Historical external demand**.
+7. Save the file to your computer, and then upload it.
 8. Click **Import**.
-9. The **Execution summary** page opens automatically. Verify the imported data on the page.
+9. The **Execution summary** page is opened automatically. Verify the imported data on the page.
 
-After you have imported the historical demand forecast, you can generate demand forecast. 
+After you've imported the historical demand data, you can generate a demand forecast.
 
-
-
-See also
---------
+## See also
 
 [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
-
-
