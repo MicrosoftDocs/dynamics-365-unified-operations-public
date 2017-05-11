@@ -56,10 +56,9 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 
 | **Number of seats**                                                                         | **Tech talks** | **Workshops**                      | **Touchpoints**   | **FastTrack engineering resources** |
 |-----------------------------------------------------------------------------------------|------------|--------------------------------|---------------|---------------------------------|
-| 20-149 combined eligible App or Plan user subscription licenses, or the equivalent      | ✓          | Pre Go-live milestone workshop | Not available | Not available                   |
-| 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | ✓          | ✓                              | ✓             | ✓                               |
+| 20-149 combined eligible App or Plan user subscription licenses, or the equivalent      |    **✓**   | Pre Go-live milestone workshop | Not available | Not available                   |
+| 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | **✓**          | **✓**                              | **✓**             | **✓**                               |
 
-![Chart of options](media/eligibility-chart.png)
 
 ## Overview: Microsoft FastTrack for Dynamics 365
 During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assistance in removing blockers during implementation through the following interactions:
