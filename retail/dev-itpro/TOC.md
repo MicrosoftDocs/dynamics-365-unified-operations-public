@@ -2,11 +2,10 @@
 
 # Architecture
 ## [Retail Server architecture](retail-server-architecture.md)
-## [Retail channel communications (retail/Commerce Data Exchange)](define-retail-channel-communications-cdx.md)
+## [Retail channel communications](define-retail-channel-communications-cdx.md)
 ## [MPOS architecture](retail-modern-pos-architecture.md)
 ## [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
-
-# [Retail Channel Performance Power BI content](/dynamics365/operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
+## [Retail Channel Performance Power BI content](/dynamics365/operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
 
 # Deployment and hotfixes
 ## [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
@@ -22,9 +21,9 @@
 
 # Extensibility
 ## Point of sale
-### [Create a Retail Experience app](create-retail-experience-app.md)
 ### [Configure MPOS for offline mode](retail-modern-pos-offline.md)
-### [MPOS and Cloud POS trigger extensibility](modern-pos-trigger-extensibili
+### [MPOS and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
+## [Create a Retail Experience app](create-retail-experience-app.md)
 ## [Hardware Station overview and extensibility](hardware-station-extensibility.md)
 ## Retail Server
 ### [Extend a Retail Server OData controller](extend-retail-server-odata-controller.md)
