@@ -1,6 +1,7 @@
 # [Dynamics 365 for Operations - Retail for IT pros and developers](dev-retail-home-page.md)
 
 # Architecture
+## [Components of Microsoft Dynamics 365 for Operations - Retail](..\retail-components.md)
 ## [Retail Server architecture](retail-server-architecture.md)
 ## [Retail channel communications](define-retail-channel-communications-cdx.md)
 ## [MPOS architecture](retail-modern-pos-architecture.md)
@@ -10,17 +11,18 @@
 # Deployment and hotfixes
 ## [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 ### [Retail store system, before you begin](retail-store-system-begin.md)
-## [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md)
-### [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md)
+## [Retail Modern POS configuration and installation](../retail-modern-pos-device-activation.md)
+### [Manage Retail accounts and devices from headquarters](../set-up-activation-accounts-validate-devices-hq.md)
 ### [Retail POS device activation](retail-device-activation.md)
 ### [Secure retail Cloud POS](secure-retail-cloud-pos.md)
-### [Install the POS Layout designer](install-pos-layout-designer.md)
-## [Retail Hardware Station configuration and installation](retail-hardware-station-configuration-installation.md)
+### [Install the POS Layout designer](../install-pos-layout-designer.md)
+## [Retail Hardware Station configuration and installation](../retail-hardware-station-configuration-installation.md)
 ## [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
 ## [Install Retail hotfixes](install-retail-hotfix.md)
 
 # Extensibility
 ## Point of sale
+### [Retail POS screen layouts](../pos-screen-layouts.md)
 ### [Configure MPOS for offline mode](retail-modern-pos-offline.md)
 ### [MPOS and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
 ## [Create a Retail Experience app](create-retail-experience-app.md)
