@@ -29,7 +29,7 @@ ms.dyn365.version:
 
 ---
 
-[!includebanner]
+[!include[banner](../includes/banner.md)]
 
 # Practice manager Power BI content
 
