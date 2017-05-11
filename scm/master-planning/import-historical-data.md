@@ -42,24 +42,28 @@ Navigate to the **Data management workspace** to get an overview of all the fiel
 2. Search the entity list for **Historical external demand**.
 3. Click **Target fields**. The mandatory entity fields are: site (**DeliveringSiteId**), date (**DemandDate**), quantity (**DemandQuantity**), and either the item number (**ItemNumber**) or the item allocation key (**ProductAllocationKeyId**).
 
-In order to use the data entity, prepare a Microsoft Excel file or CSV file with the historical demand. You can use this file as an example: HistoricalDemandData . The file contains the historical demand of item D0001 and only the mandatory fields: site, quantity and the demand date.
+To use the data entity, you need a Microsoft Excel file or CSV file with the historical demand. The following section shows how to import the data in .csv file. 
 
-You can import the data file by following these steps:
+# Example 
+You can use this file as an example: HistoricalDemandData. The file contains the historical demand of item D0001 and only the mandatory fields: site, quantity and the demand date.
 
-Select the company to which you want to import the historical demand.
-Go to the Data management workspace.
-Click the Import tile.
-Provide a name for the import project for example, Import historical demand for item D0001.
-Set the Source data format to the file format. If you import the example file, select CSV.
-Select the Historical external demand entity in the Entity name field.
-Save the example file to your machine and upload it.
-Click Import.
-The Execution summary page opens automatically. Verify the imported data on the page.
-After you have imported the historical demand forecast, you can generate forecast as described in Generating a statistical baseline forecast.
+1. Select the company to which you want to import the historical demand.
+2. Go to the **Data management workspace**.
+3. Click the **Import** tile.
+4. Provide a name for the import project for example, Import historical demand for item D0001.
+5. Set the **Source** data format to the file format. If you import the example file, select CSV.
+6. Select the **Historical external demand** entity in the **Entity name** field.
+7. Save the example file to your machine and upload it.
+8. Click **Import**.
+9. The **Execution summary** page opens automatically. Verify the imported data on the page.
+
+After you have imported the historical demand forecast, you can generate demand forecast. 
 
 
 
+See also
+--------
 
-
+[Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
 
