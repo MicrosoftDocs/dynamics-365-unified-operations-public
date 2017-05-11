@@ -38,10 +38,10 @@ Configuring the Message Processing batch job as critical ensures that the system
 
 Follow these steps to configure the Message Process batch job as critical.
 
-1. Navigate to System Administration > Inquiries > Batch jobs
+1. Navigate to System Administration > Inquiries > Batch jobs.
 2. Search for “Workflow message processing” using the quick filter.
-3. Select the Workflow message processing batch job.
-4. Click on the Edit button in the action pane.
-5. Check the Critical Job checkbox.
-6. Click on the Save button in the action pane.
-7. Restart the Workflow message processing batch job.
+3. Select the **Workflow message processing** batch job.
+4. Click on the **Edit** button in the action pane.
+5. Select the **Critical Job** check box.
+6. Click on the **Save** button in the action pane.
+7. Restart the **Workflow message processing** batch job.
