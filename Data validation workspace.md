@@ -1,0 +1,106 @@
+---
+# required metadata
+
+title: Data validation workspace
+description: The Data validation checklist workspace lets you track data validation processes across companies, areas, and people. 
+The checklist can be used during a new implementation, after an upgrade, or after a migration.
+author: bking
+manager: AnnBe
+ms.date: 05/11/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+# ms.reviewer: twheeloc
+# ms.search.scope: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.assetid: 
+ms.search.region: Global 
+# ms.search.industry: 
+ms.author: bking
+ms.search.validFrom: 
+ms.dyn365.ops.version:
+---
+
+# Data validation workspace
+
+[!include[banner](../includes/banner.md)]
+
+
+This article provides an overview of the Data validation checklist workspace and
+the associated configuration.
+
+## Data validation checklist workspace
+
+The **Data validation checklist** workspace lets you track data validation
+processes across companies, areas, and people. The checklist can be used during
+a new implementation, after an upgrade, or after a migration. Depending on your
+view of the **Data validation checklist** workspace, you'll see either of all
+tasks and statuses for a data validation project, or just the tasks that are
+assigned to you.
+
+You must first select a data validation project at the top of the workspace. All
+data that is shown on the workspace is then filtered by the selected data
+validation project.
+
+### Summary tiles
+
+The **Summary** tiles give an overview of the process, and indicators help you
+keep the data validation process on track. You can see all remaining tasks,
+completed tasks, in progress tasks, and not started tasks for the process. This
+information is for all companies that are included in the selected data
+validation project.
+
+### Tasks and status section
+
+In the **Tasks and status** section, the status of the overall data validation
+project is broken down in various ways: status by legal entity, status by area,
+and by task list. You can select the filter to view the status for a specific
+company. Each status tab gives a breakdown by both the percentage that has been
+completed and the number of tasks that remain.
+
+The last tab is for the detailed task list. This list shows the full task list.
+You can filter the task list in several ways. Click **Edit task** to change the
+status of a task or assign a task. Click **Attachments** to view attachments for a
+task.
+
+The task name is a hyperlink to the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition page
+where the user must go to complete the work. You can set this hyperlink by using
+the **Menu item name** field when you edit or create a task from the Configure
+data validation project form.
+
+You can attach files, notes, images, and URLs to a task by using the
+**Attachments** action. For example, you can attach a report file that was
+printed for a task. An icon appears in the **Attachment** column for the task if
+an attachment is present.
+
+The **Completed by** option will be automatically filled after the task is
+completed with the worker who completed the task. When a task is marked as
+completed, the **Completed date** field is automatically updated to the current
+date and time.
+
+### Configure data validation project page
+
+Before you can use the **Data validation checklist** workspace, you must
+configure the process in Microsoft Dynamics 365 for Operations by using the
+**Configure data validation project** page. (Click **Workspaces** \> **Data
+validation checklist** \> **Configure data validation project**.)
+
+### Task areas
+
+You use task areas to group data validation tasks into logical areas of
+ownership within your organization. For example, Accounts payable, Accounts
+receivable, or General ledger might be used as task areas.
+
+The **Menu item name** is associated with the task work effort and can be used
+to go directly to the associated page from the task link in the workspace. For
+example, a data validation task to run the Accounts payable aging report for
+Accounts payable can be linked to the **Accounts payable aging report** page in
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
