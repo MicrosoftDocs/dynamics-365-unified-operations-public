@@ -34,7 +34,6 @@ ms.search.validFrom: 2016-11-30
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 This topics lists the mobile workspaces that have recently been released for the Microsoft Dynamics 365 for Operations mobile app.
@@ -55,9 +54,9 @@ Mobile workspaces that were released in April 2017
 | Mobile workspace     | Description                                                                                                                                                                         | Learn more                                                                                                                                                        |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cost controlling     | Cost center managers can see the performance of the cost center anytime and anywhere.                                                                                               | [Cost controlling mobile workspace](/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
-| Inventory on-hand    | Gain mobile insights into reserved and available inventory anytime and anywhere.                                                                                                    | [Inventory on-hand mobile workspace](/dynamics365/operations/scm/production-control/inventory-on-hand-mobile-workspace)       |
-| Sales orders         | Stay up to date on your sales orders anytime and anywhere.                                                                                                                          | [Sales orders mobile workspace](/dynamics365/operations/scm/production-control/sales-orders-mobile-workspace)                 |
-| Vendor collaboration | Your vendors can stay up to date on the purchase orders that have been sent to them for approval, and they can view information about new and updated purchase orders and contacts. | [Vendor collaboration mobile workspace](/dynamics365/operations/scm/procurement/vendor-collaboration-mobile-workspace) |
+| Inventory on-hand    | Gain mobile insights into reserved and available inventory anytime and anywhere.                                                                                                    | [Inventory on-hand mobile workspace](/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace)       |
+| Sales orders         | Stay up to date on your sales orders anytime and anywhere.                                                                                                                          | [Sales orders mobile workspace](/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace)                 |
+| Vendor collaboration | Your vendors can stay up to date on the purchase orders that have been sent to them for approval, and they can view information about new and updated purchase orders and contacts. | [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
 ## Mobile workspace functionality that was released in December 2016
 | Mobile workspace        | Description                                                                    | Learn more                                                                                                            |

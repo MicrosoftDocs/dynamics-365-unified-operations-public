@@ -1,5 +1,5 @@
 # Create warehouse layout
-# Indbound process
+# Inbound process
 ## [Arrival overview](arrival-overview.md)
 # Outbound process
 # Set up inventory tracking

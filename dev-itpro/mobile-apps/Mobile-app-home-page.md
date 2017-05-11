@@ -34,8 +34,6 @@ ms.search.validFrom: 2017-02-28
 
 [!include[banner](../includes/banner.md)]
 
-[!include[banner](../includes/banner.md)]
-
 
 This topic describes the Microsoft Dynamics 365 for Operations mobile app and provides links to resources that can help you implement it in your organization.
 
@@ -65,7 +63,7 @@ Navigation in the mobile app consists of four simple concepts: the dashboard, wo
 ## Implementation process
 The following illustration shows the process for implementing the Dynamics 365 for Operations mobile app in your organization. 
 
-[![](./media/mobile-implementation-process_4.png)](./media/mobile-implementation-process_4.png) 
+![Mobile apps implementation process](./media/mobile-implementation-process_4.png)
 
 The following table includes links to resources that can help you implement the Dynamics 365 for Operations mobile app in your organization. The numbers in the first column correspond to the numbered steps in the previous illustration.
 
@@ -89,7 +87,7 @@ The following table includes links to resources that can help you implement the 
 <td>1</td>
 <td>System administrator</td>
 <td>Implement Dynamics 365 for Operations for the organization.</td>
-<td>If you don't already have Dynamics 365 for Operations deployed in your organization, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>If you don't already have Dynamics 365 for Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -97,32 +95,27 @@ The following table includes links to resources that can help you implement the 
 <td>Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
 <td>See the &quot;Prerequisites&quot; section in the topic about the mobile workspace that your organization wants to use:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Vendor collaboration mobile workspace</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></li>
+<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
+<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></li>
+<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Vendor collaboration mobile workspace</a></li>
+<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></li>
+<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Expense management mobile workspace</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>System administrator</td>
 <td>Publish the mobile workspaces that are provided by Microsoft.</td>
-<td>See the &quot;Prerequisites&quot; section in the topic about the mobile workspace that your organization wants to use:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Vendor collaboration mobile workspace</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></li>
-</ul></td>
+<td><a href="publish-mobile-workspace.md">Publish a mobile workspace</a>
+</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Developer or independent software vendor (ISV)</td>
 <td>Use the Dynamics 365 for Operations mobile framework to create custom mobile workspaces.</td>
 <td><ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Dynamics 365 for Operations mobile framework</a></li>
+<li><a href="mobile-platform.md">Dynamics 365 for Operations mobile framework</a></li>
 <li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Dynamics 365 for Operations workspace X++ APIs</a></li>
 </ul></td>
 </tr>
@@ -130,19 +123,19 @@ The following table includes links to resources that can help you implement the 
 <td>5</td>
 <td>ISV</td>
 <td>Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Generate a deployable package</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>System administrator</td>
 <td>Apply the deployable package that contains the custom workspaces that are provided by the ISV.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>System administrator</td>
 <td>Publish the custom mobile workspaces that are provided by the ISV.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a></td>
+<td><a href="publish-mobile-workspace.md">Publish a mobile workspace</a></td>
 </tr>
 <tr class="even">
 <td>8</td>
@@ -157,24 +150,12 @@ The following table includes links to resources that can help you implement the 
 <td>9</td>
 <td>User</td>
 <td>Sign in, and use the Dynamics 365 for Operations mobile app. The app includes the mobile workspaces that have been published.</td>
-<td>Microsoft has provided the following mobile workspaces:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Vendor collaboration mobile workspace</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></li>
-</ul></td>
+<td>To see a list of mobile workspaces provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released for the Dynamics 365 for Operations mobile app</a>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-See also
---------
-
-[Mobile workspaces recently released for the Dynamics 365 for Operations mobile app](mobile-workspaces-released.md)
 
 
 

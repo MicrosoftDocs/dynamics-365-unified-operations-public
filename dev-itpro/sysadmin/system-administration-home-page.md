@@ -75,17 +75,17 @@ Lifecycle Services
 -   [ISV licensing](../dev-tools/isv-licensing.md)
 
 ## Retail
--   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](/dynamics365/operations/retail/dev-itpro/dev-retail-home-page.md)
+-   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](/dynamics365/operations/retail/dev-itpro/dev-retail-home-page)
 
 ## Mobile
 -   [Dynamics 365 for Operations mobile platform](../mobile-apps/mobile-platform.md)
 
 ## General administration
--   [Dynamics 365 for Operations cloud platform monthly updates](faq-platform-monthly-update.md)
+-   [Dynamics 365 for Operations cloud platform monthly updates](faq-platform-monthly-updates.md)
 -   [Batch processing overview](batch-processing-overview.md)
 -   [Batch server overview](batch-server-overview.md)
 -   [Create a batch job](http://ax.help.dynamics.com/en/wiki/create-a-batch-job/) (Task guide)
--   [Cross-company data sharing](/dynamics365/operations/financials/cross-company-data-sharing)
+-   [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 -   [Maintenance mode](maintenance-mode.md)
 -   [Demo data overview](../get-started/demo-data.md)
 

@@ -150,7 +150,7 @@ In a Production environment, package application through LCS is not self-serve l
 -   When you're closing a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
 ## Deploying packages in Retail environments
-If you are using Dynamics 365 for Operations - Retail components (such as Retail Modern POS), after you have applied a deployable package to your environment, you will need to update your in-store components as well. See [Retail Modern POS installation and updates](/retail/retail-modern-pos-device-activation) for details.
+If you are using Dynamics 365 for Operations - Retail components (such as Retail Modern POS), after you have applied a deployable package to your environment, you will need to update your in-store components as well. See [Retail Modern POS installation and updates](/dynamics365/operations/retail/retail-modern-pos-device-activation) for details.
 
 See also
 --------

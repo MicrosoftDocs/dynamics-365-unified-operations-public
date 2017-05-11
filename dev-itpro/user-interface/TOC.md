@@ -16,7 +16,8 @@
 ## [Input controls and grid column sizes](sizing-input-controls-grid-columns.md)
 ## [Check box support in tree controls](check-box-tree-controls.md)
 ## [Filters](filtering.md)
-## Window management
+## [PowerApps Host control](powerapps-host-control.md)
+# Window management
 ## [Migrate context menu code](../migration-upgrade/../migration-upgrade/code-migration-context-menus.md)
 ## [Migration mouse double-click code](../migration-upgrade/../migration-upgrade/code-migration-double-click.md)
 ## [Contextual data entry for lookups](contextual-data-entry-lookups.md)

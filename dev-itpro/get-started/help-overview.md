@@ -42,11 +42,14 @@ Dynamics 365 for Operations includes a Help system that is based on two main com
 -   A documentation site
 -   Task guides
 
-You can access both articles and task guides from the Help pane in Dynamics 365 for Operations as shown in the following screen shot. [![Help pane](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) 
+You can access both articles and task guides from the Help pane in Dynamics 365 for Operations as shown in the following screen shot.
+
+![Help pane](./media/help-pane-ops-task-guides-1024x741.png)
+
 This article describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 ## Help on docs.microsoft.com
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) is the primary source of product documentation for Dynamics 365 for Operations. The site offers the following features:
+The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) is the primary source of product documentation for Dynamics 365 for Operations. The site offers the following features:
 
 -   **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.
 -   **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
@@ -55,13 +58,38 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](https:/
 
 We've migrated all of the content from our previous help wiki to docs. We’re very excited about our new site and hope that you will be too.
 
-### When can we use it?
+### How can I contribute? 
 
-You can read content on docs right now -- it is fully public and searchable without requiring sign-in. You can use any of your favorite search engines to find content. You can comment on articles on the site if you choose, by signing in.
+Leave us a comment! 
+
+1 Click **Comments** to get to the comments at the bottom of the page.
+
+![Comments](./media/comments.png)
+
+2 Start typing your comments, and then click **Post comment**.
+
+![Post comment](./media/before-signin.png)
+
+3 Select the type of account you want to sign in with:  
+Click one of the icons on the left to associate this site with an existing account, such as a Twitter, Facebook, or Microsoft account. 
+
+Or 
+
+On the right, enter an email address, and a new password to create a new account for the site. 
+
+![Sign in options](./media/signin-options.png)
 
 
 ## Task guides
-A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. [![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) To begin the guided, interactive experience, click **Start task guide** at the bottom of the Help pane. A black pointer opens and indicates the action that you have to perform. Follow the directions that appear in the UI, and enter data as directed. [![Task guide step instruction](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **Important:** The data that you enter when you play a Task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
+A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. 
+
+![Task guide reading view](./media/task-guide-ops-1024x742.png)
+
+To begin the guided, interactive experience, click **Start task guide** at the bottom of the Help pane. A black pointer opens and indicates the action that you have to perform. Follow the directions that appear in the UI, and enter data as directed. 
+![Task guide step instruction](./media/task-guide-step-1-ops.png)
+
+> [!IMPORTANT] 
+> The data that you enter when you play a Task guide is real. If you're in a production environment, the data will be entered in the company that you’re currently using.
 
 ### It all begins with Task Recorder
 
@@ -77,7 +105,9 @@ For more information about Task Recorder, see [Task recorder in Dynamics 365 for
 You can create your own task recordings, or you can download and customize task recording that Microsoft provides. Therefore, you can create customized Help for your organization that reflects your specific Dynamics 365 for Operations implementation. To display a task recording in the Dynamics 365 for Operations Help pane and play it as a Task guide, you'll have to save the recording to a BPM library in LCS. If you're a partner, and you promote a library to a corporate library and include it in a solution, it will be available to your customers. For complete instructions, see [Using task recordings to create documentation or training](../user-interface/task-recorder.md).
 
 ## In-product Help
-To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. [![Help pane](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+To access Help content within Dynamics 365 for Operations , either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or task guides. 
+
+![Help pane](./media/help-pane-wiki-1024x684.png)
 
 ### Accessing articles from the Help pane
 
@@ -85,19 +115,24 @@ From the Help pane, you can access articles that apply to the Dynamics 365 for O
 
 ### Accessing Task guides from the Help pane
 
-Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Dynamics 365 for Operations and configure some settings. **Notes:**
+Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Dynamics 365 for Operations and configure some settings. 
 
--   In order to configure help, you must be signed in with an account in the same tenant as the tenant in which Dynamics 365 for Operations is deployed.
--   It is not possible to connect to an LCS library from an instance of Dynamics 365 for Operations running in a local virtual hard drive (VHD).
+> [!NOTE]
+> -   In order to configure help, you must be signed in with an account in the same tenant as the tenant in which Dynamics 365 for Operations is deployed.
+> -   It is not possible to connect to an LCS library from an instance of Dynamics 365 for Operations running in a local virtual hard drive (VHD).
 
-[![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) On the **System parameters** page, follow these steps:
+![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
-1.  **Important:** The first time you open the Help tab, you must connect to Lifecycle Services. Be sure to click the link in the middle of the form, wait for the connection, close the dialog box, and then click OK to get to the parameters form.[![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
+On the **System parameters** page, follow these steps:
+
+1.  **Important:** The first time you open the Help tab, you must connect to Lifecycle Services. Be sure to click the link in the middle of the form, wait for the connection, close the dialog box, and then click OK to get to the parameters form.
+![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
 2.  Select the Lifecycle Services project to connect to.
 3.  Select the BPM libraries (within the selected project) to retrieve task recordings from.
 4.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the Help pane.
 
-After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Dynamics 365 for Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. [![Task guide reading view](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
+After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Dynamics 365 for Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. 
+![Task guide reading view](./media/task-guide-ops-1024x742.png)
 
 ### Where are the translated Task guides?
 
@@ -110,7 +145,7 @@ The following table lists websites that provide Dynamics 365 for Operations cont
 
 | Site                                                                     | Description                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Docs.microsoft.com](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) | Hosts or links to all product documentation for Dynamics 365 for Operations.                                                                                                                                                               |
+| [Docs.microsoft.com](/dynamics365/#pivot=solutions&panel=solutions_operations) | Hosts or links to all product documentation for Dynamics 365 for Operations.                                                                                                                                                               |
 | [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics 365 for Operations projects from pre-sales to implementation and operations. This site is useful in all phases of an implementation. |
 | [CustomerSource](http://www.customersource.com/)\*                       | Hosts extensive training resources and is the primary support site for Dynamics 365 for Operations. Sign in may be required to access specific resources on the site.                                                                      |
 | [Support blog](http://aka.ms/AXSupportBlog)                              | Provides tips and tricks that are posted by the Dynamics 365 for Operations Support team.                                                                                                                                                  |

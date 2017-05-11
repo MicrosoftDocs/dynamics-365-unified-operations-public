@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft FastTrack for Dynamics 365 overview
-description: Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success.  
+description: Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. 
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -39,34 +39,26 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 
 ## Eligibility: Microsoft FastTrack for Dynamics 365
 
-**Product offering: Dynamics 365, Enterprise Edition** 
+**Product offering: Dynamics 365, Enterprise edition**
 
-Minimum seats: 250 combined eligible App or Plan user subscription licenses
-Eligible SKUs, apps, or plans:
--   Sales
--   Field Service
--   Customer Service
--   Project Service Automation
--   Plan 1
--   Plan 2, with the plan to implement Sales, Field Service, Customer Service, Project Service Automation apps.
-
-Minimum seats: 20 combined eligible App or Plan user subscription licenses
-Eligible SKUs, apps, or plans:
--   Operations
--   Plan 2, with the plan to implement the Operations app. 
+| **Minimum seats**                                                                  | **Eligible SKUs, Apps, or Plans** |
+|--------------------------------------------------------------------------------|-------------------------------|
+| 250 combined eligible App or Plan user subscription licenses                   | Sales <br> Field service <br>Customer service <br> Customer service<br>Project service automation<br>Plan 1<br>Plan 2 with a commitment to implement Sales, Field Service, Customer Service or Project Service Automation apps                         |
+| 20 combined eligible App or Plan user subscription licenses, or the equivalent | Operations<br>Plan 2, with a commitment to implement the Operations app<br><br>**Note** 2.5 device subscription licenses are considered the equivalent of one Dynamics 365 for Operations user subscription license   
 
 **Product offering: Dynamics CRM Online**
 
-Minimum seats: 250 combined eligible SKUs
-Eligible SKUs, apps, or plans:
--   Enterprise
--   Professional
--   Basic
+| Minimum seats              | Eligible SKUs, Apps, or Plans |
+|----------------------------|-------------------------------|
+| 250 combined eligible SKUs | Enterprise<br>Professional<br>Basic                    |
 
-> [!NOTE]
-> 2.5 device subscription licenses are considered the equivalent of one Dynamics 365 for Operations user subscription license.
+**Tiered services for Dynamics 365 for Operations**
 
-![Chart of options](media/number-seats.png)
+| **Number of seats**                                                                         | **Tech talks** | **Workshops**                      | **Touchpoints**   | **FastTrack engineering resources** |
+|-----------------------------------------------------------------------------------------|------------|--------------------------------|---------------|---------------------------------|
+| 20-149 combined eligible App or Plan user subscription licenses, or the equivalent      | **✓**      | Pre Go-live milestone workshop | Not available | Not available                   |
+| 150 or more combined eligible App or Plan user subscription licenses, or the equivalent | **✓**          | **✓**                              | **✓**             | **✓**                               |
+
 
 ## Overview: Microsoft FastTrack for Dynamics 365
 During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assistance in removing blockers during implementation through the following interactions:

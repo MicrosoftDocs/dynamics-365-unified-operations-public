@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 356 for Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
+Microsoft Dynamics 365 for Operations includes functionality for the country/regions documented in the [Product availability guide](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). This functionality is enabled based on the primary address of the active legal entity. 
 
 This topic includes lists of resources that can help you learn more about country/region-specific functionality. 
 
@@ -129,7 +129,7 @@ The following sections list resources by country/region.
 
 ### The Czech Republic
 
--   [Cash discount on credit note](/dynamics365/operations/financials/localizations/emea-cze-credit-note-cash-discount.md)
+-   [Cash discount on credit note](/dynamics365/operations/financials/localizations/emea-cze-credit-note-cash-discount)
 -   [Depreciation rounding](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
 -   [Half year depreciation on fixed asset disposal for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
 -   [Depreciation suspension (holidays)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)

@@ -523,6 +523,11 @@ The following countries also require the Retail localization. The Retail localiz
 <li>ESR bank statement import format for Switzerland</li>
 </ul></td>
 </tr>
+<tr class="even">
+<td>Germany – Export vendor payments in DTAZV format</td>
+<td>Germany requires DTAZV with foreign format specification, which represents a credit transfer (vendor payment) message according to specification for cross-border payments from Germany to an account in a foreign bank or to a domestic bank in a foreign currency. 
+</td>
+</tr>
 </tbody>
 </table>
 

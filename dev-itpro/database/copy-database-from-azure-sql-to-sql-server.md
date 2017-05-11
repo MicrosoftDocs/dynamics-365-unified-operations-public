@@ -34,9 +34,6 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-
-[!include[banner](../includes/banner.md)]
-
 This topic provides information about how to export a Microsoft Dynamics 365 for Operations database from an Azure-based environment, and then import it to a SQL Server-based environment.  
 
 Overview

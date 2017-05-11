@@ -34,7 +34,6 @@ ms.search.validFrom: 2017-02-28
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
 
 
 This topic describes the steps that system administrators can follow to publish a mobile workspace. You must publish a mobile workspace before users can access it in the Dynamics 365 for Operations mobile app. 
@@ -61,25 +60,25 @@ Before you publish a mobile workspace, make sure that the following prerequisite
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
 <td>System administrator</td>
-<td>If you don't already have Dynamics 365 for Operations deployed in your organization, your system administrator should see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>If you don't already have Dynamics 365 for Operations deployed in your organization, your system administrator should see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>KBs that contain the mobile workspaces that are provided by Microsoft must be implemented.</td>
 <td>System administrator</td>
 <td>You must implement the KBs (hotfixes) that contain the mobile workspaces that are provided by Microsoft. To implement the KBs, see the "Prerequisites" section of the topic about the mobile workspace that your organization wants to use:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/scm/production-control/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/scm/production-control/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/scm/procurement/vendor-collaboration-mobile-workspace">Vendor collaboration mobile workspace</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/project-management/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Expense management mobile workspace</a></li>
+<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
+<li><a href="/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></li>
+<li><a href="/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Vendor collaboration mobile workspace</a></li>
+<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></li>
+<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Expense management mobile workspace</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Deployable packages that contain custom mobile workspaces must be applied to the Dynamics 365 for Operations system.</td>
 <td>System administrator</td>
-<td>If you want to use custom mobile workspaces that an independent software vendor (ISV) created, you must apply the deployable package to your Dynamics 365 for Operations system. For instructions, see <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.</td>
+<td>If you want to use custom mobile workspaces that an independent software vendor (ISV) created, you must apply the deployable package to your Dynamics 365 for Operations system. For instructions, see <a href="../deployment/apply-deployable-package-system.md">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.</td>
 </tr>
 </tbody>
 </table>
