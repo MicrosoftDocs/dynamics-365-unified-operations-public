@@ -257,7 +257,7 @@ The vehicle used for deployment on User Acceptance Test (UAT) and production env
 
 A Visual Studio tool that you used to create, update, and inspect your model elements.
 
-###### **..\financial-dimensions\dimension-based configuration**
+###### **dimension-based product configuration**
 
 A configuration technology used to create product variants by selecting values for product dimensions.
 
@@ -507,7 +507,7 @@ A part of a product.
 
 ###### **product dimension**
 
-The size, color, or configuration product attributes that are used for ..\financial-dimensions\dimension-based configuration.
+The size, color, or configuration product attributes that are used for dimension-based product configuration.
 
 ###### **product family**
 

@@ -58,6 +58,17 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynami
 
 We've migrated all of the content from our previous help wiki to docs. We’re very excited about our new site and hope that you will be too.
 
+### Searching on docs.microsoft.com
+We get a lot of questions about how to search for our content. On our site, if you start from a page about Dynamics 365 for Operations, we scope your search to just be for Dynamics 365 for Operations content. You can remove the scoping by clicking the X next to Operations in the search box. 
+![Search](./media/search-scope.png)
+
+You can also find our content with any search engine. We recommend that for best results, you use a site search, such as 
+site:docs.microsoft.com "search term"  
+![Site search](./media/site-search.png)
+
+![Site search results](./media/site-search-results.png)
+
+
 ### How can I contribute? 
 
 Leave us a comment! 

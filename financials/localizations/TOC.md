@@ -74,6 +74,7 @@
 ### [Depreciation suspension](emea-cze-depreciation-suspension-holidays.md)
 ### [Fixed assets depreciation](emea-cze-fixed-assets-depreciation.md)
 ### [Half year depreciation](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [Sales tax reporting ](emea-cze-intra-community-vat-transactions.md)
 ### [VAT statement](emea-cze-vat-statement-details.md)
 ## Estonia
 ### [VAT statement](emea-est-vat-statement-details.md)
