@@ -141,7 +141,7 @@ The process for creating configurations is as follows:
     b.  Add multiple – enter any part of the entity name, use the lookup
         for application module, enter any part of the tag name, and/or
         use the lookup for the entity category to show a list of
-        entities. Select the entities in the grid that you want to add
+        entities. Tab off the lookup field to activate the filter. Select the entities in the grid that you want to add
 
     c.  Add file – browse to a file that has a name that matches an
         entity and a file extension that matches the file extensions that were added in the data sources.
@@ -406,7 +406,9 @@ is:
 5)  Add filters to the entity with the Filter icon. Then review the
     results of the filters using the Preview icon. If you add a filter, the filter icon will change to an edit icon.
 
-6)  Use the Validate template button to change the status to Validated.
+6)  If necessary, use the View map icon to exclude fields that you do not want mapped
+
+7)  Use the Validate template button to change the status to Validated.
 
 Your template is ready to be used in a project. However, you may want to
 use some additional features to control the export process:
@@ -424,11 +426,11 @@ use some additional features to control the export process:
     the entities that you want to import, and click on Create template to load it. 
     The template values in the current template will be replaced by the new template.
 
-4)  If you want to create a template from a project, follow the steps
-    above to create a new template. Use the Replace template from
+4)  If you want to create a template from a project, use New button to create the template. Add an ID and name that
+    represents the template. Use the Replace template from
     project button to display a list of projects to choose from. Select
     a project and click on Create template to bring the project entities into the
-    template. The existing entities will be removed before the project
+    template. Any existing entities will be removed before the project
     entities are copied into the template.
 
 ### Loading default templates
@@ -456,7 +458,7 @@ If you do not want to include master data in your configuration, remove those en
 ### Templates with the same entity
 ----------------------------------
 
-There are entities that are needed in more than one template. For example, you need payment terms in both Accounts payable and Accounts receivable. However, you may only need the Accounts receivable template so we added the entity to both templates.
+There are entities that are needed in more than one template. For example, you need payment terms in both Accounts payable and Accounts receivable. However, you may only need the Accounts receivable template. We added the entity to both templates for situations where you may only need one of the templates.
 
 A data project can only have one instance of an entity in it. If you add a template that contains an entity that already exists in a data project, the entity in that template will replace the entity that is currently in the project. 
 
