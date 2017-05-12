@@ -55,7 +55,9 @@ The following table provides details about the metrics that are found on each re
 
 | Report page                                          | Metrics               |
 |------------------------------------------------------|-----------------------------------------------|
-| Dashboard  | Created projects, Estimated projects, In-process projects, Number of projects by stage, Number of projects by city,  Actual revenue by customer, Budget gross margin by project, Earned value management overview |
+| Dashboard  | Created projects, 
+Estimated projects
+In-process projects, Number of projects by stage, Number of projects by city,  Actual revenue by customer, Budget gross margin by project, Earned value management overview |
 | Cost                                                 | Actual vs budget cost by month, Actual vs budget cost by year, Actual vs budget cost by category, Actual cost by transaction type       |
 | Revenue                                              | Actual revenue by month, Actual revenue by postal code, Actual vs budget revenue by category, Actual revenue by customer industry        |
 | EVM                                                  | Cost and schedule performance index by project                 |
