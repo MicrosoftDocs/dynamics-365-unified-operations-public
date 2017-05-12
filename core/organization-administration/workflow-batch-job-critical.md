@@ -32,16 +32,15 @@ ms.dyn365.version: Platform update 6
 
 [!include[banner](../includes/banner.md)]
 
-The workflow system uses various batch jobs. One of the key workflow batch jobs is the Message Processing batch job used to process workflow messages. **If workflow is a key component of your organization, you should consider configuring the Message Processing batch job as a critical**.
+The workflow system uses various batch jobs. Workflow Message Processing is a key batch job used to process workflow messages. **If workflow is a key component of your organization, you should consider configuring the Message Processing batch job as a critical**.
 
 Configuring the Message Processing batch job as critical ensures that the system actively tracks its status. When a critical batch job fails, a performance counter is incremented. You can then use that performance counter to monitor batch job failures and take quick action to resolve any issues that may have caused the failure.
 
-Follow these steps to configure the Message Process batch job as critical.
+Follow these steps to configure the Message Processing batch job as critical.
 
-1. Navigate to System Administration > Inquiries > Batch jobs.
-2. Search for “Workflow message processing” using the quick filter.
+1. Navigate to **System Administration > Inquiries > Batch jobs**.
+2. Search for **Workflow message processing** using the quick filter.
 3. Select the **Workflow message processing** batch job.
 4. Click on the **Edit** button in the action pane.
 5. Select the **Critical Job** check box.
 6. Click on the **Save** button in the action pane.
-7. Restart the **Workflow message processing** batch job.
