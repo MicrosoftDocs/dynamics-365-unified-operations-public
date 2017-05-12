@@ -32,7 +32,7 @@ ms.dyn365.version: Platform update 6
 
 [!include[banner](../includes/banner.md)]
 
-The workflow system uses various batch jobs. Workflow Message Processing is an important batch job used to process workflow messages. **If workflow is a key component of your organization, you should consider configuring the Message Processing batch job as a critical**.
+The workflow system uses various batch jobs. Workflow Message Processing is an important batch job used to process workflow messages. **If workflow is a key component of your organization, you should consider configuring the Message Processing batch job as critical**.
 
 Configuring the Message Processing batch job as critical ensures that the system actively tracks its status. When a critical batch job fails, a performance counter is incremented. You can then use that performance counter to monitor critical batch job failures and take quick action to resolve any issues that may have caused the failure.
 
