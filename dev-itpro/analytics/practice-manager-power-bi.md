@@ -68,18 +68,21 @@ in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.co
 
 Dynamics 365 for Operations data is used to fill the report pages in the **Practice manager** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-The following key aggregate measurements are used as the basis of the content.
+### Entity: ProjectAccountingCube_ActualHourUtilization
+**Data source**: ProjEmplTrans
 
-> [!div class="mx-tdBreakAll"]
-> | Entity   | Key aggregate measurements   | Data source for Dynamics 365 for Operations | Field  | Description     |
-> |--------------|----------------------------------|-------------------------------------------------|------------|---------------------|
-> | ProjectAccountingCube_ActualHourUtilization | ActualBillableUtilizedHours, ActualBillableBurdenHours | ProjEmplTrans | Sum(ActualUtilizationBillableRate), Sum(ActualBurdenBillableRate) | Total of actual billable utilized hours, Total of actual burden rate |
-> | ProjectAccountingCube\_Actuals        | ActualRevenue, ActualCost | ProjTransPosting                                | Sum(ActualRevenue), Sum(ActualCost)        | Total of posted revenue for all transaction types, Total of posted cost for all transaction types | 
-> | ProjectAccountingCube\_Customer | Number of projects    | CustTable | COUNTA(ProjectAccountingCube\_Projects[PROJECTS])  | Count of available projects | 
-> | ProjectAccountingCube\_Forecasts  | BudgetCost, BudgetRevenue, BudgetGrossMargin  | ProjTransBudget      | Sum(BudgetCost), Sum(BudgetRevenue), Sum(BudgetGrossMargin)     | Total of forecasted cost for all transaction types, Total of forecast accrued/invoiced revenue, Difference between sum of total forecast revenue and sum of total forecast cost  |   
-> | ProjectAccountingCube\_ProjectPlanCostsView  | PlannedCost  | Project  | Sum(SumOfTotalCostPrice)  | Total cost price in estimates for all project transaction types that have planned tasks |   
-> | ProjectAccountingCube\_Projects | Cost performance index, Schedule performance index, Percentage of work completed, Project actual billable Hours ratio Earned value | Project | ProjectAccountingCube\_Projects[Earned value] / ProjectAccountingCube\_Projects[Total actual cost of completed tasks], ProjectAccountingCube\_Projects[Earned value] / ProjectAccountingCube\_Projects[Total planned cost of completed tasks], Percentage of work completed = ProjectAccountingCube\_Projects[Total actual cost of completed tasks] / (ProjectAccountingCube\_Projects[Total actual cost of completed tasks] + ProjectAccountingCube\_Projects[Total planned cost of project] - ProjectAccountingCube\_Projects[Total planned cost of completed tasks]), ProjectAccountingCube\_Projects[Project total actual billable utilized hours] / (ProjectAccountingCube\_Projects[Project total actual billable utilized hours] + ProjectAccountingCube\_Projects[Project total actual billable burden hours]), ProjectAccountingCube\_Projects[Total planned cost of project] \* ProjectAccountingCube\_Projects[Percentage of work completed] | Calculation of total earned value divided by total actual cost, Calculation of total earned value divided by total planned cost, Total percentage of completed work based on total actual cost of completed task and planned cost of the project, Total actual billable hours based on utilized + burden, Total planned cost multiplied by percentage of completed work | 
-> | ProjectAccountingCube\_TotalEstimatedCosts   | CompletedActivityPlannedCost | ProjTable  | Sum(TotalCostPrice)  | Total cost price in estimates for all project transaction types that have completed tasks   |
+| Key aggregate measurements               | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+| ActualBillableUtilizedHours              | Sum(ActualUtilizationBillableRate)   |Total of actual billable utilized hours |
+|                                          |                                      |                                        |
+
+### Entity: 
+**Data source**: 
+
+| Key aggregate measurements               | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|                                          |                                      |                                        |
+|                                          |                                      |                                        |
 
 ## Additional resources
 
