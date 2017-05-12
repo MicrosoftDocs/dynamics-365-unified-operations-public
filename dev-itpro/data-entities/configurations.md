@@ -1,13 +1,11 @@
 ---
 # required metadata
 
-title: Copy configuration data to another company
-description: Configurations are used to manage the movement of company configuration
-38
-data between instances of Dynamics 365 for Finance and Operations
+title: Configuration data projects
+description: This topic provides an overview of configuration data projects, configuration data templates, and the process for using them  to move company configuration data between instances of Dynamics 365 for Operations.
 author: mfalkner
 manager: AnnBe
-ms.date: 06/01/2017
+ms.date: 06/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,112 +15,92 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro# ms.devlang: 
+audience: Developer, IT Pro
+# ms.devlang: 
 ms.reviewer: margoc
 ms.search.scope: Operations, Platform
 # ms.tgt_pltfrm: 
 ms.custom: 77523
-ms.assetid: 62232067-9999-4045-ad24-7a6c44e7e641
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mfalkner
-ms.search.validFrom: 2017-04-30
-ms.dyn365.ops.version: Platfrom update 7
+ms.search.validFrom: 2017-07-31
+ms.dyn365.ops.version: Platform update 7
 
 ---
-# Copy configuration data to another company
+# Configuration data projects
 
-Overview
---------
+## Overview
 
-Configurations are used to manage the movement of company configuration
-data between instances of Dynamics 365 for Finance and Operations. The
-feature supports the following scenarios:
+Configuration data projects are used to manage the movement of company configuration
+data between instances of Dynamics 365 for Finance and Operations. They are intended to support the following scenarios:
+-   Exporting configurations: Creating configurations of
+    entities and using the data management framework to export them to a package.
+-   Importing configurations: Uploading a configuration package and using the data management
+    framework to import the package.
 
--   Export configurations, where you can create configurations of
-    entities and use the data management framework to export it
+Configuration data packages are created using data import and export projects in the Data management workspace. The Data import and Data export pages let you add and remove the entities that you need to manage the movement of company and shared data. Once you create the list of entities in your configuration, you can export or import the configuration using the data management framework to create a package. You can export packages locally and move them to another instance for import. 
 
--   Import configurations, where you can upload a
-    configuration package and use the data management
-    framework to import it
+*Configuration templates* are a predefined list of entities for each module area that can be used in a data project. You can create, view and modify these templates using the template page in the data management workspace.
 
-Configurations are created using the data import and export projects
-that you can access from the data management workspace. The import and export pages allow
-you to add and remove the entities that you need to manage the movement
-of company and shared data. Once you create the list of entities in your
-configuration, you can export or import the configuration using the data
-management framework for processing. You can export packages locally and move them
-to another instance for import. 
+> [!IMPORTANT]
+> Default configuration templates are on the roadmap for the July release of Dynamics 365 for Finance and Operations. The Configuration data project feature is available in Platform update 7. You can create and use your own templates with the current product release.  
 
-Configuration templates are a predefined list of entities for each
-module area that can be used in a data project. You can create, view and
-modify these templates using the template page in the data management
-workspace.
+## Process of working with configuration data projects
+We recommend that you follow this process when you start to use configuration data projects. 
+1. Set up your system by getting the new data configuration user interface, and setting default file extensions.
+2. Set up configuration templates for both export and import. 
+3. Create and run a configuration data project for export.
+4. Create and run a configuration 
 
-We are working on additional capabilities for this feature and more integration 
-with LCS. We will update this document as those capabilities are available.
+This topic describes the data management workspace, and how to set up your system for data configuration projects. 
 
-Preparing data management for configurations
---------------------------------------------
+For more information about configuration templates, see 
 
-### Standard and enhanced views
 
-The data management workspace, the template page, and the import/export
-pages have been enhanced to better support configurations. These pages
-are still delivered in the standard view to provide consistency with our
-prior releases. However, if you would like to change the system default to the enhanced
-view, you can select the Framework parameters tile on the data
-management workspace and change the view default from standard to
-enhanced for all users and legal entities.
+## Set up your system to manage data configurations
+Before you begin, you should make sure that you have access to the new user data configurations interface (UI), that you've set up the default data sources 
 
+### Get the new UI
+
+We have updated the Data management workspace, the Template page, and the Data export and Data import
+pages to support managing configurations. However, the updated pages are only available in Enhanced view.
+The standard view has not been updated from prior releases. 
+
+**Change to the new UI for a single user**
 The system default view settings can also be changed to save settings for each user per each legal entity.
 If you use that setting, you must switch to the Enhanced
 view menu button on each page for configurations.
 
-### Default data sources file extensions
+**Change to the new UI for all users in all legal entities**
+1. On the Data management workspace, click the Framework parameters tile. 
+2. Change the view default from standard to enhanced for all users and legal entities.
 
-The template page and import/export page allows you to add entities
-by selecting a file that was created by the data management framework. To use
-this feature, we have populated some default file extensions with the
-data sources that are available to you. If you have additional file
-extensions that you want to use, you must update your data sources with
-a default file extension that will be used as the target data format.
+### Set file extensions for default data sources
 
-Use the Configure data sources tile on the data management workspace to
-open the data sources page. Add a default file extension to the
-appropriate data source. For example, we have added the following
-defaults:
-
+The Template page and Import/export page allows you to add entities
+by selecting a file that was created by the data management framework. We have populated some default file extensions with 
+the following data sources. 
 -   XLSX for the Excel data source
-
 -   ZIP for the package data source
-
 -   XML for the XML data source
-
 -   CSV for the comma separated values data source
-
 -   TXT for the delimited data source
 
+If you have additional file extensions that you want to use, you must update your data sources with
+a default file extension that will be used as the target data format.
+1. On the Data management workspace, click the Configure data sources tile, and click Data sources.
+2. Add a default file extension to the appropriate data source. 
+
 ### Templates for configurations
-
 Predefined templates have been created that will help you create a configuration. 
-The templates are sequenced so that the data generated by the entities
-will be processed in the correct sequence. The
-predefined templates are also designed to maintain the correct sequence when
-more than one templates is added to the same data project. See the section on sequencing philosophy for more
-information. The templates will be available starting in the spring release of 2017.
+The templates are sequenced so that the data generated by the entities will be processed in the correct sequence. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. See the section on sequencing philosophy for more information. 
 
-Using the data management workspace
------------------------------------
+# Data management workspace overview
+The data management workspace provides access to key tasks for data management while providing information on projects
+and project execution tasks. 
 
-The data management workspace provides access
-to key tasks for data management while providing information on projects
-and project execution tasks. For configurations, you should be using the
-enhanced view, which you can enable using the enhanced view button. If
-your system default in the framework parameters has been changed to
-enhanced, that view will open by default.
-
-Use the Import or Export tile to create a project. 
+After you have c
 When you return to the workspace, your project will appear in the Data projects list.
 Each project is displayed with the type of configuration (import or export) and a
 project category (project, configuration, integration, and other). Use
@@ -235,7 +213,7 @@ When the export is completed, perform the following tasks:
     on the execution details form to download the configuration settings
     and the data that was exported.
 
-Setup considerations for certain entities used to export configurations
+## Setup considerations for certain entities used to export configurations
 ------------------------------------------------------------------------------
 
 There are several entities that require some additional steps when you
