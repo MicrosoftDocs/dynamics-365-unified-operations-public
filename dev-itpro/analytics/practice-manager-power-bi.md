@@ -71,7 +71,7 @@ Dynamics 365 for Operations data is used to fill the report pages in the **Pract
 ### Entity: ProjectAccountingCube_ActualHourUtilization
 **Data source**: ProjEmplTrans
 
-| Key aggregate measurements               | Field                                | Description                            | 
+| Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
 | ActualBillableUtilizedHours              | Sum(ActualUtilizationBillableRate)   |Total of actual billable utilized hours |
 |                                          |                                      |                                        |
@@ -79,7 +79,47 @@ Dynamics 365 for Operations data is used to fill the report pages in the **Pract
 ### Entity: 
 **Data source**: 
 
-| Key aggregate measurements               | Field                                | Description                            | 
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|                                          |                                      |                                        |
+|                                          |                                      |                                        |
+
+### Entity: 
+**Data source**: 
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|                                          |                                      |                                        |
+|                                          |                                      |                                        |
+
+### Entity: 
+**Data source**: 
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|                                          |                                      |                                        |
+|                                          |                                      |                                        |
+
+### Entity: 
+**Data source**: 
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|                                          |                                      |                                        |
+|                                          |                                      |                                        |
+
+### Entity: 
+**Data source**: 
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|                                          |                                      |                                        |
+|                                          |                                      |                                        |
+
+### Entity: 
+**Data source**: 
+
+| Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
 |                                          |                                      |                                        |
 |                                          |                                      |                                        |
