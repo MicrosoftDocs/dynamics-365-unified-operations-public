@@ -76,13 +76,13 @@ Dynamics 365 for Operations data is used to fill the report pages in the **Pract
 | ActualBillableUtilizedHours              | Sum(ActualUtilizationBillableRate)   | Total of actual billable utilized hours |
 | ActualBillableBurdenHours                | Sum(ActualBurdenBillableRate)        | Total of actual burden rate             |
 
-### Entity: 
-**Data source**: 
+### Entity: ProjectAccountingCube_Actuals
+**Data source**: ProjTransPosting
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-|                                          |                                      |                                        |
-|                                          |                                      |                                        |
+| ActualRevenue                            |     Sum(ActualRevenue)               |  Total of posted revenue for all transaction |   
+| ActualCost   |                             Sum(ActualCost)           |    Total of posted cost for all transaction types    |
 
 ### Entity: 
 **Data source**: 
