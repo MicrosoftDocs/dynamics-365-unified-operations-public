@@ -68,6 +68,8 @@ in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.co
 
 Dynamics 365 for Operations data is used to fill the report pages in the **Practice manager** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
+The following sections explains the aggregate measurements that are used in each entity.
+
 ### Entity: ProjectAccountingCube_ActualHourUtilization
 **Data source**: ProjEmplTrans
 
