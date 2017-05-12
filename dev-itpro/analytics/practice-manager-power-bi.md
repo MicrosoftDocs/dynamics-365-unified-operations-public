@@ -55,11 +55,11 @@ The following table provides details about the metrics that are found on each re
 
 | Report page                                          | Metrics               |
 |------------------------------------------------------|-----------------------------------------------|
-| Dashboard  | Created projects<br>Estimated projects<br>In-process projects,<br>Number of projects by stage, Number of projects by city,  Actual revenue by customer, Budget gross margin by project, Earned value management overview |
-| Cost                                                 | Actual vs budget cost by month, Actual vs budget cost by year, Actual vs budget cost by category, Actual cost by transaction type       |
-| Revenue                                              | Actual revenue by month, Actual revenue by postal code, Actual vs budget revenue by category, Actual revenue by customer industry        |
+| Dashboard  | Created projects<br>Estimated projects<br>In-process projects<br>Number of projects by stage<br>Number of projects by city<br>Actual revenue by customer<br>Budget gross margin by project<br>Earned value management overview |
+| Cost                                                 | Actual vs budget cost by month<br>Actual vs budget cost by year<br>Actual vs budget cost by category<br>Actual cost by transaction type       |
+| Revenue                                              | Actual revenue by month<br>Actual revenue by postal code<br>Actual vs budget revenue by category<br>Actual revenue by customer industry        |
 | EVM                                                  | Cost and schedule performance index by project                 |
-| Hours                                                | Actual billable utilized hours vs actual billable burden hours vs budget hours, Actual billable utilized hours vs actual billable burden hours by project, Actual billable utilized hours vs actual billable burden hours by resource, Actual billable hours ratio by project, Actual billable hours ratio by resource |
+| Hours                                                | Actual billable utilized hours vs actual billable burden hours vs budget hours<br>Actual billable utilized hours vs actual billable burden hours by project<br>Actual billable utilized hours vs actual billable burden hours by resource<br>Actual billable hours ratio by project<br>Actual billable hours ratio by resource |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin 
 in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the Export underlying data functionality to export the underlying data that is summarized in a visualization.
