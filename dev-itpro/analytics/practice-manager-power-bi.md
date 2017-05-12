@@ -92,13 +92,14 @@ Dynamics 365 for Operations data is used to fill the report pages in the **Pract
 |    Number of projects        |   COUNTA(ProjectAccountingCube_Projects[PROJECTS])       |         Count of available Projects    |
 
 
-### Entity: 
-**Data source**: 
+### Entity: ProjectAccountingCube_Forecasts
+**Data source**: ProjTransBudget
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-|                                          |                                      |                                        |
-|                                          |                                      |                                        |
+|    BudgetCost    |       Sum(BudgetCost)  |       Total of forecasted cost for all transaction types     |
+|     BudgetRevenue    |         Sum(BudgetRevenue)    |    Total of forecast accrued/invoiced revenue         |
+|BudgetGrossMargin | Sum(BudgetGrossMargin) |Difference between sum of total forecast revenue and sum of total forecast cost
 
 ### Entity: 
 **Data source**: 
