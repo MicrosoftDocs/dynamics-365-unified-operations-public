@@ -154,11 +154,11 @@ The process for creating configurations is as follows:
     the data format to the data source that matches the file extension. 
     Note that composite entities require an XML format.
 
-7)  Select the appropriate Add button and the entities will be added to
+7)  Click on the Add button and the entities will be added to
     your data project. If you load a template and there is already an
     existing entity in the project that matches an entity in the
     template, the entity will be replaced by the enity in the template that
-    you loaded
+    you loaded. Some templates are very large and it may take a few seconds to load them.
 
 8)  Use Remove entity to remove one or more selected entities
 
@@ -177,10 +177,15 @@ some additional features to control the export process:
     level or sequence to remain unchanged when change multiple parts of
     the sequence, set the increment to zero
 
-3)  Add filters to the entity with the Filter icon. The data will be
-    filtered before it is exported.
+3)  Add filters to the entity with the Filter icon. The icon will change when 
+    you add a filter. The data will be
+    filtered before it is exported. If you have added a template and the template 
+    included filters, those filters will be added to your project. You can still modify
+    or remove them if needed.
 
-4)  If necessary, change the entity mappings using the View map icon.
+4)  If necessary, change the entity mappings using the View map icon. If you have added a template and the template 
+    included mapping changes, those changes will be applied to your project. You can still modify
+    them if needed.
 
 5)  Use the check box in the Disable column to temporarily stop the
     entity from being used when exporting a data project
