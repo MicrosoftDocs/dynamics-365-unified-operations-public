@@ -38,6 +38,5 @@ ms.dyn365.ops.version: Platform update 7
 This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.XXXX.XXXX.
 
 
-
-## Feature name ##
-Awesome description of why this feature is important.
+## Configuration data projects ##
+Using a configuration data project, you can easily export configuration data and move it from one instance to another instance. This feature provides an updated user interface, and the ability to easily manage templates and projects.
