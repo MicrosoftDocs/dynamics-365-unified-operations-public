@@ -103,13 +103,12 @@ The following sections explains the aggregate measurements that are used in each
 |     BudgetRevenue    |         Sum(BudgetRevenue)    |    Total of forecast accrued/invoiced revenue         |
 |BudgetGrossMargin | Sum(BudgetGrossMargin) |Difference between sum of total forecast revenue and sum of total forecast cost
 
-### Entity: 
-**Data source**: 
+### Entity: ProjectAccountingCube_ProjectPlanCostsView
+**Data source**: Project
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-|                                          |                                      |                                        |
-|                                          |                                      |                                        |
+|      PlannedCost      |        Sum(SumOfTotalCostPrice)   | Total cost price in estimates for all project transaction types with planned tasks |
 
 ### Entity: 
 **Data source**: 
