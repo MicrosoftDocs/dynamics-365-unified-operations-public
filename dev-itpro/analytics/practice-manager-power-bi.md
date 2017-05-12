@@ -127,7 +127,6 @@ The following sections explains the aggregate measurements that are used in each
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
 | CompletedActivityPlannedCost  |  Sum(TotalCostPrice)  |   Total cost price in estimates for all project transaction types with completed tasks|
-|                                          |                                      |                                        |
 
 ## Additional resources
 
