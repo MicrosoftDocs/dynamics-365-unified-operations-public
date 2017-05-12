@@ -84,13 +84,13 @@ Dynamics 365 for Operations data is used to fill the report pages in the **Pract
 | ActualRevenue                            |     Sum(ActualRevenue)               |  Total of posted revenue for all transaction |   
 | ActualCost   |                             Sum(ActualCost)           |    Total of posted cost for all transaction types    |
 
-### Entity: 
-**Data source**: 
+### Entity: ProjectAccountingCube_Customer
+**Data source**: CustTable
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-|                                          |                                      |                                        |
-|                                          |                                      |                                        |
+|    Number of projects        |   COUNTA(ProjectAccountingCube_Projects[PROJECTS])       |         Count of available Projects    |
+
 
 ### Entity: 
 **Data source**: 
