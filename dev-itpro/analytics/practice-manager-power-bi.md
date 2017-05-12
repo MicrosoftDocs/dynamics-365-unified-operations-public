@@ -110,20 +110,23 @@ The following sections explains the aggregate measurements that are used in each
 |------------------------------------------|--------------------------------------|----------------------------------------|
 |      PlannedCost      |        Sum(SumOfTotalCostPrice)   | Total cost price in estimates for all project transaction types with planned tasks |
 
-### Entity: 
-**Data source**: 
+### Entity: ProjectAccountingCube_Projects
+**Data source**: Project
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-|                                          |                                      |                                        |
-|                                          |                                      |                                        |
+|   Cost performance index  |ProjectAccountingCube_Projects[Earned value] / ProjectAccountingCube_Projects[Total actual cost of completed tasks] |     Calculation of total earned value divided by total actual cost|
+|  Schedule performance index |ProjectAccountingCube_Projects[Earned value] / ProjectAccountingCube_Projects[Total planned cost of completed tasks]|Calculation of total earned value divided by total planned cost |
+|Percentage of work completed |Percentage of work completed = ProjectAccountingCube_Projects[Total actual cost of completed tasks] / (ProjectAccountingCube_Projects[Total actual cost of completed tasks] + ProjectAccountingCube_Projects[Total planned cost of project] - ProjectAccountingCube_Projects[Total planned cost of completed tasks])|Total percentage of completed work based off total actual cost of completed task and planned cost of the project|
+|Project actual billable Hours ratio|ProjectAccountingCube_Projects[Project total actual billable utilized hours] / (ProjectAccountingCube_Projects[Project total actual billable utilized hours] + ProjectAccountingCube_Projects[Project total actual billable burden hours])|Total actual billable hours based on utilized + burden|
+|Earned value|ProjectAccountingCube_Projects[Total planned cost of project] * ProjectAccountingCube_Projects[Percentage of work completed]|Total planned cost multiply by percentage of completed work|
 
-### Entity: 
-**Data source**: 
+### Entity: ProjectAccountingCube_TotalEstimatedCosts 
+**Data source**: ProjTable
 
 | Key aggregate measurement                | Field                                | Description                            | 
 |------------------------------------------|--------------------------------------|----------------------------------------|
-|                                          |                                      |                                        |
+| CompletedActivityPlannedCost  |  Sum(TotalCostPrice)  |   Total cost price in estimates for all project transaction types with completed tasks|
 |                                          |                                      |                                        |
 
 ## Additional resources
