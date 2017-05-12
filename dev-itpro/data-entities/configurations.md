@@ -112,6 +112,33 @@ predefined templates are also designed to maintain the correct sequence when
 more than one templates is added to the same data project. See the section on sequencing philosophy for more
 information. The templates will be available starting in the spring release of 2017.
 
+Using the data management workspace
+-----------------------------------
+
+The data management workspace provides access
+to key tasks for data management while providing information on projects
+and project execution tasks. For configurations, you should be using the
+enhanced view, which you can enable using the enhanced view button. If
+your system default in the framework parameters has been changed to
+enhanced, that view will open by default.
+
+Use the Import or Export tile to create a project. 
+When you return to the workspace, your project will appear in the Data projects list.
+Each project is displayed with the type of configuration (import or export) and a
+project category (project, configuration, integration, and other). Use
+the selections to the left of the grid to filter by the appropriate
+project. 
+
+To open a project, select the project and click on load project
+to launch the import or export form. Use the Delete button to delete the selected projects. You can also download the project
+definitions with the download button.
+
+Use Job history to find more details about the projects that you have
+executed. Use the data range filters to filter by the dates that data projects were executed. You can view the execution
+details by selecting a job and clicking on the execution details menu.
+For export tasks, you can download the data from the workspace using the
+download page button.
+
 Export a configuration
 ----------------------
 
@@ -221,23 +248,25 @@ The following entities require special handling when used in configurations:
 
 | Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
-| System setup                   | Organization hierarchy - published     | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Both entities are currently in the template. After exporting the package, copy the data from the Organization hierarchy - published file to the Organization hierarchy file. When you import the package, disable the Organization hierarchy - published entity.  |
+| System setup                   | Organization hierarchy - published     | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Both entities are currently in the template at this time. After exporting the package, copy the data from the Organization hierarchy - published file to the Organization hierarchy file. When you import the package, disable the Organization hierarchy - published entity.  |
 | GL Shared                      | Account structures active group        | This is a composite entity that will export and import only the active account structures. If you use any other account structure entities, the active account structures will be changed to draft and you will need to activate them before they can be used. |
 |                                | Advanced rule structures active group  | Used in combination with account structures active group entity, this composite entity will export and import only the active advanced rule structures active. If you use any other advanced rule structures entities, the advanced rule structures will be changed to draft and you will need to activate them before they can be used. |
-|                                | Financial dimension values             | All values, including custom values, will be exported. Remove the custom values before importing them. If you leave them in the package, they will not import. However, the custom values will be populated as you import the data that backs the custom dimension. |
+|                                | Financial dimension values             | All values, including custom values, will be exported. Remove the custom values before importing them. If you leave them in the package, they will not import. However, the custom values will be populated later when you import the data that backs the custom dimension. |
 | Workflow                       | Workflow version                       | Change the owner for every record in the package data to Admin unless the users in the workflow are already imported |  
 |                                | Workflow expression                    | Some workflow expressions may be too long for an Excel cell. Use XML as the export format instead of Excel |  
 | Tax                            | Sales tax parameters                   | The default value for the marginal base calculations method is "Total" for sales tax parameters. The Ledger Parameters entity does not set that value. However, some tax codes use a marginal base of "Line", which will fail validation. A new entity called Sales tax parameters preset entity was created to allow you to import the marginal base calculation method first so you can then import tax codes | 
-| Accounts receivable            | Customers                              | The Customers entity was designed for use with Odata scenarios. For configurations, use the Customer definitions entity and the Customer details entity. The Customer definitions entities allows you to import the basic information about a customer so entities that require a customer will have that information. The Customer details entity contains addition information about a customer that you can add after parameters and reference data has been set up |
+| Accounts receivable            | Customers                              | The Customers entity was designed for use with Odata scenarios. For configurations, use the Customer definitions entity and the Customer details entity. The Customer definitions entities allows you to import the basic information about a customer, enabling entities that require a customer to have that information earlier in the import process. The Customer details entity contains additional information about a customer that you can add after parameters and reference data has been set up. |
 | Inventory management           | Warehouse locations                    | Some warehouses locations require a Location profile ID.   Location profile ids require a Location format. This information must be imported before the warehouse location  | 
 | Product information management | Products                               | The Products and Released Products entities should be used for configurations. The Product master and Released product master entities should be used for Odata scenarios |
 |                                | Product document attachments           | For Product document attachments and Released product document attachments, you must never skip staging because additional steps are performed in the staging environment. You must use a data package for export and for import  because the export file needs to be accompanied by a resources folder with the attechments. The entities support images, documents, notes, and links. When you export, you will see an image file with a name that looks like a GUID. It is a valid data package needed to complete the import |
-|                                | Product attribute values               | Product attribute values are assigned only when a user opens up the Attribute values page from the Products details page. You cannot import the values at this time unless this step was performed in the golden build. |
+|                                | Product attribute values               | Product attribute values are assigned only when a user opens up the Attribute values page from the Products details page. At this time, you cannot import the values at this time unless this step was performed in the golden build. |
 | Procurement                    | Vendor catalog                         | Please refer to the discussion for importing vendor catalogs in the Supply Chain Management blog https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/  |
 
 
 ### Remove the mapping for specific fields
-A golden build may not have customer-specific fields set up. These fields should be unmapped to ensure that the import works. For example, workers are stored in many tables but they may not be set up in a golden build. The following entities may need to be unmapped:
+A golden build may not have customer-specific fields set up. These fields should be unmapped to ensure that the import works. For example, workers are stored in many tables but they may not be set up in a golden build. 
+
+The following entities may need to be unmapped:
 
 | Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
@@ -248,21 +277,25 @@ A golden build may not have customer-specific fields set up. These fields should
 | Inventory management           | Warehouse current postal address       | Unmap the Picking store area and Input store area unless Retail information has been imported | 
 | Product information management | Products                               | Unmap NMFCCode and STCCCode. There are no entities available for those codes at this time |
 |                                | Released products                      | Unmap project category, default product color, default configuration, default product size, and default product style. This entity is self-referencing and has not yet been updated to load these fields in a single pass |
-|                                | Period template                        | The Period template entity is a shared entity. It can be filtered by Legal entity but the Period template lines entity does not have a Legal entity field. If you want to import a single legal entity, you can filter the period template. However, you must remove the period template lines that are not related to that legal entity |
+|                                | Period template                        | The Period template entity is a shared entity. It can be filtered by Legal entity but the Period template lines entity does not have a Legal entity field. If you want to import a single legal entity, you can filter the period template. However, at this time, you must remove the period template lines that are not related to that legal entity |
 |                                | Item coverage group                    | Unmap Period template ID unless they were already imported |
-| Procurement                    | Vendors                                | Unmap purchase site and warehouse unless they are set up. Unmap the 1099 box id and 1099 type unless you have opened the 1099 form. Unmap the vendor bank acccount ID. The vendor bank account entity will set up the link to the bank account when the vendor when it is imported |
+| Procurement                    | Vendors                                | Unmap purchase site and warehouse unless they are set up. Unmap the 1099 box id and 1099 type unless you have opened the 1099 form. Unmap the vendor bank acccount ID. The vendor bank account entity will set up the link to the bank account in the vendor record when it is imported |
 | Sales and marketing            | Leads                                  | Unmap LeadOpeningPersonnelNumber, LeadClosingPersonnelNumber, LeadResponsiblePersonnelNumber unless workers have been imported |
 
 
 ### Golden builds with multiple legal entities
-The templates are optimized for exporting a golden build with a single legal entity. 
+The templates can be used to export data from any company in your golden build. When you export both shared data and
+company data, the templates will export the shared data for all legal entities and then export the data for the legal
+entity that you are currently using. You can then switch companies and export the company data for additional legal entities 
+by using projects that do not included the shared entities. 
+
 If you are exporting from a golden build that has multiple legal entities in it 
 but you only want to import the data from one of those legal entities, you will need 
-to apply a filter on the legal entity fields to export the correct data. 
-This filter must remove all other entities except the one that you want.
+to apply a filter on the legal entity fields to export the only the data that you need for that legal entity. 
+This filter must remove all data for other legal entities except the one that you want.
 In some cases, you will need to take some additional steps to clean up the exported data.
 
-Most of the changes occur in the system setup and general ledger areas. We recommend that you set up a golden build that uses a single legal entity to eliminate these steps if you need this information from these areas. 
+Most of the changes listed below occur in the system setup and general ledger areas. If you export a golden build that uses a single legal entity, you should not need these filters. 
 
 The following entities need filters or special handling when you export the data:
 
@@ -311,7 +344,9 @@ The following entities need filters or special handling when you export the data
 |                                | Tracking number groups                 | Apply a filter to Number sequence scope data area  | 
                          
 ### Changing the legal entity value before importing
-If you want to change the legal entity ID to another value, you must change the values in all fields like those listed above to the new legal entity value. For example, for Legal entities, change Company from the exported value to a new value in the exported file. There are many places where the legal entity ID is stored so making this change can be difficult and cause errors. We are considering a feature to help do this work in a future release.
+If you want to change the legal entity ID to another value, you must change the values in all fields like those listed above to the new legal entity value. For example, for Legal entities, change Company from the exported value to a new value in the exported file. 
+
+There are many places where the legal entity ID is stored so making this change can be difficult and cause errors. We are considering a feature to help do this work in a future release.
 
 Import a configuration
 ----------------------
@@ -341,6 +376,10 @@ The process for importing a configuration is as follows:
     data format will be populated automatically. If you have not set up
     the default file extensions, then select a source data format first
     before you select the file.
+    
+6)  When you load a package, the import page reads the list of entities from the package first. 
+    A progress bar displays how much of the package has been read. Once the list of entities is read, 
+    the import page starts loading the data in the package. This process can take some time to execute.
 
 6)  Use Remove entity to remove one or more selected entities
 
@@ -362,31 +401,6 @@ some additional features to control the export process:
 Now that you have completed your configuration, use the import button to
 start the import. You can monitor your results on the execution details
 page that is displayed.
-
-Using the data management workspace
------------------------------------
-
-The data management workspace provides access
-to key tasks for data management while providing information on projects
-and project execution tasks. For configurations, you should be using the
-enhanced view, which you can enable using the enhanced view button. If
-your system default in the framework parameters has been changed to
-enhanced, that view will open by default.
-
-The first list on the page is the project list. Each project is
-displayed with the type of configuration (import or export) and a
-project category (project, configuration, integration, and other). Use
-the selections to the left of the grid to filter by the appropriate
-project. To open a project, select the project and click on load project
-to launch the import or export form. You can also download the project
-definitions with the download button.
-
-The second list provides details about the projects that you have
-executed. Use the selections to the left of the grid to filter by the
-data range that was executed for the job. You can view the execution
-details by selecting a job and clicking on the execution details menu.
-For export tasks, you can download the data from the workspace using the
-download page button.
 
 Templates
 ---------
@@ -453,6 +467,8 @@ We have created larger templates that cover multiple module areas. You can use t
 -   System and Shared, which includes system setup, global address book, shared general ledger, and workflow
 -   Financials, which includes general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting
 -   Supply chain management, which includes inventory management, product management, procurement, sales and marketing, limited warehouse management, production control, and costing
+
+The Expense and Project Management templates are not included in a larger template but they are designed to easily merge into a project that uses other templates.
  
 ### Master data in the templates
 --------------------------------
@@ -599,6 +615,8 @@ We have added a class called DMFImportExportSequencer that will sequence the dat
 
 We have added the class to a number of self referencing entities and we will add it to more entities as needed. Further examples of this type of entity includes:
 -   Customers
+-   Customer definitions
+-   Customer details
 -   Tax codes
 -   Budget control groups
 -   Projects
