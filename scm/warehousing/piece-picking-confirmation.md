@@ -50,7 +50,7 @@ Piece picking works for all counting work and for the initial pick for any type 
 The following options become available for selection when the work type is pick or counting.
 
 | Option        | Description   | 
-| ------------- |:-------------:|
+| ------------- | ------------- |
 | Piece picking confirmation   | Available for pick and counting work types. Product cofirmation is automatically slected. Allows you to confirm each piece of inventory from the mobile device. | 
 | Maximum number of pieces     | Available for pick work, if piece picking confirmation is enabled. Sets a limit to the number of pieces that you must confirm. |  
 
