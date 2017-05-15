@@ -62,8 +62,8 @@ Deployable packages from third parties can be manually installed on a developmen
 
 For instructions on how to install a deployable package on a development VM, refer to the article [Install a deployable package](install-deployable-package.md)
 
-[!NOTE]
-Do not install a software deployable package directly on the build VM. Use source control as described in this article. Only binary updates should be installed on build VMs.
+>[!NOTE]
+>Do not install a software deployable package directly on the build VM. Use source control as described in this article. Only binary updates should be installed on build VMs.
 
 After installing the deployable package on a development VM, follow these steps to add the runtime package to source control:
 
