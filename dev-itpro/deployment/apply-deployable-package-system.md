@@ -34,16 +34,16 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include[banner](../includes/banner.md)]
 
+**Note:** Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. Please plan accordingly.
 
-Supported environments
-----------------------
+## Supported environments
 
-Package deployment using automated flows in Dynamics 365 for Operations Lifecycle Services (LCS) are supported on the following topologies:
+Package deployment using automated flows in Dynamics 365 for Operations Lifecycle Services (LCS) is supported on the following topologies:
 
 -   **LCS Implementation Project**: All environments (Dev, Build, Demo, Tier-2 Sandbox, and Production) are supported. Automated package application is self-serve on all environments except Production. For Production environments, customers must submit a request through LCS to the Service Engineering team to apply packages.
--   **LCS Partner or trial Projects**: Demo- and single-box Dev/Test environments are supported.
+-   **LCS Partner or trial Projects**: Demo and single-box Dev/Test environments are supported.
 
-For the following topologies, you must RDP to the envrionment (Remote Desktop) and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
+For the following topologies, you must remote desktop (RDP) to the envrionment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
 
 -   Local development environments (Downloadable VHD)
 -   Multi-box Dev/Test environments in Azure (Partner and trial projects)
@@ -57,36 +57,37 @@ For the following topologies, you must RDP to the envrionment (Remote Desktop) a
 -   **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created on a development or build environment.
 -   **Binary package** – A deployable package that contains binary dynamic-link libraries (DLLs) that the platform and application depend on.
 -   **Combined Retail deployable package** – A combined deployable package is a combination of various retail packages that are generated after the Retail code is combined.
--   **Merged package** –** **A package that is created by merging one package of each type. For example, one Binary package, one AOT package, and one Retail package. The packages are merged in the Asset Library for the project in LCS.
+-   **Merged package** – A package that is created by merging one package of each type. For example, one Binary package, one AOT package, and one Retail package. The packages are merged in the Asset Library for the project in LCS.
 
 ## Prerequisite steps
--   **Ensure that the package to be applied is valid**: When a package is uploaded to the Asset Library, it is not analyzed and selecting on the package shows the package state to be Not Validated in the right hand pane. Once a package has been validated and it passes the validation, only then can it be applied to an environment using the below flows. The state of the package will be updated in the Asset Library to indicate whether it is valid or not. This is important to ensure that the Production environment does not get affected by packages that don't meet the guidelines.
-    -   Kind of validations:
+-   **Ensure that the package to be applied is valid**: When a package is uploaded to the Asset Library, it is not analyzed. Selecting the package shows the package state in the right pane to be **Not Validated**. A package must pass validation before it can be applied to an environment using the following procedures. The state of the package will be updated in the Asset Library to indicate whether it is valid or not. We require validation to ensure that Production environments are not  affected by packages that don't meet the guidelines.
+    -   Types of validations:
         -   Basic package format validations
         -   Platform version checks
         -   Types of packages
 -   **If you are updating a build environment**, see [Prerequisite steps for build environments](#prerequisite-steps-for-build environments).
--   **Ensure that the package is first applied on sandbox environment before being applied on the Production environment**: In order to ensure that the Production environment is always in a good state, we want to make sure that the package is tested on a sandbox environment before it gets applied to Production. Hence, make sure the package is first applied using the automated flows in sandbox before it is applied in Production.
--   **If you want to apply multiple packages, then create a merged package that can be applied first on a sandbox, followed by the Production**: Applying a single package on an average environment takes about 5 hours of downtime. Instead of taking additional hours of downtime for multiple packages, we have added a feature that enables you to combine a single package of each type. So if you select a binary package and an application deployable package in the asset library, it enables a button called **Merge** in the toolbar. Clicking on this button will allow you to merge these two packages into a single package reducing the total downtime to half.
+-   **Ensure that the package is first applied on sandbox environment before being applied on the Production environment**: In order to ensure that the Production environment is always in a good state, we want to make sure that the package is tested on a sandbox environment before it gets applied to Production. Therefore, make sure the package is first applied using the automated flows in your Sandbox before you request that it be applied in Production.
+-   **If you want to apply multiple packages, then create a merged package that can be applied first on a Sandbox, followed by Production**: Applying a single package on an average environment takes about 5 hours of downtime. Instead of taking additional hours of downtime for multiple packages, we have enabled you to create a combined that contains single package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button is enabled in the toolbar. Clicking on this button will allow you to merge these two packages into a single package, reducing the total downtime to half.
 
 ## Apply package on a non-production environment using LCS
-**Note:** Package application causes system downtime. All the relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
+**Note:** Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
-Before you begin, verify that the deployable package has been uploaded to your LCS Asset library.
+Before you begin, verify that the deployable package has been uploaded to your LCS Asset Library.
 
 1.  For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
-    -   For an application (AOT) deployable package (Resulting from an X++ hotfix or application customizations and extensions), create the deployable package on your development or build environment than upload it to the LCS Asset Library.
-
+    For an application (AOT) deployable package (Resulting from an X++ hotfix or application customizations and extensions), create the deployable package on your development or build environment than upload it to the LCS Asset Library.
 2.  Open the **Environment details** view for the environment where you want to apply the package.
 3.  Click **Maintain** &gt; **Apply updates** to apply an update.
-4.  Select the package to apply. The filter at the top helps filtering through the list.
+4.  Select the package to apply. Use the filter at the top to help find your package.
 5.  Click **Apply**. Notice that the status in the upper right of the **Environment details** view changes to **Queued**, and that an **Environment updates** section now shows the progress of the package. [![parallelexecutionsandbox\_queuedstate](./media/parallelexecutionsandbox_queuedstate.jpg)](./media/parallelexecutionsandbox_queuedstate.jpg)
 6.  Refresh the page to see the progress of the package application. Notice that the servicing status is **In Progress**, and the environment status is **Servicing**. [![parallelexecutionsandbox\_servicingstate](./media/parallelexecutionsandbox_servicingstate.png)](./media/parallelexecutionsandbox_servicingstate.png)
 7.  Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**. [![parallelexecutionsandbox\_signedoffstate](./media/parallelexecutionsandbox_signedoffstate.png)](./media/parallelexecutionsandbox_signedoffstate.png)
 8.  To sign off on the package application, click **Sign off** if there are no issues. If issues occurred when you applied the package, click **Sign off with issues**.
 
 ### Prerequisite steps for build environments
-If a build VM has already been used for one or more builds, you should RDP (Remote Desktop) to the VM and **restore the metadata packages folder** from the metadata backup folder before you apply a binary update to the VM. You should then **delete the metadata backup**. These steps help ensure that a platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
+If a build VM has already been used for one or more builds, you should RDP to the VM and **restore the metadata packages folder** from the metadata backup folder before you apply a binary update to the VM. You should then **delete the metadata backup**. These steps help ensure that a platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. 
+
+To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
 
     if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
 
@@ -98,7 +99,7 @@ After the metadata backup has been restored, **delete** (or rename) the metadata
 
 #### General troubleshooting/diagnostics
 
-If package application isn't successful, you can download either the logs or the runbook to see the detailed logs. You can also use Remote Desktop Protocol (RDP) to establish a remote connection to an environment to fix issues. If you must report the issue to Microsoft, be sure to include the activity ID that is reported in the **Environment updates** section. [ ](./media/applypackage_sandbox_10.png)[![parallelexecutionsandbox\_troubleshooting](./media/parallelexecutionsandbox_troubleshooting.jpg)](./media/parallelexecutionsandbox_troubleshooting.jpg)
+If package application isn't successful, you can download either the logs or the runbook to see the detailed logs. You can also use Remote Desktop Protocol (RDP) to establish a remote connection to an environment to fix issues. If you must report the issue to Microsoft, be sure to include the activity ID that is reported in the **Environment updates** section. [Apply a package in a sandbox](./media/applypackage_sandbox_10.png)[![Troubleshooting](./media/parallelexecutionsandbox_troubleshooting.jpg)
 
 #### Using the logs
 
@@ -116,7 +117,7 @@ If package application fails, you have two options:
 
 -   Click **Resume** to retry the failed operation.
 
-[![parallelexecutionsandbox\_failedstate](./media/parallelexecutionsandbox_failedstate.jpg)](./media/parallelexecutionsandbox_failedstate.jpg)
+[!Failed state](./media/parallelexecutionsandbox_failedstate.jpg)]
 
 -   Click **Abort** to stop package application. **Note:** If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue. [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 
@@ -139,24 +140,23 @@ In a Production environment, package application through LCS is not self-serve l
     -   **Request status** – This field indicates the status of the request that you submitted to Microsoft.
     -   **Actionable by** – This field indicates who needs to take action.
 
-    [![Request status and Actionable by fields](./media/applypackage_prod_7-1024x269.png)](./media/applypackage_prod_7.png)
+    [![Request status and Actionable by fields](./media/applypackage_prod_7-1024x269.png)
 11. The Service Engineering team can either accept or deny the request.
-    -   If the request is accepted, the Service Engineering team begins to update the environment. [![Accepted request: Request status = Request accepted, Actionable by = Microsoft](./media/applypackage_prod_9-1024x384.png)](./media/applypackage_prod_9.png)
-    -   If the request is denied, Microsoft informs the customer about the reason for the denial and the action that the customer must take. The customer can then reschedule the request, change the package, or cancel the request. [![Denied request: Request status = Request denied, Actionable by = Customer/Partner](./media/applypackage_prod_8-1024x322.png)](./media/applypackage_prod_8.png)
-
-    At any time, the customer can use the **Comments** field to post comments to the request. [![Example of comments that are posted to a request](./media/applypackage_prod_10-1024x336.png)](./media/applypackage_prod_10.png)
-12. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of the package application. [![Servicing status and Request status fields](./media/applypackage_prod_11-1024x399.png)](./media/applypackage_prod_11.png) You can also see the number of steps that have been run, out of the total number of steps that are available. [![Progress indicator](./media/applypackage_prod_12-1024x414.png)](./media/applypackage_prod_12.png)
+    -   If the request is accepted, the Service Engineering team begins to update the environment. [![Accepted request: Request status = Request accepted, Actionable by = Microsoft](./media/applypackage_prod_9-1024x384.png)
+    -   If the request is denied, Microsoft informs the customer about the reason for the denial and the action that the customer must take. The customer can then reschedule the request, change the package, or cancel the request. [![Denied request: Request status = Request denied, Actionable by = Customer/Partner](./media/applypackage_prod_8-1024x322.png)
+    At any time, the customer can use the **Comments** field to post comments to the request. [![Example of comments that are posted to a request](./media/applypackage_prod_10-1024x336.png)
+12. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of the package application. [![Servicing status and Request status fields](./media/applypackage_prod_11-1024x399.png)](./media/applypackage_prod_11.png) You can also see the number of steps that have been run, out of the total number of steps that are available. [![Progress indicator](./media/applypackage_prod_12-1024x414.png)
 
 ### Successful package application
 
--   After the deployment is successfully completed, the **Servicing** **status** field is set to **Completed**, but the **Request status** is still set to **In progress**, because the request hasn't yet been closed. [![Successful deployment: Servicing status = Completed, Request status = In progress](./media/applypackage_prod_13-1024x392.png)](./media/applypackage_prod_13.png)
+-   After the deployment is successfully completed, the **Servicing** **status** field is set to **Completed**, but the **Request status** is still set to **In progress**, because the request hasn't yet been closed. [![Successful deployment: Servicing status = Completed, Request status = In progress](./media/applypackage_prod_13-1024x392.png)]
 -   After the Service Engineering team has finished applying the request, you must close the request by clicking **Close servicing request**.
 -   When you're closing a successful request, in the **Edit work item details** dialog box, set the **Service request status** field to **Succeeded**, and then click **Submit**.
 
 ### Unsuccessful package application
 
--   If package application fails, Microsoft will investigate the issue. The **Servicing status** will indicate that package application has failed. [![Unsuccessful package deployment: Servicing status = Failed](./media/applypackage_prod_17-1024x289.png)](./media/applypackage_prod_17.png)
--   When the deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request with the new package. [![Comment from Microsoft that changes were reverted, and that the customer must validate the environment](./media/applypackage_prod_18-1024x346.png)](./media/applypackage_prod_18.png)
+-   If package application fails, Microsoft will investigate the issue. The **Servicing status** will indicate that package application has failed. [![Unsuccessful package deployment: Servicing status = Failed(./media/applypackage_prod_17.png)
+-   When the deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request with the new package. [![Comment from Microsoft that changes were reverted, and that the customer must validate the environment](./media/applypackage_prod_18-1024x346.png)]
 -   When you're closing a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
 ## Deploying packages in Retail environments
