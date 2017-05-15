@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Electronic reporting framework
-description: 
+description: How to configure parameters of the Electronic reporting (ER) framework
 author: kfend
 manager: AnnBe
 ms.date: 05/11/2017
@@ -36,7 +36,7 @@ This article describes the pages that you use to set up basic functionality for 
 
 ## Prerequisites for Electronic reporting setup
 
-Before you can set up Electronic reporting, you must set up required document types in Document management:
+Before you can set up Electronic reporting (ER), you must set up required document types in Document management:
 
 * For using MS Office documents as templates for ER reports;
 * For storing outputs of ER reports in jobs archive;
@@ -81,6 +81,6 @@ In addition to the basic functionality, Electronic reporting has other functiona
 **A**: Microsoft provider is used to mark ER configurations that have been initially designed and are maintained by Microsoft company. It is expected that new versions of such configurations will be shared by Microsoft in the future. It is the wrong practice to mark the Microsoft provider as active. If you would do this, you would be able to update these configurations: change the content, register new versions for them, etc. That will cause problems with the import and adoption of new versions of these configurations received from Microsoft company in the future. Instead, register a new ER provider for your company and use it for your ER configurations maintenance. To re-use a Microsoft configuration, select it as the base for your derived copy of it. To incorporate provided by Microsoft changes, rebase your configuration to a new version of the Microsoft one whenever it becomes available.
 
 ## See also
-![Electronic reporting overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
+[Electronic reporting overview](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
 
-![Electronic reporting destinations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/electronic-reporting-destinations)
+[Electronic reporting destinations](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/electronic-reporting-destinations)
