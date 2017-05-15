@@ -29,54 +29,30 @@ ms.dyn365.ops.version: Platform update 7
 
 ---
 # Copy configuration data from one company to another
+To copy configuration data, you must first export it from one company, and then import it to another.  
 
 ## Export a configuration
-The data management workspace is your hub for managing configuration
-data projects and for exporting data packages. To build a configuration, you
-need to define a data project and export the information represented by
-entities.
+The Data management workspace is your hub for managing configuration data projects and for exporting data packages. To build a configuration, you need to define a data project and export the information represented by entities.
 
-The process for creating configurations is as follows:
+> [!NOTE]
+> This topic assumes that you are using the Enhanced view of the Data management workspace. 
 
-1)  Open the data management workspace and switch to the Enhanced view (if you are still using the standard view).
+The process for creating a configuration data project is as follows:
 
-2)  Select the Export tile in the data management workspace.
-
-3)  Select New to create the configuration project and add an ID and
-    name that represents the configuration
-
-4)  Select the data project operation type (Export) and project category
-    (Configuration).
-
-5)  Now add the entities that represent the information that you want to
-    export. You can add entities using several methods:
-
-    a.  Add entity – enter the first part of name of the entity until it
-        appears in the lookup.
-
-    b.  Add multiple – enter any part of the entity name, use the lookup
-        for application module, enter any part of the tag name, and/or
-        use the lookup for the entity category to show a list of
-        entities. Tab off the lookup field to activate the filter. Select the entities in the grid that you want to add
-
-    c.  Add file – browse to a file that has a name that matches an
-        entity and a file extension that matches the file extensions that were added in the data sources.
-
-    d.  Add template – select from a list of templates that you have
-        loaded into your instance 
-
-6)  Select a target data format. The system remembers that last data
-    format that you selected or, if you select a file, it will default
+1)  Open the Data management workspace and, if you are in Standard view, click Enhanced.
+2)  Click the Export tile.
+3)  Click New to create a configuration data project and add an ID and name that represent the configuration.
+4)  Set the operation type for the data project to be **Export** and the project category to be **Configuration**.
+5)  Add the entities that represent the information that you want to export. You can add entities using several methods:
+    a.  Add entity – enter the first part of name of the entity until it appears in the lookup.
+    b.  Add multiple – enter any part of the entity name, use the lookup for application module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Tab away from the Lookup field to activate the filter. Select the entities in the grid that you want to add.
+    c.  Add a file – browse to a file that contains a name that matches an entity and a file extension that matches the file extension that is in your data sources.
+    d.  Add a template – select from a list of templates that you have loaded in your instance. 
+6)  Select a target data format. The system remembers that last data format that you selected or, if you select a file, it will default
     the data format to the data source that matches the file extension. 
-    Note that composite entities require an XML format.
-
-7)  Click on the Add button and the entities will be added to
-    your data project. If you load a template and there is already an
-    existing entity in the project that matches an entity in the
-    template, the entity will be replaced by the enity in the template that
-    you loaded. Some templates are very large and it may take a few seconds to load them.
-
-8)  Use Remove entity to remove one or more selected entities
+    **Note** Composite entities require an XML format.
+7)  Click the **Add** button. If you load a template and there is already an existing entity in the project that matches an entity in the template, the entity will be replaced by the enity in the template that you loaded. Some templates are very large and it may take a few seconds to load them.
+8)  Click **Remove entity** to remove one or more selected entities.
 
 You are ready to export a configuration. However, you may want to use
 some additional features to control the export process:
