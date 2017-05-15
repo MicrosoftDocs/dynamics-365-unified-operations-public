@@ -51,4 +51,4 @@ To use this new feature, specify a comma separated list of the names of packages
 
 Note that the name of the package is not necessarily the name of the model, but typically is the name of the folder it resides in. Alternatively, you can copy/paste the package name from one of its models' descriptor files (found in the **ModelModule** field in the XML).
 
-Once set the build process will still build the code, and still execute any tests contained in those packages. However, the deployable package created by the build will not include these packages.
+Once set, the build process will still build the code and still execute any tests contained in those packages. However, the deployable package created by the build will not include these packages.

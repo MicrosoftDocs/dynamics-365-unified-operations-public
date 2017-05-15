@@ -35,7 +35,7 @@ When working with solutions from third parties, customers may receive different 
 
 In this article we will outline a recommended strategy for managing, distributing and deploying these third party solutions.
 
-## Models From Third Parties
+## Models from third parties
 Any source code received from third parties will have to be compiled into a binary and included in a deployable package. Models should be installed on a development VM and added to source control. From there, the build VM can pick up the source code, build it and include it on a deployable package. Other developers can just synchronize the model from VSTS onto their development VMs without the need to manually install it as well.
 To install a model on a development VM, refer to the [Export and import a model](models-export-import.md) article.
 
@@ -57,7 +57,7 @@ After installing the model, follow these steps to add the new model to source co
 11. Open the **Pending Changes** window from the **Team Explorer** pane, or by opening it from the menu under **View > Other Windows > Pending Changes**
 12. Review the changes, provide and check-in comment and click **Check In**
 
-## Deployable Packages From Third Parties
+## Deployable packages from third parties
 Deployable packages from third parties can be manually installed on a development VM, and the installed artifacts added to source control. Other developers on other VMs can subsequently synchronize their local workspace to also receive the runtime package on their VMs without the need to install the deployable package. The build VM's build process will ensure the runtime packages are available on the build VM for any extensions or other dependencies. On platform update 6 and newer, by default these runtime packages will be included in the final deployable package created from the build VM. See [Deploying Third Party Code](#deploying-third-party-code).
 
 For instructions on how to install a deployable package on a development VM, refer to the article [Install a deployable package](install-deployable-package.md)
@@ -76,7 +76,7 @@ After installing the deployable package on a development VM, follow these steps 
 7. Open the **Pending Changes** window from the **Team Explorer** pane, or by opening it from the menu under **View > Other Windows > Pending Changes**
 8. Review the changes, provide and check-in comment and click **Check In**
 
-## Deploying Third Party Code
+## Deploying third party code
 Since the models and runtime packages are in source control, other developers using other development environments can just synchronize the models and packages to their workspace.
 The automated build process will also pick up the runtime packages with platform update 4 and above, so dependencies in packages being built resolve correctly. This feature is also available for platform update 3 and platform update 2 through a hotfix.
 
