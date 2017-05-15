@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Task recorder and Help for POS | Microsoft Docs
+title: Task recorder and Help for POS
 description: This topic describes the how to use Task recorder in Retail Modern POS and Cloud POS.
 author: mugunthanm
 manager: AnnBe
-ms.date: 0000-00-00 00:00:00
+ms.date: 2017-05-15
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,10 +15,10 @@ ms.technology:
 
 # ms.search.form:  
 # ROBOTS: 
-# audience: 
+# audience: Application User
 # ms.devlang: 
 ms.reviewer: 41
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
@@ -55,14 +55,19 @@ To enable task recording at POS, follow these steps.
 Follow these steps to create a new recording by using Task recorder.
 
 1.  Start Retail Modern POS or Cloud POS, and sign in.
-2.  On the **Settings** page, in the **Task Recorder** section, click **Open task recorder**. The **Task recorder** pane appears. You can click the **Close** button (**X**) in the upper-right corner to close the **Task recorder** pane before you begin a new recording. To reopen the pane, repeat step 2. [![Task recorder pane](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
-3.  Enter a name and description for the recording, and then click **Start**. The recording session begins as soon as you click **Start**. **Note:** If you click the **Close** button (**X**) in the upper-right corner while recording is in progress, the **Task recorder** pane is closed, but the recording session isn't ended. To reopen the Task recorder pane, click the Help button (question mark) at the top of the screen. [![Question mark](./media/help.jpg)](./media/help.jpg)
+2.  On the **Settings** page, in the **Task Recorder** section, click **Open task recorder**. The **Task recorder** pane appears. You can click the **Close** button (**X**) in the upper-right corner to close the **Task recorder** pane before you begin a new recording. To reopen the pane, repeat step 2.
+[![Task recorder pane](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+
+3.  Enter a name and description for the recording, and then click **Start**. The recording session begins as soon as you click **Start**. **Note:** If you click the **Close** button (**X**) in the upper-right corner while recording is in progress, the **Task recorder** pane is closed, but the recording session isn't ended. To reopen the Task recorder pane, click the Help button (question mark) at the top of the screen. 
+[![Question mark](./media/help.jpg)](./media/help.jpg)
+
 4.  After you click **Start**, Task recorder enters recording mode. The **Task recorder** pane shows information and controls that are related to the recording process.
 5.  Perform the actions that you want to perform in the Retail Modern POS or Cloud POS user interface (UI).
 6.  To end the recording session, click **Stop**.
 
 ## Download options
-After you end the recording session, several options are shown, so that you can download your recording. [![Download options](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+After you end the recording session, several options are shown, so that you can download your recording. 
+[![Download options](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### Save to this PC
 
@@ -100,11 +105,13 @@ Task recorder can capture screenshots of the Retail Modern POS UI as you record 
 You can specify the beginning and end of a set of grouped steps by using the **Start task** and **End** **task** buttons. Click **Start task** to add a “Start Task” step, and then perform the steps that should be included in the group. After you've finished performing the steps for the group, click **End task**. Tasks help you organize your procedures. Tasks can be nested within other tasks. In this way, you can better organize very long and complex business processes.
 
 ## Adding annotations
-An annotation is additional text that you add to a step in a recording. For example, you can use annotations to give the user more context or instructions. You can add annotations before or after a step. You can add an annotation to any step by clicking the **Edit** button (pencil symbol) to the right of the step. [![Edit button for a step](./media/annotate.jpg)](./media/annotate.jpg)
+An annotation is additional text that you add to a step in a recording. For example, you can use annotations to give the user more context or instructions. You can add annotations before or after a step. You can add an annotation to any step by clicking the **Edit** button (pencil symbol) to the right of the step. 
+[![Edit button for a step](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### Texts and notes
 
-You can use the **Texts** and **Notes** fields to add text that should be associated with a step in a Task guide. [![Text and Notes fields](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+You can use the **Texts** and **Notes** fields to add text that should be associated with a step in a Task guide.
+[![Text and Notes fields](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### Text
 
@@ -115,5 +122,7 @@ Text that you enter in the **Text** field appears *above* the step text in the T
 Text that you enter in the **Notes** field appears *below* the step text in the Task guide. To read the note text, the user must expand the step text in the pop-up window. This location is appropriate for optional reading material or other information that might be useful to the user, but that the user doesn't require in order to complete the action.
 
 ## Help at Retail Modern POS and Cloud POS
-To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system.](https://ax.help.dynamics.com/en/wiki/working-with-help/#connecting-the-help-system) Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Microsoft Dynamics AX Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button at the top of the screen and then in the search box type your process name and hit the search button. [![Help button](./media/help.jpg)](./media/help.jpg) When you click a Task guide in the search results, you can either view the steps as a Help topic or export the steps to a Word document. Note: Help system in Retail Modern POS and Cloud POS will not bring the task guides automatically based on your form or operations you have to type the process name in search box and hit the search button to get the results.
+To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system.](https://ax.help.dynamics.com/en/wiki/working-with-help/#connecting-the-help-system) Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Microsoft Dynamics AX Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button at the top of the screen and then in the search box type your process name and hit the search button. 
+[![Help button](./media/help.jpg)](./media/help.jpg) 
+When you click a Task guide in the search results, you can either view the steps as a Help topic or export the steps to a Word document. Note: Help system in Retail Modern POS and Cloud POS will not bring the task guides automatically based on your form or operations you have to type the process name in search box and hit the search button to get the results.
 
