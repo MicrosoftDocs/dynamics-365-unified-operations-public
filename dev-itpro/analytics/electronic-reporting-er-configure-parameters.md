@@ -69,12 +69,15 @@ In addition to the basic functionality, Electronic reporting has other functiona
 
 ## Frequently asked questions
 **Q**: I use the Microsoft Dynamics 365 for Operations application that is running on a VM with 2 CPUs each of which contains 4 cores. What is the optimal (from standpoint of the overall system performance) value for the number of parallel threads for loading ER configuration from LCS?
+
 **A**: 5 or 6.  The following empirical formula is suggested to get this value: Cores/2 + 1(2).
 
 **Q**: I have added to AOT my new custom table. I created a new ER model mapping configuration for my ER data model one. Designing this model mapping, I tried to add a new data source of the **Table records** type that refers to my table. I could add my table name manually to the **Table** lookup and ER model mapping accepted it with no errors or warnings. But why did not I find my table’s name in list of available choices offered by the **Table** lookup of this data source?
+
 **A**: To have the name of your custom table in this lookup, run the **Rebuild table references** procedure to synchronize the ER meta data (data model of the Microsoft Dynamics 365 for Operations application for ER) using to access application data.
 
 **Q**: In my instance of the Microsoft Dynamics 365 for Operations that was deployed for development and testing purposes, on the ER workspace page I can select Microsoft provider as active. Why I can’t do the same in my production environment?
+
 **A**: Microsoft provider is used to mark ER configurations that have been initially designed and are maintained by Microsoft company. It is expected that new versions of such configurations will be shared by Microsoft in the future. It is the wrong practice to mark the Microsoft provider as active. If you would do this, you would be able to update these configurations: change the content, register new versions for them, etc. That will cause problems with the import and adoption of new versions of these configurations received from Microsoft company in the future. Instead, register a new ER provider for your company and use it for your ER configurations maintenance. To re-use a Microsoft configuration, select it as the base for your derived copy of it. To incorporate provided by Microsoft changes, rebase your configuration to a new version of the Microsoft one whenever it becomes available.
 
 ## See also
