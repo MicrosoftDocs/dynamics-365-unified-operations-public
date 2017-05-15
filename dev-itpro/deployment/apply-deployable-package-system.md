@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply a deployable package on a Dynamics 365 for Operations environment
-description: This topic describes how to deploy either a binary hotfix for an AOS or a deployable package that was created in your development environment.
+description: This topic describes how to deploy a binary update or an Application (AOT) deployable package that was created in your development/build environment.
 author: manalidongre
 manager: AnnBe
 ms.date: 04/22/2017
@@ -38,20 +38,20 @@ ms.dyn365.ops.version: Platform update 1
 Supported environments
 ----------------------
 
-Package deployment using automated flows in Dynamics 365 for Operations Lifecycle Services are supported on the following topologies:
+Package deployment using automated flows in Dynamics 365 for Operations Lifecycle Services (LCS) are supported on the following topologies:
 
--   **Implementation Project**: All environments (Dev, Test, Build, Demo, Sandbox, and Production) are now supported. Automated package application is self-serve on all environments except Production. For Production environments, customers must submit a request through LCS to the Service Engineering team to apply packages.
--   **Partner Projects**: Demo- and single-box Dev/Test environments are supported.
+-   **LCS Implementation Project**: All environments (Dev, Build, Demo, Tier-2 Sandbox, and Production) are supported. Automated package application is self-serve on all environments except Production. For Production environments, customers must submit a request through LCS to the Service Engineering team to apply packages.
+-   **LCS Partner or trial Projects**: Demo- and single-box Dev/Test environments are supported.
 
-Manual package deployment must be used for the following topologies. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
+For the following topologies, you must RDP to the envrionment (Remote Desktop) and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
 
--   Downloadable VHD
--   Partner Projects: Multi-box Dev/Test topology deployments.
+-   Local development environments (Downloadable VHD)
+-   Multi-box Dev/Test environments in Azure (Partner and trial projects)
 
 ## Key concepts
--   **Deployable package** – A deployable package is a unit of deployment that can be applied in any Dynamics 365 for Operations environment. A deployable package can be a binary hotfix to the Application Object Server (AOS) runtime components, an updated Dynamics 365 for Operations customization package, or a new Dynamics 365 for Operations customization/application module package. [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
+-   **Deployable package** – A deployable package is a unit of deployment that can be applied in any Dynamics 365 for Operations environment. A deployable package can be a binary update to the platform or other runtime components, an updated Dynamics 365 for Operations application (AOT) package, or a new Dynamics 365 for Operations application (AOT) package. [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 -   **Runbook** – The deployment runbook is a series of steps that are generated for applying the deployable package to the target environment. Some of the steps are automated, and some are manual. AXUpdateInstaller lets you run these steps one at a time and in the correct order. [![Example of a deployment runbook](./media/applypackage_runbook-1024x528.jpg)](./media/applypackage_runbook.jpg)
--   **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary hotfix, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
+-   **AXUpdateInstaller** – When you create a customization package from Microsoft Visual Studio or a Microsoft binary update, the installer executable is bundled together with the deployable package. The installer generates the runbook for the specified topology. The installer can also run steps in order, according to the runbook for a specific topology.
 
 ## Supported package types
 -   **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created on a development or build environment.
@@ -65,16 +65,17 @@ Manual package deployment must be used for the following topologies. For informa
         -   Basic package format validations
         -   Platform version checks
         -   Types of packages
+-   **If you are updating a build environment**, see [Prerequisite steps for build environments](#prerequisite-steps-for-build environments).
 -   **Ensure that the package is first applied on sandbox environment before being applied on the Production environment**: In order to ensure that the Production environment is always in a good state, we want to make sure that the package is tested on a sandbox environment before it gets applied to Production. Hence, make sure the package is first applied using the automated flows in sandbox before it is applied in Production.
 -   **If you want to apply multiple packages, then create a merged package that can be applied first on a sandbox, followed by the Production**: Applying a single package on an average environment takes about 5 hours of downtime. Instead of taking additional hours of downtime for multiple packages, we have added a feature that enables you to combine a single package of each type. So if you select a binary package and an application deployable package in the asset library, it enables a button called **Merge** in the toolbar. Clicking on this button will allow you to merge these two packages into a single package reducing the total downtime to half.
 
-## Apply package on demo/dev/test/build/sandbox environments by using LCS
+## Apply package on a non-production environment using LCS
 **Note:** Package application causes system downtime. All the relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
 Before you begin, verify that the deployable package has been uploaded to your LCS Asset library.
 
-1.  For a binary hotfix, upload the hotfix directly to the Asset library. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
-    -   For an application (AOT) deployable package (Resulting of from an X++ hotfix or application customization and extensions), create the deployable package on your development or build environment than upload it to the LCS Asset Library.
+1.  For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
+    -   For an application (AOT) deployable package (Resulting from an X++ hotfix or application customizations and extensions), create the deployable package on your development or build environment than upload it to the LCS Asset Library.
 
 2.  Open the **Environment details** view for the environment where you want to apply the package.
 3.  Click **Maintain** &gt; **Apply updates** to apply an update.
@@ -83,6 +84,15 @@ Before you begin, verify that the deployable package has been uploaded to your L
 6.  Refresh the page to see the progress of the package application. Notice that the servicing status is **In Progress**, and the environment status is **Servicing**. [![parallelexecutionsandbox\_servicingstate](./media/parallelexecutionsandbox_servicingstate.png)](./media/parallelexecutionsandbox_servicingstate.png)
 7.  Continue to refresh the page to see the status updates for the package application request. When the package has been applied, the environment status changes to **Deployed**, and the servicing status changes to **Completed**. [![parallelexecutionsandbox\_signedoffstate](./media/parallelexecutionsandbox_signedoffstate.png)](./media/parallelexecutionsandbox_signedoffstate.png)
 8.  To sign off on the package application, click **Sign off** if there are no issues. If issues occurred when you applied the package, click **Sign off with issues**.
+
+### Prerequisite steps for build environments
+If a build VM has already been used for one or more builds, you should RDP (Remote Desktop) to the VM and **restore the metadata packages folder** from the metadata backup folder before you apply a binary update to the VM. You should then **delete the metadata backup**. These steps help ensure that a platform update will be applied on a clean environment. The next build process will then detect that no metadata backup exists and will automatically create a new one. This new metadata backup will include the updated platform. To determine whether a complete metadata backup exists, look for a BackupComplete.txt file in I:\\DynamicsBackup\\Packages (or C:\\DynamicsBackup\\Packages on a downloadable virtual hard disk \[VHD\]). If this file is present, a metadata backup exists, and the file will contain a timestamp that indicates when it was created. To restore the deployment's metadata packages folder from the metadata backup, open an elevated Windows PowerShell **Command Prompt** window, and run the following command. This command will run the same script that is used in the first step of the build process.
+
+    if (Test-Path -Path "I:\DynamicsBackup\Packages\BackupComplete.txt") { C:\DynamicsSDK\PrepareForBuild.ps1 }
+
+**Note:** Run the preceding command only if a complete metadata backup exists. If a complete metadata backup doesn't exist, the command will create a new backup. This command will stop the Dynamics 365 for Operations deployment services and Internet Information Services (IIS) before it restores the files from the metadata backup to the deployment's metadata packages folder. You should see output that resembles the following example. 
+<br><br>*6:17:52 PM: Preparing build environment...* *6:17:53 PM: Updating Dynamics SDK registry key with specified values...* *6:17:53 PM: Updating Dynamics SDK registry key with values from AOS web config...* *6:17:53 PM: Stopping Dynamics 365 for Operations deployment...* *6:18:06 PM: **A backup already exists at: I:\\DynamicsBackup\\Packages. No new backup will be created**.* *6:18:06 PM: **Restoring metadata packages from backup...*** *6:22:56 PM: **Metadata packages successfully restored from backup**.* *6:22:57 PM: Preparing build environment complete.* *6:22:57 PM: Script completed with exit code: 0* <br><br>
+After the metadata backup has been restored, **delete** (or rename) the metadata backup folder (DynamicsBackup\\Packages), so that it will no longer be found by the build process.
 
 ### Troubleshooting
 
@@ -113,8 +123,8 @@ If package application fails, you have two options:
 ## Apply package on a Production environment by using LCS
 In a Production environment, package application through LCS is not self-serve like it is for a Sandbox or other environment types. Customers and partners must submit a request to the Service Engineering team to apply a package when the customer is ready to take the downtime. 
 
-1.  Download a hotfix from LCS. For information about how to download a hotfix from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
-    -   For a binary hotfix, upload the hotfix directly to the Asset library.
+1.  Download an update from LCS. For information on how to download an update from LCS, see [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
+    -   For a binary update, upload the update deployable package directly to the Asset library.
     -   For an application/X++ hotfix, apply the package in a dev environment. After you resolve any conflicts, generate a deployable package from Visual Studio, and upload the package to the Asset library. For information about how to upload to the Asset library and create a deployable package, see [Create and apply a deployable package](create-apply-deployable-package.md).
 
 2.  On the LCS **Asset library** page, on the tab that corresponds to the asset type (**Software deployable package**), select a package, and then click **Release candidate**.
