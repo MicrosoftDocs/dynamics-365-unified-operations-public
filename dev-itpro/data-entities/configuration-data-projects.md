@@ -55,11 +55,23 @@ We recommend that you follow this process when you start to use configuration da
 
 This topic describes the data management workspace, and how to set up your system for data configuration projects. 
 
-If you are ready to set up a configuration template, see [Configuration data templates](congifuration-data-templates.md).
+If you are ready to set up a configuration template, see [Configuration data templates](configuration-data-templates.md).
 If you are ready to create and run a configuration data project, see [Copy configuration data from one company to another](copy-configuration.md)
 
-## Set up your system to manage data configurations
-Before you begin, you should make sure that you have access to the new user data configurations interface (UI), that you've set up the default data sources 
+## Data management workspace overview
+The data management workspace provides access to key tasks for data management while providing information on projects
+and project execution tasks. 
+
+After you have created a configuration data project, it appears in the Data projects list in the Data management workspace.
+Each project is displayed with the type of configuration (import or export) and a project category (Project, Configuration, Integration, and Other). Use the selections to the left of the grid to filter by the appropriate project. 
+
+To open a project, select the project and click **Load project** to launch the **Import or export** form. Use the **Delete** button to delete the selected projects. You can also download the project definitions with the **Download** button.
+
+Use **Job history** to find more details about the projects that you have executed. Use the data range filters to filter by the dates that data projects were executed. You can view  execution details by selecting a job and clicking the **Execution details** menu.
+For export tasks, you can download the data from the workspace using the **Download page** button.
+
+## Set up your system to manage configuration data projects
+Before you begin, you should make sure that you have access to the new user data configurations interface (UI) and that you've set up the default data sources.
 
 ### Get the new UI
 
@@ -68,13 +80,11 @@ pages to support managing configurations. However, the updated pages are only av
 The standard view has not been updated from prior releases. 
 
 **Change to the new UI for a single user**
-The system default view settings can also be changed to save settings for each user per each legal entity.
-If you use that setting, you must switch to the Enhanced
-view menu button on each page for configurations.
+The system default view settings can also be changed to save settings for each user per each legal entity. To switch for a single user, the user must click the **Enhanced view** button on each Data management workspace page.
 
 **Change to the new UI for all users in all legal entities**
-1. On the Data management workspace, click the Framework parameters tile. 
-2. Change the view default from standard to enhanced for all users and legal entities.
+1. On the Data management workspace, click the **Framework parameters** tile. 
+2. Change the **View default** setting from **Standard** to **Enhanced** for all users and legal entities.
 
 ### Set file extensions for default data sources
 
@@ -91,16 +101,3 @@ If you have additional file extensions that you want to use, you must update you
 a default file extension that will be used as the target data format.
 1. On the Data management workspace, click the Configure data sources tile, and click Data sources.
 2. Add a default file extension to the appropriate data source. 
-
-# Data management workspace overview
-The data management workspace provides access to key tasks for data management while providing information on projects
-and project execution tasks. 
-
-After you have created a configuration data project, it appears in the Data projects list in the Data management workspace.
-Each project is displayed with the type of configuration (import or export) and a project category (Project, Configuration, Integration, and Other). Use the selections to the left of the grid to filter by the appropriate project. 
-
-To open a project, select the project and click **Load project** to launch the **Import or export** form. Use the **Delete** button to delete the selected projects. You can also download the project definitions with the **Download** button.
-
-Use **Job history** to find more details about the projects that you have executed. Use the data range filters to filter by the dates that data projects were executed. You can view  execution details by selecting a job and clicking the **Execution details** menu.
-For export tasks, you can download the data from the workspace using the **Download page** button.
-
