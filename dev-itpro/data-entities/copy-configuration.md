@@ -31,58 +31,49 @@ ms.dyn365.ops.version: Platform update 7
 # Copy configuration data from one company to another
 To copy configuration data, you must first export it from one company, and then import it to another.  
 
-## Export a configuration
+## Export a configuration (Basic)
 The Data management workspace is your hub for managing configuration data projects and for exporting data packages. To build a configuration, you need to define a data project and export the information represented by entities.
-
-> [!NOTE]
-> This topic assumes that you are using the Enhanced view of the Data management workspace. 
 
 The process for creating a configuration data project is as follows:
 
-1)  Open the Data management workspace and, if you are in Standard view, click Enhanced.
-2)  Click the Export tile.
-3)  Click New to create a configuration data project and add an ID and name that represent the configuration.
-4)  Set the operation type for the data project to be **Export** and the project category to be **Configuration**.
-5)  Add the entities that represent the information that you want to export. You can add entities using several methods:
-    a.  Add entity – enter the first part of name of the entity until it appears in the lookup.
-    b.  Add multiple – enter any part of the entity name, use the lookup for application module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Tab away from the Lookup field to activate the filter. Select the entities in the grid that you want to add.
-    c.  Add a file – browse to a file that contains a name that matches an entity and a file extension that matches the file extension that is in your data sources.
-    d.  Add a template – select from a list of templates that you have loaded in your instance. 
-6)  Select a target data format. The system remembers that last data format that you selected or, if you select a file, it will default
-    the data format to the data source that matches the file extension. 
-    **Note** Composite entities require an XML format.
-7)  Click the **Add** button. If you load a template and there is already an existing entity in the project that matches an entity in the template, the entity will be replaced by the enity in the template that you loaded. Some templates are very large and it may take a few seconds to load them.
-8)  Click **Remove entity** to remove one or more selected entities.
+1. Open the Data management workspace and, if you are in Standard view, click the **Enhanced view** button.
+2. Click the **Export** tile.
+3. Click **New** to create a configuration data project and add an ID and name that represent the configuration.
+4. Set the operation type for the data project to **Export** and the project category to **Configuration**.
+5. Add the entities that represent the information that you want to export. You can add entities using several methods:
+> - Add entity – enter the first part of name of the entity until it appears in the lookup.
+> - Add multiple – enter any part of the entity name, use the lookup for application module, enter any part of the tag name, or use the lookup for the entity category to show a list of entities. Tab away from the Lookup field to activate the filter. Select the entities in the grid that you want to add.
+> - Add a file – browse to a file that contains a name that matches an entity and a file extension that matches the file extension that is in your data sources.
+> - Add a template – select from a list of templates that you have loaded in your instance. 
+6. Select a target data format. The system remembers that last data format that you selected or, if you select a file, it will default to the data format to the data source that matches the file extension. 
+> **Note** Composite entities require an XML format.
+7. Click the **Add** button. If you load a template and there is already an existing entity in the project that matches an entity in the template, the entity will be replaced by the enity in the template that you loaded. Some templates are very large and it may take a few seconds to load them.
+8. Click **Remove entity** to remove one or more selected entities.
 
 You are ready to export a configuration. However, you may want to use
 some additional features to control the export process:
 
-1)  Organize your list by using the Sort by button to reorder your
+1. Organize your list by using the Sort by button to reorder your
     entities by unit, level and sequence
-
-2)  If want to change the execution sequence of any of the entities,
+2. If want to change the execution sequence of any of the entities,
     you can edit the unit, level, or sequence manually or you can use the Resequence
     button to update any entities that you have selected. You must
     select more than one entity for the Resequence button to appear. You
     can change the unit, level and sequence individually or enable
     multiple changes and do them all at once. If you want the unit,
     level or sequence to remain unchanged when change multiple parts of
-    the sequence, set the increment to zero
-
-3)  Add filters to the entity with the Filter icon. The icon will change when 
-    you add a filter. The data will be
+    the sequence, set the increment to zero.
+3. Add filters to the entity with the **Filter** button. The icon will change when 
+    you add a filter to an Edit button. The data will be
     filtered before it is exported. If you have added a template and the template 
     included filters, those filters will be added to your project. You can still modify
     or remove them if needed.
-
-4)  If necessary, change the entity mappings using the View map icon. If you have added a template and the template 
+4. If necessary, change the entity mappings using the **View map** button. If you have added a template and the template 
     included mapping changes, those changes will be applied to your project. You can still modify
     them if needed.
-
-5)  Use the check box in the Disable column to temporarily stop the
+5. Use the checkbox in the **Disable** column to temporarily stop the
     entity from being used when exporting a data project
-
-6)  Use the Open in Excel button to open the contents of the grid in an
+6. Use the **Open in Excel** button to open the contents of the grid in an
     Excel spreadsheet. Modify the entities as needed and use Publish to
     upload the changes back into Dynamics 365 for Finance and
     Operations.
@@ -266,3 +257,31 @@ some additional features to control the export process:
 Now that you have completed your configuration, use the import button to
 start the import. You can monitor your results on the execution details
 page that is displayed.
+
+
+## Additional information about entities
+
+
+### Obsolete entities
+
+As we create newer versions of Dynamics 365 for Finance and Operations, we may need to update the functionality of an entity. A new entity may be created with a different name and the original entity will be marked as obsolete. You will no longer be able to add the obsolete entities to a new data project or template. 
+
+If you load a data package that has the obsolete entity in it, you will be warned about the existence of an obsolete entity but you will be able to still import your data. You can find the obsolete entities by selecting the Obsolete column and filtering on Yes.
+
+### Self referencing entities
+
+There are entities that represent tables that have references to themselves. For example, when you create a cash discount, you can refer to related cash discount that creates a tiered discount calculation. To import data, it is necessary to sequence the data so that the cash discount referred to in the Next cash discount field is imported first, followed by the cash discount that uses it. 
+
+We have added a class called DMFImportExportSequencer that will sequence the data in self referencing entities and enable the data to load in a single pass. You can view the code required to update entities in the Cash Discount entity (CashDiscountEntity).
+
+We have added the class to a number of self referencing entities and we will add it to more entities as needed. Further examples of this type of entity includes:
+-   Customers
+-   Customer definitions
+-   Customer details
+-   Tax codes
+-   Budget control groups
+-   Projects
+-   Product categories
+-   Warehouses
+-   Budget plan workflow stage
+-   Sales units
