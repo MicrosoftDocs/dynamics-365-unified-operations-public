@@ -59,6 +59,7 @@ Follow these steps to create a new recording by using Task recorder.
 [![Task recorder pane](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3.  Enter a name and description for the recording, and then click **Start**. The recording session begins as soon as you click **Start**. **Note:** If you click the **Close** button (**X**) in the upper-right corner while recording is in progress, the **Task recorder** pane is closed, but the recording session isn't ended. To reopen the Task recorder pane, click the Help button (question mark) at the top of the screen. 
+
 [![Question mark](./media/help.jpg)](./media/help.jpg)
 
 4.  After you click **Start**, Task recorder enters recording mode. The **Task recorder** pane shows information and controls that are related to the recording process.
@@ -106,6 +107,7 @@ You can specify the beginning and end of a set of grouped steps by using the **S
 
 ## Adding annotations
 An annotation is additional text that you add to a step in a recording. For example, you can use annotations to give the user more context or instructions. You can add annotations before or after a step. You can add an annotation to any step by clicking the **Edit** button (pencil symbol) to the right of the step. 
+
 [![Edit button for a step](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### Texts and notes
@@ -123,6 +125,8 @@ Text that you enter in the **Notes** field appears *below* the step text in the 
 
 ## Help at Retail Modern POS and Cloud POS
 To show your own custom task recordings in the Help pane of Retail Modern POS and Cloud POS so that they can be viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connecting the Help system.](https://ax.help.dynamics.com/en/wiki/working-with-help/#connecting-the-help-system) Retail Modern POS and Cloud POS Help searches LCS in real time. It searches across all the BPM libraries that are selected in the Microsoft Dynamics AX Help system parameters and shows the relevant results. To access the **Help** menu, click the **Help** button at the top of the screen and then in the search box type your process name and hit the search button. 
+
 [![Help button](./media/help.jpg)](./media/help.jpg) 
+
 When you click a Task guide in the search results, you can either view the steps as a Help topic or export the steps to a Word document. Note: Help system in Retail Modern POS and Cloud POS will not bring the task guides automatically based on your form or operations you have to type the process name in search box and hit the search button to get the results.
 
