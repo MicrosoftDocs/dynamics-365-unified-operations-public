@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 7
 # Copy configuration data from one company to another
 To copy configuration data, you must first export it from one company, and then import it to another.  
 
-## Export a configuration (Basic)
+## Export a configuration
 The Data management workspace is your hub for managing configuration data projects and for exporting data packages. To build a configuration, you need to define a data project and export the information represented by entities.
 
 The process for creating a configuration data project is as follows:
@@ -92,12 +92,13 @@ When the export is completed, perform the following tasks:
     and the data that was exported.
 
 ## Setup considerations for certain entities used to export configurations
-------------------------------------------------------------------------------
 
-There are several entities that require some additional steps when you
+There are several entities that currently require some additional steps when you
 are doing configurations. Please follow these recommendations as you build 
-your configurations. We will continue to eliminate additional 
-steps as we improve the configuration feature.
+your configurations. 
+
+> ![IMPORTANT]
+> We will continue to update this list as we improve the copy configuration feature.
 
 ### Using special purpose entities
 The following entities require special handling when used in configurations: 
@@ -204,8 +205,7 @@ If you want to change the legal entity ID to another value, you must change the 
 
 There are many places where the legal entity ID is stored so making this change can be difficult and cause errors. We are considering a feature to help do this work in a future release.
 
-Import a configuration
-----------------------
+## Import a configuration
 
 The data management workspace is also your hub for importing
 configuration data projects. You can build a configuration project from
