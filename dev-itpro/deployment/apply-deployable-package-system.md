@@ -99,7 +99,7 @@ After the metadata backup has been restored, **delete** (or rename) the metadata
 
 #### General troubleshooting/diagnostics
 
-If package application isn't successful, you can download either the logs or the runbook to see the detailed logs. You can also use Remote Desktop Protocol (RDP) to establish a remote connection to an environment to fix issues. If you must report the issue to Microsoft, be sure to include the activity ID that is reported in the **Environment updates** section. [Apply a package in a sandbox](./media/applypackage_sandbox_10.png)[![Troubleshooting](./media/parallelexecutionsandbox_troubleshooting.jpg)
+If package application isn't successful, you can download either the logs or the runbook to see the detailed logs. You can also use Remote Desktop Protocol (RDP) to establish a remote connection to an environment to fix issues. If you must report the issue to Microsoft, be sure to include the activity ID that is reported in the **Environment updates** section. [Apply a package in a sandbox](./media/applypackage_sandbox_10.png)![Troubleshooting](./media/parallelexecutionsandbox_troubleshooting.jpg)
 
 #### Using the logs
 
@@ -117,7 +117,7 @@ If package application fails, you have two options:
 
 -   Click **Resume** to retry the failed operation.
 
-[!Failed state](./media/parallelexecutionsandbox_failedstate.jpg)]
+![Failed state](./media/parallelexecutionsandbox_failedstate.jpg)
 
 -   Click **Abort** to stop package application. **Note:** If you click **Abort**, you don't roll back the changes that have already been made to your environment. To proceed, you must fix the issue. [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 
@@ -140,23 +140,23 @@ In a Production environment, package application through LCS is not self-serve l
     -   **Request status** – This field indicates the status of the request that you submitted to Microsoft.
     -   **Actionable by** – This field indicates who needs to take action.
 
-    [![Request status and Actionable by fields](./media/applypackage_prod_7-1024x269.png)
+    ![Request status and Actionable by fields](./media/applypackage_prod_7-1024x269.png)
 11. The Service Engineering team can either accept or deny the request.
-    -   If the request is accepted, the Service Engineering team begins to update the environment. [![Accepted request: Request status = Request accepted, Actionable by = Microsoft](./media/applypackage_prod_9-1024x384.png)
-    -   If the request is denied, Microsoft informs the customer about the reason for the denial and the action that the customer must take. The customer can then reschedule the request, change the package, or cancel the request. [![Denied request: Request status = Request denied, Actionable by = Customer/Partner](./media/applypackage_prod_8-1024x322.png)
-    At any time, the customer can use the **Comments** field to post comments to the request. [![Example of comments that are posted to a request](./media/applypackage_prod_10-1024x336.png)
-12. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of the package application. [![Servicing status and Request status fields](./media/applypackage_prod_11-1024x399.png)](./media/applypackage_prod_11.png) You can also see the number of steps that have been run, out of the total number of steps that are available. [![Progress indicator](./media/applypackage_prod_12-1024x414.png)
+    -   If the request is accepted, the Service Engineering team begins to update the environment. ![Accepted request: Request status = Request accepted, Actionable by = Microsoft](./media/applypackage_prod_9-1024x384.png)
+    -   If the request is denied, Microsoft informs the customer about the reason for the denial and the action that the customer must take. The customer can then reschedule the request, change the package, or cancel the request. ![Denied request: Request status = Request denied, Actionable by = Customer/Partner](./media/applypackage_prod_8-1024x322.png)
+    At any time, the customer can use the **Comments** field to post comments to the request. ![Example of comments that are posted to a request](./media/applypackage_prod_10-1024x336.png)
+12. After the environment is serviced, you can monitor the status. The **Servicing status** field indicates the status of the package application. [![Servicing status and Request status fields](./media/applypackage_prod_11-1024x399.png)](./media/applypackage_prod_11.png) You can also see the number of steps that have been run, out of the total number of steps that are available. ![Progress indicator](./media/applypackage_prod_12-1024x414.png)
 
 ### Successful package application
 
--   After the deployment is successfully completed, the **Servicing** **status** field is set to **Completed**, but the **Request status** is still set to **In progress**, because the request hasn't yet been closed. [![Successful deployment: Servicing status = Completed, Request status = In progress](./media/applypackage_prod_13-1024x392.png)]
+-   After the deployment is successfully completed, the **Servicing** **status** field is set to **Completed**, but the **Request status** is still set to **In progress**, because the request hasn't yet been closed. ![Successful deployment: Servicing status = Completed, Request status = In progress](./media/applypackage_prod_13-1024x392.png)
 -   After the Service Engineering team has finished applying the request, you must close the request by clicking **Close servicing request**.
 -   When you're closing a successful request, in the **Edit work item details** dialog box, set the **Service request status** field to **Succeeded**, and then click **Submit**.
 
 ### Unsuccessful package application
 
--   If package application fails, Microsoft will investigate the issue. The **Servicing status** will indicate that package application has failed. [![Unsuccessful package deployment: Servicing status = Failed(./media/applypackage_prod_17.png)
--   When the deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request with the new package. [![Comment from Microsoft that changes were reverted, and that the customer must validate the environment](./media/applypackage_prod_18-1024x346.png)]
+-   If package application fails, Microsoft will investigate the issue. The **Servicing status** will indicate that package application has failed. ![Unsuccessful package deployment: Servicing status = Failed](./media/applypackage_prod_17.png)
+-   When the deployment fails, Microsoft can abort the package, revert the environment to a good state, and send the request back to the customer, so that the customer can validate the environment and close the request. If there is an issue in the package, the customer must submit a new request with the new package. ![Comment from Microsoft that changes were reverted, and that the customer must validate the environment](./media/applypackage_prod_18-1024x346.png)
 -   When you're closing a failed request, in the **Edit work item details** dialog box, set the **Service request status** field to **Aborted**.
 
 ## Deploying packages in Retail environments
