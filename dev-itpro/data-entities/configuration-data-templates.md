@@ -1,1 +1,186 @@
+---
+# required metadata
 
+title: Configuration data templates
+description: This topic describes configuration data templates, and how to create them. 
+author: mfalkner
+manager: AnnBe
+ms.date: 06/15/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+# ROBOTS: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: margoc
+ms.search.scope: Operations, Platform
+# ms.tgt_pltfrm: 
+ms.custom: 77523
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: mfalkner
+ms.search.validFrom: 2017-07-31
+ms.dyn365.ops.version: Platform update 7
+
+---
+# Configuration data templates
+Configuration data templates are a predefined list of entities for each module area that can be used in a data project. You can create, view and modify these templates using the Template page in the Data management workspace.
+
+> [!IMPORTANT]
+> Default configuration templates are on the roadmap for the July release of Dynamics 365 for Finance and Operations. The Configuration data project feature is available in Platform update 7. You can create and use your own templates with the current product release.  
+
+## How entities are sequenced for processing
+Whether you are creating your own templates, or choose to use the default templates, it is important to understand how they are sequenced for processing during export and import.
+
+### Units, levels and sequences
+The unit, level and sequence of an entity are used to control the order in which the data is exported or imported.
+
+-   Entities with two different units are processed in parallel.
+-   Within a unit, entities are processed in parallel if they have the same level.
+-   Within the same level, entities are processed by the sequence order within the level.
+-   Once a level is completed, the next level is processed.
+-   We use only unit 1 to ensure that all dependencies are handled in the correct order.
+
+Entities are categorized by module name, entity category, and a tag. The module represents the module that the entity is normally used for. The entity category represents the type of information in the category, like parameters or reference data.
+
+Tags provide additional details about the function of the entity in that feature area. For example, entities for the general ledger have a module name of General Ledger. There are several tasks within the General ledger and the tags represent those tasks. For example, Setup and Journals are tags that represent tasks that can be done for the General ledger.
+
+### Sequencing philosophy
+Our long term goal for sequencing is to automatically sequence all of the entities for every configuration. Until we reach that goal, we have created sequences for the entities in each of our default templates that represent the dependency order between entities.
+
+The following list shows how the templates were set up to handle dependencies. Please note that the entities do *not* require the
+sequences numbers that have been assigned. You can sequence them differently if you want. However, you may inadvertently change the order in which entities are processed. If an entity requires data that has not been imported by another entity, you may see errors due to  missing dependent data.
+
+|  **Module**               |**Unit**   |**Level**   |
+|-------------------------	|--:	|----:	|
+| System setup            	| 1 	|  10 	| 
+| Global address book     	| 1 	|  15 	|
+| General ledger shared   	| 1 	|  20 	|
+| Workflow                	| 1 	|  22 	| 
+| General ledger          	| 1 	|  25 	| 
+| Band 1 for dependencies 	| 1 	|  30 	| 
+| Band 2 for dependencies 	| 1 	|  40 	| 
+| Band 3 for dependencies 	| 1 	|  50 	| 
+| Band 4 for dependencies 	| 1 	|  60 	| 
+| Band 5 for dependencies 	| 1 	|  70 	|
+| Band 6 for dependencies 	| 1 	|  80 	| 
+| Band 7 for dependencies 	| 1 	|  90 	| 
+| Bank                    	| 1 	| 100 	|
+| Accounts payable        	| 1 	| 120 	|
+| Tax                     	| 1 	| 130 	|
+| Accounts receivable     	| 1 	| 140 	|
+| Fixed assets            	| 1 	| 150 	|
+| Budgeting               	| 1 	| 160 	|
+| Inventory management    	| 1 	| 300 	|
+| Product management      	| 1 	| 310 	|
+| Procurement             	| 1 	| 320 	| 
+| Sales and Marketing     	| 1 	| 330 	|
+| Warehouse management    	| 1 	| 400 	|
+| Production control      	| 1 	| 410 	|
+| Costing                 	| 1 	| 420 	|
+| Retail                  	| 1 	| 500 	| 
+| Expense management      	| 1 	| 600 	|
+| Project accounting      	| 1 	| 650 	|
+| Human resources         	| 1 	| 700 	|
+| Payroll                 	| 1 	| 800 	|
+
+We reserved levels 10-22 for the shared system entities so that they are processed first. Almost all systems also use the company specific general ledger entities so we reserved level 25 for those entities. These levels represent the minimum basic setup required for most shared data in a configuration.
+
+Once the basic setup is complete, there are many entities that can be loaded in parallel across all the modules. Instead of forcing them to be loaded in silos by module, we set up bands of dependencies between the data for different entities. We added entities that have no
+dependencies to band 30. We then added band 40 for entities that have a dependency on the entities in band 30. We continued the process for bands 50 to 90.
+
+After organizing the basic entities so that they can process in parallel, we organized the remaining entities by module in the order
+that the modules should be processed. However, there are a lot of entities that have many dependencies, some of which are complex. For
+example, the vendor posting profiles may need vendors or items. Although that entity would be in the accounts payable module, it needs to happen after product management. In that case, if vendors are 1.130.10 and items are 1.300.10, then vendor posting profiles must be moved to something after that sequence like 1.310.20.
+
+The sequences we have implemented are a guideline, not a requirement. There is no required relationship between a level and a module. You can rearrange the entities if the sequence doesn’t work for your installation. If you want to add your own templates to a configuration, you can follow the guidelines above to ensure that your template merges correctly into a project that uses default templates.
+
+## Templates with the same entity
+There are entities that are needed in more than one template. For example, you need payment terms in both Accounts payable and Accounts receivable. However, you may only need the Accounts receivable template. We added the entity to both templates for situations where you may only need one of the templates.
+
+A data project can only have one instance of an entity in it. If you add a template that contains an entity that already exists in a data project, the entity in that template will replace the entity that is currently in the project. 
+
+You can use this capability to override the default templates without changing them. For example, if the worker field has been unmapped in your data project but you have your own template that adds workers, you can build a template that includes the entities that have the worker field. In that template, you can map the worker field and it will replace the entities in the data project that unmapped the field.
+
+## Create a new template
+The Data management workspace Templates page provides you with the tools to create a template of entities. The form is very similar to the configurations form and the features work in much the same way. The process for creating templates is:
+
+1)  Click **New** to create a template. Add an ID and name that
+    represents the template. Note that the status is set to Draft.
+
+2)  Add entities or remove them as needed.
+
+3)  Organize your list by using the **Sort by** button to reorder your entities by entity group or by unit, level and sequence
+
+4)  If want to change the sequence of any of the entities, edit the unit, level, or sequence manually or use the **Resequence** button to update any entities that you have selected. You must select more than one entity for the **Resequence** button to appear
+
+5)  Add filters to the entity with the **Filter** button. Then review the results of the filters using the **Preview** button. If you add a filter, the Filter button changes to an **Edit** button.
+
+6)  If necessary, use the **View map** button to exclude fields that you do not want mapped.
+
+7)  Click **Validate template** to change the status to Validated.
+
+Your template is ready to be used in a project. However, you may want to
+use some additional features to control the export process:
+
+1)  If you already have a list of entities that you want to add quickly, use the **Open in Excel** button to open Excel. Copy and paste your entities in Excel and click **Publish**.
+
+2)  If you exported a template and you want to bring that template back into Dynamics 365 for Finance and Operations, Enterprise edition, click **Import template**, browse to the template file, and then click **Create template** to load it.
+
+3)  If you want to replace the contents of an existing template, click **Replace from template** button, browse to the template file that has the entities that you want to import, and click **Create template** to load it. The template values in the current template will be replaced by the new template.
+
+4)  If you want to create a template from a project, click **New** to create a template. Add an ID and name that represents the template. Click **Replace template from project** to display a list of projects to choose from. Select a project and click **Create template** to bring the project entities into the template. Any existing entities are removed before the project entities are copied into the template.
+
+## (Coming soon) Default data templates
+In the spring release of Dynamics 365 for Finance and Operations, Enterprise edition, we plan to release predefined templates to help you create configuration data projects. The templates will be sequenced so that the data generated by the entities will be processed in the correct sequence. Our predefined templates are also designed to maintain the correct sequence when more than one template is added to the same data project. See the section on sequencing philosophy for more information. 
+
+Default templates will delivered with each new release of the Finance and Operations application. Our long term goal is to provide the templates in LCS so that you can push them into an instance of Dynamics 365 for Financial and Operations. However, for the current releases, click the Templates tile in the Data management workspace and click on the Load default template menu option to load the templates.
+
+After the templates are loaded, you can change them to suit your business needs. However, if you want to retrieve the original default templates, you can use the **Load default templates** button to add them back to your system. You can either replace the templates with the latest versions or select an option to make a copy of the old templates first and then add the default templates.
+
+### Merged templates
+We have created larger templates that cover multiple module areas. You can use the larger templates or any combination of smaller templates to build a data project. These combined template are:
+-   System and Shared, which includes system setup, global address book, shared general ledger, and workflow
+-   Financials, which includes general ledger, bank, accounts payable, tax, accounts receivable, fixed assets, and budgeting
+-   Supply chain management, which includes inventory management, product management, procurement, sales and marketing, limited warehouse management, production control, and costing
+
+The Expense and Project Management templates are not included in a larger template but they are designed to easily merge into a project that uses other templates.
+ 
+### Master data in default templates
+Many default templates include entities for master data such as customers, vendors, and released products. These are included to indicate the proper sequence of entities that you will need once you have loaded parameters and reference data. Master entities are most often sequenced in the module bands number from 100 and up (see sequencing philosophy) and they will shown in the grid under entity category as master. 
+
+If you do not want to include master data in your configuration, remove those entities from your project.
+
+## Additional information about entities
+
+
+### Obsolete entities
+-----------------
+
+As we create newer versions of Dynamics 365 for Finance and Operations, we may need to update the functionality of an entity. A new entity may be created with a different name and the original entity will be marked as obsolete. You will no longer be able to add the obsolete entities to a new data project or template. 
+
+If you load a data package that has the obsolete entity in it, you will be warned about the existence of an obsolete entity but you will be able to still import your data. You can find the obsolete entities by selecting the Obsolete column and filtering on Yes.
+
+### Self referencing entities
+-------------------------
+
+There are entities that represent tables that have references to themselves. For example, when you create a cash discount, you can refer to related cash discount that creates a tiered discount calculation. To import data, it is necessary to sequence the data so that the cash discount referred to in the Next cash discount field is imported first, followed by the cash discount that uses it. 
+
+We have added a class called DMFImportExportSequencer that will sequence the data in self referencing entities and enable the data to load in a single pass. You can view the code required to update entities in the Cash Discount entity (CashDiscountEntity).
+
+We have added the class to a number of self referencing entities and we will add it to more entities as needed. Further examples of this type of entity includes:
+-   Customers
+-   Customer definitions
+-   Customer details
+-   Tax codes
+-   Budget control groups
+-   Projects
+-   Product categories
+-   Warehouses
+-   Budget plan workflow stage
+-   Sales units
