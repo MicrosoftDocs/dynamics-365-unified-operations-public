@@ -215,56 +215,40 @@ Finance and Operations.
 
 The process for importing a configuration is as follows:
 
-1)  Open the data management workspace and switch to the Enhanced view.
-
-2)  Select the Import tile in the data management workspace.
-
-3)  Select New to create the configuration project and add an ID and
-    name that represents the configuration
-
-4)  Select the data project operation type (Import) and project category
-    (Configuration).
-
-5)  Use the Add file button to select the file that has your entity
+1. Open the Data management workspace and, if you are in Standard view, click the **Enhanced view** button.
+2. Click the **Import** tile.
+3. Click **New** to create a configuration data project and add an ID and name that represent the configuration.
+4. Set the operation type for the data project to **Import** and the project category to **Configuration**.
+5. Click Add file to select the file that has your entity
     information and data. For data packages, the file will have a ZIP file extension,
     The extension of the file name will be matched
-    to the default file extensions in the data sources and the source
+    to the default file extensions in your data sources and the source
     data format will be populated automatically. If you have not set up
-    the default file extensions, then select a source data format first
+    the default file extensions, you must first select a source data format first
     before you select the file.
-    
-6)  When you load a package, the import page reads the list of entities from the package first. 
+5.  When you load a package, the import page reads the list of entities from the package first. 
     A progress bar displays how much of the package has been read. Once the list of entities is read, 
     the import page starts loading the data in the package. This process can take some time to execute.
-
-6)  Use Remove entity to remove one or more selected entities
+6.  Click **Remove entity** to remove any selected entities, if necessary.
+7. Now that you have completed your configuration, click **Import** button to start the import. You can monitor your results on the execution details page that is displayed.
 
 You are ready to import a configuration. However, you may want to use
 some additional features to control the export process:
 
-1)  Organize your list by using the Sort by button to reorder your
-    entities by unit, level and sequence
-
-2)  If want to change the execution sequence of any of the entities,
+1. Organize your list by using the Sort by button to reorder your entities by unit, level or sequence.
+2. If you want to change the execution sequence of any of the entities,
     edit the unit, level, or sequence manually or use the resequence
     button to update any entities that you have selected.
-
-3)  If necessary, change the entity mappings using the View map icon.
-
-4)  Use the check box in the Disable column to temporarily stop the
+3. If necessary, change the entity mappings using the **View map** button.
+4. Use the checkbox in the **Disable** column to temporarily stop the
     entity from being used when exporting a data project
-
-Now that you have completed your configuration, use the import button to
-start the import. You can monitor your results on the execution details
-page that is displayed.
-
 
 ## Additional information about entities
 
 
 ### Obsolete entities
 
-As we create newer versions of Dynamics 365 for Finance and Operations, we may need to update the functionality of an entity. A new entity may be created with a different name and the original entity will be marked as obsolete. You will no longer be able to add the obsolete entities to a new data project or template. 
+As we update Dynamics 365 for Finance and Operations, we may need to update the functionality of an entity. A new entity may be created with a different name and the original entity will be marked as obsolete. You will no longer be able to add the obsolete entities to a new data project or template. 
 
 If you load a data package that has the obsolete entity in it, you will be warned about the existence of an obsolete entity but you will be able to still import your data. You can find the obsolete entities by selecting the Obsolete column and filtering on Yes.
 
