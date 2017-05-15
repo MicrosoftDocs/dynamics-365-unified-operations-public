@@ -131,7 +131,7 @@ There are entities that are needed in more than one template. For example, you n
 
 A data project can only have one instance of an entity in it. If you add a template that contains an entity that already exists to a data project, the entity in that template will replace the entity that is currently in the project. 
 
-You can use this capability to override the default templates without changing them. For example, if the *worker* field has been unmapped in your data project but you have your own template that adds workers, you can build a template that includes the entities that have the worker field. In that template, you can map the worker field and it will replace the entities in the data project that unmapped the field.
+You can use this capability to override the default templates without changing them. For example, if the *worker* field has not been mapped in your data project but you have your own template that adds workers, you can build a template that includes the entities that have the worker field. In that template, you can map the worker field and it will replace the entities in the data project that don’t have the field mapped.
 
 #### Merged templates
 We have created larger templates that cover multiple module areas. You can use the larger templates or any combination of smaller templates to build a data project. These combined template are:
