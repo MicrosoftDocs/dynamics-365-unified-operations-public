@@ -46,13 +46,16 @@ This article describes the replenishment strategies that are available for wareh
 All three strategies create replenishment work, based on a replenishment template.
 
 ## Wave demand replenishment
-Wave demand replenishment creates replenishment work, based on demand, if the quantity that is required for outbound orders or loads isn't available when a wave creates work. The replenishment template contains information about the item criteria, the unit of measure, the demand increment, and the location. 
+Wave demand replenishment creates replenishment work, based on demand, if the quantity that is required for production orders, kanbans, outbound orders or loads isn't available when a wave creates work. The replenishment template contains information about the item criteria, the unit of measure, the demand increment, and the location. 
 
 Location directives are used to determine which location should be replenished. You link these location directives to the replenishment template by using the **Directive code** field. If the **Directive code** field isn't set, queries are used to determine which location directive should be used. Note that if a directive code isn't specified in the replenishment template, and the location directive has a directive code, the location directive will be ignored, even if the query on the location directive is correct. Pick location directives are used to determine where to get inventory for the replenishment. 
 
 In addition to creating a template, you must specify some replenishment settings in the wave template. The wave template should contain a wave step for replenishment that is run only if allocation of an item isn't successful. This replenishment wave step uses a wave step code to determine which replenishment template should be used. In addition to having a wave step for replenishment, you must make sure that **replenish** is selected in the **Methods** section of the wave template. 
 
 The **Replenishment template** page includes an **Allow wave demand to use unreserved quantities** check box. You should select this check box if you want to allow demand replenishment to deduct unreserved quantities from work that is generated from the selected replenishment template. To enable demand replenishment templates to use this logic, you must set the check box for every existing replenishment template. When demand replenishment is triggered in the warehouse, it will deduct the demand from existing replenishment work that has unreserved quantities, if the work originates from replenishment templates where the **Allow wave demand to use unreserved quantities** check box is selected.
+
+
+Demand replenishment is supported for sales orders, transfer orders, production orders, and kanbans. 
 
 ## Min/Max replenishment
 In Min/Max replenishment, stock is replenished so that it's between the minimum and maximum limits that have been set. Typically, this process occurs one time every day to help guarantee that all picking locations are filled to the maximum level before picking starts. 
