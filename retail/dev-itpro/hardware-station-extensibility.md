@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Hardware Station extensibility
+title: Hardware Station overview and extensibility
 description: This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Hardware Station extensibility
+# Hardware Station overview and extensibility
 
 [!include[banner](../includes/banner.md)]
 

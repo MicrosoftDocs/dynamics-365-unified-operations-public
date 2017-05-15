@@ -55,11 +55,11 @@ The following table provides details about the metrics that are found on each re
 
 | Report page                                          | Metrics               |
 |------------------------------------------------------|-----------------------------------------------|
-| Dashboard  | Created projects, Estimated projects, In-process projects, Number of projects by stage, Number of projects by city,  Actual revenue by customer, Budget gross margin by project, Earned value management overview |
-| Cost                                                 | Actual vs budget cost by month, Actual vs budget cost by year, Actual vs budget cost by category, Actual cost by transaction type       |
-| Revenue                                              | Actual revenue by month, Actual revenue by postal code, Actual vs budget revenue by category, Actual revenue by customer industry        |
+| Dashboard  | Created projects<br>Estimated projects<br>In-process projects<br>Number of projects by stage<br>Number of projects by city<br>Actual revenue by customer<br>Budget gross margin by project<br>Earned value management overview |
+| Cost                                                 | Actual vs budget cost by month<br>Actual vs budget cost by year<br>Actual vs budget cost by category<br>Actual cost by transaction type       |
+| Revenue                                              | Actual revenue by month<br>Actual revenue by postal code<br>Actual vs budget revenue by category<br>Actual revenue by customer industry        |
 | EVM                                                  | Cost and schedule performance index by project                 |
-| Hours                                                | Actual billable utilized hours vs actual billable burden hours vs budget hours, Actual billable utilized hours vs actual billable burden hours by project, Actual billable utilized hours vs actual billable burden hours by resource, Actual billable hours ratio by project, Actual billable hours ratio by resource |
+| Hours                                                | Actual billable utilized hours vs actual billable burden hours vs budget hours<br>Actual billable utilized hours vs actual billable burden hours by project<br>Actual billable utilized hours vs actual billable burden hours by resource<br>Actual billable hours ratio by project<br>Actual billable hours ratio by resource |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin 
 in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the Export underlying data functionality to export the underlying data that is summarized in a visualization.
@@ -68,18 +68,65 @@ in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.co
 
 Dynamics 365 for Operations data is used to fill the report pages in the **Practice manager** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-The following key aggregate measurements are used as the basis of the content.
+The following sections explains the aggregate measurements that are used in each entity.
 
-[!div class="mx-tdBreakAll"]
-| Entity   | Key aggregate measurements   | Data source for Dynamics 365 for Operations | Field  | Description     |
-|--------------|----------------------------------|-------------------------------------------------|------------|---------------------|
-| ProjectAccountingCube_ActualHourUtilization | ActualBillableUtilizedHours, ActualBillableBurdenHours | ProjEmplTrans | Sum(ActualUtilizationBillableRate), Sum(ActualBurdenBillableRate) | Total of actual billable utilized hours, Total of actual burden rate |
-| ProjectAccountingCube\_Actuals        | ActualRevenue, ActualCost | ProjTransPosting                                | Sum(ActualRevenue), Sum(ActualCost)        | Total of posted revenue for all transaction types, Total of posted cost for all transaction types | 
-| ProjectAccountingCube\_Customer | Number of projects    | CustTable | COUNTA(ProjectAccountingCube\_Projects[PROJECTS])  | Count of available projects | 
-| ProjectAccountingCube\_Forecasts  | BudgetCost, BudgetRevenue, BudgetGrossMargin  | ProjTransBudget      | Sum(BudgetCost), Sum(BudgetRevenue), Sum(BudgetGrossMargin)     | Total of forecasted cost for all transaction types, Total of forecast accrued/invoiced revenue, Difference between sum of total forecast revenue and sum of total forecast cost  |   
-| ProjectAccountingCube\_ProjectPlanCostsView  | PlannedCost  | Project  | Sum(SumOfTotalCostPrice)  | Total cost price in estimates for all project transaction types that have planned tasks |   
-| ProjectAccountingCube\_Projects | Cost performance index, Schedule performance index, Percentage of work completed, Project actual billable Hours ratio Earned value | Project | ProjectAccountingCube\_Projects[Earned value] / ProjectAccountingCube\_Projects[Total actual cost of completed tasks], ProjectAccountingCube\_Projects[Earned value] / ProjectAccountingCube\_Projects[Total planned cost of completed tasks], Percentage of work completed = ProjectAccountingCube\_Projects[Total actual cost of completed tasks] / (ProjectAccountingCube\_Projects[Total actual cost of completed tasks] + ProjectAccountingCube\_Projects[Total planned cost of project] - ProjectAccountingCube\_Projects[Total planned cost of completed tasks]), ProjectAccountingCube\_Projects[Project total actual billable utilized hours] / (ProjectAccountingCube\_Projects[Project total actual billable utilized hours] + ProjectAccountingCube\_Projects[Project total actual billable burden hours]), ProjectAccountingCube\_Projects[Total planned cost of project] \* ProjectAccountingCube\_Projects[Percentage of work completed] | Calculation of total earned value divided by total actual cost, Calculation of total earned value divided by total planned cost, Total percentage of completed work based on total actual cost of completed task and planned cost of the project, Total actual billable hours based on utilized + burden, Total planned cost multiplied by percentage of completed work | 
-| ProjectAccountingCube\_TotalEstimatedCosts   | CompletedActivityPlannedCost | ProjTable  | Sum(TotalCostPrice)  | Total cost price in estimates for all project transaction types that have completed tasks   |
+### Entity: ProjectAccountingCube_ActualHourUtilization
+**Data source**: ProjEmplTrans
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+| ActualBillableUtilizedHours              | Sum(ActualUtilizationBillableRate)   | Total of actual billable utilized hours |
+| ActualBillableBurdenHours                | Sum(ActualBurdenBillableRate)        | Total of actual burden rate             |
+
+### Entity: ProjectAccountingCube_Actuals
+**Data source**: ProjTransPosting
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+| ActualRevenue                            |     Sum(ActualRevenue)               |  Total of posted revenue for all transaction |   
+| ActualCost   |                             Sum(ActualCost)           |    Total of posted cost for all transaction types    |
+
+### Entity: ProjectAccountingCube_Customer
+**Data source**: CustTable
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|    Number of projects        |   COUNTA(ProjectAccountingCube_Projects[PROJECTS])       |         Count of available Projects    |
+
+
+### Entity: ProjectAccountingCube_Forecasts
+**Data source**: ProjTransBudget
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|    BudgetCost    |       Sum(BudgetCost)  |       Total of forecasted cost for all transaction types     |
+|     BudgetRevenue    |         Sum(BudgetRevenue)    |    Total of forecast accrued/invoiced revenue         |
+|BudgetGrossMargin | Sum(BudgetGrossMargin) |Difference between sum of total forecast revenue and sum of total forecast cost
+
+### Entity: ProjectAccountingCube_ProjectPlanCostsView
+**Data source**: Project
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|      PlannedCost      |        Sum(SumOfTotalCostPrice)   | Total cost price in estimates for all project transaction types with planned tasks |
+
+### Entity: ProjectAccountingCube_Projects
+**Data source**: Project
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+|   Cost performance index  |ProjectAccountingCube_Projects[Earned value] / ProjectAccountingCube_Projects[Total actual cost of completed tasks] |     Calculation of total earned value divided by total actual cost|
+|  Schedule performance index |ProjectAccountingCube_Projects[Earned value] / ProjectAccountingCube_Projects[Total planned cost of completed tasks]|Calculation of total earned value divided by total planned cost |
+|Percentage of work completed |Percentage of work completed = ProjectAccountingCube_Projects[Total actual cost of completed tasks] / (ProjectAccountingCube_Projects[Total actual cost of completed tasks] + ProjectAccountingCube_Projects[Total planned cost of project] - ProjectAccountingCube_Projects[Total planned cost of completed tasks])|Total percentage of completed work based off total actual cost of completed task and planned cost of the project|
+|Project actual billable Hours ratio|ProjectAccountingCube_Projects[Project total actual billable utilized hours] / (ProjectAccountingCube_Projects[Project total actual billable utilized hours] + ProjectAccountingCube_Projects[Project total actual billable burden hours])|Total actual billable hours based on utilized + burden|
+|Earned value|ProjectAccountingCube_Projects[Total planned cost of project] * ProjectAccountingCube_Projects[Percentage of work completed]|Total planned cost multiply by percentage of completed work|
+
+### Entity: ProjectAccountingCube_TotalEstimatedCosts 
+**Data source**: ProjTable
+
+| Key aggregate measurement                | Field                                | Description                            | 
+|------------------------------------------|--------------------------------------|----------------------------------------|
+| CompletedActivityPlannedCost  |  Sum(TotalCostPrice)  |   Total cost price in estimates for all project transaction types with completed tasks|
 
 ## Additional resources
 

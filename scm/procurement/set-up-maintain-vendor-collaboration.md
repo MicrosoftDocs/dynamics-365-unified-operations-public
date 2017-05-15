@@ -40,16 +40,18 @@ This topic describes the configuration tasks that are needed to set up Dynamics 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. This topic describes the configuration tasks that you need to set up vendor collaboration in Dynamics 365 for Operations. It also describes how to set up a workflow to provision new vendor collaboration users, and manage the security roles for these users.
 
 ## Set up vendor collaboration security roles
-It’s important that you correctly set up user permissions for the vendor collaboration to ensure that vendors don’t have unintended access to additional information in Dynamics 365 for Operations. Unlike other users, external vendors should not have the **SystemUser** security role. Instead these users must be given a role that only grants access to a limited set of privileges.  
+A procurement professional or a vendor with sufficient permissions can request that a contact person is provisioned as a user by activating **Provision vendor user** on the contact person record. In this process the user permission for the new external user has to be selected and the new vendor user request is submitted. It’s important that you correctly set up the user permissions that are available to select in the vendor user request for the vendor collaboration to ensure that vendors don’t get unintended access to additional information in Dynamics 365 for Operations.  
 
-To set up security roles for vendor collaboration:
+To set up security roles that are available to select when a new user request is used for a contact person:
 
 1.  Select **System administration** &gt; **Security** &gt; **External roles**.
-2.  Click **New** and select a security role and party role.
+2.  Click **New** and select a security role and party role **Vendor**.
 
-You may want to add the **Vendor admin (external)** and **Vendor (external)** roles that are provided with Dynamics 365 for Operations, or you may want to use security roles that have been created by your company. The Vendor admin (external) role is only useful if you want vendors to be able to create new contacts, and to submit vendor collaboration user requests for new users and changes in their information, and deal with these using a workflow. If you're going to manually set up vendor contacts and users, you could just use the Vendor (external) role.  
+You may want to add the **Vendor admin (external)** and **Vendor (external)** roles that are provided with Dynamics 365 for Operations, or you may want to use security roles that have been created by your company. The Vendor admin (external) role is only useful if you want vendors to be able to create new contacts, and to submit vendor collaboration user requests for new users and changes in their information, and deal with these using a workflow. 
 
-**Note:** The **SystemUser** role is automatically granted when you manually create a new user account in Dynamics 365 for Operations. Therefore, you must remove that role and assign the Vendor (external), or Vendor admin (external), or an equivalent role. If the new user account is created using the workflow that's initiated by a vendor user request for provisioning a new user, the roles that are assigned will be one or more of those that you've set up for vendor collaboration.
+If you're going to manually set up vendor contacts and users, you could just make the Vendor (external) role available in External roles. Then this will be the only role that can be requested through the vendor user request.  
+
+**Note:** The **SystemUser** role is automatically granted when you manually create a new user account in Dynamics 365 for Operations. Therefore, you must remove that role and assign the **SystemExternalUser** role. If the new user account is created using the workflow that's initiated by a vendor user request for provisioning a new user, the roles that are assigned will be one or more of those that you've set up for vendor collaboration and the **SystemExternalUser**.
 
 ### Vendor admin (external) security role
 
