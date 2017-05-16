@@ -2,7 +2,7 @@
 # required metadata
 
 title: ISO20022 files import in Microsoft Dynamics 365 for Operations
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: [This article describes features which allows to import payment files in ISO 20022 camt.054 and pain.002 payment files in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.]
 author: neserovleo
 manager: AnnBe
 ms.date: 05/11/2017
@@ -104,6 +104,7 @@ AC03| InvalidCreditorAccountNumber
 AC04| ClosedAccountNumber
 AC05| ClosedDebtorAccountNumber
 AC06| BlockedAccount
+...| ...
 
 
  - If camt.054 file contains transaction charges which you decide to post along with posting of incoming payment, create payment fee on the vendor Payment fee form, and then associate it with the bank account on the Payment fee setup on the Methods of payment form.  
@@ -130,4 +131,3 @@ If you're importing camt.054 file, then additional parameters should be specifie
 
 
 Imported information can be reviewed on the Payment transfers form. 
-In case of any issues in records in the file, they should be imported as is (i.e. with empty vendor account if it is not possible to find one).
