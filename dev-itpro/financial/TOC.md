@@ -7,6 +7,7 @@
 # [Financial dimension configuration for integrating applications](financial-dimension-configuration-integration.md)
 # [Activate financial dimensions](activate-financial-dimensions.md)
 # [Financial dimensions and main accounts in a right-to-left language](financial-dimensions-main-accounts-right-left-language.md)
+# [Make a backing table be consumable as a Financial dimension](dimensionable-entities.md)
 # [Segmented entry control migration ](segmented-entry-control-conversion.md)
 # [Segmented entry control dialog support](segmented-entry-control-dialog-support.md)
 # [Segmented entry control metadata](segmented-entry-control-metadata-specification.md)
