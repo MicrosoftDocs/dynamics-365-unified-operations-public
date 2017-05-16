@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides the steps you must follow if you want to make a backing table usable as a Financial dimension.
 
 > [!NOTE]
-> If your dimension is backed by the OMOperatingUnit table then many of the steps are already completed for you. Follow the steps in the **Configuration if adding a new OMOperatingUnit type backed entity** section.
+> If your dimension is backed by the OMOperatingUnit table then many of the steps are already completed for you. Follow the steps in the [Configuration if adding a new OMOperatingUnit type backed entity](#Configuration-if-adding-a-new-OMOperatingUnit-type-backed-entity) section.
 
 By following these steps, your view will automatically appear in the Use values from drop down on the Financial dimensions page, and the values will be populated on the Financial dimension values page.
 
