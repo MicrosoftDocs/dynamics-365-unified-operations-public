@@ -43,7 +43,7 @@ This feature allows to import bank notification messages in camt.054.001.002 for
 To use this feature, following setup should be completed:
 
 
- - Import ER configuration "ISO20022 Camt.054" from the LCS and select it on the customer Method of payment form in the Import format configuration field. For more info, see also ﻿wiki ﻿article﻿.
+ - Import ER configuration "ISO20022 Camt.054" from the LCS and select it on the customer Method of payment form in the Import format configuration field. For more info, see also ﻿[wiki ﻿article](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)﻿.
  - On the All customers form, set up Name and Organization number for required customers. On the Customer bank account form, set up customer bank account record: IBAN or Bank account number, SWIFT or Routing number.
  - Set up legal entity bank accounts on the Bank accounts form:
 	 - IBAN or Bank account number, SWIFT or Routing number, Currency,   
@@ -64,11 +64,11 @@ To use this feature, following setup should be completed:
 
 
 
-	 - Also make sure that Customer number and invoice number (number sequences) contain only digits and no other characters. Also, invoice number must not have leading zeros.
+	 - Also make sure that Customer number and invoice number (number sequences) contain only digits and no other characters. Also, invoice number must not have leading zeros.
 
 
 
-	 - ESR, BESR and Routing number for the legal entity Bank account.For more info see also legacy ESR feature, which requires similar settings.
+	 - ESR, BESR and Routing number for the legal entity Bank account.For more info see also [legacy ESR feature](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/emea-che-esr-customer-payments-import), which requires similar settings.
 
 To run the file import, open customer payment journal lines form and click Functions/ Import payments button. On the dialog screen select method of payment which have required settings for ISO20022 camt.054 format. On the opened dialog, specify required parameters and path to the file location. Click OK. File is successfully imported.
 
@@ -94,6 +94,7 @@ ACSP| Recieved
  - Set up pain.002 error codes and descriptions on the Return format error codes form per external ISO20022 Status reason codes.
 
 Example setup:
+
 
 Code	| Name
 -------- | ---
