@@ -77,120 +77,67 @@ The first step is to create a view in the same model as your backing table.Befor
     **Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker**. Verify the rule and its children are selected.
 1.  **Build** and then **synchronize** the view.
 
-**Step 2: Validate the view is returning the correct data in SQL**
+# Step 2: Validate the view is returning the correct data in SQL
 
-At this point you should be able to run the following query into SQL Server
-Management Studio to make sure it is pulling the correct data. Here is an
-abbreviated example using the view created for CustTable:
+At this point you should be able to run the following query into SQL Server Management Studio to make sure it is pulling the correct data. Here is an abbreviated example using the view created for CustTable:
 
- 
+      select \* from DIMATTRIBUTE**CUSTTABLE**
+    
 
->   select \* from DIMATTRIBUTE**CUSTTABLE**
-
->    
-
-| **KEY\_**   | **VALUE**    | **DATAAREAID** | **PARTITION** | **RECID**   | **NAME**           | **PARTITION\#2** |
+| KEY\_   | VALUE    | DATAAREAID | PARTITION | RECID   | NAME           | PARTITION\#2 |
 |-------------|--------------|----------------|---------------|-------------|--------------------|------------------|
 | 22565425322 | US\_SI\_0129 | ussi           | 5637144576    | 22565425322 | Adventure Services | 5637144576       |
 | 22565424579 | US\_SI\_0128 | ussi           | 5637144576    | 22565424579 | Alpine Electronics | 5637144576       |
 
->    
 
-**Step 3: Override methods on the backing table**
+# Step 3: Override methods on the backing table**
 
-To integrate with the dimensions framework when deleting or renaming the natural
-key of the backing table, you must write custom code on the backing table's
-delete method, and also on either the update or renamePrimaryKey method. If your
-table blocks update of the natural key you will need to use the renamePrimaryKey
-override. If it does not, then you can put the code into the update method. Here
-is an example from CustTable:
+To integrate with the dimensions framework when deleting or renaming the natural key of the backing table, you must write custom code on the backing table's delete method, and also on either the update or renamePrimaryKey method. If your table blocks update of the natural key you will need to use the renamePrimaryKey override. If it does not, then you can put the code into the update method. Here is an example from CustTable:
 
->   public void delete()
 
->   {
+   public void delete()
+   {
+      if (!DimensionValidation::canDeleteEntityValue(this))
+      {
+            throw error(strFmt("\@SYS134392", this.AccountNum));
+      }
+      
+      ttsbegin;
+      DimensionAttributeValue::updateForEntityValueDelete(this);
+      ttscommit;
+   }
+   
+   public void update()
+   {
+      Common originalRecord = this.orig();
+      super();
+      DimensionValueRename::syncRenamedValue(this, originalRecord);
+   }
+   
+   public void renamePrimaryKey()
+   {
+      Common originalRecord = this.orig();
+      super();
+      DimensionValueRename::syncRenamedValue(this, originalRecord);
+   }
 
->   if (!DimensionValidation::canDeleteEntityValue(this))
+# Step 4: Clear caches to force detection of new view**
 
->   {
+Because the list of dimensionable entities are cached on the server, the creation of a new dimensionable entity will not appear in the list of existing entities until a call to clear the caches is performed, or until both the client and the server are restarted. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class:
 
->   throw error(strFmt("\@SYS134392", this.AccountNum));
+      DimensionCache::clearAllScopes();
 
->   }
+# Step 5: Validate that the dimension appears in the Use Value From lookup
 
->   ttsbegin;
+Now that you have completed the steps, navigate to the Financial dimensions page in the General ledger area. Click on the drop-down on the Use Values from field and verify your value is available.
 
->   DimensionAttributeValue::updateForEntityValueDelete(this);
 
->   ttscommit;
+# Configuration if adding a new OMOperatingUnit type backed entity
 
->   }
+If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it dimensionable are similar but can be made shorter as follows:
+1. Copy one of the existing DimAttributeOM[BackingTableName] views, rename it appropriately and adjust all associated labels and help text.
+1. Expand the Datasource\\BackingEntity (OMOperatingUnit)\\Ranges node on the copied view and change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.
+1. Build and synchronize the project.
+1. Follow the steps from section **Step 2: Validate the view is returning the correct data in SQL** and on.
 
->   public void update()
-
->   {
-
->   Common originalRecord = this.orig();
-
->   super();
-
->   DimensionValueRename::syncRenamedValue(this, originalRecord);
-
->   }
-
->   public void renamePrimaryKey()
-
->   {
-
->   Common originalRecord = this.orig();
-
->   super();
-
->   DimensionValueRename::syncRenamedValue(this, originalRecord);
-
->   }
-
- 
-
-**Step 4: Clear caches to force detection of new view**
-
-Because the list of dimensionable entities are cached on the server, the
-creation of a new dimensionable entity will not appear in the list of existing
-entities until a call to clear the caches is performed, or until both the client
-and the server are restarted. To clear the caches and have the new view appear
-immediately, you must execute the following line of code within a runnable
-class:
-
- 
-
->   *DimensionCache::clearAllScopes();*  
-
- 
-
-**Step 5: Validate that the dimension appears in the Use Value From lookup**
-
-Now that you have completed the steps, navigate to the Financial dimensions page
-in the General ledger area. Click on the drop-down on the Use Values from field
-and verify your value is available.
-
- 
-
-**Configuration if adding a new OMOperatingUnit type backed entity**
-
-If a new Organization Model OMOperatingUnitType enumeration is added, the steps
-to make it dimensionable are similar but can be made shorter as follows:
-
-1.  Copy one of the existing DimAttributeOM[BackingTableName] views, rename it
-    appropriately and adjust all associated labels and help text.
-
-2.  Expand the Datasource\\BackingEntity (OMOperatingUnit)\\Ranges node on the
-    copied view and change the value property on the range to the new
-    OMOperatingUnitType enumeration value that was just added.
-
-3.  Build and synchronize the project.
-
-4.  Follow the steps from section **Step 2: Validate the view is returning the
-    correct data in SQL** and on.
-
-\*\* Because the OMOperatingUnitType is backed by the OMOperatingUnit table,
-generic code already exists to handle the delete, update and renamePrimaryKey
-methods. Therefore, you do not need to update these methods.
+Because the OMOperatingUnitType is backed by the OMOperatingUnit table, generic code already exists to handle the delete, update and renamePrimaryKey methods. Therefore, you do not need to update these methods.
