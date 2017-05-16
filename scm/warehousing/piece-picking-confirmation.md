@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: [Piece picking confirmation]
-description: [This topic describes how you set up and apply piece picking confirmation from a mobile device.
-author: [BibiSp]
+title: Piece picking confirmation
+description: This topic describes how you set up and apply piece picking confirmation from a mobile device.
+author: BibiSp
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
@@ -20,7 +20,6 @@ audience: Application User
 # ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 269384
-ms.assetid: fe7244d9-8858-43b0-b14f-0b769bc4f2ca
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mirzaab
