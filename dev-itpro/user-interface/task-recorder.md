@@ -350,7 +350,7 @@ Clicking this button will expand the Task guide pop-up to show additional inform
 
 ### Document generation setup (optional)
 
-Using a pre-release Chrome extension, Task Recorder is able to take screenshots of the browser as a user records a business process. Task Recorder can then use these screenshots to generate Microsoft Word documents after the user completes the recording. To enable this functionality, follow the steps below to install the  pre-release Google Chrome extension that enables Task Recorder to capture screenshots during recording.
+Using a pre-release Chrome extension, Task Recorder is able to take screenshots of the browser as a user records a business process. After the user completes the recording, Task Recorder can then use these screenshots to generate Microsoft Word documents. To enable this functionality, follow the steps below to install the pre-release Google Chrome extension that enables Task Recorder to capture screenshots during recording.
 
 1.  Open Google Chrome
 2.  Go to **Menu &gt; More tools &gt; Extensions**. 
