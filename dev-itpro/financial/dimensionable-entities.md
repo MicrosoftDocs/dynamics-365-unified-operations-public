@@ -63,16 +63,16 @@ The first step is to create a view in the same model as your backing table.Befor
 1. Review the backing table properties and identify the config key it is using. On the View, enter the same **Configuration Key** as the backing table.
 1. Search for **DimensionEssentials** and add it to the Project. Expand DimensionEssentials and then right-click Permissions and select **New Permission**. In the Properties pane, set the Access Level to **Read**. Click security Privilege and add the view to it under the Permissions node with an Access Level of **Read**. You may need to extend one of these into the model you are using.
 1. Right-click the View and select **View Code**. Add the following code to the view. This will register it in the dimension framework. Here is an example using the view created for CustTable:
-
+      ```
       [SubscribesTo(classstr(DimensionEnabledType),
       delegatestr(DimensionEnabledType,
       registerDimensionEnabledTypeIdentifiersDelegate))]
 
-      public static void registerDimensionEnabledTypeIdentifier(DimensionIEnabledType \_dimensionEnabledType)
+      public static void registerDimensionEnabledTypeIdentifier(DimensionIEnabledType _dimensionEnabledType)
       {
-         \_dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
+         _dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
       }
-      
+      ```
 1. Select **Microsoft Dynamics 365** and then click **Options**. Select Best Practices. Select your model and then scroll until you find
     **Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker**. Verify the rule and its children are selected.
 1.  **Build** and then **synchronize** the view.
