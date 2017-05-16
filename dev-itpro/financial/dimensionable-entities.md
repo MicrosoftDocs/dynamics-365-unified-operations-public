@@ -90,38 +90,39 @@ At this point you should be able to run the following query into SQL Server Mana
 | 22565424579 | US\_SI\_0128 | ussi           | 5637144576    | 22565424579 | Alpine Electronics | 5637144576       |
 
 
-# Step 3: Override methods on the backing table**
+# Step 3: Override methods on the backing table
 
 To integrate with the dimensions framework when deleting or renaming the natural key of the backing table, you must write custom code on the backing table's delete method, and also on either the update or renamePrimaryKey method. If your table blocks update of the natural key you will need to use the renamePrimaryKey override. If it does not, then you can put the code into the update method. Here is an example from CustTable:
 
-
-   public void delete()
-   {
-      if (!DimensionValidation::canDeleteEntityValue(this))
-      {
-            throw error(strFmt("\@SYS134392", this.AccountNum));
-      }
+```
+public void delete()
+{
+    if (!DimensionValidation::canDeleteEntityValue(this))
+    {
+        throw error(strFmt("\@SYS134392", this.AccountNum));
+    }
       
-      ttsbegin;
-      DimensionAttributeValue::updateForEntityValueDelete(this);
-      ttscommit;
-   }
+    ttsbegin;
+    DimensionAttributeValue::updateForEntityValueDelete(this);
+    ttscommit;
+}
    
-   public void update()
-   {
-      Common originalRecord = this.orig();
-      super();
-      DimensionValueRename::syncRenamedValue(this, originalRecord);
-   }
+public void update()
+{
+    Common originalRecord = this.orig();
+    super();
+    DimensionValueRename::syncRenamedValue(this, originalRecord);
+}
    
-   public void renamePrimaryKey()
-   {
-      Common originalRecord = this.orig();
-      super();
-      DimensionValueRename::syncRenamedValue(this, originalRecord);
-   }
+public void renamePrimaryKey()
+{
+    Common originalRecord = this.orig();
+    super();
+    DimensionValueRename::syncRenamedValue(this, originalRecord);
+}
+```
 
-# Step 4: Clear caches to force detection of new view**
+# Step 4: Clear caches to force detection of new view
 
 Because the list of dimensionable entities are cached on the server, the creation of a new dimensionable entity will not appear in the list of existing entities until a call to clear the caches is performed, or until both the client and the server are restarted. To clear the caches and have the new view appear immediately, you must execute the following line of code within a runnable class:
 
@@ -135,8 +136,9 @@ Now that you have completed the steps, navigate to the Financial dimensions page
 # Configuration if adding a new OMOperatingUnit type backed entity
 
 If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it dimensionable are similar but can be made shorter as follows:
+
 1. Copy one of the existing DimAttributeOM[BackingTableName] views, rename it appropriately and adjust all associated labels and help text.
-1. Expand the Datasource\\BackingEntity (OMOperatingUnit)\\Ranges node on the copied view and change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.
+1. Expand the Datasource\BackingEntity (OMOperatingUnit)\Ranges node on the copied view and change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.
 1. Build and synchronize the project.
 1. Follow the steps from section **Step 2: Validate the view is returning the correct data in SQL** and on.
 
