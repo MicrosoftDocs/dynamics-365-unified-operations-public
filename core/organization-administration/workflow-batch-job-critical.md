@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure the workflow Message Processing batch job as critical
+title: Configure the Workflow Message Processing batch job as critical
 description: Configure the workflow Message Processing batch job as critical
 author: aneesmsft
 manager: AnnBe
@@ -28,19 +28,19 @@ ms.dyn365.intro: 2017-05-19]
 ms.dyn365.version: Platform update 6
 ---
 
-# Configure the workflow Message Processing batch job as critical
+# Configure the **Workflow message processing** batch job as critical
 
 [!include[banner](../includes/banner.md)]
 
-The workflow system uses various batch jobs. Workflow Message Processing is an important batch job used to process workflow messages. **If workflow is a key component of your organization, you should consider configuring the Message Processing batch job as critical**.
+The workflow system uses various batch jobs. **Workflow message processing** is an important batch job used to process workflow messages. If workflow is a key component of your organization, you should consider configuring the **Workflow message processing** batch job as critical.
 
-Configuring the Message Processing batch job as critical ensures that the system actively tracks its status. When a critical batch job fails, a performance counter is incremented. You can then use that performance counter to monitor critical batch job failures and take quick action to resolve any issues that may have caused the failure.
+Configuring the **Workflow message processing** batch job as critical ensures that the system actively tracks its status. When a critical batch job fails, a performance counter is incremented. You can then use that performance counter to monitor critical batch job failures and take quick action to resolve any issues that may have caused the failure.
 
-Follow these steps to configure the Message Processing batch job as critical.
+Follow these steps to configure the **Workflow message processing** batch job as critical.
 
-1. Navigate to **System Administration > Inquiries > Batch jobs**.
+1. Navigate to the **Batch jobs** page.
 2. Search for **Workflow message processing** using the quick filter.
 3. Select the **Workflow message processing** batch job.
-4. Click on the **Edit** button in the action pane.
+4. Click **Edit** in the action pane.
 5. Select the **Critical Job** check box.
-6. Click on the **Save** button in the action pane.
+6. Click **Save** in the action pane.
