@@ -81,7 +81,7 @@ The first step is to create a view in the same model as your backing table.Befor
 
 At this point you should be able to run the following query into SQL Server Management Studio to make sure it is pulling the correct data. Here is an abbreviated example using the view created for CustTable:
 
-      select \* from DIMATTRIBUTE**CUSTTABLE**
+      select * from DIMATTRIBUTE**CUSTTABLE**
     
 
 | KEY\_   | VALUE    | DATAAREAID | PARTITION | RECID   | NAME           | PARTITION\#2 |
