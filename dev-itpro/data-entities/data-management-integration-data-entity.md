@@ -51,5 +51,9 @@ Integration through the data management platform provides more capabilities and
 
 The following diagram shows an inbound flow. [![Inbound flow](./media/over6-1024x464.png)](./media/over6.png)
 
+## Known limitations in data import/export
+When you import text files, string sizes are limited to 32,768. If there is a string larger than 32,768 characters, the imported string will be truncated. This is a limitation in the underlying implemenation and is due to SSIS.  
+ 
+If you need to import strings that are larger than above limit, we suggest that you use container entity fields.
 
 
