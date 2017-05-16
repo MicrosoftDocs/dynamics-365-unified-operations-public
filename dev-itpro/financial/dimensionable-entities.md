@@ -2,7 +2,7 @@
 # required metadata
 
 title: Make a backing table be consumable as a Financial dimension
-description: 
+description: This topic provides the steps you must follow if you want to make a backing table usable as a Financial dimension.
 author: aprilolson
 manager: AnnBe
 ms.date: 05/16/2017
@@ -17,11 +17,11 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 191363
-ms.assetid: dd1dd40e-6bff-47b5-bf2e-55b9a4dcde1d
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: aolson
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Make a backing table be consumable as a Financial dimension
 
-This toipc provides the steps you must follow if you want to make a backing table usable as a Financial dimension.
+This topic provides the steps you must follow if you want to make a backing table usable as a Financial dimension.
 
 > [!NOTE]
 > If your dimension is backed by the OMOperatingUnit table then many of the steps are already completed for you. Follow the steps in the **Configuration if adding a new OMOperatingUnit type backed entity** section.
