@@ -140,6 +140,6 @@ If a new Organization Model OMOperatingUnitType enumeration is added, the steps 
 1. Copy one of the existing DimAttributeOM[BackingTableName] views, rename it appropriately and adjust all associated labels and help text.
 1. Expand the Datasource\BackingEntity (OMOperatingUnit)\Ranges node on the copied view and change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.
 1. Build and synchronize the project.
-1. Follow the steps from section **Step 2: Validate the view is returning the correct data in SQL** and on.
+1. Follow the steps from section [Step 2: Validate the view is returning the correct data in SQL](#Step-2:-Validate-the-view-is-returning-the-correct-data-in-SQL) and on.
 
 Because the OMOperatingUnitType is backed by the OMOperatingUnit table, generic code already exists to handle the delete, update and renamePrimaryKey methods. Therefore, you do not need to update these methods.
