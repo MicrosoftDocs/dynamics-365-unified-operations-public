@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: ISO20022 file formats
+title: ISO20022 files import in Microsoft Dynamics 365 for Operations
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
 author: neserovleo
 manager: AnnBe
@@ -28,11 +28,11 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# ISO20022 files import in Microsoft Dynamics 365 for Operations
+# ISO20022 files import in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 
 
 ## Overview
-This article describes features which allows to import payment files in Microsoft Dynamics 365 for Operations in following formats: 
+This article describes features which allows to import payment files in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in following formats: 
 
  - incoming payments from the ISO20022 camt.054 credit advice file into Customer payment journal 
  - return files in ISO20022 format: pain.002 status return and camt.054 debit advice into AP Payment transfer journal
