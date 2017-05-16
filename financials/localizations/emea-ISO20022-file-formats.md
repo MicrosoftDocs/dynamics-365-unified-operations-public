@@ -30,3 +30,18 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # ISO20022 files import in Microsoft Dynamics 365 for Operations
 
+
+## Overview
+This article describes features which allows to import payment files in Microsoft Dynamics 365 for Operations in following formats: 
+incoming payments from the ISO20022 camt.054 credit advice file into Customer payment journal 
+return files in ISO20022 format: pain.002 status return and camt.054 debit advice into AP Payment transfer journal
+
+## header2
+text2
+table
+
+column1
+column2
+value1
+value2
+
