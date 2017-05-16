@@ -47,7 +47,7 @@ A new tabbed workspace form pattern is now available. You can now include tab pa
  The Dynamics 365 for Operations development tools and runtime platform now support extending an extended form, for example, extending a form that is already extended in a referenced model. This fixes an issue that originally prevented extending a field/button group control if the group control belongs to a form extension.
  
 ## Development and customization - Validating events on form data sources and form data source fields ##
-Validation events on form data source (FormDataSourceEventType) and form data source fields (FormDataFieldEventType) now support invalidating user-specified values. The following example illustrates this feature. The example uses a form named MyForm that contains a data source named abTable and a field named FieldInt1.
+Validation events on form data source (FormDataSourceEventType) and form data source fields (FormDataFieldEventType) now support invalidating user-specified values. The following example illustrates this feature. The example uses a form named **MyForm** that contains a data source named **abTable**, and a field named **FieldInt1**.
 
 
 public class abFormEvent
