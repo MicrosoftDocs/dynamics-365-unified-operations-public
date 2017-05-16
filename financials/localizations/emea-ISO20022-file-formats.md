@@ -73,7 +73,7 @@ To use this feature, following setup should be completed:
 To run the file import, open customer payment journal lines form and click Functions/ Import payments button. On the dialog screen select method of payment which have required settings for ISO20022 camt.054 format. On the opened dialog, specify required parameters and path to the file location. Click OK. File is successfully imported.
 
 
-##Pain.002 status return and camt.054 debit advice import into AP Payment transfer journal
+## Pain.002 status return and camt.054 debit advice import into AP Payment transfer journal
 This feature allows to import bank messages in ISO20022 formats: pain.002.001.003 status return messages and camt.054.001.002 debit advice on the Vendor payment transfer form.
 
 To use this feature, following setup should be completed:
