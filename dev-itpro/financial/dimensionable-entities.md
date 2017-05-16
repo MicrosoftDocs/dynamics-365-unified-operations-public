@@ -48,10 +48,10 @@ The first step is to create a view in the same model as your backing table.Befor
 1.  Expand **View Metadata**, and then drag your table and drop it on the **Data Sources** node on the view.
 1.  Rename the node from [BackingTableName] to **BackingEntity.**
 1.  Identify the key, value and name for the table you want to make into a financial dimension. Find the fields and drag them onto the BackingEntity data source list, or copy and paste the fields on data source. **Rename** the three fields to:
-   + **Key** – this is the surrogate key, typically the RecID
-   + **Value** - this is the natural key, for example the AccountNum. It is a
+      + **Key** – this is the surrogate key, typically the RecID
+      + **Value** - this is the natural key, for example the AccountNum. It is a
         String up to 30 characters.
-   + **Name** – this is the description, which is typically the Name or
+      + **Name** – this is the description, which is typically the Name or
         description field. It is a String up to 60 characters.
 1.  You may need to create a **Range** on the view if the backing table stripes data. For example, if you are using an Operating unit and only want Department, you would need the range for that operating unit.
 1.  Right-click Indexes and select **New Index**. Select **Value** as the Data Field on the Properties pane. You can rename the index if desired, but set Allow Duplicates to **No**.
@@ -64,14 +64,15 @@ The first step is to create a view in the same model as your backing table.Befor
 1. Search for **DimensionEssentials** and add it to the Project. Expand DimensionEssentials and then right-click Permissions and select **New Permission**. In the Properties pane, set the Access Level to **Read**. Click security Privilege and add the view to it under the Permissions node with an Access Level of **Read**. You may need to extend one of these into the model you are using.
 1. Right-click the View and select **View Code**. Add the following code to the view. This will register it in the dimension framework. Here is an example using the view created for CustTable:
 
-   [SubscribesTo(classstr(DimensionEnabledType),
+      [SubscribesTo(classstr(DimensionEnabledType),
       delegatestr(DimensionEnabledType,
       registerDimensionEnabledTypeIdentifiersDelegate))]
 
-   public static void registerDimensionEnabledTypeIdentifier(DimensionIEnabledType _dimensionEnabledType)
-   {
-      _dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
-   }
+      public static void registerDimensionEnabledTypeIdentifier(DimensionIEnabledType \_dimensionEnabledType)
+      {
+         \_dimensionEnabledType.registerViewIdentifier(tablestr(DimAttribute**CustTable**));
+      }
+      
 1. Select **Microsoft Dynamics 365** and then click **Options**. Select Best Practices. Select your model and then scroll until you find
     **Microsoft.Dynamics.AX.Framework.ViewRules/ViewDimensionEnabledTypeChecker**. Verify the rule and its children are selected.
 1.  **Build** and then **synchronize** the view.
