@@ -5,8 +5,8 @@ title: Set up customer and vendor compensation | Microsoft Docs
 description: 
 author: mrolecki
 manager: AnnBe
-ms.date: 0000-00-00 00:00:00
-ms.topic: 
+ms.date: 05-16-2017
+ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
