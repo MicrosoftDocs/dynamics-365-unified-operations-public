@@ -99,18 +99,18 @@ LCS provides an option to deploy a Development topology environment. With this o
 
 As part of code Migration process or development activities, we expect you to check-in your model source files and the associated test model source files into VSTS. If you have migrated your code using the LCS migration service, this is automatically done for you. If you have not checked in any code into VSTS and work on direct check-in, you must follow certain guidelines for the VSTS folder structure. This will help with setting up correct build definition. All modules should be added to root folder **Metadata**. Under each module, there should be two folders. One folder contains all models. The other folder should contain descriptor XML for that module. 
 
-[![image009](./media/image009.png)](./media/image009.png)  
+![VSTS folder structure](media/build-trunk-main-metadata.png)
 
 ### Deploy developer topology (Developer and Build VM)
 
 1.  In the LCS portal, select the project that is connected to VSTS.
 2.  In the **Environments** pane, click **+** to deploy a new environment.
 
-    [![image011](./media/image011.png)](./media/image011.png)
+    ![Azure settings](media/azure-settings.png)
     
 3.  In the **Select environment topology** pane, select **Azure**.
 
-    [![image012](./media/image012.png)](./media/image012.png)
+    ![select environment topology](media/select-environment-topology.png)
     
 4.  Proceed to deploy a DEV/TEST environment.
     -   Depending on your LCS project type, some deployment steps described below may vary.
@@ -141,7 +141,7 @@ When you open Visual Studio the first time on a Developer VM, connect to VSTS us
 2.  Enter the VSTS URL and click **OK**. You will be prompted for your VSTS username and password.
 3.  After you are logged into the VSTS, your **Default workspace** that you will use for your development.
 
-    [![image023](./media/image023.png)](./media/image023.png)
+    ![manage workspaces](media/manage-workspaces.png)
 
 ## Test integration with the build
 There are two ways to integrate test as part of build process for testing and validation:
