@@ -105,15 +105,14 @@ The following entities require special handling when used in configurations:
 
 | Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
-| System setup                   | Organization hierarchy - published     | There is one entity for exporting hierarchies (Organization hierarchy - published) and a different one for importing them (Organization hierarchy). Both entities are currently in the template at this time. After exporting the package, copy the data from the Organization hierarchy - published file to the Organization hierarchy file. When you import the package, disable the Organization hierarchy - published entity.  |
 | GL Shared                      | Account structures active group        | This is a composite entity that will export and import only the active account structures. If you use any other account structure entities, the active account structures will be changed to draft and you will need to activate them before they can be used. |
 |                                | Advanced rule structures active group  | Used in combination with account structures active group entity, this composite entity will export and import only the active advanced rule structures active. If you use any other advanced rule structures entities, the advanced rule structures will be changed to draft and you will need to activate them before they can be used. |
-|                                | Financial dimension values             | All values, including custom values, will be exported. Remove the custom values before importing them. If you leave them in the package, they will not import. However, the custom values will be populated later when you import the data that backs the custom dimension. |
+|                                | Financial dimension values             | All dimension values, including values based on system defined entities like projects or customers, will be exported. Remove the system defined values before importing them. If you leave them in the package, they will not import. However, the system defined values will be populated as you import the data that backs the system defined dimension. |
 | Workflow                       | Workflow version                       | Change the owner for every record in the package data to Admin unless the users in the workflow are already imported |  
 |                                | Workflow expression                    | Some workflow expressions may be too long for an Excel cell. Use XML as the export format instead of Excel |  
 | Tax                            | Sales tax parameters                   | The default value for the marginal base calculations method is "Total" for sales tax parameters. The Ledger Parameters entity does not set that value. However, some tax codes use a marginal base of "Line", which will fail validation. A new entity called Sales tax parameters preset entity was created to allow you to import the marginal base calculation method first so you can then import tax codes | 
 | Accounts receivable            | Customers                              | The Customers entity was designed for use with Odata scenarios. For configurations, use the Customer definitions entity and the Customer details entity. The Customer definitions entities allows you to import the basic information about a customer, enabling entities that require a customer to have that information earlier in the import process. The Customer details entity contains additional information about a customer that you can add after parameters and reference data has been set up. |
-| Inventory management           | Warehouse locations                    | Some warehouses locations require a Location profile ID.   Location profile ids require a Location format. This information must be imported before the warehouse location  | 
+| Inventory management           | Warehouse locations                    | Some warehouses locations require a Location profile ID. Location profile ids require a Location format. The location format information must be added manually before the warehouse location at this time  | 
 | Product information management | Products                               | The Products and Released Products entities should be used for configurations. The Product master and Released product master entities should be used for Odata scenarios |
 |                                | Product document attachments           | For Product document attachments and Released product document attachments, you must never skip staging because additional steps are performed in the staging environment. You must use a data package for export and for import  because the export file needs to be accompanied by a resources folder with the attechments. The entities support images, documents, notes, and links. When you export, you will see an image file with a name that looks like a GUID. It is a valid data package needed to complete the import |
 |                                | Product attribute values               | Product attribute values are assigned only when a user opens up the Attribute values page from the Products details page. At this time, you cannot import the values at this time unless this step was performed in the golden build. |
@@ -129,7 +128,7 @@ The following entities may need to be unmapped:
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
 | System setup                   | Operating unit                         | Unmap ManagerPersonnelNumber unless you have imported workers |
 |                                | User information                       | Apply a filter where the ID is not equal to Admin. Unmap PersonName because there is no mapping to the directory. |
-| Accounts payable               | Vendors                                | Unmap purchase site and warehouse unless they are set up. Unmap the 1099 box id and 1099 type unless you have opened the 1099 form. Unmap the vendor bank acccount ID. The vendor bank account entity will set up the link to the bank account when it is imported |
+| Accounts payable               | Vendors                                | Unmap purchase site (DefaultPurchaseSite) and warehouse (DefaultProcurementWarehouseID) unless they are set up. Unmap the 1099 box id (Tax1099BoxID) and 1099 type (Tax1099Type) unless you have opened the 1099 form. Unmap the vendor bank account ID. The vendor bank account entity will set up the link to the bank account when it is imported |
 | Accounts receivable            | Customer details                       | Unmap EmployeeResponsibleNumber unless workers have been imported. Unmap CollectionsContactPersonID unless workers and their contact information has been imported |
 | Inventory management           | Warehouse current postal address       | Unmap the Picking store area and Input store area unless Retail information has been imported | 
 | Product information management | Products                               | Unmap NMFCCode and STCCCode. There are no entities available for those codes at this time |
@@ -171,8 +170,8 @@ The following entities need filters or special handling when you export the data
 |                                | Ledger fiscal calendar year            | Apply a filter to Ledger name  |
 |                                | Ledger fiscal calendar period          | Apply a filter to Ledger name  |
 |                                | Main account legal entity overrides    | Apply a filter to Company |
-|                                | Financial dimension value legal entity | Apply a filter to Legal entity but also include records with empty legal entities (shared values)|
-|                                | Financial dimension values             | Apply a filter to Legal entity. However, you cannot filter out custom dimension values so you will need to delete them. They will be restored when you import data for the tables that are backing the custom dimensions |
+|                                | Financial dimension value legal entity | Apply a filter to Legal entity |
+|                                | Financial dimension values             | Apply a filter to Legal entity. However, you cannot filter out system defined dimension values so you will need to delete them. They will be restored when you import data for the tables that are backing the system defined dimensions |
 |                                | Journal names                          | Apply a filter to Voucher series company ID |
 |                                | Ledger allocation basis source         | Apply a filter to Legal entity |
 |                                | Ledger allocation rule destination     | Apply a filter to Company |
@@ -188,7 +187,7 @@ The following entities need filters or special handling when you export the data
 |                                | Budget control over budget permissions | Apply a filter to Legal entity              |
 |                                | Budget control rule                    | Apply a filter to Legal entity              |
 |                                | Budget control rule criteria           | Apply a filter to Legal entity              |
-|                                | Budget cost dlements                   | Apply a filter to Cost element data area id |
+|                                | Budget cost elements                   | Apply a filter to Cost element data area id |
 |                                | Budget dimensions                      | Apply a filter to Legal entity              |
 |                                | Budget plan allocation schedule        | Apply a filter to Ledger                    |
 |                                | Budget plan process                    | Apply a filter to Ledger                    |
@@ -196,9 +195,9 @@ The following entities need filters or special handling when you export the data
 |                                | Budget plan priority constraint        | You will see the same issue described for stage rules | 
 |                                | Budget plan process administration     | You will see the same issue described for stage rules | 
 |                                | Budget transfer rules                  | Apply a filter to Legal entity              |
-| Inventory management           | Warehouse current postal address       | Apply a filter to Warehouse legal entity |
-|                                | Site current postal address            | Apply a filter to Operational site legal entity | 
-|                                | Tracking number groups                 | Apply a filter to Number sequence scope data area  | 
+| Inventory management           | Warehouse current postal address       | Apply a filter to Company |
+|                                | Site current postal address            | Apply a filter to Company | 
+|                                | Tracking number groups                 | The entity automatically filters the Number sequence scope data area by the legal entity so you do not need a filter. However, if you need to change the legal entity, the legal entity is stored in the table.  | 
                          
 ### Changing the legal entity value before importing
 If you want to change the legal entity ID to another value, you must change the values in all fields like those listed above to the new legal entity value. For example, for Legal entities, change Company from the exported value to a new value in the exported file. 
@@ -220,11 +219,11 @@ The process for importing a configuration is as follows:
 3. Click **New** to create a configuration data project and add an ID and name that represent the configuration.
 4. Set the operation type for the data project to **Import** and the project category to **Configuration**.
 5. Click Add file to select the file that has your entity
-    information and data. For data packages, the file will have a ZIP file extension,
+    information and data. For data packages, the file will have a ZIP file extension.
     The extension of the file name will be matched
     to the default file extensions in your data sources and the source
     data format will be populated automatically. If you have not set up
-    the default file extensions, you must first select a source data format first
+    the default file extensions, you must first select a source data format 
     before you select the file.
 5.  When you load a package, the import page reads the list of entities from the package first. 
     A progress bar displays how much of the package has been read. Once the list of entities is read, 
