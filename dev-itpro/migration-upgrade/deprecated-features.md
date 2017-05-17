@@ -2,10 +2,10 @@
 # required metadata
 
 title: Deprecated features
-description: This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
+description: This topic describes features that have been removed, or are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 04/18/2017
+ms.date: 05/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -35,7 +35,97 @@ ms.dyn365.ops.version: Platform update 6
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes features that have been removed, or are planned for removal, from Dynamics 365 for Operations. It also lists features that were deprecated in Dynamics AX 7.0 releases.
+This topic describes features that have been removed, or are planned for removal.
+
+## Features that have been deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
+
+### [Feature name]
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | [Briefly explain why the feature is deprecated.]                                  |
+| **Replaced by another feature?** | [Indicate if the feature is replaced by something else.]                          |
+| **Modules affected**             | [List the modules affected such as: Accounts payable, Accounts receivable]        |
 
 Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
 ---------------------------------------------------------------------------------------------
