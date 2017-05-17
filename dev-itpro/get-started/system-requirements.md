@@ -99,7 +99,8 @@ Dynamics 365 for Operations requires .NET Framework version 4.6.2 for all click-
 
 -   Retail hardware station is a 32-bit application, but it will run on both x86 and x64 architectures.
 -   Retail hardware station is supported on the following operating systems:
-    -   Windows 7 Professional, Enterprise, and Ultimate editions **Note:** Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
+    -   Windows 7 Professional, Enterprise, and Ultimate editions 
+    **Note:** Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
     -   Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions
     -   Windows 10 Pro, Enterprise, and Enterprise LTSB editions
 
