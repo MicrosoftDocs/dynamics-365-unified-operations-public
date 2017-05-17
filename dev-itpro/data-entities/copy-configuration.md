@@ -127,7 +127,7 @@ The following entities may need to be unmapped:
 | Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
 | System setup                   | Operating unit                         | Unmap ManagerPersonnelNumber unless you have imported workers |
-|                                | User information                       | Apply a filter where the ID is not equal to Admin. Unmap PersonName because there is no mapping to the directory. |
+|                                | User information                       | Apply a filter where the ID is not equal to Admin. Unmap PersonName and use the User to person relationship entity to map system users to directory users. |
 | Accounts payable               | Vendors                                | Unmap purchase site (DefaultPurchaseSite) and warehouse (DefaultProcurementWarehouseID) unless they are set up. Unmap the 1099 box id (Tax1099BoxID) and 1099 type (Tax1099Type) unless you have opened the 1099 form. Unmap the vendor bank account ID. The vendor bank account entity will set up the link to the bank account when it is imported |
 | Accounts receivable            | Customer details                       | Unmap EmployeeResponsibleNumber unless workers have been imported. Unmap CollectionsContactPersonID unless workers and their contact information has been imported |
 | Inventory management           | Warehouse current postal address       | Unmap the Picking store area and Input store area unless Retail information has been imported | 
