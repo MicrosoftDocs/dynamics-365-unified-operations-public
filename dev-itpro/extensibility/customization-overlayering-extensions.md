@@ -228,6 +228,11 @@ You can create label extension files in order to modify the string value of a la
 3.  Within the FLM\_Extension label file, you can create new labels or modify the value of labels that are defined in the FLM label file of the Fleet Management model. Use the standard label editor to define new labels or redefine labels that already exist in the original FLM label file.
 4.  If your goal is to create translations of the FLM label, right-click on the FLM\_Extension element in your project and select **Add new languages**. Follow the wizard to add translation files to the FLM labels.
 
+## Extension of Country/Region Codes
+(This functionality is available as of platform update 7)
+The **Country Region Codes** property enables developers to restrict functionality to certain regions or countries based on the current legal entity’s primary address. Developers can extend this functionality by setting the Country Region Codes property on the following extension element types: Menu extension, Menu Item extension, Table extension (and fields), Form extensions (form controls), EDT extensions, Enum extensions, and View extensions.
+A developer can specify additional country/region codes in their extension. The effective country/regions (at runtime) associated with an element will be the union of all codes from the baseline element and all its extensions.
+
 ## Event argument types
 When an event takes place, the delegates described in the sections above get triggered. In this section, we provide the details of the types of the arguments that are passed as the event arguments. Some of the entries in the table below have a null in the column designating the event args; this means that no arguments are passed - the relevant information is in the first argument (typically called sender) in this case.
 
