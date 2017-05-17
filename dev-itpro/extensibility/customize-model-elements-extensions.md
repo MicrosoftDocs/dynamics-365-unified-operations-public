@@ -157,7 +157,7 @@ In this tutorial, the **FleetManagementDiscounts** Project contains the model el
 
     The designer presents an integrated view of the model element, including its extensions. Read-only nodes are shown in italic text, while nodes that belong to the current extension are shown in bold, with other visual cues that indicate the type of customization. 
     
-        [![FMRentalExt\_CustomizeModel](./media/fmrentalext_customizemodel.png)](./media/fmrentalext_customizemodel.png)
+    [![FMRentalExt\_CustomizeModel](./media/fmrentalext_customizemodel.png)](./media/fmrentalext_customizemodel.png)
         
 3.  In the designer's search box, type 'e:' as shown in the image below. This filters the current designer to only show nodes that belong to the current extension. 
 
@@ -197,7 +197,7 @@ The **FleetManagement Discounts** project contains two new tables, **FEDiscount*
 
 In **Solution Explorer**, in the FleetManagement Discounts project, double-click **Code &gt; Classes &gt; FMRentalCharge\_Extension** to open the code editor. 
 
-    [![FMRentalChargeCode](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) 
+[![FMRentalChargeCode](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) 
     
 This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events. **Note:** Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of [X++ debugger features](..\dev-tools\new-x-debugger-features.md)article.
 
@@ -239,7 +239,7 @@ This section shows how you can use the Visual Studio tools to create and interac
     
     This will create an extension of the **FMVehicle** table in the **FleetManagement Discounts** project named **FMVehicle.Extension**. 
     
-        [![FMVehicle.Extension](./media/expanddiscountsnode2_customizemodel.png)](./media/expanddiscountsnode2_customizemodel.png)
+    [![FMVehicle.Extension](./media/expanddiscountsnode2_customizemodel.png)](./media/expanddiscountsnode2_customizemodel.png)
         
 4.  In **Solution Explorer**, right-click **FMVehicle.Extension**, and then click **Open with**. In the dialog box, select **XML (Text) Editor**, and then click **OK**. **Note**: This extension file is simply a template that doesn't contain metadata from the base **FMVehicle** table. An extension file will always contain only the metadata that defines the extension and nothing from the base model element. 
 
@@ -367,6 +367,59 @@ This is an example of adding event handler methods on existing controls.
     fr = sender.formRun();
     var frDs = fr.dataSource("FMRental");
 
+## Experiment with event handlers on form data sources
+Just like tables, form controls and other element types, form data sources and form data source fields provide framework-level events. The following example show how you can use the ValidatingWrite event on a form data source or the Validating event on a form data source field to validate user input on the FMRental form. This functionality is available as of Platform Update 7.
+
+```
+    /// <summary>
+    /// When saving a new rental, prevent setting the start mileage on the FMRental form to a value that is equal to 1
+    /// </summary>
+    [FormDataSourceEventHandler(formDataSourceStr(FMRental, FMRental), FormDataSourceEventType::ValidatingWrite)]
+    public static void FMRental_OnValidatingWrite(FormDataSource sender, FormDataSourceEventArgs e)
+    {
+        var datasource = sender as FormDataSource;
+        var args = e as FormDataSourceCancelEventArgs;
+        if (args != null && datasource != null)
+        {
+            FMRental record = datasource.cursor() as FMRental;
+            if (record.recId == 0)
+            {
+                if(record.startmileage == 1)
+                {
+                    boolean doCancel = !checkFailed("Start Mileage = 1 is not allowed");
+                    args.cancel(doCancel);
+                }
+            }
+        }
+    }
+```
+```
+    /// <summary>
+    /// Prevent changing the start mileage field on the FMRental form to a value that is equal to 1
+    /// </summary>
+    [FormDataFieldEventHandler(formDataFieldStr(FMRental, FMRental, StartMileage), FormDataFieldEventType::Validating)]
+    public static void StartMileage_OnValidating(FormDataObject sender, FormDataFieldEventArgs e)
+    {
+        var dataObject = sender as FormDataObject;
+        var args = e as FormDataFieldCancelEventArgs;
+        if (args != null && dataObject != null)
+        {
+            var datasource = dataObject.datasource() as FormDataSource;
+            if (datasource != null)
+            {
+                FMRental record = datasource.cursor() as FMRental;
+                if (record.RecId > 0)
+                {
+                    if (record.StartMileage == 1 )
+                    {
+                        boolean doCancel = !checkFailed("Start Mileage = 1 is not allowed");
+                        args.cancel(doCancel);
+                    }
+                }
+            }
+        }
+    }
+```
 ## Experiment with table extension display and edit methods
 Extension methods enable you to extend tables by creating new display and edit methods on these tables without over-layering X++ code (Extension method must belong to a class named with an \_Extension suffix). For example, this class shows how you can extend the FMVehicle table with an extension display method named CupHoldersDisplay.
 
@@ -378,16 +431,16 @@ Extension methods enable you to extend tables by creating new display and edit
        }
     }
 
-On a form or form extension, you can bind a control to this display method by setting "Data Source = FMVehicle" and "Data method = "FMVehicle\_Extension::CupHoldersDisplay" as the image below shows. 
+On a form or form extension, you can bind a control to this display method by setting "Data Source = FMVehicle" and "Data method = "FMVehicle\_Extension::CupHoldersDisplay" as the image below shows.
 
-    [![Extension display method](./media/extensiondisplaymethod.jpg)](./media/extensiondisplaymethod.jpg)
+![Extension display method](./media/extensiondisplaymethod.jpg)
 
 ## Create a Fleet extension package for deployment
 To deploy your extension to another environment, for example, a test, pre-production or production environment, you must create a deployment package.
 
 1.  In Visual Studio, on the **Dynamics AX** menu, point to **Deploy**, and then click **Create Deployment Package**. 
 
-    [![Create deployment package](./media/createdeploymentpackage_customizemodel.png)](./media/createdeploymentpackage_customizemodel.png)
+    ![Create deployment package](./media/createdeploymentpackage_customizemodel.png)
     
 2.  Select the **Fleet Management Extension** check box.
 3.  In the **Package file location** text box, enter "c:FMLab".
