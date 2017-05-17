@@ -38,16 +38,24 @@ ms.dyn365.ops.version: Platform update 7
 This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.XXXX.XXXX.
 
 ## Configuration data projects ##
-Using a configuration data project, you can easily export configuration data and move it from one instance to another instance. This feature provides an updated user interface, and the ability to easily manage templates and projects.
+Using a configuration data project, you can easily export configuration data and move it from one instance to another instance. This feature provides an updated user interface, and the ability to easily manage templates and projects. For more details, refer to [Configuration data projects](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/mfalkner-configurations/dev-itpro/data-entities/configuration-data-projects.md).
 
 ## Development tooling - New tabbed workspace pattern ##
-A new tabbed workspace form pattern is now available. You can now include tab pages that house embedded Power BI reports. This feature is our first step toward moving away from horizontally-scrolling workspaces.
+A new tabbed workspace form pattern is now available. You can now include tab pages that house embedded Power BI reports. This feature is our first step toward moving away from horizontally-scrolling workspaces. For more information, see [Workspace form pattern](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern).
 
  ## Development and customization - Extending a group control ##
  The Dynamics 365 for Operations development tools and runtime platform now support extending an extended form, for example, extending a form that is already extended in a referenced model. This fixes an issue that originally prevented extending a field/button group control if the group control belongs to a form extension.
  
+ ## Development and customization - Extending the Country Region Codes property ##
+ The **Country Region Codes** property enables developers to restrict functionality to certain regions or countries based on the current legal entity’s primary address. The **Country Region Codes** property is editable on the following extension element types: Menu extension, Menu Item extension, Table extension (and fields), Form extensions (form controls), EDT extensions, Enum extensions, and View extensions.
+
+A developer can specify additional country/region codes in their extension. The effective country/regions associated with an element will be the union of all codes from the baseline element and all its extensions. 
+
+ 
 ## Development and customization - Validating events on form data sources and form data source fields ##
-Validation events on form data source (FormDataSourceEventType) and form data source fields (FormDataFieldEventType) now support invalidating user-specified values. The following example illustrates this feature. The example uses a form named **MyForm** that contains a data source named **abTable**, and a field named **FieldInt1**.
+Validation events on form data source (FormDataSourceEventType) and form data source fields (FormDataFieldEventType) now support invalidating user-specified values. For more information, see [Customize model elements using extensions](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensibility/customize-model-elements-extensions).
+
+The following example illustrates this feature. The example uses a form named **MyForm** that contains a data source named **abTable**, and a field named **FieldInt1**. 
 
 
 public class abFormEvent
