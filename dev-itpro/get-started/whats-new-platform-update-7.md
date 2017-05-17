@@ -38,10 +38,13 @@ ms.dyn365.ops.version: Platform update 7
 This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.XXXX.XXXX.
 
 ## Configuration data projects ##
-Using a configuration data project, you can easily export configuration data and move it from one instance to another instance. This feature provides an updated user interface, and the ability to easily manage templates and projects. For more details, refer to [Configuration data projects](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/mfalkner-configurations/dev-itpro/data-entities/configuration-data-projects.md).
+Using a configuration data project, you can easily export configuration data and move it from one instance to another instance. This feature provides an updated user interface, and the ability to easily manage templates and projects. For more details, refer to [Configuration data projects](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/data-entities/configuration-data-projects.md).
+
+## Static export to Excel limit increase from 2k to 10k ##
+The static Export to Excel limit has been increased from 2k to 10k to allow more rows to be exported from a grid. If there is an entity representing the data in the grid we recommended that you use Open in Excel and the Excel Add-in instead, since there is no hard row limit. In addition, if there is an entity and the user has admin privileges then DIXF (data management) is also an option. For more information, see [Use the Excel add-in](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/use-excel-add-in).
 
 ## Development tooling - New tabbed workspace pattern ##
-A new tabbed workspace form pattern is now available. You can now include tab pages that house embedded Power BI reports. This feature is our first step toward moving away from horizontally-scrolling workspaces. For more information, see [Workspace form pattern](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern).
+A new tabbed workspace form pattern is now available. You can now include tab pages that house embedded Power BI reports. This feature is our first step toward moving away from horizontally-scrolling workspaces. For more information, see [Workspace form pattern](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/workspace-form-pattern). 
 
  ## Development and customization - Extending a group control ##
  The Dynamics 365 for Operations development tools and runtime platform now support extending an extended form, for example, extending a form that is already extended in a referenced model. This fixes an issue that originally prevented extending a field/button group control if the group control belongs to a form extension.
