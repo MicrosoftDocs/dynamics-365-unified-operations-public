@@ -139,6 +139,7 @@ The following entities may need to be unmapped or filtered:
 |                                | Item coverage group                    | Unmap Period template ID unless they have already been added manually |
 | Procurement                    | Vendors                                | Unmap purchase site (DefaultPurchaseSite) and warehouse (DefaultProcurementWarehouseID) unless they are set up. Unmap the 1099 box id (Tax1099BoxID) and 1099 type (Tax1099Type) unless you have opened the 1099 form. Unmap the vendor bank account ID. The vendor bank account entity will set up the link to the bank account when it is imported |
 | Sales and marketing            | Leads                                  | Unmap LeadOpeningPersonnelNumber, LeadClosingPersonnelNumber, LeadResponsiblePersonnelNumber unless workers have been imported |
+| Project management             | Projects                               | Unmap WorkerArchetectPersonelNumber, WorkerRespFinancialPersonelNumber, WorkerResponsiblePersonnelNumber, WorkerRespSalesPersonelNumber unless workers have been imported |
 
 
 ### Golden builds with multiple legal entities
