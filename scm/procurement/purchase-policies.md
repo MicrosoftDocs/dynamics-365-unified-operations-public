@@ -100,8 +100,8 @@ The category policy rule defines how users can select vendors for each category.
 
 The re-approval rule is an optional rule that defines the criteria for requiring re-approval when a purchase order is changed. The selected fields are evaluated in the purchase order workflow when the "Requires purchase order re-approval" condition is set up in the workflow.
 
-[!NOTE]
-Accounting distribution will always be reset when an approved purchase order with change management enabled is changed. So you should be aware that if you want to avoid a re-approval of a purchase order when certain fields are changed, the field Accounting distribution.changed should NOT be included as a selected field for re-approval. 
+> [!NOTE]
+> Accounting distribution will always be reset when an approved purchase order with change management enabled is changed. So you should be aware that if you want to avoid a re-approval of a purchase order when certain fields are changed, the field Accounting distribution.changed should NOT be included as a selected field for re-approval. 
 
 ### Purchase requisition RFQ rule
 
