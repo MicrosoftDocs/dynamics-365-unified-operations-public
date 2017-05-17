@@ -49,6 +49,106 @@ Proivde a brief description of the feature.
 | **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
 | **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
 
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
+### Feature name
+
+Proivde a brief description of the feature.
+
+|                                  |                                                                                   |
+|----------------------------------|-----------------------------------------------------------------------------------|
+| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
+| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
+| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+
 
 Features that have been deprecated in Dynamics 365 for Operations 1611 with platform update 3
 ---------------------------------------------------------------------------------------------
