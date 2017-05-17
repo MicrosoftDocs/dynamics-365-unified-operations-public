@@ -55,7 +55,7 @@ In addition to a bank statement, banks can provide specific messages, containing
 
 ##### Import formats
 
--   ISO 20022 camt.054 bank notification message
+-   ISO 20022 [camt.054 bank notification message](emea-ISO20022-file-formats.md)
 -   [Nets import format](emea-nor-nets-import-format.md) - Complex feature for Norwegian payment formats
 -   ESR customer payments import
 -   Import payment formats for Sweden - BankGirot Max and BankGirot OCR formats
