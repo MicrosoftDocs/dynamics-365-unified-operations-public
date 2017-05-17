@@ -119,15 +119,17 @@ The following entities require special handling when used in configurations:
 | Procurement                    | Vendor catalog                         | Please refer to the discussion for importing vendor catalogs in the Supply Chain Management blog https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/  |
 
 
-### Remove the mapping for specific fields
-A golden build may not have customer-specific fields set up. These fields should be unmapped to ensure that the import works. For example, workers are stored in many tables but they may not be set up in a golden build. 
+### Remove the mapping and apply filters for specific entity fields
+A golden build may not have customer-specific fields set up. These fields should be unmapped to ensure that the import works. For example, workers are stored in many tables but they may not be set up in a golden build. Filters may also be required for certain fields
+in an entity.
 
-The following entities may need to be unmapped:
+The following entities may need to be unmapped or filtered:
 
 | Area                           | Entity                                 | Action to take                                            |  
 |--------------------------------|----------------------------------------|-----------------------------------------------------------
 | System setup                   | Operating unit                         | Unmap ManagerPersonnelNumber unless you have imported workers |
 |                                | User information                       | Apply a filter where the ID is not equal to Admin. Unmap PersonName and use the User to person relationship entity to map system users to directory users. |
+|                                | Global address book                    | Apply a filter where name is not equal to blank. |
 | Accounts payable               | Vendors                                | Unmap purchase site (DefaultPurchaseSite) and warehouse (DefaultProcurementWarehouseID) unless they are set up. Unmap the 1099 box id (Tax1099BoxID) and 1099 type (Tax1099Type) unless you have opened the 1099 form. Unmap the vendor bank account ID. The vendor bank account entity will set up the link to the bank account when it is imported |
 | Accounts receivable            | Customer details                       | Unmap EmployeeResponsibleNumber unless workers have been imported. Unmap CollectionsContactPersonID unless workers and their contact information has been imported |
 | Inventory management           | Warehouse current postal address       | Unmap the Picking store area and Input store area unless Retail information has been imported | 
