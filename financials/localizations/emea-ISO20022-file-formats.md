@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form:  
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: shylaw
+ms.reviewer: shylaw
 # ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
@@ -57,7 +57,7 @@ To use this feature, following setup should be completed:
 
 	 - Length of customer code used in ISR referencef or automatic identification of customer (field "Customer payments, account lengths"). 
 	 - Also make sure that Customer number and invoice number (number sequences) contain only digits and no other characters. Also, invoice number must not have leading zeros.
-	 - ESR, BESR and Routing number for the legal entity Bank account.For more info see also [legacy ESR feature](https://docs.microsoft.com/en-us/dynamics365/operations/financials/localizations/emea-che-esr-customer-payments-import), which requires similar settings.
+	 - ESR, BESR and Routing number for the legal entity Bank account.For more info see also [legacy ESR feature](emea-che-esr-customer-payments-import.md), which requires similar settings.
 
 To run the file import, open customer payment journal lines form and click Functions/ Import payments button. On the dialog screen select method of payment which have required settings for ISO20022 camt.054 format. On the opened dialog, specify required parameters and path to the file location. Click OK. File is successfully imported.
 
