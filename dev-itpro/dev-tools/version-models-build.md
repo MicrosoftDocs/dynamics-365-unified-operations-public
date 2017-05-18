@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Version models in the automated build
 With Platform Update 6, the automated build definition for Dynamics 365 for Operations contains a new step that updates the models in the source package and deployable package of the build output with the version of the build that produced them.
 
-Build definitions that were created before Platform Update 6 need to be manually updated to add this step.
+Build definitions that were created before Platform Update 6 need to be manually updated to add this step. See the [Updating an existing build definition](#updating-an-existing-build-definition) topic in this article.
 
 ## Version numbers in Dynamics 365 for Operations
 Even though models are compiled into one package the metadata information of all models is retained inside the binary package, and can be reviewed from Lifecycle Services (LCS) or inside the Dynamics 365 for Operations client.
@@ -48,11 +48,38 @@ All versions are in .NET assembly format, consisting of 4 numbers separated with
 As code is being updated, the build is used to produce new packages to deploy to environments. Visual Studio Team Services tracks the changes included in each build compared to the previous one. If the models produced contain the version of the build, it provides end-to-end traceability of which code changes are available in a specific environment by finding the build number and reviewing the changes included in that build in VSTS. For customers and partners using builds on different branches or using different build definitions for nightly builds, gated check-in or deployment builds, each build can have a different versioning scheme to differentiate the model metadata in the deployable packages and tie them back to their originating build definition.
 
 ## Setting up the versioning
-For build definitions created by Platform Update 6 or newer deployments, the task to version the models will automatically be added and active. The default build number of a new build definition in VSTS consists of the year, month, day and incremental number of the build of that day. For more information on build numbers in VSTS and the options available, see [Build definition options](https://www.visualstudio.com/en-us/docs/build/define/options#Buildnumberformat) in the Visual Studio docs site.
+For build definitions created by Platform Update 6 or newer deployments, the task to version the models will automatically be added and active. The default build number of a new build definition in VSTS consists of the year, month, day and incremental number of the build of that day. For more information on build numbers in VSTS and the options available, see [Build definition options](https://www.visualstudio.com/en-us/docs/build/define/options#Buildnumberformat) on the Visual Studio docs site.
 The Dynamics 365 for Operations automated build will take the build version number and apply it to the models being built.
 
 ## Excluding models from being updated
-By default, the build task will only assign versions to models in layers above ISP. This allows customers to consume code models from third party vendors without overwriting the version numbers supplied in their models. To exclude other models from having their versions overwritten during the build, regardless of layer, supply a comma separated list of model names to be excluded in the **ModelVersionExclusions** variable. You can find this variable on the **Variables** tab when editing the build definition.
+By default, the build task will only assign versions to models in layers above ISP. This allows customers to consume code models from third party vendors without overwriting the version numbers supplied in their models. To exclude other models from having their versions overwritten during the build, regardless of layer, you can optionally supply a comma separated list of model names to be excluded in the **ModelVersionExclusions** variable. You can find this variable on the **Variables** tab when editing the build definition.
 
 ## Updating models in lower layers
 For third parties developing solutions in ISV or ISP, a manual change has to be made to the build definition to automatically set model versions in those layers. Edit the build definition, and on the **Tasks** tab, click on the **Set Model Versions** task. In the **Arguments** field, add the following option at the end of the existing list of arguments: *-UpdateLayersAbove 7*
+
+
+# Updating an existing build definition
+For build definitions created prior to Platform Update 6, a new task needs to be manually added to the build definition.
+
+> [!NOTE]
+> This feature can only be added to a build definition after updating the build VM to Platform Update 6 or later.
+
+In Visual Studio Team Services (VSTS), open the **Build & Release** page. Under **Builds** and **All Definitions** find your build definition. Click on the ellipsis (…) and select **Edit**.
+
+![Edit Build Definition](media/builddef_edit.png)
+
+1. On the **Tasks** tab, click **+ Add Task** at the bottom of the page.
+2. On the right-hand side in the **Add tasks** pane, click the **Utility** tab and scroll down to find the **PowerShell** task. Hover the mouse over the task and click the **Add** button that appears.
+
+![Add PowerShell Task](media/builddef_addpowershelltask.png)
+
+3. On the left-hand side a **PowerShell Script** task is now added to the list of tasks. Select it by clicking on it. On the right hand side, change the properties **Display name**, **Script Path** and **Arguments**  to reflect the need settings:
+
+![Settings for Set Model Versions task](media/builddef_setmodelversions_settings.png)
+
+4. In the list of tasks on the left-hand side, drag the **Set Model Versions** task to the top of the list in between the **Prepare for build** and **Build the solution** tasks.
+
+![Settings for Set Model Versions task](media/builddef_setmodelversions_order.png)
+
+5. Open the **Variables** tab and click **+ Add** at the bottom of the list of variables. In the first column for **Name**, enter "ModelVersionExclusions".
+6. Finally, hit **Save** to save the new task.
