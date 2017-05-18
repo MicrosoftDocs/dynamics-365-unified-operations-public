@@ -39,15 +39,15 @@ This topic describes features that have been removed, or are planned for removal
 
 ## Features that have been deprecated in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
 
-### Feature name
+### Warehouse mobile devices portal (WMDP)
 
-Proivde a brief description of the feature.
+The standalone component meant for self-deployment on-premises is no longer supported in Dynamics 365 for Operations. It has been replaced by a native app, improving the user experience and replacing the functionality of WMDP. 
 
 |                                  |                                                                                   |
 |----------------------------------|-----------------------------------------------------------------------------------|
-| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
-| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
-| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+| **Reason for deprecation**       | Duplicate functionality.                                    |
+| **Replaced by another feature?** | Yes, this feature has been replaced by Dynamics 365 for Operations - Warehousing. For more information on setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Operations – Warehousing](https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app).                             |
+| **Modules affected**             | Warehouse management, Transportation management          |
 
 ### Feature name
 
