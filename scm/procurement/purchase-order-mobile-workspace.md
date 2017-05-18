@@ -70,3 +70,19 @@ When you have signed in, you'll see the available workspaces for your company. N
 2.	Select **Orders assigned to me** to show all the purchase orders where you have been requested to take an action in the purchase order approval workflow.
 3. Select an order. On **Order details** you will see the order header information and lines. You can also find guidelines from the workflow task.
 
+## Complete an action on the purchase order
+When you have viewed the purchase order that is assigned to you and read the workflow instructions, you should be ready to complete an action.
+1. On your mobile device, select the **Purchase order approval** workspace.
+2.	Select **Orders assigned to me** to show all the purchase orders where you have been requested to take an action in the purchase order approval workflow.
+3.	Select an order, and see the Order details page.
+4.	Select **Actions** to display the following actions depending on the task that has been assigned to you: 
+
+>| Task actions  | Approval actions |
+>|---------------|------|
+>| Complete | Approve |
+>| Return | Reject |
+>| Request change |Request change |
+>| Delegate| Delegate|
+5. Select the appropriate action.
+6.	Enter a comment on the **Complete task** page. Note that if you choose to delegate, you must select a user to delegate the task to.
+7.	Select **Done**. When you have refreshed, your workspace the purchase order will no longer be in your list. 
