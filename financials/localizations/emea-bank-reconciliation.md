@@ -55,14 +55,14 @@ In addition to a bank statement, banks can provide specific messages, containing
 
 ##### Import formats
 
--   ISO 20022 [camt.054 bank notification message](emea-ISO20022-file-formats.md)
+-   ISO 20022 [camt.054](emea-ISO20022-file-formats.md) bank notification message
 -   [Nets import format](emea-nor-nets-import-format.md) - Complex feature for Norwegian payment formats
--   ESR customer payments import
+-   [ESR](emea-che-esr-customer-payments-import.md) customer payments import
 -   Import payment formats for Sweden - BankGirot Max and BankGirot OCR formats
 
 ##### Return formats
 
--   ISO 20022 pain.002 payment status report
+-   ISO 20022 [pain.002](emea-ISO20022-file-formats.md) payment status report
 -   (DNK) BetalingsserviceBasis-returformat – Return format for customer Betalingsservice export format
 -   [Import payment formats for Sweden](emea-swe-payment-formats-import.md) - Bankgirot Autogiro returns
 -   (SWE) BankGirot return – Vendor payments return format, which corresponds to Bankgirot export format
