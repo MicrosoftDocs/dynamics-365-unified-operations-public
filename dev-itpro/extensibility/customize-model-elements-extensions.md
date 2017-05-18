@@ -368,7 +368,7 @@ This is an example of adding event handler methods on existing controls.
     var frDs = fr.dataSource("FMRental");
 
 ## Experiment with event handlers on form data sources
-Just like tables, form controls and other element types, form data sources and form data source fields provide framework-level events. The following example show how you can use the ValidatingWrite event on a form data source or the Validating event on a form data source field to validate user input on the FMRental form. This functionality is available as of Platform Update 7.
+Just like tables, form controls and other element types, form data sources and form data source fields provide framework-level events. The following example shows how you can use the ValidatingWrite event on a form data source or the Validating event on a form data source field to validate user input on the FMRental form. This functionality is available as of Platform Update 7.
 
 ```
     /// <summary>
