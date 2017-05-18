@@ -3,9 +3,9 @@
 
 title: Bank statement and payment reconciliation overview for the EU
 description: This topic provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries.
-author: ShylaThompson
+author: v-lenest
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,11 +17,10 @@ ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 267994
-ms.assetid: 2bfb8ecc-e850-43cb-9a96-deb11716a391
 ms.search.region: Belgium, Norway, Sweden, Switzerland
 # ms.search.industry: 
 ms.author: v-lenest
@@ -53,14 +52,14 @@ A *bank statement* or *account statement* is a summary of financial transactions
 ## Customer and vendor payments import and return messages
 In addition to a bank statement, banks can provide specific messages, containing information about customer and vendor payments, which can be imported into Dynamics 365 for Operations and reconciled with customer and vendor transactions. When a company needs to receive information about incoming customer payments transactions from the bank, the import formats can be used. For companies that use direct debit and credit transfer, the return messages can be received to update the status of payments that were previously exported. The difference between import formats and return formats is that returns are targeted mostly to update already created payment journal lines (they can be created when direct debit or credit transfer were initiated) instead of creating new lines. Some complex import formats can also include return scenarios. The following example shows how this division should be implemented.
 
-##### Import formats
+### Import formats
 
 -   ISO 20022 [camt.054](emea-ISO20022-file-formats.md) bank notification message
 -   [Nets import format](emea-nor-nets-import-format.md) - Complex feature for Norwegian payment formats
 -   [ESR](emea-che-esr-customer-payments-import.md) customer payments import
 -   Import payment formats for Sweden - BankGirot Max and BankGirot OCR formats
 
-##### Return formats
+### Return formats
 
 -   ISO 20022 [pain.002](emea-ISO20022-file-formats.md) payment status report
 -   (DNK) BetalingsserviceBasis-returformat – Return format for customer Betalingsservice export format
