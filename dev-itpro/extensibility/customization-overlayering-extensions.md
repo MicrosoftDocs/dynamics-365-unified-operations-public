@@ -230,7 +230,7 @@ You can create label extension files in order to modify the string value of a la
 
 ## Extension of Country/Region Codes
 
-> Note 
+> [!NOTE]
 > This functionality is available as of Platform update 7.
 
 
