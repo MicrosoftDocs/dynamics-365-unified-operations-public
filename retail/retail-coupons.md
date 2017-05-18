@@ -3,7 +3,7 @@
 
 title: [Topic name]
 description: [Full description that appears in the search results. Often the first paragraph of your topic.]
-author: [author's GitHub alias]
+author: scott-tucker
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -27,9 +27,90 @@ ms.search.validFrom: [month/year of release that feature was introduced in, in f
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Metadata and Markdown template
+# Coupons for retail sales
 
 [!include[banner](../includes/banner.md)]
+
+Merging call center coupons with retail discounts
+In prior releases of Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 call center coupons and discount codes on retail discounts were two unrelated features that shared a common purpose. They enabled discount targeting and discount controls for a retailer. A retailer can limit which customers with the code are entitled to the discount.
+With this update we have merged call center coupons with retail discounts to provide a unified experience for managing and accepting coupons in all retail channels. At the highest level the combined feature uses the codes from coupons and the discount value from retail discounts.
+At a glance to merge the two features we did the following.
+Removed the discount code and bar code fields from the retail discount forms
+Added a link from coupon to a retail discount
+Enabled multiple coupon codes to be created for a single coupon
+Removed the discount value definition from the coupons form
+Removed the customer and product references from the coupon
+Removed the direct GL posting of a coupon liability
+Removed the charge code parameter for coupons
+
+
+For a comparison this table shows a summary of the merged coupon feature, retail discounts, and call center coupons.
+
+|                      |                                                                                                                 |
+|----------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Coupons for retail channels - NEW**            | **Retail discount code**            | **Call center coupon**                          |
+| Each coupon is linked to exactly one discount    |                                     |
+| Each discount can be linked to 1 or more coupons |   
+|
+
+ 
+A coupon can have multiple coupon codes and bar codes each with an independent date range
+Each discount can have only one coupon code and bar code
+Can have one date range or can have a re-occurring day/time period within a date range
+A coupon has only one coupon number
+Has only one date range
+Can be customer specific - When this option is selected the valid customers are determined by the discount to customers using affiliations and price groups
+Can be configured to require a customer any customer without specifying a list of customers
+Can be customer specific - By linking the discount to customers using affiliations and price groups
+ 
+Can be customer specific - By adding table/group/all customer relationships to the coupon
+Can be configured to require a customer, any customer without specifying a list of customers
+Can be used in store channels and call center channels.
+Can be channel specific - When this option is selected the valid channels are determined by linking channels to the discount using price groups
+Not available in eCommerce channels at this time. Planned to be added in the future
+Can be used in store channels and eCommerce, but not in call center channels
+Can be channel specific - By linking channels to the discount using price groups
+Not available in call center channels
+Are valid on all call center channels with no ability to restrict to specific call center channels
+Not available in store channels or eCommerce
+Can be restricted to a limited number of times to be used - The restriction can be 1, 2, or more. The restriction can be set as one of; per customer, per channel or global
+This restriction is for the number of separate transactions the coupon can be applied to. It is not a restriction on the number of items to be discounted in one transaction
+Cannot restrict the number of times a discount code can be used.
+When configured to be customer specific a coupon can be restricted to single use per customer
+Is always product specific by the category/product/variant properties of the discount lines.
+Can be configured to apply to all products by using the root category node of the retail category hierarchy
+Can be for specific catalogs - Valid catalogs are determined by linking catalogs to the discount using price groups
+Cannot use exclude products to manage the valid products.
+Is always product specific by the category/product/variant properties of the discount lines.
+Can be configured to apply to all products by using the root category node of the retail category hierarchy
+Cannot use exclude products to manage the valid products.
+Can be product specific - By adding include table/group/all product relationships to the coupon
+Can be for all products except a list of exclude products defined by table/group/all product relationships
+Can be for specific catalogs = By adding include or exclude catalog relationships
+Note: can’t mix include & exclude products on one coupon
+Can be exclusive, best price, or compounded by setting the discount concurrency
+Can be exclusive, best price, or compounded by setting the discount concurrency
+Can be exclusive by setting a property on the coupon
+Discounts have an explicit currency, but it can be in any of the available currencies
+Currency acts as a filter when looking up possible discounts
+Discounts have an explicit currency, but it can be in any of the available currencies
+Currency acts as a filter when looking up possible discounts
+Are implicitly in the company currency
+Not all capabilities of the call center coupons are available with the initial release of merged coupons. The additional capabilities are planned to be added to in upcoming releases.  The key missing capability is that call center coupons could be defined for a single specific amount.  Retail discounts currently do not support a single specific amount.
+Managing coupons
+You will need to create the discount and the coupon independently and then choose the discount in the coupon form.
+Once you link a coupon to a discount, a number of fields, status for example, on the discount become read only because they are managed by the coupon's settings.
+To limit coupons to specific customers or channels you need to set price groups on the discount. See the related topic Define channel-specific discounts to see how this is done.
+ 
+ 
+ 
+-------------------------------
+ 
+make sure to include a section that describes the behaviors when partial updates are done.
+ 
+AX: X++ and Binary.  one or the other (partial AX update)
+RS:  RS updated but HQ not updated. (N+1)
+HQ updated but RS not updated. (N-1)
 
 
 This Dynamics 365 for Operations template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D) and the [rendered view](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/master/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
