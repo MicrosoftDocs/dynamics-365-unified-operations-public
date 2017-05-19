@@ -54,25 +54,25 @@ You will need to deploy Developer Topology with Developer and Build VM.
 You can create new test cases to test the functionality in an application.
 
 1.  Open Visual Studio as an administrator.
-2.  On the **File** menu, click **Open** &gt; **Project/Solution**, and then select **FleetManagement** **solution** from the desktop folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
-3.  In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then click **New Project**.
-4.  Choose **Dynamics 365 for Operations **as the project type to create.
-5.  Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:UsersPublicDesktopFleetManagement) as the location, and then click **OK**. 
+1.  On the **File** menu, click **Open** &gt; **Project/Solution**, and then select **FleetManagement** **solution** from the desktop folder. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+1.  In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then click **New Project**.
+1.  Choose **Dynamics 365 for Operations **as the project type to create.
+1.  Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:UsersPublicDesktopFleetManagement) as the location, and then click **OK**. 
         
-[![55](./media/55.png)](./media/55.png)
+    [![55](./media/55.png)](./media/55.png)
         
-6.  In **Solution Explorer**, right-click the new project, and then click **Properties**.
-7.  Set the **Model** property to **FleetManagementUnitTests**, and then click **OK**. 
+1.  In **Solution Explorer**, right-click the new project, and then click **Properties**.
+1.  Set the **Model** property to **FleetManagementUnitTests**, and then click **OK**. 
 
-[![56](./media/56.png)](./media/56.png)
+    [![56](./media/56.png)](./media/56.png)
         
-8.  Right-click the FleetManagementUnitTestSample project, point to **Add**, and then click **New Item**.
-9.  In the **Add New Item** window, select **Class** as the type of element to add. Name the new class FMUnitTestSample, and then click **Add**. 
+1.  Right-click the FleetManagementUnitTestSample project, point to **Add**, and then click **New Item**.
+1.  In the **Add New Item** window, select **Class** as the type of element to add. Name the new class FMUnitTestSample, and then click **Add**. 
 
-[![57](./media/57.png)](./media/57.png)
+    [![57](./media/57.png)](./media/57.png)
 
-10. In the first line of the code for the new class, indicate that the class extends the SysTestCase class.
-11. Add the following code to define the methods for the class. These methods define two additional tests.
+1. In the first line of the code for the new class, indicate that the class extends the SysTestCase class.
+1. Add the following code to define the methods for the class. These methods define two additional tests.
 
         class FMUnitTestSample extends SysTestCase
         {
@@ -125,15 +125,15 @@ You can create new test cases to test the functionality in an application.
             }
         }
 
-12. Save the new class. After the save is complete, you will see the additional two test cases in **Test Explorer**. Right-click on the FleetManagementUnitTestSample project in **Solution Explorer**, and then click **Build.**
-13.  On the **View** menu, open **Test Explorer**. 
+1. Save the new class. After the save is complete, you will see the additional two test cases in **Test Explorer**. Right-click on the FleetManagementUnitTestSample project in **Solution Explorer**, and then click **Build.**
+1.  On the **View** menu, open **Test Explorer**. 
 
-[![58](./media/58-1024x545.png)](./media/58.png)
+    [![58](./media/58-1024x545.png)](./media/58.png)
         
-14. Click **Run selected test** to execute specific test case.
-15. Test Explorer will show the results of test after it is complete. 
+1. Click **Run selected test** to execute specific test case.
+1. Test Explorer will show the results of test after it is complete. 
 
-[![59](./media/59-300x290.png)](./media/59.png)
+    [![59](./media/59-300x290.png)](./media/59.png)
 
 ## Test module creation to manage test code and FormAdaptors
 Creating a test specific module helps to keep test code together and manageable.
