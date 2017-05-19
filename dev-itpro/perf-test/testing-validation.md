@@ -165,11 +165,10 @@ You can generate test code from Task Recorder recording to execute headless (non
 
 [![64](./media/64-249x300.png)](./media/64.png)
         
-4.  The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE.
+4.  The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE. We do not expect you to change any test source code that is generated as part of this step.
 
-[![65](./media/65-1024x655.png)](./media/65.png)
-        
-    We do not expect you to change any test source code that is generated as part of this step.
+    [![65](./media/65-1024x655.png)](./media/65.png)    
+    
 5.  After the test code is generated, set up Visual Studio options for test discovery and execution:
     - If you have a 64-bit machine, you can run unit tests and capture code coverage information as a 64-bit process.
     - To configure this, select **Test** &gt; **Test Settings** &gt; **Default Processor Architecture**, and then select **X64**.
