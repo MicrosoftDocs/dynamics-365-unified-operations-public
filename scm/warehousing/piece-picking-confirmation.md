@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Piece picking information
+# Piece picking confirmation
 
 [!include[banner](../includes/banner.md)]
 
