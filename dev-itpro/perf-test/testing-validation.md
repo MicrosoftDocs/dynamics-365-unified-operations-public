@@ -58,13 +58,13 @@ You can create new test cases to test the functionality in an application.
 3.  In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then click **New Project**.
 4.  Choose **Dynamics 365 for Operations **as the project type to create.
 5.  Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:UsersPublicDesktopFleetManagement) as the location, and then click **OK**. 
-
-        [![55](./media/55.png)](./media/55.png)
+        
+[![55](./media/55.png)](./media/55.png)
         
 6.  In **Solution Explorer**, right-click the new project, and then click **Properties**.
 7.  Set the **Model** property to **FleetManagementUnitTests**, and then click **OK**. 
 
-        [![56](./media/56.png)](./media/56.png)
+[![56](./media/56.png)](./media/56.png)
         
 8.  Right-click the FleetManagementUnitTestSample project, point to **Add**, and then click **New Item**.
 9.  In the **Add New Item** window, select **Class** as the type of element to add. Name the new class FMUnitTestSample, and then click **Add**. 
@@ -128,27 +128,27 @@ You can create new test cases to test the functionality in an application.
 12. Save the new class. After the save is complete, you will see the additional two test cases in **Test Explorer**. Right-click on the FleetManagementUnitTestSample project in **Solution Explorer**, and then click **Build.**
 13.  On the **View** menu, open **Test Explorer**. 
 
-        [![58](./media/58-1024x545.png)](./media/58.png)
+[![58](./media/58-1024x545.png)](./media/58.png)
         
 14. Click **Run selected test** to execute specific test case.
 15. Test Explorer will show the results of test after it is complete. 
 
-        [![59](./media/59-300x290.png)](./media/59.png)
+[![59](./media/59-300x290.png)](./media/59.png)
 
 ## Test module creation to manage test code and FormAdaptors
 Creating a test specific module helps to keep test code together and manageable.
 
 1.  Open **Visual Studio** and go to **Dynamics 365 for Operations** &gt; **Model Management** &gt; **Create model**.
 
-        [![60](./media/60-1024x574.png)](./media/60.png)
+[![60](./media/60-1024x574.png)](./media/60.png)
         
 2.  Enter the model name, select the layer, and then enter any additional details. **Note: **It's a good idea that you include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**. 
 
-        [![](./media/61-1024x775.png)](./media/61.png)
+[![](./media/61-1024x775.png)](./media/61.png)
         
 3.  Because this model holds forms from the Application Platform/Foundation, add references to models shown below.
 
-        [![62](./media/62-1024x786.png)](./media/62.png)
+[![62](./media/62-1024x786.png)](./media/62.png)
         
 
 After the base test module is in place, you can import a Task Recorder recording to generate test code. When you import a Task Recorder recording XML, test code is generated using FormAdaptors. Form adaptors are wrapper classes over forms which provide strongly typed API that can be used to test form functionality. In Dynamics 365 for Operations, we have included pre-generated FormAdapters for each package for built-in forms. In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.
@@ -159,15 +159,15 @@ You can generate test code from Task Recorder recording to execute headless (non
 1.  Record a scenario in Dynamics 365 for Operations by using Task Recorder.
 2.  To import a Task Recording, in Visual Studio, click **Dynamics 365 for Operations** &gt; **Addins** &gt; **Import Task Recording**. 
 
-        [![63](./media/63-1024x613.png)](./media/63.png)
+[![63](./media/63-1024x613.png)](./media/63.png)
         
 3.  In the **Import Task Recording** dialog, select the Test Module (ISVTestModule) under which you want to import task recording, and browse to recording xml file. 
 
-        [![64](./media/64-249x300.png)](./media/64.png)
+[![64](./media/64-249x300.png)](./media/64.png)
         
 4.  The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE.
 
-        [![65](./media/65-1024x655.png)](./media/65.png)
+[![65](./media/65-1024x655.png)](./media/65.png)
         
         We do not expect you to change any test source code that is generated as part of this step.
 5.  After the test code is generated, set up Visual Studio options for test discovery and execution:
