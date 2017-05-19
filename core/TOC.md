@@ -49,7 +49,6 @@
 ### [Architecture](organization-administration/workflow-system-architecture.md)
 ### [Actions](organization-administration/workflow-actions.md)
 ### [Elements](organization-administration/workflow-elements.md)
-## [Workflow types report](organization-administration/workflow-types-report.md)
 ## [Create a workflow](organization-administration/create-workflow.md)
 ### [Configure an approval process](organization-administration/configure-approval-process-workflow.md)
 ### [Configure an approval step](organization-administration/configure-approval-step-workflow.md)
@@ -62,6 +61,7 @@
 ### [Configure a parallel branch](organization-administration/configure-parallel-branch-workflow.md)
 ## [Configure workflow properties](organization-administration/configure-workflow-properties.md)
 ## [Configure the message processing batch job](organization-administration/workflow-batch-job-critical.md)
+## [Workflow types report](organization-administration/workflow-types-report.md)
 
 # [Financials](/dynamics365/operations/financials/index)
 
