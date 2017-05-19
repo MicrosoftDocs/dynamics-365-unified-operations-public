@@ -175,7 +175,7 @@ You can generate test code from Task Recorder recording to execute headless (non
     - To configure this, select **Test** &gt; **Test Settings** &gt; **Default Processor Architecture**, and then select **X64**.
     - You might run into a situation in which the test execution engine opens and locks an assembly in your test project. When this happens, you can’t for example, save changes to the assembly. To fix this, select **Test** &gt; **Test Settings**, and then select **Keep Test Execution Engine Running**. 
     
-[![66](./media/66.png)](./media/66.png)
+    [![66](./media/66.png)](./media/66.png)
     
     - Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.
 
