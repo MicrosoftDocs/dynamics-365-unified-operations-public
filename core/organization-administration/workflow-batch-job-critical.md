@@ -34,7 +34,7 @@ ms.dyn365.version: Platform update 6
 
 The workflow system uses various batch jobs. **Workflow message processing** is an important batch job used to process workflow messages. If workflow is a key component of your organization, you should consider configuring the **Workflow message processing** batch job as critical.
 
-Configuring the **Workflow message processing** batch job as critical ensures that the system actively tracks its status. When a critical batch job fails, a performance counter is incremented. You can then use that performance counter to monitor critical batch job failures and quickly take action to resolve any issues that may have caused the failure.
+Configuring the **Workflow message processing** batch job as critical ensures that the system actively tracks its status. When a critical batch job fails, the support team can better monitor failures and take action to resolve any issues that may have caused the failure.
 
 Follow these steps to configure the **Workflow message processing** batch job as critical.
 
