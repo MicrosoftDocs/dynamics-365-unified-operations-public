@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Overview of Pick oldest batch on a mobile device
 
+[!include[banner](../includes/banner.md)]
+
 You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.  
 
 ## Where it applies
