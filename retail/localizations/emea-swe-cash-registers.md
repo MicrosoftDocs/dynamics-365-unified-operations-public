@@ -1,0 +1,1 @@
+# Cash registers for Sweden
