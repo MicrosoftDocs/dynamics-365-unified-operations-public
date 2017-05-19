@@ -175,17 +175,17 @@ You can generate test code from Task Recorder recording to execute headless (non
     -   To configure this, select **Test** &gt; **Test Settings** &gt; **Default Processor Architecture**, and then select **X64**.
     -   You might run into a situation in which the test execution engine opens and locks an assembly in your test project. When this happens, you can’t for example, save changes to the assembly. To fix this, select **Test** &gt; **Test Settings**, and then select **Keep Test Execution Engine Running**. 
     
-    [![66](./media/66.png)](./media/66.png)
+[![66](./media/66.png)](./media/66.png)
     
     -   Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.
 
 6.  From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**. After the Test Explorer window is open, it will try to discover test from test code and list all the available tests as shown below.
 
-        [![67](./media/67-1024x658.png)](./media/67.png)
+[![67](./media/67-1024x658.png)](./media/67.png)
         
 7.  Select the test and then click **Run** &gt; **Execute selected**. This will execute test against the locally deployed Dynamics 365 for Operations. 
 
-        [![68](./media/68-1024x652.png)](./media/68.png)
+[![68](./media/68-1024x652.png)](./media/68.png)
 
 ## Integration of the test module with build process
 After the test module is a part of source control, the build process template will discover all test modules, which contain the word **Test** in the name. The following illustration shows build and test execution as part of Visual Studio Online. 
