@@ -39,14 +39,14 @@ This topic provides an overview of the functionality that you can use to reconci
 In Microsoft Dynamics 365 for Operations, you can import transactions from banks and settle these transactions against existing transactions. In Europe, you can do this for the following scenarios:
 
 -   Importing bank statements
--   Importing payments.
--   Importing return files.
+-   Importing payments
+-   Importing return files
 
 ## Bank statements
 A *bank statement* or *account statement* is a summary of financial transactions that have occurred over a given period on a bank account held by a company with a financial institution. In Dynamics 365 for Operations you can import a bank statement. It is important to settle imported transactions with existing transactions as well as verify the opening and ending balance of the bank accounts. The following list includes the supported European formats.
 
 -   Advanced bank reconciliation European file formats. For more information, see [Advanced bank reconciliation overview](../cash-bank-management/advanced-bank-reconciliation-overview.md).
--   ISO 20022 camt.053 bank statement message file format
+-   ISO 20022 camt.053 bank statement message file format.
 -   CODA bank statement file format. For more information, see [CODA bank statement](emea-bel-coda-bank-statement-import.md).
 
 ## Customer and vendor payments import and return messages
