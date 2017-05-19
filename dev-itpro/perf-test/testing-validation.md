@@ -169,15 +169,15 @@ You can generate test code from Task Recorder recording to execute headless (non
 
 [![65](./media/65-1024x655.png)](./media/65.png)
         
-        We do not expect you to change any test source code that is generated as part of this step.
+    We do not expect you to change any test source code that is generated as part of this step.
 5.  After the test code is generated, set up Visual Studio options for test discovery and execution:
-    -   If you have a 64-bit machine, you can run unit tests and capture code coverage information as a 64-bit process.
-    -   To configure this, select **Test** &gt; **Test Settings** &gt; **Default Processor Architecture**, and then select **X64**.
-    -   You might run into a situation in which the test execution engine opens and locks an assembly in your test project. When this happens, you can’t for example, save changes to the assembly. To fix this, select **Test** &gt; **Test Settings**, and then select **Keep Test Execution Engine Running**. 
+    - If you have a 64-bit machine, you can run unit tests and capture code coverage information as a 64-bit process.
+    - To configure this, select **Test** &gt; **Test Settings** &gt; **Default Processor Architecture**, and then select **X64**.
+    - You might run into a situation in which the test execution engine opens and locks an assembly in your test project. When this happens, you can’t for example, save changes to the assembly. To fix this, select **Test** &gt; **Test Settings**, and then select **Keep Test Execution Engine Running**. 
     
 [![66](./media/66.png)](./media/66.png)
     
-    -   Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.
+    - Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.
 
 6.  From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**. After the Test Explorer window is open, it will try to discover test from test code and list all the available tests as shown below.
 
