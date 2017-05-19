@@ -5,10 +5,10 @@ title: Set up customer and vendor compensation | Microsoft Docs
 description: 
 author: mrolecki
 manager: AnnBe
-ms.date: 05-16-2017
+ms.date: 05-19-2017
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,7 +21,6 @@ ms.reviewer: shylaw
 ms.suite: Released- Dynamics 365 for Operations version 1611
 # ms.tgt_pltfrm: 
 ms.custom: 1691503
-ms.assetid: 2d4f24a4-3c3b-405f-a114-c5158753ddc4
 ms.search.region: Hungary, Poland
 # ms.industry: 
 ms.author: mrolecki
@@ -30,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up customer and vendor compensation
-This article provides information how to run vendor and customer accounts compensation process in Hungarian or Polish company.
+This topic provides information about running the vendor and customer accounts compensation process for legal entities with a primary address in Hungary or Poland.
 
 Users in Eastern Europe often need to settle receivables and payables amounts for the same company registered as a customer and a vendor in the system using legal procedure called compensation, also known as netting. 
 
@@ -52,7 +51,7 @@ The form note is based on the mathematical sign of the balance amount for the co
 A legal entity or individual can be a customer or vendor of your company. The compensation option will be available only to the parties which are associated. The association can be done by opening a customer or vendor account details and selecting an associated party account in **Miscellaneous** details tab, field group **Remittance**, Customer account for a vendor master and Vendor account for a customer master.
 
 ### Create a compensation journal
-You can create optionally a journal that will be used for presenting netting proposal, posting the proposal as well as printing a compensation report. You use **General journal > Journal entries > General journals** for this purpose.
+You can create optionally a journal that will be used for presenting netting proposal, posting the proposal as well as printing a compensation report. You use **General journal** > **Journal entries** > **General journals** for this purpose.
 
 ## Record transactions
 Typically, all the invoices recorded for the associated customer and vendor accounts are available and used for netting: 
@@ -80,11 +79,14 @@ Once you have a compensation proposal created in a journal, and your compensatio
 
 
 ## FAQ
-**Q**: Can I compensate transactions for multiple vendor and customer accounts at once?
+**Q: Can I compensate transactions for multiple vendor and customer accounts at once?**
+
 **A**: You can have remittance relation between one vendor account and one customer account. Therefore, at once you can process compensations between single accounts.
 
-**Q**: Can I use foreign transactions for compensation?
+**Q: Can I use foreign transactions for compensation?**
+
 **A**: By default, compensation function is designed for transactions in domestic currency. You can also use foreign currency transactions but you must specify an exchange rate for the created compensation proposal transactions in a general journal.
 
-**Q**: Is the compensation function available for all countries?
-**A**: The compensation function is available only for legal entities having an address in Hungary or Poland.
+**Q: Is the compensation function available for all countries?**
+
+**A**: The compensation function is available only for legal entities with a primary address in Hungary or Poland.
