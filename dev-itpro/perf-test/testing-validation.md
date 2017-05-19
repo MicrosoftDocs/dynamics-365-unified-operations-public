@@ -140,36 +140,35 @@ Creating a test specific module helps to keep test code together and manageable.
 
 1.  Open **Visual Studio** and go to **Dynamics 365 for Operations** &gt; **Model Management** &gt; **Create model**.
 
-[![60](./media/60-1024x574.png)](./media/60.png)
+    [![60](./media/60-1024x574.png)](./media/60.png)
         
-2.  Enter the model name, select the layer, and then enter any additional details. **Note: **It's a good idea that you include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**. 
+1.  Enter the model name, select the layer, and then enter any additional details. **Note: **It's a good idea that you include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**. 
 
-[![](./media/61-1024x775.png)](./media/61.png)
+    [![](./media/61-1024x775.png)](./media/61.png)
         
-3.  Because this model holds forms from the Application Platform/Foundation, add references to models shown below.
+1.  Because this model holds forms from the Application Platform/Foundation, add references to models shown below.
 
-[![62](./media/62-1024x786.png)](./media/62.png)
+    [![62](./media/62-1024x786.png)](./media/62.png)
         
-
 After the base test module is in place, you can import a Task Recorder recording to generate test code. When you import a Task Recorder recording XML, test code is generated using FormAdaptors. Form adaptors are wrapper classes over forms which provide strongly typed API that can be used to test form functionality. In Dynamics 365 for Operations, we have included pre-generated FormAdapters for each package for built-in forms. In the test module, add a reference to the corresponding Form Adaptor for packages and Test Essentials, which has helper methods to execute test code.
 
 ## Import a Task Recorder recording into Visual Studio to generate test code
 You can generate test code from Task Recorder recording to execute headless (non-UI) test.
 
 1.  Record a scenario in Dynamics 365 for Operations by using Task Recorder.
-2.  To import a Task Recording, in Visual Studio, click **Dynamics 365 for Operations** &gt; **Addins** &gt; **Import Task Recording**. 
+1.  To import a Task Recording, in Visual Studio, click **Dynamics 365 for Operations** &gt; **Addins** &gt; **Import Task Recording**. 
 
-[![63](./media/63-1024x613.png)](./media/63.png)
+    [![63](./media/63-1024x613.png)](./media/63.png)
         
-3.  In the **Import Task Recording** dialog, select the Test Module (ISVTestModule) under which you want to import task recording, and browse to recording xml file. 
+1.  In the **Import Task Recording** dialog, select the Test Module (ISVTestModule) under which you want to import task recording, and browse to recording xml file. 
 
-[![64](./media/64-249x300.png)](./media/64.png)
+    [![64](./media/64-249x300.png)](./media/64.png)
         
-4.  The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE. We do not expect you to change any test source code that is generated as part of this step.
+1.  The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE. We do not expect you to change any test source code that is generated as part of this step.
 
     [![65](./media/65-1024x655.png)](./media/65.png)    
     
-5.  After the test code is generated, set up Visual Studio options for test discovery and execution:
+1.  After the test code is generated, set up Visual Studio options for test discovery and execution:
     - If you have a 64-bit machine, you can run unit tests and capture code coverage information as a 64-bit process.
     - To configure this, select **Test** &gt; **Test Settings** &gt; **Default Processor Architecture**, and then select **X64**.
     - You might run into a situation in which the test execution engine opens and locks an assembly in your test project. When this happens, you can’t for example, save changes to the assembly. To fix this, select **Test** &gt; **Test Settings**, and then select **Keep Test Execution Engine Running**. 
@@ -178,13 +177,13 @@ You can generate test code from Task Recorder recording to execute headless (non
     
     - Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.
 
-6.  From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**. After the Test Explorer window is open, it will try to discover test from test code and list all the available tests as shown below.
+1.  From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**. After the Test Explorer window is open, it will try to discover test from test code and list all the available tests as shown below.
 
-[![67](./media/67-1024x658.png)](./media/67.png)
+    [![67](./media/67-1024x658.png)](./media/67.png)
         
-7.  Select the test and then click **Run** &gt; **Execute selected**. This will execute test against the locally deployed Dynamics 365 for Operations. 
+1.  Select the test and then click **Run** &gt; **Execute selected**. This will execute test against the locally deployed Dynamics 365 for Operations. 
 
-[![68](./media/68-1024x652.png)](./media/68.png)
+    [![68](./media/68-1024x652.png)](./media/68.png)
 
 ## Integration of the test module with build process
 After the test module is a part of source control, the build process template will discover all test modules, which contain the word **Test** in the name. The following illustration shows build and test execution as part of Visual Studio Online. 
