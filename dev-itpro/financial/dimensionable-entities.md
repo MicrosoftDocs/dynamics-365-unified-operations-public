@@ -44,7 +44,7 @@ By following these steps, your view will automatically appear in the **Use value
 The first step is to create a view in the same model as your backing table. Before you complete the following steps, verify that the backing table has **Create Rec Id Index = Yes** in the **Table Properties** pane. Alternatively, ensure that the table has a unique index and RECID is the first segment of that index.
 
 1.  In your project, click **Add** > **New Item**. Select **View** and then click **Add**.
-1.  Right-click **View** and select **Rename**. Name the view **DimAttribute**[BackingTableName]. For example, DimAttributeCustTable
+1.  Right-click **View** and select **Rename**. Name the view **DimAttribute**[BackingTableName]. For example, DimAttributeCustTable.
 1.  Expand **View Metadata**, and then drag your table to the **Data Sources** node on the view.
 1.  Rename the node from **BackingTableName** to **BackingEntity**.
 1.  Identify the key, value, and name for the table that you want to use as a financial dimension. Find the fields and drag to the BackingEntity data source list, or copy and paste the fields on the data source. Rename the three fields to:
