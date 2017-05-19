@@ -30,6 +30,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Overview of batch and license plate confirmation
 
+[!include[banner](../includes/banner.md)]
+
 Batch confirmation allows you to confirm that the correct batch is being picked from the mobile device. 
 On the initial picks of work for batch above-items only, you must verify that the batch that is picked matches the batch on the work line.
 
