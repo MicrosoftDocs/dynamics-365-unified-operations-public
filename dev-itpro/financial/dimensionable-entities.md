@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
 
 > [!NOTE]
-> If your dimension is backed by the **OMOperatingUnit** table then many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#Add-a-new-OMOperatingUnit-type-backed-entity)" section.
+> If your dimension is backed by the **OMOperatingUnit** table then many of the steps are already completed for you. Follow the steps in the "[Add a new OMOperatingUnit type backed entity](#add-a-new-omoperatingunit-type-backed-entity)" section.
 
 By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
 
@@ -133,7 +133,7 @@ Now that you have completed the steps, navigate to the **Financial dimensions** 
 
 # Add a new OMOperatingUnit type backed entity
 
-If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it dimensionable are similar but can be made shorter as follows:
+If a new Organization Model OMOperatingUnitType enumeration is added, the steps to make it consumable as a dimension are similar but can be made shorter as follows:
 
 1. Copy one of the existing DimAttributeOM[BackingTableName] views, rename it appropriately, and then adjust all associated labels and help text.
 1. Expand the Datasource\BackingEntity (OMOperatingUnit)\Ranges node on the copied view. Change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.
