@@ -38,7 +38,7 @@
 # Office integration
 ## [Office integration](office-integration/office-integration.md)
 ## [Tutorial](office-integration/office-integration-tutorial.md)
-## [Use the Excel add-in](../office-integration/use-excel-add-in.md)
+## [Use the Excel add-in](office-integration/use-excel-add-in.md)
 ## [Create Open in Excel experiences](office-integration/office-integration-edit-excel.md)
 ## [Add templates to the Open lines in Excel menu](user-interface/add-templates-open-lines-excel-menu.md)
 ## [Customize the Open in Microsoft Office menu](office-integration/customize-open-office-menu.md)
