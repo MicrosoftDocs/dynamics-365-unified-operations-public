@@ -46,7 +46,7 @@ To use the data entity, you must have a Microsoft Excel file or comma-separated 
 
 ## Example
 
-You can use the following file as an example: HistoricalDemandData. This file contains the historical demand data for item D0001. It contains only the following mandatory fields: site, quantity, and the demand date.
+You can use the following file as an example. Download the [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). This file contains the historical demand data for item D0001. It contains only the following mandatory fields: site, quantity, and the demand date.
 
 1. Select the company to import the historical demand data into.
 2. Open the **Data management** workspace.
