@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-keywords: CustTable, CustVendCompensation, VendTable
+keywords: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
