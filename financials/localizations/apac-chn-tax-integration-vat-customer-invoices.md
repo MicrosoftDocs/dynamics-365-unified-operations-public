@@ -55,6 +55,9 @@ You can combine VAT customer invoices that use the same invoice account number a
 ## How many times can I export an invoice?
 You can only export an invoice one time.
 
+## Can I export summarized invoice lines including miscellaneous charge amounts if charges are applied for the invoice line?
+You can export an invoice and its lines with summarized invoice line amounts including miscellaneous charges if **Add line charges into invoice line** check box is selected on the **Tax integration profile** page.
+
 ## Can I customize or add new information on VAT customer invoices?
 Yes. You can customize VAT customer invoices by adding other fields, and then export the VAT customer invoices as text files.
 
