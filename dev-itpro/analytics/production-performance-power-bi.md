@@ -37,23 +37,25 @@ This topic describes what is included in the **Production performance** Power BI
 
 This Power BI content is  for Production managers or individuals in the organization responsible for performing production control.
 
-The reports included let you use Microsoft Power BI to monitor the performance of manufacturing operations with respect to timely execution, quality, and cost. The reports leverage transactional data from production orders and batch orders in Microsoft Dynamics 365 for Operations, and provide both an aggregate view of company-wide production metrics and a breakdown of metrics by product and resource.
+The reports included let you use Microsoft Power BI to monitor the performance of manufacturing operations with respect to timely execution, quality, and cost. The reports leverage transactional data from production orders and batch orders, and provide both an aggregate view of company-wide production metrics and a breakdown of metrics by product and resource.
 
 The ability to complete production on time and in full is highlighted, and the future performance is projected based on the production plans. Comprehensive reports provide detailed insights into product defects caused by production, as well as the defect rates for resources and operations.
 
-This content pack also lets you analyze production variances, which are calculated as the difference between estimated cost and realized cost. Production variances are calculated when production order or batch order reach status ended.
+This Power BI content also lets you analyze production variances, which are calculated as the difference between estimated cost and realized cost. Production variances are calculated when production order or batch order reach status ended.
 
-The Production performance content pack only include data origin from Production orders and Batch orders. The reports do not include data related to Kanban productions.
+The **Production performance** content includes data origin from Production orders and Batch orders. The reports do not include data related to Kanban productions.
 
 **Accessing the content pack**
 
-The Production performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see the blog [Authoring and distributing Power BI reports with Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/23/authoring-and-distributing-power-bi-reports-with-dynamics-ax7/).
+You can find the **Production performance** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
-**Metrics included in the content pack**
+To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
-The content pack includes a set of report pages which each consists of a set of metrics visualized as charts, tiles, and tables.
+**Metrics included in the Power BI content**
 
-The following table provides an overview of the visualizations in the content pack.
+This content includes a set of report pages which each consists of a set of metrics visualized as charts, tiles, and tables.
+
+The following table provides an overview of the visualizations that are included.
 
 | **Report page**                            | **Charts**                                           | **Tiles**             |
 |--------------------------------------------|------------------------------------------------------|-----------------------|
