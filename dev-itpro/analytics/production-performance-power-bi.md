@@ -31,49 +31,29 @@ ms.dyn365.ops.version: Version 1611
 
 [!include[banner](../includes/banner.md)]
 
-
 This topic describes what is included in the **Production performance** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 **Overview**
 
 This Power BI content is  for Production managers or individuals in the organization responsible for performing production control.
 
-The reports included let you use Microsoft Power BI to monitor the
-performance of manufacturing operations with respect to timely execution,
-quality, and cost. The reports leverage transactional data from production
-orders and batch orders in Microsoft Dynamics 365 for Operations, and provide
-both an aggregate view of company-wide production metrics and a breakdown of
-metrics by product and resource.
+The reports included let you use Microsoft Power BI to monitor the performance of manufacturing operations with respect to timely execution, quality, and cost. The reports leverage transactional data from production orders and batch orders in Microsoft Dynamics 365 for Operations, and provide both an aggregate view of company-wide production metrics and a breakdown of metrics by product and resource.
 
-The ability to complete production on time and in full is highlighted, and the
-future performance is projected based on the production plans. Comprehensive
-reports provide detailed insights into product defects caused by production, as
-well as the defect rates for resources and operations.
+The ability to complete production on time and in full is highlighted, and the future performance is projected based on the production plans. Comprehensive reports provide detailed insights into product defects caused by production, as well as the defect rates for resources and operations.
 
-This content pack also lets you analyze production variances, which are
-calculated as the difference between estimated cost and realized cost.
-Production variances are calculated when production order or batch order reach
-status ended.
+This content pack also lets you analyze production variances, which are calculated as the difference between estimated cost and realized cost. Production variances are calculated when production order or batch order reach status ended.
 
-The Production performance content pack only include data origin from Production
-orders and Batch orders. The reports do not include data related to Kanban
-productions.
+The Production performance content pack only include data origin from Production orders and Batch orders. The reports do not include data related to Kanban productions.
 
 **Accessing the content pack**
 
-The Production performance Power BI content pack is published as an
-implementation asset in Lifecycle Services (LCS) and can be accessed from
-Dynamics 365 for Operations. For more information about how to access and launch
-Power BI reports, see the blog [Authoring and distributing Power BI reports with
-Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/23/authoring-and-distributing-power-bi-reports-with-dynamics-ax7/).
+The Production performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see the blog [Authoring and distributing Power BI reports with Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/23/authoring-and-distributing-power-bi-reports-with-dynamics-ax7/).
 
 **Metrics included in the content pack**
 
-The content pack includes a set of report pages which each consists of a set of
-metrics visualized as charts, tiles, and tables.
+The content pack includes a set of report pages which each consists of a set of metrics visualized as charts, tiles, and tables.
 
-The following table provides an overview of the visualizations in the content
-pack.
+The following table provides an overview of the visualizations in the content pack.
 
 | **Report page**                            | **Charts**                                           | **Tiles**             |
 |--------------------------------------------|------------------------------------------------------|-----------------------|
@@ -99,15 +79,9 @@ pack.
 
 **Understanding the data model and entities**
 
-Dynamics 365 for Operations data is used to populate the report pages in the
-Production performance content pack. This is represented as aggregate
-measurements that are staged in the Entity store, which is a Microsoft SQL
-database optimized for analytics. Read more about it in the blog [Power BI
-integration with Entity Store in
-Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
+Dynamics 365 for Operations data is used to populate the report pages in the Production performance content pack. This is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database optimized for analytics. Read more about it in the blog [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
 
-The following key aggregate measurements of the entities listed below are used
-as the basis of the content pack.
+The following key aggregate measurements of the entities listed below are used as the basis of the content pack.
 
 | **Entity**               | **Key aggregate measurements** | **Data source for Dynamics 365 for Operations** | **Field**          |
 |--------------------------|--------------------------------|-------------------------------------------------|--------------------|
@@ -126,8 +100,7 @@ as the basis of the content pack.
 | CoproductCostCalculation | CoproductRealCostAdjustment    | PmfCoByProdCalcTransExpanded                    | RealCostAdjustment |
 | CoproductCostCalculation | CoproductActualCostAmount      | PmfCoByProdCalcTransExpanded                    | RealCostAmount     |
 
-The following table shows how the key aggregate measurements are used to create
-several calculated measures in the content pack’s dataset.
+The following table shows how the key aggregate measurements are used to create several calculated measures in the content pack’s dataset.
 
 | **Measure**              | **Calculated as**                                                                                                                                                                                               |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -161,8 +134,7 @@ several calculated measures in the content pack’s dataset.
 | Processed quantity       | SUM('Route transactions'[Good quantity]) + SUM('Route transactions'[Defective quantity])                                                                                                                        |
 | Total mixed quantity     | SUM('Production order'[Good quantity]) + SUM('Route transactions'[Defective quantity])                                                                                                                          |
 
-The following key dimensions are used as filters to slice the aggregate
-measurements to achieve greater granularity and deeper analytical insights.
+The following key dimensions are used as filters to slice the aggregate measurements to achieve greater granularity and deeper analytical insights.
 
 | **Entity**                | **Examples of attributes**                                    |
 |---------------------------|---------------------------------------------------------------|
@@ -177,16 +149,12 @@ measurements to achieve greater granularity and deeper analytical insights.
 
 **Additional resources**
 
-Here are some helpful links that are related to entities and building Power BI
-content:
+Here are some helpful links that are related to entities and building Power BI content:
 
 -   [Data entities](https://ax.help.dynamics.com/en/wiki/data-entities/)
 
--   [Creating organizational content
-    packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
+-   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 
--   [Data modeling using Power
-    BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
+-   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 
--   [Adding Power BI tiles to
-    workspaces](http://ax.help.dynamics.com/en/wiki/configuring-powerbi-integration/)
+-   [Adding Power BI tiles to workspaces](http://ax.help.dynamics.com/en/wiki/configuring-powerbi-integration/)
