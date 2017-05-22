@@ -3,12 +3,12 @@
 
 title: INTERVAT tax declaration
 description: This topic provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
-author: annbe
+author: v-oloski
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +17,13 @@ ms.search.form: TaxIntervat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.1, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 273023
-ms.assetid: 619afcc2-c6b1-4364-8ff1-33b5efcc1807
 ms.search.region: Belgium
 ms.search.industry: All
-ms.author: ShylaThompson
+ms.author: v-oloski
 ms.dyn365.ops.intro: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 
@@ -45,9 +44,9 @@ The following table shows the prerequisites that must be set up before you begin
 |Category|Prerequisite||
 |---------|----------------------------|---------------------------------------------|
 |Setup|Legal entity|On the <strong>Legal entities</strong> page (click <strong>Organization administration</strong> &gt; <strong>Organizations</strong> &gt; <strong>Legal entities</strong>), select your legal entity. On the <strong>Addresses</strong> FastTab, create an address. Select <strong>Belgium</strong> in the <strong>Country/region</strong> field, fill in other address components, and mark the address as <strong>Primary</strong>. On the <strong>Tax registration</strong> FastTab, in the <strong>Tax registration number</strong> field, specify the tax registration number for your company. See the field descriptions in <a href="https://ax.help.dynamics.com/en/wiki/create-a-legal-entity/">Legal entity</a>.|
-|Setup| Registration number|Set up registration number on the <strong>Legal entities</strong> page (click <strong>Organization administration</strong> &gt; <strong>Organizations</strong> &gt; <strong>Legal entities</strong>). Click <strong>Registration IDs</strong>, and then, on the <strong>Registration ID</strong> FastTab, click <strong>Add</strong>. Select a value in the <strong>Registration type</strong> field, and enter a value in the <strong>Registration number</strong> field. See the field descriptions in <a href="https://ax.help.dynamics.com/en/wiki/registration-ids/">Registration number</a>.|
+|Setup| Registration number|Set up registration number on the <strong>Legal entities</strong> page (click <strong>Organization administration</strong> &gt; <strong>Organizations</strong> &gt; <strong>Legal entities</strong>). Click <strong>Registration IDs</strong>, and then, on the <strong>Registration ID</strong> FastTab, click <strong>Add</strong>. Select a value in the <strong>Registration type</strong> field, and enter a value in the <strong>Registration number</strong> field. See the field descriptions in <a href="emea-registration-ids.md">Registration number</a>.|
 |Setup| Number sequences|Set up number sequences for <strong>Annual sales list ID</strong> and <strong>INTERVAT ID</strong> on the <strong>Number sequences</strong> tab of the <strong>General ledger parameters</strong> page (click <strong>General ledger</strong> &gt; <strong>Ledger setup</strong> &gt; <strong>General ledger parameters</strong>).</td>
-|Setup| Posting journal|Set up posting journals on the <strong>Journal setup</strong> page (click <strong>General ledger</strong> &gt; <strong>Journal setup</strong>). See the field descriptions in <a href="https://ax.help.dynamics.com/en/wiki/posting-journals-page-field-descriptions/">Posting journals</a>.</td>
+|Setup| Posting journal|Set up posting journals on the <strong>Journal setup</strong> page (click <strong>General ledger</strong> &gt; <strong>Journal setup</strong>). </td>
 |Setup| Sales tax authorities|Set up sales tax authorities on the <strong>Sales tax authorities</strong> page (click <strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax authorities</strong>). The <strong>Report layout</strong> field should be set to <strong>Belgium report layout</strong>. See the field descriptions in <a href="https://ax.help.dynamics.com/en/wiki/set-up-sales-tax-authorities/">Sales tax authorities</a>.|
 |Setup| Sales tax reporting codes|Set up sales tax reporting codes on the <strong>Sales tax reporting codes</strong> page (click <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Sales tax</strong> &gt; <strong>Sales tax reporting codes</strong>). See the field descriptions in <a href="https://ax.help.dynamics.com/en/wiki/set-up-sales-tax-reporting-codes/">Sales tax reporting codes</a>. Sales tax reporting codes for which the <strong>Sales tax correction</strong> check box is selected are available for selection on the <strong>Additional sales tax report boxes</strong> page (click <strong>Tax corrections</strong> &gt; <strong>Adjustments</strong>). An example of sales tax reporting codes is included later in this topic.|
 |Setup| Sales tax codes|Fill in the fields on the <strong>Report</strong> and <strong>Report - credit note</strong> tabs of the <strong>Sales tax codes</strong> page (click <strong>Tax</strong> &gt; <strong>Indirect taxes</strong> &gt; <strong>Sales tax codes</strong>). Select values from the <strong>Sales tax reporting codes</strong> table. See the field descriptions in <a href="https://ax.help.dynamics.com/en/wiki/set-up-sales-tax-codes/">Sales tax codes</a>.|
@@ -56,11 +55,11 @@ The following table shows the prerequisites that must be set up before you begin
 |     |                  |Country/region</strong>  Select the country/region of the tax registration of the counterparty.|
 |     |                  |Tax exempt number</strong>  Enter the tax exempt number of the counterparty.|
 |     |                  |Company name</strong>  (Optional) Enter the name of the counterparty.|
-|Setup|Foreign trade parameters|Set up foreign trade parameters on the <strong>Country/region properties</strong> tab of the <strong><strong>Foreign trade parameters</strong></strong> page (click <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>). See the field descriptions in <a href="https://ax.help.dynamics.com/en/wiki/foreign-trade-parameters-page-field-descriptions/">Foreign trade parameters</a>.|
+|Setup|Foreign trade parameters|Set up foreign trade parameters on the <strong>Country/region properties</strong> tab of the <strong><strong>Foreign trade parameters</strong></strong> page (click <strong>Tax</strong> &gt; <strong>Setup</strong> &gt; <strong>Foreign trade</strong> &gt; <strong>Foreign trade parameters</strong>). |
 |Setup|INTERVAT tax declaration configuration|Configure an Electronic reporting (ER) model and format for the report. See the &quot;Configure the Electronic reporting model and format for the report&quot; section later in this topic. For information about how to create and maintain ER configurations, see the ER documentation.|
 
 
-For more information about how to set up the VAT statement, see [(EU) VAT reporting](http://ax.help.dynamics.com/en/wiki/eu-vat-reporting/).
+For more information about how to set up the VAT statement, see [(EU) VAT reporting](emea-vat-reporting.md).
 
 ### Example: Setup of sales tax reporting codes
 
@@ -124,7 +123,7 @@ To create corrections of the INTERVAT tax declaration for the previous period, c
 | From date         | Enter the first day of the sales tax settlement period to calculate sales tax for. This value corresponds to the date in the **From** field on the **Sales tax settlement periods** page. |
 | To date           | Enter the last date.                                                                                                                                                                      |
 
-See the field descriptions in [Additional sales tax report boxes](https://ax.help.dynamics.com/en/wiki/additional-sales-tax-report-boxes-page-field-descriptions/). To enter correction, click **Tax corrections** &gt; **Adjustments**, and fill in the following fields.
+To enter correction, click **Tax corrections** &gt; **Adjustments**, and fill in the following fields.
 
 | Field             | Description                                                                                                                                                                               |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
