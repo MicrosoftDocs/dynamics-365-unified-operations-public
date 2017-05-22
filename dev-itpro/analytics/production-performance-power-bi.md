@@ -45,7 +45,7 @@ This Power BI content also lets you analyze production variances, which are calc
 
 The **Production performance** content includes data origin from Production orders and Batch orders. The reports do not include data related to Kanban productions.
 
-**Accessing the content pack**
+**Accessing the Power BI content**
 
 You can find the **Production performance** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
