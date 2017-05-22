@@ -59,31 +59,31 @@ The following table provides an overview of the visualizations that are included
 
 | **Report page**                            | **Charts**                                           | **Tiles**             |
 |--------------------------------------------|------------------------------------------------------|-----------------------|
-| Production performance                     | Number of production by date                         | Total orders          |
+| **Production performance**                     | Number of production by date                         | Total orders          |
 |                                            | Number of productions by product and item group      | On-time & in full %   |
 |                                            | Number of planned productions by date                | Incomplete %          |
 |                                            | Bottom 10 products by on-time & in-full              | Early %               |
 |                                            |                                                      | Late %                |
-| Defects by product                         | Defective rate (ppm) by date                         | Defective rate (ppm)  |
+| **Defects by product**                         | Defective rate (ppm) by date                         | Defective rate (ppm)  |
 |                                            | Defective rate (ppm) by product and item group       | Defective quantity    |
 |                                            | Quantity produced by date                            | Total quantity        |
 |                                            | Top 10 products by effective rate                    |                       |
-| Defects trend by product                   | Defect rate (ppm) by quantity produced               | Defect rate (ppm)     |
-| Defects by resource                        | Defect rate (ppm) by date                            | Defective quantity    |
+| **Defects trend by product**                   | Defect rate (ppm) by quantity produced               | Defect rate (ppm)     |
+| **Defects by resource**                        | Defect rate (ppm) by date                            | Defective quantity    |
 |                                            | Defect rate (ppm) by resource and Site               |                       |
 |                                            | Defect rate (ppm) by operation                       |                       |
 |                                            | Top 10 resources by defect rate                      |                       |
-| Defects trend by resource                  | Defect rate (ppm) by quantity processed              |                       |
-| Production variances for job order costing | Production variance by date and cost group type      | Realized cost         |
+| **Defects trend by resource**                  | Defect rate (ppm) by quantity processed              |                       |
+| **Production variances for job order costing** | Production variance by date and cost group type      | Realized cost         |
 |                                            | Production variance by site and cost group type      | Production variance   |
 |                                            | Top 10 products with unfavorable production variance | Production variance % |
 |                                            | Top 10 unfavorable production variance by resource   |                       |
 
 **Understanding the data model and entities**
 
-Dynamics 365 for Operations data is used to populate the report pages in the Production performance content pack. This is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database optimized for analytics. Read more about it in the blog [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
+The following data is used to populate the report pages in the **Production performance** content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL Server database optimized for analytics. To learn more about the entity store, see [Power BI integration with Entity Store](power-bi-integration-entity-store.md).
 
-The following key aggregate measurements of the entities listed below are used as the basis of the content pack.
+The following key aggregate measurements of the entities listed below are used as the basis of the content.
 
 | **Entity**               | **Key aggregate measurements** | **Data source for Dynamics 365 for Operations** | **Field**          |
 |--------------------------|--------------------------------|-------------------------------------------------|--------------------|
@@ -102,7 +102,7 @@ The following key aggregate measurements of the entities listed below are used a
 | CoproductCostCalculation | CoproductRealCostAdjustment    | PmfCoByProdCalcTransExpanded                    | RealCostAdjustment |
 | CoproductCostCalculation | CoproductActualCostAmount      | PmfCoByProdCalcTransExpanded                    | RealCostAmount     |
 
-The following table shows how the key aggregate measurements are used to create several calculated measures in the content pack’s dataset.
+The following table shows how the key aggregate measurements are used to create several calculated measures in the content's dataset.
 
 | **Measure**              | **Calculated as**                                                                                                                                                                                               |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
