@@ -41,7 +41,7 @@ This content  was created for individuals who are responsible for cash within th
 
 Reports from the **Cash overview** Power BI content  are  embedded within the **Cash overview** and **Bank management** workspaces in Dynamics 365 for Finance and Operations, Enterprise edition.
 
-You can also find the **Cash overview** content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your Microsoft Dynamics 365 for Operations data, see Power BI content in LCS from Microsoft and your partners.
+You can also find the **Cash overview** content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](/dynamics365/operations/dev-itpro/analytics/power-bi-content-microsoft-partners). You can also watch a demonstration of this process in [this Offcie Mix](https://mix.office.com/watch/9puyb1b2xs1w).
 
 Metrics included in the content pack
 ====================================
