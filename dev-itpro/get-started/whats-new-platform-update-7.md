@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Operations platform update 7 (May 2017)
-description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.XXXX.XXXX.
+description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.4542.16189.
 author: tonyafehr
 manager: AnnBe
 ms.date: 05/9/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 7
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.XXXX.XXXX.
+This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.4542.16189.
 
 ## Configuration data projects ##
 Using a configuration data project, you can easily export configuration data and move it from one instance to another instance. This feature provides an updated user interface, and the ability to easily manage templates and projects. For more details, refer to [Configuration data projects](../data-entities/configuration-data-projects.md).
