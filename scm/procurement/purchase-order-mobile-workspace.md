@@ -63,7 +63,8 @@ Download and install the Dynamics 365 for Financials and Operations mobile app f
 3. If this is the first time that you sign in, you’re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
 4. Click ::: and select the company code.
 When you have signed in, you'll see the available workspaces for your company. Note that if your system administrator subsequently publishes a new workspace, you can pull to refresh the list of mobile workspaces.
-*picture*
+
+[![po-workspaces](./media/po-workspaces.png)(./media/po-workspaces.png
 
 ## View orders assigned to me
 1.	On your mobile device, select the **Purchase order approval** workspace.
