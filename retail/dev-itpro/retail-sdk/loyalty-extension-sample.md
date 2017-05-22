@@ -71,6 +71,117 @@ We will leverage the post trigger mechanism provided by the extensibility framew
 
 **Implement FillInLoyaltyRewardPointLinesForSalesServiceRequest 
 
+```cs
+namespace Contoso
+{
+    namespace Commerce.Runtime.EarnRedeemLoyalty
+    {
+        using System;
+        using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+        using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+        using System.Collections.Generic;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+        
+        public class FillInLoyaltyRewardPointLinesForSalesHandler : IRequestHandler
+        {
+            /// <summary>
+            /// Gets the collection of supported request types by this handler.
+            /// </summary>
+            public IEnumerable<Type> SupportedRequestTypes
+            {
+                get
+                {
+                    return new[]
+                    {
+                        typeof(FillInLoyaltyRewardPointLinesForSalesServiceRequest),
+                    };
+                }
+            }
+
+            /// <summary>
+            /// Entry point to FillInLoyaltyRewardPointLinesForSalesServiceRequest service.
+            /// </summary>
+            /// <param name="request">The request to execute.</param>
+            /// <returns>Returns the SalesTransaction object with the one or more LoyaltyRewardPointLines.</returns>
+            public Response Execute(Request request)
+            {
+                ThrowIf.Null(request, "request");
+                var LoyaltyRewardPointLinesForSalesServiceRequest = (FillInLoyaltyRewardPointLinesForSalesServiceRequest)request;
+                SalesTransaction salesTransaction = LoyaltyRewardPointLinesForSalesServiceRequest.SalesTransaction;
+
+                // Call the service to calculate the loyalty reward points.                
+                var fillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest = new FillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest(salesTransaction, LoyaltyRewardPointLinesForSalesServiceRequest.EarnSchemeLines, LoyaltyRewardPointEntryType.Earn);
+                var fillInLoyaltyRewardPointLinesForEarnOrDeductServiceResponse = request.RequestContext.Execute<SingleEntityDataServiceResponse<SalesTransaction>>(fillInLoyaltyRewardPointLinesForEarnOrDeductServiceRequest);
+                salesTransaction = fillInLoyaltyRewardPointLinesForEarnOrDeductServiceResponse.Entity;
+                return new SingleEntityDataServiceResponse<SalesTransaction>(salesTransaction);
+            }
+        }
+    }
+}
+```
+
 **Implement post trigger for the FillInLoyaltyRewardPointLinesForSalesServiceRequest
+
+```cs
+namespace Contoso
+{
+    namespace Commerce.Runtime.Sample.EarnRedeemLoyalty
+    {
+        using System;
+        using System.Collections.Generic;
+        using System.Linq;
+        using Microsoft.Dynamics.Commerce.Runtime;
+        using Microsoft.Dynamics.Commerce.Runtime.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.Services.Messages;
+        using Microsoft.Dynamics.Commerce.Runtime.DataModel;
+
+        class AdjustLoyatyRewardsTrigger : IRequestTrigger
+        {
+            public IEnumerable<Type> SupportedRequestTypes
+            {
+                get { return new[] { typeof(FillInLoyaltyRewardPointLinesForSalesServiceRequest) }; }
+            }
+            public void OnExecuted(Request request, Response response)
+            {
+                ThrowIf.Null(request, "request");
+                var LoyaltyRewardPointSalesServiceRequest = (FillInLoyaltyRewardPointLinesForSalesServiceRequest)request;
+                SalesTransaction salesTransaction = LoyaltyRewardPointSalesServiceRequest.SalesTransaction;
+                                
+                if (salesTransaction.LoyaltyRewardPointLines != null)
+                {
+                    decimal totalReedeemedPoints = 0m;
+                    decimal extraEarnedPoints = 0m;
+                    
+                    // Find the redeemed reward lines in the transaction and calculate the total redeemed reward points
+                    IEnumerable<LoyaltyRewardPointLine> redeemLoyaltyRewardPointLines = salesTransaction.LoyaltyRewardPointLines.Where<LoyaltyRewardPointLine>(line => line.EntryType == LoyaltyRewardPointEntryType.Redeem);
+                    if (redeemLoyaltyRewardPointLines.Count() > 0)
+                    {                        
+                        foreach (var rewardPointLine in redeemLoyaltyRewardPointLines)
+                        {
+                            totalReedeemedPoints += rewardPointLine.RewardPointAmountQuantity;
+                        }
+
+                        // Calculate the number of extra earned points for every redeemed point.
+                        // If the earning rules stated that for every $1 spent, the user earns X points and redemption rule was that Y points equal $1 then, for every redemption point the user earns X/Y extra earn points.
+                        // Based on the above logic, in this sample, for every redeemed point the user earns .1/1 = .1 extra earned points.
+                        extraEarnedPoints = .1m * totalReedeemedPoints; 
+                    }
+
+                    // Reduce the amount of earned points by the extraEarnedPoints calculated above.
+                    IEnumerable<LoyaltyRewardPointLine> earnLoyaltyRewardPointLines = salesTransaction.LoyaltyRewardPointLines.Where<LoyaltyRewardPointLine>(line => line.EntryType == LoyaltyRewardPointEntryType.Earn);
+                    if (earnLoyaltyRewardPointLines.Count() > 0)
+                    {
+                        earnLoyaltyRewardPointLines.FirstOrDefault().RewardPointAmountQuantity -= extraEarnedPoints;
+                    }
+                }
+            }
+            public void OnExecuting(Request request)
+            { }
+        }
+    }
+}
+```
 
 
