@@ -5,7 +5,7 @@ title: Sales tax reporting for the Czech Republic | Microsoft Docs
 description: This topic provides information about how intra-community value-added tax (VAT) is calculated and posted for the Czech Republic. 
 author: LizaGolub
 manager: AnnBe
-ms.date: 05-15-2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
