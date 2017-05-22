@@ -3,12 +3,12 @@
 
 title: Fixed asset impairment accounting on cash generating units
 description: This article introduces the features for fixed asset impairment that are included in Microsoft Dynamics AX. The primary objective of this article is to give the user an overview of the conceptual model for impairment accounting. 
-author: ShylaThompson
+author: rake-gui
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +17,13 @@ ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_J
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 25691
-ms.assetid: c87ac196-8dc6-4636-99a3-be478ddd8efe
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: leguo
+ms.author: ralin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -60,11 +59,6 @@ After the recognition test and measurement of the impairment amount, the user ca
 
 ## Reports and other required operations
 The user can use the **Impairment reports and transactions** inquiry pages to retrieve detailed information about the impairment transactions. Specific operations are required after an impairment is posted, such as adjustment on the corporate tax declaration. The user will have to manually calculate and post these operations.
-
-See also
---------
-
-[Microsoft Dynamics AX 2012 R3 Fixed Asset Loc﻿alization Feature Set - Japan](https://mbs.microsoft.com/partnersource/global/deployment/documentation/white-papers/msdAX2012R3JapanFixedAssets)
 
 
 
