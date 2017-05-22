@@ -42,7 +42,8 @@ Security and permissions
 
 The Test Data Transfer Tool (beta) requires only Microsoft SQL Server permissions.
 
-> [!WARNING]                                                               > The Test Data Transfer Tool (beta) does not in any way recognize the security mechanisms that are built into Microsoft Dynamics AX.
+> [!WARNING]
+> The Test Data Transfer Tool (beta) does not in any way recognize the security mechanisms that are built into Microsoft Dynamics AX.
 
 If you have permission to execute **SELECT** statements in SQL Server Management Studio or to use the SQL Server bulk copy tool (bcp) to export data, you have the permissions that are required to export data by using the Test Data Transfer Tool (beta). The following SQL Server permissions are required during export:
 
