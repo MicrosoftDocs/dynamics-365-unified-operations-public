@@ -28,7 +28,7 @@ ms.dyn365.intro: 2017-05-19]
 ms.dyn365.version: Platform update 6
 ---
 
-# Configure the **Workflow message processing** batch job as critical
+# Configure the Workflow message processing batch job as critical
 
 [!include[banner](../includes/banner.md)]
 
