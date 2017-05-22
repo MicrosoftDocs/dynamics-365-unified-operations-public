@@ -31,20 +31,22 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 [!include[banner](../includes/banner.md)]
 
-Merging call center coupons with retail discounts
+## Merging call center coupons with retail discounts
+
 In prior releases of Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 call center coupons and discount codes on retail discounts were two unrelated features that shared a common purpose. They enabled discount targeting and discount controls for a retailer. A retailer can limit which customers with the code are entitled to the discount.
 With this update we have merged call center coupons with retail discounts to provide a unified experience for managing and accepting coupons in all retail channels. At the highest level the combined feature uses the codes from coupons and the discount value from retail discounts.
+
 At a glance to merge the two features we did the following.
-Removed the discount code and bar code fields from the retail discount forms
-Added a link from coupon to a retail discount
-Enabled multiple coupon codes to be created for a single coupon
-Removed the discount value definition from the coupons form
-Removed the customer and product references from the coupon
-Removed the direct GL posting of a coupon liability
-Removed the charge code parameter for coupons
+- Removed the discount code and bar code fields from the retail discount forms
+- Added a link from coupon to a retail discount
+- Enabled multiple coupon codes to be created for a single coupon
+- Removed the discount value definition from the coupons form
+- Removed the customer and product references from the coupon
+- Removed the direct GL posting of a coupon liability
+- Removed the charge code parameter for coupons
 
 
-For a comparison this table shows a summary of the merged coupon feature, retail discounts, and call center coupons.
+For a comparison here is a table of the features of the merged coupons compared to discount codes and call center coupons.
 
 | Coupons for retail channels - NEW                                                                                                                                                                                                                                                                                                                                                                                                          | Retail discount with a discount code                                                                                     | Call center coupon                                                                                                                                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -62,294 +64,15 @@ For a comparison this table shows a summary of the merged coupon feature, retail
 | Discounts have an explicit currency that acts as a filter for applying the discount to transactions. It can be any of the currencies available.                                                                                                                                                                                                                                                                                            | Have an explicit currency that acts as a filter for applying to transactions. It can be any of the currencies available. | Were implicitly in the company currency with no option to change them.                                                                                                                                  |
 
 
-A coupon can have multiple coupon codes and bar codes each with an independent date range
-Each discount can have only one coupon code and bar code
-Can have one date range or can have a re-occurring day/time period within a date range
-A coupon has only one coupon number
-Has only one date range
-Can be customer specific - When this option is selected the valid customers are determined by the discount to customers using affiliations and price groups
-Can be configured to require a customer any customer without specifying a list of customers
-Can be customer specific - By linking the discount to customers using affiliations and price groups
+## Managing coupons
+
+You need to create the discount and the coupon independently and then link them by choosing the discount in the coupon form.
+Once you link a coupon to a discount, a number of fields on the discount become read only because they are managed by the coupon's settings. Fields such as status and standard date ranges.
  
-Can be customer specific - By adding table/group/all customer relationships to the coupon
-Can be configured to require a customer, any customer without specifying a list of customers
-Can be used in store channels and call center channels.
-Can be channel specific - When this option is selected the valid channels are determined by linking channels to the discount using price groups
-Not available in eCommerce channels at this time. Planned to be added in the future
-Can be used in store channels and eCommerce, but not in call center channels
-Can be channel specific - By linking channels to the discount using price groups
-Not available in call center channels
-Are valid on all call center channels with no ability to restrict to specific call center channels
-Not available in store channels or eCommerce
-Can be restricted to a limited number of times to be used - The restriction can be 1, 2, or more. The restriction can be set as one of; per customer, per channel or global
-This restriction is for the number of separate transactions the coupon can be applied to. It is not a restriction on the number of items to be discounted in one transaction
-Cannot restrict the number of times a discount code can be used.
-When configured to be customer specific a coupon can be restricted to single use per customer
-Is always product specific by the category/product/variant properties of the discount lines.
-Can be configured to apply to all products by using the root category node of the retail category hierarchy
-Can be for specific catalogs - Valid catalogs are determined by linking catalogs to the discount using price groups
-Cannot use exclude products to manage the valid products.
-Is always product specific by the category/product/variant properties of the discount lines.
-Can be configured to apply to all products by using the root category node of the retail category hierarchy
-Cannot use exclude products to manage the valid products.
-Can be product specific - By adding include table/group/all product relationships to the coupon
-Can be for all products except a list of exclude products defined by table/group/all product relationships
-Can be for specific catalogs = By adding include or exclude catalog relationships
-Note: can’t mix include & exclude products on one coupon
-Can be exclusive, best price, or compounded by setting the discount concurrency
-Can be exclusive, best price, or compounded by setting the discount concurrency
-Can be exclusive by setting a property on the coupon
-Discounts have an explicit currency, but it can be in any of the available currencies
-Currency acts as a filter when looking up possible discounts
-Discounts have an explicit currency, but it can be in any of the available currencies
-Currency acts as a filter when looking up possible discounts
-Are implicitly in the company currency
-Not all capabilities of the call center coupons are available with the initial release of merged coupons. The additional capabilities are planned to be added to in upcoming releases.  The key missing capability is that call center coupons could be defined for a single specific amount.  Retail discounts currently do not support a single specific amount.
-Managing coupons
-You will need to create the discount and the coupon independently and then choose the discount in the coupon form.
-Once you link a coupon to a discount, a number of fields, status for example, on the discount become read only because they are managed by the coupon's settings.
-To limit coupons to specific customers or channels you need to set price groups on the discount. See the related topic Define channel-specific discounts to see how this is done.
- 
- 
- 
--------------------------------
- 
-make sure to include a section that describes the behaviors when partial updates are done.
- 
-AX: X++ and Binary.  one or the other (partial AX update)
-RS:  RS updated but HQ not updated. (N+1)
-HQ updated but RS not updated. (N-1)
+### Partial updates and upgrades
 
+Dynamics 365 servicing does not enforce applying updates for all components together. In addition the retail solution is a distributed solution which also means updates may not be applied completely accross the solution. The coupon feature because it is a merge of two existing features and involves discount calculation it is important to understand the impact of a partial update. 
+- **Headquarters only partial update**: There are forms and binary updates that are applied in HQ. The retail price engine is updated with the binary update. It is used to calculate price in sales order and price simulator. The coupon and discount forms are updated with the HQ forms update. If only one of the two update parts are applied you will get forms that do not match the price calculation data. This will cause either unexpected discount calculation or errors during discount calculation. 
+- **HQ updated, Retail server and POS not updated(N-1)**: Retail server handles price calculation with the price engine. We always support updating HQ before updating retail stores. This is because not all stores can be updated at the same time. In this scenario new functionality related to coupons won't be available in non-updated retail stores. For example 'exclude' lines have been introduced with coupons. However if you use exclude lines on a discount they will not be applied in a retail store running a previous version.
+- **HQ not updated, Retail server and POS updated(N+1)**: The updated price engine in retail server knows how to handle legacy discount codes during price calculation so in this you should see no functional impact of the update. 
 
-This Dynamics 365 for Operations template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D) and the [rendered view](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/master/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
-
-When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
-
-
-## Metadata 
-
-The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D)), divided into required fields and optional fields. **DO NOT** use a colon (:) in any of the metadata elements. 
-
-Here are some key things to note about metadata.
-
-- **Required metadata**
-    - **title** - The title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Action search | Microsoft Docs`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
-    - **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
-    - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
-    - **manager** - Use "annbe" in this field.
-    - **ms.date** - This should be the first proposed publication date.
-    - **ms.topic** - Enter "article" here.
-    - **ms.prod** 
-    - **ms.service** - Always use "Dynamics365Operations".
-    - **ms.technology** 
-
-- **Optional metadata**
-    - **audience** - Use of these values: Application User, Developer, or IT Pro.
-    - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
-    - **ms.custom** 
-    - **ms.assetid** - This is the GUID of the article that is used for internal tracking purposes. When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com).
-    - **ms.search.region** - Use "global" or enter a country-region value.
-    - **ms.author** - Use your Microsoft alias.  
-
-## Basic Markdown, GFM, and special characters
-
-All basic and GitHub Flavored Markdown (GFM) is supported. For more information, see:
-
-- [Baseline Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
-- [GFM documentation](https://guides.github.com/features/mastering-markdown)
-
-Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
-
-- Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
-- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
-
-## File name
-
-File names use the following rules:
-
-* Contain only lowercase letters, numbers, and hyphens.
-* No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
-* Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
-* No small words - don't include a, and, the, in, or, etc.
-* Must be in Markdown and use the .md file extension.
-* Keep file names short. They are part of the URL for your articles.  
-
-## Headings
-
-Use sentence-style capitalization. Do not overcapitalize. 
-
-Headings should use atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above. 
-
-There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
-
-If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Define a data method in C# #`.     
-
-Second-level headings will generate the on-page TOC that appears in the "In this article" section under the on-page title.
-
-### Third-level heading
-#### Fourth-level heading
-##### Fifth level heading
-###### Sixth-level heading
- 
-## Text styling
-
-*Italics*
- Use for files, folders, paths (for long items, split onto their own line) - new terms - URLs (unless rendered as links, which is the default).
-
-**Bold**
-Use for UI elements.
-
-## Links
-
-### Internal links
-
-To link to a header in the same Markdown file (also known as anchor links), you'll need to find the ID of the header that you're trying to link to. To confirm the ID, view the source of the rendered article, find the ID of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
-
-**Note:** You need to follow the casing of the header ID. In the following examples, the README.md file is all caps, so that's how this needs to be written in Markdown. Most IDs are lowercase. 
-
-The ID is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the ID would look like this `id="step-2"`.
-
-- Example: [Chapter 1](#chapter-1)
-
-To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
-
-- Example: [Readme](README.md)
-
-To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
-
-- Example: [Links](#links)
-
-### External links
-
-To link to an external file, use the full URL as the link.
-
-- Example: [GitHub](http://www.github.com)
-
-If a URL appears in a Markdown file, it will be transformed into a clickable link.
-
-- Example: http://www.github.com
-
-## Lists
-
-### Ordered lists
-
-1. This 
-1. Is
-1. An
-1. Ordered
-1. List  
-
-
-#### Ordered list with an embedded list
-
-1. Here
-1. comes
-1. an
-1. embedded
-    1. Miss Scarlett
-    1. Professor Plum
-1. ordered
-1. list
-
-
-### Unordered Lists
-
-- This
-- is
-- a
-- bulleted
-- list
-
-
-##### Unordered list with an embedded list
-
-- This 
-- bulleted 
-- list
-    - Mrs. Peacock
-    - Mr. Green
-- contains  
-- other
-    1. Colonel Mustard
-    1. Mrs. White
-- lists
-
-
-## Horizontal rule
-
----
-
-## Tables
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| col 1 is default | left-aligned     |    $1 |
-
-You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily. 
-
-## Code
-
-Use three backticks (&#96;&#96;&#96;) to begin and end a code example block . You an also indent a line to have it rendered as a code example.
-
-```
-function fancyAlert(arg) {
-    if(arg) {
-        $.docs({div:'#foo'})
-    }
-}
-```
-
-Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
-
-## Blockquotes
-
-> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
-
-## Images
-
-### Static image or animated gif
-
-![this is the alt text](../images/Logo_DotNet.png)
-
-### Linked image
-
-[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
-
-## Videos
-
-### YouTube
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
-
-## docs.microsoft extensions
-
-docs.microsoft provides a few additional extensions to GitHub Flavored Markdown. 
-
-### Alerts
-
-It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.     
-
-#### Note
-
-> [!NOTE]
-> This is a NOTE
-
-#### Warning
-
-> [!WARNING]
-> This is a WARNING
-
-#### Tip
-
-> [!TIP]
-> This is a TIP
-
-#### Important
-
-> [!IMPORTANT]
-> This is IMPORTANT
-
-And they'll render like this:
-![Alert styles](../images/alerts.png)
