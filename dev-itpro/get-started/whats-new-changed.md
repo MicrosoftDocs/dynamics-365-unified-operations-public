@@ -62,7 +62,7 @@ To learn more about the mobile workspaces and Power BI content recently released
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations platform</td>
 <td>Platform update 7</td>
-<td> TBD</td>
+<td> 7.0.4542.16189</td>
 <td>May 2017</td>
 <td><a href="whats-new-platform-update-7.md">What’s new or changed in Dynamics 365 for Operations platform update 7 (May 2017)</a></td>
 </tr><tr class="odd">
