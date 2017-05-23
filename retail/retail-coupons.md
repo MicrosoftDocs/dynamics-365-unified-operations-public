@@ -34,20 +34,11 @@ ms.dyn365.ops.version:
 
 ## Merging call center coupons with retail discounts
 
-In prior releases of Microsoft Dynamics AX 2012 and Microsoft Dynamics 365 call center coupons and discount codes on retail discounts were two unrelated features that shared a common purpose. They enabled discount targeting and discount controls for a retailer. A retailer can limit which customers with the code are entitled to the discount.
-With this update, we have merged call center coupons with retail discounts to provide a unified experience for managing and accepting coupons in all retail channels. At the highest level the combined feature uses the codes from coupons and the discount value from retail discounts.
+In Microsoft Dynamics AX 2012 and earlier versions of Microsoft Dynamics 365 for Operations, call center coupons and discount codes on retail discounts were two unrelated features that shared a common purpose: they enabled discount targeting and discount controls for a retailer. With these features, a retailer could limit which customers are entitled to the discount.
 
-At a glance to merge the two features we did the following.
-- Removed the discount code and bar code fields from the retail discount forms
-- Added a link from coupon to a retail discount
-- Enabled multiple coupon codes and bar codes to be created for a single coupon
-- Removed the discount value definition from the coupons form
-- Removed the customer and product references from the coupon
-- Removed the direct GL posting of a coupon liability
-- Removed the charge code parameter for coupons
+In Dynamics 365 for Retail, call center coupons are merged with retail discounts to provide a unified experience for managing and accepting coupons in all retail channels. The combined experience uses the codes from coupons and the discount value from retail discounts.
 
-
-For a comparison, here is a table of the features of the merged coupons compared to discount codes and call center coupons.
+The table below compares the new functionality to the older discount codes and call center coupons features.
 
 | Coupons for retail channels - NEW                                                                                                                                                                                                                                                                                                                                                                                                          | Retail discount with a discount code                                                                                     | Call center coupon                                                                                                                                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
