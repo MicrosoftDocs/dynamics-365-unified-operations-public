@@ -123,13 +123,15 @@ For each form pattern class, information is provided about each variant. This in
 
 #### Details Master
 
-[Details Master](details-master-form-pattern.md) This form pattern is used to display the details of a complex entity on FastTabs. It includes a grid view and a details view.
+[Details Master](details-master-form-pattern.md)\[Default\] This form pattern is used to display the details of a complex entity on FastTabs. It includes a grid view and a details view.
 
 Form: CustTable 
 
-[![image001](./media/image001.jpg)](./media/image001.jpg)[![image002](./media/image002.jpg)](./media/image002.jpg)
+![image001](./media/image001.jpg)
 
-[Details Master w/ Standard Tabs](details-master-form-pattern.md) Use this Details Master variant when your form has a large number of FastTabs (&gt;15) that can be grouped into categories.
+![image002](./media/image002.jpg)
+
+[Details Master w/ Standard Tabs](details-master-form-pattern.md) Use this Details Master variant when your form has a large number of FastTabs (>15) that can be grouped into categories.
 
 Form: HcmWorker 
 
@@ -394,13 +396,13 @@ For each subpattern class, information is provided about each variant. This info
 
 Form: LedgerJournalTable (TopFields)
 
-![HowToSelectAFormPattern (16)](/media/howtoselectaformpattern-16.jpg)
+![HowToSelectAFormPattern (16)](./media/howtoselectaformpattern-16.jpg)
 
 [Custom and Quick Filters](../financial/dimension-entry-control-subpattern.md) Use this variant when a QuickFilter is required.
 
 Form: CustTable (CustomFilterGroup)
 
-![HowToSelectAFormPattern (17)](/media/howtoselectaformpattern-17.jpg)
+![HowToSelectAFormPattern (17)](./media/howtoselectaformpattern-17.jpg)
 
  
 
@@ -410,31 +412,31 @@ Form: CustTable (CustomFilterGroup)
 
 Form: InventLocation (LocationNames)
 
-![HowToSelectAFormPattern (18)](/media/howtoselectaformpattern-18.jpg)
+![HowToSelectAFormPattern (18)](./media/howtoselectaformpattern-18.jpg)
 
 [Tabular Fields](tabular-fields-subpattern.md) Use this form pattern to get a structured layout of fields. It is intended primarily for totals.
 
 Form: LedgerJournalTransVendPaym (Balances)
 
-![HowToSelectAFormPattern (19)](/media/howtoselectaformpattern-19.jpg)
+![HowToSelectAFormPattern (19)](./media/howtoselectaformpattern-19.jpg)
 
 [Fill Text](fill-text-subpattern.md) Use this form pattern when a single input control requires full width.
 
 Form: FmRental (Notes)
 
-![HowToSelectAFormPattern (20)](/media/howtoselectaformpattern-20.jpg)
+![HowToSelectAFormPattern (20)](./media/howtoselectaformpattern-20.jpg)
 
 [Horizontal Fields and Button Group](horizontal-fields-buttons-group-subpattern.md) Use this form pattern when a field has an inline action.
 
 Form: SalesTable (GroupHeaderAddressHeaderOverview)
 
-![HowToSelectAFormPattern (21)](/media/howtoselectaformpattern-21.jpg)
+![HowToSelectAFormPattern (21)](./media/howtoselectaformpattern-21.jpg)
 
 [Image Preview](image-preview-subpattern.md) Use this form pattern for containers that have image controls (and optional related fields).
 
 Form: RetailVisualProfile (Login)
 
-![HowToSelectAFormPattern (22)](/media/howtoselectaformpattern-22.jpg)
+![HowToSelectAFormPattern (22)](./media/howtoselectaformpattern-22.jpg)
 
  
 
@@ -444,13 +446,13 @@ Form: RetailVisualProfile (Login)
 
 Form: VendTable (TabCommunication)
 
-![HowToSelectAFormPattern (23)](/media/howtoselectaformpattern-23.jpg)
+![HowToSelectAFormPattern (23)](./media/howtoselectaformpattern-23.jpg)
 
 [Toolbar and List – Double](toolbar-list-subpattern.md) Use this Toolbar and List variant when the containers have two grids.
 
 Form: SalesQuickQuote (TabPageExistingItems)
 
-![HowToSelectAFormPattern (24)](/media/howtoselectaformpattern-24.jpg)
+![HowToSelectAFormPattern (24)](./media/howtoselectaformpattern-24.jpg)
 
  
 
@@ -460,13 +462,13 @@ Form: SalesQuickQuote (TabPageExistingItems)
 
 Form: SalesOrderProcessingWorkspace
 
-![HowToSelectAFormPattern (25)](/media/howtoselectaformpattern-25.jpg)
+![HowToSelectAFormPattern (25)](./media/howtoselectaformpattern-25.jpg)
 
 [Section Related Links](section-related-links-subpattern.md) Use this variant to show a set of hyperlinks in a workspace section. This should be modeled in a tab page on the workspace form.
 
 Form: SalesOrderProcessingWorkspace
 
-![HowToSelectAFormPattern (26)](/media/howtoselectaformpattern-26.jpg)
+![HowToSelectAFormPattern (26)](./media/howtoselectaformpattern-26.jpg)
 
 [Section Tabbed List](section-tabbed-list-subpattern.md) Use this variant when multiple list variants must be included. Only one is shown at a time.
 
@@ -488,25 +490,25 @@ Form: SalesOrderProcessingWorkspace
 
 Form: HcmJob (TaskTabPage)
 
-![HowToSelectAFormPattern (27)](/media/howtoselectaformpattern-27.jpg)
+![HowToSelectAFormPattern (27)](./media/howtoselectaformpattern-27.jpg)
 
 [List Panel](list-panel-subpattern.md) Use this form pattern when users must move items back and forth between two lists.
 
 Form: CLIControls\_ListPanel (FormTabPageControl1)
 
-![HowToSelectAFormPattern (28)](/media/howtoselectaformpattern-28.jpg)
+![HowToSelectAFormPattern (28)](./media/howtoselectaformpattern-28.jpg)
 
 [Toolbar and Fields](toolbar-fields-subpattern.md) Use this form pattern on containers that have only actions and fields
 
 Form: HcmPosition (WorkerAssignmentTabPage)
 
-![HowToSelectAFormPattern (29)](/media/howtoselectaformpattern-29.jpg)
+![HowToSelectAFormPattern (29)](./media/howtoselectaformpattern-29.jpg)
 
 [Dimension Entry Control](../financial/dimension-entry-control-subpattern.md) Use this form pattern on tab pages that have only a Dimension Entry Control.
 
 Form: CustTable (TabFinancialDimensions)
 
-![HowToSelectAFormPattern (30)](/media/howtoselectaformpattern-30.jpg)
+![HowToSelectAFormPattern (30)](./media/howtoselectaformpattern-30.jpg)
 
 [Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md) Use this form pattern on containers that include a Dimension Expression Builder control.
 
