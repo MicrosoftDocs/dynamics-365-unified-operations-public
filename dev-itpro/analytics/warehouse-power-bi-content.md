@@ -34,22 +34,22 @@ ms.search.validFrom: 2016-11-30
 
 [!include[banner](../includes/banner.md)]
 
-"[!include[banner](../includes/banner.md)]"
-
 
 This topic describes what's included in the Warehouse performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
 Overview
 ========
 
-The **Warehouse performance** Microsoft Power BI content was created so that warehouse and operations managers can monitor important inbound, outbound, and inventory metrics. It uses Warehouse management, product, and other transactional data from Microsoft Dynamics 365 for Operations, and provides both an aggregate view of warehouse performance and a breakdown for vendors, product groups and products, and site and warehouses. Warehouse managers can use the **Warehouse performance** Power BI content to measure the following three areas:
+The **Warehouse performance** Power BI content was created so that warehouse and operations managers can monitor important inbound, outbound, and inventory metrics. It uses Warehouse management, product, and other transactional data from your system, and provides both an aggregate view of warehouse performance and a breakdown for vendors, product groups and products, and site and warehouses. 
+
+Warehouse managers can use the **Warehouse performance** Power BI content to measure the following three areas:
 
 -   **Inbound performance**: Measure how well a vendor is performing against customer (in other words, measure delivery performance), and measure put-away performance, so that you can identify issues that involve workers or items over a period. It's important that you know whether vendors are delivering on time, early, or late, so that you can determine how vendor performance is affecting overall put-away performance. A vendor that delivers outside the dates that were agreed on can put extra pressure on the warehouse, because of unexpected work, and can increase the average put-away time.
 -   **Shipping performance**: Measure whether your warehouse is shipping in full and on time to customers (in other words, measure outbound shipping and delivery performance), so that you can identify any issues that involve products, sites or warehouses, or dedicated customers. If you find that you're shipping late to specific areas or towns, you might have to pay more attention to transportation or account management.
 -   **Location inventory accuracy**: Inventory accuracy is important internal warehouse business intelligence (BI). It's very important that you determine how accurately you're counting in general. However, it's also important that you determine how accurate you are at storing items in the correct locations, and that you highlight discrepancy data, so that you can find better positions for items or initiate total counting on specific items. (Currently, the new item-based counting functionality is delivered as a hotfix.) If you're using this Power BI content to determine the correctness of on-hand inventory data per location, you can also identify theft in your shops. You can also determine whether any locations have on-hand quantities that differ from enterprise resource planning (ERP) data. Those locations might be too large, or they might be impossible to count. Alternatively, some of the physical positioning might be bad, so that it's difficult to keep a single type of item in sync with on-hand data.
 
 ## Accessing the Power BI content
-You can find the **Warehouse performance** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). System administrators can download the content and connect it to your Dynamics 365 for Operations data by following the instructions in [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). 
+You can find the **Warehouse performance** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
 **Note:** **KB 4011327** is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
@@ -87,7 +87,7 @@ The **Warehouse performance** Power BI content includes a report. This report co
 | Shipping performance        | Shipped by site / warehouse              | The percentage that is shipped early, on time, or late by site or warehouse.                                                                                                                                                                                                                                                                                                                                    |
 
 ## Understanding the data model and calculations
-Dynamics 365 for Operations data is used to fill in the report in the **Warehouse performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 
+The following data is used to populate the report pages in the **Warehouse performance** content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 
 
 The following key aggregate measurements are used as the basis of the content.
 
