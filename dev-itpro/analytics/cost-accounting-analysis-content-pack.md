@@ -77,7 +77,9 @@ The content includes a set of report pages. Each page consists of a set of metri
 |                                  | Actual cost by Cost object dimension member name and Cost element dimension member name                                       |                                               |
 
 ## Understanding the data model and entities
-Dynamics 365 for Operations data is used to fill the report pages in the **Cost accounting analysis** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). The following key aggregate measurements are used as the basis of the content.
+The following data is used to populate the report pages in the **Cost accounting analysis** content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL Serever database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 
+
+The following key aggregate measurements are used as the basis of the content.
 
 | Entity                  | Key aggregate measurement | Data source for Dynamics 365 for Operations | Field     | Description                                   |
 |-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
