@@ -5,7 +5,7 @@ title: Select a form pattern
 description: This article provides information that will help you select the best form pattern for the forms that you migrate. 
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 28681
@@ -70,8 +70,8 @@ The **Form.Design.Style** property often contains the name of the pattern that w
 | SimpleListDetails, where there are and 4–5 fields in the navigation list                         | [Simple List Details – Tabular Grid](simple-list-details-form-pattern.md) |
 | SimpleListDetails, where there is a tree (rare)                                                  | [Simple List Details – Tree](simple-list-details-form-pattern.md)         |
 | TableOfContents                                                                                  | [Table of Contents](table-of-contents-form-pattern.md)                        |
-| Auto, where there is an **Overview** tab, a **General **tab, and a single data source            | [Task Single](task-single-form-pattern.md)                                    |
-| Auto, where there are two sets of **Overview **tabs, **General** tabs, and/or headers plus lines | [Task Double](task-double-form-pattern.md)                                    |
+| Auto, where there is an **Overview** tab, a **General** tab, and a single data source            | [Task Single](task-single-form-pattern.md)                                    |
+| Auto, where there are two sets of **Overview** tabs, **General** tabs, and/or headers plus lines | [Task Double](task-double-form-pattern.md)                                    |
 | Auto, where there is focus on a single record                                                    | [Simple Details](simple-details-form-pattern.md)                              |
 | Auto, where the form name ends in “Lookup”                                                       | [Lookup](lookup-form-pattern.md)                                              |
 | Auto, where there is a single tab control and **Next**/**Previous** buttons                      | [Wizard](wizard-form-pattern.md)                                              |
@@ -115,21 +115,21 @@ Although this approach is less useful than looking at the form metadata, you ca
 
 ### Finding forms that currently use a particular form pattern
 
-For a full list of forms that are currently using a particular form pattern, generate the **Form Patterns** report from within Microsoft Visual Studio. On the **Dynamics 365 **menu, expand the **Add-ins** option, and click **Run form patterns report**. A background process generates the report. After several seconds, a message box appears in Visual Studio to indicate that the report has been generated and inform you about the location of the **Form Patterns** report file. You can filter this file by pattern to find forms that use a particular pattern.
+For a full list of forms that are currently using a particular form pattern, generate the **Form Patterns** report from within Microsoft Visual Studio. On the **Dynamics 365** menu, expand the **Add-ins** option, and click **Run form patterns report**. A background process generates the report. After several seconds, a message box appears in Visual Studio to indicate that the report has been generated and inform you about the location of the **Form Patterns** report file. You can filter this file by pattern to find forms that use a particular pattern.
 
 ### Form pattern visuals and descriptions
 
 For each form pattern class, information is provided about each variant. This information includes a short description and an illustration of an example form.
 
-###### **Details Master**
+#### Details Master
 
-[**Details Master**](details-master-form-pattern.md)\[Default\] This form pattern is used to display the details of a complex entity on FastTabs. It includes a grid view and a details view.
+[Details Master](details-master-form-pattern.md) This form pattern is used to display the details of a complex entity on FastTabs. It includes a grid view and a details view.
 
 Form: CustTable 
 
 [![image001](./media/image001.jpg)](./media/image001.jpg)[![image002](./media/image002.jpg)](./media/image002.jpg)
 
-**[Details Master w/ Standard Tabs](details-master-form-pattern.md)** Use this Details Master variant when your form has a large number of FastTabs (&gt;15) that can be grouped into categories.
+[Details Master w/ Standard Tabs](details-master-form-pattern.md) Use this Details Master variant when your form has a large number of FastTabs (&gt;15) that can be grouped into categories.
 
 Form: HcmWorker 
 
@@ -139,9 +139,9 @@ Form: HcmWorker
 
  
 
-###### **Details Transaction**
+#### *Details Transaction
 
-**[Details Transaction](details-transaction-form-pattern.md)** Use this form patter to show the details of a complex transaction entity and its lines (for example, an order and its lines).
+[Details Transaction](details-transaction-form-pattern.md) Use this form patter to show the details of a complex transaction entity and its lines (for example, an order and its lines).
 
 Form: SalesTable 
 
@@ -151,109 +151,103 @@ Form: SalesTable
 
  
 
-###### **Dialog**
+#### Dialog
 
-[**Dialog – Basic**](dialog-form-pattern.md)\[Default\] This form pattern is used to gather or show a set of information.
+[Dialog – Basic](dialog-form-pattern.md)\[Default\] This form pattern is used to gather or show a set of information.
 
 Form: ProjTableCreate
 
 [![HowToSelectAFormPattern (34)](./media/howtoselectaformpattern-34.jpg)](./media/howtoselectaformpattern-34.jpg)
 
-**[Dialog – Read Only](dialog-form-pattern.md)** Use this Dialog variant when your Dialog just displays information that can't be edited. It has only a **Close** button.
+[Dialog – Read Only](dialog-form-pattern.md) Use this Dialog variant when your Dialog just displays information that can't be edited. It has only a **Close** button.
 
 Form: SalesTablePostings
 
 [![HowToSelectAFormPattern (35)](./media/howtoselectaformpattern-35.jpg)](./media/howtoselectaformpattern-35.jpg)
 
-**[Dialog – FastTabs](dialog-form-pattern.md)** Use this Dialog variant when your Dialog content is grouped into FastTabs.
+[Dialog – FastTabs](dialog-form-pattern.md)** Use this Dialog variant when your Dialog content is grouped into FastTabs.
 
 None currently in product.
 
 [![HowToSelectAFormPattern (36)](./media/howtoselectaformpattern-36.jpg)](./media/howtoselectaformpattern-36.jpg)
 
-**[Dialog – Tabs](dialog-form-pattern.md)** Use this Dialog variant when your Dialog content must be grouped into tabs.
+[Dialog – Tabs](dialog-form-pattern.md) Use this Dialog variant when your Dialog content must be grouped into tabs.
 
 Form: CaseDetailCreate
 
-[![HowToSelectAFormPattern (37)](./media/howtoselectaformpattern-37.jpg)](./media/howtoselectaformpattern-37.jpg)
+![HowToSelectAFormPattern (37)](/media/howtoselectaformpattern-37.jpg)
 
-**[Dialog – Double Tabs](dialog-form-pattern.md)** Use this Dialog variant when your Dialog content has two tabs that are stacked on top of each other.
+[Dialog – Double Tabs](dialog-form-pattern.md) Use this Dialog variant when your Dialog content has two tabs that are stacked on top of each other.
 
 Form: PurchTableReferences
 
-[![HowToSelectAFormPattern (38)](./media/howtoselectaformpattern-38-300x286.jpg)](./media/howtoselectaformpattern-38.jpg)
+![HowToSelectAFormPattern (38)](./media/howtoselectaformpattern-38.jpg)
 
  
 
-###### **Drop Dialog**
+#### Drop Dialog
 
-[**Drop Dialog**](drop-dialog-form-pattern.md)\[Default\] This form pattern is used to initiate actions when the number of fields is small (less than five).
+[Drop Dialog](drop-dialog-form-pattern.md)\[Default\] This form pattern is used to initiate actions when the number of fields is small (less than five).
 
 Form: CustCollectionsNewActivityAction
 
 [![HowToSelectAFormPattern (39)](./media/howtoselectaformpattern-39.jpg)](./media/howtoselectaformpattern-39.jpg)
 
-**[Drop Dialog – Read Only](drop-dialog-form-pattern.md)** Use this Drop Dialog variant when the fields in the Drop Dialog aren't editable. No **OK**/**Close** button is modeled.
+[Drop Dialog – Read Only](drop-dialog-form-pattern.md) Use this Drop Dialog variant when the fields in the Drop Dialog aren't editable. No **OK**/**Close** button is modeled.
 
 No example currently exists in the product.
 
- 
+#### Factbox
 
-###### **Factbox**
-
-**[Factbox Grid](factbox-form-patterns.md)** Use this Factbox variant to show a child collection of related information.
+[Factbox Grid](factbox-form-patterns.md) Use this Factbox variant to show a child collection of related information.
 
 Form: ContactsInfoPart
 
-[![HowToSelectAFormPattern (40)](./media/howtoselectaformpattern-40.jpg)](./media/howtoselectaformpattern-40.jpg)
+![HowToSelectAFormPattern (40)](./media/howtoselectaformpattern-40.jpg)
 
-**[Factbox Card](factbox-form-patterns.md)** Use this Factbox variant to show a set of related fields.
+[Factbox Card](factbox-form-patterns.md) Use this Factbox variant to show a set of related fields.
 
 Form: CustStatisticsStatistics
 
-[![HowToSelectAFormPattern (41)](./media/howtoselectaformpattern-41.jpg)](./media/howtoselectaformpattern-41.jpg)
+![HowToSelectAFormPattern (41)](./media/howtoselectaformpattern-41.jpg)
 
- 
+#### List Page
 
-###### **List Page**
-
-**[List Page](list-page-form-pattern.md)** The Dynamics AX 2012 list page that is just a grid that is optimized for browsing records and acting on those records.
+[List Page](list-page-form-pattern.md) The Dynamics AX 2012 list page that is just a grid that is optimized for browsing records and acting on those records.
 
 Form: SalesTableListPage
 
-[![HowToSelectAFormPattern (42)](./media/howtoselectaformpattern-42.jpg)](./media/howtoselectaformpattern-42.jpg)
+![HowToSelectAFormPattern (42)](./media/howtoselectaformpattern-42.jpg)
 
- 
+#### Lookup
 
-###### **Lookup**
-
-[**Lookup Basic**](lookup-form-pattern.md)\[Default\] This form pattern is used if the lookup form is a grid or tree that has optional filters or buttons at the bottom.
+[Lookup Basic](lookup-form-pattern.md)\[Default\] This form pattern is used if the lookup form is a grid or tree that has optional filters or buttons at the bottom.
 
 Form: SysLanguageLookup
 
 [![HowToSelectAFormPattern (43)](./media/howtoselectaformpattern-43.jpg)](./media/howtoselectaformpattern-43.jpg)
 
-**[Lookup w/Preview](lookup-form-pattern.md)** Use this Lookup variant when, in addition to the basic pattern,a preview of the current record is also shown.
+[Lookup w/Preview](lookup-form-pattern.md) Use this Lookup variant when, in addition to the basic pattern,a preview of the current record is also shown.
 
 Form: HcmWorkerLookup
 
-[![HowToSelectAFormPattern (44)](./media/howtoselectaformpattern-44-300x169.jpg)](./media/howtoselectaformpattern-44.jpg)
+![HowToSelectAFormPattern (44)](/media/howtoselectaformpattern-44.jpg)
 
-**[Lookup w/Tabs](lookup-form-pattern.md)** Use this Lookup variant when there are multiple views of a lookup (for example, a grid view/tree view or multiple filtered lists).
+[Lookup w/Tabs](lookup-form-pattern.md) Use this Lookup variant when there are multiple views of a lookup (for example, a grid view/tree view or multiple filtered lists).
 
 Form: CaseCategoryLookup
 
-[![HowToSelectAFormPattern (45)](./media/howtoselectaformpattern-45.jpg)](./media/howtoselectaformpattern-45.jpg)
+![HowToSelectAFormPattern (45)](./media/howtoselectaformpattern-45.jpg)
 
  
 
-###### **Panorama Section**
+#### Panorama Section
 
-**[Form Part Section List](section-list-form-pattern.md)** Use this form pattern to show a list in a workspace section. This should be modeled as a separate form and rendered in the workspace via a Form Part Control.
+[Form Part Section List](section-list-form-pattern.md) Use this form pattern to show a list in a workspace section. This should be modeled as a separate form and rendered in the workspace via a Form Part Control.
 
-**[Form Part Section List - Double](section-list-form-pattern.md)** Use this variant when you must also show a secondary list. This secondary list isn't initially visible.
+[Form Part Section List - Double](section-list-form-pattern.md) Use this variant when you must also show a secondary list. This secondary list isn't initially visible.
 
-**[Hub Part Chart](section-chart-form-pattern.md)** Use this variant to show a chart in a workspace section. This should be modeled as a separate form and rendered in the workspace via a Form Part Control.
+[Hub Part Chart](section-chart-form-pattern.md) Use this variant to show a chart in a workspace section. This should be modeled as a separate form and rendered in the workspace via a Form Part Control.
 
 Form: VendInvoiceJourCountChart
 
@@ -261,113 +255,113 @@ Form: VendInvoiceJourCountChart
 
  
 
-###### **Simple Details**
+#### Simple Details
 
-**[Simple Details w/Toolbar and Fields](simple-details-form-pattern.md)** Use this form pattern tp show fields for a single base record.
+[Simple Details w/Toolbar and Fields](simple-details-form-pattern.md) Use this form pattern tp show fields for a single base record.
 
 Form: AgreementLine
 
-[![HowToSelectAFormPattern (2)](./media/howtoselectaformpattern-2-300x203.jpg)](./media/howtoselectaformpattern-2.jpg)
+![HowToSelectAFormPattern (2)](./media/howtoselectaformpattern-2.jpg)
 
-**[Simple Details w/FastTabs](simple-details-form-pattern.md)** Use this Simple Details variant when the record’s information is organized into FastTabs.
+[Simple Details w/FastTabs](simple-details-form-pattern.md) Use this Simple Details variant when the record’s information is organized into FastTabs.
 
 Form: PlanActivityServiceDetails
 
-[![HowToSelectAFormPattern (3)](./media/howtoselectaformpattern-3-300x191.jpg)](./media/howtoselectaformpattern-3.jpg)
+![HowToSelectAFormPattern (3)](/media/howtoselectaformpattern-3.jpg)
 
-**[Simple Details w/Standard Tabs](simple-details-form-pattern.md)** Use this Simple Details variant when the record’s information is organized into regular tabs.
+[Simple Details w/Standard Tabs](simple-details-form-pattern.md) Use this Simple Details variant when the record’s information is organized into regular tabs.
 
 Form: HcmEmploymentDateManager
 
-[![HowToSelectAFormPattern (4)](./media/howtoselectaformpattern-4-300x191.jpg)](./media/howtoselectaformpattern-4.jpg)
+![HowToSelectAFormPattern (4)](/media/howtoselectaformpattern-4.jpg)
 
-**[Simple Details w/Panorama](simple-details-form-pattern.md)** Use this Simple Details variant to display a record’s information in a horizontally scrolling panorama.
+[Simple Details w/Panorama](simple-details-form-pattern.md) Use this Simple Details variant to display a record’s information in a horizontally scrolling panorama.
 
 Form: PdsMRCEventTracker
 
-[![HowToSelectAFormPattern (5)](./media/howtoselectaformpattern-5-300x191.jpg)](./media/howtoselectaformpattern-5.jpg)
+![HowToSelectAFormPattern (5)](/media/howtoselectaformpattern-5.jpg)
 
  
 
-###### **Simple List**
+#### Simple List
 
-**[Simple List](simple-list-form-pattern.md)** This form pattern is used to maintain data for simple entities.
+[Simple List](simple-list-form-pattern.md) This form pattern is used to maintain data for simple entities.
 
 Form: CustGroup
 
-[![HowToSelectAFormPattern (6)](./media/howtoselectaformpattern-6.jpg)](./media/howtoselectaformpattern-6.jpg)
+![HowToSelectAFormPattern (6)](/media/howtoselectaformpattern-6.jpg)
 
  
 
-###### **Simple List and Details**
+#### Simple List and Details
 
-[**Simple List & Details – List Grid**](simple-list-details-form-pattern.md)\[Default\] This form pattern is used to maintain data for entities of medium complexity. A list grid that has 2–3 fields in the navigation list is the preferred pattern for this form style in the current version.
+[Simple List & Details – List Grid](simple-list-details-form-pattern.md)\[Default\] This form pattern is used to maintain data for entities of medium complexity. A list grid that has 2–3 fields in the navigation list is the preferred pattern for this form style in the current version.
 
 Form: PaymTerm
 
-[![HowToSelectAFormPattern (7)](./media/howtoselectaformpattern-7.jpg)](./media/howtoselectaformpattern-7.jpg)
+![HowToSelectAFormPattern (7)](/media/howtoselectaformpattern-7.jpg)
 
-**[Simple List & Details – Tabular Grid](simple-list-details-form-pattern.md)** Use this Simple List & Details variant if you require more than three fields in the list part of the form.
+[Simple List & Details – Tabular Grid](simple-list-details-form-pattern.md) Use this Simple List & Details variant if you require more than three fields in the list part of the form.
 
 Form: ExchangeRate
 
-[![HowToSelectAFormPattern (8)](./media/howtoselectaformpattern-8.jpg)](./media/howtoselectaformpattern-8.jpg)
+![HowToSelectAFormPattern (8)](/media/howtoselectaformpattern-8.jpg)
 
-**[Simple List & Details – Tree](simple-list-details-form-pattern.md)** Use this Simple List & Details variant if the list part of the form is a tree.
+[Simple List & Details – Tree](simple-list-details-form-pattern.md) Use this Simple List & Details variant if the list part of the form is a tree.
 
 Form: FiscalCalendars
 
-[![HowToSelectAFormPattern (9)](./media/howtoselectaformpattern-9.jpg)](./media/howtoselectaformpattern-9.jpg)
+![HowToSelectAFormPattern (9)](/media/howtoselectaformpattern-9.jpg)
 
  
 
-###### **Table of Contents**
+#### Table of Contents
 
-**[Table of Contents](table-of-contents-form-pattern.md)** Use this form pattern to show setup information or loosely related information sets.
+[Table of Contents](table-of-contents-form-pattern.md) Use this form pattern to show setup information or loosely related information sets.
 
 Form: CustParameters
 
-[![HowToSelectAFormPattern (10)](./media/howtoselectaformpattern-10.jpg)](./media/howtoselectaformpattern-10.jpg)
+![HowToSelectAFormPattern (10)](/media/howtoselectaformpattern-10.jpg)
 
  
 
-###### **Task**
+#### Task
 
-**[Task Single](task-single-form-pattern.md)** This legacy form pattern is used to display entities. It should be used only for migration, not for new forms.
+[Task Single](task-single-form-pattern.md) This legacy form pattern is used to display entities. It should be used only for migration, not for new forms.
 
 Form: LedgerJournalTable
 
-[![HowToSelectAFormPattern (11)](./media/howtoselectaformpattern-11.jpg)](./media/howtoselectaformpattern-11.jpg)
+![HowToSelectAFormPattern (11)](/media/howtoselectaformpattern-11.jpg)
 
-**[Task Double](task-double-form-pattern.md)** This legacy form pattern is used to display transaction entities. It should be used only for migration, not for new forms.
+[Task Double](task-double-form-pattern.md) This legacy form pattern is used to display transaction entities. It should be used only for migration, not for new forms.
 
 Form: HRMAbsenceTableHistory
 
-[![HowToSelectAFormPattern (12)](./media/howtoselectaformpattern-12.jpg)](./media/howtoselectaformpattern-12.jpg)
+![HowToSelectAFormPattern (12)](/media/howtoselectaformpattern-12.jpg)
 
  
 
-###### **Wizard**
+#### Wizard
 
-**[Wizard](wizard-form-pattern.md)** This form pattern is used to display a set of page views to the user to gather information in a predetermined order.
+[Wizard](wizard-form-pattern.md) This form pattern is used to display a set of page views to the user to gather information in a predetermined order.
 
 Form: WrkCtrBulkResReqEditWizard
 
-[![HowToSelectAFormPattern (13)](./media/howtoselectaformpattern-13.jpg)](./media/howtoselectaformpattern-13.jpg)
+![HowToSelectAFormPattern (13)](/media/howtoselectaformpattern-13.jpg)
 
  
 
-###### **Workspace**
+#### Workspace
 
-[**Operational Workspace**](workspace-form-pattern.md)\[Default\] This is the preferred, performance-enhanced variant of the Workspace pattern.
+[Operational Workspace](workspace-form-pattern.md)\[Default\] This is the preferred, performance-enhanced variant of the Workspace pattern.
 
 Form: FmClerkWorkspace
 
-[![HowToSelectAFormPattern (1)](./media/howtoselectaformpattern-1.png)](./media/howtoselectaformpattern-1.png)
+![HowToSelectAFormPattern (1)](/media/howtoselectaformpattern-1.png)
 
-**Workspace** This is the old Workspace pattern. It will be removed soon, so don't use it. It is included here only for completeness.
+Workspace: This is the old Workspace pattern. It will be removed soon, so don't use it. It is included here only for completeness.
 
- Do not use.
+Do not use.
 
 ## Subpattern reference guide
 ### List of subpattern classes
@@ -394,127 +388,127 @@ When a form is open in the Visual Studio designer, you can easily search for con
 
 For each subpattern class, information is provided about each variant. This information includes a short description and an illustration of an example form.
 
-###### **Custom Filters**
+#### Custom Filters
 
-**[Custom Filters](custom-filter-group-subpattern.md)** Use this form pattern when custom filters are modeled. QuickFilter isn't required.
+[Custom Filters](custom-filter-group-subpattern.md) Use this form pattern when custom filters are modeled. QuickFilter isn't required.
 
 Form: LedgerJournalTable (TopFields)
 
-[![HowToSelectAFormPattern (16)](./media/howtoselectaformpattern-16.jpg)](./media/howtoselectaformpattern-16.jpg)
+![HowToSelectAFormPattern (16)](/media/howtoselectaformpattern-16.jpg)
 
-**[Custom and Quick Filters](../financial/dimension-entry-control-subpattern.md)** Use this variant when a QuickFilter is required.
+[Custom and Quick Filters](../financial/dimension-entry-control-subpattern.md) Use this variant when a QuickFilter is required.
 
 Form: CustTable (CustomFilterGroup)
 
-[![HowToSelectAFormPattern (17)](./media/howtoselectaformpattern-17-300x132.jpg)](./media/howtoselectaformpattern-17.jpg)
+![HowToSelectAFormPattern (17)](/media/howtoselectaformpattern-17.jpg)
 
  
 
-###### **Fields**
+#### Fields
 
-**[Fields and Field Groups](fields-field-groups-subpattern.md)** Use this form pattern to get a responsive layout for containers that contain only fields.
+[Fields and Field Groups](fields-field-groups-subpattern.md) Use this form pattern to get a responsive layout for containers that contain only fields.
 
 Form: InventLocation (LocationNames)
 
-[![HowToSelectAFormPattern (18)](./media/howtoselectaformpattern-18.jpg)](./media/howtoselectaformpattern-18.jpg)
+![HowToSelectAFormPattern (18)](/media/howtoselectaformpattern-18.jpg)
 
-**[Tabular Fields](tabular-fields-subpattern.md)** Use this form pattern to get a structured layout of fields. It is intended primarily for totals.
+[Tabular Fields](tabular-fields-subpattern.md) Use this form pattern to get a structured layout of fields. It is intended primarily for totals.
 
 Form: LedgerJournalTransVendPaym (Balances)
 
-[![HowToSelectAFormPattern (19)](./media/howtoselectaformpattern-19.jpg)](./media/howtoselectaformpattern-19.jpg)
+![HowToSelectAFormPattern (19)](/media/howtoselectaformpattern-19.jpg)
 
-**[Fill Text](fill-text-subpattern.md)** Use this form pattern when a single input control requires full width.
+[Fill Text](fill-text-subpattern.md) Use this form pattern when a single input control requires full width.
 
 Form: FmRental (Notes)
 
-[![HowToSelectAFormPattern (20)](./media/howtoselectaformpattern-20.jpg)](./media/howtoselectaformpattern-20.jpg)
+![HowToSelectAFormPattern (20)](/media/howtoselectaformpattern-20.jpg)
 
-**[Horizontal Fields and Button Group](horizontal-fields-buttons-group-subpattern.md)** Use this form pattern when a field has an inline action.
+[Horizontal Fields and Button Group](horizontal-fields-buttons-group-subpattern.md) Use this form pattern when a field has an inline action.
 
 Form: SalesTable (GroupHeaderAddressHeaderOverview)
 
-[![HowToSelectAFormPattern (21)](./media/howtoselectaformpattern-21.jpg)](./media/howtoselectaformpattern-21.jpg)
+![HowToSelectAFormPattern (21)](/media/howtoselectaformpattern-21.jpg)
 
-**[Image Preview](image-preview-subpattern.md)** Use this form pattern for containers that have image controls (and optional related fields).
+[Image Preview](image-preview-subpattern.md) Use this form pattern for containers that have image controls (and optional related fields).
 
 Form: RetailVisualProfile (Login)
 
-[![HowToSelectAFormPattern (22)](./media/howtoselectaformpattern-22.jpg)](./media/howtoselectaformpattern-22.jpg)
+![HowToSelectAFormPattern (22)](/media/howtoselectaformpattern-22.jpg)
 
  
 
-###### **Toolbar and List**
+#### Toolbar and List
 
-**[Toolbar and List](toolbar-list-subpattern.md)** Use this form pattern on containers that have only actions and a grid.
+[Toolbar and List](toolbar-list-subpattern.md) Use this form pattern on containers that have only actions and a grid.
 
 Form: VendTable (TabCommunication)
 
-[![HowToSelectAFormPattern (23)](./media/howtoselectaformpattern-23.jpg)](./media/howtoselectaformpattern-23.jpg)
+![HowToSelectAFormPattern (23)](/media/howtoselectaformpattern-23.jpg)
 
-**[Toolbar and List – Double](toolbar-list-subpattern.md)** Use this Toolbar and List variant when the containers have two grids.
+[Toolbar and List – Double](toolbar-list-subpattern.md) Use this Toolbar and List variant when the containers have two grids.
 
 Form: SalesQuickQuote (TabPageExistingItems)
 
-[![HowToSelectAFormPattern (24)](./media/howtoselectaformpattern-24.jpg)](./media/howtoselectaformpattern-24.jpg)
+![HowToSelectAFormPattern (24)](/media/howtoselectaformpattern-24.jpg)
 
  
 
-###### **Workspace Related**
+#### Workspace Related
 
-**[Section Tiles](section-tiles-subpattern.md)** Use this variant to show a set of tiles/charts in a workspace section. This should be modeled in a tab page on the workspace form. Charts are defined by using Form Part Controls
-
-Form: SalesOrderProcessingWorkspace
-
-[![HowToSelectAFormPattern (25)](./media/howtoselectaformpattern-25.jpg)](./media/howtoselectaformpattern-25.jpg)
-
-**[Section Related Links](section-related-links-subpattern.md)** Use this variant to show a set of hyperlinks in a workspace section. This should be modeled in a tab page on the workspace form.
+[Section Tiles](section-tiles-subpattern.md) Use this variant to show a set of tiles/charts in a workspace section. This should be modeled in a tab page on the workspace form. Charts are defined by using Form Part Controls
 
 Form: SalesOrderProcessingWorkspace
 
-[![HowToSelectAFormPattern (26)](./media/howtoselectaformpattern-26.jpg)](./media/howtoselectaformpattern-26.jpg)
+![HowToSelectAFormPattern (25)](/media/howtoselectaformpattern-25.jpg)
 
-**[Section Tabbed List](section-tabbed-list-subpattern.md)** Use this variant when multiple list variants must be included. Only one is shown at a time.
+[Section Related Links](section-related-links-subpattern.md) Use this variant to show a set of hyperlinks in a workspace section. This should be modeled in a tab page on the workspace form.
 
-**[Section Stacked Chart](section-stacked-chart-subpattern.md)** Use this variant when you must include up to two charts in an Operational Workspace.
+Form: SalesOrderProcessingWorkspace
 
-**[Section PowerBI](section-powerbi-subpattern.md)** Use this variant when a PowerBI section must be included.
+![HowToSelectAFormPattern (26)](/media/howtoselectaformpattern-26.jpg)
 
-**[Workspace Page Filter Group](workspace-filter-group-subpattern.md)** Use this form pattern to add a single filter to your workspace.
+[Section Tabbed List](section-tabbed-list-subpattern.md) Use this variant when multiple list variants must be included. Only one is shown at a time.
 
-**[Filters and Toolbar – Stacked](filters-toolbar-subpattern.md)** Use this subpattern in the Form Part Section List pattern, so that actions appear below filters.
+[Section Stacked Chart](section-stacked-chart-subpattern.md) Use this variant when you must include up to two charts in an Operational Workspace.
 
-**[Filters and Toolbar – Inline](filters-toolbar-subpattern.md)** Use this subpattern in the Form Part Section List pattern, so that filters and actions appear on the same line.
+[Section PowerBI](section-powerbi-subpattern.md) Use this variant when a PowerBI section must be included.
+
+[Workspace Page Filter Group](workspace-filter-group-subpattern.md) Use this form pattern to add a single filter to your workspace.
+
+[Filters and Toolbar – Stacked](filters-toolbar-subpattern.md) Use this subpattern in the Form Part Section List pattern, so that actions appear below filters.
+
+[Filters and Toolbar – Inline](filters-toolbar-subpattern.md) Use this subpattern in the Form Part Section List pattern, so that filters and actions appear on the same line.
 
  
 
-###### **Other**
+#### Other
 
-**[Nested Simple List & Details](nested-simple-list-details-subpattern.md)** Use this form pattern to embed a simpler Simple List & Details form inside a tab or group.
+[Nested Simple List & Details](nested-simple-list-details-subpattern.md) Use this form pattern to embed a simpler Simple List & Details form inside a tab or group.
 
 Form: HcmJob (TaskTabPage)
 
-[![HowToSelectAFormPattern (27)](./media/howtoselectaformpattern-27.jpg)](./media/howtoselectaformpattern-27.jpg)
+![HowToSelectAFormPattern (27)](/media/howtoselectaformpattern-27.jpg)
 
-**[List Panel](list-panel-subpattern.md)** Use this form pattern when users must move items back and forth between two lists.
+[List Panel](list-panel-subpattern.md) Use this form pattern when users must move items back and forth between two lists.
 
 Form: CLIControls\_ListPanel (FormTabPageControl1)
 
-[![HowToSelectAFormPattern (28)](./media/howtoselectaformpattern-28.jpg)](./media/howtoselectaformpattern-28.jpg)
+![HowToSelectAFormPattern (28)](/media/howtoselectaformpattern-28.jpg)
 
-**[Toolbar and Fields](toolbar-fields-subpattern.md)** Use this form pattern on containers that have only actions and fields
+[Toolbar and Fields](toolbar-fields-subpattern.md) Use this form pattern on containers that have only actions and fields
 
 Form: HcmPosition (WorkerAssignmentTabPage)
 
-[![HowToSelectAFormPattern (29)](./media/howtoselectaformpattern-29.jpg)](./media/howtoselectaformpattern-29.jpg)
+![HowToSelectAFormPattern (29)](/media/howtoselectaformpattern-29.jpg)
 
-**[Dimension Entry Control](../financial/dimension-entry-control-subpattern.md)** Use this form pattern on tab pages that have only a Dimension Entry Control.
+[Dimension Entry Control](../financial/dimension-entry-control-subpattern.md) Use this form pattern on tab pages that have only a Dimension Entry Control.
 
 Form: CustTable (TabFinancialDimensions)
 
-[![HowToSelectAFormPattern (30)](./media/howtoselectaformpattern-30.jpg)](./media/howtoselectaformpattern-30.jpg)
+![HowToSelectAFormPattern (30)](/media/howtoselectaformpattern-30.jpg)
 
-**[Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md)** Use this form pattern on containers that include a Dimension Expression Builder control.
+[Dimension Expression Builder](../financial/dimension-expression-builder-subpattern.md) Use this form pattern on containers that include a Dimension Expression Builder control.
 
 
 
