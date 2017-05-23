@@ -40,19 +40,19 @@ This topic describes what is included in the **Practice manager** Microsoft Powe
 
 The **Practice manager** Power BI content was created for practice managers and project managers. It provides key metrics that are related to the projects that the organization is working on. The dashboard gives an overview of the projects and related customers. A report-level filter can be used to report for specific legal entities. This Power BI content pulls data from the project accounting aggregate measurements.
 
-The **Practice manager** Power BI content contains five report pages: one overview page and four pages that provide details of project costs, revenues, earned value management, and hour metrics that are sliced and diced across various dimensions.
+The **Practice manager** content contains five report pages: one overview page and four pages that provide details of project costs, revenues, earned value management, and hour metrics that are sliced and diced across various dimensions.
 
 All the amounts in the content are shown in the system currency. You can set the system currency on the **System parameters** page.
 
 ## Accessing the Power BI content
 
+Embedded Power BI enables individuals in your organization to take advantage of analytics out of the box. They can quickly start analyzing your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those not logging into Dynamics 365 by using of the content packs available on Lifecycle Services. These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
+
 ### Embedded content
 The **Practice manager** Power BI content is displayed on the **Project management** workspace in Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ### Content accessible from Lifecycle Services
-You can find the **Practice manager** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
-
-To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
+You can find the **Practice manager** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
 | Version | File to download from LCS |
 |---------|---------------------------|
