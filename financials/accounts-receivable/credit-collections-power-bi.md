@@ -29,8 +29,6 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 # Credit and collections management Power BI content
 
-[!include[banner](../includes/banner.md)]
-
 >   This topic describes what's included in the Dynamics 365 for Operations -
 >   Credit and collections management content pack for Microsoft Power BI. It
 >   explains how to access the reports included in the content pack and provides
