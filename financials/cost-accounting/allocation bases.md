@@ -2,7 +2,7 @@
 # required metadata
 
 title: Allocation bases
-description: Allocation bases are key components in Cost accounting and mostly used to allocate overhead costs. Every allocation base used is the basis for overhead costs being assigned to departments. 
+description: Allocation bases are key components in Cost accounting and mostly used to allocate overhead costs. 
 author: YuyuScheller
 manager: AnnBe
 ms.date: 05/24/2017
