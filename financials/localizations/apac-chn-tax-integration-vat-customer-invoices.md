@@ -3,12 +3,12 @@
 
 title: (CHN) Chinese tax integration modification for VAT customer invoices FAQ
 description: You can generate value-added tax (VAT) customer invoices, and then export them as text files. You can then import reference numbers for the VAT customer invoices that can be linked to the original invoices.
-author: ShylaThompson
+author: mrolecki
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264894
-ms.assetid: 9d255220-9a19-4436-87a6-f78d92c02062
 ms.search.region: China (PRC)
 # ms.search.industry: 
 ms.author: leguo
@@ -59,29 +58,29 @@ You can only export an invoice one time.
 You can export an invoice and its lines with summarized invoice line amounts including miscellaneous charges if **Add line charges into invoice line** check box is selected on the **Tax integration profile** page.
 
 ## Can I customize or add new information on VAT customer invoices?
-Yes. You can customize VAT customer invoices by adding other fields, and then export the VAT customer invoices as text files.
+Yes. You can customize VAT customer invoices by adding other fields, and then you can export the VAT customer invoices as text files.
 
 To customize VAT customer invoices to include other details, follow these steps:
 
--   On the **Electronic reporting** page, select **Reporting configurations** to open **Configurations**, and select **Golden Tax(CN)** in the tree.
--   Click **Designer**. Add other fields on the tree under **Exported Invoices** &gt; **Invoices**, and save the GER model.
--   Click **Map model to data source** and select **Golden Tax** &gt; **Designer**.
-
-To map the added fields to table, follow these steps:
-1.  Click **Save** and return to **Configurations**.
-2.  Select **GoldenTax(CN)** in the tree.
-3.  Click **Change status** &gt; **Complete** to get a new version of the model.
-4.  Expand **GoldenTax(CN)** in the tree.
-5.  Select **GoldenTax(CN)** format in the tree.
-6.  Click **Rebase**. Confirm that the target version is the new completed version.
-7.  Click **OK** to finish the rebase process.
-8.  Click **Designer** to open format designer.
-9.  In the format designer, add new fields in the tree present in text files.
-10. Select the newly added field, and click the **Mapping** tab in the right pane.
-11. Expand the model in the tree.
-12. Select new added model field and click **Bind**.
-13. Click **Save** to save format mapping.
-14. Click **Change status** &gt; **Complete** to get a new version.
+1. On the **Electronic reporting** page, select **Reporting configurations** to open **Configurations**.
+2. In the tree, select **Golden Tax(CN)**.
+3. Click **Designer**. Add other fields on the tree under **Exported Invoices** &gt; **Invoices**, and save the GER model.
+4. Click **Map model to data source** and select **Golden Tax** &gt; **Designer**.
+5. Click **Save** and return to **Configurations**.
+6. Map the added fields to a table. 
+    1. Select **GoldenTax(CN)** in the tree.
+    2. Click **Change status** &gt; **Complete** to get a new version of the model.
+    3. Expand **GoldenTax(CN)** in the tree.
+    4. Select the **GoldenTax(CN)** format in the tree.
+    5. Click **Rebase**. Confirm that the target version is the new completed version.
+    6. Click **OK** to finish the rebase process.
+    7. Click **Designer** to open the format designer.
+    8. In the format designer, add new fields in the tree that are present in text files.
+    9. Select the newly added field, and click the **Mapping** tab.
+    10. Expand the model in the tree.
+    11. Select the newly added model field and then click **Bind**.
+    12. Click **Save**.
+    13. Click **Change status** &gt; **Complete** to get a new version.
 
 
 
