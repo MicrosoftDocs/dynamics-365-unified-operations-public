@@ -141,7 +141,7 @@ Form: HcmWorker
 
  
 
-#### *Details Transaction
+#### Details Transaction
 
 [Details Transaction](details-transaction-form-pattern.md) Use this form patter to show the details of a complex transaction entity and its lines (for example, an order and its lines).
 
@@ -167,7 +167,7 @@ Form: SalesTablePostings
 
 [![HowToSelectAFormPattern (35)](./media/howtoselectaformpattern-35.jpg)](./media/howtoselectaformpattern-35.jpg)
 
-[Dialog – FastTabs](dialog-form-pattern.md)** Use this Dialog variant when your Dialog content is grouped into FastTabs.
+[Dialog – FastTabs](dialog-form-pattern.md) Use this Dialog variant when your Dialog content is grouped into FastTabs.
 
 None currently in product.
 
