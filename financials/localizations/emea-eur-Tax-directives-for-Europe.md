@@ -31,8 +31,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 EU Directive provides regulations to be followed by all Member States about invoice rules and information to be included in the draw up invoices. 
 EU Directive lists the requirements to the information in invoices drawn up by suppliers to their customers in EU. For instance, an invoice may include a reference that describes the legal grounds for a VAT zero-rating or an exemption. If an invoice adjusts an earlier issued invoice (such as, a credit note), unambiguous reference should be made to the original invoice.
-To Print description of sales tax codes in a sales invoice, free text invoice, or project invoice reports, set up the Tax Directive reference text on the sales tax codes.
-In case of credit notes, the number and date of the original invoice are printed along with the text of reason for correction.
+1. To Print description of sales tax codes in a sales invoice, free text invoice, or project invoice reports, set up the Tax Directive reference text on the sales tax codes.
+2. In case of credit notes, the number and date of the original invoice are printed along with the text of reason for correction.
 
 
 
