@@ -293,11 +293,149 @@ In case the hierarchy allocation basis # of FTE’s in CFO is assigned as the al
 
 ## Formula allocation bases
 
+Formula allocation bases provide the ability to define advanced formulas to achieve the correct allocation basis. You can create them manually.
 
+The following operators can be used to express your formula.    
 
+|    Symbols    |    Text              |
+|---------------|----------------------|
+|    (   )      |    Parentheses       |
+|    <          |    Smaller than      |
+|    >          |    Larger than       |
+|    +          |    Addition          |
+|    -          |    Subtraction       |
+|    *          |    Multiplication    |
 
+IF statements are not supported. You can create statements and validate if they are true or not. 
 
+|    Statement    |    validation    |    Result    |
+|-----------------|------------------|--------------|
+|    a > b        |    True          |    1         |
+|    a > b        |    False         |    0         |
 
+When you create a formula allocation base, you select which statistical dimension and cost element dimension should be the basis for the formula. All allocation bases that come from the selected dimensions above can be used in formula allocation base. 
 
+[!NOTE] Previous defined formula allocation bases can be used in defining a new formula allocation base.
 
+In formula allocation base factors, you create alias and associate it with either an allocation base or constant. The aliases are then used to define the formula.
+
+### Example 1: A simple formula
+Electricity bills often consist of 2 parts. 
+-	Fixed fee for being connected to grid
+-	A cost associcated with consumption per kWh
+
+The predefined dimension member allocation basis Electricity has already been established and holds these values.
+
+**Statistical entries**
+
+|    Cost object    |  Name       |  Accounting date   |     Statistical dimension member        |     Name                 |  Magnitude        |
+|-------------------|------------------------|------------------------------------|-------------------|-------------------------------|----------------|
+|    CC001          |    HR                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    2450,00     |
+|    CC002          |    FI                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    4100,00     |
+|    CC003          |    IT                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    15000,00    |
+
+Now assume the fixed fee needs to be evenly spread over cost objects that consume electricity.
+- One option to allocate the costs could be to create a new predefined allocation base Electricity fixed and then apply a statistical measure of 1,00 for each of the Cost objects that had consumed electricity. 
+- Second option could be to create a formula allocation base Electricity fixed that takes advantage of the predefined allocation base Electricity that is already defined in the system. The benefit by selecting the second option is that only one statistical dimension member (Electricity) requires data loaded into Cost accounting. (Can you show how to do it?) 
+
+**Formula allocation base** 
+
+|    Name                 |    Cost element dimension    |    Statistical dimension    |    Formula    |
+|-------------------------|------------------------------|-----------------------------|---------------|
+|    Electricity fixed    |                              |    Statistical elements     |               |
+
+The user must specify the alias to be used in the formula before the **Formula** field can be populated.
+
+**Formula allocation base factors**
+
+|    Alias    |    Constant     |    Allocation base    |
+|-------------|-----------------|-----------------------|
+|    a        |                 |    Electricity        |
+|    b        |    0,01*        |                       |
+
+[!NOTE] Zero is not supported as cnstant.
+
+**Formula allocation base**
+
+|    Name                 |    Cost element dimension    |    Statistical dimension    |    Formula    |
+|-------------------------|------------------------------|-----------------------------|---------------|
+|    Electricity fixed    |                              |    Statistical elements     |    a > b      |
+
+A Preview function provides the ability to validate the formula allocation base created based on statistical entries in the system.
+
+**Allocation base details**
+
+|    Cost object    |   Name        |      Formula          |   agnitude |
+|-------------------|---------------|-----------------------|------------|
+|    CC001          |    HR         |    2450,00 > 0,01     |    1,00    |
+|    CC002          |    FI         |    4100,00 > 0,01     |    1,00    |
+|    CC003          |    IT         |    15000,00 > 0,01    |    1,00    |
+
+In case the formula allocation base Electricity fixed is assigned as the allocation base in a cost distribution rule, here is an example of the rule.
+
+**Cost object	Magnitude	Allocation factor**
+
+|    Cost object    |   Name          |   Magnitude             |  Allocation factor    |
+|-------------------|-----------------|-------------------------|-----------------------|
+|    CC001          |    HR           |    1,00                 |    (1/3) * Amount     |
+|    CC002          |    FI           |    1,00                 |    (1/3) * Amount     |
+|    CC003          |    IT           |    1,00                 |    (1/3) * Amount     |
+
+### Example 2: An advanced formula
+Now assume the cost of electricity should not just follow actual consumed electricity kWh. Management wants to incorporate sentiments for lowering the usage of electricity. 
+
+|    Rule                 |    Rate     | 
+|-------------------------|-------------|
+|    a <= 10000,00 kWh    |    0,75     |
+|    a > 10000,00 kWh     |    1,15     |
+
+A new formula allocation base Electricity usage is created.
+
+**Formula allocation base**
+
+|    Name                 |    Cost element dimension    |    Statistical dimension    |    Formula    |
+|-------------------------|------------------------------|-----------------------------|---------------|
+|    Electricity usage    |                              |    Statistical elements     |               |
+
+The user must specify the alias to be used in the formula before the **Formula** field can be populated.
+
+**Formula allocation base factors**
+
+|    Alias    |    Constant     |    Allocation base    |
+|-------------|-----------------|-----------------------|
+|    a        |                 |    Electricity        |
+|    b        |    10000,00     |                       |
+|    c        |    0,75         |                       |
+|    d        |    1,15         |                       |
+
+**Formula allocation base**
+
+|    Name                 |    Cost element dimension    |    Statistical dimension    |    Formula                                                       |
+|-------------------------|------------------------------|-----------------------------|------------------------------------------------------------------|
+|    Electricity fixed    |                              |    Statistical elements     |    ((a > b) * ((b * c) + (a - b) * d)) + ((a <=   b) * a * c)    |
+
+A Preview function provides the ability to validate the formula allocation base created based on statistical entries in the system.
+
+**Allocation base details**
+
+|    Cost object    |    Formula    |    Magnitude                                                                                                                                    |                |
+|-------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+|    CC001          |    HR         |    ((2450,00 > 10000,00) * ((10000,00 * 0,75) +   (2450,00 – 10000,00) * 1,15)) + ((2450,00 <= 10000,00) * 2450,00 * 0,75)                      |    1837,50     |
+|    CC002          |    FI         |    ((4100,00 > 10000,00) * ((10000,00 * 0,75) +   (4100,00 – 10000,00) * 1,15)) + ((4100,00 <= 10000,00) * 4100,00 * 0,75)                      |    3075,00     |
+|    CC003          |    IT         |    ((15000,00 > 10000,00) * ((10000,00 * 0,75) +   (15000,00 – 10000,00) * 1,15)) + ((15000,00 <= 10000,00) * 15000,00 * 0,75)                  |    13250,00    |
+
+A closer look at the formula
+CC003	IT	((15000,00 > 10000,00) * ((10000,00 * 0,75) + (15000,00 – 10000,00) * 1,15)) + ((15000,00 <= 10000,00) * 15000,00 * 0,75)              	13250,00
+
+(1 * (7500,00 + 5000,00 * 1,15)) + (0 * 15000,00 * 0,75)            
+
+1 * 7500,00 + 5750,00 + 0
+
+In case the formula allocation base Electricity fixed is assigned as the allocation base in a cost distribution rule, here is an example of the rule.
+
+|    Cost object    |    Magnitude    |    Allocation factor    |                                       |
+|-------------------|-----------------|-------------------------|---------------------------------------|
+|    CC001          |    HR           |    1837,50              |    (1837,50/18162,50) *   Amount      |
+|    CC002          |    FI           |    3075,00              |    (3075,00/18162,50) *   Amount      |
+|    CC003          |    IT           |    13250,00             |    (13250,00/18162,50) *   Amount     |
 
