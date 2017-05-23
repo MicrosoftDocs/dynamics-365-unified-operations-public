@@ -54,11 +54,6 @@ The **Practice manager** Power BI content is displayed on the **Project manageme
 ### Content accessible from Lifecycle Services
 You can find the **Practice manager** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
-| Version | File to download from LCS |
-|---------|---------------------------|
-| Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update | Practice Manager July 2017 update|
-| Dynamics 365 for Operations version 1611| Practice Manager BI Report Dynamics 365 for Operations|
-
 ## Reports that are included in the Power BI content
 
 The following table provides details about the metrics that are found on each report page in the **Practice manager** Power BI content.
