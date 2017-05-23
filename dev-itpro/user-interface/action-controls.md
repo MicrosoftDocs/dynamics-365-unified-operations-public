@@ -47,7 +47,7 @@ Actions are an essential component of any enterprise resource planning (ERP) sys
 -   Buttons directly on the form canvas
 -   Right-click context menus
 -   Keyboard shortcuts
--   The new Action search feature
+-   The new action search feature
 
 Note that, in general, actions that are triggered by right-click context menus or keyboard shortcuts are meant to have a corresponding button available elsewhere in the user interface. Action controls can be triggered by using touch or a mouse click. Many system-provided actions can also be triggered by using the keyboard. In the future, we plan to provide functionality so that developers and end users can also define their own keyboard shortcuts.
 
@@ -83,7 +83,9 @@ Note that the other values of **Button Display** from Microsoft Dynamics AX 2012
 
 ### Button Images
 
-In previous versions, images or icons were often shown on buttons to help users recognize those buttons. However, in Dynamics 365 for Operations, the number of images that are used for this purpose is reduced. Fewer images produce a cleaner, more modern user interface. Additionally, there was a desire to indicate processes and tasks by using more common symbols instead of multiple subtly different images. For more details about how images are used on buttons, see the "Button image guidelines" section of the [General form guidelines](general-form-guidelines.md) article. Two metadata properties are used to define an image for a button: **Image Location** and **Normal Image**. The allowed values for the **Normal Image** property depend on the value of the **Image Location** property. In previous versions, Embedded Resources (kernel resources) were heavily used to specify button images or icons. However, there has been a shift to the web, and this image format option is no longer available. Instead, a new image format (Symbol font) has been added, and the expectation is that all buttons that requires images will use this option (**Image Location** = **Symbol**). The primary reason for this change is that a symbol font is the best performing and most scalable image format. For a list of the full set of symbols that are supported, see [the symbol font](symbol-font.md). The following table shows the recommended and preferred method for assigning images to buttons.
+In previous versions, images or icons were often shown on buttons to help users recognize those buttons. However, in Dynamics 365 for Operations, the number of images that are used for this purpose has been drastically reduced. Fewer images produce a cleaner, more modern user interface. Additionally, there was a desire to indicate processes and tasks by using more common symbols instead of multiple subtly different images. For more details about how images are used on buttons, see the "Button image guidelines" section of the [General form guidelines](general-form-guidelines.md) article. 
+
+Two metadata properties are used to define an image for a button: **Image Location** and **Normal Image**. The allowed values for the **Normal Image** property depend on the value of the **Image Location** property. In previous versions, Embedded Resources (kernel resources) were heavily used to specify button images or icons. However, with the shift to the web, this image format option is no longer available. Instead, a new image format (Symbol font) has been added, and the expectation is that all buttons that require images will use this format (**Image Location** = **Symbol**). The primary reason for this change is that a symbol font is the best performing and most scalable image format. For a list of the full set of symbols that are supported, see [the symbol font](symbol-font.md) article. The following table shows the recommended and preferred method for assigning images to buttons.
 
 | Property       | Value                             |
 |----------------|-----------------------------------|
@@ -92,7 +94,7 @@ In previous versions, images or icons were often shown on buttons to help users 
 
 ### Button Style
 
-In general, the **Button Style** property defines how a button is shown in the user interface. The exceptions are buttons that are modeled inside an Action Pane or Toolbar, because the **Button** **Style** property is disregarded in those cases. Instead, those buttons are rendered by using the style that is specially designed for buttons in those types of containers. For buttons that are modeled directly on the form canvas (outside Action Panes), the following button styles are available.
+In general, the **Button Style** property defines how a button is shown in the user interface. The exceptions are buttons that are modeled inside an Action Pane or Toolbar, because the **Button Style** property is disregarded in those cases. Instead, those buttons are rendered by using the style specially designated for buttons in those types of containers. For buttons that are modeled directly on the form canvas (outside Action Panes), the following button styles are available.
 
 | Style           | Example                                                                                                                                                      | Description                                                                          |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
@@ -101,7 +103,10 @@ In general, the **Button Style** property defines how a button is shown in the u
 | Link            | [![13\_Control](./media/13_control.png)](./media/13_control.png) | A button that has the appearance of a hyperlink                                      |
 
 ## Standard Action Panes
-The standard Action Pane is the primary location for page-level actions. It consists of both system-defined actions (actions that aren't explicitly modeled but are automatically added by the framework) and developer-defined actions (actions that are explicitly modeled in either Action Pane tabs or Button Groups). Developers can promote the most frequently used actions directly to the standard Action Pane by modeling Button Groups directly under the Action Pane. However, Action Pane tabs can still be used to group actions and provide access via a flyout. The following illustration shows a standard Action Pane that includes system-defined buttons, two promoted developer-defined actions, and a set of Action Pane tabs. [![1\_Control](./media/1_control.png)](./media/1_control.png) The following illustration shows the flyout that appears to show additional commands when an Action Pane tab is clicked. [![Control\_2](./media/control_2.png)](./media/control_2.png)
+The standard Action Pane is the primary location for page-level actions. It consists of both system-defined actions (actions that aren't explicitly modeled but are automatically added by the framework) and developer-defined actions (actions that are explicitly modeled in either Action Pane tabs or Button Groups). Developers can promote the most frequently used actions directly to the standard Action Pane by modeling Button Groups directly under the Action Pane. However, Action Pane tabs can still be used to group actions and provide access via a flyout. The following illustration shows a standard Action Pane that includes system-defined buttons, two promoted developer-defined actions, and a set of Action Pane tabs. 
+[![1\_Control](./media/1_control.png)](./media/1_control.png) 
+The following illustration shows the flyout that appears to show additional commands when an Action Pane tab is clicked. 
+[![Control\_2](./media/control_2.png)](./media/control_2.png)
 
 ### System-defined buttons
 
@@ -120,14 +125,44 @@ Several system-defined buttons are added automatically to pages. The following 
 | [![officeButton](./media/officebutton.png)](./media/officebutton.png)   | Open in Microsoft Office | Open or export to Microsoft Excel. More Office integration is planned. |
 | [![popoutButton](./media/popoutbutton.png)](./media/popoutbutton.png)   | Popout                   | Pop out the current form into a new dynalinked window.                 |
 
-## Toolbars
-Toolbars (previously called Action Pane strips) are Actions Panes that have the **Style** property set to **Strip**. They are used for actions that have a specific context and aren't page-level actions. They are primarily used for actions that are specific to a FastTab, tab, or grid. The actions in a Strip-styled Action Pane are shown horizontally in a Toolbar. The following illustration shows a Toolbar that has two buttons for adding and removing lines from this **TransactionDetails** form. [![ActionPaneToolbar](./media/actionpanetoolbar.png)](./media/actionpanetoolbar.png)
+### Pinning the Action Pane
+The standard Action Pane supports the ability for the user to "pin" or "unpin" the Action Pane as desired. 
 
-## Rightclick context menus
-Some actions can also be accessed via shortcut menus (right-click context menus). Depending on the context of the right-click, you see either the browser's default context menu or the Dynamics 365 for Operations context menu, which shows both system-defined actions and developer-defined actions. Because browsers don't allow programmatic access to the system clipboard, the browser's context menu must allow the user to perform **Cut**, **Copy**, and **Paste** commands. Therefore, the browser's context menu appears if you right-click in an editable field, or if text is selected. Additionally, the browser's context menu appears if you right-click an image. Other right-clicks (for example, on a field label or on the value of a read-only control) should trigger the context menu. **Note:** Context menus are intended to provide an alternate route to a command, not the only way to run that command. Therefore, any action that is added to a control's context menu should have a corresponding action that is available outside the context menu. The programming model for modifying context menus  differs from the model in previous releases. In Dynamics AX 2012, the **PopupMenu** class was used. This class relies on Microsoft Windows application programming interfaces (APIs). However, because these APIs aren't available on the web, replacement APIs have been created to provide similar functionality. For more information, see the [Code migration: Context menus](..\migration-upgrade\code-migration-context-menus.md) article.
+When the Action Pane is pinned open, an Action Pane tab is expanded and pushes the form content below it (e.g. it does not overlap anything on the form). In this mode, there is a chevron button in the lower right corner of the expanded Action Pane tab to "unpin" the Action Pane.  
+
+When the Action Pane is not pinned open, clicking on an Action Pane tab opens it as a flyout on top of the form content. The lower right corner of the Action Pane tab flyout has a pushpin button that can be clicked to pin the Action Pane open. 
+
+![Action Pane pinning](./media/actionPanePinning.png)
+
+### Overflow behavior in the Action Pane
+Standard Action Panes include an overflow feature that adds a responsive element to forms and eliminates the need for a horizontal scrollbar in the Action Pane. When the browser width is insufficient to show the entire Action Pane contents, an overflow menu automatically appears in the Action Pane and includes any buttons and Action Pane tabs that did not fit given the browser width.  Items are added one-by-one starting with the rightmost actions from the Action Pane. Note the system actions on the right side of the Action Pane do not participate in the overflow behavior.  
+
+![Action Pane overflow](./media/actionPaneOverflow.png)
+
+## Toolbars
+Toolbars (previously called Action Pane strips) are Actions Panes that have the **Style** property set to **Strip**. They are used for actions that have a specific context and aren't page-level actions. They are primarily used for actions that are specific to a FastTab, tab, or grid. The actions in a Strip-styled Action Pane are shown horizontally in a Toolbar. The following illustration shows a Toolbar that has two buttons for adding and removing lines from this **TransactionDetails** form. 
+[![ActionPaneToolbar](./media/actionpanetoolbar.png)](./media/actionpanetoolbar.png)
+
+### Overflow behavior in Toolbars
+Toolbars have the same overflow feature as standard Action Panes.  See the section above for more details. 
+
+Starting in Platform Update 6, Toolbars have a new capability that allows developers to provide a cleaner action story by designating certain buttons to always render in overflow. This makes it easier to differentiate actions that users will commonly use versus those that are infrequently or rarely used.  This behavior is controlled by a new metadata property called **AlwaysInOverflow** that exists on Button groups inside Toolbars.  
+
+## Right-click context menus
+Some actions can also be accessed via shortcut menus (right-click context menus). Depending on the context of the right-click, you see either the browser's default context menu or the Dynamics 365 for Operations context menu, which shows both system-defined actions and developer-defined actions. 
+
++ If you right-click on an image, in an editable field, or if text is selected, then the browser's context menu will appear.  This is to provide access to browser functionality like **Cut**, **Copy**, and **Paste**.  We cannot embed these actions into the Dynamics 365 for Operations context menus since browsers do not allow programmatic access to the system clipboard for security reasons.  
+
++ Other right-click targets (for example, on a field label or on the value of a read-only control) should trigger the Dynamics 365 for Operations context menu.  
+
+**Note:** Context menus are intended to provide an alternate route to a command, and should not be only way to execute a command. Therefore, any action that is added to a control's context menu should also have a corresponding action that is available outside the context menu. 
+
+The programming model for modifying context menus differs from the model used in previous releases. In Dynamics AX 2012, the **PopupMenu** class was used. This class relies on Microsoft Windows application programming interfaces (APIs). However, because these APIs aren't available on the web, replacement APIs have been created to provide similar functionality. For more information, see the [Code migration: Context menus](..\migration-upgrade\code-migration-context-menus.md) article.
 
 ## Keyboard shortcuts
-Keyboard shortcuts are another mechanism for triggering some actions. Many actions that had shortcuts in Dynamics AX 2012 continue to have shortcuts. However, because of browser restrictions, the specific key combination that is used to trigger an action might differ. The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see the [Shortcut keys](/dynamics365/operations//get-started/shortcut-keys) article. In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
+Keyboard shortcuts are another mechanism for triggering some actions. Many actions that had shortcuts in Dynamics AX 2012 continue to have shortcuts in Operations. However, because of browser restrictions, the key combination that is used to trigger a particular action might differ. 
+
+The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see the [Shortcut keys](/dynamics365/operations//get-started/shortcut-keys) article. In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
 
 | Key combination     | Action              | Comments                                                                                                                                                                                                                           |
 |---------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -137,7 +172,7 @@ Keyboard shortcuts are another mechanism for triggering some actions. Many act
 | F2                  | Toggle edit mode    | Switch the form between **View** mode and **Edit **mode.                                                                                                                                                                           |
 
 ## Action search
-Dynamics AX 2012 included a Key Tips feature that let users run any command in an action pane by pressing Alt and then a series of letters. The action search feature is now implemented as the replacement for the old Key Tips feature. Action search can be accessed through a search field that is located in the standard action pane at the top of the form. Currently, it's represented by a magnifying glass icon in the action pane (note this is different from the navigation search feature in the navigation bar).  In the action search field, you can type the beginning of the name of the action that you want to perform in the field (typically, only two to four characters are required). This search mechanism then finds all buttons in visible action panes on the form that match the search string. You can then use click the button in the result list to run the command. For productivity, focus then returns to your last position in the form after the button has been triggered. You can also initiate action search by pressing Ctrl+/ or Alt+Q. Press the keyboard shortcut again will return focus to your last position in the form.
+Dynamics AX 2012 included a Key Tips feature that let users run any command in an action pane by pressing Alt and then a series of letters. The action search feature has been implemented as the replacement for the old Key Tips functionality. Action search can be accessed through a search field that is located in the standard action pane at the top of the form. Currently, it's represented by a magnifying glass icon in the action pane (note this is different from the navigation search feature in the navigation bar).  In the action search field, you can type the beginning of the name of the action that you want to perform in the field (typically, only two to four characters are required). This search mechanism then finds all buttons in visible action panes on the form that match the search string. You can then use click the button in the result list to run the command. For productivity, focus then returns to your last position in the form after the button has been triggered. You can also initiate action search by pressing Ctrl+' or Alt+Q. Pressing the keyboard shortcut again will return focus to your last position in the form.
 
 
 
