@@ -53,15 +53,15 @@ Before you implement the Purchase order approval mobile workspace, make sure tha
 
 ## Download and install the Dynamics 365 for Operations mobile app
 Download and install the Dynamics 365 for Financials and Operations mobile app from your mobile app store.
- - For Android
- - For iPhone
+ - For Android: https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.
+ - For iPhone: https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8
 
 ## Sign in to the Dynamics 365 for Financials and Operations mobile app
 
 1. Start the app on your mobile device.
 2. Enter your Dynamics 365 for Operations URL.
 3. If this is the first time that you sign in, you’re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
-4. Click ::: and select the company code.
+4. Select the company code.
 When you have signed in, you'll see the available workspaces for your company. Note that if your system administrator subsequently publishes a new workspace, you can pull to refresh the list of mobile workspaces.
 
 [![po-workspaces](./media/po-workspaces.png)(./media/po-workspaces.png
@@ -70,6 +70,8 @@ When you have signed in, you'll see the available workspaces for your company. N
 1.	On your mobile device, select the **Purchase order approval** workspace.
 2.	Select **Orders assigned to me** to show all the purchase orders where you have been requested to take an action in the purchase order approval workflow.
 3. Select an order. On **Order details** you will see the order header information and lines. You can also find guidelines from the workflow task.
+4.	Select **Accounting distributions** to see **Header accounting distributions**.
+5.	Return to **Order details** and select a line. From the order line details, you can also explore the line-specific accounting distributions.
 
 ## Complete an action on the purchase order
 When you have viewed the purchase order that is assigned to you and read the workflow instructions, you should be ready to complete an action.
