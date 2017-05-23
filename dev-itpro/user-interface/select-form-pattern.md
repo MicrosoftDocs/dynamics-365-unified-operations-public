@@ -177,7 +177,7 @@ None currently in product.
 
 Form: CaseDetailCreate
 
-![HowToSelectAFormPattern (37)](/media/howtoselectaformpattern-37.jpg)
+![HowToSelectAFormPattern (37)](./media/howtoselectaformpattern-37.jpg)
 
 [Dialog – Double Tabs](dialog-form-pattern.md) Use this Dialog variant when your Dialog content has two tabs that are stacked on top of each other.
 
@@ -233,7 +233,7 @@ Form: SysLanguageLookup
 
 Form: HcmWorkerLookup
 
-![HowToSelectAFormPattern (44)](/media/howtoselectaformpattern-44.jpg)
+![HowToSelectAFormPattern (44)](./media/howtoselectaformpattern-44.jpg)
 
 [Lookup w/Tabs](lookup-form-pattern.md) Use this Lookup variant when there are multiple views of a lookup (for example, a grid view/tree view or multiple filtered lists).
 
@@ -269,20 +269,19 @@ Form: AgreementLine
 
 Form: PlanActivityServiceDetails
 
-![HowToSelectAFormPattern (3)](/media/howtoselectaformpattern-3.jpg)
+![HowToSelectAFormPattern (3)](./media/howtoselectaformpattern-3.jpg)
 
 [Simple Details w/Standard Tabs](simple-details-form-pattern.md) Use this Simple Details variant when the record’s information is organized into regular tabs.
 
 Form: HcmEmploymentDateManager
 
-![HowToSelectAFormPattern (4)](/media/howtoselectaformpattern-4.jpg)
+![HowToSelectAFormPattern (4)](./media/howtoselectaformpattern-4.jpg)
 
 [Simple Details w/Panorama](simple-details-form-pattern.md) Use this Simple Details variant to display a record’s information in a horizontally scrolling panorama.
 
 Form: PdsMRCEventTracker
 
-![HowToSelectAFormPattern (5)](/media/howtoselectaformpattern-5.jpg)
-
+![HowToSelectAFormPattern (5)](./media/howtoselectaformpattern-5.jpg)
  
 
 #### Simple List
@@ -291,7 +290,7 @@ Form: PdsMRCEventTracker
 
 Form: CustGroup
 
-![HowToSelectAFormPattern (6)](/media/howtoselectaformpattern-6.jpg)
+![HowToSelectAFormPattern (6)](./media/howtoselectaformpattern-6.jpg)
 
  
 
@@ -301,19 +300,19 @@ Form: CustGroup
 
 Form: PaymTerm
 
-![HowToSelectAFormPattern (7)](/media/howtoselectaformpattern-7.jpg)
+![HowToSelectAFormPattern (7)](./media/howtoselectaformpattern-7.jpg)
 
 [Simple List & Details – Tabular Grid](simple-list-details-form-pattern.md) Use this Simple List & Details variant if you require more than three fields in the list part of the form.
 
 Form: ExchangeRate
 
-![HowToSelectAFormPattern (8)](/media/howtoselectaformpattern-8.jpg)
+![HowToSelectAFormPattern (8)](./media/howtoselectaformpattern-8.jpg)
 
 [Simple List & Details – Tree](simple-list-details-form-pattern.md) Use this Simple List & Details variant if the list part of the form is a tree.
 
 Form: FiscalCalendars
 
-![HowToSelectAFormPattern (9)](/media/howtoselectaformpattern-9.jpg)
+![HowToSelectAFormPattern (9)](./media/howtoselectaformpattern-9.jpg)
 
  
 
@@ -323,7 +322,7 @@ Form: FiscalCalendars
 
 Form: CustParameters
 
-![HowToSelectAFormPattern (10)](/media/howtoselectaformpattern-10.jpg)
+![HowToSelectAFormPattern (10)](./media/howtoselectaformpattern-10.jpg)
 
  
 
@@ -333,13 +332,13 @@ Form: CustParameters
 
 Form: LedgerJournalTable
 
-![HowToSelectAFormPattern (11)](/media/howtoselectaformpattern-11.jpg)
+![HowToSelectAFormPattern (11)](./media/howtoselectaformpattern-11.jpg)
 
 [Task Double](task-double-form-pattern.md) This legacy form pattern is used to display transaction entities. It should be used only for migration, not for new forms.
 
 Form: HRMAbsenceTableHistory
 
-![HowToSelectAFormPattern (12)](/media/howtoselectaformpattern-12.jpg)
+![HowToSelectAFormPattern (12)](./media/howtoselectaformpattern-12.jpg)
 
  
 
@@ -349,7 +348,7 @@ Form: HRMAbsenceTableHistory
 
 Form: WrkCtrBulkResReqEditWizard
 
-![HowToSelectAFormPattern (13)](/media/howtoselectaformpattern-13.jpg)
+![HowToSelectAFormPattern (13)](./media/howtoselectaformpattern-13.jpg)
 
  
 
@@ -359,7 +358,7 @@ Form: WrkCtrBulkResReqEditWizard
 
 Form: FmClerkWorkspace
 
-![HowToSelectAFormPattern (1)](/media/howtoselectaformpattern-1.png)
+![HowToSelectAFormPattern (1)](./media/howtoselectaformpattern-1.png)
 
 Workspace: This is the old Workspace pattern. It will be removed soon, so don't use it. It is included here only for completeness.
 
