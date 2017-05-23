@@ -246,6 +246,50 @@ In case the predefined dimension member allocation basis Electricity is assigned
 
 ## Hierarchy allocation bases
 
+Cost accounts can create the hierarchy allocation bases manually by adding a cost object dimension hierarchy node to an existing allocation base. The purpose is to let you limit the range of the original predefined dimension member allocation basis. One predefined dimension member allocation basis can be used to create several hierarchy allocation bases. Maintenance of ranges can be done in the cost object dimension hierarchy that is associated with the hierarchy allocation bases.
+
+### Example: Hierarchy allocation bases according to full time employees in the organization
+A cost object dimension hierarchy that describes a simplified organization can be created as follows. 
+
+|    Hierarchy name    |    Node Level 0     |    Node Level 1    |    Node Level 2    |    Dimension members    |
+|----------------------|---------------------|--------------------|--------------------|-------------------------|
+|    Organization      |    CEO              |    CFO             |    FICO            |    CC001                |
+|    Organization      |    CEO              |    CFO             |    HR              |    CC002                |
+|    Organization      |    CEO              |    CIO             |    IT              |    CC003                |
+
+The predefined dimension member allocation basis FTE’s that has been created in the previous section holds the following entries.
+
+**Statistical entries**
+
+|    Cost object    | Name       |              Accounting date   |    Statistical dimension member          |        Name       |         Magnitude    |
+|-------------------|------------------------|------------------------------------|-----------------|---------------------------|------------|
+|    CC001          |    HR                  |    31-01-2017                      |    FTE’s        |    Full time employees    |    1,00    |
+|    CC002          |    FI                  |    31-01-2017                      |    FTE’s        |    Full time employees    |    2,00    |
+|    CC003          |    IT                  |    31-01-2017                      |    FTE’s        |    Full time employees    |    2,00    |
+
+A cost must be distributed between cost centers reporting to the CFO in the organization. It is acknowledged that the correct allocation ratio is the number of FTE’s by cost centers.   
+
+**Hierarchy allocation bases**
+
+|    Name                 |    Allocation base    |    Cost object dimension hierarchy    |    Cost object dimension hierarchy node    |
+|-------------------------|-----------------------|---------------------------------------|--------------------------------------------|
+|    # of FTE’s in CFO    |    FTE’s              |    Organization                       |    CFO                                     |
+
+A preview function provides the ability to validate the hierarchy allocation basis created based on statistical entries in the system.
+
+**Allocation base details**
+
+|    Cost object    |    Name         |  Magnitude |
+|-------------------|-----------------|------------|
+|    CC001          |    HR           |    1,00    |
+|    CC002          |    FI     |    2,00    |
+
+In case the hierarchy allocation basis # of FTE’s in CFO is assigned as the allocation base in a cost distribution rule, here is an example of the rule. 
+
+|    Cost object    |   Name          |    Magnitude           |           Allocation factor            |
+|-------------------|-----------------|-------------------------|-----------------------|
+|    CC001          |    HR           |    1,00                 |    (1/3) * Amount     |
+|    CC002          |    FI           |    2,00                 |    (2/3) * Amount     |
 
 ## Formula allocation bases
 
@@ -257,9 +301,3 @@ In case the predefined dimension member allocation basis Electricity is assigned
 
 
 
-Cost objects are known as *cost object dimensions*. After you’ve decided which entity the cost object dimension should refer to, you must specify the individual dimension values or import them into Cost accounting from other source systems. These individual dimension values are known as *cost object dimension members*. For example, you want to use the financial dimension that is named Cost center as the cost object dimension. To see how costs flow to the individual cost centers, you must import the cost object dimension members. In this case, the cost object dimension members are the actual cost centers, such as Sales, Production, Administration, and Geographic locations. The following screenshot shows an example of Cost Centers as the cost object dimension with its actual cost centers as cost object dimension members. 
-
-[![cost-object-dimensions](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
-
-## Import cost object dimension members through data connectors
-To make the import of cost object dimension members easier, you use data connectors to retrieve the values from the entities that you want to use as cost object dimensions. You can use either the pre-built data connectors or custom data connectors that you build.
