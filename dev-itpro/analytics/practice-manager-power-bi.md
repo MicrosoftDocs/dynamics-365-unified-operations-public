@@ -46,7 +46,7 @@ All the amounts in the content are shown in the system currency. You can set the
 
 ## Accessing the Power BI content
 
-### Content that is embedded in the product
+### Embedded content
 The **Practice manager** Power BI content is displayed on the **Project management** workspace in Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ### Content accessible from Lifecycle Services
