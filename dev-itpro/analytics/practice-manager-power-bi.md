@@ -54,6 +54,10 @@ You can find the **Practice manager** Power BI content in the Shared assets libr
 
 To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
+| Version | File to download from LCS |
+| Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update | Practice Manager July 2017|
+| Dynamics 365 for Operations version 1611| Practice Manager BI Report Dynamics 365 for Operations|
+
 - For Dynamics 365 for Finance and Operations, Enterprise edition: Download the **Practice Manager July 2017** file.
 - For Dynamics 365 for Operations: Download the **Practice Manager BI Report Dynamics 365 for Operations** file.
 
