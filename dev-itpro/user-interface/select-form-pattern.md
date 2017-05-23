@@ -44,7 +44,7 @@ The selection of a form pattern is an important step in the process of migrating
 
 -   Investigate the form’s metadata in the form designer. Pay close attention to the following details:
     -   Form name
-    -   **Form.Design.Style**
+    -   Form.Design.Style
     -   Control names
     -   The way that the controls are organized
     -   The number and names of the data sources
