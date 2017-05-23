@@ -38,7 +38,7 @@ This topic describes what is included in the **Practice manager** Microsoft Powe
 
 ## Overview
 
-The **Practice manager** Power BI content was created for practice managers and project managers. It provides key metrics that are related to the projects that the organization is working on. The dashboard gives an overview of the projects and related customers. A report-level filter can be used to report for specific legal entities. This Power BI content pulls data from the project accounting aggregate measurements for Microsoft Dynamics 365 for Operations.
+The **Practice manager** Power BI content was created for practice managers and project managers. It provides key metrics that are related to the projects that the organization is working on. The dashboard gives an overview of the projects and related customers. A report-level filter can be used to report for specific legal entities. This Power BI content pulls data from the project accounting aggregate measurements.
 
 The **Practice manager** Power BI content contains five report pages: one overview page and four pages that provide details of project costs, revenues, earned value management, and hour metrics that are sliced and diced across various dimensions.
 
@@ -46,7 +46,7 @@ All the amounts in the content are shown in the system currency. You can set the
 
 ## Accessing the Power BI content
 
-You can find the **Practice manager** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+You can find the **Practice manager** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
 To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
@@ -67,7 +67,7 @@ in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.co
 
 ## Understanding the data model and entities
 
-Dynamics 365 for Operations data is used to fill the report pages in the **Practice manager** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
+The follwoing data is used to populate the report pages in the **Practice manager** content. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 The following sections explains the aggregate measurements that are used in each entity.
 
@@ -129,11 +129,4 @@ The following sections explains the aggregate measurements that are used in each
 |------------------------------------------|--------------------------------------|----------------------------------------|
 | CompletedActivityPlannedCost  |  Sum(TotalCostPrice)  |   Total cost price in estimates for all project transaction types with completed tasks|
 
-## Additional resources
 
-Here are some helpful links that are related to entities and building Power BI content:
-
-- [Data entities](/dynamics365/operations/dev-itpro/data-entities/data-entities)
-- [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Configure Power BI integration for workspaces](configure-power-bi-integration.md)
