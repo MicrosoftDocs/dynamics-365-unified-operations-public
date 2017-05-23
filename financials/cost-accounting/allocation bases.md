@@ -41,7 +41,7 @@ Here are a few examples of allocation bases:
 -	A janitorial department allocates its expenses based on the square footage occupied by each department.
 -	A human resources department allocate its expenses based on the number of employees working in each department.
 
-# Typical allocation process 
+## Typical allocation process 
 The typical allocation process starts xxx  
 
 There are three types of allocation bases in Cost accounting:
@@ -57,7 +57,7 @@ The predefined dimension member allocation bases are created automatically by th
 
 [!NOTE] The predefined dimension member allocation bases that are based on a cost element dimension member only consider the values from the data source provider, for example, general ledger or budget.
 
-### Example: Use a cost element dimension member as the allocation base
+### Example 1: Use a cost element dimension member as the allocation base
 This example shows how to create a cost allocation rule to allocate the cost element 10002 Employee Insurance to the balance recorded on the cost element 10001 Salaries. The allocation rule is defined based on the ratio of each department salaries to total salaries. (Review needed!)
 
 In the general ledger, the chart of account is defined as follows.
@@ -118,6 +118,7 @@ In this simplified example, a cost allocation rule is created to allocate the co
 |    CC099                                   |    10002                                    |     Unclassified    |    10001              |   |
 
 **Perform overhead calculation** 
+
 After the cost element 10001 Salaries is applied as the allocation base, here is the result of the overhead calculation. 
 
 |    Cost object    |    Magnitude    |    Allocation factor    |    Amount                     |              |
@@ -150,9 +151,98 @@ After the cost element 10001 Salaries is applied as the allocation base, here is
 |    CC002          |    FI                      |    10002            |    Employee insurance    |    Unclassified       |    500,00       |    31-01-2017    |
 |    CC099          |    IT                      |    10002            |    Employee insurance    |    Unclassified       |    300,00       |    31-01-2017    |
 
+### Example 2: Use a statistical dimension member as the allocation base 
+
+Statistical dimension members can be used as allocation bases in defining policies or for reporting non-monetary consumption by cost objects. You can create statistical dimension members manually or import them from a file via **Data management import/export tool**.
+
+**Statistical dimension members**
+
+|    Statistical dimension name    |    Statistical element    |  Statistical element name     |  Unit     |
+|----------------------------------|---------------------------|-------------------------------|-----------|
+|    Statistical elements          |    FTE                    |    Full time employees        |    Ea     |
+|    Statistical elements          |    Electricity            |    Electricity consumption    |    kWh    |
+
+When a statistical dimension members is saved, a corresponding record is created in the predefined dimension member allocation bases.
+
+**Predefined dimension member allocation bases**
+
+|    Name           |    Description                |    Statistical element dimension    |
+|-------------------|-------------------------------|-------------------------------------|
+|    FTE            |    Full time employees        |    Statistical elements             |
+|    Electricity    |    Electricity consumption    |    Statistical elements             |
+
+Statistical measures can come from different sources. 
+-	Electricity consumption could be measured by meters installed in different areas of the company. 
+- Tables hold statitical measures. For example, the table **HcmEmployment** holds a list of all employees and which cost centers they work for.  
+
+|    Name        |    Cost center     |    Worker Type    |                |
+|----------------|--------------------|-------------------|----------------|
+|    Employee A      |    CC001           |    HR             |    Employee    |
+|    Employee B          |    CC002           |    FI             |    Employee    |
+|    Employee C    |    CC002           |    FI             |    Employee    |
+|    Employee D      |    CC003           |    IT             |    Employee    |
+|    Employee F     |    CC003           |    IT             |    Employee    |
+
+[!NOTE] All the tables that contain financial dimensions can be used as sources for statistical measures.
+
+Cost accounting supports a collection of statistical measures by using the following data connections. 
+-	Data management import/export tool
+-	Statistical measures
+
+To pull statistical measures from the system, a statistical measure provider template is required. Learn more about Statistical measure provider template. 
+
+**Statistical measure provider templates**
+
+|    Name     |    Function    |    Source table     |    Sum field    |    Date field    |
+|-------------|----------------|---------------------|-----------------|------------------|
+|    FTE’s    |    Count       |    HcmEmployment    |    NA           |    NA            |
+
+After the statistical measure source data processing is completed, the following entries will be created in Cost accounting.
+
+**Statistical entries**
+
+|    Cost object    | Cost object name      | Accounting date  | Statistical dimension member | Name          | Magnitude  |
+|-------------------|-----------|------------------|------------------------------|---------------------------|------------|
+|    CC001          |    HR     |    31-01-2017    |    FTE’s                     |    Full time employees    |    1,00    |
+|    CC002          |    FI     |    31-01-2017    |    FTE’s                     |    Full time employees    |    2,00    |
+|    CC003          |    IT     |    31-01-2017    |    FTE’s                     |    Full time employees    |    2,00    |
+
+In case the predefined dimension member allocation basis FTE’s is assigned as the allocation base in a cost distribution rule, here is an example of the rule.
+
+|    Cost object    |       Name      |  Magnitude              |Allocation factor       |
+|-------------------|-----------------|-------------------------|------------------------|
+|    CC001          |    HR           |    1,00                 |    (1/5) * Amount      |
+|    CC002          |    FI           |    2,00                 |    (2/5) * Amount      |
+|    CC003          |    IT           |    2,00                 |    (2/5) * Amount      |
+
+In Excel, the consumption of electricity is recorded as follows. You can use the data entity called **Imported statistical measures** to import statistical measures into Cost accounting. You can also use the **Data management import/export tool** to do the import. 
+
+|    Accounting date    |    Dimension member       |    Magnitude    |    Source identifier    |
+|-----------------------|---------------------------|-----------------|-------------------------|
+|    31-01-2017         |    CC001                  |    2450,00      |    Electricity          |
+|    31-01-2017         |    CC002                  |    4100,00      |    Electricity          |
+|    31-01-2017         |    CC003                  |    15000,00     |    Electricity          |
 
 
+Learn and read more about. Importing cost accounting data using Data management import/export tool
 
+After the statistical measure source data processing is completed, the following entries will be created in Cost accounting.
+
+**Statistical entries**
+
+|    Cost object    |    Accounting date     |    Statistical dimension member    |    Magnitude      |                               |                |
+|-------------------|------------------------|------------------------------------|-------------------|-------------------------------|----------------|
+|    CC001          |    HR                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    2450,00     |
+|    CC002          |    FI                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    4100,00     |
+|    CC003          |    IT                  |    31-01-2017                      |    Electricity    |    Electricity consumption    |    15000,00    |
+
+In case the predefined dimension member allocation basis Electricity is assigned as the allocation base in a cost distribution rule, here is an example of the rule.
+
+|    Cost object    |    Name         | Magnitude               |    Allocation factor            |
+|-------------------|-----------------|-------------------------|---------------------------------|
+|    CC001          |    HR           |    2450,00              |    (2450/21550) *   Amount      |
+|    CC002          |    FI           |    4100,00              |    (4100/21550) *   Amount      |
+|    CC003          |    IT           |    15000,00             |    (15000/21550) * Amount       |
 
 ## Hierarchy allocation bases
 
