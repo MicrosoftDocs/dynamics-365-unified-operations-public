@@ -5,7 +5,7 @@ title: Known issues
 description: This topic explains how to view the known issues that you might experience when you use Dynamics 365 for Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations

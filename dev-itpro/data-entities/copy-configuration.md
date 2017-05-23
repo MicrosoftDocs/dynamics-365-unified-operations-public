@@ -5,7 +5,7 @@ title: Copy configuration data from one company to another
 description: This topic describes how to use a configuration data project and configuration data templates to move company configuration data between instances of Dynamics 365 for Finance and Operations.
 author: mfalkner
 manager: AnnBe
-ms.date: 06/15/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
