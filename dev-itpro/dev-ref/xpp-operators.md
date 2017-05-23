@@ -113,7 +113,7 @@ You use arithmetic operators to perform numeric calculations. Most of the operat
 | ~        | The **not** operator, or unary operator, performs a binary not operation.                                                                                                                   |
 | &        | The **binary AND** operator performs a binary and operation on *expression1* and *expression2*.                                                                                             |
 | ^        | The **binary XOR** operator performs a binary XOR-operation on *expression1* and *expression2*.                                                                                             |
-| |        | The **binary OR** operator performs a binary or operation on *expression1* and *expression2*.                                                                                               |
+| &#124;        | The **binary OR** operator performs a binary or operation on *expression1* and *expression2*.                                                                                               |
 | +        | The **plus** operator adds *expression1* to *expression2*.                                                                                                                                  |
 | -        | The **minus** operator subtracts *expression2* from *expression1*.                                                                                                                          |
 | ?        | The **ternary** operator takes three expressions: *expression1* ? *expression2* : *expression3*. If *expression1* is true, *expression2* is returned. Otherwise, *expression3* is returned. |

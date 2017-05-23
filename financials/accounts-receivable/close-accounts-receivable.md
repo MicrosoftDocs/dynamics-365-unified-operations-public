@@ -52,12 +52,7 @@ Close periods in the general ledger
 |Confirm sales order                   | Update sales orders.                                                                       |
 |Foreign currency revaluation          | Generate transactions that update the value of open customer transactions in foreign currencies.                                                                                                                         |
 | Journal                              | Post invoices, payments, and promissory notes.                                             |
-| Journal voucher                      | -   **Payment journal** – Generate, process, and post payments.
-                                         -   **Draw bill of exchange journal** – Post bills of exchange.
-                                         -   **Protest bill of exchange journal** – Post protested bills of exchange.
-                                         -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
-                                         -   **Remittance journal** – Post remittances.
-                                         -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
+| Journal voucher                      |<ul><li>**Payment journal** – Generate, process, and post payments.</li><li>**Draw bill of exchange journal** – Post bills of exchange.</li><li>**Protest bill of exchange journal** – Post protested bills of exchange.</li><li>**Redraw bill of exchange journal** – Post redrawn bills of exchange.</li><li>**Remittance journal** – Post remittances.</li><li>**Settle bill of exchange journal** – Post settled bills of exchange</li></ul>                   |
 | Packing slip posting                 | Update packing slips for sales orders.                                                     |
 | Post free text invoice               | Post free text invoices.                                                                   |
 | Posting invoice                      | Post invoices for sales orders.                                                            |

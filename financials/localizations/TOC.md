@@ -67,6 +67,7 @@
 ### [CODA bank statement](emea-bel-coda-bank-statement-import.md)
 ### [Intervat tax declaration](emea-bel-intervat-tax-declaration.md)
 ### [PRODCOM report setup](emea-bel-prodcom-report.md)
+### [Reconciliation reports](emea-bel-reconciliation-reports.md)
 
 ## The Czech Republic
 ### [Cash discount on credit note](emea-cze-credit-note-cash-discount.md)

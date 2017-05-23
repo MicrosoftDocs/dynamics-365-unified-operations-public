@@ -15,6 +15,7 @@
 ## [Recruiting](recruiting-analysis-power-bi-content-pack.md)
 ## [Retail channel performance ](retail-channel-performance-dashboard-power-bi-data.md)
 ## [Sales and profitability performance](sales-profitability-performance-content-pack.md)
+## [Warehouse performance](warehouse-power-bi-content.md)
 ## [Workforce analysis](workforce-analysis-power-bi-content-pack.md)
 
 # Document reporting and printing

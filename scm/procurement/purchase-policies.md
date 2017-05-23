@@ -64,6 +64,7 @@ When an employee in legal entity 2222 creates a purchase requisition, the policy
 
 In the previous example, all purchasing rules were defined in a single organization hierarchy, the Companies organization hierarchy. However, a complex organization might define policies for multiple organization hierarchies.  
 
+
 Contoso is a large company that requires complex purchasing rules to control the requisition process. Contoso has defined rules for two different organization hierarchies: Department and Global purchasing control.  
 
 Policy 123 is defined for the Department organization hierarchy for the Sales UK – Sales department. In policy 123, the purchase requisition control rule specifies that restrictions must be enforced for minimum order quantities. In this rule, the **Enforce minimum order quantity restrictions** option is selected.  
@@ -98,6 +99,9 @@ The category policy rule defines how users can select vendors for each category.
 ### Re-approval rule for purchase orders
 
 The re-approval rule is an optional rule that defines the criteria for requiring re-approval when a purchase order is changed. The selected fields are evaluated in the purchase order workflow when the "Requires purchase order re-approval" condition is set up in the workflow.
+
+> [!NOTE]
+> Accounting distribution will always be reset when an approved purchase order with change management enabled is changed. So you should be aware that if you want to avoid a re-approval of a purchase order when certain fields are changed, the field Accounting distribution.changed should NOT be included as a selected field for re-approval. 
 
 ### Purchase requisition RFQ rule
 

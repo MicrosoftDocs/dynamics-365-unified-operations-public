@@ -4,6 +4,7 @@
 ## Create demand forecast
 ### [Demand forecast overview](master-planning/introduction-demand-forecasting.md)
 ### [Set up a demand forecast](master-planning/demand-forecasting-setup.md)
+### [Import historical data for demand forecasts](master-planning/import-historical-data.md)
 ### [Generate a statistical baseline forecast](master-planning/generate-statistical-baseline-forecast.md)
 ### [Make manual adjustment to the baseline forecast](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Authorize an adjusted forecast](master-planning/authorize-adjusted-forecast.md)
