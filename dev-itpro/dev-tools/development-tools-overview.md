@@ -56,7 +56,7 @@ The Visual Studio tools contain designers for each kind of element in the appli
 ## Code editor
 The X++ code is written in the code editor for Visual Studio. The standard features that a developer expects from the code editor are supported. For example, sections of code are collapsible. IntelliSense provides guidance as you write or modify code. For more details, see [Code editor](code-editor.md).
 
-[Code editor](media/4_devotoolsconcept.png)
+![Code editor](media/4_devotoolsconcept.png)
 
 ## Dynamics 365 menu
 The tools add the **Dynamics 365** menu to Visual Studio. Several tools that you will use during the development process are found here. For example, the tools for managing models are accessed from the menu.
