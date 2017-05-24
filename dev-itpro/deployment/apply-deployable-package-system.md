@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: Lifecycle Services
+ms.service: 
 ms.technology: 
 
 # optional metadata
