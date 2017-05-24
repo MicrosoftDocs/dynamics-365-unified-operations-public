@@ -29,13 +29,13 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 # Credit and collections management Power BI content
 
-This topic describes what's included in the **Credit and collections management** Power BI content. It explains how to access the Power BI reports and provides information about the data model and entities that are used to build the content.
+This topic describes what's included in the **Credit and collections management** Power BI content. It explains how to access the Power BI reports and provides information about the data model and entities that were used to build the content.
   
 ## Overview
 
-This content pack was crated for credit and collections managers and collections clerks to provide them with key credit and collections metrics like days sales outstanding, balance overdue, credit exposure, customers over credit limit, etc. It uses transactional data from Dynamics 365 for Operations, and provides aggregate view of credit and collections across all companies and also break down per company, per customer group and per customer. 
+This Power BI content  was crated for credit and collections managers and collections clerks to provide them with key credit and collections metrics such as days sales outstanding, balance overdue, credit exposure, and customers over credit limit. It uses transactional data and provides aggregate views of credit and collections across all companies, as well as the break down per company, per customer group, and per customer. 
 
-The content pack contains 10 report pages consisting of two overview pages, one for credit overview and other for collections overview and 8 details pages providing details of credit and collections metrics sliced and diced across different dimensions.
+This Power BI content consists of ten report pages, including two overview pages, one page for credit overview and other for collections overview and 8 details pages providing details of credit and collections metrics sliced and diced across different dimensions.
 
 All the amounts in the content pack are shown in the system currency. You can set the system currency on the Systems parameters form.
 
