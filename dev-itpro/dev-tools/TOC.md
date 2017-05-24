@@ -8,7 +8,8 @@
 ## [Fleet Management sample application](fleet-management-sample.md)
 ## [Fleet Management sample application overview](introduction-fleet-management-sample.md)
 # Visual Studio tools
-## [Development tools for Dynamics 365 for Operations](introduction-visual-studio.md)
+## [Development tools overview](development-tools-overview.md)
+## [Development tools tutorial](introduction-visual-studio.md)
 ## [Application Explorer](application-explorer.md)
 ## [Build and debug a project](build-debug-project.md)
 ## [Build operations](build-operations.md)
