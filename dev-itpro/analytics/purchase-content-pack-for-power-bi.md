@@ -53,9 +53,9 @@ Embedded Power BI allows individuals in your organization to take advantage of a
 If you're using Dynamics 365 for Finance and Operations, Enterprise edition, the **Purchase spend analysis** Power BI content is displayed in the **NAME** workspace.
 
 ### Content accessible from Lifecycle Services
-If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Practice manager** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Purchase spend analysis** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
-Be sure to download the **Practice manager** content that applies to the version of Dynamics 365 that you're using.
+Be sure to download the **Purchase spend analysis** content that applies to the version of Dynamics 365 that you're using.
 
 **Note:** If you are using Dynamics 365 for Operations version 1611, KB 4011327 is a prerequisites for using this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
