@@ -21,7 +21,7 @@ audience: Developer
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 23401
-ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: robadawy
@@ -41,22 +41,22 @@ Visual Studio 2015 is the exclusive integrated development environment (IDE) for
 ## Application Explorer
 In Visual Studio, the model store is represented by the Application Explorer. On the **View** menu, click **Application** **Explorer** to open it. The Application Explorer corresponds to the Application Object Tree (AOT) that you may be familiar with in Microsoft Dynamics AX 2012. Use the Application Explorer to browse and interact with the elements in the model store that define the applications. The following illustration shows the Application Explorer. For more details, see [Application Explorer](application-explorer.md).
 
-![Application Explorer](1_DevoToolsConcept.png)
+![Application Explorer](media\1_DevoToolsConcept.png)
 
 ## The project template
 Even a simple application can have a large number of elements in its model. The **Operations Project** template has been added to Visual Studio to help you organize and manage the elements that you are working with for a model. You will use the project to design, build, and test model elements. It’s common to have several projects within a single Visual Studio solution. The following illustration shows three projects in a Visual Studio solution. For more details, see [Projects](projects.md).
 
-![Solution Explorer](2_DevoToolsConcept.png)
+![Solution Explorer](media/2_DevoToolsConcept.png)
 
 ## Element designers
 The Visual Studio tools contain designers for each kind of element in the application. You will use these designers when you create or modify elements. The following illustration shows the element designer for a form element. For more details, see [Element designers](element-designers.md).
 
-![Element designer](3_DevoToolsConcept.png)
+![Element designer](media/3_DevoToolsConcept.png)
 
 ## Code editor
 The X++ code is written in the code editor for Visual Studio. The standard features that a developer expects from the code editor are supported. For example, sections of code are collapsible. IntelliSense provides guidance as you write or modify code. For more details, see [Code editor](code-editor.md).
 
-[Code editor](4_DevoToolsConcept.png)
+[Code editor](media/4_DevoToolsConcept.png)
 
 ## Dynamics 365 menu
 The tools add the **Dynamics 365** menu to Visual Studio. Several tools that you will use during the development process are found here. For example, the tools for managing models are accessed from the menu.
