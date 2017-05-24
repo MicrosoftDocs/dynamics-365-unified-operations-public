@@ -49,10 +49,10 @@ All the amounts in the content are shown in the system currency. You can set the
 Embedded Power BI enables individuals in your organization to take advantage of analytics out of the box. They can quickly start analyzing your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those not logging into Dynamics 365 by using of the content packs available on Lifecycle Services. These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
 
 ### Embedded content
-The **Practice manager** Power BI content is displayed on the **Project management** workspace in Dynamics 365 for Finance and Operations, Enterprise edition.
+If you are using Dynamics 365 for Finance and Operations, Enterprise edition: The **Practice manager** Power BI content is embedded in the **Project management** workspace.
 
 ### Content accessible from Lifecycle Services
-You can find the **Practice manager** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
+If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update: You can find the **Practice manager** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
 Be sure to download the **Practice manager** content that applies to the version of Dynamics 365 that you are using.
 
