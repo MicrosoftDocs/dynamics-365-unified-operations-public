@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Workforce Metrics Power BI content
+title: Workforce metrics Power BI content
 description: This topic describes the Dynamics 365 for Operations - Workforce Metrics Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
 author: twheeloc
 manager: AnnBe
@@ -30,22 +30,30 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Workforce Metrics Power BI content
+# Workforce metrics Power BI content
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Dynamics 365 for Operations - Workforce Metrics Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+This topic describes the **Workforce metrics** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
-Accessing the content pack
---------------------------
+## Accessing the Power BI content
 
-You can find the Workforce Metrics content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+Embedded Power BI allows individuals in your organization to take advantage of analytics out of the box. They can quickly analyze your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
 
-## Reports that are included in the content pack
-After you’ve connected the content pack to your Dynamics 365 for Operations data, the reports show your organization’s data. If you’ve never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
+### Embedded content
+If you're using Dynamics 365 for Finance and Operations, Enterprise edition, the **Workforce metrics** Power BI content is displayed in the **NAME** workspace.
 
-| Report                                           | Contents                                                                                                                                                                                                            |
+### Content accessible from Lifecycle Services
+If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Workforce metrics** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+
+Be sure to download the **Workforce metrics** content that applies to the version of Dynamics 365 that you're using.
+
+
+## Reports that are included in the Power BI content
+The following table lists the metrics shown on each report.
+
+| Report                                           | Metrics                                                                                                                                                                                                            |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Headcount Analysis Company, Department, Location | Headcount by company, headcount by department, headcount by location, and total headcount                                                                                                                           |
 | Headcount Analysis Job, Step, Manager            | Headcount by job, headcount by step, headcount by manager, and total headcount                                                                                                                                      |
@@ -57,10 +65,10 @@ After you’ve connected the content pack to your Dynamics 365 for Operations da
 | Seniority Analysis                               | Average years of service by company and seniority list                                                                                                                                                              |
 | Anniversaries and Years of Service               | Employees by years of service, and anniversaries                                                                                                                                                                    |
 
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-Dynamics 365 for Operations data is used to populate the reports in the Workforce Metrics content pack. The following table shows the entities that the content pack was based on.
+The following table shows the entities that the content pack was based on.
 
 | Entity                            | Contents                                                                                                   | Relationships with other entities                                                                                                                                                                                                                                                                                                |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
