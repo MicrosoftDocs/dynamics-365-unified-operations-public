@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Development tools for Dynamics 365 for Operations
+# Development tools tutorial
 
 [!include[banner](../includes/banner.md)]
 
