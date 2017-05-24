@@ -35,22 +35,32 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes what is included in the Purchase spend analysis content pack for Microsoft Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that are used to build the content pack.
+This topic describes what is included in the **Purchase spend analysis** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content .
 
 Overview
 --------
 
-The Purchase spend analysis content pack for Microsoft Power BI was created for purchasing managers and managers who are responsible for budgets. It's designed to help them keep an eye on purchase spending. It uses purchase transactional data from Microsoft Dynamics 365 for Operations, and provides both an aggregate view of the company-wide purchase figures and a breakdown of purchase spending by vendor and product. Reports highlight changes in purchase spending over time. Therefore, they can be used to alert managers about positive and negative spending trends for individual vendors and products. Charts show purchase spending for different procurement categories and vendor groups. Category and regional managers might find it useful to use these charts to help identify changes in spending behavior. The content pack lets purchase managers and managers who are responsible for budgets analyze purchase spending in the following ways:
+The **Purchase spend analysis** Power BI was created for purchasing managers and managers who are responsible for budgets. It's designed to help them keep an eye on purchase spending. It uses purchase transactional data and provides both an aggregate view of the company-wide purchase figures and a breakdown of purchase spending by vendor and product. Reports highlight changes in purchase spending over time. Therefore, they can be used to alert managers about positive and negative spending trends for individual vendors and products. Charts show purchase spending for different procurement categories and vendor groups. Category and regional managers might find it useful to use these charts to help identify changes in spending behavior. The content pack lets purchase managers and managers who are responsible for budgets analyze purchase spending in the following ways:
 
 -   Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location)
 -   Year-over-year purchase change (by vendor group and procurement category)
 
-## Accessing the content pack
-The Purchase spend analysis content pack is published as an implementation asset in Microsoft Dynamics Lifecycle Services (LCS) and can be accessed from Microsoft Dynamics 365 for Operations. For more information about how to access and open Power BI reports, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
-Note: KB 4011327 is a prerequisites for his Power BI content. After you sign in to Lifecycle Services, you can access the KB here: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+## Accessing the Power BI content
 
-## Metrics that are included in the content pack
-The Purchase spend analysis content pack includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the content pack.
+Embedded Power BI allows individuals in your organization to take advantage of analytics out of the box. They can quickly analyze your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
+
+### Embedded content
+If you're using Dynamics 365 for Finance and Operations, Enterprise edition, the **Purchase spend analysis** Power BI content is displayed in the **NAME** workspace.
+
+### Content accessible from Lifecycle Services
+If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Practice manager** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+
+Be sure to download the **Practice manager** content that applies to the version of Dynamics 365 that you're using.
+
+**Note:** If you are using Dynamics 365 for Operations version 1611, KB 4011327 is a prerequisites for using this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+
+## Metrics that are included in the Power BI content
+The **Purchase spend analysis** content includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations.
 
 <table>
 <colgroup>
@@ -139,9 +149,11 @@ The Purchase spend analysis content pack includes a report that consists of a se
 \* Purchase this year and last year, and growth by procurement category
 
 ## Data model and entities
-Dynamics 365 for Operations data is used for the report in the Purchase spend analysis content pack. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database that is optimized for analytics. For more information about the Entity store, see the [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. The aggregate measurements in this content pack are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube’s aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in the [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blog post. The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content pack.
+The folloiwng data is used to populate the report pages in the **Purchase spend analysis** content pack. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-| Entity        | Key aggregate measurements | Data source for Dynamics 365 for Operations | Field              | Description                           |
+The aggregate measurements in this content pack are the subset of aggregate measurements that were available in the Purchase Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube’s aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). The following key aggregate measurements are available directly from the Invoice lines entity and are used as the basis of the content pack.
+
+| Entity        | Key aggregate measurements | Data source  | Field              | Description                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
 | Invoice lines | Purchase                   | VendInvoiceTrans                            | SUM(LineAmountMST) | The amount in the accounting currency |
 
