@@ -35,17 +35,24 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Dynamics 365 for Operations - Recruiting Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+This topic describes the **Recruiting reports** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
-Accessing the content pack
---------------------------
+## Accessing the Power BI content
 
-You can find the Recruiting content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+Embedded Power BI allows individuals in your organization to take advantage of analytics out of the box. They can quickly analyze your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
+
+### Embedded content
+If you're using Dynamics 365 for Finance and Operations, Enterprise edition, the **Recruiting reports** Power BI content is displayed in the **NAME** workspace.
+
+### Content accessible from Lifecycle Services
+If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Recruiting reports** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+
+Be sure to download the **Recruiting reports** content that applies to the version of Dynamics 365 that you're using.
 
 ## Reports that are included in the content pack
-After you’ve connected the content pack to your Dynamics 365 for Operations data, the reports show your organization’s data. If you’ve never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
+The following table provides details about the metrics that are found on each report page in the **Recruiting reports** Power BI content.
 
-| Report                       | Contents                                                                                               |
+| Report                       | Metrics                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
 | Applicant Analysis           | Applicants by job, applicant sources, applicants by location, and total number of applicants           |
 | Applicant Status             | Applicants by type and status, and applicant status                                                    |
@@ -56,7 +63,7 @@ After you’ve connected the content pack to your Dynamics 365 for Operations da
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-Dynamics 365 for Operations data is used to populate the reports in the Recruiting content pack. The following table shows the entities that the content pack was based on.
+The following table shows the entities that the content pack was based on.
 
 | Entity                          | Contents                                                         | Relationships with other entities                                                                                                                                                                                                                 |
 |---------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,7 +82,7 @@ Dynamics 365 for Operations data is used to populate the reports in the Recruiti
 | Recruiting\_RecruitmentProject  | Project description, project status, and openings                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
 | Recruiting\_TerminatedApplicant | Terminated applicants, reason, performance, and termination date | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_Performance Recruiting\_Demographics Recruiting\_Employment Recruiting\_Media Recruiting\_RecruitmentProject Recruiting\_ApplicantName |
 
-These entities were used to create calculated measures. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the content pack. If you want to include additional calculations on your reports and dashboard, you can download and modify the Recruiting.pbix file from LCS. This file is the default data model that was used to create the content pack. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
+These entities were used to create calculated measures. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the content pack. If you want to include additional calculations on your reports and dashboard, you can download and modify the Recruiting.pbix file from LCS. This file is the default data model that was used to create the content. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
 
 ## Additional resources
 Here are some helpful links that are related to entities and building Power BI content:
