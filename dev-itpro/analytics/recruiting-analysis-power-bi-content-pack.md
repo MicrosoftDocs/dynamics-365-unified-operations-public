@@ -49,8 +49,8 @@ If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Fi
 
 Be sure to download the **Recruiting reports** content that applies to the version of Dynamics 365 that you're using.
 
-## Reports that are included in the content pack
-The following table provides details about the metrics that are found on each report page in the **Recruiting reports** Power BI content.
+## Reports that are included in the Power BI content
+The following table lists the metrics shown on each report.
 
 | Report                       | Metrics                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
