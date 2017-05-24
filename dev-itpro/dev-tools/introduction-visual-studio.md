@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Development tools for Dynamics 365 for Operations
+title: Development tools tutorial
 description: This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools. 
 author: RobinARH
 manager: AnnBe
