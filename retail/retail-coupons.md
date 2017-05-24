@@ -27,6 +27,8 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 
 
+---
+
 # Coupons for retail sales
 
 [!include[banner](../includes/banner.md)]
