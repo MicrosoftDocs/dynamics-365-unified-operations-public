@@ -18,7 +18,7 @@
 ## [Create a model and data model elements](create-data-model-elements.md)
 ## [Create a new user on a development machine](enable-development-machine.md)
 ## [Customization Analysis Report](customization-analysis-report.md)
-## [Development tools](development-tools.md)
+## [Version control, metadata search, and navigation](version-control-metadata-navigation.md)
 ## [Element designers](element-designers.md)
 ## [Element usage](element-usage.md)
 ## [Export and import a model](models-export-import.md)
