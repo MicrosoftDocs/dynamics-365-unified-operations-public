@@ -3,7 +3,7 @@
 
 title: Credit and collections management Power BI content
 description: Credit and collections management Power BI content for Microsoft Dynamics 365
-author: Shivam Pandey
+author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: article
@@ -29,56 +29,27 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 # Credit and collections management Power BI content
 
->   This topic describes what's included in the Dynamics 365 for Operations -
->   Credit and collections management content pack for Microsoft Power BI. It
->   explains how to access the reports included in the content pack and provides
->   information about the data model and entities that are used to build the
->   content pack.
+This topic describes what's included in the **Credit and collections management** Power BI content. It explains how to access the Power BI reports and provides information about the data model and entities that are used to build the content.
+  
+## Overview
 
->    
+This content pack was crated for credit and collections managers and collections clerks to provide them with key credit and collections metrics like days sales outstanding, balance overdue, credit exposure, customers over credit limit, etc. It uses transactional data from Dynamics 365 for Operations, and provides aggregate view of credit and collections across all companies and also break down per company, per customer group and per customer. 
 
->   **Overview**
+The content pack contains 10 report pages consisting of two overview pages, one for credit overview and other for collections overview and 8 details pages providing details of credit and collections metrics sliced and diced across different dimensions.
 
->   This content pack was crated for credit and collections managers and
->   collections clerks to provide them with key credit and collections metrics
->   like days sales outstanding, balance overdue, credit exposure, customers
->   over credit limit, etc. It uses transactional data from Dynamics 365 for
->   Operations, and provides aggregate view of credit and collections across all
->   companies and also break down per company, per customer group and per
->   customer. 
+All the amounts in the content pack are shown in the system currency. You can set the system currency on the Systems parameters form.
 
->   The content pack contains 10 report pages consisting of two overview pages,
->   one for credit overview and other for collections overview and 8 details
->   pages providing details of credit and collections metrics sliced and diced
->   across different dimensions.
+By default the credit and collections data for the current company is shown. If you want a role to see the data across all companies, assign duty CustCollectionsBICrossCompany to the role.
 
->   All the amounts in the content pack are shown in the system currency. You
->   can set the system currency on the Systems parameters form.
+## Accessing the content pack
 
->   By default the credit and collections data for the current company is shown.
->   If you want a role to see the data across all companies, assign duty
->   CustCollectionsBICrossCompany to the role.
+You can find the Credit and collections content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content from Microsoft and your partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
->    
+## Reports included in the content pack
 
->   **Accessing the content pack**
+The content pack includes a report that consists of a set of metrics visualized as charts, tiles, and tables.
 
->   You can find the Credit and collections content pack in the Shared assets
->   library in Microsoft Dynamics Lifecycle Services (LCS). For more information
->   about how to download the content pack and connect it to your Microsoft
->   Dynamics 365 for Operations data, see [Power BI content from Microsoft and
->   your
->   partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
-
->    
-
->   **Reports included in the content pack**
-
->   The content pack includes a report that consists of a set of metrics
->   visualized as charts, tiles, and tables.
-
->   The following table provides an overview of the visualizations in the
->   content pack.
+The following table provides an overview of the visualizations in the content pack.
 
 | **Report page**             | **Visualization**                                                                                                                                                                                                                                                                                                                                     |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -93,25 +64,13 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 | Collections status          | Disputed Promise to pay broken Promise to pay Collections status details Collections status amounts Open cases Open activities                                                                                                                                                                                                                        |
 | Collections letters         | Collection code amounts Collection code amount details Collection letter amount per company Collection letter amount per customer group Collection letter amount by region                                                                                                                                                                            |
 
->   The charts and tiles on all these reports can be filtered and pinned to the
->   dashboard. For more information about how to filter and pin in Power BI, see
->   [Create and Configure a
->   Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/).
->   You can also use the export underlying data functionality to export
->   underlying data that is summarized on a visualization.
+The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the export underlying data functionality to export underlying data that is summarized on a visualization.
 
->    
+## Understanding the data model and entities
 
->   **Understanding the data model and entities**
+Dynamics 365 for Operations data is used to populate the report in the Credit and collections management content pack. This is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database optimized for analytics. Read more about it in the blog [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may update/).
 
->   Dynamics 365 for Operations data is used to populate the report in the
->   Credit and collections management content pack. This is represented as
->   aggregate measurements that are staged in the Entity store, which is a
->   Microsoft SQL database optimized for analytics. Read more about it in the
->   blog [Power BI integration with Entity Store in
->   Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/).
-
-| Entity                                      | Key aggregate measurements           | Data source for Dynamics 365 for Operations | Field                                                      | Description                                                  |
+| Entity                                      | Key aggregate measurements           | Data source  | Field                                                      | Description                                                  |
 |---------------------------------------------|--------------------------------------|---------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------|
 | CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  | smmActivities                               | AverageOfChildren(AverageClosedTime) Count(ActivityNumber) | Count of closed activities and average time close activities |
 | CustCollectionsBIActivitiesOpen             | ActivityNumber                       | smmActivities                               | Count(ActivityNumber)                                      | Count of open activities                                     |
@@ -130,20 +89,14 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 | CustCollectionsBISalesOnHold                | SalesId                              | SalesTable                                  | Count(SalesId)                                             | Total sales orders on hold                                   |
 | CustCollectionsBIWriteOff                   | WriteOffAmount                       | CustCollectionsBIWriteOffView               | Sum(SystemCurrencyAmount)                                  | Sum of written off transactions                              |
 
->    
+## Additional resources
 
->   **Additional resources**
-
->   Here are some helpful links that are related to entities and building Power
->   BI content:
+Here are some helpful links that are related to entities and building Power BI content:
 
 -   [Data entities](https://ax.help.dynamics.com/en/wiki/data-entities/)
 
--   [Creating organizational content
-    packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
+-   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 
--   [Data modeling using Power
-    BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
+-   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 
--   [Adding Power BI tiles to
-    workspaces](http://ax.help.dynamics.com/en/wiki/configuring-powerbi-integration/)
+-   [Adding Power BI tiles to workspaces](http://ax.help.dynamics.com/en/wiki/configuring-powerbi-integration/)
