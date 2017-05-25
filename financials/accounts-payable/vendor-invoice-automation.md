@@ -1,6 +1,6 @@
-This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
-
 # Vendor invoice automation
+
+This topic explains the features that are available for end-to-end automation of vendor invoices, even invoices that include attachments.
 
 Organizations that want to streamline their Accounts payable (AP) processes often identify invoice processing as one of the top process areas that should be more efficient. In many cases, these organizations offload the processing of paper invoices to a third-party optical character recognition (OCR) service provider. They then receive machine-readable invoice metadata together with a scanned image of each invoice. To help with automation, a “last mile” solution is then built to enable consumption of these artifacts in the invoicing system. Microsoft Dynamics 365 for Operations now enables this “last mile” automation out of the box, through an invoice automation solution.
 
@@ -10,7 +10,7 @@ The invoice automation solution enables a standard interface that can accept inv
 
 The following illustration shows a sample integration scenario where Contoso has partnered with an OCR service provider for vendor invoice processing. Contoso’s vendors send invoices to the service provider by email. Through OCR processing, the service provider generates invoice metadata (header and/or lines) and a scanned image of the invoice. An integration layer then transforms these artifacts so that Dynamics 365 for Operations can consume them.
 
-[Sample integration scenario](vendor_invoice_automation_01.png)
+![Sample integration scenario](media/vendor_invoice_automation_01.png)
 
 Several variations of the preceding scenario are possible if invoice integration is required. Data migration is another use case where this interface can be used to create invoices and attachments in Dynamics 365 for Operations.
 
@@ -68,7 +68,7 @@ In scenarios where vendor invoices come into Dynamics 365 for Operations via int
 
 The new list page for invoice exceptions is available at **Accounts payable** > **Invoices** > **Import failures** > **Vendor invoices that failed to import**. This page shows all the vendor invoice header records from the staging table of the Vendor invoice header data entity. Note that you can view the same records from the **Data management** workspace, where you can also perform the same actions that are provided in the exception handling feature. However, the UI that the exception handling feature provides is optimized for a functional user.
 
-[Exceptions list page](vendor_invoice_automation_02.png)
+![Exceptions list page](media/vendor_invoice_automation_02.png)
 
 This list page includes the following fields that come in via the feed:
 
@@ -85,6 +85,7 @@ This list page includes the following fields that come in via the feed:
 + **Currency**
 + **Log**
 + **Line reference** – The identifier that comes from the external system
+
     > [!NOTE]
     > The line reference isn’t the invoice ID.
 
@@ -102,7 +103,7 @@ The list page supports the following actions:
 
 When you start edit mode, the exception details page for the invoice that has issues appears. If there are any attachments, the invoice and the default attachment appear side by side on the exception details page.
 
-[Exception details page](vendor_invoice_automation_03.png)
+![Exception details page](media/vendor_invoice_automation_03.png)
 
 In the preceding illustration, there weren’t any lines for the vendor invoice header that came in. Therefore, the lines section is empty.
 
@@ -118,7 +119,7 @@ The exceptions list page supports the standard security constructs that the **Da
 + By user
 + By legal entity
 
-[Import job that is secured by user role and legal entity](vendor_invoice_automation_04.png)
+![Import job that is secured by user role and legal entity](media/vendor_invoice_automation_04.png)
 
 If security is configured for the invoice import job, the exceptions list page honors those settings. Users will be able to see only the invoice exception records that this setup allows them to see.
 
