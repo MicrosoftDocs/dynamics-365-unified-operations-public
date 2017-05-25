@@ -79,7 +79,15 @@ The Text translation page allows you to enter text to be displayed in different 
 
 Not all dimensions are valid for all legal entities and some may only be relevant for a specific time period. In this scenario the Legal entity overrides section can be used to identify which companies the dimension should be suspended for, who the owner is and the time period the dimension is active.
 
+**Deleting financial dimensions** 
+To maintain referential integrity of the data, financial dimensions can seldom be deleted. When trying to delete a Financial dimension the following criteria is checked:
 
+-   Has the financial dimension been used on any posted or unposted transactions or any type of dimension value combination
+-   Is the financial dimension used in any active account structure, advanced structure or financial dimension set
+-   Is the financial dimension part of a Default financial dimension format
+-   Has the financial dimension been set up as a default dimension
+
+If any of the criteria are met, you will not be able to delete the financial dimension. 
 
 
 
