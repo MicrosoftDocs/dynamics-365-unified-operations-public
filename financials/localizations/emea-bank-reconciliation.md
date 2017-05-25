@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Bank statement and payment reconciliation overview for the EU
+title: Bank statement and payment reconciliation for the EU
 description: This topic provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries.
 author: neserovleo
 manager: AnnBe
 ms.date: 05/17/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
