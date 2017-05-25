@@ -79,22 +79,22 @@ For build definitions created prior to Platform Update 6, a new task needs to be
 1. Under **Builds** and **All Definitions** find your build definition. 
 1. Click on the ellipsis (…) and select **Edit**.
 
-  ![Edit Build Definition](media/builddef_edit.png)
+    ![Edit Build Definition](media/builddef_edit.png)
 
 1. On the **Tasks** tab, click **+ Add Task** at the bottom of the page.
 1. On the right-hand side in the **Add tasks** pane, click the **Utility** tab and scroll down to find the **PowerShell** task. 
 1. Hover the mouse over the task and click the **Add** button that appears.
 
-  ![Add PowerShell Task](media/builddef_addpowershelltask.png)
+    ![Add PowerShell Task](media/builddef_addpowershelltask.png)
 
 1. On the left-hand side a **PowerShell Script** task is now added to the list of tasks. Select it by clicking on it.
 1. On the right hand side, change the properties **Display name**, **Script Path** and **Arguments**  to reflect the need settings:
 
-  ![Settings for Set Model Versions task](media/builddef_setmodelversions_settings.png)
+    ![Settings for Set Model Versions task](media/builddef_setmodelversions_settings.png)
 
 1. In the list of tasks on the left-hand side, drag the **Set Model Versions** task to the top of the list in between the **Prepare for build** and **Build the solution** tasks.
 
-  ![Settings for Set Model Versions task](media/builddef_setmodelversions_order.png)
+    ![Settings for Set Model Versions task](media/builddef_setmodelversions_order.png)
 
 1. Open the **Variables** tab and click **+ Add** at the bottom of the list of variables. In the first column for **Name**, enter "ModelVersionExclusions".
 1. Finally, hit **Save** to save the new task.
