@@ -28,7 +28,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 # Export and import transactions for General ledger consolidation for Brazil
 
-[Enter an introduction paragraph here that explains what scenario this topic covers. Rewrite steps in procedure below as necessary to provide additional useful information to the user.] 
+You can use this functionality to only transfer GL transactions to the consolidated account in the consolidated company as they appear in the source company without consolidating the transactions.
 
 1. Go to Consolidations > Export company balances. 
 2. In the From: field, enter a date. 
