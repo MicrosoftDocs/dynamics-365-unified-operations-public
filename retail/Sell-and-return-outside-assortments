@@ -28,3 +28,5 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Sell and return outside of assortment
+One of the most common scenarios for any retailers is the ability to sell products to their customers or accept returns from their customers even if they don’t carry the products in their stores (that is, products are not assorted to the stores).
+
