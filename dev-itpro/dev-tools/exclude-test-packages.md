@@ -63,7 +63,7 @@ Any existing build definitions deployed before Platform Update 4 will need to be
 1. Under the **Variables** tab, click **+ Add** at the bottom of the page. Enter "PackagingExclusions" in the name column, and check the **Settable at queue time** checkbox in the last column.
 2. Open the **Tasks** tab. Find the **Generate Packages** step and select it by clicking on it. On the right side of the page, find the **Arguments** parameter. Click in the textbox and hit the 'End' key or scroll all the way over to the end of the textbox. The new build definition will have a new argument that passes the previously defined variable. On an existing build definition, add a space and the following text to the end of the parameter: *-ExclusionList "$(PackagingExclusions)"*
 
-Your **Arguments** textbox should now look like this:
+    Your **Arguments** textbox should now look like this:
 
     ![Generate Packages Task](media/builddef_generatepack.png)
 
