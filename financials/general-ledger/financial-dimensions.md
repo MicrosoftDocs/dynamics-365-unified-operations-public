@@ -7,7 +7,7 @@ author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ems.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 
@@ -27,7 +27,7 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+l
 ---
 
 # Financial dimensions
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains the different types of financial dimensions and how they are set up.
 
-Use the Financial dimensions page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions, custom dimensions and entity backed dimensions. Custom dimensions are shared across legal entities and the values are entered and maintained by the user. Entity backed dimensions are dimensions whose values are defined elsewhere in the system, such as Customers or Stores. Some entity backed dimensions are shared across legal entities, and come entity backed dimensions are company specific. 
+uUse the Financial dimensions page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions, custom dimensions and entity backed dimensions. Custom dimensions are shared across legal entities and the values are entered and maintained by the user. Entity backed dimensions are dimensions whose values are defined elsewhere in the system, such as Customers or Stores. Some entity backed dimensions are shared across legal entities, and come entity backed dimensions are company specific. 
 
 After you have created the financial dimensions, use the Financial dimension values page to assign additional properties to each financial dimension. 
 
@@ -47,7 +47,7 @@ Before you set up financial dimensions as legal entities, evaluate your business
 
 -   Inventory
 -   Sales and purchases between financial dimensions and legal entities
--   Sales tax calculation and reporting
+r-   Sales tax calculation and reporting
 -   Operational reporting
 
 Some examples of the limitations include the following:
@@ -83,8 +83,8 @@ Not all dimensions are valid for all legal entities and some may only be relevan
 To maintain referential integrity of the data, financial dimensions can seldom be deleted. When trying to delete a Financial dimension the following criteria is checked:
 
 -   Has the financial dimension been used on any posted or unposted transactions or any type of dimension value combination
--   Is the financial dimension used in any active account structure, advanced structure or financial dimension set
--   Is the financial dimension part of a Default financial dimension format
+-   Is the financial dimension used in any active account structure, advanced rule structure or financial dimension set
+-   Is the financial dimension part of a Default financial dimension integration format
 -   Has the financial dimension been set up as a default dimension
 
 If any of the criteria are met, you will not be able to delete the financial dimension. 
