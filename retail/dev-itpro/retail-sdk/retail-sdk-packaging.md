@@ -35,24 +35,23 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../../includes/banner.md)]
 
 
-This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail.
+This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Operations.
 
 # Prerequisites
 
-For detailed information about how the Retail software development kit (SDK) is designed for customization and to generate customized deployable packages, see [Retail SDK overview](retail-sdk-overview.md). This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail:
+For detailed information on Retail SDK, see [Retail SDK overview](retail-sdk-overview.md). The Retail deployable package is a bundle package which includes all the below retail componetst:
 
 -   Commerce runtime (CRT)
 -   Retail Server
 -   Modern POS
 -   Cloud POS
 -   Hardware station
+-   Channel database scripts
 
-The article then explains how to deploy these packages to either an existing Microsoft Dynamics Lifecycle Services (LCS) cloud-deployed environment or a new environment.
+## Retail Deployable Package
+Retail deployable package is an asset that can be consumed by the LCS deployment service. A deployable package can also be consumed manually to service or install a customization. The Retail SDK generates the same package that is developed for Microsoft hotfixes or updates, so that there is one way to install or deploy updates and customizations to the existing solution.
 
-## Deployable packages
-A deployable package is an asset that can be consumed by the LCS deployment service. A deployable package can also be consumed manually to service or install a customization. The Retail SDK generates the same package that is developed for Microsoft hotfixes or updates, so that there is just one way to install updates and customizations to the existing solution.
-
-### Steps to create a deployable package
+### Steps to create a Retail deployable package
 
 1.  Host the Retail SDK in Microsoft Visual Studio Online (VSO) or the source control system that your organization uses.
 2.  Customize or add functionality to the Retail stack.
