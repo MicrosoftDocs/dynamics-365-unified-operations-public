@@ -59,7 +59,7 @@ In the spring release of Dynamics 365 for Finance and Operations, Enterprise edi
 
 Default templates will be delivered together with each new release of Dynamics 365 for Finance and Operations. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance of Dynamics 365 for Financial and Operations. However, for the current releases, click the **Templates** tile in the **Data management** workspace, and then click **Load default templates** to load the templates.
 
-After the templates are loaded, you can change them to suit your business requirements. If you ever want to retrieve the original default templates, you can use the **Load default templates** button to add them back to your system. You can replace the templates with the latest versions, or you can first make a copy of the old templates and then add the default templates.
+After the templates are loaded, you can change them to suit your business requirements. If you ever want to retrieve the original default templates, you can use the **Load default templates** button to add them back to your system. You can replace the templates with the latest versions, or you can first make a copy of the old templates and then add the default templates. Please note that loading default templates and importing templates required system administrator access to ensure that all entities are correctly loaded into the template.
 
 ### How entities are sequenced for processing
 Whether you're creating your own templates or using the default templates, it's important that you understand how templates are sequenced for processing during export and import.
