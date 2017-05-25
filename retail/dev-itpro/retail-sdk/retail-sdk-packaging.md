@@ -32,9 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Retail SDK packaging
 
-[!include[banner](../../includes/banner.md)]
-
-
 This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Operations manually.
 
 # Prerequisites
