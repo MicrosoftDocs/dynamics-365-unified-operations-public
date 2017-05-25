@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail SDK packaging
-description: This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail.
+description: This topic explains how to create a Retail deployable package for Microsoft Dynamics 365 for Operations.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../../includes/banner.md)]
 
 
-This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Operations.
+This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Operations manually.
 
 # Prerequisites
 
@@ -49,14 +49,14 @@ For detailed information on Retail SDK, see [Retail SDK overview](retail-sdk-o
 -   Channel database scripts
 
 ## Retail Deployable Package
-Retail deployable package is an asset that can be consumed by the LCS deployment service. A deployable package can also be consumed manually to service or install a customization. The Retail SDK generates the same package that is developed for Microsoft hotfixes or updates, so that there is one way to install or deploy updates and customizations to the existing solution.
+Retail deployable package is an asset that can be consumed by the LCS deployment service or it can be deployed manually to service or install a customization. The Retail SDK generates the same package that is developed for Microsoft hotfixes or updates, so that there is one way to install or deploy updates and customizations to the existing solution.
 
 ### Steps to create a Retail deployable package
 
-1.  Host the Retail SDK in Microsoft Visual Studio Online (VSO) or the source control system that your organization uses.
-2.  Customize or add functionality to the Retail stack.
-3.  Use the build tools to give an identity to the customized installation package, code-sign it, and specify the customized CRT assemblies, the customized Retail Server assemblies, the customized Hardware station assemblies, and the customized database scripts.
-4.  After all the settings have been specified, run **msbuild /t:rebuild** on the root of the Retail SDK to generate all deployable packages.
+There are two ways to generate the REtail deployable package. One is using the Retail build automation or manually using the build tools in Retail SDK. In this topic we will focus on the manual deployment.
+1. Customize or add functionality to the Retail stack.
+2. Use the build tools to give an identity to the customized installation package, code-sign it, and specify the customized CRT, Retail Server, customized Hardware station assemblies, and customized database scripts.
+4. After all the settings have been specified, run **msbuild /t:rebuild** on the root of the Retail SDK folde using the VS dev command prompt tool to generate the retail deployable packages. Before building the package, update the Customization.settings file in Retail SDK\BuildTools with the all the customization information, copy the customized assemblies to Retail SDK\Refernces folder and the mdified config files to the Retail SDk\Assets folder.
 
 ## Retail SDK build tools – Customization settings
 BuildTools\\Customization.settings is where most of the configuration values for the Retail SDK are set. These values control how built binaries, components, and packages are named, versioned, and code-signed. After you define this metadata, The Retail SDK build system uses it to give an identity to the assets, and to package the customization assets for all the Retail components.
