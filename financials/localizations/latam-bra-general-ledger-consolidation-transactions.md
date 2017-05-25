@@ -31,26 +31,24 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 You can use this functionality to only transfer GL transactions to the consolidated account in the consolidated company as they appear in the source company without consolidating the transactions.
 
 1. Go to Consolidations > Export company balances. 
-2. In the From: field, enter a date. 
-3. In the To: field, enter a date. 
+2. In the From: field, enter a start date.
+3. In the To: field, enter a end date. 
 4. Select Yes in the Include actual amounts field. 
-5. Select Yes in the Transfer transactions only field. 
+5. Select Yes in the Transfer transactions only field to transfer without consolidate transactions.
 6. Click the Legal entities tab. 
 7. Click New. 
-8. In the list, mark the selected row. 
-9. In the Source legal entity field, enter or select a value. 
-10. In the File name field, type a value. 
-11. Click OK. 
-12. Close the page. 
-13. Change company to 'br2' 
-14. Go to Default dashboard. 
-15. Go to Consolidations > Consolidate with import. 
-16. In the From: field, enter a date. 
-17. In the To: field, enter a date. 
-18. Select Yes in the Include actual amounts field. 
-19. Click the Legal entities tab. 
-20. Click New. 
-21. In the list, mark the selected row. 
-22. In the Source legal entity field, enter or select a value. 
-23. In the File name field, enter or select a value. 
-24. Click OK. 
+8. In the Source legal entity field, enter or select a value. 
+9. In the File name field, type a value. 
+10. Click OK. 
+11. Close the page. 
+11. Change company to the consolidation company.
+13. Go to Default dashboard. 
+14. Go to Consolidations > Consolidate with import. 
+15. In the From: field, enter a start date. 
+16. In the To: field, enter a end date. 
+17. Select Yes in the Include actual amounts field. 
+18. Click the Legal entities tab. 
+19. Click New. 
+20. In the Source legal entity field, enter or select a value. 
+21. In the File name field, enter or select a value. 
+22. Click OK. 
