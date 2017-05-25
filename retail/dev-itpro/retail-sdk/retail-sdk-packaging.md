@@ -117,13 +117,13 @@ Database scripts are packaged together with the Retail Server and Modern POS Off
 
 The Retail SDK fully supports msbuild. To build the Retail SDK and , open a **Visual studio 2015 developer Command Prompt tool** window as an administrator, and run **msbuild** (or, for a non-debug version, run **msbuild /p:Configuration=Release**). 
 
-[![msbuild2](./media/msbuild2.png)](./media/msbuild2.png)
-
 ### Packages
 
 After the build is completed, retail deployable packages(RetailDeployablePackage.zip) is generated in the Retail SDK\Packages\RetailDeployablePackage folder. Note: There will not be any seperate packages for retail, all will be combined and created as one bundle package called RetailDeployablePackage
-    
-    [![packages](./media/packages.png)](./media/packages.png)
-    
+      
  ## Deploy the Retail Deployable packages:
  
+To deploy the packages either manually or using the LCS automated flow, please follow the below link:
+[Apply a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system)
+
+[Install a deployable package](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/install-deployable-package)
