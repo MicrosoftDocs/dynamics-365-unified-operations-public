@@ -127,7 +127,13 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
     5.  Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
     6.  On the Action Pane, select **Save**.
 
-12. When you've finished, select **Finish**. **Note:** If the installer doesn't show a check mark for Retail Server, Async Client, or any other component, wait 10 minutes, so that any cached values can be updated in the cloud. Then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
+12. Navigate to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+13. Select **Identity providers**.
+14. On the **Identity providers** FastTab, select **+Add**.
+15. In the new **Issuer** row, enter the Retail Server URL of your newly installed Retail Store Scale Unit.  At the end of the URL, add **/auth**.  This will make the URL look similar to **https://MyComputerName/RetailServer/auth**.
+16. Under the **Name** column, enter a description for which store this URL belongs to.
+17. Under the **Type** column, select **Open ID Connect**.  **Note:** This new row must be duplicated for every Retail Store Scale Unit installation (Each unique URL).
+13. When you've finished, select **Finish**. **Note:** If the installer doesn't show a check mark for Retail Server, Async Client, or any other component, wait 10 minutes, so that any cached values can be updated in the cloud. Then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
 
 ### Multi-box installation
 
