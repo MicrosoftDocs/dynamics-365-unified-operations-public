@@ -2,7 +2,7 @@
 
 # [Overview of Dynamics 365 for Operations](get-started/TOC.md)
 
-# [Develop and customize using Visual Studio](dev-tools/TOC.md)
+# [Development](dev-tools/TOC.md)
 
 # [User interface development](user-interface/TOC.md)
 

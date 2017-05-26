@@ -182,7 +182,24 @@ You can switch to **Graphs view** to view different indicators for the test cont
 [![perf103w](./media/perf103w.png)](./media/perf103w.png)
 
 ## Troubleshooting
-If you see an error message like this: *System.TypeInitializationException: System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. ---&gt; System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to https://sandbox.ax.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp. **This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server.** ---&gt; System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---&gt; System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---&gt; System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host.* you would need to run the following powershell script on your **development machine**:
+
+### System.TypeInitializationException
+If you see an error message like this: 
+
+
+    System.TypeInitializationException: System.TypeInitializationException: The type initializer for
+    'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --->
+    System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to
+    https://sandbox.ax.dynamics.com/Services/AxUserManagement/Service.svc/ws2007FedHttp. This could be due to the fact 
+    that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused 
+    by a mismatch of the security binding between the client and the server.** ---> System.Net.WebException: 
+    The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: 
+    Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> 
+    System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host. 
+
+
+### Solution
+You would need to run the following powershell script on your **development machine**:
 
     Set-ItemProperty HKLM:SOFTWAREMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false
     if ((Test-Path HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319)) 
@@ -190,7 +207,35 @@ If you see an error message like this: *System.TypeInitializationException: Syst
         Set-ItemProperty HKLM:SOFTWAREWow6432NodeMicrosoft.NETFrameworkv4.0.30319 -Name SchUseStrongCrypto -Value 1 -Type dword -Force -Confirm:$false 
     }
 
+## Certificate thumbprint errors
 
+### Error example
+
+    Result StackTrace:          
+
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.MintToken(String email, 
+    String nameId, String identityProvider, String audience, String certThumbprint)
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.SelfMintedTokenAuthenticator.SignIn()
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_Service()
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.PopulateAxUsers()
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement..cctor()
+    --- End of inner exception stack trace ---
+    at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement.get_AdminUser()
+        at MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup() in 
+            J:PerfSDKPerfSDKLocalDirectorySampleProjectPerfSDKSampleGeneratedTestRecord1Base.cs:line 45
+    Result Message:             
+
+    Initialization method MS.Dynamics.Performance.Application.TaskRecorder.TestRecord1Base.TestSetup threw exception. 
+    System.TypeInitializationException: System.TypeInitializationException: The type initializer for 
+    'MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.UserManagement' threw an exception. --> 
+    MS.Dynamics.TestTools.CloudCommonTestUtilities.Exceptions.WebAuthenticationException: 
+    Failed finding the certificate for minting tokens by thumbprint: b4f01d2fc42718198852cd23957fc60a3e4bca2e
+
+### Solution:
+
+Make sure the thumbprint in CloudEnvironment.Config doesn't have invisible Unicode characters. To do that paste your error message into a tool that would show invisible Unicode characters. An example is [Unicode code converter](https://r12a.github.io/apps/conversion/).
+
+![Unicode code converter](media/unicode-extra.jpg)
 
 
 
