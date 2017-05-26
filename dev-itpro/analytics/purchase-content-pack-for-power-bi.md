@@ -47,7 +47,9 @@ The **Purchase spend analysis** Power BI was created for purchasing managers and
 
 ## Accessing the Power BI content
 
-Embedded Power BI allows individuals in your organization to take advantage of analytics out of the box. They can quickly analyze your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
+Embedded Power BI allows individuals in your organization to take advantage of analytics out of the box. They can quickly analyze your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis.
+
+This content pack is also available from within a form in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update or later. The form is called **Purchase and spend analysis** and found under **Procurement and Sourcing > Inqueries and Reports > Purchase performance analysis**. 
 
 ### Embedded content
 If you're using Dynamics 365 for Finance and Operations, Enterprise edition, the **Purchase spend analysis** Power BI content is displayed in the **NAME** workspace.
