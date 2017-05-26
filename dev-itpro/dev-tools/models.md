@@ -40,7 +40,8 @@ This article describes the concept of models and packages. It also explains how 
 To work with models in the model store, you use tools in Microsoft Visual Studio. You can create new models and change parameters for existing models.
 
 ## Conceptual overview
-A model is a group of elements (metadata/source files) that typically constitute a distributable software solution (including customizations of an existing solution). A model is a design-time concept. For example: A warehouse management model, a project accounting model, …etc.). Follow [this](https://mix.office.com/watch/ies6lyit6773)Office Mix to learn about models and packages and how they relate to each other.
+A model is a group of elements (metadata/source files) that typically constitute a distributable software solution (including customizations of an existing solution). A model is a design-time concept. For example: A warehouse management model, a project accounting model, …etc.). A model always belongs to a package. A package is a deployment and compilation unit of one or more models, it includes model metadata, binaries, and other associated resources. One or more AX packages can be packaged into a deployable package, which is the vehicle used for deployment on runtime environments.
+Follow [this](https://mix.office.com/watch/ies6lyit6773) Office Mix to learn about models and packages and how they relate to each other.
 
 ## Creating a new model
 You use the **Create model** wizard to create new models. You can access this wizard from **Model Management** on the **Dynamics 365 **menu. You can create two types of models:
@@ -70,6 +71,26 @@ You can create a graphical representation that shows which packages (and their m
 2.  Right-click on any model and select **View package dependencies** &gt; **View outgoing references.**
 
 This will generate a graph of all packages that the selected model depends on. [![viewdependencies2](./media/viewdependencies2.png)](./media/viewdependencies2.png) [![directorydependencies](./media/directorydependencies.png)](./media/directorydependencies.png)
+
+## Deleting a model
+On a development or test environment, follow these steps to delete a model.
+
+(The following steps assume the local model store folder is C:\AOSService\PackagesLocalDirectory and your model is named MyModel1)
+
+If your model belongs to its own package (For example: An extension package with no other models in the package):
+1. Stop the following services: The AOS web service and the Batch Management Service
+2. Delete the package folder  C:\AOSService\PackagesLocalDirectory\MyModel1
+3. Restart the services from step 1
+4. If Visual Studio is running, refresh your models (Visual Studio > Dynamics 365 > Model management > Refresh models)
+5. In Visual Studio, perform a full database synchronization (Visual Studio > Dynamics 365 > Synchronize database...)
+
+If your model belongs to a package with multiple models (For example, MyModel1 overlays Application Suite):
+1. Stop the following services: The AOS web service and the Batch Management Service
+2. Delete the model folder  C:\AOSService\PackagesLocalDirectory\<PackageName>\MyModel1 (In this example PackageName=ApplicationSuite)
+3. Restart the services from step 1
+4. In Visual Studio, refresh your models (Visual Studio > Dynamics 365 > Model management > Refresh models)
+5. In Visual Studio, build the package that the deleted models belonged to (Visual Studio > Dynamics 365 > Build models...)
+6. In Visual Studio, perform a full database synchronization (Visual Studio > Dynamics 365 > Synchronize database...)
 
 See also
 --------
