@@ -73,11 +73,11 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 -   [Introduction to Visual Studio development](introduction-visual-studio.md)
 -   [Create a simple data model](create-data-model-elements.md)
 -   [Building and debugging a project](build-debug-project.md)
--   [Version control, metadata search, navigation, and other features](development-tools.md)
+-   [Version control, metadata search, navigation, and other features](metadata-search-visual-studio.md)
 
 ### Tools, models, and VMs
 
--   [Development tools](development-tools.md)
+-   [Development tools](development-tools-overview.md)
 -   [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)
 -   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 -   [Application Explorer](application-explorer.md)
