@@ -271,7 +271,7 @@ Each extended data type has an **Extends** property. The style of inheritance th
 The following table lists the relational operators that can be used in X++. Most of the operators are binary and take two operands. However, the **not** (**!**) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *relationalOperator* *expression2* Syntax for unary operators: *relationalOperator* *expression1*
 
 | Operator | Description                                                                                                                                                  |
-|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------|--------------------------------|
 | like     | The **like** relational operator returns **true** if *expression1* is like *expression2*.                                                                    |
 | ==       | The **equal** relational operator returns **true** if both expressions are equal.                                                                            |
 | &gt;=    | The **greater than or equal to** relational operator returns **true** if *expression1* is greater than or equal to *expression2*.                            |
@@ -280,7 +280,7 @@ The following table lists the relational operators that can be used in X++. Most
 | &lt;     | The **less than** relational operator returns **true** if *expression1* is less than *expression2*.                                                          |
 | !=       | The **not equal** relational operator returns **true** if *expression1* differs from (that is, if it isn't equal to) *expression2*.                          |
 | &&       | The **and** relational operator returns **true** if both *expression1* and *expression2* are true.                                                           |
-| ||       | The **or** relational operator returns **true** if *expression1* or *expression2* is true, or if both are true.                                              |
+| \|\|       | The **or** relational operator returns **true** if *expression1* or *expression2* is true, or if both are true.                                              |
 | !        | The **not** or **unary** relational operator negates the expression. It returns **true** if the expression is false and **false** if the expression is true. |
 
 ### The like operator
