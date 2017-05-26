@@ -40,7 +40,7 @@ This article describes the concept of models and packages. It also explains how 
 To work with models in the model store, you use tools in Microsoft Visual Studio. You can create new models and change parameters for existing models.
 
 ## Conceptual overview
-A model is a group of elements (metadata/source files) that typically constitute a distributable software solution (including customizations of an existing solution). A model is a design-time concept. For example: A warehouse management model, a project accounting model, …etc.). A model always belongs to a package. A package is a deployment and compilation unit of one or more models, it includes model metadata, binaries, and other associated resources. One or more AX packages can be packaged into a deployable package, which is the vehicle used for deployment on runtime environments.
+A model is a group of elements (metadata/source files) that typically constitute a distributable software solution (including customizations of an existing solution). A model is a design-time concept. For example: A warehouse management model, a project accounting model, …etc.). A model always belongs to a package. A package is a deployment and compilation unit of one or more models, it includes model metadata, binaries, and other associated resources. One or more packages can be packaged into a deployable package, which is the vehicle used for deployment on runtime environments.
 Follow [this](https://mix.office.com/watch/ies6lyit6773) Office Mix to learn about models and packages and how they relate to each other.
 
 ## Creating a new model
