@@ -28,3 +28,27 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Process electronic payment remittances for Brazil
+Use this functionality to create the file that must be sent to the bank with the instructions for electronic payment of vendor invoices.
+
+1.	Go to Accounts payable > Payments > Payment journal.
+2.	Click New.
+3.	In the Name field, enter or select a value.
+4.	Click Lines.
+5.	In the Account field, specify the desired values.
+6.	In the Description field, enter or select a value.
+7.	Click Settle transactions.
+8.	In the list, find and select the desired transaction to settle.
+9.	Select the Mark check box.
+10.	Select the Mark check box.
+11.	Click the Payment tab.
+12.	In the Method of payment field, enter or select a value.
+13.	In the Payment specification field, enter or select a value.
+14.	In the Bar code field, type a value.
+15.	Click OK.
+16.	Click Generate payments.
+17.	In the Method of payment field, enter or select a value.
+18.	In the Bank account field, enter or select a value.
+19.	Click OK.
+20.	Click Save.
+21.	Close the page.
+22.	Close the page.
