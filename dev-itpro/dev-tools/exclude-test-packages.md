@@ -2,7 +2,7 @@
 # required metadata
 
 title: Exclude test packages from the build output
-description: The automated build process supports excluding certain packages from being included in the deployable package in the build output.
+description: This topic explains how you can prevent specific packages from being included in the deployable package in the build output that the automated build process generates.
 author: jorisdg
 manager: AnnBe
 ms.date: 05/15/2017
@@ -32,40 +32,47 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Exclude test packages from the build output
 
-With the release of Platform Update 4, the automated build process supports excluding certain packages from being included in the deployable package in the build output. This can be important for customers using automated testing who wish to build and execute their tests, but exclude them from being added in the build's deployable package output.
+In Platform update 4, the automated build process lets you prevent specific packages from being included in the deployable package in the build output. This capability can be important for customers that use automated testing. These customers might want to build and run their tests, but prevent them from being added to the deployable package that the build generates as output.
 
-Customers with an existing build definition from Platform Update 3 or prior who are upgrading will not automatically see their build definitions updated, and will have to perform a few manual edits to the build definition if they wish to use this new capability. See [Update an existing build definition after upgrading to Platform Update 4 or newer](#update-an-existing-build-definition-after-upgrading-to-platform-update-4-or-newer) for instructions on how to add this capability to an existing build definition.
+When customers that have an existing build definition from Platform update 3 or earlier upgrade, they won't see the build definition automatically updated. To use the new feature, these customers must make a few manual edits to the build definition. For information about how to add the new feature to an existing build definition, see the [Update an existing build definition after upgrade to Platform update 4 or later](#update-an-existing-build-definition-after-upgrading-to-platform-update-4-or-newer) section, later in this topic.
 
-The new feature exposes a new optional parameter to the package creation step in the build process. The parameter is managed by a build variable so it can be adjusted easily.
+The new feature exposes a new optional parameter for the package creation step in the build process. Because this parameter is managed by a build variable, you can easily adjust it.
 
-1. In Visual Studio Team Services (VSTS), open the **Build & Release** page. Under **Builds** and **All Definitions** find your build definition. Click on the ellipsis (…) and select **Edit**.
+1. In Microsoft Visual Studio Team Services (VSTS), on the **Build & Release** page, under **Builds**, on the **All Definitions** tab, find your build definition. Click the ellipsis (…), and then click **Edit**.
 
-    ![Edit Build Definition](media/builddef_edit.png)
+    ![Edit the build definition](media/builddef_edit.png)
 
-1. Under the **Variables** tab, the new build definition has a variable named **PackagingExclusions**.
+1. On the **Variables** tab, notice that the new build definition has a variable that is named **PackagingExclusions**.
 
-    ![Package Exclusions Variable](media/builddef_packexclvariable.png)
+    ![PackagingExclusions variable](media/builddef_packexclvariable.png)
 
-To use this new feature, specify a comma separated list of the names of packages you wish to exclude from packaging into the deployable package. For example, if you have a package named "MyCompanysAwesomeTests" as well as a package named "ContosoTaskRecordingTests" the value for your exclusion variable should look as follows:
+1. In the **PackagingExclusions** variable, specify a comma-separated list of the names of packages that should not be packaged into the deployable package.
 
-![Packaging Exclusions Example](media/builddef_packexclexample.png)
+    > [!NOTE]
+    > The name of a package isn't necessarily the name of the model. Instead, the package name is typically the name of the folder where the model resides. Alternatively, you can copy and paste the package name from the descriptor file of one of the package's models. (In the XML, you can find the package name in the **ModelModule** field.)
 
-Note that the name of the package is not necessarily the name of the model, but typically is the name of the folder it resides in. Alternatively, you can copy/paste the package name from one of its models' descriptor files (found in the **ModelModule** field in the XML).
+    For example, you have one package that is named MyCompanysAwesomeTests and another package that is named ContosoTaskRecordingTests, and you want to exclude both these packages from the deployable package. In this case, the value for the **PackagingExclusions** variable will look like this.
 
-Once set, the build process will still build the code and still execute any tests contained in those packages. However, the deployable package created by the build will not include these packages.
+    ![PackagingExclusions example](media/builddef_packexclexample.png)
 
-# Update an existing build definition after upgrading to Platform Update 4 or newer
-Any existing build definitions deployed before Platform Update 4 will need to be manually updated to use this new feature.
+    After you complete this setup, the build process will still build the code and run any tests that the packages contain. However, the deployable package that the build creates won't include those packages.
+
+# Update an existing build definition after upgrade to Platform update 4 or later
+
+To use the new feature, you must manually update any existing build definitions that you deployed before Platform update 4.
 
 > [!NOTE]
-> This feature can only be added to a build definition after updating the build VM to Platform Update 4 or later.
+> The feature can be added to a build definition only after you update the build virtual machine (VM) to Platform update 4 or later.
 
-1. Under the **Variables** tab, click **+ Add** at the bottom of the page. Enter "PackagingExclusions" in the name column, and check the **Settable at queue time** checkbox in the last column.
-2. Open the **Tasks** tab. Find the **Generate Packages** step and select it by clicking on it. On the right side of the page, find the **Arguments** parameter. Click in the textbox and hit the 'End' key or scroll all the way over to the end of the textbox. The new build definition will have a new argument that passes the previously defined variable. On an existing build definition, add a space and the following text to the end of the parameter: *-ExclusionList "$(PackagingExclusions)"*
+1. On the **Variables** tab, click **+ Add** at the bottom of the page.
+1. In the **Name** column, enter **PackagingExclusions**. In the last column, select the **Settable at queue time** check box.
+1. On the **Tasks** tab, find the **Generate Packages** task. Click to select it.
+1. On the right side of the page, find the **Arguments** parameter. Click in the text box, and then press the End key or scroll to the end of the text box. The new build definition will have a new argument that passes the **PackagingExclusions** variable that you defined earlier. However, for an existing build definition, add a space and then the following text to the end of the parameter: **-ExclusionList "$(PackagingExclusions)"**
 
-    Your **Arguments** textbox should now look like this:
+    The **Arguments** text box should now look like this.
 
-    ![Generate Packages Task](media/builddef_generatepack.png)
+    ![Generate Packages task](media/builddef_generatepack.png)
 
-3. Click the **Save** button.
-4. You can now use the feature as described.
+1. Click **Save**.
+
+You can now use the new feature as described.
