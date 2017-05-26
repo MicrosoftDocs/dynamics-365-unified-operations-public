@@ -37,18 +37,17 @@ Use this functionality to create the file that must be sent to the bank with the
 5.	In the Account field, specify the desired values.
 6.	In the Description field, enter or select a value.
 7.	Click Settle transactions.
-8.	In the list, find and select the desired transaction to settle.
-9.	Select the Mark check box.
-10.	Select the Mark check box.
-11.	Click the Payment tab.
-12.	In the Method of payment field, enter or select a value.
-13.	In the Payment specification field, enter or select a value.
-14.	In the Bar code field, type a value.
-15.	Click OK.
-16.	Click Generate payments.
-17.	In the Method of payment field, enter or select a value.
-18.	In the Bank account field, enter or select a value.
-19.	Click OK.
-20.	Click Save.
-21.	Close the page.
-22.	Close the page.
+8.	In the list, find and select the desired transactions to settle.
+9.	Click the Payment tab.
+10.	In the Method of payment field, enter or select a value.
+11.	In the Payment specification field, enter or select a value.
+12.	In the Bar code field, type a value.
+13.	Click OK.
+14.	Click Generate payments.
+15.	In the Method of payment field, enter or select a value.
+16.	In the Bank account field, enter or select a value.
+17.	Click OK.
+18.	Click Save.
+19.	Close the page.
+20.	Close the page.
+
