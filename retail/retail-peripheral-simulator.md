@@ -309,7 +309,8 @@ To view the values entered in the free text field, use the Lock and claim button
 Character set: Identifies the code page for the characters being sent to the device. For specific code page identifiers, see: https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx
 
 **Cash drawer**
-Open cash drawer: Opens the cash drawer.
+
+**Open cash drawer**: Opens the cash drawer.
 Check drawer status:Checks the drawer to determine if it is open or closed. 
 Drawer status: Displays the status of the drawer. 
 
