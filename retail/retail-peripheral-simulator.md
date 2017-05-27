@@ -233,6 +233,46 @@ Payment terminal**- Requires presence of a payment connector. For more informati
 Below the list of supported devices, there is a **Settings** tab. The settings tab can be used to specify how the POS simulator should communicate with the devices being tested. If **Runtime** is selected, the POS simulator will communicate with the device in a method similar to how the MPOS with built-in hardware station would communicate. Using **Win32**, however, makes the POS simulator communicate with the device directly, similar to the way a standalone hardware station would communicate.  Also on the settings page, details can be provided around who is performing the tests. Those details are important for manufacturers performing compatibility testing, which is explained in a section later in this page.
 
 ## Configuring the POS simulator 
+For each supported device class, the POS simulator supports setting up multiple devices. For example, several printers can be configured in the POS simulator and within the printer tab, the user can cycle through configured devices testing as needed. 
+
+The setup parameters for different devices depend on the type selected. To set up a new device, select the class of device to be tested and then click the ‘+’ symbol. This will display the device parameters slide out menu. To later edit a device that has already been created, use the < and > selectors to find the appropriate device, then click Edit
+
+**OPOS devices**
+When setting up devices as **OPOS**, the following values are available:
+
+**Device driver name (Required)**- This list will be populated with OPOS service objects installed on the local machine where devices are being tested. Device names can also be manually entered here. 
+
+Remember: OPOS common control objects must be installed to test OPOS devices using the POS simulator. This is in addition to the service objects provided by the manufacturer.
+
+**Device model (Required)**- Free text that allows the device model to be specified. 
+
+**Connection type**- Specify how the device is connected.
+**Firmware version**- The firmware version for the device currently being configured. 
+**Driver version**- The driver version for the device currently being configured. 
+**Driver download link**- The link where the driver for the device can be downloaded. 
+
+Note: All fields are required when configuring devices for testing to confirm compatibility with the point of sale.
+
+When the device is configured to the level required for either casual testing or compatibility testing, click **Save device**.
+
+**Network devices**
+The POS simulator can be used to test network devices. The following network devices are supported out of the box:
+**Cash drawer**: APG Atwood
+**Receipt printer**: Star TSP650II
+**Payment terminal**: May also be configured as network devices, but any payment terminal testing requires a custom payment connector. No payment terminals are supported out of the box. 
+
+Upon selecting **Network** for device type, the following parameters are available:
+**Device driver name** (Required): Selects the device driver to be selected.  
+**IP address** (Required): IP address of the device being tested.
+**Port** (Required): Port number be specified when communicating with the device.
+**Device model** (Required): Used to identify the device model number. 
+**Firmware version**: Version of firmward installed on the device being tested.
+**Driver version**: Version of device driver that is being tested. 
+
+Note: In the case of device driver name, model and version, these fields are useful for identification of the version of device specific implementation that is being tested. Devices tend to have their own communication protocol over IP, so custom implementations should be labeled with specific attributes. 
+
+When the device is configured to the level required for either casual testing or compatibility testing, click **Save device**. 
+
 
 
 See also
