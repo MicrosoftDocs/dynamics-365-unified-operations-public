@@ -220,15 +220,15 @@ The POS simulator provides the ability for device manufacturers, ISVs and retail
  ## Using the POS simulator
  To start the POS simulator, click Start on your computer, type Peripheral simulator for Retail, and then select the app when it appears in the search results. After you start the peripheral simulator, click Use virtual peripherals. The supported devices will be listed as tabs on the left side of the window. To view a specific device, click the tab for that device.
  
-Devices supported by the POS simulator are as follows:
-**Line display
-Cash drawer
-MSR
-PIN pad
-Printer
-Scale
-Signature capture pad
-Bar code scanner
+Devices supported by the POS simulator are as follows:  
+**Line display  
+Cash drawer  
+MSR  
+PIN pad  
+Printer  
+Scale  
+Signature capture pad  
+Bar code scanner  
 Payment terminal**- Requires presence of a payment connector. For more information see < Implementing a payment connector and payment device (white paper)>
 
 Below the list of supported devices, there is a **Settings** tab. The settings tab can be used to specify how the POS simulator should communicate with the devices being tested. If **Runtime** is selected, the POS simulator will communicate with the device in a method similar to how the MPOS with built-in hardware station would communicate. Using **Win32**, however, makes the POS simulator communicate with the device directly, similar to the way a standalone hardware station would communicate.  Also on the settings page, details can be provided around who is performing the tests. Those details are important for manufacturers performing compatibility testing, which is explained in a section later in this page.
@@ -238,56 +238,55 @@ For each supported device class, the POS simulator supports setting up multiple 
 
 The setup parameters for different devices depend on the type selected. To set up a new device, select the class of device to be tested and then click the ‘+’ symbol. This will display the device parameters slide out menu. To later edit a device that has already been created, use the < and > selectors to find the appropriate device, then click Edit
 
-**OPOS devices**
+**OPOS devices**  
 When setting up devices as **OPOS**, the following values are available:
 
 **Device driver name (Required)**- This list will be populated with OPOS service objects installed on the local machine where devices are being tested. Device names can also be manually entered here. 
 
 Remember: OPOS common control objects must be installed to test OPOS devices using the POS simulator. This is in addition to the service objects provided by the manufacturer.
 
-**Device model (Required)**- Free text that allows the device model to be specified. 
-
-**Connection type**- Specify how the device is connected.
-**Firmware version**- The firmware version for the device currently being configured. 
-**Driver version**- The driver version for the device currently being configured. 
+**Device model (Required)**- Free text that allows the device model to be specified.  
+**Connection type**- Specify how the device is connected.  
+**Firmware version**- The firmware version for the device currently being configured.  
+**Driver version**- The driver version for the device currently being configured.  
 **Driver download link**- The link where the driver for the device can be downloaded. 
 
 Note: All fields are required when configuring devices for testing to confirm compatibility with the point of sale.
 
 When the device is configured to the level required for either casual testing or compatibility testing, click **Save device**.
 
-**Network devices**
-The POS simulator can be used to test network devices. The following network devices are supported out of the box:
-**Cash drawer**: APG Atwood
-**Receipt printer**: Star TSP650II
+**Network devices**  
+The POS simulator can be used to test network devices. The following network devices are supported out of the box:  
+**Cash drawer**: APG Atwood  
+**Receipt printer**: Star TSP650II  
 **Payment terminal**: May also be configured as network devices, but any payment terminal testing requires a custom payment connector. No payment terminals are supported out of the box. 
 
-Upon selecting **Network** for device type, the following parameters are available:
-**Device driver name** (Required): Selects the device driver to be selected.  
-**IP address** (Required): IP address of the device being tested.
-**Port** (Required): Port number be specified when communicating with the device.
-**Device model** (Required): Used to identify the device model number. 
-**Firmware version**: Version of firmward installed on the device being tested.
+Upon selecting **Network** for device type, the following parameters are available:  
+**Device driver name** (Required): Selects the device driver to be selected.  
+**IP address** (Required): IP address of the device being tested.  
+**Port** (Required): Port number be specified when communicating with the device.  
+**Device model** (Required): Used to identify the device model number.  
+**Firmware version**: Version of firmward installed on the device being tested.  
 **Driver version**: Version of device driver that is being tested. 
 
 Note: In the case of device driver name, model and version, these fields are useful for identification of the version of device specific implementation that is being tested. Devices tend to have their own communication protocol over IP, so custom implementations should be labeled with specific attributes. 
 
 When the device is configured to the level required for either casual testing or compatibility testing, click **Save device**. 
 
-**Windows devices**
+**Windows devices**  
 Windows printers can also be tested using the POS simulator. Setup parameters are the same as for OPOS devices.
 
-**Device driver name** (Required)- This list will be populated with Windows printers installed on the local machine where devices are being tested. Device names can also be manually entered here. 
-**Device model** (Required)- Free text that allows the device model to be specified. 
-**Connection type**- Specify how the device is connected.Firmware version- The firmware version for the device currently being configured. 
-**Driver version**- The driver version for the device currently being configured. 
+**Device driver name** (Required)- This list will be populated with Windows printers installed on the local machine where devices are being tested. Device names can also be manually entered here.   
+**Device model** (Required)- Free text that allows the device model to be specified.  
+**Connection type**- Specify how the device is connected.Firmware version- The firmware version for the device currently being configured.  
+**Driver version**- The driver version for the device currently being configured.  
 **Driver download link**- The link where the driver for the device can be downloaded. 
 
 Note: All fields are required when configuring devices for testing to confirm compatibility with the point of sale. 
 
 When the device is configured to the level required for either casual testing or compatibility testing, click **Save device**.
 
-**Testing devices**
+**Testing devices**  
 Each device class has specific testing capabilities unique to that class of device. 
 
 In addition to device specific tests,  each device has a **Self-test function**. When testing a device for compatibility, set up the device and then click the **Green arrow** to begin the self-test. Each device has a different set of tests that are performed to determine the devices compatibility with the point of sale (in **Runtime** mode) and standalone hardware station(in **Win32** mode). Some devices require user interaction for the test to be completed. For example, the self-test for bar code scanner will instruct the user to scan a bar code to complete the self-test.
@@ -296,15 +295,15 @@ Results from each self-test and manual operation are displayed in the **Log** se
 
 To abort the self-test, such as in cases where the device becomes non-responsive, click the **Red square**. The red square can only be used when a self-test is in progress. 
 
-**Line display**
+**Line display**  
 **Settings tab**:
-The settings tab for the line display includes the following free text fields:
-**Display text**: The description of the product.
-**Quantity**: The quantity of the product.
-**Price**: The price of the product.
+The settings tab for the line display includes the following free text fields:  
+**Display text**: The description of the product.  
+**Quantity**: The quantity of the product.  
+**Price**: The price of the product.  
 To view the values entered in the free text field, use the Lock and claim button to claim the device. Next click Display text and observe the text that was sent to the device. Click Clear text to clear the text from the line display and then click Release to release the line display, making it usable for other processes. 
 
-**Advanced tab**:
+**Advanced tab**:  
 **Binary conversion**: Some line displays require that text is converted into binary format. See the device’s documentation to determine if this is necessary. 
 
 Character set: Identifies the code page for the characters being sent to the device. For specific code page identifiers, see: https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx
@@ -312,18 +311,15 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Cash drawer**
 
 **Open cash drawer**: Opens the cash drawer.  
-**Check drawer status**:Checks the drawer to determine if it is open or closed. 
-Drawer status: Displays the status of the drawer. 
+**Check drawer status**:Checks the drawer to determine if it is open or closed.  
+**Drawer status**: Displays the status of the drawer. 
 
-**MSR**
-**Open and claim MSR**: Used to prepare the POS simulator to receive data from the MSR.
-
-**Release and close MSR**: Closes the MSR device when testing is completed.
-
-**Card info**: Displays data from the card that was scanned on the MSR device.
-
-**Note**: Actual credit cards should never be used for device testing. Even testing with expired credit cards is
-discourage. 
+**MSR**  
+**Open and claim MSR**: Used to prepare the POS simulator to receive data from the MSR.  
+**Release and close MSR**: Closes the MSR device when testing is completed.  
+**Card info**: Displays data from the card that was scanned on the MSR device.  
+    **Note**: Actual credit cards should never be used for device testing. Even testing with expired credit cards is
+    discourage. 
 
 **PIN pad**
 
