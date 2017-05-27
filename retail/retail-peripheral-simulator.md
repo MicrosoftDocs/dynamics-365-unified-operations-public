@@ -357,17 +357,60 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Override**: Overrides previous commands sent to device when device is not responding.  
 **Lock**: Locks the device and claims for use by the POS simulator.  
 **Get entry**: Requests the signature from the device.  
-Cancel operation: Cancels the signature request.  
-Release: Releases the device for use by other processes. 
+**Cancel operation**: Cancels the signature request.  
+**Release**: Releases the device for use by other processes. 
 
-Bar code scanner  
-Open and claim scanner: Opens and claims the scanner. The POS simulator can receive scan events after this is completed successfully.  
-Release and close the scanner: Makes the scanner available for other processes.  
-Scanned information: Displays the data received from the bar code scanner. 
+**Bar code scanner**  
+**Open and claim scanner**: Opens and claims the scanner. The POS simulator can receive scan events after this is completed successfully.  
+**Release and close the scanner**: Makes the scanner available for other processes.  
+**Scanned information**: Displays the data received from the bar code scanner.
 
+**Payment terminal**  
+**On each tab**:  
+**Select an operation**: Allows the user to select a specific operation to be performed on the device. Options include All, Pay by card, Refund by card and Void payment.  
+**Lock and claim**: Prepares the device for use with the POS simulator.  
+**Update line items**: Sends specified line item details to the device.  
+**Authorize payment**: Instructs the payment connector to request payment authorization.  
+**Capture payment**: Instructs the the payment connector to capture the previous authorization.  
+**Release**: Releases the device.
 
+**Settings tab**:Properties sent to the device when requesting a payment authorization.  
+**Invoice number**: Used to specify invoice number generated at point of sale.  
+**Test mode**: Property to indicate that a test transaction is being performed  
+**Payment connector**: The name of the payment connector to be used.  
+**Debit cashback limit**: The limit of cash back that can be requested on the device when performing a debit transaction.  
+**Locale**: The locale in use. Locales are defined in the POS simulator configuration file.  
+**Maximum amount allowed**: The maximum amount that can be processed for a given transaction.  
+**Minimum amount allowed**: The minimum amount that can be processed for a given transaction.  
+**Signature capture minimum amount**: The amount below which the customer is not prompted to provide a signature.  
+**Terminal ID**: The terminal ID included in the transaction properties as provided by the processor.
 
+**Lines tab**:Data that can be sent to the device when being used as a line display.  
+**Description**: Product desctiptoin for the transaction line to be displayed on the device.  
+**Discount**: The discount amount applied to the transaction line.
+**Extended line with tax**: The Product line amount with tax.
+**Line item ID**: Product ID for the transaction line.  
+**Quantity**: The quantity for the transaction line.  
+**Stock keeping unit**: The unit of measure to display on the device.  
+**Unit price**: The sell price for the transaction line.  
+**Universal product code**: The bar code scanned for the transaction line.  
+**Is voided**: Indicates that the transaction line has been voided from the transaction. 
 
+**Advanced tab**:Subtotal information to be displayed on the device.  
+**Discount amount**: Total amount for discounts on the transaction.  
+**Subtotal amount**: Subtotal for the transaction, not including tax.  
+**Tax amount**: Tax amount for the transaction  
+**Total amount**: Total amount due including tax and discounts.  
+**Currency**: Currency used for the transaction.  
+
+**Payment info tab**:Displays data received from the payment connector after an authorization has been processed.  
+**Is approved**: Indicates if the authorization request is approved.  
+**Card number masked**: The masked card number provided by the device. Typically only shows the last 4 digits of the card number.  
+**Card type**: Displays the issue for the card used in the transaction.  
+**Approved amount**: Amount authorized for the card payment  
+**Payment SDK data**: Additional data that can be provided by the payment SDK such as authorization code and other data provided by the payment processor.  
+**Signature data**: Hexadecimal signature data provided by the device.  
+**Payment errors**: Errors that may have transpired during the authorization request. 
 
 
 See also
