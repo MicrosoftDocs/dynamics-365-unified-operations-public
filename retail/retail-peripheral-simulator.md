@@ -44,7 +44,7 @@ The Peripheral Simulator for Retail is a utility provided by Microsoft as part o
 
 The virtual peripheral simulator is primarily provided to support testing of scenarios that would normally require physical point of sale peripheral devices, whereas the POS simulator is used to test physical peripheral devices for compatibility with Microsoft Dynamics 365 for Retail without the need to deploy the point of sale client. 
 
-## Install the peripheral simulator
+## Install the Peripheral simulator for Retail
 1.  Go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
 2.  Click **Download**, and then click **PeripheralSimulator**. **Note:** You must turn off pop-up blockers before you can download the peripheral simulator.
 3.  After the download is completed, open the **Downloads** folder, and double-click **VirtualPeripherals.msi** to start the installer.
@@ -52,22 +52,24 @@ The virtual peripheral simulator is primarily provided to support testing of sce
 
 In addition to the peripheral simulator, you must install the common control objects from Monroe Consulting Services. Otherwise, the peripheral simulator won't work correctly. To download the common control objects, go to <http://monroecs.com/oposccos_current.htm>.
 
+Virtual peripheral simulator overview
+--------
+The virtual peripheral simulator is a tool included in the Peripheral simulator for Retail assists in the set up, test, and troubleshooting of peripheral devices that are used in retail environments. It can be used to streamline the testing of retail peripherals, and to isolate issues that are caused by incorrect setup or malfunctioning device drivers. The peripheral simulator includes a desktop program that features virtual versions of devices that Dynamics 365 for Retail supports. A section for each virtual device shows the interaction between the device and the retail point of sale (POS). You can also use it to provide input that is valid for various POS scenarios. The peripheral simulator supports interaction between the POS and the following virtual devices:
 
-The Microsoft Dynamics 365 for Operations - Retail peripheral simulator is a tool that helps you set up, test, and troubleshoot peripheral devices that are used in retail environments. You can use the peripheral simulator to streamline the testing of retail peripherals, and to isolate issues that are caused by incorrect setup or malfunctioning device drivers. The peripheral simulator includes a desktop program that features virtual versions of devices that Dynamics 365 for Operations - Retail supports. A section for each virtual device shows the interaction between the device and the retail point of sale (POS). You can also use it to provide input that is valid for various POS scenarios. The peripheral simulator supports interaction between the POS and the following virtual devices:
-
--   **Printer** – The peripheral simulator can show receipts that are configured for a POS printer.
+-   **Printer** – The virtual peripheral simulator can show receipts that are configured for a POS printer.
 -   **Line display** – You can configure a virtual line display to show activity on a physical line display.
--   **Magnetic stripe reader (MSR)** – You can send simulated magnetic stripe events to the POS from the peripheral simulator.
+-   **Magnetic stripe reader (MSR)** – You can send simulated magnetic stripe events to the POS from the virtual peripheral simulator.
 -   **Drawer** – You can simulate a physical cash drawer.
 -   **Drawer 2** – By setting up a second cash drawer in the peripheral simulator, you can simulate scenarios that involve a single POS register that has two active shifts.
--   **Scanner** – The virtual bar code scanner that the peripheral simulator supports can issue bar code scan events.
+-   **Scanner** – The virtual bar code scanner that the virtual peripheral simulator supports can issue bar code scan events.
 -   **Scale** – A virtual scale lets you simulate the interaction of weighed items with the POS.
 -   **Personal identification number (PIN) pad** – You can simulate PIN pad operations. **Note:** You must implement support for a physical PIN pad through the payment connector.
--   **Signature capture** – The peripheral simulator includes a virtual signature capture device that you can set up to prompt for signatures that are required for some tenders, such as customer account payments.
+-   **Signature capture** – The virtual peripheral simulator includes a virtual signature capture device that you can set up to prompt for signatures that are required for some tenders, such as customer account payments.
+-   **Payment terminal**- A virtual payment terminal can be used in conjunction with a custom payment connector to test API calls from the point of sale to a virtual payment device. Use of the virtual payment terminal requires the implementation of a payment connector. For more information see < Implementing a payment connector and payment device (white paper)>
 
-You can also use the peripheral simulator to simulate keyboard wedge events that originate from a bar code scanner and MSR. The virtual peripheral simulator specifically supports Object Linking and Embedding for Retail POS (OPOS) devices.
+You can also use the virtual peripheral simulator to simulate keyboard wedge events that originate from a bar code scanner and MSR. The virtual peripheral simulator specifically supports Object Linking and Embedding for Retail POS (OPOS) devices.
 
-## Key scenarios
+## Key scenarios- Virtual peripheral simulator
 ### Troubleshooting
 
 You can use the peripheral simulator to troubleshoot device setup. If you don't have the peripheral simulator or a second device of the same class, it can be difficult to determine where issues originate. However, when you have the peripheral simulator, you can set up virtual devices, and run the same code paths and business logic that are used for physical devices. From the perspective of the peripheral simulator, the main difference between virtual devices and physical devices is the service object, or device driver. For physical devices, the service object is provided by the device manufacturer. By contrast, for the peripheral simulator, the service objects are provided as part of the peripheral simulator. When the peripheral simulator is working correctly, if a device doesn't work correctly after the device name in the hardware profile is changed to the name of a real device, you can assume that there's an issue with the service object that the manufacturer provided.
@@ -80,7 +82,7 @@ You can use the peripheral simulator to add a realistic layer to cashier trainin
 
 You can use the peripheral simulator to test product bar codes, receipt formats, and so on, without having to deploy physical hardware in a virtual environment. Because physical hardware isn't required, and you don't have to deploy a POS client on a hardware station or a physical computer, you can more quickly test changes that are made in the back office.
 
-## Set up the peripheral simulator
+## Set up the virtual peripheral simulator
 ### Set up a hardware profile
 
 1.  To set up the peripheral simulator, go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
@@ -121,15 +123,8 @@ You can use the peripheral simulator to test product bar codes, receipt formats,
 
 After the data is synchronized, the new hardware profile and changes on the register are available in the channel database.
 
-## Install the peripheral simulator
-1.  Go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
-2.  Click **Download**, and then click **PeripheralSimulator**. **Note:** You must turn off pop-up blockers before you can download the peripheral simulator.
-3.  After the download is completed, open the **Downloads** folder, and double-click **VirtualPeripherals.msi** to start the installer.
-4.  Install the peripheral simulator by using the default settings.
-
-
-## Using the peripheral simulator
-To start the peripheral simulator, click **Start** on your computer, type **Retail peripheral simulator**, and then select the app when it appears in the search results. After you start the peripheral simulator, click a device name to see the supported devices. These devices will be listed as tabs on the left side of the window. To view a specific device, click the tab for that device.
+## Using the virtual peripheral simulator
+To start the virtual peripheral simulator, click **Start** on your computer, type **Peripheral simulator for Retail**, and then select the app when it appears in the search results. After you start the peripheral simulator, click Use virtual peripherals. The supported devices will be listed as tabs on the left side of the window. To view a specific device, click the tab for that device.
 
 ### Line display capabilities
 
@@ -213,6 +208,7 @@ You can edit the peripheral simulator's configuration file to more appropriately
 
 ## Troubleshooting
 Activities for the peripheral simulator are logged within the peripheral simulator. You can find the log at C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. The peripheral simulator also reports issues to the Windows event log, which you can access at **Application and Services Logs** &gt; **Microsoft** &gt; **DynamicsAX**. If changes that you made to the hardware profile or other areas aren't evident when you use MPOS or the peripheral simulator, check the distribution scheduler jobs that you used to synchronize the data to the channel database. If the changes were synchronized but still aren't evident at the POS, restart the POS client. Changes to configured cash drawers aren't effective until a new shift is created. Therefore, if you make changes to cash drawers, make sure that you always close the existing shift to test the new cash drawer setup. Sometimes, if a manufacturer's driver is installed after the common control objects from Monroe Consulting Services, the driver can cause the common control objects to stop working correctly. In this case, you should reinstall the common control objects.
+
 
 See also
 --------
