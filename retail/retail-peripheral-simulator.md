@@ -311,7 +311,7 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Cash drawer**
 
 **Open cash drawer**: Opens the cash drawer.
-Check drawer status:Checks the drawer to determine if it is open or closed. 
+**Check drawer status**:Checks the drawer to determine if it is open or closed. 
 Drawer status: Displays the status of the drawer. 
 
 **MSR**
