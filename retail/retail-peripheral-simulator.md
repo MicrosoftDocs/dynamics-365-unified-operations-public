@@ -314,6 +314,7 @@ Check drawer status:Checks the drawer to determine if it is open or closed.
 Drawer status: Displays the status of the drawer. 
 
 **MSR**
+
 **Open and claim MSR**: Used to prepare the POS simulator to receive data from the MSR.
 Release and close MSR: Closes the MSR device when testing is completed.
 Card info: Displays data from the card that was scanned on the MSR device.
