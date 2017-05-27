@@ -321,54 +321,47 @@ Character set: Identifies the code page for the characters being sent to the dev
     **Note**: Actual credit cards should never be used for device testing. Even testing with expired credit cards is
     discourage. 
 
-**PIN pad**
-
-**Appears on both tabs**:
-
-**Lock**: Locks the PIN pad device for use with the POS simulator.
-
-**Get entry**: Enables the POS simulator to receive PIN data.
-
-**Cancel operation**: Cancels the request sent to the PIN pad.
-
+**PIN pad**  
+**Appears on both tabs**:  
+**Lock**: Locks the PIN pad device for use with the POS simulator.  
+**Get entry**: Enables the POS simulator to receive PIN data.  
+**Cancel operation**: Cancels the request sent to the PIN pad.  
 **Release**: Releases the PIN pad device. 
 
-**Settings tab**:
+**Settings tab**:  
+**Amount**: The amount to send to the PIN pad device for customer acceptance.  
+**Account number**: Specify account number if required.  
+Encrypted PIN: Displays the encrypted PIN received from the device.  
+Additional security data: Used to specify cryptography in use for encrypted PIN.
 
-**Amount**: The amount to send to the PIN pad device for customer acceptance.
-
-**Account number**: Specify account number if required. 
-Encrypted PIN: Displays the encrypted PIN received from the device.
-Additional security data: Used to specify cryptography in use for encrypted PIN. 
-Advanced tab: 
-Timeout: Specify the timeout in seconds when waiting for a response from the device.
-Exclusive: Used to require that the PIN pad device is claimed before being enabled. 
+Advanced tab:  
+Timeout: Specify the timeout in seconds when waiting for a response from the device.  
+Exclusive: Used to require that the PIN pad device is claimed before being enabled.  
 Override: Overrides previous commands sent to device when device is not responding.
 
-Scale
-Timeout: Specifies the timeout interval. Product should be put on the scale before reading the weight. If the scale does not respond within the specified timeout, the request will cancel. 
-Weight: Displays the weight value read from the scale.
+Scale  
+Timeout: Specifies the timeout interval. Product should be put on the scale before reading the weight. If the scale does not respond within the specified timeout, the request will cancel.  
+Weight: Displays the weight value read from the scale.  
 Read: Requests the current weight from the scale.
 
-Signature capture
-Settings tab:
-Form name: Some signature captures require a form name when sending the signature request. 
-Signature (in HEX): The hex value for the signature data received from the device.
+Signature capture  
+Settings tab:  
+Form name: Some signature captures require a form name when sending the signature request.  
+Signature (in HEX): The hex value for the signature data received from the device.  
 Rendered signature: The image of the signature received from the device. 
 
 Advanced tab:  
-Timeout: Specifies the timeout interval. If the signature capture device does not respond within the specified timeout, the request will cancel. 
-Exclusive: Used to require that the PIN pad device is claimed before being enabled. 
-Override: Overrides previous commands sent to device when device is not responding.
-Lock: Locks the device and claims for use by the POS simulator.
-Get entry: Requests the signature from the device.
-Cancel operation: Cancels the signature request.
+Timeout: Specifies the timeout interval. If the signature capture device does not respond within the specified timeout, the request will cancel.  
+Exclusive: Used to require that the PIN pad device is claimed before being enabled.  
+Override: Overrides previous commands sent to device when device is not responding.  
+Lock: Locks the device and claims for use by the POS simulator.  
+Get entry: Requests the signature from the device.  
+Cancel operation: Cancels the signature request.  
 Release: Releases the device for use by other processes. 
 
-Bar code scanner
-
-Open and claim scanner: Opens and claims the scanner. The POS simulator can receive scan events after this is completed successfully. 
-Release and close the scanner: Makes the scanner available for other processes.
+Bar code scanner  
+Open and claim scanner: Opens and claims the scanner. The POS simulator can receive scan events after this is completed successfully.  
+Release and close the scanner: Makes the scanner available for other processes.  
 Scanned information: Displays the data received from the bar code scanner. 
 
 
