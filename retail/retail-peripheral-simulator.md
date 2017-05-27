@@ -297,6 +297,7 @@ To abort the self-test, such as in cases where the device becomes non-responsive
 
 ## Device-specific settings  
 **Line display**  
+
 **Settings tab**:
 The settings tab for the line display includes the following free text fields:  
 **Display text**: The description of the product.  
@@ -316,6 +317,7 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Drawer status**: Displays the status of the drawer. 
 
 **MSR**  
+
 **Open and claim MSR**: Used to prepare the POS simulator to receive data from the MSR.  
 **Release and close MSR**: Closes the MSR device when testing is completed.  
 **Card info**: Displays data from the card that was scanned on the MSR device.  
@@ -323,6 +325,7 @@ Character set: Identifies the code page for the characters being sent to the dev
     discourage. 
 
 **PIN pad**  
+
 **Appears on both tabs**:  
 **Lock**: Locks the PIN pad device for use with the POS simulator.  
 **Get entry**: Enables the POS simulator to receive PIN data.  
@@ -341,11 +344,13 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Override**: Overrides previous commands sent to device when device is not responding.
 
 **Scale**  
+
 **Timeout**: Specifies the timeout interval. Product should be put on the scale before reading the weight. If the scale does not respond within the specified timeout, the request will cancel.  
 **Weight**: Displays the weight value read from the scale.  
 **Read**: Requests the current weight from the scale.
 
-**Signature capture**  
+**Signature capture** 
+
 **Settings tab**:  
 **Form name**: Some signature captures require a form name when sending the signature request.  
 **Signature (in HEX)**: The hex value for the signature data received from the device.  
@@ -360,12 +365,14 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Cancel operation**: Cancels the signature request.  
 **Release**: Releases the device for use by other processes. 
 
-**Bar code scanner**  
+**Bar code scanner**
+
 **Open and claim scanner**: Opens and claims the scanner. The POS simulator can receive scan events after this is completed successfully.  
 **Release and close the scanner**: Makes the scanner available for other processes.  
 **Scanned information**: Displays the data received from the bar code scanner.
 
 **Payment terminal**  
+
 **On each tab**:  
 **Select an operation**: Allows the user to select a specific operation to be performed on the device. Options include All, Pay by card, Refund by card and Void payment.  
 **Lock and claim**: Prepares the device for use with the POS simulator.  
