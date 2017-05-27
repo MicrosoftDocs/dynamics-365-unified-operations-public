@@ -41,8 +41,7 @@ Overview
 --------
 
 The Peripheral Simulator 
-for Retail is a utility provided by   
-Microsoft as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a virtual peripheral simulator and a point-of sale(POS) simulator. 
+for Retail is a utility provided by Microsoft as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a virtual peripheral simulator and a point-of sale(POS) simulator. 
 
 The virtual peripheral simulator is primarily provided to support testing of scenarios that would normally require physical point of sale peripheral devices, whereas the POS simulator is used to test physical peripheral devices for compatibility with Microsoft Dynamics 365 for Retail without the need to deploy the point of sale client. 
 
@@ -361,7 +360,7 @@ Form name: Some signature captures require a form name when sending the signatur
 Signature (in HEX): The hex value for the signature data received from the device.
 Rendered signature: The image of the signature received from the device. 
 
-Advanced tab: 
+Advanced tab:  
 Timeout: Specifies the timeout interval. If the signature capture device does not respond within the specified timeout, the request will cancel. 
 Exclusive: Used to require that the PIN pad device is claimed before being enabled. 
 Override: Overrides previous commands sent to device when device is not responding.
