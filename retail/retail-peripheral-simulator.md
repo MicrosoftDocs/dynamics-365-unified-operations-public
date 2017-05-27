@@ -316,21 +316,31 @@ Drawer status: Displays the status of the drawer.
 
 **MSR**
 **Open and claim MSR**: Used to prepare the POS simulator to receive data from the MSR.
-Release and close MSR: Closes the MSR device when testing is completed.
-Card info: Displays data from the card that was scanned on the MSR device.
 
-Note: Actual credit cards should never be used for device testing. Even testing with expired credit cards is
+**Release and close MSR**: Closes the MSR device when testing is completed.
+
+**Card info**: Displays data from the card that was scanned on the MSR device.
+
+**Note**: Actual credit cards should never be used for device testing. Even testing with expired credit cards is
 discourage. 
 
-PIN pad
-Appears on both tabs:
-Lock: Locks the PIN pad device for use with the POS simulator.
-Get entry: Enables the POS simulator to receive PIN data.
-Cancel operation: Cancels the request sent to the PIN pad.
-Release: Releases the PIN pad device. 
-Settings tab:
-Amount: The amount to send to the PIN pad device for customer acceptance.
-Account number: Specify account number if required. 
+**PIN pad**
+
+**Appears on both tabs**:
+
+**Lock**: Locks the PIN pad device for use with the POS simulator.
+
+**Get entry**: Enables the POS simulator to receive PIN data.
+
+**Cancel operation**: Cancels the request sent to the PIN pad.
+
+**Release**: Releases the PIN pad device. 
+
+**Settings tab**:
+
+**Amount**: The amount to send to the PIN pad device for customer acceptance.
+
+**Account number**: Specify account number if required. 
 Encrypted PIN: Displays the encrypted PIN received from the device.
 Additional security data: Used to specify cryptography in use for encrypted PIN. 
 Advanced tab: 
@@ -359,6 +369,7 @@ Cancel operation: Cancels the signature request.
 Release: Releases the device for use by other processes. 
 
 Bar code scanner
+
 Open and claim scanner: Opens and claims the scanner. The POS simulator can receive scan events after this is completed successfully. 
 Release and close the scanner: Makes the scanner available for other processes.
 Scanned information: Displays the data received from the bar code scanner. 
