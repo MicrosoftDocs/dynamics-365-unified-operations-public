@@ -374,7 +374,8 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Capture payment**: Instructs the the payment connector to capture the previous authorization.  
 **Release**: Releases the device.
 
-**Settings tab**:Properties sent to the device when requesting a payment authorization.  
+**Settings tab**  
+Properties sent to the device when requesting a payment authorization.  
 **Invoice number**: Used to specify invoice number generated at point of sale.  
 **Test mode**: Property to indicate that a test transaction is being performed  
 **Payment connector**: The name of the payment connector to be used.  
@@ -385,7 +386,8 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Signature capture minimum amount**: The amount below which the customer is not prompted to provide a signature.  
 **Terminal ID**: The terminal ID included in the transaction properties as provided by the processor.
 
-**Lines tab**:Data that can be sent to the device when being used as a line display.  
+**Lines tab**  
+Data that can be sent to the device when being used as a line display.  
 **Description**: Product desctiptoin for the transaction line to be displayed on the device.  
 **Discount**: The discount amount applied to the transaction line.
 **Extended line with tax**: The Product line amount with tax.
@@ -396,14 +398,16 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Universal product code**: The bar code scanned for the transaction line.  
 **Is voided**: Indicates that the transaction line has been voided from the transaction. 
 
-**Advanced tab**:Subtotal information to be displayed on the device.  
+**Advanced tab**  
+Subtotal information to be displayed on the device.  
 **Discount amount**: Total amount for discounts on the transaction.  
 **Subtotal amount**: Subtotal for the transaction, not including tax.  
 **Tax amount**: Tax amount for the transaction  
 **Total amount**: Total amount due including tax and discounts.  
 **Currency**: Currency used for the transaction.  
 
-**Payment info tab**:Displays data received from the payment connector after an authorization has been processed.  
+**Payment info tab**  
+Displays data received from the payment connector after an authorization has been processed.  
 **Is approved**: Indicates if the authorization request is approved.  
 **Card number masked**: The masked card number provided by the device. Typically only shows the last 4 digits of the card number.  
 **Card type**: Displays the issue for the card used in the transaction.  
@@ -412,7 +416,19 @@ Character set: Identifies the code page for the characters being sent to the dev
 **Signature data**: Hexadecimal signature data provided by the device.  
 **Payment errors**: Errors that may have transpired during the authorization request. 
 
+Device manufacturer instructions
+--------
 
+To submit a device to be listed for compatibility with Microsoft Dynamics 365 for Retail. The following steps must be performed:  
+**Settings**:Within the settings tab of the POS simulator, specify the contact information requested. All fields are required. The personal contact information is for Microsoft internal use only in cases of issues with devices that have been submitted as compatible.  
+**Devices**: For each device, set up the device and provide values for all fields including firmware version, device model number, driver download site etc. For each permuatation, a new device must be specified. For example, if a given device mode is tested for USB and Serial, then two compatibility reports just be submitted. Any variance from one device to the next should be indicated so that when listing devices for compatibility, very specific information can be provide to those implementing the devices. The more information that can be provided about device compatibility, the higher the success rate for implementations and the fewer support issues will be raised.  
+**Testing**:Upon specifying the required information for devices and settings, clear the log for the device to be tested and click Self-test. Upon completion of a successful test, export and save with a name that will make the test easily identifiable. Suggested naming would include abbreviated manufacture name and model. Following is an example of the data included in the exported file: 
+
+```<?xml version="1.0" encoding="utf-8"?>  
+<Report xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Commerce.VirtualPeripherals.Modules">  
+  <CreationDateTime>05/27/2017 19:34:50</CreationDateTime>  
+  <ManufacturerInfo>  
+  <ManufacturerName>Contoso </ManufacturerName>    <ManufacturerWebsite>http://www.contoso.com</ManufacturerWebsite>    <SupportEmail>support@contoso.com</SupportEmail>    <SupportTelephoneNumber>555-555-5555</SupportTelephoneNumber>    <SupportWebsite>http://www.contoso.com</SupportWebsite>    <TechnicalContactEmail>karen@contoso.com</TechnicalContactEmail>    <TechnicalContactName>Karen Berg</TechnicalContactName>    <TechnicalContactPhone>555-555-5555</TechnicalContactPhone>  </ManufacturerInfo>  <DeviceInfo>    <DeviceDriverName>MockOPOSDrawer1</DeviceDriverName>    <DeviceModel i:nil="true" />    <DriverVersion i:nil="true" />    <FirmwareVersion i:nil="true" />    <HardwareType>OPOS</HardwareType>  </DeviceInfo>  <LogItems>    <LogMessage>      <LogType>Info</LogType>      <Message>The cash drawer is opened successfully.</Message> <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>    <LogMessage>      <LogType>Info</LogType>      <Message>The cash drawer open operation elapsed time: 00:00:05.554</Message>      <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>    <LogMessage>      <LogType>Info</LogType>      <Message>The cash drawer status check operation is completed successfully.</Message>      <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>    <LogMessage>      <LogType>Info</LogType>      <Message>The cash drawer status check operation elapsed time: 00:00:00.078</Message>      <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>    <LogMessage>      <LogType>Info</LogType>      <Message>Test finished successfully.</Message>      <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>  </LogItems></Report>```
 See also
 --------
 
