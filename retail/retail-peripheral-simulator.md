@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail peripheral simulator
+title: Peripheral simulator for Retail
 description: This topic describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 for Operations - Retail.
 author: josaw1
 manager: AnnBe
@@ -30,15 +30,19 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Retail peripheral simulator
+# Peripheral simulator for Retail
 
 [!include[banner](includes/banner.md)]
 
 
-This topic describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 for Operations - Retail.
+This topic describes the point of sale and peripheral simulator tool that is provided with Microsoft Dynamics 365 for Operations - Retail.
 
 Overview
 --------
+
+The Peripheral Simulator for Retail is a utility provided by Microsoft as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a virtual peripheral simulator and a point-of sale(POS) simulator. 
+
+The virtual peripheral simulator is primarily provided to support testing of scenarios that would normally require physical point of sale peripheral devices, whereas the POS simulator is used to test physical peripheral devices for compatibility with Microsoft Dynamics 365 for Retail without the need to deploy the point of sale client. 
 
 The Microsoft Dynamics 365 for Operations - Retail peripheral simulator is a tool that helps you set up, test, and troubleshoot peripheral devices that are used in retail environments. You can use the peripheral simulator to streamline the testing of retail peripherals, and to isolate issues that are caused by incorrect setup or malfunctioning device drivers. The peripheral simulator includes a desktop program that features virtual versions of devices that Dynamics 365 for Operations - Retail supports. A section for each virtual device shows the interaction between the device and the retail point of sale (POS). You can also use it to provide input that is valid for various POS scenarios. The peripheral simulator supports interaction between the POS and the following virtual devices:
 
