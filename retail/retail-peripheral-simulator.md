@@ -209,6 +209,31 @@ You can edit the peripheral simulator's configuration file to more appropriately
 ## Troubleshooting
 Activities for the peripheral simulator are logged within the peripheral simulator. You can find the log at C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. The peripheral simulator also reports issues to the Windows event log, which you can access at **Application and Services Logs** &gt; **Microsoft** &gt; **DynamicsAX**. If changes that you made to the hardware profile or other areas aren't evident when you use MPOS or the peripheral simulator, check the distribution scheduler jobs that you used to synchronize the data to the channel database. If the changes were synchronized but still aren't evident at the POS, restart the POS client. Changes to configured cash drawers aren't effective until a new shift is created. Therefore, if you make changes to cash drawers, make sure that you always close the existing shift to test the new cash drawer setup. Sometimes, if a manufacturer's driver is installed after the common control objects from Monroe Consulting Services, the driver can cause the common control objects to stop working correctly. In this case, you should reinstall the common control objects.
 
+POS simulator overview
+--------
+
+The POS simulator provides the ability for device manufacturers, ISVs and retailers to test peripheral devices without the need to deploy the point of sale. By using the same retail peripheral business logic as the MPOS and standalone hardware station, the POS simulator can determine device driver compatibility with the point of sale as a standalone utility. This enables device selection to occur independent of the point of sale setup and deployment.
+
+ The POS simulator is also provided as a standalone utility, independent of Microsoft Dynamics 365 for Retail. As a standalone utility, the simulator is primarily used for peripheral device compatibility testing. Only devices tested with the POS simulator are acceptable for new deployments of the point of sale. Testing is intended to be driven by the device manufacturers themselves. Portions of the POS simulator overview are intended to explain how the POS simulator is used for compatibility testing. Manufacturers interested in testing their devices for compatibility with the point of sale or standalone hardware station should send an email to drpc@microsoft.com to request information about the program. 
+ 
+ ## Using the POS simulator
+ To start the POS simulator, click Start on your computer, type Peripheral simulator for Retail, and then select the app when it appears in the search results. After you start the peripheral simulator, click Use virtual peripherals. The supported devices will be listed as tabs on the left side of the window. To view a specific device, click the tab for that device.
+ 
+Devices supported by the POS simulator are as follows:
+**Line display
+Cash drawer
+MSR
+PIN pad
+Printer
+Scale
+Signature capture pad
+Bar code scanner
+Payment terminal**- Requires presence of a payment connector. For more information see < Implementing a payment connector and payment device (white paper)>
+
+Below the list of supported devices, there is a **Settings** tab. The settings tab can be used to specify how the POS simulator should communicate with the devices being tested. If **Runtime** is selected, the POS simulator will communicate with the device in a method similar to how the MPOS with built-in hardware station would communicate. Using **Win32**, however, makes the POS simulator communicate with the device directly, similar to the way a standalone hardware station would communicate.  Also on the settings page, details can be provided around who is performing the tests. Those details are important for manufacturers performing compatibility testing, which is explained in a section later in this page.
+
+## Configuring the POS simulator 
+
 
 See also
 --------
