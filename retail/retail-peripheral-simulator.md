@@ -426,9 +426,62 @@ To submit a device to be listed for compatibility with Microsoft Dynamics 365 fo
 
 ```<?xml version="1.0" encoding="utf-8"?>  
 <Report xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Commerce.VirtualPeripherals.Modules">  
-  <CreationDateTime>05/27/2017 19:34:50</CreationDateTime>  
-  <ManufacturerInfo>  
-  <ManufacturerName>Contoso </ManufacturerName>    <ManufacturerWebsite>http://www.contoso.com</ManufacturerWebsite>    <SupportEmail>support@contoso.com</SupportEmail>    <SupportTelephoneNumber>555-555-5555</SupportTelephoneNumber>    <SupportWebsite>http://www.contoso.com</SupportWebsite>    <TechnicalContactEmail>karen@contoso.com</TechnicalContactEmail>    <TechnicalContactName>Karen Berg</TechnicalContactName>    <TechnicalContactPhone>555-555-5555</TechnicalContactPhone>  </ManufacturerInfo>  <DeviceInfo>    <DeviceDriverName>MockOPOSDrawer1</DeviceDriverName>    <DeviceModel i:nil="true" />    <DriverVersion i:nil="true" />    <FirmwareVersion i:nil="true" />    <HardwareType>OPOS</HardwareType>  </DeviceInfo>  <LogItems>    <LogMessage>      <LogType>Info</LogType>      <Message>The cash drawer is opened successfully.</Message> <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>    <LogMessage>      <LogType>Info</LogType>      <Message>The cash drawer open operation elapsed time: 00:00:05.554</Message>      <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>    <LogMessage>      <LogType>Info</LogType>      <Message>The cash drawer status check operation is completed successfully.</Message>      <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>    <LogMessage>      <LogType>Info</LogType>      <Message>The cash drawer status check operation elapsed time: 00:00:00.078</Message>      <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>    <LogMessage>      <LogType>Info</LogType>      <Message>Test finished successfully.</Message>      <Timestamp>05/27/2017 19:36:47</Timestamp>    </LogMessage>  </LogItems></Report>```
+   <CreationDateTime>05/27/2017 19:34:50</CreationDateTime>  
+   <ManufacturerInfo>  
+    <ManufacturerName>Contoso </ManufacturerName>  
+    <ManufacturerWebsite>http://www.contoso.com</ManufacturerWebsite>  
+    <SupportEmail>support@contoso.com</SupportEmail>  
+    <SupportTelephoneNumber>555-555-5555</SupportTelephoneNumber>  
+    <SupportWebsite>http://www.contoso.com</SupportWebsite>  
+    <TechnicalContactEmail>karen@contoso.com</TechnicalContactEmail>  
+    <TechnicalContactName>Karen Berg</TechnicalContactName>  
+    <TechnicalContactPhone>555-555-5555</TechnicalContactPhone>  
+  </ManufacturerInfo>  
+  <DeviceInfo i:type="OposDevice">  
+   <DeviceDriverName>MockOPOSDrawer1</DeviceDriverName>  
+   <DeviceModel>Model1</DeviceModel>  
+   <DriverVersion>V2</DriverVersion>  
+   <FirmwareVersion>V1</FirmwareVersion>  
+  <HardwareType>OPOS</HardwareType>  
+  <ConnectionType>USB</ConnectionType>  
+  <DriverDownloadLink>htttp://model1.drivers.contoso.com</DriverDownloadLink>  
+ <DeviceInfo i:type="OposDevice">
+ <LogItems>  
+  <LogMessage>  
+     <LogType>Info</LogType>  
+     <Message>The cash drawer is opened successfully.</Message>  
+     <Timestamp>05/27/2017 19:48:14</Timestamp>  
+  </LogMessage>  
+  <LogMessage>  
+     <LogType>Info</LogType>  
+     <Message>The cash drawer open operation elapsed time: 00:00:00.053</Message>  
+     <Timestamp>05/27/2017 19:48:14</Timestamp>  
+  </LogMessage>  
+  <LogMessage>  
+      <LogType>Info</LogType>  
+      <Message>The cash drawer status check operation is completed successfully.</Message>  
+      <Timestamp>05/27/2017 19:48:14</Timestamp>  
+   </LogMessage>  
+   <LogMessage>  
+      <LogType>Info</LogType>  
+      <Message>The cash drawer status check operation elapsed time: 00:00:00.045</Message>  
+      <Timestamp>05/27/2017 19:48:14</Timestamp>  
+   </LogMessage>  
+      <LogMessage>  
+      <LogType>Info</LogType>  
+      <Message>Test finished successfully.</Message>  
+      <Timestamp>05/27/2017 19:48:14</Timestamp>  
+    </LogMessage>  
+  </LogItems>  
+</Report>
+```
+
+The data included in the report(except for personal contact information) will be listed in a forthcoming device compatibility website as well as in design and deployment tools used to manage customer environments. 
+
+Successful logs should be sent to drpc@microsoft.com with the manufacturer’s name and device model in the subject line. 
+
+For support in performing compatibility testsand other inquiries, please send email to drpc@microsoft.com.
+
 See also
 --------
 
