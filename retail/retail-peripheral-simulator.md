@@ -40,7 +40,8 @@ This topic describes the point of sale and peripheral simulator tool that is pro
 Overview
 --------
 
-The Peripheral Simulator for Retail is a utility provided by Microsoft as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a virtual peripheral simulator and a point-of sale(POS) simulator. 
+The Peripheral Simulator 
+for Retail is a utility provided by Microsoft as part of Microsoft Dynamics 365 for Retail and as a standalone utility. The utility has two primary components, a virtual peripheral simulator and a point-of sale(POS) simulator. 
 
 The virtual peripheral simulator is primarily provided to support testing of scenarios that would normally require physical point of sale peripheral devices, whereas the POS simulator is used to test physical peripheral devices for compatibility with Microsoft Dynamics 365 for Retail without the need to deploy the point of sale client. 
 
