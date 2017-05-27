@@ -44,6 +44,15 @@ The Peripheral Simulator for Retail is a utility provided by Microsoft as part o
 
 The virtual peripheral simulator is primarily provided to support testing of scenarios that would normally require physical point of sale peripheral devices, whereas the POS simulator is used to test physical peripheral devices for compatibility with Microsoft Dynamics 365 for Retail without the need to deploy the point of sale client. 
 
+## Install the peripheral simulator
+1.  Go to **Retail and commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
+2.  Click **Download**, and then click **PeripheralSimulator**. **Note:** You must turn off pop-up blockers before you can download the peripheral simulator.
+3.  After the download is completed, open the **Downloads** folder, and double-click **VirtualPeripherals.msi** to start the installer.
+4.  Install the peripheral simulator by using the default settings.
+
+In addition to the peripheral simulator, you must install the common control objects from Monroe Consulting Services. Otherwise, the peripheral simulator won't work correctly. To download the common control objects, go to <http://monroecs.com/oposccos_current.htm>.
+
+
 The Microsoft Dynamics 365 for Operations - Retail peripheral simulator is a tool that helps you set up, test, and troubleshoot peripheral devices that are used in retail environments. You can use the peripheral simulator to streamline the testing of retail peripherals, and to isolate issues that are caused by incorrect setup or malfunctioning device drivers. The peripheral simulator includes a desktop program that features virtual versions of devices that Dynamics 365 for Operations - Retail supports. A section for each virtual device shows the interaction between the device and the retail point of sale (POS). You can also use it to provide input that is valid for various POS scenarios. The peripheral simulator supports interaction between the POS and the following virtual devices:
 
 -   **Printer** – The peripheral simulator can show receipts that are configured for a POS printer.
@@ -118,7 +127,6 @@ After the data is synchronized, the new hardware profile and changes on the regi
 3.  After the download is completed, open the **Downloads** folder, and double-click **VirtualPeripherals.msi** to start the installer.
 4.  Install the peripheral simulator by using the default settings.
 
-In addition to the peripheral simulator, you must install the common control objects from Monroe Consulting Services. Otherwise, the peripheral simulator won't work correctly. To download the common control objects, go to <http://monroecs.com/oposccos_current.htm>.
 
 ## Using the peripheral simulator
 To start the peripheral simulator, click **Start** on your computer, type **Retail peripheral simulator**, and then select the app when it appears in the search results. After you start the peripheral simulator, click a device name to see the supported devices. These devices will be listed as tabs on the left side of the window. To view a specific device, click the tab for that device.
