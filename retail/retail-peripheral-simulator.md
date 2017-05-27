@@ -273,6 +273,42 @@ Note: In the case of device driver name, model and version, these fields are use
 
 When the device is configured to the level required for either casual testing or compatibility testing, click **Save device**. 
 
+**Windows devices**
+Windows printers can also be tested using the POS simulator. Setup parameters are the same as for OPOS devices.
+
+**Device driver name** (Required)- This list will be populated with Windows printers installed on the local machine where devices are being tested. Device names can also be manually entered here. 
+**Device model** (Required)- Free text that allows the device model to be specified. 
+**Connection type**- Specify how the device is connected.Firmware version- The firmware version for the device currently being configured. 
+**Driver version**- The driver version for the device currently being configured. 
+**Driver download link**- The link where the driver for the device can be downloaded. 
+
+Note: All fields are required when configuring devices for testing to confirm compatibility with the point of sale. 
+
+When the device is configured to the level required for either casual testing or compatibility testing, click **Save device**.
+
+**Testing devices**
+Each device class has specific testing capabilities unique to that class of device. 
+
+In addition to device specific tests,  each device has a **Self-test function**. When testing a device for compatibility, set up the device and then click the **Green arrow** to begin the self-test. Each device has a different set of tests that are performed to determine the devices compatibility with the point of sale (in **Runtime** mode) and standalone hardware station(in **Win32** mode). Some devices require user interaction for the test to be completed. For example, the self-test for bar code scanner will instruct the user to scan a bar code to complete the self-test.
+
+Results from each self-test and manual operation are displayed in the **Log** section of the device test page. The **Log** can be cleared or the results listed in the log can be exported and saved to file. Details on log export as used for official compatibility tested are provided later in this page. 
+
+To abort the self-test, such as in cases where the device becomes non-responsive, click the **Red square**. The red square can only be used when a self-test is in progress. 
+
+**Line display**
+**Settings tab**:
+The settings tab for the line display includes the following free text fields:
+**Display text**: The description of the product.
+**Quantity**: The quantity of the product.
+**Price**: The price of the product.
+To view the values entered in the free text field, use the Lock and claim button to claim the device. Next click Display text and observe the text that was sent to the device. Click Clear text to clear the text from the line display and then click Release to release the line display, making it usable for other processes. 
+
+**Advanced tab**:
+**Binary conversion**: Some line displays require that text is converted into binary format. See the device’s documentation to determine if this is necessary. 
+
+Character set: Identifies the code page for the characters being sent to the device. For specific code page identifiers, see: https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx
+
+**Advanced tab**
 
 
 See also
