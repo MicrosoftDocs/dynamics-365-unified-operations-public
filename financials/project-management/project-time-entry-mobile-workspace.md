@@ -75,7 +75,7 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 <tbody>
 
 <tr class="odd">
-<td>KB 4018050 must be implemented.</td>
+<td>Implement KB 4018050.</td>
 <td>System administrator</td>
 <td>KB 4018050 is an X++ update or metadata hotfix that contains the <strong>Project time entry</strong> mobile workspace. To implement KB 4018050, your system administrator must follow these steps.
 <ol>
@@ -86,7 +86,7 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 </ol></td>
 </tr>
 <tr class="even">
-<td>The <strong>Project time entry</strong> mobile workspace must be published to the Dynamics 365 for Operations mobile app.</td>
+<td>Publish the <strong>Project time entry</strong> mobile workspace.</td>
 <td>System administrator</td>
 <td>See <a href="/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
