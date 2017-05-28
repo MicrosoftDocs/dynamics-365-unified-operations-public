@@ -76,7 +76,7 @@ The following mobile workspaces are included with Dynamics 365 for Finance and O
 - [Company directory]
 - [Manager self service]
 - [Employee self service]
-- [Invoice order approvals]
+- [Invoice approvals]
 
 
 ## Implementation process
