@@ -114,13 +114,12 @@ Before you can use the **Vendor collaboration** mobile workspace, make sure that
 <td>The vendor user must have access to the vendor collaboration web interface in Dynamics 365 for Operations and set up a vendor collaboration user.</td>
 <td>System administrator</td>
 <td>Follow the steps described in the following topics to set up and work with the vendor collaboration web interface.
-<ol>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Use vendor collaboration to work with external vendors</a></li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Manage vendor collaboration users</a></li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Set up and maintain vendor collaboratione</a></li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Use vendor collaboration to work with customers in Dynamics 365 for Operations</a></li>
-
-</ol></td>
+<ul>
+<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-external-vendors/">Use vendor collaboration to work with external vendors</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/manage-vendor-collaboration-users/">Manage vendor collaboration users</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/set-up-and-maintain-vendor-collaboration/">Set up and maintain vendor collaboration</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Use vendor collaboration to work with customers in Dynamics 365 for Operations</a></li>
+</ul></td>
 </tr>
 </tbody>
 </table>
