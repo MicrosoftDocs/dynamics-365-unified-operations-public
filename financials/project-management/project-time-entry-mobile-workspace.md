@@ -62,6 +62,11 @@ The prerequisites differ based on the version of Dynamics 365 that has been depl
 If **Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update** has been deployed for your organization, the following prerequisites must be met.
 
 <table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Prerequisite</th>
@@ -82,6 +87,11 @@ If **Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 updat
 If **Dynamics 365 for Operations version 1611 with platform update 3 or later** has been deployed for your organization, the following prerequisites must be met.
 
 <table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Prerequisite</th>
