@@ -2,7 +2,7 @@
 # required metadata
 
 title: Publish a mobile workspace
-description: This topic describes the steps that system administrators can follow to publish a mobile workspace. You must publish a mobile workspace before users can access it in the mobile app. 
+description: This topic describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the mobile app. 
 author: sericks007
 manager: AnnBe
 ms.date: 04/21/2017
@@ -35,7 +35,7 @@ ms.search.validFrom: 2017-02-28
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the steps that system administrators can follow to publish a mobile workspace. You must publish a mobile workspace before users can access it in the mobile app. 
+This topic describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the mobile app. 
 
 ## Publish a mobile workspace to the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app
 
