@@ -36,7 +36,7 @@ ms.search.validFrom: 2016-11-30
 
 
 
-This topics lists the mobile workspaces that have recently been released for:
+This topic lists the mobile workspaces that have recently been released for:
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition mobile app
 - Microsoft Dynamics 365 for Operations mobile app
 
