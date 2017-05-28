@@ -95,7 +95,6 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 
 
 ## Download and install the mobile app
-You can download and install the mobile app from your mobile app store.
 
 To download and install the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app:
 
