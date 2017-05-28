@@ -82,7 +82,7 @@ The following mobile workspaces are included with Dynamics 365 for Finance and O
 ## Implementation process
 The following illustration shows the process for implementing custom mobile workspaces, or mobile workspaces provided by Microsoft for Dynamics 365 for Operations version 1611. 
 
-![Mobile apps implementation process](./media/mobile-implementation-process_5.png)
+![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)
 
 The following table includes links to resources that can help you implement custom mobile workspaces, or mobile workspaces provided by Microsoft for Dynamics 365 for Operations version 1611. The numbers in the first column correspond to the numbered steps in the previous illustration.
 
