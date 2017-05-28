@@ -57,11 +57,15 @@ Navigation in the mobile app consists of four simple concepts: the dashboard, wo
 1. When you start the app, you go to the **dashboard**.
 2. On the dashboard, you can see a list of **workspaces** that have been published.
 3. In each workspace, you can see a list of **pages** that are available for that workspace.
--   On a page, you can view detailed data and navigate to other pages for related data, such as entity details or lines.
--   On a page, you can also see a list of **actions** that are available for that page.
--   Actions let you create or edit existing data.
+
+Once you are on a page, you can do several things, such as:
+-   View detailed data 
+- Navigate to other pages for related data, such as entity details or lines.
+-   See a list of **actions** that are available for that page. Actions let you create or edit existing data.
 
 ## Mobile workspaces included with Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update
+
+If you are using the mobile app for Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update
 
 - [Cost controlling mobile workspace](dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)
 - [Inventory on-hand mobile workspace](/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)
@@ -76,7 +80,7 @@ Navigation in the mobile app consists of four simple concepts: the dashboard, wo
 
 
 ## Implementation process
-The following illustration shows the process for implementing mobile workspaces in your organization. 
+The following illustration shows the process for implementing custom mobile workspaces, or mobile workspaces provided by Microsoft for Dynamics 365 for Operations version 1611. 
 
 ![Mobile apps implementation process](./media/mobile-implementation-process_4.png)
 
@@ -101,13 +105,13 @@ The following table includes links to resources that can help you implement mobi
 <tr class="odd">
 <td>1</td>
 <td>System administrator</td>
-<td>Implement Dynamics 365 for Finance and Operations, Enterprise Edition for the organization.</td>
-<td>If you don't already have it deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Finance and Operations demo environment</a>.</td>
+<td>Implement Dynamics 365 for Finance and Operations, Enterprise Edition or Dynamics 365 for Operations in your organization.</td>
+<td>If you don't already have the solution deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Finance and Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>System administrator</td>
-<td>If you are using Dynamics 365 for Operations version 1611: Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
+<td><b>If you are using Dynamics 365 for Operations version 1611:<b> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
 <td>See one of the following topics for more information:
 <ul>
 <li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
