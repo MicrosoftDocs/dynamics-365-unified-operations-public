@@ -35,7 +35,7 @@ ms.search.validFrom: 2017-02-28
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes mobile app for:
+This topic describes the mobile app for:
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
 - Microsoft Dynamics 365 for Opertaions 
 
