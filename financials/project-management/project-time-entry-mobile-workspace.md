@@ -59,39 +59,12 @@ Specifically, the **Project time entry** mobile workspace provides these feature
 ## Prerequisites
 The prerequisites differ based on the version of Dynamics 365 that has been deployed for your organization.
 
-If **Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update** has been deployed for your organization, the following prerequisites must be met.
+If Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update has been deployed for your organization, the system administrator simply needs to publish the **Project time entry** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+If Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the following system administator must complete the following prerequisites. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Prerequisite</th>
-<th>Role</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
 
-<tr class="odd">
-<td>The <strong>Project time entry</strong> mobile workspace must be published to the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app.</td>
-<td>System administrator</td>
-<td>See <a href="/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
-</tr>
-</tbody>
-</table>
-
-If **Dynamics 365 for Operations version 1611 with platform update 3 or later** has been deployed for your organization, the following prerequisites must be met.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Prerequisite</th>
