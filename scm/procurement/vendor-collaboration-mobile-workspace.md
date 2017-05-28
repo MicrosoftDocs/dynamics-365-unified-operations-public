@@ -89,7 +89,7 @@ Before you can use the **Vendor collaboration** mobile workspace, make sure that
 <li>Install the binary update, which is delivered as a deployable package. For instructions on how to apply a deployable package see <a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.</li>
 </ol></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>KB 4013633 must be implemented.</td>
 <td>System administrator</td>
 <td>KB 4013633 (an X++ update or metadata hotfix) contains four mobile workspaces for supply chain management. To implement KB 4013633, your system administrator must follow these steps:
@@ -100,14 +100,26 @@ Before you can use the **Vendor collaboration** mobile workspace, make sure that
 <li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
 </ol></td>
 </tr>
-<tr class="odd">
-<td>The <strong>Inventory on-hand</strong> mobile workspace must be published to the Dynamics 365 for Operations mobile app.</td>
+<tr class="even">
+<td>The <strong>Vendor collaboration</strong> mobile workspace must be published to the Dynamics 365 for Operations mobile app.</td>
 <td>System administrator</td>
 <td><ol>
 <li>Start Dynamics 365 for Operations in your browser.</li>
 <li>On the <strong>System parameters</strong> page, select <strong>Manage mobile workspaces</strong>.</li>
-<li>Select the <strong>Inventory on-hand</strong> workspace.</li>
+<li>Select the <strong>Vendor collaboration</strong> workspace.</li>
 <li>Click <strong>Publish mobile workspace</strong>.</li>
+</ol></td>
+</tr>
+<tr class="odd">
+<td>The vendor user must have access to the vendor collaboration web interface in Dynamics 365 for Operations and set up a vendor collaboration user.</td>
+<td>System administrator</td>
+<td>Follow the steps described in the following topics to set up and work with the vendor collaboration web interface.
+<ol>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Use vendor collaboration to work with external vendors</a></li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Manage vendor collaboration users</a></li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Set up and maintain vendor collaboratione</a></li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Use vendor collaboration to work with customers in Dynamics 365 for Operations</a></li>
+
 </ol></td>
 </tr>
 </tbody>
