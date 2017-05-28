@@ -106,7 +106,7 @@ The following table includes links to resources that can help you implement mobi
 <tr class="even">
 <td>2</td>
 <td>System administrator</td>
-<td>If you are using Dynamics 365 for Operations version 1611, download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
+<td>If you are using Dynamics 365 for Operations version 1611: Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
 <td>See one of the following topics for more information:
 <ul>
 <li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
