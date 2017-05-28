@@ -65,7 +65,7 @@ Once you are on a page, you can do several things, such as:
 
 ## Mobile workspaces included with Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update
 
-If you are using the mobile app for Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update
+The following mobile workspaces are included with Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update. To implement then in your organization, the system administrator simply needs to [publish them](publish-mobile-workspace.md).
 
 - [Cost controlling mobile workspace](dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)
 - [Inventory on-hand mobile workspace](/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)
