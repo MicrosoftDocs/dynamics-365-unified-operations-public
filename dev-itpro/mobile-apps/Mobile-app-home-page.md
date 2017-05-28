@@ -86,7 +86,7 @@ The following table includes links to resources that can help you implement the 
 <tr class="odd">
 <td>1</td>
 <td>System administrator</td>
-<td>Implement Dynamics 365 for Finacne and Operations for the organization.</td>
+<td>Implement Dynamics 365 for Finance and Operations for the organization.</td>
 <td>If you don't already have Dynamics 365 for Finacne and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Finacne and Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
