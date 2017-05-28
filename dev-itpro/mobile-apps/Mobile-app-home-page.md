@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Finance and Operations, Enterprise Edition mobile app home page
+title: Mobile app home page
 description: This topic describes the Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition mobile app and provides links to resources that can help you implement it in your organization.
 author: sericks007
 manager: AnnBe
@@ -30,21 +30,23 @@ ms.search.validFrom: 2017-02-28
 
 ---
 
-# Dynamics 365 for Finance and Operations, Enterprise Edition mobile app home page
+# Mobile app home page
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition mobile app and provides links to resources that can help you implement it in your organization.
+This topic describes mobile app for:
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
+- Microsoft Dynamics 365 for Opertaions 
 
 Overview
 --------
 
-The Dynamics 365 for Finance and Operations, Enterprise Edition mobile app enables your organization to make its business processes available on mobile devices. After your IT admin enables the mobile workspaces feature for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The Dynamics 365 for Finance and Operations, Enterprise Edition mobile app includes the following features that can help increase productivity:
+The mobile app enables your organization to make its business processes available on mobile devices. After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The mobile app includes the following features that can help increase productivity:
 
--   Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations, Enterprise Edition.
+-   Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations, Enterprise Edition or Dynamics 365 for Operations.
 -   IT admins or developers can build and publish mobile workspaces that have been tailored to their organization. The app uses your existing code assets. Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.
--   IT admins or developers easily design mobile workspaces by using the point-and-click workspace designer that is included with the Dynamics 365 for Finance and Operations, Enterprise Edition web client.
+-   IT admins or developers easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.
 -   IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.
 
 ## Elements of the mobile app
@@ -52,11 +54,10 @@ Navigation in the mobile app consists of four simple concepts: the dashboard, wo
 
 [![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
--   When you start the app, you go to the **dashboard**.
--   On the dashboard, you can see a list of **workspaces** that are published in your Dynamics 365 for Finance and Operations, Enterprise Edition environment.
--   In each workspace, you can see a list of **pages** that are available for that workspace.
--   On a page, you can view data that is collected from one or more pages in Dynamics 365 for Finance and Operations, Enterprise Edition.
--   From a page, you can navigate to other pages for related data, such as entity details or lines.
+1. When you start the app, you go to the **dashboard**.
+2. On the dashboard, you can see a list of **workspaces** that have been published.
+3. In each workspace, you can see a list of **pages** that are available for that workspace.
+-   On a page, you can view detailed data and navigate to other pages for related data, such as entity details or lines.
 -   On a page, you can also see a list of **actions** that are available for that page.
 -   Actions let you create or edit existing data.
 
