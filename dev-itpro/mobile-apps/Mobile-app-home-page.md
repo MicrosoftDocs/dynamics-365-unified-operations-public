@@ -59,7 +59,7 @@ Navigation in the mobile app consists of four simple concepts: the dashboard, wo
 3. In each workspace, you can see a list of **pages** that are available for that workspace.
 
 Once you are on a page, you can do several things, such as:
--   View detailed data 
+-   View detailed data.
 - Navigate to other pages for related data, such as entity details or lines.
 -   See a list of **actions** that are available for that page. Actions let you create or edit existing data.
 
@@ -111,7 +111,7 @@ The following table includes links to resources that can help you implement mobi
 <tr class="even">
 <td>2</td>
 <td>System administrator</td>
-<td><b>If you are using Dynamics 365 for Operations version 1611:<b> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
+<td>If you are using Dynamics 365 for Operations version 1611: Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
 <td>See one of the following topics for more information:
 <ul>
 <li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
