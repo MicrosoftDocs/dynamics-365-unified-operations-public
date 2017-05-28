@@ -61,7 +61,7 @@ The prerequisites differ based on the version of Dynamics 365 that has been depl
 
 If Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update has been deployed for your organization, the system administrator simply needs to publish the **Project time entry** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-If Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the following system administator must complete the following prerequisites. 
+If Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administator must complete the following prerequisites. 
 
 <table>
 
