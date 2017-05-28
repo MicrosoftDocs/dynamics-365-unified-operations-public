@@ -40,7 +40,7 @@ This topic describes the Microsoft Dynamics 365 for Finance and Operations, Ente
 Overview
 --------
 
-The Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition mobile app enables your organization to make its business processes available on mobile devices. After your IT admin enables the mobile workspaces feature for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The Dynamics 365 for Finance and Operations, Enterprise Edition mobile app includes the following features that can help increase productivity:
+The Dynamics 365 for Finance and Operations, Enterprise Edition mobile app enables your organization to make its business processes available on mobile devices. After your IT admin enables the mobile workspaces feature for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The Dynamics 365 for Finance and Operations, Enterprise Edition mobile app includes the following features that can help increase productivity:
 
 -   Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations, Enterprise Edition.
 -   IT admins or developers can build and publish mobile workspaces that have been tailored to their organization. The app uses your existing code assets. Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.
