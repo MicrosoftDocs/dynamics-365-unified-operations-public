@@ -97,12 +97,12 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 ## Download and install the mobile app
 You can download and install the mobile app from your mobile app store.
 
-To download and install the Dynamics 365 for Finance and Operations, Enterprise Edition:
+To download and install the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app:
 
--   For Android: [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   For iPhone: [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+-   For Android: [Dynamics 365 for Finance and Operations, Enterprise Edition on the Google Play Store](https://go.microsoft.com/fwlink/?linkid=850662)
+-   For iPhone: [Dynamics 365 for Finance and Operations, Enterprise Edition on the iTunes apps store](https://go.microsoft.com/fwlink/?linkid=850663)
 
-To download and install the Dynamics 365 for Operations mobile app.
+To download and install the Dynamics 365 for Operations mobile app:
 
 -   For Android: [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   For iPhone: [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
