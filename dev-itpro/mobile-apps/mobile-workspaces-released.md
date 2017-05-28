@@ -66,7 +66,7 @@ The following mobile workspaces can be used with the Dynamics 365 for Operations
 | Vendor collaboration | Your vendors can stay up to date on the purchase orders that have been sent to them for approval, and they can view information about new and updated purchase orders and contacts. | [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
 ## Mobile workspace functionality that was released in December 2016
-The following mobile workspaces can be used with the Dynamics 365 for Operations mobile app.
+The following mobile workspace can be used with the Dynamics 365 for Operations mobile app.
 
 | Mobile workspace        | Description                                                                    | Learn more                                                                                                            |
 |-------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
