@@ -134,8 +134,8 @@ The following table includes links to resources that can help you implement cust
 <td>Developer or independent software vendor (ISV)</td>
 <td>Use the mobile framework to create custom mobile workspaces.</td>
 <td><ul>
-<li><a href="mobile-platform.md">Dynamics 365 for Finance and Operations, Enterprise Edition mobile framework</a></li>
-<li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Dynamics 365 for Finance and Operations, Enterprise Edition workspace X++ APIs</a></li>
+<li><a href="mobile-platform.md">Mobile framework</a></li>
+<li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Workspace X++ APIs</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
