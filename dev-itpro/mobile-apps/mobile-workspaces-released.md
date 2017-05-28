@@ -30,7 +30,7 @@ ms.search.validFrom: 2016-11-30
 
 ---
 
-# Mobile workspaces recently released for the Dynamics 365 for Operations mobile app
+# Mobile workspaces recently released
 
 [!include[banner](../includes/banner.md)]
 
