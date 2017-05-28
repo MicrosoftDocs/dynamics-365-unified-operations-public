@@ -87,7 +87,7 @@ The following table includes links to resources that can help you implement the 
 <td>1</td>
 <td>System administrator</td>
 <td>Implement Dynamics 365 for Finance and Operations for the organization.</td>
-<td>If you don't already have Dynamics 365 for Finacne and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Finacne and Operations demo environment</a>.</td>
+<td>If you don't already have Dynamics 365 for Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Finance and Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -113,10 +113,10 @@ The following table includes links to resources that can help you implement the 
 <tr class="even">
 <td>4</td>
 <td>Developer or independent software vendor (ISV)</td>
-<td>Use the Dynamics 365 for Finacne and Operations mobile framework to create custom mobile workspaces.</td>
+<td>Use the Dynamics 365 for Finance and Operations mobile framework to create custom mobile workspaces.</td>
 <td><ul>
-<li><a href="mobile-platform.md">Dynamics 365 for Finacne and Operations mobile framework</a></li>
-<li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Dynamics 365 for Finacne and Operations workspace X++ APIs</a></li>
+<li><a href="mobile-platform.md">Dynamics 365 for Finance and Operations mobile framework</a></li>
+<li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Dynamics 365 for Finance and Operations workspace X++ APIs</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -129,7 +129,7 @@ The following table includes links to resources that can help you implement the 
 <td>6</td>
 <td>System administrator</td>
 <td>Apply the deployable package that contains the custom workspaces that are provided by the ISV.</td>
-<td><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package on a Microsoft Dynamics 365 for Finacne and Operations system</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package on a Microsoft Dynamics 365 for Finance and Operations system</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
@@ -140,17 +140,17 @@ The following table includes links to resources that can help you implement the 
 <tr class="even">
 <td>8</td>
 <td>User</td>
-<td>Download and install the Dynamics 365 for Finacne and Operations mobile app.</td>
+<td>Download and install the Dynamics 365 for Finance and Operations mobile app.</td>
 <td><ul>
-<li>For Android: <a href="https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile">Dynamics 365 for Finacne and Operations on the Google Play Store</a></li>
-<li>For iPhone: <a href="https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8">Dynamics 365 for Finacne and Operations on the iTunes apps store</a></li>
+<li>For Android: <a href="https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile">Dynamics 365 for Finance and Operations on the Google Play Store</a></li>
+<li>For iPhone: <a href="https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8">Dynamics 365 for Finance and Operations on the iTunes apps store</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>9</td>
 <td>User</td>
-<td>Sign in, and use the Dynamics 365 for Finacne and Operations mobile app. The app includes the mobile workspaces that have been published.</td>
-<td>To see a list of mobile workspaces provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released for the Dynamics 365 for Finacne and Operations mobile app</a>
+<td>Sign in, and use the Dynamics 365 for Finance and Operations mobile app. The app includes the mobile workspaces that have been published.</td>
+<td>To see a list of mobile workspaces provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released for the Dynamics 365 for Finance and Operations mobile app</a>
 </td>
 </tr>
 </tbody>
