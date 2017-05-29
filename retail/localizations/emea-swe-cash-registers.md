@@ -27,19 +27,21 @@ Field 'Store name' should include the company name.
   - define the reprint message and custom fields in the receipt layout,
   - add fields to display tax amounts per tax rate.
 - Setup a fiscal register configuration in xml format. It should contain a mapping of control unit TaxId fields with an appropriate sales tax code from Dynamics365 for Operations. You can use the example below to create your own configuration:
-  	<?xml version="1.0" encoding="utf-8"?>
-	<configuration>
-	  <configSections>
-	    <section name="UnitConfiguration" type="Microsoft.Dynamics.Retail.FiscalRegistrationServices.CleanCashFiscalRegister.UnitConfiguration, Microsoft.Dynamics.Retail.FiscalRegistrationServices.CleanCashFiscalRegister" />
-	  </configSections>
-	  <UnitConfiguration>
-	    <!--Setting up mapping between VAT codes in POS and control unit that contain VAT rates.-->
-	    <TaxMapping>
-	      <Tax taxCode="stg1" controlUnitTaxId="1" />
-	      <Tax taxCode="stg2" controlUnitTaxId="2" />
-	    </TaxMapping>
-	  </UnitConfiguration>
-</configuration>
-Note: Here stg1 & stg2 are the sales tax codes with different tax rate. Subctitute them with sales tax codes from your dataset.
+
+    <?xml version="1.0" encoding="utf-8"?>
+    	<configuration>
+    	  <configSections>
+    	    <section name="UnitConfiguration" type="Microsoft.Dynamics.Retail.FiscalRegistrationServices.CleanCashFiscalRegister.UnitConfiguration, Microsoft.Dynamics.Retail.FiscalRegistrationServices.CleanCashFiscalRegister" />
+    	  </configSections>
+    	  <UnitConfiguration>
+    	    <!--Setting up mapping between VAT codes in POS and control unit that contain VAT rates.-->
+    	    <TaxMapping>
+    	      <Tax taxCode="stc1" controlUnitTaxId="1" />
+    	      <Tax taxCode="stc2" controlUnitTaxId="2" />
+    	    </TaxMapping>
+    	  </UnitConfiguration>
+    </configuration> 
+       
+Note: Here stc1 & stc2 are the sales tax codes with different tax rate. Subctitute them with sales tax codes from your dataset.
 
 - Maintain a hardware profile. Set up parameters for integration with a control unit and for receipt printing.
