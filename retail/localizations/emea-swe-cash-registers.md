@@ -1,5 +1,5 @@
-# Cash registers for Sweden
-**Setup guide for the POS localization for Sweden**
+## Cash registers for Sweden
+### Setup guide for the POS localization for Sweden
 
 Using the Microsoft Dynamics POS solution requires some preliminarily settings being maintained in the Retail module of Dynamics365 for Operations.
 For the demonstration, training and testing purposes it's possible to use a standard demo data provided by Microsoft. For setting up Retail module from the scratch as well as for making additional settings based on existing dataset you may use this wiki-page: https://docs.microsoft.com/en-us/dynamics365/operations/retail/. 
