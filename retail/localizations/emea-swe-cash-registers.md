@@ -1,4 +1,4 @@
- # Cash registers for Sweden
+# Cash registers for Sweden
 **Setup guide for the POS localization for Sweden**
 
 Using the Microsoft Dynamics POS solution requires some preliminarily settings being maintained in the Retail module of Dynamics365 for Operations.
@@ -27,4 +27,4 @@ Field 'Store name' should include the company name.
   - define the reprint message and custom fields in the receipt layout,
   - add fields to display tax amounts per tax rate.
 - Setup a fiscal register configuration in xml format. It should contain a mapping of control unit TaxId fields with an appropriate sales tax code from Dynamics365 for Operations.
-- Maintain a hardware profile. Set up parameters for integration with a control unit.
+- Maintain a hardware profile. Set up parameters for integration with a control unit and for receipt printing.
