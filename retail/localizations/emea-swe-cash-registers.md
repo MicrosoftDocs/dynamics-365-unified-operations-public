@@ -44,4 +44,7 @@ Field 'Store name' should include the company name.
        
 Note: Here stc1 & stc2 are the sales tax codes with different tax rate. Substitute them with sales tax codes from your dataset.
 
-- Maintain a hardware profile. Set up parameters for integration with a control unit and for receipt printing.
+- Maintain a hardware profile:
+Maintain a hardware profile:
+  - set up parameters for integration with a control unit, select the fiscal register configuration created before; 
+  - specify default options for receipt printing.
