@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: ISO20022 files import in Microsoft Dynamics 365 for Operations
-description: This topic describes features that enable you to import payment files in ISO 20022 camt.054 and pain.002 payment files in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+title: ISO20022 files import
+description: This topic describes importing payment files of the ISO 20022 camt.054 and pain.002 formats into Microsoft Dynamics 365 for Financie and Operations, Enterprise edition.
 author: neserovleo
 manager: AnnBe
-ms.date: 05/17/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,27 +17,27 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-# ms.search.scope: 
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Austria, Belgium, Czech Republic, Sweden, Switzerland, Germany, Denmark, Spain, Estonia, Finland, France, Hungary, Italy, Lithuania, Latvia, Poland, Norway, Great Britain
 # ms.search.industry: 
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ---
 
-# ISO20022 files import in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
+# ISO20022 files import
 
 
 ## Overview
-This topic describes features that enable you to import payment files in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition in following formats: 
+You can import payment files that have the following formats: 
 
  - Incoming payments from the ISO20022 camt.054 credit advice file into the Customer payment journal. 
  - Return files in ISO20022 format: pain.002 status return and camt.054 debit advice into the AP Payment transfer journal.
 
 ## Camt.054 credit advice import into Accounts Receivable payment journal
-This feature allows you to import bank notification messages in camt.054.001.002 format into the Customer payment journal.
+You can import bank notification messages in the camt.054.001.002 format into the Customer payment journal.
 
 To use this feature, complete the following steps:
 
@@ -58,7 +58,7 @@ To use this feature, complete the following steps:
 
 To run the file import, open the **Customer payment journal lines** page and click the **Functions/Import payments** button. In the dialog box, select the method of payment which have required settings for ISO20022 camt.054 format. In the dialog box, specify the required parameters and path to the file location. Click **OK**. The file will be imported.
 
-## Pain.002 status return and camt.054 debit advice import into AP Payment transfer journal
+## Pain.002 status return and camt.054 debit advice import into the AP Payment transfer journal
 This feature allows you to import bank messages in ISO20022 formats: pain.002.001.003 status return messages and camt.054.001.002 debit advice on the **Vendor payment transfer** page.
 
 To use this feature, complete the following steps:
@@ -99,8 +99,8 @@ If you're importing camt.054 file, then the following additional parameters shou
 
  - **Fee ID** - New payment fee lines will be created on the vendor payment journal line if a charge amount is present in the camt.054 file.
 
- - **New journal name, New journal description** - Payment journal parameters where processed payments will be transferred. After transferring, new voucher numbers should be assigned within the new journal. See the Known limitations section for more information.
- - **Import direct debit transactions** - Cctivate import direct debit transactions if outgoing direct debits need to be imported to the vendor payment journal.
+ - **New journal name, New journal description** - Payment journal parameters where processed payments will be transferred. After transferring, new voucher numbers should be assigned within the new journal. 
+ - **Import direct debit transactions** - Activate import direct debit transactions if outgoing direct debits need to be imported to the vendor payment journal.
  - **Journal name** - Define a new journal name for the imported direct debit transactions.
  - **Settle transactions** - Activate this field if imported vendor payments will need to be settled with invoices that are found in the system.
 
