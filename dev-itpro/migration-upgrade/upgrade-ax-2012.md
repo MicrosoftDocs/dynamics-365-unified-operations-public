@@ -52,6 +52,7 @@ The public preview provides you with the ability to deploy your own Dynamics 365
 If you have an existing LCS project for AX 2012 you will still need to sign up for an additional new project to evaluate Dynamics 365 for Operations.
 
 Information about getting a public preview for customers: https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview 
+
 Information about getting a public preview for partners: https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview 
 
 Be aware that this is different from a 30 day trial (https://aka.ms/D365OperationTrials). 30 day trials provide a deployed instance of Dynamics 365 for Operations that you can use to explore and evaluate the application, but to perform upgrade Analyze the full LCS experience and tools are required.
