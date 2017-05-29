@@ -49,10 +49,10 @@ When setting up the external catalog, you need to make sure that the purpose of 
 
 ### To set up an external vendor catalog, complete the following tasks:
 
-1. Set up a procurement category hierarchy. For more information, see Set up policies for procurement category hierarchies.
+1. Set up a procurement category hierarchy. For more information, see [Set up policies for procurement category hierarchies](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/).
 2. Register the vendor in Dynamics 365 for Operations. Before you can set up configurations to access an external vendor’s catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365. The external catalog’s vendor must also be added to the selected procurement category. For more information about registering vendors in Microsoft Dynamics 365, see [Manage vendor collaboration users](/procurement/manage-vendor-collaboration-users.md). 
-For information about how to assign vendor’s to a procurement category, see Approve vendors for specific procurement categories.
-3. Make sure that the units of measure and the currency that the vendor uses are set up. For information about how to create a unit of measure, see Create units of measure.
+For information about how to assign vendor’s to a procurement category, see [Approve vendors for specific procurement categories](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/).
+3. Make sure that the units of measure and the currency that the vendor uses are set up. For information about how to create a unit of measure, see [Create units of measure](/https://ax.help.dynamics.com/en/wiki/manage-unit-of-measure/).
 4. Configure the external vendor catalog by using the requirements for your vendor’s external catalog site. For more details about this task, see the next section.
 5. Test the vendor’s external catalog configurations to verify that the settings are valid and that you can access the vendor’s external catalog. Use the **Validate settings** action to validate the request setup message that you’ve defined. This message should cause the vendors external catalog site to be opened in a browser window. During validation, you can’t order items and services from the vendor. To order items and services, you must access the vendor’s catalog from a purchase requisition.
 6. Activate the external catalog by using the **Activate catalog** button on the **External catalogs** page. The external catalog must be activated before employees can use it. You can inactivate the external catalog at any time.
@@ -77,21 +77,43 @@ Note that if you restore the message format, the current message will be repla
 
 ### cXML setup message
 Below you can find a description of the tags that are included in the template:
-Field | Description  
----------|---------
-<Header><From><Credential domain=””>            |  The domain of the buyer’s company.   
-<Header><From><Credential><Identity></Identity> |  The identity of the buyer’s company.
-<Header><To><Credential domain=””>
-The domain of the vendor’s company.
-<Header><To><Credential><Identity></Identity>
-The identity of the vendor’s company.
-<Header><Sender><Credential domain=””>
-The domain of the buyer’s company.
-<Header><Sender><Credential><Identity></Identity>
-The identity of the buyer’s company.
-<Header><Sender><Credential><SharedSecret></SharedSecret>
-The shared secret for the buyer’s company.
-<Request deploymentMode=””>
-The test or production deployment.
-<Request><PunchOutSetupRequest><SupplierSetup><URL></URL>
-The URL of the vendor’s punchout endpoint.
+
+| Field | Description | 
+|---------|---------|
+|< Header >< From >< Credential domain=”” >|The domain of the buyer’s company.|
+|< Header >< From >< Credential>< Identity >< /Identity > | The identity of the buyer’s company.|
+|< Header >< To >< Credential domain=”” > | The domain of the vendor’s company.|
+|< Header >< To >< Credential>< Identity >< /Identity> | The identity of the vendor’s company.|
+|< Header >< Sender >< Credential domain=”” > | The domain of the buyer’s company.|
+|< Header >< Sender >< Credential >< Identity >< /Identity> | The identity of the buyer’s company.|
+|< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|The shared secret for the buyer’s company.|
+|< Request deploymentMode=”” >|The test or production deployment.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|The URL of the vendor’s punchout endpoint.|
+
+### Extrinsic elements
+
+An extrinsic element is additional information, such as a user name that is based on a user that punches out. The extrinsic element is set when the punchout occurs and it can be sent in the request setup message.
+Your vendor could have a requirement for receiving an extrinsic element in the setup request. In that case, you should add the extrinsic element to the list of extrinsic elements in the **Message format** section of the **External catalog** page. 
+Specify a name for the extrinsic element that the vendor can recognize and map it to a value. The options for values are: User name, User email, or Random value.
+For more information about the cXML protocol, see: http://cxml.org/
+
+## Post back message
+The post back message is the message that is received from the vendor when the user checks out from the external site and returns to Dynamics 365 for Operations. Post back messages can’t be configured. The messages are based on the cXML protocol definition. Here is the information that can be part of the post back message that is received on a requisition line:
+
+| Message received from vendor | Copied to requisition line in Dynamics 365 for Operations|
+|------------------------------|----------------------------------------------------------|
+|< ItemIn quantity=”” > |Quantity|
+|< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|External item ID|
+|< ItemDetail>< UnitPrice >< Money currency=”” >| Currency|
+|< ItemDetail >< UnitPrice >< Money >< /Money >| Unit price|
+|< ItemDetail >< Description ShortName=”” >|Product name|
+|< ItemDetail >< Description >< /Description >|Included in item description; Product name if ShortName is not specified.|
+|< ItemDetail >< UnitOfMeasure >< /UnitOfMeasure >|Unit|
+|< ItemDetail >< Classification >< /Classification >|Included in item description|
+|< ItemDetail >< Classification domain=”” >|Included in item description|
+
+## Delete an external catalog
+Delete an external catalog with the Delete action on the page.
+
+If a product from the external vendor catalog has been requested, the external vendor catalog cannot be deleted. Instead, the status of the external vendor catalog is set to inactive. If you want to remove access to the external vendor’s catalog site, but not delete it, change the external catalog status to Inactive.
+
