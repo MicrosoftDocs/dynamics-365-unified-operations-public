@@ -42,6 +42,6 @@ Field 'Store name' should include the company name.
     	  </UnitConfiguration>
     </configuration> 
        
-Note: Here stc1 & stc2 are the sales tax codes with different tax rate. Subctitute them with sales tax codes from your dataset.
+Note: Here stc1 & stc2 are the sales tax codes with different tax rate. Substitute them with sales tax codes from your dataset.
 
 - Maintain a hardware profile. Set up parameters for integration with a control unit and for receipt printing.
