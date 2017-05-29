@@ -9,7 +9,7 @@ the reporting structure that fits into your organization.
 
 Here is an example of a dimension hierarchy.
 
-![](media/1f6752885149f8b3cc3ce3e32a15f094.png)
+![A screenshot that displays a dimension hierarchy](../media/dimension-hierarchy.png)
 
 What can I use dimension hierarchies for?
 =========================================
