@@ -51,12 +51,12 @@ The following mobile workspaces can be used with the Dynamics 365 for Finance an
 | Inventory on-hand    | Gain mobile insights into reserved and available inventory anytime and anywhere.                                                                                                    | [Inventory on-hand mobile workspace](/dynamics365/operations/scm/inventory/inventory-on-hand-mobile-workspace)       |
 | Sales orders         | Stay up to date on your sales orders anytime and anywhere.                                                                                                                          | [Sales orders mobile workspace](/dynamics365/operations/scm/sales-marketing/sales-orders-mobile-workspace)                 |
 | Vendor collaboration | Your vendors can stay up to date on the purchase orders that have been sent to them for approval, and they can view information about new and updated purchase orders and contacts. | [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
+| Purchase order approval | The workspace lets you view and respond to purchase orders with actions such as approve or reject. | [Purchase order approval mobile workspace](/dynamics365/operations/supply-chain/procurement/purchase-order-mobile-workspace) |
 | Expense management | This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt. | [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace) |
 | Project time entry | This workspace lets users enter and save time against a project by using their mobile device. | [Project time entry mobile workspace](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace) |
 |Company directory|    |   |    
 |Manager self service|    |   |    
-|Employee self service|    |   |    
-|Purchase order approvals|    |   |    
+|Employee self service|    |   |     
 
 ## Mobile workspaces released for the Dynamics 365 for Operations mobile app
 
