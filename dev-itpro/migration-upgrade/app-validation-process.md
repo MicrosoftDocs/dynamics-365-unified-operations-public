@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Upgrade data in development, demo, or sandbox environments
-description: This topic provides instructions for upgrading your Microsoft Dynamics 365 for Operations database to the latest update.
+title: 
+description: 
 author: tariqbell
 manager: AnnBe
 ms.date: 05/30/2017
