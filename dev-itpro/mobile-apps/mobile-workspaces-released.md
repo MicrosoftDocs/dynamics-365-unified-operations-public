@@ -60,7 +60,7 @@ The following mobile workspaces can be used with the Dynamics 365 for Finance an
 
 ## Mobile workspaces released for the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app
 
-###Mobile workspaces that were released in April 2017
+### Mobile workspaces that were released in April 2017
 The following mobile workspaces can be used with the Dynamics 365 for Operations mobile app.
 
 | Mobile workspace   | Description                                                                                                                                                                                                      | Learn more                                                                                                      |
