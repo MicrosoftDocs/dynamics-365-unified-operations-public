@@ -173,7 +173,7 @@ For Dynamics 365 for Operations:<ul>
 <tr class="odd">
 <td>9</td>
 <td>User</td>
-<td>Sign in, and use the mobile app. The app includes the mobile workspaces that have been published.</td>
+<td>Sign in, and use the mobile app. The app includes the mobile workspaces that have been published by the system administrator.</td>
 <td>To see a list of mobile workspaces provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.
 </td>
 </tr>
