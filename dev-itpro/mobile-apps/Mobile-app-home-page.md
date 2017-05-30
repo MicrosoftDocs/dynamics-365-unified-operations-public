@@ -163,8 +163,9 @@ The following table includes links to resources that can help you implement cust
 
 <td>For Dynamics 365 for Finance and Operations, Enterprise Edition:<ul>
 <li>For Android: <a href="https://go.microsoft.com/fwlink/?linkid=850662">Dynamics 365 for Finance and Operations, Enterprise Edition on the Google Play Store</a></li>
-<li>For iPhone: <a href="https://go.microsoft.com/fwlink/?linkid=850663">Dynamics 365 for Finance and Operations, Enterprise Edition on the iTunes apps store</a></li>
-For Dynamics 365 for Operations:<ul>
+<li>For iPhone: <a href="https://go.microsoft.com/fwlink/?linkid=850663">Dynamics 365 for Finance and Operations, Enterprise Edition on the iTunes apps store</a></li></ul>
+For Dynamics 365 for Operations:
+<ul>
 <li>For Android: <a href="https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile">Dynamics 365 for Operations on the Google Play Store</a></li>
 <li>For iPhone: <a href="https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8">Dynamics 365 for Operations on the iTunes apps store</a></li>
 
