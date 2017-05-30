@@ -5,7 +5,7 @@ title: Models
 description: This article describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
 author: robadawy
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
