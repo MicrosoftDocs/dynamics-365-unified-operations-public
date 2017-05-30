@@ -37,16 +37,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial will walk you through configuring Visual Studio Team Systems (previously known as Visual Studio Online) to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
 
-Configure your Visual Studio Online account and project
--------------------------------------------------------
+## Configure your Visual Studio Team Services account and project
 
-In this section, you'll create a new project in Visual Studio Online. This project will host the source code of your model. You'll use the Fleet Management model as an example. If you don't have a Visual Studio online account, you'll create one.
+In this section, you'll create a new project in Visual Studio Team Services. This project will host the source code of your model. You'll use the Fleet Management model as an example. If you don't have a Visual Studio online account, you'll create one.
 
 ### Sign up to Visual Studio Online, create an account, and create a new project
 
-Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Online. Click **Sign up**. If you already have an account in Visual Studio Online, go to the Create a Visual Studio Online project section later in this topic. 
-
-[![SignUp\_UsingDevoTools](./media/signup_usingdevotools.png)](./media/signup_usingdevotools.png)
+Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Team Services. Click **Sign up**. If you already have an account in Visual Studio Team Services, go to the Create a Visual Studio Team Services project section later in this topic. 
 
 1.  Sign in with your Microsoft account. **Note**: You can also use an organizational account (Microsoft Office 365 domain).
 2.  Create a Visual Studio Online account, and select a URL for your account. This is the URL that you'll connect to from your development computer when you're configuring source control in Visual Studio. The following is an example of the account URL. 
