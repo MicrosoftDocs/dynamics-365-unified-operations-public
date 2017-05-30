@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inventory on-hand mobile workspace
-description: This topic provides information about the Inventory on-hand mobile workspace, which is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
+description: This topic provides information about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
 author: YuyuScheller
 manager: AnnBe
 ms.date: 05/10/2017
@@ -35,7 +35,11 @@ ms.search.validFrom: 2016-11-30
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides information about the Inventory on-hand mobile workspace, which is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
+This topic provides information about the **Inventory on-hand** mobile workspace. This workspace helps you gain insights into reserved and available inventory anytime and anywhere.
+
+This workspace can be used with:
+- The Dynamics 365 for Finance and Operations, Enterprise Edition mobile app
+- The Dynamics 365 for Operations mobile app
 
 Overview of the Inventory on-hand mobile workspace
 --------------------------------------------------
@@ -61,14 +65,14 @@ Specifically, the mobile workspace provides these features:
     -   By available physical (This view represents available amount that has no reservations.)
 
 ## Prerequisites
-Before you can use the **Inventory on-hand** mobile workspace, make sure that your system administrator has the following prerequisites in place.
+The prerequisites differ based on the version of Dynamics 365 that has been deployed for your organization.
+
+If Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update has been deployed for your organization, the system administrator simply needs to publish the **Inventory on-hand** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+If Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administator must complete the following prerequisites. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
+
 <thead>
 <tr class="header">
 <th>Prerequisite</th>
@@ -77,54 +81,50 @@ Before you can use the **Inventory on-hand** mobile workspace, make sure that yo
 </tr>
 </thead>
 <tbody>
+
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
+<td>Implement KB 4018050.</td>
 <td>System administrator</td>
-<td>If you don’t already have Dynamics 365 for Operations deployed in your organization, the system administrator should see <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
-</tr>
-<tr class="even">
-<td>KB 4013633 must be implemented.</td>
-<td>System administrator</td>
-<td>KB 4013633 (an X++ update or metadata hotfix) contains four mobile workspaces for supply chain management. To implement KB 4013633, your system administrator must follow these steps:
+<td>KB 4018050 is an X++ update or metadata hotfix that contains the <strong>Inventory on-hand</strong> mobile workspace. To implement KB 4018050, your system administrator must follow these steps.
 <ol>
-<li>Download KB 4013633 from Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Lifecycle Services (LCS)</a>.</li>
 <li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
 <li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</li>
 </ol></td>
 </tr>
-<tr class="odd">
-<td>The <strong>Inventory on-hand</strong> mobile workspace must be published to the Dynamics 365 for Operations mobile app.</td>
+<tr class="even">
+<td>Publish the <strong>Inventory on-hand</strong> mobile workspace.</td>
 <td>System administrator</td>
-<td><ol>
-<li>Start Dynamics 365 for Operations in your browser.</li>
-<li>On the <strong>System parameters</strong> page, select <strong>Manage mobile workspaces</strong>.</li>
-<li>Select the <strong>Inventory on-hand</strong> workspace.</li>
-<li>Click <strong>Publish mobile workspace</strong>.</li>
-</ol></td>
+<td>See <a href="/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## Download and install the Dynamics 365 for Operations mobile app
-Download and install the Dynamics 365 for Operations mobile app from your mobile app store.
+## Download and install the mobile app
+To download and install the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app:
+
+-   For Android: [Dynamics 365 for Finance and Operations, Enterprise Edition on the Google Play Store](https://go.microsoft.com/fwlink/?linkid=850662)
+-   For iPhone: [Dynamics 365 for Finance and Operations, Enterprise Edition on the iTunes apps store](https://go.microsoft.com/fwlink/?linkid=850663)
+
+To download and install the Dynamics 365 for Operations mobile app:
 
 -   For Android: [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   For iPhone: [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
-## Sign in to the Dynamics 365 for Operations mobile app
+## Sign in to the mobile app
 1.  Start the app on your mobile device.
-2.  Enter your Dynamics 365 for Operations URL.
+2.  Enter your Dynamics 365 URL.
 3.  Enter the company to sign in to. For example, enter **USMF**.
-4.  The first time that you sign in, you’re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
-5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator later publishes a new workspace, you can pull to refresh the list of mobile workspaces. 
+4.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
+5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator publishes a new workspace later, you can pull to refresh the list of mobile workspaces.
 
     [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## View the onhand inventory for a product by using the Inventory onhand mobile workspace
 1.  On your mobile device, select the **Inventory on-hand** workspace.
-2.  Select **Check on-hand for an item**. You see a list of the products that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Dynamics 365 for Operations mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
-3.  If your item isn't in the list, select **Search more** to do an online search in Dynamics 365 for Operations. Search by product number, or switch to a search by product name.
+2.  Select **Check on-hand for an item**. You see a list of the products that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
+3.  If your item isn't in the list, select **Search more**. Search by product number, or switch to a search by product name.
 4.  Select a product. If the item has an image, the image is shown.
 5.  Select one of the following options to view the status of on-hand inventory:
     -   View on-hand per site
