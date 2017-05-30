@@ -5,7 +5,7 @@ title: Mobile workspaces recently released
 description: This topics lists the mobile workspaces that have recently been released.
 author: sericks007
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
