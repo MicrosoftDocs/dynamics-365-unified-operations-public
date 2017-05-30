@@ -73,10 +73,11 @@ The following mobile workspaces are included with Dynamics 365 for Finance and O
 - [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace)
 - [Project time entry mobile workspace](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace)
 - [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace)
+- [Purchase order approvals]
 - [Company directory]
 - [Manager self service]
 - [Employee self service]
-- [Invoice approvals]
+
 
 
 ## Implementation process
