@@ -155,7 +155,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
     1. Under the **ClientId** column, enter "Cloud POS".  Set the **Type** field to **Public** and the **UserType** field to **Worker**. 
     2. Under the **ClientId** column, enter "Modern POS".  Set the **Type** field to **Public** and the **UserType** field to **Worker**.
 21. On the Action Pane, select **Save**.
-22. When you've finished, select **Finish**. 
+22. When finished, return to the installer and select **Finish**. **Note:** It is valuable information on this final screen and can be used to test and validate that all components are working properly.  Keep this screen up as long as is necessary to validate.
 
 > [!NOTE]
 > If the installer doesn't show a check mark for Retail Server, Async Client, or any other component, wait 10 minutes, so that any cached values can be updated in the cloud. Then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
