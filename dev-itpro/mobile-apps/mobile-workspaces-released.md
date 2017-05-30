@@ -40,7 +40,9 @@ This topic lists the mobile workspaces that have recently been released for:
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition mobile app
 - Microsoft Dynamics 365 for Operations mobile app
 
-## Mobile workspaces that were released in June 2017
+## Mobile workspaces released for the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app
+
+### Mobile workspaces that were released in June 2017
 The following mobile workspaces can be used with the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app.
 
 | Mobile workspace     | Description                                                                                                                                                                         | Learn more                                                                                                                                                        |
@@ -56,22 +58,23 @@ The following mobile workspaces can be used with the Dynamics 365 for Finance an
 |Employee self service|    |   |    
 |Purchase order approvals|    |   |    
 
-Mobile workspaces that were released in April 2017
---------------------------------------------------
+## Mobile workspaces released for the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app
+
+###Mobile workspaces that were released in April 2017
 The following mobile workspaces can be used with the Dynamics 365 for Operations mobile app.
 
 | Mobile workspace   | Description                                                                                                                                                                                                      | Learn more                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Expense management | This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt. | [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace) |
 
-## Mobile workspaces that were released in March 2017
+### Mobile workspaces that were released in March 2017
 The following mobile workspaces can be used with the Dynamics 365 for Operations mobile app.
 
 | Mobile workspace   | Description                                                                                   | Learn more                                                                                                                                                                              |
 |--------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Project time entry | This workspace lets users enter and save time against a project by using their mobile device. | [Project time entry mobile workspace](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace) |
 
-## Mobile workspaces that were released in January 2017
+### Mobile workspaces that were released in January 2017
 The following mobile workspaces can be used with the Dynamics 365 for Operations mobile app.
 
 | Mobile workspace     | Description                                                                                                                                                                         | Learn more                                                                                                                                                        |
@@ -81,7 +84,7 @@ The following mobile workspaces can be used with the Dynamics 365 for Operations
 | Sales orders         | Stay up to date on your sales orders anytime and anywhere.                                                                                                                          | [Sales orders mobile workspace](/dynamics365/operations/scm/sales-marketing/sales-orders-mobile-workspace)                 |
 | Vendor collaboration | Your vendors can stay up to date on the purchase orders that have been sent to them for approval, and they can view information about new and updated purchase orders and contacts. | [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
-## Mobile workspace functionality that was released in December 2016
+### Mobile workspace functionality that was released in December 2016
 The following mobile workspace can be used with the Dynamics 365 for Operations mobile app.
 
 | Mobile workspace        | Description                                                                    | Learn more                                                                                                            |
