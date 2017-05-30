@@ -63,20 +63,6 @@ Once you are on a page, you can do several things, such as:
 - Navigate to other pages for related data, such as entity details or lines.
 -   See a list of **actions** that are available for that page. Actions let you create or edit existing data.
 
-## Mobile workspaces included with Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update
-
-The following mobile workspaces are included with Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update. To implement them in your organization, the system administrator must [publish them](publish-mobile-workspace.md).
-
-- [Cost controlling mobile workspace](dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)
-- [Inventory on-hand mobile workspace](/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)
-- [Sales orders mobile workspace](/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)
-- [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace)
-- [Purchase order approvals]
-- [Project time entry mobile workspace](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace)
-- [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace)
-- [Company directory]
-- [Manager self service]
-- [Employee self service]
 
 ## Implementation process
 The following illustration shows the process for implementing custom mobile workspaces, or mobile workspaces provided by Microsoft. 
@@ -105,7 +91,7 @@ The following table includes links to resources that can help you implement cust
 <td>1</td>
 <td>System administrator</td>
 <td>Implement Dynamics 365 for Finance and Operations, Enterprise Edition or Dynamics 365 for Operations in your organization.</td>
-<td>If you haven't deployed a version of Dynamics 365 yet, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</td>
+<td>If you haven't deployed a version of Dynamics 365 yet, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. To see a list of mobile workspaces that can be implemented with the version of Dynamics 365 that you deployed, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
