@@ -51,14 +51,14 @@ Download Retail hardware station by using self-service
 5.  Enter the port number, select a hardware profile, and select a package name in the appropriate fields. **Note:** Only one hardware station package is provided for an environment that has been loaded with demo data.
 6.  On the Action Pane, click **Save**.
 
-### Configure a new Retail hardware station (Start here for Dynamics 365 for Operations version 1611)
+### Configure a new Retail hardware station (Start here for Dynamics 365 for Operations, version 1611 or newer)
 
-**Note:** If you are running the February 2016 version of Dynamics 365 for Operations, pay close attention to step 5. Use your Azure AD credentials to sign in to the Dynamics 365 for Operations trial.
+**Note:** If you are running the February 2016, non-upgraded version of Dynamics 365 for Operations (Initial release), step 5 will not be performed. Use your Azure AD credentials to sign in to the Dynamics 365 for Operations trial.
 
 1.  On the **Welcome** page, use the menu in the upper left to navigate to **Retail and commerce** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
 2.  On the **All retail stores** page, select the retail channel ID of the desired store. The details view for the store opens. **Note:** The Houston store is the most thoroughly prepared store in the demo data.
 3.  On the **Retail store details** page, on the **Hardware stations** FastTab, click **Add**. **Note:** The Retail Server URL that is used for the selected store is read-only. This URL will be important during the installation of Retail hardware station.
-4.  In the **Hardware station type** field, select **Shared**. This means that this hardware station is an IIS, installed hardware station to be used by external POS systems.
+4.  In the **Hardware station type** field, select **Shared**. This means that this hardware station is an IIS, installed hardware station to be used by external POS systems.  **Note:** The value **Shared** signifies that this is a truely shared hardware station installation and functions through HTTPS communication, while the value **Dedicated** signifies the hardware station that comes as a part of Retail Modern POS and functions through inter-process communication.
 5.  **For version 1611:** Enter the port number, select a hardware profile, and select a package name in the appropriate fields. **Note:** Only one hardware station package is provided for an environment that has been loaded with demo data, at environment creation time. **For version** **February 2016:** Select a hardware station profile.
 6.  Enter the host name of the computer that you're installing Retail hardware station on. Additionally, enter the electronic funds transfer (EFT) terminal ID that is associated with that computer for merchant account information.
 
@@ -81,22 +81,22 @@ Download Retail hardware station by using self-service
     -   Windows 7 Professional, Enterprise, or Ultimate edition (both x86 and x64 architectures). Home edition and Embedded edition aren't supported.
     -   Windows 8.1 Update 1 Pro or Enterprise edition (both x86 and x64 architectures). Standard edition isn't supported.
     -   Windows 10 Pro or Enterprise edition with Anniversary Update (both x86 and x64 architectures). Home edition isn't supported.
-    -   Microsoft Windows Server 2012 or Microsoft Windows Server 2012 R2.
+    -   Microsoft Windows Server 2012 R2.
 
 The Retail hardware station installer first extracts the associated files, and then begins the installation:
 
 1.  The installer validates that all prerequisites are met. If a sideloading key is required, the installer requests it. This key is found on the **Devices** page for each device, under **General**. **Note:** If a system restart is required, the installer informs you of this requirement but can continue the installation. **Note:** Before you can use hardware that is based on the object linking and embedding for point of sale (OPOS) standard, the OPOS Common Control Objects must be installed. If they aren't installed, the installer informs you of this requirement but can continue the installation.
 2.  Enter the Retail Server URL (for example, **https://MyCompanyNameret.axcloud.dynamics.com/Commerce**), and then click **Next**. **Note:** You can find the Retail Server URL at the top of the **Hardware stations** FastTab on the **Retail store details** page.
 3.  Select a valid Secure Sockets Layer (SSL) certificate to use for HTTPS communication. **Note:** The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can't be expired. It must be stored in the personal certificate store location on the local computer.
-4.  Enter the user name and password that the application pool will run under. **Note:** Currently, service users aren't supported in this installer.
-5.  Enter the HTTPS port to use. **Note:** You can find the HTTPS port in the hardware station profile. To access the hardware station profile, on the **Retail store details** page, on the **Hardware stations** FastTab, select the profile ID of the selected hardware station. **Note:** The installer automatically enters the host name. If, for any reason, you must change the host name for the installation, you can change it here. The host name must be the fully-qualified domain name (FQDN) of the system, and it must be entered in the **Host name** field for the selected hardware station entry.
+4.  The next screen requests what user to use for the IIS application pool.  By default (version 1611 and newer), the installer can automatically create and use a service account.  If on a domain or need more specific controls, deselect this checkbox and enter the user name and password that the application pool will run under.
+5.  Enter the HTTPS port to use. **Note:** You can find the HTTPS port in Operations (See the instructions on configuration above). **Note:** The installer automatically enters the host name. If, for any reason, you must change the host name for the installation, you can change it here. The host name must be the fully-qualified domain name (FQDN) of the system, and it must be entered in the **Host name** field for the selected hardware station entry.
 6.  The installer installs Retail hardware station and then indicates whether the installation was successful.
-7.  When the installation is completed, the Install merchant information tool starts. This installer connects to the environment and installs the merchant account information (such as the EFT ID) for the selected hardware station. **Note:** If the hardware station that was installed won't be used for payment-related work, close the **Install merchant information** window without completing the remaining steps inthis procedure.
+7.  When the installation is completed, the Install merchant information tool starts. This installer connects to the environment and installs the merchant account information (such as the EFT ID) for the selected hardware station. **Note:** If the hardware station that was installed won't be used for payment-related work, do not close the **Install merchant information** window without completing the remaining steps.  The hardware station will not function without this installation being performed successfully.
 8.  The Install merchant information tool might request Azure AD credentials. Enter the Azure AD credentials of the user who is installing Retail hardware station.
 9.  The Retail Server URL is entered automatically (it's known through the Retail hardware station installation). The installer uses this URL to load the list of stores that the user is connected to via the address book.
 10. Select the retail store that the hardware station was installed for.
-11. Select the hardware station profile that matches the hardware station that was installed on the current computer.
-12. Verify that the host names and EFT terminal IDs are correct, based on the current computer and the Retail hardware station installation that was just completed. Then click **Install**.
+11. Select the hardware profile that matches the hardware station that was installed on the current computer.
+12. Verify that the host names and EFT terminal IDs are correct, based on the current computer and the Retail hardware station configuration that has already been completed in Operations. Once verified, select **Install**.
 13. When you receive a message that states that the merchant account information was installed correctly, exit the installer by clicking the **Close** button.
 
 ## Help secure Retail hardware station
@@ -145,6 +145,7 @@ Current security standards state that the following options should be set in a p
 
 -   Retail hardware station hasn't been set up correctly in headquarters. Use the steps earlier in this tutorial to verify that the hardware station profile and the hardware station are correctly entered.
 -   The jobs haven't been run to update the channel configuration. In this case, run the 1070 job for channel configuration.
+-   The hardware station is not accessible from that computer.  Verify that the hardware station URL ping test is accessible from a web browser.  This URL can be found at the end of the hardware station installer and follows the form https://&lt;Computer Name&gt;:&lt;Port Number&gt;/HardwareStation/ping.
 
 ## Uninstall Retail hardware station
 You can use Control Panel in Microsoft Windows to uninstall Retail hardware station.
@@ -153,7 +154,4 @@ You can use Control Panel in Microsoft Windows to uninstall Retail hardware stat
 2.  In Control Panel, click **Programs** &gt; **Uninstall a program**. The **Programs and Features** window opens.
 3.  Select **Microsoft Dynamics 365 for Operations for Retail hardware station**, and then click **Uninstall** above the list of programs.
 4.  Wait for the uninstaller to finish removing the program.
-
-
-
 
