@@ -103,6 +103,7 @@ The following table includes links to resources that can help you implement mobi
 <li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></li>
 <li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></li>
 <li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Vendor collaboration mobile workspace</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/purchase-order-mobile-workspace">Purchase order approval mobile workspace</a></li>
 <li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></li>
 <li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Expense management mobile workspace</a></li>
 </ul></td>
