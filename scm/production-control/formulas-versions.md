@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Formula designer
+title: Formulas and formula versions
 description: enter a key sentence
 author: YuyuScheller 
 manager: AnnBe
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Formulas and Formula versions
+# Formulas and formula versions
 
 [!include[banner](../includes/banner.md)]
 
 A formula defines the materials, ingredients and outcomes of a specific process manufacturing process. Together with the correspondent route, the manufacturing process is defined as a whole. Formulas are required to plan and produce the production of products in the process industries.
 
-A formula consists of the required ingredients and quantities that are required to produce a determined quantity of a formula item. Depending on the task that you perform, you can access formula functionality from Inventory and warehouse management or Product information management.
+A formula consists of the required ingredients and quantities that are required to produce a determined quantity of a formula item. Depending on the task that you perform, you can access formula functionality from **Inventory and warehouse management** or **Product information management**.
 
 ## Formulas and formula lines
 
@@ -46,7 +46,7 @@ An example of a formula might be a chocolate chip cookie formula. The ingredient
 
 ## Formula versions
 
-To create a new formula, you must first create a formula version before you add the formula line items with their specific characteristics. Every formula must have at least one version. The Approved button on a formula version becomes available only after a version record has been successfully saved. Each formula version record is associated with one or many co-products and by-products that can be produced as you produce the finished product. Many products can be made from the same ingredients in different batch sizes, multiples, or using different yields. You can create as many versions of a formula as needed.
+To create a new formula, you must first create a formula version before you add the formula line items with their specific characteristics. Every formula must have at least one version. The **Approved** button on a formula version becomes available only after a version record has been successfully saved. Each formula version record is associated with one or many co-products and by-products that can be produced as you produce the finished product. Many products can be made from the same ingredients in different batch sizes, multiples, or using different yields. You can create as many versions of a formula as needed.
 
 To manage multiple active formula versions, use effective date ranges or from quantity fields. Multiple active formula versions can exist only if the date range and from quantity do not overlap.
 
@@ -56,18 +56,18 @@ Different to BOM versions, where it is common that one Bill of Material (BOM) mi
 
 Formulas and formula versions must be approved before they can be used for planning and production. Although formulas are usually activated before they are used, you can select a formula version during production that is approved, but not activated.
 
-To secure a formula or formula version, you can set Block editing and Block removal of approval parameters in the Production control parameters form.
+To secure a formula or formula version, you can set **Block editing** and **Block removal of approval parameters** in the **Production control parameters** form.
 
-If you select Block editing and the formula is approved, no fields in the formula lines can be deleted or edited. However, if you remove the approval of the formula, you can delete and modify the formula lines. You can also create new formulas and new formula versions.
+If you select **Block editing** and the formula is approved, no fields in the formula lines can be deleted or edited. However, if you remove the approval of the formula, you can delete and modify the formula lines. You can also create new formulas and new formula versions.
 
-If you select Block removal of approval, you cannot un-approve an approved formula or formula version. However, you can create new formulas and new formula versions, and you can remove activation of the formula version.
+If you select **Block removal of approval**, you cannot un-approve an approved formula or formula version. However, you can create new formulas and new formula versions, and you can remove activation of the formula version.
 
-You can add more levels of control by using electronic signature functionality. When a user is set up to require electronic signature on formula approval, a Signature form is displayed at activation of the formula. You must be authorized to sign electronically and the certificate must be successfully validated for the change to be committed. If your signature cannot be authenticated, the approval or removal of approval is denied and the change that initiated it is returned to its original state.
+You can add more levels of control by using electronic signature functionality. When a user is set up to require electronic signature on formula approval, a **Signature** form is displayed at activation of the formula. You must be authorized to sign electronically and the certificate must be successfully validated for the change to be committed. If your signature cannot be authenticated, the approval or removal of approval is denied and the change that initiated it is returned to its original state.
 
 
 ## Use the Scalable feature
-The Scalable feature is available only if all item components in the formula are set to Variable consumption. It is not available for Fixed consumption or Step consumption. By using the scalable feature, any change that you make to an ingredient in a formula will also adjust the quantity of the other ingredients that you select. The size of the formula is also adjusted. Likewise, any change in the formula size will change the quantity of all ingredients that are scalable. This feature is specifically for formula creation and maintenance and does not indicate whether the ingredient quantity will scale up or down on a batch order.
+The Scalable feature is available only if all item components in the formula are set to **Variable consumption**. It is not available for **Fixed consumption** or **Step consumption**. By using the scalable feature, any change that you make to an ingredient in a formula will also adjust the quantity of the other ingredients that you select. The size of the formula is also adjusted. Likewise, any change in the formula size will change the quantity of all ingredients that are scalable. This feature is specifically for formula creation and maintenance and does not indicate whether the ingredient quantity will scale up or down on a batch order.
 
 
 ## Use Step consumption
-Step consumption eliminates the requirement to enter a quantity on the Formula line tab for an ingredient. Instead, Step consumption is configured to have a From series and a Quantity. Based on the batch order quantity, the information from the Step consumption per series record that satisfies this quantity is selected. This is useful where the consumption rate is not linear with the batch order size and only increases the requirement when a certain quantity threshold is met. To enable this feature for a new formula, change the formula setting under the Consumption calculation group from Standard to Step for the applicable ingredient. You specify this consumption method on the Setup tab in the Formula line form
+Step consumption eliminates the requirement to enter a quantity on the **Formula line** tab for an ingredient. Instead, Step consumption is configured to have a **From series** and a **Quantity**. Based on the batch order quantity, the information from the Step consumption per series record that satisfies this quantity is selected. This is useful where the consumption rate is not linear with the batch order size and only increases the requirement when a certain quantity threshold is met. To enable this feature for a new formula, change the formula setting under the **Consumption calculation group** from **Standard** to **Step** for the applicable ingredient. You specify this consumption method on the **Setup** tab in the **Formula line** form.
