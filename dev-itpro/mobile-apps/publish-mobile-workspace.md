@@ -50,17 +50,16 @@ After a new workspace is published, users will have to pull to refresh the list 
 
 ## Publish a mobile workspace to the Dynamics 365 for Operations mobile app
 
-Complete the following sections to publish a mobile workspace to the Dynamics 365 for Operations mobile app.
-
 ### Prerequisites
 -------------
 
-The mobile workspaces provided by Microsoft for Dynamics 365 for Operations version 1611, require that KBs (hotfixes) be implemented. For more information about how to implement the required KBs, see the following topics.
+The mobile workspaces provided for Dynamics 365 for Operations version 1611, require that KBs (hotfixes) be implemented. For more information about how to implement the required KBs, see the following topics.
 
 - [Cost controlling mobile workspace](dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)
 - [Inventory on-hand mobile workspace](/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)
 - [Sales orders mobile workspace](/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)
 - [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace)
+- [Purchase order approval mobile workspace](/dynamics365/operations/supply-chain/procurement/purchase-order-mobile-workspace)
 - [Project time entry mobile workspace](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace)
 - [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace)
 
