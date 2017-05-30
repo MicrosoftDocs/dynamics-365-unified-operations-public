@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Sell and return outside of assortments
-description: Ability for retailers to sell and return products outside of assortments.
+title: Sell and return products outside of an assortment
+description: With Dynamics 365 for Retail, you can now sell and return products outside of assortments.
 author: prabhu-padhi
 manager: AnnBe
 ms.date: 05/24/2017
@@ -29,18 +29,21 @@ ms.dyn365.ops.version:
 
 ---
 
-# Sell and return outside of assortment
-One of the most common scenarios for any retailers is the ability to sell products to their customers or accept returns from their customers even if they don’t carry the products in their stores (that is, products are not assorted to the stores).
+# Sell and return products outside of an assortment
+A common scenario for any retailer is to sell products to their customers or accept returns from their customers even if they don’t carry the specific products in their store (in other words, the products are not assorted to the store).
+Here are some typical scenarios:
 
-+ **Scenario-1:** Retailer doesn’t carry all its products in a specific store and the remaining are stored in the warehouse. The store associate can assist the customer by searching or browsing specific products from the warehouse, add them to the cart, and complete the checkout by selecting specific delivery methods (shipping to an address from the warehouse or letting the customer pick-up from the current store or from another store).
-+ **Scenario-2:** Retailer doesn’t carry specific products in the store or do not have them in the stock, but they are available in other stores. The store associate can assist the customer by searching or browsing specific products from the other store, add them to the cart, and complete the checkout by selecting specific delivery methods (shipping to an address from the warehouse or letting the customer pick-up from the other store).
-+ **Scenario-3:** Retailers who have many stores in and around specific cities/zip codes/etc. typically don’t want to force their customers to return specific products in a store that they purchased. Instead, they allow their customers to return products in any store independent of where they purchased the products.
++ A retailer doesn’t carry all its products in a specific store. The remaining products are stored in the warehouse. The store associate can assist the customer by searching or browsing products in the warehouse, add them to the cart, and complete the checkout by selecting a delivery method, such as shipping to an address from the warehouse or letting the customer pick up the product from the current store or from another store.
++ A retailer doesn’t carry specific products in the store or doesn’t have them in stock at the store the customer visited, but the products are available in other stores. The store associate can assist the customer by searching or browsing the products in the other store, add them to the cart, and complete the checkout by selecting a delivery method.
++ A retailer has many stores in and around a specific city or zip code and doesn’t want to force the customers to return products to the same store they were purchased in. Instead, customers can return products to any store.
 
-This feature enables the following **capabilities**:
-+ Search or Browse other store’s products
-+ Search or Browse all products (aka released products)
-+ Create cash-and-carry transaction or customer order
-+ If customer order, then select delivery options (ship to an address from the warehouse, or pick-up from current store or another store)
-+ Pick-up products from current store or another store
-+ Cancel order in current store or another store
-+ Return order (with or without receipt) in current store or another store
+
+Those common scenarios are now enabled for retailers using Dynamics 365 for Retail. With Retail, you can:
++ Search or browse products at other stores.
++ Search or browse all released products.
++ Create cash-and-carry transactions or customer orders.
++ Select delivery options for a customer orders.
++ Pick up products at the current store or another store.
++ Cancel an order at the current store or another store.
++ Return an order with or without the receipt at the current store or another store.
+
