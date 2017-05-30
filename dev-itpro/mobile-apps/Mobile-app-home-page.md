@@ -90,10 +90,8 @@ The following table includes links to resources that can help you implement mobi
 <tr class="odd">
 <td>1</td>
 <td>System administrator</td>
-<td>Implement Dynamics 365 for Finance and Operations, Enterprise Edition or Dynamics 365 for Operations in your organization.</td>
-<td>If you haven't deployed a version of Dynamics 365 yet, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. 
-<br>
-To see a list of mobile workspaces that can be implemented with the version of Dynamics 365 that you deployed, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</td>
+<td><p>Implement Dynamics 365 for Finance and Operations, Enterprise Edition or Dynamics 365 for Operations in your organization.</td>
+<td>If you haven't deployed a version of Dynamics 365 yet, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.<br></br>To see a list of mobile workspaces that can be implemented with the version of Dynamics 365 that you deployed, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</p></td>
 </tr>
 <tr class="even">
 <td>2</td>
