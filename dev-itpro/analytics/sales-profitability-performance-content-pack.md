@@ -51,6 +51,24 @@ Profitability can be analyzed by:
 -   Gross profit change, year-over-year
 -   Customer profitability (by revenue versus gross margin)
 
+
+## Accessing the content pack
+
+You can access the content pack in two ways:
+-	As an embedded report in your Dynamics 365 for Finance and Operations, Enterprise edition. Individuals in your organization can take advantage of analytics out of the box directly from the Dynamics 365 for Finance and Operations without having to model the data or create reports.
+-	From Lifecycle Services. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services. These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis.
+
+### Embedded content
+
+If you are using Dynamics 365 for Finance and Operations, Enterprise edition: The Sales and profitability performance Power BI content is displayed as a report under **Inquiries and reports** > **Sales performance** in the **Sales and marketing** module. 
+
+### Content accessible from Lifecycle Services
+
+The Sales and profitability performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+
+
+Below is the old text.
+
 ## Accessing the content pack
 The Sales and profitability performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 **Note:** KB 4011327 is a prerequisites for his Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
