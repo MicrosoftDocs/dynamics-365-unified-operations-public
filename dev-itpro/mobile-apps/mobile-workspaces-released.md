@@ -58,7 +58,7 @@ The following mobile workspaces can be used with the Dynamics 365 for Finance an
 |Employee self service|    |   |    
 |Purchase order approvals|    |   |    
 
-## Mobile workspaces released for the Dynamics 365 for Finance and Operations, Enterprise Edition mobile app
+## Mobile workspaces released for the Dynamics 365 for Operations mobile app
 
 ### Mobile workspaces that were released in April 2017
 The following mobile workspaces can be used with the Dynamics 365 for Operations mobile app.
