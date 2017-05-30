@@ -71,14 +71,12 @@ The following mobile workspaces are included with Dynamics 365 for Finance and O
 - [Inventory on-hand mobile workspace](/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)
 - [Sales orders mobile workspace](/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)
 - [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace)
+- [Purchase order approvals]
 - [Project time entry mobile workspace](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace)
 - [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace)
-- [Purchase order approvals]
 - [Company directory]
 - [Manager self service]
 - [Employee self service]
-
-
 
 ## Implementation process
 The following illustration shows the process for implementing custom mobile workspaces, or mobile workspaces provided by Microsoft. 
