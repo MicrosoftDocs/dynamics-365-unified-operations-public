@@ -51,8 +51,8 @@ You may want to add the **Vendor admin (external)** and **Vendor (external)** ro
 
 If you're going to manually set up vendor contacts and users, you could just make the Vendor (external) role available in External roles. Then this will be the only role that can be requested through the vendor user request.  
 
-[!NOTE]
-The **SystemUser** role is automatically granted when you manually create a new user account in Dynamics 365 for Operations. Therefore, you must remove that role and assign the **SystemExternalUser** role. If the new user account is created using the workflow that's initiated by a vendor user request for provisioning a new user, the roles that are assigned will be one or more of those that you've set up for vendor collaboration and the **SystemExternalUser**.
+> [!NOTE]
+> The **SystemUser** role is automatically granted when you manually create a new user account in Dynamics 365 for Operations. Therefore, you must remove that role and assign the **SystemExternalUser** role. If the new user account is created using the workflow that's initiated by a vendor user request for provisioning a new user, the roles that are assigned will be one or more of those that you've set up for vendor collaboration and the **SystemExternalUser**.
 
 ### Vendor admin (external) security role
 
@@ -103,7 +103,7 @@ The branches of the workflow might contain the elements listed below.
 
 ### Example workflow for inactivating a user
 
-Create a workflow of type **SysUserRequestInactivateUserTemplate,** and then add the following tasks.
+Create a workflow of type **SysUserRequestInactivateUserTemplate**, and then add the following tasks.
 
 1.  Assign an approval task to the person who's responsible for accepting the request to inactivate a user.
 2.  Add an automated task for inactivating the user. Use the **Automated user inactivation** task to do this.
@@ -115,8 +115,8 @@ Before you create a user account for someone who will use vendor collaboration, 
 -   **Active (PO is auto-confirmed)** - Purchase orders are automatically confirmed when the vendor accepts them without changes.
 -   **Active (PO is not auto-confirmed)** - Purchase orders need to be manually confirmed by your organization, after the vendor has accepted them.
 
-[!NOTE]
-This task can also be carried out by procurement professionals in your company.
+> [!NOTE]
+> This task can also be carried out by procurement professionals in your company.
 
 ## Troubleshoot the provisioning of new vendor collaboration users
 New vendor collaboration users are provisioned using the workflow that you've set up to process vendor collaboration user requests of type **Provision vendor user**.  
