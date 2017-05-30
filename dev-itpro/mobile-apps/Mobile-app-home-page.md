@@ -92,7 +92,7 @@ The following table includes links to resources that can help you implement cust
 <td>System administrator</td>
 <td>Implement Dynamics 365 for Finance and Operations, Enterprise Edition or Dynamics 365 for Operations in your organization.</td>
 <td>If you haven't deployed a version of Dynamics 365 yet, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. 
-To see a list of mobile workspaces that can be implemented with the version of Dynamics 365 that you deployed, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</td>
+<br>To see a list of mobile workspaces that can be implemented with the version of Dynamics 365 that you deployed, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
