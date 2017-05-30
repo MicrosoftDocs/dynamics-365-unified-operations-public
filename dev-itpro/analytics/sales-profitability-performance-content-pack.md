@@ -66,11 +66,6 @@ If you are using Dynamics 365 for Finance and Operations, Enterprise edition: Th
 
 The Sales and profitability performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
-
-Below is the old text.
-
-## Accessing the content pack
-The Sales and profitability performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 **Note:** KB 4011327 is a prerequisites for his Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
 
 ## Metrics included in the content pack
