@@ -134,7 +134,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 > For information about the creation of web applications in Azure, read through the article [Use portal to create an Azure Active Directory application and service principal that can access resources](httphttps://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal). 
 
 > When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
-9.  After the application ID (client ID) and secret are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Dynamics 365 for Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+9.  After the application ID (client ID) and secret are created for Retail Store Scale Unit, the application ID (client ID) must be accepted in Dynamics 365 for Operations. In Operations, navigate to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 10. After the installation is completed, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files.
 11. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Retail shared parameters** page in Dynamics 365 for Operations.
     1.  In Dynamics 365 for Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
@@ -143,13 +143,19 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
     4.  On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
     5.  Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
     6.  On the Action Pane, select **Save**.
-12. Navigate to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+12. In Operations, navigate to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
 13. Select **Identity providers**.
 14. On the **Identity providers** FastTab, select **+Add**.
 15. In the new **Issuer** row, enter the Retail Server URL of your newly installed Retail Store Scale Unit.  At the end of the URL, add **/auth**.  This will make the URL look similar to **https://MyComputerName/RetailServer/auth**.  **Note:** There will be a new identity provider line for each Retail Store Scale Unit installed, each with a URL similar to the previously shown.
 16. Under the **Name** column, enter a description for which store this URL belongs to.
 17. Under the **Type** column, select **Open ID Connect**.  **Note:** This new row must be duplicated for every Retail Store Scale Unit installation (Each unique URL).
-18. When you've finished, select **Finish**. 
+18. On the Action Pane, select **Save**.
+19. On the **Identity providers** FastTab, select the newly created line that was just made. The values on the **Relying parties** FastTab are set, based on your selection.
+20. On the **Relying parties** FastTab, select **+Add** and add the following two entries.
+    1. Under the **ClientId** column, enter "Cloud POS".  Set the **Type** field to **Public** and the **UserType** field to **Worker**. 
+    2. Under the **ClientId** column, enter "Modern POS".  Set the **Type** field to **Public** and the **UserType** field to **Worker**.
+21. On the Action Pane, select **Save**.
+22. When you've finished, select **Finish**. 
 
 > [!NOTE]
 > If the installer doesn't show a check mark for Retail Server, Async Client, or any other component, wait 10 minutes, so that any cached values can be updated in the cloud. Then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
