@@ -1,0 +1,48 @@
+
+Overview of Upgrade and N-1 Support for  Microsoft Dynamics 2012 R3 Retail
+
+The key goal of the Upgrade and N-1 is to enable the 2012 R3 customers to leverage the benefits of Cloud by moving to Dynamics 365 Operation sooner than later. These features enable them to do this in a seamless way without disturbing their current operations. The following are key aspects of these features
+•	Enable the DB upgrade for Retail functionality is to customers from 2012 R3 (Starting with CU10) to Dynamics 365 Operations for the Back office
+•	Add N-1 Support for Retail customers to operate their stores with the 2012 R3 CU11 components onwards
+•	Simplified pre and post upgrade validation
+•	Enhanced N-1 Support for more 2012 R3 CU versions
+•	Add improved error handling and messaging for N-1 and Upgrade failures
+ 
+Specifically for Upgrade, in the spring release we will be enabling,
+•	Data upgrade to bring forward whole database to Dynamics 365 Operations
+•	Initial support for R3 CU10 (Spring Release) followed by other CU versions.
+•	Tooling to bring forward custom code for X++. (Note: The Retail specific code will not be upgraded and has to be done manually)
+•	Supporting R2 later and so on
+ 
+For N-1 support, N-1 Support feature will take our existing 2012 customers to cloud FASTER with MINIMAL INTERUPPTION to their current business processes. N-1 Support will enable our existing customers of 2012 R1/R2/R3 to be able to leverage the benefits of cloud for their businesses using AX7.1 in a hybrid model quickly without interrupting their existing infrastructure.
+ 
+ 
+Upgrades are Costly, Time consuming, and not happening overnight. The Cost of CU upgrade ranges from $2 K plus per store which results in a Costly exercise, planned only annually. The time taken to upgrade is significant as well, it takes at least 3 weeks to roll out for HQ and Store. Not many customers are able to do overnight deployment across all stores. This poses a huge challenge for the customers who want to move from the 2012 R3 versions to the new Dynamics 3765 Operations.
+ 
+For N-1, majority of the customers still have EPOS and will have significant user impact. This may incur user retraining impact .Having the n-1 support lighted up as part of planned CU upgrade will enable HQ upgrade with N-1 Support during the interim.
+ 
+ 
+The Upgrade procedure is largely the same as upgrading Dynamics 365 for Operations to the latest version. There will be a planned down time involved. The key difference is in the data upgrade step. First the Upgrade analysis is done, which performs the following actions,
+•	Runs against 2012 database
+•	Based on LCS diagnostic service
+•	Identifies tasks to help make upgrade faster, cheaper
+•	SQL configuration, Data cleanup, Deprecated features
+The Typical upgrade procedure looks like below,
+
+
+ 
+ 
+The Data upgrade then happens to move the 2012 database to SQL Azure and then Execute data upgrade package as normal through the runbook process. After this the Upgrade validation is done. A Tool is run against upgraded environment before using it. This Performs an automated smoke test to check things like whether Service is running and accessible, row counts match, financial and inventory reconcile etc.
+ 
+Most post upgrade configuration for Retail channels abstracted from user
+Pre and Post Upgrade Task Check lists to inform the user of the required tasks to be completed
+E.g. :Validate Channels, Registers Devices on Upgraded DB, Validate Transaction sync
+And Check on N-1 support availability
+ 
+For N-1 support, the customer will have to install the N-1 package from HQ and complete the configurations as part of the Upgrade. After the HQ upgrade and  N-1 set up is complete, the N-1 store components can communicate with the Dynamics 365 Operations HQ.
+ 
+Support  2012 R3 CU 10 versions for n-1 Support for Retail for Spring. After this we will support 2012 R3 CU 12 and CU8 in Store for Monthly updates
+Versions from 2012 CU 112onwards will be supported by back ward compatibility of HQ. The customer has to Upgrade to supported CU version before Upgrade, if they want toto have n-1 support for the stores. 
+ 
+The N-1 will require customers to install the N-1 package and set up the n-1 stores. The instructions for the N-1 setup can be found here <Link to N-1 Set up documentation by Jarad>
+
