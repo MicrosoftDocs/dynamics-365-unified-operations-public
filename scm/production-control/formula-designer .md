@@ -1,14 +1,46 @@
-Use the **Formula designer** form to design and work with formula tree
-structures. The designer graphically displays the formula structure. You can
-select different configurations and decide what information to display on the
-nodes of the tree.
+---
+# required metadata
 
-| **Important**                                                                                                                                           |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| If you access the designer from the formula, it does not display route information, because the formula is not yet linked to a specific, finished item. |
+title: Formula designer
+description: enter a key sentence
+author: YuyuScheller 
+manager: AnnBe
+ms.date: 06/01/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: enter AOT form names (PlanActivity, ReqSupplyDemandSchedule)
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+# ms.reviewer: YuyuScheller
+ms.search.scope: AX 7.0.0, Operations, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: Manufacturing
+ms.author: conradv
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# Formula designer
+
+[!include[banner](../includes/banner.md)]
+
+Use the **Formula designer** page to design and work with a formula tree structures. The designer graphically displays the formula structure. You can select different configurations and decide what information to display on the nodes of the tree.
+
+> [!IMPORTANT]
+> If you access the designer from the formula, it does not display route information, because the formula is not yet linked to a specific, finished item.
 
   
-Use the Designer tab
+## Use the Designer tab
 
 The **Designer** tab contains the following functionality:
 
@@ -21,12 +53,10 @@ The **Designer** tab contains the following functionality:
 
 -   A list of items
 
-| **Note**                                                                                                                                                                                                                                                                                                                        |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A site must be specified on the **Setup** tab. It must use either the default setting or one that you select. If the **Site** field is cleared, the tree does not display. If there are sub-formulas that use other sites, these do not display inside the tree. The tree displays only the information for one site at a time. |
+> [!NOTE]
+> A site must be specified on the **Setup** tab. It must use either the default setting or one that you select. If the **Site** field is cleared, the tree does not display. If there are sub-formulas that use other sites, these do not display inside the tree. The tree displays only the information for one site at a time.
 
-The following table shows the actions that you can perform for each function in
-the icon pane.
+The following table shows the actions that you can perform for each function in the icon pane.
 
 | **Function**                      | **Drag-and-drop**                               | **Click icon**   | **Right-click**      | **Double-click**               |
 |-----------------------------------|-------------------------------------------------|------------------|----------------------|--------------------------------|
@@ -51,10 +81,9 @@ the icon pane.
 | Remove link to operation          | —-                                              | —-               | Line or formula      | Line – Delete operation number |
 
   
-Use the Setup tab
+## Use the Setup tab
 
-Use the **Setup** tab to customize the information that is shown on
-the **Designer** form.
+Use the **Setup** tab to customize the information that is shown on the **Designer** form.
 
 | **Field group**     | **Field**             | **Description**                                                                                                                                                                                                                              |
 |---------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -73,4 +102,4 @@ the **Designer** form.
   
 See also
 
-Formula designer (form)
+
