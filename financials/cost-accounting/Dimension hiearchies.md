@@ -1,27 +1,42 @@
-What is a dimension hierarchy? 
-===============================
+---
+# required metadata
 
-A logical tree structure that organizes the members of cost dimensions such that
-each member has one parent member and zero or more child members. The aggregated
-data at node levels show cost performance at any level of an organization.
-Dimension hierarchies are important for reporting because they let you define
-the reporting structure that fits into your organization.
+title: Dimension hierarchy
+description:  
+author: YuyuScheller
+manager: AnnBe
+ms.date: 06/24/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
 
-Here is an example of a dimension hierarchy.
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+# ms.reviewer: YuyuScheller
+ms.search.scope: Operations, Core
+# ms.tgt_pltfrm: 
+ms.custom: 223174
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
+---
+
+# Dimension hierarchy 
+
+[!include[banner](../includes/banner.md)]
+
+Dimension hierarchies are let you define the reporting structure that fits into your organization. Here is an example of how a dimension hierarchy can look like. In addition, dimension hierarchies let you define cost policies and set up security at different levels in your organization.
 
 ![A screenshot that displays a dimension hierarchy](./media/dimension-hierarchy.png)
-
-
-What can I use dimension hierarchies for?
-=========================================
-
-You can use dimension hierarchies to
-
--   Structure reports for cost performance
-
--   Define policies for cost accounting
-
--   Set up security in cost accounting
 
 You can create dimension hierarchies for the following dimension types.
 
@@ -31,33 +46,22 @@ You can create dimension hierarchies for the following dimension types.
 
 -   Statistical dimensions
 
-Multiple Dimension hierarchies can be created for the same dimension in case
-different perspectives are required (confused.)
+> [!NOTE]
+> You can create multiple dimension hierarchies for the same dimension for different reporting purposes, but a dimension hierarchy can **only** be associated with one dimension. (confused)
 
-A dimension hierarchy can **only** be associated with one dimension (confused)
+## The difference between dimension categorization hierarchy and dimension categorization hierarchy
 
-What is the difference between dimension categorization hierarchy and dimension categorization hierarchy?
-=========================================================================================================
+The dimension categorization hierarchy type is used for reporting purpose. It only supports the cost element dimensions. When you select this type,
 
-The dimension categorization hierarchy type is used for reporting purpose. It
-only supports the cost element dimensions. When you select this type,
+-   a dimension member can be associated more than once in the hierarchy structure.
 
--   a dimension member can be associated more than once in the hierarchy
-    structure.
+-   a cost element dimension member can be placed in different nodes by assigning a **Cost behavior** to the leaf node.
 
--   a cost element dimension member can be placed in different nodes by
-    assigning a **Cost behavior** to the leaf node.
+This dimension classification hierarchy type is used for defining rules and reporting purposes. It supports all dimensions, such as cost object, cost elements, and statistical dimensions. When you select this type, a dimension member can only be associated once in the hierarchy structure.
 
-This dimension classification hierarchy type is used for defining rules and
-reporting purposes. It supports all dimensions, such as cost object, cost
-elements, and statistical dimensions. When you select this type, a dimension
-member can only be associated once in the hierarchy structure.
+## Create a dimension hierarchy
 
-How do I create a dimension hierarchy? 
-=======================================
-
-Go to **Cost accounting** \> **Dimensions** \> **Dimension hierarchies**. Click
-**New** to select a dimension hierarchy type.
+Go to **Cost accounting** \> **Dimensions** \> **Dimension hierarchies**. Click **New** to select a dimension hierarchy type.
 
 A dimension hierarchy consists of a tree structure with nodes and leaf nodes
 relationships.
