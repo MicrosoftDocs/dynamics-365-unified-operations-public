@@ -28,14 +28,14 @@ ms.dyn365.intro: [month/year of release that feature was introduced in, in forma
 ms.dyn365.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
 
-# Installing N-1 components for use with Microsoft Dynamics 365 for Operations - Retail
+# Installing N-1 components for use with Microsoft Dynamics 365 for Retail
 
 [!include[banner](../includes/banner.md)]
 
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Operations headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Dynamics 365 for Operations environment already provides these components, but you can now configure them to work locally in a store, in either a single-computer setup (the default option) or a multi-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
+This topic explains how you can use self-service to configure Connector for Microsoft Dynamics AX in Microsoft Dynamics 365 for Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Dynamics 365 for Operations environment already provides these components, but you can now configure them to work locally in a store, in either a single-computer setup (the default option) or a multi-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
 
 Before you begin
 ----------------
