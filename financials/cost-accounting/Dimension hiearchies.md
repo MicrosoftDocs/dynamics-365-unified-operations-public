@@ -101,8 +101,7 @@ A cost object dimension that represents all the cost centers in the organization
 A cost element dimension that represents all the cost elements in the organizations is structured as follows.
 
 | Member number                   | Member name                      |
-|---------------------------------|-----------------------------------|
-| Cost elements dimension members |                                  |
+|---------------------------------|----------------------------------|
 | 10001                           | Electricity                      |
 | 10010                           | Cleaning                         |
 | 10011                           | Heating                          |
@@ -130,7 +129,7 @@ A dimension hierarchy that meets the organizational reporting requirements can b
 |         Packaging      |    CC005                      |    CC005                  |
 |         Assembly       |    CC006                      |    CC006                  |
 
-A dimension hierarchy that meets the policy requirement can be set up as follows. What policy and why do I need this policy?
+A dimension hierarchy that meets the policy requirement can be set up as follows. What policy and why do I need this policy? The table doesn't render correctly!
 
 ###  Dimension hierarchy details 
 
@@ -144,8 +143,8 @@ A dimension hierarchy that meets the policy requirement can be set up as follows
 |---------------|-------------------------|---------------------|
 | Nodes         | From dimension member   | To dimension member |
 | Cost behavior |                         |                     |
-|               | 10001                   | 10011               |
-|               | 40001                   | 40010               |
+|      Fixed cost   | 10001                   | 10011               |
+|      Variable cost   | 40001                   | 40010               |
 
 >   Fixed cost
 
