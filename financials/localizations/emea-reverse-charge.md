@@ -1,3 +1,4 @@
+
 ---
 # required metadata
 
@@ -29,6 +30,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 # Overview
 This topic describes the generic approach to setting up the reverse charge (RC) value-added tax (VAT) for European countries.
+
 *Reverse Charge* is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Thus, the recipient of goods and/or services reports both the output VAT (acting as a seller) and the input VAT (acting as a purchaser) in their VAT statement.
 The EU Directive left space for Member State to determine how to adopt the generic requirements to local needs. Thus, in some countries, the *Reverse Charge Schema* is implemented only for certain goods and/or services, with additional conditions/thresholds on sales amounts, and in others, the VAT payment responsibility depends on the status of the supplier and the buyer. If the buyer is liable to pay VAT, it must be clearly reflected on the invoice issued by the supplier, i.e. a special wording *'Reverse charge'* must be included in the invoice along with indicating which positions are under the *Reverse Charge schema*. 
 
