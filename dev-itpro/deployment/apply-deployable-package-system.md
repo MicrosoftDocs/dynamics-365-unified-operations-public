@@ -5,7 +5,7 @@ title: Apply a deployable package in a Dynamics 365 for Operations environment
 description: This topic explains how to deploy a binary update or an application (AOT) deployable package that was created in your development or build environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 04/22/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: 
