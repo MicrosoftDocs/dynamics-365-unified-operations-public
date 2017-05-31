@@ -56,7 +56,7 @@ This topic lists the mobile workspaces that have recently been released for the 
 |Company directory|    |   |    
 |Manager self service|    |   |    
 |Employee self service|    |   |     
-
+|Invoice approval|    |   |    
 
 ## Mobile workspaces that were released in April 2017
 
