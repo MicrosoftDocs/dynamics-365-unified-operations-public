@@ -5,7 +5,7 @@ title: Print checks by using the Spanish layout
 description: This topic provides information about how to print checks that follow the standards that are required in Spain.
 author: neserovleo
 manager: AnnBe
-ms.date: 2017-04-21 19 - 14 - 03
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
