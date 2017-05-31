@@ -63,8 +63,9 @@ This dimension classification hierarchy type is used for defining rules and repo
 
 Go to **Cost accounting** \> **Dimensions** \> **Dimension hierarchies**. Click **New** to select a dimension hierarchy type.
 
-A dimension hierarchy consists of a tree structure with nodes and leaf nodes
-relationships.
+### Understand the hierarch structure
+
+A dimension hierarchy consists of a tree structure with nodes and leaf nodes relationships.
 
 -   A node can have 1: n sub nodes.
 
@@ -74,11 +75,9 @@ relationships.
 
 -   A node can contain 1: n dimension member ranges.
 
--   You can insert IDs that don’t exist as dimension members. This makes your
-    hierarchy resilient for the future.
+-   You can insert IDs that don’t exist as dimension members. This makes your hierarchy resilient for the future.
 
-Example
--------
+**Examples**
 
 A small company has the following organization structure.
 
@@ -89,7 +88,7 @@ A cost object dimension that represents all the cost centers in the organization
 - Cost object dimension
 - Cost centers
 
-| Member number                   | Member name                      |
+| Cost object dimension member    | Name                      |
 |---------------------------------|----------------------------------|
 | CC001                           | HR (should it be after assembly) |
 | CC002                           | Finance                          |
@@ -100,7 +99,7 @@ A cost object dimension that represents all the cost centers in the organization
 
 A cost element dimension that represents all the cost elements in the organizations is structured as follows.
 
-| Member number                   | Member name                      |
+| Cost element dimension member   | Name                             |
 |---------------------------------|----------------------------------|
 | 10001                           | Electricity                      |
 | 10010                           | Cleaning                         |
@@ -109,13 +108,13 @@ A cost element dimension that represents all the cost elements in the organizati
 
 A dimension hierarchy that meets the organizational reporting requirements can be set up as follows.
 
-###  Dimension hierarchy details 
+####  Dimension hierarchy details 
 
 | Dimension hierarchy name | Dimension    | Dimension hierarchy type name      | Access list hierarchy |
 |--------------------------|--------------|------------------------------------|-----------------------|
 | Organization             | Cost centers | Dimension classification hierarchy | No                    |
 
-### Dimension hierarchy
+#### Dimension hierarchy
 
 |                        |    Dimension member ranges    |                           |
 |------------------------|-------------------------------|---------------------------|
@@ -131,13 +130,13 @@ A dimension hierarchy that meets the organizational reporting requirements can b
 
 A dimension hierarchy that meets the policy requirement can be set up as follows. What policy and why do I need this policy? The table doesn't render correctly!
 
-###  Dimension hierarchy details 
+####  Dimension hierarchy details 
 
 | Dimension hierarchy name | Dimension     | Dimension hierarchy type name      |
 |--------------------------|---------------|------------------------------------|
 | Cost behavior            | Cost elements | Dimension classification hierarchy |
 
-### Dimension hierarchy
+#### Dimension hierarchy
 
 |               | Dimension member ranges |                     |
 |---------------|-------------------------|---------------------|
@@ -146,57 +145,39 @@ A dimension hierarchy that meets the policy requirement can be set up as follows
 |      Fixed cost   | 10001                   | 10011               |
 |      Variable cost   | 40001                   | 40010               |
 
->   Fixed cost
 
->   Variable cost
+### Copy a hierarchy
 
-How to copy a hierarchy?
-------------------------
+You can copy a current dimension hierarchy as the starting point for the new dimension hierarchy. This can be useful if you want to compare the previous dimension hierarchy to the new dimension hierarchy.
 
-You can copy a current dimension hierarchy as the starting point for the new
-dimension hierarchy. This can be useful if you want to compare the previous
-dimension hierarchy to the new dimension hierarchy.
+#### Move up and down nodes
 
-How to move up and down nodes?
-------------------------------
+You can move up and down a node within its current level in the structure to rearrange the node order for reporting in the **Cost control** workspace.
 
-You can move up and down a node within its current level in the structure to
-rearrange the node order for reporting in the **Cost control** workspace.
-
-Move a node to a new designated location in the hierarchy by selecting a target
-node. There are two ways to move a node: Move below and Move after. What is the
-difference between the two?
+Move a node to a new designated location in the hierarchy by selecting a target node. There are two ways to move a node: Move below and Move after. What is the difference between the two?
 
 -   **Move below**
 
-    Moves the highlighted node in the hierarchy from its current position and
-    inserts it **under** the selected target node
+    Moves the highlighted node in the hierarchy from its current position and inserts it **under** the selected target node.
 
 -   **Move after**
 
->   Moves the highlighted node in the hierarchy from its current position and
->   inserts it **after** the selected target node at its level of the hierarchy.
+    Moves the highlighted node in the hierarchy from its current position and inserts it **after** the selected target node at its level of the hierarchy.
 
-**Note:** The order of the nodes is not maintained when exporting data to Excel
-or Power BI because these tools use alphanumeric sorting order by default and
-you should manually rearrange the order.
+> [!NOTE] 
+> The order of the nodes is not maintained when exporting data to Excel or Power BI because these tools use alphanumeric sorting order by default and you should manually rearrange the order.
 
-How do I define dimension hierarchies for reporting?
-====================================================
+## Define dimension hierarchies for reporting
 
-A dimension hierarchy consists of an unlimited number of levels that are
-available in the **Cost control** workspace.
+A dimension hierarchy consists of an unlimited number of levels that are available in the **Cost control** workspace.
 
-**Note:** If you create reports using **Excel** or **Power BI**, only the first
-15 levels of the dimension hierarchies will be exported. This is because a fixed
-schema is required in Excel and Power BI.
+> [!NOTE]
+> If you create reports using **Excel** or **Power BI**, only the first 15 levels of the dimension hierarchies will be exported. This is because a fixed schema is required in Excel and Power BI.
 
-**Note:** Dimension hierarchies are not date effective (?). Any changes made to
-a dimension hierarchy will be saved to the record immediately, so you **can’t
-compare** data before this date to after this date.
+> [!NOTE]
+> Dimension hierarchies are not date effective (?). Any changes made to a dimension hierarchy will be saved to the record immediately, so you **can’t compare** data before this date to after this date.
 
-Dimension hierarchies are available in the following reporting tools. This
-ensures consistency in reporting structure.
+Dimension hierarchies are available in the following reporting tools. This ensures consistency in reporting structure.
 
 -   Cost control workspace (Dynamics 365 for Operations client)
 
@@ -221,12 +202,7 @@ ensures consistency in reporting structure.
 
     -   All dimension hierarchies are available
 
-When using Excel or Power BI for reporting, the dimension hierarchies are
-normalized and only the first 15 levels are exported. In case a hierarchy has
-more than 15 levels, these levels will not be exported. The normalized table
-contains a record per all dimension members in the hierarchy so an automated
-aggregation will take place. This ensures that the balances at any of the 15
-available levels in the hierarchy are still correct.
+When using Excel or Power BI for reporting, the dimension hierarchies are normalized and only the first 15 levels are exported. In case a hierarchy has more than 15 levels, these levels will not be exported. The normalized table contains a record per all dimension members in the hierarchy so an automated aggregation will take place. This ensures that the balances at any of the 15 available levels in the hierarchy are still correct.
 
 | Cost object dimension hierarchy - level 1 | Cost object dimension hierarchy - level 2 | Cost object dimension hierarchy - level 3 | Cost object dimension hierarchy - level 4 | Cost object dimension hierarchy - level 15 |
 |-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
@@ -237,11 +213,9 @@ available levels in the hierarchy are still correct.
 | Organization                              | Production                                | Packaging                                 | CC005                                     |                                            |
 | Organization                              | Production                                | Assembly                                  | CC006                                     |                                            |
 
-How do I update dimension hierarchies for reporting? 
------------------------------------------------------
+### Update dimension hierarchies for reporting 
 
-Over time, dimension hierarchies used for reporting in these tools discussed
-above will need to be updated.
+Over time, dimension hierarchies used for reporting in these tools discussed above will need to be updated.
 
 You can update any dimension hierarchies by refreshing the client.
 
@@ -249,24 +223,18 @@ You can update any dimension hierarchies by refreshing the client.
 
 -   Cost control workspace (Dynamics 365 for Operations mobile application)
 
-Any updates in dimension hierarchies will be picked up every 24 hours by a
-pre-cached job. After refreshing the exported data, the updated dimension
-hierarchies are available in
+Any updates in dimension hierarchies will be picked up every 24 hours by a pre-cached job. After refreshing the exported data, the updated dimension hierarchies are available in
 
 -   Microsoft Excel
 
 -   Microsoft Power BI
 
-**Note:** To manually trigger a refresh of the dimension hierarchy cache, you
-can create a new export to Excel for the dimension hierarchy or hierarchies that
-need to be refreshed.
+> [!NOTE] 
+> To manually trigger a refresh of the dimension hierarchy cache, you can create a new export to Excel for the dimension hierarchy or hierarchies that need to be refreshed.
 
-How do I define dimension hierarchies for policies?
-===================================================
+## Define dimension hierarchies for policies
 
-Cost accounting consist of multiple policies where detailed rules are defined.
-The list below shows the policies for which you need to define one or more
-dimension hierarchies.
+Cost accounting consists of multiple policies where detailed rules are defined. The list below shows the policies for which you need to define one or more dimension hierarchies.
 
 -   Cost behavior
 
@@ -276,17 +244,11 @@ dimension hierarchies.
 
 -   Cost rollup
 
-Dimension hierarchies make it easy create rules. You can leverage the
-aggregations of dimension members provided by dimension hierarchy levels to
-avoid creating rules for every single dimension member. In case you have
-overlapping rules, you must define specific rules, which will be considered by
-the system when performing the overhead calculation.
+Dimension hierarchies make it easy create rules. You can leverage the aggregations of dimension members provided by dimension hierarchy levels to avoid creating rules for every single dimension member. In case you have overlapping rules, you must define specific rules, which will be considered by the system when performing the overhead calculation.
 
-Example: Define a cost behavior policy
---------------------------------------
+**Example: Define a cost behavior policy**
 
-A new cost behavior policy is created, and appropriate dimension hierarchies are
-assigned.
+A new cost behavior policy is created, and appropriate dimension hierarchies are assigned.
 
 Cost behavior policy
 
@@ -300,61 +262,42 @@ Rules
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
 | Fixed cost                            | Organization                         | 100,00           | 0,00         | 1/1/2017   | Never    |
 | 10001                                 | Organization                         | 0,00             | 150,00       | 1/1/2017   | Never    |
-| 10001\*\*                             | Finance                              |                  | 50,00        | 1/1/2017   | Never    |
-| Cost behavior or Variable cost \*     | Organization                         | 0,00             | 0,00         | 1/1/2017   | Never    |
+| 10001 (Note 1)                    | Finance                              |                  | 50,00        | 1/1/2017   | Never    |
+| Cost behavior or Variable cost (Note 2)     | Organization                         | 0,00             | 0,00         | 1/1/2017   | Never    |
 
-\*) The variable cost node is not required, if a cost is not classified as fixed
-cost, then it must be variable cost.
+- Note 1: The variable cost node is not required, if a cost is not classified as fixed cost, then it must be variable cost.
 
-\*\*) A detailed rule is created for the combination of cost element member
-10001 and all cost object members aggregated under the hierarchy level Finance.
-(CC002, CC003, CC007)
+- Note 2: A detailed rule is created for the combination of cost element member 10001 and all cost object members aggregated under the hierarchy level Finance. (CC002, CC003, CC007)
 
-The rules listed above demonstrate the flexibility provided by the dimension
-hierarchies. High-level rules can be defined to minimize maintenance and
-detailed rules can be defined to fit into a specific business objective.
+The rules listed above demonstrate the flexibility provided by the dimension hierarchies. High-level rules can be defined to minimize maintenance and detailed rules can be defined to fit into a specific business objective.
 
-Updates performed on dimension hierarchies that are used in rules will be
-brought forward automatically by the system.
+Updates performed on dimension hierarchies that are used in rules will be brought forward automatically by the system.
 
-In case a level of granularity in the rules are no longer required, the rule can
-be expired.
+In case a level of granularity in the rules are no longer required, the rule can be expired.
 
-For example, a specific cost behavior rule for the cost object dimension
-hierarchy node Finance is no longer required. Click **Expire rule** to expire
-the rule.
+For example, a specific cost behavior rule for the cost object dimension hierarchy node Finance is no longer required. Click **Expire rule** to expire the rule.
 
 | Cost element dimension hierarchy node | Cost object dimension hierarchy node | Fixed percentage | Fixed amount | Valid from | Valid to  |
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|-----------|
 | Fixed cost                            | Organization                         | 100,00           | 0,00         | 1/1/2017   | Never     |
 | 10001                                 | Organization                         | 0,00             | 150,00       | 1/1/2017   | Never     |
-| 10001\*\*                             | Finance                              |                  | 50,00        | 1/1/2017   | 20/1/2017 |
-| Cost behavior or Variable cost \*     | Organization                         | 0,00             | 0,00         | 1/1/2017   | Never     |
+| 10001 (Note 1)                        | Finance                              |                  | 50,00        | 1/1/2017   | 20/1/2017 |
+| Cost behavior or Variable cost (Note 2)| Organization                         | 0,00             | 0,00         | 1/1/2017   | Never     |
 
-Any overhead calculation that is executed after January 20, 2017 will no longer
-consider this rule.
+Any overhead calculation that is executed after January 20, 2017 will no longer consider this rule.
 
-**Note:** The **Valid from** and **Valid to** fields are date and time
-effective. You can expire the rule and run a new overhead calculation on the
-same day.
+> [!NOTE] 
+> The **Valid from** and **Valid to** fields are date and time effective. You can expire the rule and run a new overhead calculation on the same day.
 
-How do I define dimension hierarchies for security?
-===================================================
+## Dfine dimension hierarchies for security
 
-Cost accounting data should be made available to all managers who are
-responsible for a reporting unit termed as a cost object or a set of cost
-objects.
+Cost accounting data should be made available to all managers who are responsible for a reporting unit termed as a cost object or a set of cost objects.
 
-Potentially, all managers will be able to access the high sensitive business
-data, for example, revenues and margins, it is important to secure that only the
-data that are relevant to them is displayed. You define dimension hierarchies to
-control data security.
+Potentially, all managers will be able to access the high sensitive business data, for example, revenues and margins, it is important to secure that only the data that are relevant to them is displayed. You define dimension hierarchies to control data security.
 
--   This only applies when the dimension value selected in the **Dimension
-    hierarchy** reference is a **Cost object dimension**.
+-   This only applies when the dimension value selected in the **Dimension hierarchy** reference is a **Cost object dimension**.
 
--   Only one **Dimension hierarchy** per **Cost object dimension** can be
-    enabled in the **Access list hierarchy**.
+-   Only one **Dimension hierarchy** per **Cost object dimension** can be enabled in the **Access list hierarchy**.
 
 Dimension hierarchy details
 
@@ -362,42 +305,26 @@ Dimension hierarchy details
 |--------------------------|--------------|------------------------------------|-----------------------|
 | Organization             | Cost centers | Dimension classification hierarchy | **Yes**               |
 
-A new FastTab Users are visible in the hierarchy designer and one or several
-**User ID**s can be inserted at each node in the hierarchy.
+A new FastTab **Users** are visible in the hierarchy designer and one or several **User ID**s can be inserted at each node in the hierarchy.
 
 |              | **Users**        | Dimension member ranges |                     |
 |--------------|------------------|-------------------------|---------------------|
 | Nodes        | User ID          | From dimension member   | To dimension member |
 | Organization | Benjamin, Claire |                         |                     |
-|              | April            |                         |                     |
-|              | Alicia           | CC002                   | CC003               |
+|   Admin      | April            |                         |                     |
+|     - Finance           | Alicia           | CC002                   | CC003               |
 |              |                  | CC007                   | CC007               |
-|              | Arnie            | CC001                   | CC001               |
-|              | David            |                         |                     |
-|              | Ellen            | CC005                   | CC005               |
-|              | Chris            | CC006                   | CC006               |
+|     - HR     | Arnie            | CC001                   | CC001               |
+|   Production | David            |                         |                     |
+|     - Packaging        | Ellen            | CC005                   | CC005               |
+|     - Assembly| Chris            | CC006                   | CC006               |
 
->   Admin
+> [!NOTE] 
+> Cost accountants should be assigned to the top level of the hierarchy, so they can see all entries in Cost accounting.
 
->   Finance
+To enable the **Access list hierarchy** and its security settings, go to **Cost accounting** > **Setup** > **Parameters** > **General**. Select the parameter **Enable view access for cost object dimension members**.
 
->   HR
-
->   Production
-
->   Packaging
-
->   Assembly
-
-**Note:** Cost accountants should be assigned to the top level of the hierarchy,
-so they can see all entries in Cost accounting.
-
-To enable the **Access list hierarchy** and its security settings, go to **Cost
-accounting** \> **Setup** \> **Parameters** \> **General**. select the parameter
-**Enable view access for cost object dimension members**.
-
-The Access list hierarchy settings are used to control data displayed in the
-following areas.
+The Access list hierarchy settings are used to control data displayed in the following areas.
 
 -   Cost control workspace (Dynamics 365 for Operation client)
 
@@ -414,11 +341,8 @@ following areas.
     -   Data Power BI visualizations embedded into Dynamics 365 for operation
         client
 
-**Note:** Before **Access list hierarchy** can affect data in Power BI, access
-level hierarchy and row level security in Power BI needs to be paired. For more
-information, see
-<https://ax.help.dynamics.com/en/wiki/setting-up-security-for-cost-accounting-content-for-power-bi/>
+> [!NOTE] 
+> Before **Access list hierarchy** can affect data in Power BI, access level hierarchy and row level security in Power BI needs to be paired. For more information, see <https://ax.help.dynamics.com/en/wiki/setting-up-security-for-cost-accounting-content-for-power-bi/>
 
-**Note:** Exporting data to Excel is not secured by **Access list hierarchy**.
-Therefore, this reporting tool should only be used by cost accountants and
-managers who need to have full access to view the data.
+> [!NOTE] 
+> Exporting data to Excel is not secured by **Access list hierarchy**. Therefore, this reporting tool should only be used by cost accountants and managers who need to have full access to view the data.
