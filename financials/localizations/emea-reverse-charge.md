@@ -71,19 +71,19 @@ In Tax > Setup > Sales tax > Reverse charge rules you can define the applicabili
 + **Reverse charge item group**. Select the group to which the rule can be applied.
 + **Threshold amount**. The Reverse charge schema is applied to invoice only if the value of items/services included in the *Reverse charge item group* exceeds the specified limit.
 
-You can define the period the rule is effective, using the Effective and Expiration dates. In addition, you can define whether a notification is needed in case the condition for the document line is met, and update the document line with the default reverse charge sales tax group:
-- None – the document line is not updated;
-- Prompt – dialog pops up to confirm the reverse charge can be applied;
-- Set – the document line is updated without additional notification.
+You can define the period the rule is effective, using the **Effective** and **Expiration dates**. In addition, you can define whether a notification is needed in case the condition for the document line is met, and update the document line with the default reverse charge sales tax group:
+- *None* – the document line is not updated;
+- *Prompt* – dialog pops up to confirm the reverse charge can be applied;
+- *Set* – the document line is updated without additional notification.
 
 # Set up default parameters
-To enable the functionality, open the General ledger parameters page, switch to the Reverse charge tab and set Enable reverse charge = Yes.
-Select the default sales tax groups in Purchase order sales tax group and Sales order tax group fields. When a reverse charge applicability condition is met, the sales\purchase order line will be updated with these sales tax groups.
+To enable the functionality, open the **General ledger parameters** page, switch to the **Reverse charge** tab and set **Enable reverse charge** = **Yes**.
+Select the default sales tax groups in the **Purchase order sales tax group** and **Sales order tax group** fields. When a reverse charge applicability condition is met, the sales/purchase order line will be updated with these sales tax groups.
 
 # Reverse charge in Sales invoice
-When selling under the Reverse charge schema, the seller does not charge VAT, but the items that are subject to reverse charge VAT, and the total amount of reverse charge VAT, are noted on the invoice.
-When a sales invoice is posted with reverse charge, the sales tax transactions have the Sales tax payable tax direction, zero sales tax, and the Reverse charge check box set.
+When selling under the *Reverse charge schema*, the seller does not charge VAT, but the items that are subject to reverse charge VAT, and the total amount of reverse charge VAT, are noted on the invoice.
+When a sales invoice is posted with Reverse Charge, the sales tax transactions have the **Sales tax payable** tax direction, zero sales tax, and the **Reverse charge** check box set.
 
 # Reverse charge in Purchase invoice
-When purchasing under the Reverse charge schema, the purchaser that receives the invoice with Reverse charge acts as a buyer and a seller for VAT accounting purposes.
-When purchase invoice with Reverse charge is posted, two sales tax transactions are created: one with the Sales tax receivable tax direction and another one with the Sales tax payable tax direction, and the Reverse charge check box set.
+When purchasing under the *Reverse Charge Schema*, the purchaser that receives the invoice with Reverse charge acts as a buyer and a seller for VAT accounting purposes.
+When purchase invoice with Reverse Charge is posted, two sales tax transactions are created: one with the **Sales tax receivable** tax direction and another one with the **Sales tax payable** tax direction, and the **Reverse charge** check box set.
