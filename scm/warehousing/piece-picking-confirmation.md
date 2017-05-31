@@ -44,7 +44,8 @@ Piece picking works for all counting work and for the initial pick for any type 
 
 ## Set up piece picking
 
--	On a mobile device menu item, open the setup form for work confirmation. 
+1.	On a mobile device menu item, open the setup form for work confirmation: Warehouse management > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**. 
+2. From the mobile device menu item, open Work Confirmation setup.
 
 The following options become available for selection when the work type is pick or counting.
 
