@@ -82,7 +82,7 @@ Example
 
 A small company has the following organization structure.
 
-![](media/d12098e9ac17434e8db4a9b548240435.png)
+![a diagram that shows the organization structure](./media/dimension-hierarchy-org.png)
 
 A cost object dimension that represents all the cost centers in the
 organizations is structured as follows.
