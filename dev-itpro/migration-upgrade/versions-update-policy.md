@@ -111,30 +111,12 @@ The following table provides information about the recent releases of the applic
 |-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------------|------|
 |                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update** |
 | **Platform update 8** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
-| **Platform update 7** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
-| **Platform update 6** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
-| **Platform update 5** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
-| **Platform update 4** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
-| **Platform update 3** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
-| **Platform update 2** | Compatible                      | Compatible                                   |                                                  |  Compatible |
-| **Platform update 1** | Compatible                      | Compatible                                   |                                                  |  Compatible |
-| **Platform 7.0**      | Compatible                      |                                             |                                                  |  Compatible |
-
-## Update policy
-Microsoft Dynamics 365 for Operations is serviced as a cloud offering. Updates to the Dynamics 365 for Operations platform and application will be handled in the following manner:
-
--   **Dynamics 365 for Operations cloud platform updates** will be initiated by Microsoft. After you provide your consent, platform updates will be rolled out to provide critical updates and features to the Dynamics 365 for Operations cloud platform. For more information about cloud platform updates, see [Dynamics 365 for Operations cloud platform monthly updates FAQ](../sysadmin/faq-platform-monthly-updates.md)
--   **Dynamics 365 for Operations application updates** will be initiated by you, the customer. After you provide your consent, application updates will be applied to your production environment.
-
-Application and platform updates will be scheduled with you, the customer. When platform and application updates are released, a sandbox environment will be made available to you, so that you can validate the updates. For details about how the sandbox environment will be provided, see the [licensing guide](http://aka.ms/s201h6). **Important:** Some updates may be mandatory and require no consent. To help protect our customers and the service, Microsoft may apply critical security updates directly to your Dynamics 365 for Operations production environment. If a security vulnerability is discovered, the following events will occur:
-
-1.  Microsoft will notify you about the security update.
-2.  Microsoft will provide a Dynamics 365 for Operations sandbox environment to you for 24 hours, so that you can validate the security update.
-3.  After the 24 hours, Microsoft will notify you of the required downtime window (if any) and apply the security update to your Dynamics 365 for Operations production environment.
-
-Dynamics 365 for Operations is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy), which provides consistent and predictable guidelines for product support availability.
-
-
-
-
+| **Platform update 7** | Compatible                      | Compatible                                   | Compatible                                        |   |
+| **Platform update 6** | Compatible                      | Compatible                                   | Compatible                                        |   |
+| **Platform update 5** | Compatible                      | Compatible                                   | Compatible                                        |   |
+| **Platform update 4** | Compatible                      | Compatible                                   | Compatible                                        |   |
+| **Platform update 3** | Compatible                      | Compatible                                   | Compatible                                        |   |
+| **Platform update 2** | Compatible                      | Compatible                                   |                                                  |   |
+| **Platform update 1** | Compatible                      | Compatible                                   |                                                  |   |
+| **Platform 7.0**      | Compatible                      |                                             |                                                  |   |
 
