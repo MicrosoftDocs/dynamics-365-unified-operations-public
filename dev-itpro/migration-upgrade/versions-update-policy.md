@@ -46,12 +46,12 @@ The [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/mod
 
 The Microsoft Dynamics 365 for Finance and Operations, Enterprise edition cloud service and the Dynamics 365 for Finance and Operations, Enterprise edition on-premises software is covered by the Modern Lifecycle Policy. Licensed customer must stay current with updates based on the following support policies:
 
-- Application versions are supported for three years from date of release
+- Application versions are supported for three years from date of release.
 - Cloud and on-premises platform versions are supported for one year from date of release for critical fixes. Non-critical updates requires customers to move to the most current certified Dynamics 365 for Finance and Operations, Enterprise edition platform version. Platform versions maintain backward compatibility.
 
 **Note:** The most current certified platform may not be the most current release of the platform.
 
-The customer is in control of the installing updates in their environments. Microsoft commits to support the deployments of the Dynamics 365 for Finance and Operations, Enterprise edition on-premises software, through calendar year 2027 at a minimum, provided that the customer keeps the deployed software current according to the Modern Lifecycle Policy. 
+The customer is in control of installing updates in their environments. Microsoft commits to support the deployments of Dynamics 365 for Finance and Operations, Enterprise edition on-premises software, through calendar year 2027 at a minimum, provided that the customer keeps the deployed software current according to the Modern Lifecycle Policy. 
 
 ## Cloud service update policies
 
@@ -63,9 +63,9 @@ Application and cloud platform updates will be scheduled with the customer. Befo
 **Important:** To help protect our customers and the service, Microsoft may apply critical updates directly to your Dynamics 365 for Finance and Operations, Enterprise edition environments. If a critical update needs to be applied, Microsoft will notify the customer of the required downtime window (if any) and apply the update to their environments. After updates are applied, Microsoft will communicate the completion of the customer.
 
 ## On-premises software update policies
-The customer is in full control of the on-premises deployments and must follow the Modern Lifecycle Policies for production environments.
+The customer is in full control of the on-premises deployments and must follow the Modern Lifecycle Policy for production environments.
 
-The Dynamics 365 for Finance and Operations, Enterprise edition on-premises model only offers a licenses under the Modern Support Lifecycle Policy. This requires the customer to maintain SA or the Enhancement Plan and deploy updates as noted in the matrix below. Customers who wish to use the Fixed Support Lifecycle Policy (5+5), must downgrade to AX 2012.  If a customer lapses on SA or the Enhancement Plan, they are eligible for the perpetual rights only of AX 2012 and must uninstall Dynamics 365 for Finance and Operations, Enterprise edition.
+The Dynamics 365 for Finance and Operations, Enterprise edition on-premises model only offers licenses under the Modern Lifecycle Policy. This requires the customer to maintain Software Assurance or the Enhancement Plan and deploy updates as noted in the matrix below. Customers who wish to use the Fixed Support Lifecycle Policy (5+5), must downgrade to AX 2012.  If a customer lapses on Software Assurance or the Enhancement Plan, they are eligible for the perpetual rights only of AX 2012 and must uninstall Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ## Application and platform releases
 
@@ -98,14 +98,8 @@ The initial release of the on-premises software will be based on Dynamics 365 fo
 |---------|----------|--------------|--------------|-----------------|
 |Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | July 2017 update | X | June 2016 |  |
 
-
-
-
-
-
-
 ## Support matrix
-The following table provides information about the recent releases of the application and platform for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and shows which versions are compatible.
+The following table lists the recent releases of the application and platform for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and shows which versions are compatible.
 
 
 
