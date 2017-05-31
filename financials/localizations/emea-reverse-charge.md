@@ -37,36 +37,39 @@ You need to complete the following setup to apply the Reverse charge.
 # Setup sales tax codes
 It is recommended to use separate sales tax codes for purchase and for sales operations.
 
-Sales:
+#### Sales tax code for Sales
 Create a sales tax code for Reverse charge sales operations (Tax > Indirect taxes > Sales tax > Sales tax codes).
 
-Purchases:
+#### Sales tax code for Purchases
 You need to create positive and negative sales tax codes for reverse charge VAT for purchases (Tax > Indirect taxes > Sales
 tax > Sales tax codes).
 1. Create a sales tax code with positive value.
-2. Create a sales tax code with negative value. Set the Allow negative sales tax percentage = Yes.
+2. Create a sales tax code with negative value. Set the **Allow negative sales tax percentage** = **Yes**.
 You will need to assign the negative sales tax code to an item sales tax group, and then assign that item sales tax group to the items that are subject to reverse charge VAT.
-For more information, see Set up Sales tax groups and Item sales tax groups.
+For more information, see **Set up Sales tax groups and Item sales tax groups**.
 
 # Set up Sales tax groups and Item sales tax groups
 It is recommended to use separate sales tax groups for purchase and for sales operations.
 
-Sales tax groups for Sales:
-Create a sales tax group for sales operations with Reverse charge (Tax > Indirect taxes > Sales tax > Sales tax groups), and include the sales tax code for Reverse charge in this group (Setup tab). Select the Exempt and Reverse charge check boxes for the sales tax code.
+#### Sales tax groups for Sales
+Create a sales tax group for sales operations with Reverse charge (Tax > Indirect taxes > Sales tax > Sales tax groups), and include the sales tax code for Reverse charge in this group (**Setup** tab). Select the **Exempt** and **Reverse charge** check boxes for the sales tax code.
 
-Sales tax groups for Purchases:
-Create a sales tax group for purchases operations with Reverse charge (Tax > Indirect taxes > Sales tax > Sales tax groups), and include both positive and negative sales tax codes in this group (Setup tab). Select the Reverse charge check box for the sales tax code with negative value.
+#### Sales tax groups for Purchases
+Create a sales tax group for purchases operations with Reverse charge (Tax > Indirect taxes > Sales tax > Sales tax groups), and include both positive and negative sales tax codes in this group (**Setup** tab). Select the **Reverse charge** check box for the sales tax code with negative value.
 
-Item sales tax groups
+#### Item sales tax groups
 Create or update Item sales tax group with Sales tax code with negative value (Tax > Indirect taxes > Sales tax > Item sales tax groups). You need to assign the default item sales tax group to the products and categories that are subject to reverse charge.
 
 # Set up Reverse Charge groups
-In Tax > Setup > Sales tax > Reverse charge item groups you can define groups of products\services or individual products/services to which the reverse charge can be applied. For each Reverse charge item group define the list of items/item groups/categories for Sale and/or Purchase.
+In Tax > Setup > Sales tax > Reverse charge item groups you can define groups of products/services or individual products/services to which the reverse charge can be applied. For each Reverse charge item group define the list of items/item groups/categories for Sale and/or Purchase.
 
 # Set up Reverse Charge Rules
 In Tax > Setup > Sales tax > Reverse charge rules you can define the applicability rules for purchase and sales purposes. You can configure a set of reverse charge applicability rules. This involves: 
-Document type: Purchase order, Vendor invoice journal, Sales order, Free text invoice, Customer invoice journal, and/or Vendor invoice. Country/region type of the trade partner, Domestic delivery address. If you select this check
-box then the rule will be applied to the deliveries within the same country/region. This check box cannot be selected for Vendor invoice journal and Customer invoice journal document types. Reverse charge item group. Select the group to which the rule can be applied.Threshold amount. The Reverse charge schema is applied to invoice only if the value of items/services included in the Reverse charge item group exceeds the specified limit.
++ **Document type**: Purchase order, Vendor invoice journal, Sales order, Free text invoice, Customer invoice journal, and/or Vendor invoice.
++ **Country/region type of the partner**. *Domestic*, *EU*, *Foreign*, or the rule can be applied for *All* trade partners, no matter of their country/region address.
++ **Domestic delivery address**. If you select this check box then the rule will be applied to the deliveries within the same country/region. This check box cannot be selected for *Vendor invoice journal* and *Customer invoice journal* document types.
++ **Reverse charge item group**. Select the group to which the rule can be applied.
++ **Threshold amount**. The Reverse charge schema is applied to invoice only if the value of items/services included in the *Reverse charge item group* exceeds the specified limit.
 
 You can define the period the rule is effective, using the Effective and Expiration dates. In addition, you can define whether a notification is needed in case the condition for the document line is met, and update the document line with the default reverse charge sales tax group:
 - None – the document line is not updated;
