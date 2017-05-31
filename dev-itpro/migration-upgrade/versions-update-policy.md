@@ -107,9 +107,10 @@ The initial release of the on-premises software will be based on Dynamics 365 fo
 ## Support matrix
 The following table provides information about the recent releases of the application and platform for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and shows which versions are compatible.
 
-|                       |                                |                                             |                                                  |     |
+
+
+|                       | Dynamics AX 7.0 | Dynamics AX application 7.0.1 | Dynamics 365 for Operations (1611) | Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update |
 |-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------------|------|
-|                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update** |
 | **Platform update 8** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
 | **Platform update 7** | Compatible                      | Compatible                                   | Compatible                                        |   |
 | **Platform update 6** | Compatible                      | Compatible                                   | Compatible                                        |   |
