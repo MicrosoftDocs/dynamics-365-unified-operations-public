@@ -79,6 +79,6 @@ After you install the deployable package on a development VM, follow these steps
 ## Deploying third-party code
 Because the models and runtime packages are in source control, other developers who use other development environments can just synchronize the models and packages to their workspace by using the **Get latest** feature of source control.
 
-The automated build process will also pick up the runtime packages that use Platform update 4 and later. Therefore, dependencies in packages that are built will be resolved correctly. This feature is also available for Platform update 3 and Platform update 2 through a hotfix.
+As of platform update 4, the automated build process will also pick up the runtime packages. Therefore, dependencies in packages that are built will be resolved correctly. This feature is also available for Platform update 3 and Platform update 2 through a hotfix.
 
-In Platform update 6, the build process will include this runtime package in the final deployable package. Therefore, customers will be able to take the deployable package from the build. They must then deploy only one package to their environments, and this package includes both custom solutions and all the third-party solutions.
+In Platform update 6, the build process will include this runtime package in the final deployable package. This allows customers to take the deployable package from the build and have one package to deploy to their environments, which includes both custom solutions and all the third party solutions.
