@@ -53,10 +53,10 @@ This topic lists the mobile workspaces that have recently been released for the 
 | Purchase order approval | The workspace lets users view and respond to purchase orders with actions such as approve or reject. | [Purchase order approval mobile workspace](/dynamics365/operations/supply-chain/procurement/purchase-order-mobile-workspace) |
 | Expense management | This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt. | [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace) |
 | Project time entry | This workspace lets users enter and save time against a project by using their mobile device. | [Project time entry mobile workspace](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace) |
-|Company directory|    |   |    
-|Manager self service|    |   |    
-|Employee self service|    |   |     
-|Invoice approval|    |   |    
+|Company directory|    | [Company directory mobile workspace](company-directory-mobile-workspace.md)   |    
+|Manager self-service|    | [Manager self-service mobile workspace](manager-self-service-mobile-workspace.md)   |    
+|Employee self-service|    | [Employee self-service mobile workspace](employee-self-service-mobile-workspace.md)   |     
+|Invoice approval|    |[Invoice approval mobile workspace](invoice-approval-mobile-workspace.md)    |    
 
 ## Mobile workspaces that were released in April 2017
 
