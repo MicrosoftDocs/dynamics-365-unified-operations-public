@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 2017-04-21 19 - 14 - 03
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: BankChequeLayout, LedgerJournalTransVendPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 274753
-ms.assetid: 34db7783-5591-454a-987a-816efabf54d5
 ms.search.region: Spain
 # ms.search.industry: 
 ms.author: v-lenest
@@ -40,5 +39,5 @@ To use the checks functionality together with the Spanish layout, you should con
 -   For the method of payment, use the **Check** export file format.
 -   For the bank account, use **Spanish check layout** in the **Check layout** section of the **Bank account** page (**Setup** &gt; **Layout** &gt; **Check**). Additionally, set the **Other currencies** field to **Yes**.
 
-To generate the checks by using the Spanish layout, basic Payment journal (vendors) functionality is used. For more information, see [Vendor payment overview](https://ax.help.dynamics.com/en/wiki/vendor-payment-overview/). After you run the Generate payments function and select all required parameters as described in this topic, the checks are generated. If the currency on the payment journal line differs from the currency of the bank account, you can still generate a check if the check layout is set up to use other currencies.
+To generate the checks by using the Spanish layout, basic Payment journal (vendors) functionality is used. For more information, see [Vendor payment overview (task guide)](https://ax.help.dynamics.com/en/wiki/vendor-payment-overview/). After you run the Generate payments function and select all required parameters as described in this topic, the checks are generated. If the currency on the payment journal line differs from the currency of the bank account, you can still generate a check if the check layout is set up to use other currencies.
 
