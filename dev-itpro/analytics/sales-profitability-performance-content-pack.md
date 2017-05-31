@@ -60,7 +60,7 @@ You can access the content pack in two ways:
 
 ### Embedded content
 
-If you are using Dynamics 365 for Finance and Operations, Enterprise edition: The Sales and profitability performance Power BI content is displayed as a report under **Inquiries and reports** > **Sales performance** in the **Sales and marketing** module. 
+If you are using Dynamics 365 for Finance and Operations, Enterprise edition: The Sales and profitability performance Power BI content is displayed as a report in the **Sales and marketing** module, under **Inquiries and reports** > **Sales performance analysis**. 
 
 ### Content accessible from Lifecycle Services
 
