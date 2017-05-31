@@ -48,7 +48,17 @@ Warehouse managers can use the **Warehouse performance** Power BI content to mea
 -   **Shipping performance**: Measure whether your warehouse is shipping in full and on time to customers (in other words, measure outbound shipping and delivery performance), so that you can identify any issues that involve products, sites or warehouses, or dedicated customers. If you find that you're shipping late to specific areas or towns, you might have to pay more attention to transportation or account management.
 -   **Location inventory accuracy**: Inventory accuracy is important internal warehouse business intelligence (BI). It's very important that you determine how accurately you're counting in general. However, it's also important that you determine how accurate you are at storing items in the correct locations, and that you highlight discrepancy data, so that you can find better positions for items or initiate total counting on specific items. (Currently, the new item-based counting functionality is delivered as a hotfix.) If you're using this Power BI content to determine the correctness of on-hand inventory data per location, you can also identify theft in your shops. You can also determine whether any locations have on-hand quantities that differ from enterprise resource planning (ERP) data. Those locations might be too large, or they might be impossible to count. Alternatively, some of the physical positioning might be bad, so that it's difficult to keep a single type of item in sync with on-hand data.
 
-## Accessing the Power BI content
+## Accessing the Power BI content pack
+You can access the content pack in two ways:
+- As an embedded report in your Dynamics 365 for Finance and Operations
+Individuals in your organization can take advantage of analytics out of the box directly from the Dynamics 365 for Finance and Operations, without having to model the data or create reports.
+-	From Lifecycle Services
+You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services. These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis.
+
+### Embedded content
+If you are using Dynamics 365 for Finance and Operations, Enterprise edition: The Warehouse performance Power BI content is displayed as a report under Inquiries and reports > Warehouse performance analysis, in the Warehouse management module. 
+
+### Content accessible from Lifecycle Services
 You can find the **Warehouse performance** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
 **Note:** **KB 4011327** is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
