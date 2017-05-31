@@ -1,3 +1,4 @@
+
 ---
 # required metadata
 
@@ -29,3 +30,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 
 # Invoice processing overview
+
+The information below introduces changes in the Eastern European localization related to the customer and vendor invoice processing. These changes support country-specific legal requirements regarding to the filling and control of the dates that are important for tax reporting in those countries.
+
+ - the sales date in customer invoices and the document receipt date in
+   vendor invoices,  
+ - the date of VAT register.
+
+Also it provides a short description for some country-specific scenarios, for example, Intra-community VAT or Deferred tax.
