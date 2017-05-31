@@ -18,13 +18,13 @@ ms.technology:
 audience: Developer, IT Pro
 # ms.devlang: 
 # ms.reviewer: 
-ms.search.scope: Operations, Platform
+ms.search.scope: Operations Platform
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tonyafehr
-ms.search.validFrom: 
+ms.author: tfehr
+ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Platform update 8
 
 ---
