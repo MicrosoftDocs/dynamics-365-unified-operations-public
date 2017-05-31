@@ -1,11 +1,39 @@
+---
+# required metadata
 
+title: Purchase duties
+description: A purchase duty is a tax on incoming sales tax and is calculated as a percentage of the paid sales tax.
+This article is related to a specific functionality extension applicable for legal entities in Austria.
+author: neserovleo
+manager: AnnBe
+ms.date: 05/25/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: shylaw
+ms.search.scope: Operations, Core
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Austria
+# ms.search.industry: 
+ms.author: v-lenest
+ms.search.validFrom: 2017-06-01
+ms.dyn365.ops.version: Enterprise edition, July 2017 update
+---
 
 # Purchase duties
 
 
 ## Overview
 A purchase duty is a tax on incoming sales tax and is calculated as a percentage of the paid sales tax.
-This article is related to a specific functionality extension applicable for legal entities in Austria. For more details about a global sales tax functionality, see also Sales tax overview.
+This article is related to a specific functionality extension applicable for legal entities in Austria. For more details about a global sales tax functionality, see also [Sales tax overview](indirect-taxes-overview.md).
 
 
 ## Description
