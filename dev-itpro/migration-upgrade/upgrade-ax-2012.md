@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations, Enterprise edition 
-description: Dynamics 365 for Finance and Operations, Enterprise edition provides an upgrade path for customers currently running Microsoft Dynamics AX 2012 to move their data and code to the new product.
+description:  This topic describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 author: tariqbell
 manager: AnnBe
 ms.date: 05/29/2017
@@ -27,128 +27,133 @@ ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Upgrade Microsoft Dynamics AX 2012 to Dynamics 365 for Finance and Operations, Enterprise edition
+# Upgrade Microsoft Dynamics AX 2012 to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition
 
 [!include[banner](../includes/banner.md)]
 
-As of Platform update 8, Dynamics 365 for Finance and Operations, Enterprise edition provides an upgrade path for customers currently running Dynamics AX 2012 to move their data and code to the new product.The upgrade process is built on
--    Tooling to help you bring forward existing custom application code from AX 2012.
--    A data upgrade process to bring your database forward. This means that you can upgrade your full transactional history to Finance and Operations, Enterprise edition.
+Platform update 8, Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, provides an upgrade path that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to Finance and Operations. The upgrade process is built on the following elements:
+
+- Tools to help you bring forward existing custom application code from AX 2012.
+- A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
 
 ## Overview
-The overall upgrade process can be visualized as three overarching phases: Analyze, Execute and Validate.
+The overall upgrade process can be visualized as three overarching phases: Analyze, Execute, and Validate.
 
-The following diagram describes the end-to-end upgrade process, and the activities we consider part of each phase. 
-
-
-
+The following diagram shows the end-to-end upgrade process, and the activities that we consider part of each phase. 
 
 ## Analyze
-The activities within the Analyze phase help you  estimate the effort required for the upgrade and prepare a project plan. These activities can be performed before you buy Dynamics 365 for Finance Operations, Enterprise edition and will help you make an informed purchase decision by providing a data point on the effort and resources you'll need.
+The activities in the Analyze phase help you estimate the effort that is required for the upgrade. They also help you prepare a project plan. These activities can be performed before you buy Finance and Operations. They will help you make an informed purchase decision by providing a data point about the effort and resources that you will require.
 
-### Sign up for a public preview in Lifecycle Services (LCS)
-To perform Analyze activities before purchasing Dynamics 365 for Operations you can sign up for a public preview. 
-The public preview provides you with the ability to deploy your own Dynamics 365 for Operations environments and also access to the Lifecycle Services (LCS) tools used to evaluate your AX 2012 environment and your existing custom code.
-If you have an existing LCS project for AX 2012 you will still need to sign up for an additional new project to evaluate Dynamics 365 for Operations.
+### Sign up for a public preview in LCS
+To perform Analyze activities before you purchase Finance and Operations, you can sign up for a public preview. The public preview lets you deploy your own Finance and Operations environments. It also gives you access to the Microsoft Dynamics Lifecycle Services (LCS) tools that are used to evaluate your AX 2012 environment and your existing custom code.
 
-Information about getting a public preview for customers: https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview 
+If you have an existing LCS project for AX 2012, you must still sign up for an additional new project to evaluate Finance and Operations.
 
-Information about getting a public preview for partners: https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview 
+For information about how to get a public preview for customers, go to https://mbs.microsoft.com/customersource/global/AX/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
 
-Be aware that this is different from a 30 day trial (https://aka.ms/D365OperationTrials). 30 day trials provide a deployed instance of Dynamics 365 for Operations that you can use to explore and evaluate the application, but to perform upgrade Analyze the full LCS experience and tools are required.
+For information about how to get a public preview for partners, go to https://mbs.microsoft.com/partnersource/global/news-events/news/Microsoft_Dynamics_AX_Public_Preview.
 
-### Select the Upgrade methodology
-In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Operations**. This methodology is especially made for AX 2012 customers upgrading, it describes the three phases in detail and provides links to all the supporting documentation about the process.
+Be aware that this public preview differs from a [30-day trial](https://aka.ms/D365OperationTrials). Thirty-day trials provide a deployed instance of Finance and Operations that you can use to explore and evaluate the application. However, to perform upgrade Analyze activities, the full LCS experience and tools are required.
+
+### Select the upgrade methodology
+In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
  
-### Run the upgrade analyser
-The upgrade analyser is a tool which runs against your AX 2012 environment and identifies tasks to prepare the 2012 environment to help drive a smoother and cheaper upgrade experience:
--	Data clean up. This process helps you identify data that can be removed without loss of functionality. The tool will identify different types of data that you could reduce by running a cleanup process. For each type of data an explanation is given about the impact of the cleanup. You then decide whether you wish to run the cleanup process or not. Part of your Dynamics 365 subscription cost is tied to database size, so reducing the size reduces that the component of the subscription cost and also helps reduce the time needed for the upgrade go-live process. A smaller database ensures a faster upgrade.
--	SQL configuration. Reviews SQL configuration and recommends optimizations. Helps reduce time needed for upgrade go-live process by ensuring SQL performs optimally.
--	Deprecated features. Identifies features that are in use but which are not available moving forward, helping you discover gaps in functionality early, and provides suggestions for alternatives.
-Additionally as part of this process you must install KBXXXXXXX in the AX 2012 environment. This will provide a pre-upgrade-checklist, which allows you to provide data in the AX 2012 environment that will be required for the upgrade procedure. An example of a pre-upgrade checklist task is providing the Azure Active Directory login information for each current AX 2012 user, so that each user will be able to log into Dynamics 365 for Finance and Operations, Enterprise edition.
+### Run the upgrade analyzer
+The upgrade analyzer tool runs against your AX 2012 environment and identifies tasks that should be done to prepare the 2012 environment, to help make the upgrade experience smoother and less expensive:
 
-The output of this task becomes the workstream in the upgrade project plan for your AX 2012 system administrators.
+- **Data cleanup** – This process helps you identify data that can be removed without causing loss of functionality. The tool identifies various types of data that you can reduce by running a cleanup process. For each type of data, an explanation is given about the impact of the cleanup. You then decide whether to run the cleanup process. Part of the cost of your Finance and Operations subscription is based on database size. Therefore, by reducing the size, you reduce that component of the subscription cost and also help reduce the time that is required for the upgrade go-live process. A smaller database helps guarantee a faster upgrade.
+- **SQL configuration** – This process reviews the SQL configuration and recommends optimizations. By making sure that SQL performs optimally, this process helps reduce the time that is required for the upgrade go-live process.
+- **Deprecated features** – This process identifies features that are being used but that aren't available in Finance and Operations. Therefore, the process helps you discover gaps in functionality early. It also provides suggestions for alternatives.
+
+Additionally, as part of this step, you must install KBXXXXXXX in the AX 2012 environment. This hotfix provides a pre-upgrade checklist. You can use this checklist to provide, in the AX 2012 environment, data that will be required for the upgrade procedure. For example, in one pre-upgrade checklist task, you provide the Microsoft Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user, so that each user will be able to sign in to Finance and Operations.
+
+The output of this step becomes the work stream in the upgrade project plan for your AX 2012 system administrators.
 
 ### Run the Code upgrade estimation tools
-This step takes your code from AX 2012, converts it to the Dynamics 365 for Operations format, and provides feedback on conflicts that need to be resolved later by a developer. This forms the basis for estimating your code upgrade cost.
-To run this tool, you will need to export your code from AX 2012 (as a model store export) and upload it to the LCS Code Upgrade tile.
- 
-The Code Upgrade tile will produce an upgraded version of your code and a report with the remaining conflicts which need to be resolved. Your developer can then review both of these to determine the effort required to upgrade your codebase.
+This step takes your code from AX 2012, converts it to the new format, and provides feedback about conflicts that a developer must resolve later. This step forms the basis for the estimate of the cost of your code upgrade.
 
-The output of this task represents the workstream in the upgrade project plan for your AX developers.
+To complete this step, you must export your code from AX 2012 as a model store export and upload it to the LCS Code upgrade tool. The Code upgrade tool will produce an upgraded version of your code and a report about the remaining conflicts that must be resolved. Your developer can then review both the upgraded code and the report to determine the effort that will be required in order to upgrade your code base.
+
+The output of this step represents the work stream in the upgrade project plan for your Microsoft Dynamics AX developers.
 
 ### Deploy a demo environment
-Deploy Dynamics 365 for Operations demo environments. We recommend that you deploy demo environments (default environments with demonstration data (not your own data) and standard code (no customizations)) to evaluate new features and to perform a basic fit gap analysis of standard processes which are in use in AX 2012 but may have changed in the new version.
-These demo environments can be deployed either in Azure or downloaded as a virtual machine to run on your own hardware. If deploying in Azure then you will need to provide your Azure subscription, as at this stage you’re running in a public preview project and have not yet purchased a Dynamics 365 subscription.
+Demo environments are default environments that contain demonstration data (not your own data) and standard code (no customizations). We recommend that you deploy a demo environment to evaluate new features, and to perform a basic fit gap analysis of standard processes that are used in AX 2012 but that might have changed in Finance and Operations. You can either deploy these demo environments in Azure or downloaded them as a virtual machine (VM) that you run on your own hardware. If you deploy them in Azure, you must provide your Azure subscription, because you’re still using a public preview project and haven't yet purchased a Finance and Operations subscription.
 
-The output of this task represents the workstream in the upgrade project plan for your functional users or business users.
+The output of this step represents the work stream in the upgrade project plan for your functional users or business users.
 
 ### Create a project plan
-A template project plan is provided in the upgrade methodology. In this task, the output from the previous Analyze tasks is used to populate the project plan for the upgrade project. 
-The project plan will also contain all testing details: data upgrade testing, cutover testing, the functional test pass iterations and details of the various resource assignments for those tasks.
-At this stage the project plan provides a data point to help you understand the time and cost involved in upgrading to Dynamics 365 for Operations.
+A template for a project plan is provided in the upgrade methodology. In this step, the output from the previous steps of the Analyze phase is used to fill the project plan for the upgrade project. The project plan will also contain all testing details: data upgrade testing, cutover testing, the functional test pass iterations, and details about the various resource assignments for those tasks.
+
+At this stage, the project plan provides a data point that can help you understand the time and cost that an upgrade to Finance and Operations will involve.
 
 ## Execute
-During the Execute phase you work through the tasks you planned during the Analyze phase. To move to the Execute phase, you must have purchased Dynamics 365 for Finance and Operations, Enterprise edition, and have resources available to work on the upgrade.
+During the Execute phase, you work through the tasks that you planned during the Analyze phase. To move to the Execute phase, you must purchase Finance and Operations, and you must have available resources that can work on the upgrade.
 
 ### Switch to the LCS implementation project
-The public preview project you used for the Analyze phase has served its purpose, and can be discarded. The project plan created in the final stage of Analyze is the single source of the truth for the remaining steps you must complete now.
-Upon purchasing a Dynamics 365 for Operation subscription you will receive details to sign up for a new LCS project. This is known as an “implementation project” and will be the new permanent LCS project for your Dynamics 365 for Operation subscription for the life of that subscription. This project differs from the public preview project in that it is managed by Microsoft, meaning that:
--	Environments within this project are all hosted within Azure
--	The Azure subscription associated with the project is managed by Microsoft, so there is no separate billing for Azure costs – it’s covered by your Dynamics 365 subscription.
--	The production environment in this project is maintained by Microsoft. That means code deployments, upgrades, infrastructure maintenance are executed by Microsoft directly and not by your own staff. 
+The public preview project that you used for the Analyze phase has served its purpose. You can now discard it. For the remaining steps, you require only the project plan that you created in the final stage of the Analyze phase.
+
+When you purchase a Finance and Operations subscription, you will receive details to sign up for a new LCS project. This project is known as an implementation project and will be the new permanent LCS project for your subscription, for as long as you have that subscription. This project differs from the public preview project in that it's managed by Microsoft. Therefore, this project has these characteristics:
+
+- All environments in the project are hosted in Azure.
+- The Azure subscription that is associated with the project is managed by Microsoft. Therefore, there is no separate billing for Azure costs. The costs are covered by your Finance and Operations subscription.
+- The production environment in the project is maintained by Microsoft. Therefore, code deployments, upgrades, and infrastructure maintenance are run directly by Microsoft, not by your staff. 
 
 ### Perform the AX 2012 preparation tasks
-Complete the tasks discovered by the upgrade analyser as documented in your upgrade project plan. These tasks will be completed by your AX System Administrator and Database Administrator (DBA).
+Complete the tasks that the upgrade analyzer tool discovered and that are documented in your upgrade project plan. Your Microsoft Dynamics AX system administrator and database administrator (DBA) must complete these tasks.
 
 ### Perform code upgrade
-Complete the tasks planned during code upgrade estimation during the Analyze phase. These tasks will be executed by your Developers.
-Code changes in the AX 2012 should be frozen from this point onwards. Only emergency code changes should be allowed in AX 2012, if such a change is made it will need to be ported manually to the new Operations code base.
+Complete the tasks that were planned during the code upgrade estimation step of the Analyze phase. Your developers must run these tasks.
+
+From this point onward, code changes in AX 2012 should be frozen. Only emergency code changes should be allowed in AX 2012. If a change is made, it must be ported manually to the new code base.
 
 ### Develop new code
-Complete the tasks which came from the fit gap performed in the “Deploy demo environment” task in the Analyze phase. These are likely to be a mixture of functional tasks to define the configuration and also Development tasks for customisations relating to new features being up taken.
+Complete the tasks from the fit gap analysis that was performed during the “Deploy a demo environment” step of the Analyze phase. These tasks will probably be a mixture of functional tasks that define the configuration and development tasks for customizations that are related to new features that are being taken up.
 
-### Data upgrade (Development environment)
-Once your code upgrade tasks are complete you can upgrade your AX 2012 database to Operations for the first time. This happens for the first time in a Development environment, this is make it simpler to remediate/debug any bugs that are caught at this stage – in a development environment an issue can be immediately debugged, code adjusted, and re-ran within minutes, however in the larger Sandbox environments such agility is not possible, and would take a minimum of several hours to debug, remediate,update code, deploy updated code and re-execute the upgrade.
+### Data upgrade (development environment)
+After your code upgrade tasks are completed, you can upgrade your AX 2012 database to Finance and Operations for the first time. This first upgrade occurs in a development environment, so that you can more easily remediate or debug any issues that are found at this stage. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Larger sandbox environments don't offer this agility, and a minimum of several hours will be required in order to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
  
-The diagram above illustrates the process. Simply back up the AX 2012 database, upload it to Azure and restore to the Dynamics 365 for Operations environment, and then execute the data upgrade.
+The preceding diagram shows the process. Just back up the AX 2012 database, upload it to Azure, restore to the Finance and Operations environment, and then run the data upgrade.
 
-Data upgrade is through a special type of deployable package – which is the same mechanism used for deploying new Dynamics 365 for Operations code from one environment to another.
+Data upgrade is done through a special type of deployable package. The same mechanism is used to deploying new Finance and Operations code from one environment to another environment.
 
-The underlying framework used to convert the data in the database during this process is largely the same as the upgrade framework in AX 2012 based on X++ batch jobs running ReleaseUpdatexxx classes.
+The underlying framework that is used to convert the data in the database during this process is largely the same as the upgrade framework in AX 2012 that is based on X++ batch jobs that run **ReleaseUpdatexxx** classes.
 
 ### Data upgrade (sandbox environments)
-Upon successful completion of data upgrade in a development environment the same process can be executed in a sandbox environment. The sandbox environment will be where business users and functional team members can test business processes with the upgraded 2012 data and code.
+When data upgrade in a development environment is completed, the same process can be run in a sandbox environment. The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
  
-The diagram above shows the process for executing data upgrade in a sandbox environment. The difference here is the use of “bacpac” instead of a traditional SQL backup, this is required to convert between SQL Server and Azure SQL Database, it is a standard SQL tool (not Dynamics 365 for Operations specific).
+The preceding diagram shows the process for running data upgrade in a sandbox environment. The difference here is that bacpac is used instead of a traditional SQL backup. This tool is required in order to convert between Microsoft SQL Server and Azure SQL Database. It's a standard SQL tool, and isn't specific to Finance and Operations.
 
 ## Validate
-When you enter the Validate phase, you will have environments available with your upgraded custom code and with your upgraded data. This phase describes the process of validating and testing that the upgraded environment functions as desired, and preparing for go-live.
+When you enter the Validate phase, you will have available environments that include your upgraded custom code and your upgraded data. This phase describes the process of validating and testing that the upgraded environment works as desired. It also describes the process of preparing for go-live.
 
-### Cutover testing & create cutover plan
-The term cutover is used here to mean the final process of putting the new system live – the tasks that will happen between turning off AX 2012 and turning on Dynamics 365 for Operations. 
+### Perform cutover testing and create a cutover plan
+The term _cutover_ is used here to describe the final process of putting the new system live. This process consists of the tasks that occur after AX 2012 is turned off and before Finance and Operations is turned on. 
 
-The work here is to practice the cutover process here to ensure a smooth experience by all involved during the actual cutover to go-live.
+The goal of the testing is to practice the cutover process. In this way, you can help guarantee that everyone who is involved in the actual cutover to go-live will have a smooth experience.
 
-There are two main streams to this work:
-1.	Technical work stream – the data upgrade execution process. Your business will enforce a limit on the amount of down time allowed, when neither AX 2012 nor Operations are available. The technical workstream may need to performance tune their data upgrade procedure to meet the businesses down time limit. 
-2.	Functional work stream – post-data upgrade there will be a number of configuration tasks required within the Operations environment. These must all be documented, quantified and have a resource assigned – as these must fit together with the technical tasks within the businesses down time limit.
+There are two main work streams:
+
+1. **Technical work stream** – The data upgrade execution process. Your business will enforce a limit on the amount of downtime that is allowed when neither AX 2012 nor Finance and Operations is available. The technical work stream might have to performance-tune its data upgrade procedure to meet the business's downtime limit. 
+2. **Functional work stream** – After data upgrade, several configuration tasks will be required in the Finance and Operations environment. All these tasks must be documented and quantified, and a resource must be assigned to them, because they must fit together with the technical tasks within the business's downtime limit.
 
 ### Functional test pass
-Complete a full functional test pass of all business processes. This will be an extensive re-test of all business processes involving Operations including both old processes brought forward from AX 2012 and new processes involving new features up taken in Operations for the first time. 
-Depending on code quality you may require several iterations of functional test pass to allow for bug remediation and re-testing. Take care to retest all involved processes when a bug is fixed to ensure the downstream/upstream process is not affected by the change.
+Complete a full functional test pass of all business processes. This test pass will be an extensive re-test of all business processes that involve Finance and Operations. These business processes include both old processes that were brought forward from AX 2012 and new processes that involve new features that were taken up for the first time in Finance and Operations. 
+
+Depending on code quality, several iterations of the functional test pass might be required to allow for issue remediation and re-testing. When an issue is fixed, be sure to re-test all processes that are involved, to help guarantee that the downstream or upstream process isn't affected by the change.
 
 ### Pre-go-live checklist
-This is a recommended procedure to reduce the chance of errors in the final cutover to go-live. One week before go-live is due stop configuration changes in AX 2012 (meaning under <module>\Setup) – this is simply procedural, that the AX System Administrators agree to hold these kind of changes at this point.
-Freeze code changes in the Operations code base. No further changes allowed unless evaluated to block the go-live and acceptable risk.
-Once the configuration restriction and code freeze is in place then the data upgrade should be executed for the last time before cut over to ensure it still functions as expected. 
+The pre-go-live checklist is a recommended procedure that can help reduce the chance of errors during the final cutover to go-live. One week before go-live is due, stop configuration changes in AX 2012 (that is, under \<module\>\Setup). This configuration restriction is merely procedural. The Microsoft Dynamics AX system administrators just agree to put this type of changes on hold at this point.
+
+Freeze code changes in the Finance and Operations code base. No further changes allowed unless evaluated to block the go-live and acceptable risk.
+
+After the configuration restriction and code freeze are in place, data upgrade should be run for the last time before cutover. In this way, you can make sure that everything still works as expected. 
 
 ### Supported upgrade paths
-As of June 2017, upgrade to Dynamics 365 for Operations version 0617 is supported from AX 2012 R3. All cumulative updates (CU) of AX 2012 R3 are supported.
+As of June 2017, upgrade to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, version 0617 is supported from Microsoft Dynamics AX 2012 R3. All cumulative updates (CUs) of AX 2012 R3 are supported.
 
-AX 2012 R2 and AX 2012 RTM are not currently supported, support will be added later in 2017.
+Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 RTM aren't currently supported. Support will be added later in 2017.
 
-Upgrade to Dynamics 365 for Operations is supported only to the cloud deployed version, not on-premise. Support for upgrade to the on-premise version will be added later in 2017.
+Only upgrade to the cloud-deployed version of Finance and Operations is supported. Upgrade to the on-premises version isn't supported. Support for upgrade to the on-premises version will be added later in 2017.
 
 ## Current limitations
 Virtual companies…
