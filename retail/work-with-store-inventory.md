@@ -49,7 +49,7 @@ A transfer order can specify that a particular store is a location that items c
 Stock counts can be either scheduled or unscheduled. Scheduled stock counts are initiated at the head office, which specifies the items that must be counted. The head office creates a counting document that can be received at the store, where the quantities of actual on-hand stock are entered in MPOS or Cloud POS. Unscheduled stock counts are initiated at a store, and the quantities of actual on-hand stock are updated in either MPOS or Cloud POS. Unlike scheduled stock counts, unscheduled stock counts do not have a predefined list of items. When a stock count of either type is completed, it is committed and sent to the head office. At the head office, the count is validated and posted.
 
 ## Inventory lookup
-The current product quantity on hand for multiple stores and warehouses can be viewed on the Inventory lookup page. In addition to the current quantity on hand, the future available to promise (ATP) quantities can be viewed for each individual store. To do so, select the store that you want to view the ATP for and then click **show store availablity**.
+The current product quantity on hand for multiple stores and warehouses can be viewed on the Inventory lookup page. In addition to the current quantity on hand, the future available to promise (ATP) quantities can be viewed for each individual store. To do so, select the store that you want to view the ATP for and then click **Show store availablity**.
 
 
 
