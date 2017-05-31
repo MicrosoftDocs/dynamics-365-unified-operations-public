@@ -151,7 +151,6 @@ The following table includes links to resources that can help you implement mobi
 <td><ul>
 <li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Andriod phones</a></li>
 <li><a href="https://go.microsoft.com/fwlink/?linkid=850663">For iPhones</a></li></ul>
-For Dynamics 365 for Operations:
 </td>
 </tr>
 <tr class="odd">
