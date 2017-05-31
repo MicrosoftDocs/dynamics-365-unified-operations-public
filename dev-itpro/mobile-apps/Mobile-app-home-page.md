@@ -37,8 +37,8 @@ ms.search.validFrom: 2017-02-28
 
 This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
 
-
-> The mobile app was previously named Dynamics 365 for Operations.
+>[!NOTE]
+>The mobile app was previously named Dynamics 365 for Operations.
 
 Overview
 --------
