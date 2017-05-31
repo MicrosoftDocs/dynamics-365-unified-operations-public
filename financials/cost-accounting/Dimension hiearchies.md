@@ -84,31 +84,31 @@ A small company has the following organization structure.
 
 ![a diagram that shows the organization structure](./media/dimension-hierarchy-org.png)
 
-A cost object dimension that represents all the cost centers in the
-organizations is structured as follows.
+A cost object dimension that represents all the cost centers in the organizations is structured as follows.
 
-| Cost object dimension           |                                  |
+- Cost object dimension
+- Cost centers
+
+| Member number                   | Member name                      |
 |---------------------------------|----------------------------------|
-| Cost centers                    |                                  |
-| Cost object dimension members   |                                  |
 | CC001                           | HR (should it be after assembly) |
 | CC002                           | Finance                          |
 | CC003                           | Tax (Needed?)                    |
 | CC007                           | AR/AP (Needed?)                  |
 | CC005                           | Assembly                         |
 | CC006                           | Packaging                        |
-|                                 |                                  |
-|                                 |                                  |
-| Cost element dimension          |                                  |
-| Cost elements                   |                                  |
+
+A cost element dimension that represents all the cost elements in the organizations is structured as follows.
+
+| Member number                   | Member name                      |
+|---------------------------------|-----------------------------------|
 | Cost elements dimension members |                                  |
 | 10001                           | Electricity                      |
 | 10010                           | Cleaning                         |
 | 10011                           | Heating                          |
 | 40001                           | COGS                             |
 
-A dimension hierarchy that meets the organizational reporting requirements can
-be set up as follows.
+A dimension hierarchy that meets the organizational reporting requirements can be set up as follows.
 
 ###  Dimension hierarchy details 
 
@@ -118,32 +118,19 @@ be set up as follows.
 
 ### Dimension hierarchy
 
-|              | Dimension member ranges |                     |
-|--------------|-------------------------|---------------------|
-| Nodes        | From dimension member   | To dimension member |
-| Organization |                         |                     |
-|              |                         |                     |
-|              | CC002                   | CC003               |
-|              | CC007                   | CC007               |
-|              | CC001                   | CC001               |
-|              |                         |                     |
-|              | CC005                   | CC005               |
-|              | CC006                   | CC006               |
+|                        |    Dimension member ranges    |                           |
+|------------------------|-------------------------------|---------------------------|
+|    Nodes               |    From dimension member      |    To dimension member    |
+|    Organization        |                               |                           |
+|      Admin             |                               |                           |
+|          Finance       |    CC002                      |    CC003                  |
+|                        |    CC007                      |    CC007                  |
+|          HR            |    CC001                      |    CC001                  |
+|      Production        |                               |                           |
+|         Packaging      |    CC005                      |    CC005                  |
+|         Assembly       |    CC006                      |    CC006                  |
 
->   Admin
-
->   Finance
-
->   HR
-
->   Production
-
->   Packaging
-
->   Assembly
-
-A dimension hierarchy that meets the policy requirement can be set up as
-follows. What policy and why do I need this policy?
+A dimension hierarchy that meets the policy requirement can be set up as follows. What policy and why do I need this policy?
 
 ###  Dimension hierarchy details 
 
