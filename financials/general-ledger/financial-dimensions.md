@@ -38,7 +38,7 @@ l
 This article explains the different types of financial dimensions and how they are set up.
 
 
-uUse the Financial dimensions page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions, custom dimensions and entity backed dimensions. Custom dimensions are shared across legal entities and the values are entered and maintained by the user. Entity backed dimensions are dimensions whose values are defined elsewhere in the system, such as Customers or Stores. Some entity backed dimensions are shared across legal entities, and come entity backed dimensions are company specific. 
+Use the Financial dimensions page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions, custom dimensions and entity backed dimensions. Custom dimensions are shared across legal entities and the values are entered and maintained by the user. Entity backed dimensions are dimensions whose values are defined elsewhere in the system, such as Customers or Stores. Some entity backed dimensions are shared across legal entities, and come entity backed dimensions are company specific. 
 
 After you have created the financial dimensions, use the Financial dimension values page to assign additional properties to each financial dimension. 
 
@@ -48,7 +48,7 @@ Before you set up financial dimensions as legal entities, evaluate your business
 
 -   Inventory
 -   Sales and purchases between financial dimensions and legal entities
-r-   Sales tax calculation and reporting
+-   Sales tax calculation and reporting
 -   Operational reporting
 
 Some examples of the limitations include the following:
