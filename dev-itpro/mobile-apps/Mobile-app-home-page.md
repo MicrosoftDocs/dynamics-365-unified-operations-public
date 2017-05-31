@@ -38,7 +38,7 @@ ms.search.validFrom: 2017-02-28
 This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
 
 > [!NOTE]
-> The mobile app was previously named Dynamics 365 for Operations.
+> The mobile app was previously named *Microsoft Dynamics 365 for Operations*.
 
 Overview
 --------
@@ -92,7 +92,7 @@ The following table includes links to resources that can help you implement mobi
 <td>1</td>
 <td>System administrator</td>
 <td><p>Implement Dynamics 365 for Finance and Operations, Enterprise Edition or Dynamics 365 for Operations in your organization.</td>
-<td>If you haven't deployed a version of Dynamics 365 yet, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.<br></br>To see a list of mobile workspaces that can be implemented with the version of Dynamics 365 that you deployed, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</p></td>
+<td>If you haven't deployed a version of Dynamics 365 yet, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.<br></br>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</p></td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -148,15 +148,11 @@ The following table includes links to resources that can help you implement mobi
 <td>User</td>
 <td>Download and install the mobile app.</td>
 
-<td>For Dynamics 365 for Finance and Operations, Enterprise Edition:<ul>
-<li>For Android: <a href="https://go.microsoft.com/fwlink/?linkid=850662">Dynamics 365 for Finance and Operations, Enterprise Edition on the Google Play Store</a></li>
-<li>For iPhone: <a href="https://go.microsoft.com/fwlink/?linkid=850663">Dynamics 365 for Finance and Operations, Enterprise Edition on the iTunes apps store</a></li></ul>
+<td><ul>
+<li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Andriod phones</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?linkid=850663">For iPhones</a></li></ul>
 For Dynamics 365 for Operations:
-<ul>
-<li>For Android: <a href="https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile">Dynamics 365 for Operations on the Google Play Store</a></li>
-<li>For iPhone: <a href="https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8">Dynamics 365 for Operations on the iTunes apps store</a></li>
-
-</ul></td>
+</td>
 </tr>
 <tr class="odd">
 <td>9</td>
