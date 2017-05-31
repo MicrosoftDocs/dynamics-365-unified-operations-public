@@ -64,26 +64,8 @@ To configure the Connector for Microsoft Dynamics AX (Previously **N-1**), compl
 14.  On the **Server name** field, enter the fully qualified domain name of the computer where SQL is being used.
 15.  On the **Database name** field, enter the name of the HQ Message Database.  **Note:** By default, this field is set as **AsyncServerHeadOffice**.
 16. On the Action Pane, select **Save**.
-
-11. Go to **Retail and commerce** &gt; **Channel setup** &gt; **Channel profiles**.
-12. On the Action Pane, select **New**.
-13. In the **Name** field, enter a unique name for the channel profile.
-14. On the Action Pane, select **Save**.
-15. On the **Profile properties** FastTab for the new channel profile, select **Add**.
-16. In the **Property key** field, select **Retail server URL**.
-17. In the **Property value** field, enter the URL for the Store Scale Unit Retail Server that will be installed. **Note:** The standard format for the URL of an on-premises store installation of Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/RetailServer/Commerce**. In this format, **&lt;Computer Name&gt;** is the fully qualified domain name (FQDN) of the computer where Store Scale Unit is installed or the full computer name, for systems that aren't joined to a domain, and **&lt;Port&gt;** is the port number that will be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
-18. On the **Profile properties** FastTab for the new channel profile, select **Add**.
-19. In the **Property key** field, select **Cloud POS URL**.
-20. In the **Property value** field, enter the URL for the Store Scale Unit Retail Server that will be installed. **Note:** The standard format for the URL of an on-premises store installation of Store Scale Unit is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is the FQDN of the computer where Store Scale Unit is installed or the full computer name for systems that aren't joined to a domain, and **&lt;Port&gt;** is the port number that will be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
-21. On the Action Pane, select **Save**.
-22. Go to **Retail and commerce** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
-23. Select the Retail channel ID for the retail store that will use the new channel database.
-24. On the details page for the selected store, on the Action Pane, select **Edit**.
-25. On the **General** FastTab for the store, in the **Live channel database** field, select the channel database that you created in step 4.
-26. On the Action Pane, select **Save**.
-27. On the **General** FastTab for the store, in the **Channel profile** field, select the channel profile that you created in step 13.
-28. Go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel data group**.
-29. Select the **Default** data group, and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
+17. Go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel data group**.
+18. Select the **Default** data group or the data group associated to the channels in your previous installation set (N-1 channels utilizing Enterprise POS and Modern POS from Dynamics AX 2012 R3), and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
 
 ### Download the Connector for Microsoft Dynamics AX installers
 
