@@ -107,17 +107,18 @@ The initial release of the on-premises software will be based on Dynamics 365 fo
 ## Support matrix
 The following table provides information about the recent releases of the application and platform for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, and shows which versions are compatible.
 
-|                       |                                |                                             |                                                  |
-|-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------------|
-|                       | **Microsoft Dynamics AX 7.0** | **Microsoft Dynamics AX application 7.0.1** | **Microsoft Dynamics 365 for Operations (1611)** |
-| **Platform update 7** | Compatible                      | Compatible                                   | Compatible                                        |
-| **Platform update 6** | Compatible                      | Compatible                                   | Compatible                                        |
-| **Platform update 5** | Compatible                      | Compatible                                   | Compatible                                        |
-| **Platform update 4** | Compatible                      | Compatible                                   | Compatible                                        |
-| **Platform update 3** | Compatible                      | Compatible                                   | Compatible                                        |
-| **Platform update 2** | Compatible                      | Compatible                                   |                                                  |
-| **Platform update 1** | Compatible                      | Compatible                                   |                                                  |
-| **Platform 7.0**      | Compatible                      |                                             |                                                  |
+|                       |                                |                                             |                                                  |     |
+|-----------------------|--------------------------------|---------------------------------------------|--------------------------------------------------|------|
+|                       | **Dynamics AX 7.0** | **Dynamics AX application 7.0.1** | **Dynamics 365 for Operations (1611)** | **Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update** |
+| **Platform update 8** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
+| **Platform update 7** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
+| **Platform update 6** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
+| **Platform update 5** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
+| **Platform update 4** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
+| **Platform update 3** | Compatible                      | Compatible                                   | Compatible                                        |  Compatible |
+| **Platform update 2** | Compatible                      | Compatible                                   |                                                  |  Compatible |
+| **Platform update 1** | Compatible                      | Compatible                                   |                                                  |  Compatible |
+| **Platform 7.0**      | Compatible                      |                                             |                                                  |  Compatible |
 
 ## Update policy
 Microsoft Dynamics 365 for Operations is serviced as a cloud offering. Updates to the Dynamics 365 for Operations platform and application will be handled in the following manner:
