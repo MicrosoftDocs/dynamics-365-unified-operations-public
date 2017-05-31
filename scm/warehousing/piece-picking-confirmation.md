@@ -40,7 +40,7 @@ You can also use the quantity and unit of measure (UOM) that is associated with 
 
 ## Where it applies
 
-Piece picking works for all counting work and for the initial pick for any type of work. Piece picking does not apply if the item is controlled by serial numbers or if it is a production or kanban pick from an LP location and the item is set to staging.
+Piece picking works for all counting work and for the initial pick for any type of work. Piece picking does not apply if the item is controlled by serial numbers or if it is a production or kanban pick from a license plate (LP) location and the item is set to staging.
 
 ## Set up piece picking
 
