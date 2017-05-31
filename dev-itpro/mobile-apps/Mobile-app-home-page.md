@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile app home page
-description: This topic describes the Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition mobile app and provides links to resources that can help you implement it in your organization.
+description: This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
 author: sericks007
 manager: AnnBe
 ms.date: 05/28/2017
@@ -35,9 +35,10 @@ ms.search.validFrom: 2017-02-28
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the mobile app for:
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
-- Microsoft Dynamics 365 for Opertaions 
+This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
+
+> [!NOTE]
+> The mobile app was previously named Dynamics 365 for Operations.
 
 Overview
 --------
