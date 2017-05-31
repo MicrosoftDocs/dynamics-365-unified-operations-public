@@ -38,3 +38,9 @@ The information below introduces changes in the Eastern European localization re
  - the date of VAT register.
 
 Also it provides a short description for some country-specific scenarios, for example, Intra-community VAT or Deferred tax.
+
+|Scenario   |Applicable for countries   |Description of the functionality changes   |
+|---|---|---|
+|   |   |   |
+|   |   |   |
+|   |   |   |
