@@ -1,4 +1,4 @@
----
+*---
 # required metadata
 
 title: Reverse charge
@@ -29,8 +29,8 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 ---
 # Overview
 This topic describes the generic approach to setting up the reverse charge (RC) value-added tax (VAT) for European countries.
-Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Thus, the recipient of goods and/or services reports both the output VAT (acting as a seller) and the input VAT (acting as a purchaser) in their VAT statement.
-The EU Directive left space for Member State to determine how to adopt the generic requirements to local needs. Thus, in some countries, the reverse charge schema is implemented only for certain goods and/or services, with additional conditions/thresholds on sales amounts, and in others, the VAT payment responsibility depends on the status of the supplier and the buyer. If the buyer is liable to pay VAT, it must be clearly reflected on the invoice issued by the supplier, i.e. a special wording *'Reverse charge'* must be included in the invoice along with indicating which positions are under the Reverse charge schema. You need to complete the following setup to apply the Reverse charge.
+*Reverse Charge* is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services. Thus, the recipient of goods and/or services reports both the output VAT (acting as a seller) and the input VAT (acting as a purchaser) in their VAT statement.
+The EU Directive left space for Member State to determine how to adopt the generic requirements to local needs. Thus, in some countries, the *Reverse Charge Schema* is implemented only for certain goods and/or services, with additional conditions/thresholds on sales amounts, and in others, the VAT payment responsibility depends on the status of the supplier and the buyer. If the buyer is liable to pay VAT, it must be clearly reflected on the invoice issued by the supplier, i.e. a special wording *'Reverse charge'* must be included in the invoice along with indicating which positions are under the *Reverse Charge schema*. 
 
 You need to complete the following setup to apply the Reverse charge.
 
@@ -69,7 +69,7 @@ In Tax > Setup > Sales tax > Reverse charge rules you can define the applicabili
 + **Country/region type of the partner**. *Domestic*, *EU*, *Foreign*, or the rule can be applied for *All* trade partners, no matter of their country/region address.
 + **Domestic delivery address**. If you select this check box then the rule will be applied to the deliveries within the same country/region. This check box cannot be selected for *Vendor invoice journal* and *Customer invoice journal* document types.
 + **Reverse charge item group**. Select the group to which the rule can be applied.
-+ **Threshold amount**. The Reverse charge schema is applied to invoice only if the value of items/services included in the *Reverse charge item group* exceeds the specified limit.
++ **Threshold amount**. The *Reverse Charge schema* is applied to invoice only if the value of items/services included in the *Reverse charge item group* exceeds the specified limit.
 
 You can define the period the rule is effective, using the **Effective** and **Expiration dates**. In addition, you can define whether a notification is needed in case the condition for the document line is met, and update the document line with the default reverse charge sales tax group:
 - *None* – the document line is not updated;
@@ -85,5 +85,5 @@ When selling under the *Reverse charge schema*, the seller does not charge VAT, 
 When a sales invoice is posted with Reverse Charge, the sales tax transactions have the **Sales tax payable** tax direction, zero sales tax, and the **Reverse charge** check box set.
 
 # Reverse charge in Purchase invoice
-When purchasing under the *Reverse Charge Schema*, the purchaser that receives the invoice with Reverse charge acts as a buyer and a seller for VAT accounting purposes.
+When purchasing under the *Reverse Charge schema*, the purchaser that receives the invoice with Reverse charge acts as a buyer and a seller for VAT accounting purposes.
 When purchase invoice with Reverse Charge is posted, two sales tax transactions are created: one with the **Sales tax receivable** tax direction and another one with the **Sales tax payable** tax direction, and the **Reverse charge** check box set.
