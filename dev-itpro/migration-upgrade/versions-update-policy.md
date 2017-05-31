@@ -67,12 +67,16 @@ The customer is in full control of the on-premises deployments and must follow t
 
 The Dynamics 365 for Finance and Operations, Enterprise edition on-premises model only offers a licenses under the Modern Support Lifecycle Policy. This requires the customer to maintain SA or the Enhancement Plan and deploy updates as noted in the matrix below. Customers who wish to use the Fixed Support Lifecycle Policy (5+5), must downgrade to AX 2012.  If a customer lapses on SA or the Enhancement Plan, they are eligible for the perpetual rights only of AX 2012 and must uninstall Dynamics 365 for Finance and Operations, Enterprise edition.
 
+## Application and platform releases
 
+### Application releases
 
-
-
-
-
+| Release | Version | Build number | Availability | Expiration date |
+|---------|----------|--------------|--------------|-----------------|
+|Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | July 2017 update | X | June 2016 | June 30, 2020 |
+| Microsoft Dynamics 365 for Operations          | 1611              |  7.1.1541.3036   | November 2016    | November 30, 2019 |
+| Microsoft Dynamics AX               | 7.0.1             | 7.0.1265.23014   | May 2016         | June 30, 2017 | 
+| Microsoft Dynamics AX               | 7.0               | 7.0.1265.3015    | February 2016    | June 30, 2017 |
 
 
 
