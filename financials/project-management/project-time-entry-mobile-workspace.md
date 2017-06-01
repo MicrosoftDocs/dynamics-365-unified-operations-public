@@ -34,37 +34,31 @@ ms.search.validFrom: 2016-11-30
 
 [!include[banner](../includes/banner.md)]
 
-
-
 This topic provides information about the **Project time entry** mobile workspace. This workspace lets users enter and save time against a project by using their mobile device.
 
-This mobile workspace is for use with the Dynamics 365 for Unified Operations mobile app. 
+This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app. 
 
-
-Overview
----------------------------------------------------
-
+## Overview
 As part of their daily work, project resources are often on-site or traveling. The **Project time entry** mobile workspace lets users enter their billable or non-billable time against a project on the mobile device of their choice. Therefore, project resources can record time entries anytime and anywhere. They can also view time entries that have already been recorded. 
 
-Specifically, when using the **Project time entry** mobile workspace, users can:
+Specifically, in the **Project time entry** mobile workspace, users can perform these tasks:
 
 -   For any selected date, enter the number of hours that you spent on a specific task.
 -   Search by project name or customer to find the project to enter time for.
 -   Specify the category and activity for the time that you spent.
 -   Record the time as billable or non-billable for the project.
--   Optionally, enter any external or internal comments.
+-   Optionally enter any external or internal comments.
 
 ## Prerequisites
-The prerequisites differ based on the version of Dynamics 365 that has been deployed for your organization.
+The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
-### Prerequisites if using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update 
-If Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Project time entry** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update 
+If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Project time entry** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Prerequisites if using Dynamics 365 for Operations version 1611 with platform update 3 or later
-If Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
+### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later
+If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
 
 <table>
-
 <thead>
 <tr class="header">
 <th>Prerequisite</th>
@@ -73,26 +67,24 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 </tr>
 </thead>
 <tbody>
-
 <tr class="odd">
-<td>Implement KB 4018050</td>
+<td>Implement KB 4018050.</td>
 <td>System administrator</td>
 <td>KB 4018050 is an X++ update or metadata hotfix that contains the <strong>Project time entry</strong> mobile workspace. To implement KB 4018050, your system administrator must follow these steps.
 <ol>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Lifecycle Services (LCS)</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
 <li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
 <li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ProjectMobile</strong> models, and then upload the deployable package to LCS.</li>
 <li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>Publish the <strong>Project time entry</strong> mobile workspace</td>
+<td>Publish the <strong>Project time entry</strong> mobile workspace.</td>
 <td>System administrator</td>
 <td>See <a href="/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
 </tbody>
 </table>
-
 
 ## Download and install the mobile app
 
@@ -105,21 +97,21 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 1.  Start the app on your mobile device.
 2.  Enter your Dynamics 365 URL.
 3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
-4.  After you sign in, the available workspaces for your company will display. Note that if your system administrator publishes a new workspace later, you will need to refresh the list of mobile workspaces.
+4.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## Enter time by using the Project time entry mobile workspace
 1.  On your mobile device, select the **Project time entry** workspace.
-2.  Select **Time entry**. The calendar dates for the current week will display.
+2.  Select **Time entry**. The calendar dates for the current week are shown.
 3.  For a selected date, select **Actions** &gt; **New entry**.
 4.  Enter the number of hours to record.
-5.  Select the project for the time entry. A list will display the projects that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Select the project for the time entry. A list shows the projects that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
 6.  If your project isn't in the list, select **Search**. Search by name, or switch to search by project name or customer.
-7.  Select a category. A list will display the categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Select a category. A list shows the categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
 8.  If your category isn't in the list, select **Search**. Search by category, or switch to search by category name.
-9.  Select an activity. A list will display the activities that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Select an activity. A list shows the activities that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, see [Mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
 10. If your activity isn't in the list, select **Search**. Search by activity number, or switch to search by purpose.
 11. Select the line property.
-12. Optional, enter any external and internal comments.
+12. Optional: Enter any external and internal comments.
 13. Select **Done**.
