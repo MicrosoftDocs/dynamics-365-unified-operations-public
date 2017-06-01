@@ -513,6 +513,11 @@ Here is the formula that can be designed: FORMAT (CONCATENATE (@&quot;SYS70894&q
 <td>Returns a string of a specified length in which the beginning of the current string is padded with specified characters.</td>
 <td>PADLEFT (“1234”, 10, “ “) returns the text string “      1234”</td>
 </tr>
+<tr class="even">
+<td>TRIM (string)</td>
+<td>Returns given text after truncating leading and trailing spaces, and removes multiple spaces between words. </td>
+<td><strong>TRIM ("     Sample     text     ")</strong> returns <strong>"Sample text".</strong></td>
+</tr>
 </tbody>
 </table>
 
