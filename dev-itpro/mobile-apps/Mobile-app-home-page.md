@@ -34,7 +34,6 @@ ms.search.validFrom: 2017-02-28
 
 [!include[banner](../includes/banner.md)]
 
-
 This topic describes the Microsoft Dynamics 365 for Unified Operations mobile app and provides links to resources that can help you implement it in your organization.
 
 > [!NOTE]
@@ -45,32 +44,31 @@ Overview
 
 The mobile app enables your organization to make its business processes available on mobile devices. After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices. The mobile app includes the following features that can help increase productivity:
 
--   Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations, Enterprise Edition or Dynamics 365 for Operations.
--   IT admins or developers can build and publish mobile workspaces that have been tailored to their organization. The app uses your existing code assets. Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.
--   IT admins or developers easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.
--   IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.
+- Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline. When a device reestablishes a network connection, offline data operations are automatically synchronized with Dynamics 365 for Finance and Operations, Enterprise edition, or Microsoft Dynamics 365 for Operations.
+- IT admins or developers can build and publish mobile workspaces that have been tailored to their organization. The app uses your existing code assets. Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.
+- IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.
+- IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.
 
 ## Elements of the mobile app
-Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. 
+Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions. 
 
 [![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. When you start the app, you go to the **dashboard**.
 2. On the dashboard, you can see a list of **workspaces** that have been published.
 3. In each workspace, you can see a list of **pages** that are available for that workspace.
+4. After you're on a page, you can perform several actions. Here are some examples:
 
-Once you are on a page, you can do several things, such as:
--   View detailed data.
-- Navigate to other pages for related data, such as entity details or lines.
--   See a list of **actions** that are available for that page. Actions let you create or edit existing data.
-
+    - View detailed data.
+    - Navigate to other pages for related data, such as entity details or lines.
+    - See a list of **actions** that are available for that page. Actions let you create or edit existing data.
 
 ## Implementation process
-The following illustration shows the process for implementing mobile workspaces provided by Microsoft, or custom mobile workspaces. 
+The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces. 
 
 ![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)
 
-The following table includes links to resources that can help you implement mobile workspaces provided by Microsoft, or custom mobile workspaces. The numbers in the first column correspond to the numbered steps in the previous illustration.
+The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces. The numbers in the first column correspond to the numbered steps in the previous illustration.
 
 <table>
 <colgroup>
@@ -91,13 +89,13 @@ The following table includes links to resources that can help you implement mobi
 <tr class="odd">
 <td>1</td>
 <td>System administrator</td>
-<td><p>Implement Dynamics 365 for Finance and Operations, Enterprise Edition or Dynamics 365 for Operations in your organization.</td>
-<td>If you haven't deployed a version of Dynamics 365 yet, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.<br></br>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</p></td>
+<td>Implement Finance and Operations or Dynamics 365 for Operations in your organization.</td>
+<td><ul><li>If you haven't yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>System administrator</td>
-<td><strong>If you are using Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
+<td><strong>If you're using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</td>
 <td>See the following topics for more information:
 <ul>
 <li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
@@ -134,7 +132,7 @@ The following table includes links to resources that can help you implement mobi
 <tr class="even">
 <td>6</td>
 <td>System administrator</td>
-<td>Apply the deployable package that contains the custom workspaces that are provided by the ISV.</td>
+<td>Apply the deployable package that contains the custom workspaces that are provided by the independent software vendor (ISV).</td>
 <td><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package</a></td>
 </tr>
 <tr class="odd">
@@ -147,7 +145,6 @@ The following table includes links to resources that can help you implement mobi
 <td>8</td>
 <td>User</td>
 <td>Download and install the mobile app.</td>
-
 <td><ul>
 <li><a href="https://go.microsoft.com/fwlink/?linkid=850662">For Andriod phones</a></li>
 <li><a href="https://go.microsoft.com/fwlink/?linkid=850663">For iPhones</a></li></ul>
@@ -157,13 +154,8 @@ The following table includes links to resources that can help you implement mobi
 <td>9</td>
 <td>User</td>
 <td>Sign in, and use the mobile app. The app includes the mobile workspaces that have been published by the system administrator.</td>
-<td>To see a list of mobile workspaces provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.
+<td>To see a list of mobile workspaces that are provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.
 </td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
