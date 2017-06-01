@@ -24,7 +24,7 @@ ms.custom: 274753
 ms.search.region: Spain
 # ms.search.industry: 
 ms.author: v-lenest
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---

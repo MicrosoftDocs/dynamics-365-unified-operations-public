@@ -21,7 +21,6 @@ ms.reviewer: ShylaThompson
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 30301
-ms.assetid: e3102be0-46f0-478e-a639-35092bee97a7
 ms.search.region: France
 # ms.search.industry: 
 ms.author: epopov

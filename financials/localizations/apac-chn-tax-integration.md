@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: ShylaThompson
+ms.reviewer: ShylaThompson
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265264

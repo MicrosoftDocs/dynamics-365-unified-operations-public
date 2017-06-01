@@ -25,7 +25,7 @@ ms.assetid: a5628f89-2ebb-4df2-a8a5-522649fb66da
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: anasyash
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
