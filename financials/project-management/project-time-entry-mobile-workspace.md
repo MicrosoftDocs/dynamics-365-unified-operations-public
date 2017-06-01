@@ -98,19 +98,14 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 
 Download and install the Dynamics 365 for Unified Operations mobile app:
 
--   For Android: [Dynamics 365 for Finance and Operations, Enterprise edition on the Google Play Store](https://go.microsoft.com/fwlink/?linkid=850662)
--   For iPhone: [Dynamics 365 for Finance and Operations, Enterprise edition on the iTunes apps store](https://go.microsoft.com/fwlink/?linkid=850663)
-
-To download and install the Dynamics 365 for Operations mobile app:
-
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the mobile app
 1.  Start the app on your mobile device.
 2.  Enter your Dynamics 365 URL.
-4.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
-5.  After you sign in, the available workspaces for your company will display. Note that if your system administrator publishes a new workspace later, you will need to refresh the list of mobile workspaces.
+3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
+4.  After you sign in, the available workspaces for your company will display. Note that if your system administrator publishes a new workspace later, you will need to refresh the list of mobile workspaces.
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
