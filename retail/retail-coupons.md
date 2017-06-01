@@ -34,14 +34,22 @@ ms.dyn365.ops.version:
 [!include[banner](includes/banner.md)]
 
 
+## Creating coupons
+
+Coupons are codes and bar codes that are required to get some retail discounts. You can have multiple codes per coupon and each code can have it's effective dates. Coupons can be configured to be limited use. When creating limited use coupons the limit can be defined per customer, per channel, or global limit. When coupons are limited use the limit is enforced when the code or bar code is entered or scanned in POS or sales order entry. The usage of the coupon is recorded when an order is competed with a coupon on it. The limit is enforced per coupon code on a coupon.  For example, a single use coupon with two coupon codes can be used twice, once for each coupon code.  Each code on a coupon can be independently set to active.
+
+Each coupon is related to one retail discount. The customers, or channels that a coupon is valid in are defined by price groups associated to discount. A coupon can be configured require a customer. 
+
+When a discount is related to one or more coupons, some of the properties of the discount become disabled in the discount form because they are managed by properties on the coupon. These are the discount status, the start and end dates of the discount and the coupon code required flag.
+
 ## Managing coupons
 
-You need to create the discount and the coupon independently and then link them by choosing the discount in the coupon form.
-Once you link a coupon to a discount, a number of fields on the discount become read only because they are managed by the coupon's settings. Fields such as status and standard date ranges. 
+You need to create the discount and the coupon independently and then link them by choosing the discount in the coupon form. Once you link a coupon to a discount, a number of fields on the discount become read only because they are managed by the coupon's settings. Fields such as status and standard date ranges.  
 
 Coupons are now essentially additional validation on top of retail discounts. The coupon provides the coupon codes and bar codes with date ranges, the usage limits, and customer required property. The discount provides the set of products the coupon is valid for. The discount's price groups provide the set of customers, channels, or catalogs the coupon is valid for.
 
-## Required set up for coupons
+
+## Required set up for coupons 
 Before you can use retail coupons you need to set up a coupon bar code and two number sequences. These are the steps for set up. Each step starts with the form name for the step.
 - **Mask characters**: Create a new mask character for coupon code. Any unused character is fine.
 - **Bar code mask setup**: Create a new bar code mask with **Type = Coupon**.
