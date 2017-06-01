@@ -342,7 +342,7 @@ The Access list hierarchy settings are used to control data displayed in the fol
         client
 
 > [!NOTE] 
-> Before **Access list hierarchy** can affect data in Power BI, access level hierarchy and row level security in Power BI needs to be paired. For more information, see <a href="/dynamics365/operations/financials/cost-accounting/setup-security-cost-accounting-content-pack"></a>
+> Before **Access list hierarchy** can affect data in Power BI, access level hierarchy and row level security in Power BI needs to be paired. For more information, see <a href="/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-packcost-accounting">Set up security for Cost accounting content pack</a>
 
 > [!NOTE] 
 > Exporting data to Excel is not secured by **Access list hierarchy**. Therefore, this reporting tool should only be used by cost accountants and managers who need to have full access to view the data.
