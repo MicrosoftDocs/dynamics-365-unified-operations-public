@@ -96,7 +96,7 @@ You must configure the app on the device to connect to the Dynamics 365 for Ope
     + **Azure Active directory client ID** - The client ID is obtained in step 13 in "Create a web service application in Active Directory". 
     + **Azure Active directory client secret** - The client secret is obtained in step 13 in "Create a web service application in Active Directory". 
     + **Azure Active directory resource** - The Azure AD directory resource depicts the Dynamics 365 for Operations root URL. **Note**: Do not end this field with a forward slash character (/). 
-    + **Azure Active directory tenant** - The Azure AD directory tenant used with the Dynamics 365 for Operations server: https://login.windows.net/&lt;your-AD-tenant-ID&gt;. For example: https://login.windows.net/contosooperations.onmicrosoft.com. 
+    + **Azure Active directory tenant** - The Azure AD directory tenant used with the Dynamics 365 for Operations server: https://login.windows.net/your-AD-tenant-ID. For example: https://login.windows.net/contosooperations.onmicrosoft.com. 
     <br>**Note**: Do not end this field with a forward slash character (/). 
     + **Company** - Enter the legal entity in Dynamics 365 for Operations to which you want the application to connect. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Select the **Back** button in the top-left corner of the application. The application will now connect to your Dynamics 365 for Operations server and the log-in screen for the warehouse worker will display. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
