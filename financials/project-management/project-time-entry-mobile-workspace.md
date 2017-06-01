@@ -38,17 +38,15 @@ ms.search.validFrom: 2016-11-30
 
 This topic provides information about the **Project time entry** mobile workspace. This workspace lets users enter and save time against a project by using their mobile device.
 
-This workspace can be used with:
-- Dynamics 365 for Finance and Operations, Enterprise edition mobile app
-- Dynamics 365 for Operations mobile app
+This mobile workspace is for use with the Dynamics 365 for Unified Operations mobile app. 
 
 
-Overview of the Project time entry mobile workspace
+Overview
 ---------------------------------------------------
 
 As part of their daily work, project resources are often on-site or traveling. The **Project time entry** mobile workspace lets users enter their billable or non-billable time against a project on the mobile device of their choice. Therefore, project resources can record time entries anytime and anywhere. They can also view time entries that have already been recorded. 
 
-Specifically, the **Project time entry** mobile workspace provides these features:
+Specifically, when using the **Project time entry** mobile workspace, users can:
 
 -   For any selected date, enter the number of hours that you spent on a specific task.
 -   Search by project name or customer to find the project to enter time for.
@@ -59,8 +57,10 @@ Specifically, the **Project time entry** mobile workspace provides these feature
 ## Prerequisites
 The prerequisites differ based on the version of Dynamics 365 that has been deployed for your organization.
 
-If Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator simply needs to publish the **Project time entry** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+### Prerequisites if using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update 
+If Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Project time entry** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
+### Prerequisites if using Dynamics 365 for Operations version 1611 with platform update 3 or later
 If Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
 
 <table>
@@ -82,7 +82,7 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 <li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Lifecycle Services (LCS)</a>.</li>
 <li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
 <li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ProjectMobile</strong> models, and then upload the deployable package to LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -96,20 +96,19 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 
 ## Download and install the mobile app
 
-To download and install the Dynamics 365 for Finance and Operations, Enterprise edition mobile app:
+Download and install the Dynamics 365 for Unified Operations mobile app:
 
 -   For Android: [Dynamics 365 for Finance and Operations, Enterprise edition on the Google Play Store](https://go.microsoft.com/fwlink/?linkid=850662)
 -   For iPhone: [Dynamics 365 for Finance and Operations, Enterprise edition on the iTunes apps store](https://go.microsoft.com/fwlink/?linkid=850663)
 
 To download and install the Dynamics 365 for Operations mobile app:
 
--   For Android: [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   For iPhone: [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+-   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the mobile app
 1.  Start the app on your mobile device.
 2.  Enter your Dynamics 365 URL.
-3.  Enter the company to sign in to. For example, enter **USMF**.
 4.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 5.  After you sign in, the available workspaces for your company will display. Note that if your system administrator publishes a new workspace later, you will need to refresh the list of mobile workspaces.
 
