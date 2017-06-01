@@ -34,29 +34,27 @@ ms.search.validFrom: 2017-02-28
 
 [!include[banner](../includes/banner.md)]
 
-
 This topic describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the Dynamics 365 for Unified Operations mobile app. 
 
 > [!NOTE]
 > The mobile app was previously named *Microsoft Dynamics 365 for Operations*.
 
-## Publish a mobile workspace using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+## Publish a mobile workspace by using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
 
-1. Start Dynamics 365 for Finance and Operations, Enterprise Edition in your browser.
+1. In your browser, start Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 2. Click **Settings** > **Mobile app**.
-3. Select the mobile workspace you want to publish.
+3. Select the mobile workspace to publish.
 4. Click **Publish**.
 
-After a new workspace is published, users will have to pull to refresh the list of mobile workspaces. 
+After a new workspace is published, users must pull to refresh the list of mobile workspaces. 
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Publish a mobile workspace using Dynamics 365 for Operations version 1611
+## Publish a mobile workspace by using Microsoft Dynamics 365 for Operations version 1611
 
 ### Prerequisites
--------------
 
-The mobile workspaces provided for Dynamics 365 for Operations version 1611, require that KBs (hotfixes) be implemented. For more information about how to implement the required KBs, see the following topics.
+The mobile workspaces that are provided for Microsoft Dynamics 365 for Operations version 1611 require that KBs (hotfixes) be implemented. For more information about how to implement the required KBs, see the following topics:
 
 - [Cost controlling mobile workspace](dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)
 - [Inventory on-hand mobile workspace](/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)
@@ -67,14 +65,10 @@ The mobile workspaces provided for Dynamics 365 for Operations version 1611, req
 - [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace)
 
 ### Publish a mobile workspace
-1.  Start Dynamics 365 for Operations in your browser.
+1.  In your browser, start Microsoft Dynamics 365 for Operations.
 2.  On the **System parameters** page, on the **Manage mobile workspaces** tab, select the workspace to publish.
 3.  Click **Publish mobile workspace**.
 
-After a new workspace is published, users will have to pull to refresh the list of mobile workspaces. 
+After a new workspace is published, users must pull to refresh the list of mobile workspaces. 
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
-
-
-
-
