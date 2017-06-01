@@ -40,22 +40,22 @@ In this tutorial, you will add navigational elements to a workspace and the navi
 Prerequisites
 -------------
 
-For this tutorial, you need to access the Microsoft Dynamics 365 for Operations environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Dynamics 365 for Operations Instances](..\dev-tools\access-instances.md).
+For this tutorial, you need to access the environment using Remote Desktop, and be provisioned as an administrator on the instance. For more information, see [Access Instances](..\dev-tools\access-instances.md).
 
 ## Key concepts
 -   A *workspace* is an overview page that is specific to a particular subject area. Workspaces are common to all users. In this tutorial, you will add content into an existing workspace.
--   The *dashboard* is the default home page for each user in Dynamics 365 for Operations.
+-   The *dashboard* is the default home page for each user.
 -   *Tiles* are securable objects that can be shown on a workspace or the dashboard. They can be secured by using menu items.
 
 ## Setup
-If this is the first tutorial that you are working on, review [Access Dynamics 365 for Operations Instances](..\dev-tools\access-instances.md) and make sure that you provision your administrator user if you are working on a local VM.
+If this is the first tutorial that you are working on, review [Access Instances](..\dev-tools\access-instances.md) and make sure that you provision your administrator user if you are working on a local VM.
 
 ### Import the tutorial project
 
 If you have already imported the Fleet management tutorial project, skip to the next section.
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:**, and unzip it.
-2.  In Visual Studio, on the **Dynamics 365 for Operations **menu, click **Import Project**.
+2.  In Visual Studio, on the **Dynamics 365 for Operations** menu, click **Import Project**.
 3.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 4.  In the **Select the file to import** window, browse to **C:\\FMLab**, click **FMTutorialDataModel.axpp,** and then click **Open**.
 5.  In the Project file location text box, enter **C:\\FMLab.**
