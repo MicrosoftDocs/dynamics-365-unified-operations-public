@@ -17,11 +17,10 @@ ms.search.form: AssetDepreciationGroup_W
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264314
-ms.assetid: 185cc4ce-d1b2-429a-9b1b-6b9c4b865da0
 ms.search.region: Czech Republic
 # ms.search.industry: 
 ms.author: v-elgolu

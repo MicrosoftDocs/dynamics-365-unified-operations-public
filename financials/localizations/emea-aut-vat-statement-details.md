@@ -17,11 +17,10 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264334
-ms.assetid: 2542c9e1-ed47-416f-9773-7b87eef66e78
 ms.search.region: Austria
 # ms.search.industry: 
 ms.author: v-elgolu
