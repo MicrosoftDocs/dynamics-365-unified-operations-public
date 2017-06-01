@@ -46,11 +46,13 @@ The app is available on Android and Windows operating systems. To use this app, 
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (all versions)                                                                                                                                                   |
-| Dynamics 365 for Operations | Microsoft Dynamics 365 for Operations version 1611 -or- Microsoft Dynamics Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
+| Dynamics 365 for Operations | Microsoft Dynamics 365 for Operations version 1611 <br>-or- <br>Microsoft Dynamics Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
 
 ## Get the app
--   Windows (UWP) - [Dynamics 365 for Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android - [Dynamics 365 for Operations - Warehousing on the Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+-   Windows (UWP): [Dynamics 365 for Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android:
+    - [Dynamics 365 for Operations - Warehousing on the Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+    - [Dynamics 365 for Operations - Warehousing on the Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
 ## Create a web service application in Active Directory
 To enable the app to interact with a specific Dynamics 365 for Operations server, you must register a web service application in a Azure Active Directory for the Dynamics 365 for Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
@@ -89,10 +91,15 @@ To enable Dynamics 365 for Operations to use your Azure AD application, you need
 You must configure the app on the device to connect to the Dynamics 365 for Operations server through the Azure AD application. To do this, complete the following steps.
 
 1.  In the app, go to **Connection settings**.
-2.  Clear the **Demo mode** field. [![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
-3.  Enter the following information: - **Azure Active directory client ID** - The client ID is obtained in step 13 in "Create a web service application in Active Directory". - **Azure Active directory client secret** - The client secret is obtained in step 13 in "Create a web service application in Active Directory". - **Azure Active directory resource** - The Azure AD directory resource depicts the Dynamics 365 for Operations root URL. **Note**: Do not end this field with a forward slash character (/). - **Azure Active directory tenant** - The Azure AD directory tenant used with the Dynamics 365 for Operations server: https://login.windows.net/&lt;your-AD-tenant-ID&gt;. For example: https://login.windows.net/contosooperations.onmicrosoft.com. 
-**Note**: Do not end this field with a forward slash character (/). - **Company** - Enter the legal entity in Dynamics 365 for Operations to which you want the application to connect. [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
-4.  Select the **Back** button in the top-left corner of the application. The application will now connect to your Dynamics 365 for Operations server and the log-in screen for the warehouse worker will display. [![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+2.  Clear the **Demo mode** field. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+3.  Enter the following information: 
+    + **Azure Active directory client ID** - The client ID is obtained in step 13 in "Create a web service application in Active Directory". 
+    + **Azure Active directory client secret** - The client secret is obtained in step 13 in "Create a web service application in Active Directory". 
+    + **Azure Active directory resource** - The Azure AD directory resource depicts the Dynamics 365 for Operations root URL. **Note**: Do not end this field with a forward slash character (/). 
+    + **Azure Active directory tenant** - The Azure AD directory tenant used with the Dynamics 365 for Operations server: https://login.windows.net/&lt;your-AD-tenant-ID&gt;. For example: https://login.windows.net/contosooperations.onmicrosoft.com. 
+    <br>**Note**: Do not end this field with a forward slash character (/). 
+    + **Company** - Enter the legal entity in Dynamics 365 for Operations to which you want the application to connect. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+4.  Select the **Back** button in the top-left corner of the application. The application will now connect to your Dynamics 365 for Operations server and the log-in screen for the warehouse worker will display. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
 
 ## Remove access for a device
 In case of a lost or compromised device, you must remove access to Dynamics 365 for Operations for the device. The following steps describe the recommended process to remove access.
