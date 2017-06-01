@@ -37,7 +37,7 @@ Item verification for cluster picking works the same way as when you verify item
 
 ## Set up item verification with cluster picking
 1.	On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
-2.	From the mobile device menu item, open *Work confirmation setup*.
+2.	From the mobile device menu item, open **Work confirmation setup**.
 
 | Option        | Description   | 
 | ------------- | ------------- |
