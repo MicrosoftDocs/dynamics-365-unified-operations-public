@@ -21,8 +21,8 @@ ms.assetid: [Go get from guidgenerator.com]
 ms.search.region: Eastern Europe
 # ms.search.industry: 
 ms.author: v-kikozl
-ms.search.validFrom: 
-ms.dyn365.ops.version: AX 2012
+ms.search.validFrom: 2016-08-30
+ms.dyn365.ops.version: Platform update 2
 ---
 
 # Invoice processing overview
