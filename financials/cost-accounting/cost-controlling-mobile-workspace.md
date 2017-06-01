@@ -117,7 +117,7 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 </tbody>
 </table>
 
-## Download and install the Dynamics 365 for Operations mobile app
+## Download and install the mobile app
 Download and install the Dynamics 365 for Unified Operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
