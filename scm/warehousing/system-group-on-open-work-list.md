@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of system grouping on an open work list
+title: System grouping on an open work list
 description: This topic describes how to filter the open work list on a mobile device.
 author: BibiSp
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Overview of system grouping on an open work list
+# System grouping on an open work list
 
 [!include[banner](../includes/banner.md)]
 
