@@ -56,7 +56,7 @@ After a new workspace is published, users must pull to refresh the list of mobil
 
 The mobile workspaces that are provided for Microsoft Dynamics 365 for Operations version 1611 require that KBs (hotfixes) be implemented. For more information about how to implement the required KBs, see the following topics:
 
-- [Cost controlling mobile workspace](dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)
+- [Cost controlling mobile workspace](/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)
 - [Inventory on-hand mobile workspace](/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)
 - [Sales orders mobile workspace](/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)
 - [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace)
