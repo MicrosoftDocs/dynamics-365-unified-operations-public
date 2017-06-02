@@ -133,7 +133,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 1.  Start the app on your mobile device.
 2.  Enter your Dynamics 365 URL.
 3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
-4.  After you sign in, the available workspaces for your company will display. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
+4.  After you sign in, the available workspaces for your company is shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
