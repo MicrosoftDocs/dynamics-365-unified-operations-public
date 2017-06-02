@@ -42,7 +42,7 @@ Click **Filter** to change the initial selection in the view. By setting the dis
 
 The following sections describe the functionality that is available on the various tabs of the BOM designer.
 
-## Analyzing a formula structure by using the formula designer
+## Analyze a formula structure by using the formula designer
 The formula designer has two sections:
 
 -   The tree view of the formula structure.
@@ -53,7 +53,7 @@ The formula designer has two sections:
     -   **Route** – Shows the header of the route that is related to the selected node.
     -   **Route operations** – Shows a preview of the operations for the route. When a BOM line that is assigned to a specific operation is selected, the operation is marked as **Component needed at operations**.
 
-## Selecting a formula and route
+## Select a formula and route
 The filter that is applied for the formula and route is displayed in the header of the formula designer. You can change the filter by using the **Filter** dialog box. The following table describes the fields in this dialog box.
 
 <table>
@@ -97,7 +97,7 @@ The filter that is applied for the formula and route is displayed in the header 
 
 When you use the formula designer to review or edit formulas that consist of one or more levels of phantoms, the route that is associated with the top item typically spans the complete formula hierarchy. To simplify the overview, you can lock the top-level route in the display by clicking **View** &gt; **Lock route**. To unlock the route, click **View** &gt; **Unlock route**.
 
-## Adding and editing formulas and formula lines
+## Add and edit formulas and formula lines
 Use the **BOM lines** or **Formula** functions to modify the formula lines or formula. When you select a node in the tree, the type of the node determines that functions that are available.
 
 | Function                            | Description                                                                                               | Node type and conditions                                                                                                                                                                                                                                                                       |
