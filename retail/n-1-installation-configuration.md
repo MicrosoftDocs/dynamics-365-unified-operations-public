@@ -30,8 +30,6 @@ ms.dyn365.version: [name of release that feature was introduced in, see list her
 
 # Installing N-1 components for use with Microsoft Dynamics 365 for Retail
 
-[!include[banner](../includes/banner.md)]
-
 
 This topic explains how you can use self-service to configure Connector for Microsoft Dynamics AX (Previously **N-1**) in the Microsoft Dynamics 365 for Retail headquarters, download it, and install it on the domain computers of a Microsoft Dynamics AX 2012 R3 environment to be utilized by previously deployed and running stores. The Connector for Microsoft Dynamics AX consists of two separate installers for the Retail Async Server Connector service and the Real-time service for Dynamics AX 2012 R3. When completed, a Dynamics 365 for Retail environment will be used as the backend infrastructure for currently installed and functioning stores containing Enterprise POS and Modern POS from a Microsoft Dynamics AX 2012 R3. This topic also explains how to uninstall and troubleshoot these installations.
 
