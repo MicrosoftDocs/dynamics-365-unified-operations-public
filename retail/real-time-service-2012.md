@@ -30,7 +30,7 @@ ms.dyn365.version: [name of release that feature was introduced in, see list her
 
 # Install the Retail Real-time service for Dynamics AX 2012 R3 for use with Dynamics 365 for Operations
 
-[!include[banner](../includes/banner.md)]
+
 
 
 This Dynamics 365 for Operations template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D) and the [rendered view](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/master/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
@@ -218,51 +218,4 @@ Use backticks (&#96;) for `inline code`. Use inline code for command-line comman
 ## Blockquotes
 
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
-
-## Images
-
-### Static image or animated gif
-
-![this is the alt text](../images/Logo_DotNet.png)
-
-### Linked image
-
-[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
-
-## Videos
-
-### YouTube
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
-
-## docs.microsoft extensions
-
-docs.microsoft provides a few additional extensions to GitHub Flavored Markdown. 
-
-### Alerts
-
-It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.     
-
-#### Note
-
-> [!NOTE]
-> This is a NOTE
-
-#### Warning
-
-> [!WARNING]
-> This is a WARNING
-
-#### Tip
-
-> [!TIP]
-> This is a TIP
-
-#### Important
-
-> [!IMPORTANT]
-> This is IMPORTANT
-
-And they'll render like this:
-![Alert styles](../images/alerts.png)
 
