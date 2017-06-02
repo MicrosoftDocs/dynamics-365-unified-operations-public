@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of product information for cluster picking
+title: Product information for cluster picking
 description: This topic describes how you set up item verificatin together with cluster picking.
 author: BibiSp
 manager: AnnBe
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+# Product information for cluster picking
 Cluster picking allows you to pick items for several orders at the same time. When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters. You can verify Items in cluster picking during the cluster picking process.
 
 ## Where it applies
