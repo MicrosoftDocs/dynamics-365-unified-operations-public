@@ -31,6 +31,7 @@ ms.dyn365.ops.version:
 
 # Creating coupons for retail sales
 
+
 [!include[banner](../includes/banner.md)]
 
 
