@@ -305,28 +305,8 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </table></td>
 </tr>
 <tr class="even">
-<td>Allowance for bad debts for Poland</td>
-<td>On the creditor side, it is possible to correct output VAT on unpaid invoices (receivables). On the debtor side, the debtor is obliged to correct input VAT in the period, in which 150 days passed from the original purchase invoice due date for payables that were not paid. This feature will be available in a future update.</td>
-</tr>
-<tr class="odd">
-<td>Non-tax deductible unpaid costs for Poland</td>
-<td>Vendor liability that is not paid within a certain period after the due date should not be treated as tax deductible costs for PIT/CIT purposes. This feature enables processing vendor invoices that are not paid and should be removed from tax deductible costs. This feature will be available in a future update.</td>
-</tr>
-<tr class="even">
-<td>VAT Control Statement for Czech Republic</td>
-<td>In 2016, taxpayers are obliged to submit a VAT Control Statement that contains detailed information about local taxable supplies that they have received and provided. The statement must be submitted monthly in XML format. This feature will be available in a future update of Dynamics 365 for Operations.</td>
-</tr>
-<tr class="odd">
-<td>Standard Audit File (SAF) for Poland</td>
-<td>Starting in August 2016, taxpayers in Poland are obliged to transmit data in SAF format (general ledger [GL] accounting records, VAT registry, tax revenues and expenses ledger, revenue registry, invoice statements, and receipt statements). This feature will be available in a future update.</td>
-</tr>
-<tr class="even">
 <td>Credit transfer initiation that is based on Danish implementation guidelines for ISO20022</td>
 <td>The feature lets you initiate a credit transfer that is based on Danish implementation guidelines ISO20022 for Single Euro Payments Area (SEPA), domestic, and foreign payments. This feature will be available in a future update.</td>
-</tr>
-<tr class="odd">
-<td>Customs declarations and their inclusion on the <strong>Black list</strong> report for Italy</td>
-<td>Companies in Italy must register customs declarations. If a foreign vendor belongs to a &quot;blacklisted&quot; country/region, companies must include VAT from the customs declarations on the <strong>Black list</strong> report. This feature will be available in future update.</td>
 </tr>
 <tr class="even">
 <td>Fiscal printers for Poland</td>
