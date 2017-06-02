@@ -1,11 +1,9 @@
-
-
 ---
 # required metadata
 
 title: Formula designer
-description: enter a key sentence
-author: YuyuScheller 
+description: Use the **Formula designer** to analyze and maintain formulas in a tree structured view. Click **Setup** to select different configurations and specify what information appears on the lines of the tree.
+author: cvocph 
 manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
@@ -32,12 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Using the Formula designer
+# Formula designer
 
 [!include[banner](../includes/banner.md)]
-
-
-This article describes how you can use the Formula designer to analyze and maintain formulas in a tree structured view. You can click Setup to select different configurations and specify what information appears on the lines of the tree.
 
 When you open the **Formula designer** page from the **Released products** page, it displays the list of Co-Products as well as the hierarchy of the ingredients of the released product on the left side tree pane. The structure is derived from the hierarchy of formulas that are active and approved for the selected item and it's ingredients, the default order site of the item, and the actual date.  
 
