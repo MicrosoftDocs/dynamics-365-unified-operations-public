@@ -54,7 +54,7 @@
 ### [Vendor posting profiles](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
 # Product information management
 ## Maintain product categories
-## Maintain Product information
+## Maintain product information
 ### Maintain product definition
 #### [Product number nomenclature](pim/product-variant-identification-nomenclature.md)
 #### Product templates
@@ -71,13 +71,14 @@
 #### Forecast models and item allocation keys
 ### Prepare product for production
 #### BOM and formula
-##### [BOM designer](production-control/bom-designer-functionality.md)
-##### [BOM and formula](production-control/bill-of-material-bom.md)
-##### Formula designer
+##### [Bills of materials and formulas](production-control/bill-of-material-bom.md)
+##### [Use the BOM designer](production-control/bom-designer-functionality.md)
+##### Use the formula designer
 #### Routes
 #### Lean manufacturing
 ### Prepare products for warehouse and logistics
 ### Estimate cost for products
+#### [BOM calculations](cost-management/bom-calculations.md)
 ## Maintain product configuration models
 ### [Build a product configuration model](pim/build-product-configuration-model.md)
 ### [Calculation for product configuration model FAQ](pim/calculate-product-configuration-models.md)
@@ -98,7 +99,7 @@
 #### [Production setup requirements](production-control/production-set-up-requirements.md)
 #### [Bills of materials and formulas](production-control/bill-of-material-bom.md)
 #### [BOM designer functionality](production-control/bom-designer-functionality.md)
-#### [Bom calculations](cost-management/bom-calculations.md)
+#### [BOM calculations](cost-management/bom-calculations.md)
 #### [Operations resources](production-control/operations-resources.md)
 #### [Resource capabilities](production-control/resource-capabilities.md)
 #### [Routes and operations](production-control/routes-operations.md)
