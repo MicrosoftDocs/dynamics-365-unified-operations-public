@@ -40,10 +40,10 @@ In this tutorial, you’ll learn about using the tools in Visual Studio to analy
 Prerequisites
 -------------
 
-Previous experience with code and Visual Studio is helpful to get the full benefit of this tutorial. This tutorial requires you to access the Microsoft Dynamics 365 for Operations environment using Remote Desktop and that you be provisioned as an administrator on the instance.
+Previous experience with code and Visual Studio is helpful to get the full benefit of this tutorial. This tutorial requires you to access the environment using Remote Desktop and that you be provisioned as an administrator on the instance.
 
 ## Key concepts
--   The debugger in Visual Studio is used to analyze and debug code in Microsoft Dynamics 365 for Operations.
+-   The debugger in Visual Studio is used to analyze and debug code for your projects.
 -   The standard features of the Visual Studio debugger are available to use when you're examining the running application. These features include modifying values of variables, setting breakpoints, and so on.
 -   IntelliSense and other features of Visual Studio are vital to efficient code editing and comprehension.
 -   Development is an iterative process. After making modifications to the code, the project will be built, and changes can be tested.
@@ -63,7 +63,7 @@ The rental company has had unfortunate events when customers rent cars using cre
 9.  Place a breakpoint in this method on the line following the first comment. To do this, click in the margin to the left of the line of code where you want the debugger to pause execution. You can also click anywhere in the line of code, and then press F9. The following illustration shows a breakpoint, which is displayed as a red-filled circle in the margin. [![RedCircleMargin\_BuildDebugProj](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) The FinalizeRentalCheckout method is called when a rental transaction is saved. This method calls the delegate named RentalTransactionAboutTobeFinalizedEvent. You can implement an event handler method, which is called by this delegate. The method that calls the delegate passes a parameter, named RentalConfirmation, which contains a value that indicates whether the rental should be allowed or blocked. If the rental is allowed, the value contains "true"; if it's blocked, the value contains "false". An event handler can change this value, based on any test the developer chooses to implement in code. In this case, we'll modify the code to test the expiration date of the credit card.
 10. Press F5 to start the application for debugging, or, on the **Debug** menu, click **Start Debugging**. It's important that you start the application in one of these ways. If you don't, the Visual Studio debugger won't start, so you won't hit any of the breakpoints you've set. **Note**:The debugger needs to relate code position to source positions. It does this through consuming PDB files produced alongside the assemblies and netmodules. The debugger will load symbols from the PDB files as described in the settings in the global tools settings. To open the options page containing the setting that controls which symbols load, go to the **Tools** menu and choose **Options**. In the **Microsoft Dynamics 365 for Operations** group, select the **Debugging** page. If this option is selected, the system will load symbols from only the PDB files related to the artifacts in the current solution. This reduces the startup time significantly, so be sure it’s selected for this lab. Be aware that when this option is selected, it won’t be possible to see source code from entities outside of the current solution. After a few moments, the browser will start and display the startup object that was selected in the project.
 11. Browse to the **Current rentals** page.
-    1.  Go to the Dynamics **Dashboard** by clicking the Dynamics 365 for Operations in the upper left corner.
+    1.  Go to the Dynamics **Dashboard** by clicking **Dynamics 365 for Operations** in the upper left corner.
     2.  Find the Fleet Management module. You can use the Navigation (press Alt+F1), expand the Modules heading and find the **Fleet Management** module.
     3.  Click the **Current rentals** item under Rentals.
     4.  In the action pane, click **Options &gt; Change view &gt; Line view**.

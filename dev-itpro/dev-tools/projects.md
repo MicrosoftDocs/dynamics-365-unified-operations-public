@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Projects in Dynamics 365 for Operations
-description: The Dynamics 365 for Operations project type is part of the Microsoft Visual Studio Tools for Dynamics 365 for Operations. 
+title: Projects
+description: The Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project type is part of the development tools. 
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -30,14 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Projects in Dynamics 365 for Operations
+# Projects
 
 [!include[banner](../includes/banner.md)]
 
-
-The Dynamics 365 for Operations project type is part of the Microsoft Visual Studio Tools for Dynamics 365 for Operations. 
-
-The Dynamics 365 for Operations project type is part of the Microsoft Visual Studio Tools for Dynamics 365 for Operations. This project type resembles other projects in Visual Studio. It helps you organize and manage the elements that you're working with for a model. For example, the project can have folders that help you group the elements. A Visual Studio solution can contain multiple projects. There is one important constraint for a project: it can contain elements from only one model. If you must work with elements from different models, you must use multiple projects in your Visual Studio solution.
+The Microsoft Dynamics 365 for Finance and Operations, Enterprise edition project type is part of the development tools.This project type resembles other projects in Visual Studio. It helps you organize and manage the elements that you're working with for a model. For example, the project can have folders that help you group the elements. A Visual Studio solution can contain multiple projects. There is one important constraint for a project: it can contain elements from only one model. If you must work with elements from different models, you must use multiple projects in your Visual Studio solution.
 
 ## Create a new project
 To create a new, empty project, follow these steps.
@@ -45,7 +42,7 @@ To create a new, empty project, follow these steps.
 1.  On the **File** menu, point to **New**, and then click **Project**.
 2.  In the list of template types, expand the **Installed** node.
 3.  Expand the **Templates** node.
-4.  Select the **Dynamics 365 for Operations **category.
+4.  Select the **Dynamics 365 for Operations** category.
 5.  Select the **Operations Project** template.
 6.  Enter the name and location for the new project.
 7.  Specify whether you want to create a new solution or add the project to the current solution.
@@ -133,7 +130,7 @@ After you've added the elements, you might want to use Solution Explorer to grou
 After you've added the new element, you might want to use Solution Explorer to move it into a folder in the project, so that it's easier to find.
 
 ## Export a projects as an .axpp file
-To transfer elements to a different Dynamics 365 for Operations installation, you can use a project package file. Project package files have the .axpp file name extension. A project package contains all the elements from the project. To export a project, follow these steps.
+To transfer elements to a different installation, you can use a project package file. Project package files have the .axpp file name extension. A project package contains all the elements from the project. To export a project, follow these steps.
 
 1.  In Solution Explorer, select the project to export.
 2.  On the **Project** menu, click **Export Project**. (The command on the menu will contain the name of the selected project.)
