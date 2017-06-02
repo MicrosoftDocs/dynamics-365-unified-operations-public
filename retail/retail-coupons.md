@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail coupons
-description: Retail coupons overview. Discount codes and call center coupons have been merged into a one feature set.
+title: Creating coupons for retail sales
+description: This topic provides and overview of retail coupons and how to set them up.
 author: scott-tucker
 manager: AnnBe
 ms.date: 05/22/2017
@@ -29,18 +29,27 @@ ms.dyn365.ops.version:
 
 ---
 
-# Coupons for retail sales
+# Creating coupons for retail sales
 
-[!include[banner](includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
 
-## Creating coupons
+## Overview of coupons
 
-Coupons are codes and bar codes that are required to get some retail discounts. You can have multiple codes per coupon and each code can have it's effective dates. Coupons can be configured to be limited use. When creating limited use coupons the limit can be defined per customer, per channel, or global limit. When coupons are limited use the limit is enforced when the code or bar code is entered or scanned in POS or sales order entry. The usage of the coupon is recorded when an order is competed with a coupon on it. The limit is enforced per coupon code on a coupon.  For example, a single use coupon with two coupon codes can be used twice, once for each coupon code.  Each code on a coupon can be independently set to active.
+Coupons are codes and bar codes that are used add retail discounts to transactions. Each coupon can have multiple codes, and each code can have its own effective dates. 
 
-Each coupon is related to one retail discount. The customers, or channels that a coupon is valid in are defined by price groups associated to discount. A coupon can be configured require a customer. 
+Each coupon is related to one retail discount. The customers that can use a coupon, or the channels that a coupon is valid in, are defined by the price groups associated with the discount. 
 
-When a discount is related to one or more coupons, some of the properties of the discount become disabled in the discount form because they are managed by properties on the coupon. These are the discount status, the start and end dates of the discount and the coupon code required flag.
+Coupons are essentially additional validation on top of retail discounts. The coupon provides the coupon codes and bar codes that are required along with date ranges for those codes. The coupon also provides optional usage limit, and customer required properties. The discount provides the set of products the coupon is valid for. The price groups for the discount provide the set of customers, channels, or catalogs the coupon is valid for.
+
+To create a coupon, you create the discount and the coupon separately and then link them by choosing the discount on the coupon page in Dynamics AX for Retail. 
+
+#### Note
+> Once a coupon is linked to a discount, several fields on the discount page in Dynamics become read-only because they are managed by the coupon’s settings. Those fields include status and standard date ranges.
+
+### Limited use coupons
+
+Coupons can also be configured to be limited use. The limit can be defined per customer, per channel, or for a global limit. For limited use coupons, the limit is enforced when the code or bar code is entered or scanned in POS or a sales order entry. The use of the coupon is recorded when an order is competed with a coupon associated with it. The limit is enforced per coupon code on each coupon. For example, a single use coupon with two coupon codes can be used twice, once for each coupon code. Each code on a coupon can be independently set to active.
 
 ## Managing coupons
 
@@ -49,21 +58,25 @@ You need to create the discount and the coupon independently and then link them 
 Coupons are now essentially additional validation on top of retail discounts. The coupon provides the coupon codes and bar codes with date ranges, the usage limits, and customer required property. The discount provides the set of products the coupon is valid for. The discount's price groups provide the set of customers, channels, or catalogs the coupon is valid for.
 
 
-## Required set up for coupons 
-Before you can use retail coupons you need to set up a coupon bar code and two number sequences. These are the steps for set up. Each step starts with the form name for the step.
-- **Mask characters**: Create a new mask character for coupon code. Any unused character is fine.
-- **Bar code mask setup**: Create a new bar code mask with **Type = Coupon**.
-- **Bar code setup**: Create a new bar code that uses the bar code mask you just created.
-- **Number sequences**: Create 2 new number sequences. One for Coupon code ID and one for Coupon number. Coupon number is the unique identifier for a coupon. Coupon code ID is the unique identifier for each coupon code for a coupon. Each coupon can have multiple codes / bar codes that trigger the coupon.
-    - For both number sequences the **scope** must be company
-    - Most likely you will want both to automatically generate sequence numbers.
-- **Retail shared parameters**: In the **Bar codes** tab, select the bar code you created earlier.
-- **Retail parameters**: In the **Number sequences** tab, select the corresponding number sequences you created earlier for **Coupon number** and **Coupon code ID**
-- You should now be able to open the **Coupons** form and create new coupons.
- 
-### Partial updates and upgrades
+## System set up for coupons 
 
-Dynamics 365 servicing does not enforce applying updates for all components together. In addition, the retail solution is a distributed solution which also means updates may not be applied completely across the solution. The coupon feature because it is a merge of two existing features and involves discount calculation it is important to understand the impact of a partial update. 
-- **Headquarters only partial update**: There are forms and binary updates that are applied in HQ. The retail price engine is updated with the binary update. It is used to calculate price in sales order and price simulator. The coupon and discount forms are updated with the HQ forms update. If only one of the two update parts are applied, you will get forms that do not match the price calculation data. This will cause either unexpected discount calculation or errors during discount calculation. 
-- **HQ updated, Retail server and POS not updated(N-1)**: Retail server handles price calculation with the price engine. We always support updating HQ before updating retail stores. This is because not all stores can be updated at the same time. In this scenario, new functionality related to coupons won't be available in non-updated retail stores. For example, 'exclude' lines have been introduced with coupons. However, if you use exclude lines on a discount they will not be applied in a retail store running a previous version.
-- **HQ not updated, Retail server and POS updated(N+1)**: The updated price engine in retail server knows how to handle legacy discount codes during price calculation so in this you should see no functional impact of the update.
+Before you can set up a coupon, you first need to set up the coupon bar code and two coupon number sequences. 
+
+1.  On the **Mask characters** page, create a new mask character for the coupon code. You can select any unused character.
+2.	On the **Bar code mask setup** page, create a new bar code mask with **Type** set to "Coupon".
+3.	On the **Bar code setup** page, create a new bar code that uses the bar code mask you just created.
+4.	On the **Number sequences** page, create two new number sequences. One sequence is for the coupon code ID and the other is for the coupon number. The coupon code ID is the unique identifier for each coupon code for a coupon. The coupon number is the unique identifier for a coupon. Each coupon can have multiple codes and bar codes that trigger the coupon.
+#### Note
+> For both number sequences, **Scope** must be set to “Company”. In most cases, you should automatically generate both sequence numbers.
+5.	On the **Retail shared parameters** page, on the **Bar codes** tab, select the bar code you created earlier.
+6.	On the **Retail parameters** page, on the **Number sequences** tab, select the corresponding number sequences you created earlier for the coupon number and coupon code ID.
+7.	You can now open the **Coupons** page and create new coupons.
+
+ 
+## Effect of partial updates on coupons
+
+Coupon functionality comprises multiple distinct features in Dynamics 365 for Retail. Dynamics 365 for Retail headquarters (HQ) and channel can be updated partially across components. Because of this, it's important to understand how partial updates affect coupon functionality as a whole.
+
+- HQ partially updated, Retail server and POS not updated: In an HQ update, coupon and discount pages are updated, as well as the retail price engine. If only one of those two components are updated, certain pages in Retail won’t match the price calculation data, resulting in unexpected discount calculations or errors during discount calculations.
+- HQ updated, Retail server and POS not updated (N-1): Because not all retail stores can be updated at the same time, it’s recommended that HQ is updated before the retail stores. In the N-1 scenario, new functionality related to coupons won't be available in stores that haven’t been updated yet. For example, “exclude” lines have been introduced with coupon functionality. If you use exclude lines on a discount, they will not be applied in a retail store running a previous version.
+- HQ not updated, Retail server and POS updated (N+1): Because the updated price engine in Retail server can handle legacy discount codes during price calculations, there should be no functional impact of the update in this scenario.
