@@ -114,73 +114,12 @@ Async Server Connector service
 
 12. When you've finished, select **Finish**. **Note:** If the installer doesn't show a check mark for Retail Server, Async Client, or any other component, wait 10 minutes, so that any cached values can be updated in the cloud. Then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
 
-### Multi-box installation
+### Help secure the Connector for Dynamics AX applications
 
-**Note:** Only advanced users should install Retail Store Scale Unit across multiple computers. The following procedures show how to install the Retail channel database and Async Client on one computer, and the Retail Server and Retail Cloud POS on a second computer. The instructions assume that both systems are on a domain together, and that users have already been created on both systems for the services that will be installed. It's important that you perform all configuration in Dynamics 365 for Operations headquarters.
-
-#### Installation on the first computer
-
-On the first computer, run the Retail Store Scale Unit self-service installer as described earlier in this topic, but make the following changes.
-
-1.  Select only Retail Channel Database and Async Client as the components to install. Select **Next** to continue with the installation. **Note:** You can use a generated service account for the Async Client, because the Async Client won't be accessed outside the computer that it's installed on.
-2.  Enter the client ID and secret. Keep these details available, so that you can use them again on the second computer.
-3.  After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Dynamics 365 for Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
-4.  When setup is successful, start SQL Server Configuration Manager.
-5.  Go to **SQL Server Network Configuration** &gt; **Protocols** for the SQL Server instance.
-6.  Right-click, and then select **Properties**.
-7.  In the **Flags** section, change the value of **Set Force Encryption** to **Yes**.
-8.  In the **Certificate** section, select the SSL certificate on the drop-down menu. This SQL Server SSL certificate is the same certificate that is used in the installer.
-9.  Select **OK**.
-10. Go back to **Protocols** in SQL Server Configuration Manager, and enable the following protocols:
-    -   Named Pipes
-    -   TCP/IP
-
-11. Right-click the **TCP/IP** protocol, and then select **Properties**.
-12. In the **IP Address** section, scroll down the list to **IPALL**.
-13. Enter **TCPPort = 1433**.
-14. Select **OK**.
-15. Start Windows Firewall with Advanced Security.
-16. In Windows Firewall, create an inbound rule to open the TCP port 1433. **Note:** For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](https://msdn.microsoft.com/en-us/library/ms175043.aspx).
-
-#### Installation on the second computer
-
-On the second computer, run the Retail Store Scale Unit Self-service installer as described earlier in this article, but make the following changes.
-
-1.  Select only Retail Server and Retail Cloud POS as the components to install. If only Retail Server must to be installed, don't select Retail Cloud POS. Select **Next** to continue with the installation.
-2.  Enter the domain user credentials (user name and password) that have permission to access SQL Server on the first computer. Then select **Next**. **Note:** A generated service account can't be used, because Retail Server requires access to the SQL database on the first computer. You must use a domain account.
-3.  Enter the same client ID and secret that are used on the first computer. **Important:** It's critical that you add this client ID to Dynamics 365 for Operations as described above.
-4.  Select **Configure Cloud POS**, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps. **Note:** For more information about Azure Web Apps, how to create them, and how to generate new secrets, see [Use portal to create Active Directory application and service principal that can access resources](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI aren't important.
-5.  When setup is successful, don't exit the installer. **Note:** At first, the healthcheck ping won't be successful, because the database isn't yet set up correctly. After you've completed the remaining steps of this procedure, you can test the healthcheck again.
-6.  Go to **IIS**, select the **Retail Store Scale Unit** website, and select the **Retail Server** web application.
-7.  Explore the working directory.
-8.  Open the Web.config file, and then, in the **connectionStrings** section, add **Server name**. **Server name** is the name of the first computer where you installed components. Save the file.
-9.  If the certificate that is used isn't a valid, trusted certificate from a trusted authority, open CERTMGR.MSC, and follow these steps:
-    1.  Import the SQL Server SSL certificate that you created earlier, and add it to Trusted Root.
-    2.  Open a **Command Prompt** window as an administrator, type **IISRESET**, and then press Enter.
-
-10. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Retail shared parameters** page in Dynamics 365 for Operations.
-    1.  In Dynamics 365 for Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
-    2.  Select **Identity providers**.
-    3.  On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
-    4.  On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
-    5.  Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
-    6.  On the Action Pane, select **Save**.
-
-11. In Dynamics 365 for Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**, and follow these steps:
-    1.  Select the channel database that you created at the beginning of this topic.
-    2.  On the Action Pane, select **Full Sync** &gt; **Job 9999**. Full synchronization might require several minutes.
-    3.  In the Retail Store Scale Unit installer, retest to verify that all functionality is working correctly.
-
-12. Start Retail Cloud POS from the computer that you're using for point of sale (POS) operations. (This computer is a third computer that is separate from the Retail Store Scale Unit systems.)
-13. Activate the Retail Cloud POS device that you're using for this computer.
-14. Do a simple sale to verify full end-to-end functionality.
-
-### Help secure Retail Store Scale Unit
-
-According to current security standards, the following options should be set in a production environment:
+According to current security standards (PCI), the following options should be set in a production environment:
 
 -   You should completely disable SSL (v2 and v3) on the computer.
--   You should enable and use only TLS version 1.2 (or the current highest version). **Note:** By default, SSL and all version of TLS except TLS 1.2 are disabled. To edit or enable these settings, follow these steps:
+-   You should enable and use only TLS version 1.2 (or the current highest version). **Note:** By default, these settings are not changed by the installers (This is different from other Self-service installers). To edit or enable these settings, follow these steps:
     1.  Press the Windows logo key+R to open a **Run** window.
     2.  In the **Open** field, enter **Regedit**, and then select **OK**.
     3.  In the **User Account Control** window, select **Yes** (if this step is required), and then, in the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
@@ -197,16 +136,16 @@ According to current security standards, the following options should be set in 
         -   SSL 3.0\\Client:Enabled=0
         -   SSL 2.0\\Server:Enabled=0
         -   SSL 2.0\\Client:Enabled=0
-
+**Note:** This will have major impact upon communication between Dynamics AX 2012 R3 stores (Enterprise POS and Modern POS) and the headquarters components that are installed as part of this article.  Take great care to review how communication functions currently.
 <!-- -->
 
 -   No additional network ports should be open, unless they are required for known, specified reasons.
 -   You must disable cross-origin resource sharing, and you must specify the allowed origins that are accepted.
--   You should use only trusted certificate authorities to obtain certificates that will be used on Store system computers.
+-   You should use only trusted certificate authorities to obtain certificates that will be used on computers where the applications are installed.
 
 **Important:** It's critical that you review security guidelines for Internet Information Services (IIS) and Payment Card Industry (PCI) requirements.
 
-### Troubleshoot Retail Store Scale Unit
+### Troubleshoot the Microsoft Connector for Dynamics AX applications
 
 This section will be more thorough in the future. For now, here is a checklist of things to verify:
 
@@ -216,7 +155,7 @@ This section will be more thorough in the future. For now, here is a checklist o
 4.  In Dynamics 365 for Operations, on the **Channel database** page, verify that the full synchronization has occurred properly for the new channel database.
 5.  Verify that the retail store is correctly configured to use the new channel database.
 
-### Uninstall Retail Store system
+### Uninstall the Microsoft Connector for Dynamics AX applications
 
 Use Control Panel in Microsoft Windows to uninstall Retail Store system.
 
@@ -224,243 +163,3 @@ Use Control Panel in Microsoft Windows to uninstall Retail Store system.
 2.  In Control Panel, select **Programs** &gt; **Uninstall a program**.
 3.  In the **Programs and Features** window, select **Microsoft Dynamics 365 for Operations for Retail Store system**, and then, above the list of programs, select **Uninstall**.
 4.  Wait for the uninstaller to finish removing the program.
-
-
-
-
-
-
-
-
-This Dynamics 365 for Operations template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D) and the [rendered view](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/master/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
-
-When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
-
-
-## Metadata 
-
-The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D)), divided into required fields and optional fields. **DO NOT** use a colon (:) in any of the metadata elements. 
-
-Here are some key things to note about metadata.
-
-- **Required metadata**
-    - **title** - The title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Action search | Microsoft Docs`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
-    - **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
-    - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
-    - **manager** - Use "annbe" in this field.
-    - **ms.date** - This should be the first proposed publication date.
-    - **ms.topic** - Enter "article" here.
-    - **ms.prod** 
-    - **ms.service** - Always use "Dynamics365Operations".
-    - **ms.technology** 
-
-- **Optional metadata**
-    - **audience** - Use of these values: Application User, Developer, or IT Pro.
-    - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
-    - **ms.custom** 
-    - **ms.assetid** - This is the GUID of the article that is used for internal tracking purposes. When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com).
-    - **ms.search.region** - Use "global" or enter a country-region value.
-    - **ms.author** - Use your Microsoft alias.  
-
-## Basic Markdown, GFM, and special characters
-
-All basic and GitHub Flavored Markdown (GFM) is supported. For more information, see:
-
-- [Baseline Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
-- [GFM documentation](https://guides.github.com/features/mastering-markdown)
-
-Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
-
-- Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
-- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
-
-## File name
-
-File names use the following rules:
-
-* Contain only lowercase letters, numbers, and hyphens.
-* No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
-* Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
-* No small words - don't include a, and, the, in, or, etc.
-* Must be in Markdown and use the .md file extension.
-* Keep file names short. They are part of the URL for your articles.  
-
-## Headings
-
-Use sentence-style capitalization. Do not overcapitalize. 
-
-Headings should use atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above. 
-
-There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
-
-If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Define a data method in C# #`.     
-
-Second-level headings will generate the on-page TOC that appears in the "In this article" section under the on-page title.
-
-### Third-level heading
-#### Fourth-level heading
-##### Fifth level heading
-###### Sixth-level heading
- 
-## Text styling
-
-*Italics*
- Use for files, folders, paths (for long items, split onto their own line) - new terms - URLs (unless rendered as links, which is the default).
-
-**Bold**
-Use for UI elements.
-
-## Links
-
-### Internal links
-
-To link to a header in the same Markdown file (also known as anchor links), you'll need to find the ID of the header that you're trying to link to. To confirm the ID, view the source of the rendered article, find the ID of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
-
-**Note:** You need to follow the casing of the header ID. In the following examples, the README.md file is all caps, so that's how this needs to be written in Markdown. Most IDs are lowercase. 
-
-The ID is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the ID would look like this `id="step-2"`.
-
-- Example: [Chapter 1](#chapter-1)
-
-To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
-
-- Example: [Readme](README.md)
-
-To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
-
-- Example: [Links](#links)
-
-### External links
-
-To link to an external file, use the full URL as the link.
-
-- Example: [GitHub](http://www.github.com)
-
-If a URL appears in a Markdown file, it will be transformed into a clickable link.
-
-- Example: http://www.github.com
-
-## Lists
-
-### Ordered lists
-
-1. This 
-1. Is
-1. An
-1. Ordered
-1. List  
-
-
-#### Ordered list with an embedded list
-
-1. Here
-1. comes
-1. an
-1. embedded
-    1. Miss Scarlett
-    1. Professor Plum
-1. ordered
-1. list
-
-
-### Unordered Lists
-
-- This
-- is
-- a
-- bulleted
-- list
-
-
-##### Unordered list with an embedded list
-
-- This 
-- bulleted 
-- list
-    - Mrs. Peacock
-    - Mr. Green
-- contains  
-- other
-    1. Colonel Mustard
-    1. Mrs. White
-- lists
-
-
-## Horizontal rule
-
----
-
-## Tables
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| col 1 is default | left-aligned     |    $1 |
-
-You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily. 
-
-## Code
-
-Use three backticks (&#96;&#96;&#96;) to begin and end a code example block . You an also indent a line to have it rendered as a code example.
-
-```
-function fancyAlert(arg) {
-    if(arg) {
-        $.docs({div:'#foo'})
-    }
-}
-```
-
-Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
-
-## Blockquotes
-
-> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
-
-## Images
-
-### Static image or animated gif
-
-![this is the alt text](../images/Logo_DotNet.png)
-
-### Linked image
-
-[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
-
-## Videos
-
-### YouTube
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
-
-## docs.microsoft extensions
-
-docs.microsoft provides a few additional extensions to GitHub Flavored Markdown. 
-
-### Alerts
-
-It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.     
-
-#### Note
-
-> [!NOTE]
-> This is a NOTE
-
-#### Warning
-
-> [!WARNING]
-> This is a WARNING
-
-#### Tip
-
-> [!TIP]
-> This is a TIP
-
-#### Important
-
-> [!IMPORTANT]
-> This is IMPORTANT
-
-And they'll render like this:
-![Alert styles](../images/alerts.png)
