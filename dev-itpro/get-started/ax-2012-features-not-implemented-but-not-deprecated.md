@@ -71,7 +71,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Employee self-service (ESS)</td>
-<td>ESS lets you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also lets you configure security and punch-out to external catalogs. In the current version of Dynamics 365 for Operations, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered on a requisition for an organization. Additionally, the functionality for confirming receipts that are associated with requisitions that lead to purchases isn't currently available.</td>
+<td>ESS lets you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also lets you configure security and punch-out to external catalogs. In the current version of Dynamics 365 for Operations, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered on a requisition for an organization. Additionally, the functionality for confirming receipts that are associated with requisitions that lead to purchases and the ability to approve a vendor invoice isn't currently available.</td>
 </tr>
 <tr class="odd">
 <td>Customer self-service (CSS)</td>
