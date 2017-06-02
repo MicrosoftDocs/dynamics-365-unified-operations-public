@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure an online store
-description: This article provides links to topics that will help you centrally configure and manage and online store from Microsoft Dynamics 365 for Operations.
+description: This article provides links to topics that will help you centrally configure and manage an online store.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -34,10 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+This article provides links to topics that will help you centrally configure and manage an online store.
 
-This article provides links to topics that will help you centrally configure and manage and online store from Microsoft Dynamics 365 for Operations.
-
-The topics listed in the following table help you configure Dynamics 365 for Operations - Retail components and the Retail online store in the Dynamics 365 for Operations client.
+The topics listed in the following table help you configure Retail components and the Retail online store in the client.
 
 ## Configure an online store
 | Task                                                | Details                                                                                                                                                                                                                                                                                                                                                   | Topics                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -58,7 +57,7 @@ The topics listed in the following table help you configure Dynamics 365 for Ope
 | Manage shipping charges.             | Set up and manage the shipping charges that are specific to the online store.                                                                     | [Set up shipping charges for online stores](https://technet.microsoft.com/en-us/library/jj728714.aspx) (TechNet content for Microsoft Dynamics AX 2012)                                                                                                                           |
 | Manage modes of delivery.            | Manage the modes of delivery that the online store offers.                                                                                        | [Set up modes of delivery](https://technet.microsoft.com/en-us/library/jj728719.aspx) (TechNet content for Microsoft Dynamics AX 2012)                                                                                                                                            |
 
-## Set up data exchange between Dynamics 365 for Operations and the online store
+## Set up data exchange between Microsoft Dynamics 365 for Finance and Operations, Enterprise edition and the online store
 | Task                                 | Details                                                                                                                               | Topics                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Set up channel integration profiles. | Profiles enable the components of Retail to communicate with each other. Set up profiles before you configure data exchange settings. | [Set up a Real-time Service profile](https://technet.microsoft.com/en-us/library/hh580631.aspx) (TechNet content for Microsoft Dynamics AX 2012) [Set up a channel profile](https://technet.microsoft.com/en-us/library/jj677402.aspx) (TechNet content for Microsoft Dynamics AX 2012) |

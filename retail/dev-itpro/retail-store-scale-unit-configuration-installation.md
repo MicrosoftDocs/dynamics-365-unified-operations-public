@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail Store Scale Unit configuration and installation
-description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Operations headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Dynamics 365 for Operations environment already provides these components, but you can now configure them to work locally in a store, in either a single-computer setup (the default option) or a multi-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
+description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. An environment already provides these components, but you can now configure them to work locally in a store, in either a single-computer setup (the default option) or a multi-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Operations headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Dynamics 365 for Operations environment already provides these components, but you can now configure them to work locally in a store, in either a single-computer setup (the default option) or a multi-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
+This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. An environment already provides these components, but you can now configure them to work locally in a store, in either a single-computer setup (the default option) or a multi-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
 
 Before you begin
 ----------------
@@ -43,12 +43,12 @@ Before you begin
 **Important:** To help maintain a high level of security across the company, we strongly recommend that you create a new client ID and secret for each retail store that is created. This step requires a new Web App.
 
 1.  Generate a Microsoft Azure Web App to create a client ID and secret. For instructions, see the "Basics of Registering an Application in Azure AD" section in [Authentication Scenarios for Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/).
-2.  After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Microsoft Dynamics 365 for Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+2.  After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure a new Retail Store Scale Unit
 To create a functioning Retail Store Scale Unit, complete the procedures in all sections of this topic through the "Running the Retail Store Scale Unit installer" section.
 
-1.  Use Azure Active Directory (Azure AD) credentials to sign in to the Microsoft Dynamics 365 for Operations headquarters or Dynamics 365 for Operations trial.
+1.  Use Azure Active Directory (Azure AD) credentials to sign in to the Finance and Operations headquarters or Finance and Operations trial.
 2.  On the **Welcome** page, use the menu in the upper left to go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
 3.  On the **Channel database** page, on the Action Pane, select **New**.
 4.  In the **Channel database ID** field, enter a unique value.
@@ -80,7 +80,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 
 ### Download the Retail Store Scale Unit installer
 
-1.  Use Azure AD credentials to sign in to the Microsoft Dynamics Commerce or Dynamics 365 for Operations trial.
+1.  Use Azure AD credentials to sign in to the Microsoft Dynamics Commerce or Finance and Operations trial.
 2.  On the **Welcome** page, use the menu in the upper left to go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**.
 3.  In the list of channel databases on the left, select the channel database that you created earlier.
 4.  On the Action Pane, select **Download**.
@@ -111,16 +111,16 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 
     **Note:** By default, the installer installs all components on one computer. To install the components across multiple computers, you must complete additional manual steps. For more information, see the "Multi-box installation" section. After you've selected all the components to install, select **Next** to continue.
 2.  The installer validates that all prerequisites are met. If a valid version of Microsoft SQL Server isn’t found, the installer downloads and installs Microsoft SQL Server 2014 Express with Service Pack 2. **Note:** To meet prerequisites, SQL Server must have Full-text search and, at a minimum, support for Transport Layer Security (TLS) 1.2. For Microsoft SQL Server 2012, Service Pack 3 must be installed, at a minimum. For Microsoft SQL Server 2014, Service Pack 2 must be installed. **Note:** If a system restart is required, the installer shows this requirement. Although the restart is recommended, the installer can continue without it.
-3.  Verify the Application Object Server (AOS) URL (the URL that is used to access Dynamics 365 for Operations headquarters), and then select **Next**. **Note:** The Retail Server URL is automatically entered from the configuration file.
+3.  Verify the Application Object Server (AOS) URL (the URL that is used to access Finance and Operations headquarters), and then select **Next**. **Note:** The Retail Server URL is automatically entered from the configuration file.
 4.  Select a valid Secure Sockets Layer (SSL) certificate to use for HTTPS communication. **Note:** The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can’t be expired. It must be stored in the personal certificate store location on the local computer.
 5.  If a specific user is required, enter the user name and password that the application pool will run under. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended.
 6.  On the next page, you enter the user account and password for the Retail Server application pool and the Async Client. By default, this account is automatically generated. However, you can enter the user account and password manually.
 7.  Enter the HTTPS port to use, and verify that the host name of the computer is correct. Select **Next** to continue. **Note:** The HTTPS port is listed in the Store system profile. To access the Store system profile, on the **Retail store details** page, on the **Store systems** FastTab, select the profile ID of the selected Store system. **Note:** The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the FQDN of the system, and it must be entered in the **Host name** field for the selected Store system entry.
 8.  Enter the client ID and secret that are associated with this Retail Store Scale Unit installation. Additionally, verify the channel database ID, which is automatically entered from the configuration file. Then select **Install**. If you will use Retail Cloud POS, make sure that the **Configure Retail Cloud POS** check box at the bottom of this page is selected. This configuration requests Azure AD sign-in and automatically generates all required information in Azure so that Retail Cloud POS can be used on-premises. **Note:** For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Authentication Scenarios for Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/). **Note:** When you create the Web App, the initial URI and URL don't have to be any specific value. Only the client ID and secret that are created are important.
-9.  After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Dynamics 365 for Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+9.  After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Finance and Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 10. After the installation is completed, the final health page appears. This page shows whether the installation was successful. It also shows the health of each component, based on basic connection tests, and the location of this topic. If the installation wasn't successful, the page shows the location of the log files.
-11. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Retail shared parameters** page in Dynamics 365 for Operations.
-    1.  In Dynamics 365 for Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+11. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Retail shared parameters** page in Finance and Operations.
+    1.  In Finance and Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2.  Select **Identity providers**.
     3.  On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4.  On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
@@ -131,7 +131,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 
 ### Multi-box installation
 
-**Note:** Only advanced users should install Retail Store Scale Unit across multiple computers. The following procedures show how to install the Retail channel database and Async Client on one computer, and the Retail Server and Retail Cloud POS on a second computer. The instructions assume that both systems are on a domain together, and that users have already been created on both systems for the services that will be installed. It's important that you perform all configuration in Dynamics 365 for Operations headquarters.
+**Note:** Only advanced users should install Retail Store Scale Unit across multiple computers. The following procedures show how to install the Retail channel database and Async Client on one computer, and the Retail Server and Retail Cloud POS on a second computer. The instructions assume that both systems are on a domain together, and that users have already been created on both systems for the services that will be installed. It's important that you perform all configuration in Finance and Operations headquarters.
 
 #### Installation on the first computer
 
@@ -139,7 +139,7 @@ On the first computer, run the Retail Store Scale Unit self-service installer as
 
 1.  Select only Retail Channel Database and Async Client as the components to install. Select **Next** to continue with the installation. **Note:** You can use a generated service account for the Async Client, because the Async Client won't be accessed outside the computer that it's installed on.
 2.  Enter the client ID and secret. Keep these details available, so that you can use them again on the second computer.
-3.  After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Dynamics 365 for Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+3.  After a client ID and secret are created for Retail Store Scale Unit, the client ID must be accepted in Finance and Operations. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the client ID in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 4.  When setup is successful, start SQL Server Configuration Manager.
 5.  Go to **SQL Server Network Configuration** &gt; **Protocols** for the SQL Server instance.
 6.  Right-click, and then select **Properties**.
@@ -163,7 +163,7 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
 
 1.  Select only Retail Server and Retail Cloud POS as the components to install. If only Retail Server must to be installed, don't select Retail Cloud POS. Select **Next** to continue with the installation.
 2.  Enter the domain user credentials (user name and password) that have permission to access SQL Server on the first computer. Then select **Next**. **Note:** A generated service account can't be used, because Retail Server requires access to the SQL database on the first computer. You must use a domain account.
-3.  Enter the same client ID and secret that are used on the first computer. **Important:** It's critical that you add this client ID to Dynamics 365 for Operations as described above.
+3.  Enter the same client ID and secret that are used on the first computer. **Important:** It's critical that you add this client ID to Finance and Operations as described above.
 4.  Select **Configure Cloud POS**, and then enter Azure AD credentials that have the correct permissions to create Azure Web Apps. **Note:** For more information about Azure Web Apps, how to create them, and how to generate new secrets, see [Use portal to create Active Directory application and service principal that can access resources](https://azure.microsoft.com/en-us/documentation/articles/resource-group-create-service-principal-portal/). Note that the sign-in URL and the App ID URI aren't important.
 5.  When setup is successful, don't exit the installer. **Note:** At first, the healthcheck ping won't be successful, because the database isn't yet set up correctly. After you've completed the remaining steps of this procedure, you can test the healthcheck again.
 6.  Go to **IIS**, select the **Retail Store Scale Unit** website, and select the **Retail Server** web application.
@@ -173,15 +173,15 @@ On the second computer, run the Retail Store Scale Unit Self-service installer a
     1.  Import the SQL Server SSL certificate that you created earlier, and add it to Trusted Root.
     2.  Open a **Command Prompt** window as an administrator, type **IISRESET**, and then press Enter.
 
-10. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Retail shared parameters** page in Dynamics 365 for Operations.
-    1.  In Dynamics 365 for Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
+10. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Retail shared parameters** page in Finance and Operations.
+    1.  In Finance and Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail shared parameters**.
     2.  Select **Identity providers**.
     3.  On the **Identity providers** FastTab, select the provider that begins with **HTTPS://sts.windows.net/**. The values on the **Relying parties** FastTab are set, based on your selection.
     4.  On the **Relying parties** FastTab, select **+Add**. Enter the client ID that is listed in the Retail Store Scale Unit installer. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
     5.  Select the new relying party, and then, on the **Server resource IDs** FastTab, select **+Add**. In the **Server Resource ID** column, enter **https://retailstorescaleunit.retailserver.com**.
     6.  On the Action Pane, select **Save**.
 
-11. In Dynamics 365 for Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**, and follow these steps:
+11. In Finance and Operations, go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Channel database**, and follow these steps:
     1.  Select the channel database that you created at the beginning of this topic.
     2.  On the Action Pane, select **Full Sync** &gt; **Job 9999**. Full synchronization might require several minutes.
     3.  In the Retail Store Scale Unit installer, retest to verify that all functionality is working correctly.
@@ -225,10 +225,10 @@ According to current security standards, the following options should be set in 
 
 This section will be more thorough in the future. For now, here is a checklist of things to verify:
 
-1.  In Dynamics 365 for Operations, on the **Retail shared parameters** page, verify that the correct client ID has been added to the **Relying Parties** FastTab. Additionally, verify that the correct **https://retailstorescaleunit.retailserver.com** entry has been added to the **Server Resource IDs** FastTab.
-2.  In Dynamics 365 for Operations, verify that every client ID that was generated for each retail store exists on the **Azure Active Directory applications** page.
-3.  In Dynamics 365 for Operations, on the **Channel profile** page, verify that the URLs are correct. (That is, verify that the machine name in each URL is correct, the URL is correctly formatted, and so on.)
-4.  In Dynamics 365 for Operations, on the **Channel database** page, verify that the full synchronization has occurred properly for the new channel database.
+1.  In Finance and Operations, on the **Retail shared parameters** page, verify that the correct client ID has been added to the **Relying Parties** FastTab. Additionally, verify that the correct **https://retailstorescaleunit.retailserver.com** entry has been added to the **Server Resource IDs** FastTab.
+2.  In Finance and Operations, verify that every client ID that was generated for each retail store exists on the **Azure Active Directory applications** page.
+3.  In Finance and Operations, on the **Channel profile** page, verify that the URLs are correct. (That is, verify that the machine name in each URL is correct, the URL is correctly formatted, and so on.)
+4.  In Finance and Operations, on the **Channel database** page, verify that the full synchronization has occurred properly for the new channel database.
 5.  Verify that the retail store is correctly configured to use the new channel database.
 
 ### Uninstall Retail Store system

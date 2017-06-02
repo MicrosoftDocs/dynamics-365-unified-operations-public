@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail SDK packaging
-description: This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail.
+description: This topic explains how to create a deployable package for each of components.
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,11 +35,11 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../../includes/banner.md)]
 
 
-This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail.
+This topic explains how to create a deployable package for each of components.
 
 # Prerequisites
 
-For detailed information about how the Retail software development kit (SDK) is designed for customization and to generate customized deployable packages, see [Retail SDK overview](retail-sdk-overview.md). This topic explains how to create a deployable package for each of the following components of Microsoft Dynamics 365 for Operations - Retail:
+For detailed information about how the Retail software development kit (SDK) is designed for customization and to generate customized deployable packages, see [Retail SDK overview](retail-sdk-overview.md). This topic explains how to create a deployable package for each of the following components:
 
 -   Commerce runtime (CRT)
 -   Retail Server
@@ -95,7 +95,7 @@ After the build is completed, all deployable packages are generated in the Reta
 
 #### CRT package
 
-By default, there is no separate package for CRT, because CRT isn't deployed individually. Instead, CRT assets are packaged together with other application components, such as Modern POS, Retail Server, and Microsoft Dynamics 365 for Operations HQ. In order for the Retail SDK build tools to package CRT in all the components where it's used, you must make the following configuration entries:
+By default, there is no separate package for CRT, because CRT isn't deployed individually. Instead, CRT assets are packaged together with other application components, such as Modern POS, Retail Server, and HQ. In order for the build tools to package CRT in all the components where it's used, you must make the following configuration entries:
 
 1.  **CRT extension assemblies** – These will be the new assemblies where you've written CRT extensions. Specify an entry for CRT extension assemblies in Retail SDK\\BuildTools\\Customization.settings. 
 
@@ -143,11 +143,11 @@ When you run MSBuild on the root SDK folder, a CloudPOS package is created toget
 
 #### Retail self-service packages
 
-Both Modern POS and Hardware station are self-service components. To deploy self-service components, you upload them to the tenant-specific storage, so that they can appear for self-service in Dynamics 365 for Operations. When you run MSBuild on the root SDK folder, a RetailSelfService package is created together with the other Retail components. The RetailSelfService deployable package is generated at RetailSDK\\Packages\\RetailSelfService\\content.zip. This zip file contains everything that is required in order to deploy Retail self-service. You can upload this zip file to LCS and then use it to deploy a new environment. For an existing environment, you currently have to manually copy the zip file, extract it, and then run **content.zip\\RetailSelfService\\Scripts\\Upgrade\\UpdateRetailSelfService.ps1** in admin mode in Windows PowerShell. 
+Both Modern POS and Hardware station are self-service components. To deploy self-service components, you upload them to the tenant-specific storage, so that they can appear for self-service. When you run MSBuild on the root SDK folder, a RetailSelfService package is created together with the other Retail components. The RetailSelfService deployable package is generated at RetailSDK\\Packages\\RetailSelfService\\content.zip. This zip file contains everything that is required in order to deploy Retail self-service. You can upload this zip file to LCS and then use it to deploy a new environment. For an existing environment, you currently have to manually copy the zip file, extract it, and then run **content.zip\\RetailSelfService\\Scripts\\Upgrade\\UpdateRetailSelfService.ps1** in admin mode in Windows PowerShell. 
 
 [![UpdateRetailSelfService](./media/updateretailselfservice.png)](./media/updateretailselfservice.png) 
 
-After Retail self-service is updated, you can go to Dynamics 365 for Operations to verify that the new customized self-service packages are available.
+After Retail self-service is updated, you can go to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to verify that the new customized self-service packages are available.
 
 ##### Modern POS
 
