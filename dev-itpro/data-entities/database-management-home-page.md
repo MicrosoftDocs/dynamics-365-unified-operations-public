@@ -2,7 +2,7 @@
 # required metadata
 
 title: Database management home page
-description: These topics describe how to manage the databases that support Microsoft Dynamics 365 for Operations. 
+description: These topics describe how to manage the databases that support Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 author: margoc
 manager: AnnBe
 ms.date: 04/10/2017
@@ -34,9 +34,15 @@ ms.search.validFrom: 2016-02-28
 "[!include[banner](../includes/banner.md)]"
 
 
-These topics describe how to manage the databases that support Microsoft Dynamics 365 for Operations. 
+These topics describe how to manage the databases that support Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
-[Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](http://ax.help.dynamics.com/en/wiki/copy-an-ax-database-from-azure-sql-database-to-sql-server/) [Copy a Microsoft Dynamics 365 for Operations database from SQL Server to an Azure SQL Database environment](http://ax.help.dynamics.com/en/wiki/copy-a-database-from-sql-server-to-azure-sql/) [Request a point-in-time restore on a non-production environment](http://ax.help.dynamics.com/en/wiki/request-a-point-in-time-restore-on-a-non-production-environment/) [Retain a copy of a Microsoft Dynamics 365 for Operations database to restore later](http://ax.help.dynamics.com/en/wiki/retain-copy-dynamics-365-operations-database/) 
+[Copy a database from Azure SQL Database to a SQL Server environment](https://docs.microsoft.com/dynamics365/operations/dev-itpro/index) 
+
+[Copy a database from SQL Server to an Azure SQL Database environment](https://docs.microsoft.com/dynamics365/operations/dev-itpro/database/copy-database-from-sql-server-to-azure-sql) 
+
+[Restore a database on a non-production environment](https://docs.microsoft.com/dynamics365/operations/dev-itpro/database/request-point-in-time-restore) 
+
+[Create a copy of a database to restore later](https://docs.microsoft.com/dynamics365/operations/dev-itpro/database/copy-operations-database) 
 
 
 

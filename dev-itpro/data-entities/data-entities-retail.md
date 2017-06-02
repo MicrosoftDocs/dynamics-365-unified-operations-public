@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data entities - Retail
-description: This article provides a list of the data entities that are available for the Retail functionality in Microsoft Dynamics 365 for Operations.
+description: This article provides a list of the data entities that are available for Retail.
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides a list of the data entities that are available for the Retail functionality in Microsoft Dynamics 365 for Operations.
+This article provides a list of the data entities that are available for Retail.
 
 Available data entities
 -----------------------
