@@ -81,18 +81,6 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <td>Cost accounting</td>
 <td>The Cost accounting module is designed to meet the requirements of internal costs and profitable reports at multiple organizational levels. To define the cost object level, the module depends on a correct mapping of financial dimensions. The module lets you perform advanced allocations of cost origin from expenditures that are registered in the general ledger or budget, and also lets you compare realized costs and budgeted costs.</td>
 </tr>
-<tr class="odd">
-<td>Production online analytical processing (OLAP) cube</td>
-<td>This update of Dynamics 365 for Operations doesn't support the measures and indicators that were previously available in the production OLAP cube. Information about the value of work in progress (WIP) is available in the <strong>Cost administration</strong> workspace.</td>
-</tr>
-<tr class="even">
-<td>Visual scheduling board for lean manufacturing</td>
-<td>This update of Dynamics 365 for Operations doesn't support the visual scheduling board for lean work cells. Kanban jobs are now scheduled through a list page.</td>
-</tr>
-<tr class="odd">
-<td>Interactive scheduling in the Gantt chart</td>
-<td>In this update of Dynamics 365 for Operations, you can't use the Gantt chart for interactive scheduling. This functionality will be added in a future update.</td>
-</tr>
 <tr class="even">
 <td>Absence management in Human Resources</td>
 <td>This update of Dynamics 365 for Operations doesn't include functionality for entering absence transactions through both ESS and the client. It also doesn't include functionality for approving those transactions as a manager. In a future update of Dynamics 365 for Operations, the current functionality will be enhanced to support a wider range of scenarios. Setup capabilities that are required for integration with other Dynamics 365 for Operations modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
