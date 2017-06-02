@@ -233,3 +233,9 @@ We have added the class to several self-referencing entities, and we will add it
 - Warehouses
 - Budget plan workflow stage
 - Sales units
+
+### Adding entities in the appropriate country context
+
+When you add entities, the mappings are created in the context of the country of the company that is currently active. If there are any issues with the mappings, you will see a red X in the View map column. Click on the red X and repair the mappings as needed. 
+
+Note that the DAT company does not have a country context by default. Some entities, such as those used for transaction codes, interest codes, and 1099 fields will not map correctly if they are added to a data project for the DAT company because they are expecting a country context.  
