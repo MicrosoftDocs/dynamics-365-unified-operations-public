@@ -57,7 +57,11 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</strong> or <strong>Dynamics 365 for Talent</strong> must be deployed in your organization.</td>
+<td>One of the following must be deployed in your organization:
+<ul><li>Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</li>
+<li>Dynamics 365 for Talent</li>
+</ul>
+</td>
 <td>System administrator</td>
 <td>If you don't already have Dynamics 365 for Finance and Operations, Enterprise editition July 2017 update deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don't already have Dynamics 365 for Talent deployed in your organization, the system administrator can access a trial version <a href="https://www.microsoft.com/en-us/dynamics365/talent">here</a>.
 </td>
