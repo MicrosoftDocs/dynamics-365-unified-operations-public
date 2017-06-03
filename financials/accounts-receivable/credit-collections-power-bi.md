@@ -43,13 +43,13 @@ All the amounts are shown in the system currency. You can set the system currenc
 
 By default the credit and collections data for the current company is shown. If you want a role to see the data across all companies, assign duty **CustCollectionsBICrossCompany** to the role.
 
-## Accessing the content pack
+## Accessing the Power BI content
 
 You can find the Credit and collections content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content from Microsoft and your partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
-## Reports included in the content pack
+## Reports that are included in the Power BI content
 
-The content pack includes a report that consists of a set of metrics visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the content pack.
+The **CustCollectionsBICrossCompany** Power BI content includes a report that consists of a set of metrics visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **CustCollectionsBICrossCompany** Power BI content.
 
 | **Report page**             | **Visualization**                                                                                                                                                                                                                                                                                                                                     |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,7 +68,7 @@ The charts and tiles on all these reports can be filtered and pinned to the dash
 
 ## Understanding the data model and entities
 
-Dynamics 365 for Operations data is used to populate the report in the Credit and collections management content pack. This is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database optimized for analytics. Read more about it in the blog [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may update/).
+The following data is used to populate the report in the **Credit and collections management** content. This is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL Server database optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 
 
 | Entity                                      | Key aggregate measurements           | Data source  | Field                                                      | Description                                                  |
 |---------------------------------------------|--------------------------------------|---------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------|
