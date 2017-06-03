@@ -3,9 +3,9 @@
 
 title: Purchase spend analysis Power BI content
 description: This topic describes what is included in the Purchase spend analysis content pack for Microsoft Power BI. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that are used to build the content pack.
-author: YuyuScheller
+author: FrankDahl
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User
+audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 121
 ms.search.scope: Operations, Core
@@ -46,20 +46,7 @@ The **Purchase spend analysis** Power BI was created for purchasing managers and
 -   Year-over-year purchase change (by vendor group and procurement category)
 
 ## Accessing the Power BI content
-
-Embedded Power BI allows individuals in your organization to take advantage of analytics out of the box. They can quickly analyze your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis.
-
-This content pack is also available from within a form in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update or later. The form is called **Purchase and spend analysis** and found under **Procurement and Sourcing > Inqueries and Reports > Purchase performance analysis**. 
-
-### Embedded content
-If you're using Dynamics 365 for Finance and Operations, Enterprise edition, the **Purchase spend analysis** Power BI content is displayed in the **NAME** workspace.
-
-### Content accessible from Lifecycle Services
-If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Purchase spend analysis** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-Be sure to download the **Purchase spend analysis** content that applies to the version of Dynamics 365 that you're using.
-
-**Note:** If you are using Dynamics 365 for Operations version 1611, KB 4011327 is a prerequisites for using this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+If you are using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Purchase spend analysis** Power BI content is displayed on the **Purchase and spend analysis** page (**Procurement and sourcing** > **Inquiries and reports** > **Purchase performance analysis** > **Purchase and spend analysis**). 
 
 ## Metrics that are included in the Power BI content
 The **Purchase spend analysis** content includes a report that consists of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations.
@@ -150,6 +137,16 @@ The **Purchase spend analysis** content includes a report that consists of a set
 
 \* Purchase this year and last year, and growth by procurement category
 
+## Extending the Power BI content
+You can provide great analytics to those who do not log into Dynamics 365 by using the content packs available in Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
+
+You can find the **Purchase spend analysis** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+
+Be sure to download the **Purchase spend analysis** content that applies to the version of Dynamics 365 that you're using.
+
+> [!NOTE]
+> If you're using Dynamics 365 for Operations verion 1611, KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB at https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+
 ## Data model and entities
 The folloiwng data is used to populate the report pages in the **Purchase spend analysis** content pack. This data is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
@@ -179,13 +176,7 @@ The following key dimensions in the content pack are used as filters to slice th
 
 By default, the content pack shows data for the current calendar year. However, you can change the date filter in the report filters section. You can also change the company filter.
 
-## Additional resources
-Here are some helpful links that are related to entities and building Power BI content:
 
--   [Data entities](..\data-entities\data-entities.md)
--   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
 
 
 
