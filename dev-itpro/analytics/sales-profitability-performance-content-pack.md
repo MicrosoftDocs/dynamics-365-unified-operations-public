@@ -2,10 +2,10 @@
 # required metadata
 
 title: Sales and profitability performance Power BI content
-description: This topic describes what's included in the Dynamics 365 for Operations - Sales and profitability performance content pack for Microsoft Power BI. It explains how to access the reports included in the content pack and provides information about the data model and entities that are used to build the content pack.
+description: This topic describes what's included in the Sales and profitability performance content pack for Microsoft Power BI. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content pack.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Application User
+audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 121
 ms.search.scope: Operations, Core
@@ -35,12 +35,13 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes what's included in the Dynamics 365 for Operations - Sales and profitability performance content pack for Microsoft Power BI. It explains how to access the reports included in the content pack and provides information about the data model and entities that are used to build the content pack.
-
+This topic describes what's included in the **Sales and profitability performance** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 Overview
 --------
 
-This content pack was created for sales managers to monitor the key sales metrics of revenue, gross profit, and profit margins. It uses sales transactional data from Dynamics 365 for Operations, and provides both an aggregate view of the company-wide sales figures and a breakdown of sales performance for customers and products. By highlighting changes in the revenue and profit growth over time, reports can be used to alert managers about positive and negative trends for individual customers and products. Category and regional managers will find it useful to have charts that compare revenue and profitability of different product categories and customer groups to each other to single out laggards and leaders. A comprehensive report that plots individual customer’s revenue versus profit margin offers account managers a data-backed foundation to attune their sales and marketing efforts to each customer’s respective profile. The Sales and profitability performance content pack enables Sales managers to analyze sales performance by:
+This content pack was created for sales managers to monitor the key sales metrics of revenue, gross profit, and profit margins. It uses sales transactional data and provides both an aggregate view of the company-wide sales figures and a breakdown of sales performance for customers and products. By highlighting changes in the revenue and profit growth over time, reports can be used to alert managers about positive and negative trends for individual customers and products. Category and regional managers will find it useful to have charts that compare revenue and profitability of different product categories and customer groups to each other to single out laggards and leaders. A comprehensive report that plots individual customer’s revenue versus profit margin offers account managers a data-backed foundation to attune their sales and marketing efforts to each customer’s respective profile. 
+
+The Sales and profitability performance content pack enables sales managers to analyze sales performance by:
 
 -   Revenue, year-to-date (by customer group and individual customers, sales categories, and individual products and geographies)
 -   Revenue change, year-over-year (by customer regions and sales categories)
@@ -52,21 +53,8 @@ Profitability can be analyzed by:
 -   Customer profitability (by revenue versus gross margin)
 
 
-## Accessing the content pack
-
-You can access the content pack in two ways:
--	As an embedded report in your Dynamics 365 for Finance and Operations, Enterprise edition. Individuals in your organization can take advantage of analytics out of the box directly from the Dynamics 365 for Finance and Operations without having to model the data or create reports.
--	From Lifecycle Services. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services. These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis.
-
-### Embedded content
-
-If you are using Dynamics 365 for Finance and Operations, Enterprise edition: The Sales and profitability performance Power BI content is displayed as a report in the **Sales and marketing** module, under **Inquiries and reports** > **Sales performance analysis**. 
-
-### Content accessible from Lifecycle Services
-
-The Sales and profitability performance Power BI content pack is published as an implementation asset in Lifecycle Services (LCS) and can be accessed from Dynamics 365 for Operations. For more information about how to access and launch Power BI reports, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-**Note:** KB 4011327 is a prerequisites for his Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
+## Accessing the the Power BI content
+If you are using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Sales and profitability performance** Power BI content is displayed on the **Sales and profitability performance** page (**Sales and marketing** > **Inquiries and reports** > **Sales performance analysis** > **Sales and profitability performance**). 
 
 ## Metrics included in the content pack
 The content pack includes a report that consists of a set of metrics visualized as charts, tiles, and tables. The following table provides an overview of the visualisations in the content pack.
@@ -94,8 +82,22 @@ The content pack includes a report that consists of a set of metrics visualized 
 
 \* Revenue this and last year, and growth by sales category.
 
+## Extending the Power BI content
+You can provide great analytics to those who do not log into Dynamics 365 by using the content packs available in Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
+
+You can find the **Sales and profitability performance** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+
+Be sure to download the **Sales and profitability performance** content that applies to the version of Dynamics 365 that you're using.
+
+> [!NOTE]
+> If you're using Dynamics 365 for Operations verion 1611, KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB at https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+
 ## Understanding the data model and entities
-Dynamics 365 for Operations data is used to populate the report in the Sales and profitability performance content pack. This is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL database optimized for analytics. Read more about it in the blog [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). The aggregate measurements in this content pack are the subset of the aggregate measurements that were available in the Sales Cube in Dynamics AX 2012 and AX 2012 R3. To stage the cube's aggregate measurements in the Entity store you must make them deployable. For more information, see the procedure on how to stage aggregate measurements into the Entity store in the blog [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). The following key aggregate measurements of the Invoice lines entity are used as the basis of the content pack.
+The following data is used to populate the report in the **Sales and profitability performance** content pack. This is represented as aggregate measurements that are staged in the Entity store, which is a Microsoft SQL Server database optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 
+
+The aggregate measurements in this content pack are the subset of the aggregate measurements that were available in the Sales Cube in Dynamics AX 2012 and AX 2012 R3. To stage the cube's aggregate measurements in the Entity store you must make them deployable. For more information, see the procedure on how to stage aggregate measurements into the Entity store in the blog [Power BI integration with Entity Store in Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
+
+The following key aggregate measurements of the Invoice lines entity are used as the basis of the content pack.
 
 |               |                                              |                                                 |                                              |                                          |
 |---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
@@ -113,7 +115,7 @@ The following table shows the key aggregate measurements of the invoice lines en
 | Gross margin      | SUM(Gross profit / (Revenue - Sales tax (included in customer invoice line amount)))             |
 | Revenue last year | Revenue last year = CALCULATE(SUM('Invoice lines'\[Revenue\]), SAMEPERIODLASTYEAR(Dates\[Date\]) |
 
-The following key dimensions in the **Sales cube** are used as filters to slice the aggregate measurements to achieve greater granularity and deeper analytical insights.
+The following key dimensions in the Sales cube are used as filters to slice the aggregate measurements to achieve greater granularity and deeper analytical insights.
 
 |                  |                                                      |
 |------------------|------------------------------------------------------|
@@ -125,14 +127,6 @@ The following key dimensions in the **Sales cube** are used as filters to slice 
 | Dates            | Dates                                                |
 
 By default, the content pack displays data for the current calendar year, but you can open the report filters section and change the date filter. You can also change the company filter.
-
-## Additional resources
-Here are some helpful links that are related to entities and building Power BI content:
-
--   [Data entities](..\data-entities\data-entities.md)
--   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
 
 
 
