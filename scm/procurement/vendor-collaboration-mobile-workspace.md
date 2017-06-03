@@ -88,7 +88,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or 
 <td>KB 3216943 is a binary update that is required if you are using platform update 3. To implement this KB, the system administrator must:
 <ol>
 <li>Download KB 3216943 from Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Install the binary update, which is delivered as a deployable package. For instructions on how to apply a deployable package see <a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.</li>
+<li>Install the binary update, which is delivered as a deployable package. For instructions on how to apply a deployable package see <a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -103,18 +103,13 @@ If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or 
 </ol></td>
 </tr>
 <tr class="odd">
-<td>The <strong>Vendor collaboration</strong> mobile workspace must be published to the Dynamics 365 for Operations mobile app.</td>
+<td>The <strong>Vendor collaboration</strong> mobile workspace must be published.</td>
 <td>System administrator</td>
-<td><ol>
-<li>Start Dynamics 365 for Operations in your browser.</li>
-<li>On the <strong>System parameters</strong> page, select <strong>Manage mobile workspaces</strong>.</li>
-<li>Select the <strong>Vendor collaboration</strong> workspace.</li>
-<li>Click <strong>Publish mobile workspace</strong>.</li>
-</ol></td>
+<td>See <a href="/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
 <tr class="even">
 <td>The vendor user must have access to the vendor collaboration web interface in Dynamics 365 for Operations and set up a vendor collaboration user.</td>
-<td>System administrator</td>
+<td>Purchasing professionals and the system administrator</td>
 <td>Follow the steps described in the following topics to set up and work with the vendor collaboration web interface.
 <ul>
 <li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-external-vendors/">Use vendor collaboration to work with external vendors</a></li>
@@ -145,7 +140,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 ## Use the Vendor collaboration mobile workspace
 When you select the **Vendor collaboration** workspace, you’ll see the following options:
 
-    [![vendor-collaboration-mobile-app](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
+    ![Vendor collaboration mobile workspace](./media/vendor-collaboration-mobile-app.png)
 
 The **Vendor collaboration** workspace includes the following pages:
 
