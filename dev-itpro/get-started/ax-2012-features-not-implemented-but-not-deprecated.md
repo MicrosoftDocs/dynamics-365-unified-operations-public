@@ -305,10 +305,6 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </table></td>
 </tr>
 <tr class="even">
-<td>Credit transfer initiation that is based on Danish implementation guidelines for ISO20022</td>
-<td>The feature lets you initiate a credit transfer that is based on Danish implementation guidelines ISO20022 for Single Euro Payments Area (SEPA), domestic, and foreign payments. This feature will be available in a future update.</td>
-</tr>
-<tr class="even">
 <td>Fiscal printers for Poland</td>
 <td>Polish fiscal printers are integrated with Dynamics 365 for Operations. The following types of printers in the local Polish market are supported: Posnet Thermal and Elzab Omega. During invoice posting, the required information is sent to the fiscal printer in the correct format. This feature will be available in a future update.</td>
 </tr>
