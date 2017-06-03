@@ -3,9 +3,9 @@
 
 title: Cash overview Power BI content
 description: This topic describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
-author: [author's GitHub alias]
+author: saraschi2
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: sericks
-# ms.search.scope: Finance and Operations 
+# ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -37,15 +37,12 @@ This topic describes the **Cash overview** Microsoft Power BI content. It explai
 
 The **Cash overview** Power BI content was created for individuals who are responsible for cash in their organization. The **Cash overview** Power BI content provides visibility into your cash flow. It also provides forecasts that can help you make better decisions and therefore improve the health of your cash flow. You can analyze cash by legal entity, currency, and bank account to get a better understanding of surpluses and shortfalls.
 
-## Accessing the content pack
+## Accessing the Power BI content
 
-Reports from the **Cash overview** Power BI content are embedded in the **Cash overview** and **Bank management** workspaces.
+If you're using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, reports from the **Cash overview** Power BI content are displayed in the **Cash overview** and **Bank management** workspaces.
 
-You can also find the **Cash overview** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your data, see [Power BI content in LCS from Microsoft and your partners](/dynamics365/operations/dev-itpro/analytics/power-bi-content-microsoft-partners). You can also watch a demonstration of this process in [this Office Mix](https://mix.office.com/watch/9puyb1b2xs1w).
-
-## Metrics that are included in the content pack
-
-This Power BI content includes reports that consist of a set of metrics. These metrics are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cash overview** Power BI content.
+## Reports that are included in the Power BI content
+The following table provides details about the metrics that are found on each report page in the **Cash overview** Power BI content.
 
 | Report                                | Contents |
 |---------------------------------------|----------|
@@ -55,6 +52,11 @@ This Power BI content includes reports that consist of a set of metrics. These m
 | Cash flow forecast – currency company | <ul><li>Inflows and outflows in accounting currency</li><li>Daily forecast summary</li><li>Forecast details</li></ul> |
 | Currency forecast                     | <ul><li>Forecasted currency balances</li><li>Daily currency summary</li><li>Forecast details</li></ul> |
 | Bank balances                         | <ul><li>Total bank balance in system currency</li><li>Balance by legal entity</li><li>Today’s actual vs forecasted balance in bank account currency</li><li>Balance by bank account</li><li>Balance by currency</li></ul> |
+
+## Extending the Power BI content
+You can provide great analytics to those who do not log into Dynamics 365 by using the content packs available in Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
+
+You can find the **Cash overview** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 ## Understanding the data model and entities
 
