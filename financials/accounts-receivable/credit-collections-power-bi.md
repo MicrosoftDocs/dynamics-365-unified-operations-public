@@ -35,7 +35,7 @@ This topic describes what's included in the **Credit and collections management*
 
 This Power BI content  was crated for credit and collections managers and collections clerks to provide them with key credit and collections metrics such as days sales outstanding, balance overdue, credit exposure, and customers over credit limit. It uses transactional data and provides aggregate views of credit and collections across all companies, as well as the break down per company, per customer group, and per customer. 
 
-This Power BI content consists of ten report pages: 
+This Power BI content consists of 10 report pages: 
 - 2 overview pages (one page is for credit overview, and one page is for collections overview) 
 - 8 details pages providing details of credit and collections metrics sliced and diced across different dimensions
 
@@ -61,8 +61,8 @@ The content pack includes a report that consists of a set of metrics visualized 
 | Aged balances               | Aged balances<br>Aged balances details<br>Aged balances per company<br>Aged balances per customer group                                                                                                                                                                                                                                                        |
 | Expected payments           | Expected payments<br>Expected payments details<br>Expected payments per company<br>Expected payments per customer group<br>Expected payments by region                                                                                                                                                                                                            |
 | Write-offs                  | Write-offs by region<br>Write-offs details<br>Write-offs by main account<br>Write-offs per company<br>Write-offs per customer group<br>Write-offs by region                                                                                                                                                                                                          |
-| Collections status          | Disputed Promise to pay broken Promise to pay Collections status details Collections status amounts Open cases Open activities                                                                                                                                                                                                                        |
-| Collections letters         | Collection code amounts Collection code amount details Collection letter amount per company Collection letter amount per customer group Collection letter amount by region                                                                                                                                                                            |
+| Collections status          | Disputed<br>Promise to pay broken<br>Promise to pay<br>Collections status details<br>Collections status amounts<br>Open cases<br>Open activities                                                                                                                                                                                                                        |
+| Collections letters         | Collection code amounts<br>Collection code amount details<br>Collection letter amount per company<br>Collection letter amount per customer group<br>Collection letter amount by region                                                                                                                                                                            |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). You can also use the export underlying data functionality to export underlying data that is summarized on a visualization.
 
@@ -89,14 +89,4 @@ Dynamics 365 for Operations data is used to populate the report in the Credit an
 | CustCollectionsBISalesOnHold                | SalesId                              | SalesTable                                  | Count(SalesId)                                             | Total sales orders on hold                                   |
 | CustCollectionsBIWriteOff                   | WriteOffAmount                       | CustCollectionsBIWriteOffView               | Sum(SystemCurrencyAmount)                                  | Sum of written off transactions                              |
 
-## Additional resources
 
-Here are some helpful links that are related to entities and building Power BI content:
-
--   [Data entities](https://ax.help.dynamics.com/en/wiki/data-entities/)
-
--   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-
--   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-
--   [Adding Power BI tiles to workspaces](http://ax.help.dynamics.com/en/wiki/configuring-powerbi-integration/)
