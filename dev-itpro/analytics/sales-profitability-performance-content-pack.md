@@ -36,8 +36,8 @@ ms.dyn365.ops.version: Version 1611
 
 
 This topic describes what's included in the **Sales and profitability performance** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
-Overview
---------
+
+## Overview
 
 This content pack was created for sales managers to monitor the key sales metrics of revenue, gross profit, and profit margins. It uses sales transactional data and provides both an aggregate view of the company-wide sales figures and a breakdown of sales performance for customers and products. By highlighting changes in the revenue and profit growth over time, reports can be used to alert managers about positive and negative trends for individual customers and products. Category and regional managers will find it useful to have charts that compare revenue and profitability of different product categories and customer groups to each other to single out laggards and leaders. A comprehensive report that plots individual customer’s revenue versus profit margin offers account managers a data-backed foundation to attune their sales and marketing efforts to each customer’s respective profile. 
 
