@@ -5,7 +5,7 @@ title: Cost accounting analysis Power BI content
 description: This topic describes what is included in the Cost accounting analysis Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,13 +18,13 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: yuyus
+ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -51,9 +51,12 @@ To learn more about Cost accounting, see [Cost accounting home page](/dynamics36
 By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## Accessing the Power BI content
-You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). 
+You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
-> NOTE - **KB4011327** is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+Be sure to download the **Cost accounting analysis** content that applies to the version of Dynamics 365 that you're using.
+
+> [!NOTE]
+> KB 4011327 is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## Metrics that are included in the Power BI content
 The content includes a set of report pages. Each page consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Cost accounting analysis** Power BI content.
