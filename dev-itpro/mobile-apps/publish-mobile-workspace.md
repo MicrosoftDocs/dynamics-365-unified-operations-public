@@ -5,7 +5,7 @@ title: Publish a mobile workspace
 description: This topic describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the mobile app. 
 author: sericks007
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
-ms.search.scope: Operations, Platform
+ms.reviewer: sericks
+ms.search.scope: Operations Platform
 # ms.tgt_pltfrm: 
 ms.custom: 272873
 ms.assetid: e9a3028b-3559-4314-afcc-ea0319cdd154
