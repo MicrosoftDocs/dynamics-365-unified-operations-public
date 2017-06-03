@@ -92,11 +92,11 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## View the company directory using the mobile workspace
+## View the company directory by using the mobile workspace
 1.	In the mobile app, select the **Company directory** workspace. A list of employees will display.
 3.	Select an employee. This will open the **Employee profile** page. Information included on this page is first name, last name, title, and department.
 
-## Search the company directory
+## Search the company directory by using the mobile workspace
 1.	In the mobile app, select the **Company directory** workspace.
 2.	In the **Search** field, enter first name, last name, title, or department to initiate the search.
 3.	Select an employee. This will open the **Employee profile** page. Information included on this page is first name, last name, title, and department.
