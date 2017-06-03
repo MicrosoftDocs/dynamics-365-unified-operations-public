@@ -3,9 +3,9 @@
 
 title: Vendor collaboration mobile workspace
 description: With the vendor collaboration mobile workspace, your vendors can stay up-to-date on the purchase orders that have been sent to them for approval and view information about new and updated purchase orders and contacts.
-author: YuyuScheller
+author: mkirknel 
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: sericks
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 267074
@@ -35,12 +35,15 @@ ms.search.validFrom: 2016-11-30
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides information about the **Vendor collaboration** mobile workspace, which is available for the Microsoft Dynamics 365 for Operations mobile app. With this mobile workspace, your vendors can stay up-to-date on the purchase orders that have been sent to them for approval and view information about new and updated purchase orders and contacts.
+This topic provides information about the **Vendor collaboration** mobile workspace. With this mobile workspace, your vendors can stay up-to-date on the purchase orders that have been sent to them for approval and view information about new and updated purchase orders and contacts.
 
-## Overview of the Vendor collaboration mobile workspace
+This mobile workspace is for use with the Microsoft Dynamics 365 for Unified Operations mobile app.
+
+## Overview 
 The **Vendor collaboration** mobile workspace keeps vendors informed about new purchase orders so that they can see and respond to purchase orders in the web client. 
 
-**Note:** The mobile workspace should be used as a supplement to the vendor collaboration web interface, but not a replacement. 
+>[!NOTE]
+> The mobile workspace should be used as a supplement to the vendor collaboration web interface, but not a replacement. 
 
 With the **Vendor collaboration** mobile workspace, your vendors can view new purchase orders that are sent for approval. It displays purchase order information, such as products, quantity, and requested delivery dates. Price information is available, depending on the configuration for each vendor. 
 
@@ -61,12 +64,15 @@ With the mobile workspace, your vendor can:
 -   View information and follow the status of a user request submitted by the vendor (requires an additional security role).
 
 ## Prerequisites
-Before you can use the **Vendor collaboration** mobile workspace, make sure that your system administrator has the following prerequisites in place.
+The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
+
+### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update 
+If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Vendor collaboration** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later
+If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
 
 <table>
-<colgroup>
-
-</colgroup>
 <thead>
 <tr class="header">
 <th>Prerequisite</th>
@@ -75,12 +81,8 @@ Before you can use the **Vendor collaboration** mobile workspace, make sure that
 </tr>
 </thead>
 <tbody>
+
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
-<td>System administrator</td>
-<td>If you don’t already have Dynamics 365 for Operations deployed in your organization, the system administrator should see <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
-</tr>
-<tr class="even">
 <td>KB 3216943 must be implemented if you are using platform update 3.</td>
 <td>System administrator</td>
 <td>KB 3216943 is a binary update that is required if you are using platform update 3. To implement this KB, the system administrator must:
@@ -89,7 +91,7 @@ Before you can use the **Vendor collaboration** mobile workspace, make sure that
 <li>Install the binary update, which is delivered as a deployable package. For instructions on how to apply a deployable package see <a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a>.</li>
 </ol></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>KB 4013633 must be implemented.</td>
 <td>System administrator</td>
 <td>KB 4013633 (an X++ update or metadata hotfix) contains four mobile workspaces for supply chain management. To implement KB 4013633, your system administrator must follow these steps:
@@ -100,7 +102,7 @@ Before you can use the **Vendor collaboration** mobile workspace, make sure that
 <li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
 </ol></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>The <strong>Vendor collaboration</strong> mobile workspace must be published to the Dynamics 365 for Operations mobile app.</td>
 <td>System administrator</td>
 <td><ol>
@@ -110,7 +112,7 @@ Before you can use the **Vendor collaboration** mobile workspace, make sure that
 <li>Click <strong>Publish mobile workspace</strong>.</li>
 </ol></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>The vendor user must have access to the vendor collaboration web interface in Dynamics 365 for Operations and set up a vendor collaboration user.</td>
 <td>System administrator</td>
 <td>Follow the steps described in the following topics to set up and work with the vendor collaboration web interface.
@@ -124,16 +126,17 @@ Before you can use the **Vendor collaboration** mobile workspace, make sure that
 </tbody>
 </table>
 
-## Download and install the Dynamics 365 for Operations mobile app
-Download and install the Dynamics 365 for Operations mobile app from your mobile app store.
+## Download and install the mobile app
 
--   For Android: [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   For iPhone: [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+Download and install the Dynamics 365 for Unified Operations mobile app:
+
+-   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
+
 
 ## Sign in to the Dynamics 365 for Operations mobile app
 1.  Start the app on your mobile device.
 2.  Enter your Dynamics 365 for Operations URL.
-3.  Enter the company to sign in to. For example, enter **USMF**.
 4.  The first time that you sign in, you’re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
 5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator later publishes a new workspace, you can pull to refresh the list of mobile workspaces. 
 
