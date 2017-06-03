@@ -68,7 +68,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </td>
 </tr>
 <tr class="even">
-<td>The <strong>My team</strong> mobile workspace must be published.</td>
+<td>The <strong>Company directory</strong> mobile workspace must be published.</td>
 <td>System administrator</td>
 <td>See <a href="/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
