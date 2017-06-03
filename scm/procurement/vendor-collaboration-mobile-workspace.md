@@ -140,7 +140,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 ## Use the Vendor collaboration mobile workspace
 When you select the **Vendor collaboration** workspace, you’ll see the following options:
 
-    ![Vendor collaboration mobile workspace](./media/vendor-collaboration-mobile-app.png)
+    [![Vendor collaboration mobile workspace](./media/vendor-collaboration-mobile-app.png)]
 
 The **Vendor collaboration** workspace includes the following pages:
 
