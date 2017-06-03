@@ -2,10 +2,10 @@
 # required metadata
 
 title: Expense management mobile workspace
-description: This topic provides information about the Expense management mobile workspace that is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt.
-author: annbe
+description: This topic provides information about the Expense management mobile workspace. This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt.
+author: KimANelson 
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,9 +15,9 @@ ms.technology:
 
 # ms.search.form: 
 # ROBOTS: 
-audience: end user, IT Pro
+audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: sericks
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 274023
@@ -35,28 +35,31 @@ ms.search.validFrom: 2016-11-30
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides information about the Expense management mobile workspace that is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt.
+This topic provides information about the **Expense management** mobile workspace. This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt.
 
-Overview of the Expense management mobile workspace
----------------------------------------------------
+This mobile workspace is for use with the Microsoft Dynamics 365 for Unified Operations mobile app.
 
-Many organizations require that a copy of a receipt be attached to a travel-related or business-related expense report that an employee submits for reimbursement. The **Expense management** mobile workspace lets users quickly create new expense lines on the mobile device of their choice by using an attached photo of a receipt. Alternatively, users can capture a photo of a receipt and then attach it to an expense report later. Specifically, the **Expense management** mobile workspace enables a user to:
+## Overview
+
+Many organizations require that a copy of a receipt be attached to a travel-related or business-related expense report that an employee submits for reimbursement. The **Expense management** mobile workspace lets users quickly create new expense lines on the mobile device of their choice by using an attached photo of a receipt. Alternatively, users can capture a photo of a receipt and then attach it to an expense report later. 
+
+Specifically, the **Expense management** mobile workspace enables a user to:
 
 -   Take a photo of a receipt, and upload it to Microsoft Dynamics 365 for Operations. A user can then attach that photo to an expense report later.
 -   Upload a file as a captured receipt. A user can then attach that file to an expense report later.
 -   Create a new expense line by using an attached receipt. A user can then add the line item to an expense report later, and submit it for approval and reimbursement.
 
-The remaining sections of this topic explain how to implement and use the **Expense management** mobile workspace.
 
 ## Prerequisites
-Before you implement the **Expense management** mobile workspace, make sure that your system administrator has completed the following prerequisites.
+The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
+
+### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update 
+If Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update has been deployed for your organization, the system administrator must publish the **Expense management** mobile workspace. For instructions, see [Publish a mobile workspace](/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later
+If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Prerequisite</th>
@@ -66,45 +69,35 @@ Before you implement the **Expense management** mobile workspace, make sure that
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
+<td>Implement KB 4019015.</td>
 <td>System administrator</td>
-<td>If you don't already have Dynamics 365 for Operations deployed in your organization, your system administrator should see <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>KB 4019015 is an X++ update or metadata hotfix that contains the <strong>Expense management</strong> mobile workspace. To implement KB 4019015, your system administrator must follow these steps.
+<ol>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Download the metadata hotfix from Microsoft Dynamics Lifecycle Services (LCS)</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ExpenseMobile</strong> models, and then upload the deployable package to LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a>.</li>
+</ol></td>
 </tr>
 <tr class="even">
-<td>KB 4019015 must be implemented.</td>
+<td>Publish the <strong>Expense management</strong> mobile workspace.</td>
 <td>System administrator</td>
-<td>KB 4019015 (an X++ update or metadata hotfix) contains four mobile workspaces for supply chain management. To implement KB 4019015, your system administrator must follow these steps:
-<ol>
-<li>Download KB 4019015 from Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ExpenseMobile</strong> model, and then upload the deployable package to LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td>The <strong>Expense management</strong> mobile workspace must be published to the Dynamics 365 for Operations mobile app.</td>
-<td>System administrator</td>
-<td><ol>
-<li>Start Dynamics 365 for Operations in your browser.</li>
-<li>On the <strong>System parameters</strong> page, select <strong>Manage mobile workspaces</strong>.</li>
-<li>Select the <strong>Expense management</strong> workspace.</li>
-<li>Click <strong>Publish mobile workspace</strong>.</li>
-</ol></td>
+<td>See <a href="/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## Download and install the Dynamics 365 for Operations mobile app
-Download and install the Dynamics 365 for Operations mobile app from your mobile app store.
 
--   For Android: [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   For iPhone: [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+## Download and install the Dynamics 365 for Operations mobile app
+Download and install the Dynamics 365 for Unified Operations mobile app:
+
+-   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## Sign in to the Dynamics 365 for Operations mobile app
 1.  Start the app on your mobile device.
-2.  Enter your Dynamics 365 for Operations URL.
-3.  Enter the company to sign in to. For example, enter **USMF**.
-4.  The first time that you sign in, you re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
+2.  Enter your Dynamics 365 URL.
+4.  The first time that you sign in, you re prompted for the user name and password. Enter your credentials.
 5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator publishes a new workspace later, you can pull to refresh the list of mobile workspaces. 
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
