@@ -2,10 +2,10 @@
 # required metadata
 
 title: Credit and collections management Power BI content
-description: Credit and collections management Power BI content for Microsoft Dynamics 365
+description: This topic describes what is included in the Credit and collections management Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,10 +14,10 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User
+audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks
-# ms.search.scope: Finance and Operations 
+# ms.search.scope: Operations. Core 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -35,11 +35,13 @@ This topic describes what's included in the **Credit and collections management*
 
 This Power BI content  was crated for credit and collections managers and collections clerks to provide them with key credit and collections metrics such as days sales outstanding, balance overdue, credit exposure, and customers over credit limit. It uses transactional data and provides aggregate views of credit and collections across all companies, as well as the break down per company, per customer group, and per customer. 
 
-This Power BI content consists of ten report pages, including two overview pages, one page for credit overview and other for collections overview and 8 details pages providing details of credit and collections metrics sliced and diced across different dimensions.
+This Power BI content consists of ten report pages: 
+- 2 overview pages (one page is for credit overview, and one page is for collections overview) 
+- 8 details pages providing details of credit and collections metrics sliced and diced across different dimensions
 
-All the amounts in the content pack are shown in the system currency. You can set the system currency on the Systems parameters form.
+All the amounts are shown in the system currency. You can set the system currency on the **Systems parameters** form.
 
-By default the credit and collections data for the current company is shown. If you want a role to see the data across all companies, assign duty CustCollectionsBICrossCompany to the role.
+By default the credit and collections data for the current company is shown. If you want a role to see the data across all companies, assign duty **CustCollectionsBICrossCompany** to the role.
 
 ## Accessing the content pack
 
@@ -47,20 +49,18 @@ You can find the Credit and collections content pack in the Shared assets librar
 
 ## Reports included in the content pack
 
-The content pack includes a report that consists of a set of metrics visualized as charts, tiles, and tables.
-
-The following table provides an overview of the visualizations in the content pack.
+The content pack includes a report that consists of a set of metrics visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the content pack.
 
 | **Report page**             | **Visualization**                                                                                                                                                                                                                                                                                                                                     |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Collections overview        | Customers past due Customers over credit limit DSO 30 days Open cases Average days to close case Open activities Average days to close activities Open interest notes Open collections letters Customer hold Sales hold Aged balances Collections status amounts Collections code amounts Write-off by reason Balance due by region Expected payments |
-| Credit overview             | Customers past due Credit limit Vs balance due Customers over credit limit grid Customers over credit limit per company Credit used Vs total credit limit Credit limit Vs Credit used by region Customers per credit rating                                                                                                                           |
-| Credit limit                | Credit limit Credit limit details Credit limit per customer Credit limit per customer group Credit limit per credit rating per company Credit limit vs credit used by region                                                                                                                                                                          |
-| Customers over credit limit | Customers over credit limit Customers over credit limit detail Customers over credit limit per company Customer over credit limit per customer group Customers over credit limit by region                                                                                                                                                            |
-| Customers past due          | Customers past due Customer past due details Customer past due per company Customer past due per customer group Customer past due by region                                                                                                                                                                                                           |
-| Aged balances               | Aged balances Aged balances details Aged balances per company Aged balances per customer group                                                                                                                                                                                                                                                        |
-| Expected payments           | Expected payments Expected payments details Expected payments per company Expected payments per customer group Expected payments by region                                                                                                                                                                                                            |
-| Write-offs                  | Write-offs by region Write-offs details Write-offs by main account Write-offs per company Write-offs per customer group Write-offs by region                                                                                                                                                                                                          |
+| Collections overview        | Customers past due<br>Customers over credit limit<br>DSO 30 days<br>Open cases<br>Average days to close case<br>Open activities<br>Average days to close activities<br>Open interest notes<br>Open collections letters<br>Customer hold<br>Sales hold<br>Aged balances<br>Collections status amounts<br>Collections code amounts<br>Write-off by reason<br>Balance due by region<br>Expected payments |
+| Credit overview             | Customers past due<br>Credit limit Vs balance due<br>Customers over credit limit grid<br>Customers over credit limit per company<br>Credit used Vs total credit limit<br>Credit limit Vs Credit used by region<br>Customers per credit rating                                                                                                                           |
+| Credit limit                | Credit limit<br>Credit limit details<br>Credit limit per customer<br>Credit limit per customer group<br>Credit limit per credit rating per company<br>Credit limit vs credit used by region                                                                                                                                                                          |
+| Customers over credit limit | Customers over credit limit<br>Customers over credit limit detail<br>Customers over credit limit per company<br>Customer over credit limit per customer group<br>Customers over credit limit by region                                                                                                                                                            |
+| Customers past due          | Customers past due<br>Customer past due details<br>Customer past due per company<br>Customer past due per customer group<br>Customer past due by region                                                                                                                                                                                                           |
+| Aged balances               | Aged balances<br>Aged balances details<br>Aged balances per company<br>Aged balances per customer group                                                                                                                                                                                                                                                        |
+| Expected payments           | Expected payments<br>Expected payments details<br>Expected payments per company<br>Expected payments per customer group<br>Expected payments by region                                                                                                                                                                                                            |
+| Write-offs                  | Write-offs by region<br>Write-offs details<br>Write-offs by main account<br>Write-offs per company<br>Write-offs per customer group<br>Write-offs by region                                                                                                                                                                                                          |
 | Collections status          | Disputed Promise to pay broken Promise to pay Collections status details Collections status amounts Open cases Open activities                                                                                                                                                                                                                        |
 | Collections letters         | Collection code amounts Collection code amount details Collection letter amount per company Collection letter amount per customer group Collection letter amount by region                                                                                                                                                                            |
 
