@@ -3,9 +3,9 @@
 
 title: Warehouse performance Power BI content
 description: This topic describes what's included in the Warehouse performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
-author: YuyuScheller
+author: Mirzaab 
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,8 +17,8 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
-ms.search.scope: Operations
+ms.reviewer: sericks
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 272953
 ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
@@ -35,7 +35,7 @@ ms.search.validFrom: 2016-11-30
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes what's included in the Warehouse performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+This topic describes what's included in the **Warehouse performance** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
 Overview
 ========
@@ -49,19 +49,7 @@ Warehouse managers can use the **Warehouse performance** Power BI content to mea
 -   **Location inventory accuracy**: Inventory accuracy is important internal warehouse business intelligence (BI). It's very important that you determine how accurately you're counting in general. However, it's also important that you determine how accurate you are at storing items in the correct locations, and that you highlight discrepancy data, so that you can find better positions for items or initiate total counting on specific items. (Currently, the new item-based counting functionality is delivered as a hotfix.) If you're using this Power BI content to determine the correctness of on-hand inventory data per location, you can also identify theft in your shops. You can also determine whether any locations have on-hand quantities that differ from enterprise resource planning (ERP) data. Those locations might be too large, or they might be impossible to count. Alternatively, some of the physical positioning might be bad, so that it's difficult to keep a single type of item in sync with on-hand data.
 
 ## Accessing the Power BI content pack
-You can access the content pack in two ways:
-- As an embedded report in your Dynamics 365 for Finance and Operations
-Individuals in your organization can take advantage of analytics out of the box directly from the Dynamics 365 for Finance and Operations, without having to model the data or create reports.
--	From Lifecycle Services
-You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services. These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis.
-
-### Embedded content
-If you are using Dynamics 365 for Finance and Operations, Enterprise edition: The Warehouse performance Power BI content is displayed as a report under Inquiries and reports > Warehouse performance analysis, in the Warehouse management module. 
-
-### Content accessible from Lifecycle Services
-You can find the **Warehouse performance** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
-
-**Note:** **KB 4011327** is a prerequisite for this Power BI content. After you sign in to Lifecycle Services, you can access the KB here: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+If you are using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Warehouse performance** Power BI content is displayed on the **Warehouse performance** page (**Warehouse management** > **Inquiries and reports** > **Warehouse performance analysis** > **Warehouse performance**. 
 
 ## Metrics that are included in the Power BI content
 The **Warehouse performance** Power BI content includes a report. This report consists of a set of metrics that are visualized as charts, tiles, and tables. The following table provides an overview of the visualizations in the **Warehouse performance** Power BI content.
@@ -95,6 +83,15 @@ The **Warehouse performance** Power BI content includes a report. This report co
 | Shipping performance        | Shipped by product                       | The percentage that is shipped early, on time, or late by item or item group.                                                                                                                                                                                                                                                                                                                                   |
 | Shipping performance        | Shipped by customer                      | The percentage that is shipped early, on time, or late by customer or customer group.                                                                                                                                                                                                                                                                                                                           |
 | Shipping performance        | Shipped by site / warehouse              | The percentage that is shipped early, on time, or late by site or warehouse.                                                                                                                                                                                                                                                                                                                                    |
+## Extending the Power BI content
+You can provide great analytics to those who do not log into Dynamics 365 by using the content packs available in Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
+
+You can find the **Warehouse performance** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+
+Be sure to download the **Warehouse performance** content that applies to the version of Dynamics 365 that you're using.
+
+> [!NOTE]
+> If you're using Dynamics 365 for Operations verion 1611, KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB at https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## Understanding the data model and calculations
 The following data is used to populate the report pages in the **Warehouse performance** content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). 
@@ -131,15 +128,6 @@ The following key aggregate measurements are used as the basis of the content.
 | Shipping performance        | Shipped by product                       | CustPackingSlipOnTimeStatus           | Early, On time, and Late (See the descriptions earlier in this table.)                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Shipping performance        | Shipped by customer                      | CustPackingSlipOnTimeStatus           | Early, On time, and Late (See the descriptions earlier in this table.)                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Shipping performance        | Shipped by site / warehouse              | CustPackingSlipOnTimeStatus           | Early, On time, and Late (See the descriptions earlier in this table.)                                                                                                                                                                                                                                                                                                                                                                                                                        |
-
-## Additional resources
-Here are some helpful links that are related to entities and building Power BI content:
-
--   [Data entities](../data-entities/data-entities.md)
--   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
-
 
 
 
