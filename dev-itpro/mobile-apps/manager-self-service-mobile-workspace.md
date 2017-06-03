@@ -91,16 +91,16 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## View team members using the My team mobile workspace
+## View team members by using the My team mobile workspace
 1.	On your mobile device, select the **My team** workspace. A list of team members will display, including their title and any direct reports that they may have.
 2.	Select a team member. This will open the **Team member summary** page. Information included on this page are birthdate, seniority date, years of service, years in position and compensation information.
 
-## View extended team members using the My team mobile workspace
+## View extended team members by using the My team mobile workspace
 1.	On your mobile device, select the **My team** workspace. A list of team members will display, including their title and any direct reports that they may have.
 1.	Select the **Direct reports** link. A list of your extended team will display.
 1.	Select a team member. This will open the **Team member summary** page. Information included on this page are birthdate, seniority date, years of service, years in position and compensation information.
 
-## Send praise about team members using the My team mobile workspace
+## Send praise about team members by using the My team mobile workspace
 1.	On your mobile device, select the **My team** workspace. A list of team members will display, including their title and any direct reports that they may have.
 3.	Select a team member. This will open the **Team member summary** page.
 4.	Select **Send praise**. 
