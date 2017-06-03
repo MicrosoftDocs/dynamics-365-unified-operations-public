@@ -65,7 +65,7 @@ in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.co
 ## Extending the Power BI content
 You can provide great analytics to those who do not log into Dynamics 365 by using the content packs available in Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
 
-If you are using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, or Dynamics 365 for Operations version 1611 you can find the **Practice manager** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+You can find the **Practice manager** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 Be sure to download the **Practice manager** content that applies to the version of Dynamics 365 that you're using.
 
