@@ -5,7 +5,7 @@ title: Mobile workspaces recently released
 description: This topics lists the mobile workspaces that have recently been released.
 author: sericks007
 manager: AnnBe
-ms.date: 05/30/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -13,20 +13,18 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: 
-# ROBOTS: 
+# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+# ms.reviewer: sericks
+# ms.search.scope: Operations 
 # ms.tgt_pltfrm: 
-ms.custom: 271724
-ms.assetid: 4b639ee1-5ee3-4389-8fbb-3c65150ba8b2
+# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: 
+# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: sericks
-ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2017-06-30 
+ms.dyn365.ops.version: Enterprise edition, July 2017 update 
 
 ---
 
