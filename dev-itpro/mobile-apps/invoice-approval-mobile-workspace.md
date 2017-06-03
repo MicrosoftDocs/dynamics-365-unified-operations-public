@@ -42,7 +42,7 @@ The **Invoice approvals** mobile workspace allows accounts payable clerks and ma
 
 ## Prerequisites
 
-Before you can use this mobile workspace, the following prerequisites must be met:
+Before you can use this mobile workspace, the following prerequisites must be met.
 
 <table>
 <thead>
