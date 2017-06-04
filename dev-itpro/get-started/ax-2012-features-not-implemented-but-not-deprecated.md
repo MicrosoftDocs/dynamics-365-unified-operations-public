@@ -128,7 +128,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <tr class="odd">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
 <td>Currently, payment format specifications must be entered manually. In a future update of Dynamics 365 for Operations, you will be able to select payment format specifications in a list. Currently, the following specifications are supported per payment format. <strong>Note</strong>: Values of supported payment specifications listed below are used as Payment specification parameters in Payment specification form for a selected method of payment. 
-<strong>BTL91 for the Netherlands</strong>
+<br><strong>BTL91 for the Netherlands</strong>
 <table>
 <thead>
 <tr class="header">
