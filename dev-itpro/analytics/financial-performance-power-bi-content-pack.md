@@ -2,10 +2,10 @@
 # required metadata
 
 title: Financial Performance Power BI content
-description: This topic describes the Microsoft Dynamics 365 for Operations Financial Performance content pack for Microsoft Power BI. It describes the dashboard and reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
-author: twheeloc
+description: This topic describes the Financial performance Power BI content. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the content.
+author: kweekley
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,21 +35,21 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Microsoft Dynamics 365 for Operations Financial Performance content pack for Microsoft Power BI. It describes the dashboard and reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+This topic describes the **Financial performance** Power BI content. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the content.
 
 Accessing the content pack
 --------------------------
 
-Two versions of the Financial Performance content pack are available. One version is available from Microsoft Dynamics Lifecycle Services (LCS), and the other is available from PowerBI.com.
+Two versions of the **Financial performance** content pack are available. One version is available from Microsoft Dynamics Lifecycle Services (LCS), and the other is available from PowerBI.com.
 
 -   **Version that is available from LCS:** The Financial Performance content pack that is available from LCS supports Microsoft Dynamics 365 for Operations version 1611. You can find the content pack in the Shared asset library in LCS. For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 -   **Version that is available from PowerBI.com:** The Financial Performance content pack that is available from PowerBI.com supports Microsoft Dynamics AX versions 7.0 and 7.0.1. For more information about how to connect and load your Dynamics 365 for Operations data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
 
 ## Main account setup
-Because organizations want liabilities and revenue amounts to appear as positive amounts on reports, the setup of the main accounts in Dynamics 365 for Operations is important. For these main accounts to appear as positive amounts, the main account type must be set to **Liability** or **Revenue**. When these account types are used, reporting through Microsoft Power BI will reverse the signs and show the amounts as positive.
+Because organizations want liabilities and revenue amounts to appear as positive amounts on reports, the setup of the main accounts is important. For these main accounts to appear as positive amounts, the main account type must be set to **Liability** or **Revenue**. When these account types are used, reporting through Microsoft Power BI will reverse the signs and show the amounts as positive.
 
-## Dashboard and reports that are included in the content pack
-After you’ve connected the content pack to your Dynamics 365 for Operations data, the dashboard and reports show your financial data. If you’ve never used Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The dashboard contains summarized tiles of data that are based on underlying reports. Each tile contains summarized information for the current year across all companies in an organization. Here are some of the tiles:
+## Dashboard and reports that are included
+The dashboard contains summarized tiles of data that are based on underlying reports. Each tile contains summarized information for the current year across all companies in an organization. Here are some of the tiles:
 
 -   Cash
 -   Total Revenue this year
