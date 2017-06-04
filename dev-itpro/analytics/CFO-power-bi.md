@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Enterprise edition, July 2017 update 
 ---
 
-# CFO Power BI content
+# CFO overview Power BI content
 
 [!include[banner](../includes/banner.md)]
 
