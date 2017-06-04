@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Financial Performance Power BI content
+title: Financial Pperformance Power BI content
 description: This topic describes the Financial performance Power BI content. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the content.
 author: kweekley
 manager: AnnBe
@@ -85,7 +85,7 @@ Each tile is backed by a supporting report. These reports contain both charts an
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
-The data that populates the dashboard and reports in the Financial Performance content pack is Dynamics 365 for Operations data. The following entities were used as the basis of the content pack: **Aggregate data entities**
+The following entities were used as the basis of the **Financial performance** Power BI content: **Aggregate data entities**
 
 -   **GeneralLedgerActivities** – This entity aggregates general ledger balances by account category.
 -   **BudgetActivities** – This entity aggregates budget balances by account category.
@@ -98,16 +98,6 @@ The data that populates the dashboard and reports in the Financial Performance c
 -   Ledgers
 -   ChartofAccounts
 
-These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content pack. By default, the content pack brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). This workbook is the default data model that was used to create the content pack. After you've finished making your modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
-
-## Additional resources
-Here are some helpful links that are related to entities and building Power BI content:
-
--   [Data entities](..\data-entities\data-entities.md)
--   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](configure-power-bi-integration.md)
-
-
+These entities were used to create calculated measures in the data model. The calculated measures are used to calculate the key performance indicators (KPIs) and reports that are used in the content. By default, the content brings in data for the last three years and one future year. To include additional calculations on your reports and dashboard, you can modify the [Microsoft Excel workbook](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). This workbook is the default data model that was used to create the content. After you've finished making your modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
 
 
