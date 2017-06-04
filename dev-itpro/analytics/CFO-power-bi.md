@@ -2,10 +2,10 @@
 # required metadata
 
 title: CFO overview Power BI content
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic describes the **CFO overview** Microsoft Power BI content. 
 author: kweekley
 manager: AnnBe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,10 +14,10 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: IT Pro
+audience: Application user, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks
-# ms.search.scope: Operations
+# ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the **CFO overview** Microsoft Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
+This topic describes the **CFO overview** Microsoft Power BI content. 
 
 ## Accessing the Power BI content
 
