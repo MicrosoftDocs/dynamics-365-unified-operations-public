@@ -110,22 +110,23 @@ Once uploaded, your reports can be viewed, tweaked and explored by your users ei
 
 For more information on PowerBI concepts, see the [Power BI documentation](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-how-should-i-share-my-dashboard/).
 
-Pinning Power BI content into Dynamics 365 for Operations client
-PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin tiles and reports from their own PowerBI.com accounts to Dynamics 365 for Operations workspaces. PowerBI content in Dynamics 396 for Operations workspaces provide contextual insights that are related to business operations. 
-Dynamics 365 for Operations supports pinning two types of objects from PowerBI.com; namely, Tiles in PowerBI.com dashboards and Reports.
-Before you can proceed, you need to configure PowerBI in your Dynamics 365 for Operations environment.
-One-time configuration of PowerBI.com integration
-An administrator needs to perform this operation in your Dynamics 365 for operations environment before you can pin Tiles or reports. This operation needs to be performed only once per environment.
-https://ax.help.dynamics.com/en/wiki/configuring-powerbi-integration/ 
+## Pinning Power BI content into the Dynamics 365 for Finance and Operations, Enterprise edition client
+PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin tiles and reports from their own PowerBI.com accounts to Dynamics 365 for Finance and Operations, Enterprise edition workspaces. PowerBI content in Dynamics 365 provides contextual insights that are related to business operations.
 
-Pinning PowerBI.com tiles 
-Power BI tiles that are pinned to the Dynamics 365 for Operations client provide insightful visuals at a glance. They also let users open PowerBI.com for interactive analysis.
-For more information on pinning please refer to the how-to guide here
-https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/configure-power-bi-integration#connect-to-power-bi-from-dynamics-365-for-operations-for-the-first-time 
-Pinning PowerBI.com reports into workspaces
-As a power user, a business analyst or ad a developer, you have the ability to create Operational reports with Power BI desktop using Entity store. Not only are these reports rich and interactive, you can empower your users to make changes without relying on another person. 
-While reports in PowerBI.com are powerful and interactive on it’s own, these reports can be pinned into Dynamics 36 for Operations workspaces. Your users can pin the reports into workspaces themselves. 
-For more information on pinning reports into workspaces, please read the article here: https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1605844&preview=true 
+Dynamics 365 supports pinning two types of objects from PowerBI.com: namely, tiles in PowerBI.com dashboards and reports.
+
+Before you can proceed, you need to configure PowerBI in your Dynamics 365 environment.
+
+### One-time configuration of PowerBI.com integration
+An administrator needs to perform this operation in your Dynamics 365 for Finance and Operations, Enterprise edition environment before you can pin tiles or reports. This operation needs to be performed only once per environment. For instructions, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md) 
+
+### Pinning PowerBI.com tiles 
+Power BI tiles that are pinned to the Dynamics 365 client provide insightful visuals at a glance. They also let users open PowerBI.com for interactive analysis. For more information see [Connect to Power BI for the first time](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/configure-power-bi-integration#connect-to-power-bi-from-dynamics-365-for-operations-for-the-first-time).
+
+### Pinning PowerBI.com reports into workspaces
+As a power user, a business analyst or ad a developer, you have the ability to create reports with Power BI desktop using Entity store. Not only are these reports rich and interactive, you can empower your users to make changes without relying on another person. 
+
+While reports in PowerBI.com are powerful and interactive on it’s own, these reports can be pinned into workspaces. Your users can pin the reports into workspaces themselves. For more information on pinning reports into workspaces, see [Pin Power BI reports to workspaces](pin-power-bi-reports.md). 
 
 
 
