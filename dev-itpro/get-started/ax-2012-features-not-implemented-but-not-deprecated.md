@@ -127,7 +127,8 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="odd">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
-<td>Currently, payment format specifications must be entered manually. In a future update of Dynamics 365 for Operations, you will be able to select payment format specifications in a list. Currently, the following specifications are supported per payment format. <strong>Note</strong>: Values of supported payment specifications listed below are used as Payment specification parameters in Payment specification form for a selected method of payment. <strong>BTL91 for the Netherlands</strong>
+<td>Currently, payment format specifications must be entered manually. In a future update of Dynamics 365 for Operations, you will be able to select payment format specifications in a list. Currently, the following specifications are supported per payment format. <strong>Note</strong>: Values of supported payment specifications listed below are used as Payment specification parameters in Payment specification form for a selected method of payment. 
+<li><strong>BTL91 for the Netherlands</strong></li>
 <table>
 <thead>
 <tr class="header">
@@ -310,7 +311,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="odd">
 <td>Bank payment order for Latvia and Lithuania</td>
-<td>Print a payment order for Latvia and Lithuania. This feature will be available in a future update of Dynamics 365 for Operations.</td>
+<td>Print a payment order for Latvia and Lithuania. This feature will be available in a future update.</td>
 </tr>
 <tr class="even">
 <td>Bankgirot AP return format for Sweden</td>
