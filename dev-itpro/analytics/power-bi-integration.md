@@ -39,6 +39,8 @@ Power BI is a suite of business analytics tools to analyze data and share insigh
 ## Data exploration with Power BI 
 There are different types of reporting in Dynamics 365 for Finance and Operations, Enterprise edition:
 
+![Data exploration](media/data-exploration.png)
+
 Chart controls are used for building embedded experiences that require visuals. 
 
 SSRS is an engine designed for pixel-perfect, formatted reports that often require printing. We leverage SSRS for document style reports such as invoices and purchase orders. Our investments on SSRS integration focus on document generation and printing scenarios. 
