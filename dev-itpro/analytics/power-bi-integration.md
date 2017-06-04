@@ -82,25 +82,34 @@ For an overview of Power BI integration with Entity store, see [Overview of Powe
 If you are upgrading from AX 2012, you can upgrade cubes to Aggregate measurements that use Entity store. You can then create PowerBI reports using Entity store. For more information, see [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
 
 ### Self-service “Data mash-up” reports authored using OData
-Data mash-up is a term used to refer to ad-hoc, self service reports that combine data from multiple sources. As a power user (or a Business analyst), you can create PowerBI reports using OData end-points exposed via Dynamics 365 for Operations. 
-Dynamics 365 for Operations is a first-class data source for Power BI authoring tools, such as Excel and Power BI Desktop. Dynamics 365 for Operations data entities are exposed as data feeds by using OData V4. These data entities include both standard data entities and aggregate data entities that can provide summarized and calculated data in the OData feed. Dynamics 365 for Operations data feeds authenticate users and enable access, based on security permissions that are defined in Dynamics 365 for Operations. Any client tool that supports the OData protocol can consume Dynamics 365 for Operations data securely.
-You can access OData endpoints in an instance of Dynamics 365 for operations via the URL https://<your Dynamics AX URL>/Data 
-OData endpoints are ideal for quick and convenient data mash-ups. However, for authoring reports that extract large volumes of data Entity store approach is recommended. 
-See the following how-to article for creating a PowerBI report and a dashboard using OData endpoints: https://ax.help.dynamics.com/en/wiki/tutorial-create-a-power-bi-report-and-dashboard 
-NOTE: the above hands-on article uses PowerQuery and PowerPivot tools. You could use PowerBI desktop tool to author reports using OData endpoints similarly.
-Authoring Power BI reports with Excel
+Data mash-up is a term used to refer to ad-hoc, self service reports that combine data from multiple sources. As a power user (or a business analyst), you can create Power BI reports using OData end-points. 
+
+Dynamics 365 for Finance and Operations, Enterprise edition is a first-class data source for Power BI authoring tools, such as Excel and Power BI Desktop. Data entities are exposed as data feeds by using OData V4. These data entities include both standard data entities and aggregate data entities that can provide summarized and calculated data in the OData feed. Dynamics 365 for Finance and Operations, Enterprise edition data feeds authenticate users and enable access, based on security permissions that are defined. Any client tool that supports the OData protocol can consume the data securely.
+
+You can access OData endpoints via the URL https://<your Dynamics 365 URL>/Data 
+
+OData endpoints are ideal for quick and convenient data mash-ups. However, for authoring reports that extract large volumes of data Entity store approach is recommended. To create a Power BI report and a dashboard using OData endpoints, see [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md) for more information. Note that this article PowerQuery and PowerPivot tools. You could use the Power BI desktop tool to author reports using OData endpoints similarly.
+
+### Authoring Power BI reports with Excel
 In addition to using PowerBI desktop authoring tool, you can use “Power tools” incorporated into Excel to create visualizations. You may have a large number of users within your organization that use Excel every day. For a quick “one-off report”, using Excel may be the best option for them.
+
 There are several scenarios where you can use Excel.
--	A user can export data from a page in Dynamics 365 for Operations client into Excel. Using the Powerview add-in built into Excel, the data can be visualized. This Excel workbook can be used as a standalone visualization. In addition, this report can be imported into PowerBI.com service.
--	Using the PowerQuery, extension in Excel, a user can combine data in another worksheet (or imported from OData endpoints) with external data. Resulting data can be visualized using Powerview 
--	Using PowerPivot extension in Excel, a user can ingest a larger amount of data into Excel 
-For more information on PowerBI integration with Excel, see the article below
-https://ax.help.dynamics.com/en/wiki/how-to-create-a-powerbi-report-using-ax-data/ 
+
+-	A user can export data from a page in Dynamics 365 into Excel. Using the Powerview add-in built into Excel, the data can be visualized. This Excel workbook can be used as a standalone visualization. In addition, this report can be imported into PowerBI.com service.
+-	Using the PowerQuery, extension in Excel, a user can combine data in another worksheet (or imported from OData endpoints) with external data. Resulting data can be visualized using Powerview.
+-	Using PowerPivot extension in Excel, a user can ingest a larger amount of data into Excel.
+
+For more information on PowerBI integration with Excel, see [Create a Power BI report](create-powerbi-report-data.md).
+
 Consider using export to Excel functionality for ad-hoc “one-off” reports. For reports that are shared with a group of users, you should consider authoring them using Entity store.
-Sharing and using reports in PowerBI.com
+
+## Sharing and using reports in PowerBI.com
 PowerBI.com, a service offered by Microsoft, enables creation of dashboards, reports as well as collaboration with a group of users. Regardless of how you author reports, your reports can be shared with users by uploading them into PowerBI.com service (also called “publishing”).
-Once uploaded, your reports can be viewed, tweaked and explored by your users either on the web (when they are connected to the internet at home or at office) or using apps in any of the devices. 
-For more information on PowerBI concepts, refer to https://powerbi.microsoft.com/en-us/documentation/powerbi-service-how-should-i-share-my-dashboard/ 
+
+Once uploaded, your reports can be viewed, tweaked and explored by your users either on the web (when they are connected to the internet at home or at office) or using apps in any of the devices.
+
+For more information on PowerBI concepts, see the [Power BI documentation](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-how-should-i-share-my-dashboard/).
+
 Pinning Power BI content into Dynamics 365 for Operations client
 PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin tiles and reports from their own PowerBI.com accounts to Dynamics 365 for Operations workspaces. PowerBI content in Dynamics 396 for Operations workspaces provide contextual insights that are related to business operations. 
 Dynamics 365 for Operations supports pinning two types of objects from PowerBI.com; namely, Tiles in PowerBI.com dashboards and Reports.
