@@ -5,7 +5,7 @@ title: Dynamics AX 2012 features that haven't been implemented but aren't deprec
 description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update. Although these features haven't yet been implemented, they aren't deprecated. 
 author: sericks007
 manager: AnnBe
-ms.date: 05/17/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -51,27 +51,27 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <tbody>
 <tr class="odd">
 <td>Alerts</td>
-<td>Implementation of the alerts functionality is planned for a future update of Microsoft Dynamics 365 for Operations. Alerts help users keep track of data changes in the system.</td>
+<td>Implementation of the alerts functionality is planned for a future update. Alerts help users keep track of data changes in the system.</td>
 </tr>
 <tr class="even">
-<td><strong>Graphics</strong> tab in the fixed asset value model and depreciation book profile forms</td>
-<td>The chart shows the deprecation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update of Dynamics 365 for Operations.</td>
+<td><strong>Graphics</strong> tab in the Fixed asset value model and Depreciation book profile forms</td>
+<td>The chart shows the deprecation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
 </tr>
 <tr class="odd">
-<td>Generate an electronic file to communicate the payment advice information. The file can be sent to a vendor.</td>
-<td>From the vendor payment journal, you can generate a payment advice as a report or as a file. The payment advice is used to inform the vendor about the list of invoices that are being paid. The payment advice report is still available in the current version of Dynamics 365 for Operations, but you can no longer generate this information in an electronic file format. That functionality depended on Application Integration Framework (AIF), which has been deprecated.</td>
+<td>Generate an electronic file to communicate payment advice information. The file can be sent to a vendor.</td>
+<td>From the vendor payment journal, you can generate payment advice as a report or as a file. The payment advice is used to inform the vendor about the list of invoices that are being paid. The payment advice report is still available in the current version, but you can no longer generate this information in an electronic file format. That functionality depended on Application Integration Framework (AIF), which has been deprecated.</td>
 </tr>
 <tr class="even">
 <td>Cash flow forecasting</td>
-<td>The functionality for creating a cash flow forecast will be enhanced and will be included in a future update of Dynamics 365 for Operations.</td>
+<td>The functionality for creating a cash flow forecast will be enhanced and will be included in a future update.</td>
 </tr>
 <tr class="odd">
 <td>Vendor portal</td>
-<td>Vendor portal lets you certify and validate suppliers as claims users through identity providers such as Microsoft account or Yahoo. It also supports unsolicited vendor sign-up. Vendor portal lets vendors review purchase orders, update their own (supplier) data, review product receipts to generate invoices, and upload and maintain a product catalog. Vendor portal lets you collaborate with or notify a supplier, and also lets you upload requests for quotation (RFQs) and allow vendors to respond to them. A vendor portal interface will be available in the new Dynamics 365 for Operations web client, for Microsoft Azure Active Directory (Azure AD) users who have a dedicated security role. These users can review, confirm, and reject purchase orders, and can view confirmed orders.</td>
+<td>Vendor portal lets you certify and validate suppliers as claims users through identity providers such as Microsoft account or Yahoo. It also supports unsolicited vendor sign-up. Vendor portal lets vendors review purchase orders, update their own (supplier) data, review product receipts to generate invoices, and upload and maintain a product catalog. Vendor portal lets you collaborate with or notify a supplier, and also lets you upload requests for quotation (RFQs) and allow vendors to respond to them. A vendor portal interface will be available in the web client, for Microsoft Azure Active Directory (Azure AD) users who have a dedicated security role. These users can review, confirm, and reject purchase orders, and can view confirmed orders.</td>
 </tr>
 <tr class="even">
 <td>Employee self-service (ESS)</td>
-<td>ESS lets you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also lets you configure security and punch-out to external catalogs. In the current version of Dynamics 365 for Operations, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered on a requisition for an organization. Additionally, the functionality for confirming receipts that are associated with requisitions that lead to purchases and the ability to approve a vendor invoice isn't currently available.</td>
+<td>ESS lets you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also lets you configure security and punch-out to external catalogs. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered on a requisition for an organization. Additionally, the functionality for confirming receipts that are associated with requisitions that lead to purchases and the ability to approve a vendor invoice isn't currently available.</td>
 </tr>
 <tr class="odd">
 <td>Customer self-service (CSS)</td>
@@ -83,23 +83,23 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Absence management in Human Resources</td>
-<td>This update of Dynamics 365 for Operations doesn't include functionality for entering absence transactions through both ESS and the client. It also doesn't include functionality for approving those transactions as a manager. In a future update of Dynamics 365 for Operations, the current functionality will be enhanced to support a wider range of scenarios. Setup capabilities that are required for integration with other Dynamics 365 for Operations modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Functionality for entering absence transactions through both ESS and the client are not included. It also doesn't include functionality for approving those transactions as a manager. In a future update, the current functionality will be enhanced to support a wider range of scenarios. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
 </tr>
 <tr class="odd">
 <td>US Payroll</td>
-<td>This update of Dynamics 365 for Operations doesn't include US Payroll. Limited initial setup capabilities will be available through the <strong>Human Resources 1</strong> &gt; <strong>Payroll</strong> configuration key.</td>
+<td>US Payroll is not included. Limited initial setup capabilities will be available through the <strong>Human Resources 1</strong> &gt; <strong>Payroll</strong> configuration key.</td>
 </tr>
 <tr class="even">
 <td>External questionnaire and recruiting functionality</td>
-<td>Functionality for externally posting questionnaires and open jobs will be added in a future update of Dynamics 365 for Operations.</td>
+<td>Functionality for externally posting questionnaires and open jobs will be added in a future update.</td>
 </tr>
 <tr class="odd">
 <td>Main account allocations for accounting distributions</td>
-<td>Allocation rules that are defined for a main account won't be applied on accounting distributions. In a future update of Dynamics 365 for Operations, main allocation rules will be applied during journalization.</td>
+<td>Allocation rules that are defined for a main account won't be applied on accounting distributions. In a future update, main allocation rules will be applied during journalization.</td>
 </tr>
 <tr class="even">
 <td>Client right-to-left (RTL) layout</td>
-<td>In this update of Dynamics 365 for Operations, the web client uses only left-to-right (LTR) layout for controls and labels. The ability to use RTL layout for Arabic and Hebrew languages will be added in a future update of Dynamics 365 for Operations.</td>
+<td>The web client uses only left-to-right (LTR) layout for controls and labels. The ability to use RTL layout for Arabic and Hebrew languages will be added in a future update.</td>
 </tr>
 <tr class="odd">
 <td>Client drag-and-drop</td>
@@ -107,7 +107,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Vendor catalog import</td>
-<td>Vendor catalog import is available and uses the new data management capabilities for import. However, this feature doesn't support the import of product images and attributes. It also doesn't let you generate schema files per vendor catalog. This functionality will be added in a future update of Dynamics 365 for Operations.</td>
+<td>Vendor catalog import is available and uses the new data management capabilities for import. However, this feature doesn't support the import of product images and attributes. It also doesn't let you generate schema files per vendor catalog. This functionality will be added in a future update.</td>
 </tr>
 <tr class="odd">
 <td>General budget reservations</td>
@@ -115,7 +115,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Electronic data exchange</td>
-<td>The current update of Dynamics 365 for Operations doesn't support the electronic exchange of documents, such as order confirmations and similar supply chain management (SCM) documents that were previously enabled as AIF documents. This functionality will be added in a future update of Dynamics 365 for Operations and will be based on the new Data Entities foundation.</td>
+<td>The electronic exchange of documents, such as order confirmations and similar supply chain management (SCM) documents that were previously enabled as AIF documents is not supported. This functionality will be added in a future update.</td>
 </tr>
 <tr class="odd">
 <td>Windows 8 and mobile apps</td>
