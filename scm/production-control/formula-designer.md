@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: enter AOT form names (PlanActivity, ReqSupplyDemandSchedule)
+ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
