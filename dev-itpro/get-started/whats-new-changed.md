@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -38,6 +38,9 @@ ms.dyn365.ops.version: Platform update 2
 This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Operations.
 
 To upgrade to the latest version, see [Process for upgrading to the latest Dynamics 365 for Operations update](../migration-upgrade/upgrade-latest-update.md).
+
+To learn more about the mobile workspaces and Power BI content recently released, see [Mobile workspaces recently released for the Dynamics 365 for Operations mobile app](../mobile-apps/mobile-workspaces-released.md) and [Power BI content recently released for Dynamics 365 for Operations](../analytics/power-bi-content-released.md)
+
 <table>
 <colgroup>
 <col width="20%" />
@@ -57,6 +60,12 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 </thead>
 <tbody>
 <tr class="odd">
+<td>Microsoft Dynamics 365 for Operations platform</td>
+<td>Platform update 7</td>
+<td> 7.0.4542.16189</td>
+<td>May 2017</td>
+<td><a href="whats-new-platform-update-7.md">What’s new or changed in Dynamics 365 for Operations platform update 7 (May 2017)</a></td>
+</tr><tr class="odd">
 <td>Microsoft Dynamics 365 for Operations platform</td>
 <td>Platform update 6</td>
 <td> 7.0.4509.16180</td>

@@ -5,10 +5,10 @@ title: Workspace form pattern
 description: This topic discusses workspace form patterns. Workspaces are a new concept in Microsoft Dynamics 365 for Operations, and are intended to be the primary way that users navigate to tasks and specific pages. A workspace should be created for every significant business activity that is supported.  
 author: jasongre
 manager: AnnBe
-ms.date: 05/18/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata

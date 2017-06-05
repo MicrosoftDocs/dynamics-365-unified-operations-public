@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -65,7 +65,8 @@ Use the form layout designer to graphically create the layout of the form docume
     -   **Prefix** – Enter the value that appears at the beginning of the field. This setting applies only to the **Lines** section of the layout.
     -   **Characters** – Specify the maximum number of characters that the field can contain if the element contains a variable. If the text in the field is longer than the number of character that you specify, the text is truncated to fit the field.
     -   **Variable** – This check box is selected automatically if the element contains a variable and can't be customized.
-    -   **Font type** – Set the font style to either **Normal** or **Bold**. Bold letters use two times as much space as normal letters. Therefore, some characters might be truncated.
+    -   **Font type** – Set the font style to either **Regular** or **Bold**. Bold letters use two times as much space as regular letters. Therefore, some characters might be truncated.
+    -   **Font size** – Set the font size to either **Regular** or **Large**. Large letters are two times higher than regular letters. Therefore, using large letters may lead to overlapping text in the receipt.
     -   **Delete** – Click this button to remove the selected part from the form layout.
 
 ## Assign receipt profiles
