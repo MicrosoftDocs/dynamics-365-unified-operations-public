@@ -43,7 +43,7 @@ This tutorial guides you through the process of uploading the required versions 
 2.	Go to **Organization administration > Electronic reporting**.
 3.	In the **Configuration providers** section, select the tile of ER provider that is associated with your company.
     
-    **Note**: Play the **Create a configuration provider and mark it as active** task guide to learn how a new ER solution provider can registered.
+    **Note**: Play the **Create a configuration provider and mark it as active** task guide to learn how a new ER solution provider can be registered.
 4.	On the selected tile, click **Repositories**.
 
     ![Picture 1](media/ger-providers-tiles.png)
