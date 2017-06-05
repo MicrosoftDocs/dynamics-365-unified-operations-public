@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 31221
-ms.assetid: bf3ed6ce-502f-4932-a168-7d213fa40424
 ms.search.region: France
 # ms.search.industry: 
 ms.author: epopov
