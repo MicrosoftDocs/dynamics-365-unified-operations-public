@@ -31,10 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 # Product information for cluster picking
-Cluster picking allows you to pick items for several orders at the same time. When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters. You can verify Items in cluster picking during the cluster picking process.
+Cluster picking allows you to pick items for several orders at the same time. When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters. You can verify items in cluster picking during the cluster picking process.
 
 ## Where it applies
-Item verification for cluster picking works the same way as when you verify items in a non-cluster picking processes. The setup is based on the product barcode setup.
+Item verification for cluster picking works the same way as when you verify items in a non-cluster picking processes. The setup is based on the product bar code setup.
 
 ## Set up item verification with cluster picking
 1.	On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
