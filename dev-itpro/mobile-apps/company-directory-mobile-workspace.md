@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Company directroy mobile workspace
-description: The Company directory mobile workspace lets users view and contact other employees in their organization.
+title: Company directory mobile workspace
+description: This topic provides information abou the Company directory mobile workspace, which lets users view and contact other employees in their organization.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
@@ -31,19 +31,17 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-
 This topic provides information about the **Company directory** mobile workspace. This workspace lets users view and contact other employees in their organization.
 
 This mobile workspace can be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
 
 ## Overview
+The **Company directory** mobile workspace lets users perform these tasks:
 
-With the **Company directory** mobile workspace, users can:
-- View a list of employees in the organization
-- Search for employees in the organization
-- View contact information for employees
-- Contact employees from profile information
-
+- View a list of employees in the organization.
+- Search for employees in the organization.
+- View contact information for employees.
+- Contact employees from the profile information.
 
 ## Prerequisites
 Before you can use this mobile workspace, the following prerequisites must be met.
@@ -58,13 +56,13 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </thead>
 <tbody>
 <tr class="odd">
-<td>One of the following must be deployed in your organization:
-<ul><li>Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</li>
-<li>Dynamics 365 for Talent</li>
+<td>One of the following products must be deployed in your organization:
+<ul><li>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</li>
+<li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>
 <td>System administrator</td>
-<td>If you don't already have Dynamics 365 for Finance and Operations, Enterprise editition July 2017 update deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don't already have Dynamics 365 for Talent deployed in your organization, the system administrator can access a trial version <a href="https://www.microsoft.com/en-us/dynamics365/talent">here</a>.
+<td>If you don't already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don't already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent webpage</a>.
 </td>
 </tr>
 <tr class="even">
@@ -75,9 +73,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </tbody>
 </table>
 
-
 ## Download and install the mobile app
-
 Download and install the Dynamics 365 for Unified Operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
@@ -85,19 +81,17 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 ## Sign in to the mobile app
 1.  Start the app on your mobile device.
-2.  Enter your Dynamics 365 URL.
+2.  Enter your Microsoft Dynamics 365 URL.
 3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 4.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
-
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## View the company directory by using the mobile workspace
-1.	In the mobile app, select the **Company directory** workspace. A list of employees will display.
-3.	Select an employee. This will open the **Employee profile** page. Information included on this page is first name, last name, title, and department.
+1.	In the mobile app, select the **Company directory** workspace. A list of employees is shown.
+3.	Select an employee. The **Employee profile** page appears. The information on this page includes the employee's first name, last name, title, and department.
 
 ## Search the company directory by using the mobile workspace
 1.	In the mobile app, select the **Company directory** workspace.
-2.	In the **Search** field, enter first name, last name, title, or department to initiate the search.
-3.	Select an employee. This will open the **Employee profile** page. Information included on this page is first name, last name, title, and department.
-
+2.	In the **Search** field, enter an employee's first name, last name, title, or department to start the search.
+3.	Select an employee. The **Employee profile** page appears. The information on this page includes the employee's first name, last name, title, and department.
