@@ -34,3 +34,7 @@ ms.dyn365.ops.version: Platform update 8
 [!include[banner](../includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8. This version was released in June 2017 and has a build number of 7.0.XXXX.XXXXX.
+
+## Templates for configuration data projects 
+A set of default configuration templates provides the necessary entities and sequencing to be able to copy configuration data from one instance to another instance in a single step, using a configuration data project.
+
