@@ -2,7 +2,7 @@
 # required metadata
 
 title: My team mobile workspace
-description: The My team mobile workspace lets users view their direct reports and extended staff, as well as send praise for individuals in their reporting chain.
+description: This topic provides information about the My team mobile workspace, which lets users view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
@@ -31,18 +31,17 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-
-This topic provides information about the **My team** mobile workspace. This workspace lets users view their direct reports and extended staff, as well as send praise for individuals in their reporting chain..
+This topic provides information about the **My team** mobile workspace. This workspace lets users view their direct reports and extended staff. They can also send praise to individuals in their reporting chain.
 
 This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
 
-
 ## Overview 
-With the **My team** mobile workspace, users can:
-- View a list of a manager’s direct reports
-- View a list of a manager’s extended reporting team
-- View detailed information for each team member such as birth date, seniority date, years of service, compensation and performance information
-- Send praise to any individual within the manager’s extended reporting team
+The **My team** mobile workspace lets users perform these tasks:
+
+- View a list of a manager’s direct reports.
+- View a list of a manager’s extended reporting team.
+- View detailed information for each team member, such as birth date, seniority date, years of service, and compensation and performance information.
+- Send praise to any individual in the manager’s extended reporting team.
 
 ## Prerequisites
 Before you can use this mobile workspace, the following prerequisites must be met.
@@ -57,13 +56,13 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </thead>
 <tbody>
 <tr class="odd">
-<td>One of the following must be deployed in your organization:
-<ul><li>Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</li>
-<li>Dynamics 365 for Talent</li>
+<td>One of the following products must be deployed in your organization:
+<ul><li>Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</li>
+<li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>
 <td>System administrator</td>
-<td>If you don't already have Dynamics 365 for Finance and Operations, Enterprise editition July 2017 update deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don't already have Dynamics 365 for Talent deployed in your organization, the system administrator can access a trial version <a href="https://www.microsoft.com/en-us/dynamics365/talent">here</a>.
+<td>If you don't already have Finance and Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>. If you don't already have Talent deployed in your organization, the system administrator can access a trial version from the <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent webpage</a>.
 </td>
 </tr>
 <tr class="even">
@@ -74,7 +73,6 @@ Before you can use this mobile workspace, the following prerequisites must be me
 </tbody>
 </table>
 
-
 ## Download and install the mobile app
 
 Download and install the Dynamics 365 for Unified Operations mobile app:
@@ -84,26 +82,24 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 
 ## Sign in to the mobile app
 1.  Start the app on your mobile device.
-2.  Enter your Dynamics 365 URL.
+2.  Enter your Microsoft Dynamics 365 URL.
 3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 4.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
-
 
 [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## View team members by using the My team mobile workspace
-1.	In the mobile app, select the **My team** workspace. A list of team members will display, including their title and any direct reports that they may have.
-2.	Select a team member. This will open the **Team member summary** page. Information included on this page are birthdate, seniority date, years of service, years in position and compensation information.
+1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that he or she has.
+2.	Select a team member. The **Team member summary** page appears. The information on this page includes the team member's birth date, seniority date, years of service, years in his or her current position, and compensation information.
 
 ## View extended team members by using the My team mobile workspace
-1.	In the mobile app, select the **My team** workspace. A list of team members will display, including their title and any direct reports that they may have.
-1.	Select the **Direct reports** link. A list of your extended team will display.
-1.	Select a team member. This will open the **Team member summary** page. Information included on this page are birthdate, seniority date, years of service, years in position and compensation information.
+1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that he or she has.
+1.	Select the **Direct reports** link. A list of your extended team is shown.
+1.	Select a team member. The **Team member summary** page appears. The information on this page includes the team member's birth date, seniority date, years of service, years in his or her current position, and compensation information.
 
 ## Send praise about team members by using the My team mobile workspace
-1.	In the mobile app, select the **My team** workspace. A list of team members will display, including their title and any direct reports that they may have.
-1.	Select a team member. This will open the **Team member summary** page.
+1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that he or she has.
+1.	Select a team member. The **Team member summary** page appears.
 1.	Select **Send praise**. 
-1. Enter text regarding the praise that you want to send. 
+1. Enter the text of the praise that you want to send. 
 1. Select **Done**.
-
