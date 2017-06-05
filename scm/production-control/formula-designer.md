@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -23,8 +23,8 @@ ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: conradv
+ms.search.industry: 
+ms.author: cvocph
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
