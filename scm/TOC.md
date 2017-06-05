@@ -73,7 +73,7 @@
 #### BOM and formula
 ##### [Bills of materials and formulas](production-control/bill-of-material-bom.md)
 ##### [Use the BOM designer](production-control/bom-designer-functionality.md)
-##### Use the formula designer
+##### [Use the formula designer](production-control/formula-designer.md)
 #### Routes
 #### Lean manufacturing
 ### Prepare products for warehouse and logistics
