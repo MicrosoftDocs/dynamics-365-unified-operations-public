@@ -102,8 +102,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or 
 </ol></td>
 </tr>
 <tr class="odd">
-<td>The <strong>Vendor collaboration</strong> mobile workspace must be published.</td>
-<td>System administrator</td>
+<td>The <strong>Vendor collaboration</strong> mobile workspace must be published.</td><td>System administrator</td>
 <td>See <a href="/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publish a mobile workspace</a>.</td>
 </tr>
 <tr class="even">
@@ -138,7 +137,7 @@ Download and install the Dynamics 365 for Unified Operations mobile app:
 ## Use the Vendor collaboration mobile workspace
 When you select the **Vendor collaboration** workspace, you’ll see the following options:
 
-    [![Vendor collaboration mobile workspace](./media/vendor-collaboration-mobile-app.png)
+    ![Vendor collaboration mobile workspace](./media/vendor-collaboration-mobile-app.png)
 
 The **Vendor collaboration** workspace includes the following pages:
 
