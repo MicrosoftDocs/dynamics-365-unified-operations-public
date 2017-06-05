@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import Electronic Reporting configurations
-description: How to import Electronic reporting (ER) configurations from LCS to on-premises Dynamics 365 for Operation application
+description: How to import Electronic reporting (ER) configurations from LCS to an on-prem application
 author: kfend
 manager: AnnBe
 ms.date: 06/02/2017
@@ -32,11 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Import Electronic Reporting configurations
 
-This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS) and bring them to the Dynamics 365 for Operation application that is deployed on-premises.
+This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS) to an application that is deployed on-prem and how to upload the ER configurations to the on-prem application from LCS.
 
-This tutorial guides you through the process of uploading the required versions of Electronic reporting (ER) configurations to the on-premises Dynamics 365 for Operation application from Microsoft Dynamics Lifecycle Services (LCS).
-
-1.  Sign in to Dynamics 365 for Operations by using one of the following roles:
+1.  Sign in to your on-prem application using one of the following roles:
     * Electronic reporting developer
     * Electronic reporting functional consultant
     * System administrator
@@ -49,12 +47,12 @@ This tutorial guides you through the process of uploading the required versions 
     ![Picture 1](media/ger-providers-tiles.png)
 
 5.	On the **Configuration repositories** page, in the grid, select the existing repository of the **FILE SYSTEM** type. If this repository doesn't appear in the grid, follow these steps:
-    * Click Add to add a new repository.
-    * Select **FILE SYSTEM** as the repository type.
-    * Click **Create repository**.
-    * Enter a name and description for the repository.
-    * Enter a path of the work directory pointing to a folder of the local file system where the belonging to this repository ER configurations will be stored.
-    * Click **OK** to confirm the new repository entry.
+    1. Click **Add** to add a new repository.
+    2. Select **FILE SYSTEM** as the repository type.
+    3. Click **Create repository**.
+    4. Enter a name and description for the repository.
+    5. Enter a path of the work directory pointing to a folder of the local file system where the belonging to this repository ER configurations will be stored.
+    6. Click **OK** to confirm the new repository entry.
 6.	In the grid, select the new repository of the **FILE SYSTEM** type.
 
     ![Picture 2](media/ger-file-repository.png)
