@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: ERSolutionTable, ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
@@ -84,4 +84,3 @@ This tutorial guides you through the process of uploading the required versions 
 
 **A**: It happened since a new configuration has been added to the Shared asset library and the archiving of GER configurations is in progress.
 
-[!include[banner](../includes/banner.md)]
