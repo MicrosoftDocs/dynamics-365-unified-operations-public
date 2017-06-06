@@ -11,6 +11,7 @@
 ## [Financial performance](financial-performance-power-bi-content-pack.md)
 ## [Organizational training](organizational-training-analysis-power-bi-content-pack.md)
 ## [Practice manager](practice-manager-power-bi.md)
+## [Production performance](production-performance-power-bi.md)
 ## [Purchasing](purchase-content-pack-for-power-bi.md)
 ## [Recruiting](recruiting-analysis-power-bi-content-pack.md)
 ## [Retail channel performance ](retail-channel-performance-dashboard-power-bi-data.md)

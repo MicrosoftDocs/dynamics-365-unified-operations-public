@@ -3,7 +3,7 @@
 
 title: Allocation rules for fixed assets
 description: In Japan, a fixed asset is registered under an administrative department, and the depreciation amount must be allocated among the usage departments. You can set up an allocation rule to allocate depreciation amounts to multiple financial dimensions by percentage. This article answers some frequently asked questions about the allocation rules for fixed assets.
-author: ShylaThompson
+author: RichardLuan
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -17,14 +17,14 @@ ms.search.form: AssetAllocationRuleSetup_CN
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 10194
 ms.assetid: ba1302f1-5b7d-44c4-af00-ec629f388e19
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: leguo
+ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

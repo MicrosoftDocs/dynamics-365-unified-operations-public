@@ -238,4 +238,62 @@ Make sure the thumbprint in CloudEnvironment.Config doesn't have invisible Unico
 ![Unicode code converter](media/unicode-extra.jpg)
 
 
+## Zoom factor
+Sometimes you get the error related to IE zoom factor. 
+
+## Error example
+
+```
+Result StackTrace:          
+at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 1108
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 862
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 830
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities) in c:\Projects\webdriver\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 89
+   at OpenQA.Selenium.IE.InternetExplorerDriver..ctor(InternetExplorerDriverService service, InternetExplorerOptions options) in c:\Projects\webdriver\dotnet\src\webdriver\IE\InternetExplorerDriver.cs:line 127
+   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.InternetExplorerBrowser.GetWebDriver(Uri initialUri)
+   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.SeleniumBrowser.LaunchWithAuthentication(Uri targetUri)
+   at MS.Dynamics.TestTools.CloudCommonTestUtilities.Authentication.Browser.AuthenticatedBrowser.CreateSession(SupportedBrowser browser, IAuthenticator authenticator, Uri launchUri)
+   at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenPipeline()
+   at Microsoft.Dynamics.TestTools.Dispatcher.JsDispatcher.OpenClient(ClientState initialState, ClientBehavior behavior)
+   at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.SetClientState(ClientState state)
+   at Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.set_Company(String value)
+   at MS.Dynamics.Performance.Application.TaskRecorder.Free_Text_InvoiceBase.TestSetup() in C:\PerfSDK\Scripts\SampleProject\PerfSDKSample\Generated\Free_Text_InvoiceBase.cs:line 50
+Result Message:              Initialization method MS.Dynamics.Performance.Application.TaskRecorder.Free_Text_InvoiceBase.TestSetup threw exception. System.InvalidOperationException: System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 200%. It should be set to 100% (NoSuchDriver).
+```
+
+### Solution
+The IE zoom factor can be set to 100% by changing the following keys:
++ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup = 0
++ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\ResetZoomOnStartup2 = 0
++ Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Internet Explorer\Zoom\Zoomfactor = 80000
+
+Depending on the version of the local machine that is being used, before starting the RDP session it may be necessary to “Change the size of text, apps and other items”. This field is available by right-clicking on your display and selecting Display settings. 
+
+## Missing configuration file
+
+```
+Result Stack Trace:
+System.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors(ServiceEndpoint serviceEndpoint, String configurationName)
+System.ServiceModel.ChannelFactory.ApplyConfiguration(String configurationName, Configuration configuration)
+System.ServiceModel.ChannelFactory.InitializeEndpoint(String configurationName, EndpointAddress address, Configuration configuration)
+System.ServiceModel.Configuration.ConfigurationChannelFactory`1..ctor(String endpointConfigurationName, Configuration configuration, EndpointAddress remoteAddress)
+MS.Dynamics.TestTools.CloudCommonTestUtilities.Services.ConfigurationClientBase`1.InitConfigurationChannelFactory(Configuration config, String endpointConfigurationName, EndpointAddress remoteAddress)
+MS.Dynamics.Test.Team.Foundation.WebClient.Common.InteractionService.ReliableCommunicationManagerProxy..ctor(String endpointConfigurationName, EndpointAddress remoteAddress)
+MS.Dynamics.Test.Team.Foundation.WebClient.Common.InteractionService.ClientCommunicationManager..ctor(String endpointConfigurationName)
+MS.Dynamics.Test.Team.Foundation.WebClient.Common.InteractionService.ClientCommunicationManager..ctor()
+Microsoft.Dynamics.TestTools.Dispatcher.ISDispatcher.ISDispatcher.OpenClient(ClientState initialState, ClientBehavior behavior)
+Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.SetClientState(ClientState state)
+Microsoft.Dynamics.TestTools.Dispatcher.Client.DispatchedClient.set_Company(String value)
+MS.Dynamics.Performance.Application.GFM.PDLTrend.ProcureToPayTrend.ProcureToPaymentTrend() in 
+
+Debug Trace:
+Default: DateTime="09/20/2016 23:53:42" "Changing company from  to USMF"
+Default: DateTime="09/20/2016 23:53:43" "Opening ISDispatcher client."
+Default: DateTime="09/20/2016 23:53:43" "Reliable communication manager proxy pointing to URL: https://<BaseURL>/Services/ReliableCommunicationManager.svc"
+```
+
+### Solution
+This error message indicates that you’re missing **MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config**. Check that this file has been added to vsonline.testsettings, note there are two files with similar names except one is a __\*.dll__ and the other is __\*dll.config__. 
+
+
 
