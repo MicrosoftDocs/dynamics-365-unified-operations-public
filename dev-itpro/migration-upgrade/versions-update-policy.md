@@ -40,9 +40,9 @@ This topic outlines the lifecycle and support policies for the Dynamics 365 for 
 ## Modern Lifecyle Policy
 The [Modern Lifecycle Policy](https://support.microsoft.com/en-us/help/30881/modern-lifecycle-policy) covers products and services that are serviced and supported continuously. Under this policy, the product or service remains in support if the following criteria are met:
 
-1.	Customers must stay current as per the servicing and system requirements published for the product or service.
-2.	Customers must be licensed to use the product or service.
-3.	Microsoft must currently offer support for the product or service.
+- Customers must stay current as per the servicing and system requirements published for the product or service.
+- Customers must be licensed to use the product or service.
+- Microsoft must currently offer support for the product or service.
 
 The Microsoft Dynamics 365 for Finance and Operations, Enterprise edition cloud service and the Dynamics 365 for Finance and Operations, Enterprise edition on-premises software is covered by the Modern Lifecycle Policy. Licensed customer must stay current with updates based on the following support policies:
 
