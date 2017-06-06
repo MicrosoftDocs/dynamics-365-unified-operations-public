@@ -54,7 +54,7 @@ The form note is based on the mathematical sign of the balance amount for the co
 - If the balance amount is equal to the compensation letter, the balance note is printed.
 
 ### Set up a vendor and a customer
-A legal entity or individual can be a customer or vendor of your company. The compensation option is available only to parties that are associated. To set up the association, open the account details for a customer or vendor account, and then, on the **Miscellaneous** tab, in the **Remittance** field group, select an associated party account: Customer account for a vendor master or Vendor account for a customer master.
+A legal entity or individual can be a customer or vendor of your company. The compensation option is available only to parties that are associated. To set up the association, open the account details for a customer or vendor account, and then, on the **Miscellaneous** tab, in the **Remittance** field group, select an associated party account: **Customer account** for a vendor master or **Vendor account** for a customer master.
 
 ### Create a compensation journal
 You can optionally create a journal that will be used to present a compensation proposal. You can post the proposal and also print a compensation report. Go to **General journal** > **Journal entries** > **General journals**.
