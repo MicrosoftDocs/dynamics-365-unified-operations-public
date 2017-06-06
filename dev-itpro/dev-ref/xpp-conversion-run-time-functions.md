@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -273,21 +273,28 @@ The *object* parameter can be of most data types, but useful output is obtained 
     1 is output, from input of NoYes::Yes as an enumeration
     ****/
 
-## anytodate (new)
-anytoenum (new)
----------------
+## anytodate
+See [any2Date](#any2date).
 
-## anytoguid (new)
-anytoint (new)
---------------
+## anytoenum
+See [any2Enum](#any2enum).
 
-## anytoint64 (new)
-anytoreal (new)
----------------
+## anytoguid
+See [any2Guid](#any2guid).
 
-## anytostr (new)
-char2Num
---------
+## anytoint
+See [any2Int](#any2int).
+
+## anytoint64
+See [any2Int64](#any2int64).
+
+## anytoreal
+See [any2Real](#any2real).
+
+## anytostr
+See [any2Str](#any2str).
+
+## char2Num
 
 Converts a character in a string to the ASCII value of the character.
 

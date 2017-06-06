@@ -5,10 +5,10 @@ title: Task Recorder in Dynamics 365 for Operations | Microsoft Docs
 description: This article describes the how to use Task Recorder to record Microsoft Dynamics 365 for Operations client functions.
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -349,11 +349,11 @@ Clicking this button will expand the Task guide pop-up to show additional inform
 -   A **Note**
     -   A Note may contain scenario-specific information that will help provide context to the user about the current step of the Task guide.
 
-## Screenshot Extension setup
+## (PRE-RELEASE) Screenshot Extension setup
 
 ### Document generation setup (optional)
 
-Task Recorder can take screenshots of the browser as a user records a business process. Task Recorder uses these screenshots to generate Microsoft Word documents after the user completes the recording. In order to have screenshots included in the generated document, a Google Chrome extension must be installed that enables Task Recorder to capture screenshots during recording. To install the extension:
+Using a pre-release Chrome extension, Task Recorder is able to take screenshots of the browser as a user records a business process. After the user completes the recording, Task Recorder can then use these screenshots to generate Microsoft Word documents. To enable this functionality, follow the steps below to install the pre-release Google Chrome extension that enables Task Recorder to capture screenshots during recording.
 
 1.  Open Google Chrome
 2.  Go to **Menu &gt; More tools &gt; Extensions**. 

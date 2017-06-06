@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -47,7 +47,9 @@ The Microsoft Dynamics 365 for Operations web application can run in any of the
 -   Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet
 -   Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad
 
-To find the latest release for each web browser, go to the software manufacturer’s website. **Notes:**
+To find the latest release for each web browser, go to the software manufacturer’s website. 
+
+**Notes:**
 
 -   To capture images that are generated from Task Recorder and include them in Microsoft Word documents, you must have a Chrome extension installed. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   The Workflow Editor is started as a ClickOnce application. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications. The Workflow Editor ClickOnce application requires a 64-bit compatible operating system.
@@ -64,10 +66,12 @@ Retail Cloud POS for Dynamics 365 for Operations can run in any of the followin
 -   Chrome (latest publicly available version) on Windows 10, Windows 8.1, or Windows 7
 
 ## Network requirements
--   Dynamics 365 for Operations is designed for networks with latency of less than 150 milliseconds (ms). This is the latency from a browser client to the Microsoft Azure data center that hosts Dynamics 365 for Operations. We recommend that you test network latency at <http://www.azurespeed.com>.
+-   Dynamics 365 for Operations is designed for networks with latency of 250-300 milliseconds (ms) or less. This is the latency from a browser client to the Microsoft Azure data center that hosts Dynamics 365 for Operations. We recommend that you test network latency at <http://www.azurespeed.com>.
 -   Bandwidth requirements for Dynamics 365 for Operations depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps). However, for scenarios that have high payload requirements, such as workspaces or scenarios that involve extensive customization, more bandwidth is recommended.
 
-In general, Dynamics 365 for Operations is optimized for the Internet. The number of round trips from a browser client to the Azure data center is very small, and the whole payload is compressed. **Warning:** Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a preview version of Dynamics 365 for Operations.
+In general, Dynamics 365 for Operations is optimized for the Internet. The number of round trips from a browser client to the Azure data center is very small, and the whole payload is compressed. 
+
+**Warning:** Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a preview version of Dynamics 365 for Operations.
 
 ## .NET Framework requirements
 Dynamics 365 for Operations requires .NET Framework version 4.6.2 for all click-once applications, such as the document routing agent. For installation instructions, see [Installing the .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
@@ -95,7 +99,8 @@ Dynamics 365 for Operations requires .NET Framework version 4.6.2 for all click-
 
 -   Retail hardware station is a 32-bit application, but it will run on both x86 and x64 architectures.
 -   Retail hardware station is supported on the following operating systems:
-    -   Windows 7 Professional, Enterprise, and Ultimate editions **Note:** Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
+    -   Windows 7 Professional, Enterprise, and Ultimate editions 
+    **Note:** Windows 7 is supported only if Internet Explorer 11 is manually installed on the system.
     -   Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions
     -   Windows 10 Pro, Enterprise, and Enterprise LTSB editions
 

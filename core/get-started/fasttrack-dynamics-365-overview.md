@@ -5,10 +5,10 @@ title: Microsoft FastTrack for Dynamics 365 overview
 description: Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. 
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/12/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -43,8 +43,8 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 
 | **Minimum seats**                                                                  | **Eligible SKUs, Apps, or Plans** |
 |--------------------------------------------------------------------------------|-------------------------------|
-| 250 combined eligible App or Plan user subscription licenses                   | Sales <br> Field service <br>Customer service <br> Customer service<br>Project service automation<br>Plan 1<br>Plan 2 with a commitment to implement Sales, Field Service, Customer Service or Project Service Automation apps                         |
-| 20 combined eligible App or Plan user subscription licenses, or the equivalent | Operations<br>Plan 2, with a commitment to implement the Operations app<br><br>**Note** 2.5 device subscription licenses are considered the equivalent of one Dynamics 365 for Operations user subscription license   
+| 250 combined eligible App or Plan user subscription licenses                   | Sales <br> Field service <br>Customer service <br> Project service automation<br>Plan 1<br>Plan 2 with a commitment to implement Sales, Field Service, Customer Service, or Project Service Automation apps                         |
+| 20 combined eligible App or Plan user subscription licenses, or the equivalent | Operations<br>Plan 2, with a commitment to implement the Operations app<br><br>**Note:** 2.5 device subscription licenses are considered the equivalent of one Dynamics 365 for Operations user subscription license   
 
 **Product offering: Dynamics CRM Online**
 
@@ -61,11 +61,11 @@ Microsoft FastTrack for Dynamics 365 is our customer success service designed to
 
 
 ## Overview: Microsoft FastTrack for Dynamics 365
-During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assistance in removing blockers during implementation through the following interactions:
+During FastTrack engagements, the Dynamics FastTrack engineering team will offer customers opportunities to get practical guidance on cloud deployment, help with usage and adoption, and assist with removing blockers during implementation through the following interactions:
 
 -   **Regular touchpoints** are typically 30-minute calls that continue throughout the duration of the engagements. Small technical proof points are sometimes provided to help remove customer roadblocks.
--   ***Workshops*** are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.
--   ***Tech talks*** focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and/or content.
+-   **Workshops** are interactive outcome-based activities, and may involve automation and tooling. Customers and partners can provide input prior to the workshops and customize them for their engagements.
+-   **Tech talks** focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and/or content.
 
 All sessions are delivered remotely by the FastTrack engineering team. We have time zone-based resources to cover major markets in the Americas, EMEA, and APAC. [![FastTrack diagram](./media/fasttrack-ops-1024x438.png)](./media/fasttrack-ops.png)
 
@@ -79,15 +79,15 @@ The Kickoff workshop is designed to initiate FastTrack engagements and provide i
 -   Team introductions
 -   FastTrack for Dynamics 365 for Operations overview
 -   Project goals and objectives
--   Engagement scope, schedule and adoption targets
--   Responsibilities among customer, partner, and Microsoft FastTrack engineering team
--   Explanation on how services are delivered, where and when to seek help from Microsoft FastTrack engineering team
+-   Engagement scope, schedule, and adoption targets
+-   Responsibilities among customers, partners, and the Microsoft FastTrack engineering team
+-   Explanation on how services are delivered, where and when to seek help from the Microsoft FastTrack engineering team
 -   Introduction to Dynamics Lifecycle Service (LCS) and Dynamics 365 for Operations Microsoft docs site
 -   Pre-activation checklist
 -   Environment planning
 -   Regular touchpoint schedule
 
-The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from customer, partner and Microsoft teams.
+The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from customer, partner, and Microsoft teams.
 
 ### Governance workshop
 
@@ -97,10 +97,10 @@ The Governance workshop is designed to provide planning and governance recommend
 -   Implementation approach
 -   Project timeline and key milestones
 -   Risk register – known risk and mitigation plans
--   Guidance on user training, adoption and change management
+-   Guidance on user training, adoption, and change management
 -   How to manage product issues and reach out to Microsoft
     -   Microsoft Support for Dynamics 365 for Operations
-    -   LCS Cloud-powered support
+    -   LCS cloud-powered support
 
 The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer and partner teams. Project managers are mandatory.
 
@@ -125,7 +125,7 @@ The typical format is a 1.5-hour Skype call. The recommended attendees include k
 
 ### Build workshop
 
-The Build workshop is designed to review the development approach, build progress, quality, risks and blockers. Topics are likely to include:
+The Build workshop is designed to review the development approach, build progress, quality, risks, and blockers. Topics are likely to include:
 
 -   Progress on development
 -   Progress on system configuration
@@ -161,27 +161,27 @@ The Post go-live review workshop is designed to wrap up the FastTrack engagement
 -   Review goals and objectives
 -   Discuss lessons learned
 -   Review aged Support items
--   Handover open issues to Support teams
+-   Hand over open issues to Support teams
 -   Support overview content
 -   Pro-Direct Support overview (if applicable)
 
-The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer, partner and Microsoft teams. Project managers are mandatory.
+The typical format is a 1.5-hour Skype call. The recommended attendees include key stakeholders from customer, partner, and Microsoft teams. Project managers are mandatory.
 
 ## Tech talks
-***Tech talks*** focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and content.
+Tech talks focus on providing technical depth and best practices that empower both customers and partners with knowledge that is specific to the subject areas. These talks often provide an overview of available tooling and content.
 
 ### Lifecycle Services (LCS) usage tech talk
 
 The Lifecycle Services usage tech talk is designed to introduce customers to LCS. Key topics might include:
 
 -   Introduction to LCS
--   LCS scope, schedule and adoption targets
+-   LCS scope, schedule, and adoption targets
 -   Customer, partner, and Microsoft team usage scenarios
 -   Common usage and related best practices
 -   How to stay on top of new features/services available
 -   Further learning opportunities
 
-The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from the customer, partner and Microsoft teams.
+The typical format is a one-hour Skype call. The recommended attendees include key stakeholders from the customer, partner, and Microsoft teams.
 
 ### Tenant/Visual Studio online configuration tech talk
 
@@ -205,14 +205,14 @@ The Environment plan tech talk is designed to provide guidance on how to plan an
 -   Performance testing
 -   Configuration management
 
-The typical format is one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
+The typical format is a one-hour Skype call. The recommended attendees include technical resources from customer and partner teams.
 
 ### Development Application Lifecycle Management (ALM) tech talk
 
 The Development ALM tech talk is designed to provide guidance on ALM best practices. Key topics might include:
 
 -   Packaging and release management
--   Build orchestration - builds and build VMs
+-   Build orchestration – builds and build VMs
 -   Source control
 -   Branching
 -   Developer VMs
@@ -222,11 +222,11 @@ The typical format is a one-hour Skype call. The recommended attendees include t
 
 ### Integration guidelines tech talk
 
-Integration guidelines tech talk is designed to provide guidance on key integration topics throughout implementation. Key topics might include:
+The Integration guidelines tech talk is designed to provide guidance on key integration topics throughout implementation. Key topics might include:
 
 -   Integration approaches for the cloud
 -   Recurring integrations
--   File based integrations
+-   File-based integrations
 -   Role of data entities in integrations
 -   Integration platform choices
 
@@ -237,9 +237,9 @@ The typical format is a one-hour Skype call. The recommended attendees include t
 The Reporting and BI guidance tech talk is designed to provide guidance on leveraging key analytics capabilities of Dynamics 365 for Operations. Key topics might include:
 
 -   Entity store
--   Power Bi
+-   Power BI
 -   Configuration
--   Content packs--building and consuming
+-   Content packs – building and consuming
 -   Common pitfalls
 -   Continued learning
 
@@ -247,7 +247,7 @@ The typical format is a one-hour Skype call. The recommended attendees include t
 
 ### Data management tech talk
 
-The Data management tech talk is designed to provide guidance on how to migrate and/or manage data entities and packages. Key topics:
+The Data management tech talk is designed to provide guidance on how to migrate and/or manage data entities and packages. Key topics might include:
 
 -   Data entities
 -   Data packages
@@ -285,6 +285,3 @@ The Servicing tech talk is designed to provide guidance on the servicing options
 -   Cloud powered support
 
 The typical format is a one-hour Skype call. The recommended attendees include project managers and technical resources from customer and partner teams.
-
-
-

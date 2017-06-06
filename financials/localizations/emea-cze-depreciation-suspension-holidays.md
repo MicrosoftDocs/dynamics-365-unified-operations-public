@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265124
-ms.assetid: 638660f3-6a42-4a37-b90c-576feb15e1a4
 ms.search.region: Czech Republic
 # ms.search.industry: 
 ms.author: epopov
