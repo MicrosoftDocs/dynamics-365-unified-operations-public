@@ -51,7 +51,7 @@ The Microsoft Dynamics 365 for Finance and Operations, Enterprise edition cloud 
 
 **Note:** The most current certified platform may not be the most current release of the platform.
 
-The customer is in control of installing updates in their environments. Microsoft commits to support the deployments of Dynamics 365 for Finance and Operations, Enterprise edition on-premises software, through calendar year 2027 at a minimum, provided that the customer keeps the deployed software current according to the Modern Lifecycle Policy. 
+The customer is in control of installing updates in their environments. Microsoft commits to support the deployments of Dynamics 365 for Finance and Operations, Enterprise edition on-premises software through calendar year 2027 at a minimum, provided that the customer keeps the deployed software current according to the Modern Lifecycle Policy. 
 
 ## Cloud service update policies
 
