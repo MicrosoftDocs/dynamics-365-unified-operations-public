@@ -63,16 +63,11 @@ The following visualizations are available on each report page.
 | Report page            | Visualization        |
 |------------------------|----------------------|
 | Fixed asset valuations | Total net book value |
-| Valuations maps        | Total net book value |
+| Fixed asset valuations | Net book values by fixed asset group |
+| Fixed asset valuations | Acquisition values |
+| Fixed asset valuations | Disposal values |
+| Fixed asset valuations | Fixed asset details |
+| Valuations maps      | Total net book value |
+| Valuations maps      | Fixed asset locations |
+| Valuations maps      | Fixed asset details |
 
--   Net book values by fixed asset group
-
--   Acquisition values
-
--   Disposal values
-
--   Fixed asset details
-
--   Fixed asset locations
-
--   Fixed asset details
