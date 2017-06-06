@@ -2,7 +2,9 @@
 # required metadata
 
 title: Retail Store Scale Unit configuration and installation
-description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Operations headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Retail Store Scale Unit combines the Retail channel database, Retail Async Client, Retail Server, and Retail Cloud POS components. A Dynamics 365 for Operations environment already provides these components, but you can now configure them to work locally in a store, in either a single-computer setup (the default option) or a multi-computer setup. This topic also explains how to uninstall and troubleshoot Retail Store Scale Unit.
+
+description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Microsoft Dynamics 365 for Operations headquarters, download it, and install it on one or more computers in a brick-and-mortar store. 
+
 author: jashanno
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +12,6 @@ ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -220,10 +221,13 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 21. On the Action Pane, select **Save**.
 22. When you've finished, return to the installer, and select **Finish**.
 
+
+
     > [!NOTE]
     > The final page of the installer includes valuable information that you can use to test and validate that all components work correctly. Keep this page open for as long as you require to complete validation.
 
 > [!NOTE]
+
 > - If the installer doesn't show a check mark for Retail Server, Async Client, or any other component, wait 10 minutes, so that any cached values can be updated in the cloud. Then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
 > - If you followed all the steps correctly, your configuration should have these characteristics:
 >     - In Azure, two web applications have been automatically generated through the installer:
@@ -238,9 +242,11 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 > [!NOTE]
 > Only advanced users should install Retail Store Scale Unit across multiple computers. The following set of procedures explains how to install the Retail channel database and Async Client on one computer, and Retail Server and Retail Cloud POS on a second computer. The instructions assume that both systems are on the same domain, and that users for the services that will be installed have already been created on both systems. It's important that you perform all configuration in Retail headquarters.
 
+
 #### Installation on the first computer
 
 On the first computer, run the Retail Store Scale Unit self-service installer as described earlier in this topic, but make the following changes.
+
 
 1. Select only Retail Channel Database and Async Client as the components to install. Then select **Next** to continue with the installation. 
 
@@ -267,10 +273,12 @@ On the first computer, run the Retail Store Scale Unit self-service installer as
 15. Start Windows Firewall with Advanced Security.
 16. In Windows Firewall, create an inbound rule to open TCP port 1433.
 
+
 > [!NOTE]
 > For detailed information about SQL Server and Windows Firewall, see [Configure a Windows Firewall for Database Engine Access](https://msdn.microsoft.com/en-us/library/ms175043.aspx).
 
 #### Installation on the second computer
+
 
 On the second computer, run the Retail Store Scale Unit Self-service installer as described earlier in this topic, but make the following changes.
 
@@ -351,6 +359,7 @@ According to current security standards, the following options should be set in 
 - No additional network ports should be open, unless they are required for known, specified reasons.
 - You must disable cross-origin resource sharing, and you must specify the allowed origins that are accepted.
 - You should use only trusted certificate authorities to obtain certificates that will be used on Store system computers.
+
 
 > [!IMPORTANT]
 > It's critical that you review security guidelines for Internet Information Services (IIS) and Payment Card Industry (PCI) requirements.
