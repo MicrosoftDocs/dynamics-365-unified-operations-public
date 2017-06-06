@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ?????
+ms.search.form: EcoResProductMaintainWorkspace, EcoResProductListPage, EcoResProductVariantMaintainWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -57,9 +57,9 @@ A product is primarily defined by a product number, a name and a description. Ad
  
 The product definition can be created in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. It can also be imported from Product lifecycle management (PLM), or Product data management (PDM), or Product information management (PIM) systems. When more than one instance of Finance and Operations are used, it is common to use one instance as the master of the product data for other instances. This is supported by a large set of data entities that allow to export and import product definition data from one instance to another. 
  
-To support the distribution of product data to many instances of operations, Finance and ODynamics 365 offers the usage of the Common Data Service. The product definitions are exported from an instance of Dynamics 365 for operations to the Common Data Service, where they can be used to provision other business applications, for example Dynamics 365 for Sales with product data. 
+To support the distribution of product data to many instances of operations, Finance and Operations offers the usage of the **Common Data Service**. The product definitions can be exported from an instance of Finance and Operations to the **Common Data Service** where they can be used to provision other business applications, for example Dynamics 365 for Sales with product data. 
  
-Note that in dynamic and agile organizations, product information data change on a daily basis, and the maintenance of accurate and actual product data is a mission critical business process on its own. 
+Note that in dynamic and agile organizations, product information data changes on daily basis, so the maintenance of accurate and actual product data is a critical business process on its own. 
  
 ## Product masters and product variants
 In an agile world, where products have to be adapted to customer needs fast, product definitions specify a set of products instead of a distinct products. In Microsoft Dynamics 365 for operations those generic products are called Product Masters. Product masters hold the definition and rules of how distinct products are described and behave in the  business processes. Based on these definitions, distinct products can be generated, the so called product variants. 
@@ -70,11 +70,11 @@ In Microsoft Dynamics 365 for finance and operations, a product master is associ
  
 There are 3 configuration technologies to choose from:
  
-1.	The predefined variants are defined by predefined product dimensions. The variant definition includes the specific definition of the valid combination of dimensions, like color, style and size. Each combination results in a distinct product variant.
-2.	The dimension based configuration is typically used in manufacturing scenarios allows to use the configuration dimension in the definition of the Bill of material. Once a specific configuration is selected, a the system uses the subset of the Bill of material lines that are valid for the configuration for planning and production. This concept is also called "Global BOM" as it uses one common bill of material for all configurations of a product. 
-3.	The constraint based configuration is using a product configuration model to describe all possible attributes and components that are needed to describe all possible variants of a product in a single model. The constraints of combinations of attributes can be described through regular expressions or table based constraints. Configuration models and Configurators gain more and more importance in product information management and are used across all industries. 
+1.	The predefined variants are defined by predefined product dimensions. The variant definition includes the specific definition of the valid combination of dimensions, such as color, style and size. Each combination results in a distinct product variant.
+2.	The dimension-based configuration is typically used in manufacturing scenarios and lets you use the configuration dimension in the definition of the bills of materials. Once a specific configuration is selected, the system uses the subset of the bill of material lines that are valid for the configuration for planning and production. This concept is also called **Global BOM** because it uses one common bill of material for all configurations of a product. 
+3.	The constraint-based configuration is using a product configuration model to describe all possible attributes and components that are needed to describe all possible variants of a product in a single model. The constraints of combinations of attributes can be described through regular expressions or table-based constraints. Configuration models and configurators become more and more important in product information management and are used across all industries. 
  
-The right choice of the configuration technology for a business process is very important, when planning the implementation of Dynamics 365 for operations, as a product cannot be converted from one model to another after the fact. 
+The right choice of the configuration technology for a business process is very important when you plan the implementation of Finance and Operations because a product cannot be converted from one model to another after the implementation.  
  
 ## Product variant model definition workspace
  
