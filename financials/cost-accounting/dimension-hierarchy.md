@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dimension hierarchy
-description:  
+description: Dimension hierarchy is used in defining reporting structure, cost policies, and security setup in Cost acocunting.  
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/24/2017
@@ -30,11 +30,17 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Dimension hierarchy 
+## Dimension hierarchy 
 
 [!include[banner](../includes/banner.md)]
 
-Dimension hierarchies are let you define the reporting structure that fits into your organization. Here is an example of how a dimension hierarchy can look like. In addition, dimension hierarchies let you define cost policies and set up security at different levels in your organization.
+Dimension hierarchy is used in different places in Cost accounting. It lets you define
+
+- Reporting structure to fit into organization needs
+- Cost policies
+- Security setup in Cost acocunting.
+
+Here is an example of how a dimension hierarchy can look like. 
 
 ![A screenshot that displays a dimension hierarchy](./media/dimension-hierarchy.png)
 
@@ -47,7 +53,7 @@ You can create dimension hierarchies for the following dimension types.
 -   Statistical dimensions
 
 > [!NOTE]
-> You can create multiple dimension hierarchies for the same dimension for different reporting purposes, but a dimension hierarchy can **only** be associated with one dimension. (confused)
+> You can create multiple dimension hierarchies for the same dimension for different reporting purposes.
 
 ## The difference between dimension categorization hierarchy and dimension categorization hierarchy
 
