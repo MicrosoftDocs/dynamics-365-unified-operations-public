@@ -307,7 +307,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Fiscal printers for Poland</td>
-<td>Polish fiscal printers are integrated with Dynamics 365 for Operations. The following types of printers in the local Polish market are supported: Posnet Thermal and Elzab Omega. During invoice posting, the required information is sent to the fiscal printer in the correct format. This feature will be available in a future update.</td>
+<td>Integration with Polish fiscal printers such as the Posnet Thermal and Elzab Omega printer types. During invoice posting, the required information is sent to the fiscal printer in the correct format. This feature will be available in a future update.</td>
 </tr>
 <tr class="odd">
 <td>Bank payment order for Latvia and Lithuania</td>
