@@ -69,7 +69,7 @@ The dimension categorization hierarchy type is used for reporting purpose. It on
 
 This dimension classification hierarchy type is used for defining rules and reporting purposes. It supports all dimensions, such as cost object, cost elements, and statistical dimensions. When you select this type, a dimension member can only be associated once in the hierarchy structure.
 
-### Understand structure in dimension hierarch 
+### Understand structure in dimension hierarchy 
 
 A dimension hierarchy consists of a tree structure with nodes and leaf nodes relationships.
 
@@ -79,9 +79,9 @@ A dimension hierarchy consists of a tree structure with nodes and leaf nodes rel
 
 - A leaf node can only be assigned at the lowest level in the hierarchy.
 
+#### Dimension member ranges 
 - A node can contain 1: n dimension member ranges.
-
-- You can insert IDs that don’t exist as dimension members. This makes your hierarchy resilient for the future.
+- You can insert dimension member IDs that don’t exist as dimension members.  
 
 ### Example
 
@@ -89,21 +89,26 @@ A small company has the following organization structure.
 
 ![a diagram that shows the organization structure](./media/dimension-hierarchy-org.png)
 
-A cost object dimension that represents all the cost centers in the organizations is structured as follows.
+A cost object dimension that represents all the cost centers in the organizations is established as follows.
 
-- Cost object dimension
-- Cost centers
+| Cost object dimension    | 
+|--------------------------|
+| Cost centers|
 
 | Cost object dimension member    | Name                      |
 |---------------------------------|----------------------------------|
-| CC001                           | HR (should it be after assembly) |
+| CC001                           | HR                               |
 | CC002                           | Finance                          |
-| CC003                           | Tax (Needed?)                    |
-| CC007                           | AR/AP (Needed?)                  |
+| CC003                           | Tax                              |
+| CC007                           | AR/AP                            |
 | CC005                           | Assembly                         |
 | CC006                           | Packaging                        |
 
-A cost element dimension that represents all the cost elements in the organizations is structured as follows.
+A cost element dimension that represents all the cost elements in the organizations is established as follows.
+
+| Cost element dimension    | 
+|-------------------------- |
+| Cost elements             |
 
 | Cost element dimension member   | Name                             |
 |---------------------------------|----------------------------------|
@@ -120,7 +125,7 @@ A dimension hierarchy that meets the organizational reporting requirements can b
 |--------------------------|--------------|------------------------------------|-----------------------|
 | Organization             | Cost centers | Dimension classification hierarchy | No                    |
 
-#### Dimension hierarchy
+Dimension hierarchy
 
 |                        |    Dimension member ranges    |                           |
 |------------------------|-------------------------------|---------------------------|
@@ -134,7 +139,7 @@ A dimension hierarchy that meets the organizational reporting requirements can b
 |         Packaging      |    CC005                      |    CC005                  |
 |         Assembly       |    CC006                      |    CC006                  |
 
-A dimension hierarchy that meets the policy requirement can be set up as follows. What policy and why do I need this policy? The table doesn't render correctly!
+A dimension hierarchy that meets the policy requirement can be set up as follows. 
 
 ####  Dimension hierarchy details 
 
@@ -142,7 +147,7 @@ A dimension hierarchy that meets the policy requirement can be set up as follows
 |--------------------------|---------------|------------------------------------|
 | Cost behavior            | Cost elements | Dimension classification hierarchy |
 
-#### Dimension hierarchy
+Dimension hierarchy
 
 |               | Dimension member ranges |                     |
 |---------------|-------------------------|---------------------|
@@ -150,7 +155,6 @@ A dimension hierarchy that meets the policy requirement can be set up as follows
 | Cost behavior |                         |                     |
 |      Fixed cost   | 10001                   | 10011               |
 |      Variable cost   | 40001                   | 40010               |
-
 
 ### Copy a hierarchy
 
