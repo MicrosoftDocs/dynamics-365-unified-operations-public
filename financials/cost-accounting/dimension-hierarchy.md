@@ -55,35 +55,35 @@ You can create dimension hierarchies for the following dimension types.
 > [!NOTE]
 > You can create multiple dimension hierarchies for the same dimension for different reporting purposes.
 
-## The difference between dimension categorization hierarchy and dimension categorization hierarchy
+## Create dimension hierarchy
+
+Go to **Cost accounting** > **Dimensions** > **Dimension hierarchies**. Click **New** to select a dimension hierarchy type.
+
+### Dimension categorization hierarchy and dimension classification hierarchy
 
 The dimension categorization hierarchy type is used for reporting purpose. It only supports the cost element dimensions. When you select this type,
 
--   a dimension member can be associated more than once in the hierarchy structure.
+- A dimension member can be associated more than once in the hierarchy structure.
 
--   a cost element dimension member can be placed in different nodes by assigning a **Cost behavior** to the leaf node.
+- A cost element dimension member can be placed in different nodes by assigning a **Cost behavior** to the leaf node.
 
 This dimension classification hierarchy type is used for defining rules and reporting purposes. It supports all dimensions, such as cost object, cost elements, and statistical dimensions. When you select this type, a dimension member can only be associated once in the hierarchy structure.
 
-## Create a dimension hierarchy
-
-Go to **Cost accounting** \> **Dimensions** \> **Dimension hierarchies**. Click **New** to select a dimension hierarchy type.
-
-### Understand the hierarch structure
+### Understand structure in dimension hierarch 
 
 A dimension hierarchy consists of a tree structure with nodes and leaf nodes relationships.
 
--   A node can have 1: n sub nodes.
+- A node can have 1: n sub nodes.
 
--   A node can’t have both subnodes and leaf nodes assigned.
+- A node can’t have both subnodes and leaf nodes assigned.
 
--   A leaf node can only be assigned at the lowest level in the hierarchy.
+- A leaf node can only be assigned at the lowest level in the hierarchy.
 
--   A node can contain 1: n dimension member ranges.
+- A node can contain 1: n dimension member ranges.
 
--   You can insert IDs that don’t exist as dimension members. This makes your hierarchy resilient for the future.
+- You can insert IDs that don’t exist as dimension members. This makes your hierarchy resilient for the future.
 
-**Examples**
+### Example
 
 A small company has the following organization structure.
 
