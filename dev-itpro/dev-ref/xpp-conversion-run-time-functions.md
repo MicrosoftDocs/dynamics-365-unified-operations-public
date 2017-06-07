@@ -291,7 +291,7 @@ See [any2Int64](#any2int64).
 ## anytoreal
 See [any2Real](#any2real).
 
-## anytostr (new)
+## anytostr
 See [any2Str](#any2str).
 
 ## char2Num
