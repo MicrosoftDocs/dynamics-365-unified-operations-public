@@ -36,7 +36,7 @@ If you are using Microsoft Dynamics AX 2009 SP1, Microsoft Dynamics AX 2012 R2 o
 For detailed information, including documentation and release package downloads, refer to the following pages on either CustomerSource or PartnerSource:
 
 - [CustomerSource page for the India GST release](https://mbs.microsoft.com/customersource/global/AX/downloads/tax-regulatory-updates/GST-India)
-- [PartnerSource page for the India GST release](https://mbs.microsoft.com/partnersource/northamerica/deployment/downloads/tax-regulatory-updates/GST-India)
+- [PartnerSource page for the India GST release](https://mbs.microsoft.com/partnersource/northamerica/deployment/downloads/tax-regulatory-updates/GST-India)(login required)
 
 
 
