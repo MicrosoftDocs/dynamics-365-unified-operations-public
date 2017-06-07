@@ -173,7 +173,7 @@ You can copy a current dimension hierarchy as the starting point for the new dim
 
 You can move up and down a node within its current level in the structure to rearrange the order of nodes for reporting in the **Cost control** workspace.
 
-Move a node to a new designated location in the hierarchy by selecting a target node. There are two ways to move a node: Move below and Move after. What is the difference between the two?
+Move a node to a new designated location in the hierarchy by selecting a target node. There are two ways to move a node: Move below and Move after. 
 
 -   **Move below**
 
@@ -188,13 +188,9 @@ Move a node to a new designated location in the hierarchy by selecting a target 
 
 ## Define dimension hierarchies for reporting
 
-A dimension hierarchy consists of an unlimited number of levels that are available in the **Cost control** workspace.
+Dimension hierarchies are important for reporting. It lets you define the specific structure that fits into the individual organization. The aggregations performed at the node level of the dimension hierarchy allow stakeholders at any level of the organization to see data at any level.
 
-> [!NOTE]
-> If you create reports using **Excel** or **Power BI**, only the first 15 levels of the dimension hierarchies will be exported. This is because a fixed schema is required in Excel and Power BI.
-
-> [!NOTE]
-> Dimension hierarchies are not date effective (?). Any changes made to a dimension hierarchy will be saved to the record immediately, so you **can’t compare** data before this date to after this date.
+Dimension hierarchies are available in the reporting tools listed below. This ensures consistent reporting structure. 
 
 Dimension hierarchies are available in the following reporting tools. This ensures consistency in reporting structure.
 
@@ -220,8 +216,10 @@ Dimension hierarchies are available in the following reporting tools. This ensur
 -   Microsoft Power BI
 
     -   All dimension hierarchies are available
+    
+If you create reports using **Excel** or **Power BI**, only the first 15 levels of the dimension hierarchies will be exported. This is because a fixed schema is required in Excel and Power BI. In case a hierarchy has more than 15 levels, these levels will not be exported. The normalized table contains a record per all dimension members in the hierarchy so an automated aggregation will take place. This ensures that the balances at any of the 15 available levels in the hierarchy are still correct.
 
-When using Excel or Power BI for reporting, the dimension hierarchies are normalized and only the first 15 levels are exported. In case a hierarchy has more than 15 levels, these levels will not be exported. The normalized table contains a record per all dimension members in the hierarchy so an automated aggregation will take place. This ensures that the balances at any of the 15 available levels in the hierarchy are still correct.
+Here is an example of how a dimension hierarchy can look lik in the reporting structure.
 
 | Cost object dimension hierarchy - level 1 | Cost object dimension hierarchy - level 2 | Cost object dimension hierarchy - level 3 | Cost object dimension hierarchy - level 4 | Cost object dimension hierarchy - level 15 |
 |-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
@@ -232,17 +230,15 @@ When using Excel or Power BI for reporting, the dimension hierarchies are normal
 | Organization                              | Production                                | Packaging                                 | CC005                                     |                                            |
 | Organization                              | Production                                | Assembly                                  | CC006                                     |                                            |
 
-### Update dimension hierarchies for reporting 
+### Update the dimension hierarchies used for reporting 
 
-Over time, dimension hierarchies used for reporting in these tools discussed above will need to be updated.
-
-You can update any dimension hierarchies by refreshing the client.
+Over time, dimension hierarchies used for reporting in these tools discussed above will need to be updated. You can update any dimension hierarchies by refreshing the client.
 
 -   Cost control workspace (Dynamics 365 for Operations client)
 
 -   Cost control workspace (Dynamics 365 for Operations mobile application)
 
-Any updates in dimension hierarchies will be picked up every 24 hours by a pre-cached job. After refreshing the exported data, the updated dimension hierarchies are available in
+Any update in dimension hierarchies will be picked up every 24 hours by a pre-cached job. After refreshing the exported data, the updated dimension hierarchies are available in
 
 -   Microsoft Excel
 
