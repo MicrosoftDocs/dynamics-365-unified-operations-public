@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Compensation plans
-description: Compensation and Benefits Managers can use Compensation management to maintain and process fixed and variable compensation plans for the organization's employees.
+title: Personnel actions [FAQ]
+description: This topic contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,19 +13,19 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: shielas
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.author: shielas
+ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
