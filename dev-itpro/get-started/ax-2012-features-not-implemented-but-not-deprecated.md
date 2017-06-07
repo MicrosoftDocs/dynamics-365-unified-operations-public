@@ -116,11 +116,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <tr class="even">
 <td>Electronic data exchange</td>
 <td>The electronic exchange of documents, such as order confirmations and similar supply chain management (SCM) documents that were previously enabled as AIF documents is not supported. This functionality will be added in a future update.</td>
-</tr>
-<tr class="odd">
-<td>Windows 8 and mobile apps</td>
-<td>Mobile and tablet functionality enables timesheet entry and approval.</td>
-</tr>
+
 <tr class="even">
 <td>Microsoft Project client integration</td>
 <td>The Microsoft Project client is integrated with Dynamics 365 for Operations projects.</td>
