@@ -54,6 +54,7 @@
 ## [Post the pre-acquisition of a fixed asset](emea-pre-acquisition-acquisition-fixed-asset.md)
 ## [Postal codes](emea-import-create-postal-codes-manually.md)
 ## [Registration IDs](emea-registration-ids.md)
+## [Reverse charge VAT](emea-reverse-charge.md)
 ## [SEPA Credit transfer overview](../accounts-payable/sepa-credit-transfer.md)
 ## [SEPA Direct debit overview](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md)
