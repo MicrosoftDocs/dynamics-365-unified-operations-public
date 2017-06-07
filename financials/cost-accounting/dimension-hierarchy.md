@@ -247,23 +247,20 @@ Any update in dimension hierarchies will be picked up every 24 hours by a pre-ca
 > [!NOTE] 
 > To manually trigger a refresh of the dimension hierarchy cache, you can create a new export to Excel for the dimension hierarchy or hierarchies that need to be refreshed.
 
-## Define dimension hierarchies for policies
+## Define dimension hierarchies for cost policy
 
 Cost accounting consists of multiple policies where detailed rules are defined. The list below shows the policies for which you need to define one or more dimension hierarchies.
 
 -   Cost behavior
-
 -   Cost distribution
-
 -   Cost allocation
-
 -   Cost rollup
 
-Dimension hierarchies make it easy create rules. You can leverage the aggregations of dimension members provided by dimension hierarchy levels to avoid creating rules for every single dimension member. In case you have overlapping rules, you must define specific rules, which will be considered by the system when performing the overhead calculation.
+Dimension hierarchies make it easy to create rules. You can leverage the aggregations of dimension members provided by dimension hierarchy levels to avoid creating rules for every single dimension member. In case you have overlapping rules, you must define specific rules, which will be considered by the system when performing the overhead calculation.
 
-**Example: Define a cost behavior policy**
+### Example: Define a cost behavior policy
 
-A new cost behavior policy is created, and appropriate dimension hierarchies are assigned.
+A new cost behavior policy can be created and appropriate dimension hierarchies are assigned to the policy as follows.
 
 Cost behavior policy
 
@@ -277,12 +274,12 @@ Rules
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
 | Fixed cost                            | Organization                         | 100,00           | 0,00         | 1/1/2017   | Never    |
 | 10001                                 | Organization                         | 0,00             | 150,00       | 1/1/2017   | Never    |
-| 10001 (Note 1)                    | Finance                              |                  | 50,00        | 1/1/2017   | Never    |
-| Cost behavior or Variable cost (Note 2)     | Organization                         | 0,00             | 0,00         | 1/1/2017   | Never    |
+| 10001 (*)                    | Finance                              |                  | 50,00        | 1/1/2017   | Never    |
+| Cost behavior or Variable cost (**)     | Organization                         | 0,00             | 0,00         | 1/1/2017   | Never    |
 
-- Note 1: The variable cost node is not required, if a cost is not classified as fixed cost, then it must be variable cost.
+- *: The variable cost node is not required, if a cost is not classified as fixed cost, then it must be variable cost.
 
-- Note 2: A detailed rule is created for the combination of cost element member 10001 and all cost object members aggregated under the hierarchy level Finance. (CC002, CC003, CC007)
+- **: A detailed rule is created for the combination of cost element member 10001 and all cost object members aggregated under the hierarchy level Finance. (CC002, CC003, CC007)
 
 The rules listed above demonstrate the flexibility provided by the dimension hierarchies. High-level rules can be defined to minimize maintenance and detailed rules can be defined to fit into a specific business objective.
 
@@ -296,15 +293,15 @@ For example, a specific cost behavior rule for the cost object dimension hierarc
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|-----------|
 | Fixed cost                            | Organization                         | 100,00           | 0,00         | 1/1/2017   | Never     |
 | 10001                                 | Organization                         | 0,00             | 150,00       | 1/1/2017   | Never     |
-| 10001 (Note 1)                        | Finance                              |                  | 50,00        | 1/1/2017   | 20/1/2017 |
-| Cost behavior or Variable cost (Note 2)| Organization                         | 0,00             | 0,00         | 1/1/2017   | Never     |
+| 10001 (**)                        | Finance                              |                  | 50,00        | 1/1/2017   | 20/1/2017 |
+| Cost behavior or Variable cost (*)| Organization                         | 0,00             | 0,00         | 1/1/2017   | Never     |
 
 Any overhead calculation that is executed after January 20, 2017 will no longer consider this rule.
 
 > [!NOTE] 
 > The **Valid from** and **Valid to** fields are date and time effective. You can expire the rule and run a new overhead calculation on the same day.
 
-## Dfine dimension hierarchies for security
+## Dfine dimension hierarchies for security setup
 
 Cost accounting data should be made available to all managers who are responsible for a reporting unit termed as a cost object or a set of cost objects.
 
