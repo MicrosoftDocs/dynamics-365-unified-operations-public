@@ -35,7 +35,7 @@ The EU Directive left space for Member State to determine how to adopt the gener
 
 You need to complete the following setup to apply the Reverse charge.
 
-## Setup sales tax codes
+## Set up sales tax codes
 It is recommended to use separate sales tax codes for purchase and for sales operations.
 
 <table>
@@ -89,9 +89,9 @@ On the **Reverse charge rules** page (**Tax > Setup > Sales tax > Reverse charge
 - **Threshold amount**. The *Reverse Charge schema* is applied to invoice only if the value of items/services included in the *Reverse charge item group* exceeds the specified limit.
 
 You can define the period the rule is effective, using the **Effective** and **Expiration dates**. In addition, you can define whether a notification is needed in case the condition for the document line is met, and update the document line with the default reverse charge sales tax group:
-- *None* – the document line is not updated;
-- *Prompt* – dialog pops up to confirm the reverse charge can be applied;
-- *Set* – the document line is updated without additional notification.
+- **None** – the document line is not updated;
+- **Prompt** – dialog pops up to confirm the reverse charge can be applied;
+- **Set** – the document line is updated without additional notification.
 
 ## Set up default parameters
 To enable the functionality, open the **General ledger parameters** page, switch to the **Reverse charge** tab and set **Enable reverse charge** = **Yes**.
