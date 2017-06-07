@@ -1,3 +1,4 @@
+
 # [Localization overview](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
 # Asia-Pacific
 ## Australia
@@ -39,6 +40,7 @@
 
 # Europe
 ## [Advance holders](emea-advance-holders.md)
+## [Bank statement and payment information](emea-bank-reconciliation.md)
 ## [Edit invoice IDs on sales orders](emea-edit-invoice-id-sales-orders.md)
 ## [EU entry certificates](emea-entry-certificates.md)
 ## [EU sales list reporting](emea-eu-sales-list.md)
