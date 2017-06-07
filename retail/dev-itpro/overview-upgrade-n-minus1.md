@@ -40,14 +40,16 @@ The key goal of upgrade and N-1 is to enable Dynamics AX 2012 R3 customers to le
 - The upgrade process has enhanced error handling and messaging for debugging failures quickly
 - Customer canuse tools to bring forward custom code in X++ for Retail headquarters.
 
-The upgrade procedure is largely the same as upgrading Dynamics 365 for Retail to the latest version. Planned downtime is required. The key difference is in the data upgrade step, first the upgrade analysis is done. The upgrade analysis runs against the AX 2012 database and is based on the LCS Diagnostic Service. This step identifies tasks to help make upgrade faster and cheaper. It also identified the required SQL configuration, data cleanup, and deprecated features.
+The upgrade procedure is largely the same as upgrading Dynamics 365 for Retail to the latest version. For details about upgrade in general, see [Upgrade overview: AX 2012 to Dynamics 365 for Finance and Operations](dynamics635/operations/dev-itpro/migration-upgrade/upgrade-ax-2012).
+
+Planned downtime is required. The key difference is in the data upgrade step, first the upgrade analysis is done. The upgrade analysis runs against the AX 2012 database and is based on the LCS Diagnostic Service. This step identifies tasks to help make upgrade faster and cheaper. It also identified the required SQL configuration, data cleanup, and deprecated features.
   
 The actual data upgrade process then happens, to move the AX 2012 database to SQL Azure and then execute data upgrade package as normal through the run book process. After this the upgrade validation is done. A validation tool is run against upgraded environment before using it. This tool performs an automated smoke test to check things like whether service is running and accessible, row counts match, financial and inventory reconcile etc.
  
-Most of the post upgrade configuration for retail channels require few manual steps. The customers can then use the pre and post upgrade task check lists to learn about the required tasks to be completed. 
+Most of the post upgrade configuration for retail channels requires few manual steps. Customers can then use the pre and post upgrade checklists to learn about the tasks that must be completed. 
 
 Some of the post upgrade tasks include validating channels, registers and devices against the upgraded database, validating transaction sync, and validating that N-1 support is in place.
  
 For N-1 support, the customer will have to install the N-1 package in the Retail headquarters; there is no setup required in the stores. This must be done during the upgrade window, after the N-1 related configurations have been completed. After the Retail headquarters upgrade and N-1 setup is complete, the N-1 store components can communicate with the Dynamics 365 for Retail headquarters. There are no channel-side components that need to be installed for N-1 support. The system will require a cashier password change during the first login for the N-1 store to communicate with  Dynamics 365 for Retail headquarters.  
  
-The instructions for the N-1 setup can be found here: 
+Instructions for N-1 installation are in the topic [Installing N-1 components for use with Microsoft Dynamics 365 for Retail](n-1-installation-configuration.md).
