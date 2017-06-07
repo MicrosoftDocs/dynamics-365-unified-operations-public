@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dimension hierarchy
-description: Dimension hierarchy is used in defining reporting structure, cost policies, and security setup in Cost acocunting.  
+description: Use dimension hierarchy to define reporting structure, cost policies, and security setup in Cost acocunting.  
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/24/2017
@@ -13,14 +13,14 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: CAMDimensionHierarchy,
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: YuyuScheller
-ms.search.scope: Operations, Core
+ms.search.scope:  AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
-ms.custom: 223174
+ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
@@ -30,72 +30,76 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-## Dimension hierarchy 
+## Dimension hierarchy overview  
 
 [!include[banner](../includes/banner.md)]
 
 Dimension hierarchy is used in different places in Cost accounting. It lets you define
 
-- Reporting structure to fit into organization needs
-- Cost policies
-- Security setup in Cost acocunting.
+-  Reporting structure to fit into organization needs
+-  Cost policies
+-  Security setup
 
 Here is an example of how a dimension hierarchy can look like. 
 
 ![A screenshot that displays a dimension hierarchy](./media/dimension-hierarchy.png)
 
-You can create dimension hierarchies for the following dimension types.
+A dimension hierarchy can be created for the following types of dimensions.
 
--   Cost element dimensions
-
--   Cost object dimensions
-
--   Statistical dimensions
+-  Cost element dimensions
+-  Cost object dimensions
+-  Statistical dimensions
 
 > [!NOTE]
-> You can create multiple dimension hierarchies for the same dimension for different reporting purposes.
+> You can create multiple dimension hierarchies for the same dimension when different perspectives are needed.
 
-## Create dimension hierarchy
+> [!NOTE]
+> A dimension hierarchy can only be associated with one dimension. 
 
-Go to **Cost accounting** > **Dimensions** > **Dimension hierarchies**. Click **New** to select a dimension hierarchy type.
+> [!NOTE]
+> A dimension hierarchy can have unlimited levels in its structure and they will all be available in the **Cost control** workspace. When you use Excel or Power BI for reporting purpose, only the first 15 levels of the dimension hierarchy gets exported. The reason is that both Excel and Power BI require a fixed schema.
 
-### Dimension categorization hierarchy and dimension classification hierarchy
+> [!NOTE]
+> A dimension hierarchy is not date effective, which means that any change made to a dimension hierarchy will immediately be saved to the record and you cannot do comparison of the before date and after date.  
+
+## Dimension hierarchy type  
+
+When you create a new dimension hierarchy, you need to select a hierarchy type. Go to **Cost accounting** > **Dimensions** > **Dimension hierarchies**. Click **New** to select a dimension hierarchy type. You can select either **Dimension categorization hierarchy** or **Dimension classification hierarchy**.
+
+### Dimension categorization hierarchy
 
 The dimension categorization hierarchy type is used for reporting purpose. It only supports the cost element dimensions. When you select this type,
 
-- A dimension member can be associated more than once in the hierarchy structure.
+-  A dimension member can be associated more than once in the hierarchy structure.
+-  A cost element dimension member can be placed in different nodes by assigning a **Cost behavior** to the leaf node.
 
-- A cost element dimension member can be placed in different nodes by assigning a **Cost behavior** to the leaf node.
+### Dimension classification hierarchy
 
 This dimension classification hierarchy type is used for defining rules and reporting purposes. It supports all dimensions, such as cost object, cost elements, and statistical dimensions. When you select this type, a dimension member can only be associated once in the hierarchy structure.
 
-### Understand structure in dimension hierarchy 
+## Create and maintain a dimension hierarchy 
 
-A dimension hierarchy consists of a tree structure with nodes and leaf nodes relationships.
+A dimension hierarchy is created as a tree structure with nodes and leaf nodes relationships.
 
-- A node can have 1: n sub nodes.
-
-- A node can’t have both subnodes and leaf nodes assigned.
-
-- A leaf node can only be assigned at the lowest level in the hierarchy.
-
-#### Dimension member ranges 
-- A node can contain 1: n dimension member ranges.
-- You can insert dimension member IDs that don’t exist as dimension members.  
+-  A node can have 1: n subnodes.
+-  A node can’t have both subnodes and leaf nodes assigned.
+-  A leaf node can only be assigned at the lowest level in the hierarchy.
 
 ### Example
 
-A small company has the following organization structure.
+A small company has the following organization structure where Finance and Human resource are departments under Admin and Assembly and Packaging are departments under Production. 
 
 ![a diagram that shows the organization structure](./media/dimension-hierarchy-org.png)
 
-A cost object dimension that represents all the cost centers in the organizations is established as follows.
+A cost object dimension represents all the cost centers in the organization.
 
 | Cost object dimension    | 
 |--------------------------|
 | Cost centers|
 
-| Cost object dimension member    | Name                      |
+The cost oject dimension that represents all the cost centers can be set up as follows.
+
+| Cost centers                    | Description                      |
 |---------------------------------|----------------------------------|
 | CC001                           | HR                               |
 | CC002                           | Finance                          |
@@ -104,13 +108,15 @@ A cost object dimension that represents all the cost centers in the organization
 | CC005                           | Assembly                         |
 | CC006                           | Packaging                        |
 
-A cost element dimension that represents all the cost elements in the organizations is established as follows.
+A cost element dimension represents all the cost elements in the organization.
 
 | Cost element dimension    | 
 |-------------------------- |
 | Cost elements             |
 
-| Cost element dimension member   | Name                             |
+A cost element dimension that represents all the cost elements can be set up as follows.
+
+| Cost elements                   | Description                      |
 |---------------------------------|----------------------------------|
 | 10001                           | Electricity                      |
 | 10010                           | Cleaning                         |
@@ -119,17 +125,17 @@ A cost element dimension that represents all the cost elements in the organizati
 
 A dimension hierarchy that meets the organizational reporting requirements can be set up as follows.
 
-####  Dimension hierarchy details 
+Dimension hierarchy details 
 
 | Dimension hierarchy name | Dimension    | Dimension hierarchy type name      | Access list hierarchy |
 |--------------------------|--------------|------------------------------------|-----------------------|
 | Organization             | Cost centers | Dimension classification hierarchy | No                    |
 
-Dimension hierarchy
+Dimension hierarchy for reporting can be set up as follows.
 
-|                        |    Dimension member ranges    |                           |
+|                        |  **Dimension member ranges**  |                      |
 |------------------------|-------------------------------|---------------------------|
-|    Nodes               |    From dimension member      |    To dimension member    |
+|    **Nodes**           |  **From dimension member**    |  **To dimension member**  |
 |    Organization        |                               |                           |
 |      Admin             |                               |                           |
 |          Finance       |    CC002                      |    CC003                  |
@@ -141,28 +147,31 @@ Dimension hierarchy
 
 A dimension hierarchy that meets the policy requirement can be set up as follows. 
 
-####  Dimension hierarchy details 
+Dimension hierarchy details 
 
 | Dimension hierarchy name | Dimension     | Dimension hierarchy type name      |
 |--------------------------|---------------|------------------------------------|
 | Cost behavior            | Cost elements | Dimension classification hierarchy |
 
-Dimension hierarchy
+Dimension hierarchy for policy can be set up as follows.
 
-|               | Dimension member ranges |                     |
+|               | **Dimension member ranges** |                     |
 |---------------|-------------------------|---------------------|
-| Nodes         | From dimension member   | To dimension member |
+| **Nodes**         | **From dimension member**   | **To dimension member** |
 | Cost behavior |                         |                     |
 |      Fixed cost   | 10001                   | 10011               |
 |      Variable cost   | 40001                   | 40010               |
+
+> [!NOTE]
+> In the **Dimension member ranges**, a node can contain 1: n dimension member ranges. You can insert dimension member IDs that don’t exist as dimension members yet. This makes the hierarchy resilient for future.  
 
 ### Copy a hierarchy
 
 You can copy a current dimension hierarchy as the starting point for the new dimension hierarchy. This can be useful if you want to compare the previous dimension hierarchy to the new dimension hierarchy.
 
-#### Move up and down nodes
+### Rearrange nodes in the hierarchy
 
-You can move up and down a node within its current level in the structure to rearrange the node order for reporting in the **Cost control** workspace.
+You can move up and down a node within its current level in the structure to rearrange the order of nodes for reporting in the **Cost control** workspace.
 
 Move a node to a new designated location in the hierarchy by selecting a target node. There are two ways to move a node: Move below and Move after. What is the difference between the two?
 
