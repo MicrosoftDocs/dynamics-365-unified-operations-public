@@ -39,7 +39,7 @@ Microsoft Power BI is a suite of business analytics tools that let you analyze d
 ## Data exploration through Power BI
 There are various types of reporting in Finance and Operations.
 
-![data exploration](/media/data-exploration.png)
+![data exploration](./media/data-exploration.png)
 
 Chart controls are used to build embedded experiences that require visuals.
 
