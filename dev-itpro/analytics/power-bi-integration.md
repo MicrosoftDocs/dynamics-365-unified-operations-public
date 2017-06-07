@@ -2,7 +2,7 @@
 # required metadata
 
 title: Power BI integration
-description: This article explains how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your data. 
+description: This topic explains how you can use the features and services that are included in Microsoft Power BI to access, explore, and gain insight from your data. 
 author: MilindaV2
 manager: AnnBe
 ms.date: 06/16/2017
@@ -34,101 +34,100 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-Power BI is a suite of business analytics tools to analyze data and share insights. Using Power BI tools, you can explore data and quickly create rich reports and dashboards. You and your colleagues can then use these reports on many devices interactively. Dynamics 365 for Finance and Operations, Enterprise edition uses Power BI for data exploration. 
+Microsoft Power BI is a suite of business analytics tools that let you analyze data and share insights. By using Power BI tools, you can explore data and quickly create rich reports and dashboards. You and your colleagues can then use the reports interactively on many devices. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, uses Power BI for data exploration.
 
-## Data exploration with Power BI 
-There are different types of reporting in Dynamics 365 for Finance and Operations, Enterprise edition:
+## Data exploration through Power BI
+There are various types of reporting in Finance and Operations.
 
 ![Data exploration](media/data-exploration.png)
 
-Chart controls are used for building embedded experiences that require visuals. 
+Chart controls are used to build embedded experiences that require visuals.
 
-SSRS is an engine designed for pixel-perfect, formatted reports that often require printing. We leverage SSRS for document style reports such as invoices and purchase orders. Our investments on SSRS integration focus on document generation and printing scenarios. 
+Microsoft SQL Server Reporting Services (SSRS) is an engine that is designed for pixel-perfect, formatted reports that often require printing. We use SSRS for document-style reports, such as invoices and purchase orders. Our investments in SSRS integration focus on document generation and printing scenarios.
 
-For all non-document reports or reports that don’t need to be printed, we want to embrace Power BI.
+For all non-document reports or reports that don’t have to be printed, we want to embrace Power BI.
  
-We have used the word “self-service reports” or “ad-hoc reports” in the past when referring to Power BI. We will use the word “data exploration” in the future.  There’s a subtle shift in paradigms hidden behind this change of name. Self-service reports were reports that the users themselves created (or a power-user created it and shared with others, who continued to tweak it to their needs). Often, users need to change the shape of a chart, add a new column, change the grouping or simply create a new view of data. While we could think of it as a report, as a user you are trying to understand the data, exploring it, pivoting it around columns, changing the shape of charts. Technologies of the past didn’t allow exploring large volumes of data interactively. So users had to resort to creating “reports” – many views of the same data.
+In the past, we have used the terms _self-service reports_ and _ad-hoc reports_ to refer to Power BI. We will now use the term _data exploration_. This change in terminology reflects a subtle shift in paradigms. Self-service reports were reports that the users themselves created. (Alternatively, a power user created the reports and shared them with other people. These people then continued to adjust the reports according to their requirements.) Often, users had to change the shape of a chart, add a new column, change the grouping, or just create a new view of data. Although we might think of the results as reports, users are just trying to understand the data by exploring it, pivoting it around columns, and changing the shape of charts. Technologies of the past didn’t let users interactively explore large volumes of data. Therefore, users had to create “reports,” or many views of the same data.
 
-With Power BI (and many thanks to in-memory database technologies in SQL Server), a report is a just the starting point for interactive data exploration. Charts in a Power BI report beg to be clicked, visuals change shape interactively and data can be filtered with ease. Users can tweak existing reports with ease and create their own views of the data. The reports can be shared and teams can collaborate over data.
+In Power BI, thanks to the in-memory database technologies in Microsoft SQL Server, a report is a just the starting point for interactive data exploration. Charts in a Power BI report invite users to click them, visuals change shape interactively, and data can easily be filtered. Users can easily adjust existing reports and create their own views of the data. The reports can be shared, and teams can collaborate over data.
 
-So while you may use the term “report” when referring to Power BI artifacts, you should think about the larger scenario at play. Your users are exploring data! Power BI is the tool of choice when you are addressing data exploration and visualization needs.
-See [Information access and reporting](information-access-reporting.md) for a detailed discussion on reporting concepts in Dynamics 365 for Finance and Operations, Enterprise edition.
+Therefore, although you might use the term _report_ to refer to Power BI artifacts, you should think about the larger scenario that is involved. Your users are exploring data! Power BI is the tool of choice when you must address data exploration and visualization requirements.
+
+For a detailed discussion of reporting concepts in Finance and Operations, see [Information access and reporting](information-access-reporting.md).
 
 ## Ready-made Power BI content
-You can use ready-made Power BI reports right away. There are 2 flavors of Power BI content available:
+You can use ready-made Power BI reports right away. Two types of Power BI content are available:
 
-- Power BI content available in Lifecycle Service (LCS) 
-- Power BI content packs distributed in PowerBI.com marketplace 
+- Power BI content that is available in Microsoft Dynamics Lifecycle Service (LCS)
+- Power BI content packs that are distributed in PowerBI.com marketplace
 
-Depending on your version, either one of both of these type of content can be used.
+Depending on your version, you can use one of both types of content.
 
-### Power BI content available in Lifecycle Service (LCS)
-Lifecycle services (LCS) is a service operated by Microsoft. LCS is a service that can manage your Dynamics 365 for Finance and Operations, Enterprise edition environments. Power BI reports, developed using Entity store, are distributed in LCS as implementation assets. You will find content developed by Microsoft as well as ISVs and partners in LCS.
+### Power BI content that is available in LCS
+LCS is a service that can manage your Finance and Operations environments. LCS is operated by Microsoft. Power BI reports are developed by using Entity store and are then distributed in LCS as implementation assets. In LCS, you will find not only content that is developed by Microsoft, but also content that is developed by independent software vendors (ISVs) and partners.
 
-We will continue to release Power BI content based on the Entity store in the future. Please see the [Roadmap](https://roadmap.dynamics.com). 
+We will continue to release Power BI content that is based on Entity store. For information, see the [Roadmap](https://roadmap.dynamics.com).
 
-### Power BI content packs distributed in PowerBI.com marketplace 
-There are several Power BI content packs in PowerBI.com marketplace. While these content packs will continue to be supported until further notice, our future investments into content packs will be based on Entity store and released via Lifecycle Services.
+### Power BI content packs that are distributed in PowerBI.com marketplace
+There are several Power BI content packs in PowerBI.com marketplace. Although these content packs will continue to be supported until further notice, our future investments in content packs will be based on Entity store, and content will be released via LCS.
+
 For more information about the content, see [Power BI content recently released](power-bi-content-released.md).
 
-## Extend, author, and distribute Power BI reports
-You should use the ready-made Power BI content as a first step. You have the ability to modify ready-made reports or extend them using capabilities built into PowerBI.com. In addition to modifying ready-made reports, you can also extend them using Power BI authoring tools such as PowerBI desktop. You can also create new reports. There are several approaches to authoring new PowerBI reports.
+## Extending, creating, and distributing Power BI reports
+You should use the ready-made Power BI content as a first step. You can modify ready-made reports or extend them by using capabilities that are built into PowerBI.com. In addition to modifying ready-made reports, you can extend them using Power BI authoring tools such as Power BI desktop. You can also create new reports. You can use several approaches to create new Power BI reports.
 
-### High volume, near-real time “operational Power BI reports” authored using Entity store 
-Entity store is an operational data store purpose built for Power BI integration. A business analyst or a developer can create high volume, near-real time Power BI reports using Entity store using PowerBI desktop, the authoring tool for PowerBI reports. These reports must be distributed to your users (similar to other developer created artifacts) via LCS.
+### Creating high-volume, near-real-time “operational Power BI reports” by using Entity store
+Entity store is an operational data store that is built specifically for Power BI integration. To create high-volume, near-real-time Power BI reports that use Entity store, a business analyst or a developer can use Power BI desktop, which is the authoring tool for Power BI reports. Like other artifacts that developers create, these reports must be distributed to your users via LCS.
 
-Reports authored using Entity store leverage DirectQuery technology which enables creation of reports over large volumes of data. Reports authored using DirectQuery technology does not cache data in PowerBI.com service; data is always stored with Dynamics 365 for Finance and Operations, Enterprise edition.
+Reports that are created by using Entity store take advantage of DirectQuery technology. This technology enables reports to be created over large volumes of data. Reports that are created by using DirectQuery technology don't cache data in PowerBI.com service. Instead, data is always stored in Finance and Operations.
 
-For an overview of Power BI integration with Entity store, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). For more information on authoring reports with Entity store, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). 
+For an overview of Power BI integration with Entity store, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). For more information about how to create reports by using Entity store, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
-If you are upgrading from AX 2012, you can upgrade cubes to Aggregate measurements that use Entity store. You can then create PowerBI reports using Entity store. For more information, see [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
+If you're upgrading from Microsoft Dynamics AX 2012, you can upgrade cubes to aggregate measurements that use Entity store. You can then create Power BI reports by using Entity store. For more information, see [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md).
 
-### Self-service “Data mash-up” reports authored using OData
-Data mash-up is a term used to refer to ad-hoc, self service reports that combine data from multiple sources. As a power user (or a business analyst), you can create Power BI reports using OData end-points. 
+### Creating self-service “data mash-up” reports by using OData
+_Data mash-up_ is a term that is used to refer to ad-hoc, self-service reports that combine data from multiple sources. As a power user or a business analyst, you can create Power BI reports by using Open Data Protocol (OData) endpoints.
 
-Dynamics 365 for Finance and Operations, Enterprise edition is a first-class data source for Power BI authoring tools, such as Excel and Power BI Desktop. Data entities are exposed as data feeds by using OData V4. These data entities include both standard data entities and aggregate data entities that can provide summarized and calculated data in the OData feed. Dynamics 365 for Finance and Operations, Enterprise edition data feeds authenticate users and enable access, based on security permissions that are defined. Any client tool that supports the OData protocol can consume the data securely.
+Finance and Operations is a first-class data source for Power BI authoring tools, such as Excel and Power BI Desktop. Data entities are exposed as data feeds by using OData V4. These data entities include both standard data entities and aggregate data entities that can provide summarized and calculated data in the OData feed. Finance and Operations data feeds authenticate users and enable access, based on security permissions that are defined. Any client tool that supports the OData protocol can consume the data securely.
 
-You can access OData endpoints via the URL https://<your Dynamics 365 URL>/Data 
+You can access OData endpoints via the following URL: https://<your Microsoft Dynamics 365 URL>/Data
 
-OData endpoints are ideal for quick and convenient data mash-ups. However, for authoring reports that extract large volumes of data Entity store approach is recommended. To create a Power BI report and a dashboard using OData endpoints, see [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md) for more information. Note that this article PowerQuery and PowerPivot tools. You could use the Power BI desktop tool to author reports using OData endpoints similarly.
+OData endpoints are ideal for quick and convenient data mash-ups. However, we recommend that you use Entity store to create reports that extract large volumes of data. For more information about how to create a Power BI report and a dashboard by using OData endpoints, see [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md). Note that this article refers to the Power Query and PowerPivot tools. If you want to use Power BI desktop to create reports that use OData endpoints, the procedure is similar.
 
-### Authoring Power BI reports with Excel
-In addition to using PowerBI desktop authoring tool, you can use “Power tools” incorporated into Excel to create visualizations. You may have a large number of users within your organization that use Excel every day. For a quick “one-off report”, using Excel may be the best option for them.
+### Creating Power BI reports by using Excel
+In addition to using the Power BI desktop authoring tool, you can use “Power tools” that are incorporated into Microsoft Excel to create visualizations. Your organization might have many users who already use Excel every day. For a quick “one-off” report, Excel might be the best option for these users.
 
-There are several scenarios where you can use Excel.
+There are several scenarios where you can use Excel:
 
--	A user can export data from a page in Dynamics 365 into Excel. Using the Powerview add-in built into Excel, the data can be visualized. This Excel workbook can be used as a standalone visualization. In addition, this report can be imported into PowerBI.com service.
--	Using the PowerQuery, extension in Excel, a user can combine data in another worksheet (or imported from OData endpoints) with external data. Resulting data can be visualized using Powerview.
--	Using PowerPivot extension in Excel, a user can ingest a larger amount of data into Excel.
+- Export data from a page in Dynamics 365 into Excel. You can then use the Power View add-in that is built into Excel to visualize the data. The Excel workbook can be used as a stand-alone visualization. In addition, you can import the report into PowerBI.com service.
+-	Use the Power Query extension in Excel to combine the data in another worksheet (or data that is imported from OData endpoints) with external data. You can visualize the resulting data by using Power View.
+- Use the PowerPivot extension in Excel to ingest a larger amount of data into Excel.
 
-For more information on PowerBI integration with Excel, see [Create a Power BI report](create-powerbi-report-data.md).
+For more information about Power BI integration with Excel, see [Create a Power BI report](create-powerbi-report-data.md).
 
-Consider using export to Excel functionality for ad-hoc “one-off” reports. For reports that are shared with a group of users, you should consider authoring them using Entity store.
+Consider using Export to Excel functionality for ad-hoc “one-off” reports. If the reports will be shared with a group of users, you should consider using Entity store to create them.
 
 ## Sharing and using reports in PowerBI.com
-PowerBI.com, a service offered by Microsoft, enables creation of dashboards, reports as well as collaboration with a group of users. Regardless of how you author reports, your reports can be shared with users by uploading them into PowerBI.com service (also called “publishing”).
+PowerBI.com is a service that is offered by Microsoft. It lets you create dashboards and reports, and also enables collaboration with a group of users. Regardless of how you create your reports, you can share reports with users by uploading them into PowerBI.com service. (This process is also known as _publishing_.)
 
-Once uploaded, your reports can be viewed, tweaked and explored by your users either on the web (when they are connected to the internet at home or at office) or using apps in any of the devices.
+After your reports are uploaded, your users can view, adjust, and explore them either on the web (when they are connected to the Internet at home or in the office) or by using apps on a device.
 
-For more information on PowerBI concepts, see the [Power BI documentation](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-how-should-i-share-my-dashboard/).
+For more information about Power BI concepts, see the [Power BI documentation](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-how-should-i-share-my-dashboard/).
 
-## Pinning Power BI content into the Dynamics 365 for Finance and Operations, Enterprise edition client
-PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin tiles and reports from their own PowerBI.com accounts to Dynamics 365 for Finance and Operations, Enterprise edition workspaces. PowerBI content in Dynamics 365 provides contextual insights that are related to business operations.
+## Pinning Power BI content to the Finance and Operations client
+PowerBI.com can be used on its own as a reporting and dashboard solution for your organization or business unit. However, users can also pin tiles and reports from their own PowerBI.com accounts to workspaces in Finance and Operations. Power BI content in Dynamics 365 provides contextual insights that are related to business operations.
 
-Dynamics 365 supports pinning two types of objects from PowerBI.com: namely, tiles in PowerBI.com dashboards and reports.
+You can pin two types of objects from PowerBI.com: tiles in PowerBI.com dashboards, and reports.
 
-Before you can proceed, you need to configure PowerBI in your Dynamics 365 environment.
+Before you can pin Power BI content, you must configure Power BI in your Dynamics 365 environment.
 
 ### One-time configuration of PowerBI.com integration
-An administrator needs to perform this operation in your Dynamics 365 for Finance and Operations, Enterprise edition environment before you can pin tiles or reports. This operation needs to be performed only once per environment. For instructions, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md) 
+Before you can pin tiles or reports, an administrator must configure integration with PowerBI.com in your Finance and Operations environment. This configuration must be done only one time per environment. For instructions, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md).
 
-### Pinning PowerBI.com tiles 
-Power BI tiles that are pinned to the Dynamics 365 client provide insightful visuals at a glance. They also let users open PowerBI.com for interactive analysis. For more information see [Connect to Power BI for the first time](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/configure-power-bi-integration#connect-to-power-bi-from-dynamics-365-for-operations-for-the-first-time).
+### Pinning PowerBI.com tiles
+Power BI tiles that are pinned to the Dynamics 365 client provide insightful visuals at a glance. They also let users open PowerBI.com for interactive analysis. For more information, see [Connect to Power BI for the first time](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/configure-power-bi-integration#connect-to-power-bi-from-dynamics-365-for-operations-for-the-first-time).
 
-### Pinning PowerBI.com reports into workspaces
-As a power user, a business analyst or ad a developer, you have the ability to create reports with Power BI desktop using Entity store. Not only are these reports rich and interactive, you can empower your users to make changes without relying on another person. 
+### Pinning PowerBI.com reports to workspaces
+As a power user, a business analyst, or a developer, you can use Power BI desktop to create reports that use Entity store. Not only are these reports rich and interactive, but your users can make changes without having to rely on another person.
 
-While reports in PowerBI.com are powerful and interactive on it’s own, these reports can be pinned into workspaces. Your users can pin the reports into workspaces themselves. For more information on pinning reports into workspaces, see [Pin Power BI reports to workspaces](pin-power-bi-reports.md). 
-
-
-
+Although the reports in PowerBI.com are powerful and interactive on their own, they can also be pinned into workspaces. Your users can pin reports to workspaces themselves. For more information about how to pin reports to workspaces, see [Pin Power BI reports to workspaces](pin-power-bi-reports.md).
