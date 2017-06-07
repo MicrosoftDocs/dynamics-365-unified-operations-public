@@ -41,12 +41,12 @@ This topic describes features that have been removed, or are planned for removal
 
 ### Warehouse mobile devices portal (WMDP)
 
-The standalone component meant for self-deployment on-premises is no longer supported in Dynamics 365 for Operations. It has been replaced by a native app, improving the user experience and replacing the functionality of WMDP. 
+The standalone component meant for self-deployment on-premises is no longer supported in Finance and Operations. It has been replaced by a native app, improving the user experience and replacing the functionality of WMDP. 
 
 |                                  |                                                                                   |
 |----------------------------------|-----------------------------------------------------------------------------------|
 | **Reason for deprecation**       | Duplicate functionality.                                    |
-| **Replaced by another feature?** | Yes, this feature has been replaced by Dynamics 365 for Operations - Warehousing. For more information on setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Operations – Warehousing](https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app).                             |
+| **Replaced by another feature?** | Yes, this feature has been replaced by Finance and Operations - Warehousing. For more information on setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations – Warehousing](https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/warehousing/install-configure-warehousing-app).                             |
 | **Modules affected**             | Warehouse management, Transportation management          |
 
 ### Advanced bank reconciliation matching rule for manual matching
