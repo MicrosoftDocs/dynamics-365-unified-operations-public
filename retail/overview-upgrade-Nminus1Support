@@ -5,7 +5,7 @@ As part of the upcoming release we are enabling the upgrade and N-1* support. Th
 •         The customer can operate their stores with the components of the 2012 R3 CU10 version using N-1 support 
 •         The upgrade can be validated using pre check and post check validation built in as part of the upgrade process
 •         The upgrade process has enhanced error handling and messaging for debugging failures quickly
-•         The customer can now use tools to bring forward custom code for X++ for the head quarters.
+•         The customer can now use tools to bring forward custom code in X++ for the head quarters.
  
 (*  N-1 support is the capability for enabling the Stores running 2012 R3 CU version, to be able to work against a Dynamics 365 for Operations head quarters, after the upgrade. We are initially supporting 2012 R3 CU10 for N-1 capability) 
   
