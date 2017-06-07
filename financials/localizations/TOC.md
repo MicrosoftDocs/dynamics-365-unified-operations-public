@@ -20,6 +20,7 @@
 ### [Bank payment fees covered by vendors](apac-jpn-bank-payment-fees-vendors.md)
 ### [Consolidated invoices](apac-jpn-consolidate-invoices.md)
 ### Fixed assets
+
 #### [Allocation rules](apac-jpn-allocation-rules-fixed-assets.md)
 #### [Depreciation FAQ](apac-jpn-fixed-asset-depreciation.md)
 ##### [Equally divided depreciation method](apac-jpn-equally-divided-depreciation-method.md)
@@ -47,6 +48,7 @@
 ## [Exchange rate adjustments](emea-exchange-rate-adjustments.md)
 ## [File formats for methods of payment](emea-select-file-formats-for-the-method-of-payments.md)
 ## [Fixed assets disposal for Estonia and Lithuania](emea-credit-note-reverse-fixed-asset-sale.md)
+## [Import ISO20022 files](emea-ISO20022-file-formats.md) 
 ## [Intrastat](emea-intrastat.md)
 ## [Invoice and packing slip numbering for Latvia and Lithuania](emea-invoices-packing-slips-numbering.md)
 ## [Invoice issue deadlines](emea-invoice-issue-deadline.md)
