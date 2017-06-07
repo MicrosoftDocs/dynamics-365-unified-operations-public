@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -96,10 +96,10 @@ To obtain the latest MinorVersionDataUpgrade.zip package from your target enviro
 > [!NOTE]
 > In earlier versions (prior to Platform update 4) the package was named DataUpgrade.zip. 
 
-1.  In LCS, in the **Environments** section, click your target Dynamics 365 for Operations environment, scroll to the bottom of the page, and then click the **Application binary updates** tile. 
+1.  In LCS, in the **Environments** section, click your target Dynamics 365 for Operations environment, scroll to the bottom of the page, and then click the **All binary updates** tile. 
 
 > [!NOTE]
-> If the Application binary updates tile shows zero updates available then use the MinorVersionDataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 and the Application binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
+> If the All binary updates tile shows zero updates available then use the MinorVersionDataUpgrade.zip from the latest platform update package available in the **Shared Asset Library** in LCS within the **Software deployable package** section. For example, if upgrading to Dynamics 365 for Operations version 1611 with platform update 3 and the All binary updates tile shows zero updates, then use the "D365 for Operations Platform Update 3" package from the shared asset library. When using this package from the shared asset library, the path required in step 3 below changes to ..\\AOSService\\Packages\\files\\dynamicsax-framework-bin.7.0.4307.16141.zip\\CustomDeployablePackage
 >
 
 2.  On the **Add hotfixes** page, click **Select all**, click **Add**, and then click **Download package**.

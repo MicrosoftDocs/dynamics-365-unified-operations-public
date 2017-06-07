@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -137,6 +137,7 @@ The following sections list resources by country/region.
 
 -   [Post the pre-acquisition of a fixed asset](/dynamics365/operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [VAT statement for the Czech Republic](/dynamics365/operations/financials/localizations/emea-cze-vat-statement-details)
+-   [Sales tax reporting ](/dynamics365/operations/financials/localizations/emea-cze-intra-community-vat-transactions)
 -   [Split periods in periodic journals](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [Set up signers for print forms](/dynamics365/operations/financials/localizations/emea-set-up-signers-for-printing-forms)
 -   [Update how amounts are displayed on reports and documents](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)

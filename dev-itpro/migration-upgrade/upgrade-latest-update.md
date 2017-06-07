@@ -5,10 +5,10 @@ title: Overview of moving to the latest update of Dynamics 365 for Operations
 description: This topic describes the process for upgrading to the latest update for Microsoft Dynamics 365 for Operations. This topic is intended to describe the overall process and supported scenarios, not to provide detailed instructions for every step of the process.
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: Lifecycle Services
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -61,7 +61,6 @@ Use this scenario when one (or a small number of) hotfix is required for a speci
 This process is required before embarking on scenario 3 and is to be completed by a developer before other activities can begin.
 
 ### Scenario 3: Upgrade to the most current platform and application update
-
 Use this scenario when business factors such as time or cost permit taking the complete latest update. Typical examples are:
 
 -   Complete upgrade (application and platform) from February 2016 release to May 2016 release.
@@ -87,10 +86,10 @@ This scenario describes the process for upgrading code from an earlier release t
 | Source environment                                   | Target environment                                           | Do I need the code upgrade service? |
 |-----------------------------------------------------|--------------------------------------------------------------|-------------------------------------|
 | Microsoft Dynamics AX 2012                          | Dynamics 365 for Operations                                  | Yes                                 |
-| Feb-16                                              | May 2016 (Platform update 1, Application 7.0.1)              | Yes                                 |
-| Feb-16                                              | August 2016 (Platform update 2, Application 7.0.1)           | Yes                                 |
+| February 2016                                              | May 2016 (Platform update 1, Application 7.0.1)              | Yes                                 |
+| February 2016                                              | August 2016 (Platform update 2, Application 7.0.1)           | Yes                                 |
 | May 2016 (Platform update 1, Application 7.0.1)     | August 2016 (Platform update 2, Application 7.0.1)           | No                                  |
-| Feb-16                                              | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
+| February 2016                                              | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
 | May 2016 (Platform update 1, Application 7.0.1)     | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
 | August 2016 (Platform update 2, Application 7.0.1)  | Release 1611 (Platform update 3 or newer, Application 7.1.0) | Yes                                 |
 | Release 1611 (Platform update 3, Application 7.1.0) | Newer version of the platform, like platform update 4        | No                                  |
