@@ -36,10 +36,10 @@ This topic provides information about the **My team** mobile workspace. This wor
 This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
 
 ## Overview 
-The **My team** mobile workspace lets users perform these tasks:
+The **My team** mobile workspace lets managers perform these tasks:
 
-- View a list of a manager’s direct reports.
-- View a list of a manager’s extended reporting team.
+- View a list of the manager’s direct reports.
+- View a list of the manager’s extended reporting team.
 - View detailed information for each team member, such as birth date, seniority date, years of service, and compensation and performance information.
 - Send praise to any individual in the manager’s extended reporting team.
 
