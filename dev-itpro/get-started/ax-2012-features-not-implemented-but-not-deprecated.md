@@ -119,7 +119,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="odd">
 <td>Windows 8 and mobile apps</td>
-<td>Mobile and tablet functionality enables expense capture and approval, and timesheet entry and approval.</td>
+<td>Mobile and tablet functionality enables timesheet entry and approval.</td>
 </tr>
 <tr class="even">
 <td>Microsoft Project client integration</td>
