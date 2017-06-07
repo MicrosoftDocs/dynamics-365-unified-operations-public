@@ -303,7 +303,7 @@ Any overhead calculation that is executed after January 20, 2017 will no longer 
 
 ## Dfine dimension hierarchies for security setup
 
-Cost accounting data should be made available to all managers who are responsible for a reporting unit termed as a cost object or a set of cost objects.
+Cost accounting data should be made available to all managers who are responsible for a reporting unit, which in Cost accouting terminology are represented as a cost object or a set of cost objects.
 
 Potentially, all managers will be able to access the high sensitive business data, for example, revenues and margins, it is important to secure that only the data that are relevant to them is displayed. You define dimension hierarchies to control data security.
 
