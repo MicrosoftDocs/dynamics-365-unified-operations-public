@@ -2,7 +2,7 @@
 # required metadata
 
 title: My team mobile workspace
-description: This topic provides information about the My team mobile workspace, which lets users view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
+description: This topic provides information about the My team mobile workspace, which lets mmanagers view their direct reports and extended staff. Users can also send praise to individuals in their reporting chain.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 06/16/2017
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about the **My team** mobile workspace. This workspace lets users view their direct reports and extended staff. They can also send praise to individuals in their reporting chain.
+This topic provides information about the **My team** mobile workspace. This workspace lets managers view their direct reports and extended staff. They can also send praise to individuals in their reporting chain.
 
 This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
 
