@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Invoice processing overview
+title: Invoice processing for
 description: This topic provides information about invoice processing for Eastern Europe.
 author: v-kikozl
 manager: AnnBe
@@ -18,20 +18,34 @@ audience: Application User
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 53658174-3830-49de-8d01-23d1623d97d5
-ms.search.region: Eastern Europe
+ms.search.region: Czech Republic, Hungary, Estonia, Poland,
 # ms.search.industry: 
 ms.author: v-kikozl
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ---
 
-# Invoice processing overview
+# Invoice processing
 
-The information below introduces changes in the Eastern European localization related to the customer and vendor invoice processing. These changes support country-specific legal requirements regarding to the filling and control of the dates that are important for tax reporting in those countries.
+This topic provides information about processing customer and vendor invoices for some European countries. Legal requirements for these countries affect the invoicing process. 
 
- - the sales date in customer invoices and the document receipt date in
-   vendor invoices,  
- - the date of VAT register.
+## Accounts receivable and Accounts payable dates for VAT
+```Countries affected: Czech Republic, Poland```
+
+When goods are purchased from the European Union countries, there is an obligation of self-assessment of VAT: 
+-	The output VAT must be paid in a VAT period where the invoice has been issued (Document date)
+-	The input VAT can’t be deducted before the document receipt (VAT register date).
+
+The following settings should be done to support this scenario:
+- On the the **Accounts payable parameters** page, enable **Intra-community VAT** and **Document date for intra-community VAT** 
+- Two sales tax codes: one with positive sales tax percentage and another with negative
+- Set up a sales tax group including both positive and negative sales tax codes. For the negative sales tax code set the ‘Intra-community VAT’ parameter to be **true**.
+
+After a successfull setup, purchases will have two posted sales tax transactions:
+- A positive transaction with direction ‘sales tax receivable’ and VAT register date equals to the same date from the invoice posting window
+- A negative transaction with direction ‘sales tax payable’ and VAT register date equals to the document date.
+
+
 
 Also it provides a short description for some country-specific scenarios, for example, Intra-community VAT or Deferred tax.
 
