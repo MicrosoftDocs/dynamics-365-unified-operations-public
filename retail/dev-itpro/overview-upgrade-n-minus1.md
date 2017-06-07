@@ -2,37 +2,36 @@
 # required metadata
 
 title: Overview of upgrade and N-1 support for Dynamics 365 for Retail 
-description: By customizing the properties of sales orders, you can send additional data from your online store to meet the requirements of your business processes. This article explains how to add properties to a sales order.
-author: kfend
+description: Upgrade and N-1 support have been enabled in the July release of Dynamics 365 for Retail. N-1 support enables customers to have stores that are running AX 2012 R3 CU10 to be able to work with a Dynamics 365 for Retail headquarters after an upgrade. 
+author: athinesh99
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: Dynamics-365-retail
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: IT Pro
 # ms.devlang: 
-# ms.reviewer: robinr
-ms.search.scope: AX 7.0.0, Operations, Retail
+# ms.reviewer: margoc
+ms.search.scope: Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 44351
-ms.assetid: dd9b86cb-630a-4429-9aea-8ba4c4723baa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: meeram
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: athinesh
+ms.search.validFrom: 2017-07-31
+ms.dyn365.ops.version: Retail July 2017 update
 
 ---
 
-Overview of the Upgrade and N-1 Support
+# Overview of upgrade and N-1 support for Dynamics 365 for Retail
 
-Upgrade and N-1 support has been enabled in the July release of Dynamics 365 for Retail. N-1 support enables customers to have stores that are running AX 2012 R3 CU10 to be able to work with a Dynamics 365 for Retail headquarters after an upgrade. 
+Upgrade and N-1 support have been enabled in the July release of Dynamics 365 for Retail. N-1 support enables customers to have stores that are running AX 2012 R3 CU10 to be able to work with a Dynamics 365 for Retail headquarters after an upgrade. 
 
 The key goal of upgrade and N-1 is to enable Dynamics AX 2012 R3 customers to leverage the benefits of the cloud by moving to Dynamics 365 for Retail. These features enable customers to upgrade in a seamless way. 
 - Customers can now perform database upgrade from AX 2012 R3 to Dynamics 365 for Retail headquarters through the upgrade process 
