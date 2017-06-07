@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Bank statement and payment reconciliation overview for the EU
+# Bank statement and payment reconciliation for the EU
 
 [!include[banner](../includes/banner.md)]
 
