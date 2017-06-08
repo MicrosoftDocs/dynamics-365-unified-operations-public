@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,11 +21,10 @@ ms.reviewer: annbe
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 274423
-ms.assetid: 8c7fc651-526e-4eef-8ab3-fd4a6856a849
 ms.search.region: Hungary
 # ms.search.industry: 
 ms.author: anasyash
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---

@@ -5,10 +5,10 @@ title: What's new or changed in Dynamics 365 for Operations platform update 7 (M
 description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 7. This version was released in May 2017 and has a build number of 7.0.4542.16189.
 author: tonyafehr
 manager: AnnBe
-ms.date: 05/9/2017
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -41,10 +41,10 @@ This topic describes features that are either new or changed in Dynamics 365 for
 Using a configuration data project, you can easily export configuration data and move it from one instance to another instance. This feature provides an updated user interface, and the ability to easily manage templates and projects. For more details, refer to [Configuration data projects](../data-entities/configuration-data-projects.md).
 
 ## Static export to Excel limit increase from 2k to 10k ##
-The static Export to Excel limit has been increased from 2k to 10k to allow more rows to be exported from a grid. If there is an entity representing the data in the grid we recommended that you use Open in Excel and the Excel Add-in instead, since there is no hard row limit. In addition, if there is an entity and the user has admin privileges then DIXF (data management) is also an option. For more information, see [Use the Excel add-in](../office-integration/use-excel-add-in).
+The static Export to Excel limit has been increased from 2k to 10k to allow more rows to be exported from a grid. If there is an entity representing the data in the grid we recommended that you use Open in Excel and the Excel Add-in instead, since there is no hard row limit. In addition, if there is an entity and the user has admin privileges then DIXF (data management) is also an option. For more information, see [Use the Excel add-in](../office-integration/use-excel-add-in.md).
 
 ## Development tooling - New tabbed workspace pattern ##
-A new tabbed workspace form pattern is now available. You can now include tab pages that house embedded Power BI reports. This feature is our first step toward moving away from horizontally-scrolling workspaces. For more information, see [Workspace form pattern](../user-interface/workspace-form-pattern). 
+A new tabbed workspace form pattern is now available. You can now include tab pages that house embedded Power BI reports. This feature is our first step toward moving away from horizontally-scrolling workspaces. For more information, see [Workspace form pattern](../user-interface/workspace-form-pattern.md). 
 
  ## Development and customization - Extending a group control ##
  The Dynamics 365 for Operations development tools and runtime platform now support extending an extended form, for example, extending a form that is already extended in a referenced model. This fixes an issue that originally prevented extending a field/button group control if the group control belongs to a form extension.
@@ -56,7 +56,7 @@ A developer can specify additional country/region codes in their extension. The 
 
  
 ## Development and customization - Validating events on form data sources and form data source fields ##
-Validation events on form data source (FormDataSourceEventType) and form data source fields (FormDataFieldEventType) now support invalidating user-specified values. For more information, see [Customize model elements using extensions](../extensibility/customize-model-elements-extensions).
+Validation events on form data source (FormDataSourceEventType) and form data source fields (FormDataFieldEventType) now support invalidating user-specified values. For more information, see [Customize model elements using extensions](../extensibility/customize-model-elements-extensions.md).
 
 The following example illustrates this feature. The example uses a form named **MyForm** that contains a data source named **abTable**, and a field named **FieldInt1**. 
 

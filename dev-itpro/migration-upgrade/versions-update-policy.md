@@ -5,10 +5,10 @@ title: Dynamics 365 for Operations versions and update policy
 description: This topic lists the most recent versions of Microsoft Dynamics 365 for Operations. The Dynamics 365 for Operations update policy is outlined, as well.
 author: kfend
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
