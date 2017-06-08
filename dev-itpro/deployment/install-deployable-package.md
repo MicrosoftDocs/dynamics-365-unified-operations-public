@@ -2,13 +2,13 @@
 # required metadata
 
 title: Install a deployable package
-description: This topic walks you through the steps for using the command line to apply either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
+description: This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
 author: manalidongre
 manager: AnnBe
 ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This topic walks you through the steps for using the command line to apply either a binary hotfix for Application Object Server (AOS) or a deployable package that was created in your development environment.
+This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development/build environment.
 
-This command line process requires remote access to the environments. In most cases, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in [Apply a deployable package on a system](apply-deployable-package-system.md), without the need to understand the process described on this page.
+This command line process requires remote access (RDP) to the environments. In most cases, you can apply a deployable package to an environment directly from Dynamics Lifecycle Services (LCS) as described in [Apply a deployable package on a system](apply-deployable-package-system.md), without the need to understand the process described on this page.
 
 ## Key concepts
 -   **Deployable package**– A deployable package is a unit of deployment that can be applied in any environment. It can consist of a binary hotfix to the AOS runtime components, an updated application package, or a new application package.
@@ -85,8 +85,8 @@ Based on the topology information in the DefaultTopologyData.xml file, you must 
 The runbook provides the sequence of steps that must be run to update the environment. The following illustration shows an example of a runbook file. Each step in a runbook is associated with an ID, a machine name, and step execution details. [![runbook-steps](./media/runbook-steps-1024x624.jpg)](./media/runbook-steps.jpg)
 
 ## Install a deployable package
-1.  Based on the sequence of steps that is specified in the runbook, start with the first machine that is listed.
-2.  Follow these steps on each VM:
+1.  Based on the sequence of steps that is specified in the runbook, start with the first machine (VM) that is listed.
+2.  Follow these steps on each VM. For one-box environments like Development, Build, and Demo environments, there is only one VM.
     1.  Import the runbook by running the following command.
 
             AXUpdateInstaller.exe import -runbookfile=[runbookFile]
@@ -125,39 +125,14 @@ The runbook provides the sequence of steps that must be run to update the enviro
 
         AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook" -setstepcomplete=2
 
-6.  After all the steps are completed on one machine, export the runbook results.
+8.  If errors occur during any step, debug the script/instructions in the step, and update accordingly.
 
-        AXUpdateInstaller.exe export -runbookID=[runbookID] -runbookfile=[runbookFile]
-
-    **Example**
-
-        AXUpdateInstaller.exe export -runbookid="VAL200AA2BMEDIU-runbook" -runbookfile="VAL200AA2BMEDIU-runbook.xml"
-
-7.  Log on to the second machine that is listed, and repeat steps 1 through 6 until all machines have been updated.
-8.  If errors occur during any step, debug the script/instruction in the step, and update accordingly.
-
-## Back up the database and computer instance
--   After all the services are stopped, make a backup of the database and VM snapshot manually (optional). Then run the following command to mark the backup step as completed. Supply the correct backup step ID.
-
-        AXUpdateInstaller.exe execute -runbookid=[runbookID] -setstepcomplete=[stepID]
-
-    **Example**
-
-        AXUpdateInstaller.exe execute -runbookid="VAL200AA2BMEDIU-runbook" -setstepcomplete=3
-
-## Update files
-1.  After you've marked the backup step as completed, the next step is triggered. In the sample step, AOS packages are updated from the deployable package.
-2.  Run the following command to verify that the new version is installed.
+## Verify installation
+1.  Run the following command to verify that the new updates are installed.
 
         AXUpdateInstaller.exe list
 
-3.  View the runbook to see the completed steps. [![image013](./media/image013-1024x978.png)](./media/image013.png)
-
-## Run database synchronization
--   At one point, you will see a database synchronization (DBSync) step. [![image015](./media/image015-1024x654.png)](./media/image015.png)
-
-## Start all services
--   After the database synchronization step is completed, follow the same instructions to complete the remaining steps. All the services will be started.
+2.  View the runbook to see the completed steps. [![image013](./media/image013-1024x978.png)](./media/image013.png)
 
 ## Troubleshooting
 -   After all the steps are completed, export the runbook, and save it outside the computer for future reference. For example, you might have to use the runbook file in these situations:
