@@ -2,7 +2,7 @@
 # required metadata
 
 title: Position forecasting
-description: 
+description: Expenses that are related to workers often make up a large proportion of an organization's costs. Position forecasting lets you plan those expenses and include them in the planning of budgets.
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Position forecasting
 
 [!include[banner](../includes/banner.md)]
-
 
 
 

@@ -17,11 +17,10 @@ ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 262554
-ms.assetid: 84ff97bb-ae21-4d6d-8160-9325f64134ce
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 # ms.search.industry: 
 ms.author: v-elgolu
