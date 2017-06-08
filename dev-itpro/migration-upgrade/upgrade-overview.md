@@ -1,4 +1,4 @@
----
+﻿---
 # required metadata
 
 title: Upgrade Dynamics AX 2012 to Dynamics 365 for Finance and Operations, Enterprise edition 
@@ -37,14 +37,19 @@ Platform update 8, Microsoft Dynamics 365 for Finance and Operations, Enterprise
 - A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
 
 ## Overview
+
 The overall upgrade process can be visualized as three overarching phases: Analyze, Execute, and Validate.
 
 The following diagram shows the end-to-end upgrade process, and the activities that we consider part of each phase. 
 
+![Upgrade process](./media/upgrade-process.png)
+
 ## Analyze
+
 The activities in the Analyze phase help you estimate the effort that is required for the upgrade. They also help you prepare a project plan. These activities can be performed before you buy Finance and Operations. They will help you make an informed purchase decision by providing a data point about the effort and resources that you will require.
 
 ### Sign up for a public preview in LCS
+
 To perform Analyze activities before you purchase Finance and Operations, you can sign up for a public preview. The public preview lets you deploy your own Finance and Operations environments. It also gives you access to the Microsoft Dynamics Lifecycle Services (LCS) tools that are used to evaluate your AX 2012 environment and your existing custom code.
 
 If you have an existing LCS project for AX 2012, you must still sign up for an additional new project to evaluate Finance and Operations.
@@ -57,6 +62,8 @@ Be aware that this public preview differs from a [30-day trial](https://aka.ms/D
 
 ### Select the upgrade methodology
 In your new LCS project, set the project methodology to **Upgrade AX 2012 to Dynamics 365 for Operations**. This methodology is made specially for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
+
+![Upgrade methodology(./media/methodology.png)
  
 ### Run the upgrade analyzer
 The upgrade analyzer tool runs against your AX 2012 environment and identifies tasks that should be done to prepare the 2012 environment, to help make the upgrade experience smoother and less expensive:
@@ -111,6 +118,8 @@ Complete the tasks from the fit gap analysis that was performed during the “De
 
 ### Data upgrade (development environment)
 After your code upgrade tasks are completed, you can upgrade your AX 2012 database to Finance and Operations for the first time. This first upgrade occurs in a development environment, so that you can more easily remediate or debug any issues that are found at this stage. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Larger sandbox environments don't offer this agility, and a minimum of several hours will be required in order to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
+
+![Data upgrade in development environment](./media/data-upgrade-dev.png)
  
 The preceding diagram shows the process. Just back up the AX 2012 database, upload it to Azure, restore to the Finance and Operations environment, and then run the data upgrade.
 
@@ -120,6 +129,8 @@ The underlying framework that is used to convert the data in the database during
 
 ### Data upgrade (sandbox environments)
 When data upgrade in a development environment is completed, the same process can be run in a sandbox environment. The sandbox environment is the environment where business users and functional team members can test business processes by using the upgraded AX 2012 data and code.
+
+![Data upgrade in sandbox environment](./media/data-upgrade-sandbox.png)
  
 The preceding diagram shows the process for running data upgrade in a sandbox environment. The difference here is that bacpac is used instead of a traditional SQL backup. This tool is required in order to convert between Microsoft SQL Server and Azure SQL Database. It's a standard SQL tool, and isn't specific to Finance and Operations.
 
@@ -155,5 +166,3 @@ Microsoft Dynamics AX 2012 R2 and Microsoft Dynamics AX 2012 RTM aren't currentl
 
 Only upgrade to the cloud-deployed version of Finance and Operations is supported. Upgrade to the on-premises version isn't supported. Support for upgrade to the on-premises version will be added later in 2017.
 
-## Current limitations
-Virtual companies…
