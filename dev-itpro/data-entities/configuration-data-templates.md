@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 7
 Configuration data templates are predefined lists of entities for each module area that can be used in a data project. You can create, view, and modify these templates by using the **Template** page in the **Data management** workspace.
 
 > [!IMPORTANT]
-> Default configuration templates are on the roadmap for the July 2017 release of Microsoft Dynamics 365 for Finance and Operations. The Configuration data project feature is available in Platform update 7. You can create and use your own templates in the current product release.
+> Default configuration templates are on the roadmap for the July 2017 release of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. The Configuration data project feature is available in Platform update 7. You can create and use your own templates in the current product release.
 
 ## Create a new configuration data template
 The **Template** page in the **Data management** workspace provides tools that let you create a template of entities. This page resembles the configurations page, and the two features work in a similar manner.
@@ -59,7 +59,7 @@ In the spring release of Dynamics 365 for Finance and Operations, Enterprise edi
 
 Default templates will be delivered together with each new release of Dynamics 365 for Finance and Operations. Our long-term goal is to provide the templates in Microsoft Dynamics Lifecycle Services (LCS), so that you can push them to an instance of Dynamics 365 for Financial and Operations. However, for the current releases, click the **Templates** tile in the **Data management** workspace, and then click **Load default templates** to load the templates.
 
-After the templates are loaded, you can change them to suit your business requirements. If you ever want to retrieve the original default templates, you can use the **Load default templates** button to add them back to your system. You can replace the templates with the latest versions, or you can first make a copy of the old templates and then add the default templates.
+After the templates are loaded, you can change them to suit your business requirements. If you ever want to retrieve the original default templates, you can use the **Load default templates** button to add them back to your system. This step will replace the templates with the latest versions. If you have made changes to the templates, you can make a copy of the old templates by exporting them. Please note that loading default templates and importing templates required system administrator access to ensure that all entities are correctly loaded into the template.
 
 ### How entities are sequenced for processing
 Whether you're creating your own templates or using the default templates, it's important that you understand how templates are sequenced for processing during export and import.

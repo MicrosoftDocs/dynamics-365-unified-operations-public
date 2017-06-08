@@ -127,7 +127,7 @@ See also
 
 [Technical concepts guide](developer-home-page.md)
 
-[Dynamics 365 for Operations development tools](development-tools.md)
+[Development tools overview](development-tools-overview.md)
 
 
 

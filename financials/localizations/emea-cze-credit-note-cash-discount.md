@@ -17,15 +17,14 @@ ms.search.form: CustParameters, PrintMgmtSetupUIMain, Reasons
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 273063
-ms.assetid: b7cc2add-88dc-4e15-a537-49f3ebe2e37f
 ms.search.region: Czech Republic
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
