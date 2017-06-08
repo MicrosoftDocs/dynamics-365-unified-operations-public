@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 274443
@@ -61,7 +61,7 @@ In this example, a fixed asset has the following characteristics.
 | Service life days  | 1,826 (= 365 + 365 + 365 + 366 + 365) |
 | Period frequency   | Yearly                                |
 
-The yearly depreciation amount is based on the calendar days in a year: Depreciation amount = Acquisition cost ÷ Total number of days × Number of days in period The following table shows the calculation results for the Straight line (Hungary) depreciation method and, for comparison, the calculation results for the [Straight line service life depreciation method](https://ax.help.dynamics.com/en/wiki/straight-line-service-life-depreciation/).
+The yearly depreciation amount is based on the calendar days in a year: Depreciation amount = Acquisition cost ÷ Total number of days × Number of days in period The following table shows the calculation results for the Straight line (Hungary) depreciation method and, for comparison, the calculation results for the [Straight line service life depreciation method](../fixed-assets/straight-line-service-life-depreciation.md).
 
 | Period | Number of days | Amount for Straight line (Hungary) depreciation | Amount for Straight line service life depreciation |
 |--------|----------------|-------------------------------------------------|----------------------------------------------------|
