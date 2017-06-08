@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/28/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -29,9 +29,10 @@ ms.dyn365.version:
 
 ---
 
+# Practice manager Power BI content
+
 [!include[banner](../includes/banner.md)]
 
-# Practice manager Power BI content
 
 This topic describes what is included in the **Practice manager** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 

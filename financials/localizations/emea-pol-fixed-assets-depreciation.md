@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosti
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264274
-ms.assetid: dcdabcbe-84e5-4615-aa39-2aa055b36da9
 ms.search.region: Poland
 # ms.search.industry: 
 ms.author: v-elgolu
