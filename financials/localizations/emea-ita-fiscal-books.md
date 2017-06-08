@@ -17,11 +17,10 @@ ms.search.form: CustParameters, LedgerJournalSetup, ProjJournalName, TaxBook, Ta
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 268654
-ms.assetid: 3e761795-22e4-4d40-8c51-1f4a3f94b573
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: ilyako

@@ -25,7 +25,7 @@ ms.assetid: fb4084cf-1061-4286-9f09-0f28a031483d
 ms.search.region: Hungary
 # ms.search.industry: 
 ms.author: anasyash
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
