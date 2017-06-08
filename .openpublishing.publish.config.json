@@ -97,6 +97,22 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
+    },
+    {
+      "docset_name": "d365Ops-Core",
+      "build_source_folder": "core",
+      "build_output_subfolder": "d365Ops-Core",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [],
