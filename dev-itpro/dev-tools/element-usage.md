@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -47,14 +47,11 @@ During build operations, cross-reference information is generated that can be us
 
 When you right-click some higher-level elements, such as tables, the **View Reference** command is available. This command produces a graphic that shows the elements that are related to the current element. You can right-click the items in the graphic and then click **Go To Definition** to navigate to those elements. [![24\_DevoToolsConcept](./media/24_devotoolsconcept.png)](./media/24_devotoolsconcept.png)
 
-See also
---------
+# See also
 
-[Microsoft Dynamics &#8216;AX 7 &#8216; development tools](development-tools.md)
+[Development tools overview](development-tools-overview.md)
 
 [Element designers](element-designers.md)
-
-[Technical Concepts Guide](developer-home-page.md)
 
 
 

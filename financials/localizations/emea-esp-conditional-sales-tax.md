@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -21,11 +21,10 @@ ms.reviewer: annbe
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 271503
-ms.assetid: 6b2a8a42-3c23-4e20-98aa-d3babfd893ab
 ms.search.region: Spain
 # ms.search.industry: 
 ms.author: v-elgolu
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
