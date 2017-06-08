@@ -21,11 +21,10 @@ ms.reviewer: annbe
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 271523
-ms.assetid: 6ba4827b-1dce-4053-84a7-e9e7f8a14cc3
 ms.search.region: Spain
 # ms.search.industry: 
 ms.author: anasyash
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
