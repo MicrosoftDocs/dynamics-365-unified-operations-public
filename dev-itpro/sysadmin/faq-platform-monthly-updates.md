@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -46,15 +46,17 @@ Monthly updates are backward compatible and non-breaking. An explicit opt-in opt
 ## How can I update my environment to the latest monthly update?
 To install the latest monthly platform update on an existing environment, go to [Lifecycle Services (LCS)](https://lcs.dynamics.com/). In the Shared asset library, select the **Software deployable package** tab. You will find the latest platform update package that you can deploy. For example, the deployable package for platform update 5 is shown below. This package can be imported to the project's asset library and then can be applied to a specific environment through the update flows. For more details, see [Upgrade Dynamics 365 for Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md).
 
-[![Deployable package in LCS](./media/deployable-package-in-lcs.png)
+![Deployable package in LCS](./media/deployable-package-in-lcs.png)
 
 New environments that are deployed will include the latest platform update.
 
 ## How do I know what's changed in the monthly platform update?
-To see a list of the new or changed features in the latest monthly update, click [here](https://go.microsoft.com/fwlink/?linkid=845889).
+To see a list of the new or changed features in the latest monthly update, click [here](../get-started/whats-new-changed.md).
 
 ## What should I test to approve the platform monthly update?
 Monthly platform updates are backward compatible and non-breaking. We recommend that you run your main business process regressions tests, and then deploy into PROD.
+
+We recommend that you automate functional validations to reduce the validation effort.
 
 ## How long can I stay on a specific monthly update?
 You can stay up to 12 months on a monthly platform update. However, any hotfix that you need will require you to take the latest monthly update available. Typically updates fix problems with or enable new features in Dynamics 365 for Operations, so you are highly encouraged to keep up to date. For more information, see [Microsoft Dynamics 365 for Operations versions and update policy](../migration-upgrade/versions-update-policy.md).
@@ -70,10 +72,13 @@ Application updates (X++ and binary) are available in the update tiles based on 
 
 If you are already on platform update 4 or later, applying an application **binary** update will also update your Dynamics 365 for Operations platform to the latest release. 
 
-[![Application and binary update tiles](./media/application-and-binary-update-tiles-146x300.png)]
+![Application and binary update tiles](./media/application-and-binary-update-tiles-146x300.png)
 
 ## What is the guidance to customers who are going live?
 The recommendation is that you sign off with testing the platform update that's no more than a month before go live. The expectation is that you will test all scenarios and sign off using the T - 1 month platform update. This ensures that you are on the latest platform update with all available fixes.
+
+## What is a planned maintenance update?
+A planned maintenance update is explained in [Planned maintenance window FAQ](../lifecycle-services/planned-maintenance-window-faq.md).
 
 
 

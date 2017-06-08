@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -111,13 +111,14 @@ Some workspaces contain count tiles (tiles with numbers on them) that you'd als
 The dashboard is often the first page you'll see when you open Dynamics 365 for Operations. You can personalize the dashboard to rename your workspace navigation tiles, to show only the tiles that you'd like to see, rename the tiles, or to arrange the tiles in the order you'd prefer to see them. To personalize the dashboard, select any tile and right-click to open a context menu. On the context menu, select **Personalize**. If the selected tile is one that  you'd like to hide or rename or skip, you can make that change directly on the Property window that has appeared. If you'd like to arrange tiles, then select **Personalize this form** in the Property window to open the Personalization toolbar. You can then use the Move Tool to arrange the tiles.
 
 ## Administration of personalization
-It is possible to personalize a page and share it with other users by simply exporting the personalized page and asking the other users to navigate to the personalized page and import the personalization file that you've created. If a user has admin privileges, they can also manage personalizations for other users in the **Personalization Setup** page. Navigate to the b page. In the **Personalization** page, you'll find two tabs, one labeled **System** and one labeled **Users**. 
+After you personalize a page, you can share your personalizations with other user users. Just export the personalized page. You can then ask the other users to navigate to the personalized page and import the personalization file that you created.
 
-**System:** This is where you can temporarily disable or "turn off" all personalizations in the system. This doesn't delete personalizations, instead it resets all forms to their default state. You can later re-enable personalization to have all personalizations re-applyed to each users forms. You can also delete all personalizations for all users. Note that when you delete personalizations, there is no way to automatically re-enable personalizations from the system. Make sure you have exported personalizations that you may want to later import before performing this step. 
+Users who have administrator privileges can also manage personalizations for other users on the **Personalization** page. This page has four tabs: **System**, **Users**, **Import**, and **Clear**.
 
-**Users:** This is where you can decide for each user if they can perform either implicit or explicit personalization. You can also decide if each user can perform implicit or explicit personalization on a specific form. Lastly, you can import or export or delete a personalization for each user. 
-
-**Note:** In its initial release, personalization administration allows only management on a user by user basis.
+- **System** – You can temporarily disable or turn off all personalizations in the system. In this case, you don't delete personalizations. Instead, you just reset all pages to their default state. If you re-enable personalization later, all personalizations are reapplied to each user's pages. You can also delete all personalizations for all users. Note that when you delete personalizations, there is no way to automatically re-enable personalizations from the system. Therefore, before you perform this step, make sure that you have exported all personalizations that you might want to import later.
+- **Users** – You can specify whether each user can do either implicit personalization or explicit personalization. You can also specify whether each user can do implicit or explicit personalization on a specific page. Finally, you can import, export, or delete a personalization for each user.
+- **Import** – You can import a personalization for one or more users. You use this tab after you've created a personalization on a page or workspace, and then exported that personalization as a personalization file. To import your personalization file and apply it to one or more users, select individual users in the list of all users, or filter by a specific role and then select users in that role. After you've selected the users who will use your personalization, click **Import**, and select your personalization file. The personalization will be validated and applied to all the selected users the next time that they open the selected page.
+- **Clear** – You can clear page or workspace personalizations for one or more users. First, select the page or workspace to clear personalizations for. Next, select individual users in the list of all users, or filter by a specific role and then select users in that role. After you've selected both a page or workspace and users, click **Clear**. All personalizations that the selected users have applied to the selected page or workspace are cleared. This action can't be undone. However, if the page or workspace has a saved personalization, that personalization can be re-imported.
 
 
 
