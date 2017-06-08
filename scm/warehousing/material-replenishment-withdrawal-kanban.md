@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
+
 This topic describes how the withdrawal kanban is used for material replenishment for manufacturing activities.
 
 ## Workflow for material replenishment that uses the withdrawal kanban
