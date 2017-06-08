@@ -47,7 +47,7 @@ When you define the work template details, you can use the **Work line breaks** 
 
 If you associate cycle count plans with work templates by using the **Work lines breaks** option, the **Partial cycle count** field is selected for the cycle counting work that is created, and multiple cycle counting work lines will be created based on the definition of the work template. 
 
-Before *partial cycle count* work can be processed, you must, at a minimum, select **Display item number** for the mobile device menu item as part of the cycle counting setup. The warehouse operator will be asked to record only counting information that is related to the counting lines (item numbers and product dimensions). All other on-hand inventory will be ignored for this counting process. 
+Before partial cycle count work can be processed, you must, at a minimum, select **Display item number** for the mobile device menu item as part of the cycle counting setup. The warehouse operator will be asked to record only counting information that is related to the counting lines (item numbers and product dimensions). All other on-hand inventory will be ignored for this counting process. 
 
 For the partial cycle count process, the **Last cycle count** date/time won’t be updated for the location.
 
