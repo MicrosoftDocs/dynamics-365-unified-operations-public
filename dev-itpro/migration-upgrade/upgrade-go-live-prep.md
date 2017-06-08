@@ -1,4 +1,4 @@
-﻿---
+---
 # required metadata
 
 title: Upgrade: Prepare for go-live
