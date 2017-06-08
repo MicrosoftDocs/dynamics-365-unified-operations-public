@@ -1,12 +1,38 @@
-Access and security
-===================
+---
+# required metadata
 
-The **Cost control** workspace is a central point were managers can see
-performance of their cost objects. This means that the end users of Cost
-accounting can consume Cost accounting data without being cost accountants. For
-security reasons, the end users should only be allowed to see the Cost
-accounting data that is related to the specific cost objects for which they are
-responsible.
+title: Access and security
+description: Access and security roles determine what permissions a user is granted for access to a particular set of Cost accounting data on the **Cost control** workspace.  
+author: YuyuScheller
+manager: AnnBe
+ms.date: 06/24/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: CAMDimensionHierarchy,
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+# ms.reviewer: YuyuScheller
+ms.search.scope:  AX 7.0.0, Operations, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
+---
+
+## Access and security
+
+The **Cost control** workspace is a central point were managers can see performance of their cost objects. This means that the end users of Cost accounting can consume Cost accounting data without being cost accountants. For security reasons, the end users should only be allowed to see the Cost accounting data that is related to the specific cost objects for which they are responsible.
 
 There are four unique roles in Cost accounting.
 
@@ -27,11 +53,9 @@ If a **Cost object controller** role is assigned to an end user, the user can:
 -   Access the **Cost control** workspace for Microsoft Dynamics 365 for Finance
     and Operations mobile application.
 
-**Note:**
 
-The **Cost object** controller role does control which cost objects the user can
-access and see data for. Row-level security is obtained via **Dimension
-hierarchies** and **Access list hierarchy**.
+> [!NOTE]
+> The **Cost object** controller role does control which cost objects the user can access and see data for. Row-level security is obtained via **Dimension hierarchies** and **Access list hierarchy**.
 
 Here is an example of a dimension hierarchy.
 
@@ -41,44 +65,26 @@ Dimension hierarchy details
 |--------------------------|--------------|------------------------------------|-----------------------|
 | Organization             | Cost centers | Dimension classification hierarchy | **Yes**               |
 
-You can use the **Users** FastTab in the hierarchy designer to insert one or
-several User IDs on each node.
+You can use the **Users** FastTab in the hierarchy designer to insert one or several User IDs on each node.
 
 |              | **Users**        | Dimension member ranges |                     |
 |--------------|------------------|-------------------------|---------------------|
 | Nodes        | User ID          | From dimension member   | To dimension member |
 | Organization | Benjamin, Claire |                         |                     |
-|              | April            |                         |                     |
-|              | Alicia           | CC002                   | CC003               |
+| &nbsp;&nbsp;Admin              | April            |                         |                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finance             | Alicia           | CC002                   | CC003               |
 |              |                  | CC007                   | CC007               |
-|              | Arnie            | CC001                   | CC001               |
-|              | David            |                         |                     |
-|              | Ellen            | CC005                   | CC005               |
-|              | Chris            | CC006                   | CC006               |
+| &nbsp;&nbsp;&nbsp;&nbsp;HR              | Arnie            | CC001                   | CC001               |
+| &nbsp;&nbsp;Production             | David            |                         |                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;Packaging    Ellen            | CC005                   | CC005               |
+| &nbsp;&nbsp;&nbsp;&nbsp;Assembly     | Chris            | CC006                   | CC006               |
 
->   Admin
+> [!NOTE] 
+> Cost accountants should be assigned to the top level of the hierarchy so they can see all entries in Cost accounting.
 
->   Finance
+Before the **Access list hierarchy** and its security settings can be applied, the parameter **Enable view access for cost object dimension members** on **Cost accounting/Setup/Parameters/General** must be set to **Yes**.
 
->   HR
-
->   Production
-
->   Packaging
-
->   Assembly
-
-**Note:**
-
-Cost accountants should be assigned to the top level of the hierarchy so they
-can see all entries in Cost accounting.
-
-Before the **Access list hierarchy** and its security settings can be applied,
-the parameter **Enable view access for cost object dimension members** on **Cost
-accounting/Setup/Parameters/General** must be set to **Yes**.
-
-The **Access list hierarchy** settings are used to control data displayed in
-following areas.
+The **Access list hierarchy** settings are used to control data displayed in following areas.
 
 -   **Cost control** workspace (Client)
 
@@ -92,22 +98,12 @@ following areas.
 
     -   Data displayed in Power BI visualizations
 
-    -   Data Power BI visualizations embedded into Microsoft Dynamics 365 for
-        Finance and Operations client
+    -   Data Power BI visualizations embedded into Microsoft Dynamics 365 for Finance and Operations client
 
-**Note:**
+> [!IMPORTANT] 
+> Before **Access list hierarchy** can affect data in Power BI, **Access list hierarchy** and **Row-level security** in Power BI need to be paired. For more informaiton, see For more information, see [Set up security for Cost accounting content pack](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
 
-Before **Access list hierarchy** can affect data in Power BI, **Access list
-hierarchy** and **Row-level security** in Power
 
-BI need to be paired.
+Add a link to dimension hierarchy.
 
-Additional links
 
-<https://ax.help.dynamics.com/en/wiki/setting-up-security-for-cost-accounting-content-for-power-bi/>
-
-Please read and learn more about: *Dimension hierarchies*
-
-Why only one role?
-
-User names in demo data?
