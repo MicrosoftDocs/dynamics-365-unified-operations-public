@@ -24,7 +24,7 @@ ms.custom: 10314
 ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
 ms.search.region: Japan
 # ms.search.industry: 
-author: RichardLuan
+ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
