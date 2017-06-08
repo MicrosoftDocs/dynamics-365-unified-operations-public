@@ -3,9 +3,9 @@
 
 title: Production performance Power BI content
 description: This topic describes what is included in the Production performance Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
-author: [author's GitHub alias]
+author: sericks
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -14,10 +14,10 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User
+audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks
-# ms.search.scope: Operations
+# ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -46,11 +46,7 @@ This Power BI content also lets you analyze production variances. Production var
 The **Production performance** Power BI content includes data that originates from production orders and batch orders. The reports don't include data that is related to kanban productions.
 
 ## Accessing the Power BI content
-
-You can find the **Production performance** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-> [!NOTE]
-> KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB at https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Production performance** Power BI content is shown on the **Production performance** page (**Production control** > **Inquiries and reports** > **Production performance analysis** > **Production performance**). 
 
 ## Metrics that are included in the Power BI content
 
@@ -66,6 +62,16 @@ The following table provides an overview of the visualizations that are included
 | Defects by resource                        | <ul><li>Defect rate (ppm) by date</li><li>Defect rate (ppm) by resource and Site</li><li>Defect rate (ppm) by operation</li><li>Top 10 resources by defect rate</li></ul> | Defective quantity    |
 | Defects trend by resource                  | Defect rate (ppm) by quantity processed              |                       |
 | Production variances for job order costing | <ul><li>Production variance by date and cost group type</li><li>Production variance by site and cost group type</li><li>Top 10 products with unfavorable production variance</li><li>Top 10 unfavorable production variance by resource</li></ul> | <ul><li>Realized cost</li><li>Production variance</li><li>Production variance %</li></ul> |
+
+## Extending the Power BI content
+By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.
+
+You can find the **Production performance** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+
+Be sure to download the **Production performance** content that applies to the version of Dynamics 365 that you're using.
+
+> [!NOTE]
+> If you're using Microsoft Dynamics 365 for Operations version 1611, KB 4011327 is a prerequisite for this Power BI content. After you sign in to LCS, you can access the KB at https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## Understanding the data model and entities
 
