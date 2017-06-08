@@ -21,7 +21,10 @@
 ## [Data entities: System administration](data-entities-system-administration.md)
 ## [Data entities: Workflow](data-entities-workflow.md)
 
-# Working with entities
+# Migrating entities
+## [Configuration data projects](configuration-data-projects.md)
+### [Configure data templates](configuration-data-templates.md)
+### [Copy configuration data between companies](copy-configuration.md)
 ## [Best practices for importing vouchers using the General journal entity](tips-tricks-import-general-journal-entity.md)
 
 # Creating data entities

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 2016-02-18 10 - 21 - 53
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata

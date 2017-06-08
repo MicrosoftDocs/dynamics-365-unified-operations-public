@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265044
@@ -63,8 +63,8 @@ The monthly average cost model is used to calculate the weighted average cost of
 > Monthly average cost = (The beginning inventory value for the month + The increased inventory value) / (The beginning quantity + The increased quantity)
 
 
-Many Chinese manufacturing and trading companies use a monthly average cost model because it is a simple means of manually calculating inventory value. The following table compares the processes that are used to handle issue and receipt transactions in the manual monthly average cost model and the monthly average cost model that is available in Microsoft Dynamics 365 for Operations.
-| Manual monthly average cost model                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Monthly average cost model in Microsoft Dynamics 365 for Operations                                                                                                                                                        |
+Many Chinese manufacturing and trading companies use a monthly average cost model because it is a simple means of manually calculating inventory value. The following table compares the processes that are used to handle issue and receipt transactions in the manual monthly average cost model and the monthly average cost model that is available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+| Manual monthly average cost model                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Monthly average cost model in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | The monthly average cost is calculated, including all receipt and issue transactions. If the receipt transactions have not been invoiced, the estimated physical price is considered. The calculated monthly average cost is used to settle all issued transactions for the month, whether they are invoiced or not. When the receipts are invoiced, if there are differences between the estimated physical price and the invoiced price, the difference is added to the current on-hand inventory value. No adjustment is made to the previously issued transactions. If the current inventory quantity is 0 (zero), the differences are adjusted in the expense account. | Only the monthly average cost from invoiced receipts is calculated, and only invoiced issue transactions are settled. Non-invoiced receipts and issue transactions are calculated and settled only when they are invoiced. |
 
