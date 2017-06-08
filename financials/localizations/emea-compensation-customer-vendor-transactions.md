@@ -18,7 +18,7 @@ keywords: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 # ms.devlang: 
 ms.reviewer: shylaw
-ms.suite: Released- Dynamics 365 for Operations version 1611
+#ms.suite: 
 # ms.tgt_pltfrm: 
 ms.custom: 1691503
 ms.search.region: Hungary, Poland

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -39,7 +39,7 @@ You can use Electronic reporting to format vendor checks. Many bank-specific and
 
 You should always go to the Shared asset library on Microsoft Dynamics Lifecycle Services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**. The next section, “What do I have to set up?,” includes a link to a topic that explains how to create an LCS repository so that you can review available configurations and import selected configurations.
 
-Microsoft Dynamics 365 for Operations includes a sample format where the check is on top, followed by two remittance sections. It also includes a sample format where the check is in the middle, between two remittance sections. These sample formats correspond to Deluxe business checks formats.
+Microsoft Dynamics 365 for Finance and Operations, Enterprise edition includes a sample format where the check is on top, followed by two remittance sections. It also includes a sample format where the check is in the middle, between two remittance sections. These sample formats correspond to Deluxe business checks formats.
 
 ## What do I have to set up?
 

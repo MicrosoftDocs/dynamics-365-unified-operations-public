@@ -34,13 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information that will help you set up Goods and Services Tax (GST) for a Malaysian company. It also explains the functionality that Microsoft Dynamics 365 for Operations provides for GST.
+This topic provides information that will help you set up Goods and Services Tax (GST) for a Malaysian company. It also explains the functionality that Microsoft Dynamics 365 for Finance and Operations, Enterprise edition provides for GST.
 
 GST is a multi-stage tax on domestic consumption. GST is charged on all taxable supplies of goods and services in Malaysia, except those goods and services that are explicitly exempted. GST is also charged on the importation of goods and services into Malaysia.
 
 ## Enabling the Malaysia GST features
 
-You can enable the GST features in Dynamics 365 for Operations only if the country/region of the legal entity's address is Malaysia.
+You can enable the GST features in Finance and Operations only if the country/region of the legal entity's address is Malaysia.
 
 ### GST registration number
 
@@ -69,7 +69,7 @@ For Malaysia, the process for creating a credit note for a sales order has been 
 -   It has a reference to the original invoices.
 -   The total amount is positive.
 
-For both debit notes and credit notes, you must provide a reason code on the sales order header. Similar functions are provided for free text invoices and purchase orders. In standard Dynamics 365 for Operations, you can create a credit note for a project invoice from the **Sales order** page. You can now also create a debit note for a project invoice.
+For both debit notes and credit notes, you must provide a reason code on the sales order header. Similar functions are provided for free text invoices and purchase orders. In standard Finance and Operations, you can create a credit note for a project invoice from the **Sales order** page. You can now also create a debit note for a project invoice.
 
 ## GST invoices
 
@@ -125,7 +125,7 @@ These reports have different formats, but they all display monetary amounts (tra
 
 ### Defining sales tax reporting codes
 
-The **GST report by configuration** report takes advantage of reporting code functions in Dynamics 365 for Operations. Sales tax reporting codes collect the information for several sales tax codes onto one report line. In a typical setup, there is one sales tax reporting code for every calculated field on reports, and some predetermined reporting codes must be created. However, because you can now define your own report configurations and specify which reporting codes to use, no predetermined codes are required. No specific report layout has been introduced for Malaysia GST. You must use the **Default** report layout for your reporting codes.
+The **GST report by configuration** report takes advantage of reporting code functions in Finance and Operations. Sales tax reporting codes collect the information for several sales tax codes onto one report line. In a typical setup, there is one sales tax reporting code for every calculated field on reports, and some predetermined reporting codes must be created. However, because you can now define your own report configurations and specify which reporting codes to use, no predetermined codes are required. No specific report layout has been introduced for Malaysia GST. You must use the **Default** report layout for your reporting codes.
 
 ### Mapping sales tax reporting codes to sales tax codes
 
@@ -171,11 +171,11 @@ Royal Malaysian Customs Department (MRCD) will periodically audit your business 
 -   Ledger transactions
 -   Footer (Summary)
 
-For the GAF to be generated, specific business data must be captured in Dynamics 365 for Operations.
+For the GAF to be generated, specific business data must be captured in Finance and Operations.
 
-For the "Company information" section, the GAF version must be specified on the **General ledger parameters** page in Dynamics 365 for Operations.
+For the "Company information" section, the GAF version must be specified on the **General ledger parameters** page in Finance and Operations.
 
-For the "Purchases" section, when goods are imported from overseas vendors, the declaration number should be captured for each vendor invoice. In the GAF, transactions besides regular sales orders and purchases orders should be considered purchases or supply. For example, you make payment to vendors, and you must also pay bank fees to banks. Per Malaysia GST regulations, GST will be applied to the bank charge. The bank will provide a GST invoice to you, and you can claim the GST input tax. The tax authority will expect to see that the bank charges are considered purchases in the GAF that is generated. In such cases, Dynamics 365 for Operations lets users capture the required GAF information. You can now capture the organization number for a bank group. By default, payment fee transactions of corresponding banks will be used. You can also enter required GAF information for various journals and payment fees, according to your business requirements. For example, you can enter GAF information for expense type journals in Project management and accounting, expense type service order lines, or expenses on expense reports. If any miscellaneous charges are applied to a free text invoice or vendor invoice, the GAF information is inherited from the document. You also can preview the supply and purchase records where GST applies, and you can edit or add relevant information on the **GAF purchase and supply review** page. You must make sure that you select the **GST** check box on the **Sales tax codes** page for each of your GST tax codes.
+For the "Purchases" section, when goods are imported from overseas vendors, the declaration number should be captured for each vendor invoice. In the GAF, transactions besides regular sales orders and purchases orders should be considered purchases or supply. For example, you make payment to vendors, and you must also pay bank fees to banks. Per Malaysia GST regulations, GST will be applied to the bank charge. The bank will provide a GST invoice to you, and you can claim the GST input tax. The tax authority will expect to see that the bank charges are considered purchases in the GAF that is generated. In such cases, Finance and Operations lets users capture the required GAF information. You can now capture the organization number for a bank group. By default, payment fee transactions of corresponding banks will be used. You can also enter required GAF information for various journals and payment fees, according to your business requirements. For example, you can enter GAF information for expense type journals in Project management and accounting, expense type service order lines, or expenses on expense reports. If any miscellaneous charges are applied to a free text invoice or vendor invoice, the GAF information is inherited from the document. You also can preview the supply and purchase records where GST applies, and you can edit or add relevant information on the **GAF purchase and supply review** page. You must make sure that you select the **GST** check box on the **Sales tax codes** page for each of your GST tax codes.
 
 To generate the GAF, click **Tax** &gt; **Declarations** &gt; **Sales tax** &gt; **Generate GAF file**, and provide the following required information:
 
