@@ -3,9 +3,9 @@
 
 title: Personnel actions [FAQ]
 description: This topic contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.
-author: twheeloc
+author: shielas
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: shielas
+ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
@@ -25,7 +25,7 @@ ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: shielas
-ms.search.validFrom: 2017-07-01
+ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
