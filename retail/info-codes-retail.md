@@ -3,7 +3,7 @@
 
 title: Info codes
 description: This article provides an overview about info codes, info code groups, and how to use them.
-author: mumani
+author: mugunthanm
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 22761
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: sijoshi
+ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
