@@ -2,10 +2,10 @@
 # required metadata
 
 title: Recruiting Power BI content
-description: This topic describes the Dynamics 365 for Operations - Recruiting Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
-author: twheeloc
+description: This topic describes the Recruiting Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
+author: jcart1106 
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: 71
-ms.search.scope: Operations
+ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 263934
 ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
@@ -35,30 +35,20 @@ ms.dyn365.ops.version: Version 1611
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the **Recruiting reports** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+This topic describes the **Recruiting** Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
+If you're using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, the **Recruiting** Power BI content is shown on the **Recruitment management** workspace. 
 
-Embedded Power BI allows individuals in your organization to take advantage of analytics out of the box. They can quickly analyze your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
+## Reports and visuals in the Recruitment management workspace
+The **Recruitment management** workspace contains an **Analytics** tab. This tab contains the embedded Power BI content for recruiting. The content consists of an overview tab with additional tabs containing details. The table below describes the reports contained in each of the tabs.
 
-### Embedded content
-If you're using Dynamics 365 for Finance and Operations, Enterprise edition, the **Recruiting reports** Power BI content is displayed in the **NAME** workspace.
-
-### Content accessible from Lifecycle Services
-If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Recruiting reports** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-Be sure to download the **Recruiting reports** content that applies to the version of Dynamics 365 that you're using.
-
-## Reports that are included in the Power BI content
-The following table lists the metrics shown on each report.
-
-| Report                       | Metrics                                                                                               |
+| Report                       | Contents                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Applicant Analysis           | Applicants by job, applicant sources, applicants by location, and total number of applicants           |
-| Applicant Status             | Applicants by type and status, and applicant status                                                    |
-| Applicant Demographics       | Applicants by age and gender, and applicants by education level and status                             |
-| Recruiting Analysis          | Net hire ratio, average days to hire, percentage of bad hires, and recruiting costs                    |
-| Recruitment Project Analysis | Number of recruitment projects, openings by recruitment project, and applicants by recruitment project |
+| Recruitment Overview         | Summarizes other reports        |
+| Applicant Analysis           | Total number of applicants, applicants by job, applicant sources, female to male applicants, and applicants by location                                                  |
+| Applicant Status       | Applicants by type and status, and applicant status                           |
+| Recruiting Analysis | Net hire ratio, average days to hire, percentage of bad hires, recruiting costs, number of recruitment projects, hire to applied, applicants versus openings by recruitment project |
 
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
