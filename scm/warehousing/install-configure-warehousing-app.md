@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -46,11 +46,13 @@ The app is available on Android and Windows operating systems. To use this app, 
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
 | Windows (UWP)               | Windows 10 (all versions)                                                                                                                                                   |
-| Dynamics 365 for Operations | Microsoft Dynamics 365 for Operations version 1611 -or- Microsoft Dynamics Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
+| Dynamics 365 for Operations | Microsoft Dynamics 365 for Operations version 1611 <br>-or- <br>Microsoft Dynamics Dynamics AX version 7.0/7.0.1 and Microsoft Dynamics AX platform update 2 with hotfix KB 3210014 |
 
 ## Get the app
--   Windows (UWP) - [Dynamics 365 for Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
--   Android - [Dynamics 365 for Operations - Warehousing on the Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+-   Windows (UWP): [Dynamics 365 for Operations - Warehousing on the Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+-   Android:
+    - [Dynamics 365 for Operations - Warehousing on the Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+    - [Dynamics 365 for Operations - Warehousing on the Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
 ## Create a web service application in Active Directory
 To enable the app to interact with a specific Dynamics 365 for Operations server, you must register a web service application in a Azure Active Directory for the Dynamics 365 for Operations tenant. For security reasons, we recommend that you create a web service application for each device that you use. To create a web service application in Azure Active Directory (Azure AD), complete the following steps:
@@ -62,7 +64,7 @@ To enable the app to interact with a specific Dynamics 365 for Operations server
 5.  On the top toolbar, click **Applications**. [![wh-02-active-directory-applications](./media/wh-02-active-directory-applications-1024x197.png)](./media/wh-02-active-directory-applications.png)
 6.  In the bottom pane, click **Add**. The **Add application** wizard starts.
 7.  Enter a name for the application and select **Web application and/or web API**. [![wh-03-active-directory-add-application](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
-8.  Enter the sign-on URL, which is the application URL in your tenant, the root Operations URL. The sign-on URL is currently not being actively used in authenticating the app, but is a mandatory field. Enter the same URL in the App ID URI field. [![wh-04-ad-add-properties](./media/wh-04-ad-add-properties.png)](./media/wh-04-ad-add-properties.png)
+8.  Enter the sign-on URL, which is your web app URL. This URL is the same as your deployment URL, but oauth is added to the end. Enter the App ID URI, this value is mandatory, but isn’t required for the authentication. Make sure that this App ID URI is a mock URI like https://contosooperations/wmapp, since using the URL of your deployment can cause sign-in issues in other AAD applications such as the Excel Add-in. [![WH-04-AD-add-properties3](./media/WH-04-AD-add-properties3.png)](./media/WH-04-AD-add-properties3.png)
 9.  Go to the **Configure** tab. [![wh-05-ad-configure-app](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
 10. Scroll down until you see the **Permissions to other applications** section. Click **Add application**. [![wh-06-ad-app-add-permissions](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
 11. Select **Microsoft Dynamics ERP** in the list. Click the **Complete check** button in the right corner of the page. [![wh-07-ad-select-permissions](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
@@ -89,10 +91,15 @@ To enable Dynamics 365 for Operations to use your Azure AD application, you need
 You must configure the app on the device to connect to the Dynamics 365 for Operations server through the Azure AD application. To do this, complete the following steps.
 
 1.  In the app, go to **Connection settings**.
-2.  Clear the **Demo mode** field. [![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
-3.  Enter the following information: - **Azure Active directory client ID** - The client ID is obtained in step 13 in "Create a web service application in Active Directory". - **Azure Active directory client secret** - The client secret is obtained in step 13 in "Create a web service application in Active Directory". - **Azure Active directory resource** - The Azure AD directory resource depicts the Dynamics 365 for Operations root URL. **Note**: Do not end this field with a forward slash character (/). - **Azure Active directory tenant** - The Azure AD directory tenant used with the Dynamics 365 for Operations server: https://login.windows.net/&lt;your-AD-tenant-ID&gt;. For example: https://login.windows.net/contosooperations.onmicrosoft.com. 
-**Note**: Do not end this field with a forward slash character (/). - **Company** - Enter the legal entity in Dynamics 365 for Operations to which you want the application to connect. [![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
-4.  Select the **Back** button in the top-left corner of the application. The application will now connect to your Dynamics 365 for Operations server and the log-in screen for the warehouse worker will display. [![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+2.  Clear the **Demo mode** field. <br>[![wh-11-app-connection-settings-demo-mode](./media/wh-11-app-connection-settings-demo-mode-169x300.png)](./media/wh-11-app-connection-settings-demo-mode.png)
+3.  Enter the following information: 
+    + **Azure Active directory client ID** - The client ID is obtained in step 13 in "Create a web service application in Active Directory". 
+    + **Azure Active directory client secret** - The client secret is obtained in step 13 in "Create a web service application in Active Directory". 
+    + **Azure Active directory resource** - The Azure AD directory resource depicts the Dynamics 365 for Operations root URL. **Note**: Do not end this field with a forward slash character (/). 
+    + **Azure Active directory tenant** - The Azure AD directory tenant used with the Dynamics 365 for Operations server: https://login.windows.net/your-AD-tenant-ID. For example: https://login.windows.net/contosooperations.onmicrosoft.com. 
+    <br>**Note**: Do not end this field with a forward slash character (/). 
+    + **Company** - Enter the legal entity in Dynamics 365 for Operations to which you want the application to connect. <br>[![wh-12-app-connection-settings](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
+4.  Select the **Back** button in the top-left corner of the application. The application will now connect to your Dynamics 365 for Operations server and the log-in screen for the warehouse worker will display. <br>[![wh-13-log-in-screen](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
 
 ## Remove access for a device
 In case of a lost or compromised device, you must remove access to Dynamics 365 for Operations for the device. The following steps describe the recommended process to remove access.
