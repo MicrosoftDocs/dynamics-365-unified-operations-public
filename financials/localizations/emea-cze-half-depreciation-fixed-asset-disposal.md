@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264554
-ms.assetid: 7d9048c0-244a-4513-8f2d-05c63afdfce0
 ms.search.region: Czech Republic
 # ms.search.industry: 
 ms.author: epopov
