@@ -181,11 +181,11 @@ Dimension hierarchies are important for reporting. They let you define the speci
 
 Dimension hierarchies are available in the following reporting tools. This approach helps guarantee consistency in the reporting structure.
 
-- **Cost control** workspace (Microsoft Dynamics 365 for Operations client):
+- **Cost control** workspace (Client):
 
     - Controlled by configuration.
 
-- **Cost control** workspace (Dynamics 365 for Operations mobile application):
+- **Cost control** workspace (Mobile application):
 
     - Controlled by configuration.
 
@@ -218,8 +218,8 @@ The following example shows what a dimension hierarchy might look like in the re
 
 Over time, the dimension hierarchies that are used in the previously mentioned reporting tools will have to be updated. You can update dimension hierarchies by refreshing the client.
 
-- **Cost control** workspace (Dynamics 365 for Operations client)
-- **Cost control** workspace (Dynamics 365 for Operations mobile application)
+- **Cost control** workspace (Client)
+- **Cost control** workspace (Mobile application)
 
 Updates to dimension hierarchies are picked up every 24 hours by a pre-cached job. After the exported data is updated, the updated dimension hierarchies are available in the following tools:
 
@@ -319,11 +319,11 @@ To enable the access list hierarchy and its security settings, go to **Cost acco
 
 The settings for the access list hierarchy are used to control the data that is shown in the following areas:
 
-- **Cost control** workspace (Dynamics 365 for Operations client):
+- **Cost control** workspace (Client):
 
     - Data in forms that are used to drill through scenarios
 
-- **Cost control** workspace (Dynamics 365 for Operations mobile application):
+- **Cost control** workspace (Mobile application):
 
     - Balances in cards
 
@@ -333,5 +333,5 @@ The settings for the access list hierarchy are used to control the data that is 
     - Data Power BI visualizations that are embedded in the Dynamics 365 for Operations client
 
 > [!NOTE] 
-> - Before the access list hierarchy can affect data in Power BI, access-level hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
+> - Before the access list hierarchy can affect data in Power BI, access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
 > - The access list hierarchy doesn't help secure the export of data to Excel. Therefore, that reporting tool should be used only by cost accountants and managers who must have full access to view the data.
