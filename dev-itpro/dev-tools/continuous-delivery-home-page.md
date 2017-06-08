@@ -42,13 +42,15 @@ FAQ and guidelines
 - [Development and continuous delivery FAQ](continuous-delivery-faq.md)
 
 ## Build and test automation
-- [Exclude test packages from the build output](exclude-test-packages.md)
-- [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md)
-- [Version models in the automated build](version-models-build.md)
 - [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 - [Testing and validations](../perf-test/testing-validation.md)
 - [PERF103: Introduction to the PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
 - [Integrate the Retail SDK with the continuous build system (VSTS)](/dynamics365/operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build)
+### Advanced topics in build automation
+- [Exclude test packages from the build output](exclude-test-packages.md)
+- [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md)
+- [Version models in the automated build](version-models-build.md)
+### Blogs
 - [Developer ALM (blog)](https://blogs.msdn.microsoft.com/axdevalm/)
 
 ## Servicing
