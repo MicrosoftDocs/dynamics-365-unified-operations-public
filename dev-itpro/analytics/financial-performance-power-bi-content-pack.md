@@ -42,7 +42,10 @@ Accessing the content pack
 
 Two versions of the **Financial performance** content pack are available. One version is available from Microsoft Dynamics Lifecycle Services (LCS), and the other is available from PowerBI.com.
 
--   **Version that is available from LCS:** The Financial Performance content pack that is available from LCS supports Microsoft Dynamics 365 for Operations version 1611. You can find the content pack in the Shared asset library in LCS. For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+-   **Version that is available from LCS:** The Financial Performance content pack that is available from LCS supports:
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+- Microsoft Dynamics 365 for Operations version 1611 
+You can find the content pack in the Shared asset library in LCS. For more information about how to download the content pack and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 -   **Version that is available from PowerBI.com:** The Financial Performance content pack that is available from PowerBI.com supports Microsoft Dynamics AX versions 7.0 and 7.0.1. For more information about how to connect and load your Dynamics 365 for Operations data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
 
 ## Main account setup
