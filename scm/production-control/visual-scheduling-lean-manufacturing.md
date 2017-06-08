@@ -47,7 +47,9 @@ You can schedule only jobs of the **Process** type. The kanban job and its prope
 -   A tool that lets you schedule unplanned kanban jobs and reschedule previously scheduled jobs.
 
 ## Kanban schedule board
-The **Kanban schedule board** page contains seven main elements, as shown in the following illustration. [![Kanban schedule board](./media/kanban-schedule-board-1024x554.png)](./media/kanban-schedule-board.png)
+The **Kanban schedule board** page contains seven main elements, as shown in the following illustration. 
+
+[![Kanban schedule board](./media/kanban-schedule-board-1024x554.png)](./media/kanban-schedule-board.png)
 
 1.  Action Pane
 2.  Filter fields
