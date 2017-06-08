@@ -42,9 +42,8 @@ FAQ and guidelines
 - [Development and continuous delivery FAQ](continuous-delivery-faq.md)
 
 ## Build and test automation
-- [Manage runtime packages by using source control](manage-runtime-packages.md)
 - [Exclude test packages from the build output](exclude-test-packages.md)
-- [Update an existing build definition to exclude test packages from the build output](update-build-exclude-test.md)
+- [Manage third-party models and runtime packages by using source control](manage-runtime-packages.md)
 - [Version models in the automated build](version-models-build.md)
 - [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 - [Testing and validations](../perf-test/testing-validation.md)

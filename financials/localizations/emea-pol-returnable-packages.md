@@ -25,7 +25,7 @@ ms.assetid: decdb3af-9fc3-4aff-add1-bbb9d2eadc27
 ms.search.region: Poland
 # ms.search.industry: 
 ms.author: ilyako
-ms.dyn365.ops.intro: Version 1611
+ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
 ---
