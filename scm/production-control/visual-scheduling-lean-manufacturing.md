@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Visual scheduling for lean manufacturing | Microsoft Docs
+title: Visual scheduling for lean manufacturing 
 description: This topic provides information about the Kanban schedule board, which the production planner can use to control and optimize the production plan for kanban jobs.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 0000-00-00 00:00:00
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +17,14 @@ keywords: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisulaizat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 121
-ms.suite: Released- Dynamics 365 for Operations version 1611
+ms.reviewer: YuyuScheller
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
-ms.custom: 1688474
-ms.assetid: 68caa4bf-ce86-48fd-b7ab-291511bf9547
+ms.custom: 
+ms.assetid:
 ms.search.region: global
 ms.industry: Manufacturing
-ms.author: johanho
+ms.author: johanhoffmann
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -81,7 +81,7 @@ Jobs can be reassigned from one period to another. This capability can be useful
 ## Open the Kanban schedule board
 You can open the Kanban schedule board by using the menu item on the following pages:
 
--   Production area page
+-   **Production area** page
 -   **Kanban jobs scheduling** page
 -   **Production flow visualization** page
 
@@ -89,9 +89,5 @@ You can open the Kanban schedule board by using the menu item on the following p
 See also
 --------
 
-[Lean manufacturing – Kanban job scheduling](http://authoring.help.dynamics.com/en/wiki/lean-manufacturing-kanban-job-scheduling/)
-
-[Operations resources](https://ax.help.dynamics.com/en/wiki/operations-resources/#lean-work-cells)
-
-[Lean manufacturing](https://ax.help.dynamics.com/en/wiki/lean-manufacturing-2/#monitoring-and-maintaining-kanban-jobs)
+[Lean manufacturing – Kanban job scheduling](lean-manufacturing-kanban-job-scheduling.md)
 
