@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Financial Performance Power BI content
+# Financial performance Power BI content
 
 [!include[banner](../includes/banner.md)]
 
@@ -87,7 +87,7 @@ Each tile is backed by a supporting report. These reports contain both charts an
 | Earnings Analysis           | Actual and budget earnings before interest and taxes (EBIT) by legal entity, EBIT this year and last year, expenses to revenue percentage, and actual and budget expenses to revenue                                                                                                                                                          |
 | Revenue Analysis            | Total revenue, actual and budget total revenue by legal entity, total revenue this year and last year, revenue budget variance by legal entity, and total revenue this period and last period                                                                                                                                                 |
 | Expense Analysis            | Total expenses, actual to budget total expenses by legal entity, actual and budget total expense by quarter, total expenses by account category, and operating expenses ratio                                                                                                                                                                 |
-| Billed Revenue Analysis     | Total accounts receivable, total accounts receivable by legal entity, total accounts receivable by quarter, and balances for accounts receivable accounts **Note:** The reports don't include beginning balances for the accounts receivable ledger accounts. They show the total of new transactions that are posted to Accounts receivable. |
+| Billed Revenue Analysis     | Total accounts receivable, total accounts receivable by legal entity, total accounts receivable by quarter, and balances for accounts receivable accounts<br>**Note:** The reports don't include beginning balances for the accounts receivable ledger accounts. They show the total of new transactions that are posted to Accounts receivable. |
 
 The charts and tiles on all these reports can be filtered and pinned to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure a Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
