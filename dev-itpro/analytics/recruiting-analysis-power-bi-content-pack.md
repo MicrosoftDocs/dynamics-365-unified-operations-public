@@ -50,7 +50,6 @@ The **Recruitment management** workspace contains an **Analytics** tab. This tab
 | Applicant Status       | Applicants by type and status, and applicant status                           |
 | Recruiting Analysis | Net hire ratio, average days to hire, percentage of bad hires, recruiting costs, number of recruitment projects, hire to applied, applicants versus openings by recruitment project |
 
-You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## Understanding the data model and entities
 The following table shows the entities that the content pack was based on.
