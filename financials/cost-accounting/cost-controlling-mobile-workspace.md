@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost controlling mobile workspace
-description: This topic provides information about the Cost controlling mobile workspace, which is available for the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition mobile app. This workspace lets cost center managers view information about cost center performance anytime and anywhere. 
+description: This topic provides information about the Cost controlling mobile workspace, which is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace lets cost center managers view information about cost center performance anytime and anywhere. 
 author: YuyuScheller
 manager: AnnBe
 ms.date: 05/10/2017
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: annbe
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 267114
@@ -35,7 +35,7 @@ ms.search.validFrom: 2016-11-30
 [!include[banner](../includes/banner.md)]
 
 
-This topic provides information about the Cost controlling mobile workspace, which is available for the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition mobile app. This workspace lets cost center managers view information about cost center performance anytime and anywhere. 
+This topic provides information about the Cost controlling mobile workspace, which is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace lets cost center managers view information about cost center performance anytime and anywhere. 
 
 Overview of the Cost controlling mobile workspace
 -------------------------------------------------
@@ -48,15 +48,15 @@ For example, an employee receives an invitation to an international conference, 
 
 The data in the **Cost controlling** mobile workspace is secured through user credentials. Cost center managers are allowed to see data only for their own cost center. The access-level security is managed in the **Cost accounting** module. 
 
-Cost accountants define the configuration of the **Cost controlling** mobile workspace in the **Cost accounting** module. After the workspace is published to the Microsoft Dynamics 365 for Operations mobile app, it's available in the app. Therefore, all cost center managers in the organization can view data in the same format.
+Cost accountants define the configuration of the **Cost controlling** mobile workspace in the **Cost accounting** module. After the workspace is published to the Microsoft Dynamics 365 for Operations mobile app, it's available in the app. Therefore, all cost center managers in the organization can view data in the same format.
 
 ### Actions, views, and links
 
-The **Cost controlling** mobile workspace for the Dynamics 365 for Operations app provides the following actions, views, and links:
+The **Cost controlling** mobile workspace for the Dynamics 365 for Operations app provides the following actions, views, and links:
 
 -   **Actions:**
-    -   Use **Select configuration** to select a layout.
-    -   Use **Select cost object** to select the cost centers to filter data on. **Note:** The cost centers that appear in the list depend on the access that is granted in the **Cost accounting** module.
+    -   Use **Select configuration** to select a layout.
+    -   Use **Select cost object** to select the cost centers to filter data on. **Note:** The cost centers that appear in the list depend on the access that is granted in the **Cost accounting** module.
 -   **Views:** Based on the actions that are selected and the configuration in the **Cost accounting** module, you can view the following information on the cards.
     -   Actual vs budget (current period)
     -   Actual vs revised budget (current period)
@@ -65,13 +65,13 @@ The **Cost controlling** mobile workspace for the Dynamics 365 for Operations a
     -   Actual vs budget (year to date)
     -   Actual vs revised budget (year to date)
 
-    The following amounts are shown on every card: Actual, Budget, Variance, and Variance %.
+    The following amounts are shown on every card: Actual, Budget, Variance, and Variance %.
 -   **Links:**
     -   Details for current period
     -   Details for previous period
     -   Details for year to date
 
-    When you select a link, a card is shown for each cost element. The following amounts are shown on every card: Actual, Budget, Budget variance, Budget variance %, Revised budget, Revised budget variance, and Revised budget variance %. 
+    When you select a link, a card is shown for each cost element. The following amounts are shown on every card: Actual, Budget, Budget variance, Budget variance %, Revised budget, Revised budget variance, and Revised budget variance %. 
     
     [![Card for a cost element ](./media/cost-controlling.png)](./media/cost-controlling.png)
 
@@ -93,26 +93,26 @@ Before you can use the **Cost controlling** mobile workspace, make sure that you
 </thead>
 <tbody>
 <tr class="odd">
-<td>Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
+<td>Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
 <td>System administrator</td>
-<td>If you don’t already have Dynamics 365 for Operations deployed in your organization, the system administrator should see <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>If you don’t already have Dynamics 365 for Operations deployed in your organization, the system administrator should see <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
-<td>KB 4013633 must be implemented.</td>
+<td>KB 4013633 must be implemented.</td>
 <td>System administrator</td>
-<td>KB 4013633 (an X++ update or metadata hotfix) contains four mobile workspaces for supply chain management. To implement KB 4013633, your system administrator must follow these steps:
+<td>KB 4013633 (an X++ update or metadata hotfix) contains four mobile workspaces for supply chain management. To implement KB 4013633, your system administrator must follow these steps:
 <ol>
-<li>Download KB 4013633 from Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Download KB 4013633 from Microsoft Dynamics Lifecycle Services (LCS).</li>
 <li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
 <li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td>The <strong>Cost controlling</strong> mobile workspace must be published to the Dynamics 365 for Operations mobile app.</td>
+<td>The <strong>Cost controlling</strong> mobile workspace must be published to the Dynamics 365 for Operations mobile app.</td>
 <td>System administrator</td>
 <td><ol>
-<li>Start Dynamics 365 for Operations in your browser.</li>
+<li>Start Dynamics 365 for Operations in your browser.</li>
 <li>On the <strong>System parameters</strong> page, select <strong>Manage mobile workspaces</strong>.</li>
 <li>Select the <strong>Cost object overview</strong> workspace.</li>
 <li>Click <strong>Publish mobile workspace</strong>.</li>
@@ -121,17 +121,17 @@ Before you can use the **Cost controlling** mobile workspace, make sure that you
 </tbody>
 </table>
 
-## Download and install the Dynamics 365 for Operations mobile app
-Download and install the Dynamics 365 for Operations mobile app from your mobile app store.
+## Download and install the Dynamics 365 for Operations mobile app
+Download and install the Dynamics 365 for Operations mobile app from your mobile app store.
 
--   For Android: [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   For iPhone: [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+-   For Android: [Dynamics 365 for Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
+-   For iPhone: [Dynamics 365 for Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
-## Sign in to the Dynamics 365 for Operations mobile app
+## Sign in to the Dynamics 365 for Operations mobile app
 1.  Start the app on your mobile device.
-2.  Enter your Dynamics 365 for Operations URL.
+2.  Enter your Dynamics 365 for Operations URL.
 3.  Enter the company to sign in to. For example, enter **USMF**.
-4.  The first time that you sign in, you’re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
+4.  The first time that you sign in, you’re prompted for the user name and password for your Dynamics 365 for Operations account. Enter your credentials.
 5.  After you sign in, you see the available workspaces for your company. Note that if your system administrator later publishes a new workspace, you can pull to refresh the list of mobile workspaces. 
 
     [![Pull to refresh](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
@@ -149,7 +149,6 @@ Download and install the Dynamics 365 for Operations mobile app from your mobil
 10. Select the **Details for current period** link.
 11. View the performance of individual cost elements.
 12. You can also search for specific cost elements.
-
 
 
 
