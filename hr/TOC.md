@@ -5,11 +5,13 @@
 ## [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
 ## [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
 ## [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
+## [Personnel actions FAQ](personnel-actions-faq.md)
 ## [Use workflow to manage employee information](workflow-manage-employee-information.md)
 # Recruit, hire, and motivate employees
 ## [Manage a recruiting process](manage-recruiting-process.md)
 ## [Mass hire projects](mass-hire-projects.md)
 ## [Compensation plans](compensation-plans.md)
+## [Compensation processing](process-compensation.md)
 ## [Create fixed compensation plans](create-fixed-compensation-plans.md)
 ## [Create variable compensation plans](create-variable-compensation-plans.md)
 # Develop and train employees
@@ -29,6 +31,7 @@
 ## Workplace safety and compliance
 ### [Form I-9 employment verification](localizations/noam-usa-form-i-9-verification.md)
 ### [Comply with the ADA](localizations/noam-usa-comply-ada.md)
+### [Generate ACA reports](generate-aca-reports.md)
 ## [Payroll](localizations/noam-usa-payroll.md)
 ### Payroll setup
 #### [Set up payroll for workers](localizations/noam-usa-worker-position-payroll-tasks.md)
