@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Gantt chart for job scheduling | Microsoft Docs
+title: Gantt chart for job scheduling 
 description: The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 0000-00-00 00:00:00
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,19 +17,24 @@ keywords: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 121
-# ms.suite: 
+ms.reviewer: YuyuScheller
+ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
-ms.custom: 1665154
-ms.assetid: 82049018-e62d-4ad2-8c30-a36a1d7593e5
+ms.custom: 
+ms.assetid:
 ms.search.region: global
 ms.industry: Manufacturing
-ms.author: johanho
+ms.author: johanhoffmann
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Gantt chart for job scheduling
+
+[!include[banner](../includes/banner.md)]
+
+
+The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
 
 The Gantt chart is designed to empower production planners to control and optimize the production plan. The Gantt chart makes the flow of operations transparent and makes it easy to adjust the production schedule while taking into account material or resource shortages. This helps planners make the best use of available resources, minimize work in progress, and optimize throughput times for production orders.
 
