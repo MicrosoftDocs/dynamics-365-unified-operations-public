@@ -2,7 +2,7 @@
 # required metadata
 
 title: Employee development Power BI content
-description: This topic describes the Employee development Power BI content. It explains how to access the reports that are included , and provides information about the data model and entities that were used to build the content.
+description: This topic describes the Employee development Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 author: jcart1106 
 manager: AnnBe
 ms.date: 05/24/2017
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes the **Employee development** Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
+This topic describes the **Employee development** Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 
 Accessing the content pack
 --------------------------
