@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -51,7 +51,8 @@ You may want to add the **Vendor admin (external)** and **Vendor (external)** ro
 
 If you're going to manually set up vendor contacts and users, you could just make the Vendor (external) role available in External roles. Then this will be the only role that can be requested through the vendor user request.  
 
-**Note:** The **SystemUser** role is automatically granted when you manually create a new user account in Dynamics 365 for Operations. Therefore, you must remove that role and assign the **SystemExternalUser** role. If the new user account is created using the workflow that's initiated by a vendor user request for provisioning a new user, the roles that are assigned will be one or more of those that you've set up for vendor collaboration and the **SystemExternalUser**.
+> [!NOTE]
+> The **SystemUser** role is automatically granted when you manually create a new user account in Dynamics 365 for Operations. Therefore, you must remove that role and assign the **SystemExternalUser** role. If the new user account is created using the workflow that's initiated by a vendor user request for provisioning a new user, the roles that are assigned will be one or more of those that you've set up for vendor collaboration and the **SystemExternalUser**.
 
 ### Vendor admin (external) security role
 
@@ -93,7 +94,7 @@ The branches of the workflow might contain the elements listed below.
 2.  Assign a task to the person who's responsible for requesting new AAD user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this.
 3.  Assign an approval task to the person who uploads to Azure. If the process to create an account failed, they would reject the task and end the workflow.
 4.  Automatically provision a new user in Dynamics 365 for Operations. Use the predefined **Automated provision user** task for this.
-5.  Notify the new user. You might want to send a welcome mail to the new user and provide a URL to Dynamics 365 for Operations. The email can use a template which would be created in the **Email messages **page, and then selected on the **User workflow parameters** page. The template can include a tag: %portal URL% which will be replaced by the URL of the Dynamics 365 for Operations tenant.
+5.  Notify the new user. You might want to send a welcome mail to the new user and provide a URL to Dynamics 365 for Operations. The email can use a template which would be created in the **Email messages** page, and then selected on the **User workflow parameters** page. The template can include a tag: %portal URL% which will be replaced by the URL of the Dynamics 365 for Operations tenant.
 
 #### Branch to modify security roles
 
@@ -102,7 +103,7 @@ The branches of the workflow might contain the elements listed below.
 
 ### Example workflow for inactivating a user
 
-Create a workflow of type **SysUserRequestInactivateUserTemplate,** and then add the following tasks.
+Create a workflow of type **SysUserRequestInactivateUserTemplate**, and then add the following tasks.
 
 1.  Assign an approval task to the person who's responsible for accepting the request to inactivate a user.
 2.  Add an automated task for inactivating the user. Use the **Automated user inactivation** task to do this.
@@ -114,7 +115,8 @@ Before you create a user account for someone who will use vendor collaboration, 
 -   **Active (PO is auto-confirmed)** - Purchase orders are automatically confirmed when the vendor accepts them without changes.
 -   **Active (PO is not auto-confirmed)** - Purchase orders need to be manually confirmed by your organization, after the vendor has accepted them.
 
-**Note:** This task can also be carried out by procurement professionals in your company.
+> [!NOTE]
+> This task can also be carried out by procurement professionals in your company.
 
 ## Troubleshoot the provisioning of new vendor collaboration users
 New vendor collaboration users are provisioned using the workflow that you've set up to process vendor collaboration user requests of type **Provision vendor user**.  

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: CustPaymMode, VendPaymMode
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 262514
-ms.assetid: 72ea2018-5a49-419c-93d0-755e5ff2722f
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 # ms.search.industry: 
 ms.author: v-lenest
