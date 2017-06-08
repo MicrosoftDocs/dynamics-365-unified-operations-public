@@ -141,3 +141,4 @@ Additionally, you can view cash flow forecasting data for specific accounts, ord
 - **All purchase orders**: On the **Invoice** tab, select **Cash flow forecasts** to view the forecasted cash impact of the selected purchase order.
 - **Supply forecast**: Select **Cash flow forecasts** to view the future cash flows that are associated with the selected item supply forecast.
 - **Demand forecast**: Select **Cash flow forecasts** to view the future cash flows that are associated with the selected item demand forecast.
+

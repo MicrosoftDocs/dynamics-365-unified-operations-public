@@ -2,7 +2,10 @@
 
 # [Access Power BI content](power-bi-content-microsoft-partners.md)
 ## [Power BI content recently released](power-bi-content-released.md)
+
+## [CFO overview](CFO-power-bi.md)
 ## [Cash overview](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+
 ## [Compensation and benefits](compensation-and-benefits-analysis-power-bi-content-pack.md)
 ## [Cost accounting analysis](cost-accounting-analysis-content-pack.md)
 ### [Security for the Cost accounting analysis](setup-security-cost-accounting-content-pack.md)
@@ -76,6 +79,6 @@
 ### [Migrate a sales cube to the entity store](../migration-upgrade/migrate-upgraded-cube-entity-store.md)
 
 # App suites
-## [ Customize app suite reports with extensions ](customize-app-suite-reports-with-extensions.md)
-## [ Expand app suite report data sets ](expand-app-suite-report-data-sets.md)
+## [Customize app suite reports with extensions](customize-app-suite-reports-with-extensions.md)
+## [Expand app suite report data sets](expand-app-suite-report-data-sets.md)
 
