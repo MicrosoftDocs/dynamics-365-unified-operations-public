@@ -2,7 +2,8 @@
 # Tutorials
 ## [Build the Rental Charge Type form](build-rental-charge-type-form.md)
 ## [Build the Customer form](build-customer-form.md)
-## Add contextual BI to forms
+## [Build navigation](build-navigation.md)
+## [Build a workspace](build-workspace.md)
 # Forms
 ## [Navigation in Dynamics 365 for Operations](page-navigation.md)
 ## [Layout in Dynamics 365 for Operations](page-layout.md)
@@ -35,7 +36,7 @@
 ## [Slider and MessageBox](slider-messagebox.md)
 ## [Message center, message bar, and message details API](messaging-api-center-bar-details.md)
 ## [Message center, message bar, and message details FAQ](messaging-user.md)
-# Form pattern guidelines
+# Primary form pattern guidelines
 ## [Select a form pattern](select-form-pattern.md)
 ## [Form styles and patterns](form-styles-patterns.md)
 # Form patterns
@@ -52,7 +53,7 @@
 ## [Task Single form pattern](task-single-form-pattern.md)
 ## [Wizard form pattern](wizard-form-pattern.md)
 ## [Workspace form pattern](workspace-form-pattern.md)
-# Support form patterns
+# Secondary form patterns
 ## [Advanced selection form pattern](advanced-selection-form-pattern.md)
 ## [Dialog form pattern](dialog-form-pattern.md)
 ## [Drop Dialog form pattern](drop-dialog-form-pattern.md)
@@ -88,9 +89,7 @@
 ## [Extensible control layout guidelines](extensible-controls-layout.md)
 ## [Control the text that Task Recorder generates for a control](task-recorder-control-text.md)
 # Build workspaces
-## [Workspaces overview](build-workspaces.md)
-## [Build navigation](build-navigation.md)
-## [Build a workspace](build-workspace.md)
+## [Build operational workspaces](build-workspaces.md)
 ## [Tile and list caching for workspaces](tile-list-caching-workspaces.md)
 # Task Recorder
 ## [Task Recorder in Dynamics 365 for Operations](task-recorder.md)

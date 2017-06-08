@@ -2,7 +2,7 @@
 
 # [Overview of Dynamics 365 for Operations](get-started/TOC.md)
 
-# [Develop and customize using Visual Studio](dev-tools/TOC.md)
+# [Development](dev-tools/TOC.md)
 
 # [User interface development](user-interface/TOC.md)
 
@@ -38,9 +38,11 @@
 # Office integration
 ## [Office integration](office-integration/office-integration.md)
 ## [Tutorial](office-integration/office-integration-tutorial.md)
+## [Use the Excel add-in](office-integration/use-excel-add-in.md)
 ## [Create Open in Excel experiences](office-integration/office-integration-edit-excel.md)
 ## [Add templates to the Open lines in Excel menu](user-interface/add-templates-open-lines-excel-menu.md)
 ## [Customize the Open in Microsoft Office menu](office-integration/customize-open-office-menu.md)
+## [Configure and send email](/dynamics365/operations/organization-administration/configure-email)
 ## [Troubleshooting](office-integration/office-integration-troubleshooting.md)
 
 # [Financials development](financial/TOC.md)
@@ -67,6 +69,7 @@
 ## [Submit a request to the Dynamics Service Engineering team](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
 ## [Set up technical support for Dynamics 365 for Operations](lifecycle-services/support-experience.md) 
 ## [Planned maintenance window FAQ](lifecycle-services/planned-maintenance-window-faq.md) 
+## [Cloud operations and servicing](lifecycle-services/cloud-operations-servicing.md)
 
 # [Financials](/dynamics365/operations/financials/index)
 

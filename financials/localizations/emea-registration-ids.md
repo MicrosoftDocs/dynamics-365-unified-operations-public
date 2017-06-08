@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistr
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264824
-ms.assetid: e86f0a35-be58-4ef5-b5ab-bcfc495eaa13
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: vlru

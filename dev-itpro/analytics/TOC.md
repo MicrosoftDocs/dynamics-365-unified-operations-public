@@ -2,6 +2,7 @@
 
 # [Access Power BI content](power-bi-content-microsoft-partners.md)
 ## [Power BI content recently released](power-bi-content-released.md)
+## [Cash overview](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
 ## [Compensation and benefits](compensation-and-benefits-analysis-power-bi-content-pack.md)
 ## [Cost accounting analysis](cost-accounting-analysis-content-pack.md)
 ### [Security for the Cost accounting analysis](setup-security-cost-accounting-content-pack.md)
@@ -11,10 +12,12 @@
 ## [Financial performance](financial-performance-power-bi-content-pack.md)
 ## [Organizational training](organizational-training-analysis-power-bi-content-pack.md)
 ## [Practice manager](practice-manager-power-bi.md)
+## [Production performance](production-performance-power-bi.md)
 ## [Purchasing](purchase-content-pack-for-power-bi.md)
 ## [Recruiting](recruiting-analysis-power-bi-content-pack.md)
 ## [Retail channel performance ](retail-channel-performance-dashboard-power-bi-data.md)
 ## [Sales and profitability performance](sales-profitability-performance-content-pack.md)
+## [Warehouse performance](warehouse-power-bi-content.md)
 ## [Workforce analysis](workforce-analysis-power-bi-content-pack.md)
 
 # Document reporting and printing
