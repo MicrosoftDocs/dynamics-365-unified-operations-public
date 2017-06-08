@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 10274
-ms.assetid: 3f2a14b0-6580-40e4-a3dc-1d8a0f9201c1
 ms.search.region: Austria, Denmark, Italy, Norway, Spain
 ms.search.industry: Public sector
 ms.author: mrolecki

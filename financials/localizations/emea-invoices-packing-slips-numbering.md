@@ -17,11 +17,10 @@ ms.search.form: LtInvoiceAutoNumberingGroups, LtInvoiceAutonumberingTable, Numbe
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 268484
-ms.assetid: d7ff8162-bd5c-4582-a18a-144ce5e4c06f
 ms.search.region: Latvia, Lithuania
 # ms.search.industry: 
 ms.author: v-elgolu

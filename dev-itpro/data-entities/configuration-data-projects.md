@@ -40,7 +40,7 @@ Configuration data packages are created by using data import and export projects
 Configuration data templates are predefined lists of entities for each module area that can be used in a data project. You can create, view, and modify these templates by using the **Template** page in the **Data management** workspace.
 
 > [!IMPORTANT]
-> Default configuration templates are on the roadmap for the July 2017 release of Dynamics 365 for Finance and Operations. The Configuration data project feature is available in Platform update 7. You can create and use your own templates in the current product release.
+> Default configuration templates are on the roadmap for the July 2017 release of Dynamics 365 for Finance and Operations, Enterprise edition. The Configuration data project feature is available in Platform update 7. You can create and use your own templates in the current product release.
 
 ## Process for working with configuration data projects
 We recommend that you follow this process when you start to use configuration data projects.

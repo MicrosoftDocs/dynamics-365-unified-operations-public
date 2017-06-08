@@ -21,7 +21,6 @@ ms.reviewer: rschloma
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 19931
-ms.assetid: 01d7ba2b-32b7-43aa-8edb-7a2ed700363a
 ms.search.region: France
 ms.search.industry: Public sector
 ms.author: brpotter
