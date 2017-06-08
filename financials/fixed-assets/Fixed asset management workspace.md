@@ -31,7 +31,7 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 [!include[banner](../includes/banner.md)]
 
-The **Fixed asset management** workspace shows information that is related to fixed assets that are entered in the system. This workspace includes a summary view and an analytics view. The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company. You can also add analytics to the Power BI analytics section directly in the workspace. The **Analytics – all company** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.
+The **Fixed asset management** workspace shows information that is related to fixed assets that are entered in the system. This workspace includes a summary view and an analytics view. The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company. You can also add analytics to the Power BI analytics section directly in the workspace. The **Analytics – all companies** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.
 
 ## My work
 
@@ -47,13 +47,13 @@ From the list, you can view the following pages:
 
  - **Details** page for the fixed asset
  - **Books** page for all books that are associated with the fixed asset
- - **Valuations** page
+ - **Fixed asset valuations** page
 
 ### Valuations
 
-The **Fixed asset valuations** page lets you see, on one page, the most important information about a fixed asset, and also details for all books that are associated with the fixed asset. The **Balances** selection at the upper left of the page shows the current valuation for each book that is associated with the fixed asset. You can drill back from the values to see the detailed transactions that make up the summary value. The **Profile** selection at the upper left of the page shows the depreciation schedule for each book that is associated with the fixed asset.
+The **Fixed asset valuations** page lets you see, on one page, the most important information about a fixed asset, and also details for all books that are associated with the fixed asset. The **Balances** option at the upper left of the page shows the current valuation for each book that is associated with the fixed asset. You can drill back from the values to see the detailed transactions that make up the summary value. The **Profile** option at the upper left of the page shows the depreciation schedule for each book that is associated with the fixed asset.
 
-You can access the **Valuations** page from the **Fixed asset** workspace or the **Fixed asset** list page.
+You can access the **Fixed asset valuations** page from the **Fixed asset management** workspace or the **Fixed asset** list page.
 
 ### Related information
 
