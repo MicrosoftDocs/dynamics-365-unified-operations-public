@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: InventJournalName
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 265144
-ms.assetid: 0f07f62f-1053-46e9-b235-a7b38cbda409
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 # ms.search.industry: 
 ms.author: v-lenest

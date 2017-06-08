@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -25,7 +25,7 @@ ms.assetid: 2cc5a59c-8c93-4122-afe7-5a1bd73b933d
 ms.search.region: Poland
 # ms.search.industry: 
 ms.author: annbe
-ms.dyn365.ops.intro: AX 7.0.1
+ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
 
 ---

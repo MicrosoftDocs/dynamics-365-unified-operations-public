@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -127,7 +127,7 @@ See also
 
 [Technical concepts guide](developer-home-page.md)
 
-[Dynamics 365 for Operations development tools](development-tools.md)
+[Development tools overview](development-tools-overview.md)
 
 
 

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/22/2017
 ms.topic: article
 ms.prod: 
-ms.service: Lifecycle Services
+ms.service: Dynamics365Operations
 ms.technology: 
 
 # optional metadata
@@ -75,7 +75,7 @@ For the following topologies, you must use Remote Desktop Protocol (RDP) to conn
     - Platform version checks
     - Types of packages
 
-- **If you're updating a build environment**, see [Prerequisite steps for build environments](#prerequisite-steps-for-build environments).
+- **If you're updating a build environment**, see [Prerequisite steps for build environments](#prerequisite-steps-for-build-environments).
 - **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help guarantee that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
 - **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
 
