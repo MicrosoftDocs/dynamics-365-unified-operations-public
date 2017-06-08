@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: CustPaymMode, CustVendPaymReconciliation, LedgerJournalTransCust
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 262684
-ms.assetid: 7632f01a-28b6-408f-8734-b03416c6fb81
 ms.search.region: Sweden
 # ms.search.industry: 
 ms.author: v-lenest

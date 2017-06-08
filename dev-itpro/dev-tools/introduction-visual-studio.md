@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Development tools for Dynamics 365 for Operations
+title: Development tools tutorial
 description: This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools. 
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Development tools for Dynamics 365 for Operations
+# Development tools tutorial
 
 [!include[banner](../includes/banner.md)]
 
