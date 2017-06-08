@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -87,7 +87,7 @@ The following table includes links to resources that can help you implement the 
 <td>1</td>
 <td>System administrator</td>
 <td>Implement Dynamics 365 for Operations for the organization.</td>
-<td>If you don't already have Dynamics 365 for Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>If you don't already have Dynamics 365 for Operations deployed in your organization, see <a href="../deployment/deploy-demo-environment.md">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -96,8 +96,8 @@ The following table includes links to resources that can help you implement the 
 <td>See the &quot;Prerequisites&quot; section in the topic about the mobile workspace that your organization wants to use:
 <ul>
 <li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Cost controlling mobile workspaces</a></li>
-<li><a href="/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></li>
-<li><a href="/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></li>
+<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Inventory on-hand mobile workspace</a></li>
+<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Sales orders mobile workspaces</a></li>
 <li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Vendor collaboration mobile workspace</a></li>
 <li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Project time entry mobile workspace</a></li>
 <li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Expense management mobile workspace</a></li>
@@ -123,13 +123,13 @@ The following table includes links to resources that can help you implement the 
 <td>5</td>
 <td>ISV</td>
 <td>Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</td>
-<td><a href="../deployment/create-apply-deployable-package">Create a deployable package</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>System administrator</td>
 <td>Apply the deployable package that contains the custom workspaces that are provided by the ISV.</td>
-<td><a href="../deployment/apply-deployable-package-system">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package on a Microsoft Dynamics 365 for Operations system</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>

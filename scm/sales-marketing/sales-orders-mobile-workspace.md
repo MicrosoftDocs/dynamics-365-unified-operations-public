@@ -5,10 +5,10 @@ title: Sales orders mobile workspace
 description: This topic provides information about the Sales orders mobile workspace, which is available for the Microsoft Dynamics 365 for Operations mobile app. This workspace helps you stay up to date on your sales orders anywhere and anytime. 
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -40,7 +40,9 @@ This topic provides information about the Sales orders mobile workspace, which i
 Overview of the Sales orders mobile workspace
 ---------------------------------------------
 
-The **Sales orders** mobile workspace accesses Microsoft Dynamics 365 for Operations and lets you view detailed information about each sales order. This information includes the status of the order, contact information for the customer, and contact information for the order taker. The **Sales orders** mobile workspace provides an instant view of sales orders. You can view all sales orders, view sales orders by customer, or view information about a specific sales order. The mobile workspace provides two views to help you analyze sale orders in depth.
+The **Sales orders** mobile workspace accesses Microsoft Dynamics 365 for Operations and lets you view detailed information about each sales order. This information includes the status of the order, contact information for the customer, and contact information for the order taker. The **Sales orders** mobile workspace provides an instant view of sales orders. You can view all sales orders, view sales orders by customer, or view information about a specific sales order. 
+
+The mobile workspace provides two views to help you analyze sale orders in depth.
 
 ### View all sales orders
 
@@ -53,6 +55,7 @@ This view lists all sales orders.
     -   Search by status
     -   Search by release status
     -   Search by created date and time
+    
 -   After you select sales orders, you can view the details of specific orders. Specifically, you can view the following information:
     -   Customer name and address information
     -   Various dates for the sales order, such as the requested ship date and the confirmed ship date
@@ -68,6 +71,7 @@ This view lists sales orders by customer.
 -   Use one of the following filters to view orders for a customer:
     -   Search by name
     -   Search by account
+
 -   After you select a customer, you can view the following information:
     -   Customer name and group
     -   Customer contact information
@@ -99,7 +103,7 @@ Before you can use the **Sales orders** mobile workspace, make sure that your sy
 <tr class="odd">
 <td>Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
 <td>System administrator</td>
-<td>If you don’t already have Dynamics 365 for Operations deployed in your organization, the system administrator should see <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>If you don’t already have Dynamics 365 for Operations deployed in your organization, the system administrator should see <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment/">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 must be implemented.</td>
@@ -107,9 +111,9 @@ Before you can use the **Sales orders** mobile workspace, make sure that your sy
 <td>KB 4013633 (an X++ update or metadata hotfix) contains four mobile workspaces for supply chain management. To implement KB 4013633, your system administrator must follow these steps:
 <ol>
 <li>Download KB 4013633 from Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Install the metadata hotfix</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
 </ol></td>
 </tr>
 <tr class="odd">

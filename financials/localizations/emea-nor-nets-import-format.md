@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 262704
-ms.assetid: 0327a01b-3b24-41be-afa6-ffa6c365cb0b
 ms.search.region: Norway
 # ms.search.industry: 
 ms.author: v-lenest
