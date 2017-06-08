@@ -48,6 +48,7 @@ The Gantt chart can be opened in two different views, **Order view** and **Resou
 5.  Capacity bar
 
 ## Order view
+
 [![orderview](./media/orderview.png)](./media/orderview.png)
 
 ## Resource view
