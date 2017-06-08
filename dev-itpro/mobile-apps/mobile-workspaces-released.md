@@ -45,7 +45,7 @@ This topic lists the mobile workspaces that have recently been released for the 
 | Mobile workspace     | Description   | Learn more   |
 |----------------------|---------------|--------------|
 |Company directory| Lets users view and contact other employees in their organization.| [Company directory mobile workspace](company-directory-mobile-workspace.md)|    
-|My team| Lets users view their direct reports and extended staff, as well as send praise for individuals in their reporting chain.| [Manager self-service mobile workspace](manager-self-service-mobile-workspace.md)|     
+|My team| Lets users view their direct reports and extended staff, as well as send praise for individuals in their reporting chain.| [My team mobile workspace](manager-self-service-mobile-workspace.md)|     
 |Invoice approvals| Provides a listing of invoices that have been assigned to you through the vendor invoice header workflow process.|[Invoice approval mobile workspace](invoice-approval-mobile-workspace.md)    |    
 
 ## New mobile workspaces released in April 2017

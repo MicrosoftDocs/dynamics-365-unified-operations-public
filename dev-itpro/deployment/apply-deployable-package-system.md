@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Apply a deployable package in a Dynamics 365 for Operations environment
-description: This topic explains how to deploy a binary update or an application (AOT) deployable package that was created in your development or build environment.
+title: Apply a deployable package to a Dynamics 365 for Operations environment
+description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a Dynamics 365 for Operations environment.
 author: manalidongre
 manager: AnnBe
 ms.date: 04/22/2017
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 ---
 
-# Apply a deployable package in a Dynamics 365 for Operations environment
+# Apply a deployable package to a Dynamics 365 for Operations environment
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,7 +43,7 @@ The following topologies support package deployment that uses automated flows in
 - **LCS Implementation Project** – Most environments (development, demo, Tier-2 sandbox, and production) are supported except for build environments. Automated package application is self-serve in all environments except production environments. For production environments, customers must use LCS to submit a request to the Service Engineering team to apply packages.
 - **LCS Partner or trial Projects** – Demo environments are supported.
 
-For the following topologies, you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
+For other topologies (below), you must use Remote Desktop Protocol (RDP) to connect to the environment and install from the command line. For information about manual package deployment, see [Install  a deployable package](install-deployable-package.md).
 
 - Local development environments (Downloadable virtual hard disk [VHD])
 - Development/test environments in Microsoft Azure (Partner and trial projects)
@@ -62,9 +62,9 @@ For the following topologies, you must use Remote Desktop Protocol (RDP) to conn
 ## Supported package types
 
 - **AOT deployable package** – A deployable package that is generated from application metadata and source code. This deployable package is created in a development or build environment.
-- **Binary package** – A deployable package that contains binary dynamic-link libraries (DLLs) that the platform and application depend on.
+- **Binary update package** – A deployable package that contains dynamic-link libraries (DLLs) and other binaries and metadata that the platform and application depend on. This is a package released by Microsoft.
 - **Combined Retail deployable package** – A combination of various Retail packages that are generated after the Retail code is combined.
-- **Merged package** – A package that is created by combining one package of each type. For example, one binary package, one AOT package, and one Retail package can be combined. The packages are merged in the Asset library for the project in LCS.
+- **Merged package** – A package that is created by combining one package of each type. For example, one binary update package, one AOT package, and one Retail package can be combined. The packages are merged in the Asset library for the project in LCS.
 
 ## Prerequisite steps
 
@@ -80,7 +80,7 @@ For the following topologies, you must use Remote Desktop Protocol (RDP) to conn
 - **Make sure that the package is applied in a sandbox environment before it's applied in the production environment.** To help guarantee that the production environment is always in a good state, we want to make sure that the package is tested in a sandbox environment before it's applied in the production environment. Therefore, before you request that the package be applied in your production environment, make sure that it has been applied in your sandbox environment by using the automated flows.
 - **If you want to apply multiple packages, create a merged package that can be applied first in a sandbox environment and then in the production environment.** Application of a single package in an average environment requires about 5 hours of downtime. To avoid additional hours of downtime when you must apply multiple packages, you can create a single combined package that contains one package of each type. If you select a binary package and an application deployable package in the Asset library, a **Merge** button becomes available on the toolbar. By clicking this button, you can merge the two packages into a single package and therefore reduce the total downtime by half.
 
-## Apply a package in a non-production environment by using LCS
+## Apply a package to a non-production environment by using LCS
 
 **Note:** Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.
 
@@ -150,7 +150,7 @@ If package application isn't successful, you have two options:
     
     [![Message box that appears when you abort package application](./media/applypackage_sandbox_13-1024x274.png)](./media/applypackage_sandbox_13.png)
 
-## Apply a package in a production environment by using LCS
+## Apply a package to a production environment by using LCS
 
 In a production environment, unlike in a sandbox environment or other types of environments, package application through LCS isn't self-serve. Customers and partners must submit a request to the Service Engineering team to apply a package when the customer is ready for the downtime. 
 
