@@ -7,8 +7,8 @@ author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
-ms.service: Lifecycle Services
+ms.prod: dynamics-ax-2012 
+ms.service:
 ms.technology: 
 
 # optional metadata
@@ -42,9 +42,8 @@ Security and permissions
 
 The Test Data Transfer Tool (beta) requires only Microsoft SQL Server permissions.
 
-| **Caution**                                                                                                                         |
-|-------------------------------------------------------------------------------------------------------------------------------------|
-| The Test Data Transfer Tool (beta) does not in any way recognize the security mechanisms that are built into Microsoft Dynamics AX. |
+> [!WARNING]
+> The Test Data Transfer Tool (beta) does not in any way recognize the security mechanisms that are built into Microsoft Dynamics AX.
 
 If you have permission to execute **SELECT** statements in SQL Server Management Studio or to use the SQL Server bulk copy tool (bcp) to export data, you have the permissions that are required to export data by using the Test Data Transfer Tool (beta). The following SQL Server permissions are required during export:
 
@@ -107,11 +106,19 @@ The following table describes the three types of files.
 
 | File type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| .out      | A bcp data file that contains table data. Columns are separated by \#|EOC|\#. Rows are separated by \#|EOR|\#n.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| .out      | A bcp data file that contains table data. Columns are separated by \ #&#124;EOC&#124;\#. Rows are separated by \# &#124;EOR &#124;\#n.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | .xml      | A bcp data file that contains the table metadata (column descriptions).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | .outmodel | A file that contains metadata that is specific to Microsoft Dynamics AX. This metadata includes all names and IDs of the table and its fields. This file also includes the **elementType** attribute, which stores the names and IDs of any Microsoft Dynamics AX tables, classes, or extended data types that are referenced by the table.This information is used during import to match up fields that have been renamed. The information is also used to update the table IDs, class IDs, or data type IDs so that those IDs match the IDs in the target database.Data in the .outmodel file is constructed from the Metadata.xml file. This file is generated by an X++ job that you run from Microsoft Dynamics AX on the source database. |
 
-When the Test Data Transfer Tool (beta) exports data, the Metadata.xml file is used to identify table relationships and EDT references that require additional information during import. This additional information is included in the .outmodel file that the tool exports. It is important that you maintain an updated .outmodel file in some scenarios, such as scenarios that involve table inheritance. Each row in the **SuperType** table includes an **InstanceRelationType** column that contains the Microsoft Dynamics AX ID of the **SubType** table for that row. Because the Microsoft Dynamics AX IDs can change over time, the data in the .out file can become inaccurate. The Test Data Transfer Tool (beta) uses information from the Metadata.xml file to avoid this situation and to make sure that the data is imported correctly. When you import files, make sure that the Metadata.xml file is current. During the import process, the tool uses the .outmodel file to recognize the relationships. The tool then queries Microsoft Dynamics AX to make sure that the data is imported correctly. For example, the .outmodel file indicates that the value to insert into the **InstanceRelationType** column is **1234**. However, the tool recognizes that new tables have been added to the new Microsoft Dynamics AX ID for which the subtype table is **1235**. When you use a Metadata.xml file that is out of date, the data is usually imported and exported without any errors. This lack of errors can make it difficult to diagnose issues. The Microsoft Dynamics AX IDs that are included in the .out file are typically correct. However, when a table’s Microsoft Dynamics AX ID changes, the data import is completed successfully, but incorrect values are added in the Microsoft Dynamics AX ID field. For example, payroll data contains some inheritance tables that are related to the setup of an employee’s payroll tax. If you load data that was exported by using an outdated Metadata.xml file, several issues occur that involve the inheritance relationships in the tables. When you are running Microsoft Dynamics AX as an administrator, the inheritance relationships can be correctly resolved, and the payroll payments are then generated correctly. However, if you are running Microsoft Dynamics AX as a non-administrator, the X++ code does not read the records from the database. Therefore, the payroll payments that are generated do not include any taxes.
+When the Test Data Transfer Tool (beta) exports data, the Metadata.xml file is used to identify table relationships and EDT references that require additional information during import. This additional information is included in the .outmodel file that the tool exports.
+
+It is important that you maintain an updated .outmodel file in some scenarios, such as scenarios that involve table inheritance. Each row in the **SuperType** table includes an **InstanceRelationType** column that contains the Microsoft Dynamics AX ID of the **SubType** table for that row. Because the Microsoft Dynamics AX IDs can change over time, the data in the .out file can become inaccurate. The Test Data Transfer Tool (beta) uses information from the Metadata.xml file to avoid this situation and to make sure that the data is imported correctly. 
+
+When you import files, make sure that the Metadata.xml file is current. During the import process, the tool uses the .outmodel file to recognize the relationships. The tool then queries Microsoft Dynamics AX to make sure that the data is imported correctly. For example, the .outmodel file indicates that the value to insert into the **InstanceRelationType** column is **1234**. However, the tool recognizes that new tables have been added to the new Microsoft Dynamics AX ID for which the subtype table is **1235**. 
+
+When you use a Metadata.xml file that is out of date, the data is usually imported and exported without any errors. This lack of errors can make it difficult to diagnose issues. The Microsoft Dynamics AX IDs that are included in the .out file are typically correct. However, when a table’s Microsoft Dynamics AX ID changes, the data import is completed successfully, but incorrect values are added in the Microsoft Dynamics AX ID field. For example, payroll data contains some inheritance tables that are related to the setup of an employee’s payroll tax. 
+
+If you load data that was exported by using an outdated Metadata.xml file, several issues occur that involve the inheritance relationships in the tables. When you are running Microsoft Dynamics AX as an administrator, the inheritance relationships can be correctly resolved, and the payroll payments are then generated correctly. However, if you are running Microsoft Dynamics AX as a non-administrator, the X++ code does not read the records from the database. Therefore, the payroll payments that are generated do not include any taxes.
 
 ## Exporting data
 The procedure for exporting data consists of the following general steps:
@@ -123,9 +130,8 @@ The procedure for exporting data consists of the following general steps:
 
 Before you use the Test Data Transfer Tool (beta) to export data, you must generate the Metadata.xml file on the source system. The Metadata.xml file is used only during export.
 
-| **Note**                                                                                                                                                                                                                                                                                             |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| The Metadata.xml file can become out of date if you do not update it periodically. If the file is out of date, the exported data might not contain the **elementType** attribute, and the import might not update the IDs to match the IDs in the target database.You must update the file manually. |
+> [!NOTE] 
+> The Metadata.xml file can become out of date if you do not update it periodically. If the file is out of date, the exported data might not contain the **elementType** attribute, and the import might not update the IDs to match the IDs in the target database.You must update the file manually.
 
 To update the Metadata.xml file, follow these steps.
 1.  Import the MetadataXMLGenerator.xpo from the same folder that DP.exe is stored in, and then run the MetadataXMLGenerator job.A new Metadata.xml file is created in a temporary folder on your computer.
@@ -146,9 +152,8 @@ The Test Data Transfer Tool (beta) is designed to export all data from all table
 
 These filters might not be complete or appropriate for your requirements. For example, you might want to export some of the data that is filtered out by default, or you might have additional tables that should not be exported.
 
-| **Important**                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| If a table contains a **RecVersion** column, the Test Data Transfer Tool (beta) ignores the current value in the table and always exports the table by using the value 1. This feature makes it much easier to compare .out files and see only meaningful differences. This feature is especially useful when you keep your data in a version control system. Most Microsoft Dynamics AX tables contain a **RecVersion** column. |
+> [!IMPORTANT]
+> If a table contains a **RecVersion** column, the Test Data Transfer Tool (beta) ignores the current value in the table and always exports the table by using the value 1. This feature makes it much easier to compare .out files and see only meaningful differences. This feature is especially useful when you keep your data in a version control system. Most Microsoft Dynamics AX tables contain a **RecVersion** column.
 
 The following table describes the export strategies that are used in the standard exclude files and the Filters.xml file.
 
@@ -156,8 +161,6 @@ The following table describes the export strategies that are used in the standar
 |----------------------------------------------------------------------------|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Code, system data, or user data that is not connected to the business data | Exclude this table from export. | This strategy prevents data from being unintentionally changed when business data is imported.                                                                                                                                                                                        |
 | Cached values that are calculated from business data                       | Export an empty .out file.      | This strategy helps control the content of the table when the table is imported, because the content depends on business data. An .out file is required, but we do not want to store values that can be recalculated from the source data. Therefore, an empty .out file is exported. |
-
-### 
 
 ### Export data
 
@@ -177,6 +180,7 @@ To exclude a table or a set of tables from the exported data, follow these steps
 2.  In the text file, add a line that contains a regular expression that matches the name of the table or tables to exclude from the export.
 
 When a table is excluded, no files are created for that table during the export. The regular expression that you provide is matched against the name of the table as that name appears in the SQL Server database. Differences in capitalization are disregarded. Additionally, the Test Data Transfer Tool (beta) adds anchors to the regular expression from the exclude file to make sure that tables are excluded only if the whole name matches the regular expression. The tool uses Microsoft .NET regular expression syntax. The exclude file format lets you enter blank lines, so that you can create separate groups for expressions in a single file. The file format also lets you enter single-line comments (where the line starts with //), so that you can provide comments that describe why the tables have been excluded.
+
 #### Examples of excluding tables from the export
 
 To exclude only the table that is named SysVersionControlParameters, use the following regular expression.
@@ -203,6 +207,7 @@ To specify tables, first define a regular expression that starts with .\* to mat
     .*(?<!^InventTable)(?<!^DocuRef)
 
 For each additional table that you want to export, append (?&lt;!^NameOfTable) to the same regular expression.
+
 #### Exclude columns from the export
 
 To exclude a column or columns from the exported data, follow these steps.
@@ -211,11 +216,8 @@ To exclude a column or columns from the exported data, follow these steps.
 3.  Add an &lt;exclude&gt; element in the &lt;table&gt; element.
 4.  For each column that you want to exclude from the export for this table, add a &lt;field&gt; element. The content of the &lt;field&gt; element is the name of the column to exclude.
 
-| **Note**                                                 |
-|----------------------------------------------------------|
-| There can be only one &lt;exclude&gt; element per table. |
-
-#### 
+> [!NOTE]
+> There can be only one &lt;exclude&gt; element per table.
 
 #### Example of excluding columns from the export
 
