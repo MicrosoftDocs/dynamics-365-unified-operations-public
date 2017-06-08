@@ -2,7 +2,7 @@
 # required metadata
 
 title: Learning Power BI content
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic describes the Learning Power BI content. It explains how to access the reports, and provides information about the data model and entities that were used to build the content.
 author: jcart1106 
 manager: AnnBe
 ms.date: 05/24/2017
@@ -14,10 +14,10 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User
+audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks
-# ms.search.scope: Operations
+# ms.search.scope: Operations, Talent, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -32,12 +32,12 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 [!include[banner](../includes/banner.md)]
 
 
-This topic describes the Dynamics 365 for Finance and Operations - Learning Power BI content. It explains how to access the content pack, and describes the data model and entities that were used to build the content pack.
+This topic describes the **Learning** Power BI content. It explains how to access the content and describes the data model and entities that were used to build the content.
 
 Accessing the content pack
 --------------------------
 
-You can find the Organizational Training content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
+If you're using Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the Organizational Training content pack in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content pack and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
 ## Reports that are included in the content pack
 
