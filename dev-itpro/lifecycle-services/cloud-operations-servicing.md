@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -58,7 +58,7 @@ Currently, service updates require production tenant downtime. Platform, applica
 ### Search for and apply an update in Lifecycle Services
 Platform and application updates are applied as deployable package on an environment. A deployable package is a format that is used to apply updates to all the environments in a project. When you encounter an issue in the production environment, you can quickly find and apply a hotfix on all of the environments (Dev/Sandbox and Prod).
 - **Search for and download an update**
-  In LCS, you can search for an update using [Issue search](issue-search-lcs.md) or the [Update portal](../migration-upgrade/download-hofix-lcs.md). Because the steps to prepare an update differ based on the update type, after the update is downloaded, use the following list to determine how to proceed with preparation.
+  In LCS, you can search for an update using [Issue search](issue-search-lcs.md) or the [Update portal](../migration-upgrade/download-hotfix-lcs.md). Because the steps to prepare an update differ based on the update type, after the update is downloaded, use the following list to determine how to proceed with preparation.
   - Platform update: Platform updates are cumulative and binary. This means that platform updates can be applied directly to an environment. After the platform update is downloaded, it can be automatically applied to an environment by uploading it to the Asset Library.
   - Application hotfixes: Application hotfixes are code changes. After the application hotfix is downloaded, it must be applied on a dev environment to generate a deployable package. For more information, see [Create and apply a deployable package](../deployment/create-apply-deployable-package.md) and [Installing a metadata hotfix](../migration-upgrade/install-metadata-hotfix-package.md).
   - Application customizations: These are customizations that ISV or partners create. These are deployable packages that are uploaded to the Asset Library and can be applied from there.
