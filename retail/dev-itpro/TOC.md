@@ -17,7 +17,7 @@
 ### [Secure retail Cloud POS](secure-retail-cloud-pos.md)
 ## [Retail Hardware Station configuration and installation](../retail-hardware-station-configuration-installation.md)
 ## [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
-## [Install Retail hotfixes](install-retail-hotfix.md)
+## [Apply a deployable package](/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system)
 
 # Extensibility
 ## Point of sale
