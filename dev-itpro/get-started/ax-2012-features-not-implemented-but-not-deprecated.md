@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics AX 2012 features that haven't been implemented but aren't deprecated
-description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Dynamics 365 for Finance and Operations, Enterprise Edition July 2017 update. Although these features haven't yet been implemented, they aren't deprecated. 
+description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. Although these features haven't yet been implemented, they aren't deprecated. 
 author: sericks007
 manager: AnnBe
 ms.date: 06/16/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 2
 [!include[banner](../includes/banner.md)]
 
 
-This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. Although these features haven't yet been implemented, they aren't deprecated. 
+This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. Although these features haven't yet been implemented, they aren't deprecated. 
 
 <table>
 <colgroup>
@@ -54,12 +54,12 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 <td>Implementation of the alerts functionality is planned for a future update. Alerts help users keep track of data changes in the system.</td>
 </tr>
 <tr class="even">
-<td><strong>Graphics</strong> tab in the Fixed asset value model and Depreciation book profile forms</td>
-<td>The chart shows the deprecation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
+<td><strong>Graphics</strong> tab in the <strong>Fixed asset value model</strong> and <strong>Depreciation book profile</strong> forms</td>
+<td>The chart shows the depreciation, accumulated depreciation, and net book value over time. Users can click the <strong>Data</strong> tab to view more detailed information than the chart shows. This chart will be redesigned in a future update.</td>
 </tr>
 <tr class="odd">
 <td>Generate an electronic file to communicate payment advice information. The file can be sent to a vendor.</td>
-<td>From the vendor payment journal, you can generate payment advice as a report or as a file. The payment advice is used to inform the vendor about the list of invoices that are being paid. The payment advice report is still available in the current version, but you can no longer generate this information in an electronic file format. That functionality depended on Application Integration Framework (AIF), which has been deprecated.</td>
+<td>From the vendor payment journal, you can generate payment advice as either a report or a file. The payment advice is used to inform the vendor about the list of invoices that are being paid. The payment advice report is still available in the current version, but you can no longer generate this information in an electronic file format. That functionality depended on Application Integration Framework (AIF), which has been deprecated.</td>
 </tr>
 <tr class="even">
 <td>Cash flow forecasting</td>
@@ -71,7 +71,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Employee self-service (ESS)</td>
-<td>ESS lets you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also lets you configure security and punch-out to external catalogs. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered on a requisition for an organization. Additionally, the functionality for confirming receipts that are associated with requisitions that lead to purchases and the ability to approve a vendor invoice isn't currently available.</td>
+<td>ESS lets you enter requisitions for employees through a procurement site, view the status of an order (created, received, or receipt confirmed), and request onboarding of a new vendor. ESS also lets you configure security and punch-out to external catalogs. In the current version, procurement catalog capabilities are reduced and are used only to limit the products that can be ordered for an organization on a requisition. Additionally, the ability to approve a vendor invoice and the functionality for confirming receipts that are associated with requisitions that lead to purchases aren't currently available.</td>
 </tr>
 <tr class="odd">
 <td>Customer self-service (CSS)</td>
@@ -79,15 +79,15 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Cost accounting</td>
-<td>The Cost accounting module is designed to meet the requirements of internal costs and profitable reports at multiple organizational levels. To define the cost object level, the module depends on a correct mapping of financial dimensions. The module lets you perform advanced allocations of cost origin from expenditures that are registered in the general ledger or budget, and also lets you compare realized costs and budgeted costs.</td>
+<td>The <strong>Cost accounting</strong> module is designed to meet the requirements of internal costs and profitable reports at multiple organizational levels. To define the cost object level, the module depends on a correct mapping of financial dimensions. The module lets you perform advanced allocations of cost origin from expenditures that are registered in the general ledger or budget, and also lets you compare realized costs and budgeted costs.</td>
 </tr>
 <tr class="even">
-<td>Absence management in Human Resources</td>
-<td>Functionality for entering absence transactions through both ESS and the client are not included. It also doesn't include functionality for approving those transactions as a manager. In a future update, the current functionality will be enhanced to support a wider range of scenarios. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
+<td>Absence management in Human resources</td>
+<td>Functionality for entering absence transactions through both ESS and the client isn't included. Additionally, functionality for approving those absence transactions as a manager isn't included. In a future update, the current functionality will be enhanced to support a wider range of scenarios. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
 </tr>
 <tr class="odd">
 <td>US Payroll</td>
-<td>US Payroll is not included. Limited initial setup capabilities will be available through the <strong>Human Resources 1</strong> &gt; <strong>Payroll</strong> configuration key.</td>
+<td>US Payroll isn't included. Limited initial setup capabilities will be available through the <strong>Human Resources 1</strong> &gt; <strong>Payroll</strong> configuration key.</td>
 </tr>
 <tr class="even">
 <td>External questionnaire and recruiting functionality</td>
@@ -103,7 +103,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="odd">
 <td>Client drag-and-drop</td>
-<td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned to work on the new web client platform. APIs to support drag-and-drop operations will be reviewed for inclusion in a future update of Dynamics 365 for Operations.</td>
+<td>The web client controls have application programming interfaces (APIs) for drag-and-drop operations, but these APIs are based on the deprecated desktop client technology and must be redesigned to work on the new web client platform. APIs to support drag-and-drop operations will be reviewed for inclusion in a future update.</td>
 </tr>
 <tr class="even">
 <td>Vendor catalog import</td>
@@ -115,16 +115,17 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Electronic data exchange</td>
-<td>The electronic exchange of documents, such as order confirmations and similar supply chain management (SCM) documents that were previously enabled as AIF documents is not supported. This functionality will be added in a future update.</td>
+<td>The electronic exchange of documents, such as order confirmations and similar supply chain management (SCM) documents that were previously enabled as AIF documents, isn't supported. This functionality will be added in a future update.</td>
 
 <tr class="even">
 <td>Microsoft Project client integration</td>
-<td>The Microsoft Project client is integrated with Dynamics 365 for Operations projects.</td>
+<td>The Microsoft Project client is integrated with projects.</td>
 </tr>
 <tr class="odd">
 <td>Specifications for Electronic reporting (ER) payment formats</td>
-<td>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. Currently, the following specifications are supported per payment format. <strong>Note</strong>: Values of supported payment specifications listed below are used as Payment specification parameters in Payment specification form for a selected method of payment. 
-<br><strong>BTL91 for the Netherlands</strong>
+<td>Currently, payment format specifications must be entered manually. In a future update, you will be able to select payment format specifications in a list. Currently, the following payment specifications are supported per payment format.
+<p><strong>Note:</strong> Values for these supported payment specifications are used as payment specification parameters in the <strong>Payment specification</strong> form for a selected method of payment.</p>
+<p><strong>BTL91 for the Netherlands</strong></p>
 <table>
 <thead>
 <tr class="header">
@@ -187,7 +188,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 </tbody>
 </table>
-<strong>Betalingsservice for Denmark</strong>
+<p><strong>Betalingsservice for Denmark</strong></p>
 <table>
 <thead>
 <tr class="header">
@@ -214,7 +215,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 </tbody>
 </table>
-<strong>Nordea vendor for Denmark</strong>
+<p><strong>Nordea vendor for Denmark</strong></p>
 <table>
 <thead>
 <tr class="header">
@@ -265,7 +266,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 </tbody>
 </table>
-<strong>ISO20022 Credit transfer (CH)</strong>
+<p><strong>ISO20022 Credit transfer (CH)</strong></p>
 <table>
 <thead>
 <tr class="header">
@@ -303,20 +304,15 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Fiscal printers for Poland</td>
-<td>Integration with Polish fiscal printers such as the Posnet Thermal and Elzab Omega printer types. During invoice posting, the required information is sent to the fiscal printer in the correct format. This feature will be available in a future update.</td>
+<td>Integration with Polish fiscal printers, such as the Posnet Thermal and Elzab Omega printer types, enables the required information to be sent to the fiscal printer in the correct format during invoice posting. This feature will be available in a future update.</td>
 </tr>
 <tr class="odd">
 <td>Bank payment order for Latvia and Lithuania</td>
-<td>Print a payment order for Latvia and Lithuania. This feature will be available in a future update.</td>
+<td>You can print a payment order for Latvia and Lithuania. This feature will be available in a future update.</td>
 </tr>
 <tr class="even">
 <td>Bankgirot AP return format for Sweden</td>
-<td>The Bangirot return format is used to import bank return messages. This feature will be available in a future update.</td>
+<td>The Bankgirot return format is used to import bank return messages. This feature will be available in a future update.</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
