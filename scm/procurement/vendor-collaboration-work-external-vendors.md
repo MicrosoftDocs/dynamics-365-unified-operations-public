@@ -48,7 +48,7 @@ To define the text that's shown in the PO response:
 
 1.  Open the **Information for vendors responding to POs** page.
 2.  Select one of the response types.
-3.  Click **Edit.**
+3.  Click **Edit**.
 4.  Enter the information that you want vendors to see in the **Information message** box.
 
 If you need to add messages in more than one language, create separate messages with the appropriate language codes. The vendor will be shown the message in the language that they use.
@@ -73,11 +73,11 @@ If you want to share price information such as unit price, discounts, and charge
 ## Work with POs when using vendor collaboration
 ### Sending a PO to the vendor
 
-Purchase orders are prepared in Dynamics 365 for Operations. When the PO has a status of **Approved**, you send it to the vendor using the **Send for confirmation **action on the **Purchase order** page. The PO status changes to **In External Review**. After the PO has been sent, the vendor can see it on the **Purchase orders for review** page in the vendor collaboration interface, where they can accept, reject or suggest changes to the order. The vendor can also add comments to communicate information such as changes to the PO. If you want to draw the vendor’s attention to a new PO, you can also use the print management system to send the PO by email.
+Purchase orders are prepared in Dynamics 365 for Operations. When the PO has a status of **Approved**, you send it to the vendor using the **Send for confirmation** action on the **Purchase order** page. The PO status changes to **In External Review**. After the PO has been sent, the vendor can see it on the **Purchase orders for review** page in the vendor collaboration interface, where they can accept, reject or suggest changes to the order. The vendor can also add comments to communicate information such as changes to the PO. If you want to draw the vendor’s attention to a new PO, you can also use the print management system to send the PO by email.
 
 ### Confirmation and acceptance of the PO by the vendor
 
-When a vendor has accepted a purchase order, the PO may be automatically confirmed, or it may need to be manually confirmed. This depends on whether the **Vendor activation **field is set to **Active (PO is auto-confirmed)** for the vendor, or to **Active (PO is not auto-confirmed)**.  
+When a vendor has accepted a purchase order, the PO may be automatically confirmed, or it may need to be manually confirmed. This depends on whether the **Vendor activation** field is set to **Active (PO is auto-confirmed)** for the vendor, or to **Active (PO is not auto-confirmed)**.  
 
 The following table shows the typical exchange of information, depending on how the vendor responds when you send a PO for confirmation.
 

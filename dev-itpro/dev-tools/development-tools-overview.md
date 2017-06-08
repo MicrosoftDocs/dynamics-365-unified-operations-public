@@ -35,7 +35,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # What are the development tools?
 A notable change from Microsoft Dynamics AX 2012 is that Dynamics 365 for Operations does not include a rich-client application (ax32.exe). From a development perspective, this means that the Microsoft Dynamics AX 2012 development environment, MorphX, is no longer used. In its place, the application development is carried out exclusively in Visual Studio. The development tools support all of the development tasks, including debugging and local testing scenarios. A primary goal of the development experience is to keep familiar Microsoft Dynamics AX 2012 concepts, and seamlessly adapt them to the Visual Studio framework and paradigms.
 
-# What are the Visual Studio tools?
 Visual Studio 2015 is the exclusive integrated development environment (IDE) for development. All of your application development work will be performed with it. This section is an overview of the main features that are added to Visual Studio when the development tools are installed.
 
 ## Application Explorer

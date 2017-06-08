@@ -37,8 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes the operators supported in X++.
 
-Assignment operators
---------------------
+## Assignment operators
 
 An assignment changes the value of a variable or field. The following table shows the X++ assignment operators. There is no difference between prefix and postfix operators.
 
@@ -52,6 +51,7 @@ An assignment changes the value of a variable or field. The following table show
 
 ### Code examples for assignment operators
 
+```
     // An example of assignment operators and their output. 
     static void Example1()
     {
@@ -98,6 +98,7 @@ An assignment changes the value of a variable or field. The following table show
         --i;
         info(strFmt("Example 5: The result is "), i); // The result is -1. 
     }
+```
 
 ## Arithmetic operators
 You use arithmetic operators to perform numeric calculations. Most of the operators are binary and take two operands. However, the **not** (**~**) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *ArithmeticOperator* *expression2* Syntax for unary operators: *ArithmeticOperator* *expression1*
@@ -120,6 +121,7 @@ You use arithmetic operators to perform numeric calculations. Most of the operat
 
 ### Code examples for arithmetic operators
 
+```
     int a = 1 << 4; // Perform four left shifts on 1 (1*2*2*2*2). a=16.
     int b = 16 >> 4;  // Perform four right shifts on 16 (16/2/2/2/2). b=1.
     int c = 4 * 5;  // Multiply 4 by 5. c=20.
@@ -133,6 +135,7 @@ You use arithmetic operators to perform numeric calculations. Most of the operat
     int k = 1 + 3;  // Add 1 and 3. k=4.
     int l = 3 - 1;  // Subtract 1 from 3. l=2.
     int m = (400 > 4) ? 1 : 5;  // If 400>4, 1 is returned. Otherwise, 5 is returned. Because 400>4, 1 is returned. m=1.
+```
 
 ## Expression operators
 The **as** and **is** expression operators control downcast assignments. Downcast assignments involve class or table inheritance. Assignment statements that implicitly downcast can cause errors that are difficult to predict and diagnose. You can use the **as** keyword to make your downcasts explicit. You can use the **is** keyword to test whether a downcast is valid at run time.
@@ -149,6 +152,7 @@ Use the **as** keyword for assignments that downcast from a base class variable 
 
 In the following code example, the **DerivedClass** class extends the **BaseClass** class. The code example contains two valid assignments between its **basec** and **derivedc** variables. The upcast assignment to **basec** doesn't require the **as** keyword, but the downcast assignment to **derivedc** does require the **as** keyword. The following code will compile and run without errors.
 
+```
     static void AsKeywordExample()
     {
         // DerivedClass extends BaseClass.
@@ -165,6 +169,7 @@ In the following code example, the **DerivedClass** class extends the **BaseClas
         // AS causes this invalid downcast to assign null.
         bottomc = basec as DerivedClass;
     }
+```
 
 ### The is keyword
 
@@ -174,6 +179,7 @@ The **is** keyword verifies whether an object is a subtype of a specified class.
 
 The following code examples illustrate the conditions that control whether an **is** expression returns **true** or **false**. The code examples depend on the fact that the **Form** class and the **Query** class both extend the **TreeNode** class.
 
+```
     // The compiler issues an error for the following code. 
     // The compiler ascertains that the Form class and the Query class are not 
     // part of the same inheritance hierarchy. Both the Form class and the Query class
@@ -208,11 +214,13 @@ The following code examples illustrate the conditions that control whether an **
     TreeNode myTreeNode;
     myTreeNode = myForm; // Upcast.
     info(strFmt("%1", (myTreeNode is Form)));
+```
 
 #### Code example for the is and as keywords
 
 The following code example contains a typical use of the **is** keyword. The **as** keyword is used after the **is** keyword verifies that the **as** keyword will succeed. In this example, the **is** and **as** keywords are uppercase to make them more visible.
 
+```
     static void IsKeywordExample() 
     {
         DerivedClass derivedc;
@@ -233,11 +241,13 @@ The following code example contains a typical use of the **is** keyword. The **a
     //Output to the Infolog
     Test 1: (basec IS DerivedClass) is true. Good.
     Test 2: (!(basec IS DerivedClass)) is true. Good.
+```
 
 ### Object class as a special case
 
 The **Object** class can appear as a special case in inheritance functionality. The compiler bypasses type checking for assignments to and from variables that are declared to be of type **Object**. Some classes inherit from the **Object** class, some classes inherit from another class, and some classes don't inherit from any class. Although the **Dialog** class doesn't inherit from any class, the assignment and call statements in the following code example work. However, if the assignment is **bank4 = dlog3;**, it will fail at compile time, because the **Bank** and **Dialog** classes have no inheritance relationship to each other. The compiler performs only one small validation on assignments to a variable that is declared to be of the **Object** class. The compiler verifies that the item that is being assigned to the **Object** variable is an instance of a class. The compiler doesn't allow an instance of a table buffer to be assigned to the **Object** variable. Additionally, the compiler doesn't allow primitive data types, such as **int** or **str**, to be assigned to the **Object** variable.
 
+```
     static void ObjectExample()
     {
         Bank bank4;
@@ -247,6 +257,7 @@ The **Object** class can appear as a special case in inheritance functionality. 
         obj2.run(false);  // The call causes the dialog to appear.
         info("Test 4a is finished.");
     }
+```
 
 ### Tables
 
@@ -260,7 +271,7 @@ Each extended data type has an **Extends** property. The style of inheritance th
 The following table lists the relational operators that can be used in X++. Most of the operators are binary and take two operands. However, the **not** (**!**) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *relationalOperator* *expression2* Syntax for unary operators: *relationalOperator* *expression1*
 
 | Operator | Description                                                                                                                                                  |
-|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------|--------------------------------|
 | like     | The **like** relational operator returns **true** if *expression1* is like *expression2*.                                                                    |
 | ==       | The **equal** relational operator returns **true** if both expressions are equal.                                                                            |
 | &gt;=    | The **greater than or equal to** relational operator returns **true** if *expression1* is greater than or equal to *expression2*.                            |
@@ -269,15 +280,17 @@ The following table lists the relational operators that can be used in X++. Most
 | &lt;     | The **less than** relational operator returns **true** if *expression1* is less than *expression2*.                                                          |
 | !=       | The **not equal** relational operator returns **true** if *expression1* differs from (that is, if it isn't equal to) *expression2*.                          |
 | &&       | The **and** relational operator returns **true** if both *expression1* and *expression2* are true.                                                           |
-| ||       | The **or** relational operator returns **true** if *expression1* or *expression2* is true, or if both are true.                                              |
+| \|\|       | The **or** relational operator returns **true** if *expression1* or *expression2* is true, or if both are true.                                              |
 | !        | The **not** or **unary** relational operator negates the expression. It returns **true** if the expression is false and **false** if the expression is true. |
 
 ### The like operator
 
 The **like** operator can use **\*** as a wildcard character for zero or more characters, and **?** as a wildcard character for one character. The operand can't be longer than 1,000 characters. The **like** operator is evaluated by the underlying SQL, so the result might differ on different installations. If the expressions that you're comparing contain a file path, you must include four backslashes between each element, as shown in the following example.
 
+```
     select * from xRefpaths
     where xRefPaths.Path like "\\\\Classes\\\\AddressSelectForm"
+```
 
 ### The equal (==) operator
 
@@ -285,6 +298,7 @@ When you use the **equal** (**==**) operator to compare objects, the object refe
 
 ### Code examples for relational operators
 
+```
     "Jones" like "Jo?es"  // Returns true, because the ? is equal to any single character.
     "Fabrikam, Inc." like "Fa*"  // Returns true, because the * is equal to zero or more characters.
     (( 42 * 2) == 84)  // Returns true, because 42*2 is equal to 84.
@@ -295,6 +309,7 @@ When you use the **equal** (**==**) operator to compare objects, the object refe
     (11 div 10) < 1)  // Returns false, because 11 div 10 is 1.
     (11 != 12)  // Returns true, because 11 is not equal to 12.
     (1 == 1) && (3 > 1)  // Returns true, because both expressions are true.
+```
 
 ## Operator precedence
 The order that a compound expression is evaluated in can be important. For example, **(x + y / 100)** gives a different result, depending on whether the addition or the division is done first. You can use parentheses (**()**) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify **(x + y) / 100**. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression **x + y / 100**, the compiler evaluates **y / 100** first. In other words,` `**x + y / 100** is equivalent to **x + (y / 100)**. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.

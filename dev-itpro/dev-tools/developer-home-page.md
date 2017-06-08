@@ -59,9 +59,8 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 -   [Deprecated features](..\migration-upgrade\deprecated-features.md)
 -   [Deprecated API’s](..\migration-upgrade\deprecated-apis.md)
 -   [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)
--   [Rename and reboot machines for Visual Studio Online (Office Mix)](..\migration-upgrade\vso-machine-renaming.md)
--   [Configure your developer VM (Office Mix)](configure-developer-vm.md)
--   [Introduction to Visual Studio Online (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
+-   [Rename and reboot machines for Visual Studio Team Services](..\migration-upgrade\vso-machine-renaming.md)
+-   [Introduction to Visual Studio Team Services (Video)](http://channel9.msdn.com/Events/Build/2014/2-575)
 
 ## Fleet Management
 -   [Fleet Management sample](introduction-fleet-management-sample.md)
@@ -73,13 +72,12 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 -   [Introduction to Visual Studio development](introduction-visual-studio.md)
 -   [Create a simple data model](create-data-model-elements.md)
 -   [Building and debugging a project](build-debug-project.md)
--   [Version control, metadata search, navigation, and other features](development-tools.md)
+-   [Version control, metadata search, navigation, and other features](version-control-metadata-navigation.md)
 
 ### Tools, models, and VMs
 
--   [Development tools](development-tools.md)
+-   [Development tools](development-tools-overview.md)
 -   [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)
--   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 -   [Application Explorer](application-explorer.md)
 -   [Projects](projects.md)
 -   [Element designers](element-designers.md)
@@ -88,12 +86,13 @@ Microsoft Dynamics 365 for Operations represents the next-generation enterprise
 -   [Build operations](build-operations.md)
 -   [Visual Studio code editor](code-editor.md)
 -   [Developer tools add-ins](developer-tools-add-ins.md)
+-   [Configure version control with VSTS (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)
 -   [Distribution of models: How to export and import a model](models-export-import.md)
--   [Configure your developer VM](configure-developer-vm.md)
 -   [Metadata search in Visual Studio](metadata-search-visual-studio.md)
 -   [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)
 -   [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)
 -   [Resolve conflicts using Visual Studio](https://mix.office.com/watch/1rl75ei2cs6d7)
+-   [Enable a new user account to develop on a development VM](enable-development-machine.md)
 
 ## X++ programming language
 ### Tutorials
@@ -129,13 +128,11 @@ The following links (also included in the methodology) describe key concepts and
 -   [Migrate from AX 2012 to Dynamics 365 for Operations (Office Mix)](https://mix.office.com/watch/4gsvk592c685)
 -   [Migrate between versions (Office Mix)](https://mix.office.com/watch/os2wff38zi6f)
 -   [Configure your VSTS mapping after a code upgrade](..\migration-upgrade\configure-vso-solution.md)
--   [Configure version control with VSTS (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)
 -   [Resolve conflicts using Visual Studio (Office Mix)](https://mix.office.com/watch/1rl75ei2cs6d7)
 -   [Understanding the model split](model-split.md)
 -   [Deprecated features](..\migration-upgrade\deprecated-features.md)
 -   [Deprecated API’s](..\migration-upgrade\deprecated-apis.md)
 -   [Development tools performance tips](https://mix.office.com/watch/rnp6ng9wu8kx)
--   [Configuring your developer VM](configure-developer-vm.md)
 
 ### Additional concepts
 

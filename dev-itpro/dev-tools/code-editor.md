@@ -54,9 +54,9 @@ You can open the element designer that corresponds to the current X++ source cod
 
 # See also
 
-[Technical Concepts Guide](developer-home-page.md)
+[Developer home page](developer-home-page.md)
 
-[Development tools](development-tools.md)
+[Development tools overview](development-tools-overview.md)
 
 
 

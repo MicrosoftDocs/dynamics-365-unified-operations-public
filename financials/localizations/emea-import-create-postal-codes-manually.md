@@ -17,11 +17,10 @@ ms.search.form: LogisticsAddressSetup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 29901
-ms.assetid: 0c9cbc5f-88ae-4ed2-8331-13ecea029f79
 ms.search.region: Belgium, Netherlands, Sweden
 # ms.search.industry: 
 ms.author: epopov
