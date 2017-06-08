@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261334
-ms.assetid: ee065203-20dc-4bbb-bc56-bb01d28a6576
 ms.search.region: Spain
 # ms.search.industry: 
 ms.author: v-elgolu
