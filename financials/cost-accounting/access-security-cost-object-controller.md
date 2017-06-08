@@ -2,7 +2,7 @@
 # required metadata
 
 title: Access and security
-description: Access list hierarchy and security role determine what menu items and data a user is granted access to in Cost accounting. This topic describes how to grant access to a cost object controller. 
+description: Access list hierarchy and security role determine what menu items and data a user is granted access to in Cost accounting. This topic focuses on what a cost object controller role is.  
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/24/2017
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-## Define access and security 
+## Cost object controller role 
 
 [!include[banner](../includes/banner.md)]
 
@@ -57,6 +57,7 @@ When a **Cost object controller** role is assigned to a manager, the manager can
 > [!NOTE]
 > The **Cost object controller** role does control which cost objects the user can access and see data for. Row-level security is obtained via **Dimension hierarchies** and **Access list hierarchy**.
 
+## Grant access to a user 
 Here is an example of how a dimension hierarchy can look like.
 
 Dimension hierarchy details
@@ -104,7 +105,7 @@ The **Access list hierarchy** settings are used to control data displayed in fol
 > Before **Access list hierarchy** can affect data in Power BI, **Access list hierarchy** and **Row-level security** in Power BI need to be paired. For more informaiton, see [Set up security for Cost accounting content pack](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
 
 > [!IMPORTANT] 
-> This topic shows the prerequisites that must be in place before you use the **Cost control workspace**.  
+> This topic shows the prerequisites that must be in place before you use the **Cost control** workspace.  
 
 For more information, see [Dimension hierarchy](dimension-hierarchy.md). 
 
