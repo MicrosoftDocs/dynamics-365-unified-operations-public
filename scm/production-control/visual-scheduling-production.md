@@ -39,7 +39,7 @@ A Gantt chart is a visual representation of scheduled activities within a define
 -   Jobs from planned production orders.
 -   Job scheduled project activities of type Hour forecasts.
 
-The Gantt chart can be opened in two different views, **Order view** and **Resource view**[.](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true)In **Order view**, activities are grouped under production orders. This can be useful, for example, if you want to maintain an overview of all the jobs belonging to the same orders. In **Resource view** all jobs are grouped under individual resources. This view can be useful when optimizing the plan at a resource level, for example, a machine or a group of machines. The Gantt charts shown in the illustrations below show **Order view** and **Resource view **with these key elements:
+The Gantt chart can be opened in two different views, **Order view** and **Resource view**[.](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true)In **Order view**, activities are grouped under production orders. This can be useful, for example, if you want to maintain an overview of all the jobs belonging to the same orders. In **Resource view** all jobs are grouped under individual resources. This view can be useful when optimizing the plan at a resource level, for example, a machine or a group of machines. The Gantt charts shown in the illustrations below show **Order view** and **Resource view** with these key elements:
 
 1.  Gantt chart activity
 2.  Material shortage icon
@@ -55,11 +55,23 @@ The Gantt chart can be opened in two different views, **Order view** and **Resou
 [![resview](./media/resview.png)](./media/resview.png)
 
 ## Activities
-The activities appear as bars and are organized in a time scale grid with a scheduled start and end time, making the length of the bars proportional to the time that is necessary to complete the activity. The activities are shown according to a time scale. You can adjust the time scale on the menu where you select a start and end date and a time unit, for example, hours or days. By adjusting the time scale you can set focus on a time interval in which you want to manage activities. To get a better overview, there are different options for controlling the color of the activities. You can configure an individual color for activities, use the theme color that is the general color theme used for the application, or set up the color to be controlled by the color code for production orders. The time interval for activities has a background shade. Periods with a white shade indicate a time interval with defined capacity on the resource for the activity, whereas periods with a grey shade indicate time intervals with no capacity defined. On the left side of the chart there is additional information about the activity, for example, the resource on which the activity is scheduled and production order number. The connection between jobs belonging to the same order is shown with an arrow. You can get more information about an activity in the activity dialog box. To open the dialog box, double-click the activity or select the **information** menu. In the activity dialog you can see the scheduled start and end date, and time information about which materials the activity is planned to consume. The activities can be grouped in Grouping levels. The Grouping levels are hierarchical and can be used to make a logical grouping of activities. For example, if you have a layout where manufacturing activities are grouped by Site, Production units, Resource groups, and Resources, you can use the Grouping levels to group the activities according to that layout. The grouping levels can be expanded and collapsed either on the individual grouping level or for all levels in the chart by using the **Expand all** and **Collapse all** buttons on the menu. You can also configure the grouping levels to be expanded or collapsed when the chart is opened.
+The activities appear as bars and are organized in a time scale grid with a scheduled start and end time, making the length of the bars proportional to the time that is necessary to complete the activity. The activities are shown according to a time scale. You can adjust the time scale on the menu where you select a start and end date and a time unit, for example, hours or days. By adjusting the time scale you can set focus on a time interval in which you want to manage activities. 
+
+To get a better overview, there are different options for controlling the color of the activities. You can configure an individual color for activities, use the theme color that is the general color theme used for the application, or set up the color to be controlled by the color code for production orders. 
+
+The time interval for activities has a background shade. Periods with a white shade indicate a time interval with defined capacity on the resource for the activity, whereas periods with a grey shade indicate time intervals with no capacity defined. 
+
+On the left side of the chart there is additional information about the activity, for example, the resource on which the activity is scheduled and production order number. The connection between jobs belonging to the same order is shown with an arrow. 
+
+You can get more information about an activity in the activity dialog box. To open the dialog box, double-click the activity or select the **information** menu. In the activity dialog you can see the scheduled start and end date, and time information about which materials the activity is planned to consume. 
+
+The activities can be grouped in Grouping levels. The Grouping levels are hierarchical and can be used to make a logical grouping of activities. For example, if you have a layout where manufacturing activities are grouped by Site, Production units, Resource groups, and Resources, you can use the Grouping levels to group the activities according to that layout. The grouping levels can be expanded and collapsed either on the individual grouping level or for all levels in the chart by using the **Expand all** and **Collapse all** buttons on the menu. You can also configure the grouping levels to be expanded or collapsed when the chart is opened.
 
 ### Material availability
 
-The Gantt chart can be set up to provide the planner with detailed information about material status for the individual activities. For example, this can be helpful if material is delayed and is affecting the production plan. In this case, the material issues will be highlighted in the Gantt chart to help the planner to understand consequences and make necessary adjustments. A job will appear with a material shortage icon if the schedule start date of the job is later than the material availability date for materials consumed by the job. The material availability date is calculated based on the pegging information in the dynamic master plan. The material shortage icon will for example appear on a job that is consuming a material that is pegged against a purchase order that has a receipt that is later than the planned start date of the job.
+The Gantt chart can be set up to provide the planner with detailed information about material status for the individual activities. For example, this can be helpful if material is delayed and is affecting the production plan. In this case, the material issues will be highlighted in the Gantt chart to help the planner to understand consequences and make necessary adjustments. 
+
+A job will appear with a material shortage icon if the schedule start date of the job is later than the material availability date for materials consumed by the job. The material availability date is calculated based on the pegging information in the dynamic master plan. The material shortage icon will for example appear on a job that is consuming a material that is pegged against a purchase order that has a receipt that is later than the planned start date of the job.
 
 ### Indicator of material availability date
 
@@ -93,15 +105,21 @@ It is not possible to schedule a job outside the defined time interval of the Ga
 ### Schedule previous jobs
 
 In a network of activities, such as jobs belonging to the same production order, you can use the **Schedule previous jobs** function to schedule the previous jobs relative to a selected job in the network. In the following example, the highlighted activity is the selected job.
-
+<table>
+<tr>
+<td>
 **Before**
-
-[![schprevjob](./media/schprevjob3.png)](./media/schprevjob3.png)
-
+</td>
+<td rowspan=2>
+<img src='./media/schprevjob3.png'/>
+</td>
+</tr>
+<tr>
+<td>
 **After**
-
-[ ](./media/schprevjob.png)
-
+</td>
+</tr>
+</table>
 ### Schedule next jobs
 
 You can use the **Schedule next jobs** function to schedule the next jobs relative to a selected job in a network of activities. In the following example, the highlighted activity is the selected job.
