@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefits Power BI content
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
+description: This topic describes the Benefits Power BI content. It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.
 author: jcart1106 
 manager: AnnBe
 ms.date: 05/24/2017
@@ -14,10 +14,10 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: Application User
+audience: Application User, IT Pro
 # ms.devlang: 
 # ms.reviewer: sericks
-# ms.search.scope: Operations
+# ms.search.scope: Operations, Talent, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -33,24 +33,15 @@ ms.dyn365.ops.version: Enterprise edition, July 2017 update
 
 
 
-This topic describes the Dynamics 365 for Finance and Operations - Benefits Power BI content. It explains how to access the reports that are included in the content pack, and provides information about the data model and entities that were used to build the content pack.
+This topic describes the **Benefits** Power BI content. It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
+The **Benefits** Power BI content is displayed in the **Benefits management** workspace for those using:
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
+- Microsoft Dynamics 365 for Talent
 
-Embedded Power BI allows individuals in your organization to take advantage of analytics out of the box. They can quickly analyze your data using the provided reports and visuals without having to model the data or create reports. You can also provide great analytics to those who do not log into Dynamics 365 by using the content packs available on Lifecycle Services (LCS). These content packs can be modified to include other reports or visuals, then published to your Power BI.com tenant for analysis. 
-
-### Embedded content
-
-If you're using Dynamics 365 for Finance and Operations, Enterprise edition, the **Benefits** Power BI content is displayed in the **Benefits management** workspace.
-
-### Content accessible from Lifecycle Services
-
-If you are using Dynamics 365 for Operations version 1611 or Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update, you can find the **Benefits** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
-
-Be sure to download the **Benefits** content that applies to the version of Dynamics 365 that you're using.
-
-## Reports that are included in the content pack
-After you’ve connected the content pack to your Dynamics 365 for Operations data, the reports show your organization’s data. If you’ve never used Microsoft Power BI before, you can learn more about it on the [Guided Learning page for Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). The reports that are included in the content pack have both charts and tables that contain additional information. The following table describes the reports.
+## Reports that are included in the Power BI content pack
+The reports that are included in the Power BI content have both charts and tables that contain additional information. The following table describes the reports.
 
 | Report                     | Contents                                                                                                                              |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -60,8 +51,13 @@ After you’ve connected the content pack to your Dynamics 365 for Operations da
 
 You can filter the charts and tiles on these reports, and pin the charts and tiles to the dashboard. For more information about how to filter and pin in Power BI, see [Create and Configure A Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
+## Extending the Power BI content
+By using the content packs that are available in Microsoft Dynamics Lifecycle Services (LCS), you can provide great analytics to people who don't sign in to Microsoft Dynamics 365 for Operations, Enterprise edition. You can modify these content packs so that they include other reports or visuals, and then publish the content packs to your Power BI.com tenant for analysis.
+
+You can find the **Workforce metrics** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
+
 ## Understanding the data model and entities
-Dynamics 365 for Operations data is used to populate the reports in the Compensation and Benefits content pack. The following table shows the entities that the content pack was based on.
+The following data is used to populate the reports in the Power BI content. The following table shows the entities that the content was based on.
 
 | Entity                            | Contents                                                                                                   | Relationships with other entities                                                                                                                                                                                                                                                                                                |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -86,12 +82,6 @@ Dynamics 365 for Operations data is used to populate the reports in the Compensa
 | Employee Title            | Title and seniority date                                                                                   | Current Employee, Terminated Employee, Employee Trend                                                                                                                                                                                                                                                       |
 | Employee Trend             | Workers over time, headcount, company, and position                                                        | Company, Compensation, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job, Benefits                     |
 
-These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the content pack. If you want to include additional calculations on your reports and dashboard, you can download and modify the CompensationandBenefits.pbix file from LCS. This file is the default data model that was used to create the content pack. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
+These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the content pack. If you want to include additional calculations on your reports and dashboard, you can download and modify the .pbix file from LCS. This file is the default data model that was used to create the content. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
 
-## Additional resources
-Here are some helpful links that are related to entities and building Power BI content:
 
--   [Data entities](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [Creating organizational content packs](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Data modeling using Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Adding Power BI tiles to workspaces](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
