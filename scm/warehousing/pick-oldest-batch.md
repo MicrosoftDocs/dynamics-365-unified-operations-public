@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of Pick oldest batch on a mobile device
+title: Pick oldest batch on a mobile device
 description: This topic describes how you set up and apply the options to pick the oldest batch from a mobile device.
 author: BibiSp
 manager: AnnBe
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  WHSRFMenuItem
 audience: Application User
 # ms.devlang: 
 # ms.reviewer: bis
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Overview of Pick oldest batch on a mobile device
+# Pick oldest batch on a mobile device
 
 [!include[banner](../includes/banner.md)]
 
