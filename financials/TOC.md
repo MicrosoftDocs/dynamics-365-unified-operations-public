@@ -170,6 +170,7 @@
 ## [Cost element dimensions](cost-accounting/cost-elements.md)
 ## [Cost object dimensions](cost-accounting/cost-objects.md)
 ## [Map cost element dimension members to a common set of dimension members](cost-accounting/map-cost-elements-dimension-members.md)
+## [Dimension hierarchy](cost-accounting/dimension-hierarchy.md)
 ## [Overhead calculation](cost-accounting/overhead-calculation.md)
 ## [Cost control mobile workspace](cost-accounting/cost-controlling-mobile-workspace.md)
 ## [Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
