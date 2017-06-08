@@ -330,7 +330,7 @@ The settings for the access list hierarchy are used to control the data that is 
 - Power BI:
 
     - Data that is shown in Power BI visualizations
-    - Data Power BI visualizations that are embedded in the Dynamics 365 for Operations client
+    - Data Power BI visualizations that are embedded in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition client
 
 > [!NOTE] 
 > - Before the access list hierarchy can affect data in Power BI, access list hierarchy and row-level security in Power BI must be paired. For more information, see [Set up security for Cost accounting content pack](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
