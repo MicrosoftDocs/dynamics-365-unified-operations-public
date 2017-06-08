@@ -17,11 +17,10 @@ ms.search.form: LvNRTaxItemGroupLookup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 270454
-ms.assetid: ca5fb637-e01b-4499-9bc4-51da02b8c61a
 ms.search.region: Latvia
 # ms.search.industry: 
 ms.author: v-lenest

@@ -21,7 +21,6 @@ ms.reviewer: annbe
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 30081
-ms.assetid: 57934678-1d2e-4c00-8afd-42fd389da78f
 ms.search.region: United Kingdom
 # ms.search.industry: 
 ms.author: mrolecki

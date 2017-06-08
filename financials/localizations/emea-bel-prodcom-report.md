@@ -17,11 +17,10 @@ ms.search.form: IntrastatToProdcom, InventProdComLineDetail, InventProdComLineWi
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264804
-ms.assetid: b9c3b605-13fd-4764-9f7a-8d4a797297e0
 ms.search.region: Belgium
 # ms.search.industry: 
 ms.author: epopov
