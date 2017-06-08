@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -37,19 +37,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This tutorial will walk you through configuring Visual Studio Team Systems (previously known as Visual Studio Online) to enable source control on your models. It’ll also help you learn about other productivity features in the development tools, including the ability to create and organize TODO task, search metadata and source code, navigate between related model elements, and create a project from a model.
 
-Configure your Visual Studio Online account and project
--------------------------------------------------------
+## Configure your Visual Studio Team Services account and project
 
-In this section, you'll create a new project in Visual Studio Online. This project will host the source code of your model. You'll use the Fleet Management model as an example. If you don't have a Visual Studio online account, you'll create one.
+In this section, you'll create a new project in Visual Studio Team Services. This project will host the source code of your model. You'll use the Fleet Management model as an example. If you don't have a Visual Studio Team Services account, you'll create one.
 
-### Sign up to Visual Studio Online, create an account, and create a new project
+### Sign up to Visual Studio Team Services, create an account, and create a new project
 
-Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Online. Click **Sign up**. If you already have an account in Visual Studio Online, go to the Create a Visual Studio Online project section later in this topic. 
-
-[![SignUp\_UsingDevoTools](./media/signup_usingdevotools.png)](./media/signup_usingdevotools.png)
+Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Team Services. Click **Sign up**. If you already have an account in Visual Studio Team Services, go to the Create a Visual Studio Team Services project section later in this topic. 
 
 1.  Sign in with your Microsoft account. **Note**: You can also use an organizational account (Microsoft Office 365 domain).
-2.  Create a Visual Studio Online account, and select a URL for your account. This is the URL that you'll connect to from your development computer when you're configuring source control in Visual Studio. The following is an example of the account URL. 
+2.  Create a Visual Studio Team Services account, and select a URL for your account. This is the URL that you'll connect to from your development computer when you're configuring source control in Visual Studio. The following is an example of the account URL. 
 
     [![AccountURL\_UsingDevoTools](./media/accounturl_usingdevotools.png)](./media/accounturl_usingdevotools.png) 
     
@@ -58,9 +55,9 @@ Navigate to <http://www.visualstudio.com/> to sign up for Visual Studio Online. 
     
     [![FirstProject\_UsingDevoTools](./media/firstproject_usingdevotools.png)](./media/firstproject_usingdevotools.png)
 
-### Create a Visual Studio Online team project
+### Create a Visual Studio Team Services team project
 
-If you already have a Visual Studio Online account, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
+If you already have a Visual Studio Team Services account, go to your account using Internet Explorer. This topic uses **.visualstudio.com** as the example URL for illustration purposes.
 
 1.  Go to http://.visualstudio.com.
 2.  Under **Recent projects & teams**, click **New** to create a new project. 
@@ -71,7 +68,7 @@ If you already have a Visual Studio Online account, go to your account using Int
 
 ### Create the recommended folder structure in your team project
 
-If you have migrated your code from a previous version using the Lifecycle Services (LCS) automated code upgrade tool, the following folder structure is automatically created in your Visual Studio Online team project. 
+If you have migrated your code from a previous version using the Lifecycle Services (LCS) automated code upgrade tool, the following folder structure is automatically created in your Visual Studio Team Services team project. 
 
 [![VSOfolders](./media/vsofolders1.png)](./media/vsofolders1.png)
 
@@ -84,9 +81,9 @@ The **Metadata** folder contains your source XML files organized by packages and
 3.  In the Current source control plug-in field, select **Visual studio Team Foundation Server**.
 4.  Select **Team &gt; Connect to Team Foundation Server**.
 5.  In **Team Explorer**, click **Select Team Projects**.
-6.  In the **Select a Team Foundation Server** drop-down list, select the **Visual Studio Online account** that hosts the Fleet Management project, or click **Servers** if it isn't in the menu.
+6.  In the **Select a Team Foundation Server** drop-down list, select the **Visual Studio Team Services account** that hosts the Fleet Management project, or click **Servers** if it isn't in the menu.
     1.  When the **Add/Remove Team Foundation Server** dialog opens, click **Add**.
-    2.  Enter the URL of your Visual Studio Online account.
+    2.  Enter the URL of your Visual Studio Team Services account.
     3.  Click **OK**.
     4.  If prompted, enter your Microsoft Account username and password.
 
@@ -94,9 +91,9 @@ The **Metadata** folder contains your source XML files organized by packages and
 
     [![ConnectTFSServer\_UsingDevoTools](./media/connecttfsserver_usingdevotools.png)](./media/connecttfsserver_usingdevotools.png)
 
-### Map your Visual Studio Online project to your local model store and projects folder
+### Map your Visual Studio Team Services project to your local model store and projects folder
 
-Your model store root folder contains source files of all packages and models that are part of your application. During deployment, you'll probably use source files from more than one model across more than one package. Because of this, we recommend that you map your model store root folder to the Visual Studio Online team project metadata folder.
+Your model store root folder contains source files of all packages and models that are part of your application. During deployment, you'll probably use source files from more than one model across more than one package. Because of this, we recommend that you map your model store root folder to the Visual Studio Team Services team project metadata folder.
 
 1.  In Visual studio **Team Explorer**, connect to the team project as described earlier in this document.
 2.  Open **Source Control Explorer** from **Team Explorer**.
@@ -107,8 +104,8 @@ Your model store root folder contains source files of all packages and models th
 4.  Click **Map**, and on the next dialog, click **No**.
 5.  Similarly, map the **/Trunk/Main/Projects **server folder to the **local projects folder** that will hold your Visual Studio solution and project files.
 
-## Scenario 1: Open the fleet management solution and add it to Visual Studio Online source control
-This section describes the steps needed to add a solution to Visual Studio Online source control. This scenario is relevant when you have started development on a new model and you are adding it to source control for the first time. For code migration scenarios or in the case you are synchronizing new models that have been created by another developer, refer to scenario 2 below.
+## Scenario 1: Open the fleet management solution and add it to Visual Studio Team Services source control
+This section describes the steps needed to add a solution to Visual Studio Team Services source control. This scenario is relevant when you have started development on a new model and you are adding it to source control for the first time. For code migration scenarios or in the case you are synchronizing new models that have been created by another developer, refer to scenario 2 below.
 
 ### Open the FleetManagement solution
 
@@ -128,7 +125,7 @@ Note: This is only an example. You can open any project/solution to learn about 
     [![VSOfolders3](./media/vsofolders31.png)](./media/vsofolders31.png)
 
 4.  Click OK.
-5.  Go to **Team Explorer &gt; Pending changes**, and then click **Check-in** to check-in your solution and its model element to the Visual Studio Online source control.
+5.  Go to **Team Explorer &gt; Pending changes**, and then click **Check-in** to check-in your solution and its model element to the Visual Studio Team Services source control.
 
 ### Add the model descriptor file to source control
 
@@ -141,7 +138,7 @@ All Visual Studio projects belong to models. Models are source code distributio
     [![AddSourceControl\_UsingDevoTools](./media/addsourcecontrol_usingdevotools.png)](./media/addsourcecontrol_usingdevotools.png)
 
 4.  Click **Finish**. **Note**: Because your solution contained elements from two models, you'll need to add an additional model descriptor file to source control: C:\\Packages\\FleetManagementExtension\\Descriptor\\FleetManagementExtension.xml
-5.  Check-in your pending items. Your item is now ready for development of the fleet management application using a state-of-the-art, cloud-based source control system and many other application lifecycle features of Visual Studio Online.
+5.  Check-in your pending items. Your item is now ready for development of the fleet management application using a state-of-the-art, cloud-based source control system and many other application lifecycle features of Visual Studio Team Services.
 
 ### Experiment with source control
 
@@ -169,7 +166,7 @@ In this section, you'll make minor changes to the **FMRental** table and compare
 11. Confirm the undo on the next dialog and close the **diff** window.
 
 ## Scenario 2: Synchronize models from source control
-In this section, you will synchronize existing models and model elements from your Visual Studio Online project. This is relevant in the following cases: 1) You have migrated your code from a previous version via LCS, or 2) another developer has checked-in a new model or new model elements and you would like to synchronize them to your development environment.
+In this section, you will synchronize existing models and model elements from your Visual Studio Team Services project. This is relevant in the following cases: 1) You have migrated your code from a previous version via LCS, or 2) another developer has checked-in a new model or new model elements and you would like to synchronize them to your development environment.
 
 1.  In Source Control Explorer, right-click on Metadata and select **Get Latest Version**. This will synchronize you local packages folder with the latest code.
 2.  Alternatively you can use the **Advanced** menu to synchronize specific build version or change sets.

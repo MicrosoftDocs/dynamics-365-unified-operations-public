@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 266884
-ms.assetid: 96122273-e9f8-40bf-ab2d-77875d029f9e
 ms.search.region: Lithuania
 # ms.search.industry: 
 ms.author: v-elgolu

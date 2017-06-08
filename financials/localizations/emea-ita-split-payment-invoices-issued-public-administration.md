@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.search.form: TaxBookSection, TaxGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 261314
-ms.assetid: 31b20504-a9e7-4d8e-b290-92e6e80a9ff4
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: epopov

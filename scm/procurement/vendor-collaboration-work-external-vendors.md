@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -48,7 +48,7 @@ To define the text that's shown in the PO response:
 
 1.  Open the **Information for vendors responding to POs** page.
 2.  Select one of the response types.
-3.  Click **Edit.**
+3.  Click **Edit**.
 4.  Enter the information that you want vendors to see in the **Information message** box.
 
 If you need to add messages in more than one language, create separate messages with the appropriate language codes. The vendor will be shown the message in the language that they use.

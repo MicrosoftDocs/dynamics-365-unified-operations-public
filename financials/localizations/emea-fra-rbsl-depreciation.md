@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,11 +17,10 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 30271
-ms.assetid: 25501947-dace-438f-9261-a4e9b3b10071
 ms.search.region: France
 # ms.search.industry: 
 ms.author: anasyash

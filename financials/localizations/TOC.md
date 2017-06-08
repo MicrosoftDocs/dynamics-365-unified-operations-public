@@ -138,6 +138,7 @@
 ### [Fixed asset group revaluation](emea-esp-fixed-asset-group-revaluation.md)
 ### [Intra-community VAT](emea-esp-intra-community-vat.md)
 ### [One-time customers](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [Print checks with a Spanish layout](emea-esp-print-checks-with-spanish-layout.md)
 ### [Promissory note options](emea-esp-promissory-note-options.md)
 ### [Sales and purchase cycles](emea-esp-sales-purchase-cycle.md)
 ### [Special entries and opening sheets](emea-esp-opening-sheets-spain.md)
