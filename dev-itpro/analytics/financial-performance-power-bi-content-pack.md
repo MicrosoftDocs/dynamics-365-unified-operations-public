@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Financial Pperformance Power BI content
+title: Financial performance Power BI content
 description: This topic describes the Financial performance Power BI content. It describes the dashboard and reports that are included, and provides information about the data model and entities that were used to build the content.
 author: kweekley
 manager: AnnBe
@@ -40,20 +40,20 @@ This topic describes the **Financial performance** Power BI content. It describe
 Accessing the content pack
 --------------------------
 
-Two versions of the **Financial performance** content pack are available. One version is available from Microsoft Dynamics Lifecycle Services (LCS), and the other is available from PowerBI.com.
+You can access the **Financial performance** Power BI from Microsoft Dynamics Lifecycle Services (LCS) and from PowerBI.com.
 
-**Version that is available from LCS:** The Financial Performance content pack that is available from LCS supports:
+**Available from LCS:** The **Financial performance** content pack that is available from LCS supports:
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update
 - Microsoft Dynamics 365 for Operations version 1611 
 
 You can find the content pack in the Shared asset library in LCS. For more information about how to download the content pack and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
-**Version that is available from PowerBI.com:** The Financial Performance content pack that is available from PowerBI.com supports Microsoft Dynamics AX versions 7.0 and 7.0.1. For more information about how to connect and load your Dynamics 365 for Operations data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
+**Available from PowerBI.com:** The **Financial performance** content pack that is available from PowerBI.com supports Microsoft Dynamics AX versions 7.0 and 7.0.1. For more information about how to connect and load your Dynamics 365 for Operations data, see [Access Power BI content from PowerBI.com](power-bi-home-page.md).
 
 ## Main account setup
 Because organizations want liabilities and revenue amounts to appear as positive amounts on reports, the setup of the main accounts is important. For these main accounts to appear as positive amounts, the main account type must be set to **Liability** or **Revenue**. When these account types are used, reporting through Microsoft Power BI will reverse the signs and show the amounts as positive.
 
-## Dashboard and reports that are included
+## Dashboard and reports that are included in the Power BI content
 The dashboard contains summarized tiles of data that are based on underlying reports. Each tile contains summarized information for the current year across all companies in an organization. Here are some of the tiles:
 
 -   Cash
