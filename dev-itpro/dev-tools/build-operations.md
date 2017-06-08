@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -116,7 +116,7 @@ To make resolution easier, you can add the elements that are affected by the err
 See also
 --------
 
-[Development tools](development-tools.md)
+[Development tools overview](development-tools-overview.md)
 
 [Developer home page](developer-home-page.md)
 

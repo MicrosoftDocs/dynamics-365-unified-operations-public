@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 05/18/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -218,15 +218,26 @@ You can extend a Menu element to achieve the following:
 You can extend a Security Role or a Security Duty to add new duties/privileges to these elements.
 
 ## Report extensions
-You can customize reports and business docs using extensions, below is a list of tutorials that help you learn more. [Customizing App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. Customizations to reporting solutions in the standard application are fully supported using a pure ‘Extension’ model.  This article offers guidance on how to add the most common customizations to standard application reports without over-layering Application Suite artifacts.  Here are some… [How To: Custom designs for business docs](..\analytics\custom-designs-business-docs.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the steps involved in crafting a custom report design for an existing application business document using a ‘pure’ extension model. Follow the steps below to associate a custom report design with an application document instance…. [How To: Expanding App Suite report data sets](..\analytics\expand-app-suite-report-data-sets.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the expansion of an existing report data set produced using X++ business logic in a Report Data Provider (RDP) class. Use custom delegate handlers and table extensions to include additional field data and/or calculations without… [How To: Extending report menu items](..\analytics\extend-report-menu-items.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom reporting solutions. This article focuses on the process of extending existing application menu items to redirect navigations with minimal code changes. Using this technique you will avoid the hassle of tracking down and replacing all references to an existing application…
+You can customize reports and business docs using extensions, below is a list of tutorials that help you learn more. 
+
+[Customizing App Suite reports using extensions](..\analytics\customize-app-suite-reports-with-extensions.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. Customizations to reporting solutions in the standard application are fully supported using a pure ‘Extension’ model.  This article offers guidance on how to add the most common customizations to standard application reports without over-layering Application Suite artifacts.  Here are some… 
+
+[How To: Custom designs for business docs](..\analytics\custom-designs-business-docs.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the steps involved in crafting a custom report design for an existing application business document using a ‘pure’ extension model. Follow the steps below to associate a custom report design with an application document instance…. 
+
+[How To: Expanding App Suite report data sets](..\analytics\expand-app-suite-report-data-sets.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom solutions. This article focuses on the expansion of an existing report data set produced using X++ business logic in a Report Data Provider (RDP) class. Use custom delegate handlers and table extensions to include additional field data and/or calculations without… 
+
+[How To: Extending report menu items](..\analytics\extend-report-menu-items.md): Microsoft Dynamics 365 for Operations now offers an expanded set of tools to support custom reporting solutions. This article focuses on the process of extending existing application menu items to redirect navigations with minimal code changes. Using this technique you will avoid the hassle of tracking down and replacing all references to an existing application…
 
 ## Label extensions
 You can create label extension files in order to modify the string value of a label, add new labels to the same label file or add new languages. To create a label extension file you must name it with a \_extension suffix. For example, to extend the **FLM** labels of the Fleet Management model, do the following:
 
-1.  Create a project that belongs to a model that references Fleet Management (Fleet Management Extension is an example).
+1.  Create a project that belongs to a model that references Fleet Management (The model Fleet Management Extension is an example).
 2.  Add a new label file to the project and name it **FLM\_Extension**.
-3.  Within the FLM\_Extension label file, you can create new labels or modify the value of labels that are defined in the FLM label file of the Fleet Management model. Use the standard label editor to define new labels or redefine labels that already exist in the original FLM label file.
+3.  Within the FLM\_Extension label file, you can create new labels or modify the value of labels that are defined in the **FLM** label file of the Fleet Management model. Use the standard label editor to define new labels or redefine labels that already exist in the original FLM label file.
 4.  If your goal is to create translations of the FLM label, right-click on the FLM\_Extension element in your project and select **Add new languages**. Follow the wizard to add translation files to the FLM labels.
+
+> [!NOTE]
+> If the FLM_Extension file already exists in another model, you can name your file **FLM_Extension<N>** where <N> is any integer.
 
 ## Extension of Country/Region Codes
 

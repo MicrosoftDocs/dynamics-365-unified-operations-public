@@ -3,12 +3,12 @@
 
 title: Bank payment fees covered by vendors
 description: In Japan, the bank payment fees are usually covered by vendors (the receiving party). This topic answers some of the frequently asked questions about bank payment fees that are covered by vendors.
-author: ShylaThompson
+author: RichardLuan
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,14 +17,14 @@ ms.search.form: PaymFeeBankRule_JP, VendPaymFeeGroup_JP, VendPaymModeFee
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 10214
 ms.assetid: aa8a8ef3-1e5e-4174-817b-3b98e1e51509
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: leguo
+ms.author: RichardLuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

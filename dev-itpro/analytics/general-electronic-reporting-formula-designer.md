@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 
 # optional metadata
@@ -161,6 +161,18 @@ All data sources of the current ER component (either a model or a format) that a
 -   The **Today's date & time** data source must be referred to in an ER expression as follows: **'Today''s date & time'**
 -   The **name()** method of the **Customers** data source must be referred to in an ER expression as follows: **Customers.'name()'**
 
+Note that the following syntax is used to call methods of the Dynamics 365 for Operation data sources with parameters:
+
+- The isLanguageRTL method of the System data source with a parameter EN-US of the string data type must be referred to in an ER expression as follows: System.’isLanguageRTL’(“EN-US”).
+- Quotation marks are not mandatory when a method name contains only alphanumeric symbols. They are mandatory for a method of a table when the name includes brackets.
+
+When the System data source is added to an ER mapping which refers to the Dynamics 365 for Operation application class Global, the expression returns boolean value, FALSE. The modified expression, System.’ isLanguageRTL’(“AR”) returns boolean value, TRUE.
+
+Note that the passing to such methods parameters can be defined with the following limitations:
+
+- Only constants can be passed to such methods, the value of which are defined at design time.
+- Only primitive (basic) data types are supported for such parameters (integer, real, boolean, string, etc.).
+
 #### Path
 
 When an expression references a structured data source, you can use the path definition to select a specific primitive element of that data source. A dot character (.) is used to separate individual elements of a structured data source. For example, the current ER data model contains the **InvoiceTransactions** data source, which returns a list of records. The **InvoiceTransactions** record structure contain the **AmountDebit** and **AmountCredit** fields, which return numeric values. Therefore, you can design the following expression to calculate the invoiced amount: **InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit**
@@ -188,7 +200,18 @@ The following tables describe the data manipulation functions that you can use t
 | SESSIONNOW ()                              | Returns the current Dynamics 365 for Operations session date and time as datetime value.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATEFORMAT (date, format)                  | Returns string representation of date using specified format.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** returns the current Dynamics 365 for Operations session date 12/24/2015 as “**24-12-2015**” according to specified custom format.                                                                                                                      |
 | DATEFORMAT (date, format, culture)         | Convert the specified date value to a string in the specified format and [culture](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (For information about the supported formats, see [standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)).     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returns the current Dynamics 365 for Operations session date 12/24/2015 as **“24.12.2015”** according to selected German culture.                                                                                                                       |
+| DAYOFYEAR (date)              | Returns integer representation of the number of days between January 1st and the specified date.       | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** returns **61**.
+**DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** returns **1**.                                                                                                                       |
 
+**Data conversion functions**
+
+| Function                                   | Description                                                                                                                                                                                                                                                                                                                                                      | Example                                                                                                                                                                                                                                                                                               |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DATETODATETIME (date)                 | Convert the specified date value to a datetime value.           | **DATETODATETIME (CompInfo. 'getCurrentDate()')** returns the current Dynamics 365 for Operations session date, 12/24/2015, as **12/24/2015 12:00:00 AM**. In this example, **CompInfo** is an ER data source of the **Dynamics 365 for Operations/Table** type that refers to the **CompanyInfo** table.                                                                                                                       |
+| DATEVALUE (string, format)              | Returns date representation of a string using a specified format.       | **DATEVALUE ("21-Dec-2016", "dd-MMM-yyyy")** returns the date 12/21/2016 according to specified custom format and the default application’s **EN-US** culture.                                                                                                                       |
+| DATEVALUE (string, format, culture)              | Returns date representation of a string using a specified format and culture.       | **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", “IT”)** returns the date 01/21/2016 according to specified custom format and culture. An exception will be thrown for this function’s call, **DATEVALUE ("21-Gen-2016", "dd-MMM-yyyy", “EN-US”)** informing that a given string is not recognized as a valid date.                                                                                                                       |
+| DATETIMEVALUE (string, format)              | Returns datetime representation of a string using a specified format.       | **DATETIMEVALUE ("21-Dec-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss")** returns the 2:55:00 AM of Dec 21st, 2016 according to specified custom format and the default application’s **EN-US** culture.                                                                                                                       |
+| DATETIMEVALUE (string, format, culture)              | Returns datetime representation of a string using a specified format and culture.       | **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", “IT”)** returns the 2:55:00 AM of Dec 21st, 2016 according to a specified custom format and culture. An exception will be thrown for this function’s call, **DATETIMEVALUE ("21-Gen-2016 02:55:00", "dd-MMM-yyyy hh:mm:ss", “EN-US”)** informing that a given string is not recognized as a valid datetime.                                                                                                                       |
 ### List functions
 
 <table>
@@ -398,6 +421,19 @@ The Label and Description fields will return at run-time values based on format�
 </tbody>
 </table>
 
+**Data conversion functions**
+
+| Function             | Description                                                                                                                                                                                                                                     | Example                                                                                                                                             |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| VALUE (string) | Convert the specified string to a number. Commas and dot characters (.) are considered decimal separators, and a leading hyphen (-) is used as a negative sign. If other non-numeric characters are encountered in the specified string, an error occurs.                                                                                  | **VALUE ("1 234,56")** throws an exception.   |
+| NUMBERVALUE (string, decimal separator, digit grouping separator) | Convert the specified string to a number. The specified symbol is used to separate the integer and fractional parts of a decimal number, and the specified thousands separator is also used.                                                                                  | **NUMBERVALUE("1 234,56", ",", " ")** returns the value **1234.56**.    |
+| INTVALUE (string) | Returns integer representation of a string. Any available decimal parts will be truncated.                                                                                  | **INTVALUE (“100.77”)** returns **100**. |
+| INTVALUE (number) | Returns integer representation of a number. Any available decimal parts will be truncated.                                                                                  | **INTVALUE (-100.77)** returns **-100**. |
+| INT64VALUE (string) | Returns int64 representation of a string. Any available decimal parts will be truncated.                                                                                  | **INT64VALUE (“22565422744”)** returns **22565422744**. |
+| INT64VALUE (number) | Returns int64 representation of a number. Any available decimal parts will be truncated.                                                                                  | **INT64VALUE (22565422744.00)** returns **22565422744**. |
+
+
+
 ### Record functions
 
 | Function             | Description                                                                                                                                                                                                                                     | Example                                                                                                                                             |
@@ -495,7 +531,7 @@ The Label and Description fields will return at run-time values based on format�
 Here is the formula that can be designed: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;)) If a report is processed for the <strong>Litware Retail customer</strong> on December 17, 2015, in the <strong>EN-US</strong> culture and the <strong>EN-US</strong> language, this formula returns the following text, which can be presented as an exception message for the end user: &quot;Nothing to print. Customer Litware Retail is stopped for 12/17/2015.&quot; If the same report is processed for the<strong> Litware Retail customer</strong> on December 17, 2015, in the <strong>DE</strong> culture and the <strong>DE</strong> language, this formula returns the following text, which uses a different date format: &quot;Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.&quot; <strong>Note:</strong> The following syntax is applied in ER formulas for labels:
 <ul>
 <li><strong>For labels from Dynamics 365 for Operations resources:</strong> <strong>@&quot;X&quot;</strong>, where X is the label ID in the Application Object Tree (AOT)</li>
-<li><strong>For labels that reside in ER configurations:</strong> <strong>@&quot;ER_LABEL:X&quot;</strong>, where X is the label ID in the ER configuration</li>
+<li><strong>For labels that reside in ER configurations:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, where X is the label ID in the ER configuration</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -513,42 +549,44 @@ Here is the formula that can be designed: FORMAT (CONCATENATE (@&quot;SYS70894&q
 <td>Returns a string of a specified length in which the beginning of the current string is padded with specified characters.</td>
 <td>PADLEFT (“1234”, 10, “ “) returns the text string “      1234”</td>
 </tr>
+<tr class="even">
+<td>GETENUMVALUEBYNAME (enumeration data source path, enumeration value label text)</td>
+<td>Returns a value of a specified enumeration data source by specified text of this enumeration label.</td>
+<td>The following example shows the enumeration ReportDirection introduced in a data model. Note that labels are defined for enumeration values.
+The following examples show:
+<ul><li>Model enumeration <strong>ReportDirection</strong> inserted into a report as a data source <strong>$Direction</strong></li>
+<li>ER expression <strong>$IsArrivals</strong> designed to use model enumeration as parameter of this function. The value of this expression is <strong>TRUE</strong></li></ul></td>
+</tr>
+<tr class="odd">
+<td>TRIM (string)</td>
+<td>Returns text after truncating leading and trailing spaces.</td>
+<td><strong>TRIM (“ Sample text ”)</strong> returns <strong>“Sample text”</strong>.</td>
+</tr>
 </tbody>
 </table>
 
+**Data conversion functions**
+
+| Function             | Description                                                                                                                                                                                                                                     | Example                                                                                                                                             |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| TEXT (input) | Return the specified input, which is converted to a text string that is formatted according to the server locale settings of the current Dynamics 365 for Operations instance.
+For values of the real type, the string conversion is limited to two decimal places.| If the Dynamics 365 for Operations instance server locale is defined as **EN-US, TEXT (NOW ())**, the current Dynamics 365 for Operations session date, 12/17/2015, is returned as the text string **"12/17/2015 07:59:23 AM"**.
+**TEXT (1/3) returns "0.33"**. |
+| QRCODE (string) | Returns QR code image in base64 binary format for a given string. | **QRCODE (“Sample text”)** returns **U2FtcGxlIHRleHQ=**.   |
+
 ### Data collection functions
 
-Function
+| Function             | Description                                                                                                                                                                                                                                     | Example                                                                                                                                             |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| FORMATELEMENTNAME () | Returns the name of the current format’s element. Returns empty string when the flag **Collect output details** of the current files is turned off.| Refer to the **ER Use data of format output for counting and summing** (part of the **Acquire/Develop IT service/solution components** business process) Task guide to learn more about these functions' usage. |
+| SUMIFS (key string for summing, criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\]) |Returns a sum of values of nodes (with name defined as a key) of XML, which has been collected during this format execution and satisfies the entered conditions (pairs of range and value). Returns zero value when the flag **Collect output details** of the current files is turned off. |            |
+| SUMIF (key string for summing, criteria range string, criteria value string) | Returns a sum of values of nodes (with name defined as a key) of XML, which has been collected during this format execution and satisfies the entered condition (range and value). Returns zero value when the flag **Collect output details** of the current files is turned off.|           |
+| COUNTIFS (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\]) | Returns number of nodes of XML, which has been collected during this format execution and satisfies the entered conditions (pairs of range and value). Returns zero value when the flag **Collect output details** of the current files is turned off.|     |
+| COUNTIF (criteria range string, criteria value string) | Returns number of nodes of XML, which has been collected during this format execution and satisfies the entered condition (range and value). Returns zero value when the flag **Collect output details** of the current files is turned off.|          |
+| COLLECTEDLIST (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\]) | Returns a list of values of nodes of XML, which has been collected during this format execution and satisfies the entered conditions (range and value). Returns an empty list when the flag **Collect output details** of the current files is turned off.|               |   
 
-Description
 
-Example
 
-FORMATELEMENTNAME ()
-
-Returns the name of the current format’s element. Returns empty string when the flag **Collect output details** of the current files is turned off.
-
-Refer to the **ER Use data of format output for counting and summing** (part of the **Acquire/Develop IT service/solution components** business process) Task guide to learn more about these functions' usage.
-
-SUMIFS (key string for summing, criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])
-
-Returns a sum of values of nodes (with name defined as a key) of XML, which has been collected during this format execution and satisfies the entered conditions (pairs of range and value). Returns zero value when the flag **Collect output details** of the current files is turned off.
-
-SUMIF (key string for summing, criteria range string, criteria value string)
-
-Returns a sum of values of nodes (with name defined as a key) of XML, which has been collected during this format execution and satisfies the entered condition (range and value). Returns zero value when the flag **Collect output details** of the current files is turned off.
-
-COUNTIFS (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])
-
-Returns number of nodes of XML, which has been collected during this format execution and satisfies the entered conditions (pairs of range and value). Returns zero value when the flag **Collect output details** of the current files is turned off.
-
-COUNTIF (criteria range string, criteria value string)
-
-Returns number of nodes of XML, which has been collected during this format execution and satisfies the entered condition (range and value). Returns zero value when the flag **Collect output details** of the current files is turned off.
-
-COLLECTEDLIST (criteria range1 string, criteria value1 string \[, criteria range2 string, criteria value2 string, …\])
-
-Returns a list of values of nodes of XML, which has been collected during this format execution and satisfies the entered conditions (range and value). Returns an empty list when the flag **Collect output details** of the current files is turned off.
 
 ### Other (business domain–specific) functions
 
@@ -560,10 +598,12 @@ Returns a list of values of nodes of XML, which has been collected during this f
 | MOD\_97 (digits)                                                                 | Return a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.                                                                                                                                                            | **MOD\_97 ("VEND-200002")** returns **"20000285"**.                                                                                                                                                                                                                                                           |
 | ISOCredRef (digits)                                                              | Return an ISO creditor reference, based on the digits and alphabetic symbols of the specified invoice number. **Note:** To eliminate symbols from alphabets that aren't ISO-compliant, the input parameter must be translated before it's passed to this function. | **ISOCredRef ("VEND-200002")** returns **"RF23VEND-200002"**.                                                                                                                                                                                                                                                 |
 | CN\_GBT\_AdditionalDimensionID (string, number)                                  | Get the additional financial dimension ID. Dimensions are represented in this string as IDs separated by commas. Numbers define the requested dimension’s sequence code in this string.                                                                            | CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3) return “CC”                                                                                                                                                                                                                                      |
-| GetCurrentCompany ()                                                             | Returns the code of the current logged company.                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                               |
+| GetCurrentCompany ()                                                             | Returns text representation of a code of a legal entity (company) in to which a user currently logged.                                                                                                                                                                                                                    | **GETCURRENTCOMPANY ()** returns **USMF** for a user logged in to the Dynamics 365 for Operations company **Contoso Entertainment System USA**.                                                                                                                                                                                                                                                                                                              |
 | CH\_BANK\_MOD\_10 (digits)                                                       | Returns a creditor reference as MOD10 expression based on digits of the given invoice number.                                                                                                                                                                      | CH\_BANK\_MOD\_10 ("VEND-200002") returns 3                                                                                                                                                                                                                                                                   |
 | FA\_SUM (fixed asset code, value model code, start date, end date)               | Returns the prepared data container of a fixed asset amounts for a period.                                                                                                                                                                                         | FA\_SUM ("COMP-000001", “Current”, Date1, Date2) returns the prepared data container of the fixed asset "COMP-000001" with the value model “Current” for a period from Date1 to Date2.                                                                                                                        |
 | FA\_BALANCE (fixed asset code, value model code, reporting year, reporting date) | Returns the prepared data container of a fixed asset balances. Reporting year must be specified as a value of the Dynamics 365 for Operations enumeration **AssetYear**.                                                                                           | FA\_SUM ("COMP-000001", “Current”, AxEnumAssetYear.ThisYear, SESSIONTODAY ()) returns the prepared data container of balances for the fixed asset "COMP-000001" with the value model “Current” on the current 365 for Operations session date.                                                                |
+| TABLENAME2ID (string)                                                       | Returns integer representation of a Table Id for a given Table Name.                                                                                                                                                                      | **TABLENAME2ID (“Intrastat”)** returns **1510**.                                                                                                                                                                                                                                                                   |
+| ISVALIDCHARACTERISO7064 (string)                                                       | Returns boolean **TRUE** when a given string represents a valid international bank account number (IBAN). Returns boolean **FALSE** otherwise.                                                                                                                                                                      | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returns **TRUE**. **ISVALIDCHARACTERISO7064 ("AT61")** returns **FALSE**.                                                                                                                                                                                                                                                                   |
 
 ### Functions list extension
 
