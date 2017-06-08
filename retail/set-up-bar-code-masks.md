@@ -57,7 +57,8 @@ Bar code masks are used to create bar codes and to quickly identify bar codes th
 | **Employee**         | Indicates bar code segment for employee ID number used for bar code POS login.                                  |
 | **Customer**         | Indicates customer ID segment.                                                                                  |
 | **Data entry**       | *Not yet implemented.*                                                                                          |
-| **Discount code**    | Indicates discount code for a bar code that's used to add a discount to a point of sale transaction             |
+| **Discount code**    | *Depreciated* as of Dynamics 365 for Operations Spring 2017 release. Previously: Indicates discount code for a bar code that's used to add a discount to a point of sale transaction.                                                                   |
+| **Coupon code**      | Indicates coupon code for a bar code used to add a discount to a retail order. This replaced discount code.     |
 | **Gift card**        | Indicates a gift card number when issuing or paying by gift card.                                               |
 | **Loyalty card**     | Adds a loyalty customer to the transaction, and can be used when paying by loyalty.                             |
 

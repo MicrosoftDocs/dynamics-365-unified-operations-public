@@ -17,11 +17,10 @@ ms.search.form: LedgerJournalizeReport
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 28831
-ms.assetid: dc9699d8-5b24-43f4-9a8a-39d9c8021553
 ms.search.region: Germany
 # ms.search.industry: 
 ms.author: epopov

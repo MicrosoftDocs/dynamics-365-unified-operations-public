@@ -17,11 +17,10 @@ ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-# ms.reviewer: 81
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 # ms.tgt_pltfrm: 
 ms.custom: 264584
-ms.assetid: 60c429b5-1d88-4fef-be6b-b8585e0e9ee7
 ms.search.region: Switzerland
 # ms.search.industry: 
 ms.author: v-lenest
