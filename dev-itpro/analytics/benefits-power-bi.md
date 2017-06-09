@@ -54,6 +54,9 @@ By using the content packs that are available in Microsoft Dynamics Lifecycle Se
 
 You can find the **Benefits** Power BI content in the Shared assets library in LCS. For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
+>[!NOTE]
+>The .pbix files available in Lifecycle Services apply to Finance and Operations only.
+
 ## Understanding the data model and entities
 The following data is used to fill the reports in the **Benefits** Power BI content. This table shows the entities that the content was based on.
 
