@@ -59,7 +59,7 @@ A matching rule used to select and mark a bank document when manually matching d
 | **Replaced by another feature?** | No, column filtering capabilities should be used to find documents for reconciliation.  |
 | **Modules affected**             | Cash and bank management                                                          |
 
-### Windows 8 tablet
+### Windows 8 tablet app
 
 The Windows 8 tablet app provided functionality for expense entry and approval.
 
