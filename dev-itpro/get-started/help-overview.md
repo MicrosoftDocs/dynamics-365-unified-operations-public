@@ -72,7 +72,7 @@ site:docs.microsoft.com dynamics 365 "search term"
 ![Site search results](./media/site-search-results.png)
 
 ### The docs.microsoft.com table of contents for Unified Operations
-All of the products share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control to find topics that you are looking for.     
+All of the products share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control to find topics that you are looking for.
 
 ### How can I contribute? 
 
@@ -99,7 +99,7 @@ On the right, enter an email address, and a new password to create a new account
 ## Task guides
 A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. 
 
-We will provide different sets of task guides for each Unified Operations product.
+We will provide different sets of task guides for each Unified Operations product. The section Accessing Task guides from the Help pane describes how to find the correct task guides for your product. 
 
 ![Task guide reading view](./media/task-guide-ops-1024x742.png)
 
@@ -151,7 +151,10 @@ On the **System parameters** page, follow these steps:
 1.  **Important:** The first time you open the Help tab, you must connect to Lifecycle Services. Be sure to click the link in the middle of the form, wait for the connection, close the dialog box, and then click OK to get to the parameters form.
 ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
 2.  Select the Lifecycle Services project to connect to.
-3.  Select the BPM libraries (within the selected project) to retrieve task recordings from.
+3.  Select BPM libraries (within the selected project) to retrieve task recordings from.
+    - For Finance and Operations, for Microsoft content, select the February 2017 QPC Unified Library for Microsoft Dynamics 365 for Operations. 
+    - For Retail, we will be releasing a library in July. 
+    - You do not need to select a library for Talent--the connection to the correct library is established for you. 
 
 4.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the Help pane.
 
