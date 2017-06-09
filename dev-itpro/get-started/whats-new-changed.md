@@ -39,6 +39,56 @@ This page points you to topics that can help you learn about the new features in
 
 To upgrade to the latest version, see [Process for upgrading to the latest Dynamics 365 for Operations update](../migration-upgrade/upgrade-latest-update.md).
 
+## Application releases
+
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Release</strong></th>
+<th><strong><strong>Version</strong></strong></th>
+<th><strong><strong>Build number</strong></strong></th>
+<th><strong><strong>Availability</strong></strong></th>
+<th><strong><strong>To learn more</strong></strong></th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="even">
+<td>Microsoft Dynamics 365 for Operations</td>
+<td>1611</td>
+<td> 7.1.1541.3036</td>
+<td>November 2016</td>
+<td><a href="whats-new-dynamics-365-operations-1611.md">What’s new or changed in Dynamics 365 for Operations version 1611 (November 2016)</a></td>
+</tr>
+
+<tr class="even">
+<td>Microsoft Dynamics AX application</td>
+<td>7.0.1</td>
+<td>7.0.1265.23014</td>
+<td>May 2016</td>
+<td><a href="whats-new-changed-application-version-7-0-1-may-2016.md">What’s new or changed in Dynamics AX application version 7.0.1 (May 2016)</a></td>
+</tr>
+
+<tr class="even">
+<td>Microsoft Dynamics AX application</td>
+<td>7.0</td>
+<td>7.0.1265.3015</td>
+<td>February 2016</td>
+<td><a href="whats-new-changed-7-0-february-2016.md">What’s new or changed in Dynamics AX 7.0 (February 2016)</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
 ## Platform releases
 
 <table>
@@ -119,52 +169,4 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 
 </tbody>
 </table>
-
-## Application releases
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Release</strong></th>
-<th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
-<th><strong><strong>To learn more</strong></strong></th>
-</tr>
-</thead>
-<tbody>
-
-<tr class="even">
-<td>Microsoft Dynamics 365 for Operations</td>
-<td>1611</td>
-<td> 7.1.1541.3036</td>
-<td>November 2016</td>
-<td><a href="whats-new-dynamics-365-operations-1611.md">What’s new or changed in Dynamics 365 for Operations version 1611 (November 2016)</a></td>
-</tr>
-
-<tr class="even">
-<td>Microsoft Dynamics AX application</td>
-<td>7.0.1</td>
-<td>7.0.1265.23014</td>
-<td>May 2016</td>
-<td><a href="whats-new-changed-application-version-7-0-1-may-2016.md">What’s new or changed in Dynamics AX application version 7.0.1 (May 2016)</a></td>
-</tr>
-
-<tr class="even">
-<td>Microsoft Dynamics AX application</td>
-<td>7.0</td>
-<td>7.0.1265.3015</td>
-<td>February 2016</td>
-<td><a href="whats-new-changed-7-0-february-2016.md">What’s new or changed in Dynamics AX 7.0 (February 2016)</a></td>
-</tr>
-</tbody>
-</table>
-
 
