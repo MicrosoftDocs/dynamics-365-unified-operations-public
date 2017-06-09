@@ -41,7 +41,7 @@ This topic explains how to download Electronic reporting (ER) configurations fro
     * System administrator
 
 2. Go to **Organization administration** > **Electronic reporting**.
-3. In the **Configuration providers** section, select the tile for the ER provider that is associated with your company.
+3. In the **Configuration providers** section, select the card for the ER provider that is associated with your company.
 
     > [!NOTE]
     > To learn how to register a new ER solution provider, play the **Create a configuration provider and mark it as active** task guide.
@@ -74,13 +74,13 @@ This topic explains how to download Electronic reporting (ER) configurations fro
 10.	On the **ER repositories** page, on the **Dynamics 365 for Operations** tab, click **Open** to view the list of ER configurations for the selected repository.
 11.	In the **Configurations** tree in the left pane, select an ER configuration.
 12.	On the **Versions** FastTab, select the required version of the ER configuration.
-13.	Click **Import** to download the selected version from this repository to the current Microsoft Dynamics 365 for Operations instance. 
+13.	Click **Import** to download the selected version from this repository to the current instance. 
 
     > [!NOTE]
     > The **Import** button is unavailable for existing ER configuration versions. 
 
 > [!NOTE]
-> Depending on the ER settings, configurations are validated after they are imported. You might be notified about inconsistencies or issues that are discovered. You must resolve these inconsistencies or issues before you can use the imported configuration version. For more information, see the list of related articles for this topic. 
+> Depending on the ER settings, configurations are validated after they are imported. You might be notified about inconsistencies or issues that are discovered. You must resolve these inconsistencies or issues before you can use the imported configuration version. 
 
 ## Frequently asked questions
 
