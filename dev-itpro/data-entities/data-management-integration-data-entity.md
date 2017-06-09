@@ -57,3 +57,11 @@ The following diagram shows an inbound flow. [![Inbound flow](./media/over6-1024
 When you import text files, string sizes are limited to 32,768 characters. If there is a string larger than this, the imported string will be truncated. This is a limitation in the underlying implemenation and is due to SQL Server Integration Services (SSIS).  
  
 If you need to import strings that are larger than 32,768 characters, we suggest that you use container entity fields.
+
+
+For more information, watch the FastTrack Tech Talk video:
+
+[![Integration](../data-entities/media/Integration.png)](https://www.youtube.com/watch?v=fooBvQhIo6I&list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi&index=3 "Integration")
+
+
+
