@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cross docking from production orders to outbound docks | Microsoft Docs
+title: Cross-docking from production orders to outbound docks | Microsoft Docs
 description: This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 author: johanhoffmann
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Cross docking from production orders to outbound docks
+# Cross-docking from production orders to outbound docks
 
 This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 
@@ -50,7 +50,7 @@ A product is reported as finished to the production output location (3) and a f
 
 [![](./media/scenario1.png)](./media/scenario1.png)
 
-## Configure cross docking
+## Configure cross-docking
 You configure the cross-docking process in **work policies**. A work policy includes a work order type, location, and product. In the following example, cross-docking is configured for product X and location Y.
 
 #### Work order types
@@ -75,7 +75,7 @@ Currently, cross-docking can be configured for only two work order types:
 
 In the **cross-docking policy**, you define which document types are applicable for cross-docking. Currently, the only document type that is supported is **Transfer orders**. The following example shows the configuration of a cross-docking policy.
 
-### Cross docking policy name: Transfer order
+### Cross-docking policy name: Transfer order
 
 -   Sequence number: 10
 -   Work order type: Transfer issue
@@ -90,7 +90,7 @@ The **sequence number** indicates the priority of the document type. Currently, 
 
 The cross-docking policy also sets the policy for the prioritization of transfer order demand. For example, if multiple transfer orders exist for the same product, the scheduled date and time that are set on the load, and associated with the transfer order, determine the prioritization between the orders. The scheduled date and time can be set directly on the load, or they can be set on an **appointment schedule** that is associated with the load. The prioritization is determined by the cross-docking strategy. Currently, there is only one strategy: **Date and time**.
 
-### Cross docking demand requires location
+### Cross-docking demand requires location
 
 In the cross-docking policy, you can set up a criterion to require that transfer orders have an assigned location in order to be eligible for cross-docking. This criterion is set in the **Cross docking demand requires location** field. The location on the appointment schedule that is associated with the load is used as the final location for the goods that are being cross-docked. The final location for the goods that are being cross-docked is determined by the location directive for **Transfer issue** for the **Put** work order type. You might find it useful to set the **Cross docking demand requires location** field in a scenario where the finished goods should be cross-docked only if a trailer is assigned to a bay door. In this scenario, the goods are moved directly from the production line into the trailer. When a trailer is assigned to the bay door, a user will assign the location to the appointment schedule and will therefore make the location applicable for cross-docking. The following sections walk you through two examples.
 
@@ -99,7 +99,7 @@ In the cross-docking policy, you can set up a criterion to require that transfer
 After a product is reported as finished at the production line it is transferred to a bay-door location where it is loaded to a truck and transferred to a distribution center. Use company USMF.
 
 1.  Enable a new number sequence for cross-docking. Go to the **Number sequences** page, and select the **Generate** button. A wizard will guide you through the process.
-2.  Create a cross docking policy. Go to the **Cross docking policy** page, and create a new policy that is named **Cross docking to transfer order**. Note that the only work order type that you can select is **Transfer issue**, and the only cross-docking strategy that is available is **Date and time**.
+2.  Create a cross-docking policy. Go to the **Cross docking policy** page, and create a new policy that is named **Cross docking to transfer order**. Note that the only work order type that you can select is **Transfer issue**, and the only cross-docking strategy that is available is **Date and time**.
 3.  Create a work policy. Go to the **Work policies** page, and create a new work policy that is named **Cross Dock L0101**.
 4.  Set up loads so that they are created automatically for transfer orders. In the warehouse parameters, set up loads so that they are created automatically when transfer orders are created. A load is a prerequisite for making the transfer order eligible for cross-docking.
 5.  Set up the item load mapping. Go to the **Item load mapping** page, and set up a standard load template for the **CarAudio** item group. This mapping will automatically insert the load template on the load when the transfer order is created.
