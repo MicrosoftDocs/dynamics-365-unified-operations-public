@@ -37,14 +37,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This page lists the resources that are available for IT pros and developers who support Retail and commerce in Microsoft Dynamics 365 for Operations.
 
-Retail is dependent on Dynamics 365 for Operations. We recommend that you familiarize yourself with the core [deployment and development content](/dynamics365/operations/dev-itpro/index).
+Retail is dependent on Dynamics 365 for Operations. We recommend that you familiarize yourself with the core [deployment and development content](/dynamics365/unified-operations/dev-itpro/index).
 
 ## Retail components and architecture
 -   [Components of Microsoft Dynamics 365 for Operations - Retail](..\retail-components.md)
 -   [MPOS architecture](retail-modern-pos-architecture.md)
 -   [Architecture of Microsoft Dynamics 365 for Operations - Retail Server](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
--   [Retail Channel Performance Power BI  content](/dynamics365/operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
+-   [Retail Channel Performance Power BI  content](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
 
 ## Retail deployment
 -   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)
@@ -54,7 +54,7 @@ Retail is dependent on Dynamics 365 for Operations. We recommend that you famili
 -   [Retail Hardware Station configuration and installation](..\retail-hardware-station-configuration-installation.md)
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 -   [Retail component events for diagnostics and troubleshooting](retail-component-events-diagnostics-troubleshooting.md)
--   [Access Microsoft Dynamics 365 for Operations instances](/dynamics365/operations/dev-itpro/dev-tools/access-instances)
+-   [Access Microsoft Dynamics 365 for Operations instances](/dynamics365/unified-operations/dev-itpro/dev-tools/access-instances)
 
 ## Point of Sale (POS)
 -   [Retail Modern POS configuration and installation](..\retail-modern-pos-device-activation.md)

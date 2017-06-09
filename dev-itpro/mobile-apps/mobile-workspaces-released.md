@@ -52,32 +52,27 @@ This topic lists the mobile workspaces that have recently been released for the 
 
 | Mobile workspace   | Description                                                                                                                                                                                                      | Learn more                                                                                                      |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Expense management | Lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt. | [Expense management mobile workspace](/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace) |
-| Purchase order approval | Lets users view and respond to purchase orders with actions such as approve or reject. | [Purchase order approval mobile workspace](/dynamics365/operations/supply-chain/procurement/purchase-order-mobile-workspace) |
+| Expense management | Lets users capture and upload a receipt, so that they can attach it to an expense report later. The mobile workspace also lets users quickly create an expense line by using an attached receipt. | [Expense management mobile workspace](/dynamics365/unified-operations/financials/expense-management/expense-management-mobile-workspace) |
+| Purchase order approval | Lets users view and respond to purchase orders with actions such as approve or reject. | [Purchase order approval mobile workspace](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-mobile-workspace) |
 
 ## New mobile workspaces released in March 2017
 
 | Mobile workspace   | Description                                                                                   | Learn more                                                                                                                                                                              |
 |--------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Project time entry | Lets users enter and save time against a project by using their mobile device. | [Project time entry mobile workspace](/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace) |
+| Project time entry | Lets users enter and save time against a project by using their mobile device. | [Project time entry mobile workspace](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace) |
 
 ## New mobile workspaces released in January 2017
 
 | Mobile workspace     | Description                                                                                                                                                                         | Learn more                                                                                                                                                        |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cost controlling     | Lets cost center managers see the performance of the cost center anytime and anywhere.                                                                                               | [Cost controlling mobile workspace](/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
-| Inventory on-hand    | Lets users gain insights into reserved and available inventory anytime and anywhere.                                                                                                    | [Inventory on-hand mobile workspace](/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)       |
-| Sales orders         | Lets users stay up to date on your sales orders anytime and anywhere.                                                                                                                          | [Sales orders mobile workspace](/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)                 |
-| Vendor collaboration | Lets your vendors stay up to date on the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts. | [Vendor collaboration mobile workspace](/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
+| Cost controlling     | Lets cost center managers see the performance of the cost center anytime and anywhere.                                                                                               | [Cost controlling mobile workspace](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace)         |
+| Inventory on-hand    | Lets users gain insights into reserved and available inventory anytime and anywhere.                                                                                                    | [Inventory on-hand mobile workspace](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace)       |
+| Sales orders         | Lets users stay up to date on your sales orders anytime and anywhere.                                                                                                                          | [Sales orders mobile workspace](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace)                 |
+| Vendor collaboration | Lets your vendors stay up to date on the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts. | [Vendor collaboration mobile workspace](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace) |
 
 ## New mobile workspace functionality released in December 2016
 
 | Mobile workspace        | Description                                                                    | Learn more                                                                                                            |
 |-------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Vendor invoice approval | Learn how to design and create a mobile workspace for vendor invoice approval. | [Mobile invoice approvals](/dynamics365/operations/financials/accounts-payable/mobile-invoice-approvals) |
-
-
-
-
-
+| Vendor invoice approval | Learn how to design and create a mobile workspace for vendor invoice approval. | [Mobile invoice approvals](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals) |
 

@@ -88,7 +88,7 @@ A route must be approved before it can be used in the planning or manufacturing 
 
 Each route can be approved or unapproved separately. However, note that, when a route is unapproved, all related route versions are also unapproved. In the Production control parameters, you can specify whether routes can be unapproved, and whether approved routes can be changed.  
 
-If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](/dynamics365/operations/organization-administration/electronic-signature-overview).
+If you must keep a log that records who approves each route, you can require electronic signatures for route approval. Users will then have to confirm their identity by using an [electronic signature](/dynamics365/unified-operations/organization-administration/electronic-signature-overview).
 
 ## Operations
 An operation is a step in the production process. In Dynamics 365 for Operations, each operation has an ID and a simple description. The following tables shows typical examples of operations from a machine shop.
@@ -191,7 +191,7 @@ When you activate a route version, you designate it as the default route version
 
 ### Electronic signatures
 
-If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](/dynamics365/operations/organization-administration/electronic-signature-overview).
+If you must keep a log that records who approves and activates each route version, you can require electronic signatures for these tasks. Users who approve and activate route versions will then have to confirm their identity by using an [electronic signature](/dynamics365/unified-operations/organization-administration/electronic-signature-overview).
 
 ### Product change that uses case management
 
@@ -243,7 +243,7 @@ See also
 
 [Resource capabilities](resource-capabilities.md)
 
-[Electronic signature overview](/dynamics365/operations/organization-administration/electronic-signature-overview)
+[Electronic signature overview](/dynamics365/unified-operations/organization-administration/electronic-signature-overview)
 
 
 

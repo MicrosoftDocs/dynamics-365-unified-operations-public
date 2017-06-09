@@ -73,7 +73,7 @@ See also
 
 [Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
 
-[Overview of vendor invoices](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

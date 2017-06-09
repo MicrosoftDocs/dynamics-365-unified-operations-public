@@ -159,11 +159,11 @@
 ## [Budget planning integration with other modules](budgeting/budget-planning-integration-other-modules.md)
 # [Reporting](general-ledger/financial-reporting-getting-started.md)
 ## [Balance sheet financial reports](general-ledger/balance-sheet-financial-reports.md)
-## [Generate a financial report](/dynamics365/operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/operations/financials/toc.json)
+## [Generate a financial report](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
 ## [Income statement financial report](general-ledger/income-statement-financial-report.md)
 ## [Trial balance financial reports](general-ledger/trial-balance-financial-reports.md)
 ## [View financial reports](general-ledger/view-financial-reports.md)
-## [Report designer](/dynamics365/operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/operations/financials/toc.json)
+## [Report designer](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
 # [Cost accounting](cost-accounting/cost-accounting-home-page.md)
 ## [Terms](cost-accounting/terms-cost-accounting.md)
 ## [Hands-on labs (White paper)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
@@ -173,8 +173,8 @@
 ## [Dimension hierarchy](cost-accounting/dimension-hierarchy.md)
 ## [Overhead calculation](cost-accounting/overhead-calculation.md)
 ## [Cost control mobile workspace](cost-accounting/cost-controlling-mobile-workspace.md)
-## [Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
-## [Set up security for the Cost accounting analysis Power BI content](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
+## [Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+## [Set up security for the Cost accounting analysis Power BI content](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
 # [Public sector](public-sector/public-sector-functionality.md)
 ## [Plan for public sector functionality](public-sector/plan-public-sector-functionality.md)
 ## [Accounts payable in the public sector](public-sector/accounts-payable-public-sector.md)
@@ -211,15 +211,15 @@
 ## [Project time entry mobile workspace](project-management/project-time-entry-mobile-workspace.md)
 # [Localizations](localizations/TOC.md)
 
-# [Human resources](/dynamics365/operations/human-resources/index)
+# [Human resources](/dynamics365/unified-operations/talent/index)
 
-# [Retail](/dynamics365/operations/retail/index)
+# [Retail](/dynamics365/unified-operations/retail/index)
 
-# [Supply chain management](/dynamics365/operations/supply-chain/index)
+# [Supply chain management](/dynamics365/unified-operations/supply-chain/index)
 
-# [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
+# [Developer and Administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Other resources
-## [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
-## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
 
+## [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)

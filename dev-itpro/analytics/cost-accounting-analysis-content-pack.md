@@ -44,7 +44,7 @@ Because the **Cost accounting analysis** content highlights variances between th
 
 The **Cost accounting analysis** content lets cost accountants analyze how cost flows through the cost objects of the whole organization. 
 
-To learn more about Cost accounting, see [Cost accounting home page](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page). 
+To learn more about Cost accounting, see [Cost accounting home page](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page). 
 
 By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md).
 
