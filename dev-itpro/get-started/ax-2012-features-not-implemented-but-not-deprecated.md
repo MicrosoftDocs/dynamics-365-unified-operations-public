@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 2
 [!include[banner](../includes/banner.md)]
 
 
-This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. Although these features haven't yet been implemented, they aren't deprecated. 
+This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Although these features haven't yet been implemented, they aren't deprecated. 
 
 <table>
 <colgroup>
