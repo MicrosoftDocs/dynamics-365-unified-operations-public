@@ -5,7 +5,7 @@ title: Deprecated features
 description: This topic describes features that have been removed, or are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 05/17/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -59,15 +59,15 @@ A matching rule used to select and mark a bank document when manually matching d
 | **Replaced by another feature?** | No, column filtering capabilities should be used to find documents for reconciliation.  |
 | **Modules affected**             | Cash and bank management                                                          |
 
-### Feature name
+### Windows 8 tablet
 
-Proivde a brief description of the feature.
+The Windows 8 tablet app provided functionality for expense entry and approval.
 
 |                                  |                                                                                   |
 |----------------------------------|-----------------------------------------------------------------------------------|
-| **Reason for deprecation**       | Briefly explain why the feature is deprecated.                                    |
-| **Replaced by another feature?** | Indicate if the feature is replaced by something else.                            |
-| **Modules affected**             | List the modules affected such as: Accounts payable, Accounts receivable          |
+| **Reason for deprecation**       | Dynamics 365 for Finance and Operations, Enterprise edition is compatible with tablets. The tablet app is no longer necessary.                                   |
+| **Replaced by another feature?** | No.                            |
+| **Modules affected**             | Expense management          |
 
 ### Feature name
 
