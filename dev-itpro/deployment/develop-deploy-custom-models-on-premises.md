@@ -47,17 +47,20 @@ For detailed information on development, go to the Developer home page. For exte
 An LCS project for Dynamics 365 for Finance and Operations on-premises enables you to deploy Build and Development environments on Microsoft Azure (using your own Azure subscription), or download a VHD for local development.
 To deploy a development or build environment in your Azure subscription or to download a development VHD, go to Cloud-hosted environments.
 
-GRAPHIC
+ [![Cloud-hosted environment menu item](./media/alm-flow-01.png)](./media/alm-flow-01.png)
+    
 
 1. Click **Add**. 
-GRAPHIC
+  
+  [![Cloud-hosted environment Add button](./media/alm-flow-02.png)](./media/alm-flow-02.png)
+  
 2. Select Azure or Locally. If you select Locally*, this will take you to a download page where you can find and download a development VHD. If you select Azure**, you will then be prompted to select one of 3 topologies: Build and Test, Demo or Development.
 3.	Go through the deployment steps. This will deploy a VM in your Azure subscription.
 
 *For more information on how to configure a local development VHD, refer to this article.
 **To deploy environments in your own Microsoft Azure subscription, you need to setup at least one Azure Connector. Go to Project settings and select the Azure connectors tab to add an Azure connector (Follow the instructions on the page). You need to be the tenant administrator of the organization.
 
-GRAPHIC
+[![Project settings menu item](./media/alm-flow-03.png)](./media/alm-flow-03.png)
 
 ## Create a deployable package then upload to the LCS Asset Library
 When you complete a phase of development and you are ready to deploy your code to a sandbox or production environment of Finance and Operations on-premises, you must create an Application Deployable package out of your models. This process does not differ from the cloud version of Finance and Operations.
@@ -65,11 +68,11 @@ If you are using automated builds (Build environment), the build process creates
 When your deployable package is ready, upload it to your LCS project’s asset library.
 1.	Go to the Asset library.
 
-GRAPHIC
+[![Asset library menu item](./media/alm-flow-04.png)](./media/alm-flow-04.png)
 
 2. Select the **Software deployable package** tab.
 
-GRAPHIC
+[![Software deployable package files](./media/alm-flow-05.png)](./media/alm-flow-05.png)
 
 3. Click on **+** to upload a deployable package. 
 
@@ -77,15 +80,15 @@ GRAPHIC
 As of the July 2017 release of Finance and Operations on-premises, you can apply your customizations and extensions only during the deployment of a sandbox or production environment.
 1.	In your LCS project, click Configure to start deployment of your environment.
 
-GRAPHIC
+[![Sandbox Configure button](./media/alm-flow-06.png)](./media/alm-flow-06.png)
 
 2. Go through the deployment tool, when you reach the page where you need to enter the environment name, click **Advanced settings**.
 
-GRAPHIC
+[![On premise topology Advanced settings](./media/alm-flow-07.png)](./media/alm-flow-07.png)
 
 3. Select the **Customize Solution Assets** tab. 
 
-GRAPHIC
+[![Deployment settings](./media/alm-flow-08.png)](./media/alm-flow-08.png)
 
 4.	In the Select AOT package drop down menu, select the Application (AOT) Deployable package that contains your customizations. The dropdown menu will include all AOT packages in your Asset library.
 5.	Click Done to close the Deployment settings window then proceed with the environment deployment process.
