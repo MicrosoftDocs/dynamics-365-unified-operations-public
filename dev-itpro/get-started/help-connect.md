@@ -48,7 +48,7 @@ The following illustration shows the parts of the Dynamics 365 Unified Operation
 
 ## Connecting the Help system
 > [!IMPORTANT]
-> This section does not apply to Dynamics 365 for Talent. The Help system for Talent is automatically connected to task guides for the product. Also, you cannot create custom task guides for Talent. 
+> This section does not apply to Dynamics 365 for Talent. The Help system for Talent is automatically connected to task guides for the product. 
 
 Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation. [![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) On the **System parameters** page, follow these steps:
 
@@ -75,7 +75,12 @@ Translated task guides were first shipped in the May 2016 APQC Unified Library, 
 > -   If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Creating custom help
-You can create custom help for Finance and Operations, and for Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../user-interface/task-recorder.md).
+You can create custom help for Finance and Operations, and for Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. 
+
+> [!NOTE]
+> You cannot create custom task guides for Talent. 
+
+For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../user-interface/task-recorder.md).
 
 See also
 --------
