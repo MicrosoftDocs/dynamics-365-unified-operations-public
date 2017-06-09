@@ -5,7 +5,7 @@ title: Help overview
 description: This article provides an overview of the components of the Microsoft Dynamics 365 Unified Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/17
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -163,7 +163,7 @@ After a System administrator has completed these steps, you can open the Help pa
 
 ### Where are the translated Task guides?
 
-Translated Task guides are released in libraries with "All languages" in the title. To see localized Task guide help, make sure that you are connected to an apppropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
+Translated Task guides are released in libraries with "All languages" in the title. To see localized Task guide help, make sure that you are connected to an apppropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. The titles of translated task guides are still showing in English. 
 -   If a Task guide has been translated, when you open that Task guide all the text of the Task guide will appear in your selected language.
 -   If a Task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
