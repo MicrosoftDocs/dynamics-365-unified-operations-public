@@ -178,6 +178,7 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 <td><a href="whats-new-changed-7-0-february-2016.md">What’s new or changed in Dynamics AX 7.0 (February 2016)</a></td>
 </tr>
 
-</tbody>
+
 </table>
+
 
