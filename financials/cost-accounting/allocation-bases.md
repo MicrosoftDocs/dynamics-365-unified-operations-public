@@ -165,7 +165,9 @@ When a statistical dimension members is saved, a corresponding record is created
 |    Electricity    |    Electricity consumption    |    Statistical elements             |
 
 Statistical measures can come from different sources. 
+
 -	  Electricity consumption could be measured by meters installed in different areas of the company. 
+
 -   Tables hold statitical measures. For example, the table **HcmEmployment** holds a list of all employees and which cost centers they work for.  
 
 |    Name        |    Cost center     |    Worker Type    |                |
@@ -179,7 +181,9 @@ Statistical measures can come from different sources.
 [!NOTE] All the tables that contain financial dimensions can be used as sources for statistical measures.
 
 Cost accounting supports a collection of statistical measures by using the following data connections. 
+
 -	  Data management import/export tool
+
 -	  Statistical measures
 
 To pull statistical measures from the system, a statistical measure provider template is required. Learn more about Statistical measure provider template. (Will add a link once this topic is written.)
@@ -315,6 +319,7 @@ IF traditional statements are not supported. You can create statements and valid
 Electricity bills often consist of 2 parts. 
 
 -	  Fixed fee for being connected to grid
+
 -	  A cost associcated with consumption per kWh
 
 The predefined dimension member allocation basis Electricity has already been established and holds these values.
@@ -346,9 +351,9 @@ You must specify the alias to be used in the formula before the **Formula** fiel
 |    Alias    |    Constant     |    Allocation base    |
 |-------------|-----------------|-----------------------|
 |    a        |                 |    Electricity        |
-|    b        |    0,01*        |                       |
+|    b        |    0,01         |                       |
 
-* Zero is not supported as cnstant.
+Note that Zero is not supported as cnstant.
 
 **Formula allocation base**
 
