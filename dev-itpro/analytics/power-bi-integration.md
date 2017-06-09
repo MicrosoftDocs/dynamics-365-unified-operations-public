@@ -39,7 +39,7 @@ Microsoft Power BI is a suite of business analytics tools that let you analyze d
 ## Data exploration through Power BI
 There are various types of reporting in Finance and Operations.
 
-![data exploration](./media/data-exploration.png)
+![Data exploration](./media/data-exploration.png)
 
 Chart controls are used to build embedded experiences that require visuals.
 
@@ -59,7 +59,7 @@ For a detailed discussion of reporting concepts in Finance and Operations, see [
 You can use ready-made Power BI reports right away. Two types of Power BI content are available:
 
 - Power BI content that is available in Microsoft Dynamics Lifecycle Service (LCS)
-- Power BI content packs that are distributed in PowerBI.com marketplace
+- Power BI content packs that are distributed in the PowerBI.com marketplace
 
 Depending on your version, you can use one of both types of content.
 
@@ -68,8 +68,8 @@ LCS is a service that can manage your Finance and Operations environments. LCS i
 
 We will continue to release Power BI content that is based on Entity store. For information, see the [Roadmap](https://roadmap.dynamics.com).
 
-### Power BI content packs that are distributed in PowerBI.com marketplace
-There are several Power BI content packs in PowerBI.com marketplace. Although these content packs will continue to be supported until further notice, our future investments in content packs will be based on Entity store, and content will be released via LCS.
+### Power BI content packs that are distributed in the PowerBI.com marketplace
+There are several Power BI content packs in the PowerBI.com marketplace. Although these content packs will continue to be supported until further notice, our future investments in content packs will be based on Entity store, and content will be released via LCS.
 
 For more information about the content, see [Power BI content recently released](power-bi-content-released.md).
 
@@ -79,7 +79,7 @@ You should use the ready-made Power BI content as a first step. You can modify r
 ### Creating high-volume, near-real-time “operational Power BI reports” by using Entity store
 Entity store is an operational data store that is built specifically for Power BI integration. To create high-volume, near-real-time Power BI reports that use Entity store, a business analyst or a developer can use Power BI desktop, which is the authoring tool for Power BI reports. Like other artifacts that developers create, these reports must be distributed to your users via LCS.
 
-Reports that are created by using Entity store take advantage of DirectQuery technology. This technology enables reports to be created over large volumes of data. Reports that are created by using DirectQuery technology don't cache data in PowerBI.com service. Instead, data is always stored in Finance and Operations.
+Reports that are created by using Entity store take advantage of DirectQuery technology. This technology enables reports to be created over large volumes of data. Reports that are created by using DirectQuery technology don't cache data in the PowerBI.com service. Instead, data is always stored in Finance and Operations.
 
 For an overview of Power BI integration with Entity store, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md). For more information about how to create reports by using Entity store, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md).
 
@@ -88,18 +88,18 @@ If you're upgrading from Microsoft Dynamics AX 2012, you can upgrade cubes to ag
 ### Creating self-service “data mash-up” reports by using OData
 _Data mash-up_ is a term that is used to refer to ad-hoc, self-service reports that combine data from multiple sources. As a power user or a business analyst, you can create Power BI reports by using Open Data Protocol (OData) endpoints.
 
-Finance and Operations is a first-class data source for Power BI authoring tools, such as Excel and Power BI Desktop. Data entities are exposed as data feeds by using OData V4. These data entities include both standard data entities and aggregate data entities that can provide summarized and calculated data in the OData feed. Finance and Operations data feeds authenticate users and enable access, based on security permissions that are defined. Any client tool that supports the OData protocol can consume the data securely.
+Finance and Operations is a first-class data source for Power BI authoring tools, such as Microsoft Excel and Power BI Desktop. Data entities are exposed as data feeds by using OData V4. These data entities include both standard data entities and aggregate data entities that can provide summarized and calculated data in the OData feed. Finance and Operations data feeds authenticate users and enable access, based on security permissions that are defined. Any client tool that supports the OData protocol can consume the data securely.
 
 You can access OData endpoints via the following URL: https://<your Microsoft Dynamics 365 URL>/Data
 
 OData endpoints are ideal for quick and convenient data mash-ups. However, we recommend that you use Entity store to create reports that extract large volumes of data. For more information about how to create a Power BI report and a dashboard by using OData endpoints, see [Create a Power BI report and dashboard](create-powerbi-report-dashboard.md). Note that this article refers to the Power Query and PowerPivot tools. If you want to use Power BI desktop to create reports that use OData endpoints, the procedure is similar.
 
 ### Creating Power BI reports by using Excel
-In addition to using the Power BI desktop authoring tool, you can use “Power tools” that are incorporated into Microsoft Excel to create visualizations. Your organization might have many users who already use Excel every day. For a quick “one-off” report, Excel might be the best option for these users.
+In addition to using the Power BI desktop authoring tool, you can use “Power tools” that are incorporated into Excel to create visualizations. Your organization might have many users who already use Excel every day. For a quick “one-off” report, Excel might be the best option for these users.
 
 There are several scenarios where you can use Excel:
 
-- Export data from a page in Dynamics 365 into Excel. You can then use the Power View add-in that is built into Excel to visualize the data. The Excel workbook can be used as a stand-alone visualization. In addition, you can import the report into PowerBI.com service.
+- Export data from a page in Dynamics 365 into Excel. You can then use the Power View add-in that is built into Excel to visualize the data. The Excel workbook can be used as a stand-alone visualization. In addition, you can import the report into the PowerBI.com service.
 -	Use the Power Query extension in Excel to combine the data in another worksheet (or data that is imported from OData endpoints) with external data. You can visualize the resulting data by using Power View.
 - Use the PowerPivot extension in Excel to ingest a larger amount of data into Excel.
 
@@ -108,7 +108,7 @@ For more information about Power BI integration with Excel, see [Create a Power 
 Consider using Export to Excel functionality for ad-hoc “one-off” reports. If the reports will be shared with a group of users, you should consider using Entity store to create them.
 
 ## Sharing and using reports in PowerBI.com
-PowerBI.com is a service that is offered by Microsoft. It lets you create dashboards and reports, and also enables collaboration with a group of users. Regardless of how you create your reports, you can share reports with users by uploading them into PowerBI.com service. (This process is also known as _publishing_.)
+PowerBI.com is a service that is offered by Microsoft. It lets you create dashboards and reports, and also enables collaboration with a group of users. Regardless of how you create your reports, you can share reports with users by uploading them into the PowerBI.com service. (This process is also known as _publishing_.)
 
 After your reports are uploaded, your users can view, adjust, and explore them either on the web (when they are connected to the Internet at home or in the office) or by using apps on a device.
 
