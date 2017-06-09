@@ -83,7 +83,7 @@ Using your Dynamics 365 for Operations data, you can analyze store performance, 
 ## Customize and administer Retail environments
 If you have been asked to customize your environment, or if you are tasked with deploying and maintaining your system, check out the developer and system administrator content specific to Retail, as well as the more general content for Microsoft Dynamics 365 for Operations. 
 -   [Dynamics 365 for Operations - Retail for IT Pros and Developers](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamics 365 for Operations for Developers and IT Pros](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+-   [Microsoft Dynamics 365 for Operations for Developers and IT Pros](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page)
 
 ## Additional resources
 ### What's new and in development

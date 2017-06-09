@@ -51,7 +51,7 @@ Lifecycle Services
 -   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
 -   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
 -   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
--   [Install retail hotfixes](/dynamics365/operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/operations/dev-itpro/toc.json)
+-   [Install retail hotfixes](/dynamics365/unified-operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
 -   [Installing a financial reporting binary hotfix](..\migration-upgrade\install-financial-reporting-binary-hotfix.md)
 -   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 
@@ -81,7 +81,7 @@ Lifecycle Services
 -   [ISV licensing](../dev-tools/isv-licensing.md)
 
 ## Retail
--   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](/dynamics365/operations/retail/dev-itpro/dev-retail-home-page)
+-   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
 
 ## Mobile
 -   [Dynamics 365 for Operations mobile platform](../mobile-apps/mobile-platform.md)

@@ -119,7 +119,7 @@ In most cases, when you create a list of tax codes to include in each tax group,
 
 **Tip:** You can set up the transaction posting definitions so that some tax codes in the group use a different posting definition than the rest of the tax codes in the group. For more information, see [Tax codes, tax groups, and posting definitions FAQ](noam-usa-tax-codes-tax-groups-definitions.md). 
 
-After you create tax groups that are enabled for posting definitions, you can assign those tax groups to transaction posting definitions. For more information, see [Posting definitions in the public sector](/dynamics365/operations/financials/public-sector/posting-definitions-public-sector).
+After you create tax groups that are enabled for posting definitions, you can assign those tax groups to transaction posting definitions. For more information, see [Posting definitions in the public sector](/dynamics365/unified-operations/financials/public-sector/posting-definitions-public-sector).
 
 ## Next step
 The next step is to set up benefits and mandatory deductions. For more information, see [Benefit setup tasks](noam-usa-benefit-set-up-tasks.md).  
@@ -129,7 +129,7 @@ See also
 
 [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
 
-[Posting definitions in the public sector](/dynamics365/operations/financials/public-sector/posting-definitions-public-sector)
+[Posting definitions in the public sector](/dynamics365/unified-operations/financials/public-sector/posting-definitions-public-sector)
 
 
 
