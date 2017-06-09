@@ -166,9 +166,9 @@ When a statistical dimension members is saved, a corresponding record is created
 
 Statistical measures can come from different sources. 
 
--	  Electricity consumption could be measured by meters installed in different areas of the company. 
+- Electricity consumption could be measured by meters installed in different areas of the company. 
 
--   Tables hold statitical measures. For example, the table **HcmEmployment** holds a list of all employees and which cost centers they work for.  
+- Tables hold statitical measures. For example, the table **HcmEmployment** holds a list of all employees and which cost centers they work for.  
 
 |    Name        |    Cost center     |    Worker Type    |                |
 |----------------|--------------------|-------------------|----------------|
@@ -182,9 +182,9 @@ Statistical measures can come from different sources.
 
 Cost accounting supports a collection of statistical measures by using the following data connections. 
 
--	  Data management import/export tool
+- Data management import/export tool
 
--	  Statistical measures
+- Statistical measures
 
 To pull statistical measures from the system, a statistical measure provider template is required. Learn more about Statistical measure provider template. (Will add a link once this topic is written.)
 
@@ -318,9 +318,9 @@ IF traditional statements are not supported. You can create statements and valid
 
 Electricity bills often consist of 2 parts. 
 
--	  Fixed fee for being connected to grid
+- Fixed fee for being connected to grid
 
--	  A cost associcated with consumption per kWh
+- A cost associcated with consumption per kWh
 
 The predefined dimension member allocation basis Electricity has already been established and holds these values.
 
