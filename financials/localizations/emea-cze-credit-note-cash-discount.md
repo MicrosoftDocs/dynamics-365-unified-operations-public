@@ -47,7 +47,7 @@ Prerequisites
 
 ### Set up number sequences
 
-Create a continuous number sequence for a legal entity. For more information, see [Number sequences overview](/dynamics365/operations/organization-administration/number-sequence-overview) On the **Accounts receivable parameters** page, select the number sequence that you created for **Sales credit note**. Additionally, set up a number sequencevfor **Sales credit note voucher**. You can use the same number sequence that you used for **Sales credit note**.
+Create a continuous number sequence for a legal entity. For more information, see [Number sequences overview](/dynamics365/unified-operations/organization-administration/number-sequence-overview) On the **Accounts receivable parameters** page, select the number sequence that you created for **Sales credit note**. Additionally, set up a number sequencevfor **Sales credit note voucher**. You can use the same number sequence that you used for **Sales credit note**.
 
 ### Set up sales tax codes
 

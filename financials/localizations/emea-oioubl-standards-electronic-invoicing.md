@@ -41,7 +41,7 @@ The [European Commission](http://ec.europa.eu/finance/payments/einvoicing/index_
 What electronic invoice formats are currently supported in Dynamics 365 for Operations?
 ---------------------------------------------------------------------------------------
 
-Dynamics 365 for Operations (1611) offers implementation of electronic invoicing based on [electronic reporting](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting). There is a **Customer invoice model** data model and a number of country-specific electronic reporting format configurations created for Austria, Denmark, Italy, Norway and Spain:
+Dynamics 365 for Operations (1611) offers implementation of electronic invoicing based on [electronic reporting](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting). There is a **Customer invoice model** data model and a number of country-specific electronic reporting format configurations created for Austria, Denmark, Italy, Norway and Spain:
 -   OIOUBL Sales & Project invoice (AT, DK, NO)
 -   OIOUBL Sales & Project credit note (AT, DK, NO)
 -   Sales & Project invoice (ES)

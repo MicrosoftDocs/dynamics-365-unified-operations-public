@@ -162,7 +162,7 @@ The programming model for modifying context menus differs from the model used i
 ## Keyboard shortcuts
 Keyboard shortcuts are another mechanism for triggering some actions. Many actions that had shortcuts in Dynamics AX 2012 continue to have shortcuts in Operations. However, because of browser restrictions, the key combination that is used to trigger a particular action might differ. 
 
-The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see the [Shortcut keys](/dynamics365/operations//get-started/shortcut-keys) article. In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
+The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see the [Shortcut keys](/dynamics365/unified-operations//get-started/shortcut-keys) article. In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
 
 | Key combination     | Action              | Comments                                                                                                                                                                                                                           |
 |---------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

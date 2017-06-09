@@ -69,15 +69,15 @@
 ## [Organizations and organizational hierarchies (Commerce essentials)](organizational-hierarchies-commerce-essentials.md)
 # [IT Professional and Developer content](dev-itpro/TOC.md)
 
-# [Financials](/dynamics365/operations/financials/index)
+# [Financials](/dynamics365/unified-operations/financials/index)
 
-# [Human resources](/dynamics365/operations/human-resources/index)
+# [Human resources](/dynamics365/unified-operations/talent/index)
 
-# [Supply chain management](/dynamics365/operations/supply-chain/index)
+# [Supply chain management](/dynamics365/unified-operations/supply-chain/index)
 
-# [Developer and Administrator](/dynamics365/operations/dev-itpro/index)
+# [Developer and Administrator](/dynamics365/unified-operations/dev-itpro/index)
 
 # Other resources
-## [Dynamics 365 for Operations glossary](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [What's new or changed](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+## [Dynamics 365 for Operations glossary](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [What's new or changed](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 
