@@ -187,8 +187,8 @@ In this exercise, you’ll be creating a new report. The report is a side-by-sid
 18. **Save** your changes and **generate**. Once the report completes generating and opens, you can explore the report.
 
 ## Additional resources
-[Financial reporting](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
-[View financial reports](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
+[Financial reporting](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[View financial reports](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Dynamics Financial Reporting Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

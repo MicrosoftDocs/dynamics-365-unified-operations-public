@@ -67,7 +67,7 @@ The following table shows the prerequisites that must be in place before you sta
 </tbody>
 </table>
 
-For more information, see [Set up and generate positive pay](/dynamics365/operations/financials/accounts-payable/set-up-generate-positive-pay-files).
+For more information, see [Set up and generate positive pay](/dynamics365/unified-operations/financials/accounts-payable/set-up-generate-positive-pay-files).
 
 ## Submit pay statements for multiple workers in a pay period
 Use this procedure to create a payment journal for multiple pay statements at the same time. Before you generate pay statements, you must generate and release earnings. For more information, see [Generate earnings](noam-usa-generate-earnings.md). 

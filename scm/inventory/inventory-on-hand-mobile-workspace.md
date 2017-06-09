@@ -80,7 +80,7 @@ Before you can use the **Inventory on-hand** mobile workspace, make sure that yo
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
 <td>System administrator</td>
-<td>If you don’t already have Dynamics 365 for Operations deployed in your organization, the system administrator should see <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>If you don’t already have Dynamics 365 for Operations deployed in your organization, the system administrator should see <a href="/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 must be implemented.</td>
@@ -88,9 +88,9 @@ Before you can use the **Inventory on-hand** mobile workspace, make sure that yo
 <td>KB 4013633 (an X++ update or metadata hotfix) contains four mobile workspaces for supply chain management. To implement KB 4013633, your system administrator must follow these steps:
 <ol>
 <li>Download KB 4013633 from Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>SCMMobile</strong> model, and then upload the deployable package to LCS.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -123,7 +123,7 @@ Download and install the Dynamics 365 for Operations mobile app from your mobile
 
 ## View the onhand inventory for a product by using the Inventory onhand mobile workspace
 1.  On your mobile device, select the **Inventory on-hand** workspace.
-2.  Select **Check on-hand for an item**. You see a list of the products that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Dynamics 365 for Operations mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
+2.  Select **Check on-hand for an item**. You see a list of the products that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Dynamics 365 for Operations mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
 3.  If your item isn't in the list, select **Search more** to do an online search in Dynamics 365 for Operations. Search by product number, or switch to a search by product name.
 4.  Select a product. If the item has an image, the image is shown.
 5.  Select one of the following options to view the status of on-hand inventory:

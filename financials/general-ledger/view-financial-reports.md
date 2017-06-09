@@ -92,7 +92,7 @@ To export a financial report, on the Action Pane, click **Export**. The report i
 See also
 --------
 
-[Financial reporting for Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+[Financial reporting for Microsoft Dynamics AX](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro)
 
 
 

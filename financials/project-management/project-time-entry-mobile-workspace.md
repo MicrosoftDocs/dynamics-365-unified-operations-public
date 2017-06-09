@@ -73,7 +73,7 @@ Before you implement the **Project time entry** mobile workspace, make sure that
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later must be implemented.</td>
 <td>System administrator</td>
-<td>If you don't already have Dynamics 365 for Operations deployed in your organization, your system administrator should see <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
+<td>If you don't already have Dynamics 365 for Operations deployed in your organization, your system administrator should see <a href="/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment">Deploy a Microsoft Dynamics 365 for Operations demo environment</a>.</td>
 </tr>
 <tr class="even">
 <td>KB 4018050 must be implemented.</td>
@@ -81,9 +81,9 @@ Before you implement the **Project time entry** mobile workspace, make sure that
 <td>KB 4018050 is an X++ update or metadata hotfix that contains the <strong>Project time entry</strong> mobile workspace. To implement KB 4018050, your system administrator must follow these steps.
 <ol>
 <li>Download KB 4018050 from Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ProjectMobile</strong> models, and then upload the deployable package to LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Install the metadata hotfix</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Create a deployable package</a> that contains the <strong>ApplicationSuite</strong> and <strong>ProjectMobile</strong> models, and then upload the deployable package to LCS.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Apply the deployable package</a> to your Dynamics 365 for Operations system.</li>
 </ol></td>
 </tr>
 <tr class="odd">
@@ -118,11 +118,11 @@ Download and install the Dynamics 365 for Operations mobile app from your mobile
 2.  Select **Time entry**. You see the calendar dates for the current week.
 3.  For a selected date, select **Actions** &gt; **New entry**.
 4.  Enter the number of hours to record.
-5.  Select the project for the time entry. You see a list of the projects that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Dynamics 365 for Operations mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Select the project for the time entry. You see a list of the projects that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Dynamics 365 for Operations mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
 6.  If your project isn't in the list, select **Search** to do an online search in Dynamics 365 for Operations. Search by name, or switch to search by project name or customer.
-7.  Select a category. You see a list of the categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Dynamics 365 for Operations mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Select a category. You see a list of the categories that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Dynamics 365 for Operations mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
 8.  If your category isn't in the list, select **Search** to do an online search in Dynamics 365 for Operations. Search by category, or switch to search by category name.
-9.  Select an activity. You see a list of the activities that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Dynamics 365 for Operations mobile platform](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Select an activity. You see a list of the activities that are loaded into your app for offline use. By default, 50 items are loaded, but a developer can change this number. For more information, developers should see [Dynamics 365 for Operations mobile platform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
 10. If your activity isn't in the list, select **Search** to do an online search in Dynamics 365 for Operations. Search by activity number, or switch to search by purpose.
 11. Select the line property.
 12. Optional: Enter any external and internal comments.

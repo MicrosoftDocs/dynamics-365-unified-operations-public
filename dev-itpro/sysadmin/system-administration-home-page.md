@@ -47,15 +47,21 @@ Lifecycle Services
 -   [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md)
 
 ## Hotfixes and updates
--   [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](../migration-upgrade/upgrade-latest-update.md)
--   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
 -   [Microsoft Dynamics 365 for Operations versions and update policy](../migration-upgrade/versions-update-policy.md)
+-   [Download hotfixes from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md)
+-   [Install a binary hotfix or install a deployable package](..\deployment\apply-deployable-package-system.md)
+-   [Install an application metadata hotfix](..\migration-upgrade\install-metadata-hotfix-package.md)
+-   [Install retail hotfixes](/dynamics365/unified-operations/retail/dev-itpro/install-retail-hotfix?toc=/dynamics365/unified-operations/dev-itpro/toc.json)
+-   [Installing a financial reporting binary hotfix](..\migration-upgrade\install-financial-reporting-binary-hotfix.md)
+-   [Patching the reporting service](..\migration-upgrade\patch-reporting-service-environment.md)
 
 ## Upgrade
--   [Process for upgrading a sandbox environment](../migration-upgrade/upgrade-sandbox-environment.md)
--   [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md)
+-   [Overview of moving to the latest update of Microsoft Dynamics 365 for Operations](../migration-upgrade/upgrade-latest-update.md) 
 -   [Upgrade Dynamics 365 for Operations to the latest platform update](../migration-upgrade/upgrade-latest-platform-update.md)
 -   [Upgrade the Dynamics 365 for Operations platform to the August 2016 release](../migration-upgrade/update-platform-each-release.md)
+-   [Process for upgrading a sandbox environment](../migration-upgrade/upgrade-sandbox-environment.md)
+-   [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md)
+
 
 ## Database administration
 -   [Copy a Microsoft Dynamics 365 for Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
@@ -75,7 +81,7 @@ Lifecycle Services
 -   [ISV licensing](../dev-tools/isv-licensing.md)
 
 ## Retail
--   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](/dynamics365/operations/retail/dev-itpro/dev-retail-home-page)
+-   [Microsoft Dynamics 365 for Operations – Retail for IT Pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page)
 
 ## Mobile
 -   [Dynamics 365 for Operations mobile platform](../mobile-apps/mobile-platform.md)
