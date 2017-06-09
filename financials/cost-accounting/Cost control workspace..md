@@ -1,61 +1,60 @@
 ---
-title: "Cost control workspace "
+# required metadata
+
+title: Cost control workspace
+description: The **Cost control** workspace is as a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions can access reports. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: CAMCostControlWorkspaceConfiguration, CAMCostControlWorkspace 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+# ms.reviewer: YuyuScheller
+ms.search.scope:  AX 7.0.0, Operations, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
 ---
 
-The **Cost control** workspace has been introduced as a central point where
-managers who are responsible for controlling a cost object or a set of cost
-objects within a dimension or across dimensions, for example, cost centers and
-product groups can access reports. The reports in the workspace are fully
-managed by cost accountants. This ensures consistency in layout and data used
-for reporting across the entire organization.
+# Cost control overview 
 
-Cost control workspace configuration
-====================================
+[!include[banner](../includes/banner.md)]
 
-Cost accountants can define as many report configurations as desired to fit into
-the desired data composition or layout. A report configuration consists of 6
-sections, which all contribute to either selecting the targeted data composition
-or the layout.
+The **Cost control** workspace is introduced as a central point where managers who are responsible for controlling a cost object or a set of cost objects within a dimension or across dimensions, for example, cost centers and product groups can access reports. The reports in the workspace are fully managed by cost accountants. This ensures consistency in layout and data used for reporting across the entire organization.
 
-To configure a cost control workspace, click Cost accounting \> Setup \> Cost
-control workspace configuration.
+## Cost control workspace configuration
 
-General
--------
+Cost accountants can define as many report configurations as desired to fit into the desired data composition or layout. A report configuration consists of 6 sections, which all contribute to either selecting the targeted data composition or the layout.
 
-In this section, you can create a new unique report layout. The name of the
-report will be the unique identifier for end users to recognize in the **Cost
-control** workspace. You can also decide whether the report should be shared or
-kept internal for cost accountants.
+To configure a cost control workspace, click **Cost accounting** \> **Setup** \> **Cost control workspace configuration**.
 
-| Field       | Description                                                                                                                                   |
-|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Name        | Provide a unique name                                                                                                                         |
-| Description | Provide a detailed description                                                                                                                |
-| Published   | If this field is set to **Yes**, a user who is assigned one of the following four roles can see the report in the **Cost control** workspace. |
+### General
 
--   Cost accounting manager
+In this section, you can create a new unique report layout. The name of the report will be the unique identifier for end users to recognize in the **Cost control** workspace. You can also decide whether the report should be shared or kept internal for cost accountants.
 
--   Cost accountant
+|    Field          |    Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    Name           |    Provide a unique name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|    Description    |    Provide a detailed description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|    Published      |    If this field is set to Yes, a user who is assigned one of the following four roles can   see the report in the Cost control workspace.             <br>    1. Cost accounting manager        <br>   2. Cost accountant        <br>    3. Cost accountant clerk     <br>    4. Cost object controller      <br> If this field is set to No, only users who are assigned one of the following three roles   can see the report in the Cost control.   workspace.    <br>    1. Cost accounting manager   <br>    2. Cost accountant <br>    3. Cost accountant clerk    |
 
--   Cost accountant clerk
+### Data filtering
 
--   Cost object controller
-
-If this field is set to **No**, only users who are assigned one of the following
-three roles can see the report in the **Cost control** workspace.
-
--   Cost accounting manager
-
--   Cost accountant
-
--   Cost accountant clerk
-
-Data filtering
---------------
-
-In this section, data foundation of the report is defined. The end users of this
-report will see values in the report after source data has been processed.
+In this section, data foundation of the report is defined. The end users of this report will see values in the report after source data has been processed.
 
 | Field                                                            | Description                                                                                                                                   |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
