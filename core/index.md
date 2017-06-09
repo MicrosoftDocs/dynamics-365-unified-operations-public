@@ -58,12 +58,12 @@ This user guide can help you learn how to make Dynamics 365 for Operations work 
 <p><a href="dev-itpro/lcs-solutions/country-region.md">Regional features</a></p>
 <p>Human resources</p>
    <ul>
-  <li><a href="human-resources/departments-jobs-positions.md">HR strategy</a></li>
-  <li><a href="human-resources/manage-recruiting-process.md">Recruit, hire & motivate</a></li>
-  <li><a href="human-resources/performance-management-overview.md">Employee training</a></li>
-  <li><a href="human-resources/manage-benefit-program.md">Benefits</a></li>
-  <li><a href="human-resources/questionnaires.md">Questionnaire</a></li>
-  <li><a href="human-resources/localizations/noam-usa-payroll.md">US features</a></li>
+  <li><a href="talent/departments-jobs-positions.md">HR strategy</a></li>
+  <li><a href="talent/manage-recruiting-process.md">Recruit, hire & motivate</a></li>
+  <li><a href="talent/performance-management-overview.md">Employee training</a></li>
+  <li><a href="talent/manage-benefit-program.md">Benefits</a></li>
+  <li><a href="talent/questionnaires.md">Questionnaire</a></li>
+  <li><a href="talent/localizations/noam-usa-payroll.md">US features</a></li>
 </ul></td>
   <td>
   <p>Retail</p>
