@@ -44,7 +44,7 @@ The processes for each type of upgrade are similar, but different enough that we
 
 [Prepare to move to the latest update](upgrade-latest-update.md)
 
-## [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
+[Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
 
 
 
