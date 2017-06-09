@@ -120,7 +120,7 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 <td>Platform update 8</td>
 <td> X</td>
 <td>June 2017</td>
-<td>need link<tr class="odd">
+<td><a href="whats-new-platform-update-8.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8 (June 2017)</a><tr class="odd">
 <td>Dynamics 365 for Operations</td>
 <td>Platform update 7</td>
 <td> 7.0.4542.16189</td>
