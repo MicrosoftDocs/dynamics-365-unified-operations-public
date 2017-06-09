@@ -95,7 +95,7 @@ The following table shows the entities that the content was based on.
 | Employee Name            | First name, last name, and full name                                                | Current Worker, Terminated Employee, Employee Trend |
 | Employee Title           | Title and seniority date                                                            | Current Employee, Terminated Employee, Employee Trend |
 | Employee Trend           | Workers over time, headcount, company, and position                                 | Company, Geographic Location, Employee Name, Reports To, Calendar Offset, Date, Employee Title, Demographics, Employment, Job |
-| Mass Hire Project        | Number of mass hire projects, project owner, and project status                     | Company, Mass Hire Project Line |
+| Mass Hire Project        | Number of mass hire projects, project owner, and project status                     | Company, Mass Hire Line |
 | Mass Hire Line           | Department, employment type, and position                                           | Date, Job, Mass Hire Project |
 
 These entities were used to create calculated measures in the data model. These calculated measures are then used to calculate the key performance indicators (KPIs) and reports that are used in the Power BI content. If you want to include additional calculations on your reports and dashboard, you can download and modify the .pbix file from LCS. This file is the default data model that was used to create the Power BI content. After you've made modifications, you can create an organizational content pack and dashboard that contain the information that you’ve added.
