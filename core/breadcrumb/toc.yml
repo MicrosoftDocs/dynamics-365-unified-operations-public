@@ -3,7 +3,7 @@
   topicHref: /dynamics365
   items:
   - name: Operations
-    tocHref: /dynamics365/unified-operations/
+    tocHref: /dynamics365/unified-operations/fin-and-ops/
     topicHref: /dynamics365/unified-operations/fin-and-ops/index
     items:
     - name: Developer and Administrator
