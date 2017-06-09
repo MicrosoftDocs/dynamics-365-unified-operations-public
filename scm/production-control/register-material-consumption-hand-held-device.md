@@ -46,12 +46,14 @@ A continuous production process (5) consumes the batch-controlled raw material 
 Create a finished-good product, FG-100, with a bill of material that has the batch-controlled raw material RM-100. Add two batches, B1 and B2, of RM-100 in a quantity of 100 to location: Bulk-001 on license plate: PL-1. The flushing principle on the bill of material line for RM-100 is set to **Manual**. Set  the production input location to PIL-01. You can do that by selecting this location as the default production input location on warehouse 51.
 
 1.  Create a new mobile device menu item: 
-**Menu item name** - Register material consumption. 
->-    **Title** - Register material consumption. 
->-    **Mode** - Indirect. 
->-    **Activity code** - Register material consumption.
+-    **Menu item name** - Register material consumption. 
+-    **Title** - Register material consumption. 
+-    **Mode** - Indirect. 
+-    **Activity code** - Register material consumption.
+
 2.  Add the menu item to the **Production Mobile** device menu.
 3.  Create a production order for the finished product: 
+
 -    **Item number** - FG-100 
 -    **Site** - 5 
 -    **Warehouse** - 51 
