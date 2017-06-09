@@ -132,6 +132,23 @@ The computer must meet all system requirements for installing and using the foll
 -   2.4 GHz i7 (or equivalent) peak CPU speed per core (Four cores are recommended.)
 -   At least 10 GB of free space (The channel database can require a large amount of space.)
 
+## Connector for Microsoft Dynamics AX requirements
+### Supported operating systems
+
+-   The Connector for Microsoft Dynamics AX has two separate installers, the **Async Server Connector service** and the **Real-time service for Dynamics AX 2012 R3**
+-   Both components are 32-bit applications, but will run on both x86 and x64 architectures.
+-   Both components are supported on the following operating systems:
+    -   Windows 7 Professional, Enterprise, and Ultimate editions
+    -   Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions
+    -   Windows 10 Pro, Enterprise, and Enterprise LTSB editions
+    -   Windows Server 2012 R2, Windows Server 2016
+
+### Minimum system requirements
+
+-   2 GB of RAM, 4 GB of RAM recommended
+-   1.6 GHz peak CPU speed per core (Two cores are the minimum.)
+-   At least 10 GB of free space (The channel database can require a large amount of space.)
+
 ## Requirements for development on local VMs
 For information about the requirements for development on local virtual machines (VMs), see [VM running on-premises](../dev-tools/access-instances.md).
 
