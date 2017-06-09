@@ -61,6 +61,12 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 <tbody>
 
 <tr class="even">
+<td>Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>July 2017 update</td>
+<td> X</td>
+<td>June 2017</td>
+<td>need link</td>
+</tr><tr class="even">
 <td>Dynamics 365 for Operations</td>
 <td>1611</td>
 <td> 7.1.1541.3036</td>
@@ -110,6 +116,11 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 </thead>
 <tbody>
 <tr class="odd">
+<td>Dynamics 365 for Finance and Operations, Enterprise edition</td>
+<td>Platform update 8</td>
+<td> X</td>
+<td>June 2017</td>
+<td>need link<tr class="odd">
 <td>Dynamics 365 for Operations</td>
 <td>Platform update 7</td>
 <td> 7.0.4542.16189</td>
