@@ -34,19 +34,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
+This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides for the Unified Operations products and include them in your Help.
+
+> [!IMPORTANT]
+> You cannot create custom task guides for Dynamics 365 for Talent. The Help system for Talent is automatically connected to task guides for the product. 
 
 Learn about Task recorder
 -------------------------
 
-Task recorder is a Microsoft Dynamics 365 for Operations tool that you can use to record actions that you take in the product user interface (UI). When you use Task recorder, all of the events that you perform in the UI that are executed against the server—including adding values, changing settings, removing data—are captured. The steps that you record are collectively called a *task recording*. Task recordings can be used in many ways:
+Task recorder is a tool that you can use to record actions that you take in the product user interface (UI). When you use Task recorder, all of the events that you perform in the UI that are executed against the server—including adding values, changing settings, removing data—are captured. The steps that you record are collectively called a *task recording*. Task recordings can be used in many ways:
 
 -   **Task recordings can be played as task guides.** Task guides are an integral piece of the Dynamics 365 for Operations Help experience. A task guide is a controlled, guided, interactive experience through the steps of a business process. The user is instructed to complete each step by way of a pop-up prompt (or "bubble"), which will animate across the UI and point to the UI element that the user should interact with. The "bubble" also provides information about how to interact with the element, such as “Click here” or “In this field, enter a value.” A task guide runs against the user’s current data set and the data that is entered is saved in the user’s environment.
 -   **Task recordings can be displayed as procedural steps in the Help pane.** You can use the Help pane to search for and display task recordings. You can access the Help pane by clicking the **?** icon in the top navigation bar or you can use the shortcut key combination, **Ctrl+Shift+?**. You can read the steps of a task recording in the Help pane, or you can opt to play the recording as a task guide so it guides you through the UI.
 -   **Task recordings can be saved to BPM.** You can save your task recording to a line of a hierarchy in a Business Process Modeler (BPM) library in Lifecycle Services (LCS). A list of steps and a business process flow chart will be generated from the recording. Task recordings that have been saved to a BPM library can be shown in Dynamics 365 for Operations as Help.
 -   **Task recordings can be saved as Word documents.** This allows you to easily produce printable training guides.
 
-You can create your own task recordings, play task recordings provided by Microsoft, or modify Microsoft-provided task recordings to reflect your configuration. For more information about Task recorder, see [Task recorder in Dynamics 365 for Operations](task-recorder.md).
+You can create your own task recordings, play task recordings provided by Microsoft, or modify Microsoft-provided task recordings to reflect your configuration. For more information about Task recorder, see [Task recorder](task-recorder.md).
 
 ## Plan your task recording
 Whether you’re creating a new task recording or basing your recording on a Microsoft task recording, keep the following information in mind.
@@ -122,17 +125,12 @@ To show your own custom task recordings in the Help pane so that they can be pla
 See also
 --------
 
-[Dynamics 365 for Operations Help](..\get-started\help-overview.md)
+[Help overview](..\get-started\help-overview.md)
 
 [Connect Help](..\get-started\help-connect.md)
 
-[Task Recorder in Dynamics 365 for Operations](task-recorder.md)
+[Task Recorder](task-recorder.md)
 
 [Recently added task recorder features](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Creating new training libraries for Dynamics AX within Lifecycle Services using the Task recorder (External link)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Create Rich Help Topics with Task Recorder (external link)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-
