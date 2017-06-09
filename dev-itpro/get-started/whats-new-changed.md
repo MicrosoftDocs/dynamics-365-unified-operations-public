@@ -65,7 +65,7 @@ To upgrade to the latest version, see [Process for upgrading to the latest Dynam
 <td>July 2017 update</td>
 <td> X</td>
 <td>June 2017</td>
-<td>need link</td>
+<td><a href="whats-new-application-July-2017-update.md">What’s new or changed in Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update</a></td>
 </tr><tr class="even">
 <td>Dynamics 365 for Operations</td>
 <td>1611</td>
