@@ -87,7 +87,7 @@ The selected columns will be multiplied by the selected values in **Fiscal perio
 | Current period       | Provides a balance of the current fiscal period <br>Note: Current period is by default determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value will now represent the current period.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Previous period      | Provides a balance of the previous fiscal period <br>Formula = (Current fiscal period -1) <br>Note: Previous period is by default derived from the session date. In the **Cost control** workspace, a specific fiscal period can be selected as current period and previous period will be recalculated accordingly.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Year to date         | Provides a balance of Year to date <br>Formula = YearToDate (Current fiscal period) <br>Note: The current period is by default determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value will now represent the current period and **Year to date** will be updated accordingly.                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Year to date average | Provides an average for the **Year to date** <br>Formula = (YearToDate (Current fiscal period)) / (Count (Current fiscal period)) <br>Example: Statistical dimension member Full time employees and current date is 3-21-2017.        <br>**Period**: Fiscal period 1, Fiscal period 2, and Fiscal period 3 <br> **Magnitude** 10, 10, 12 <br>Year to date average (10 + 10 + 12) / 3 = 10,67 <br>**Year to date average** can be calculated for cost element dimension members and statistical dimension members. <br>Note: The current period is by default determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value will now represent the current period and **Year to date** and **Year to date average** will be updated accordingly. |
+| Year to date average | Provides an average for the **Year to date** <br>Formula = (YearToDate (Current fiscal period)) / (Count (Current fiscal period)) <br>Example: <br>Statistical dimension member Full time employees and current date is 3-21-2017.        <br>**Period**: Fiscal period 1, Fiscal period 2, and Fiscal period 3 <br> **Magnitude** 10, 10, 12 <br>Year to date average (10 + 10 + 12) / 3 = 10,67 <br>**Year to date average** can be calculated for cost element dimension members and statistical dimension members. <br>Note: The current period is by default determined by the session date. In the **Cost control** workspace, a specific fiscal period can be selected. The selected value will now represent the current period and **Year to date** and **Year to date average** will be updated accordingly. |
 
 ### Columns to display for costs
 
@@ -118,11 +118,11 @@ Note: As the fields listed below behave the same way for original and revised bu
 
 ## Cost control workspace
 
-The **Cost control** workspace is designed as a web report so that all managers who are responsible for a cost object can be granted access as described in Define access rights for cost object controllers. (link)
+The **Cost control** workspace is designed as a web report so that all managers who are responsible for a cost object can be granted access as described in [Define access rights for cost object controllers](access-rights-cost-object-controller.md).
 
 The lists of reports that are available for the end users, for example,managers, are controlled by the setting in the **Published** field on the **Cost control workspace configurations** page.
 
-Add an image
+![a report that users can see on the cost control workspace](./media/report-cost-control.png)
 
 A manager can select the specific fiscal calendar period that he or she wants to see. The session date is used to determine the default current period.
 
@@ -142,11 +142,11 @@ A grid displays each cost element associated with the **Cost element dimension h
 
 Two graphical visuals display a summary of **Actual vs Budget** and **Budget variance by period**
 
-add an image
+![two graphics display a summary of actual vs budget and budget variance by period](./media/cost-element-details-operations.png)
 
 The end users can click **Cost entries** to drill down the entry details if needed.
 
-add an image
+![cost entries for rTwo graphics display a summary of actual vs budget and budget variance by period](./media/cost-entries.png)
 
 For example, Rent is an expenditure distributed to cost centers. If an end user would like to understand how the Rent cost that his/her cost center must carry, the user can drill down to see how it has been calculated.
 
@@ -156,4 +156,4 @@ In the example shown below the **Allocation base** is of type **Formula allocati
 
 A grid shows the calculation performed per cost object.
 
-add an image
+![calculations per cost object](./media/cost-entries-allocation-base.png)
