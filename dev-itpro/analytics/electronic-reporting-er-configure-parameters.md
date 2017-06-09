@@ -59,7 +59,7 @@ Use the following procedure to set up the basic functionality of ER for all lega
 ## Optional setup for ER
 In addition to the basic functionality, ER has other functionality that you can set up.
 
-- On the **Electronic reporting destination** page, define the ER output destinations for each FILE output of each ER format configuration. Use the document types of the Document management framework that you set up earlier. You can also use this page to set up the optional functionality of ER for each legal entity. For more information, see the topic about ER destinations that is linked in the "See also" section of this topic.
+- On the **Electronic reporting destination** page, define the ER output destinations for each file output of each ER format configuration. Use the document types of the Document management framework that you set up earlier. You can also use this page to set up the optional functionality of ER for each legal entity. For more information, see the topic about ER destinations that is linked in the "See also" section of this topic.
 - Whenever you add new Application Object Tree (AOT) artifacts or update existing AOT artifacts that are used as data sources (tables, views, or data entities) in ER, use the **Rebuild table references** menu item (**Organization administration** > **Electronic reporting** > **Rebuild table references**) to bring your AOT changes into the ER metadata.
 
 ## Frequently asked questions
