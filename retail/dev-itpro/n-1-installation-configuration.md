@@ -82,7 +82,7 @@ To configure Connector for Microsoft Dynamics AX, complete the procedures in all
 
 ### Download the Connector for Microsoft Dynamics AX installers
 
-1. Use Azure AD credentials to sign in to the Microsoft Dynamics Commerce or Retail trial.
+1. Use Azure AD credentials to sign in to the Microsoft Dynamics Retail headquarters or Retail trial.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail and commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Connector for Microsoft Dynamics AX**.
 3. In the list of connectors on the left, select the connector that you created earlier for this installation.
 4. On the Action Pane, select **Download**.
