@@ -3,7 +3,7 @@
 
 title: Create a deployable package
 description: This topic describes the workflow for creating and applying a deployable package.
-author: RobinARH
+author: robadawy
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
@@ -17,14 +17,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-# ms.reviewer: 61
+# ms.reviewer: robinr
 ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 24211
-ms.assetid: 6d44cedb-9e2b-447b-abe5-8967ce6fd280
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shailesn
+ms.author: robadawy
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -50,9 +49,12 @@ After you have completed the development stage, follow these steps to create a d
 
 1.  In Microsoft Visual Studio, select **Dynamics 365** &gt; **Deploy** &gt; **Create Deployment Package**.
 ![Create deployment package](./media/createdeploymentpackage-986x1024.png)
+
 2.  Select the packages that contain your models, and then select a location in which to create the deployable package. 
 ![Select a location](./media/pack4.png)
+
 3.  After a deployable package is created, sign in to Microsoft Dynamics Lifecycle Services (LCS), and then, in your LCS project, click the **Asset Library** tile.
+
 4.  Upload the deployable package that you created earlier.
 
 ## Apply a deployable package
