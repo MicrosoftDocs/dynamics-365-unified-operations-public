@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Introduction to Dynamics 365 for Operations
-description: Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
+title: Introduction to Dynamics 365 for Finance and Operations
+description: Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. This page helps you learn and get start using the product. 
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
+Microsoft Dynamics 365 for Finance and Operations is Microsoft’s business application for enterprises. It enables people to quickly make smarter decisions through an intelligent user interface that provides access to real-time insights and data. It enables businesses to transform and innnovate by delivering proven business logic that allows them to redesign their business processes faster. It gives businesses the flexibility to grow at their own pace and do business nearly anywhere, anytime, allowing them to scale their operations globally to meet business needs. 
 
-This user guide can help you learn how to make Dynamics 365 for Operations work for your business.    
+This documentation can help you learn how to make Dynamics 365 for Finance and Operations work for your business. It is connected to documentation for the related products in the Unified Operations suite, Dynamics 365 for Retail, and Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
