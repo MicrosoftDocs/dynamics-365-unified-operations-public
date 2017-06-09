@@ -2,7 +2,7 @@
 # required metadata
 
 title: Help overview
-description: This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
+description: This article provides an overview of the components of the Microsoft Dynamics 365 Unified Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 author: margoc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -35,39 +35,44 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include[banner](../includes/banner.md)]
 
 
-This article provides an overview of the components of the Microsoft Dynamics 365 for Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
+This article provides an overview of the components of the Microsoft Dynamics 365 Unified Operations Help system. It also explains how you can provide custom documentation and training to your organization. 
 
-Dynamics 365 for Operations includes a Help system that is based on two main components:
+Dynamics 365 Unified Operations includes a Help system that is based on two main components:
 
 -   A documentation site
 -   Task guides
 
-You can access both articles and task guides from the Help pane in Dynamics 365 for Operations as shown in the following screen shot.
+The Help system is shared by all Unified Operations products: 
+- Dynamics 365 for Finance and Operations, Enterprise edition
+- Dynamics 365 for Retail
+- Dynamics 365 for Talent
+
+You can access both articles and task guides from the Help pane in whichever product you are using. The following screenshot shows Dynamics 365 for Finance and Operations
 
 ![Help pane](./media/help-pane-ops-task-guides-1024x741.png)
 
 This article describes the Help system, and explains how you can create custom documentation and training resources for your organization.
 
 ## Help on docs.microsoft.com
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) is the primary source of product documentation for Dynamics 365 for Operations. The site offers the following features:
+The docs.microsoft.com site ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) is the primary source of product documentation for Dynamics 365 Unified Operations. The site offers the following features:
 
 -   **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps guarantee that you have access to the latest technical information.
 -   **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
 -   **Access to different types of content** – The site lets you quickly access different types of content about Dynamics 365 for Operations, such as Microsoft Office Mix presentations, task guides, videos, and topics.
 -   **Content that supports your business processes** – The site includes business process–focused content that takes advantage of the Business Process Modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
-We've migrated all of the content from our previous help wiki to docs. We’re very excited about our new site and hope that you will be too.
-
 ### Searching on docs.microsoft.com
-We get a lot of questions about how to search for our content. On our site, if you start from a page about Dynamics 365 for Operations, we scope your search to just be for Dynamics 365 for Operations content. You can remove the scoping by clicking the X next to Operations in the search box. 
+We get a lot of questions about how to search for our content. On our site, if you start from a page about Dynamics 365 Unified Operations, we scope your search to just be for Dynamics 365 Unified Operations content. You can remove the scoping by clicking the X next to Unified Operations in the search box. 
 ![Search](./media/search-scope.png)
 
 You can also find our content with any search engine. We recommend that for best results, you use a site search, such as 
-site:docs.microsoft.com "search term"  
+site:docs.microsoft.com dynamics 365 "search term"  
 ![Site search](./media/site-search.png)
 
 ![Site search results](./media/site-search-results.png)
 
+### The docs.microsoft.com table of contents for Unified Operations
+All of the products share a single table of contents on the docs site, which enables customers to see the context of the topic they are in. It also enables you to use the Filter control to find topics that you are looking for.     
 
 ### How can I contribute? 
 
@@ -93,6 +98,8 @@ On the right, enter an email address, and a new password to create a new account
 
 ## Task guides
 A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are now available. 
+
+We will provide different sets of task guides for each Unified Operations product.
 
 ![Task guide reading view](./media/task-guide-ops-1024x742.png)
 
@@ -122,15 +129,20 @@ To access Help content within Dynamics 365 for Operations , either click the **H
 
 ### Accessing articles from the Help pane
 
-From the Help pane, you can access articles that apply to the Dynamics 365 for Operations client. When you first open the Help pane and click the **Wiki** tab, you’ll see the articles that apply to the page that you’re currently on in Dynamics 365 for Operations. If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article. 
+From the Help pane, you can access articles that apply to Unified Operations. When you first open the Help pane and click the **Wiki** tab, you’ll see the articles that apply to the page that you’re currently on. If the page appears in more than one Unified Operations product, you may see topics for all of the products. 
+
+If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article. 
 
 ### Accessing Task guides from the Help pane
 
-Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Dynamics 365 for Operations and configure some settings. 
+> [!IMPORTANT]
+> This section does not apply to Dynamics 365 for Talent. The Help system for Talent is automatically connected to task guides for the product. Also, you cannot create custom task guides for Talent. 
+
+Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page and configure some settings. 
 
 > [!NOTE]
-> -   In order to configure help, you must be signed in with an account in the same tenant as the tenant in which Dynamics 365 for Operations is deployed.
-> -   It is not possible to connect to an LCS library from an instance of Dynamics 365 for Operations running in a local virtual hard drive (VHD).
+> -   In order to configure help, you must be signed in with an account in the same tenant as the tenant in which the product was deployed from LCS.
+> -   It is not possible to connect to an LCS library from an instance of Finance and Operations or Retail running in a local virtual hard drive (VHD).
 
 ![System Parameters form with Help settings](./media/system-parameters_ops-1024x437.png)
 
@@ -140,23 +152,24 @@ On the **System parameters** page, follow these steps:
 ![Connect to LCS](./media/connect-to-lcs-crop-1024x365.png)
 2.  Select the Lifecycle Services project to connect to.
 3.  Select the BPM libraries (within the selected project) to retrieve task recordings from.
+
 4.  Set the display order of the BPM libraries. This determines the order in which task recordings from the libraries will appear in the Help pane.
 
-After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on in Dynamics 365 for Operations. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. 
+After a System administrator has completed these steps, you can open the Help pane and click the **Task guides** tab. You'll now see the Task guides that apply to the page that you’re currently on. If no Task guides are found, you can enter keywords to refine your search. After you click a Task guide in the Help pane, the Help pane shows the step-by-step instructions, and you can play the task guide. 
 ![Task guide reading view](./media/task-guide-ops-1024x742.png)
 
 ### Where are the translated Task guides?
 
-Translated Task guides are released in libraries with "All languages" in the title. In Dynamics 365 for Operations, to see localized Task guide help, make sure that you are connected to an apppropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
+Translated Task guides are released in libraries with "All languages" in the title. To see localized Task guide help, make sure that you are connected to an apppropriate library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**. 
 -   If a Task guide has been translated, when you open that Task guide all the text of the Task guide will appear in your selected language.
 -   If a Task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
 ## Additional resources
-The following table lists websites that provide Dynamics 365 for Operations content. Our content websites are organized to support the customer life cycle. Each phase is supported by a different set of sites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
+The following table lists websites that provide Unified Operations content. Our content websites are organized to support the customer life cycle. Each phase is supported by a different set of sites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
 
 | Site                                                                     | Description                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Docs.microsoft.com](/dynamics365/#pivot=solutions&panel=solutions_operations) | Hosts or links to all product documentation for Dynamics 365 for Operations.                                                                                                                                                               |
+| [Docs.microsoft.com](/dynamics365/) | Hosts or links to all product documentation for Dynamics 365 for Operations.                                                                                                                                                               |
 | [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics 365 for Operations projects from pre-sales to implementation and operations. This site is useful in all phases of an implementation. |
 | [CustomerSource](http://www.customersource.com/)\*                       | Hosts extensive training resources and is the primary support site for Dynamics 365 for Operations. Sign in may be required to access specific resources on the site.                                                                      |
 | [Support blog](http://aka.ms/AXSupportBlog)                              | Provides tips and tricks that are posted by the Dynamics 365 for Operations Support team.                                                                                                                                                  |
@@ -176,12 +189,11 @@ See also
 
 [Create documentation or training using Task recordings](../user-interface/task-recorder.md)
 
+[New or updated Task guides (February 2017)](new-task-guides-february-2017.md)
 [New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
 [New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 [New task guides (February 2016)](new-task-guides-available-february-2016.md)
-
-
 
 
 
