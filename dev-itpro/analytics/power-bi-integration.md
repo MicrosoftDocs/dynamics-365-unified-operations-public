@@ -71,7 +71,7 @@ We will continue to release Power BI content that is based on Entity store. For 
 ### Power BI content packs that are distributed in the PowerBI.com marketplace
 There are several Power BI content packs in the PowerBI.com marketplace. Although these content packs will continue to be supported until further notice, our future investments in content packs will be based on Entity store, and content will be released via LCS.
 
-For more information about the content, see [Power BI content recently released](power-bi-content-released.md).
+For more information about the content, see [Power BI content](power-bi-home-page.md).
 
 ## Extending, creating, and distributing Power BI reports
 You should use the ready-made Power BI content as a first step. You can modify ready-made reports or extend them by using capabilities that are built into PowerBI.com. In addition to modifying ready-made reports, you can extend them using Power BI authoring tools such as Power BI desktop. You can also create new reports. You can use several approaches to create new Power BI reports.
