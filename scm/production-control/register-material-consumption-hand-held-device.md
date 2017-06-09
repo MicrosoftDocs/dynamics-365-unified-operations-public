@@ -6,9 +6,9 @@ description: This topic describes a workflow that enables registration of raw ma
 author: johanhoffmann
 manager: AnnBe
 ms.date: 0000-00-00 00:00:00
-ms.topic: 
+ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: dynamics-ax-applications
 ms.technology: 
 
 # optional metadata
@@ -17,7 +17,7 @@ ms.technology:
 # ROBOTS: 
 # audience: 
 # ms.devlang: 
-ms.reviewer: annbe
+ms.reviewer: bis
 # ms.search.scope: AX 7.0.0, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 1706093
