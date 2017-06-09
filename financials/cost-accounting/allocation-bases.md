@@ -348,7 +348,7 @@ You must specify the alias to be used in the formula before the **Formula** fiel
 |    a        |                 |    Electricity        |
 |    b        |    0,01*        |                       |
 
-[!NOTE] Zero is not supported as cnstant.
+* Zero is not supported as cnstant.
 
 **Formula allocation base**
 
