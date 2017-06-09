@@ -63,23 +63,22 @@ For information about how to download Power BI content and connect it to your or
 ## Power BI content for Dynamics 365 for Operations version 1611
 If you're using Dynamics 365 for Operations version 1611, the following Power BI content is available:
 
-- [Financial Performance Power BI content](financial-performance-power-bi-content-pack.md)
-- [Credit and collections management Power BI content](credit-collections-content-pack-power-bi.md)
-- [Recruiting Power BI content](recruiting-analysis-power-bi-content-pack.md) 
-- [Employee Competencies and Development Power BI content](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
-- [Organizational Training Power BI content](organizational-training-analysis-power-bi-content-pack.md) 
-- [Workforce Metrics Power BI content](workforce-analysis-power-bi-content-pack.md)  
 - [Compensation and Benefits Power BI content](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [Practice manager Power BI content](practice-manager-power-bi.md)
-- [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
-- [Purchase spend analysis Power BI content](purchase-content-pack-for-power-bi.md) 
 - [Cost accounting analysis Power BI content](cost-accounting-analysis-content-pack.md) 
+- [Credit and collections management Power BI content](credit-collections-content-pack-power-bi.md)
+- [Employee Competencies and Development Power BI content](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [Financial performance Power BI content](financial-performance-power-bi-content-pack.md)
+- [Organizational Training Power BI content](organizational-training-analysis-power-bi-content-pack.md) 
+- [Practice manager Power BI content](practice-manager-power-bi.md)
+- [Production performance Power BI content](production-performance-power-bi.md)
+- [Purchase spend analysis Power BI content](purchase-content-pack-for-power-bi.md) 
+- [Recruiting Power BI content](recruiting-analysis-power-bi-content-pack.md) 
+- [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
 - [Warehouse performance Power BI content](warehouse-power-bi-content.md)
-- [Production performance Power BI content(production-performance-power-bi.md)
+- [Workforce Metrics Power BI content](workforce-analysis-power-bi-content-pack.md)  
 
-
-
-
+### How to access the content
+This Power BI content is available in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and connect it to your Microsoft Dynamics 365 for Operations data, see [Power BI content in LCS from Microsoft and your partners](power-bi-content-microsoft-partners.md). To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.
 
 ## Power BI content for Dynamics AX
 If you're using Dynamics AX 7.0 or 7.0.1, the following Power BI content is available:
@@ -89,7 +88,7 @@ If you're using Dynamics AX 7.0 or 7.0.1, the following Power BI content is avai
 - [Retail channel performance Power BI content](retail-channel-performance-dashboard-power-bi-data.md) 
 
 ### How to access the content
-The Power BI content is available from PowerBI.com.
+This Power BI content is available from PowerBI.com.
 
 1.  Sign in to [PowerBI.com](https://www.powerbi.com/).
 2.  Click **Get Data**.
