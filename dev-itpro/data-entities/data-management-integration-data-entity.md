@@ -61,7 +61,7 @@ If you need to import strings that are larger than 32,768 characters, we suggest
 
 For more information, watch the FastTrack Tech Talk video:
 
-[![Integration](../data-entities/media/Integration.png)](https://www.youtube.com/watch?v=fooBvQhIo6I&list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi&index=3 "Integration")
+> [!Video https://www.youtube.com/embed/fooBvQhIo6I?list=PLcakwueIHoT_BQxAZ6VFbWgX9sAWBW3Xi?ecver=1]
 
 
 
