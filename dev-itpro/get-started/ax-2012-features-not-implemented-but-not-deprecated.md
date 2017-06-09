@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics AX 2012 features that haven't been implemented but aren't deprecated
-description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition July 2017 update. Although these features haven't yet been implemented, they aren't deprecated. 
+description: This topic lists Microsoft Dynamics AX 2012 features that haven't yet been implemented in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Although these features haven't yet been implemented, they aren't deprecated. 
 author: sericks007
 manager: AnnBe
 ms.date: 06/16/2017
@@ -79,7 +79,7 @@ This topic lists Microsoft Dynamics AX 2012 features that haven't yet been imple
 </tr>
 <tr class="even">
 <td>Cost accounting</td>
-<td>The <strong>Cost accounting</strong> module is designed to meet the requirements of internal costs and profitable reports at multiple organizational levels. To define the cost object level, the module depends on a correct mapping of financial dimensions. The module lets you perform advanced allocations of cost origin from expenditures that are registered in the general ledger or budget, and also lets you compare realized costs and budgeted costs.</td>
+<td>The <strong>Cost accounting</strong> module is designed to meet the requirements of internal costs and profitability reports at multiple organizational levels. To define the cost object level, the module depends on a correct mapping of financial dimensions. The module lets you perform advanced allocations of cost origin from expenditures that are registered in the general ledger or budget, and also lets you compare realized costs and budgeted costs.</td>
 </tr>
 <tr class="even">
 <td>Absence management in Human resources</td>
