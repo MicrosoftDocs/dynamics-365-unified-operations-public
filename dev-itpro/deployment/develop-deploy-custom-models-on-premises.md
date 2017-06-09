@@ -5,7 +5,7 @@ title: Develop and deploy custom models to on-premise environments
 description: This topic describes the process of developing and deploying customizations and extensions to an on-premise environment. 
 author: kfend
 manager: AnnBe
-ms.date: 04/22/2017
+ms.date: 06/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -31,21 +31,23 @@ ms.dyn365.ops.version: Platform update 8
 ---
 
 # Develop and deploy custom models to on-premise environments
-This topic describes the process of developing and deploying customizations and extensions to a Dynamics 365 for Finance and Operations on-premises environment. One-premises environment are also referred to as Local Business Data environments. This topic focus on the difference in the process when compared to cloud environments.
+This topic describes how to develop and deploy customizations and extensions to an on-premise environment. On-premise environments are also referred to as Local Business Data (LBD) environments. This topic focuses on the difference in the LBD environment development and deployment process when compared to a cloud environment.
+
 The key steps of the process are:
 1.	Deploy your development and build environments.
-2.	When development is complete, create a deployable package of your code and customizations.
+2.	Create a deployable package of your code and customizations.
 3.	Upload the deployable package to your Dynamics Lifecycle Services (LCS) project.
-4.	Configure/deploy an on-premises runtime environment (Sandbox or Production) that includes your deployable package.
-The following sections detail this process.
+4.	Configure and deploy an on-premise runtime environment, either Sandbox or Production, that includes your deployable package.
+
+The following sections provide more information about this process.
 
 ## Development tools and platform
-Whether you are developing, extending or customizing cloud or on-premises applications of Dynamics 365 for Finance and Operations, the development platform, tools, and environments (VMs) are the same. Your custom code is the same and is developed on the same development VMs whether your target runtime environments are cloud or on-premises environment.
-For detailed information on development, go to the Developer home page. For extensibility and customization, go the Extensibility home page. For build, test, and continuous delivery topics, refer to the continuous delivery homepage.
+Whether you are developing, extending, or customizing cloud or on-premise applications, the development platform, tools, and environments (VMs) are the same. Your custom code is developed on the same development VMs whether your target runtime environments are in a cloud or on-premise environment.
+For detailed information about development, see the [Developer home page](../dev-tools/developer-home-page.md). For extensibility and customization, see the [Extensibility home page](../extensibility/extensibility-home-page.md). For build, test, and continuous delivery topics, see the [Continuous delivery homepage](../dev-tools/continuous-delivery-home-page.md).
 
 ## Deploy development and build environments
-An LCS project for Dynamics 365 for Finance and Operations on-premises enables you to deploy Build and Development environments on Microsoft Azure (using your own Azure subscription), or download a VHD for local development.
-To deploy a development or build environment in your Azure subscription or to download a development VHD, go to Cloud-hosted environments.
+You can use an on-premise LCS project to deploy Build and Development environments on Microsoft Azure by using your own Azure subscription, or download a VHD for local development.
+To deploy a development or build environment in your Azure subscription or to download a development VHD, in LCS, go to the **Cloud-hosted environments** page.
 
  [![Cloud-hosted environment menu item](./media/alm-flow-01.png)](./media/alm-flow-01.png)
     
@@ -54,19 +56,19 @@ To deploy a development or build environment in your Azure subscription or to do
   
   [![Cloud-hosted environment Add button](./media/alm-flow-02.png)](./media/alm-flow-02.png)
   
-2. Select Azure or Locally. If you select Locally*, this will take you to a download page where you can find and download a development VHD. If you select Azure**, you will then be prompted to select one of 3 topologies: Build and Test, Demo or Development.
-3.	Go through the deployment steps. This will deploy a VM in your Azure subscription.
+2. Select **Azure** or **Locally**. If you select **Locally**, you can find and download a development VHD. If you select **Azure**, you will be prompted to select one of three topologies: **Build and Test**, **Demo**, or **Development**.
+3.	Complete the deployment steps and deploy a VM in your Azure subscription.
 
-*For more information on how to configure a local development VHD, refer to this article.
-**To deploy environments in your own Microsoft Azure subscription, you need to setup at least one Azure Connector. Go to Project settings and select the Azure connectors tab to add an Azure connector (Follow the instructions on the page). You need to be the tenant administrator of the organization.
+For more information about how to configure a Local development VHD, refer to the [Acess instances](./dev-itpro/dev-tools/access-instances#vm-that-is-running-onpremises) topic.
+**Note**: To deploy environments in your own Microsoft Azure subscription, you must set up at least one Azure Connector. To do this, in LCS, go to **Project settings**, and select the **Azure connectors** tab. Follow the instructions to add an Azure connector. To complete these steps, you must be the tenant administrator of the organization.
 
 [![Project settings menu item](./media/alm-flow-03.png)](./media/alm-flow-03.png)
 
-## Create a deployable package then upload to the LCS Asset Library
-When you complete a phase of development and you are ready to deploy your code to a sandbox or production environment of Finance and Operations on-premises, you must create an Application Deployable package out of your models. This process does not differ from the cloud version of Finance and Operations.
-If you are using automated builds (Build environment), the build process creates an Application Deployable package for you. You can also create an Application Deployable package directly from Visual Studio on your development environment. For more information on how to create an Application Deployable package on your development environment, go to this topic.
-When your deployable package is ready, upload it to your LCS project’s asset library.
-1.	Go to the Asset library.
+## Create and upload a deployable package to the LCS Asset Library
+When you complete a phase of development and you are ready to deploy your code to a sandbox or production on-premise environment, you must create an Application Deployable package from your models. This process does not differ from cloud environments.
+If you are using automated builds (Build environment), the build process creates an Application Deployable package for you. You can also create an Application Deployable package directly from Visual Studio in your development environment. For more information on how to create an Application Deployable package on your development environment, see [Create and apply a deployable package](../deployment/create-apply-deployable-package.md).
+When your deployable package is ready, upload it to your LCS project’s **Asset library**.
+1.	Go to the **Asset library**.
 
 [![Asset library menu item](./media/alm-flow-04.png)](./media/alm-flow-04.png)
 
@@ -74,15 +76,15 @@ When your deployable package is ready, upload it to your LCS project’s asset l
 
 [![Software deployable package files](./media/alm-flow-05.png)](./media/alm-flow-05.png)
 
-3. Click on **+** to upload a deployable package. 
+3. Click on **+** to upload the deployable package. 
 
-## Configure a runtime environment on-premises with your code
-As of the July 2017 release of Finance and Operations on-premises, you can apply your customizations and extensions only during the deployment of a sandbox or production environment.
-1.	In your LCS project, click Configure to start deployment of your environment.
+## Configure a run-time environment on-premise with your code
+As of the July 2017 release of Finance and Operations Enterprise Edition on-premise, you can apply your customizations and extensions only during the deployment of a sandbox or production environment.
+1.	In your LCS project, click **Configure** to deploy your environment.
 
 [![Sandbox Configure button](./media/alm-flow-06.png)](./media/alm-flow-06.png)
 
-2. Go through the deployment tool, when you reach the page where you need to enter the environment name, click **Advanced settings**.
+2. In the deployment tool, when you need to enter the environment name, click **Advanced settings**.
 
 [![On premise topology Advanced settings](./media/alm-flow-07.png)](./media/alm-flow-07.png)
 
@@ -90,6 +92,6 @@ As of the July 2017 release of Finance and Operations on-premises, you can apply
 
 [![Deployment settings](./media/alm-flow-08.png)](./media/alm-flow-08.png)
 
-4.	In the Select AOT package drop down menu, select the Application (AOT) Deployable package that contains your customizations. The dropdown menu will include all AOT packages in your Asset library.
-5.	Click Done to close the Deployment settings window then proceed with the environment deployment process.
+4.	In the **Select AOT package** drop-down, select the Application (AOT) Deployable package that contains your customizations. The drop-down will include all AOT packages in your **Asset library**.
+5.	Click **Done** to close the **Deployment settings** window then continue with the environment deployment process.
 
