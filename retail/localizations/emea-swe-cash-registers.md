@@ -48,3 +48,31 @@ Note: stc1, stc2 - sales tax codes with a different tax rate; substitute them wi
 Maintain a hardware profile:
   - set up parameters for integration with a control unit, select the fiscal register configuration created before; 
   - specify default options for receipt printing.
+
+
+5. Create and assign a fiscal register configuration in Retail Headquarters:
+
+    - Run Dynamics 365 for Retail Headquarters.
+
+    - Open *Retail > Channel setup > POS setup > POS profiles > Fiscal register configurations*
+
+    - Create a new fiscal register configuration record, set the name and the description of the configuration.
+
+    - Fill in the configuration content. For this sample, a configuration is an XML file that establishes the mapping between sales tax codes and control unit's VAT groups. You can map up to four sales tax codes. An example configuration can be found below. It is also possible to export a sample configuration by selecting *Export sample configuration* in the action pane.
+
+        ``` xml
+        <UnitConfiguration>
+            <TaxMapping>
+                <Tax taxCode="VAT10" controlUnitTaxId="1"/>
+                <Tax taxCode="VAT20" controlUnitTaxId="2"/>
+            </TaxMapping>
+        </UnitConfiguration>
+        ```
+    
+    - Open *Retail > Channel setup > POS setup > POS profiles > Hardware profiles*
+
+    - Select the hardware profile of the HW station, which the fiscal register is connected to, and set the following fields on the Fisacl register fast-tab:
+
+        - Select Third-party driver in the Fiscal register field;
+
+        - Select the name of the newly created fiscal register configuration in the Configuration field.
