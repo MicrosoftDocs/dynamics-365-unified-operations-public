@@ -41,7 +41,7 @@ In order to deploy your code and customizations to a Dynamics 365 for Operations
 
 ![Create and apply a deployment package](./media/createandapplydeployablepackage.png)
 
-> ![NOTE]
+> [!NOTE]
 > Application Deployable Packages do not contain source code.
 
 ## Create a deployable package
