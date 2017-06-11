@@ -2,7 +2,7 @@
 # required metadata
 
 title: Symbol font
-description: This article provides a link to the list of available symbols for each release.  A description of the various locations in the product where symbols are used as well as usage guidelines for each location is also included.  
+description: This topic provides a link to the list of available symbols for each release. A description of the various locations where symbols are used in the product and usage guidelines for each location are also included.  
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -34,6 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The Dynamics Symbol font defines the set of out-of-the-box symbols available for use in the product.  These symbols are primarily used by buttons, tiles, and image controls. With each release, there may be updates to this font in terms of added or removed symbols. 
+The Dynamics Symbol font defines the set of out-of-box symbols that are available in the product. These symbols are primarily used for buttons, tiles, and image controls. In every release, there might be updates to this font. For example, symbols might be added or removed.
 
-To access the list of available symbols (the name and image) for each release that updated the Symbol font, please visit the [Dynamics Symbol Font](https://go.microsoft.com/fwlink/?linkid=850961) page.
+To access the list of available symbols (the name and an image) for every release that updated the Symbol font, visit the [Dynamics Symbol Font](https://go.microsoft.com/fwlink/?linkid=850961) page.
