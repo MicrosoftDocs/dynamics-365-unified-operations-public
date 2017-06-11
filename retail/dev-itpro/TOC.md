@@ -1,7 +1,7 @@
-# [Dynamics 365 for Operations - Retail for IT pros and developers](dev-retail-home-page.md)
+# [Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail for IT pros and developers](dev-retail-home-page.md)
 
 # Architecture
-## [Components of Microsoft Dynamics 365 for Operations - Retail](..\retail-components.md)
+## [Components](..\retail-components.md)
 ## [Retail Server architecture](retail-server-architecture.md)
 ## [Retail channel communications](define-retail-channel-communications-cdx.md)
 ## [MPOS architecture](retail-modern-pos-architecture.md)

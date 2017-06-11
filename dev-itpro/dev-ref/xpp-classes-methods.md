@@ -718,7 +718,7 @@ The following example shows the syntax for using several special variables that 
     }
 
 ## Running startup commands
-You use the **SysStartupCmd** class framework to run commands at startup. When Microsoft Dynamics 365 for Operations starts, calls are made to the **startup** methods on the application-substituted kernel classes **Application** (**Application.startup**) and **Info** (**Info.startup**). The **startup** methods are used for vital system and version-specific calls, and you must never directly modify these methods. Instead, use the **SysStartupCmd** framework. Serious issues can occur if the SYS layer versions of the **startup** methods aren't called. The following example shows the order that calls are run in when Dynamics 365 for Operations starts.
+You use the **SysStartupCmd** class framework to run commands at startup. When Finance and Operations starts, calls are made to the **startup** methods on the application-substituted kernel classes **Application** (**Application.startup**) and **Info** (**Info.startup**). The **startup** methods are used for vital system and version-specific calls, and you must never directly modify these methods. Instead, use the **SysStartupCmd** framework. Serious issues can occur if the SYS layer versions of the **startup** methods aren't called. The following example shows the order that calls are run in when Dynamics 365 for Operations starts.
 
     appl.startup() // The SysStartupCmd class is instantiated here.
     sysStartupCmd.applInit()
