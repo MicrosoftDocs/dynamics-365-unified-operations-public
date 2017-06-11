@@ -35,11 +35,32 @@ ms.dyn365.ops.version: Platform update 8
 
 This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8. This version was released in June 2017 and has a build number of 7.0.XXXX.XXXXX.
 
-## Development and customization - Changing the EDT type on a table field using table extensions
-Using table extensions, a developer can change the Extended Data Type (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize with extensions and overlayering](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensibility/customization-overlayering-extensions).
+## Development and customization - Changing the extended data type (EDT) on a table field using table extensions
+Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize with extensions and overlayering](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/extensibility/customization-overlayering-extensions).
+
+## Development and customization - Compliance properties on table fields
+A new property named General Data Protection Regulation (GDPR) is now available on table fields for the developer to set. It is used to classify the data field for compliance with GDPR.
+
+Available options are:
+- Access control data - Data used to manage and access to administrative roles or sensitive functions.
+- Customer content - Content directly provided/created by admins and users. This is the default value.
+- End User Identifiable Information (EUII) - Data that identifies or could be used to identify the user of a Microsoft service. EUII does not contain Customer content.
+- End User Pseudonymous Information (EUPI) - An identifier created by Microsoft tied to the user of a Microsoft service. When EUPI is combined with other information, such as a mapping table, it identifies the end user. EUPI does not contain information uploaded or created by the customer (Customer content or EUII).
+- Support data - Data provided to Microsoft as part of Support activities.
+- Account data - Customer billing information and payment instrument information. Administrator contact information, such as tenant administrator’s name, address, or phone number. 
+- Public personal data - Publicly available information that Microsoft obtains from external sources. Public personal data is not Customer content, EUII, or EUPI since the data was not input by the customer.
+- Organization Identifiable Information (OII) - Data that can be used to identify a tenant, generally config or usage data. This data is not linkable to a user and does not contain Customer content.
+- System metadata - Data generated while running the service, not linkable to a user or tenant. 
+- Public non-personal data - Publicly available information that Microsoft obtains from external sources.  Does not contain Public personal data.
+
+## Table browser is now in read-only mode
+The table browser form is now in read-only mode on runtime environments (Sandbox Tier-2 and Production).
+
+The table browser form is designed for developers to quickly create and edit test data on development environments. It was also available to system administrators on runtime environments. As of Platform update 8, system administrators can only access the table browser in read-only mode on runtime environments, this is in reaction to live incidents caused by human error when system administrators inadvertently edited or removed live system data.
+
 
 ## Templates for configuration data projects 
-A set of default configuration templates provides the necessary entities and sequencing to be able to copy configuration data from one instance to another instance in a single step, using a configuration data project. 
+This set of default configuration templates provides the necessary entities and sequencing to be able to complete the process of copying configuration data from one instance to another instance in a single step, using a configuration data project. 
 
 ## Deployment option - Local business data
 Some organizations are not ready to store their company’s mission critical data in the cloud. This requirement, in many cases, is due to industry regulations, country or geographic cloud adoption, recent data center investments, or an organization’s enterprise standards. For these customers, we are excited to announce a new deployment option that will not require business data to be stored in the cloud.
