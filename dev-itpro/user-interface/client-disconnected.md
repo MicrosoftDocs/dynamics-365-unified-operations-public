@@ -41,4 +41,4 @@ The configuration of the local network for an on-premises deployment of Dynamics
 + Skype integration will not be available.  
 + The favicon shown in the browser tab will be the browser's default favicon instead of the Finance and Operations icon. 
 
-In addition to platform features that may not be accessible when the client cannot access the external internet, there may also be application features that rely on an internet connection that developers will need to disable or hide. To facilitate this, developers can utilize the **clientHasRestrictedInternet()** method that has been added to the **Session** class. This method will return true if the client does not have access to the external internet.
+In addition to platform features that may not be accessible when the client cannot access the external internet, there may also be application features that rely on an internet connection that developers will need to hide or disable. To facilitate this, developers can utilize the **clientHasRestrictedInternet()** method that has been added to the **Session** class. This method will return true if the client does not have access to the external internet.
