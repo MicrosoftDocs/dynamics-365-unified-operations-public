@@ -303,7 +303,7 @@ The clear separation between **Cost allocation** and **Cost rollup policies** pr
 
 
 ## See also
-[Cost object dimensions](cost-objects.md)
-[Cost element dimensions](cost-elements.md)
-[Dimension hierarchies](dimension-hierarchy.md)
-[Overhead calculation](overhead-calculation.md)
+-    [Cost object dimensions](cost-objects.md)
+-    [Cost element dimensions](cost-elements.md)
+-    [Dimension hierarchies](dimension-hierarchy.md)
+-    [Overhead calculation](overhead-calculation.md)
