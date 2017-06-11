@@ -1,12 +1,40 @@
-Cost rollup policy and overhead calculation 
-============================================
+---
+# required metadata
 
-Cost accounting lets you gain insight into how the cost flow relates to the
-products and services that are delivered within an organization. In order to see
-the cost transparency, it is crucial to achieve cost allocation between cost
-objects based on an appropriate allocation bases. By default, the cost
-allocation is achieved per primary cost element, which is desired in some
-situations, but it has a few implications that should be considered.
+title: Cost rollup policy and overhead calculation 
+description: This topic provides information about you can determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability. 
+author: YuyuScheller
+manager: AnnBe
+ms.date: 06/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+# ms.reviewer: YuyuScheller
+ms.search.scope:  AX 7.0.0, Operations, Core
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: YuyuScheller
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+
+---
+
+## Cost rollup policy and overhead calculation 
+
+[!include[banner](../includes/banner.md)]
+
+Cost accounting lets you gain insight into how the cost flow relates to the products and services that are delivered within an organization. In order to see the cost transparency, it is crucial to achieve cost allocation between cost objects based on an appropriate allocation bases. By default, the cost allocation is achieved per primary cost element, which is desired in some situations, but it has a few implications that should be considered.
 
 -   Auxiliary cost objects will end with a zero balance per primary cost element
     after overhead calculation.
@@ -16,17 +44,16 @@ situations, but it has a few implications that should be considered.
 
 -   It is not possible to track the cost flow between cost objects.
 
-To avoid these implications, Cost accounting lets you configure cost allocation
-to fit into your organization managerial reporting requirements.
+To avoid these implications, Cost accounting lets you configure cost allocation to fit into your organization managerial reporting requirements.This topics discusses how you can determine the correct level of secondary cost elements and create cost rollup rules that fit into organization reporting and cost traceability.
 
-Note: You can change your configuration if reporting requirements change.
+> [!NOTE]
+> You can change configurations if reporting requirements change.
 
-Cost allocation policy setup 
------------------------------
+## An example of cost rollerup policy setup
 
 Imagine that an organization has the following structure with 4 cost centers.
 
-![C:\\Users\\yuyus\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\dimension-hierarchy-org.png](media/3d7d4facddadc59a14c957108315578e.png)
+![Example of an organization structure](./media/dimension-hierarchy-org.png)
 
 **Cost object dimension**
 
@@ -37,8 +64,6 @@ Imagine that an organization has the following structure with 4 cost centers.
 | CC003        | Assembly  |
 | CC004        | Packaging |
 
-Learn and read more about. *Cost object dimension*
-
 **Cost element dimension**
 
 | Cost elements | Type        |         |
@@ -47,10 +72,7 @@ Learn and read more about. *Cost object dimension*
 | 1002          | Salaries    | Primary |
 | 1003          | Advertising | Primary |
 
-Learn and read more about. *Cost element dimension*
-
-A dimension hierarchy that fulfills the organizational reporting requirements
-can be set up as follows.
+A dimension hierarchy that fulfills the organizational reporting requirements can be set up as follows.
 
 **Dimension hierarchy details**
 
@@ -62,29 +84,16 @@ can be set up as follows.
 
 |              | Dimension member ranges |                     |
 |--------------|-------------------------|---------------------|
-| Nodes        | From dimension member   | To dimension member |
+| **Nodes**        | **From dimension member**   | **To dimension member** |
 | Organization |                         |                     |
-|              |                         |                     |
-|              | CC001                   | CC001               |
-|              | CC002                   | CC002               |
-|              |                         |                     |
-|              | CC003                   | CC003               |
-|              | CC004                   | CC004               |
+| &nbsp;&nbsp;Admin             |                         |                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finance              | CC001                   | CC001               |
+| &nbsp;&nbsp;&nbsp;&nbsp;HR               | CC002                   | CC002               |
+| &nbsp;&nbsp;Production               |                         |                     |
+| &nbsp;&nbsp;&nbsp;&nbsp;Packaging              | CC003                   | CC003               |
+| &nbsp;&nbsp;&nbsp;&nbsp;Assembly             | CC004                   | CC004               |
 
->   Admin
-
->   Finance
-
->   HR
-
->   Production
-
->   Packaging
-
->   Assembly
-
-A dimension hierarchy that fulfills the policy requirement can be set up as
-follows.
+A dimension hierarchy that fulfills the policy requirement can be set up as follows.
 
 **Dimension hierarchy details**
 
@@ -98,14 +107,9 @@ follows.
 |-------------------------|-------------------------|---------------------|
 | Nodes                   | From dimension member   | To dimension member |
 | Profit & Loss statement |                         |                     |
-|                         | 10001                   | 10003               |
+| &nbsp;&nbsp;&nbsp;&nbsp;Primary cost                    | 10001                   | 10003               |
 
->   Primary cost
-
-Learn and read more about. *Dimension hierarchies*
-
-After the general ledger entries are processed, the cost entry balance by cost
-object looks as follows.
+After the general ledger entries are processed, the cost entry balance by cost object looks as follows.
 
 |                      | **Cost object** | **Total** |           |           |               |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
@@ -157,10 +161,7 @@ Finance services are consumed by the following distribution of magnitude.
 <br>Understand how cost flows between cost centers 
 ---------------------------------------------------
 
-If you want to see how cost flows between the cost centers in the organization,
-you can create cost elements of the type **Secondary** for each cost center.
-These cost elements will then be used to transfer balances between the cost
-centers during the overhead calculation.
+If you want to see how cost flows between the cost centers in the organization, you can create cost elements of the type **Secondary** for each cost center. These cost elements will then be used to transfer balances between the cost centers during the overhead calculation.
 
 Cost element dimension members can now set up as follows.
 
@@ -174,9 +175,7 @@ Cost element dimension members can now set up as follows.
 | **SC-CC003**  | **Assembly**  | **Secondary** |
 | **SC-CC004**  | **Packaging** | **Secondary** |
 
-The dimension hierarchy **Profit & Loss statement** needs to be updated with the
-new dimension members so that the dimension hierarchy contains the correct data
-that can be used for defining reporting and policies.
+The dimension hierarchy **Profit & Loss statement** needs to be updated with the new dimension members so that the dimension hierarchy contains the correct data that can be used for defining reporting and policies.
 
 **Dimension hierarchy details**
 
@@ -190,15 +189,10 @@ that can be used for defining reporting and policies.
 |-------------------------|-------------------------|---------------------|
 | Nodes                   | From dimension member   | To dimension member |
 | Profit & Loss statement |                         |                     |
-|                         | 10001                   | 10003               |
-|                         | **SC-CC001**            | **SC-CC004**        |
+| &nbsp;&nbsp;&nbsp;&nbsp;Primary cost                        | 10001                   | 10003               |
+| &nbsp;&nbsp;&nbsp;&nbsp;Secondary cost                         | **SC-CC001**            | **SC-CC004**        |
 
->   Primary cost
-
->   **Secondary cost**
-
-Create a **Cost rollup policy** were each cost center is mapped to a
-corresponding cost element of the type **Secondary**.
+Create a **Cost rollup policy** were each cost center is mapped to a corresponding cost element of the type **Secondary**.
 
 **Cost rollup polices**
 
@@ -215,7 +209,7 @@ corresponding cost element of the type **Secondary**.
 | CC003                                | Profit & Loss statement               | **SC-CC003**           |
 | CC004                                | Profit & Loss statement               | **SC-CC004**           |
 
-**Perform Overhead calculation**
+## Perform overhead calculation
 
 **Journal**
 
@@ -223,8 +217,7 @@ corresponding cost element of the type **Secondary**.
 |---------|-------------------------|------------------------|---------|----------|-------------------------------------------------------------------------|
 | 00002   | Cost allocation journal | Fiscal                 | 2017    | Period 1 | Overhead calculation / 01-02-2017 11:51:00 PM / Ledger /2017 / Period 1 |
 
-The system will now apply the **Cost rollup policy** when it creates the **Cost
-object balance journal entries**.
+The system will now apply the **Cost rollup policy** when it creates the **Cost object balance journal entries**.
 
 **Cost object balance journal entries**
 
@@ -235,12 +228,10 @@ object balance journal entries**.
 | 31-01-2017      | CC003       | Assembly     | SC-CC003 | Assembly  | 31.082,75 |
 | 31-01-2017      | CC004       | Packaging    | SC-CC004 | Packaging | 15.717,25 |
 
-Note: The journal entries are created based on the rules in the **Cost rollup
-policy** if a policy exists. The balance displayed is the balance of the
-overhead calculation.
+> [!NOTE]
+> The journal entries are created based on the rules in the **Cost rollup policy** if a policy exists. The balance displayed is the balance of the overhead calculation.
 
-The page **Cost object cost balance journal entry details** that can be accessed
-from the journal entries displays how the balance is obtained.
+The page **Cost object cost balance journal entry details** that can be accessed from the journal entries displays how the balance is obtained.
 
 **Example: The journal entry for Cost object CC002 Finance**
 
@@ -265,10 +256,9 @@ from the journal entries displays how the balance is obtained.
 | CC003       | Assembly     | SC-CC002 | Finance         | 11.527,75   | 31-01-2017 |
 | CC004       | Packaging    | SC-CC002 | Finance         | 6.207,25    | 31-01-2017 |
 
-Learn and read more about. *Overhead calculation*
+After the **Overhead calculation** is completed, you can report the results using tools such as Workspace, Excel or Power BI.
 
-After the **Overhead calculation** is completed, you can report the results
-using tools such as Workspace, Excel or Power BI.
+## View reporting in Excel 
 
 The dimension hierarchies allow you to see data at different aggregation levels.
 
@@ -278,9 +268,9 @@ Here is an example of a Power Pivot reporting in Excel.
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Primary cost**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
-|                             | 100,00          | 200,00         | 6.000,00      | 2.000,00      | **8.300,00**  |
-|                             | 10.000,00       | 10.000,00      | 8.000,00      | 6.500,00      | **34.500,00** |
-|                             | 0,00            | 4.000,00       | 0,00          | 0,00          | **4.000,00**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;1001                            | 100,00          | 200,00         | 6.000,00      | 2.000,00      | **8.300,00**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;1002                            | 10.000,00       | 10.000,00      | 8.000,00      | 6.500,00      | **34.500,00** |
+|&nbsp;&nbsp;&nbsp;&nbsp;1003                             | 0,00            | 4.000,00       | 0,00          | 0,00          | **4.000,00**  |
 |                             | **-10.100,00**  | **-14.200,00** | **17.082.75** | **7.217,25**  | **0,00**      |
 |                             | \-10.100,00     | 3.535,00       | 5.555,00      | 1.010,00      | **0,00**      |
 |                             | 0,00            | \-17.735,00    | 11.527,75     | 6.207,25      | **0,00**      |
@@ -288,11 +278,7 @@ Here is an example of a Power Pivot reporting in Excel.
 |                             | 0,00            | 0,00           | 0,00          | 0,00          | 0,00          |
 | **Total**                   | **0,00**        | **0,00**       | **31.082,75** | **15.717,25** | **46.800,00** |
 
->   1001
 
->   1002
-
->   1003
 
 >   **Secondary cost**
 
@@ -304,14 +290,9 @@ Here is an example of a Power Pivot reporting in Excel.
 
 >   SC-CC004
 
-The usage of **Cost rollup policy** and **Cost elements of the type secondary**
-provides the ability to leave the primary cost per cost object for internal
-reporting as the primary cost remains after **Overhead calculation**.
+The usage of **Cost rollup policy** and **Cost elements of the type secondary** provides the ability to leave the primary cost per cost object for internalreporting as the primary cost remains after **Overhead calculation**.
 
-If the same example had been performed without creating the **Cost rollup
-policy,** the reporting result would be as shown below. The cost flows correctly
-but the traceability and insight into how cost flows between the cost centers
-are lost.
+If the same example had been performed without creating the **Cost rollup policy,** the reporting result would be as shown below. The cost flows correctly but the traceability and insight into how cost flows between the cost centers are lost.
 
 | **Profit & Loss statement** | **Cost object** | **Total** |               |               |               |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
@@ -343,10 +324,14 @@ are lost.
 
 >   SC-CC004
 
-Depending on the reporting and traceability requirements in your organization,
-you can determine the correct level of secondary cost elements and create cost
-rollup rules that fit into needs.
+Depending on the reporting and traceability requirements in your organization, you can determine the correct level of secondary cost elements and create cost rollup rules that fit into needs.
 
-The clear separation between **Cost allocation** and **Cost rollup policies**
-provides the flexibility to make continuous updates without affecting each
-other.
+The clear separation between **Cost allocation** and **Cost rollup policies** provides the flexibility to make continuous updates without affecting each other.
+
+
+
+## See also
+Cost object dimensions
+Cost element dimensions
+Dimension hierarchies
+Learn and read more about. *Overhead calculation*
