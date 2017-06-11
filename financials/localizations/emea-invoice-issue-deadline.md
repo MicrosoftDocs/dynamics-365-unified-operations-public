@@ -58,7 +58,7 @@ Use the **Set up calculation for invoice issue due date** page to set up an invo
 You can set up date control parameters to help guarantee that customer invoices and credit notes for customer transactions are generated within the specified period after the delivery is made. You can find these parameters in the **Invoice dates control** area of the **Accounts receivable parameters** page.
 
 ## Example
-To set up Microsoft Dynamics 365 for Operations to calculate invoice issue due dates for intra-EU shipments on the fifteenth day of the month after the supply is delivered, create a date interval code and calculation rule that have the following settings.
+To set up Microsoft Dynamics 365 for Finance and Operations, Enterprise edition to calculate invoice issue due dates for intra-EU shipments on the fifteenth day of the month after the supply is delivered, create a date interval code and calculation rule that have the following settings.
 
 ### Date interval code
 

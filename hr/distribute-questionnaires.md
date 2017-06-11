@@ -107,9 +107,6 @@ Click **Functions** &gt; **Start** to make the questionnaire available to the us
 ## Notifying respondents about questionnaires that are available to them
 When you distribute a questionnaire, you must notify respondents that questionnaires are available to them. 
 
-> **Note**
->   Respondents must be users in Microsoft Dynamics 365 for Operations to complete a questionnaire.
-
 ### Notifying respondents about a planned answer session
 
 If you use a planned answer session, you must notify the person directly, such as by telephone or email.

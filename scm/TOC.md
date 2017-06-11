@@ -53,6 +53,7 @@
 ### [Overview of vendor invoices](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 ### [Vendor posting profiles](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Product information management
+## [Product information overview](pim/product-information.md)
 ## Maintain product categories
 ## Maintain product information
 ### Maintain product definition

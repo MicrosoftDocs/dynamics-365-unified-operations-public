@@ -75,7 +75,7 @@ Some records that are related to languages that aren't supported in the Dynamics
 
 **01.1.005 SYS - Address setup**
 
-There are five records that will fail during Cities import because of bad data.
+There are five records that will fail during Cities import because of bad data. Demo data sample packages have been adjusted to account for these errors.
 
 | Suggested sequence | Entity name          | Area                        | Entity type | Dependency                                                     | Comments                                                                                                                                       |
 |--------------------|----------------------|-----------------------------|-------------|----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|

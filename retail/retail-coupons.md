@@ -33,6 +33,7 @@ ms.dyn365.ops.version:
 
 [!include[banner](includes/banner.md)]
 
+
 ## Overview of coupons
 
 Coupons are codes and bar codes that are used to add retail discounts to transactions. Each coupon can have multiple codes, and each code can have its own effective dates. 

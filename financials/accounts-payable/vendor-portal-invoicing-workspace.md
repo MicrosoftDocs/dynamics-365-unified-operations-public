@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 
-The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to Microsoft Dynamics 365 for Operations using workflow capabilities.
+The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition using workflow capabilities.
 Vendor collaboration invoicing workspace
 ----------------------------------------
 
@@ -45,9 +45,9 @@ Vendor collaboration invoicing workspace
 
 The **Summary** tiles give an overview of the invoices for the selected vendor. You can view invoices by their state.
 -   Draft invoices have not been submitted to workflow.
--   Submitted, not approved invoices are those invoices that the vendor has submitted, but they have not been posted in Dynamics 365 for Operations.
--   Approved, not paid invoices are those that have been posted in Dynamics 365 for Operations, but they have not yet been fully paid.
--   Paid invoices are those that have been fully paid in Dynamics 365 for Operations.
+-   Submitted, not approved invoices are those invoices that the vendor has submitted, but they have not been posted in Finance and Operations.
+-   Approved, not paid invoices are those that have been posted in Finance and Operations, but they have not yet been fully paid.
+-   Paid invoices are those that have been fully paid in Finance and Operations.
 
 Clicking on a tile will open a filtered view of the **Invoices list** page.
 ### Tabular lists
