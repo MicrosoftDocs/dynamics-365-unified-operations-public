@@ -271,7 +271,7 @@ Here is an example of a Power Pivot reporting in Excel.
 | &nbsp;&nbsp;&nbsp;&nbsp;1001                            | 100,00          | 200,00         | 6.000,00      | 2.000,00      | **8.300,00**  |
 | &nbsp;&nbsp;&nbsp;&nbsp;1002                            | 10.000,00       | 10.000,00      | 8.000,00      | 6.500,00      | **34.500,00** |
 |&nbsp;&nbsp;&nbsp;&nbsp;1003                             | 0,00            | 4.000,00       | 0,00          | 0,00          | **4.000,00**  |
-|&nbsp;&nbsp;&nbsp;&nbsp;**Secondary cost**                            | **-10.100,00**  | **-14.200,00** | **17.082.75** | **7.217,25**  | **0,00**      |
+|**Secondary cost**                            | **-10.100,00**  | **-14.200,00** | **17.082.75** | **7.217,25**  | **0,00**      |
 |&nbsp;&nbsp;&nbsp;&nbsp;SC-CC001                            | \-10.100,00     | 3.535,00       | 5.555,00      | 1.010,00      | **0,00**      |
 |&nbsp;&nbsp;&nbsp;&nbsp;SC-CC002                             | 0,00            | \-17.735,00    | 11.527,75     | 6.207,25      | **0,00**      |
 |&nbsp;&nbsp;&nbsp;&nbsp;SC-CC003                            | 0,00            | 0,00           | 0,00          | 0,00          | 0,00          |
@@ -289,7 +289,7 @@ If the same example had been performed without creating the **Cost rollup policy
 |&nbsp;&nbsp;&nbsp;&nbsp;1001                              | 0,00            | 0,00      | 6.207,75      | 2.092,25      | **8.300,00**  |
 | &nbsp;&nbsp;&nbsp;&nbsp;1002                             | 0,00            | 0,00      | 22.275,00     | 12.225,00     | **34.500,00** |
 |&nbsp;&nbsp;&nbsp;&nbsp;1003                              | 0,00            | 0,00      | 2600,00       | 1.400,00      | **4.000,00**  |
-|&nbsp;&nbsp;&nbsp;&nbsp;**Secondary cost**                            | **0,00**        | **0,00**  | **0,00**      | **0,00**      | **0,00**      |
+|**Secondary cost**                            | **0,00**        | **0,00**  | **0,00**      | **0,00**      | **0,00**      |
 |&nbsp;&nbsp;&nbsp;&nbsp; SC-CC001                             | 0,00            | 0,00      | 0,00          | 0,00          | **0,00**      |
 |&nbsp;&nbsp;&nbsp;&nbsp; SC-CC002                             | 0,00            | 0,00      | 0,00          | 0,00          | **0,00**      |
 |&nbsp;&nbsp;&nbsp;&nbsp; SC-CC003                             | 0,00            | 0,00      | 0,00          | 0,00          | 0,00          |
